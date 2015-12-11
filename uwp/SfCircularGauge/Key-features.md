@@ -26,5 +26,5 @@ The Circular Gauge control is a highly customizable control with a variety of si
 * **Pointers** - A pointer is an element that points out a value of the bound property on a scale. A circular scale can have one or more pointers that can be used to measure different values. Each pointer has a value property which visually informs the user of the current value. 
 
 * **GaugeHeader** - The GaugeHeader is an object that can be used to set a unique header for the circular gauge. The user can add text as well as images as the header in a circular gauge.
-* **Easy** **to** **use** - SfCircularGauge is available in Visual Studio toolbox itself, you can easily drag and drop the control from toolbox.
+* **Easy to use** - SfCircularGauge is available in Visual Studio toolbox itself, you can easily drag and drop the control from toolbox.
 

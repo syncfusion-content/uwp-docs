@@ -140,5 +140,6 @@ It includes the following options.
            this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Header_images/Header_img3.jpeg)
