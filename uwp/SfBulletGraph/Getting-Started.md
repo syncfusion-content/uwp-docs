@@ -34,7 +34,7 @@ This section explains you the steps required to configure the **SfBulletGraph** 
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.jpg)
 
 As you can see now in the above image, the SfBulletGraph displays its default elements. To customize its element, you have to add respective elements to SfBulletGraph, following section contains the steps to add the basic elements to SfBulletGraph.
 
@@ -60,7 +60,7 @@ You can assign a caption to **SfBulletGraph** by making use of “Caption” pro
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpg)
 
 ## Configuring Ticks and Labels 
 
@@ -112,7 +112,7 @@ They are:
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img3.jpg)
 
 ## Adding Ranges 
 
@@ -178,6 +178,6 @@ You can add ranges to **SfBulletGraph** by creating ranges collection using **Qu
 
 SfBulletGraph ranges are displayed as follows.
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![](Getting-Started_images/Getting-Started_img4.jpg)
 
 

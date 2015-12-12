@@ -34,13 +34,32 @@ Ranges start and end values are set by the **StartValue** and **EndValue** prope
 
 {% highlight c# %}
 
-      SfCircularGauge circularGauge = new SfCircularGauge();
-      CircularScale _mainscale = new CircularScale();
-      _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 40, Stroke = new SolidColorBrush(Colors.Green), StrokeThickness = 10 });
-      _mainscale.Ranges.Add(new CircularRange() { StartValue = 40, EndValue = 60, Stroke = new SolidColorBrush(Colors.Yellow), StrokeThickness = 10 });
-      _mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 10 });
-       circularGauge.Scales.Add(_mainscale);
-       this.Grid.Children.Add(circularGauge);
+    
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            CircularScale _mainscale = new CircularScale();
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 0,
+                EndValue = 40,
+                Stroke = new SolidColorBrush(Colors.Green),
+                StrokeThickness = 10
+            });
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 40,
+                EndValue = 60,
+                Stroke = new SolidColorBrush(Colors.Yellow),
+                StrokeThickness = 10
+            });
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 60,
+                EndValue = 100,
+                Stroke = new SolidColorBrush(Colors.Red),
+                StrokeThickness = 10
+            });
+            circularGauge.Scales.Add(_mainscale);
+            this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
 {% endtabs %}

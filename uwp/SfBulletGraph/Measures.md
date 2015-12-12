@@ -68,4 +68,4 @@ The value of the comparative measure is set by using the **ComparativeMeasure** 
 {% endhighlight %}
 {% endtabs %}
 
-![](Measures_images/Measures_img2.jpeg)
+![](Measures_images/Measures_img2.jpg)
