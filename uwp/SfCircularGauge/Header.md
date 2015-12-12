@@ -61,9 +61,16 @@ It includes the following options.
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45,0.8);
+            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
+            TextBlock _textBlock = new TextBlock()
+            {
+                Text = "Temperature (K)",
+                Height = 20,
+                Width = 150,
+                FontSize = 20,
+                Foreground = new SolidColorBrush(Colors.White)
+            };
             circularGauge.GaugeHeader = _textBlock;
             this.Grid.Children.Add(circularGauge);
 
@@ -86,7 +93,7 @@ It includes the following options.
 
 {% highlight c# %}
 
-          SfCircularGauge circularGauge = new SfCircularGauge();
+            SfCircularGauge circularGauge = new SfCircularGauge();
             circularGauge.GaugeHeader = "Fual Availability";
             circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
@@ -122,23 +129,28 @@ It includes the following options.
 
 {% highlight c# %}
 
-           SfCircularGauge circularGauge = new SfCircularGauge();
-           circularGauge.GaugeHeaderPosition = new Point(300, 600);
-           Grid grid1 = new Grid();
-           RowDefinition rowDef1;
-           rowDef1 = new RowDefinition();
-           RowDefinition rowDef2;
-           rowDef2 = new RowDefinition();
-           grid1.RowDefinitions.Add(rowDef1);
-           grid1.RowDefinitions.Add(rowDef2);
-           BitmapImage _mapimage = new BitmapImage(new Uri("Assets/FuelIcon.jpg")); 
-           TextBlock _textBlock = new TextBlock() {Text = "Fuel Availability", Foreground = new SolidColorBrush(Colors.White),FontSize=20};
-           Grid.SetRow(_textBlock,1);
-           Image image = new Image(){ Height=20,Width=20};
-           image.Source = _mapimage;
-           Grid.SetRow(image,0);
-           circularGauge.GaugeHeader = grid1;      
-           this.Grid.Children.Add(circularGauge);
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            circularGauge.GaugeHeaderPosition = new Point(300, 600);
+            Grid grid1 = new Grid();
+            RowDefinition rowDef1;
+            rowDef1 = new RowDefinition();
+            RowDefinition rowDef2;
+            rowDef2 = new RowDefinition();
+            grid1.RowDefinitions.Add(rowDef1);
+            grid1.RowDefinitions.Add(rowDef2);
+            BitmapImage _mapimage = new BitmapImage(new Uri("Assets/FuelIcon.jpg"));
+            TextBlock _textBlock = new TextBlock()
+            {
+                Text = "Fuel Availability",
+                Foreground = new SolidColorBrush(Colors.White),
+                FontSize = 20
+            };
+            Grid.SetRow(_textBlock, 1);
+            Image image = new Image() { Height = 20, Width = 20 };
+            image.Source = _mapimage;
+            Grid.SetRow(image, 0);
+            circularGauge.GaugeHeader = grid1;
+            this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
 {% endtabs %}

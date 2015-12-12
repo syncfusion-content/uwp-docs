@@ -41,42 +41,42 @@ GaugeType is an enum property that provides the option to select type of the SfC
 <table>
 <tr>
 <td>
-{{'![](tab_images/tab_img1.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img1.jpeg)'| markdownify }}
 </td></tr>
 </table>
 
 <table>
 <tr>
 <td>
-{{'![](tab_images/tab_img2.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img2.jpeg)'| markdownify }}
 </td><td>
-{{'![](tab_images/tab_img3.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img3.jpeg)'| markdownify }}
 </td></tr>
 </table>
 
 <table>
 <tr>
 <td>
-{{'![](tab_images/tab_img4.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img4.jpeg)'| markdownify }}
 </td><td>
-{{'![](tab_images/tab_img5.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img5.jpeg)'| markdownify }}
 </td></tr>
 </table>
 
 <table>
 <tr>
 <td>
-{{'![](tab_images/tab_img6.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img6.jpeg)'| markdownify }}
 </td><td>
-{{'![](tab_images/tab_img7.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img7.jpeg)'| markdownify }}
 </td></tr>
 </table>
 
 <table>
 <tr>
 <td>
-{{'![](tab_images/tab_img8.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img8.jpeg)'| markdownify }}
 </td><td>
-{{'![](tab_images/tab_img9.jpeg)'| markdownify }}
+{{'![](Gauge-Type_images/Gauge-Type_img9.jpeg)'| markdownify }}
 </td></tr>
 </table>

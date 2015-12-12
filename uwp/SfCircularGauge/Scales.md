@@ -53,9 +53,23 @@ CircularScale contains three sub elements such as Rim, Ticks, and Labels. It def
             _mainscale.StartValue = 0;
             _mainscale.EndValue = 100;
             _mainscale.Interval = 10;
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush(Color.FromArgb(0xFF,0x66,0x66,0x66)) });
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF,0xC1,0x25,0x2C)) });
-            _mainscale.Pointers.Add(new CircularPointer() { PointerType = PointerType.NeedlePointer, Value = 170 });
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 0,
+                EndValue = 60,
+                Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0x66, 0x66, 0x66))
+            });
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 60,
+                EndValue = 100,
+                Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C))
+            });
+            _mainscale.Pointers.Add(new CircularPointer()
+            {
+                PointerType = PointerType.NeedlePointer,
+                Value = 170
+            });
             circularGauge.Scales.Add(_mainscale);
             this.Grid.Children.Add(circularGauge);
 
@@ -116,20 +130,56 @@ It helps to be able to add multiple scales to the same circular gauge, and also 
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+       SfCircularGauge circularGauge = new SfCircularGauge();
             CircularScale _mainscale = new CircularScale();
             CircularScale scale1 = new CircularScale();
             CircularScale scale2 = new CircularScale();
             scale1.Height = 500;
             scale1.Width = 500;
-            scale1.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush(Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0)), StrokeThickness = 5 });
-            scale1.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C)), StrokeThickness = 5 });
-            scale1.Pointers.Add(new CircularPointer() { Value = 30, PointerType = PointerType.SymbolPointer, Symbol = Syncfusion.UI.Xaml.Gauges.Symbol.InvertedArrow, SymbolPointerWidth = 30, SymbolPointerHeight = 20, SymbolPointerStroke = new SolidColorBrush(Colors.Green) });
+            scale1.Ranges.Add(new CircularRange()
+            {
+                StartValue = 0,
+                EndValue = 60,
+                Stroke = new SolidColorBrush(Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0)),
+                StrokeThickness = 5
+            });
+            scale1.Ranges.Add(new CircularRange()
+            {
+                StartValue = 60,
+                EndValue = 100,
+                Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C)),
+                StrokeThickness = 5
+            });
+            scale1.Pointers.Add(new CircularPointer()
+            {
+                Value = 30,
+                PointerType = PointerType.SymbolPointer,
+                Symbol = Syncfusion.UI.Xaml.Gauges.Symbol.InvertedArrow,
+                SymbolPointerWidth = 30,
+                SymbolPointerHeight = 20,
+                SymbolPointerStroke = new SolidColorBrush(Colors.Green)
+            });
             scale2.Height = 300;
             scale2.Width = 300;
-            scale2.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush((Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0))), StrokeThickness = 5 });
-            scale2.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C)), StrokeThickness = 5 });
-            scale2.Pointers.Add(new CircularPointer() { Value = 30, PointerType = PointerType.NeedlePointer });
+            scale2.Ranges.Add(new CircularRange()
+            {
+                StartValue = 0,
+                EndValue = 60,
+                Stroke = new SolidColorBrush((Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0))),
+                StrokeThickness = 5
+            });
+            scale2.Ranges.Add(new CircularRange()
+            {
+                StartValue = 60,
+                EndValue = 100,
+                Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C)),
+                StrokeThickness = 5
+            });
+            scale2.Pointers.Add(new CircularPointer()
+            {
+                Value = 30,
+                PointerType = PointerType.NeedlePointer
+            });
             circularGauge.Scales.Add(scale1);
             circularGauge.Scales.Add(scale2);
             this.Grid.Children.Add(circularGauge); 
@@ -192,13 +242,49 @@ It helps to be able to add multiple scales to the same circular gauge, and also 
             CircularScale scale1 = new CircularScale();
             CircularScale scale2 = new CircularScale();
             scale1.Radius = 300;
-            scale1.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush(Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0)), StrokeThickness = 5 });
-            scale1.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C)), StrokeThickness = 5 });
-            scale1.Pointers.Add(new CircularPointer() { Value = 30, PointerType = PointerType.SymbolPointer, Symbol = Syncfusion.UI.Xaml.Gauges.Symbol.InvertedArrow, SymbolPointerWidth = 30, SymbolPointerHeight = 20, SymbolPointerStroke = new SolidColorBrush(Colors.Green) });
+            scale1.Ranges.Add(new CircularRange()
+            {
+                StartValue = 0,
+                EndValue = 60,
+                Stroke = new SolidColorBrush(Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0)),
+                StrokeThickness = 5
+            });
+            scale1.Ranges.Add(new CircularRange()
+            {
+                StartValue = 60,
+                EndValue = 100,
+                Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C)),
+                StrokeThickness = 5
+            });
+            scale1.Pointers.Add(new CircularPointer()
+            {
+                Value = 30,
+                PointerType = PointerType.SymbolPointer,
+                Symbol = Syncfusion.UI.Xaml.Gauges.Symbol.InvertedArrow,
+                SymbolPointerWidth = 30,
+                SymbolPointerHeight = 20,
+                SymbolPointerStroke = new SolidColorBrush(Colors.Green)
+            });
             scale2.Radius = 200;
-            scale2.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush((Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0))), StrokeThickness = 5 });
-            scale2.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C)), StrokeThickness = 5 });
-            scale2.Pointers.Add(new CircularPointer() { Value = 30, PointerType = PointerType.NeedlePointer });
+            scale2.Ranges.Add(new CircularRange()
+            {
+                StartValue = 0,
+                EndValue = 60,
+                Stroke = new SolidColorBrush((Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0))),
+                StrokeThickness = 5
+            });
+            scale2.Ranges.Add(new CircularRange()
+            {
+                StartValue = 60,
+                EndValue = 100,
+                Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C)),
+                StrokeThickness = 5
+            });
+            scale2.Pointers.Add(new CircularPointer()
+            {
+                Value = 30,
+                PointerType = PointerType.NeedlePointer
+            });
             circularGauge.Scales.Add(scale1);
             circularGauge.Scales.Add(scale2);
             this.Grid.Children.Add(circularGauge);

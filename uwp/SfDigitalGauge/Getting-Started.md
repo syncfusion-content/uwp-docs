@@ -86,4 +86,4 @@ You can view the digital characters in SfDigitalGauge using different types of S
 
 SfDigitalGauge Segments are displayed as follows.
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img3.jpg)

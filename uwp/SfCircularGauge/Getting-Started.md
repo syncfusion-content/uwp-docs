@@ -50,10 +50,17 @@ You can assign a unique header to **SfCircularGauge** by making use of **GaugeHe
 
 {% highlight c# %}
     
-    SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45,0.8);
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
+            TextBlock _textBlock = new TextBlock()
+            {
+                Text = "Temperature (K)",
+                Height = 20,
+                Width = 150,
+                FontSize = 20,
+                Foreground = new SolidColorBrush(Colors.White)
+            };
             circularGauge.GaugeHeader = _textBlock;
             this.Grid.Children.Add(circularGauge);
 
@@ -106,7 +113,7 @@ They are:
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45,0.8);
+            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
             CircularScale _mainscale = new CircularScale();
             _mainscale.StartAngle = 135;
@@ -115,10 +122,16 @@ They are:
             _mainscale.EndValue = 100;
             _mainscale.Interval = 10;
             circularGauge.Scales.Add(_mainscale);
-            TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
+            TextBlock _textBlock = new TextBlock()
+            {
+                Text = "Temperature (K)",
+                Height = 20,
+                Width = 150,
+                FontSize = 20,
+                Foreground = new SolidColorBrush(Colors.White)
+            };
             circularGauge.GaugeHeader = _textBlock;
             this.Grid.Children.Add(circularGauge);
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -164,7 +177,7 @@ You can add ranges to SfCircularGauge by creating ranges collection using **Rang
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45,0.8);
+            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
             CircularScale _mainscale = new CircularScale();
             _mainscale.StartAngle = 135;
@@ -172,10 +185,27 @@ You can add ranges to SfCircularGauge by creating ranges collection using **Rang
             _mainscale.StartValue = 0;
             _mainscale.EndValue = 100;
             _mainscale.Interval = 10;
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush(Color.FromArgb(0XFF,0X66,0X66,0X66)) });
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0XFF,0XC1,0X25,0X2C)) });
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 0,
+                EndValue = 60,
+                Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0X66, 0X66, 0X66))
+            });
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 60,
+                EndValue = 100,
+                Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0XC1, 0X25, 0X2C))
+            });
             circularGauge.Scales.Add(_mainscale);
-            TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
+            TextBlock _textBlock = new TextBlock()
+            {
+                Text = "Temperature (K)",
+                Height = 20,
+                Width = 150,
+                FontSize = 20,
+                Foreground = new SolidColorBrush(Colors.White)
+            };
             circularGauge.GaugeHeader = _textBlock;
             this.Grid.Children.Add(circularGauge);
 
@@ -229,7 +259,7 @@ You can add Pointers to SfCircularGauge to point a values on the scale.
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeaderPosition = new Point(0.45,0.8);
+            circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
             CircularScale _mainscale = new CircularScale();
             _mainscale.StartAngle = 135;
@@ -237,11 +267,32 @@ You can add Pointers to SfCircularGauge to point a values on the scale.
             _mainscale.StartValue = 0;
             _mainscale.EndValue = 100;
             _mainscale.Interval = 10;
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush(Color.FromArgb(0XFF,0X66,0X66,0X66)) });
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0XFF,0XC1,0X25,0X2C)) });
-            _mainscale.Pointers.Add(new CircularPointer() { PointerType = PointerType.NeedlePointer, Value = 170 });
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 0,
+                EndValue = 60,
+                Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0X66, 0X66, 0X66))
+            });
+            _mainscale.Ranges.Add(new CircularRange()
+            {
+                StartValue = 60,
+                EndValue = 100,
+                Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0XC1, 0X25, 0X2C))
+            });
+            _mainscale.Pointers.Add(new CircularPointer()
+            {
+                PointerType = PointerType.NeedlePointer,
+                Value = 170
+            });
             circularGauge.Scales.Add(_mainscale);
-            TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
+            TextBlock _textBlock = new TextBlock()
+            {
+                Text = "Temperature (K)",
+                Height = 20,
+                Width = 150,
+                FontSize = 20,
+                Foreground = new SolidColorBrush(Colors.White)
+            };
             circularGauge.GaugeHeader = _textBlock;
             this.Grid.Children.Add(circularGauge);
 
