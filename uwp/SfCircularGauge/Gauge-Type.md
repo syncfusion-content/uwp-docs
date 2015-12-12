@@ -23,7 +23,7 @@ GaugeType is an enum property that provides the option to select type of the SfC
 * SouthWest 
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfCircularGauge GaugeType="East"/>
 
