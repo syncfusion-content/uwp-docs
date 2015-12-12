@@ -62,7 +62,7 @@ CircularScale contains three sub elements such as Rim, Ticks, and Labels. It def
 {% endhighlight %}
 {% endtabs %}
 
-![](Scales_images/Scales_img1.jpeg)
+![](Scales_images/Scales_img1.png)
 
 ## Multiple Scale
 
@@ -137,7 +137,7 @@ It helps to be able to add multiple scales to the same circular gauge, and also 
 {% endhighlight %}
 {% endtabs %}
 
-![](Scales_images/Scales_img2.jpeg)
+![](Scales_images/Scales_img2.png)
 
 **Adding Multiple Scales by using Radius of Circular Scale**
 
@@ -206,4 +206,4 @@ It helps to be able to add multiple scales to the same circular gauge, and also 
 {% endhighlight %}
 {% endtabs %}
 
-![](Scales_images/Scales_img3.jpeg)
+![](Scales_images/Scales_img3.png)

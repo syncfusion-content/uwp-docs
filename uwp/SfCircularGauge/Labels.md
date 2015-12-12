@@ -40,7 +40,7 @@ The label stroke can be changed using the **LabelStroke** property. The labels c
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img1.jpeg)
+![](Labels_images/Labels_img1.png)
 
 ## Smart Labels
 
@@ -87,7 +87,7 @@ The **NumericScaleType** property allows you to set the type of label. The follo
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img2.jpeg)
+![](Labels_images/Labels_img2.png)
 
 ## Number of Fraction Digits
 
@@ -115,7 +115,7 @@ The **NoOfFractionalDigits** property is used to set the number of fractional di
 {% endhighlight %}
 {% endtabs%}
 
-![](Labels_images/Labels_img3.jpeg)
+![](Labels_images/Labels_img3.png)
 
 ## Label Postfix and Prefix
 
@@ -148,7 +148,7 @@ This property allows you to set the postfix values to the scale labels. The labe
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img4.jpeg)
+![](Labels_images/Labels_img4.png)
 
 **LabelPrefix**
 
@@ -176,7 +176,7 @@ This property allows you to set the prefix values for the scale labels. The labe
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img5.jpeg)
+![](Labels_images/Labels_img5.png)
 
 
 ## LabelPosition
@@ -213,5 +213,5 @@ These options are:
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img6.jpeg)
+![](Labels_images/Labels_img6.png)
 

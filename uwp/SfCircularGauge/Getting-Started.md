@@ -27,7 +27,7 @@ This section explains you the steps required to configure the **SfCircularGauge*
 
 Run the above code and now the default SfCircularGauge can be displays as follows. In order to customize scales and other SfCircularGauge elements, you have to add the respecting element to SfCircularGauge.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 As you can see now in the above image, the SfCircularGauge displays its default elements. To customize the basic look and feel of the SfCircularGauge you have to add respective elements to SfCircularGauge, which will be explained in the next section.
 
@@ -60,7 +60,7 @@ You can assign a unique header to **SfCircularGauge** by making use of **GaugeHe
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 ## Configuring Scales
 
@@ -75,7 +75,7 @@ They are:
 * Interval
 * TickStroke
 * LabelStroke
-* 
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -123,7 +123,7 @@ They are:
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 ## Adding Ranges 
 
@@ -182,7 +182,7 @@ You can add ranges to SfCircularGauge by creating ranges collection using **Rang
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 ## Adding Pointers 
@@ -246,6 +246,5 @@ You can add Pointers to SfCircularGauge to point a values on the scale.
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
-{% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![](Getting-Started_images/Getting-Started_img5.png)

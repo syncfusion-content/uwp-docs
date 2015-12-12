@@ -139,7 +139,7 @@ You can bind the range’s stroke to the tick lines and labels within its range 
 {% endhighlight %}
 {% endtabs %}
 
-![](Ranges_images/Ranges_img3.jpeg)
+![](Ranges_images/Ranges_img3.png)
 
 ## RangePosition
 
