@@ -125,4 +125,4 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 {% endhighlight %}
 {% endtabs %}
 
-![](Ticks_images/Ticks_img2.jpeg)
+![](Ticks_images/Ticks_img2.png)

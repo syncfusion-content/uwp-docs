@@ -245,7 +245,7 @@ Symbol is an **enum** property that provides symbol options for the symbol point
 {% endhighlight %}
 {% endtabs%}
 
-![](Pointers_images/Pointers_img6.jpeg)
+![](Pointers_images/Pointers_img6.png)
 
 ### Customizing the SymbolPointerTemplate
 

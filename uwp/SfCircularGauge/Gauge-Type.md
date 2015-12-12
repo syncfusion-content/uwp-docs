@@ -41,56 +41,42 @@ GaugeType is an enum property that provides the option to select type of the SfC
 <table>
 <tr>
 <td>
-![](Gauge-Type_images/Gauge-Type_img1.jpeg)
+{{'![](tab_images/tab_img1.jpeg)'| markdownify }}
 </td></tr>
-Full Circular Gauge
 </table>
 
 <table>
 <tr>
 <td>
-![](Gauge-Type_images/Gauge-Type_img2.jpeg)
+{{'![](tab_images/tab_img2.jpeg)'| markdownify }}
+</td><td>
+{{'![](tab_images/tab_img3.jpeg)'| markdownify }}
 </td></tr>
-<tr>
-<td>
-![](Gauge-Type_images/Gauge-Type_img3.jpeg)
-</td></tr>
-Gauge Type with East and West
 </table>
 
 <table>
 <tr>
 <td>
-![](Gauge-Type_images/Gauge-Type_img4.jpeg)
+{{'![](tab_images/tab_img4.jpeg)'| markdownify }}
+</td><td>
+{{'![](tab_images/tab_img5.jpeg)'| markdownify }}
 </td></tr>
-<tr>
-<td>
-![](Gauge-Type_images/Gauge-Type_img5.jpeg)
-</td></tr>
-Gauge Type with North and South
 </table>
 
 <table>
 <tr>
 <td>
-![](Gauge-Type_images/Gauge-Type_img6.jpeg)
+{{'![](tab_images/tab_img6.jpeg)'| markdownify }}
+</td><td>
+{{'![](tab_images/tab_img7.jpeg)'| markdownify }}
 </td></tr>
-<tr>
-<td>
-![](Gauge-Type_images/Gauge-Type_img7.jpeg)
-</td></tr>
-Gauge Type with NorthEast and NorthSouth
 </table>
 
 <table>
 <tr>
 <td>
-![](Gauge-Type_images/Gauge-Type_img8.jpeg)
+{{'![](tab_images/tab_img8.jpeg)'| markdownify }}
+</td><td>
+{{'![](tab_images/tab_img9.jpeg)'| markdownify }}
 </td></tr>
-<tr>
-<td>
-![](Gauge-Type_images/Gauge-Type_img9.jpeg)
-</td></tr>
-Gauge Type with SouthEast and SouthWest
 </table>
-
