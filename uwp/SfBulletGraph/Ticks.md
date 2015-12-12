@@ -46,7 +46,7 @@ The stroke of the major and minor ticks is customized by setting the **MajorTick
 {% endhighlight %}
 {% endtabs %}
 
-![](Ticks_images/Ticks_img.jpeg)
+![](Ticks_images/Ticks_img.jpg)
 
 ## TickPosition
 

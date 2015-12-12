@@ -7,7 +7,7 @@ control: SfBulletGraph
 documentation: ug
 ---
 
-# Quantitative scale 
+# Quantitative Scale 
 
 Quantitative scale contains two major components such as ticks and labels which gives the looks of bar graph. It defines the frequency of labels and tick marks with overall Minimum and Maximum values for declared Interval. The length of the quantitative scale can be customized by using the **QuantitativeScaleLength** property.
 

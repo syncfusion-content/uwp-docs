@@ -89,4 +89,4 @@ By setting **BindWithRangeStrokeToLabels**, the stroke of the labels is set rela
 {% endhighlight %}
 {% endtabs %}
 
-![](Ranges_images/Ranges_img2.jpeg)
+![](Ranges_images/Ranges_img2.jpg)

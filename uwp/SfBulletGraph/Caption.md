@@ -41,7 +41,7 @@ The **Caption** for a bullet graph is used to specify a unique label describing 
 {% endhighlight %}
 {% endtabs %}
 
-![](Caption_images/Caption_img1.jpeg)
+![](Caption_images/Caption_img1.jpg)
 
 ## Caption Position
 
@@ -68,4 +68,4 @@ The caption in the bullet graph can be placed in the start or end of the quantit
 {% endhighlight %}
 {% endtabs %}
 
-![](Caption_images/Caption_img2.jpeg)
+![](Caption_images/Caption_img2.jpg)

@@ -39,7 +39,7 @@ The Labels can be positioned far away from the Quantitative scale by using the *
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img1.jpeg)
+![](Labels_images/Labels_img1.jpg)
 
 ## Label Position
 
@@ -65,4 +65,4 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 {% endhighlight %}
 {% endtabs %}
 
-![](Labels_images/Labels_img2.jpeg)
+![](Labels_images/Labels_img2.jpg)
