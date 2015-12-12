@@ -19,7 +19,7 @@ This section explains you the steps required to configure the **SfCircularGauge*
 
 **Namespace**: Syncfusion.UI.Xaml.Gauges
 
-{% highlight xaml %}
+{% highlight xml %}
 
     <syncfusion:SfCircularGauge/>
     
@@ -246,5 +246,6 @@ You can add Pointers to SfCircularGauge to point a values on the scale.
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img5.png)

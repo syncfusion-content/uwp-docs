@@ -153,7 +153,7 @@ These options are:
 4. Custom
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
      <syncfusion:SfCircularGauge x:Name="gauge">
             <syncfusion:SfCircularGauge.Scales>

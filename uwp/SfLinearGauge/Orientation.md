@@ -30,10 +30,8 @@ The orientation of the linear gauge can be changed by setting the **Orientation*
 <table>
 <tr>
 <td>
-![](Orientation_images/Orientation_img2.png)
-</td></tr>
-<tr>
-<td>
-![](Orientation_images/Orientation_img1.jpeg)
+{{'![](Orientation_images/Orientation_img2.png)'| markdownify }}
+</td><td>
+{{'![](Orientation_images/Orientation_img1.jpeg)'| markdownify }}
 </td></tr>
 </table>

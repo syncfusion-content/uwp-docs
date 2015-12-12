@@ -143,7 +143,8 @@ The Characters are aligned using **EnableRTLFormat** property. The default value
 
 **DimmedBrushOpacity** property is used to set the opacity of the brushes to the dimmed segment.
 
-{% highlight xml %}
+{% tabs %}
+{% highlight xaml %}
 
     <syncfusion:SfDigitalGauge  Value="SYNCFUSION" DimmedBrush="White"  DimmedBrushOpacity="20" CharacterType="SegmentFourteen" />
 
