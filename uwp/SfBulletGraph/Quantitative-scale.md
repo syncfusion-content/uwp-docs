@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Quantitative scale  | SfBulletGraph | uwp | Syncfusion
-description: Quantitative scale  
+title: Quantitative Scale  | SfBulletGraph | uwp | Syncfusion
+description: Quantitative Scale  
 platform: uwp
 control: SfBulletGraph
 documentation: ug
