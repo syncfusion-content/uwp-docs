@@ -23,7 +23,6 @@ The **AppointmentEditorOpening** event handler receives two arguments:
    * **Appointment**- gets the appointment, this argument is of type object.
    * **StartTime**- gets the appointment start time.
    * **Action**- gets the Editor action such as Add or Edit or Delete.
-   * **SelectedResource**- gets the list of Resources.
    * **Cancel**- set this Boolean property to **True** to cancelling the event.
  
 ### AppointmentEditorClosed
@@ -57,7 +56,6 @@ The **ContextMenuOpening** event handler receives two arguments:
     * **Appointment** - gets the appointment, this argument is of type object.
     * **CurrentSelectedDate** **-** gets the appointment current selected Date.
     * **CurrentEventArgs** **–** gets the Editor action such as Add or Edit or Delete.
-    * **SelectedResource** **–** gets the list of Resources.
     * **Cancel****-** set this Boolean property to **True** to disable the context menu.
 
 ### ContextMenuClosed
@@ -77,7 +75,6 @@ Occurs when tapping the schedule.The **ScheduleTapped** event handler receives t
 2. **ScheduleTappedEventArgs** is a class. Via the **ScheduleTappedEventArgs** you can access the following properties:
     * **Appointment**- gets the appointment, this argument is of type object.
     * **SelectedDate** **-** gets the appointment current selected Date.
-    * **SelectedResource** **–** gets the list of Resources.
 
 ### ScheduleDoubleTapped
 
@@ -88,7 +85,6 @@ The **ScheduleDoubleTapped** event handler receives two arguments:
 2. **ScheduleTappedEventArgs** is a class. Via the **ScheduleTappedEventArgs** you can access the following properties:
     * **Appointment**- gets the appointment, this argument is of type object.
     * **SelectedDate**- gets the appointment current selected Date.
-    * **SelectedResource**- gets the collection of Resources.
     
 ## Appointment Dragging Events
 
@@ -102,7 +98,6 @@ The **AppointmentDragging** event handler receives two arguments:
     * Appointment - gets appointment to be dragged, this argument is of type object.
     * From – gets start time of appointment to be dragged, this argument is of type **DateTime**.
     * To - gets end time of appointment to be dropped, this argument is of type DateTime.
-    * Resources – gets the Resources of appointment, this argument is of type object.
     * RefreshAppointment - This argument is of type bool.
 
 ### AppointmentStartDragging
@@ -124,7 +119,6 @@ The **AppointmentEndDragging** event handler receives two arguments:
     * Appointment - gets appointment to be dragged, this argument is of type object.
     * From – gets start time of appointment to be dragged, this argument is of type **DateTime**.
     * To - gets end time of appointment to be dropped, this argument is of type DateTime.
-    * Resources – gets the Resources of appointment, this argument is of type object.
 
 ## ScheduleType Changing Event
 
