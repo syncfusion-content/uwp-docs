@@ -21,8 +21,7 @@ A linear gauge is composed of **MainScale** which is the central UI component. T
 Linear gauge scales are designed with the following two kinds of ticks: 
 
 * **Major Ticks**—are the primary scale indicators.
-* **Minor Ticks**—are the secondary scale indicators that falls between the major
-* ticks.
+* **Minor Ticks**—are the secondary scale indicators that falls between the major ticks.
 
 **Labels**
 
