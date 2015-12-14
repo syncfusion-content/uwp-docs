@@ -9,11 +9,9 @@ documentation: ug
 
 ### Flow Direction
 
-By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using “FlowDirection” property respectively.
+By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using **FlowDirection** property respectively.
 
->**Note :-
-When the Orientation of **SfBulletGraph** is **Horizontal** the default Flow direction will be Left to Right
-like when the Orientation of **SfBulletGraph** is **Vertical** the default Flow Direction will be Top to Bottom.**
+>Note:-When the Orientation of **SfBulletGraph** is **Horizontal** the default Flow direction will be Left to Right like when the Orientation of **SfBulletGraph** is **Vertical** the default Flow Direction will be Top to Bottom.
 
 {% tabs %}
 {% highlight xaml %}
