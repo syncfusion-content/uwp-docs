@@ -184,7 +184,7 @@ Now we have seen how to create the appointments and manipulating the appointment
 For example, if the appointment pop-up needs to be blocked, then the following code snippet needs to be used by defining the **AppointmentEditorOpening** event.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfSchedule  Name="schedule
     AppointmentEditorOpening="schedule_AppointmentEditorOpening" >
