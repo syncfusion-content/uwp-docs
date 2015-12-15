@@ -411,6 +411,7 @@ A particular Start and End timeslot can be blocked by setting the NonAccessibleB
 {% endhighlight %}
 {% endtabs %}
 
+
 ## Stroke Customization
 
 In the SfSchedule control, major, minor, and horizontal lines drawn in the day and week views, and horizontal and vertical lines drawn in the month view can be customized.
@@ -426,9 +427,9 @@ In the month view, the horizontal and vertical line strokes can be customized by
 <table>
 <tr>
 <td>
-**API Name**</td><td>
-**Data Type**</td><td>
-**Description**</td></tr>
+API Name</td><td>
+Data Type</td><td>
+Description</td></tr>
 <tr>
 <td>
 MajorTickStroke</td><td>

@@ -175,7 +175,7 @@ By clicking the option “Open One” or “Open Series” button the single/ser
 
 ![](Getting-Started_images/Getting-Started_img12.png)
 
-###  Behavior Customization using the events
+##  Behavior Customization using the events
 
 ### Preventing the display of appointment window
 
