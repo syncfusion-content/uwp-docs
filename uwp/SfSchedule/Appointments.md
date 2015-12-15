@@ -257,6 +257,7 @@ All-Day event will be arranged in all day panel of SfSchedule. The schedule All 
             this.grid.Children.Add(schedule);
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Appointments_images/Appointments_img12.jpeg)
 
