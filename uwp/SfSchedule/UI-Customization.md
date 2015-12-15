@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-## UI Customization
+# UI Customization
 
 ## Appointment Template Customization
 
