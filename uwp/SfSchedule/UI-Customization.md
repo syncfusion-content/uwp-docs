@@ -105,25 +105,36 @@ The default appearance of **NonAccessibleBlock** can be customized by using the 
 {% tabs %}
 {% highlight xaml %}
 
-        <Schedule:SfSchedule  Name="schedule" ScheduleType="Day">
+        <Schedule:SfSchedule ScheduleType="Week">
+            <Schedule:SfSchedule.NonAccessibleBlocks>
+                <Schedule:NonAccessibleBlock Background="LightPink" StartHour="12.00" EndHour="14.00" Label="Non Accessible Block">
+                </Schedule:NonAccessibleBlock>
+            </Schedule:SfSchedule.NonAccessibleBlocks>
             <Schedule:SfSchedule.NonAccessibleBlockTemplate>
-               <DataTemplate>
-                    <Border Background="Red">
-                        <TextBlock Text="Lunch" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"
-                                   FontSize="25" FontFamily="Segoe UI" FontWeight="SemiLight" />
+                <DataTemplate>
+                    <Border Background="LightGreen">
+                        <TextBlock Text="Lunch" VerticalAlignment="Center" FontSize="20"  FontStyle="Italic" HorizontalAlignment="Center"></TextBlock>
                     </Border>
                 </DataTemplate>
-    </Schedule:SfSchedule.NonAccessibleBlockTemplate>
+            </Schedule:SfSchedule.NonAccessibleBlockTemplate>
         </Schedule:SfSchedule>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
             SfSchedule schedule = new SfSchedule();
-            schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock() { StartHour = 2,EndHour = 4, Label = "Lunch" });
+            schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock()
+            {
+                StartHour = 12,
+                EndHour = 14,
+                Label = "Lunch"
+            });
             schedule.NonAccessibleBlockTemplate = (DataTemplate)this.Resources["NonAccessibleBlockTemplate"];
             this.grid.Children.Add(schedule);
 
 {% endhighlight %}
 {% endtabs %}
+
+![](UI-Customization_images/UI-Customization_non.png)

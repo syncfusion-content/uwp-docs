@@ -411,6 +411,7 @@ A particular Start and End timeslot can be blocked by setting the NonAccessibleB
 {% endhighlight %}
 {% endtabs %}
 
+![](Appearance-and-Styling_images/Appearance-and-Styling_non.png)
 
 ## Stroke Customization
 
