@@ -247,7 +247,7 @@ You can add Pointers to SfCircularGauge to point a values on the scale.
                         </syncfusion:CircularScale.Ranges>
 
                         <syncfusion:CircularScale.Pointers>
-                            <syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/>
+                            <syncfusion:CircularPointer PointerType="NeedlePointer" Value="10"/>
                         </syncfusion:CircularScale.Pointers>
                     </syncfusion:CircularScale>
                 </syncfusion:SfCircularGauge.Scales>
@@ -282,7 +282,7 @@ You can add Pointers to SfCircularGauge to point a values on the scale.
             _mainscale.Pointers.Add(new CircularPointer()
             {
                 PointerType = PointerType.NeedlePointer,
-                Value = 170
+                Value = 10
             });
             circularGauge.Scales.Add(_mainscale);
             TextBlock _textBlock = new TextBlock()

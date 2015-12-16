@@ -30,4 +30,4 @@ You can display the week number of the year in month view by using the **ShowWee
 {% endhighlight %}
 {% endtabs %}
 
-![](Week_Number_images/Week_Number_img1.jpeg)
+![](Week_Number_images/Week_Number_img1.png)

@@ -65,6 +65,6 @@ By triggering **DragAndDropCommand** of ScheduleCommands, the last selected appo
 
 {% highlight c# %}
 
-    ScheduleCommands.PasteCommand.Execute(this.Schedule);
+    ScheduleCommands.DragAndDropCommand.Execute(this.Schedule);
 
 {% endhighlight %}
