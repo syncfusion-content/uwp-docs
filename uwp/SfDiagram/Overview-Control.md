@@ -1,3 +1,12 @@
+---
+layout: post
+title: Overview Control | SfDiagram | uwp | Syncfusion
+description: overview control
+platform: uwp
+control: SfDiagram
+documentation: ug
+---
+
 # Overview Control
 
 Overview control is used to display a preview (overall view) of the entire content of a Diagram. This helps you to look overall picture of large Diagram and also to navigate (pan or zoom) to a particular position of the page.
@@ -17,39 +26,40 @@ You can view the entire content of a Diagram in a preview window. This helps you
 <table>
 <tr>
 <td>
-**Property******<br/><br/></td><td>
-**Description******<br/><br/></td><td>
-**Type******<br/><br/></td><td>
-**Data** **Type******<br/><br/></td></tr>
+<b>Property</b></td><td>
+<b>Description</b></td><td>
+<b>Type</b></td><td>
+<b>Data Type</b></td></tr>
 <tr>
 <td>
-Constraint<br/><br/></td><td>
-Gets or Sets the OverviewConstraints type.<br/><br/></td><td>
-Dependency property<br/><br/></td><td>
-enum<br/><br/>OverviewConstraints.None<br/><br/>OverviewConstraints.Pan<br/><br/>OverviewConstraints.TapFocus<br/><br/>OverviewConstraints.DrawFocus<br/><br/>OverviewConstraints.Zoom<br/><br/></td></tr>
+Constraint</td><td>
+Gets or Sets the OverviewConstraints type.</td><td>
+Dependency property</td><td>
+enumOverviewConstraints.NoneOverviewConstraints.PanOverviewConstraints.TapFocusOverviewConstraints.DrawFocusOverviewConstraints.Zoom</td></tr>
 <tr>
 <td>
-FocusBrush<br/><br/></td><td>
-Specifies the color of the viewport area in the preview.<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Brush<br/><br/></td></tr>
+FocusBrush</td><td>
+Specifies the color of the viewport area in the preview.</td><td>
+Dependency Property</td><td>
+Brush</td></tr>
 <tr>
 <td>
-UnFocusBrush<br/><br/></td><td>
-Specifies the background of the extended area in the preview.<br/><br/></td><td>
-Dependency Property<br/><br/></td><td>
-Brush<br/><br/></td></tr>
+UnFocusBrush</td><td>
+Specifies the background of the extended area in the preview.</td><td>
+Dependency Property</td><td>
+Brush</td></tr>
 </table>
+
+
 Adding Overview control to an Application
 
 The following code example explains how to add Overview to an Application
 
-![](Overview_Control_images/Overview_Control_img1.jpeg)
-
+![](Overview-Control_images\Overview-Control_img1.png)
 
 Refer to the Overview Sample from the following link.
 
 Sample Link:
 
-Navigation->UWP->Diagram->Overview
+Navigation->WinRT->Diagram->Overview
 
