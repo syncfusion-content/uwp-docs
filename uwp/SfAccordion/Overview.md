@@ -20,13 +20,13 @@ The `SfAccordion` control organizes content into multiple collapsible sections t
 
 1.WinRT
 
-![](Overview/Winrt.png)
+![](Overview-images/Winrt.png)
 
 2.Windows Phone
 
-![](Overview/windowsphone.png)
+![](Overview-images/windowsphone.png)
 
 
-![](Overview/win.png)
+![](Overview-images/win.png)
 
 
