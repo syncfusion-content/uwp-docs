@@ -21,7 +21,7 @@ Dependencies</td></tr>
 <td>
 SfDataGrid</td><td>
 Syncfusion.SfGrid.UWP</td><td>
-Syncfusion.Data.UWP</br>Syncfusion.SfInput.UWP</br>Syncfusion.SfShared.UWP</br>Syncfusion.SfGridConverter.UWP</br>Syncfusion.Pdf.UWP</br>Syncfusion.XlsIo.UWP</td></tr>
+Syncfusion.Data.UWP</br></br>Syncfusion.SfInput.UWP</br></br>Syncfusion.SfShared.UWP</br></br>Syncfusion.SfGridConverter.UWP</br></br>Syncfusion.Pdf.UWP</br></br>Syncfusion.XlsIo.UWP</td></tr>
 <tr>
 <td>
 SfChart</td><td>
@@ -41,7 +41,7 @@ Syncfusion.SfChart.UWP</td><td>
 <td>
 SfSchedule</td><td>
 Syncfusion.SfSchedule.UWP</td><td>
-Syncfusion.SfShared.UWP</br>Syncfusion.SfRadialMenu.UWP</br>Syncfusion.SfInput.UWP</br>Syncfusion.SfTabControl.UWP</td></tr>
+Syncfusion.SfShared.UWP</br></br>Syncfusion.SfRadialMenu.UWP</br></br>Syncfusion.SfInput.UWP</br></br>Syncfusion.SfTabControl.UWP</td></tr>
 <tr>
 <td>
 SfDiagram</td><td>
@@ -61,7 +61,7 @@ Syncfusion.SfShared.UWP</td></tr>
 <td>
 SfRibbon</td><td>
 Syncfusion.SfRibbon.UWP</td><td>
-Syncfusion.SfShared.UWP</br>Syncfusion.SfInput.UWP</td></tr>
+Syncfusion.SfShared.UWP</br></br>Syncfusion.SfInput.UWP</td></tr>
 <tr>
 <td>
 SfTileVew</td><td>
@@ -71,7 +71,7 @@ Syncfusion.SfShared.UWP</td></tr>
 <td>
 SfRichTextBoxAdv</td><td>
 Syncfusion.SfRichTextBoxAdv.UWP</td><td>
-Syncfusion.DocIO.UWP</br>Syncfusion.SfRadialMenu.UWP</br>Syncfusion.SfShared.UWP</td></tr>
+Syncfusion.DocIO.UWP</br></br>Syncfusion.SfRadialMenu.UWP</br></br>Syncfusion.SfShared.UWP</td></tr>
 <tr>
 <td>
 SfCalculator</td><td>
@@ -156,12 +156,12 @@ Syncfusion.SfShared.UWP</td></tr>
 <td>
 SfColorPalette</td><td>
 Syncfusion.SfColorPickers.UWP</td><td>
-Syncfusion.SfShared.UWP</br>Syncfusion.SfRadialMenu.UWP</td></tr>
+Syncfusion.SfShared.UWP</br></br>Syncfusion.SfRadialMenu.UWP</td></tr>
 <tr>
 <td>
 SfColorPicker</td><td>
 Syncfusion.SfColorPickers.UWP</td><td>
-Syncfusion.SfShared.UWP</br>Syncfusion.SfRadialMenu.UWP</td></tr>
+Syncfusion.SfShared.UWP</br></br>Syncfusion.SfRadialMenu.UWP</td></tr>
 <tr>
 <td>
 SfRadialMenu</td><td>
