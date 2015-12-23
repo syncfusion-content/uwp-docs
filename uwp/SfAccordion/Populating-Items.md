@@ -99,7 +99,7 @@ accordion.Items.Add(new SfAccordionItem() { Header = "Universal" });
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 `SfAccordion` control is populated as follows:
 
