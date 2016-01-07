@@ -31,6 +31,10 @@ The time taken to move a selected item from its position to center of the contro
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 carousel.Duration =  TimeSpan.FromSeconds(1.0);
@@ -58,6 +62,10 @@ The animation effect on selecting items can be customized with `EasingFunction` 
 </layout:SfCarousel>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -89,6 +97,10 @@ carousel.EasingFunction = new BackEase() { EasingMode = EasingMode.EaseInOut, Am
 </layout:SfCarousel>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

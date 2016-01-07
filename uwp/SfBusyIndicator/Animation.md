@@ -32,6 +32,10 @@ Here is an example showing disabled `SfBusyIndicator`.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
@@ -61,6 +65,10 @@ Here is an example showing different animation types in `SfBusyIndicator`.
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -106,6 +114,10 @@ Animation speed property is used to change the speed of animation. Minimum anima
 <notification:SfBusyIndicator AnimationSpeed="200" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

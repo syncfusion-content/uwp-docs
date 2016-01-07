@@ -39,6 +39,10 @@ Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfAccordion accordion = new SfAccordion();
@@ -82,6 +86,10 @@ accordion.Items.Add(new SfAccordionItem());
 </layout:SfAccordion>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -128,6 +136,12 @@ accordion.Items.Add(new SfAccordionItem() { Header = "Universal" });
 </layout:SfAccordion>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+
+{% tabs %}
+
 
 {% highlight C# %}
 

@@ -65,6 +65,10 @@ calculator.DefaultValue = 34.67M;
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 calculator.DisplayText = "DisplayText";
@@ -91,6 +95,10 @@ calculator.DisplayText = "DisplayText";
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

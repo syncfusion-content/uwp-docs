@@ -28,6 +28,10 @@ ItemsSource="{Binding Employees}" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 accordion.AccentBrush = new SolidColorBrush() { Color = Windows.UI.Colors.Red };

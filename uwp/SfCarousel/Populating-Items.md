@@ -39,6 +39,10 @@ Here five `SfCarouselItems` are added as the children of the `SfCarousel`.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfCarousel carousel = new SfCarousel();
@@ -80,6 +84,10 @@ carousel.Items.Add(new SfCarouselItem());
 </layout:SfCarousel>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

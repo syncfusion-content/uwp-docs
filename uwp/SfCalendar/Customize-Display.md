@@ -23,6 +23,10 @@ First day of week is changeable in SfCalendar. It is set using the property `Fir
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 calendar.FirstDayofWeek = System.DayOfWeek.Thursday;
@@ -46,6 +50,10 @@ Day names in SfCalendar can be set to either abbreviated or full names using `Da
 <input:SfCalendar x:Name="calendar" DayNameDisplayMode="DayNames"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

@@ -23,6 +23,10 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 calendar.VisibleMinDate = new DateTime(2015, 12, 10);
@@ -46,6 +50,10 @@ calendar.VisibleMinDate = new DateTime(2015, 12, 10);
 <input:SfCalendar x:Name="calendar" VisibleMaxDate="12/15/2015"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

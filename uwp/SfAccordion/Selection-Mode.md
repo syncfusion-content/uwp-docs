@@ -62,6 +62,10 @@ Here is an example showing OneOrMore `SelectionMode`:
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 accordion.SelectionMode = AccordionSelectionMode.OneOrMore;
