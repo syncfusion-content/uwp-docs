@@ -109,6 +109,10 @@ SfSplitMosaicTile splitMosaicTile = new SfSplitMosaicTile();
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 splitMosaicTile.Header = "Mosaic Tile";
@@ -183,6 +187,10 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 splitMosaicTile.ImageList = new ImageList();
@@ -228,6 +236,10 @@ splitMosaicTile.ImageList.Add("Assets/emp9.png");
 <notification:SfSplitMosaicTile Header="Split mosaic tile" x:Name="splitMosaicTile"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

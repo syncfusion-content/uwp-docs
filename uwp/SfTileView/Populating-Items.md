@@ -39,6 +39,10 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfTileView tileView = new SfTileView();
@@ -80,6 +84,10 @@ tileView.Items.Add(new SfTileViewItem());
 </layout:SfTileView>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

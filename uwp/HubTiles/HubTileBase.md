@@ -34,6 +34,10 @@ Header="HubTile" />
    
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 hubTile.RotationDepth = 40.0;
@@ -63,6 +67,10 @@ Header="HubTile" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 hubTile.ScaleDepth = 1.2;
@@ -85,6 +93,10 @@ Tile press duration is the time taken for the tile press animation to take place
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 pulsingTile.TilePressDuration = TimeSpan.FromSeconds(5);
@@ -104,6 +116,10 @@ The flip effect can be enabled or disabled using `OverrideDefaultStates` propert
 <notification:SfHubTile x:Name="hubTile" Header="HubTile" OverrideDefaultStates="True"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -147,6 +163,10 @@ Header="HubTile">
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 hubTile.IsFrozen = true;
@@ -180,6 +200,10 @@ Title="This is title area."
 Header="HubTile"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -365,6 +389,10 @@ Header="HubTile">
 </notification:SfHubTile>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

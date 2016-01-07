@@ -39,6 +39,10 @@ SelectedForeground property is used to customize the foreground color of the hea
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tabControl.SelectionStyle = Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.HeaderText;
@@ -77,6 +81,10 @@ SelectedBackground property is used to customize the background color of the hea
 </navigation:SfTabControl>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

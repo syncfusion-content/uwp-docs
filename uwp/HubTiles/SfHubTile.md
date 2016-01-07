@@ -159,6 +159,10 @@ All the transition effects takes place with the specified interval. By default, 
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 hubTile.Interval = TimeSpan.FromSeconds(1);
@@ -232,6 +236,10 @@ Header="HubTile">
 </notification:SfHubTile>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

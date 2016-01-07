@@ -21,6 +21,10 @@ Tooltips in SfRating control shows the rating value. Tooltips can be enabled or 
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 rating.ShowToolTip = true;
@@ -45,6 +49,10 @@ The number of decimal digits displayed in tooltips is determined by `AutoTooltip
 				x:Name="rating"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

@@ -39,6 +39,10 @@ Here five SfTabItems are added as the children of SfTabControl. Adding items as 
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfTabControl tabControl = new SfTabControl();
@@ -82,6 +86,10 @@ Header property helps to set the header for SfTabItem. Tab item can be selected 
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfTabControl tabControl = new SfTabControl();
@@ -122,6 +130,10 @@ Content property helps to set the content for SfTabItem. SfTabItem is a ContentC
 </navigation:SfTabControl>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

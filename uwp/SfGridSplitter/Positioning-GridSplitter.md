@@ -91,6 +91,10 @@ MoveSplitter method is used to move the grid splitter programmatically for a spe
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 gridSplitter.MoveSplitter(30);

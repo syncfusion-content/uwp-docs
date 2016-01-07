@@ -25,6 +25,10 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tileView.MaximizedItemHeight = 400.0;
@@ -82,6 +86,10 @@ tileView.MaximizedItemWidth = 400.0;
 </layout:SfTileView>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

@@ -23,6 +23,10 @@ Specifying the number of rating items in `SfRating` control is much simpler with
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 rating.ItemsCount = 5;

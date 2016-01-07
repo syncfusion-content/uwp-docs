@@ -29,6 +29,10 @@ Rating item fills completely when pointer enters the rating item. In the followi
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 rating.ItemsCount = 5;
@@ -57,6 +61,10 @@ Rating item fills partially when pointer enters the rating item. In the followin
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 rating.ItemsCount = 5;
@@ -84,6 +92,10 @@ Rating item fills exactly when the pointer enters the rating item. In the follow
                 Precision="Exact" x:Name="rating"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

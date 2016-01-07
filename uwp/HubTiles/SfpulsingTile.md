@@ -109,6 +109,10 @@ SfSplitMosaicTile splitMosaicTile = new SfSplitMosaicTile();
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 pulsingTile.Header = "Pulsing Tile";
@@ -162,6 +166,10 @@ The animation properties that can be changed are pulsing depth, pulsing duration
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 pulsingTile.PulseScale = 1.2;
@@ -188,6 +196,10 @@ pulsingTile.PulseScale = 1.2;
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 pulsingTile.PulseDuration = TimeSpan.FromSeconds(2);
@@ -212,6 +224,10 @@ pulsingTile.PulseDuration = TimeSpan.FromSeconds(2);
 </notification:SfPulsingTile>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -238,6 +254,10 @@ pulsingTile.RadiusX = 2.0;
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 pulsingTile.RadiusY = 2.0;
@@ -262,6 +282,10 @@ pulsingTile.RadiusY = 2.0;
 </notification:SfPulsingTile>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

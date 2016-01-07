@@ -37,6 +37,10 @@ Tab scroll buttons can be enabled or disabled for SfTabControl using the TabScro
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tabControl.TabScrollButtonVisibility = Syncfusion.UI.Xaml.Controls.Navigation.TabScrollButtonVisibility.Visible;
@@ -149,6 +153,10 @@ CanClose property is used to decide whether a tab item can be closed or not even
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 paul.CanClose = true;
@@ -187,6 +195,10 @@ Default close button type is Hide. The possible close button types are:
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
