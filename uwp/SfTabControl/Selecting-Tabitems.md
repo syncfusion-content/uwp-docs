@@ -41,6 +41,10 @@ SelectedItem property is used to select an item using its instance.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tabControl.SelectedItem = niko;
@@ -73,6 +77,10 @@ SelectedIndex property is used to select an item using its index.
 </navigation:SfTabControl>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -107,6 +115,10 @@ IsSelected property is used to check whether an item is selected or not. An item
 </navigation:SfTabControl>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

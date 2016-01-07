@@ -188,6 +188,10 @@ Minimized items are placed at top of the control and maximized item at the botto
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.MinimizedItemsOrientation.Top;
@@ -211,6 +215,10 @@ Minimized items are placed at bottom of the control and maximized item at the to
 </layout:SfTileView>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -236,6 +244,10 @@ Minimized items are placed at left side of the control and maximized item at the
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.MinimizedItemsOrientation.Left;
@@ -259,6 +271,10 @@ Minimized items are placed at right side of the control and maximized item at th
 </layout:SfTileView>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

@@ -35,6 +35,10 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tileView.ItemHeight = 50.0;
@@ -70,6 +74,10 @@ tileView.ItemHeight = 50.0;
 </layout:SfTileView>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

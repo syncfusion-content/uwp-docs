@@ -21,6 +21,10 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 colorPicker.SelectedColor = Colors.Green;

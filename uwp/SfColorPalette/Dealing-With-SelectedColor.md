@@ -43,6 +43,10 @@ xmlns:shared="using:Syncfusion.UI.Xaml.Converters">
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 testText.Foreground = new SolidColorBrush() { Color = colorPalette.SelectedColor };

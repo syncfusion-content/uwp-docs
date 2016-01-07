@@ -45,6 +45,10 @@ The following code example and screen shot illustrate this.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 paul.ShowPinnableButton = true;
@@ -80,6 +84,10 @@ The pinned item tab panel is scrollable. The scroll buttons can be enabled by se
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

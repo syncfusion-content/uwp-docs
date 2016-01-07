@@ -86,6 +86,10 @@ At most only one item can be in maximized state and the remaining items are in n
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tileItem1.State = Syncfusion.UI.Xaml.Controls.Layout.TileViewItemState.Maximized;
@@ -112,6 +116,10 @@ StateChanged event notifies whenever the state of an item is changed.
 </layout:SfTileView>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

@@ -37,6 +37,10 @@ The tab strip of SfTabControl can be aligned in all the four sides of SfTabContr
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tabControl.TabStripPlacement = Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement.Bottom;
@@ -75,6 +79,10 @@ To enable/disable this menu set the property ShowTabStripMenu in SfTabControl
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

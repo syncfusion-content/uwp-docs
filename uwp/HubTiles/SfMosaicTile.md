@@ -113,6 +113,10 @@ SfMosaicTile mosaicTile = new SfMosaicTile();
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 mosaicTile.Header = "Mosaic Tile";
@@ -187,6 +191,10 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 mosaicTile.ImageList = new ImageList();
@@ -232,6 +240,10 @@ mosaicTile.ImageList.Add("Assets/emp9.png");
 <notification:SfMosaicTile Header="Mosaic tile" x:Name="mosaicTile"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -282,6 +294,10 @@ Animation interval for flip transition can be changed using `Interval` property.
 <notification:SfMosaicTile x:Name="mosaicTile" Interval="0:0:5"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

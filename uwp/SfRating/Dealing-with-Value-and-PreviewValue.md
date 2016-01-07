@@ -21,6 +21,10 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 rating.ItemsCount = 5;
@@ -81,6 +85,10 @@ private void rating_ValueChanged(object sender, ValueChangedEventArgs e)
 <input:SfRating ItemsCount="5" Value="2" IsReadOnly="true" x:Name="rating"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

@@ -77,6 +77,10 @@ Transition effects of selecting an item can be customized using ContentTransitio
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tabControl.ContentTransitions = new Windows.UI.Xaml.Media.Animation.TransitionCollection();
