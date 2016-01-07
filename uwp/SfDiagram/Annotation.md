@@ -1,22 +1,24 @@
 ---
 layout: post
-title: Annotation | SfDiagram | uwp | Syncfusion
-description: annotation
+title: Add text annotations to Diagram objects to textually describe them.
+description: How to textually describe Nodes and Connectors?
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-## Annotation
+#Annotation
 
-Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. You can add Multiple Labels to a Node/Connector.
+Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
+You can add Multiple Labels to a Node/Connector.
 
-Create Annotation
+##Create Annotation
 
-You can add an Annotation to a Node/Connector by defining the label object and adding that to the Annotation collections of Node/Connector. The Text property of label defines the text to be displayed. The following code illustrates how to create an Annotation.
+You can add an Annotation to a Node/Connector by defining the IAnnotation object and adding that to the `Annotations` property of Node/Connector.The `Content` property of IAnnotation defines the object to be displayed. The following code illustrates how to create an Annotation.
 
 {% highlight C# %}
 
+//Creates the Node Collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
 {
@@ -24,6 +26,7 @@ NodeViewModel node = new NodeViewModel()
 	UnitHeight = 100,
 	OffsetX = 100,
 	OffsetY = 100,
+	//Creates Annotation Collection
 	Annotations=new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -37,15 +40,18 @@ NodeViewModel node = new NodeViewModel()
 	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
-
+//Adds Nodes to the SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
+//Creates the Connector Collection
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
 ConnectorViewModel connector = new ConnectorViewModel()
 {
 	SourcePoint = new Point(200, 50),
 	TargetPoint = new Point(300, 150),
+	
+	//Creates the Segment Collection
 	Segments=new ObservableCollection<IConnectorSegment>()
 	{
 		new OrthogonalSegment()
@@ -54,6 +60,8 @@ ConnectorViewModel connector = new ConnectorViewModel()
 			Length=50
 		}
 	},
+	
+	//Creates the Annotation collection
 	Annotations = new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -63,126 +71,53 @@ ConnectorViewModel connector = new ConnectorViewModel()
 	},
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 };
-
+//Adds Connectors to the SfDiagram
 lines.Add(connector);
 diagram.Connectors = lines;   
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img1.png)
+![](Annotation_images/Annotation_img1.jpeg)
 
-Alignment
+##Alignment
 
-Annotation can be aligned relative to the Node boundaries. It has margin, Offset, horizontal and vertical alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
+Annotation can be aligned relative to the Node boundaries. It has Margin, Offset, Horizontal and Vertical Alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
 
-Offset
+###Offset
 
-The Offset property of label is used to align the labels based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
+The `Offset` property of IAnnotation is used to align the Annotations based on fractions. 0 represents Top/Left corner, 1 represents Bottom/Right corner, and 0.5 represents half of Width/Height.
 
 The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
 
-![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img2.png](Annotation_images\Annotation_img2.png)
+![](Annotation_images/Annotation_img2.jpeg)
 
 By using Offset property, without creating the template we can arrange the Annotaion.
 
-![C:\Users\muniyarajm\Pictures\Screenshot\Connector\offset1.png](Annotation_images\Annotation_img3.png)
+![](Annotation_images/Annotation_img3.jpeg)
 
-Horizontal and vertical alignments
+###Horizontal and Vertical alignments
 
-The HorizontalAlignment property of labels is used to set how the label is horizontally aligned at the label position determined from the fraction values. The VerticalAlignment property is used to set how Annotation is vertically aligned at the Annotation position.
+The `HorizontalAlignment` property of IAnnotation is used to set how the Annotation is horizontally aligned at the Annotation position determined from the fraction values. The VerticalAlignment property is used to set how Annotation is vertically aligned at the Annotation position.
 
 The following table illustrates all the possible alignments visually with **Offset (0, 0)**.
 
+| Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
+|---|---|---|
+| Left | Top | ![](Annotation_images/Annotation_img4.jpeg) |
+| Center | | ![](Annotation_images/Annotation_img5.jpeg) |
+| Right | | ![](Annotation_images/Annotation_img6.jpeg) |
+| Left | Center | ![](Annotation_images/Annotation_img7.jpeg) |
+| Center | | ![](Annotation_images/Annotation_img8.jpeg) |
+| Right | | ![](Annotation_images/Annotation_img9.jpeg) |
+| Left | Bottom | ![](Annotation_images/Annotation_img10.jpeg) |
+| Center | | ![](Annotation_images/Annotation_img11.jpeg) |
+| Right | | ![](Annotation_images/Annotation_img12.jpeg) |
 
-
-<table>
-<tr>
-<td>
-Horizontal Alignment</td><td>
-Vertical Alignment </td><td>
-Output with Offset(0,0)</td></tr>
-<tr>
-<td>
-Left</td><td>
-Top</td><td>
-         <img src="Annotation_images\Annotation_img4.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img3.png" width="151pt" height="123pt"                        </td></tr>
-<tr>
-<td>
-Center</td><td>
-</td><td>
-            <img src="Annotation_images\Annotation_img5.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img4.png" width="154pt" height="120pt"</td></tr>
-<tr>
-<td>
-Right</td><td>
-</td><td>
-         <img src="Annotation_images\Annotation_img6.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img5.png" width="155pt" height="123pt"</td></tr>
-<tr>
-<td>
-Left</td><td>
-Center</td><td>
-         <img src="Annotation_images\Annotation_img7.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img6.png" width="153pt" height="131pt"         </td></tr>
-<tr>
-<td>
-Center</td><td>
-</td><td>
-         <img src="Annotation_images\Annotation_img8.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img7.png" width="155pt" height="126pt"     </td></tr>
-<tr>
-<td>
-Right</td><td>
-</td><td>
-          <img src="Annotation_images\Annotation_img9.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img8.png" width="150pt" height="126pt"</td></tr>
-<tr>
-<td>
-Left</td><td>
-Bottom</td><td>
-        <img src="Annotation_images\Annotation_img10.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img9.png" width="154pt" height="139pt"        </td></tr>
-<tr>
-<td>
-Center</td><td>
-</td><td>
-         <img src="Annotation_images\Annotation_img11.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img10.png" width="153pt" height="138pt"</td></tr>
-<tr>
-<td>
-Right</td><td>
-</td><td>
-         <img src="Annotation_images\Annotation_img12.png" alt="D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Label_images\Label_img11.png" width="157pt" height="133pt"</td></tr>
-</table>
-
-
-The following table illustrates all the possible alignments visually with **Offset.**
-
-<table>
-<tr>
-<td>
-Horizontal Alignment</td><td>
-Vertical Alignment</td><td>
-Offset</td><td>
-Image</td></tr>
-<tr>
-<td>
-Center</td><td>
-Top</td><td>
-(0.2,1)</td><td>
-<img src="Annotation_images\Annotation_img13.png" alt="C:\Users\muniyarajm\Pictures\Screenshot\Connector\align1.png" width="149pt" height="154pt"</td></tr>
-<tr>
-<td>
-Right</td><td>
-Middle</td><td>
-(0.5,0.3)</td><td>
-<img src="Annotation_images\Annotation_img14.png" alt="C:\Users\muniyarajm\Pictures\Screenshot\Connector\align2.png" width="138pt" height="128pt"</td></tr>
-<tr>
-<td>
-Left</td><td>
-Bottom</td><td>
-(0.5,0.7)</td><td>
-<img src="Annotation_images\Annotation_img15.png" alt="C:\Users\muniyarajm\Pictures\Screenshot\Connector\align3.png" width="130pt" height="125pt"</td></tr>
-</table>
-
-
-The following codes illustrates how to align annotations.
+The following codes illustrates how to align Annotations.
 
 {% highlight C# %}
 
+//Creates the Node Collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
 {
@@ -205,19 +140,21 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds Nodes to the SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img16.png)
+![](Annotation_images/Annotation_img16.jpeg)
 
-Margin
+###Margin
 
-Margin is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the Margin property. The following code example illustrates how to align an Annotation based on its Offset, horozontalAlignment, VerticalAlignment and Margin values.
+**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
 
 {% highlight C# %}
 
+//Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
 {
@@ -225,6 +162,7 @@ NodeViewModel node = new NodeViewModel()
 	UnitHeight = 100,
 	OffsetX = 100,
 	OffsetY = 100,
+	//Creates Annotation collection
 	Annotations=new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -241,12 +179,13 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds Nodes to the SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img17.png)
+![](Annotation_images/Annotation_img17.jpeg)
 
 The following code illustrates how to displace Annotation through with the Margin property.
 
@@ -265,16 +204,15 @@ new AnnotationEditorViewModel()
 
 {% endhighlight %}
 
-![C:\Users\muniyarajm\Pictures\Screenshot\Connector\margin1.png](Annotation_images\Annotation_img18.png)
+![](Annotation_images/Annotation_img18.jpeg)
 
-_Annotation Displacement through margin_
+##Wrapping
 
-Wrapping
-
-When text overflows Node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the text should be wrapped. The following code illustrates how to wrap a text in a Node.
+When text overflows Node boundaries, you can control it by using Text Wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped. The following code illustrates how to wrap a Annotation in a Node.
 
 {% highlight C# %}
 
+//Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
 {
@@ -282,6 +220,7 @@ NodeViewModel node = new NodeViewModel()
 	UnitHeight = 100,
 	OffsetX = 100,
 	OffsetY = 100,
+	//Creates Annotation collection
 	Annotations=new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -294,40 +233,22 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds Node to the SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img19.png)
+![](Annotation_images/Annotation_img19.jpeg)
 
+| Values | Description | Node | Connector|
+|---|---|---|---|
+| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img20.jpeg) | ![](Annotation_images/Annotation_img21.jpeg) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img22.jpeg) | ![](Annotation_images/Annotation_img23.jpeg) |
 
+##Appearance 
 
-<table>
-<tr>
-<td>
-Values</td><td>
-Description</td><td>
-Node</td><td>
-Connector                                </td></tr>
-<tr>
-<td>
-NoWrap</td><td>
-Text will not be wrapped.</td><td>
-<img src="Annotation_images\Annotation_img20.png" alt="" width="237pt" height="129pt"</td><td>
-<img src="Annotation_images\Annotation_img21.png" alt="C:\Users\muniyarajm\Pictures\Screenshot\Connector\nowrap.png" width="195pt" height="126pt"</td></tr>
-<tr>
-<td>
-Wrap</td><td>
-Text-wrapping occurs when the text overflows beyond the available Node width.</td><td>
-                           <img src="Annotation_images\Annotation_img22.png" alt="" width="111pt" height="112pt"</td><td>
-        <img src="Annotation_images\Annotation_img23.png" alt="C:\Users\muniyarajm\Pictures\Screenshot\Connector\wrap.png" width="133pt" height="128pt"</td></tr>
-</table>
-
-
-Appearance 
-
-You can change the appearance by ViewTemplate. The following code illustrate how to customize the appearance of an Annotation.
+You can change the appearance by ViewTemplate. The following code illustrates how to customize the appearance of an Annotation.
 
 [XAML]
 
@@ -346,6 +267,7 @@ You can change the appearance by ViewTemplate. The following code illustrate how
 
 {% highlight C# %}
 
+//Creates Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
 {
@@ -353,6 +275,7 @@ NodeViewModel node = new NodeViewModel()
 	UnitHeight = 100,
 	OffsetX = 100,
 	OffsetY = 100,
+	//Creates Annotation collection
 	Annotations = new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -365,14 +288,15 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds Nodes to the SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img24.png)
+![](Annotation_images/Annotation_img24.jpeg)
 
-The fill and border appearance of the text can also be customized with appearance specific properties of Annotation. The following code illustrates how to customize background and border of a Annotation.
+The Appearance of the Annotation can also be customized with appearance specific properties. The following code illustrates how to customize background and border of a Annotation.
 
 [XAML]
 
@@ -387,14 +311,15 @@ The fill and border appearance of the text can also be customized with appearanc
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img25.png)
+![](Annotation_images/Annotation_img25.jpeg)
 
-Drag
+##Drag
 
-An Annotation can be displaced from its original position to any preferred location interactively. Dragging is displaced by default. You can enable label dragging with the Constraints property of Node/Connector. The following code illustrates how to enable Annotation **dragging** for Node.
+An Annotation can be displaced from its original position to any preferred location interactively. Dragging is displaced by default. You can enable Annotation dragging with the Constraints property of Node/Connector. The following code illustrates how to enable Annotation **Dragging** for Node.
 
 {% highlight C# %}
 
+//Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
 {
@@ -402,7 +327,9 @@ NodeViewModel node = new NodeViewModel()
 	UnitHeight = 100,
 	OffsetX = 100,
 	OffsetY = 100,
+	//Enable Annotation dragging
 	Constraints=NodeConstraints.Default | NodeConstraints.DragAnnotation,
+	//Creates Annotation collection
 	Annotations = new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -414,26 +341,26 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds Nodes to the SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-
-
-![](Annotation_images\Annotation_img26.png)
+![](Annotation_images/Annotation_img26.jpeg)
 
 The following code illustrates how to enable DragAnnotation for Connector.
 
 {% highlight C# %}
 
+//Enable DragAnnotation
 connector.Constraints = ConnectorConstraints.Default | ConnectorConstraints.DragAnnotation;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img27.png)
+![](Annotation_images/Annotation_img27.jpeg)
 
-Edit
+##Edit
 
 Diagram provides support to edit an Annotation at runtime, either programmatically or interactively.
 
@@ -443,6 +370,7 @@ The following code illustrates how to edit the Annotation programmatically.
 
 {% highlight C# %}
 
+//Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
 {
@@ -450,6 +378,7 @@ NodeViewModel node = new NodeViewModel()
 	UnitHeight = 100,
 	OffsetX = 200,
 	OffsetY = 200,
+	//Creates Annotation collection
 	Annotations = new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -468,6 +397,7 @@ NodeViewModel node1 = new NodeViewModel()
 	OffsetX = 350,
 	OffsetY = 200,
 	Constraints = NodeConstraints.Default | NodeConstraints.DragAnnotation,
+	//Creates Annotation collection
 	Annotations = new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -480,15 +410,16 @@ NodeViewModel node1 = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds Nodes to the SfDiagram
 nodes.Add(node);
 nodes.Add(node1);
 diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img28.png)
+![](Annotation_images/Annotation_img28.jpeg)
 
-Read Only Annotation
+##Read Only Annotation
 
 Diagram allows to create read only Annotation. You have to set the readOnly property of Annotation to enable/disable the read only mode. The following code illustrates how to enable **ReadOnly** mode.
 
@@ -500,6 +431,7 @@ NodeViewModel node1 = new NodeViewModel()
 	UnitHeight = 100,
 	OffsetX = 100,
 	OffsetY = 100,
+	//Creates Annotation collection
 	Annotations = new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -515,12 +447,13 @@ NodeViewModel node1 = new NodeViewModel()
 
 {% endhighlight %}
 
-Multiple Annotations
+##Multiple Annotations
 
 You can add any number of Annotations to a Node or Connector. The following code illustrates how to add multiple Annotations to a Node.
 
 {% highlight C# %}
 
+//Creates Annotation collection
 ObservableCollection<AnnotationEditorViewModel> annotations = new ObservableCollection<AnnotationEditorViewModel>();
             
 AnnotationEditorViewModel annotation1 = new AnnotationEditorViewModel()
@@ -541,10 +474,13 @@ AnnotationEditorViewModel annotation3 = new AnnotationEditorViewModel()
 	ViewTemplate = this.diagram.Resources["viewtemplate"] as DataTemplate,
 	Offset = new Point(0.82, 0.9)
 };
+
+//Adds multiple Annotations to a Node
 annotations.Add(annotation1);
 annotations.Add(annotation2);
 annotations.Add(annotation3);
 
+//Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 NodeViewModel node = new NodeViewModel()
 {
@@ -557,9 +493,10 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds Node to the SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images\Annotation_img29.png)
+![](Annotation_images/Annotation_img29.jpeg)

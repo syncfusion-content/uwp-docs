@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview Control | SfDiagram | uwp | Syncfusion
-description: overview control
+title: Create a preview of the entire content of the Diagram.
+description: How to see the preview of the large Diagrams and to ease navigations within that Diagram?
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Overview Control
+#Overview Control
 
 Overview control is used to display a preview (overall view) of the entire content of a Diagram. This helps you to look overall picture of large Diagram and also to navigate (pan or zoom) to a particular position of the page.
 
@@ -15,51 +15,34 @@ When you work on a very large Diagram, You may not know the part where you are a
 
 Overview control solved this problem by displaying a preview (overall view) of the entire Diagram. A rectangle indicated viewport of the Diagram. Navigation becomes easy by dragging this rectangle.
 
-Note : 
-
-Supported platform: WPF, WinRT 8.1, Universal, UWP
-
-Use Case Scenarios
-
-You can view the entire content of a Diagram in a preview window. This helps you to navigate to a particular position of the page.
-
-<table>
-<tr>
-<td>
-<b>Property</b></td><td>
-<b>Description</b></td><td>
-<b>Type</b></td><td>
-<b>Data Type</b></td></tr>
-<tr>
-<td>
-Constraint</td><td>
-Gets or Sets the OverviewConstraints type.</td><td>
-Dependency property</td><td>
-enumOverviewConstraints.NoneOverviewConstraints.PanOverviewConstraints.TapFocusOverviewConstraints.DrawFocusOverviewConstraints.Zoom</td></tr>
-<tr>
-<td>
-FocusBrush</td><td>
-Specifies the color of the viewport area in the preview.</td><td>
-Dependency Property</td><td>
-Brush</td></tr>
-<tr>
-<td>
-UnFocusBrush</td><td>
-Specifies the background of the extended area in the preview.</td><td>
-Dependency Property</td><td>
-Brush</td></tr>
-</table>
+N> Supported platform: WPF, WinRT 8.1, Universal, UWP
 
 
-Adding Overview control to an Application
+## Create Overview
 
-The following code example explains how to add Overview to an Application
+The following code example explains how to add Overview to an Application.
 
-![](Overview-Control_images\Overview-Control_img1.png)
+{% highlight xml %}
+
+<!--Initializes the overview control-->
+<overview:Overview Source="{Binding ElementName=diagramControl}" Height="300" Margin="0,25,0,0"/>
+	
+{% endhighlight %}	
+
+![](Overview-Control_images/Overview-Control_img1.jpeg)
 
 Refer to the Overview Sample from the following link.
 
 Sample Link:
 
-Navigation->WinRT->Diagram->Overview
+Navigation->UWP->Diagram->Overview
+
+## Zoom Pan
+In overview, the view port of the Diagram is highlighted with a red colored rectangle. Diagram can be zoomed/panned by interacting with that. You can interact with overview as follows.
+
+| Property | Description | Type | DataType |
+|---|---|---|---|
+| Constraint | Gets or Sets the OverviewConstraints. | Dependency property | Enum OverviewConstraints  OverviewConstraints.None OverviewConstraints.Pan OverviewConstraints.TapFocus OverviewConstraints.DrawFocus OverviewConstraints.Zoom |
+| FocusBrush | Specifies the color of the viewport area in the preview. | Dependency Property | Brush |
+| UnFocusBrush | Specifies the background of the extended area in the preview. | Dependency Property | Brush |
 
