@@ -158,6 +158,10 @@ The background of selected date can be set using `SelectedDateBackground` proper
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 calendar.SelectedDateBackground = new SolidColorBrush(Windows.UI.Colors.Red);

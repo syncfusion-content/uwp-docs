@@ -23,6 +23,10 @@ By default, navigation buttons are collapsed. Navigation button support can be e
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfCalendar calendar = new SfCalendar();

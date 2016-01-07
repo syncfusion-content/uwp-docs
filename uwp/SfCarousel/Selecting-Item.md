@@ -34,6 +34,10 @@ Items can be selected programmatically using the properties `SelectedIndex`, `Se
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 carousel.SelectedIndex = 2;
@@ -68,6 +72,10 @@ SelectedItem property is used to select an item in SfCarousel using the instance
 </layout:SfCarousel>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

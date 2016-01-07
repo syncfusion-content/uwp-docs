@@ -29,6 +29,10 @@ This method is used to identify the mathematical operation based on the input st
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 CalculatorFunctions function = calculator.CheckFunction("/");
@@ -109,6 +113,10 @@ calculator.TrailingZeros();
 <input:SfCalculator x:Name="calculator"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

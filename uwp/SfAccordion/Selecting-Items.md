@@ -123,6 +123,10 @@ selectedIndices.Text = "SelectedIndices are : " + indices;
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfAccordion accordion = new SfAccordion();

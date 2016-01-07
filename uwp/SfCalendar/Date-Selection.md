@@ -23,6 +23,10 @@ Dates can be selected in `SfCalendar` in several ways
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfCalendar calendar = new SfCalendar();
@@ -131,6 +135,10 @@ DateRange dateRange = new DateRange(new DateTime(2015, 12, 15), new DateTime(201
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single;
@@ -150,6 +158,10 @@ calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single;
 <input:SfCalendar DisplayDate="12/19/2015"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

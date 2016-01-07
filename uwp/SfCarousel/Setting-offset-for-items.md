@@ -75,6 +75,10 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 carousel.Offset = 100.0;
@@ -149,6 +153,10 @@ carousel.Offset = 100.0;
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 carousel.ScaleOffset = 0.5;
@@ -222,6 +230,10 @@ carousel.ScaleOffset = 0.5;
 </layout:SfCarousel>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

@@ -26,6 +26,10 @@ documentation: ug
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
@@ -52,6 +56,10 @@ busyIndicator.IsBusy = true;
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -118,6 +126,10 @@ Here is an example showing resized `SfBusyIndicator`.
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 
