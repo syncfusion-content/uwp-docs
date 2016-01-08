@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Tools | SfDiagram | uwp | Syncfusion
-description: tools
+title: Draw shapes, selection rectangles, or Pan Diagram, when you click and drag over the Digram surface.
+description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-## Tools
+#Tools
 
-Drawing Tools
+##Drawing Tools
 
 Drawing tool allow you to draw any kind of node/connector during runtime by clicking and dragging on the Diagram page.
 
-Shapes
+###Shapes
 
 To draw a shape, You have to activate the drawing tool by using the Tool property and you need to set the event for GetDrawType. The following code illustrates how to draw a rectangle at run time.
 
@@ -42,8 +42,11 @@ To draw a shape, You have to activate the drawing tool by using the Tool propert
 
 {% highlight C# %}
 
+//Registerting an event
 (diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
 diagram.DrawingTool = DrawingTool.Node;
+
+//To draw an object multiple times, activate ContinuousDraw Tool
 diagram.Tool = Tool.ContinuesDraw;
 
 private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
@@ -58,7 +61,7 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 {% endhighlight %}
 
-![](Tools_images\Tools_img1.png)
+![](Tools_images/Tools_img1.jpeg)
 
 The following code example illustrates how to draw a path.
 
@@ -86,8 +89,11 @@ The following code example illustrates how to draw a path.
 
 {% highlight C# %}
 
+//Registering an Event
 (diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
 diagram.DrawingTool = DrawingTool.Node;
+
+//To draw an object multiple times, activate ContinuousDraw Tool
 diagram.Tool = Tool.ContinuesDraw;
 
 private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
@@ -102,9 +108,9 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 {% endhighlight %}
 
-![](Tools_images\Tools_img2.png)
+![](Tools_images/Tools_img2.jpeg)
 
-Connectors
+###Connectors
 
 To draw Connectors, you have to set the Connector to DrawingTool property. The drawing tool can be activated by using the Tool property as shown. The following code example illustrates how to draw a straight line Connector.
 
@@ -133,20 +139,25 @@ To draw Connectors, you have to set the Connector to DrawingTool property. The d
 {% highlight C# %}
 
 diagram.DrawingTool = DrawingTool.Connector;
+
+//To draw an object once, activate DrawOnce
 diagram.Tool = Tool.DrawOnce;
 
 {% endhighlight %}
 
-![](Tools_images\Tools_img3.png)
+![](Tools_images/Tools_img3.jpeg)
 
-Text
+###Text
 
 Diagram allows you to create a text Node as soon as you click on the Diagram page. The following code illustrates how to draw a text.
 
 {% highlight C# %}
 
+//Registering an Event
 (diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
 diagram.DrawingTool = DrawingTool.Node;
+
+//To draw an object multiple times, activate ContinuesDraw Tool
 diagram.Tool = Tool.ContinuesDraw;
 
 private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
@@ -161,56 +172,24 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 {% endhighlight %}
 
-Tool Selection
+##Tool Selection
 
 There are some functionalities that can be achieved by clicking and dragging on the Diagram surface. They are as follows.
 
 * Draw selection rectangle – MultipleSelect tool
-
 * Pan the Diagram – Zoom pan
-
 * Draw Nodes/Connectors – ContinuousDraw / DrawOnce
 
 As all the three behaviors are completely different, You can achieve only one behavior at a time based on the tool that you choose. When more than one of those are applied, a tool is activated based on the precedence given in the following table.
 
-<table>
-<tr>
-<td>
-Precedence</td><td>
-Tools</td><td>
-Description</td></tr>
-<tr>
-<td>
-1.</td><td>
-ContinuesDraw</td><td>
-Allows you to draw the Nodes or Connectors continuously. Once it is activated, you cannot perform any other interaction in the Diagram.</td></tr>
-<tr>
-<td>
-2.</td><td>
-DrawOnce</td><td>
-Allows you to draw single Node or Connector. Once you complete the DrawOnce action, SingleSelect and MultipleSelect tools are automatically enabled.</td></tr>
-<tr>
-<td>
-3.</td><td>
-ZoomPan</td><td>
-Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers Node/Connector. Panning is enebled when cursor hovers the Diagram.</td></tr>
-<tr>
-<td>
-4.</td><td>
-MultipleSelect</td><td>
-Allows you to select multiple Nodes and Connectors. When you enable both the MultipleSelect and ZoomPan tools, cursor hovers the Diagram. When panning is enabled, you cannot select multiple Nodes.</td></tr>
-<tr>
-<td>
-5.</td><td>
-SingleSelect</td><td>
-Allows you to select individual or Connectors.</td></tr>
-<tr>
-<td>
-6.</td><td>
-None</td><td>
-Disables all tools.</td></tr>
-</table>
-
+| Tools | Description |
+|---|---|
+| ContinuesDraw | Allows you to draw the Nodes or Connectors continuously. Once it is activated, you cannot perform any other interaction in the Diagram. |
+| DrawOnce | Allows you to draw single Node or Connector. Once you complete the DrawOnce action, SingleSelect and MultipleSelect tools are automatically enabled. |
+| ZoomPan | Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers Node/Connector. Panning is enebled when cursor hovers the Diagram. |
+| MultipleSelect | Allows you to select multiple Nodes and Connectors. When you enable both the MultipleSelect and ZoomPan tools, cursor hovers the Diagram. When panning is enabled, you cannot select multiple Nodes. |
+| SingleSelect | Allows you to select individual or Connectors. |
+| None | Disables all tools. |
 
 You can set the desired tool to the Tool property of the Diagram. The following code illustrates how to enable single/multiple tools.
 

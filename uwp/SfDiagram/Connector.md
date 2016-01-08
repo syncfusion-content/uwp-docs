@@ -1,27 +1,25 @@
 ---
 layout: post
-title: Connector | SfDiagram | uwp | Syncfusion
-description: connector
+title: Draw a line connecting two points, nodes or ports.
+description: How to draw a line to connect points, nodes, or ports?
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-## Connector
+#Connector
 
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
-![](Connector_images\Connector_img1.png)
+![](Connector_images/Connector_img1.jpeg)
 
-Create Connector
+##Create Connector
 
 Connector can be created by defining the start and end points. The Path to be drawn can be defined with a collection of segments.
 
-Add Connectors through Connectors collection
+###Add Connectors through Connectors collection
 
-The SourcePoint and TargetPoint properties of Connector allow you to define the end points of a Connector. The following code example illustrates how to add a Connector through Connector collection.
-
-[XAML]
+The `SourcePoint` and `TargetPoint` properties of Connector allow you to define the end points of a Connector. The following code example illustrates how to add a Connector through Connector collection.
 
 {% highlight xml %}
 
@@ -46,46 +44,50 @@ The SourcePoint and TargetPoint properties of Connector allow you to define the 
 
 {% endhighlight %}
 
-[C#]
-
 {% highlight C# %}
 
 diagram.DefaultConnectorType = ConnectorType.Line;
 
+//Creates Connector collection
 ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
+
+//Creates Connector
 Connector connector = new Connector()
 {
+	//Sets Source and Target points
 	SourcePoint = new Point(100, 100),
 	TargetPoint = new Point(200, 200),
 };
 
+//Adds Connector to the SfDiagram
 lines.Add(connector);
 diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img2.png)
+![](Connector_images/Connector_img2.jpeg)
 
-Connectors from stencil
+###Connectors from stencil
 
 Connectors can be predefined and added to the stencil. You can drop those Connectors into the Diagram, when required. 
 
-For more information about adding Connectors from stencil, refer to **Stencil**.
+For more information about adding Connectors from stencil, refer to [Stencil](/uwp/sfdiagram/Stencil "Stencil").
 
-Connectors through data source
+###Connectors through data source
 
-Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to Data Binding.
+Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/uwp/sfdiagram/DataSource "DataSource").
 
-Draw Connectors
+###Draw Connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to **Draw Connectors**.
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to [Draw Connectors](/uwp/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
 
-Connect Nodes
+##Connect Nodes
 
-The SourceNode and TargetNode properties allow to define the Nodes to be connected. The following code example illustrates how to connect two Nodes.
+The `SourceNode` and `TargetNode` properties allow to define the Nodes to be connected. The following code example illustrates how to connect two Nodes.
 
 {% highlight C# %}
 
+//Creates Node collection
 ObservableCollection<Node> nodes = new ObservableCollection<Node>();
 
 Node node = new Node()
@@ -94,6 +96,7 @@ Node node = new Node()
 	UnitHeight = 60,
 	OffsetX = 200,
 	OffsetY = 200,
+	//Creates Annotation collection
 	Annotations = new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -112,6 +115,7 @@ Node node1 = new Node()
 	UnitHeight = 60,
 	OffsetX = 400,
 	OffsetY = 200,
+	//Creates Annotation collection
 	Annotations = new ObservableCollection<IAnnotation>()
 	{
 		new AnnotationEditorViewModel()
@@ -124,39 +128,52 @@ Node node1 = new Node()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds Nodes to the SfDiagram
 nodes.Add(node);
 nodes.Add(node1);
 diagram.Nodes = nodes;
 
+//Creates Connector collection
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
 
+//Creates Connector
 ConnectorViewModel connector = new ConnectorViewModel()
 {
+	//Sets Source and Target Nodes
 	SourceNode = node,
 	TargetNode = node1,
+	
+	//Customizes the ConnectorGeometryStyle
 	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
+	
+	//Specifies DecoratorShape
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 };
 
+//Adds Connectors to the SfDiagram
 lines.Add(connector);
 diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img3.png)
+![](Connector_images/Connector_img3.jpeg)
 
-Connections with Ports
+N> By default, connections are created at the intersecting point of Segments and Node bounds. The connection between any specific point of Source and Target Nodes can be achieved with Ports.
 
-The SourcePort and TargetPort properties allow to create connections between some specific points of Source/Target Nodes. The following code examples illustrates how to use NodePort and ConnectorPort.
+##Connections with Ports
 
-**Using NodePort**
+The `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. The following code examples illustrates how to use NodePort and ConnectorPort.
+
+###Using NodePort
 
 The following code example illustrates how to create ConnectorPort.
 
 {% highlight C# %}
 
+//Creates the Node collection
 ObservableCollection<Node> nodes = new ObservableCollection<Node>();
 
+//Creates NodePort
 NodePort port1 = new NodePort()
 {
 	Width = 10,
@@ -183,6 +200,7 @@ NodePort port2 = new NodePort()
 	ShapeStyle = this.diagram.Resources["portshapestyle"] as Style
 };
 
+//Creates NodePort
 Node task1 = new Node()
 {
 	UnitWidth = 100,
@@ -242,11 +260,13 @@ Node task3 = new Node()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds the Nodes to the SfDiagram
 nodes.Add(task1);
 nodes.Add(task2);
 nodes.Add(task3);
 diagram.Nodes = nodes;
 
+//Creates Connector collection
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
 ConnectorViewModel connector = new ConnectorViewModel()
 {
@@ -257,6 +277,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 };
 
+//Create Connector
 ConnectorViewModel connector1 = new ConnectorViewModel()
 {
 	TargetPort = port1,
@@ -266,27 +287,28 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 };
 
+//Adds the Connector to the SfDiagram
 lines.Add(connector);
 lines.Add(connector1);
 diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img4.png)
-
-                         _Using NodePort_
-
-**Using ConnectorPort**
+![](Connector_images/Connector_img4.jpeg)
+                 
+###Using ConnectorPort
 
 The following code example illustrates how to create ConnectorPort.
 
 {% highlight C# %}
 
+//Creates the Nodes Collection
 ObservableCollection<Node> nodes = new ObservableCollection<Node>();
 
+//Creates ConnectorPort
 ConnectorPort port = new ConnectorPort()
 {
-	Height = 10,
+	   Height = 10,
        Width = 10,
        Length = 0.5,
        PortVisibility = PortVisibility.Visible,
@@ -296,9 +318,10 @@ ConnectorPort port = new ConnectorPort()
        ShapeStyle = this.diagram.Resources["portshapestyle"] as Style
 };
 
+//Creates Node
 Node task1 = new Node()
 {
-	UnitWidth = 100,
+	   UnitWidth = 100,
        UnitHeight = 60,
        OffsetX = 100,
        OffsetY = 100,
@@ -316,7 +339,7 @@ Node task1 = new Node()
 
 Node task2 = new Node()
 {
-	UnitWidth = 100,
+	   UnitWidth = 100,
        UnitHeight = 60,
        OffsetX = 300,
        OffsetY = 100,
@@ -334,7 +357,7 @@ Node task2 = new Node()
 
 Node task3 = new Node()
 {
-	UnitWidth = 100,
+	   UnitWidth = 100,
        UnitHeight = 60,
        OffsetX = 200,
        OffsetY = 200,
@@ -350,15 +373,17 @@ Node task3 = new Node()
        ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
+//Adds the Nodes to the SfDiagram
 nodes.Add(task1);
 nodes.Add(task2);
 nodes.Add(task3);
 diagram.Nodes = nodes;
 
+//Creates the Connector collection
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
 ConnectorViewModel connector = new ConnectorViewModel()
 {
-	SourceNode = task1,
+	   SourceNode = task1,
        TargetNode = task2,
        Ports=new ObservableCollection<ConnectorPort>()
        {
@@ -368,6 +393,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
        TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 };
 
+//Creates Connector
 ConnectorViewModel connector1 = new ConnectorViewModel()
 {  
 	SourceConnector=connector,
@@ -377,27 +403,26 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
        TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 };
 
-            
+//Adds the Connector to the SfDiagram                        
 lines.Add(connector);
 lines.Add(connector1);
 diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img5.png)
+![](Connector_images/Connector_img5.jpeg)
 
-_Using ConnectorPort_
-
-Segments
+##Segments
 
 The path of the Connector is defined with a collection of segments.
 
-Straight
+###Straight
 
-Straight segment allows to create a straight line. To create a straight line, you should specify the segment as StraightSegment and add a straight segment to collection. The following code example illustrates how to create a default straight segment.
+Straight segment allows to create a straight line. To create a straight line, you should specify the segment as `StraightSegment` and add a straight segment to collection. The following code example illustrates how to create a default straight segment.
 
 {% highlight C# %}
 
+//Creates Connector collection
 ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
 Connector connector = new Connector()
 {
@@ -417,9 +442,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img6.png)
+![](Connector_images/Connector_img6.jpeg)
 
-The Point property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
+The `Point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
 {% highlight C# %}
 
@@ -443,13 +468,13 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img7.png)
+![](Connector_images/Connector_img7.jpeg)
 
-Orthogonal
+###Orthogonal
 
 Orthogonal segments are used to create segments that are perpendicular to each other.
 
-Set the segment as OrthogonalSegment to create the default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
+Set the segment as `OrthogonalSegment` to create the default orthogonal segment. The following code example illustrates how to create a default orthogonal segment.
 
 {% highlight C# %}
 
@@ -472,7 +497,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img8.png)
+![](Connector_images/Connector_img8.jpeg)
 
 {% highlight C# %}
 
@@ -497,17 +522,19 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img9.png)
+![](Connector_images/Connector_img9.jpeg)
 
-Avoid overlapping
+####Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes. The following images illustrates how orthogonal segments are re-routed.
 
-![](Connector_images\Connector_img10.png)
+![](Connector_images/Connector_img10.jpeg)
 
-![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Connector_images\Connector_img11.png](Connector_images\Connector_img11.png)
+![](Connector_images/Connector_img11.jpeg)
 
-CubicCurveSegment
+N> Overlapping with Source and Target nodes are only avoided. Other nodes are not considered as obstacles.
+
+###CubicCurveSegment
 
 Cubic curve segments are used to create curve segments and the curves are configurable with the control points.
 
@@ -519,6 +546,7 @@ Connector connector = new Connector()
 {
 	SourcePoint = new Point(100, 100),
 	TargetPoint = new Point(200, 200),
+	//Adds the CubicCurve Segment to Segments
 	Segments = new ObservableCollection<CubicCurveSegment>()
 	{
 
@@ -533,9 +561,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img12.png)
+![](Connector_images/Connector_img12.jpeg)
 
-The Point1 and Point2 of cubic curve segment enable you to set the control points. The following code example 
+The `Point1` and `Point2` of cubic curve segment enable you to set the control points. The following code example 
 
 {% highlight C# %}
 
@@ -560,9 +588,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img13.png)
+![](Connector_images/Connector_img13.jpeg)
 
-Complex segments
+###Complex segments
 
 Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to ConnectorSegments collection. The following code example illustrates how to create a connector with multiple segments.
 
@@ -595,13 +623,13 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img14.png)
+![](Connector_images/Connector_img14.jpeg)
 
-Decorator
+##Decorator
 
 Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector. 
 
-The SourceDecoratorStyle and TargetDecoratorStyle properties allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
+The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
 
 {% highlight C# %}
 
@@ -678,17 +706,13 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
+![](Connector_images/Connector_img15.jpeg)
 
-
-![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Connector_images\Connector_img16.png](Connector_images\Connector_img15.png)
-
-
-
-Padding
+##Padding
 
 Padding is used to leave space between the Connector’s end point and the object to where it is connected.
 
-The SourcePadding and TargetPadding properties of Connector define the space to be left between the connection end points and the source and target Nodes of Connector. The following code example illustrates how to leave space between the connection end points and source, target Nodes.
+The `SourcePadding` and `TargetPadding` properties of Connector define the space to be left between the connection end points and the source and target Nodes of Connector. The following code example illustrates how to leave space between the connection end points and source, target Nodes.
 
 {% highlight C# %}
 
@@ -711,9 +735,9 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img16.png)
+![](Connector_images/Connector_img16.jpeg)
 
-The ConnectorPadding property of Node defines the space to be left between the Node bounds and its edges. The following code example illustrates how to leave the space between a Node and its connections.
+The `ConnectorPadding` property of Node defines the space to be left between the Node bounds and its edges. The following code example illustrates how to leave the space between a Node and its connections.
 
 [XAML]
 
@@ -731,8 +755,10 @@ The ConnectorPadding property of Node defines the space to be left between the N
 
 ObservableCollection<Node> nodes = new ObservableCollection<Node>();
 
+//Adds ConnectorPadding for Node
 Node node = new Node()
 {
+	//Space between the node and its edges
 	ConnectorPadding = 5,
 	UnitWidth = 100,
 	UnitHeight = 60,
@@ -787,14 +813,16 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img17.png)
+![](Connector_images/Connector_img17.jpeg)
 
-The ConnectorPadding property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports its connections.
+The `ConnectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports its connections.
 
 {% highlight C# %}
 
+//Adds ConnectorPaddind for Node
 NodePort port = new NodePort()
 {
+	//Space between the ports its edges
 	ConnectorPadding = 10,
 	Width = 10,
 	Height = 10,
@@ -869,11 +897,11 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img18.png)
+![](Connector_images/Connector_img18.jpeg)
 
-Bridging
+##Bridging
 
-Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the constraints property of Connector or with Diagram constraints. The following code example illustrates how to enable line bridging.
+Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the `Constraints` property of Connector or with `GraphConstraints`. The following code example illustrates how to enable line bridging.
 
 {% highlight C# %}
 
@@ -885,8 +913,10 @@ ConnectorViewModel connector = new ConnectorViewModel()
 	TargetPoint = new Point(250, 300),
 	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+	//Removes InheritBridging or else Bridging is enabled/disabled based on the Diagram Constraints
 	Constraints = ConnectorConstraints.Default & ~ConnectorConstraints.InheritBridging | 
-                     ConnectorConstraints.Bridging
+	              //Includes Bridging
+                  ConnectorConstraints.Bridging
 };
 ConnectorViewModel connector1 = new ConnectorViewModel()
 {
@@ -894,11 +924,16 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 	TargetPoint = new Point(150, 300),
 	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
+	              //Removes InheritBridging or else Bridging is enabled/disabled based on the Diagram Constraints
 	Constraints = ConnectorConstraints.Default & ~ConnectorConstraints.InheritBridging | 
-                     ConnectorConstraints.Bridging
+	              //Includes Bridging
+                  ConnectorConstraints.Bridging
 };
 
+//Sets the BridgeDirection
 diagram.BridgeDirection = BridgeDirection.Bottom;
+
+//Enables Bridging
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
 
 lines.Add(connector);
@@ -907,36 +942,36 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img19.png)
+![](Connector_images/Connector_img19.jpeg)
 
-![D:\Diagram\Diagram2015Vol4\2015 November 1st Sprint\UG\Diagram Images\Diagram\Connector_images\Connector_img20.png](Connector_images\Connector_img20.png)
+![](Connector_images/Connector_img20.jpeg)
 
-The direction of the bridge can be customized with the property BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
+The direction of the bridge can be customized with the property `BridgeDirection` defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
 The following code example illustrates how to draw the bridge at the bottom direction.
-
-[XAML]
 
 {% highlight xml %}
 
 <diagram:SfDiagram x:Name="diagram" BridgeDirection="Bottom">
 <diagram:ConnectorViewModel SourcePoint="100,100" TargetPoint="250,150" 
                             Constraints="Bridging">
-
+							
 {% endhighlight %}
-
-[C#]
 
 {% highlight C# %}
 
+//Sets the BridgeDirection
 diagram.BridgeDirection = BridgeDirection.Bottom;
+//Enable Bridging
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
 
 {% endhighlight %}
 
-Corner radius
+N> Bezier segments do not support Bridging.
 
-Corner radius allows to create Connectors with rounded corners. The radius of the rounded corner is set with CornerRadius property.
+##Corner radius
+
+Corner radius allows to create Connectors with rounded corners. The radius of the rounded corner is set with `CornerRadius` property.
 
 {% highlight C# %}
 
@@ -984,10 +1019,13 @@ nodes.Add(node2);
 diagram.Nodes = nodes;
 
 ObservableCollection<Connector> connectors = new ObservableCollection<Connector>();
+
+//Adds corner radius for connector
 Connector connector = new Connector()
 {
 	SourceNode = node1,
-	TargetNode = node2,
+	TargetNode = node2,	
+	//Sets the corner radius
 	CornerRadius = 10,
 	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
@@ -998,17 +1036,15 @@ diagram.Connectors = connectors;
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img21.png)
+![](Connector_images/Connector_img21.jpeg)
 
-Appearance
+##Appearance
 
 StrokeThickness, Stroke and style of the LineConnector and Decorators can be customized with a set of defined properties.
 
-Segment Appearance
+###Segment Appearance
 
 The following code example illustrates how to customize the segment appearance.
-
-[XAML]
 
 {% highlight xml %}
 
@@ -1021,8 +1057,6 @@ The following code example illustrates how to customize the segment appearance.
 
 {% endhighlight %}
 
-[C#]
-
 {% highlight C# %}
 
 ObservableCollection<Connector> lines = new ObservableCollection<Connector>();
@@ -1030,6 +1064,7 @@ Connector connector = new Connector()
 {
 	SourcePoint = new Point(100, 100),
 	TargetPoint = new Point(200, 200),
+	//Customizes the Connector style
 	ConnectorGeometryStyle = this.diagram.Resources["connectorstyle"] as Style,
 };
 
@@ -1038,7 +1073,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-Decorator Appearance
+###Decorator Appearance
 
 The following code example illustrates how to customize the appearance of the decorator.
 
@@ -1061,17 +1096,18 @@ The following code example illustrates how to customize the appearance of the de
 
 {% highlight C# %}
 
+//Customizes the DecoratorStyle
 TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 
 {% endhighlight %}
 
-![](Connector_images\Connector_img22.png)
+![](Connector_images/Connector_img22.jpeg)
 
-Interaction
+##Interaction
 
-Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to **Connection Editing**.
+Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/uwp/sfdiagram/Interaction#Connection-Editing "Connection Editing").
 
-Constraints
+##Constraints
 
-The Constraints property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to **Connector Constraints**.
+The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/Constraints#ConnectorConstraints "Connector Constraints").
 

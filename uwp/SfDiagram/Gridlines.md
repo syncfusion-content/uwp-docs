@@ -1,21 +1,19 @@
 ---
 layout: post
-title: Gridlines | SfDiagram | uwp | Syncfusion
-description: gridlines
+title:Add gridlines behind nodes and connectors to ease alignments.
+description:How to add gridlines behind Nodes and Connectors?
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-## Gridlines
+#Gridlines
 
-Gridlines are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
+**Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
 
-Customize the gridlines visibility
+##Customize the gridlines visibility
 
-The SnapConstraints property of SnapSettings enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
-
-[XAML]
+The `SnapConstraints` property of SnapSettings enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
 {% highlight xml %}
 
@@ -27,26 +25,26 @@ The SnapConstraints property of SnapSettings enables you to show/hide the gridli
 
 {% endhighlight %}
 
-[C#]
-
 {% highlight C# %}
 
 diagram.Width = 400;
 diagram.Height = 400;
+//Shows both Horizontal and Vertical Gridlines
 diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 {% endhighlight %}
 
-![](Gridlines_images\Gridlines_img1.png)
+![](Gridlines_images/Gridlines_img1.jpeg)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to **SnapConstraints**
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/uwp/sfdiagram/Constraints#SnapConstraints "SnapConstraints").
 
-Appearance
+##Appearance
 
-You can customize the appearance of the gridlines by using a set of predefined properties. The HorizontalGridLines and VerticalGridLines properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
+You can customize the appearance of the gridlines by using a set of predefined properties. The `HorizontalGridLines` and `VerticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
 {% highlight C# %}
 
+//Customizes the line Color and line Style to the Gridlines
 Style blue =new Style(typeof(Path));
 blue.Setters.Add(new Setter(Path.StrokeProperty,new SolidColorBrush(Colors.Blue)));
 blue.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 2 })); 
@@ -61,11 +59,11 @@ diagram.SnapSettings.VerticalGridlines = gridlines;
 
 {% endhighlight %}
 
-![](Gridlines_images\Gridlines_img2.png)
+![](Gridlines_images/Gridlines_img2.jpeg)
 
-Line Intervals
+###Line Intervals
 
-Thickness and the space between gridlines can be customized by using LineInterval property. In the lineInterval collections, values at the odd places are referred as the thickness of lines and the values at the even places are referred as the space between gridlines.
+Thickness and the space between gridlines can be customized by using `LineInterval` property. In the lineInterval collections, values at the odd places are referred as the thickness of lines and the values at the even places are referred as the space between gridlines.
 
 The following code example illustrates how to customize the thickness of lines and the line intervals.
 
@@ -79,6 +77,7 @@ Style blue =new Style(typeof(Path));
 blue.Setters.Add(new Setter(Path.StrokeProperty,new SolidColorBrush(Colors.Blue)));
 blue.Setters.Add(new Setter(Path.StrokeDashArrayProperty, new DoubleCollection() { 2 })); 
 
+// Defines the thickness and intervals for a pattern of lines
 Gridlines gridlines = new Gridlines()
 {
 	Strokes = new List<Style>() { blue },
@@ -90,11 +89,11 @@ diagram.SnapSettings.VerticalGridlines = gridlines;
 
 {% endhighlight %}
 
-![](Gridlines_images\Gridlines_img3.png)
+![](Gridlines_images/Gridlines_img3.jpeg)
 
-Snapping
+#Snapping
 
-Snap To Lines
+##Snap To Lines
 
 This feature allows the Diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
@@ -102,13 +101,14 @@ Snapping to gridlines can be enabled/disabled with the SnapConstraints property 
 
 {% highlight C# %}
 
+//Enables snapping to both the horizontal and vertical lines.
 diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
 
 {% endhighlight %}
 
 To enable/disable snapping to horizontal/vertical lines, refer to **SnapConstraints**
 
-Snap To Objects
+##Snap To Objects
 
 The snap-to-object provides visual cues to assist with aligning and spacing Diagram. A Node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as smart guides.
 
@@ -120,6 +120,7 @@ The following code illustrates how to enable/disable the smart guide.
 
 {% highlight C# %}
 
+//Enable or Disable the SnapConstraints and SnapToObject
 diagram.SnapSettings.SnapConstraints = SnapConstraints.All;
 
 diagram.SnapSettings.SnapToObject = SnapToObject.None;
