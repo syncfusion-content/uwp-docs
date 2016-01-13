@@ -1,0 +1,113 @@
+---
+layout: post
+title:  Handling Value of SfCalculator control for UWP
+description: Handling Value of SfCalculator control for UWP
+platform: uwp
+control: SfCalculator
+documentation: ug
+---
+
+# Value
+
+`Value` property in the `SfCalculator` control is used to retrieve the computed value from the expressions in Calculator. It is a read-only decimal property. It can also be set to display a decimal value as computed value.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Grid>
+
+<TextBlock Text="{Binding ElementName=calculator,Path=Value}"/>
+
+<input:SfCalculator x:Name="calculator"/>
+
+</Grid>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+decimal value = calculator.Value;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## DefaultValue
+
+`DefaultValue` property is set to display a default value in the input pane of `SfCalculator` control. It is a decimal property.  
+
+{% tabs %}
+
+{% highlight C# %}
+
+calculator.DefaultValue = 34.67M;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](SfCalculator-images/SfCalculator-img4.jpeg)
+
+## DisplayText
+
+`DisplayText` property is set to display a text in the display pane of `SfCalculator` control.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<input:SfCalculator x:Name="calculator" DisplayText="Display Text"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+calculator.DisplayText = "DisplayText";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Expression
+
+`Expression` property is used to get the mathematical expression that produced the evaluated value in `SfCalculator`. `Expression` can also set to any string property but it is not evaluated to produce result. It is just displayed in the pane.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<Grid>
+
+<TextBlock Text="{Binding ElementName=calculator,Path=Expression}"/>
+
+<input:SfCalculator x:Name="calculator" Expression="1+2+3+4"/>
+
+</Grid>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+calculator.Expression = "1+2+3+4";
+
+string expression = calculator.Expression;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+

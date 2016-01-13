@@ -1,0 +1,115 @@
+---
+layout: post
+title: Animating Carousel items of SfCarousel control for UWP
+description: Animating Carousel items of SfCarousel control for UWP
+platform: UWP
+control: SfCarousel
+documentation: ug
+---
+
+# Animating Carousel items
+
+The default animation used during the selection of carousel items can be customized using the following properties.
+
+* Duration
+
+* EasingFunction
+
+* RotationAngle
+
+## Duration
+
+The time taken to move a selected item from its position to center of the control is specified by `Duration` property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfCarousel x:Name="carousel" Duration="00:00:05.900">
+
+</layout:SfCarousel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+carousel.Duration =  TimeSpan.FromSeconds(1.0);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## EasingFunction
+
+The animation effect on selecting items can be customized with `EasingFunction` property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfCarousel x:Name="carousel">
+
+<layout:SfCarousel.EasingFunction>
+
+<BackEase EasingMode="EaseInOut" Amplitude="0.3"/>
+
+</layout:SfCarousel.EasingFunction>
+
+</layout:SfCarousel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+using Windows.UI.Xaml.Media.Animation; 
+
+
+public MainPage()
+
+{
+	
+carousel.EasingFunction = new BackEase() { EasingMode = EasingMode.EaseInOut, Amplitude = 0.3 };
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## RotationAngle
+
+`RotationAngle` property is used to rotate all the items in carousel control to a specified angle.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfCarousel x:Name="carousel" RotationAngle="70">
+
+</layout:SfCarousel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+carousel.RotationAngle = 70.0;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](SfCarousel-images/SfCarousel-img12.jpeg)
+
+
