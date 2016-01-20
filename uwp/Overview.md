@@ -8,25 +8,25 @@ documentation: ug
 
 # Welcome to Syncfusion Essential Studio for UWP
 
-Essential UWP is a comprehensive collection of 35+ UWP components for building windows store applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.
+Essential UWP is a comprehensive collection of 35+ enterprise-grade UWP components for building windows store applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.
 
 ## How to best read this user guide
 
-* The smarter way to get start is reading the “Getting Started” section of each component. “Getting started” section provides sufficient information that are required before coding. This section is highly recommended to read prior coding, since all other information related to enhancements can be referred on demand.
+* The best way to get started would be to read the “Getting Started” section of the documentation for the component that you would like to start using first. The “Getting Started” guide gives just enough information that you need to know before starting to write code. This is the only section that is recommended to be read end-to-end before starting to write code, since all other information can be referred when needed.
 
-* With the familiarity in basics of the component, integrating it to the application is next step. Best practice to save time is referring the code examples provided in offline sample browser. Hundreds of code examples resembling the use case scenario are incorporated in samples.
+* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point is to refer to the code examples in the offline sample browser that contains hundreds of code examples, as it is very likely that you may find a code example that resembles your intended usage scenario.
 
-* Successful integration paves way to next level of enhancing the application. Make a quick search in the search box that is available at the top of the user guide for easy access to component features.
+* After integrated the component into application using one of the code examples as a starting point, it is likely that you may want additional information on specific features and API. The best option is to search the specific topic using the search box that is available at the top of the user guide.
 
 ## Additional help resources
 
-[Knowledge Base](http://www.syncfusion.com/kb/uwp) section contains code samples/solution to the most common and frequently asked questions, so this would be a right place to search for topics that are not covered in the user guide.
+The [Knowledge Base](http://www.syncfusion.com/kb/uwp) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
 
-Similar to [Knowledge Base](http://www.syncfusion.com/kb/uwp), [Forum](http://www.syncfusion.com/forums/uwp) section also contains responses for questions asked by customers in past.
+Similar to the [Knowledge Base](http://www.syncfusion.com/kb/uwp), the [Forum](http://www.syncfusion.com/forums/uwp) section also contains responses to questions that other customers have asked in the past.
 
 ## Create a support incident
 
-Still if you were unable to find the required information in self-help resources then feel free to contact us by creating a support ticket.
+If you are still unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a support ticket.
 
 ## List of Controls
 
