@@ -11,7 +11,7 @@ documentation: ug
 
 ## Guide to run the samples
 
-Featured samples are installed during Essential Studio installation by the installer. In the Start screen type the name “Dashboard”. The screenshot of search result follows:
+To run the samples, search it from Start by name of “Dashboard”
 
 ![](Featured-Samples_images/Featured-Samples_img1.jpeg)
 
