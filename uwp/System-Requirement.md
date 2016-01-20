@@ -19,8 +19,7 @@ The following frameworks are supported:
 
 ## Development Environments
 
-
-Requires 32-bit or 64-bit Operating System in Windows 10 and Windows 8.1 with windows10 toolkit. The following IDEs are [compatible](https://www.visualstudio.com/en-us/products/visual-studio-2015-compatibility-vs.aspx) with Microsoft Windows and it can be used for development, 
+The following IDEs can be used for development that are [compatible](https://www.visualstudio.com/en-us/products/visual-studio-2015-compatibility-vs.aspx) with Microsoft Windows, both 32bit and 64 bit Operating System in Windows 10 and Windows 8.1 with windows10 toolkit.
 
 * Microsoft Visual Studio 2015
 
