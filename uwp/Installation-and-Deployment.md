@@ -14,16 +14,17 @@ documentation: ug
 The following procedure illustrates how to install Essential Studio.
 
 * Double-click the Syncfusion Essential Studio UWP setup file. The Self-Extractor wizard opens and extracts the package automatically.
-* Enter the User Name, Organization and Unlock Key in corresponding text boxes and click “Next” button.
+* Enter User Name, Organization and Unlock Key in the corresponding text boxes provided.
+* Click Next
 * After reading the terms and conditions, check the “I accept the terms and conditions” check box.
-* Click “Next” button. Then choose the Installation and Samples folder location and click “Install” button.
-* Select the “Run Dashboard” check box to launch the Dashboard after the installation has completed.
-* Click “Finish” button. Essential Studio for UWP is installed successfully in your system and Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) launches automatically.
+* Click Next. The Select the Installation and Samples Folder window opens.
+* To install it in the displayed default location, click Install.
+* Select the Run Dashboard check box to launch the Dashboard after installing.
+* Click Finish. Essential Studio is installed in system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
 
 ## Nuget Installation
 
-
-The following steps helps to add reference of Syncfusion assemblies in the project references.
+Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The following steps helps to add the reference of the Syncfusion assemblies in the Project References.
 
 1.Right-click the project in Solution Explorer and choose “Manage NuGet Packages”.
 
@@ -35,7 +36,7 @@ The following steps helps to add reference of Syncfusion assemblies in the proje
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg)
 
 
-3.Press “Add” button. Modify the name and browse the location of NuGet. Then click “Update” button to add the Nu-Get assemblies.
+3.Press “Add” button. Modify the name and browse the location of Nuget. Then click “Update” button to add the Nuget assemblies.
 
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img3.jpeg)
 
@@ -50,13 +51,14 @@ The following steps helps to add reference of Syncfusion assemblies in the proje
 ## Commandline Installation
 
 
-Follow the given steps to install Essential Studio for UWP through command line in silent mode.
+Follow the given steps to install through Command Line in Silent mode.
 
 * Double-click the Syncfusion Essential Studio Setup file. The Self-Extractor wizard opens and extracts the package automatically.
 * SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file is extracted into the Temp folder.
-* Open Run prompt and then execute the command %Temp” to open the Temp folder. SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file is available in one of the folders.
+* Open Run prompt and then execute the command %Temp% to open the Temp folder. SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file is available in one of the folders.
 * Copy the SyncfusionEssentialStudio_({{ site.releaseversion }}).exe file to local drive. Example: D:\temp
-* Cancel the wizard and open command prompt in administrator mode and pass the following arguments for corresponding version.
+* Cancel the wizard.
+* Open command prompt in administrator mode and pass the following arguments for corresponding version.
 
 
 {% tabs %}
