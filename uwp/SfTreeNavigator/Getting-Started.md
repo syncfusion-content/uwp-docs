@@ -12,10 +12,11 @@ documentation: ug
 This section explains how to visualize hierarchal data in tree structure using `SfTreeNavigator` control.
 
 ## Adding SfTreeNavigator control
+
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfTreeNavigator.UWP
-2. Syncfusion.SfShared.UWP
+* Syncfusion.SfTreeNavigator.UWP
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfTreeNavigator.UWP assembly in MainPage.xaml
 
@@ -45,3 +46,111 @@ xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endtabs %}
 
+## Setting header for SfTreeNavigator
+
+Use `Header` property to set the header value “Enterprise Toolkit” for Tree Navigator control as given below:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<navigation:SfTreeNavigator Header="Enterprise Toolkit"
+                            Width="260" Height="280"/>
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Adding items to SfTreeNavigator
+
+Add the required number of items in multiple hierarchical levels as given below to the `SfTreeNavigator` control:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<navigation:SfTreeNavigator Header="Enterprise Toolkit"
+                            Width="260" Height="280"
+							NavigationMode="Extended">
+							
+<navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem/>
+
+</navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem/>
+
+</navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem/>
+
+</navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem/>
+
+</navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem/>
+
+<navigation:SfTreeNavigatorItem/>
+
+</navigation:SfTreeNavigator>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Setting header for the Tree Navigator Items
+
+Set header for all the items in Tree navigator as given below:
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<navigation:SfTreeNavigator Header="Enterprise Toolkit"
+                            Width="260" Height="280"
+							NavigationMode="Extended">
+							
+<navigation:SfTreeNavigatorItem Header="WinRT (XAML) (20)">
+
+<navigation:SfTreeNavigatorItem Header="Controls"/>
+
+</navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem Header="WPF (30)">
+
+<navigation:SfTreeNavigatorItem Header="Controls"/>
+
+</navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem Header="Silverlight (30)">
+
+<navigation:SfTreeNavigatorItem Header="Controls"/>
+
+</navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem Header="Windows Phone (20)">
+
+<navigation:SfTreeNavigatorItem Header="Controls"/>
+
+</navigation:SfTreeNavigatorItem>
+
+<navigation:SfTreeNavigatorItem Header="Metro Studio"/>
+
+<navigation:SfTreeNavigatorItem Header="Orubase Studio"/>
+
+</navigation:SfTreeNavigator>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview-images/Overview-img1.jpeg)

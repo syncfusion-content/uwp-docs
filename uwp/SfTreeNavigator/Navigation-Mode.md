@@ -7,14 +7,14 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-# Navigation Mode
+# Exapnsion Modes
 
 `SfTreeNavigator` supports two different modes to support navigation. They are:
 
 * Default 
 * Extended
 
-## Default
+## Default Expansion
 
 The header of current hierarchy level item is displayed at the top of the `SfTreeNavigator` with a back button. This back button is used to navigate back towards the root from current level.
 
@@ -60,7 +60,7 @@ treeNavigator.NavigationMode = Syncfusion.UI.Xaml.Controls.Navigation.Navigation
 
 ![](Navigation-Mode-images/Navigation-Mode-img1.jpeg)
 
-## Extended
+## Stacked Expansion
 
 The header of each level from root to current level is stacked one after another at the top of the `SfTreeNavigator`. Clicking on the stacked header, navigates to the corresponding level.
 
