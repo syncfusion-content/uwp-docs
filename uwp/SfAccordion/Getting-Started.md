@@ -127,34 +127,6 @@ SfAccordion provides `HeaderTemplate` property that allows to apply a common dat
 
 {% endtabs %}
 
-## Applying template for item header
-
-SfAccordion provides `HeaderTemplate` property that allows to apply a common data template for all accordion items header.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<layout:SfAccordion x:Name="accordion">
-
-<navigation:SfAccordion.HeaderTemplate>
-
-<DataTemplate>
-
-<Grid>
-
-<TextBlock Text="{Binding}" Margin="10" FontSize="18"/>
-
-</Grid>
-
-</DataTemplate>
-
-</navigation:SfAccordion.HeaderTemplate>
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Setting content for children
 
 Any object can be set as the content of `SfAccordionItem`. SfAccordionItem.Content property helps to set the content.

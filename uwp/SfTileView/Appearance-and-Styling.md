@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-## ItemHeight
+## Customizing item height
 
 `ItemHeight` property is used to set a common height value for all the items in TileView control only in Normal state.
 
@@ -49,7 +49,7 @@ tileView.ItemHeight = 50.0;
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
-## ItemWidth
+## Customizing item width
 
 `ItemWidth` property is used to set a common width value for all the items in TileView control only in Normal state.
 

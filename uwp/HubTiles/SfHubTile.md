@@ -17,27 +17,16 @@ documentation: ug
 * Rich built-in transition effects
 * Freezing and unfreezing options 
 
-### Visual structure
+## Getting Started
 
-1.WinRT
+This section explains how to create a Windows 8 Live Tile using `SfHubTile` control.
 
-![](SfHubTile-images/SfHubTile-img1.jpeg)
-
-2.Windows phone
-
-![](SfHubTile-images/SfHubTile-img2.jpeg)
-
-![](SfHubTile-images/SfHubTile-img3.jpeg)
-
-
-## Creating SfHubTile control
+## Adding SfHubTile control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfHubTile.UWP
-2. Syncfusion.SfShared.UWP
-
-### Adding SfHubTile control through XAML Code
+* Syncfusion.SfHubTile.UWP
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfHubTile.UWP assembly in MainPage.xaml
 
@@ -67,49 +56,99 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endtabs %}
 
-### Adding SfHubTile control through C# Code
 
-1.Include the namespace for Syncfusion. SfHubTile.UWP assembly in MainPage.xaml.cs
+### Configuring the tile
+
+Set the properties Header, Title, ImageSource and SecondaryContent as given below:
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-using Syncfusion.UI.Xaml.Controls.Notification;
+<notification:SfHubTile Width="183" Height="173"
+                        Header="HubTile" Title="This is title area"
+						Foreground="White"
+						ImageSource="Assets/New Mail.png">
+						
+<notification:SfHubTile.SecondaryContent>
+
+<Image Source="Assets/HubTile.png"
+       Stretch="UniformToFill" Margin="-1"/>
+	   
+</notification:SfHubTile.SecondaryContent>
+
+</notification:SfHubTile>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-2.Now add the `SfHubTile` control with an optimal name 
+### Applying tile transitions
+
+Apply the required transitions such as Rotate transition, Slide transition, Fade transition using `HubTileTransitions` property as given below:
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-SfHubTile hubTile = new SfHubTile();
+
+<Page xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification"
+       xmlns:transitions="using:Syncfusion.UI.Xaml.Controls">
+	   
+<Grid>
+
+<notification:SfHubTile Width="183" Height="173"
+                        Header="HubTile"
+						Title="This is title area"
+						Foreground="White"
+						ImageSource="Assets/New Mail.png">
+						
+<notification:SfHubTile.SecondaryContent>
+
+<Image Source="Assets/HubTile.png"
+       Stretch="UniformToFill" Margin="-1"/>
+	   
+</notification:SfHubTile.SecondaryContent>
+
+<notification:SfHubTile.HubTileTransitions>
+
+<transitions:RotateTransition/>
+
+<transitions:SlideTransition/>
+
+<transitions:FadeTransition/>
+
+</notification:SfHubTile.HubTileTransitions>
+
+</notification:SfHubTile>
+
+<Grid/>
+
+<Page/>
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](SfHubTile-images/SfHubTile-img1.jpeg)
 
 ## Configuring the tile
 
 `SfHubTile` can be configured with text and image as follows:
 
-### Title
+### Tile caption
 
 The title text is displayed at the top of the tile. It is set using `HubTileBase.Title` property.
 
-### Header 
+### Tile header  
 
 The header is displayed at the bottom of the tile.
 
-### ImageSource
+### Tile Image
 
 Image is displayed at the center of the tile. It is set using `HubTileBase.ImageSource` property. 
 
-### SecondaryContent
+### Secondary tile content
 
 Secondary content can be any object which is displayed only when hub tile transition effects are applied.
 
@@ -147,7 +186,7 @@ Header="HubTile"/>
 * Slide transition
 * Fade transition
 
-### Interval
+### Animation duration
 
 All the transition effects takes place with the specified interval. By default, `Interval` value is zero. Unless the interval is set, transition will never happen.
 
@@ -171,7 +210,7 @@ hubTile.Interval = TimeSpan.FromSeconds(1);
 
 {% endtabs %}
 
-### Rotate transition
+### Tile rotate animation
 
 Main and Secondary contents rotate with specified interval.
 
@@ -179,7 +218,7 @@ Main and Secondary contents rotate with specified interval.
 
 ![](SfHubTile-images/SfHubTile-img7.jpeg)
 
-### Slide transition
+### Tile slide animation
 
 Main and Secondary contents slide with specified interval.
 
@@ -187,7 +226,7 @@ Main and Secondary contents slide with specified interval.
 
 ![](SfHubTile-images/SfHubTile-img9.jpeg)
 
-### Fade transition
+### Tile fade animation
 
 Main and Secondary contents fade with specified interval.
 
@@ -261,7 +300,7 @@ hubTile.HubTileTransitions.Add(new FadeTransition());
 
 {% endtabs %}
 
-### HubTile TransitionCompleted event
+### Notifying transition completed
 
 Unless the tile is frozen, transitions occur repeatedly (cyclic manner) in hub tile for every specified interval. HubTile TransitionCompleted event fires on each transition completion. 
 
@@ -297,7 +336,7 @@ Flip effect customization, tile click & command, pausing and resuming animation 
 
 `SfHubTile` appearance can be customized by `SecondaryContentTemplate`, `AccentBrush`, `TitleStyle`.
 
-### SecondaryContentTemplate
+### Customizing the secondary content
 
 `SecondaryContentTemplate` property is used to set the data template for secondary content. 
 

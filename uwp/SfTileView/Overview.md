@@ -17,16 +17,7 @@ documentation: ug
 * Drag and drop support to reorder items 
 * Orientation support for entire control and minimized items
 
-## Visual structure
 
-1.WinRT
 
-![](Overview-images/Overview-img1.jpeg)
-
-2.Windows phone
-
-![](Overview-images/Overview-img2.jpeg)
-
-![](Overview-images/Overview-img3.jpeg)
 
 
