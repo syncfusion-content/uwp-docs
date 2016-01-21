@@ -11,33 +11,21 @@ documentation: ug
 
 `SfPulsingTile` control allows to create a tile similar to Music and Video hub tile in Windows phone. The content zooms in/out randomly with random translation in X and Y axis.
 
-## Overview
-
-### Features
+## Features
 
 Animation properties are completely customizable  
 
-### Visual structure
+## Getting Started
 
-1.WinRT
+This section explains how to create a Windows Phone “Music" tile using `SfPulsing` control.
 
-![](SfpulsingTile-images/SfpulsingTile-img1.jpeg)
-
-2.Windows phone
-
-![](SfpulsingTile-images/SfpulsingTile-img2.jpeg)
-
-![](SfpulsingTile-images/SfpulsingTile-img3.jpeg)
-
-## Creating SfSplitMosaicTile control
+### Adding SfSplitMosaicTile control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfHubTile.UWP
+* Syncfusion.SfHubTile.UWP
 
-2. Syncfusion.SfShared.UWP
-
-### Adding SfSplitMosaicTile control through XAML Code
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfHubTile.UWP assembly in MainPage.xaml
 
@@ -67,31 +55,52 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endtabs %}
 
-### Adding SfSplitMosaicTile control through C# Code
+### Adding image to the tile
 
-1.Include the namespace for Syncfusion. SfHubTile.UWP assembly in MainPage.xaml.cs
+Set the image as Content of `SfPulsingTile` as given below:
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-using Syncfusion.UI.Xaml.Controls.Notification;
+<notification:SfPulsingTile Width="183" Height="173"
+                            Header="Pulsing tile">
+                            
+<Image Source="Assets/PulsingTile.jpg" Stretch="UniformToFill"
+       VerticalAlignment="Center" HorizontalAlignment="Center"
+       Height="200" />
+       
+</notification:SfPulsingTile>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-2.Now add the SfSplitMosaicTile control with an optimal name 
+### Applying zoom animation
+
+Adjusts the values of properties such as PulseScale, RadiusX and RadiuxY.
+
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-SfSplitMosaicTile splitMosaicTile = new SfSplitMosaicTile();
+
+<notification:SfPulsingTile Width="183" Height="173"
+                            Header="Pulsing tile" RadiusX="0"
+                            RadiusY="0" PulseScale="2">
+                            
+<Image Source="Assets/PulsingTile.jpg" Stretch="UniformToFill"
+       VerticalAlignment="Center" HorizontalAlignment="Center"
+       Height="200" />
+       
+</notification:SfPulsingTile>
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](SfpulsingTile-images/SfpulsingTile-img1.jpeg)
 
 ## Configuring the tile
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with states of TileViewItem
 
-## TileViewItem state
+## Setting item state
 
 `State` property is used to set the state of tile view item. The possible values of State are:
 
@@ -100,28 +100,6 @@ tileItem1.State = Syncfusion.UI.Xaml.Controls.Layout.TileViewItemState.Maximized
 
 ![](Dealing-with-item-state-images/Dealing-with-item-state-img1.jpeg)
 
-## StateChanged event
-
-StateChanged event notifies whenever the state of an item is changed. 
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<layout:SfTileView Width="500" Height="300">
-
-<layout:SfTileViewItem Content="PaulVent" x:Name="tileItem1"
-                       StateChanged="tileItem1_StateChanged">
-
-</layout:SfTileView>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight C# %}
 
 private void tileItem1_StateChanged(object sender, StateChangedEventArgs e)
 
@@ -133,7 +111,7 @@ private void tileItem1_StateChanged(object sender, StateChangedEventArgs e)
 
 {% endtabs %}
 
-## MaximizedItem
+## Maximizing item programmatically
 
 `MaximizedItem` property is used to get the instance of maximized tile view item. It is a read-only property.
 
@@ -147,7 +125,7 @@ SfTileViewItem maximizedItem = tileView.MaximizedItem;
 
 {% endtabs %}
 
-## MinimizedItems
+## Retrieving the Minimized items
 
 `MinimizedItems` property is used to get a collection of minimized tile view items. It is a read-only property.
 

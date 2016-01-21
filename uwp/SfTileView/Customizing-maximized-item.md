@@ -11,7 +11,7 @@ documentation: ug
 
 `SfTileView` provides several properties for customizing the maximized item.
 
-## MaximizedItemHeight
+## Changing maximized item height
 
 `MaximizedItemHeight` property is used to set height for the maximized item.
 
@@ -39,7 +39,7 @@ tileView.MaximizedItemHeight = 400.0;
 
 ![](Customizing-maximized-item-images/Customizing-maximized-item-img1.jpeg)
 
-## MaximizedItemWidth
+## Changing maximized item width
 
 `MaximizedItemWidth` property is used to set width for the maximized item.
 
@@ -63,7 +63,7 @@ tileView.MaximizedItemWidth = 400.0;
 
 ![](Customizing-maximized-item-images/Customizing-maximized-item-img2.jpeg)
 
-## Maximized Content Transitions
+## Animating maximized content
 
 `MaximizedContentTransitions` property is used to apply a set of transitions when an item is maximized.
 
@@ -103,7 +103,7 @@ tileView.Transitions.Add(new PopupThemeTransition());
 
 {% endtabs %}
 
-## Maximized ItemContainerStyle
+## Customizing maximized item
 
 `MaximizedItemContainerStyle` property is used to set style for the ContentControl that holds the MaximizedContent. It can be set as follows:
 
