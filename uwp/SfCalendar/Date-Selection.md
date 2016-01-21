@@ -11,7 +11,7 @@ documentation: ug
 
 Dates can be selected in `SfCalendar` in several ways
 
-## SelectedDate
+## Selecting a single date
 
 `SelectedDate` property is used to select a date in SfCalendar. 
 
@@ -37,7 +37,7 @@ calendar.SelectedDate = new DateTime(2015, 12, 15);
 
 {% endtabs %}
 
-## SelectedDates
+## Selecting multiple dates
 
 `SelectedDates` property is used to select one or more dates in SfCalendar. Several range of dates can be selected using this property.
 
@@ -119,7 +119,7 @@ DateRange dateRange = new DateRange(new DateTime(2015, 12, 15), new DateTime(201
 
 {% endtabs %}
 
-## Selection Mode
+## Date selection mode
 
 `SelectionMode` property determines whether single or multiple dates can be selected in SfCalendar. The values of SelectionMode are 
 
@@ -147,7 +147,7 @@ calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single;
 
 {% endtabs %}
 
-## DisplayDate
+## Setting display date
 
 `DisplayDate` property is used highlight a date which is not a selected date.
 
@@ -174,7 +174,7 @@ calendar.DisplayDate = new DateTime(2015, 12, 19);
 {% endtabs %}
 
 
-## SelectionChanged event
+## Notifying selected date changed
 
 `SelectionChanged` event fires whenever a calendar day button is selected.
 

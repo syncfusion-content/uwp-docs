@@ -15,10 +15,5 @@ documentation: ug
 
 * Allows to modify the RGB values in touch
 
-## Visual structure
-
-![](Overview-images/Overview-img1.jpeg)
-
-![](Overview-images/Overview-img2.jpeg)
 
 

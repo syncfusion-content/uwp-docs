@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the `SfCalculator` control.
+This section explains how to create a standalone calculator control that provide options to perform basic arithmetic operations.
 
 ## Creating SfCalculator control
 
@@ -19,7 +19,7 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 2. Syncfusion.SfShared.UWP
 
-### Adding SfCalculator control through XAML
+## Adding SfCalculator control
 
 1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
 
@@ -49,28 +49,6 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-### Adding SfCalculator control through C# Code
+Above code example creates the calculator as follows and perform mathematical arithmetic operations using the provided buttons:
 
-1.Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml.cs
-
-{% tabs %}
-
-{% highlight C# %}
-
-using Syncfusion.UI.Xaml.Controls.Input;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-2.Now add the SfCalculator control with a required optimal name 
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfCalculator accordion = new SfCalculator();
-
-{% endhighlight %}
-
-{% endtabs %}
+![](SfCalculator-images/SfCalculator-img1.jpeg)

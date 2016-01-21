@@ -17,17 +17,3 @@ documentation: ug
 * Current value can be easily retrieved
 * Provide culture support
 
-## Visual Structure
-
-WinRT
-
-![](SfCalculator-images/SfCalculator-img1.jpeg)
-
-
-Windows phone
-
-![](SfCalculator-images/SfCalculator-img2.jpeg)
-
-
-![](SfCalculator-images/SfCalculator-img3.jpeg)
-

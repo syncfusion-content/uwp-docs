@@ -19,7 +19,7 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 2. Syncfusion.SfShared.UWP
 
-### Adding SfCalendar control through XAML
+## Adding SfCalendar control
 
 1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
 
@@ -49,31 +49,21 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-### Adding SfCalendar control through C# Code
+## Enabling navigation buttons
 
-1.Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml.cs
+Set the property `ShowNavigationButton` to true for enabling the navigation buttons that allows switching between months.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-using Syncfusion.UI.Xaml.Controls.Input;
+<input:SfCalendar x:Name="calendar" ShowNavigationButton="True"/>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-2.Now add the SfCalendar control with a required optimal name 
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfCalendar calendar = new SfCalendar();
-
-{% endhighlight %}
-
-{% endtabs %}
+![](SfCalendar-images/SfCalendar-img1.jpeg)
 
 ## Culture support
 

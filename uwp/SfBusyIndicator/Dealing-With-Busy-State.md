@@ -73,7 +73,7 @@ busyIndicator.Header = "Loading...";
 
 ![](SfBusyIndicator1/Load.png)
 
-## Change Header
+## Customizing busy caption
 
 `SfBusyIndicator` header can be customized using the `HeaderTemplate` property.
 
@@ -109,7 +109,7 @@ busyIndicator.Header = "Loading...";
 
 ![](SfBusyIndicator1/CustomizeHeader.png)
 
-## Sizing
+## Sizing the BusyIndicator
 
 `Width` and `Height` properties which are used for sizing the control does not resize the animating element inside `SfBusyIndicator`. Set the properties `ViewBoxHeight` and `ViewBoxWidth` for sizing the animation inside `SfBusyIndicator`.
 

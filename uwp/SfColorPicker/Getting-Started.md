@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the `SfColorPicker` control.
+This section explains how to create a RGB color model picker using the `SfColorPicker` control.
 
 ## Creating SfColorPicker control
 
@@ -77,3 +77,4 @@ SfColorPicker colorPicker = new SfColorPicker();
 
 {% endtabs %}
 
+![](Overview-images/Overview-img1.jpeg)

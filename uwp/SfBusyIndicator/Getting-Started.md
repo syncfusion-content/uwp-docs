@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create `SfBusyIndicator` control.
+This section explains how to create a visual representation indicating background running process with animation using `SfBusyIndicator` control.
 
 ## Creating SfBusyIndicator control
 
@@ -17,9 +17,7 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 1. Syncfusion.SfBusyIndicator.UWP
 
-2. Syncfusion.SfShared.UWP
-
-### Adding SfBusyIndicator control through XAML
+## Adding SfBusyIndicator control
 
 1.Include the namespace for Syncfusion.SfBusyIndicator.UWP assembly in MainPage.xaml
 
@@ -49,28 +47,46 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endtabs %}
 
-### Adding SfBusyIndicator control through C# code
+![](SfBusyIndicator1/Winrt.png)
 
-1.Include the namespace for Syncfusion.SfBusyIndicator.UWP assembly in MainPage.xaml.cs
+## Choosing animation
+
+Choose an animation from the available built-in animations and set it using `AnimationType` property.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
+ 
+<Grid Background="CornFlowerBlue"/>
 
-using Syncfusion.UI.Xaml.Controls.Notification;
+<notification:SfBusyIndicator AnimationType="Gear"/>
+
+</Grid>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-2.Now add the `SfBusyIndicator` control with a required optimal name 
+![](SfBusyIndicator1/Gear.png)
+
+## Setting busy header
+
+Set the `Header` property with text “Loading…” to display a busy status and customize the header with `HeaderTemplate` property as given below:
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
+ 
+<Grid Background="CornFlowerBlue"/>
 
-SfBusyIndicator busyIndicator = new SfBusyIndicator();
+<notification:SfBusyIndicator Header="Loading..."/>
+
+</Grid>
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](SfBusyIndicator1/Load.png)
+
+ 

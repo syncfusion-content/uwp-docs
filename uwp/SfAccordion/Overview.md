@@ -14,19 +14,4 @@ The `SfAccordion` control organizes content into multiple collapsible sections t
 ## Features
 
 * ItemsSource - Any business object collection can be bound to the control
-* SelectionMode - Number of items that can be expanded/selected is based on `SelectionMode`
-
-## Visual Structure
-
-1.WinRT
-
-![](Overview-images/Winrt.png)
-
-2.Windows Phone
-
-![](Overview-images/windowsphone.png)
-
-
-![](Overview-images/win.png)
-
-
+* SelectionMode - Number of items that can be expanded/selected based on `SelectionMode`

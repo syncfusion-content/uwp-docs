@@ -7,7 +7,7 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Selection Mode
+# Expansion Modes
 
 `SfAccordion` provides a property `SelectionMode` that helps to decide the number of items that can be expanded or selected at a time. The values of `SelectionMode` are
 
