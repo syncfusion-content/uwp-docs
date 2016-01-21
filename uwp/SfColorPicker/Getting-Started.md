@@ -15,7 +15,7 @@ This section explains how to create a RGB color model picker using the `SfColorP
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfSfColorPickers.UWP
+1. Syncfusion.SfColorPickers.UWP
 
 2. Syncfusion.SfRadialMenu.UWP
 
