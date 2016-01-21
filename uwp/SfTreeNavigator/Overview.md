@@ -17,16 +17,5 @@ documentation: ug
 * Hierarchical Data Template - Business objects displayed in the hierarchy can be customized with a single template.
 * Navigation Mode support.
 
-## Visual Structure
-
-1.WinRT
-
-![](Overview-images/Overview-img1.jpeg)
-
-2.Windows phone
-
-![](Overview-images/Overview-img2.jpeg)
-
-![](Overview-images/Overview-img3.jpeg)
 
 
