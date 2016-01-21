@@ -16,31 +16,17 @@ documentation: ug
 * Show images with flip transition effect 
 * Image collection can be either url or Image source
 
-### Visual structure
-
-1.WinRT
-
-![](SfMosaicTile-images/SfMosaicTile-img1.jpeg)
-
-2.Windows phone
-
-![](SfMosaicTile-images/SfMosaicTile-img2.jpeg)
-
-![](SfMosaicTile-images/SfMosaicTile-img3.jpeg)
-
 ## Getting Started
 
-This section explains how to create the `SfMosaicTile` control.
+This section explains how to create mosaic picture with flip transaction using ``SfMosaicTile` control.
 
-### Creating SfMosaicTile control
+### Adding SfMosaicTile control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion.SfHubTile.UWP
+* Syncfusion.SfHubTile.UWP
 
-2. Syncfusion.SfShared.UWP
-
-#### Adding SfMosaicTile control through XAML Code
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfHubTile.UWP assembly in MainPage.xaml
 
@@ -71,31 +57,46 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 {% endtabs %}
 
-#### Adding SfMosaicTile control through C#
+### Adding image list to the tile 
 
-1.Include the namespace for Syncfusion. SfHubTile.UWP assembly in MainPage.xaml.cs
+Set the properties Header, ImageList as given below:
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-using Syncfusion.UI.Xaml.Controls.Notification;
+<notification:SfMosaicTile Width="183" Height="173"
+                           Header="HubTile" Foreground="White">
+						   
+<notification:SfMosaicTile.ImageList>
+
+<notification:ImageList>
+
+<x:String>Assets/emp10.png</x:String>
+<x:String>Assets/emp11.png</x:String>
+<x:String>Assets/emp12.png</x:String>
+<x:String>Assets/emp13.png</x:String>
+<x:String>Assets/emp1.png</x:String>
+<x:String>Assets/emp2.png</x:String>
+<x:String>Assets/emp3.png</x:String>
+<x:String>Assets/emp4.png</x:String>
+<x:String>Assets/emp5.png</x:String>
+<x:String>Assets/emp6.png</x:String>
+<x:String>Assets/emp7.png</x:String>
+<x:String>Assets/emp8.png</x:String>
+<x:String>Assets/emp9.png</x:String>
+
+</notification:ImageList>
+
+</notification:SfMosaicTile.ImageList>
+
+</notification:SfMosaicTile>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-2.Now add the `SfMosaicTile` control with an optimal name 
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfMosaicTile mosaicTile = new SfMosaicTile();
-
-{% endhighlight %}
-
-{% endtabs %}
+![](SfMosaicTile-images/SfMosaicTile-img1.jpeg)
 
 ## Configuring the Tile
 
@@ -129,11 +130,11 @@ mosaicTile.Header = "Mosaic Tile";
 
 ## Adding image collection
 
-### IsBitmapImageList 
+### Specifying BitmapImage or Image URLs
 
-`BitmapImageList` property is used to specify whether the image location is given as url or image source. Image sources are preferred when images are retrieved from folders like Downloads, Picture library, Video library, Document library and Music library.
+`IsBitmapImageList` property is used to specify whether the image location is given as url or image source. Image sources are preferred when images are retrieved from folders like Downloads, Picture library, Video library, Document library and Music library.
 
-### Setting Image URLs
+### Adding Image URLs
 
 `ImageList` property is used to set a collection of image url that are to be displayed in tile. IsBitmapImageList property must be set to false while using image urls otherwise images does not appear in mosaic tile.
 
@@ -141,42 +142,31 @@ mosaicTile.Header = "Mosaic Tile";
 
 {% highlight XAML %}
 
-<Page xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
+<Page xmlns:x=http://schemas.microsoft.com/winfx/2006/xaml
+      xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-<notification:SfMosaicTile Header="Mosaic tile" x:Name="mosaicTile">
-
+<notification:SfMosaicTile Header="Mosaic tile"
+                           IsBitmapImageList="false"
+						   x:Name="mosaicTile">
+						   
 <notification:SfMosaicTile.ImageList>
 
 <notification:ImageList>
 
 <x:String>Assets/emp10.png</x:String>
-
 <x:String>Assets/emp11.png</x:String>
-
 <x:String>Assets/emp12.png</x:String>
-
 <x:String>Assets/emp13.png</x:String>
-
 <x:String>Assets/emp1.png</x:String>
-
 <x:String>Assets/emp2.png</x:String>
-
 <x:String>Assets/emp3.png</x:String>
-
 <x:String>Assets/emp4.png</x:String>
-
 <x:String>Assets/emp5.png</x:String>
-
 <x:String>Assets/emp6.png</x:String>
-
 <x:String>Assets/emp7.png</x:String>
-
 <x:String>Assets/emp8.png</x:String>
-
 <x:String>Assets/emp9.png</x:String>
 
 </notification:ImageList>
@@ -237,7 +227,9 @@ mosaicTile.ImageList.Add("Assets/emp9.png");
 
 {% highlight XAML %}
 
-<notification:SfMosaicTile Header="Mosaic tile" x:Name="mosaicTile"/>
+<notification:SfMosaicTile Header="Mosaic tile"
+                           IsBitmapImageList="True"
+						   x:Name="mosaicTile"/>
 
 {% endhighlight %}
 
