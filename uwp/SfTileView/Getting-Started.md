@@ -348,10 +348,9 @@ void Restore(object sender, TappedRoutedEventArgs e)
 
 {
 	
-      tileView.SelectedIndex = -1;
-	  
-}
+      tileView.SelectedIndex = -1;	  
 
+}
 
 {% endhighlight %}
 
