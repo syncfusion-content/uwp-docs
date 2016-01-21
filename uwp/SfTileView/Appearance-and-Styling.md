@@ -88,5 +88,3 @@ tileView.ItemWidth = 100.0;
 {% endtabs %}
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
-
-
