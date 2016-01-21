@@ -11,15 +11,13 @@ documentation: ug
 
 This section explains how to create a long list of expandable items using SfAccordion control.
 
-## Creating SfAccordion control
+## Adding SfAccordion control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion.SfAccordion.UWP
+* Syncfusion.SfAccordion.UWP
 
-2. Syncfusion.SfShared.UWP
-
-## Adding SfAccordion control
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfAccordion.UWP assembly in MainPage.xaml
 

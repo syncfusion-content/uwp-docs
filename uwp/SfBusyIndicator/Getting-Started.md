@@ -11,13 +11,10 @@ documentation: ug
 
 This section explains how to create a visual representation indicating background running process with animation using `SfBusyIndicator` control.
 
-## Creating SfBusyIndicator control
-
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
-
-1. Syncfusion.SfBusyIndicator.UWP
-
 ## Adding SfBusyIndicator control
+
+
+Create a Universal Windows project in Visual Studio and refer to the "Syncfusion.SfBusyIndicator.UWP" assembly.
 
 1.Include the namespace for Syncfusion.SfBusyIndicator.UWP assembly in MainPage.xaml
 

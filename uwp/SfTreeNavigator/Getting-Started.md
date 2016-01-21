@@ -9,16 +9,13 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the `SfTreeNavigator` control.
+This section explains how to visualize hierarchal data in tree structure using `SfTreeNavigator` control.
 
-## Creating SfTreeNavigator control
-
+## Adding SfTreeNavigator control
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
 1. Syncfusion. SfTreeNavigator.UWP
 2. Syncfusion.SfShared.UWP
-
-### Adding SfTreeNavigator control through XAML Code
 
 1.Include the namespace for Syncfusion.SfTreeNavigator.UWP assembly in MainPage.xaml
 
@@ -43,32 +40,6 @@ xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
 {% highlight XAML %}
 
 <navigation:SfTreeNavigator x:Name="treeNavigator">
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Adding SfTreeNavigator control through C# Code
-
-1.Include the namespace for Syncfusion. SfTreeNavigator.UWP assembly in MainPage.xaml.cs
-
-{% tabs %}
-
-{% highlight C# %}
-
-using Syncfusion.UI.Xaml.Controls.Navigation;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-2.Now add the `SfTreeNavigator` control with an optimal name 
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfTreeNavigator treeNavigator = new SfTreeNavigator();
 
 {% endhighlight %}
 

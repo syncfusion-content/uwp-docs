@@ -11,15 +11,13 @@ documentation: ug
 
 This section explains how to create a preview of slides using SfCarousel control.
 
-## Creating SfCarousel control
+## Adding SfCarousel control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfCarousel.UWP
+* Syncfusion. SfCarousel.UWP
 
-2. Syncfusion.SfShared.UWP
-
-## Adding SfCarousel control
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfCarousel.UWP assembly in MainPage.xaml
 
