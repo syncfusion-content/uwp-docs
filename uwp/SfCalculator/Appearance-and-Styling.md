@@ -15,7 +15,7 @@ All the panes in SfCalculator can be customized easily. The panes can be styled 
 * DisplayPaneStyle
 * InputPane Style
 
-## FunctionsPane Style
+## Customizing functions panel
 
 Function pane is the panel containing number buttons and mathematical symbols. It can be styled using FunctionsPaneStyle property.
 
@@ -33,7 +33,7 @@ Function pane is the panel containing number buttons and mathematical symbols. I
 
 {% endtabs %}
 
-## DisplayPane Style
+## Customizing display panel
 
 Display pane is the panel that contain elements displaying value and expression. It can be styled as follows.
 
@@ -55,7 +55,7 @@ Display pane is the panel that contain elements displaying value and expression.
 
 ![](SfCalculator-images/SfCalculator-img8.jpeg)
 
-## InputPane Style
+## Customizing input panel
 
 Input pane is a panel in SfCalulator that contains number buttons. It can be styled as follows.
 

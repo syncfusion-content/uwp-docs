@@ -103,7 +103,7 @@ busyIndicator.AnimationType = AnimationTypes.Ball;
 ![](SfBusyIndicator1/Bulb.png)
 
 
-##Animation Speed
+## Accelerating animation speed
 
 Animation speed property is used to change the speed of animation. Minimum animation speed is 10 and maximum animation speed is 500. The default speed is 115. 
 
@@ -126,12 +126,3 @@ busyIndicator.AnimationSpeed = 120.0;
 {% endhighlight %}
 
 {% endtabs %}
-
-
-
-
-
-
-
-
-

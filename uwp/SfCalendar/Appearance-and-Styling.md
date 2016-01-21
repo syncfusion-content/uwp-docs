@@ -11,7 +11,7 @@ documentation: ug
 
 Each and every part in SfCalendar can be customizable. And it can be customized as follows:
 
-## CellTemplate
+## Customizing the active date cell
 
 The active calendar day button template can be modified using `CellTemplate` property. It also provided `CellTemplateSelector` property for applying selective templates by a logic.
 
@@ -41,7 +41,7 @@ The active calendar day button template can be modified using `CellTemplate` pro
 ![](SfCalendar-images/SfCalendar-img15.jpeg)
 
 
-## DisabledCellTemplate
+## Customizing the disabled date cell
 
 The inactive/disabled calendar day button template can be modified using `DisabledCellTemplate` property.
 
@@ -88,7 +88,7 @@ calendar.VisibleMaxDate = new DateTime(2015, 12, 25);
 ![](SfCalendar-images/SfCalendar-img16.jpeg)
 
 
-## DayNameCellTemplate
+## Customizing day name cell 
 
 The template of day names can also be modified using `DayNameCellTemplate` property.
 
@@ -117,7 +117,7 @@ The template of day names can also be modified using `DayNameCellTemplate` prope
 ![](SfCalendar-images/SfCalendar-img17.jpeg)
 
 
-## HeaderTemplate
+## Customizing header
 
 The template of header in SfCalendar can be modified using `HeaderTemplate` property.
 
@@ -146,7 +146,7 @@ The template of header in SfCalendar can be modified using `HeaderTemplate` prop
 ![](SfCalendar-images/SfCalendar-img18.jpeg)
 
 
-## SelectedDateBackground
+## Change selected date background
 
 The background of selected date can be set using `SelectedDateBackground` property.
 
@@ -173,7 +173,7 @@ calendar.SelectedDateBackground = new SolidColorBrush(Windows.UI.Colors.Red);
 ![](SfCalendar-images/SfCalendar-img19.jpeg)
 
 
-## ScrollButtonTemplates
+## Customizing scroll button
 
 The template of previous and next scroll buttons can be modified with `PreviousScrollButtonTemplate` and `NextScrollButtonTemplate` properties. ****
 
@@ -348,7 +348,7 @@ Margin="-1,0,-1,0" RenderTransformOrigin="0.5,0.5">
 
 ![](SfCalendar-images/SfCalendar-img20.jpeg)
 
-## Refresh method
+## Refresh the layout
 
 `Refresh` method is used to refresh the layout of SfCalendar so that the cell templates are applied again.
 
