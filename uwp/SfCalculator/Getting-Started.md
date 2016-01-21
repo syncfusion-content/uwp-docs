@@ -11,15 +11,13 @@ documentation: ug
 
 This section explains how to create a standalone calculator control that provide options to perform basic arithmetic operations.
 
-## Creating SfCalculator control
+## Adding SfCalculator control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfInput.UWP
+* Syncfusion. SfInput.UWP
 
-2. Syncfusion.SfShared.UWP
-
-## Adding SfCalculator control
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
 

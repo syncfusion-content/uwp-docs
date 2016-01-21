@@ -15,7 +15,7 @@ This section explains how to create a color palette with predefined swatches usi
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfSfColorPickers.UWP
+1. Syncfusion.SfColorPickers.UWP
 2. Syncfusion.SfRadialMenu.UWP
 3. Syncfusion.SfShared.UWP
 

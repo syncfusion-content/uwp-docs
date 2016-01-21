@@ -11,15 +11,13 @@ documentation: ug
 
 This section explains how to create the SfCalendar control.
 
-## Creating SfCalendar control
+## Adding SfCalendar control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfInput.UWP
+* Syncfusion. SfInput.UWP
 
-2. Syncfusion.SfShared.UWP
-
-## Adding SfCalendar control
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
 

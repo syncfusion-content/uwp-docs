@@ -15,5 +15,3 @@ documentation: ug
 
 * Allows to modify the RGB values in touch
 
-
-
