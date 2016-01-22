@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with Value and PreviewValue
 
-## Value
+## Setting the rated value
 
 `Value` property is used to get or set the rate value in `SfRating` control.
 
@@ -38,7 +38,7 @@ rating.Value = 2;
 ![](Dealing-with-Value-and-PreviewValue-images/Dealing-with-Value-and-PreviewValue-img1.jpeg)
 
 
-## PreviewValue
+## Previewing the rate
 
 `PreviewValue` property is used to get the pointer over value in SfRating control, and this value is displayed as tool tip content.
 
@@ -74,7 +74,7 @@ private void rating_ValueChanged(object sender, ValueChangedEventArgs e)
 {% endtabs %}
 
 
-## Read-only
+## Read only Rating control
 
 `SfRating` can also restrict user from changing the rates in control using the `IsReadOnly` property. But preview value changes when pointer moves over the control.
 
