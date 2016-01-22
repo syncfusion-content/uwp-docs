@@ -14,12 +14,12 @@ SfTabControl can have only one selected item at a time. Tab items can be selecte
 * Touching the header text of SfTabItem 
 * Using tab strip/list menu
 * Programmatically using the properties SelectedItem, SelectedIndex, IsSelected
-## TabStripMenu
 
+## Selecting item through Tab strip menu
 
 Tab strip menu is a list containing the collection of tab item headers displayed at the end of TabPanel. Any tab item can be selected using this menu. To enable/disable this menu set the property ShowTabStripMenu in SfTabControl.
 
-## SelectedItem
+## Selecting item using SelectedItem
 
 SelectedItem property is used to select an item using its instance.
 
@@ -56,7 +56,7 @@ tabControl.SelectedItem = niko;
 ![](Selecting-Tabitems-images/Selecting-Tabitems-img1.jpeg)
 
 
-## SelectedIndex
+## Selecting item using SelectedIndex
 
 SelectedIndex property is used to select an item using its index.
 
@@ -93,7 +93,7 @@ tabControl.SelectedIndex = 1;
 ![](Selecting-Tabitems-images/Selecting-Tabitems-img2.jpeg)
 
 
-## IsSelected
+## Selecting item using IsSelected
 
 IsSelected property is used to check whether an item is selected or not. An item can also be selected by setting its IsSelected to true.
 
@@ -128,7 +128,7 @@ niko.IsSelected = true;
 
 {% endtabs %}
 
-## SelectionChanged on SfTabControl
+## Notify on SelectionChanged
 
 SelectionChanged event fires when an item is selected. The parameters of SelectionChanged event are AddedItems and RemovedItems. Added items have the list of recently selected items whereas RemovedItems have the list of recently unselected items.
 

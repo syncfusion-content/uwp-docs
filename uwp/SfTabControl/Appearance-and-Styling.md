@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-## Header template
+## Customizing item header
 
 The header of tab item can be customized using the HeaderTemplate property. HeaderTemplateSelector property is also available to pick a data template using selection logic.
 
@@ -51,7 +51,7 @@ The header of tab item can be customized using the HeaderTemplate property. Head
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 
-## Content transitions
+## Customizing content transitions
 
 Transition effects of selecting an item can be customized using ContentTransitions property.
 

@@ -9,17 +9,14 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the `SfRating` control.
+This section explains how to create a group of visual symbols used for rating with `SfRating` control.
 
-## Creating SfRating control
+## Adding SfRating control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfInput.UWP
-2. Syncfusion.SfShared.UWP
-
-### Adding SfRating control through XAML Code
-
+* Syncfusion.SfInput.UWP
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
 
@@ -48,32 +45,39 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-### Adding SfRating control through C# Code
-
-1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml.cs
-
-{% tabs %}
-
-{% highlight C# %}
-
-using Syncfusion.UI.Xaml.Controls.Input;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-2.Now add the `SfRating` control with an optimal name 
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfRating rating = new SfRating();
-
-{% endhighlight %}
-
-{% endtabs %}
-
 N> This will yield a blank output screen unless `ItemsCount` is set
 
+## Set the number of items
 
+Set the `ItemsCount` property to specify the number of rating items in control. 
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<input:SfRating ItemsCount="5" x:Name="rating">
+
+<input:SfRating.Resources>
+
+<Style TargetType="input:SfRatingItem">
+
+<Setter Property="Padding" Value="1"/>
+
+<Setter Property="RatedFill" Value="#FF1196CD"/>
+
+<Setter Property="PointerOverFill" Value="#FF86BA35"/>
+
+<Setter Property="Width" Value="35"/>
+
+</Style>
+
+</input:SfRating.Resources>
+
+</input:SfRating>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![](Overview-images/Overview-img1.jpeg)
