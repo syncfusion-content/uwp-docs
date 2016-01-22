@@ -17,7 +17,6 @@ Tab Items in SfTabControl can be pinned or unpinned using the pin button next to
 
 ## Show Pinnable Button 
 
-
 To enable this feature, set the property ShowPinnableButton to true for the tab items.
 
 The following code example and screen shot illustrate this.

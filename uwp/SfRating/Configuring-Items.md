@@ -11,7 +11,7 @@ documentation: ug
 
 Specifying the number of rating items in `SfRating` control is much simpler with the property ItemsCount.
 
-## ItemsCount
+## Setting items count
 
 `ItemsCount` property defines the number of rating items in control. By default, the count is zero.
 

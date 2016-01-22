@@ -9,7 +9,7 @@ documentation: ug
 
 # TabStripPlacement and menu
 
-## TabStripPlacement
+## Change placement of Tabs
 
 The tab strip of SfTabControl can be aligned in all the four sides of SfTabControl using the TabStripPlacement property. It has the following options and by default it is top:
 
@@ -95,7 +95,7 @@ tabControl.ShowTabstripMenu = true;
 ![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img2.jpeg)
 
 
-### TabStripMenuItems
+### Adding custom items to Tabstrip menu
 
 Custom menu items can be added to the tab strip menu using TabStripMenuItems property as follows:
 
@@ -138,7 +138,7 @@ tabControl.TabstripMenuItems.Add("Custom");
 ![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img3.jpeg)
 
 
-### TabStripMenuItemTemplate
+### Customizing Tabstrip menu item
 
 Tab strip menu items can be customized using the TabStripMenuItemTemplate property. 
 

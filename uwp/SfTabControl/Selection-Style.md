@@ -11,11 +11,11 @@ documentation: ug
 
 Header of a selected item can be customized in SfTabControl.
 
-## Selection style
+## Selected header style
 
 Foreground and background of a selected tab item can be changed using SelectedForeground and SelectedBackground properties. These properties are dependent on the value of SfTabControl.SelectionStyle property. The enum values of SelectionStyle are HeaderText and CompleteHeader. The default value is HeaderText.
 
-## Selected Foreground
+## Setting Selected Foreground
 
 SelectedForeground property is used to customize the foreground color of the header text when that tab item is selected and SelectionStyle=”HeaderText”. SelectedBackground has no effect when set in HeaderText selection style.
 
@@ -59,7 +59,7 @@ paul.SelectedForeground = new SolidColorBrush(Colors.Red);
 ![](Selection-Style-images/Selection-Style-img1.jpeg)
 
 
-## Selected Background
+## Setting Selected Background
 
 SelectedBackground property is used to customize the background color of the header when that tab item is selected and SelectionStyle=”CompleteHeader”. SelectedForeground has no effect when set in CompleteHeader selection style.
 
