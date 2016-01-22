@@ -100,17 +100,6 @@ tileItem1.State = Syncfusion.UI.Xaml.Controls.Layout.TileViewItemState.Maximized
 
 ![](Dealing-with-item-state-images/Dealing-with-item-state-img1.jpeg)
 
-
-private void tileItem1_StateChanged(object sender, StateChangedEventArgs e)
-
-{
-
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Maximizing item programmatically
 
 `MaximizedItem` property is used to get the instance of maximized tile view item. It is a read-only property.
