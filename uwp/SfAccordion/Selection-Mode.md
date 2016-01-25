@@ -9,7 +9,7 @@ documentation: ug
 
 # Expansion Modes
 
-`SfAccordion` provides a property `SelectionMode` that helps to decide the number of items that can be expanded or selected at a time. The values of `SelectionMode` are
+`SfAccordion` provides a property `SelectionMode` that helps to decide the number of items that can be expanded or selected at a time. The values of SelectionMode's are
 
 1. One
 2. OneOrMore
@@ -22,23 +22,23 @@ The default selection mode is One.
 
 * Only one item can be in expanded/selected state.
 * One item must be in expanded/selected state.
-* Does not allows to unselect all the item. 
+* Does not allows to unselect all the items. 
 
 ## SelectionMode - OneOrMore
 
-* More than one item can be in expanded/selected state. 
+* More than one items can be in expanded/selected state. 
 * One item must be in expanded/selected state.
-* Does not allows to unselect all the item. 
+* Does not allows to unselect all the items. 
 
 ## SelectionMode - ZeroOrOne
 
 * Only one item can be in expanded/selected state.
-* Allows to unselect all the item. 
+* Allows to unselect all the items. 
 
 ## SelectionMode - ZeroOrMore
 
-* More than one item can be in expanded/selected state.
-* Allows to unselect all the item. 
+* More than one items can be in expanded/selected state.
+* Allows to unselect all the items. 
 
 Here is an example showing OneOrMore `SelectionMode`:
 

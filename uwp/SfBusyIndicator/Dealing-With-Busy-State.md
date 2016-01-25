@@ -73,7 +73,7 @@ busyIndicator.Header = "Loading...";
 
 ![](SfBusyIndicator1/Load.png)
 
-## Customizing busy caption
+## Customizing Busy Caption
 
 `SfBusyIndicator` header can be customized using the `HeaderTemplate` property.
 

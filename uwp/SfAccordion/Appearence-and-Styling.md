@@ -43,7 +43,7 @@ accordion.AccentBrush = new SolidColorBrush() { Color = Windows.UI.Colors.Red };
 ![](Appearence-and-Styling-images/appearence-and-styling-img1.jpeg)
 
 
-## Customizing accordion item
+## Customizing SfAccordion Item
 
 `ItemContainerStyle` property is used to define the style for SfAccordionItems.
 
@@ -86,7 +86,7 @@ accordion.AccentBrush = new SolidColorBrush() { Color = Windows.UI.Colors.Red };
 
 ![](Appearence-and-Styling-images/appearence-and-styling-img2.jpeg)
 
-## Customizing accordion button
+## Customizing Accordion Button
 
-`AccordionButtonStyle` property is used to style the expander button which contains the header and expander button
+`AccordionButtonStyle` property is used to style the expander button which contains the header and expander button.
 
