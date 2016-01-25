@@ -7,15 +7,15 @@ control: SfColorPicker
 documentation: ug
 ---
 
-# Adjusting colors
+# Adjusting Colors Values
 
-## Adjusting the hue value
+## Adjusting the Hue Value
 
 `SfColorPicker` allows to change the hue value by sliding the HueThumb. In WinRT, holding the thumb shows the color tool tip that indicates the current hue color.
 
 ![](Adjusting-Color-images/Adjusting-Color-img1.jpeg)
 
-## Adjusting RGB values
+## Adjusting RGB Values
 
 RadialSliders are provided to change the RGB values. Sliders can be enabled by touching the R, G & B values.
 
@@ -28,7 +28,7 @@ RadialSliders are provided to change the RGB values. Sliders can be enabled by t
 ![](Adjusting-Color-images/Adjusting-Color-img4.jpeg)
 
 
-## HexaDecimal Color code
+## Adjusting HexaDecimal Color Code
 
 Hexadecimal color code of the selected color is displayed in the right side panel. It can be copied using context menu in both tablets and windows phone device.
 

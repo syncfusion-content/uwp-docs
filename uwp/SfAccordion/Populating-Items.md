@@ -9,13 +9,13 @@ documentation: ug
 
 # Populating Items
 
-`SfAccordionItem` are added as items of `SfAccordion`. Items can be added using `Items` or `ItemSource` property.
+`SfAccordionItem` can be added as items of `SfAccordion`. Items can be added using `Items` or `ItemsSource` property.
 
-## Using Items
+## Populating Items through adding SfAccordionItem
 
 SfAccordion accepts `SfAccordionItem` as its children when added directly.
 
-### Adding items to the control 
+### Adding Items to the Control 
 
 Here five SfAccordionItems are added as the children of the `SfAccordion`.
 
@@ -63,9 +63,9 @@ accordion.Items.Add(new SfAccordionItem());
 
 ![](Populating-Items-images/Populating-Items-img1.jpeg)
 
-### Setting Header for items
+### Setting Header for Items
 
-`SfAccordionItem` provides a property `Header` that helps to set the header for the item. `Header` is visible in both expanded and collapsed state. Set the value as “WPF” for the first child and repeat the same procedure for the remaining children with values as “Silverlight”, “WinRT”, ”Windows Phone” and “Universal”.
+`SfAccordionItem` provides a property `Header` that helps to set the header for the item. `Header` can be visible in both expanded and collapsed state. Set the value as “WPF” for the first child and repeat the same procedure for the remaining children with values as “Silverlight”, “WinRT”, ”Windows Phone” and “Universal”.
 
 {% tabs %}
 
@@ -113,9 +113,9 @@ accordion.Items.Add(new SfAccordionItem() { Header = "Universal" });
 
 ![](Populating-Items-images/Populating-Items-img2.jpeg)
 
-### Setting Content for items
+### Setting Content for Items
 
-`Content` property helps to set the content for `SfAccordionItem`. `SfAccordionItem` is a ContentControl so that any object can be added as its content. Content is visible only in expanded state.
+`Content` property helps to set the content for `SfAccordionItem`. `SfAccordionItem` is a ContentControl, so that any object can be added as its content. Content can be visible only in expanded state.
 
 {% tabs %}
 
@@ -163,11 +163,11 @@ accordion.Items.Add(new SfAccordionItem() { Header = "Universal" , Content = "Es
 
 ![](Populating-Items-images/Populating-Items-img3.jpeg)
 
-## Using ItemsSource
+## Populating Items through Binding
 
 SfAccordion accepts any business object collection to be bound to its ItemsSource property. 
 
-### Adding items to the control
+### Adding Items to the Control
 
 Follow the below steps to add the Items through ItemsSource property.
 
@@ -245,9 +245,9 @@ Employees.Add(new Employee() { Name = "Niko", Description = "Description about N
 
 ![](Populating-Items-images/Populating-Items-img4.jpeg)
 
-### Setting Header for items
+### Setting Header for Items
 
-Header can be displayed using the property `DisplayMemberPath`. This property is used to get the header from Model class. Header is visible in both expanded and collapsed state. 
+Header can be displayed using the property `DisplayMemberPath`. This property is used to get the header from Model class. Header can be visible in both expanded and collapsed state. 
 
 {% tabs %}
 
@@ -287,9 +287,9 @@ Header can be displayed using the property `DisplayMemberPath`. This property is
 
 ![](Populating-Items-images/Populating-Items-img6.jpeg)
 
-### Setting Content for items
+### Setting Content for Items
 
-Content can be displayed using the `ContentTemplate` property. Content is visible only in the expanded state.`ContentTemplateSelector` property is also provided to apply content template based on the selection logic.
+Content can be displayed using the `ContentTemplate` property. Content can be visible only in the expanded state. `ContentTemplateSelector` property is also provided to apply content template based on the selection logic.
 
 {% tabs %}
 

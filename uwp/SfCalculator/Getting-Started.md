@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create a standalone calculator control that provide options to perform basic arithmetic operations.
 
-## Adding SfCalculator control
+## Adding SfCalculator Control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
