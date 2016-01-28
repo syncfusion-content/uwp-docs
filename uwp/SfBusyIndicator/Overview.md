@@ -18,14 +18,4 @@ documentation: ug
 * Provides support to show/hide busy indicator
 * Re-sizing made very simple with View box  
 
-## Visual Structure
-
-1.WinRT
-
-![](SfBusyIndicator1/Winrt.png)
-
-2.Windows Phone
-
-![](SfBusyIndicator1/WindowsPhone.png)
-
 

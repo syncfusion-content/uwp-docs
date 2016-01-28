@@ -11,7 +11,7 @@ documentation: ug
 
 `SfCarousalItem` can be displayed in different offset in `SfCarousel` and also can define the offset between selected item and other items in `SfCarousel`.
 
-## Offset
+## Adjusting the distance between unselected items
 
 `Offset` property is used to customize the distance between carousel items that are not selected.
 
@@ -89,7 +89,7 @@ carousel.Offset = 100.0;
 
 ![](SfCarousel-images/SfCarousel-img9.jpeg)
 
-## ScaleOffset
+## Scaling the unselected items
 
 `ScaleOffset` is used to scale the carousel items that are not selected.
 
@@ -167,7 +167,7 @@ carousel.ScaleOffset = 0.5;
 
 ![](SfCarousel-images/SfCarousel-img10.jpeg)
 
-## SelectedItemOffset
+## Displacing the selected and unselected items
 
 `SelectedItemOffset` is set to specify the distance of selected item from other carousel items.
 

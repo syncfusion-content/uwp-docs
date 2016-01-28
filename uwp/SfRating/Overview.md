@@ -16,19 +16,3 @@ documentation: ug
 * Rate items count can be easily specified
 * Supports three different rating precisions
 
-## Visual Structure
-
-
-1.WinRT
-
-![](Overview-images/Overview-img1.jpeg)
-
-
-2.Windows phone
-
-![](Overview-images/Overview-img2.jpeg)
-
-
-![](Overview-images/Overview-img3.jpeg)
-
-

@@ -11,7 +11,7 @@ documentation: ug
 
 `SfCalendar` allows to block out dates so that a blocked date will look disabled, skipped in key navigation and unable to select.
 
-## BlackOutDates
+## Blocking out the date collection
 
 `BlackOutDates` property is used to specify the collection of DateTime that are to be blocked.
 
@@ -54,7 +54,7 @@ calendar.BlackOutDates.Add(new DateTime(2015, 12, 27));
 ![](SfCalendar-images/SfCalendar-img7.jpeg)
 
 
-## BlackOutCellTemplate
+## Customize the blocked date cell
 
 The template of blocked cells can be customized using `BlackOutCellTemplate` property.
 

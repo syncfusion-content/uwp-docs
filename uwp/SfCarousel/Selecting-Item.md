@@ -10,7 +10,7 @@ documentation: ug
 
 Items can be selected programmatically using the properties `SelectedIndex`, `SelectedItem`.
 
-## SelectedIndex
+## Selecting an item using SelectedIndex
 
 `SelectedIndex` property is used to select an item in `SfCarousel` using the index of item. 
 
@@ -49,7 +49,7 @@ carousel.SelectedIndex = 2;
 ![](SfCarousel-images/SfCarousel-img7.jpeg)
 
 
-## SelectedItem
+## Selecting an item using SelectedItem
 
 SelectedItem property is used to select an item in SfCarousel using the instance of item. 
 
@@ -87,7 +87,7 @@ carousel.SelectedItem = item3;
 
 ![](SfCarousel-images/SfCarousel-img8.jpeg)
 
-## Select Next Item
+## Navigating to next item
 
 `MoveNext` method is used to select next item of the selected item in `SfCarousel`.
 
@@ -101,7 +101,7 @@ carousel.MoveNext();
 
 {% endtabs %}
 
-## Select Previous Item
+## Navigating to previous item
 
 `MovePrevious` method is used to select previous item of the selected item in `SfCarousel`.
 
@@ -115,11 +115,11 @@ carousel.MovePrevious();
 
 {% endtabs %}
 
-## SelectedItemTemplate
+## Customizing the selected item
 
 `SelecteItemTemplate` property is used to apply a template for the selected item
 
-## Refresh
+## Refresh the layout
 
 `Refresh` method is used to refresh the layout of `SfCarousel` control.
 

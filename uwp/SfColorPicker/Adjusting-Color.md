@@ -9,13 +9,13 @@ documentation: ug
 
 # Adjusting colors
 
-## HueThumb
+## Adjusting the hue value
 
 `SfColorPicker` allows to change the hue value by sliding the HueThumb. In WinRT, holding the thumb shows the color tool tip that indicates the current hue color.
 
 ![](Adjusting-Color-images/Adjusting-Color-img1.jpeg)
 
-## RGB Sliders
+## Adjusting RGB values
 
 RadialSliders are provided to change the RGB values. Sliders can be enabled by touching the R, G & B values.
 

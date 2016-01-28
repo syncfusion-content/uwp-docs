@@ -15,7 +15,7 @@ documentation: ug
 * Half
 * Exact
 
-## Standard
+## Rating the item completely
 
 
 Rating item fills completely when pointer enters the rating item. In the following example, 2.3 has been set as the value and the rating item has been filled completely.
@@ -48,7 +48,7 @@ rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Standard;
 ![](Rating-Precisions-images/Rating-Precisions-img1.jpeg)
 
 
-## Half
+## Rating the item partially
 
 Rating item fills partially when pointer enters the rating item. In the following example, 2.3 has been set as the value and the rating item has been filled partially.
 
@@ -80,7 +80,7 @@ rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Half;
 ![](Rating-Precisions-images/Rating-Precisions-img2.jpeg)
 
 
-## Exact
+## Rating the item exactly
 
 Rating item fills exactly when the pointer enters the rating item. In the following example, 2.3 has been set as the value and the rating item is filled to the exact value.
 

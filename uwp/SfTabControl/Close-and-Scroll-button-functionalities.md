@@ -139,7 +139,7 @@ private void tabControl_NextTab(object Sender, ScrollTabEventArgs args)
 
 A tab item can be closed with the help of close button in tab header or a common close button.
 
-## Setting CanClose
+## Closing a tab item
 
 CanClose property is used to decide whether a tab item can be closed or not even in the existence of common close button. CloseButtonType property has effect in displaying close button even if the CanClose property is set to true.
 

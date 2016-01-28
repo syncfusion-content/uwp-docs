@@ -17,7 +17,7 @@ The default animation used during the selection of carousel items can be customi
 
 * RotationAngle
 
-## Duration
+## Change animation duration
 
 The time taken to move a selected item from its position to center of the control is specified by `Duration` property.
 
@@ -43,7 +43,7 @@ carousel.Duration =  TimeSpan.FromSeconds(1.0);
 
 {% endtabs %}
 
-## EasingFunction
+## Customizing the item selection animation
 
 The animation effect on selecting items can be customized with `EasingFunction` property.
 
@@ -84,7 +84,7 @@ carousel.EasingFunction = new BackEase() { EasingMode = EasingMode.EaseInOut, Am
 
 {% endtabs %}
 
-## RotationAngle
+## Rotate items
 
 `RotationAngle` property is used to rotate all the items in carousel control to a specified angle.
 

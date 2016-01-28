@@ -15,18 +15,3 @@ documentation: ug
 
 * Contains nearly 600 predefined solid colors
 * Selected color can be changed by Mouse interaction
-
-## Visual Structure
-
-WinRT
-
-![](SfColorPalette-images/SfColorPalette-img1.jpeg)
-
-
-Windows Phone
-
-![](SfColorPalette-images/SfColorPalette-img2.jpeg)
-
-
-![](SfColorPalette-images/SfColorPalette-img3.jpeg)
-

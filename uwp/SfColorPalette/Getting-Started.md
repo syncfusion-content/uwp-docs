@@ -9,17 +9,17 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the `SfColorPalette` control.
+This section explains how to create a color palette with predefined swatches using `SfColorPalette` control.
 
 ## Creating SfColorPalette control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfSfColorPickers.UWP
+1. Syncfusion.SfColorPickers.UWP
 2. Syncfusion.SfRadialMenu.UWP
 3. Syncfusion.SfShared.UWP
 
-### Adding SfColorPalette control through XAML Code
+### Adding SfColorPalette control through XAML
 
 1.Include the namespace for Syncfusion.SfSfColorPickers.UWP assembly in MainPage.xaml
 
@@ -49,7 +49,7 @@ xmlns:media="using:Syncfusion.UI.Xaml.Controls.Media">
 
 {% endtabs %}
 
-### Adding SfColorPalette control through C# Code
+### Adding SfColorPalette control through Code-behind
 
 1.Include the namespace for Syncfusion. SfSfColorPickers.UWP assembly in MainPage.xaml.cs
 
@@ -75,3 +75,4 @@ SfColorPalette colorPalette = new SfColorPalette();
 
 {% endtabs %}
 
+![](SfColorPalette-images/SfColorPalette-img1.jpeg)

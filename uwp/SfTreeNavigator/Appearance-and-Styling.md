@@ -9,35 +9,7 @@ documentation: ug
 
 # Appearance and Styling
 
-## TreeNavigator Header
-
-`SfTreeNavigator` has support to display a header text using Header property.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<navigation:SfTreeNavigator>
-
-<navigation:SfTreeNavigatorItem Header="WPF"/>
-
-<navigation:SfTreeNavigatorItem Header="Silverlight" />
-
-<navigation:SfTreeNavigatorItem Header="Windows Phone"/>
-
-<navigation:SfTreeNavigatorItem Header="WinRT"/>
-
-<navigation:SfTreeNavigatorItem Header="Universal"/>
-
-</navigation:SfTreeNavigator>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
-
-## TreeNavigator Header Template
+## Customizing TreeNavigator Header
 
 `HeaderTemplate` property of SfTreeNavigator is used to apply a customized template for `SfTreeNavigator` header.
 
@@ -75,7 +47,6 @@ documentation: ug
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
 
-## TreeNavigator Header Style
 
 `HeaderStyle` property of SfTreeNavigator is used to customize the `SfTreeNavigator` header.
 
@@ -154,7 +125,7 @@ documentation: ug
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img4.jpeg)
 
-## TreeNavigator HeaderItem Style
+## Customizing TreeNavigatorItem Header
 
 The stacked headers in Extended navigation mode can be styled as follows:
 
@@ -200,7 +171,7 @@ The stacked headers in Extended navigation mode can be styled as follows:
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
 
-## Accent Brush
+## Customizing the control hotspot
 
 `AccentBrush` property is used to change the selected item background color.
 

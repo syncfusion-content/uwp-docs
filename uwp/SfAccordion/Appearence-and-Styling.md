@@ -40,6 +40,53 @@ accordion.AccentBrush = new SolidColorBrush() { Color = Windows.UI.Colors.Red };
 
 {% endtabs %}
 
-![](Appearence-and-Styling-images/Appearence-and-Styling-img1.jpeg)
+![](Appearence-and-Styling-images/appearence-and-styling-img1.jpeg)
 
+
+## Customizing accordion item
+
+`ItemContainerStyle` property is used to define the style for SfAccordionItems.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfAccordion SelectionMode="OneOrMore">
+
+<layout:SfAccordion.ItemContainerStyle>
+
+<Style TargetType="layout:SfAccordionItem">
+
+<Setter Property="Background" Value="CornflowerBlue"/>
+
+</Style>
+
+</layout:SfAccordion.ItemContainerStyle>
+
+<layout:SfAccordionItem Header="WPF"
+                        Content="Essential Studio for WPF"/>
+
+<layout:SfAccordionItem Header="Silverlight"
+                        Content="Essential Studio for Silverlight"/>
+						
+<layout:SfAccordionItem Header="WinRT"
+                        Content="Essential Studio for WinRT"/>
+						
+<layout:SfAccordionItem Header="Windows Phone"
+                        Content="Essential Studio for Windows Phone"/>
+						
+<layout:SfAccordionItem Header="Universal"
+                        Content="Essential Studio for Universal"/>
+						
+</layout:SfAccordion>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Appearence-and-Styling-images/appearence-and-styling-img2.jpeg)
+
+## Customizing accordion button
+
+`AccordionButtonStyle` property is used to style the expander button which contains the header and expander button
 

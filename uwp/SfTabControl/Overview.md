@@ -18,19 +18,5 @@ SfTabControl is similar to dividers in a notebook or the labels in a file cabine
 * Option to choose selection style for tab item header  
 * Built-in tab list support
 
-## Visual structure
-
-
-1.WinRT
-
-![](Overview-images/Overview-img1.jpeg)
-
-
-2.Windows phone
-
-![](Overview-images/Overview-img2.jpeg)
-
-
-![](Overview-images/Overview-img3.jpeg)
 
 

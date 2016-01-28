@@ -17,27 +17,17 @@ documentation: ug
 
 Show images with flip transition effect 
 
-### Visual structure
+## Getting Started
 
-1.WinRT
+This section explains how to create mosaic picture with split transition using `SfSplitMosaicTile`.  
 
-![](SfSplitMosaicTile-images/SfSplitMosaicTile-img1.jpeg)
-
-2.Windows phone
-
-![](SfSplitMosaicTile-images/SfSplitMosaicTile-img2.jpeg)
-
-![](SfSplitMosaicTile-images/SfSplitMosaicTile-img3.jpeg)
-
-## Creating SfSplitMosaicTile control
+### Adding SfSplitMosaicTile control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfHubTile.UWP
+* Syncfusion.SfHubTile.UWP
 
-2. Syncfusion.SfShared.UWP
-
-### Adding SfSplitMosaicTile control through XAML Code
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfHubTile.UWP assembly in MainPage.xaml
 
@@ -67,31 +57,47 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 {% endtabs %}
 
-### Adding SfSplitMosaicTile control through C# Code
 
-1.Include the namespace for Syncfusion. SfHubTile.UWP assembly in MainPage.xaml.cs
+### Adding images to SfSplitMosaicTile
+
+Store the images in project and set the properties `Header` and `ImageList` as given below:
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-using Syncfusion.UI.Xaml.Controls.Notification;
+<notification:SfSplitMosaicTile Width="183" Height="173"
+                                Header="Split mosaic tile">
+								
+<notification:SfSplitMosaicTile.ImageList>
+
+<notification:ImageList>
+
+<x:String>Assets/emp10.png</x:String>
+<x:String>Assets/emp11.png</x:String>
+<x:String>Assets/emp12.png</x:String>
+<x:String>Assets/emp13.png</x:String>
+<x:String>Assets/emp1.png</x:String>
+<x:String>Assets/emp2.png</x:String>
+<x:String>Assets/emp3.png</x:String>
+<x:String>Assets/emp4.png</x:String>
+<x:String>Assets/emp5.png</x:String>
+<x:String>Assets/emp6.png</x:String>
+<x:String>Assets/emp7.png</x:String>
+<x:String>Assets/emp8.png</x:String>
+<x:String>Assets/emp9.png</x:String>
+
+</notification:ImageList>
+
+</notification:SfSplitMosaicTile.ImageList>
+
+</notification:SfSplitMosaicTile>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-2.Now add the SfSplitMosaicTile control with an optimal name 
-
-{% tabs %}
-
-{% highlight C# %}
-
-SfSplitMosaicTile splitMosaicTile = new SfSplitMosaicTile();
-
-{% endhighlight %}
-
-{% endtabs %}
+![](SfSplitMosaicTile-images/SfSplitMosaicTile-img1.jpeg)
 
 ## Configuring the tile
 
@@ -125,9 +131,9 @@ splitMosaicTile.Header = "Mosaic Tile";
 
 ## Adding image collection
 
-### IsBitmapImageList 
+### Specifying BitmapImage or Image URLs
 
-`BitmapImageList` property is used to specify whether the image location is given as url or image source. Image sources are preferred when images are retrieved from folders like Downloads, Picture library, Video library, Document library and Music library.
+`IsBitmapImageList` property is used to specify whether the image location is given as url or image source. Image sources are preferred when images are retrieved from folders like Downloads, Picture library, Video library, Document library and Music library.
 
 ### Setting Image URLs
 
@@ -137,42 +143,31 @@ splitMosaicTile.Header = "Mosaic Tile";
 
 {% highlight XAML %}
 
-<Page xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
+<Page xmlns:x=http://schemas.microsoft.com/winfx/2006/xaml
+      xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-<notification:SfSplitMosaicTile Header="Split mosaic tile" x:Name="splitMosaicTile">
-
+<notification:SfSplitMosaicTile Header="Split mosaic tile"
+                                x:Name="splitMosaicTile"
+								IsBitmapImageList="false" >
+								
 <notification:SfSplitMosaicTile.ImageList>
 
 <notification:ImageList>
 
 <x:String>Assets/emp10.png</x:String>
-
 <x:String>Assets/emp11.png</x:String>
-
 <x:String>Assets/emp12.png</x:String>
-
 <x:String>Assets/emp13.png</x:String>
-
 <x:String>Assets/emp1.png</x:String>
-
 <x:String>Assets/emp2.png</x:String>
-
 <x:String>Assets/emp3.png</x:String>
-
 <x:String>Assets/emp4.png</x:String>
-
 <x:String>Assets/emp5.png</x:String>
-
 <x:String>Assets/emp6.png</x:String>
-
 <x:String>Assets/emp7.png</x:String>
-
 <x:String>Assets/emp8.png</x:String>
-
 <x:String>Assets/emp9.png</x:String>
 
 </notification:ImageList>
@@ -184,6 +179,7 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 </Grid>
 
 </Page>
+
 
 {% endhighlight %}
 
@@ -233,7 +229,9 @@ splitMosaicTile.ImageList.Add("Assets/emp9.png");
 
 {% highlight XAML %}
 
-<notification:SfSplitMosaicTile Header="Split mosaic tile" x:Name="splitMosaicTile"/>
+<notification:SfSplitMosaicTile Header="Split mosaic tile"
+                                IsBitmapImageList="true"
+								x:Name="splitMosaicTile"/>
 
 {% endhighlight %}
 

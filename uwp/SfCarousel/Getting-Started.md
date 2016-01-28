@@ -9,17 +9,15 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to create the `SfCarousel` control.
+This section explains how to create a preview of slides using SfCarousel control.
 
-## Creating SfCarousel control
+## Adding SfCarousel control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
-1. Syncfusion. SfCarousel.UWP
+* Syncfusion. SfCarousel.UWP
 
-2. Syncfusion.SfShared.UWP
-
-### Adding SfCarousel control through XAML Code
+* Syncfusion.SfShared.UWP
 
 1.Include the namespace for Syncfusion.SfCarousel.UWP assembly in MainPage.xaml
 
@@ -49,28 +47,68 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-### Adding SfCarousel control through C# Code
+## Adding SfCarouselItems to the control
 
-1.Include the namespace for Syncfusion. SfCarousel.UWP assembly in MainPage.xaml.cs
+Here SfCarouselItems are added as the children of the SfCarousel.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-using Syncfusion.UI.Xaml.Controls.Layout;
+<layout:SfCarousel x:Name="carousel">
+
+<layout:SfCarouselItem/>
+
+<layout:SfCarouselItem/>
+
+<layout:SfCarouselItem/>
+
+<layout:SfCarouselItem/>
+
+</layout:SfCarousel>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-2.Now add the SfCarousel control with a required optimal name 
+## Setting content for CarouselItems
+
+Content property helps to set the content for SfCarouselItem. `SfCarouselItem` is a ContentControl so that any object can be added as its content. Here images are set as the content of carousel items.
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight XAML %}
 
-SfCarousel carousel = new SfCarousel();
+<layout:SfCarousel x:Name="carousel">
+
+<layout:SfCarouselItem >
+
+<Image Source="Assets/1.jpg" Stretch="Uniform"/>
+
+</layout:SfCarouselItem>
+
+<layout:SfCarouselItem >
+
+<Image Source="Assets/2.jpg" Stretch="Uniform"/>
+
+</layout:SfCarouselItem>
+
+<layout:SfCarouselItem >
+
+<Image Source="Assets/3.jpg" Stretch="Uniform"/>
+
+</layout:SfCarouselItem>
+
+<layout:SfCarouselItem >
+
+<Image Source="Assets/4.jpg" Stretch="Uniform"/>
+
+</layout:SfCarouselItem>
+
+</layout:SfCarousel>
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![](SfCarousel-images/SfCarousel-img1.jpeg)

@@ -11,7 +11,7 @@ documentation: ug
 
 Navigating between months are much simpler with touch. Navigation buttons are also provided.
 
-## Show Navigation Button
+## Enabling navigation button
 
 By default, navigation buttons are collapsed. Navigation button support can be enabled or disabled using the `ShowNavigationButton` property.
 
@@ -40,7 +40,7 @@ calendar.ShowNavigationButton = true;
 ![](SfCalendar-images/SfCalendar-img12.jpeg)
 
 
-## PreviousMonth method
+## Navigating to previous month
 
 Month navigation can also be done programmatically by invoking `PreviousMonth` method.
 
@@ -56,7 +56,7 @@ calendar.PreviousMonth();
 {% endtabs %}
 
 
-## NextMonth method
+## Navigating to next month
 
 Month navigation can also be done programmatically by invoking `NextMonth` method
 
@@ -70,7 +70,7 @@ calendar.NextMonth();
 
 {% endtabs %}
 
-## PreviousScrollButtonClicked event
+## Notifying the previous button click
 
 `PreviousScrollButtonClicked` event is fired when the previous button is clicked.
 
@@ -99,7 +99,7 @@ private void calendar_PreviousScrollButtonClicked(object sender, SelectionChange
 
 {% endtabs %}
 
-## NextScrollButtonClicked event
+## Notifying the next button click
 
 `NextScrollButtonClicked` event is fired when the next button is clicked.
 
