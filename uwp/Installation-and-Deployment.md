@@ -22,31 +22,17 @@ The following procedure illustrates how to install Essential Studio.
 * Select the Run Dashboard check box to launch the Dashboard after installing.
 * Click Finish. Essential Studio is installed in system and the Syncfusion Essential Studio [Dashboard](http://help.syncfusion.com/ug/common/documents/dashboard.htm#) is launched automatically.
 
-## Nuget Installation
+## NuGet Installation
 
-Refer to the Syncfusion NuGet Packages from the Visual Studio applications. The following steps helps to add the reference of the Syncfusion assemblies in the Project References.
+Syncfusion assemblies are packed by NuGet Packages. Utilizing Syncfusion NuGet Packages are one of the smart way to use Syncfusion controls in application. Please refer the below link to get the Syncfusion UWP NuGet Packages.
 
-1.Right-click the project in Solution Explorer and choose “Manage NuGet Packages”.
+http://nuget.syncfusion.com/package/universalwindows
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img1.jpeg)
+Please refer the below link to know more about Syncfusion NuGet Packages Installation and Configuration to Visual Studio.
 
+[Syncfusion NuGet Configuration](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#nuget-configuration-in-visual-studio)
 
-2.Click the “Settings” icon. Refer the following screenshot for more information.
-
-![](Installation-and-Deployment_images/Installation-and-Deployment_img2.jpeg)
-
-
-3.Press “Add” button. Modify the name and browse the location of Nuget. Then click “Update” button to add the Nuget assemblies.
-
-![](Installation-and-Deployment_images/Installation-and-Deployment_img3.jpeg)
-
-
-4.Click “Ok” button. Select the required package and click “Install” button to install the package as shown in the following screenshot. 
-
-![](Installation-and-Deployment_images/Installation-and-Deployment_img4.jpeg)
-
-
-5.After successful installation, the package will be listed in installed packages filter and the assemblies are added in project references.
+[Syncfusion NuGet Installation](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#nuget-installation)
 
 ## Commandline Installation
 
