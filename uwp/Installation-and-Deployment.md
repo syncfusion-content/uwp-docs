@@ -26,7 +26,7 @@ The following procedure illustrates how to install Essential Studio.
 
 Syncfusion assemblies are packed by NuGet Packages. Utilizing Syncfusion NuGet Packages are one of the smart way to use Syncfusion controls in application. Please refer the below link to get the Syncfusion UWP NuGet Packages.
 
-http://nuget.syncfusion.com/package/universalwindows
+<http://nuget.syncfusion.com/package/universalwindows>
 
 Please refer the below link to know more about Syncfusion NuGet Packages Installation and Configuration to Visual Studio.
 
