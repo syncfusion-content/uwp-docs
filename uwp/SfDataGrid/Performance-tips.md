@@ -1,0 +1,124 @@
+---
+layout: post
+title: Performance tips of SfDataGrid control for UWP 
+description: Performance tips of SfDataGrid control for UWP
+platform: uwp
+control: SfDataGrid
+documentation: ug
+---
+
+# Performance tips
+
+SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates. 
+
+## Improving loading performance
+
+You can load the large amount of data in less time using built-in `Data Virtualization`.
+
+## Improving performance when doing batch updates
+
+SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
+
+1. Invoke `SfDataGrid.View.BegingInit` before update the data.
+2. After that update underlying collection.
+3. Then call `SfDataGrid.View.EndInit` method, to refresh the View and UI.  Now summaries, sort order and groups will be updated as expected. 
+
+{% tabs %}
+{% highlight c# %}
+//Batch Updates
+//Suspends data manipulation operations in View
+this.dataGrid.View.BeginInit();
+
+// Add, remove and update the underlying collection. 
+
+//Resumes data manipulation operations and refresh the View.
+this.dataGrid.View.EndInit();
+{% endhighlight %}
+{% endtabs %}
+
+## Adding columns efficiently
+
+SfDataGrid allows you to add more number of columns to `SfDataGrid.Columns` collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance.
+
+You can improve the performance while adding, removing columns by suspending all the UI updates using `Suspend` and resume the updates after adding columns using `Resume` methods. You have to refresh the UI using `RefreshColumns` method.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Grid.Helpers;
+
+this.dataGrid.Columns.Suspend();
+// Add or Remove More columns
+this.dataGrid.Columns.Resume();
+this.dataGrid.RefreshColumns();
+{% endhighlight %}
+{% endtabs %}
+
+## Optimizing summary calculation performance
+
+SfDataGrid optimizes the summary calculation when updating the underlying collection. It calculates the summaries optimistically by listening the data updates and using old calculated summary values without doing complete recalculation. 
+
+Below sections explains how SfDataGrid handles the updates efficiently for different data operations and what you have to do in application for the same.
+
+### Adding Record
+
+SfDataGrid considers only the `added` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently. 
+
+### Removing a Record
+
+SfDataGrid considers only the `removed` item value and the current summary value instead of recalculating the summary based on all records. Based on these two values recalculates the summary efficiently.
+
+### Property Change in a record
+
+SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanging.aspx) and [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx# "") interface to your Data Model.
+
+Below code to enable summary calculation optimization by inheriting [INotifyPropertyChanging](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanging.aspx) and [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.aspx) interface to Data Model.
+
+{% tabs %}
+{% highlight c# %}
+public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
+{
+    private int orderID;
+    public int OrderID
+    {
+        get { return orderID; }
+        set 
+        {
+            this.RaisePropertyChanging("OrderID");
+            orderID = value;
+            this.RaisePropertyChanged("OrderID");
+        }
+    }
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+    }
+    public event PropertyChangedEventHandler PropertyChanged;
+    public void RaisePropertyChanging(string propName)
+    {
+        if (this.PropertyChanging != null)
+            this.PropertyChanging(this, new PropertyChangingEventArgs(propName));
+    }
+    public event PropertyChangingEventHandler PropertyChanging;
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Improving UI Filter loading time
+
+SfDataGrid allows you to open filter popup in less time by setting `CanGenerateUniqueItems` property to false. By default `GridFilterControl` loads unique items in popup which takes more time to load.
+`CanGenerateUniqueItems` property loading `TextBox` to filter instead of `ComboBox` in advanced filter UI View.
+
+{% tabs %}
+{% highlight xaml %}
+<Window.Resources>    
+    <Style TargetType="syncfusion:GridFilterControl">
+        <Setter Property="FilterMode" Value="AdvancedFilter" />
+    </Style>
+
+    <Style TargetType="syncfusion:AdvancedFilterControl">
+        <Setter Property="CanGenerateUniqueItems" Value="False" />
+    </Style>
+</Window.Resources>
+{% endhighlight %}
+{% endtabs %}
