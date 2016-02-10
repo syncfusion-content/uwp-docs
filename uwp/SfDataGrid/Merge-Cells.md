@@ -267,16 +267,16 @@ Master- details view allows you to merge the range of cells using the `QueryCov
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid" 
-                        SelectionUnit="Cell" 
-                        NavigationMode="Cell"
-                        AutoGenerateColumns="True"   ColumnSizer="Star"
-                        ItemsSource="{Binding Orders}">
+                       SelectionUnit="Cell" 
+                       NavigationMode="Cell"
+                       AutoGenerateColumns="True"   ColumnSizer="Star"
+                       ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.DetailsViewDefinition>
         <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
             <syncfusion:GridViewDefinition.DataGrid>
                 <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"                                                                                                                                             
-                                        AutoGenerateColumns="True"                                             
-                                        QueryCoveredRange="FirstLevelNestedGrid_QueryCoveredRange"
+                                       AutoGenerateColumns="True"                                             
+                                       QueryCoveredRange="FirstLevelNestedGrid_QueryCoveredRange"
                                         />
             </syncfusion:GridViewDefinition.DataGrid>
         </syncfusion:GridViewDefinition>
