@@ -139,6 +139,8 @@ SfDataGrid control can be added to the application by dragging it from Toolbox a
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
+
+
 ### Adding control manually in XAML
 
 In order to add control manually in XAML, do the below steps,
@@ -355,6 +357,8 @@ Now, run the application and you can expect the see the below output,
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
+![](Getting-Started_images/Getting-Started_img3.png)
+
 ## Defining Columns
 
 By default, the SfDataGrid control generates the columns automatically when value assigned to `SfDataGrid.ItemsSource` property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
@@ -385,25 +389,7 @@ GridNumericColumn
 <td>
 Property of type Int or Double
 </td>
-</tr>
-<tr>
-<td>
-GridCurrencyColumn
-</td>
-<td>
-Property with Currency DataType attribute. 
-<b>[DataType(DataType.Currency)]</b>
-</td>
-</tr>
-<tr>
-<td>
-GridMaskColumn
-</td>
-<td>
-Property with PhoneNumer DataType attribute.
-<b>[DataType(DataType.PhoneNumber)]</b>
-</td>
-</tr>
+</tr>   
 <tr>
 <td>
 GridDateTimeColumn
@@ -569,7 +555,10 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img4.png)
+
+
+![](Getting-Started_images/Getting-Started_img5.png)
 
 You can customize sorting by handling the `SfDataGrid.SortColumnsChanging` and `SfDataGrid.SortColumnsChanged` events. To cancel the default sort, set the Cancel property to true in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -601,13 +590,18 @@ Grouping can be enabled by setting `SfDataGrid.ShowGroupDropArea` property, wher
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img6.png)
+
+![](Getting-Started_images/Getting-Started_img7.png)
 
 ### Filtering
 
 Filtering can be enabled by setting `SfDataGrid.AllowFiltering` property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling `SfDataGrid.FilterChanging` and `SfDataGrid.FilterChanged` events.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![](Getting-Started_images/Getting-Started_img8.png)
+
+
+![](Getting-Started_images/Getting-Started_img9.png)
 
 ## Editing
 
