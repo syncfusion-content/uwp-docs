@@ -43,7 +43,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Column Filtering
+### Column Filtering
 
 Column filtering is achieved by using `GridColumn.FilterPredicates` property and adding `FilterPredicate` to it. 
 
@@ -260,13 +260,13 @@ When the `DateTime` type value is bound to the `GridColumn`, then Date Filters a
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/Filtering_img5.png" Height=350 />
+<img src="Filtering_images/Filtering_img5.png" />
 </td>
 <td>
-<img src="Filtering_images/Filtering_img6.png" Height=350/>
+<img src="Filtering_images/Filtering_img6.png" />
 </td>
 <td>
-<img src="Filtering_images/Filtering_img7.png" Height=350/>
+<img src="Filtering_images/Filtering_img7.png" />
 </td>
 </tr>
 <tr>
@@ -573,7 +573,7 @@ void dataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEven
 
 ### Changing AdvancedFilter type while loading dynamic ItemsSource  
 
-By default, TextFilters will be loaded for the columns if ItemsSource is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx# "").  If you want to load `NumberFilter` or `DateFilter` based on column values, you need to use `ColumnMemberType` property.
+By default, TextFilters will be loaded for the columns if ItemsSource is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx).  If you want to load `NumberFilter` or `DateFilter` based on column values, you need to use `ColumnMemberType` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -659,14 +659,19 @@ Sort Options can be collapsed by setting `SortOptionVisibility` property in `Gri
 ### Customizing Sort Options text
 
 Sort Options text can be customized by using `AscendingSortString` and `DescendingSortString` properties in `GridFilterControl`.
-{% tabs %}
-{% highlight xaml %}
-<Style TargetType="syncfusion:GridFilterControl" x:Key="columnFilterStyle">
-       <Setter Property="AscendingSortString" Value="Sort Ascending" />
-       <Setter Property="DescendingSortString" Value="Sort Descending" />
-</Style>
 
-<syncfusion:GridTextColumn FilterPopupStyle="{StaticResource columnFilterStyle}" MappingName="OrderID" />
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.FilterItemsPopulating += DataGrid_FilterItemsPopulating;
+
+void DataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEventArgs e)
+{
+    if(e.Column.MappingName=="CustomerName")
+    {
+        e.FilterControl.AscendingSortString = "Sort Ascending";
+        e.FilterControl.DescendingSortString = "Sort Descending";
+    }           
+}
 {% endhighlight %}
 {% endtabs %}
 
