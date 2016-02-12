@@ -411,7 +411,7 @@ if (this.dataGrid.View.IsAddingNew)
 
 ### Validating AddNewRow
 
-You can validate the data in AddNewRow like other data rows through [built-in validation](http://115.249.201.211:9090/uwp/sfdatagrid/data-validation#built-in-validations) or [custom validation](http://115.249.201.211:9090/uwp/sfdatagrid/data-validation#custom-validation-through-events). 
+You can validate the data in AddNewRow like other data rows through [built-in validation](http://help.syncfusion.com/uwp/sfdatagrid/data-validation#built-in-validations) or [custom validation](http://help.syncfusion.com/uwp/sfdatagrid/data-validation#custom-validation-through-events). 
 
 Here, AddNewRow is validated using `RowValidating` event by setting `RowValidatingEventArgs.IsValid` to `false` which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.
   
