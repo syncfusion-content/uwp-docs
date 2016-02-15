@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Dealing with Ticks of SfRadialSlider control for UWP
+title: Dealing with Ticks of SfRadialSlider control for UWP
 description: Dealing with Ticks of SfRadialSlider control for UWP 
 platform: uwp
 control: SfRadial Slider 
