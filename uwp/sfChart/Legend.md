@@ -9,9 +9,9 @@ documentation: ug
 
 # Legend
 
-Legend provides metadata which helps for identifying elements in chart like [ChartSeries](http://help.syncfusion.com/uwp/sfchart/series), 
-[TechnicalIndicators](http://help.syncfusion.com/uwp/sfchart/technical-indicators), and 
-[Trendlines](http://help.syncfusion.com/uwp/sfchart/trendlines). 
+Legend provides metadata which helps for identifying elements in chart like [series](http://help.syncfusion.com/uwp/sfchart/series), 
+[indicators](http://help.syncfusion.com/uwp/sfchart/technical-indicators), and 
+[trendlines](http://help.syncfusion.com/uwp/sfchart/trendlines). 
 You can define the legend using the following code example.
 
 {% highlight xml %}
