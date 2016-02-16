@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intermediate Value of SfRadialSlider control for UWP
-description:Explains about Intermediate Value of SfRadialSlider control for UWP
+description: Explains about Intermediate Value of SfRadialSlider control for UWP
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
