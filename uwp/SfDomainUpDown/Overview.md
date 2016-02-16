@@ -1,6 +1,6 @@
 ---
 layout: post
-title:Overview of SfDomainUpDown control for UWP
+title: Overview of SfDomainUpDown control for UWP
 description: Overview of SfDomainUpDown control for UWP
 platform: uwp
 control: SfDomainUpDown
