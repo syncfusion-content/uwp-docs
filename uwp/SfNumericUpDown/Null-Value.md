@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Null Value options of SfNumericUpDown control for UWP
-description:Null Value options of SfNumericUpDown control for UWP
+description: Null Value options of SfNumericUpDown control for UWP
 platform: uwp
 control: SfNumeric UpDown
 documentation: ug

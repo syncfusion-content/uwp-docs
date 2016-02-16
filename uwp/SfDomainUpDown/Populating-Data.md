@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Data of SfDomainUpDown control for UWP
-description:Populating Data of SfDomainUpDown control for UWP
+description: Populating Data of SfDomainUpDown control for UWP
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
