@@ -27,7 +27,7 @@ The following code example and screen shot illustrate the usage of the AllowNull
 
 ![](Features_images/Features_img13.png)
 
-# Setting the Input Scope for the On-Screen Keyboard
+## Setting the Input Scope for the On-Screen Keyboard
 
 
 To set the input scope of the on-screen keyboard, use the InputScope property. When the InputScope property set to Number, only the numeric keypad will be visible in the on-screen keyboard
