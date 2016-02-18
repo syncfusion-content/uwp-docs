@@ -57,7 +57,7 @@ This can be customized using the `LegendIcon` property in any series as in below
 
 ![](Legend_images/legendicon_1.png)
 
-
+The following properties are used to customize the legend icons.
 
 * `IconWidth` - Gets or sets the double value that represents the legend icon(s) width.
 * `IconHeight` - Gets or sets the double value that represents that legend icon(s) height.
