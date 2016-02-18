@@ -3,7 +3,7 @@ layout: post
 title: Deals with the DropDown Customization of the SfDatePicker control for UWP
 description: Explains about DropDown Customization of the SfDatePicker control for UWP
 platform: uwp
-control:  SfDropDownButton
+control:  SfDatePicker
 documentation: ug
 ---
 # Customizing DropDown
