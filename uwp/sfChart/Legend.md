@@ -58,57 +58,13 @@ This can be customized using the `LegendIcon` property in any series as in below
 ![](Legend_images/legendicon_1.png)
 
 
-**Properties**
 
-<table>
-<tr>
-<th>
-Name
-</th>
-<th>
-Description</th>
-</tr>
-<tr>
-<td>
-`IconWidth`
-</td>
-<td>
-Gets or sets the double value that represents the legend icon(s) width.
-</td>
-</tr>
-<tr>
-<td>
-`IconHeight`
-</td>
-<td>
-Gets or sets the double value that represents that legend icon(s) height.
-</td>
-</tr>
-<tr>
-<td>
-`IconVisibility`
-</td>
-<td>
-Gets or sets the Visibility of the legend icon.
-</td>
-</tr>
-<tr>
-<td>
-`ItemMargin`
-</td>
-<td>
-Gets or sets the margin for the legend items.
-</td>
-</tr>
-<tr>
-<td>
-`CornerRadius`
-</td>
-<td>
-Gets or sets the corner radius of the legend.
-</td>
-</tr>
-</table>
+* `IconWidth` - Gets or sets the double value that represents the legend icon(s) width.
+* `IconHeight` - Gets or sets the double value that represents that legend icon(s) height.
+* `IconVisibility` - Gets or sets the Visibility of the legend icon.
+* `ItemMargin` - Gets or sets the margin for the legend items.
+* `CornerRadius` -Gets or sets the corner radius of the legend.
+
 The following code example illustrates the customization of legend icon.
 
 {% highlight xml %}
