@@ -16,7 +16,6 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 {% highlight xaml %}
 
 
-
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
         <syncfusion:SfDatePicker  VerticalAlignment="Center"
