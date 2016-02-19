@@ -1,0 +1,293 @@
+---
+layout: post
+title: Getting Started documentation of SfRibbon control for UWP
+description: Getting Started documentation of SfRibbon control for UWP
+platform: uwp
+control: SfRibbon (Touch Ribbon)
+documentation: ug
+---
+
+# Getting Started
+
+This section explains you on how to add SfRibbon in your application.
+
+## Add Ribbon
+
+Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+
+* Syncfusion.SfRibbon.UWP
+
+1. Include the namespace for Syncfusion.SfRibbon.UWP assembly in MainPage.xaml
+
+{% highlight xaml %}
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
+
+
+
+{% endhighlight %}
+
+
+ 2.Now add the `SfRibbon` control with a required optimal name using the included namespace
+
+{% highlight xaml %}
+
+<Page xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
+
+<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+<Ribbon:SfRibbon x:Name="_ribbon"/>
+
+</Grid>
+
+</Page>
+
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img1.png](Getting-Started_images/Getting-Started_img1.jpeg)
+
+
+## Add Ribbon Tab
+
+SfRibbon control accept RibbonTab as children.The following code example illustrates on how to add RibbonTab 
+
+{% highlight xaml %}
+<Page xmlns:ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
+
+<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+<ribbon:SfRibbon x:Name="_ribbon">
+
+<ribbon:SfRibbonTab Caption="Home"/>
+
+<ribbon:SfRibbonTab Caption="Insert"/>
+
+</ribbon:SfRibbon>
+
+</Grid>
+
+</Page>
+
+
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRibbon _ribbon = new SfRibbon();
+
+_ribbon.Items.Add(new SfRibbonTab() { Caption = "Home" });
+
+_ribbon.Items.Add(new SfRibbonTab() { Caption = "Insert" });
+
+
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img2.png](Getting-Started_images/Getting-Started_img2.jpeg)
+
+
+## Add Ribbon Bar
+
+RibbonTab accepts RibbonBar as children, here five RibbonBar Controls are added inside “HOME” RibbonTab
+
+{% highlight xaml %}
+
+<Page xmlns:ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
+
+<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+<ribbon:SfRibbon x:Name="_ribbon">
+
+<ribbon:SfRibbonTab Caption="Home">
+
+<ribbon:SfRibbonBar  Header="New"/>
+
+<ribbon:SfRibbonBar  Header="Delete"/>
+
+</ribbon:SfRibbonTab>
+
+<ribbon:SfRibbonTab Caption="Insert"/>
+
+</ribbon:SfRibbon>
+
+</Grid>
+
+</Page>
+
+
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRibbon _ribbon = new SfRibbon();
+
+SfRibbonTab _ribbonTab = new SfRibbonTab() { Caption = "Home" };
+
+_ribbonTab.Items.Add(new SfRibbonBar() { Header = "New" });
+
+_ribbonTab.Items.Add(new SfRibbonBar() { Header = "Delete" });
+
+_ribbon.Items.Add(_ribbonTab);
+
+_ribbon.Items.Add(new SfRibbonTab() { Caption = "Insert" });
+
+
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img3.png](Getting-Started_images/Getting-Started_img3.jpeg)
+
+
+## Add Ribbon controls to RibbonBar
+
+The following code example illustrates on how to add ribbon controls to the Ribbon bar from code-behind and XAML,
+
+{% highlight xaml %}
+
+<Page xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
+
+<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+<ribbon:SfRibbon x:Name="_ribbon">
+
+<ribbon:SfRibbonTab Caption="Home">
+
+<ribbon:SfRibbonBar>
+
+<ribbon:SfRibbonButton Icon="Assets/Bold.png"/>
+
+</ribbon:SfRibbonBar>
+
+<ribbon:SfRibbonBar>
+
+<ribbon:SfRibbonButton Icon="Assets/Bullets.png"/>
+
+</ribbon:SfRibbonBar>
+
+</ribbon:SfRibbonTab>
+
+<ribbon:SfRibbonTab Caption="Insert"/>
+
+</ribbon:SfRibbon>
+
+</Grid>
+
+</Page>
+
+
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfRibbon _ribbon = new SfRibbon();
+
+SfRibbonTab _ribbonTab = new SfRibbonTab() { Caption = "Home" };
+
+SfRibbonBar _ribbonBar = new SfRibbonBar();
+
+_ribbonBar.Items.Add(new SfRibbonButton() { Icon = new BitmapImage(new Uri("ms-appx:/Assets/Bold.png", UriKind.RelativeOrAbsolute)) });
+
+SfRibbonBar _ribbonBar1 = new SfRibbonBar();
+
+_ribbonBar1.Items.Add(new SfRibbonButton() { Icon = new BitmapImage(new Uri("ms-appx:/Assets/Bullets.png", UriKind.RelativeOrAbsolute)) });
+
+_ribbonTab.Items.Add(_ribbonBar);
+
+_ribbonTab.Items.Add(_ribbonBar1);
+
+_ribbon.Items.Add(_ribbonTab);
+
+_ribbon.Items.Add(new SfRibbonTab() { Caption = "Insert" });
+
+
+
+{% endhighlight %}
+
+Execute the above code to render the following output.
+
+![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img4.png](Getting-Started_images/Getting-Started_img4.jpeg)
+
+
+## Configure QAT
+
+QAT items can be added as follows,
+
+{% highlight xaml %}
+<ribbon:SfRibbon x:Name="_ribbon" QATVisibility="Visible">
+
+<ribbon:SfRibbon.QuickAccessToolBar>
+
+<ribbon:QuickAccessToolBar DisplayItemsCount="3">
+
+<Grid>
+
+<StackPanel Orientation="Horizontal" x:Name="PART_QAT">
+
+<ribbon:SfRibbonButton Icon="Assets/Undo.png"> 
+
+</ribbon:SfRibbonButton>
+
+<ribbon:SfRibbonButton Icon="Assets/Redo.png"> 
+
+</ribbon:SfRibbonButton>
+
+</StackPanel>
+
+</Grid>
+
+</ribbon:QuickAccessToolBar>
+
+</ribbon:SfRibbon.QuickAccessToolBar>
+
+
+
+{% endhighlight %}
+
+You can limit the number of viewable items in QAT by setting DisplayItemsCount property. When the total number of items exceeds DisplayItemsCount, scroll QAT for viewing the items.
+
+![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img5.png](Getting-Started_images/Getting-Started_img5.jpeg)
+
+
+## Configure BackStage
+
+BackStageButton and BackStage TabItems can be added as follows,
+
+{% highlight xaml %}
+<ribbon:SfRibbon.BackStage>
+
+<ribbon:SfBackstage>
+
+<ribbon:SfBackStageTabItem Header="Save" Icon="Assets/Save.png"/>
+
+<ribbon:SfBackStageButton Label="Exit" Icon="Assets/Exit.png"/>
+
+</ribbon:SfBackstage>
+
+</ribbon:SfRibbon.BackStage>
+
+
+
+{% endhighlight %}
+
+![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img6.png](Getting-Started_images/Getting-Started_img6.jpeg)
+
+
