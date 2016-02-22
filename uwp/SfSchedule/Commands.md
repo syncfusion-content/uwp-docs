@@ -59,12 +59,4 @@ By triggering **PasteCommand** of ScheduleCommands, last copied schedule appoint
 
 {% endhighlight %}
 
-## DragAndDropCommand
 
-By triggering **DragAndDropCommand** of ScheduleCommands, the last selected appointment can be moved to drag drop and resize mode, without using context menu. 
-
-{% highlight c# %}
-
-    ScheduleCommands.DragAndDropCommand.Execute(this.Schedule);
-
-{% endhighlight %}

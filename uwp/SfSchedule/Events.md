@@ -87,40 +87,6 @@ Occurs when double tapping the schedule.The **ScheduleDoubleTapped** event handl
     * **Appointment**- gets the appointment, this argument is of type object.
     * **SelectedDate**- gets the appointment current selected Date.
     
-## Appointment Dragging Events
-
-### AppointmentDragging
-
-Occurs when dragging the appointment.The **AppointmentDragging** event handler receives two arguments:
-
-1. The **sender** argument contains the **SfSchedule**. This argument is of type object, but can be cast to the **SfSchedule** type.
-2. **AppointmentDraggingEventArgs** is a class. Via the **AppointmentDraggingEventArgs** you can access the following properties:
-
-    * Appointment - gets appointment to be dragged, this argument is of type object.
-    * From – gets start time of appointment to be dragged, this argument is of type **DateTime**.
-    * To - gets end time of appointment to be dropped, this argument is of type DateTime.
-    * RefreshAppointment - This argument is of type bool.
-
-### AppointmentStartDragging
-
-Occurs when start to drag selected appointment.The **AppointmentStartDragging** event handler receives two arguments:
-
- 1. The **sender** argument contains the **SfSchedule**. This argument is of type object, but can be cast to the **SfSchedule** type.
- 2. **AppointmentStartDraggingEventArgs** is a class. Via the **AppointmentStartDraggingEventArgs** you can access the following properties:
- 
-    * Appointment - gets appointment to be dragged, this argument is of type object.
-
-### AppointmentEndDragging
-
-Occurs when dropped selected the appointment.The **AppointmentEndDragging** event handler receives two arguments:
-
-1. The **sender** argument contains the **SfSchedule**. This argument is of type object, but can be cast to the **SfSchedule** type.
-2. **AppointmentEndDraggingEventArgs** is a class. Via the **AppointmentEndDraggingEventArgs** you can access the following properties:
-
-    * Appointment - gets appointment to be dragged, this argument is of type object.
-    * From – gets start time of appointment to be dragged, this argument is of type **DateTime**.
-    * To - gets end time of appointment to be dropped, this argument is of type DateTime.
-
 ## ScheduleType Changing Event
 
 Occurs when changing the ScheduleType. The **ScheduleTypeChanging** event handler receives two arguments:
