@@ -9,9 +9,7 @@ documentation: ug
 
 # Legend
 
-Legend provides metadata which helps for identifying elements in chart like [series](http://help.syncfusion.com/uwp/sfchart/series), 
-[indicators](http://help.syncfusion.com/uwp/sfchart/technical-indicators), and 
-[trendlines](http://help.syncfusion.com/uwp/sfchart/trendlines). 
+Legend provides metadata which helps for identifying elements in chart like ChartSeries, TechnicalIndicators, and Trendlines. 
 You can define the legend using the following code example.
 
 {% highlight xml %}
@@ -36,7 +34,7 @@ Each legend composed of the following parts:
 
 Represents the symbol associated with each legend item. By default, the legend icon is __Rectangle__. 
 
-This can be customized using the `LegendIcon` property in any series as in below code snippet:
+This can be customized using the **LegendIcon** property in any series as in below code snippet:
 
 {% highlight xml %}
 
@@ -57,14 +55,58 @@ This can be customized using the `LegendIcon` property in any series as in below
 
 ![](Legend_images/legendicon_1.png)
 
-The following properties are used to customize the legend icons.
 
-* `IconWidth` - Gets or sets the double value that represents the legend icon(s) width.
-* `IconHeight` - Gets or sets the double value that represents that legend icon(s) height.
-* `IconVisibility` - Gets or sets the Visibility of the legend icon.
-* `ItemMargin` - Gets or sets the margin for the legend items.
-* `CornerRadius` -Gets or sets the corner radius of the legend.
+**Properties**
 
+<table>
+<tr>
+<th>
+Name
+</th>
+<th>
+Description</th>
+</tr>
+<tr>
+<td>
+IconWidth
+</td>
+<td>
+Gets or sets the double value that represents the legend icon(s) width.
+</td>
+</tr>
+<tr>
+<td>
+IconHeight
+</td>
+<td>
+Gets or sets the double value that represents that legend icon(s) height.
+</td>
+</tr>
+<tr>
+<td>
+IconVisibility
+</td>
+<td>
+Gets or sets the Visibility of the legend icon.
+</td>
+</tr>
+<tr>
+<td>
+ItemMargin
+</td>
+<td>
+Gets or sets the margin for the legend items.
+</td>
+</tr>
+<tr>
+<td>
+CornerRadius
+</td>
+<td>
+Gets or sets the corner radius of the legend.
+</td>
+</tr>
+</table>
 The following code example illustrates the customization of legend icon.
 
 {% highlight xml %}
@@ -98,7 +140,7 @@ The following code example illustrates the customization of legend icon.
 ![](Legend_images/legendicon_2.png)
 
 
-The visibility of the legend icon can be changed by setting `IconVisibility` property in ChartLegend. 
+The visibility of the legend icon can be changed by setting **IconVisibility** property in ChartLegend. 
 
 {% highlight xml %}
 
@@ -118,7 +160,7 @@ The visibility of the legend icon can be changed by setting `IconVisibility` pro
 
 **Custom** **Legend** **Icon**
 
-We can add custom icon for the legend using `LegendIconTemplate` property in ChartSeries as in below example.
+We can add custom icon for the legend using **LegendIconTemplate** property in ChartSeries as in below example.
 
 {% highlight xml %}
 
@@ -186,7 +228,7 @@ This allows us to specify the label for each series which is to be displayed in 
 
 Used to view or collapse the associated series. By default, the CheckboxVisibilty is *Collapsed*. 
 
-We can enable it by using the `CheckBoxVisibilty` property as in below code example:
+We can enable it by using the **CheckBoxVisibilty** property as in below code example:
 
 
 {% highlight xml %}
@@ -206,7 +248,7 @@ We can enable it by using the `CheckBoxVisibilty` property as in below code exam
 ![](Legend_images/chkbox_1.png)
 
 
-The series can be collapsed by unchecking the CheckBox as below:
+The series can be collapsed by ‘uncheck’ the CheckBox as below:
 
 ![](Legend_images/chkbox_2.png)
 
@@ -215,7 +257,7 @@ The series can be collapsed by unchecking the CheckBox as below:
 
 **Legend** **Position**
 
-This allows us to position the legend inside or outside of the chart area (plotting area). By default, it will be positioned outside and top (using `DockPosition`) of the chart area.
+This allows us to position the legend inside or outside of the chart area (plotting area). By default, it will be positioned outside and top (using **DockPosition**) of the chart area.
 
 {% highlight xml %}
 
@@ -232,10 +274,10 @@ This allows us to position the legend inside or outside of the chart area (plott
 
 **Docking**
 
-Legends can be docked left, right, and top or bottom around the chart area using `DockPosition` property. 
+Legends can be docked left, right, and top or bottom around the chart area using **DockPosition** property. 
 By default, the ChartLegend is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the bottom, you can set the `DockPosition` as **Bottom** as in below code snippet.
+To display the legend in bottom, you can set the **DockPosition** as **Bottom** as in below code snippet.
 
 {% highlight xml %}
 <chart:SfChart.Legend>
@@ -251,7 +293,7 @@ To display the legend at the bottom, you can set the `DockPosition` as **Bottom*
 
 **Floating** **Legends**
 
-To position the legend at any arbitrary location inside chart, we need to set `DockPosition` as **Floating** and provide its relative position using `OffsetX` and `OffsetY` properties. 
+To position the legend at any arbitrary location inside chart, we need to set **DockPosition** as **Floating** and provide its relative position using **OffsetX** and **OffsetY** properties. 
 Offset specifies x or y distance from origin.
 
 {% highlight xml %}
@@ -346,7 +388,7 @@ The following code example shows how to create multiple legends in a single char
 
 For the series like Pie, Doughnut, Funnel and Pyramid, legends will be generated for all the data points. But for remaining series, each legend corresponds to each series. By default, the Interior color of the segment (data point) is applied to the legend icon. 
 
-The following code snippets explains how the legends displaying for accumulation series.
+Syntax for adding legends to these type of series is same as in below example:
 
 {% highlight xml %}
 <chart:SfChart.Legend>
@@ -368,7 +410,7 @@ Note: Here Legend ‘Label’ will be the x value of the Pie chart.
 
 ## Series visibility on legend
 
-We can limit the number of series and trendlines to be displayed in legend using `VisibilityOnLegend` property as shown in below example.
+We can limit the number of series and trendlines to be displayed in legend using **VisibilityOnLegend** property as shown in below example.
 
 {% highlight xml %}
 <chart:SfChart.Legend>
@@ -422,13 +464,10 @@ Orientation of the Legend can be vertical or horizontal. By default the Orientat
 
 **ItemTemplate**
 
-You can customize each legend item using `ItemTemplate` property in ChartLegend as in below code snippet:
+You can customize each legend item using ItemTemplate property in ChartLegend as in below code snippet:
 
 {% highlight xml %}
 
-<chart:SfChart.Resources>
-        <local:ImageConverter x:Key="imageConverter"></local:ImageConverter>
-</chart:SfChart.Resources>
 
 <chart:ChartLegend.ItemTemplate>
 
@@ -446,7 +485,7 @@ You can customize each legend item using `ItemTemplate` property in ChartLegend 
 
       <Image  Width="30" Height="15"  
 
-              Source="{Binding Converter={StaticResource imageConverter}}">
+              Source="{Binding Converter={StaticResource convert}}">
       </Image>
 
       <TextBlock HorizontalAlignment="Center" FontSize="12"  Grid.Row="1"  
@@ -464,7 +503,7 @@ You can customize each legend item using `ItemTemplate` property in ChartLegend 
 
 {% highlight c# %}
 
-public class ImageConverter:IValueConverter
+public class Converter:IValueConverter
 
 {
 
@@ -502,7 +541,7 @@ public class ImageConverter:IValueConverter
 
 **Customizing** **Legend** **Items** **Layout**
 
-When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using `ItemsPanel` property as in below code snippet:
+When there is more number of legends it will be cropped, so to avoid the cropping we can change the existing arrangement layout (one which arrange each legend items) using **ItemsPanel** property as in below code snippet:
 
 {% highlight xml %}
 <chart:SfChart.Legend>
