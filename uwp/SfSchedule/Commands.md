@@ -16,7 +16,6 @@ Operations that are done by context menu can also be performed using Schedule co
 * Deleting appointment
 * Copying appointment
 * Pasting appointment
-* Drag and drop appointment
 
 ## AddNewCommand
 
