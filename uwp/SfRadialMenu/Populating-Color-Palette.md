@@ -17,11 +17,7 @@ Color Palette can be formed in SfRadialMenu with the Radial Color Items.
 
     <navigation:SfRadialMenuItem Header="Font Color">
 
-
-
        <navigation:SfRadialMenuItem Header="Font"/>
-
-
 
        <navigation:SfRadialColorItem Color="Red">
 
@@ -38,8 +34,6 @@ Color Palette can be formed in SfRadialMenu with the Radial Color Items.
        <navigation:SfRadialColorItem Color="Green"/>
 
        <navigation:SfRadialColorItem Color="Blue"/>
-
-
 
      </navigation:SfRadialMenuItem>
 

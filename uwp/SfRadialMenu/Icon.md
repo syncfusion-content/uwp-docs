@@ -27,8 +27,6 @@ The Icon property of the SfRadialMenu is used to customize the icon displayed in
 
             </navigation:SfRadialMenu.Icon>
 
-
-
  </navigation:SfRadialMenu>
 
 {% endhighlight %}

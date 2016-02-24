@@ -17,7 +17,9 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 * Syncfusion.SfRibbon.UWP
 
-1. Include the namespace for Syncfusion.SfRibbon.UWP assembly in MainPage.xaml
+
+
+1.Include the namespace for Syncfusion.SfRibbon.UWP assembly in MainPage.xaml
 
 {% highlight xaml %}
 <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -31,7 +33,7 @@ xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
 {% endhighlight %}
 
 
- 2.Now add the `SfRibbon` control with a required optimal name using the included namespace
+2.Now add the `SfRibbon` control with a required optimal name using the included namespace
 
 {% highlight xaml %}
 
