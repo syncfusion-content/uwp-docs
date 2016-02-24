@@ -62,7 +62,9 @@ Populate the Application command collection as follows.
 
  Options = new List<ApplicationCommand>(); 
 
- Options.Add(new ApplicationCommand() { Name="Bold" , ImagePath="bold.png" });    			  Options.Add(new ApplicationCommand() { Name = "Cut" , ImagePath="cut.png"}); 
+ Options.Add(new ApplicationCommand() { Name="Bold" , ImagePath="bold.png" });    			  
+ 
+ Options.Add(new ApplicationCommand() { Name = "Cut" , ImagePath="cut.png"}); 
 
  Options.Add(new ApplicationCommand() { Name = "Copy" ,ImagePath="copy.png"}); 
 
@@ -94,13 +96,7 @@ DisplayMemberPath property of the SfRadialMenu used to define which business mod
 
 <navigation:SfRadialMenu IsOpen="True" ItemsSource="{Binding Options}"
 
-DisplayMemberPath="Name"
-
-                         />
-
-
-
-
+DisplayMemberPath="Name"/>
 
 
 
