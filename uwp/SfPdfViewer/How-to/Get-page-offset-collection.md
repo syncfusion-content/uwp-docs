@@ -1,0 +1,39 @@
+---
+layout: post
+title: Get page offset collection in Syncfusion Essential UWP PDF viewer.
+description: Get page offset collection in Syncfusion Essential UWP PDF viewer.
+platform: uwp
+control: PDF viewer
+documentation: ug
+---
+
+## Get page offset collection
+Page offset collection is a dictionary of page numbers and location where the vertical offset page ends. The following code example illustrates accessing the same. 
+{% tabs %}
+{% highlight c# %}
+private void Page_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
+    pdfViewer.LoadDocument(ldoc);
+}
+
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+    //Gets the page offset collection.
+    Dictionary<int, double> offsetCollection = pdfViewer.PageOffsetCollection;
+}
+{% endhighlight %}
+{% highlight vbnet %}
+Private Sub Page_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim ldoc As New PdfLoadedDocument(buffer)
+    pdfViewer.LoadDocument(ldoc)
+End Sub
+
+Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
+    'Gets the page offset collection.
+    Dim offsetCollection As Dictionary(Of Integer, Double) = pdfViewer.PageOffsetCollection
+End Sub
+{% endhighlight %}
+{% endtabs %}
+
+N> The page offset collection will be generated only at the time of display of the PDF document in the viewer, when tried before the display of the document this would return a dictionary of count 0.
