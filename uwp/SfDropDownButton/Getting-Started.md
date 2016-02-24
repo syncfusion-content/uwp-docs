@@ -22,7 +22,8 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 ###  Adding SfDropDownButton control through XAML Code
 
 
-1. Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml
+
+1.Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml
 
 {% highlight xml %}
 
@@ -35,7 +36,8 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
-2. Now add the SfDropDownButton control with a required optimal name using the included namespace
+
+2.Now add the SfDropDownButton control with a required optimal name using the included namespace
 
 {% highlight xml %}
 
@@ -45,7 +47,8 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 ### Adding SfDropDownButton control through C# Code
 
-1. Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml.cs
+1.Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml.cs
+
 
 {% highlight c# %}
 
@@ -53,7 +56,8 @@ using Syncfusion.UI.Xaml.Controls.Input;
 
 {% endhighlight %}
 
-2. Now add the SfDropDownButton control with an optimal name 
+
+2.Now add the SfDropDownButton control with an optimal name 
 
 {% highlight c# %}
 
