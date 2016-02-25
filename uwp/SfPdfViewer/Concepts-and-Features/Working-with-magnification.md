@@ -106,5 +106,6 @@ pdfViewer.ViewMode = PageViewMode.OnePage
 {% endhighlight %}
 {% endtabs %}
 
-N> * In Desktop view, when the zoom value is reduced below 100 percentage, the view will be automatically changes to show the thumbnails for easier navigation.
-   * One page view mode is supported only in mobile view, where the view will be changed to Flip View for easier navigation.
+N> 
+* In Desktop view, when the zoom value is reduced below 100 percentage, the view will be automatically changes to show the thumbnails for easier navigation.
+* One page view mode is supported only in mobile view, where the view will be changed to Flip View for easier navigation.
