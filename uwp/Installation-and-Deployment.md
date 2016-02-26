@@ -24,7 +24,7 @@ The following procedure illustrates how to install Essential Studio.
 
 ## Configuring Syncfusion NuGet Packages in Visual Studio 
 
-Syncfusion UWP NuGet packages are available [here](http://nuget.syncfusion.com/package/universalwindows# "")
+Syncfusion UWP NuGet packages are available [here](http://nuget.syncfusion.com/package/universalwindows)
 
 ### NuGet Configuration  
 
@@ -32,7 +32,7 @@ The steps to install the Syncfusion UWP NuGet Packages in Visual Studio are as f
 
 1. Navigate the below location in browser. 
 
-   [http://nuget.syncfusion.com/package/universalwindows](http://nuget.syncfusion.com/package/universalwindows# "")
+   [http://nuget.syncfusion.com/package/universalwindows](http://nuget.syncfusion.com/package/universalwindows)
 
    ![](Installation-and-Deployment_images\NuGetConfig_img1.jpeg)
 
@@ -58,7 +58,7 @@ The steps to install the Syncfusion UWP NuGet Packages in Visual Studio are as f
 
    N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source. 
 
-I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/# "")
+I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
 ### NuGet installation
 
@@ -76,7 +76,7 @@ Syncfusion UWP NuGet can install once configured the package source. The NuGet i
 
 Using `Manage NuGet packages` in Visual Studio, NuGet packages can be update.
 
-1. Download the latest Syncfusion NuGet Package from [here](http://nuget.syncfusion.com/package/universalwindows# "") and configure the latest Syncfusion NuGet Packages in Visual Studio.  Please Refer the NuGet Configuration topic for more information.
+1. Download the latest Syncfusion NuGet Package from [here](http://nuget.syncfusion.com/package/universalwindows) and configure the latest Syncfusion NuGet Packages in Visual Studio. Please Refer the [NuGet Configuration](#nuget-configuration) topic for more information.
 
 2. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates tab` to check for updates.
 
