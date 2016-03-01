@@ -19,7 +19,7 @@ You can load the large amount of data in less time using built-in `Data Virtuali
 
 SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
 
-1. Invoke `SfDataGrid.View.BegingInit` before update the data.
+1. Invoke `SfDataGrid.View.BeginInit` before update the data.
 2. After that update underlying collection.
 3. Then call `SfDataGrid.View.EndInit` method, to refresh the View and UI.  Now summaries, sort order and groups will be updated as expected. 
 
