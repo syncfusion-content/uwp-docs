@@ -248,7 +248,7 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar` and 
 
 ![](Column-Types_images/Column-Types_img2.png)
 
-`CellTemplate` is not support by `GridHyerplinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
+`CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
 #### Reusing same DataTemplate for multiple columns
 
@@ -373,7 +373,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 You can bind properties in ViewModel with the controls in CellTemplate.
  
-Below command defined in ViewModel is bound to `Button` inside `CellTempate`. Below code, denote the base command.
+Below command defined in ViewModel is bound to `Button` inside `CellTemplate`. Below code, denote the base command.
 
 {% tabs %}
 {% highlight c# %}
@@ -501,7 +501,7 @@ In the below code, Button inside CellTemplate bound to the command in ViewModel.
 
 ### Data Formatting
 
-`GridColum` supports to format the data using [Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
+`GridColumn` supports to format the data using [Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx) properties, by defining `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`. `GridColumn.DisplayBinding` formats the data in display mode. `GridColumn.ValueBinding` formats the data in edit mode.
 
 #### Format column using Converter
 
@@ -846,7 +846,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 
 ### Data formatting
 
-`GridNumericColum` allows you to format the numeric data by specifying the [predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx# "")  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx# "") into `GridNumericColumn.FormatString` property. 
+`GridNumericColumn` allows you to format the numeric data by specifying the [predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx# "")  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx# "") into `GridNumericColumn.FormatString` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -873,7 +873,7 @@ The `Watermark` property won’t work, when the `AllowNullInput` is `false`.
 <syncfusion:GridNumericColumn AllowNullInput="True"
                               HeaderText="Unit Price"
                               MappingName="UnitPrice"
-                              WaterMark="null value" />
+                              WaterMark="Enter unit price" />
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", MappingName = "UnitPrice", AllowNullInput = true, WaterMark = "null value" });
@@ -983,7 +983,7 @@ The `Watermark` property won’t work, when the `AllowNullValue` is `false`.
 <syncfusion:GridDateTimeColumn AllowNullValue="True"
                                HeaderText="Order Date"
                                MappingName="OrderDate"
-                               WaterMark="Null date and time" />
+                               WaterMark="Enter order date" />
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", MappingName = "OrderDate", AllowNullValue = true, WaterMark = "Null date and time" });
@@ -1723,7 +1723,7 @@ this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country", Ma
 
 You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using `CurrentCellRequestNavigate` event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperLinkColumn` is clicked for navigation.
   
-`CurrentCellRequestNavigateEventArgs` of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. `CurrentCellRequestNavigateEventArgs.NavigateText` returns the value using `ValueBinding` or `MappinName` to navigate.
+`CurrentCellRequestNavigateEventArgs` of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. `CurrentCellRequestNavigateEventArgs.NavigateText` returns the value using `ValueBinding` or `MappingName` to navigate.
 
 {% tabs %}
 {% highlight c# %}
@@ -1853,7 +1853,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 ### Customize Image
 
-`GridImageColum` allows you to customize the image with below properties.
+`GridImageColumn` allows you to customize the image with below properties.
 
 * `Width and Height` - You can change the height and width of the image using `GridImageColumn.ImageHeight` and `GridImageColumn.ImageWidth` properties.
 
@@ -1914,7 +1914,7 @@ You can change the alignment of spin button using `SpinButtonsAlignment` propert
 ### SmallChange and LargeChange
 
 You can specify the value to get increment or decrement when up and down arrow key is pressed by using `SmallChange` property.
-If you want to increment or decrement the value when Pageup and Pagedown key is pressed using `LargeChange` property.
+If you want to increment or decrement the value when <Kbd>PageUp</kbd> and <kbd>PageDown</kbd> key is pressed using `LargeChange` property.
 
 ## Custom column support
 
@@ -1926,7 +1926,7 @@ You can create your own column by overriding the [predefined](#Overriding_existi
 
 For example, the `GridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://msdn.microsoft.com/en-us/library/system.datetimeoffset.aspx) value, you can create a new column by overriding the `GridDateTimeColumn` class.
 
-In the below code snippet, converter created to format the DateTimeOffSet value to DateTime by defining `ValueBinding` (edit) and `DispalyBinding` (non-edit).
+In the below code snippet, converter created to format the DateTimeOffSet value to DateTime by defining `ValueBinding` (edit) and `DisplayBinding` (non-edit).
 
 {% tabs %}
 {% highlight c# %}

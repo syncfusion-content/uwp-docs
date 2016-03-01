@@ -589,7 +589,7 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 
 ### AddNewRow support in Master-Details View
 
-You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position to `SfDataGrid.AddNewRowPosition` property in `ViewDefintion.DataGrid`.
+You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position to `SfDataGrid.AddNewRowPosition` property in `ViewDefinition.DataGrid`.
  
 {% tabs %}
 {% highlight xaml %}

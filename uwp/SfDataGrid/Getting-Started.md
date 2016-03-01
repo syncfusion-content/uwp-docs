@@ -61,18 +61,18 @@ Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations o
 </tr>
 <tr>
 <td>
-Syncfudion.SfInput.UWP
+Syncfusion.SfInput.UWP
 </td>
 <td>
-Syncfudion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in SfDataGrid. 
+Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in SfDataGrid. 
 </td>
 </tr>
 <tr>
 <td>
-Syncfudion.SfShared.UWP
+Syncfusion.SfShared.UWP
 </td>
 <td>
-Syncfudion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.  
+Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.  
 </td>
 </tr>
 </table>
@@ -150,7 +150,7 @@ In order to add control manually in XAML, do the below steps,
     * Syncfusion.Data.UWP
     * Syncfusion.SfGrid.UWP
     * Syncfusion.SfInput.UWP
-    * Syncfudion.SfShared.UWP
+    * Syncfusion.SfShared.UWP
 
 2. Import SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 
@@ -186,7 +186,7 @@ In order to add control manually in C#, do the below steps,
     * Syncfusion.Data.UWP
     * Syncfusion.SfGrid.UWP
     * Syncfusion.SfInput.UWP
-    * Syncfudion.SfShared.UWP
+    * Syncfusion.SfShared.UWP
     
 2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid**.
 
@@ -522,6 +522,14 @@ GridMultiColumnDropdownList
 </td>
 <td>
 Represents SfDataGrid column that hosts <code> SfMultiColumnDropDownControl</code> in its cells.
+</td>
+</tr>
+<tr>
+<td>
+GridUpDownColumn
+</td>
+<td>
+Represents SfDataGrid column that hosts <code> SfNumericUpDown</code> in its cells.
 </td>
 </tr>
 </table>

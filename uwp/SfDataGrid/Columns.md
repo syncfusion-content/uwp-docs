@@ -75,7 +75,7 @@ Use to display the image in each row.
 GridHyperlinkColumn
 </td>
 <td>
-Use to display the URI data
+Use to display the <code>Uri</code> data
 </td>
 </tr>
 <tr>
@@ -146,7 +146,7 @@ GridTextColumn
 </tr>
 <tr>
 <td>
-int, float, double, decimal and also it’s nullables
+int, float, double, decimal and also it’s nullable
 </td>
 <td>
 GridNumericColumn
@@ -154,7 +154,7 @@ GridNumericColumn
 </tr>
 <tr>
 <td>
-DateTime, DateTimeOffset and also it’s nullables
+DateTime, DateTimeOffset and also it’s nullable
 </td>
 <td>
 GridDateTimeColumn
@@ -162,7 +162,7 @@ GridDateTimeColumn
 </tr>
 <tr>
 <td>
-uri, uri?
+Uri, Uri?
 </td>
 <td>
 GridHyperLinkColumn
@@ -223,7 +223,7 @@ Clears the columns which are auto generated before and creates new columns based
 RetainOld
 </td>
 <td>
-Generates the columns based on the properties defined in the underlying data object if the columns are not defined expilicitly.
+Generates the columns based on the properties defined in the underlying data object if the columns are not defined explicitly.
 </td>
 <td>
 The same columns will be maintained when changing ItemsSource also. So filtering, sorting and grouping settings will be maintained.
@@ -275,7 +275,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 You can cancel the specific column adding to the DataGrid by handling `AutoGeneratingColumn` event.
 
-In the below code, column generation for `OrderID` property is cancelled by setting `Cancel` property to `true`.
+In the below code, column generation for `OrderID` property is canceled by setting `Cancel` property to `true`.
  
 {% tabs %}
 {% highlight c# %}
@@ -584,7 +584,7 @@ SfDataGrid shows indication for hidden columns in column header and also allows 
 
 ### Disable resizing
 
-You can cancel resizing of particular column by setting `GridColumn.AllowResizing` property to `false`. In another way, you can cancel the resizing by handling `SfDataGrid.ResizingColumns` event. The `ResizingColumns` event occurs when you start dragging by resising cursor on headers.
+You can cancel resizing of particular column by setting `GridColumn.AllowResizing` property to `false`. In another way, you can cancel the resizing by handling `SfDataGrid.ResizingColumns` event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
  
 `ResizingColumnsEventArgs` of `ResizingColumns` provides information about the columns’s index and width.
 
@@ -769,7 +769,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 
 SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using `StackedHeaderRows`. You can group one or more columns under each stacked header.
 
-Each `StackedHeaderRow` contains the `StackedColumns` where each `StackedColumn` contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are gropued under the stacked header row. `StackedColumn. HeaderText` returns the text that dispalys in stacked header row.
+Each `StackedHeaderRow` contains the `StackedColumns` where each `StackedColumn` contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are grouped under the stacked header row. `StackedColumn. HeaderText` returns the text that displays in stacked header row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1042,7 +1042,7 @@ N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.Colum
 
 You can refresh the `ColumnSizer` at runtime by calling `SfDataGrid.GridColumnSizer.Refresh` method. 
 
-SfDataGrid support to recalculates the column auto width by calling reset methods of `GridColumSizer`. `GridColumnSizer.ResetAutoCalculationforAllColumns` method reset widths to all columns. `GridColumnSizer.ResetAutoCalculation` method reset the width to particular column.
+SfDataGrid support to recalculates the column auto width by calling reset methods of `GridColumnSizer`. `GridColumnSizer.ResetAutoCalculationforAllColumns` method reset widths to all columns. `GridColumnSizer.ResetAutoCalculation` method reset the width to particular column.
 
 N> The `GridColumnSizer.ResetAutoCalculationforAllColumns` or `GridColumnSizer.ResetAutoCalculation` methods applicable for Auto, AutoWithLastColumnFill, AutoLastColumnFill, SizeToCells types.
 
