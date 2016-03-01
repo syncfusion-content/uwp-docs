@@ -268,7 +268,7 @@ this.dataGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomCompar
 {% endhighlight %}
 {% endtabs %}
 
-Sorting `CustomerName` column sorts the data using custom comparer availabe in `SfDataGrid.SortComparers`.
+Sorting `CustomerName` column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
 
 ![](Sorting_images/Sorting_img4.png)
 
