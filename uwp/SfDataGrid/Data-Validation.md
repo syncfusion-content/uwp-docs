@@ -137,7 +137,7 @@ You can validate the cells and rows using `CurrentCellValidating` and `RowValida
 
 ## Cell Validation
 
-You can validate the cells using `CurrentCellValidating` event when the cell is edited. `CurrentCellValdiating` event occurs when the edited cells tries to commit the data or lose the focus. 
+You can validate the cells using `CurrentCellValidating` event when the cell is edited. `CurrentCellValidating` event occurs when the edited cells tries to commit the data or lose the focus. 
 
 `CurrentCellValidatingEventArgs` provides information to `CurrentCellValidating` event for validating the cell. `CurrentCellValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. 
 `CurrentCellValidatingEventArgs.NewValue` returns the edited value and you can set the validation status using `CurrentCellValidatingEventArgs.IsValid` property. 
@@ -571,7 +571,7 @@ You can do both built-in and custom validation of data in `DetailsViewDataGrid`.
 
 ### Built-in validations
 
-You can validate the bound data based on INotifyDataErrorInfo or Data Annotation Attributes by setting `GridValdiationMode` property of `ViewDefinition.DataGrid`.
+You can validate the bound data based on INotifyDataErrorInfo or Data Annotation Attributes by setting `GridValidationMode` property of `ViewDefinition.DataGrid`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -593,7 +593,7 @@ You can validate the bound data based on INotifyDataErrorInfo or Data Annotation
 {% endhighlight %}
 {% endtabs %}
 
-When the relation is auto-generated, the data can be validated by setting `GridValdiationMode` property to `AutoGeneratingRelations.GridvIewDefinition.DataGrid` in `AutoGeneratingRelations` event handler.
+When the relation is auto-generated, the data can be validated by setting `GridValidationMode` property to `AutoGeneratingRelations.GridvIewDefinition.DataGrid` in `AutoGeneratingRelations` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -616,7 +616,7 @@ Master-details view support to validate the cells and rows using `CurrentCellVal
 
 #### Cell Validation
 
-You can validate the cells using `CurrentCellValidating` event of `ViewDefinition.DataGrid` when the cell is edited. `CurrentCellValdiating` event occurs when the edited cells tries to commit the data or lose the focus. 
+You can validate the cells using `CurrentCellValidating` event of `ViewDefinition.DataGrid` when the cell is edited. `CurrentCellValidating` event occurs when the edited cells tries to commit the data or lose the focus. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -796,7 +796,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ## Validation with Checkbox column
 
-SfDataGrid doesn’t support to validate the `GridCheckBoxColumn` through validating events. You can validate the check box column value by setting `ValidationHelper.IsCurrentCellValidated` and `ValidationHelper.IsCurrentRowValidated` static properties by calling `SetCurrentRowValdiated` and `SetCurrentCellValidated` methods from `ValidationHelper`.
+SfDataGrid doesn’t support to validate the `GridCheckBoxColumn` through validating events. You can validate the check box column value by setting `ValidationHelper.IsCurrentCellValidated` and `ValidationHelper.IsCurrentRowValidated` static properties by calling `SetCurrentRowValidated` and `SetCurrentCellValidated` methods from `ValidationHelper`.
 
 {% tabs %}
 {% highlight c# %}

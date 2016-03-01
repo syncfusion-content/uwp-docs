@@ -252,7 +252,7 @@ You can customize the style of unbound row cell by writing style of TargetType `
 
 ![](Unbound-Rows_images/Unbound-Rows_img5.png)
 
-## Customize the Unbound Row’s behaviour
+## Customize the Unbound Row’s behavior
 
 SfDataGrid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound row cell.  Each renderer have set of virtual methods for handling the behaviors. Creating new renderers also supported.
 Below table lists the available cell types for unbound row and its renderers.

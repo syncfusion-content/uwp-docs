@@ -591,7 +591,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ![](Printing_images/Printing_img11.png)
 
-N> `GetColumnWidth`, `GetColumnTextWrapping`, `GetColumnTextAlignment` and `GetColumnPadding` methods are also used for column customization while pritning.
+N> `GetColumnWidth`, `GetColumnTextWrapping`, `GetColumnTextAlignment` and `GetColumnPadding` methods are also used for column customization while printing.
 
 ### Printing Selected rows
 
