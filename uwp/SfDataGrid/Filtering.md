@@ -119,7 +119,7 @@ SfDataGrid filter UI comprises of two different UIs.
 
 * **Advanced Filter UI** - Provides advanced filter options to filter the data.
 
-By default, both Checkbox Filter and Advanced Filter are loaded while opening the filter pop-up. You can switch between AdvancedFilter and CheckboxFillter by using AdvancedFilter button in the UI View.
+By default, both Checkbox Filter and Advanced Filter are loaded while opening the filter pop-up. You can switch between AdvancedFilter and CheckboxFilter by using AdvancedFilter button in the UI View.
 
 #### SfDataGrid with Checkbox Filter View
 	
@@ -450,7 +450,7 @@ By default, based on the actual value only filter will be applied. So it will co
 
 ![](Filtering_images/Filtering_img14.png)
 
-If you set `ColumnFilter` as `DisplayText`, display value only will be conidered for filtering. So filter popup will be shown like below.
+If you set `ColumnFilter` as `DisplayText`, display value only will be considered for filtering. So filter popup will be shown like below.
 
 ![](Filtering_images/Filtering_img15.png)
 
