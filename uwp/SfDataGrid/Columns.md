@@ -351,6 +351,10 @@ You can set `GridColumn.HeaderTemplate` and `GridColumn.CellTemplate` properties
         
 </Page.Resources>
 {% endhighlight %}
+{% endtabs %}
+
+
+{% tabs %}
 {% highlight c# %}
 this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
@@ -617,7 +621,6 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 ![](Columns_images/Columns_img5.png)
 
 
-![](Columns_images/Columns_img6.png)
 
 You can enable or disable dragging on particular column using `GridColumn.AllowDragging` property.
 
@@ -763,7 +766,7 @@ You can freeze the columns in view at the left and right side like in excel by s
 {% endtabs %}
 
 
-![](Columns_images/Columns_img7.png)
+![](Columns_images/Columns_img6.png)
 
 ## Stacked Headers
 
@@ -816,7 +819,7 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endtabs %}
 
 
-![](Columns_images/Columns_img8.png)
+![](Columns_images/Columns_img7.png)
 
 You can also add the stacked headers using `GroupName` property of [Data Annotations Display attributes](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.aspx).
  
@@ -868,7 +871,7 @@ public class OrderInfo
 {% endtabs %}
 
 
-![](Columns_images/Columns_img9.png)
+![](Columns_images/Columns_img8.png)
 
 ### Adding ChildColumns
 
@@ -973,7 +976,7 @@ Divides the total width equally for columns.
 Auto
 </td>
 <td>
-Calculates the width of column based on header and cell contents. So that header and cell content’s are not truncated.  
+Calculates the width of column based on header and cell contents. So that header and cell contents are not truncated.  
 </td>
 </tr>
 <tr>
@@ -1033,7 +1036,7 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfDataGr
 {% endtabs %}
 
 
-![](Columns_images/Columns_img10.png)
+![](Columns_images/Columns_img9.png)
 
 
 N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.ColumnSizer`.
@@ -1182,42 +1185,74 @@ this.dataGrid.GridColumnSizer = new GridColumnSizerExt(dataGrid);
 
 public class GridColumnSizerExt : GridColumnSizer
 {
-    public GridColumnSizerExt(SfDataGrid dataGrid) : base(dataGrid)
+    public GridColumnSizerExt(SfDataGrid grid)
+        : base(grid)
     {
     }
-    
-    protected override double CalculateCellWidth(GridColumn column, bool setWidth = true)
+
+    protected override void SetStarWidth(double remainingColumnWidth, IEnumerable<GridColumn> remainingColumns)
     {
-        //Customizing width calculation for GridComboBoxColumn
-        if (column is GridComboBoxColumn)
+        var removedColumn = new List<GridColumn>();
+
+        var columns = remainingColumns.ToList();
+
+        var totalRemainingStarValue = remainingColumnWidth;
+
+        double removedWidth = 0;
+
+        bool isremoved;
+
+        while (columns.Count > 0)
         {
-            //Get the width of the corresponding GridColumn
-            double colWidth = column.Width;
+            isremoved = false;
 
-            //Get the Source collection from the corresponding GridComboBoxColumn items source
-            var source = (column as GridComboBoxColumn).ItemsSource;
+            removedWidth = 0;
 
-            //Initialize the below field for storing length                
-            string maximumComboItemsText = string.Empty;
+            var columnsCount = 0;
 
-            //Get the column width and row height
-            var clientSize = new Size(colWidth, DataGrid.RowHeight);
-
-            //Calculate the maximum length for each combo box items and store maximum length
-            foreach (var comboItems in source)
+            foreach (var data in columns)
             {
-                string comboItemText = (string)comboItems;
-                
-                if (maximumComboItemsText.Length < comboItemText.Length
-                        maximumComboItemsText = comboItemText;
+                columnsCount += StarRatio.GetColumnRatio(data);
             }
 
-            //Get the size for maximum ComboBoxItems's text and returned the measured width as a column width of that column
-            var measureSize = MeasureText(clientSize, maximumComboItemsText, column, null, GridQueryBounds.Width);
-            return measureSize.Width;
+            double starWidth = Math.Floor((totalRemainingStarValue / columnsCount));
+
+            var column = columns.First();
+
+            starWidth *= StarRatio.GetColumnRatio(column);
+
+            double computedWidth = SetColumnWidth(column, starWidth);
+
+            if (starWidth != computedWidth && starWidth > 0)
+            {
+                isremoved = true;
+
+                columns.Remove(column);
+
+                foreach (var remColumn in removedColumn)
+                {
+                    if (!columns.Contains(remColumn))
+                    {
+                        removedWidth += remColumn.ActualWidth;
+                        columns.Add(remColumn);
+                    }
+                }
+
+                removedColumn.Clear();
+
+                totalRemainingStarValue += removedWidth;
+            }
+
+            totalRemainingStarValue = totalRemainingStarValue - computedWidth;
+
+            if (!isremoved)
+            {
+                columns.Remove(column);
+
+                if (!removedColumn.Contains(column))
+                    removedColumn.Add(column);
+            }
         }
-        //Default column width calculation performed other than GridComboBoxColumn
-        return base.CalculateCellWidth(column, setWidth);
     }
 }
 {% endhighlight %}
@@ -1251,7 +1286,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 {% endtabs %}
 
 
-![](Columns_images/Columns_img11.png)
+![](Columns_images/Columns_img10.png)
 
 ### Change the width of GridComboBoxColumn based on it’s ItemsSource
 
@@ -1263,40 +1298,47 @@ Below code creates `CustomColumnSizer` to change the width of `GridComboboxColum
 {% highlight c# %}
 this.dataGrid.GridColumnSizer = new CustomColumnSizer(this.dataGrid);
 
-public class CustomColumnSizer:GridColumnSizer
+public class CustomColumnSizer : GridColumnSizer
 {
     public CustomColumnSizer(SfDataGrid grid)
         : base(grid)
     {
     }
-       
+
     protected override double CalculateCellWidth(GridColumn column, bool setWidth = true)
-    {            
+    {
+        //Customizing width calculation for GridComboBoxColumn
         if (column is GridComboBoxColumn)
-        {                                
-            double colWidth = double.MaxValue;  
-                                         
-            var source = (column as GridComboBoxColumn).ItemsSource;    
-                        
-            string maximumComboItemsText = string.Empty;        
-                    
-            var clientSize = new Size(colWidth, DataGrid.RowHeight); 
-                           
+        {
+            //Get the width of the corresponding GridColumn
+            double colWidth = column.Width;
+
+            //Get the Source collection from the corresponding GridComboBoxColumn items source
+            var source = (column as GridComboBoxColumn).ItemsSource;
+
+            //Initialize the below field for storing length                
+            string maximumComboItemsText = string.Empty;
+
+            //Get the column width and row height
+            var clientSize = new Size(colWidth, DataGrid.RowHeight);
+
+            //Calculate the maximum length for each combo box items and store maximum length
             foreach (var comboItems in source)
             {
                 string comboItemText = (string)comboItems;
-                
                 if (maximumComboItemsText.Length < comboItemText.Length)
-                    maximumComboItemsText = comboItemText;                   
-            }                
-            var measureSize= MeasureText(clientSize,maximumComboItemsText,column,null,GridQueryBounds.Width);
+                    maximumComboItemsText = comboItemText;
+            }
+
+            //Get the size for maximum ComboBoxItems's text and returned the measured width as a column width of that column
+            var measureSize = MeasureText(clientSize, maximumComboItemsText, column, null, GridQueryBounds.Width);
             
-            return measureSize.Width + SystemParameters.ScrollWidth;
-        }                
-        else
-            return base.CalculateCellWidth(column, setWidth);
-    }      
-}      
+            return measureSize.Width;
+        }
+        //Default column width calculation performed other than GridComboBoxColumn
+        return base.CalculateCellWidth(column, setWidth);
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1334,5 +1376,5 @@ Below code, binds the `ViewModel.AllowFiltering` property to `GridColumn.AllowFi
 {% endtabs %}
 
 
-![](Columns_images/Columns_img12.png)
+![](Columns_images/Columns_img11.png)
 

@@ -281,7 +281,6 @@ this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 
 ![](Data-Manipulation_images/Data-Manipulation_img1.png)
 
-![](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 You can get the row index of AddNewRow where it placed by using the `GridAddNewRowController.GetAddNewRowIndex` method.
 
@@ -320,7 +319,7 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endtabs %}
 
 
-![](Data-Manipulation_images/Data-Manipulation_img3.png)
+![](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 ### Working with complex properties in AddNewRow
 
@@ -435,7 +434,7 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img4.png)
+![](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 Similarly, you can validate the cells in AddNewRow by using the `CurrentCellValidating` event.
 
@@ -445,9 +444,9 @@ SfDataGrid enables you to customize the watermark text of AddNewRow by changing 
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file and then customize the value of AddNewRowText.
  
-![](Data-Manipulation_images/Data-Manipulation_img5.png)
+![](Data-Manipulation_images/Data-Manipulation_img4.png)
 
-![](Data-Manipulation_images/Data-Manipulation_img6.png)
+![](Data-Manipulation_images/Data-Manipulation_img5.png)
 
 ### Customizing AddNewRow text using style
 
@@ -585,7 +584,7 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 {% endtabs %}
 
 
-![](Data-Manipulation_images/Data-Manipulation_img7.png)
+![](Data-Manipulation_images/Data-Manipulation_img6.png)
 
 ### AddNewRow support in Master-Details View
 
@@ -616,9 +615,8 @@ this.FirstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endtabs %}
 
 
-![](Data-Manipulation_images/Data-Manipulation_img8.png)
+![](Data-Manipulation_images/Data-Manipulation_img7.png)
 
-![](Data-Manipulation_images/Data-Manipulation_img9.png)
 
 Similarly, you can wire `AddNewRowInitiating` event for `ViewDefinition.DataGrid`.
 
