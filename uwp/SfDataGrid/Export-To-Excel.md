@@ -1,0 +1,997 @@
+---
+layout: post
+title: Export to excel in SfDataGrid
+description: How to export the SfDataGrid into excel.
+platform: uwp
+control: SfDataGrid
+documentation: ug
+---
+
+
+# Export to Excel
+
+SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
+
+The following assemblies needs to be added for exporting to excel.
+
+* Syncfusion.SfGridConverter.UWP
+* Syncfusion.XlsIO.UWP
+
+You can export SfDataGrid to excel by using the `ExportToExcel` extension method present in the `Syncfusion.UI.Xaml.Grid.Converter` namespace.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.UI.Xaml.Grid.Converter;
+
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img1.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img2.png)
+
+
+N> SfDataGrid exports data to excel by using XlsIO.
+
+## Exporting options
+
+Exporting operation can be customized by passing `ExcelExportingOptions` instance as argument to `ExportToExcel` method.
+ 
+### Export Mode
+
+By default, actual value only will be exported to excel. If you want to export the display text, you need to set `ExportMode` property as `Text`.
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportMode = ExportMode.Text;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+ExportMode as Text
+
+![](Export-To-Excel_images/Export-To-Excel_img3.png)
+
+![](Export-To-Excel_images/Export-To-Excel_img4.png)
+
+ExportMode as Value
+
+![](Export-To-Excel_images/Export-To-Excel_img5.png)
+
+### Export groups with outlines
+
+By default, all the groups in DataGrid will be exported in expanded state. You can enable outlines in excel based on groups by setting the `AllowOutlining` property as `true` in `ExcelExportingOptions`. 
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportMode = ExportMode.Value;
+
+options.AllowOutlining = true;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img6.png)
+
+### Exclude columns while exporting
+
+By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. If you want to exclude some columns while exporting to Excel, you can use `ExcludeColumns` field in `ExcelExportingOptions`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+           
+options.ExcludeColumns.Add("CustomerName");
+
+options.ExcludeColumns.Add("Country");
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+Here, the columns having CustomerName and Country as `MappingName` are excluded while exporting.
+
+
+![](Export-To-Excel_images/Export-To-Excel_img7.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img8.png)
+
+### Excel Version
+
+While exporting to Excel, you can specify the excel version by using `ExcelVersion` property.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;           
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+### Exporting stacked headers
+
+You can export stacked headers to excel by setting `ExportStackedHeaders` property to `true`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportStackedHeaders = true;      
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img9.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img10.png)
+
+### Exporting merged cells
+
+You can export merged cells to excel by setting `ExportMergedCells` property as `true`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportMergedCells = true;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+![](Export-To-Excel_images/Export-To-Excel_img11.png)
+
+![](Export-To-Excel_images/Export-To-Excel_img12.png)
+
+### Exporting unbound rows
+
+You can export unbound rows to excel by setting `ExportUnBoundRows` property as `true`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportUnBoundRows = true;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img13.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img14.png)
+
+### Changing start row and column index while exporting
+
+You can export the data to specified row index and column index in worksheet, by setting `StartRowIndex` and `StartColumnIndex` properties.
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.StartColumnIndex = 3;
+
+options.StartRowIndex = 3;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img15.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img16.png)
+
+
+## Saving options
+
+### Save as stream
+
+After exporting to excel, you can save exported workbook to stream by using `SaveAsAsync` method.
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+
+FileStream stream=null;
+
+string directory = @"Pictures\output5.xlsx";
+
+await Task.Run(() =>
+{
+    stream = new FileStream(directory, FileMode.Create);
+});
+
+await workBook.SaveAsAsync(stream);
+
+workBook.Close();
+
+excelEngine.Dispose();
+{% endhighlight %}
+{% endtabs %}
+
+### Save using FileSavePicker with MessageDialog
+
+After exporting to excel, you can save exported workbook by opening [MessageDialog](https://msdn.microsoft.com/library/windows/apps/br208674). 
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+           
+var savePicker = new FileSavePicker
+{
+    SuggestedStartLocation = PickerLocationId.Desktop,
+    SuggestedFileName = "Sample"
+};
+
+if (workBook.Version == ExcelVersion.Excel97to2003)
+    savePicker.FileTypeChoices.Add("Excel File (.xls)", new List<string>() { ".xls" });
+
+else
+    savePicker.FileTypeChoices.Add("Excel File (.xlsx)", new List<string>() { ".xlsx" });
+
+var storageFile = await savePicker.PickSaveFileAsync();
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+
+var msgDialog = new MessageDialog("Do you want to view the Document?", "File has been created successfully.");
+
+var yesCmd = new UICommand("Yes");
+
+var noCmd = new UICommand("No");
+
+msgDialog.Commands.Add(yesCmd);
+
+msgDialog.Commands.Add(noCmd);
+
+var cmd = await msgDialog.ShowAsync();
+
+if (cmd == yesCmd)
+{
+    // Launch the saved file
+    bool success = await Windows.System.Launcher.LaunchFileAsync(storageFile);
+}
+
+workBook.Close();
+
+excelEngine.Dispose();
+{% endhighlight %}
+{% endtabs %}
+
+## Opening the saved excel file
+
+You can open the saved workbook using [FileOpenPicker](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.pickers.fileopenpicker.aspx).
+ 
+{% tabs %}
+{% highlight c# %}
+var excelEngine = dataGrid.ExportCollectionToExcel(this.dataGrid.View);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];            
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+
+FileOpenPicker openPicker = new FileOpenPicker();
+
+openPicker.FileTypeFilter.Add(".xlsx");
+
+openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
+
+StorageFile file = await openPicker.PickSingleFileAsync();
+
+await Windows.System.Launcher.LaunchFileAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+## Export Paging
+
+While exporting data to excel, if paging is used, current page only will be exported, by default. If you want to export all pages, you need to set `ExportAllPages` property as `True`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportAllPages = true;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+           
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+By default, all data will be exported to single sheet. If you want to export each page to different sheets, you need to use `ExportPageOptions` property.
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportAllPages = true;
+
+options.ExportPageOptions = ExportPageOptions.ExportToDifferentSheets;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+           
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img17.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img18.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img19.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img20.png)
+
+
+## Export SelectedItems to Excel
+
+By default, entire grid will be exported to Excel. You can export selected items only by passing `SelectedItems` to `ExportToExcel` method.
+ 
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+ExcelEngine excelEngine = new ExcelEngine();
+
+IWorkbook workBook = excelEngine.Excel.Workbooks.Create();
+
+workBook.Worksheets.Create();
+
+dataGrid.ExportToExcel(dataGrid.SelectedItems, options, workBook.Worksheets[0]);
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+![](Export-To-Excel_images/Export-To-Excel_img21.png)
+
+![](Export-To-Excel_images/Export-To-Excel_img22.png)
+
+## Export to XML
+
+You can save exported workbook as `Xml` file also by using `SaveAsXmlAsync` method.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+           
+if (storageFile != null)
+    await workBook.SaveAsXmlAsync(storageFile,ExcelXmlSaveType.MSExcel);
+{% endhighlight %}
+{% endtabs %}
+
+## Row Height and Column Width customization 
+
+After exporting data to excel, you can set different row height and column width for the columns based on your requirement.
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+
+workBook.Worksheets[0].SetRowHeight(2, 50);
+
+workBook.Worksheets[0].SetColumnWidth(2, 50);
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+![](Export-To-Excel_images/Export-To-Excel_img23.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img24.png)
+
+## Styling cells based on CellType in Excel
+
+You can customize the cell styles based on `CellType` by using `ExportingEventHandler`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExportingEventHandler = ExportingHandler;
+
+options.AllowOutlining = true;
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+
+
+private static void ExportingHandler(object sender, GridExcelExportingEventArgs e)
+{
+    if (e.CellType == ExportCellType.HeaderCell)
+    {
+        e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.LightPink);
+        e.CellStyle.ForeGroundBrush = new SolidColorBrush(Colors.White);
+    }
+    else if (e.CellType == ExportCellType.RecordCell)
+    {
+        e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.LightSkyBlue);
+    }
+    else if (e.CellType == ExportCellType.GroupCaptionCell)
+    {
+        e.CellStyle.BackGroundBrush = new SolidColorBrush(Colors.Wheat);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img25.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img26.png)
+
+## Cell customization in Excel while exporting
+
+You can customize the cells by setting `CellsExportingEventHandler` in `ExcelExportingOptions`.
+
+### Customize cell value while exporting
+
+You can customize the call values while exporting to excel by using `CellsExportingEventHandler` and `ExcelExportingOptions`.
+
+{% tabs %}
+{% highlight c# %}
+
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportingEventHandler = ExportingHandler;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img27.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img28.png)
+
+Here, cell values are changed for IsDelivered column based on custom condition.
+
+### Changing row style in excel based on data
+
+You can customize the rows based on the record values by using `CellsExportingEventHandler`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.CellsExportingEventHandler = CellExportingHandler;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+
+private static void CellExportingHandler(object sender, GridCellExcelExportingEventArgs e)
+{           
+     if (!(e.NodeEntry is RecordEntry))
+        return;
+     var record = e.NodeEntry as RecordEntry;
+     if ((record.Data as OrderInfo).Country == "Mexico")
+     {
+         e.Range.CellStyle.ColorIndex = ExcelKnownColors.Green;
+         e.Range.CellStyle.Font.Color = ExcelKnownColors.White;
+     }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![](Export-To-Excel_images/Export-To-Excel_img29.png)
+
+![](Export-To-Excel_images/Export-To-Excel_img30.png)
+
+Here, records having the Country name as `Mexico` are customized.
+
+### Customize the cells based on Column Name
+
+You can customize the cells based on `GridCellExcelExportingEventArgs.ColumnName` property in the `CellsExportingEventHandler`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.CellsExportingEventHandler = CellExportingHandler;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+
+private static void CellExportingHandler(object sender, GridCellExcelExportingEventArgs e)
+{
+    if (e.ColumnName != "OrderID")
+        return;
+
+    e.Range.CellStyle.Font.Size = 12;
+    e.Range.CellStyle.Font.Color = ExcelKnownColors.Pink;
+    e.Range.CellStyle.Font.FontName = "Segoe UI";
+}
+{% endhighlight %}
+{% endtabs %}
+
+Here, OrderID column cells are customized while exporting.
+
+
+![](Export-To-Excel_images/Export-To-Excel_img31.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img32.png)
+
+## Customize exported workbook and worksheet
+
+SfDataGrid exports to excel by using `XlsIO`.
+ 
+### Workbook
+
+SfDataGrid provides option to return `ExcelEngine` from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving.
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.CellsExportingEventHandler = ExportingHandler;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+### Worksheet customization
+
+SfDataGrid provides support to export to already existing file or worksheet.
+ 
+In the below code snippet, worksheet is created and passed to `ExportToExcel` method. In the same way, you can open already existing excel also using `XlsIO`.
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+ExcelEngine excelEngine = new ExcelEngine();
+
+IWorkbook workBook = excelEngine.Excel.Workbooks.Create();
+
+dataGrid.ExportToExcel(dataGrid.View, options, workBook.Worksheets[0]);
+
+workBook.Version = ExcelVersion.Excel2013;
+
+{% endhighlight %}
+{% endtabs %}
+
+
+Before saving workbook, you need to set the specific excel version by using `IWorkbook.Version` property. Here, you can directly manipulate the data in the worksheet.
+ 
+#### Setting borders
+
+You can set borders to excel cells by directly accessing worksheet after exporting data.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+workBook.Worksheets[0].UsedRange.BorderInside(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black);
+
+workBook.Worksheets[0].UsedRange.BorderAround(ExcelLineStyle.Dash_dot, ExcelKnownColors.Black);
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+![](Export-To-Excel_images/Export-To-Excel_img33.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img34.png)
+
+
+#### Enabling Filters
+
+You can show filters in exported worksheet by enabling filter for the exported range in the worksheet.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+workBook.Worksheets[0].AutoFilters.FilterRange = workBook.Worksheets[0].UsedRange;
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img35.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img36.png)
+
+
+While using stacked headers, you can specify the range based on Stacked headers count.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ExportStackedHeaders = true;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+var range = "A" + (dataGrid.StackedHeaderRows.Count + 1).ToString() + ":" + workBook.Worksheets[0].UsedRange.End.AddressLocal;
+
+excelEngine.Excel.Workbooks[0].Worksheets[0].AutoFilters.FilterRange = workBook.Worksheets[0].Range[range];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img37.png)
+
+![](Export-To-Excel_images/Export-To-Excel_img38.png)
+
+#### Customize the range of cells
+
+You can customize the range of cells after exporting to excel by directly manipualting worksheet.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+workBook.Worksheets[0].Range["A2:A6"].CellStyle.Color = System.Drawing.Color.LightSlateGray;
+
+workBook.Worksheets[0].Range["A2:A6"].CellStyle.Font.Color = ExcelKnownColors.White;
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img39.png)
+
+![](Export-To-Excel_images/Export-To-Excel_img40.png)
+
+## Exporting DetailsView
+
+By default, `DetailsViewDataGrid` will be exported to Excel. You can customize its exporting operation by using `ChildExportingEventHandler`.
+
+### Excluding DetailsViewDataGrid while exporting
+
+You can exclude particular `DetailsViewDataGrid` while exporting, by using the `ChildExportingEventHandler` and `GridChildExportingEventArgs.Cancel`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ChildExportingEventHandler = ChildExportingHandler;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+
+
+private static void ChildExportingHandler(object sender, GridChildExportingEventArgs e)
+{
+    var recordEntry = e.NodeEntry as RecordEntry;
+       
+    if ((recordEntry.Data as OrderInfo).OrderID == 1002)
+        e.Cancel = true;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img41.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img42.png)
+
+
+Here, `DetailsViewDataGrid` is not exported for the parent record having OrderID as 1002.
+
+### Excluding DetailsViewDataGrid columns from exporting
+
+You can exclude `DetailsViewDataGrid` columns while exporting, by using `ChildExportingEventHandler` and `GridChildExportingEventArgs.ExcludeColumns`.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.ChildExportingEventHandler = ChildExportingHandler;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+    
+private static void ChildExportingHandler(object sender, GridChildExportingEventArgs e)
+{            
+      e.ExcludeColumns.Add("OrderID");
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img43.png)
+
+
+![](Export-To-Excel_images/Export-To-Excel_img44.png)
+
+
+Here, OrderID column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to excel.
+
+### Customizing DetailsViewDataGrid cells
+
+Like parent DataGrid, you can customize the `DetailsViewDataGrid` cells also by using `CellsExportingEventHandler`. Based on `GridCellExcelExportingEventArgs.GridViewDefinition` property, you can identify the particular `DetailsViewDataGrid` and customize it.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+var options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;
+
+options.CellsExportingEventHandler = ChildExportingHandler;
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".xlsx", CreationCollisionOption.ReplaceExisting);
+
+if (storageFile != null)
+    await workBook.SaveAsAsync(storageFile);
+
+
+private static void ChildExportingHandler(object sender, GridCellExcelExportingEventArgs e)
+{
+    if (e.GridViewDefinition == null || e.GridViewDefinition.RelationalColumn !="ProductDetails")
+        return;
+
+    if (e.ColumnName == "OrderID")
+    {
+        e.Range.CellStyle.Font.Size = 12;
+        e.Range.CellStyle.Font.Color = ExcelKnownColors.Blue;
+        e.Range.CellStyle.Font.FontName = "Segoe UI";
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img45.png)
+
+![](Export-To-Excel_images/Export-To-Excel_img46.png)
+
