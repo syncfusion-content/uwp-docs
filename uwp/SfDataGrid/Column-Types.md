@@ -893,7 +893,7 @@ The `Watermark` property won’t work, when the `AllowNullInput` is `false`.
                               WaterMark="Enter unit price" />
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", MappingName = "UnitPrice", AllowNullInput = true, WaterMark = "null value" });
+this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", MappingName = "UnitPrice", AllowNullInput = true, WaterMark = "Enter unit price" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -1003,7 +1003,7 @@ The `Watermark` property won’t work, when the `AllowNullValue` is `false`.
                                WaterMark="Enter order date" />
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", MappingName = "OrderDate", AllowNullValue = true, WaterMark = "Null date and time" });
+this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", MappingName = "OrderDate", AllowNullValue = true, WaterMark = "Enter order date" });
 {% endhighlight %}
 {% endtabs %}
 
