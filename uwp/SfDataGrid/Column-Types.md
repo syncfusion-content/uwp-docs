@@ -605,6 +605,23 @@ You can change the font settings such as `FontSize`, `FontFamily`, `FontWeight` 
 When column is auto-generated, you can style the column by handling `AutoGeneratingColumn` event.
 
 {% tabs %}
+{% highlight xaml %}
+<Page.Resources>
+        
+    <Style x:Key="cellStyle" TargetType="syncfusion:GridCell">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontFamily" Value="Segoe UI" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontStyle" Value="Italic" />
+        <Setter Property="FontStretch" Value="Condensed" />
+    </Style>
+        
+</Page.Resources>
+{% endhighlight %}
+{% endtabs %}
+
+
+{% tabs %}
 {% highlight c# %}
 this.dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
 
@@ -846,7 +863,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 
 ### Data formatting
 
-`GridNumericColumn` allows you to format the numeric data by specifying the [predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx# "")  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx# "") into `GridNumericColumn.FormatString` property. 
+`GridNumericColumn` allows you to format the numeric data by specifying the [predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) into `GridNumericColumn.FormatString` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -876,7 +893,7 @@ The `Watermark` property won’t work, when the `AllowNullInput` is `false`.
                               WaterMark="Enter unit price" />
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", MappingName = "UnitPrice", AllowNullInput = true, WaterMark = "null value" });
+this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", MappingName = "UnitPrice", AllowNullInput = true, WaterMark = "Enter unit price" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -986,7 +1003,7 @@ The `Watermark` property won’t work, when the `AllowNullValue` is `false`.
                                WaterMark="Enter order date" />
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", MappingName = "OrderDate", AllowNullValue = true, WaterMark = "Null date and time" });
+this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", MappingName = "OrderDate", AllowNullValue = true, WaterMark = "Enter order date" });
 {% endhighlight %}
 {% endtabs %}
 
@@ -999,22 +1016,30 @@ You can restrict and display the input value with in the range using `MinDate` a
 
 {% tabs %}
 {% highlight c# %}
-DateTime minDate = new DateTime(2015 , 2 , 2);
-
-public DateTime MinDate
+public class ViewModel
 {
-    get { return minDate; }
-    set { minDate = value; RaisePropertyChanged("MinDate"); }
-}
+    DateTime minDate = new DateTime(2015 , 2 , 2);
 
-DateTime maxDate = new DateTime(2015 , 5 , 5);
+    public DateTime MinDate
+    {
+        get { return minDate; }
+        set { minDate = value; RaisePropertyChanged("MinDate"); }
+    }
 
-public DateTime MaxDate
-{
-    get { return maxDate; }
-    set { maxDate = value; RaisePropertyChanged("MaxDate"); }
+    DateTime maxDate = new DateTime(2015 , 5 , 5);
+    
+    public DateTime MaxDate
+    {
+        get { return maxDate; }
+        set { maxDate = value; RaisePropertyChanged("MaxDate"); }
+    }
 }
 {% endhighlight %}
+{% endtabs %}
+
+
+
+{% tabs %}
 {% highlight xaml %}
 <Page.Resources>
     <local:ViewModel x:Key="viewModel" />
@@ -1078,7 +1103,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 
 #### SelectorItem formatting
 
-you can specify the format for the selector using `SelectorFormatString` property.
+You can specify the format for the selector using `SelectorFormatString` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1633,7 +1658,7 @@ SfDataGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 ![](Column-Types_images/Column-Types_img27.png)
 
-### Auto-complete support
+### Auto complete support
 
 You can allow SfMultiDropDownControl to complete the entered input value automatically by setting the `AllowAutoComplete` property to `true`.
 
@@ -1721,7 +1746,7 @@ this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country", Ma
 
 ![](Column-Types_images/Column-Types_img30.png)
 
-You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using `CurrentCellRequestNavigate` event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperLinkColumn` is clicked for navigation.
+You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using `CurrentCellRequestNavigate` event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
   
 `CurrentCellRequestNavigateEventArgs` of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. `CurrentCellRequestNavigateEventArgs.NavigateText` returns the value using `ValueBinding` or `MappingName` to navigate.
 
@@ -1784,9 +1809,9 @@ You can change the foreground color of `GridHyperlinkColumn` by writing the styl
                        ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>
         <syncfusion:GridImageColumn MappingName="ImageLink"
-                            HeaderText="Flag"
-                            Stretch="Uniform"
-                            TextAlignment="Center" />
+                                    HeaderText="Flag"
+                                    Stretch="Uniform"
+                                    TextAlignment="Center" />
     </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -2149,7 +2174,7 @@ DateTime
 </tr>
 <tr>
 <td>
-GridHyperLinkColumn
+GridHyperlinkColumn
 </td>
 <td>
 GridCellHyperLinkRenderer

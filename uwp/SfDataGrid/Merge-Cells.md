@@ -13,7 +13,7 @@ SfDataGrid allows you to merge the range of adjacent cells using `QueryCoveredR
 
 `QueryCoveredRange` event occurs when each cell gets arranged and the custom range will be stored for visible rows and columns in `SfDataGrid.CoveredCells`. This event is not fired for the cells that are not visible and also for the cells that are already in SfDataGrid.CoveredCells. When scrolling the merged range will be added for newly added rows & columns through this event and also removed for the rows &columns which are out of view.
 
-`GridQueryCoveredRangeEventArgs` of the `QueryCoveredRange` event provides information about the cell triggered this event. `GridQueryCoveredRangeEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. By `GridQueryConveredRangeEventArgs.Range` property, the adjacent cells can be merged.
+`GridQueryCoveredRangeEventArgs` of the `QueryCoveredRange` event provides information about the cell triggered this event. `GridQueryCoveredRangeEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. By `GridQueryCoveredRangeEventArgs.Range` property, the adjacent cells can be merged.
 
 {% tabs %}
 {% highlight xaml %}
@@ -37,7 +37,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 
 ## Merging cells
 
-You can merge the range of cells by setting `CoveredCellInfo` (by defining Left, Right, Top & Bottom) to `GridQueryConveredRangeEventArgs.Range` and handling the event. 
+You can merge the range of cells by setting `CoveredCellInfo` (by defining Left, Right, Top & Bottom) to `GridQueryCoveredRangeEventArgs.Range` and handling the event. 
 
 ### Merging cells horizontally by fixed range
 
@@ -262,7 +262,7 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
 
 ## Merge cells in Master-details view
 
-Master- details view allows you to merge the range of cells using the `QueryCoveredRange` event of `ViewDefinition.DataGrid`. You can get the `DetaislViewDataGrid` which triggered the event from `GridQueryCoveredRangeEventArgs.OriginalSender` of the QueryCoveredRange event.
+Master- details view allows you to merge the range of cells using the `QueryCoveredRange` event of `ViewDefinition.DataGrid`. You can get the `DetailsViewDataGrid` which triggered the event from `GridQueryCoveredRangeEventArgs.OriginalSender` of the QueryCoveredRange event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -403,4 +403,4 @@ Below are the limitation when using Cell Merging in SfDataGrid.
 3. Heterogeneous rows can’t be merged.
 4. Cell loaded with Template Selector can’t be merged.
 5. `AllowFrozenGroupHeaders` is not supported.
-6. With DetailsViewDefinition, Cell merging is not supported if `HideEmptyGridViewDefintion` is false or record has DetailsViewDataGrid.
+6. With DetailsViewDefinition, Cell merging is not supported if `HideEmptyGridViewDefinition` is false or record has DetailsViewDataGrid.

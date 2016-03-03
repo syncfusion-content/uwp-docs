@@ -357,7 +357,7 @@ Now, run the application and you can expect the see the below output,
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-![](Getting-Started_images/Getting-Started_img3.png)
+
 
 ## Defining Columns
 
@@ -563,10 +563,9 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
 
 You can customize sorting by handling the `SfDataGrid.SortColumnsChanging` and `SfDataGrid.SortColumnsChanged` events. To cancel the default sort, set the Cancel property to true in `SfDataGrid.SortColumnsChanging` event. 
 
@@ -598,18 +597,17 @@ Grouping can be enabled by setting `SfDataGrid.ShowGroupDropArea` property, wher
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img6.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
-![](Getting-Started_images/Getting-Started_img7.png)
+
 
 ### Filtering
 
 Filtering can be enabled by setting `SfDataGrid.AllowFiltering` property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling `SfDataGrid.FilterChanging` and `SfDataGrid.FilterChanged` events.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
 
 ## Editing
 
