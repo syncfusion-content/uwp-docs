@@ -174,7 +174,7 @@ void dataGrid_CurrentCellValidated(object sender, CurrentCellValidatedEventArgs 
 
 You can validate the row using `RowValidating` event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus. 
 
-`RowValidatingEventArgs` provides information to `RowValidtaing` event for validating row. `RowValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. 
+`RowValidatingEventArgs` provides information to `RowValidating` event for validating row. `RowValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. 
 `RowValidatingEventArgs.RowData` returns the edited value and you can set the validation status using `RowValidatingEventArgs.IsValid` property.
 
 {% tabs %}
@@ -462,7 +462,7 @@ You can customize the error tip by editing the style of `ValidationToolTipTempla
 
 #### Change the background and foreground color of error tip
 
-You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`. The error tip foreground color can be changed by setting `Foreground` property of the `TextBlock` in `ValidationTolTipTemplate`.
+You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`. The error tip foreground color can be changed by setting `Foreground` property of the `TextBlock` in `ValidationToolTipTemplate`.
 
 {% tabs %}
 {% highlight xaml %}
