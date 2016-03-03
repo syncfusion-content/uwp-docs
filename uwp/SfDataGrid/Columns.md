@@ -1117,7 +1117,7 @@ By default, the ColumnSizer calculates column’s width based on fixed `FontSize
 
 #### Changing Sort and Filter Icon width
 
-You can change the filter icon and sort icon widths for column width calculation by setting `GridColumnSIzer.SortIconWidth` and `GridColumnSizer.FilterIconWidth` properties.
+You can change the filter icon and sort icon widths for column width calculation by setting `GridColumnSizer.SortIconWidth` and `GridColumnSizer.FilterIconWidth` properties.
 
 {% tabs %}
 {% highlight c# %}
