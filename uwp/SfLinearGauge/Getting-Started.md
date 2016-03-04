@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps required to configure the **SfLinearauge** and also explains the steps to add basic elements of **SfLinearauge** through various API’s available within it.
+This section explains you the steps required to configure the **SfLinearGauge** and also explains the steps to add basic elements of **SfLinearGauge** through various API’s available within it.
 
 ## Configuring SfLinearGauge
 

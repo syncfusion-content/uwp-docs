@@ -59,7 +59,7 @@ The default appearance of the Appointment can be customized by using the **Appoi
 
 The default appearance of CurrentTimeIndicator can be customized by using the CurrentTimeIndicatorTemplate property.The CurrentTimeIndicatorTemplate is DataTemplate type used to customize or override the default template of the CurrentTimeIndicator.
 
->**Note:-CurrentTimeIndicator customization is only applicable in day,week,workweek and timeline views in windows,and for windowsphone it is applicable for day and timeline views.**
+>**Note:-CurrentTimeIndicator customization is only applicable in day,week,workweek and timeline views in windows,and for Windows Phone it is applicable for day and timeline views.**
 
 
 {% tabs %}
@@ -100,7 +100,7 @@ The default appearance of CurrentTimeIndicator can be customized by using the Cu
 
 The default appearance of **NonAccessibleBlock** can be customized by using the **NonAccessibleBlockTemplate** property.The **NonAccessibleBlockTemplate** is DataTemplate type used to customize or override the default template of the **NonAccessibleBlock**.
 
->**Note:-NonAccessibleBlock customization is only applicable in day,week,workweek and timeline views in windows,and for windowsphone it is applicable for day and timeline views.**
+>**Note:-NonAccessibleBlock customization is only applicable in day,week,workweek and timeline views in windows,and for Windows Phone it is applicable for day and timeline views.**
 
 {% tabs %}
 {% highlight xaml %}

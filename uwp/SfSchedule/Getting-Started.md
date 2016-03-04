@@ -210,5 +210,5 @@ For example, if the appointment pop-up needs to be blocked, then the following c
 {% endhighlight %}
 {% endtabs %}
 
-Thus, we have learnt so far, how to create an application with our SfSchedule UWP control to manage a person’s daily important activities and also learnt the behavior customization of SfSchedule by using the API’s available within it.
+Thus, we have learned so far, how to create an application with our SfSchedule UWP control to manage a person’s daily important activities and also learned the behavior customization of SfSchedule by using the API’s available within it.
 
