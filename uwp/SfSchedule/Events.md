@@ -23,7 +23,7 @@ Occurs when the appointment editor is opening. The **AppointmentEditorOpening** 
    * **Appointment**- gets the appointment, this argument is of type object.
    * **StartTime**- gets the appointment start time.
    * **Action**- gets the Editor action such as Add or Edit or Delete.
-   * **Cancel**- set this Boolean property to **True** to cancelling the event.
+   * **Cancel**- set this Boolean property to **True** to canceling the event.
  
 ### AppointmentEditorClosed
 
@@ -60,7 +60,7 @@ Occurs when opening Context Menu. The **ContextMenuOpening** event handler recei
 
 ### ContextMenuClosed
 
-Occurs when the Context Menu closed. The **ContextMenuClosedevent** handler receives two arguments:
+Occurs when the Context Menu closed. The **ContextMenuClosedEvent** handler receives two arguments:
 
 1. The **sender** argument contains the **SfSchedule**. This argument is of type object, but can be cast to the **SfSchedule** type.
 2. A **ContextMenuClosedEventArgs** is a class. 
