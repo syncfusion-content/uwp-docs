@@ -89,7 +89,7 @@ Add IEnumerable collection to schedule by using the **ItemsSource** property.
 
 This section explains binding **ItemsSource** property of SfSchedule in MVVM pattern.
 
->**Note:-Before enter this section you should have a clear idea about databinding support which is the one of the major concept used to bind the custom collection in Schedule.**
+>**Note:-Before enter this section you should have a clear idea about data binding support which is the one of the major concept used to bind the custom collection in Schedule.**
 
 In order to bind the data source to **ItemsSource**, First you have to create a class (Model) for mapping Schedule appointments.
 

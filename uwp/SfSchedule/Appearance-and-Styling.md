@@ -59,7 +59,7 @@ By default the date format in month cells will be displayed as date (for example
 
 ### Time Line Customization
 
-In Schedule MajortTick Lines are used to displays the time as the hours, similarly MinorTick lines in Schedule are used to displays the time as the minutes. Major and Minor tick line can be customized by using the following properties.
+In Schedule MajorTick Lines are used to displays the time as the hours, similarly MinorTick lines in Schedule are used to displays the time as the minutes. Major and Minor tick line can be customized by using the following properties.
 
 >**Note:-TimeLine customization is only applicable in day, week , workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
 
@@ -378,7 +378,7 @@ For a particular Start and End time the selected Timeslot can be hidden by using
 
 ## NonAccessibleBlocks 
 
-A particular Start and End timeslot can be blocked by setting the NonAccessibleBlocks property collection. And the corresponding block can be highlighted with different colour and label by using Background and Label property of NonAccessibleBlock correspondingly. 
+A particular Start and End timeslot can be blocked by setting the NonAccessibleBlocks property collection. And the corresponding block can be highlighted with different color and label by using Background and Label property of NonAccessibleBlock correspondingly. 
 
 >**Note:-NonAccessible block is only applicable in day,week,workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
 
