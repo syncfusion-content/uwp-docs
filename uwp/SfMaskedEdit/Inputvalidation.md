@@ -7,7 +7,7 @@ control:  SfMaskedEdit
 documentation: ug
 ---
 
-# Inputvalidation
+# Input Validation
 
 The ValidationMode property is used to update the Value property when a key is pressed or focus is lost. ValidationMode includes the following options:
 

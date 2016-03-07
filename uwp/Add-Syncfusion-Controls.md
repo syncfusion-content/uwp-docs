@@ -144,5 +144,5 @@ Me.Content = textBoxExt1
 
 {% endtabs %}
 
-N> Syncfusion controls for UWP package can be added (available under Universal Windows => Extensions tab in Add reference dialog) in the cases of using most of the controls from Syncfusion toolkit.
+N> Syncfusion controls for UWP package can be added (available under Universal Windows Platform => Extensions tab in Add reference dialog) in the cases of using most of the controls from Syncfusion toolkit.
 

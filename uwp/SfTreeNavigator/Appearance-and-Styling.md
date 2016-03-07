@@ -171,7 +171,7 @@ The stacked headers in Extended navigation mode can be styled as follows:
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
 
-## Customizing the control hotspot
+## Customizing the control Hot-spot
 
 `AccentBrush` property is used to change the selected item background color.
 

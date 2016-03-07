@@ -30,7 +30,7 @@ RadialSliders are provided to change the RGB values. Sliders can be enabled by t
 
 ## Adjusting HexaDecimal Color Code
 
-Hexadecimal color code of the selected color is displayed in the right side panel. It can be copied using context menu in both tablets and windows phone device.
+Hexadecimal color code of the selected color is displayed in the right side panel. It can be copied using context menu in both tablets and Windows Phone device.
 
 ![](Adjusting-Color-images/Adjusting-Color-img5.jpeg)
 

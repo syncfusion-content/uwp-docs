@@ -127,5 +127,3 @@ calculator.Culture = new System.Globalization.CultureInfo("de-DE");
 {% endtabs %}
 
 ![](Other-utility-functions-images/Other-utility-functions-img2.jpeg)
-
-

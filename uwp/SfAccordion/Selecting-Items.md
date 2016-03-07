@@ -138,7 +138,7 @@ Content = "Description about Linda" , IsSelected = true });
 
 {% endtabs %}
 
-Here is an example showing the behavior of this property by binding SfAccordionItem.IsSelected property to CheckBox.IsChecked property in Twoway.
+Here is an example showing the behavior of this property by binding SfAccordionItem.IsSelected property to CheckBox.IsChecked property in Two-way.
 
 {% tabs %}
 

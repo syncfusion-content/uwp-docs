@@ -95,7 +95,7 @@ tabControl.ShowTabstripMenu = true;
 ![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img2.jpeg)
 
 
-### Adding custom items to Tabstrip menu
+### Adding custom items to TabStrip menu
 
 Custom menu items can be added to the tab strip menu using TabStripMenuItems property as follows:
 
@@ -138,7 +138,7 @@ tabControl.TabstripMenuItems.Add("Custom");
 ![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img3.jpeg)
 
 
-### Customizing Tabstrip menu item
+### Customizing TabStrip menu item
 
 Tab strip menu items can be customized using the TabStripMenuItemTemplate property. 
 

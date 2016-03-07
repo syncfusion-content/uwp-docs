@@ -81,7 +81,7 @@ Yes</td></tr>
 <tr>
 <td>
 </td><td>
-SfTileVew</td><td>
+SfTileView</td><td>
 Yes</td></tr>
 <tr>
 <td>
