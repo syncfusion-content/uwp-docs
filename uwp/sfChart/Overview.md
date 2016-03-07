@@ -28,7 +28,7 @@ SfChart
 * Capable of rendering large amounts of data in a few milliseconds (ms). It is one of the fastest charts in the market.
 * Allows you to map data from the specified path, by the data binding concept.
 * Interactive zooming is done by enabling touch mode that allows you to explore portions of large charts in detail, with excellent performance.
-* Track data points using crosshairs and track ball behaviour. When you need more information about a particular segment in a chart, a little mouseover on the series provides more information including tooltip, crosshairs and track ball behavior.
+* Track data points using crosshairs and track ball behavior. When you need more information about a particular segment in a chart, a little mouseover on the series provides more information including tooltip, crosshairs and track ball behavior.
 * Supports 10 different types of technical indicators that determine financial, stock or economic trends by analyzing a set of recorded data. 
 * Supports multiple axes that can be stacked and spanned for multiple panes.
 * SfChart provides support to render multiple series at the same time, with options to compare and visualize two different chart series, simultaneously.

@@ -108,7 +108,7 @@ SegmentLabelContent</td><td>
 Gets or sets the LabelContent value that represents the content of the Segment Label.</td></tr>
 <tr>
 <td>
-Showlabel</td><td>
+ShowLabel</td><td>
 Gets or sets the bool value that represents a value to enable the Show Label.</td></tr>
 <tr>
 <td>
@@ -596,7 +596,7 @@ SegmentLabelContent</td><td>
 Gets or sets the LabelContent value that represents the content of the label.</td></tr>
 <tr>
 <td>
-Showlabel</td><td>
+ShowLabel</td><td>
 Gets or sets the bool value that enable or disable the labels.</td></tr>
 <tr>
 <td>

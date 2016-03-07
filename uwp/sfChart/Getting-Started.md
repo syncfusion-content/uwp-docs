@@ -228,7 +228,7 @@ Now you can add the chart elements required for the above scenario to the SfChar
 
 ### Add Header to Chart
 
-The header of the chart acts as the title of the chartcreated, to identify its purpose. Here, the header, Demand Comparison of Gold, is added.
+The header of the chart acts as the title of the chart created, to identify its purpose. Here, the header, Demand Comparison of Gold, is added.
 
 
 
@@ -753,7 +753,7 @@ chart.Legend = New ChartLegend() With {.Visibility = Visibility.Visible}
 
 {% endtabs %}
 
-Now you have created a chartthat demonstrates the studies related to Gold demands in World market.
+Now you have created a chart that demonstrates the studies related to Gold demands in World market.
 
  
 {% tabs %}
