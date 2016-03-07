@@ -7,11 +7,11 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Utility Functions
+# Utilitiy Functions
 
 Several utility functions are available in `SfCalculator` control.
 
-## Identifying the operation
+## Identifying the Operation
 
 This method is used to identify the mathematical operation based on the input string.
 
@@ -46,7 +46,7 @@ functionText.Text = "The function is: " + function.ToString();
 ![](Other-utility-functions-images/Other-utility-functions-img1.jpeg)
 
 
-## Clear the expression
+## Clear the Expression
 
 `Clear` function is used to clear both the expression and value in `SfCalculator`.
 
@@ -60,7 +60,7 @@ calculator.Clear();
 
 {% endtabs %}
 
-## Clear the value
+## Clear the Value
 
 `ClearEntry` function is used to clear the entered/computed value in `SfCalculator`.
 
@@ -74,7 +74,7 @@ calculator.ClearEntry();
 
 {% endtabs %}
 
-## Clear and reset the expression
+## Clear and Reset the Expression
 
 `Reset` function is used to clear and reset the expression.
 
@@ -88,9 +88,9 @@ calculator.Reset();
 
 {% endtabs %}
 
-## Removing trailing zeros
+## Removing Trailing Zeroes
 
-`TrailingZeros` method is used to remove the trailing zeros at the end of value.
+`TrailingZeros` method is used to remove the trailing zeroes at the end of value.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ calculator.TrailingZeros();
 
 {% endtabs %}
 
-## Change separators based on culture
+## Change Sepeartors based on Culture
 
 `SfCalculator` has Culture support that allows to have decimal separator symbols based on the culture.
 
@@ -127,5 +127,3 @@ calculator.Culture = new System.Globalization.CultureInfo("de-DE");
 {% endtabs %}
 
 ![](Other-utility-functions-images/Other-utility-functions-img2.jpeg)
-
-
