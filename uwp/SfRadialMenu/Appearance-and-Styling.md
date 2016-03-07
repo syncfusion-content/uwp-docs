@@ -80,7 +80,7 @@ RimRadiusFactor property of SfRadialMenu can be used to set the radius of the it
 
 ## Navigation Button Style
 
-The navigation button displayed in the center of SfRadialMenu can be styled using NaviationButtonStyle property. 
+The navigation button displayed in the center of SfRadialMenu can be styled using NavigationButtonStyle property. 
 
 {% highlight xaml %}
 

@@ -307,7 +307,7 @@ _ribbonMenu.Items.Add(_ribbonmenuItem2);
 
 ## SfRibbonGroupBar
 
-SfRibbonGroupBar control is used to group list of items.The items are grouped in the RibbonGropuBar based on classifications.
+SfRibbonGroupBar control is used to group list of items.The items are grouped in the RibbonGroupBar based on classifications.
 
 ### Add RibbonGroupBarItem to RibbonGroupView
 

@@ -13,7 +13,7 @@ All editors have the data validation support, it can be done by inheriting the m
 
 ![C:/Users/labuser/Desktop/a.png](Data-Validation_images/Data-Validation_img1.png)
 
-N>  The Model should also inherit the INotifyPropertychanged Interface.
+N>  The Model should also inherit the INotifyPropertyChanged Interface.
 
 
 

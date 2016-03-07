@@ -117,7 +117,7 @@ carousel.MovePrevious();
 
 ## Customizing the selected item
 
-`SelecteItemTemplate` property is used to apply a template for the selected item
+`SelectedItemTemplate` property is used to apply a template for the selected item
 
 ## Refresh the layout
 

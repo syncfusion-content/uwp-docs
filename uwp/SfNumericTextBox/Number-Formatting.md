@@ -17,7 +17,7 @@ The FormatString property determines the format specifier by which the display t
 
 Default Value of FormatString is N. 
 
-The following code sample shows how to diplay numeric text with currency format.
+The following code sample shows how to display numeric text with currency format.
 
 {% highlight html %}
 

@@ -299,4 +299,4 @@ mosaicTile.Interval = TimeSpan.FromSeconds(5);
 
 {% endtabs %}
 
-Flip effect customization, tile click & ommand, pausing and resuming animation, AccentBrush, TitleStyle topics are available under HubTileBase section.
+Flip effect customization, tile click & command, pausing and resuming animation, AccentBrush, TitleStyle topics are available under HubTileBase section.

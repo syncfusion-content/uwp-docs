@@ -109,7 +109,7 @@ The AMPMDesignatorComboStyle property is used to customize the style of the Date
 
 The Item template property is used to decorate the DateTimeItem drop-down list containing the date or time lists with custom visuals. 
 
-N>  The DataContext of a DateTimeItem dropdownlist containing date or time parts is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
+N>  The DataContext of a DateTimeItem drop-down list containing date or time parts is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
 
 
 
