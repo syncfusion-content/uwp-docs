@@ -7,7 +7,7 @@ control: SfTabControl
 documentation: ug
 ---
 
-# Dealing with Pinnable Tabitems
+# Dealing with Pinnable Tab-Items
 
 Tab Items in SfTabControl can be pinned or unpinned using the pin button next to its header text. 
 

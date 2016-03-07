@@ -7,7 +7,7 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Utilitiy Functions
+# Utility Functions
 
 Several utility functions are available in `SfCalculator` control.
 
@@ -88,9 +88,9 @@ calculator.Reset();
 
 {% endtabs %}
 
-## Removing trailing zeroes
+## Removing trailing zeros
 
-`TrailingZeros` method is used to remove the trailing zeroes at the end of value.
+`TrailingZeros` method is used to remove the trailing zeros at the end of value.
 
 {% tabs %}
 
@@ -102,7 +102,7 @@ calculator.TrailingZeros();
 
 {% endtabs %}
 
-## Change sepeartors based on culture
+## Change separators based on culture
 
 `SfCalculator` has Culture support that allows to have decimal separator symbols based on the culture.
 

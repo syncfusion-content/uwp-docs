@@ -74,7 +74,7 @@ SfRibbon</td></tr>
 <tr>
 <td>
 </td><td>
-SfTileVew</td></tr>
+SfTileView</td></tr>
 <tr>
 <td>
 EDITORS</td><td>

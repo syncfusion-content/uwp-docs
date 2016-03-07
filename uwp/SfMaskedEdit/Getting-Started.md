@@ -19,7 +19,7 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 * Syncfusion.SfShared.UWP
 
-1.Include the namespace for Syncfusion.Sfinput.UWP assembly in MainPage.xaml
+1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
   
 {% tabs %}
 

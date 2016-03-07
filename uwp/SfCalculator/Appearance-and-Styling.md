@@ -57,7 +57,7 @@ Display pane is the panel that contain elements displaying value and expression.
 
 ## Customizing input panel
 
-Input pane is a panel in SfCalulator that contains number buttons. It can be styled as follows.
+Input pane is a panel in SfCalculator that contains number buttons. It can be styled as follows.
 
 {% tabs %}
 

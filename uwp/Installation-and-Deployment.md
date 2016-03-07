@@ -90,7 +90,7 @@ Using `Manage NuGet packages` in Visual Studio, NuGet packages can be update.
 
    N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
-## Commandline Installation
+## Command Line Installation
 
 
 Follow the given steps to install through Command Line in Silent mode.
@@ -117,7 +117,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 ## Copy Local
 
-Copying assemblies to local folder is supported by Syncfusion components. It can be achieved by setting the assembly’s Copy Local property to true, so that it can be copied to Bin\Release, Bin\Debug folders. The files .exe, dlls, xml, .pri, rd.xml, .xaml  are copied to client machines.
+Copying assemblies to local folder is supported by Syncfusion components. It can be achieved by setting the assembly’s Copy Local property to true, so that it can be copied to Bin\Release, Bin\Debug folders. The files .exe, dll, xml, .pri, rd.xml, .xaml  are copied to client machines.
 
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)
 

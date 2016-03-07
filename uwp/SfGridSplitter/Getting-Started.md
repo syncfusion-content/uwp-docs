@@ -13,7 +13,7 @@ This section explains how to create snapping styled splitter using `SfGridSplitt
 
 ## Planning the layout 
 
-Number of grid splitters required is based on the number of elements in layout and their arrangement. Here we are having four elements (Calculator, Calendar, images) and these elements are arranged horizontally as two sets, each set has two items that were arranged vertically. This layout requirest three grid splitters to resize all the elements in all proportions. Split the grid to required number of rows and columns as given below:
+Number of grid splitters required is based on the number of elements in layout and their arrangement. Here we are having four elements (Calculator, Calendar, images) and these elements are arranged horizontally as two sets, each set has two items that were arranged vertically. This layout required three grid splitters to resize all the elements in all proportions. Split the grid to required number of rows and columns as given below:
 
 {% tabs %}
 
