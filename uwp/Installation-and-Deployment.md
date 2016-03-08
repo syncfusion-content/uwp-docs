@@ -60,7 +60,7 @@ The steps to install the Syncfusion UWP NuGet Packages in Visual Studio are as f
 
 I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
-### NuGet installation
+### NuGet Installation
 
 Syncfusion UWP NuGet can install once configured the package source. The NuGet installation steps as below,
 
@@ -70,7 +70,7 @@ Syncfusion UWP NuGet can install once configured the package source. The NuGet i
 
 2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
 
-   N> NuGet packages can be install directly through the command line (Package Manager Console). Further details click here
+   N> NuGet packages can be install directly through the command line (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console)
 
 ### Updating a NuGet Package
 
