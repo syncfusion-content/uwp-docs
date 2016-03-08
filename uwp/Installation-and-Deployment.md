@@ -60,7 +60,7 @@ The steps to install the Syncfusion UWP NuGet Packages in Visual Studio are as f
 
 I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
-### NuGet installation
+### NuGet Installation
 
 Syncfusion UWP NuGet can install once configured the package source. The NuGet installation steps as below,
 
@@ -70,7 +70,7 @@ Syncfusion UWP NuGet can install once configured the package source. The NuGet i
 
 2. The NuGet Packages are listed which are available in package source location. Install the required packages to your application by clicking `Install` button.
 
-   N> NuGet packages can be install directly through the command line (Package Manager Console). Further details click here
+   N> NuGet packages can be install directly through the command line (Package Manager Console). Further details click [here](http://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-install-and-configuration#install-from-package-manager-console)
 
 ### Updating a NuGet Package
 
@@ -90,7 +90,7 @@ Using `Manage NuGet packages` in Visual Studio, NuGet packages can be update.
 
    N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
-## Commandline Installation
+## Command Line Installation
 
 
 Follow the given steps to install through Command Line in Silent mode.
@@ -117,7 +117,7 @@ N> In above section, Latest Essential Studio version details has been provided. 
 
 ## Copy Local
 
-Copying assemblies to local folder is supported by Syncfusion components. It can be achieved by setting the assembly’s Copy Local property to true, so that it can be copied to Bin\Release, Bin\Debug folders. The files .exe, dlls, xml, .pri, rd.xml, .xaml  are copied to client machines.
+Copying assemblies to local folder is supported by Syncfusion components. It can be achieved by setting the assembly’s Copy Local property to true, so that it can be copied to Bin\Release, Bin\Debug folders. The files .exe, dll, xml, .pri, rd.xml, .xaml  are copied to client machines.
 
 ![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)
 

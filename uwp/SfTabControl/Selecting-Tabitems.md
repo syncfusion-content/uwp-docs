@@ -7,7 +7,7 @@ control: SfTabControl
 documentation: ug
 ---
 
-# Selecting Tabitems
+# Selecting Tab-Items
 
 SfTabControl can have only one selected item at a time. Tab items can be selected by 
 

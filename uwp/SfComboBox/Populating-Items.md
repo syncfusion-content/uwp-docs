@@ -11,7 +11,7 @@ documentation: ug
 
 ## Items Source
 
-SfComboBoxItems can be populated with the business object collection. The below example is illustated to create a SfComboBox that display a list of employees. 
+SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a SfComboBox that display a list of employees. 
 
 The Employee model is displayed as follows.
 

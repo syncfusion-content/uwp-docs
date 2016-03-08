@@ -78,7 +78,7 @@ Set the image as Content of `SfPulsingTile` as given below:
 
 ### Applying zoom animation
 
-Adjusts the values of properties such as PulseScale, RadiusX and RadiuxY.
+Adjusts the values of properties such as PulseScale, RadiusX and RadiusY.
 
 
 {% tabs %}

@@ -7,7 +7,7 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-# Exapnsion Modes
+# Expansion Modes
 
 `SfTreeNavigator` supports two different modes to support navigation. They are:
 

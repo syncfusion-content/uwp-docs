@@ -64,7 +64,7 @@ Syncfusion.SfRibbon.UWP</td><td>
 Syncfusion.SfShared.UWP</br></br>Syncfusion.SfInput.UWP</td></tr>
 <tr>
 <td>
-SfTileVew</td><td>
+SfTileView</td><td>
 Syncfusion.SfTileView.UWP</td><td>
 Syncfusion.SfShared.UWP</td></tr>
 <tr>

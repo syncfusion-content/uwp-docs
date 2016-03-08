@@ -314,7 +314,7 @@ Models.Add(metroStudio);
 
 {% endtabs %}
 
-Treenavigator items need a template to render so `SfTreeNavigator` control is populated as follows:
+TreeNavigator items need a template to render so `SfTreeNavigator` control is populated as follows:
 
 ![](Populating-Items-images/Populating-Items-img4.jpeg)
 
@@ -348,7 +348,7 @@ Header can be displayed by setting ItemTemplate. Setting DataTemplate does not a
 
 ### Adding SubItems
 
-Subitems can be viewed only if the item template is HierarchicalDataTemplate rather than DataTemplate. HierarchicalDataTemplate class is available in Syncfusion.UI.Xaml.Primitives namespace.
+Sub-items can be viewed only if the item template is HierarchicalDataTemplate rather than DataTemplate. HierarchicalDataTemplate class is available in Syncfusion.UI.Xaml.Primitives namespace.
 
 {% tabs %}
 
