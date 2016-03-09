@@ -184,9 +184,9 @@ This allows us to specify the label for each series which is to be displayed in 
 
 ## Checkbox 
 
-Used to view or collapse the associated series. By default, the ['CheckBoxVisibility']   is *Collapsed*. 
+Used to view or collapse the associated series. By default, the CheckboxVisibility is *Collapsed*. 
 
-We can enable it by using the ['CheckBoxVisibility'] property as in below code example:
+We can enable it by using the `CheckBoxVisibility` property as in below code example:
 
 
 {% highlight xml %}
