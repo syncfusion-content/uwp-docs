@@ -226,7 +226,7 @@ This allows us to specify the label for each series which is to be displayed in 
 
 ## Checkbox 
 
-Used to view or collapse the associated series. By default, the CheckboxVisibilty is *Collapsed*. 
+Used to view or collapse the associated series. By default, the ['CheckBoxVisibility']   is *Collapsed*. 
 
 We can enable it by using the **CheckBoxVisibilty** property as in below code example:
 

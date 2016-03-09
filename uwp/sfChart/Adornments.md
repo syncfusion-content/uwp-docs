@@ -23,13 +23,13 @@ The following topic discuss briefly about various adornment customization,
 
 The positioning of adornments inside the series is defined inside the Adornment Position property. This property differs in behavior based on the series type being used. 
 
-For instance, when you look at the Adornment Position of ColumnSeries it can be set as TopandBottom and the adornment is placed in the middle of the segment accordingly, whereas in the LineSeries the only available position to display the Chart Adornment is the (x,y) point. 
+For instance, when you look at the Adornment Position of ColumnSeries it can be set as TopAndBottom and the adornment is placed in the middle of the segment accordingly, whereas in the LineSeries the only available position to display the Chart Adornment is the (x,y) point. 
 
 Depending upon the requirement, adornments can be positioned in three ways.
 
 * Top- Positions the Adornment at the top edge point of a chart segment.
 * Bottom- Positions the Adornment at the bottom edge point of a chart segment.
-* TopandBottom- Positions the Adornment at the center point of a chart segment. 
+* TopAndBottom- Positions the Adornment at the center point of a chart segment. 
 
 The following code example explains the positioning of adornments in the Chart Segment.
 
@@ -108,7 +108,7 @@ SegmentLabelContent</td><td>
 Gets or sets the LabelContent value that represents the content of the Segment Label.</td></tr>
 <tr>
 <td>
-Showlabel</td><td>
+ShowLabel</td><td>
 Gets or sets the bool value that represents a value to enable the Show Label.</td></tr>
 <tr>
 <td>
@@ -596,7 +596,7 @@ SegmentLabelContent</td><td>
 Gets or sets the LabelContent value that represents the content of the label.</td></tr>
 <tr>
 <td>
-Showlabel</td><td>
+ShowLabel</td><td>
 Gets or sets the bool value that enable or disable the labels.</td></tr>
 <tr>
 <td>
