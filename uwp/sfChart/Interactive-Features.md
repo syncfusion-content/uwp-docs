@@ -66,7 +66,7 @@ VerticalOffset</td><td>
 This is an attached property that gets or sets the tooltip offset position in accordance with the VerticalAlignment property.</td></tr>
 </table> 
 
-Note : By default, the ToolTip is disabled. It must be enabled inorder to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
+Note : By default, the ToolTip is disabled. It must be enabled in order to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
 
 The following code example can be added to enable and customize the ToolTip feature.
 
@@ -114,7 +114,7 @@ Gets or sets the VerticalAlignment value that represents the alignment of vertic
 <tr>
 <td>
 HorizontalAxisLabelAlignment</td><td>
-Gets or sets the HorizontallAlignment value that represents the alignment of the horizontal axis label.</td></tr>
+Gets or sets the HorizontalAlignment value that represents the alignment of the horizontal axis label.</td></tr>
 <tr>
 <td>
 VerticalLineStyle</td><td>
@@ -1074,7 +1074,7 @@ SfChart provides data point selection for adornments and the HighlightOnSelectio
 
 All the series having Selection support, support the Adornment property.
 
-The following example shows the HighlighOnSelection feature for adornment.
+The following example shows the HighlightOnSelection feature for adornment.
 
 {% highlight xml %}
 
