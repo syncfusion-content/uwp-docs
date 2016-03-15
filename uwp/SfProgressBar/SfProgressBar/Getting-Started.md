@@ -116,7 +116,9 @@ void timer_Tick(object sender, object e)
 {
 
 if(progressBar.Value <=100.0)
+
 progressBar.Value += 1.0;
+
 else
 {
 
