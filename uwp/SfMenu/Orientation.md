@@ -25,7 +25,7 @@ Similarly, when the value of the `Orientation` property is set to Vertical, the 
 
 `Orientation` of `SfMenu` can be changed as mentioned in the code snippet.
 
-{% tbas %}
+{% tabs %}
 
 {% highlight XAML %}
 
