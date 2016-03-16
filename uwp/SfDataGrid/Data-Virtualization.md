@@ -788,6 +788,7 @@ public class ViewModel : INotifyPropertyChanged
     }
 }
 {% endhighlight %}
+{% endtabs %}
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_LoadMoreItems-925087250.zip).
 
