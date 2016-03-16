@@ -1500,7 +1500,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 
 ### Opening dropdown popup in single-click
 
-You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.combobox.isdropdownopen.aspx) property to `true` in `OnInitializeEditElement`method by overriding existing renderer.
+You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.combobox.isdropdownopen.aspx) property to `true` in `OnEditElementLoaded` method by overriding existing renderer.
 
 Below code, creates `GridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in `SfDataGrid.CellRenderers` collection.
 
@@ -1509,16 +1509,19 @@ Below code, creates `GridCellComboBoxRendererExt` to set `IsDropDownOpen` proper
 this.dataGrid.CellRenderers.Remove("ComboBox");
 this.dataGrid.CellRenderers.Add("ComboBox", new GridCellComboBoxRendererExt());
 
-public class GridCellComboBoxRendererExt:GridCellComboBoxRenderer
+public class GridCellComboBoxRendererExt: GridCellComboBoxRenderer
 {
-    public override void OnInitializeEditElement(DataColumnBase dataColumn,ComboBox uiElement, object dataContext)
+    protected override void OnEditElementLoaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
     {
-        base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
-        uiElement.IsDropDownOpen = true;
+        (sender as ComboBox).IsDropDownOpen = true;
+        base.OnEditElementLoaded(sender, e);
     }
 }
 {% endhighlight %}
 {% endtabs %}
+
+
+N> This is applicable when the `SfDataGrid.EditTrigger` is set as `OnTap`.
 
 ### Customizing GroupCaptionText based on DisplayMemberPath
 
