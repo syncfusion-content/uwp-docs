@@ -29,7 +29,7 @@ The brush of animating element (except Custom progress type) in the control can 
 
 progressBar.FillColor = new SolidColorBrush(Colors.Green);
 
-{% endhighlight %
+{% endhighlight %}
 
 {% endtabs %}
 
