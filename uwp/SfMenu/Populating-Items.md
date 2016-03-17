@@ -110,7 +110,11 @@ _header = value;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 2.Create a collection of model
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -168,6 +172,10 @@ MenuCollection.Add(new Model() { Header = "Layout" });
 
 {% endtabs %}
 
+
+
+3.Bind the MenuCollection to `ItemsSource` property of `SfMenu` Control.
+
 {% tabs %}
 
 {% highlight XAML %}
@@ -177,8 +185,6 @@ MenuCollection.Add(new Model() { Header = "Layout" });
 {% endhighlight %}
 
 {% endtabs%}
-
-3.Bind the MenuCollection to `ItemsSource` property of `SfMenu` Control.
 
 `SfMenu` control is populated as follows:
 
@@ -199,9 +205,7 @@ Content can be displayed using the `DisplayMemberPath` and `ItemTemplate` proper
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img2.jpg)
 
-{ % tabs %}
 
 {% highlight XAML %}
 
@@ -221,4 +225,4 @@ Content can be displayed using the `DisplayMemberPath` and `ItemTemplate` proper
 
 {% endhighlight %}
 
-{% endtabs %}
+![](Populating-Items-images/Populating-Items-img2.jpg)
