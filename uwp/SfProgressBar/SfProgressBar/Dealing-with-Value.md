@@ -1,3 +1,4 @@
+---
 layout: post
 title: Dealing with Value
 description: Dealing with Value for Syncfusion SfProgressBar control for UWP
