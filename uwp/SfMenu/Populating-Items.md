@@ -39,7 +39,9 @@ Here five `SfMenuItems` are added as the children of the `SfMenu`.
 
 {% endhighlight %}
 
+{% endtabs %}
 
+{% tabs %}
 
 {% highlight C# %}
 
@@ -219,4 +221,4 @@ Content can be displayed using the `DisplayMemberPath` and `ItemTemplate` proper
 
 {% endhighlight %}
 
-{% endtbas %}
+{% endtabs %}
