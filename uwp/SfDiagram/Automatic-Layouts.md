@@ -184,7 +184,7 @@ The following table illustrates the different chart orientations and chart types
 | Horizontal | Left | Arranges the child Nodes Horizontally at the Left side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img2.jpg) |
 | | Right | Arranges the child Nodes Horizontally at the Right side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img3.jpg) |
 | | Center | Arranges the child Nodes horizontally at the Center side of parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img4.jpg) |
-| Vertical | Vertically arranges the children at the Left side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img5.jpg) |
+| Vertical | Left | Vertically arranges the children at the Left side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img5.jpg) |
 | | Right | Vertically arranges the children at the Right side of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img6.jpg) |
 | | Alternate | Vertically arranges the children at both Left and Right sides of Parent. | ![](Automatic-Layouts_images/Automatic-Layouts_img7.jpg) |
 
