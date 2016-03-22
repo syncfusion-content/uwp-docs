@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started for Syncfusion SfGroupBar control
 description: Getting Started for Syncfusion SfGroupBar control 
