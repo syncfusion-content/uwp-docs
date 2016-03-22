@@ -45,6 +45,18 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+ SfAccordion accordion = new SfAccordion();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim accordion As New SfAccordion()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Adding children to SfAccordion control
@@ -68,6 +80,44 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 <layout:SfAccordionItem/>
 
 </layout:SfAccordion>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+  SfAccordion accordion = new SfAccordion();
+
+  accordion.Items.Add(new SfAccordionItem());
+
+  accordion.Items.Add(new SfAccordionItem());
+
+  accordion.Items.Add(new SfAccordionItem());
+
+  accordion.Items.Add(new SfAccordionItem());
+
+  accordion.Items.Add(new SfAccordionItem());
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  Dim accordion As New SfAccordion()
+
+  accordion.Items.Add(New SfAccordionItem())
+
+  accordion.Items.Add(New SfAccordionItem())
+
+  accordion.Items.Add(New SfAccordionItem())
+
+  accordion.Items.Add(New SfAccordionItem())
+
+  accordion.Items.Add(New SfAccordionItem())
+
 
 {% endhighlight %}
 
@@ -98,6 +148,44 @@ SfAccordionItem has `Header` property to set header for the accordion items. Set
 {% endhighlight %}
 
 {% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfAccordion accordion = new SfAccordion();
+
+accordion.Items.Add(new SfAccordionItem() { Header = "WPF" });
+
+accordion.Items.Add(new SfAccordionItem() { Header = "Silverlight" });
+
+accordion.Items.Add(new SfAccordionItem() { Header = "WinRT" });
+
+accordion.Items.Add(new SfAccordionItem() { Header = "Windows Phone" });
+
+accordion.Items.Add(new SfAccordionItem() { Header = "Universal" });
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim accordion As New SfAccordion()
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "WPF"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Silverlight"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "WinRT"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Windows Phone"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview-images/GettingStarted_image1.png)
 
 ## Applying template for item header
 
@@ -438,3 +526,5 @@ FontSize="12"/>
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Overview-images/GettingStarted-image2.png)

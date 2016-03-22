@@ -42,6 +42,18 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfBusyIndicator busyIndicator = new SfBusyIndicator();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim busyIndicator As New SfBusyIndicator()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfBusyIndicator1/Winrt.png)
@@ -64,6 +76,22 @@ Choose an animation from the available built-in animations and set it using `Ani
 
 {% endtabs %}
 
+{% tabs %}
+
+{% highlight C# %}
+ 
+SfBusyIndicator busyIndicator = new SfBusyIndicator() { AnimationType = AnimationTypes.Gear };
+
+{% endhighlight %}
+
+{% highlight VB %}
+ 
+Dim busyIndicator As New SfBusyIndicator() With {.AnimationType = AnimationTypes.Gear}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](SfBusyIndicator1/Gear.png)
 
 ## Setting busy header
@@ -79,6 +107,22 @@ Set the `Header` property with text “Loading…” to display a busy status an
 <notification:SfBusyIndicator Header="Loading..."/>
 
 </Grid>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+ 
+SfBusyIndicator busyIndicator = new SfBusyIndicator() { Header="Loading..." };
+
+{% endhighlight %}
+
+{% highlight VB %}
+ 
+ Dim busyIndicator As New SfBusyIndicator() With {.Header="Loading..."}
 
 {% endhighlight %}
 

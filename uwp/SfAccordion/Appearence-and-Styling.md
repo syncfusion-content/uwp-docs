@@ -38,6 +38,12 @@ accordion.AccentBrush = new SolidColorBrush() { Color = Windows.UI.Colors.Red };
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+accordion.AccentBrush = New SolidColorBrush() With {.Color = Windows.UI.Colors.Red}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Appearence-and-Styling-images/appearence-and-styling-img1.jpeg)
