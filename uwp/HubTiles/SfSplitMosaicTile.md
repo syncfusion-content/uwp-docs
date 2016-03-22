@@ -55,6 +55,18 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfSplitMosaicTile splitMosaicTile = new SfSplitMosaicTile();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim splitMosaicTile As New SfSplitMosaicTile()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -122,6 +134,12 @@ Store the images in project and set the properties `Header` and `ImageList` as g
 {% highlight C# %}
 
 splitMosaicTile.Header = "Mosaic Tile";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+splitMosaicTile.Header = "Mosaic Tile"
 
 {% endhighlight %}
 
@@ -219,6 +237,38 @@ splitMosaicTile.ImageList.Add("Assets/emp9.png");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+splitMosaicTile.ImageList = New ImageList()
+
+splitMosaicTile.ImageList.Add("Assets/emp10.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp11.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp12.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp13.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp1.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp2.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp3.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp4.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp5.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp6.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp7.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp8.png")
+
+splitMosaicTile.ImageList.Add("Assets/emp9.png")
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Setting ImageSource
@@ -259,6 +309,29 @@ splitMosaicTile.BitmapImageList = list;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Sub New()
+
+
+Me.InitializeComponent()
+
+Dim list As New BitmapImageList()
+
+For i As Integer = 1 To 13
+
+list.Add(New Image() With {
+	.Source = New BitmapImage() With {.UriSource = New Uri("ms-appx:///Assets/emp" & i & ".png", UriKind.Absolute)}
+})
+Next i
+
+splitMosaicTile.BitmapImageList = list
+
+End Sub
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfSplitMosaicTile-images/SfSplitMosaicTile-img5.jpeg)
@@ -272,6 +345,12 @@ Image urls can be checked for existence using CheckForExistence method before ad
 {% highlight C# %}
 
 splitMosaicTile.CheckForExistence("Assets/emp1.png");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+splitMosaicTile.CheckForExistence("Assets/emp1.png")
 
 {% endhighlight %}
 
@@ -292,6 +371,12 @@ splitMosaicTile.CheckForExistence("Assets/emp1.png");
 {% highlight C# %}
 
 splitMosaicTile.Interval = TimeSpan.FromSeconds(5);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+splitMosaicTile.Interval = TimeSpan.FromSeconds(5)
 
 {% endhighlight %}
 

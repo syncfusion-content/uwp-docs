@@ -54,6 +54,18 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfHubTile hubTile = new SfHubTile();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim hubTile As New SfHubTile()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -82,6 +94,41 @@ Set the properties Header, Title, ImageSource and SecondaryContent as given belo
 {% endhighlight %}
 
 {% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+  SfHubTile hubTile = new SfHubTile() { Width = 183, Height = 173, Header = "HubTile", Title = "This is title area", Foreground = new SolidColorBrush(Colors.White) };
+
+  ImageSource primaryContent = new BitmapImage(new Uri(@"ms-appx:///Assets/New Mail.png", UriKind.RelativeOrAbsolute));
+         
+  hubTile.ImageSource = primaryContent;
+  hubTile.SecondaryContent = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/HubTile.png", UriKind.RelativeOrAbsolute))  };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  Dim hubTile As New SfHubTile() With {
+	 .Width = 183,
+	 .Height = 173,
+	 .Header = "HubTile",
+	 .Title = "This is title area",
+	 .Foreground = New SolidColorBrush(Colors.White)
+ }
+
+Dim primaryContent As ImageSource = New BitmapImage(New Uri("ms-appx:///Assets/New Mail.png", UriKind.RelativeOrAbsolute))
+
+hubTile.ImageSource = primaryContent
+hubTile.SecondaryContent = New Image() With {.Source = New BitmapImage(New Uri("ms-appx:///Assets/HubTile.png", UriKind.RelativeOrAbsolute))}
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](SfHubTile-images/SfHubTile-img1.jpeg)
 
 ### Applying tile transitions
 
@@ -125,6 +172,52 @@ Apply the required transitions such as Rotate transition, Slide transition, Fade
 <Grid/>
 
 <Page/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ SfHubTile hubTile = new SfHubTile() { Width = 183, Height = 173, Header = "HubTile", Title = "This is title area", Foreground = new SolidColorBrush(Colors.White) };
+
+ ImageSource primaryContent = new BitmapImage(new Uri(@"ms-appx:///Assets/New Mail.png", UriKind.RelativeOrAbsolute));
+         
+ hubTile.ImageSource = primaryContent;
+ hubTile.SecondaryContent = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/HubTile.png", UriKind.RelativeOrAbsolute))  };
+
+ hubTile.HubTileTransitions.Add(new RotateTransition());
+
+ hubTile.HubTileTransitions.Add(new SlideTransition());
+
+ hubTile.HubTileTransitions.Add(new FadeTransition());
+ hubTile.Interval = TimeSpan.FromSeconds(1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim hubTile As New SfHubTile() With {
+	.Width = 183,
+	.Height = 173,
+	.Header = "HubTile",
+	.Title = "This is title area",
+	.Foreground = New SolidColorBrush(Colors.White)
+}
+
+ Dim primaryContent As ImageSource = New BitmapImage(New Uri("ms-appx:///Assets/New Mail.png", UriKind.RelativeOrAbsolute))
+
+ hubTile.ImageSource = primaryContent
+ hubTile.SecondaryContent = New Image() With {.Source = New BitmapImage(New Uri("ms-appx:///Assets/HubTile.png", UriKind.RelativeOrAbsolute))}
+
+ hubTile.HubTileTransitions.Add(New RotateTransition())
+
+ hubTile.HubTileTransitions.Add(New SlideTransition())
+
+ hubTile.HubTileTransitions.Add(New FadeTransition())
+ hubTile.Interval = TimeSpan.FromSeconds(1)
 
 {% endhighlight %}
 
@@ -174,6 +267,38 @@ Header="HubTile"/>
 
 {% endtabs %}
 
+{% tabs %}
+
+{% highlight C# %}
+
+ SfHubTile hubTile = new SfHubTile() {HorizontalAlignment = HorizontalAlignment.Center,
+ VerticalAlignment = VerticalAlignment.Center ,Title = "This is title area." ,Header = "HubTile",
+ Foreground = new SolidColorBrush(Colors.White)};
+
+ImageSource primaryContent = new BitmapImage(new Uri(@"ms-appx:///Assets/New Mail.png", UriKind.RelativeOrAbsolute));
+
+hubTile.ImageSource = primaryContent;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim hubTile As New SfHubTile() With {
+	.HorizontalAlignment = HorizontalAlignment.Center,
+	.VerticalAlignment = VerticalAlignment.Center,
+	.Title = "This is title area.",
+	.Header = "HubTile",
+	.Foreground = New SolidColorBrush(Colors.White)
+}
+
+Dim primaryContent As ImageSource = New BitmapImage(New Uri("ms-appx:///Assets/New Mail.png", UriKind.RelativeOrAbsolute))
+
+hubTile.ImageSource = primaryContent
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](SfHubTile-images/SfHubTile-img4.jpeg)
 
 ![](SfHubTile-images/SfHubTile-img5.jpeg)
@@ -205,6 +330,12 @@ All the transition effects takes place with the specified interval. By default, 
 {% highlight C# %}
 
 hubTile.Interval = TimeSpan.FromSeconds(1);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+hubTile.Interval = TimeSpan.FromSeconds(1)
 
 {% endhighlight %}
 
@@ -298,6 +429,22 @@ hubTile.HubTileTransitions.Add(new FadeTransition());
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls
+
+Public Sub New()
+
+hubTile.HubTileTransitions.Add(New RotateTransition())
+
+hubTile.HubTileTransitions.Add(New SlideTransition())
+
+hubTile.HubTileTransitions.Add(New FadeTransition())
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Notifying transition completed
@@ -325,6 +472,15 @@ private void hubTile_HubTileTransitionCompleted(object Sender, AnimationComplete
 {
 
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub hubTile_HubTileTransitionCompleted(ByVal Sender As Object, ByVal args As AnimationCompletedArgs)
+
+
+End Sub
 
 {% endhighlight %}
 
