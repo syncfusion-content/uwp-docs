@@ -41,6 +41,12 @@ carousel.Duration =  TimeSpan.FromSeconds(1.0);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.Duration = TimeSpan.FromSeconds(1.0)
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Customizing the item selection animation
@@ -82,6 +88,22 @@ carousel.EasingFunction = new BackEase() { EasingMode = EasingMode.EaseInOut, Am
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Imports Windows.UI.Xaml.Media.Animation
+
+Public Sub New()
+
+
+carousel.EasingFunction = New BackEase() With {
+	.EasingMode = EasingMode.EaseInOut,
+	.Amplitude = 0.3
+}
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Rotate items
@@ -105,6 +127,12 @@ carousel.EasingFunction = new BackEase() { EasingMode = EasingMode.EaseInOut, Am
 {% highlight C# %}
 
 carousel.RotationAngle = 70.0;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+carousel.RotationAngle = 70.0
 
 {% endhighlight %}
 

@@ -35,6 +35,14 @@ calendar.SelectedDate = new DateTime(2015, 12, 15);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim calendar As New SfCalendar()
+
+calendar.SelectedDate = New Date(2015, 12, 15)
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Selecting multiple dates
@@ -73,6 +81,25 @@ public MainPage()
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Sub New()
+
+   Dim dateCollection As New ObservableCollection(Of DateRange)()
+
+   dateCollection.Add(New DateRange(New Date(2015, 12, 1), New Date(2015, 12, 7)))
+
+   dateCollection.Add(New DateRange(New Date(2015, 12, 15), New Date(2015, 12, 17)))
+
+   dateCollection.Add(New DateRange(New Date(2015, 12, 27), New Date(2015, 12, 31)))
+
+   calendar.SelectedDates = dateCollection
+
+End Sub
+
+{% endhighlight %}
+
+
 {% endtabs %}
 
 Multiple dates can be selected by
@@ -103,6 +130,12 @@ DateRange dateRange = new DateRange(new DateTime(2015, 12, 15));
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim dateRange As New DateRange(New Date(2015, 12, 15))
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Creating DateRange with multiple DateTime
@@ -114,6 +147,12 @@ Create an instance of DateRange with `StartDate` and `EndDate`. So that it retur
 {% highlight C# %}
 
 DateRange dateRange = new DateRange(new DateTime(2015, 12, 15), new DateTime(2015, 12, 17));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim dateRange As New DateRange(New Date(2015, 12, 15), New Date(2015, 12, 17))
 
 {% endhighlight %}
 
@@ -145,6 +184,12 @@ calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Setting display date
@@ -168,6 +213,14 @@ calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single;
 SfCalendar calendar = new SfCalendar();
 
 calendar.DisplayDate = new DateTime(2015, 12, 19);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim calendar As New SfCalendar()
+
+calendar.DisplayDate = New Date(2015, 12, 19)
 
 {% endhighlight %}
 
@@ -200,6 +253,16 @@ private void calendar_SelectionChanged(object sender, SelectionChangedEventArgs 
 }
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub calendar_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+
+
+End Sub
+
+{% endhighlight %}
+
 
 {% endtabs %}
 

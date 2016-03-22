@@ -45,6 +45,18 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfCarousel carousel = new SfCarousel();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim carousel As New SfCarousel()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Adding SfCarouselItems to the control
@@ -66,6 +78,42 @@ Here SfCarouselItems are added as the children of the SfCarousel.
 <layout:SfCarouselItem/>
 
 </layout:SfCarousel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfCarousel carousel = new SfCarousel();
+
+carousel.Items.Add(new SfCarouselItem());
+
+carousel.Items.Add(new SfCarouselItem());
+
+carousel.Items.Add(new SfCarouselItem());
+
+carousel.Items.Add(new SfCarouselItem());
+
+carousel.Items.Add(new SfCarouselItem());
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim carousel As New SfCarousel()
+
+carousel.Items.Add(New SfCarouselItem())
+
+carousel.Items.Add(New SfCarouselItem())
+
+carousel.Items.Add(New SfCarouselItem())
+
+carousel.Items.Add(New SfCarouselItem())
+
+carousel.Items.Add(New SfCarouselItem())
 
 {% endhighlight %}
 
@@ -106,6 +154,50 @@ Content property helps to set the content for SfCarouselItem. `SfCarouselItem` i
 </layout:SfCarouselItem>
 
 </layout:SfCarousel>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfCarousel carousel = new SfCarousel() { Height = 500, Width = 500 };
+
+carousel.Items.Add(new SfCarouselItem() { Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/1.jpg", UriKind.RelativeOrAbsolute)) } });
+
+carousel.Items.Add(new SfCarouselItem() { Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/2.jpg", UriKind.RelativeOrAbsolute)) } });
+
+carousel.Items.Add(new SfCarouselItem() { Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/3.jpg", UriKind.RelativeOrAbsolute)) } });
+
+carousel.Items.Add(new SfCarouselItem() { Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/4.jpg", UriKind.RelativeOrAbsolute)) } });
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim carousel As New SfCarousel() With {
+	.Height = 500,
+	.Width = 500
+}
+
+carousel.Items.Add(New SfCarouselItem() With {
+	.Content = New Image() With {.Source = New BitmapImage(New Uri("ms-appx:///Assets/1.jpg", UriKind.RelativeOrAbsolute))}
+})
+
+carousel.Items.Add(New SfCarouselItem() With {
+	.Content = New Image() With {.Source = New BitmapImage(New Uri("ms-appx:///Assets/2.jpg", UriKind.RelativeOrAbsolute))}
+})
+
+carousel.Items.Add(New SfCarouselItem() With {
+	.Content = New Image() With {.Source = New BitmapImage(New Uri("ms-appx:///Assets/3.jpg", UriKind.RelativeOrAbsolute))}
+})
+
+carousel.Items.Add(New SfCarouselItem() With {
+	.Content = New Image() With {.Source = New BitmapImage(New Uri("ms-appx:///Assets/4.jpg", UriKind.RelativeOrAbsolute))}
+})
+
 
 {% endhighlight %}
 
