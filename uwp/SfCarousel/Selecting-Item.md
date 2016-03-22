@@ -44,6 +44,12 @@ carousel.SelectedIndex = 2;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.SelectedIndex = 2
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfCarousel-images/SfCarousel-img7.jpeg)
@@ -83,6 +89,12 @@ carousel.SelectedItem = item3;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.SelectedItem = item3
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfCarousel-images/SfCarousel-img8.jpeg)
@@ -99,6 +111,12 @@ carousel.MoveNext();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.MoveNext()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Navigating to previous item
@@ -110,6 +128,12 @@ carousel.MoveNext();
 {% highlight C# %}
 
 carousel.MovePrevious();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+carousel.MovePrevious()
 
 {% endhighlight %}
 

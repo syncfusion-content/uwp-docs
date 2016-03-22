@@ -37,6 +37,12 @@ decimal value = calculator.Value;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+ Dim calculator As New SfCalculator()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Displaying a default value
@@ -50,6 +56,13 @@ decimal value = calculator.Value;
 calculator.DefaultValue = 34.67M;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+calculator.DefaultValue = 34.67D
+
+{% endhighlight %}
+
 
 {% endtabs %}
 
@@ -74,6 +87,12 @@ calculator.DefaultValue = 34.67M;
 {% highlight C# %}
 
 calculator.DisplayText = "DisplayText";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calculator.DisplayText = "DisplayText"
 
 {% endhighlight %}
 
@@ -109,6 +128,15 @@ calculator.Expression = "1+2+3+4";
 string expression = calculator.Expression;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+calculator.Expression = "1+2+3+4"
+
+Dim expression As String = calculator.Expression
+
+{% endhighlight %}
+
 
 {% endtabs %}
 

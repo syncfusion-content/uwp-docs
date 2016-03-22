@@ -31,6 +31,12 @@ colorPicker.SelectedColor = Colors.Green;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+colorPicker.SelectedColor = Colors.Green
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Selecting-Color-images/Selecting-Color-img1.jpeg)
@@ -44,6 +50,12 @@ colorPicker.SelectedColor = Colors.Green;
 {% highlight C# %}
 
 Color previousColor = colorPicker.PreviousColor;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim previousColor As Color = colorPicker.PreviousColor
 
 {% endhighlight %}
 
@@ -75,6 +87,15 @@ private void colorPicker_SelectedColorChanged(object sender, DependencyPropertyC
 {
 
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub colorPicker_SelectedColorChanged(ByVal sender As Object, ByVal e As DependencyPropertyChangedEventArgs)
+
+
+End Sub
 
 {% endhighlight %}
 

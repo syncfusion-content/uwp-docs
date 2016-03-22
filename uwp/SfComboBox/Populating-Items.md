@@ -15,6 +15,8 @@ SfComboBoxItems can be populated with the business object collection. The below 
 
 The Employee model is displayed as follows.
 
+{% tabs %}
+
 {% highlight c# %}
 
 public class ProductList
@@ -27,7 +29,22 @@ public class ProductList
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class ProductList
+
+    Public Property Name() As String
+
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Create the employee collection as follows.
+
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -49,11 +66,33 @@ private List<ProductList> products;
 
 {% endhighlight %}
 
+{% highlight VB %}
 
+Private products_Renamed As List(Of ProductList)
+
+Public Property Products() As List(Of ProductList)
+
+
+		 Get
+			 Return products_Renamed
+		 End Get
+
+
+
+		 Set(ByVal value As List(Of ProductList))
+			 products_Renamed = value
+		 End Set
+
+End Property
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Populate the items.
 
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -75,6 +114,29 @@ private List<ProductList> products;
    
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+ Products = New List(Of ProductList)()
+
+ Products.Add(New ProductList() With {.Name = "Tools"})
+
+ Products.Add(New ProductList() With {.Name = "Grid"})
+
+ Products.Add(New ProductList() With {.Name = "Chart"})
+
+ Products.Add(New ProductList() With {.Name = "Gauge"})
+
+ Products.Add(New ProductList() With {.Name = "Olap"})
+
+ Products.Add(New ProductList() With {.Name = "Pivot"})
+
+ Products.Add(New ProductList() With {.Name = "SpreadSheet"})
+   
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Bind the Employees collection to the ItemsSource property of the SfComboBox.
 

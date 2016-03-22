@@ -59,6 +59,22 @@ carousel.Items.Add(new SfCarouselItem());
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim carousel As New SfCarousel()
+
+carousel.Items.Add(New SfCarouselItem())
+
+carousel.Items.Add(New SfCarouselItem())
+
+carousel.Items.Add(New SfCarouselItem())
+
+carousel.Items.Add(New SfCarouselItem())
+
+carousel.Items.Add(New SfCarouselItem())
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Displaying the items
@@ -105,6 +121,22 @@ carousel.Items.Add(new SfCarouselItem() { Content = "Item 5"});
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim carousel As New SfCarousel()
+
+carousel.Items.Add(New SfCarouselItem() With {.Content = "Item 1"})
+
+carousel.Items.Add(New SfCarouselItem() With {.Content = "Item 2"})
+
+carousel.Items.Add(New SfCarouselItem() With {.Content = "Item 3"})
+
+carousel.Items.Add(New SfCarouselItem() With {.Content = "Item 4"})
+
+carousel.Items.Add(New SfCarouselItem() With {.Content = "Item 5"})
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfCarousel-images/SfCarousel-img4.jpeg)
@@ -135,6 +167,19 @@ public string Description { get; set; }
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class Employee
+
+
+Public Property Name() As String
+
+Public Property Description() As String
+
+End Class
+
+{% endhighlight %}
+
 {% endtabs %}
 
 2.Create a collection of model
@@ -157,6 +202,25 @@ set { employees = value; }
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private employees_Renamed As List(Of Employee)
+
+Public Property Employees() As List(Of Employee)
+
+
+Get
+	Return employees_Renamed
+End Get
+
+Set(ByVal value As List(Of Employee))
+	employees_Renamed = value
+End Set
+
+End Property
+
+{% endhighlight %}
+
 {% endtabs %}
 
 3.Populate the collection 
@@ -174,6 +238,33 @@ Employees.Add(new Employee() { Name = "Linda", Description = "Description about 
 Employees.Add(new Employee() { Name = "Carl", Description = "Description about Carl" });
 
 Employees.Add(new Employee() { Name = "Niko", Description = "Description about Niko" });
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Employees = New List(Of Employee)()
+
+Employees.Add(New Employee() With {
+	.Name = "James",
+	.Description = "Description about James"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Linda",
+	.Description = "Description about Linda"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Carl",
+	.Description = "Description about Carl"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Niko",
+	.Description = "Description about Niko"
+})
+
 
 {% endhighlight %}
 
