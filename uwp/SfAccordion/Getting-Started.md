@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create a long list of expandable items using SfAccordion control.
 
-## Adding SfAccordion control
+## Adding SfAccordion Control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
@@ -59,7 +59,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-## Adding children to SfAccordion control
+## Adding Children to SfAccordion Control
 
 `SfAccordion` accepts `SfAccordionItem` as its children when added directly. Here five SfAccordionItems are added as the children of the SfAccordion.
 
@@ -215,7 +215,7 @@ SfAccordion provides `HeaderTemplate` property that allows to apply a common dat
 
 {% endtabs %}
 
-## Setting content for children
+## Setting Content for Children
 
 Any object can be set as the content of `SfAccordionItem`. SfAccordionItem.Content property helps to set the content.
 
