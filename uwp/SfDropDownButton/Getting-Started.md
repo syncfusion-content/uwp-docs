@@ -49,6 +49,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 1.Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml.cs
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -56,14 +57,31 @@ using Syncfusion.UI.Xaml.Controls.Input;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input
+
+{% endhighlight %}
+
+{% endtabs %}
 
 2.Now add the SfDropDownButton control with an optimal name 
+
+{% tabs %}
 
 {% highlight c# %}
 
 SfDropDownButton dropDownButton = new SfDropDownButton();
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim dropDownButton As New SfDropDownButton()
+
+{% endhighlight %}
+
+{% endtabs %}
 
 This will create an empty SfDropDownButton control.
 

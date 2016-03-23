@@ -33,7 +33,7 @@ N>  Since CultureInfo type does not contain a default constructor, it is not pos
 
 SfNumericTextBox respects both Culture and FormatString while formatting Text. In the below Code sample, German Culture and Currency format specifier have been set for Culture and FormatString properties respectively.
 {% tabs %}
-{% highlight html %}
+{% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -61,11 +61,22 @@ FormatString="C"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 numericTextBox.Culture = new System.Globalization.CultureInfo("de-DE");
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+numericTextBox.Culture = New System.Globalization.CultureInfo("de-DE")
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Concepts_images/Concepts_img5.png)

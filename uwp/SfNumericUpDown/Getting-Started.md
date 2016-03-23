@@ -48,4 +48,14 @@ The following code sample shows how to create the SfNumericUpDown from code-behi
  SfNumericUpDown numericUpDown = new SfNumericUpDown() { Width = 200, Value = 123.45 };
 
 {% endhighlight %}
+
+{% highlight  VB %}
+
+Dim numericUpDown As New SfNumericUpDown() With {
+	.Width = 200,
+	.Value = 123.45
+}
+
+{% endhighlight %}
+
 {% endtabs %}
