@@ -12,8 +12,10 @@ documentation: ug
 ## DropDown direction
 
 The direction of drop down can be changed using DropDownDirection property.
+{% tabs %}
 
 {% highlight xaml %}
+
 <input:SfDropDownButton Content="5/24/2016" DropDownDirection="Top" x:Name="dropdownbutton">
 
 <input:SfDropDownButton.DropDownContent>
@@ -30,6 +32,10 @@ The direction of drop down can be changed using DropDownDirection property.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 dropdownbutton.DropDownDirection = Syncfusion.UI.Xaml.Controls.Input.DropDownDirection.Top;
@@ -37,12 +43,22 @@ dropdownbutton.DropDownDirection = Syncfusion.UI.Xaml.Controls.Input.DropDownDir
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+dropdownbutton.DropDownDirection = Syncfusion.UI.Xaml.Controls.Input.DropDownDirection.Top
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Customizing-DropDown_images/Customizing-DropDown_img1.jpeg)
 
 
 ## DropDown height
 
 The height of drop down can be changed using DropDownHeight property.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -60,12 +76,24 @@ The height of drop down can be changed using DropDownHeight property.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 dropdownbutton.DropDownHeight = 250.0;
 
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+dropdownbutton.DropDownHeight = 250.0
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Customizing-DropDown_images/Customizing-DropDown_img2.jpeg)
 

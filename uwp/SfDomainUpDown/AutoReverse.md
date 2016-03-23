@@ -11,6 +11,8 @@ documentation: ug
 
 Incrementing the value starts from the maximum value once it has reached the minimum value and starts from the minimum value once it has reached the maximum value.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
@@ -30,3 +32,21 @@ AutoReverse="True"
 </editors:SfDomainUpDown >
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+domainUpDown.AutoReverse = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+domainUpDown.AutoReverse = True
+
+{% endhighlight %}
+
+{% endtabs %}

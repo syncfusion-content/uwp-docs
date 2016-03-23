@@ -13,6 +13,7 @@ The DomainUpDown control can be populated with a predefined list of items.
 
 For example, in the following code, the SfDomainUpDown will populate a list of employees:
 
+{% tabs %}
 
 {% highlight c# %}
 
@@ -30,7 +31,26 @@ public class Employee
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class Employee
+
+
+		Public Property Name() As String
+
+
+
+		Public Property Email() As String
+
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Create a collection attribute:
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -50,7 +70,30 @@ private List<Employee> employees;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private employees_Renamed As List(Of Employee)
+
+Public Property Employees() As List(Of Employee)
+
+
+		 Get
+			 Return employees_Renamed
+		 End Get
+
+		 Set(ByVal value As List(Of Employee))
+			 employees_Renamed = value
+		 End Set
+
+End Property
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Populate the collection with items:
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -63,6 +106,29 @@ Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
 Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Employees = New List(Of Employee)()
+
+Employees.Add(New Employee With {
+	.Name = "Lucas",
+	.Email = "lucas@syncfusion.com"
+})
+
+Employees.Add(New Employee With {
+	.Name = "James",
+	.Email = "james@syncfusion.com"
+})
+
+Employees.Add(New Employee With {
+	.Name = "Jacob",
+	.Email = "jacob@syncfusion.com"
+})
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## ItemsSource
 

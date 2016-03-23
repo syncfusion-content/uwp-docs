@@ -15,7 +15,7 @@ The following code example and screen shots illustrate this.
 
 {% tabs %}
 
-{% highlight html %}
+{% highlight XAML %}
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -25,11 +25,23 @@ The following code example and screen shots illustrate this.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 combo.DisplayMinDate = new DateTime(2012,10,2);
 
 combo.DisplayMaxDate = new DateTime(2013,11,22);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+combo.DisplayMinDate = New Date(2012,10,2)
+
+combo.DisplayMaxDate = New Date(2013,11,22)
 
 {% endhighlight %}
 

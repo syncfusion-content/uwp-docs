@@ -19,7 +19,9 @@ Default Value of FormatString is N.
 
 The following code sample shows how to display numeric text with currency format.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -31,7 +33,7 @@ The following code sample shows how to display numeric text with currency format
 
                                VerticalAlignment="Center"
 
-                               Width="200" 
+                               Width="200" x:Name="numericTextBox"
 
 FormatString="C"
 
@@ -42,6 +44,24 @@ FormatString="C"
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ numericTextBox.FormatString = "C";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ numericTextBox.FormatString = "C"
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img1.png)
 

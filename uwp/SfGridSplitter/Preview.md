@@ -63,6 +63,12 @@ gridSplitter.ShowsPreview = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+gridSplitter.ShowsPreview = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Preview-images/Preview-img1.jpeg)

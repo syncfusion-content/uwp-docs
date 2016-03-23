@@ -45,4 +45,20 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
  
 {% endhighlight %}
 
+{% highlight C# %}
+	
+ SfDateTimeCombo datetimeCombo = new SfDateTimeCombo() { FormatString = "Mdy", Width = 430, HorizontalAlignment = HorizontalAlignment.Left };
+ 
+{% endhighlight %}
+
+{% highlight VB %}
+	
+Dim datetimeCombo As New SfDateTimeCombo() With {
+	.FormatString = "Mdy",
+	.Width = 430,
+	.HorizontalAlignment = HorizontalAlignment.Left
+}
+ 
+{% endhighlight %}
+
 {% endtabs %}

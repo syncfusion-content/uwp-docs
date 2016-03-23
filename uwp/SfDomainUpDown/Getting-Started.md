@@ -18,7 +18,9 @@ Dependent assembly: Syncfusion.SfShared.UWP
 
 
 The following code sample shows how to create the SfDomainUpDown from code-behind and XAML:
+
 {% tabs %}
+
 {% highlight xaml %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
@@ -45,4 +47,11 @@ The following code sample shows how to create the SfDomainUpDown from code-behin
 SfDomainUpDown domainUpDown = new SfDomainUpDown();
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim domainUpDown As New SfDomainUpDown()
+
+{% endhighlight %}
+
 {% endtabs %}
