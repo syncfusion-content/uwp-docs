@@ -45,6 +45,18 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+ SfCalculator calculator = new SfCalculator();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  Dim calculator As New SfCalculator()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 Above code example creates the calculator as follows and perform mathematical arithmetic operations using the provided buttons:

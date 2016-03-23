@@ -33,6 +33,12 @@ calendar.FirstDayofWeek = System.DayOfWeek.Thursday;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calendar.FirstDayofWeek = System.DayOfWeek.Thursday
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -59,6 +65,13 @@ Day names in SfCalendar can be set to either abbreviated or full names using `Da
 
 
 calendar.DayNameDisplayMode = Syncfusion.UI.Xaml.Controls.Input.DayNameDisplayMode.DayNames;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+
+calendar.DayNameDisplayMode = Syncfusion.UI.Xaml.Controls.Input.DayNameDisplayMode.DayNames
 
 {% endhighlight %}
 

@@ -29,6 +29,17 @@ maskededit.Mask ="00 / 00 / 0000";
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim maskededit As New SfMaskedEdit() With {
+	.Width = 255,
+	.Height = 46
+}
+maskededit.MaskType = MaskType.Simple
+maskededit.Mask ="00 / 00 / 0000"
+
+{% endhighlight %}
+
 {% endtabs %}
    
 This mask expression allows only numeric inputs in the places of 0.
@@ -51,6 +62,16 @@ Set the Value property as follows:
  maskedEdit.Value ="14 / 11 / 2014";
    
 {% endhighlight %}
+
+{% highlight VB %}
+
+ Dim maskedEdit As New SfMaskedEdit()
+ maskedEdit.MaskType = MaskType.Simple
+ maskedEdit.Mask ="00 / 00 / 0000"
+ maskedEdit.Value ="14 / 11 / 2014"
+   
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Setting Prompt Char
@@ -62,6 +83,15 @@ Set the PromptChar property as follows:
  maskedEdit.MaskType = MaskType.Simple;
  maskedEdit.Mask ="00 / 00 / 0000";
  maskedEdit.PromptChar = Convert.ToChar("$");
+   
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim maskedEdit As New SfMaskedEdit()
+ maskedEdit.MaskType = MaskType.Simple
+ maskedEdit.Mask ="00 / 00 / 0000"
+ maskedEdit.PromptChar = Convert.ToChar("$")
    
 {% endhighlight %}
 
@@ -84,4 +114,14 @@ maskedEdit.Mask ="00 / 00 / 0000";
 maskedEdit.Watermark ="Type here";
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim maskedEdit As New SfMaskedEdit()
+maskedEdit.MaskType = MaskType.Simple
+maskedEdit.Mask ="00 / 00 / 0000"
+maskedEdit.Watermark ="Type here"
+
+{% endhighlight %}
+
 {% endtabs %}

@@ -27,6 +27,8 @@ The SelectorItemCount property is used to specify the number of items to be used
 
 The following code sample shows the usage of the SelectorItemWidth, SelectorItemHeight, SelectorItemSpacing, and SelectorItemCount properties. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
@@ -35,9 +37,7 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 
             <syncfusion:SfDatePicker VerticalAlignment="Center"
 
-                                   Width="200"
-
-SelectorItemWidth="100"
+               Width="200" x:Name="datePicker" SelectorItemWidth="100"
 
                 SelectorItemHeight="100"
 
@@ -50,6 +50,30 @@ SelectorItemWidth="100"
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+            datePicker.SelectorItemWidth = 100;
+            datePicker.SelectorItemHeight = 100;
+            datePicker.SelectorItemSpacing = 50;
+            datePicker.SelectorItemCount = 4;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+            datePicker.SelectorItemWidth = 100
+			datePicker.SelectorItemHeight = 100
+			datePicker.SelectorItemSpacing = 50
+			datePicker.SelectorItemCount = 4
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The output is displayed in the following image:
 

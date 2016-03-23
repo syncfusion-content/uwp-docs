@@ -11,7 +11,9 @@ documentation: ug
 
 Value of the SfNumericUpDown gets parsed based on ParsingMode property. ParsingMode is of type Parsers which is enum of Double and Decimal. DefaultValue for ParsingMode is Double.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -21,7 +23,7 @@ Value of the SfNumericUpDown gets parsed based on ParsingMode property. ParsingM
 
 
 
-        <editors:SfNumericUpDown HorizontalAlignment="Center"
+        <editors:SfNumericUpDown HorizontalAlignment="Center" x:Name="numericUpDown"
 
                                  VerticalAlignment="Center"
 
@@ -36,5 +38,23 @@ Value of the SfNumericUpDown gets parsed based on ParsingMode property. ParsingM
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+numericUpDown.ParsingMode = Syncfusion.UI.Xaml.Controls.Input.Parsers.Decimal;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+numericUpDown.ParsingMode = Syncfusion.UI.Xaml.Controls.Input.Parsers.Decimal
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img7.png)

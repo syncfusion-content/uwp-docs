@@ -11,6 +11,9 @@ documentation: ug
 
 Value of the SfNumericTextBox gets parsed based on ParsingMode property. ParsingMode is of type Parsers which is enum of Double and Decimal. DefaultValue for ParsingMode is Double.
 
+
+
+{% tabs %}
 {% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
@@ -38,5 +41,23 @@ Value of the SfNumericTextBox gets parsed based on ParsingMode property. Parsing
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ numericTextBox.ParsingMode = Syncfusion.UI.Xaml.Controls.Input.Parsers.Decimal;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ numericTextBox.ParsingMode = Syncfusion.UI.Xaml.Controls.Input.Parsers.Decimal
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img7.png)

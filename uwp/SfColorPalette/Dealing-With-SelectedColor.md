@@ -53,6 +53,12 @@ testText.Foreground = new SolidColorBrush() { Color = colorPalette.SelectedColor
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+testText.Foreground = New SolidColorBrush() With {.Color = colorPalette.SelectedColor}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Notifying Color Selection Change
@@ -90,6 +96,18 @@ testText.Foreground = new SolidColorBrush() { Color = colorPalette.SelectedColor
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub colorPalette_SelectedColorChanged(ByVal sender As Object, ByVal e As DependencyPropertyChangedEventArgs)
+
+
+testText.Foreground = New SolidColorBrush() With {.Color = colorPalette.SelectedColor}
+
+End Sub
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfColorPalette-images/SfColorPalette-img4.jpeg)
@@ -107,6 +125,12 @@ Navigating to swatches can done by clicking on the back button or by programmati
 {% highlight C# %}
 
 colorPalette.GoBack();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+colorPalette.GoBack()
 
 {% endhighlight %}
 

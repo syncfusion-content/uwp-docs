@@ -72,6 +72,12 @@ accordion.SelectionMode = AccordionSelectionMode.OneOrMore;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+accordion.SelectionMode = AccordionSelectionMode.OneOrMore
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Selection-Mode-images/Selection-Mode-img1.jpeg)

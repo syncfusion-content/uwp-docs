@@ -44,6 +44,14 @@ busyIndicator. IsEnabled = false;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim busyIndicator As New SfBusyIndicator()
+
+busyIndicator.IsEnabled = False
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfBusyIndicator1/Enable.png)
@@ -75,6 +83,14 @@ Here is an example showing different animation types in `SfBusyIndicator`.
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 
 busyIndicator.AnimationType = AnimationTypes.Ball;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim busyIndicator As New SfBusyIndicator()
+
+busyIndicator.AnimationType = AnimationTypes.Ball
 
 {% endhighlight %}
 
@@ -122,6 +138,12 @@ Animation speed property is used to change the speed of animation. Minimum anima
 {% highlight C# %}
 
 busyIndicator.AnimationSpeed = 120.0;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+busyIndicator.AnimationSpeed = 120.0
 
 {% endhighlight %}
 

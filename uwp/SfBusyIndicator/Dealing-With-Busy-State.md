@@ -37,6 +37,13 @@ busyIndicator.IsBusy = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim busyIndicator As New SfBusyIndicator()
+busyIndicator.IsBusy = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfBusyIndicator1/Busy.png)
@@ -68,6 +75,15 @@ SfBusyIndicator busyIndicator = new SfBusyIndicator();
 busyIndicator.Header = "Loading...";
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim busyIndicator As New SfBusyIndicator()
+
+busyIndicator.Header = "Loading..."
+
+{% endhighlight %}
+
 
 {% endtabs %}
 
@@ -138,6 +154,16 @@ SfBusyIndicator busyIndicator = new SfBusyIndicator();
 busyIndicator. ViewboxHeight = 70.0;
 
 busyIndicator. ViewboxWidth = 70.0;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim busyIndicator As New SfBusyIndicator()
+
+busyIndicator.ViewboxHeight = 70.0
+
+busyIndicator.ViewboxWidth = 70.0
 
 {% endhighlight %}
 

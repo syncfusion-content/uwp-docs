@@ -15,16 +15,36 @@ The SfDateTimeCombo control allows the user to format the display text in variou
 
 The FormatString property determines the format specifier by which the DateTime has to be formatted.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-            <syncfusion:SfDateTimeCombo FormatString="hms"
+            <syncfusion:SfDateTimeCombo FormatString="hms" x:Name="datetimeCombo"
 
                                Width="350" HorizontalAlignment="Left"/>
 </Grid>
 
 {% endhighlight %}
+
+{% tabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+datetimeCombo.FormatString = "hms";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+datetimeCombo.FormatString = "hms"
+
+{% endhighlight %}
+
+{% tabs %}
 
 ![](Formatting_images/Formatting_img1.png)
 

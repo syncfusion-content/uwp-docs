@@ -63,6 +63,12 @@ using Syncfusion.UI.Xaml.Controls.Media;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Media
+
+{% endhighlight %}
+
 {% endtabs %}
 
 2.Now add the SfColorPicker control with a required optimal name 
@@ -72,6 +78,12 @@ using Syncfusion.UI.Xaml.Controls.Media;
 {% highlight C# %}
 
 SfColorPicker colorPicker = new SfColorPicker();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim colorPicker As New SfColorPicker()
 
 {% endhighlight %}
 

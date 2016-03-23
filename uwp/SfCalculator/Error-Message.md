@@ -35,6 +35,17 @@ args.NewErrorMessage = "Syntax Error";
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub calculator_ErrorMessageDisplayed(ByVal Sender As Object, ByVal args As Syncfusion.UI.Xaml.Controls.Input.ErrorDisplayArgs)
+
+
+args.NewErrorMessage = "Syntax Error"
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 

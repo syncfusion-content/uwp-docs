@@ -27,6 +27,12 @@ The following code example shows how to localize the control to German culture.
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+ maskedEdit.Culture = New System.Globalization.CultureInfo("fr-FR")
+
+{% endhighlight %}
+
 ![](Culture_images/Culture_img1.png)
 
 
