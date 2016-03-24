@@ -28,7 +28,7 @@ The FormatString property determines the format specifier by which the DateTime 
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 {% tabs %}
 
@@ -44,7 +44,7 @@ datetimeCombo.FormatString = "hms"
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 ![](Formatting_images/Formatting_img1.png)
 
