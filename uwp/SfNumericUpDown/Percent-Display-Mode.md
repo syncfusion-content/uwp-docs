@@ -20,7 +20,7 @@ The following code example and screen shots illustrate the usage of the PercentD
 
 {% tabs %}
 
-{% highlight  %}
+{% highlight  XAML%}
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -52,7 +52,7 @@ numericUpDown.PercentDisplayMode = Syncfusion.UI.Xaml.Controls.Input.PercentDisp
 
 {% tabs %}
 
-{% highlight html %}
+{% highlight XAML %}
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 

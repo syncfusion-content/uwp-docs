@@ -13,6 +13,8 @@ The Culture property helps to localize the SfNumericTextBox. Text will be format
 
 The following code sample shows how to localize the control to German culture.
 
+{% tabs %}
+
 {% highlight c# %}
 
 SfNumericTextBox numerictxt = new SfNumericTextBox();
@@ -22,6 +24,18 @@ numerictxt.Value = 12345;
 numerictxt.Culture = new CultureInfo("de-DE");
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim numerictxt As New SfNumericTextBox()
+
+numerictxt.Value = 12345
+
+numerictxt.Culture = New CultureInfo("de-DE")
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img3.png)
 
