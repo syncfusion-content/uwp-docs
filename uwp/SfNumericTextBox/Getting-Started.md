@@ -42,10 +42,6 @@ The following code sample shows how to create the SfNumericTextBox from code-beh
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
-
 {% highlight c# %}
 
 SfNumericTextBox numericTextBox = new SfNumericTextBox();
