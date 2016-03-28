@@ -35,6 +35,12 @@ tileView.MaximizedItemHeight = 400.0;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tileView.MaximizedItemHeight = 400.0
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Customizing-maximized-item-images/Customizing-maximized-item-img1.jpeg)
@@ -53,9 +59,19 @@ tileView.MaximizedItemHeight = 400.0;
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
 tileView.MaximizedItemWidth = 400.0;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tileView.MaximizedItemWidth = 400.0
 
 {% endhighlight %}
 
@@ -98,6 +114,16 @@ tileView.MaximizedItemHeight = 400.0;
 tileView.Transitions = new TransitionCollection();
 
 tileView.Transitions.Add(new PopupThemeTransition());
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tileView.MaximizedItemHeight = 400.0
+
+tileView.Transitions = New TransitionCollection()
+
+tileView.Transitions.Add(New PopupThemeTransition())
 
 {% endhighlight %}
 

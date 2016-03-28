@@ -13,7 +13,7 @@ While incrementing, the control will start from Minimum once it reaches the Maxi
 
 {% tabs %}
 
-{% highlight html %}
+{% highlight XAML %}
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 

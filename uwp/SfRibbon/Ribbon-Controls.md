@@ -24,6 +24,8 @@ Several Ribbon controls are provided to add in Ribbon Bar. Button controls are p
 
 SfRibbonButton provides functionalities like normal Button. It can place inside the RibbonBar and provides SizeForm Property for different sizes. SizeMode.Small displays icon alone where as SizeMode.Large displays icon along with label.
 
+{% tabs %}
+
 {% highlight xaml %}
 <ribbon:SfRibbon x:Name="_ribbon">
 
@@ -46,6 +48,10 @@ SfRibbonButton provides functionalities like normal Button. It can place inside 
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -71,12 +77,48 @@ _ribbon.Items.Add(_ribbonTab);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbon As New SfRibbon()
+
+Dim _ribbonTab As New SfRibbonTab() With {.Caption = "Home"}
+
+Dim _ribbonBar As New SfRibbonBar()
+
+_ribbonBar.Items.Add(New SfRibbonButton() With {
+	.Label="Cut",
+	.SizeMode=SizeMode.Large,
+	.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Cut.png", UriKind.RelativeOrAbsolute))
+})
+
+Dim _ribbonBar1 As New SfRibbonBar()
+
+_ribbonBar1.Items.Add(New SfRibbonButton() With {
+	.Label = "Copy",
+	.SizeMode = SizeMode.Large,
+	.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Copy.png", UriKind.RelativeOrAbsolute))
+})
+
+_ribbonTab.Items.Add(_ribbonBar)
+
+_ribbonTab.Items.Add(_ribbonBar1)
+
+
+_ribbon.Items.Add(_ribbonTab)
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Ribbon-Controls_images/Ribbon-Controls_img1.jpeg)
 
 
 ### Set various sizes for RibbonButton
 
 SfRibbonButton have three types of size modes. You can set size forms using its SizeMode Property.
+
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbon x:Name="_ribbon">
@@ -104,6 +146,10 @@ SfRibbonButton have three types of size modes. You can set size forms using its�
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 SfRibbon _ribbon = new SfRibbon();
@@ -133,6 +179,47 @@ _ribbon.Items.Add(_ribbonTab);
 
 {% endhighlight %}
 
+{% highlight VB %}
+Dim _ribbon As New SfRibbon()
+
+Dim _ribbonTab As New SfRibbonTab() With {.Caption = "Home"}
+
+Dim _ribbonBar As New SfRibbonBar()
+
+_ribbonBar.Items.Add(New SfRibbonButton() With {
+	.Label = "Cut",
+	.SizeMode = SizeMode.ExtraSmall,
+	.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Cut.png", UriKind.RelativeOrAbsolute))
+})
+
+Dim _ribbonBar1 As New SfRibbonBar()
+
+_ribbonBar1.Items.Add(New SfRibbonButton() With {
+	.Label = "Copy",
+	.SizeMode = SizeMode.Small,
+	.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Copy.png", UriKind.RelativeOrAbsolute))
+})
+
+Dim _ribbonBar2 As New SfRibbonBar()
+
+_ribbonBar1.Items.Add(New SfRibbonButton() With {
+	.Label = "Paste",
+	.SizeMode = SizeMode.Large,
+	.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Paste.png", UriKind.RelativeOrAbsolute))
+})
+
+_ribbonTab.Items.Add(_ribbonBar)
+
+_ribbonTab.Items.Add(_ribbonBar1)
+
+_ribbonTab.Items.Add(_ribbonBar2)
+
+_ribbon.Items.Add(_ribbonTab)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Ribbon-Controls_images/Ribbon-Controls_img2.jpeg)
 
 
@@ -142,6 +229,8 @@ DropDownButton appears like normal button that contains a drop arrow. It will op
 
 ![](Ribbon-Controls_images/Ribbon-Controls_img3.jpeg)
 
+
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbon Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
@@ -190,6 +279,8 @@ DropDownButton appears like normal button that contains a drop arrow. It will op
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Ribbon-Controls_images/Ribbon-Controls_img4.jpeg)
 
 
@@ -204,6 +295,8 @@ SfRibbonGallery displays items with good look and feel and it also used to class
 
 Ribbon Gallery Items are the contents of the Ribbon Gallery Group and it does not restrict the type of content to be added to it. Use the following code example to add a Ribbon Gallery Items. 
 
+{% tabs %}
+
 {% highlight xaml %}
 <ribbon:SfRibbonGalleryItem>
 
@@ -212,14 +305,15 @@ Ribbon Gallery Items are the contents of the Ribbon Gallery Group and it does no
 </ribbon:SfRibbonGalleryItem>
 
 
-
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ### SfRibbonGalleryGroup
 
 Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grouped in the Ribbon Gallery control based on some classifications. Use the following code to add a Ribbon Gallery Group to the Ribbon Gallery control. 
+
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbonGallery Icon="Assets/Shapes.png"  Header="Shapes" Label="Shapes">
@@ -248,6 +342,10 @@ Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grou
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 SfRibbonGallery _ribbonGallery = new SfRibbonGallery() { Header = "Shapes", Label = "Shapes",Icon = new BitmapImage(new Uri("ms-appx:/Assets/Shapes.png", UriKind.RelativeOrAbsolute)) };
@@ -267,9 +365,36 @@ _ribbonGallery.Items.Add(_ribbongalleryGroup);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonGallery As New SfRibbonGallery() With {
+	.Header = "Shapes",
+	.Label = "Shapes",
+	.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Shapes.png", UriKind.RelativeOrAbsolute))
+}
+
+Dim _ribbongalleryGroup As New SfRibbonGalleryGroup() With {.Header = "First group"}
+
+Dim _ribbongalleryItem As New SfRibbonGalleryItem()
+
+Dim img As New Image() With {.Source = New BitmapImage(New Uri("ms-appx:/Assets/Apex.png", UriKind.RelativeOrAbsolute))}
+
+_ribbongalleryItem.Content = img
+
+_ribbongalleryGroup.Items.Add(_ribbongalleryItem)
+
+_ribbonGallery.Items.Add(_ribbongalleryGroup)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## SfRibbonMenu
 
 SfRibbonMenu control is used to display items. It can contain sub menu items. The following code example is used to add a Ribbon menu control to the application. 
+
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbonMenu Label="Pictures" Icon="Assets/Picture.png">
@@ -281,10 +406,11 @@ SfRibbonMenu control is used to display items. It can contain sub menu items. Th
 </ribbon:SfRibbonMenu >
 
 
-
-
-
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -302,6 +428,26 @@ _ribbonMenu.Items.Add(_ribbonmenuItem2);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonMenu As New SfRibbonMenu() With {
+	.Label = "Pictures",
+	.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Picture.png", UriKind.RelativeOrAbsolute))
+}
+
+Dim _ribbonmenuItem1 As New SfRibbonMenuItem() With {.Header = "Camera roll"}
+
+Dim _ribbonmenuItem2 As New SfRibbonMenuItem() With {.Header = "Library"}
+
+_ribbonMenu.Items.Add(_ribbonmenuItem1)
+
+_ribbonMenu.Items.Add(_ribbonmenuItem2)
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Ribbon-Controls_images/Ribbon-Controls_img6.jpeg)
 
 
@@ -312,6 +458,8 @@ SfRibbonGroupBar control is used to group list of items.The items are grouped in
 ### Add RibbonGroupBarItem to RibbonGroupView
 
 In RibbonGroupBar, similar items can be grouped together and separated from other items using RibbonGroupView.
+
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbonGroupBar Label="Breaks" Header="Breaks" Icon="Assets/Icons/Page brake.png">
@@ -331,6 +479,11 @@ In RibbonGroupBar, similar items can be grouped together and separated from othe
 
 
 {% endhighlight %}
+
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -352,12 +505,42 @@ _ribbonGroup.Items.Add(_ribbongroupView);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbonGroup As New SfRibbonGroupBar() With {
+	.Label = "Breaks",
+	.Header = "Breaks",
+	.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Icons/Page brake.png", UriKind.RelativeOrAbsolute))
+}
+
+Dim _ribbongroupView As New SfRibbonGroupView() With {
+	.Header = "Page Breakers",
+	.Orientation = Orientation.Vertical
+}
+
+Dim _ribbongroupItem As New SfRibbonGroupBarItem()
+
+Dim textblock As New TextBlock() With {.Text = "Page"}
+
+_ribbongroupItem.Content = textblock
+
+_ribbongroupView.Items.Add(_ribbongroupItem)
+
+_ribbonGroup.Items.Add(_ribbongroupView)
+
+{% endhighlight %}
+
+
+{% endtabs %}
+
 ![](Ribbon-Controls_images/Ribbon-Controls_img7.jpeg)
 
 
 ## SfRibbonComboBox
 
 RibbonComboBox control is used to display the list of items, as drop-down menu in Ribbon instance. You can add any number of items to the RibbonComboBox. It is similar to ComboBox control except the style. You can use the following code example to add RibbonComboBox and items to RibbonComboBox respectively. 
+
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbonComboBox Width="100">
@@ -371,6 +554,10 @@ RibbonComboBox control is used to display the list of items, as drop-down menu i
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 SfRibbonComboBox _ribbonComboBox = new SfRibbonComboBox() { Width = 100 };
@@ -387,6 +574,21 @@ _ribbonComboBox.Items.Add(_ribbonComboBoxItem2);
 
 {% endhighlight %}
 
+{% highlight VB %}
+Dim _ribbonComboBox As New SfRibbonComboBox() With {.Width = 100}
+
+Dim _ribbonComboBoxItem1 As New SfRibbonComboBoxItem() With {.Content = "Arial"}
+
+Dim _ribbonComboBoxItem2 As New SfRibbonComboBoxItem() With {.Content = "Tahoma"}
+
+_ribbonComboBox.Items.Add(_ribbonComboBoxItem1)
+
+_ribbonComboBox.Items.Add(_ribbonComboBoxItem2)
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Ribbon-Controls_images/Ribbon-Controls_img8.jpeg)
 
 
@@ -394,12 +596,17 @@ _ribbonComboBox.Items.Add(_ribbonComboBoxItem2);
 
 A RibbonToggleButton is a switch control with two states equivalent to true or false.
 
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbonToggleButton Icon="Assets/HyperLink.png" Header="Chart" Label="Chart"/>
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -416,10 +623,25 @@ _ribbonTab.Items.Add(_ribbonBar);
 _ribbon.Items.Add(_ribbonTab);
 
 
+{% endhighlight %}
 
+{% highlight VB %}
 
+Dim _ribbon As New SfRibbon()
+
+Dim _ribbonTab As New SfRibbonTab() With {.Caption = "Home"}
+
+Dim _ribbonBar As New SfRibbonBar()
+
+_ribbonBar.Items.Add(New SfRibbonToggleButton() With {.Icon = New BitmapImage(New Uri("ms-appx:/Assets/picture.png", UriKind.RelativeOrAbsolute))})
+
+_ribbonTab.Items.Add(_ribbonBar)
+
+_ribbon.Items.Add(_ribbonTab)
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Ribbon-Controls_images/Ribbon-Controls_img9.jpeg)
 

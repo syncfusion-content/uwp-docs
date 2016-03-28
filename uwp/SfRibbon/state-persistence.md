@@ -20,6 +20,8 @@ The Ribbon State Persistence feature helps users to load the state of the Ribbon
 
 The following code snippet shows how to achieve the serialization and deserialization
 
+{% tabs %}
+
 {% highlight xaml %}
 <StackPanel>
 
@@ -43,7 +45,10 @@ The following code snippet shows how to achieve the serialization and deserializ
 
 {% endhighlight %}
 
+{% endtabs %}
 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -91,3 +96,40 @@ catch (Exception)
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub OnSerialize(ByVal sender As Object, ByVal args As RoutedEventArgs)
+
+
+Try
+
+
+Me.ribbon.Serialize()
+
+
+Catch e1 As Exception
+
+
+End Try
+
+End Sub
+
+Private Async Sub OnDeserialize(ByVal sender As Object, ByVal args As RoutedEventArgs)
+
+
+Try
+
+
+Me.ribbon.DeSerialize()
+
+
+Catch e1 As Exception
+
+
+End Try
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}

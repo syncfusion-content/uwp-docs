@@ -38,6 +38,10 @@ The following code sample shows how to create a date picker with a [month day pa
 
 {% endhighlight  %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
  sfdatePicker.FormatString = "M";
@@ -70,6 +74,10 @@ The SelectorFormatString property used to specify format for the DateSelector
 </Grid>
 
 {% endhighlight  %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight C# %}
 

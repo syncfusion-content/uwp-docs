@@ -41,7 +41,9 @@ The following code sample shows how to hide the done button:
 
                 </Style>
 
-            </syncfusion:SfTimePicker.SelectorStyle>        </syncfusion:SfTimePicker>
+            </syncfusion:SfTimePicker.SelectorStyle>        
+ 
+ </syncfusion:SfTimePicker>
 
 {% endhighlight %}
 
@@ -75,7 +77,9 @@ The following code sample shows how to hide the cancel button:
 
                 </Style>
 
-            </syncfusion:SfTimePicker.SelectorStyle>        </syncfusion:SfTimePicker>
+            </syncfusion:SfTimePicker.SelectorStyle>       
+            
+</syncfusion:SfTimePicker>
 
 {% endhighlight %}
 

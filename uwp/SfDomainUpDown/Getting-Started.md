@@ -7,7 +7,7 @@ control: SfDomainUpDown
 documentation: ug
 ---
 
-#Getting Started
+# Getting Started
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 

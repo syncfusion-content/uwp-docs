@@ -31,7 +31,7 @@ The following code sample shows how to create the SfRadialMenu from code-behind 
 {% endhighlight %}
 
 {% highlight c# %}
-SfRadialMenu radialMenu = new SfRadialMenu();
+ SfRadialMenu radialMenu = new SfRadialMenu();
  SfRadialMenuItem bold = new SfRadialMenuItem(){ Header = "Bold" };  
  SfRadialMenuItem cut = new SfRadialMenuItem() { Header = "Cut" };
  SfRadialMenuItem copy = new SfRadialMenuItem() { Header = "Copy" };
@@ -40,6 +40,20 @@ SfRadialMenu radialMenu = new SfRadialMenu();
  radialMenu.Items.Add(cut);
  radialMenu.Items.Add(copy);
  radialMenu.Items.Add(paste);
+
+ {% endhighlight %}
+ 
+ {% highlight VB %}
+ 
+ Dim radialMenu As New SfRadialMenu()
+ Dim bold As New SfRadialMenuItem() With {.Header = "Bold"}
+ Dim cut As New SfRadialMenuItem() With {.Header = "Cut"}
+ Dim copy As New SfRadialMenuItem() With {.Header = "Copy"}
+ Dim paste As New SfRadialMenuItem() With {.Header = "Paste"}
+ radialMenu.Items.Add(bold)
+ radialMenu.Items.Add(cut)
+ radialMenu.Items.Add(copy)
+ radialMenu.Items.Add(paste)
 
  {% endhighlight %}
 

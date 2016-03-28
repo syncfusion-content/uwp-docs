@@ -56,6 +56,12 @@ treeNavigator.NavigationMode = Syncfusion.UI.Xaml.Controls.Navigation.Navigation
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+treeNavigator.NavigationMode = Syncfusion.UI.Xaml.Controls.Navigation.NavigationMode.Default
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Navigation-Mode-images/Navigation-Mode-img1.jpeg)
@@ -99,6 +105,12 @@ The header of each level from root to current level is stacked one after another
 {% highlight C# %}
 
 treeNavigator.NavigationMode = Syncfusion.UI.Xaml.Controls.Navigation.NavigationMode.Extended;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+treeNavigator.NavigationMode = Syncfusion.UI.Xaml.Controls.Navigation.NavigationMode.Extended
 
 {% endhighlight %}
 

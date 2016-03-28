@@ -19,6 +19,8 @@ For illustration, let us create a SfTextBoxExt, which will populate a list of em
 
 The Employee model looks as shown below:
 
+{% tabs %}
+
 {% highlight c# %} 
 
    public class Employee
@@ -35,7 +37,27 @@ The Employee model looks as shown below:
 
 {% endhighlight %}
 
+{% highlight VB %} 
+
+   Public Class Employee
+
+
+		Public Property Name() As String
+
+
+
+		Public Property Email() As String
+
+End Class
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Create a collection attribute.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -53,7 +75,30 @@ Create a collection attribute.
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+ Private employees_Renamed As List(Of Employee)
+
+ Public Property Employees() As List(Of Employee)
+
+
+		 Get
+			 Return employees_Renamed
+		 End Get
+
+		 Set(ByVal value As List(Of Employee))
+			 employees_Renamed = value
+		 End Set
+
+ End Property
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Populate the collection with items.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -67,7 +112,32 @@ Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Employees = New List(Of Employee)()
+
+Employees.Add(New Employee With {
+	.Name = "Lucas",
+	.Email = "lucas@syncfusion.com"
+})
+
+Employees.Add(New Employee With {
+	.Name = "James",
+	.Email = "james@syncfusion.com"
+})
+
+Employees.Add(New Employee With {
+	.Name = "Jacob",
+	.Email = "jacob@syncfusion.com"
+})
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Bind the Employees collection to the AutoCompleteSource property of SfTextBoxExt.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -81,9 +151,13 @@ AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
 At this point, the control is populated with the list of employees. But the Employee model contains two properties Name and Email so we should tell the control, by which property, it has to provide suggestions. In this case, let us make the control to provide suggestions based on Name.
 
 SearchItemPath property specifies the property path by which the filtering has to be done.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -100,6 +174,8 @@ SearchItemPath="Name"
                             AutoCompleteSource="{Binding Employees}" />
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](AutoComplete_images/AutoComplete_img1.png)
 
@@ -122,9 +198,11 @@ The default value of AutoCompleteMode is None.
 
 The filtered suggestions are displayed in a drop-down list.  Users can pick an item from the list.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -142,15 +220,35 @@ AutoCompleteMode="Suggest"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.Suggest;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.Suggest
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img3.png)
 
 ### Append
 
 The text will be appended to the first matched item in the suggestions collection without opening the drop-down list.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -164,6 +262,24 @@ AutoCompleteMode="Append"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.Append;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.Append
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img4.png)
 
 N>  By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard.
@@ -172,9 +288,11 @@ N>  By default the text will be appended to first matched item. But still user c
 
 The text will be appended to the first matched item in the suggestions collection, in addition to opening the drop-down list.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -188,6 +306,24 @@ AutoCompleteMode="SuggestAppend"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.SuggestAppend;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.SuggestAppend
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img6.png)
 
 
@@ -199,6 +335,8 @@ This option neither appends text nor opens the drop-down list of suggestions.
 ### AutoComplete Item Template
 
 The AutoCompleteItemTemplate helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list item.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -234,6 +372,8 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img7.png)
 
 ### Filtering Customization
@@ -265,9 +405,11 @@ The default value is StartsWith.
 
 The controls returns the entire collection without filtering when the user types text.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -282,7 +424,25 @@ SuggestionMode="None"
                             AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
-							
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.None;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.None
+
+{% endhighlight %}
+
+{% endtabs %}
+						
 ![](AutoComplete_images/AutoComplete_img8.png)
 
 
@@ -290,9 +450,11 @@ SuggestionMode="None"
 
 The control returns all possible matches which start with the text typed by the user.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt  x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -308,15 +470,35 @@ SuggestionMode="StartsWith"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWith;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWith
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img9.png)
 
 ### StartsWithCaseSensitive
 
 The control returns all possible matches which start with the text typed by the user which is culture and case sensitive.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -332,15 +514,35 @@ SuggestionMode="StartsWithCaseSensitive"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWithCaseSensitive;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWithCaseSensitive
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img10.png)
 
 ### StartsWithOrdinal
 
 The control returns all possible matches which start with the text typed by the user based on OrdinalIgnoreCase.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -356,15 +558,35 @@ SuggestionMode="StartsWithOrdinal"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWithOrdinal;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWithOrdinal
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img11.png)
 
 ### StartsWithOrdinalCaseSensitive
 
 The control returns all possible matches which start with the text typed by the user by Ordinal which is case sensitive.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -380,15 +602,35 @@ SuggestionMode="StartsWithOrdinalCaseSensitive"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWithOrdinalCaseSensitive;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWithOrdinalCaseSensitive
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img12.png)
 
 ### Contains
 
 The control return all possible matches which contains the text typed by the user.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -404,15 +646,35 @@ SuggestionMode="Contains"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.Contains;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.Contains
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img13.png)
 
 ### ContainsCaseSensitive
 
 The control return all possible matches which contains the text typed by the user which is culture and case sensitive.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -428,15 +690,35 @@ SuggestionMode="ContainsCaseSensitive"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.ContainsCaseSensitive;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.ContainsCaseSensitive
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img14.png)
 
 ### ContainsOrdinal
 
 The control return all possible matches which contains the text typed by the user based on OrdinalIgnoreCase.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -452,15 +734,35 @@ SuggestionMode="ContainsOrdinal"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.ContainsOrdinal;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.ContainsOrdinal
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img15.png)
 
 ### ContainsOrdinalCaseSensitive
 
 The control return all possible matches which contains the text typed by the user based on Ordinal which is case sensitive.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -476,15 +778,35 @@ SuggestionMode="ContainsOrdinalCaseSensitive"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.ContainsOrdinalCaseSensitive;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.ContainsOrdinalCaseSensitive
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img16.png)
 
 ### Equals
 
 The control return all possible matches which equals the text typed by the user.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -500,15 +822,35 @@ SuggestionMode="Equals"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.Equals;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.Equals
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img17.png)
 
 ### EqualsCaseSensitive
 
 The control return all possible matches which equals the text typed by the user which is culture and case sensitive.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -524,15 +866,35 @@ SuggestionMode="EqualsCaseSensitive"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.EqualsCaseSensitive;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.EqualsCaseSensitive
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img18.png)
 
 ### EqualsOrdinal
 
 The control return all possible matches which equals the text typed by the user based on OrdinalIgnoreCase.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -548,15 +910,35 @@ SuggestionMode="EqualsOrdinal"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.EqualsOrdinal;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.EqualsOrdinal
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img19.png)
 
 ### EqualsOrdinalCaseSensitive
 
 The control return all possible matches which equals the text typed by the user based on Ordinal which is case sensitive.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -572,11 +954,31 @@ SuggestionMode="EqualsOrdinalCaseSensitive"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.EqualsOrdinalCaseSensitive;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.EqualsOrdinalCaseSensitive
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img20.png)
 
 ### Custom
 
 The control return all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -598,6 +1000,11 @@ SuggestionMode="Custom"
 
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}    
 
      public bool MyFilter(string search, object item)
@@ -634,6 +1041,41 @@ autoComplete.Filter = MyFilter;
 
 {% endhighlight %}
 
+{% highlight VB %}    
+
+    Public Function MyFilter(ByVal search As String, ByVal item As Object) As Boolean
+
+
+			Dim model As Person = TryCast(item, Person)
+
+			If model IsNot Nothing Then
+
+
+				If model.Name.ToLower().Contains(search) Then
+
+
+					Return True
+
+
+				Else
+
+					Return False
+				End If
+
+
+			Else
+
+				Return False
+			End If
+
+End Function
+
+autoComplete.Filter = AddressOf MyFilter
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img21.png)
 
 N>  Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend.
@@ -642,9 +1084,11 @@ N>  Append mode always works only with StartsWith behavior. If the typed text is
 
 This option allows the control to filter suggestions by ignoring the case. The default value is false.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -660,15 +1104,35 @@ IgnoreCase="True"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.IgnoreCase = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.IgnoreCase = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img23.png)
 
 ### Minimum Prefix Length
 
 The MinimumPrefixCharacters property allows the control to filter the typed text based on the number of characters.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -684,17 +1148,37 @@ MinimumPrefixCharacters="2"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.MinimumPrefixCharacters = 2;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.MinimumPrefixCharacters = 2
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img24.png)
 
 ### Popup Delay
 
 PopupDelay specifies the delay after which the suggestion popup should open. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -709,6 +1193,24 @@ PopupDelay="00:00:02"
                             AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.PopupDelay=new TimeSpan(00,00,02);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.PopupDelay = New TimeSpan(00,00,02)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Positioning the Popup
 
@@ -726,11 +1228,13 @@ The default value is bottom.
 
 The drop-down list will open at top of the control.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -746,15 +1250,35 @@ SuggestionBoxPlacement="Top"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionBoxPlacement = Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.Top;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionBoxPlacement = Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.Top
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img25.png)
 
 ### Bottom
 
 The drop-down list will open at bottom of the control.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -770,15 +1294,35 @@ SuggestionBoxPlacement="Bottom"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionBoxPlacement = Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.Bottom;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionBoxPlacement = Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.Bottom
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](AutoComplete_images/AutoComplete_img26.png)
 
 ### None
 
 The drop-down list will not open.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfTextBoxExt HorizontalAlignment="Center" 
+<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
 
                             VerticalAlignment="Center" 
 
@@ -793,6 +1337,24 @@ SuggestionBoxPlacement="None"
                             AutoCompleteSource="{Binding Employees}"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ textBoxExt.SuggestionBoxPlacement = Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.None;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ textBoxExt.SuggestionBoxPlacement = Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.None
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](AutoComplete_images/AutoComplete_img27.png)
 

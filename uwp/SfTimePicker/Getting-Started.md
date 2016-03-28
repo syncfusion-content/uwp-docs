@@ -45,6 +45,18 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+ SfTimePicker timePicker = new SfTimePicker();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim timePicker As New SfTimePicker()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 

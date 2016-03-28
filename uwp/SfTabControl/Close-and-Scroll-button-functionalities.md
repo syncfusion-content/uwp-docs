@@ -47,6 +47,12 @@ tabControl.TabScrollButtonVisibility = Syncfusion.UI.Xaml.Controls.Navigation.Ta
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tabControl.TabScrollButtonVisibility = Syncfusion.UI.Xaml.Controls.Navigation.TabScrollButtonVisibility.Visible
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img1.jpeg)
@@ -88,6 +94,15 @@ private void tabControl_PreviousTab(object Sender, ScrollTabEventArgs args)
 {
 
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub tabControl_PreviousTab(ByVal Sender As Object, ByVal args As ScrollTabEventArgs)
+
+
+End Sub
 
 {% endhighlight %}
 
@@ -133,6 +148,15 @@ private void tabControl_NextTab(object Sender, ScrollTabEventArgs args)
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub tabControl_NextTab(ByVal Sender As Object, ByVal args As ScrollTabEventArgs)
+
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Tab close buttons
@@ -160,6 +184,12 @@ CanClose property is used to decide whether a tab item can be closed or not even
 {% highlight C# %}
 
 paul.CanClose = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+paul.CanClose = True
 
 {% endhighlight %}
 
@@ -203,6 +233,12 @@ Default close button type is Hide. The possible close button types are:
 {% highlight C# %}
 
 tabControl.CloseButtonType = Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType.Both;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tabControl.CloseButtonType = Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonType.Both
 
 {% endhighlight %}
 
@@ -266,6 +302,15 @@ private void tabControl_TabClosing(object Sender, CancelingEventArgs args)
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub tabControl_TabClosing(ByVal Sender As Object, ByVal args As CancelingEventArgs)
+
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## TabClosed event
@@ -293,6 +338,15 @@ private void tabControl_TabClosed(object Sender, CloseTabEventArgs args)
 
 }
 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub tabControl_TabClosed(ByVal Sender As Object, ByVal args As CloseTabEventArgs)
+
+
+End Sub
 
 {% endhighlight %}
 

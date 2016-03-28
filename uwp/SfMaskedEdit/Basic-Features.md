@@ -21,6 +21,10 @@ To mask the input, set the MaskType and Mask property as follows:
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 SfMaskedEdit maskededit = new SfMaskedEdit() { Width = 255, Height = 46 };
@@ -53,6 +57,10 @@ Set the Value property as follows:
 <syncfusion:SfMaskedEdit MaskType="Simple" Mask="00/00/0000" Value="14/11/2014" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Height="46"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -105,6 +113,10 @@ Set the Watermark property as follows:
 {% highlight xaml %}
 <syncfusion:SfMaskedEdit  MaskType="Simple" Mask="00/00/0000" Watermark="Mask"  HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="255" Height="46"/>
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
 

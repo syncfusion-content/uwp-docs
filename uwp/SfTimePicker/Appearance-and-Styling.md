@@ -14,14 +14,13 @@ documentation: ug
 The AccentBrush property is used to decorate the hot spots of a control with a solid color.
 
 
+{% tabs %}
+
 {% highlight xaml %}
-
-
-
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-        <syncfusion:SfTimePicker  VerticalAlignment="Center"
+        <syncfusion:SfTimePicker  VerticalAlignment="Center" x:Name="timePicker"
 
                                 HorizontalAlignment="Center"
 
@@ -32,6 +31,24 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ timePicker.AccentBrush = new SolidColorBrush(Colors.Green);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ timePicker.AccentBrush = New SolidColorBrush(Colors.Green)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following images showcase the control with various Accent Brushes:
 
