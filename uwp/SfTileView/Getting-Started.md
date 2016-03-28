@@ -40,7 +40,19 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% highlight XAML %}
 
-<layout:SfTileView x:Name="hubTile">
+<layout:SfTileView x:Name="tileView">
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfTileView tileView = new SfTileView();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim tileView As New SfTileView()
 
 {% endhighlight %}
 
@@ -85,6 +97,37 @@ public class Person
         }
     }    
 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Class Person
+		Public Property Name() As String
+		Public Property Image() As String
+		Public Property Interval() As TimeSpan
+		Public Property Position() As String
+		Public Property OrganizationUnit() As String
+		Public Property DateOfBirth() As String
+		Public Property Location() As String
+		Public Property Phone() As String
+		Public Property Email() As String
+		Public Property TileColor() As String
+		Public Property HeaderColor() As String
+		Public Sub New(ByVal name As String, ByVal image As String, ByVal seconds As Double, ByVal position As String, ByVal organizationunit As String, ByVal dateofbirth As String, ByVal location As String, ByVal phone As String, ByVal email As String, ByVal color As String, ByVal headercolor As String)
+			Me.Name = name
+			Me.Image = image
+			Interval = TimeSpan.FromSeconds(seconds)
+			Me.Position = position
+			Me.OrganizationUnit = organizationunit
+			Me.DateOfBirth = dateofbirth
+			Me.Location = location
+			Me.Phone = phone
+			Me.Email = email
+			TileColor = color
+			Me.HeaderColor = headercolor
+		End Sub
+End Class
 
 {% endhighlight %}
 
@@ -150,6 +193,66 @@ public class TileViewModel: NotificationObject
         } 
     }
 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Class TileViewModel
+
+	Inherits NotificationObject
+
+		Private rndm As Random
+
+		Private Function GetInterval() As Double
+
+
+			Return rndm.Next(18, 25)
+
+		End Function
+
+		Public Sub New()
+
+
+			rndm = New Random()
+
+			TileViewItems = New ObservableCollection(Of Person)()
+
+			TileViewItems.Add(New Person("Eric Joplin", "Assets/Emp_02.png", GetInterval(), "Chairman", "Management", "27/09/1973", "Boston", "+800 9899 9929", "ericjoplin@syncfusion.com", "#FFA400", "#E78E00"))
+
+			TileViewItems.Add(New Person("Paul Vent", "Assets/Emp_04.png", GetInterval(), "Chief Executive Officer", "Management", "27/09/1975", "New York", "+800 9899 9930", "paulvent@syncfusion.com", "#6DA4A3", "#4E7F7D"))
+
+			TileViewItems.Add(New Person("Clara Venus", "Assets/Emp_06.png", GetInterval(), "Chief Executive Assistant", "Management", "27/09/1978", "California", "+800 9899 9931", "claravenus@syncfusion.com", "#A45378", "#883F64"))
+
+			TileViewItems.Add(New Person("Maria Even", "Assets/Emp_11.png", GetInterval(), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "mariaeven@syncfusion.com", "#DA9545", "#BB7731"))
+
+			TileViewItems.Add(New Person("Mark Zuen", "Assets/Emp_13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "markzuen@syncfusion.com", "#AC3832", "#8B2826"))
+
+			TileViewItems.Add(New Person("Robin Rane", "Assets/Emp_16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "robinrane@syncfusion.com", "#31A1FF", "#2394E1"))
+
+			TileViewItems.Add(New Person("Chris Marker", "Assets/Emp_21.png", GetInterval(), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "chrismarker@syncfusion.com", "#5B5BA9", "#484892"))
+
+			TileViewItems.Add(New Person("Seria Sum", "Assets/Emp_23.png", GetInterval(), "Coordinator", "Customer Service", "27/09/1961", "New York", "+800 9899 9936", "seriasum@syncfusion.com", "#597C2A", "#46601D"))
+
+			TileViewItems.Add(New Person("Mathew Fleming", "Assets/Emp_25.png", GetInterval(), "Recruitment Manager", "Human Resource", "27/09/1986", "Boston", "+800 9899 9937", "mathewfleming@syncfusion.com", "#BCCBD3", "#8BA0A9"))
+
+		End Sub
+
+		Private items As ObservableCollection(Of Person)
+
+		Public Property TileViewItems() As ObservableCollection(Of Person)
+
+
+			Get
+				Return items
+			End Get
+
+			Set(ByVal value As ObservableCollection(Of Person))
+				items = value
+			End Set
+
+		End Property
+End Class
 
 {% endhighlight %}
 

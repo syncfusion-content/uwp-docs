@@ -57,19 +57,19 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 
 {% highlight C# %}
 
-            datePicker.SelectorItemWidth = 100;
-            datePicker.SelectorItemHeight = 100;
-            datePicker.SelectorItemSpacing = 50;
-            datePicker.SelectorItemCount = 4;
+datePicker.SelectorItemWidth = 100;
+datePicker.SelectorItemHeight = 100;
+datePicker.SelectorItemSpacing = 50;
+datePicker.SelectorItemCount = 4;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-            datePicker.SelectorItemWidth = 100
-			datePicker.SelectorItemHeight = 100
-			datePicker.SelectorItemSpacing = 50
-			datePicker.SelectorItemCount = 4
+ datePicker.SelectorItemWidth = 100
+ datePicker.SelectorItemHeight = 100
+ datePicker.SelectorItemSpacing = 50
+ datePicker.SelectorItemCount = 4
 
 {% endhighlight %}
 

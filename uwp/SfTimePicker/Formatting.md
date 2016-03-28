@@ -19,12 +19,11 @@ The FormatString property determines the format specifier by which the display t
 
 The example below shows how to create a time picker with a [Long Time pattern](http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.longtimepattern(v=vs.71).aspx).
 
+{% tabs %}
+
 {% highlight xaml %}
 
-  
-
-
-
+ 
    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
             <syncfusion:SfTimePicker VerticalAlignment="Center" 
@@ -37,6 +36,24 @@ The example below shows how to create a time picker with a [Long Time pattern](h
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ timePicker.FormatString = "HH:mm:ss";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ timePicker.FormatString = "HH:mm:ss"
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Features_images/Features_img1.png)
 
 ## Specifying format for the TimeSelector
@@ -44,6 +61,8 @@ The example below shows how to create a time picker with a [Long Time pattern](h
 The SelectorFormatString property used to specify format for the TimeSelector
 
 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -58,6 +77,23 @@ The SelectorFormatString property used to specify format for the TimeSelector
 
 {% endhighlight  %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ timePicker.SelectorFormatString = "HH:mm:ss";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ timePicker.SelectorFormatString = "HH:mm:ss"
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img2.png)
 

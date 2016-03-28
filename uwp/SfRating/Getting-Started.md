@@ -43,6 +43,18 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+ SfRating rating = new SfRating();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim rating As New SfRating()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 N> This will yield a blank output screen unless `ItemsCount` is set

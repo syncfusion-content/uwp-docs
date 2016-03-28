@@ -45,6 +45,12 @@ treeNavigator.SelectedItem = wpf;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+treeNavigator.SelectedItem = wpf
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Selecting-tree-items-images/Selecting-tree-items-img1.jpeg)
@@ -85,6 +91,12 @@ wpf.IsSelected = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+wpf.IsSelected = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Selecting-tree-items-images/Selecting-tree-items-img2.jpeg)
@@ -121,6 +133,12 @@ Select method is used to select an item with its instance and it can be used as 
 {% highlight C# %}
 
 treeNavigator.Select(wpf);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+treeNavigator.Select(wpf)
 
 {% endhighlight %}
 
@@ -168,6 +186,17 @@ HeaderedItemsControl item = treeNavigator.DrillDownItem;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub treeNavigator_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+
+Dim item As HeaderedItemsControl = treeNavigator.DrillDownItem
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Notifying selection changed
@@ -205,6 +234,15 @@ private void treeNavigator_SelectionChanged(object sender, SelectionChangedEvent
 {
 
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub treeNavigator_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+
+
+End Sub
 
 {% endhighlight %}
 
@@ -254,6 +292,15 @@ private void SfTreeNavigatorItem_ItemClicked(object Sender, Syncfusion.UI.Xaml.C
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub SfTreeNavigatorItem_ItemClicked(ByVal Sender As Object, ByVal args As Syncfusion.UI.Xaml.Controls.Navigation.ItemClickEventArgs)
+
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Navigate thorough code-behind
@@ -265,6 +312,12 @@ SfTreeNavigator.GoBack() method is used to navigate a hierarchical level back in
 {% highlight C# %}
 
 treeNavigator.GoBack();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+treeNavigator.GoBack()
 
 {% endhighlight %}
 

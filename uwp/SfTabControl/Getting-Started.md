@@ -47,6 +47,17 @@ xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+  SfTabControl tabControl = new SfTabControl();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   Dim tabControl As New SfTabControl()
+
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -80,6 +91,28 @@ public class Person
 		
     }
 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Class Person
+
+
+		Public Property Name() As String
+
+		Public Property Image() As String
+
+		Public Sub New(ByVal name As String, ByVal image As String)
+
+
+			Me.Name = name
+
+			Me.Image = image
+
+		End Sub
+
+End Class
 
 {% endhighlight %}
 
@@ -144,6 +177,66 @@ public class TabControlViewModel : NotificationObject
         }
 		
     }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Public Class TabControlViewModel
+	Inherits NotificationObject
+
+
+		Public Sub New()
+
+
+			TabControlItems = New ObservableCollection(Of Person)()
+
+			TabControlItems.Add(New Person("James", "Assets/1.jpg"))
+
+			TabControlItems.Add(New Person("Peaches", "Assets/2.jpg"))
+
+			TabControlItems.Add(New Person("Linda", "Assets/3.jpg"))
+
+			TabControlItems.Add(New Person("Carl", "Assets/4.jpg"))
+
+			TabControlItems.Add(New Person("Niko", "Assets/5.jpg"))
+
+			TabControlItems.Add(New Person("Eric", "Assets/Emp_02.png"))
+
+			TabControlItems.Add(New Person("Paul", "Assets/Emp_04.png"))
+
+			TabControlItems.Add(New Person("Clara", "Assets/Emp_06.png"))
+
+			TabControlItems.Add(New Person("Maria", "Assets/Emp_11.png"))
+
+			TabControlItems.Add(New Person("Mark", "Assets/Emp_13.png"))
+
+			TabControlItems.Add(New Person("Robin", "Assets/Emp_16.png"))
+
+			TabControlItems.Add(New Person("Chris", "Assets/Emp_21.png"))
+
+			TabControlItems.Add(New Person("Seria", "Assets/Emp_23.png"))
+
+			TabControlItems.Add(New Person("Mathew", "Assets/Emp_25.png"))
+
+		End Sub
+
+		Private items As ObservableCollection(Of Person)
+
+		Public Property TabControlItems() As ObservableCollection(Of Person)
+
+
+			Get
+				Return items
+			End Get
+
+			Set(ByVal value As ObservableCollection(Of Person))
+				items = value
+			End Set
+
+		End Property
+
+End Class
 
 {% endhighlight %}
 

@@ -15,11 +15,31 @@ It is possible to place tick marks along the track in a uniform manner. The posi
 
 The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximum values. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200"  Minimum="0"  Maximum="100" TickFrequency="20" Value="40" />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200"  Minimum="0"  Maximum="100" TickFrequency="20" Value="40" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.TickFrequency = 20;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  rangeSlider.TickFrequency = 20
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Ticks_images/Ticks_img1.png)
 
@@ -29,11 +49,31 @@ N>  When the SnapsTo property is set to Ticks, the TickFrequency is used to spec
 
 When the SnapsTo property is set to StepValues, the StepFrequency property is used to specify the interval between snap points. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0"  Maximum="100" StepFrequency="20" Value="40"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" VerticalAlignment="Center" Minimum="0"  Maximum="100" StepFrequency="20" Value="40"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.StepFrequency = 20;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.StepFrequency = 20
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Snaps To 
 
@@ -62,13 +102,33 @@ The default option is Inline.
 
 Tick marks placed either below the track in horizontal orientation or right of the track in vertical orientation. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" Minimum="0"   Maximum="100"                                                      
+<editors:SfRangeSlider Width="200" Minimum="0"   Maximum="100"   x:Name="rangeSlider"                                                   
 
 TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.BottomRight;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.BottomRight
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Ticks_images/Ticks_img3.png)
 
@@ -78,11 +138,31 @@ N>  In Vertical Orientation, this option will place the ticks to right side.
 
 Tick marks placed either above the track in horizontal orientation or left of the track in vertical orientation. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200"  Minimum="0"   Maximum="100" TickFrequency="20" TickPlacement="TopLeft"  Value="40"   />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200"  Minimum="0"   Maximum="100" TickFrequency="20" TickPlacement="TopLeft"  Value="40"   />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.TopLeft;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.TopLeft
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Ticks_images/Ticks_img5.png)
 
@@ -93,11 +173,31 @@ N>  In Vertical Orientation, this option will place the ticks to left side.
 
 Tick marks placed on both sides of the track either in horizontal or vertical orientation.  
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20"  TickPlacement="Outside" Value="40"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" Minimum="0" Maximum="100" TickFrequency="20"  TickPlacement="Outside" Value="40"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.Outside;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.Outside
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Ticks_images/Ticks_img7.png)
 
@@ -105,11 +205,31 @@ Tick marks placed on both sides of the track either in horizontal or vertical or
 
 Ticks are placed inside the track.  
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="Inline" Value="40" />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="Inline" Value="40" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.Inline;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.Inline
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Ticks_images/Ticks_img8.png)
 
@@ -117,11 +237,31 @@ Ticks are placed inside the track.
 
 Tick marks not appear.  
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="None" Value="40" />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="None" Value="40" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.None;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.None
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Ticks_images/Ticks_img9.png)
 

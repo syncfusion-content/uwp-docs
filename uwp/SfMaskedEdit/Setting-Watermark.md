@@ -11,7 +11,7 @@ documentation: ug
 
 The control prompts you with some information, when it is not in focus and contains an empty string.
 
-###By using the Watermark
+### By using the Watermark
 
 Watermark property allows you to specify some information, when the text is empty. For illustration, create a simple textbox, where you enter names separated by a comma.
 {% highlight xaml %}
@@ -57,7 +57,7 @@ N> The Watermark property is the object type. So, any framework element can be h
 
 
 
-###By using the Watermark template
+### By using the Watermark template
 
 Any business object can be bound to the Watermark property and that object can be decorated by applying the WatermarkTemplate property.
 {% highlight xaml %}

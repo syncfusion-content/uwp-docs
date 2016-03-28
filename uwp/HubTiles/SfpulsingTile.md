@@ -146,8 +146,7 @@ Adjusts the values of properties such as PulseScale, RadiusX and RadiusY.
 
 {% highlight C# %}
 
- SfPulsingTile puslingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile", RadiusX = 0,
-                            RadiusY = 0, PulseScale = 2};
+ SfPulsingTile puslingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile", RadiusX = 0, RadiusY = 0, PulseScale = 2};
 
  puslingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
 

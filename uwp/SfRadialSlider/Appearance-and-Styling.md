@@ -51,9 +51,9 @@ InnerRimFill="LightGray" x:Name="radialSlider"
 
 {% highlight C# %}
 
-  radialSlider.InnerRimRadiusFactor = 0.25;
-  radialSlider.InnerRimStroke = new SolidColorBrush(Colors.SkyBlue);
-  radialSlider.InnerRimStrokeThickness = 4;
+radialSlider.InnerRimRadiusFactor = 0.25;
+radialSlider.InnerRimStroke = new SolidColorBrush(Colors.SkyBlue);
+radialSlider.InnerRimStrokeThickness = 4;
 
 {% endhighlight %}
 
@@ -62,7 +62,6 @@ InnerRimFill="LightGray" x:Name="radialSlider"
 radialSlider.InnerRimRadiusFactor = 0.25
 radialSlider.InnerRimStroke = New SolidColorBrush(Colors.SkyBlue)
 radialSlider.InnerRimStrokeThickness = 4
-
 
 {% endhighlight %}
 
