@@ -67,7 +67,7 @@ Orientation specifies the arrangement sequence of tile view items. Both horizont
 
 {% highlight XAML %}
 
-<layout:SfTileView Width="500" Height="300" Orientation="Horizontal">
+<layout:SfTileView x:Name="tileView" Width="500" Height="300" Orientation="Horizontal">
 
 <layout:SfTileViewItem Background="LightBlue" Content="PaulVent" MaximizedContent="Description about Paul" />
 
@@ -83,6 +83,22 @@ Orientation specifies the arrangement sequence of tile view items. Both horizont
 
 {% endtabs %}
 
+{% tabs %}
+
+{% highlight C# %}
+
+tileView.Orientation = Orientation.Horizontal;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tileView.Orientation = Orientation.Horizontal
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img2.jpeg)
 
 **Vertical**
@@ -91,7 +107,7 @@ Orientation specifies the arrangement sequence of tile view items. Both horizont
 
 {% highlight XAML %}
 
-<layout:SfTileView Width="500" Height="300" Orientation="Vertical">
+<layout:SfTileView x:Name="tileView" Width="500" Height="300" Orientation="Vertical">
 
 <layout:SfTileViewItem Background="LightBlue" Content="PaulVent" MaximizedContent="Description about Paul" />
 
@@ -102,6 +118,22 @@ Orientation specifies the arrangement sequence of tile view items. Both horizont
 <layout:SfTileViewItem Background="LightBlue" Content="Niko" MaximizedContent="Description about Niko"/>
 
 </layout:SfTileView>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+tileView.Orientation = Orientation.Vertical;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tileView.Orientation = Orientation.Vertical
 
 {% endhighlight %}
 
@@ -198,6 +230,12 @@ tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.Minimize
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.MinimizedItemsOrientation.Top
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img4.jpeg)
@@ -223,6 +261,12 @@ Minimized items are placed at bottom of the control and maximized item at the to
 {% highlight C# %}
 
 tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.MinimizedItemsOrientation.Bottom;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.MinimizedItemsOrientation.Bottom
 
 {% endhighlight %}
 
@@ -254,6 +298,12 @@ tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.Minimize
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.MinimizedItemsOrientation.Left
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img6.jpeg)
@@ -279,6 +329,12 @@ Minimized items are placed at right side of the control and maximized item at th
 {% highlight C# %}
 
 tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.MinimizedItemsOrientation.Right;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.MinimizedItemsOrientation.Right
 
 {% endhighlight %}
 

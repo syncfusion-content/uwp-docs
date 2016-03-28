@@ -13,25 +13,63 @@ documentation: ug
 
 RadiusX and RadiusY properties in the SfRadialMenu can be used to define the X and Y axis radius to render the control. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-
-
-<navigation:SfRadialMenu RadiusX="150" RadiusY="150" />
+<navigation:SfRadialMenu x:Name="radialMenu" RadiusX="150" RadiusY="150" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ radialMenu.RadiusX = 150;
+ radialMenu.RadiusY = 150;
+ 
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialMenu.RadiusX = 150
+radialMenu.RadiusY = 150
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ## CenterRimRadiusFactor
 
 CenterRimRadiusFactor property can be used to define the radius of the center rim (inner circle). 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-
-
-<navigation:SfRadialMenu   CenterRimRadiusFactor="0.3" IsOpen="True" />
+<navigation:SfRadialMenu x:Name="radialMenu"  CenterRimRadiusFactor="0.3" IsOpen="True" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ radialMenu.CenterRimRadiusFactor = 0.3;
+ 
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialMenu.CenterRimRadiusFactor = 0.3
+ 
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
@@ -39,11 +77,31 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 RimBackground property used to fill the outer rim (outer circle).
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<navigation:SfRadialMenu IsOpen="True" RimBackground="Green" />
+<navigation:SfRadialMenu x:Name="radialMenu"  IsOpen="True" RimBackground="Green" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ radialMenu.RimBackground = new SolidColorBrush(Colors.Green);
+ 
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialMenu.RimBackground = New SolidColorBrush(Colors.Green)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
@@ -53,12 +111,31 @@ RimBackground property used to fill the outer rim (outer circle).
 
 RimActiveBrush property used to fill the expander rim and this expander rim only visible when the items have sub items.   
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<navigation:SfRadialMenu RimActiveBrush="Red" RimBackground="Green" IsOpen="True" />
+<navigation:SfRadialMenu x:Name="radialMenu" RimActiveBrush="Red" RimBackground="Green" IsOpen="True" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ radialMenu.RimActiveBrush = new SolidColorBrush(Colors.Red);
+ 
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialMenu.RimActiveBrush = New SolidColorBrush(Colors.Red)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
@@ -68,12 +145,31 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 RimRadiusFactor property of SfRadialMenu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<navigation:SfRadialMenu RimActiveBrush="Red" RimRadiusFactor="0.7" RimBackground="Green"   IsOpen="True" />
+<navigation:SfRadialMenu x:Name="radialMenu" RimActiveBrush="Red" RimRadiusFactor="0.7" RimBackground="Green"   IsOpen="True" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ radialMenu.RimRadiusFactor = 0.7 ;
+ 
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialMenu.RimRadiusFactor = 0.7 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
@@ -81,6 +177,8 @@ RimRadiusFactor property of SfRadialMenu can be used to set the radius of the it
 ## Navigation Button Style
 
 The navigation button displayed in the center of SfRadialMenu can be styled using NavigationButtonStyle property. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -90,6 +188,7 @@ IsOpen="True" />
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## Editing SubMenu Items Programmatically
 
@@ -126,11 +225,23 @@ With the DrillDownItem property, you can access and edit submenu items of SfRadi
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 radialmenu.DrillDownItem = edit;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+radialmenu.DrillDownItem = edit
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)

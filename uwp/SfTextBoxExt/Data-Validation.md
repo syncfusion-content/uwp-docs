@@ -19,6 +19,8 @@ N>  The Model should also inherit the INotifyPropertyChanged Interface.
 
 The following code sample shows the model class:
 
+{% tabs %}
+
 {% highlight c# %}
 
 public class DataValidationHelper : INotifyPropertyChanged, IDataValidation
@@ -118,7 +120,90 @@ public class DataValidationHelper : INotifyPropertyChanged, IDataValidation
 
 {% endhighlight %}
 
+{% highlight VB %}
 
+Public Class DataValidationHelper
+
+	Implements INotifyPropertyChanged, IDataValidation
+
+	Private name_Renamed As String
+
+	Public Property Name() As String
+
+
+		Get
+			Return name_Renamed
+		End Get
+
+		Set(ByVal value As String)
+
+
+			name_Renamed = value
+
+			RaisePropertyChanged("Name")
+
+			RaisePropertyChanged("Error")
+
+		End Set
+
+	End Property
+
+	Public ReadOnly Property [Error]() As String
+
+
+		Get
+
+
+			If String.IsNullOrEmpty(Name) Then
+
+
+				Return "Name field required."
+
+			End If
+
+		End Get
+		 Return ""
+
+	End Property
+
+	Default Public ReadOnly Property Item(ByVal columnname As String) As String
+
+
+		Get
+
+
+			Select Case columnname
+
+
+				Case "Name"
+
+					If String.IsNullOrEmpty(Name) Then
+
+
+						Return "Name field required."
+
+					End If
+
+
+			End Select
+
+			Return ""
+
+		End Get
+
+	End Property
+
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements INotifyPropertyChanged.PropertyChanged
+
+	Public Sub RaisePropertyChanged(ByVal propertyname As String)
+
+	RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyname))
+
+End Sub
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### NotifyOnDataErrors 
 

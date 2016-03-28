@@ -43,6 +43,16 @@ rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Standard;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+rating.ItemsCount = 5
+
+rating.Value = 2.3
+
+rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Standard
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Rating-Precisions-images/Rating-Precisions-img1.jpeg)
@@ -75,6 +85,16 @@ rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Half;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+rating.ItemsCount = 5
+
+rating.Value = 2.3
+
+rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Half
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Rating-Precisions-images/Rating-Precisions-img2.jpeg)
@@ -104,6 +124,16 @@ rating.ItemsCount = 5;
 rating.Value = 2.3;
 
 rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Exact;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+rating.ItemsCount = 5
+
+rating.Value = 2.3
+
+rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Exact
 
 {% endhighlight %}
 

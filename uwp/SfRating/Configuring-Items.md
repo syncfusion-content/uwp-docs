@@ -33,6 +33,12 @@ rating.ItemsCount = 5;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+rating.ItemsCount = 5
+
+{% endhighlight %}
+
 {% endtabs %}
 
 

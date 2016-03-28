@@ -35,6 +35,10 @@ VisibleSegmentsCount property is used to specify the number of segments availabl
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 SfRadialMenu radialMenu = new SfRadialMenu();
@@ -42,6 +46,15 @@ radialMenu.LayoutType = LayoutType.Custom;
 radialMenu.VisibleSeggmentsCount = 7; 
  
 {% endhighlight %}
+
+{% highlight VB %}
+
+SfRadialMenu radialMenu = new SfRadialMenu()
+radialMenu.LayoutType = LayoutType.Custom
+radialMenu.VisibleSeggmentsCount = 7
+ 
+{% endhighlight %}
+
 {% endtabs %}
 
 ## SegmentIndex
@@ -51,27 +64,59 @@ SegmentIndex property is used to specify the index of the SfRadialMenuItem in ci
 {% tabs %}
 {% highlight xaml %}
  <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />
-   <navigation:SfRadialMenuItem Header="Item  2" SegmentIndex="1" />
-   <navigation:SfRadialMenuItem Header="Item 5" SegmentIndex="4" /> 
-   <navigation:SfRadialMenuItem Header="Item 1" SegmentIndex="0" />
-   <navigation:SfRadialMenuItem Header="Item 6" SegmentIndex="5" />
-   <navigation:SfRadialMenuItem Header="Item 3" SegmentIndex="2" />
-   </navigation:SfRadialMenu> 
+ <navigation:SfRadialMenuItem Header="Item  2" SegmentIndex="1" />
+ <navigation:SfRadialMenuItem Header="Item 5" SegmentIndex="4" /> 
+ <navigation:SfRadialMenuItem Header="Item 1" SegmentIndex="0" />
+ <navigation:SfRadialMenuItem Header="Item 6" SegmentIndex="5" />
+ <navigation:SfRadialMenuItem Header="Item 3" SegmentIndex="2" />
+ </navigation:SfRadialMenu> 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
 
 {% highlight c# %}
-	SfRadialMenu radialMenu = new SfRadialMenu();
-	radialMenu.LayoutType = LayoutType.Custom; 
-	radialMenu.VisibleSegmentsCount = 7; 
-	SfRadialMenuItem item2 = new SfRadialMenuItem() { Header = "Item 2", SegmentIndex = 1 };
-	SfRadialMenuItem item5 = new SfRadialMenuItem() { Header   ="Item 5", SegmentIndex = 4 };
-	SfRadialMenuItem item1 = new SfRadialMenuItem() { Header = "Item 1", SegmentIndex = 0 };
-	SfRadialMenuItem item6 = new SfRadialMenuItem() { Header = "Item 6", SegmentIndex = 5 };
-	SfRadialMenuItem item3 = new SfRadialMenuItem() { Header = "Item 3",SegmentIndex = 2 };
-	radialMenu.Items.Add(item2);radialMenu.Items.Add(item5);radialMenu.Items.Add(item1);
-	radialMenu.Items.Add(item6); radialMenu.Items.Add(item3);
+
+SfRadialMenu radialMenu = new SfRadialMenu();
+radialMenu.LayoutType = LayoutType.Custom;
+radialMenu.VisibleSegmentsCount = 7;          
+radialMenu.Items.Add(new SfRadialMenuItem() { Header = "Item 2", SegmentIndex = 1 });
+radialMenu.Items.Add(new SfRadialMenuItem() { Header = "Item 5", SegmentIndex = 4 });
+radialMenu.Items.Add(new SfRadialMenuItem() { Header = "Item 1", SegmentIndex = 0 });
+radialMenu.Items.Add(new SfRadialMenuItem() { Header = "Item 6", SegmentIndex = 5 });
+radialMenu.Items.Add(new SfRadialMenuItem() { Header = "Item 3", SegmentIndex = 2 });
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim radialMenu As New SfRadialMenu()
+radialMenu.LayoutType = LayoutType.Custom
+radialMenu.VisibleSegmentsCount = 7
+radialMenu.Items.Add(New SfRadialMenuItem() With {
+	.Header = "Item 2",
+	.SegmentIndex = 1
+})
+radialMenu.Items.Add(New SfRadialMenuItem() With {
+	.Header = "Item 5",
+	.SegmentIndex = 4
+})
+radialMenu.Items.Add(New SfRadialMenuItem() With {
+	.Header = "Item 1",
+	.SegmentIndex = 0
+})
+radialMenu.Items.Add(New SfRadialMenuItem() With {
+	.Header = "Item 6",
+	.SegmentIndex = 5
+})
+radialMenu.Items.Add(New SfRadialMenuItem() With {
+	.Header = "Item 3",
+	.SegmentIndex = 2
+})
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Layout-Types_images/Layout-Types_img1.png)

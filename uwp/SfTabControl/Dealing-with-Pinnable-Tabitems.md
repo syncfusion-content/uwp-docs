@@ -54,6 +54,12 @@ paul.ShowPinnableButton = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+paul.ShowPinnableButton = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -91,6 +97,12 @@ The pinned item tab panel is scrollable. The scroll buttons can be enabled by se
 {% highlight C# %}
 
 tabControl.PinnedTabScrollButtonVisibility = Syncfusion.UI.Xaml.Controls.Navigation.TabScrollButtonVisibility.Visible;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tabControl.PinnedTabScrollButtonVisibility = Syncfusion.UI.Xaml.Controls.Navigation.TabScrollButtonVisibility.Visible
 
 {% endhighlight %}
 

@@ -21,6 +21,8 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 1.Include the namespace for Syncfusion.SfRibbon.UWP assembly in MainPage.xaml
 
+{% tabs %}
+
 {% highlight xaml %}
 <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -32,8 +34,11 @@ xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
 
 {% endhighlight %}
 
+{% endtabs %}
 
 2.Now add the `SfRibbon` control with a required optimal name using the included namespace
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -47,8 +52,22 @@ xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
 
 </Page>
 
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfRibbon _ribbon = new SfRibbon();
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim _ribbon As New SfRibbon()
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 Execute the above code to render the following output.
 
@@ -58,6 +77,8 @@ Execute the above code to render the following output.
 ## Add Ribbon Tab
 
 SfRibbon control accept RibbonTab as children.The following code example illustrates on how to add RibbonTab 
+
+{% tabs %}
 
 {% highlight xaml %}
 <Page xmlns:ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
@@ -82,6 +103,10 @@ SfRibbon control accept RibbonTab as children.The following code example illustr
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 SfRibbon _ribbon = new SfRibbon();
@@ -94,6 +119,19 @@ _ribbon.Items.Add(new SfRibbonTab() { Caption = "Insert" });
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbon As New SfRibbon()
+
+_ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Home"})
+
+_ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Execute the above code to render the following output.
 
 ![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img2.png](Getting-Started_images/Getting-Started_img2.jpeg)
@@ -102,6 +140,8 @@ Execute the above code to render the following output.
 ## Add Ribbon Bar
 
 RibbonTab accepts RibbonBar as children, here five RibbonBar Controls are added inside “HOME” RibbonTab
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -133,6 +173,10 @@ RibbonTab accepts RibbonBar as children, here five RibbonBar Controls are added 
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 SfRibbon _ribbon = new SfRibbon();
@@ -151,6 +195,25 @@ _ribbon.Items.Add(new SfRibbonTab() { Caption = "Insert" });
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbon As New SfRibbon()
+
+Dim _ribbonTab As New SfRibbonTab() With {.Caption = "Home"}
+
+_ribbonTab.Items.Add(New SfRibbonBar() With {.Header = "New"})
+
+_ribbonTab.Items.Add(New SfRibbonBar() With {.Header = "Delete"})
+
+_ribbon.Items.Add(_ribbonTab)
+
+_ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Execute the above code to render the following output.
 
 ![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img3.png](Getting-Started_images/Getting-Started_img3.jpeg)
@@ -159,6 +222,8 @@ Execute the above code to render the following output.
 ## Add Ribbon controls to RibbonBar
 
 The following code example illustrates on how to add ribbon controls to the Ribbon bar from code-behind and XAML,
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -198,6 +263,10 @@ The following code example illustrates on how to add ribbon controls to the Ribb
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 SfRibbon _ribbon = new SfRibbon();
@@ -224,6 +293,33 @@ _ribbon.Items.Add(new SfRibbonTab() { Caption = "Insert" });
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim _ribbon As New SfRibbon()
+
+Dim _ribbonTab As New SfRibbonTab() With {.Caption = "Home"}
+
+Dim _ribbonBar As New SfRibbonBar()
+
+_ribbonBar.Items.Add(New SfRibbonButton() With {.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Bold.png", UriKind.RelativeOrAbsolute))})
+
+Dim _ribbonBar1 As New SfRibbonBar()
+
+_ribbonBar1.Items.Add(New SfRibbonButton() With {.Icon = New BitmapImage(New Uri("ms-appx:/Assets/Bullets.png", UriKind.RelativeOrAbsolute))})
+
+_ribbonTab.Items.Add(_ribbonBar)
+
+_ribbonTab.Items.Add(_ribbonBar1)
+
+_ribbon.Items.Add(_ribbonTab)
+
+_ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Execute the above code to render the following output.
 
 ![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img4.png](Getting-Started_images/Getting-Started_img4.jpeg)
@@ -232,6 +328,8 @@ Execute the above code to render the following output.
 ## Configure QAT
 
 QAT items can be added as follows,
+
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbon x:Name="_ribbon" QATVisibility="Visible">
@@ -264,6 +362,8 @@ QAT items can be added as follows,
 
 {% endhighlight %}
 
+{% endtabs %}
+
 You can limit the number of viewable items in QAT by setting DisplayItemsCount property. When the total number of items exceeds DisplayItemsCount, scroll QAT for viewing the items.
 
 ![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img5.png](Getting-Started_images/Getting-Started_img5.jpeg)
@@ -272,6 +372,8 @@ You can limit the number of viewable items in QAT by setting DisplayItemsCount p
 ## Configure BackStage
 
 BackStageButton and BackStage TabItems can be added as follows,
+
+{% tabs %}
 
 {% highlight xaml %}
 <ribbon:SfRibbon.BackStage>
@@ -289,6 +391,8 @@ BackStageButton and BackStage TabItems can be added as follows,
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img6.png](Getting-Started_images/Getting-Started_img6.jpeg)
 

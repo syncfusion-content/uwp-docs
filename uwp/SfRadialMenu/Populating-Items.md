@@ -15,6 +15,8 @@ Radial menu items can be populated with the business object collection. Let us c
 
 The Application command model look likes below.  
 
+{% tabs %}
+
 {% highlight c# %}  
 
   public class ApplicationCommand
@@ -35,9 +37,31 @@ The Application command model look likes below.
 
 {% endhighlight %}
 
+{% highlight VB %}  
+
+  Public Class ApplicationCommand
+
+
+		Public Property Name() As String
+
+
+
+		Public Property ImagePath() As String
+
+
+
+		Public Property Command() As ICommand
+
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 Create the Application command collection as follows. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -55,8 +79,30 @@ public List<ApplicationCommand> Options
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private options_Renamed As List(Of ApplicationCommand)
+
+Public Property Options() As List(Of ApplicationCommand)
+
+
+			Get
+				Return options_Renamed
+			End Get
+
+			Set(ByVal value As List(Of ApplicationCommand))
+				options_Renamed = value
+			End Set
+
+End Property
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Populate the Application command collection as follows. 
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -71,6 +117,34 @@ Populate the Application command collection as follows.
  Options.Add(new ApplicationCommand() { Name = "Paste" ,ImagePath="paste.png"});
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+ Options = New List(Of ApplicationCommand)()
+
+ Options.Add(New ApplicationCommand() With {
+	 .Name="Bold",
+	 .ImagePath="bold.png"
+ })
+
+ Options.Add(New ApplicationCommand() With {
+	 .Name = "Cut",
+	 .ImagePath="cut.png"
+ })
+
+ Options.Add(New ApplicationCommand() With {
+	 .Name = "Copy",
+	 .ImagePath="copy.png"
+ })
+
+ Options.Add(New ApplicationCommand() With {
+	 .Name = "Paste",
+	 .ImagePath="paste.png"
+ })
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Bind the Application command collection to the ItemsSource property of the SfRadialMenu control. 
 

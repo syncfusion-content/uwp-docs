@@ -15,11 +15,31 @@ The SfRangeSlider control supports to select range of value using two Thumbs.
 
 When ShowRange property is set to true, two Thumbs are placed in the track. One Thumb is used to update the start of the range selection and another thumb is used to update the end of the range selection.  
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="40" RangeEnd="70"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="40" RangeEnd="70"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.ShowRange = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.ShowRange = True
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Range_images/Range_img1.jpg)
 
@@ -27,11 +47,31 @@ When ShowRange property is set to true, two Thumbs are placed in the track. One 
 
 Gets or sets the start value of the range start.  
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="10" RangeEnd="70"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="10" RangeEnd="70"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.RangeStart = 10;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  rangeSlider.RangeStart = 10
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Range_images/Range_img2.jpg)
 
@@ -39,11 +79,31 @@ Gets or sets the start value of the range start.
 
 Gets or sets the end value of the range end.  
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="30" RangeEnd="90"  />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="30" RangeEnd="90"  />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.RangeEnd = 90;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  rangeSlider.RangeEnd = 90
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Range_images/Range_img3.jpg)
 
