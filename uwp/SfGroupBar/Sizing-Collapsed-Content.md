@@ -67,6 +67,6 @@ Content popup can be set to custom size using the properties `PopupSizeMode`, `P
 
 {% endtabs %}
 
-![](Sizing-Collapsed-Content-images/Sizing-Collapsed-Content-img3.jpeg)
+![](Sizing-Collapsed-Content-images/Sizing-Collapsed-Content-img3.jpg)
 
 
