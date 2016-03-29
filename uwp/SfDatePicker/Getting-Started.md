@@ -45,6 +45,18 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+ SfDatePicker datePicker = new SfDatePicker() { VerticalAlignment = VerticalAlignment.Center, Width = 200, Margin = new Thickness(15) };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim datePicker As New SfDatePicker() With {.VerticalAlignment = VerticalAlignment.Center,.Width = 200,.Margin = New Thickness(15)}
+
+{% endhighlight %}
+
 {% endtabs %}
 
 

@@ -82,6 +82,14 @@ calendar.VisibleMaxDate = new DateTime(2015, 12, 25);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calendar.VisibleMinDate = New Date(2015, 12, 5)
+
+calendar.VisibleMaxDate = New Date(2015, 12, 25)
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -165,6 +173,12 @@ The background of selected date can be set using `SelectedDateBackground` proper
 {% highlight C# %}
 
 calendar.SelectedDateBackground = new SolidColorBrush(Windows.UI.Colors.Red);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calendar.SelectedDateBackground = New SolidColorBrush(Windows.UI.Colors.Red)
 
 {% endhighlight %}
 
@@ -357,6 +371,12 @@ Margin="-1,0,-1,0" RenderTransformOrigin="0.5,0.5">
 {% highlight C# %}
 
 calendar.Refresh();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calendar.Refresh()
 
 {% endhighlight %}
 

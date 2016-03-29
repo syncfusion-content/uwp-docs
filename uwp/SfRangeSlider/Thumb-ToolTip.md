@@ -17,11 +17,31 @@ The Thumb tooltip shows the current value on which the Thumb stands.
 
 ThumbToolTipPrecision property is used to define the precision of the value displayed in the tooltip.  
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" Value="50" ThumbToolTipPrecision="2"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" Value="50" ThumbToolTipPrecision="2"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.ThumbToolTipPrecision = 2;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.ThumbToolTipPrecision = 2
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Thumb-ToolTip_images/Thumb-ToolTip_img2.jpg)
 
@@ -37,11 +57,31 @@ The position of the Thumb tooltip in relation to the Thumb can be controlled by 
 
 Tooltip placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="BottomRight" />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="BottomRight" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.ThumbToolTipPlacement = Syncfusion.UI.Xaml.Controls.Input.ThumbToolTipPlacement.BottomRight;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.ThumbToolTipPlacement = Syncfusion.UI.Xaml.Controls.Input.ThumbToolTipPlacement.BottomRight
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Thumb-ToolTip_images/Thumb-ToolTip_img3.jpg)
 
@@ -51,11 +91,31 @@ N>  This option will show tooltip to right in vertical orientation.
 
 Tooltip placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="TopLeft" />
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="TopLeft" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.ThumbToolTipPlacement = Syncfusion.UI.Xaml.Controls.Input.ThumbToolTipPlacement.TopLeft;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.ThumbToolTipPlacement = Syncfusion.UI.Xaml.Controls.Input.ThumbToolTipPlacement.TopLeft
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Thumb-ToolTip_images/Thumb-ToolTip_img5.jpg)
 

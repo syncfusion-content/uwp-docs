@@ -15,7 +15,9 @@ Input values can be restricted to a specific range by setting the Maximum and Mi
 
 The maximum possible value that user can set to the control.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -41,11 +43,31 @@ Maximum="100"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+numericUpDown.Maximum = 100;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ numericUpDown.Maximum = 100
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Minimum
 
 The Minimum possible value that user can set to the control.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -70,3 +92,21 @@ Minimum="50"
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ numericUpDown.Minimum = 50;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ numericUpDown.Minimum = 50
+
+{% endhighlight %}
+
+{% endtabs %}

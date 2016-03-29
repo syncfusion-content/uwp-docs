@@ -21,6 +21,8 @@ The spin button’s position in the SfDomainUpDown control can be changed using 
 
 Spin buttons will be aligned on the right side of the control.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
@@ -40,6 +42,23 @@ SpinButtonsAlignment="Right"
  </editors:SfDomainUpDown>
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Right;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Right
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img3.png)
 
@@ -48,6 +67,8 @@ SpinButtonsAlignment="Right"
 ## Left
 
 Spin buttons will be aligned on the left side of the control.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -67,6 +88,24 @@ SpinButtonsAlignment="Left"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Left;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Left
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Features_images/Features_img4.png)
 
 
@@ -74,6 +113,8 @@ SpinButtonsAlignment="Left"
 ## Both
 
 The spin button’s decrement button will be aligned on the left side of the control and the increment button will be aligned on the right side of the control.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -90,5 +131,23 @@ SpinButtonsAlignment="Both"
                               ItemsSource="{Binding Employees}">        </editors:SfDomainUpDown>          
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Both;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Both
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img5.png)

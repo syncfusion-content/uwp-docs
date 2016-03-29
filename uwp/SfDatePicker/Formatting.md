@@ -17,13 +17,15 @@ The FormatString property determines the format specifier by which the display t
 
 The following code sample shows how to create a date picker with a [month day pattern](http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.monthdaypattern(v=vs.71).aspx): 
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-            <syncfusion:SfDatePicker VerticalAlignment="Center" 
+            <syncfusion:SfDatePicker VerticalAlignment="Center" x:Name="sfdatePicker"
 
                                    Width="200" Margin="15"
 
@@ -36,6 +38,23 @@ The following code sample shows how to create a date picker with a [month day pa
 
 {% endhighlight  %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ sfdatePicker.FormatString = "M";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+ sfdatePicker.FormatString = "M"
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img1.png)
 
@@ -44,6 +63,7 @@ The following code sample shows how to create a date picker with a [month day pa
 The SelectorFormatString property used to specify format for the DateSelector
 
 
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -55,6 +75,23 @@ The SelectorFormatString property used to specify format for the DateSelector
 
 {% endhighlight  %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+sfdatePicker.SelectorFormatString = "M";
+
+{% endhighlight  %}
+
+{% highlight VB %}
+
+sfdatePicker.SelectorFormatString = "M"
+
+{% endhighlight  %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img2.png)
 

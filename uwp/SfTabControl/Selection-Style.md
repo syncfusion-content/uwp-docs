@@ -54,6 +54,16 @@ paul.SelectedForeground = new SolidColorBrush(Colors.Red);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tabControl.SelectionStyle = Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.HeaderText
+
+paul.SelectedBackground = New SolidColorBrush(Colors.Green)
+
+paul.SelectedForeground = New SolidColorBrush(Colors.Red)
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Selection-Style-images/Selection-Style-img1.jpeg)
@@ -93,6 +103,16 @@ tabControl.SelectionStyle = Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyl
 paul.SelectedBackground = new SolidColorBrush(Colors.Green);
 
 paul.SelectedForeground = new SolidColorBrush(Colors.Red);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tabControl.SelectionStyle = Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.CompleteHeader
+
+paul.SelectedBackground = New SolidColorBrush(Colors.Green)
+
+paul.SelectedForeground = New SolidColorBrush(Colors.Red)
 
 {% endhighlight %}
 

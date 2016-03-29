@@ -17,6 +17,9 @@ The FormatString property determines the format specifier by which the display t
 
 Default Value of FormatString is N. 
 
+
+{% tabs %}
+
 {% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
@@ -43,6 +46,25 @@ FormatString="C"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+
+{% tabs %}
+
+{% highlight  c# %}
+
+  numericUpDown.FormatString = "C";
+
+{% endhighlight %}
+
+{% highlight  VB %}
+
+ numericUpDown.FormatString = "C"
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Concepts_images/Concepts_img1.png)
 
 N>  A detailed explanation of Numeric formatting is available here. The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different numeric settings will generate different result strings.
@@ -51,6 +73,8 @@ N>  A detailed explanation of Numeric formatting is available here. The result s
 ## Culture
 
 The Culture property helps to localize the SfNumericUpDown control. Culture property is of type CultureInfo. Text will be formatted based on the specified Culture. Default Value is the Current UI Culture.
+
+{% tabs %}
 
 {% highlight  c# %}
 
@@ -61,6 +85,18 @@ updown.Value = 123.45;
 updown.Culture = new CultureInfo("de-DE");
 
 {% endhighlight %}
+
+{% highlight  VB %}
+
+Dim updown As New SfNumericUpDown()
+
+updown.Value = 123.45
+
+updown.Culture = New CultureInfo("de-DE")
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img3.png)
 
@@ -102,10 +138,21 @@ FormatString="C"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight c# %}
 
 numericUpDown.Culture = new System.Globalization.CultureInfo("de-DE");
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+numericUpDown.Culture = New System.Globalization.CultureInfo("de-DE")
+
+{% endhighlight %}
+
 {% endtabs %}
 ![](Concepts_images/Concepts_img5.png)

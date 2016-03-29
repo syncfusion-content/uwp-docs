@@ -61,6 +61,12 @@ using Syncfusion.UI.Xaml.Controls.Media;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Media
+
+{% endhighlight %}
+
 {% endtabs %}
 
 2.Now add the `SfColorPalette` control with a required optimal name 
@@ -70,6 +76,12 @@ using Syncfusion.UI.Xaml.Controls.Media;
 {% highlight C# %}
 
 SfColorPalette colorPalette = new SfColorPalette();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim colorPalette As New SfColorPalette()
 
 {% endhighlight %}
 

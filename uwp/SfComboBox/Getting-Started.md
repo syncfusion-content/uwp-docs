@@ -45,4 +45,16 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfComboBox combobox = new SfComboBox();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim combobox As New SfComboBox()
+
+{% endhighlight %}
+
 {% endtabs %}

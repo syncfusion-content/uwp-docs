@@ -48,6 +48,27 @@ calendar.BlackOutDates.Add(new DateTime(2015, 12, 27));
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 1))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 2))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 3))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 12))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 13))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 14))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 25))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 27))
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -110,6 +131,26 @@ calendar.BlackOutDates.Add(new DateTime(2015, 12, 25));
 
 calendar.BlackOutDates.Add(new DateTime(2015, 12, 27));
 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 1))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 2))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 3))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 12))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 13))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 14))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 25))
+
+calendar.BlackOutDates.Add(New Date(2015, 12, 27))
 
 {% endhighlight %}
 

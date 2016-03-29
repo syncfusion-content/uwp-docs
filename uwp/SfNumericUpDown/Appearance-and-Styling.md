@@ -23,7 +23,9 @@ Spin Button position in the SfNumericUpDown control can be changed relative to t
 
 Spin Buttons will get aligned to the right side of the control.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -49,13 +51,33 @@ SpinButtonsAlignment="Right"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+numericUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Right;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+numericUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Right
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ### Left
 
 Spin Buttons will get aligned to the left side of the control.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -81,13 +103,33 @@ SpinButtonsAlignment="Left"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ numericUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Left;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ numericUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Left
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ### Both
 
  Spin Buttons will get aligned to the both sides of the control.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -113,13 +155,33 @@ SpinButtonsAlignment="Both"
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+numericUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Both;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+numericUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlignment.Both
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 ## Accent Brush
 
 Accent Brush property is used to decorate the hot spots of a control with a solid color. 
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -134,6 +196,24 @@ AccentBrush="Green"/>
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ numericUpDown.AccentBrush = new SolidColorBrush(Colors.Green);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ numericUpDown.AccentBrush = New SolidColorBrush(Colors.Green)
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following image shows the control with various accent brushes.
 

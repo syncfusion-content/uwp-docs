@@ -29,11 +29,13 @@ InnerRimStrokeThickness property can be used to set the thickness of the Inner R
 
 InnerRimFill property can be used the set the fill color of the Inner Rim. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
   <syncfusion:SfRadialSlider
 
-InnerRimFill="LightGray"
+InnerRimFill="LightGray" x:Name="radialSlider"
 
             InnerRimRadiusFactor="0.25"
 
@@ -42,6 +44,28 @@ InnerRimFill="LightGray"
             InnerRimStrokeThickness="4" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+radialSlider.InnerRimRadiusFactor = 0.25;
+radialSlider.InnerRimStroke = new SolidColorBrush(Colors.SkyBlue);
+radialSlider.InnerRimStrokeThickness = 4;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialSlider.InnerRimRadiusFactor = 0.25
+radialSlider.InnerRimStroke = New SolidColorBrush(Colors.SkyBlue)
+radialSlider.InnerRimStrokeThickness = 4
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts--and-Features_images/Concepts--and-Features_img6.png)
 
@@ -65,9 +89,11 @@ OuterRimStrokeThickness property can be used to set the thickness of the Outer R
 
 Background property can be used to fill the Outer Rim.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfRadialSlider
+<syncfusion:SfRadialSlider x:Name="radialSlider"
 
             Background="LightGray"
 
@@ -78,6 +104,29 @@ Background property can be used to fill the Outer Rim.
             OuterRimStrokeThickness="4" />
 
 {% endhighlight %}
+
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+radialSlider.OuterRimRadiusFactor = 0.8;
+radialSlider.OuterRimStroke = new SolidColorBrush(Colors.SkyBlue);
+radialSlider.OuterRimStrokeThickness = 4;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ radialSlider.OuterRimRadiusFactor = 0.8
+ radialSlider.OuterRimStroke = New SolidColorBrush(Colors.SkyBlue)
+ radialSlider.OuterRimStrokeThickness = 4
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts--and-Features_images/Concepts--and-Features_img7.png)
 
@@ -113,11 +162,31 @@ Ticks can be customized using the TickTemplate property.
 
 TickRadiusFactor property decides the radius of the ticks from the total radius available to render the SfRadialSlider. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfRadialSlider  TickRadiusFactor="0.75"  />
+<syncfusion:SfRadialSlider x:Name="radialSlider"  TickRadiusFactor="0.75"  />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+radialSlider.TickRadiusFactor = 0.25;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialSlider.TickRadiusFactor = 0.25
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts--and-Features_images/Concepts--and-Features_img9.png)
 
@@ -125,11 +194,31 @@ TickRadiusFactor property decides the radius of the ticks from the total radius 
 
 Visibility of ticks can be controlled by TickVisibility property. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfRadialSlider TickVisibility="Collapsed" />
+<syncfusion:SfRadialSlider x:Name="radialSlider" TickVisibility="Collapsed" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+radialSlider.TickVisibility = Visibility.Collapsed;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+radialSlider.TickVisibility = Visibility.Collapsed
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts--and-Features_images/Concepts--and-Features_img10.png)
 
@@ -167,21 +256,61 @@ LabelRadiusFactor property decides the radius of the labels from the total radiu
 
 ![](Concepts--and-Features_images/Concepts--and-Features_img12.png)
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfRadialSlider LabelRadiusFactor="0.7" />
+<syncfusion:SfRadialSlider x:Name="radialSlider" LabelRadiusFactor="0.7" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ radialSlider.LabelRadiusFactor = 0.7;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ radialSlider.LabelRadiusFactor = 0.7
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Label Visibility
 
 Visibility of ticks can be controlled by LabelVisibility property. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfRadialSlider  LabelVisibility="Collapsed" />
+<syncfusion:SfRadialSlider x:Name="radialSlider"  LabelVisibility="Collapsed" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+  radialSlider.LabelVisibility = Visibility.Collapsed;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  radialSlider.LabelVisibility = Visibility.Collapsed
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts--and-Features_images/Concepts--and-Features_img13.png)
 
@@ -192,11 +321,31 @@ The Pointer that is used for the select the value by dragging in circular track 
 
 The PointerRadiusFactor property decides the radius of the Pointer from the total radius available to render the SfRadialSlider. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfRadialSlider PointerRadiusFactor="0.5" />
+<syncfusion:SfRadialSlider x:Name="radialSlider"  PointerRadiusFactor="0.5" />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+   radialSlider.PointerRadiusFactor = 0.5;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  radialSlider.PointerRadiusFactor = 0.5
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Concepts--and-Features_images/Concepts--and-Features_img14.png)
 

@@ -85,6 +85,12 @@ carousel.Offset = 100.0;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.Offset = 100.0
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfCarousel-images/SfCarousel-img9.jpeg)
@@ -163,6 +169,12 @@ carousel.ScaleOffset = 0.5;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.ScaleOffset = 0.5
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfCarousel-images/SfCarousel-img10.jpeg)
@@ -238,6 +250,12 @@ carousel.ScaleOffset = 0.5;
 {% highlight C# %}
 
 carousel.SelectedItemOffset = 60.0;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+carousel.SelectedItemOffset = 60.0
 
 {% endhighlight %}
 

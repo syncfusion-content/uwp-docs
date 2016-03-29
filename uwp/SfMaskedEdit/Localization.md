@@ -13,6 +13,8 @@ SfMaskedEdit allows to build rich form-filling user interfaces by using culture-
 
 The following code example shows how to localize the control to German culture.
 
+{% tabs %}
+
 {% highlight XAML %}
 
 <syncfusion:SfMaskedEdit Grid.Row="8" Margin="10 5" Name="maskedEdit"
@@ -21,11 +23,23 @@ The following code example shows how to localize the control to German culture.
 
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
 {% highlight C# %}
 
  maskedEdit.Culture=new System.Globalization.CultureInfo("fr-FR");
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+ maskedEdit.Culture = New System.Globalization.CultureInfo("fr-FR")
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Culture_images/Culture_img1.png)
 

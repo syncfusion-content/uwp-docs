@@ -59,6 +59,24 @@ accordion.Items.Add(new SfAccordionItem());
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim accordion As New SfAccordion()
+
+accordion.Items.Add(New SfAccordionItem())
+
+accordion.Items.Add(New SfAccordionItem())
+
+accordion.Items.Add(New SfAccordionItem())
+
+accordion.Items.Add(New SfAccordionItem())
+
+accordion.Items.Add(New SfAccordionItem())
+
+
+{% endhighlight %}
+
+
 {% endtabs %}
 
 ![](Populating-Items-images/Populating-Items-img1.jpeg)
@@ -104,6 +122,22 @@ accordion.Items.Add(new SfAccordionItem() { Header = "WinRT" });
 accordion.Items.Add(new SfAccordionItem() { Header = "Windows Phone" });
 
 accordion.Items.Add(new SfAccordionItem() { Header = "Universal" });
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim accordion As New SfAccordion()
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "WPF"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Silverlight"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "WinRT"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Windows Phone"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
 
 {% endhighlight %}
 
@@ -159,6 +193,37 @@ accordion.Items.Add(new SfAccordionItem() { Header = "Universal" , Content = "Es
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim accordion As New SfAccordion()
+
+accordion.Items.Add(New SfAccordionItem() With {
+	.Header = "WPF",
+	.Content = "Essential Studio for WPF"
+})
+
+accordion.Items.Add(New SfAccordionItem() With {
+	.Header = "Silverlight",
+	.Content = "Essential Studio for Silverlight"
+})
+
+accordion.Items.Add(New SfAccordionItem() With {
+	.Header = "WinRT",
+	.Content = "Essential Studio for WinRT"
+})
+
+accordion.Items.Add(New SfAccordionItem() With {
+	.Header = "Windows Phone",
+	.Content = "Essential Studio for Windows Phone"
+})
+
+accordion.Items.Add(New SfAccordionItem() With {
+	.Header = "Universal",
+	.Content = "Essential Studio for Universal"
+})
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Populating-Items-images/Populating-Items-img3.jpeg)
@@ -186,6 +251,16 @@ public string Description { get; set; }
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class Employee
+Public Property Name() As String
+
+Public Property Description() As String
+End Class
+
+{% endhighlight %}
+
 {% endtabs %}
 
 2.Create a collection of model
@@ -207,6 +282,24 @@ set { employees = value; }
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private employees_Renamed As List(Of Employee)
+
+Public Property Employees() As List(Of Employee)
+
+Get
+	Return employees_Renamed
+End Get
+
+Set(ByVal value As List(Of Employee))
+	employees_Renamed = value
+End Set
+
+End Property
+
+{% endhighlight %}
+
 {% endtabs %}
 
 3.Populate the collection
@@ -224,6 +317,32 @@ Employees.Add(new Employee() { Name = "Linda", Description = "Description about 
 Employees.Add(new Employee() { Name = "Carl", Description = "Description about Carl" });
 
 Employees.Add(new Employee() { Name = "Niko", Description = "Description about Niko" });
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Employees = New List(Of Employee)()
+
+Employees.Add(New Employee() With {
+	.Name = "James",
+	.Description = "Description about James"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Linda",
+	.Description = "Description about Linda"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Carl",
+	.Description = "Description about Carl"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Niko",
+	.Description = "Description about Niko"
+})
 
 {% endhighlight %}
 

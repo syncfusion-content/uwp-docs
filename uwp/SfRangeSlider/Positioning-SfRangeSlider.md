@@ -20,11 +20,31 @@ The default option is Horizontal.
 
 The following code sample shows how to set Vertical Orientation to SfRangeSlider.  
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Height="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" Orientation="Vertical"  />
+<editors:SfRangeSlider x:Name="rangeSlider" Height="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" Orientation="Vertical"  />
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.Orientation = Orientation.Vertical;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.Orientation = Orientation.Vertical
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Orientation_images/Orientation_img2.jpg)
 

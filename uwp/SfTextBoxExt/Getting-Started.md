@@ -17,6 +17,8 @@ Dependent assembly: Syncfusion.SfShared.UWP
 
 The following code sample shows how to create the SfTextBoxExt from code-behind and XAML:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -37,11 +39,19 @@ The following code sample shows how to create the SfTextBoxExt from code-behind 
 
 {% endhighlight %}
 
+
 {% highlight c# %}
 
 SfTextBoxExt textBox = new SfTextBoxExt();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim textBox As New SfTextBoxExt()
+
+{% endhighlight %}
+
+{% endtabs %}
 
 

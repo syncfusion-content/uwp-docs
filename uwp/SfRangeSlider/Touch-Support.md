@@ -24,11 +24,31 @@ To move the thumb of the SfRangeSlider to the tapped position, you must set the 
 
 The following code example and screen shot illustrate this.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="MoveToTapPosition"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="MoveToTapPosition"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ rangeSlider.MoveToPoint = Syncfusion.UI.Xaml.Controls.Input.MovePoint.MoveToTapPosition;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ rangeSlider.MoveToPoint = Syncfusion.UI.Xaml.Controls.Input.MovePoint.MoveToTapPosition
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Touch-Support_images/Touch-Support_img1.png)
 
@@ -38,11 +58,31 @@ To move the thumb of the RangeSlider based on the SmallChange value, you must se
 
 The following code example and screen shot illustrates this.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="IncrementBySmallChange"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="IncrementBySmallChange"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+ rangeSlider.MoveToPoint = Syncfusion.UI.Xaml.Controls.Input.MovePoint.IncrementBySmallChange;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ rangeSlider.MoveToPoint = Syncfusion.UI.Xaml.Controls.Input.MovePoint.IncrementBySmallChange
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Touch-Support_images/Touch-Support_img2.png)
 
@@ -52,11 +92,32 @@ To move the thumb of the SfRangeSlider based on the LargeChange value, you must 
 
 The following code example and screen shot illustrates this.
 
+
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="IncrementByLargeChange"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="IncrementByLargeChange"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+  rangeSlider.MoveToPoint = Syncfusion.UI.Xaml.Controls.Input.MovePoint.IncrementByLargeChange;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  rangeSlider.MoveToPoint = Syncfusion.UI.Xaml.Controls.Input.MovePoint.IncrementByLargeChange
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Touch-Support_images/Touch-Support_img3.png)
 
@@ -66,11 +127,32 @@ To fix the thumb movement of the SfRangeSlider, you must set the MoveToPoint pro
 
 The following code example and screen shot illustrates this.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<editors:SfRangeSlider Width="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="None"/>
+<editors:SfRangeSlider x:Name="rangeSlider" Width="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="None"/>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.MoveToPoint = Syncfusion.UI.Xaml.Controls.Input.MovePoint.None;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.MoveToPoint = Syncfusion.UI.Xaml.Controls.Input.MovePoint.None
+
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Touch-Support_images/Touch-Support_img4.png)
 

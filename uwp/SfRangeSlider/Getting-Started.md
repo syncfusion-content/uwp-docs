@@ -43,4 +43,22 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+ SfRangeSlider rangeSlider = new SfRangeSlider() { Width = 500, HorizontalAlignment = HorizontalAlignment.Center, VerticalAlignment = VerticalAlignment.Center, Minimum = 0, Maximum = 100 };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  Dim rangeSlider As New SfRangeSlider() With {
+	 .Width = 500,
+	 .HorizontalAlignment = HorizontalAlignment.Center,
+	 .VerticalAlignment = VerticalAlignment.Center,
+	 .Minimum = 0,
+	 .Maximum = 100
+ }
+
+{% endhighlight %}
+
 {% endtabs %}

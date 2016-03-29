@@ -351,14 +351,21 @@ MinuteInterval property is used to set interval for minute values in SfTimeSelec
 
 
 SecondsInterval property is used to set interval for second values in SfTimeSelector.
+
+{% tabs %}
+
 {% highlight xaml %}
 
 
 <syncfusion:SfTimeSelector FormatString="hh:MM:ss tt" MinuteInterval="2" SecondsInterval="10"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
 
 SfTimeSelector timeSelector = new SfTimeSelector();
 
@@ -369,6 +376,20 @@ timeSelector.MinuteInterval=2;
 timeSelector.SecondsInterval=10;
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+SfTimeSelector timeSelector = new SfTimeSelector()
+
+timeSelector.FormatString= "hh:MM:ss tt"
+
+timeSelector.MinuteInterval=2
+
+timeSelector.SecondsInterval=10
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Features_images/Features_img10.png)
 

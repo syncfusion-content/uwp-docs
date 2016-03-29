@@ -13,6 +13,8 @@ documentation: ug
 
 Items will spin up or down with smooth transition. The transition can be disabled using the EnableSpinAnimation property.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 
@@ -25,13 +27,31 @@ Items will spin up or down with smooth transition. The transition can be disable
                                  Width="200" EnableSpinAnimation="True"/>
 {% endhighlight %}
 
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+domain.EnableSpinAnimation = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+domain.EnableSpinAnimation = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Accent Brush
 
 The AccentBrush property is used to decorate the hot spots of a control with a solid color. 
 
+{% tabs %}
+
 {% highlight xaml %}
-
-
 
 <Page xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input">
 
@@ -60,3 +80,21 @@ AccentBrush="Black"
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+domainUpDown.AccentBrush = new SolidColorBrush(Colors.Red);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+domainUpDown.AccentBrush = New SolidColorBrush(Colors.Red)
+
+{% endhighlight %}
+
+{% endtabs %}

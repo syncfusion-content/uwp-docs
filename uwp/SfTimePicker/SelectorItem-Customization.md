@@ -27,19 +27,16 @@ The SelectorItemCount property is used to specify the number of items to be used
 
 The following code sample shows the usage of the SelectorItemWidth, SelectorItemHeight, SelectorItemSpacing, and SelectorItemCount properties. 
 
+{% tabs %}
+
 {% highlight xaml %}
-
-
-
 
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-            <syncfusion:SfTimePicker VerticalAlignment="Center"
+            <syncfusion:SfTimePicker VerticalAlignment="Center" x:Name="timePicker"
 
-                                   Width="200"
-
-SelectorItemWidth="100"
+                Width="200" SelectorItemWidth="100"
 
                 SelectorItemHeight="100"
 
@@ -52,6 +49,30 @@ SelectorItemWidth="100"
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+timePicker.SelectorItemHeight = 100;
+timePicker.SelectorItemWidth = 100;
+timePicker.SelectorItemCount = 5;
+timePicker.SelectorItemSpacing = 40;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+timePicker.SelectorItemHeight = 100
+timePicker.SelectorItemWidth = 100
+timePicker.SelectorItemCount = 5
+timePicker.SelectorItemSpacing = 40
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The output is displayed in the following image:
 

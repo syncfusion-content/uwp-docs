@@ -51,6 +51,12 @@ tabControl.SelectedItem = niko;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tabControl.SelectedItem = niko
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Selecting-Tabitems-images/Selecting-Tabitems-img1.jpeg)
@@ -85,6 +91,12 @@ SelectedIndex property is used to select an item using its index.
 {% highlight C# %}
 
 tabControl.SelectedIndex = 1;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tabControl.SelectedIndex = 1
 
 {% endhighlight %}
 
@@ -126,6 +138,12 @@ niko.IsSelected = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+niko.IsSelected = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Notify on SelectionChanged
@@ -156,6 +174,15 @@ private void tabControl_SelectionChanged(object sender, SelectionChangedEventArg
 {
 	
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub tabControl_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+
+
+End Sub
 
 {% endhighlight %}
 

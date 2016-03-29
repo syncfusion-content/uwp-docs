@@ -11,11 +11,13 @@ documentation: ug
 
 While incrementing, the control will start from Minimum once it reaches the Maximum and vice-versa.
 
-{% highlight html %}
+{% tabs %}
+
+{% highlight XAML %}
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-        <syncfusion:SfNumericUpDown VerticalAlignment="Center"
+        <syncfusion:SfNumericUpDown VerticalAlignment="Center" x:Name="numericUpDown"
 
                                   HorizontalAlignment="Center"
 
@@ -32,3 +34,21 @@ AutoReverse="True"/>
 </Grid>
 
 {% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+numericUpDown.AutoReverse = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+numericUpDown.AutoReverse = True
+
+{% endhighlight %}
+
+{% endtabs %}

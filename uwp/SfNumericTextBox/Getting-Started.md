@@ -47,4 +47,11 @@ The following code sample shows how to create the SfNumericTextBox from code-beh
 SfNumericTextBox numericTextBox = new SfNumericTextBox();
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim numericTextBox As New SfNumericTextBox()
+
+{% endhighlight %}
+
 {% endtabs %}

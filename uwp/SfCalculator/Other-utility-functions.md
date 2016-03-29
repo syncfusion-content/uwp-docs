@@ -41,6 +41,14 @@ functionText.Text = "The function is: " + function.ToString();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim [function] As CalculatorFunctions = calculator.CheckFunction("/")
+
+functionText.Text = "The function is: " & [function].ToString()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Other-utility-functions-images/Other-utility-functions-img1.jpeg)
@@ -58,6 +66,12 @@ calculator.Clear();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calculator.Clear()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Clear the Value
@@ -69,6 +83,12 @@ calculator.Clear();
 {% highlight C# %}
 
 calculator.ClearEntry();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calculator.ClearEntry()
 
 {% endhighlight %}
 
@@ -86,6 +106,12 @@ calculator.Reset();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calculator.Reset()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Removing Trailing Zeros
@@ -97,6 +123,12 @@ calculator.Reset();
 {% highlight C# %}
 
 calculator.TrailingZeros();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calculator.TrailingZeros()
 
 {% endhighlight %}
 
@@ -121,6 +153,12 @@ calculator.TrailingZeros();
 {% highlight C# %}
 
 calculator.Culture = new System.Globalization.CultureInfo("de-DE");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calculator.Culture = New System.Globalization.CultureInfo("de-DE")
 
 {% endhighlight %}
 

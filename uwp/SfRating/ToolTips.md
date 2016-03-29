@@ -31,6 +31,12 @@ rating.ShowToolTip = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+rating.ShowToolTip = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](ToolTips-images/ToolTips-img1.jpeg)
@@ -63,6 +69,18 @@ rating.ShowToolTip = true;
 rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Exact;
 
 rating.AutoToolTipPrecision = 3;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+rating.ItemsCount = 5
+
+rating.ShowToolTip = True
+
+rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Exact
+
+rating.AutoToolTipPrecision = 3
 
 {% endhighlight %}
 

@@ -36,5 +36,15 @@ The following code sample shows how to create the SfRadialSlider from code-behin
 SfRadialSlider sfRadialSlider = new SfRadialSlider() {Minimum = 0, Maximum = 100};
 
 {% endhighlight %}
+
+{% highlight VB %}
+
+Dim sfRadialSlider As New SfRadialSlider() With {
+	.Minimum = 0,
+	.Maximum = 100
+}
+
+{% endhighlight %}
+
 {% endtabs %}
 

@@ -33,6 +33,12 @@ gridSplitter.EnableCollapseButton = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+gridSplitter.EnableCollapseButton = True        
+
+{% endhighlight %}
+
 {% endtabs %}
 
 Pressing the down button

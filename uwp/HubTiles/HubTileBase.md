@@ -44,6 +44,12 @@ hubTile.RotationDepth = 40.0;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+hubTile.RotationDepth = 40.0
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](HubTileBase-images/HubTileBase-img1.jpeg)
@@ -77,6 +83,12 @@ hubTile.ScaleDepth = 1.2;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+hubTile.ScaleDepth = 1.2
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](HubTileBase-images/HubTileBase-img2.jpeg)
@@ -103,6 +115,12 @@ pulsingTile.TilePressDuration = TimeSpan.FromSeconds(5);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+pulsingTile.TilePressDuration = TimeSpan.FromSeconds(5)
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Disabling flip effect 
@@ -124,6 +142,12 @@ The flip effect can be enabled or disabled using `OverrideDefaultStates` propert
 {% highlight C# %}
 
 hubTile.OverrideDefaultStates = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+hubTile.OverrideDefaultStates = True
 
 {% endhighlight %}
 
@@ -173,6 +197,12 @@ hubTile.IsFrozen = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+hubTile.IsFrozen = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Group name
@@ -213,6 +243,14 @@ hubTileTwo.GroupName="Applications";
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+hubTileOne.GroupName="Applications"
+
+hubTileTwo.GroupName="Applications"
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## HubTileService
@@ -237,6 +275,12 @@ HubTileService.Freeze(hubTile);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+HubTileService.Freeze(hubTile)
+
+{% endhighlight %}
+
 {% endtabs %}
 
 * Void Freeze(string groupname) – used to freeze a group of tile
@@ -246,6 +290,12 @@ HubTileService.Freeze(hubTile);
 {% highlight C# %}
 
 HubTileService.Freeze("Applications");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+HubTileService.Freeze("Applications")
 
 {% endhighlight %}
 
@@ -265,6 +315,12 @@ HubTileService.UnFreeze(hubTile);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+HubTileService.UnFreeze(hubTile)
+
+{% endhighlight %}
+
 {% endtabs %}
 
 * Void UnFreeze(string groupname) – used to unfreeze a group of tile
@@ -275,6 +331,12 @@ HubTileService.UnFreeze(hubTile);
 {% highlight C# %}
 
 HubTileService.UnFreeze("Applications");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+HubTileService.UnFreeze("Applications")
 
 {% endhighlight %}
 
@@ -307,6 +369,15 @@ private void pulsingTile_Click(object sender, RoutedEventArgs e)
 {
 
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub pulsingTile_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+
+End Sub
 
 {% endhighlight %}
 
@@ -366,6 +437,46 @@ await dialog.ShowAsync();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Sub New()
+
+
+Me.InitializeComponent()
+
+command_Renamed= New Syncfusion.UI.Xaml.Utils.DelegateCommand(AddressOf MyCommand)
+
+DataContext = Me
+
+End Sub
+
+
+Private command_Renamed As ICommand
+
+Public Property Command() As ICommand
+
+
+Get
+	Return command_Renamed
+End Get
+
+Set(ByVal value As ICommand)
+	command_Renamed = value
+End Set
+
+End Property
+
+Public Async Sub MyCommand(ByVal parameter As Object)
+
+
+Dim dialog As New MessageDialog(parameter.ToString())
+
+Await dialog.ShowAsync()
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Appearance and Styling
@@ -397,6 +508,12 @@ Header="HubTile">
 {% highlight C# %}
 
 hubTile.AccentBrush = new SolidColorBrush(Windows.UI.Colors.CornflowerBlue);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+hubTile.AccentBrush = New SolidColorBrush(Windows.UI.Colors.CornflowerBlue)
 
 {% endhighlight %}
 

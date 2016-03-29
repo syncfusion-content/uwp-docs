@@ -45,6 +45,18 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfCalendar calendar = new SfCalendar();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim calendar As New SfCalendar()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Enabling Navigation Buttons
@@ -56,6 +68,22 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 {% highlight XAML %}
 
 <input:SfCalendar x:Name="calendar" ShowNavigationButton="True"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ calendar.ShowNavigationButton = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ calendar.ShowNavigationButton = True
 
 {% endhighlight %}
 
@@ -82,6 +110,12 @@ Month and day names of a region can be displayed in SfCalendar based on the Cult
 {% highlight C# %}
 
 calendar.Culture = new System.Globalization.CultureInfo("fr-FR");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calendar.Culture = New System.Globalization.CultureInfo("fr-FR")
 
 {% endhighlight %}
 
