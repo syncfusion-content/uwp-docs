@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Universal Windows Syncfusion SfReportViewer
-description: SfReportViewer control within your universal windows applications
+description: This section provides the overview of Universal Windows Syncfusion SfReportViewer control
 platform: UWP
 control: SfReportViewer
 documentation: ug
