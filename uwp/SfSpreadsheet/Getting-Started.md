@@ -86,7 +86,9 @@ SfSpreadsheet control can be added into the application either via designer or v
 
 1.Create new UWP application in Visual Studio.
 
-2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items 
+2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items
+
+![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 3.Drag **SfSpreadsheet** and drop in to the Designer area from the Toolbox
 
@@ -246,13 +248,14 @@ spreadsheet.Open(IWorkbook workbook)
 {% tabs %}
 {% highlight c# %}
 
-Stream fileStream = typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("SfSpreadsheetDemo.Assets.Outline.xlsx");
+Stream fileStream = typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("SfSpreadsheetDemo.Assets.BidDetails.xlsx");
 
 this.spreadsheet.Open(fileStream);
 
 {% endhighlight %}
 {% endtabs %}
 
+![](Getting-Started_images/Getting-Started_img4.jpeg)
 <br/>
 
 ## Saving the Excel Workbook
