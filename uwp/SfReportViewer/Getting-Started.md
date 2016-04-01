@@ -72,13 +72,12 @@ This section demonstrates how to run RDLC report using SfReportViewer control.
 2. Set `ProcessingMode`, `ExportMode` properties of SfReportViewer control.
 
    ~~~~ csharp
-   SfReportViewer reportViewer = new SfReportViewer();
    Assembly assembly = typeof(MainPage).GetTypeInfo().Assembly;
    Stream reportStream = assembly.GetManifestResourceStream("ReportViewerApplicationDemo.ReportTemplate.Sales Dashboard.rdlc"); 
-   reportViewer.ProcessingMode = ProcessingMode.Local;
-   reportViewer.ExportMode = ExportMode.Local;
-   reportViewer.LoadReport(reportStream);
-   reportViewer.RefreshReport();
+   ReportViewer.ProcessingMode = ProcessingMode.Local;
+   ReportViewer.ExportMode = ExportMode.Local;
+   ReportViewer.LoadReport(reportStream);
+   ReportViewer.RefreshReport();
    ~~~~
 
 3. Create a Class named as SalesPersons, Stores, Products and declare the fields required for report as properties as shown below.
@@ -239,10 +238,10 @@ This section demonstrates how to run RDLC report using SfReportViewer control.
 4. Set datasource for RDLC reports in code behind with the help of created class objects as like below code sample.  
 
    ~~~~ csharp
-   reportViewer.DataSources.Clear();
-   reportViewer.DataSources.Add(new ReportDataSource { Name = "TopSalesPerson", Value = SalesPersons.GetTopSalesPerson() });
-   reportViewer.DataSources.Add(new ReportDataSource { Name = "TopStores", Value = Stores.GetTopStores() });
-   reportViewer.DataSources.Add(new ReportDataSource { Name = "TopProduct", Value = Products.GetTopProducts() });
+   ReportViewer.DataSources.Clear();
+   ReportViewer.DataSources.Add(new ReportDataSource { Name = "TopSalesPerson", Value = SalesPersons.GetTopSalesPerson() });
+   ReportViewer.DataSources.Add(new ReportDataSource { Name = "TopStores", Value = Stores.GetTopStores() });
+   ReportViewer.DataSources.Add(new ReportDataSource { Name = "TopProduct", Value = Products.GetTopProducts() });
    ~~~~
    
    N> Name - “TopSalesPerson” – Specifies the dataset name in the report.
@@ -371,11 +370,10 @@ This section demonstrates how to run RDL report using SfReportViewer control.
 1. To Load RDL reports set `ReportPath`, `ReportServiceURL`, `ProcessingMode` properties of SfReportViewer in page loaded event.
 
    ~~~~ csharp   
-   SfReportViewer reportViewer = new SfReportViewer();
-   reportViewer.ReportServiceURL = @"http://localhost:51475/api/RDLReport";
-   reportViewer.ReportPath = @"~/App_Data/Templated List.rdl";
-   reportViewer.ProcessingMode = ProcessingMode.Remote;
-   reportViewer.RefreshReport();
+   ReportViewer.ReportServiceURL = @"http://localhost:51475/api/RDLReport";
+   ReportViewer.ReportPath = @"~/App_Data/Templated List.rdl";
+   ReportViewer.ProcessingMode = ProcessingMode.Remote;
+   ReportViewer.RefreshReport();
    ~~~~
 
    N> Add your report files to your Web service application’s App_Data folder. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\<version>\Common\Data\ReportTemplate).
@@ -391,19 +389,18 @@ This section demonstrates how to run SSRS report using SfReportViewer control.
 1. To load SSRS reports set `ReportPath`, `ReportServiceURL`, `ReportServerUrl` and `ReportServerCredential` properties of SfReportViewer in the page loaded event.
 
    ~~~~ csharp
-   SfReportViewer reportViewer = new SfReportViewer();
-   reportViewer.ReportServerUrl = @"http://100.74.8.11/ReportServer";
-   reportViewer.ReportServiceURL = @"http://ssrs.syncfusion.com/Reporting/api/SSRSReport/"; 
-   reportViewer.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
-   reportViewer.ProcessingMode = ProcessingMode.Remote;
-   reportViewer.ReportPath = @"/SSRSSamples/Territory Sales";
-   reportViewer.RefreshReport();
+   ReportViewer.ReportServerUrl = @"http://100.74.8.11/ReportServer";
+   ReportViewer.ReportServiceURL = @"http://ssrs.syncfusion.com/Reporting/api/SSRSReport/"; 
+   ReportViewer.ReportServerCredential = new System.Net.NetworkCredential("ssrs", "RDLReport1");
+   ReportViewer.ProcessingMode = ProcessingMode.Remote;
+   ReportViewer.ReportPath = @"/SSRSSamples/Territory Sales";
+   ReportViewer.RefreshReport();
    ~~~~
 
 2. Set DataSource credentials for the ReportDataSources used within your report in ReportLoaded event of SfReportViewer.
 
    ~~~~ csharp
-   reportViewer.ReportLoaded += (sen, arg) =>
+   ReportViewer.ReportLoaded += (sen, arg) =>
    {
       List<DataSourceCredentials> crdentials = new List<DataSourceCredentials>(); 
       foreach (var dataSource in reportViewer.GetDataSources())
