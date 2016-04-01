@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with Universal Windows application using Syncfusion SfReportViewer
-description: How to get started with Universal Windows Syncfusion SfReportViewer
-platform: UWP
+title: Getting Started | SfReportViewer | uwp | Syncfusion
+description: getting started
+platform: uwp
 control: SfReportViewer
 documentation: ug
 ---
@@ -403,7 +403,7 @@ This section demonstrates how to run SSRS report using SfReportViewer control.
    ReportViewer.ReportLoaded += (sen, arg) =>
    {
       List<DataSourceCredentials> crdentials = new List<DataSourceCredentials>(); 
-      foreach (var dataSource in reportViewer.GetDataSources())
+      foreach (var dataSource in ReportViewer.GetDataSources())
       {
          DataSourceCredentials credn = new DataSourceCredentials();
          credn.Name = dataSource.Name;
