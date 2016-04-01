@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Universal Windows application using Syncfusion SfReportViewer
 description: How to get started with Universal Windows Syncfusion SfReportViewer
