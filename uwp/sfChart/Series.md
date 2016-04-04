@@ -31,7 +31,7 @@ Gets or sets a string that represents the Y values of a series.</td></tr>
 <tr>
 <td>
 Stroke</td><td>
-Gets or sets the {{ '[Brush](http://msdn.microsoft.com/en-us/library/system.windows.media.brush.aspx)' | markdownify }} that specifies how the series outline is painted.</td></tr>
+Gets or sets the <a href="http://msdn.microsoft.com/en-us/library/system.windows.media.brush.aspx">Brush</a> that specifies how the series outline is painted.</td></tr>
 <tr>
 <td>
 StrokeThickness                               </td><td>
@@ -43,7 +43,7 @@ Gets or sets the ChartColorPalette of the series.</td></tr>
 <tr>
 <td>
 Interior</td><td>
-Gets or sets the {{ '[Brush](http://msdn.microsoft.com/en-us/library/system.windows.media.brush.aspx)' | markdownify }} that specifies how the series interior is painted</td></tr>
+Gets or sets the <a href="http://msdn.microsoft.com/en-us/library/system.windows.media.brush.aspx">Brush</a> that specifies how the series interior is painted</td></tr>
 </table>
 
 ## LineSeries
