@@ -488,9 +488,11 @@ Palette="Custom">
 
 </chart:FunnelSeries>
 
+{% endhighlight %}
+
 ![](Series_images/funnelexplode_1.png)
 
-{% endhighlight %}
+
 
 **Gap** **Ratio**
 
@@ -577,7 +579,7 @@ StrokeThickness="2" />
 {% endhighlight %}
 
 
-![](Series_images/Series_img28.jpeg)
+![](Series_images/isclosed.png)
 
 ### DrawType
 
@@ -663,11 +665,21 @@ Interior="#4A4A4A"/>
 
 
 The APIs present in the Candle series are,
+* `High`-Gets or sets the string that describes high value in Y-axis.
+* `Low`- Gets or sets the string that describes low value in Y-axis.
+* `Open`-Gets or sets the string that describes open value in Y-axis.
+* `Close`- Gets or sets the string that describes close value in Y-axis.
+* `BearFillColor`-Represents the brush color for the segments that show stock price has gone up in measured time interval.
+* `BullFillColor`-Represents that brush color for the segments that show stock price has gone down in measured time interval.
 
-<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date"  High="High" Open="Open"  Close="Close" Low="Low"  BearFillColor="Black" BullFillColor="#BCBCBC"/>
+{% highlight xaml %}
 
-![](Series_images/Series_img33.jpeg)
+<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date"   
+                    High="High" Open="Open"  Close="Close" Low="Low"  BearFillColor="Black"
+                    BullFillColor="#BCBCBC"/>
+{% endhighlight %}                  
 
+![](Series_images/candle_1.png)
 ### HiLo
 
 In `HiLoSeries`, each segment is represented by a line. The height of the line depends on the value of the data point, high or low. The values for this series can be bind using `High` and `Low`.
@@ -936,7 +948,7 @@ ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
-![](Series_images/stackingareaclosed.png)
+![](Series_images/stackingarea_closed.png)
 
 
 ### Grouping Stacked Series
@@ -1036,8 +1048,8 @@ The APIs present in the RangeArea series are,
 
 **Properties**
 
-* HighValueInterior -Gets or sets the brush that represents the interior color for the high value data.
-* LowValueInterior- Gets or sets the brush that represents the interior color for the high value data.
+* `HighValueInterior` -Gets or sets the brush that represents the interior color for the high value data.
+* `LowValueInterior` - Gets or sets the brush that represents the interior color for the high value data.
 
 {% highlight xaml %}
 
