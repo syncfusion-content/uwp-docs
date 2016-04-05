@@ -9,11 +9,11 @@ documentation: ug
 
 # Styling and Customization
 
-SfChart support various customizing and styling options that allows you to enrich the application. 
+SfChart support various customizing and styling options that allows you to enrich the application.
 
 ## Palettes
 
-SfChart provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series. 
+SfChart provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
 
 We have some predefined palette such as
 
@@ -30,443 +30,368 @@ We have some predefined palette such as
 * LightCandy
 * SandyBeach
 
- Elite, SandyBeach and LightCandy palettes are not supported in the bitmap series types.
+N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap series types.
 
-The Palette brushes defined in the chart are applied to the series, to differentiate each of them. Likewise, series palette brushes are applied for each segment in a particular series.
+### Applying Palette to Series
 
-###Applying predefined Palettes for each series
+Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
-The following section shows you how to define the various palettes for each series.
+{% highlight xaml %}
 
-###Metro Palette
-
-It is the default palette for SfChart, used to apply a set of predefined brushes to the series, in a predefined order. The following code example illustrates how to set the MetroPalette for the chart.
-
-{% highlight xml %}
-
-
-
-<syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Height="400"Width="650" Palette="Metro" />
-{% endhighlight %}
-The following is the screenshot for the series with multiple palettes.
-
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_149.jpg](Styling-and-Customization_images/Styling-and-Customization_img1.png)
-
-
-
-###Custom palettes for each series
-
-The Custom Palette option enables you to define your own color brushes for the Palette using ColorModel property as given in the following code example.
-
-{% highlight xml %}
-
-
-
-     <syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center"Height="400" Width="650"
-
-                            Palette="Custom">
-
-
-
-            <syncfusion:SfChart.ColorModel>
-
-
-
-                <syncfusion:ChartColorModel>
-
-                    <syncfusion:ChartColorModel.CustomBrushes>
-
-                        <SolidColorBrush Color="Green"/>
-
-                        <SolidColorBrush Color="Blue"/>
-
-                        <SolidColorBrush Color="Red" />
-
-                        <SolidColorBrush Color="Yellow"/>
-
-                        <SolidColorBrush Color="Gray"/>
-
-                    </syncfusion:ChartColorModel.CustomBrushes>
-
-                </syncfusion:ChartColorModel>
-
-
-
-            </syncfusion:SfChart.ColorModel>
-
-
-
-        </syncfusion:SfChart>
-
-
+<chart:SfChart Height="250" Width="350" Palette="Metro"  >
 
 {% endhighlight %}
 
-The following screenshot demonstrates series with CustomPalette.
-
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_150.jpg](Styling-and-Customization_images/Styling-and-Customization_img2.png)
+![](Styling-and-Customization_images/palette_1.png)
 
 
+The following code example defined Palette as BlueChrome.
 
-###None Palette
+{% highlight xaml %}
 
-This palette sets the transparent color to the series. You can identify the series existence with the help of [legends](http://help.syncfusion.com/uwp/sfchart/legend) or [adornments](http://help.syncfusion.com/uwp/sfchart/adornments).
-
-###Applying predefined Palette for each segment
-
-The following section shows you how to define the various palettes for each segment of a series.
-
-###Metro Palette
-
-It is the default palette for series also. This palette applies a set of predefined brushes to the segments of a series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
-
-{% highlight xml %}
-
-
-
-     <syncfusion:LineSeries Label="2010" Palette="Metro"
-
-                                     ItemsSource="{Binding Demands}"
-
-                                     XBindingPath="Demand"
-
-                                     YBindingPath="Year2010"
-
-                                     />
+<chart:SfChart Height="250" Width="350" Palette="BlueChrome">
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_151.jpg](Styling-and-Customization_images/Styling-and-Customization_img3.png)
+![](Styling-and-Customization_images/palette_2.png)
 
 
+### Applying Palette to Segment
 
-###None Palette
+Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
-It applies the same color to all the segments, as shown in the following screenshot. And the brushes vary for additional series based on that predefined order.
+{% highlight xaml %}
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_152.jpg](Styling-and-Customization_images/Styling-and-Customization_img4.png)
+<chart:DoughnutSeries YBindingPath="Percentage" Palette="Metro"
 
-
-
-###Applying Custom Palette for each segment
-
-The Custom Palette option enables you to define your own color brushes for the Palette, using ColorModel as shown in the following code example.
-
-{% highlight xml %}
-
-
-
-<syncfusion:LineSeries Label="2010" Palette="Custom"
-
-                                     ItemsSource="{Binding Demands}"
-
-                                     XBindingPath="Demand"
-
-                                     YBindingPath="Year2010"
-
-                                     >
-
-
-
-            <syncfusion:LineSeries.ColorModel>
-
-                <syncfusion:ChartColorModel >
-
-                    <syncfusion:ChartColorModel.CustomBrushes>
-
-                        <SolidColorBrush Color="Green"/>
-
-                        <SolidColorBrush Color="Blue"/>
-
-                        <SolidColorBrush Color="Red" />
-
-                        <SolidColorBrush Color="Yellow"/>
-
-                        <SolidColorBrush Color="Gray"/>
-
-                    </syncfusion:ChartColorModel.CustomBrushes>
-
-                </syncfusion:ChartColorModel>
-
-            </syncfusion:LineSeries.ColorModel>
-
-
-
-        </syncfusion:LineSeries>
-
+XBindingPath="Category" ItemsSource="{Binding Tax}" />
 
 {% endhighlight %}
+
+![](Styling-and-Customization_images/palette_3.png)
+
+The following code example defined Palette as **AutumnBrights**.
+
+{% highlight xaml %}
+
+<chart:DoughnutSeries   YBindingPath="Percentage" Palette="AutumnBrights"
+
+XBindingPath="Category" ItemsSource="{Binding Tax}" />
+
+{% endhighlight %}
+
+![](Styling-and-Customization_images/palette_4.png)
+
+
+N> Metro palette is the default palette for both Series and Segment.
+
+## Custom Palette
+
+SfChart provides option which enables you to define your own color brushes with your preferred order for the Palette, using [`ColorModel`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ColorModel.html#) as shown in the following code example.
+
+{% highlight xaml %}
+
+<chart:DoughnutSeries  YBindingPath="Percentage" Palette="Custom"
+
+XBindingPath="Category" ItemsSource="{Binding Tax}" >   
+
+<chart:DoughnutSeries.ColorModel>
+
+<chart:ChartColorModel>
+
+<chart:ChartColorModel.CustomBrushes>
+
+<SolidColorBrush Color="Cyan"/>
+
+<SolidColorBrush Color="DarkCyan"/>                                                
+
+</chart:ChartColorModel.CustomBrushes>
+
+</chart:ChartColorModel>
+
+</chart:DoughnutSeries.ColorModel>
+
+</chart:DoughnutSeries>
+
+{% endhighlight %}
+
+![](Styling-and-Customization_images/palette_5.png)
+
+
+You can define the custom palette for series as in the below code example:
+
+{% highlight xaml %}
+
+<chart:SfChart Height="250" Width="350" Palette="Custom">
+
+<chart:SfChart.ColorModel>
+
+<chart:ChartColorModel>
+
+<chart:ChartColorModel.CustomBrushes>
+
+<SolidColorBrush Color="BlueViolet"/>
+
+<SolidColorBrush Color="PeachPuff"/>
+
+<SolidColorBrush Color="Purple"/>
+
+</chart:ChartColorModel.CustomBrushes>
+
+</chart:ChartColorModel>
+
+</chart:SfChart.ColorModel>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+![](Styling-and-Customization_images/palette_6.png)
 
 
 ## Customize Legends
 
-SfChart provides you with the option to customize the legends depending on the application’s requirement.
+SfChart provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
 
-{% highlight xml %}
+The following code example demonstrates applying the palette color to the legend icon interior.
 
-<syncfusion:SfChart.Legend>
+{% highlight xaml %}
 
-            <syncfusion:ChartLegend>
+<chart:SfChart.Legend>
 
+<chart:ChartLegend DockPosition="Left" >
 
+<chart:ChartLegend.ItemTemplate>
 
-                <!-- Custom panel for legend items-->
+<DataTemplate>
 
-                <syncfusion:ChartLegend.ItemsPanel>
+<StackPanel Orientation="Horizontal">
 
-                    <ItemsPanelTemplate >
+<Grid Margin="20,0,0,0">
 
-                        <WrapPanel  Width="300"/>
+<Grid.ColumnDefinitions>
 
-                    </ItemsPanelTemplate>
+<ColumnDefinition/>
 
-                </syncfusion:ChartLegend.ItemsPanel>
+<ColumnDefinition/>
 
+</Grid.ColumnDefinitions>
 
+<Ellipse Width="10" Height="10" 
 
-                <!--Custom template for legend item-->
+Fill="{Binding Interior}">
 
-                <syncfusion:ChartLegend.ItemTemplate>
+<Ellipse.Effect>
 
-                    <DataTemplate>
+<DropShadowEffect Direction="315" 
 
-                        <Grid>
+BlurRadius="0.8"   
 
-                            <Grid.ColumnDefinitions>
+ShadowDepth="3" 
 
-                                <ColumnDefinition/>
+Color="Black"/>
 
-                                <ColumnDefinition/>
+</Ellipse.Effect>
 
-                            </Grid.ColumnDefinitions>
+</Ellipse>
 
+<TextBlock Margin="5,0,0,0" 
 
+FontSize="10"  
 
-                            <!--For Legend icon-->
+Grid.Column="1" 
 
-                            <Ellipse Margin="35,0,0,0"  Width="15" Height="15" Fill="{Binding Interior}"></Ellipse>
+Foreground="Black" 
 
+Text="{Binding Label}"></TextBlock>
 
+</Grid>
 
-                            <!--For Legend label-->
+</StackPanel>
 
-                            <TextBlock Margin="10,5,5,0" FontSize="16" Grid.Column="1" Foreground="{Binding Interior}" Text="{Binding Label}"></TextBlock>
+</DataTemplate>
 
-                        </Grid>
+</chart:ChartLegend.ItemTemplate>
 
-                    </DataTemplate>
+</chart:ChartLegend>
 
-                </syncfusion:ChartLegend.ItemTemplate>
-
-            </syncfusion:ChartLegend>
-
-        </syncfusion:SfChart.Legend>
-
-    </Grid>
+</chart:SfChart.Legend>
 
 {% endhighlight %}
 
-![C:/Users/rachel/Desktop/snaps/17.png](Styling-and-Customization_images/Styling-and-Customization_img5.png)
+![](Styling-and-Customization_images/palette_7.png)
 
+
+If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details.
+
+## Customize ToolTip
+
+SfChart provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the `TooltipTemplate`property.
+
+{% highlight xaml %}
+
+<chart:BarSeries ItemsSource="{Binding CategoricalDatas}"  
+
+chart:ChartTooltip.ShowDuration="5000"
+
+XBindingPath="Category" YBindingPath="Value" 
+
+ShowTooltip="True"  Palette="FloraHues" >
+
+<chart:BarSeries.TooltipTemplate>
+
+<DataTemplate >
+
+<Border BorderBrush="Black" BorderThickness="1">
+
+<Grid  Height="40">
+
+<Grid.RowDefinitions>
+
+<RowDefinition Height="0.5*"/>
+
+<RowDefinition Height="0.5*"/>
+
+</Grid.RowDefinitions>
+
+<Grid.ColumnDefinitions>
+
+<ColumnDefinition/>
+
+<ColumnDefinition/>
+
+<ColumnDefinition/>
+
+</Grid.ColumnDefinitions>
+
+<Rectangle Fill="White" Grid.RowSpan="2" 
+
+Grid.ColumnSpan="3" ></Rectangle>
+
+<Image Grid.RowSpan="2" Grid.Column="0" 
+
+HorizontalAlignment="Left" Margin="3" 
+
+Source="{Binding Item.ImagePath}" ></Image>
+
+<TextBlock Margin="3,3,6,3" Text="{Binding Item.Category }" 
+
+FontSize="10" Grid.Column="1" 
+
+Grid.ColumnSpan="2" 
+
+HorizontalAlignment="Left"
+
+VerticalAlignment="Center" TextAlignment="Center" 
+
+Foreground="Black" />
+
+<TextBlock VerticalAlignment="Center" Margin="3,3,6,3" 
+
+Grid.Column="2" Grid.Row="1" 
+
+TextAlignment="Left" Text="{Binding Item.Value}" 
+
+HorizontalAlignment="Left" 
+
+Foreground="Black" FontSize="10"/>
+
+<TextBlock VerticalAlignment="Center" 
+
+Grid.Column="1" Grid.Row="1" 
+
+TextAlignment="Left" Text="Value:"
+
+HorizontalAlignment="Left" 
+
+Foreground="Black" FontSize="10"/>
+
+</Grid>
+
+</Border>
+
+</DataTemplate>
+
+</chart:BarSeries.TooltipTemplate>
+
+</chart:BarSeries>
+
+{% endhighlight %}
+
+![](Styling-and-Customization_images/palette_8.png)
 
 
 ## Customize Series
 
-You can use the CustomTemplate property to customize the series of the SfChart. This support is available for the following series:
+CustomTemplate property is used to customize the chart series. It supports the following series
 
-* [LineSeries](http://help.syncfusion.com/wp8/sfchart/series#lineseries)
-* [BubbleSeries](http://help.syncfusion.com/wp8/sfchart/series#bubbleseries)
-* [ScatterSeries](http://help.syncfusion.com/wp8/sfchart/series#scatterseries)
-* [ColumnSeries](http://help.syncfusion.com/wp8/sfchart/series#columnseries)
-* [BarSeries](http://help.syncfusion.com/wp8/sfchart/series#barseries)
-* [SplineSeries](http://help.syncfusion.com/wp8/sfchart/series#splineseries)
-* [StepLineSeries](http://help.syncfusion.com/wp8/sfchart/series#steplineseries)
-* [StackingColumnSeries](http://help.syncfusion.com/wp8/sfchart/series#stackingcolumnseries)
-* [StackingBarSeries](http://help.syncfusion.com/wp8/sfchart/series#stackingbarseries)
-* [Stackingcolumn100Series](http://help.syncfusion.com/wp8/sfchart/series#stackingcolumn100series)
-* [StackingBar100Series](http://help.syncfusion.com/wp8/sfchart/series#stackingbar100series)
+* BarSeries
+* BubbleSeries
+* ColumnSeries
+* LineSeries
+* ScatterSeries
+* SplineSeries
+* StackingBarSeries
+* StackingBar100Series
+* StackingColumnSeries
+* StackingColumn100Series
+* StepLineSeries
 
+The respect segment of each series will be your DataTemplate context, which contain the following properties in common. This will be used to plot the custom shapes for the series.
 
+* `XData`-Returns the actual X value of the segment.
+* `YData`-Returns the actual Y value of the segment.
+* `Item`-Returns the underlying model object of the segment.
+* `Interior`-Returns the brush color of the segment.
 
-By using this feature, you can draw custom shapes for the above types of series. Define the DataTemplate for the CustomTemplate and this template is applied to each segment (data point) of the series. 
+The following code example illustrates the use of `CustomTemplate` property:
 
-In this DataTemplate, the respective Segments come as DataContext. For instance, when the CustomTemplate is defined for the LineSeries, the LineSegment comes as data context that is useful for binding the series properties like Fill, Y value, Height, Width, etc.
+{% highlight xaml %}
 
-The following table illustrates the properties available in the corresponding segment class of the series.
+<chart:ScatterSeries  ScatterHeight="20" ScatterWidth="20" Interior="Gray"
 
-Properties in the segment class
+XBindingPath="Year" YBindingPath="Count" 
 
-<table>
-<tr>
-<th>
-Series Types</th><th>
-Properties</th><th>
-Description</th></tr>
-<tr>
-<td>
-LineSeries </td><td>
-X1, Y1, X2, Y2</td><td>
-These properties define the two points for drawing that line segment.</td></tr>
-<tr>
-<td>
-BubbleSeries</td><td>
-Size, RectX, RectY</td><td>
-The Size defines the pixel size of each BubbleSegment. The RectX and RectY define the pixel positions where each segment plots.</td></tr>
-<tr>
-<td>
-ScatterSeries,</td><td rowspan = "3">
-Height, Width, RectX, RectY</td><td rowspan = "3">
-The Height and Width define the size of that particular segment.The RectX and RectY define the pixel positions where each segment plots.</td></tr>
-<tr>
-<td>
-ColumnSeries,StackingColumn,StackingColumn100</td></tr>
-<tr>
-<td>
-BarSeriesStackingBarStackingBar100</td></tr>
-<tr>
-<td>
-SplineSeries</td><td>
-P1, P2Q1, Q2Data</td><td>
-The P1 and P2 define the starting and ending points of that segment. The Q1 and Q2 defines the control points for the spline (Bezier curve).The Data gives the geometric path of that spline segment.</td></tr>
-<tr>
-<td>
-StepLineSeries</td><td>
-X1, Y1, X2,Y2,X3,Y3Points</td><td>
-The X1, Y1, and X2, Y2 are the start and end points of that segment and X3 and Y3 represent step points that are useful to draw Waterfall like charts.The Points represent the point collection of the step line segment.</td></tr>
-</table>
+ItemsSource="{Binding}">
 
-
-Other than the above properties, all the segments have the following properties like a metadata for the datapoint and series.
-
-XData - This property returns the actual Y value of that particular segment.  
-
-YData - This property returns the actual Y value of that particular segment. 
-
-Item - This gives the underlying model object, so that you can get any property other than X and Y values.
-
-Interior - This property gives the fill brush for that particular segment.
-
-The following code example illustrates the use of CustomTemplate property.
-
-{% highlight xml %}
-
-
-
- <syncfusion:ScatterSeries ItemsSource="{Binding Demands}"
-
-                XBindingPath="Demand" ScatterHeight="40"
-
-                YBindingPath="Year2010" ScatterWidth="40">
-
-<syncfusion:ScatterSeries.CustomTemplate> 
+<chart:ScatterSeries.CustomTemplate>
 
 <DataTemplate>
 
-    <Canvas>
+<Canvas>
 
-       <Path Data="M20.125,32l0.5,12.375L10.3125,
+<Path Fill="{Binding Converter={StaticResource ScatterInteriorConverter}}"
 
-        12.375L10.3125,0.5L29.9375,0.5L29.9375,
+Stretch="Fill"  
 
-        12.375L39.75,12.375Z" Stretch="Fill"
+Height="{Binding ScatterHeight}" Width="{Binding ScatterWidth}" 
 
-        Fill="{Binding Interior}"
+RenderTransformOrigin="0.5,0.5"
 
-        Height="{Binding ScatterHeight}"   
+Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
 
-        Width="{Binding ScatterWidth}" 
+Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,
 
-        Canvas.Left="{Binding RectX}" 
+0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
 
-        Canvas.Top="{Binding RectY}"/>
+<Path.RenderTransform>
 
-    </Canvas>
+<RotateTransform Angle="{Binding Converter={StaticResource ScatterAngleConverter}}"/>
+
+</Path.RenderTransform>
+
+</Path>
+
+</Canvas>
 
 </DataTemplate>
 
-</syncfusion:ScatterSeries.CustomTemplate>
+</chart:ScatterSeries.CustomTemplate>                
 
-</syncfusion:ScatterSeries>
-
-{% endhighlight %}
-
-
-
-The following screenshot represents chart scatter series. By default, that series displays Ellipse symbol. By using the Custom Template feature, it can be changed to arrow shape:
-
-![C:/Users/sureshs/Desktop/wpf.png](Styling-and-Customization_images/Styling-and-Customization_img6.png)
-
-
-
-## Customize Tooltip
-
-SfChart provides the option to define your own template for Tooltip, based on your application’s requirement. The following code example demonstrates the CustomTooltip using the TooltipTemplate property.
-
-{% highlight xml %}
-
-
-
-<syncfusion:LineSeries Label="2010" 
-
-                                ItemsSource="{Binding Demands}"
-
-                                XBindingPath="Demand"
-
-                                YBindingPath="Year2010" ShowTooltip="True"
-
-                                Palette="None"
-
-                                >
-
-            <syncfusion:LineSeries.TooltipTemplate>
-
-
-
-                <DataTemplate>
-
-                    <Grid >
-
-
-
-                        <StackPanel HorizontalAlignment="Right">
-
-                            <Grid Background="OrangeRed">
-
-                                <TextBlock Text="{Binding Item.Demand }" Width="85" Height="25" Margin="5"
-
-                                VerticalAlignment="Center"    TextAlignment="Center"  Foreground="White" FontSize="15"/>
-
-                            </Grid>
-
-                            <Grid Background="MediumSpringGreen">
-
-                                <TextBlock VerticalAlignment="Center" TextAlignment="Center" Margin="5" Text="{Binding YData}" Height="25"
-
-                                 Width="85" HorizontalAlignment="Center" Foreground="White" FontSize="15"/>
-
-                            </Grid>
-
-                        </StackPanel>
-
-                    </Grid>
-
-                </DataTemplate>
-
-
-
-            </syncfusion:LineSeries.TooltipTemplate>
-
-
-
-        </syncfusion:LineSeries>
-
-
+</chart:ScatterSeries>
 
 {% endhighlight %}
 
-The following screenshot illustrates custom Tooltip.
-
-![C:/Users/rachel/Desktop/snaps/19.png](Styling-and-Customization_images/Styling-and-Customization_img7.png)
-
+![](Styling-and-Customization_images/palette_9.png)
 
 
