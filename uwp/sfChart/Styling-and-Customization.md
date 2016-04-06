@@ -337,7 +337,7 @@ CustomTemplate property is used to customize the chart series. It supports the f
 * StackingColumn100Series
 * StepLineSeries
 
-The respect segment of each series will be your DataTemplate context, which contain the following properties in common. This will be used to plot the custom shapes for the series.
+The respective segment of each series will be your DataTemplate context, which contain the following properties in common. This will be used to plot the custom shapes for the series.
 
 * `XData`-Returns the actual X value of the segment.
 * `YData`-Returns the actual Y value of the segment.

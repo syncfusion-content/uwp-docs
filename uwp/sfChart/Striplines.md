@@ -131,7 +131,7 @@ Background="#BCBCBC"/>
 ![](Striplines_images/stripline_4.png)
 
 
-N> Here, Start and Width of the stripline as adjusted based on the rotation angle. Stripline won’t adjust its range based on the stripline angle.
+N> Here, Start and Width of the label is adjusted based on the rotation angle. Stripline won’t adjust its range based on the stripline angle.
 
 ### Template support for the label
 

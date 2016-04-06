@@ -61,7 +61,7 @@ YBindingPath="Year2011">
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo SymbolInterior="Black" Symbol="Diamond"></syncfusion:ChartAdornmentInfo>
+<syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolInterior="Black" Symbol="Diamond"></syncfusion:ChartAdornmentInfo>
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
@@ -396,7 +396,7 @@ public object ConvertBack(object value, Type targetType, object parameter, Syste
 
 {
 
-throw new NotImplementedException();
+return value;
 
 }
 
@@ -407,7 +407,7 @@ throw new NotImplementedException();
 {% endtabs %}
 
 
-![](Adornments_images/label_5.png)
+![](Adornments_images/labelcontent.png)
 
 
 **Label Rotation**
@@ -542,8 +542,6 @@ YBindingPath="Year2011">
 
 <Grid Name="backgroundGrid" Width="24" Height="24" Visibility="Collapsed" />
 
-
-
 <Path Grid.Row="0"  Stretch="Uniform" Fill="#FF0F0E0E" Width="24" Height="24" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
 
 <Path.Data>
@@ -567,8 +565,6 @@ YBindingPath="Year2011">
 </TransformGroup>
 
 </Path.RenderTransform>
-
-
 
 </Path>
 
@@ -600,7 +596,7 @@ In the following image, you can see the decimal position will be rounded off to 
 ![](Adornments_images/label_format.png)
 
 
-The following code example demonstrates the rounding off the y value to three decimal digits:
+The following code example demonstrates the rounding off the y value having three decimal digits:
 
 
 {% highlight xaml %}
@@ -617,7 +613,7 @@ YBindingPath="Year2011">
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo ShowLabel="True" SegmentLabelFormat="0.##" AdornmentsPosition="Top">
+<syncfusion:ChartAdornmentInfo ShowLabel="True" SegmentLabelFormat="0.000" AdornmentsPosition="Top">
 
 </syncfusion:ChartAdornmentInfo>
 
@@ -636,13 +632,14 @@ The following code example shows the customization option for connector line:
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries.AdornmentsInfo>
+<syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo ShowLabel="True"  ShowConnectorLine="True" >
-
+<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Outer"
+                                ShowConnectorLine="True" ConnectorHeight="10" 
+                                ConnectorRotationAngle="90">
 </syncfusion:ChartAdornmentInfo>
 
-</syncfusion:PieSeries.AdornmentsInfo>
+</syncfusion:ColumnSeries.AdornmentsInfo>
 
 {% endhighlight %}
 
