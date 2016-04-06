@@ -29,7 +29,7 @@ To localize the SfDataGrid based on [CurrentUICulture](https://msdn.microsoft.co
  
 1. Right-click on the project, select **Add** and then **NewItem**.
 
-2. In Add New Item wizard, select the **Resource File** option and name the filename as **Syncfusion.SfGrid.UWP.Resources.<culture name>.resw**.
+2. In Add New Item wizard, select the **Resource File** option and name the filename as **Syncfusion.SfGrid.UWP.Resources.&lt;culture name&gt;.resw** .
  
 ![](Localization_images/Localization_img1.png)
 
@@ -42,7 +42,7 @@ For example, you have to give name as **Syncfusion.SfGrid.UWP.Resources.de.resw*
 
 ![](Localization_images/Localization_img2.png)
 
-5. Add the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.UWP.Resources.de.resw** file and change its corresponding value to corresponding culture.
+5.Add the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.UWP.Resources.de.resw** file and change its corresponding value to corresponding culture.
  
 ![](Localization_images/Localization_img3.png)
 
