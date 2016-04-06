@@ -88,7 +88,7 @@ SfSpreadsheet control can be added into the application either via designer or v
 
 2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![](Getting-Started_images/Getting-Started_img1.jpg)
 
 3.Drag **SfSpreadsheet** and drop in to the Designer area from the Toolbox
 
@@ -164,7 +164,7 @@ this.grid.Children.Add(spreadsheet);
 
 _You_ _can_ _get_ _the_ _following_ _output_ _when_ _execute_ _the_ _application._
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpg)
 
 N> To load the SfSpreadsheet in Windows Mobile, add the below code in MainPage.xaml file in DeviceFamily-Mobile folder.
 
@@ -255,7 +255,7 @@ this.spreadsheet.Open(fileStream);
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![](Getting-Started_images/Getting-Started_img4.jpg)
 <br/>
 
 ## Saving the Excel Workbook
