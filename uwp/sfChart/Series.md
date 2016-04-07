@@ -18,7 +18,7 @@ The following APIs are common for the most of the series types:
 * Stroke-Represents the brush for the series outline.
 * StrokeThickness-Represents the thickness of the for the series outline.
 * Interior-Represents the brush to fill the series.
-* Palette-Used to define the set of pre-defined color for the series.
+* Palette-Used to define the set of pre-defined or custom colors for the series.
 
 ## Column and Bar Charts
 
@@ -128,7 +128,7 @@ Interior="#BCBCBC" />
 
 <chart:ScatterSeries Interior="#4A4A4A" ScatterHeight="4" ScatterWidth="4" 
 
-ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions 
+ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions" 
 
 YBindingPath="WaitingTime"/>
 
@@ -212,9 +212,7 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" />
 
 {% highlight xaml %}
 
-<chart:PieSeries  Palette="Custom"
-
-XBindingPath="Category" 
+<chart:PieSeries XBindingPath="Category" 
 
 ItemsSource="{Binding Tax}" 
 
@@ -228,7 +226,7 @@ The rendering size of the PieSeries can be controlled using `PieCoefficient` pro
 
 {% highlight xaml %}
 
-<chart:PieSeries PieCoefficient="0.9" Palette="Custom"
+<chart:PieSeries PieCoefficient="0.9" 
 
 XBindingPath="Category" 
 
@@ -248,9 +246,7 @@ The DoughnutSeries can be added to chart as in below code example:
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries Palette="Custom"
-
-XBindingPath="Category"
+<chart:DoughnutSeries XBindingPath="Category"
 
 ItemsSource="{Binding Tax}" 
 
@@ -265,13 +261,11 @@ The Doughnut also having coefficient property, `DoughnutCoefficient` which defin
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries x:Name="DouughnutSeries" DoughnutCoefficient="0.7"                    
-
-Palette="Custom"
+<chart:DoughnutSeries DoughnutCoefficient="0.7"                    
 
 XBindingPath="Category" ItemsSource="{Binding Tax}" 
 
-Label="Tax" YBindingPath="Percentage" />
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -283,15 +277,13 @@ By having custom `StartAngle` and `EndAngle`, you can draw pie series in differe
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries x:Name="PieSeries" StartAngle="180" EndAngle="360"    
+<syncfusion:PieSeries StartAngle="180" EndAngle="360"    
 
 XBindingPath="Utilization" 
 
 YBindingPath="ResponseTime"
 
-ItemsSource="{Binding}"
-
-Palette="Custom"/>
+ItemsSource="{Binding}"/>
 
 {% endhighlight %}
 
@@ -299,9 +291,7 @@ Palette="Custom"/>
 
 {% highlight xaml %}
 
-<syncfusion:DoughnutSeries Palette="Custom"
-
-StartAngle="180" EndAngle="360" 
+<syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" 
 
 XBindingPath="Utilization"
 
@@ -320,12 +310,13 @@ The following properties are used to explode the individual segments in Pie, Dou
 * `ExplodeAll`  - Used to explode all the segments of these series.
 * `ExplodeIndex` - Used to explode any specific segment.
 * `ExplodeRadius`- Used to define the explode distance.
+* `ExplodeOnMouseClick`-Used to explode the segment on mouse click or tap.
 
 **Explode** **Index**
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries x:Name="PieSeries" ItemsSource="{Binding}"          
+<syncfusion:PieSeries ItemsSource="{Binding}"          
 
 ExplodeIndex="2"
 
@@ -333,21 +324,19 @@ ExplodeRadius="10"
 
 XBindingPath="Utilization" 
 
-YBindingPath="ResponseTime" 
-
-Palette="Custom"/>
+YBindingPath="ResponseTime" />
 
 {% endhighlight %}
 
 ![](Series_images/exploderadius.png)
 
-N> We have defined ExplodeRadius as 10, by default its value is zero. So you need to define explode, when you set ExplodeIndex or ExplodeAll.
+N> We have defined ExplodeRadius as 10, by default its value is zero. So you need to define ExplodeRadius, when you set ExplodeIndex or ExplodeAll.
 
 **Explode** **All**
 
 {% highlight xaml %}
 
-<chart:PieSeries Palette="Custom" ExplodeAll="True"
+<chart:PieSeries ExplodeAll="True"
 
 ExplodeRadius="15"
 
@@ -369,7 +358,7 @@ PyramidSeries has the form of a triangle with lines dividing it into sections an
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" Palette="Custom" 
+<chart:PyramidSeries XBindingPath="Category" 
 
 ItemsSource="{Binding Tax}"       
 
@@ -387,7 +376,7 @@ The `PyramidMode` is used to define the rendering mode of the pyramid segments.
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" Palette="Custom"
+<chart:PyramidSeries XBindingPath="Category" 
 
 PyramidMode="Surface"
 
@@ -405,8 +394,6 @@ YBindingPath="Percentage"/>
 {% highlight xaml %}
 
 <chart:PyramidSeries XBindingPath="Category" 
-
-Palette="Custom"
 
 PyramidMode="Linear"
 
@@ -428,7 +415,7 @@ The following code example shows how to use the funnel series:
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"  
 
-YBindingPath="Percentage" Palette="Custom"/>
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -448,7 +435,7 @@ The FunnelMode defines a rendering mode for the funnel series which define, wher
 
 FunnelMode="ValueIsHeight" 
 
-YBindingPath="Percentage" Palette="Custom"/>
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -462,7 +449,7 @@ YBindingPath="Percentage" Palette="Custom"/>
 
 FunnelMode="ValueIsWidth" 
 
-YBindingPath="Percentage" Palette="Custom/>
+YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -475,6 +462,7 @@ The following properties are used to explode the individual segments in Pie, Dou
 * `ExplodeAll` - Used to explode all the segments of these series.
 * `ExplodeIndex` - Used to explode any specific segment.
 * `ExplodeOffset`- Used to define the explode distance like ExplodeRadius for Pie.
+* `ExplodeOnMouseClick`-Used to explode the segment on mouse click or tap.
 
 **Explode** **Offset**
 
@@ -482,15 +470,13 @@ The following properties are used to explode the individual segments in Pie, Dou
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"   
 
-ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage"     
-
-Palette="Custom">
+ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage" >
 
 </chart:FunnelSeries>
 
-![](Series_images/funnelexplode_1.png)
-
 {% endhighlight %}
+
+![](Series_images/funnelexplode_1.png)
 
 **Gap** **Ratio**
 
@@ -500,7 +486,7 @@ The gap between each segment using `GapRatio` property as in the following code 
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"     
 
-GapRatio="0.5" YBindingPath="Percentage" Palette="Custom">
+GapRatio="0.5" YBindingPath="Percentage">
 
 </chart:FunnelSeries>
 
@@ -577,7 +563,7 @@ StrokeThickness="2" />
 {% endhighlight %}
 
 
-![](Series_images/Series_img28.jpeg)
+![](Series_images/isclosed.png)
 
 ### DrawType
 
@@ -607,7 +593,7 @@ XBindingPath="Direction" YBindingPath="Tree" />
 
 ItemsSource="{Binding PlantDetails}"  
 
-Lab DrawType="Line" IsClosed="True" 
+DrawType="Line" IsClosed="True" 
 
 XBindingPath="Direction" YBindingPath="Tree" 
 
@@ -627,15 +613,13 @@ The following code example shows how to use OHLC series:
 
 {% highlight xaml %}
 
-<chart:HiLoOpenCloseSeries Name="series" ItemsSource="{Binding StockPriceDetails}" 
+<chart:HiLoOpenCloseSeries ItemsSource="{Binding StockPriceDetails}" 
 
 XBindingPath="Date"  High="High" Low="Low"                         
 
 Interior="#4A4A4A"
 
-Open="Open" Close="Close" 
-
-Label="HiloOpenClose" />
+Open="Open" Close="Close"  />
 
 {% endhighlight %}
 
@@ -649,7 +633,7 @@ The values for this series can be bind using `High`, `Low`, `Open` and `Close` p
 
 {% highlight xaml %}
 
-<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" 
+<chart:CandleSeries ItemsSource="{Binding StockPriceDetails}" 
 
 XBindingPath="Date"  High="High" Open="Open"  
 
@@ -663,11 +647,21 @@ Interior="#4A4A4A"/>
 
 
 The APIs present in the Candle series are,
+* `High`-Gets or sets the string that describes high value in Y-axis.
+* `Low`- Gets or sets the string that describes low value in Y-axis.
+* `Open`-Gets or sets the string that describes open value in Y-axis.
+* `Close`- Gets or sets the string that describes close value in Y-axis.
+* `BearFillColor`-Represents the brush color for the segments that show stock price has gone up in measured time interval.
+* `BullFillColor`-Represents that brush color for the segments that show stock price has gone down in measured time interval.
 
-<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date"  High="High" Open="Open"  Close="Close" Low="Low"  BearFillColor="Black" BullFillColor="#BCBCBC"/>
+{% highlight xaml %}
 
-![](Series_images/Series_img33.jpeg)
+<chart:CandleSeries ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date"   
+                    High="High" Open="Open"  Close="Close" Low="Low"  BearFillColor="Black"
+                    BullFillColor="#BCBCBC"/>
+{% endhighlight %}                  
 
+![](Series_images/candle_1.png)
 ### HiLo
 
 In `HiLoSeries`, each segment is represented by a line. The height of the line depends on the value of the data point, high or low. The values for this series can be bind using `High` and `Low`.
@@ -936,7 +930,7 @@ ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
-![](Series_images/stackingareaclosed.png)
+![](Series_images/stackingarea_closed.png)
 
 
 ### Grouping Stacked Series
@@ -998,15 +992,11 @@ ItemsSource="{Binding AnnualDetails}"/>
 
 {% highlight xaml %}
 
-<chart:RangeColumnSeries EnableAnimation="False" 
-
-ItemsSource="{Binding FinancialDatas}" 
+<chart:RangeColumnSeries  ItemsSource="{Binding FinancialDatas}" 
 
 XBindingPath="Time" Interior="#4A4A4A"
 
-High="High" Low="Low" 
-
-Label="Financial Deployment in Each Year" />
+High="High" Low="Low"  />
 
 {% endhighlight %}
 
@@ -1019,7 +1009,7 @@ Label="Financial Deployment in Each Year" />
 
 {% highlight xaml %}
 
-<chart:RangeAreaSeries x:Name="RangeAreaSeries" XBindingPath="ProdName" 
+<chart:RangeAreaSeries XBindingPath="ProdName" 
 
 High="Stock" Low="Price"   
 
@@ -1034,10 +1024,8 @@ ItemsSource="{Binding Products}" />
 
 The APIs present in the RangeArea series are,
 
-**Properties**
-
-* HighValueInterior -Gets or sets the brush that represents the interior color for the high value data.
-* LowValueInterior- Gets or sets the brush that represents the interior color for the high value data.
+* `HighValueInterior` -Gets or sets the brush that represents the interior color for the high value data.
+* `LowValueInterior` - Gets or sets the brush that represents the interior color for the low value data.
 
 {% highlight xaml %}
 
@@ -1136,7 +1124,7 @@ The following code example shows how to use the fast line bitmap series:
 
 {% highlight xaml %}
 
-<chart:FastLineBitmapSeries x:Name="FastLineSeries" ItemsSource="{Binding Data}"
+<chart:FastLineBitmapSeries ItemsSource="{Binding Data}"
 
 XBindingPath="Date" Interior="#7F7F7F" 
 
@@ -1171,13 +1159,11 @@ YBindingPath="Value" EnableAntiAliasing="True"/>
 
 {% highlight xaml %}
 
-<chart:FastColumnBitmapSeries x:Name="FastColumnSeries" Interior="#7F7F7F"
+<chart:FastColumnBitmapSeries Interior="#7F7F7F"
 
 ItemsSource="{Binding List}" 
 
-XBindingPath="Date" YBindingPath="Price" 
-
-ShowTooltip="True"/>
+XBindingPath="Date" YBindingPath="Price" />
 
 {% endhighlight %}
 
@@ -1189,7 +1175,7 @@ FastBarBitmapSeries is used to boost up the performance of the series.
 
 {% highlight xaml %}
 
-<chart:FastBarBitmapSeries x:Name="FastBarBitmapSeries" ItemsSource="{Binding List}" 
+<chart:FastBarBitmapSeries ItemsSource="{Binding List}" 
 
 XBindingPath="Date" YBindingPath="Price" 
 
@@ -1229,7 +1215,7 @@ BearFillColor="#4A4A4A"  />
 
 <chart:FastHiLoBitmapSeries StrokeThickness="5" ItemsSource="{Binding List}"          
 
-Interior="#7F7F7F XBindingPath="Date" High="Stock"     
+Interior="#7F7F7F" XBindingPath="Date" High="Stock"     
 
 Low="Price"/>
 
@@ -1251,7 +1237,7 @@ Low="Price"/>
 
 XBindingPath="X" High="Y" Low="Y1" Open="Y2"        
 
-Close="Y3"   BullFillColor="#7F7F7F"      
+Close="Y3" BullFillColor="#7F7F7F"      
 
 BearFillColor="#4A4A4A"/>
 
@@ -1269,7 +1255,7 @@ BearFillColor="#4A4A4A"/>
 
 ItemsSource="{Binding Data}"                         
 
-x:Name="FastScatterSeries"  XBindingPath="Date" 
+XBindingPath="Date" 
 
 YBindingPath="Value" ScatterHeight="4"  
 
@@ -1308,7 +1294,7 @@ The antialiasing property, `EnableAntiAliasing` is available for FastStepLineBit
 
 <chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}"
 
-x:Name="FastStepLineSeries" XBindingPath="Date" 
+XBindingPath="Date" 
 
 YBindingPath="Value" Interior="#4A4A4A"/>
 

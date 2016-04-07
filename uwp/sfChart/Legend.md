@@ -45,11 +45,11 @@ This can be customized using the `LegendIcon` property in any series as in below
 
 </chart:ChartLegend>
 
-<chart:SplineSeries XBindingPath="Year" Label="Series 1"
+<chart:SplineSeries XBindingPath="Year" Label="Gold"
 	                  
                     ItemsSource="{Binding List}" YBindingPath="India"
                      
-					          LegendIcon="Diamond" />
+					LegendIcon="Diamond" />
 
 
 {% endhighlight %}
@@ -242,9 +242,8 @@ To display the legend at the bottom, you can set the `DockPosition` as **Bottom*
 
 **Floating** **Legends**
 
-To position the legend at any arbitrary location inside chart, we need to set `DockPosition`
-as **Floating** and provide its relative position using `OffsetX`
-and `OffsetY` properties. 
+To position the legend at any arbitrary location inside chart, we need to set `DockPosition`as **Floating** and provide its relative position using `OffsetX`and `OffsetY` properties.
+
 Offset specifies x or y distance from origin.
 
 {% highlight xaml %}
@@ -348,21 +347,20 @@ The following code snippets explains how the legends displaying for accumulation
 
 </chart:SfChart.Legend>
 
-<chart:PieSeries  Palette="Custom" XBindingPath="Category" 
+<chart:PieSeries  XBindingPath="Category" 
 	
-	                ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
+	              ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
 ![](Legend_images/legend_pie.png)
 
 
-Note: Here Legend ‘Label’ will be the x value of the Pie chart.
+N> Here Legend ‘Label’ will be the x value of the Pie chart.
 
 ## Series visibility on legend
 
-We can limit the number of series and trendlines to be displayed in legend using `VisibilityOnLegend`
-property as shown in below example.
+We can limit the number of series and trendlines to be displayed in chart using `VisibilityOnLegend` property as shown in below example.
 
 {% highlight xaml %}
 <chart:SfChart.Legend>

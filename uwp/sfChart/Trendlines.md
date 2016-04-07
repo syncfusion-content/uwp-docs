@@ -77,7 +77,7 @@ This shows when something is increasing or decreasing at a steady rate. This is 
 
 The linear trend line will be calculated using the below formula:
  
-** yValue=Intercept+Slope*xValue(where xValue is Xdata)**
+yValue=Intercept+Slope*xValue(where xValue is Xdata)
 
 The following is the code example of this trend line.
 
@@ -110,7 +110,7 @@ This trend line is used when there is a constant increasing or decreasing in val
 
 The linear trend line will be calculated using the below formula:
 
-** (Intercept*Math.Exp(Slope*xValue)) (where xValue is Xdata) **
+(Intercept*Math.Exp(Slope*xValue)) (where xValue is Xdata)
 
 The following code example defines the exponential trendline.
 
@@ -145,7 +145,7 @@ This trend line is used for comparing multiple sets of data that increase at spe
 
 This will be calculates using the following formula:
 
-** (Intercept*Math.Pow(xValue,Slope)) (Where xValue is Xdata) **
+(Intercept*Math.Pow(xValue,Slope)) (Where xValue is Xdata)
 
 The following code example explains how to define the power trendline.
 
@@ -177,7 +177,7 @@ This is used when there is a quick change in the data, either increasing or decr
 
 The will be calculated using the below formula:
  
-** Intercept +Slope*Math.Log(xValue)(where xValue is X data) **
+Intercept +Slope*Math.Log(xValue)(where xValue is X data)
 
 The following code example illustrates the use of logarithmic trend line.
 
@@ -209,7 +209,7 @@ The polynomial trendline is a curved line that is used when there are more data 
 
 The polynomial trendline is calculated using the below formula:
  
-** PolynomialSlopes.Select( ( value , index) => value* Math.Pow (xValue, (double)index)).Sum() where xValue is X data **
+PolynomialSlopes.Select( ( value , index) => value* Math.Pow (xValue, (double)index)).Sum() where xValue is X data
 
 To define the polynomial trendline, you can use the following code example.
 
@@ -274,7 +274,7 @@ The following two types of forecasting available in SfChart:
 
 ### Forward Forecast
 
-For determining the future trends (in forward direction). The following code example explains the how to set the value for forward forecast.
+For determining the future trends (in forward direction). The following code example explains the how to set the value for `ForwardForecast`.
 
 {% highlight xaml %}
 
@@ -300,7 +300,7 @@ Type="Polynomial" PolynomialOrder="3" ForwardForecast="5" />
 
 ### Backward Forecast
 
-For determining the future trends (in backward direction). The following code example explains the how to set the value for forward forecast.
+For determining the future trends (in backward direction). The following code example explains the how to set the value for `BackwardForecast`.
 
 {% highlight xaml %}
 

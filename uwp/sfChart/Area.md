@@ -9,7 +9,7 @@ documentation: ug
 
 # Area	
 
-Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series, etc. 
+Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series etc. 
 
 The following are the major properties of chart(SfChart):
 
@@ -68,7 +68,7 @@ N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 
 ## Area Customization
 
-SfChart provides the properties like `AreaBorderBrush`, `AreaBorderThickness`, `AreaBackground` and Background for customizing the plot area.
+SfChart provides the properties like `AreaBorderBrush`, `AreaBorderThickness`, `AreaBackground` and `Background` for customizing the plot area.
 
 The following code examples illustrates the usage of these properties:
 
@@ -453,7 +453,7 @@ Serialized Chart
 
 ## Clone or copy the chart
 
-More like serialization, you can use Clone method for SfChart control state persistency. This method creates a copy of the chart instance.
+More like serialization, you can use `Clone` method for SfChart control state persistency. This method creates a copy of the chart instance.
 
 {% highlight C# %}
 
