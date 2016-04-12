@@ -33,8 +33,7 @@ public class SalesInfo : INotifyPropertyChanged
 {
         private int _orderID;
         private string _salesID;
-        private string _productName;
-        private ObservableCollection<ProductInfo> products;
+        private string _productName;        
 
         public int OrderID
         {

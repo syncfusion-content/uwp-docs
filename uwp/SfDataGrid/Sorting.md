@@ -115,7 +115,7 @@ this.dataGrid.ShowSortNumbers = true;
 
 You can sort the data programmatically by adding or removing the `SortColumnDescription` in `SfDataGrid.SortColumnDescriptions` property.
  
-N> `SfDataGrid.SortColumnChanging` and `SfDataGrid.SortColumnChanged` events are not raised when the data sorted programmatically through `SfDataGrid.SortColumnDescriptions`.
+N> `SfDataGrid.SortColumnsChanging` and `SfDataGrid.SortColumnsChanged` events are not raised when the data sorted programmatically through `SfDataGrid.SortColumnDescriptions`.
 
 ### Adding sort columns
 
@@ -276,7 +276,7 @@ Sorting `CustomerName` column sorts the data using custom comparer available in 
 
 SfDataGrid sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection. You can get sorted data from `SfDataGrid.View.Records` when groups are not in place and `SfDataGrid.View.TopLevelGroup.DisplayElements` when grouping in place.
  
-If you want to sort the underlying collection when sorting takes place, then this can be achieved by handling `SfDataGrid.SortColumnChanged` event.
+If you want to sort the underlying collection when sorting takes place, then this can be achieved by handling `SfDataGrid.SortColumnsChanged` event.
  
 {% tabs %}
 {% highlight c# %}
@@ -318,9 +318,9 @@ private object GetOrderSource(OrderInfo source, string name)
 
 ## Handling events
 
-### SortColumnChanging event
+### SortColumnsChanging event
 
-`SfDataGrid.SortColumnChanging` event occurs while sorting the columns by clicking column header. `GridSortColumnsChangingEventArgs` has following members which provides information for `SortColumnChanging` event.
+`SfDataGrid.SortColumnsChanging` event occurs while sorting the columns by clicking column header. `GridSortColumnsChangingEventArgs` has following members which provides information for `SortColumnsChanging` event.
 
 `Action`– Gets the action triggered this event.
  
@@ -332,7 +332,7 @@ private object GetOrderSource(OrderInfo source, string name)
  
 `CancelScroll` - Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through `GridSortColumnsChangingEventArgs.Cancel` property of `SortColumnChanging` event.
+You can prevent sorting for the particular column through `GridSortColumnsChangingEventArgs.Cancel` property of `SortColumnsChanging` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -348,6 +348,6 @@ void DataGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-### SortColumnChanged event
+### SortColumnsChanged event
 
-`SfDataGrid.SortColumnChanged` event occurs when the sorting is applied to the column. `GridSortColumnsChangedEventArgs` provides information for `SortColumnChanged` event.
+`SfDataGrid.SortColumnsChanged` event occurs when the sorting is applied to the column. `GridSortColumnsChangedEventArgs` provides information for `SortColumnsChanged` event.

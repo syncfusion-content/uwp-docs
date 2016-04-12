@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overview of Universal Windows Syncfusion SfReportViewer
-description: This section provides the overview of Universal Windows Syncfusion SfReportViewer control
-platform: UWP
+title: Overview | SfReportViewer | uwp | Syncfusion
+description: overview
+platform: uwp
 control: SfReportViewer
 documentation: ug
 ---

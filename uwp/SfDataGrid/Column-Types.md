@@ -1243,7 +1243,7 @@ In this case SfDataGrid handles the below key operations and other keys are hand
 <syncfusion:GridTemplateColumn MappingName="CustomerName" syncfusion:FocusManagerHelper.WantsKeyInput="True">
     <syncfusion:GridTemplateColumn.CellTemplate>
         <DataTemplate>
-            <TextBox Text="{Binding CustomerName}">
+            <TextBox Text="{Binding CustomerName}" />
         </DataTemplate>
     </syncfusion:GridTemplateColumn.CellTemplate>
 </syncfusion:GridTemplateColumn>

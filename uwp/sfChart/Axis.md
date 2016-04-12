@@ -567,7 +567,7 @@ The following screenshot illustrates SfChart with multiple axes.
 
  The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the Primary and Secondary axis.
 
-###Axis Positioning
+### Axis Positioning
 
 By default, the x-axis is arranged horizontally at the bottom of the chart and the y-axis is arranged vertically on the left-side of the chart. You can change the alignment of the axes by setting OpposedPosition to True. It arranges the x-axis at the top and the y-axis on the right-side of the chart. 
 
@@ -654,11 +654,11 @@ T> You cannot specify range for CategoryAxis instead you can use ZoomFactor and 
             </syncfusion:SfChart.SecondaryAxis>
 {% endhighlight %}
 
-###Range Padding
+### Range Padding
 
 The NumericalAxis and DateTimeAxis have a RangePadding property that can be used to add padding to the range of a chart's axes.
 
-#### NumericalAxis RangePadding
+### NumericalAxis RangePadding
 
 The following types are available for NumericalAxis: 
 
@@ -733,7 +733,7 @@ When RangePadding for DateTimeAxis is set to Round, the range of the chart axis 
 
 ## Positioning axis labels
 
-###Label Placement
+### Label Placement
 
 The CategoryAxis includes the LabelPlacement property, used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the LabelPlacement value for the CategoryAxis is OnTicks.
 
@@ -782,7 +782,7 @@ The following code example and screenshot shows LabelPlacement set to BetweenTic
 
 
 
-###Label Position 
+### Label Position 
 
 The LabelsPosition property is used to position the axis label either inside or outside the chart plotting area.
 
@@ -820,7 +820,7 @@ The following code example and screenshot illustrate the use of LabelsPosition.
 
 
 
-###Positioning Edge Labels
+### Positioning Edge Labels
 
 SfChart provides support to customize the edge labels of the axis to adjust its position using the EdgeLabelDrawingMode property. 
 
@@ -1103,7 +1103,7 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
 
 ## GridLines and TickLines 
 
-###GridLines
+### GridLines
 
 By default, gridlines are automatically added to the ChartAxis in its defined intervals. SfChart supports customization of gridline. You can control the visibility of the gridlines using the ShowGridLines property. 
 
@@ -1125,7 +1125,7 @@ The following code example and screenshot show ShowGridLines set to False.
 
 
 
-###Ticklines
+### Ticklines
 
 Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line.
 
