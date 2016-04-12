@@ -147,7 +147,7 @@ namespace SfPivotChartDemo
 
 ### Adding Service Reference to Project
 
-N> The following steps explain about how to refer the online service in Universal Windows application in-order to bind the Cube information in SfPivotChart. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/SfPivotChart/Getting-Started#adding service reference to project).
+N> The following steps explain about how to refer the online service in Universal Windows application in-order to bind the Cube information in SfPivotChart. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotchart/getting-started#creating-wcf-service-application).
 
 After initializing SfPivotChart control, right click on **"References"** under SfPivotChartDemo project shown in Solution Explorer and select **"Add Service Reference"** option. 
 
