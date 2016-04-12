@@ -156,7 +156,7 @@ namespace SfPivotGridDemo
 
 ### Adding Service Reference to Project
 
-N> The following steps explain about how to refer the online service in Universal Windows application in-order to bind the Cube information in SfPivotGrid. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/SfPivotGrid/Getting-Started#adding service reference to project).
+N> The following steps explain about how to refer the online service in Universal Windows application in-order to bind the Cube information in SfPivotGrid. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotgrid/getting-started#creating-wcf-service-application).
 
 After initializing SfPivotGrid control, right click on **"References"** under SfPivotGridDemo project shown in Solution Explorer and select **"Add Service Reference"** option. 
 

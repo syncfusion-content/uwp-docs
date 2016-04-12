@@ -144,7 +144,7 @@ namespace SfPivotGaugeDemo {
 
 ### Adding Service Reference to Project
 
-N> The following steps explain about how to refer the online service in Universal Windows application in-order to bind the Cube information in SfPivotGauge. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/SfPivotGauge/Getting-Started#adding service reference to project).
+N> The following steps explain about how to refer the online service in Universal Windows application in-order to bind the Cube information in SfPivotGauge. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotgauge/getting-started#creating-wcf-service-application).
 
 After initializing SfPivotGauge control, right click on **"References"** under SfPivotGaugeDemo project shown in Solution Explorer and select **"Add Service Reference"** option.  
 
