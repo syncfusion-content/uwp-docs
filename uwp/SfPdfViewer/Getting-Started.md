@@ -12,7 +12,7 @@ This section explains about the assemblies required for the deployment of SfPdfV
 
 **Required Assemblies**
 
-The following list of assemblies are required for adding a PDF viewer control to the Universal Windows application.
+The following list of assemblies are required for adding a PDF viewer control to the Universal Windows Platform application.
 
 * Syncfusion.SfPdfViewer.UWP
 * Syncfusion.Pdf.UWP
@@ -241,7 +241,7 @@ End Sub
 
 **Magnification operations**
 
-The SfPdfviewer provides the following set of commands to perform magnification.
+The SfPdfViewer provides the following set of commands to perform magnification.
 
 * IncreaseZoomCommand
 * DecreaseZoomCommand
