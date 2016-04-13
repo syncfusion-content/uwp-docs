@@ -108,7 +108,7 @@ Appointments can be added to schedule using default Appointment editor available
 
 You can also use the Context menu to edit the selected appointment by selecting the Edit option in menu item.
 
->**Note:-ContextMenu is opened on tapping the schedule control in windows,but in windowsphone it will be opened on holding.**
+>**Note:-ContextMenu is opened on tapping the schedule control in windows,but in Windows Phone it will be opened on holding.**
 
 ![](Appointments_images/Appointments_img4.jpeg)
 
