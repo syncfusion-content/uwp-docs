@@ -48,7 +48,7 @@ In order to add SfPivotGauge control manually in XAML, the following assembly re
 
 You can find these libraries under following location.
 
-[Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
 
 Or else, the SfPivotGauge control can be added to the project by choosing SDK reference as follows:
 
@@ -94,7 +94,7 @@ In order to add SfPivotGauge control manually in code-behind, the following asse
 
 You can find these libraries under following location.
 
-[Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
 
 Or else, the SfPivotGauge control can be added to the project by choosing SDK reference as follows:
 
@@ -275,7 +275,7 @@ Add the following dependency assemblies into your WCF service application.
 
 You can find these libraries under following location.
 
-[Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Assemblies\4.6\
+{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Assemblies\4.6\
 
 N> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotGauge control.
 The above assembly can be obtainable after installing the following setup files.
