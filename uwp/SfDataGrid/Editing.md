@@ -204,7 +204,7 @@ SfDataGrid triggers the following events during editing.
 
 `CurrentCellBeginEdit` event occurs when the `CurrentCell` enter into edit mode. `CurrentCellBeginEditEventArgs` has following members which provides information for `CurrentCellBeginEdit` event.
 
-* `Cancel`: When set to ‘true’, the event is cancelled and the `CurrentCell` does not enter into the edit mode.
+* `Cancel`: When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
 * `RowColumnIndex`: Gets the current row column index of the DataGrid.
 
@@ -367,7 +367,7 @@ You can directly load edit element using `GridTemplateColumn.CellTemplate` prope
 
 ### Providing focus to the control inside the Template
 
-You can focus to the particular UIElement loaded inside template when cell gets activated by setting `FocusedManager.FousedElement` attached property.
+You can focus to the particular UIElement loaded inside template when cell gets activated by setting `FocusedManager.FocusedElement` attached property.
  
 {% tabs %}
 {% highlight xaml %}
