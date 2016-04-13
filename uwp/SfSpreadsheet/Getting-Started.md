@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started
 
 This section helps you to get started with the SfSpreadsheet
-<br/>
+
 
 ## Assemblies Deployment
 
@@ -74,13 +74,12 @@ Contains the classes which is responsible for converting charts as image</td></t
 Syncfusion.SfChart.UWP.dll</td><td>
 Contains the classes which is responsible for importing charts like Line charts, Pie charts, Sparklines etc.</td></tr>
 </table>
-<br/>
+
 
 ## Create a Simple Application with SfSpreadsheet
 
 SfSpreadsheet control can be added into the application either via designer or via coding. 
-<br/>
-<br/>
+
 
 ### Adding a Control via Designer
 
@@ -115,8 +114,7 @@ _For_ _Ribbon:_
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
-<br/>
+
 
 ### Adding Control Via Coding
 
@@ -221,7 +219,7 @@ A new workbook can be created by using a `Create` method of SfSpreadsheet. By de
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Opening the Existing Excel Workbook
 
@@ -256,7 +254,7 @@ this.spreadsheet.Open(fileStream);
 {% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img4.jpg)
-<br/>
+
 
 ## Saving the Excel Workbook
 

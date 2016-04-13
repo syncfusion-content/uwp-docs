@@ -9,11 +9,8 @@ documentation: ug
 
 # Rows and Columns
 This section explains about the operations related with rows and columns in SfSpreadsheet
-<br/>
-<br/>
 
 ## Insert and Delete
-<br/>
 
 ### Inserting Rows and Columns
 
@@ -36,7 +33,7 @@ spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ### Deleting Rows and Columns
 
@@ -59,10 +56,10 @@ spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Hide and Unhide
-<br/>
+
 
 ### Hiding Rows/Columns
 
@@ -85,7 +82,7 @@ SfSpreadsheet provides support to hide rows/columns and this can be done by `Hid
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ### Unhiding Rows/Columns
 
@@ -108,7 +105,7 @@ Unhide the rows/columns in SfSpreadsheet can be done by `ShowRow` and `ShowColum
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Row Height and Column Width
 
@@ -131,7 +128,7 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 N> Incase if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, `RefreshOutlines` method must be invoked to refresh/update the Outlines of the Group.	
 

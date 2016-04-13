@@ -22,7 +22,6 @@ IConditionalFormats condition = worksheet.Range["A1"].ConditionalFormats;
 IConditionalFormat condition1 = condition.AddCondition();
 
 {% endhighlight %}
-<br/><br/>
 
 ## Highlight Cell Rules
 
@@ -50,7 +49,6 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 {% endhighlight %}
 
-<br/><br/>
 
 ### Based on SpecificText
 
@@ -76,7 +74,6 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 {% endhighlight %}
 
-<br/><br/>
 
 ### Based on TimePeriod
 
@@ -103,7 +100,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img1.jpeg)
+![](Conditional-Formatting_images/Conditional-Formatting_img1.PNG)
 
 
 ## Data Bars
@@ -132,7 +129,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(2));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img2.jpeg)
+![](Conditional-Formatting_images/Conditional-Formatting_img2.PNG)
 
 
 
@@ -162,7 +159,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img3.jpeg)
+![](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
 
 
 ## Icon Sets
@@ -187,4 +184,4 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(4));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img4.jpeg)
+![](Conditional-Formatting_images/Conditional-Formatting_img4.PNG)

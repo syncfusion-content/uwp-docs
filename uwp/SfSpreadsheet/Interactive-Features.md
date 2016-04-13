@@ -10,8 +10,6 @@ documentation: ug
 # Interactive Features
 
  This section explains about the interactive operations with SfSpreadsheet
- <br/>
- <br/>
  
 ## Clipboard Operations
 
@@ -127,7 +125,7 @@ copyPaste.Paste(range, PasteOptions.Paste);
 {% endtabs %}
 
 N> When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options).
-<br/>
+
 
 ## Undo/Redo
 
@@ -165,12 +163,12 @@ spreadsheet.HistoryManager.Redo();
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Context menu
 
 Context menu in SfSpreadsheet is customizable menu which can be used for various functionalities
-<br/>
+
 
 ### Cell Context menu
 
@@ -199,7 +197,7 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
     
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Cell Comments
 
