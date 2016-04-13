@@ -40,15 +40,15 @@ Contains the classes which holds the properties and operations of the controls l
 <tr>
 <td>
 Syncfusion.SfInput.UWP.dll</td><td>
-Contains the classes which holds the controls like DropDownButton, TextBoxExt,MaskedEdit, DateTime etc.</td></tr>
+Contains the classes which holds the controls like SfDropDownButton, SfTextBoxExt,SfMaskedEdit etc.</td></tr>
 <tr>
 <td>
 Syncfusion.SfRibbon.UWP.dll</td><td>
-Covers the classes which holds the Ribbon controls such as Ribbon button, Menus, Gallery etc.</td></tr>
+Covers the classes which holds the Ribbon controls such as SfRibbon, SfRibbonMenu, SfRibbonGalleryItem etc.</td></tr>
 <tr>
 <td>
 Syncfusion.SfTabControl.UWP.dll</td><td>
-Covers the classes which holds the controls like SfTabcontrol, SfTabItem,SfTabpanel etc</td></tr>
+Covers the classes which holds the controls like SfTabControl, SfTabItem etc</td></tr>
 <tr>
 <td>
 Syncfusion.XlsIO.UWP.dll</td><td>
