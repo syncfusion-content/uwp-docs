@@ -53,7 +53,7 @@ In order to add SfPivotGrid control manually in XAML, the following assembly ref
 
 You can find these libraries under following location.
 
-[Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
 
 Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
 
@@ -102,7 +102,7 @@ In order to add SfPivotGrid control manually in code-behind, the following assem
 
 You can find these libraries under following location.
 
-[Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
 
 Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
 
@@ -275,7 +275,7 @@ Add the following dependency assemblies into your WCF service application.
 
 You can find these libraries under following location.
 
-[Installed Drive]:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Assemblies\4.6\
+{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Assemblies\4.6\
 
 N> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotGrid control.
 The above assembly can be obtainable after installing the following setup files.
