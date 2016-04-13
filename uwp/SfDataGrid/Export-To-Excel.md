@@ -998,3 +998,70 @@ private static void ChildExportingHandler(object sender, GridCellExcelExportingE
 
 ![](Export-To-Excel_images/Export-To-Excel_img46.png)
 
+## Performance
+
+Using `ExcelExportingOptions.CellsExportingEventHandler` and changing settings for each cell will consume more memory and time consumption. So, avoid using `CellsExportingEventHandler` and instead of you can do the required settings in the exported sheet.
+ 
+### Formatting column without using CellsExportingEventHandler
+
+You can perform cell level customization such as row-level styling, formatting particular column in the exported worksheet.
+ 
+In the below code snippet, NumberFormat for `Unit Price` column is changed in the exported sheet after exporting without using CellsExportingEventHandler.
+ 
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();                   
+                    
+options.ExportMode = ExportMode.Value;                 
+
+options.ExcelVersion = ExcelVersion.Excel2013;           
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+
+workBook.ActiveSheet.Columns[4].NumberFormat = "0.0";
+{% endhighlight %}
+{% endtabs %}
+
+![](Export-To-Excel_images/Export-To-Excel_img47.png)
+
+### Alternate row styling without using CellsExportingEventHandler
+
+In the below code snippet, the background color of rows in excel is changed based on row index using conditional formatting for better performance.
+
+{% tabs %}
+{% highlight c# %}
+var options = new ExcelExportingOptions();                   
+                    
+options.ExportMode = ExportMode.Value;                 
+
+options.ExcelVersion = ExcelVersion.Excel2013;           
+
+var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
+
+IWorkbook workBook = excelEngine.Excel.Workbooks[0];
+
+IConditionalFormats condition = workBook.ActiveSheet.Range[2,1,this.dataGrid.View.Records.Count+1,this.dataGrid.Columns.Count].ConditionalFormats;
+
+IConditionalFormat condition1 = condition.AddCondition();
+
+condition1.FormatType = ExcelCFType.Formula;
+
+condition1.FirstFormula = "MOD(ROW(),2)=0";
+
+condition1.BackColorRGB = System.Drawing.Color.Pink;
+
+IConditionalFormat condition2 = condition.AddCondition();
+
+condition2.FormatType = ExcelCFType.Formula;
+
+condition2.FirstFormula = "MOD(ROW(),2)=1";
+
+condition2.BackColorRGB = System.Drawing.Color.LightGray;
+{% endhighlight %}
+{% endtabs %}
+
+
+![](Export-To-Excel_images/Export-To-Excel_img48.png)
+
