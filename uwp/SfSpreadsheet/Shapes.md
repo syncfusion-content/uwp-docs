@@ -95,7 +95,7 @@ shape.Width = 200;
 
 ## Text Boxes
 
-SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the richtext box at run time, use `AddTextBox` method
+SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to add the rich text box at run time, use `AddTextBox` method
 
 {% tabs %}
 {% highlight c# %}

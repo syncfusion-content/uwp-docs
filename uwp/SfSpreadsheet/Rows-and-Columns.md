@@ -130,7 +130,7 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
 {% endtabs %}
 
 
-N> Incase if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, `RefreshOutlines` method must be invoked to refresh/update the Outlines of the Group.	
+N> In case if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, `RefreshOutlines` method must be invoked to refresh/update the Outlines of the Group.	
 
 ## Freeze Panes
 
