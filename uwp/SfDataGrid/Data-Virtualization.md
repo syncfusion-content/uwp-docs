@@ -472,9 +472,9 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Displaying animation when fetching data from services
 
-You can display animations when fetching data from service for `LoadMoreItmesAsync` method call, using `BackgroundWorker`.
+You can display animations when fetching data from service for `LoadMoreItemsAsync` method call, using `BackgroundWorker`.
  
-In the below code snippet data fetched from service using `BackgroundWorker` and `SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgrondWorker` completes its action.
+In the below code snippet data fetched from service using `BackgroundWorker` and `SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
 
 {% tabs %}
 {% highlight xaml %}

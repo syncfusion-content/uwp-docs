@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-The SfDataGrid control for Universal Windows is used to display collection of data in rows and columns. It includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
+The SfDataGrid control for Universal Windows Platform is used to display collection of data in rows and columns. It includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
  
 Following are the key features of SfDataGrid control,
 
@@ -24,7 +24,7 @@ Following are the key features of SfDataGrid control,
 * **Validation** – Support to validate the data on errors.
 * **Data virtualization** – Support for different modes of data virtualization such as paging, incremental loading.
 * **Master-Detail View**– Support to display relational data using hierarchies. 
-* **Printing and Exporting** – Support to print and also export the data to Excel, Pdf.
+* **Printing and Exporting** – Support to print and also export the data to Excel, PDF.
 * **Styling** – Extensive support for customizing styles of cells and rows in SfDataGrid.
 * **Stacked Headers** - Extensive support to show multiple headers called stacked headers.
 * **Unbound rows** – Support to display unbound rows.
@@ -77,7 +77,7 @@ Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
 </tr>
 </table>
 
-In order to use export to excel and export to pdf functionalities of SfDataGrid control, add the reference to following assemblies,
+In order to use export to excel and export to PDF functionalities of SfDataGrid control, add the reference to following assemblies,
 
 <table>
 <tr>
@@ -93,7 +93,7 @@ Description
 Syncfusion.SfGridConverter.UWP
 </td>
 <td>
-Syncfusion.SfGridConverter.UWP contains static extension classes for exporting SfDataGrid to excel and Pdf in <code>Syncfusion.UI.Xaml.Grid.Converter</code> namespace.
+Syncfusion.SfGridConverter.UWP contains static extension classes for exporting SfDataGrid to excel and PDF in <code>Syncfusion.UI.Xaml.Grid.Converter</code> namespace.
 </td>
 </tr>
 <tr>
@@ -109,7 +109,7 @@ Syncfusion.XlsIO.Base.UWP contains fundamental and base classes for creating and
 Syncfusion.Pdf.UWP
 </td>
 <td>
-Syncfusion.Pdf.UWP contains fundamental and base classes for creating Pdf.
+Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
 </td>
 </tr>
 </table>
@@ -131,7 +131,7 @@ In this walk through, you will create WPF application that contains SfDataGrid c
 
 ### Creating the project
 
-Create new Universal Windows Project in Visual Studio to display SfDataGrid with data objects.
+Create new Universal Windows Platform project in Visual Studio to display SfDataGrid with data objects.
 
 ### Adding control via Designer
 
