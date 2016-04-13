@@ -9,8 +9,6 @@ documentation: ug
 
 # Worksheet Management
  This section explains about the operations that are performed with the worksheet
-<br/>
-<br/>
 
 ## Insert and Delete
 
@@ -33,7 +31,7 @@ SfSpreadsheet provides support to insert and delete the worksheets in a workbook
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Hide and Unhide
 
@@ -52,7 +50,7 @@ SfSpreadsheet provides support to hide and unhide the worksheets in a workbook.
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## GridLines
 
@@ -71,7 +69,7 @@ spreadsheet.SetGridLinesVisibility(false);
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Headings
 
@@ -86,7 +84,7 @@ spreadsheet.SetRowColumnHeadersVisibility(false);
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Zooming
 
@@ -103,14 +101,11 @@ SfSpreadsheet provides support to zoom in and zoom out of a worksheet view. The 
 
 The Events associated with the Zooming are 
 
-. `ZoomFactorChanged`
+. `ZoomFactorChanged`  - Occurs when the zoom factor in Spreadsheet is changed.
 
-. `ZoomFactorChanging`
-<br/>
-<br/>
+. `ZoomFactorChanging` - Occurs when the zoom factor in Spreadsheet is going to be changed.
 
 ## Protection
-<br/>
 
 ### Workbook Protection
 
@@ -129,7 +124,7 @@ SfSpreadsheet provides support to protect the structure and windows of a workboo
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ### Worksheet Protection
 

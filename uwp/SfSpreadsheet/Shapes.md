@@ -9,8 +9,6 @@ documentation: ug
 
 # Shapes
   This section explains about importing of charts, sparklines, pictures and textboxes in SfSpreadsheet.
-<br/>
-<br/>
 
 ## Charts
 
@@ -55,7 +53,6 @@ shape.Height = 300;
 shape.Width = 300;
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 
 ## Sparklines
@@ -71,7 +68,6 @@ Add the SparklineCellRenderer into the GraphicCellRenderers collection by using 
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
 
 
 ## Pictures
@@ -95,7 +91,7 @@ shape.Width = 200;
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Text Boxes
 

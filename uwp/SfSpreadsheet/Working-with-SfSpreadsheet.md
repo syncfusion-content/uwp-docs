@@ -9,8 +9,7 @@ documentation: ug
 
 # Working with Spreadsheet
  This section explains about accessing the Worksheet, Grid and the events associated with it.
-<br/>
-<br/>
+
 
 ## Working with Worksheet
 
@@ -37,8 +36,7 @@ spreadsheet.ActiveSheet
 {% endtabs %}
 
 For more information regarding working with worksheets, you can refer the [XlsIO UG](http://help.syncfusion.com/file-formats/xlsio/overview) link
-<br/>
-<br/>
+
 
 ## Working with Grid
 
@@ -131,7 +129,7 @@ void spreadsheet_WorksheetAdded(object sender, WorksheetAddedEventArgs args)
 
 {% endhighlight %}
 {% endtabs %}
-<br/>
+
 
 ## Setting the CellValue at Runtime
 
