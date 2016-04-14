@@ -464,7 +464,7 @@ SfDataGrid provides the following events for filtering.
 
 ### FilterChanging event
 
-`FilterChanging` event is raised while applying filters to a particular column. You can use this event to change the `FilterPredicates`, `FilterType` and `FilterBehaviour`.
+`FilterChanging` event is raised while applying filters to a particular column. You can use this event to change the `FilterPredicates`, `FilterType` and `FilterBehavior`.
 
 {% tabs %}
 {% highlight c# %}
