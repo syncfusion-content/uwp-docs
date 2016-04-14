@@ -842,7 +842,7 @@ if (storageFile != null)
 
 #### Customize the range of cells
 
-You can customize the range of cells after exporting to excel by directly manipualting worksheet.
+You can customize the range of cells after exporting to excel by directly manipulating worksheet.
 
 {% tabs %}
 {% highlight c# %}
