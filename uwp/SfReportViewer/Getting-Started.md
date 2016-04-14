@@ -7,13 +7,13 @@ control: SfReportViewer
 documentation: ug
 ---
 
-# Getting Started with Universal Windows Application
+# Getting Started with Universal Windows Platform Application
 
 This section helps you to get start with SfReportViewer control.
 
 ## Create your first SfReportViewer application in UWP
 
-Create a new Universal Windows project through Visual Studio Designer.
+Create a new Universal Windows Platform project through Visual Studio Designer.
    
 ### Add SfReportViewer control from XAML
 
@@ -22,16 +22,16 @@ This section demonstrates how to create an application using SfReportViewer cont
 ### Add Assembly reference
 
 1. Right-click on the reference folder in solution explorer and select Add Reference.  
-2. Choose Universal Windows -> Extensions -> Syncfusion Controls for UWP XAML.
+2. Choose Universal Windows Platform -> Extensions -> Syncfusion Controls for UWP XAML.
 3. Add the following namespace in your XAML page.
 
    ~~~~ xml
    xmlns:Reports="using:Syncfusion.UI.Xaml.Reports"
    ~~~~
    
-   N> Adding the extension Syncfusion Controls for UWP XAML, adds all the Syncfusion UWP controls, you can also add the SfReportViewer reference and its dependent assemblies from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies for Universal Windows\
+   N> Adding the extension Syncfusion Controls for UWP XAML, adds all the Syncfusion UWP controls, you can also add the SfReportViewer reference and its dependent assemblies from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies for Universal Windows Platform\
  
-4. You can initialize the SfReportViewer control in xaml as follows.
+4. You can initialize the SfReportViewer control in XAML as follows.
 
    ~~~~ xml
    <Reports:SfReportViewer Name="ReportViewer"/>
@@ -254,7 +254,7 @@ This section demonstrates how to run RDLC report using SfReportViewer control.
 
 ## Create WebAPI service for SfReportViewer
 
-SfReportviewer control requires WebAPI service to process and render RDL/SSRS reports. This section helps you to create WebAPI service for rendering RDL/SSRS reports.
+SfReportViewer control requires WebAPI service to process and render RDL/SSRS reports. This section helps you to create WebAPI service for rendering RDL/SSRS reports.
 
 1. Open Visual Studio and create a new project by clicking New Project. Select the Web category, select the ASP.NET Web Application template, and then click OK. The following screenshot displays the Project Creation Wizard.
     
@@ -270,9 +270,9 @@ SfReportviewer control requires WebAPI service to process and render RDL/SSRS re
    * System.Web.Http.WebHost
    * Syncfusion.EJ.ReportViewer
 
-   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies
+   N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
    N> 
-   N> Refer System.Web.Http, System.Web.Http.WebHost, System.Net.Http.WebRequest and System.net.Http.Formatting dlls from ASP.NET WebApi nuget package.
+   N> Refer System.Web.Http, System.Web.Http.WebHost, System.Net.Http.WebRequest and System.net.Http.Formatting assemblies from ASP.NET WebApi NuGet package.
 
 3. Add WebAPI controller to your application as shown in below screen shot.
 
@@ -376,7 +376,7 @@ This section demonstrates how to run RDL report using SfReportViewer control.
    ReportViewer.RefreshReport();
    ~~~~
 
-   N> Add your report files to your Web service application’s App_Data folder. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\<version>\Common\Data\ReportTemplate).
+   N> Add your report files to your Web service application’s App_Data folder. You can obtain sample rdl/rdlc files from Syncfusion installed location (%userprofile%\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\Common\Data\ReportTemplate).
 
 2. Run the sample application the following output will be displayed as result.
 
