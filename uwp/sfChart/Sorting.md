@@ -12,7 +12,7 @@ documentation: ug
 Chart provides the support for sorting the data point rendering either in ascending or descending based on X or Y axis.
 
 ### Enable Sorting
-Ths `IsSortData` property used to enable the sorting in series.
+This `IsSortData` property used to enable the sorting in series.
 
 ### Changing sorting direction
 
