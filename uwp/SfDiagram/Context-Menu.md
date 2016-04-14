@@ -59,6 +59,7 @@ The following code example illustrates how to set ContextMenu and ContextMenuIte
 
 //Enables Menu
 node.Constraints = node.Constraints | NodeConstraints.Menu;
+node.Constraints = node.Constraints & ~NodeConstraints.InheritMenu;
 node.Menu = new DiagramMenu();
 node.Menu.MenuItems=new ObservableCollection<DiagramMenuItem>();
 //Defines custom ContextMenu Items
