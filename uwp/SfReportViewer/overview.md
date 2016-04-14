@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview 
 
-SfReportViewer control provides the capability to view RDL/RDLC or SSRS reports within Universal Windows application. All interactions are touch friendly and provides users a delightful experience viewing reports on tablets. It has support to bind DataSources/Parameters to the Reports and also supports exporting, paging, zooming and printing the report.
+SfReportViewer control provides the capability to view RDL/RDLC or SSRS reports within Universal Windows Platform application. All interactions are touch friendly and provides users a delightful experience viewing reports on tablets. It has support to bind DataSources/Parameters to the Reports and also supports exporting, paging, zooming and printing the report.
  
 ## Key features
 
