@@ -13,7 +13,7 @@ The following section helps you to build your application with SfChart.
 
 ## Steps
 
-   * Create new Universal Windows project using Visual Studio. For more [details](https://msdn.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal))
+   * Create new Universal Windows Platform project using Visual Studio. For more [details](https://msdn.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal))
    * Add the SfChart assembly to your application. 
    * Initialize chart control.
    * Adding header to the chart control.
