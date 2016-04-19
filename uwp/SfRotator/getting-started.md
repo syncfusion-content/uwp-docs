@@ -60,6 +60,8 @@ To develop an application with Rotator is simple. The following steps explain ho
 {% highlight Xaml %}		
 
     <syncfusion:SfRotator>
+
+{% endhighlight %}
  
 
 
