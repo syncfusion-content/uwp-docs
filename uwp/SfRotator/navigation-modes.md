@@ -23,7 +23,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
     <syncfusion:SfRotator NavigationMode="Thumbnail"/>
 
-{% highlight  %}
+{% endhighlight %}
 
 ![](Images/thumbnail.png)
 
@@ -39,6 +39,6 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
     <syncfusion:SfRotator NavigationMode="Dots"/>
 
-{% highlight  %}
+{% endhighlight %}
 
 ![](Images/dots.png)
