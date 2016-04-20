@@ -1,7 +1,7 @@
 ---
 layout: post
-title: FilterRow
-description: How to filter the data from filterrow
+title: FilterRow support in SfDataGrid.
+description: How to filter the data using FilterRow
 platform: uwp
 control: SfDataGrid
 documentation: ug
