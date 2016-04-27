@@ -11,19 +11,19 @@ documentation: ug
 
 Items can be selected programmatically using the properties `SelectedIndex`, `SelectedItem` and `SelectedItems`.
 
-## Selecting item using SelectedIndex
+## Selecting Item using SelectedIndex
 
 `SelectedIndex` property is used to select an item using its index. It contains the index of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
 
-## Selecting item using SelectedItem
+## Selecting Item using SelectedItem
 
 `SelectedItem` property is used to select an item using its instance. It contains the instance of most recently selected item in case of OneOrMore, ZeroOrMore SelectionModes. 
 
-## Retrieving the selected items
+## Retrieving the Selected Items
 
 `SelectedItems` property contains a collection of selected items instances for all the SelectionModes. It is a read only property and it cannot be set.
 
-## Retrieving the selected item indices
+## Retrieving the Selected Item Indices
 
 `SelectedIndices` property contains a collection of selected items indices for all the SelectionModes. It is a read only property and it cannot be set.
 
@@ -138,7 +138,7 @@ End Sub
 
 ![](Selecting-Items-images/Selecting-Items-img1.jpeg)
 
-## Selecting item using IsSelected
+## Selecting Item using IsSelected
 
 `SfAccordionItem` has a property `IsSelected` that determines whether the item is expanded or collapsed. More than one accordion item can have IsSelected as `True` based on the `SelectionMode`.
 
@@ -235,7 +235,7 @@ Content="Essential Studio for Universal"/>
 
 ![](Selecting-Items-images/Selecting-Items-img2.jpeg)
 
-## Checking the lock state of an item
+## Checking the Lock State of an Item
 
 `SfAccordionItem` provides a read-only property `IsLocked` to check whether an item is locked or not. An accordion item is said to be locked when it cannot be unselected/collapsed. 
 For example: In One SelectionMode, the selected item cannot be collapsed directly by clicking on its header, it is locked. It can be unlocked by selecting another accordion item, now the newly selected item is locked.
@@ -280,7 +280,7 @@ accordion.SelectAll()
 
 {% endtabs %}
 
-## Notifying selected item change
+## Notifying Selected Item Change
 
 `SelectedItemChanged` event is fired whenever an item is expanded or collapsed. The arguments of the event are
 
@@ -486,7 +486,7 @@ Collapse the item with header Windows Phone
 
 ![](Selecting-Items-images/Selecting-Items-img4.jpeg)
 
-## Notifying an item selection
+## Notifying an Item Selection
 
 SfAccordionItem.Selected event is fired whenever the item is selected/expanded.
 
@@ -522,7 +522,7 @@ End Sub
 
 {% endtabs %}
 
-## Notifying an item un-selection
+## Notifying an Item Un-selection
 
 SfAccordionItem.Unselected event is fired whenever the item is unselected/collapsed.
 
@@ -560,7 +560,7 @@ End Sub
 
 {% endtabs %}
 
-## Notifying selection change
+## Notifying Selection Change
 
 SelectionChanged event fires when an item is selected and unselected. It behaves same as that of SelectedItemChanged event. 
 The difference between these two events are the event argument parameters. The parameters of SelectionChanged event are AddedItems and RemovedItems.Added items have the list of recently selected items whereas RemovedItems have the list of recently unselected items.

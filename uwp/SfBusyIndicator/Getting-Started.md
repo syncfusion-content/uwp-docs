@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create a visual representation indicating background running process with animation using `SfBusyIndicator` control.
 
-## Adding SfBusyIndicator control
+## Adding SfBusyIndicator Control
 
 
 Create a Universal Windows project in Visual Studio and refer to the "Syncfusion.SfBusyIndicator.UWP" assembly.
@@ -58,7 +58,7 @@ Dim busyIndicator As New SfBusyIndicator()
 
 ![](SfBusyIndicator1/Winrt.png)
 
-## Choosing animation
+## Choosing Animation
 
 Choose an animation from the available built-in animations and set it using `AnimationType` property.
 
@@ -94,7 +94,7 @@ Dim busyIndicator As New SfBusyIndicator() With {.AnimationType = AnimationTypes
 
 ![](SfBusyIndicator1/Gear.png)
 
-## Setting busy header
+## Setting Busy Header
 
 Set the `Header` property with text “Loading…” to display a busy status and customize the header with `HeaderTemplate` property as given below:
 

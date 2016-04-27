@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataBinding | SfChart | uwp | Syncfusion
-description: databinding
+description: Binding values to the SfChart
 platform: uwp
 control: SfChart
 documentation: ug
@@ -11,155 +11,179 @@ documentation: ug
 
 SfChart offers ItemsSource property to bind various datasource ranges from simple collection property to complex properties.
 
-###Binding a simple collection to the chart
+### Binding a simple collection to the chart
+
 {% tabs %}
-{% highlight c# %}
 
-    public class GoldDemand
-
-        {
-
-            public string Demand { get; set; }
-
-
-
-            public double Year2010 { get; set; }
-
-
-
-            public double Year2011 { get; set; }
-
-        }
-
-
-
-        public sealed partial class MainPage : Page
-
-        {
-
-            public MainPage()
-
-            {
-
-                this.InitializeComponent();
-
-                this.Demands = new ObservableCollection<GoldDemand>
-
-            {
-
-                new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
-
-                new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
-
-                new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
-
-                new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-                new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
-
-
-
-                new GoldDemand() {Demand = "Others", Year2010 = 1090.5, Year2011 = 1032.0},
-
-                new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-                new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
-
-
-
-                new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
-
-                new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
-
-                new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-                new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
-
-            };
-
-
-
-                DataContext = this;
-
-            }
-
-            public ObservableCollection<GoldDemand> Demands { get; set; }       }
-
-{% endhighlight %}
-
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfChart >
 
-            <syncfusion:LineSeries
+<syncfusion:LineSeries
 
-                ItemsSource="{Binding Demands}"
+ItemsSource="{Binding Demands}"
 
-                XBindingPath="Demand"
+XBindingPath="Demand"
 
-                YBindingPath="Year2010">
+YBindingPath="Year2010">
 
-            </syncfusion:LineSeries>
+</syncfusion:LineSeries>
 
+</syncfusion:SfChart>
 
-
-        </syncfusion:SfChart>
 {% endhighlight %}
+
+{% highlight C# %}
+
+public class GoldDemand
+
+{
+
+public string Demand { get; set; }
+
+
+
+public double Year2010 { get; set; }
+
+
+
+public double Year2011 { get; set; }
+
+}
+
+
+
+public sealed partial class MainPage : Page
+
+{
+
+public MainPage()
+
+{
+
+this.InitializeComponent();
+
+this.Demands = new ObservableCollection<GoldDemand>
+
+{
+
+new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
+
+new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
+
+new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
+
+new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
+
+new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
+
+
+
+new GoldDemand() {Demand = "Others", Year2010 = 1090.5, Year2011 = 1032.0},
+
+new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
+
+new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
+
+
+
+new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
+
+new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
+
+new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
+
+new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
+
+};
+
+
+
+DataContext = this;
+
+}
+
+public ObservableCollection<GoldDemand> Demands { get; set; }       }
+
+{% endhighlight %}
+
 {% endtabs %}
-###Binding complex property to the chart
+
+
+### Binding complex property to the chart
 
 The complex property binding feature enables you to access nested object reference property values to render the chart segment. 
+
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:LineSeries ItemsSource="{Binding  DataWithMulData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumSeats" /> 
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
 
-        public class StadiumDetails
+public class StadiumDetails
 
-        {
+{
 
-            public string PlaceName { get; set; }
+public string PlaceName { get; set; }
 
-            public int NumSeats { get; set; }
+public int NumSeats { get; set; }
 
-            public int Price { get; set; }
+public int Price { get; set; }
 
-            public CupDetails CupDetailsObj { get; set; }
+public CupDetails CupDetailsObj { get; set; }
 
-        }
+}
 
 
 
-        public class CupDetails
+public class CupDetails
 
-        {
+{
 
-            public string CupName { get; set; }
+public string CupName { get; set; }
 
-        }
+}
 
-        public class DataPointWithMulData
+public class DataPointWithMulData
 
-        {
+{
 
-            public string Name { get; set; }
+public string Name { get; set; }
 
-            public StadiumDetails StadiumObject { get; set; }
+public StadiumDetails StadiumObject { get; set; }
 
-        }
+}
 {% endhighlight %}
 {% endtabs %}
-###Binding array property to the chart
+
+### Binding array property to the chart
 
 The SfChart supports array values for the XBindingPath and YBindingPath. XBindingPath and YBindingPath are bound with the property name in the corresponding index value. You can bind the same property with different index values.
 
 The following code example demonstrates how to bind the array values for the XBindingPath and YBindingPath.
+
 {% tabs %}
-{% highlight c# %}
+{% highlight xaml %}
+
+
+
+<chart:SfChart>
+
+      <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
+
+XBindingPath="Brand[1]" YBindingPath="Count[0]" >
+
+      </chart:ColumnSeries>
+
+</chart:SfChart>
+
+
+{% endhighlight %}
+
+{% highlight C# %}
 public class Model
 
 {
@@ -206,30 +230,6 @@ public class ViewModel
 
 }
 
-{% endhighlight %}
-
-{% highlight xml %}
-
-
-
-<chart:SfChart>
-
-      <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
-
-XBindingPath="Brand[1]" YBindingPath="Count[0]" >
-
-      </chart:ColumnSeries>
-
-</chart:SfChart>
-
-
-{% endhighlight %}
-
-
-{% highlight c# %}
-
-
-
 private void CreateChart()
 
 {
@@ -252,7 +252,10 @@ chart.Series.Add(series);
 
 }
 
+
 {% endhighlight %}
 
+
 {% endtabs %}
+
 

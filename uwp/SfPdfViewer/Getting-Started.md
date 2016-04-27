@@ -12,7 +12,7 @@ This section explains about the assemblies required for the deployment of SfPdfV
 
 **Required Assemblies**
 
-The following list of assemblies are required for adding a PDF viewer control to the Universal Windows application.
+The following list of assemblies are required for adding a PDF viewer control to the Universal Windows Platform application.
 
 * Syncfusion.SfPdfViewer.UWP
 * Syncfusion.Pdf.UWP
@@ -23,7 +23,7 @@ Follow the below steps to create a simple application with the SfPdfViewer and l
 
 1. Create a new UWP application in the Visual Studio.
 
-2. Open the Visual Studio tool box and drag the SfPdfViewerControl toolbox item to the designer window. Name the SfPdfViewerControl as pdfviewer.
+2. Open the Visual Studio tool box and drag the SfPdfViewerControl toolbox item to the designer window. Name the SfPdfViewerControl as pdfViewer.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
@@ -241,7 +241,7 @@ End Sub
 
 **Magnification operations**
 
-The SfPdfviewer provides the following set of commands to perform magnification.
+The SfPdfViewer provides the following set of commands to perform magnification.
 
 * IncreaseZoomCommand
 * DecreaseZoomCommand
@@ -249,7 +249,7 @@ The SfPdfviewer provides the following set of commands to perform magnification.
 The following XAML code shows how to bind the IncreaseZoomCommand to a button
 {% tabs %}
 {% highlight xaml %}
-<Button Content="ZoomIn" Command="{Binding ElementName=pdfviewer, Path=IncreaseZoomCommand}" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+<Button Content="ZoomIn" Command="{Binding ElementName=pdfViewer, Path=IncreaseZoomCommand}" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
 {% endhighlight %}
 {% endtabs %}
 
@@ -257,7 +257,7 @@ The following XAML code shows how to bind the DecreaseZoomCommand to a button
 
 {% tabs %}
 {% highlight xaml %}
-<Button Content="ZoomOut" Command="{Binding ElementName=pdfviewer, Path=DecreaseZoomCommand}" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
+<Button Content="ZoomOut" Command="{Binding ElementName=pdfViewer, Path=DecreaseZoomCommand}" HorizontalAlignment="Left" VerticalAlignment="Top"></Button>
 {% endhighlight %}
 {% endtabs %}
 
@@ -270,7 +270,7 @@ N>
 The following XAML code shows how to bind the PrintCommand to a Button
 {% tabs %}
 {% highlight xaml %}
-<Button Content="Print" Command="{Binding ElementName=pdfviewer, Path=PrintCommand}" ></Button>
+<Button Content="Print" Command="{Binding ElementName=pdfViewer, Path=PrintCommand}" ></Button>
 {% endhighlight %}
 {% endtabs %}
 
@@ -303,9 +303,9 @@ Binding SearchNextCommand and SearchPreviousCommand to buttons
 
 {% tabs %}
 {% highlight xaml %}
-<Button Content="Search Next" Command="{Binding ElementName=sfpdfviewer, Path=SearchNextCommand}" ></Button>
+<Button Content="Search Next" Command="{Binding ElementName=pdfViewer, Path=SearchNextCommand}" ></Button>
 
-<Button Content="Search Previous" Command="{Binding ElementName=sfpdfviewer, Path=SearchPreviousCommand}" ></Button>
+<Button Content="Search Previous" Command="{Binding ElementName=pdfViewer, Path=SearchPreviousCommand}" ></Button>
 {% endhighlight %}
 {% endtabs %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: Performance | SfChart | uwp | Syncfusion
 description: performance
-platform: wpf
+platform: uwp
 control: SfChart
 documentation: ug
 ---

@@ -11,7 +11,7 @@ documentation: ug
 
 `SfCalendar` allows to customize the first day of the week and Day name display mode.
 
-## Customize first day of week
+## Customize First Day of Week
 
 First day of week is changeable in SfCalendar. It is set using the property `FirstDayOfWeek`. Refresh method can be used to refresh the layout when setting it in run time doesn’t reflected in UI.
 
@@ -45,7 +45,7 @@ calendar.FirstDayofWeek = System.DayOfWeek.Thursday
 ![](SfCalendar-images/SfCalendar-img13.jpeg)
 
 
-## Customize day name display mode
+## Customize Day Name Display Mode
 
 Day names in SfCalendar can be set to either abbreviated or full names using `DayNameDisplayMode` property. 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create the SfCalendar control.
 
-## Adding SfCalendar control
+## Adding SfCalendar Control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
@@ -59,7 +59,7 @@ Dim calendar As New SfCalendar()
 
 {% endtabs %}
 
-## Enabling navigation buttons
+## Enabling Navigation Buttons
 
 Set the property `ShowNavigationButton` to true for enabling the navigation buttons that allows switching between months.
 
@@ -91,7 +91,7 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 
 ![](SfCalendar-images/SfCalendar-img1.jpeg)
 
-## Culture support
+## Culture Support
 
 Month and day names of a region can be displayed in SfCalendar based on the Culture property.
 

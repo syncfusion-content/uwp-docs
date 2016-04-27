@@ -11,7 +11,7 @@ documentation: ug
 
 Dates can be selected in `SfCalendar` in several ways
 
-## Selecting a single date
+## Selecting a Single Date
 
 `SelectedDate` property is used to select a date in SfCalendar. 
 
@@ -45,7 +45,7 @@ calendar.SelectedDate = New Date(2015, 12, 15)
 
 {% endtabs %}
 
-## Selecting multiple dates
+## Selecting Multiple Dates
 
 `SelectedDates` property is used to select one or more dates in SfCalendar. Several range of dates can be selected using this property.
 
@@ -118,7 +118,7 @@ Multiple dates can be selected by
 
 `DateRange` represents a range of DateTime between a StartDate and EndDate. DateRange can also be a single date. 
 
-### Creating DateRange with single DateTime
+### Creating DateRange with Single DateTime
 
 Create an instance of DateRange with StartDate. So that it return a collection of DateTime with the StartDate.
 
@@ -138,7 +138,7 @@ Dim dateRange As New DateRange(New Date(2015, 12, 15))
 
 {% endtabs %}
 
-### Creating DateRange with multiple DateTime
+### Creating DateRange with Multiple DateTime
 
 Create an instance of DateRange with `StartDate` and `EndDate`. So that it return a collection of DateTime between these two dates.
 
@@ -158,7 +158,7 @@ Dim dateRange As New DateRange(New Date(2015, 12, 15), New Date(2015, 12, 17))
 
 {% endtabs %}
 
-## Date selection mode
+## Date Selection Mode
 
 `SelectionMode` property determines whether single or multiple dates can be selected in SfCalendar. The values of SelectionMode are 
 
@@ -192,7 +192,7 @@ calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single
 
 {% endtabs %}
 
-## Setting display date
+## Setting Display Date
 
 `DisplayDate` property is used highlight a date which is not a selected date.
 
@@ -227,7 +227,7 @@ calendar.DisplayDate = New Date(2015, 12, 19)
 {% endtabs %}
 
 
-## Notifying selected date changed
+## Notifying Selected Date Changed
 
 `SelectionChanged` event fires whenever a calendar day button is selected.
 

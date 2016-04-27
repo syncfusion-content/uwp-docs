@@ -11,7 +11,7 @@ documentation: ug
 
 Colors can be selected in `SfColorPickerPalette` by navigating between swatches
 
-## Selecting the color from palette
+## Selecting Color from palette
 
 `SelectedColor` property is used to get the selected color in `SfColorPickerPalette`. It is a read-only property. The return value is a Color, so ColorToBrushConverter is needed for bounding with brush properties:
 
@@ -61,7 +61,7 @@ testText.Foreground = New SolidColorBrush() With {.Color = colorPalette.Selected
 
 {% endtabs %}
 
-## Notifying the color selection change
+## Notifying Color Selection Change
 
 `SelectedColorChanged` event is fired whenever selected color is changed. Here is an example to change the foreground of a text block when selected color changes in `SfColorPalette`:
 
@@ -112,11 +112,11 @@ End Sub
 
 ![](SfColorPalette-images/SfColorPalette-img4.jpeg)
 
-## Naviagation
+## Navigation to Swatches
 
 Navigating to swatches can done by clicking on the back button or by programmatically.
 
-### Navigating back to swatches
+### Navigating Back to Swatches
 
 `GoBack` method is used to programmatically navigate backwards in `SfColorPalette`. `CanGoBack` property is used to check whether navigate back is possible or not.
 

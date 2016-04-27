@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with values
 
-## Retrieving computed value
+## Retrieving Computed Value
 
 `Value` property in the `SfCalculator` control is used to retrieve the computed value from the expressions in Calculator. It is a read-only decimal property. It can also be set to display a decimal value as computed value.
 
@@ -45,7 +45,7 @@ decimal value = calculator.Value;
 
 {% endtabs %}
 
-## Displaying a default value
+## Displaying a Default Value
 
 `DefaultValue` property is set to display a default value in the input pane of `SfCalculator` control. It is a decimal property.  
 
@@ -68,7 +68,7 @@ calculator.DefaultValue = 34.67D
 
 ![](SfCalculator-images/SfCalculator-img4.jpeg)
 
-## Showing text in Display Panel
+## Showing Text in Display Panel
 
 `DisplayText` property is set to display a text in the display pane of `SfCalculator` control.
 
@@ -99,7 +99,7 @@ calculator.DisplayText = "DisplayText"
 {% endtabs %}
 
 
-## Displaying an expression
+## Displaying an Expression
 
 `Expression` property is used to get the mathematical expression that produced the evaluated value in `SfCalculator`. `Expression` can also set to any string property but it is not evaluated to produce result. It is just displayed in the pane.
 

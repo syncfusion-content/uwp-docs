@@ -61,7 +61,7 @@ By default the date format in month cells will be displayed as date (for example
 
 In Schedule MajorTick Lines are used to displays the time as the hours, similarly MinorTick lines in Schedule are used to displays the time as the minutes. Major and Minor tick line can be customized by using the following properties.
 
->**Note:-TimeLine customization is only applicable in day, week , workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
+>**Note:-TimeLine customization is only applicable in day, week , workweek and timeline views in windows and for Windows Phone it is applicable for day and timeline views.**
 
 #### Time Format  
 
@@ -197,7 +197,7 @@ The current time/Day can be indicated by setting **CurrentTimeIndicatorVisibilit
 
 The CurrentTimeIndicator is displayed only when the **CurrentTimeIndicatorVisibility** property is set to true. The default value of **CurrentTimeIndicatorVisibility** property is collapsed.
 
->**Note:-CurrentTimeIndicator is only applicable in day,week,workweek and timeline views in windows,and for windowsphone it is applicable for day and timeline views.**
+>**Note:-CurrentTimeIndicator is only applicable in day,week,workweek and timeline views in windows,and for Windows Phone it is applicable for day and timeline views.**
 
 {% tabs %}
 {% highlight xaml %}
@@ -226,7 +226,7 @@ The CurrentTimeIndicator is displayed only when the **CurrentTimeIndicatorVisibi
 
 Schedule allows you to differentiate the Business hours with non-Working hour’s timeslot by highlighting with different colors. 
 
->**Note:-Non-Working Hour TimeSlot customization is only applicable in day,week,workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
+>**Note:-Non-Working Hour TimeSlot customization is only applicable in day,week,workweek and timeline views in windows and for Windows Phone it is applicable for day and timeline views.**
 
 ##### Enabling Non-Working Hours and Days
 
@@ -267,7 +267,7 @@ The Work start and end hour of day can be declared by using the **WorkStartHour*
 
 The Non-Working Days of the Week can be set using the property **NonWorkingDays**. The NonWorkingDays is string type, the default value of this property is “Sunday,Saturday”.
 
->**Note:-Non-Working days customization is only applicable in day,week,workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
+>**Note:-Non-Working days customization is only applicable in day,week,workweek and timeline views in windows and for Windows Phone it is applicable for day and timeline views.**
 
 {% tabs %}
 {% highlight xaml %}
@@ -311,7 +311,7 @@ NonWorkingDateCollection property allows you to add the Non-Working Days of the 
 
 To hide non-working hours in the schedule, the **ShowNonWorkingHours** property in the schedule must be set as false. The working hours specified using the WorkStartHour and WorkEndHour properties are simply shown in the schedule without showing non-working hours.
 
->**Note:-Hiding-Non-Working _hour is only applicable in day,week,workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
+>**Note:-Hiding-Non-Working _hour is only applicable in day,week,workweek and timeline views in windows and for Windows Phone it is applicable for day and timeline views.**
 
 {% tabs %}
 {% highlight xaml %}
@@ -345,7 +345,7 @@ To hide non-working hours in the schedule, the **ShowNonWorkingHours** property 
 
 For a particular Start and End time the selected Timeslot can be hidden by using **CollapsedHours** property of SfSchedule and you can differentiated Collapsed Hour Timeslot by using its Background property.
 
->**Note:-Hiding TimeSlot customization is only applicable in day,week,workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
+>**Note:-Hiding TimeSlot customization is only applicable in day,week,workweek and timeline views in windows and for Windows Phone it is applicable for day and timeline views.**
 
 {% tabs %}
 
@@ -380,7 +380,7 @@ For a particular Start and End time the selected Timeslot can be hidden by using
 
 A particular Start and End timeslot can be blocked by setting the NonAccessibleBlocks property collection. And the corresponding block can be highlighted with different color and label by using Background and Label property of NonAccessibleBlock correspondingly. 
 
->**Note:-NonAccessible block is only applicable in day,week,workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
+>**Note:-NonAccessible block is only applicable in day,week,workweek and timeline views in windows and for Windows Phone it is applicable for day and timeline views.**
 
 {% tabs %}
 {% highlight xaml %}
@@ -421,7 +421,7 @@ In the day, week, work week, and time line views, the color of major lines can b
 
 In the month view, the horizontal and vertical line strokes can be customized by using the **MonthViewLineStroke** property.
 
->**Note:-Stroke customization is only applicable in day,week,workweek and timeline views in windows and for wIndowsphone it is applicable for day and timeline views.**
+>**Note:-Stroke customization is only applicable in day,week,workweek and timeline views in windows and for Windows Phone it is applicable for day and timeline views.**
 
 **Property Table**
 

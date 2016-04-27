@@ -11,7 +11,7 @@ documentation: ug
 
 `SfCalendar` provides support for making dates inactive within a range (or) selective dates. It can be achieved by the properties `VisibleMinDate`, `VisibleMaxDate` and `VisibleDates`.
 
-## Setting minimum visible date
+## Setting Minimum Visible Date
 
 `VisibleMinDate` property is used to specify the minimum date in range.
 
@@ -45,7 +45,7 @@ calendar.VisibleMinDate = New Date(2015, 12, 10)
 ![](SfCalendar-images/SfCalendar-img9.jpeg)
 
 
-## Setting maximum visible date
+## Setting Maximum Visible Date
 
 `VisibleMaxDate` property is used to specify the maximum date in range
 
@@ -78,7 +78,7 @@ calendar.VisibleMaxDate = New Date(2015, 12, 15)
 
 ![](SfCalendar-images/SfCalendar-img10.jpeg)
 
-## Setting visible dates
+## Setting Visible Dates
 
 `VisibleDates` property is used to specify the active dates when they are not continuous and cannot be specified with a start and end date.
 
