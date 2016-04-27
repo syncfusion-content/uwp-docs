@@ -71,7 +71,7 @@ Syncfusion.SfShared.UWP</td></tr>
 <td>
 SfRichTextBoxAdv</td><td>
 Syncfusion.SfRichTextBoxAdv.UWP</td><td>
-Syncfusion.DocIO.UWP</br></br>Syncfusion.SfRadialMenu.UWP</br></br>Syncfusion.SfShared.UWP</td></tr>
+Syncfusion.OfficeChart.UWP</br>Syncfusion.DocIO.UWP</br>Syncfusion.SfRadialMenu.UWP</br>Syncfusion.SfShared.UWP</td></tr>
 <tr>
 <td>
 SfCalculator</td><td>
@@ -206,7 +206,7 @@ Syncfusion.SfShared.UWP</td></tr>
 <td>
 DocIO</td><td>
 Syncfusion.DocIO.UWP</td><td>
-</td></tr>
+Syncfusion.OfficeChart.UWP</br></td></tr>
 <tr>
 <td>
 SfPdfViewer</td><td>
