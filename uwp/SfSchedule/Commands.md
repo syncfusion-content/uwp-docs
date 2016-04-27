@@ -16,7 +16,6 @@ Operations that are done by context menu can also be performed using Schedule co
 * Deleting appointment
 * Copying appointment
 * Pasting appointment
-* Drag and drop appointment
 
 ## AddNewCommand
 
@@ -59,12 +58,4 @@ By triggering **PasteCommand** of ScheduleCommands, last copied schedule appoint
 
 {% endhighlight %}
 
-## DragAndDropCommand
 
-By triggering **DragAndDropCommand** of ScheduleCommands, the last selected appointment can be moved to drag drop and resize mode, without using context menu. 
-
-{% highlight c# %}
-
-    ScheduleCommands.DragAndDropCommand.Execute(this.Schedule);
-
-{% endhighlight %}

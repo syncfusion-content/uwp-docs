@@ -35,6 +35,14 @@ calendar.ShowNavigationButton = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim calendar As New SfCalendar()
+
+calendar.ShowNavigationButton = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfCalendar-images/SfCalendar-img12.jpeg)
@@ -53,6 +61,12 @@ calendar.PreviousMonth();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calendar.PreviousMonth()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -65,6 +79,12 @@ Month navigation can also be done programmatically by invoking `NextMonth` metho
 {% highlight C# %}
 
 calendar.NextMonth();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+calendar.NextMonth()
 
 {% endhighlight %}
 
@@ -97,6 +117,15 @@ private void calendar_PreviousScrollButtonClicked(object sender, SelectionChange
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub calendar_PreviousScrollButtonClicked(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Notifying the next button click
@@ -122,6 +151,15 @@ private void calendar_NextScrollButtonClicked(object sender, SelectionChangedEve
 {
 
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub calendar_NextScrollButtonClicked(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+
+
+End Sub
 
 {% endhighlight %}
 

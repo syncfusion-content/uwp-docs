@@ -89,6 +89,14 @@ tabControl.ContentTransitions.Add(new EntranceThemeTransition() { FromHorizontal
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tabControl.ContentTransitions = New Windows.UI.Xaml.Media.Animation.TransitionCollection()
+
+tabControl.ContentTransitions.Add(New EntranceThemeTransition() With {.FromHorizontalOffset = 100.0})
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## TabControlHorizontalTemplate

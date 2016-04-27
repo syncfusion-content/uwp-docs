@@ -59,6 +59,22 @@ tabControl.Items.Add(new SfTabItem());
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim tabControl As New SfTabControl()
+
+tabControl.Items.Add(New SfTabItem())
+
+tabControl.Items.Add(New SfTabItem())
+
+tabControl.Items.Add(New SfTabItem())
+
+tabControl.Items.Add(New SfTabItem())
+
+tabControl.Items.Add(New SfTabItem())
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Populating-Items-images/Populating-Items-img1.jpeg)
@@ -101,6 +117,20 @@ tabControl.Items.Add(new SfTabItem() { Header = "Niko "});
 tabControl.Items.Add(new SfTabItem() { Header = "James " });
 
 tabControl.Items.Add(new SfTabItem() { Header = "Carl "});
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim tabControl As New SfTabControl()
+
+tabControl.Items.Add(New SfTabItem() With {.Header = "Paul Vent"})
+
+tabControl.Items.Add(New SfTabItem() With {.Header = "Niko "})
+
+tabControl.Items.Add(New SfTabItem() With {.Header = "James "})
+
+tabControl.Items.Add(New SfTabItem() With {.Header = "Carl "})
 
 {% endhighlight %}
 
@@ -149,6 +179,32 @@ tabControl.Items.Add(new SfTabItem() { Header = "Carl" ,Content = "Description a
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim tabControl As New SfTabControl()
+
+tabControl.Items.Add(New SfTabItem() With {
+	.Header = "Paul Vent",
+	.Content = "Description about Paul Vent"
+})
+
+tabControl.Items.Add(New SfTabItem() With {
+	.Header = "Niko",
+	.Content = "Description about Niko "
+})
+
+tabControl.Items.Add(New SfTabItem() With {
+	.Header = "James",
+	.Content = "Description about James "
+})
+
+tabControl.Items.Add(New SfTabItem() With {
+	.Header = "Carl",
+	.Content = "Description about Carl "
+})
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -180,6 +236,19 @@ public string Description { get; set; }
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class Employee
+
+
+Public Property Name() As String
+
+Public Property Description() As String
+
+End Class
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -205,6 +274,25 @@ public List<Employee> Employees
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private employees_Renamed As List(Of Employee)
+
+Public Property Employees() As List(Of Employee)
+
+
+  Get
+	  Return employees_Renamed
+  End Get
+
+  Set(ByVal value As List(Of Employee))
+	  employees_Renamed = value
+  End Set
+
+End Property
+
+{% endhighlight %}
+
 {% endtabs %}
 
 3.Populate the collection
@@ -223,6 +311,32 @@ Employees.Add(new Employee() { Name = "Carl", Description = "Description about C
 
 Employees.Add(new Employee() { Name = "Niko", Description = "Description about Niko" });
 
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Employees = New List(Of Employee)()
+
+Employees.Add(New Employee() With {
+	.Name = "James",
+	.Description = "Description about James"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Linda",
+	.Description = "Description about Linda"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Carl",
+	.Description = "Description about Carl"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Niko",
+	.Description = "Description about Niko"
+})
 
 {% endhighlight %}
 

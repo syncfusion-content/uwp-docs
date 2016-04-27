@@ -21,7 +21,7 @@ To execute SampleBrowser, select the corresponding product and click “RUN LOCA
 ![](Featured-Samples_images/Featured-Samples_img2.jpeg)
 
 
-## SampleBorwser
+## SampleBrowser
 
 Sample Browser is available under following folder location:
 

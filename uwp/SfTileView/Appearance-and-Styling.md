@@ -45,6 +45,12 @@ tileView.ItemHeight = 50.0;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tileView.ItemHeight = 50.0
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
@@ -82,6 +88,12 @@ tileView.ItemHeight = 50.0;
 {% highlight C# %}
 
 tileView.ItemWidth = 100.0;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+tileView.ItemWidth = 100.0
 
 {% endhighlight %}
 

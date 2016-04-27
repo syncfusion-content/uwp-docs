@@ -44,6 +44,12 @@ carousel.SelectedIndex = 2;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.SelectedIndex = 2
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfCarousel-images/SfCarousel-img7.jpeg)
@@ -83,6 +89,12 @@ carousel.SelectedItem = item3;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.SelectedItem = item3
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfCarousel-images/SfCarousel-img8.jpeg)
@@ -96,6 +108,12 @@ carousel.SelectedItem = item3;
 {% highlight C# %}
 
 carousel.MoveNext();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+carousel.MoveNext()
 
 {% endhighlight %}
 
@@ -113,11 +131,17 @@ carousel.MovePrevious();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+carousel.MovePrevious()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Customizing the selected item
 
-`SelecteItemTemplate` property is used to apply a template for the selected item
+`SelectedItemTemplate` property is used to apply a template for the selected item
 
 ## Refresh the layout
 

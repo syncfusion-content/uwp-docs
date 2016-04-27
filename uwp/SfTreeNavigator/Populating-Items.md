@@ -55,6 +55,22 @@ treeNavigator.Items.Add(new SfTreeNavigatorItem());
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim treeNavigator As New SfTreeNavigator()
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem())
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem())
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem())
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem())
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem())
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Populating-Items-images/Populating-Items-img1.jpeg)
@@ -105,6 +121,22 @@ Header = "WinRT"});
 
 treeNavigator.Items.Add(new SfTreeNavigatorItem () { 
 Header = "Universal"});
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim treeNavigator As New SfTreeNavigator()
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "WPF"})
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Silverlight"})
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Windows Phone"})
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "WinRT"})
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Universal"})
 
 {% endhighlight %}
 
@@ -181,6 +213,30 @@ Header = "Universal"});
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim treeNavigator As New SfTreeNavigator()
+
+Dim WPF As New SfTreeNavigatorItem() With {.Header = "WPF"}
+
+WPF.Items.Add(New SfTreeNavigatorItem() With {.Header = "Chart"})
+
+WPF.Items.Add(New SfTreeNavigatorItem() With {.Header = "Grid"})
+
+WPF.Items.Add(New SfTreeNavigatorItem() With {.Header = "Tools"})
+
+treeNavigator.Items.Add(WPF)
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Silverlight"})
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Windows Phone"})
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "WinRT"})
+
+treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Universal"})
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Populating-Items-images/Populating-Items-img3.jpeg)
@@ -244,6 +300,58 @@ set { models = value; }
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class TreeModel
+	
+	Inherits NotificationObject
+
+Public Sub New()
+
+
+Models = New ObservableCollection(Of TreeModel)()
+
+End Sub
+
+Private header_Renamed As String
+
+Public Property Header() As String
+
+
+Get
+	Return header_Renamed
+End Get
+
+Set(ByVal value As String)
+
+
+header_Renamed = value
+
+RaisePropertyChanged("Header")
+
+End Set
+
+End Property
+
+Private models_Renamed As ObservableCollection(Of TreeModel)
+
+Public Property Models() As ObservableCollection(Of TreeModel)
+
+
+Get
+	Return models_Renamed
+End Get
+
+Set(ByVal value As ObservableCollection(Of TreeModel))
+	models_Renamed = value
+End Set
+
+End Property
+
+End Class
+
+{% endhighlight %}
+
 {% endtabs %}
 
 2.Create a collection of model
@@ -263,6 +371,25 @@ get { return models; }
 set { models = value; }
 
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private models_Renamed As List(Of TreeModel)
+
+Public Property Models() As List(Of TreeModel)
+
+
+Get
+	Return models_Renamed
+End Get
+
+Set(ByVal value As List(Of TreeModel))
+	models_Renamed = value
+End Set
+
+End Property
 
 {% endhighlight %}
 
@@ -300,6 +427,32 @@ Models.Add(metroStudio);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Sub New()
+
+Models = New List(Of TreeModel)()
+
+Dim winrt As New TreeModel() With {.Header = "WinRT (XAML)"}
+
+Dim metroStudio As New TreeModel() With {.Header = "Metro Studio"}
+
+Dim winrt_chart As New TreeModel() With {.Header = "Chart"}
+
+Dim winrt_tools As New TreeModel() With {.Header = "Tools"}
+
+winrt.Models.Add(winrt_chart)
+
+winrt.Models.Add(winrt_tools)
+
+Models.Add(winrt)
+
+Models.Add(metroStudio)
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 4.Set the DataContext for control and bind the Models collection to `ItemsSource` property of `SfTreeNavigator` control
@@ -314,7 +467,7 @@ Models.Add(metroStudio);
 
 {% endtabs %}
 
-Treenavigator items need a template to render so `SfTreeNavigator` control is populated as follows:
+TreeNavigator items need a template to render so `SfTreeNavigator` control is populated as follows:
 
 ![](Populating-Items-images/Populating-Items-img4.jpeg)
 
@@ -348,7 +501,7 @@ Header can be displayed by setting ItemTemplate. Setting DataTemplate does not a
 
 ### Adding SubItems
 
-Subitems can be viewed only if the item template is HierarchicalDataTemplate rather than DataTemplate. HierarchicalDataTemplate class is available in Syncfusion.UI.Xaml.Primitives namespace.
+Sub-items can be viewed only if the item template is HierarchicalDataTemplate rather than DataTemplate. HierarchicalDataTemplate class is available in Syncfusion.UI.Xaml.Primitives namespace.
 
 {% tabs %}
 

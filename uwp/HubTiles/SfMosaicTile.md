@@ -55,6 +55,18 @@ Create a Universal Windows project in Visual Studio and refer to the following a
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfMosaicTile mosaicTile = new SfMosaicTile();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim mosaicTile As New SfMosaicTile()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Adding image list to the tile 
@@ -121,6 +133,12 @@ Set the properties Header, ImageList as given below:
 {% highlight C# %}
 
 mosaicTile.Header = "Mosaic Tile";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+mosaicTile.Header = "Mosaic Tile"
 
 {% endhighlight %}
 
@@ -217,6 +235,38 @@ mosaicTile.ImageList.Add("Assets/emp9.png");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+mosaicTile.ImageList = New ImageList()
+
+mosaicTile.ImageList.Add("Assets/emp10.png")
+
+mosaicTile.ImageList.Add("Assets/emp11.png")
+
+mosaicTile.ImageList.Add("Assets/emp12.png")
+
+mosaicTile.ImageList.Add("Assets/emp13.png")
+
+mosaicTile.ImageList.Add("Assets/emp1.png")
+
+mosaicTile.ImageList.Add("Assets/emp2.png")
+
+mosaicTile.ImageList.Add("Assets/emp3.png")
+
+mosaicTile.ImageList.Add("Assets/emp4.png")
+
+mosaicTile.ImageList.Add("Assets/emp5.png")
+
+mosaicTile.ImageList.Add("Assets/emp6.png")
+
+mosaicTile.ImageList.Add("Assets/emp7.png")
+
+mosaicTile.ImageList.Add("Assets/emp8.png")
+
+mosaicTile.ImageList.Add("Assets/emp9.png")
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Setting ImageSource
@@ -257,6 +307,29 @@ mosaicTile.BitmapImageList = list;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Sub New()
+
+
+Me.InitializeComponent()
+
+Dim list As New BitmapImageList()
+
+For i As Integer = 1 To 13
+
+list.Add(New Image() With {
+	.Source = New BitmapImage() With {.UriSource = New Uri("ms-appx:///Assets/emp" & i & ".png", UriKind.Absolute)}
+})
+Next i
+
+mosaicTile.BitmapImageList = list
+
+End Sub
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfMosaicTile-images/SfMosaicTile-img5.jpeg)
@@ -270,6 +343,12 @@ Image urls can be checked for existence using CheckForExistence method before ad
 {% highlight C# %}
 
 mosaicTile.CheckForExistence("Assets/emp1.png");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+mosaicTile.CheckForExistence("Assets/emp1.png")
 
 {% endhighlight %}
 
@@ -297,6 +376,12 @@ mosaicTile.Interval = TimeSpan.FromSeconds(5);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+mosaicTile.Interval = TimeSpan.FromSeconds(5)
+
+{% endhighlight %}
+
 {% endtabs %}
 
-Flip effect customization, tile click & ommand, pausing and resuming animation, AccentBrush, TitleStyle topics are available under HubTileBase section.
+Flip effect customization, tile click & command, pausing and resuming animation, AccentBrush, TitleStyle topics are available under HubTileBase section.

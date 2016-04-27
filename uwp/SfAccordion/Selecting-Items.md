@@ -100,6 +100,40 @@ selectedIndices.Text = "SelectedIndices are : " + indices;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Option Infer On
+
+Private Sub accordion_SelectedItemsChanged(ByVal sender As Object, ByVal e As System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+
+
+Dim items As String = String.Empty
+
+Dim indices As String = String.Empty
+
+For Each item In accordion.SelectedItems
+
+items &= (TryCast(item, SfAccordionItem)).Header & " , "
+Next item
+
+For Each item In accordion.SelectedIndices
+
+indices &= item & " , "
+Next item
+
+selectedItem.Text = "SelectedItem is : " & (TryCast(accordion.SelectedItem, SfAccordionItem)).Header
+
+selectedIndex.Text = "SelectedIndex is : " & accordion.SelectedIndex
+
+selectedItems.Text = "SelectedItems are : " & items
+
+selectedIndices.Text = "SelectedIndices are : " & indices
+
+End Sub
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Selecting-Items-images/Selecting-Items-img1.jpeg)
@@ -136,9 +170,22 @@ Content = "Description about Linda" , IsSelected = true });
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim accordion As New SfAccordion()
+
+accordion.Items.Add(New SfAccordionItem() With {
+	.Header = "Linda",
+	.Content = "Description about Linda",
+	.IsSelected = True
+})
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
-Here is an example showing the behavior of this property by binding SfAccordionItem.IsSelected property to CheckBox.IsChecked property in Twoway.
+Here is an example showing the behavior of this property by binding SfAccordionItem.IsSelected property to CheckBox.IsChecked property in Two-way.
 
 {% tabs %}
 
@@ -205,6 +252,12 @@ accordion.SelectAll();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+accordion.SelectAll()
+
+{% endhighlight %}
+
 {% endtabs %}
  
 ## Unselect All Items
@@ -216,6 +269,12 @@ accordion.SelectAll();
 {% highlight C# %}
 
 accordion.UnselectAll();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+accordion.SelectAll()
 
 {% endhighlight %}
 
@@ -361,6 +420,62 @@ newItems.Text = "NewItems are : " + newitems;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Option Infer On
+
+Private Sub accordion_SelectedItemsChanged(ByVal sender As Object, ByVal e As System.Collections.Specialized.NotifyCollectionChangedEventArgs)
+
+
+Dim olditems As String = String.Empty
+
+Dim newitems As String = String.Empty
+
+If e.OldItems IsNot Nothing Then
+
+
+For Each item In e.OldItems
+
+olditems &= (TryCast(item, SfAccordionItem)).Header & " , "
+Next item
+
+
+Else
+
+olditems = "null"
+End If
+
+If e.NewItems IsNot Nothing Then
+
+
+For Each item In e.NewItems
+
+newitems &= (TryCast(item, SfAccordionItem)).Header & " , "
+Next item
+
+
+Else
+
+newitems = "null"
+End If
+
+oldStartingIndex.Text = "OldStartingIndex is : " & e.OldStartingIndex
+
+newStartingIndex.Text = "NewStartingIndex is : " & e.NewStartingIndex
+
+selectedIndex.Text = "SelectedIndex is : " & accordion.SelectedIndex
+
+selectedItem.Text = "SelectedItem is : " & (If(accordion.SelectedItem Is Nothing, "null", (TryCast(accordion.SelectedItem, SfAccordionItem)).Header))
+
+oldItems.Text = "OldItems are : " & olditems
+
+newItems.Text = "NewItems are : " & newitems
+
+End Sub
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 Expand the item with header Windows Phone
@@ -397,6 +512,14 @@ private void Selected(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub Selected(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Notifying an item un-selection
@@ -423,6 +546,15 @@ private void Unselected(object sender, RoutedEventArgs e)
 {
     
 }
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Private Sub Unselected(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+
+End Sub
 
 {% endhighlight %}
 

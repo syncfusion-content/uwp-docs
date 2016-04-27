@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create a long list of expandable items using SfAccordion control.
 
-## Adding SfAccordion control
+## Adding SfAccordion Control
 
 Create a Universal Windows project in Visual Studio and refer to the following assemblies.
 
@@ -45,9 +45,21 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endhighlight %}
 
+{% highlight C# %}
+
+ SfAccordion accordion = new SfAccordion();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim accordion As New SfAccordion()
+
+{% endhighlight %}
+
 {% endtabs %}
 
-## Adding children to SfAccordion control
+## Adding Children to SfAccordion Control
 
 `SfAccordion` accepts `SfAccordionItem` as its children when added directly. Here five SfAccordionItems are added as the children of the SfAccordion.
 
@@ -73,7 +85,45 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-## Setting header for Accordion items
+{% tabs %}
+
+{% highlight C# %}
+
+  SfAccordion accordion = new SfAccordion();
+
+  accordion.Items.Add(new SfAccordionItem());
+
+  accordion.Items.Add(new SfAccordionItem());
+
+  accordion.Items.Add(new SfAccordionItem());
+
+  accordion.Items.Add(new SfAccordionItem());
+
+  accordion.Items.Add(new SfAccordionItem());
+
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  Dim accordion As New SfAccordion()
+
+  accordion.Items.Add(New SfAccordionItem())
+
+  accordion.Items.Add(New SfAccordionItem())
+
+  accordion.Items.Add(New SfAccordionItem())
+
+  accordion.Items.Add(New SfAccordionItem())
+
+  accordion.Items.Add(New SfAccordionItem())
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Setting Header for Accordion Items
 
 SfAccordionItem has `Header` property to set header for the accordion items. Set the header as “WinRT” and repeat the same procedure for remaining children with the value as “Windows Phone”, “Silverlight”, “WPF” and “Windows Forms”.
 
@@ -99,7 +149,45 @@ SfAccordionItem has `Header` property to set header for the accordion items. Set
 
 {% endtabs %}
 
-## Applying template for item header
+{% tabs %}
+
+{% highlight C# %}
+
+SfAccordion accordion = new SfAccordion();
+
+accordion.Items.Add(new SfAccordionItem() { Header = "WPF" });
+
+accordion.Items.Add(new SfAccordionItem() { Header = "Silverlight" });
+
+accordion.Items.Add(new SfAccordionItem() { Header = "WinRT" });
+
+accordion.Items.Add(new SfAccordionItem() { Header = "Windows Phone" });
+
+accordion.Items.Add(new SfAccordionItem() { Header = "Universal" });
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim accordion As New SfAccordion()
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "WPF"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Silverlight"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "WinRT"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Windows Phone"})
+
+accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Overview-images/GettingStarted_image1.png)
+
+## Applying Template for Item Header
 
 SfAccordion provides `HeaderTemplate` property that allows to apply a common data template for all accordion items header.
 
@@ -127,7 +215,7 @@ SfAccordion provides `HeaderTemplate` property that allows to apply a common dat
 
 {% endtabs %}
 
-## Setting content for children
+## Setting Content for Children
 
 Any object can be set as the content of `SfAccordionItem`. SfAccordionItem.Content property helps to set the content.
 
@@ -438,3 +526,5 @@ FontSize="12"/>
 {% endhighlight %}
 
 {% endtabs %}
+
+![](Overview-images/GettingStarted-image2.png)

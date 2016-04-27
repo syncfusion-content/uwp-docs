@@ -96,6 +96,12 @@ tileItem1.State = Syncfusion.UI.Xaml.Controls.Layout.TileViewItemState.Maximized
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tileItem1.State = Syncfusion.UI.Xaml.Controls.Layout.TileViewItemState.Maximized
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Dealing-with-item-state-images/Dealing-with-item-state-img1.jpeg)
@@ -112,6 +118,12 @@ SfTileViewItem maximizedItem = tileView.MaximizedItem;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim maximizedItem As SfTileViewItem = tileView.MaximizedItem
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Retrieving the Minimized items
@@ -123,6 +135,12 @@ SfTileViewItem maximizedItem = tileView.MaximizedItem;
 {% highlight C# %}
 
 ObservableCollection<object> minimizedItems = tileView.MinimizedItems;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim minimizedItems As ObservableCollection(Of Object) = tileView.MinimizedItems
 
 {% endhighlight %}
 

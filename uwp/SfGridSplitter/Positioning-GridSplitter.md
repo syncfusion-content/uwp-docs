@@ -101,5 +101,11 @@ gridSplitter.MoveSplitter(30);
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+gridSplitter.MoveSplitter(30)
+
+{% endhighlight %}
+
 {% endtabs %}
 

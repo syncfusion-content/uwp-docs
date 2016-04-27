@@ -48,6 +48,12 @@ tabControl.TabStripPlacement = Syncfusion.UI.Xaml.Controls.Navigation.TabStripPl
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tabControl.TabStripPlacement = Syncfusion.UI.Xaml.Controls.Navigation.TabStripPlacement.Bottom
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img1.jpeg)
@@ -90,12 +96,18 @@ tabControl.ShowTabstripMenu = true;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tabControl.ShowTabstripMenu = True
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img2.jpeg)
 
 
-### Adding custom items to Tabstrip menu
+### Adding custom items to TabStrip menu
 
 Custom menu items can be added to the tab strip menu using TabStripMenuItems property as follows:
 
@@ -133,12 +145,21 @@ tabControl.TabstripMenuItems.Add("Custom");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+tabControl.TabstripMenuItems = New List(Of Object)()
+
+tabControl.TabstripMenuItems.Add("Custom")
+
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img3.jpeg)
 
 
-### Customizing Tabstrip menu item
+### Customizing TabStrip menu item
 
 Tab strip menu items can be customized using the TabStripMenuItemTemplate property. 
 

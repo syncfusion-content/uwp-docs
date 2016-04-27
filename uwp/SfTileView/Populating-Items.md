@@ -59,6 +59,22 @@ tileView.Items.Add(new SfTileViewItem());
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim tileView As New SfTileView()
+
+tileView.Items.Add(New SfTileViewItem())
+
+tileView.Items.Add(New SfTileViewItem())
+
+tileView.Items.Add(New SfTileViewItem())
+
+tileView.Items.Add(New SfTileViewItem())
+
+tileView.Items.Add(New SfTileViewItem())
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Setting content for items
@@ -110,6 +126,22 @@ Content = "Description about Paul "});
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim tileView As New SfTileView()
+
+tileView.Items.Add(New SfTileViewItem() With {.Content = "Description about Paul Vent"})
+
+tileView.Items.Add(New SfTileViewItem() With {.Content = "Description about Niko "})
+
+tileView.Items.Add(New SfTileViewItem() With {.Content = "Description about James "})
+
+tileView.Items.Add(New SfTileViewItem() With {.Content = "Description about Paul "})
+
+tileView.Items.Add(New SfTileViewItem() With {.Content = "Description about Paul "})
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Populating-Items-images/Populating-Items-img1.jpeg)
@@ -148,6 +180,66 @@ MaximizedContent="Description about Niko"/>
 
 {% endtabs %}
 
+{% tabs %}
+
+{% highlight C# %}
+
+SfTileView tileView = new SfTileView();
+
+tileView.Items.Add(new SfTileViewItem()
+{
+   Content = "PaulVent",
+   MaximizedContent = "Description about Paul"
+});
+
+tileView.Items.Add(new SfTileViewItem()
+{
+   Content = "James",
+   MaximizedContent="Description about James"
+});
+
+tileView.Items.Add(new SfTileViewItem()
+{
+   Content = "Carl",
+   MaximizedContent="Description about Carl"
+});
+
+tileView.Items.Add(new SfTileViewItem()
+{
+   Content = "Niko",
+   MaximizedContent="Description about Niko"
+});
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim tileView As New SfTileView()
+
+tileView.Items.Add(New SfTileViewItem() With {
+	.Content = "PaulVent",
+	.MaximizedContent = "Description about Paul"
+})
+
+tileView.Items.Add(New SfTileViewItem() With {
+	.Content = "James",
+	.MaximizedContent="Description about James"
+})
+
+tileView.Items.Add(New SfTileViewItem() With {
+	.Content = "Carl",
+	.MaximizedContent="Description about Carl"
+})
+
+tileView.Items.Add(New SfTileViewItem() With {
+	.Content = "Niko",
+	.MaximizedContent="Description about Niko"
+})
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Populating-Items-images/Populating-Items-img2.jpeg)
 
 ## Using ItemsSource
@@ -174,6 +266,19 @@ public string Description { get; set; }
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Public Class Employee
+
+
+Public Property Name() As String
+
+Public Property Description() As String
+
+End Class
+
+{% endhighlight %}
+
 {% endtabs %}
 
 2.Create a collection of model
@@ -196,6 +301,25 @@ set { employees = value; }
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private employees_Renamed As List(Of Employee)
+
+Public Property Employees() As List(Of Employee)
+
+
+Get
+	Return employees_Renamed
+End Get
+
+Set(ByVal value As List(Of Employee))
+	employees_Renamed = value
+End Set
+
+End Property
+
+{% endhighlight %}
+
 {% endtabs %}
 
 3.Populate the collection
@@ -213,6 +337,32 @@ Employees.Add(new Employee() { Name = "Linda", Description = "Description about 
 Employees.Add(new Employee() { Name = "Carl", Description = "Description about Carl" });
 
 Employees.Add(new Employee() { Name = "Niko", Description = "Description about Niko" });
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Employees = New List(Of Employee)()
+
+Employees.Add(New Employee() With {
+	.Name = "James",
+	.Description = "Description about James"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Linda",
+	.Description = "Description about Linda"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Carl",
+	.Description = "Description about Carl"
+})
+
+Employees.Add(New Employee() With {
+	.Name = "Niko",
+	.Description = "Description about Niko"
+})
 
 {% endhighlight %}
 

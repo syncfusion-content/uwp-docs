@@ -33,6 +33,14 @@ rating.Value = 2;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+rating.ItemsCount = 5
+
+rating.Value = 2
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Dealing-with-Value-and-PreviewValue-images/Dealing-with-Value-and-PreviewValue-img1.jpeg)
@@ -71,6 +79,15 @@ private void rating_ValueChanged(object sender, ValueChangedEventArgs e)
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Private Sub rating_ValueChanged(ByVal sender As Object, ByVal e As ValueChangedEventArgs)
+
+
+End Sub
+
+{% endhighlight %}
+
 {% endtabs %}
 
 
@@ -97,6 +114,16 @@ rating.ItemsCount = 5;
 rating.Value = 2;
 
 rating.IsReadOnly = true;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+rating.ItemsCount = 5
+
+rating.Value = 2
+
+rating.IsReadOnly = True
 
 {% endhighlight %}
 

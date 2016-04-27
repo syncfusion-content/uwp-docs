@@ -43,13 +43,25 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endtabs %}
 
-2.Now add the `SfSplitMosaicTile` control with a required optimal name using the included namespace
+2.Now add the `SfPulsingTile` control with a required optimal name using the included namespace
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<notification:SfSplitMosaicTile x:Name="splitMosaicTile">
+<notification:SfPulsingTile x:Name="pulsingTile">
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ SfPulsingTile pulsingTile = new SfPulsingTile();
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim pulsingTile As New SfPulsingTile()
 
 {% endhighlight %}
 
@@ -76,9 +88,39 @@ Set the image as Content of `SfPulsingTile` as given below:
 
 {% endtabs %}
 
+{% tabs %}
+
+{% highlight C# %}
+
+  SfPulsingTile puslingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile" };
+
+  puslingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   Dim puslingTile As New SfPulsingTile() With {
+	  .Width = 183,
+	  .Height = 173,
+	  .Header = "Pulsing tile"
+  }
+
+   puslingTile.Content = New Image() With {
+				.Source = New BitmapImage(New Uri("ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),
+				.Height=200,
+				.Stretch = Stretch.UniformToFill
+			}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](SfpulsingTile-images/SfpulsingTile-img1.jpeg)
+
 ### Applying zoom animation
 
-Adjusts the values of properties such as PulseScale, RadiusX and RadiuxY.
+Adjusts the values of properties such as PulseScale, RadiusX and RadiusY.
 
 
 {% tabs %}
@@ -96,6 +138,36 @@ Adjusts the values of properties such as PulseScale, RadiusX and RadiuxY.
        
 </notification:SfPulsingTile>
 
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+ SfPulsingTile puslingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile", RadiusX = 0, RadiusY = 0, PulseScale = 2};
+
+ puslingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+ Dim puslingTile As New SfPulsingTile() With {
+	 .Width = 183,
+	 .Height = 173,
+	 .Header = "Pulsing tile",
+	 .RadiusX = 0,
+	 .RadiusY = 0,
+	 .PulseScale = 2
+ }
+
+puslingTile.Content = New Image() With {
+				.Source = New BitmapImage(New Uri("ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),
+				.Height=200,
+				.Stretch = Stretch.UniformToFill}
+ 
 {% endhighlight %}
 
 {% endtabs %}
@@ -128,6 +200,12 @@ pulsingTile.Header = "Pulsing Tile";
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+pulsingTile.Header = "Pulsing Tile"
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](SfpulsingTile-images/SfpulsingTile-img4.jpeg)
@@ -147,6 +225,34 @@ Animation is performed on the content of pulsing tile regardless of its type. He
 HorizontalAlignment="Center"/>
 
 </notification:SfPulsingTile>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfPulsingTile puslingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile" };
+
+puslingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+Dim puslingTile As New SfPulsingTile() With {
+	.Width = 183,
+	.Height = 173,
+	.Header = "Pulsing tile"
+}
+
+puslingTile.Content = New Image() With {
+	.Source = New BitmapImage(New Uri("ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),
+	.Height=200,
+	.Stretch = Stretch.UniformToFill
+}
 
 {% endhighlight %}
 
@@ -185,6 +291,12 @@ pulsingTile.PulseScale = 1.2;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+pulsingTile.PulseScale = 1.2
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Pulse duration
@@ -212,6 +324,12 @@ pulsingTile.PulseScale = 1.2;
 {% highlight C# %}
 
 pulsingTile.PulseDuration = TimeSpan.FromSeconds(2);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+pulsingTile.PulseDuration = TimeSpan.FromSeconds(2)
 
 {% endhighlight %}
 
@@ -244,6 +362,12 @@ pulsingTile.RadiusX = 2.0;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+pulsingTile.RadiusX = 2.0
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Translation height
@@ -273,6 +397,12 @@ pulsingTile.RadiusY = 2.0;
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+pulsingTile.RadiusY = 2.0
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ### Translation duration
@@ -299,6 +429,12 @@ pulsingTile.RadiusY = 2.0;
 {% highlight C# %}
 
 pulsingTile.TranslationDuration = TimeSpan.FromSeconds(2);
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+pulsingTile.TranslationDuration = TimeSpan.FromSeconds(2)
 
 {% endhighlight %}
 

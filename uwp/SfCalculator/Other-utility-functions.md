@@ -7,11 +7,11 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Utilitiy Functions
+# Utility Functions
 
 Several utility functions are available in `SfCalculator` control.
 
-## Identifying the operation
+## Identifying the Operation
 
 This method is used to identify the mathematical operation based on the input string.
 
@@ -41,12 +41,20 @@ functionText.Text = "The function is: " + function.ToString();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+Dim [function] As CalculatorFunctions = calculator.CheckFunction("/")
+
+functionText.Text = "The function is: " & [function].ToString()
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Other-utility-functions-images/Other-utility-functions-img1.jpeg)
 
 
-## Clear the expression
+## Clear the Expression
 
 `Clear` function is used to clear both the expression and value in `SfCalculator`.
 
@@ -58,9 +66,15 @@ calculator.Clear();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calculator.Clear()
+
+{% endhighlight %}
+
 {% endtabs %}
 
-## Clear the value
+## Clear the Value
 
 `ClearEntry` function is used to clear the entered/computed value in `SfCalculator`.
 
@@ -72,9 +86,15 @@ calculator.ClearEntry();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calculator.ClearEntry()
+
+{% endhighlight %}
+
 {% endtabs %}
 
-## Clear and reset the expression
+## Clear and Reset the Expression
 
 `Reset` function is used to clear and reset the expression.
 
@@ -86,11 +106,17 @@ calculator.Reset();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calculator.Reset()
+
+{% endhighlight %}
+
 {% endtabs %}
 
-## Removing trailing zeroes
+## Removing Trailing Zeros
 
-`TrailingZeros` method is used to remove the trailing zeroes at the end of value.
+`TrailingZeros` method is used to remove the trailing zeros at the end of value.
 
 {% tabs %}
 
@@ -100,9 +126,15 @@ calculator.TrailingZeros();
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calculator.TrailingZeros()
+
+{% endhighlight %}
+
 {% endtabs %}
 
-## Change sepeartors based on culture
+## Change Separators based on Culture
 
 `SfCalculator` has Culture support that allows to have decimal separator symbols based on the culture.
 
@@ -124,8 +156,12 @@ calculator.Culture = new System.Globalization.CultureInfo("de-DE");
 
 {% endhighlight %}
 
+{% highlight VB %}
+
+calculator.Culture = New System.Globalization.CultureInfo("de-DE")
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ![](Other-utility-functions-images/Other-utility-functions-img2.jpeg)
-
-
