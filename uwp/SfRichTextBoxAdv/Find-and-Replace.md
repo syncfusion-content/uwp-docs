@@ -22,6 +22,8 @@ richTextBoxAdv.Selection.CharacterFormat.Bold = true;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The following code example demonstrates how to find all occurrences of a particular pattern of text in the document and highlighting the result.
 {% tabs %}
 {% highlight c# %}
