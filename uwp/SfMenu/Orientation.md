@@ -11,7 +11,7 @@ documentation: ug
 
 The `SfMenu` control can align its content vertically and horizontally by using the `Orientation` property of the `SfMenu`.
 
-## Change Orienatation of SfMenuItem
+## Change Orientation of SfMenuItem
 
 Items of `SfMenu` arranged horizontally, when the value of the `Orientation` property is set to Horizontal.
 

@@ -13,7 +13,7 @@ This section explains how to create a RGB color model picker using the `SfColorP
 
 ## Creating SfColorPicker Control
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 1. Syncfusion.SfColorPickers.UWP
 

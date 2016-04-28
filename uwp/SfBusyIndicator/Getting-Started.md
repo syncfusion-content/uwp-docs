@@ -14,7 +14,7 @@ This section explains how to create a visual representation indicating backgroun
 ## Adding SfBusyIndicator Control
 
 
-Create a Universal Windows project in Visual Studio and refer to the "Syncfusion.SfBusyIndicator.UWP" assembly.
+Create a Universal Windows Platform project in Visual Studio and refer to the "Syncfusion.SfBusyIndicator.UWP" assembly.
 
 1.Include the namespace for Syncfusion.SfBusyIndicator.UWP assembly in MainPage.xaml
 

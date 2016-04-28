@@ -12,7 +12,7 @@ This section explains how to create the SfDropDownButton control.
 
 ## Creating SfDropDownButton control
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 1. Syncfusion. SfInput.UWP
 2. Syncfusion.SfShared.UWP
