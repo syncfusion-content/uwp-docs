@@ -13,7 +13,7 @@ This section explains how to create SfDateTimeCombo control
 
 ## Add SfDateTimeCombo to an application
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfInput.UWP
 

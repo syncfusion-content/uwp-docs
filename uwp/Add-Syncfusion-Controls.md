@@ -19,7 +19,7 @@ The Syncfusion UWP controls can be added in a Visual Studio projects by using ei
 
 Syncfusion UI for UWP are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential UWP control through drag and drop from Toolbox. For example: SfTextBoxExt 
 
-1. Create a Universal Windows project in Visual Studio.
+1. Create a Universal Windows Platform project in Visual Studio.
 
 2. Find `SfTextBoxExt` by typing the text “SfTextBoxExt” in search box.
 
@@ -35,12 +35,12 @@ Syncfusion UI for UWP are added automatically to the Visual Studio Toolbox durin
 
 The following steps helps to add a required Essential UWP control through XAML Code, for example: SfTextBoxExt.
 
-1.Create a Universal Windows project in Visual Studio and refer the following assemblies.
+1.Create a Universal Windows Platform project in Visual Studio and refer the following assemblies.
 
  * Syncfusion.SfInput.UWP.dll
  * Syncfusion.SfShared.UWP.dll
 
-2.Include xml namespace for the above assemblies in MainPage.xaml.
+2.Include XML namespace for the above assemblies in MainPage.xaml.
 
 {% tabs %}
 	
@@ -77,7 +77,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 Syncfusion UI for UWP can added at runtime using C# / VB. The following steps helps to add required Essential UWP control through code. For example: SfTextBoxExt.
 
-1.Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+1.Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
  * Syncfusion.SfInput.UWP.dll
  * Syncfusion.SfShared.UWP.dll
