@@ -9,7 +9,7 @@ documentation: ug
 
 # SfPulsingTile
 
-`SfPulsingTile` control allows to create a tile similar to Music and Video hub tile in Windows phone. The content zooms in/out randomly with random translation in X and Y axis.
+`SfPulsingTile` control allows to create a tile similar to Music and Video hub tile in Windows Phone. The content zooms in/out randomly with random translation in X and Y axis.
 
 ## Features
 
@@ -21,7 +21,7 @@ This section explains how to create a Windows Phone “Music" tile using `SfPuls
 
 ### Adding SfSplitMosaicTile control
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfHubTile.UWP
 

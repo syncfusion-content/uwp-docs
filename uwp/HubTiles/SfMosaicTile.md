@@ -14,7 +14,7 @@ documentation: ug
 ## Features
 
 * Show images with flip transition effect 
-* Image collection can be either url or Image source
+* Image collection can be either URL or Image source
 
 ## Getting Started
 
@@ -150,11 +150,11 @@ mosaicTile.Header = "Mosaic Tile"
 
 ### Specifying BitmapImage or Image URLs
 
-`IsBitmapImageList` property is used to specify whether the image location is given as url or image source. Image sources are preferred when images are retrieved from folders like Downloads, Picture library, Video library, Document library and Music library.
+`IsBitmapImageList` property is used to specify whether the image location is given as URL or image source. Image sources are preferred when images are retrieved from folders like Downloads, Picture library, Video library, Document library and Music library.
 
 ### Adding Image URLs
 
-`ImageList` property is used to set a collection of image url that are to be displayed in tile. IsBitmapImageList property must be set to false while using image urls otherwise images does not appear in mosaic tile.
+`ImageList` property is used to set a collection of image URL that are to be displayed in tile. IsBitmapImageList property must be set to false while using image URLs otherwise images does not appear in mosaic tile.
 
 {% tabs %}
 
@@ -336,7 +336,7 @@ End Sub
 
 ## Checking image existence
 
-Image urls can be checked for existence using CheckForExistence method before adding to avoid duplicate images. This method returns true if the url already exists otherwise false.
+Image URLs can be checked for existence using CheckForExistence method before adding to avoid duplicate images. This method returns true if the URL already exists otherwise false.
 
 {% tabs %}
 

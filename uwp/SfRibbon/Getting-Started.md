@@ -13,7 +13,7 @@ This section explains you on how to add SfRibbon in your application.
 
 ## Add Ribbon
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfRibbon.UWP
 
