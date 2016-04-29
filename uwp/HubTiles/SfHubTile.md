@@ -23,7 +23,7 @@ This section explains how to create a Windows 8 Live Tile using `SfHubTile` cont
 
 ## Adding SfHubTile control
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfHubTile.UWP
 * Syncfusion.SfShared.UWP

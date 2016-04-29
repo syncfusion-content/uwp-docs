@@ -13,7 +13,7 @@ This section explains how to visualize hierarchal data in tree structure using `
 
 ## Adding SfTreeNavigator control
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfTreeNavigator.UWP
 * Syncfusion.SfShared.UWP

@@ -13,7 +13,7 @@ This section explains how to create a long list of expandable items using SfAcco
 
 ## Adding SfAccordion Control
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfAccordion.UWP
 

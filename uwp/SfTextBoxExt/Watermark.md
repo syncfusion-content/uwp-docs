@@ -30,7 +30,7 @@ Watermark="Enter names separated by comma (Ex : John, Kate)"/>
 
 ![](Watermark_images/Watermark_img1.png)
 
-N>  The Watermark property is of the object type so any framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
+N>  The Watermark property is of the object type so any Framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
 
 {% highlight xaml %}
 

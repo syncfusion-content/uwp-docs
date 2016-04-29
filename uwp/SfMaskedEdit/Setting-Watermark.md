@@ -28,7 +28,7 @@ Watermark property allows you to specify some information, when the text is empt
 
 ![](Watermark_images/Watermark_img1.png)
 
-N> The Watermark property is the object type. So, any framework element can be hosted as Watermark content.
+N> The Watermark property is the object type. So, any Framework element can be hosted as Watermark content.
 
 {% highlight xaml %}
 

@@ -13,7 +13,7 @@ This section explains how to create a group of visual symbols used for rating wi
 
 ## Adding SfRating control
 
-Create a Universal Windows project in Visual Studio and refer to the following assemblies.
+Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfInput.UWP
 * Syncfusion.SfShared.UWP
