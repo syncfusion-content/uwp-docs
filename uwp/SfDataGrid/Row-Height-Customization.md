@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Height Customization in SfDataGrid.
+title: Row Height customization in SfDataGrid.
 description: How to customize the row heights in SfDataGrid.
 platform: uwp
 control: SfDataGrid
