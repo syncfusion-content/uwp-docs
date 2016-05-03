@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Support to Interact with SfDataGrid.
-description: interactive features
+title: Interactive features of SfDataGrid.
+description: Interactive features of SfDataGrid | SfDataGrid | Row Header |ToolTip
 platform: UWP
 control: SfDataGrid
 documentation: ug
