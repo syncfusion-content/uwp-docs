@@ -29,7 +29,7 @@ dataGrid.ShowRowHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img1.png)
+![](Interactive-Features_images/InteractiveFeatures_img1.png)
 
 
 You can change the default width of the RowHeader by using `SfDataGrid.RowHeaderWidth` property.
@@ -82,7 +82,7 @@ You can display the corresponding rowindex in each RowHeader, by customizing the
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img2.png)
+![](Interactive-Features_images/InteractiveFeatures_img2.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DisplayRowIndex1237508699.zip).
@@ -136,7 +136,7 @@ You can change the CurrentRowIndicator in the RowHeader by customizing the contr
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img3.png)
+![](Interactive-Features_images/InteractiveFeatures_img3.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator(1)970786330.zip).
@@ -180,7 +180,7 @@ this.dataGrid.Columns["OrderID"].ShowToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img4.png)
+![](Interactive-Features_images/InteractiveFeatures_img4.png)
 
 
 N> `GridColumn.ShowToolTip` takes higher priority than `SfDataGrid.ShowToolTip`.
@@ -203,7 +203,7 @@ this.dataGrid.Columns["OrderID"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img5.png)
+![](Interactive-Features_images/InteractiveFeatures_img5.png)
 
 
 ### ToolTip Customization
@@ -231,7 +231,7 @@ You can customize the appearance of the ToolTip for particular column by setting
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img6.png)
+![](Interactive-Features_images/InteractiveFeatures_img6.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TemplateSample-844671609.zip). 
@@ -314,12 +314,12 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The below image refers the DefaultTemplate which is applied through ToolTipTemplateSelector.
 
-![](InteractiveFeatures_images/InteractiveFeatures_img7.png)
+![](Interactive-Features_images/InteractiveFeatures_img7.png)
 
 
 The below image refers the AlternateTemplate which is applied through ToolTipTemplateSelector.
 
-![](InteractiveFeatures_images/InteractiveFeatures_img8.png)
+![](Interactive-Features_images/InteractiveFeatures_img8.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipSample-394161722.zip).
@@ -349,7 +349,7 @@ this.dataGrid.AllowResizingColumns = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img9.png)
+![](Interactive-Features_images/InteractiveFeatures_img9.png)
 
 
 You can also resize the hidden column through the touch by setting the AllowResizingHiddenColumns by True. You have to press and hold the hidden line to resize the hidden column in touch.
@@ -373,7 +373,7 @@ this.dataGrid.AllowResizingHiddenColumns = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img10.png)
+![](Interactive-Features_images/InteractiveFeatures_img10.png)
 
 N> you can resize the column by dragging the bubbles on the Tool-Tip
 
@@ -399,6 +399,6 @@ this.dataGrid.AllowDraggingColumns = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](InteractiveFeatures_images/InteractiveFeatures_img11.png)
+![](Interactive-Features_images/InteractiveFeatures_img11.png)
 
 
