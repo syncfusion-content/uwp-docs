@@ -13,7 +13,7 @@ This section explains how to convey the task progress in an application using Sf
 
 ## Adding SfProgressBar Control
 
-Create a Universal Windows project in Visual Studio and refer to the “Syncfusion.SfProgressBar.UWP” assembly.
+Create a Universal Windows Platform project in Visual Studio and refer to the “Syncfusion.SfProgressBar.UWP” assembly.
 
 1.Include the namespace ”Syncfusion.UI.Xaml.Controls.Notification” for Syncfusion.SfProgressBar.UWP assembly in MainPage.xaml
 

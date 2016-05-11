@@ -77,7 +77,7 @@ This shows when something is increasing or decreasing at a steady rate. This is 
 
 The linear trend line will be calculated using the below formula:
  
-yValue=Intercept+Slope*xValue(where xValue is Xdata)
+yValue=Intercept+Slope*xValue(where xValue is underlying x value).
 
 The following is the code example of this trend line.
 
@@ -110,7 +110,7 @@ This trend line is used when there is a constant increasing or decreasing in val
 
 The linear trend line will be calculated using the below formula:
 
-(Intercept*Math.Exp(Slope*xValue)) (where xValue is Xdata)
+(Intercept*Math.Exp(Slope*xValue)) (where xValue is underlying x value).
 
 The following code example defines the exponential trendline.
 
@@ -145,7 +145,7 @@ This trend line is used for comparing multiple sets of data that increase at spe
 
 This will be calculates using the following formula:
 
-(Intercept*Math.Pow(xValue,Slope)) (Where xValue is Xdata)
+(Intercept*Math.Pow(xValue,Slope)) (Where xValue is underlying x value).
 
 The following code example explains how to define the power trendline.
 

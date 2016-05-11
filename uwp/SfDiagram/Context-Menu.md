@@ -53,12 +53,13 @@ Diagram.Menu.MenuItems.Add(menu);
 
 The default value of `Menu` property for Node and Connector is null.
 
-The following code example illustrates how to set ContextMenu and ContextMenuitems to Node.
+The following code example illustrates how to set ContextMenu and ContextMenuItems to Node.
 
 {% highlight C# %}
 
 //Enables Menu
 node.Constraints = node.Constraints | NodeConstraints.Menu;
+node.Constraints = node.Constraints & ~NodeConstraints.InheritMenu;
 node.Menu = new DiagramMenu();
 node.Menu.MenuItems=new ObservableCollection<DiagramMenuItem>();
 //Defines custom ContextMenu Items

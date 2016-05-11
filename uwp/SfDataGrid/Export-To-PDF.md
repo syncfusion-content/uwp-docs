@@ -754,7 +754,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-By default, only expanded DetailsViewDataGrid’s only will be exported to Pdf document. If you want to export all the DetailsViewDataGrid, you need to set `ExportAllDetails` as `true`.
+By default, only expanded DetailsViewDataGrid’s only will be exported to PDF document. If you want to export all the DetailsViewDataGrid, you need to set `ExportAllDetails` as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -776,7 +776,7 @@ if (storageFile != null)
 
 ![](Export-To-PDF_images/Export-To-PDF_img21.png)
 
-Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported Pdf document.
+Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
 
 You can customize its exporting operation by using `ChildGridExportingEventHandler`.
 
@@ -847,7 +847,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 
 ![](Export-To-PDF_images/Export-To-PDF_img23.png)
 
-Here, OrderID column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to Pdf.
+Here, OrderID column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to PDF.
 
 ### Customizing DetailsViewDataGrid cells
 

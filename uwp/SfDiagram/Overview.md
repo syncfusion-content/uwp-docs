@@ -9,7 +9,7 @@ documentation: ug
 
 #Overview
 
-**Essential Diagram UWP** creates rich Visio like applications. Its framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
+**Essential Diagram UWP** creates rich Visio like applications. Its Framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
 
 ![](Overview_images/Overview_img1.jpeg)
 

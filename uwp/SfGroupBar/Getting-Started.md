@@ -13,7 +13,7 @@ This section explains how to add `SfGroupBarItem` and set it’s content in `SfG
 
 ## Adding SfGroupBar Control
 
-Create a Universal Windows project in Visual Studio and refer to the `Syncfusion.SfGroupBar.UWP` assembly.
+Create a Universal Windows Platform project in Visual Studio and refer to the `Syncfusion.SfGroupBar.UWP` assembly.
 
 1.Include the namespace Syncfusion.UI.Xaml.Controls.Navigation for `Syncfusion.SfGroupBar.UWP` assembly in MainPage.xaml
 

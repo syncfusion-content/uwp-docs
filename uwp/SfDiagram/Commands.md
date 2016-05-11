@@ -449,7 +449,7 @@ graphinfo.Commands.FitToPage.Execute(null);
 {% endhighlight %}
 
 ##Command Manager
-Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer to the following table for inbuilt commands with Key Gesture and Mouse Gesture.
+Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer to the following table for built-in commands with Key Gesture and Mouse Gesture.
 List of Commands and Key Gesture:
 
 | Command | Key | Key Modifiers |
@@ -539,7 +539,7 @@ private async void OnSaveCommand(Object obj)
   }
   {% endhighlight %}
 ####Map and user defined command with key gesture:
-//Add new Commands to CommandManager - Cntrl + S -> Save
+//Add new Commands to CommandManager - Ctrl + S -> Save
             
 {% highlight C# %}			
 sfdiagram.CommandManager.Commands.Add

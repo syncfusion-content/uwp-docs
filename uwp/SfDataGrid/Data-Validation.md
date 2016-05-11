@@ -16,7 +16,7 @@ SfDataGrid allows you to validate the data and display hints in case of validati
 Built-in validations through INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting `SfDataGrid.GridValidationMode` or `GridColumn.GridValidationMode` properties. `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
 
 * `GridValidation.InView` - displays error icons and tips alone.
-* `GridValidation.None` - disables build-in validation support
+* `GridValidation.None` - disables built-in validation support
 
 
 ### Built-in validation using INotifyDataErrorInfo
@@ -593,7 +593,7 @@ You can validate the bound data based on INotifyDataErrorInfo or Data Annotation
 {% endhighlight %}
 {% endtabs %}
 
-When the relation is auto-generated, the data can be validated by setting `GridValidationMode` property to `AutoGeneratingRelations.GridvIewDefinition.DataGrid` in `AutoGeneratingRelations` event handler.
+When the relation is auto-generated, the data can be validated by setting `GridValidationMode` property to `AutoGeneratingRelations.GridViewDefinition.DataGrid` in `AutoGeneratingRelations` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -687,7 +687,7 @@ private void FirstLevelNestedGrid_CurrentCellValidated(object sender, CurrentCel
 {% endhighlight %}
 {% endtabs %}
 
-When the relation is auto-generated, you can wire the `CurrentCellValidating` and `CurrentCellValidated` events for `AutoGeneratingRelations.GridvIewDefinition.DataGrid` in `AutoGeneratingRelations` event handler.
+When the relation is auto-generated, you can wire the `CurrentCellValidating` and `CurrentCellValidated` events for `AutoGeneratingRelations.GridViewDefinition.DataGrid` in `AutoGeneratingRelations` event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -778,7 +778,7 @@ private void FirstLevelNestedGrid_RowValidated(object sender, RowValidatedEventA
 {% endhighlight %}
 {% endtabs %}
 
-When the relation is auto-generated, you can wire the `RowValidating` and `RowValidated` events for `AutoGeneratingRelations.GridvIewDefinition.DataGrid` in `AutoGeneratingRelations` event handler.
+When the relation is auto-generated, you can wire the `RowValidating` and `RowValidated` events for `AutoGeneratingRelations.GridViewDefinition.DataGrid` in `AutoGeneratingRelations` event handler.
 
 {% tabs %}
 {% highlight c# %}

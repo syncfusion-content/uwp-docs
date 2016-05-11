@@ -10,7 +10,7 @@ documentation: ug
 
 ## Version Compatibility
 
-This table represents the Syncfusion Essential Studio UWP controls supported .NET framework versions:
+This table represents the Syncfusion Essential Studio UWP controls supported .NET Framework versions:
 
 <table>
 <tr>

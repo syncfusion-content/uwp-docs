@@ -713,9 +713,9 @@ YBindingPath="Year2011">
 
 The positioning of adornments inside the series is defined using `AdornmentPosition` property. 
 
-* Top- Positions the Adornment at the top edge point of a chart segment.
-* Bottom- Positions the Adornment at the bottom edge point of a chart segment.
-* TopandBottom- Positions the Adornment at the center point of a chart segment.
+* `Top`- Positions the Adornment at the top edge point of a chart segment.
+* `Bottom`- Positions the Adornment at the bottom edge point of a chart segment.
+* `TopandBottom`- Positions the Adornment at the center point of a chart segment.
 
 N> This behavior varies based on the type chart series.
 
