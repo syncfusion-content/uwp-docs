@@ -11,7 +11,6 @@ documentation: ug
 
 This section helps you to get started with the SfSpreadsheet
 
-
 ## Assemblies Deployment
 
 Below table describes, list of assemblies required to be added in project when the SfSpreadsheet control is used in your application.
@@ -89,7 +88,7 @@ SfSpreadsheet control can be added into the application either via designer or v
 
 ![](Getting-Started_images/Getting-Started_img1.jpg)
 
-3.Drag **SfSpreadsheet** and drop in to the Designer area from the Toolbox
+3.Drag `SfSpreadsheet` and drop in to the Designer area from the Toolbox
 
 _For_ _Spreadsheet:_
 
@@ -101,9 +100,9 @@ _For_ _Spreadsheet:_
 {% endhighlight %}
 {% endtabs %}
 
-4.Ribbon can be added to the application by dragging and dropping **SfSpreadsheetRibbon** to the Designer area.
+4.Ribbon can be added to the application by dragging and dropping `SfSpreadsheetRibbon` to the Designer area.
 
-5.To make an interaction between Ribbon items and SfSpreadsheet, need to bind the SfSpreadsheet as DataContext to the SfSpreadsheetRibbon.
+5.To make an interaction between Ribbon items and SfSpreadsheet, need to bind the `SfSpreadsheet` as DataContext to the `SfSpreadsheetRibbon`.
 
 _For_ _Ribbon:_
 
@@ -210,7 +209,7 @@ N> To load the SfSpreadsheet in Windows Mobile, add the below code in MainPage.x
 
 ## Creating a new Excel Workbook
 
-A new workbook can be created by using a `Create` method of SfSpreadsheet. By default, a workbook will be created with single worksheet but a new workbook can also be created with specified number of worksheets.
+A new workbook can be created by using a `Create` method with specified number of worksheets. By default, a workbook will be created with single worksheet.
 
 {% tabs %}
 {% highlight c# %}
@@ -220,8 +219,7 @@ A new workbook can be created by using a `Create` method of SfSpreadsheet. By de
 {% endhighlight %}
 {% endtabs %}
 
-
-## Opening the Existing Excel Workbook
+## Opening an existing Excel Workbook
 
 The Excel Workbook can be opened in SfSpreadsheet using the `Open` method in various ways,
 
@@ -270,7 +268,7 @@ The Excel workbook can be saved in SfSpreadsheet using `Save` method. If the wor
 
 You can also use `SaveAs` method directly to save the existing excel file with modifications.
 
-The SaveAs method in SfSpreadsheet can be used in various ways,
+The `SaveAs` method in SfSpreadsheet can be used in various ways,
 
 {% tabs %}
 {% highlight c# %}
