@@ -36,7 +36,7 @@ These steps were explained below for both XAML and code behind.
 Add the following namespace in your XAML window.
 
 {% highlight xaml %}
-xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.UWP"
+xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
 {% endhighlight %}
 
 
