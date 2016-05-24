@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting 
+title: Conditional Formatting in SfSpreadsheet
 description: How to apply conditional formatting rules at run time in SfSpreadsheet.
 platform: UWP
 control: SfSpreadsheet
@@ -49,6 +49,27 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 {% endhighlight %}
 
+### Based on Formula or Cell References
+
+To format the cells based on Formula or Cell References, define the conditional format type as **Formula** and other formatting options such as formula, background color etc., to the specified cell or range. Finally, invalidate the cells to refresh the view.
+
+{% highlight c# %}
+
+var worksheet = spreadsheet.Workbook.Worksheets[0];
+
+IConditionalFormats condition = worksheet.Range["A1:A100"].ConditionalFormats;
+
+IConditionalFormat condition1 = condition.AddCondition();
+
+condition1.FormatType = ExcelCFType.Formula;
+
+condition1.FirstFormula = "=(B1+B2)>50";
+
+condition1.BackColor = ExcelKnownColors.Brown;
+
+spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
+
+{% endhighlight %}
 
 ### Based on SpecificText
 
@@ -74,7 +95,6 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 {% endhighlight %}
 
-
 ### Based on TimePeriod
 
 To format the cells based on time period, define the conditional format type as **TimePeriod** and other formatting options such as the time periods for the date, operator, background color etc., to the specified cell or range. Finally, invalidate the cells to refresh the view.
@@ -97,11 +117,9 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 {% endhighlight %}
 
-
 Sample Output
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img1.PNG)
-
 
 ## Data Bars
 
@@ -131,8 +149,6 @@ Sample Output
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img2.PNG)
 
-
-
 ## Color Scales
 
 To apply the conditional format based on color scales, define the conditional format type as a **ColorScale** and specify the other properties associated with ColorScale such as condition count,color criteria etc.,to the specified cell or range. Finally,invalidate that cells to update the view.
@@ -160,7 +176,6 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 Sample Output
 
 ![](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
-
 
 ## Icon Sets
 
