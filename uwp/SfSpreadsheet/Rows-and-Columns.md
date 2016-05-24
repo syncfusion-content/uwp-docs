@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rows and Columns 
+title: Rows and Columns Operations in SfSpreadsheet
 description: Operations involved with rows and columns in SfSpreadsheet
 platform: UWP
 control: SfSpreadsheet
@@ -10,9 +10,7 @@ documentation: ug
 # Rows and Columns
 This section explains about the operations related with rows and columns in SfSpreadsheet
 
-## Insert and Delete
-
-### Inserting Rows and Columns
+## Insert Rows and Columns
 
 SfSpreadsheet provides support for dynamically inserting rows and columns into a worksheet. 
 
@@ -21,21 +19,20 @@ SfSpreadsheet provides support for dynamically inserting rows and columns into a
 
 //For Inserting Rows
 
-spreadsheet.ActiveSheet.InsertRow(2, 3);
+ spreadsheet.ActiveSheet.InsertRow(2, 3);
 
-spreadsheet.ActiveGrid.Model.InsertRows(2, 3);
+ spreadsheet.ActiveGrid.Model.InsertRows(2, 3);
 
 //For Inserting Cols
 
-spreadsheet.ActiveSheet.InsertColumn(3, 2);
+ spreadsheet.ActiveSheet.InsertColumn(3, 2);
 
-spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
+ spreadsheet.ActiveGrid.Model.InsertColumns(3, 2);
 
 {% endhighlight %}
 {% endtabs %}
 
-
-### Deleting Rows and Columns
+## Delete Rows and Columns
 
 SfSpreadsheet provides support for deleting rows and columns from a worksheet,
 
@@ -44,24 +41,20 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet,
 
 //For Deleting Rows
 
-spreadsheet.ActiveSheet.DeleteRow(5, 2);
+ spreadsheet.ActiveSheet.DeleteRow(5, 2);
 
-spreadsheet.ActiveGrid.Model.RemoveRows(5, 2);
+ spreadsheet.ActiveGrid.Model.RemoveRows(5, 2);
 
 //For Deleting Cols
 
-spreadsheet.ActiveSheet.DeleteColumn(3, 2);
+ spreadsheet.ActiveSheet.DeleteColumn(3, 2);
 
-spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
+ spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
 
 {% endhighlight %}
 {% endtabs %}
 
-
-## Hide and Unhide
-
-
-### Hiding Rows/Columns
+## Hide Rows and Columns
 
 SfSpreadsheet provides support to hide rows/columns and this can be done by `HideRow` and `HideColumn` method
 
@@ -83,8 +76,7 @@ SfSpreadsheet provides support to hide rows/columns and this can be done by `Hid
 {% endhighlight %}
 {% endtabs %}
 
-
-### Unhiding Rows/Columns
+## Unhide Rows and Columns
 
 Unhide the rows/columns in SfSpreadsheet can be done by `ShowRow` and `ShowColumn` methods.
 
@@ -106,10 +98,9 @@ Unhide the rows/columns in SfSpreadsheet can be done by `ShowRow` and `ShowColum
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Row Height and Column Width
 
-SfSpreadsheet provides support to adjust the row height and column width. And also can import the adjusted row height and column width from Excel. Spreadsheet provides support to fit the row and column based on its contents.
+SfSpreadsheet provides support to adjust the row height and column width. And also can import the adjusted row height and column width from Excel. SfSpreadsheet provides support to fit the row and column based on its contents.
 
 {% tabs %}
 {% highlight c# %}
@@ -129,12 +120,11 @@ SfSpreadsheet provides support to adjust the row height and column width. And al
 {% endhighlight %}
 {% endtabs %}
 
+N> In case if you insert/delete and hide/unhide the rows/columns inside the Grouping, `RefreshOutlines` method must be invoked to refresh/update the Outlines of the Group.	
 
-N> In case if you Insert/Delete and Hide/Unhide the rows/columns inside the Grouping, `RefreshOutlines` method must be invoked to refresh/update the Outlines of the Group.	
+## Freeze Rows and Columns
 
-## Freeze Panes
-
-SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet visible while you scroll to another area of the worksheet
+SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet visible while you scroll to another area of the worksheet.
 
 {% tabs %}
 {% highlight c# %}
@@ -151,6 +141,27 @@ SfSpreadsheet provides support for Freeze panes to keep an area of a worksheet v
 
 {% endhighlight %}
 {% endtabs %}
+
+## Unfreeze Rows and Columns
+
+SfSpreadsheet provides support to unfreeze the freezed panes in the worksheet of SfSpreadsheet.
+
+{% tabs %}
+{% highlight c# %}
+
+//Unfreezepanes
+
+//To Unfreeze 4 rows and 4 columns
+
+ spreadsheet.Workbook.ActiveSheet.RemovePanes();
+
+ spreadsheet.ActiveGrid.FrozenRows = 1;
+
+ spreadsheet.ActiveGrid.FrozenColumns = 1;
+
+{% endhighlight %}
+{% endtabs %}
+
 
 
 

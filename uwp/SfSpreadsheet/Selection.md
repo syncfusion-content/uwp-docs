@@ -93,23 +93,23 @@ Events</th><th>
 Description</th></tr>
 <tr>
 <td>
-<B>CellClick</B></td><td>
+<code>CellClick</code></td><td>
  Occurs when you click on the cell.</td></tr>
 <tr>
 <td>
-<B>CurrentCellActivating</B></td><td>
+<code>CurrentCellActivating</code></td><td>
 Occurs when the current cell is going to be activated. This event allow to cancel the current cell activation.</td></tr>
 <tr>
 <td>
-<B>CurrentCellActivated</B></td><td>
+<code>CurrentCellActivated</code></td><td>
 Occurs after the current cell is activated.</td></tr>
 <tr>
 <td>
-<B>SelectionChanging</B></td><td>
+<code>SelectionChanging</code></td><td>
 Occurs when the selection is going to be changed. This event allows to cancel the selection change.</td></tr>
 <tr>
 <td>
-<B>SelectionChanged</B></td><td>
+<code>SelectionChanged</code></td><td>
 Occurs after the selection is changed.</td></tr>
 </table>
 
@@ -122,29 +122,37 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-<B>SelectedRanges</B></td><td>
+<code>SelectedRanges</code></td><td>
 Gets or sets the collection of selected ranges from grid.</td></tr>
 <tr>
 <td>
-<B>SelectionBrush</B></td><td>
+<code>SelectionBrush</code></td><td>
 Gets or sets the selected area brush.</td></tr>
 <tr>
 <td>
-<B>SelectionBorderBrush</B></td><td>
+<code>SelectionBorderBrush</code></td><td>
 Gets or sets the selection border brush.</td></tr>
 <tr>
 <td>
-<B>SelectionBorderThickness</B></td><td>
+<code>SelectionBorderThickness</code></td><td>
 Gets or sets the thickness of selection border.</td></tr>
 <tr>
 <td>
-<B>SelectionController</B></td><td>
+<code>SelectionController</code></td><td>
  Gets the Selection Controller which provides the selection of content when the user drags the pressed mouse to an edge of the control.</td></tr>
 <tr>
 <td>
-<B>AllowSelection</B></td><td>
- Gets or Sets the value whether to allow the selection in the ActiveGrid or not.</td></tr>
- </table>
+<code>AllowSelection</code></td><td>
+Gets or Sets the value whether to allow the selection in the ActiveGrid or not.</td></tr>
+<tr>
+<td>
+<code>ShowTouchIndicator</code></td><td>
+Determines whether the touch indicator will be shown or not.</td></tr>
+<tr>
+<td>
+<code>TouchHitTestPrecision</code></td><td>
+Gets or sets the distance of touch precision point from touch indicator.</td></tr>
+</table>
  
 Below table lists the properties associated with `CurrentCell` of `SpreadsheetGrid`,
 
@@ -155,28 +163,28 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-<B>CellRowColumnIndex</B></td><td>
+<code>CellRowColumnIndex</code></td><td>
 Gets the row and column index of the CurrentCell.</td></tr
 <tr>
 <td>
-<B>RowIndex</B></td><td>
+<code>RowIndex</code></td><td>
 Gets the row index of the CurrentCell.</td></tr>
 <tr>
 <td>
-<B>ColumnIndex</B></td><td>
+<code>ColumnIndex</code></td><td>
 Gets the column index of the CurrentCell.</td></tr>
 <tr>
 <td>
-<B>Range</B></td><td>
+<code>Range</code></td><td>
 Gets the range of the CurrentCell.</td></tr>
 <tr>
 <td>
-<B>HasCurrentCell</B></td><td>
- Gets the value indicating whether the Grid has CurrentCell or not.</td></tr>
- <tr>
- <td>
- <B>PreviousRowColumnIndex</B></td><td>
- Gets or sets the row and column index of old CurrentCell.</td></tr>
+<code>HasCurrentCell</code></td><td>
+Gets the value indicating whether the Grid has CurrentCell or not.</td></tr>
+<tr>
+<td>
+<code>PreviousRowColumnIndex</code></td><td>
+Gets or sets the row and column index of old CurrentCell.</td></tr>
 </table>
 
 Below table lists the methods associated with selection,
@@ -188,15 +196,15 @@ Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-<B>AddSelection</B></td><td>
+<code>AddSelection</code></td><td>
 Adds/Extends the Selection to the mentioned range .</td></tr>
 <tr>
 <td>
-<B>ClearSelection</B></td><td>
+<code>ClearSelection</code></td><td>
 Clears the Selection.</td></tr>
 <tr>
 <td>
-<B>MoveCurrentCell</B></td><td>
+<code>MoveCurrentCell</code></td><td>
 Move the Currentcell to mentioned row and column index.</td></tr>
 </table>
 
