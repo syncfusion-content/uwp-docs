@@ -2,7 +2,7 @@
 layout: post
 title: Add range of points dynamically | SfChart | Winrt | Syncfusion
 description: add range of points dynamically
-platform: wpf
+platform: UWP
 control: SfChart
 documentation: ug
 ---
