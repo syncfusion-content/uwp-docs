@@ -1759,10 +1759,7 @@ this.dataGrid.CurrentCellRequestNavigate += DataGrid_CurrentCellRequestNavigate;
                              
 private void DataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNavigateEventArgs args)
 {
-    var hyperlinkControl = (sender as Hyperlink);
-
     var URI = string.Format("https://en.wikipedia.org/wiki/" + args.NavigateText);
-
     Windows.System.Launcher.LaunchUriAsync(new Uri(URI));          
 }
 {% endhighlight %}
