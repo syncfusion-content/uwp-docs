@@ -13,7 +13,7 @@ The **SfSpreadsheet** is an Excel inspired control that allows you to create, ed
 
 ## Key Features
 
-SfSpreadsheet includes several advanced features like 
+`SfSpreadsheet` includes several advanced features like 
 
 **Ribbon** – Ribbon integrated with organically enhanced UI experience.
 

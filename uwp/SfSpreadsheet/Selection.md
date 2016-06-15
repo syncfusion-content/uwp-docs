@@ -164,7 +164,7 @@ Description</th></tr>
 <tr>
 <td>
 <code>CellRowColumnIndex</code></td><td>
-Gets the row and column index of the CurrentCell.</td></tr
+Gets the row and column index of the CurrentCell.</td></tr>
 <tr>
 <td>
 <code>RowIndex</code></td><td>

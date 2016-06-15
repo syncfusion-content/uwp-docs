@@ -110,3 +110,32 @@ textBox.Top = 200;
          
 {% endhighlight %}
 {% endtabs %}
+
+## Accessing the selected Shapes
+
+SfSpreadsheet allows the user to access the selected shapes and modify the properties associated with it in `SpreadsheetGrid`.
+
+{% tabs %}
+{% highlight c# %}
+
+var selectedshape = spreadsheet.ActiveGrid.GraphicModel.SelectedShapes;
+for(int i = 0; i < selectedshape.Count ; i++)
+{
+    if(ExcelShapeType.Chart == selectedshape[i].ShapeType)
+    {
+        var chart = selectedshape[i] as IChart;
+        chart.ChartArea.Fill.FillType = ExcelFillType.Gradient;
+        chart.ChartArea.Fill.ForeColor = Color.Blue;
+    }
+    else if(ExcelShapeType.Picture == selectedshape[i].ShapeType)
+    {
+        var picture = selectedshape[i] as ShapeImpl;
+        picture.Height = 100;
+        picture.Width = 100;
+    }
+}
+spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicObjects();
+spreadsheet.ActiveGrid.GraphicModel.InvalidateGraphicVisual();
+
+{% endhighlight %}
+{% endtabs %}
