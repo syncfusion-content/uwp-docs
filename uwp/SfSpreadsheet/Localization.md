@@ -24,7 +24,7 @@ Setting of the culture information,
    
 public MainPage()
 {
-    System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja");
+    System.Globalization.CultureInfo.CurrentUICulture = new System.Globalization.CultureInfo("ja");
 
     InitializeComponent();
 }
