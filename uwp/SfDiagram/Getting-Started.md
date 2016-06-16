@@ -51,6 +51,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 {% highlight xaml %}
 
 <Grid Background="White">
+    <!--Initializes the SfDiagram-->
     <syncfusion:SfDiagram x:Name="diagram">
     </syncfusion:SfDiagram>
 </Grid>
@@ -63,9 +64,11 @@ To initialize the Nodes and Connectors properties of the SfDiagram, Nodes proper
 
 {% highlight xaml %}
 
+<!--Initializes the NodeCollection-->
 <syncfusion:SfDiagram.Nodes>
 	<syncfusion:NodeCollection/>
 </syncfusion:SfDiagram.Nodes>
+<!--Initializes the ConnectorCollection-->
 <syncfusion:SfDiagram.Connectors>
 	<syncfusion:ConnectorCollection/>
 </syncfusion:SfDiagram.Connectors>
@@ -186,6 +189,7 @@ Employees are initialized, populated in the Diagram, and appearance for employee
                           Layout="{StaticResource TreeLayout}"/>
 
 <Grid Background="White">
+    <!--Initializes the SfDiagram-->
 	<syncfusion:SfDiagram x:Name="diagram"
 	                      LayoutManager="{StaticResource LayoutManager}">
         </syncfusion:SfDiagram>
@@ -280,12 +284,15 @@ The final MainPage.Xaml looks like this.
     </Page.Resources>
 
     <Grid Background="White">
+        <!--Initializes the SfDiagram-->
         <syncfusion:SfDiagram x:Name="diagram"
 	                          DataSourceSettings="{StaticResource DataSourceSettings}"
 	                          LayoutManager="{StaticResource LayoutManager}">
+            <!--Initializes the NodeCollection-->
             <syncfusion:SfDiagram.Nodes>
                 <syncfusion:NodeCollection />
             </syncfusion:SfDiagram.Nodes>
+            <!--Initializes the ConnectorCollection-->
             <syncfusion:SfDiagram.Connectors>
                 <syncfusion:ConnectorCollection/>
             </syncfusion:SfDiagram.Connectors>
