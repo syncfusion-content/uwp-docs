@@ -21,7 +21,7 @@ We have some predefined palette such as
 * AutumnBrights
 * FloraHues
 * Pineapple
-* TomotoSpectrum
+* TomatoSpectrum
 * RedChrome
 * PurpleChrome
 * BlueChrome
