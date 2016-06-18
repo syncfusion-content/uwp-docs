@@ -205,7 +205,7 @@ Clears the Selection.</td></tr>
 <tr>
 <td>
 <code>MoveCurrentCell</code></td><td>
-Move the Currentcell to mentioned row and column index.</td></tr>
+Move the Current cell to mentioned row and column index.</td></tr>
 </table>
 
 ## Key Navigation
