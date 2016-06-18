@@ -13,7 +13,7 @@ Content is displayed in Popup when `SfGroupBar` is in Collapsed mode. Content po
 
 ## Displaying Popup in Full Size
 
-PopUp can be displayed in full height of the `SfGroupBar` by setting `PoupSizeMode` as FullSize.
+PopUp can be displayed in full height of the `SfGroupBar` by setting `PopupSizeMode` as FullSize.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ PopUp can be displayed in full height of the `SfGroupBar` by setting `PoupSizeMo
 
 ## Displaying PopUp in Default Size
 
-PopUp can be displayed in equal height of the popup expander button in `SfGroupBar` by setting `PoupSizeMode` as DefaultSize.
+PopUp can be displayed in equal height of the popup expander button in `SfGroupBar` by setting `PopupSizeMode` as DefaultSize.
 
 {% tabs %}
 
