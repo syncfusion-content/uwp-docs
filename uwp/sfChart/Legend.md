@@ -511,7 +511,7 @@ When there is more number of legends, the legend exceeds the chart will be cropp
 
         <ItemsPanelTemplate>
 
-           <WrapPanel></WrapPanel>
+           <ItemsWrapGrid Orientation="Horizontal"></ItemsWrapGrid>
 
          </ItemsPanelTemplate>
 
