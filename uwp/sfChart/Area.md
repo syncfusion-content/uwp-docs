@@ -256,7 +256,7 @@ It is a Boolean property and its default value is true so the segment will be pl
 ![Column chart type placed side by side](Area_images/Area_img6.jpeg)
 
 
-The following code example and image illustrates the placement of series while setting `SidebySideSeriesPlacement` as false.
+The following code example and image illustrates the placement of series while setting `SideBySideSeriesPlacement` as false.
 
 {% highlight xaml %}
 

@@ -13,7 +13,7 @@ The **SfSpreadsheet** is an Excel inspired control that allows you to create, ed
 
 ## Key Features
 
-SfSpreadsheet includes several advanced features like 
+`SfSpreadsheet` includes several advanced features like 
 
 **Ribbon** – Ribbon integrated with organically enhanced UI experience.
 
@@ -59,4 +59,4 @@ SfSpreadsheet includes several advanced features like
 
 **Localization** - Provides support to localize all the static text in a Ribbon and all dialogs to any desired language.
 
-**Supported file types** - Ability to import the different types of excel which are XLS, XLSX, XLSM, XLT, XLTX, CSV(Comma demlimited) respectively.
+**Supported file types** - Ability to import the different types of excel which are XLS, XLSX, XLSM, XLT, XLTX, CSV(Comma delimited) respectively.

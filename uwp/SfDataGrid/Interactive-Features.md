@@ -54,7 +54,7 @@ dataGrid.RowHeaderWidth = 50;
 
 #### Display the RowIndex to the RowHeaderCell
 
-You can display the corresponding rowindex in each RowHeader, by customizing the ControlTemplate of GridRowHeaderCell. You have to bind the RowIndex property to TextBlock.Text like the below code example.
+You can display the corresponding row index in each RowHeader, by customizing the ControlTemplate of GridRowHeaderCell. You have to bind the RowIndex property to TextBlock.Text like the below code example.
 
 {% tabs %}
 {% highlight xaml %}

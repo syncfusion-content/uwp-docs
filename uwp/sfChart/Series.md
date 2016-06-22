@@ -1288,7 +1288,7 @@ YBindingPath="Value" Interior="#4A4A4A" />
 ![](Series_images/faststepline.png)
 
 
-The anti aliasing mode can be enabled using `EnableAntiAlasing` property of FastStepLineBitmapSeries as in below code snippet:
+The anti aliasing mode can be enabled using `EnableAntiAliasing` property of FastStepLineBitmapSeries as in below code snippet:
 
 {% highlight xaml %}
 

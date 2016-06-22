@@ -164,7 +164,7 @@ Description</th></tr>
 <tr>
 <td>
 <code>CellRowColumnIndex</code></td><td>
-Gets the row and column index of the CurrentCell.</td></tr
+Gets the row and column index of the CurrentCell.</td></tr>
 <tr>
 <td>
 <code>RowIndex</code></td><td>
@@ -205,7 +205,7 @@ Clears the Selection.</td></tr>
 <tr>
 <td>
 <code>MoveCurrentCell</code></td><td>
-Move the Currentcell to mentioned row and column index.</td></tr>
+Move the Current cell to mentioned row and column index.</td></tr>
 </table>
 
 ## Key Navigation
