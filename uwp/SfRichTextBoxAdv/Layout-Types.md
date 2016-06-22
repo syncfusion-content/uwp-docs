@@ -86,4 +86,4 @@ richTextBoxAdv.LayoutType = LayoutType.Block;
 
 ![](Layout-Types_images/Layout-Types_img3.jpeg)
 
-N> In Universal Windows Phone, the entire rich text content is rendered continuously in a single page as continuous layout type and there is no effect on setting other layout types.
+N> In Windows Phone device, the entire rich text content is rendered continuously in a single page as continuous layout type and there is no effect on setting other layout types.

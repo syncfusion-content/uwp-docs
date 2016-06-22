@@ -8,7 +8,7 @@ keywords: printing
 ---
 # Printing Contents
 
-The SfRichTextBoxAdv supports API to retrieve each page as a bitmap image by specifying the page number. Using this API and Print manager support, you can easily achieve printing contents of SfRichTextBoxAdv page by page in Universal Windows applications.
+The SfRichTextBoxAdv supports API to retrieve each page as a bitmap image by specifying the page number. Using this API and Print manager support, you can easily achieve printing contents of SfRichTextBoxAdv page by page in Universal Windows Platform applications.
 The following sample code demonstrates how to register for printing and how to implement print document event handlers.
 {% tabs %}
 {% highlight c# %}
