@@ -1094,7 +1094,7 @@ void dataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the selection process within this event by setting `GridSelectionChangingEentArgs.Cancel` property as true.
+You can cancel the selection process within this event by setting `GridSelectionChangingEventArgs.Cancel` property as true.
 
 {% tabs %}
 {% highlight c# %}
