@@ -68,6 +68,8 @@ Value & Source Formatting</td><td>
 To maintain the source range original format and paste only values</td></tr>
 </table>
 
+N> When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options).
+
 For `Cut` Operation,
 
 {% tabs %}
@@ -124,8 +126,7 @@ copyPaste.Paste(range, PasteOptions.Paste);
 {% endhighlight %}
 {% endtabs %}
 
-N> When the content is copied from external source, SfSpreadsheet does not support the format settings (paste options).
-
+T> Users can also set their default `PasteOptions` while pasting in SfSpreadsheet, by using `DefaultPasteOption` Property.
 
 ## Undo/Redo
 
@@ -150,7 +151,17 @@ Ctrl + Y</td></tr>
 
 SfSpreadsheet has `History Manager` class that supports the implementation of undo/ redo operations
 
-To invoke Undo/Redo operations, the `Enabled` property of `History Manager` needs to be true.  
+By default, Undo/Redo operations in SfSpreadsheet is enabled. To disable the Undo/Redo operations, set the `Enabled` property of `History Manager` to be false.  
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.HistoryManager.Enabled = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+To programmatically, invoke the Undo/Redo operations,
 
 {% tabs %}
 {% highlight c# %}
@@ -164,15 +175,25 @@ spreadsheet.HistoryManager.Redo();
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Context menu
 
 Context menu in SfSpreadsheet is customizable menu which can be used for various functionalities
 
-
 ### Cell Context menu
 
-By default, `AllowCellContextMenu` property is set as true to enable the CellContext Menu in SfSpreadsheet. The Event associated with Cell Context menu `CellContextMenuOpening` Event of SpreadsheetGrid.
+Cell Context menu opens when the user right-click on a worksheet cell or selection of cells in SfSpreadsheet.
+
+By default, Cell Context menu is enabled in SfSpreadsheet. To disable the Cell Context menu, set the `AllowCellContextMenu`  property as false.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.AllowCellContextMenu = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+Users can also customize the Cell Context menu of SfSpreadsheet by using `CellContextMenuOpening` Event of `SpreadsheetGrid`.
 
 Adding the customized menu items in the CellContextMenuOpening Event,
 
@@ -194,10 +215,11 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
     //Remove the existing Context menu
     spreadsheet.ActiveGrid.CellContextMenu.Items.RemoveAt(2);
 }
-    
+
 {% endhighlight %}
 {% endtabs %}
 
+T> Custom Cell Context menu can also by added by assigning the customized menu items to the `CellContextMenu` property of `SpreadsheetGrid`. For your reference, [CustomContextMenu](https://www.syncfusion.com/kb/6728/how-to-create-a-customized-cell-context-menu-of-sfspreadsheet)
 
 ## Cell Comments
 

@@ -11,6 +11,10 @@ documentation: ug
 
 SfSpreadsheet provides support for outlines like in excel which makes your data easier to view. You can group or ungroup the data’s either by rows or columns.
 
+## Group rows and columns
+
+SfSpreadsheet provides support to group the specified range in a worksheet.
+
 To `Group` the rows/columns
 
 {% tabs %}
@@ -29,6 +33,10 @@ spreadsheet.Group(spreadsheet.ActiveSheet, range, ExcelGroupBy.ByColumns);
 {% endhighlight %}
 {% endtabs %}
 
+## Ungroup rows and columns
+
+SfSpreadsheet provides support to ungroup the specified range in a worksheet.
+
 To `Ungroup` the rows/columns
 
 {% tabs %}
@@ -46,7 +54,7 @@ spreadsheet.UnGroup(spreadsheet.ActiveSheet, range, ExcelGroupBy.ByColumns);
 {% endhighlight %}
 {% endtabs %}
 
-### Collapse or Expand Group
+## Collapse or Expand Group
 
 Groups can be Expanded by `ExpandGroup` method  and Collapsed  by `CollapseGroup` method of XlsIO.
 
@@ -81,3 +89,35 @@ spreadsheet.RefreshOutlines(false,true);
 {% endtabs %}
 
 N> `RefreshOutlines` method is invoked to refresh/update the Outlines of the Group in SfSpreadsheet.
+
+## Change Outline Settings
+
+In SfSpreadsheet, users can change the outline settings by changing the display of summary rows to either below or above the details and summary columns to  either left or right of the details in Outlines Group.
+
+{% tabs %}
+{% highlight c# %}
+
+spreadsheet.ActiveSheet.PageSetup.IsSummaryRowBelow = false;
+spreadsheet.ActiveSheet.PageSetup.IsSummaryColumnRight = false;
+spreadsheet.RefreshOutlines(true, true);
+            
+{% endhighlight %}
+{% endtabs %}
+
+## Clear Outlines
+
+SfSpreadsheet provides support to clear all the Outlines of the Grouped range.
+
+{% tabs %}
+{% highlight c# %}
+
+var sheet = spreadsheet.Workbook.Worksheets[0] as WorksheetImpl;
+foreach (OutlineWrapper outline in sheet.OutlineWrappers)
+{
+  outline.OutlineRange.Ungroup(outline.GroupBy);
+}
+spreadsheet.RefreshOutlines(true, true);
+
+{% endhighlight %}
+{% endtabs %}
+

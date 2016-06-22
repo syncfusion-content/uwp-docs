@@ -991,7 +991,7 @@ The `CurrentCellActivating` event will occurs before moving the current cell to 
 
 `ActivationTrigger` – Returns the reason for moving the current cell.
 
-`CurrentRowColumnnIndex` – `RowColumnIndex` of the cell where the current cell need to move.
+`CurrentRowColumnIndex` – `RowColumnIndex` of the cell where the current cell need to move.
 
 `PreviousRowColumnIndex` – `RowColumnIndex` of the cell from where the current cell was move.
 
@@ -1042,7 +1042,7 @@ The `CurrentCellActivated` event will occur once the current cell is moved to co
 
 `ActivationTrigger` – Returns the reason of the current cell movement.
 
-`CurrentRowColumnnIndex` – `RowColumnIndex` of the cell where the current cell was moved.
+`CurrentRowColumnIndex` – `RowColumnIndex` of the cell where the current cell was moved.
 
 `PreviousRowColumnIndex` – `RowColumnIndex` of the cell from where the current cell has been moved.
 
@@ -1141,7 +1141,7 @@ void dataGrid_SelectionChanged(object sender, GridSelectionChangedEventArgs e)
 
 ### Changing Selection Background and Foreground
 
-You can change the selection background and foreground using `RowSelectionBrush`, `GroupRowSelectionBrush` and `SelectionForeGroudBrush` properties. The `RowSelectionBrush` is only applied to the rows other than summary rows and the `GroupRowSelectionRows` is applied for caption summary and group summary rows.
+You can change the selection background and foreground using `RowSelectionBrush`, `GroupRowSelectionBrush` and `SelectionForeGroundBrush` properties. The `RowSelectionBrush` is only applied to the rows other than summary rows and the `GroupRowSelectionRows` is applied for caption summary and group summary rows.
 
 {% tabs %}
 {% highlight xaml %}

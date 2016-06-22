@@ -45,7 +45,7 @@ The each GridFilterRowCell which loads TextBox, DoubleTextBox and DateTimeEdit w
 Editors
 </th>
 <th>
-FilteRowConditions
+FilterRowConditions
 </th>
 </tr>
 <tr>

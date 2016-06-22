@@ -13,6 +13,24 @@ Nodes are graphical objects used to visually represent the geometrical informati
 
 ![](Node_images/Node_img1.jpeg)
 
+##Basic Shapes
+
+The Basic shapes are common shapes that are used to represent the geometrical information visually. The Shape property of Node can be set with any one of the in-built Basic Shapes.
+
+The following code example illustrates how to create a basic shapes.
+
+{% highlight xaml %}
+
+<!--Initialize Shapes-->
+<ResourceDictionary Source="ms-appx:///Syncfusion.SfDiagram.UWP/Resources/BasicShapes.xaml"/>
+ 
+ <!--Add Node-->
+<syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth=" 100" OffsetX="100" OffsetY="100" 
+                          Shape="{StaticResource Rectangle}"
+                          ShapeStyle="{StaticResource shapestyle}"/>
+
+{% endhighlight %}
+
 ##Create Node
 
 A Node can be created and added to the Diagram, either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
@@ -21,27 +39,38 @@ A Node can be created and added to the Diagram, either programmatically or inter
 
 To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram. The following code example illustrate how to add the Node to the Diagram.
 
-{% highlight xml %}
+{% highlight xaml %}
 
-<diagram:SfDiagram x:Name="diagram">
-    <diagram:SfDiagram.Nodes>
-        <diagram:DiagramCollection>
-            <diagram:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200">
-                <diagram:NodeViewModel.Shape>
-                    <RectangleGeometry Rect="0,0,10,10"/>
-                </diagram:NodeViewModel.Shape>
-                <diagram:NodeViewModel.ShapeStyle>
-                    <Style TargetType="Path">
-                        <Setter Property="Fill" Value="DarkCyan"></Setter>
-                        <Setter Property="Stroke" Value="Black"/>
-                        <Setter Property="StrokeThickness" Value="2"></Setter>
-                        <Setter Property="Stretch" Value="Fill"></Setter>
-                    </Style>
-                </diagram:NodeViewModel.ShapeStyle>
-            </diagram:NodeViewModel>
-        </diagram:DiagramCollection>
-    </diagram:SfDiagram.Nodes>
-</diagram:SfDiagram>
+<!--Style for Node-->
+<Style TargetType="syncfusion:Node">
+    <Setter Property="Shape" Value="{StaticResource Rectangle}"/>
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="DarkCyan"/>
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="StrokeThickness" Value="2"/>
+                <Setter Property="Stretch" Value="Fill"/>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram  x:Name="diagram">
+    <!--Initialize NodeCollection-->
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection>
+            <!--Initialize Node-->
+            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200">
+            </syncfusion:NodeViewModel>
+        </syncfusion:NodeCollection>
+    </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
@@ -54,7 +83,7 @@ ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewMod
 NodeViewModel node = new NodeViewModel()
 {
     //Sets the size
-	UnitWidth = 100,
+	UnitWidth = 100,   
 	UnitHeight = 100,
     
     //Sets the position
@@ -100,33 +129,45 @@ The following table illustrates how pivot relates Offset values with Node bounda
 | (0,0) | OffsetX and OffsetY values are considered as the top left corner of Node. |
 | (1,1) | OffsetX and OffsetY values are considered as the bottom right corner of the Node. |
 
-{% highlight xml %}
+{% highlight xaml %}
 
-<diagram:SfDiagram x:Name="diagram">
-    <diagram:SfDiagram.Nodes>
-        <diagram:DiagramCollection>
-            <diagram:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"
-                                   Pivot="0,0">
-                <diagram:NodeViewModel.Shape>
-                    <RectangleGeometry Rect="0,0,10,10"/>
-                </diagram:NodeViewModel.Shape>
-                <diagram:NodeViewModel.ShapeStyle>
-                    <Style TargetType="Path">
-                        <Setter Property="Fill" Value="DarkCyan"></Setter>
-                        <Setter Property="Stroke" Value="Black"/>
-                        <Setter Property="StrokeThickness" Value="2"></Setter>
-                        <Setter Property="Stretch" Value="Fill"></Setter>
-                    </Style>
-                </diagram:NodeViewModel.ShapeStyle>
-            </diagram:NodeViewModel>
-        </diagram:DiagramCollection>
-    </diagram:SfDiagram.Nodes>
-</diagram:SfDiagram>
+<!--Style for Node-->
+<Style TargetType="syncfusion:Node">
+    <Setter Property="Shape" Value="{StaticResource Rectangle}"/>
+    <Setter Property="ShapeStyle">
+        <Setter.Value>
+            <Style TargetType="Path">
+                <Setter Property="Fill" Value="DarkCyan"/>
+                <Setter Property="Stroke" Value="Black"/>
+                <Setter Property="StrokeThickness" Value="2"/>
+                <Setter Property="Stretch" Value="Fill"/>
+            </Style>
+        </Setter.Value>
+    </Setter>
+</Style>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<!--Initialize SfDiagram-->
+<syncfusion:SfDiagram  x:Name="diagram">
+    <!--Initialize NodeCollection-->
+    <syncfusion:SfDiagram.Nodes>
+        <syncfusion:NodeCollection>
+            <!--Initialize Node-->
+            <syncfusion:NodeViewModel UnitWidth="100" UnitHeight="100" OffsetX="200" OffsetY="200"
+                                      Pivot="0,0">
+            </syncfusion:NodeViewModel>
+        </syncfusion:NodeCollection>
+    </syncfusion:SfDiagram.Nodes>
+</syncfusion:SfDiagram>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
+//Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
 //Creates Node
