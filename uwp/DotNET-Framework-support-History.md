@@ -19,7 +19,7 @@ Syncfusion version</td><td>
 .NET 4.6</td></tr>
 <tr>
 <td>
-13.3</td><td>
+From 13.3</td><td>
 Yes</td></tr>
 </table>
 
@@ -181,6 +181,16 @@ Yes</td></tr>
 <tr>
 <td>
 </td><td>
+SfMenu</td><td>
+Yes</td></tr>
+<tr>
+<td>
+</td><td>
+SfGroupBar</td><td>
+Yes</td></tr>
+<tr>
+<td>
+</td><td>
 SfRadialMenu</td><td>
 Yes</td></tr>
 <tr>
@@ -217,6 +227,16 @@ Yes</td></tr>
 <td>
 </td><td>
 SfPulsingTile</td><td>
+Yes</td></tr>
+<tr>
+<td>
+MISCELLANEOUS</td><td>
+SfSpellChecker</td><td>
+Yes</td></tr>
+<tr>
+<td>
+</td><td>
+SfProgressBar</td><td>
 Yes</td></tr>
 <tr>
 <td>
