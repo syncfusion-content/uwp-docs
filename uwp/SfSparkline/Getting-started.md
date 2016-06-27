@@ -18,7 +18,7 @@ The following section helps you to build your application with SfChart.
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
 
-![Reference Manager Dialog Windows in Visual Studio](Getting-started_images/Getting_started_img1a.jpeg)
+![Reference Manager Dialog Windows in Visual Studio](Getting-started_images/GettingStarted_img1a.jpeg)
 
 Add the following namespace in your XAML window.
 
@@ -36,7 +36,7 @@ Now the Syncfusion.SfChart.UWP reference is added to the application references 
 
 ![Project Solution Window contains SfChart reference](Getting-started_images/GettingStarted_img2.jpeg)
 
-![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF" in MainWindow](Getting-started_images/GettingStarted_img3.jpeg)
+![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts" in MainWindow](Getting-started_images/GettingStarted_img3.jpeg)
 
 ### Initialize the Sparkline
 
@@ -48,7 +48,7 @@ You need to initialize the sparkline represented by the following class of Syncf
 
 </chart:SfLineSparkline>
 
- {%endhighlight%}
+{%endhighlight%}
  
 ### Create a data source
 
@@ -102,9 +102,9 @@ public class UsersViewModel
 
 {%endhighlight%}
 
- ### Applying data to Sparkline
+### Applying data to Sparkline
  
- We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath .
+We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath .
 
 {%highlight xaml%}
 
