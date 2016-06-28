@@ -47,7 +47,7 @@ For example, you have to give name as **Syncfusion.SfGrid.UWP.Resources.de.resw*
 ![](Localization_images/Localization_img3.png)
 
 
-You can get the SfDataGrid’s key from default resource  [Syncfusion.SfGrid.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGrid.UWP.Resources1678841832.zip).
+You can get the SfDataGrid’s key from default resource  [Syncfusion.SfGrid.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-1661698644.zip).
 
 
 ![](Localization_images/Localization_img4.png)
@@ -56,7 +56,7 @@ You can get the SfDataGrid’s key from default resource  [Syncfusion.SfGrid.UWP
 ## Editing default culture resource
 
 
-You can edit default resource file by adding it to your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGrid.UWP.Resources1678841832.zip).
+You can edit default resource file by adding it to your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-1661698644.zip).
 
 ![](Localization_images/Localization_img5.png)
 
