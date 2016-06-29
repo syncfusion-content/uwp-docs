@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfCellGrid 
-description: Overview and key features that are supported in SfCellGrid
+description: Overview and key features in SfCellGrid
 platform: uwp
 control: SfCellGrid
 documentation: ug
