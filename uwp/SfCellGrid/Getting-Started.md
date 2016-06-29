@@ -168,7 +168,7 @@ Run the application, Grid will appear as follows,
 ![](Getting-Started_images/SfCellGrid_UWP_img2.jpeg)
 
 
-## Formatting the Cell:
+## Formatting the Cell
 
 **GridStyleInfo** is used to maintain the data and style information of SfCellGrid. User can change formatting of a cell by changing background, foreground, font, borders, etc., Below code explains this scenario,
 
