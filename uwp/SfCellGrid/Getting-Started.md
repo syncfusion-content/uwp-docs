@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with SfCellGrid 
-description: How to create, open and save the workbook in SfCellGrid
-platform: UWP
+title: Getting Started with SfCellGrid for UWP
+description: Getting Started with SfCellGrid for UWP
+platform: uwp
 control: SfCellGrid
 documentation: ug
 ---

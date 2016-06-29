@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Overview of SfCellGrid 
-description: Overview and the features that are supported in SfCellGrid
-platform: UWP
+description: Overview and key features that are supported in SfCellGrid
+platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 The cell-oriented Grid Control is a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data. It can be used in a virtual manner where the data is provided on demand in real time. 
 
-## Key Features:
+## Key Features
 
 * **Editing** – Provides support for editing, you can modify and commit the values for each cell.
 * **Cell** **Styling** – Cell style can be applied to any range of cells, rows, columns and table.
