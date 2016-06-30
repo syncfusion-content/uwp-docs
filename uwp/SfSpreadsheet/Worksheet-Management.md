@@ -78,7 +78,7 @@ The Protect sheet options are
 
 * DeletingColumns     - Allows the users to delete columns on the protected worksheet.
 
-* Objects             - Allows the users to edit the objects such as Graphic cells like charts,richtextbox, etc.
+* Objects             - Allows the users to edit the objects such as Graphic cells like charts,rich textbox, etc.
 
 {% tabs %}
 {% highlight c# %}
