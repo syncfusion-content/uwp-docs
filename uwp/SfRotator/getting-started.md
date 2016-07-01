@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
 
-![](Images/rotator.png)
+![](images/rotator.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 
@@ -21,7 +21,7 @@ After installing Essential Studio for Universal Windows, all the required assemb
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
 
-## Create your first Rotator in WPF
+## Create your first Rotator in UWP
 
 This section explains how to create a SfRotator that lets you to display image datas and navigate through them.
 
@@ -32,7 +32,7 @@ This section explains how to create a SfRotator that lets you to display image d
 `Namespace`: Syncfusion.UI.Xaml.Rotator
 
 
-## Customizing a simple Rotator sample
+## How to create a simple Rotator sample
 
 To develop an application with Rotator is simple. The following steps explain how to create and configure its properties.
 
@@ -47,58 +47,113 @@ To develop an application with Rotator is simple. The following steps explain ho
 {% endhighlight %}
 
 
-* Create an instance of SfRotator.
+* The follwoing code snippet shows how to create `Rotator` using Xaml
 
-
-{% highlight c# %}		
-
-	SfRotator sfRotator = new SfRotator();
-	SetContentView(sfRotator);
-
-{% endhighlight %}
 
 {% highlight Xaml %}		
 
-    <syncfusion:SfRotator>
+	<Page
+    x:Class="Rotator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rotator"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Rotator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+	
+	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+		<syncfusion:SfRotator x:Name="rotator"/>
+	</Grid> 
+	
+	</Page>
 
 {% endhighlight %}
  
+ *The follwoing code snippet shows how to create `Rotator` in code behind
 
+{% highlight c# %}
+	
+	SfRotator rotator = new SfRotator();   
+{% endhighlight %}   
+ 
+##Creating Data Model for sample application
 
-## Setting DataSource
-
-SfRotator items can be populated with a collection of image datas using `DataSource` property.
+1.Create data object class and declare properties as shown below,
 
 {% highlight C# %}
 
-	ArrayList rotatorItems=new ArrayList();
-	For(int i=1;i<18;i++)
-	{
-	SfRotatorItem rotatorItems =new SfRotatorItem ();
-	item.ImageName="image"+i;
-	rotatorItems.add(item);
-	}
-	rotator.DataSource=rotatorItems;
-
+		 public class ImageData
+    		{
+        		public string Text { get; set; }
+        		public string ImageURL { get; set; }
+    		}
+			
 {% endhighlight %}
 
-## Setting Navigation Mode
+{% highlight C# %}
 
-The navigation mode for navigating items can be decided using `NavigationMode` property. The items can be navigated using Thumbnail or Dots.
+	public class RotatorData : INotifyPropertyChanged
+    {
+		
+	private ObservableCollection<ImageData> items;
+    	    public ObservableCollection<ImageData> Items
+				{
+					get { return items; }
+					set { items = value; }
+				}
 
-{% highlight C# %}	
-
-	sfRotator.NavigationStripMode = NavigationStripMode.Dots;
-
-{% endhighlight %}
-
-## Customizing Position
-
-The placement position of navigation strip items such as Thumbnail or Dots can be specified using `TabStripPosition` property. 
-
-{% highlight C# %}	
-
-	sfRotator.NavigationStripMode = NavigationStripMode.Dots;
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+			public RotatorData()
+				{
+					Items = new ObservableCollection<ImageData>();
 	
+					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/Agile.jpg", Text = "The Agile" });
+					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/Delphi.jpg", Text = "The Delphi" });
+					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/NancyFX.jpg", Text = "The NancyFX" });
+					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/roslyn.jpg", Text = "The Roslyn" });
+					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/1.gif", Text = "The Spark" });
+					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/SQL.jpg", Text = "The SQL" });
+					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/T4.jpg", Text = "The T4" });
+				}
+	}
+
+
 {% endhighlight %}
+
+## Setting ItemsSource
+
+SfRotator items can be populated with a collection of image data using `ItemsSource` property.
+
+{% highlight Xaml %}
+
+	<Page
+	x:Class="Rotator.MainPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="using:Rotator"
+	xmlns:syncfusion="using:Syncfusion.UI.Xaml.Rotator"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d">
+	
+	<Page.DataContext>
+			<local:RotatorData/>
+	</Page.DataContext>
+	
+	<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+		<syncfusion:SfRotator x:Name="rotator" ItemsSource="{Binding Items}">
+		<syncfusion:SfRotator.ItemTemplate>
+					<DataTemplate>
+						<Image Source="{Binding ImageURL}" />
+					</DataTemplate>
+				</syncfusion:SfRotator.ItemTemplate>
+		</syncfusion:SfRotator>
+	
+	</Grid> 
+	
+	</Page>
+
+{% endhighlight %}
+
+N> ItemTemplate property of Rotator control is used to customize the contents of rotator items.
+
