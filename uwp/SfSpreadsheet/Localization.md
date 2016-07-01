@@ -40,7 +40,7 @@ The following steps show how to implement the localization in SfSpreadsheet,
 
 * Create folder name as ‘Resources’ in your application.
 * Add default English("en-US") [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.UWP.Resources1773657760) (resource) file of `SfSpreadsheet` in the 'Resources' folder named as Syncfusion.SfSpreadsheet.UWP.resw
-* Create Resw(resource) file and name it as Syncfusion.SfSpreadsheet.UWP.[Culture name].resw. For example, Syncfusion.SfSpreadsheet.UWP.ja.resw for japanese culture.
+* Create Resw(resource) file and name it as Syncfusion.SfSpreadsheet.UWP.[Culture name].resw. For example, Syncfusion.SfSpreadsheet.UWP.ja.resw for Japanese culture.
   For your reference, Japanese("ja-JP") [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.UWP.Resources.ja2068752327) file
 
 ![](localization_images/Loc_Image1.png)

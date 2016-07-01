@@ -11,7 +11,7 @@ documentation: ug
 
 The SfRotator is a data control used to display image datas and navigate through them. The images can be selected either by Thumbnail or by Dots support.
 
-![](Images/overview.png)
+![](images/overview.png)
  
 ## Key Features
 

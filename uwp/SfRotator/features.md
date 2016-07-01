@@ -17,7 +17,7 @@ N> By default, the property value is set to false.
 
 {% highlight C# %}
 
-	sfRotator.EnableAutoPlay = True;
+	Rotator.EnableAutoPlay = True;
 
 {% endhighlight %}
 
@@ -35,13 +35,13 @@ N> The property value should be in milliseconds.
 
 {% highlight C# %}
 
-	sfRotator.NavigationDelay = 2000;
+	Rotator.NavigationDelay = new TimeSpan(0,0,2);
 
 {% endhighlight %}
 
 {% highlight Xaml %}
 
-    <syncfusion:SfRotator NavigationDelay ="2000"/>
+    <syncfusion:SfRotator NavigationDelay="00:00:02"/>
   
  {% endhighlight %}
 
@@ -51,7 +51,7 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 {% highlight C# %}
 
-	sfRotator.EnableLooping = True;
+	Rotator.EnableLooping = true;
 
 {% endhighlight %}
 
@@ -64,19 +64,19 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 ## Text Area 
 
-The `IsTextVisible` property can be used to enable the text area visibility in bottom area of rotator for providing additional information of items.
+The `ShowText` property can be used to enable the text area visibility in bottom area of rotator for providing additional information of items.
 
 N> By default, the property value is false.
 
 {% highlight C# %}
 
-	sfRotator.IsTextVisible = True;
+	Rotator.ShowText = True;
 
 {% endhighlight %}
 
 {% highlight Xaml %}
 
-    <syncfusion:SfRotator IsTextVisible="true"/>
+    <syncfusion:SfRotator ShowText="true"/>
   
  {% endhighlight %}
 
@@ -96,7 +96,7 @@ The `NavigationDirection` property specifies the direction in which items should
 
     <syncfusion:SfRotator NavigationDirection="Horizontal"/>
 
-{% endhighlight %}
+{% highlight c# %}
 
 * `Vertical` - Items can be navigated in vertical direction.
 
