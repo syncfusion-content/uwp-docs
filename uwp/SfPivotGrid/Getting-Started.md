@@ -15,7 +15,7 @@ This section explains the steps required to create a simple SfPivotGrid control 
 
 ### Control Initialization
 
-Create a blank **Universal Windows** application by using Visual Studio IDE and name the project as **"SfPivotGridDemo".**
+Create a blank **Universal Windows Platform** application by using Visual Studio IDE and name the project as **"SfPivotGridDemo".**
 
 SfPivotGrid control can be initialized and added to an application through 3 ways:
 
@@ -156,7 +156,7 @@ namespace SfPivotGridDemo
 
 ### Adding Service Reference to Project
 
-N> The following steps explain about how to refer the online service in Universal Windows application in-order to bind the Cube information in SfPivotGrid. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotgrid/getting-started#creating-wcf-service-application).
+N> The following steps explain about how to refer the online service in Universal Windows Platform application in-order to bind the Cube information in SfPivotGrid. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotgrid/getting-started#creating-wcf-service-application).
 
 After initializing SfPivotGrid control, right click on **"References"** under SfPivotGridDemo project shown in Solution Explorer and select **"Add Service Reference"** option. 
 
@@ -365,5 +365,5 @@ Include the basic HTTP binding and service endpoint address in the web.config fi
 {% endhighlight %}
 
 
-Then build and host this WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows application (client application). This is how we have hosted our service in IIS and referred the obtained URL i.e., [http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/mex] (http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/mex) as service reference in the sample illustrated in [Adding Service Reference to Project section.](http://help.syncfusion.com/uwp/SfPivotGrid/Getting-Started#Adding Service Reference to Project)
+Then build and host this WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform application (client application). This is how we have hosted our service in IIS and referred the obtained URL i.e., [http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/mex] (http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/mex) as service reference in the sample illustrated in [Adding Service Reference to Project section.](http://help.syncfusion.com/uwp/SfPivotGrid/Getting-Started#Adding Service Reference to Project)
 
