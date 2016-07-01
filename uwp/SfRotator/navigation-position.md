@@ -9,7 +9,7 @@ documentation: ug
 
 # NavigationStripPosition
 
-The `NavigationStripPosition` position specifies the placement position of the navigation bar items such as thumbnail or dots relative to the slider area. 
+The `NavigationStripPosition` position specifies the placement position of the navigation bar items such as thumbnail or dots relative to the image panel area. 
 
 There are four available positions,
 
@@ -17,7 +17,7 @@ There are four available positions,
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+	Rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 
 {% endhighlight %}
 
@@ -31,7 +31,7 @@ There are four available positions,
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Left;
+	Rotator.NavigationStripPosition = NavigationStripPosition.Left;
 
 {% endhighlight %}
 
@@ -45,7 +45,7 @@ There are four available positions,
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Top;
+	Rotator.NavigationStripPosition = NavigationStripPosition.Top;
 
 {% endhighlight %}
 
@@ -59,7 +59,7 @@ There are four available positions,
 
 {% highlight C# %}
 
-	sfRotator.NavigationStripPosition = NavigationStripPosition.Right;
+	Rotator.NavigationStripPosition = NavigationStripPosition.Right;
 
 {% endhighlight %}
 
@@ -69,4 +69,4 @@ There are four available positions,
 
 {% endhighlight %}
 
-![](Images/tabstrip.png)
+![](images/tabstrip.png)
