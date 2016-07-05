@@ -1217,7 +1217,7 @@ To show headers in TreeMap, you can set the HeaderHeight property of TreeMapLeve
 
 TreeMap with Flat Collection:
 
-If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by referring Header object to the datatemplate.
+If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by referring Header object to the data template.
 
 Code Sample:
 
@@ -1259,7 +1259,7 @@ _Figure_ _10_: TreeMap with Headers_
 
 TreeMap with Hierarchical Collection:
 
-For TreeMap with Hierarchical Collection, HeaderPath must be specified. The header can be bound by referring Data.<FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
+For TreeMap with Hierarchical Collection, HeaderPath must be specified. The header can be bound by referring Data.<FieldName> to the data template where FieldName refers to the field of object specified in the particular treemap level.
 
 Code Sample:
 
@@ -1301,7 +1301,7 @@ To show labels in TreeMap, ShowLabels of TreeMapLevel should be enabled to True.
 
 TreeMap with Flat Collection:
 
-If LabelTemplate is specified for TreeMapLevel, then the label can be bound by referring Label object to the datatemplate.
+If LabelTemplate is specified for TreeMapLevel, then the label can be bound by referring Label object to the data template.
 
 Code Sample:
 
@@ -1343,7 +1343,7 @@ _Figure_ _11_: TreeMap with Labels
 
 TreeMap with Hierarchical Collection:
 
-For TreeMap with Hierarchical Collection, LabelPath must be specified. The label can be bound by referring Data. <FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
+For TreeMap with Hierarchical Collection, LabelPath must be specified. The label can be bound by referring Data. <FieldName> to the data template where FieldName refers to the field of object specified in the particular treemap level.
 
 Code Sample:
 
@@ -1579,7 +1579,7 @@ Treemap enables drill down to expose the hierarchy by clicking on a treemap node
 
 ### Enabling Drill Down
 
-Treemap items can be drilled down by enabling the property EnableDrillDown to ‘_true’_. The hierarchy of treemap levels can be shown by clicking on treemap items. The previous level can be drilled up by clicking on drill down header. DrilldDown header can be customized with the help of DrillDownHeaderTemplate property.
+Treemap items can be drilled down by enabling the property EnableDrillDown to ‘_true’_. The hierarchy of treemap levels can be shown by clicking on treemap items. The previous level can be drilled up by clicking on drill down header. DrillDown header can be customized with the help of DrillDownHeaderTemplate property.
 
 _Table_ _1_: Drill Down Properties_
 
