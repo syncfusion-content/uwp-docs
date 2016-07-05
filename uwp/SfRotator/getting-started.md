@@ -23,7 +23,7 @@ Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}
 
 ## Create your first Rotator in UWP
 
-This section explains how to create a SfRotator that lets you to display image datas and navigate through them.
+This section explains how to create a SfRotator that lets you to display image data's and navigate through them.
 
 `SfRotator` is available in the following assembly and namespace:
 
@@ -47,7 +47,7 @@ To develop an application with Rotator is simple. The following steps explain ho
 {% endhighlight %}
 
 
-* The follwoing code snippet shows how to create `Rotator` using XAML
+* The following code snippet shows how to create `Rotator` using XAML
 
 
 {% highlight Xaml %}		
@@ -70,7 +70,7 @@ To develop an application with Rotator is simple. The following steps explain ho
 
 {% endhighlight %}
  
- *The follwoing code snippet shows how to create `Rotator` in code behind
+ *The following code snippet shows how to create `Rotator` in code behind
 
 {% highlight c# %}
 	
