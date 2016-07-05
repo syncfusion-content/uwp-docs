@@ -17,7 +17,7 @@ A legend is a key to symbolism used on a map, usually containing swatches of sym
 
 ## Positioning of Legend 
 
-Map legends can be positioned by setting the `LegendPosition` property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the LegendPositionX and LegendPositionY properties availablein ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of `Default`.
+Map legends can be positioned by setting the `LegendPosition` property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the LegendPositionX and LegendPositionY properties available in ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of `Default`.
 
 <table>
 <tr>

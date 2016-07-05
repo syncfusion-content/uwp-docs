@@ -15,7 +15,7 @@ This section explains you the steps to configure a Rotator control in a real-tim
 
 ## Referencing Essential Studio Components in Your Solution	
 
-After installing Essential Studio for Universal Windows, all the required assemblies can be found in the installation folders, typically
+After installing Essential Studio for Universal Windows Platform, all the required assemblies can be found in the installation folders, typically
 
 {Syncfusion Installed location}\Essential Studio\syncfusionessentialstudio-version\lib
 
@@ -47,7 +47,7 @@ To develop an application with Rotator is simple. The following steps explain ho
 {% endhighlight %}
 
 
-* The follwoing code snippet shows how to create `Rotator` using Xaml
+* The follwoing code snippet shows how to create `Rotator` using XAML
 
 
 {% highlight Xaml %}		

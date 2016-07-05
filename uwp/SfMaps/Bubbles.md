@@ -52,7 +52,7 @@ Gets or sets the tree map colors.</td></tr>
 
 ## Adding Bubbles to a Map
 
-To add bubbles to a map, `BubbleMarkerSetting` has to be added to the `ShapeFileLayer`.  Set the `AutoFillColor` as true and set the `Fill` property. Create the `Model` and `ViewModel` as illustrtaed in the [Data Binding](/winrt/Maps/Data-Binding "Data Binding") topic and add the following code. Also set the `MaxSize`, `MinSize`, and `ValuePath` properties as illustrated in the following code example.
+To add bubbles to a map, `BubbleMarkerSetting` has to be added to the `ShapeFileLayer`.  Set the `AutoFillColor` as true and set the `Fill` property. Create the `Model` and `ViewModel` as illustrated in the [Data Binding](/winrt/Maps/Data-Binding "Data Binding") topic and add the following code. Also set the `MaxSize`, `MinSize`, and `ValuePath` properties as illustrated in the following code example.
 
 
 {% highlight html %}
