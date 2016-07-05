@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-TreeMap is a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. TreeMapsalso can use color to represent any number of values, but it is often used to categorize the various boxes within the treemap.
+TreeMap is a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. TreeMap also can use color to represent any number of values, but it is often used to categorize the various boxes within the treemap.
 
 ### Creating TreeMap for Windows Store App
 
