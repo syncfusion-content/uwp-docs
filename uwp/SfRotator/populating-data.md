@@ -11,7 +11,7 @@ documentation : ug
 
 ## Adding RotatorItem to the control
 
-SfRotatorItem can be populated with a collection of image datas using `ItemsSource` property.
+SfRotatorItem can be populated with a collection of image data using `ItemsSource` property.
 
 {% highlight Xaml %}
 
