@@ -88,7 +88,7 @@ The `NavigationDirection` property specifies the direction in which items should
 
 {% highlight C# %}
 
-	sfRotator.NavigationDirection = NavigationDirection.Horizontal;
+	Rotator.NavigationDirection = NavigationDirection.Horizontal;
 
 {% endhighlight %}
 
@@ -96,13 +96,13 @@ The `NavigationDirection` property specifies the direction in which items should
 
     <syncfusion:SfRotator NavigationDirection="Horizontal"/>
 
-{% highlight c# %}
+{% endhighlight %}
 
 * `Vertical` - Items can be navigated in vertical direction.
 
 {% highlight C# %}
 
-	sfRotator.NavigationDirection = NavigationDirection.Vertical;
+	Rotator.NavigationDirection = NavigationDirection.Vertical;
 
 {% endhighlight %}
 
