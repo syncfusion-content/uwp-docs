@@ -13,7 +13,7 @@ documentation: ug
 SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassAllowSortingTopic.html) property to `true`.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
   <syncfusion:SfTreeGrid Name="treeGrid"
                                AllowSorting="True"                             
                                ChildPropertyName="ReportsTo"
@@ -21,30 +21,16 @@ SfTreeGrid allows you to sort the data against one or more columns either in asc
                                ParentPropertyName="ID">
 {% endhighlight %}
 {% highlight c# %}
-namespace GettingStarted
-{
-public sealed partial class MainPage : Page
-{
-    public MainPage()
-    {
-        this.InitializeComponent();
-        SfTreeGrid treeGrid = new SfTreeGrid();
-        ViewModel viewModel = new ViewModel();
-        treeGrid.ItemsSource = viewModel.Employees;      
-        treeGrid.ParentPropertyName = "ID";
-        treeGrid.ChildPropertyName = "ReportsTo";
-        treeGrid.AllowSorting = true;
-        Root_Grid.Children.Add(treeGrid);
-    }
-}
-}
+
+  treeGrid.AllowSorting = true;
+
 {% endhighlight %}
 {% endtabs %}
 
 In another way, you can enable or disable the sorting for particular column by setting the [TreeGridColumn.AllowSorting](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowSortingTopic.html) property.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
                                AllowSorting="False"
                                AutoGenerateColumns="False"
@@ -79,7 +65,7 @@ End users can sort the column by clicking column header cell. Once the columns g
 By default, column gets sorted when column header clicked. You can change this behavior to sort the column in double click action by setting [SfTreeGrid.SortClickAction](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassSortClickActionTopic.html) property to `DoubleClick`.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
                                AllowSorting="True"                               
                                SortClickAction="DoubleClick"
@@ -117,7 +103,7 @@ In the below screen shot, the `First Name` column sorted. Then the `Employee ID`
 It is also possible to display sorted order of columns in header by setting [SfTreeGrid.ShowSortNumbers](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassShowSortNumbersTopic.html) property to `true`.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
                                AllowSorting="True"
                                ShowSortNumbers="True"
@@ -144,7 +130,7 @@ N> [SfTreeGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/uwp/
 ### Adding sort columns
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 xmlns:sync="using:Syncfusion.UI.Xaml.Grid"
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
 
@@ -259,7 +245,7 @@ In the below code snippet, `FirstName` property is compared based on its string 
 Custom comparer can be added to [SfTreeGrid.SortComparers](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassSortComparersTopic.html) property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 xmlns:sync="using:Syncfusion.UI.Xaml.Grid"
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
 xmlns:data="using:Syncfusion.Data"
