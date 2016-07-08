@@ -63,17 +63,17 @@ Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
 
 In this walk through, you will create UWP application with SfTreeGrid control.
 
-1. [Creating project](#Creating-the-project)
-2. [Adding control via Designer](#Adding-control-via)
-3. [Adding control manually in XAML](#Adding-control-manually)
-4. [Adding control manually in C#](#Adding-control-manually)
-5. [Binding self-relational data in SfTreeGrid](#Binding-self-relational-data)
-6. [Binding nested collection](#Binding-nested-collection-with-SfTreeGrid) 
-7. [Populate SfTreeGrid in on-demand](#Populate-SfTreeGrid-in)
-8. [Defining Columns](#Defining-Columns)
-9. [Selection](#Selection)
-10. [Sorting](#Sorting)
-11. [Editing](#Editing)
+1. [Creating project](http://help.syncfusion.com/uwp/sftreegrid/getting-started#creating-the-project)
+2. [Adding control via Designer](http://help.syncfusion.com/uwp/sftreegrid/getting-started#adding-control-via-designer)
+3. [Adding control manually in XAML](http://help.syncfusion.com/uwp/sftreegrid/getting-started#adding-control-manually-in-xaml)
+4. [Adding control manually in C# ](http://help.syncfusion.com/uwp/sftreegrid/getting-started#adding-control-manually-in-c)
+5. [Binding self-relational data in SfTreeGrid](http://help.syncfusion.com/uwp/sftreegrid/getting-started#binding-self-relational-data-in-sftreegrid)
+6. [Binding nested collection](http://help.syncfusion.com/uwp/sftreegrid/getting-started#binding-nested-collection-with-sftreegrid) 
+7. [Populate SfTreeGrid in on-demand](http://help.syncfusion.com/uwp/sftreegrid/getting-started#populate-sftreegrid-in-on-demand-unbound-mode)
+8. [Defining Columns](http://help.syncfusion.com/uwp/sftreegrid/getting-started#defining-columns)
+9. [Selection](http://help.syncfusion.com/uwp/sftreegrid/getting-started#selection)
+10. [Sorting](http://help.syncfusion.com/uwp/sftreegrid/getting-started#sorting)
+11. [Editing](http://help.syncfusion.com/uwp/sftreegrid/getting-started#editing)
 
 ### Creating the project
 
@@ -318,8 +318,6 @@ Bind the self-relations collection created in the previous step to `SfTreeGrid.I
     </Grid>
 </Page> 
 {% endhighlight %}
-{% endtabs %}
-{% tabs %}
 {% highlight c# %}
 namespace GettingStarted
 {
