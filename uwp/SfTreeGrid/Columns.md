@@ -1,0 +1,700 @@
+---
+layout: post
+title: Columns in SfTreeGrid for UWP
+description: Columns
+platform: uwp
+control: SfTreeGrid
+documentation: ug
+---
+
+# Columns
+
+SfTreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnsTopic.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
+
+Below are the built-in column types supported in SfTreeGrid. Each column has its own properties to handle different types of data. 
+
+<table>
+<tr>
+<th>
+Column Type
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+{{'[TreeGridTextColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnClassTopic.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the string data. 
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridNumericColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassTopic.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the numeric data
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassTopic.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the date time value 
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridComboBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridComboBoxColumnClassTopic.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the IEnumerable data using Combo Box.
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the Boolean type data
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridHyperlinkColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridHyperlinkColumnClassTopic.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the URI data
+</td>
+</tr>
+<tr>
+<td>
+{{'[TreeGridTemplateColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridTemplateColumnClassTopic.html#"")'| markdownify }}
+</td>
+<td>
+Use to display the custom template-specified content.
+</td>
+</tr>
+</table>
+
+## Defining Columns
+
+You can let the SfTreeGrid to create columns or you can manually defined columns to de displayed. Below sections explains both ways, 
+
+1. Automatically generating columns
+2. Manually define columns
+
+### Automatically generating columns
+
+The automatic column generation based on properties of data object can be enabled or disabled by setting [SfTreeGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassAutoGenerateColumnsTopic.html). Default value is `true`. 
+
+Columns are generated based on type of property. For example, [TreeGridNumericColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassTopic.html) is added for `int` type property. Below are table shows data type and its column type. For remaining types, [TreeGridTextColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnClassTopic.html) will be added. 
+
+<table>
+<tr>
+<th>
+Data Type
+</th>
+<th>
+Column
+</th>
+</tr>
+<tr>
+<td>
+string, object, dynamic
+</td>
+<td>
+TreeGridTextColumn
+</td>
+</tr>
+<tr>
+<td>
+int, float, double, decimal and also it’s nullables
+</td>
+<td>
+TreeGridNumericColumn
+</td>
+</tr>
+<tr>
+<td>
+DateTime, DateTimeOffset and also it’s nullables
+</td>
+<td>
+TreeGridDateTimeColumn
+</td>
+</tr>
+<tr>
+<td>
+uri, uri?
+</td>
+<td>
+TreeGridHyperLinkColumn
+</td>
+</tr>
+<tr>
+<td>
+bool, bool?
+</td>
+<td>
+TreeGridCheckBoxColumn
+</td>
+</tr>
+</table>
+
+
+N> The order of columns in the collection will determine the order of that they will appear in SfTreeGrid.
+
+#### AutoGenerateColumns with different modes
+
+Column auto generation is controlled using [SfTreeGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassAutoGenerateColumnsModeTopic.html) property.
+
+The `SfTreeGrid.AutoGenerateColumnsMode` includes the following modes.
+
+
+<table>
+<tr>
+<th>
+Mode
+</th>
+<th>
+Behavior
+</th>
+<th>
+When ItemsSource changed
+</th>
+</tr>
+<tr>
+<td>
+`Reset`
+</td>
+<td>
+Generates the columns based on the properties defined in the underlying data object.
+</td>
+<td>
+Keeps the columns added manually. 
+Clears the columns which are auto generated before and creates new columns based on new ItemsSource.
+</td>
+</tr>
+<tr>
+<td>
+`RetainOld`
+</td>
+<td>
+Generates the columns based on the properties defined in the underlying data object.
+</td>
+<td>
+The same columns will be maintained when changing ItemsSource also. So filtering, sorting and grouping settings will be maintained.
+</td>
+</tr>
+<tr>
+<td>
+`ResetAll`
+</td>
+<td>
+Generates the columns based on the properties defined in the underlying data object.
+</td>
+<td>
+Clear all the columns including the columns defined manually and creates new columns based on new ItemsSource.
+</td>
+</tr>
+<tr>
+<td>
+`None`
+</td>
+<td>
+Columns will not be generated.
+</td>
+<td>
+Keeps old columns in TreeGrid.Columns collection.
+</td>
+</tr>
+</table>
+
+
+### Customize auto-generated columns
+
+You can customize or cancel the generated column by handling [AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAutoGeneratingColumnTopic.html) event. `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
+
+{% tabs %}
+{% highlight c# %}
+this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+            
+}
+{% endhighlight %}
+{% endtabs %}
+
+[TreeGridAutoGeneratingColumnEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridAutoGeneratingColumnEventArgsClassTopic.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [TreeGridAutoGeneratingColumnEventArgs.Column](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridAutoGeneratingColumnEventArgsClassColumnTopic.html) property returns the newly created column.
+
+#### Cancel column generation for particular property
+
+You can cancel the specific column adding to the TreeGrid by handling `AutoGeneratingColumn` event.
+
+In the below code, column generation for `OrderID` property is cancelled by setting `Cancel` property to `true`. 
+
+{% tabs %}
+{% highlight c# %}
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
+
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+    if (e.Column.MappingName == "ReportsTo")
+        e.Cancel = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Changing column type
+
+You can change the type of column adding to SfTreeGrid by setting the instance of column you want to add in `AutoGeneratingColumn` event. 
+In the below code, column type for `Salary` property is changed to `TreeGridTextColumn` by setting instance of TreeGridTextColumn to `Column` property. 
+
+{% tabs %}
+{% highlight c# %}
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn; 
+
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+    if (e.Column.MappingName == "Salary")
+    {
+        if (e.Column is TreeGridNumericColumn)
+            e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Changing property settings
+
+You can change the column properties in `AutoGeneratingColumn` event handler. 
+
+{% tabs %}
+{% highlight c# %}
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+    if (e.Column.MappingName == "Salary")
+    {
+        e.Column.AllowEditing = false;
+        e.Column.AllowSorting = false;
+        e.Column.AllowFocus = true;
+        e.Column.AllowResizing = false;
+        e.Column.ColumnSizer = TreeColumnSizer.Star;
+        e.Column.AllowDragging = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Setting template to auto-generated column
+
+You can set [TreeGridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassHeaderTemplateTopic.html) and [TreeGridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateTopic.html) properties for auto-generated column in `AutoGeneratingColumn` event handler. 
+
+{% tabs %}
+{% highlight xaml %}
+<Page.Resources>
+    <DataTemplate x:Key="headerTemplate">
+        <TextBlock FontSize="10"
+                Text="This is the first name of the employee"
+                TextWrapping="Wrap" />
+    </DataTemplate>
+</Page.Resources>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
+{
+    if (e.Column.MappingName == "FirstName")
+    {
+        e.Column.HeaderTemplate = this.Resources["headerTemplate"] as DataTemplate;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+Below screenshot shows the customized header template loaded on the header of FirstName column.
+
+![](Columns_images/Columns_img1.jpeg)
+
+
+### Data Annotations with AutoGenerateColumns
+
+SfTreeGrid support to generate the columns based on built-in [Data Annotation Attributes](https://msdn.microsoft.com/en-us/library/mt185499.aspx). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
+
+
+#### Exclude column
+
+You can skip the column generation using `AutoGenerateField` property or set the `Bindable` attribute to false.
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(AutoGenerateField = false, Description = "Title field is not generated in UI")]
+public string Title
+{
+    get
+    {
+        return _title;
+    }
+    set
+    {
+        _title = value;
+        RaisePropertyChanged("Title");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Editing 
+
+You can change the value of the property using `Editable` attribute.
+
+{% tabs %}
+{% highlight c# %}
+[Editable(true)]
+public string FirstName
+{
+    get
+    {
+        return _firstName;
+    }
+    set
+    {
+        _firstName = value;
+        RaisePropertyChanged("FirstName");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Change the HeaderText of column
+
+You can customize header text of column using `Display.Name` property.
+
+{% tabs %}
+{% highlight c# %}
+[Display(Name ="FirstName of the employee",Description ="First Name is necessary for identification")]
+public string FirstName
+{
+    get
+    {
+        return _firstName;
+    }
+    set
+    {
+        _firstName = value;
+        RaisePropertyChanged("FirstName");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Change the order of the columns
+
+You can change the columns order using `DisplayAttribute.Order` property.
+
+{% tabs %}
+{% highlight c# %}
+[Display(Order = 0)]
+public string FirstName
+{
+    get { return _firstName; }
+    set
+    {
+        _firstName = value;
+        RaisePropertyChanged("FirstName");
+    }
+} 
+[Display(Order = -1)]
+public string LastName
+{
+    get { return _lastName; }
+    set
+    {
+        _lastName = value;
+        RaisePropertyChanged("LastName");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+The FirstName and LastName column rearranged based on specified order.
+
+![](Columns_images/Columns_img2.jpeg)
+
+#### Customizing data format 
+
+You can customize the data format using `DataTypeAttribute.DataType` property.
+
+{% tabs %}
+{% highlight c# %}
+[DataType(DataType.Currency)]
+public double? Salary
+{
+    get
+    {
+        return _salary;
+    }
+    set
+    {
+        _salary = value;
+        RaisePropertyChanged("Salary");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Manually defining columns
+
+SfTreeGrid control allows you to define the columns manually by adding desired column to the [SfTreeGrid.Columns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnsTopic.html) collection.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Name="treeGrid"
+                        AutoGenerateColumns="False"
+                        ChildPropertyName="ReportsTo"
+                        ItemsSource="{Binding EmployeeInfo}"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1">
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <syncfusion:TreeGridTextColumn HeaderText="Last Name" MappingName="LastName" />
+        <syncfusion:TreeGridTextColumn HeaderText="Employee ID" MappingName="ID" />
+        <syncfusion:TreeGridTextColumn MappingName="Title" />
+        <syncfusion:TreeGridNumericColumn MappingName="Salary" />
+        <syncfusion:TreeGridTextColumn MappingName="ReportsTo" />
+    </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "LastName", HeaderText = "Last Name" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ID", HeaderText = "Employee ID" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "Title" });
+treeGrid.Columns.Add(new TreeGridNumericColumn() { MappingName = "Salary" });
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "ReportsTo", HeaderText = "Reports To" });
+{% endhighlight %}
+{% endtabs %}
+
+You can refer more information about handling the column level operations for manually defined columns in Column types section.
+
+## Column manipulation
+
+You can get the columns (added or auto-generated) from [SfTreeGrid.Columns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnsTopic.html) property.
+
+### Adding column
+
+You can add column at runtime by adding instance of column to `SfTreeGrid.Columns` property.
+
+{% tabs %}
+{% highlight c# %}
+treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", HeaderText = "First Name" });
+{% endhighlight %}
+{% endtabs %}
+
+### Accessing column
+
+You can access the column through its column index or [TreeGridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMappingNameTopic.html) from the SfTreeGrid.Columns collection.
+
+{% tabs %}
+{% highlight c# %}
+TreeGridColumn column = treeGrid.Columns[1];
+//OR
+TreeGridColumn column = treeGrid.Columns["FirstName"];
+{% endhighlight %}
+{% endtabs %}
+
+### Clearing or Removing Column
+
+You can remove all the columns by clearing the `SfTreeGrid.Columns` property.
+
+{% tabs %}
+{% highlight c# %}
+this.treeGrid.Columns.Clear();
+{% endhighlight %}
+{% endtabs %}
+You can remove a column using Remove and RemoveAt methods.
+<table>
+<th>
+<td>
+treeGrid.Columns.Remove(column);
+//OR
+treeGrid.Columns.RemoveAt(1);
+</td>
+</th>
+</table>
+
+## Resizing Columns
+
+SfTreeGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfTreeGrid.AllowResizingColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAllowResizingColumnsTopic.html) or 
+
+[TreeGridColumn.AllowResizing](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnClassAllowResizingTopic.html) property.
+
+N> Resizing considers MinWidth and MaxWidth of column.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Name="treeGrid"
+                AllowResizingColumns="True"
+                AutoGenerateColumns="False"
+                ChildPropertyName="ReportsTo"
+                ItemsSource="{Binding EmployeeInfo}"
+                ParentPropertyName="ID"
+                SelfRelationRootValue="-1"/>
+{% endhighlight %}
+{% endtabs %}
+
+You can change the column width by click and dragging the resizing cursor at the edge of column header. The resizing cursor appears when you hover the grid line exists between two columns. 
+![](Columns_images/Columns_img3.jpeg)
+
+### Hidden column resizing
+
+SfTreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAllowResizingHiddenColumnsTopic.html) property to `true`.
+
+![](Columns_images/Columns_img4.jpeg)
+
+### Disable resizing
+
+You can cancel resizing of particular column by setting [TreeGridColumn.AllowResizing](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnClassAllowResizingTopic.html) property to `false`. In another way, you can cancel the resizing by handling [SfTreeGrid.ResizingColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassResizingColumnsTopic.html) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
+[ResizingColumnsEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridResizingColumnsEventArgsClassTopic.html) of `ResizingColumns` provides information about the columns’s index and width. 
+
+{% tabs %}
+{% highlight c# %}
+treeGrid.ResizingColumns += TreeGrid_ResizingColumns;
+
+private void TreeGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
+{
+    if (e.ColumnIndex == 1)
+        e.Cancel = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Column drag and drop
+
+You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfTreeGrid.AllowDraggingColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassAllowDraggingColumnsTopic.html) to `true`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeGrid Name="treeGrid"
+                        AllowDraggingColumns="True"
+                        AutoGenerateColumns="False"
+                        ChildPropertyName="ReportsTo"
+                        ItemsSource="{Binding EmployeeInfo}"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1"/>
+{% endhighlight %}
+{% endtabs %}
+
+![](Columns_images/Columns_img5.jpeg)
+
+You can enable or disable dragging on particular column using [TreeGridColumn.AllowDragging](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridColumnClassAllowDraggingTopic.html) property.
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:TreeGridTextColumn AllowDragging="True"
+                                HeaderText="First Name"
+                                MappingName="FirstName" />
+{% endhighlight %}
+{% endtabs %}
+### Disable column reordering
+You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDragging](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnDraggingTopic.html). `ColumnDragging` event occurs when you start dragging the column header. 
+
+[TreeGridColumnDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnDraggingEventArgsClassTopic.html) of `ColumnDragging` event provides information about the column triggered this event. 
+
+[TreeGridColumnDraggingEventArgs.From](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnDraggingEventArgsClassFromTopic.html) - It returns the index of column triggered this event.
+
+[TreeGridColumnDraggingEventArgs.To](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnDraggingEventArgsClassToTopic.html) - It returns the index where you try to drop the column. 
+
+[TreeGridColumnDraggingEventArgs.Reason](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnDraggingEventArgsClassReasonTopic.html) - It returns column dragging details by [QueryColumnDraggingReason](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridQueryColumnDraggingReasonClassTopic.html).  
+
+
+{% tabs %}
+{% highlight c# %}
+treeGrid.ColumnDragging += TreeGrid_ColumnDragging;
+
+private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventArgs e)
+{
+    var column = treeGrid.Columns[e.From];
+    if(column.MappingName=="FirstName" && e.Reason==QueryColumnDraggingReason.Dropping)
+    {
+        e.Cancel = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Column Sizing
+
+SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnSizerTopic.html) or [TreeGridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnClassColumnSizerTopic.html) property. 
+
+Below is the list of predefined column sizing options available.
+
+<table>
+<tr>
+<th>
+Type
+</th>
+<th>
+Column width
+</th>
+</tr>
+<tr>
+<td>
+Star
+</td>
+<td>
+Divides the total width equally for columns. 
+</td>
+</tr>
+<tr>
+<td>
+None
+</td>
+<td>
+Default column width or defined width set to column.
+</td>
+</tr>
+</table>
+
+## Binding column properties with ViewModel
+
+SfTreeGrid provides MVVM support for binding `TreeGridColumn` properties with ViewModel properties. 
+
+{% tabs %}
+{% highlight c# %}
+public class ViewModel
+{
+    private bool _allowEditing =true;
+    public bool AllowEditing
+    {
+        get { return _ allowEditing; }
+        set { _ allowEditing = value; }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn. AllowEditing` property.
+{% tabs %}
+{% highlight xaml %}
+<Page.DataContext>
+    <local:ViewModel/>
+</Page.DataContext>
+
+<syncfusion:SfTreeGrid Name="treeGrid"
+                        AllowEditing="False"
+                        AutoExpandMode="AllNodesExpanded"
+                        AutoGenerateColumns="False"
+                        ChildPropertyName="ReportsTo"
+                        ParentPropertyName="ID">
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridTextColumn AllowEditing="{Binding AllowEditing}" MappingName="ID" />
+    </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% endtabs %}
