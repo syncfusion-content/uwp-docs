@@ -32,10 +32,6 @@ Following are the key features of SfDataGrid control,
 
 ## Assembly deployment
 
-You can refer the assemblies from below location,
-
-[AssembliesLocation](http://help.syncfusion.com/uwp/installation-and-deployment#installed-location)
-
 The following list of assemblies needs to be added as reference to use SfDataGrid control in any application,
 
 <table>
@@ -155,6 +151,8 @@ In order to add control manually in XAML, do the below steps,
     * Syncfusion.SfGrid.UWP
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP
+    
+You can refer [here](http://help.syncfusion.com/uwp/installation-and-deployment#installed-location) to know the installed location of Assemblies.    
 
 2. Import SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 
@@ -192,6 +190,8 @@ In order to add control manually in C#, do the below steps,
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP
     
+You can refer [here](http://help.syncfusion.com/uwp/installation-and-deployment#installed-location) to know the installed location of Assemblies.
+
 2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid**.
 
 3. Create SfDataGrid control instance and add it to the Page.
