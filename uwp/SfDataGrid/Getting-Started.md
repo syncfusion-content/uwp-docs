@@ -32,6 +32,10 @@ Following are the key features of SfDataGrid control,
 
 ## Assembly deployment
 
+You can refer the assemblies from below location,
+
+[AssembliesLocation](http://help.syncfusion.com/uwp/installation-and-deployment#installed-location)
+
 The following list of assemblies needs to be added as reference to use SfDataGrid control in any application,
 
 <table>
