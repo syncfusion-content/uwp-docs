@@ -112,7 +112,7 @@ TreeGridTextColumn
 </tr>
 <tr>
 <td>
-int, float, double, decimal and also it’s nullables
+int, float, double, decimal and also it’s nullable
 </td>
 <td>
 TreeGridNumericColumn
@@ -120,7 +120,7 @@ TreeGridNumericColumn
 </tr>
 <tr>
 <td>
-DateTime, DateTimeOffset and also it’s nullables
+DateTime, DateTimeOffset and also it’s nullable
 </td>
 <td>
 TreeGridDateTimeColumn
@@ -128,7 +128,7 @@ TreeGridDateTimeColumn
 </tr>
 <tr>
 <td>
-uri, uri?
+Uri, Uri?
 </td>
 <td>
 TreeGridHyperLinkColumn
@@ -235,7 +235,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 You can cancel the specific column adding to the TreeGrid by handling `AutoGeneratingColumn` event.
 
-In the below code, column generation for `OrderID` property is cancelled by setting `Cancel` property to `true`. 
+In the below code, column generation for `OrderID` property is canceled by setting `Cancel` property to `true`. 
 
 {% tabs %}
 {% highlight c# %}
