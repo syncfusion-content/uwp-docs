@@ -265,7 +265,7 @@ SfTreeGrid triggers the following events during editing.
 
 [CurrentCellBeginEdit](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellBeginEditTopic.html) event occurs when the `CurrentCell` enter into edit mode. [TreeCurrentCellBeginEditEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCurrentCellBeginEditEventArgsClassTopic.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-*  [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) : When set to `true`, the event is cancelled and the `CurrentCell` does not enter into the edit mode.
+*  [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
 * [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCurrentCellBeginEditEventArgsClassRowColumnIndexTopic.html) : Gets the current row column index of the TreeGrid.
 
@@ -397,7 +397,7 @@ treeGrid.CurrentCellBeginEdit += TreeGrid_CurrentCellBeginEdit;void TreeGrid_Cur
 You can directly load edit element using [TreeGridTemplateColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateTopic.html) property. In this case, you can provide focus and control to the UIElement inside
  CellTemplate in the below ways,
 
-You can allow focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FousedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property to the `UIElement` inside DataTemplate and let the UIElement to handle keyboard operations which is loaded inside the template by setting [FocusManagerHelper.WantsKeyInput](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~WantsKeyInputProperty.html) attached property to `TreeGridColumn`.
+You can allow focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FocusedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property to the `UIElement` inside DataTemplate and let the UIElement to handle keyboard operations which is loaded inside the template by setting [FocusManagerHelper.WantsKeyInput](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~WantsKeyInputProperty.html) attached property to `TreeGridColumn`.
 
 {% tabs %}
 {% highlight xaml %}

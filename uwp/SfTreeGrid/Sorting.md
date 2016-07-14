@@ -265,7 +265,7 @@ this.treeGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnNam
 {% endhighlight %}
 {% endtabs %}
 
-Sorting `FirstName` column sorts the data using custom sort comparer availabe in `SfTreeGrid.SortComparers`.
+Sorting `FirstName` column sorts the data using custom sort comparer available in `SfTreeGrid.SortComparers`.
 
 ![](Sorting_images/Sorting_img4.png)
 
@@ -273,7 +273,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer availabe in
 
 ### SortColumnChanging event
 
-[SfTreegrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassSortColumnsChangingTopic.html) event occurs while sorting the columns by clicking column header. [GridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridSortColumnsChangingEventArgsClassTopic.html) has following members which provides information for `SortColumnChanging` event.
+[SfTreeGrid.SortColumnChanging](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassSortColumnsChangingTopic.html) event occurs while sorting the columns by clicking column header. [GridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridSortColumnsChangingEventArgsClassTopic.html) has following members which provides information for `SortColumnChanging` event.
 
 [Action](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridSortColumnsChangingEventArgsClassActionTopic.html) - Gets the action triggered this event. 
 

@@ -189,7 +189,7 @@ In the below code snippet, `TreeGridNumericColumn` is loaded with `ProgressBar` 
 ![](ColumnTypes_images/ColumnTypes_img2.png)
 
 
-`CellTemplate` is not support by [TreeGridHyerplinkColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridHyperlinkColumnClassTopic.html) and [TreeGridCheckboxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html) columns.
+`CellTemplate` is not support by [TreeGridHyperlinkColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridHyperlinkColumnClassTopic.html) and [TreeGridCheckboxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html) columns.
 
 #### Reusing same DataTemplate for multiple columns
 
@@ -304,7 +304,7 @@ N> Non-Editable columns does not support `CellTemplate`.
 
 You can bind properties in ViewModel with the controls in CellTemplate.
  
-Below command defined in ViewModel is bound to `Button` inside `CellTempate`. Below code, denote the base command.
+Below command defined in ViewModel is bound to `Button` inside `CellTemplate`. Below code, denote the base command.
 
 {% tabs %}
 {% highlight c# %}
@@ -423,7 +423,7 @@ In the below code, Button inside CellTemplate bound to the command in ViewModel.
 
 ### Data Formatting
 
-`TreeGridColum` supports to format the data using[Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx# "") properties, by defining `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. `TreeGridColumn.DisplayBinding` formats the data in display mode. `TreeGridColumn.ValueBinding` formats the data in edit mode.
+`TreeGridColumn` supports to format the data using[Converter](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.binding.converter.aspx# "") properties, by defining `TreeGridColumn.DisplayBinding` and `TreeGridColumn.ValueBinding`. `TreeGridColumn.DisplayBinding` formats the data in display mode. `TreeGridColumn.ValueBinding` formats the data in edit mode.
 
 #### Format column using Converter
 
@@ -783,7 +783,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 ### Data formatting
 
-`TreeGridNumericColum` allows you to format the numeric data by specifying the[predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) into [TreeGridNumericColumn.FormatString](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassFormatStringTopic.html) property. 
+`TreeGridNumericColumn` allows you to format the numeric data by specifying the[predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) into [TreeGridNumericColumn.FormatString](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassFormatStringTopic.html) property. 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:TreeGridNumericColumn  MappingName="Salary" 
@@ -1516,7 +1516,7 @@ treeGrid.Columns.Add(new TreeGridHyperlinkColumn()
 
 You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellRequestNavigateTopic.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `TreeGridHyperLinkColumn` is clicked for navigation.  
 
-[CurrentCellRequestNavigateEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassTopic.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. [CurrentCellRequestNavigateEventArgs.NavigateText](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassNavigateTextTopic.html) returns the value using `ValueBinding` or `MappinName` to navigate. 
+[CurrentCellRequestNavigateEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassTopic.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. [CurrentCellRequestNavigateEventArgs.NavigateText](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassNavigateTextTopic.html) returns the value using `ValueBinding` or `MappingName` to navigate. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1575,7 +1575,7 @@ You can create your own column by overriding the predefined column types in SfTr
 
 For example, the `TreeGridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://msdn.microsoft.com/en-us/library/system.datetimeoffset.aspx) value, you can create a new column by overriding the `TreeGridDateTimeColumn` class.
 
-In the below code snippet, converter created to format the DateTimeOffSet value to DateTime by defining `ValueBinding` (edit) and `DispalyBinding` (non-edit).
+In the below code snippet, converter created to format the DateTimeOffSet value to DateTime by defining `ValueBinding` (edit) and `DisplayBinding` (non-edit).
 
 {% tabs %}
 {% highlight c# %}
