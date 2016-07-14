@@ -781,7 +781,7 @@ Represents SfTreeGrid column that hosts `CheckBox` controls in its cells.
 TreeGridHyperlinkColumn
 </td>
 <td>
-Represents SfTreeGrid column that hosts `HyperLink` controlsin its cells.
+Represents SfTreeGrid column that hosts `HyperLink` controls in its cells.
 </td>
 </tr>
 <tr>
