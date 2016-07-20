@@ -57,17 +57,14 @@ Now the SyncfusionControls for UWP XAML reference is added to the application re
 
 You need to initialize the NavigationDrawer represented by the following class Syncfusion.UI.Xaml.NavigationDrawer.
 
-{% tabs %}
+
 {% highlight xml %}
         
-        <syncfusion:SfNavigationDrawer>
-        
-        
+        <syncfusion:SfNavigationDrawer>  
         
         </syncfusion:SfNavigationDrawer> 
 
 {% endhighlight %}
-{% endtabs %}
 
 ## Adding contentview to the NavigationDrawer
 
@@ -139,7 +136,7 @@ The DrawerView is a panel that is the hidden content, brought to the view by man
 		 </syncfusion:SfNavigationDrawer.DrawerFooterView>
 	     </syncfusion:SfNavigationDrawer>
 
-{% endhighlight %
+{% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)                       
