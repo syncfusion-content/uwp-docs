@@ -162,7 +162,7 @@ Gets or sets the threshold value from the edges for easy panning from the edges.
 {% endhighlight %}
 {% endtabs %}
 
-##Animation Duration
+## Animation Duration
 
 Gets or sets the TimeSpan value, by which the DrawerContent can be brought to view.
 
