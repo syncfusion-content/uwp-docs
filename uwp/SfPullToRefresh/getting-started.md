@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-## Create your first SfPullToRefresh in Universal Windows
+## Create your first SfPullToRefresh in Universal Windows Platform
 
 This section encompasses on how to create a PullToRefresh that lets you to refresh the current content of the application. 
 
@@ -49,11 +49,11 @@ Refer to the following code to add the SfPullToRefresh control:
 
 
 
-## Customizing a simple SfPulToRefresh sample
+## Customizing a simple SfPullToRefresh sample
 
 To develop an application with UWP PullToRefresh is simple. The following steps explains how to create and configure its properties.
 
-1. Create an instance for the `SfPullToRefresh` in the constructor and set the `SfPullToRefresh` control as in the Xaml page of the Application. 
+1. Create an instance for the `SfPullToRefresh` in the constructor and set the `SfPullToRefresh` control as in the XAML page of the Application. 
 
 {%highlight Xaml%}
 
@@ -262,7 +262,7 @@ The `ItemsSource` can be populated to the ScrollViewer and the main Grid from th
 
 {% endhighlight %}
 
-    N> The ItemsSource populated for all code snippets in the document are asssumed from the above table
+    N> The ItemsSource populated for all code snippets in the document are assumed from the above table
 
 SfPullToRefresh:
 
