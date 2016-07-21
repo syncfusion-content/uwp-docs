@@ -54,7 +54,7 @@ Higher level bar style can be customized using the following properties.
 ![HigherBarTickLineStyle](Customization_images/Customization_img2.jpeg)
 
 
-* [`HigherLevelBarStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassHigherLevelBarStyleTopic.html#)- Gets or sets the styles for the higherlabelbar of SfDateTimeRangeNavigator.
+* [`HigherLevelBarStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassHigherLevelBarStyleTopic.html#)- Gets or sets the styles for the higher label bar of SfDateTimeRangeNavigator.
 * [`HigherLabelStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassHigherLabelStyleTopic.html#)- Gets or sets the higher label style.
 * [`SelectedLabelStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsLabelBarStyleClassSelectedLabelStyleTopic.html#)- Gets or sets the style for labels in the selected region.
 * [`Position`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsLabelBarStyleClassPositionTopic.html#)- Gets or sets position value which is used to position the upper and lower labels inside or outside. 
@@ -177,7 +177,7 @@ XBindingPath="Date" >  </chart:SfDateTimeRangeNavigator>
 ![](Customization_images/Customization_img6.jpeg)
 
 
-* [`LowerLevelBarStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassLowerLevelBarStyleTopic.html#)- Gets or sets the styles for the lowerlabelbar of SfDateTimeRangeNavigator.
+* [`LowerLevelBarStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassLowerLevelBarStyleTopic.html#)- Gets or sets the styles for the lower label bar of SfDateTimeRangeNavigator.
 * [`LowerLabelStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassLowerLabelStyleTopic.html#) – Gets or sets the lower label style.
 
 {% highlight xaml %}

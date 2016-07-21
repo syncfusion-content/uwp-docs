@@ -10,7 +10,7 @@ documentation: ug
 
 The SfDateTimeRangeNavigator helps the user to visualize large data in a simplified manner. The timespan of the data is represented in the higher level bar and lower level bar. The timespan in default is calculated smartly and provide suitable DateTime format and Interval for the given data. It can hold any type of UI element inside the Navigator.
 
-The following properties are used while selecting the range of data from the SfDateTimeRangenavigator.
+The following properties are used while selecting the range of data from the SfDateTimeRangeNavigator.
 
 * [`ViewRangeStart`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfRangeNavigatorClassViewRangeStartTopic.html#)- Gets or sets Navigator's Start Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
 * [`ViewRangeEnd`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfRangeNavigatorClassViewRangeEndTopic.html#)- Gets or sets Navigator's End Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
