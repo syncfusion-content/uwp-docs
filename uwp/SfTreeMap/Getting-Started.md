@@ -60,8 +60,79 @@ Now the SyncfusionControls for UWP XAML reference is added to the application re
 
 Refer to the following code to add a TreeMap in an application:
 
-### Code Sample:
+### Create DataModel for TreeMap:
 
+SfTreeMap is a data-bound control. Hence you must create a data model to bind it to the control.
+
+1.Create data object class and declare properties as shown below 
+
+{% highlight c# %}
+      
+            public class PopulationDetail
+            {
+                public string Continent { get; set; }
+                public string Country { get; set; }
+                public double Growth { get; set; }
+                public double Population { get; set; }
+            }
+
+{% endhighlight %}
+
+2.Create a ViewModel class and assign data values to the PopulationDetail properties
+
+{% highlight c# %}
+
+    public class PopulationViewModel
+        {
+            public PopulationViewModel()
+            {
+                this.PopulationDetails = new ObservableCollection<PopulationDetail>();
+                PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Malaysia", Growth = 1, Population = 29672000 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "United States", Growth = 4, Population = 315645000 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Mexico", Growth = 2, Population = 112336538 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Canada", Growth = 1, Population = 35056064 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Colombia", Growth = 1, Population = 47000000 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Brazil", Growth = 3, Population = 193946886 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000 });
+                PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775 });
+            }
+
+            public ObservableCollection<PopulationDetail> PopulationDetails
+            {
+                get;
+                set;
+            }
+
+        }
+
+{% endhighlight %}
+
+### Binding data to the TreeMap
+
+1.Setting DataContext to the MainWindow
+
+{% highlight c# %}
+
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.TreeMap.DataContext = new PopulationViewModel();
+        }
+    }
+
+ {% endhighlight %}
+
+
+2.Setting ItemsSource to the TreeMap control
+
+{% tabs %}
 {% highlight xml %}
 
     <Page x:Class="App.MainPage"
@@ -78,17 +149,37 @@ Refer to the following code to add a TreeMap in an application:
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-        <syncfusion:SfTreeMap>
+            <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" >
 
-        </syncfusion:SfTreeMap>
+            </syncfusion:SfTreeMap>
 
     </Grid>
 
     </Page>
 
 {% endhighlight %}
+{% endtabs %}
+
+3.Setting WeightValuePath to the SfTreeMap 
+
+The SfTreeMap generates treemap items based on the property `WeightValuPath` . It is a bindable property and it decides how to display the treemap items.
+
+You can calculate the size of the object with the help of `WeightValuePath` of TreeMap. WeightValuePath value `Population` has been assigned from one of the above DataModel field.  
+
+{% highlight xml %}
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" >
+
+        </syncfusion:SfTreeMap>
+    </Grid>
+
+{% endhighlight %}
+
+
+N>  The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection and it should be numerical value.
 
 
 
-
+![](GettingStarted_images/treemapimage.png)
 
