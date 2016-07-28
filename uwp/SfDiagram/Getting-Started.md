@@ -32,7 +32,7 @@ This section demonstrates how to visualize the Employee details in the Organizat
     1. Open the Add reference window from your project.
     2. Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
     
-![](Getting-Started_images\Getting_Started_img.png)
+![](Getting-Started_images\Getting-Started_img.png)
 
 ###Add the SfDiagram from the Toolbox
 
