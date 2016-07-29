@@ -13,7 +13,7 @@ The following section helps you to build your application with SfDiagram.
 
 ## Steps
 
-   * Create new Universal Windows project using Visual Studio.
+   * Create new Universal Windows Platform project using Visual Studio.
    * Add the SfDiagram assembly to your application. 
    * Initialize SfDiagram control.
    * Initialize Nodes and Connectors.
@@ -100,7 +100,7 @@ public class Employees : ObservableCollection<Employee>
 
 ###Initialize Data
 
-Create a collection of employees with each employee having an ID in the Emp id and the reporting person’s ID in the Parent ID. This collection is placed in the Window resource and later incorporated in the Diagram. This is explained in the next point.
+Create a collection of employees with each employee having an ID in the Employee id and the reporting person’s ID in the Parent ID. This collection is placed in the Window resource and later incorporated in the Diagram. This is explained in the next point.
 
 {% highlight xaml %}
 
