@@ -19,7 +19,7 @@ The following code illustrates how to set a squarified in Treemap.
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -73,7 +73,7 @@ The following code illustrates how to set a slice and dice layout in Treemap.
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -124,7 +124,7 @@ The following code illustrates how to set a slice and dice layout horizontally i
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -179,7 +179,7 @@ The following code illustrates how to set a slice and dice layout vertically in 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 

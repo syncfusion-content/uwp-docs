@@ -27,7 +27,7 @@ You can calculate the size of the object with the help of `WeightValuePath` of T
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" >
@@ -51,7 +51,7 @@ The SfTreeMap applying colors to the treemap nodes based on the property `ColorV
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth" >
