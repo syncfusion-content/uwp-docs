@@ -13,7 +13,7 @@ LeafLabelPath of SfTreeMap is a path to a field on the source object, which serv
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 

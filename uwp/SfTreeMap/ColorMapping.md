@@ -22,7 +22,7 @@ The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
  <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -52,7 +52,7 @@ The headers of TreeMap level can also be colored using ColorMapping property of 
 
 ### Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
  <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -100,7 +100,7 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -156,7 +156,7 @@ The leaf nodes of TreeMap can be colored based upon the range (i.e., From and To
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -212,7 +212,7 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"   
 
@@ -253,7 +253,7 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"                              
 

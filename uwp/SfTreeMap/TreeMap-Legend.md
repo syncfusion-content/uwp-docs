@@ -17,7 +17,7 @@ The legend can be positioned to Left, Right, Top or Bottom of TreeMap with the h
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 

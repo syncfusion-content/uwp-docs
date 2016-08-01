@@ -41,7 +41,7 @@ ColorValuePath ofSfTreeMap is a path to a field on the source object, which serv
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -67,7 +67,7 @@ LeafLabelPath of SfTreeMap is a path to a field on the source object, which serv
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -105,7 +105,7 @@ The ItemsSource set for SfTreeMap must be a flat collection of data. The followi
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -195,7 +195,7 @@ You must specify the GroupPath for each and every flat level of TreeMap. It is a
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -235,7 +235,7 @@ You can specify GroupGap for separating the items of every flat level and it is 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -275,7 +275,7 @@ The ItemsSource set for TreeMap must be a nested data collection. The following 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -537,7 +537,7 @@ You must specify ChildPath for each and every hierarchical level of TreeMap. It 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -579,7 +579,7 @@ You can specify ChildGap for separating the child items of every level and it is
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -625,7 +625,7 @@ The following code illustrates how to set a squarified in Treemap.
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -678,7 +678,7 @@ The following code illustrates how to set a slice and dice layout in Treemap.
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -728,7 +728,7 @@ The following code illustrates how to set a slice and dice layout horizontally i
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -783,7 +783,7 @@ The following code illustrates how to set a slice and dice layout vertically in 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -847,7 +847,7 @@ The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -877,7 +877,7 @@ The headers of TreeMap level can also be colored using ColorMapping property of 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -925,7 +925,7 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -981,7 +981,7 @@ The leaf nodes of TreeMap can be colored based upon the range (i.e., From and To
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -1037,7 +1037,7 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"   
 
@@ -1080,7 +1080,7 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"                              
 
@@ -1142,7 +1142,7 @@ The legend can be positioned to Left, Right, Top or Bottom of TreeMap with the h
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -1221,7 +1221,7 @@ If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -1265,7 +1265,7 @@ Code Sample:
 
 
 
- {% highlight xml %}
+ {% highlight xaml %}
 
 
 
@@ -1305,7 +1305,7 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -1347,7 +1347,7 @@ For TreeMap with Hierarchical Collection, LabelPath must be specified. The label
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -1382,7 +1382,7 @@ You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For mod
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -1483,7 +1483,7 @@ While selecting a leaf node, you can highlight it by setting HighlightOnSelectio
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -1512,7 +1512,7 @@ You can customize leaf nodes by assigning data template to LeafTemplate of SfTre
 Code Sample:
 
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}"> 
     <Grid.DataContext> 

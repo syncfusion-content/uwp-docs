@@ -14,7 +14,7 @@ You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For mod
 
 ## Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
