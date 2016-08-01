@@ -45,7 +45,7 @@ Gets or sets a color for highlighting tree map item while drill down.</td></tr>
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Highlighting Support
 
-While selecting a leaf node, you can highlight it by setting HighlightOnSelection property of SfTreeMap to “True”. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap.
+While selecting a leaf node, you can highlight it by setting `HighlightOnSelection` property of SfTreeMap to “True”. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap.
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 

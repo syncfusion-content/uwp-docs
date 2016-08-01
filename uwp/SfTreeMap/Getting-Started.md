@@ -37,7 +37,7 @@ Now the SyncfusionControls for UWP XAML reference is added to the application re
 
 ![](GettingStarted_images/addingreference.png)
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Page
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -133,7 +133,7 @@ SfTreeMap is a data-bound control. Hence you must create a data model to bind it
 2.Setting ItemsSource to the TreeMap control
 
 {% tabs %}
-{% highlight xml %}
+{% highlight xaml %}
 
     <Page x:Class="App.MainPage"
 
@@ -166,7 +166,7 @@ The SfTreeMap generates treemap items based on the property `WeightValuPath` . I
 
 You can calculate the size of the object with the help of `WeightValuePath` of TreeMap. WeightValuePath value `Population` has been assigned from one of the above DataModel field.  
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" >

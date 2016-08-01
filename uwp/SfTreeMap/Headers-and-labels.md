@@ -18,7 +18,7 @@ If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -62,7 +62,7 @@ Code Sample:
 
 
 
- {% highlight xml %}
+ {% highlight xaml %}
 
 
 
@@ -102,7 +102,7 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -144,7 +144,7 @@ For TreeMap with Hierarchical Collection, LabelPath must be specified. The label
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
