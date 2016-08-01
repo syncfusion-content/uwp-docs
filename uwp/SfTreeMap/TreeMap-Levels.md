@@ -25,7 +25,7 @@ The ItemsSource set for SfTreeMap must be a flat collection of data. The followi
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -115,7 +115,7 @@ You must specify the GroupPath for each and every flat level of TreeMap. It is a
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -155,7 +155,7 @@ You can specify GroupGap for separating the items of every flat level and it is 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -195,7 +195,7 @@ The ItemsSource set for TreeMap must be a nested data collection. The following 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -457,7 +457,7 @@ You must specify ChildPath for each and every hierarchical level of TreeMap. It 
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
@@ -499,7 +499,7 @@ You can specify ChildGap for separating the child items of every level and it is
 
 Code Sample:
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
