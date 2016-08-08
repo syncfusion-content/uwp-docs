@@ -19,99 +19,10 @@ The levels of TreeMap can be categorized into two types such as,
 
 TreeMapFlatLevel is used to define levels for flat data collection. 
 
-### ItemsSource:
-
-The ItemsSource set for SfTreeMap must be a flat collection of data. The following code shows how to bind a flat collection as ItemsSource to a TreeMap.
-
-Code Sample:
-
-{% highlight xaml %}
-
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
-        <Grid.DataContext>
-
-            <local:PopulationViewModel/>
-
-        </Grid.DataContext>
-
-        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
-
-                              WeightValuePath="Population"
-
-                              ColorValuePath="Growth"/>
-
-            </Grid>
-
-{% endhighlight %}
-
-
-{% highlight c# %}
-
-    public class PopulationViewModel
-
-    {
-
-        public PopulationViewModel()
-
-        {
-
-            this.PopulationDetails = new
-
-            ObservableCollection<PopulationDetail>();
-
-      PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326 });
-
-      PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015 });
-
-      PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "United States", Growth = 4, Population = 315645000 });
-
-      PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Mexico", Growth = 2, Population = 112336538 });
-
-      PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000 });            
-
-      PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000 });
-
-      PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000 });
-
-      PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000 });
-
-        PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775 });
-
-        }
-
-        public ObservableCollection<PopulationDetail> PopulationDetails
-
-        {
-
-            get;
-
-            set;
-
-        }
-
-        public class PopulationDetail
-
-        {
-
-            public string Continent { get; set; }
-
-            public string Country { get; set; }
-
-            public double Growth { get; set; }
-
-            public double Population { get; set; }
-
-        }        
-
-    }
-
-{% endhighlight %}
-
 
 ### GroupPath:
 
-You must specify the GroupPath for each and every flat level of TreeMap. It is a path to a field on the source object, which serves as the “Group” for the levels specified. Based upon the GroupPath, the data is grouped in the TreeMap. If GroupPath is not specified, then the items are not grouped, and it is shown in the order, in which they are specified in the ItemsSource.
+You must specify the `GroupPath` for each and every flat level of TreeMap. It is a path to a field on the source object, which serves as the “Group” for the levels specified. Based upon the GroupPath, the data is grouped in the TreeMap. If GroupPath is not specified, then the items are not grouped, and it is shown in the order, in which they are specified in the ItemsSource.
 
 Code Sample:
 
@@ -137,10 +48,6 @@ Code Sample:
 
             </syncfusion:TreeMapFlatLevel>
 
-            <syncfusion:TreeMapFlatLevel GroupPath="Country">
-
-            </syncfusion:TreeMapFlatLevel>
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -151,7 +58,7 @@ Code Sample:
 
 ### GroupGap:
 
-You can specify GroupGap for separating the items of every flat level and it is used to differentiate the levels mentioned for TreeMap.
+You can specify `GroupGap` for separating the items of every flat level and it is used to differentiate the levels mentioned for TreeMap.
 
 Code Sample:
 
@@ -189,9 +96,7 @@ Code Sample:
 
 TreeMapHierarchicalLevel is used to define levels for hierarchical data collection which contains tree-structured data. 
 
-### ItemsSource:
-
-The ItemsSource set for TreeMap must be a nested data collection. The following code shows how to bind a hierarchical data collection as ItemsSource for TreeMap.
+The following code shows how to bind a hierarchical data collection as ItemsSource for TreeMap.
 
 Code Sample:
 

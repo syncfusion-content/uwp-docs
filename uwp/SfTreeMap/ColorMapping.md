@@ -16,83 +16,14 @@ ColorMapping is categorized into four different types such as,
 * DesaturationColorMapping
 * PaletteColorMapping
 
+## ColorValuePath
+
+`ColorValuePath` of SfTreeMap is a path to a field on the source object, which serves as the "Color" of the object.
+
 ### TreeMap ColorMapping:
 
 The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
-Code Sample:
-
-{% highlight xaml %}
-
- <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
-
-                       WeightValuePath="Population"                              
-
-                       ColorValuePath="Growth">
-
-    <syncfusion:SfTreeMap.LeafColorMapping>
-
-        <syncfusion:UniColorMapping Color="Crimson"/>
-
-    </syncfusion:SfTreeMap.LeafColorMapping>
-
-    <syncfusion:SfTreeMap.Levels>
-
-        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
-
-    </syncfusion:SfTreeMap.Levels>
-
- </syncfusion:SfTreeMap>
-
-{% endhighlight %}
-
-### TreeMapLevel ColorMapping:
-
-The headers of TreeMap level can also be colored using ColorMapping property of TreeMapLevel. 
-
-### Code Sample:
-
-{% highlight xaml %}
-
- <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
-
-                       WeightValuePath="Population"                              
-
-                       ColorValuePath="Growth">
-
-    <syncfusion:SfTreeMap.LeafColorMapping>
-
-        <syncfusion:UniColorMapping Color="Orange"/>
-
-    </syncfusion:SfTreeMap.LeafColorMapping>
-
-    <syncfusion:SfTreeMap.Levels>
-
-        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" HeaderHeight="20">
-
-            <syncfusion:TreeMapFlatLevel.ColorMapping>
-
-                <syncfusion:UniColorMapping Color="YellowGreen"/>
-
-            </syncfusion:TreeMapFlatLevel.ColorMapping>
-
-        </syncfusion:TreeMapFlatLevel>
-
-        <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5" HeaderHeight="15">
-
-            <syncfusion:TreeMapFlatLevel.ColorMapping>
-
-                <syncfusion:UniColorMapping Color="Crimson"/>
-
-            </syncfusion:TreeMapFlatLevel.ColorMapping>
-
-        </syncfusion:TreeMapFlatLevel>
-
-    </syncfusion:SfTreeMap.Levels>
-
-    </syncfusion:SfTreeMap>  
-
-{% endhighlight %}
 
 ## UniColorMapping
 
@@ -102,19 +33,11 @@ Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+  <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
-        <Grid.DataContext>
+                       WeightValuePath="Population"                              
 
-            <local:PopulationViewModel/>
-
-        </Grid.DataContext>
-
-        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"                              
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
+                       ColorValuePath="Growth">
 
             <syncfusion:SfTreeMap.LeafColorMapping>
 
@@ -123,22 +46,16 @@ Code Sample:
             </syncfusion:SfTreeMap.LeafColorMapping>
 
             <syncfusion:SfTreeMap.Levels>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Continent" 
-
-                                             GroupGap="10"/>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Country" 
-
-                                             GroupGap="5"
-
-                                             ShowLabels="True"/>
-
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" HeaderHeight="25" GroupGap="5" GroupPadding="5" GroupBackground="Transparent" GroupBorderBrush="#009900" GroupBorderThickness="1">
+                    <syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </DataTemplate>
+                    </syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                </syncfusion:TreeMapFlatLevel>
             </syncfusion:SfTreeMap.Levels>
 
         </syncfusion:SfTreeMap>
-
-    </Grid>
 
 {% endhighlight %}
 
@@ -158,43 +75,53 @@ Code Sample:
 
 {% highlight xaml %}
 
-<syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
+  
+        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
                       WeightValuePath="Population" ColorValuePath="Growth">
 
-    <syncfusion:SfTreeMap.LeafColorMapping>
+            <syncfusion:SfTreeMap.LeafItemSettings>
+                <syncfusion:LeafItemSettings>
+                    <syncfusion:LeafItemSettings.LabelTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Data.Country}" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                        </DataTemplate>
+                    </syncfusion:LeafItemSettings.LabelTemplate>
+                </syncfusion:LeafItemSettings>
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
-        <syncfusion:RangeBrushColorMapping>
+            <syncfusion:SfTreeMap.LeafColorMapping>
 
-            <syncfusion:RangeBrushColorMapping.Brushes>
+                <syncfusion:RangeBrushColorMapping>
 
-                <syncfusion:RangeBrush From="0" To="1" Color="#A4C400"/>
+                    <syncfusion:RangeBrushColorMapping.Brushes>
 
-                <syncfusion:RangeBrush From="1" To="2" Color="#AA00FF"/>
+                        <syncfusion:RangeBrush From="0" To="1" Color="#77D8D8"/>
 
-                <syncfusion:RangeBrush From="2" To="3" Color="#F0A30A"/>
+                        <syncfusion:RangeBrush From="1" To="2" Color="#AED960"/>
 
-                <syncfusion:RangeBrush From="3" To="4" Color="#1BA1E2"/>
+                        <syncfusion:RangeBrush From="2" To="3" Color="#FFAF51"/>
 
-            </syncfusion:RangeBrushColorMapping.Brushes>
+                        <syncfusion:RangeBrush From="3" To="4" Color="#F3D240"/>
 
-        </syncfusion:RangeBrushColorMapping>
+                    </syncfusion:RangeBrushColorMapping.Brushes>
 
-    </syncfusion:SfTreeMap.LeafColorMapping>
+                </syncfusion:RangeBrushColorMapping>
 
-    <syncfusion:SfTreeMap.Levels>
+            </syncfusion:SfTreeMap.LeafColorMapping>
 
-        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
+            <syncfusion:SfTreeMap.Levels>
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" HeaderHeight="25" GroupGap="5" GroupPadding="5" GroupBackground="Transparent" GroupBorderBrush="#009900" GroupBorderThickness="1">
+                    <syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        </DataTemplate>
+                    </syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                </syncfusion:TreeMapFlatLevel>
+            </syncfusion:SfTreeMap.Levels>
 
-        <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"
-
-                                     ShowLabels="True"/>
-
-    </syncfusion:SfTreeMap.Levels>
-
-    </syncfusion:SfTreeMap>
-
-
+        </syncfusion:SfTreeMap>
+        
 {% endhighlight %}
 
 
@@ -214,31 +141,36 @@ Code Sample:
 
 {% highlight xaml %}
 
-<syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"   
-
+  <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"   
                       WeightValuePath="Population" ColorValuePath="Growth">
+            
+            <syncfusion:SfTreeMap.LeafItemSettings>
+                <syncfusion:LeafItemSettings>
+                    <syncfusion:LeafItemSettings.LabelTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Data.Country}" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                        </DataTemplate>
+                    </syncfusion:LeafItemSettings.LabelTemplate>
+                </syncfusion:LeafItemSettings>
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
-    <syncfusion:SfTreeMap.LeafColorMapping>
+            <syncfusion:SfTreeMap.LeafColorMapping>
 
-        <syncfusion:DesaturationColorMapping From="1" To="0.5" 
+                <syncfusion:DesaturationColorMapping From="1" To="0.5" 
 
                                              RangeMinimum="0" RangeMaximum="4" Color="DeepSkyBlue">
 
-        </syncfusion:DesaturationColorMapping>
+                </syncfusion:DesaturationColorMapping>
 
-    </syncfusion:SfTreeMap.LeafColorMapping>
+            </syncfusion:SfTreeMap.LeafColorMapping>
 
-    <syncfusion:SfTreeMap.Levels>
+            <syncfusion:SfTreeMap.Levels>
 
-        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="5"/>
+            </syncfusion:SfTreeMap.Levels>
 
-        <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"
+        </syncfusion:SfTreeMap>
 
-                                     ShowLabels="True"/>
-
-    </syncfusion:SfTreeMap.Levels>
-
-    </syncfusion:SfTreeMap>
 
 {% endhighlight %}
 
@@ -255,45 +187,53 @@ Code Sample:
 
 {% highlight xaml %}
 
-<syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"                              
+  <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"                              
 
                       WeightValuePath="Population" ColorValuePath="Growth">
 
-    <syncfusion:SfTreeMap.LeafColorMapping>
+            <syncfusion:SfTreeMap.LeafItemSettings>
+                <syncfusion:LeafItemSettings>
+                    <syncfusion:LeafItemSettings.LabelTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Data.Country}" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                        </DataTemplate>
+                    </syncfusion:LeafItemSettings.LabelTemplate>
+                </syncfusion:LeafItemSettings>
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
-        <syncfusion:PaletteColorMapping>
+            <syncfusion:SfTreeMap.LeafColorMapping>
 
-            <syncfusion:PaletteColorMapping.Colors>
+                <syncfusion:PaletteColorMapping>
 
-                <SolidColorBrush Color="Red"/><SolidColorBrush Color="Blue"/>
+                    <syncfusion:PaletteColorMapping.Colors>
 
-                <SolidColorBrush Color="Green"/><SolidColorBrush Color="Yellow"/><SolidColorBrush Color="Orange"/><SolidColorBrush Color="Orchid"/><SolidColorBrush Color="Brown"/><SolidColorBrush Color="BlueViolet"/><SolidColorBrush Color="OrangeRed"/>
+                        <SolidColorBrush Color="Red"/>
+                        <SolidColorBrush Color="Blue"/>
+                        <SolidColorBrush Color="Green"/>
+                        <SolidColorBrush Color="Yellow"/>
+                        <SolidColorBrush Color="Orange"/>
+                        <SolidColorBrush Color="Orchid"/>
+                        <SolidColorBrush Color="Brown"/>
+                        <SolidColorBrush Color="BlueViolet"/>
+                        <SolidColorBrush Color="OrangeRed"/>
+                        <SolidColorBrush Color="Magenta"/>
+                        <SolidColorBrush Color="Olive"/>
+                        <SolidColorBrush Color="Crimson"/>
+                        <SolidColorBrush Color="DeepSkyBlue"/>
 
-                <SolidColorBrush Color="Magenta"/>
+                    </syncfusion:PaletteColorMapping.Colors>
 
-                <SolidColorBrush Color="Olive"/>
+                </syncfusion:PaletteColorMapping>
 
-                <SolidColorBrush Color="Crimson"/>
+            </syncfusion:SfTreeMap.LeafColorMapping>
 
-                <SolidColorBrush Color="DeepSkyBlue"/>
+            <syncfusion:SfTreeMap.Levels>
 
-            </syncfusion:PaletteColorMapping.Colors>
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="5"/>
 
-        </syncfusion:PaletteColorMapping>
+            </syncfusion:SfTreeMap.Levels>
 
-    </syncfusion:SfTreeMap.LeafColorMapping>
-
-    <syncfusion:SfTreeMap.Levels>
-
-        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
-
-        <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"
-
-                                     ShowLabels="True"/>
-
-    </syncfusion:SfTreeMap.Levels>
-
-    </syncfusion:SfTreeMap>
+        </syncfusion:SfTreeMap>
 
 {% endhighlight %}
 

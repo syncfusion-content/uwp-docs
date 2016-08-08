@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Highlighting Support
+# Selection
 
 While selecting a leaf node, you can highlight it by setting `HighlightOnSelection` property of SfTreeMap to “True”. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap.
 
