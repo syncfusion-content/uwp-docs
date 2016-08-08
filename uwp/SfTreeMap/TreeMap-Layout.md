@@ -9,7 +9,7 @@ documentation: ug
 
 # TreeMap Layout
 
-The ItemsLayoutMode for SfTreeMap specifies the layout mode of the tree map items. This layout is applied for all the tree map levels. There are four different TreeMap layouts such as,
+The `ItemsLayoutMode` for SfTreeMap specifies the layout mode of the treemap items. This layout is applied for all the tree map levels. There are four different treemap layouts such as,
 
 ## Squarified Layout
 
@@ -30,30 +30,32 @@ Code Sample:
         </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                            ItemsLayoutMode="Squarified"
+                            WeightValuePath="Population"  
+                            ColorValuePath="Growth">
 
-                              ItemsLayoutMode="Squarified"
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
+            <syncfusion:SfTreeMap.LeafItemSettings>
+                <syncfusion:LeafItemSettings>
+                    <syncfusion:LeafItemSettings.LabelTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Data.Country}" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                        </DataTemplate>
+                    </syncfusion:LeafItemSettings.LabelTemplate>
+                </syncfusion:LeafItemSettings>
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
             <syncfusion:SfTreeMap.Levels>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Continent" 
-
-                                             GroupGap="10"/>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Country" 
-
-                                             GroupGap="5"
-
-                                             ShowLabels="True"/>
-
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" HeaderHeight="25" GroupGap="5" GroupPadding="5" GroupBackground="Transparent" GroupBorderBrush="#009900" GroupBorderThickness="1">
+                    <syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                        <DataTemplate>
+                                <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>                           
+                        </DataTemplate>
+                    </syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                </syncfusion:TreeMapFlatLevel>
             </syncfusion:SfTreeMap.Levels>
-
         </syncfusion:SfTreeMap>
 
-    </Grid>  
+    </Grid>
 
 {% endhighlight %}
 
@@ -75,7 +77,7 @@ Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+   <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.DataContext>
 
@@ -84,30 +86,32 @@ Code Sample:
         </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                            ItemsLayoutMode="SliceAndDiceAuto"
+                            WeightValuePath="Population"  
+                            ColorValuePath="Growth">
 
-                              ItemsLayoutMode=" SliceAndDiceAuto"
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
+            <syncfusion:SfTreeMap.LeafItemSettings>
+                <syncfusion:LeafItemSettings>
+                    <syncfusion:LeafItemSettings.LabelTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Data.Country}" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                        </DataTemplate>
+                    </syncfusion:LeafItemSettings.LabelTemplate>
+                </syncfusion:LeafItemSettings>
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
             <syncfusion:SfTreeMap.Levels>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Continent" 
-
-                                             GroupGap="10"/>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Country" 
-
-                                             GroupGap="5"
-
-                                             ShowLabels="True"/>
-
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" HeaderHeight="25" GroupGap="5" GroupPadding="5" GroupBackground="Transparent" GroupBorderBrush="#009900" GroupBorderThickness="1">
+                    <syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                        <DataTemplate>
+                                <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>                           
+                        </DataTemplate>
+                    </syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                </syncfusion:TreeMapFlatLevel>
             </syncfusion:SfTreeMap.Levels>
-
         </syncfusion:SfTreeMap>
 
-    </Grid> 
+    </Grid>
 
 {% endhighlight %}
 	
@@ -135,30 +139,32 @@ Code Sample:
         </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                            ItemsLayoutMode="SliceAndDiceHorizontal"
+                            WeightValuePath="Population"  
+                            ColorValuePath="Growth">
 
-                              ItemsLayoutMode=" SliceAndDiceHorizontal"
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
+            <syncfusion:SfTreeMap.LeafItemSettings>
+                <syncfusion:LeafItemSettings>
+                    <syncfusion:LeafItemSettings.LabelTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Data.Country}" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                        </DataTemplate>
+                    </syncfusion:LeafItemSettings.LabelTemplate>
+                </syncfusion:LeafItemSettings>
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
             <syncfusion:SfTreeMap.Levels>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Continent" 
-
-                                             GroupGap="10"/>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Country" 
-
-                                             GroupGap="5"
-
-                                             ShowLabels="True"/>
-
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" HeaderHeight="25" GroupGap="5" GroupPadding="5" GroupBackground="Transparent" GroupBorderBrush="#009900" GroupBorderThickness="1">
+                    <syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                        <DataTemplate>
+                                <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>                           
+                        </DataTemplate>
+                    </syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                </syncfusion:TreeMapFlatLevel>
             </syncfusion:SfTreeMap.Levels>
-
         </syncfusion:SfTreeMap>
 
-    </Grid>    
+    </Grid>
 
 {% endhighlight %}
 
@@ -181,7 +187,7 @@ Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+   <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.DataContext>
 
@@ -190,30 +196,32 @@ Code Sample:
         </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
+                            ItemsLayoutMode="SliceAndDiceVertical"
+                            WeightValuePath="Population"  
+                            ColorValuePath="Growth">
 
-                              ItemsLayoutMode=" SliceAndDiceVertical"
-
-                              WeightValuePath="Population"                              
-
-                              ColorValuePath="Growth">
+            <syncfusion:SfTreeMap.LeafItemSettings>
+                <syncfusion:LeafItemSettings>
+                    <syncfusion:LeafItemSettings.LabelTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Data.Country}" TextWrapping="Wrap" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                        </DataTemplate>
+                    </syncfusion:LeafItemSettings.LabelTemplate>
+                </syncfusion:LeafItemSettings>
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
             <syncfusion:SfTreeMap.Levels>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Continent" 
-
-                                             GroupGap="10"/>
-
-                <syncfusion:TreeMapFlatLevel GroupPath="Country" 
-
-                                             GroupGap="5"
-
-                                             ShowLabels="True"/>
-
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" HeaderHeight="25" GroupGap="5" GroupPadding="5" GroupBackground="Transparent" GroupBorderBrush="#009900" GroupBorderThickness="1">
+                    <syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                        <DataTemplate>
+                                <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>                           
+                        </DataTemplate>
+                    </syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                </syncfusion:TreeMapFlatLevel>
             </syncfusion:SfTreeMap.Levels>
-
         </syncfusion:SfTreeMap>
 
-    </Grid>  
+    </Grid>
 
 {% endhighlight %}
 

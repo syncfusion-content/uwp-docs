@@ -23,7 +23,7 @@ If the data model implements the INotifyPropertyChanged interface, then the SfTr
 
 The SfTreeMap generates treemap items based on the property `WeightValuPath` . It is a bindable property and it decides how to display the treemap items.
 
-You can calculate the size of the object with the help of `WeightValuePath` of TreeMap 
+TreeMap calculates the size of the object with the help of `WeightValuePath`.
 
 Code Sample:
 

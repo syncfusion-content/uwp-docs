@@ -7,7 +7,7 @@ control: TreeMap
 documentation: ug
 ---
 
-# Drill Down Support
+# Drill Down 
 
 Treemap enables drill down to expose the hierarchy by clicking on a treemap node and allows drill up by clicking on drill down header. At a time, only one level of the hierarchy can be seen in the treemap.
 
