@@ -778,7 +778,7 @@ The following code example and screenshot shows LabelPlacement set to BetweenTic
 {% endhighlight %}
 
 
-![](Axis_images/Axis_img19.jpeg)
+![](Axis_images/Axis_img19.png)
 
 
 
