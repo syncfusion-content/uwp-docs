@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Leaf Nodes in TreeMap control
-description: Customizing Leaf Nodes
+title: Templates in TreeMap control
+description: Templates
 platform: UWP
 control: TreeMap
 documentation: ug
