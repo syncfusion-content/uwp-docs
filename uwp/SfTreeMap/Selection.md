@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Highlighting Support in TreeMap control
-description: Highlighting Support
+title: Selection in TreeMap control
+description: Selection
 platform: UWP
 control: TreeMap
 documentation: ug
@@ -17,20 +17,41 @@ Code Sample:
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
-                      WeightValuePath="Population" ColorValuePath="Growth"
+                        WeightValuePath="Population" ColorValuePath="Growth"
 
-                      HighlightOnSelection="True" 
+                        HighlightOnSelection="True" 
 
-                      HighlightBorderBrush="Yellow" 
+                        HighlightBorderBrush="red" 
 
-                      HighlightBorderThickness="5">
+                        HighlightBorderThickness="5">
 
-    <syncfusion:SfTreeMap.Levels>
+                <syncfusion:SfTreeMap.LeafItemSettings>
+                    <syncfusion:LeafItemSettings>
+                        <syncfusion:LeafItemSettings.LabelTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Data.Country}" Foreground="White" FontSize="14" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
+                            </DataTemplate>
 
-        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
+                        </syncfusion:LeafItemSettings.LabelTemplate>
+                    </syncfusion:LeafItemSettings>
+                </syncfusion:SfTreeMap.LeafItemSettings>
 
-    </syncfusion:SfTreeMap.Levels>
+                <syncfusion:SfTreeMap.Levels>
+                    <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupPadding="5" GroupBackground="Transparent" GroupBorderBrush="#009900" GroupBorderThickness="1" GroupGap="8" HeaderHeight="40">
+                        <syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                            <DataTemplate>
+                            
+                                    <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            
+                            </DataTemplate>
+                        </syncfusion:TreeMapFlatLevel.HeaderTemplate>
+                    </syncfusion:TreeMapFlatLevel>
 
-    </syncfusion:SfTreeMap>
+                </syncfusion:SfTreeMap.Levels>
+
+            </syncfusion:SfTreeMap>
 
 {% endhighlight %}
+
+
+![](Features_images/highlightselection.png)

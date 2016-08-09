@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeMap Levels in TreeMap control
-description: TreeMap Levels
+title: Grrouping in TreeMap control
+description: Grouping
 platform: UWP
 control: TreeMap
 documentation: ug

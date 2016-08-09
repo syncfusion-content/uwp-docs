@@ -36,6 +36,11 @@ Drag and drop the SfTreeMap control from the Toolbox to your application.
 
 ![](GettingStarted_images/addingreference.png)
 
+Now the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml .
+
+Refer to the following code to add a TreeMap in an application:
+
+
 {% highlight xaml %}
 
     <Page
@@ -56,9 +61,6 @@ Drag and drop the SfTreeMap control from the Toolbox to your application.
     </Page>
 {% endhighlight %}
 
-Now the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml .
-
-Refer to the following code to add a TreeMap in an application:
 
 ### Create Data for TreeMap:
 
@@ -160,7 +162,7 @@ SfTreeMap is a data-bound control. Hence you have to create a data model to bind
 {% endhighlight %}
 {% endtabs %}
 
-3.Sizing TreeMap by using WeightValuePath  
+3.Sizing TreeMapItem by using WeightValuePath  
 
 The SfTreeMap generates treemap items based on the property `WeightValuPath` . It is a bindable property and it decides how to display the treemap items.
 
