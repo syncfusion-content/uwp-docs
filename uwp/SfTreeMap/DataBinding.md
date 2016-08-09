@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WeightValuePath in TreeMap control
-description: WeightValuePath
+title: DataBinding in TreeMap control
+description: DataBinding
 platform: UWP
 control: TreeMap
 documentation: ug

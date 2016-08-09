@@ -179,6 +179,8 @@ Code Sample:
 
 Leaf nodes colored by using DesaturationColorMapping
 {:.caption}
+
+
 ## PaletteColorMapping
 
 The leaf nodes are colored by using the brushes mentioned in Colors collection of PaletteColorMapping.
