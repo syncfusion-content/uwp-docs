@@ -114,6 +114,8 @@ Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
 </tr>
 </table>
 
+You can refer [here](http://help.syncfusion.com/uwp/installation-and-deployment#installed-location) to know the assemblies installion location on your machine.     
+
 ## Creating simple application with SfDataGrid
 
 In this walk through, you will create WPF application that contains SfDataGrid control. 
@@ -187,7 +189,7 @@ In order to add control manually in C#, do the below steps,
     * Syncfusion.SfGrid.UWP
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP
-    
+
 2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid**.
 
 3. Create SfDataGrid control instance and add it to the Page.
