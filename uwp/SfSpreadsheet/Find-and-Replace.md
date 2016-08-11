@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Find And Replace operation in SfSpreadsheet
+title:  Find and Replace operation in SfSpreadsheet
 description: Find and Replace operation in SfSpreadsheet
 platform: UWP
 control: SfSpreadsheet
@@ -33,7 +33,7 @@ The common parameters to be passed in Find functions are,
 
 ### Find All
 
-Searches the every occurrence of specific data based on the criteria that you are searching for and returns an `IRange` list representing the cells in `SfSpreadsheet`
+Searches every occurrence of specific data based on the criteria that you are searching for and returns an `IRange` list representing the cells in `SfSpreadsheet`
 
 {% tabs %}
 {% highlight c# %}
@@ -63,26 +63,26 @@ foreach (var cell in list)
 
 ### Find Next
 
-Searches the next cell that matches those criterias and returns an immediate matched `IRange` that represents that cell. 
+Searches the first occurrence of specific data which matches the conditions and returns the matched `IRange` from the current range that represents the cell.
 
 {% tabs %}
 {% highlight c# %}
 
-//Search the text in entire workbook in Column wise,
+//Search the text in entire workbook in column wise,
 
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook, "sample", SearchBy.ByColumns, ExcelFindType.Text, false, true);
 
-// To select the matched cell content range,
+// To move the current cell to matched cell content range,
 
-spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));          
+spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);          
 
 //Search the formula in particular worksheet in row wise,
 
 var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook.Worksheets[0], "sum", SearchBy.ByRows, ExcelFindType.Text, false, false);
 
-// To select the matched cell content range,
+// To move the current cell to matched cell content range,
 
-spreadsheet.ActiveGrid.SelectionController.AddSelection(GridRangeInfo.Cell(cell.Row, cell.Column));          
+spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);          
 
 {% endhighlight %}
 {% endtabs %}
@@ -171,22 +171,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-## Replace
-
-Searches for the text or numbers that you want to change and replace it with specified text or numbers in SfSpreadsheet.
-
-{% tabs %}
-{% highlight c# %}
-
-//Searches the given text and replaces it with specified text
-
-var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook, "sample", SearchBy.ByColumns, ExcelFindType.Text, false, true);
-spreadsheet.ActiveGrid.SetCellValue(cell, "sync");
-
-{% endhighlight %}
-{% endtabs %}
-
-### Replace All
+## Replace All
 
 Searches and replaces all the texts either in the workbook or worksheet based on the given option.
 
@@ -210,5 +195,17 @@ spreadsheet.SearchManager.ReplaceAll(spreadsheet.Workbook.Worksheets[0], "sample
 {% endhighlight %}
 {% endtabs %}
 
+## Replace
 
+Searches for the text or numbers that you want to change using `FindNext` method and once the immediate matched cell has been found, use `SetCellValue` method to replace it with specified text or numbers in `SfSpreadsheet`.
 
+{% tabs %}
+{% highlight c# %}
+
+//Searches the given text and replaces it with specified text
+
+var cell = spreadsheet.SearchManager.FindNext(spreadsheet.Workbook, "sample", SearchBy.ByColumns, ExcelFindType.Text, false, true);
+spreadsheet.ActiveGrid.SetCellValue(cell, "sync");
+
+{% endhighlight %}
+{% endtabs %}
