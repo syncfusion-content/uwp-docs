@@ -1,9 +1,12 @@
+---
 layout: post
-title: Localization in SfRichTextBoxAdv
+title: Localization
 description: How to localize the SfRichTextBoxAdv to any language settings
 platform: UWP
 control: SfRichTextBoxAdv
 documentation: ug
+keywords: localization
+---
 # Localization
 
 Localization is the process of configuring the application to a specific language. SfRichTextBoxAdv provides support to localize all the static text in radial menu and all its dialogs. Localization can be done by adding resource file (Resw) and setting the specific culture in the application.
@@ -12,33 +15,33 @@ Localization is the process of configuring the application to a specific languag
 
 The following steps illustrates you how to configure the app package for localization using the manifest designer
 
-1. In **Solution** **Explorer**, expand the project node of your UWP app.
-2. Double-click the **Package****.****appxmanifest** file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
-3. Now specify the **Default** **language** on the **Application** tab as required to localize your app. Click on **More** **information** to know about the supported languages.
+* In **Solution** **Explorer**, expand the project node of your UWP app.
+* Double-click the **Package****.****appxmanifest** file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
+* Now specify the **Default** **language** on the **Application** tab as required to localize your app. Click on **More** **information** to know about the supported languages.
 
 ![](Localization_images/Localization_img1.jpeg)
 
 
-4. Save the app manifest file after setting the default language.
+* Save the app manifest file after setting the default language.
+
 ## Adding Resource file
 
-1. Create a folder with name ‘Resources’ in your application.
-2. Create a folder with language (“en-US”, “fr-FR”, etc.) under ‘Resources’ to hold the resource file for the respective language.
-3. Add default English (“en-US”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources_File-1713514901# "")(resource) file of SfRichTextBoxAdv and application (Localization) in the ‘en-US’ folder, named as Syncfusion.SfRichTextBoxAdv.UWP.Resources. resw, Syncfusion.SfRibbon. Resources.resw and Localization.Resources. resw respectively. For your reference, French(“fr-FR”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources2076091381# "") file.
+* Create a folder with name ‘Resources’ in your application.
+* Create a folder with language (“en-US”, “fr-FR”, etc.) under ‘Resources’ to hold the resource file for the respective language.
+* Add default English (“en-US”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources_File-1713514901)(resource) file of SfRichTextBoxAdv and application (Localization) in the ‘en-US’ folder, named as Syncfusion.SfRichTextBoxAdv.UWP.Resources. resw, Syncfusion.SfRibbon. Resources.resw and Localization.Resources. resw respectively. For your reference, French(“fr-FR”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources2076091381) file.
 
 ![](Localization_images/Localization_img2.jpeg)
 
 
-4. Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfRichTextBoxAdv.UWP.Resources. resw, Syncfusion.SfRibbon. Resources.resw and Localization. Resources.resw file.
+* Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfRichTextBoxAdv.UWP.Resources. resw, Syncfusion.SfRibbon. Resources.resw and Localization. Resources.resw file.
 
 ![](Localization_images/Localization_img3.jpeg)
 
 
-****Note: If you have not used SfRibbon in your application, you can skip Syncfusion.SfRibbon.UWP. [Culture name]. resw file mentioned above.
+Note: If you have not used SfRibbon in your application, you can skip Syncfusion.SfRibbon.UWP. [Culture name]. resw file mentioned above.
 
 The following screenshot shows the localization in SfRichTextBoxAdv
 
 ![](Localization_images/Localization_img4.jpeg)
 
 
-****
