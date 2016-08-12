@@ -127,16 +127,17 @@ The following code example illustrates how to bind the Button UI Command for ins
 
 {% endtabs %}
 
-The following code example illustrates how to Button UI Command for deleting a row, deleting a column and deleting an entire table.
+The following code example illustrates how to bind the Button UI Command for selecting cell, row, column and table.
 {% tabs %}
-{% highlight xaml %}
-<!-- Deletes the column -->
-<Button Content="Delete Column" Command="{Binding ElementName=richTextBoxAdv,Path=DeleteColumnCommand}"/>
-<!-- Deletes the row -->
-<Button Content="Delete Row" Command="{Binding ElementName=richTextBoxAdv,Path=DeleteRowCommand}"/>
-<!-- Deletes the table -->
-<Button Content="Delete Table" Command="{Binding ElementName=richTextBoxAdv,Path=DeleteTableCommand}"/>
-
+{% highlight xml %}
+<!--Selects the Cell--> 
+<Button Content="Select Cell" Command="{Binding ElementName=richTextBoxAdv,Path=SelectCellCommand}" />
+<!--Selects the Column-->
+<Button Content="Select Column" Command="{Binding ElementName=richTextBoxAdv,Path=SelectColumnCommand}" />
+<!--Selects the Row-->
+<Button Content="Select Row" Command="{Binding ElementName=richTextBoxAdv,Path=SelectRowCommand}" />
+<!--Selects the Table-->
+<Button Content="Select Table" Command="{Binding ElementName=richTextBoxAdv,Path=SelecttableCommand}" />
 
 {% endhighlight %}
 
@@ -152,3 +153,36 @@ The following code example illustrates how to bind the Button UI Command for mer
 {% endhighlight %}
 
 {% endtabs %}
+
+The following code example illustrates how to bind the Button UI Command to change content alignment of the selected cells.
+{% tabs %}
+{% highlight xml %}
+<!--Change cell content alignment with command parameter as comma separated(vertical alignment and text alignment)-->
+<Button Content="Cell Content Alignment" Command="{Binding ElementName=richTextBoxAdv,Path=CellContentAlignmentCommand}" CommandTarget="{Binding ElementName=richTextBoxAdv}" CommandParameter="Top,Left" />
+
+<!--or-->
+
+<!--Change cell content alignment with command parameter single sting (vertical alignment and text alignment)-->
+<Button Content="Cell Content Alignment" Command="{Binding ElementName=richTextBoxAdv,Path=CellContentAlignmentCommand}" CommandTarget="{Binding ElementName=richTextBoxAdv}"  CommandParameter="CenterRight"/>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following code example illustrates how to Button UI Command for deleting a row, deleting a column and deleting an entire table.
+{% tabs %}
+{% highlight xaml %}
+<!-- Deletes the column -->
+<Button Content="Delete Column" Command="{Binding ElementName=richTextBoxAdv,Path=DeleteColumnCommand}"/>
+<!-- Deletes the row -->
+<Button Content="Delete Row" Command="{Binding ElementName=richTextBoxAdv,Path=DeleteRowCommand}"/>
+<!-- Deletes the table -->
+<Button Content="Delete Table" Command="{Binding ElementName=richTextBoxAdv,Path=DeleteTableCommand}"/>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
