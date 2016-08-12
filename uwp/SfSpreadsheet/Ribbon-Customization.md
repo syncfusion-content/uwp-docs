@@ -15,13 +15,13 @@ Ribbon Customization can be done in two ways,
 
 User can customize the ribbon items by overriding the template of `SfSpreadsheetRibbon`.
 
-## Using Event:
+## Using Event
 
 By invoking SfSpreadsheetRibbon Loaded Event, User can add/delete the ribbon menu items.
 
-### Adding a Ribbon Item
+### Adding a RibbonTab
 
-To create a custom Ribbon tab with user defined menu options in SfSpreadsheet,
+To create a custom Ribbon tab with user defined menu options in `SfSpreadsheetRibbon`,
 
 {% tabs %}
 {% highlight xaml %}
@@ -34,7 +34,7 @@ To create a custom Ribbon tab with user defined menu options in SfSpreadsheet,
 {% tabs %}
 {% highlight c# %}
 
-SfRibbonBar CustomRibbonBar;
+
 ribbon.Loaded += ribbon_Loaded;
 
 void ribbon_Loaded(object sender, RoutedEventArgs e)
@@ -55,11 +55,11 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
       Button2.SizeMode = SizeMode.Large; 
       Button2.Click += Button2_Click;
 
-      CustomRibbonBar = new SfRibbonBar();
-      CustomRibbonBar.Header = "Printing Options";
-      CustomRibbonBar.Items.Add(Button1);
-      CustomRibbonBar.Items.Add(Button2);               
-      rb.Items.Add(CustomRibbonBar);
+      var customRibbonBar = new SfRibbonBar();
+      customRibbonBar.Header = "Printing Options";
+      customRibbonBar.Items.Add(Button1);
+      customRibbonBar.Items.Add(Button2);               
+      rb.Items.Add(customRibbonBar);
       sfribbon.Items.Add(rb);
     }
 
@@ -68,9 +68,9 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Removing a Ribbon Item
+### Adding a Ribbon Items in Existing Tab
 
-To remove the ribbon menu items in the SfSpreadsheetRibbon,
+To add a ribbon items in already existing tab,
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,11 +88,83 @@ ribbon.Loaded += ribbon_Loaded;
 void ribbon_Loaded(object sender, RoutedEventArgs e)
 {
     var sfribbon = GridUtil.GetVisualChild<SfRibbon>(sender as FrameworkElement);
-
+    
+    // To add the ribbon button in View tab,
+    
     if (sfribbon != null)
     {
-      var item = sfribbon.Items[2];
+      var rb = sfribbon.Items[2] as RibbonTab;
+      RibbonButton Button1 = new RibbonButton();
+      Button1.Label = "PRINT";
+      Button1.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
+      Button1.Click += Button1_Click;
+      rb.Items.Add(Button1);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Removing a RibbonTab
+
+To remove the ribbon tab in the SfSpreadsheetRibbon,
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+ribbon.Loaded += ribbon_Loaded;
+    
+void ribbon_Loaded(object sender, RoutedEventArgs e)
+{
+    var sfribbon = GridUtil.GetVisualChild<SfRibbon>(sender as FrameworkElement);
+    
+    //To remove the Data tab from the ribbon,
+    if (sfribbon != null)
+    {
+      var item = sfribbon.Items[1];
       sfribbon.Items.Remove(item);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+### Removing a Ribbon Items in a RibbonTab
+
+To remove the ribbon menu items in the ribbon tab of SfSpreadsheetRibbon,
+
+{% tabs %}
+{% highlight xaml %}
+
+    <syncfusion:SfSpreadsheetRibbon x:Name="ribbon" DataContext="{Binding ElementName=spreadsheet}" />
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+
+ribbon.Loaded += ribbon_Loaded;
+    
+void ribbon_Loaded(object sender, RoutedEventArgs e)
+{
+    var sfribbon = GridUtil.GetVisualChild<SfRibbon>(sender as FrameworkElement);
+    
+    // To remove the Freeze panes menu group in View tab,
+    
+    if (sfribbon != null)
+    {
+      var rb = sfribbon.Items[2] as RibbonTab;
+      rb.Items.Remove(rb.Items[1]);
     }
 }
 
