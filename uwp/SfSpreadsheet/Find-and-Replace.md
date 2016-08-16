@@ -17,7 +17,7 @@ Searches for specific data such as particular number or text according to specif
 
 * `FindAll`
 * `FindNext`
-* `FindCondtionalFormatting`
+* `FindConditionalFormatting`
 * `FindConstants`
 * `FindFormulas`
 * `FindDataValidation`
@@ -87,7 +87,7 @@ spreadsheet.ActiveGrid.CurrentCell.MoveCurrentCell(cell.Row,cell.Column);
 {% endhighlight %}
 {% endtabs %}
 
-### Find CondtionalFormatting
+### Find Conditional Formatting
 
 Searches and returns the `IRange` list which have conditional formatting within the specified worksheet.
 
@@ -150,7 +150,7 @@ foreach (var cell in list)
 {% endhighlight %}
 {% endtabs %}
 
-### Find DataValidation
+### Find Data Validation
 
 Searches and returns the `IRange` list which have data validation within the specified worksheet.
 
