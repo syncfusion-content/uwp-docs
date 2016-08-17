@@ -43,7 +43,7 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 
 Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” that refers all the controls in the Syncfusion control library.
 
-![](SfKanban_images/SfKanban_img6.jpeg)
+![](SfKanban_images/SfKanban_img6.png)
 
 Browse and Add the reference DLL from the following location.
 
