@@ -9,11 +9,11 @@ documentation: ug
 
 # Merge cells 	
 
-SfDataGrid allows you to merge the range of adjacent cells using `QueryCoveredRange` event. Merged cells can be exported and printed.
+SfDataGrid allows you to merge the range of adjacent cells using `QueryCoveredRange` event. Merged cells can be exported and printed.
 
-`QueryCoveredRange` event occurs when each cell gets arranged and the custom range will be stored for visible rows and columns in `SfDataGrid.CoveredCells`. This event is not fired for the cells that are not visible and also for the cells that are already in SfDataGrid.CoveredCells. When scrolling the merged range will be added for newly added rows & columns through this event and also removed for the rows &columns which are out of view.
+`QueryCoveredRange` event occurs when each cell gets arranged and the custom range will be stored for visible rows and columns in `SfDataGrid.CoveredCells`. This event is not fired for the cells that are not visible and also for the cells that are already in SfDataGrid.CoveredCells. When scrolling the merged range will be added for newly added rows & columns through this event and also removed for the rows &columns which are out of view.
 
-`GridQueryCoveredRangeEventArgs` of the `QueryCoveredRange` event provides information about the cell triggered this event. `GridQueryCoveredRangeEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. By `GridQueryCoveredRangeEventArgs.Range` property, the adjacent cells can be merged.
+`GridQueryCoveredRangeEventArgs` of the `QueryCoveredRange` event provides information about the cell triggered this event. `GridQueryCoveredRangeEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. By `GridQueryCoveredRangeEventArgs.Range` property, the adjacent cells can be merged.
 
 {% tabs %}
 {% highlight xaml %}
@@ -104,9 +104,9 @@ private void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEven
 
 ## Merging cells based on the content
 
-You can merge the redundant data in adjacent cells in a row or columns using `QueryCoveredRange` event. 
+You can merge the redundant data in adjacent cells in a row or columns using `QueryCoveredRange` event. 
 
-In the below code, GetRange method returns range for a cell based on adjacent cells content. From range from GetRange method `QueryCoveredRange` handler sets the range if the calculated range is already not exist in the  `SfDataGrid.CoveredCells` using `CoveredCells.IsInRange` method.
+In the below code, GetRange method returns range for a cell based on adjacent cells content. From range from GetRange method `QueryCoveredRange` handler sets the range if the calculated range is already not exist in the  `SfDataGrid.CoveredCells` using `CoveredCells.IsInRange` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -262,7 +262,7 @@ private CoveredCellInfo GetRange(GridColumn column, int rowIndex, int columnInde
 
 ## Merge cells in Master-details view
 
-Master- details view allows you to merge the range of cells using the `QueryCoveredRange` event of `ViewDefinition.DataGrid`. You can get the `DetailsViewDataGrid` which triggered the event from `GridQueryCoveredRangeEventArgs.OriginalSender` of the QueryCoveredRange event.
+Master- details view allows you to merge the range of cells using the `QueryCoveredRange` event of `ViewDefinition.DataGrid`. You can get the `DetailsViewDataGrid` which triggered the event from `GridQueryCoveredRangeEventArgs.OriginalSender` of the QueryCoveredRange event.
 
 {% tabs %}
 {% highlight xaml %}
