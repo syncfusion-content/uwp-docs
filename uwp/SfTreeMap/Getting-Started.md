@@ -164,7 +164,7 @@ SfTreeMap is a data-bound control. Hence you have to create a data model to bind
 
 3.Sizing TreeMapItem by using WeightValuePath  
 
-The SfTreeMap generates treemap items based on the property `WeightValuPath` . It is a bindable property and it decides how to display the treemap items.
+The SfTreeMap generates treemap items based on the property `WeightValuePath` . It is a bindable property and it decides how to display the treemap items.
 
 TreeMap calculates the size of the object with the help of `WeightValuePath`. WeightValuePath value `Population` has been assigned from one of the above DataModel field.  
 
