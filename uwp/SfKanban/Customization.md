@@ -28,21 +28,9 @@ TitleFontSize="15"
 
 CornerRadius="10"
 
-TitleHorizontalAlignment="Center">
+TitleHorizontalAlignment="Center"
 
-<syncfusion:KanbanCardStyle.Background>
-
-<LinearGradientBrush>
-
-<GradientStop Color="AliceBlue" Offset="0.25"/>
-
-<GradientStop Color="LightSkyBlue" Offset="0.75" />
-
-<GradientStop Color="LightBlue" Offset="1" />
-
-</LinearGradientBrush>
-
-</syncfusion:KanbanCardStyle.Background>
+Background="#FFEEEEEE">
 
 </syncfusion:KanbanCardStyle>
 
@@ -50,7 +38,7 @@ TitleHorizontalAlignment="Center">
 
 {% endhighlight %}
 
-![](SfKanban_images/SfKanban_img12.jpeg)
+![](SfKanban_images/SfKanban_img12.png)
 
 
 PlaceHolderStyle – It is used to customize the place holder of Kanban cards.
@@ -59,11 +47,13 @@ PlaceHolderStyle – It is used to customize the place holder of Kanban cards.
 
 <syncfusion:SfKanban.PlaceholderStyle>
 
-<syncfusion:PlaceholderStyle CategoryHoverBrush="PaleGreen"
+<syncfusion:PlaceholderStyle CategoryHoverBrush="DarkGray" 
 
-Fill="LightPink"
+Fill="LightGray"
 
-Stroke="Red" 
+Stroke="Black" 
+
+StrokeDashArray="4,4"
 
 StrokeThickness="2"
 
@@ -75,9 +65,9 @@ Foreground="DarkBlue">
 
 {% endhighlight %}
 
-![](SfKanban_images/SfKanban_img13.jpeg)
+![](SfKanban_images/SfKanban_img13.png)
 
 
 Category hover brush – Indicates the color, when hover on any category of multiple categories in a single column as shown in the below snapshot.
 
-![](SfKanban_images/SfKanban_img14.jpeg)
+![](SfKanban_images/SfKanban_img14.png)
