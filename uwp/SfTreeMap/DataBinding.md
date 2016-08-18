@@ -21,7 +21,7 @@ If the data model implements the INotifyPropertyChanged interface, then the SfTr
 
 `WeightValuePath` of SfTreeMap is a path to a field on the source object, which serve as the "weight" of the object.
 
-The SfTreeMap generates treemap items based on the property `WeightValuPath` . It is a bindable property and it decides how to display the treemap items.
+The SfTreeMap generates treemap items based on the property `WeightValuePath` . It is a bindable property and it decides how to display the treemap items.
 
 TreeMap calculates the size of the object with the help of `WeightValuePath`.
 
