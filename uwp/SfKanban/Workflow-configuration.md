@@ -45,4 +45,4 @@ Kanban.Workflows = workFlows;
 
 The following snap represents Kanban does not allow user to drop the Kanban card from the column of InProgress -> Open, since workflow does not specify it. 
 
-![](SfKanban_images/SfKanban_img9.jpeg)
+![](SfKanban_images/SfKanban_img9.png)

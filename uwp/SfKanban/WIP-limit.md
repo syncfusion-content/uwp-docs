@@ -18,7 +18,7 @@ MaxvalidationColor – If items count is greater than MaximumLimit, this color i
 
 {% highlight xml %}
 
-<syncfusion:KanbanColumn Categories="Review,Done"
+<syncfusion:KanbanColumn Categories="Closed,Done"
 
 Title="Done"
 
@@ -62,4 +62,4 @@ MaxValidationColor = new SolidColorBrush(Colors.Red)
 
 {% endhighlight %}
 
-![](SfKanban_images/SfKanban_img10.jpeg)
+![](SfKanban_images/SfKanban_img10.png)

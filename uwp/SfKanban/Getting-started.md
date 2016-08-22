@@ -43,7 +43,7 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 
 Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” that refers all the controls in the Syncfusion control library.
 
-![](SfKanban_images/SfKanban_img6.jpeg)
+![](SfKanban_images/SfKanban_img6.png)
 
 Browse and Add the reference DLL from the following location.
 
@@ -79,13 +79,13 @@ task.Title = "WINRT Issue";
 
 task.ID = "6593";
 
-task.Description = "Sorting is not working properly in DateTimeAxis";
+task.Description = "Draft preliminary software specifications";
 
-task.Category = "Open";
+task.Category = "Closed";
 
 task.ColorKey = "High";
 
-task.Tags = new string[] { "Bug Fixing" };
+task.Tags = new string[] { "Analysis" };
 
 task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
 
@@ -97,13 +97,13 @@ task.Title = "Kanban Feature";
 
 task.ID = "25678";
 
-task.Description = "Need to prepare SampleBrowser sample";
+task.Description = "Review preliminary software specifications";
 
-task.Category = "InProgress";
+task.Category = "Done";
 
 task.ColorKey = "Low";
 
-task.Tags = new string[] { "New control" };
+task.Tags = new string[] { "Analysis" };
 
 task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
 
@@ -115,13 +115,13 @@ task.Title = "WPF Issue";
 
 task.ID = "29477";
 
-task.Description = "Nullreference exception in line chart";
+task.Description = "Design functional specifications";
 
-task.Category = "Review";
+task.Category = "InProgress";
 
 task.ColorKey = "Normal";
 
-task.Tags = new string[] { "Bug Fixing" };
+task.Tags = new string[] { "Design" };
 
 task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
 
@@ -133,13 +133,13 @@ task.Title = "Kanban Feature";
 
 task.ID = "27654";
 
-task.Description = "Need to prepare demo sample";
+task.Description = "Incorporate feedback into functional specifications";
 
-task.Category = "Done";
+task.Category = "Open";
 
 task.ColorKey = "Low";
 
-task.Tags = new string[] { "New control" };
+task.Tags = new string[] { "Deployment" };
 
 task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
 
@@ -181,7 +181,7 @@ AutoGenerateColumns="True" ColumnMappingPath="Category">
 
 {% endhighlight %}
 
-![](SfKanban_images/SfKanban_img7.jpeg)
+![](SfKanban_images/SfKanban_img7.png)
 
 
 ### Defining columns
@@ -210,7 +210,7 @@ AutoGenerateColumns="False">
 
 {% endhighlight %}
 
-![](SfKanban_images/SfKanban_img8.jpeg)
+![](SfKanban_images/SfKanban_img8.png)
 
 
 ## Create a simple Kanban from code behind

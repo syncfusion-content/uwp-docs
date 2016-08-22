@@ -25,4 +25,4 @@ Indicator color palette is a collection of ColorMapping that are used to set the
 
 {% endhighlight %}
 
-![](SfKanban_images/SfKanban_img11.jpeg)
+![](SfKanban_images/SfKanban_img11.png)
