@@ -13,7 +13,7 @@ Indicator color palette is a collection of ColorMapping that are used to set the
 
 {}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfKanban.IndicatorColorPalette>
 

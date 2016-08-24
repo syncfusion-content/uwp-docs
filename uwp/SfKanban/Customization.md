@@ -10,7 +10,9 @@ documentation: ug
 
 KanbanCardStyle – It is used to customize the Kanban cards.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
 <syncfusion:SfKanban.CardStyle>
 
@@ -38,12 +40,33 @@ Background="#FFEEEEEE">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+Kanban.CardStyle = new KanbanCardStyle()
+{
+    Foreground = new SolidColorBrush(Colors.DarkBlue),
+    Stroke = new SolidColorBrush(Colors.Green),
+    StrokeThickness = new Thickness(1),
+    FontSize = 13,
+    TitleColor = new SolidColorBrush(Colors.Black),
+    TitleFontSize = 15,
+    CornerRadius = new CornerRadius(10),
+    TitleHorizontalAlignment = HorizontalAlignment.Center,
+    Background = new SolidColorBrush(Color.FromArgb(255, 238, 238, 238))
+};
+
+{% endhighlight%}
+
+{% endtabs %}
+
 ![](SfKanban_images/SfKanban_img12.png)
 
 
 PlaceHolderStyle – It is used to customize the place holder of Kanban cards.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
 <syncfusion:SfKanban.PlaceholderStyle>
 
@@ -64,6 +87,22 @@ Foreground="DarkBlue">
 </syncfusion:SfKanban.PlaceholderStyle>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+Kanban.PlaceholderStyle = new PlaceholderStyle()
+
+{
+    CategoryHoverBrush = new SolidColorBrush(Colors.DarkGray),
+    Fill = new SolidColorBrush(Colors.LightGray),
+    Stroke = new SolidColorBrush(Colors.Black),
+    StrokeThickness = 2,
+    Foreground = new SolidColorBrush(Colors.DarkBlue)
+};
+
+{% endhighlight%}
+
+{% endtabs %}
 
 ![](SfKanban_images/SfKanban_img13.png)
 

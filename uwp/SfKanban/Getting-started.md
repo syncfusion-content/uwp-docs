@@ -22,7 +22,7 @@ The following section provides an assistance to create a simple Kanban applicati
 
 Add the following namespace in the MainPage.xaml
 
-{% highlight xml %}
+{% highlight xaml %}
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.Kanban"
 
 {% endhighlight %}
@@ -53,7 +53,7 @@ Add the following namespace in the MainPage.xaml
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.Kanban"
 
@@ -173,7 +173,7 @@ public ObservableCollection<KanbanModel> Tasks { get; set; }
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -214,7 +214,7 @@ grid.Children.Add(kanban);
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfKanban Header="Kanban Sample"
 

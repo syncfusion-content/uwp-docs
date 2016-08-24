@@ -18,7 +18,7 @@ MinimumLimit and MaximumLimit properties are used to show the minimum and maximu
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:KanbanColumn Categories="Closed,Done"
 

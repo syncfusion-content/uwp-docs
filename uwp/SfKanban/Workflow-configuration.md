@@ -17,7 +17,7 @@ A Kanban workflow is a set of Category and AllowedTransitions that an item mo
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:SfKanban.Workflows>
 
