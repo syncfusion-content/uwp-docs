@@ -15,7 +15,7 @@ AlllowDrop – It used to enable or disable the Kanban column to drop the Kanban
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <syncfusion:KanbanColumn x:Name="Column1" 
 
