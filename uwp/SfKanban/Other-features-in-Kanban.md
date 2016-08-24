@@ -13,6 +13,8 @@ AllowDrag – It enable or disable the dragging cards in the corresponding Kanba
 
 AlllowDrop – It used to enable or disable the Kanban column to drop the Kanban cards while dragging. 
 
+{% tabs %}
+
 {% highlight xml %}
 
 <syncfusion:KanbanColumn x:Name="Column1" 
@@ -26,4 +28,20 @@ AllowDrag="False"
 AllowDrop="False"/>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+KanbanColumn column=new KanbanColumn();
+
+column.Categories = "Open";
+
+column.Title = "To Do";
+
+column.AlllowDrop = false;
+
+column.AllowDrag = false;
+
+kanban.Columns.Add(column);
+
+{% endhighlight %} {% endtabs %}
 
