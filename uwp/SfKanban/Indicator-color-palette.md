@@ -11,6 +11,8 @@ documentation: ug
 
 Indicator color palette is a collection of ColorMapping that are used to set the indicator color of Kanban cards. In the underlying data model, ColorKey (predefined property) values are set as the Key and Color are mapped to the corresponding Key values as shown in the below code sample.
 
+{}
+
 {% highlight xml %}
 
 <syncfusion:SfKanban.IndicatorColorPalette>
@@ -24,5 +26,33 @@ Indicator color palette is a collection of ColorMapping that are used to set the
 </syncfusion:SfKanban.IndicatorColorPalette>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+IndicatorColorPalette colorPalette = new IndicatorColorPalette();
+
+colorPalette.Add(new ColorMapping()
+ 
+{
+    Key = "High",
+    Color = Colors.Red
+
+});
+
+colorPalette.Add(new ColorMapping()
+{
+    Key = "Low",
+    Color = Colors.Yellow
+});
+
+colorPalette.Add(new ColorMapping()
+{
+    Key = "Normal",
+    Color = Colors.Green
+});
+
+{% endhighlight %} 
+
+{% endtabs %}
 
 ![](SfKanban_images/SfKanban_img11.png)

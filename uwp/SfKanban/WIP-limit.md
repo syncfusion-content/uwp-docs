@@ -10,11 +10,13 @@ documentation: ug
 
 MinimumLimit and MaximumLimit properties are used to show the minimum and maximum items count in the Kanban column. These properties are used to validate the error bar color using ErrorBarSettings.
 
-Color – If items count is falls between MinimumLimit and MaximumLimit, this color is applied to ErrorBar.
+* Color – If items count is falls between MinimumLimit and MaximumLimit, this color is applied to ErrorBar.
 
-MinValidationColor – If items count is lesser than MinimumLimit, this color is applied to ErrorBar.
+* MinValidationColor – If items count is lesser than MinimumLimit, this color is applied to ErrorBar.
 
-MaxvalidationColor – If items count is greater than MaximumLimit, this color is applied to ErrorBar.
+* MaxvalidationColor – If items count is greater than MaximumLimit, this color is applied to ErrorBar.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -61,5 +63,7 @@ MaxValidationColor = new SolidColorBrush(Colors.Red)
 };
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](SfKanban_images/SfKanban_img10.png)
