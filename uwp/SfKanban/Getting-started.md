@@ -39,13 +39,13 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 
 ![](SfKanban_images/SfKanban_img5.jpeg)
 
-### Adding Kanban DLL as reference
+### Adding Kanban assembly as reference
 
 Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” that refers all the controls in the Syncfusion control library.
 
 ![](SfKanban_images/SfKanban_img6.png)
 
-Browse and Add the reference DLL from the following location.
+Browse and Add the reference assembly from the following location.
 
 **[Installed location]**:\Program Files (x86)\Syncfusion\Essential Studio\ **[Version]** \Assemblies for Universal Windows\10.0\Syncfusion.SfKanban.UWP.dll
 

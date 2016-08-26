@@ -9,7 +9,7 @@ documentation: ug
 
 # Workflow configuration
 
-A Kanban workflow is a set of Category and AllowedTransitions that an item moves through its lifecycle and typically represents processes within your organization.
+A Kanban workflow is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 
 * Category – It represents a state of an item at a particular point in a specific workflow.
 
