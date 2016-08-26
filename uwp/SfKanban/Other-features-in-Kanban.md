@@ -11,7 +11,7 @@ documentation: ug
 
 AllowDrag – It enable or disable the dragging cards in the corresponding Kanban column.
 
-AlllowDrop – It used to enable or disable the Kanban column to drop the Kanban cards while dragging. 
+AllowDrop – It used to enable or disable the Kanban column to drop the Kanban cards while dragging. 
 
 {% tabs %}
 

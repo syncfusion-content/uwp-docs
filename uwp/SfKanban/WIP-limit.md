@@ -14,7 +14,7 @@ MinimumLimit and MaximumLimit properties are used to show the minimum and maximu
 
 * MinValidationColor – If items count is lesser than MinimumLimit, this color is applied to ErrorBar.
 
-* MaxvalidationColor – If items count is greater than MaximumLimit, this color is applied to ErrorBar.
+* MaxValidationColor – If items count is greater than MaximumLimit, this color is applied to ErrorBar.
 
 {% tabs %}
 
