@@ -38,7 +38,7 @@ The following steps illustrates you how to configure the app package for localiz
 ![](Localization_images/Localization_img3.jpeg)
 
 
-Note: If you have not used SfRibbon in your application, you can skip Syncfusion.SfRibbon.UWP. [Culture name]. resw file mentioned above.
+N> If you have not used SfRibbon in your application, you can skip Syncfusion.SfRibbon.UWP.[Culture name].resw file mentioned above.
 
 The following screenshot shows the localization in SfRichTextBoxAdv
 
