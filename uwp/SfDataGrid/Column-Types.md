@@ -682,7 +682,7 @@ public class CustomCellStyleSelector: StyleSelector
             else
                 return App.Current.Resources["cellStyle2"] as Style;
         }
-        return base.SelectStyle(item, container);
+        return base.SelectStyleCore(item, container);
     }
 }
 {% endhighlight %}
@@ -693,7 +693,7 @@ Below code, sets the customized style selector to `GridColumn.CellStyleSelector`
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <local:CustomCellStyleSelector x:Key="cellStyleSelector>
+    <local:CustomCellStyleSelector x:Key="cellStyleSelector"/>
 </Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
