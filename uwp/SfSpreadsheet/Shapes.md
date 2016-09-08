@@ -14,17 +14,27 @@ documentation: ug
 
 SfSpreadsheet provides support to import charts from excel which are used to represent numeric data in graphical format to make it easier to understand large quantities of data.
 
-To import the charts into SfSpreadsheet, need to create an instance of `GraphicChartCellRenderer` and add that renderer into `GraphicCellRenderers` collection. The `GraphicChartCellRenderer` is available under the this assembly “Syncfusion.SfSpreadsheetHelper.UWP.dll“ 
+For importing charts in SfSpreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SfSpreadsheetHelper.UWP.dll**  
 
-Add the GraphicChartCellRenderer into the GraphicCellRenderers collection by using the extension method `AddGraphicChartCellRenderer` of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
+Create an instance of `Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer` and add that renderer into `GraphicCellRenderers` collection by using the helper method `AddGraphicChartCellRenderer` which is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.GraphicCells`. 
 
 {% tabs %}
 {% highlight c# %}
 
-    this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+public MainWindow()
+{
+  InitializeComponent();
+  
+  //For importing charts,
+  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+}
 
 {% endhighlight %}
 {% endtabs %}
+
+### Adding the Charts at runtime
 
 For adding the Charts in SfSpreadsheet at runtime, use `AddChart` method, also you can resize and reposition the chart.
 
@@ -57,18 +67,25 @@ shape.Width = 300;
 
 ## Sparklines
 
-For importing the Sparklines into SfSpreadsheet, you need to create an instance of `SparklineCellRenderer` and add that renderer into `GraphicCellRenderers` collection. The`SparklineCellRenderer` is available under the this assembly “Syncfusion.SfSpreadsheetHelper.UWP.dll”
+For importing sparklines in SfSpreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SfSpreadsheetHelper.UWP.dll**  
 
-Add the SparklineCellRenderer into the GraphicCellRenderers collection by using the extension method `AddSparklineCellRenderer` of SfSpreadsheet which method is available under the namespace “Syncfusion.UI.Xaml.Spreadsheet.Helpers”.
+Create an instance of `Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer` and add that renderer into the Spreadsheet by using the helper method `AddSparklineCellRenderer` which is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.GraphicCells`.
 
 {% tabs %}
 {% highlight c# %}
 
-    this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+public MainWindow()
+{
+  InitializeComponent();
+      
+  //For importing sparklines,
+  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+}
 
 {% endhighlight %}
 {% endtabs %}
-
 
 ## Pictures
 

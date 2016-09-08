@@ -287,3 +287,45 @@ The `SaveAs` method in SfSpreadsheet can be used in various ways,
       
 {% endhighlight %}
 {% endtabs %}
+
+## Displaying Charts and Sparklines
+
+For importing charts and sparklines in SfSpreadsheet, add the following assembly as reference into the application.
+ 
+Assembly: **Syncfusion.SfSpreadsheetHelper.UWP.dll**  
+
+### Charts
+ 
+Create an instance of `Syncfusion.UI.Xaml.SpreadsheetHelper.GraphicChartCellRenderer` and add that renderer into `GraphicCellRenderers` collection by using the helper method `AddGraphicChartCellRenderer` which is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.GraphicCells`. 
+
+{% tabs %}
+{% highlight c# %}
+
+public MainWindow()
+{
+  InitializeComponent();
+  
+  //For importing charts,
+  this.spreadsheet.AddGraphicChartCellRenderer(new GraphicChartCellRenderer());
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Sparklines
+
+Create an instance of `Syncfusion.UI.Xaml.SpreadsheetHelper.SparklineCellRenderer` and add that renderer into the Spreadsheet by using the helper method `AddSparklineCellRenderer` which is available under the namespace `Syncfusion.UI.Xaml.Spreadsheet.GraphicCells`.
+
+{% tabs %}
+{% highlight c# %}
+
+public MainWindow()
+{
+  InitializeComponent();
+      
+  //For importing sparklines,
+  this.spreadsheet.AddSparklineCellRenderer(new SparklineCellRenderer());
+}
+
+{% endhighlight %}
+{% endtabs %}
