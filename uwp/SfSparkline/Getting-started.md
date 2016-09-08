@@ -18,7 +18,7 @@ The following section helps you to build your application with SfChart.
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
 
-![Reference Manager Dialog Windows in Visual Studio](Getting-started_images/GettingStarted_img1a.jpeg)
+![Reference Manager Dialog Windows in Visual Studio](Getting-started_images/GettingStarted_img1a.png)
 
 Add the following namespace in your XAML window.
 
@@ -34,7 +34,7 @@ Drag and drop the Sparkline controls from the Toolbox to your application.
 
 Now the Syncfusion.SfChart.UWP reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![Project Solution Window contains SfChart reference](Getting-started_images/GettingStarted_img2.jpeg)
+![Project Solution Window contains SfChart reference](Getting-started_images/GettingStarted_img2.png)
 
 ![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts" in MainWindow](Getting-started_images/GettingStarted_img3.jpeg)
 

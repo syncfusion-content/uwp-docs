@@ -33,9 +33,13 @@ Drag and drop the SfTreeMap control from the Toolbox to your application.
 
 ![](GettingStarted_images/treemapdesigner.png)
 
-Now the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
 ![](GettingStarted_images/addingreference.png)
+
+Now the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml .
+
+Refer to the following code to add a TreeMap in an application:
+
 
 {% highlight xaml %}
 
@@ -45,24 +49,22 @@ Now the SyncfusionControls for UWP XAML reference is added to the application re
         xmlns:local="using:TestSample"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:TreeMap="using:Syncfusion.UI.Xaml.TreeMap"
+        xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeMap"
         x:Class="TestSample.MainPage"
         mc:Ignorable="d">
 
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-            <TreeMap:SfTreeMap HorizontalAlignment="Left" Height="100" Margin="160,152,0,0" VerticalAlignment="Top" Width="100"/>
+            <syncfusion:SfTreeMap  />
 
         </Grid>
     </Page>
 {% endhighlight %}
 
 
-Refer to the following code to add a TreeMap in an application:
+### Create Data for TreeMap:
 
-### Create DataModel for TreeMap:
-
-SfTreeMap is a data-bound control. Hence you must create a data model to bind it to the control.
+SfTreeMap is a data-bound control. Hence you have to create a data model to bind it to the control.
 
 1.Create data object class and declare properties as shown below 
 
@@ -112,7 +114,7 @@ SfTreeMap is a data-bound control. Hence you must create a data model to bind it
 
 {% endhighlight %}
 
-### Binding data to the TreeMap
+### Populating data to the TreeMap
 
 1.Setting DataContext to the MainWindow
 
@@ -130,7 +132,7 @@ SfTreeMap is a data-bound control. Hence you must create a data model to bind it
  {% endhighlight %}
 
 
-2.Setting ItemsSource to the TreeMap control
+2.Assigning ItemsSource to the TreeMap control
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,11 +162,11 @@ SfTreeMap is a data-bound control. Hence you must create a data model to bind it
 {% endhighlight %}
 {% endtabs %}
 
-3.Setting WeightValuePath to the SfTreeMap 
+3.Sizing TreeMapItem by using WeightValuePath  
 
-The SfTreeMap generates treemap items based on the property `WeightValuPath` . It is a bindable property and it decides how to display the treemap items.
+The SfTreeMap generates treemap items based on the property `WeightValuePath` . It is a bindable property and it decides how to display the treemap items.
 
-You can calculate the size of the object with the help of `WeightValuePath` of TreeMap. WeightValuePath value `Population` has been assigned from one of the above DataModel field.  
+TreeMap calculates the size of the object with the help of `WeightValuePath`. WeightValuePath value `Population` has been assigned from one of the above DataModel field.  
 
 {% highlight xaml %}
 

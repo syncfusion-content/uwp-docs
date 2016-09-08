@@ -396,7 +396,35 @@ Now, assign the GroupDateTimeConverter into `GroupColumnDescription.Converter` a
 
 You can refer [here](http://help.syncfusion.com/uwp/sfdatagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied. You can download sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGrouping284384452.zip).
 
- 
+### Sorting Inner Records 
+
+In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription~SortGroupRecords.html)
+sorted based on the column name described in [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html).
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid.GroupColumnDescriptions>
+                <syncfusion:GroupColumnDescription ColumnName="SickLeaveHours"
+                                                   Converter="{StaticResource customGrouping}"
+                                                   SortGroupRecords="True" />
+            </syncfusion:SfDataGrid.GroupColumnDescriptions>
+{% endhighlight %}
+{% highlight c# %}
+GroupColumnDescription groupColumnDesc = new GroupColumnDescription()
+        {
+            ColumnName = "SickLeaveHours",
+            Converter = new CustomGroupingConverter(),
+            SortGroupRecords = true
+        };
+sfDataGrid.GroupColumnDescriptions.Add(groupColumnDesc);
+{% endhighlight %}
+{% endtabs %}
+
+In the below screenshot custom grouping is applied based on SickLeaveHours column and the inner records in each group are sorted based on SickLeaveHours value.
+
+
+![](Grouping_images/Grouping_img10.png)
+
 ## Sorting CaptionSummaryRows by Aggregate
 
 SfDataGrid allows you to sort the groups based its summary values. You can sort the groups based on summary aggregate value by using `SfDataGrid. SummaryGroupComparer` property.
