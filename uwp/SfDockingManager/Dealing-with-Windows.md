@@ -1,0 +1,397 @@
+---
+layout: post
+title: Dealing with Windows of Syncfusion SfDockingManager control for UWP
+description: Learn how to deal with windows of SfDockingManager programmatically and customize the windows
+platform: uwp
+control: SfDockingManager
+documentation: ug
+---
+
+# Dealing with Windows
+
+## Activating a window
+
+A particular child window can be activated in `SfDockingManager` using its name or reference through the property `ActiveWindow` and `ActivateWindow` method that passes the element as argument to activate.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager x:Name="docking">
+
+<ContentControl x:Name="SolutionExplorer" layout:SfDockingManager.Header="Solution Explorer"
+                                          layout:SfDockingManager.SideInDockedMode="Right"/>
+
+<ContentControl x:Name="ToolBox" layout:SfDockingManager.Header="ToolBox"
+                                 layout:SfDockingManager.DockState="AutoHidden"/>
+								 
+<ContentControl x:Name="Properties" layout:SfDockingManager.Header="Properties"
+                                    layout:SfDockingManager.DockState="Float"/>
+									
+<ContentControl x:Name="Output" layout:SfDockingManager.Header="Output"
+                                layout:SfDockingManager.SideInDockedMode="Tabbed"
+								layout:SfDockingManager.TargetNameInDockedMode="SolutionExplorer"/>
+								
+<ContentControl x:Name="StartPage" layout:SfDockingManager.Header="Start Page"
+                                   layout:SfDockingManager.DockState="Document"/>
+								   
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+public MainPage()
+
+{
+
+this.InitializeComponent();
+
+docking.Loaded += Docking_Loaded;
+
+}
+
+private void Docking_Loaded(object sender, RoutedEventArgs e)
+
+{
+
+docking.ActivateWindow(SolutionExplorer);
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img1.jpeg)
+
+
+## Adding Window Programmatically
+
+Any UI element can be added inside the `SfDockingManager` as its child windows. The windows are added as Dock windows, since the default value of the state is Dock. The UI element is added in the `SfDockingManager` using the Add method of the `Children` property of the `SfDockingManager`.
+
+For example, `ContentControl` is added as a window for `SfDockingManager`.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfDockingManager DockingManager1 = new SfDockingManager();
+
+ContentControl content1 = new ContentControl();
+
+SfDockingManager.SetHeader(content1, "Window1");
+
+ContentControl content2 = new ContentControl();
+
+SfDockingManager.SetHeader(content2, "Window2");
+
+ContentControl content3 = new ContentControl();
+
+SfDockingManager.SetHeader(content3, "Window3");
+
+ContentControl content4 = new ContentControl();
+
+SfDockingManager.SetHeader(content4, "Window4");
+
+ContentControl content5 = new ContentControl();
+
+SfDockingManager.SetHeader(content5, "Window5");
+
+DockingManager1.Children.Add(content1);
+
+DockingManager1.Children.Add(content2);
+
+DockingManager1.Children.Add(content3);
+
+DockingManager1.Children.Add(content4);
+
+DockingManager1.Children.Add(content5);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img2.jpeg)
+
+
+## Hiding Window Programmatically
+
+To hide the window, set `DockState` attached property of the `SfDockingManager` as Hidden.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfDockingManager.SetDockState(content1, DockState.Hidden);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img3.jpeg)
+
+
+## Customizing Docking window
+
+A Docking window can be customized using the property `HeaderBackground`, `CaptionForeground`, `CaptionFontFamily` and `CaptionMargin` with the desired values respectively.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager HeaderBackground="Red" CaptionForeground="Yellow">
+
+<ContentControl layout:SfDockingManager.Header="Dock1" Content="Content 1"/>
+
+<ContentControl layout:SfDockingManager.Header="Dock2" Content="Content 2"/>
+
+<ContentControl layout:SfDockingManager.Header="Dock3" Content="Content 3"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img4.jpeg)
+
+
+## Customizing Active Docking Window
+
+Active docking window can be customized using the property `ActiveForeground`, `ActiveWindowColor` with the desired brush values respectively.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager ActiveForeground="Red" ActiveWindowColor="Green">
+
+<ContentControl layout:SfDockingManager.Header="Dock"/>
+
+<ContentControl layout:SfDockingManager.Header="Dock1"/>
+
+<ContentControl layout:SfDockingManager.Header="Dock2"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img5.jpeg)
+
+
+## Customizing Floating Window
+
+The float window can be customized by setting `FloatWindowHeaderBackground`, `CaptionForeground`, `FloatWindowContentBackground`, `FloatWindowContentForeground`, `FloatWindowBorderBrush`, `FloatWindowBorderThickness`, `FloatWindowContentBorderBrush`, `FloatWindowContentBorderThickness` and `FloatWindowContentMargin` properties with the required values respectively.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager FloatWindowHeaderBackground="Green" CaptionForeground="White">
+
+<ContentControl Content="Content 1" layout:SfDockingManager.Header="Dock1"
+                                    layout:SfDockingManager.DockState="Float"/>
+
+<ContentControl layout:SfDockingManager.Header="Dock2" Content="Content 2"/>
+
+<ContentControl layout:SfDockingManager.Header="Dock3" Content="Content 3"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img6.jpeg)
+
+
+## Customizing Active Floating Window
+
+Active floating window can be customized using the property `FloatWindowActiveHeaderBackground`, `ActiveForeground` with the desired brush values respectively.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager FloatWindowActiveHeaderBackground="Yellow" ActiveForeground="Red">
+
+<ContentControl Content="Content 1" layout:SfDockingManager.Header="Dock1"
+                                    layout:SfDockingManager.DockState="Float"/>
+
+<ContentControl layout:SfDockingManager.Header="Dock2" Content="Content 2"/>
+
+<ContentControl layout:SfDockingManager.Header="Dock3" Content="Content 3"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img7.jpeg)
+
+
+## Enable/Disable Dragging a Window
+
+The attached property `IsDragEnabled` that helps to enable or disable the dragging functionality of a window by setting its value as True or False respectively. By default, its value is True, to disable this functionality turn its value to False.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager>
+
+<ContentControl layout:SfDockingManager.Header="Item1"
+                layout:SfDockingManager.IsDragEnabled="False"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Customizing Hint Shadow Fill Color
+
+The fill color of hint shadow can be customized using `PopupColor` property of `SfDockingManager`.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager PopUpColor="Red" >
+
+<ContentControl layout:SfDockingManager.Header="Item1" />
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img8.jpeg)
+
+
+## Sizing Docking Windows
+
+`SfDockingManager` allows to set the desired width and height for the docking windows. 
+
+The desired height and width can be set for the Dock windows through the attached property `DesiredWidthInDockedMode` and `DesiredHeightInDockedMode` with the desired values.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager>
+
+<ContentControl layout:SfDockingManager.Header="Item1"
+                layout:SfDockingManager.DesiredHeightInDockedMode="400"
+				layout:SfDockingManager.DesiredWidthInDockedMode="300"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img9.jpeg)
+
+
+## Occupy Whole Window
+
+To arrange the dock windows to a whole available space in the `SfDockingManager`, set `DockFill` property of `SfDockingManager` as True.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager DockFill="True">
+
+<ContentControl layout:SfDockingManager.Header="Item1"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img10.jpeg)
+
+
+## Enable/Disable Context Menus
+
+`SfDockingManager` provides context menus for docking, floating, auto hiding and document windows. 
+
+### Enable/Disable context menu for docking, floating, auto hiding windows
+
+Docking, floating and auto hiding windows have a context menu button that contains options for switching between states.  The button can be enabled/disabled using `ShowMenuButton` property. By default, its value is True, to disable this functionality turn its value to False.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager ShowMenuButton="False">
+
+<ContentControl layout:SfDockingManager.Header="Item1"/>
+
+</layout:SfDockingManager>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img11.jpeg)
+
+
+### Enable/Disable context menu for Document windows
+
+Document windows have a context menu button that contains options for switching between tab items.  The button can be enabled/disabled using `ShowDocumentTabStripMenu` property. By default, its value is True, to disable this functionality turn its value to False.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager ShowDocumentTabStripMenu="True">
+
+<ContentControl layout:SfDockingManager.Header="Item1"
+                layout:SfDockingManager.DockState="Document"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img12.jpeg)
+
+
+### Enable/Disable context menu of DocumentTabItems
+
+One or more `DocumentTabItems` can be closed using document tab item context menu. This context menu can be enabled/disabled through `ShowDocumentTabItemContextMenu` property. By default, its value is True, to disable this functionality turn its value to False.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<layout:SfDockingManager ShowDocumentTabItemContextMenu="True">
+
+<ContentControl layout:SfDockingManager.Header="Item1"
+                layout:SfDockingManager.DockState="Document"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Dealing-with-Windows-images/Dealing-with-Windows-img13.jpeg)
+
+
