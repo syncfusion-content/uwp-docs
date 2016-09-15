@@ -76,6 +76,11 @@ Yes</td></tr>
 <tr>
 <td>
 </td><td>
+SfDockingManager</td><td>
+Yes</td></tr>
+<tr>
+<td>
+</td><td>
 SfRibbon</td><td>
 Yes</td></tr>
 <tr>

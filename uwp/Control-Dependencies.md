@@ -59,6 +59,11 @@ Syncfusion.SfCarousel.UWP</td><td>
 Syncfusion.SfShared.UWP</td></tr>
 <tr>
 <td>
+SfDockingManager</td><td>
+Syncfusion.SfDockingManager.UWP</td><td>
+Syncfusion.SfShared.UWP</td></tr>
+<tr>
+<td>
 SfRibbon</td><td>
 Syncfusion.SfRibbon.UWP</td><td>
 Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfInput.UWP</td></tr>
