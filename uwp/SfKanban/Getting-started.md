@@ -71,7 +71,9 @@ using Syncfusion.UI.Xaml.Kanban;
 {% endhighlight %}
 
 {% highlight c# %}
+
 SfKanban kanban = new SfKanban();
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -97,112 +99,60 @@ You need to create a collection of KanbanModel objects for populating SfKanban.
 
 {% highlight c# %}
 
-public class TaskDetails
+    public TaskDetails()
+    {
+        Tasks = new ObservableCollection<KanbanModel>();
 
-{
+        Tasks.Add(new KanbanModel()
+        {
+            Title = "Deployment",
+            ID = "27654",
+            Description = "Incorporate feedback into functional specifications",
+            Category = "Open",
+            ColorKey = "Low",
+            Tags = new string[] {"Deployment phase"},
+            ProgressValue = 70,
+            ImageURL = new Uri("ms-appx:///images/icon.jpg")
+        });
 
-public ObservableCollection<KanbanModel> Tasks { get; set; }
+        Tasks.Add(new KanbanModel()
+        {
+            Title = "Design",
+            ID = "29477",
+            Description = "Design functional specifications",
+            Category = "In Progress",
+            ColorKey = "Normal",
+            Tags = new string[] {"Design-phase_1"},
+            ProgressValue = 25,
+            ImageURL = new Uri("ms-appx:///images/icon.jpg")
+        });
 
-public TaskDetails()
+        Tasks.Add(new KanbanModel()
+        {
+            Title = "Analysis",
+            ID = "25678",
+            Description = "Review preliminary software specifications",
+            Category = "Done",
+            ColorKey = "Low",
+            Tags = new string[] {"Analysis_1"},
+            ProgressValue = 48,
+            ImageURL = new Uri("ms-appx:///images/icon.jpg")
+        });
 
-{
-
-Tasks = new ObservableCollection<KanbanModel>();
-
-Tasks.Add(new KanbanModel()
-
-{
-
-Title = "Deployment",
-
-ID = "27654",
-
-Description = "Incorporate feedback into functional specifications",
-
-Category = "Open",
-
-ColorKey = "Low",
-
-Tags = new string[] {"Deployment phase"},
-
-ProgressValue = 70,
-
-ImageURL = new Uri("ms-appx:///images/icon.jpg")
-
-});
-
-Tasks.Add(new KanbanModel()
-
-{
-
-Title = "Design",
-
-ID = "29477",
-
-Description = "Design functional specifications",
-
-Category = "In Progress",
-
-ColorKey = "Normal",
-
-Tags = new string[] {"Design-phase_1"},
-
-ProgressValue = 25,
-
-ImageURL = new Uri("ms-appx:///images/icon.jpg")
-
-});
-
-Tasks.Add(new KanbanModel()
-
-{
-
-Title = "Analysis",
-
-ID = "25678",
-
-Description = "Review preliminary software specifications",
-
-Category = "Done",
-
-ColorKey = "Low",
-
-Tags = new string[] {"Analysis_1"},
-
-ProgressValue = 48,
-
-ImageURL = new Uri("ms-appx:///images/icon.jpg")
-
-});
-
-Tasks.Add(new KanbanModel()
-
-{
-
-Title = "Analysis",
-
-ID = "6593",
-
-Description = "Draft preliminary software specifications",
-
-Category = "Closed",
-
-ColorKey = "High",
-
-Tags = new string[] {"Analysis_2"},
-
-ProgressValue = 20,
-
-ImageURL = new Uri("ms-appx:///images/icon.jpg")
-
-});
-
-
-
+        Tasks.Add(new KanbanModel()
+        {
+            Title = "Analysis",
+            ID = "6593",
+            Description = "Draft preliminary software specifications",
+            Category = "Closed",
+            ColorKey = "High",
+            Tags = new string[] {"Analysis_2"},
+            ProgressValue = 20,
+            ImageURL = new Uri("ms-appx:///images/icon.jpg")
+        });
+       
+    }
 }
-
-}
-
 
 {% endhighlight %}
 
