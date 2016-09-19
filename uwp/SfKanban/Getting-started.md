@@ -17,14 +17,14 @@ The following section provides an assistance to create a simple Kanban applicati
 1. Open the Reference Manager window from project.
 2. Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
 
-![](sfkanban_images/sfkanban_img1.jpeg)
+![](SfKanban_images/sfkanban_img1.jpeg)
 
 
 ### Adding assembly reference
 
 Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” which refers all the controls in the Syncfusion control library.
 
-![](sfkanban_images/sfkanban_img2.jpeg)
+![](SfKanban_images/sfkanban_img2.jpeg)
 
 
 In the Add Reference window, browse and choose the reference assembly from the following location. 
@@ -80,15 +80,15 @@ SfKanban kanban = new SfKanban();
 
 Drag and drop the Kanban control from the toolbox to your application.
 
-![](sfkanban_images/sfkanban_img3.jpeg)
+![](SfKanban_images/sfkanban_img3.jpeg)
 
 
 Now the “Syncfusion Controls for UWP XAML” reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![](sfkanban_images/sfkanban_img4.jpeg)
+![](SfKanban_images/sfkanban_img4.jpeg)
 
 
-![](sfkanban_images/sfkanban_img5.jpeg)
+![](SfKanban_images/sfkanban_img5.jpeg)
 
 
 ### Create data model
@@ -375,7 +375,7 @@ Kanban.Workflows = workflows;
 
 {% endtabs %}
 
-![](sfkanban_images/sfkanban_img7.jpeg)
+![](SfKanban_images/sfkanban_img7.jpeg)
 
 
 ### Work In-Progress limit
@@ -439,6 +439,6 @@ MaxValidationColor = new SolidColorBrush(Colors.Red)
 
 {% endtabs %}
 
-![](sfkanban_images/sfkanban_img8.jpeg)
+![](SfKanban_images/sfkanban_img8.jpeg)
 
 
