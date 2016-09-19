@@ -297,7 +297,7 @@ grid.Children.Add(kanban);
 
 {% endtabs %}
 
-![](sfkanban_images/new_kanban_img6.jpeg)
+![](SfKanban_images/new_kanban_img6.jpeg)
 
 
 You can also set AutoGenerateColumns property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
