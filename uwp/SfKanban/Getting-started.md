@@ -8,68 +8,92 @@ documentation: ug
 ---
 # Getting started 
 
-The following section provides an assistance to create a simple Kanban application. 
+The following section provides an assistance to create a simple Kanban application and to configure it. 
 
-## Create a simple Kanban
+## Referencing Essential Studio Components in your Solution
+
+### Adding SDK reference
+
+1. Open the Reference Manager window from project.
+2. Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
+
+![](sfkanban_images/sfkanban_img1.jpeg)
+
 
 ### Adding assembly reference
 
-1. Open the Add Reference window from project.
-2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
+Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” which refers all the controls in the Syncfusion control library.
 
-![](SfKanban_images/SfKanban_img2.jpeg)
+![](sfkanban_images/sfkanban_img2.jpeg)
 
 
-Add the following namespace in the MainPage.xaml
+In the Add Reference window, browse and choose the reference assembly from the following location. 
 
-{% highlight xaml %}
-xmlns:syncfusion="using:Syncfusion.UI.Xaml.Kanban"
+{Installed location}\Syncfusion\Essential Studio\{Installed version }\Assemblies for Universal Windows\10.0\Syncfusion.SfKanban.UWP.dll
 
-{% endhighlight %}
+## Create a simple Kanban
 
-### Adding Kanban from toolbox
+In this walk through, you will create a new application that contains the SfKanban which includes the below topics.
 
-Drag and drop the SfKanban control from the Toolbox to your application.
+* Adding SfKanban 
+* Create data model
+* Binding data
+* Defining columns
+* Working with Workflows
+* Work In-Progress Limit
 
-![](SfKanban_images/SfKanban_img3.jpeg)
+### Adding SfKanban
 
-Now the “Syncfusion Controls for UWP XAML” reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![](SfKanban_images/SfKanban_img4.jpeg)
-
-![](SfKanban_images/SfKanban_img5.jpeg)
-
-### Adding Kanban assembly as reference
-
-Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” that refers all the controls in the Syncfusion control library.
-
-![](SfKanban_images/SfKanban_img6.png)
-
-Browse and Add the reference assembly from the following location.
-
-**[Installed location]**:\Program Files (x86)\Syncfusion\Essential Studio\ **[Version]** \Assemblies for Universal Windows\10.0\Syncfusion.SfKanban.UWP.dll
-
-Add the following namespace in the MainPage.xaml
+1. Add the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
+2. Add the “Syncfusion.UI.Xaml.Kanban” namespace to the application as shown below.
 
 {% tabs %}
 
 {% highlight xaml %}
-
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.Kanban"
-
 {% endhighlight %}
 
 {% highlight c# %}
-
 using Syncfusion.UI.Xaml.Kanban;
-
 {% endhighlight %}
 
 {% endtabs %}
 
-### Defining data model
+3. Create an instance of SfKanban control.
 
-KanbanModel is the pre-defined data model of SfKanban.
+{% tabs %}
+
+{% highlight xaml %}
+<syncfusion:SfKanban>
+
+</syncfusion:SfKanban>
+{% endhighlight %}
+
+{% highlight c# %}
+SfKanban kanban = new SfKanban();
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding SfKanban from toolbox
+
+Drag and drop the Kanban control from the toolbox to your application.
+
+![](sfkanban_images/sfkanban_img3.jpeg)
+
+
+Now the “Syncfusion Controls for UWP XAML” reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
+
+![](sfkanban_images/sfkanban_img4.jpeg)
+
+
+![](sfkanban_images/sfkanban_img5.jpeg)
+
+
+### Create data model
+
+You need to create a collection of KanbanModel objects for populating SfKanban.
 
 {% highlight c# %}
 
@@ -77,201 +101,344 @@ public class TaskDetails
 
 {
 
+public ObservableCollection<KanbanModel> Tasks { get; set; }
+
 public TaskDetails()
 
 {
 
 Tasks = new ObservableCollection<KanbanModel>();
 
-KanbanModel task = new KanbanModel();
+Tasks.Add(new KanbanModel()
 
-task.Title = "Kanban Feature";
+{
 
-task.ID = "27654";
+Title = "Deployment",
 
-task.Description = "Incorporate feedback into functional specifications";
+ID = "27654",
 
-task.Category = "Open";
+Description = "Incorporate feedback into functional specifications",
 
-task.ColorKey = "Low";
+Category = "Open",
 
-task.Tags = new string[] { "Deployment" };
+ColorKey = "Low",
 
-task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+Tags = new string[] {"Deployment phase"},
 
-Tasks.Add(task);
+ProgressValue = 70,
 
-task = new KanbanModel();
+ImageURL = new Uri("ms-appx:///images/icon.jpg")
 
-task.Title = "WPF Issue";
+});
 
-task.ID = "29477";
+Tasks.Add(new KanbanModel()
 
-task.Description = "Design functional specifications";
+{
 
-task.Category = "InProgress";
+Title = "Design",
 
-task.ColorKey = "Normal";
+ID = "29477",
 
-task.Tags = new string[] { "Design" };
+Description = "Design functional specifications",
 
-task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+Category = "In Progress",
 
-Tasks.Add(task);
+ColorKey = "Normal",
 
-task = new KanbanModel();
+Tags = new string[] {"Design-phase_1"},
 
-task.Title = "Kanban Feature";
+ProgressValue = 25,
 
-task.ID = "25678";
+ImageURL = new Uri("ms-appx:///images/icon.jpg")
 
-task.Description = "Review preliminary software specifications";
+});
 
-task.Category = "Done";
+Tasks.Add(new KanbanModel()
 
-task.ColorKey = "Low";
+{
 
-task.Tags = new string[] { "Analysis" };
+Title = "Analysis",
 
-task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+ID = "25678",
 
-Tasks.Add(task);
+Description = "Review preliminary software specifications",
 
-task = new KanbanModel(); 
+Category = "Done",
 
-task.Title = "WINRT Issue";
+ColorKey = "Low",
 
-task.ID = "6593";
+Tags = new string[] {"Analysis_1"},
 
-task.Description = "Draft preliminary software specifications";
+ProgressValue = 48,
 
-task.Category = "Closed";
+ImageURL = new Uri("ms-appx:///images/icon.jpg")
 
-task.ColorKey = "High";
+});
 
-task.Tags = new string[] { "Analysis" };
+Tasks.Add(new KanbanModel()
 
-task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+{
 
-Tasks.Add(task);
+Title = "Analysis",
+
+ID = "6593",
+
+Description = "Draft preliminary software specifications",
+
+Category = "Closed",
+
+ColorKey = "High",
+
+Tags = new string[] {"Analysis_2"},
+
+ProgressValue = 20,
+
+ImageURL = new Uri("ms-appx:///images/icon.jpg")
+
+});
+
+
 
 }
 
-public ObservableCollection<KanbanModel> Tasks { get; set; }
-
 }
+
 
 {% endhighlight %}
 
-### Generating columns for Kanban
+### Binding data
 
-* ItemsSource – Data source for Kanban can be set using the property that is available in the SfKanban.
-
-* ColumnMappingPath – it is string property used to map for Kanban column to categorize the data source. Default value of this property is Category which is available in the KanbanModel. Also we can set to any other property from the underlying model.
-
-* Auto generating columns – Columns are auto-generated if “AutoGeneratedColumns” property is enabled. By default the value of this property is "true".
+In order to bind the data source of the SfKanban, set ItemsSource property as shown below.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-<Grid.DataContext>
-
-<local:TaskDetails/>
-
-</Grid.DataContext>
-
-<syncfusion:SfKanban Header="Kanban Sample" ItemsSource="{Binding Tasks}">
-
-</syncfusion:SfKanban>
-
-</Grid>
+<syncfusion:SfKanban ItemsSource="{Binding Tasks}" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfKanban kanban=new SfKanban();
-
-kanban.ItemsSource=new TaskDetails().Tasks;
-
-grid.Children.Add(kanban);
+SfKanban kanban = new SfKanban()
+{
+    ItemsSource = new TaskDetails().Tasks
+};
 
 {% endhighlight %}
 
- {% endtabs %}
 
-![](SfKanban_images/SfKanban_img7.png)
-
+{% endtabs %}
 
 ### Defining columns
 
-* Categories – One or more category values that are defined in the property which is set to the ColumnMappingPath from the underlying model. Kanban column can be defined as shown below.
+By default, we need to define the columns manually by adding the KanbanColumn object to the Columns collection property in SfKanban.
 
-* Title – Header of the individual column can be defined in this property.
+ItemsSource which was bound to the Kanban will be added to the respective columns using ColumnMappingPath property in SfKanban and Categories property in KanbanColumn.
+
+We need to set the required property name to ColumnMappingPath which will be essential to add the data to the respective columns.
+
+In this example, the data whose Category property’s value is set as Open will be added to the ‘To Do’ Column and other data will be added to the respective columns.
+
+The following code example illustrates how this can be done.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfKanban Header="Kanban Sample"
-
-ColumnMappingPath="Category"
-
-ItemsSource="{Binding Tasks}"
-
-AutoGenerateColumns="False">
-
-<syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
-
-<syncfusion:KanbanColumn Categories="InProgress" Title="Doing"></syncfusion:KanbanColumn>
-
-<syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
-
+                     ColumnMappingPath="Category"
+                     ItemsSource="{Binding Tasks}"
+                     AutoGenerateColumns="False">
+    <syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
+    <syncfusion:KanbanColumn Categories="In Progress" Title="Doing"></syncfusion:KanbanColumn>
+    <syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
 </syncfusion:SfKanban>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfKanban kanban=new SfKanban();
+SfKanban kanban = new SfKanban()
+{
+    AutoGenerateColumns = false,
+    ItemsSource = new TaskDetails().Tasks
+};
 
-kanban.AutoGenerateColumns = false;
+kanban.Columns.Add(new KanbanColumn()
+{
+    Categories = "Open",
+    Title = "To Do",
+    MinimumLimit = 1,
+    MaximumLimit = 2,
+});
 
-kanban.ItemsSource=new TaskDetails().Tasks;
+kanban.Columns.Add(new KanbanColumn()
+{
+    Categories = "In Progress",
+    Title = "Doing",
+    MinimumLimit = 1,
+    MaximumLimit = 2
+});
 
-kanban.ColumnMappingPath = "Category";
-
-KanbanColumn column=new KanbanColumn();
-
-column.Categories = "Open";
-
-column.Title = "To Do";
-
-kanban.Columns.Add(column);
-
-column = new KanbanColumn();
-
-column.Categories = "InProgress";
-
-column.Title = "Doing";
-
-kanban.Columns.Add(column);
-
-column = new KanbanColumn();
-
-column.Categories = "Review,Done";
-
-column.Title = "Done";
-
-kanban.Columns.Add(column);
+kanban.Columns.Add(new KanbanColumn()
+{
+    Categories = "Closed,Done",
+    Title = "Done",
+    MinimumLimit = 1,
+    MaximumLimit = 2
+});
 
 grid.Children.Add(kanban);
+
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](SfKanban_images/SfKanban_img8.png)
+![](sfkanban_images/sfkanban_img6.jpeg)
+
+
+You can also set AutoGenerateColumns property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
+
+Note: When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
+
+### Workflow configuration
+
+A Kanban workflow is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
+
+* Category – It represents a state of an item at a particular point in a specific workflow.
+* AllowedTransitions – It is a list of categories to where the card can be moved from the current category.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfKanban.Workflows>
+
+<syncfusion:KanbanWorkflow Category="Open">
+
+<syncfusion:KanbanWorkflow.AllowedTransitions>
+
+<x:String>In Progress</x:String>
+
+</syncfusion:KanbanWorkflow.AllowedTransitions>
+
+</syncfusion:KanbanWorkflow>
+
+<syncfusion:KanbanWorkflow Category="In Progress">
+
+<syncfusion:KanbanWorkflow.AllowedTransitions>
+
+<x:String>Review</x:String>
+
+<x:String>Done</x:String>
+
+</syncfusion:KanbanWorkflow.AllowedTransitions>
+
+</syncfusion:KanbanWorkflow>
+
+</syncfusion:SfKanban.Workflows>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WorkflowCollection workflows = new WorkflowCollection();
+
+workflows.Add(new KanbanWorkflow()
+
+{
+
+Category = "Open",
+
+AllowedTransitions = new List<object>() {"In Progress"}
+
+});
+
+workflows.Add(new KanbanWorkflow()
+
+{
+
+Category = "In Progress",
+
+AllowedTransitions = new List<object>() {"Review", "Done"}
+
+});
+
+Kanban.Workflows = workflows;
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](sfkanban_images/sfkanban_img7.jpeg)
+
+
+### Work In-Progress limit
+
+MinimumLimit and MaximumLimit properties are used to limit the minimum and maximum items in the Kanban column. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the color of the error bar.
+
+Following properties are used to customize the error bar.
+
+* Color – used to set the default color of the error bar.
+
+* MinValidationColor – used to set the color of the error bar when the items count is lesser than MinimumLimit.
+
+* MaxValidationColor – used to set the color of the error bar when the items count is greater than MaximumLimit.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:KanbanColumn x:Name="column1" Categories="Review,Done"
+
+Title="Done"
+
+MinimumLimit="1"
+
+MaximumLimit="2">
+
+<syncfusion:KanbanColumn.ErrorBarSettings>
+
+<syncfusion:ErrorBarSettings Color="Gray"
+
+MaxValidationColor="Red"
+
+MinValidationColor="Green">
+
+</syncfusion:ErrorBarSettings>
+
+</syncfusion:KanbanColumn.ErrorBarSettings>
+
+</syncfusion:KanbanColumn>
+
+{% endhighlight %}
+
+{% highlight c# %}
+column1.MinimumLimit = 1;
+
+column1.MaximumLimit = 2;
+
+column1.ErrorBarSettings = new ErrorBarSettings()
+
+{
+
+Color = new SolidColorBrush(Colors.Gray),
+
+MinValidationColor = new SolidColorBrush(Colors.Green),
+
+MaxValidationColor = new SolidColorBrush(Colors.Red)
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](sfkanban_images/sfkanban_img8.jpeg)
+
+
