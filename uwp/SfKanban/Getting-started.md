@@ -302,13 +302,14 @@ grid.Children.Add(kanban);
 
 You can also set AutoGenerateColumns property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
 
-Note: When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
+N> When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
 
 ### Workflow configuration
 
 A Kanban workflow is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 
 * Category – It represents a state of an item at a particular point in a specific workflow.
+
 * AllowedTransitions – It is a list of categories to where the card can be moved from the current category.
 
 {% tabs %}
