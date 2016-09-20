@@ -134,7 +134,7 @@ You need to create a collection of KanbanModel objects for populating SfKanban.
 
                 Description = "Design functional specifications",
 
-                Category = "InProgress",
+                Category = "In Progress",
 
                 ColorKey = "Normal",
 
@@ -232,7 +232,7 @@ The following code example illustrates how this can be done.
 
             <syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
 
-            <syncfusion:KanbanColumn Categories="InProgress" Title="Progress"></syncfusion:KanbanColumn>
+            <syncfusion:KanbanColumn Categories="In Progress" Title="Progress"></syncfusion:KanbanColumn>
 
             <syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
 
@@ -259,7 +259,7 @@ kanban.Columns.Add(new KanbanColumn()
 
 kanban.Columns.Add(new KanbanColumn()
 {
-    Categories = "InProgress",
+    Categories = "In Progress",
     Title = "Progress",
     MinimumLimit = 1,
     MaximumLimit = 2
@@ -302,11 +302,11 @@ A Kanban workflow is a set of Category and AllowedTransitions that an item mo
 <syncfusion:SfKanban.Workflows>
     <syncfusion:KanbanWorkflow Category="Open">
         <syncfusion:KanbanWorkflow.AllowedTransitions>
-            <x:String>InProgress</x:String>
+            <x:String>In Progress</x:String>
         </syncfusion:KanbanWorkflow.AllowedTransitions>
     </syncfusion:KanbanWorkflow>
 
-    <syncfusion:KanbanWorkflow Category="InProgress">
+    <syncfusion:KanbanWorkflow Category="In Progress">
         <syncfusion:KanbanWorkflow.AllowedTransitions>
             <x:String>Review</x:String>
             <x:String>Done</x:String>
@@ -328,7 +328,7 @@ workflows.Add(new KanbanWorkflow()
 
 workflows.Add(new KanbanWorkflow()
 {
-    Category = "InProgress",
+    Category = "In Progress",
     AllowedTransitions = new List<object>() {"Review", "Done"}
 });
 
