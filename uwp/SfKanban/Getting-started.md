@@ -99,92 +99,88 @@ You need to create a collection of KanbanModel objects for populating SfKanban.
 
 {% highlight c# %}
    
-   public class TaskDetails
+    public class TaskDetails
     {
         public TaskDetails()
         {
 
             Tasks = new ObservableCollection<KanbanModel>();
 
-            KanbanModel task = new KanbanModel();
+            Tasks.Add(new KanbanModel()
+            {
 
-            task.Title = "Universal App";
+                Title = "Universal App",
 
-            task.ID = "27654";
+                ID = "27654",
 
-            task.Description = "Incorporate feedback into functional specifications";
+                Description = "Incorporate feedback into functional specifications",
 
-            task.Category = "Open";
+                Category = "Open",
 
-            task.ColorKey = "Low";
+                ColorKey = "Low",
 
-            task.Tags = new string[] { "Deployment" };
+                Tags = new string[] { "Deployment" },
 
-            task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
-
-            Tasks.Add(task);
-
-
-            task = new KanbanModel();
-
-            task.Title = "Universal App";
-
-            task.ID = "29477";
-
-            task.Description = "Design functional specifications";
-
-            task.Category = "InProgress";
-
-            task.ColorKey = "Normal";
-
-            task.Tags = new string[] { "Design" };
-
-            task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
-
-            Tasks.Add(task);
+                ImageURL = new Uri("ms-appx:///images/icon.jpg"),
+            });
 
 
-            task = new KanbanModel();
+            Tasks.Add(new KanbanModel()
+            {
 
-            task.Title = "Universal App";
+                Title = "Universal App",
 
-            task.ID = "25678";
+                ID = "29477",
 
-            task.Description = "Review preliminary software specifications";
+                Description = "Design functional specifications",
 
-            task.Category = "Done";
+                Category = "InProgress",
 
-            task.ColorKey = "Low";
+                ColorKey = "Normal",
 
-            task.Tags = new string[] { "Analysis" };
+                Tags = new string[] { "Design" },
 
-            task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+                ImageURL = new Uri("ms-appx:///images/icon.jpg"),
+            });
 
-            Tasks.Add(task);
+
+            Tasks.Add(new KanbanModel()
+            {
+                Title = "Universal App",
+
+                ID = "25678",
+
+                Description = "Review preliminary software specifications",
+
+                Category = "Done",
+
+                ColorKey = "Low",
+
+                Tags = new string[] { "Analysis" },
+
+                ImageURL = new Uri("ms-appx:///images/icon.jpg"),
+            });
 
 
-            task = new KanbanModel();
+            Tasks.Add(new KanbanModel()
+            {
+                Title = "Universal App",
 
-            task.Title = "Universal App";
+                ID = "6593",
 
-            task.ID = "6593";
+                Description = "Draft preliminary software specifications",
 
-            task.Description = "Draft preliminary software specifications";
+                Category = "Review",
 
-            task.Category = "Review";
+                ColorKey = "High",
 
-            task.ColorKey = "High";
+                Tags = new string[] { "Analysis" },
 
-            task.Tags = new string[] { "Analysis" };
+                ImageURL = new Uri("ms-appx:///images/icon.jpg"),
 
-            task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
-
-            Tasks.Add(task);
-
+            });
         }
-
         public ObservableCollection<KanbanModel> Tasks { get; set; }
-
     }
 
 {% endhighlight %}
@@ -229,10 +225,10 @@ The following code example illustrates how this can be done.
 
 {% highlight xaml %}
 
-<syncfusion:SfKanban MinColumnWidth="150" 
-                             ColumnMappingPath="Category" 
-                             ItemsSource="{Binding Tasks}"
-                             AutoGenerateColumns="False">
+  <syncfusion:SfKanban MinColumnWidth="150" 
+                       ColumnMappingPath="Category" 
+                       ItemsSource="{Binding Tasks}"
+                       AutoGenerateColumns="False">
 
             <syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
 
@@ -240,7 +236,6 @@ The following code example illustrates how this can be done.
 
             <syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
 
-        </syncfusion:SfKanban>
 </syncfusion:SfKanban>
 
 
@@ -264,7 +259,7 @@ kanban.Columns.Add(new KanbanColumn()
 
 kanban.Columns.Add(new KanbanColumn()
 {
-    Categories = "In Progress",
+    Categories = "InProgress",
     Title = "Progress",
     MinimumLimit = 1,
     MaximumLimit = 2
@@ -307,11 +302,11 @@ A Kanban workflow is a set of Category and AllowedTransitions that an item mo
 <syncfusion:SfKanban.Workflows>
     <syncfusion:KanbanWorkflow Category="Open">
         <syncfusion:KanbanWorkflow.AllowedTransitions>
-            <x:String>In Progress</x:String>
+            <x:String>InProgress</x:String>
         </syncfusion:KanbanWorkflow.AllowedTransitions>
     </syncfusion:KanbanWorkflow>
 
-    <syncfusion:KanbanWorkflow Category="In Progress">
+    <syncfusion:KanbanWorkflow Category="InProgress">
         <syncfusion:KanbanWorkflow.AllowedTransitions>
             <x:String>Review</x:String>
             <x:String>Done</x:String>
@@ -333,7 +328,7 @@ workflows.Add(new KanbanWorkflow()
 
 workflows.Add(new KanbanWorkflow()
 {
-    Category = "In Progress",
+    Category = "InProgress",
     AllowedTransitions = new List<object>() {"Review", "Done"}
 });
 
