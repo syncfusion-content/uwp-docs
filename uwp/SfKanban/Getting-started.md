@@ -29,7 +29,7 @@ Individual reference can be added to the project instead of SDK “Syncfusion Co
 
 In the Add Reference window, browse and choose the reference assembly from the following location. 
 
-{Installed location}\Syncfusion\Essential Studio\{Installed version }\Assemblies for Universal Windows\10.0\Syncfusion.SfKanban.UWP.dll
+Installed location\Syncfusion\Essential Studio\Installed version\Assemblies for Universal Windows\10.0\Syncfusion.SfKanban.UWP.dll
 
 ## Create a simple Kanban
 
@@ -98,61 +98,94 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 You need to create a collection of KanbanModel objects for populating SfKanban.
 
 {% highlight c# %}
-
-    public TaskDetails()
+   
+   public class TaskDetails
     {
-        Tasks = new ObservableCollection<KanbanModel>();
-
-        Tasks.Add(new KanbanModel()
+        public TaskDetails()
         {
-            Title = "Deployment",
-            ID = "27654",
-            Description = "Incorporate feedback into functional specifications",
-            Category = "Open",
-            ColorKey = "Low",
-            Tags = new string[] {"Deployment phase"},
-            ProgressValue = 70,
-            ImageURL = new Uri("ms-appx:///images/icon.jpg")
-        });
 
-        Tasks.Add(new KanbanModel()
-        {
-            Title = "Design",
-            ID = "29477",
-            Description = "Design functional specifications",
-            Category = "In Progress",
-            ColorKey = "Normal",
-            Tags = new string[] {"Design-phase_1"},
-            ProgressValue = 25,
-            ImageURL = new Uri("ms-appx:///images/icon.jpg")
-        });
+            Tasks = new ObservableCollection<KanbanModel>();
 
-        Tasks.Add(new KanbanModel()
-        {
-            Title = "Analysis",
-            ID = "25678",
-            Description = "Review preliminary software specifications",
-            Category = "Done",
-            ColorKey = "Low",
-            Tags = new string[] {"Analysis_1"},
-            ProgressValue = 48,
-            ImageURL = new Uri("ms-appx:///images/icon.jpg")
-        });
+            KanbanModel task = new KanbanModel();
 
-        Tasks.Add(new KanbanModel()
-        {
-            Title = "Analysis",
-            ID = "6593",
-            Description = "Draft preliminary software specifications",
-            Category = "Closed",
-            ColorKey = "High",
-            Tags = new string[] {"Analysis_2"},
-            ProgressValue = 20,
-            ImageURL = new Uri("ms-appx:///images/icon.jpg")
-        });
-       
+            task.Title = "Universal App";
+
+            task.ID = "27654";
+
+            task.Description = "Incorporate feedback into functional specifications";
+
+            task.Category = "Open";
+
+            task.ColorKey = "Low";
+
+            task.Tags = new string[] { "Deployment" };
+
+            task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+
+            Tasks.Add(task);
+
+
+            task = new KanbanModel();
+
+            task.Title = "Universal App";
+
+            task.ID = "29477";
+
+            task.Description = "Design functional specifications";
+
+            task.Category = "InProgress";
+
+            task.ColorKey = "Normal";
+
+            task.Tags = new string[] { "Design" };
+
+            task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+
+            Tasks.Add(task);
+
+
+            task = new KanbanModel();
+
+            task.Title = "Universal App";
+
+            task.ID = "25678";
+
+            task.Description = "Review preliminary software specifications";
+
+            task.Category = "Done";
+
+            task.ColorKey = "Low";
+
+            task.Tags = new string[] { "Analysis" };
+
+            task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+
+            Tasks.Add(task);
+
+
+            task = new KanbanModel();
+
+            task.Title = "Universal App";
+
+            task.ID = "6593";
+
+            task.Description = "Draft preliminary software specifications";
+
+            task.Category = "Review";
+
+            task.ColorKey = "High";
+
+            task.Tags = new string[] { "Analysis" };
+
+            task.ImageURL = new Uri("ms-appx:///images/icon.jpg");
+
+            Tasks.Add(task);
+
+        }
+
+        public ObservableCollection<KanbanModel> Tasks { get; set; }
+
     }
-}
 
 {% endhighlight %}
 
@@ -196,13 +229,18 @@ The following code example illustrates how this can be done.
 
 {% highlight xaml %}
 
-<syncfusion:SfKanban Header="Kanban Sample"
-                     ColumnMappingPath="Category"
-                     ItemsSource="{Binding Tasks}"
-                     AutoGenerateColumns="False">
-    <syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
-    <syncfusion:KanbanColumn Categories="In Progress" Title="Doing"></syncfusion:KanbanColumn>
-    <syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
+<syncfusion:SfKanban MinColumnWidth="150" 
+                             ColumnMappingPath="Category" 
+                             ItemsSource="{Binding Tasks}"
+                             AutoGenerateColumns="False">
+
+            <syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
+
+            <syncfusion:KanbanColumn Categories="InProgress" Title="Progress"></syncfusion:KanbanColumn>
+
+            <syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
+
+        </syncfusion:SfKanban>
 </syncfusion:SfKanban>
 
 
@@ -227,14 +265,14 @@ kanban.Columns.Add(new KanbanColumn()
 kanban.Columns.Add(new KanbanColumn()
 {
     Categories = "In Progress",
-    Title = "Doing",
+    Title = "Progress",
     MinimumLimit = 1,
     MaximumLimit = 2
 });
 
 kanban.Columns.Add(new KanbanColumn()
 {
-    Categories = "Closed,Done",
+    Categories = "Review,Done",
     Title = "Done",
     MinimumLimit = 1,
     MaximumLimit = 2
@@ -247,7 +285,7 @@ grid.Children.Add(kanban);
 
 {% endtabs %}
 
-![](SfKanban_images/new_kanban_img6.jpeg)
+![](SfKanban_images/column.png)
 
 
 You can also set AutoGenerateColumns property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.
@@ -267,31 +305,19 @@ A Kanban workflow is a set of Category and AllowedTransitions that an item mo
 {% highlight xaml %}
 
 <syncfusion:SfKanban.Workflows>
+    <syncfusion:KanbanWorkflow Category="Open">
+        <syncfusion:KanbanWorkflow.AllowedTransitions>
+            <x:String>In Progress</x:String>
+        </syncfusion:KanbanWorkflow.AllowedTransitions>
+    </syncfusion:KanbanWorkflow>
 
-<syncfusion:KanbanWorkflow Category="Open">
-
-<syncfusion:KanbanWorkflow.AllowedTransitions>
-
-<x:String>In Progress</x:String>
-
-</syncfusion:KanbanWorkflow.AllowedTransitions>
-
-</syncfusion:KanbanWorkflow>
-
-<syncfusion:KanbanWorkflow Category="In Progress">
-
-<syncfusion:KanbanWorkflow.AllowedTransitions>
-
-<x:String>Review</x:String>
-
-<x:String>Done</x:String>
-
-</syncfusion:KanbanWorkflow.AllowedTransitions>
-
-</syncfusion:KanbanWorkflow>
-
+    <syncfusion:KanbanWorkflow Category="In Progress">
+        <syncfusion:KanbanWorkflow.AllowedTransitions>
+            <x:String>Review</x:String>
+            <x:String>Done</x:String>
+        </syncfusion:KanbanWorkflow.AllowedTransitions>
+    </syncfusion:KanbanWorkflow>
 </syncfusion:SfKanban.Workflows>
-
 
 {% endhighlight %}
 
@@ -300,33 +326,24 @@ A Kanban workflow is a set of Category and AllowedTransitions that an item mo
 WorkflowCollection workflows = new WorkflowCollection();
 
 workflows.Add(new KanbanWorkflow()
-
 {
-
-Category = "Open",
-
-AllowedTransitions = new List<object>() {"In Progress"}
-
+    Category = "Open",
+    AllowedTransitions = new List<object>() {"In Progress"}
 });
 
 workflows.Add(new KanbanWorkflow()
-
 {
-
-Category = "In Progress",
-
-AllowedTransitions = new List<object>() {"Review", "Done"}
-
+    Category = "In Progress",
+    AllowedTransitions = new List<object>() {"Review", "Done"}
 });
 
 Kanban.Workflows = workflows;
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](SfKanban_images/new_kanban_img7.jpeg)
+![](SfKanban_images/workflow.png)
 
 
 ### Work In-Progress limit
@@ -346,50 +363,34 @@ Following properties are used to customize the error bar.
 {% highlight xaml %}
 
 <syncfusion:KanbanColumn x:Name="column1" Categories="Review,Done"
-
-Title="Done"
-
-MinimumLimit="1"
-
-MaximumLimit="2">
-
-<syncfusion:KanbanColumn.ErrorBarSettings>
-
-<syncfusion:ErrorBarSettings Color="Gray"
-
-MaxValidationColor="Red"
-
-MinValidationColor="Green">
-
-</syncfusion:ErrorBarSettings>
-
-</syncfusion:KanbanColumn.ErrorBarSettings>
-
+                         Title="Done"
+                         MinimumLimit="1"
+                         MaximumLimit="2">
+	     <syncfusion:KanbanColumn.ErrorBarSettings>
+			   <syncfusion:ErrorBarSettings Color="Gray" MaxValidationColor="Red"
+                                            MinValidationColor="Green">
+			   </syncfusion:ErrorBarSettings>
+         </syncfusion:KanbanColumn.ErrorBarSettings>
 </syncfusion:KanbanColumn>
 
 {% endhighlight %}
 
 {% highlight c# %}
+
 column1.MinimumLimit = 1;
-
 column1.MaximumLimit = 2;
-
 column1.ErrorBarSettings = new ErrorBarSettings()
-
 {
-
-Color = new SolidColorBrush(Colors.Gray),
-
-MinValidationColor = new SolidColorBrush(Colors.Green),
-
-MaxValidationColor = new SolidColorBrush(Colors.Red)
-
+    Color = new SolidColorBrush(Colors.Gray),
+    MinValidationColor = new SolidColorBrush(Colors.Green),
+    MaxValidationColor = new SolidColorBrush(Colors.Red)
 };
+
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](SfKanban_images/new_kanban_img8.jpeg)
+![](SfKanban_images/wiplimit.png)
 
 
