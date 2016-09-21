@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The `SfDockingManager` control implements an architecture that allows child controls to be docked at any part of a Page as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the window. These windows can also be floated, tabbed, and auto hidden at run time.
+The `SfDockingManager` control implements an architecture that allows child controls to be docked at any part of a Page as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the page. These windows can also be floated, tabbed, and auto hidden at run time.
 
 ## Features
 
