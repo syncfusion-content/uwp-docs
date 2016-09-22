@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This sections helps you to get started with SfCellGrid.
+This section helps you to get started with SfCellGrid.
 
 ## Assemblies Deployment
 
@@ -17,58 +17,60 @@ Below table describes, list of assemblies required to be added in project when t
 
 <table>
 <tr>
-<td>
-**Assembly**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Assembly</th><th>
+Description</th></tr>
 <tr>
 <td>
-Syncfusion.SfCellGrid.UWP.dll<br/><br/></td><td>
-Contains the base and fundamental classes which holds the underlying architecture for displaying cells with virtualized behavior and selection/interaction of cells.<br/><br/></td></tr>
+Syncfusion.SfCellGrid.UWP.dll</td><td>
+Contains the base and fundamental classes which holds the underlying architecture for displaying cells with virtualized behavior and selection/interaction of cells.</td></tr>
 <tr>
 <td>
-Syncfusion.SfGridCommon.UWP.dll<br/><br/></td><td>
-Covers the classes which holds the properties of scroll viewer and disposable elements.<br/><br/></td></tr>
+Syncfusion.SfGridCommon.UWP.dll</td><td>
+Covers the classes which holds the properties of scroll viewer and disposable elements</td></tr>
 <tr>
 <td>
-Syncfusion.SfInput.UWP.dll<br/><br/></td><td>
-Contains the classes which holds the controls like SfDropDownButton, SfTextBoxExt, SfMaskedEdit etc.<br/><br/></td></tr>
+Syncfusion.SfShared.UWP.dll</td><td>
+Contains the classes which holds the properties and operations of the controls like SfUpDown, SfNavigator, Looping control etc</td></tr>
 <tr>
 <td>
-Syncfusion.SfShared.UWP.dll<br/><br/></td><td>
-Contains the classes which holds the properties and operations of the controls like SfUpDown, SfNavigator, Looping control, etc.,<br/><br/></td></tr>
+Syncfusion.SfInput.UWP.dll</td><td>
+Contains the classes which holds the controls like SfDropDownButton, SfTextBoxExt,SfMaskedEdit etc.</td></tr>
 </table>
 
 ### Optional Assemblies
 
-Below Assembly can be added when you want to enable importing support in SfCellGrid. 
+Below Assembly can be added to enable the importing support in SfCellGrid. 
 
 <table>
 <tr>
-<td>
-**Optional Assembly**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Optional Assembly</th><th>
+Description</th></tr>
 <tr>
 <td>
-Syncfusion.XlsIO.UWP.dll<br/><br/></td><td>
-Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations, Formula calculations etc.<br/><br/></td></tr>
+Syncfusion.XlsIO.UWP.dll</td><td>
+Contains the base classes which is responsible for read and write in Excel files, Worksheet Manipulations, Formula calculations etc.</td></tr>
 </table>
 
 
-## Create a Simple Application with SfCellGrid
+## Create Simple Application with SfCellGrid
 
-SfCellGrid control can be added into the Application either via designer or via coding.
+SfCellGrid control can be added into the application either via designer or via coding.
 
-### Adding a control via Designer
+### Adding control via designer
 
-1. Create a new UWP Application in Visual Studio.
+1. Create a new UWP application in Visual Studio.
 2. Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the SfCellGrid in toolbox items.
-3. Drag **SfCellGrid** and drop in to the Designer area from the Toolbox.
+3. Drag **SfCellGrid** and drop in to the designer area from the toolbox.
 
 ![](Getting-Started_images/SfCellGrid_UWP_img1.jpeg)
 
-### Adding Control Via Coding
+### Adding control via coding
 
-SfCellGrid is available in the following namespace “__Syncfusion__.__UI__.__Xaml__.__CellGrid__” and it can be created programmatically either by using XAML or C# code.
+SfCellGrid is available in the following namespace “__Syncfusion__.__UI__.__Xaml__.__CellGrid__” and it can be created programmatically either by using __XAML__ or __C#__ code.
+
+#### Through XAML
 
 {% tabs %}
 
@@ -98,6 +100,12 @@ SfCellGrid is available in the following namespace “__Syncfusion__.__UI__.__Xa
 
 {% endhighlight %}
 
+{% endtabs %}
+
+#### Through C#
+
+{% tabs %}
+
 {% highlight c# %}
 
 SfCellGrid cellGrid = new SfCellGrid();
@@ -108,13 +116,60 @@ this.Grid.Children.Add(cellGrid);
 
 {% endtabs %}
 
+## Generating Rows and Columns
+
+To generate rows and columns in SfCellGrid, user need to specify the **RowCount** and **ColumnCount** either by using XAML or C# code.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <Page
+	
+	x:Class="CellGridDemo.MainPage"
+	
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	
+	xmlns:local="using:CellGridDemo"
+	
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	
+	xmlns:syncfusion="using:Syncfusion.UI.Xaml.CellGrid"
+	
+	mc:Ignorable="d">
+	
+	<syncfusion:SfCellGrid x:Name="CellGrid" RowCount="100" ColumnCount="100" />
+	
+	</Page>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCellGrid cellGrid = new SfCellGrid();
+
+this.Grid.Children.Add(cellGrid);
+
+cellGrid.RowCount = 100;
+
+cellGrid.ColumnCount = 100;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Populating the Data
 
-To populate the data in SfCellGrid, **RowCount** and **ColumnCount** are mandatory. Once **ColumnCount** and **RowCount** are specified, data can be populated by using one of the following methods.
+To populate the data in SfCellGrid, **RowCount** and **ColumnCount** are mandatory. Once **RowCount** and **ColumnCount** are specified in SfCellGrid, data can be populated by using one of the following methods.
 
 ### Internal Storage
 
-User can populate the grid by storing the cell style in its internal storage. SfCellGrid holds all the data and style related information in **GridStyleInfo**. Individual cells can be accessed using the **GridModel** indexer, which takes row and column indices. Below code explains this scenario.
+User can populate the grid by storing the cell style in its internal storage. SfCellGrid holds all the data and style related information in **GridStyleInfo**. Individual cells can be accessed using the **GridModel** indexer, which takes row and column indices.
+Based on the row and column indices, the data`s are populated through looping.
 
 {% tabs %}
 {% highlight c# %}
@@ -125,7 +180,7 @@ cellGrid.RowCount = 100;
 
 cellGrid.ColumnCount = 100;
 
-// Looping through the cells and assigning the values based on row and column index.
+// Looping through the cells and assigning the values based on row and column index
 
 for (int row = 0; row < 100; row++)
 {
@@ -140,12 +195,12 @@ for (int row = 0; row < 100; row++)
 
 ### Virtual Mode
 
-User can also populate the data by on-demand using `QueryCellInfo` event where the gird does not store cell style in its internal storage.
+User can also populate the data by on-demand using `QueryCellInfo` event. In this event, SfCellGrid does not store cell style in its internal storage, thus ensuring optimized performance. 
 
 {% tabs %}
 {% highlight c# %}
 
-// Specifying Row Count and Column Count.
+// Specifying Row Count and Column Count
 
 cellGrid.RowCount = 100;
 
@@ -163,41 +218,6 @@ private void Model_QueryCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Styl
 {% endhighlight %}
 {% endtabs %}
 
-Run the application, Grid will appear as follows,
+You can get the following output while executing the application,
 
 ![](Getting-Started_images/SfCellGrid_UWP_img2.jpeg)
-
-
-## Formatting the Cell
-
-**GridStyleInfo** is used to maintain the data and style information of SfCellGrid. User can change formatting of a cell by changing background, foreground, font, borders, etc., Below code explains this scenario,
-
-{% tabs %}
-{% highlight c# %}
-
-cellGrid.Model[3, 3].Background = new SolidColorBrush(Colors.Blue);
-
-{% endhighlight %}
-{% endtabs %}
-
-User can also change formatting of a cell by using `QueryCellInfo` event. Below code explains this scenario,
-
-{% tabs %}
-{% highlight c# %}
-
-private void Model_QueryCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Styles.GridQueryCellInfoEventArgs e)
-{
-	if (e.Style.ColumnIndex == 3 && e.Style.RowIndex == 3)
-	{
-		e.Style.Background = new SolidColorBrush(Colors.Blue);
-	}
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-Background will be set for the specified cell like below,
-
-![](Getting-Started_images/SfCellGrid_UWP_img3.jpeg)
-
-
