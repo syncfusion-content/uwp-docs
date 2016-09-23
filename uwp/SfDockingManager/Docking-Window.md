@@ -115,7 +115,12 @@ Also to set as Tabbed Window, the window should aware of a Target window name. T
 <ContentControl layout:SfDockingManager.Header="Toolbox"/>
 
 <ContentControl layout:SfDockingManager.Header="Solution Explorer"
-                layout:SfDockingManager.NoHeader="True" />
+                layout:SfDockingManager.NoHeader="True">
+                
+<TextBlock Text="Content of NoHeader window" FontStyle="Italic"
+           Foreground="Gray" TextWrapping="Wrap"/>
+
+</ContentControl>
 
 </layout:SfDockingManager>
 
