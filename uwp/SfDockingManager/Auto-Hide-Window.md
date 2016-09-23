@@ -51,14 +51,14 @@ documentation: ug
 
 ## Side Panel and TabItem Customization
 
-The side panel and side panel header can be customized through `SideTabBackground`, `SideItemsBackground` and `SideItemsForeground` properties of the `SfDockingManager`.
+The side panel and side panel header can be customized through `SidePanelBackground`, `SidePanelItemsBackground` and `SidePanelItemsForeground` properties of the `SfDockingManager`.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<layout:SfDockingManager SideTabBackground="Brown"
-                         SideItemsForeground="White" SideItemsBackground="Green">
+<layout:SfDockingManager SidePanelBackground="Brown"
+                         SidePanelItemsForeground="White" SidePanelItemsBackground="Green">
 
 <ContentControl layout:SfDockingManager.Header="SolutionExplorer"
                 layout:SfDockingManager.DockState="AutoHidden" />
@@ -154,13 +154,13 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 ## Enabling and Disabling the AutoHide functionality
 
-The Pin button that performs Auto Hide functionality can be visible by default. It can be invisible to disable the AutoHide functionality through `ShowAwlButton` property.
+The Pin button that performs Auto Hide functionality can be visible by default. It can be invisible to disable the AutoHide functionality through `ShowPinButton` property.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<layout:SfDockingManager ShowAwlButton="False">
+<layout:SfDockingManager ShowPinButton="False">
 
 <ContentControl layout:SfDockingManager.Header="SolutionExplorer" />
 
@@ -173,7 +173,7 @@ The Pin button that performs Auto Hide functionality can be visible by default. 
 ![](Auto-Hide-Window-images/Auto-Hide-Window-img4.jpeg)
 
 
-To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, `AwlButtonVisible` attached property can be used. By default, its value is true, this functionality can be disabled by setting its value as false.
+To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, `IsPinButtonVisible` attached property can be used. By default, its value is true, this functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
@@ -182,10 +182,10 @@ To show or collapse the AutoHide button for a specific child in the `SfDockingMa
 <layout:SfDockingManager>
 
 <ContentControl layout:SfDockingManager.Header="SolutionExplorer"
-                layout:SfDockingManager.AwlButtonVisible="False"/>
+                layout:SfDockingManager.IsPinButtonVisible="False"/>
 
 <ContentControl layout:SfDockingManager.Header="ToolBox"
-                layout:SfDockingManager.AwlButtonVisible="True"/>
+                layout:SfDockingManager.IsPinButtonVisible="True"/>
 
 </layout:SfDockingManager>
 

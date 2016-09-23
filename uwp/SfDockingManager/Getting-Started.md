@@ -35,7 +35,7 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns:local="using:DockingManager_ GettingStarted"
+xmlns:local="using:DockingManager_GettingStarted"
 
 xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
@@ -112,9 +112,6 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 {% endtabs %}
 
 ![](Getting-Started-images/Getting-Started-img2.jpeg)
-
-
-![](Getting-Started-images/Getting-Started-img3.jpeg)
 
 
 ## Set State for the Children

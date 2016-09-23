@@ -139,13 +139,13 @@ SfDockingManager.SetDockState(content1, DockState.Hidden);
 
 ## Customizing Docking window
 
-A Docking window can be customized using the property `HeaderBackground`, `CaptionForeground`, `CaptionFontFamily` and `CaptionMargin` with the desired values respectively.
+A Docking window can be customized using the property `DockWindowCaptionBackground`, `DockWindowCaptionForeground`, `DockWindowCaptionFontFamily` and `DockWindowCaptionMargin` with the desired values respectively.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<layout:SfDockingManager HeaderBackground="Red" CaptionForeground="Yellow">
+<layout:SfDockingManager DockWindowCaptionBackground="Red" DockWindowCaptionForeground="Yellow">
 
 <ContentControl layout:SfDockingManager.Header="Dock1" Content="Content 1"/>
 
@@ -164,13 +164,13 @@ A Docking window can be customized using the property `HeaderBackground`, `Capti
 
 ## Customizing Active Docking Window
 
-Active docking window can be customized using the property `ActiveForeground`, `ActiveWindowColor` with the desired brush values respectively.
+Active docking window can be customized using the property `DockWindowActiveForeground`, `DockWindowActiveBackground` with the desired brush values respectively.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<layout:SfDockingManager ActiveForeground="Red" ActiveWindowColor="Green">
+<layout:SfDockingManager DockWindowActiveForeground="Red" DockWindowActiveBackground="Green">
 
 <ContentControl layout:SfDockingManager.Header="Dock"/>
 
@@ -189,20 +189,18 @@ Active docking window can be customized using the property `ActiveForeground`, `
 
 ## Customizing Floating Window
 
-The float window can be customized by setting `FloatWindowHeaderBackground`, `CaptionForeground`, `FloatWindowContentBackground`, `FloatWindowContentForeground`, `FloatWindowBorderBrush`, `FloatWindowBorderThickness`, `FloatWindowContentBorderBrush`, `FloatWindowContentBorderThickness` and `FloatWindowContentMargin` properties with the required values respectively.
+The float window can be customized by setting `FloatWindowBackground`, `FloatWindowActiveBackground`, `FloatWindowContentBackground`, `FloatWindowContentForeground`, `FloatWindowBorderBrush`, `FloatWindowBorderThickness`, `FloatWindowCaptionBackground`, `FloatWindowContentBorderBrush`, `FloatWindowContentMargin` and `FloatWindowContentBorderThickness` properties with the required values respectively.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<layout:SfDockingManager FloatWindowHeaderBackground="Green" CaptionForeground="White">
+<layout:SfDockingManager FloatWindowBackground="Pink" FloatWindowActiveBackground="Green">
 
 <ContentControl Content="Content 1" layout:SfDockingManager.Header="Dock1"
                                     layout:SfDockingManager.DockState="Float"/>
 
-<ContentControl layout:SfDockingManager.Header="Dock2" Content="Content 2"/>
-
-<ContentControl layout:SfDockingManager.Header="Dock3" Content="Content 3"/>
+<ContentControl layout:SfDockingManager.Header="Toolbox"/>
 
 </layout:SfDockingManager>
 
@@ -211,32 +209,6 @@ The float window can be customized by setting `FloatWindowHeaderBackground`, `Ca
 {% endtabs %}
 
 ![](Dealing-with-Windows-images/Dealing-with-Windows-img6.jpeg)
-
-
-## Customizing Active Floating Window
-
-Active floating window can be customized using the property `FloatWindowActiveHeaderBackground`, `ActiveForeground` with the desired brush values respectively.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-<layout:SfDockingManager FloatWindowActiveHeaderBackground="Yellow" ActiveForeground="Red">
-
-<ContentControl Content="Content 1" layout:SfDockingManager.Header="Dock1"
-                                    layout:SfDockingManager.DockState="Float"/>
-
-<ContentControl layout:SfDockingManager.Header="Dock2" Content="Content 2"/>
-
-<ContentControl layout:SfDockingManager.Header="Dock3" Content="Content 3"/>
-
-</layout:SfDockingManager>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](Dealing-with-Windows-images/Dealing-with-Windows-img7.jpeg)
 
 
 ## Enable/Disable Dragging a Window
@@ -260,13 +232,13 @@ The attached property `IsDragEnabled` that helps to enable or disable the draggi
 
 ## Customizing Hint Shadow Fill Color
 
-The fill color of hint shadow can be customized using `PopupColor` property of `SfDockingManager`.
+The fill color of hint shadow/dock preview element can be customized using `DockPreviewColor` property of `SfDockingManager`.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<layout:SfDockingManager PopUpColor="Red" >
+<layout:SfDockingManager DockPreviewColor="Red" >
 
 <ContentControl layout:SfDockingManager.Header="Item1" />
 

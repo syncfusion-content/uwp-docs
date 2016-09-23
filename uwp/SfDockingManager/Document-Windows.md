@@ -28,13 +28,7 @@ A Document window can be closed using the close button provided in header or usi
 
 A Document window can be moved to float state by dragging or double clicking the item header.
 
-## Pinnable Document Windows
+## Document Container behaviour with DockFill
 
-Document Windows can be pinned or unpinned using the pin button next to its header text.
-
-A pinned item will move to the last position in pinned items panel (Appears prior to unpinned items panel).
-
-An unpinned tab item will move to the first position in unpinned items panel (Appears next to pinned items panel).
-
-Pin or unpin button is visible when the item is selected or pointer is over (for unselected) the item.
+Dock windows are allowed to occupy the remaining space when DockFill property is set to true. SfDockingManager does not reserve space for DocumentContainer. So child windows with Document state are hidden in the layout.
 
