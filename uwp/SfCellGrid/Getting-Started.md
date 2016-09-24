@@ -169,7 +169,7 @@ To populate the data in SfCellGrid, **RowCount** and **ColumnCount** are mandato
 ### Internal Storage
 
 User can populate the grid by storing the cell style in its internal storage. SfCellGrid holds all the data and style related information in **GridStyleInfo**. Individual cells can be accessed using the **GridModel** indexer, which takes row and column indices.
-Based on the row and column indices, the data`s are populated through looping.
+Based on the row and column indices, the data can be populated by looping the cells.
 
 {% tabs %}
 {% highlight c# %}
@@ -195,7 +195,8 @@ for (int row = 0; row < 100; row++)
 
 ### Virtual Mode
 
-User can also populate the data by on-demand using `QueryCellInfo` event. In this event, SfCellGrid does not store cell style in its internal storage, thus ensuring optimized performance. 
+User can also populate the data by on-demand using `QueryCellInfo` event. In this event, SfCellGrid does not store cell style in its internal storage, thus ensuring optimized performance.
+`QueryCellInfo` event will be triggered for each cell when it comes into view.
 
 {% tabs %}
 {% highlight c# %}
