@@ -70,7 +70,7 @@ PlaceHolderStyle – It is used to customize the place holder of Kanban cards.
 
 <syncfusion:SfKanban.PlaceholderStyle>
 
-<syncfusion:PlaceholderStyle CategoryHoverBrush="DarkGray" 
+<syncfusion:PlaceholderStyle SelectedBackground="DarkGray" 
 
 Fill="LightGray"
 
@@ -93,7 +93,7 @@ Foreground="DarkBlue">
 Kanban.PlaceholderStyle = new PlaceholderStyle()
 
 {
-    CategoryHoverBrush = new SolidColorBrush(Colors.DarkGray),
+    SelectedBackground = new SolidColorBrush(Colors.DarkGray),
     Fill = new SolidColorBrush(Colors.LightGray),
     Stroke = new SolidColorBrush(Colors.Black),
     StrokeThickness = 2,
@@ -107,6 +107,6 @@ Kanban.PlaceholderStyle = new PlaceholderStyle()
 ![](SfKanban_images/SfKanban_img13.png)
 
 
-Category hover brush – Indicates the color, when hover on any category of multiple categories in a single column as shown in the below snapshot.
+SelectedBackground – Indicates the color, when hover on any category of multiple categories in a single column as shown in the below snapshot.
 
 ![](SfKanban_images/SfKanban_img14.png)
