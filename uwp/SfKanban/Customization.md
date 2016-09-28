@@ -18,9 +18,9 @@ KanbanCardStyle – It is used to customize the Kanban cards.
 
 <syncfusion:KanbanCardStyle Foreground="DarkBlue"
 
-Stroke="Green"
+BorderBrush="Green"
 
-StrokeThickness="1.25"
+BorderThickness="1.25"
 
 FontSize="13"
 
@@ -45,8 +45,8 @@ Background="#FFEEEEEE">
 Kanban.CardStyle = new KanbanCardStyle()
 {
     Foreground = new SolidColorBrush(Colors.DarkBlue),
-    Stroke = new SolidColorBrush(Colors.Green),
-    StrokeThickness = new Thickness(1),
+    BorderBrush = new SolidColorBrush(Colors.Green),
+    BorderThickness = new Thickness(1),
     FontSize = 13,
     TitleColor = new SolidColorBrush(Colors.Black),
     TitleFontSize = 15,
