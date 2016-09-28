@@ -124,6 +124,11 @@ Syncfusion.SfGroupBar.UWP</td><td>
 Syncfusion.SfShared.UWP</td></tr>
 <tr>
 <td>
+SfKanban</td><td>
+Syncfusion.SfKanban.UWP</td><td>
+</td></tr>
+<tr>
+<td>
 SfMaskedEdit</td><td>
 Syncfusion.SfInput.UWP</td><td>
 Syncfusion.SfShared.UWP</td></tr>
