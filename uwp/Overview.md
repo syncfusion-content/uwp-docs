@@ -70,6 +70,10 @@ SfCarousel</td></tr>
 <tr>
 <td>
 </td><td>
+SfDockingManager</td></tr>
+<tr>
+<td>
+</td><td>
 SfRibbon</td></tr>
 <tr>
 <td>

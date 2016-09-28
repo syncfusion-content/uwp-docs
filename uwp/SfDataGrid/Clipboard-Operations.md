@@ -120,7 +120,7 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 {% highlight c# %}
 this.dataGrid.GridCopyContent += DataGrid_GridCopyContent;
 
-private void DataGrid_GridPasteContent(object sender, GridCopyPasteEventArgs e)
+private void DataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 {
             
 }
