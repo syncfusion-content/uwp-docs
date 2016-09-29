@@ -15,7 +15,7 @@ State persistence is the combined process of `serialization` and `deserializatio
 
 ## Saving Current State
 
-The current layout can be serialized in xml file and saved in `IsolatedStorage` using `SaveDockState` method.
+The current layout can be serialized in XML file and saved in `IsolatedStorage` using `SaveDockState` method.
 
 {% tabs %}
 
