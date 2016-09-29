@@ -28,7 +28,7 @@ A Document window can be closed using the close button provided in header or usi
 
 A Document window can be moved to float state by dragging or double clicking the item header.
 
-## Document Container behaviour with DockFill
+## Document Container behavior with DockFill
 
 Dock windows are allowed to occupy the remaining space when DockFill property is set to true. SfDockingManager does not reserve space for DocumentContainer. So child windows with Document state are hidden in the layout.
 
