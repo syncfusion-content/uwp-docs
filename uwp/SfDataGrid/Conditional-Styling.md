@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ConditionalStyling in SfDataGrid
-description: How to apply conditional styling in SfDataGrid
+title: Conditional Styling in SfDataGrid
+description: How to style cells and rows conditionally based on data  in SfDataGrid
 platform: uwp
 control: SfDataGrid
 documentation: ug
