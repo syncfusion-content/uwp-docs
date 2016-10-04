@@ -12,12 +12,19 @@ documentation: ug
 
 ## Virtualization
 
-SfCellGrid provides support for virtualization which lets you to provide the data dynamically to grid through QueryCellInfo Event.
-SfCellGrid does not store the cell data in GridStyleInfo objects or any other internal grid storage while populating the data through this event, 
-thus increasing the performance. 
+SfCellGrid provides support for virtualization in which data will be dynamically loaded into the grid through on demand or when the user needs to view the data.
+SfCellGrid does not store the cell data in `GridStyleInfo` objects or any other internal grid storage. All information is provided while populating the data through the `QueryCellInfo` event, 
+thus increasing the performance.
 
-This event is used to provide GridStyleInfo object for a given cell. The CellValue property of the GridStyleInfo object holds the data. 
+The `QueryCellInfo` event will be triggered for each cell when it comes into view. For more information, refer [QueryCellInfo](http://help.syncfusion.com/uwp/sfcellgrid/working-with-cellgrid#querycellinfo-event) topic.
+
+## QueryCellInfo Event
+
+The `QueryCellInfo` event of SfCellGrid is to populate the data at runtime.This event is used to provide `GridStyleInfo` object for a given cell. The `CellValue` property of the `GridStyleInfo` object holds the data. 
 All the changes made in this event is done in on-demand basis and not stored in any internal storage.
+
+This event allows you to customize cell contents at run-time on demand, just before the cell is drawn or programmatically accessed.
+The event handler receives an argument of type `GridQueryCellInfoEventArgs` containing data related to this event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -57,9 +64,48 @@ private void Model_QueryCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Styl
 {% endhighlight %}
 {% endtabs %}
 
+N>`QueryCellInfo` event is used to provide the cell values on demand while the changes made in the grid will be saved back by the `CommitCellInfo` event.For more information,
+please refer [here](http://help.syncfusion.com/uwp/sfcellgrid/working-with-cellgrid#commitcellinfo-event)
+
+## CommitCellInfo Event
+
+`CommitCellInfo` event save the changes made in the UI, to the external data source.The event handler receives an argument of type `GridCommitCellInfoEventArgs` containing data related to this event.
+This event commits the changes in value and `GridStyleInfo` object for the cell in SfCellGrid.
+
+{% tabs %}
+{% highlight c# %}
+
+Dictionary<RowColumnIndex, object> committedValues = new Dictionary<RowColumnIndex, object>();
+
+// Loading Row and Column Count,
+
+cellGrid.RowCount = 100; 
+
+cellGrid.ColumnCount = 100;
+
+//Invoking the event,
+
+cellGrid.Model.CommitCellInfo += Model_CommitCellInfo;
+
+//To commit the values at run time,
+
+private void Model_CommitCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Styles.GridQueryCellInfoEventArgs e)
+{
+    // save the updated cell value into dictionary,
+    
+    if (e.Style.HasCellValue)
+    {
+      committedValues[e.Cell] = e.Style.CellValue;
+      e.Handled = true;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Gridlines
 
-Enabling grid lines creates a borders around all cells within the CellGrid. Grid lines can be shown or hided by using ShowGridLines property.
+Enabling grid lines creates a borders around all cells within the CellGrid. Grid lines can be shown or hided by using `ShowGridLines` property.
 By default, the grid lines are visible in the SfCellGrid. If you want to hide the grid lines, then set the `ShowGridLines` property to false.
 
 {% tabs %}
@@ -115,7 +161,7 @@ cellGrid.FooterColumns = 2;
 
 ## Refreshing the Grid
 
-Refreshing the grid means forcing the grid cells to be repainted or resetting of GridStyleInfo objects in the view. SfCellGrid allows you to invalidate or refresh the view either by specifying the full range or particular range.
+Refreshing the grid means forcing the grid cells to be repainted or resetting of `GridStyleInfo` objects in the view. SfCellGrid allows you to invalidate or refresh the view either by specifying the full range or particular range.
 The range to be invalidated can be passed as `GridRangeInfo` object in the below methods.
 
 {% tabs %}
@@ -199,19 +245,84 @@ The other scrolling methods in SfCellGrid are
 
 //Scrolls to the next page in the row(moves to bottom),
 cellGrid.ScrollRows.ScrollToNextPage();
-cellGrid.InvalidateMeasure();
+cellGrid.InvalidateVisual();
  
 //Scrolls to the previous page in the row(moves to top),
 cellGrid.ScrollRows.ScrollToPreviousPage();
-cellGrid.InvalidateMeasure();
+cellGrid.InvalidateVisual();
  
 //Scrolls to the next page in the column(moves to right),
 cellGrid.ScrollColumns.ScrollToNextPage();
-cellGrid.InvalidateMeasure();
+cellGrid.InvalidateVisual();
  
 //Scrolls to the previous page in the colunn(moves to left),
 cellGrid.ScrollColumns.ScrollToPreviousPage();
-cellGrid.InvalidateMeasure();
+cellGrid.InvalidateVisual();
+
+{% endhighlight %}
+{% endtabs %}
+
+## How To
+
+### How to get the Row and Column Index of the cell from Mouse Point?
+
+In SfCellGrid, you can get the Row and Column Index of a cell under the Mouse Point, by using PointToCellRowColumnIndex and PointToCellRowColumnIndexOutsideCells.
+
+#### PointToCellRowColumnIndex:
+
+This method allows you to get the Row and Column Index of a cell under the mouse point in SfCellGrid, regardless of its position.
+
+Syntax: PointToCellRowColumnIndex (Point p);
+
+{% tabs %}
+{% highlight c# %}
+
+Point pos =  Mouse.GetPosition(grid);
+RowColumnIndex cell = grid.PointToCellRowColumnIndex(pos);
+
+{% endhighlight %}
+{% endtabs %}
+
+#### PointToCellRowColumnIndexOutsideCells:
+
+This method allows you to get the Row and Column Index of the cell under the mouse point in SfCellGrid. It also allows you to identify whether you have clicked inside the cell or points outside the cell, that is, points over the gridlines.
+
+Syntax: PointToCellRowColumnIndexOutsideCells(Point p, bool allowOutsideLines)
+
+{% tabs %}
+{% highlight c# %}
+
+Point pos =  Mouse.GetPosition(grid);
+RowColumnIndex cell = cellgrid.PointToCellRowColumnIndexOutsideCells(pos, false);
+
+{% endhighlight %}
+{% endtabs %}
+
+T>You can easily identify whether you have clicked at any point inside the cell or outside the cell by setting allowOutsideLines as “False”. It returns negative values for the points that are outside the cell.
+
+### How to remove the gridlines in cellgrid?
+
+To remove the gridlines in SfCellGrid, then set the `ShowGridLines` property to false.
+
+{% tabs %}
+{% highlight c# %}
+
+//To hide the grid lines
+
+cellGrid.ShowGridLines = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to reset the cellgrid?
+
+To reset or refresh the cells, you need to invoke `InvalidateCells` method of SfCellGrid.
+
+{% tabs %}
+{% highlight c# %}
+
+//Invalidates all the cells in the grid,
+cellGrid.InvalidateCells();
 
 {% endhighlight %}
 {% endtabs %}
