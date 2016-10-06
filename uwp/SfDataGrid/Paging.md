@@ -397,7 +397,7 @@ public sealed partial class MainPage : Page
 ### Loading ItemsSource for page using async and await
 
 When you fetch the data from external server, it takes some time to load the data. In this case, you can delay the loading in `SfDataPager.OnDemandLoading` event using `async` and `await`. 
-Here `dataPager_OnDemandLoading` event is defined with `async` keyword to load the data by time delay. GetEmployeesDetailsListAync method is invoked in `dataPager_OnDemandLoading` with await keyword which holds the execution until returning the data. 
+Here `dataPager_OnDemandLoading` event is defined with `async` keyword to load the data by time delay. GetEmployeesDetailsListAsync method is invoked in `dataPager_OnDemandLoading` with await keyword which holds the execution until returning the data. 
 
 {% tabs %}
 {% highlight c# %}
@@ -411,7 +411,7 @@ public sealed partial class MainPage : Page
     }
 
     //async method which return data with some delay
-    public async Task<List<Employees>> GetEmployeesDetailsListAync(int startindex, int pagesize)
+    public async Task<List<Employees>> GetEmployeesDetailsListAsync(int startindex, int pagesize)
     {
         var employees = new List<Employees>();
         //wait the method Execution to 2000 milliseconds
@@ -427,7 +427,7 @@ public sealed partial class MainPage : Page
     //Delegate handler marked as async to use await inside
     private async void dataPager_OnDemandLoading(object sender, OnDemandLoadingEventArgs args)
     {
-        var source = await GetEmployeesDetailsListAync(args.StartIndex, args.PageSize);
+        var source = await GetEmployeesDetailsListAsync(args.StartIndex, args.PageSize);
         //Data's loaded to SfDataPager dynamically      
         dataPager.LoadDynamicItems(args.StartIndex, source.Take(args.PageSize));          
     }
