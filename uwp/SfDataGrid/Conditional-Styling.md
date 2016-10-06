@@ -12,7 +12,7 @@ documentation: ug
 You can style the SfDataGrid and its inner elements conditionally based on data in two ways,
 
 1. Using Converter
-2. Using StyleSelectord
+2. Using StyleSelector
 
 <table>
 <tr>
@@ -1011,7 +1011,7 @@ Here, group summary rows are customized based on `TotalPrice` summary value.
 
 ## TableSummaryCell
 
-Table summary cells can be customized conditionally by getting particular summary value from [SummaryValues](https://help.syncfusion.com/cr/cref_files/uwp/data/frlrfSyncfusionDataSummaryRecordEntryClassSummaryValuesTopic.html) through `converter` or `style selector`. Likewise, you can also customize the table summary cell based on various propertyes exposed in [GridSummaryRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSummaryRowClassTopic.html) (example: [ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSummaryRowClassShowSummaryInRowTopic.html) property).
+Table summary cells can be customized conditionally by getting particular summary value from [SummaryValues](https://help.syncfusion.com/cr/cref_files/uwp/data/frlrfSyncfusionDataSummaryRecordEntryClassSummaryValuesTopic.html) through `converter` or `style selector`. Likewise, you can also customize the table summary cell based on various properties exposed in [GridSummaryRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSummaryRowClassTopic.html) (example: [ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSummaryRowClassShowSummaryInRowTopic.html) property).
 
 ### Styling table summary cell using Converter
 
