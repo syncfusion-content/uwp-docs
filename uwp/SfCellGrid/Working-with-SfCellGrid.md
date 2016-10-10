@@ -300,7 +300,7 @@ RowColumnIndex cell = cellgrid.PointToCellRowColumnIndexOutsideCells(pos, false)
 
 T>You can easily identify whether you have clicked at any point inside the cell or outside the cell by setting allowOutsideLines as “False”. It returns negative values for the points that are outside the cell.
 
-### How to remove the gridlines in cellgrid?
+### How to remove the gridlines in SfCellGrid?
 
 To remove the gridlines in SfCellGrid, then set the `ShowGridLines` property to false.
 
@@ -314,7 +314,7 @@ cellGrid.ShowGridLines = false;
 {% endhighlight %}
 {% endtabs %}
 
-### How to reset the cellgrid?
+### How to reset the SfCellGrid?
 
 To reset or refresh the cells, you need to invoke `InvalidateCells` method of SfCellGrid.
 
