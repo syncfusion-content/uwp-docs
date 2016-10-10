@@ -558,7 +558,7 @@ Here, caption summary rows are customized based on `TotalPrice` summary value.
 
 ### Styling caption summary row using StyleSelector
 
-In another way, appearance of caption summary row can be customized conditionally based on summary value by setting [SfDataGrid.CaptionSummaryRowStyleSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCaptionSummaryRowStyleSelectorTopic.html)and you can get the container as [CaptionSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCaptionSummaryRowControlClassTopic.html) in `StyleSelector`.
+In another way, appearance of caption summary row can be customized conditionally based on summary value by setting [SfDataGrid.CaptionSummaryRowStyleSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCaptionSummaryRowStyleSelectorTopic.html) and you can get the container as [CaptionSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCaptionSummaryRowControlClassTopic.html) in `StyleSelector`.
 
 {% tabs %}
 {% highlight xaml %}
