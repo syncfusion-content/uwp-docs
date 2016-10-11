@@ -195,7 +195,7 @@ Here, GridCell’s are customized based on `OrderID` property of underlying re
 
 ### Styling rows using Converter
 
-The record rows ([VirtualizingCellsControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridVirtualizingCellsControlClassTopic.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using `converter`, where converter returns the value based on Underlying record.
+The record rows ([VirtualizingCellsControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridVirtualizingCellsControlClassTopic.html)) can be customized conditionally by changing its property value based on `cell value` or `data object` by using `converter`, where converter returns the value based on Underlying record.
 
 {% tabs %}
 {% highlight xaml %}
@@ -666,7 +666,7 @@ Group summary cells can be customized conditionally by getting particular summar
 
 ### Styling group summary cell using Converter
 
-The appearance of group summary cell can be customized conditionally based on summary value by using ‘converter’, where converter returns the value based on summary value.
+The appearance of group summary cell can be customized conditionally based on summary value by using `converter`, where converter returns the value based on summary value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -875,7 +875,7 @@ Group summary row can be customized conditionally by getting particular summary 
 
 ### Styling group summary row using Converter
 
-The appearance of group summary row can be customized conditionally based on summary value by using ‘converter’, where converter returns the value based on summary value.
+The appearance of group summary row can be customized conditionally based on summary value by using `converter`, where converter returns the value based on summary value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1450,7 +1450,7 @@ Here, horizontal alignment of `TotalPrice` column alone center, other column h
 
 ## Row Header
 
-The appearance of row header ([GridRowHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridRowHeaderCellClassTopic.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using `converter`, where converter returns the value based on Underlying record.
+The appearance of row header ([GridRowHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridRowHeaderCellClassTopic.html)) can be customized conditionally by changing its property value based on `cell value` or `data object` by using `converter`, where converter returns the value based on Underlying record.
 
 {% tabs %}
 {% highlight xaml %}
