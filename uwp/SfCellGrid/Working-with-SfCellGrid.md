@@ -16,7 +16,7 @@ SfCellGrid provides support for virtualization in which data will be dynamically
 SfCellGrid does not store the cell data in `GridStyleInfo` objects or any other internal grid storage. All information is provided while populating the data through the `QueryCellInfo` event, 
 thus increasing the performance.
 
-The `QueryCellInfo` event will be triggered for each cell when it comes into view. For more information, refer [QueryCellInfo](http://help.syncfusion.com/uwp/sfcellgrid/working-with-cellgrid#querycellinfo-event) topic.
+The `QueryCellInfo` event will be triggered for each cell when it comes into view. For more information, refer [QueryCellInfo](http://help.syncfusion.com/uwp/sfcellgrid/working-with-sfcellgrid#querycellinfo-event) topic.
 
 ## QueryCellInfo Event
 
@@ -65,7 +65,7 @@ private void Model_QueryCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Styl
 {% endtabs %}
 
 N>`QueryCellInfo` event is used to provide the cell values on demand while the changes made in the grid will be saved back by the `CommitCellInfo` event.For more information,
-please refer [here](http://help.syncfusion.com/uwp/sfcellgrid/working-with-cellgrid#commitcellinfo-event)
+please refer [here](http://help.syncfusion.com/uwp/sfcellgrid/working-with-sfcellgrid#commitcellinfo-event)
 
 ## CommitCellInfo Event
 
@@ -300,7 +300,7 @@ RowColumnIndex cell = cellgrid.PointToCellRowColumnIndexOutsideCells(pos, false)
 
 T>You can easily identify whether you have clicked at any point inside the cell or outside the cell by setting allowOutsideLines as “False”. It returns negative values for the points that are outside the cell.
 
-### How to remove the gridlines in cellgrid?
+### How to remove the gridlines in SfCellGrid?
 
 To remove the gridlines in SfCellGrid, then set the `ShowGridLines` property to false.
 
@@ -314,7 +314,7 @@ cellGrid.ShowGridLines = false;
 {% endhighlight %}
 {% endtabs %}
 
-### How to reset the cellgrid?
+### How to reset the SfCellGrid?
 
 To reset or refresh the cells, you need to invoke `InvalidateCells` method of SfCellGrid.
 
