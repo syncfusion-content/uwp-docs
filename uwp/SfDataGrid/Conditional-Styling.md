@@ -50,6 +50,8 @@ Here, `GridCell` background is changed using `converter`, where converter ret
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
 </Page.Resources>
@@ -102,6 +104,8 @@ You can also style the cells based on record instead of passing single property 
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
     <Style TargetType="syncfusion:GridCell">
@@ -199,6 +203,8 @@ The record rows ([VirtualizingCellsControl](https://help.syncfusion.com/cr/cref_
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
     <Style TargetType="syncfusion:VirtualizingCellsControl">
@@ -328,6 +334,8 @@ The appearance of caption summary cell can be customized conditionally based on 
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
     <Style TargetType="syncfusion:GridCaptionSummaryCell">
@@ -501,6 +509,8 @@ The appearance of caption summary row can be customized conditionally based on s
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
     <Style TargetType="syncfusion:CaptionSummaryRowControl">
@@ -670,6 +680,8 @@ The appearance of group summary cell can be customized conditionally based on su
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
     <Style TargetType="syncfusion:GridGroupSummaryCell">
@@ -879,6 +891,8 @@ The appearance of group summary row can be customized conditionally based on sum
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
     <Style TargetType="syncfusion:GroupSummaryRowControl">
@@ -1019,6 +1033,8 @@ The appearance of table summary cell can be customized conditionally based on su
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
     <Style TargetType="syncfusion:GridTableSummaryCell">
@@ -1454,6 +1470,8 @@ The appearance of row header ([GridRowHeaderCell](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
+
 <Page.Resources>
     <local:ColorConverter x:Key="converter"/>
         <Style TargetType="syncfusion:GridRowHeaderCell">
