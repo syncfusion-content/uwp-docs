@@ -17,13 +17,13 @@ This section explains about various row types in SfDataGrid.
 
 [AddNewRow](http://help.syncfusion.com/uwp/sfdatagrid/data-manipulation#built-in-addnewrow)
 
-SummaryRow
+[SummaryRow](https://help.syncfusion.com/uwp/sfdatagrid/summaries)
 
 [UnboundRow](http://help.syncfusion.com/uwp/sfdatagrid/unbound-rows)
 
 ## Row Header
 
-RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting `SfDataGrid.ShowRowHeader` property.
+RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfDataGrid.ShowRowHeader](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassShowRowHeaderTopic.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -100,7 +100,7 @@ See also.
 
 [Show row index in RowHeader](http://help.syncfusion.com/uwp/sfdatagrid/styles-and-templates#styling-rowheader)
 
-Customizing RowHeader based on record
+[Customizing RowHeader based on record](https://help.syncfusion.com/uwp/sfdatagrid/conditional-styling#row-header)
 
 ## Header Row
 
@@ -108,7 +108,7 @@ Header row is present in top of the SfDataGrid which has column headers in it. C
 
 ![](Rows_images/Rows_img7.png)
 
-You can change the header row height by setting `SfDataGrid.HeaderRowHeight` property.
+You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassHeaderRowHeightTopic.html) property.
 
 ### Hiding Header row
 
@@ -156,7 +156,7 @@ Description
 </tr>
 <tr>
 <td>
-FrozenRowsCount
+[FrozenRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassFrozenRowsCountTopic.htmls)
 </td>
 <td>
 Set the frozen rows count at top of the SfDataGrid.
@@ -164,7 +164,7 @@ Set the frozen rows count at top of the SfDataGrid.
 </tr>
 <tr>
 <td>
-FooterRowsCount
+[FooterRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassFooterRowsCountTopic.html)
 </td>
 <td>
 Set the footer rows count at bottom of the SfDataGrid.
@@ -172,7 +172,7 @@ Set the footer rows count at bottom of the SfDataGrid.
 </tr>
 <tr>
 <td>
-FrozenColumnCount
+[FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassFrozenColumnCountTopic.html)
 </td>
 <td>
 Set the frozen columns count in left side of the SfDataGrid. 
@@ -180,7 +180,7 @@ Set the frozen columns count in left side of the SfDataGrid.
 </tr>
 <tr>
 <td>
-FooterColumnCount
+[FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassFooterColumnCountTopic.html)
 </td>
 <td>
 Set the frozen columns in right side of the SfDataGrid.
@@ -311,9 +311,9 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 
 ### Disable drag and drop between frozen and non-frozen columns
 
-You can disable the drag and drop between frozen and non-frozen columns by handling `QueryColumnDragging` event.
+You can disable the drag and drop between frozen and non-frozen columns by handling [QueryColumnDragging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassQueryColumnDraggingTopic.html) event.
 
-Using `Reason` property in `QueryColumnDraggingEventArgs`, you can cancel the column dropping operation.
+Using `Reason` property in [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridQueryColumnDraggingEventArgsClassTopic.html), you can cancel the column dropping operation.
  
 In the below code, if the Reason is `QueryColumnDraggingReason.Dropping` and the column is dragged from frozen region to non-frozen region or vice versa, you can cancel the dropping action by setting `e.Cancel` as `true` in the event.
 
