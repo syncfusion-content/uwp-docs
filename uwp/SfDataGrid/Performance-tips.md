@@ -13,15 +13,15 @@ SfDataGrid provides various built-in options to optimize the performance when ha
 
 ## Improving loading performance
 
-You can load the large amount of data in less time using built-in `Data Virtualization`.
+You can load the large amount of data in less time using built-in [Data Virtualization](https://help.syncfusion.com/uwp/sfdatagrid/data-virtualization).
 
 ## Improving performance when doing batch updates
 
 SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
 
-1. Invoke `SfDataGrid.View.BeginInit` before update the data.
+1. Invoke [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/cref_files/uwp/data/frlrfSyncfusionDataCollectionViewAdvClassBeginInitTopic.html) before update the data.
 2. After that update underlying collection.
-3. Then call `SfDataGrid.View.EndInit` method, to refresh the View and UI.  Now summaries, sort order and groups will be updated as expected. 
+3. Then call [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/cref_files/uwp/data/frlrfSyncfusionDataCollectionViewAdvClassEndInitTopic.html) method, to refresh the View and UI.  Now summaries, sort order and groups will be updated as expected. 
 
 {% tabs %}
 {% highlight c# %}
@@ -38,9 +38,9 @@ this.dataGrid.View.EndInit();
 
 ## Adding columns efficiently
 
-SfDataGrid allows you to add more number of columns to `SfDataGrid.Columns` collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance.
+SfDataGrid allows you to add more number of columns to [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassColumnsTopic.html) collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance.
 
-You can improve the performance while adding, removing columns by suspending all the UI updates using `Suspend` and resume the updates after adding columns using `Resume` methods. You have to refresh the UI using `RefreshColumns` method.
+You can improve the performance while adding, removing columns by suspending all the UI updates using [Suspend](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridColumnsClassSuspendTopic.html) and resume the updates after adding columns using [Resume](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridColumnsClassResumeTopic.html) methods. You have to refresh the UI using [RefreshColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridHelpersGridHelperClassRefreshColumnsTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -106,7 +106,7 @@ public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
 
 ## Improving UI Filter loading time
 
-SfDataGrid allows you to open filter popup in less time by setting `CanGenerateUniqueItems` property to false. By default `GridFilterControl` loads unique items in popup which takes more time to load.
+SfDataGrid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridAdvancedFilterControlClassCanGenerateUniqueItemsTopic.html) property to false. By default `GridFilterControl` loads unique items in popup which takes more time to load.
 `CanGenerateUniqueItems` property loading `TextBox` to filter instead of `ComboBox` in advanced filter UI View.
 
 {% tabs %}
