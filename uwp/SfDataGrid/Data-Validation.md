@@ -137,7 +137,7 @@ You can validate the cells and rows using [CurrentCellValidating](https://help.s
 
 ## Cell Validation
 
-You can validate the cells using [CurrentCellValidating]((https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellValidatingTopic.html)) event when the cell is edited. [CurrentCellValidating]((https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellValidatingTopic.html)) event occurs when the edited cells tries to commit the data or lose the focus. 
+You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellValidatingTopic.html) event when the cell is edited. [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellValidatingTopic.html) event occurs when the edited cells tries to commit the data or lose the focus. 
 
 [CurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellValidatingEventArgsClassTopic.html) provides information to `CurrentCellValidating` event for validating the cell. `CurrentCellValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. 
 `CurrentCellValidatingEventArgs.NewValue` returns the edited value and you can set the validation status using `CurrentCellValidatingEventArgs.IsValid` property. 
