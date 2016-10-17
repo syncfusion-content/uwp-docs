@@ -690,7 +690,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ### Creating Custom Column
 
-You can also define your own column type to [ViewDefinition.DataGrid](GridViewDeinition.DataGrid = https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridViewDefinitionClassDataGridTopic.html) like parent DataGrid. For more information about creating custom column, refer the [Custom Column support](https://help.syncfusion.com/uwp/sfdatagrid/columns). 
+You can also define your own column type to [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridViewDefinitionClassDataGridTopic.html) like parent DataGrid. For more information about creating custom column, refer the [Custom Column support](https://help.syncfusion.com/uwp/sfdatagrid/columns). 
 After creating the custom column, add the customized renderer to [CellRenderers](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCellRenderersTopic.html) collection of [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDetailsViewDataGridClassTopic.html).
 
 {% tabs %}
