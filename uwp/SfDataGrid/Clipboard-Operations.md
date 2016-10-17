@@ -129,7 +129,7 @@ private void DataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 
 ### GridPasteContent
 
-[GridPasteContent](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassGridPasteContentTopic.html) event occurs when paste the clipboard value into SfDataGrid. [GridCopyPasteEventArgs]((https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCopyPasteEventArgsClassTopic.html)) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
+[GridPasteContent](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassGridPasteContentTopic.html) event occurs when paste the clipboard value into SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCopyPasteEventArgsClassTopic.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -202,7 +202,7 @@ private void DataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventA
 
 ### PasteGridCellContent
 
-[PasteGridCellContent](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassPasteGridCellContentTopic.html) event occurs when cell being paste. [GridCopyPasteCellEventArgs]((https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCopyPasteCellEventArgsClassTopic.html)) provides information for `PasteGridCellContent` event, which has following members
+[PasteGridCellContent](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassPasteGridCellContentTopic.html) event occurs when cell being paste. [GridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCopyPasteCellEventArgsClassTopic.html) provides information for `PasteGridCellContent` event, which has following members
 
 [ClipBoardValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCopyPasteCellEventArgsClassClipBoardValueTopic.html) - Returns clipboard value of a particular cell.
 
