@@ -591,11 +591,11 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ![](Printing_images/Printing_img11.png)
 
-N> `GetColumnWidth`, `GetColumnTextWrapping`, `GetColumnTextAlignment` and `GetColumnPadding` methods are also used for column customization while printing.
+N> [GetColumnWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetColumnWidthTopic.html), [GetColumnTextWrapping](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetColumnTextWrappingTopic.html), [GetColumnTextAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetColumnTextAlignmentTopic.html) and [GetColumnPadding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetColumnPaddingTopic.html) methods are also used for column customization while printing.
 
 ### Printing Selected rows
 
-Selected rows can be printed by overriding `GetSourceListForPrinting` method in `PrintManagerClass` class.
+Selected rows can be printed by overriding [GetSourceListForPrinting](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetSourceListForPrintingTopic.html) method in `PrintManagerClass` class.
 
 {% tabs %}
 {% highlight c# %}
