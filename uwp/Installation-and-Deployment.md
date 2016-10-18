@@ -30,33 +30,20 @@ Syncfusion UWP NuGet packages are available [here](http://nuget.syncfusion.com/p
 
 The steps to install the Syncfusion UWP NuGet Packages in Visual Studio are as follows,
 
-1. Navigate the below location in browser. 
-
-   [http://nuget.syncfusion.com/package/universalwindows](http://nuget.syncfusion.com/package/universalwindows)
-
-   ![](Installation-and-Deployment_images\NuGetConfig_img1.jpeg)
-
-2. Select `Download Links and Details` for the required Syncfusion version.
-
-   ![](Installation-and-Deployment_images\NuGetConfig_img2.jpeg)
-
-3. Click the `DOWNLOAD` button to get the Syncfusion UWP NuGet Packages from the listed package(s).
-
-4. Extract the zip file once downloaded.
-
-5. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below,
+1. In Visual Studio, navigate to `Tools | NuGet Package Manager | Package Manager Settings`, the options dialog will appear on the screen as shows below, 
 
    ![](Installation-and-Deployment_images\NuGetConfig_img3.jpeg)
 
-6. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and locate the extracted directory location as `Package Source` of Syncfusion NuGet Packages.    
+2. Select `NuGet Package Manager | Package Sources` and click `Add` button to add the `Package Name` and `Package Source` of Syncfusion NuGet Packages.
 
-   **Name**: Name of the package source that listed in available package sources.
+   **Name**: Name of the package that listed in Available package sources  
+   **Source**: Syncfusion UWP NuGet Package feed URL
    
-   **Source**: Syncfusion UWP NuGet package source location.
+   [http://nuget.syncfusion.com/nuget_universalwindows/nuget/getsyncfusionpackages/universalwindows](http://nuget.syncfusion.com/nuget_universalwindows/nuget/getsyncfusionpackages/universalwindows)
+    
+   ![](Installation-and-Deployment_images\NuGetConfig_img1.jpeg)
    
-   ![](Installation-and-Deployment_images\NuGetConfig_img4.jpeg)
-
-   N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source. 
+   N> The `Source` text box in the above image denotes the location of the NuGet packages and the `Name` section, allows you to provide a unique name for NuGet Packages Source.
 
 I> Syncfusion other platforms NuGet packages feed links are available [here](http://nuget.syncfusion.com/)
 
@@ -76,22 +63,19 @@ Syncfusion UWP NuGet can install once configured the package source. The NuGet i
 
 Using `Manage NuGet packages` in Visual Studio, NuGet packages can be update.
 
-1. Download the latest Syncfusion NuGet Package from [here](http://nuget.syncfusion.com/package/universalwindows) and configure the latest Syncfusion NuGet Packages in Visual Studio. Please Refer the [NuGet Configuration](#nuget-configuration) topic for more information.
+1. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates` tab to check for updates.
 
-2. Right click on Project and Navigate to the `Manage NuGet Packages` and click on the `Updates tab` to check for updates.
-
-3. Select `Updates -> <Syncfusion Package Source>` in `Package Source` combo box. Refer to the following screenshot for more information.
+2. Select `Updates -> <Syncfusion Package Source>` in `Package Source` combo box. Refer to the following screenshot for more information.
 
    ![](Installation-and-Deployment_images\NuGetConfig_img6.jpeg)
 
-4. If there is a new version of NuGet you will see it in the list of available updates in Updates tab.
+3. If there is a new version of NuGet you will see it in the list of available updates in Updates tab.
 
-5. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
+4. Select NuGet Package in the list and click `Update`. When the update is complete, close and re-open all open instances of Visual Studio.
 
    N> By clicking `Update All` button, all NuGet packages are getting update. When the update is complete, close and re-open all open instances of Visual Studio.
 
 ## Command Line Installation
-
 
 Follow the given steps to install through Command Line in Silent mode.
 
