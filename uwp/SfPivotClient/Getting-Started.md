@@ -356,7 +356,7 @@ namespace SfPivotClientDemo
 
 {% endhighlight %}
 
-Run the appplication, the SfPivotClient control is rendered as shown below. 
+Run the application, the SfPivotClient control is rendered as shown below. 
 
 ![](GettingStarted_Images/GettingStarted.png) 
 
