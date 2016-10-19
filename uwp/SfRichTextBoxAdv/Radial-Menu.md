@@ -34,7 +34,7 @@ richTextBoxAdv.EnableRadialMenu = false;
 
 ## Customizing Radial Menu Appearance
 
-You can customize the appearance of built-in radial menu as per your requirement. This can be done by defining the custom styles under the resources of SfRichTextBoxAdv.
+You can customize the appearance of built-in radial menu as per your requirement. This can be done by defining the custom styles for Radial menu under the resources of SfRichTextBoxAdv, which will override its default style.
 The following code example demonstrates how to customize the appearance of navigation button, rim, radial slider and radial pointer in the built-in radial menu.
 {% tabs %}
 {% highlight xaml %}
