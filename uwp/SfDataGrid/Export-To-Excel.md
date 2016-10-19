@@ -17,7 +17,7 @@ The following assemblies needs to be added for exporting to excel.
 * Syncfusion.SfGridConverter.UWP
 * Syncfusion.XlsIO.UWP
 
-You can export SfDataGrid to excel by using the `ExportToExcel` extension method present in the `Syncfusion.UI.Xaml.Grid.Converter` namespace.
+You can export SfDataGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterGridExcelExportExtensionClassTopic.html) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverter.html) namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -50,11 +50,11 @@ N> SfDataGrid exports data to excel by using XlsIO.
 
 ## Exporting options
 
-Exporting operation can be customized by passing `ExcelExportingOptions` instance as argument to `ExportToExcel` method.
+Exporting operation can be customized by passing [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassTopic.html) instance as argument to `ExportToExcel` method.
  
 ### Export Mode
 
-By default, actual value only will be exported to excel. If you want to export the display text, you need to set `ExportMode` property as `Text`.
+By default, actual value only will be exported to excel. If you want to export the display text, you need to set [ExportMode](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExportModeTopic.html) property as `Text`.
  
 {% tabs %}
 {% highlight c# %}
@@ -87,7 +87,7 @@ ExportMode as Value
 
 ### Export groups with outlines
 
-By default, all the groups in DataGrid will be exported in expanded state. You can enable outlines in excel based on groups by setting the `AllowOutlining` property as `true` in `ExcelExportingOptions`. 
+By default, all the groups in DataGrid will be exported in expanded state. You can enable outlines in excel based on groups by setting the [AllowOutlining](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassAllowOutliningTopic.html) property as `true` in [ExcelExportingOptions](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassTopic.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -115,7 +115,7 @@ if (storageFile != null)
 
 ### Exclude columns while exporting
 
-By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. If you want to exclude some columns while exporting to Excel, you can use `ExcludeColumns` field in `ExcelExportingOptions`.
+By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. If you want to exclude some columns while exporting to Excel, you can use [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExcludeColumnsTopic.html) field in `ExcelExportingOptions`.
 
 {% tabs %}
 {% highlight c# %}
@@ -148,7 +148,7 @@ Here, the columns having CustomerName and Country as `MappingName` are excluded 
 
 ### Excel Version
 
-While exporting to Excel, you can specify the excel version by using `ExcelVersion` property.
+While exporting to Excel, you can specify the excel version by using [ExcelVersion](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExcelVersionTopic.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -169,7 +169,7 @@ if (storageFile != null)
 
 ### Exporting stacked headers
 
-You can export stacked headers to excel by setting `ExportStackedHeaders` property to `true`.
+You can export stacked headers to excel by setting [ExportStackedHeaders](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExportStackedHeadersTopic.html) property to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -198,7 +198,7 @@ if (storageFile != null)
 
 ### Exporting merged cells
 
-You can export merged cells to excel by setting `ExportMergedCells` property as `true`.
+You can export merged cells to excel by setting [ExportMergedCells](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExportMergedCellsTopic.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -225,7 +225,7 @@ if (storageFile != null)
 
 ### Exporting unbound rows
 
-You can export unbound rows to excel by setting `ExportUnBoundRows` property as `true`.
+You can export unbound rows to excel by setting [ExportUnBoundRows](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExportUnBoundRowsTopic.html) property as `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -254,7 +254,7 @@ if (storageFile != null)
 
 ### Changing start row and column index while exporting
 
-You can export the data to specified row index and column index in worksheet, by setting `StartRowIndex` and `StartColumnIndex` properties.
+You can export the data to specified row index and column index in worksheet, by setting [StartRowIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassStartRowIndexTopic.html) and [StartColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassStartColumnIndexTopic.html) properties.
  
 {% tabs %}
 {% highlight c# %}
@@ -288,7 +288,7 @@ if (storageFile != null)
 
 ### Save as stream
 
-After exporting to excel, you can save exported workbook to stream by using `SaveAsAsync` method.
+After exporting to excel, you can save exported workbook to stream by using [SaveAsAsync](https://help.syncfusion.com/cr/cref_files/uwp/xlsio/frlrfSyncfusionXlsIOIWorkbookClassSaveAsAsyncTopic_overloads--.html) method.
  
 {% tabs %}
 {% highlight c# %}
@@ -401,7 +401,7 @@ await Windows.System.Launcher.LaunchFileAsync(storageFile);
 
 ## Export Paging
 
-While exporting data to excel, if paging is used, current page only will be exported, by default. If you want to export all pages, you need to set `ExportAllPages` property as `True`.
+While exporting data to excel, if paging is used, current page only will be exported, by default. If you want to export all pages, you need to set [ExportAllPages](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExportAllPagesTopic.html) property as `True`.
 
 {% tabs %}
 {% highlight c# %}
@@ -422,7 +422,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-By default, all data will be exported to single sheet. If you want to export each page to different sheets, you need to use `ExportPageOptions` property.
+By default, all data will be exported to single sheet. If you want to export each page to different sheets, you need to use [ExportPageOptions](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExportPageOptionsTopic.html) property.
  
 {% tabs %}
 {% highlight c# %}
@@ -460,7 +460,7 @@ if (storageFile != null)
 
 ## Export SelectedItems to Excel
 
-By default, entire grid will be exported to Excel. You can export selected items only by passing `SelectedItems` to `ExportToExcel` method.
+By default, entire grid will be exported to Excel. You can export selected items only by passing `SelectedItems` to [ExportToExcel](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterGridExcelExportExtensionClassExportToExcelTopic_overloads--.html) method.
  
  
 {% tabs %}
@@ -488,7 +488,7 @@ if (storageFile != null)
 
 ## Export to XML
 
-You can save exported workbook as `Xml` file also by using `SaveAsXmlAsync` method.
+You can save exported workbook as `Xml` file also by using [SaveAsXmlAsync](https://help.syncfusion.com/cr/cref_files/uwp/xlsio/frlrfSyncfusionXlsIOIWorkbookClassSaveAsXmlAsyncTopic_overloads--.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -537,7 +537,7 @@ if (storageFile != null)
 
 ## Styling cells based on CellType in Excel
 
-You can customize the cell styles based on `CellType` by using `ExportingEventHandler`.
+You can customize the cell styles based on `CellType` by using [ExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassExportingEventHandlerTopic.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -586,11 +586,11 @@ private static void ExportingHandler(object sender, GridExcelExportingEventArgs 
 
 ## Cell customization in Excel while exporting
 
-You can customize the cells by setting `CellsExportingEventHandler` in `ExcelExportingOptions`.
+You can customize the cells by setting [CellsExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassCellsExportingEventHandlerTopic.html) in `ExcelExportingOptions`.
 
 ### Customize cell value while exporting
 
-You can customize the call values while exporting to excel by using `CellsExportingEventHandler` and `ExcelExportingOptions`.
+You can customize the call values while exporting to excel by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassCellsExportingEventHandlerTopic.html) and `ExcelExportingOptions`.
 
 {% tabs %}
 {% highlight c# %}
@@ -622,7 +622,7 @@ Here, cell values are changed for IsDelivered column based on custom condition.
 
 ### Changing row style in excel based on data
 
-You can customize the rows based on the record values by using `CellsExportingEventHandler`.
+You can customize the rows based on the record values by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassCellsExportingEventHandlerTopic.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -661,7 +661,7 @@ Here, records having the Country name as `Mexico` are customized.
 
 ### Customize the cells based on Column Name
 
-You can customize the cells based on `GridCellExcelExportingEventArgs.ColumnName` property in the `CellsExportingEventHandler`.
+You can customize the cells based on [GridCellExcelExportingEventArgs.ColumnName](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterGridCellExcelExportingEventArgsClassColumnNameTopic.html) property in the [CellsExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassCellsExportingEventHandlerTopic.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -700,11 +700,11 @@ Here, OrderID column cells are customized while exporting.
 
 ## Customize exported workbook and worksheet
 
-SfDataGrid exports to excel by using `XlsIO`.
+SfDataGrid exports to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview).
  
 ### Workbook
 
-SfDataGrid provides option to return `ExcelEngine` from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving.
+SfDataGrid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/cref_files/uwp/xlsio/frlrfSyncfusionXlsIOExcelEngineClassTopic.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving.
  
 {% tabs %}
 {% highlight c# %}
@@ -747,7 +747,7 @@ workBook.Version = ExcelVersion.Excel2013;
 {% endtabs %}
 
 
-Before saving workbook, you need to set the specific excel version by using `IWorkbook.Version` property. Here, you can directly manipulate the data in the worksheet.
+Before saving workbook, you need to set the specific excel version by using [IWorkbook.Version](https://help.syncfusion.com/cr/cref_files/uwp/xlsio/frlrfSyncfusionXlsIOIWorkbookClassVersionTopic.html) property. Here, you can directly manipulate the data in the worksheet.
  
 #### Setting borders
 
@@ -872,11 +872,11 @@ if (storageFile != null)
 
 ## Exporting DetailsView
 
-By default, `DetailsViewDataGrid` will be exported to Excel. You can customize its exporting operation by using `ChildExportingEventHandler`.
+By default, `DetailsViewDataGrid` will be exported to Excel. You can customize its exporting operation by using [ChildExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassChildExportingEventHandlerTopic.html).
 
 ### Excluding DetailsViewDataGrid while exporting
 
-You can exclude particular `DetailsViewDataGrid` while exporting, by using the `ChildExportingEventHandler` and `GridChildExportingEventArgs.Cancel`.
+You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassChildExportingEventHandlerTopic.html) and [GridChildExportingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx).
 
 {% tabs %}
 {% highlight c# %}
@@ -916,7 +916,7 @@ Here, `DetailsViewDataGrid` is not exported for the parent record having OrderID
 
 ### Excluding DetailsViewDataGrid columns from exporting
 
-You can exclude `DetailsViewDataGrid` columns while exporting, by using `ChildExportingEventHandler` and `GridChildExportingEventArgs.ExcludeColumns`.
+You can exclude `DetailsViewDataGrid` columns while exporting, by using [ChildExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassChildExportingEventHandlerTopic.html) and [GridChildExportingEventArgs.ExcludeColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterGridChildExportingEventArgsClassExcludeColumnsTopic.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -954,7 +954,7 @@ Here, OrderID column is displayed in `DetailsViewDataGrid` and it is excluded wh
 
 ### Customizing DetailsViewDataGrid cells
 
-Like parent DataGrid, you can customize the `DetailsViewDataGrid` cells also by using `CellsExportingEventHandler`. Based on `GridCellExcelExportingEventArgs.GridViewDefinition` property, you can identify the particular `DetailsViewDataGrid` and customize it.
+Like parent DataGrid, you can customize the `DetailsViewDataGrid` cells also by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassCellsExportingEventHandlerTopic.html). Based on [GridCellExcelExportingEventArgs.GridViewDefinition](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterGridCellExcelExportingEventArgsClassGridViewDefinitionTopic.html) property, you can identify the particular `DetailsViewDataGrid` and customize it.
 
 {% tabs %}
 {% highlight c# %}
@@ -1000,7 +1000,7 @@ private static void ChildExportingHandler(object sender, GridCellExcelExportingE
 
 ## Performance
 
-Using `ExcelExportingOptions.CellsExportingEventHandler` and changing settings for each cell will consume more memory and time consumption. So, avoid using `CellsExportingEventHandler` and instead of you can do the required settings in the exported sheet.
+Using [ExcelExportingOptions.CellsExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassCellsExportingEventHandlerTopic.html) and changing settings for each cell will consume more memory and time consumption. So, avoid using [CellsExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/sfgridconverter/frlrfSyncfusionUIXamlGridConverterExcelExportingOptionsClassCellsExportingEventHandlerTopic.html) and instead of you can do the required settings in the exported sheet.
  
 ### Formatting column without using CellsExportingEventHandler
 
