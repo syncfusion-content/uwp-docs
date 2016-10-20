@@ -109,4 +109,4 @@ The following screenshot shows the radial menu with customized style.
 ![](Radial-Menu_images/Radial-Menu_img2.jpeg)
 
 The sample can be downloaded from following link.
-[Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadialMenuCustomization-1397995223# "")
+[Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadialMenuCustomization-1397995223# "Sample to demonstrate customizing the style of built-in radial menu")
