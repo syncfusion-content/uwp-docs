@@ -52,6 +52,7 @@ To develop an application with UWP PullToRefresh is simple. The following steps 
 * Create the `PullableContent` for the `SfPullToRefresh`
 
 You can set the `PullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
+{% tabs %}
 
 {%highlight Xaml%}
 
@@ -63,7 +64,6 @@ You can set the `PullableContent` for the `SfPullToRefresh` by adding the desire
     </syncfusion:SfPullToRefresh>
     
 {%endhighlight%}
-{% endtabs %}
  
  ## Events
 
