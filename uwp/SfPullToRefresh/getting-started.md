@@ -45,298 +45,114 @@ Refer to the following code to add the SfPullToRefresh control:
 
 {% endtabs %}
 
-
-
-
-
 ## Customizing a simple SfPullToRefresh sample
 
 To develop an application with UWP PullToRefresh is simple. The following steps explains how to create and configure its properties.
 
-1. Create an instance for the `SfPullToRefresh` in the constructor and set the `SfPullToRefresh` control as in the XAML page of the Application. 
-
-{%highlight Xaml%}
-
-    <Grid x:Name="LayoutRoot" Background="Black">
-        <syncfusion:SfPullToRefresh />
-    </ Grid > 
-
-{%endhighlight%}
-
-2. Create the `PullableContent` for the `SfPullToRefresh`
+* Create the `PullableContent` for the `SfPullToRefresh`
 
 You can set the `PullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh">
-        <syncfusion: SfPullToRefresh.PullableContent>
-            <Grid Background="#039be5" Name="mainGrid">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="0.2*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="0.4*"/>
-                </Grid.RowDefinitions>
-                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Binding SelectedValue.City}" FontSize="48" Foreground="White" FontWeight="Bold"/>
-                <Grid Grid.Row="1"  Height="200" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Image Source="{Binding SelectedValue.Icon}" Height="100" Width="100"/>
-                    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <TextBlock Text="{Binding SelectedValue.High}" FontWeight="Bold" FontSize="36" Foreground="#FFFFFF"/>
-                        <TextBlock Text="° /" FontWeight="Bold" FontSize="36" Foreground="#FFFFFF"/>
-                        <TextBlock Text="{Binding SelectedValue.Low}" FontWeight="SemiLight" VerticalAlignment="Bottom" FontSize="24" Foreground="#FFFFFF"/>
-                    </StackPanel>
-                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding SelectedValue.DayOfWeek}" Grid.Row="2" FontSize="24" Foreground="#FFFFFF"/>
-                </Grid>
-                <ScrollViewer x:Name="scroll"  PointerPressed="ScrollViewer_PointerPressed" Grid.Row="2" VerticalScrollBarVisibility="Hidden" Background="#007aaa">
-                    <ItemsControl  VerticalAlignment="Top" HorizontalAlignment="Center" ItemsSource="{Binding Conditions}">
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel Margin="10 5 10 5"  VerticalAlignment="Top" HorizontalAlignment="Center">
-                                    <TextBlock x:Name="dayTextBlock"  HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding DayOfWeek}" Foreground="{Binding IsSelected, Converter={StaticResource BoolToBrush}, UpdateSourceTrigger=PropertyChanged}"/>
-                                    <Image x:Name="selectedImage"  Source="{Binding CurrentIcon}" Height="60" Width="90"/>
-                                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding High}" Foreground="{Binding Path=Foreground, ElementName=dayTextBlock}"/>
-                                </StackPanel>
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                        <ItemsControl.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <StackPanel Orientation="Horizontal"/>
-                            </ItemsPanelTemplate>
-                        </ItemsControl.ItemsPanel>
-                    </ItemsControl>
-                </ScrollViewer>
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" PullingThreshold="150" >
+        <syncfusion:SfPullToRefresh.PullableContent>
+            <Grid Background="#039be5" Name="controlView" >
             </Grid>
         </syncfusion:SfPullToRefresh.PullableContent>
     </syncfusion:SfPullToRefresh>
-
+    
 {%endhighlight%}
+{% endtabs %}
+ 
+ ## Events
 
-The `ItemsSource` can be populated to the ScrollViewer and the main Grid from the below code:
+The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now user can proceed to fetching the data from web or database. Once the data is fetched, we should call Refresh to method to complete all animations.
 
-{% highlight c# %}
+There are three built-in events in the PullToRefresh control namely:
 
-    public class Forecast : INotifyPropertyChanged
-    {
-        public Forecast()
-        {
-            IsSelected = false;
-        }
-        private bool isSelected;
-        public bool IsSelected
-        {
-            get { return isSelected; }
-            set {
-                    if(value)
-                    {
-                        CurrentIcon = SelectionIcon;
-                    }
-                    else
-                    {
-                        CurrentIcon = Icon;
-                    }
-            isSelected = value; OnPropertyChanged("IsSelected"); }
-        }
+1. `Pulling`
+2. `Refreshing`
+3. `Refreshed`
 
-        private string city = string.Empty;
-        public string City
-        {
-            get { return city; }
-            set { city = value; OnPropertyChanged("City"); }
-        }
-        
-        private string conditions = string.Empty;
-        public string Conditions
-        {
-            get { return conditions; }
-            set { conditions = value; OnPropertyChanged("Conditions"); }
-        }
+## Pulling
 
+`Pulling` event is triggered when we start pulling down the PullableContent. It is triggered as long as the pointer or finger is pressed and the progress is less than 100 and not equal to 0 . The arguments for the event are:
 
-        private string dayOfWeek = DateTime.Now.DayOfWeek.ToString();
-        public string DayOfWeek
-        {
-            get { return dayOfWeek; }
-            set { dayOfWeek = value; OnPropertyChanged("DayOfWeek"); }
-        }
-
-
-        private string high = string.Empty;
-        public string High
-        {
-        get { return high; }
-        set { high = value; OnPropertyChanged("High"); }
-        }
-        
-        private string low = string.Empty;
-        public string Low
-        {
-            get { return low; }
-            set { low = value; OnPropertyChanged("Low"); }
-        }
-
-        private ImageSource icon;
-        public ImageSource Icon
-        {
-            get { return icon; }
-            set { CurrentIcon = value; icon = value; OnPropertyChanged("Icon"); }
-        }
-        
-        private int index = 0;
-        public int Index
-        {
-            get { return index; }
-            set { index = value; OnPropertyChanged("Index"); }
-        }
-        
-        private ImageSource currentIcon;
-        public ImageSource CurrentIcon
-        {
-            get { return currentIcon; }
-            set { currentIcon = value; OnPropertyChanged("CurrentIcon"); }
-        }
-
-        private ImageSource selectionIcon;
-        public ImageSource SelectionIcon
-        {
-            get { return selectionIcon; }
-            set { selectionIcon = value; OnPropertyChanged("SelectedIcon"); }
-        }
-
-        private string date;
-        public string Date
-        {
-            get { return date; }
-            set { date = value;  OnPropertyChanged("Date"); }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged(string names)
-        {
-            if (PropertyChanged != null)
-            PropertyChanged(this, new PropertyChangedEventArgs(names));
-        }
-    }
-
-    public class ForecastViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Forecast> conditions;       
-        public ObservableCollection<Forecast> Conditions
-        {
-            get { return conditions; }
-            set { conditions = value; OnPropertyChanged("Conditions"); }
-        }
-        
-        private Forecast selectedValue;
-        public Forecast SelectedValue
-        {
-            get { return selectedValue; }
-            set { selectedValue = value; OnPropertyChanged("SelectedValue"); }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged(string names)
-        {
-            if (PropertyChanged != null)
-            PropertyChanged(this, new PropertyChangedEventArgs(names));
-        }
-
-        public ForecastViewModel()
-        {
-            Conditions = new ObservableCollection<Forecast>();
-            Conditions.Add(new Forecast() { City = "Morrisville", Index=0, Date = DateTime.Today.Date.ToString("dd"), Month= DateTimeFormatInfo.CurrentInfo.GetMonthName(DateTime.Today.Month).ToString(), DayOfWeek = DateTime.Today.DayOfWeek.ToString(), Conditions = "Windy", High = "21", Low = "16", Icon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Windy.png")), SelectedIcon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Windy-selected.png")) });
-            Conditions.Add(new Forecast() { City = "Morrisville", Index = 1, Date = DateTime.Today.AddDays(1).Date.ToString("dd"), DayOfWeek = DateTime.Today.AddDays(1).DayOfWeek.ToString(), Month = DateTimeFormatInfo.CurrentInfo.GetMonthName(DateTime.Today.AddDays(1).Month).ToString(), Conditions = "Warm", High = "30", Low = "21", Icon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Warm.png")), SelectedIcon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Warm-selected.png")) });
-            Conditions.Add(new Forecast() { City = "Morrisville", Index = 2, Date = DateTime.Today.AddDays(2).Date.ToString("dd"), DayOfWeek = DateTime.Today.AddDays(2).DayOfWeek.ToString(), Month = DateTimeFormatInfo.CurrentInfo.GetMonthName(DateTime.Today.AddDays(2).Month).ToString(), Conditions = "Cloudy", High = "19", Low = "15", Icon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Cloudy.png")), SelectedIcon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Cloudy-selected.png")) });
-            Conditions.Add(new Forecast() { City = "Morrisville", Index = 3, Date = DateTime.Today.AddDays(3).Date.ToString("dd"), DayOfWeek = DateTime.Today.AddDays(3).DayOfWeek.ToString(), Month = DateTimeFormatInfo.CurrentInfo.GetMonthName(DateTime.Today.AddDays(3).Month).ToString(), Conditions = "Rainy", High = "15", Low = "10", Icon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Rainy.png")), SelectedIcon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Rainy-selected.png")) });
-            Conditions.Add(new Forecast() { City = "Morrisville", Index = 4, Date = DateTime.Today.AddDays(4).Date.ToString("dd"), DayOfWeek = DateTime.Today.AddDays(4).DayOfWeek.ToString(), Month = DateTimeFormatInfo.CurrentInfo.GetMonthName(DateTime.Today.AddDays(4).Month).ToString(), Conditions = "Warm", High = "29", Low = "21", Icon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Warm.png")), SelectedIcon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Warm-selected.png")) });
-            Conditions.Add(new Forecast() { City = "Morrisville", Index = 5, Date = DateTime.Today.AddDays(5).Date.ToString("dd"), DayOfWeek = DateTime.Today.AddDays(5).DayOfWeek.ToString(), Month = DateTimeFormatInfo.CurrentInfo.GetMonthName(DateTime.Today.AddDays(5).Month).ToString(), Conditions = "Humid", High = "33", Low = "24", Icon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Humid.png")), SelectedIcon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Humid-selected.png")) });
-            Conditions.Add(new Forecast() { City = "Morrisville", Index = 6, Date = DateTime.Today.AddDays(6).Date.ToString("dd"), DayOfWeek = DateTime.Today.AddDays(6).DayOfWeek.ToString(), Month = DateTimeFormatInfo.CurrentInfo.GetMonthName(DateTime.Today.AddDays(6).Month).ToString(), Conditions = "Rainy", High = "19", Low = "16", Icon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Rainy.png")), SelectedIcon = new BitmapImage(new Uri("ms-appx:///PullToRefresh/Assets/Rainy-selected.png")) });
-            SelectedValue = Conditions[0];
-            SelectedValue.IsSelected = true;
-        }       
-    }
-
-{% endhighlight %}
-
-    N> The ItemsSource populated for all code snippets in the document are assumed from the above table
-
-SfPullToRefresh:
+* SfPullToRefresh
+* Progress
 
 {% tabs %}
 
 {%highlight Xaml%}
 
-        // ...
-
-        <UserControl.DataContext>
-            <local:ForecastViewModel/>
-        </UserControl.DataContext>
-        <Grid Background="White">
-        <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Width="900" Height="500" Refreshing="pullToRefresh_Refreshing" PullingThreshold="250" Transition="{Binding SlideTransition,Mode=TwoWay}">
-            <syncfusion:SfPullToRefresh.PullableContent>
-                <Grid Background="#039be5" Name="mainGrid">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="0.2*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="0.4*"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="{Binding SelectedValue.City}" 
-                        FontSize="48" Foreground="White" FontWeight="Bold"/>
-                    <Grid Grid.Row="1"  Height="200" Width="200" VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <Grid.RowDefinitions>   
-                            <RowDefinition/>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Image Source="{Binding SelectedValue.Icon}" Height="100" Width="100"/>
-                        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <TextBlock Text="{Binding SelectedValue.High}" FontWeight="Bold" FontSize="36" Foreground="#FFFFFF"/>
-                            <TextBlock Text="° /" FontWeight="Bold" FontSize="36" Foreground="#FFFFFF"/>
-                            <TextBlock Text="{Binding SelectedValue.Low}" FontWeight="SemiLight" VerticalAlignment="Bottom" FontSize="24" Foreground="#FFFFFF"/>
-                        </StackPanel>
-                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding SelectedValue.DayOfWeek}" Grid.Row="2" FontSize="24" Foreground="#FFFFFF"/>
-                    </Grid>
-                    <ScrollViewer x:Name="scroll" Grid.Row="2" VerticalScrollBarVisibility="Hidden" Background="#007aaa">
-                        <ItemsControl  VerticalAlignment="Top" HorizontalAlignment="Center" ItemsSource="{Binding Conditions}">
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <StackPanel Margin="10 5 10 5"  VerticalAlignment="Top" HorizontalAlignment="Center">
-                                        <TextBlock x:Name="dayTextBlock"  HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding DayOfWeek}" Foreground="{Binding IsSelected, Converter={StaticResource BoolToBrush}, UpdateSourceTrigger=PropertyChanged}"/>
-                                        <Image x:Name="selectedImage"  Source="{Binding CurrentIcon}" Height="60" Width="90"/>
-                                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="{Binding High}" Foreground="{Binding Path=Foreground, ElementName=dayTextBlock}"/>
-                                    </StackPanel>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                            <ItemsControl.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <StackPanel Orientation="Horizontal"/>
-                                </ItemsPanelTemplate>
-                            </ItemsControl.ItemsPanel>
-                        </ItemsControl>
-                    </ScrollViewer>
-                </Grid>
-            </syncfusion:SfPullToRefresh.PullableContent>
-        </syncfusion:SfPullToRefresh>
-       
-       // ...
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Pulling="pullToRefresh_Pulling" />
 
 {%endhighlight%}
 
 {% highlight c# %}
 
+    private void pullToRefresh_Pulling(object sender, PullingEventArgs args)
+    {
+        (sender as SfPullToRefresh).RefreshText = args.PulledDistance.ToString();
+    }
+{% endhighlight %}
+
+{% endtabs %}
+
+## Refreshing
+
+`Refreshing` event is triggered once the content is pulled through the PullingThreshold or Progress reaches 100. This event is triggered till the Refresh() method is called.
+
+{% tabs %}
+
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Refreshing="pullToRefresh_Refreshing" />
+
+{%endhighlight%}
+
+{% highlight c# %}
+    
+    DispatcherTimer timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(7) };
+
     private void pullToRefresh_Refreshing(object sender)
     {
         timer.Start();
         timer.Tick += Timer_Tick;
-        (sender as SfPullToRefresh).Refresh();
+    }
+    
+    private void Timer_Tick(object sender, object e)
+    {
+        timer.Stop();
+        pullToRefresh.Refresh();          
+    }
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+## Refreshed
+
+`Refreshed` event is triggered once the refreshing and all the animations associated with the control are completed.
+
+{% tabs %}
+
+{%highlight Xaml%}
+
+    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" Refreshed="pullToRefresh_Refreshed" />
+
+{%endhighlight%}
+
+{% highlight c# %}
+
+    private async void pullToRefresh_Refreshed(object sender)
+    {
+        var dialog = new MessageDialog("Content has been refreshed");
+        await dialog.ShowAsync();
     }
 
 {% endhighlight %}
 
 {% endtabs %}
-
-![](getting-started_images/img1.png)
+        
