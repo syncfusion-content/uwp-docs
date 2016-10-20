@@ -3,7 +3,7 @@ layout: post
 title: Getting started SfDataPager control in UWP.
 description: Getting started of SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 

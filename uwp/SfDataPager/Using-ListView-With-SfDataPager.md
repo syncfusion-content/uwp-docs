@@ -3,7 +3,7 @@ layout: post
 title: Using ListView with SfDataPager control in UWP.
 description: Using ListView with SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 
