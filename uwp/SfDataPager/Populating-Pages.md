@@ -3,7 +3,7 @@ layout: post
 title: Populating pages of SfDataPager control in UWP.
 description: Populating pages of SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 

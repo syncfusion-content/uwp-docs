@@ -3,7 +3,7 @@ layout: post
 title: Appearance of SfDataPager control in UWP.
 description: Appearance of SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 # Appearance
