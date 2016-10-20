@@ -63,7 +63,6 @@ You can set the `PullableContent` for the `SfPullToRefresh` by adding the desire
     </syncfusion:SfPullToRefresh>
     
 {%endhighlight%}
-{% endtabs %}
  
  ## Events
 
