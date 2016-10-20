@@ -3,7 +3,7 @@ layout: post
 title: Programmatically processing paging with SfDataPager control in UWP.
 description: Programmatically processing paging with SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 # Programmatically processing paging

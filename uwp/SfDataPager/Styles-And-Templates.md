@@ -3,7 +3,7 @@ layout: post
 title: Styles and templates of SfDataPager control in UWP.
 description: Styles and templates of SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 
