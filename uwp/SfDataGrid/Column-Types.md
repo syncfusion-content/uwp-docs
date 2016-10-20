@@ -28,10 +28,10 @@ Description
 </tr>
 <tr>
 <td>
-GridTextColumn
+[GridTextColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridTextColumnClassTopic.html)
 </td>
 <td>
-GridCellTextBoxRenderer
+[GridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTextBoxRendererClassTopic.html)
 </td>
 <td>
 Use to display the string data. 
@@ -39,10 +39,10 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-GridNumericColumn
+[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridNumericColumnClassTopic.html)
 </td>
 <td>
-GridCellNumericRenderer
+[GridCellNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellNumericRendererClassTopic.html)
 </td>
 <td>
 Use to display the numeric data.
@@ -50,10 +50,10 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-GridDateTimeColumn
+[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridDateTimeColumnClassTopic.html)
 </td>
 <td>
-GridCellDateTimeRenderer
+[GridCellDateTimeRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellDateTimeRendererClassTopic.html)
 </td>
 <td>
 Use to display the date time value.
@@ -61,10 +61,10 @@ Use to display the date time value.
 </tr>
 <tr>
 <td>
-GridComboBoxColumn
+[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridComboBoxColumnClassTopic.html)
 </td>
 <td>
-GridCellComboBoxRenderer
+[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellComboBoxRendererClassTopic.html)
 </td>
 <td>
 Use to display the IEnumerable data using <code>ComboBox</code>.
@@ -72,10 +72,10 @@ Use to display the IEnumerable data using <code>ComboBox</code>.
 </tr>
 <tr>
 <td>
-GridCheckBoxColumn
+[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCheckBoxColumnClassTopic.html)
 </td>
 <td>
-GridCellCheckBoxRenderer
+[GridCellCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellCheckBoxRendererClassTopic.html)
 </td>
 <td>
 Use to display the boolean type data.
@@ -83,10 +83,10 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
-GridImageColumn
+[GridImageColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridImageColumnClassTopic.html)
 </td>
 <td>
-GridCellImageRenderer
+[GridCellImageRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellImageRendererClassTopic.html)
 </td>
 <td>
 Use to display the image in each row.
@@ -94,10 +94,10 @@ Use to display the image in each row.
 </tr>
 <tr>
 <td>
-GridHyperlinkColumn
+[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridHyperlinkColumnClassTopic.html)
 </td>
 <td>
-GridCellHyperLinkRenderer
+[GridCellHyperLinkRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellHyperlinkRendererClassTopic.html)
 </td>
 <td>
 Use to display the URI data.
@@ -105,10 +105,10 @@ Use to display the URI data.
 </tr>
 <tr>
 <td>
-GridTemplateColumn
+[GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridTemplateColumnClassTopic.html)
 </td>
 <td>
-GridCellTemplateRenderer
+[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTemplateRendererClassTopic.html)
 </td>
 <td>
 Use to display the custom template-specified content.
@@ -116,11 +116,11 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-GridUnboundColumn
+[GridUnboundColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridUnBoundColumnClassTopic.html)
 </td>
 <td>
-GridUnBoundCellTextBoxRenderer
-GridUnBoundCellTemplateRenderer
+[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTextBoxRendererClassTopic.html)
+[GridUnBoundCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTemplateRendererClassTopic.html)
 </td>
 <td>
 Use to display custom information of each record.
@@ -128,18 +128,18 @@ Use to display custom information of each record.
 </tr>
 <tr>
 <td>
-GridMultiColumnDropDownList
+[GridMultiColumnDropDownList](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassTopic.html)
 </td>
 <td>
-GridCellMultiColumnDropDownRenderer
+[GridCellMultiColumnDropDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellMultiColumnDropDownRendererClassTopic.html)
 </td>
 <td>
-Use to display the IEnumerable data using <code>SfMultiColumnDropdownControl</code>.
+Use to display the IEnumerable data using [SfMultiColumnDropdownControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfMultiColumnDropDownControlClassTopic.html).
 </td>
 </tr>
 <tr>
 <td>
-GridUpDownColumn
+[GridUpDownColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridUpDownColumnClassTopic.html)
 </td>
 <td>
 GridCellUpDownRenderer
@@ -152,11 +152,11 @@ Use to display the numeric data using <code>SfNumericUpDown</code>.
 
 ## GridColumn
 
-`GridColumn` is an abstract class provides base functionalities for all the column types in SfDataGrid.
+[GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnClassTopic.html) is an abstract class provides base functionalities for all the column types in SfDataGrid.
 
 ### Mapping column to particular property
 
-Column can be bound to a property in data object using `GridColumn.MappingName` property. In addition, it supports to format or bind different property for display and edit mode separately via `GridColumn.DisplayBinding` and `GridColumn.ValueBinding`.
+Column can be bound to a property in data object using [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassMappingNameTopic.html) property. In addition, it supports to format or bind different property for display and edit mode separately via [GridColumn.DisplayBinding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassDisplayBindingTopic.html) and [GridColumn.ValueBinding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassValueBindingTopic.html).
 
 When you set `MappingName`, `DisplayBinding` and `ValueBinding` are created based on `MappingName`, if these properties are not defined explicitly. You can use `DisplayBinding` property to format the column in display, by setting `Converter` property of `Binding`.
 
@@ -193,11 +193,11 @@ In the below screenshot, Unit Price column display value is formatted to currenc
 
 ![](Column-Types_images/Column-Types_img1.png)
 
-By default, Columns handling the data operations (sorting and grouping) based on `MappingName` property. You can perform data operations based on `ValueBinding` by setting `GridColumn.UseBindingValue` to `true`, when the standard reflection not works or binding column with complex or indexer properties.
+By default, Columns handling the data operations (sorting and grouping) based on `MappingName` property. You can perform data operations based on `ValueBinding` by setting [GridColumn.UseBindingValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnClassUseBindingValueTopic.html) to `true`, when the standard reflection not works or binding column with complex or indexer properties.
 
 ### CellTemplate in GridColumn
 
-You can load any UWP control in the display mode for all columns by setting `GridColumn.CellTemplate` property. In edit mode, corresponding editor will be loaded based on column type.
+You can load any UWP control in the display mode for all columns by setting [GridColumn.CellTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateTopic.html) property. In edit mode, corresponding editor will be loaded based on column type.
  
 In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar` and `TextBlock`. When you start editing `DoubleTextBox` will be loaded as Editor.
 
@@ -254,8 +254,8 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar` and 
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`.
  
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting `GridColumn.SetCellBoundValue` property to `true`. Setting `SetCellBoundValue` to true, changes the
- DataContext for CellTemplate to `DataContextHelper` which has the following members,
+You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [GridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassSetCellBoundValueTopic.html) property to `true`. Setting `SetCellBoundValue` to true, changes the
+ DataContext for CellTemplate to [DataContextHelper](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsDataContextHelperClassTopic.html) which has the following members,
  
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -298,7 +298,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`GridColumn` provides support to choose different [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using `GridColumn.CellTemplateSelector` property.
+`GridColumn` provides support to choose different [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateSelectorTopic.html) property.
   
 For example, two different templates loaded alternatively in OrderID column.
  
@@ -574,7 +574,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 
 ### Styling GridColumn
 
-`GridColumn` support to customize the style of particular column using `GridColumn.CellStyle` property. For more information, refer **Styling and Template** section.
+`GridColumn` support to customize the style of particular column using [GridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassCellStyleTopic.html) property. For more information, refer [Styling and Template](https://help.syncfusion.com/uwp/sfdatagrid/styles-and-templates) section.
 
 #### Change the font setting
 
@@ -638,7 +638,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 
 #### Styles based on custom logic
 
-You can apply the styles to columns based on certain condition using `GridColumn.CellStyleSelector` property.
+You can apply the styles to columns based on certain condition using [GridColumn.CellStyleSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassCellStyleSelectorTopic.html) property.
 
 Below code creates two different styles by TargetType `GridCell`.
 
@@ -729,31 +729,31 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 
 #### Hide Column
 
-You can hide or unhide the particular column programmatically by setting `GridColumn.IsHidden` property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](http://help.syncfusion.com/uwp/sfdatagrid/columns#resizing-columns) section.
+You can hide or unhide the particular column programmatically by setting [GridColumn.IsHidden](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassIsHiddenTopic.html) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](http://help.syncfusion.com/uwp/sfdatagrid/columns#resizing-columns) section.
 
 #### Disable column
 
-You can disable column by setting `GridColumn.AllowFocus` property. Therefore, that column can’t be selected or edited.
+You can disable column by setting [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowFocusTopic.html) property. Therefore, that column can’t be selected or edited.
  
 ### Width, alignment and padding settings
 
 #### Width
 
-The width of `GridColumn` can be changed by setting `Width` property. Column width set based on `GridColumn.MinimumWidth` and `GridColumn.MaximumWidth` properties.
+The width of `GridColumn` can be changed by setting [Width](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassWidthTopic.html) property. Column width set based on [GridColumn.MinimumWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassMinimumWidthTopic.html) and [GridColumn.MaximumWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassMaximumWidthTopic.html) properties.
  
 N> If the `GridColumn.Width` is defined explicitly takes priority than `GridColumn.ColumnSizer`.
 
 #### Padding
 
-GridColumn allows you to the change the padding of cell content by setting `Padding` property.
+GridColumn allows you to the change the padding of cell content by setting `[Padding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassPaddingTopic.html) property.
  
 #### Alignment
 
-GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellControl` content using `TextAlignment`, `VerticalAlignment` and `HorizontalHeaderContentAlignment` properties.
+GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellControl` content using [TextAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassTextAlignmentTopic.html), [VerticalAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassVerticalAlignmentTopic.html) and [HorizontalHeaderContentAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassHorizontalHeaderContentAlignmentTopic.html) properties.
 
 ## GridTextColumnBase
 
-`GridTextColumnBase` is the abstract class derived from `GridColumn`. The following columns are derived from the `GridTextColumnBase`.
+[GridTextColumnBase](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassTopic.html) is the abstract class derived from `GridColumn`. The following columns are derived from the `GridTextColumnBase`.
 
 1. GridTextColumn
 
@@ -821,7 +821,7 @@ this.dataGrid.Columns.Add(new GridTextColumn()
 
 ### Spell check while editing
 
-You can enable spell check in GridTextColumn using `IsSpellCheckEnabled` property.
+You can enable spell check in GridTextColumn using [IsSpellCheckEnabled](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridTextColumnClassIsSpellCheckEnabledTopic.html) property.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridTextColumn HeaderText="Ship City"
@@ -863,7 +863,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 
 ### Data formatting
 
-`GridNumericColumn` allows you to format the numeric data by specifying the [predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) into `GridNumericColumn.FormatString` property. 
+`GridNumericColumn` allows you to format the numeric data by specifying the [predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) into [GridNumericColumn.FormatString](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridNumericColumnClassFormatStringTopic.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -881,7 +881,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", M
 
 ### Null value support
 
-GridNumericColumn provides support to restrict or allow null value in columns based on `AllowNullInput` property. Instead of displaying null values, you can display hint text using `Watermark` property.
+GridNumericColumn provides support to restrict or allow null value in columns based on [AllowNullInput](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridNumericColumnClassAllowNullInputTopic.html) property. Instead of displaying null values, you can display hint text using [Watermark](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridNumericColumnClassWaterMarkTopic.html) property.
  
 The `Watermark` property won’t work, when the `AllowNullInput` is `false`.
 
@@ -964,7 +964,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 
 ### Editing support 
 
-By default, the user can input the date time value by selecting through date selector. You can allow users to input or delete the date time value from the keyboard by setting `AllowInlineEditing` to `true`.
+By default, the user can input the date time value by selecting through date selector. You can allow users to input or delete the date time value from the keyboard by setting [AllowInlineEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassAllowInlineEditingTopic.html) to `true`.
 
 ### Setting input scope for On-Screen Keyboard
 
@@ -991,7 +991,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 
 ### Null value support
 
-`GridDateTimeColumn` provides support to restrict or allow null value in columns based on `AllowNullValue` property. Instead of displaying null values, you can display hint text using `Watermark` property.
+`GridDateTimeColumn` provides support to restrict or allow null value in columns based on [AllowNullValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassAllowNullValueTopic.html) property. Instead of displaying null values, you can display hint text using [Watermark](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassWaterMarkTopic.html) property.
 
 The `Watermark` property won’t work, when the `AllowNullValue` is `false`.
 
@@ -1012,7 +1012,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 
 ### Setting date time value range
 
-You can restrict and display the input value with in the range using `MinDate` and `MaxDate` properties.
+You can restrict and display the input value with in the range using [MinDate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassMinDateTopic.html) and [MaxDate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassMaxDateTopic.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -1056,13 +1056,13 @@ public class ViewModel
 
 ### Dropdown customization
 
-You can hide or unhide the dropdown button by using `ShowDropDownButton` property. The height of dropdown can be changed using `DropDownHeight` property.
+You can hide or unhide the dropdown button by using [ShowDropDownButton](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassShowDropDownButtonTopic.html) property. The height of dropdown can be changed using [DropDownHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassDropDownHeightTopic.html) property.
  
 ![](Column-Types_images/Column-Types_img19.png)
 
 ### Styling
 
-You can style the SelectorItem with solid color using `AccentBrush` property.
+You can style the SelectorItem with solid color using [AccentBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassAccentBrushTopic.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1083,7 +1083,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 
 #### Height and width customization
 
-The height and width of SelectorItem can be customized using `SelectorItemWidth` and `SelectorItemHeight` property.
+The height and width of SelectorItem can be customized using [SelectorItemWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassSelectorItemWidthTopic.html) and [SelectorItemHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassSelectorItemHeightTopic.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1103,7 +1103,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 
 #### SelectorItem formatting
 
-You can specify the format for the selector using `SelectorFormatString` property.
+You can specify the format for the selector using [SelectorFormatString](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassSelectorFormatStringTopic.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1121,9 +1121,9 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 
 #### SelectorItem spacing and count customization
 
-You can customize the space between date, month and year selector items using `SelectorItemSpacing` property.
+You can customize the space between date, month and year selector items using [SelectorItemSpacing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassSelectorItemSpacingTopic.html) property.
 
-You can restrict the number of item to displayed in selector using `SelectorItemCount` property.
+You can restrict the number of item to displayed in selector using [SelectorItemCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridDateTimeColumnClassSelectorItemCountTopic.html) property.
  
 {% tabs %}
 {% highlight xaml %}
@@ -1169,13 +1169,13 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 
 `GridCheckBoxColumn` allows you to customize check box state and its alignment.
 
-* `IsThreeState` - By default, the `GridCheckBoxColumn` has `Checked` and `Unchecked**`** state. You can enable another `Intermediate` state setting `IsThreeState` property to `true`.
+* [IsThreeState](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCheckBoxColumnClassIsThreeStateTopic.html) - By default, the `GridCheckBoxColumn` has `Checked` and `Unchecked**`** state. You can enable another `Intermediate` state setting `IsThreeState` property to `true`.
 
-* `HorizontalAlignment` - You can change the horizontal alignment of CheckBox using `HorizontalAlignment` property.
+* [HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCheckBoxColumnClassHorizontalAlignmentTopic.html) - You can change the horizontal alignment of CheckBox using `HorizontalAlignment` property.
 
 ## GridTemplateColumn
 
-`GridTemplateColumn` derived from `GridTextColumnBase` and it displays the template-specified cell content. You can load any UWP control in the display mode for all columns by setting `CellTemplate` and `EditTemplate` properties.
+`GridTemplateColumn` derived from `GridTextColumnBase` and it displays the template-specified cell content. You can load any UWP control in the display mode for all columns by setting [CellTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateTopic.html) and [EditTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridTemplateColumnClassEditTemplateTopic.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1228,7 +1228,7 @@ this.dataGrid.Columns.Add(new GridTemplateColumn() { MappingName = "IsClosed", C
 
 ### Keyboard interaction for UIElement loaded inside CellTemplate
 
-You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting `FocusManagerHelper.WantsKeyInput` attached property to `GridColumn`. You can use this when loading edit element in CellTemplate.
+You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting [FocusManagerHelper.WantsKeyInput](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridFocusManagerHelperClassWantsKeyInputPropertyTopic.html) attached property to `GridColumn`. You can use this when loading edit element in CellTemplate.
  
 In this case SfDataGrid handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`.
  
@@ -1253,7 +1253,7 @@ In this case SfDataGrid handles the below key operations and other keys are hand
 
 ### Setting focus to particular element inside Template when cell gets activated or edited
 
-You can allow logical focus to specific UIElement loaded inside `EditTemplate` or `CellTemplate` by setting `FocusManagerHelper.FocusedElement` attached property.
+You can allow logical focus to specific UIElement loaded inside `EditTemplate` or `CellTemplate` by setting [FocusManagerHelper.FocusedElement](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridFocusManagerHelperClassFocusedElementPropertyTopic.html) attached property.
  
 You can use this property to start editing the template column value as like normal column when the user gets into edit mode.
 
@@ -1304,7 +1304,7 @@ You can use this property to start editing the template column value as like nor
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`.
  
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting `SetCellBoundValue` property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
+You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [SetCellBoundValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassSetCellBoundValueTopic.html) property to `true`. Setting `SetCellBoundValue` to `true`, changes the DataContext for CellTemplate to [DataContextHelper](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsDataContextHelperClassTopic.html) which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 
@@ -1358,7 +1358,7 @@ N> EditTemplate support available only for GridTemplateColumn.
 
 ### Sets EditTemplate based on custom logic
 
-`GridTemplateColumn` provides support to load different edit elements based on underlying data object using `GridTemplateColumn.EditTemplateSelector` property.
+`GridTemplateColumn` provides support to load different edit elements based on underlying data object using [GridTemplateColumn.EditTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridTemplateColumnClassEditTemplateSelectorTopic.html) property.
 
 Below code returns the `DefaultTemplate` and `AlternateTemplate` based on OrderID’s value.
 
@@ -1446,9 +1446,9 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 
 ## GridComboBoxColumn
 
-`GridComboBoxColumn` derived from `GridColumn` which hosts `ComboBox` as edit element. The data source to ComboBox can be set by using `GridComboBoxColumn.ItemsSource` property.
+`GridComboBoxColumn` derived from `GridColumn` which hosts `ComboBox` as edit element. The data source to ComboBox can be set by using [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridComboBoxColumnClassItemsSourceTopic.html) property.
 
-By default, `GridComboBoxColumn` displays the value using `MappingName` property. You can set `DisplayMemberPath` which denotes the path to a value on the source object (GridComboBoxColumn.ItemsSource) to serve as the visual representation of object. You can set the `SelectedValuePath` which denotes the path to get the SelectedValue from the SelectedItem. 
+By default, `GridComboBoxColumn` displays the value using `MappingName` property. You can set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridComboBoxColumnClassDisplayMemberPathTopic.html) which denotes the path to a value on the source object (GridComboBoxColumn.ItemsSource) to serve as the visual representation of object. You can set the [SelectedValuePath](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridComboBoxColumnClassSelectedValuePathTopic.html) which denotes the path to get the SelectedValue from the SelectedItem. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1471,7 +1471,7 @@ this.dataGrid.Columns.Add(new GridComboBoxColumn() { HeaderText = " Customer ID 
 {% endhighlight %}
 {% endtabs %}
 
-SfDataGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the SelectedValue is changed. `CurrentCellDropDownSelectionChangedEventArgs` of `CurrentCellDropDownSelectionChanged` event provides the information about the changed cell value.
+SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellDropDownSelectionChangedTopic.html) event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassTopic.html) of `CurrentCellDropDownSelectionChanged` event provides the information about the changed cell value.
 
 `SelectedIndex` property returns the index of selected item.
 `SelectedItem` property returns the selected item from drop down list.
@@ -1602,7 +1602,7 @@ private void GroupColumnDescriptions_CollectionChanged(object sender, System.Col
 By default, ` GridMultiColumnDropDownList ` displays the value using `MappingName` property. You can set `DisplayMember` which denotes the property that is contained in the `GridMultiColumnDropDownList.ItemsSource` to serve as the visual representation of object.
 You can set the property to `ValueMember` from which to get values that correspond to the selections in the drop-down list. 
 
-You can change the value by selecting the item from drop down or you can edit the `SfMultiColumnDropDownControl.Editor`. You can disable the editing by setting `IsTextReadOnly`.
+You can change the value by selecting the item from drop down or you can edit the `SfMultiColumnDropDownControl.Editor`. You can disable the editing by setting [IsTextReadOnly](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassIsTextReadOnlyTopic.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1663,25 +1663,25 @@ SfDataGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 ### Auto complete support
 
-You can allow SfMultiDropDownControl to complete the entered input value automatically by setting the `AllowAutoComplete` property to `true`.
+You can allow SfMultiDropDownControl to complete the entered input value automatically by setting the [AllowAutoComplete](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassAllowAutoCompleteTopic.html) property to `true`.
 
 `AllowAutoComplete` property will autocomplete the input value by comparing it to each item of the underlying data source of `GridMultiColumnDropDownList` and returns the matched value by `DisplayMember`.
  
 ### Filtering
 
-You can allow SfMultiDropDownControl to filter the drop-down list items dynamically based on the text typed on editor by setting `AllowIncrementalFiltering` property to `true’.
+You can allow SfMultiDropDownControl to filter the drop-down list items dynamically based on the text typed on editor by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassAllowIncrementalFilteringTopic.html) property to `true’.
  
-`GridMultiColumnDropDownList` allows you to filter the items based on case by setting `AllowCasingforFilter` to `true`. This will help users to select from large number of items.
+`GridMultiColumnDropDownList` allows you to filter the items based on case by setting [AllowCasingforFilter](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassAllowCasingforFilterTopic.html) to `true`. This will help users to select from large number of items.
 
 ![](Column-Types_images/Column-Types_img28.png)
 
 ### Auto increment
 
-You can increment or decrement the value via the `Mouse-Wheel` or <kbd>Up</kbd> and <kbd>Down</kbd> key by setting `AllowSpinOnMouseWheel` to `true`.
+You can increment or decrement the value via the `Mouse-Wheel` or <kbd>Up</kbd> and <kbd>Down</kbd> key by setting [AllowSpinOnMouseWheel](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassAllowSpinOnMouseWheelTopic.html) to `true`.
  
 ### Null value support
 
-You can allow the null values by setting the `AllowNullInput` property to `true`.
+You can allow the null values by setting the [AllowNullInput](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassAllowNullInputTopic.html) property to `true`.
  
 N> The AllowNullInput will work only when the underlying property type is Nullable.
 
@@ -1689,21 +1689,21 @@ N> The AllowNullInput will work only when the underlying property type is Nullab
 
 #### Size
 
-You can allow change the size of drop-down popup by setting `PopUpWidth` and `PopUpHeight` property. The `PopUpWidth` will be set based on `PopUpMinWidth` and `PopUpMaxWidth` properties when the value is not between them. By default, the `PopUpMinWidth` value is 200.0.
+You can allow change the size of drop-down popup by setting [PopUpWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassPopUpWidthTopic.html) and [PopUpHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassPopUpHeightTopic.html) property. The `PopUpWidth` will be set based on [PopUpMinWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassPopUpMinWidthTopic.html) and [PopUpMaxWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassPopUpMaxWidthTopic.html) properties when the value is not between them. By default, the `PopUpMinWidth` value is 200.0.
  
-Similarly, the `PopUpHeight` based on `PopUpMinHeight` and `PopUpMaxHeight` when the value is not between them. The default value of `PopUpMinHeight` is 300.0.
+Similarly, the `PopUpHeight` based on [PopUpMinHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassPopUpMinHeightTopic.html) and [PopUpMaxHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassPopUpMaxHeightTopic.html) when the value is not between them. The default value of `PopUpMinHeight` is 300.0.
 
-SfMultiDropDownControl can automatically adjust the popup width based on the actual size of SfDataGrid when setting `IsAutoPopupSize` to `true`.
+SfMultiDropDownControl can automatically adjust the popup width based on the actual size of SfDataGrid when setting [IsAutoPopupSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassIsAutoPopupSizeTopic.html) to `true`.
 
 #### Resizing drop-down popup
 
-You can allow end-user to resize the drop-down popup by showing resizing thumb by setting `ShowResizeThumb` property to `Visible`.
+You can allow end-user to resize the drop-down popup by showing resizing thumb by setting [ShowResizeThumb](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassShowResizeThumbTopic.html) property to `Visible`.
 
 ![](Column-Types_images/Column-Types_img29.png)
 
 #### Keep popup open on editing
 
-You can open the drop-down popup, when the user start editing on text editor using `AllowImmediatePopup` property to true in `OnEditElementLoaded` method by overriding existing renderer.
+You can open the drop-down popup, when the user start editing on text editor using [AllowImmediatePopup](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfMultiColumnDropDownControlClassAllowImmediatePopupTopic.html) property to true in [OnEditElementLoaded](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellMultiColumnDropDownRendererClassOnEditElementLoadedTopic.html) method by overriding existing renderer.
 
 Below code, creates `GridCellMultiColumnDropDownRendererExt ` to set `AllowImmediatePopup` property. Replace the default renderer with created renderer in `SfDataGrid.CellRenderers` collection.
 
@@ -1749,9 +1749,9 @@ this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country", Ma
 
 ![](Column-Types_images/Column-Types_img30.png)
 
-You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using `CurrentCellRequestNavigate` event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
+You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellRequestNavigateTopic.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
   
-`CurrentCellRequestNavigateEventArgs` of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. `CurrentCellRequestNavigateEventArgs.NavigateText` returns the value using `ValueBinding` or `MappingName` to navigate.
+[CurrentCellRequestNavigateEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassTopic.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. `CurrentCellRequestNavigateEventArgs.NavigateText` returns the value using `ValueBinding` or `MappingName` to navigate.
 
 {% tabs %}
 {% highlight c# %}
@@ -1767,7 +1767,7 @@ private void DataGrid_CurrentCellRequestNavigate(object sender, CurrentCellReque
 
 ### Cancel the navigation
 
-You can cancel the navigation when clicking hyperlink by setting `CurrentCellRequestNavigateEventArgs.Handled` to `false`.
+You can cancel the navigation when clicking hyperlink by setting [CurrentCellRequestNavigateEventArgs.Handled](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassHandledTopic.html) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -1784,7 +1784,7 @@ void dataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNaviga
 
 #### Change the alignment
 
-You can change the horizontal alignment of `GridHyperlinkColumn` using `HorizontalAlignment` property.
+You can change the horizontal alignment of `GridHyperlinkColumn` using [HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridHyperlinkColumnClassHorizontalAlignmentTopic.html) property.
 
 #### Change the foreground color
 
@@ -1880,11 +1880,11 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 
 `GridImageColumn` allows you to customize the image with below properties.
 
-* `Width and Height` - You can change the height and width of the image using `GridImageColumn.ImageHeight` and `GridImageColumn.ImageWidth` properties.
+* `Width and Height` - You can change the height and width of the image using [GridImageColumn.ImageHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridImageColumnClassImageHeightTopic.html) and [GridImageColumn.ImageWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridImageColumnClassImageWidthTopic.html) properties.
 
-* `Stretch` - The image can be stretch by setting `Stretch` property.
+* [Stretch](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridImageColumnClassStretchTopic.html) - The image can be stretch by setting `Stretch` property.
 
-* `Scale` - You can scale the image using `StretchDirection` property.
+* [Scale](https://msdn.microsoft.com/en-us/library/system.windows.controls.image.stretchdirection.aspx) - You can scale the image using [StretchDirection](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridImageColumnClassStretchDirectionTopic.html) property.
 
 ## GridUpDownColumn
 
@@ -1934,7 +1934,7 @@ You can auto reset to `MinValue` and `MaxValue` when it exceeding the range by s
 
 ### Spin button alignment
 
-You can change the alignment of spin button using `SpinButtonsAlignment` property.
+You can change the alignment of spin button using [SpinButtonsAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUpDownColumnClassSpinButtonsAlignmentTopic.html) property.
 
 ### SmallChange and LargeChange
 
@@ -2087,7 +2087,7 @@ Cell Type
 GridTextColumn
 </td>
 <td>
-GridCellTextBoxRenderer
+[GridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTextBoxRendererClassTopic.html)
 </td>
 <td>
 TextBox
@@ -2098,7 +2098,7 @@ TextBox
 GridNumericColumn
 </td>
 <td>
-GridCellNumericRenderer
+[GridCellNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellNumericRendererClassTopic.html)
 </td>
 <td>
 Numeric
@@ -2109,7 +2109,7 @@ Numeric
 GridCheckBoxColumn
 </td>
 <td>
-GridCellCheckBoxRenderer
+[GridCellCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellCheckBoxRendererClassTopic.html)
 </td>
 <td>
 CheckBox
@@ -2120,7 +2120,7 @@ CheckBox
 GridTemplateColumn
 </td>
 <td>
-GridCellTemplateRenderer
+[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTemplateRendererClassTopic.html)
 </td>
 <td>
 Template
@@ -2131,7 +2131,7 @@ Template
 GridImageColumn
 </td>
 <td>
-GridCellImageRenderer
+[GridCellImageRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellImageRendererClassTopic.html)
 </td>
 <td>
 Image
@@ -2142,8 +2142,8 @@ Image
 GridUnBoundColumn
 </td>
 <td>
-GridUnBoundCellTextBoxRenderer
-GridUnBoundCellTemplateRenderer
+[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTextBoxRendererClassTopic.html)
+[GridUnBoundCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTemplateRendererClassTopic.html)
 </td>
 <td>
 UnBoundTextColumn
@@ -2155,7 +2155,7 @@ UnBoundTemplateColumn
 GridComboBoxColumn
 </td>
 <td>
-GridCellComboBoxRenderer
+[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellComboBoxRendererClassTopic.html)
 </td>
 <td>
 ComboBox
@@ -2166,7 +2166,7 @@ ComboBox
 GridDateTimeColumn
 </td>
 <td>
-GridCellDateTimeRenderer
+[GridCellDateTimeRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellDateTimeRendererClassTopic.html)
 </td>
 <td>
 DateTime
@@ -2177,7 +2177,7 @@ DateTime
 GridHyperlinkColumn
 </td>
 <td>
-GridCellHyperLinkRenderer
+[GridCellHyperLinkRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellHyperlinkRendererClassTopic.html)
 </td>
 <td>
 HyperlinkButton
@@ -2188,7 +2188,7 @@ HyperlinkButton
 GridMultiColumnDropDownList
 </td>
 <td>
-GridCellMultiColumnDropDownRenderer
+[GridCellMultiColumnDropDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellMultiColumnDropDownRendererClassTopic.html)
 </td>
 <td>
 MultiColumnDropDown
@@ -2199,7 +2199,7 @@ MultiColumnDropDown
 GridUpDownColumn
 </td>
 <td>
-GridCellUpDownRenderer
+[GridCellUpDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellUpDownRendererClassTopic.html)
 </td>
 <td>
 UpDown
@@ -2240,7 +2240,7 @@ public class GridCellTextBoxRendererExt: GridCellTextBoxRenderer
 
 ### Create the renderer of existing column
 
-You can change the renderer of existing column by removing the predefined cell type value from `CellRenderers` collection and add the newly derived renderer from `GridVirtualizingCellRenderer`.
+You can change the renderer of existing column by removing the predefined cell type value from `CellRenderers` collection and add the newly derived renderer from [GridVirtualizingCellRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRenderer%602ClassTopic.html).
 
 Below code creates the new `GridComboBoxRenderer` with `SfComboBox` as edit element for `GridComboBoxColumn` and replacing created renderer to `CellRenderers`.
 
@@ -2484,7 +2484,7 @@ public class TimePickerRenderer: GridVirtualizingCellRenderer<TextBlock, SfTimeP
 {% endhighlight %}
 {% endtabs %}
 
-With the below code snippet, you can allow to create the display and edit element for renderer by overriding `OnCreateDisplayUIElement` and `OnCreateEditUIElement` methods.
+With the below code snippet, you can allow to create the display and edit element for renderer by overriding [OnCreateDisplayUIElement](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRendererBase%602ClassOnCreateDisplayUIElementTopic.html) and [OnCreateEditUIElement](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRendererBase%602ClassOnCreateEditUIElementTopic.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -2508,7 +2508,7 @@ protected override SfTimePicker OnCreateEditUIElement()
 {% endhighlight %}
 {% endtabs %}
 
-With the below code snippet, you can initialize the binding for display element by overriding the `OnInitializeDisplayElement` method.
+With the below code snippet, you can initialize the binding for display element by overriding the [OnInitializeDisplayElement](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRendererBase%602ClassOnInitializeDisplayElementTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -2550,7 +2550,7 @@ private static void SetDisplayBinding(TextBlock element, GridColumn column, obje
 {% endhighlight %}
 {% endtabs %}
 
-With the below code snippet, updates the binding while UI interaction by overriding `OnUpdateDisplayBinding` method.
+With the below code snippet, updates the binding while UI interaction by overriding [OnUpdateDisplayBinding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRendererBase%602ClassOnUpdateDisplayBindingTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -2568,7 +2568,7 @@ public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, TextBlock
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, you can initialize and update the binding for edit element by overriding `OnInitializeEditElement` and `OnUpdateEditBinding` methods.
+Similarly, you can initialize and update the binding for edit element by overriding [OnInitializeEditElement](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRendererBase%602ClassOnInitializeEditElementTopic.html) and [OnUpdateEditBinding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRendererBase%602ClassOnUpdateEditBindingTopic.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -2619,7 +2619,7 @@ private static void SetEditBinding(SfTimePicker element, GridColumn column, obje
 {% endhighlight %}
 {% endtabs %}
 
-You can customize the editor control while loading by overriding `OnEditElementLoaded` method.
+You can customize the editor control while loading by overriding [OnEditElementLoaded](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRendererBase%602ClassOnEditElementLoadedTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -2638,7 +2638,7 @@ protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-With the below code snippet, you can customize the keyboard interactions for the custom column by overriding `ShouldGridTryToHandleKeyDown` method.
+With the below code snippet, you can customize the keyboard interactions for the custom column by overriding [ShouldGridTryToHandleKeyDown](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellRendererBaseClassShouldGridTryToHandleKeyDownTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -2666,7 +2666,7 @@ protected override bool ShouldGridTryToHandleKeyDown(Windows.UI.Xaml.Input.KeyRo
 {% endhighlight %}
 {% endtabs %}
 
-You can handle the cell value for the custom renderer by overriding `GetControlValue` and `SetControlValue` methods.
+You can handle the cell value for the custom renderer by overriding [GetControlValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellRendererBaseClassGetControlValueTopic.html) and [SetControlValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellRendererBaseClassSetControlValueTopic.html) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -2820,7 +2820,7 @@ N> TextBlock does not have the MaxLength property. Therefore, you can use the co
 
 You can set the `MaxLength` property to the edit element of the particular column by overriding existing cell types.
  
-Below code, overrides the `OnInitializeEditElement` method of the corresponding renderer and set the `MaxLength` to the UIElement and add the renderer to `SfDataGrid.CellRenderers` collection.
+Below code, overrides the [OnInitializeEditElement](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTextBoxRendererClassOnInitializeEditElementTopic_overloads--.html) method of the corresponding renderer and set the `MaxLength` to the UIElement and add the renderer to `SfDataGrid.CellRenderers` collection.
 
 {% tabs %}
 {% highlight c# %}
