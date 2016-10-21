@@ -77,6 +77,7 @@ In order to add control manually in XAML, do the below steps
 
 3. Declare `SfDataPager` control in XAML page.
 
+{% tabs %}
 {% highlight xaml %}
 <Page
     x:Class="GettingStarted.MainPage"
@@ -92,8 +93,9 @@ In order to add control manually in XAML, do the below steps
     </Grid>
 </Page>
 {% endhighlight %}
+{% endtabs %}
 
-### Adding Control Manually in C#
+### Adding Control Manually in C\#
 
 In order to add control manually in C#, do the below steps,
 
@@ -129,104 +131,110 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-### Populating control by binding with data
+## Populating control by binding with data
 
-1. Create data object class named `OrderInfo` and declare properties as shown below.
+1.Create data object class named `OrderInfo` and declare properties as shown below,
 
-    {% highlight c# %}
-    public class OrderInfo
-    {
-        int orderID;
-        string customerId;
-        string country;
-        string customerName;
-        string shippingCity;
-        public int OrderID
-        {
-            get {   return orderID;  }
-            set {   orderID = value; }
-        }
-        public string <CustomerID></CustomerID>
-        {
-            get {  return customerId; }
-            set {  customerId = value; }
-            }
-        public string CustomerName
-        {
-            get {  return customerName; }
-            set {  customerName = value;}
-        }
-        public string Country
-        {
-            get { return country; }
-            set  {  country = value; }
-        }
-        public string ShipCity
-        {
-            get {  return shippingCity; }
-            set {  shippingCity = value; }
-        }
-        public OrderInfo(int orderId, string customerName, string country, string     
-        customerId,string shipCity)
-        {
-            this.OrderID = orderId;
-            this.CustomerName = customerName;
-            this.Country = country;
-            this.CustomerID = customerId;
-            this.ShipCity = shipCity;
-        }
-    }
-    {% endhighlight %}
+{% tabs %}
+{% highlight c# %}
+public class OrderInfo
+{
+	int orderID;
+	string customerId;
+	string country;
+	string customerName;
+	string shippingCity;
+	public int OrderID
+	{	
+		get {   return orderID;  }
+		set {   orderID = value; }
+	}
+	public string <CustomerID></CustomerID>
+	{
+		get {  return customerId; }
+		set {  customerId = value; }
+		}
+	public string CustomerName
+	{
+		get {  return customerName; }
+		set {  customerName = value;}
+	}
+	public string Country
+	{
+		get { return country; }
+		set  {  country = value; }
+	}
+	public string ShipCity
+	{
+		get {  return shippingCity; }
+		set {  shippingCity = value; }
+	}
+	public OrderInfo(int orderId, string customerName, string country, string     
+	customerId,string shipCity)
+	{
+		this.OrderID = orderId;
+		this.CustomerName = customerName;
+		this.Country = country;
+		this.CustomerID = customerId;
+		this.ShipCity = shipCity;
+	}
+}
+{% endhighlight %}
+{% endtabs %}
 
-2. Create a `ViewModel` class with Orders property and Orders property is initialized with several data objects in constructor.
+2.Create a `ViewModel` class with Orders property and Orders property is initialized with several data objects in constructor.
 
-    {% highlight c# %}
-    public class ViewModel
-    {
-        private ObservableCollection<OrderInfo> _orders;
+{% tabs %}
+{% highlight c# %}
+public class ViewModel
+{
+	private ObservableCollection<OrderInfo> _orders;
 
-        public ObservableCollection<OrderInfo> Orders
-        {
-            get { return _orders; }
-            set { _orders = value; }
-        }
+	public ObservableCollection<OrderInfo> Orders
+	{
+		get { return _orders; }
+		set { _orders = value; }
+	}
 
-        public ViewModel()
-        {
-            _orders = new ObservableCollection<OrderInfo>();
-            this.GenerateOrders();
-        }
+	public ViewModel()
+	{
+		_orders = new ObservableCollection<OrderInfo>();
+		this.GenerateOrders();
+	}
 
-        private void GenerateOrders()
-        {
-            _orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
-            _orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
-            _orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
-            _orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
-            _orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
-            _orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
-            _orders.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
-            _orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
-            _orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
-            _orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
-        }
-    }
-    {% endhighlight %}
+	private void GenerateOrders()
+	{
+		_orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+		_orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
+		_orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
+		_orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+		_orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
+		_orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+		_orders.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
+		_orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+		_orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+		_orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+	}
+}
+{% endhighlight %}
+{% endtabs %}
 
-3. Bind the collection created in previous step to [SfDataPager.Source](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassSourceTopic.html#) property in XAML by setting `ViewModel` as `DataContext`. 
+3.Bind the collection created in previous step to [SfDataPager.Source](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassSourceTopic.html#) property in XAML by setting `ViewModel` as `DataContext`. 
 
-    {% highlight xaml %}
-    <Page
-        <Page.DataContext>
-            <local:ViewModel />
-        </Page.DataContext>
-    <Grid>
-    <datapager:SfDataPager x:Name="sfDataPager" 
-                            PageSize="5"
-                            Source="{Binding Orders}" />
-    </Grid>
-    </Page>
-    {% endhighlight %}
+{% tabs %}
+{% highlight xaml %}
+<Page
+	<Page.DataContext>
+		<local:ViewModel />
+	</Page.DataContext>
+<Grid>
+<datapager:SfDataPager x:Name="sfDataPager" 
+						PageSize="5"
+						Source="{Binding Orders}" />
+</Grid>
+</Page>
+{% endhighlight %}
+{% endtabs %}
 
 `Orders` collection has 10 items and [PageSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPageSizeTopic.html#) is 5. Therefore, SfDataPager loaded with two page buttons and [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPageCountTopic.html#) is two. Here `PageSize` denotes number of records per page. 
 
@@ -236,6 +244,7 @@ namespace GettingStarted
 
 Then bind the [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPagedSourceTopic.html#) property of the [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassTopic.html#) control to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfDataGridClassItemsSourceTopic.html) property. You can define the number of records per page by setting [PageSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPageSizeTopic.html#) property. 
 
+{% tabs %}
 {% highlight xaml %}
 <Page xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid">
     <Page.DataContext>
@@ -259,6 +268,7 @@ Then bind the [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdata
     </Grid>
 </Page>
 {% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
@@ -266,6 +276,7 @@ Then bind the [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdata
 
 You can define the number of pages by setting [UseOnDemandPaging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassUseOnDemandPagingPropertyTopic.html#) to `true` and [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPageCountTopic.html#) property, where you don’t have to bind `SfDataPager` to any collection.
 
+{% tabs %}
 {% highlight xaml %}
 <Grid>
 <datapager:SfDataPager x:Name="sfDataPager"                            
@@ -273,6 +284,7 @@ You can define the number of pages by setting [UseOnDemandPaging](https://help.s
                          UseOnDemandPaging="True"/>
 </Grid>
 {% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img4.jpeg)
 
