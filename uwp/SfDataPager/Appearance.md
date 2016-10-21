@@ -3,12 +3,10 @@ layout: post
 title: Appearance of SfDataPager control in UWP.
 description: Appearance of SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 # Appearance
-
-
 
 ## Display Modes
 
@@ -86,6 +84,7 @@ It does not display anything</td></tr>
 
 SfDataPager allows you to display the number of page buttons to be displayed in view by setting [NumericButtonCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassNumericButtonCountTopic.html#) property. 
 
+{% tabs %}
 {% highlight xaml %}
 <datapager:SfDataPager x:Name="sfDataPager" 
                          PageSize="5" 
@@ -93,12 +92,13 @@ SfDataPager allows you to display the number of page buttons to be displayed in 
                          NumericButtonCount="10"
                          PageCount="10" /> 
 {% endhighlight %}
-
+{% endtabs %}
 ![](Appearance_images/Appearance_img11.jpeg)
 
 
 Now after changing `NumberButtonCount` as 5, only 5-page button will be displayed in view and remaining page buttons can be viewed by clicking the navigation buttons.
 
+{% tabs%}
 {% highlight xaml %}
 <datapager:SfDataPager x:Name="sfDataPager" 
                          PageSize="5" 
@@ -106,6 +106,7 @@ Now after changing `NumberButtonCount` as 5, only 5-page button will be displaye
                          NumericButtonCount="5"
                          PageCount="10" />
 {% endhighlight %}
+{% endtabs %}
 
 ![](Appearance_images/Appearance_img12.jpeg)
 
@@ -173,6 +174,7 @@ It does not display the AutoEllipsisButton.{{'![B:/Support/2015/April/24/Image/D
 </table>
 The following code example explains how to change the `AutoEllipsisText`.
 
+{% tabs %}
 {% highlight xaml %}
 <datapager:SfDataPager x:Name="sfDataPager" 
                          PageSize="2"
@@ -181,6 +183,7 @@ The following code example explains how to change the `AutoEllipsisText`.
                          AutoEllipsisText="…etc" 
                          UseOnDemandPaging="True"/>
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the output for `AutoEllipsisText` changed as `…etc`.
 
@@ -198,6 +201,7 @@ AccentBrush properties are used to decorate the SfDataPager control with a solid
 
 The following code example explains how to apply the `AccentBackground` and `AccentForeground` properties for the `SfDataPager` control.
 
+{% tabs %}
 {% highlight xaml %}
 <datapager:SfDataPager x:Name="sfDataPager" 
                          PageCount="2"
@@ -205,6 +209,7 @@ The following code example explains how to apply the `AccentBackground` and `Acc
                          AccentForeground="White"
                          UseOnDemandPaging="True" />
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the output for `AccentBackground` and `AccentForeGround` applied to the `SfDataPager`.
 
@@ -213,6 +218,7 @@ The following screenshot displays the output for `AccentBackground` and `AccentF
 
 The following code example explains how to use `NumericButtonStyle` in SfDataPager.
 
+{% tabs %}
 {% highlight xaml %}
 <Page.Resources>
     <Style TargetType="datapager:NumericButton">
@@ -225,6 +231,7 @@ The following code example explains how to use `NumericButtonStyle` in SfDataPag
                          AccentBackground="DodgerBlue"
                          UseOnDemandPaging="True" />
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the output of `NumericButtonStyle`.
 

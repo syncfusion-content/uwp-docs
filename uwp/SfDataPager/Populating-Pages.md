@@ -3,7 +3,7 @@ layout: post
 title: Populating pages of SfDataPager control in UWP.
 description: Populating pages of SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 
@@ -15,6 +15,7 @@ You can use [Source](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/fr
 
 Below code snippet shows, how to bind `SfDataPager` with data. 
 
+{% tabs %}
 {% highlight xaml %}
 <Page>
     <Page.DataContext>
@@ -37,6 +38,7 @@ Below code snippet shows, how to bind `SfDataPager` with data.
     </Grid>
 </Page>
 {% endhighlight %}
+{% endtabs %}
 
 Based on number of items in the collection and `PageSize` and the `PageCount` is calculated for `SfDataPager`.
 
@@ -46,10 +48,12 @@ Based on number of items in the collection and `PageSize` and the `PageCount` is
 
 You can define the [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPageCountTopic.html#) of `SfDataPager` by setting [UseOnDemandPaging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassUseOnDemandPagingPropertyTopic.html#) to `true` and `PageCount` property.
 
+{% tabs %}
 {% highlight xaml %}
 <datapager:SfDataPager x:Name="sfDataPager" 
                          PageCount="2"
                          UseOnDemandPaging="True"/>
 {% endhighlight %}
+{% endtabs %}
 
 ![](Populating-Pages_images/Populating-Pages_img2.jpeg)

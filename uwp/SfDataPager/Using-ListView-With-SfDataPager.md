@@ -3,7 +3,7 @@ layout: post
 title: Using ListView with SfDataPager control in UWP.
 description: Using ListView with SfDataPager control in UWP.
 platform: uwp
-control: SfDataGrid
+control: SfDataPager
 documentation: ug
 ---
 
@@ -13,6 +13,7 @@ documentation: ug
 
 The following code explains how to use Source and `PagedSource` property in ListBox.
 
+{% tabs %}
 {% highlight xaml %}
 <Page>
     <Page.DataContext>
@@ -33,6 +34,7 @@ The following code explains how to use Source and `PagedSource` property in List
     </Grid>
 </Page>
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the output for `ListView` bound with `PagedCollection`.
 
