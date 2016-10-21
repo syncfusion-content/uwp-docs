@@ -11,7 +11,7 @@ documentation: ug
 
 # Editing 
 
-SfDataGrid provides support for editing and it can be enabled or disabled by setting `SfDataGrid.AllowEditing` property.
+SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAllowEditingTopic.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,7 +24,7 @@ dataGrid.AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can enable or disable editing for particular column by setting `GridColumn.AllowEditing` property.
+You can enable or disable editing for particular column by setting [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowEditingTopic.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,16 +38,16 @@ dataGrid.Columns["OrderID"].AllowEditing = true;
 {% endtabs %}
 
 
-N> `GridColumn.AllowEditing` takes higher priority than `SfDataGrid.AllowEditing`.
+N> [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowEditingTopic.html) takes higher priority than [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAllowEditingTopic.html).
 
 ![](Editing_images/Editing_img1.png)
 
-N> It is mandatory to set the `NavigationMode` to Cell to enable `CurrentCell` navigation and editing.
+N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassNavigationModeTopic.html) to Cell to enable [CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCurrentCellManagerClassCurrentCellTopic.html) navigation and editing.
 
 
 ### Entering into edit mode
 
-You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting by `EditTrigger` property.
+You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting by [EditTrigger](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassEditTriggerTopic.html) property.
 
 
 {% tabs %}
@@ -65,7 +65,7 @@ dataGrid.EditTrigger = EditTrigger.OnTap;
 
 ### Cursor placement
 
-When the cell enters into edit mode, cursor is placed based on `EditorSelectionBehavior` property.
+When the cell enters into edit mode, cursor is placed based on [EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassEditorSelectionBehaviorTopic.html) property.
  
 `SelectAll` – selects the text of edit element loaded inside cell.
 
@@ -202,13 +202,13 @@ SfDataGrid triggers the following events during editing.
  
 ### CurrentCellBeginEdit Event
 
-`CurrentCellBeginEdit` event occurs when the `CurrentCell` enter into edit mode. `CurrentCellBeginEditEventArgs` has following members which provides information for `CurrentCellBeginEdit` event.
+[CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellBeginEditTopic.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCurrentCellManagerClassCurrentCellTopic.html) enter into edit mode. [CurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellBeginEditEventArgsClassTopic.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-* `Cancel`: When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
+* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
-* `RowColumnIndex`: Gets the current row column index of the DataGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellBeginEditEventArgsClassRowColumnIndexTopic.html): Gets the current row column index of the DataGrid.
 
-* `Column`: Gets the Grid Column of the SfDataGrid.
+* [Column](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellBeginEditEventArgsClassColumnTopic.html): Gets the Grid Column of the SfDataGrid.
 
 
 {% tabs %}
@@ -224,9 +224,9 @@ private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEv
 
 ### CurrentCellEndEdit Event
 
-`CurrentCellEndEdit` event occurs when the `CurrentCell` exits the edit mode. `CurrentCellEndEditEventArgs` has following members which provides information for `CurrentCellEndEdit` event.
+[CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellEndEditTopic.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCurrentCellManagerClassCurrentCellTopic.html) exits the edit mode. [CurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellEndEditEventArgsClassTopic.html) has following members which provides information for `CurrentCellEndEdit` event.
 
-* `RowColumnIndex`: Gets the value for the current row column index.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellEndEditEventArgsClassRowColumnIndexTopic.html): Gets the value for the current row column index.
 
 
 {% tabs %}
@@ -244,13 +244,13 @@ private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventA
 
 ### CurrentCellValueChanged Event
 
-`CurrentCellValueChanged` event occurs whenever a value changes in GridColumn’s that supports editing.
+[CurrentCellValueChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellValueChangedTopic.html) event occurs whenever a value changes in GridColumn’s that supports editing.
 
-`CurrentCellValueChangedEventArgs` has following members which provides information for `CurrentCellValueChanged` event.
+[CurrentCellValueChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellValueChangedEventArgsClassTopic.html) has following members which provides information for `CurrentCellValueChanged` event.
 
-* `Column`: Gets the Grid Column of the SfDataGrid.
+* [Column](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellValueChangedEventArgsClassColumnTopic.html): Gets the Grid Column of the SfDataGrid.
 
-* `RowColumnIndex`: Gets the value of the current RowColumnIndex.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellValueChangedEventArgsClassRowColumnIndexTopic.html): Gets the value of the current RowColumnIndex.
 
 
 {% tabs %}
@@ -270,15 +270,15 @@ N> GridComboBoxColumn and GridMultiColumnDropDownList, you have to use the Curre
 
 ### CurrentCellDropDownSelectionChanged Event
 
-`CurrentCellDropDownSelectionChanged` event occurs whenever the `SelectedItem` of `GridMultiColumnDropDownList` and `GridComboBoxColumn` column changed.
+[CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellDropDownSelectionChangedTopic.html) event occurs whenever the `SelectedItem` of `GridMultiColumnDropDownList` and `GridComboBoxColumn` column changed.
 
-`CurrentCellDropDownSelectionChangedEventArgs` has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
+[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassTopic.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
 
-* `RowColumnIndex` –  Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassRowColumnIndexTopic.html) –  Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
 
-* `SelectedIndex` – Gets the index of the corresponding item that were selected from the drop-down control.
+* [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassSelectedIndexTopic.html) – Gets the index of the corresponding item that were selected from the drop-down control.
 
-* `SelectedItem` – Gets the data item that were selected from the drop-down control.
+* [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassSelectedItemTopic.html) – Gets the data item that were selected from the drop-down control.
 
 {% tabs %}
 {% highlight c# %}
@@ -297,7 +297,7 @@ private void DataGrid_CurrentCellDropDownSelectionChanged(object sender, Current
 
 ### BeginEdit
 
-SfDataGrid allows you to edit the cell programmatically by calling the `BeginEdit` method. Initially the `CurrentCell` need to set before calling the `BeginEdit` method when the CurrentCell value is null.
+SfDataGrid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCurrentCellManagerClassBeginEditTopic.html) method. Initially the [CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCurrentCellManagerClassCurrentCellTopic.html) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
 
 {% tabs %}
 {% highlight c# %}
@@ -315,7 +315,7 @@ private void DataGrid_Loaded(object sender, RoutedEventArgs e)
 
 ### EndEdit
 
-You can call the `EndEdit` method to programmatically end edit. 
+You can call the [EndEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCurrentCellManagerClassEndEditTopic.html) method to programmatically end edit. 
 
 {% tabs %}
 {% highlight c# %}
@@ -335,7 +335,7 @@ private void DataGrid_Loaded(object sender, RoutedEventArgs e)
 
 ### CancelEdit
 
-You can use the `CurrentCellBeginEdit` event to cancel the editing operation for the corresponding cell.
+You can use the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellBeginEditTopic.html) event to cancel the editing operation for the corresponding cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -367,7 +367,7 @@ You can directly load edit element using `GridTemplateColumn.CellTemplate` prope
 
 ### Providing focus to the control inside the Template
 
-You can focus to the particular UIElement loaded inside template when cell gets activated by setting `FocusedManager.FocusedElement` attached property.
+You can focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FocusedElement](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridFocusManagerHelperClassFocusedElementPropertyTopic.html) attached property.
  
 {% tabs %}
 {% highlight xaml %}
@@ -406,7 +406,7 @@ You can focus to the particular UIElement loaded inside template when cell gets 
 
 ### Providing keyboard control to UIElement inside CellTemplate
 
-You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting `FocusManagerHelper.WantsKeyInput` attached property to `GridColumn`.
+You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting [FocusManagerHelper.WantsKeyInput](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridFocusManagerHelperClassWantsKeyInputPropertyTopic.html) attached property to `GridColumn`.
  
 {% tabs %}
 {% highlight xaml %}
