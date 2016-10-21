@@ -108,5 +108,5 @@ The following code example demonstrates how to customize the appearance of navig
 The following screenshot shows the radial menu with customized style.
 ![](Radial-Menu_images/Radial-Menu_img2.jpeg)
 
-The sample to demonstrate customizing the style of built-in radial menu can be downloaded from the following link.
+The sample to demonstrate customizing the style of built-in radial menu, can be downloaded from the following link.
 [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadialMenuCustomization-1397995223# "Click here to download the sample")
