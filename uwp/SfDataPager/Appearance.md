@@ -147,27 +147,22 @@ The following table explains the different `AutoEllipsisModes`.
 <table>
 <tr>
 <th>
-Enum Name</th><th>
-Enum Values</th><th>
+Enum Value</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{'[AutoEllipsisMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassAutoEllipsisModeTopic.html#)'| markdownify }}</td><td>
 After</td><td>
 You can display the ellipsis button after numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/AutoElipseafter.png](Appearance_images/Appearance_img19.jpeg)'|markdownify}}</td></tr>
 <tr>
 <td>
-</td><td>
 Before</td><td>
 You can display the ellipsis button before numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/before.png](Appearance_images/Appearance_img20.jpeg)'|markdownify}}</td></tr>
 <tr>
 <td>
-</td><td>
 Both</td><td>
 You can display the ellipsis button before and after the numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/both.png](Appearance_images/Appearance_img21.jpeg)'|markdownify}}</td></tr>
 <tr>
 <td>
-</td><td>
 None</td><td>
 It does not display the AutoEllipsisButton.{{'![B:/Support/2015/April/24/Image/DataPager/none.png](Appearance_images/Appearance_img22.jpeg)'|markdownify}}
 </td></tr>

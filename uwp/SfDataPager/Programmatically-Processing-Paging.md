@@ -70,16 +70,6 @@ This method moves the current page index to the previous page and displays the p
 {{'[MoveToPage](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassMoveToPageTopic.html#)'| markdownify }}</td><td>
 MoveToPage(int pageIndex)</td><td>
 This method moves the current page index to the corresponding page index that is passed as an argument.</td></tr>
-<tr>
-<td>
-{{'[MoveToPage](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassMoveToPageTopic.html#)'| markdownify }}</td><td>
-MoveToPage(int oldPageIndex, int pageIndex)</td><td>
-This method moves the old page index to the corresponding page index that is passed as an argument.</td></tr>
-<tr>
-<td>
-{{'[MoveToPage](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassMoveToPageTopic.html#)'| markdownify }}</td><td>
-MoveToPage(int pageIndex, bool isElipsisElementClicked)</td><td>
-This method moves the current page index to the corresponding page index that is clicked by ellipsis button.</td></tr>
 </table>
 
 ## Handling current page changing using event
