@@ -13,6 +13,7 @@ documentation: ug
 
 The following code explains how to use Source and `PagedSource` property in ListBox.
 
+{% tabs %}
 {% highlight xaml %}
 <Page>
     <Page.DataContext>
@@ -33,6 +34,7 @@ The following code explains how to use Source and `PagedSource` property in List
     </Grid>
 </Page>
 {% endhighlight %}
+{% endtabs %}
 
 The following screenshot displays the output for `ListView` bound with `PagedCollection`.
 

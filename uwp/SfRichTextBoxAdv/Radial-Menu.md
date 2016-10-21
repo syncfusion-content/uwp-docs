@@ -34,115 +34,72 @@ richTextBoxAdv.EnableRadialMenu = false;
 
 ## Customizing Radial Menu Appearance
 
-You can customize the appearance of built-in radial menu as per your requirement by defining styles in XAML.
+You can customize the appearance of built-in radial menu as per your requirement. This can be done by defining the custom styles for Radial menu under the resources of SfRichTextBoxAdv, which will override its default style.
 The following code example demonstrates how to customize the appearance of navigation button, rim, radial slider and radial pointer in the built-in radial menu.
 {% tabs %}
 {% highlight xaml %}
-<!-- Custom Style for Radial Menu Navigation Button -->
-
-<Style x:Key="RadialMenuNavigationButtonStyle" TargetType="Button">
-
-    <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
-
-    <Setter Property="BorderBrush" Value="#0071BC"/>
-
-    <Setter Property="Template">
-
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBox" ManipulationMode="All" AcceptsTab="True" xmlns:RichTextBoxAdv="using:Syncfusion.UI.Xaml.RichTextBoxAdv">
+  <!-- Specify resources for this instance -->
+  <RichTextBoxAdv:SfRichTextBoxAdv.Resources>
+  
+    <!-- Custom style for Radial Menu -->
+    <Style TargetType="radialMenu:SfRadialMenu">
+      <Setter Property="RimBackground" Value="#EFEFEF"/>
+      <Setter Property="RimActiveBrush" Value="#0071BC"/>
+      <Setter Property="NavigationButtonStyle" Value="{StaticResource RTERadialMenuNavigationButtonStyle}"/>
+    </Style>
+    
+    <!-- Custom Style for Radial Pointer -->
+    <Style TargetType="radialMenu:RadialPointer" x:Key="RadialPointerStyle">
+      <Setter Property="Height" Value="2"/>
+      <Setter Property="IsTabStop" Value="False"/>
+      <Setter Property="Template">
         <Setter.Value>
-
-            <ControlTemplate TargetType="Button">
-
-                <Grid Background="Transparent" Margin="-5">
-
-                    <VisualStateManager.VisualStateGroups>
-
-                        <VisualStateGroup x:Name="CommonStates">
-
-                            <VisualState x:Name="Normal"/>
-
-                            <VisualState x:Name="PointerOver">
-
-                                <Storyboard>
-
-                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="BackgroundEllipse">
-
-                                        <DiscreteObjectKeyFrame KeyTime="0" Value="LightGray"/>
-
-                                    </ObjectAnimationUsingKeyFrames>
-
-                                </Storyboard>
-
-                            </VisualState>
-
-                        </VisualStateGroup>
-
-                    </VisualStateManager.VisualStateGroups>
-
-                    <Ellipse Fill="White" x:Name="BackgroundEllipse" />
-
-                    <Ellipse Stroke="{TemplateBinding BorderBrush}" StrokeThickness="2"  Fill="Transparent"/>
-
-                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-                </Grid>
-
-            </ControlTemplate>
-
+          <ControlTemplate TargetType="radialMenu:RadialPointer">
+            <Border  Background="#0071BC"/>
+          </ControlTemplate>
         </Setter.Value>
-
-    </Setter>
-
-</Style>
-
-<!-- Custom Style for Radial Menu -->
-
-<Style TargetType="Navigation:SfRadialMenu" xmlns:Navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
-
-    <Setter Property="RimBackground" Value="#EFEFEF"/>
-
-    <Setter Property="RimActiveBrush" Value="#0071BC"/>
-
-    <Setter Property="NavigationButtonStyle" Value="{StaticResource RadialMenuNavigationButtonStyle}"/>
-
-</Style>
-
-<!-- Custom Style for Radial Pointer -->
-
-<Style TargetType="Navigation:RadialPointer" x:Key="RadialPointerStyle"  xmlns:Navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
-
-    <Setter Property="Height" Value="2"/>
-
-    <Setter Property="IsTabStop" Value="False"/>
-
-    <Setter Property="Template">
-
+      </Setter>
+    </Style>
+    
+    <!-- Custom Style for Radial Slider -->
+    <Style TargetType="radialMenu:SfRadialSlider">
+      <Setter Property="Foreground" Value="#0071BC"/>
+      <Setter Property="InnerRimFill" Value="#0071BC"/>
+      <Setter Property="OuterRimStroke" Value="#0071BC"/>
+      <Setter Property="PointerStyle" Value="{StaticResource RadialPointerStyle}"/>
+    </Style>
+    
+    <!-- Custom Style for Navigation Button -->
+    <Style x:Key="RTERadialMenuNavigationButtonStyle" TargetType="Button">
+      <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+      <Setter Property="BorderBrush" Value="#0071BC"/>
+      <Setter Property="Template">
         <Setter.Value>
-
-            <ControlTemplate TargetType="Navigation:RadialPointer">
-
-                <Border  Background="#0071BC"/>
-
-            </ControlTemplate>
-
+          <ControlTemplate TargetType="Button">
+            <Grid Background="Transparent" Margin="-5">
+              <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="CommonStates">
+                  <VisualState x:Name="Normal"/>
+                  <VisualState x:Name="PointerOver">
+                    <Storyboard>
+                      <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="BackgroundEllipse">
+                        <DiscreteObjectKeyFrame KeyTime="0" Value="LightGray"/>
+                      </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                  </VisualState>
+                </VisualStateGroup>
+              </VisualStateManager.VisualStateGroups>
+              <Ellipse Fill="White" x:Name="BackgroundEllipse" />
+              <Ellipse Stroke="{TemplateBinding BorderBrush}" StrokeThickness="2"  Fill="Transparent"/>
+              <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+          </ControlTemplate>
         </Setter.Value>
-
-    </Setter>
-
-</Style>
-
-<!-- Custom Style for Radial Slider -->
-
-<Style TargetType="Navigation:SfRadialSlider"  xmlns:Navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
-
-    <Setter Property="Foreground" Value="#0071BC"/>
-
-    <Setter Property="InnerRimFill" Value="#0071BC"/>
-
-    <Setter Property="OuterRimStroke" Value="#0071BC"/>
-
-    <Setter Property="PointerStyle" Value="{StaticResource RadialPointerStyle}"/>
-
-</Style>
+      </Setter>
+    </Style>
+  </RichTextBoxAdv:SfRichTextBoxAdv.Resources>
+</RichTextBoxAdv:SfRichTextBoxAdv>
 
 
 {% endhighlight %}
@@ -151,3 +108,5 @@ The following code example demonstrates how to customize the appearance of navig
 The following screenshot shows the radial menu with customized style.
 ![](Radial-Menu_images/Radial-Menu_img2.jpeg)
 
+The sample to demonstrate customizing the style of built-in radial menu, can be downloaded from the following link.
+[Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadialMenuCustomization-1397995223# "Click here to download the sample")
