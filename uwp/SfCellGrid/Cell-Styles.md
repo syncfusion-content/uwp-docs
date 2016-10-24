@@ -30,7 +30,7 @@ cellGrid.Model[5,3].BaseStyle = "custom";
           
 ### QueryBaseStyle Event
 
- `QueryBaseStyle` Event is used to apply the basestyles at run time in SfCellGrid instead of storing in the basestyle collection.
+ `QueryBaseStyle` Event is used to apply the `BaseStyle` at run time in SfCellGrid instead of storing in the base style collection.
  
 {% tabs %}
 {% highlight c# %}
