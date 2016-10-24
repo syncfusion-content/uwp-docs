@@ -47,12 +47,14 @@ private void Model_QueryCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Styl
     {
        e.Style.CellValue = e.Cell.ColumnIndex;
        e.Style.Font.FontWeight = Windows.UI.Text.FontWeights.Bold;
+       e.Style.Background = new SolidColorBrush(Colors.Green);
 	   e.Style.VerticalAlignment = VerticalAlignment.Center;
 	   e.Style.HorizontalAlignment = HorizontalAlignment.Center;
     }
     else if (e.Cell.ColumnIndex == 0)
     {
        e.Style.CellValue = e.Cell.RowIndex;
+       e.Style.Background = new SolidColorBrush(Colors.Pink);
        e.Style.Font.FontWeight = Windows.UI.Text.FontWeights.Bold;
        e.Style.VerticalAlignment = VerticalAlignment.Center;
        e.Style.HorizontalAlignment = HorizontalAlignment.Center;
