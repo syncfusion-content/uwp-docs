@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Cell Styles in SfCellGrid
 description: How to apply cell styles to a group of cells
