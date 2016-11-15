@@ -36,3 +36,201 @@ Child window can be arranged as Tabbed windows by setting `TargetName` and side 
 ![](Tabbed-Window-images/Tabbed-Window-img1.jpeg)
 
 
+## Tab Alignments
+
+Tabs of the docked windows are placed at bottom, by default. To place the tabs of the docked window at different sides, set the property `DockTabPlacement` with desired values such as `Top`, `Bottom`, `Left` and `Right`.
+
+* Setting `DockTabPlacement` as `Bottom`
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfDockingManager DockTabPlacement="Bottom" x:Name="dockingManager">
+
+<ContentControl x:Name="dock1" syncfusion:SfDockingManager.Header="Item 1"
+                               syncfusion:SfDockingManager.DockState="Dock">
+
+<TextBlock Text="This is item 1 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 2"
+                syncfusion:SfDockingManager.DockState="Dock"
+				syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+				syncfusion:SfDockingManager.TargetNameInDockedMode="dock1">
+
+<TextBlock Text="This is item 2 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 3"
+                syncfusion:SfDockingManager.DockState="Dock"
+				syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+				syncfusion:SfDockingManager.TargetNameInDockedMode="dock1">
+
+<TextBlock Text="This is item 3 content"/>
+
+</ContentControl>
+
+</syncfusion:SfDockingManager>
+
+{% endhighlight %}
+
+
+{% highlight C# %}
+
+dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacement.Bottom;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Tabbed-Window-images/Tab-Alignments-img1.jpeg)
+
+
+* Setting `DockTabPlacement` as `Top`
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfDockingManager DockTabPlacement="Top" x:Name="dockingManager">
+
+<ContentControl x:Name="dock1" syncfusion:SfDockingManager.Header="Item 1"
+                               syncfusion:SfDockingManager.DockState="Dock">
+
+<TextBlock Text="This is item 1 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 2"
+                syncfusion:SfDockingManager.DockState="Dock"
+				syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+				syncfusion:SfDockingManager.TargetNameInDockedMode="dock1">
+
+<TextBlock Text="This is item 2 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 3"
+                syncfusion:SfDockingManager.DockState="Dock"
+				syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+				syncfusion:SfDockingManager.TargetNameInDockedMode="dock1">
+
+<TextBlock Text="This is item 3 content"/>
+
+</ContentControl>
+
+</syncfusion:SfDockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacement.Top;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Tabbed-Window-images/Tab-Alignments-img2.jpeg)
+
+
+* Setting `DockTabPlacement` as `Left`
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfDockingManager DockTabPlacement="Left" x:Name="dockingManager">
+
+<ContentControl x:Name="dock1" syncfusion:SfDockingManager.Header="Item 1"
+                               syncfusion:SfDockingManager.DockState="Dock">
+
+<TextBlock Text="This is item 1 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 2"
+                syncfusion:SfDockingManager.DockState="Dock"
+				syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+				syncfusion:SfDockingManager.TargetNameInDockedMode="dock1">
+
+<TextBlock Text="This is item 2 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 3"
+                syncfusion:SfDockingManager.DockState="Dock"
+				syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+				syncfusion:SfDockingManager.TargetNameInDockedMode="dock1">
+
+<TextBlock Text="This is item 3 content"/>
+
+</ContentControl>
+
+</syncfusion:SfDockingManager>
+
+{% endhighlight %}
+
+
+{% highlight C# %}
+
+dockingManager.DockTabPlacement= Syncfusion.UI.Xaml.Controls.Layout.TabPlacement.Left;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Tabbed-Window-images/Tab-Alignments-img3.jpeg)
+
+
+* Setting `DockTabPlacement` as `Right`
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfDockingManager DockTabPlacement="Right" x:Name="dockingManager">
+
+<ContentControl x:Name="dock1" syncfusion:SfDockingManager.Header="Item 1"
+                               syncfusion:SfDockingManager.DockState="Dock">
+
+<TextBlock Text="This is item 1 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 2"
+                syncfusion:SfDockingManager.DockState="Dock"
+				syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+				syncfusion:SfDockingManager.TargetNameInDockedMode="dock1">
+
+<TextBlock Text="This is item 2 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 3"
+                syncfusion:SfDockingManager.DockState="Dock"
+				syncfusion:SfDockingManager.SideInDockedMode="Tabbed"
+				syncfusion:SfDockingManager.TargetNameInDockedMode="dock1">
+
+<TextBlock Text="This is item 3 content"/>
+
+</ContentControl>
+
+</syncfusion:SfDockingManager>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacement.Right;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Tabbed-Window-images/Tab-Alignments-img4.jpeg)
+
+
