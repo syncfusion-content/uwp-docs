@@ -586,7 +586,7 @@ if (detailsViewDataGrid == null)
 ![](Selection_images/Selection_img10.png)
 
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/DETAIL~1781445470.ZIP).
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/SELECT~1-1466905114.ZIP).
 
 ### Programmatically select the records in DetailsViewDataGrid which is not in view
 
