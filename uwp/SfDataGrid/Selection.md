@@ -558,7 +558,17 @@ If the expanded `DetailsViewDataGrid` is not in view, then you can scroll using 
 {% highlight c# %}
 
 int recordIndex = 20;
+int index = 0;
+int parentRowIndex = 25;
 datagrid.ExpandDetailsViewAt(recordIndex);
+foreach (var def in this.dataGrid.DetailsViewDefinition)
+{
+    if (def.RelationalColumn == "ProductDetails")
+    {
+        index = this.dataGrid.DetailsViewDefinition.IndexOf(def);
+        index = parentRowIndex + index + 1;
+    }
+}
 //Get the Details view based upon the recordIndex and Column name
 SfDataGrid detailsViewDataGrid = datagrid.GetDetailsViewGrid(recordIndex, "OrderDetails");
 //Get the DetailsViewManager using Reflection
@@ -587,8 +597,9 @@ You can expand the `DetailsViewDataGrid` by using `ExpandDetailsViewAt` helper m
 {% tabs %}
 {% highlight c# %}
 
-//  find DetailsViewDataRow index based on relational column
+//Find DetailsViewDataRow index based on relational column
 int index = 0;
+int parentRowIndex = 25;
 foreach (var def in this.dataGrid.DetailsViewDefinition)
 {
     if (def.RelationalColumn == "ProductDetails")
@@ -601,7 +612,7 @@ foreach (var def in this.dataGrid.DetailsViewDefinition)
 var rowcolumnIndex = new RowColumnIndex(index, 1);
 //Get the DetailsViewDataGrid by passing the corresponding row index and relation name
 var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(this.dataGrid.ResolveToRecordIndex(parentRowIndex), "ProductDetails");
-//if the DetailsViewDataGrid is not already expanded, call BringIntoView method
+//If the DetailsViewDataGrid is not in view, you can call BringIntoView method
 if (detailsViewDataGrid == null)
 {
     detailsViewManager.BringIntoView(index);
@@ -609,7 +620,7 @@ if (detailsViewDataGrid == null)
 }
 else
 {
-    // if the DetailsViewDataGrid is already expanded, bring that into view
+    //If the DetailsViewDataGrid is already expanded, bring that into view
     dataGrid.ScrollInView(rowcolumnIndex);
 }
 
@@ -1099,11 +1110,11 @@ You can cancel the selection process within this event by setting [GridSelection
 {% tabs %}
 {% highlight c# %}
 
-void dataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
+private void Datagrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {
     var unBounRow = e.AddedItems.Where(rowInfo => (rowInfo as GridRowInfo).IsUnBoundRow).ToList();
-    if(unBounRow.Count() > 0)
-        unBounRow.All(row => e.AddedItems.Remove(row));
+    if (unBounRow.Count() > 0)
+        e.Cancel = true;
 }
 
 {% endhighlight %}
@@ -1511,13 +1522,12 @@ While grouping any column, by default the first `CaptionSummaryRow` will be sele
 {% tabs %}
 {% highlight c# %}
 
-public class GridSelectionControllerExt:GridSelectionController
+public class GridSelectionControllerExt : GridSelectionController
 {
-    public GridSelectionControllerExt(SfDataGrid dataGrid):base(dataGrid)
-    {     
-    }
-
-    protected override void ProcessOnGroupChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs args)
+    public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
+    {
+    }       
+    protected override void ProcessOnGroupChanged(GridGroupingEventArgs args)
     {
         base.ProcessOnGroupChanged(args);
         var removedItems = new List<object>();
