@@ -275,7 +275,7 @@ cellGrid.FrozenColumns = 1;
 
 ## Resize Rows/Columns
 
-By default, row resizing and column resizing will be enabled in SfCellGrid. To disable the resizing, set the `AllowRowResize` and  `AllowColumnResize` properties to  false.
+By default, row resizing and column resizing will be enabled in SfCellGrid. To disable the resizing, set the `AllowRowResize` and `AllowColumnResize` properties to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -359,7 +359,7 @@ The options in `GridResizeToFitOptions` enum are
 
 * NoShrinkSize    -  does not shrink the size of cells.
 
-* IncludeHeaders  -  includes row and column headers for resizing.
+* IncludeHeaders -  includes row and column headers for resizing.
 
 
 #### ResizeRowsToFit
@@ -369,7 +369,7 @@ Resizes the row height for the given range of row/rows based on the content size
 {% tabs %}
 {% highlight c# %}
 
-//Resizing of Rows  from 5 to 7,
+//Resizing of Rows from 5 to 7,
 cellGrid.Model.ResizeRowsToFit(GridRangeInfo.Rows(5, 7), GridResizeToFitOptions.None);
 
 {% endhighlight %}

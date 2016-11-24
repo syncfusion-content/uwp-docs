@@ -101,7 +101,7 @@ Returns the day (of the month) from a user-supplied date<br/><br/></td></tr>
 <tr>
 <td>
 DAYS360<br/><br/></td><td>
-Calculates the number of days between 2 dates, based on a 360-day year (12 x 30 months)<br/><br/></td></tr>
+Calculates the number of days between 2 dates, based on a 360-day year (12 x 30 months) <br/><br/></td></tr>
 <tr>
 <td>
 HOUR<br/><br/></td><td>
@@ -113,7 +113,7 @@ Returns the minute part of a user-supplied time<br/><br/></td></tr>
 <tr>
 <td>
 SECOND<br/><br/></td><td>
-Returns the seconds part of a user-supplied time<br/><br/></td></tr>
+Returns the seconds’ part of a user-supplied time<br/><br/></td></tr>
 <tr>
 <td>
 MONTH<br/><br/></td><td>
@@ -161,7 +161,7 @@ Returns the ISO week number of the year for a given date<br/><br/></td></tr>
 <tr>
 <td>
 NETWORKDAYS.INTL<br/><br/></td><td>
-Returns the number of whole network days (excluding weekends & holidays), between two supplied dates, using parameters to specify weekend days <br/><br/></td></tr>
+Returns the number of whole network days (excluding weekends & holidays), between two supplied dates, using parameters to specify weekend days <br/><br/></td></tr>
 <tr>
 <td>
 WEEKNUM<br/><br/></td><td>
@@ -318,7 +318,7 @@ Returns the hyperbolic cosine of a complex number<br/><br/></td></tr>
 <tr>
 <td>
 IMSECH<br/><br/></td><td>
-Returns the hyperbolic secant of a complex number <br/><br/></td></tr>
+Returns the hyperbolic secant of a complex number <br/><br/></td></tr>
 <tr>
 <td>
 IMLOG10<br/><br/></td><td>
@@ -362,7 +362,7 @@ Returns a Bitwise 'Exclusive Or' of two numbers<br/><br/></td></tr>
 <tr>
 <td>
 BITLSHIFT<br/><br/></td><td>
-Returns a number shifted left by a specified number of bits <br/><br/></td></tr>
+Returns a number shifted left by a specified number of bits <br/><br/></td></tr>
 <tr>
 <td>
 BITRSHIFT<br/><br/></td><td>
@@ -459,7 +459,7 @@ Calculates the payment on the principal for a given investment, with periodic co
 <tr>
 <td>
 PV<br/><br/></td><td>
-Calculates the present value of an investment (i.e. the total amount that a series of future payments is worth now)<br/><br/></td></tr>
+Calculates the present value of an investment (i.e. the total amount that a series of future payments is worth now) <br/><br/></td></tr>
 <tr>
 <td>
 RATE<br/><br/></td><td>
@@ -588,7 +588,7 @@ Tests a supplied value and returns an integer relating to the supplied value's e
 <tr>
 <td>
 N<br/><br/></td><td>
-Converts a non-number value to a number, a date to a serial number, the logical value TRUE to 1 and all other values to 0<br/><br/></td></tr>
+Converts a non-number value to a number, a date to a serial number, the logical value TRUE to 1 and all other values to 0<br/><br/></td></tr>
 <tr>
 <td>
 NA<br/><br/></td><td>
@@ -621,11 +621,11 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 AND<br/><br/></td><td>
-Tests a number of user-defined conditions and returns TRUE if ALL of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
+Tests several user-defined conditions and returns TRUE if ALL the conditions evaluate to TRUE, or FALSE otherwise<br/><br/></td></tr>
 <tr>
 <td>
 OR<br/><br/></td><td>
-Tests a number of user-defined conditions and returns TRUE if ANY of the conditions evaluate to TRUE, orFALSE otherwise<br/><br/></td></tr>
+Tests several user-defined conditions and returns TRUE if ANY of the conditions evaluate to TRUE, or FALSE otherwise<br/><br/></td></tr>
 <tr>
 <td>
 IF<br/><br/></td><td>
@@ -633,15 +633,15 @@ Tests a user-defined condition and returns one result if the condition is TRUE, 
 <tr>
 <td>
 IFERROR<br/><br/></td><td>
-Tests if an initial supplied value (or expression) returns an error, and if so, returns a supplied value; Otherwise the function returns the initial value.<br/><br/></td></tr>
+Tests if an initial supplied value (or expression) returns an error, and if so, returns a supplied value; Otherwise the function returns the initial value. <br/><br/></td></tr>
 <tr>
 <td>
 FALSE<br/><br/></td><td>
-Simply returns the logical value FALSE<br/><br/></td></tr>
+Simply returns the logical value FALSE<br/><br/></td></tr>
 <tr>
 <td>
 TRUE<br/><br/></td><td>
-Simply returns the logical value TRUE<br/><br/></td></tr>
+Simply returns the logical value TRUE<br/><br/></td></tr>
 <tr>
 <td>
 NOT<br/><br/></td><td>
@@ -714,7 +714,7 @@ Returns the sheet number of the referenced sheet<br/><br/></td></tr>
 <tr>
 <td>
 TRANSPOSE<br/><br/></td><td>
-Performs a transpose transformation on a range of cells (i.e. transforms a horizontal range of cells into a vertical range and vice versa)<br/><br/></td></tr>
+Performs a transpose transformation on a range of cells (i.e. transforms a horizontal range of cells into a vertical range and vice versa) <br/><br/></td></tr>
 <tr>
 <td>
 SHEETS<br/><br/></td><td>
@@ -843,7 +843,7 @@ Rounds a number to the nearest integer or to the nearest multiple of significanc
 <tr>
 <td>
 CEILING.MATH<br/><br/></td><td>
-Returns the RoundUp of the given number to the given significance<br/><br/></td></tr>
+Returns the Round Up of the given number to the given significance<br/><br/></td></tr>
 <tr>
 <td>
 COLUMNS<br/><br/></td><td>
@@ -887,7 +887,7 @@ Rounds a number down to the nearest integer<br/><br/></td></tr>
 <tr>
 <td>
 RAND<br/><br/></td><td>
-Returns an evenly distributed random number &gt;= 0 and &lt; 1<br/><br/></td></tr>
+Returns an evenly distributed random number &gt; = 0 and &lt; 1<br/><br/></td></tr>
 <tr>
 <td>
 COMBIN<br/><br/></td><td>
@@ -951,7 +951,7 @@ Returns the least common multiple<br/><br/></td></tr>
 <tr>
 <td>
 SQRTPI<br/><br/></td><td>
-Returns the square root of (number * pi)<br/><br/></td></tr>
+Returns the square root of (number * pi) <br/><br/></td></tr>
 <tr>
 <td>
 ROMAN<br/><br/></td><td>
@@ -1015,7 +1015,7 @@ Converts number into text representation <br/><br/></td></tr>
 <tr>
 <td>
 DECIMAL<br/><br/></td><td>
-Converts text representation of a number in a given base into decimal number<br/><br/></td></tr>
+Converts text representation of a number in each base into decimal number<br/><br/></td></tr>
 <tr>
 <td>
 ARABIC<br/><br/></td><td>
@@ -1088,11 +1088,11 @@ Returns the skewness of a distribution<br/><br/></td></tr>
 <tr>
 <td>
 COVARIANCE.P<br/><br/></td><td>
-Returns population covariance, the average of the products deviation for each data point pair in two data sets.<br/><br/></td></tr>
+Returns population covariance, the average of the products deviation for each data point pair in two data sets. <br/><br/></td></tr>
 <tr>
 <td>
 COVARIANCE.S<br/><br/></td><td>
-Returns the sample covariance, the average of the products deviation for each data point pair in two data sets.<br/><br/></td></tr>
+Returns the sample covariance, the average of the products deviation for each data point pair in two data sets. <br/><br/></td></tr>
 <tr>
 <td>
 PERCENTILE.EXC<br/><br/></td><td>
@@ -1131,7 +1131,7 @@ NORM.INV<br/><br/></td><td>
 Returns the inverse of the normal cumulative distribution<br/><br/></td></tr>
 <tr>
 <td>
-NORM.S.DIST<br/><br/></td><td>
+NORM.S. DIST<br/><br/></td><td>
 Returns the standard normal cumulative distribution<br/><br/></td></tr>
 <tr>
 <td>
@@ -1176,7 +1176,7 @@ Returns the hypergeometric distribution<br/><br/></td></tr>
 <tr>
 <td>
 LOGNORM.DIST<br/><br/></td><td>
-Returns the cumulative log-normal distribution <br/><br/></td></tr>
+Returns the cumulative log-normal distribution <br/><br/></td></tr>
 <tr>
 <td>
 LOGNORM.INV<br/><br/></td><td>
@@ -1187,15 +1187,15 @@ CONFIDENCE.NORM<br/><br/></td><td>
 Returns the confidence interval for a population mean, using a normal distribution<br/><br/></td></tr>
 <tr>
 <td>
-CHISQ.DIST.RT<br/><br/></td><td>
+CHISQ.DIST. RT<br/><br/></td><td>
 Returns the right-tailed probability of the chi-squared distribution<br/><br/></td></tr>
 <tr>
 <td>
-F.DIST<br/><br/></td><td>
+F. DIST<br/><br/></td><td>
 Returns the F probability distribution<br/><br/></td></tr>
 <tr>
 <td>
-F.DIST.RT<br/><br/></td><td>
+F. DIST.RT<br/><br/></td><td>
 Returns the right-tailed F probability distribution for two data sets<br/><br/></td></tr>
 <tr>
 <td>
@@ -1220,11 +1220,11 @@ Returns the one-tailed probability value of a z-test<br/><br/></td></tr>
 <tr>
 <td>
 RANK.AVG<br/><br/></td><td>
-Returns the statistical rank of a given value, within a supplied array of values (if more than one value has same rank, the average rank is returned)<br/><br/></td></tr>
+Returns the statistical rank of a given value, within a supplied array of values (if more than one value has same rank, the average rank is returned) <br/><br/></td></tr>
 <tr>
 <td>
 RANK.EQ<br/><br/></td><td>
-Returns the Mode (the most frequently occurring value) of a list of supplied numbers (if more than one value has same rank, the top rank of that set is returned)<br/><br/></td></tr>
+Returns the Mode (the most frequently occurring value) of a list of supplied numbers (if more than one value has same rank, the top rank of that set is returned) <br/><br/></td></tr>
 <tr>
 <td>
 NEGBINOM.DIST<br/><br/></td><td>
@@ -1272,7 +1272,7 @@ Returns the harmonic mean of a set of supplied numbers<br/><br/></td></tr>
 <tr>
 <td>
 HYPGEOMDIST<br/><br/></td><td>
-Returns the hypergeometric distribution <br/><br/></td></tr>
+Returns the hypergeometric distribution <br/><br/></td></tr>
 <tr>
 <td>
 INTERCEPT<br/><br/></td><td>
@@ -1312,7 +1312,7 @@ Returns the standard normal cumulative distribution<br/><br/></td></tr>
 <tr>
 <td>
 CONFIDENCE<br/><br/></td><td>
-Returns the confidence interval for a population mean, using a normal distribution <br/><br/></td></tr>
+Returns the confidence interval for a population mean, using a normal distribution <br/><br/></td></tr>
 <tr>
 <td>
 CORREL<br/><br/></td><td>
@@ -1336,7 +1336,7 @@ Returns the number of cells (of a supplied range), that satisfy a given criteria
 <tr>
 <td>
 COVAR<br/><br/></td><td>
-Returns population covariance (i.e. the average of the products of deviations for each pair within two supplied data sets)<br/><br/></td></tr>
+Returns population covariance (i.e. the average of the products of deviations for each pair within two supplied data sets) <br/><br/></td></tr>
 <tr>
 <td>
 CRITBINOM<br/><br/></td><td>
@@ -1352,7 +1352,7 @@ Returns the exponential distribution<br/><br/></td></tr>
 <tr>
 <td>
 FDIST<br/><br/></td><td>
-Returns the F probability distribution (probability density or cumulative distribution function)<br/><br/></td></tr>
+Returns the F probability distribution (probability density or cumulative distribution function) <br/><br/></td></tr>
 <tr>
 <td>
 FINV<br/><br/></td><td>
@@ -1404,7 +1404,7 @@ Returns the K'th percentile of values in a supplied range, where K is in the ran
 <tr>
 <td>
 PERCENTILERANK<br/><br/></td><td>
-Returns the rank of a value in a data set, as a percentage (0 - 1 inclusive)<br/><br/></td></tr>
+Returns the rank of a value in a data set, as a percentage (0 - 1 inclusive) <br/><br/></td></tr>
 <tr>
 <td>
 PERMUT<br/><br/></td><td>
@@ -1424,7 +1424,7 @@ Returns the specified quartile of a set of supplied numbers, based on percentile
 <tr>
 <td>
 RANQ<br/><br/></td><td>
-Returns the Mode (the most frequently occurring value) of a list of supplied numbers (if more than one value has same rank, the top rank of that set is returned)<br/><br/></td></tr>
+Returns the Mode (the most frequently occurring value) of a list of supplied numbers (if more than one value has same rank, the top rank of that set is returned) <br/><br/></td></tr>
 <tr>
 <td>
 RSQ<br/><br/></td><td>
@@ -1448,7 +1448,7 @@ Returns a normalized value<br/><br/></td></tr>
 <tr>
 <td>
 STDEV<br/><br/></td><td>
-Returns the standard deviation of a supplied set of values (which represent a sample of a population)<br/><br/></td></tr>
+Returns the standard deviation of a supplied set of values (which represent a sample of a population) <br/><br/></td></tr>
 <tr>
 <td>
 STDEVA<br/><br/></td><td>
@@ -1456,7 +1456,7 @@ Returns the standard deviation of a supplied set of values (which represent a sa
 <tr>
 <td>
 STDEVP<br/><br/></td><td>
-Returns the standard deviation of a supplied set of values (which represent an entire population)<br/><br/></td></tr>
+Returns the standard deviation of a supplied set of values (which represent an entire population) <br/><br/></td></tr>
 <tr>
 <td>
 STDEVPA<br/><br/></td><td>
@@ -1472,7 +1472,7 @@ Returns the mean of the interior of a supplied set of values<br/><br/></td></tr>
 <tr>
 <td>
 VAR<br/><br/></td><td>
-Returns the variance of a supplied set of values (which represent a sample of a population)<br/><br/></td></tr>
+Returns the variance of a supplied set of values (which represent a sample of a population) <br/><br/></td></tr>
 <tr>
 <td>
 VARA<br/><br/></td><td>
@@ -1480,7 +1480,7 @@ Returns the variance of a supplied set of values (which represent a sample of a 
 <tr>
 <td>
 VARP<br/><br/></td><td>
-Returns the variance of a supplied set of values (which represent an entire population)<br/><br/></td></tr>
+Returns the variance of a supplied set of values (which represent an entire population) <br/><br/></td></tr>
 <tr>
 <td>
 VARPA<br/><br/></td><td>
@@ -1561,7 +1561,7 @@ Substitutes all occurrences of a search text string, within an original text str
 <tr>
 <td>
 T<br/><br/></td><td>
-Tests whether a supplied value is text and if so, returns the supplied text; If not, returns an empty text string.<br/><br/></td></tr>
+Tests whether a supplied value is text and if so, returns the supplied text; If not, returns an empty text string. <br/><br/></td></tr>
 <tr>
 <td>
 CODE<br/><br/></td><td>
@@ -1569,7 +1569,7 @@ Returns the numeric code for the first character of a supplied string<br/><br/><
 <tr>
 <td>
 FINDB<br/><br/></td><td>
-Returns the position of a supplied character or text string from within a supplied text string (case-sensitive)<br/><br/></td></tr>
+Returns the position of a supplied character or text string from within a supplied text string (case-sensitive) <br/><br/></td></tr>
 <tr>
 <td>
 LEFTB<br/><br/></td><td>
@@ -1593,11 +1593,11 @@ Converts text to a number, in a locale-independent way<br/><br/></td></tr>
 <tr>
 <td>
 PROPER<br/><br/></td><td>
-Converts all characters in a supplied text string to proper case (i.e. letters that do not follow another letter are upper case and all other characters are lower case)<br/><br/></td></tr>
+Converts all characters in a supplied text string to proper case (i.e. letters that do not follow another letter are upper case and all other characters are lower case) <br/><br/></td></tr>
 <tr>
 <td>
 REPLACE<br/><br/></td><td>
-Replaces all or part of a text string with another string (from a user supplied position)<br/><br/></td></tr>
+Replaces all or part of a text string with another string (from a user supplied position) <br/><br/></td></tr>
 <tr>
 <td>
 REPT<br/><br/></td><td>
@@ -1605,7 +1605,7 @@ Returns a string consisting of a supplied text string, repeated a specified numb
 <tr>
 <td>
 SEARCHB<br/><br/></td><td>
-Returns the position of a supplied character or text string from within a supplied text string (non-case-sensitive)<br/><br/></td></tr>
+Returns the position of a supplied character or text string from within a supplied text string (non-case-sensitive) <br/><br/></td></tr>
 <tr>
 <td>
 UNICHAR<br/><br/></td><td>
@@ -1613,7 +1613,7 @@ Returns the Unicode character that is referenced by the given numeric value<br/>
 <tr>
 <td>
 UNICODE<br/><br/></td><td>
-Returns the number (code point) corresponding to the first character of a supplied text string <br/><br/></td></tr>
+Returns the number (code point) corresponding to the first character of a supplied text string <br/><br/></td></tr>
 </table>
 
 ### Web Functions
@@ -1626,7 +1626,7 @@ Description<br/><br/></th></tr>
 <tr>
 <td>
 ENCODEURL<br/><br/></td><td>
-Returns a URL-encoded string <br/><br/></td></tr>
+Returns a URL-encoded string <br/><br/></td></tr>
 <tr>
 <td>
 FILTERXML<br/><br/></td><td>
