@@ -751,28 +751,27 @@ By default, the cell content can be cleared in edit mode by pressing <kbd>Delete
 {% highlight c# %}
 this.dataGrid.SelectionController = new GridSelectionControllerExt(dataGrid);
 
-public class GridSelectionControllerExt:GridSelectionController
+public class GridSelectionControllerExt : GridSelectionController
 {
-    public GridSelectionControllerExt(SfDataGrid grid)
-    : base(grid)
+    public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
-    protected override void ProcessKeyDown(KeyRoutedEventArgs args)
+    protected override void ProcessKeyDown(KeyEventArgs args)
     {
-        //Customize Delete key operation 
-        if (args.Key == VirtualKey.Delete)
+        //Customizes the Delete key operation.
+        if (args.Key == Key.Delete)
         {
-            //Get the cell value of current column
-            var record = this.DataGrid.View.Records[this.DataGrid.SelectedIndex].Data;
+            //Gets the cell value of current column.
+            var record = this.DataGrid.CurrentItem;
+            var currentColumnIndex = this.CurrentCellManager.CurrentCell.ColumnIndex;
+            var columnIndex = this.DataGrid.ResolveToGridVisibleColumnIndex(currentColumnIndex);
+            var mappingName = this.DataGrid.Columns[columnIndex].MappingName;
+            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
 
-            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName);
-
-            //Return the cell value as if the current column's cell is not null
+            //Returns the cell value when the current column's cell is not set to null.
             if (cellVal != null)
             {
-                var columnName = this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName;
-
-                PropertyInfoExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, columnName);
+                PropertyDescriptorExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, mappingName);
             }
         }
         else
