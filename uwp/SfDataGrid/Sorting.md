@@ -192,6 +192,13 @@ In the below code snippet, CustomerName property is compared based on its string
 public class CustomComparer : IComparer<object>, ISortDirection
 {
     private ListSortDirection _SortDirection;
+    
+    /// <summary>
+    /// Gets or sets the property that denotes the sort direction.
+    /// </summary>
+    /// <remarks>
+    /// SortDirection gets updated only when sorting the groups. For other cases, SortDirection is always ascending.
+    /// </remarks>
     public ListSortDirection SortDirection
     {
         get { return _SortDirection; }            
