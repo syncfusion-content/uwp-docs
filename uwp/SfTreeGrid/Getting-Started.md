@@ -59,6 +59,45 @@ Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
 </tr>
 </table>
 
+In order to use export to excel and export to PDF functionalities of SfTreeGrid control, add the reference to following assemblies,
+
+<table>
+<tr>
+<th>
+Optional Assemblies
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Syncfusion.SfGridConverter.UWP
+</td>
+<td>
+Syncfusion.SfGridConverter.UWP contains static extension classes for exporting SfTreeGrid to excel and PDF in <code>Syncfusion.UI.Xaml.TreeGrid.Converter</code> namespace.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.XlsIO.UWP
+</td>
+<td>
+Syncfusion.XlsIO.Base.UWP contains fundamental and base classes for creating and manipulating excel files.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.Pdf.UWP
+</td>
+<td>
+Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
+</td>
+</tr>
+</table>
+
+You can refer [here](http://help.syncfusion.com/uwp/installation-and-deployment#installed-location) to know the assemblies installation location on your machine.
+
 ### Creating simple application with SfTreeGrid
 
 In this walk through, you will create UWP application with SfTreeGrid control.
