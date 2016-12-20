@@ -250,3 +250,5 @@ cellGrid.Model.ClearStyles();
 
 {% endhighlight %}
 {% endtabs %} 
+
+N> Users need to invalidate the cells using `InvalidateCell(rowIndex,colIndex)` method, if the formatting is applied at runtime like button click event. For more info, please refer [here](http://help.syncfusion.com/uwp/sfcellgrid/working-with-sfcellgrid#refreshing-the-grid).
