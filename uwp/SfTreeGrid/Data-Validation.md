@@ -16,7 +16,7 @@ SfTreeGrid allows you to validate the data and display hints in case of validati
 Built-in validations through INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting[SfTreeGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassGridValidationModeTopic.html) or [TreeGridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassGridValidationModeTopic.html) properties. `TreeGridColumn.GridValidationMode` takes priority than ` SfTreeGrid.GridValidationMode`.
 
 * `GridValidation.InView` - displays error icons and tips alone.
-* `GridValidation.None` - disables build-in validation support.
+* `GridValidation.None` - disables built-in validation support.
 
 ### Built-in validation using INotifyDataErrorInfo
 
@@ -145,7 +145,7 @@ You can validate the cells and rows using [CurrentCellValidating](https://help.s
 
 ### Cell Validation
 
-You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellValidatingTopic.html) event when the cell is edited. `CurrentCellValdiating` event occurs when the edited cell tries to commit the data or lose the focus.
+You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellValidatingTopic.html) event when the cell is edited. `CurrentCellValidating` event occurs when the edited cell tries to commit the data or lose the focus.
 
 [TreeGridCurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridCurrentCellValidatingEventArgsClassTopic.html) provides information to `CurrentCellValidating` event for validating the cell. ` 
 `TreeGridCurrentCellValidatingEventArgs.NewValue` returns the edited value and you can set the validation status using `CurrentCellValidatingEventArgs.IsValid` property.
@@ -181,7 +181,7 @@ private void TreeGrid_CurrentCellValidated(object sender, Syncfusion.UI.Xaml.Tre
 
 You can validate the row using [RowValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassRowValidatingTopic.html) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus.
 
-[TreeGridRowValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowValidatingEventArgsClassTopic.html) provides information to `RowValidtaing` event for validating row. 
+[TreeGridRowValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowValidatingEventArgsClassTopic.html) provides information to `RowValidating` event for validating row. 
 `RowValidatingEventArgs.RowData` returns the edited value and you can set the validation status using `RowValidatingEventArgs.IsValid` property.
 
 {% tabs %}
@@ -430,7 +430,7 @@ You can customize the error tip by editing the style of `ValidationToolTipTempla
 
 #### Change the background and foreground color of error tip
 
-You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`. The error tip foreground color can be changed by setting `Foreground` property of the `TextBlock` in `ValidationTolTipTemplate`.
+You can change the error tip background color by setting `Background` property of the border in `ValidationToolTipTemplate`. The error tip foreground color can be changed by setting `Foreground` property of the `TextBlock` in `ValidationToolTipTemplate`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -538,7 +538,7 @@ public bool HasErrors
 
 ## Validation with Checkbox column
 
-SfTreeGrid doesn’t support to validate the [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html) through validating events. You can validate the check box column value by setting [TreeGridValidationHelper.IsCurrentCellValidated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassIsCurrentCellValidatedTopic.html) and [TreeGridValidationHelper.IsCurrentRowValidated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassIsCurrentRowValidatedTopic.html) static properties by calling [SetCurrentRowValdiated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassSetCurrentRowValidatedTopic.html) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassSetCurrentCellValidatedTopic.html) methods from [TreeGridValidationHelper](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassTopic.html).
+SfTreeGrid doesn’t support to validate the [TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html) through validating events. You can validate the check box column value by setting [TreeGridValidationHelper.IsCurrentCellValidated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassIsCurrentCellValidatedTopic.html) and [TreeGridValidationHelper.IsCurrentRowValidated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassIsCurrentRowValidatedTopic.html) static properties by calling [SetCurrentRowValidated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassSetCurrentRowValidatedTopic.html) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassSetCurrentCellValidatedTopic.html) methods from [TreeGridValidationHelper](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridValidationHelperClassTopic.html).
 
 {% tabs %}
 {% highlight c# %}
