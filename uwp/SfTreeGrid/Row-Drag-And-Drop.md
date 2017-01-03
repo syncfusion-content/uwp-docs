@@ -29,7 +29,7 @@ While dropping, the dragged node(s) can be added above or below or as a child no
 
 ## Auto expanding the node on drag over
 
-When drag over the tree node, if drop position is “Drop as child”, then you can auto expand the corresponding tree node by setting  [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowDragDropControllerClassCanAutoExpandTopic.html) as `true`. It is also possible to control the delay in expanding the node when drag over using [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowDragDropControllerClassAutoExpandDelayTopic.html) property.  Its deafult value in 3 sec.
+When drag over the tree node, if drop position is “Drop as child”, then you can auto expand the corresponding tree node by setting  [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowDragDropControllerClassCanAutoExpandTopic.html) as `true`. It is also possible to control the delay in expanding the node when drag over using [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowDragDropControllerClassAutoExpandDelayTopic.html) property.  Its default value in 3 sec.
 
 {% tabs %}
 {% highlight c# %}
@@ -51,7 +51,7 @@ SfTreeGrid provides build built in support for drag and drop nodes between SfTre
 
 ### Disabling drag and drop between TreeGrid
 
-If [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAllowDraggingRowsTopic.html) is set to `true`, you can drag and drop nodes between TreeGrids and within TreeGrid. If you want to disable drag and drop from one TreeGrid to another TreeGrid, you need tooverride target TreeGrid’s [GetDropPosition](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowDragDropControllerClassGetDropPositionTopic.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowDragDropControllerClassTopic.html) class.
+If [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAllowDraggingRowsTopic.html) is set to `true`, you can drag and drop nodes between TreeGrids and within TreeGrid. If you want to disable drag and drop from one TreeGrid to another TreeGrid, you need to override target TreeGrid’s [GetDropPosition](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowDragDropControllerClassGetDropPositionTopic.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridRowDragDropControllerClassTopic.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -77,7 +77,7 @@ treeGrid.RowDragDropController = new TreeGridRowDragDropControllerExt(treeGrid);
 {% endhighlight %}
 {% endtabs %}
 
-If source tree grid and target tree grid are different, drop opertion is disabled.
+If source tree grid and target tree grid are different, drop operation is disabled.
 
 ## Customizing Row drag and drop
 
@@ -391,5 +391,5 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {% endhighlight %}
 {% endtabs %}
 
-After dropping in treegrid, dragged item is added to TreeGrid based on the dropped position.
+After dropping in tree grid, dragged item is added to TreeGrid based on the dropped position.
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
