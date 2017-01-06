@@ -194,13 +194,13 @@ cellGrid.Model[5, 5].ConditionalFormats.Add(format);
 
 ### DatesOccurring Format Type
 
-To set the conditional format based on DateTime, define the `GridConditionalFormatType` as `DatesOccuring` in the `GridConditionalFormat` constructor and set the condition `TimePeriodType`. 
+To set the conditional format based on DateTime, define the `GridConditionalFormatType` as `DatesOccurring` in the `GridConditionalFormat` constructor and set the condition `TimePeriodType`. 
 Then set other formatting options such as background, foreground, font styles, etc., to the specified cell range.
 
 {% tabs %}
 {% highlight c# %}
 
-var format = new GridConditionalFormat(GridConditionalFormatType.DatesOccuring);
+var format = new GridConditionalFormat(GridConditionalFormatType.DatesOccurring);
 format.Condition.TimePeriodType = GridTimePeriodType.Today;
 cellGrid.Model[5, 5].CellValue = DateTime.Today.Date;
 format.Style.Foreground = new SolidColorBrush(Colors.Blue);;
