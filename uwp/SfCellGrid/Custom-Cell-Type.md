@@ -20,17 +20,31 @@ To customize the cell, please follow the below steps
 * Create a Custom Cell Renderer class
 * Associating the Custom Cell Renderer to SfCellGrid
 
-## Creating a new Custom Cell Type(SfCalendar) in SfCellGrid
+## Creating a new Custom Cell Type(SfCalendar) 
 
 ### Create a Custom Cell Renderer class
 
-Create a custom class "CalendarCellRenderer" by overriding the `GridVirtualizingCellRenderer` class to define the custom renderer element.
+Create a custom class "CalendarCellRenderer" by overriding the `GridVirtualizingCellRenderer` class to define the custom renderer element. Here the display element is `TextBlock` whereas the edit element is loaded as `SfCalendar`.
+
+{% tabs %}
+{% highlight c# %}
+
+public class CalendarCellRenderer : GridVirtualizingCellRenderer<TextBlock, SfCalendar>
+{
+    public CalendarCellRenderer()
+    {
+           
+    }
+}
+  
+{% endhighlight %}
+{% endtabs %}
 
 To load the `SfCalendar` in the edit mode of a cell, create a new `SfCalendar` control in `OnCreateEditUIElement` method.
 In `OnInitializeDisplayElement` method, initialize the display UI element `TextBlock` which is to be loaded in the cell of SfCellGrid and in `OnInitializeEditElement` method,
 initialize the edit UI element `SfCalendar` which is to be loaded in the cell of SfCellGrid while in edit mode. Otherwise it will load the default display and edit UI element in the cells.
 
-When the edit UI element is loaded in the cell, `OnEditElementLoaded` event is invoked and focus is set to the UI element(SfCalendar). When the selected date in SfCalendar Control is changed, `SelectionChanged` event is invoked and set the selected date as value.
+When the edit UI element is loaded in the cell, `OnEditElementLoaded` event is invoked and focus is set to the UI element(SfCalendar). When the selected date in `SfCalendar` Control is changed, `SelectionChanged` event is invoked and set the selected date as value.
 The `GetControlValue` and `GetFormattedText` methods returns/updates the value and formatted text of the current rendered element(SfCalendar/TextBlock) in the cell.
 
 {% tabs %}
@@ -139,10 +153,10 @@ public class CalendarCellRenderer : GridVirtualizingCellRenderer<TextBlock, SfCa
 {% endtabs %}
 
 ### Associating the Custom Cell Renderer to SfCellGrid
+                                                                                                                     
+To associate the custom cell renderer in SfCellGrid, initialize the **CalendarCellRenderer** class and add it to the `CellRenderers` property which is a collection of type `GridCellRendererCollection` class. 
 
-To associate the custom cell renderer in SfCellGrid, initialize the **CalendarCellRenderer** class and add it to the renderer collection of cell types. 
-
-Invoke the `QueryCellInfo` Event of SfCellGrid and set the `CellType` of range to be “CalendarCell” to load the user defined cell type.
+To load the custom cell(SfCalendar) in the required range, assign its name "CalendarCell" to the `CellType` property of `GridStyleInfo` class. 
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +193,7 @@ The following output is generated using the code above while the Cell(5,5) is in
 
 For more reference, please find the [customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/App2-57034699) sample.
 
-## Modify the preexisting Cell Type in SfCellGrid
+## Modify the Existing Cell Type
 
 Users can also change/modify the behavior of already existing cell type in SfCellGrid by creating a custom renderer class by overriding the existing cell renderer class.
 
@@ -207,9 +221,9 @@ public class CustomComboRenderer: GridComboBoxCellRenderer
  
 ### Associating the Custom Cell Renderer to SfCellGrid
 
-To associate the custom cell renderer in SfCellGrid, initialize the **CustomComboRenderer** class and add it to the renderer collection of cell types. 
+To associate the custom cell renderer in SfCellGrid, initialize the **CustomComboRenderer** class and add it to the `CellRenderers` property which is a collection of type `GridCellRendererCollection` class and remove the existing cell type `ComboBox` from the collection.
 
-Invoke the `QueryCellInfo` Event of SfCellGrid and set the `CellType` of range to be **ComboCell** to load the user defined cell type.
+To load the custom cell in the required range, assign its name **ComboCell** to the `CellType` property of `GridStyleInfo` class. 
 
 {% tabs %}
 {% highlight c# %}
