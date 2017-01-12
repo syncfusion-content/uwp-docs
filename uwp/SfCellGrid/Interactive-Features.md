@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features
-description: 
+description: Interactive operations in SfCellGrid
 platform: uwp
 control: SfCellGrid
 documentation: ug
