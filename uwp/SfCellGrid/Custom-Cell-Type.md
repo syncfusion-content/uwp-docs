@@ -42,7 +42,7 @@ public class CalendarCellRenderer : GridVirtualizingCellRenderer<TextBlock, SfCa
 
 To load the `SfCalendar` in the edit mode of a cell, create a new `SfCalendar` control in `OnCreateEditUIElement` method.
 In `OnInitializeDisplayElement` method, initialize the display UI element `TextBlock` which is to be loaded in the cell of SfCellGrid and in `OnInitializeEditElement` method,
-initialize the edit UI element `SfCalendar` which is to be loaded in the cell of SfCellGrid while in edit mode. Otherwise it will load the default display and edit UI element in the cells.
+initialize the edit UI element `SfCalendar` which is to be loaded in the cell of SfCellGrid while in edit mode.
 
 When the edit UI element is loaded in the cell, `OnEditElementLoaded` event is invoked and focus is set to the UI element(SfCalendar). When the selected date in `SfCalendar` Control is changed, `SelectionChanged` event is invoked and set the selected date as value.
 The `GetControlValue` and `GetFormattedText` methods returns/updates the value and formatted text of the current rendered element(SfCalendar/TextBlock) in the cell.
