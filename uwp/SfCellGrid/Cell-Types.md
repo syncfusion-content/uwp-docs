@@ -132,7 +132,7 @@ Gets or sets the Minimum date. </td></tr>
 Gets or sets the bool value. If true, editing will be enabled in the cell. </td></tr>
 <tr>
 <td>
-<code>ShowDrowpDownButton</code></td><td>
+<code>ShowDropDownButton</code></td><td>
 Gets or sets the bool value. If true, dropdown button will be shown. </td></tr>
 <tr>
 <td>
@@ -330,4 +330,4 @@ cellGrid.Model[4, 4].CellValue = "=Sum(A1:A2)";
 {% endhighlight %}
 {% endtabs %}
 
-For more information regarding supported formulas in SfCellgrid, please refer [here](https://help.syncfusion.com/uwp/sfcellgrid/formulas#supported-functions).
+For more information regarding supported formulas in SfCellGrid, please refer [here](https://help.syncfusion.com/uwp/sfcellgrid/formulas#supported-functions).

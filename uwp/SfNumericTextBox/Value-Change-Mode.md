@@ -9,32 +9,47 @@ documentation: ug
 
 # Value Change Mode
 
-The ValueChangeMode property is used to update the Value property when a key is pressed or focus is lost. When the ValueChangeMode is OnKeyFocus, the value will be changed for each key press. When ValueChangeMode is OnLostFocus, the value will be changed only when the control is no longer focused on the text box. ValueChangeMode includes the following options:
+The ValueChangeMode property is used to mention when the validation need to take place, either in key pressed or in focus lost. When ValueChangeMode is set to OnKeyFocus, the validation will be carried out for each key press. When ValueChangeMode is OnLostFocus, the validation occur when the control lost the focus or the focus move to next control. ValueChangeMode includes the following options:
 
 1. OnKeyFocus
 2. OnLostFocus
 
 
 
-The following code samples show how to use the ValueChangeMode property.
+In below code sample, the control with name "Quantity_sfNumericTextBox" for Quantity has explained `OnKeyFocus` mode of `ValueChangedMode` and "EMI_sfNumericTextBox1" explained `OnLostFocus` mode of `ValueChangedMode` The following code samples show how to use the ValueChangeMode property. 
 
 
 
 {% highlight XAML %}
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+   <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+      
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+ 
+        <TextBlock Text="Product Purchase Confirmation" Height="30" FontWeight="Bold"/>
+ 
+        <TextBlock Text="Name" Height="30"/>
+        <TextBox Height="30"  Width="200" HorizontalAlignment="Center"/>
+ 
+        <TextBlock  Text="Address" Height="30"/>
+        <TextBox  Height="30" Width="200" TextWrapping="Wrap" HorizontalAlignment="Center"/>
+ 
+        <TextBlock  Text="PinCode" Height="30"/>
+        <TextBox  Height="30" Width="200" InputScope="Number" MaxLength="6" HorizontalAlignment="Center"/>
+        <TextBlock  Text="Contact No:" Height="30"/>
+        <TextBox  Height="30" Width="200" InputScope="TelephoneNumber" MaxLength="10" HorizontalAlignment="Center"/>
+ 
+        <TextBlock Text="Quantity" Height="30"/>
+        <syncfusion:SfNumericTextBox x:Name="Quantity_sfNumericTextBox" Width="200" Height="30" HorizontalAlignment="Center" ValueChangedMode="OnKeyFocus" ValueChanged="sfNumericTextBox_ValueChanged" />
+ 
+        <TextBlock Text="Enter the amount for EMI" Height="30"/>
+        <syncfusion:SfNumericTextBox Width="200" x:Name="EMI_sfNumericTextBox1" Height="30" HorizontalAlignment="Center" ValueChangedMode="OnLostFocus" ValueChanged="sfNumericTextBox1_ValueChanged"/>
+ 
+        <Button Height="30" Margin="0,6,0,0" HorizontalAlignment="Center" Content="Submit"/>
+ 
+        </StackPanel>
+ </Grid>
 
-            <syncfusion:SfNumericTextBox
-
-                 HorizontalAlignment="Center"
-
-                  VerticalAlignment="Center"
-
-                                    Width="200"
-
-ValueChangeMode="OnKeyFocus"/>
-
-</Grid>
 
 {% endhighlight %}
 
@@ -45,21 +60,42 @@ ValueChangeMode="OnKeyFocus"/>
 
 
 
-{% highlight XAML %}
+{% highlight c# %}
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        private void sfNumericTextBox_ValueChanged(object sender, Syncfusion.UI.Xaml.Controls.Input.ValueChangedEventArgs e)
+        {
+            var sfnumeric = (sender as SfNumericTextBox).Value.ToString();
 
-            <syncfusion:SfNumericTextBox
+            decimal value = Convert.ToDecimal(sfnumeric);
+            if (value > 2)
+            {
+                var dialog = new MessageDialog("You are not able to purchase more than 2 !", "Message");
+                dialog.ShowAsync();
+            }
+            
+        }
 
-                 HorizontalAlignment="Center"
 
-                  VerticalAlignment="Center"
+        private void sfNumericTextBox1_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            var sfnumeric = (sender as SfNumericTextBox).Value.ToString();
 
-                                    Width="200"
+            decimal value = Convert.ToDecimal(sfnumeric);
+            if (value < 1200)
+            {
+                var dialog = new MessageDialog("Sorry, amount cannot be less than 1200.00", "Invalid EMI Amount");
+                dialog.ShowAsync();
+            }
+        }
 
-ValueChangeMode="OnLostFocus"/>
-
-</Grid>
 
 {% endhighlight %}
 
+
+###OnKeyFocus
+
+![](Concepts_images/Concepts_img10.png)
+
+###OnLostFocus
+
+![](Concepts_images/Concepts_img11.png)

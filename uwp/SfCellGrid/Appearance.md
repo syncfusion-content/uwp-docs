@@ -52,6 +52,7 @@ Gets or sets whether the event should be handled or not. </td></tr>
 <td>
 <code>Range</code></td><td>
 Gets or sets the covered range of cell. </td></tr>
+</table>
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +134,6 @@ cellGrid.AllowFloatingCellInEdit = false;
 {% endhighlight  %}
 {% endtabs %}
 
-
 ## Conditional Formatting
 
 Conditional formatting is a process of applying customized styles to any object based on specified conditions. SfCellGrid allows the user to format the cells based on a certain condition.
@@ -192,15 +192,15 @@ cellGrid.Model[5, 5].ConditionalFormats.Add(format);
 {% endhighlight  %}
 {% endtabs %}
 
-### DatesOccuring Format Type
+### DatesOccurring Format Type
 
-To set the conditional format based on DateTime, define the `GridConditionalFormatType` as `DatesOccuring` in the `GridConditionalFormat` constructor and set the condition `TimePeriodType`. 
+To set the conditional format based on DateTime, define the `GridConditionalFormatType` as `DatesOccurring` in the `GridConditionalFormat` constructor and set the condition `TimePeriodType`. 
 Then set other formatting options such as background, foreground, font styles, etc., to the specified cell range.
 
 {% tabs %}
 {% highlight c# %}
 
-var format = new GridConditionalFormat(GridConditionalFormatType.DatesOccuring);
+var format = new GridConditionalFormat(GridConditionalFormatType.DatesOccurring);
 format.Condition.TimePeriodType = GridTimePeriodType.Today;
 cellGrid.Model[5, 5].CellValue = DateTime.Today.Date;
 format.Style.Foreground = new SolidColorBrush(Colors.Blue);;
@@ -245,7 +245,7 @@ cellGrid.Model[5, 5].ConditionalFormats.Add(format);
 ### Formula Format Type
 
 To set the conditional format based on Formula, define the define the `GridConditionalFormatType` as `Formula` in the `GridConditionalFormat` constructor and 
-set condtion, other formatting options such as background, foreground, font styles, etc., to the specified cell range.
+set condition, other formatting options such as background, foreground, font styles, etc., to the specified cell range.
 
 {% tabs %}
 {% highlight c# %}
@@ -263,7 +263,7 @@ N> Users need to invalidate the cells using `InvalidateCell(rowIndex,colIndex)` 
 
 ### ResetConditionalFormats
 
-To set the condtional format information of cell, `ConditionalFormats` property is used and to reset the condtional format information, `ResetConditionalFormats` method is used.
+To set the conditional format information of cell, `ConditionalFormats` property is used and to reset the conditional format information, `ResetConditionalFormats` method is used.
 
 {% tabs %}
 {% highlight c# %}

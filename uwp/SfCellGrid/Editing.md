@@ -102,7 +102,7 @@ cellGrid.Model[5, 6].ReadOnly = true;
 
 ### CurrentCellBeginEdit
 
-This event occurs when the current cell enters edit mode. It receives an argument of type `CurrentCellBeginEditEventArgs` that provides an option of cancelling the edit mode of current cell.
+This event occurs when the current cell enters edit mode. It receives an argument of type `CurrentCellBeginEditEventArgs` that provides an option of canceling the edit mode of current cell.
 
 {% tabs %}
 {% highlight c# %}
