@@ -12,7 +12,7 @@ The SfRichTextBoxAdv supports built-in radial menu to provide rich text formatti
 The following screenshot shows built-in radial menu for SfRichTextBoxAdv control.
 ![](Radial-Menu_images/Radial-Menu_img1.jpeg)
 
-N> In Windows Phone device, the radial menu is not supported.
+N> In Windows Phone device, the built-in radial menu is not supported.
 
 ## Enable/Disable Radial Menu
 
