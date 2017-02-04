@@ -88,7 +88,7 @@ private void Model_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 
 ### Paste
 
-The copied ranges from the sfcellgrid can be pasted using `Paste` method. The keyboard keys <kbd>Ctrl<kbd> + <kbd>V</kbd> combination is also used to perform Paste operation.
+The copied ranges from the SfCellGrid can be pasted using `Paste` method. The keyboard keys <kbd>Ctrl<kbd> + <kbd>V</kbd> combination is also used to perform Paste operation.
 
 {% tabs %}
 {% highlight c# %}
@@ -225,7 +225,7 @@ cellGrid.Model[3, 3].Tooltip = "Custom Tooltip";
 {% endhighlight %}
 {% endtabs %}
 
-N> Customized data template should be defined in SfCellGrid.Resources in Xaml file.
+N> Customized data template should be defined in SfCellGrid.Resources in XAML file.
 
 ### Reset Tooltip
 
@@ -370,7 +370,7 @@ cellGrid.Model[3, 3].Comment = "CustomComment";
 {% endhighlight %}
 {% endtabs %}
 
-N> Customized data template should be defined in SfCellGrid.Resources in Xaml file.
+N> Customized data template should be defined in SfCellGrid.Resources in XAML file.
 
 ### Reset Comment
 
