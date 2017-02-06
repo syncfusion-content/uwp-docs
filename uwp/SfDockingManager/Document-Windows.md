@@ -32,3 +32,103 @@ A Document window can be moved to float state by dragging or double clicking the
 
 Dock windows are allowed to occupy the remaining space when DockFill property is set to true. SfDockingManager does not reserve space for DocumentContainer. So child windows with Document state are hidden in the layout.
 
+## Specify Placement for Document Window
+
+A Document window can be added either at start or end index position in the `DocumentContainer` by setting the `DocumentTabItemPlacement` property in `SfDockingManager`. The `DocumentTabItemPlacement` enumeration values are `Start` and `End`, by default it is `Start`.
+
+* Adding Documents at Start position
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfDockingManager DocumentTabItemPlacement="Start" x:Name="dockingManager">
+
+<ContentControl x:Name="dock1" syncfusion:SfDockingManager.Header="Item 1"
+                               syncfusion:SfDockingManager.DockState="Document">
+
+<TextBlock Text="This is item 1 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 2"
+                syncfusion:SfDockingManager.DockState="Document">
+
+<TextBlock Text="This is item 2 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 3"
+                syncfusion:SfDockingManager.DockState="Document">
+
+<TextBlock Text="This is item 3 content"/>
+
+</ContentControl>
+
+</syncfusion:SfDockingManager>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+dockingManager.DocumentTabItemPlacement = Syncfusion.UI.Xaml.Controls.Layout.DocumentTabItemPlacement.Start;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Document-Windows-images/documentstart.jpeg)
+
+
+* Adding Documents at End position
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfDockingManager DocumentTabItemPlacement="End" x:Name="dockingManager">
+
+<ContentControl x:Name="dock1" syncfusion:SfDockingManager.Header="Item 1"
+                               syncfusion:SfDockingManager.DockState="Document">
+
+<TextBlock Text="This is item 1 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 2"
+                syncfusion:SfDockingManager.DockState="Document">
+
+<TextBlock Text="This is item 2 content"/>
+
+</ContentControl>
+
+<ContentControl syncfusion:SfDockingManager.Header="Item 3"
+                syncfusion:SfDockingManager.DockState="Document">
+
+<TextBlock Text="This is item 3 content"/>
+
+</ContentControl>
+
+</syncfusion:SfDockingManager>
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight C# %}
+
+dockingManager.DocumentTabItemPlacement = Syncfusion.UI.Xaml.Controls.Layout.DocumentTabItemPlacement.End;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Document-Windows-images/documentend.jpeg)

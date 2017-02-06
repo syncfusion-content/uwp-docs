@@ -9,7 +9,7 @@ documentation: ug
 
 # Printing
 
-SfDataGrid provides support to print the data displayed in the DataGrid using `SfDataGrid.Print` method.
+SfDataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassPrintTopic.html) method.
  
 {% tabs %}
 {% highlight c# %}
@@ -19,7 +19,7 @@ dataGrid.Print();
 
 ## Print Settings
 
-SfDataGrid provides various options to customize print preview settings using `SfDataGrid.PrintSettings` property of type `PrintSettings`.
+SfDataGrid provides various options to customize print preview settings using [SfDataGrid.PrintSettings](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassPrintSettingsTopic.html) property of type [PrintSettings](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassTopic.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -37,7 +37,7 @@ Print method opens the System print dialog where user can select the printer and
 
 ### Scaling
 
-SfDataGrid provides support to scale rows or columns or both while printing to fit on one page. Scaling options can be changed by setting `PrintSettings.PrintScaleOption` property.
+SfDataGrid provides support to scale rows or columns or both while printing to fit on one page. Scaling options can be changed by setting [PrintSettings.PrintScaleOption](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintScaleOptionTopic.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -50,7 +50,7 @@ dataGrid.ShowPrintPreview();
 
 ### Column Header on each page
 
-Column headers can be printed on each page by enabling `PrintSettings.AllowRepeatHeaders` property while printing.
+Column headers can be printed on each page by enabling [PrintSettings.AllowRepeatHeaders](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassAllowRepeatHeadersTopic.html) property while printing.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +62,7 @@ dataGrid.Print();
 
 ### Changing Flow Direction while printing
 
-You can change the text direction in print page by using `PrintSettings.PrintFlowDirection` property.
+You can change the text direction in print page by using [PrintSettings.PrintFlowDirection](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintFlowDirectionTopic.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -74,11 +74,11 @@ dataGrid.Print();
 
 ## Page Settings
 
-SfDataGrid provides various options to customize page settings using `SfDataGrid.PrintSettings` property of type `PrintSettings`.
+SfDataGrid provides various options to customize page settings using [SfDataGrid.PrintSettings](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassPrintSettingsTopic.html) property of type [PrintSettings](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassTopic.html).
 
 ### Orientation
 
-SfDataGrid provides support to switch between Portrait (more rows but fewer columns) and Landscape (more columns but fewer rows) orientation while printing. Orientation can be changed by setting `PrintSettings.PrintPageOrientation` Property.
+SfDataGrid provides support to switch between Portrait (more rows but fewer columns) and Landscape (more columns but fewer rows) orientation while printing. Orientation can be changed by setting [PrintSettings.PrintPageOrientation](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageOrientationTopic.html) Property.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,7 +90,7 @@ dataGrid.ShowPrintPreview();
 
 ### Page size
 
-SfDataGrid provides support to change the page size. Page size can be changed by setting `.PrintPageWidth` and `PrintSettings.PrintPageHeight` properties.
+SfDataGrid provides support to change the page size. Page size can be changed by setting [PrintSettings.PrintPageWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageWidthTopic.html) and [PrintSettings.PrintPageHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageHeightTopic.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -103,7 +103,7 @@ dataGrid.Print();
 
 ### Page margin
 
-SfDataGrid provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting `PrintSettings.PrintPageMargin` property. 
+SfDataGrid provides support to change the page margins to adjust content in printed page. Page margin can be changed by setting [PrintSettings.PrintPageMargin](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageMarginTopic.html) property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -115,7 +115,7 @@ dataGrid.Print();
 
 ## Setting Header and Footer
 
-SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting `PrintPageHeaderHeight`, `PrintPageHeaderTemplate`, `PrintPageFooterHeight`, `PrintPageFooterTemplate` properties in `PrintSettings`.
+SfDataGrid provides a way to display additional content at the top (Header) or bottom (Footer) of the page while printing. This can be achieved by setting [PrintPageHeaderHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageHeaderHeightTopic.html), [PrintPageHeaderTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageHeaderTemplateTopic.html), [PrintPageFooterHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageFooterHeightTopic.html), [PrintPageFooterTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageFooterTemplateTopic.html) properties in [PrintSettings](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassTopic.html).
 Steps to add page header while printing,
 
 1. Create DataTemplate in Application.Resources.
@@ -132,7 +132,7 @@ Steps to add page header while printing,
 {% endhighlight %}
 {% endtabs %}
 
-2. Set the above defined DataTemplate to `PrintSettings.PrintPageHeaderTemplate` and assign value for `PrintSettings.PrintPageHeaderHeight` property also.
+2. Set the above defined DataTemplate to [PrintSettings.PrintPageHeaderTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageHeaderTemplateTopic.html) and assign value for [PrintSettings.PrintPageHeaderHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageHeaderHeightTopic.html) property also.
 
 {% tabs %}
 {% highlight c# %}
@@ -143,15 +143,15 @@ dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-3.Now run the application and you can see page header in all the pages. In the same way, you can set `PrintSettings.PrintPageFooterTemplate` also.
+3.Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageFooterTemplateTopic.html) also.
 
 ![](Printing_images/Printing_img2.png)
 
-N> `PrintManagerBase` is the DataContext for `PrintPageControl`, where the header and footer templates are loaded.
+N> [PrintManagerBase](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassTopic.html) is the DataContext for [PrintPageControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintPageControlClassTopic.html), where the header and footer templates are loaded.
 
 ### Printing Current Date time
 
-You can print current Date and Time at each page by setting the  `PrintPageFooterHeight`,  `PrintPageFooterTemplate` properties in `PrintSettings`. 
+You can print current Date and Time at each page by setting the  [PrintPageFooterHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageFooterHeightTopic.html),  [PrintPageFooterTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassPrintPageFooterTemplateTopic.html) properties in [PrintSettings](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassTopic.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -178,7 +178,7 @@ dataGrid.Print();
 ## Printing using UIElement Rendering
 
 When you want to print the SfDataGrid with same appearance settings as in the display (Background and Foreground) or with custom appearance by writing styles.
-You can print SfDataGrid as it displayed in View by setting `PrintSettings.AllowPrintStyles` to true.
+You can print SfDataGrid as it displayed in View by setting [PrintSettings.AllowPrintStyles](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassAllowPrintStylesTopic.html) to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -188,7 +188,7 @@ dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-`GridHeaderCellControl` style customized and the same style will be exported while printing by setting `PrintSettings.AllowPrintStyles` to true.
+[GridHeaderCellControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridHeaderCellControlClassTopic.html) style customized and the same style will be exported while printing by setting [PrintSettings.AllowPrintStyles](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassAllowPrintStylesTopic.html) to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -204,7 +204,7 @@ dataGrid.Print();
 
 ### Applying custom style
 
-Custom styles can be applied while printing by setting `PrintSettings.AllowPrintStyles` to false and writing style for below controls based on your requirement.
+Custom styles can be applied while printing by setting [PrintSettings.AllowPrintStyles](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassAllowPrintStylesTopic.html) to false and writing style for below controls based on your requirement.
 
 <table>
 <tr>
@@ -220,7 +220,7 @@ Custom styles can be applied while printing by setting `PrintSettings.AllowPrint
 Header Cell
 </td>
 <td>
-`PrintHeaderCell`
+[PrintHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintHeaderCellClassTopic.html)
 </td>
 </tr>
 <tr>
@@ -228,7 +228,7 @@ Header Cell
 Normal Cells
 </td>
 <td>
-`PrintGridCell`
+[PrintGridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintGridCellClassTopic.html)
 </td>
 </tr>
 <tr>
@@ -236,7 +236,7 @@ Normal Cells
 Caption summary cells
 </td>
 <td>
-`PrintCaptionSummaryCell`
+[PrintCaptionSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintCaptionSummaryCellClassTopic.html)
 </td>
 </tr>
 <tr>
@@ -244,7 +244,7 @@ Caption summary cells
 Group summary cells
 </td>
 <td>
-`PrintGroupSummaryCell`
+[PrintGroupSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintGroupSummaryCellClassTopic.html)
 </td>
 </tr>
 <tr>
@@ -252,7 +252,7 @@ Group summary cells
 Table summary cells
 </td>
 <td>
-`PrintTableSummaryCell`
+[PrintTableSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintTableSummaryCellClassTopic.html)
 </td>
 </tr>
 <tr>
@@ -260,12 +260,12 @@ Table summary cells
 Unbound row cells
 </td>
 <td>
-`PrintUnboundRowCell`
+[PrintUnboundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintUnboundRowCellClassTopic.html)
 </td>
 </tr>
 </table>
 
-To provide custom appearance for Header cells while printing, `PrintHeaderCell` style is customized.
+To provide custom appearance for Header cells while printing, [PrintHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintHeaderCellClassTopic.html) style is customized.
 
 {% tabs %}
 {% highlight xaml %}
@@ -277,7 +277,7 @@ To provide custom appearance for Header cells while printing, `PrintHeaderCell` 
 {% endhighlight %}
 {% endtabs %}
 
-To print SfDataGrid with custom styles, `PrintSettings.AllowPrintStyles` property to false.
+To print SfDataGrid with custom styles, [PrintSettings.AllowPrintStyles](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintSettingsClassAllowPrintStylesTopic.html) property to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -291,11 +291,11 @@ dataGrid.Print();
 
 ## Printing Customization 
 
-Printing operations can be customized by overriding **`**GridPrintManager` and its available methods.
+Printing operations can be customized by overriding [GridPrintManager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassTopic.html) and its available methods.
 
 ### Setting different Row Height 
 
-SfDataGrid allows you to set different Row height for specific rows while printing. You can achieve this by overriding the `GetRowHeight` method in `PrintManagerBase` class.
+SfDataGrid allows you to set different Row height for specific rows while printing. You can achieve this by overriding the [GetRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetRowHeightTopic.html) method in [PrintManagerBase](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassTopic.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,7 +329,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ### Hiding rows while printing
      
-You can hide specific row by using `GetRowHeight` method in `PrintManagerBase` class and setting height as 0.
+You can hide specific row by using [GetRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetRowHeightTopic.html) method in [PrintManagerBase](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassTopic.html) class and setting height as 0.
 Here, unbound row is excluded while printing. Likewise, you can hide any row based on record and row index.
 
 {% tabs %}
@@ -361,7 +361,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ### Setup columns to be printed
 
-SfDataGrid allows you to the exclude the columns while printing the grid. You can change the column list by overriding the `GetColumnNames` method in `PrintManagerBase` class.
+SfDataGrid allows you to the exclude the columns while printing the grid. You can change the column list by overriding the [GetColumnNames](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetColumnNamesTopic.html) method in [PrintManagerBase](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassTopic.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -395,7 +395,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ### Customize the header text while printing
 
-SfDataGrid allows you to change column header text while printing the grid. You can change the Column header text by overriding the `GetColumnHeaderText` method in `GridPrintManager`.
+SfDataGrid allows you to change column header text while printing the grid. You can change the Column header text by overriding the [GetColumnHeaderText](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetColumnHeaderTextTopic.html) method in [GridPrintManager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassTopic.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -428,7 +428,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ### Styling Rows
 
-You can apply row styles based on custom logic by overriding `GetPrintGridCell` method in `GridPrintManager`.
+You can apply row styles based on custom logic by overriding [GetPrintGridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintGridCellTopic.html) method in [GridPrintManager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassTopic.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -477,7 +477,7 @@ N>
 Header Cell
 </td>
 <td>
-`GetPrintHeaderCell`
+[GetPrintHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintHeaderCellTopic.html)
 </td>
 </tr>
 <tr>
@@ -485,7 +485,7 @@ Header Cell
 Normal Cells
 </td>
 <td>
-`GetPrintGridCell`
+[GetPrintGridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintGridCellTopic.html)
 </td>
 </tr>
 <tr>
@@ -493,7 +493,7 @@ Normal Cells
 Caption summary cells
 </td>
 <td>
-`GetPrintCaptionSummaryCell`
+[GetPrintCaptionSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintCaptionSummaryCellTopic.html)
 </td>
 </tr>
 <tr>
@@ -501,7 +501,7 @@ Caption summary cells
 Group summary cells
 </td>
 <td>
-`GetPrintGroupSummaryCell`
+[GetPrintGroupSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintGroupSummaryCellTopic.html)
 </td>
 </tr>
 <tr>
@@ -509,7 +509,7 @@ Group summary cells
 Table summary cells
 </td>
 <td>
-`GetPrintTableSummaryCell`
+[GetPrintTableSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintTableSummaryCellTopic.html)
 </td>
 </tr>
 <tr>
@@ -517,7 +517,7 @@ Table summary cells
 Unbound row cells
 </td>
 <td>
-`GetPrintUnboundRowCell`
+[GetPrintUnboundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintUnboundRowCellTopic.html)
 </td>
 </tr>
 </table>
@@ -526,7 +526,7 @@ Unbound row cells
 
 ### Setup alternate row style
 
-SfDataGrid allows you to apply alternative row style by overriding `GetPrintGridCell` method in `GridPrintManager`.
+SfDataGrid allows you to apply alternative row style by overriding [GetPrintGridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintGridCellTopic.html) method in `GridPrintManager`.
 
 {% tabs %}
 {% highlight c# %}
@@ -560,7 +560,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ### Styling Columns
 
-You can apply column styles based on custom logic by overriding `GetPrintGridCell` method in `GridPrintManager`.
+You can apply column styles based on custom logic by overriding [GetPrintGridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridPrintManagerClassGetPrintGridCellTopic.html) method in `GridPrintManager`.
 
 {% tabs %}
 {% highlight c# %}
@@ -591,11 +591,11 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ![](Printing_images/Printing_img11.png)
 
-N> `GetColumnWidth`, `GetColumnTextWrapping`, `GetColumnTextAlignment` and `GetColumnPadding` methods are also used for column customization while printing.
+N> [GetColumnWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetColumnWidthTopic.html), [GetColumnTextWrapping](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetColumnTextWrappingTopic.html), [GetColumnTextAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetColumnTextAlignmentTopic.html) and [GetColumnPadding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetColumnPaddingTopic.html) methods are also used for column customization while printing.
 
 ### Printing Selected rows
 
-Selected rows can be printed by overriding `GetSourceListForPrinting` method in `PrintManagerClass` class.
+Selected rows can be printed by overriding [GetSourceListForPrinting](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridPrintManagerBaseClassGetSourceListForPrintingTopic.html) method in `PrintManagerClass` class.
 
 {% tabs %}
 {% highlight c# %}

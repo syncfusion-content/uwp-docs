@@ -9,15 +9,15 @@ documentation: ug
 
 # Selection
 
-SfDataGrid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set `SelectionUnit` as `Row` and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as `Cell` or `Any`. In `SelectionUnit.Any` option you can select the row by clicking on row header.
+SfDataGrid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectionUnitTopic.html) as [Row](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionUnitClassTopic.html) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionUnitClassTopic.html) or `Any`. In [SelectionUnit.Any](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionUnitClassTopic.html) option you can select the row by clicking on row header.
 
 ### Current Cell Navigation
 
-Keyboard navigation through the cells and rows is determined based on the `NavigationMode` property. `NavigationMode.Cell` allows you to navigate between the cells in a row as well as between rows. `NavigationMode.Row` allows you to navigate only between rows. It is not possible to set `NavigationMode.Row` when cell selection is enabled (`SelectionUnit` is Cell or Any). 
+Keyboard navigation through the cells and rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassNavigationModeTopic.html) property. [NavigationMode.Cell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridNavigationModeClassTopic.html) allows you to navigate between the cells in a row as well as between rows. [NavigationMode.Row](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridNavigationModeClassTopic.html) allows you to navigate only between rows. It is not possible to set [NavigationMode.Row](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridNavigationModeClassTopic.html) when cell selection is enabled (`SelectionUnit` is Cell or Any). 
 
 ### Selection Modes
 
-The `SelectionUnit` and `SelectionMode` properties together define the behavior of selection in SfDataGird. If the `SelectionMode` is `Single`, you can able to select single row or cell, and if the SelectionMode is `Extended` or `Multiple`, you can able to select multiple rows or cell, and if you want to disable the selection you need to set SelectionMode as `None`,
+The `SelectionUnit` and `SelectionMode` properties together define the behavior of selection in SfDataGird. If the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSelectionModeTopic.html) is `Single`, you can able to select single row or cell, and if the SelectionMode is `Extended` or `Multiple`, you can able to select multiple rows or cell, and if you want to disable the selection you need to set SelectionMode as `None`,
 
 {% tabs %}
 {% highlight xaml %}
@@ -36,13 +36,13 @@ The `SelectionUnit` and `SelectionMode` properties together define the behavior 
 
 ### Disable selection for rows and columns
 
-You can disable selection and navigation on particular column by setting `GridColumn.AllowFocus` property. You can disable selection on particular row or cell or column by handling `CurrentCellActivating` event. 
+You can disable selection and navigation on particular column by setting [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowFocusTopic.html) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellActivatingTopic.html) event. 
 
 N> It is not possible to select header rows, table summary rows, unbound rows which are above the table summary row when it’s placed in top and the unbound rows which are below table summary rows when it’s placed in bottom of SfDataGrid. 
 
 ## Multiple Row or Cell Selection
 
-The SfDataGrid allows you to select multiple rows or cells by setting `SelectionMode` property as `Extended` or `Multiple`, where you can select multiple rows or cells by dragging the mouse on SfDataGrid and also using the key modifiers.
+The SfDataGrid allows you to select multiple rows or cells by setting [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSelectionModeTopic.html) property as [Extended](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionModeClassTopic.html) or [Multiple](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionModeClassTopic.html), where you can select multiple rows or cells by dragging the mouse on SfDataGrid and also using the key modifiers.
 
 While using `Extended`, you can select multiple rows or cells by pressing the key modifiers <kbd>Ctrl</kbd> and <kbd>Shift</kbd>. 
 
@@ -79,19 +79,19 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 
 ## Get Selected Rows and Cells
 
-The `SelectedItem` property returns the data object of the selected row and the `SelectedIndex` property returns the index of the `SelectedItem` in SfDataGrid. `SelectedItem` denotes the first selected row in multiple selection. 
+The [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSelectedItemTopic.html) property returns the data object of the selected row and the [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSelectedIndexTopic.html) property returns the index of the `SelectedItem` in SfDataGrid. `SelectedItem` denotes the first selected row in multiple selection. 
 
-The `CurrentItem` returns the data object that currently has the focus and the `CurrentColumn` denotes the `GridColumn` that currently has the focus. The `CurrentCellInfo` returns an instance `GridCellInfo` which contains the information about the cell that currently has the focus. 
+The [CurrentItem](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentItemTopic.html) returns the data object that currently has the focus and the [CurrentColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentColumnTopic.html) denotes the [GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnClassTopic.html) that currently has the focus. The [CurrentCellInfo](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellInfoTopic.html) returns an instance [GridCellInfo](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCellInfoClassTopic.html) which contains the information about the cell that currently has the focus. 
 
 ### Row Selection
 
-You can gets all the selected records through `SelectedItems` property and you can also get all selected rows information through `SfDataGrid.SelectionController.SelectedRows` which is the collection of `GridRowInfo`. 
+You can gets all the selected records through [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSelectedItemsTopic.html) property and you can also get all selected rows information through [SfDataGrid.SelectionController.SelectedRows](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridIGridSelectionControllerClassSelectedRowsTopic.html) which is the collection of [GridRowInfo](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridRowInfoClassTopic.html). 
 
 ### Cell Selection
 
-You can get all selected cells information through `SfDataGrid.SelectionController.SelectedCells` property which is the collection of `GridSelectedCellsInfo`.
+You can get all selected cells information through [SfDataGrid.SelectionController.SelectedCells](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridIGridSelectionControllerClassSelectedCellsTopic.html) property which is the collection of `GridSelectedCellsInfo`.
 
-You can get the selected cells as `GridCellInfo` collection by using `GetSelectedCells` method.
+You can get the selected cells as [GridCellInfo](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCellInfoClassTopic.html) collection by using [GetSelectedCells](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassGetSelectedCellsTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -149,7 +149,7 @@ foreach(var order in viewModel.Orders)
 
 ### Process selection using methods
 
-You can select range of rows through `SelectRows` method in row selection.
+You can select range of rows through [SelectRows](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectRowsTopic.html) method in row selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -162,7 +162,7 @@ this.dataGrid.SelectRows(3, 7);
 ![](Selection_images/Selection_img5.png)
 
 
-You can select a specific cell by using the `SelectCell` method in cell selection.
+You can select a specific cell by using the [SelectCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectCellTopic.html) method in cell selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -177,7 +177,7 @@ this.dataGrid.SelectCell(record, column);
 ![](Selection_images/Selection_img6.png)
 
 
-You can select a range of cells through `SelectCells` method in cell selection.
+You can select a range of cells through [SelectCells](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectCellsTopic.html) method in cell selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -231,7 +231,7 @@ public class GridSelectionControllerExt : GridCellSelectionController
 ![](Selection_images/Selection_img7.png)
 
 
-You can select all the rows or cells using `SelectAll` method.
+You can select all the rows or cells using [SelectAll](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectAllTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -243,7 +243,7 @@ this.dataGrid.SelectAll();
 
 ### Process Current Cell
 
-When you set the `CurrentItem` to particular record, the `CurrentCell` will be moved to corresponding record when the `SelectionMode` is `Multiple` or `Extended` and the selection will added to the particular record item when the `SelectionMode` is `Single`.
+When you set the [CurrentItem](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentItemTopic.html) to particular record, the [CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCurrentCellManagerClassCurrentCellTopic.html) will be moved to corresponding record when the `SelectionMode` is `Multiple` or `Extended` and the selection will added to the particular record item when the `SelectionMode` is `Single`.
 
 {% tabs %}
 {% highlight c# %}
@@ -254,7 +254,7 @@ this.dataGrid.CurrentItem = viewModel.Orders.FirstOrDefault(order => order.Count
 {% endhighlight %}
 {% endtabs %}
 
-You can move the `CurrentCell` to a particular rowColumnIndex by using the `MoveCurrentCell` method.
+You can move the `CurrentCell` to a particular rowColumnIndex by using the [MoveCurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassMoveCurrentCellTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -266,7 +266,7 @@ this.dataGrid.MoveCurrentCell(new RowColumnIndex(3,2), false);
 
 ### Clear Selection
 
-You can clear the selection by using the `ClearSelection` method. In Row Selection you can also remove the selection by setting null to `SelectedItem` or clearing the `SelectedItems` property.
+You can clear the selection by using the [ClearSelection](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassClearSelectionsTopic.html) method. In Row Selection you can also remove the selection by setting null to `SelectedItem` or clearing the `SelectedItems` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -276,7 +276,7 @@ this.dataGrid.SelectionController.ClearSelections(true);
 {% endhighlight %}
 {% endtabs %}
 
-You can clear selection on group of cells by using the `UnSelectCells` method in cell selection.
+You can clear selection on group of cells by using the [UnSelectCells](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassUnSelectCellsTopic.html) method in cell selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -290,7 +290,7 @@ this.dataGrid.UnSelectCells(firstRecord, firstColumn, lastRecord, lastColumn);
 {% endhighlight %}
 {% endtabs %}
 
-You can clear the selection on particular cell by using the `UnSelectCell` method in cell selection.
+You can clear the selection on particular cell by using the [UnSelectCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassUnSelectCellTopic.html) method in cell selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -307,14 +307,14 @@ this.dataGrid.UnSelectCell(removeRecord, removeColum);
 
 ## Selection in Master-Details View
 
-Master-Details View provides support to select one or more rows or cells in `DetailsViewDataGrid`. You can’t able to maintain the selection in both ParentDataGrid and `DetailsViewDataGrid`. Selection will be maintained either in ParentDataGrid or in `DetailsViewDataGrid`.
+Master-Details View provides support to select one or more rows or cells in [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDetailsViewDataGridClassTopic.html). You can’t able to maintain the selection in both ParentDataGrid and `DetailsViewDataGrid`. Selection will be maintained either in ParentDataGrid or in `DetailsViewDataGrid`.
 
 ![](Selection_images/Selection_img9.png)
 
 
 ### Getting SelectedDetailsViewDataGrid
 
-You can get the currently selected `DetailsViewDataGrid` by using the `SelectedDetailsViewGrid` property of parent DataGrid.
+You can get the currently selected `DetailsViewDataGrid` by using the [SelectedDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectedDetailsViewGridTopic.html) property of parent DataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -336,7 +336,7 @@ var detailsViewDataGrid = this.dataGrid.SelectedDetailsViewGrid.SelectedDetailsV
 
 ### Getting SelectedItem from DetailsViewDataGrid
 
-You can get the selected record of `DetailsViewDataGrid` by using the `SelectedItem` property.
+You can get the selected record of `DetailsViewDataGrid` by using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSelectedItemTopic.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -347,7 +347,7 @@ var SelectedItem = detailsviewDataGrid.SelectedItem;
 {% endhighlight %}
 {% endtabs %}
 
-You can get the `SelectedItem` while it’s changed using `SelectionChanged` event of `ViewDefinition.DataGrid`. 
+You can get the `SelectedItem` while it’s changed using [SelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectionChangedTopic.html) event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridViewDefinitionClassDataGridTopic.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -425,7 +425,7 @@ You can refer [here](http://help.syncfusion.com/uwp/sfdatagrid/master-details-vi
 
 ### Get CurrentCell of DetailsViewDataGrid
 
-You can get the `CurrentCell` of `DetailsViewDataGrid` by using the `SelectedDetailsViewGrid` property. You can use different events of `ViewDefinition.DataGrid` like `CurrentCellBeginEdit`, `CurrentCellActivated` to get the `CurrentCell`.
+You can get the `CurrentCell` of `DetailsViewDataGrid` by using the [SelectedDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectedDetailsViewGridTopic.html) property. You can use different events of `ViewDefinition.DataGrid` like [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellBeginEditTopic.html), [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellActivatedTopic.html) to get the `CurrentCell`.
 
 {% tabs %}
 {% highlight c# %}
@@ -466,7 +466,7 @@ You can refer [here](http://help.syncfusion.com/uwp/sfdatagrid/master-details-vi
 
 ### Programmatic Selection in DetailsViewDataGrid
 
-You can select data objects while loading DetailsViewDataGrid using `DetailsViewLoading` event.
+You can select data objects while loading DetailsViewDataGrid using [DetailsViewLoading](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassDetailsViewLoadingTopic.html) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -492,7 +492,7 @@ void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEv
 
 ### Getting the parent of DetailsViewDataGrid
 
-You can get the immediate parent of `DetailsViewDataGrid` through `GetParentDataGrid` helper method.
+You can get the immediate parent of `DetailsViewDataGrid` through [GetParentDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridHelpersSelectionHelperClassGetParentDataGridTopic.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -503,7 +503,7 @@ var parentDataGrid = this.dataGrid.SelectedDetailsViewGrid.GetParentDataGrid();
 {% endhighlight %}
 {% endtabs %}
 
-You can get the top level DataGrid for the `DetailsViewDataGrid` through the `GetTopLevelParentDataGrid` helper method.
+You can get the top level DataGrid for the `DetailsViewDataGrid` through the [GetTopLevelParentDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridHelpersSelectionHelperClassGetTopLevelParentDataGridTopic.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -516,7 +516,7 @@ var dataGrid = this.detailsviewdatagrid.GetTopLevelParentDataGrid();
 
 ### Getting the DetailsViewDataGrid based on index
 
-You can get the `DetailsViewDataGrid` based on row index through `GetDetailsViewGrid` helper method.
+You can get the `DetailsViewDataGrid` based on row index through [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridHelpersSelectionHelperClassGetDetailsViewGridTopic.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -526,7 +526,7 @@ var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(2);
 {% endhighlight %}
 {% endtabs %}
 
-You can also get the `DetailsViewDataGrid` based on the record index and relational column name using `GetDetailsViewGrid` method.
+You can also get the `DetailsViewDataGrid` based on the record index and relational column name using [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridHelpersSelectionHelperClassGetDetailsViewGridTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -552,13 +552,23 @@ this.datagrid.ExpandDetailsViewAt(recordindex);
 {% endhighlight %}
 {% endtabs %}
 
-If the expanded `DetailsViewDataGrid` is not in view, then you can scroll using `DetailsViewManager.BringIntoView` method.
+If the expanded `DetailsViewDataGrid` is not in view, then you can scroll using [DetailsViewManager.BringIntoView](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDetailsViewManagerClassBringIntoViewTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
 
 int recordIndex = 20;
+int index = 0;
+int parentRowIndex = 25;
 datagrid.ExpandDetailsViewAt(recordIndex);
+foreach (var def in this.dataGrid.DetailsViewDefinition)
+{
+    if (def.RelationalColumn == "ProductDetails")
+    {
+        index = this.dataGrid.DetailsViewDefinition.IndexOf(def);
+        index = parentRowIndex + index + 1;
+    }
+}
 //Get the Details view based upon the recordIndex and Column name
 SfDataGrid detailsViewDataGrid = datagrid.GetDetailsViewGrid(recordIndex, "OrderDetails");
 //Get the DetailsViewManager using Reflection
@@ -576,19 +586,20 @@ if (detailsViewDataGrid == null)
 ![](Selection_images/Selection_img10.png)
 
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/DETAIL~1781445470.ZIP).
+You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/SELECT~1-1466905114.ZIP).
 
 ### Programmatically select the records in DetailsViewDataGrid which is not in view
 
 #### Scrolling to the DetailsViewDataGrid
 
-You can expand the `DetailsViewDataGrid` by using `ExpandDetailsViewAt` helper method. If the `DetailsViewDataGrid` is already expanded, you can use `ScrollInView` method to bring it into view. You can also use `DetailsViewManager.BringIntoView` method to get the `DetailsViewDataGrid` into view.
+You can expand the `DetailsViewDataGrid` by using `ExpandDetailsViewAt` helper method. If the `DetailsViewDataGrid` is already expanded, you can use [ScrollInView](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassScrollInViewTopic.html) method to bring it into view. You can also use [DetailsViewManager.BringIntoView](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDetailsViewManagerClassBringIntoViewTopic.html) method to get the `DetailsViewDataGrid` into view.
 
 {% tabs %}
 {% highlight c# %}
 
-//  find DetailsViewDataRow index based on relational column
+//Find DetailsViewDataRow index based on relational column
 int index = 0;
+int parentRowIndex = 25;
 foreach (var def in this.dataGrid.DetailsViewDefinition)
 {
     if (def.RelationalColumn == "ProductDetails")
@@ -601,7 +612,7 @@ foreach (var def in this.dataGrid.DetailsViewDefinition)
 var rowcolumnIndex = new RowColumnIndex(index, 1);
 //Get the DetailsViewDataGrid by passing the corresponding row index and relation name
 var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(this.dataGrid.ResolveToRecordIndex(parentRowIndex), "ProductDetails");
-//if the DetailsViewDataGrid is not already expanded, call BringIntoView method
+//If the DetailsViewDataGrid is not in view, you can call BringIntoView method
 if (detailsViewDataGrid == null)
 {
     detailsViewManager.BringIntoView(index);
@@ -609,7 +620,7 @@ if (detailsViewDataGrid == null)
 }
 else
 {
-    // if the DetailsViewDataGrid is already expanded, bring that into view
+    //If the DetailsViewDataGrid is already expanded, bring that into view
     dataGrid.ScrollInView(rowcolumnIndex);
 }
 
@@ -634,9 +645,9 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 The `DetailsViewDataGrid` process the selection operations in selection controller. Below are the built-in selection controllers,
 
-`GridSelectionController` – Process selection operations when selection unit as row.
+[GridSelectionController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionControllerClassTopic.html) – Process selection operations when selection unit as row.
 
-`GridCellSelectionController` – Process selection operations when selection unit as cell or Any.
+[GridCellSelectionController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCellSelectionControllerClassTopic.html) – Process selection operations when selection unit as cell or Any.
 
 You can customize the default row selection behavior by overriding `GridSelectionController` class and set it to `DetailsViewDataGrid.SelectionController`.
 
@@ -667,7 +678,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
 ### Automatic scrolling on Drag Selection
 
-SfDataGrid will scrolls rows and columns automatically when you try to perform the drag selection like in excel. You can enable or disable AutoScrolling by setting the `AutoScroller.AutoScrolling` property.
+SfDataGrid will scrolls rows and columns automatically when you try to perform the drag selection like in excel. You can enable or disable AutoScrolling by setting the [AutoScroller.AutoScrolling](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridAutoScrollerClassAutoScrollingTopic.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -679,7 +690,7 @@ this.dataGrid.AutoScroller.AutoScrolling = AutoScrollOrientation.Both;
 
 ### Scroll to particular RowColumnIndex
 
-You can scroll programmatically to particular cell using `ScrollInView` method by passing row and column index. 
+You can scroll programmatically to particular cell using [ScrollInView](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassScrollInViewTopic.html) method by passing row and column index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -852,7 +863,7 @@ Commits only the changes when the current cell in edit mode and retains the focu
 <kbd>F2</kbd>
 </td>
 <td>
-If the `DataGrid.AllowEditing` property is true and the `GridColumn.AllowEditing` property is true for the current column, the current cell enters into edit mode.
+If the [DataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAllowEditingTopic.html) property is true and the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowEditingTopic.html) property is true for the current column, the current cell enters into edit mode.
 </td>
 </tr>
 <tr>
@@ -884,7 +895,7 @@ N> When the `NavigationMode` is in `Row`, the Right Arrow and Left Arrow only wo
 
 ### Shift Key Combinations
 
-When the `SelectionMode` is set to `Extended`, you can select multiple rows or cells using the navigation keys along with the <kbd>Shift</kbd> key. Before navigation starts, the current cell will be marked as a pressed cell and the selection will be done in all rows or cells between the pressed cell and current cell. 
+When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSelectionModeTopic.html) is set to `Extended`, you can select multiple rows or cells using the navigation keys along with the <kbd>Shift</kbd> key. Before navigation starts, the current cell will be marked as a pressed cell and the selection will be done in all rows or cells between the pressed cell and current cell. 
 
 <table>
 <tr>
@@ -987,13 +998,13 @@ You can customize mouse and keyboard behaviors by overriding the selection contr
 
 ### CurrentCellActivating Event
 
-The `CurrentCellActivating` event will occurs before moving the current cell to particular cell. `CurrentCellActivatingEventArgs` has following members which provides information for `CurrentCellActivatingEvent`.
+The [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellActivatingTopic.html) event will occurs before moving the current cell to particular cell. [CurrentCellActivatingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellActivatingEventArgsClassTopic.html) has following members which provides information for `CurrentCellActivatingEvent`.
 
-`ActivationTrigger` – Returns the reason for moving the current cell.
+[ActivationTrigger](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellActivatingEventArgsClassActivationTriggerTopic.html) – Returns the reason for moving the current cell.
 
-`CurrentRowColumnIndex` – `RowColumnIndex` of the cell where the current cell need to move.
+[CurrentRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellActivatingEventArgsClassCurrentRowColumnIndexTopic.html) – `RowColumnIndex` of the cell where the current cell need to move.
 
-`PreviousRowColumnIndex` – `RowColumnIndex` of the cell from where the current cell was move.
+[PreviousRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellActivatingEventArgsClassPreviousRowColumnIndexTopic.html) – `RowColumnIndex` of the cell from where the current cell was move.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1015,7 +1026,7 @@ void dataGrid_CurrentCellActivating(object sender, CurrentCellActivatingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the current cell moving process within this event by setting `GridCurrentCellActivatingEventArgs.Cancel` as true.
+You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -1038,13 +1049,13 @@ void dataGrid_CurrentCellActivating(object sender, CurrentCellActivatingEventArg
 
 ### CurrentCellActivated Event
 
-The `CurrentCellActivated` event will occur once the current cell is moved to corresponding cell. `CurrentCellActivatedEventArgs` has following members which provides information for `CurrentCellActivated` event.
+The [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellActivatedTopic.html) event will occur once the current cell is moved to corresponding cell. [CurrentCellActivatedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellActivatedEventArgsClassTopic.html) has following members which provides information for `CurrentCellActivated` event.
 
-`ActivationTrigger` – Returns the reason of the current cell movement.
+[ActivationTrigger](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellActivatedEventArgsClassActivationTriggerTopic.html) – Returns the reason of the current cell movement.
 
-`CurrentRowColumnIndex` – `RowColumnIndex` of the cell where the current cell was moved.
+[CurrentRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellActivatedEventArgsClassCurrentRowColumnIndexTopic.html) – `RowColumnIndex` of the cell where the current cell was moved.
 
-`PreviousRowColumnIndex` – `RowColumnIndex` of the cell from where the current cell has been moved.
+[PreviousRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCurrentCellActivatedEventArgsClassPreviousRowColumnIndexTopic.html) – `RowColumnIndex` of the cell from where the current cell has been moved.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1068,11 +1079,11 @@ void dataGrid_CurrentCellActivated(object sender, CurrentCellActivatedEventArgs 
 
 ### SelectionChanging Event
 
-`SelectionChanging` event occurs before processing the selection to particular row or cell. This event will be triggered only to the keyboard and mouse interactions. `GridSelectionChangingEventArgs` has the following members which provides the information for `SelectionChanging` event.  
+[SelectionChanging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectionChangingTopic.html) event occurs before processing the selection to particular row or cell. This event will be triggered only to the keyboard and mouse interactions. [GridSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionChangingEventArgsClassTopic.html) has the following members which provides the information for `SelectionChanging` event.  
 
-`AddedItems` – Collection of `GridRowInfo` or `GridCellInfo` where the selection going to process.
+[AddedItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSortColumnsChangingEventArgsClassAddedItemsTopic.html) – Collection of `GridRowInfo` or `GridCellInfo` where the selection going to process.
 
-`RemovedItems` – Collection of `GridRowInfo` or `GridCellInfo` where the selection going to remove.
+[RemovedItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSortColumnsChangingEventArgsClassRemovedItemsTopic.html) – Collection of `GridRowInfo` or `GridCellInfo` where the selection going to remove.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1094,16 +1105,16 @@ void dataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the selection process within this event by setting `GridSelectionChangingEventArgs.Cancel` property as true.
+You can cancel the selection process within this event by setting [GridSelectionChangingEventArgs.Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property as true.
 
 {% tabs %}
 {% highlight c# %}
 
-void dataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
+private void Datagrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {
     var unBounRow = e.AddedItems.Where(rowInfo => (rowInfo as GridRowInfo).IsUnBoundRow).ToList();
-    if(unBounRow.Count() > 0)
-        unBounRow.All(row => e.AddedItems.Remove(row));
+    if (unBounRow.Count() > 0)
+        e.Cancel = true;
 }
 
 {% endhighlight %}
@@ -1111,11 +1122,11 @@ void dataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 
 ### SelectionChanged Event
 
-The `SelectionChanged` event will occurs once the selection process has been completed for particular row or cell in SfDataGrid. `GridSelectionChangedEventArgs` has following members which provides information for `SelectionChanged` event.
+The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectionChangedTopic.html) event will occurs once the selection process has been completed for particular row or cell in SfDataGrid. [GridSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionChangedEventArgsClassTopic.html) has following members which provides information for `SelectionChanged` event.
 
-`AddedItems` – Collection of `GridRowInfo` or `GridCellInfo` where the selection has been processed.
+[AddedItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionChangedEventArgsClassAddedItemsTopic.html) – Collection of `GridRowInfo` or `GridCellInfo` where the selection has been processed.
 
-`RemovedItems` – Collection of `GridRowInfo` or `GridCellInfo` from where the selection has been removed.
+[RemovedItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionChangedEventArgsClassRemovedItemsTopic.html) – Collection of `GridRowInfo` or `GridCellInfo` from where the selection has been removed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1141,7 +1152,7 @@ void dataGrid_SelectionChanged(object sender, GridSelectionChangedEventArgs e)
 
 ### Changing Selection Background and Foreground
 
-You can change the selection background and foreground using `RowSelectionBrush`, `GroupRowSelectionBrush` and `SelectionForeGroundBrush` properties. The `RowSelectionBrush` is only applied to the rows other than summary rows and the `GroupRowSelectionRows` is applied for caption summary and group summary rows.
+You can change the selection background and foreground using [RowSelectionBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassRowSelectionBrushTopic.html), [GroupRowSelectionBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassGroupRowSelectionBrushTopic.html) and [SelectionForeGroundBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectionForegroundBrushTopic.html) properties. The `RowSelectionBrush` is only applied to the rows other than summary rows and the `GroupRowSelectionRows` is applied for caption summary and group summary rows.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1163,7 +1174,7 @@ You can change the selection background and foreground using `RowSelectionBrush`
 
 ### Changing Current Cell Border Style
 
-You can change the current cell border thickness and border color using `CurrentCellBorderThickness` and `CurrentCellBorderBrush` property.
+You can change the current cell border thickness and border color using [CurrentCellBorderThickness](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassCurrentCellBorderThicknessTopic.html) and [CurrentCellBorderBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassCurrentCellBorderBrushTopic.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1183,13 +1194,13 @@ You can change the current cell border thickness and border color using `Current
 
 You can customize the row selection by editing the control template of corresponding row controls.
 
-Data Row / Add New Row – `VirtualizingCellsControl`
+Data Row / Add New Row – [VirtualizingCellsControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridVirtualizingCellsControlClassTopic.html)
 
-CaptionSummary Row – `CaptionSummaryRowControl`
+CaptionSummary Row – [CaptionSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCaptionSummaryRowControlClassTopic.html)
 
-GroupSummary Row – `GroupSummaryRowControl`
+GroupSummary Row – [GroupSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGroupSummaryRowControlClassTopic.html)
 
-UnBound Row – `UnBoundRowControl` 
+UnBound Row – [UnBoundRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridUnBoundRowControlClassTopic.html)
 
 Filter Row - `FilterRowControl`
 
@@ -1249,9 +1260,9 @@ Filter Row - `FilterRowControl`
 
 You can customize the cell selection by editing the control template of the corresponding cell control.
 
-DataRow / AddNewRow – `GridCell`
+DataRow / AddNewRow – [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCellClassTopic.html)
 
-UnBound Row – `GridUnBoundRowCell`
+UnBound Row – [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnBoundRowCellClassTopic.html)
 
 Filter Row - `GridFilterRowCell`
 
@@ -1335,9 +1346,9 @@ You can bind the selection properties like `SelectedItem`, `SelectedIndex` and `
 
 The SfDataGrid process the selection operations in selection controller. Below are the built-in selection controllers,
 
-`GridSelectionController` – Process selection operations when selection unit as row.
+[GridSelectionController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionControllerClassTopic.html) – Process selection operations when selection unit as row.
 
-`GridCellSelectionController` – process selection operations when selection unit as cell or Any.
+[GridCellSelectionController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCellSelectionControllerClassTopic.html) – process selection operations when selection unit as cell or Any.
 
 You can customize the default row selection behaviors by overriding `GridSelectionController` class and set it to `SfDataGrid.SelectionController`.
 
@@ -1360,7 +1371,7 @@ public class GridSelectionControllerExt:GridSelectionController
 
 By default, while pressing <kbd>Enter</kbd> key the current cell will be moved to next focused cell in the same column. You can change the behavior by overriding the corresponding selection controllers based on `SelectionUnit`.
 
-You can change the <kbd>Enter</kbd> key behavior by overriding `ProcessKeyDown` method in selection controller. In this method you have to create new `KeyEventArgs` which refers the <kbd>Tab</kbd> key and processes the <kbd>Tab</kbd> key action.
+You can change the <kbd>Enter</kbd> key behavior by overriding [ProcessKeyDown](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionControllerClassProcessKeyDownTopic.html) method in selection controller. In this method you have to create new [KeyEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.input.keyeventargs) which refers the <kbd>Tab</kbd> key and processes the <kbd>Tab</kbd> key action.
 
 {% tabs %}
 {% highlight c# %}
@@ -1391,7 +1402,7 @@ public class GridSelectionControllerExt:GridSelectionController
 
 ### Selecting all rows in a group when expanding
 
-You can select all the rows in the group which is expanding through mouse click. To achieve this, you have to set `SelectionMode` as `Extended` or `Multiple` and also need to override `HandlePointerOperations` method in selection controller.
+You can select all the rows in the group which is expanding through mouse click. To achieve this, you have to set `SelectionMode` as `Extended` or `Multiple` and also need to override [HandlePointerOperations](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridBaseSelectionControllerClassHandlePointerOperationsTopic.html) method in selection controller.
 
 {% tabs %}
 {% highlight c# %}
@@ -1455,9 +1466,9 @@ public class GridSelectionControllerExt:GridSelectionController
 
 ### Selecting the column when clicking header
 
-You can select entire column on clicking column header by handling `MouseLeftButtonUp` event of SfDataGrid. You have to set `SelectionUnit` as `Cell` or `Any` and `SelectionMode` as `Extended` or `Multiple` to achieve this behavior. 
+You can select entire column on clicking column header by handling [MouseLeftButtonUp](https://msdn.microsoft.com/en-us/library/system.windows.uielement.mouseleftbuttonup) event of SfDataGrid. You have to set `SelectionUnit` as `Cell` or `Any` and `SelectionMode` as `Extended` or `Multiple` to achieve this behavior. 
 
-By default the sorting operation will be performed while clicking on column header where you can disable this action by setting `AllowSorting` as false or `SortClickAction` as `DoubleClick`.
+By default the sorting operation will be performed while clicking on column header where you can disable this action by setting `AllowSorting` as false or [SortClickAction](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSortClickActionTopic.html) as `DoubleClick`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1511,13 +1522,12 @@ While grouping any column, by default the first `CaptionSummaryRow` will be sele
 {% tabs %}
 {% highlight c# %}
 
-public class GridSelectionControllerExt:GridSelectionController
+public class GridSelectionControllerExt : GridSelectionController
 {
-    public GridSelectionControllerExt(SfDataGrid dataGrid):base(dataGrid)
-    {     
-    }
-
-    protected override void ProcessOnGroupChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs args)
+    public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
+    {
+    }       
+    protected override void ProcessOnGroupChanged(GridGroupingEventArgs args)
     {
         base.ProcessOnGroupChanged(args);
         var removedItems = new List<object>();

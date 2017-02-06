@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Manipulation
 
-SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on `SfDataGrid.LiveDataUpdateMode` property.
+SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassLiveDataUpdateModeTopic.html) property.
  
 {% tabs %}
 {% highlight xaml %}
@@ -261,7 +261,7 @@ Updated
 
 ## Built-in AddNewRow
 
-SfDataGrid provides built-in row (called AddNewRow) to add new records to underlying collection. You can enable the AddNewRow by specifying the position where it should be displayed by setting `SfDataGrid.AddNewRowPosition` property.
+SfDataGrid provides built-in row (called AddNewRow) to add new records to underlying collection. You can enable the AddNewRow by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAddNewRowPositionTopic.html) property.
 
 When you start editing in AddNewRow, the SfDataGrid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
 
@@ -282,7 +282,7 @@ this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 ![](Data-Manipulation_images/Data-Manipulation_img1.png)
 
 
-You can get the row index of AddNewRow where it placed by using the `GridAddNewRowController.GetAddNewRowIndex` method.
+You can get the row index of AddNewRow where it placed by using the [GridAddNewRowController.GetAddNewRowIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridAddNewRowControllerClassGetAddNewRowIndexTopic.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -294,7 +294,7 @@ int addNewRowIndex = addNewRowController.GetAddNewRowIndex();
 {% endhighlight %}
 {% endtabs %}
 
-You can check whether the specified row index is AddNewRow index, by using `SfDataGrid.IsAddNewIndex` helper method.
+You can check whether the specified row index is AddNewRow index, by using [SfDataGrid.IsAddNewIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridIndexResolverClassIsAddNewIndexTopic.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -304,7 +304,7 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 
 ### Initializing default values for AddNewRow
 
-SfDataGrid allows you to set the default values for AddNewRow while initiating, through `AddNewRowInitiatingEventArgs.NewObject` property in `SfDataGrid.AddNewRowInitiating` event.
+SfDataGrid allows you to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridAddNewRowInitiatingEventArgsClassNewObjectTopic.html) property in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAddNewRowInitiatingTopic.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -323,7 +323,7 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 
 ### Working with complex properties in AddNewRow
 
-SfDataGrid control does not initiate values for complex properties defined in the data object. Hence, you need to initiate the default values for the complex properties externally by using the `SfDataGrid.AddNewRowInitiating` event.
+SfDataGrid control does not initiate values for complex properties defined in the data object. Hence, you need to initiate the default values for the complex properties externally by using the [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAddNewRowInitiatingTopic.html) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -353,7 +353,7 @@ private void SfDataGrid_AddNewRowInitiating(object sender, Syncfusion.UI.Xaml.Gr
 
 You can commit or cancel the new record in AddNewRow by pressing the <kbd>Enter</kbd> and <kbd>Esc</kbd> key respectively. 
 
-AddNewRow operations can be performed programmatically by using `GridAddNewRowController.CommitAddNew` and `GridAddNewRowController.CancelAddNew` methods at runtime.
+AddNewRow operations can be performed programmatically by using [GridAddNewRowController.CommitAddNew](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridAddNewRowControllerClassCommitAddNewTopic.html) and [GridAddNewRowController.CancelAddNew](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridAddNewRowControllerClassCancelAddNewTopic.html) methods at runtime.
 
 #### Cancel AddNewRow
 
@@ -412,7 +412,7 @@ if (this.dataGrid.View.IsAddingNew)
 
 You can validate the data in AddNewRow like other data rows through [built-in validation](http://help.syncfusion.com/uwp/sfdatagrid/data-validation#built-in-validations) or [custom validation](http://help.syncfusion.com/uwp/sfdatagrid/data-validation#custom-validation-through-events). 
 
-Here, AddNewRow is validated using `RowValidating` event by setting `RowValidatingEventArgs.IsValid` to `false` which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.
+Here, AddNewRow is validated using [RowValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassRowValidatingTopic.html) event by setting `RowValidatingEventArgs.IsValid` to `false` which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.
   
 {% tabs %}
 {% highlight c# %}
@@ -436,11 +436,11 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 
 ![](Data-Manipulation_images/Data-Manipulation_img3.png)
 
-Similarly, you can validate the cells in AddNewRow by using the `CurrentCellValidating` event.
+Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellValidatingTopic.html) event.
 
 ### Customizing AddNewRow text using default resource file
 
-SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer **Editing default culture resource** section.
+SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](https://help.syncfusion.com/uwp/sfdatagrid/localization#editing-default-culture-resource) section.
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.WPF.resx` file and then customize the value of AddNewRowText.
  
@@ -588,7 +588,7 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 
 ### AddNewRow support in Master-Details View
 
-You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position to `SfDataGrid.AddNewRowPosition` property in `ViewDefinition.DataGrid`.
+You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position to [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAddNewRowPositionTopic.html) property in [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridViewDefinitionClassDataGridTopic.html).
  
 {% tabs %}
 {% highlight xaml %}
@@ -618,7 +618,7 @@ this.FirstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
 ![](Data-Manipulation_images/Data-Manipulation_img7.png)
 
 
-Similarly, you can wire `AddNewRowInitiating` event for `ViewDefinition.DataGrid`.
+Similarly, you can wire [AddNewRowInitiating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAddNewRowInitiatingTopic.html) event for `ViewDefinition.DataGrid`.
 
 {% tabs %}
 {% highlight c# %}
@@ -631,7 +631,7 @@ void FirstLevelNestedGrid_AddNewRowInitiating(object sender, AddNewRowInitiating
 {% endhighlight %}
 {% endtabs %}
 
-For auto-generated relation (when the `AutoGenerateRelations` is set to `true`), the AddNewRow can be enabled by specifying the position to `AddNewRowPosition` property in `AutoGeneratingRelations` event.
+For auto-generated relation (when the `AutoGenerateRelations` is set to `true`), the AddNewRow can be enabled by specifying the position to `AddNewRowPosition` property in [AutoGeneratingRelations](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAutoGeneratingRelationsTopic.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -665,7 +665,7 @@ void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 
 ## Deletion
 
-SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the `SfDataGrid.AllowDeleting` property to `true`.
+SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAllowDeletingTopic.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -695,7 +695,7 @@ You can delete record directly in underlying collection also using Remove () or 
 
 #### RecordDeleting
  
-`RecordDeleting` event occurs when the record is being deleted from SfDataGrid. The `RecordDeletingEventArgs` provides information to `RecordDeleting` event for deleting the record and it contains the following members.
+[RecordDeleting](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassRecordDeletingTopic.html) event occurs when the record is being deleted from SfDataGrid. The [RecordDeletingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridRecordDeletingEventArgsClassTopic.html) provides information to `RecordDeleting` event for deleting the record and it contains the following members.
 
 `Cancel` - Gets or sets a value indicating whether the event should be canceled.
 
@@ -722,7 +722,7 @@ void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 
 #### RecordDeleted
 	
-`RecordDeleted` event occurs after the record is deleted. The `RecordDeletedEventArgs` of   `RecordDeleted` event contains the following members.
+[RecordDeleted](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassRecordDeletedTopic.html) event occurs after the record is deleted. The [RecordDeletedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridRecordDeletedEventArgsClassTopic.html) of   `RecordDeleted` event contains the following members.
 
 `Items` - Gets the records that were removed from the source collection.
 
@@ -730,7 +730,7 @@ void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 
 ### Handling selection after deleting the record from SfDataGrid
 
-You handle the selection after remove the records through `SelectedIndex` property of `RecordDeleted` event.
+You handle the selection after remove the records through [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassSelectedIndexTopic.html) property of [RecordDeleted](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassRecordDeletedTopic.html) event.
  
 {% tabs %}
 {% highlight c# %}
@@ -745,34 +745,33 @@ void dataGrid_RecordDeleted(object sender, RecordDeletedEventArgs args)
 
 ### Deleting cell value in display mode
 
-By default, the cell content can be cleared in edit mode by pressing <kbd>Delete</kbd> or <kbd>Backspace</kbd> key. It is also possible to delete the cell when it’s not in edit mode by handling the <kbd>Delete</kbd> key operation in the `ProcessKeyDown` method of `GridSelectionController` or `GridCellSelectionController`. Based on type of `SelectionUnit`, override right selection controller.
+By default, the cell content can be cleared in edit mode by pressing <kbd>Delete</kbd> or <kbd>Backspace</kbd> key. It is also possible to delete the cell when it’s not in edit mode by handling the <kbd>Delete</kbd> key operation in the [ProcessKeyDown](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionControllerClassProcessKeyDownTopic.html) method of [GridSelectionController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridSelectionControllerClassTopic.html) or [GridCellSelectionController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCellSelectionControllerClassTopic.html). Based on type of [SelectionUnit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectionUnitTopic.html), override right selection controller.
 
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.SelectionController = new GridSelectionControllerExt(dataGrid);
 
-public class GridSelectionControllerExt:GridSelectionController
+public class GridSelectionControllerExt : GridSelectionController
 {
-    public GridSelectionControllerExt(SfDataGrid grid)
-    : base(grid)
+    public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
-    protected override void ProcessKeyDown(KeyRoutedEventArgs args)
+    protected override void ProcessKeyDown(KeyEventArgs args)
     {
-        //Customize Delete key operation 
-        if (args.Key == VirtualKey.Delete)
+        //Customizes the Delete key operation.
+        if (args.Key == Key.Delete)
         {
-            //Get the cell value of current column
-            var record = this.DataGrid.View.Records[this.DataGrid.SelectedIndex].Data;
+            //Gets the cell value of current column.
+            var record = this.DataGrid.CurrentItem;
+            var currentColumnIndex = this.CurrentCellManager.CurrentCell.ColumnIndex;
+            var columnIndex = this.DataGrid.ResolveToGridVisibleColumnIndex(currentColumnIndex);
+            var mappingName = this.DataGrid.Columns[columnIndex].MappingName;
+            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
 
-            var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName);
-
-            //Return the cell value as if the current column's cell is not null
+            //Returns the cell value when the current column's cell is not set to null.
             if (cellVal != null)
             {
-                var columnName = this.DataGrid.Columns[this.CurrentCellManager.CurrentCell.ColumnIndex].MappingName;
-
-                PropertyInfoExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, columnName);
+                PropertyDescriptorExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, mappingName);
             }
         }
         else
@@ -784,7 +783,7 @@ public class GridSelectionControllerExt:GridSelectionController
 
 ### Conditionally deleting records when pressing Delete key
 
-You can cancel the record deletion by using the `RecordDeletingEventArgs.Cancel` of `RecordDeleting` event.
+You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `RecordDeleting` event.
   
 {% tabs %}
 {% highlight c# %}

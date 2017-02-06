@@ -14,7 +14,7 @@ SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using
  
 ## Serialization 
 
-You can serialize the SfDataGrid by using `SfDataGrid.Serialize` method which exports the current DataGrid control properties to an XML file.
+You can serialize the SfDataGrid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSerializeTopic_overloads--.html) method which exports the current DataGrid control properties to an XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -26,7 +26,7 @@ this.dataGrid.Serialize(storageFile);
 
 ### Serialize as Stream
 
-You can store the SfDataGrid settings as [Stream](https://msdn.microsoft.com/en-in/library/windows/apps/system.io.aspx) using `Serialize` method by passing the stream.
+You can store the SfDataGrid settings as [Stream](https://msdn.microsoft.com/en-in/library/windows/apps/system.io.aspx) using [Serialize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSerializeTopic_overloads--.html) method by passing the stream.
 
 {% tabs %}
 {% highlight c# %}
@@ -42,11 +42,11 @@ this.dataGrid.Serialize(stream);
 
 ## Serialization options
  
-SfDataGrid serialization operation can be customized by passing `SerializationOptions` instance as an argument to `Serialize` method.
+SfDataGrid serialization operation can be customized by passing [SerializationOptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassTopic.html) instance as an argument to [Serialize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSerializeTopic_overloads--.html) method.
 
 ### Serialize sorting
 
-By default, SfDataGrid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the `SerializationOptions.SerializeSorting` to `false`.
+By default, SfDataGrid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the [SerializationOptions.SerializeSorting](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeSortingTopic.html) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -63,7 +63,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize grouping
 
-By default, SfDataGrid allows you to serialize the grouping operation. You can disable the grouping serialization by setting the `SerializationOptions.SerializeGrouping` to `false`.
+By default, SfDataGrid allows you to serialize the grouping operation. You can disable the grouping serialization by setting the [SerializationOptions.SerializeGrouping](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeGroupingTopic.html) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize filtering
 
-By default, SfDataGrid allows you to serialize the filtering operation. You can disable the filtering  serialization by setting the `SerializationOptions.SerializeFiltering` to `false`.
+By default, SfDataGrid allows you to serialize the filtering operation. You can disable the filtering  serialization by setting the [SerializationOptions.SerializeFiltering](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeFilteringTopic.html) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +93,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize columns
 
-By default, SfDataGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the `SerializationOptions.SerializeColumns` to `false`.
+By default, SfDataGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the [SerializationOptions.SerializeColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeColumnsTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -107,7 +107,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize summaries 
 
-By default, SfDataGrid allows you to serialize the caption summary, group summary and table summary settings in SfDataGrid. You can disable the summaries serialization by setting `SerializationOptions.SerializeCaptionSummary`, `SerializationOptions.SerializeGroupSummaries`, `SerializationOptions.SerializeTableSummaries` properties to `false`.
+By default, SfDataGrid allows you to serialize the caption summary, group summary and table summary settings in SfDataGrid. You can disable the summaries serialization by setting [SerializationOptions.SerializeCaptionSummary](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeCaptionSummaryTopic.html), [SerializationOptions.SerializeGroupSummaries](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeGroupSummariesTopic.html), [SerializationOptions.SerializeTableSummaries](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeTableSummariesTopic.html) properties to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -125,7 +125,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize stacked headers
 
-By default, SfDataGrid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the `SerializationOptions.SerializeStackedHeaders` to `false`.
+By default, SfDataGrid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the [SerializationOptions.SerializeStackedHeaders](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeStackedHeadersTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +139,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize Details View
 
-By default, SfDataGrid allows you to serialize the DetailsViewDefinition. You can disable the DetailsViewDefinition serialization by setting the `SerializationOptions.SerializeDetailsViewDefinition` to `false`.
+By default, SfDataGrid allows you to serialize the DetailsViewDefinition. You can disable the DetailsViewDefinition serialization by setting the [SerializationOptions.SerializeDetailsViewDefinition](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeDetailsViewDefinitionTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -155,7 +155,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize unbound rows
 
-By default, SfDataGrid allows you to serialize the unbound rows settings. You can disable the unbound rows serialization by setting the `SerializationOptions.SerializeUnBoundRows` to `false`.
+By default, SfDataGrid allows you to serialize the unbound rows settings. You can disable the unbound rows serialization by setting the [SerializationOptions.SerializeUnBoundRows](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationOptionsClassSerializeUnBoundRowsTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -172,7 +172,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ## Deserialization
 
-You can deserialize the SfDataGrid setting by using `SfDataGrid.Deserialize` method which reconstructs the SfDataGrid based on the setting in the stored XML file.
+You can deserialize the SfDataGrid setting by using [SfDataGrid.Deserialize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassDeserializeTopic_overloads--.html) method which reconstructs the SfDataGrid based on the setting in the stored XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,7 +183,7 @@ this.dataGrid.Deserialize(storageFile);
 {% endtabs %}
 
 ### Deserialize from Stream
-You can deserialize the SfDataGrid settings from [Stream](https://msdn.microsoft.com/en-in/library/windows/apps/system.io.aspx) using `Deserialize` method.
+You can deserialize the SfDataGrid settings from [Stream](https://msdn.microsoft.com/en-in/library/windows/apps/system.io.aspx) using [Deserialize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassDeserializeTopic_overloads--.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -199,11 +199,11 @@ this.dataGrid.Deserialize(stream);
 
 ## Deserialization options
  
-Deserialization operation can be customized by passing `DeserializationOptions` instance as an argument to `Deserialize` method.
+Deserialization operation can be customized by passing [DeserializationOptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassTopic.html) instance as an argument to [Deserialize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassDeserializeTopic_overloads--.html) method.
 
 ### Deserialize sorting
 
-By default, SfDataGrid allows you to deserialize the sorting operation. You can disable the sorting deserialization by setting the `DeserializationOptions.DeserializeSorting` to `false`.
+By default, SfDataGrid allows you to deserialize the sorting operation. You can disable the sorting deserialization by setting the [DeserializationOptions.DeserializeSorting](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeSortingTopic.html) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -219,7 +219,7 @@ this.dataGrid.Deserialize(storageFile, options);
 
 ### Deserialize grouping
 
-By default, SfDataGrid allows you to deserialize the grouping operation. You can disable the grouping deserialization by setting the `DeserializationOptions.DeserializeGrouping` to `false`.
+By default, SfDataGrid allows you to deserialize the grouping operation. You can disable the grouping deserialization by setting the [DeserializationOptions.DeserializeGrouping](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeGroupingTopic.html) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -233,7 +233,7 @@ this.dataGrid.Deserialize(storageFile, options);
 
 ### Deserialize filtering
 
-By default, SfDataGrid allows you to deserialize the filtering. you can disable the filtering deserialization by setting `DeserializationOptions.DeserializeFiltering` to `false`.
+By default, SfDataGrid allows you to deserialize the filtering. you can disable the filtering deserialization by setting [DeserializationOptions.DeserializeFiltering](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeFilteringTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -247,7 +247,7 @@ this.dataGrid.Deserialize(storageFile, options);
 
 ### Deserialize columns
 
-By default, SfDataGrid allows you to deserialize the columns manipulation operations. You can disable the columns deserialization by setting the `DeserializationOptions.DeserializeColumns` to `false`.
+By default, SfDataGrid allows you to deserialize the columns manipulation operations. You can disable the columns deserialization by setting the [DeserializationOptions.DeserializeColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeColumnsTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -261,7 +261,7 @@ this.dataGrid.Deserialize(storageFile, options);
 
 ### Deserialize summaries
  
-By default, SfDataGrid allows you to deserialize the group summary, caption summary and table summary settings. You can disable the summaries deserialization by setting `DeserializationOptions.DeserializeCaptionSummary`, `DeserializationOptions.DeserializeGroupSummaries`, `DeserializationOptions.DeserializeTableSummaries` properties to `false`.
+By default, SfDataGrid allows you to deserialize the group summary, caption summary and table summary settings. You can disable the summaries deserialization by setting [DeserializationOptions.DeserializeCaptionSummary](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeCaptionSummaryTopic.html), [DeserializationOptions.DeserializeGroupSummaries](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeGroupSummariesTopic.html), [DeserializationOptions.DeserializeTableSummaries](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeTableSummariesTopic.html) properties to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -279,7 +279,7 @@ this.dataGrid.Deserialize(storageFile, options);
 
 ### Deserialize stacked headers
 
-By default, SfDataGrid allows you to deserialize the stack headers. You can disable the stacked headers deserialization by setting the `DeserializationOptions.DeserializeStackedHeaders` to `false`.
+By default, SfDataGrid allows you to deserialize the stack headers. You can disable the stacked headers deserialization by setting the [DeserializationOptions.DeserializeStackedHeaders](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeStackedHeadersTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -293,7 +293,7 @@ this.dataGrid.Deserialize(storageFile, options);
 
 ### Deserialize Details View
 
-By default, SfDataGrid allows you to deserialize the DetailsViewDefinition. You can disable the DetailsViewDefinition deserialization by setting the `DeserializationOptions.DeserializeDetailsViewDefinition` to `false`.
+By default, SfDataGrid allows you to deserialize the DetailsViewDefinition. You can disable the DetailsViewDefinition deserialization by setting the [DeserializationOptions.DeserializeDetailsViewDefinition](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeDetailsViewDefinitionTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -309,7 +309,7 @@ this.dataGrid.Deserialize(storageFile, options);
 
 ### Deserialize unbound rows
 
-By default, SfDataGrid allows you to deserialize the unbound rows settings. You can disable the unbound rows deserialization by setting the `DeserializationOptions.DeserializeUnBoundRows` to `false`.
+By default, SfDataGrid allows you to deserialize the unbound rows settings. You can disable the unbound rows deserialization by setting the [DeserializationOptions.DeserializeUnBoundRows](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridDeserializationOptionsClassDeserializeUnBoundRowsTopic.html) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -326,7 +326,7 @@ this.dataGrid.Deserialize(storageFile, options);
 
 ## Customizing Serialization and Deserialization Operations
 
-SfDataGrid allows you to customize the serialization and deserialization operations by deriving `SerializationController` class and override the necessary virtual methods.
+SfDataGrid allows you to customize the serialization and deserialization operations by deriving [SerializationController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationControllerClassTopic.html) class and override the necessary virtual methods.
 
 ### Serialize custom column
  
@@ -364,7 +364,7 @@ In the below code snippet, the TimePickerColumn is defined in SfDataGrid.
 
 To serialize the above TimePickerColumn, follow the below steps.
  
-1.Create a class derived from `SerializableGridColumn` and define the custom column properties in `SerializableCustomGridColumn` class.
+1.Create a class derived from [SerializableGridColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializableGridColumnClassTopic.html) and define the custom column properties in `SerializableCustomGridColumn` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -376,7 +376,7 @@ public class SerializableCustomGridColumn:SerializableGridColumn
 {% endhighlight %}
 {% endtabs %}
 
-2.Create a new class named as SerializationControllerExt by overriding `SerializationController` class.
+2.Create a new class named as SerializationControllerExt by overriding [SerializationController](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationControllerClassTopic.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -393,7 +393,7 @@ public class SerializationControllerExt : SerializationController
 {% endhighlight %}
 {% endtabs %}
 
-3.You can get the custom column property settings for serialization by overriding the `GetSerializableGridColumn` virtual method.
+3.You can get the custom column property settings for serialization by overriding the [GetSerializableGridColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationControllerClassGetSerializableGridColumnTopic.html) virtual method.
 
 {% tabs %}
 {% highlight c# %}
@@ -416,7 +416,7 @@ public class SerializationControllerExt : SerializationController
 {% endhighlight %}
 {% endtabs %}
 
-4.Store the custom column property settings during serialization by overriding the `StoreGridColumnProperties` virtual method.
+4.Store the custom column property settings during serialization by overriding the [StoreGridColumnProperties](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationControllerClassStoreGridColumnPropertiesTopic.html) virtual method.
  
 {% tabs %}
 {% highlight c# %}
@@ -434,7 +434,7 @@ public class SerializationControllerExt : SerializationController
 {% endhighlight %}
 {% endtabs %}
 
-5.Add the custom column in to known column types by overriding the `KnownTypes` virtual method.
+5.Add the custom column in to known column types by overriding the [KnownTypes](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationControllerClassKnownTypesTopic.html) virtual method.
 
 {% tabs %}
 {% highlight c# %}
@@ -456,7 +456,7 @@ public class SerializationControllerExt : SerializationController
 {% endhighlight %}
 {% endtabs %}
 
-6.During deserialization, you can get the custom column settings from `SerializableGridColumn` by overriding `GetGridColumn` virtual method.
+6.During deserialization, you can get the custom column settings from [SerializableGridColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializableGridColumnClassTopic.html) by overriding [GetGridColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationControllerClassGetGridColumnTopic.html) virtual method.
  
 {% tabs %}
 {% highlight c# %}
@@ -479,7 +479,7 @@ public class SerializationControllerExt : SerializationController
 {% endhighlight %}
 {% endtabs %}
 
-7.Now, restore the custom column settings from SerializableGridColumn by overriding the `RestoreColumnProperties` virtual method.
+7.Now, restore the custom column settings from SerializableGridColumn by overriding the [RestoreColumnProperties](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationControllerClassRestoreColumnPropertiesTopic.html) virtual method.
 
 {% tabs %}
 {% highlight c# %}
@@ -530,7 +530,7 @@ By default, you cannot serialize the template content in SfDataGrid. This is the
 {% endhighlight %}
 {% endtabs %}
 
-If you want to serialize and deserialize the template content, you have to reconstruct the same template during deserialization in `RestoreColumnProperties` method.
+If you want to serialize and deserialize the template content, you have to reconstruct the same template during deserialization in [RestoreColumnProperties](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSerializationControllerClassRestoreColumnPropertiesTopic.html) method.
  
 {% tabs %}
 {% highlight c# %}

@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Virtualization
 
-SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, `SfDataGrid.View` process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
+SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassViewTopic.html) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
 <table>
 <tr>
@@ -58,7 +58,7 @@ Use to load data in on-demand. You can load data only for current page from serv
 
 ## VirtualizingCollectionView
  
-You can load the large amount of data in less time using `GridVirtualizingCollectionView` which is derived from `VirtualizingCollectionView` to `SfDataGrid.ItemsSource`.
+You can load the large amount of data in less time using [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridVirtualizingCollectionViewClassTopic.html) which is derived from [VirtualizingCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/data/frlrfSyncfusionDataVirtualizingCollectionViewClassTopic.html) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassItemsSourceTopic.html).
  
 In the below code, ViewModel defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
 
@@ -90,20 +90,20 @@ public class ViewModel
 
 ### Limitations
  
-1. Data update using `LiveDataUpdateMode` is not supported.
+1. Data update using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassLiveDataUpdateModeTopic.html) is not supported.
 
 2. Details view is not supported.
 
-3. `AllowFrozenGroupHeaders`is not supported.
+3. [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAllowFrozenGroupHeadersTopic.html) is not supported.
 
 ## Incremental Loading
  
 SfDataGrid supports to load the data incrementally using `ISupportIncrementalLoading` interface.
 
-`ISupportIncrementalLoading` interface has `LoadMoreItemsAsync` method which helps to load the data incrementally. `LoadMoreItemsAsync` called in on-demand while scrolling based on `HasMoreItems` property.
+`ISupportIncrementalLoading` interface has `LoadMoreItemsAsync` method which helps to load the data incrementally. [LoadMoreItemsAsync](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridIncrementalList%601ClassLoadMoreItemsAsyncTopic.html) called in on-demand while scrolling based on [HasMoreItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridIncrementalList%601ClassHasMoreItemsTopic.html) property.
 If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  
 
-SfDataGrid have `IncrementalList` which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
+SfDataGrid have [IncrementalList](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridIncrementalList%601ClassTopic.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
 
 In the below code, `IncrementalList` is initialized by passing Action to its constructor for loading items incrementally.
 
@@ -154,7 +154,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Displaying animation when fetching data from services
 
-You can display animations when fetching data from service for `LoadMoreItemsAsync` method call, using `BackgroundWorker`.
+You can display animations when fetching data from service for [LoadMoreItemsAsync](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridIncrementalList%601ClassLoadMoreItemsAsyncTopic.html) method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx).
  
 In the below code snippet data fetched from service using `BackgroundWorker` and `SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
 
