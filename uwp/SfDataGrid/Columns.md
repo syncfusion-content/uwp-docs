@@ -754,7 +754,7 @@ N> FrozenColumnCount and FooterColumnCount should be lesser than the number of C
 
 ## Freezing Columns 
 
-You can freeze the columns in view at the left and right side like in excel by setting [SfDataGrid.FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassFrozenColumnCountTopic.html) and [SfDataGrid.FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassFooterColumnCountTopic.html) properties.
+You can freeze the columns in view at the left and right side like in excel by setting [SfDataGrid.FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassFrozenColumnCountTopic.html) and [SfDataGrid.FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassFooterColumnCountTopic.html) properties.
  
 {% tabs %}
 {% highlight xaml %}
@@ -1045,7 +1045,7 @@ N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.Colum
 
 You can refresh the `ColumnSizer` at runtime by calling [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassRefreshTopic_overloads--.html) method. 
 
-SfDataGrid support to recalculates the column auto width by calling reset methods of `GridColumnSizer`. [GridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassResetAutoCalculationforAllColumnsTopic.html) method reset widths to all columns. [GridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassResetAutoCalculationTopic.html) method reset the width to particular column.
+SfDataGrid support to recalculates the column auto width by calling reset methods of `GridColumnSizer`. [GridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassResetAutoCalculationforAllColumnsTopic.html) method reset widths to all columns. [GridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassResetAutoCalculationTopic.html) method reset the width to particular column.
 
 N> The `GridColumnSizer.ResetAutoCalculationforAllColumns` or `GridColumnSizer.ResetAutoCalculation` methods applicable for Auto, AutoWithLastColumnFill, AutoLastColumnFill, SizeToCells types.
 
@@ -1117,7 +1117,7 @@ By default, the ColumnSizer calculates column’s width based on fixed `FontSize
 
 #### Changing Sort and Filter Icon width
 
-You can change the filter icon and sort icon widths for column width calculation by setting [GridColumnSizer.SortIconWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassSortIconWidthTopic.html) and [GridColumnSizer.FilterIconWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassFilterIconWidthTopic.html) properties.
+You can change the filter icon and sort icon widths for column width calculation by setting [GridColumnSizer.SortIconWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassSortIconWidthTopic.html) and [GridColumnSizer.FilterIconWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassFilterIconWidthTopic.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -1128,7 +1128,7 @@ dataGrid.GridColumnSizer.FilterIconWidth = 20;
 
 #### Changing Font settings for SfDataGrid
 
-You can change the `font settings` for column width calculation by setting [GridColumnSizer.FontSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassFontSizeTopic.html), [GridColumnSizer.FontFamily](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassFontFamilyTopic.html) and [GridColumnSizer.Margin](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassMarginTopic.html) properties.  These settings will be considered for all columns.
+You can change the `font settings` for column width calculation by setting [GridColumnSizer.FontSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassFontSizeTopic.html), [GridColumnSizer.FontFamily](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassFontFamilyTopic.html) and [GridColumnSizer.Margin](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassMarginTopic.html) properties.  These settings will be considered for all columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -1140,7 +1140,7 @@ this.dataGrid.GridColumnSizer.Margin = new Thickness(9, 3, 1, 3);
 
 #### Changing Font settings for one Column
 
-You can change the `font setting` for one column width calculation using [GridColumnSizer.SetFontFamily](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassSetFontFamilyTopic.html), [GridColumnSizer.SetFontSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassSetFontSizeTopic.html) and [GridColumnSizer.SetMargin](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnSizerClassSetMarginTopic.html) static methods of `GridColumnSizer` to `GridColumn`.
+You can change the `font setting` for one column width calculation using [GridColumnSizer.SetFontFamily](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassSetFontFamilyTopic.html), [GridColumnSizer.SetFontSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassSetFontSizeTopic.html) and [GridColumnSizer.SetMargin](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridColumnSizerBase%601ClassSetMarginTopic.html) static methods of `GridColumnSizer` to `GridColumn`.
  
 {% tabs %}
 {% highlight c# %}

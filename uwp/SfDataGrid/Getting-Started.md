@@ -550,7 +550,7 @@ You can handle the selection operations with the help of [SfDataGrid.SelectionCh
 
 ### Sorting
 
-By default, you can sort columns in a SfDataGrid by clicking the column header. You can configure the sorting by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSortColumnDescriptionsTopic.html) property as below,
+By default, you can sort columns in a SfDataGrid by clicking the column header. You can configure the sorting by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassSortColumnDescriptionsTopic.html) property as below,
 
 {% tabs %}
 {% highlight xaml %}
