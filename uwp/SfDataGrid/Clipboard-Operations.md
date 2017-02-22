@@ -16,7 +16,7 @@ N> Clipboard operations is not supported for the summary rows, add new row and u
 
 ## Copy
 
-Copy operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassGridCopyOptionTopic.html) property.`GridCopyOption` provides the following options,
+Copy operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassGridCopyOptionTopic.html) property.`GridCopyOption` provides the following options,
 
 [None](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridCopyOptionClassTopic.html) – Disables copy in SfDataGrid.
 
@@ -50,7 +50,7 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
 ## Paste
 
-Paste operation works based on [GridPasteOption](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassGridPasteOptionTopic.html) property. `GridPasteOption` provides the following options,
+Paste operation works based on [GridPasteOption](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassGridPasteOptionTopic.html) property. `GridPasteOption` provides the following options,
 
 [None](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridPasteOptionClassTopic.html) – Disable paste in SfDataGrid.
 
@@ -79,7 +79,7 @@ this.dataGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 
 ## Cut
 
-Cut operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassGridCopyOptionTopic.html) property. `GridCopyOption` provides the following options,
+Cut operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassGridCopyOptionTopic.html) property. `GridCopyOption` provides the following options,
 
 [None](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridCopyOptionClassTopic.html) – Disables cut in SfDataGrid.
 
