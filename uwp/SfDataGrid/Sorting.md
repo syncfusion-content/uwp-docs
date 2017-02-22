@@ -113,7 +113,7 @@ this.dataGrid.ShowSortNumbers = true;
 
 ## Programmatic sorting
 
-You can sort the data programmatically by adding or removing the [SortColumnDescription](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSortColumnDescriptionClassTopic.html) in [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSortColumnDescriptionsTopic.html) property.
+You can sort the data programmatically by adding or removing the [SortColumnDescription](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSortColumnDescriptionClassTopic.html) in [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassSortColumnDescriptionsTopic.html) property.
  
 N> [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSelectionChangingTopic.html) and [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSortColumnsChangedTopic.html) events are not raised when the data sorted programmatically through `SfDataGrid.SortColumnDescriptions`.
 
@@ -146,7 +146,7 @@ this.dataGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnNam
 
 ### Removing sort columns
 
-You can unsort the data by removing the corresponding `SortColumnDescription` from the [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSortColumnDescriptionsTopic.html) property.
+You can unsort the data by removing the corresponding `SortColumnDescription` from the [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassSortColumnDescriptionsTopic.html) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -161,7 +161,7 @@ if (sortColumnDescription!=null)
 
 ### Clear sorting
 
-You can clear sorting, by clearing the [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassSortColumnDescriptionsTopic.html).
+You can clear sorting, by clearing the [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassSortColumnDescriptionsTopic.html).
 
 {% tabs %}
 {% highlight c# %}
