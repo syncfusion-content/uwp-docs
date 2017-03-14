@@ -45,7 +45,7 @@ treeGrid.AllowTriStateChecking = true;
 
 ## Recursive Checking
 
-SfTreeGrid provides support for recursive checking where the checked state of parent node and child nodes is changed recursively based on the state of currently changed node. You can enable recursive checking by setting [SfTreeGrid.EnableRecuriveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecuriveCheckingTopic.html) property as `true`.
+SfTreeGrid provides support for recursive checking where the checked state of parent node and child nodes is changed recursively based on the state of currently changed node. You can enable recursive checking by setting [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecursiveCheckingTopic.html) property as `true`.
 
 * A tree node will be checked only if all its child nodes are checked.
 * A tree node will be unchecked if all its child nodes are unchecked. 
@@ -54,19 +54,19 @@ SfTreeGrid provides support for recursive checking where the checked state of pa
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                       EnableRecuriveChecking="True"
+                       EnableRecursiveChecking="True"
                        ChildPropertyName="Children"
                        ItemsSource="{Binding PersonDetails}"
                        ShowCheckBox="True"/>
 {% endhighlight %}
 {% highlight c# %}
-treeGrid.EnableRecuriveChecking = true;
+treeGrid.EnableRecursiveChecking = true;
 {% endhighlight %}
 {% endtabs %}
 
 ![](Node-CheckBox_images/Node-CheckBox_img2.png)
 
-N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAllowTriStateCheckingTopic.html) is `false` if [SfTreeGrid.EnableRecuriveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecuriveCheckingTopic.html) is `true`, CheckBox can be in indeterminate state.
+N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAllowTriStateCheckingTopic.html) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecursiveCheckingTopic.html) is `true`, CheckBox can be in indeterminate state.
 
 ## Saving and loading Node CheckBox state from the property in data object
 You can bind state of node checkbox to the bool property in underlying data object by using [SfTreeGrid.CheckBoxMappingName](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCheckBoxMappingNameTopic.html) property. TreeGrid updates the checked state of checkbox when underlying data object property gets changed and vice versa.
@@ -91,7 +91,7 @@ By default, recursive checking will be applied, whenever node’s `IsChecked` pr
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                       EnableRecuriveChecking="True"
+                       EnableRecursiveChecking="True"
                        ChildPropertyName="Children"
                        RecursiveCheckingMode="OnCheck"
                        ItemsSource="{Binding PersonDetails}"
@@ -366,7 +366,7 @@ treeNode.SetCheckedState(true);
 {% endhighlight %}
 {% endtabs %}
 
-If you want to restrict the `IsChecked` update of the parent and child nodes (when [SfTreeGrid.EnableRecuriveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecuriveCheckingTopic.html) is `true`), you can pass default parameter values as `false` in [SetCheckedState](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeNodeClassSetCheckedStateTopic.html) method.
+If you want to restrict the `IsChecked` update of the parent and child nodes (when [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassEnableRecursiveCheckingTopic.html) is `true`), you can pass default parameter values as `false` in [SetCheckedState](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeNodeClassSetCheckedStateTopic.html) method.
 {% tabs %}
 {% highlight c# %}
 var treeNode = treeGrid.View.Nodes[0];
