@@ -1041,9 +1041,9 @@ Below code, applies `GridLengthUnitType.Star` to equally set width for `SfDataGr
 
 N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.ColumnSizer`.
 
-### Set Remaining width for a column when ColumnSizer as AutoLastColumnFill or AutoWithLastColumnFill 
+### Fill remaining width for any column instead of last column when ColumnSizer is AutoLastColumnFill or AutoWithLastColumnFill 
 
-In SfDataGrid while setting SfDataGrid.ColumnSizer as AutoLastColumnFill or AutoWithLastColumnFill remaining width is applied to last column but you can apply the remaining width to specific column by using [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnSizer.html) property as like below.
+In SfDataGrid while setting SfDataGrid.ColumnSizer as AutoLastColumnFill or AutoWithLastColumnFill remaining width is applied to last column. You can apply the remaining width to specific column by setting [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnSizer.html) property as like below.
 
 {% tabs %}
 {% highlight xaml %}
