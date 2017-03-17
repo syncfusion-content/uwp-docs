@@ -121,7 +121,7 @@ You can let the SfDataGrid to create columns or you can manually define columns 
 
 ### Automatically generating columns
 
-The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAutoGenerateColumnsTopic.html). Default value is `true`. For custom data type you should enable the [AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumnsForCustomType.html) property as `true`. Default value is `false`.
+The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAutoGenerateColumnsTopic.html). Default value is `true`. It is also possible to generate columns for custom type properties in data object by setting [AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumnsForCustomType.html) property as `true`. Default value is `false`.
 
 Columns are generated based on type of property. For example, `GridNumericColumn` is added for `int` type property. 
 
@@ -1064,6 +1064,8 @@ this.datagrid.ColumnSizer = GridLengthUnitType.AutoLastColumnFill;
 this.datagrid.Columns["OrderID"].ColumnSizer = GridLengthUnitType.AutoWithLastColumnFill;
 {% endhighlight %}
 {% endtabs %}
+
+![](Columns_images/Columns_img12.png)
 
 ### Refreshing ColumnSizer at runtime
 
