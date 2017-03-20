@@ -136,6 +136,40 @@ Execute the above code to render the following output.
 
 ![D:/sugapriyadocumentation/images/sfribbon/Getting-Started_img2.png](Getting-Started_images/Getting-Started_img2.jpeg)
 
+## How to capture the click of SfRibbonTab?
+
+SfRibbonTab's click can be identified by using the event named `Tapped` as like below
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfRibbonTab Caption="Sales" Tapped="SfRibbonTab_Tapped">
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+private async void SfRibbonTab_Tapped(object sender, TappedRoutedEventArgs e)
+{
+
+    var dialog = new MessageDialog("SfRibbonTab:" + " "  + (sender as SfRibbonTab).Caption.ToString() + " " + "click has been detected");
+    await dialog.ShowAsync();
+        
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Getting-Started_images/Getting-Started_img7.jpeg)
 
 ## Add Ribbon Bar
 
