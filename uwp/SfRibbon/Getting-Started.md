@@ -153,11 +153,10 @@ SfRibbonTab's click can be identified by using the event named `Tapped` as like 
 
 {% tabs %}
 
-{% tabs %}
-
 {% highlight c# %}
 
 private async void SfRibbonTab_Tapped(object sender, TappedRoutedEventArgs e)
+
 {
 
     var dialog = new MessageDialog("SfRibbonTab:" + " "  + (sender as SfRibbonTab).Caption.ToString() + " " + "click has been detected");
