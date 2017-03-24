@@ -302,6 +302,22 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 {% endhighlight %}
 {% endtabs %}
 
+### Customize the newly added row position
+
+SfDataGrid adds new data item from AddNewRow at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. You can customize the newly added data item position by setting [SfDataGrid.NewItemPlaceHolderPosition](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfDataGridClassNewItemPlaceholderPositionTopic.html).
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfDataGrid x:Name="datagrid"                               
+                       AddNewRowPosition="Top"
+                       NewItemPlaceholderPosition="AtBeginning"                            
+                       ItemsSource="{Binding OrderInfoCollection }">
+{% endhighlight %}
+{% highlight c# %}
+this.datagrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.datagrid.NewItemPlaceholderPosition = NewItemPlaceholderPosition.AtBeginning;
+{% endhighlight %}
+{% endtabs %}
+
 ### Initializing default values for AddNewRow
 
 SfDataGrid allows you to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridAddNewRowInitiatingEventArgsClassNewObjectTopic.html) property in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassAddNewRowInitiatingTopic.html) event.

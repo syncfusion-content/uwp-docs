@@ -121,6 +121,43 @@ this.dataGrid.View.EndInit();
 {% endhighlight %}
 {% endtabs %}
 
+## Display based grouping using GroupMode property
+
+You can group the column in SfDataGrid based on the value being displayed in cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnClassGroupModeTopic.html) as ‘Display’.
+In the below example, OrderID column displays value with one decimal digit in cell. But when you group, groups will be created based on actual value considering all decimal digits of value (Refer right side screen shot). You can group based value displayed in the cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnClassGroupModeTopic.html) as ‘Display’ (Refer left side screen shot for the same data).
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:GridNumericColumn MappingName="OrderID" HeaderText="OrderID" DisplayBinding="{Binding OrderID,Converter={StaticResource converter}}" GroupMode="Display"/>
+{% endhighlight %}
+{% highlight c# %}
+this.datagrid.Columns["OrderID"].GroupMode = DataReflectionMode.Display;
+{% endhighlight %}
+{% endtabs %}
+
+![](Grouping_images/Grouping_img11.png)
+
+### Group caption based on DisplayMember when grouping GridComboBoxColumn and GridMultiColumnDropDownList
+
+In SfDataGrid, you can group the column based on display value and also the same can be displayed  in caption summary by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnClassGroupModeTopic.html) as ‘Display’.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:GridComboBoxColumn ItemsSource="{Binding ComboItemsSource}" MappingName="ShipId" DisplayMemberPath="ShipCity" SelectedValuePath="ShipId" GroupMode="Display"/>
+{% endhighlight %}
+{% highlight c# %}
+this.datagrid.Columns.Add(new GridComboBoxColumn()
+{
+    ItemsSource = viewModel.ComboItemsSource,
+    DisplayMemberPath = "ShipCity",
+    MappingName = "ShipId",
+    SelectedValuePath = "ShipId",
+    GroupMode = DataReflectionMode.Display
+});
+{% endhighlight %}
+{% endtabs %}
+
+![](Grouping_images/Grouping_img12.png)
 
 ## Clearing or Removing Group
 
