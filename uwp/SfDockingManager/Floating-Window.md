@@ -39,10 +39,34 @@ The `CanFloat` attached property helps to enable or disable the floating functio
 
 <layout:SfDockingManager>
 
-<ContentControl layout:SfDockingManager.Header="SolutionExplorer"
+<ContentControl Name="SolutionExplorer" layout:SfDockingManager.Header="SolutionExplorer"
+                layout:SfDockingManager.CanFloat="False"/>
+
+<ContentControl Name="ToolBox" layout:SfDockingManager.Header="ToolBox"
+                layout:SfDockingManager.CanFloat="False"/>
+                
+<ContentControl Name="ErrorList" layout:SfDockingManager.Header="ErrorList"
                 layout:SfDockingManager.CanFloat="False"/>
 
 </layout:SfDockingManager>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Change Dock Window position through codebehind
+
+By using `SetSideInDockMode` property we can set the side and `SetTargetNameInDockedMode` property for changing the target of desired dock window.
+
+{% tabs %}
+
+{% highlight C# %}
+ 
+SfDockingManager.SetSideInDockedMode(ToolBox, Dock.Tabbed);
+ 
+SfDockingManager.SetTargetNameInDockedMode(ToolBox, "SolutionExplorer");
+ 
+SfDockingManager.SetSideInDockedMode(ErrorList, Dock.Top);
 
 {% endhighlight %}
 
