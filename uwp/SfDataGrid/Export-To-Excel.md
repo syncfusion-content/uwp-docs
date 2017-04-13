@@ -505,6 +505,41 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
+## Export to CSV
+
+You can save exported workbook as CSV by using [SaveAsAsync](https://help.syncfusion.com/cr/cref_files/uwp/xlsio/index.html#frlrfSyncfusionXlsIOIWorkbookClassSaveAsAsyncTopic_overloads--.html) method.
+
+{% tabs %}
+{% highlight c# %}
+ExcelEngine excelEngine = null; 
+
+ExcelExportingOptions options = new ExcelExportingOptions();
+
+options.ExcelVersion = ExcelVersion.Excel2013;  
+
+excelEngine = this.dataGrid.ExportToExcel(this.dataGrid.View, options);
+
+var workBook = excelEngine.Excel.Workbooks[0];
+
+var savePicker = new FileSavePicker
+{
+    SuggestedStartLocation = PickerLocationId.Desktop,
+    SuggestedFileName = "Sample"
+};
+
+savePicker.FileTypeChoices.Add("Excel File (.csv)", new List<string>() { ".csv" }); 
+
+var storageFile = await savePicker.PickSaveFileAsync();
+
+await workBook.SaveAsAsync(storageFile, ",");
+
+await Windows.System.Launcher.LaunchFileAsync(storageFile); 
+
+excelEngine.Dispose();
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Row Height and Column Width customization 
 
 After exporting data to excel, you can set different row height and column width for the columns based on your requirement.
