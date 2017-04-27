@@ -197,7 +197,7 @@ SfAccordion provides `HeaderTemplate` property that allows to apply a common dat
 
 <layout:SfAccordion x:Name="accordion">
 
-<navigation:SfAccordion.HeaderTemplate>
+<layout:SfAccordion.HeaderTemplate>
 
 <DataTemplate>
 
@@ -209,7 +209,7 @@ SfAccordion provides `HeaderTemplate` property that allows to apply a common dat
 
 </DataTemplate>
 
-</navigation:SfAccordion.HeaderTemplate>
+</layout:SfAccordion.HeaderTemplate>
 
 {% endhighlight %}
 
@@ -223,9 +223,9 @@ Any object can be set as the content of `SfAccordionItem`. SfAccordionItem.Conte
 
 {% highlight XAML %}
 
-<navigation:SfAccordion x:Name="accordion" SelectedIndex="0"
+<layout:SfAccordion x:Name="accordion" SelectedIndex="0"
                                            AccentBrush="#FF1196CD">
-<navigation:SfAccordion.HeaderTemplate>
+<layout:SfAccordion.HeaderTemplate>
 
 <DataTemplate>
 
@@ -237,9 +237,9 @@ Any object can be set as the content of `SfAccordionItem`. SfAccordionItem.Conte
 
 </DataTemplate>
 
-</navigation:SfAccordion.HeaderTemplate>
+</layout:SfAccordion.HeaderTemplate>
 
-<navigation:SfAccordionItem Header="WinRT">
+<layout:SfAccordionItem Header="WinRT">
 
 <Grid Height="256" Background="#FFF4F3F2" Width="350">
 
@@ -291,9 +291,9 @@ FontSize="12"/>
 
 </Grid>
 
-</navigation:SfAccordionItem>
+</layout:SfAccordionItem>
 
-<navigation:SfAccordionItem Header="Windows Phone">
+<layout:SfAccordionItem Header="Windows Phone">
 
 <Grid Height="256" Background="#FFF4F3F2" Width="350">
 
@@ -349,9 +349,9 @@ FontSize="12"/>
 
 </Grid>
 
-</navigation:SfAccordionItem>
+</layout:SfAccordionItem>
 
-<navigation:SfAccordionItem Header="Silverlight">
+<layout:SfAccordionItem Header="Silverlight">
 
 <Grid Height="256" Background="#FFF4F3F2" Width="350">
 
@@ -405,9 +405,9 @@ FontSize="12"/>
 
 </Grid>
 
-</navigation:SfAccordionItem>
+</layout:SfAccordionItem>
 
-<navigation:SfAccordionItem Header="WPF">
+<layout:SfAccordionItem Header="WPF">
 
 <Grid Height="256" Background="#FFF4F3F2" Width="350">
 
@@ -462,9 +462,9 @@ FontSize="12"/>
 
 </Grid>
 
-</navigation:SfAccordionItem>
+</layout:SfAccordionItem>
 
-<navigation:SfAccordionItem Header="Windows Forms">
+<layout:SfAccordionItem Header="Windows Forms">
 
 <Grid Height="256" Background="#FFF4F3F2" Width="350">
 
@@ -519,9 +519,9 @@ FontSize="12"/>
 
 </Grid>
 
-</navigation:SfAccordionItem>
+</layout:SfAccordionItem>
 
-</navigation:SfAccordion>
+</layout:SfAccordion>
 
 {% endhighlight %}
 
