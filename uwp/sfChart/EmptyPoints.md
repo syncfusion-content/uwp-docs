@@ -49,6 +49,8 @@ This is an enum property having the following values:
 
 The following code examples shows how to display the empty points:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:LineSeries XBindingPath="FruitName" Interior="#BCBCBC" YBindingPath="People" 
@@ -67,6 +69,39 @@ ItemsSource="{Binding Fruits}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    ShowEmptyPoints = true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+
+    ShowLabel = true,
+
+    LabelPosition = AdornmentsLabelPosition.Auto
+
+};
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](EmptyPoints_images/emptypoint_4.png)
 
@@ -74,6 +109,8 @@ ItemsSource="{Binding Fruits}" >
 Since the `EmptyPointValue` as Zero by default, it will draw a line to 0 when we set `ShowEmptyPoint` as True.
 
 The following code example shows the `EmptyPointValue` as Average:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -95,6 +132,42 @@ ItemsSource="{Binding Fruits}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    ShowEmptyPoints = true,
+
+    EmptyPointValue = EmptyPointValue.Average,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+
+    ShowLabel = true,
+
+    LabelPosition = AdornmentsLabelPosition.Auto
+
+};
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](EmptyPoints_images/emptypoint_5.png)
 
 
@@ -112,6 +185,8 @@ This option fills an interior indicating the empty points and this custom brush 
 
 The following code example illustrates the use of `EmptyPointStyle` and `EmptyPointInterior`:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:ColumnSeries  ItemsSource="{Binding EmptyPointDatas}" Interior="#bcbcbc"
@@ -122,6 +197,29 @@ ShowEmptyPoints="True"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().EmptyPointDatas,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Value",
+
+    ShowEmptyPoints = true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](EmptyPoints_images/emptypoint_6.png)
 
 
@@ -130,6 +228,8 @@ N> This is the default value for `EmptyPointStyle`. So when you enable empty poi
 ### Symbol
 
 This option is used to add Symbol for the empty points as in the below code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -153,12 +253,52 @@ ItemsSource="{Binding Fruits}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    ShowEmptyPoints = true,
+
+    EmptyPointValue = EmptyPointValue.Average,
+
+    EmptyPointStyle = EmptyPointStyle.Symbol,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+
+    ShowLabel = true,
+
+    LabelPosition = AdornmentsLabelPosition.Auto
+
+};
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](EmptyPoints_images/emptypoint_7.png)
 
 
 ### Symbol and Interior
 
 This option combines above two options, which draw a symbol with defined `EmptyPointInterior`. The following code example shows the use of this value.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -183,6 +323,46 @@ ItemsSource="{Binding Fruits}" >
 </chart:LineSeries>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    ShowEmptyPoints = true,
+
+    EmptyPointValue = EmptyPointValue.Average,
+
+    EmptyPointStyle = EmptyPointStyle.SymbolAndInterior,
+
+    EmptyPointInterior = new SolidColorBrush(Colors.Red),
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
+{
+
+    ShowLabel = true,
+
+    LabelPosition = AdornmentsLabelPosition.Auto
+
+};
+
+series.AdornmentsInfo = adornmentInfo;
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](EmptyPoints_images/emptypoint_8.png)
 

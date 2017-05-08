@@ -35,29 +35,31 @@ YBindingPath="NoOfUsers">
 
 **Customizing TrackBall**
 
-{%highlight xaml%}
+{% tabs %}
+
+{% highlight xaml %}
 
 <Grid.Resources>
 
-<Style TargetType="Ellipse" x:Key="lineStyle1">
+    <Style TargetType="Ellipse" x:Key="lineStyle1">
 
-<Setter Property="Fill" Value="Blue"></Setter>
+        <Setter Property="Fill" Value="Blue"></Setter>
 
-<Setter Property="Height" Value="12"></Setter>
+        <Setter Property="Height" Value="12"></Setter>
 
-<Setter Property="Width" Value="12"></Setter>
+        <Setter Property="Width" Value="12"></Setter>
 
-</Style>
+    </Style>
 
-<Style TargetType="Line" x:Key="lineStyle2">
+    <Style TargetType="Line" x:Key="lineStyle2">
 
-<Setter Property="Stroke" Value="Blue"/>
+        <Setter Property="Stroke" Value="Blue"/>
 
-<Setter Property="StrokeThickness" Value="2"></Setter>
+        <Setter Property="StrokeThickness" Value="2"></Setter>
 
-<Setter Property="StrokeDashArray" Value="1,2"></Setter>
+        <Setter Property="StrokeDashArray" Value="1,2"></Setter>
 
-</Style>
+    </Style>
 
 </Grid.Resources>
 
@@ -76,5 +78,32 @@ YBindingPath="NoOfUsers">
 </Syncfusion:SfLineSparkline >
 
 {%endhighlight%}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+    ItemsSource = new SparkViewModel().Data,
+
+    YBindingPath = "Day",
+
+    ShowTrackBall = true,
+
+    Interior = new SolidColorBrush(Colors.Gray),
+
+    BorderBrush = new SolidColorBrush(Colors.DarkGray),
+
+    BorderThickness = new Thickness(1, 1, 1, 1),
+
+    LineStyle = this.Resources["lineStyle1"] as Style,
+
+    TrackBallStyle = this.Resources["lineStyle2"] as Style
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Customizing TrackBall](Track-ball_images/Trackball_img2.jpeg)

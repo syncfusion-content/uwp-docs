@@ -24,11 +24,23 @@ The following are the major properties of chart(SfChart):
 
 Header property is used to define the title for the chart. This allows you to add any object (.Net object) as content for chart title. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <syncfusion:SfChart  Header="Usage of Metals" />
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.Header = "Usage of Metals";
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![SfChart with header.](Area_images/Area_img1.jpeg)
 
@@ -36,6 +48,8 @@ Header property is used to define the title for the chart. This allows you to ad
 Header can be positioned left or right side of the chart using `HorizontalHeaderAlignment` property.
 
 Also you can add more customization for the header as below: 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -61,6 +75,49 @@ Opacity="0.5" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+Border border = new Border()
+{
+
+BorderThickness = new Thickness(0.5, 0.5, 0.5, 0.5),
+
+BorderBrush = new SolidColorBrush(Colors.Black),
+
+Margin = new Thickness(10, 10, 10, 10),
+
+CornerRadius = new CornerRadius(5, 5, 5, 5)
+
+};
+
+TextBlock textBlock = new TextBlock()
+{
+
+Text = "Chart Area Header",
+
+Margin = new Thickness(5, 5, 5, 5),
+
+FontSize = 14
+
+};
+
+textBlock.Effect = new DropShadowEffect()
+{
+
+Color = Colors.Black,
+
+Opacity = 0.5
+
+};
+
+border.Child = textBlock;
+
+chart.Header = border;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![Header customization in SfChart](Area_images/Area_img2.jpeg)
 
 
@@ -71,6 +128,8 @@ N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 SfChart provides the properties like `AreaBorderBrush`, `AreaBorderThickness`, `AreaBackground` and `Background` for customizing the plot area.
 
 The following code examples illustrates the usage of these properties:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -88,6 +147,24 @@ AreaBorderThickness="3" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.Header = "Chart Area Header";
+
+chart.AreaBackground = new SolidColorBrush(Colors.Cyan);
+
+chart.Background = new SolidColorBrush(Colors.LightGray);
+
+chart.AreaBorderBrush = new SolidColorBrush(Colors.Gray);
+
+chart.AreaBorderThickness = new Thickness(3, 3, 3, 3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![SfChart with customized plot area](Area_images/Area_img3.jpeg)
 
 
@@ -96,6 +173,8 @@ AreaBorderThickness="3" >
 You can split plot area into multiple rows and columns using `ChartRowDefinition` and `ChartColumnDefinition` like Grid panel’s row and column definition. 
 
 The following code example demonstrates, how you can create multiple panes in the chart area:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -153,9 +232,7 @@ ItemsSource="{Binding SneakersDetail}"
 
 XBindingPath="Brand" 
 
-YBindingPath="ItemsCount" 
-
->
+YBindingPath="ItemsCount" >
 
 <chart:ColumnSeries.YAxis>
 
@@ -173,6 +250,74 @@ chart:SfChart.Row="1" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.RowDefinitions.Add(new ChartRowDefinition());
+
+chart.RowDefinitions.Add(new ChartRowDefinition());
+
+chart.ColumnDefinitions.Add(new ChartColumnDefinition());
+
+chart.ColumnDefinitions.Add(new ChartColumnDefinition());
+
+CategoryAxis xAxis = new CategoryAxis();
+
+ChartBase.SetColumnSpan(xAxis, 2);
+
+chart.PrimaryAxis = xAxis;
+
+NumericalAxis yAxis = new NumericalAxis();
+
+yAxis.PlotOffset = 13;
+
+ChartBase.SetColumnSpan(yAxis, 2);
+
+chart.SecondaryAxis = yAxis;
+
+ColumnSeries columnSeries1 = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "ItemsCount",
+
+    Palette = ChartColorPalette.LightCandy,
+
+};
+
+NumericalAxis axis = new NumericalAxis();
+
+axis.PlotOffset = 10;
+
+SfChart.SetRow(axis, 1);
+
+ColumnSeries columnSeries2 = new ColumnSeries()
+{
+    
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "ItemsCount1",
+
+    Palette = ChartColorPalette.Metro,
+
+    YAxis = axis
+
+};
+
+chart.Series.Add(columnSeries1);
+
+chart.Series.Add(columnSeries2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![SfChart with multiple panes](Area_images/Area_img4.jpeg)
 
 
@@ -181,6 +326,8 @@ chart:SfChart.Row="1" >
 These can be used to specify the number of column or rows up to which the axis can extend. Same like Grid’s RowSpan or ColumnSpan property, it is also an attached property.
 
 You can set the row span in chart like the following code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -198,7 +345,7 @@ You can set the row span in chart like the following code example.
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis   chart:ChartBase.RowSpan="2" 
+<chart:CategoryAxis  chart:ChartBase.RowSpan="2" 
 
 chart:SfChart.Row="0"
 
@@ -244,6 +391,74 @@ YBindingPath="ItemsCount">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.RowDefinitions.Add(new ChartRowDefinition());
+
+chart.RowDefinitions.Add(new ChartRowDefinition());
+
+chart.ColumnDefinitions.Add(new ChartColumnDefinition());
+
+chart.ColumnDefinitions.Add(new ChartColumnDefinition());
+
+CategoryAxis xAxis = new CategoryAxis();
+
+xAxis.TickLinesPosition = AxisElementPosition.Outside;
+
+ChartBase.SetColumnSpan(xAxis, 2);
+
+SfChart.SetRow(xAxis, 0);
+
+chart.PrimaryAxis = xAxis;
+
+NumericalAxis yAxis = new NumericalAxis();
+
+ChartBase.SetColumnSpan(yAxis, 2);
+
+chart.SecondaryAxis = yAxis;
+
+ColumnSeries columnSeries1 = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "ItemsCount1",
+
+};
+
+NumericalAxis axis = new NumericalAxis();
+
+axis.PlotOffset = 10;
+
+ChartBase.SetColumnSpan(axis, 2);
+
+LineSeries lineSeries = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "ItemsCount",
+
+    Interior = new SolidColorBrush(Colors.CadetBlue),
+
+    YAxis = axis
+
+};
+
+chart.Series.Add(columnSeries1);
+
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![SfChart with two y axes, one axis spanned to two rows](Area_images/Area_img5.jpeg)
 
 
@@ -257,6 +472,8 @@ It is a Boolean property and its default value is true so the segment will be pl
 
 
 The following code example and image illustrates the placement of series while setting `SideBySideSeriesPlacement` as false.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -308,6 +525,73 @@ Label="2014" YBindingPath="postion"/>
 
 {% highlight C# %}
 
+SfChart chart = new SfChart();
+
+chart.Header = "Usage of Metals";
+
+chart.AreaBorderBrush = new SolidColorBrush(Colors.DarkGray);
+
+chart.SideBySideSeriesPlacement = false;
+
+chart.AreaBorderThickness = new Thickness(1, 1, 1, 1);
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    Header = "Medals"
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Header = "Usage"
+
+};
+
+chart.Legend = new ChartLegend()
+{
+
+    Visibility = Visibility.Visible
+
+};
+
+ColumnSeries columnSeries1 = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "ItemsCount",
+
+    Label = "2015",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xbc, 0xbc, 0xbc)),
+
+};
+
+ColumnSeries columnSeries2 = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "Position",
+
+    Label = "2014",
+
+    SegmentSpacing = 0.5,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
+
+};
+
+chart.Series.Add(columnSeries1);
+
+chart.Series.Add(columnSeries2);
+
 {% endhighlight %}
 
 ![Column chart type place one over another.](Area_images/Area_img7.jpeg)
@@ -321,37 +605,39 @@ SfChart supports serialization and deserialization for save the settings of the 
 
 This can be done using `Serialize` and `Deserialize` methods as in below code example:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfChart Margin="10" x:Name="chart" Header="Defect Rates">
 
 <chart:SfChart.Annotations>
 
-<chart:RectangleAnnotation X1="0" X2="2" Y1="20" Y2="30" CanDrag="True" CanResize="True"/>
+    <chart:RectangleAnnotation X1="0" X2="2" Y1="20" 
+
+                               Y2="30" CanDrag="True"
+                               
+                               CanResize="True"/>
 
 </chart:SfChart.Annotations>
 
-
-
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis Header="X Axis" />
+    <chart:CategoryAxis Header="X Axis" />
 
 </chart:SfChart.PrimaryAxis>
 
-
-
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis Header="Y Axis" />
+    <chart:NumericalAxis Header="Y Axis" />
 
 </chart:SfChart.SecondaryAxis>
 
+<chart:ColumnSeries ItemsSource="{Binding CategoricalDatas}" 
 
+                    XBindingPath="Category"
 
-<chart:ColumnSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category"
-
-YBindingPath="Value"  >
+                    YBindingPath="Value">
 
 </chart:ColumnSeries>
 
@@ -363,87 +649,89 @@ YBindingPath="Value"  >
 
 Serialized Chart
 
-<SfChart Watermark="{x:Null}" Header="Defect Rates" Name="chart" Margin="10,10,10,10" xmlns="http://schemas.syncfusion.com/wpf" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<SfChart Header="Defect Rates" Name="chart" Margin="10,10,10,10" Width="500" Height="420"
+         xmlns="http://schemas.syncfusion.com/wpf"
+         xmlns:s="clr-namespace:System;assembly=mscorlib"
+         xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
 <SfChart.PrimaryAxis>
 
-<CategoryAxis LabelRotationAngle="0" Header="X Axis" Width="566.466666666667" av:Canvas.Left="49.5333333333333" av:Canvas.Top="183.82">
+    <CategoryAxis Header="X Axis">
 
-<CategoryAxis.StripLines>
+        <CategoryAxis.StripLines>
+             <ChartStripLines />
+        </CategoryAxis.StripLines>
 
-<ChartStripLines />
-
-</CategoryAxis.StripLines>
-
-</CategoryAxis>
+    </CategoryAxis>
 
 </SfChart.PrimaryAxis>
 
 <SfChart.SecondaryAxis>
 
-<NumericalAxis LabelRotationAngle="0" Header="Y Axis" Height="183.82" av:Canvas.Left="0" av:Canvas.Top="0">
+    <NumericalAxis Header="Y Axis">
 
-<NumericalAxis.StripLines>
+        <NumericalAxis.StripLines>
+            <ChartStripLines />
+        </NumericalAxis.StripLines>
 
-<ChartStripLines />
-
-</NumericalAxis.StripLines>
-
-</NumericalAxis>
+    </NumericalAxis>
 
 </SfChart.SecondaryAxis>
 
 <SfChart.Behaviors>
-
-<ChartBehaviorsCollection />
-
+    <ChartBehaviorsCollection />
 </SfChart.Behaviors>
 
 <SfChart.Annotations>
 
-<AnnotationCollection>
+    <AnnotationCollection>
 
-<RectangleAnnotation CanDrag="True" CanResize="True" Y2="30" X2="2" X1="0" Y1="20" />
+        <RectangleAnnotation CanDrag="True" CanResize="True">
+            <RectangleAnnotation.Y2>
+                <s:Int32>30</s:Int32>
+            </RectangleAnnotation.Y2>
+            <RectangleAnnotation.X2>
+                <s:Int32>2</s:Int32>
+            </RectangleAnnotation.X2>
+            <RectangleAnnotation.X1>
+                <s:Int32>0</s:Int32>
+            </RectangleAnnotation.X1>
+            <RectangleAnnotation.Y1>
+                <s:Int32>20</s:Int32>
+            </RectangleAnnotation.Y1>
+        </RectangleAnnotation>
 
-</AnnotationCollection>
+    </AnnotationCollection>
 
 </SfChart.Annotations>
 
 <SfChart.ColumnDefinitions>
-
-<ChartColumnDefinition />
-
+    <ChartColumnDefinitions />
 </SfChart.ColumnDefinitions>
 
 <SfChart.RowDefinitions>
-
-<ChartRowDefinition />
-
+    <ChartRowDefinitions />
 </SfChart.RowDefinitions>
 
-<ColumnSeries YBindingPath="Value" ItemsSource="{av:Binding Path=CategoricalDatas}" XBindingPath="Category" xmlns="http://schemas.syncfusion.com/wpf" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+<ColumnSeries YBindingPath="Value"  
+              ItemsSource="{av:Binding Path=CategoricalDatas}"
+              XBindingPath="Category"
+              Name="series"
+              xmlns="http://schemas.syncfusion.com/wpf"
+              xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
 <ColumnSeries.Trendlines>
-
-<ChartTrendLineCollection />
-
+    <ChartTrendLineCollection />
 </ColumnSeries.Trendlines>
 
 <ColumnSeries.LegendIconTemplate>
-
-<av:DataTemplate>
-
-<av:Rectangle Stretch="Fill" Fill="{av:Binding Path=Interior}" Stroke="{av:Binding Path=Stroke}" StrokeThickness="{av:Binding Path=StrokeThickness}" />
-
-</av:DataTemplate>
-
+    <av:DataTemplate>
+        <av:Rectangle Stretch="Fill"
+        Fill="{av:Binding Path=Interior}"
+        Stroke="{av:Binding Path=Stroke}"
+        StrokeThickness="{av:Binding Path=StrokeThickness}" />
+    </av:DataTemplate>
 </ColumnSeries.LegendIconTemplate>
-
-<ColumnSeries.Clip>
-
-<av:RectangleGeometry Rect="0,0,566.966666666667,184.32" />
-
-</ColumnSeries.Clip>
 
 </ColumnSeries>
 
@@ -451,9 +739,65 @@ Serialized Chart
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.Header = "Defect Rates";
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    Header = "X Axis"
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Header = "Y Axis"
+
+};
+
+RectangleAnnotation annotation = new RectangleAnnotation()
+{
+
+    X1 = 0, X2 = 2,
+
+    Y1 = 20, Y2 = 30,
+
+    CanDrag = true, CanResize = true
+
+};
+
+chart.Annotations.Add(annotation);
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "XValue",
+
+    YBindingPath = "YValue"
+
+};
+
+chart.Series.Add(columnSeries);
+
+string filePath = System.IO.Directory.GetParent(@"../").FullName + "\\chart.xml";
+
+chart.Serialize();
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Clone or copy the chart
 
 More like serialization, you can use `Clone` method for SfChart control state persistence. This method creates a copy of the chart instance.
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -464,6 +808,8 @@ grid.Children.Add(chartCopy as SfChart);
 //Here, 'grid' is an empty container in the application to hold the chart. 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 T> You can use this method for copy and paste like requirement, by cloning chart upon copy and reload while pasting.
 

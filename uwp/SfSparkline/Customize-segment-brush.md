@@ -16,7 +16,9 @@ We can able to customize the first, last, negative, high and low point brushes o
 * [`HighPointBrush`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/index.html#frlrfSyncfusionUIXamlChartsSegmentTemplateSelectorClassHighPointBrushTopic.html) – Gets or sets the brush to paint the high point of the sparkline.
 * [`NegativePointBrush`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSegmentTemplateSelectorClassNegativePointBrushTopic.html) – Gets or sets the brush to paint the negative point of the sparkline.
 
-{%highlight xaml%}
+{% tabs %}
+
+{% highlight xaml %}
 
 <Syncfusion:SfColumnSparkline Interior="#4a4a4a" 
 
@@ -39,6 +41,34 @@ LowPointBrush="Purple" HighPointBrush="Blue"/>
 </Syncfusion:SfColumnSparkline >
 
 {%endhighlight%}
+
+{% highlight c# %}
+
+SfColumnSparkline sparkline = new SfColumnSparkline()
+{
+
+    ItemsSource = new SparkViewModel().UsersList,
+
+    YBindingPath = "NoOfUsers"
+
+};
+
+SegmentTemplateSelector selector = new SegmentTemplateSelector()
+{
+
+    FirstPointBrush = new SolidColorBrush(Colors.Yellow),
+
+    LastPointBrush = new SolidColorBrush(Colors.Yellow),
+
+    HighPointBrush = new SolidColorBrush(Colors.Red)
+
+};
+
+sparkline.SegmentTemplateSelector = selector;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Customizing column sparkline segment](Customize-segment-brush_images/Customizesegmentbrush_img1.jpeg)
 

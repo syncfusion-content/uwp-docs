@@ -22,9 +22,21 @@ The following section helps you to build your application with SfChart.
 
 Add the following namespace in your XAML window.
 
+{% tabs %}
+
 {% highlight xaml %}
+
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
+
 {% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Charts;
+
+{% endhighlight %}
+
+{% endtabs %}
  
 ### Add Sparkline from Toolbox
 
@@ -42,13 +54,21 @@ Now the Syncfusion.SfChart.UWP reference is added to the application references 
 
 You need to initialize the sparkline represented by the following class of Syncfusion.UI.Xaml.Charts.SfChart,
 
-{%highlight xaml%}
+{% tabs %}
+
+{% highlight xaml %}
 
 <chart:SfLineSparkline >  
 
 </chart:SfLineSparkline>
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+
+{% endhighlight %}
  
 ### Create a data source
 
@@ -100,13 +120,15 @@ public class UsersViewModel
 
  }
 
-{%endhighlight%}
+{% endhighlight %}
 
 ### Applying data to Sparkline
  
 We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath .
 
-{%highlight xaml%}
+{% tabs %}
+
+{% highlight xaml %}
 
 <Grid>
 
@@ -123,7 +145,26 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
        
 </Grid>
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+  ItemsSource = new SparkViewModel().UsersList,
+
+  YBindingPath = "NoOfUsers",
+
+  Interior = new SolidColorBrush(Color.FromRgb(0x4a,0x4a,0x4a)),
+
+  BorderThickness = new Thickness(1,1,1,1)
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Simple SfLineSparkline](Getting-started_images/GettingStarted_img4.jpeg)
 
