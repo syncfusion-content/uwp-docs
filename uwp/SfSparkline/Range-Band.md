@@ -15,6 +15,8 @@ Range band feature is used to highlight the particular mentioned range along Y a
 * [`BandRangeEnd`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSparklineBaseClassBandRangeEndTopic.html) – Gets or sets the maximum range band value in Y axis.
 * [`RangeBandBrush`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSparklineBaseClassRangeBandBrushTopic.html) – Gets or sets the brush for range band.
 
+{% tabs %}
+
 {%highlight xaml%}
 
 <Syncfusion:SfLineSparkline
@@ -32,5 +34,26 @@ YBindingPath="NoOfUsers">
 </Syncfusion:SfLineSparkline >
 
 {%endhighlight%}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+	ItemsSource = new SparkViewModel().UsersList,
+
+	YBindingPath = "NoOfUsers",
+
+	BandRangeStart = 2000,
+
+	BandRangeEnd = -1000,
+
+	RangeBandBrush = new SolidColorBrush(Colors.Green)
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![RangeBand](Range-Band_images/RangeBand_img1.jpeg)

@@ -50,15 +50,51 @@ Gets or sets the TimeSpan value that represents the animation speed for the char
 
 The following example shows the Animation feature for chart series.
 
-{% highlight xml %}
+{% tabs %}
 
+{% highlight xaml %}
 
 
 <syncfusion:SfChart>
 
-            <syncfusion:ColumnSeries EnableAnimation="True" AnimationDuration="00:00:02" Palette="Metro" XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
+    <syncfusion:ColumnSeries EnableAnimation="True" 
 
-        </syncfusion:SfChart>
+                             AnimationDuration="00:00:02" 
+
+                             Palette="Metro" 
+
+                             XBindingPath="Category" 
+
+                             YBindingPath="Count"
+
+                             ItemsSource="{Binding Data}"/>
+
+ </syncfusion:SfChart>
+
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries columnSeries = new ColumnSeries()
+{
+
+        ItemsSource = new ViewModel().Data,
+
+        XBindingPath = "Category",
+
+        YBindingPath = "Count",
+
+        Palette = ChartColorPalette.Metro,
+
+        EnableAnimation = true,
+
+        AnimationDuration = new TimeSpan(00, 00, 02)
+
+};
+
+chart.Series.Add(columnSeries);
+
+{% endhighlight %}
+
+{% endtabs %}

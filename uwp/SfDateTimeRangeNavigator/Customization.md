@@ -14,42 +14,76 @@ Higher level bar style can be customized using the following properties.
 
 * [`HigherBarGridLineStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassHigherBarGridLineStyleTopic.html#)- Gets or sets the style for upper bar gridlines.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.HigherBarGridLineStyle>
+<Grid.Resources>
 
-<Style TargetType="Line">
+    <Style TargetType="Line" x:Key="lineStyle">
 
-<Setter Property="Stroke" Value="Red"></Setter>
+        <Setter Property="Stroke" Value="Red"></Setter>
 
-<Setter Property="StrokeThickness" Value="2"></Setter>
+        <Setter Property="StrokeThickness" Value="2"></Setter>
 
-</Style>
+    </Style>
 
-</chart:SfDateTimeRangeNavigator.HigherBarGridLineStyle>
+</Grid.Resources>
+
+<syncfusion:SfDateTimeRangeNavigator HigherBarGridLineStyle="{StaticResource lineStyle}"/>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    HigherBarGridLineStyle = grid.Resources["barStyle"] as Style
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Higher LevelBar Tick Customization](Customization_images/Customization_img1.jpeg)
 
 
 * [`HigherBarTickLineStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassHigherBarTickLineStyleTopic.html#)- Gets or sets the style for ticklines inside the upper bar.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.HigherBarTickLineStyle>
+<Grid.Resources>
 
-<Style TargetType="Line">
+    <Style TargetType="Line" x:Key="lineStyle">
 
-<Setter Property="Stroke" Value="Red"></Setter>
+        <Setter Property="Stroke" Value="Red"></Setter>
 
-<Setter Property="StrokeThickness" Value="2"></Setter>
+        <Setter Property="StrokeThickness" Value="2"></Setter>
 
-</Style>
+    </Style>
 
-</chart:SfDateTimeRangeNavigator.HigherBarTickLineStyle>
+</Grid.Resources>
+
+<syncfusion:SfDateTimeRangeNavigator HigherBarGridLineStyle="{StaticResource lineStyle}"/>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    HigherBarTickLineStyle = grid.Resources["barTickStyle"] as Style
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![HigherBarTickLineStyle](Customization_images/Customization_img2.jpeg)
 
@@ -62,49 +96,83 @@ Higher level bar style can be customized using the following properties.
 * [`LabelHorizontalAlignment`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~LabelHorizontalAlignment.html#)- An attached property of LabelBarStyle, used to align the labels in level bar.
 * [`Background`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsLabelBarStyleClassBackgroundTopic.html#) – Gets or sets the Background the label bar. 
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
+<Grid.Resources>
 
-<chart:LabelBarStyle Background="Green" Position="Outside" 
+    <Style TargetType="TextBlock" x:Key="labelStyle1">
 
-SelectedLabelBrush="White" 
+        <Setter Property="Foreground" Value="White"></Setter>
 
-LabelHorizontalAlignment="Center">
+        <Setter Property="FontStyle" Value="Normal"  ></Setter>
 
-<chart:LabelBarStyle.SelectedLabelStyle>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
 
-<Style TargetType="TextBlock">
+    </Style>
 
-<Setter Property="Foreground" Value="White"></Setter>
+    <Style TargetType="TextBlock" x:Key="labelStyle2">
 
-<Setter Property="FontStyle" Value="Normal"  ></Setter>  
+        <Setter Property="Foreground" Value="Cyan"></Setter>
 
-<Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="FontStyle" Value="Italic"  ></Setter>
 
-</Style>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
 
-</chart:LabelBarStyle.SelectedLabelStyle>
+    </Style>
 
-</chart:LabelBarStyle>
+</Grid.Resources>
 
-</chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
+<chart:SfDateTimeRangeNavigator HigherLabelStyle="{StaticResource labelStyle2}">
 
-<chart:SfDateTimeRangeNavigator.HigherLabelStyle>
+    <chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
-<Style TargetType="TextBlock">
+        <chart:LabelBarStyle Background="Green" Position="Outside"
 
-<Setter Property="Foreground" Value="Cyan"></Setter>
+                             SelectedLabelBrush="White"
 
-<Setter Property="FontStyle" Value="Italic"  ></Setter>
+                             LabelHorizontalAlignment="Center"
 
-<Setter Property="FontWeight" Value="Bold"></Setter>
+                            SelectedLabelStyle="{StaticResource labelStyle1}">
 
-</Style>
+        </chart:LabelBarStyle>
 
-</chart:SfDateTimeRangeNavigator.HigherLabelStyle>
+    </chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
+
+</chart:SfDateTimeRangeNavigator>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+LabelBarStyle barStyle = new LabelBarStyle()
+{
+
+    LabelHorizontalAlignment = HorizontalAlignment.Left,
+
+    Background = new SolidColorBrush(Colors.Green),
+
+    Position = BarPosition.Outside,
+
+    SelectedLabelBrush = new SolidColorBrush(Colors.White),
+
+    SelectedLabelStyle = grid.Resources["labelStyle1"] as Style
+
+};
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    HigherLabelStyle = labelStyle2,
+
+    HigherLevelBarStyle = labelStyle1
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following output is displayed as the result of above code.
 
@@ -117,42 +185,78 @@ Lower level bar style can be customized using the following properties.
 
 * [`LowerBarGridLineStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassLowerBarGridLineStyleTopic.html#)- Gets or sets the style for lower bar gridlines.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfDateTimeRangeNavigator.LowerBarGridLineStyle>
 
-<Style TargetType="Line">
+ <Grid.Resources>
 
-<Setter Property="Stroke" Value="Red"></Setter>
+    <Style TargetType="Line" x:Key="lowerBarStyle">
 
-<Setter Property="StrokeThickness" Value="2"></Setter>
+        <Setter Property="Stroke" Value="Red"></Setter>
 
-</Style> 
+        <Setter Property="StrokeThickness" Value="2"></Setter>
 
-</chart:SfDateTimeRangeNavigator.LowerBarGridLineStyle>
+    </Style>
+
+</Grid.Resources>
+
+<chart:SfDateTimeRangeNavigator LowerBarGridLineStyle="{StaticResource lowerBarStyle}"/>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    LowerBarGridLineStyle = grid.Resources["lowerBarStyle"] as Style
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![LowerBarGridLineStyle](Customization_images/Customization_img4.jpeg)
 
 
 * [`LowerBarTickLineStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassLowerBarTickLineStyleTopic.html#)- Gets or sets the style for ticklines in lower bar.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.LowerBarTickLineStyle>
+ <Grid.Resources>
 
-<Style TargetType="Line">
+    <Style TargetType="Line" x:Key="lowerBarStyle">
 
-<Setter Property="Stroke" Value="Red"></Setter>
+        <Setter Property="Stroke" Value="Red"></Setter>
 
-<Setter Property="StrokeThickness" Value="2"></Setter>
+        <Setter Property="StrokeThickness" Value="2"></Setter>
 
-</Style>
+    </Style>
 
-</chart:SfDateTimeRangeNavigator.LowerBarTickLineStyle>
+</Grid.Resources>
+
+<chart:SfDateTimeRangeNavigator LowerBarTickLineStyle="{StaticResource lowerBarStyle}"/>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    LowerBarTickLineStyle = grid.Resources["lowerBarStyle"] as Style
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![LowerBarTickLineStyle](Customization_images/Customization_img5.jpeg)
 
@@ -160,19 +264,42 @@ Lower level bar style can be customized using the following properties.
 * [`Minimum`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassMinimumTopic.html#)- Gets or sets the Minimum Starting Range of the SfDateTimeRangeNavigator.
 * [`Maximum`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassMaximumTopic.html#)- Gets or sets the Maximum Ending Range of the SfDateTimeRangeNavigator.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" Width="700" 
 
-Height="179"   
+                                Height="179"   
 
-Minimum="February,2015"
+                                Minimum="February,2015"
 
-Maximum="March,2015"                                  
+                                Maximum="March,2015"                                  
 
-XBindingPath="Date" >  </chart:SfDateTimeRangeNavigator>                 
+                                XBindingPath="Date"> 
+
+ </chart:SfDateTimeRangeNavigator>                 
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    ViewRangeStart = new DateTime(2015,02,01),
+
+    ViewRangeEnd = new DateTime(2015, 03, 01)
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Customization_images/Customization_img6.jpeg)
 
@@ -180,49 +307,82 @@ XBindingPath="Date" >  </chart:SfDateTimeRangeNavigator>
 * [`LowerLevelBarStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassLowerLevelBarStyleTopic.html#)- Gets or sets the styles for the lower label bar of SfDateTimeRangeNavigator.
 * [`LowerLabelStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassLowerLabelStyleTopic.html#) – Gets or sets the lower label style.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.LowerLevelBarStyle>
+<Grid.Resources>
 
-<chart:LabelBarStyle Background="Green" Position="Outside"
+    <Style TargetType="TextBlock" x:Key="labelStyle1">
 
-SelectedLabelBrush="White" 
+        <Setter Property="Foreground" Value="White"></Setter>
 
-LabelHorizontalAlignment="Center">
+        <Setter Property="FontStyle" Value="Normal"  ></Setter>
 
-<chart:LabelBarStyle.SelectedLabelStyle>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
 
-<Style TargetType="TextBlock">
+    </Style>
 
-<Setter Property="Foreground" Value="White"></Setter>
+    <Style TargetType="TextBlock" x:Key="labelStyle1">
 
-<Setter Property="FontStyle" Value="Normal"  ></Setter>  
+        <Setter Property="Foreground" Value="Cyan"></Setter>
 
-<Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="FontStyle" Value="Italic" ></Setter>
 
-</Style>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
 
-</chart:LabelBarStyle.SelectedLabelStyle>
+    </Style>
 
-</chart:LabelBarStyle>
+</Grid.Resources>
 
-</chart:SfDateTimeRangeNavigator.LowerLevelBarStyle>
+<chart:SfDateTimeRangeNavigator LowerLabelStyle="{StaticResource labelStyle2}">
 
-<chart:SfDateTimeRangeNavigator.LowerLabelStyle>
+    <chart:SfDateTimeRangeNavigator.LowerLevelBarStyle>
 
-<Style TargetType="TextBlock">
+        <chart:LabelBarStyle Background="Green" Position="Outside"
 
-<Setter Property="Foreground" Value="Cyan"></Setter>
+                             SelectedLabelBrush="White"
 
-<Setter Property="FontStyle" Value="Italic" ></Setter>
+                             LabelHorizontalAlignment="Center"
 
-<Setter Property="FontWeight" Value="Bold"></Setter>
+                             SelectedLabelStyle="{StaticResource labelStyle1}"/>
 
-</Style>
+    </chart:SfDateTimeRangeNavigator.LowerLevelBarStyle>
 
-</chart:SfDateTimeRangeNavigator.LowerLabelStyle>
+</chart:SfDateTimeRangeNavigator>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+LabelBarStyle barStyle = new LabelBarStyle()
+{
+
+    LabelHorizontalAlignment = HorizontalAlignment.Center,
+
+    Background = new SolidColorBrush(Colors.Green),
+
+    Position = BarPosition.Outside,
+
+    SelectedLabelBrush = new SolidColorBrush(Colors.White),
+
+    SelectedLabelStyle = grid.Resources["labelStyle1"] as Style
+
+};
+
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    LowerLevelBarStyle = barStyle,
+
+    LowerLabelStyle = grid.Resources["labelStyle2"] as Style
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![LowerLabelStyle](Customization_images/Customization_img7.jpeg)
 
@@ -235,130 +395,198 @@ SfDateTimeRangeNavigator provides the following properties to customize the left
 * [`RightThumbStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassRightThumbStyleTopic.html#)- Gets or sets the right thumb style.
 * [`SymbolTemplate`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsThumbStyleClassSymbolTemplateTopic.html#)- Gets or sets the data template for the symbol.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.RightThumbStyle>
+<Grid x:Name="grid">
 
-<chart:ThumbStyle>
+     <Grid.Resources>
 
-<chart:ThumbStyle.SymbolTemplate>
+        <DataTemplate x:Key="symbolTemplate1">
 
-<DataTemplate>
+            <Grid>
 
-<Grid>
+                <Border Name="outerBorder" Background="#2a52be"   
+                        
+                        Height="26" Width="26" Opacity="1"
+                            
+                        BorderThickness="2" CornerRadius="4"/>
 
-<Border Name="outerBorder"
+                <Border Name="innerBorder"
+                            
+                        Background="#e6e6fa" Width="10"                                
+                    
+                        Height="10" CornerRadius="1" Opacity="1" />
 
-Background="#2a52be"                                
+            </Grid>
 
-Height="26" Width="26" Opacity="1" 
+        </DataTemplate>
 
-BorderThickness="2" CornerRadius="4"/>
+        <DataTemplate x:Key="symbolTemplate2">
 
-<Border Name="innerBorder"
+            <Grid>
 
-Background="#e6e6fa" Width="10"                                
+                 <Border Name="outerBorder"
+                            
+                         Background="#2a52be" Height="26"                                 
+                            
+                         Width="26" Opacity="1" BorderThickness="2" 
+                            
+                         CornerRadius="4"/>
 
-Height="10" CornerRadius="1" Opacity="1" />
+                <Border Name="innerBorder"
+                            
+                        Background="#e6e6fa" Height="10"
+                            
+                        Width="10" CornerRadius="1" Opacity="1" />
 
+            </Grid>
+
+        </DataTemplate>
+
+ </Grid.Resources>
+
+<syncfusion:SfDateTimeRangeNavigator>
+
+        <syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
+
+            <syncfusion:ThumbStyle SymbolTemplate="{StaticResource symbolTemplate1}"/>
+
+        </syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
+
+        <syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
+
+                <syncfusion:ThumbStyle SymbolTemplate="{StaticResource symbolTemplate2}"/>
+            
+        </syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
+            
+</syncfusion:SfDateTimeRangeNavigator>
+        
 </Grid>
-
-</DataTemplate>
-
-</chart:ThumbStyle.SymbolTemplate>
-
-</chart:ThumbStyle>
-
-</chart:SfDateTimeRangeNavigator.RightThumbStyle>
-
-<chart:SfDateTimeRangeNavigator.LeftThumbStyle>
-
-<chart:ThumbStyle>
-
-<chart:ThumbStyle.SymbolTemplate>
-
-<DataTemplate>
-
-<Grid>
-
-<Border Name="outerBorder"
-
-Background="#2a52be" Height="26"                                 
-
-Width="26" Opacity="1" BorderThickness="2" 
-
-CornerRadius="4"/>
-
-<Border Name="innerBorder"
-
-Background="#e6e6fa" 
-
-Height="10" Width="10" CornerRadius="1" Opacity="1" />
-
-</Grid>
-
-</DataTemplate>
-
-</chart:ThumbStyle.SymbolTemplate>
-
-</chart:ThumbStyle>
-
-</chart:SfDateTimeRangeNavigator.LeftThumbStyle>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ThumbStyle thumbStyle1 = new ThumbStyle()
+{
+
+    SymbolTemplate = grid.Resources["symbolTemplate1"] as DataTemplate
+
+};
+
+ThumbStyle thumbStyle2 = new ThumbStyle()
+{
+
+    SymbolTemplate = grid.Resources["symbolTemplate2"] as DataTemplate
+
+};
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    RightThumbStyle = thumbStyle1,
+
+    LeftThumbStyle = thumbStyle2
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![LeftThumbStyle](Customization_images/Customization_img8.jpeg)
 
 
 * [`LineStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsThumbStyleClassLineStyleTopic.html#)- Gets or sets the style for the thumb line.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator.LeftThumbStyle>
+<Grid x:Name="grid">
 
-<chart:ThumbStyle>
+<Grid.Resources>
 
-<chart:ThumbStyle.LineStyle>
+    <Style TargetType="Line" x:Key="lineStyle1">
 
-<Style TargetType="Line">
+        <Setter Property="Stroke" Value="Red"></Setter>
 
-<Setter Property="Stroke" Value="Red"></Setter>
+        <Setter Property="StrokeThickness" Value="3"></Setter>
 
-<Setter Property="StrokeThickness" Value="3"></Setter>
+        <Setter Property="StrokeDashArray" Value="2,1"></Setter>
 
-<Setter Property="StrokeDashArray" Value="2,1"></Setter>
+    </Style>
 
-</Style>
+    <Style TargetType="Line" x:Key="lineStyle2">
 
-</chart:ThumbStyle.LineStyle>
+        <Setter Property="Stroke" Value="Red"></Setter>
 
-</chart:ThumbStyle>
+        <Setter Property="StrokeThickness" Value="3"></Setter>
 
-</chart:SfDateTimeRangeNavigator.LeftThumbStyle>
+        <Setter Property="StrokeDashArray" Value="2,1"></Setter>
 
-<chart:SfDateTimeRangeNavigator.RightThumbStyle>
+    </Style>
 
-<chart:ThumbStyle>
+</Grid.Resources>
 
-<chart:ThumbStyle.LineStyle>
+<syncfusion:SfDateTimeRangeNavigator>
 
-<Style TargetType="Line">
+    <syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
 
-<Setter Property="Stroke" Value="Red"></Setter>
+        <syncfusion:ThumbStyle LineStyle="{StaticResource lineStyle1}"/>
 
-<Setter Property="StrokeThickness" Value="3"></Setter>
+     </syncfusion:SfDateTimeRangeNavigator.LeftThumbStyle>
 
-<Setter Property="StrokeDashArray" Value="2,1"></Setter>
+    <syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
 
-</Style>
+        <syncfusion:ThumbStyle LineStyle="{StaticResource lineStyle2}"/>
 
-</chart:ThumbStyle.LineStyle>
+    </syncfusion:SfDateTimeRangeNavigator.RightThumbStyle>
 
-</chart:ThumbStyle>
+</syncfusion:SfDateTimeRangeNavigator>
 
-</chart:SfDateTimeRangeNavigator.RightThumbStyle>
+</Grid>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ThumbStyle thumbStyle1 = new ThumbStyle()
+{
+
+    SymbolTemplate = grid.Resources["symbolTemplate1"] as DataTemplate
+
+};
+
+ThumbStyle thumbStyle2 = new ThumbStyle()
+{
+
+    SymbolTemplate = grid.Resources["symbolTemplate2"] as DataTemplate
+
+};
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    RightThumbStyle = thumbStyle1,
+
+    LeftThumbStyle = thumbStyle2
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![RightThumbStyle](Customization_images/Customization_img9.jpeg)
 
@@ -368,6 +596,8 @@ Height="10" Width="10" CornerRadius="1" Opacity="1" />
 User can also set the Interval which they think suitable for their data, this can be done by using Interval Property and can also set format to the labels.
 
 * [`Intervals`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassIntervalsTopic.html#)- Gets or sets intervals collection to render labels of SfDateTimeRangeNavigator.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -402,6 +632,38 @@ YBindingPath="High" >
 </chart:SfDateTimeRangeNavigator>   
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkine = new SfLineSparkline()
+{
+    
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "High"
+
+};
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath ="Date"
+
+};
+
+rangeNavigator.Intervals.Add(new Interval() { IntervalType = NavigatorIntervalType.Month });
+
+rangeNavigator.Intervals.Add(new Interval() { IntervalType = NavigatorIntervalType.Week });
+
+rangeNavigator.Content = sparkine;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Label Customization](Customization_images/Customization_img10.jpeg)
 
