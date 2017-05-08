@@ -12,7 +12,9 @@ Markers are used to indicate the value point for line and area series, and we ca
 
 * [`MarkerVisibility`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsMarkerBaseClassMarkerVisibilityTopic.html) – Gets or sets the visibility for marker.
 
-{%highlight xaml%}
+{% tabs %}
+
+{% highlight xaml %}
 
 <Syncfusion:SfLineSparkline  Interior="#4a4a4a"   
 
@@ -26,7 +28,30 @@ YBindingPath="NoOfUsers">
 
 </Syncfusion:SfLineSparkline >
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+    ItemsSource = new SparkViewModel().UsersList,
+
+    YBindingPath = "NoOfUsers",
+
+    MarkerVisibility = Visibility.Visible,
+
+    Interior = new SolidColorBrush(Colors.Gray),
+
+    BorderBrush = new SolidColorBrush(Colors.DarkGray),
+
+    BorderThickness = new Thickness(1, 1, 1, 1)
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Marker visibility](Markers_images/Markers_img1.jpeg)
 

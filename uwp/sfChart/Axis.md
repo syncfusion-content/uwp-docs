@@ -59,6 +59,8 @@ Gets or sets the NumericalPadding that specifies how to render the segments in c
 StartRangeFromZero</td><td>
 Gets or sets the bool that represents a value to enable start the range from zero. </td></tr>
 </table>
+
+{% tabs %}
  
 {% highlight xml %}
 
@@ -92,6 +94,48 @@ Gets or sets the bool that represents a value to enable start the range from ze
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+chart.Margin = new Thickness(5, 0, 10, 0);
+
+chart.DataContext = new ViewModel();
+
+chart.PrimaryAxis = new CategoryAxis() { Header = "Company Name" };
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Header = "Gross Revenue",
+
+    Minimum = 0,
+
+    Maximum = 1000,
+
+    Interval = 100,
+
+    RangePadding = NumericalPadding.Round
+
+};
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().CompanyDetails,
+
+    XBindingPath = "CompanyName",
+
+    YBindingPath = "CompanyTurnOver"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img1.png)
 
 
@@ -119,6 +163,7 @@ LabelPlacement</td><td>
 Gets or sets the LabelPlacement that represents the position of the label in the axis.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -160,8 +205,49 @@ Gets or sets the LabelPlacement that represents the position of the label in the
 
 {% endhighlight %}
 
-![](Axis_images/Axis_img2.png)
+{% highlight c# %}
 
+SfChart chart = new SfChart();
+
+chart.Margin = new Thickness(5, 0, 10, 0);
+
+chart.DataContext = new ViewModel();
+
+chart.PrimaryAxis = new CategoryAxis() { Header = "Company Name" };
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Header = "Gross Revenue",
+
+    Minimum = 200,
+
+    Maximum = 400,
+
+    Interval = 10,
+
+    RangePadding = NumericalPadding.Round
+
+};
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().CompanyDetails,
+
+    XBindingPath = "CompanyName",
+
+    YBindingPath = "CompanyTurnOver"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Axis_images/Axis_img2.png)
 
 
 ## DateTimeAxis
@@ -234,6 +320,8 @@ For instance, if the Interval is set as 2 and IntervalType is set as Days, the l
 
 The default IntervalType of a DateTimeAxis is Auto. It calculates the type automatically and the interval, accordingly.
 
+{% tabs %}
+
 {% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
@@ -246,7 +334,24 @@ The default IntervalType of a DateTimeAxis is Auto. It calculates the type autom
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+
+    IntervalType = DateTimeIntervalType.Years,
+
+    Interval = 1
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The following code example and screenshot are for DateTimeAxis.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -286,6 +391,42 @@ The following code example and screenshot are for DateTimeAxis.
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.Margin = new Thickness(5, 0, 10, 0);
+
+chart.DataContext = new ViewModel();
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+
+    IntervalType = DateTimeIntervalType.Years,
+
+    Interval = 1,
+
+    LabelFormat = "yyyy"
+
+};
+
+chart.SecondaryAxis = new NumericalAxis();
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().CompanyDetails,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "CompanyTurnOver"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img3.png)
 
 
@@ -311,6 +452,7 @@ IntervalType</td><td>
 Gets or sets the DateTimeIntervalType that represents the type of the interval.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -352,6 +494,47 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 
 {% endhighlight %}
 
+{% highlight c# %
+
+chart.Margin = new Thickness(5, 0, 10, 0);
+
+chart.DataContext = new ViewModel();
+
+chart.PrimaryAxis = new DateTimeCategoryAxis()
+{
+
+    IntervalType = DateTimeIntervalType.Years,
+
+    Interval = 1,
+
+    LabelFormat = "yyyy",
+
+    Header = "Company Name"
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+    Header="Gross Revenue (cr.)"
+};
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().CompanyDetails,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "CompanyTurnOver"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img4.png)
 
 
@@ -383,6 +566,7 @@ Maximum</td><td>
 Gets or sets the timespan value that represents the maximum value for the Axis. </td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -417,6 +601,44 @@ Gets or sets the timespan value that represents the maximum value for the Axis. 
         </syncfusion:SfChart>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+chart.Margin = new Thickness(5, 0, 10, 0);
+
+chart.DataContext = new ViewModel();
+
+chart.PrimaryAxis = new TimeSpanAxis()
+{
+
+    Interval = new TimeSpan(00, 00, 01),
+
+    Header = "Company Name"
+
+};
+
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+    Header="Gross Revenue (cr.)"
+};
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().CompanyDetails,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "CompanyTurnOver"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Axis_images/Axis_img5.png)
 
@@ -453,6 +675,7 @@ LogarithmicBase</td><td>
 Gets or sets the double value that represents the logarithmic base value of the Axis.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -492,7 +715,46 @@ Gets or sets the double value that represents the logarithmic base value of the 
 
 {% endhighlight %}
 
- Logarithmic Axis does not support zero or negative values._
+{% highlight c# %}
+
+chart.Margin = new Thickness(5, 0, 10, 0);
+
+chart.DataContext = new ViewModel();
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    Header = "Company Name"
+
+};
+
+chart.SecondaryAxis = new LogarithmicAxis()
+{
+
+    Header = "Gross Revenue",
+
+    LogarithmicBase = 10
+
+};
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().CompanyDetails,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "CompanyTurnOver"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Logarithmic Axis does not support zero or negative values._
 
 The following screenshot illustrates the SfChart with LogarithmicAxis.
 
@@ -505,6 +767,8 @@ The following screenshot illustrates the SfChart with LogarithmicAxis.
 SfChart provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern. 
 
 By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. There are two properties XAxis and YAxis in all the series, except Accumulation Series.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -551,13 +815,66 @@ By default, all the series are plotted based on Primary and Secondary Axis. You 
 
     Interior="Black"
 
-    StrokeThickness="2"
-
-    />
+    StrokeThickness="2"/>
 
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ColumnSeries series1 = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2010",
+
+    Label ="2010",
+
+    Interior = new SolidColorBrush(Colors.Green)
+
+};
+
+series1.XAxis = new NumericalAxis()
+{
+
+    Header = "Additional X Axis"
+
+};
+
+series1.YAxis = new NumericalAxis()
+{
+
+    Header = "Additional Y Axis"
+
+};
+
+LineSeries series2 = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().Demands,
+
+    XBindingPath = "Demand",
+
+    YBindingPath = "Year2011",
+
+    Label = "2011",
+
+    Interior = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 2
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following screenshot illustrates SfChart with multiple axes.
 
@@ -572,6 +889,8 @@ The following screenshot illustrates SfChart with multiple axes.
 By default, the x-axis is arranged horizontally at the bottom of the chart and the y-axis is arranged vertically on the left-side of the chart. You can change the alignment of the axes by setting OpposedPosition to True. It arranges the x-axis at the top and the y-axis on the right-side of the chart. 
 
 The following is the code example for setting the OpposedPosition property.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -591,7 +910,31 @@ The following is the code example for setting the OpposedPosition property.
 
         </syncfusion:ColumnSeries.YAxis>
 		
-		{% endhighlight %}
+{% endhighlight %}
+
+{% highlight c# %}
+
+columnSeries.XAxis = new NumericalAxis()
+{
+
+    Header = "Additional X Axis",
+
+    OpposedPosition = true
+
+};
+
+columnSeries.YAxis = new NumericalAxis()
+{
+
+    Header = "Additional Y Axis",
+
+    OpposedPosition = true
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following is a screenshot demonstrating y-axis of a chart arranged in OpposedPosition.
 
@@ -602,6 +945,8 @@ The following is a screenshot demonstrating y-axis of a chart arranged in Oppose
 ## Inversed Axis
 
 This feature is used to reverse chart plotting inverse the axis scaling.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -621,6 +966,40 @@ This feature is used to reverse chart plotting inverse the axis scaling.
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    OpposedPosition = true,
+
+    IsInversed = true
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    FontSize = 16,
+
+    Minimum = 0,
+
+    Maximum = 2000,
+
+    Interval = 200,
+
+    IsInversed = true,
+
+    OpposedPosition = true
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![C:/Users/rachel/Desktop/snaps/8.png](Axis_images/Axis_img9.png)
 
 
@@ -637,6 +1016,8 @@ T> You cannot specify range for CategoryAxis instead you can use ZoomFactor and 
 
  The following is the code sample for setting the ChartAxis properties:
 
+ {% tabs %}
+
 {% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
@@ -652,7 +1033,27 @@ T> You cannot specify range for CategoryAxis instead you can use ZoomFactor and 
                 <syncfusion:NumericalAxis FontSize="14"/>
 
             </syncfusion:SfChart.SecondaryAxis>
+
 {% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 14
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    FontSize = 14
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Range Padding
 
@@ -744,6 +1145,8 @@ There are two types of LabelPlacement:
 
 The following code example and screenshot shows LabelPlacement set to OnTicks.
 
+{% tabs %}
+
 {% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
@@ -756,15 +1159,30 @@ The following code example and screenshot shows LabelPlacement set to OnTicks.
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelPlacement = LabelPlacement.OnTicks
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img18.png)
 
 
 
 The following code example and screenshot shows LabelPlacement set to BetweenTicks.
 
+{% tabs %}
+
 {% highlight xml %}
-
-
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -777,6 +1195,21 @@ The following code example and screenshot shows LabelPlacement set to BetweenTic
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelPlacement = LabelPlacement.BetweenTicks
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![](Axis_images/Axis_img19.png)
 
@@ -787,6 +1220,8 @@ The following code example and screenshot shows LabelPlacement set to BetweenTic
 The LabelsPosition property is used to position the axis label either inside or outside the chart plotting area.
 
 The following code example and screenshot illustrate the use of LabelsPosition.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -800,9 +1235,24 @@ The following code example and screenshot illustrate the use of LabelsPosition.
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelsPosition = AxisElementPosition.Inside
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img20.png)
 
-
+{% tabs %}
 
 {% highlight xml %}
 
@@ -813,7 +1263,23 @@ The following code example and screenshot illustrate the use of LabelsPosition.
            FontSize="16"  />
 
     </syncfusion:SfChart.PrimaryAxis>
+
 {% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelsPosition = AxisElementPosition.Outside
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 ![](Axis_images/Axis_img21.png)
@@ -835,6 +1301,8 @@ The following are the customizing options in EdgeLabelDrawingMode.
 
 The following code example and screenshot show EdgeLabelsDrawingMode set to Center.
 
+{% tabs %}
+
 {% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
@@ -845,11 +1313,30 @@ The following code example and screenshot show EdgeLabelsDrawingMode set to Cent
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelFormat = "MM/yy",
+
+    EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Center
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img22.png)
 
 
 
 The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -861,11 +1348,30 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelFormat = "MM/yy",
+
+    EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Fit
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img23.png)
 
 
 
 The following code example and screenshot shows EdgeLabelDrawingMode set to Hide.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -877,11 +1383,30 @@ The following code example and screenshot shows EdgeLabelDrawingMode set to Hide
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelFormat = "MM/yy",
+
+    EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Hide
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img24.png)
 
 
 
 The following code example and screenshot shows EdgeLabelsDrawingMode set to Shift.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -892,6 +1417,23 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Shi
     </syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelFormat = "MM/yy",
+
+    EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Axis_images/Axis_img25.png)
 
@@ -911,6 +1453,8 @@ The following are the options for intersecting action.
 
 The following code example and screenshot shows LabelsIntersectAction set to None.
 
+{% tabs %}
+
 {% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
@@ -923,11 +1467,28 @@ The following code example and screenshot shows LabelsIntersectAction set to Non
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelsIntersectAction = AxisLabelsIntersectAction.None
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img26.png)
 
 
 
 The following code example and screenshot shows LabelsIntersectAction set to Hide.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -941,11 +1502,28 @@ The following code example and screenshot shows LabelsIntersectAction set to Hid
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelsIntersectAction = AxisLabelsIntersectAction.Hide
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img27.png)
 
 
 
 The following code example and screenshot show LabelsIntersectAction set to MultipleRows.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -961,7 +1539,20 @@ The following code example and screenshot show LabelsIntersectAction set to Mult
 
 {% endhighlight %}
 
+{% highlight c# %}
 
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    FontSize = 16,
+
+    LabelsIntersectAction = AxisLabelsIntersectAction.MultipleRows
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Axis_images/Axis_img28.png)
 
@@ -972,6 +1563,8 @@ The following code example and screenshot show LabelsIntersectAction set to Mult
 You can customize the axis label to display its measuring units by adding a prefix or a suffix. This feature can be achieved using the PrefixLabelTemplate and PostfixLabelTemplate properties.
 
 The following code example and screenshot demonstrate the usage of PrefixLabelTemplate.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -989,11 +1582,32 @@ The following code example and screenshot demonstrate the usage of PrefixLabelTe
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    FontSize = 16,
+
+    Minimum = 0,
+
+    Maximum = 1000,
+
+    PrefixLabelTemplate = this.Resources["yPrefix"] as DataTemplate
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img29.png)
 
 
 
 The following code example and screenshot demonstrate the usage of PostfixLabelTemplate.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -1011,6 +1625,25 @@ The following code example and screenshot demonstrate the usage of PostfixLabelT
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    FontSize = 16,
+
+    Minimum = 0,
+
+    Maximum = 1000,
+
+    PostfixLabelTemplate = this.Resources["yPrefix"] as DataTemplate
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img30.png)
 
 
@@ -1018,6 +1651,8 @@ The following code example and screenshot demonstrate the usage of PostfixLabelT
 ## Formatting axis labels
 
 SfChart provides the LabelFormat property for defining the custom formatting for the axis labels. This property supports all standard formatting type of numerical and date time values.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -1036,6 +1671,34 @@ SfChart provides the LabelFormat property for defining the custom formatting for
 </syncfusion:SfChart.SecondaryAxis>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+
+    Header = "Computer sales",
+
+    IntervalType = DateTimeIntervalType.Hours,
+
+    Interval = 1,
+
+    LabelFormat = "hh:mm:tt"
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Header = "Quantity Sold",
+
+    LabelFormat ="##:00"
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Axis_images/Axis_img31.png)
 
@@ -1062,6 +1725,7 @@ LabelStyle</td><td>
 Gets or sets the style for the axis labels. The label’s Foreground, FontSize and FontFamily are customized using this property.</td></tr>
 </table>
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -1098,8 +1762,55 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
             <syncfusion:LineSeries XBindingPath="City" YBindingPath="Year1950" ItemsSource="{Binding PopulationPercent}"></syncfusion:LineSeries>
 
         </syncfusion:SfChart>
+
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+LabelStyle labelStyle;
+
+chart.PrimaryAxis = new CategoryAxis() { Header = "City" };
+
+labelStyle = new LabelStyle()
+{
+
+    FontSize = 10,
+
+    FontFamily = new FontFamily("Arial"),
+
+    Foreground = new SolidColorBrush(Colors.Green)
+
+};
+
+chart.PrimaryAxis.LabelStyle = labelStyle;
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Header = "Year",
+
+};
+
+chart.SecondaryAxis.LabelStyle = labelStyle;
+
+LineSeries series = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().PopulationPercent,
+
+    XBindingPath = "City",
+
+    YBindingPath = "Year1950"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## GridLines and TickLines 
 
@@ -1108,6 +1819,8 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
 By default, gridlines are automatically added to the ChartAxis in its defined intervals. SfChart supports customization of gridline. You can control the visibility of the gridlines using the ShowGridLines property. 
 
 The following code example and screenshot show ShowGridLines set to False.
+
+{% tabs }
 
 {% highlight xml %}
 
@@ -1121,6 +1834,21 @@ The following code example and screenshot show ShowGridLines set to False.
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    ShowGridLines = false,
+
+    FontSize = 16
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img32.png)
 
 
@@ -1130,6 +1858,8 @@ The following code example and screenshot show ShowGridLines set to False.
 Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line.
 
 The following code example and screenshot illustrate major and small ticklines set to Inside.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -1141,11 +1871,38 @@ The following code example and screenshot illustrate major and small ticklines s
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+
+    LabelsPosition = AxisElementPosition.Inside,
+
+    TickLineSize = 10,
+
+    SmallTickLineSize = 5,
+
+    TickLinesPosition = AxisElementPosition.Inside,
+
+    SmallTickLinesPosition = AxisElementPosition.Inside,
+
+    SmallTicksPerInterval = 2,
+
+    FontSize = 16
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Axis_images/Axis_img33.png)
 
 
 
 You can customize the appearance of major gridline, minor gridlines and ticklines using the MajorTickLineStyle, MinorTickLineStyle, MajorGridLineStyle and MinorGridLineStyle properties. Also axis lines can be customized using AxisLineStyle as follows.
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -1248,6 +2005,71 @@ You can customize the appearance of major gridline, minor gridlines and tickline
         </syncfusion:SfChart>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis()
+{
+
+    MajorGridLineStyle = chart.Resources[" majorGridLineStyle"] as Style,
+
+    MinorGridLineStyle = chart.Resources["minorGridLineStyle"] as Style,
+
+    MajorTickLineStyle = chart.Resources["majorTickLineStyle"] as Style,
+
+    MinorTickLineStyle = chart.Resources["minorTickLineStyle"] as Style,
+
+    AxisLineStyle = chart.Resources["axisLineStyle"] as Style,
+
+    TickLineSize = 10,
+
+    SmallTickLineSize = 6,
+
+    SmallTicksPerInterval = 1,
+
+    LabelFormat = "yyyy"
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    MajorGridLineStyle = chart.Resources[" majorGridLineStyle"] as Style,
+
+    MinorGridLineStyle = chart.Resources["minorGridLineStyle"] as Style,
+
+    MajorTickLineStyle = chart.Resources["majorTickLineStyle"] as Style,
+
+    MinorTickLineStyle = chart.Resources["minorTickLineStyle"] as Style,
+
+    AxisLineStyle = chart.Resources["axisLineStyle"] as Style,
+
+    TickLineSize = 10,
+
+    SmallTickLineSize = 6,
+
+    SmallTicksPerInterval = 1,
+
+    HorizontalAlignment = HorizontalAlignment.Center
+
+};
+
+FastLineBitmapSeries series = new FastLineBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Axis_images/Axis_img34.png)
 

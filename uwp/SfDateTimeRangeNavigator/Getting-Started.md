@@ -116,6 +116,8 @@ Since initializing will produce an empty SfDateTimeRangeNavigator, we need to se
 
 Defining the ItemsSource for Range Navigator in XAML.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" 
@@ -128,6 +130,21 @@ XBindingPath="Date">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+        ItemsSource = new ViewModel().StockPriceDetails,
+
+        XBindingPath ="Date"
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Adding Content
 
 Content which needs to be displayed inside a SfDateTimeRangeNavigator can be of any control. Here SfLineSparkline control has been added.
@@ -137,6 +154,8 @@ The following properties are used to add content.
 * [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassItemsSourceTopic.html#) - Gets or sets an IEnumerable source used to render range.
 * [`XBindingPath`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassXBindingPathTopic.html#) - Gets or sets the property path of the x data in ItemsSource.
 * [`Content`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfRangeNavigatorClassContentTopic.html#) - Gets or sets the content that needs to be hosted inside the Navigator, the content can be any UI element.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -159,6 +178,33 @@ Margin="20"   YBindingPath="High" >
 </chart:SfDateTimeRangeNavigator>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfLineSparkline sparkine = new SfLineSparkline()
+{
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "High"
+
+};
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath ="Date"
+
+};
+
+rangeNavigator.Content = sparkine;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The following output is displayed as a result of the above code example.
 

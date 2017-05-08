@@ -15,6 +15,8 @@ The following properties are used while selecting the range of data from the SfD
 * [`ViewRangeStart`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfRangeNavigatorClassViewRangeStartTopic.html#)- Gets or sets Navigator's Start Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
 * [`ViewRangeEnd`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfRangeNavigatorClassViewRangeEndTopic.html#)- Gets or sets Navigator's End Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" 
@@ -33,6 +35,25 @@ ItemsSource="{Binding StockPriceDetails}">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    ViewRangeStart = new DateTime(2015,02,01),
+
+    ViewRangeEnd = new DateTime(2015, 03, 01)
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![ViewRange](Interactivity_images/Interactivity_img1.jpeg)
 
 ## Region Selection
@@ -48,6 +69,8 @@ Both the ways produce the same result.
 * [`ZoomFactor`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfRangeNavigatorClassZoomFactorTopic.html#)- Gets or sets zoom factor. Value must fall within 0 to 1. It determines delta of visible range.
 
 The ZoomPosition and ZoomFactor of the chart axis can be bind with the SfDateTimeRangeNavigator.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -131,9 +154,101 @@ Header="Stock Price" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    VerticalAlignment = VerticalAlignment.Top
+
+};
+
+SfLineSparkline sparkine = new SfLineSparkline()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    YBindingPath = "High"
+
+};
+
+rangeNavigator.Content = sparkine;
+
+Grid.SetColumn(rangeNavigator, 1);
+
+SfChart chart = new SfChart()
+{
+
+    VerticalAlignment = VerticalAlignment.Bottom,
+
+    AreaBorderThickness = new Thickness(1, 1, 1, 1),
+
+    Header = "USD – INR   Foreign Exchange Rate Analysis"
+
+};
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    PlotOffset = 25,
+
+    Header = "Date",
+
+    LabelFormat = "MMM/dd",
+
+    ZoomPosition = rangeNavigator.ZoomPosition,
+
+    ZoomFactor = rangeNavigator.ZoomFactor
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Minimum = 820,
+
+    Interval = 20,
+
+    Maximum = 900,
+
+    FontSize = 12,
+
+    StartRangeFromZero = false,
+
+    Header = "Stock Price"
+
+};
+
+CandleSeries candleSeries=new CandleSeries ()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    High ="High", Low = "Low",
+
+    Open ="Open", Close ="Close",
+
+    XBindingPath ="Date",
+
+    Label ="CandleSeries"
+
+};
+
+chart.Series.Add(candleSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 * [`SelectedData`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassSelectedDataTopic.html#)- Gets an IEnumerable source for the particular selected region.
 
 Displays the selected data alone from the SfDateTimeRangeNavigator, into the chart.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -195,6 +310,12 @@ Displays the selected data alone from the SfDateTimeRangeNavigator, into the cha
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The following output is displayed as the result of above code sample.
 
 ![Bound SelectedData](Interactivity_images/Interactivity_img2.jpeg)
@@ -206,6 +327,8 @@ The following are the properties used to provide interactive features.
 * [`RangePadding`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfDateTimeRangeNavigatorClassRangePaddingTopic.html#)- Gets or sets value which is used to shift the SfDateTimeRangeNavigator axis range inside or outside.
 * [`OverlayBrush`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsSfRangeNavigatorClassOverlayBrushTopic.html#)- Gets or sets the overlay brush color.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator"  ShowGridLines="True"
@@ -213,6 +336,25 @@ The following are the properties used to provide interactive features.
 </chart:SfDateTimeRangeNavigator>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    ShowGridLines = true,
+
+    OverlayBrush = new SolidColorBrush(Color.FromArgb(55,34,0xb4,0xe3))
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Interactivity_images/Interactivity_img3.jpeg)
 
