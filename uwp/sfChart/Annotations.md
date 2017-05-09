@@ -428,6 +428,8 @@ chart.Annotations.Add(annotation);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Annotation_images/Annotation_img4.jpeg)
 
 

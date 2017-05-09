@@ -658,6 +658,8 @@ chart.Series.Add(series);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Adornments_images/label_5.png)
 
 N> If you are having DateTimeAxis then the corresponding date time value will be displayed. In case of category or numerical axis the value will be converted to OADate.
