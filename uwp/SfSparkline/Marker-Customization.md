@@ -20,27 +20,37 @@ We can customize the markers by initializing the marker template selector class,
 * [`MarkerBrush`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsMarkerTemplateSelectorClassMarkerBrushTopic.html) – Gets or sets the brush to paint the markers of the sparkline.
 * [`MarkerTemplate`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsMarkerTemplateSelectorClassMarkerTemplateTopic.html) – Gets or sets the data template to sparkline marker.
 
-{%highlight xaml%}
+{% highlight xaml %}
 
-<Syncfusion:SfLineSparkline  Interior="#4a4a4a"   
-
-BorderBrush="DarkGray" MarkerVisibility="Visible"   
-
-BorderThickness="1" ItemsSource="{Binding UsersList}"    
-
-YBindingPath="NoOfUsers">
+<Syncfusion:SfLineSparkline  Interior="#4a4a4a" 
+                                         
+                             BorderBrush="DarkGray"
+                                    
+                             MarkerVisibility="Visible"   
+                                         
+                             BorderThickness="1" 
+                                         
+                             ItemsSource="{Binding UsersList}"    
+                                         
+                             YBindingPath="NoOfUsers">
 
 <Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-<Syncfusion:MarkerTemplateSelector FirstPointBrush="Yellow" 
+<Syncfusion:MarkerTemplateSelector  FirstPointBrush="Yellow"
 
-LastPointBrush="Green" LowPointBrush="Red"
+                                    LastPointBrush="Green"
 
-MarkerHeight="15" MarkerWidth="15"    
+                                    LowPointBrush="Red"
 
-MarkerBrush="DeepSkyBlue" NegativePointBrush="Blue"
+                                    MarkerHeight="15"
 
-HighPointBrush="Purple" >
+                                    MarkerWidth="15"
+
+                                    MarkerBrush="DeepSkyBlue"
+
+                                    NegativePointBrush="Blue"
+
+                                    HighPointBrush="Purple">
 
 </Syncfusion:MarkerTemplateSelector>
 
@@ -49,55 +59,142 @@ HighPointBrush="Purple" >
 </Syncfusion:SfLineSparkline >
 
 {%endhighlight%}
+
+SfLineSparkline sparkline = new SfLineSparkline()
+{
+
+	ItemsSource = new SparkViewModel().Data,
+
+	YBindingPath = "Day",
+
+	MarkerVisibility = Visibility.Visible,
+
+	Interior = new SolidColorBrush(Colors.Gray),
+
+    BorderBrush = new SolidColorBrush(Colors.DarkGray),
+
+    BorderThickness = new Thickness(1, 1, 1, 1)
+
+};
+
+SegmentTemplateSelector selector = new SegmentTemplateSelector()
+{
+
+	FirstPointBrush = new SolidColorBrush(Colors.Yellow),
+
+	LastPointBrush = new SolidColorBrush(Colors.Yellow),
+
+	HighPointBrush = new SolidColorBrush(Colors.Red),
+
+	MarkerHeight = 15,
+
+    MarkerWidth = 15,
+
+    MarkerBrush = new SolidColorBrush(Colors.DeepSkyBlue),
+
+    NegativePointBrush = new SolidColorBrush(Colors.Blue),
+
+    HighPointBrush = new SolidColorBrush(Colors.Purple),
+
+};
+
+sparkline.MarkerTemplateSelector = selector;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ![Marker Customization](Marker-Customization_images/MarkerCustomization_img1.jpeg)
 
 
 **Marker Template**
 
-{%highlight xaml%}
+You can customize default appearence of the marker symbol by using the MarkerTemplate property in the sparkline.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Grid.Resources>
+
+    <DataTemplate x:Key="markerTemplate">
+
+        <Grid>
+
+            <Ellipse Height="15" Width="15" 
+                                             
+                     Fill="LightGoldenrodYellow"
+                                             
+                     Stroke="Black" StrokeDashArray="1,1" 
+                                             
+                     StrokeThickness="1" />
+
+            <Ellipse Height="12" Width="12" Fill="Blue" Stroke="Black"   
+                                             
+                     StrokeDashArray="1,1" 
+                                             
+                     StrokeThickness="1"/>
+
+        </Grid>
+
+    </DataTemplate>
+            
+</Grid.Resources>
 
 <Syncfusion:SfLineSparkline Interior="#4a4a4a"  
 
-BorderBrush="DarkGray" MarkerVisibility="Visible"   
+                            BorderBrush="DarkGray"
+                                        
+                            MarkerVisibility="Visible"   
 
-BorderThickness="1" ItemsSource="{Binding UsersList}"  
+                            BorderThickness="1"
+                                        
+                            ItemsSource="{Binding UsersList}"  
 
-YBindingPath="NoOfUsers">
+                            YBindingPath="NoOfUsers">
 
-<Syncfusion:SfLineSparkline.MarkerTemplateSelector>
+        <Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-<Syncfusion:MarkerTemplateSelector >
+                <Syncfusion:MarkerTemplateSelector MarkerTemplate="{StaticResource markerTemplate}"/>
 
-<Syncfusion:MarkerTemplateSelector.MarkerTemplate>
+         </Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-<DataTemplate>
+</Syncfusion:SfLineSparkline>
 
-<Grid>
+{% endhighlight %}
 
-<Ellipse Height="15" Width="15" Fill="LightGoldenrodYellow" 
+{% highlight c# %}
 
-Stroke="Black" StrokeDashArray="1,1" 
+SfLineSparkline sparkline = new SfLineSparkline()
+{
 
-StrokeThickness="1" />
+	ItemsSource = new SparkViewModel().Data,
 
-<Ellipse Height="12" Width="12" Fill="Blue" Stroke="Black"   
+	YBindingPath = "Day",
 
-StrokeDashArray="1,1" StrokeThickness="1"/>
+	MarkerVisibility = Visibility.Visible,
 
-</Grid>
+	Interior =new SolidColorBrush(Colors.Gray),
 
-</DataTemplate>
+	BorderBrush = new SolidColorBrush(Colors.DarkGray),
 
-</Syncfusion:MarkerTemplateSelector.MarkerTemplate>
+	BorderThickness = new Thickness (1,1,1,1)
 
-</Syncfusion:MarkerTemplateSelector>
+};
 
-</Syncfusion:SfLineSparkline.MarkerTemplateSelector>
+MarkerTemplateSelector selector = new MarkerTemplateSelector()
+{
 
-</Syncfusion:SfLineSparkline >
+	MarkerTemplate = grid.Resources["markerTemplate"] as DataTemplate
 
-{%endhighlight%}
+};
+
+sparkline.MarkerTemplateSelector = selector;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![MarkerTemplate](Marker-Customization_images/MarkerCustomization_img2.jpeg)
 

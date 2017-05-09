@@ -26,19 +26,44 @@ The following APIs are common for the most of the series types:
 
 Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of `ColumnSeries`.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-<chart:ColumnSeries Interior="#7F7F7F"ItemsSource="{Binding SneakersDetail}"           
+<chart:ColumnSeries Interior="#7F7F7F" ItemsSource="{Binding SneakersDetail}"           
 
 XBindingPath="Brand" YBindingPath="ItemsCount1"   />
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries()
+{
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "ItemsCount1",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/column.png)
 
 ### Bar
 
 Bar series are similar to column series, excepts its orientation. The following code examples shows how to use `BarSeries`.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -48,6 +73,25 @@ YBindingPath="Value" Interior="#7F7F7F" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+BarSeries series = new BarSeries()
+{
+
+    ItemsSource = new ViewModel().CategoricalDatas,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/bar.png)
 
 ## Line and Spline Charts
@@ -55,6 +99,8 @@ YBindingPath="Value" Interior="#7F7F7F" />
 ### Line
 
 Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple `LineSeries` using given data
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -72,12 +118,50 @@ Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+LineSeries series1 = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "India",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+LineSeries series2 = new LineSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "America",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/line.png)
 
 
 ### Spline
 
 `SplineSeries` resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -95,6 +179,42 @@ Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SplineSeries series1 = new SplineSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "India",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+SplineSeries series2 = new SplineSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "America",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/spline.png)
 
 
@@ -105,6 +225,8 @@ Interior="#4A4A4A"/>
 `BubbleSeries` is represented by closely packed circles, whose areas are proportional to the quantities. 
 
 The size of the bubble series is relative proportional to the value bind with the series using `Size` property. You can set the constraints on this size using `MinimumRadius` and `MaximumRadius`.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -118,11 +240,38 @@ Interior="#BCBCBC" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+BubbleSeries series = new BubbleSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    Size = "Size",
+
+    MinimumRadius = 5,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/bubble.png)
 
 ### Scatter
 
 `ScatterSeries` is similar to bubble series, where each point being represented by an ellipse with equal size. This size can be defined using `ScatterHeight` and `ScatterWidth` property.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -134,6 +283,31 @@ YBindingPath="WaitingTime"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+ScatterSeries series = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().DataPoints,
+
+    XBindingPath = "Eruptions",
+
+    YBindingPath = "WaitingTime",
+
+    ScatterHeight = 4,
+
+    ScatterWidth = 4,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/scatter.png)
 
 ## Area Charts
@@ -144,6 +318,8 @@ YBindingPath="WaitingTime"/>
 
 The following code example initializes the AreaSeries:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:AreaSeries XBindingPath="FruitName" Interior="#BCBCBC" 
@@ -152,11 +328,34 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+AreaSeries series = new AreaSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/area.png)
 
 ### Spline Area
 
 `SplineAreaSeries` connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -168,12 +367,35 @@ YBindingPath="Price" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+SplineAreaSeries series = new SplineAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Products,
+
+    XBindingPath = "ProdName",
+
+    YBindingPath = "Price",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/splinearea.png)
 
 
 ### Step Area
 
 `StepAreaSeries` is similar to AreaSeries but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this ChartSeries uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -185,11 +407,34 @@ YBindingPath="ItemsCount"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StepAreaSeries series = new StepAreaSeries()
+{
+
+    ItemsSource = new ViewModel().SneakersDetail,
+
+    XBindingPath = "Brand",
+
+    YBindingPath = "ItemsCount",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/steparea.png)
 
 ### Closed Area
 
 If you wish to draw the open area series (Area with stroke only at top), SfChart provides `IsClosed` property. By default, this property is true.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -201,6 +446,29 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+AreaSeries series = new AreaSeries()
+{
+
+    ItemsSource = new ViewModel().Fruits,
+
+    XBindingPath = "FruitName",
+
+    YBindingPath = "People",
+
+    IsClosed = true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/closedarea.png)
 
 
@@ -209,6 +477,8 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" />
 ### Pie
 
 `PieSeries` is divided into sectors, illustrating numerical proportion. The following code example illustrates the PieSeries.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -220,9 +490,30 @@ YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PieSeries series = new PieSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/pie.png)
 
 The rendering size of the PieSeries can be controlled using `PieCoefficient` property as in below code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -236,6 +527,27 @@ YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PieSeries series = new PieSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    PieCoefficient = 0.9
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/pie_1.png)
 
 ### Doughnut
@@ -243,6 +555,8 @@ YBindingPath="Percentage"/>
 `DoughnutSeries` is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
 
 The DoughnutSeries can be added to chart as in below code example:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -254,10 +568,29 @@ YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+DoughnutSeries series = new DoughnutSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage"
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/doughnut.png)
 
 The Doughnut also having coefficient property, `DoughnutCoefficient` which defines the inner circle. Also it has `DoughnutSize`, used to define the size for this series like `PieCoefficient` in PieSeries.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -269,11 +602,33 @@ YBindingPath="Percentage" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+DoughnutSeries series = new DoughnutSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    DoughnutCoefficient = 0.9
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/doughnut_1.png)
 
 ### Semi Pie and Doughnut
 
 By having custom `StartAngle` and `EndAngle`, you can draw pie series in different shapes like semicircular or quarter circular series.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -287,7 +642,32 @@ ItemsSource="{Binding}"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PieSeries series = new PieSeries()
+{
+
+    ItemsSource = new ViewModel().Value,
+
+    XBindingPath = "Utilization",
+
+    YBindingPath = "ResponseTime",
+
+    StartAngle = 180,
+
+    EndAngle = 360
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/semipie.png)
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -301,6 +681,29 @@ ItemsSource="{Binding}"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+DoughnutSeries series = new DoughnutSeries()
+{
+
+    ItemsSource = new ViewModel().Value,
+
+    XBindingPath = "Utilization",
+
+    YBindingPath = "ResponseTime",
+
+    StartAngle = 180,
+
+    EndAngle = 360
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/semidoughnut.png)
 
 ### Explode Segments
@@ -313,6 +716,8 @@ The following properties are used to explode the individual segments in Pie, Dou
 * `ExplodeOnMouseClick`-Used to explode the segment on mouse click or tap.
 
 **Explode** **Index**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -328,11 +733,36 @@ YBindingPath="ResponseTime" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PieSeries series = new PieSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Utilization",
+
+    YBindingPath = "ResponseTime",
+
+    ExplodeIndex = 2,
+
+    ExplodeRadius = 10
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/exploderadius.png)
 
 N> We have defined ExplodeRadius as 10, by default its value is zero. So you need to define ExplodeRadius, when you set ExplodeIndex or ExplodeAll.
 
 **Explode** **All**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -348,6 +778,29 @@ YBindingPath="Percentage">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PieSeries series = new PieSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    ExplodeAll = true,
+
+    ExplodeRadius = 15
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/explodeall.png)
 
 ## Funnel and Pyramid Charts
@@ -355,6 +808,8 @@ YBindingPath="Percentage">
 ### Pyramid
 
 PyramidSeries has the form of a triangle with lines dividing it into sections and each section has a different width. Depending on the Y co-ordinates, this width indicates a level of hierarchy among other categories.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -366,6 +821,24 @@ YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PyramidSeries series = new PyramidSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage"
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/pyramid.png)
 
@@ -373,6 +846,8 @@ YBindingPath="Percentage"/>
 The `PyramidMode` is used to define the rendering mode of the pyramid segments.
 
 **PyramidMode** **as** **Surface**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -386,10 +861,33 @@ YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PyramidSeries series = new PyramidSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    PyramidMode = ChartPyramidMode.Surface
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/pyramidsurface.png)
 
 
 **PyramidMode** **as** **Linear**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -403,6 +901,27 @@ YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PyramidSeries series = new PyramidSeries()
+{
+
+    ItemsSource = new ViewModel().Tax,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    PyramidMode = ChartPyramidMode.Linear
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/pyramidlinear.png)
 
 ### Funnel
@@ -410,6 +929,8 @@ YBindingPath="Percentage"/>
 FunnelSeries is similar to PyramidSeries, displays data in a funnel shape that equals to 100% when totaled. It is a single series, representing data as portions of 100% and does not use any axes. 
 
 The following code example shows how to use the funnel series:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -419,6 +940,24 @@ YBindingPath="Percentage" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FunnelSeries series = new FunnelSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/funnel.png)
 
@@ -428,6 +967,8 @@ YBindingPath="Percentage" />
 The FunnelMode defines a rendering mode for the funnel series which define, where to bind your values (to height or width).
 
 **ValueIsHeight**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -439,9 +980,32 @@ YBindingPath="Percentage" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FunnelSeries series = new FunnelSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    FunnelMode = ChartFunnelMode.ValueIsHeight
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/valueisheight.png)
 
 **ValueIsWidth**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -452,6 +1016,27 @@ FunnelMode="ValueIsWidth"
 YBindingPath="Percentage" />
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+FunnelSeries series = new FunnelSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    FunnelMode = ChartFunnelMode.ValueIsWidth
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/valueiswidth.png)
 
@@ -466,6 +1051,8 @@ The following properties are used to explode the individual segments in Pie, Dou
 
 **Explode** **Offset**
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"   
@@ -476,11 +1063,36 @@ ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FunnelSeries series = new FunnelSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    ExplodeIndex = 4,
+
+    ExplodeOffset = 70
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/funnelexplode_1.png)
 
 **Gap** **Ratio**
 
 The gap between each segment using `GapRatio` property as in the following code example.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -492,6 +1104,27 @@ GapRatio="0.5" YBindingPath="Percentage">
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FunnelSeries series = new FunnelSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Category",
+
+    YBindingPath = "Percentage",
+
+    GapRatio = 0.5
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/funnelexplode_2.png)
 
 ## Radar and Polar Charts
@@ -501,6 +1134,8 @@ GapRatio="0.5" YBindingPath="Percentage">
 `RadarSeries` represents a collection of data, displayed by quantitative variables, represented on axes starting from the same point. The relative position and angle of the axes is not uniform. 
 
 The following code example illustrates the use of radar series:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -516,12 +1151,35 @@ YBindingPath="Tree" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+RadarSeries series = new RadarSeries()
+{
+
+    ItemsSource = new ViewModel().PlantDetails,
+
+    XBindingPath = "Direction",
+
+    YBindingPath = "Tree",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/radar.png)
 
 
 ### Polar
 
 `PolarSeries` displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -535,6 +1193,27 @@ YBindingPath="Tree" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PolarSeries series = new PolarSeries()
+{
+
+    ItemsSource = new ViewModel().PlantDetails,
+
+    XBindingPath = "Direction",
+
+    YBindingPath = "Tree",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/polar.png)
 
 
@@ -547,6 +1226,8 @@ The Radar and Polar charts having the following properties in common:
 
 
 This property used to draw the closed path as below.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -562,6 +1243,34 @@ StrokeThickness="2" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PolarSeries series = new PolarSeries()
+{
+
+    ItemsSource = new ViewModel().PlantDetails,
+
+    XBindingPath = "Direction",
+
+    YBindingPath = "Tree",
+
+    IsClosed = false,
+
+    DrawType = ChartSeriesDrawType.Line,
+
+    Label = "Amount Spent",
+
+    StrokeThickness = 2,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/isclosed.png)
 
@@ -570,6 +1279,8 @@ StrokeThickness="2" />
 This property defines type of curve, whether its line or area.
 
 **DrawType** **as** **Area**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -583,9 +1294,36 @@ XBindingPath="Direction" YBindingPath="Tree" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PolarSeries series = new PolarSeries()
+{
+
+    ItemsSource = new ViewModel().PlantDetails,
+
+    XBindingPath = "Direction",
+
+    YBindingPath = "Tree",
+
+    IsClosed = True,
+
+    DrawType = ChartSeriesDrawType.Area,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/drawtype_area.png)
 
 **DrawType** **as** **Line**
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -601,6 +1339,33 @@ StrokeThickness="2" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+PolarSeries series = new PolarSeries()
+{
+
+    ItemsSource = new ViewModel().PlantDetails,
+
+    XBindingPath = "Direction",
+
+    YBindingPath = "Tree",
+
+    IsClosed = True,
+
+    DrawType = ChartSeriesDrawType.Line,
+
+    StrokeThickness = 2,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/drawtype_line.png)
 
 ## Financial Charts
@@ -610,6 +1375,8 @@ StrokeThickness="2" />
 `HiLoOpenCloseSeries` displays each data point as a group of horizontal and one vertical line. The values for this series can be bind using `High`, `Low`, `Open` and `Close` property.
 
 The following code example shows how to use OHLC series:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -623,6 +1390,29 @@ Open="Open" Close="Close"  />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+HiLoOpenCloseSeries series = new HiLoOpenCloseSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    High = "High", Low = "Low",
+
+    Open = "Open", Close = "Close",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/ohlc.png)
 
 ### Candle
@@ -630,6 +1420,8 @@ Open="Open" Close="Close"  />
 `CandleSeries` displays each data point as a combination of a vertical column and a vertical line. This series is most widely used in decision making places, like the stock market.
 
 The values for this series can be bind using `High`, `Low`, `Open` and `Close` property and the following code example shows the usage of candle series.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -643,6 +1435,29 @@ Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+CandleSeries series = new CandleSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    High = "High", Low = "Low",
+
+    Open = "Open", Close = "Close",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/candle.png)
 
 
@@ -654,19 +1469,49 @@ The APIs present in the Candle series are,
 * `BearFillColor`-Represents the brush color for the segments that show stock price has gone up in measured time interval.
 * `BullFillColor`-Represents that brush color for the segments that show stock price has gone down in measured time interval.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:CandleSeries ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date"   
                     High="High" Open="Open"  Close="Close" Low="Low"  BearFillColor="Black"
                     BullFillColor="#BCBCBC"/>
-{% endhighlight %}                  
+{% endhighlight %}   
+
+{% highlight c# %}
+
+CandleSeries series = new CandleSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    High = "High", Low = "Low",
+
+    Open = "Open", Close = "Close",
+
+    BearFillColor = new SolidColorBrush(Colors.Black),
+
+    BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}               
 
 ![](Series_images/candle_1.png)
+
 ### HiLo
 
 In `HiLoSeries`, each segment is represented by a line. The height of the line depends on the value of the data point, high or low. The values for this series can be bind using `High` and `Low`.
 
 The following code example shows the use of HiLo series:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -680,6 +1525,29 @@ High="High" Low="Low" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+HiLoSeries series = new HiLoSeries()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    High = "High", Low = "Low",
+
+    StrokeThickness = 3,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/hilo.png)
 
 ## Stacking Charts
@@ -689,6 +1557,8 @@ High="High" Low="Low" />
 `StackingColumnSeries` resembles multiple types of series of the ColumnSeries. Each series is vertically stacked one above the other. When there is only one series, then it is ColumnSeries. 
 
 The following code example illustrates how to use StackingColumnSeries:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -722,11 +1592,64 @@ YBindingPath="BronzeMedals" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StackingColumnSeries series1 = new StackingColumnSeries()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath ="GoldMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+StackingColumnSeries series2 = new StackingColumnSeries()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "SilverMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingColumnSeries series3 = new StackingColumnSeries()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "BronzeMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/stackingcolumn.png)
 
 ### Stacking Column 100
 
 `StackingColumn100Series` resembles StackingColumnSeries but the cumulative portion of each stacked element always comes to a total of 100%. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -754,11 +1677,64 @@ ItemsSource="{Binding MedalDetails}"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StackingColumn100Series series1 = new StackingColumn100Series()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "GoldMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+StackingColumn100Series series2 = new StackingColumn100Series()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "SilverMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingColumn100Series series3 = new StackingColumn100Series()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "BronzeMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/stackingcolumn100.png)
 
 ### Stacking Bar
 
 `StackingBarSeries` is a multiple series type of BarSeries. Each BarSeries is then stacked horizontally, side by side to each other. When there exists only one series, it resembles a simple BarSeries. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -794,12 +1770,65 @@ ItemsSource="{Binding MedalDetails}" >
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StackingBarSeries series1 = new StackingBarSeries()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "GoldMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+StackingBarSeries series2 = new StackingBarSeries()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "SilverMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingBarSeries series3 = new StackingBarSeries()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "BronzeMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/stackingbar.png)
 
 
 ### Stacking Bar 100
 
 `StackingBar100Series` resembles a StackingBarSeries. StackingBar100Series displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -829,11 +1858,64 @@ ItemsSource="{Binding MedalDetails}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StackingBar100Series series1 = new StackingBar100Series()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "GoldMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+StackingBar100Series series2 = new StackingBar100Series()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "SilverMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingBar100Series series3 = new StackingBar100Series()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "BronzeMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/stackingbar100.png)
 
 ### Stacking Area
 
 `StackingAreaSeries` is representing areas stacked vertically one above the other. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -859,6 +1941,57 @@ ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StackingAreaSeries series1 = new StackingAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Bus",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+StackingAreaSeries series2 = new StackingAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Car",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingAreaSeries series3 = new StackingAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Truck",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/stackingarea.png)
 
 ### Stacking Area 100
@@ -866,6 +1999,8 @@ ItemsSource="{Binding Accidents}" />
 StackingArea100Series is similar to StackingAreaSeries, but the cumulative portion of each stacked element always totals 100%. 
 
 The following code example shows the way to add stacking area 100 series:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -895,10 +2030,62 @@ ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StackingArea100Series series1 = new StackingArea100Series()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Bus",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+StackingArea100Series series2 = new StackingArea100Series()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Car",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingArea100Series series3 = new StackingArea100Series()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Truck",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/stackingarea100.png)
 
 You can draw open curve like Area using this `IsClosed` property.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -930,12 +2117,83 @@ ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StackingAreaSeries series1 = new StackingAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Bus",
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 3,
+
+    IsClosed = false,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+StackingAreaSeries series2 = new StackingAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Car",
+
+    Stroke = new SolidColorBrush(Colors.White),
+
+    StrokeThickness = 3,
+
+    IsClosed = false,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0X77))
+
+};
+
+StackingAreaSeries series3 = new StackingAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Accidents,
+
+    XBindingPath = "Month",
+
+    YBindingPath = "Truck",
+
+    Stroke = new SolidColorBrush(Colors.Black),
+
+    StrokeThickness = 3,
+
+    IsClosed = false,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/stackingarea_closed.png)
 
 
 ### Grouping Stacked Series
 
 You can group the stacked series using `GroupingLabel` property. The following code example shows how to group the stacking series.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -981,6 +2239,80 @@ ItemsSource="{Binding AnnualDetails}"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+StackingColumnSeries series1 = new StackingColumnSeries()
+{
+
+    ItemsSource = new ViewModel().AnnualDetails,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "Quarter1",
+
+    GroupingLabel="Group1",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A,0x4A,0x4A))
+
+};
+
+StackingColumnSeries series2 = new StackingColumnSeries()
+{
+
+    ItemsSource = new ViewModel().AnnualDetails,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "Quarter2",
+
+    GroupingLabel = "Group1",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+StackingColumnSeries series3 = new StackingColumnSeries()
+{
+
+    ItemsSource = new ViewModel().AnnualDetails,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "Quarter3",
+
+    GroupingLabel = "Group2",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+StackingColumnSeries series4 = new StackingColumnSeries()
+{
+
+    ItemsSource = new ViewModel().AnnualDetails,
+
+    XBindingPath = "Year",
+
+    YBindingPath = "Quarter4",
+
+    GroupingLabel = "Group2",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x34, 0x34, 0x34))
+
+};
+
+chart.Series.Add(series1);
+
+chart.Series.Add(series2);
+
+chart.Series.Add(series3);
+
+chart.Series.Add(series4);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/groupingstacking.png)
 
 
@@ -989,6 +2321,8 @@ ItemsSource="{Binding AnnualDetails}"/>
 ### Range Column
 
 `RangeColumnSeries` is a collection of vertical columns where positioning and height depends on the high and low values of each data point. RangeColumnSeries is used when minimum and maximum need to be specified for the ColumnSeries.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1000,12 +2334,35 @@ High="High" Low="Low"  />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+RangeColumnSeries series = new RangeColumnSeries()
+{
+
+    ItemsSource = new ViewModel().FinancialDatas,
+
+    XBindingPath = "Time",
+
+    High = "High", Low = "Low",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/rangeseries.png)
 
 
 ### Range Area
 
 `RangeAreaSeries` is used to display continuous data points as a set of lines that vary between `High` and `Low` values over intervals of time and across different categories. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1019,6 +2376,27 @@ ItemsSource="{Binding Products}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+RangeAreaSeries series = new RangeAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Products,
+
+    XBindingPath = "ProdName",
+
+    High = "Stock", Low = "Price",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/rangearea.png)
 
 
@@ -1026,6 +2404,8 @@ The APIs present in the RangeArea series are,
 
 * `HighValueInterior` -Gets or sets the brush that represents the interior color for the high value data.
 * `LowValueInterior` - Gets or sets the brush that represents the interior color for the low value data.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1041,6 +2421,29 @@ ItemsSource="{Binding Products}" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+RangeAreaSeries series = new RangeAreaSeries()
+{
+
+    ItemsSource = new ViewModel().Products,
+
+    XBindingPath = "ProdName",
+
+    High = "Stock", Low = "Price",
+
+    HighValueInterior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
+
+    LowValueInterior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/rangearea_closed.png)
 
 ### Histogram 
@@ -1048,6 +2451,8 @@ ItemsSource="{Binding Products}" />
 `HistogramSeries` is one of the seven basic tools of quality control. HistogramSeries is often used to plot the density of data.
 
 The following code example shows how to add the HistogramSeries:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1065,10 +2470,35 @@ YBindingPath="Value"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+HistogramSeries series = new HistogramSeries()
+{
+
+    ItemsSource = new ViewModel().Product,
+
+    XBindingPath = "Price",
+
+    YBindingPath = "Value",
+
+    HistogramInterval = 5,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/histogram.png)
 
 
 You can customize interval using `HistogramInterval` property and the normal distribution curve can be collapsed using `ShowNormalDistributionCurve`.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1088,6 +2518,31 @@ YBindingPath="Value"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+HistogramSeries series = new HistogramSeries()
+{
+
+    ItemsSource = new ViewModel().Product,
+
+    XBindingPath = "Price",
+
+    YBindingPath = "Value",
+
+    HistogramInterval = 5,
+
+    ShowNormalDistributionCurve = false,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/histogram_interval.png)
 
 ## Fast Charts
@@ -1095,6 +2550,8 @@ YBindingPath="Value"/>
 ### Fast Line
 
 The `FastLineSeries` is a special kind of line series that can render a collection with a huge number of datapoints. This was rendered using polyline segment. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1105,6 +2562,27 @@ XBindingPath="Date" Interior="#7F7F7F"
 YBindingPath="Value"/>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+FastLineSeries series = new FastLineSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/fastline.png)
 
@@ -1122,6 +2600,8 @@ The following line properties are available for FastLineSeries:
 
 The following code example shows how to use the fast line bitmap series:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:FastLineBitmapSeries ItemsSource="{Binding Data}"
@@ -1132,11 +2612,36 @@ YBindingPath="Value" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+fChart chart = new SfChart();
+
+FastLineBitmapSeries series = new FastLineBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/fastlinebitmap.png)
 
 Like FastLineSeries, this bitmap series is also having line properties. 
 
 N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using `EnableAntiAliasing` property.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1150,12 +2655,39 @@ YBindingPath="Value" EnableAntiAliasing="True"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastLineBitmapSeries series = new FastLineBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    EnableAntiAliasing =true,
+
+    StrokeDashArray =new DoubleCollection() { 5,5},
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/fastlinealiasing.png)
 
 
 ### Fast Column
 
 `FastColumnBitmapSeries` is used to boost up the performance of the ColumnSeries.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1167,11 +2699,34 @@ XBindingPath="Date" YBindingPath="Price" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastColumnBitmapSeries series = new FastColumnBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/fastcolumn.png)
 
 ### Fast Bar
 
 FastBarBitmapSeries is used to boost up the performance of the series.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1183,12 +2738,35 @@ Interior="#7F7F7F"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastBarBitmapSeries series = new FastBarBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/fastbar.png)
 
 
 ### Fast Candle
 
 FastCandleBitmapSeries renders using bitmap and it displays each data point as a combination of a vertical column and a vertical line, like CandleSeries. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1204,12 +2782,39 @@ BearFillColor="#4A4A4A"  />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastCandleBitmapSeries series = new FastCandleBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().TestingModel,
+
+    XBindingPath = "X",
+
+    High="Y", Low="Y1",
+
+    Open="Y2", Close="Y3",
+
+    BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
+
+    BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/fastcandle.png)
 
 
 ### Fast HiLo
 
 `FastHiLoBitmapSeries` represents a series of line segments with high and low values rendered using WritableBitmap. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1223,6 +2828,23 @@ Low="Price"/>
 
 {% highlight C# %}
 
+FastHiLoBitmapSeries series = new FastHiLoBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().List,
+
+    XBindingPath = "Date",
+
+    High = "Stock",Low = "Price",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F)),
+
+    StrokeThickness = 5
+
+};
+
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 ![](Series_images/fasthilo.png)
@@ -1230,6 +2852,8 @@ Low="Price"/>
 ### Fast OHLC
 
 `FastHiLoOpenCloseBitmapSeries` are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1243,11 +2867,38 @@ BearFillColor="#4A4A4A"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastHiLoOpenCloseBitmapSeries series = new FastHiLoOpenCloseBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().TestingModel,
+
+    XBindingPath = "X",
+
+    High="Y", Low="Y1",
+
+    Open="Y2", Close="Y3",
+
+    BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
+
+    BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/fastohlc.png)
 
 ### Fast Scatter
 
 `FastScatterBitmapSeries` used to render high number scatter points. The `ScatterHeight` and `ScatterWidth`also available as in ScatterSeries.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1265,6 +2916,25 @@ ScatterWidth="4"/>
 
 {% highlight C# %}
 
+FastScatterBitmapSeries series = new FastScatterBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    ScatterHeight = 4,
+
+    ScatterWidth = 4,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
+
+};
+
+chart.Series.Add(series);
+
 {% endhighlight %}
 
 ![](Series_images/fastscatter.png)
@@ -1273,6 +2943,8 @@ ScatterWidth="4"/>
 ### Fast Step Line
 
 `FastStepLineBitmapSeries` is the high performance version of StepLineSeries.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1284,11 +2956,33 @@ YBindingPath="Value" Interior="#4A4A4A" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/faststepline.png)
 
 
 The anti aliasing mode can be enabled using `EnableAntiAliasing` property of FastStepLineBitmapSeries as in below code snippet:
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1300,6 +2994,28 @@ YBindingPath="Value" Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().Data,
+
+    XBindingPath = "Date",
+
+    YBindingPath = "Value",
+
+    EnableAntiAliasing = true ,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/faststepline_alias.png)
 
@@ -1307,6 +3023,8 @@ YBindingPath="Value" Interior="#4A4A4A"/>
 ### Fast Stacking Column
 
 `FastStackingColumnSeries` similar to StackingColumnSeries except that it loads faster and provides better performance. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1320,12 +3038,35 @@ Interior="#4A4A4A" />
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+FastStackingColumnBitmapSeries series = new FastStackingColumnBitmapSeries()
+{
+
+    ItemsSource = new ViewModel().MedalDetails,
+
+    XBindingPath = "CountryName",
+
+    YBindingPath = "GoldMedals",
+
+    Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ![](Series_images/faststackingcolumn.png)
 
 
 # Listening Property Changes
 
 You can notify the source the `XBindingPath` and `YBindingPath` properties changes by setting `ListenPropertyChange` as true as shown in the below code snippet.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -1338,6 +3079,35 @@ XBindingPath="ID" YBindingPath="Coal">
 </chart:ScatterSeries>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+ScatterSeries series = new ScatterSeries()
+{
+
+    ItemsSource = new ViewModel().EnergyProductions,
+
+    XBindingPath = "ID",
+
+    YBindingPath = "Coal",
+
+    ScatterWidth = 20,
+
+    ScatterHeight = 20,
+
+    Label ="Coal",
+
+    ListenPropertyChange=true,
+
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
+
+};
+
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N>By default, the property change was disabled. So the dynamic updates will not get reflect in chart. You need to enable this property.
 

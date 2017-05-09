@@ -24,6 +24,8 @@ Default tool tip template of SfDateTimeRangeNavigator.
 
 The following code illustrates the customization of tool tip.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" Width="700" Height="179"                                      
@@ -36,41 +38,63 @@ ToolTipLabelFormat="yyyy/MMM/dd"
 
 XBindingPath="Date" >
 
-<chart:SfDateTimeRangeNavigator.LeftToolTipTemplate>
+<Grid x:Name="grid">
 
-<DataTemplate>                     
+    <Grid.Resources>
+            
+        <DataTemplate x:Key="tooltipTemplate1">
 
-<Border BorderBrush="Black" BorderThickness="0.5" Background="SeaGreen"  Width="100" Height="30" CornerRadius="10">
+                <Border BorderBrush="Black" BorderThickness="0.5" Background="SeaGreen"  Width="100" Height="30" CornerRadius="10">
 
-<TextBlock Width="90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Foreground="White" Text="{Binding}">
+                    <TextBlock Width="90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Foreground="White" Text="{Binding}">
 
-</TextBlock>
+                    </TextBlock>
 
-</Border>                     
+                </Border>
 
-</DataTemplate>
+       </DataTemplate>
 
-</chart:SfDateTimeRangeNavigator.LeftToolTipTemplate>
+        <DataTemplate x:Key="tooltipTemplate2">
 
-<chart:SfDateTimeRangeNavigator.RightToolTipTemplate>
+                <Border BorderThickness="0.5" BorderBrush="Black" Background="SeaGreen"  Width="100" Height="30" CornerRadius="10">
 
-<DataTemplate>
+                    <TextBlock Width="90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Foreground="White" Text="{Binding}">
 
-<Border BorderThickness="0.5" BorderBrush="Black" Background="SeaGreen"  Width="100" Height="30" CornerRadius="10">
+                    </TextBlock>
 
-<TextBlock Width="90" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Foreground="White" Text="{Binding}">
+                </Border>
 
-</TextBlock>
+        </DataTemplate>
 
-</Border>
+   </Grid.Resources>
 
-</DataTemplate>
-
-</chart:SfDateTimeRangeNavigator.RightToolTipTemplate>
-
-</chart:SfDateTimeRangeNavigator>
+<syncfusion:SfDateTimeRangeNavigator LeftToolTipTemplate="{StaticResource tooltipTemplate1}"
+                                             
+                                     RightToolTipTemplate="{StaticResource tooltipTemplate2}"/>
+</Grid>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+
+    ItemsSource = new ViewModel().StockPriceDetails,
+
+    XBindingPath = "Date",
+
+    ShowToolTip = true,
+
+    ToolTipLabelFormat = "yyyy/MMM/dd",
+
+    LeftToolTipTemplate = grid.Resources["tooltipTemplate"] as DataTemplate
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
 
