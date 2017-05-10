@@ -105,7 +105,7 @@ Below events of `SpreadsheetGridModel` are trigerred while deleting the rows and
 
  spreadsheet.ActiveGrid.Model.ColumnsRemoved += Model_ColumnsRemoved;
 
- void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
+ void Model_ColumnsRemoved(object sender, GridRangeInsertedEventArgs e)
  {
  }
 
