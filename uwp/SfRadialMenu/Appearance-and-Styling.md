@@ -232,13 +232,13 @@ With the DrillDownItem property, you can access and edit submenu items of SfRadi
 
 {% highlight c# %}
 
-radialmenu.DrillDownItem = edit;
+radialMenu.DrillDownItem = edit;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-radialmenu.DrillDownItem = edit
+radialMenu.DrillDownItem = edit
 
 {% endhighlight %}
 
