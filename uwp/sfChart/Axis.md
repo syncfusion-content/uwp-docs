@@ -1820,7 +1820,7 @@ By default, gridlines are automatically added to the ChartAxis in its defined in
 
 The following code example and screenshot show ShowGridLines set to False.
 
-{% tabs }
+{% tabs %}
 
 {% highlight xml %}
 

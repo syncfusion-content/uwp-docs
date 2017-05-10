@@ -473,6 +473,8 @@ chart.Behaviors.Add(zooming);
 
 Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property, you can zoom in on the chart area by touching the screen with your fingers.
 
+{% tabs %}
+
 {% highlight xml %}
 
 <syncfusion:SfChart.SecondaryAxis>
@@ -545,6 +547,8 @@ For the above scenario, when the ZoomPosition is 0.25 then the VisibleRange is f
 Scrollbar position- The scrollbar is placed in percentage of ZoomPosition in the new range, that is, New Range Delta * ZoomPosition. Thus in this case, the scrollbar gets placed in 37.5 (25 + (50 * 0.25)) and the scrollbar width is set to 25 (since ZoomPosition is 0.25).
 
 The value of ZoomFactor and ZoomPosition must also fall within the value of 0 to 1. These can be set for both the Primary and Secondary Axes.
+
+{% tabs %}
 
 {% highlight xml %}
 
