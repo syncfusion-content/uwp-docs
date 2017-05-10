@@ -43,7 +43,7 @@ VisibleSegmentsCount property is used to specify the number of segments availabl
 
 SfRadialMenu radialMenu = new SfRadialMenu();
 radialMenu.LayoutType = LayoutType.Custom;
-radialMenu.VisibleSeggmentsCount = 7; 
+radialMenu.VisibleSegmentsCount = 7; 
  
 {% endhighlight %}
 
@@ -51,7 +51,7 @@ radialMenu.VisibleSeggmentsCount = 7;
 
 SfRadialMenu radialMenu = new SfRadialMenu()
 radialMenu.LayoutType = LayoutType.Custom
-radialMenu.VisibleSeggmentsCount = 7
+radialMenu.VisibleSegmentsCount = 7
  
 {% endhighlight %}
 
