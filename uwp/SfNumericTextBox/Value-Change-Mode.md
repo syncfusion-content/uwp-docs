@@ -64,9 +64,9 @@ In below code sample, the control with name "Quantity_sfNumericTextBox" for Quan
 
         private void sfNumericTextBox_ValueChanged(object sender, Syncfusion.UI.Xaml.Controls.Input.ValueChangedEventArgs e)
         {
-            var sfnumeric = (sender as SfNumericTextBox).Value.ToString();
+            var numericTextBox = (sender as SfNumericTextBox).Value.ToString();
 
-            decimal value = Convert.ToDecimal(sfnumeric);
+            decimal value = Convert.ToDecimal(numericTextBox);
             if (value > 2)
             {
                 var dialog = new MessageDialog("You are not able to purchase more than 2 !", "Message");
@@ -78,9 +78,9 @@ In below code sample, the control with name "Quantity_sfNumericTextBox" for Quan
 
         private void sfNumericTextBox1_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            var sfnumeric = (sender as SfNumericTextBox).Value.ToString();
+            var numericTextBox = (sender as SfNumericTextBox).Value.ToString();
 
-            decimal value = Convert.ToDecimal(sfnumeric);
+            decimal value = Convert.ToDecimal(numericTextBox);
             if (value < 1200)
             {
                 var dialog = new MessageDialog("Sorry, amount cannot be less than 1200.00", "Invalid EMI Amount");
