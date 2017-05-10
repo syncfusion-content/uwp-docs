@@ -2847,6 +2847,8 @@ chart.Series.Add(series);
 
 {% endhighlight %}
 
+{% tabs %}
+
 ![](Series_images/fasthilo.png)
 
 ### Fast OHLC
@@ -2936,6 +2938,8 @@ FastScatterBitmapSeries series = new FastScatterBitmapSeries()
 chart.Series.Add(series);
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Series_images/fastscatter.png)
 

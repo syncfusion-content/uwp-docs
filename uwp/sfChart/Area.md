@@ -594,6 +594,8 @@ chart.Series.Add(columnSeries2);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![Column chart type place one over another.](Area_images/Area_img7.jpeg)
 
 
