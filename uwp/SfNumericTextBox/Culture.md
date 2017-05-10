@@ -17,21 +17,21 @@ The following code sample shows how to localize the control to German culture.
 
 {% highlight c# %}
 
-SfNumericTextBox numerictxt = new SfNumericTextBox();
+SfNumericTextBox numericTextBox = new SfNumericTextBox();
 
-numerictxt.Value = 12345;
+numericTextBox.Value = 12345;
 
-numerictxt.Culture = new CultureInfo("de-DE");
+numericTextBox.Culture = new CultureInfo("de-DE");
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim numerictxt As New SfNumericTextBox()
+Dim numericTextBox As New SfNumericTextBox()
 
-numerictxt.Value = 12345
+numericTextBox.Value = 12345
 
-numerictxt.Culture = New CultureInfo("de-DE")
+numericTextBox.Culture = New CultureInfo("de-DE")
 
 {% endhighlight %}
 
