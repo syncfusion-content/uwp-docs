@@ -1011,7 +1011,7 @@ SuggestionMode="Custom"
 
         {
 
-            Person model = item as Person;
+            Employee model = item as Employee;
 
             if (model != null)
 
@@ -1079,50 +1079,6 @@ autoComplete.Filter = AddressOf MyFilter
 ![](AutoComplete_images/AutoComplete_img21.png)
 
 N>  Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend.
-
-### Ignore Case
-
-This option allows the control to filter suggestions by ignoring the case. The default value is false.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<editors:SfTextBoxExt x:Name="textBoxExt" HorizontalAlignment="Center" 
-
-                            VerticalAlignment="Center" 
-
-                            Width="400"
-
-                            SearchItemPath="Name"
-
-IgnoreCase="True"
-
-                            AutoCompleteMode="Suggest"
-
-                            AutoCompleteSource="{Binding Employees}"/>
-
-{% endhighlight %}
-
-{% endtabs %}
-
-{% tabs %}
-
-{% highlight C# %}
-
- textBoxExt.IgnoreCase = true;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
- textBoxExt.IgnoreCase = True
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](AutoComplete_images/AutoComplete_img23.png)
 
 ### Minimum Prefix Length
 
