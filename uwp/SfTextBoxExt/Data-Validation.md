@@ -64,9 +64,10 @@ public class DataValidationHelper : INotifyPropertyChanged, IDataValidation
                 return "Name field required.";
 
             }
+         
+            return "";
 
-        }
-         return "";
+        }         
 
     }
 
@@ -225,7 +226,7 @@ Gets or sets the name of the property which bound to the SfTextBoxExt Value prop
 
             <TextBlock Text="Name:" />
 
-            <sync:SfTextBoxExt x:Name="NameBox"
+            <Input:SfTextBoxExt x:Name="NameBox"
 
                                 Width="250"
 
