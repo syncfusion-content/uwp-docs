@@ -32,6 +32,35 @@ SfSpreadsheet provides support for dynamically inserting rows and columns into a
 {% endhighlight %}
 {% endtabs %}
 
+###Events
+
+Below events of `SpreadsheetGridModel` are trigerred while inserting the rows and columns. 
+
+* `RowsInserted`
+* `ColumnsInserted`
+
+{% tabs %}
+{% highlight c# %}
+
+//To notify when rows are inserted
+
+ spreadsheet.ActiveGrid.Model.RowsInserted += Model_RowsInserted;
+
+ void Model_RowsInserted(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
+
+//To notify when Columns are inserted
+
+ spreadsheet.ActiveGrid.Model.ColumnsInserted += Model_ColumnsInserted;
+
+ void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Delete Rows and Columns
 
 SfSpreadsheet provides support for deleting rows and columns from a worksheet,
@@ -50,6 +79,35 @@ SfSpreadsheet provides support for deleting rows and columns from a worksheet,
  spreadsheet.ActiveSheet.DeleteColumn(3, 2);
 
  spreadsheet.ActiveGrid.Model.RemoveColumns(3, 2);
+
+{% endhighlight %}
+{% endtabs %}
+
+###Events
+
+Below events of `SpreadsheetGridModel` are trigerred while deleting the rows and columns. 
+
+* `RowsRemoved`
+* `ColumnsRemoved`
+
+{% tabs %}
+{% highlight c# %}
+
+//To notify when rows are deleted
+
+ spreadsheet.ActiveGrid.Model.RowsRemoved += Model_RowsRemoved;
+
+ void Model_RowsRemoved(object sender, GridRangeRemovedEventArgs e)
+ {
+ }
+
+//To notify when columns are deleted
+
+ spreadsheet.ActiveGrid.Model.ColumnsRemoved += Model_ColumnsRemoved;
+
+ void Model_ColumnsInserted(object sender, GridRangeInsertedEventArgs e)
+ {
+ }
 
 {% endhighlight %}
 {% endtabs %}
