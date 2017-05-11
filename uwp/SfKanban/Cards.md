@@ -64,7 +64,7 @@ Following code snippet is used to define the colors for each key.
 
 IndicatorColorPalette indicatorColorPalette = new IndicatorColorPalette();
 
-indicatorColorPalette.Add(new ColorMapping() { Key = "Low", Color = Colors.Yellow });
+indicatorColorPalette.Add(new ColorMapping() { Key = "Low", Color = Colors.Blue });
 
 indicatorColorPalette.Add(new ColorMapping() { Key = "High", Color = Colors.Red });
 

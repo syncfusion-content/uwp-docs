@@ -81,5 +81,5 @@ This event will be fired after the columns are generated automatically. You can 
 This event is triggered when a column generated.
 
 * [`Columns`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanColumnsGeneratedEventArgsClassColumnsTopic.html)  -  used to get the generated columns.
-* [`IsCancel`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanColumnGeneratedEventArgsClassIsCancelTopic.html)   -  used to cancel the generated column added to th SfKanban.
+* [`IsCancel`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanColumnGeneratedEventArgsClassIsCancelTopic.html)   -  used to cancel the generated column added to the SfKanban.
 * [`CurrentColumn`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanColumnGeneratedEventArgsClassCurrentColumnTopic.html)   -   used to get the current generated column.
