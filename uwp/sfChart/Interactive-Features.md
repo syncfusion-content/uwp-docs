@@ -117,7 +117,7 @@ ChartTooltip.SetVerticalAlignment(series, VerticalAlignment.Bottom);
 
 ChartTooltip.SetEnableAnimation(series, true);
 
-ChartTooltip.SetTooltipMargin(series, new Thickness(3, 3, 3, 3));
+ChartTooltip.SetTooltipMargin(series, new Thickness(3));
 
 chart.Series.Add(series);
 

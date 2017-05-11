@@ -20,6 +20,8 @@ We can customize the markers by initializing the marker template selector class,
 * [`MarkerBrush`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsMarkerTemplateSelectorClassMarkerBrushTopic.html) – Gets or sets the brush to paint the markers of the sparkline.
 * [`MarkerTemplate`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/frlrfSyncfusionUIXamlChartsMarkerTemplateSelectorClassMarkerTemplateTopic.html) – Gets or sets the data template to sparkline marker.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfLineSparkline  Interior="#4a4a4a" 
@@ -58,7 +60,9 @@ We can customize the markers by initializing the marker template selector class,
 
 </Syncfusion:SfLineSparkline >
 
-{%endhighlight%}
+{% endhighlight %}
+
+{% highlight c# %}
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
@@ -73,7 +77,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
     BorderBrush = new SolidColorBrush(Colors.DarkGray),
 
-    BorderThickness = new Thickness(1, 1, 1, 1)
+    BorderThickness = new Thickness(1)
 
 };
 
@@ -179,7 +183,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 	BorderBrush = new SolidColorBrush(Colors.DarkGray),
 
-	BorderThickness = new Thickness (1,1,1,1)
+	BorderThickness = new Thickness (1)
 
 };
 

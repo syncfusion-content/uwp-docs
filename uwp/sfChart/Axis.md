@@ -167,8 +167,6 @@ Gets or sets the LabelPlacement that represents the position of the label in the
 
 {% highlight xml %}
 
-
-
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
                 <syncfusion:SfChart.DataContext>
@@ -355,8 +353,6 @@ The following code example and screenshot are for DateTimeAxis.
 
 {% highlight xml %}
 
-
-
   <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
             <syncfusion:SfChart.DataContext>
@@ -454,9 +450,7 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 
 {% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
@@ -494,7 +488,7 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 
 {% endhighlight %}
 
-{% highlight c# %
+{% highlight c# %}
 
 chart.Margin = new Thickness(5, 0, 10, 0);
 
@@ -678,8 +672,6 @@ Gets or sets the double value that represents the logarithmic base value of the 
 {% tabs %}
 
 {% highlight xml %}
-
-
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
