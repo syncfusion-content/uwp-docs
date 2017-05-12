@@ -303,13 +303,13 @@ CellTapped event occurs when the user clicks or touches the `Cell` in SfDataGrid
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name="datagrid" 
+<Syncfusion:SfDataGrid x:Name="dataGrid" 
                        CellTapped="datagrid_CellTapped"                         
                        ItemsSource="{Binding OrderInfoCollection }">
 </Syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.datagrid.CellTapped += Datagrid_CellTapped;    
+this.dataGrid.CellTapped += Datagrid_CellTapped;    
 
 private void Datagrid_CellTapped(object sender, GridCellTappedEventArgs e)
 {
@@ -329,13 +329,13 @@ CellDoubleTapped event occurs when the user double clicks or double taps the `Gr
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name="datagrid" 
+<Syncfusion:SfDataGrid x:Name="dataGrid" 
                        CellDoubleTapped="datagrid_CellDoubleTapped"                     
                        ItemsSource="{Binding OrderInfoCollection }">
 </Syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.datagrid.CellDoubleTapped += Datagrid_CellDoubleTapped;  
+this.dataGrid.CellDoubleTapped += Datagrid_CellDoubleTapped;  
 
 private void Datagrid_CellDoubleTapped(object sender, GridCellDoubleTappedEventArgs e)
 {
