@@ -31,28 +31,28 @@ The following steps explain how to create 3D charts.
 2. Choose Windows > Extensions > Syncfusion controls for UWP XAML.
 3. Add the following namespace in your XAML page:
 
-   ~~~ xml
+{% highlight xaml %}
 
         xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
 
-   ~~~
+{% endhighlight %}
    
 
 4. Initialize the chart represented by the following class, Syncfusion.UI.Xaml.Charts.SfChart3D:
 
-   ~~~ xml
+{% highlight xaml %}
 
         <Syncfusion:SfChart3D>
 
 		</Syncfusion:SfChart3D>
 
-   ~~~
+{% endhighlight %}
    
 
 
 5. Next, declare the primary axis and secondary axis:
 
-   ~~~ xml
+{% highlight xaml %}
 
         <Syncfusion:SfChart3D>
 
@@ -70,10 +70,10 @@ The following steps explain how to create 3D charts.
 
 		</Syncfusion:SfChart3D >
 
-   ~~~
+{% endhighlight %}
    
 
-###Add Chart Series to Chart
+### Add Chart Series to Chart
 
 To begin with plotting data choose from a wide variety of graphical representations available in the Chart library (e.g., 3DColumn series, 3D PieSeries). The graph selected will depend on the scenario of the user and the nature of the data.
 
@@ -317,12 +317,13 @@ A Boolean property to show or hide the labels</td></tr>
 
 
 
-###Create a simple chart series
+### Create a simple chart series
 
 The following code can be used to create a simple doughnut series:
-{% tabs %}
-{% highlight xml %}
 
+{% tabs %}
+
+{% highlight xaml %}
 
 <Page.DataContext>
 
@@ -379,11 +380,10 @@ YBindingPath="NoOfUsers">
 
 
     </Syncfusion:SfChart3D >
+
 {% endhighlight %}
 
 {% highlight c# %}
-
-
 
 public class UserProfile
 
@@ -434,9 +434,12 @@ public class UsersViewModel
   }
 
  }
+
 {% endhighlight %}
 
 {% endtabs %}
+
+
 The following image illustrates the result of the above code sample:
 
 ![](3D-Charts_images/3D-Charts_img2.png)
