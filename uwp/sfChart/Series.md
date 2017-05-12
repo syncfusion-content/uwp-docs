@@ -2847,7 +2847,7 @@ chart.Series.Add(series);
 
 {% endhighlight %}
 
-{% tabs %}
+{% endtabs %}
 
 ![](Series_images/fasthilo.png)
 

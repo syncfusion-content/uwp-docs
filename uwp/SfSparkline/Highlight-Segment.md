@@ -10,6 +10,8 @@ documentation: ug
 
 This feature enable to highlight the column segments on mouse move and this is applicable for column and win-loss sparkline.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Syncfusion:SfWinLossSparkline Interior="Gray" BorderBrush="DarkGray" 

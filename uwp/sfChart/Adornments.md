@@ -718,9 +718,9 @@ public object Convert(object value, Type targetType, object parameter, System.Gl
 
 {
 
-ChartPieAdornment adornment= value as ChartPieAdornment;
+    ChartPieAdornment adornment= value as ChartPieAdornment;
 
-return (adornment.Item as GoldDemand).Demand ;
+    return (adornment.Item as GoldDemand).Demand ;
 
 }
 
@@ -852,9 +852,9 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
     Background = new SolidColorBrush(Colors.DarkGray),
 
-    BorderThickness = new Thickness(1, 1, 1, 1),
+    BorderThickness = new Thickness(1),
 
-    Margin = new Thickness(1, 1, 1, 1),
+    Margin = new Thickness(1),
 
     FontStyle = FontStyles.Italic,
 
@@ -1419,9 +1419,9 @@ ColumnSeries series = new ColumnSeries();
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
 
-ShowLabel = true,
+    ShowLabel = true,
 
-LabelPosition = AdornmentsLabelPosition.Inner
+    LabelPosition = AdornmentsLabelPosition.Inner
 
 };
 
@@ -1457,9 +1457,9 @@ ColumnSeries series = new ColumnSeries();
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
 
-ShowLabel = true,
+    ShowLabel = true,
 
-LabelPosition = AdornmentsLabelPosition.Outer
+    LabelPosition = AdornmentsLabelPosition.Outer
 
 };
 

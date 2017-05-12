@@ -69,6 +69,8 @@ You need to initialize the sparkline represented by the following class of Syncf
 SfLineSparkline sparkline = new SfLineSparkline()
 
 {% endhighlight %}
+
+{% endtabs %}
  
 ### Create a data source
 
