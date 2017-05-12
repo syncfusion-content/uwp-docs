@@ -1214,15 +1214,15 @@ StringBuilder sb1 = new StringBuilder();
 sb1.Append("<DataTemplate xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\">");          
 sb1.Append("<TextBlock Text=\"{Binding CustomerID}\" />");                       
 sb1.Append("</DataTemplate>");
-DataTemplate celltemplate = (DataTemplate)XamlReader.Load(sb1.ToString());
+DataTemplate cellTemplate = (DataTemplate)XamlReader.Load(sb1.ToString());
 
 StringBuilder sb2 = new StringBuilder();
 sb2.Append("<DataTemplate xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\">");
 sb2.Append("<TextBox Text=\"{Binding CustomerID, Mode=TwoWay}\" />");
 sb2.Append("</DataTemplate>");
-DataTemplate edittemplate = (DataTemplate)XamlReader.Load(sb2.ToString());
+DataTemplate editTemplate = (DataTemplate)XamlReader.Load(sb2.ToString());
 
-this.dataGrid.Columns.Add(new GridTemplateColumn() { MappingName = "IsClosed", CellTemplate = celltemplate, EditTemplate = edittemplate });
+this.dataGrid.Columns.Add(new GridTemplateColumn() { MappingName = "IsClosed", CellTemplate = viewModel, EditTemplate = editTemplate });
 {% endhighlight %}
 {% endtabs %}
 
@@ -1835,8 +1835,8 @@ public class StringToImageConverter : IValueConverter
 {
     object IValueConverter.Convert(object value, Type targetType, object parameter, string language)
     {
-        string imagename = value as string + ".png";
-        return new BitmapImage(new Uri("ms-appx:///Images/"+imagename, UriKind.Absolute));
+        string imageName = value as string + ".png";
+        return new BitmapImage(new Uri("ms-appx:///Images/"+imageName, UriKind.Absolute));
     }
 
     object IValueConverter.ConvertBack(object value, Type targetType, object parameter, string language)
@@ -2753,7 +2753,7 @@ public class MaxLengthConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)
     {
-        // Define maxlength for column
+        // Define maxLength for column
         int maxLength = 5;
         // Get the ColumnValue
         var columnValue = System.Convert.ToString(value);

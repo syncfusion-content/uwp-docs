@@ -1175,7 +1175,7 @@ this.dataGrid.ItemsSourceChanged += DataGrid_ItemsSourceChanged;
 
 private async void DataGrid_Loaded(object sender, RoutedEventArgs e)
 {
-    this.SfdataGrid.ItemsSource = await (this.DataContext as ViewModel).GetRecords();
+    this.sfDataGrid.ItemsSource = await (this.DataContext as ViewModel).GetRecords();
 } 
 
 

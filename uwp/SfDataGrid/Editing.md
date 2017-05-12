@@ -343,15 +343,15 @@ this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
 
 private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
 {
-    var recordindex = this.dataGrid.ResolveToRecordIndex(args.RowColumnIndex.RowIndex);
+    var recordIndex = this.dataGrid.ResolveToRecordIndex(args.RowColumnIndex.RowIndex);
 
-    var columnindex = this.dataGrid.ResolveToGridVisibleColumnIndex(args.RowColumnIndex.ColumnIndex);
+    var columnIndex = this.dataGrid.ResolveToGridVisibleColumnIndex(args.RowColumnIndex.ColumnIndex);
 
-    var mappingname = this.dataGrid.Columns[columnindex].MappingName;
+    var mappingName = this.dataGrid.Columns[columnIndex].MappingName;
 
-    var record = this.dataGrid.View.Records.GetItemAt(recordindex);
+    var record = this.dataGrid.View.Records.GetItemAt(recordIndex);
 
-    var cellvalue = this.dataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingname);
+    var cellValue = this.dataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
 
     if (args.RowColumnIndex == new RowColumnIndex(3, 2))
         args.Cancel = true;
@@ -539,7 +539,7 @@ public class GridCellNumericRendererExt : GridCellNumericRenderer
         if ((!char.IsLetterOrDigit(e.Key.ToString(), 0) || !DataGrid.AllowEditing || DataGrid.NavigationMode != NavigationMode.Cell) || CheckControlKeyPressed() || (e.Key == VirtualKey.F2))
             return;
 
-        //The Editing for current cell of GridNuermicColumn is processed here.
+        //The Editing for current cell of GridNumericColumn is processed here.
         if (DataGrid.SelectionController.CurrentCellManager.BeginEdit())
             PreviewTextInput(e);
     }

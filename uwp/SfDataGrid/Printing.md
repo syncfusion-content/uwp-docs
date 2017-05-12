@@ -310,21 +310,20 @@ SfDataGrid allows you to set different Row height for specific rows while printi
 
 {% tabs %}
 {% highlight c# %}
- private class CustomPrintManager : GridPrintManager
- {
-        public CustomPrintManager(SfDataGrid grid)
-            : base(grid)
-        {
-        }
-
-        protected override double GetRowHeight(object record, int rowindex)
-        {
-            if (rowindex != -1 && !(record is Group))
-                if (rowindex % 2 != 0)
-                    return 80.0;
-            return base.GetRowHeight(record, rowindex);
-        }
- }
+private class CustomPrintManager : GridPrintManager
+{
+    public CustomPrintManager(SfDataGrid grid)
+        : base(grid)
+    {
+    }
+    protected override double GetRowHeight(object record, int rowIndex, RowType rowtype)
+    {
+        if (rowIndex != -1 && !(record is Group))
+            if (rowIndex % 2 != 0)
+                return 80.0;
+        return base.GetRowHeight(record, rowIndex, rowtype);
+    }       
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -351,13 +350,12 @@ public class CustomPrintManager : GridPrintManager
         : base(grid)
     {
     }
-
-    protected override double GetRowHeight(object record, int rowindex)
+    protected override double GetRowHeight(object record, int rowIndex, RowType rowtype)
     {
-        if (record is GridUnBoundRow)
-            return 0;
-        return base.GetRowHeight(record, rowindex);
-    }
+            if (record is GridUnBoundRow)
+                return 0;
+            return base.GetRowHeight(record, rowIndex, rowtype);
+    }       
 }
 {% endhighlight %}
 {% endtabs %}
