@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Workflows | SfKanban | uwp | Syncfusion
-description: workflows
+description: The following section describes how to define the workflows to the Kanban.
 platform: uwp
 control: SfKanban
 documentation: ug
@@ -52,15 +52,23 @@ A Kanban workflow is a set of Category and AllowedTransitions that an item mo
 WorkflowCollection workflows = new WorkflowCollection();
 
 workflows.Add(new KanbanWorkflow()
+
 {
+
     Category = "Open",
+
     AllowedTransitions = new List<object>() {"In Progress"}
+
 });
 
 workflows.Add(new KanbanWorkflow()
+
 {
+
     Category = "In Progress",
+
     AllowedTransitions = new List<object>() {"Review", "Done"}
+
 });
 
 Kanban.Workflows = workflows;
