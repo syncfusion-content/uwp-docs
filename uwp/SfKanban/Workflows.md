@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | SfKanban | uwp | Syncfusion
-description: getting started
+title: Workflows | SfKanban | uwp | Syncfusion
+description: workflows
 platform: uwp
 control: SfKanban
 documentation: ug
