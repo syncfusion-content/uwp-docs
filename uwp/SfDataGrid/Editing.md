@@ -318,7 +318,7 @@ private void Datagrid_CellTapped(object sender, GridCellTappedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### CellDoubleTapped Event
+### CellDoubleTapped Event
 CellDoubleTapped event occurs when the user double clicks or double taps the `GridCell` in SfDataGrid with [GridCellDoubleTappedEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridCellDoubleTappedEventArgsClassTopic.html). CellDoubleTapped event does not occur for non-selectable cells. GridCellDoubleTappedEventArgs has following members which provides information for `CellDoubleTapped ` event.
 
 * [Column](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassColumnTopic.html) - Gets the GridColumn of the double tapped cell.
