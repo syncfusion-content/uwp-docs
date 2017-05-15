@@ -28,10 +28,10 @@ Description
 </tr>
 <tr>
 <td>
-[GridTextColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridTextColumnClassTopic.html)
+{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridTextColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTextBoxRendererClassTopic.html)
+{{'[GridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTextBoxRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the string data. 
@@ -39,10 +39,10 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridNumericColumnClassTopic.html)
+{{'[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridNumericColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellNumericRendererClassTopic.html)
+{{'[GridCellNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellNumericRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric data.
@@ -50,10 +50,10 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridDateTimeColumnClassTopic.html)
+{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridDateTimeColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellDateTimeRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellDateTimeRendererClassTopic.html)
+{{'[GridCellDateTimeRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellDateTimeRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the date time value.
@@ -61,10 +61,10 @@ Use to display the date time value.
 </tr>
 <tr>
 <td>
-[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridComboBoxColumnClassTopic.html)
+{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridComboBoxColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellComboBoxRendererClassTopic.html)
+{{'[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellComboBoxRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using <code>ComboBox</code>.
@@ -72,10 +72,10 @@ Use to display the IEnumerable data using <code>ComboBox</code>.
 </tr>
 <tr>
 <td>
-[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCheckBoxColumnClassTopic.html)
+{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCheckBoxColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellCheckBoxRendererClassTopic.html)
+{{'[GridCellCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellCheckBoxRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the boolean type data.
@@ -83,10 +83,10 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
-[GridImageColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridImageColumnClassTopic.html)
+{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridImageColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellImageRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellImageRendererClassTopic.html)
+{{'[GridCellImageRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellImageRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the image in each row.
@@ -94,10 +94,10 @@ Use to display the image in each row.
 </tr>
 <tr>
 <td>
-[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridHyperlinkColumnClassTopic.html)
+{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridHyperlinkColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellHyperLinkRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellHyperlinkRendererClassTopic.html)
+{{'[GridCellHyperLinkRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellHyperlinkRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the URI data.
@@ -105,10 +105,10 @@ Use to display the URI data.
 </tr>
 <tr>
 <td>
-[GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridTemplateColumnClassTopic.html)
+{{'[GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridTemplateColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTemplateRendererClassTopic.html)
+{{'[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTemplateRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the custom template-specified content.
@@ -116,11 +116,11 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-[GridUnboundColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridUnBoundColumnClassTopic.html)
+{{'[GridUnboundColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridUnBoundColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTextBoxRendererClassTopic.html)
-[GridUnBoundCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTemplateRendererClassTopic.html)
+{{'[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTextBoxRendererClassTopic.html)'| markdownify }}
+{{'[GridUnBoundCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTemplateRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display custom information of each record.
@@ -128,25 +128,37 @@ Use to display custom information of each record.
 </tr>
 <tr>
 <td>
-[GridMultiColumnDropDownList](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassTopic.html)
+{{'GridMultiColumnDropDownList](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassTopic.html)'| markdownify }}
 </td>
 <td>
-[GridCellMultiColumnDropDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellMultiColumnDropDownRendererClassTopic.html)
+{{'[GridCellMultiColumnDropDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellMultiColumnDropDownRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
-Use to display the IEnumerable data using [SfMultiColumnDropdownControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfMultiColumnDropDownControlClassTopic.html).
+Use to display the IEnumerable data using [SfMultiColumnDropdownControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfMultiColumnDropDownControlClassTopic.html)'| markdownify }}
 </td>
 </tr>
 <tr>
 <td>
-[GridUpDownColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridUpDownColumnClassTopic.html)
+{{'[GridUpDownColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridUpDownColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-GridCellUpDownRenderer
+{{'[GridCellUpDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCellsGridCellUpDownRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric data using <code>SfNumericUpDown</code>.
 </td>
+</tr>
+<tr>
+<td>
+{{'[GridToggleSwitchColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridToggleSwitchColumnClassTopic.html)'| markdownify }}
+</td>
+<td>
+{{'[GridCellToggleSwitchRenderer] (https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCellsGridCellToggleSwitchRendererClassTopic.html)'| markdownify }}
+</td>
+<td>
+Use to display the boolean data using <code>ToggleSwitch</code>.
+</td>
+
 </tr>
 </table>
 
@@ -903,6 +915,18 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", M
 ### Parsing Mode
 
 You can bind either `Decimal` or `Double` values with GridNumericColumn by using `ParsingMode` property. The default parsing mode is `Double`.
+
+### Percent Display Mode
+
+You can allow users to display the value in `Value` mode  or `Compute` mode by setting by [PercentDisplayMode](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridNumericColumnClassPercentDisplayModeTopic.html) property. `Value` mode displays the value with percentage symbol and `Compute` mode displays the computed value with percentage symbol.
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:GridNumericColumn HeaderText="UnitPrice" MappingName="UnitPrice" PercentDisplayMode="Compute"/>
+{% endhighlight %}
+{% highlight c# %}
+this.sfDataGrid.Columns.Add(new GridNumericColumn() { MappingName = "UnitPrice", HeaderText = "UnitPrice", PercentDisplayMode = PercentDisplayMode.Value });
+{% endhighlight %}
+{% endtabs %}
 
 ## GridDateTimeColumn
 
@@ -1940,6 +1964,32 @@ You can change the alignment of spin button using [SpinButtonsAlignment](https:/
 
 You can specify the value to get increment or decrement when up and down arrow key is pressed by using `SmallChange` property.
 If you want to increment or decrement the value when <Kbd>PageUp</kbd> and <kbd>PageDown</kbd> key is pressed using `LargeChange` property.
+
+## GridToggleSwitchColumn
+
+[GridToggleSwitchColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridToggleSwitchColumnClassTopic.html) derived from [GridColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnClassTopic.html) and it is used to display `Boolean` type data. It hosts [ToggleSwitch](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.toggleswitch) element as [GridCell](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCells.html) content.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="sfDataGrid"
+                       AutoGenerateColumns="False"
+                       AllowEditing="True"
+                       ItemsSource="{Binding OrderInfoCollection}">
+            <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridToggleSwitchColumn HeaderText="IsDelivered" MappingName="IsDelivered"/>
+            </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.sfDataGrid.Columns.Add(new GridToggleSwitchColumn() { MappingName = "IsDelivered", HeaderText = "IsDelivered" });
+{% endhighlight %}
+{% endtabs %}
+
+### ToggleSwitch Content Settings
+
+GridToggleSwitchColumn provides support to display the text, while ToggleSwitch is in `ON`/`OFF` state based on [OnContent](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridToggleSwitchColumnClassOnContentTopic.html) and [OffContent](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridToggleSwitchColumnClassOffContentTopic.html) properties.
+
+![](Column-Types_images/Column-Types_img36.png)
 
 ## Custom column support
 
