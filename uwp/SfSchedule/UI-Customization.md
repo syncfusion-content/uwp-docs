@@ -47,7 +47,7 @@ The default appearance of the Appointment can be customized by using the **Appoi
                 StartTime = DateTime.Now.Date.AddHours(9),
                 EndTime = DateTime.Now.Date.AddHours(11),
                 Subject = "scrum",
-                Location = "chennai",
+                Location = "Chennai",
             });
 
 {% endhighlight %}

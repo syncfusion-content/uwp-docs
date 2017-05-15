@@ -297,7 +297,7 @@ NonWorkingDateCollection property allows you to add the Non-Working Days of the 
     SfSchedule schedule = new SfSchedule();
     schedule.IsHighLightWorkingHours = true;
     schedule.ScheduleType = ScheduleType.Week;
-    schedule.NonWorkingDays = "tuesday,thursday,friday";
+    schedule.NonWorkingDays = "Tuesday,Thursday,Friday";
     schedule.NonWorkingHourBrush = new SolidColorBrush(Colors.LightBlue);
     schedule.NonWorkingDateCollection.Add(DayOfWeek.Tuesday);
     schedule.NonWorkingDateCollection.Add(DayOfWeek.Thursday);
@@ -501,7 +501,7 @@ Used to customize the line stroke of month view.<br/><br/></td></tr>
             schedule.MinorTickStroke = new SolidColorBrush(Colors.Green);
             schedule.MajorTickLabelStroke = new SolidColorBrush(Colors.Red);
             schedule.MinorTickLabelStroke = new SolidColorBrush(Colors.Green);
-            schedule.DayViewVerticaLineStroke = new SolidColorBrush(Colors.Blue);
+            schedule.DayViewVerticalLineStroke = new SolidColorBrush(Colors.Blue);
             schedule.MonthViewLineStroke = new SolidColorBrush(Colors.Orange); 
             schedule.MajorTickStrokeDashArray = new DoubleCollection() { 5,10};
             schedule.MinorTickStrokeDashArray = new DoubleCollection() {10,10 };

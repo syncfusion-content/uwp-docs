@@ -97,9 +97,7 @@ In order to bind the data source to **ItemsSource**, First you have to create a 
 
     public class ScheduleAppointmentModel : INotifyPropertyChanged
     {
-        #region Properties
 
-        #region StartTime
         private DateTime startTime;
         public DateTime StartTime
         {
@@ -114,9 +112,7 @@ In order to bind the data source to **ItemsSource**, First you have to create a 
 
             }
         }
-        #endregion
 
-        #region EndTime
         private DateTime endTime;
         public DateTime EndTime
         {
@@ -132,9 +128,7 @@ In order to bind the data source to **ItemsSource**, First you have to create a 
             }
 
         }
-        #endregion
 
-        #region Subject
         private string subject;
         public string Subject
         {
@@ -149,11 +143,8 @@ In order to bind the data source to **ItemsSource**, First you have to create a 
 
             }
         }
-        #endregion
 
-        #endregion
 
-        #region PropertyChanged Event
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -164,7 +155,6 @@ In order to bind the data source to **ItemsSource**, First you have to create a 
 
         }
 
-        #endregion
     }
 
 {% endhighlight %}
@@ -177,9 +167,7 @@ In Next step define property to pass the data source to **ItemsSource** of SfSch
 
     public class ScheduleViewModel : INotifyPropertyChanged
     {
-        #region Properties
 
-        #region ScheduleAppointmentCollection
         private ObservableCollection<ScheduleAppointmentModel> scheduleAppointmentCollection = new ObservableCollection<ScheduleAppointmentModel>();
 
         public ObservableCollection<ScheduleAppointmentModel> ScheduleAppointmentCollection
@@ -194,11 +182,8 @@ In Next step define property to pass the data source to **ItemsSource** of SfSch
                 OnPropertyChanged("ScheduleAppointmentCollection");
             }
         }
-        #endregion
 
-        #endregion
 
-        #region Constructor
 
         public ScheduleViewModel()
         {
@@ -245,9 +230,6 @@ In Next step define property to pass the data source to **ItemsSource** of SfSch
             scheduleAppointmentCollection.Add(appointment5);
         }
 
-        #endregion
-
-        #region PropertyChanged Event
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -257,7 +239,6 @@ In Next step define property to pass the data source to **ItemsSource** of SfSch
                 this.PropertyChanged(this, new PropertyChangedEventArgs(name));
 
         }
-        #endregion
     }
 
 {% endhighlight %}
