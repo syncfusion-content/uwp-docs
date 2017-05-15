@@ -247,7 +247,7 @@ xmlns:datapager="using:Syncfusion.UI.Xaml.Controls.DataPager"
                     Foreground="DarkBlue"
                     Text="Enter value to filter the ShipCity column (Filter by contains)"
                     TextWrapping="Wrap" />
-        <TextBox Name="fitlerTextBox"
+        <TextBox Name="filterTextBox"
                     Width="150"
                     Margin="10" />
         <Button Width="100"
@@ -304,7 +304,7 @@ public sealed partial class MainPage : Page
     private List<OrderInfo> ApplyFilter(List<OrderInfo> source)
     {
         //records are filtered based on ShipName column
-        return source.Where(item => item.ShipCity.Contains(fitlerTextBox.Text)).ToList();
+        return source.Where(item => item.ShipCity.Contains(filterTextBox.Text)).ToList();
     }
 }
 {% endhighlight %}
@@ -411,12 +411,12 @@ public sealed partial class MainPage : Page
     }
 
     //async method which return data with some delay
-    public async Task<List<Employees>> GetEmployeesDetailsListAsync(int startindex, int pagesize)
+    public async Task<List<Employees>> GetEmployeesDetailsListAsync(int startIndex, int pageSize)
     {
         var employees = new List<Employees>();
         //wait the method Execution to 2000 milliseconds
         Task.Delay(1000).Wait();
-        for (int i = startindex; i < (startindex + pagesize); i++)
+        for (int i = startIndex; i < (startIndex + pageSize); i++)
         {
             //Get the Data's to SfDataPager from ViewModel class
             employees.Add(repository.GetEmployees(i));
@@ -445,11 +445,11 @@ public class EmployeeInfoRespository
     {
     }
 
-    public List<Employees> GetEmployees(int startindex, int pagesize)
+    public List<Employees> GetEmployees(int startIndex, int pageSize)
     {
         int j = 0;
         var employees = new List<Employees>();
-        for (int i = startindex; i < (startindex + pagesize); i++)
+        for (int i = startIndex; i < (startIndex + pageSize); i++)
         {
             Employees employee = GetEmployee(employees);
             employees.Add(employee);

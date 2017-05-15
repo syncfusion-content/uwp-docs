@@ -301,14 +301,14 @@ You can customize the width of IndentColumn in SfDataGrid by using [IndentColumn
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name="datagrid"                                      
+<Syncfusion:SfDataGrid x:Name="dataGrid"                                      
                        AllowGrouping="True"
                        IndentColumnWidth="50"
                        ShowGroupDropArea="True"
                        ItemsSource="{Binding OrderInfoCollection }">
 {% endhighlight %}
 {% highlight c# %}
-this.datagrid.IndentColumnWidth = 50;
+this.dataGrid.IndentColumnWidth = 50;
 {% endhighlight %}
 {% endtabs %}
 
@@ -387,29 +387,29 @@ public class GroupDateTimeConverter : IValueConverter
 {
     public object Convert(object value, System.Type targetType, object parameter, CultureInfo culture)
     {
-        var saleinfo = value as SalesByDate;
+        var saleInfo = value as SalesByDate;
         var dt = DateTime.Now;
-        var days = (int)Math.Floor((dt - saleinfo.Date).TotalDays);
-        var dayofweek = (int)dt.DayOfWeek;
-        var diff = days - dayofweek;
+        var days = (int)Math.Floor((dt - saleInfo.Date).TotalDays);
+        var dayofWeek = (int)dt.DayOfWeek;
+        var difference = days - dayofWeek;
 
-        if (days <= dayofweek)
+        if (days <= dayofWeek)
         {
             if (days == 0)
                 return "TODAY";
             if (days == 1)
                 return "YESTERDAY";
-            return saleinfo.Date.DayOfWeek.ToString().ToUpper();
+            return saleInfo.Date.DayOfWeek.ToString().ToUpper();
         }
-        if (diff > 0 && diff <= 7)
+        if (difference > 0 && difference <= 7)
             return "LAST WEEK";
-        if (diff > 7 && diff <= 14)
+        if (difference > 7 && difference <= 14)
             return "TWO WEEKS AGO";
-        if (diff > 14 && diff <= 21)
+        if (difference > 14 && difference <= 21)
             return "THREE WEEKS AGO";
-        if (dt.Year == saleinfo.Date.Year && dt.Month == saleinfo.Date.Month)
+        if (dt.Year == saleInfo.Date.Year && dt.Month == saleInfo.Date.Month)
             return "EARLIER THIS MONTH";
-        if (DateTime.Now.AddMonths(-1).Month == saleinfo.Date.Month)
+        if (DateTime.Now.AddMonths(-1).Month == saleInfo.Date.Month)
             return "LAST MONTH";
         return "OLDER";
     }
@@ -457,19 +457,19 @@ sorted based on the column name described in [GroupColumnDescription](http://hel
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid.GroupColumnDescriptions>
-                <syncfusion:GroupColumnDescription ColumnName="SickLeaveHours"
-                                                   Converter="{StaticResource customGrouping}"
-                                                   SortGroupRecords="True" />
-            </syncfusion:SfDataGrid.GroupColumnDescriptions>
+        <syncfusion:GroupColumnDescription ColumnName="SickLeaveHours"
+                                           Converter="{StaticResource customGrouping}"
+                                           SortGroupRecords="True" />
+</syncfusion:SfDataGrid.GroupColumnDescriptions>
 {% endhighlight %}
 {% highlight c# %}
 GroupColumnDescription groupColumnDesc = new GroupColumnDescription()
-        {
-            ColumnName = "SickLeaveHours",
-            Converter = new CustomGroupingConverter(),
-            SortGroupRecords = true
-        };
-sfDataGrid.GroupColumnDescriptions.Add(groupColumnDesc);
+{
+    ColumnName = "SickLeaveHours",
+    Converter = new CustomGroupingConverter(),
+    SortGroupRecords = true
+};
+dataGrid.GroupColumnDescriptions.Add(groupColumnDesc);
 {% endhighlight %}
 {% endtabs %}
 
@@ -499,9 +499,9 @@ public class CustomSummaryGroupComparer : IComparer<Group>, ISortDirection
     public int Compare(Group x, Group y)
     {
         int cmp = 0;
-        var xgroupSummarry = Convert.ToInt32((x as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
-        var ygroupSummarry = Convert.ToInt32((y as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
-        cmp = ((IComparable)xgroupSummarry).CompareTo(ygroupSummarry);
+        var xGroupSummary = Convert.ToInt32((x as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
+        var yGroupSummary = Convert.ToInt32((y as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
+        cmp = ((IComparable)xGroupSummary).CompareTo(yGroupSummary);
 
         if (this.SortDirection == ListSortDirection.Descending)
             cmp = -cmp;

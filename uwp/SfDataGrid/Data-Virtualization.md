@@ -188,9 +188,9 @@ public class GridVirtualizingCollectionViewExt: GridVirtualizingCollectionView
     }
     
     /// <summary>
-    /// Gets the records count that are inview.
+    /// Gets the records count that are inView.
     /// </summary>
-    /// <returns>Returns the records count that are inview</returns>
+    /// <returns>Returns the records count that are inView</returns>
     public override int GetViewRecordCount()
     {
         return sourceCollection.Count();
@@ -363,9 +363,9 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
             
             if (paramExpression != null && predicate != null)
             {
-                var lamda = Expression.Lambda(predicate, paramExpression);
+                var lambda = Expression.Lambda(predicate, paramExpression);
                 
-                var delg = lamda.Compile();
+                var delg = lambda.Compile();
                 
                 this.RowFilter = (o) =>
                 {

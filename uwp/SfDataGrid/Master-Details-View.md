@@ -76,7 +76,7 @@ public class SalesInfo : INotifyPropertyChanged
 public class OrderInfo : INotifyPropertyChanged
 {
         private int orderId;
-        private int _quantiy;
+        private int _quantity;
 
         public int OrderID
         {
@@ -89,10 +89,10 @@ public class OrderInfo : INotifyPropertyChanged
         }
         public int Quantity
         {
-            get { return _quantiy; }
+            get { return _quantity; }
             set
             {
-                _quantiy = value;
+                _quantity = value;
                 OnPropertyChanged("Quantity");
             }
         }
@@ -389,8 +389,8 @@ this.dataGrid.DetailsViewExpanding += dataGrid_DetailsViewExpanding;
 void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.GridDetailsViewExpandingEventArgs e)
 {
     e.DetailsViewItemsSource.Clear();      
-    var itemssource = GetItemSource();
-    e.DetailsViewItemsSource.Add("ProductDetails", itemssource);   
+    var itemsSource = GetItemSource();
+    e.DetailsViewItemsSource.Add("ProductDetails", itemsSource);   
 }
 
 private ObservableCollection<ProductInfo> GetItemSource()
@@ -449,13 +449,13 @@ private async Task<ObservableCollection<ProductInfo>> GetItemSource()
      return products;
 }
 
-public async Task<bool> Schedule(Action _oncompleteion, int durationMS)
+public async Task<bool> Schedule(Action _onCompleteion, int durationMS)
 { 
     DispatcherTimer timer = new DispatcherTimer();
     timer.Interval = TimeSpan.FromMilliseconds(durationMS);
     //Task that causes time delay
     timer.Tick += timer_Tick;            
-    _oncompleteion();
+    _onCompleteion();
     timer.Stop();
     return true;
 }
@@ -464,8 +464,8 @@ public async Task<bool> Schedule(Action _oncompleteion, int durationMS)
 async void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.GridDetailsViewExpandingEventArgs e)
 {
       e.DetailsViewItemsSource.Clear();
-      var itemssource = await GetItemSource();
-      e.DetailsViewItemsSource.Add("ProductDetails", itemssource);
+      var itemsSource = await GetItemSource();
+      e.DetailsViewItemsSource.Add("ProductDetails", itemsSource);
 }
 {% endhighlight %}
 {% endtabs %}
@@ -1094,15 +1094,15 @@ private void SetWidth(SfDataGrid grid, int scrollColumnIndex, double width)
     var columnIndex = grid.HelperResolveToGridVisibleColumnIndex(scrollColumnIndex);
     if (columnIndex < 0)
         return;
-    var parentstartcolumnnIndex = grid.HelperResolveToStartColumnIndex();
-    var indentcolumnsWidth = 0;
+    var parentStartColumnIndex = grid.HelperResolveToStartColumnIndex();
+    var indentColumnsWidth = 0;
     foreach (var definition in grid.DetailsViewDefinition)
     {
         var detailsViewDataGrid = (definition as GridViewDefinition).DataGrid;
-        var startcolumnnIndex = detailsViewDataGrid.HelperResolveToStartColumnIndex();
-        indentcolumnsWidth = startcolumnnIndex * 24;
-        var tempWidth = width - indentcolumnsWidth < 0 ? 0 : width - indentcolumnsWidth;
-        detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentstartcolumnnIndex ? tempWidth : width;
+        var startColumnIndex = detailsViewDataGrid.HelperResolveToStartColumnIndex();
+        indentColumnsWidth = startColumnIndex * 24;
+        var tempWidth = width - indentColumnsWidth < 0 ? 0 : width - indentColumnsWidth;
+        detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentStartColumnIndex ? tempWidth : width;
         // If DetailsViewDataGrid has DetailsViewDefinition(nested levels), recursively set width upto all levels
         if (detailsViewDataGrid.DetailsViewDefinition != null && detailsViewDataGrid.DetailsViewDefinition.Any())
             SetWidth(detailsViewDataGrid, detailsViewDataGrid.HelperResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns[columnIndex].Width);
@@ -1265,7 +1265,7 @@ this.FirstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCe
 void FirstLevelNestedGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
 {
     var detailsViewDataGrid = args.OriginalSender as DetailsViewDataGrid;
-    var currentCell = detailsViewDataGrid.SelectionController.CurrentCellManager.CurrentCelll;
+    var currentCell = detailsViewDataGrid.SelectionController.CurrentCellManager.CurrentCell;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -1398,9 +1398,9 @@ foreach (var def in this.dataGrid.DetailsViewDefinition)
        index = parentRowIndex + index + 1;
     }
 }
-var rowcolumnIndex = new RowColumnIndex(index, 1);
+var rowColumnIndex = new RowColumnIndex(index, 1);
 // if the DetailsViewDataGrid is already expanded, bring that into view
-dataGrid.ScrollInView(rowcolumnIndex);
+dataGrid.ScrollInView(rowColumnIndex);
 //Get the DetailsViewDataGrid by passing the corresponding row index and relation name
 var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(this.dataGrid.ResolveToRecordIndex(parentRowIndex), "ProductDetails");
 //if the DetailsViewDataGrid is not already expanded, call BringIntoView method
@@ -1555,13 +1555,13 @@ You can customize the width of ExpanderColumn in SfDataGrid by using [ExpanderCo
 
 {% tabs %}
 {% highlight xaml %}
-<Syncfusion:SfDataGrid x:Name="datagrid"                               
+<Syncfusion:SfDataGrid x:Name="dataGrid"                               
                        ExpanderColumnWidth="50"
                        AutoGenerateRelations="True"
                        ItemsSource="{Binding OrderInfoCollection }">
 {% endhighlight %}
 {% highlight c# %}
-this.datagrid.ExpanderColumnWidth = 50;
+this.dataGrid.ExpanderColumnWidth = 50;
 {% endhighlight %}
 {% endtabs %}
 
