@@ -471,15 +471,15 @@ You can select data objects while loading DetailsViewDataGrid using [DetailsView
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid Name="datagrid" 
-                       DetailsViewLoading="datagrid_DetailsViewLoading" >
+<syncfusion:SfDataGrid Name="dataGrid" 
+                       DetailsViewLoading="dataGrid_DetailsViewLoading" >
 </syncfusion:SfDataGrid>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-this.datagrid.DetailsViewLoading += datagrid_DetailsViewLoading;
+this.dataGrid.DetailsViewLoading += dataGrid_DetailsViewLoading;
 
 void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
@@ -544,10 +544,10 @@ You can expand the `DetailsViewDataGrid` programmatically by calling `ExpandDeta
 {% highlight c# %}
 
 int parentRowIndex = 2;
-var recordIndex = this.datagrid.ResolveToRecordIndex(parentRowIndex);
-var record = this.datagrid.View.Records[recordIndex];
+var recordIndex = this.dataGrid.ResolveToRecordIndex(parentRowIndex);
+var record = this.dataGrid.View.Records[recordIndex];
 if (!record.IsExpanded)
-this.datagrid.ExpandDetailsViewAt(recordIndex);
+this.dataGrid.ExpandDetailsViewAt(recordIndex);
 
 {% endhighlight %}
 {% endtabs %}
@@ -560,7 +560,7 @@ If the expanded `DetailsViewDataGrid` is not in view, then you can scroll using 
 int recordIndex = 20;
 int index = 0;
 int parentRowIndex = 25;
-datagrid.ExpandDetailsViewAt(recordIndex);
+dataGrid.ExpandDetailsViewAt(recordIndex);
 foreach (var def in this.dataGrid.DetailsViewDefinition)
 {
     if (def.RelationalColumn == "ProductDetails")
@@ -570,7 +570,7 @@ foreach (var def in this.dataGrid.DetailsViewDefinition)
     }
 }
 //Get the Details view based upon the recordIndex and Column name
-SfDataGrid detailsViewDataGrid = datagrid.GetDetailsViewGrid(recordIndex, "OrderDetails");
+SfDataGrid detailsViewDataGrid = dataGrid.GetDetailsViewGrid(recordIndex, "OrderDetails");
 //Get the DetailsViewManager using Reflection
 var propertyInfo = dataGrid.GetType().GetField("DetailsViewManager", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
 DetailsViewManager detailsViewManager = propertyInfo.GetValue(dataGrid) as DetailsViewManager;
@@ -665,8 +665,8 @@ void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEv
 
 public class GridSelectionControllerExt : GridSelectionController
 {      
-    public GridSelectionControllerExt(SfDataGrid datagrid)
-        : base(datagrid)
+    public GridSelectionControllerExt(SfDataGrid dataGrid)
+        : base(dataGrid)
     { 
     }
 }
@@ -1473,7 +1473,7 @@ By default the sorting operation will be performed while clicking on column head
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDataGrid x:Name="sfDataGrid"
+<syncfusion:SfDataGrid x:Name="dataGrid"
                        SelectionUnit="Cell"
                        SortClickAction="DoubleClick"
                        SelectionMode="Extended"
@@ -1483,28 +1483,28 @@ By default the sorting operation will be performed while clicking on column head
 
 {% highlight c# %}
 
-this.sfDataGrid.PointerPressed += sfDataGrid_PointerPressed;
+this.dataGrid.PointerPressed += dataGrid_PointerPressed;
 
-private void sfDataGrid_PointerPressed(object sender, PointerRoutedEventArgs e)
+private void dataGrid_PointerPressed(object sender, PointerRoutedEventArgs e)
 {
     //GetVisualContainer 
-    var visualContainer = this.sfDataGrid.GetVisualContainer();
+    var visualContainer = this.dataGrid.GetVisualContainer();
     var rowColumnIndex = visualContainer.PointToCellRowColumnIndex(e.GetCurrentPoint(visualContainer).Position);
-    var columnIndex = this.sfDataGrid.ResolveToGridVisibleColumnIndex(rowColumnIndex.ColumnIndex);
+    var columnIndex = this.dataGrid.ResolveToGridVisibleColumnIndex(rowColumnIndex.ColumnIndex);
     if (columnIndex < 0)
         return;
     //Return if it is not HeaderRow
-    if (this.sfDataGrid.GetHeaderIndex() != rowColumnIndex.RowIndex)
+    if (this.dataGrid.GetHeaderIndex() != rowColumnIndex.RowIndex)
         return;
-    var firstRowData = this.sfDataGrid.GetRecordAtRowIndex(sfDataGrid.GetFirstRowIndex());
+    var firstRowData = this.dataGrid.GetRecordAtRowIndex(dataGrid.GetFirstRowIndex());
     //Get the record of LastRowIndex 
-    var lastRowData = this.sfDataGrid.GetRecordAtRowIndex(sfDataGrid.GetLastRowIndex());
+    var lastRowData = this.dataGrid.GetRecordAtRowIndex(dataGrid.GetLastRowIndex());
     //Get the column of particular index
-    var column = this.sfDataGrid.Columns[columnIndex];
+    var column = this.dataGrid.Columns[columnIndex];
     if (firstRowData == null || lastRowData == null)
         return;
     //Select the column
-    this.sfDataGrid.SelectCells(firstRowData, column, lastRowData, column);
+    this.dataGrid.SelectCells(firstRowData, column, lastRowData, column);
 }
 
 {% endhighlight %}

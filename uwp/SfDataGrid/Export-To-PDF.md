@@ -711,11 +711,11 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
         if (e.CellValue.Equals("True"))
         {
             //Access the image from the specified path 
-            style.BackgroundImage = PdfImage.FromStream(typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Images.True.png") as Stream);
+            style.BackgroundImage = PDFImage.FromStream(typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Images.True.png") as Stream);
         }
         else
         {
-            style.BackgroundImage = PdfImage.FromStream(typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Images.False.png") as Stream);
+            style.BackgroundImage = PDFImage.FromStream(typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Images.False.png") as Stream);
         }
 
         e.PdfGridCell.ImagePosition = PdfGridImagePosition.Fit;

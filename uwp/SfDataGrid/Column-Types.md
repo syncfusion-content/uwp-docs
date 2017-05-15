@@ -1222,7 +1222,7 @@ sb2.Append("<TextBox Text=\"{Binding CustomerID, Mode=TwoWay}\" />");
 sb2.Append("</DataTemplate>");
 DataTemplate editTemplate = (DataTemplate)XamlReader.Load(sb2.ToString());
 
-this.dataGrid.Columns.Add(new GridTemplateColumn() { MappingName = "IsClosed", CellTemplate = viewModel, EditTemplate = editTemplate });
+this.dataGrid.Columns.Add(new GridTemplateColumn() { MappingName = "IsClosed", CellTemplate = cellTemplate, EditTemplate = editTemplate });
 {% endhighlight %}
 {% endtabs %}
 

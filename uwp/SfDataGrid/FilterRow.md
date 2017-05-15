@@ -19,7 +19,7 @@ The FilterRowPosition property contains the below positions to load the FilterRo
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid x:Name="sfgrid"
+<syncfusion:SfDataGrid x:Name="dataGrid"
                        FilterRowPosition="FixedTop"
                        AllowEditing="True"
                        AutoGenerateColumns="True"
@@ -108,13 +108,13 @@ The FilterRow will loads with different editors based on underlying type of each
 <table>
 <tr>
 <th>
-EditorType
+{{'**EditorType**'| markdownify }}
 </th>
 <th>
-Editor
+{{'**Editor**'| markdownify }}
 </th>
 <th>
-Renderer
+{{'**Renderer**'| markdownify }}
 </th>
 </tr>
 <tr>
@@ -125,7 +125,7 @@ TextBox
 TextBox
 </td>
 <td>
-[GridFilterRowTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridRowFilterGridFilterRowTextBoxRendererClassTopic.html)
+{{'[GridFilterRowTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridRowFilterGridFilterRowTextBoxRendererClassTopic.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@ Numeric
 DoubleTextBox
 </td>
 <td>
-[GridFilterRowNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridRowFilterGridFilterRowNumericRendererClassTopic.html)
+{{'[GridFilterRowNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridRowFilterGridFilterRowNumericRendererClassTopic.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -147,7 +147,7 @@ CheckBox
 CheckBox
 </td>
 <td>
-[GridFilterRowCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridRowFilterGridFilterRowCheckBoxRendererClassTopic.html)
+{{'[GridFilterRowCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridRowFilterGridFilterRowCheckBoxRendererClassTopic.html)'| markdownify }}
 </td>
 </tr>
 </table>

@@ -158,10 +158,10 @@ N> `GridColumn.CellStyleSelector` takes higher priority than `SfDataGrid.CellS
 {% highlight xaml %}
 <Application.Resources>
     <local:SelectorClass x:Key="styleSelector"/>
-    <Style x:Key="CellStyle1" TargetType="syncfusion:GridCell">
+    <Style x:Key="redCellStyle" TargetType="syncfusion:GridCell">
         <Setter Property="Foreground" Value="Red" />
     </Style>
-    <Style x:Key="CellStyle2" TargetType="syncfusion:GridCell">
+    <Style x:Key="blueCellStyle" TargetType="syncfusion:GridCell">
         <Setter Property="Foreground" Value="DarkBlue" />
     </Style>
 </Application.Resources>
@@ -182,8 +182,8 @@ public class SelectorClass : StyleSelector
         {
             //custom condition is checked based on data.
             if (data.OrderID < 1005)
-                return App.Current.Resources["CellStyle1"] as Style;
-            return App.Current.Resources["CellStyle2"] as Style;
+                return App.Current.Resources["redCellStyle"] as Style;
+            return App.Current.Resources["blueCellStyle"] as Style;
         }
         return base.SelectStyleCore(item, container);
     }        

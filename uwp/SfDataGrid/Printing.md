@@ -310,7 +310,7 @@ SfDataGrid allows you to set different Row height for specific rows while printi
 
 {% tabs %}
 {% highlight c# %}
-private class CustomPrintManager : GridPrintManager
+public class CustomPrintManager : GridPrintManager
 {
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
