@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Workflows | SfKanban | uwp | Syncfusion
-description: The following section describes how to define the workflows to the Kanban.
+description: The following section describes how to define the workflows in the Kanban.
 platform: uwp
 control: SfKanban
 documentation: ug
