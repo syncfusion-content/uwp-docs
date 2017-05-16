@@ -158,7 +158,7 @@ private void TreeGrid_CurrentCellValidating(object sender, Syncfusion.UI.Xaml.Tr
     if (e.NewValue.ToString().Equals("1004"))
     {
         e.IsValid = false;
-        e.ErrorMessage = "OrdrerID 1004 is invalid";
+        e.ErrorMessage = "OrderID 1004 is invalid";
     }
 }
 {% endhighlight %}
