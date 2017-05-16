@@ -196,7 +196,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {
     if (e.UnBoundAction == UnBoundActions.CommitData)
     {
-        var edittedValue = e.Value;
+        var editedValue = e.Value;
     }
 }
 {% endhighlight %}
@@ -299,10 +299,10 @@ public class GridUnBoundRowCellTextBoxRendererExt : GridUnBoundRowCellTextBoxRen
     public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
-        var cellvalue = dataColumn.GridUnBoundRowEventsArgs != null && dataColumn.GridUnBoundRowEventsArgs.Value != null ?
+        var cellValue = dataColumn.GridUnBoundRowEventsArgs != null && dataColumn.GridUnBoundRowEventsArgs.Value != null ?
             dataColumn.GridUnBoundRowEventsArgs.Value.ToString() :
             string.Empty;
-        uiElement.Text = cellvalue;
+        uiElement.Text = cellValue;
         uiElement.Foreground = new SolidColorBrush(Colors.Orange);
     }
 
@@ -310,11 +310,11 @@ public class GridUnBoundRowCellTextBoxRendererExt : GridUnBoundRowCellTextBoxRen
     {
         base.OnInitializeEditElement(dataColumn, uiElement, dataContext);
 
-        var cellvalue = (dataColumn.GridUnBoundRowEventsArgs != null && dataColumn.GridUnBoundRowEventsArgs.Value != null) ?
+        var cellValue = (dataColumn.GridUnBoundRowEventsArgs != null && dataColumn.GridUnBoundRowEventsArgs.Value != null) ?
                             dataColumn.GridUnBoundRowEventsArgs.Value.ToString() :
                             string.Empty;
 
-        uiElement.Text = cellvalue.ToString();
+        uiElement.Text = cellValue.ToString();
     }
 }
 {% endhighlight %}
@@ -359,7 +359,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, SfDatePi
     }
 
     /// <summary>
-    /// Edit Elemnet creation.
+    /// Edit Element creation.
     /// </summary>
     /// <returns></returns>
     protected override SfDatePicker OnCreateEditUIElement()
@@ -368,7 +368,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, SfDatePi
     }
 
     /// <summary>
-    /// Initialze the value for display element.
+    /// Initialize the value for display element.
     /// </summary>
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
