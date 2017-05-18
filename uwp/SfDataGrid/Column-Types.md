@@ -128,13 +128,13 @@ Use to display custom information of each record.
 </tr>
 <tr>
 <td>
-{{'GridMultiColumnDropDownList](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassTopic.html)'| markdownify }}
+{{'[GridMultiColumnDropDownList](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridMultiColumnDropDownListClassTopic.html)'| markdownify }}
 </td>
 <td>
 {{'[GridCellMultiColumnDropDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellMultiColumnDropDownRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
-Use to display the IEnumerable data using [SfMultiColumnDropdownControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfMultiColumnDropDownControlClassTopic.html)'| markdownify }}
+Use to display the IEnumerable data using {{'[SfMultiColumnDropdownControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfMultiColumnDropDownControlClassTopic.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -153,12 +153,11 @@ Use to display the numeric data using <code>SfNumericUpDown</code>.
 {{'[GridToggleSwitchColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridToggleSwitchColumnClassTopic.html)'| markdownify }}
 </td>
 <td>
-{{'[GridCellToggleSwitchRenderer] (https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCellsGridCellToggleSwitchRendererClassTopic.html)'| markdownify }}
+{{'[GridCellToggleSwitchRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCellsGridCellToggleSwitchRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Use to display the boolean data using <code>ToggleSwitch</code>.
 </td>
-
 </tr>
 </table>
 
@@ -2137,7 +2136,7 @@ Cell Type
 GridTextColumn
 </td>
 <td>
-[GridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTextBoxRendererClassTopic.html)
+{{'[GridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTextBoxRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 TextBox
@@ -2148,7 +2147,7 @@ TextBox
 GridNumericColumn
 </td>
 <td>
-[GridCellNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellNumericRendererClassTopic.html)
+{{'[GridCellNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellNumericRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Numeric
@@ -2159,7 +2158,7 @@ Numeric
 GridCheckBoxColumn
 </td>
 <td>
-[GridCellCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellCheckBoxRendererClassTopic.html)
+{{'[GridCellCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellCheckBoxRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 CheckBox
@@ -2170,7 +2169,7 @@ CheckBox
 GridTemplateColumn
 </td>
 <td>
-[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTemplateRendererClassTopic.html)
+{{'[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellTemplateRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Template
@@ -2181,7 +2180,7 @@ Template
 GridImageColumn
 </td>
 <td>
-[GridCellImageRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellImageRendererClassTopic.html)
+{{'[GridCellImageRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellImageRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 Image
@@ -2192,8 +2191,8 @@ Image
 GridUnBoundColumn
 </td>
 <td>
-[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTextBoxRendererClassTopic.html)
-[GridUnBoundCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTemplateRendererClassTopic.html)
+{{'[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTextBoxRendererClassTopic.html)'| markdownify }}
+{{'[GridUnBoundCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTemplateRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 UnBoundTextColumn
@@ -2205,7 +2204,7 @@ UnBoundTemplateColumn
 GridComboBoxColumn
 </td>
 <td>
-[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellComboBoxRendererClassTopic.html)
+{{'[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellComboBoxRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 ComboBox
@@ -2216,7 +2215,7 @@ ComboBox
 GridDateTimeColumn
 </td>
 <td>
-[GridCellDateTimeRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellDateTimeRendererClassTopic.html)
+{{'[GridCellDateTimeRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellDateTimeRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 DateTime
@@ -2227,7 +2226,7 @@ DateTime
 GridHyperlinkColumn
 </td>
 <td>
-[GridCellHyperLinkRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellHyperlinkRendererClassTopic.html)
+{{'[GridCellHyperLinkRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellHyperlinkRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 HyperlinkButton
@@ -2238,7 +2237,7 @@ HyperlinkButton
 GridMultiColumnDropDownList
 </td>
 <td>
-[GridCellMultiColumnDropDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellMultiColumnDropDownRendererClassTopic.html)
+{{'[GridCellMultiColumnDropDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellMultiColumnDropDownRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 MultiColumnDropDown
@@ -2249,7 +2248,7 @@ MultiColumnDropDown
 GridUpDownColumn
 </td>
 <td>
-[GridCellUpDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellUpDownRendererClassTopic.html)
+{{'[GridCellUpDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridCellUpDownRendererClassTopic.html)'| markdownify }}
 </td>
 <td>
 UpDown
