@@ -133,7 +133,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
         <ResourceDictionary.MergedDictionaries>
             <ResourceDictionary Source="ms-appx:///Syncfusion.SfGrid.UWP/Control/Themes/Generic.xaml" />
         </ResourceDictionary.MergedDictionaries>
-        <local:BoolToVisiblityConverter x:Key="VisiblityConverter" />
+        <local:BoolToVisibilityConverter x:Key="VisibilityConverter" />
         <Style TargetType="syncfusion:TreeGridExpanderCell">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0,0,1,1" />
@@ -164,7 +164,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
                                                                                 UpdateSourceTrigger=PropertyChanged}"
                                                             Visibility="{Binding RelativeSource={RelativeSource TemplatedParent},
                                                                                 Path=HasChildNodes,
-                                                                                Converter={StaticResource VisiblityConverter},
+                                                                                Converter={StaticResource VisibilityConverter},
                                                                                 Mode=TwoWay}" />
 
                                 <CheckBox Name="PART_SelectCheckBox"
@@ -183,7 +183,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
                                         IsThreeState="True"
                                         Visibility="{Binding Path=HasChildNodes,
                                                             RelativeSource={RelativeSource Mode=TemplatedParent},
-                                                            Converter={StaticResource VisiblityConverter},
+                                                            Converter={StaticResource VisibilityConverter},
                                                             Mode=TwoWay}" />
                                 <Grid Grid.Column="2"
                                     Margin="2,0,0,0"
@@ -243,7 +243,7 @@ You can collapse node CheckBox for certain nodes by editing the control template
 </Page.Resources>
 {% endhighlight %}
 {% highlight c# %}
-public class BoolToVisiblityConverter : IValueConverter
+public class BoolToVisibilityConverter : IValueConverter
 {     
     public object Convert(object value, Type targetType, object parameter, string language)
     {
