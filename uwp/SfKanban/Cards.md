@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kanban Cards | SfKanban | uwp | Syncfusion
+title: Cards | SfKanban | uwp | Syncfusion
 description: This section describes how the card can be customized using CardTemplate and how to set the IndicatorColorPalette to Kanban.
 platform: uwp
 control: SfKanban
