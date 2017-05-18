@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Kanban Events | SfKanban | uwp | Syncfusion
+title:  Events | SfKanban | uwp | Syncfusion
 description: This section contains the detailed information about the Kanban dragging and column generated events.
 platform: uwp
 control: SfKanban
