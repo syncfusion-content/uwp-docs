@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Placeholder style | SfKanban | uwp | Syncfusion
+title:  Placeholderstyle | SfKanban | uwp | Syncfusion
 description: The following section describes how to customize the place holders of Kanban card while drgging.
 platform: uwp
 control: SfKanban
