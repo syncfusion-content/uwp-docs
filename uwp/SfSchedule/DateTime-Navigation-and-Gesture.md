@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: DateTime Navigation and Gesture | SfSchedule | uwp | Syncfusion
 description: DateTime Navigation and Gesture

@@ -1,4 +1,4 @@
-﻿# User Interactions
+# User Interactions
 ## Change the default context menu
 When tapping on the schedule or appointment, our built-in context menu will be opened and triggering [ContextMenuOpening](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassContextMenuOpeningTopic.html) event. You can create your own context menu by setting `e.Cancel` to true in the `ContextMenuOpening` event. It will avoid to open the default context menu. 
 

@@ -1,4 +1,4 @@
-﻿# TimeLine View
+# TimeLine View
 TimeLine view is used to displays complete TimeLine in selected day, the default visible day of Schedule will be current day. Appointments are added in particular timeslot based on its timeline.
 
 ![](TimeLine-View_images/TimeLineView.png)
