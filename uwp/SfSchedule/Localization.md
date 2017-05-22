@@ -8,14 +8,21 @@ documentation: ug
 ---
 
 # Localization
+Schedule control is available with complete localization support. Localization can be specified by setting the local language to the `PrimaryLanguageOverride`. In the format of `Language code`.
+## Change default control language
+Based on the locale specified the strings in the control such as Date, time, days are localized accordingly.
+By default, schedule control is available with en locale, which is English.
 
-The SfSchedule control allows you to set custom resources through .resx files. You can simply provide the string values in a resource file for a specific culture and set it in your application. The given string values will be set accordingly in the SfSchedule control. The appointment windows, message boxes, and other alert windows will be displayed with text in the local language (culture). If the application is deployed in French culture, then the SfSchedule control will display its contents in French language.
 
-{% highlight c# %}
+{% tabs %}   
+{% highlight c# %} 
 
-	ApplicationLanguages.PrimaryLanguageOverride ="fr-fr";
+        ApplicationLanguages.PrimaryLanguageOverride = "fr";
 
-{% endhighlight %}
+{% endhighlight %}   
+{% endtabs %}
+
+>**Note:** AM/PM in the timeline will not be localized in the Schedule views.
 
 **Windows**
 
@@ -32,7 +39,10 @@ The SfSchedule control allows you to set custom resources through .resx files. Y
 </td></tr>
 </table>
 
-## Advantages of Localization
+## Localizing custom text in UWP renderer.
+You can localize custom text available in the control by adding equivalent localized string in the fr.resw file. Here we have used French language.
+>**Note:** Here resw file name should be match with the given locale language code.
 
-The SfSchedule control can be embedded in applications deployed in any culture (e.g., en-US is the culture for English spoken in United States; en-GB is the culture for English spoken in United Kingdom or Great Britain) to provide details and information in the native language of the users.
+![](Localization_images/Localization_CustomText.png)
+
 
