@@ -187,7 +187,7 @@ Alternatively, a FileOpenPicker can also be used to load documents at run time. 
 
 {% tabs %}
 {% highlight xaml %}
-<Button Name="BtnOpen" Click="BtnOpen_Click" Content="Open"/>
+<Button Name="Open" Click="Open_Click" Content="Open"/>
 {% endhighlight %}
 {% endtabs %}
 
@@ -195,7 +195,7 @@ Include the below code in the click event of the button.
 
 {% tabs %}
 {% highlight c# %}
-async private void BtnOpen_Click(object sender, RoutedEventArgs e)
+async private void Open_Click(object sender, RoutedEventArgs e)
         {
             //Opens a file picker.
             var picker = new FileOpenPicker();
@@ -211,12 +211,12 @@ async private void BtnOpen_Click(object sender, RoutedEventArgs e)
             byte[] buffer = new byte[fileStream.Length];
             fileStream.Read(buffer, 0, buffer.Length);
             //Loads the PDF document.
-            PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-            pdfViewer.LoadDocument(ldoc);
+            PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+            pdfViewer.LoadDocument(loadedDocument);
         }
 {% endhighlight %}
 {% highlight vbnet %}
-Private Async Sub BtnOpen_Click(sender As Object, e As RoutedEventArgs)
+Private Async Sub Open_Click(sender As Object, e As RoutedEventArgs)
     'Opens a file picker.
     Dim picker = New FileOpenPicker()
     picker.SuggestedStartLocation = PickerLocationId.DocumentsLibrary
@@ -233,8 +233,8 @@ Private Async Sub BtnOpen_Click(sender As Object, e As RoutedEventArgs)
     Dim buffer As Byte() = New Byte(fileStream.Length - 1) {}
     fileStream.Read(buffer, 0, buffer.Length)
     'Loads the PDF document.
-    Dim ldoc As New PdfLoadedDocument(buffer)
-    pdfViewer.LoadDocument(ldoc)
+    Dim loadedDocument As New PdfLoadedDocument(buffer)
+    pdfViewer.LoadDocument(loadedDocument)
 End Sub
 {% endhighlight %}
 {% endtabs %}
@@ -324,7 +324,7 @@ The SfPdfViewer control allows you to unload the PDF document from the viewer wh
 
 {% tabs %}
 {% highlight xaml %}
-<Button Name="BtnUnload" Click="BtnUnload_Click" Content="Open"/>
+<Button Name="Unload" Click="Unload_Click" Content="Open"/>
 {% endhighlight %}
 {% endtabs %}
 
@@ -332,14 +332,14 @@ Include the below code in the click event of the button.
 
 {% tabs %}
 {% highlight c# %}
-private void BtnUnload_Click(object sender, RoutedEventArgs e)
+private void Unload_Click(object sender, RoutedEventArgs e)
         {
             //Unloads the PDF Document displayed in the PDF Viewer Control.
             pdfViewer.Unload();
         }
 {% endhighlight %}
 {% highlight vbnet %}
-Private Sub BtnUnload_Click(sender As Object, e As RoutedEventArgs)
+Private Sub Unload_Click(sender As Object, e As RoutedEventArgs)
     pdfViewer.Unload()
 End Sub
 {% endhighlight %}

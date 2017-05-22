@@ -13,14 +13,14 @@ The SfPdfViewer allow user to export page of the PDF document as an Image.
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Exports the second page of the PDF document as an Image.
 Image pageImg = pdfViewer.GetPage(2);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Exports the second page of the PDF document as an Image.
 Dim pageImg As Image = pdfViewer.GetPage(2)
 {% endhighlight %}
@@ -30,14 +30,14 @@ To export a single page of the PDF document as an Image with custom zoom factor,
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Exports the second page of the PDF document as an Image 300% magnified.
 Image pageImg = pdfViewer.GetPage(2, 300);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Exports the second page of the PDF document as an Image 300% magnified.
 Dim pageImg As Image = pdfViewer.GetPage(2, 300)
 {% endhighlight %}
@@ -47,14 +47,14 @@ The following code explains how to export multiple pages as images.
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Exports the pages between start and end page index as image array.
 Image[] pageImgCollection = pdfViewer.GetPages(0, 5);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Exports the pages between start and end page index as image array.
 Dim pageImgCollection As Image() = pdfViewer.GetPages(0, 5)
 {% endhighlight %}
@@ -64,14 +64,14 @@ To export multiple pages as images with custom magnification factor, please foll
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Exports the pages between start and end index as image array in the mentioned zoom factor.
 Image[] pageImgCollection = pdfViewer.GetPages(0, 5, 200);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Exports the pages between start and end index as image array in the mentioned zoom factor.
 Dim pageImgCollection As Image() = pdfViewer.GetPage(0, 5, 200)
 {% endhighlight %}
@@ -81,14 +81,14 @@ The SfPdfViewer allows the user to export pages of the PDF document as image str
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Exports the second page of the PDF document as an Image.
 Stream imageStream = pdfViewer.ExportAsImage(2);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Exports the second page of the PDF document as an Image.
 Dim imageStream As Stream = pdfViewer.ExportAsImage(2)
 {% endhighlight %}
@@ -98,14 +98,14 @@ To export page of PDF document as image stream with customized zoom factor, use 
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Exports the second page of the PDF document as an Image 300% magnified.
 Stream imageStream = pdfViewer.ExportAsImage(2, 300);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Exports the second page of the PDF document as an Image 300% magnified.
 Dim imageStream As Stream = pdfViewer.ExportAsImage(2, 300)
 {% endhighlight %}
@@ -115,14 +115,14 @@ To export pages of PDF document as List of image streams, use the below code.
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Exports the pages between start and end index as image array.
 List<Stream> listOfImageStream = pdfViewer.ExportAsImage(0, 5);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Exports the pages between start and end index as image array.
 Dim listOfImageStream As List(Of Stream) = pdfViewer.ExportAsImage(0, 5)
 {% endhighlight %}
