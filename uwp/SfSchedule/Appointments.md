@@ -1,329 +1,514 @@
 ---
+
 layout: post
-title: Appointments | SfSchedule | uwp | Syncfusion
-description: Appointments
+title: Populating Appointments in Syncfusion SfSchedule control for UWP
+description: Learn how to Populate Appointments in SfSchedule control
 platform: uwp
 control: SfSchedule
 documentation: ug
+
 ---
+
 
 # Appointments
 
-## Creating Appointments
-
-SfSchedule appointments can be added to the SfSchedule control by using the following ways.
-
-They are:
-
-* Using Appointments Property 
-* Using Data Binding Technique
-* Using Appointment Editor
-* Using Context Menu
-* Using Schedule Command
-
-### Using Appointments Property
-
-You can add appointments directly to the Schedule control, by creating ScheduleAppointment collection and assigning it to Appointments property. 
+[SfSchedule](https://help.syncfusion.com/cr/uwp/sfschedule) control has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentCollectionClassTopic.html). [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentClassTopic.html) is a class, which holds the details about the appointment to be rendered in schedule.
 
 {% highlight c# %}
 
-           SfSchedule schedule = new SfSchedule();
-           schedule.Appointments.Add(new ScheduleAppointment()
+    // Creating an instance for schedule appointment collection
+            ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+            //Adding schedule appointment in schedule appointment collection 
+            scheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
-                StartTime = new DateTime(2013, 6, 5, 5, 0, 0),
-                EndTime = new DateTime(2013, 6, 5, 5, 30, 0),
-                Subject = "Meet the doc",
+                StartTime = DateTime.Now.Date.AddHours(10),
+                EndTime = DateTime.Now.Date.AddHours(12),
+                Subject = "Meeting",
                 Location = "Hutchison road",
-                AllDay = false
             });
+            //Adding schedule appointment collection to SfSchedule DataSource
+            schedule.Appointments = scheduleAppointmentCollection;
+{% endhighlight %}
+
+![](Appointments_images/appointment.png)
+
+## Mapping
+Schedule supports full data binding to any type of IEnumerable source. Specify the [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassTopic.html) attributes to map the properties in the underlying data source to the schedule appointments.
+
+| Property Name | Description |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| [StartTimeMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassStartTimeMappingTopic.html) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
+| [StartTimeZoneMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassStartTimeZoneMappingTopic.html) | This property is to map the property name of custom class which is equivalent for start time zone of ScheduleAppointment. |
+| [EndTimeMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassEndTimeMappingTopic.html) | This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
+| [EndTimeZoneMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassEndTimeZoneMappingTopic.html) | This property is to map the property name of custom class which is equivalent for End Time zone of ScheduleAppointment. |
+| [SubjectMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassSubjectMappingTopic.html) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
+| [AppointmentBackgroundMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassAppointmentBackgroundMappingTopic.html) | This property is to map the property name of custom class which is equivalent for Background of ScheduleAppointment. |
+| [AllDayMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassAllDayMappingTopic.html) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
+| [RecurrenceRuleMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassRecurrenceRuleMappingTopic.html) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
+| [NotesMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassNotesMappingTopic.html) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
+| [LocationMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassLocationMappingTopic.html) | This property is to map the property name of custom class which is equivalent for Location of ScheduleAppointment. |
+| [IsRecursiveMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassIsRecursiveMappingTopic.html) | This property is to map the property name of custom class which is equivalent for IsRecursive of ScheduleAppointment. |
+| [DisplayNameMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassDisplayNameMappingTopic.html) | This property is to map the property name of custom class which is equivalent for Display Name of ScheduleAppointment. |
+| [ReadOnlyMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassReadOnlyMappingTopic.html) | This property is to map the property name of custom class which is equivalent for read only appointment of ScheduleAppointment. |
+| [RecurrenceProperitesMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassRecurrenceProperitesMappingTopic.html) | This property is to map the property name of custom class which is equivalent for Recurrence Properites of ScheduleAppointment. |
+| [RecurrenceTypeMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassRecurrenceTypeMappingTopic.html) | This property is to map the property name of custom class which is equivalent for RecurrenceType of ScheduleAppointment. |
+| [ReminderTimeMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassReminderTimeMappingTopic.html) | This property is to map the property name of custom class which is equivalent for ReminderTime of ScheduleAppointment. |
+| [ResourceCollectionMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassResourceCollectionMappingTopic.html) | This property is to map the property name of custom class which is equivalent for ResourceCollection of ScheduleAppointment. |
+| [ResourceNameMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassResourceNameMappingTopic.html) | This property is to map the property name of custom class which is equivalent for ResourceName of ScheduleAppointment. |
+| [StatusMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassStatusMappingTopic.html) | This property is to map the property name of custom class which is equivalent for status of ScheduleAppointment. |
+| [TypeNameMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassTypeNameMappingTopic.html) | This property is to map the property name of custom class which is equivalent for TypeName of ScheduleAppointment. |
+
+
+N>**Note:** CustomAppointment class should contain two DateTime fields and a string field as mandatory.
+
+### Creating custom Appointments
+You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
+{% highlight c# %}
+
+     /// <summary>   
+    /// Represents custom data properties.   
+    /// </summary>   
+
+    public class Meeting
+    {
+        public string EventName { get; set; }
+        public DateTime From { get; set; }
+        public DateTime To { get; set; }
+        public Brush Color { get; set; }
+    }
 
 {% endhighlight %}
 
-![](Appointments_images/Appointments_img1.jpeg)
+N>**Note:** You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-### Using Data Binding Technique
-
-Schedule supports full data binding to any type of IEnumerable source. Specify the **AppointmentMapping** attributes to map the properties in the underlying data source to the Schedule appointments. The basic attributes of the AppointmentMapping property are as follows.  
-
-* Subject
-* Location 
-* StartTime 
-* EndTime  
-
-Add IEnumerable collection to schedule by using the **ItemsSource** property.  
-
+You can map those properties of `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
 {% tabs %}
-{% highlight xaml %}
+{% highlight c# %}
 
-        <Schedule:SfSchedule Name="schedule" ScheduleType="Day" ItemsSource="{Binding MappedAppointments}">
-            <Schedule:SfSchedule.AppointmentMapping>
-                <Schedule:ScheduleAppointmentMapping
-                    SubjectMapping="MappedSubject"
-                    StartTimeMapping="MappedStartTime"
-                    EndTimeMapping="MappedEndTime"/>
-            </Schedule:SfSchedule.AppointmentMapping>
-        </Schedule:SfSchedule>
+    // Schedule data mapping for custom appointments
+            ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
+            dataMapping.SubjectMapping = "EventName";
+            dataMapping.StartTimeMapping = "From";
+            dataMapping.EndTimeMapping = "To";
+            dataMapping.AppointmentBackgroundMapping = "Color";
+            schedule.AppointmentMapping = dataMapping;
 
 {% endhighlight %}
+{% highlight xaml %} 
+ 
+    <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week" ItemsSource="{Binding Meetings}">
+            <syncfusion:SfSchedule.AppointmentMapping>
+                <syncfusion:ScheduleAppointmentMapping
+                    SubjectMapping="EventName" 
+                    AppointmentBackgroundMapping="Color"
+                    StartTimeMapping="From"
+                    EndTimeMapping="To">
+                </syncfusion:ScheduleAppointmentMapping>
+            </syncfusion:SfSchedule.AppointmentMapping>
+        </syncfusion:SfSchedule>
+ 
+{% endhighlight %} 
+{% endtabs %} 
+
+You can schedule meetings for a day by setting `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `ItemsSource` property which is of `IEnumerable` type.
 
 {% highlight c# %}
 
-    public partial class MainWindow : Window
-    {
-        public ObservableCollection<MappedAppointment> MappedAppointments { get; set;}
-        public MainWindow()
-        {
-            InitializeComponent();
-            MappedAppointments = new ObservableCollection<MappedAppointment>
-                     {
-                         new MappedAppointment{MappedSubject = "Meeting", MappedStartTime = DateTime.Now.Date.AddHours(10), 
-                                                 MappedEndTime = DateTime.Now.Date.AddHours(11)},
-                         new MappedAppointment{MappedSubject = "Conference", MappedStartTime = DateTime.Now.Date.AddHours(15), 
-                                                 MappedEndTime = DateTime.Now.Date.AddHours(16)},
-                     };
-            this.DataContext = this;
-        }
-    }
+         // Creating instance for custom appointment class
+            Meeting meeting = new Meeting();
+            // Setting start time of an event
+            meeting.From = DateTime.Now.Date.AddHours(10) ;
+            // Setting end time of an event
+            meeting.To = meeting.From.AddHours(1);
+            // Setting start time for an event
+            meeting.EventName = "Anniversary";
+            // Setting color for an event
+            meeting.Color = new SolidColorBrush(Colors.Green);
+            // Creating instance for collection of custom appointments
+           var  Meetings = new ObservableCollection<Meeting>();
+            // Adding a custom appointment in CustomAppointmentCollection
+            Meetings.Add(meeting);
 
-    public class MappedAppointment
-    {
-        public string MappedSubject { get; set; }
-        public DateTime MappedStartTime { get; set; }
-        public DateTime MappedEndTime { get; set; }
-    }
+           
+            // Adding custom appointments in SfSchedule DataSource
+            schedule.ItemsSource = Meetings;
 
+{% endhighlight %} 
 
-{% endhighlight %}
-{% endtabs %}
+![](Appointments_images/custom.png)
 
-![](Appointments_images/Appointments_img2.jpeg)
-
-### Using Appointment Editor
-
-Appointments can be added to schedule using default Appointment editor available in schedule control, the editor can be opened by double click on the schedule cells.
-
-![](Appointments_images/Appointments_img3.jpeg)
-
-### Using Context Menu
-
-You can also use the Context menu to edit the selected appointment by selecting the Edit option in menu item.
-
->**Note:-ContextMenu is opened on tapping the schedule control in windows,but in Windows Phone it will be opened on holding.**
-
-![](Appointments_images/Appointments_img4.jpeg)
-
-## Editing Appointments
-
-The existing appointment can be edited by using the following ways.
-
-* Using Editor
-* Using Context menu
-
-### Using Editor
-
-In order to edit the existing appointment we need to double click on corresponding appointment and modify the existing data’s of selected appointment by using the editor displayed.
-
-![](Appointments_images/Appointments_img5.jpeg)
-
-### Using Context menu
-
-The user can also use the Context menu to edit the selected appointment by selecting the Edit option in menu item, which opens the default editor of the schedule control.
-
-![](Appointments_images/Appointments_img6.jpeg)
-
-## Deleting Appointments
-
-The existing appointment can be deleted by using the following ways.
-
-* Using Editor
-* Using Context menu
-
-### Using Editor
-
-In order to delete the existing appointment we need to double click on selected appointment and Click the delete option in Editor.
-
-![](Appointments_images/Appointments_img7.jpeg)
-
-### Using Context menu
-
-You can also use the Context menu to delete the selected appointment by selecting the Delete option in Context menu item.
-
-![](Appointments_images/Appointments_img8.jpeg)
-
-## Copy and Paste the Appointment 
-
-The added appointment can be copied and paste by using the context menu.
-
-### Copying Appointment
-
-You can use the Context menu to Copy the selected appointment by selecting the Copy option available in Context menu item.
-
-![](Appointments_images/Appointments_img9.jpeg)
-
-### Pasting Appointment
-
-You can use the Context menu to Paste the selected appointment to anywhere in schedule by selecting the Paste option in Context menu item.
-
-![](Appointments_images/Appointments_img10.jpeg)
-
-## Drag-Drop and Resizing the appointment
-
-You can easily drag and drop the appointments from one timeslot to another timeslot. Appointment resizing operation can also be performed as per required start and end time of schedule in an interactive manner.
-
-The added appointment can be drag or Resize by using the context menu.
-
-### Using Context menu
-
-You can use the Context menu to drag or resize the selected appointment by selecting the Resize option available in Context menu item.
-
->**Note:-Drag-drop and resize is only applicable for windows.**
-
-![](Appointments_images/Appointments_img11.jpeg)
-
-## Appointment Time Zone
-
-In Schedule, appointments can be created at various time zones using the properties StartTimeZone and EndTimeZone of the ScheduleAppointment. The default Start and End TimeZone value of schedule appointments is local time zone. Appointments will be arranged based on its Time Zone value.
+## Spanned Appointments
+Spanned Appointment is an appointment which lasts more than 24 hours.
 
 {% highlight c# %}
 
-             SfSchedule schedule = new SfSchedule();
-            schedule.Appointments.Add(
-            new ScheduleAppointment
-             {
-                 Subject = "Recurrence Appointment",
-                 StartTimeZone = new TimeZone { TimeZoneValue = "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi" },
-                 EndTimeZone = new TimeZone { TimeZoneValue = "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi" },
-                 StartTime = new DateTime(2015, 11, 5, 5, 0, 0),
-                 EndTime = new DateTime(2015, 11, 5, 5, 30, 0),
+         // Creating instance for custom appointment class
+            Meeting meeting = new Meeting();
+            // Setting start time of an event
+            meeting.From = DateTime.Now.Date.AddHours(10) ;
+            // Setting end time of an event
+            meeting.To = meeting.From.AddDays(2).AddHours(1);
+            // Setting start time for an event
+            meeting.EventName = "Anniversary";
+            // Setting color for an event
+            meeting.Color = new SolidColorBrush(Colors.Green);
+            // Creating instance for collection of custom appointments
+           var  Meetings = new ObservableCollection<Meeting>();
+            // Adding a custom appointment in CustomAppointmentCollection
+            Meetings.Add(meeting);
 
-             });
-            this.grid.Children.Add(schedule);
+{% endhighlight %} 
 
-{% endhighlight %}
-
-### TimeZoneCollection
-
-The TimeZoneCollection property contains all the basic Time Zones in it and so it can be used to specify the start and end TimeZone value of the appointment in Schedule.
-
-{% highlight c# %}
-
-      SfSchedule schedule = new SfSchedule();
-            schedule.Appointments.Add(new ScheduleAppointment()
-            {
-                StartTimeZone = schedule.TimeZoneCollection[2],
-                EndTimeZone = schedule.TimeZoneCollection[2],
-                StartTime = new DateTime(2013, 6, 5, 5, 0, 0),
-                EndTime = new DateTime(2013, 6, 5, 5, 30, 0),
-                Subject = "Meet the doc",
-                Location = "Hutchison road",
-                AllDay = false
-            });
-
-{% endhighlight %}
+![](Appointments_images/span.png)
 
 ## All Day Appointments
-
-You can create all day event by setting **AllDay** property of ScheduleAppointment as true. By default **AllDay** property value is false.
+All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
 
 {% highlight c# %}
 
-           SfSchedule schedule = new SfSchedule();
-            this.schedule.Appointments.Add(new ScheduleAppointment
+    // Creating an instance for schedule appointment collection
+            ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+            //Adding schedule appointment in schedule appointment collection 
+            scheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
-                Subject = "Birthday",
-                StartTime = DateTime.Now.Date.AddHours(1),
-                EndTime = DateTime.Now.Date.AddHours(2),
-                AllDay = true,
+                StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
+                EndTime = new DateTime(2017, 05, 10, 12, 0, 0),
+                Subject = "Meeting",
+                Location = "Hutchison road",
+                AllDay = true
             });
-            this.grid.Children.Add(schedule);
-            
-{% endhighlight %}
+            //Adding schedule appointment collection to DataSource of SfSchedule
+            schedule.Appointments = scheduleAppointmentCollection;
 
-### Displaying /Hiding All-Day Panel 
+{% endhighlight %} 
 
-All-Day event will be arranged in all day panel of SfSchedule. The schedule All Day panel visibility can be enabled or disabled by using **ShowAllDay** property and its default value is true.
-
-{% tabs %}
-{% highlight xaml %}
-
-    <Schedule:SfSchedule x:Name="schedule" ShowAllDay="False"/>
-
-{% endhighlight %}
+### All-Day Appointment Panel
+All-day appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `SfSchedule`.
 
 {% highlight c# %}
 
-            SfSchedule schedule = new SfSchedule();
-            schedule.ShowAllDay = false;
-            this.grid.Children.Add(schedule);
+        schedule.ShowAllDay = true; 
 
-{% endhighlight %}
-{% endtabs %}
+{% endhighlight %} 
 
-![](Appointments_images/Appointments_img12.jpeg)
-
-## Read Only Appointments
-
-By enabling the **ReadOnly** property of ScheduleAppointment you can restrict the user from editing the details of a specific appointment, you could not edit/delete the appointment defined as **ReadOnly** using UI in schedule control.
+All-Day panel background can be customized by setting `AllDayAppointmentPanelBrush` 
+of the respective view settings.
 
 {% highlight c# %}
 
-            SfSchedule schedule = new SfSchedule();
-            schedule.ScheduleType = ScheduleType.Week;
+         schedule.AllDayAppointmentPanelBrush = new SolidColorBrush(Colors.Green); 
+
+{% endhighlight %} 
+
+![](Appointments_images/allday.png)
+
+## Recurrence Appointment
+Recurring an appointment on a daily, weekly, monthly, or yearly interval. Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments. 
+
+### Recurrence Pattern
+Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleRecurrencePropertiesClassTopic.html).
+
+| RecurrenceType | RecurrenceProperties | Description |
+|----------------|-------------------------|---------------------------------------------------------------|
+| Daily | DailyNDays | Gets or sets the event to recur on a daily N intervals basis. |
+|  | IsDailyEveryNDays | Checks whether the event occurs Daily Every N days. |
+| Weekly | IsWeeklySunday | Checks whether the event occurs every Sunday of week |
+|  | IsWeeklyMonday | Checks whether the event occurs every Monday of week |
+|  | IsWeeklyTuesday | Checks whether the event occurs every Tuesday of week |
+|  | IsWeeklyWednesday | Checks whether the event occurs every Wednesday of week |
+|  | IsWeeklyThursday | Checks whether the event occurs every Thursday of week |
+|  | IIsWeeklyFriday | Checks whether the event occurs every Friday of week |
+|  | IsWeeklySaturday | Checks whether the event occurs every Saturday of week |
+|  | NthWeek | Gets or sets the event only nth week of the year. |
+|  | WeekDay | Gets or sets the event every week day. |
+|  | WeeklyEveryNWeeks | Gets or sets the event every N Weeks. |
+| Monthly | SpecificMonth | Gets or sets the event in a specific month. |
+|  | SpecificMonthDay | Gets or sets the event in a specific month day. |
+|  | IsMonthlySpecific | Checks whether the event is Monthly specific event |
+|  | MonthlyEveryNMonths | Gets or sets the event every N Months. |
+|  | MonthlyNthWeek | Gets or sets the event nth week of every month. |
+|  | MonthlySpecificMonthDay | Gets or sets the event specific month day of Month. |
+|  | MonthlyWeekDay | Gets or sets the event every week day of month. |
+| Yearly | IsYearlySpecific | Checks whether the event is Yearly Specific. |
+|  | YearlyEveryNYears | Gets or sets the event occurs every N Years. |
+|  | YearlyGenericMonth | Gets or sets the event occurs in generic month. |
+|  | YearlyNthWeek | Gets or sets the event occurs yearly nth week. |
+|  | YearlySpecificMonth | Gets or sets the event occurs yearly specific month. |
+|  | YearlySpecificMonthDay | Gets or sets the event occurs yearly specific month day. |
+|  | YearlyWeekDay | Gets or sets the event occurs yearly week day. |
+|  | EveryNYears | Gets or sets the event every N Years. |
+| Common | IsRangeEndDate | Checks whether the event has Range end date |
+|  | IsRangeNoEndDate | Checks whether the event has No Range end date |
+|  | IsRangeRecurrenceCount | Checks whether the event has recurrence count. |
+|  | RangeEndDate | Gets or sets the event range end date. |
+|  | RangeStartDate | Gets or sets the event range start date. |
+|  | RangeRecurrenceCount | Gets or sets the event range recurrence count. |
+|  | IsSpecific | Checks whether the event occurs in Specific recurrence type. |
+
+### Adding Recurrence Appointment using Recurrence Builder
+Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentClassRecurrenceRuleTopic.html) is used to populate the required recursive appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
+
+{% highlight c# %}
+
+   
+            // Creating an instance for schedule appointment collection
+            ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
+            //Adding schedule appointment in schedule appointment collection 
+            var scheduleAppointment = new ScheduleAppointment()
+            {
+                StartTime = DateTime.Now.Date.AddHours(10),
+                EndTime = DateTime.Now.Date.AddHours(12),
+                Subject = "Occurs every alternate day",
+                IsRecursive = true
+            };
+
+            //Adding schedule appointment in schedule appointment collection
+            scheduleAppointmentCollection.Add(scheduleAppointment);
+
+            // Creating recurrence rule
+            RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
+            recurrenceProperties.RecurrenceType = RecurrenceType.Daily;
+            recurrenceProperties.IsRangeRecurrenceCount = true;
+            recurrenceProperties.DailyNDays = 2;
+            recurrenceProperties.IsDailyEveryNDays = true;
+            recurrenceProperties.IsWeeklySunday = false;
+            recurrenceProperties.IsWeeklyMonday = true;
+            recurrenceProperties.IsWeeklyTuesday = false;
+            recurrenceProperties.IsWeeklyWednesday = false;
+            recurrenceProperties.IsWeeklyThursday = false;
+            recurrenceProperties.IsWeeklyFriday = false;
+            recurrenceProperties.IsWeeklySaturday = false;
+            recurrenceProperties.RangeRecurrenceCount = 10;
+            recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
+
+            // Setting recurrence rule to schedule appointment
+            scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
+
+            //Adding schedule appointment collection to SfSchedule DataSource
+            schedule.Appointments = scheduleAppointmentCollection
+
+{% endhighlight %} 
+
+![](Appointments_images/recurrence.png)
+
+## Setting reminders
+Schedule reminds you the appointment in the specified time by setting the EnableReminderTimer property is true. The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentClassReminderTimeTopic.html) property of `ScheduleAppointment`.
+
+N>**Note** Open package.appxmanifest file to the Application UI tab and select “Yes” from the “Toast capable” dropdown list to enable toast notifications in your application manifest.
+
+{% highlight c# %}
+
+            schedule.EnableReminderTimer = true;
             schedule.Appointments.Add(new ScheduleAppointment
             {
-                Subject = "Read-Only",
-                StartTime = date,
-                EndTime = date.AddHours(2),
-                ReadOnly = true
-            });    
-            this.grid.Children.Add(schedule);
-
-{% endhighlight %}
-
-![](Appointments_images/Appointments_img13.jpeg)
-
-##  Appointment Status
-
-You can declare the Appointment status based on its priority. Schedule Appointment status can be set by using the Status Property of the **ScheduleAppointment** and appointment status color can be differed by using **Brush** property.
-
-{% highlight c# %}
-
-            SfSchedule schedule = new SfSchedule();
-            schedule.ScheduleType = ScheduleType.Week;
-            schedule.Appointments.Add(new ScheduleAppointment()
+                StartTime = DateTime.Now.Date.AddHours(9),
+                EndTime = DateTime.Now.Date.AddHours(12),
+                AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xA2, 0xC1, 0x39)),
+                Subject = "Business Meeting",
+                ReminderTime = ReminderTimeType.TenHours
+            });
+            schedule.Appointments.Add(new ScheduleAppointment
             {
-                Status = new ScheduleAppointmentStatus() { Brush = new SolidColorBrush(Colors.Green), Status = "Free" },
-                StartTime = new DateTime(2013, 6, 5, 5, 0, 0),
-                EndTime = new DateTime(2013, 6, 5, 5, 30, 0),
-                Subject = "Meet the doc",
-                Location = "Hutchison road",
-                AllDay = false
+                StartTime = currentDate.Date.AddDays(1).AddHours(10),
+                EndTime = currentDate.Date.AddDays(1).AddHours(16),
+                AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xD8, 0x00, 0x73)),
+                Subject = "Auditing",
+                ReminderTime = ReminderTimeType.TwoDays
+            });
+            schedule.Appointments.Add(new ScheduleAppointment
+            {
+                StartTime = DateTime.Now.Date.AddDays(7).AddHours(10),
+                EndTime = DateTime.Now.Date.AddDays(7).AddHours(13),
+                AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xF0, 0x96, 0x09)),
+                Subject = "Conference",
+                ReminderTime = ReminderTimeType.TwoWeeks
             });
 
 {% endhighlight %}
 
-![](Appointments_images/Appointments_img14.jpeg)
+![](Appointments_images/reminder.png)
 
-### AppointmentStatusCollection:
+## Editing appointment
+The existing appointment can be edited by using the following ways.
 
-The AppointmentStatusCollection property contains some of the basic status such as free, tentative, Out of Office or busy, based on its priority. You can specify the status of the ScheduleAppointment using this collection property. And also you can add new status to this existing collection, so that it will be displayed in editor.
+•	Using Editor
+•	Using Context menu
+
+### Using Editor
+To edit the existing appointment, we need to double click on corresponding appointment and modify the existing data of selected appointment by using the editor displayed.
+
+### Using Context menu
+The user can also use the Context menu to edit the selected appointment by selecting the Edit option in menu item, which opens the default editor of the schedule control.
+
+
+## Appearance Customization
+The default appearance of the appointment can be customized by using the [ScheduleAppointmentStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassTopic.html) property and [ScheduleAppointmentLoaded](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentLoadedEventArgsClassTopic.html). The event and property is used to customize or override the default template of the Appointments.
+
+•	Customize appearance using Style 
+•	Customize appearance using Event
+•	Customize appearance using Custom View
+
+### Customize appearance using Style
+Schedule appointment can be customized by setting appointment style properties such as [AppointmentTextColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassAppointmentTextColorTopic.html), [AppointmentFontStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassAppointmentFontStyleTopic.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassBorderColorTopic.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassBorderCornerRadiusTopic.html), [BorderThickness](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassBorderThicknessTopic.html) to the `ScheduleAppointmentStyle` property of `SfSchedule`.
 
 {% highlight c# %}
 
-        SfSchedule schedule = new SfSchedule();
-            schedule.ScheduleType = ScheduleType.Week;
-            schedule.AppointmentStatusCollection.Add(new ScheduleAppointmentStatus()
+            //Creating Appointment style 
+            ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
+            appointmentStyle.AppointmentTextColor = new SolidColorBrush(Colors.Red);
+            appointmentStyle.AppointmentFontStyle = Windows.UI.Text.FontStyle.Italic;
+            appointmentStyle.BorderColor = new SolidColorBrush(Colors.Blue);
+            appointmentStyle.BorderCornerRadius = new CornerRadius(5);
+            appointmentStyle.BorderThickness = new Thickness(5);
+
+            //Setting Appointment Style 
+            schedule.ScheduleAppointmentStyle = appointmentStyle; 
+
+{% endhighlight %}
+
+![](Appointments_images/style.png)
+
+### Customize appearance using Event
+Schedule appointment can be customized during runtime using [ScheduleAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentLoadedEventArgsClassTopic.html). `ScheduleAppointment` style can be customized using the `ScheduleAppointmentStyle` property.
+
+[ScheduleAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentLoadedEventArgsClassTopic.html) has below properties,
+
+•	[ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentLoadedEventArgsClassScheduleAppointmentTopic.html) – Contains the appointments values.
+•	[ScheduleAppointmentStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentLoadedEventArgsClassScheduleAppointmentStyleTopic.html) – Gets and sets the appointments style.
+•	[View](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentLoadedEventArgsClassViewTopic.html) -  Sets the Custom UI for Appointments.
+•	[Bounds](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentLoadedEventArgsClassBoundsTopic.html) – Contains the UI bounds of appointment.
+
+{% highlight c# %} 
+ 
+           schedule.ScheduleAppointmentLoaded += Schedule_ScheduleAppointmentLoaded;
+
+     private void Schedule_ScheduleAppointmentLoaded(object sender, ScheduleAppointmentLoadedEventArgs args)
+        {
+            if (args.ScheduleAppointment != null && (args.ScheduleAppointment).Subject == "Meeting")
             {
-                Status = "Idle",
-                Brush = new SolidColorBrush(Colors.Pink)
-            });
-            schedule.AppointmentStatusCollection.Add(new ScheduleAppointmentStatus()
-            {
-                Status = "Do not disturb",
-                Brush = new SolidColorBrush(Colors.Red)
-            });
-            this.grid.Children.Add(schedule);
+                args.ScheduleAppointmentStyle.BorderColor = new SolidColorBrush(Colors.Blue);
+                args.ScheduleAppointmentStyle.BorderCornerRadius = new CornerRadius(5);
+                args.ScheduleAppointmentStyle.BorderThickness = new Thickness(5);
+            }
+        }
+
+ 
+{% endhighlight %}
+
+## Customize appearance using Custom View
+Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
+
+{% highlight c# %} 
+ 
+     schedule.ScheduleAppointmentLoaded += Schedule_ScheduleAppointmentLoaded;
+
+         private void Schedule_ScheduleAppointmentLoaded(object sender, ScheduleAppointmentLoadedEventArgs args)
+        {
+                Button button = new Button();
+                button.Background = new SolidColorBrush(Colors.Green);
+                if (args.ScheduleAppointment != null)
+                    button.Content = (args.ScheduleAppointment).Subject;
+                args.View = button;
+        }
+
+ 
+{% endhighlight %}
+
+## Selection
+Schedule control has built-in events to handle tapped and double tapped touch actions.
+
+•	[ScheduleTapped](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleTappedEventArgsClassTopic.html)
+•	[ScheduleDoubleTapped](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleTappedEventArgsClassTopic.html)
+
+These events will be triggered while perform respective touch actions in timeslots, month cells and in appointments. These events contain the same argument [ScheduleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleTappedEventArgsClassTopic.html) which holds selected appointment and date time details in it.
+
+• [Appointment](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleTappedEventArgsClassAppointmentTopic.html) -  Contains the selected appointment value, it will be null, if any time slots selected.
+• [SelectedDate](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleTappedEventArgsClassSelectedDateTopic.html) - Contains selected time slot DateTime value.
+• [SelectedResource](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleTappedEventArgsClassSelectedResourceTopic.html) - Contains selected time slot DateTime value.
+
+{% highlight c# %} 
+ 
+     schedule.ScheduleTapped += Schedule_ScheduleTapped;
+     schedule.ScheduleDoubleTapped += Schedule_ScheduleDoubleTapped;
+
+
+	    private void Schedule_ScheduleDoubleTapped(object sender, ScheduleTappedEventArgs e)
+        {
+        }
+
+        private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
+        { 
+        }
+ 
+{% endhighlight %}
+
+### Selection customization
+The default selection of an appointment can be customized by using [SelectionColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassSelectionColorTopic.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassSelectionTextColorTopic.html) properties in `ScheduleAppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
+
+N>**Note:** `BorderWidth` value must be set to highlight `SelectionColor`.
+
+{% tabs %} 
+{% highlight c# %} 
+ 
+    //Creating Appointment style 
+            ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
+            appointmentStyle.SelectionColor = new SolidColorBrush(Colors.Yellow);
+            appointmentStyle.SelectionTextColor = new SolidColorBrush(Colors.Yellow);
+            //Setting Appointment Style 
+            schedule.ScheduleAppointmentStyle = appointmentStyle;
+ 
+{% endhighlight %}
+  
+{% highlight xaml %} 
+ 
+     <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week" >
+            <syncfusion:SfSchedule.ScheduleAppointmentStyle>
+                <syncfusion:ScheduleAppointmentStyle BorderThickness="10" 
+            SelectionColor="Yellow" 
+            BorderCornerRadius="10" 
+            SelectionTextColor="Yellow">
+                </syncfusion:ScheduleAppointmentStyle>
+            </syncfusion:SfSchedule.ScheduleAppointmentStyle>
+        </syncfusion:SfSchedule>
+ 
+{% endhighlight %} 
+{% endtabs %} 
+
+![](Appointments_images/selection.png)
+
+### Configuring resources
+The Schedule control allows you to define resources that can be assigned to appointments. [Resources](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleResourceClassTopic.html) let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
+
+{% highlight c# %} 
+ 
+            // creating resources
+            ResourceType resourceType = new ResourceType { TypeName = "Doctor" };
+            resourceType.ResourceCollection.Add(new Resource { DisplayName = "Dr.Jacob", ResourceName = "Dr.Jacob", });
+            resourceType.ResourceCollection.Add(new Resource { DisplayName = "Dr.Darsy", ResourceName = "Dr.Darsy" });
             
+			schedule.DayHeaderOrder = DayHeaderOrder.OrderByDate;
+			
+            //setting resource type
+            schedule.ScheduleResourceTypeCollection = new ObservableCollection<ResourceType> { resourceType };
+           
+            //setting resource for schedule
+            schedule.Resource = "Doctor";
+
+            //creating appointments for resource
+            ScheduleAppointment ScheduleAppointment = new ScheduleAppointment() { StartTime = currentDate, EndTime = currentDate.AddHours(2), Subject = "Meeting", Location = "Chennai", AppointmentBackground = new SolidColorBrush(Colors.Green) };
+            ScheduleAppointment.ResourceCollection.Add(new Resource() { ResourceName = "Dr.Jacob", TypeName = "Doctor" });
+
+
+            //creating appointments for resource
+            ScheduleAppointment ScheduleAppointment1 = new ScheduleAppointment() { StartTime = currentDate.AddHours(4), EndTime = currentDate.AddHours(2), Subject = "Meeting", Location = "Chennai", AppointmentBackground = new SolidColorBrush(Colors.Green) };
+            ScheduleAppointment1.ResourceCollection.Add(new Resource() { ResourceName = "Dr.Darsy", TypeName = "Doctor" });
+
+            //Adding schedule appointments
+            schedule.Appointments.Add(ScheduleAppointment);
+            schedule.Appointments.Add(ScheduleAppointment1);
+ 
 {% endhighlight %}
 
-![](Appointments_images/Appointments_img15.jpeg)
+![](Appointments_images/resource.png)
+
+
