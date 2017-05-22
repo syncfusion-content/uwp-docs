@@ -19,12 +19,12 @@ documentation: ug
 * [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassForegroundTopic.html)           - This property is used to change the text color of the placeholder.
 
 Following properties are used to customize the selected category when you have more than one category in a column.
-* [`SelectedBackground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedBackgroundTopic.html) 	- This property is used to change the background color of the selected placeholder.
-* [`SelectedStroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeTopic.html) 		- This property is used to change the border color of the selected placeholder.
-* [`SelectedStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeThicknessTopic.html) 	- This property is used to change the border width of the selected placeholder.
-* [`SelectedStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeDashArrayTopic.html)     - This property is used to change the dashes of the selected placeholder.
-* [`SelectedFontSize`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedFontSizeTopic.html)            - This is used to change the font size of the text in selected placeholder.
-* [`SelectedForeground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedForegroundTopic.html)           - This property is used to change the color of the text in selected placeholder.
++ [`SelectedBackground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedBackgroundTopic.html) 	- This property is used to change the background color of the selected placeholder.
++ [`SelectedStroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeTopic.html) 		- This property is used to change the border color of the selected placeholder.
++ [`SelectedStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeThicknessTopic.html) 	- This property is used to change the border width of the selected placeholder.
++ [`SelectedStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeDashArrayTopic.html)     - This property is used to change the dashes of the selected placeholder.
++ [`SelectedFontSize`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedFontSizeTopic.html)            - This is used to change the font size of the text in selected placeholder.
++ [`SelectedForeground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedForegroundTopic.html)           - This property is used to change the color of the text in selected placeholder.
 The following code example describes the above behavior.
 
 {% tabs %}
