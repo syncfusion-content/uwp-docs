@@ -11,8 +11,8 @@ documentation: ug
 The following code illustrates the design of the progress ring in red color foreground with dimension of 100x100.
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Creates custom progress ring.
 ProgressRing progressRing = new ProgressRing();
 progressRing.Foreground = new SolidColorBrush(Windows.UI.Color.FromArgb(255, 255, 0, 0));
@@ -22,8 +22,8 @@ progressRing.Height = 100;
 pdfViewer.PdfProgressRing = progressRing;
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Creates custom progress ring.
 Dim progressRing As New ProgressRing()
 progressRing.Foreground = New SolidColorBrush(Windows.UI.Color.FromArgb(255, 255, 0, 0))
