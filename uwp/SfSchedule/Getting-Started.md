@@ -430,7 +430,9 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
             return randomTimeCollection; 
         } 
     } 
- 
+
+ {% endhighlight %} 
+
 #### Setting data source for SfSchdeule   
     
  Assign those appointments collection `Meetings` to the [SfSchedule.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassItemsSourceTopic.html) property. 
