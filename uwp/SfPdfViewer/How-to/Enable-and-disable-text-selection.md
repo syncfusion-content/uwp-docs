@@ -11,14 +11,14 @@ documentation: ug
 The text selection feature of the PDF viewer can be disabled as shown in the following code.
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 // Disables text selection.
 pdfViewer.IsTextSelectionEnabled = false;
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Disables text selection.
 pdfViewer.IsTextSelectionEnabled = False
 {% endhighlight %}

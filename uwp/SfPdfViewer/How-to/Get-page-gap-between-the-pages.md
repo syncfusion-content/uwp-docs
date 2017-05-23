@@ -11,14 +11,14 @@ documentation: ug
 The SfPdfViewer control provides the property to access the gap between two pages being displayed in the PDF Viewer. This value can be accessed using the following code.
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Gets the gap between two pages.
 int pageGap = pdfViewer.PageGap;
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Gets the gap between two pages.
 Dim pageGap As Integer = pdfViewer.PageGap
 {% endhighlight %}

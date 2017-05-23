@@ -13,29 +13,29 @@ The SfPdfViewer control allows you to acquire the coordinates of multiple instan
 {% highlight c# %}
 private void Page_Loaded(object sender, RoutedEventArgs e)
 {
-    PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-    pdfViewer.LoadDocument(ldoc);
+    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+    pdfViewer.LoadDocument(loadedDocument);
 }
 
 private void Button_Click(object sender, RoutedEventArgs e)
 {
     //Creates an instance to get the list of PdfTextCoordinates.
-    List<PdfTextCoordinates> coords = new List<PdfTextCoordinates>();
+    List<PdfTextCoordinates> coordinates = new List<PdfTextCoordinates>();
     //Searches for the existence of a text and gets the text positions in a PDF page.
-    pdfViewer.GetTextCoordinates("example", 4, out coords);
+    pdfViewer.GetTextCoordinates("example", 4, out coordinates);
 }
 {% endhighlight %}
 {% highlight vbnet %}
 Private Sub Page_Loaded(sender As Object, e As RoutedEventArgs)
-    Dim ldoc As New PdfLoadedDocument(buffer)
-    pdfViewer.LoadDocument(ldoc)
+    Dim loadedDocument As New PdfLoadedDocument(buffer)
+    pdfViewer.LoadDocument(loadedDocument)
 End Sub
 
 Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
     'Creates an instance to get the list of PdfTextCoordinates. 
-    Dim coords As New List(Of PdfTextCoordinates)()
+    Dim coordinates As New List(Of PdfTextCoordinates)()
     'Searches for the existence of a text and gets the text positions in a PDF page.
-    pdfViewer.GetTextCoordinates("example", 4, coords)
+    pdfViewer.GetTextCoordinates("example", 4, coordinates)
 End Sub
 {% endhighlight %}
 {% endtabs %}
