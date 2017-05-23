@@ -11,16 +11,16 @@ documentation: ug
 The SfPdfViewer control provides the value of the current vertical and horizontal offsets. The following code allows you to access the same.
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Gets Vertical Offset of a document.
 float vOffset = pdfViewer.VerticalOffset;
 //Gets Horizontal Offset of a document.
 float hOffset = pdfViewer.HorizontalOffset;
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Gets Vertical Offset of a document.
 Dim vOffset As Single = pdfViewer.VerticalOffset
 'Gets Horizontal Offset of a document.

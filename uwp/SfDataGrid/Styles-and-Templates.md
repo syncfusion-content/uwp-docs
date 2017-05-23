@@ -24,7 +24,7 @@ SfDataGrid arrange the cell and row content using cell and row container’s. Be
 
 [RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding RowGenerator class and set it [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Thus, it is possible to customize the row and cell containers by customizing the RowGeneration which cannot be done with styling and conditional styling customization options.
 
-#### Row containers
+### Row containers
 Below table shows the different types of grid rows and its container.
 <table>
 <tr>
@@ -224,7 +224,7 @@ public class CustomRowGenerator : RowGenerator
 
 You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/VirtualizingControlUWp810114614).
 
-## Cell containers
+### Cell containers
 Below table shows the different types of cells and its container.
 <table>
 <tr>

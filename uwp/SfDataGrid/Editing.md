@@ -296,9 +296,13 @@ private void DataGrid_CurrentCellDropDownSelectionChanged(object sender, Current
 
 CellTapped event occurs when the user clicks or touches the `Cell` in SfDataGrid with [GridCellTappedEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCellTappedEventArgsClassTopic.html). CellTapped event does not occur for the non-selectable cells. The GridCellTappedEventArgs has following members which provides information for `CellTapped` event.
 * [Column](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassColumnTopic.html) - Gets the GridColumn of the tapped cell.
+
 * [Record](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassRecordTopic.html) - Gets the data context of the tapped cell.
+
 * [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassRowColumnIndexTopic.html) - Gets the RowColumnIndex of the tapped cell.
+
 * [PointerDeviceType](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassPointerDeviceTypeTopic.html) - Gets the device type that associated with the event.
+
 * [OriginalSender](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridEventArgsClassOriginalSenderTopic.html) - Gets the original reporting source that raised the event.  
 
 {% tabs %}
@@ -322,9 +326,13 @@ private void Datagrid_CellTapped(object sender, GridCellTappedEventArgs e)
 CellDoubleTapped event occurs when the user double clicks or double taps the `GridCell` in SfDataGrid with [GridCellDoubleTappedEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridCellDoubleTappedEventArgsClassTopic.html). CellDoubleTapped event does not occur for non-selectable cells. GridCellDoubleTappedEventArgs has following members which provides information for `CellDoubleTapped ` event.
 
 * [Column](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassColumnTopic.html) - Gets the GridColumn of the double tapped cell.
+
 * [Record](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassRecordTopic.html) - Gets the data context of the double tapped cell.
+
 * [RowColumnIndex](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassRowColumnIndexTopic.html) - Gets the RowColumnIndex of the double tapped cell.
+
 * [PointerDeviceType](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellDoubleTappedEventArgsClassPointerDeviceTypeTopic.html) - Gets the device type that associated with the event.
+
 * [OriginalSender](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridEventArgsClassOriginalSenderTopic.html) - Gets the original reporting source that raised the event
 
 {% tabs %}
