@@ -59,15 +59,15 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 | [TypeNameMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentMappingClassTypeNameMappingTopic.html) | This property is to map the property name of custom class which is equivalent for TypeName of ScheduleAppointment. |
 
 
-N>**Note:** CustomAppointment class should contain two DateTime fields and a string field as mandatory.
+N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 
 ### Creating custom Appointments
 You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
 {% highlight c# %}
 
-     /// <summary>   
-    /// Represents custom data properties.   
-    /// </summary>   
+        /// <summary>   
+        /// Represents custom data properties.   
+        /// </summary>   
 
     public class Meeting
     {
@@ -79,13 +79,13 @@ You can create a custom class `Meeting` with mandatory fields `From`, `To` and `
 
 {% endhighlight %}
 
-N>**Note:** You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
+N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
 You can map those properties of `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
 {% tabs %}
 {% highlight c# %}
 
-    // Schedule data mapping for custom appointments
+        // Schedule data mapping for custom appointments
             ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
             dataMapping.SubjectMapping = "EventName";
             dataMapping.StartTimeMapping = "From";
@@ -114,7 +114,7 @@ You can schedule meetings for a day by setting `From` and `To` of `Meeting` clas
 
 {% highlight c# %}
 
-         // Creating instance for custom appointment class
+            // Creating instance for custom appointment class
             Meeting meeting = new Meeting();
             // Setting start time of an event
             meeting.From = DateTime.Now.Date.AddHours(10) ;
@@ -142,7 +142,7 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
 
 {% highlight c# %}
 
-         // Creating instance for custom appointment class
+            // Creating instance for custom appointment class
             Meeting meeting = new Meeting();
             // Setting start time of an event
             meeting.From = DateTime.Now.Date.AddHours(10) ;
@@ -166,7 +166,7 @@ All-Day appointment is an appointment which is scheduled for a whole day. It can
 
 {% highlight c# %}
 
-    // Creating an instance for schedule appointment collection
+        // Creating an instance for schedule appointment collection
             ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
             //Adding schedule appointment in schedule appointment collection 
             scheduleAppointmentCollection.Add(new ScheduleAppointment()
@@ -187,7 +187,7 @@ All-day appointment doesn't block out entire time slot in SfSchedule, rather it 
 
 {% highlight c# %}
 
-        schedule.ShowAllDay = true; 
+            schedule.ShowAllDay = true; 
 
 {% endhighlight %} 
 
@@ -251,7 +251,7 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
 {% highlight c# %}
 
    
-            // Creating an instance for schedule appointment collection
+                // Creating an instance for schedule appointment collection
             ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
             //Adding schedule appointment in schedule appointment collection 
             var scheduleAppointment = new ScheduleAppointment()
@@ -294,11 +294,11 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/
 ## Setting reminders
 Schedule reminds you the appointment in the specified time by setting the EnableReminderTimer property is true. The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentClassReminderTimeTopic.html) property of `ScheduleAppointment`.
 
-N>**Note** Open package.appxmanifest file to the Application UI tab and select “Yes” from the “Toast capable” dropdown list to enable toast notifications in your application manifest.
+N> Open package.appxmanifest file to the Application UI tab and select “Yes” from the “Toast capable” dropdown list to enable toast notifications in your application manifest.
 
 {% highlight c# %}
 
-            schedule.EnableReminderTimer = true;
+                schedule.EnableReminderTimer = true;
             schedule.Appointments.Add(new ScheduleAppointment
             {
                 StartTime = DateTime.Now.Date.AddHours(9),
@@ -344,16 +344,16 @@ The user can also use the Context menu to edit the selected appointment by selec
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [ScheduleAppointmentStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassTopic.html) property and [ScheduleAppointmentLoaded](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentLoadedEventArgsClassTopic.html). The event and property is used to customize or override the default template of the Appointments.
 
-•	Customize appearance using Style 
-•	Customize appearance using Event
-•	Customize appearance using Custom View
+•	[Customize appearance using Style](https://help.syncfusion.com/uwp/sfschedule/appointments#customize-appearance-using-style) 
+•	[Customize appearance using Event](https://help.syncfusion.com/uwp/sfschedule/appointments#customize-appearance-using-event)
+•	[Customize appearance using Custom View](https://help.syncfusion.com/uwp/sfschedule/appointments#customize-appearance-using-custom-view)
 
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [AppointmentTextColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassAppointmentTextColorTopic.html), [AppointmentFontStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassAppointmentFontStyleTopic.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassBorderColorTopic.html), [BorderCornerRadius](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassBorderCornerRadiusTopic.html), [BorderThickness](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassBorderThicknessTopic.html) to the `ScheduleAppointmentStyle` property of `SfSchedule`.
 
 {% highlight c# %}
 
-            //Creating Appointment style 
+                //Creating Appointment style 
             ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
             appointmentStyle.AppointmentTextColor = new SolidColorBrush(Colors.Red);
             appointmentStyle.AppointmentFontStyle = Windows.UI.Text.FontStyle.Italic;
@@ -383,14 +383,14 @@ Schedule appointment can be customized during runtime using [ScheduleAppointment
            schedule.ScheduleAppointmentLoaded += Schedule_ScheduleAppointmentLoaded;
 
      private void Schedule_ScheduleAppointmentLoaded(object sender, ScheduleAppointmentLoadedEventArgs args)
+    {
+        if (args.ScheduleAppointment != null && (args.ScheduleAppointment).Subject == "Meeting")
         {
-            if (args.ScheduleAppointment != null && (args.ScheduleAppointment).Subject == "Meeting")
-            {
-                args.ScheduleAppointmentStyle.BorderColor = new SolidColorBrush(Colors.Blue);
-                args.ScheduleAppointmentStyle.BorderCornerRadius = new CornerRadius(5);
-                args.ScheduleAppointmentStyle.BorderThickness = new Thickness(5);
-            }
+            args.ScheduleAppointmentStyle.BorderColor = new SolidColorBrush(Colors.Blue);
+            args.ScheduleAppointmentStyle.BorderCornerRadius = new CornerRadius(5);
+            args.ScheduleAppointmentStyle.BorderThickness = new Thickness(5);
         }
+    }
 
  
 {% endhighlight %}
@@ -432,30 +432,31 @@ These events will be triggered while perform respective touch actions in timeslo
      schedule.ScheduleDoubleTapped += Schedule_ScheduleDoubleTapped;
 
 
-	    private void Schedule_ScheduleDoubleTapped(object sender, ScheduleTappedEventArgs e)
-        {
-        }
+    private void Schedule_ScheduleDoubleTapped(object sender, ScheduleTappedEventArgs e)
+    {
+    }
 
-        private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
-        { 
-        }
+    private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
+    { 
+    }
  
 {% endhighlight %}
 
 ### Selection customization
 The default selection of an appointment can be customized by using [SelectionColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassSelectionColorTopic.html), [SelectionTextColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleAppointmentStyleClassSelectionTextColorTopic.html) properties in `ScheduleAppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
-N>**Note:** `BorderWidth` value must be set to highlight `SelectionColor`.
+N> `BorderWidth` value must be set to highlight `SelectionColor`.
 
 {% tabs %} 
 {% highlight c# %} 
  
-    //Creating Appointment style 
-            ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
-            appointmentStyle.SelectionColor = new SolidColorBrush(Colors.Yellow);
-            appointmentStyle.SelectionTextColor = new SolidColorBrush(Colors.Yellow);
+            //Creating Appointment style 
+        ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
+        appointmentStyle.SelectionColor = new SolidColorBrush(Colors.Yellow);
+        appointmentStyle.SelectionTextColor = new SolidColorBrush(Colors.Yellow);
+
             //Setting Appointment Style 
-            schedule.ScheduleAppointmentStyle = appointmentStyle;
+        schedule.ScheduleAppointmentStyle = appointmentStyle;
  
 {% endhighlight %}
   
@@ -481,15 +482,15 @@ The Schedule control allows you to define resources that can be assigned to appo
 
 {% highlight c# %} 
  
-    //creating appointments for resource
-        ScheduleAppointment ScheduleAppointment = new ScheduleAppointment() 
-        {                
-            StartTime = currentDate, 
-            EndTime = currentDate.AddHours(2), 
-            Subject = "Meeting", 
-            Location = "Chennai", 
-            AppointmentBackground = new SolidColorBrush(Colors.Green) 
-        };
+        //creating appointments for resource
+    ScheduleAppointment ScheduleAppointment = new ScheduleAppointment() 
+    {                
+        StartTime = currentDate, 
+        EndTime = currentDate.AddHours(2), 
+        Subject = "Meeting", 
+        Location = "Chennai", 
+        AppointmentBackground = new SolidColorBrush(Colors.Green) 
+    };
     ScheduleAppointment.ResourceCollection.Add(new Resource() { ResourceName = "Dr.Jacob", TypeName = "Doctor" });
     
     //creating appointments for resource
