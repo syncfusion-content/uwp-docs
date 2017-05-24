@@ -1,0 +1,96 @@
+---     
+layout: post     
+title: Header appearance and customization in Syncfusion SfSchedule control for UWP     
+description: Learn how to customize header in SfSchedule control 
+platform: uwp    
+control: SfSchedule     
+documentation: ug 
+---  
+
+# Header
+
+You can customize the header of the Schedule using [SfSchedule.ScheduleHeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassScheduleHeaderStyleTopic.html) property in Schedule and [ScheduleHeaderStyle.HeaderHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderHeightTopic.html) property in `ScheduleHeaderStyle` of Schedule.
+
+## Header Height
+
+You can customize the height for the Header in Schedule using `HeaderHeight` in `ScheduleHeaderStyle` of Schedule.
+
+{% tabs %} 
+{% highlight xaml %}
+        
+    <syncfusion:SfSchedule x:Name="schedule">
+        <syncfusion:SfSchedule.ScheduleHeaderStyle>
+            <syncfusion:ScheduleHeaderStyle HeaderHeight="50" />
+        </syncfusion:SfSchedule.ScheduleHeaderStyle>
+    </syncfusion:SfSchedule>
+    
+{% endhighlight %} 
+{% highlight c# %}
+
+	ScheduleHeaderStyle headerStyle = new ScheduleHeaderStyle();
+    headerStyle.HeaderHeight = 50;
+    schedule.ScheduleHeaderStyle = headerStyle;
+
+{% endhighlight %}
+{% endtabs %} 
+
+## Appearance
+
+You can change the header format and style using `ScheduleHeaderStyle` property in schedule.
+
+You can change the background color,text style and text size using properties such as [ScheduleHeaderStyle.HeaderBackground](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderBackgroundTopic.html), [ScheduleHeaderStyle.HeaderTextStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderTextStyleTopic.html), [ScheduleHeaderStyle.HeaderTextSize](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderTextSizeTopic.html), [ScheduleHeaderStyle.HeaderTextColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderTextColorTopic.html), of Header using `ScheduleHeaderStyle` property in schedule.
+
+{% tabs %} 
+{% highlight xaml %}
+
+    <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Day">
+        <syncfusion:SfSchedule.ScheduleHeaderStyle>
+            <syncfusion:ScheduleHeaderStyle
+                HeaderBackground="LightPink"
+                HeaderTextColor="White"
+                HeaderTextSize="15"
+                HeaderTextStyle="Bold" />
+        </syncfusion:SfSchedule.ScheduleHeaderStyle>
+    </syncfusion:SfSchedule>
+
+{% endhighlight %}
+{% highlight c# %}
+
+	ScheduleHeaderStyle headerStyle = new ScheduleHeaderStyle();
+    headerStyle.HeaderBackground = new SolidColorBrush(Colors.LightPink);
+    headerStyle.HeaderTextColor = new SolidColorBrush(Colors.White);
+    headerStyle.HeaderTextSize = 15;
+    headerStyle.HeaderTextStyle = FontWeights.Bold;
+    schedule.ScheduleHeaderStyle = headerStyle;
+
+{% endhighlight %}
+{% endtabs %} 
+
+![](Header_images/HeaderStyle.png) 
+
+## Loading Custom Headers
+
+You can collapse the default header of schedule by setting `HeaderHeight` property of `ScheduleHeaderStyle` of `SfSchedule` as 0. Instead you can use your own custom header for it. While navigating views in schedule, text labels available in the header will be changed based on it visible dates, so while using custom header , respective text value can be obtained from the `VisibleDatesChanging` event of `SfSchedule`.
+
+{% highlight c# %}
+    
+    //triggering the visible dates changing event.
+    schedule.VisibleDatesChanging += Schedule_VisibleDatesChanging; 
+
+    private void Schedule_VisibleDatesChanging(object sender, VisibleDatesChangingEventArgs e)
+        {
+            DateTime dt = ((ObservableCollection<System.DateTime>)e.NewValue).LastOrDefault();
+            String month = null;
+            var headerString = string.Empty;
+            if (schedule.ScheduleType == ScheduleType.Month)
+            {
+                month = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(CultureInfo.CurrentCulture.Calendar.GetMonth((e.NewValue as ObservableCollection<System.DateTime>)[(e.NewValue as ObservableCollection<System.DateTime>).Count / 2].Date));
+                headerString = month + "," + " " + (e.NewValue as ObservableCollection<System.DateTime>)[(e.NewValue as ObservableCollection<System.DateTime>).Count / 2].Year.ToString();
+            }
+            else
+                headerString = String.Format("{0:MMMM, yyyy}", dt);
+        }
+
+{% endhighlight %}
+
+You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HeaderSample_UWP-317998418.zip) 
