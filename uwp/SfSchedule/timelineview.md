@@ -1,3 +1,12 @@
+---
+layout: post
+title: Timeline View
+description: Timeline View
+platform: uwp
+control: SfSchedule
+documentation: ug
+---
+
 # TimeLine View
 TimeLine view is used to displays complete TimeLine in selected day, the default visible day of Schedule will be current day. Appointments are added in particular timeslot based on its timeline.
 
