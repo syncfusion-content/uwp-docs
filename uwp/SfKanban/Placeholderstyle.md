@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Placeholderstyle | SfKanban | uwp | Syncfusion
+title:  Placeholder style | SfKanban | uwp | Syncfusion
 description: The following section describes how to customize the place holders of Kanban card while drgging.
 platform: uwp
 control: SfKanban
@@ -9,7 +9,7 @@ documentation: ug
 
 # Placeholder Style
 
-* [`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassTopic.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
+* [`SfKanban.PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassTopic.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
 
 * [`Fill`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassFillTopic.html)  	 - This property is used to change the background color of the placeholder.
 * [`Stroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassStrokeTopic.html) 	 	 - This property is used to change the border color of the placeholder.
@@ -19,7 +19,6 @@ documentation: ug
 * [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassForegroundTopic.html)           - This property is used to change the text color of the placeholder.
 
 Following properties are used to customize the selected category when you have more than one category in a column.
-
 * [`SelectedBackground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedBackgroundTopic.html) 	- This property is used to change the background color of the selected placeholder.
 * [`SelectedStroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeTopic.html) 		- This property is used to change the border color of the selected placeholder.
 * [`SelectedStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeThicknessTopic.html) 	- This property is used to change the border width of the selected placeholder.

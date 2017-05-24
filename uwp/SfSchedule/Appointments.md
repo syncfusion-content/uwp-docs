@@ -481,33 +481,42 @@ The Schedule control allows you to define resources that can be assigned to appo
 
 {% highlight c# %} 
  
-            // creating resources
-            ResourceType resourceType = new ResourceType { TypeName = "Doctor" };
-            resourceType.ResourceCollection.Add(new Resource { DisplayName = "Dr.Jacob", ResourceName = "Dr.Jacob", });
-            resourceType.ResourceCollection.Add(new Resource { DisplayName = "Dr.Darsy", ResourceName = "Dr.Darsy" });
-            
-			schedule.DayHeaderOrder = DayHeaderOrder.OrderByDate;
-			
-            //setting resource type
-            schedule.ScheduleResourceTypeCollection = new ObservableCollection<ResourceType> { resourceType };
-           
-            //setting resource for schedule
-            schedule.Resource = "Doctor";
+    //creating appointments for resource
+        ScheduleAppointment ScheduleAppointment = new ScheduleAppointment() 
+        {                
+            StartTime = currentDate, 
+            EndTime = currentDate.AddHours(2), 
+            Subject = "Meeting", 
+            Location = "Chennai", 
+            AppointmentBackground = new SolidColorBrush(Colors.Green) 
+        };
+    ScheduleAppointment.ResourceCollection.Add(new Resource() { ResourceName = "Dr.Jacob", TypeName = "Doctor" });
+    
+    //creating appointments for resource
+    ScheduleAppointment ScheduleAppointment1 = new ScheduleAppointment() 
+    { 
+        StartTime = currentDate.AddHours(4), 
+        EndTime = currentDate.AddHours(2), 
+        Subject = "Meeting", 
+        Location = "Chennai", 
+        AppointmentBackground = new SolidColorBrush(Colors.Green) 
+    };
+    ScheduleAppointment1.ResourceCollection.Add(new Resource() { ResourceName = "Dr.Darsy", TypeName = "Doctor" });
 
-            //creating appointments for resource
-            ScheduleAppointment ScheduleAppointment = new ScheduleAppointment() { StartTime = currentDate, EndTime = currentDate.AddHours(2), Subject = "Meeting", Location = "Chennai", AppointmentBackground = new SolidColorBrush(Colors.Green) };
-            ScheduleAppointment.ResourceCollection.Add(new Resource() { ResourceName = "Dr.Jacob", TypeName = "Doctor" });
-
-
-            //creating appointments for resource
-            ScheduleAppointment ScheduleAppointment1 = new ScheduleAppointment() { StartTime = currentDate.AddHours(4), EndTime = currentDate.AddHours(2), Subject = "Meeting", Location = "Chennai", AppointmentBackground = new SolidColorBrush(Colors.Green) };
-            ScheduleAppointment1.ResourceCollection.Add(new Resource() { ResourceName = "Dr.Darsy", TypeName = "Doctor" });
-
-            //Adding schedule appointments
-            schedule.Appointments.Add(ScheduleAppointment);
-            schedule.Appointments.Add(ScheduleAppointment1);
+    //Adding schedule appointments
+        schedule.Appointments.Add(ScheduleAppointment);
+        schedule.Appointments.Add(ScheduleAppointment1);
  
 {% endhighlight %}
+
+To configure the views based on resources, refer 
+
+•	[Configuring resources in Day View.](https://help.syncfusion.com/uwp/sfschedule/dayview#configuring-resources) 
+•	[Configuring resources in Week View.](https://help.syncfusion.com/uwp/sfschedule/weekview#configuring-resources)
+•	[Configuring resources in Work Week View.](https://help.syncfusion.com/uwp/sfschedule/workweekview#configuring-resources)
+•	[Configuring resources in Month View.](https://help.syncfusion.com/uwp/sfschedule/monthview#configuring-resources)
+•	[Configuring resources in Timeline View.](https://help.syncfusion.com/uwp/sfschedule/timelineview#configuring-resources)
+
 
 ![](Appointments_images/resource.png)
 
