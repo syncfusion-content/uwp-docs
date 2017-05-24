@@ -1,3 +1,11 @@
+---
+layout: post
+title: Getting Started for SfGantt
+description: The following section provides an assistance to create a simple Gantt application and to configure it.
+platform: uwp
+control: SfGantt
+documentation: ug
+---
 # Getting started
 
 The following section provides an assistance to create a simple Gantt application and to configure it.
@@ -9,14 +17,14 @@ The following section provides an assistance to create a simple Gantt applicatio
 1. Open the Reference Manager window from project.
 2. Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
 
-![C:/Users/rachela/AppData/Local/Microsoft/Windows/INetCacheContent.Word/sdk.png](SfGantt_images/SDK_Reference.jpeg)
+![](SfGantt_images/SDK_Reference.jpeg)
 
 
 ### Adding assembly reference
 
 Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” which refers all the controls in the Syncfusion control library.
 
-![https://help.syncfusion.com/uwp/sfkanban/SfKanban_images/new_kanban_img2.jpeg](SfGantt_images/Gantt_dll_reference.jpeg)
+![](SfGantt_images/Gantt_dll_reference.jpeg)
 
 
 In the Add Reference window, browse and choose the reference assembly from the following location.
