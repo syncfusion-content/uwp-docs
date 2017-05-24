@@ -1,15 +1,4 @@
-# Overview
-
-Gantt control is designed to visualize and edit the project schedule, and track the project progress. It helps to organize and schedule the projects and you can update the project schedule through interactions like editing, dragging and resizing.
-
-## Key features
-
-* Task relationship
-* Interactive editing
-* Sorting
-* Customize timescale format
 # Getting started
-
 
 The following section provides an assistance to create a simple Gantt application and to configure it.
 
@@ -615,7 +604,6 @@ gantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
 {% endhighlight %}
 
-![](SfGantt_images/SfGantt_img8.jpeg)
 
 
 N>To display non-working days the interval type must be week or lesser interval type as days, hours and minutes.
@@ -652,27 +640,27 @@ gantt.AllowEditing = true;
 
 Cell Editing
 
-![](SfGantt_images/SfGantt_img9.jpeg)
+![](SfGantt_images/SfGantt_img8.jpeg)
 
 
 Dragging Task
 
-![](SfGantt_images/SfGantt_img10.jpeg)
+![](SfGantt_images/SfGantt_img9.jpeg)
 
 
 Resizing Task
 
-![](SfGantt_images/SfGantt_img11.jpeg)
+![](SfGantt_images/SfGantt_img10.jpeg)
 
 
 Dragging Progress Bar
 
-![](SfGantt_images/SfGantt_img12.jpeg)
+![](SfGantt_images/SfGantt_img11.jpeg)
 
 
 Editing also allows you to create the relationship by drag and drop as shown in the below screenshot.
 
-![](SfGantt_images/SfGantt_img13.jpeg)
+![](SfGantt_images/SfGantt_img12.jpeg)
 
 
 ### Sorting
@@ -707,6 +695,6 @@ gantt.AllowSorting = true;
 
 {% endhighlight %}
 
-![](SfGantt_images/SfGantt_img14.jpeg)
+![](SfGantt_images/SfGantt_img13.jpeg)
 
 
