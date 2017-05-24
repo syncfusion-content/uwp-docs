@@ -9,14 +9,14 @@ The following section provides an assistance to create a simple Gantt applicatio
 1. Open the Reference Manager window from project.
 2. Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
 
-![C:/Users/rachela/AppData/Local/Microsoft/Windows/INetCacheContent.Word/sdk.png](SfGantt_images/SfGantt_img1.jpeg)
+![C:/Users/rachela/AppData/Local/Microsoft/Windows/INetCacheContent.Word/sdk.png](SfGantt_images/SDK_Reference.jpeg)
 
 
 ### Adding assembly reference
 
 Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” which refers all the controls in the Syncfusion control library.
 
-![https://help.syncfusion.com/uwp/sfkanban/SfKanban_images/new_kanban_img2.jpeg](SfGantt_images/SfGantt_img2.jpeg)
+![https://help.syncfusion.com/uwp/sfkanban/SfKanban_images/new_kanban_img2.jpeg](SfGantt_images/Gantt_dll_reference.jpeg)
 
 
 In the Add Reference window, browse and choose the reference assembly from the following location.
@@ -83,15 +83,15 @@ SfGantt gantt=new SfGantt();
 
 Drag and drop the Gantt control from the toolbox to your application.
 
-![](SfGantt_images/SfGantt_img3.jpeg)
+![](SfGantt_images/Tool_Box.jpeg)
 
 
 Now the “Syncfusion Controls for UWP XAML” reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![](SfGantt_images/SfGantt_img4.jpeg)
+![](SfGantt_images/Added_SDK.jpeg)
 
 
-![](SfGantt_images/SfGantt_img5.jpeg)
+![](SfGantt_images/XAML_Reference.jpeg)
 
 
 ### Create data model
@@ -413,7 +413,7 @@ gantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttribu
 
 {% endhighlight %}
 
-![](SfGantt_images/SfGantt_img6.jpeg)
+![](SfGantt_images/Getting_Started.jpeg)
 
 
 ### Task relationships
@@ -442,7 +442,7 @@ ScheduleProcess[3].Predecessors.Add(new TaskRelationship() { ID = "38", Relation
 
 {% endhighlight %}
 
-![](SfGantt_images/SfGantt_img7.jpeg)
+![](SfGantt_images/Task_Relationships.jpeg)
 
 
 ### Resources
@@ -640,27 +640,27 @@ gantt.AllowEditing = true;
 
 Cell Editing
 
-![](SfGantt_images/SfGantt_img8.jpeg)
+![](SfGantt_images/Cell_Editing.jpeg)
 
 
 Dragging Task
 
-![](SfGantt_images/SfGantt_img9.jpeg)
+![](SfGantt_images/Dragging_Task.jpeg)
 
 
 Resizing Task
 
-![](SfGantt_images/SfGantt_img10.jpeg)
+![](SfGantt_images/Resizing_Task.jpeg)
 
 
 Dragging Progress Bar
 
-![](SfGantt_images/SfGantt_img11.jpeg)
+![](SfGantt_images/Dragging_Progress_Bar.jpeg)
 
 
 Editing also allows you to create the relationship by drag and drop as shown in the below screenshot.
 
-![](SfGantt_images/SfGantt_img12.jpeg)
+![](SfGantt_images/Predecessor_Chart_Drag.jpeg)
 
 
 ### Sorting
@@ -695,6 +695,6 @@ gantt.AllowSorting = true;
 
 {% endhighlight %}
 
-![](SfGantt_images/SfGantt_img13.jpeg)
+![](SfGantt_images/Sorting.jpeg)
 
 
