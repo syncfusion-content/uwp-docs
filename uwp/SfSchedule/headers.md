@@ -79,7 +79,7 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
 
     private void Schedule_VisibleDatesChanging(object sender, VisibleDatesChangingEventArgs e)
         {
-            DateTime dt = ((ObservableCollection<System.DateTime>)e.NewValue).LastOrDefault();
+            DateTime dateTime = ((ObservableCollection<System.DateTime>)e.NewValue).LastOrDefault();
             String month = null;
             var headerString = string.Empty;
             if (schedule.ScheduleType == ScheduleType.Month)
@@ -88,7 +88,7 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
                 headerString = month + "," + " " + (e.NewValue as ObservableCollection<System.DateTime>)[(e.NewValue as ObservableCollection<System.DateTime>).Count / 2].Year.ToString();
             }
             else
-                headerString = String.Format("{0:MMMM, yyyy}", dt);
+                headerString = String.Format("{0:MMMM, yyyy}", dateTime);
         }
 
 {% endhighlight %}
