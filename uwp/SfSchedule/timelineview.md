@@ -268,9 +268,12 @@ You can the customize the default font size of time label in timeline view by us
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
+
 *	Selection customization using style
 *	Selection customization using custom View.
+
 ### Selection customization using style
+
 You can customize the timeslot selection by using [ScheduleSelectionStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassScheduleSelectionStyleTopic.html) property of `SfSchedule`.
 {% tabs %}   
 {% highlight xaml %} 
@@ -328,10 +331,15 @@ You can replace the default selection UI with your custom view by setting [Selec
 
 ![](TimeLine-View_images/Selection_CustomView.png)
 
-## Configuring Resources
-The Schedule control allows you to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. 
-### Multi-Resource
-Schedule appointments will be grouped based on the resource associated with them only when both the [Resource](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassResourceTopic.html) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassScheduleResourceTypeCollectionTopic.html) properties are set, and also when the Value set for a `Resource` matches with any types specified in the `ScheduleResourceTypeCollection` property.
+## Configuration Resources
+The Schedule control allows you to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
+
+*	[Adding resources](#adding-resource)
+*	[Customizing resource visibility](#customizing-resource-visibility)
+*	[Configuring appointments based on resource](https://help.syncfusion.com/uwp/sfschedule/appointments#configuring-resources)
+
+### Adding resource
+Resource can be added to the schedule control by setting Resource and ScheduleResourceTypeCollection of SfSchedule. After that add the ResourceType for ScheduleResourceTypeCollection and assign Resource to ResourceType.
 {% tabs %}   
 {% highlight xaml %} 
 
@@ -396,7 +404,7 @@ Schedule appointments will be grouped based on the resource associated with them
 
 ![](TimeLine-View_images/Resources.png)
 
-### Row Count in Timeline View
+### Customizing resource visibility
 This feature supports to display ‘N’ number of rows in `TimeLine` view. You can achieve this by specifying the count of resources that needs to be displayed per view. This support is offered for `TimeLine` view alone.
 This support can be enabled by using property [TimeLineViewRowCount](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassTimeLineViewRowCountTopic.html) in `SfSchedule`. By default, its value is “zero”.
 
