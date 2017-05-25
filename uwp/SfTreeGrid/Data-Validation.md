@@ -312,6 +312,7 @@ You can change the validation error template color of the `TreeGridCell` by ch
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ms-appx:///Syncfusion.SfGrid.UWP/Control/Themes/Generic.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <local:BoolToVisibilityConverter x:Key="VisibilityConverter" />
             <Style TargetType="syncfusion:TreeGridExpanderCell">
                 <Setter Property="Background" Value="Transparent" />
                 <Setter Property="BorderThickness" Value="0,0,1,1" />
@@ -342,7 +343,7 @@ You can change the validation error template color of the `TreeGridCell` by ch
                                                                                       UpdateSourceTrigger=PropertyChanged}"
                                                                  Visibility="{Binding RelativeSource={RelativeSource TemplatedParent},
                                                                                       Path=HasChildNodes,
-                                                                                      Converter={StaticResource VisiblityConverter},
+                                                                                      Converter={StaticResource VisibilityConverter},
                                                                                       Mode=TwoWay}" />
 
                                     <CheckBox Name="PART_SelectCheckBox"
@@ -361,7 +362,7 @@ You can change the validation error template color of the `TreeGridCell` by ch
                                               IsThreeState="True"
                                               Visibility="{Binding Path=ColumnBase.Renderer.TreeGrid.ShowCheckBox,
                                                                    RelativeSource={RelativeSource Mode=TemplatedParent},
-                                                                   Converter={StaticResource VisiblityConverter},
+                                                                   Converter={StaticResource VisibilityConverter},
                                                                    Mode=TwoWay}" />
 
 
@@ -419,6 +420,24 @@ You can change the validation error template color of the `TreeGridCell` by ch
             </Style>
         </ResourceDictionary>
 </Page.Resources>
+{% endhighlight %}
+{% highlight c# %}
+public class BoolToVisibilityConverter : IValueConverter
+{     
+    public object Convert(object value, Type targetType, object parameter, string language)
+    {
+        if ((bool)value)
+            return Visibility.Visible;
+        return Visibility.Collapsed;
+    }
+    
+    public object ConvertBack(object value, Type targetType, object parameter, string language)
+    {
+        if ((Visibility)value == Visibility.Visible)
+            return true;
+        return false;
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 

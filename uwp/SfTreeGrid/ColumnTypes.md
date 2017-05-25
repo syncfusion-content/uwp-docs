@@ -1183,19 +1183,19 @@ StringBuilder sb1 = new StringBuilder();
 sb1.Append("<DataTemplate xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\">");
 sb1.Append("<TextBlock Text=\"{Binding FirstName}\" />");
 sb1.Append("</DataTemplate>");
-DataTemplate celltemplate = (DataTemplate)XamlReader.Load(sb1.ToString());
+DataTemplate cellTemplate = (DataTemplate)XamlReader.Load(sb1.ToString());
 
 StringBuilder sb2 = new StringBuilder();
 sb2.Append("<DataTemplate xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\">");
 sb2.Append("<TextBox Text=\"{Binding FirstName, Mode=TwoWay}\" />");
 sb2.Append("</DataTemplate>");
-DataTemplate edittemplate = (DataTemplate)XamlReader.Load(sb2.ToString());
+DataTemplate editTemplate = (DataTemplate)XamlReader.Load(sb2.ToString());
 
 this.treeGrid.Columns.Add(new TreeGridTemplateColumn()
 {
     MappingName = "FirstName",
-    CellTemplate = celltemplate,
-    EditTemplate = edittemplate
+    CellTemplate = cellTemplate,
+    EditTemplate = editTemplate
 });
 {% endhighlight %}
 {% endtabs %}
@@ -2033,7 +2033,7 @@ public class MaxLengthConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)
     {
-        // Define maxlength for column
+        // Define max length for column.
         int maxLength = 5;
         // Get the ColumnValue
         var columnValue = System.Convert.ToString(value);
