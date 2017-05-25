@@ -477,7 +477,7 @@ N> `BorderWidth` value must be set to highlight `SelectionColor`.
 
 ![](Appointments_images/selection.png)
 
-### Configuring resources
+## Configuring resources
 The Schedule control allows you to define resources that can be assigned to appointments. [Resources](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleResourceClassTopic.html) let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
 
 {% highlight c# %} 
