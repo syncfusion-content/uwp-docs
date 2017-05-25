@@ -16,7 +16,7 @@ When tapping on the schedule or appointment, our built-in context menu will be o
 {% highlight c# %} 
 
         schedule.ContextMenuOpening += Schedule_ContextMenuOpening;
-        private void Schedule_ContextMenuOpening(object sender,             ContextMenuOpeningEventArgs e)
+        private void Schedule_ContextMenuOpening(object sender,ContextMenuOpeningEventArgs e)
         {
             e.Cancel = true;
         }
@@ -30,7 +30,7 @@ When tapping on the schedule or appointment, our built-in context menu will be o
 {% highlight c# %} 
 
       schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
-      private void Schedule_AppointmentEditorOpening(object sender, AppointmentEditorOpeningEventArgs e)
+      private void Schedule_AppointmentEditorOpening(object sender,AppointmentEditorOpeningEventArgs e)
         {
             e.Cancel = true;
         }
@@ -40,8 +40,11 @@ When tapping on the schedule or appointment, our built-in context menu will be o
 
 ## Drag-Drop
 You can use the Context menu to easily drag and drop the appointments from one timeslot to another timeslot by selecting the `Resize` option available in Context menu item.
+
 ### Appointment Start Dragging
+
 The event will be triggered when appointment is started to dragging. The [AppointmentStartDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleAppointmentStartDraggingEventArgsClassTopic.html) contains the following properties.
+
 *	**Appointment**- Gets the dragging appointment, this argument is of type object.
 *	**Cancel**- Set this Boolean property to True to disable the drag and drop option.
 
@@ -49,7 +52,7 @@ The event will be triggered when appointment is started to dragging. The [Appoin
 {% highlight c# %} 
 
       schedule.AppointmentStartDragging += Schedule_AppointmentStartDragging;
-      private void Schedule_AppointmentStartDragging(object sender,       Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs e)
+      private void Schedule_AppointmentStartDragging(object sender,Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs e)
         {
         
         }
@@ -58,7 +61,9 @@ The event will be triggered when appointment is started to dragging. The [Appoin
 
 
 ### Appointment End Dragging
+
 The event will be triggered when appointment is dropping. The [AppointmentEndDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleAppointmentEndDraggingEventArgsClassTopic.html) contains the following properties.
+
 *	**Appointment**- Gets the dragging appointment, this argument is of type object.
 *	**From** – Get the appointment initial dragging time.
 *	**Resources** - gets the current resource of the appointment.
@@ -69,7 +74,7 @@ The event will be triggered when appointment is dropping. The [AppointmentEndDra
 {% highlight c# %} 
 
         schedule.AppointmentEndDragging += Schedule_AppointmentEndDragging;
-        private void Schedule_AppointmentEndDragging(object sender, AppointmentEndDraggingEventArgs e)
+        private void Schedule_AppointmentEndDragging(object sender,AppointmentEndDraggingEventArgs e)
         {
         
         }
@@ -78,7 +83,9 @@ The event will be triggered when appointment is dropping. The [AppointmentEndDra
 
 
 ### Appointment Dragging
+
 The event will be triggered when drag and drop the appointment. The [AppointmentDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleAppointmentDraggingEventArgsClassTopic.html) contains the following properties.
+
 *	**Appointment**- Gets the dragging appointment, this argument is of type object.
 *	**From** – Get the appointment initial dragging time.
 *	**Resources** - gets the current resource of the appointment.
@@ -90,7 +97,7 @@ The event will be triggered when drag and drop the appointment. The [Appointment
 {% highlight c# %} 
 
          schedule.AppointmentDragging += Schedule_AppointmentDragging;
-         private void Schedule_AppointmentDragging(object sender, AppointmentDraggingEventArgs e)
+         private void Schedule_AppointmentDragging(object sender,AppointmentDraggingEventArgs e)
         {
        
         }
@@ -102,7 +109,9 @@ The event will be triggered when drag and drop the appointment. The [Appointment
 You can use the Context menu to resizing a Selected Appointment as per required start and end time of schedule in an interactive manner by selecting the `Resize` option available in Context menu item.
 
 ### Appointment Start Resizing
+
 The event will be triggered when appointment is started to resizing. The [AppointmentStartResizingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleAppointmentStartResizingEventArgsClassTopic.html) contains the following properties.
+
 *	**Appointment**- Gets the resizing appointment, this argument is of type object.
 *	**Cancel**- Set this Boolean property to True to disable the resize option.
 
@@ -110,7 +119,7 @@ The event will be triggered when appointment is started to resizing. The [Appoin
 {% highlight c# %} 
 
          schedule.AppointmentStartResizing += Schedule_AppointmentStartResizing;
-         private void Schedule_AppointmentStartResizing(object sender, AppointmentStartResizingEventArgs e)
+         private void Schedule_AppointmentStartResizing(object sender,AppointmentStartResizingEventArgs e)
         {
           
         }
@@ -119,7 +128,9 @@ The event will be triggered when appointment is started to resizing. The [Appoin
 
 
 ### Appointment End Resizing
+
 The event will be triggered when finishing the appointment resizing. The [AppointmentEndResizingEventArgs]() contains the following properties.
+
 *	**Appointment**- Gets the resizing appointment, this argument is of type object.
 *	**From** - Get the appointment start resizing time.
 *	**ResizeType** - gets the ResizeType.
@@ -130,7 +141,7 @@ The event will be triggered when finishing the appointment resizing. The [Appoin
 {% highlight c# %} 
 
           schedule.AppointmentEndResizing += Schedule_AppointmentEndResizing;
-          private void Schedule_AppointmentEndResizing(object sender, AppointmentEndResizingEventArgs e)
+          private void Schedule_AppointmentEndResizing(object sender,AppointmentEndResizingEventArgs e)
         {
           
         }
@@ -139,7 +150,9 @@ The event will be triggered when finishing the appointment resizing. The [Appoin
 
 
 ### Appointment Resizing
+
 The event will be triggered when resizing the appointment. The [AppointmentResizingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleAppointmentResizingEventArgsClassTopic.html) contains the following properties.
+
 *	**Appointment**- Gets the resizing appointment, this argument is of type object.
 *	**From** - Get the appointment start dragging time.
 *	**ResizeType**- gets the `ResizeType`.
@@ -149,7 +162,7 @@ The event will be triggered when resizing the appointment. The [AppointmentResiz
 {% highlight c# %} 
 
            schedule.AppointmentResizing += Schedule_AppointmentResizing;
-           private void Schedule_AppointmentResizing(object sender, AppointmentResizingEventArgs e)
+           private void Schedule_AppointmentResizing(object sender,AppointmentResizingEventArgs e)
         {
           
         }
