@@ -322,7 +322,6 @@ The Schedule control allows you to define resources that can be assigned to appo
 ### Adding resource
 Resource can be added to the schedule control by setting [Resource](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassResourceTopic.html) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassScheduleResourceTypeCollectionTopic.html) of `SfSchedule`. After that add the [ResourceType](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleResourceTypeClassctorTopic.html) for `ScheduleResourceTypeCollection` and assign `Resource` to `ResourceType`.
 {% tabs %}
-
 {% highlight C# %}
 
     //setting resource for schedule
