@@ -31,6 +31,7 @@ By default, schedule control is available with en locale, which is English.
 
 ## Localizing custom text in UWP renderer.
 You can localize custom text available in the control by adding equivalent localized string in the fr.resw file. Here we have used French language.
+
 >**Note:** Here resw file name should be match with the given locale language code.
 
 ![](Localization_images/Localization_CustomText.png)
