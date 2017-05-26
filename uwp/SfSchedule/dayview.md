@@ -10,11 +10,11 @@ documentation: ug
 ---
 
 
-# DayView:
+# DayView
 
 DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
-## ViewHeader Appearance:
+## ViewHeader Appearance
 You can customize the default appearance of view header in [DayView](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleTypeClassTopic.html) by using [DayViewHeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassDayViewHeaderStyleTopic.html) and [DayViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleDayViewHeaderStyleClassDayViewHeaderHeightTopic.html) properties of [SfSchedule](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassTopic.html).
 
 {% tabs %}
@@ -47,13 +47,13 @@ You can customize the default appearance of view header in [DayView](https://hel
 {% endtabs %}
 ![](daymodule_images/viewheader_day.png)
 
-## Change Time Interval:
+## Change Time Interval
 You can customize the interval of timeslots in `DayView`.
 
 * [TimeInterval customization](#timeInterval-customization)
 * [CustomTimeInterval](#customTimeInterval)
 
-### TimeInterval customization:
+### TimeInterval customization
 You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassTimeIntervalTopic.html) property of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
@@ -69,7 +69,7 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
 {% endtabs %}
 ![](daymodule_images/timeinterval_day.png)
 
-### CustomTimeInterval:
+### CustomTimeInterval
 You can customize the interval of timeslots in `DayView` by setting [CustomTimeInterval](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassCustomTimeIntervalTopic.html) property of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
@@ -89,7 +89,7 @@ You can customize the interval of timeslots in `DayView` by setting [CustomTimeI
 {% endtabs %}
 ![](daymodule_images/customtimeinterval_day.png)
 
-## Change Working hours:
+## Change Working hours
 Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassWorkStartHourTopic.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassWorkEndHourTopic.html) properties of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
@@ -113,10 +113,11 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 {% endhighlight %}
 {% endtabs %}
 ![](daymodule_images/changeworkinghours_day.png)
+
 >**Note**:
 `WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
 
-## Timeslot Appearance:
+## Timeslot Appearance
 You can customize the appearance of the Timeslot by its color using [MajorTickStroke](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassMajorTickStrokeTopic.html), [MinorTickStroke](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassMinorTickStrokeTopic.html), [DayViewVerticalLineStroke](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassDayViewVerticalLineStrokeTopic.html),  [MajorTickStrokeDashArray](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassMajorTickStrokeDashArrayTopic.html),  [MinorTickStrokeDashArray](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassMinorTickStrokeDashArrayTopic.html),  [IsHighLightWorkingHours](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassIsHighLightWorkingHoursPropertyTopic.html),  `WorkStartHour` , `WorkEndHour` and [NonWorkingHourBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassNonWorkingHourBrushTopic.html) properties of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
@@ -150,7 +151,7 @@ You can customize the appearance of the Timeslot by its color using [MajorTickSt
 {% endtabs %}
 ![](daymodule_images/timeslotappearance_day.png)
 
-## Non-Accessible timeslots:
+## Non-Accessible timeslots
 
 You can restrict or allocate certain timeslot as non-accessible blocks by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassNonAccessibleBlocksTopic.html) of `SfSchedule`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 {% tabs %}
@@ -180,15 +181,16 @@ You can restrict or allocate certain timeslot as non-accessible blocks by using 
 {% endhighlight %}
 {% endtabs %}
 ![](daymodule_images/nonaccessibleblock_day.png)
+
 >**Note**:
 Selection and related events will not be working in this blocks.
 
 ## Change first day of week:
 
-Change first day of week:
+Change first day of week
 [FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassFirstDayOfWeekTopic.html) of `SfSchedule` is not applicable for `DayView` as it displays only one day.
 
-## Time Label Formatting:
+## Time Label Formatting
 You can customize the format for the labels which are mentioning the time, by setting [MajorTickTimeFormat](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassMajorTickTimeFormatTopic.html) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassMinorTickTimeFormatTopic.html) properties of ` SfSchedule`.
 {% tabs %}
 {% highlight C# %}
@@ -209,7 +211,7 @@ You can customize the format for the labels which are mentioning the time, by se
 {% endtabs %}
 ![](daymodule_images/timelabelformat_day.png)
 
-## Time Label Appearance:
+## Time Label Appearance
 
 You can customize the color for the labels which are mentioning the time, by setting [MajorTickLabelStroke](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassMajorTickLabelStrokeTopic.html) and  [MinorTickLabelStroke](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassMinorTickLabelStrokeTopic.html) properties of ` SfSchedule`.
 {% tabs %}
@@ -230,13 +232,13 @@ You can customize the color for the labels which are mentioning the time, by set
 {% endtabs %}
 ![](daymodule_images/timelabelappearance_day.png)
 
-## Selection:
+## Selection
 You can customize the default appearance of selection UI in the timeslots.
 
 * [Selection customization using style](#selection-customization-using-style)
 * [Selection customization using custom View](#selection-customization-using-custom-view)
 
-### Selection customization using style:
+### Selection customization using style
 You can customize the timeslot selection by using [ScheduleSelectionStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassScheduleSelectionStyleTopic.html) property of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
@@ -264,7 +266,7 @@ You can customize the timeslot selection by using [ScheduleSelectionStyle](https
 {% endtabs %}
 ![](daymodule_images/selectionstyle_day.png)
 
-### Selection customization using custom View:
+### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassSelectionViewTopic.html) property of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
@@ -402,7 +404,7 @@ SubResourceType enables users to view appointments based on their subcategory on
 {% endtabs %}
 ![](daymodule_images/subresource_day.png)
 
-### Changing resource order:
+### Changing resource order
 #### Order by Date
 DayHeaderOrder property is used to set the order by which resources must be displayed. OrderByDate will be displaying the resource based on date. 
 {% tabs %}
@@ -419,6 +421,7 @@ DayHeaderOrder property is used to set the order by which resources must be disp
 {% endhighlight %}
 {% endtabs %}
 ![](daymodule_images/orderbydate_day.png)
+
 #### Order by resource
 DayHeaderOrder property is used to set the order by which resources must be displayed. OrderByResource will be displaying the resource based on resource collection. 
 {% tabs %}
@@ -435,7 +438,8 @@ DayHeaderOrder property is used to set the order by which resources must be disp
 {% endhighlight %}
 {% endtabs %}
 ![](daymodule_images/orderbyresource_day.png)
-### Customizing resource visibility:
+
+### Customizing resource visibility
 
 #### Column count
 This feature supports to specifying the count of resources that needs to be displayed per view. This support can be enabled by using property [DayViewColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassDayViewColumnCountTopic.html) in `SfSchedule`. By default, its value is “zero”.
