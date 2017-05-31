@@ -51,41 +51,39 @@ In this walkthrough, you will create a new application that contains the SfGantt
 
 2.Add the “Syncfusion.UI.Xaml.Gantt” namespace to the application as shown below.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
+
 xmlns:gantt="using:Syncfusion.UI.Xaml.Gantt"
 
-
-
-
-
-
-
-
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
 using Syncfusion.UI.Xaml.Gantt;
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 1.Create an instance of SfGantt control.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
+
 <gantt:SfGantt></gantt:SfGantt>
 
-
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
 SfGantt gantt=new SfGantt();
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Adding SfGantt from toolbox
 
@@ -106,7 +104,7 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 
 You need to create a collection of TaskDetails objects for populating SfGantt.
 
-{% highlight c# %}
+{% highlight C# %}
 public class ProjectTrackerViewModel
 
 {
@@ -373,23 +371,21 @@ return Schedule;
 
 To bind the data source of the SfGantt, set ItemsSource property as shown below.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
+
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" />
 
-
-
-
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
 SfGantt gantt=new SfGantt() {ItemsSource = this.taskDetails.TaskCollection};
 
-
-
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Defining visible columns
 
@@ -399,30 +395,27 @@ You can also define the visible columns using VisibleGridColumns property in SfG
 
 The following code example illustrates how this can be done.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
+
 <gantt:SfGantt VisibleGridColumns="Id,Name,StartDate,FinishDate,Progress" ItemsSource="{Binding TaskCollection}" />
-
-
-
-
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
 SfGantt gantt = new SfGantt();
 
 gantt.ItemsSource = this.taskDetails.TaskCollection;
 
 gantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate | TaskAttributes.FinishDate | TaskAttributes.Progress;
 
-
-
-
-
 {% endhighlight %}
 
-![](SfGantt_images/Getting_Started.jpeg)
+{% endtabs %}
 
+![](SfGantt_images/Getting_Started.jpeg)
 
 ### Task relationships
 
@@ -437,7 +430,8 @@ The relationship can be created between two tasks, by adding the task relationsh
 
 The below code illustrates adding the predecessor in the tasks.
 
-{% highlight c# %}
+{% highlight C# %}
+
 Planning[3].Predecessors.Add(new TaskRelationship() { ID = "7", Relationship = Relationship.FinishToStart });
 
 ScheduleProcess[1].Predecessors.Add(new TaskRelationship() { ID = "12", Relationship = Relationship.FinishToStart });
@@ -446,12 +440,9 @@ ScheduleProcess[2].Predecessors.Add(new TaskRelationship() { ID = "37", Relation
 
 ScheduleProcess[3].Predecessors.Add(new TaskRelationship() { ID = "38", Relationship = Relationship.FinishToStart });
 
-
-
 {% endhighlight %}
 
 ![](SfGantt_images/Task_Relationships.jpeg)
-
 
 ### Resources
 
@@ -459,7 +450,7 @@ In Gantt control, you can allocate the resources for each task.  To allocate the
 
 The below code illustrates how to allocate a resource for a task.
 
-{% highlight c# %}
+{% highlight C# %}
 
 
 private GanttResourceCollection _resourceCollection;
@@ -532,31 +523,29 @@ ScheduleProcess[5].Resources.Add("5");
 
 }
 
-
-
-
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% tabs %}
+
+{% highlight xaml %}
+
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}" >
 
 </gantt:SfGantt>
 
-
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
 SfGantt gantt=new SfGantt();
 
 gantt.ItemsSource = this.taskDetails.TaskCollection;
 
 gantt.ProjectResources = this.taskDetails.ResourceCollection;
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ### Non-working days
 
@@ -564,7 +553,10 @@ To highlight the weekends, you can use ShowNonWorkingDays property in SfGantt. B
 
 The below code illustrates how to display the weekend as Friday.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
+
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" NonWorkingDays="Friday" NonWorkingDaysBackground="Blue" >
 
 <gantt:SfGantt.TimescaleSettings>
@@ -589,13 +581,10 @@ The below code illustrates how to display the weekend as Friday.
 
 </gantt:SfGantt>
 
-
-
-
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
 SfGantt gantt=new SfGantt();
 
 gantt.ItemsSource = this.taskDetails.TaskCollection;
@@ -608,11 +597,9 @@ gantt.TimescaleSettings.TopTier.IntervalType = IntervalType.Weeks;
 
 gantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
-
-
 {% endhighlight %}
 
-
+{% endtabs %}
 
 N>To display non-working days the interval type must be week or lesser interval type as days, hours and minutes.
 
@@ -622,29 +609,27 @@ SfGantt provides support for editing in grid and chart view. You can enable the 
 
 The below code illustrates enabling the editing in Gantt.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
+
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" AllowEditing="True" >
 
 </gantt:SfGantt>
 
-
-
-
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
 SfGantt gantt=new SfGantt();
 
 gantt.ItemsSource = this.taskDetails.TaskCollection;
 
 gantt.AllowEditing = true;
 
-
-
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 Cell Editing
 
@@ -677,19 +662,17 @@ In SfGantt sorting functionality, can be enabled by AllowSorting property. You c
 
 The below code illustrates how to enable sorting.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
+
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" AllowSorting="True" >
 
 </gantt:SfGantt>
 
-
-
-
-
 {% endhighlight %}
 
-{% highlight c# %}
-
+{% highlight C# %}
 
 SfGantt gantt=new SfGantt();
 
@@ -697,11 +680,9 @@ gantt.ItemsSource = this.taskDetails.TaskCollection;
 
 gantt.AllowSorting = true;
 
-
-
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](SfGantt_images/Sorting.jpeg)
 
