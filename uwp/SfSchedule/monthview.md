@@ -15,7 +15,7 @@ documentation: ug
 
         <schedule:SfSchedule 
 				x:Name="schedule" 
-				ScheduleView="MonthView">
+				ScheduleType="Month">
 		</schedule:SfSchedule>
 
 {% endhighlight %}
