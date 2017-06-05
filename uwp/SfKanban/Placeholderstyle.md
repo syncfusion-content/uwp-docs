@@ -19,6 +19,7 @@ documentation: ug
 * [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassForegroundTopic.html)           - This property is used to change the text color of the placeholder.
 
 Following properties are used to customize the selected category when you have more than one category in a column.
+
 * [`SelectedBackground`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedBackgroundTopic.html) 	- This property is used to change the background color of the selected placeholder.
 * [`SelectedStroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeTopic.html) 		- This property is used to change the border color of the selected placeholder.
 * [`SelectedStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanPlaceholderStyleClassSelectedStrokeThicknessTopic.html) 	- This property is used to change the border width of the selected placeholder.
