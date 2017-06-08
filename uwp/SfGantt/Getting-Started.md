@@ -29,7 +29,54 @@ Individual reference can be added to the project instead of SDK “Syncfusion Co
 
 In the Add Reference window, browse and choose the reference assembly from the following location.
 
-**[****Installed** **location****]\**Syncfusion\Essential Studio**\[****Installed** **version****]\**Assemblies for Universal Windows\10.0\Syncfusion.SfGantt.UWP.dll
+**[Installed** **location]\**Syncfusion\Essential Studio**\[Installed** **version]\**Assemblies for Universal Windows\10.0\Syncfusion.SfGantt.UWP.dll
+
+### Dependency Assemblies
+
+The following list of assemblies needs to be added as reference to use SfGantt control in any application,
+
+<table>
+<tr>
+<th>
+S.No.
+</th>
+<th>
+Dependency assemblies
+</th>
+</tr>
+<tr>
+<td>
+1.
+</td>
+<td>
+Syncfusion.Data.UWP
+</td>
+</tr>
+<tr>
+<td>
+2.
+</td>
+<td>
+Syncfusion.SfGrid.UWP
+</td>
+</tr>
+<tr>
+<td>
+3.
+</td>
+<td>
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+<tr>
+<td>
+4.
+</td>
+<td>
+Syncfusion.SfShared.UWP
+</td>
+</tr>
+</table>
 
 ## Create a simple Gantt
 
@@ -105,264 +152,140 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 You need to create a collection of TaskDetails objects for populating SfGantt.
 
 {% highlight C# %}
+
 public class ProjectTrackerViewModel
-
 {
+    public ProjectTrackerViewModel()
+    {
+        _taskCollection = this.GetData();
+    }
 
-public ProjectTrackerViewModel()
+    private ObservableCollection<TaskDetail> _taskCollection;
 
-{
+    /// <summary>
+    /// Gets or sets the appointment item source.
+    /// </summary>
+    /// <value>The appointment item source.</value>
+    public ObservableCollection<TaskDetail> TaskCollection
+    {
 
-_taskCollection = this.GetData();
+        get { return _taskCollection; }
 
+        set { _taskCollection = value; }
+
+    }
+
+    /// <summary>
+    /// Gets the data.
+    /// </summary>
+    /// <returns></returns>
+    public ObservableCollection<TaskDetail> GetData()
+    {
+        ObservableCollection<TaskDetail> Schedule = new ObservableCollection<TaskDetail>();
+
+        Schedule.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 2, 3),
+            FinishDate = new DateTime(2014, 3, 6),
+            Name = "Project Schedule",
+            ID = "1"
+        });
+
+        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>();
+
+        ScheduleProcess.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 20),
+            FinishDate = new DateTime(2014, 3, 27),
+            Name = "Planning",
+            ID = "2"
+        });
+
+        ScheduleProcess.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 20),
+            FinishDate = new DateTime(2014, 4, 4),
+            Name = "Design",
+            ID = "7"
+        });
+
+        ScheduleProcess.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 9),
+            FinishDate = new DateTime(2014, 4, 8),
+            Name = "Implementation Phase",
+            ID = "12"
+        });
+
+        ScheduleProcess.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 27),
+            FinishDate = new DateTime(2014, 4, 28),
+            Name = "Integration",
+            ID = "37"
+        });
+
+        ScheduleProcess.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 25),
+            FinishDate = new DateTime(2014, 4, 26),
+            Name = "Final Testing",
+            ID = "38"
+        });
+
+        ScheduleProcess.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 26),
+            FinishDate = new DateTime(2014, 3, 26),
+            Name = "Final Delivery",
+            ID = "39"
+        });
+
+        Schedule[0].Children = ScheduleProcess;
+
+        ObservableCollection<TaskDetail> Planning = new ObservableCollection<TaskDetail>();
+
+        Planning.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 27),
+            FinishDate = new DateTime(2014, 4, 7),
+            Name = "Plan timeline",
+            ID = "3",
+            Progress = 100
+        });
+
+        Planning.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 28),
+            FinishDate = new DateTime(2014, 4, 10),
+            Name = "Plan budget",
+            ID = "4",
+            Progress = 100
+        });
+
+        Planning.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 27),
+            FinishDate = new DateTime(2014, 4, 8),
+            Name = "Allocate resources",
+            ID = "5",
+            Progress = 100
+        });
+
+        Planning.Add(new TaskDetail
+        {
+            StartDate = new DateTime(2014, 3, 27),
+            FinishDate = new DateTime(2014, 3, 27),
+            Name = "Planning complete",
+            ID = "6",
+            Progress = 100
+        });
+
+        ScheduleProcess[0].Children = Planning;
+
+        return Schedule;
+    }
 }
-
-private ObservableCollection<TaskDetail> _taskCollection;
-
-/// <summary>
-
-/// Gets or sets the appointment item source.
-
-/// </summary>
-
-/// <value>The appointment item source.</value>
-
-public ObservableCollection<TaskDetail> TaskCollection
-
-{
-
-get
-
-{
-
-return _taskCollection;
-
-}
-
-set
-
-{
-
-_taskCollection = value;
-
-}
-
-}
-
-
-
-/// <summary>
-
-/// Gets the data.
-
-/// </summary>
-
-/// <returns></returns>
-
-public ObservableCollection<TaskDetail> GetData()
-
-{
-
-ObservableCollection<TaskDetail> Schedule = new ObservableCollection<TaskDetail>();
-
-Schedule.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 2, 3),
-
-FinishDate = new DateTime(2014, 3, 6),
-
-Name = "Project Schedule",
-
-ID = "1"
-
-});
-
-ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>();
-
-ScheduleProcess.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 20),
-
-FinishDate = new DateTime(2014, 3, 27),
-
-Name = "Planning",
-
-ID = "2"
-
-});
-
-ScheduleProcess.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 20),
-
-FinishDate = new DateTime(2014, 4, 4),
-
-Name = "Design",
-
-ID = "7"
-
-});
-
-ScheduleProcess.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 9),
-
-FinishDate = new DateTime(2014, 4, 8),
-
-Name = "Implementation Phase",
-
-ID = "12"
-
-});
-
-ScheduleProcess.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 27),
-
-FinishDate = new DateTime(2014, 4, 28),
-
-Name = "Integration",
-
-ID = "37"
-
-});
-
-ScheduleProcess.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 25),
-
-FinishDate = new DateTime(2014, 4, 26),
-
-Name = "Final Testing",
-
-ID = "38"
-
-});
-
-ScheduleProcess.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 26),
-
-FinishDate = new DateTime(2014, 3, 26),
-
-Name = "Final Delivery",
-
-ID = "39"
-
-});
-
-Schedule[0].Children = ScheduleProcess;
-
-ObservableCollection<TaskDetail> Planning = new ObservableCollection<TaskDetail>();
-
-Planning.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 27),
-
-FinishDate = new DateTime(2014, 4, 7),
-
-Name = "Plan timeline",
-
-ID = "3",
-
-Progress = 100
-
-});
-
-Planning.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 28),
-
-FinishDate = new DateTime(2014, 4, 10),
-
-Name = "Plan budget",
-
-ID = "4",
-
-Progress = 100
-
-});
-
-Planning.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 27),
-
-FinishDate = new DateTime(2014, 4, 8),
-
-Name = "Allocate resources",
-
-ID = "5",
-
-Progress = 100
-
-});
-
-Planning.Add(
-
-new TaskDetail
-
-{
-
-StartDate = new DateTime(2014, 3, 27),
-
-FinishDate = new DateTime(2014, 3, 27),
-
-Name = "Planning complete",
-
-ID = "6",
-
-Progress = 100
-
-});
-
-ScheduleProcess[0].Children = Planning;
-
-return Schedule;
-
-}
-
-}
-
 
 
 {% endhighlight %}
@@ -381,7 +304,7 @@ To bind the data source of the SfGantt, set ItemsSource property as shown bel
 
 {% highlight C# %}
 
-SfGantt gantt=new SfGantt() {ItemsSource = this.taskDetails.TaskCollection};
+SfGantt gantt = new SfGantt() {ItemsSource = this.taskDetails.TaskCollection};
 
 {% endhighlight %}
 
@@ -399,7 +322,9 @@ The following code example illustrates how this can be done.
 
 {% highlight xaml %}
 
-<gantt:SfGantt VisibleGridColumns="Id,Name,StartDate,FinishDate,Progress" ItemsSource="{Binding TaskCollection}" />
+<gantt:SfGantt VisibleGridColumns="Id,Name,StartDate,FinishDate,Progress" 
+               ItemsSource="{Binding TaskCollection}" >
+</gantt:SfGantt>
 
 {% endhighlight %}
 
@@ -409,8 +334,9 @@ SfGantt gantt = new SfGantt();
 
 gantt.ItemsSource = this.taskDetails.TaskCollection;
 
-gantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate | TaskAttributes.FinishDate | TaskAttributes.Progress;
-
+gantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate |
+                           TaskAttributes.FinishDate | TaskAttributes.Progress;
+						   
 {% endhighlight %}
 
 {% endtabs %}
@@ -432,13 +358,29 @@ The below code illustrates adding the predecessor in the tasks.
 
 {% highlight C# %}
 
-Planning[3].Predecessors.Add(new TaskRelationship() { ID = "7", Relationship = Relationship.FinishToStart });
+Planning[3].Predecessors.Add(new TaskRelationship()
+{
+    ID = "7",
+    Relationship = Relationship.FinishToStart
+});
 
-ScheduleProcess[1].Predecessors.Add(new TaskRelationship() { ID = "12", Relationship = Relationship.FinishToStart });
+ScheduleProcess[1].Predecessors.Add(new TaskRelationship()
+{
+    ID = "12",
+    Relationship = Relationship.FinishToStart
+});
 
-ScheduleProcess[2].Predecessors.Add(new TaskRelationship() { ID = "37", Relationship = Relationship.FinishToStart });
+ScheduleProcess[2].Predecessors.Add(new TaskRelationship()
+{
+    ID = "37",
+    Relationship = Relationship.FinishToStart
+});
 
-ScheduleProcess[3].Predecessors.Add(new TaskRelationship() { ID = "38", Relationship = Relationship.FinishToStart });
+ScheduleProcess[3].Predecessors.Add(new TaskRelationship()
+{
+    ID = "38",
+    Relationship = Relationship.FinishToStart
+});
 
 {% endhighlight %}
 
@@ -456,71 +398,41 @@ The below code illustrates how to allocate a resource for a task.
 private GanttResourceCollection _resourceCollection;
 
 /// <summary>
-
 /// Gets or sets the gantt resources.
-
 /// </summary>
-
 /// <value>The gantt resources.</value>
-
 public GanttResourceCollection ResourceCollection
-
 {
-
-get { return _resourceCollection; }
-
-set { _resourceCollection = value; }
-
+    get { return _resourceCollection; }
+    set { _resourceCollection = value; }
 }
 
 /// <summary>
-
 /// Gets the resources for the project.
-
 /// </summary>
-
 /// <returns></returns>
-
 private GanttResourceCollection GetResources()
-
 {
-
-GanttResourceCollection Resources = new GanttResourceCollection();
-
-Resources.Add(new GanttResource { ID = "1", Name = "Planning" });
-
-Resources.Add(new GanttResource { ID = "2", Name = "Design" });
-
-Resources.Add(new GanttResource { ID = "3", Name = "Implementation Phase" });
-
-Resources.Add(new GanttResource { ID = "4", Name = "Integration" });
-
-Resources.Add(new GanttResource { ID = "5", Name = "Final Testing" });
-
-return Resources;
-
+    GanttResourceCollection Resources = new GanttResourceCollection();
+    Resources.Add(new GanttResource { ID = "1", Name = "Planning" });
+    Resources.Add(new GanttResource { ID = "2", Name = "Design" });
+    Resources.Add(new GanttResource { ID = "3", Name = "Implementation Phase" });
+    Resources.Add(new GanttResource { ID = "4", Name = "Integration" });
+    Resources.Add(new GanttResource { ID = "5", Name = "Final Testing" });
+    return Resources;
 }
 
 public ObservableCollection<TaskDetail> GetData()
-
 {
+    this._resourceCollection = this.GetResources();
 
-this._resourceCollection = this.GetResources();
-
-//To define resource for a task.
-
-ScheduleProcess[0].Resources.Add("0");
-
-ScheduleProcess[1].Resources.Add("1");
-
-ScheduleProcess[2].Resources.Add("2");
-
-ScheduleProcess[3].Resources.Add("3");
-
-ScheduleProcess[4].Resources.Add("4");
-
-ScheduleProcess[5].Resources.Add("5");
-
+    //To define resource for a task.
+    ScheduleProcess[0].Resources.Add("0");
+    ScheduleProcess[1].Resources.Add("1");
+    ScheduleProcess[2].Resources.Add("2");
+    ScheduleProcess[3].Resources.Add("3");
+    ScheduleProcess[4].Resources.Add("4");
+    ScheduleProcess[5].Resources.Add("5");
 }
 
 {% endhighlight %}
@@ -537,7 +449,7 @@ ScheduleProcess[5].Resources.Add("5");
 
 {% highlight C# %}
 
-SfGantt gantt=new SfGantt();
+SfGantt gantt = new SfGantt();
 
 gantt.ItemsSource = this.taskDetails.TaskCollection;
 
@@ -558,38 +470,27 @@ The below code illustrates how to display the weekend as Friday.
 {% highlight xaml %}
 
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" NonWorkingDays="Friday" NonWorkingDaysBackground="Blue" >
-
-<gantt:SfGantt.TimescaleSettings>
-
-<gantt:TimescaleSettings>
-
-<gantt:TimescaleSettings.TopTier>
-
-<gantt:TimescaleTier IntervalType="Weeks"></gantt:TimescaleTier>
-
-</gantt:TimescaleSettings.TopTier>
-
-<gantt:TimescaleSettings.BottomTier>
-
-<gantt:TimescaleTier IntervalType="Days"></gantt:TimescaleTier>
-
-</gantt:TimescaleSettings.BottomTier>
-
-</gantt:TimescaleSettings>
-
-</gantt:SfGantt.TimescaleSettings>
-
+        <gantt:SfGantt.TimescaleSettings>
+            <gantt:TimescaleSettings>
+                <gantt:TimescaleSettings.TopTier>
+                    <gantt:TimescaleTier IntervalType="Weeks"></gantt:TimescaleTier>
+                </gantt:TimescaleSettings.TopTier>
+                <gantt:TimescaleSettings.BottomTier>
+                    <gantt:TimescaleTier IntervalType="Days"></gantt:TimescaleTier>
+                </gantt:TimescaleSettings.BottomTier>
+            </gantt:TimescaleSettings>
+        </gantt:SfGantt.TimescaleSettings>
 </gantt:SfGantt>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfGantt gantt=new SfGantt();
+SfGantt gantt = new SfGantt();
 
 gantt.ItemsSource = this.taskDetails.TaskCollection;
 
-gantt.NonWorkingDays =Days.Friday;
+gantt.NonWorkingDays = Days.Friday;
 
 gantt.NonWorkingDaysBackground = new SolidColorBrush(Colors.Blue);
 
@@ -621,7 +522,7 @@ The below code illustrates enabling the editing in Gantt.
 
 {% highlight C# %}
 
-SfGantt gantt=new SfGantt();
+SfGantt gantt = new SfGantt();
 
 gantt.ItemsSource = this.taskDetails.TaskCollection;
 
