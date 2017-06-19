@@ -172,58 +172,54 @@ public class ProjectTrackerViewModel
 
         Schedule.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 2, 3),
-            FinishDate = new DateTime(2014, 3, 6),
             Name = "Project Schedule",
             ID = "1"
         });
 
-        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>();
+        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>()
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 20),
-            FinishDate = new DateTime(2014, 3, 27),
             Name = "Planning",
             ID = "2"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 20),
-            FinishDate = new DateTime(2014, 4, 4),
+            StartDate = new DateTime(2014, 3, 30),
+            FinishDate = new DateTime(2014, 4, 2),
             Name = "Design",
             ID = "7"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 9),
-            FinishDate = new DateTime(2014, 4, 8),
+            StartDate = new DateTime(2014, 4, 2),
+            FinishDate = new DateTime(2014, 4, 7),
             Name = "Implementation Phase",
             ID = "12"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 27),
-            FinishDate = new DateTime(2014, 4, 28),
+            StartDate = new DateTime(2014, 4, 7),
+            FinishDate = new DateTime(2014, 4, 12),
             Name = "Integration",
             ID = "37"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 25),
-            FinishDate = new DateTime(2014, 4, 26),
+            StartDate = new DateTime(2014, 4, 12),
+            FinishDate = new DateTime(2014, 4, 17),
             Name = "Final Testing",
             ID = "38"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 26),
-            FinishDate = new DateTime(2014, 3, 26),
+            StartDate = new DateTime(2014, 4, 18),
+            FinishDate = new DateTime(2014, 4, 18),
             Name = "Final Delivery",
             ID = "39"
         });
@@ -234,8 +230,8 @@ public class ProjectTrackerViewModel
 
         Planning.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 27),
-            FinishDate = new DateTime(2014, 4, 7),
+            StartDate = new DateTime(2014, 3, 25),
+            FinishDate = new DateTime(2014, 3, 30),
             Name = "Plan timeline",
             ID = "3",
             Progress = 100
@@ -243,8 +239,8 @@ public class ProjectTrackerViewModel
 
         Planning.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 28),
-            FinishDate = new DateTime(2014, 4, 10),
+            StartDate = new DateTime(2014, 3, 25),
+            FinishDate = new DateTime(2014, 3, 30),
             Name = "Plan budget",
             ID = "4",
             Progress = 100
@@ -252,25 +248,21 @@ public class ProjectTrackerViewModel
 
         Planning.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 27),
-            FinishDate = new DateTime(2014, 4, 8),
+            StartDate = new DateTime(2014, 3, 25),
+            FinishDate = new DateTime(2014, 3, 30),
             Name = "Allocate resources",
             ID = "5",
             Progress = 100
-        });
+       });
 
-        Planning.Add(new TaskDetail
-        {
-            StartDate = new DateTime(2014, 3, 27),
-            FinishDate = new DateTime(2014, 3, 27),
+       Planning.Add(new TaskDetail
+       {
+            StartDate = new DateTime(2014, 3, 30),
+            FinishDate = new DateTime(2014, 3, 30),
             Name = "Planning complete",
             ID = "6",
             Progress = 100
         });
-
-        ScheduleProcess[0].Children = Planning;
-
-        return Schedule;
     }
 }
 
@@ -402,27 +394,33 @@ The below code illustrates adding the predecessor in the tasks.
 
 {% highlight C# %}
 
-Planning[3].Predecessors.Add(new TaskRelationship()
-{
-    ID = "7",
-    Relationship = Relationship.FinishToStart
-});
-
-ScheduleProcess[1].Predecessors.Add(new TaskRelationship()
-{
-    ID = "12",
-    Relationship = Relationship.FinishToStart
-});
-
-ScheduleProcess[2].Predecessors.Add(new TaskRelationship()
+ScheduleProcess[4].Predecessors.Add(new TaskRelationship()
 {
     ID = "37",
     Relationship = Relationship.FinishToStart
 });
 
-ScheduleProcess[3].Predecessors.Add(new TaskRelationship()
+ScheduleProcess[5].Predecessors.Add(new TaskRelationship()
 {
     ID = "38",
+    Relationship = Relationship.FinishToStart
+});
+
+Planning[3].Predecessors.Add(new TaskRelationship()
+{
+    ID = "3",
+    Relationship = Relationship.FinishToStart
+});
+
+Planning[3].Predecessors.Add(new TaskRelationship()
+{
+    ID = "4",
+    Relationship = Relationship.FinishToStart
+});
+
+Planning[3].Predecessors.Add(new TaskRelationship()
+{
+    ID = "5",
     Relationship = Relationship.FinishToStart
 });
 
@@ -457,11 +455,9 @@ public GanttResourceCollection ResourceCollection
 private GanttResourceCollection GetResources()
 {
     GanttResourceCollection Resources = new GanttResourceCollection();
-    Resources.Add(new GanttResource { ID = "1", Name = "Leslie" });
-    Resources.Add(new GanttResource { ID = "2", Name = "John" });
-    Resources.Add(new GanttResource { ID = "3", Name = "David" });
-    Resources.Add(new GanttResource { ID = "4", Name = "Peter" });
-    Resources.Add(new GanttResource { ID = "5", Name = "David" });
+    Resources.Add(new GanttResource { ID = "1", Name = "Project Manager" });
+    Resources.Add(new GanttResource { ID = "2", Name = "Developer" });
+    Resources.Add(new GanttResource { ID = "3", Name = "Testing Engineer" });
     return Resources;
 }
 
@@ -500,12 +496,11 @@ public ObservableCollection<TaskDetail> GetData()
     this._resourceCollection = this.GetResources();
 
     //To define resource for a task.
-    ScheduleProcess[0].Resources.Add("0");
-    ScheduleProcess[1].Resources.Add("1");
-    ScheduleProcess[2].Resources.Add("2");
-    ScheduleProcess[3].Resources.Add("3");
-    ScheduleProcess[4].Resources.Add("4");
-    ScheduleProcess[5].Resources.Add("5");
+    Planning[0].Resources.Add("1");
+    Planning[1].Resources.Add("1");
+    Planning[2].Resources.Add("1");
+    ScheduleProcess[3].Resources.Add("2");
+    ScheduleProcess[4].Resources.Add("3");
 }
 
 {% endhighlight %}
