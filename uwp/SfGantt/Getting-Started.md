@@ -82,7 +82,7 @@ Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
 </tr>
 </table>
 
-## Adding SfGantt
+## Adding SfGantt manually
 
 1.After adding the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
 
@@ -278,7 +278,7 @@ public class ProjectTrackerViewModel
 
 ## Binding data
 
-To bind the data source of the SfGantt, set ItemsSource property as shown below.
+To bind the data source of the SfGantt, set **ItemsSource** property as shown below.
 
 {% tabs %}
 
@@ -300,7 +300,7 @@ SfGantt gantt = new SfGantt() { ItemsSource = this.taskDetails.TaskCollection };
 
 By default, the grid view is manipulated with Name, Start Date, Finish Date, Duration, Progress, Predecessor and Resources columns.
 
-You can also customize the visible columns of grid view using VisibleGridColumns property in SfGantt.
+You can also customize the visible columns of grid view using **VisibleGridColumns** property in SfGantt.
 
 The following code example illustrates how this can be done.
 
@@ -361,7 +361,7 @@ gantt.AllowSorting = true;
 
 ## Editing
 
-You can enable editing using AllowEditing property in the Gantt. Editing can be done by cell editing in grid or drag/resize the task bar or progress bar in chart view, also drag and drop to establish relationship between the two tasks.
+You can enable editing using **AllowEditing** property in the Gantt. Editing can be done by cell editing in grid or drag/resize the task bar or progress bar in chart view, also drag and drop to establish relationship between the two tasks.
 
 The below code illustrates enabling the editing in Gantt.
 
@@ -457,17 +457,17 @@ public GanttResourceCollection ResourceCollection
 private GanttResourceCollection GetResources()
 {
     GanttResourceCollection Resources = new GanttResourceCollection();
-    Resources.Add(new GanttResource { ID = "1", Name = "Planning" });
-    Resources.Add(new GanttResource { ID = "2", Name = "Design" });
-    Resources.Add(new GanttResource { ID = "3", Name = "Implementation Phase" });
-    Resources.Add(new GanttResource { ID = "4", Name = "Integration" });
-    Resources.Add(new GanttResource { ID = "5", Name = "Final Testing" });
+    Resources.Add(new GanttResource { ID = "1", Name = "Leslie" });
+    Resources.Add(new GanttResource { ID = "2", Name = "John" });
+    Resources.Add(new GanttResource { ID = "3", Name = "David" });
+    Resources.Add(new GanttResource { ID = "4", Name = "Peter" });
+    Resources.Add(new GanttResource { ID = "5", Name = "David" });
     return Resources;
 }
 
 {% endhighlight %}
 
-2.Bind the resource collection to the property ProjectResourceCollection property in SfGantt.
+2.Bind the resource collection to the property **ProjectResources** property in SfGantt.
 
 {% tabs %}
 
@@ -516,9 +516,9 @@ public ObservableCollection<TaskDetail> GetData()
 
 To highlight and customize the weekends in the Gantt. By default, Saturday and Sunday is considered as weekends.
 
-* ShowNonWorkingDays property can be used to enable or disable the non-working 
-* NonWorkingDays property can be used to customize the weekends.
-* NonWorkingDaysBackground property can be used change the weekends highlighting color.
+* **ShowNonWorkingDays** property can be used to enable or disable the non-working 
+* **NonWorkingDays** property can be used to customize the weekends.
+* **NonWorkingDaysBackground** property can be used change the weekends highlighting color.
 
 The below code illustrates how to display the weekend as Friday.
 
