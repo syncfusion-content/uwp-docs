@@ -82,7 +82,7 @@ Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
 </tr>
 </table>
 
-## Adding SfGantt
+## Adding SfGantt manually
 
 1.After adding the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
 
@@ -172,58 +172,54 @@ public class ProjectTrackerViewModel
 
         Schedule.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 2, 3),
-            FinishDate = new DateTime(2014, 3, 6),
             Name = "Project Schedule",
             ID = "1"
         });
 
-        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>();
+        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>()
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 20),
-            FinishDate = new DateTime(2014, 3, 27),
             Name = "Planning",
             ID = "2"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 20),
-            FinishDate = new DateTime(2014, 4, 4),
+            StartDate = new DateTime(2014, 3, 30),
+            FinishDate = new DateTime(2014, 4, 2),
             Name = "Design",
             ID = "7"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 9),
-            FinishDate = new DateTime(2014, 4, 8),
+            StartDate = new DateTime(2014, 4, 2),
+            FinishDate = new DateTime(2014, 4, 7),
             Name = "Implementation Phase",
             ID = "12"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 27),
-            FinishDate = new DateTime(2014, 4, 28),
+            StartDate = new DateTime(2014, 4, 7),
+            FinishDate = new DateTime(2014, 4, 12),
             Name = "Integration",
             ID = "37"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 25),
-            FinishDate = new DateTime(2014, 4, 26),
+            StartDate = new DateTime(2014, 4, 12),
+            FinishDate = new DateTime(2014, 4, 17),
             Name = "Final Testing",
             ID = "38"
         });
 
         ScheduleProcess.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 26),
-            FinishDate = new DateTime(2014, 3, 26),
+            StartDate = new DateTime(2014, 4, 18),
+            FinishDate = new DateTime(2014, 4, 18),
             Name = "Final Delivery",
             ID = "39"
         });
@@ -234,8 +230,8 @@ public class ProjectTrackerViewModel
 
         Planning.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 27),
-            FinishDate = new DateTime(2014, 4, 7),
+            StartDate = new DateTime(2014, 3, 25),
+            FinishDate = new DateTime(2014, 3, 30),
             Name = "Plan timeline",
             ID = "3",
             Progress = 100
@@ -243,8 +239,8 @@ public class ProjectTrackerViewModel
 
         Planning.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 28),
-            FinishDate = new DateTime(2014, 4, 10),
+            StartDate = new DateTime(2014, 3, 25),
+            FinishDate = new DateTime(2014, 3, 30),
             Name = "Plan budget",
             ID = "4",
             Progress = 100
@@ -252,25 +248,21 @@ public class ProjectTrackerViewModel
 
         Planning.Add(new TaskDetail
         {
-            StartDate = new DateTime(2014, 3, 27),
-            FinishDate = new DateTime(2014, 4, 8),
+            StartDate = new DateTime(2014, 3, 25),
+            FinishDate = new DateTime(2014, 3, 30),
             Name = "Allocate resources",
             ID = "5",
             Progress = 100
-        });
+       });
 
-        Planning.Add(new TaskDetail
-        {
-            StartDate = new DateTime(2014, 3, 27),
-            FinishDate = new DateTime(2014, 3, 27),
+       Planning.Add(new TaskDetail
+       {
+            StartDate = new DateTime(2014, 3, 30),
+            FinishDate = new DateTime(2014, 3, 30),
             Name = "Planning complete",
             ID = "6",
             Progress = 100
         });
-
-        ScheduleProcess[0].Children = Planning;
-
-        return Schedule;
     }
 }
 
@@ -278,7 +270,7 @@ public class ProjectTrackerViewModel
 
 ## Binding data
 
-To bind the data source of the SfGantt, set ItemsSource property as shown below.
+To bind the data source of the SfGantt, set **ItemsSource** property as shown below.
 
 {% tabs %}
 
@@ -300,7 +292,7 @@ SfGantt gantt = new SfGantt() { ItemsSource = this.taskDetails.TaskCollection };
 
 By default, the grid view is manipulated with Name, Start Date, Finish Date, Duration, Progress, Predecessor and Resources columns.
 
-You can also customize the visible columns of grid view using VisibleGridColumns property in SfGantt.
+You can also customize the visible columns of grid view using **VisibleGridColumns** property in SfGantt.
 
 The following code example illustrates how this can be done.
 
@@ -361,7 +353,7 @@ gantt.AllowSorting = true;
 
 ## Editing
 
-You can enable editing using AllowEditing property in the Gantt. Editing can be done by cell editing in grid or drag/resize the task bar or progress bar in chart view, also drag and drop to establish relationship between the two tasks.
+You can enable editing using **AllowEditing** property in the Gantt. Editing can be done by cell editing in grid or drag/resize the task bar or progress bar in chart view, also drag and drop to establish relationship between the two tasks.
 
 The below code illustrates enabling the editing in Gantt.
 
@@ -402,27 +394,33 @@ The below code illustrates adding the predecessor in the tasks.
 
 {% highlight C# %}
 
-Planning[3].Predecessors.Add(new TaskRelationship()
-{
-    ID = "7",
-    Relationship = Relationship.FinishToStart
-});
-
-ScheduleProcess[1].Predecessors.Add(new TaskRelationship()
-{
-    ID = "12",
-    Relationship = Relationship.FinishToStart
-});
-
-ScheduleProcess[2].Predecessors.Add(new TaskRelationship()
+ScheduleProcess[4].Predecessors.Add(new TaskRelationship()
 {
     ID = "37",
     Relationship = Relationship.FinishToStart
 });
 
-ScheduleProcess[3].Predecessors.Add(new TaskRelationship()
+ScheduleProcess[5].Predecessors.Add(new TaskRelationship()
 {
     ID = "38",
+    Relationship = Relationship.FinishToStart
+});
+
+Planning[3].Predecessors.Add(new TaskRelationship()
+{
+    ID = "3",
+    Relationship = Relationship.FinishToStart
+});
+
+Planning[3].Predecessors.Add(new TaskRelationship()
+{
+    ID = "4",
+    Relationship = Relationship.FinishToStart
+});
+
+Planning[3].Predecessors.Add(new TaskRelationship()
+{
+    ID = "5",
     Relationship = Relationship.FinishToStart
 });
 
@@ -457,17 +455,15 @@ public GanttResourceCollection ResourceCollection
 private GanttResourceCollection GetResources()
 {
     GanttResourceCollection Resources = new GanttResourceCollection();
-    Resources.Add(new GanttResource { ID = "1", Name = "Planning" });
-    Resources.Add(new GanttResource { ID = "2", Name = "Design" });
-    Resources.Add(new GanttResource { ID = "3", Name = "Implementation Phase" });
-    Resources.Add(new GanttResource { ID = "4", Name = "Integration" });
-    Resources.Add(new GanttResource { ID = "5", Name = "Final Testing" });
+    Resources.Add(new GanttResource { ID = "1", Name = "Project Manager" });
+    Resources.Add(new GanttResource { ID = "2", Name = "Developer" });
+    Resources.Add(new GanttResource { ID = "3", Name = "Testing Engineer" });
     return Resources;
 }
 
 {% endhighlight %}
 
-2.Bind the resource collection to the property ProjectResourceCollection property in SfGantt.
+2.Bind the resource collection to the property **ProjectResources** property in SfGantt.
 
 {% tabs %}
 
@@ -500,12 +496,11 @@ public ObservableCollection<TaskDetail> GetData()
     this._resourceCollection = this.GetResources();
 
     //To define resource for a task.
-    ScheduleProcess[0].Resources.Add("0");
-    ScheduleProcess[1].Resources.Add("1");
-    ScheduleProcess[2].Resources.Add("2");
-    ScheduleProcess[3].Resources.Add("3");
-    ScheduleProcess[4].Resources.Add("4");
-    ScheduleProcess[5].Resources.Add("5");
+    Planning[0].Resources.Add("1");
+    Planning[1].Resources.Add("1");
+    Planning[2].Resources.Add("1");
+    ScheduleProcess[3].Resources.Add("2");
+    ScheduleProcess[4].Resources.Add("3");
 }
 
 {% endhighlight %}
@@ -516,9 +511,9 @@ public ObservableCollection<TaskDetail> GetData()
 
 To highlight and customize the weekends in the Gantt. By default, Saturday and Sunday is considered as weekends.
 
-* ShowNonWorkingDays property can be used to enable or disable the non-working 
-* NonWorkingDays property can be used to customize the weekends.
-* NonWorkingDaysBackground property can be used change the weekends highlighting color.
+* **ShowNonWorkingDays** property can be used to enable or disable the non-working 
+* **NonWorkingDays** property can be used to customize the weekends.
+* **NonWorkingDaysBackground** property can be used change the weekends highlighting color.
 
 The below code illustrates how to display the weekend as Friday.
 
