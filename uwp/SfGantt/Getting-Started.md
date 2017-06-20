@@ -323,7 +323,7 @@ gantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttribu
 
 ## Sorting
 
-The Gantt control has sorting functionality to arrange the tasks in ascending or descending order based on a column.
+You can enable sorting using **AllowSorting** property. Sorting functionality to arrange the tasks in ascending or descending order based on a column.
 
 The below code illustrates how to enable sorting in the Gantt control.
 
