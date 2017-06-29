@@ -48,7 +48,7 @@ radialSlider.TickFrequency = 5
 
 ## Displaying Maximum Value
 
-Maximum Value of SfRadialSlider can be displayed if the difference between Maximum and Minimum value of SfRadialSlider is not divisible by TickFrequency. This behavior can be enabled by setting the ShowMaximumValue property of SfRadialSlider to true.
+Maximum Value of SfRadialSlider can be displayed even the difference between Maximum and Minimum value of SfRadialSlider is not divisible by TickFrequency. This behavior can be enabled by setting the ShowMaximumValue property of SfRadialSlider to true.
 
 {% tabs %}
 
@@ -59,19 +59,20 @@ Maximum Value of SfRadialSlider can be displayed if the difference between Maxim
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight C# %}
 
-radialslider.ShowMaximumValue = true;
+SfRadialSlider radialslider = new SfRadialSlider() { Maximum = 100, TickFrequency = 12, ShowMaximumValue = true };
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-radialslider.ShowMaximumValue = True
+Dim radialslider As New SfRadialSlider() With { _
+	Key .Maximum = 100, _
+	Key .TickFrequency = 12, _
+	Key .ShowMaximumValue = True _
+}
 
 {% endhighlight %}
 
