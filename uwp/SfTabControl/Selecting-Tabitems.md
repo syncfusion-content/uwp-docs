@@ -146,6 +146,34 @@ niko.IsSelected = True
 
 {% endtabs %}
 
+## Selecting item using EnableSwipeGestures
+
+`SfTabControl` SelectedItem can be changed by SwipeGestures. This can be enabled by set `EnableSwipeGestures` as true. By default, `EnableSwipeGestures` value as false.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<navigation:SfTabControl EnableSwipeGestures ="true">
+
+<navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent"/>
+
+<navigation:SfTabItem x:Name="niko" IsSelected="True"
+                      Header="Niko" Content="Description about Niko"/>
+
+<navigation:SfTabItem Header="James" Content="Description about James"/>
+
+<navigation:SfTabItem Header="Carl" Content="Description about Carl"/>
+
+</navigation:SfTabControl>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Selecting-Tabitems-images/Selecting-Tabitems-img3.jpeg)
+
+
 ## Notify on SelectionChanged
 
 SelectionChanged event fires when an item is selected. The parameters of SelectionChanged event are AddedItems and RemovedItems. Added items have the list of recently selected items whereas RemovedItems have the list of recently unselected items.
