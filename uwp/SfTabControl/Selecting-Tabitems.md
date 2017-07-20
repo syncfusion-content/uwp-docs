@@ -146,9 +146,9 @@ niko.IsSelected = True
 
 {% endtabs %}
 
-## Selecting item using EnableSwipeGestures
+## Selection change by Swipe Gestures
 
-`SfTabControl` SelectedItem can be changed by SwipeGestures. This can be enabled by set `EnableSwipeGestures` as true. By default, `EnableSwipeGestures` value as false.
+`SfTabControl` SelectedItem can be changed by Swipe Gestures. This can be enabled by set `EnableSwipeGestures` property of SfTabControl as true. By default, `EnableSwipeGestures` value is false.
 
 {% tabs %}
 
