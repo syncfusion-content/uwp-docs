@@ -116,7 +116,7 @@ using Syncfusion.UI.Xaml.Gantt;
 
 {% highlight C# %}
 
-SfGantt SfGantt = new SfGantt();
+SfGantt sfGantt = new SfGantt();
 
 {% endhighlight %}
 
@@ -282,7 +282,7 @@ To bind the data source of the SfGantt, set **ItemsSource** property as shown
 
 {% highlight C# %}
 
-SfGantt SfGantt = new SfGantt() { ItemsSource = this.taskDetails.TaskCollection };
+SfGantt sfGantt = new SfGantt() { ItemsSource = this.taskDetails.TaskCollection };
 
 {% endhighlight %}
 
@@ -308,11 +308,11 @@ The following code example illustrates how this can be done.
 
 {% highlight C# %}
 
-SfGantt SfGantt = new SfGantt();
+SfGantt sfGantt = new SfGantt();
 
-SfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = this.taskDetails.TaskCollection;
 
-SfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate |
+sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate |
                              TaskAttributes.FinishDate | TaskAttributes.Progress;
 						   
 {% endhighlight %}
@@ -339,11 +339,11 @@ The below code illustrates how to enable sorting in the Gantt control.
 
 {% highlight C# %}
 
-SfGantt SfGantt = new SfGantt();
+SfGantt sfGantt = new SfGantt();
 
-SfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = this.taskDetails.TaskCollection;
 
-SfGantt.AllowSorting = true;
+sfGantt.AllowSorting = true;
 
 {% endhighlight %}
 
@@ -369,11 +369,11 @@ The below code illustrates enabling the editing in Gantt.
 
 {% highlight C# %}
 
-SfGantt SfGantt = new SfGantt();
+SfGantt sfGantt = new SfGantt();
 
-SfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = this.taskDetails.TaskCollection;
 
-SfGantt.AllowEditing = true;
+sfGantt.AllowEditing = true;
 
 {% endhighlight %}
 
@@ -477,11 +477,11 @@ private GanttResourceCollection GetResources()
 
 {% highlight C# %}
 
-SfGantt SfGantt = new SfGantt();
+SfGantt sfGantt = new SfGantt();
 
-SfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = this.taskDetails.TaskCollection;
 
-SfGantt.ProjectResources = this.taskDetails.ResourceCollection;
+sfGantt.ProjectResources = this.taskDetails.ResourceCollection;
 
 {% endhighlight %}
 
@@ -538,17 +538,17 @@ The below code illustrates how to display the weekend as Friday.
 
 {% highlight C# %}
 
-SfGantt SfGantt = new SfGantt();
+SfGantt sfGantt = new SfGantt();
 
-SfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = this.taskDetails.TaskCollection;
 
-SfGantt.NonWorkingDays = Days.Friday;
+sfGantt.NonWorkingDays = Days.Friday;
 
-SfGantt.NonWorkingDaysBackground = new SolidColorBrush(Colors.Blue);
+sfGantt.NonWorkingDaysBackground = new SolidColorBrush(Colors.Blue);
 
-SfGantt.TimescaleSettings.TopTier.IntervalType = IntervalType.Weeks;
+sfGantt.TimescaleSettings.TopTier.IntervalType = IntervalType.Weeks;
 
-SfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
+sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
 {% endhighlight %}
 
