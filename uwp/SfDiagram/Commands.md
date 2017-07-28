@@ -332,7 +332,7 @@ IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
 //Zoom to a particular scale.
 
-graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter() 
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter() 
 { 
 	ZoomTo = 2, ZoomCommand = ZoomCommand.ZoomOut 
 });
@@ -340,7 +340,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter()
 
 //Zoom out based on zoom factor.
 
-graphinfo.Commands.Zoom.Execute(new ZoomPositionParamenter() 
+graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter() 
 { 
 	ZoomFactor = 2, ZoomCommand = ZoomCommand.ZoomOut 
 });
@@ -477,8 +477,8 @@ List of Commands and Key Gesture:
 
 | Command | Key | KeyModifier | Parameter |
 |---|---|---|---|
-| Zoom | - | Control | new ZoomPositionParamenter { ZoomCommand=ZoomCommand.ZoomOut} |
-| Zoom | + | Control | new ZoomPositionParamenter { ZoomCommand = ZoomCommand.ZoomIn } |
+| Zoom | - | Control | new ZoomPositionParameter { ZoomCommand=ZoomCommand.ZoomOut} |
+| Zoom | + | Control | new ZoomPositionParameter { ZoomCommand = ZoomCommand.ZoomIn } |
 | Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
 | FitToPage | 0 | Control+ Menu | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
@@ -486,14 +486,14 @@ List of Commands and Key Gesture:
 
 | Command | Scroll State | Parameter |
 |---|---|---|
-| Vertical Scroll using ‘Zoom’ command | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.VerticalScroll} |
+| Vertical Scroll using ‘Zoom’ command | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.VerticalScroll} |
 
 ####List of Commands and Key and Mouse Gesture with Parameter
 
 | Command | KeyModifier | Scroll State | Parameter |
 |---|---|---|---|
-| Horizontal Scroll using ‘Zoom’ command | Shift | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.HorizontalScroll} |
-| Zoom | Control | Scroll | new ZoomPointerParamenter { ZoomCommand = ZoomCommand.ZoomIn | ZoomCommand.ZoomOut} |
+| Horizontal Scroll using ‘Zoom’ command | Shift | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.HorizontalScroll} |
+| Zoom | Control | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.ZoomIn | ZoomCommand.ZoomOut} |
 
 N> When different commands are registered for the same key / mouse gestures, you need to handle the command while execution.
 
@@ -532,7 +532,7 @@ private async void OnSaveCommand(Object obj)
        Object parameter = (obj as IGestureParameter).Parameter;
        picker.SuggestedFileName = parameter.ToString();
        StorageFile file = await picker.PickSaveFileAsync();
-       using (var filestream = await file.OpenStreamForWriteAsync())
+       using (var fileStream = await file.OpenStreamForWriteAsync())
        {
 		sfdiagram.Save(fileStream);
        }
@@ -554,7 +554,7 @@ sfdiagram.CommandManager.Commands.Add
 			Key = Key.S
 		},
 
-		// Parameter is the name of the file (.xmal)
+		// Parameter is the name of the file (.xaml)
 		Parameter = "diagram"
 	}
 );

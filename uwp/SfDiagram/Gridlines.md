@@ -45,7 +45,7 @@ You can customize the appearance of the gridlines by using a set of predefined p
 {% highlight C# %}
 
 //Creates collection for the style.
-public class Gridlinestyle : List<Style>
+public class GridLineStyle : List<Style>
 {
 
 }
@@ -55,20 +55,20 @@ public class Gridlinestyle : List<Style>
 {% highlight xaml %}
 
 <!--Style for HorizontalGridlines-->
-<local:Gridlinestyle x:Key="Horizontalgridline">
+<local:GridLineStyle x:Key="Horizontalgridline">
 	<Style TargetType="Path">
     	<Setter Property="Stroke" Value="Blue" ></Setter>
         <Setter Property="StrokeDashArray" Value="2"></Setter>
 	</Style>
-</local:Gridlinestyle>
+</local:GridLineStyle>
 
 <!--Style for VerticalGridlines-->
-<local:Gridlinestyle x:Key="Verticalgridline">
+<local:GridLineStyle x:Key="Verticalgridline">
 	<Style TargetType="Path">
 		<Setter Property="Stroke" Value="Blue" ></Setter>
     	<Setter Property="StrokeDashArray" Value="2"></Setter>
 	</Style>
-</local:Gridlinestyle>
+</local:GridLineStyle>
 
 {% endhighlight %}
 
@@ -106,7 +106,7 @@ The following code example illustrates how to customize the thickness of lines a
 {% highlight C# %}
 
 //Creates collection for the style.
-public class Gridlinestyle : List<Style>
+public class GridLineStyle : List<Style>
 {
 
 }
@@ -136,20 +136,20 @@ public class Intervals : List<double>
  </local:Intervals>
 
 <!--Style for HorizontalGridlines-->
-<local:Gridlinestyle x:Key="Horizontalgridline">
+<local:GridLineStyle x:Key="Horizontalgridline">
 	<Style TargetType="Path">
     	<Setter Property="Stroke" Value="Blue" ></Setter>
         <Setter Property="StrokeDashArray" Value="2"></Setter>
 	</Style>
-</local:Gridlinestyle>
+</local:GridLineStyle>
 
 <!--Style for VerticalGridlines-->
-<local:Gridlinestyle x:Key="Verticalgridline">
+<local:GridLineStyle x:Key="Verticalgridline">
 	<Style TargetType="Path">
 		<Setter Property="Stroke" Value="Blue" ></Setter>
     	<Setter Property="StrokeDashArray" Value="2"></Setter>
 	</Style>
-</local:Gridlinestyle>
+</local:GridLineStyle>
 
 {% endhighlight %}
 

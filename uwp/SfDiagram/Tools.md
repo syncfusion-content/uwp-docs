@@ -42,7 +42,7 @@ To draw a shape, You have to activate the drawing tool by using the Tool propert
 
 {% highlight C# %}
 
-//Registerting an event
+//Registering an event
 (diagram.Info as IGraphInfo).GetDrawType += MainWindow_GetDrawType;
 diagram.DrawingTool = DrawingTool.Node;
 

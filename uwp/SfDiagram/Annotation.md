@@ -256,7 +256,7 @@ You can change the appearance by ViewTemplate. The following code illustrates ho
 
 <DataTemplate x:Key="viewtemplate">
   <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" FontStyle="Italic" 
-             FontSize="12" FontFamily="TimesNewRomen"
+             FontSize="12" FontFamily="TimesNewRoman"
              TextDecorations="Underline" FontWeight="Bold"
              Foreground="Black"/> 
 </DataTemplate>
