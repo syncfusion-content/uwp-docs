@@ -206,11 +206,11 @@ The final MainPage.Xaml looks like this.
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:EmployeeDetails"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cm="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Diagram"
     xmlns:layout="using:Syncfusion.UI.Xaml.Diagram.Layout"
     x:Class="EmployeeDetails.MainPage"
-    mc:Ignorable="d">
+    cm:Ignorable="d">
 
     <Page.Resources>
 

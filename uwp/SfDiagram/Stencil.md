@@ -234,7 +234,7 @@ SymbolFilterProvider kitchenFilter = new SymbolFilterProvider
     Filter = SymbolFilter
 };
 
-//Add the SymbolFilterprovider to SymbolFilters collection
+//Add the SymbolFilterProvider to SymbolFilters collection
 stencil.SymbolFilters.Add(allFilter);
 stencil.SymbolFilters.Add(kitchenFilter);
 

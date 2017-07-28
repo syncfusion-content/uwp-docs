@@ -483,7 +483,7 @@ Connector connector = new Connector()
 {
 	SourcePoint = new Point(100, 100),
        TargetPoint = new Point(200, 200),
-	//Add the Orthoganal Segment to Segments
+	//Add the Orthogonal Segment to Segments
        Segments = new ObservableCollection<IConnectorSegment>()
 	{
 		new OrthogonalSegment()
@@ -506,7 +506,7 @@ Connector connector = new Connector()
 {
 	SourcePoint = new Point(100, 100),
 	TargetPoint = new Point(200, 200),
-	//Add the Orthoganal Segment to Segments
+	//Add the Orthogonal Segment to Segments
 	Segments = new ObservableCollection<IConnectorSegment>()
 	{
 		new OrthogonalSegment()
@@ -819,7 +819,7 @@ The `ConnectorPadding` property of port defines the space between the ports and 
 
 {% highlight C# %}
 
-//Adds ConnectorPaddind for Node
+//Adds ConnectorPadding for Node
 NodePort port = new NodePort()
 {
 	//Space between the ports its edges
