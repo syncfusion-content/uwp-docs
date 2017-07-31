@@ -56,7 +56,7 @@ In order to add SfPivotGrid control manually in XAML, the following assembly ref
 
 You can find these libraries under following location.
 
-&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
 Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
 
@@ -112,7 +112,7 @@ In order to add SfPivotGrid control manually in code-behind, the following assem
 
 You can find these libraries under following location.
 
-&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
 Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
 
@@ -321,7 +321,7 @@ You can find these libraries under following location.
 N> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotGrid control.
 The above assembly can be obtainable after installing the following setup files.
 SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi
-These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-us/download).
+These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-in/download/details.aspx?id=16978).
 If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
 Now the "Service1.svc" would look like:

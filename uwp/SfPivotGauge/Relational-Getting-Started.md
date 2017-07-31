@@ -51,7 +51,7 @@ In order to add SfPivotGauge control manually in XAML, the following assembly re
 
 You can find these libraries under following location.
 
-&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
 Or else, the SfPivotGauge control can be added to the project by choosing SDK reference as follows:
 
@@ -102,7 +102,7 @@ In order to add SfPivotGauge control manually in code-behind, the following asse
 
 You can find these libraries under following location.
 
-&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
 Or else, the SfPivotGauge control can be added to the project by choosing SDK reference as follows:
 
