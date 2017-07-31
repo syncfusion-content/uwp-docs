@@ -53,7 +53,7 @@ In order to add SfPivotGrid control manually in XAML, the following assembly ref
 
 You can find these libraries under following location.
 
-{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
 Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
 
@@ -102,7 +102,7 @@ In order to add SfPivotGrid control manually in code-behind, the following assem
 
 You can find these libraries under following location.
 
-{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\[Version]\Universal Windows\10.0\SDK\References\CommonConfiguration\neutral\
+{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
 Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
 
@@ -162,7 +162,7 @@ After initializing SfPivotGrid control, right click on **"References"** under Sf
 
 In “Add Service Reference” window, enter the following address and click “Go” button to add the online service.
 
-[http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/mex](http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/mex).
+[http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex](http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex).
 
 Also change the default service namespace from "ServiceReference1" to “OlapManagerService” so that it will be easier to identify the OLAP service later. Finally click “OK” button to add the service reference.
 
@@ -250,7 +250,7 @@ Next declare a global reference to OlapManagerService’s IOlapDataProvider. In 
             BasicHttpBinding basicHttpBinding = new BasicHttpBinding();
             basicHttpBinding.MaxReceivedMessageSize = 2147483647;
             basicHttpBinding.MaxBufferSize = 2147483647;
-            EndpointAddress address = new EndpointAddress("http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/");
+            EndpointAddress address = new EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/");
             ChannelFactory < OlapManagerService.IOlapDataProvider > clientFactory = new ChannelFactory < OlapManagerService.IOlapDataProvider > (basicHttpBinding, address);
             clientChannel = clientFactory.CreateChannel();
         }
@@ -280,7 +280,7 @@ You can find these libraries under following location.
 N> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotGrid control.
 The above assembly can be obtainable after installing the following setup files.
 SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi
-These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-us/download).
+These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-in/download/details.aspx?id=16978).
 If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
 Now open the “Service1.svc.cs” file under “OlapManagerService” project and replace the existing code with the exact following code.
@@ -365,5 +365,5 @@ Include the basic HTTP binding and service endpoint address in the web.config fi
 {% endhighlight %}
 
 
-Then build and host this WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform application (client application). This is how we have hosted our service in IIS and referred the obtained URL i.e., [http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/mex] (http://bi.syncfusion.com/OlapUWPService/OlapManager.svc/mex) as service reference in the sample illustrated in [Adding Service Reference to Project section.](http://help.syncfusion.com/uwp/SfPivotGrid/Getting-Started#Adding Service Reference to Project)
+Then build and host this WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform application (client application). This is how we have hosted our service in IIS and referred the obtained URL i.e., [http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex] (http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex) as service reference in the sample illustrated in [Adding Service Reference to Project section.](http://help.syncfusion.com/uwp/SfPivotGrid/Getting-Started#Adding Service Reference to Project)
 
