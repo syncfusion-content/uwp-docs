@@ -13,6 +13,7 @@ The Syncfusion UWP controls can be added in a Visual Studio projects by using ei
 
 * Through Designer
 * Through Code-Behind
+* Through Project Templates
 
 ## Through Designer
 
@@ -146,3 +147,44 @@ Me.Content = textBoxExt1
 
 N> Syncfusion controls for UWP package can be added (available under Universal Windows Platform => Extensions tab in Add reference dialog) in the cases of using most of the controls from Syncfusion toolkit.
 
+## Through Project Templates
+
+Syncfusion provides the **Visual** **Studio** **Project** **Templates** for the Syncfusion UWP platform to create Syncfusion UWP Applications.  
+
+I> The Syncfusion UWP project templates are available from Essential Studio v15.3.0.26.  
+
+### Create Syncfusion UWP Application
+
+The following steps direct you to create the **Syncfusion** **UWP** **Application** through the **Visual** **Studio** **Project** **Template**.
+
+1. To create a Syncfusion UWP project, choose **New** **Project****->** **Syncfusion****->****Universal** **Windows****->****Syncfusion** **Univeral** **Windows** **Application** from **Visual** **Studio**.
+
+   ![](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img1.jpeg)
+
+2. Name the **Project** and choose the destination location if required, then click **OK**. 
+
+3. The Target platform version selection wizard appears. Choose the target and minimum platform versions that your Universal Windows application will support and click OK.
+
+   ![](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img2.jpeg)
+
+4. Then Project Configuration Wizard appears. Choose the options to configure the Syncfusion Universal Windows Application by using the following Project Configuration dialog.
+
+   #### Project configurations:
+
+   **Reference Type:** Select the reference type of UWP Project, either Assemblies or SDK.
+
+   **Template Type:** Select the template type of UWP Project, either Blank or Hamburger Menu or Hamburger Menu (MVVM).
+
+   **Components:** Choose the required Syncfusion components to configure.
+   
+   ![](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img4.jpeg)
+   
+   N> If SDK is chosen as the reference type, then all the Syncfusion UWP controls will be added. So, you no need to select any components.
+
+   ![](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img3.jpeg)
+   
+5. Once you click Create button, the Syncfusion UWP Application is created.
+
+6. Once the Project Configuration Wizard is done, the Syncfusion UWP Application is created with required SDK/references and pages.
+
+   ![](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img5.jpeg)

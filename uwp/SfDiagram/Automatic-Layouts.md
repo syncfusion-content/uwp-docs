@@ -296,11 +296,11 @@ diagramcontrol.LayoutManager = new LayoutManager()
     //Initializes the Layout
 	Layout = new DirectedTreeLayout()
 	{
-       	Type = LayoutType.Hierarchical,
+       	   Type = LayoutType.Hierarchical,
 	       HorizontalSpacing = 30,
 	       VerticalSpacing = 50,
-	       HorizotalAlignment = HorizontalAlignment.Left,
-		VerticalAlignment = VerticalAlignment.Top,
+	       HorizontalAlignment = HorizontalAlignment.Left,
+		   VerticalAlignment = VerticalAlignment.Top,
 	       Bounds = new Rect(100, 100, 500, 500),
 	       Margin = new Thickness(25, 25, 25, 25) 
 	}

@@ -27,7 +27,7 @@ The following code example illustrates how to create a basic shapes.
  <!--Add Node-->
 <syncfusion:NodeViewModel x:Name="Node" UnitHeight="100" UnitWidth=" 100" OffsetX="100" OffsetY="100" 
                           Shape="{StaticResource Rectangle}"
-                          ShapeStyle="{StaticResource shapestyle}"/>
+                          ShapeStyle="{StaticResource shapeStyle}"/>
 
 {% endhighlight %}
 
@@ -92,7 +92,7 @@ NodeViewModel node = new NodeViewModel()
 	
     //Customizes the appearance
 	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
-	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
+	ShapeStyle = this.diagram.Resources["shapeStyle"] as Style
 };
      
 //Adds the Node to the SfDiagram              
@@ -196,7 +196,7 @@ You can customize the appearance of a Node by changing its ShapeStyle. The follo
 {% highlight xml %}
 
 <!--Sets styles to a node to customize the appearance-->
-<Style TargetType="Path" x:Key="shapestyle">
+<Style TargetType="Path" x:Key="shapeStyle">
   <Setter Property="Fill" Value="DarkCyan"></Setter>
   <Setter Property="Stroke" Value="Black"/>
   <Setter Property="StrokeDashArray" Value="4,5"></Setter>
