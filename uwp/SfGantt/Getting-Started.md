@@ -379,6 +379,8 @@ sfGantt.AllowEditing = true;
 
 {% endtabs %}
 
+N>Currently editing is not available in the WindowsPhone.
+
 ## Task relationships
 
 You can visualize the relationship between two tasks in the Gantt. These relationships are categorized into four types based on the start and finish date of the task.
