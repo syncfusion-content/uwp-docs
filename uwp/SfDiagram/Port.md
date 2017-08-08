@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Port
+# Port
 
 Essential Diagram for UWP provides support to define custom ports for making connections.
 
@@ -21,9 +21,9 @@ Port act as the connection points of node and allows to create connections with 
 
 ![](Port_images/Port_img4.jpeg)![](Port_images/Port_img5.jpeg)
 
-##Node Port
+## Node Port
 
-###Add ports to Node
+### Add ports to Node
 
 To add a collection port, you need to define the port object and add it to Ports property of Node. The `NodeOffsetX` and `NodeOffsetY` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports when initializing the Node.
 
@@ -115,9 +115,9 @@ public class PortCollection : ObservableCollection<IPort>
 
 ![](Port_images/Port_img6.jpeg)
 
-##ConnectorPort
+## ConnectorPort
 
-###Add Port to Connector
+### Add Port to Connector
 To add a collection port, you need to define the port object and add it to `Ports` property of Connector. The `Length` property of Port accepts an object of fractions and used to determine the position of Ports. The following code illustrates how to add ports to the Connector.
 
 The following code illustrates how to add ports to Connector.
@@ -199,7 +199,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 ![](Port_images/Port_img7.jpeg)
 
-##Connect with ports
+## Connect with ports
 
 Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. For more information about creating connections with port, refer to [Connections with Ports](/uwp/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
 
@@ -264,6 +264,6 @@ The following code illustrates how to change the appearance of port.
 
 ![](Port_images/Port_img8.jpeg)
 
-##Constraints
+## Constraints
 
 The Constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/uwp/sfdiagram/Constraints#PortConstraints "Port Constraints").
