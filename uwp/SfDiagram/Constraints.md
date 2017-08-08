@@ -7,12 +7,12 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Constraints
+# Constraints
 
 `Constraints` are used to enable/disable certain behaviors of the diagram, Node and Connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).
 
-##GraphConstraints
+## GraphConstraints
 
 Graph constraints allow to enable or disable the following behaviors.
 
@@ -34,7 +34,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 {% endhighlight %}
 
-##NodeConstraints
+## NodeConstraints
 
 NodeConstraints allow to enable or disable the following behaviors of Node.
 
@@ -73,7 +73,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-##ConnectorConstraints
+## ConnectorConstraints
 
 ConnectorConstraints allow to enable or disable certain behaviors of Connectors. They are as follows.
 
@@ -105,7 +105,7 @@ diagram.Connectors = connectors;
 
 {% endhighlight %}
 
-##PortConstraints
+## PortConstraints
 
 You can enable or disable certain behaviors of port. They are as follows.
 
@@ -140,7 +140,44 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-##SelectorConstraints
+## AnnotationConstraints
+AnnotationConstraints allow to enable or disable the following behaviors of Annotation.
+
+* Selection
+* Drag
+* Resize
+* Rotate
+
+**Example**
+the following code illustrates how to enable annotation dragging.
+
+{% highlight C# %}
+
+            //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
+            NodeViewModel nvm = new NodeViewModel()
+            {
+                OffsetX = 200,
+                OffsetY = 200,
+                UnitWidth = 100,
+                UnitHeight = 50,
+                //Initialize and Add annotation to NodeViewModel
+                Annotations = new ObservableCollection<IAnnotation>()
+                    {
+                        //Create a AnnotationEditorViewModel
+                        new AnnotationEditorViewModel()
+                        {
+                            Content = "Annotation",
+                            //Assign Constraint to Select and Drag.
+                            Constraints =AnnotationConstraints.Selectable |AnnotationConstraints.Draggable,                            
+                        }          
+                    }
+            };
+            //Add NodeViewModel to Nodes Collection
+            (Diagram.Nodes as NodeCollection).Add(nvm);
+
+{% endhighlight %} 
+
+## SelectorConstraints
 
 Selector visually represents the selected elements with certain editable thumbs. The visually of the thumbs can be controlled with selector constraints. The part of selector is categorized as follows.
 
@@ -161,7 +198,7 @@ The following code illustrates how to hide rotator.
 
 {% endhighlight %}
 
-##SnapConstraints
+## SnapConstraints
 
 Snap Constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
 
@@ -183,7 +220,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines;
 
 {% endhighlight %}
 
-###Inherit behaviors
+### Inherit behaviors
 
 Some of the behaviors can be defined through both the specific object (Node/Connector) and Diagram. When the behaviors are contradictorily defined through both, the actual behavior is set through inherit options.
 
@@ -209,11 +246,11 @@ diagram.Connectors = connectors;
 
 {% endhighlight %}
 
-##Bitwise Operations
+## Bitwise Operations
 
 Bitwise Operations are used to manipulate the flagged enumerations [enum]. In the section, Bitwise Operations are illustrated by using Node Constraints. The same is applicable while working with Node Constraints, Connector Constraints, or Port Constraints.
 
-###Add Operation
+### Add Operation
 
 You can add or enable multiple values at a time	 by using Bitwise ‘|’ (OR) operator.
 
@@ -225,7 +262,7 @@ node.Constraints = NodeConstraints.Selectable | NodeConstraints.Rotatable;
 
 In the above example, you can do both the selection and rotation.
 
-###Remove Operation
+### Remove Operation
 
 You can remove or disable values by using Bitwise ‘&~’ (XOR) operator.
 
@@ -237,7 +274,7 @@ node.Constraints = node.Constraints & ~(NodeConstraints.Rotatable);
 
 In the above example, Rotation is disabled but other constraints are enabled.
 
-###Check Operation
+### Check Operation
 
 You can check any value by using Bitwise ‘&’ (AND) operator.
 

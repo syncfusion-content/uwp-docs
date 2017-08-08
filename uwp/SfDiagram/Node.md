@@ -7,13 +7,13 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Node
+# Node
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
 ![](Node_images/Node_img1.jpeg)
 
-##Basic Shapes
+## Basic Shapes
 
 The Basic shapes are common shapes that are used to represent the geometrical information visually. The Shape property of Node can be set with any one of the in-built Basic Shapes.
 
@@ -31,11 +31,11 @@ The following code example illustrates how to create a basic shapes.
 
 {% endhighlight %}
 
-##Create Node
+## Create Node
 
 A Node can be created and added to the Diagram, either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
 
-###Add Node through Nodes collection 
+### Add Node through Nodes collection 
 
 To create a Node, You have to define the Node object and add that to Nodes collection of the Diagram. The following code example illustrate how to add the Node to the Diagram.
 
@@ -103,21 +103,21 @@ diagram.Nodes = nodes;
 
 ![](Node_images/Node_img2.jpeg)
 
-###Add Node from stencil
+### Add Node from stencil
 
 Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding Nodes from Stencil, refer to [Stencil](/uwp/sfdiagram/Stencil "Stencil").
 
-###Create Node through data source
+### Create Node through data source
 
 Nodes can be generated automatically with the information provided through data source.For more information about data source, 
 
 refer to [Data Source](/uwp/sfdiagram/DataSource "DataSource").
 
-###Draw Nodes
+### Draw Nodes
 
 Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **Drawing Tool**. For more information about drawing Nodes, refer to [Draw Nodes](/uwp/sfdiagram/Tools#drawing-tools:shapes "Draw Nodes").
 
-##Position
+## Position
 
 Position of a Node is controlled by using its OffsetX and OffsetY properties. By default, these Offset properties represent the distance between origin of the Diagram’s page and Node’s center point. You may except this Offset values to represent the distance between page origin and Node’s top left corner instead of center. Pivot property helps solve this problem. Default value of Node’s pivot point is (0.5, 0.5), that means center of Node.
 
@@ -189,7 +189,7 @@ diagram.Nodes = nodes;
 
 ![](Node_images/Node_img3.jpeg)
 
-##Appearance
+## Appearance
 
 You can customize the appearance of a Node by changing its ShapeStyle. The following code illustrates how to customize the appearance of the shape.
 
@@ -221,10 +221,10 @@ return style;
 
 ![](Node_images/Node_img4.jpeg)
 
-##Interaction
+## Interaction
 
 Diagram provides support to drag, resize, or rotate the Node interactively. For more information about editing a Node at runtime, refer to [Interaction](/uwp/sfdiagram/Interaction "Interaction").
 
-##Constraints
+## Constraints
 aa
 The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/uwp/sfdiagram/Constraints#NodeConstraints "Node Constraints").

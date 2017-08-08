@@ -7,17 +7,17 @@ control: SfDiagram
 documentation: ug
 ---
 
-#Connector
+# Connector
 
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
 ![](Connector_images/Connector_img1.jpeg)
 
-##Create Connector
+## Create Connector
 
 Connector can be created by defining the start and end points. The Path to be drawn can be defined with a collection of segments.
 
-###Add Connectors through Connectors collection
+### Add Connectors through Connectors collection
 
 The `SourcePoint` and `TargetPoint` properties of Connector allow you to define the end points of a Connector. The following code example illustrates how to add a Connector through Connector collection.
 
@@ -67,21 +67,21 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img2.jpeg)
 
-###Connectors from stencil
+### Connectors from stencil
 
 Connectors can be predefined and added to the stencil. You can drop those Connectors into the Diagram, when required. 
 
 For more information about adding Connectors from stencil, refer to [Stencil](/uwp/sfdiagram/Stencil "Stencil").
 
-###Connectors through data source
+### Connectors through data source
 
 Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/uwp/sfdiagram/DataSource "DataSource").
 
-###Draw Connectors
+### Draw Connectors
 
 Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to [Draw Connectors](/uwp/sfdiagram/Tools#drawing-tools:connectors "Draw Connectors").
 
-##Connect Nodes
+## Connect Nodes
 
 The `SourceNode` and `TargetNode` properties allow to define the Nodes to be connected. The following code example illustrates how to connect two Nodes.
 
@@ -160,11 +160,11 @@ diagram.Connectors = lines;
 
 N> By default, connections are created at the intersecting point of Segments and Node bounds. The connection between any specific point of Source and Target Nodes can be achieved with Ports.
 
-##Connections with Ports
+## Connections with Ports
 
 The `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. The following code examples illustrates how to use NodePort and ConnectorPort.
 
-###Using NodePort
+### Using NodePort
 
 The following code example illustrates how to create ConnectorPort.
 
@@ -296,7 +296,7 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img4.jpeg)
                  
-###Using ConnectorPort
+### Using ConnectorPort
 
 The following code example illustrates how to create ConnectorPort.
 
@@ -412,11 +412,11 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img5.jpeg)
 
-##Segments
+## Segments
 
 The path of the Connector is defined with a collection of segments.
 
-###Straight
+### Straight
 
 Straight segment allows to create a straight line. To create a straight line, you should specify the segment as `StraightSegment` and add a straight segment to collection. The following code example illustrates how to create a default straight segment.
 
@@ -470,7 +470,7 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img7.jpeg)
 
-###Orthogonal
+### Orthogonal
 
 Orthogonal segments are used to create segments that are perpendicular to each other.
 
@@ -524,7 +524,7 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img9.jpeg)
 
-####Avoid overlapping
+#### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes. The following images illustrates how orthogonal segments are re-routed.
 
@@ -534,7 +534,7 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 
 N> Overlapping with Source and Target nodes are only avoided. Other nodes are not considered as obstacles.
 
-###CubicCurveSegment
+### CubicCurveSegment
 
 Cubic curve segments are used to create curve segments and the curves are configurable with the control points.
 
@@ -590,7 +590,7 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img13.jpeg)
 
-###Complex segments
+### Complex segments
 
 Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to ConnectorSegments collection. The following code example illustrates how to create a connector with multiple segments.
 
@@ -625,7 +625,7 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img14.jpeg)
 
-##Decorator
+## Decorator
 
 Start and end points of a Connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the SourceDecorator and TargetDecorator properties of Connector. 
 
@@ -708,7 +708,7 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img15.jpeg)
 
-##Padding
+## Padding
 
 Padding is used to leave space between the Connector’s end point and the object to where it is connected.
 
@@ -899,7 +899,7 @@ diagram.Connectors = lines;
 
 ![](Connector_images/Connector_img18.jpeg)
 
-##Bridging
+## Bridging
 
 Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the `Constraints` property of Connector or with `GraphConstraints`. The following code example illustrates how to enable line bridging.
 
@@ -969,7 +969,7 @@ diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
 
 N> Bezier segments do not support Bridging.
 
-##Corner radius
+## Corner radius
 
 Corner radius allows to create Connectors with rounded corners. The radius of the rounded corner is set with `CornerRadius` property.
 
@@ -1038,11 +1038,11 @@ diagram.Connectors = connectors;
 
 ![](Connector_images/Connector_img21.jpeg)
 
-##Appearance
+## Appearance
 
 StrokeThickness, Stroke and style of the LineConnector and Decorators can be customized with a set of defined properties.
 
-###Segment Appearance
+### Segment Appearance
 
 The following code example illustrates how to customize the segment appearance.
 
@@ -1073,7 +1073,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-###Decorator Appearance
+### Decorator Appearance
 
 The following code example illustrates how to customize the appearance of the decorator.
 
@@ -1103,11 +1103,11 @@ TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 
 ![](Connector_images/Connector_img22.jpeg)
 
-##Interaction
+## Interaction
 
 Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/uwp/sfdiagram/Interaction#Connection-Editing "Connection Editing").
 
-##Constraints
+## Constraints
 
 The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/Constraints#ConnectorConstraints "Connector Constraints").
 
