@@ -15,6 +15,9 @@ The SfPivotClient control supports browsing multidimensional data that is organi
 
 The key features of **SfPivotClient** control are: 
 
+* **Data Source** - Binds the SfPivotClient control with the Microsoft SQL Server Analysis Services (SSAS), XML/A data sources and Relational data sources.
+* **OLAP** - OLAP DB related features like KPI, Named Sets, Member Properties etc., are supported.
+* **Relational** - Relational DB related features like expression fields, custom summaries etc., are supported.
 * **Slice and Dice** - You can slice and dice the cube database.
 * **Save and Load** - The current session of the report can be saved in an XML file or as a stream for future use and reload it whenever needed.
 * **Chart** - A Chart is a graphical representation of data, in which “the data is represented by symbols, such as bars in a bar chart, lines in a line chart, or slices in a pie chart”.

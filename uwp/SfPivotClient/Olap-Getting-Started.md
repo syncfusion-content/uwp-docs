@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with SfPivotClient control for UWP
-description: Getting Started with SfPivotClient control for UWP
+title: Olap Getting Started with SfPivotClient control for UWP
+description: Olap Getting Started with SfPivotClient control for UWP
 platform: uwp
 control: SfPivotClient
 documentation: ug
