@@ -189,7 +189,7 @@ The following code example illustrates the use of `EmptyPointStyle` and `EmptyPo
 
 {% highlight xaml %}
 
-<chart:ColumnSeries  ItemsSource="{Binding EmptyPointDatas}" Interior="#bcbcbc"
+<chart:ColumnSeries  ItemsSource="{Binding EmptyPointData}" Interior="#bcbcbc"
 
 XBindingPath="Category" YBindingPath="Value" 
 
@@ -202,7 +202,7 @@ ShowEmptyPoints="True"/>
 ColumnSeries series = new ColumnSeries()
 {
 
-    ItemsSource = new ViewModel().EmptyPointDatas,
+    ItemsSource = new ViewModel().EmptyPointData,
 
     XBindingPath = "Category",
 

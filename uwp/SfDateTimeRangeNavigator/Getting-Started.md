@@ -181,7 +181,7 @@ Margin="20"   YBindingPath="High" >
 
 {% highlight c# %}
 
-SfLineSparkline sparkine = new SfLineSparkline()
+SfLineSparkline sparkline = new SfLineSparkline()
 {
     ItemsSource = new ViewModel().StockPriceDetails,
 
@@ -200,7 +200,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 };
 
-rangeNavigator.Content = sparkine;
+rangeNavigator.Content = sparkline;
 
 {% endhighlight %}
 
@@ -293,11 +293,11 @@ public ObservableCollection<Model> StockPriceDetails { get; set; }
 
 {% highlight c# %}
 
-ViewModel vm = new ViewModel();
+ViewModel viewModel = new ViewModel();
 
 SfDateTimeRangeNavigator navigator = new SfDateTimeRangeNavigator();   
 
-navigator.ItemsSource = vm.StockPriceDetails;
+navigator.ItemsSource = viewModel.StockPriceDetails;
 
 navigator.XBindingPath = "Date";
 
@@ -311,7 +311,7 @@ Add the content that needs to be displayed inside SfDateTimeRangeNavigator using
 
 SfLineSparkline sparkline = new SfLineSparkline();
 
-sparkline.ItemsSource = vm.StockPriceDetails;
+sparkline.ItemsSource = viewModel.StockPriceDetails;
 
 sparkline.XBindingPath = "Date";
 
@@ -319,7 +319,7 @@ sparkline.YBindingPath = "High";
 
 SfDateTimeRangeNavigator navigator = new SfDateTimeRangeNavigator();                                                                  
 
-navigator.ItemsSource = vm.StockPriceDetails;
+navigator.ItemsSource = viewModel.StockPriceDetails;
 
 navigator.XBindingPath = "Date";
 

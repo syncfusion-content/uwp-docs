@@ -913,11 +913,11 @@ public class ImageConverter:IValueConverter
 
    if (item.Label == "Gold")
 
-     return new BitmapImage(new Uri(("gold_symb.png"),UriKind.RelativeOrAbsolute));
+     return new BitmapImage(new Uri(("gold_symbol.png"),UriKind.RelativeOrAbsolute));
 
    else
 
-    return new BitmapImage(new Uri(("silver_symb.png"), UriKind.RelativeOrAbsolute));
+    return new BitmapImage(new Uri(("silver_symbol.png"), UriKind.RelativeOrAbsolute));
 
   }
 
