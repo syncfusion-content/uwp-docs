@@ -67,7 +67,7 @@ Bar series are similar to column series, excepts its orientation. The following 
 
 {% highlight xaml %}
 
-<chart:BarSeries ItemsSource="{Binding CategoricalDatas}" XBindingPath="Category" 
+<chart:BarSeries ItemsSource="{Binding CategoricalData}" XBindingPath="Category" 
 
 YBindingPath="Value" Interior="#7F7F7F" />
 
@@ -78,7 +78,7 @@ YBindingPath="Value" Interior="#7F7F7F" />
 BarSeries series = new BarSeries()
 {
 
-    ItemsSource = new ViewModel().CategoricalDatas,
+    ItemsSource = new ViewModel().CategoricalData,
 
     XBindingPath = "Category",
 
@@ -2326,7 +2326,7 @@ chart.Series.Add(series4);
 
 {% highlight xaml %}
 
-<chart:RangeColumnSeries  ItemsSource="{Binding FinancialDatas}" 
+<chart:RangeColumnSeries  ItemsSource="{Binding FinancialData}" 
 
 XBindingPath="Time" Interior="#4A4A4A"
 
@@ -2339,7 +2339,7 @@ High="High" Low="Low"  />
 RangeColumnSeries series = new RangeColumnSeries()
 {
 
-    ItemsSource = new ViewModel().FinancialDatas,
+    ItemsSource = new ViewModel().FinancialData,
 
     XBindingPath = "Time",
 

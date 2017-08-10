@@ -205,13 +205,13 @@ You need to create the instance for the Sparkline as below.
 
 {% highlight c# %}
 
-SfLineSparkline linespark = new SfLineSparkline();
+SfLineSparkline sfLineSparkline = new SfLineSparkline();
 
 {% endhighlight  %}
 
 {% highlight vb %}
 
-Dim linespark As New SfLineSparkline()
+Dim sfLineSparkline As New SfLineSparkline()
 
 {% endhighlight  %}
 
@@ -275,9 +275,9 @@ After you have added the sparkline, you need to add ItemSource and YBindingPath 
 
  {%highlight C#%}
 
-UsersViewModel viewmodel = new UsersViewModel();
-linespark.ItemsSource = viewmodel.UsersList;
-linespark.YBindingPath = "NoOfUsers";
+UsersViewModel viewModel = new UsersViewModel();
+sfLineSparkline.ItemsSource = viewModel.UsersList;
+sfLineSparkline.YBindingPath = "NoOfUsers";
 
 {%endhighlight%}
  
@@ -285,37 +285,37 @@ The following code example gives the complete set of code for creating sparkline
 
 {%highlight C#%}
 
-//creating object for viewmodel
+//creating object for viewModel
 
-UsersViewModel viewmodel = new UsersViewModel();
+UsersViewModel viewModel = new UsersViewModel();
 
-//assinging the data context for the chart
+//Assigning the data context for the sparkline.
 
-this.DataContext = viewmodel;
+this.DataContext = viewModel;
 
-//intializing sparkline
+//Initializing the sparkline
 
-SfLineSparkline linespark = new SfLineSparkline();
+SfLineSparkline sfLineSparkline = new SfLineSparkline();
 
 //setting itemsource and binding path 
 
-linespark.ItemsSource = viewmodel.UsersList;
+sfLineSparkline.ItemsSource = viewModel.UsersList;
 
-linespark.YBindingPath = "NoOfUsers";
+sfLineSparkline.YBindingPath = "NoOfUsers";
 
-//sparkline is customizied by setting the below properties
+//Sparkline can be customized by setting the below properties
 
 Color color = (Color)ColorConverter.ConvertFromString("#4a4a4a");
 
-linespark.Interior = new SolidColorBrush(color);
+sfLineSparkline.Interior = new SolidColorBrush(color);
 
-linespark.BorderBrush = new SolidColorBrush(Colors.DarkGray);
+sfLineSparkline.BorderBrush = new SolidColorBrush(Colors.DarkGray);
 
-linespark.BorderThickness = new Thickness(1);
+sfLineSparkline.BorderThickness = new Thickness(1);
 
 //adding sparkline to grid
 
-grid.Children.Add(linespark);
+grid.Children.Add(sfLineSparkline);
 
 {%endhighlight%}
 

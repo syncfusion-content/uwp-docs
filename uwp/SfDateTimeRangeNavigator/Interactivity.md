@@ -126,7 +126,7 @@ Header="Stock Price" />
 
 <chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" 
                    XBindingPath="Date"  High="High" Open="Open" 
-                   Close="Close" Low="Low"  Label="Candleseries">
+                   Close="Close" Low="Low"  Label="CandleSeries">
 
 </chart:CandleSeries>
 
@@ -167,7 +167,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 };
 
-SfLineSparkline sparkine = new SfLineSparkline()
+SfLineSparkline sparkline = new SfLineSparkline()
 {
 
     ItemsSource = new ViewModel().StockPriceDetails,
@@ -176,7 +176,7 @@ SfLineSparkline sparkine = new SfLineSparkline()
 
 };
 
-rangeNavigator.Content = sparkine;
+rangeNavigator.Content = sparkline;
 
 Grid.SetColumn(rangeNavigator, 1);
 
@@ -282,7 +282,7 @@ Displays the selected data alone from the SfDateTimeRangeNavigator, into the cha
 <chart:CandleSeries Name="series" ItemsSource="{Binding
                    ElementName=RangeNavigator, Path=SelectedData}" 
                    XBindingPath="Date"  High="High" Open="Open" 
-                   Close="Close" Low="Low"  Label="Candleseries">
+                   Close="Close" Low="Low"  Label="CandleSeries">
 
 </chart:CandleSeries>
 

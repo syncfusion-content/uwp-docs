@@ -134,7 +134,7 @@ The complex property binding feature enables you to access nested object referen
 
 {% highlight xaml %}
 
-<syncfusion:LineSeries ItemsSource="{Binding  DataWithMulData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumSeats" /> 
+<syncfusion:LineSeries ItemsSource="{Binding  DataWithMultipleData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumberSeats" /> 
 
 {% endhighlight %}
 
@@ -147,11 +147,11 @@ StadiumDetails stadiumDetails = new StadiumDetails();
 LineSeries series = new LineSeries()
 {
 
-      ItemsSource = new ViewModel().DataWithMulData,
+      ItemsSource = new ViewModel().DataWithMultipleData,
 
       XBindingPath = "stadiumDetails.CupDetailsObj.CupName",
 
-      YBindingPath = "stadiumDetails.NumSeats",
+      YBindingPath = "stadiumDetails.NumberSeats",
 
       Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
 
@@ -165,7 +165,7 @@ public class StadiumDetails
 
       public string PlaceName { get; set; }
 
-      public int NumSeats { get; set; }
+      public int NumberSeats { get; set; }
 
       public int Price { get; set; }
 
@@ -183,7 +183,7 @@ public class CupDetails
 
 }
 
-public class DataPointWithMulData
+public class DataPointWithMultipleData
 
 {
 
