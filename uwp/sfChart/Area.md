@@ -517,7 +517,7 @@ SegmentSpacing="0.5"
 
 Interior="#4a4a4a"  XBindingPath="Brand" 
 
-Label="2014" YBindingPath="postion"/>            
+Label="2014" YBindingPath="Position"/>            
 
 </chart:SfChart>
 
@@ -713,7 +713,7 @@ Serialized Chart
 </SfChart.RowDefinitions>
 
 <ColumnSeries YBindingPath="Value"  
-              ItemsSource="{av:Binding Path=CategoricalDatas}"
+              ItemsSource="{av:Binding Path=CategoricalData}"
               XBindingPath="Category"
               Name="series"
               xmlns="http://schemas.syncfusion.com/wpf"

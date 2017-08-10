@@ -24,7 +24,7 @@ if (y == MaximumY)
 
 {
 
-DataTemplate markerTemplate =  Application.Current.Resources["markerTemplate"]as DataTemplate;
+DataTemplate markerTemplate =  Application.Current.Resources["markerTemplate"] as DataTemplate;
 
 return markerTemplate;
 

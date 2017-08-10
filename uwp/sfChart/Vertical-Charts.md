@@ -155,7 +155,7 @@ SymbolHeight="10" SymbolInterior="#7f7f7f" SymbolWidth="10">
 
 ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
 
-YBindingPath="postion" >
+YBindingPath="Position" >
 
 <chart:LineSeries.AdornmentsInfo>
 

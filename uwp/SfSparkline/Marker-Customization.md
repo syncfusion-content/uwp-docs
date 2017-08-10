@@ -114,7 +114,7 @@ sparkline.MarkerTemplateSelector = selector;
 
 **Marker Template**
 
-You can customize default appearence of the marker symbol by using the MarkerTemplate property in the sparkline.
+You can customize default appearance of the marker symbol by using the MarkerTemplate property in the sparkline.
 
 {% tabs %}
 
