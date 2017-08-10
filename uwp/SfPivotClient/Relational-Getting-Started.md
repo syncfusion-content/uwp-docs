@@ -228,7 +228,7 @@ public class ProductSales
       string[] franceStates = new string[] { "Charente-Maritime", "Essonne", "Garonne (Haute)", "Gers", };
       string[] germanyStates = new string[] { "Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein-Westfalen", "Saarland" };
       string[] ukStates = new string[] { "England" };
-      string[] ussStates = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
+      string[] usStates = new string[] { "New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina" };
 
       /// Time
       string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009" };
@@ -274,7 +274,7 @@ public class ProductSales
           }
          case "United States":
           {
-           sales.State = ussStates[r.Next(ussStates.GetLength(0))];
+           sales.State = usStates[r.Next(usStates.GetLength(0))];
            break;
           }
         }
