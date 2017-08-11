@@ -11,7 +11,7 @@ documentation: ug
 
 ## Activating a window
 
-A particular child window can be activated in `SfDockingManager` using its name or reference through the property `ActiveWindow` and `ActivateWindow` method that passes the element as argument to activate.
+A particular child window can be activated in `SfDockingManager` using its name or instance reference through the property `ActiveWindow` and `ActivateWindow` method that passes the element as argument to activate.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ docking.ActivateWindow(SolutionExplorer);
 
 ## Adding Window Programmatically
 
-Any UI element can be added inside the `SfDockingManager` as its child windows. The windows are added as Dock windows, since the default value of the state is Dock. The UI element is added in the `SfDockingManager` using the Add method of the `Children` property of the `SfDockingManager`.
+Any UI element can be added inside the `SfDockingManager` as its child windows. The windows are added as Dock windows, since the default value of the `DockState` is Dock. The UI element is added in the `SfDockingManager` using the Add method of the `Children` property of the `SfDockingManager`.
 
 For example, `ContentControl` is added as a window for `SfDockingManager`.
 
@@ -122,7 +122,7 @@ DockingManager1.Children.Add(content5);
 
 ## Hiding Window Programmatically
 
-To hide the window, set `DockState` attached property of the `SfDockingManager` as Hidden.
+To hide the window, set `DockState` AttachedProperty of the `SfDockingManager` as Hidden.
 
 {% tabs %}
 
@@ -139,7 +139,7 @@ SfDockingManager.SetDockState(content1, DockState.Hidden);
 
 ## Customizing Docking window
 
-A Docking window can be customized using the property `DockWindowCaptionBackground`, `DockWindowCaptionForeground`, `DockWindowCaptionFontFamily` and `DockWindowCaptionMargin` with the desired values respectively.
+A Docking window can be customized using the property `DockWindowCaptionBackground`, `DockWindowCaptionForeground`, `DockWindowCaptionFontFamily` and `DockWindowCaptionMargin` with the desired values.
 
 {% tabs %}
 
@@ -164,7 +164,7 @@ A Docking window can be customized using the property `DockWindowCaptionBackgrou
 
 ## Customizing Active Docking Window
 
-Active docking window can be customized using the property `DockWindowActiveForeground`, `DockWindowActiveBackground` with the desired brush values respectively.
+Active docking window can be customized using the property `DockWindowActiveForeground`, `DockWindowActiveBackground` with desired brush values.
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ Active docking window can be customized using the property `DockWindowActiveFore
 
 ## Customizing Floating Window
 
-The float window can be customized by setting `FloatWindowBackground`, `FloatWindowActiveBackground`, `FloatWindowContentBackground`, `FloatWindowContentForeground`, `FloatWindowBorderBrush`, `FloatWindowBorderThickness`, `FloatWindowCaptionBackground`, `FloatWindowContentBorderBrush`, `FloatWindowContentMargin` and `FloatWindowContentBorderThickness` properties with the required values respectively.
+The float window can be customized by setting `FloatWindowBackground`, `FloatWindowActiveBackground`, `FloatWindowContentBackground`, `FloatWindowContentForeground`, `FloatWindowBorderBrush`, `FloatWindowBorderThickness`, `FloatWindowCaptionBackground`, `FloatWindowContentBorderBrush`, `FloatWindowContentMargin` and `FloatWindowContentBorderThickness` properties with the required values.
 
 {% tabs %}
 
@@ -213,7 +213,7 @@ The float window can be customized by setting `FloatWindowBackground`, `FloatWin
 
 ## Enable/Disable Dragging a Window
 
-The attached property `IsDragEnabled` that helps to enable or disable the dragging functionality of a window by setting its value as True or False respectively. By default, its value is True, to disable this functionality turn its value to False.
+The AttachedProperty `IsDragEnabled` helps to enable or disable the dragging functionality of a window by setting its value as true or false respectively. By default, its value is true, to disable this functionality change the property value to false.
 
 {% tabs %}
 
@@ -255,7 +255,7 @@ The fill color of hint shadow/dock preview element can be customized using `Dock
 
 `SfDockingManager` allows to set the desired width and height for the docking windows. 
 
-The desired height and width can be set for the Dock windows through the attached property `DesiredWidthInDockedMode` and `DesiredHeightInDockedMode` with the desired values.
+The desired height and width can be set for the Dock windows through the AttachedProperty `DesiredWidthInDockedMode` and `DesiredHeightInDockedMode` with the desired values.
 
 {% tabs %}
 
@@ -278,7 +278,7 @@ The desired height and width can be set for the Dock windows through the attache
 
 ## Occupy Whole Window
 
-To arrange the dock windows to a whole available space in the `SfDockingManager`, set `DockFill` property of `SfDockingManager` as True.
+To arrange the dock windows to a whole available space in the `SfDockingManager`, set `DockFill` property of `SfDockingManager` as true.
 
 {% tabs %}
 
@@ -297,13 +297,13 @@ To arrange the dock windows to a whole available space in the `SfDockingManager`
 ![](Dealing-with-Windows-images/Dealing-with-Windows-img10.jpeg)
 
 
-## Enable/Disable Context Menus
+## Enable/Disable ContextMenus
 
-`SfDockingManager` provides context menus for docking, floating, auto hiding and document windows. 
+`SfDockingManager` provides ContextMenu's for docking, floating, auto hiding and document windows. 
 
 ### Enable/Disable context menu for docking, floating, auto hiding windows
 
-Docking, floating and auto hiding windows have a context menu button that contains options for switching between states.  The button can be enabled/disabled using `ShowMenuButton` property. By default, its value is True, to disable this functionality turn its value to False.
+Docking, floating and auto hiding windows have a ContextMenu button that contains options for switching between states.  The button can be enabled/disabled using `ShowMenuButton` property. By default, its value is true, to disable this functionality change the property value to false.
 
 {% tabs %}
 
@@ -323,9 +323,9 @@ Docking, floating and auto hiding windows have a context menu button that contai
 ![](Dealing-with-Windows-images/Dealing-with-Windows-img11.jpeg)
 
 
-### Enable/Disable context menu for Document windows
+### Enable/Disable ContextMenu for Document windows
 
-Document windows have a context menu button that contains options for switching between tab items.  The button can be enabled/disabled using `ShowDocumentTabStripMenu` property. By default, its value is True, to disable this functionality turn its value to False.
+Document windows have a ContextMenu button, that contains options for switching between TabItems.  The button can be enabled/disabled using `ShowDocumentTabStripMenu` property. By default, its value is true, to disable this functionality change the property value to false.
 
 {% tabs %}
 
@@ -347,7 +347,7 @@ Document windows have a context menu button that contains options for switching 
 
 ### Enable/Disable context menu of DocumentTabItems
 
-One or more `DocumentTabItems` can be closed using document tab item context menu. This context menu can be enabled/disabled through `ShowDocumentTabItemContextMenu` property. By default, its value is True, to disable this functionality turn its value to False.
+One or more `DocumentTabItems` can be closed using Document TabItem ContextMenu. This ContextMenu can be enabled/disabled through `ShowDocumentTabItemContextMenu` property. By default, its value is true, to disable this functionality change the property value to false.
 
 {% tabs %}
 

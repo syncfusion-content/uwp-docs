@@ -9,7 +9,7 @@ documentation: ug
 
 # Tabbed Window
 
-Child window can be arranged as Tabbed windows by setting `TargetName` and side value as Tabbed using the property `SideInDockedMode`.
+Child window can be arranged as Tabbed window by setting `TargetName` and side value as Tabbed using the property `SideInDockedMode`.
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ Child window can be arranged as Tabbed windows by setting `TargetName` and side 
 
 ## Tab Alignments
 
-Tabs of the docked windows are placed at bottom, by default. To place the tabs of the docked window at different sides, set the property `DockTabPlacement` with desired values such as `Top`, `Bottom`, `Left` and `Right`.
+By default, tabs of the docked windows are placed at bottom. To place the tabs of the docked window at different sides, set the property `DockTabPlacement` with desired values such as `Top`, `Bottom`, `Left` and `Right`.
 
 * Setting `DockTabPlacement` as `Bottom`
 

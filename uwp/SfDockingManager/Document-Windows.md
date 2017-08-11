@@ -9,20 +9,20 @@ documentation: ug
 
 # Document Windows
 
-Document window is one of the state in the `SfDockingManager`. To make children of the `SfDockingManager` as Document, set its `DockState` values as Document.
+Document window is one of the states available in the `SfDockingManager`. To make the children of the `SfDockingManager` as Document, set child's `DockState` values as Document.
 
-All the Document windows are added in a `DocumentContainer`, content can be switched by clicking the item header or choosing item from tab strip menu.
+All the Document windows are added in a `DocumentContainer`. Content can be switched by clicking the item header or choosing item from TabStripMenu.
 
 ![](Document-Windows-images/Document-Windows-img1.jpeg)
 
 
 ## Closing Document Windows
 
-A Document window can be closed using the close button provided in header or using the `Close` context menu item.
+A Document window can be closed using the close button provided in header or using the `Close` ContextMenu item.
 
-`CloseAll` context menu item is used to close all the document tab items in the DocumentContainer.
+`CloseAll` ContextMenu item is used to close all the document tab items in the DocumentContainer.
 
-`CloseAllButThis` context menu item is used to close all the document tab items except the sender raising command in the Document Container.
+`CloseAllButThis` ContextMenu item is used to close all the document tab items except the active document in the Document Container.
 
 ## Floating Document Windows
 
@@ -30,11 +30,11 @@ A Document window can be moved to float state by dragging or double clicking the
 
 ## Document Container behavior with DockFill
 
-Dock windows are allowed to occupy the remaining space when DockFill property is set to true. SfDockingManager does not reserve space for DocumentContainer. So child windows with Document state are hidden in the layout.
+Dock windows are allowed to occupy the remaining space when DockFill property is set to true. SfDockingManager does not reserve space for DocumentContainer. So, child windows with Document State are hidden in the layout.
 
 ## Specify Placement for Document Window
 
-A Document window can be added either at start or end index position in the `DocumentContainer` by setting the `DocumentTabItemPlacement` property in `SfDockingManager`. The `DocumentTabItemPlacement` enumeration values are `Start` and `End`, by default it is `Start`.
+A Document window can be added either at start or end index position in the `DocumentContainer` by setting the `DocumentTabItemPlacement` property in `SfDockingManager`. The `DocumentTabItemPlacement` enumeration values are `Start` and `End`, default value is `Start`.
 
 * Adding Documents at Start position
 
