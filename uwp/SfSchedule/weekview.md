@@ -10,7 +10,7 @@ documentation: ug
 ---
 # WeekView
 
-WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in repective timeslots.
+WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
 
 ## ViewHeader Appearance
 You can customize the default appearance of view header in [Week](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleTypeClassTopic.html) by using [DayViewHeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleSfScheduleClassDayViewHeaderStyleTopic.html) and [DayViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleDayViewHeaderStyleClassDayViewHeaderHeightTopic.html) properties of [SfSchedule](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassTopic.html).

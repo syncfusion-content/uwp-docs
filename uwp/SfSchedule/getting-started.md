@@ -16,7 +16,7 @@ This section provides you an overview for working with SfSchedule for UWP and al
 SfSchedule can be included in your UWP project in two ways,    
    
 * [Assembly Reference](#assembly-reference)    
-* [Nuget Configuration](#nuget-configuration)    
+* [NuGet Configuration](#nuget-configuration)    
 
 ### Assembly Reference    
    
@@ -37,9 +37,9 @@ The following list of assemblies need to be added as reference from the installe
 </tr>   
 </table>    
       
-### Nuget Configuration    
+### NuGet Configuration    
       
-Alternatively you can refer SfSchedule in your application by configuring nuget packages.     
+Alternatively you can refer SfSchedule in your application by configuring NuGet packages.     
    
 * [Configuration in Visual Studio](https://help.syncfusion.com/uwp/installation-and-deployment#configuring-syncfusion-nuget-packages-in-visual-studio)   
 * [Configuration from command line](https://help.syncfusion.com/uwp/installation-and-deployment#command-line-installation)   
@@ -151,7 +151,7 @@ DayView is used to display a single day, current day will be visible by default.
 
 ### Week View    
   
-`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in repective timeslots.   
+`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.   
      
 {% tabs %}    
 {% highlight xaml %}    
@@ -433,7 +433,7 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
 
  {% endhighlight %} 
 
-#### Setting data source for SfSchdeule   
+#### Setting data source for SfSchedule   
     
  Assign those appointments collection `Meetings` to the [SfSchedule.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassItemsSourceTopic.html) property. 
    
