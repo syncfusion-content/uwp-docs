@@ -76,7 +76,7 @@ dockingManager.ResetDockState();
 
 ## Serialize the dynamically added children
 
-By default, `SfDockingManager` cannot de-serialize its Saved Layout properly, when its child collection is modified after DockState is saved.
+By default, `SfDockingManager` cannot de-serialize its saved layout properly, when its child collection is modified after DockState is saved.
 
-Since the `SfDockingManager` state persistence feature implemented in such a way that the `SfDockingManager` matches the child collection of saved layout with current `SfDockingManager` layout internally and loads properly when `SfDockingManager` children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
+Since the `SfDockingManager` state persistence feature implemented in such a way that the `SfDockingManager` matches the child collection of saved layout with current `SfDockingManager`  layout internally and loads properly when `SfDockingManager` children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
 

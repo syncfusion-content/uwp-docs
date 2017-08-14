@@ -9,14 +9,14 @@ documentation: ug
 
 # Docking Window
 
-Docking windows is one of the state of `SfDockingManager`. Since Dock is the default value, so initially all the children stay as Docking Window.
+Docking window is one of the state of `SfDockingManager`. Since Dock is the default value, initially all the children stay as Docking Window.
 
 ![](Docking-Window-images/Docking-Window-img1.jpeg)
 
 
 ## Configuring Window in Different Sides
 
-The five sides that can be docked are
+The Fives sides where the children can be docked are
 
 * Left
 * Right
@@ -24,7 +24,7 @@ The five sides that can be docked are
 * Bottom
 * Tabbed
 
-To dock four children of a `SfDockingManager` in 4 different sides, then use `SideInDockedMode` property with the required values.
+To Dock four children of `SfDockingManager` to each sides, set `SideInDockedMode` property with appropriate values.
 
 {% tabs %}
 
@@ -55,9 +55,9 @@ To dock four children of a `SfDockingManager` in 4 different sides, then use `Si
 
 ## Docking Window in Various Targets
 
-Docking window can also be docked at any side of the Target Docking Window through an attached property named `TargetNameInDockedMode`.
+Docking window can be docked on any side of the Target Docking Window using an AttachedProperty named `TargetNameInDockedMode`.
 
-Also to set as Tabbed Window, the window should aware of a Target window name. The following code helps to arrange children of `SfDockingManager` that targets a single Docking window docked along Left, Top, Right and Tabbed.
+To set the child window as TabbedWindow, the window should aware of a Target window name. The following code helps to arrange children of `SfDockingManager` that targets a single Docking window docked along Left, Top, Right and Tabbed.
 
 {% tabs %}
 
@@ -104,7 +104,7 @@ Also to set as Tabbed Window, the window should aware of a Target window name. T
 
 ## Enabling or Disabling the Header Visibility
 
-`NoHeader` is an attached property, that is used to hide the header of Dock Window. Default value of `NoHeader` is False, to hide the Header turn its value to True.
+`NoHeader` is an AttachedProperty, that is used to hide the header of Dock Window. Default value of `NoHeader` is false. To hide the Header change the value of NoHeader property to true.
 
 {% tabs %}
 
@@ -133,7 +133,7 @@ Also to set as Tabbed Window, the window should aware of a Target window name. T
 
 ## Enabling or Disabling the Dock Functionality
 
-The `CanDock` attached property can help to enable or disable the docking functionality by setting its value as True or False. By default, its value is True, to disable this functionality turn its value to False.
+The `CanDock` AttachedProperty used to enable or disable the docking functionality by setting its value as true or false. By default, `CanDock` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
