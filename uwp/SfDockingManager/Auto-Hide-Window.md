@@ -173,7 +173,7 @@ The Pin button, that performs Auto Hide functionality will be visible by default
 ![](Auto-Hide-Window-images/Auto-Hide-Window-img4.jpeg)
 
 
-To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, `IsPinButtonVisible` AttachedProperty can be used. By default, its value is true, this functionality can be disabled by setting its value as false.
+To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, `IsPinButtonVisible` AttachedProperty can be used. By default, `IsPinButtonVisible` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ To show or collapse the AutoHide button for a specific child in the `SfDockingMa
 ![](Auto-Hide-Window-images/Auto-Hide-Window-img5.jpeg)
 
 
-To enable or disable the AutoHide functionality for a specific child in the `SfDockingManager`, `CanAutoHide` AttachedProperty can be used. By default, its value is true, this functionality can be disabled by setting its value as false.
+To enable or disable the AutoHide functionality for a specific child in the `SfDockingManager`, `CanAutoHide` AttachedProperty can be used. By default, `CanAutoHide` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 

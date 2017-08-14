@@ -9,7 +9,7 @@ documentation: ug
 
 # Document Windows
 
-Document window is one of the states available in the `SfDockingManager`. To make the children of the `SfDockingManager` as Document, set child's `DockState` values as Document.
+Document window is one of the states available in the `SfDockingManager`. To make the children of the `SfDockingManager` as Document, set child's `DockState` value as Document.
 
 All the Document windows are added in a `DocumentContainer`. Content can be switched by clicking the item header or choosing item from TabStripMenu.
 

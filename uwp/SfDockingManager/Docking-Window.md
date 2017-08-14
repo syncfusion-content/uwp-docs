@@ -133,7 +133,7 @@ To set the child window as TabbedWindow, the window should aware of a Target win
 
 ## Enabling or Disabling the Dock Functionality
 
-The `CanDock` AttachedProperty used to enable or disable the docking functionality by setting its value as true or false. By default, the value is true, to disable this functionality change the property value to false.
+The `CanDock` AttachedProperty used to enable or disable the docking functionality by setting its value as true or false. By default, `CanDock` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 

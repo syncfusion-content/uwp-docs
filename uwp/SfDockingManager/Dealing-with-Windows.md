@@ -213,7 +213,7 @@ The float window can be customized by setting `FloatWindowBackground`, `FloatWin
 
 ## Enable/Disable Dragging a Window
 
-The AttachedProperty `IsDragEnabled` helps to enable or disable the dragging functionality of a window by setting its value as true or false respectively. By default, its value is true, to disable this functionality change the property value to false.
+The AttachedProperty `IsDragEnabled` helps to enable or disable the dragging functionality of a window by setting its value as true or false respectively. By default, `IsDragEnabled` value is true. This functionality can be disabled by setting its value as false. 
 
 {% tabs %}
 
@@ -303,7 +303,7 @@ To arrange the dock windows to a whole available space in the `SfDockingManager`
 
 ### Enable/Disable context menu for docking, floating, auto hiding windows
 
-Docking, floating and auto hiding windows have a ContextMenu button that contains options for switching between states.  The button can be enabled/disabled using `ShowMenuButton` property. By default, its value is true, to disable this functionality change the property value to false.
+Docking, floating and auto hiding windows have a ContextMenu button that contains options for switching between states.  The button can be enabled/disabled using `ShowMenuButton` property. By default, `ShowMenuButton` value is true. This functionality can be disabled by setting its value as false. 
 
 {% tabs %}
 
@@ -325,7 +325,7 @@ Docking, floating and auto hiding windows have a ContextMenu button that contain
 
 ### Enable/Disable ContextMenu for Document windows
 
-Document windows have a ContextMenu button, that contains options for switching between TabItems.  The button can be enabled/disabled using `ShowDocumentTabStripMenu` property. By default, its value is true, to disable this functionality change the property value to false.
+Document windows have a ContextMenu button, that contains options for switching between TabItems.  The button can be enabled/disabled using `ShowDocumentTabStripMenu` property. By default, `ShowDocumentTabStripMenu` value is true. This functionality can be disabled by setting its value as false. 
 
 {% tabs %}
 
@@ -347,7 +347,7 @@ Document windows have a ContextMenu button, that contains options for switching 
 
 ### Enable/Disable context menu of DocumentTabItems
 
-One or more `DocumentTabItems` can be closed using Document TabItem ContextMenu. This ContextMenu can be enabled/disabled through `ShowDocumentTabItemContextMenu` property. By default, its value is true, to disable this functionality change the property value to false.
+One or more `DocumentTabItems` can be closed using Document TabItem ContextMenu. This ContextMenu can be enabled/disabled through `ShowDocumentTabItemContextMenu` property. By default, `ShowDocumentTabItemContextMenu` value is true. This functionality can be disabled by setting its value as false. 
 
 {% tabs %}
 

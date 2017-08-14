@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-Let’s get start to implement a similar UI as Visual Studio using `SfDockingManager`.
+This section explains how to implement a similar UI as Visual Studio using the `SfDockingManager`.
 
 ## Add SfDockingManager
 
