@@ -9,7 +9,7 @@ documentation: ug
 
 # Auto Hide Window
 
-`AutoHide` window is one of the state in the `SfDockingManager`. To enable Auto hidden for SfDockingManager’s children, set its `DockState` value as `AutoHidden`.
+`AutoHide` window is one of the state in the `SfDockingManager`. To enable Auto hidden for SfDockingManager’s children, set `SfDockingManager` child `DockState` value as `AutoHidden`.
 
 ![](Auto-Hide-Window-images/Auto-Hide-Window-img1.jpeg)
 
@@ -76,7 +76,7 @@ The side panel and side panel header can be customized through `SidePanelBackgro
 
 ### Scrollable Panel
 
-Side panel have scroll support when Auto Hidden tab items overflow onto the side panel.
+Side panel have scroll support, when AutoHidden tab items overflow onto the side panel.
 
 ## Configuring AutoHide Animation
 
@@ -101,7 +101,7 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 `SfDockingManager` supports three different built–in animations while auto-hiding the windows such as Fade, Scale and Slide that can be set through the property `AutoHideAnimationMode`.
 
-`Fade` – AutoHidden Window fades while auto hiding
+`Fade` – AutoHidden window fades while auto hiding.
 
 {% tabs %}
 
@@ -118,7 +118,7 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 {% endtabs %}
 
-`Scale` – AutoHidden Window scale while auto hiding
+`Scale` – AutoHidden Window scales while auto hiding.
 
 {% tabs %}
 
@@ -135,7 +135,7 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 {% endtabs %}
 
-`Slide` – AutoHidden Window slides while auto hiding
+`Slide` – AutoHidden Window slides while auto hiding.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 ## Enabling and Disabling the AutoHide functionality
 
-The Pin button that performs Auto Hide functionality can be visible by default. It can be invisible to disable the AutoHide functionality through `ShowPinButton` property.
+The Pin button, that performs Auto Hide functionality will be visible by default. It should be collapsed to disable the AutoHide functionality. Visibility of the Pin button can be changed by `ShowPinButton` property.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ The Pin button that performs Auto Hide functionality can be visible by default. 
 ![](Auto-Hide-Window-images/Auto-Hide-Window-img4.jpeg)
 
 
-To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, `IsPinButtonVisible` attached property can be used. By default, its value is true, this functionality can be disabled by setting its value as false.
+To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, `IsPinButtonVisible` AttachedProperty can be used. By default, `IsPinButtonVisible` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ To show or collapse the AutoHide button for a specific child in the `SfDockingMa
 ![](Auto-Hide-Window-images/Auto-Hide-Window-img5.jpeg)
 
 
-To enable or disable the AutoHide functionality for a specific child in the `SfDockingManager`, `CanAutoHide` attached property can be used. By default, its value is true, this functionality can be disabled by setting its value as false.
+To enable or disable the AutoHide functionality for a specific child in the `SfDockingManager`, `CanAutoHide` AttachedProperty can be used. By default, `CanAutoHide` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
