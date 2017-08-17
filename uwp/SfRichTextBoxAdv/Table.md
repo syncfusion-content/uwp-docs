@@ -79,7 +79,7 @@ section.Blocks.Add(tableAdv);
 document.Sections.Add(section);
 // Initialize and add any number of sections to the document here.
 
-// Assign the documen to the RichTextBoxAdv instance.
+// Assign the document to the RichTextBoxAdv instance.
 richTextBoxAdv.Document = document;
 
 
