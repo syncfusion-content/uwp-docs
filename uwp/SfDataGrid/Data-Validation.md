@@ -38,7 +38,7 @@ public class OrderInfo : INotifyDataErrorInfo
     {
         if (!propertyName.Equals("ShipCity"))
             return null;
-        if (this.ShipCity.Contains("México D.F."))
+        if (this.ShipCity.Contains("Mexico D.F."))
             errors.Add("Delivery not available for the city " + this.ShipCity);
         return errors;
     }
@@ -47,7 +47,7 @@ public class OrderInfo : INotifyDataErrorInfo
     {
         get
         {
-            if (this.ShipCity.Contains("México D.F."))
+            if (this.ShipCity.Contains("Mexico D.F."))
                 return true;
             return false;
         }
@@ -151,7 +151,7 @@ void dataGrid_CurrentCellValidating(object sender, CurrentCellValidatingEventArg
     if (args.NewValue.ToString().Equals("1004"))
     {
         args.IsValid = false;
-        args.ErrorMessage = "OrdrerID 1004 cannot be passed";
+        args.ErrorMessage = "OrderID 1004 cannot be passed";
     }
 }
 {% endhighlight %}
@@ -553,7 +553,7 @@ public bool HasErrors
 {
     get
     {
-        if (this.ShipCity.Contains("México D.F."))
+        if (this.ShipCity.Contains("Mexico D.F."))
             return true;
         return false;
     }

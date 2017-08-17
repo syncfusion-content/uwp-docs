@@ -136,7 +136,7 @@ public class CustomDataRow : DataRow
     {                  
     }
      
-    protected Storyboard sb = null;
+    protected Storyboard storyboard = null;
     protected override void OnRowDataChanged()
     {
         base.OnRowDataChanged();
@@ -153,9 +153,9 @@ public class CustomDataRow : DataRow
 
             Storyboard.SetTarget(animation, this.WholeRowElement);
             Storyboard.SetTargetProperty(animation, "Path.Opacity");
-            sb = new Storyboard();
-            sb.Children.Add(animation);
-            sb.Begin();
+            storyboard = new Storyboard();
+            storyboard.Children.Add(animation);
+            storyboard.Begin();
         }        
     }             
 }
@@ -284,7 +284,7 @@ public class CustomGridCell : GridCell
         var newData = e.NewValue as INotifyPropertyChanged;
         newData.PropertyChanged += Data_PropertyChanged;
     }
-    protected Storyboard sb = null;
+    protected Storyboard storyboard = null;
     private void Data_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
         if (e.PropertyName == "CustomerID")
@@ -300,9 +300,9 @@ public class CustomGridCell : GridCell
 
             Storyboard.SetTarget(animation, this);
             Storyboard.SetTargetProperty(animation, "Path.Opacity");
-            sb = new Storyboard();
-            sb.Children.Add(animation);
-            sb.Begin();
+            storyboard = new Storyboard();
+            storyboard.Children.Add(animation);
+            storyboard.Begin();
         }
     }
 

@@ -41,7 +41,7 @@ public class OrderInfo : INotifyDataErrorInfo
             return null;
         List<string> errors = new List<string>();    
 
-        if (this.City.Contains("México D.F."))
+        if (this.City.Contains("Mexico D.F."))
             errors.Add("Delivery not available for the city " + this.City);
 
         return errors;
@@ -545,7 +545,7 @@ public bool HasErrors
 {
     get
     {
-        if (this.City.Contains("México D.F."))
+        if (this.City.Contains("Mexico D.F."))
             return true;
         return false;
     }

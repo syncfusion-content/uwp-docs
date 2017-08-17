@@ -182,14 +182,14 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
 
     protected Dictionary<string, object> BackUp()
     {
-        var dict = new Dictionary<string, object>();
+        var dictionary = new Dictionary<string, object>();
         var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
         foreach (var pDescriptor in itemProperties)
         {
             if (pDescriptor.CanWrite)
-                dict.Add(pDescriptor.Name, pDescriptor.GetValue(this));
+                dictionary.Add(pDescriptor.Name, pDescriptor.GetValue(this));
         }
-        return dict;
+        return dictionary;
     }
 }
 {% endhighlight %}
