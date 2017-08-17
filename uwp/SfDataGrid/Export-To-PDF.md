@@ -440,7 +440,7 @@ var document = dataGrid.ExportToPdf();
 
 FileStream stream = null;
 
-string directory = @"C:\Users\akilarajaram\Pictures\output.pdf";
+string directory = @"C:\Users\administrator\Documents\output.pdf";
 
 await Task.Run(() =>
 {
@@ -476,17 +476,17 @@ var storageFile = await savePicker.PickSaveFileAsync();
 if (storageFile != null)
     await document.SaveAsync(storageFile);
 
-var msgDialog = new MessageDialog("Do you want to view the Document?", "File has been created successfully.");
+var messageDialog = new MessageDialog("Do you want to view the Document?", "File has been created successfully.");
 
 var yesCmd = new UICommand("Yes");
 
 var noCmd = new UICommand("No");
 
-msgDialog.Commands.Add(yesCmd);
+messageDialog.Commands.Add(yesCmd);
 
-msgDialog.Commands.Add(noCmd);
+messageDialog.Commands.Add(noCmd);
 
-var cmd = await msgDialog.ShowAsync();
+var cmd = await messageDialog.ShowAsync();
 
 if (cmd == yesCmd)
 {
@@ -586,7 +586,7 @@ void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
     if (e.CellType != ExportCellType.RecordCell)
         return;
 
-    Stream stream = typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Assets.segoeuil.ttf") as Stream;
+    Stream stream = typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Assets.segoeui.ttf") as Stream;
 
     var font = new PdfTrueTypeFont(stream, 9);
 
@@ -666,7 +666,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
     if (!(e.NodeEntry is OrderInfo))
         return;
         
-    if ((e.NodeEntry as OrderInfo).Country == "México")
+    if ((e.NodeEntry as OrderInfo).Country == "Mexico")
     {
         var cellStyle = new PdfGridCellStyle();
         

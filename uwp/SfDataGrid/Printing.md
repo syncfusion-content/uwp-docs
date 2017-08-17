@@ -316,12 +316,12 @@ public class CustomPrintManager : GridPrintManager
         : base(grid)
     {
     }
-    protected override double GetRowHeight(object record, int rowIndex, RowType rowtype)
+    protected override double GetRowHeight(object record, int rowIndex, RowType type)
     {
         if (rowIndex != -1 && !(record is Group))
             if (rowIndex % 2 != 0)
                 return 80.0;
-        return base.GetRowHeight(record, rowIndex, rowtype);
+        return base.GetRowHeight(record, rowIndex, type);
     }       
 }
 {% endhighlight %}
@@ -350,11 +350,11 @@ public class CustomPrintManager : GridPrintManager
         : base(grid)
     {
     }
-    protected override double GetRowHeight(object record, int rowIndex, RowType rowtype)
+    protected override double GetRowHeight(object record, int rowIndex, RowType type)
     {
             if (record is GridUnBoundRow)
                 return 0;
-            return base.GetRowHeight(record, rowIndex, rowtype);
+            return base.GetRowHeight(record, rowIndex, type);
     }       
 }
 {% endhighlight %}

@@ -388,9 +388,9 @@ public class GroupDateTimeConverter : IValueConverter
     public object Convert(object value, System.Type targetType, object parameter, CultureInfo culture)
     {
         var saleInfo = value as SalesByDate;
-        var dt = DateTime.Now;
-        var days = (int)Math.Floor((dt - saleInfo.Date).TotalDays);
-        var dayofWeek = (int)dt.DayOfWeek;
+        var date = DateTime.Now;
+        var days = (int)Math.Floor((date - saleInfo.Date).TotalDays);
+        var dayofWeek = (int)date.DayOfWeek;
         var difference = days - dayofWeek;
 
         if (days <= dayofWeek)
@@ -407,7 +407,7 @@ public class GroupDateTimeConverter : IValueConverter
             return "TWO WEEKS AGO";
         if (difference > 14 && difference <= 21)
             return "THREE WEEKS AGO";
-        if (dt.Year == saleInfo.Date.Year && dt.Month == saleInfo.Date.Month)
+        if (date.Year == saleInfo.Date.Year && date.Month == saleInfo.Date.Month)
             return "EARLIER THIS MONTH";
         if (DateTime.Now.AddMonths(-1).Month == saleInfo.Date.Month)
             return "LAST MONTH";
@@ -498,15 +498,15 @@ public class CustomSummaryGroupComparer : IComparer<Group>, ISortDirection
 
     public int Compare(Group x, Group y)
     {
-        int cmp = 0;
+        int compare = 0;
         var xGroupSummary = Convert.ToInt32((x as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
         var yGroupSummary = Convert.ToInt32((y as Group).GetSummaryValue(x.SummaryDetails.SummaryRow.SummaryColumns[0].MappingName, "Count"));
-        cmp = ((IComparable)xGroupSummary).CompareTo(yGroupSummary);
+        compare = ((IComparable)xGroupSummary).CompareTo(yGroupSummary);
 
         if (this.SortDirection == ListSortDirection.Descending)
-            cmp = -cmp;
+            compare = -compare;
 
-        return cmp;
+        return compare;
     }
 }
 {% endhighlight %}

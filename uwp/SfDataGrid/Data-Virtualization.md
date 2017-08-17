@@ -365,11 +365,11 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
             {
                 var lambda = Expression.Lambda(predicate, paramExpression);
                 
-                var delg = lambda.Compile();
+                var del = lambda.Compile();
                 
                 this.RowFilter = (o) =>
                 {
-                    var result = (bool)delg.DynamicInvoke(o);
+                    var result = (bool)del.DynamicInvoke(o);
                     return result;
                 };
             }         
@@ -569,17 +569,17 @@ public class ViewModel : INotifyPropertyChanged
 
     #endregion
 
-    #region Ctor
+    #region Constructor
 
     public ViewModel()
     {
-        string uri = "http://services.odata.org/Northwind/Northwind.svc/";
+        string url = "http://services.odata.org/Northwind/Northwind.svc/";
 
         if (IsConnectedToInternet())
         {
             incrementalItemsSource = new IncrementalList<Order>(LoadMoreItems) { MaxItemCount = 10000 };
 
-            northwindEntity = new NorthwindEntities(new Uri(uri));
+            northwindEntity = new NorthwindEntities(new Uri(url));
         }
         else
         {
@@ -718,15 +718,15 @@ public class ViewModel : INotifyPropertyChanged
 
     #endregion
 
-    #region Ctor
+    #region Constructor
 
     public ViewModel()
     {
-        string uri = "http://services.odata.org/Northwind/Northwind.svc/";
+        string url = "http://services.odata.org/Northwind/Northwind.svc/";
 
         incrementalItemsSource = new IncrementalList<Order>(LoadMoreItems) { MaxItemCount = 20};
 
-        northwindEntity = new NorthwindEntities(new Uri(uri));           
+        northwindEntity = new NorthwindEntities(new Uri(url));           
     }
 
     #endregion
