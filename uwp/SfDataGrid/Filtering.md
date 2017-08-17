@@ -594,8 +594,8 @@ public class StringToImageConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)
     {
-        string imagename = value as string;
-        return new BitmapImage(new Uri(@"ms-appx:/Images/"+imagename, UriKind.Absolute));
+        string name = value as string;
+        return new BitmapImage(new Uri(@"ms-appx:/Images/"+name, UriKind.Absolute));
     }      
 
     public object ConvertBack(object value, Type targetType, object parameter, string language)

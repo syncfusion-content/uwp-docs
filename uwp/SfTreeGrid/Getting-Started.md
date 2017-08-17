@@ -274,7 +274,7 @@ public class ViewModel
 private  ObservableCollection<EmployeeInfo> GetEmployees()
  {
         ObservableCollection<EmployeeInfo> employeeDetails = new ObservableCollection<EmployeeInfo>();
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Ferando", LastName = "Joseph", Title = "Management", Salary = 2000000, ReportsTo = -1, ID = 2 });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Fernando", LastName = "Joseph", Title = "Management", Salary = 2000000, ReportsTo = -1, ID = 2 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "John", LastName = "Adams", Title = "Accounts", Salary = 2000000, ReportsTo = -1, ID = 3 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Thomas", LastName = "Jefferson", Title = "Sales", Salary = 300000, ReportsTo = -1, ID = 4 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Andrew", LastName = "Madison", Title = "Marketing", Salary = 4000000, ReportsTo = -1, ID = 5 });
@@ -288,37 +288,37 @@ private  ObservableCollection<EmployeeInfo> GetEmployees()
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Steven", LastName = "Buchanan", ID = 11, Salary = 900000, ReportsTo = 2, Title = "Manager" });
 
         //Accounts
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Nancy", LastName = "Davolio", ID = 12, Salary = 850000, ReportsTo = 3, Title = "Accounts Manager" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Nancy", LastName = "David", ID = 12, Salary = 850000, ReportsTo = 3, Title = "Accounts Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Margaret", LastName = "Peacock", ID = 13, Salary = 700000, ReportsTo = 3, Title = "Accountant" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Suyama", ID = 14, Salary = 700000, ReportsTo = 3, Title = "Accountant" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Robert", LastName = "King", ID = 15, Salary = 650000, ReportsTo = 3, Title = "Accountant" });
 
         //Sales
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Laura", LastName = "Callahan", ID = 16, Salary = 900000, ReportsTo = 4, Title = "Sales Manager" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Anne", LastName = "Dodsworth", ID = 17, Salary = 800000, ReportsTo = 4, Title = "Sales Representative" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Albert", LastName = "Hellstern", ID = 18, Salary = 750000, ReportsTo = 4, Title = "Sales Representative" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Anne", LastName = "Worth", ID = 17, Salary = 800000, ReportsTo = 4, Title = "Sales Representative" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Albert", LastName = "Hells", ID = 18, Salary = 750000, ReportsTo = 4, Title = "Sales Representative" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Tim", LastName = "Smith", ID = 19, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Justin", LastName = "Brid", ID = 20, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Justin", LastName = "Bride", ID = 20, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
 
         //Back Office
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Caroline", LastName = "Patterson", ID = 21, Salary = 800000, ReportsTo = 5, Title = "Receptionist" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Xavier", LastName = "Martin", ID = 22, Salary = 700000, ReportsTo = 5, Title = "Mail Clerk" });
 
         //HR
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Laurent", LastName = "Pereira", ID = 23, Salary = 900000, ReportsTo = 6, Title = "HR Manager" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Syed", LastName = "Abbas", ID = 24, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Alberts", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Laurent", LastName = "Peri", ID = 23, Salary = 900000, ReportsTo = 6, Title = "HR Manager" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Dyes", LastName = "Abash", ID = 24, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Albert", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
 
         //Purchasing
 
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Pamela", LastName = "Ansman-Wolfe", ID = 26, Salary = 600000, ReportsTo = 7, Title = "Purchase Manager" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Pamela", LastName = "Wolfe", ID = 26, Salary = 600000, ReportsTo = 7, Title = "Purchase Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Blythe", ID = 27, Salary = 550000, ReportsTo = 7, Title = "Store Keeper" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "David", LastName = "Campbell", ID = 28, Salary = 450000, ReportsTo = 7, Title = "Store Keeper" });
 
         //Production
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Jillian", LastName = "Carson", ID = 29, Salary = 600000, ReportsTo = 8, Title = "Production Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Shu", LastName = "Ito", ID = 30, Salary = 550000, ReportsTo = 8, Title = "Production Engineer" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Stephen", LastName = "Jiang", ID = 31, Salary = 450000, ReportsTo = 8, Title = "Production Engineer" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Stephen", LastName = "Jingo", ID = 31, Salary = 450000, ReportsTo = 8, Title = "Production Engineer" });
 
         return employeeDetails;
     }
@@ -462,7 +462,7 @@ public class ViewModel
         childCollection2.Add(new PersonInfo { FirstName = "Ronald", LastName = "Fillmore", Availability = false, Salary = 23000 });
         childCollection2.Add(new PersonInfo() { FirstName = "Steven", LastName = "Buchanan", Availability = true, Salary = 340000 });
         childCollection2.Add(new PersonInfo() { FirstName = "Robert", LastName = "King", Availability = true, Salary = 32000 });
-        personList.Add(new PersonInfo() { FirstName = "Obama", LastName = "bosh",Availability=false, Salary = 2000000, Children = childCollection1 });
+        personList.Add(new PersonInfo() { FirstName = "Robert", LastName = "bosh",Availability=false, Salary = 2000000, Children = childCollection1 });
         personList.Add(new PersonInfo() { FirstName = "John", LastName = "Adams",Availability=true, Salary = 2000000, Children = childCollection2 });
         personList.Add(new PersonInfo() { FirstName = "Thomas", LastName = "Jefferson",Availability=true, Salary = 300000, Children = childCollection1 });
         personList.Add(new PersonInfo() { FirstName = "Andrew", LastName = "Madison",Availability=false, Salary = 4000000, Children = childCollection2 });
@@ -602,7 +602,7 @@ public class ViewModel
     public ObservableCollection<EmployeeInfo> GetEmployees()
     {
         ObservableCollection<EmployeeInfo> employeeDetails = new ObservableCollection<EmployeeInfo>();
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Ferando", LastName = "Joseph", Title = "Management", Salary = 2000000, ReportsTo = -1, ID = 2 });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Fernando", LastName = "Joseph", Title = "Management", Salary = 2000000, ReportsTo = -1, ID = 2 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "John", LastName = "Adams", Title = "Accounts", Salary = 2000000, ReportsTo = -1, ID = 3 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Thomas", LastName = "Jefferson", Title = "Sales", Salary = 300000, ReportsTo = -1, ID = 4 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Andrew", LastName = "Madison", Title = "Marketing", Salary = 4000000, ReportsTo = -1, ID = 5 });
@@ -616,37 +616,37 @@ public class ViewModel
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Steven", LastName = "Buchanan", ID = 11, Salary = 900000, ReportsTo = 2, Title = "Manager" });
 
         //Accounts
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Nancy", LastName = "Davolio", ID = 12, Salary = 850000, ReportsTo = 3, Title = "Accounts Manager" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Nancy", LastName = "David", ID = 12, Salary = 850000, ReportsTo = 3, Title = "Accounts Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Margaret", LastName = "Peacock", ID = 13, Salary = 700000, ReportsTo = 3, Title = "Accountant" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Suyama", ID = 14, Salary = 700000, ReportsTo = 3, Title = "Accountant" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Robert", LastName = "King", ID = 15, Salary = 650000, ReportsTo = 3, Title = "Accountant" });
 
         //Sales
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Laura", LastName = "Callahan", ID = 16, Salary = 900000, ReportsTo = 4, Title = "Sales Manager" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Anne", LastName = "Dodsworth", ID = 17, Salary = 800000, ReportsTo = 4, Title = "Sales Representative" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Albert", LastName = "Hellstern", ID = 18, Salary = 750000, ReportsTo = 4, Title = "Sales Representative" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Anne", LastName = "Worth", ID = 17, Salary = 800000, ReportsTo = 4, Title = "Sales Representative" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Albert", LastName = "Hells", ID = 18, Salary = 750000, ReportsTo = 4, Title = "Sales Representative" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Tim", LastName = "Smith", ID = 19, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Justin", LastName = "Brid", ID = 20, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Justin", LastName = "Bride", ID = 20, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
 
         //Back Office
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Caroline", LastName = "Patterson", ID = 21, Salary = 800000, ReportsTo = 5, Title = "Receptionist" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Xavier", LastName = "Martin", ID = 22, Salary = 700000, ReportsTo = 5, Title = "Mail Clerk" });
 
         //HR
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Laurent", LastName = "Pereira", ID = 23, Salary = 900000, ReportsTo = 6, Title = "HR Manager" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Syed", LastName = "Abbas", ID = 24, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Alberts", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Laurent", LastName = "Peri", ID = 23, Salary = 900000, ReportsTo = 6, Title = "HR Manager" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Dyes", LastName = "Abash", ID = 24, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Albert", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
 
         //Purchasing
 
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Pamela", LastName = "Ansman-Wolfe", ID = 26, Salary = 600000, ReportsTo = 7, Title = "Purchase Manager" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Pamela", LastName = "Wolfe", ID = 26, Salary = 600000, ReportsTo = 7, Title = "Purchase Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Blythe", ID = 27, Salary = 550000, ReportsTo = 7, Title = "Store Keeper" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "David", LastName = "Campbell", ID = 28, Salary = 450000, ReportsTo = 7, Title = "Store Keeper" });
 
         //Production
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Jillian", LastName = "Carson", ID = 29, Salary = 600000, ReportsTo = 8, Title = "Production Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Shu", LastName = "Ito", ID = 30, Salary = 550000, ReportsTo = 8, Title = "Production Engineer" });
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Stephen", LastName = "Jiang", ID = 31, Salary = 450000, ReportsTo = 8, Title = "Production Engineer" });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Stephen", LastName = "Jingo", ID = 31, Salary = 450000, ReportsTo = 8, Title = "Production Engineer" });
 
         return employeeDetails;
     }
