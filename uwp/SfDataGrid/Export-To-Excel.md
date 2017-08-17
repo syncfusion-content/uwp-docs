@@ -348,17 +348,17 @@ var storageFile = await savePicker.PickSaveFileAsync();
 if (storageFile != null)
     await workBook.SaveAsAsync(storageFile);
 
-var msgDialog = new MessageDialog("Do you want to view the Document?", "File has been created successfully.");
+var messageDialog = new MessageDialog("Do you want to view the Document?", "File has been created successfully.");
 
 var yesCmd = new UICommand("Yes");
 
 var noCmd = new UICommand("No");
 
-msgDialog.Commands.Add(yesCmd);
+messageDialog.Commands.Add(yesCmd);
 
-msgDialog.Commands.Add(noCmd);
+messageDialog.Commands.Add(noCmd);
 
-var cmd = await msgDialog.ShowAsync();
+var cmd = await messageDialog.ShowAsync();
 
 if (cmd == yesCmd)
 {

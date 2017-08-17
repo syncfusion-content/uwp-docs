@@ -555,10 +555,10 @@ public class CustomCopyPaste : GridCutCopyPaste
                 {
                     var record = copiedRecord[i];
 
-                    string[] recc = Regex.Split(record, @"\t");
+                    string[] recd = Regex.Split(record, @"\t");
 
                     //Adds the new record by using PasteToCell method by passing the created data, particular column, and clipboard value
-                    this.PasteToCell(entity, this.dataGrid.Columns[j], recc[j]);
+                    this.PasteToCell(entity, this.dataGrid.Columns[j], recd[j]);
                 }
 
                 //Adds the pasted record in collection

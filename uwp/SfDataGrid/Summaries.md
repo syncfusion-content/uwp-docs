@@ -721,7 +721,7 @@ public static class LinqExtensions
 {
     public static double StdDev<T>(this IEnumerable<T> values, Func<T, double?> selector)
     {
-        double ret = 0;
+        double rect = 0;
         var count = values.Count();
         if (count > 0)
         {
@@ -734,9 +734,9 @@ public static class LinqExtensions
                 }
                 return 0.0;
             });
-            ret = Math.Sqrt((sum) / (count - 1));
+            rect = Math.Sqrt((sum) / (count - 1));
         }
-        return ret;
+        return rect;
     }
 }
 {% endhighlight %}
