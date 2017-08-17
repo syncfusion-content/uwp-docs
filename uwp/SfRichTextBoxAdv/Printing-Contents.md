@@ -20,7 +20,7 @@ PrintDocument printDocument = new PrintDocument();
 IPrintDocumentSource printDocumentSource;
 
 // Registers for Printing
-void RegisterForPrintng()
+void RegisterForPrinting()
 {
     // Hooks print task requested event handler.
     PrintManager printManager = PrintManager.GetForCurrentView();
