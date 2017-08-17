@@ -183,7 +183,7 @@ The formats of a cell value can be changed by using `Format` property. SfCellGri
 {% tabs %}
 {% highlight c# %}
 
-//To apply LongDate pattern to the cellvalue,
+//To apply LongDate pattern to the cell value,
 
 cellGrid.Model[2, 2].CellValue = "234234";
 cellGrid.Model[2, 2].Format = "D";
