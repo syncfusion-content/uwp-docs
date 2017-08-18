@@ -17,14 +17,14 @@ The user is allowed to set custom magnification factor between 100 and 300 to ma
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Sets magnification value to 140%.
 pdfViewer.ZoomTo(140);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Sets magnification value to 140%.
 pdfViewer.ZoomTo(140)
 {% endhighlight %}
@@ -36,14 +36,14 @@ The following code illustrates accessing zoom factor in which the document is di
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Gets the current zoom value of PDF Viewer
 int zoom = pdfViewer.Zoom;
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Gets the current zoom value of PDF Viewer
 Dim zoom As Integer = pdfViewer.Zoom
 {% endhighlight %}
@@ -61,14 +61,14 @@ The below code explains how to set the view mode to FitWidth.
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 // Sets the PDF Page View Mode to Fit Width. 
 pdfViewer.ViewMode = PageViewMode.FitWidth;
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Sets the PDF Page View Mode to Fit Width. 
 pdfViewer.ViewMode = PageViewMode.FitWidth
 {% endhighlight %}
@@ -78,14 +78,14 @@ The below code explains how to set the view mode to Normal.
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 // Sets the PDF Page View Mode to Normal. 
 pdfViewer.ViewMode = PageViewMode.Normal;
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Sets the PDF Page View Mode to Normal. 
 pdfViewer.ViewMode = PageViewMode.Normal
 {% endhighlight %}
@@ -93,14 +93,14 @@ pdfViewer.ViewMode = PageViewMode.Normal
 The below code explains how to set the view mode to OnePage.
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 // Sets the PDF Page View Mode to Single Page View.
 pdfViewer.ViewMode = PageViewMode.OnePage;
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Sets the PDF Page View Mode to Single Page View.
 pdfViewer.ViewMode = PageViewMode.OnePage
 {% endhighlight %}
