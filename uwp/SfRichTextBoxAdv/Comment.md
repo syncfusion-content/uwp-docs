@@ -66,7 +66,7 @@ private void RichTextBoxAdv_CommentAdding(object obj, CommentAddingEventArgs arg
     {
         //Defines the author and initial for the comment.
         args.Comment.Author = "Peter";
-        args.Comment.Initial = "Franken";
+        args.Comment.Initial = "Frank";
     }
 
     // Defines the background brush for the comment.

@@ -58,12 +58,12 @@ You can replace a single occurrence or all occurrences of a particular text or p
 The following code example demonstrates how to replace a single occurrence of a text with another text in SfRichTextBoxAdv.
 {% tabs %}
 {% highlight c# %}
-// Finds the text "colour" that matches whole word in the document.
-TextSearchResult textSearchResult = richTextBoxAdv.Find("colour", FindOptions.WholeWord);
+// Finds the text "flat" that matches whole word in the document.
+TextSearchResult textSearchResult = richTextBoxAdv.Find("flat", FindOptions.WholeWord);
 
-// If any text search result found, replace it with the text "color".
+// If any text search result found, replace it with the text "apartment".
 if (textSearchResult != null)
-    textSearchResult.Replace("color");
+    textSearchResult.Replace("apartment");
 
 
 {% endhighlight %}
@@ -73,12 +73,12 @@ if (textSearchResult != null)
 The following code example demonstrates how to replace all occurrences of a particular text with another text in SfRichTextBoxAdv.
 {% tabs %}
 {% highlight c# %}
-// Finds the text "analyse" that matches whole word in the document.
-TextSearchResults textSearchResults = richTextBoxAdv.FindAll("analyse", FindOptions.WholeWord);
+// Finds the text "lift" that matches whole word in the document.
+TextSearchResults textSearchResults = richTextBoxAdv.FindAll("lift", FindOptions.WholeWord);
 
-// If any text search results found, replace all occurrences with the text "analyze".
+// If any text search results found, replace all occurrences with the text "elevator".
 if(textSearchResults != null)
-    textSearchResults.ReplaceAll("analyze");
+    textSearchResults.ReplaceAll("elevator");
 
 
 {% endhighlight %}
