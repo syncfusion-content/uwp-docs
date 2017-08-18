@@ -84,24 +84,24 @@ public class CalendarCellRenderer : GridVirtualizingCellRenderer<TextBlock, SfCa
     //Returns the formatted text of the cell,
     public override string GetFormattedText(GridStyleInfo style)
     {
-        DateTime datevalue;
+        DateTime dateValue;
 
         if (style.CellValue == null || style.CellValue.ToString() == string.Empty)
             return string.Empty;
 
-        DateTime.TryParse(style.CellValue.ToString(), out datevalue);
+        DateTime.TryParse(style.CellValue.ToString(), out dateValue);
 
-        if (datevalue < DateTime.MinValue)
-            datevalue = DateTime.MinValue;
-        if (datevalue > DateTime.MaxValue)
-            datevalue = DateTime.MaxValue;
+        if (dateValue < DateTime.MinValue)
+            dateValue = DateTime.MinValue;
+        if (dateValue > DateTime.MaxValue)
+            dateValue = DateTime.MaxValue;
 
-        double doublevalue;
-        if (DateTime.TryParse(datevalue.ToString(), out datevalue))
-            return datevalue.ToString("d");
-        else if (double.TryParse(datevalue.ToString(), out doublevalue))
-            return doublevalue.ToString(style.Format);
-        return datevalue.ToString();
+        double doubleValue;
+        if (DateTime.TryParse(dateValue.ToString(), out dateValue))
+            return dateValue.ToString("d");
+        else if (double.TryParse(dateValue.ToString(), out doubleValue))
+            return doubleValue.ToString(style.Format);
+        return dateValue.ToString();
     }
     
     //Creates a UIElement for the edit mode of the cell.
@@ -139,7 +139,7 @@ public class CalendarCellRenderer : GridVirtualizingCellRenderer<TextBlock, SfCa
            
     }
     
-    //Unwires the events associated with edit UI Element,
+    //Unwire the events associated with edit UI Element,
     protected override void OnUnwireEditUIElement(SfCalendar uiElement)
     {
        uiElement.SelectionChanged -= UiElement_SelectionChanged;
@@ -233,13 +233,13 @@ public MainPage()
   this.InitializeComponent();
   
   //Remove the default renderer
-  cellgrid.CellRenderers.Remove("ComboBox");
+  cellGrid.CellRenderers.Remove("ComboBox");
 
   //Add the customized renderer
   var renderer = new CustomComboRenderer();
   cellGrid.CellRenderers.Add("ComboCell", renderer);
   
-  cellgrid.EditTrigger = EditTrigger.OnTap;
+  cellGrid.EditTrigger = EditTrigger.OnTap;
   cellGrid.Model.QueryCellInfo += Model_QueryCellInfo;
 }
 

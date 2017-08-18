@@ -159,14 +159,14 @@ cellGrid.ColumnWidths.LineHiddenChanged += ColumnWidths_LineHiddenChanged;
 
 private void RowHeights_LineHiddenChanged(object sender, HiddenRangeChangedEventArgs e)
 {
-    var startrow = e.From;
-    var endrow = e.To;           
+    var startRow = e.From;
+    var endRow = e.To;           
 }
 
 private void ColumnWidths_LineHiddenChanged(object sender, HiddenRangeChangedEventArgs e)
 {           
-    var startcolumn = e.From;
-    var endcolumn = e.To;         
+    var startColumn = e.From;
+    var endColumn = e.To;         
 }
 
 {% endhighlight %}
@@ -211,14 +211,14 @@ cellGrid.ColumnWidths.LineSizeChanged += ColumnWidths_LineSizeChanged;
 
 private void RowHeights_LineSizeChanged(object sender, RangeChangedEventArgs e)
 {         
-    var oldsize = e.OldSize;
-    var newsize = e.NewSize;      
+    var oldSize = e.OldSize;
+    var newSize = e.NewSize;      
 }
 
 private void ColumnWidths_LineSizeChanged(object sender, RangeChangedEventArgs e)
 {
-    var oldsize = e.OldSize;
-    var newsize = e.NewSize;
+    var oldSize = e.OldSize;
+    var newSize = e.NewSize;
 }
 
 //Invoking the default RowHeight/ColumnWidth changed events,
@@ -228,14 +228,14 @@ cellGrid.ColumnWidths.DefaultLineSizeChanged += ColumnWidths_DefaultLineSizeChan
 
 private void RowHeights_DefaultLineSizeChanged(object sender, DefaultLineSizeChangedEventArgs e)
 {
-    var oldsize = e.OldSize;
-    var newsize = e.NewSize;       
+    var oldSize = e.OldSize;
+    var newSize = e.NewSize;       
 }
 
 private void ColumnWidths_DefaultLineSizeChanged(object sender, DefaultLineSizeChangedEventArgs e)
 {
-    var oldsize = e.OldSize;
-    var newsize = e.NewSize;
+    var oldSize = e.OldSize;
+    var newSize = e.NewSize;
 }
 
 {% endhighlight %}
@@ -339,7 +339,7 @@ private void CellGrid_ResizingRows(object sender, ResizingRowsEventArgs e)
 
 private void CellGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {
-    var colindex = e.ColumnIndex;
+    var colIndex = e.ColumnIndex;
     var height = e.Width;
     e.Cancel = true;
 }

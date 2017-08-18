@@ -18,10 +18,10 @@ BaseStyles is one of the parent-type style which is used to customize the cellâ€
 {% tabs %}
 {% highlight c# %}
 
-GridStyleInfo basestyle = cellGrid.Model.BaseStylesMap["custom"].StyleInfo;
-basestyle.Background = new SolidColorBrush(Colors.Green);
-basestyle.Foreground = new SolidColorBrush(Colors.Red);
-basestyle.Font.FontStyle = FontStyle.Italic;
+GridStyleInfo baseStyle = cellGrid.Model.BaseStylesMap["custom"].StyleInfo;
+baseStyle.Background = new SolidColorBrush(Colors.Green);
+baseStyle.Foreground = new SolidColorBrush(Colors.Red);
+baseStyle.Font.FontStyle = FontStyle.Italic;
 
 cellGrid.Model[5,3].BaseStyle = "custom";
             
@@ -36,19 +36,19 @@ cellGrid.Model[5,3].BaseStyle = "custom";
 {% highlight c# %}
 
  //BaseStyle 1
-GridStyleInfo basestyle = cellGrid.Model.BaseStylesMap["custom"].StyleInfo;
-basestyle.Background = new SolidColorBrush(Colors.Green);
-basestyle.Foreground = new SolidColorBrush(Colors.Red);
-basestyle.CellValue = "BaseStyle1";
-basestyle.Font.FontStyle = FontStyle.Italic;
+GridStyleInfo baseStyle = cellGrid.Model.BaseStylesMap["custom"].StyleInfo;
+baseStyle.Background = new SolidColorBrush(Colors.Green);
+baseStyle.Foreground = new SolidColorBrush(Colors.Red);
+baseStyle.CellValue = "BaseStyle1";
+baseStyle.Font.FontStyle = FontStyle.Italic;
 
 //BaseStyle 2
-GridStyleInfo basestyle1 = cellGrid.Model.BaseStylesMap["custom1"].StyleInfo;
-basestyle1.Background = new SolidColorBrush(Colors.Orange);
-basestyle1.Foreground = new SolidColorBrush(Colors.Magenta);
-basestyle1.Font.FontSize = 12;
-basestyle1.CellValue = "BaseStyle2";
-basestyle1.Font.FontWeight = FontWeights.ExtraBold;
+GridStyleInfo baseStyle1 = cellGrid.Model.BaseStylesMap["custom1"].StyleInfo;
+baseStyle1.Background = new SolidColorBrush(Colors.Orange);
+baseStyle1.Foreground = new SolidColorBrush(Colors.Magenta);
+baseStyle1.Font.FontSize = 12;
+baseStyle1.CellValue = "BaseStyle2";
+baseStyle1.Font.FontWeight = FontWeights.ExtraBold;
 
 this.cellGrid.Model.QueryBaseStyles += Model_QueryBaseStyles
 

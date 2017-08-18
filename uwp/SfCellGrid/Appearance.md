@@ -269,10 +269,10 @@ To set the conditional format information of cell, `ConditionalFormats` property
 {% highlight c# %}
    
 //To set conditional format for cell (5,5)
-var conditionalformat = new GridConditionalFormat(GridConditionalFormatType.NoBlank);
-conditionalformat.Style.Background = new SolidColorBrush(Colors.Olive);
+var conditionalFormat = new GridConditionalFormat(GridConditionalFormatType.NoBlank);
+conditionalFormat.Style.Background = new SolidColorBrush(Colors.Olive);
 cellGrid.Model[5, 5].ConditionalFormats = new GridConditionalFormats();
-cellGrid.Model[5, 5].ConditionalFormats.Add(conditionalformat);
+cellGrid.Model[5, 5].ConditionalFormats.Add(conditionalFormat);
 
 //To reset the conditional format for cell(5,5)
 cellGrid.Model[5, 5].ResetConditionalFormats();

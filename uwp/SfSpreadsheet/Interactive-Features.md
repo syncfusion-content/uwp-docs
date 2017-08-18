@@ -207,7 +207,7 @@ void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEven
     //Adding Customized Menu item
         
     MenuItem PasteSpecial = new MenuItem();
-    PasteSpecial.Header = "Pastespecial";
+    PasteSpecial.Header = "PasteSpecial";
     Image paste = new Image() { Source = new BitmapImage(new Uri(@"..\..\Icon\paste.png", UriKind.Relative)) };
     PasteSpecial.Icon = paste;
     spreadsheet.ActiveGrid.CellContextMenu.Items.Add(PasteSpecial);

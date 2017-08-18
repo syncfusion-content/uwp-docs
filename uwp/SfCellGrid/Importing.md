@@ -84,8 +84,8 @@ var assembly = typeof(MainPage).GetTypeInfo().Assembly;
 string resourcePath = "SampleApp.Assets.Book1.xlsx";
 var fileStream = assembly.GetManifestResourceStream(resourcePath);
 ExcelEngine engine = new ExcelEngine();
-var wb = engine.Excel.Application.Workbooks.OpenAsync(fileStream);
-cellGrid.ImportFromExcel((wb as IWorkbook).ActiveSheet);	
+var workbook = engine.Excel.Application.Workbooks.OpenAsync(fileStream);
+cellGrid.ImportFromExcel((workbook as IWorkbook).ActiveSheet);	
 
 //Import using Worksheet from XlsIO with importing option,
 var assembly = typeof(MainPage).GetTypeInfo().Assembly;
@@ -94,8 +94,8 @@ ExcelImportingOptions option = new ExcelImportingOptions();
 option.ImportMode = ImportMode.Style;
 var fileStream = assembly.GetManifestResourceStream(resourcePath);
 ExcelEngine engine = new ExcelEngine();
-var wb = engine.Excel.Application.Workbooks.OpenAsync(fileStream);
-cellGrid.ImportFromExcel((wb as IWorkbook).ActiveSheet,option);
+var workbook = engine.Excel.Application.Workbooks.OpenAsync(fileStream);
+cellGrid.ImportFromExcel((workbook as IWorkbook).ActiveSheet,option);
 
 {% endhighlight %}
 {% endtabs %}
@@ -108,27 +108,27 @@ SfCellGrid provides support to import the data from Excel using `ImportFromExcel
 {% highlight c# %}
 
 //Import using Storage File,
-FileOpenPicker filepicker = new FileOpenPicker();
-filepicker.ViewMode = PickerViewMode.List;
-filepicker.SuggestedStartLocation = PickerLocationId.Desktop;
-filepicker.FileTypeFilter.Add(".xls");
-filepicker.FileTypeFilter.Add(".xlsx");
+FileOpenPicker filePicker = new FileOpenPicker();
+filePicker.ViewMode = PickerViewMode.List;
+filePicker.SuggestedStartLocation = PickerLocationId.Desktop;
+filePicker.FileTypeFilter.Add(".xls");
+filePicker.FileTypeFilter.Add(".xlsx");
 
-StorageFile file = await filepicker.PickSingleFileAsync();
+StorageFile file = await filePicker.PickSingleFileAsync();
 cellGrid.ImportFromExcel(file);
 
 //Import using Storage File along with importing option,
-FileOpenPicker filepicker = new FileOpenPicker();
-filepicker.ViewMode = PickerViewMode.List;
-filepicker.SuggestedStartLocation = PickerLocationId.Desktop;
-filepicker.FileTypeFilter.Add(".xls");
-filepicker.FileTypeFilter.Add(".xlsx");
+FileOpenPicker filePicker = new FileOpenPicker();
+filePicker.ViewMode = PickerViewMode.List;
+filePicker.SuggestedStartLocation = PickerLocationId.Desktop;
+filePicker.FileTypeFilter.Add(".xls");
+filePicker.FileTypeFilter.Add(".xlsx");
 
 //Setting the Excel importing option,
 ExcelImportingOptions option = new ExcelImportingOptions();
 option.ImportMode = ImportMode.Value;
 
-StorageFile file = await filepicker.PickSingleFileAsync();
+StorageFile file = await filePicker.PickSingleFileAsync();
 cellGrid.ImportFromExcel(file, option);
 
 {% endhighlight %}
