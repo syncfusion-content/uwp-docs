@@ -257,7 +257,7 @@ cellGrid.InvalidateVisual();
 cellGrid.ScrollColumns.ScrollToNextPage();
 cellGrid.InvalidateVisual();
  
-//Scrolls to the previous page in the colunn(moves to left),
+//Scrolls to the previous page in the column(moves to left),
 cellGrid.ScrollColumns.ScrollToPreviousPage();
 cellGrid.InvalidateVisual();
 
@@ -279,8 +279,8 @@ Syntax: PointToCellRowColumnIndex (Point p);
 {% tabs %}
 {% highlight c# %}
 
-Point pos =  Mouse.GetPosition(grid);
-RowColumnIndex cell = grid.PointToCellRowColumnIndex(pos);
+Point position =  Mouse.GetPosition(grid);
+RowColumnIndex cell = grid.PointToCellRowColumnIndex(position);
 
 {% endhighlight %}
 {% endtabs %}
@@ -294,8 +294,8 @@ Syntax: PointToCellRowColumnIndexOutsideCells(Point p, bool allowOutsideLines)
 {% tabs %}
 {% highlight c# %}
 
-Point pos =  Mouse.GetPosition(grid);
-RowColumnIndex cell = cellgrid.PointToCellRowColumnIndexOutsideCells(pos, false);
+Point position =  Mouse.GetPosition(grid);
+RowColumnIndex cell = cellGrid.PointToCellRowColumnIndexOutsideCells(position, false);
 
 {% endhighlight %}
 {% endtabs %}

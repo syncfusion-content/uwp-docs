@@ -88,11 +88,11 @@ SfCellGrid is available in the following namespace “__Syncfusion__.__UI__.__Xa
 	
 	xmlns:local="using:CellGridDemo"
 	
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:cm="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	
 	xmlns:syncfusion="using:Syncfusion.UI.Xaml.CellGrid"
 	
-	mc:Ignorable="d">
+	cm:Ignorable="d">
 	
 	<syncfusion:SfCellGrid x:Name="CellGrid" />
 	
@@ -136,11 +136,11 @@ To generate rows and columns in SfCellGrid, user need to specify the **RowCount*
 	
 	xmlns:local="using:CellGridDemo"
 	
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:cm="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	
 	xmlns:syncfusion="using:Syncfusion.UI.Xaml.CellGrid"
 	
-	mc:Ignorable="d">
+	cm:Ignorable="d">
 	
 	<syncfusion:SfCellGrid x:Name="CellGrid" RowCount="100" ColumnCount="100" />
 	

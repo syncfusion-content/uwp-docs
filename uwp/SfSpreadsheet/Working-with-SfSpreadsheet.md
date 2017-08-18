@@ -176,13 +176,13 @@ SfSpreadsheet allows you to access the value of a cell by using [Value](http://h
 {% tabs %}
 {% highlight c# %}
 
-// Access a cellvalue by using "Value" Property,
+// Access a cell value by using "Value" Property,
 
-var cellvalue = spreadsheet.Workbook.Worksheets[1].Range["A3"].Value
+var cellValue = spreadsheet.Workbook.Worksheets[1].Range["A3"].Value
 
-// Access a cellvalue by using "DisplayText" Property. 
+// Access a cell value by using "DisplayText" Property. 
 
-var displayvalue = spreadsheet.Workbook.Worksheets[1].Range[4, 1].DisplayText;
+var displayValue = spreadsheet.Workbook.Worksheets[1].Range[4, 1].DisplayText;
 
 {% endhighlight %}
 {% endtabs %}
@@ -196,7 +196,7 @@ In SfSpreadsheet, to update the cell value and formula programmatically, `SetCel
 
 var range = spreadsheet.ActiveSheet.Range[2,2];
 
-spreadsheet.ActiveGrid.SetCellValue(range, "cellvalue");
+spreadsheet.ActiveGrid.SetCellValue(range, "cellValue");
 
 spreadsheet.ActiveGrid.InvalidateCell(2,2);
 
@@ -295,11 +295,11 @@ spreadsheet.FormulaBarVisibility =  Windows.UI.Xaml.Visibility.Collapsed;
 {% tabs %}
 {% highlight c# %}
 
-var wb = spreadsheet.Workbook as WorkbookImpl;
+var workbook = spreadsheet.Workbook as WorkbookImpl;
 
 var binding = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic;
 
-var value = typeof(WorkbookImpl).GetProperty("IsCellModified", binding).GetValue(wb);
+var value = typeof(WorkbookImpl).GetProperty("IsCellModified", binding).GetValue(workbook);
 
 {% endhighlight %}
 {% endtabs %}
