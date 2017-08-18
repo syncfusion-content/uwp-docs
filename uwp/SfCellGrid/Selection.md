@@ -42,7 +42,7 @@ SfCellGrid allows the user to access the selected ranges list using the `Selecte
 {% tabs %}
 {% highlight c# %}
 
-var rangelist = cellGrid.SelectedRanges;
+var rangeList = cellGrid.SelectedRanges;
 
 {% endhighlight %}
 {% endtabs %}

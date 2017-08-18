@@ -281,7 +281,7 @@ cellGrid.CellTooltipOpening += CellGrid_CellTooltipOpening;
 
 private void CellGrid_CellTooltipOpening(object sender, CellTooltipOpeningEventArgs e)
 {
-    var cellindex = e.Cell;
+    var cellIndex = e.Cell;
     var text = e.Tooltip;
     e.Cancel = true;
 }
@@ -430,7 +430,7 @@ cellGrid.CellCommentOpening += CellGrid_CellCommentOpening;
 
 private void CellGrid_CellCommentOpening(object sender, CellCommentOpeningEventArgs e)
 {
-    var cellindex = e.Cell;
+    var cellIndex = e.Cell;
     var text = e.Comment;
     var color = e.CommentBrush;
     e.Cancel = true;
@@ -454,15 +454,15 @@ public ContextMenu menu()
 {
     var menu = new ContextMenu();
            
-    var Insertrow = new MenuFlyoutItem() { Text = "InsertRow", Height = 50 };
-    Insertrow.BorderThickness = new Thickness(0);
-    Insertrow.Click += Insertrow_Click;
-    menu.Items.Add(Insertrow);
+    var insertRow = new MenuFlyoutItem() { Text = "InsertRow", Height = 50 };
+    insertRow.BorderThickness = new Thickness(0);
+    insertRow.Click += insertRow_Click;
+    menu.Items.Add(insertRow);
 
-    var Deleterow = new MenuFlyoutItem() { Text = "DeleteRow", Height = 50 };
-    Deleterow.BorderThickness = new Thickness(0);
-    Deleterow.Click += Deleterow_Click;
-    menu.Items.Add(Deleterow);
+    var deleteRow = new MenuFlyoutItem() { Text = "DeleteRow", Height = 50 };
+    deleteRow.BorderThickness = new Thickness(0);
+    deleteRow.Click += deleteRow_Click;
+    menu.Items.Add(deleteRow);
     return menu;         
 }
 {% endhighlight %}
@@ -500,7 +500,7 @@ cellGrid.CellContextMenuOpening += CellGrid_CellContextMenuOpening;
 
 private void CellGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEventArgs e)
 {
-    var cellindex = e.Cell;
+    var cellIndex = e.Cell;
     
     //To remove the context menu 
     e.CellContextMenu.Items.RemoveAt(0);
