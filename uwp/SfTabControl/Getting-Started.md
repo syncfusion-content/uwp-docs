@@ -144,23 +144,23 @@ public class TabControlViewModel : NotificationObject
 			
             TabControlItems.Add(new Person("Niko", "Assets/5.jpg"));
 			
-            TabControlItems.Add(new Person("Eric", "Assets/Emp_02.png"));
+            TabControlItems.Add(new Person("Eric", "Assets/Employee2.png"));
 			
-            TabControlItems.Add(new Person("Paul", "Assets/Emp_04.png"));
+            TabControlItems.Add(new Person("Paul", "Assets/Employee4.png"));
 			
-            TabControlItems.Add(new Person("Clara", "Assets/Emp_06.png"));
+            TabControlItems.Add(new Person("Clara", "Assets/Employee6.png"));
 			
-            TabControlItems.Add(new Person("Maria", "Assets/Emp_11.png"));
+            TabControlItems.Add(new Person("Maria", "Assets/Employee11.png"));
 			
-            TabControlItems.Add(new Person("Mark", "Assets/Emp_13.png"));
+            TabControlItems.Add(new Person("Mark", "Assets/Employee13.png"));
 			
-            TabControlItems.Add(new Person("Robin", "Assets/Emp_16.png"));
+            TabControlItems.Add(new Person("Robin", "Assets/Employee16.png"));
 			
-            TabControlItems.Add(new Person("Chris", "Assets/Emp_21.png"));
+            TabControlItems.Add(new Person("Chris", "Assets/Employee21.png"));
 			
-            TabControlItems.Add(new Person("Seria", "Assets/Emp_23.png"));
+            TabControlItems.Add(new Person("James", "Assets/Employee23.png"));
 			
-            TabControlItems.Add(new Person("Mathew", "Assets/Emp_25.png"));
+            TabControlItems.Add(new Person("Mathew", "Assets/Employee25.png"));
 			
         }
 
@@ -201,23 +201,23 @@ Public Class TabControlViewModel
 
 			TabControlItems.Add(New Person("Niko", "Assets/5.jpg"))
 
-			TabControlItems.Add(New Person("Eric", "Assets/Emp_02.png"))
+			TabControlItems.Add(New Person("Eric", "Assets/Employee2.png"))
 
-			TabControlItems.Add(New Person("Paul", "Assets/Emp_04.png"))
+			TabControlItems.Add(New Person("Paul", "Assets/Employee4.png"))
 
-			TabControlItems.Add(New Person("Clara", "Assets/Emp_06.png"))
+			TabControlItems.Add(New Person("Clara", "Assets/Employee6.png"))
 
-			TabControlItems.Add(New Person("Maria", "Assets/Emp_11.png"))
+			TabControlItems.Add(New Person("Maria", "Assets/Employee11.png"))
 
-			TabControlItems.Add(New Person("Mark", "Assets/Emp_13.png"))
+			TabControlItems.Add(New Person("Mark", "Assets/Employee13.png"))
 
-			TabControlItems.Add(New Person("Robin", "Assets/Emp_16.png"))
+			TabControlItems.Add(New Person("Robin", "Assets/Employee16.png"))
 
-			TabControlItems.Add(New Person("Chris", "Assets/Emp_21.png"))
+			TabControlItems.Add(New Person("Chris", "Assets/Employee21.png"))
 
-			TabControlItems.Add(New Person("Seria", "Assets/Emp_23.png"))
+			TabControlItems.Add(New Person("James", "Assets/Employee23.png"))
 
-			TabControlItems.Add(New Person("Mathew", "Assets/Emp_25.png"))
+			TabControlItems.Add(New Person("Mathew", "Assets/Employee25.png"))
 
 		End Sub
 
@@ -290,22 +290,7 @@ Set the property `TabScrollButtonVisibility` property to Visible for enabling th
 
 <Run FontSize="18">
 
-Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta, massa ligula magna enim, aliquam orci vestibulum tempus. Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet. Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et. Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.
-
-</Run>
-
-</Paragraph>
-
-</RichTextBlock>
-
-<RichTextBlock Grid.ColumnSpan="2"
-               Grid.Row="1" Margin="10">
-			   
-<Paragraph>
-
-<Run FontSize="18">
-
-Vestibulum duis integer diam mi libero felis, sollicitudin id dictum etiam blandit lacus, ac condimentum magna dictumst interdum et, nam commodo mi habitasse enim fringilla nunc, amet aliquam sapien per tortor luctus. Conubia voluptates at nunc, congue lectus, malesuada nulla. Rutrum quo morbi, feugiat sed mi turpis, ac cursus integer ornare dolor. Purus dui in et tincidunt, sed eros pede adipiscing tellus, est suscipit nulla, arcu nec fringilla vel aliquam, mollis lorem rerum hac vestibulum ante nullam. Volutpat a lectus, lorem pulvinar quis. Lobortis vehicula in imperdiet orci urna.
+    TabItem contain the details of Employee in TabControl.
 
 </Run>
 

@@ -81,19 +81,19 @@ public class Person
         public string Email { get; set; }
         public string TileColor { get; set; }
         public string HeaderColor { get; set; }
-        public Person(string name, string image, double seconds, string position, string organizationunit, string dateofbirth, string location, string phone, string email, string color, string headercolor)
+        public Person(string name, string image, double seconds, string position, string organizationUnit, string dateOfBirth, string location, string phone, string email, string color, string headerColor)
         {
             Name = name;
             Image = image;
             Interval = TimeSpan.FromSeconds(seconds);
             Position = position;
-            OrganizationUnit = organizationunit;
-            DateOfBirth = dateofbirth;
+            OrganizationUnit = organizationUnit;
+            DateOfBirth = dateOfBirth;
             Location = location;
             Phone = phone;
             Email = email;
             TileColor = color;
-            HeaderColor = headercolor;
+            HeaderColor = headerColor;
         }
     }    
 
@@ -114,18 +114,18 @@ Public Class Person
 		Public Property Email() As String
 		Public Property TileColor() As String
 		Public Property HeaderColor() As String
-		Public Sub New(ByVal name As String, ByVal image As String, ByVal seconds As Double, ByVal position As String, ByVal organizationunit As String, ByVal dateofbirth As String, ByVal location As String, ByVal phone As String, ByVal email As String, ByVal color As String, ByVal headercolor As String)
+		Public Sub New(ByVal name As String, ByVal image As String, ByVal seconds As Double, ByVal position As String, ByVal organizationUnit As String, ByVal dateOfBirth As String, ByVal location As String, ByVal phone As String, ByVal email As String, ByVal color As String, ByVal headerColor As String)
 			Me.Name = name
 			Me.Image = image
 			Interval = TimeSpan.FromSeconds(seconds)
 			Me.Position = position
-			Me.OrganizationUnit = organizationunit
-			Me.DateOfBirth = dateofbirth
+			Me.OrganizationUnit = organizationUnit
+			Me.DateOfBirth = dateOfBirth
 			Me.Location = location
 			Me.Phone = phone
 			Me.Email = email
 			TileColor = color
-			Me.HeaderColor = headercolor
+			Me.HeaderColor = headerColor
 		End Sub
 End Class
 
@@ -142,13 +142,13 @@ End Class
 public class TileViewModel: NotificationObject
 
     {
-        private Random rndm;
+        private Random random;
 		
         private double GetInterval()
 		
         {
 			
-            return rndm.Next(18, 25);
+            return random.Next(18, 25);
 			
         }
 		
@@ -156,27 +156,27 @@ public class TileViewModel: NotificationObject
 		
         {
 			
-            rndm = new Random();
+            random = new Random();
 			
             TileViewItems = new ObservableCollection<Person>();
 			
-            TileViewItems.Add(new Person("Eric Joplin", "Assets/Emp_02.png", GetInterval(), "Chairman", "Management", "27/09/1973", "Boston", "+800 9899 9929", "ericjoplin@syncfusion.com", "#FFA400", "#E78E00"));
+            TileViewItems.Add(new Person("Eric Joplin", "Assets/Employee2.png", GetInterval(), "Chairman", "Management", "27/09/1973", "Boston", "+800 9899 9929", "EricJoplin@syncfusion.com", "#FFA400", "#E78E00"));
 			
-            TileViewItems.Add(new Person("Paul Vent", "Assets/Emp_04.png", GetInterval(), "Chief Executive Officer", "Management", "27/09/1975", "New York", "+800 9899 9930", "paulvent@syncfusion.com", "#6DA4A3", "#4E7F7D"));
+            TileViewItems.Add(new Person("Paul Vent", "Assets/Employee4.png", GetInterval(), "Chief Executive Officer", "Management", "27/09/1975", "New York", "+800 9899 9930", "PaulVent@syncfusion.com", "#6DA4A3", "#4E7F7D"));
 			
-            TileViewItems.Add(new Person("Clara Venus", "Assets/Emp_06.png", GetInterval(), "Chief Executive Assistant", "Management", "27/09/1978", "California", "+800 9899 9931", "claravenus@syncfusion.com", "#A45378", "#883F64"));
+            TileViewItems.Add(new Person("Clara Venus", "Assets/Employee6.png", GetInterval(), "Chief Executive Assistant", "Management", "27/09/1978", "California", "+800 9899 9931", "ClaraVenus@syncfusion.com", "#A45378", "#883F64"));
 			
-            TileViewItems.Add(new Person("Maria Even", "Assets/Emp_11.png", GetInterval(), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "mariaeven@syncfusion.com", "#DA9545", "#BB7731"));
+            TileViewItems.Add(new Person("Maria Even", "Assets/Employee11.png", GetInterval(), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "MariaEven@syncfusion.com", "#DA9545", "#BB7731"));
 			
-            TileViewItems.Add(new Person("Mark Zuen", "Assets/Emp_13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "markzuen@syncfusion.com", "#AC3832", "#8B2826"));
+            TileViewItems.Add(new Person("Mark Zuen", "Assets/Employee13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "MarkZuen@syncfusion.com", "#AC3832", "#8B2826"));
 			
-            TileViewItems.Add(new Person("Robin Rane", "Assets/Emp_16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "robinrane@syncfusion.com", "#31A1FF", "#2394E1"));
+            TileViewItems.Add(new Person("Robin Rane", "Assets/Employee16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "RobinRane@syncfusion.com", "#31A1FF", "#2394E1"));
 			
-            TileViewItems.Add(new Person("Chris Marker", "Assets/Emp_21.png", GetInterval(), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "chrismarker@syncfusion.com", "#5B5BA9", "#484892"));
+            TileViewItems.Add(new Person("Chris Marker", "Assets/Employee21.png", GetInterval(), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "ChrisMarker@syncfusion.com", "#5B5BA9", "#484892"));
 			
-            TileViewItems.Add(new Person("Seria Sum", "Assets/Emp_23.png", GetInterval(), "Coordinator", "Customer Service", "27/09/1961", "New York", "+800 9899 9936", "seriasum@syncfusion.com", "#597C2A", "#46601D"));
+            TileViewItems.Add(new Person("James Michael", "Assets/Employee23.png", GetInterval(), "Coordinator", "Customer Service", "27/09/1961", "New York", "+800 9899 9936", "JamesMichael@syncfusion.com", "#597C2A", "#46601D"));
 			
-            TileViewItems.Add(new Person("Mathew Fleming", "Assets/Emp_25.png", GetInterval(), "Recruitment Manager", "Human Resource", "27/09/1986", "Boston", "+800 9899 9937", "mathewfleming@syncfusion.com", "#BCCBD3", "#8BA0A9"));
+            TileViewItems.Add(new Person("Mathew Fleming", "Assets/Employee25.png", GetInterval(), "Recruitment Manager", "Human Resource", "27/09/1986", "Boston", "+800 9899 9937", "MathewFleming@syncfusion.com", "#BCCBD3", "#8BA0A9"));
 			
         }
 
@@ -202,39 +202,39 @@ Public Class TileViewModel
 
 	Inherits NotificationObject
 
-		Private rndm As Random
+		Private random As Random
 
 		Private Function GetInterval() As Double
 
 
-			Return rndm.Next(18, 25)
+			Return random.Next(18, 25)
 
 		End Function
 
 		Public Sub New()
 
 
-			rndm = New Random()
+			random = New Random()
 
 			TileViewItems = New ObservableCollection(Of Person)()
 
-			TileViewItems.Add(New Person("Eric Joplin", "Assets/Emp_02.png", GetInterval(), "Chairman", "Management", "27/09/1973", "Boston", "+800 9899 9929", "ericjoplin@syncfusion.com", "#FFA400", "#E78E00"))
+			TileViewItems.Add(New Person("Eric Joplin", "Assets/Employee2.png", GetInterval(), "Chairman", "Management", "27/09/1973", "Boston", "+800 9899 9929", "EricJoplin@syncfusion.com", "#FFA400", "#E78E00"))
 
-			TileViewItems.Add(New Person("Paul Vent", "Assets/Emp_04.png", GetInterval(), "Chief Executive Officer", "Management", "27/09/1975", "New York", "+800 9899 9930", "paulvent@syncfusion.com", "#6DA4A3", "#4E7F7D"))
+			TileViewItems.Add(New Person("Paul Vent", "Assets/Employee4.png", GetInterval(), "Chief Executive Officer", "Management", "27/09/1975", "New York", "+800 9899 9930", "PaulVent@syncfusion.com", "#6DA4A3", "#4E7F7D"))
 
-			TileViewItems.Add(New Person("Clara Venus", "Assets/Emp_06.png", GetInterval(), "Chief Executive Assistant", "Management", "27/09/1978", "California", "+800 9899 9931", "claravenus@syncfusion.com", "#A45378", "#883F64"))
+			TileViewItems.Add(New Person("Clara Venus", "Assets/Employee6.png", GetInterval(), "Chief Executive Assistant", "Management", "27/09/1978", "California", "+800 9899 9931", "ClaraVenus@syncfusion.com", "#A45378", "#883F64"))
 
-			TileViewItems.Add(New Person("Maria Even", "Assets/Emp_11.png", GetInterval(), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "mariaeven@syncfusion.com", "#DA9545", "#BB7731"))
+			TileViewItems.Add(New Person("Maria Even", "Assets/Employee11.png", GetInterval(), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "MariaEven@syncfusion.com", "#DA9545", "#BB7731"))
 
-			TileViewItems.Add(New Person("Mark Zuen", "Assets/Emp_13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "markzuen@syncfusion.com", "#AC3832", "#8B2826"))
+			TileViewItems.Add(New Person("Mark Zuen", "Assets/Employee13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "MarkZuen@syncfusion.com", "#AC3832", "#8B2826"))
 
-			TileViewItems.Add(New Person("Robin Rane", "Assets/Emp_16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "robinrane@syncfusion.com", "#31A1FF", "#2394E1"))
+			TileViewItems.Add(New Person("Robin Rane", "Assets/Employee16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "RobinRane@syncfusion.com", "#31A1FF", "#2394E1"))
 
-			TileViewItems.Add(New Person("Chris Marker", "Assets/Emp_21.png", GetInterval(), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "chrismarker@syncfusion.com", "#5B5BA9", "#484892"))
+			TileViewItems.Add(New Person("Chris Marker", "Assets/Employee21.png", GetInterval(), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "ChrisMarker@syncfusion.com", "#5B5BA9", "#484892"))
 
-			TileViewItems.Add(New Person("Seria Sum", "Assets/Emp_23.png", GetInterval(), "Coordinator", "Customer Service", "27/09/1961", "New York", "+800 9899 9936", "seriasum@syncfusion.com", "#597C2A", "#46601D"))
+			TileViewItems.Add(New Person("James Michael", "Assets/Employee23.png", GetInterval(), "Coordinator", "Customer Service", "27/09/1961", "New York", "+800 9899 9936", "JamesMichael@syncfusion.com", "#597C2A", "#46601D"))
 
-			TileViewItems.Add(New Person("Mathew Fleming", "Assets/Emp_25.png", GetInterval(), "Recruitment Manager", "Human Resource", "27/09/1986", "Boston", "+800 9899 9937", "mathewfleming@syncfusion.com", "#BCCBD3", "#8BA0A9"))
+			TileViewItems.Add(New Person("Mathew Fleming", "Assets/Employee25.png", GetInterval(), "Recruitment Manager", "Human Resource", "27/09/1986", "Boston", "+800 9899 9937", "MathewFleming@syncfusion.com", "#BCCBD3", "#8BA0A9"))
 
 		End Sub
 
@@ -367,11 +367,7 @@ Bind the view model collection to `ItemSource` property and design the templates
 <Paragraph LineHeight="30">
 
 <Run>
-Lorem ipsum dolor sit amet, lacus amet amet ultricies. Quisque mi venenatis morbi libero, orci dis, mi ut et class porta,
-massa ligula magna enim, aliquam orci vestibulum tempus.Turpis facilisis vitae consequat, cum a a, turpis dui consequat massa in dolor per, felis non amet.
-Auctor eleifend in omnis elit vestibulum, donec non elementum tellus est mauris, id aliquam, at lacus, arcu pretium proin lacus dolor et.
-Eu tortor, vel ultrices amet dignissim mauris vehicula. Lorem tortor neque, purus taciti quis id. Elementum integer orci accumsan minim phasellus vel.
-Vestibulum duis integer diam mi libero felis,  amet aliquam sapien per tortor luctus.
+  TileViewItem contains the details about the Employee like Name, DateOfBirth, Phone Number, Email, Organization details etc.
 </Run>
 
 </Paragraph>
