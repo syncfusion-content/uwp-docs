@@ -31,7 +31,7 @@ SelectedItem property is used to select an item using its instance.
 
 <navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent"/>
 
-<navigation:SfTabItem x:Name="niko" Header="Niko" Content="Description about Niko"/>
+<navigation:SfTabItem x:Name="Niko" Header="Niko" Content="Description about Niko"/>
 
 <navigation:SfTabItem Header="James" Content="Description about James"/>
 
@@ -47,13 +47,13 @@ SelectedItem property is used to select an item using its instance.
 
 {% highlight C# %}
 
-tabControl.SelectedItem = niko;
+tabControl.SelectedItem = Niko;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-tabControl.SelectedItem = niko
+tabControl.SelectedItem = Niko
 
 {% endhighlight %}
 
@@ -117,7 +117,7 @@ IsSelected property is used to check whether an item is selected or not. An item
 
 <navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent"/>
 
-<navigation:SfTabItem x:Name="niko" IsSelected="True"
+<navigation:SfTabItem x:Name="Niko" IsSelected="True"
                       Header="Niko" Content="Description about Niko"/>
 
 <navigation:SfTabItem Header="James" Content="Description about James"/>
@@ -134,13 +134,13 @@ IsSelected property is used to check whether an item is selected or not. An item
 
 {% highlight C# %}
 
-niko.IsSelected = true;
+Niko.IsSelected = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-niko.IsSelected = True
+Niko.IsSelected = True
 
 {% endhighlight %}
 

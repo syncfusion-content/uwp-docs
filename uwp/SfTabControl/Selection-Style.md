@@ -25,7 +25,7 @@ SelectedForeground property is used to customize the foreground color of the hea
 
 <navigation:SfTabControl x:Name="tabControl" SelectionStyle="HeaderText">
 
-<navigation:SfTabItem x:Name="paul" Header="Paul Vent"
+<navigation:SfTabItem x:Name="Paul" Header="Paul Vent"
                       Content="Description about Paul Vent"
 					  SelectedBackground="Green" SelectedForeground="Red"/>
 
@@ -47,9 +47,9 @@ SelectedForeground property is used to customize the foreground color of the hea
 
 tabControl.SelectionStyle = Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.HeaderText;
 
-paul.SelectedBackground = new SolidColorBrush(Colors.Green);
+Paul.SelectedBackground = new SolidColorBrush(Colors.Green);
 
-paul.SelectedForeground = new SolidColorBrush(Colors.Red);
+Paul.SelectedForeground = new SolidColorBrush(Colors.Red);
 
 
 {% endhighlight %}
@@ -58,9 +58,9 @@ paul.SelectedForeground = new SolidColorBrush(Colors.Red);
 
 tabControl.SelectionStyle = Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.HeaderText
 
-paul.SelectedBackground = New SolidColorBrush(Colors.Green)
+Paul.SelectedBackground = New SolidColorBrush(Colors.Green)
 
-paul.SelectedForeground = New SolidColorBrush(Colors.Red)
+Paul.SelectedForeground = New SolidColorBrush(Colors.Red)
 
 {% endhighlight %}
 
@@ -78,7 +78,7 @@ SelectedBackground property is used to customize the background color of the hea
 {% highlight XAML %}
 
 <navigation:SfTabControl x:Name="tabControl" SelectionStyle="CompleteHeader">
-<navigation:SfTabItem x:Name="paul" Header="Paul Vent"
+<navigation:SfTabItem x:Name="Paul" Header="Paul Vent"
                       Content="Description about Paul Vent"
 					  SelectedBackground="Green" SelectedForeground="Red"/>
 
@@ -100,9 +100,9 @@ SelectedBackground property is used to customize the background color of the hea
 
 tabControl.SelectionStyle = Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.CompleteHeader;
 
-paul.SelectedBackground = new SolidColorBrush(Colors.Green);
+Paul.SelectedBackground = new SolidColorBrush(Colors.Green);
 
-paul.SelectedForeground = new SolidColorBrush(Colors.Red);
+Paul.SelectedForeground = new SolidColorBrush(Colors.Red);
 
 {% endhighlight %}
 
@@ -110,9 +110,9 @@ paul.SelectedForeground = new SolidColorBrush(Colors.Red);
 
 tabControl.SelectionStyle = Syncfusion.UI.Xaml.Controls.Navigation.SelectionStyle.CompleteHeader
 
-paul.SelectedBackground = New SolidColorBrush(Colors.Green)
+Paul.SelectedBackground = New SolidColorBrush(Colors.Green)
 
-paul.SelectedForeground = New SolidColorBrush(Colors.Red)
+Paul.SelectedForeground = New SolidColorBrush(Colors.Red)
 
 {% endhighlight %}
 

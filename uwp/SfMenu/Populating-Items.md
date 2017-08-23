@@ -45,17 +45,17 @@ Here five `SfMenuItems` are added as the children of the `SfMenu`.
 
 {% highlight C# %}
 
-SfMenu Sfmenu = new SfMenu();
+SfMenu sfMenu = new SfMenu();
 
-Sfmenu.Items.Add(new SfMenuItem { Header = "File" });
+sfMenu.Items.Add(new SfMenuItem { Header = "File" });
 
-Sfmenu.Items.Add(new SfMenuItem { Header = "Home" });
+sfMenu.Items.Add(new SfMenuItem { Header = "Home" });
 
-Sfmenu.Items.Add(new SfMenuItem { Header = "Insert" });
+sfMenu.Items.Add(new SfMenuItem { Header = "Insert" });
 
-Sfmenu.Items.Add(new SfMenuItem { Header = "Design" });
+sfMenu.Items.Add(new SfMenuItem { Header = "Design" });
 
-Sfmenu.Items.Add(new SfMenuItem { Header = "Layout" });
+sfMenu.Items.Add(new SfMenuItem { Header = "Layout" });
 
 
 {% endhighlight %}
