@@ -85,19 +85,19 @@ Store the images in project and set the properties `Header` and `ImageList` as g
 
 <notification:ImageList>
 
-<x:String>Assets/emp10.png</x:String>
-<x:String>Assets/emp11.png</x:String>
-<x:String>Assets/emp12.png</x:String>
-<x:String>Assets/emp13.png</x:String>
-<x:String>Assets/emp1.png</x:String>
-<x:String>Assets/emp2.png</x:String>
-<x:String>Assets/emp3.png</x:String>
-<x:String>Assets/emp4.png</x:String>
-<x:String>Assets/emp5.png</x:String>
-<x:String>Assets/emp6.png</x:String>
-<x:String>Assets/emp7.png</x:String>
-<x:String>Assets/emp8.png</x:String>
-<x:String>Assets/emp9.png</x:String>
+<x:String>Assets/employee10.png</x:String>
+<x:String>Assets/employee11.png</x:String>
+<x:String>Assets/employee12.png</x:String>
+<x:String>Assets/employee13.png</x:String>
+<x:String>Assets/employee1.png</x:String>
+<x:String>Assets/employee2.png</x:String>
+<x:String>Assets/employee3.png</x:String>
+<x:String>Assets/employee4.png</x:String>
+<x:String>Assets/employee5.png</x:String>
+<x:String>Assets/employee6.png</x:String>
+<x:String>Assets/employee7.png</x:String>
+<x:String>Assets/employee8.png</x:String>
+<x:String>Assets/employee9.png</x:String>
 
 </notification:ImageList>
 
@@ -174,19 +174,19 @@ splitMosaicTile.Header = "Mosaic Tile"
 
 <notification:ImageList>
 
-<x:String>Assets/emp10.png</x:String>
-<x:String>Assets/emp11.png</x:String>
-<x:String>Assets/emp12.png</x:String>
-<x:String>Assets/emp13.png</x:String>
-<x:String>Assets/emp1.png</x:String>
-<x:String>Assets/emp2.png</x:String>
-<x:String>Assets/emp3.png</x:String>
-<x:String>Assets/emp4.png</x:String>
-<x:String>Assets/emp5.png</x:String>
-<x:String>Assets/emp6.png</x:String>
-<x:String>Assets/emp7.png</x:String>
-<x:String>Assets/emp8.png</x:String>
-<x:String>Assets/emp9.png</x:String>
+<x:String>Assets/employee10.png</x:String>
+<x:String>Assets/employee11.png</x:String>
+<x:String>Assets/employee12.png</x:String>
+<x:String>Assets/employee13.png</x:String>
+<x:String>Assets/employee1.png</x:String>
+<x:String>Assets/employee2.png</x:String>
+<x:String>Assets/employee3.png</x:String>
+<x:String>Assets/employee4.png</x:String>
+<x:String>Assets/employee5.png</x:String>
+<x:String>Assets/employee6.png</x:String>
+<x:String>Assets/employee7.png</x:String>
+<x:String>Assets/employee8.png</x:String>
+<x:String>Assets/employee9.png</x:String>
 
 </notification:ImageList>
 
@@ -209,31 +209,31 @@ splitMosaicTile.Header = "Mosaic Tile"
 
 splitMosaicTile.ImageList = new ImageList();
 
-splitMosaicTile.ImageList.Add("Assets/emp10.png");
+splitMosaicTile.ImageList.Add("Assets/employee10.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp11.png");
+splitMosaicTile.ImageList.Add("Assets/employee11.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp12.png");
+splitMosaicTile.ImageList.Add("Assets/employee12.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp13.png");
+splitMosaicTile.ImageList.Add("Assets/employee13.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp1.png");
+splitMosaicTile.ImageList.Add("Assets/employee1.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp2.png");
+splitMosaicTile.ImageList.Add("Assets/employee2.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp3.png");
+splitMosaicTile.ImageList.Add("Assets/employee3.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp4.png");
+splitMosaicTile.ImageList.Add("Assets/employee4.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp5.png");
+splitMosaicTile.ImageList.Add("Assets/employee5.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp6.png");
+splitMosaicTile.ImageList.Add("Assets/employee6.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp7.png");
+splitMosaicTile.ImageList.Add("Assets/employee7.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp8.png");
+splitMosaicTile.ImageList.Add("Assets/employee8.png");
 
-splitMosaicTile.ImageList.Add("Assets/emp9.png");
+splitMosaicTile.ImageList.Add("Assets/employee9.png");
 
 {% endhighlight %}
 
@@ -241,31 +241,31 @@ splitMosaicTile.ImageList.Add("Assets/emp9.png");
 
 splitMosaicTile.ImageList = New ImageList()
 
-splitMosaicTile.ImageList.Add("Assets/emp10.png")
+splitMosaicTile.ImageList.Add("Assets/employee10.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp11.png")
+splitMosaicTile.ImageList.Add("Assets/employee11.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp12.png")
+splitMosaicTile.ImageList.Add("Assets/employee12.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp13.png")
+splitMosaicTile.ImageList.Add("Assets/employee13.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp1.png")
+splitMosaicTile.ImageList.Add("Assets/employee1.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp2.png")
+splitMosaicTile.ImageList.Add("Assets/employee2.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp3.png")
+splitMosaicTile.ImageList.Add("Assets/employee3.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp4.png")
+splitMosaicTile.ImageList.Add("Assets/employee4.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp5.png")
+splitMosaicTile.ImageList.Add("Assets/employee5.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp6.png")
+splitMosaicTile.ImageList.Add("Assets/employee6.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp7.png")
+splitMosaicTile.ImageList.Add("Assets/employee7.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp8.png")
+splitMosaicTile.ImageList.Add("Assets/employee8.png")
 
-splitMosaicTile.ImageList.Add("Assets/emp9.png")
+splitMosaicTile.ImageList.Add("Assets/employee9.png")
 
 {% endhighlight %}
 
@@ -301,7 +301,7 @@ BitmapImageList list = new BitmapImageList();
 
 for(int i=1; i<=13;i++)
 
-list.Add(new Image() { Source = new BitmapImage() { UriSource = new Uri("ms-appx:///Assets/emp"+i+".png", UriKind.Absolute) } });
+list.Add(new Image() { Source = new BitmapImage() { UriSource = new Uri("ms-appx:///Assets/employee"+i+".png", UriKind.Absolute) } });
 
 splitMosaicTile.BitmapImageList = list;
 
@@ -321,7 +321,7 @@ Dim list As New BitmapImageList()
 For i As Integer = 1 To 13
 
 list.Add(New Image() With {
-	.Source = New BitmapImage() With {.UriSource = New Uri("ms-appx:///Assets/emp" & i & ".png", UriKind.Absolute)}
+	.Source = New BitmapImage() With {.UriSource = New Uri("ms-appx:///Assets/employee" & i & ".png", UriKind.Absolute)}
 })
 Next i
 
@@ -344,13 +344,13 @@ Image URLs can be checked for existence using CheckForExistence method before ad
 
 {% highlight C# %}
 
-splitMosaicTile.CheckForExistence("Assets/emp1.png");
+splitMosaicTile.CheckForExistence("Assets/employee1.png");
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-splitMosaicTile.CheckForExistence("Assets/emp1.png")
+splitMosaicTile.CheckForExistence("Assets/employee1.png")
 
 {% endhighlight %}
 
