@@ -379,7 +379,7 @@ sfGantt.AllowEditing = true;
 
 {% endtabs %}
 
-N>Currently editing is not available in the WindowsPhone.
+N>Currently editing is not available in the Windows Phone.
 
 ## Task relationships
 
