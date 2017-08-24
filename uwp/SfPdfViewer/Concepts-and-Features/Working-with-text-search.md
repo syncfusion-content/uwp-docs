@@ -18,8 +18,8 @@ The following code shows how to initiate the text search using the method.
 {% highlight c# %}
 private void Page_Loaded(object sender, RoutedEventArgs e)
 {
-    PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-    pdfViewer.LoadDocument(ldoc);
+    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+    pdfViewer.LoadDocument(loadedDocument);
 }
 
 private void Button_Click(object sender, RoutedEventArgs e)
@@ -30,8 +30,8 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% highlight vbnet %}
 Private Sub Page_Loaded(sender As Object, e As RoutedEventArgs)
-    Dim ldoc As New PdfLoadedDocument(buffer)
-    pdfViewer.LoadDocument(ldoc)
+    Dim loadedDocument As New PdfLoadedDocument(buffer)
+    pdfViewer.LoadDocument(loadedDocument)
 End Sub
 
 Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
@@ -45,8 +45,8 @@ The following code shows how to search for the next instance.
 {% highlight c# %}
 private void Page_Loaded(object sender, RoutedEventArgs e)
 {
-    PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-    pdfViewer.LoadDocument(ldoc);
+    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+    pdfViewer.LoadDocument(loadedDocument);
 }
 
 private void Button_Click(object sender, RoutedEventArgs e)
@@ -57,8 +57,8 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% highlight vbnet %}
 Private Sub Page_Loaded(sender As Object, e As RoutedEventArgs)
-    Dim ldoc As New PdfLoadedDocument(buffer)
-    pdfViewer.LoadDocument(ldoc)
+    Dim loadedDocument As New PdfLoadedDocument(buffer)
+    pdfViewer.LoadDocument(loadedDocument)
 End Sub
 
 Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
@@ -72,8 +72,8 @@ The following code shows how to search for the previous instance.
 {% highlight c# %}
 private void Page_Loaded(object sender, RoutedEventArgs e)
 {
-    PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-    pdfViewer.LoadDocument(ldoc);
+    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+    pdfViewer.LoadDocument(loadedDocument);
 }
 
 private void Button_Click(object sender, RoutedEventArgs e)
@@ -84,8 +84,8 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% highlight vbnet %}
 Private Sub Page_Loaded(sender As Object, e As RoutedEventArgs)
-    Dim ldoc As New PdfLoadedDocument(buffer)
-    pdfViewer.LoadDocument(ldoc)
+    Dim loadedDocument As New PdfLoadedDocument(buffer)
+    pdfViewer.LoadDocument(loadedDocument)
 End Sub
 
 Private Sub Button_Click(sender As Object, e As RoutedEventArgs)

@@ -161,7 +161,7 @@ After initializing SfPivotGauge control, right click on **References** and selec
 
 In “Add Service Reference” window, enter the following address and click “Go” button to add the online service.
 
-[http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex](http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex).
+[http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc](http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc)
 
 Also change the default service namespace from "ServiceReference1" to "OlapManagerService" so that it will be easier to identify the OLAP service later. Finally click "OK" button to add the service reference.
 

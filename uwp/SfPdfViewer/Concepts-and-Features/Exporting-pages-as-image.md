@@ -132,14 +132,14 @@ To export pages of PDF document as list of image streams with custom zoom factor
 
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 //Exports the pages between start and end index as image array. 
 List<Stream> listOfImageStream = pdfViewer.ExportAsImage(0, 5, 200);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 'Exports the pages between start and end index as image array.
 Dim listOfImageStream As List(Of Stream) = pdfViewer.ExportAsImage(0, 5, 200)
 {% endhighlight %}

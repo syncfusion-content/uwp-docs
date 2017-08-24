@@ -187,7 +187,7 @@ After initializing SfPivotClient control, right click on **References** and sele
 
 In “Add Service Reference” window, enter the following address and click “Go” button to add the online service.
 
-[http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex](http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/mex).
+[http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc](http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc)
 
 Name the service namespace as “OlapManagerService” and click “OK” button to add the service reference.
 

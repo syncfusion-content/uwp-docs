@@ -12,12 +12,12 @@ The SfPdfViewer has the ability to load PDF documents from stream and PdfLoadedD
 The below code explains how to load the document using a PdfLoadedDocument object.
 {% tabs %}
 {% highlight c# %}
-PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-pdfViewer.LoadDocument(ldoc);
+PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+pdfViewer.LoadDocument(loadedDocument);
 {% endhighlight %}
 {% highlight vbnet %}
-Dim ldoc As New PdfLoadedDocument(Buffer)
-pdfViewer.LoadDocument(ldoc)
+Dim loadedDocument As New PdfLoadedDocument(Buffer)
+pdfViewer.LoadDocument(loadedDocument)
 {% endhighlight %}
 {% endtabs %}
 The below code explains how to load the document from stream.
