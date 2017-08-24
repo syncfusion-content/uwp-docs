@@ -275,7 +275,7 @@ The `SaveAs` method in SfSpreadsheet can be used in various ways,
 
 //Using Storage File,
 
- spreadsheet.SaveAs (StorageFile storagefile);
+ spreadsheet.SaveAs (StorageFile file);
 
 //Using String,
 
