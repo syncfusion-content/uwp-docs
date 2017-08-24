@@ -171,7 +171,7 @@ CanClose property is used to decide whether a tab item can be closed or not even
 
 {% highlight XAML %}
 
-<navigation:SfTabItem x:Name="paul" Header="Paul Vent"
+<navigation:SfTabItem x:Name="Paul" Header="Paul Vent"
                       Content="Description about Paul Vent" CanClose="True"/>
 
 
@@ -183,13 +183,13 @@ CanClose property is used to decide whether a tab item can be closed or not even
 
 {% highlight C# %}
 
-paul.CanClose = true;
+Paul.CanClose = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-paul.CanClose = True
+Paul.CanClose = True
 
 {% endhighlight %}
 

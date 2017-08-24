@@ -62,13 +62,13 @@ Maximum Value of SfRadialSlider can be displayed even the difference between Max
 
 {% highlight C# %}
 
-SfRadialSlider radialslider = new SfRadialSlider() { Maximum = 100, TickFrequency = 12, ShowMaximumValue = true };
+SfRadialSlider radialSlider = new SfRadialSlider() { Maximum = 100, TickFrequency = 12, ShowMaximumValue = true };
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim radialslider As New SfRadialSlider() With { _
+Dim radialSlider As New SfRadialSlider() With { _
 	Key .Maximum = 100, _
 	Key .TickFrequency = 12, _
 	Key .ShowMaximumValue = True _
