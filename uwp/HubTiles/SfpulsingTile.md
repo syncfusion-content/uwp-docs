@@ -92,21 +92,21 @@ Set the image as Content of `SfPulsingTile` as given below:
 
 {% highlight C# %}
 
-  SfPulsingTile puslingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile" };
+  SfPulsingTile pulsingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile" };
 
-  puslingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
+  pulsingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-   Dim puslingTile As New SfPulsingTile() With {
+   Dim pulsingTile As New SfPulsingTile() With {
 	  .Width = 183,
 	  .Height = 173,
 	  .Header = "Pulsing tile"
   }
 
-   puslingTile.Content = New Image() With {
+   pulsingTile.Content = New Image() With {
 				.Source = New BitmapImage(New Uri("ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),
 				.Height=200,
 				.Stretch = Stretch.UniformToFill
@@ -146,15 +146,15 @@ Adjusts the values of properties such as PulseScale, RadiusX and RadiusY.
 
 {% highlight C# %}
 
- SfPulsingTile puslingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile", RadiusX = 0, RadiusY = 0, PulseScale = 2};
+ SfPulsingTile pulsingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile", RadiusX = 0, RadiusY = 0, PulseScale = 2};
 
- puslingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
+ pulsingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
 
 {% endhighlight %}
 
 {% highlight VB %}
 
- Dim puslingTile As New SfPulsingTile() With {
+ Dim pulsingTile As New SfPulsingTile() With {
 	 .Width = 183,
 	 .Height = 173,
 	 .Header = "Pulsing tile",
@@ -163,7 +163,7 @@ Adjusts the values of properties such as PulseScale, RadiusX and RadiusY.
 	 .PulseScale = 2
  }
 
-puslingTile.Content = New Image() With {
+pulsingTile.Content = New Image() With {
 				.Source = New BitmapImage(New Uri("ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),
 				.Height=200,
 				.Stretch = Stretch.UniformToFill}
@@ -234,21 +234,21 @@ HorizontalAlignment="Center"/>
 
 {% highlight C# %}
 
-SfPulsingTile puslingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile" };
+SfPulsingTile pulsingTile = new SfPulsingTile() { Width = 183, Height = 173, Header = "Pulsing tile" };
 
-puslingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
+pulsingTile.Content = new Image() { Source = new BitmapImage(new Uri(@"ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),Height=200 , Stretch = Stretch.UniformToFill };
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Dim puslingTile As New SfPulsingTile() With {
+Dim pulsingTile As New SfPulsingTile() With {
 	.Width = 183,
 	.Height = 173,
 	.Header = "Pulsing tile"
 }
 
-puslingTile.Content = New Image() With {
+pulsingTile.Content = New Image() With {
 	.Source = New BitmapImage(New Uri("ms-appx:///Assets/PulsingTile.jpg", UriKind.RelativeOrAbsolute)),
 	.Height=200,
 	.Stretch = Stretch.UniformToFill

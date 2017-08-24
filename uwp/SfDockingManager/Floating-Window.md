@@ -31,7 +31,7 @@ Floating window is one of the state in the `SfDockingManager`. To make children 
 
 ## Enabling or Disabling the Float functionality
 
-The `CanFloat` AttachedProperty helps to enable or disable the floating functionality by setting its value as true or false respectively. By default, `CanFloat` value is true. This functionality can be disabled by setting its value as false. While setting CanFloat property as false, it disables the dragging functionality of dock window. So, changing the window position by Mouse interaction will be restricted. Still DockWindow position can be changed through codebehind.
+The `CanFloat` AttachedProperty helps to enable or disable the floating functionality by setting its value as true or false respectively. By default, `CanFloat` value is true. This functionality can be disabled by setting its value as false. While setting CanFloat property as false, it disables the dragging functionality of dock window. So, changing the window position by Mouse interaction will be restricted. Still DockWindow position can be changed through code behind.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ The `CanFloat` AttachedProperty helps to enable or disable the floating function
 
 {% endtabs %}
 
-### Change Dock Window position through codebehind
+### Change Dock Window position through code behind
 
 By using `SetSideInDockMode` property, we can set the side and `SetTargetNameInDockedMode` property for changing the target of desired dock window.
 

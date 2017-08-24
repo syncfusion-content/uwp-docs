@@ -15,7 +15,7 @@ The `SfDockingManager` control implements an architecture, that allows child con
 
 * `SfDockingManager` supports different dock states such as Docking, Floating, AutoHide and Document.
 * Tabbed Document Interface(TDI) is available in `SfDockingManager`.
-* Inbuilt support for TabList ContextMenu and TabItem ContextMenu.
+* Built-in support for TabList ContextMenu and TabItem ContextMenu.
 * `SfDockingManager` support all possible ways for dock the elements.
 * Support for resizing Splitters.
 * Different types of auto hide animation such as Fade, Scale and Slide.

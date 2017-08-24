@@ -27,7 +27,7 @@ The following code example and screen shot illustrate this.
 
 <navigation:SfTabControl>
 
-<navigation:SfTabItem Header="Paul Vent" x:Name="paul"
+<navigation:SfTabItem Header="Paul Vent" x:Name="Paul"
                       Content="Description about Paul Vent" ShowPinnableButton="True"/>
 
 <navigation:SfTabItem Header="Niko"
@@ -50,13 +50,13 @@ The following code example and screen shot illustrate this.
 
 {% highlight C# %}
 
-paul.ShowPinnableButton = true;
+Paul.ShowPinnableButton = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-paul.ShowPinnableButton = True
+Paul.ShowPinnableButton = True
 
 {% endhighlight %}
 
