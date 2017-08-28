@@ -635,7 +635,7 @@ YBindingPath="High" >
 
 {% highlight c# %}
 
-SfLineSparkline sparkine = new SfLineSparkline()
+SfLineSparkline sparkline = new SfLineSparkline()
 {
     
     ItemsSource = new ViewModel().StockPriceDetails,
@@ -659,7 +659,7 @@ rangeNavigator.Intervals.Add(new Interval() { IntervalType = NavigatorIntervalTy
 
 rangeNavigator.Intervals.Add(new Interval() { IntervalType = NavigatorIntervalType.Week });
 
-rangeNavigator.Content = sparkine;
+rangeNavigator.Content = sparkline;
 
 {% endhighlight %}
 
