@@ -24,7 +24,7 @@ Description
 </tr>
 <tr>
 <td>
-{{'[TreeGridTextColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html)'| markdownify }}
+{{'[TreeGridTextColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnClassTopic.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the string data. 
@@ -32,7 +32,7 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html)'| markdownify }}
+{{'[TreeGridNumericColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassTopic.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the numeric data
@@ -40,7 +40,7 @@ Use to display the numeric data
 </tr>
 <tr>
 <td>
-{{'[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html)'| markdownify }}
+{{'[TreeGridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassTopic.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the date time value 
@@ -48,7 +48,7 @@ Use to display the date time value
 </tr>
 <tr>
 <td>
-{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html)'| markdownify }}
+{{'[TreeGridComboBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridComboBoxColumnClassTopic.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using Combo Box.
@@ -56,7 +56,7 @@ Use to display the IEnumerable data using Combo Box.
 </tr>
 <tr>
 <td>
-{{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html)'| markdownify }}
+{{'[TreeGridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the Boolean type data
@@ -64,7 +64,7 @@ Use to display the Boolean type data
 </tr>
 <tr>
 <td>
-{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html)'| markdownify }}
+{{'[TreeGridHyperlinkColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridHyperlinkColumnClassTopic.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the URI data
@@ -72,7 +72,7 @@ Use to display the URI data
 </tr>
 <tr>
 <td>
-{{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html)'| markdownify }}
+{{'[TreeGridTemplateColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridTemplateColumnClassTopic.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the custom template-specified content.
