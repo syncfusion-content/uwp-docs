@@ -162,7 +162,7 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
         base.ProcessOnDragOver(args, rowColumnIndex);
         var dropPosition = GetDropPosition(args, rowColumnIndex);
         if (dropPosition == DropPosition.DropAbove)
-            args.DragUIOverride.Caption = "rube fallen";
+            args.DragUIOverride.Caption = "uber fallen";
     }
 }
 
