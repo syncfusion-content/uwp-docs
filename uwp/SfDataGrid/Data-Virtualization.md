@@ -365,11 +365,11 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
             {
                 var lambda = Expression.Lambda(predicate, paramExpression);
                 
-                var del = lambda.Compile();
+                var delegate = lambda.Compile();
                 
                 this.RowFilter = (o) =>
                 {
-                    var result = (bool)del.DynamicInvoke(o);
+                    var result = (bool)delegate.DynamicInvoke(o);
                     return result;
                 };
             }         
