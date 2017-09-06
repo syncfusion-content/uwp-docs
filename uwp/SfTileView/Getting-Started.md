@@ -168,9 +168,9 @@ public class TileViewModel: NotificationObject
 			
             TileViewItems.Add(new Person("Maria Even", "Assets/Employee11.png", GetInterval(), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "MariaEven@syncfusion.com", "#DA9545", "#BB7731"));
 			
-            TileViewItems.Add(new Person("David Wilson", "Assets/Employee13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "DavidWilson@syncfusion.com", "#AC3832", "#8B2826"));
+            TileViewItems.Add(new Person("Mark", "Assets/Employee13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "Mark@syncfusion.com", "#AC3832", "#8B2826"));
 			
-            TileViewItems.Add(new Person("Robin Williams", "Assets/Employee16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "RobinWilliams@syncfusion.com", "#31A1FF", "#2394E1"));
+            TileViewItems.Add(new Person("Robin", "Assets/Employee16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "Robin@syncfusion.com", "#31A1FF", "#2394E1"));
 			
             TileViewItems.Add(new Person("Chris Marker", "Assets/Employee21.png", GetInterval(), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "ChrisMarker@syncfusion.com", "#5B5BA9", "#484892"));
 			
@@ -226,9 +226,9 @@ Public Class TileViewModel
 
 			TileViewItems.Add(New Person("Maria Even", "Assets/Employee11.png", GetInterval(), "Executive Manager", "Operational Unit", "27/09/1970", "New York", "+800 9899 9932", "MariaEven@syncfusion.com", "#DA9545", "#BB7731"))
 
-			TileViewItems.Add(New Person("David Wilson", "Assets/Employee13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "DavidWilson@syncfusion.com", "#AC3832", "#8B2826"))
+			TileViewItems.Add(New Person("Mark", "Assets/Employee13.png", GetInterval(), "Senior Executive", "Operational Unit", "27/09/1983", "Boston", "+800 9899 9933", "Mark@syncfusion.com", "#AC3832", "#8B2826"))
 
-			TileViewItems.Add(New Person("Robin Williams", "Assets/Employee16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "RobinWilliams@syncfusion.com", "#31A1FF", "#2394E1"))
+			TileViewItems.Add(New Person("Robin", "Assets/Employee16.png", GetInterval(), "Manager", "Customer Service", "27/09/1985", "New Jersey", "+800 9899 9934", "Robin@syncfusion.com", "#31A1FF", "#2394E1"))
 
 			TileViewItems.Add(New Person("Chris Marker", "Assets/Employee21.png", GetInterval(), "Team Manager", "Customer Service", "27/09/1963", "California", "+800 9899 9935", "ChrisMarker@syncfusion.com", "#5B5BA9", "#484892"))
 
