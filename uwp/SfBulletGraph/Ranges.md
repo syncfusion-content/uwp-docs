@@ -39,27 +39,27 @@ The width of the ranges can be customized by setting the **QualitativeRangesSize
 
 {% highlight c# %}
 
-            SfBulletGraph bulletgraph = new SfBulletGraph();
-            bulletgraph.QualitativeRangesSize = 30;
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange()
+            SfBulletGraph bullet = new SfBulletGraph();
+            bullet.QualitativeRangesSize = 30;
+            bullet.QualitativeRanges.Add(new QualitativeRange()
             {
                 RangeEnd = 4.5,
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Red)
             });
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange()
+            bullet.QualitativeRanges.Add(new QualitativeRange()
             {
                 RangeEnd = 7.5,
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Yellow)
             });
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange()
+            bullet.QualitativeRanges.Add(new QualitativeRange()
             {
                 RangeEnd = 10,
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Green)
             });
-            this.Grid.Children.Add(bulletgraph);
+            this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
@@ -81,10 +81,10 @@ By setting **BindWithRangeStrokeToLabels**, the stroke of the labels is set rela
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.BindRangeStrokeToLabels = true;
-    bulletgraph.BindRangeStrokeToTicks = true;
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.BindRangeStrokeToLabels = true;
+    bullet.BindRangeStrokeToTicks = true;
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}

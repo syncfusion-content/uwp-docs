@@ -28,11 +28,11 @@ The value of the featured measure of the bullet graph is set by the **FeaturedMe
 
 {% highlight c# %}
  
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.FeaturedMeasure = 5;
-    bulletgraph.FeaturedMeasureBarStroke = new SolidColorBrush(Colors.Black);
-    bulletgraph.FeaturedMeasureBarStrokeThickness = 10;
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.FeaturedMeasure = 5;
+    bullet.FeaturedMeasureBarStroke = new SolidColorBrush(Colors.Black);
+    bullet.FeaturedMeasureBarStrokeThickness = 10;
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
@@ -59,11 +59,11 @@ The value of the comparative measure is set by using the **ComparativeMeasure** 
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.ComparativeMeasure = 7;
-    bulletgraph.ComparativeMeasureSymbolStroke = new SolidColorBrush(Colors.Black);
-    bulletgraph.ComparativeMeasureSymbolStrokeThickness = 10;
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.ComparativeMeasure = 7;
+    bullet.ComparativeMeasureSymbolStroke = new SolidColorBrush(Colors.Black);
+    bullet.ComparativeMeasureSymbolStrokeThickness = 10;
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}

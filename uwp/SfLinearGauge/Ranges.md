@@ -39,7 +39,7 @@ A range shows the start and end values of the inner divisions within the linear 
 
 {% highlight c# %}
 
-           SfLinearGauge lineargauge = new SfLinearGauge();
+           SfLinearGauge linear = new SfLinearGauge();
             LinearScale _mainScale = new LinearScale();
             _mainScale.Ranges.Add(new LinearRange()
             {
@@ -61,8 +61,8 @@ A range shows the start and end values of the inner divisions within the linear 
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Red)
             });
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
             
 {% endhighlight %}
 {% endtabs %}
@@ -100,7 +100,7 @@ User can bind the range’s stroke to the tick lines and labels within its range
 
 {% highlight c# %}
 
-           SfLinearGauge lineargauge = new SfLinearGauge();
+           SfLinearGauge linear = new SfLinearGauge();
             LinearScale _mainScale = new LinearScale();
             _mainScale.BindRangeStrokeToLabels = true;
             _mainScale.BindRangeStrokeToTicks = true;
@@ -131,8 +131,8 @@ User can bind the range’s stroke to the tick lines and labels within its range
                 RangeOffset = 5,
                 RangeStroke = new SolidColorBrush(Colors.Red)
             });
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
             
 {% endhighlight %}
 {% endtabs %}
@@ -167,7 +167,7 @@ They are:
 
 {% highlight c# %}
 
-           SfLinearGauge lineargauge = new SfLinearGauge();
+           SfLinearGauge linear = new SfLinearGauge();
             LinearScale _mainScale = new LinearScale();
             _mainScale.ScaleBarLength = 300;
             _mainScale.RangePosition = LinearRangesPosition.Above;
@@ -181,8 +181,8 @@ They are:
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Red)
             });
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}

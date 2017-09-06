@@ -30,11 +30,11 @@ The value of the digital characters is scaled by altering the height and width o
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "SYNCFUSION";
-    digitalgauge.CharacterHeight = 70;
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "SYNCFUSION";
+    digital.CharacterHeight = 70;
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -53,11 +53,11 @@ The value of the digital characters is scaled by altering the height and width o
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "SYNCFUSION";
-    digitalgauge.CharacterWidth = 60;
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "SYNCFUSION";
+    digital.CharacterWidth = 60;
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
     
 {% endhighlight %}
 {% endtabs %}
@@ -80,11 +80,11 @@ The digital gauge also performs skew transformation for the digital characters. 
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "SYNCFUSION";
-    digitalgauge.SkewAngleX = 35;
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "SYNCFUSION";
+    digital.SkewAngleX = 35;
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs%}
@@ -103,11 +103,11 @@ The digital gauge also performs skew transformation for the digital characters. 
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "SYNCFUSION";
-    digitalgauge.SkewAngleY = 30;
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "SYNCFUSION";
+    digital.SkewAngleY = 30;
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
