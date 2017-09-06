@@ -29,12 +29,12 @@ The Labels can be positioned far away from the Quantitative scale by using the *
 
 {% highlight c# %}
 
-      SfBulletGraph bulletgraph = new SfBulletGraph();
-      bulletgraph.LabelOffset = 5;
-      bulletgraph.LabelSize = 10;
-      bulletgraph.LabelFormat = "";
-      bulletgraph.LabelStroke = new SolidColorBrush(Colors.Red);
-      this.Grid.Children.Add(bulletgraph);
+      SfBulletGraph bullet = new SfBulletGraph();
+      bullet.LabelOffset = 5;
+      bullet.LabelSize = 10;
+      bullet.LabelFormat = "";
+      bullet.LabelStroke = new SolidColorBrush(Colors.Red);
+      this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
@@ -58,9 +58,9 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.LabelPosition = BulletGraphLabelsPosition.Above;
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.LabelPosition = BulletGraphLabelsPosition.Above;
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}

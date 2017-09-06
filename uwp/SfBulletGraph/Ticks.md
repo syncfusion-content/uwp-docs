@@ -35,13 +35,13 @@ The stroke of the major and minor ticks is customized by setting the **MajorTick
 
 {% highlight c# %}
 
-      SfBulletGraph bulletgraph = new SfBulletGraph();
-      bulletgraph.MinorTicksPerInterval = 3;
-      bulletgraph.MajorTickSize = 15;
-      bulletgraph.MinorTickSize = 10;
-      bulletgraph.MajorTickStroke = new SolidColorBrush(Colors.Red);
-      bulletgraph.MinorTickStroke = new SolidColorBrush(Colors.Green);
-      this.Grid.Children.Add(bulletgraph);
+      SfBulletGraph bullet = new SfBulletGraph();
+      bullet.MinorTicksPerInterval = 3;
+      bullet.MajorTickSize = 15;
+      bullet.MinorTickSize = 10;
+      bullet.MajorTickStroke = new SolidColorBrush(Colors.Red);
+      bullet.MinorTickStroke = new SolidColorBrush(Colors.Green);
+      this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
@@ -68,9 +68,9 @@ They are:
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.TickPosition = BulletGraphTicksPosition.Cross; 
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.TickPosition = BulletGraphTicksPosition.Cross; 
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}

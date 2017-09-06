@@ -33,10 +33,10 @@ The distance between the characters can be set by using the **CharacterSpacing**
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = " SYNCFUSION";
-    digitalgauge.CharacterSpacing = 50;
-    this.Grid.Children.Add(digitalgauge);      
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = " SYNCFUSION";
+    digital.CharacterSpacing = 50;
+    this.Grid.Children.Add(digital);      
 
 {% endhighlight %}
 {% endtabs %}
@@ -56,11 +56,11 @@ The Stroke of the character can be changed by **CharacterStroke** property.
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = " SYNCFUSION";
-    digitalgauge.CharacterStroke = new SolidColorBrush(Colors.Yellow);
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = " SYNCFUSION";
+    digital.CharacterStroke = new SolidColorBrush(Colors.Yellow);
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
     
 {% endhighlight %}
 {% endtabs %}
@@ -80,11 +80,11 @@ Using **SegmentThickness** property, you can adjust the thickness of the segment
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = " SYNCFUSION";
-    digitalgauge.SegmentThickness = 5;
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = " SYNCFUSION";
+    digital.SegmentThickness = 5;
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -104,11 +104,11 @@ The Characters are aligned using **EnableRTLFormat** property. The default value
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = " SYNCFUSION";
-    digitalgauge.EnableRTLFormat= true;
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = " SYNCFUSION";
+    digital.EnableRTLFormat= true;
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -128,11 +128,11 @@ The Characters are aligned using **EnableRTLFormat** property. The default value
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = " SYNCFUSION";
-    digitalgauge.DimmedBrush = new SolidColorBrush(Colors.White);
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = " SYNCFUSION";
+    digital.DimmedBrush = new SolidColorBrush(Colors.White);
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -152,12 +152,12 @@ The Characters are aligned using **EnableRTLFormat** property. The default value
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = " SYNCFUSION";
-    digitalgauge.DimmedBrush = new SolidColorBrush(Colors.White);
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    digitalgauge.DimmedBrushOpacity = 20;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = " SYNCFUSION";
+    digital.DimmedBrush = new SolidColorBrush(Colors.White);
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    digital.DimmedBrushOpacity = 20;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}

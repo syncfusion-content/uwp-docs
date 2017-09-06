@@ -235,7 +235,7 @@ Code Sample:
 
      <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}"> 
         <Grid.DataContext> 
-            <local:OlymicMedalsViewModel/>
+            <local:OlympicMedalsViewModel/>
         </Grid.DataContext> 
         <syncfusion:SfTreeMap ItemsSource="{Binding OlympicMedalsDetails}" Margin="50" WeightValuePath="TotalMedals" ColorValuePath="GoldMedals">
             <syncfusion:SfTreeMap.LeafTemplate> 
@@ -260,11 +260,11 @@ Code Sample:
 
 {% highlight c# %}
        
-       public class OlymicMedalsViewModel
+       public class OlympicMedalsViewModel
     {
 		public ObservableCollection<OlympicMedals> OlympicMedalsDetails
 		{ get; set; }
-        public OlymicMedalsViewModel()
+        public OlympicMedalsViewModel()
         {        
 			this.OlympicMedalsDetails = new ObservableCollection<OlympicMedals>();
 			this.OlympicMedalsDetails.Add(new OlympicMedals { Country = "US", GameName = "Swimming", GoldMedals = 16, SilverMedals = 9, BronzeMedals = 6, TotalMedals = 31, GameImgSource = new BitmapImage(new Uri("ms-appx:/Assets/Swimming.png")) });

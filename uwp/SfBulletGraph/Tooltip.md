@@ -24,9 +24,9 @@ The SfBulletGraph tooltip is displayed only when the **ShowToolTip** property is
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.ShowToolTip = true;
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.ShowToolTip = true;
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}

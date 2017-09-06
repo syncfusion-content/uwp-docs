@@ -28,8 +28,8 @@ SfDigitalGauge is existing in the following assembly and namespace.
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    this.Grid.Children.Add(digital);
      
 {% endhighlight %}
 {% endtabs %}
@@ -52,9 +52,9 @@ You can add alphanumeric characters to SfDigitalGauge using **Value** property i
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "GAUGE";
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "GAUGE";
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -76,10 +76,10 @@ You can view the digital characters in SfDigitalGauge using different types of S
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "12345";
-    digitalgauge.CharacterType = CharacterType.SegmentSeven;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "12345";
+    digital.CharacterType = CharacterType.SegmentSeven;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}

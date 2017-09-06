@@ -36,15 +36,15 @@ The StartValue and EndValue properties will determine the overall range of the c
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.StartAngle = 180;
-            _mainscale.SweepAngle = 180;
-            _mainscale.SweepDirection = SweepDirection.Clockwise;
-            _mainscale.StartValue = 0;
-            _mainscale.EndValue = 100;
-            _mainscale.RimStroke = new SolidColorBrush(Colors.Red);
-            _mainscale.RimStrokeThickness = 3;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale _scale = new CircularScale();
+            _scale.StartAngle = 180;
+            _scale.SweepAngle = 180;
+            _scale.SweepDirection = SweepDirection.Clockwise;
+            _scale.StartValue = 0;
+            _scale.EndValue = 100;
+            _scale.RimStroke = new SolidColorBrush(Colors.Red);
+            _scale.RimStrokeThickness = 3;
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}

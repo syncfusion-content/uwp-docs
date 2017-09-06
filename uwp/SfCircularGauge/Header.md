@@ -85,7 +85,7 @@ It includes the following options.
 {% tabs %}
 {% highlight xaml %}
 
-     <syncfusion:SfCircularGauge  GaugeHeader="Fual Availability"  
+     <syncfusion:SfCircularGauge  GaugeHeader="Fuel Availability"  
                              GaugeHeaderPosition="0.42,0.65" FontSize="20"  HeaderAlignment="Custom" >
         </syncfusion:SfCircularGauge>
         
@@ -94,7 +94,7 @@ It includes the following options.
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            circularGauge.GaugeHeader = "Fual Availability";
+            circularGauge.GaugeHeader = "Fuel Availability";
             circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
             circularGauge.FontSize = 20;
@@ -117,7 +117,7 @@ It includes the following options.
                         <RowDefinition/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="1"  Text="Fual Availability" 
+                    <TextBlock Grid.Row="1"  Text="Fuel Availability" 
                                Foreground="White" FontSize="20" />
                     <Image Grid.Row="0" Height="20" Width="20"  
                            Source="Assets/FuelIcon.jpg"/>
@@ -138,7 +138,7 @@ It includes the following options.
             rowDef2 = new RowDefinition();
             grid1.RowDefinitions.Add(rowDef1);
             grid1.RowDefinitions.Add(rowDef2);
-            BitmapImage _mapimage = new BitmapImage(new Uri("Assets/FuelIcon.jpg"));
+            BitmapImage _image = new BitmapImage(new Uri("Assets/FuelIcon.jpg"));
             TextBlock _textBlock = new TextBlock()
             {
                 Text = "Fuel Availability",
@@ -147,7 +147,7 @@ It includes the following options.
             };
             Grid.SetRow(_textBlock, 1);
             Image image = new Image() { Height = 20, Width = 20 };
-            image.Source = _mapimage;
+            image.Source = _image;
             Grid.SetRow(image, 0);
             circularGauge.GaugeHeader = grid1;
             this.Grid.Children.Add(circularGauge);
