@@ -20,9 +20,9 @@ The orientation of the linear gauge can be changed by setting the **Orientation*
 
 {% highlight c# %}
 
-    SfLinearGauge lineargauge = new SfLinearGauge();
-    lineargauge.Orientation = Orientation.Horizontal;
-    this.Grid.Children.Add(lineargauge);
+    SfLinearGauge linear = new SfLinearGauge();
+    linear.Orientation = Orientation.Horizontal;
+    this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}

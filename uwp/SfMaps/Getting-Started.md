@@ -213,7 +213,7 @@ To load the shapefile alone:
 
 {% highlight c# %}
 
-    (map.Layers[0] as ShapeFileLayer).LoadFromStream(shpstream);  
+    (map.Layers[0] as ShapeFileLayer).LoadFromStream(stream);  
 
 {% endhighlight %}
 
@@ -221,7 +221,7 @@ To load a shapefile and DBF file:
 
 {% highlight c# %}
 
-    (map.Layers[0] as ShapeFileLayer).LoadFromStream(shpstream,dbfstream);   
+    (map.Layers[0] as ShapeFileLayer).LoadFromStream(stream,dbf);   
 
 {% endhighlight %}
 

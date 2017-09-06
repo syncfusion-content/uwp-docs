@@ -61,11 +61,11 @@ You can customize the shape’s color by using `ShapeFill`, `ShapeStroke` and
     public class Country : INotifyPropertyChanged    
     {
         public string NAME { get; set; }
-        private Visibility itemsvisibility = Visibility.Visible;        
+        private Visibility visibility = Visibility.Visible;        
         public Visibility ItemsVisibility        
         {           
-            get { return itemsvisibility; }            
-            set {itemsvisibility = value; }        
+            get { return visibility; }            
+            set {visibility = value; }        
         }        
         private double weather { get; set; }       
         public double Weather        

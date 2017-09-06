@@ -115,13 +115,13 @@ They are:
             SfCircularGauge circularGauge = new SfCircularGauge();
             circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.StartAngle = 135;
-            _mainscale.SweepAngle = 270;
-            _mainscale.StartValue = 0;
-            _mainscale.EndValue = 100;
-            _mainscale.Interval = 10;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale scale = new CircularScale();
+            scale.StartAngle = 135;
+            scale.SweepAngle = 270;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            circularGauge.Scales.Add(scale);
             TextBlock _textBlock = new TextBlock()
             {
                 Text = "Temperature (K)",
@@ -179,25 +179,25 @@ You can add ranges to SfCircularGauge by creating ranges collection using **Rang
             SfCircularGauge circularGauge = new SfCircularGauge();
             circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.StartAngle = 135;
-            _mainscale.SweepAngle = 270;
-            _mainscale.StartValue = 0;
-            _mainscale.EndValue = 100;
-            _mainscale.Interval = 10;
-            _mainscale.Ranges.Add(new CircularRange()
+            CircularScale scale = new CircularScale();
+            scale.StartAngle = 135;
+            scale.SweepAngle = 270;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 0,
                 EndValue = 60,
                 Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0X66, 0X66, 0X66))
             });
-            _mainscale.Ranges.Add(new CircularRange()
+            scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 60,
                 EndValue = 100,
                 Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0XC1, 0X25, 0X2C))
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(scale);
             TextBlock _textBlock = new TextBlock()
             {
                 Text = "Temperature (K)",
@@ -261,30 +261,30 @@ You can add Pointers to SfCircularGauge to point a values on the scale.
             SfCircularGauge circularGauge = new SfCircularGauge();
             circularGauge.GaugeHeaderPosition = new Point(0.45, 0.8);
             circularGauge.HeaderAlignment = HeaderAlignment.Custom;
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.StartAngle = 135;
-            _mainscale.SweepAngle = 270;
-            _mainscale.StartValue = 0;
-            _mainscale.EndValue = 100;
-            _mainscale.Interval = 10;
-            _mainscale.Ranges.Add(new CircularRange()
+            CircularScale scale = new CircularScale();
+            scale.StartAngle = 135;
+            scale.SweepAngle = 270;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 0,
                 EndValue = 60,
                 Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0X66, 0X66, 0X66))
             });
-            _mainscale.Ranges.Add(new CircularRange()
+            scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 60,
                 EndValue = 100,
                 Stroke = new SolidColorBrush(Color.FromArgb(0XFF, 0XC1, 0X25, 0X2C))
             });
-            _mainscale.Pointers.Add(new CircularPointer()
+            scale.Pointers.Add(new CircularPointer()
             {
                 PointerType = PointerType.NeedlePointer,
                 Value = 10
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(scale);
             TextBlock _textBlock = new TextBlock()
             {
                 Text = "Temperature (K)",

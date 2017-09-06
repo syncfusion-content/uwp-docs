@@ -36,29 +36,29 @@ Ranges start and end values are set by the **StartValue** and **EndValue** prope
 
     
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.Ranges.Add(new CircularRange()
+            CircularScale _scale = new CircularScale();
+            _scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 0,
                 EndValue = 40,
                 Stroke = new SolidColorBrush(Colors.Green),
                 StrokeThickness = 10
             });
-            _mainscale.Ranges.Add(new CircularRange()
+            _scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 40,
                 EndValue = 60,
                 Stroke = new SolidColorBrush(Colors.Yellow),
                 StrokeThickness = 10
             });
-            _mainscale.Ranges.Add(new CircularRange()
+            _scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 60,
                 EndValue = 100,
                 Stroke = new SolidColorBrush(Colors.Red),
                 StrokeThickness = 10
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -90,10 +90,10 @@ The appearance of Circular range is customized by setting the **StartWidth** and
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.Radius = 200;
-            _mainscale.RangePosition = RangePosition.Inside;
-            _mainscale.Ranges.Add(new CircularRange()
+            CircularScale _scale = new CircularScale();
+            _scale.Radius = 200;
+            _scale.RangePosition = RangePosition.Inside;
+            _scale.Ranges.Add(new CircularRange()
             { 
                 StartValue = 0, 
                 EndValue = 40, 
@@ -103,7 +103,7 @@ The appearance of Circular range is customized by setting the **StartWidth** and
                 EndWidth = 10
 
             });
-            _mainscale.Ranges.Add(new CircularRange()
+            _scale.Ranges.Add(new CircularRange()
             { 
                 StartValue = 40,
                 EndValue = 60,
@@ -112,7 +112,7 @@ The appearance of Circular range is customized by setting the **StartWidth** and
                 StartWidth = 1,
                 EndWidth = 10
             });
-            _mainscale.Ranges.Add(new CircularRange() 
+            _scale.Ranges.Add(new CircularRange() 
             { 
                 StartValue = 60,
                 EndValue = 100,
@@ -121,7 +121,7 @@ The appearance of Circular range is customized by setting the **StartWidth** and
                 StartWidth = 1,
                 EndWidth = 10
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -149,10 +149,10 @@ You can bind the range’s stroke to the tick lines and labels within its range 
 {% highlight c# %}
 
       SfCircularGauge circularGauge = new SfCircularGauge();
-        CircularScale _mainscale = new CircularScale();
-        _mainscale.BindRangeStrokeToLabels = true;
-        _mainscale.BindRangeStrokeToTicks = true;
-        circularGauge.Scales.Add(_mainscale);
+        CircularScale _scale = new CircularScale();
+        _scale.BindRangeStrokeToLabels = true;
+        _scale.BindRangeStrokeToTicks = true;
+        circularGauge.Scales.Add(_scale);
         this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -186,9 +186,9 @@ These options are:
 {% highlight c# %}
 
            SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.RangePosition = RangePosition.Outside;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale _scale = new CircularScale();
+            _scale.RangePosition = RangePosition.Outside;
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}

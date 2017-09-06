@@ -20,9 +20,9 @@ The digital characters in the digital gauge can be viewed in different types of 
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "GAUGE";
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "GAUGE";
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -43,10 +43,10 @@ The digital characters which are set as the value property of the digital gauge 
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "12345";
-    digitalgauge.CharacterType = CharacterType.SegmentSeven;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "12345";
+    digital.CharacterType = CharacterType.SegmentSeven;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -66,10 +66,10 @@ The digital characters which are set as the value property of the digital gauge 
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "SYNCFUSION";
-    digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "SYNCFUSION";
+    digital.CharacterType = CharacterType.SegmentFourteen;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -89,10 +89,10 @@ The digital characters which are set as the value property of the digital gauge 
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "SYNCFUSION";
-    digitalgauge.CharacterType = CharacterType.SegmentSixteen;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "SYNCFUSION";
+    digital.CharacterType = CharacterType.SegmentSixteen;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
@@ -112,10 +112,10 @@ The digital characters which are set as the value property of the digital gauge 
 
 {% highlight c# %}
 
-    SfDigitalGauge digitalgauge = new SfDigitalGauge();
-    digitalgauge.Value = "SYNCFUSION";
-    digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
-    this.Grid.Children.Add(digitalgauge);
+    SfDigitalGauge digital = new SfDigitalGauge();
+    digital.Value = "SYNCFUSION";
+    digital.CharacterType = CharacterType.EightCrossEightDotMatrix;
+    this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs%}

@@ -20,12 +20,12 @@ Quantitative scale contains two major components such as ticks and labels which 
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.QuantitativeScaleLength = 300;
-    bulletgraph.Minimum = 0;
-    bulletgraph.Maximum = 10;
-    bulletgraph.Interval = 2;
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.QuantitativeScaleLength = 300;
+    bullet.Minimum = 0;
+    bullet.Maximum = 10;
+    bullet.Interval = 2;
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}

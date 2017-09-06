@@ -35,7 +35,7 @@ The range of the main scale can be mentioned by **Minimum** and **Maximum** of t
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
+            SfLinearGauge linear = new SfLinearGauge();
             LinearScale _mainScale = new LinearScale();
             _mainScale.ScaleDirection = LinearScaleDirection.Forward;
             _mainScale.ScaleBarStroke = new SolidColorBrush(Colors.Black);
@@ -45,8 +45,8 @@ The range of the main scale can be mentioned by **Minimum** and **Maximum** of t
             _mainScale.Interval = 1;
             _mainScale.Minimum = 0;
             _mainScale.Maximum = 10;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}
