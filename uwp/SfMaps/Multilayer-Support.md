@@ -104,11 +104,11 @@ Situations arise where, any combination of available shapefiles needs to be load
     public class Country : INotifyPropertyChanged    
     {        
       public string NAME { get; set; }        
-      private Visibility itemsvisibility = Visibility.Visible;       
+      private Visibility visibility = Visibility.Visible;       
       public Visibility ItemsVisibility        
       {            
-        get { return itemsvisibility; }           
-        set { itemsvisibility = value; }        
+        get { return visibility; }           
+        set { visibility = value; }        
       }        
       private double weather { get; set; }        
       public double Weather        
@@ -148,7 +148,7 @@ Situations arise where, any combination of available shapefiles needs to be load
     }    
     public class MapViewModel    
     {       
-      public ObservableCollection<Country> MuliLayerList { get; set; }       
+      public ObservableCollection<Country> Multilayer { get; set; }       
       public ObservableCollection<Country> AfricaList { get; set; }        
       public ObservableCollection<Country> OceaniaList { get; set; }        
       public MapViewModel()        
@@ -162,14 +162,14 @@ Situations arise where, any combination of available shapefiles needs to be load
         this.AfricaList.Add(new Country() { NAME = "Congo (Brazzaville)", Weather = 45 });            
         this.AfricaList.Add(new Country() { NAME = "Ethiopia", Weather = 50 });            
         this.AfricaList.Add(new Country() { NAME = "South Africa", Weather = 30 });            
-        this.MuliLayerList = new ObservableCollection<Country>();            
-        this.MuliLayerList.Add(new Country() { NAME = "Asia", Weather = 40 });           
-        this.MuliLayerList.Add(new Country() { NAME = "South America", Weather = 45 });           
-        this.MuliLayerList.Add(new Country() { NAME = "North America", Weather = 52 });           
-        this.MuliLayerList.Add(new Country() { NAME = "Antarctica", ItemsVisibility = Visibility.Collapsed });          
-        this.MuliLayerList.Add(new Country() { NAME = "Oceania", ItemsVisibility = Visibility.Collapsed });         
-        this.MuliLayerList.Add(new Country() { NAME = "Europe", ItemsVisibility = Visibility.Collapsed });         
-        this.MuliLayerList.Add(new Country() { NAME = "Africa", ItemsVisibility = Visibility.Collapsed });      
+        this.Multilayer = new ObservableCollection<Country>();            
+        this.Multilayer.Add(new Country() { NAME = "Asia", Weather = 40 });           
+        this.Multilayer.Add(new Country() { NAME = "South America", Weather = 45 });           
+        this.Multilayer.Add(new Country() { NAME = "North America", Weather = 52 });           
+        this.Multilayer.Add(new Country() { NAME = "Antarctica", ItemsVisibility = Visibility.Collapsed });          
+        this.Multilayer.Add(new Country() { NAME = "Oceania", ItemsVisibility = Visibility.Collapsed });         
+        this.Multilayer.Add(new Country() { NAME = "Europe", ItemsVisibility = Visibility.Collapsed });         
+        this.Multilayer.Add(new Country() { NAME = "Africa", ItemsVisibility = Visibility.Collapsed });      
       }  
     }
 {% endhighlight %}

@@ -66,8 +66,8 @@ They are:
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
-            lineargauge.Orientation = Orientation.Horizontal;
+            SfLinearGauge linear = new SfLinearGauge();
+            linear.Orientation = Orientation.Horizontal;
             LinearScale _mainScale = new LinearScale();
             _mainScale.ScaleDirection = LinearScaleDirection.Forward;
             _mainScale.ScaleBarStroke = new SolidColorBrush(Colors.White);
@@ -77,8 +77,8 @@ They are:
             _mainScale.Interval = 10;
             _mainScale.Minimum = 0;
             _mainScale.Maximum = 100;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}
@@ -114,7 +114,7 @@ You can add ranges to SfLinearGauge by creating **LinearRange** collection using
 
 {% highlight c# %}
 
-           SfLinearGauge lineargauge = new SfLinearGauge();
+           SfLinearGauge linear = new SfLinearGauge();
            LinearScale _mainScale = new LinearScale();
            _mainScale.Ranges.Add(new LinearRange()
            {
@@ -136,8 +136,8 @@ You can add ranges to SfLinearGauge by creating **LinearRange** collection using
                RangeOpacity = 1,
                RangeStroke = new SolidColorBrush(Colors.Red) 
            });
-           lineargauge.MainScale = _mainScale;
-           this.Grid.Children.Add(lineargauge);
+           linear.MainScale = _mainScale;
+           this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}
@@ -166,7 +166,7 @@ You can also add Pointers to SfLinearGauge to point a values on the scale.
 
 {% highlight c# %}
 
-           SfLinearGauge lineargauge = new SfLinearGauge();
+           SfLinearGauge linear = new SfLinearGauge();
            LinearScale _mainScale = new LinearScale();
            _mainScale.Pointers.Add(new LinearPointer()
            {
@@ -179,8 +179,8 @@ You can also add Pointers to SfLinearGauge to point a values on the scale.
                PointerType = LinearPointerType.SymbolPointer,
                SymbolPointerPosition = LinearSymbolPointersPosition.Above
            });
-           lineargauge.MainScale = _mainScale;
-           this.Grid.Children.Add(lineargauge);
+           linear.MainScale = _mainScale;
+           this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}

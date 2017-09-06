@@ -30,11 +30,11 @@ The label stroke can be changed using the **LabelStroke** property. The labels c
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.LabelStroke = new SolidColorBrush(Colors.Red);
-            _mainscale.LabelOffset = 10;
-            _mainscale.LabelAutoSizeChange = true;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale _scale = new CircularScale();
+            _scale.LabelStroke = new SolidColorBrush(Colors.Red);
+            _scale.LabelOffset = 10;
+            _scale.LabelAutoSizeChange = true;
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
             
 {% endhighlight %}
@@ -77,10 +77,10 @@ The **NumericScaleType** property allows you to set the type of label. The follo
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.NumericScaleType = NumericScaleType.Thousands;
-            _mainscale.EnableSmartLabels = false;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale _scale = new CircularScale();
+            _scale.NumericScaleType = NumericScaleType.Thousands;
+            _scale.EnableSmartLabels = false;
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 
@@ -107,9 +107,9 @@ The **NoOfFractionalDigits** property is used to set the number of fractional di
 {% highlight c# %}
 
              SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.NoOfFractionalDigit = 1;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale _scale = new CircularScale();
+            _scale.NoOfFractionalDigit = 1;
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
             
 {% endhighlight %}
@@ -140,9 +140,9 @@ This property allows you to set the postfix values to the scale labels. The labe
 {% highlight c# %}
 
         SfCircularGauge circularGauge = new SfCircularGauge();
-        CircularScale _mainscale = new CircularScale();
-        _mainscale.LabelPostfix = "%";      
-        circularGauge.Scales.Add(_mainscale);
+        CircularScale _scale = new CircularScale();
+        _scale.LabelPostfix = "%";      
+        circularGauge.Scales.Add(_scale);
         this.Grid.Children.Add(circularGauge);
         
 {% endhighlight %}
@@ -168,9 +168,9 @@ This property allows you to set the prefix values for the scale labels. The labe
 {% highlight c# %}
  
        SfCircularGauge circularGauge = new SfCircularGauge();
-        CircularScale _mainscale = new CircularScale();
-        _mainscale.LabelPrefix = "$";
-        circularGauge.Scales.Add(_mainscale);
+        CircularScale _scale = new CircularScale();
+        _scale.LabelPrefix = "$";
+        circularGauge.Scales.Add(_scale);
         this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -205,9 +205,9 @@ These options are:
 {% highlight c# %}
 
      SfCircularGauge circularGauge = new SfCircularGauge();
-     CircularScale _mainscale = new CircularScale();
-     _mainscale.LabelPosition = LabelPosition.Outside;
-      circularGauge.Scales.Add(_mainscale);
+     CircularScale _scale = new CircularScale();
+     _scale.LabelPosition = LabelPosition.Outside;
+      circularGauge.Scales.Add(_scale);
       this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}

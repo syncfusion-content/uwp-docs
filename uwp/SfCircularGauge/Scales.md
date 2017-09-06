@@ -46,31 +46,31 @@ CircularScale contains three sub elements such as Rim, Ticks, and Labels. It def
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.Radius = 200;
-            _mainscale.StartAngle = 135;
-            _mainscale.SweepAngle = 270;
-            _mainscale.StartValue = 0;
-            _mainscale.EndValue = 100;
-            _mainscale.Interval = 10;
-            _mainscale.Ranges.Add(new CircularRange()
+            CircularScale _scale = new CircularScale();
+            _scale.Radius = 200;
+            _scale.StartAngle = 135;
+            _scale.SweepAngle = 270;
+            _scale.StartValue = 0;
+            _scale.EndValue = 100;
+            _scale.Interval = 10;
+            _scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 0,
                 EndValue = 60,
                 Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0x66, 0x66, 0x66))
             });
-            _mainscale.Ranges.Add(new CircularRange()
+            _scale.Ranges.Add(new CircularRange()
             {
                 StartValue = 60,
                 EndValue = 100,
                 Stroke = new SolidColorBrush(Color.FromArgb(0xFF, 0xC1, 0x25, 0x2C))
             });
-            _mainscale.Pointers.Add(new CircularPointer()
+            _scale.Pointers.Add(new CircularPointer()
             {
                 PointerType = PointerType.NeedlePointer,
                 Value = 170
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -131,7 +131,7 @@ It helps to be able to add multiple scales to the same circular gauge, and also 
 {% highlight c# %}
 
        SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
+            CircularScale _scale = new CircularScale();
             CircularScale scale1 = new CircularScale();
             CircularScale scale2 = new CircularScale();
             scale1.Height = 500;
@@ -238,7 +238,7 @@ It helps to be able to add multiple scales to the same circular gauge, and also 
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
+            CircularScale _scale = new CircularScale();
             CircularScale scale1 = new CircularScale();
             CircularScale scale2 = new CircularScale();
             scale1.Radius = 300;

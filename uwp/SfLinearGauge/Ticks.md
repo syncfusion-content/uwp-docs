@@ -34,7 +34,7 @@ By setting **MajorTickStroke** and **MinorTickStroke**, the stroke of the major 
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
+            SfLinearGauge linear = new SfLinearGauge();
             LinearScale _mainScale = new LinearScale();
             _mainScale.MinorTicksPerInterval = 3;
             _mainScale.MajorTickSize = 15;
@@ -43,8 +43,8 @@ By setting **MajorTickStroke** and **MinorTickStroke**, the stroke of the major 
             _mainScale.MinorTickStroke = new SolidColorBrush(Colors.Yellow);
             _mainScale.MajorTickStrokeThickness = 2;
             _mainScale.MinorTickStrokeThickness = 1;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}
@@ -74,11 +74,11 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
+            SfLinearGauge linear = new SfLinearGauge();
             LinearScale _mainScale = new LinearScale();
             _mainScale.TickPosition = LinearTicksPosition.Cross;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}

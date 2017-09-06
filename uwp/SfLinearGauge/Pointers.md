@@ -31,12 +31,12 @@ Bar pointer is an accenting line or colored bar that is placed on the linear gau
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
-            lineargauge.Orientation = Orientation.Horizontal;
+            SfLinearGauge linear = new SfLinearGauge();
+            linear.Orientation = Orientation.Horizontal;
             LinearScale _mainScale = new LinearScale();
             _mainScale.Pointers.Add(new LinearPointer() { PointerType = LinearPointerType.BarPointer,Value=40 });
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}
@@ -63,12 +63,12 @@ In symbol pointer type, the value is pointed by a symbol on the scale. The user 
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
-            lineargauge.Orientation = Orientation.Horizontal;
+            SfLinearGauge linear = new SfLinearGauge();
+            linear.Orientation = Orientation.Horizontal;
             LinearScale _mainScale = new LinearScale();
             _mainScale.Pointers.Add(new LinearPointer() { PointerType = LinearPointerType.SymbolPointer,Value=40, SymbolPointerStyle = LinearSymbolPointerStyle.Triangle });
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}
@@ -101,8 +101,8 @@ The SymbolPointer in the scale can be placed above, below or in between the scal
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
-            lineargauge.Orientation = Orientation.Horizontal;
+            SfLinearGauge linear = new SfLinearGauge();
+            linear.Orientation = Orientation.Horizontal;
             LinearScale _mainScale = new LinearScale();
             _mainScale.Pointers.Add(new LinearPointer()
             {
@@ -116,8 +116,8 @@ The SymbolPointer in the scale can be placed above, below or in between the scal
                 PointerType = LinearPointerType.SymbolPointer,
                 SymbolPointerPosition = LinearSymbolPointersPosition.Above
             });
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}

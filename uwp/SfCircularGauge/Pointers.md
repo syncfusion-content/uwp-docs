@@ -41,8 +41,8 @@ A needle pointer contains two parts, the needle and the pointer cap that can be 
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.Pointers.Add(new CircularPointer()
+            CircularScale _scale = new CircularScale();
+            _scale.Pointers.Add(new CircularPointer()
             {
                 Value = 80,
                 PointerType = PointerType.NeedlePointer,
@@ -54,7 +54,7 @@ A needle pointer contains two parts, the needle and the pointer cap that can be 
                 PointerCapDiameter = 20,
                 NeedlePointerVisibility = Visibility.Visible
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -93,15 +93,15 @@ It is **enum** includes the following option.
 {% highlight c# %}
 
            SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.Radius = 200;
-            _mainscale.Pointers.Add(
+            CircularScale _scale = new CircularScale();
+            _scale.Radius = 200;
+            _scale.Pointers.Add(
                 new CircularPointer()
             { 
                 Value = 80, PointerType = PointerType.NeedlePointer, 
                 NeedlePointerType = NeedlePointerType.Arrow
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
             
 {% endhighlight %}
@@ -137,8 +137,8 @@ A range pointer is an accenting line or shaded background range that can be plac
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.Pointers.Add(new CircularPointer()
+            CircularScale _scale = new CircularScale();
+            _scale.Pointers.Add(new CircularPointer()
             {
                 Value = 80,
                 PointerType = PointerType.RangePointer,
@@ -147,7 +147,7 @@ A range pointer is an accenting line or shaded background range that can be plac
                 RangePointerStrokeThickness = 10,
                 RangePointerVisibility = Visibility.Visible
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 			
 {% endhighlight %}
@@ -180,9 +180,9 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 {% highlight c# %}
 
         SfCircularGauge circularGauge = new SfCircularGauge();
-        CircularScale _mainscale = new CircularScale();
-        _mainscale.RangePointerPosition = RangePointerPosition.Outside;
-        circularGauge.Scales.Add(_mainscale);
+        CircularScale _scale = new CircularScale();
+        _scale.RangePointerPosition = RangePointerPosition.Outside;
+        circularGauge.Scales.Add(_scale);
         this.Grid.Children.Add(circularGauge);
         
 {% endhighlight %}
@@ -217,8 +217,8 @@ In a symbol pointer, the value is pointed out by a symbol on the scale. You can 
 {% highlight c# %}
 
           SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.Pointers.Add(new CircularPointer()
+            CircularScale _scale = new CircularScale();
+            _scale.Pointers.Add(new CircularPointer()
             {
                 Value = 80,
                 PointerType = PointerType.SymbolPointer,
@@ -226,7 +226,7 @@ In a symbol pointer, the value is pointed out by a symbol on the scale. You can 
                 RangePointerStroke = new SolidColorBrush(Colors.Orange),
                 SymbolPointerVisibility = Visibility.Visible
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -263,8 +263,8 @@ Symbol is an **enum** property that provides symbol options for the symbol point
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.Pointers.Add(new CircularPointer()
+            CircularScale _scale = new CircularScale();
+            _scale.Pointers.Add(new CircularPointer()
             {
                 PointerType = PointerType.SymbolPointer,
                 Symbol = Symbol.Pentagon,
@@ -273,7 +273,7 @@ Symbol is an **enum** property that provides symbol options for the symbol point
                 SymbolPointerWidth = 20,
                 Value = 50
             });
-            circularGauge.Scales.Add(_mainscale);
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -304,9 +304,8 @@ The SymbolPointerTemplate is a DataTemplate type, used to customize or override 
                 </DataTemplate>
          </syncfusion:CircularPointer.SymbolPointerTemplate>
       </syncfusion:CircularPointer>
-</syncfusion:CircularScale.Pointers>
-              
- </syncfusion:CircularScale>
+    </syncfusion:CircularScale.Pointers>
+               </syncfusion:CircularScale>
             </syncfusion:SfCircularGauge.Scales >
         </syncfusion:SfCircularGauge>
 

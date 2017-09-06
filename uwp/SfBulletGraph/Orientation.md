@@ -21,13 +21,13 @@ By default orientation of SfBulletGraph is horizontal. It can be customized by u
 
 {% highlight c# %}
 
-     SfBulletGraph bulletgraph = new SfBulletGraph();
-     bulletgraph.Orientation = Orientation.Vertical;
-     this.Grid.Children.Add(bulletgraph);
+     SfBulletGraph bullet = new SfBulletGraph();
+     bullet.Orientation = Orientation.Vertical;
+     this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
-{% endtabs %}
 
+{% endtabs %}
 <table>
 <tr>
 <td>
