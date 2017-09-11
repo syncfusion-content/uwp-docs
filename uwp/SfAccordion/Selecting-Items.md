@@ -372,9 +372,9 @@ private void accordion_SelectedItemsChanged(object sender, System.Collections.Sp
 
 {
     
-string olditems = string.Empty;
+string oldie = string.Empty;
 
-string newitems = string.Empty;
+string newbie = string.Empty;
 
 if (e.OldItems != null)
 
@@ -382,13 +382,13 @@ if (e.OldItems != null)
     
 foreach (var item in e.OldItems)
 
-olditems += (item as SfAccordionItem).Header + " , ";
+oldie += (item as SfAccordionItem).Header + " , ";
 
 }
 
 else
 
-olditems = "null";
+oldie = "null";
 
 if (e.NewItems != null)
 
@@ -396,13 +396,13 @@ if (e.NewItems != null)
     
 foreach (var item in e.NewItems)
 
-newitems += (item as SfAccordionItem).Header + " , ";
+newbie += (item as SfAccordionItem).Header + " , ";
 
  }
  
 else
 
-newitems = "null";
+newbie = "null";
 
 oldStartingIndex.Text = "OldStartingIndex is : " + e.OldStartingIndex;
 
@@ -412,9 +412,9 @@ selectedIndex.Text = "SelectedIndex is : " + accordion.SelectedIndex;
 
 selectedItem.Text = "SelectedItem is : " + ((accordion.SelectedItem == null)? "null":(accordion.SelectedItem as SfAccordionItem).Header);
 
-oldItems.Text = "OldItems are : " + olditems;
+oldItems.Text = "OldItems are : " + oldie;
 
-newItems.Text = "NewItems are : " + newitems;
+newItems.Text = "NewItems are : " + newbie;
  
 }
 
@@ -427,22 +427,22 @@ Option Infer On
 Private Sub accordion_SelectedItemsChanged(ByVal sender As Object, ByVal e As System.Collections.Specialized.NotifyCollectionChangedEventArgs)
 
 
-Dim olditems As String = String.Empty
+Dim oldie As String = String.Empty
 
-Dim newitems As String = String.Empty
+Dim newbie As String = String.Empty
 
 If e.OldItems IsNot Nothing Then
 
 
 For Each item In e.OldItems
 
-olditems &= (TryCast(item, SfAccordionItem)).Header & " , "
+oldie &= (TryCast(item, SfAccordionItem)).Header & " , "
 Next item
 
 
 Else
 
-olditems = "null"
+oldie = "null"
 End If
 
 If e.NewItems IsNot Nothing Then
@@ -450,13 +450,13 @@ If e.NewItems IsNot Nothing Then
 
 For Each item In e.NewItems
 
-newitems &= (TryCast(item, SfAccordionItem)).Header & " , "
+newbie &= (TryCast(item, SfAccordionItem)).Header & " , "
 Next item
 
 
 Else
 
-newitems = "null"
+newbie = "null"
 End If
 
 oldStartingIndex.Text = "OldStartingIndex is : " & e.OldStartingIndex
@@ -467,9 +467,9 @@ selectedIndex.Text = "SelectedIndex is : " & accordion.SelectedIndex
 
 selectedItem.Text = "SelectedItem is : " & (If(accordion.SelectedItem Is Nothing, "null", (TryCast(accordion.SelectedItem, SfAccordionItem)).Header))
 
-oldItems.Text = "OldItems are : " & olditems
+oldItems.Text = "OldItems are : " & oldie
 
-newItems.Text = "NewItems are : " & newitems
+newItems.Text = "NewItems are : " & newbie
 
 End Sub
 
