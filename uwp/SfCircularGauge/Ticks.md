@@ -39,15 +39,15 @@ A tick’s length, stroke, and stroke thickness are set by the TickLength, TickS
 {% highlight c# %}
 
              SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.MinorTicksPerInterval = 3;
-            _mainscale.TickLength = 20;
-            _mainscale.TickStroke = new SolidColorBrush(Colors.Red);
-            _mainscale.TickStrokeThickness = 2;
-            _mainscale.SmallTickLength = 10;
-            _mainscale.SmallTickStroke = new SolidColorBrush(Colors.Green);
-            _mainscale.SmallTickStrokeThickness = 1;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale _scale = new CircularScale();
+            _scale.MinorTicksPerInterval = 3;
+            _scale.TickLength = 20;
+            _scale.TickStroke = new SolidColorBrush(Colors.Red);
+            _scale.TickStrokeThickness = 2;
+            _scale.SmallTickLength = 10;
+            _scale.SmallTickStroke = new SolidColorBrush(Colors.Green);
+            _scale.SmallTickStrokeThickness = 1;
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 
@@ -78,10 +78,10 @@ The Major and Minor ticks can be positioned far away from the rim by using the *
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.MajorTickOffset = 10;
-            _mainscale.MinorTickOffset = 10;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale _scale = new CircularScale();
+            _scale.MajorTickOffset = 10;
+            _scale.MinorTickOffset = 10;
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
@@ -116,10 +116,10 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 {% highlight c# %}
 
             SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _mainscale = new CircularScale();
-            _mainscale.TickPosition = TickPosition.Cross;
-            _mainscale.TickShape = TickShape.Rectangle;
-            circularGauge.Scales.Add(_mainscale);
+            CircularScale _scale = new CircularScale();
+            _scale.TickPosition = TickPosition.Cross;
+            _scale.TickShape = TickShape.Rectangle;
+            circularGauge.Scales.Add(_scale);
             this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}

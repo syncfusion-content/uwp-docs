@@ -28,8 +28,8 @@ This section explains you the steps required to configure the **SfBulletGraph** 
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
@@ -52,10 +52,10 @@ You can assign a caption to **SfBulletGraph** by making use of “Caption” pro
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.Caption = Revenue YTD;
-    bulletgraph.CaptionPosition  = BulletGraphCaptionPosition.Far;
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.Caption = Revenue YTD;
+    bullet.CaptionPosition  = BulletGraphCaptionPosition.Far;
+    this.Grid.Children.Add(bullet);
     
 {% endhighlight %}
 {% endtabs %}
@@ -93,21 +93,21 @@ They are:
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-      bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
-      bulletgraph.Orientation = Orientation.Horizontal;
-      bulletgraph.QualitativeRangesSize = 30;
-      bulletgraph.QuantitativeScaleLength = 300;
-      bulletgraph.Minimum = 0;
-      bulletgraph.Maximum = 10;
-      bulletgraph.Interval = 2;
-      bulletgraph.MinorTicksPerInterval = 3;
-      bulletgraph.MajorTickSize = 15;
-      bulletgraph.MinorTickSize = 10;
-      bulletgraph.MajorTickStroke = new SolidColorBrush(Colors.Red);
-      bulletgraph.LabelStroke = new SolidColorBrush(Colors.Black);
-      bulletgraph.MinorTickStroke = new SolidColorBrush(Colors.Green);
-      this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+      bullet.FlowDirection = BulletGraphFlowDirection.Forward;
+      bullet.Orientation = Orientation.Horizontal;
+      bullet.QualitativeRangesSize = 30;
+      bullet.QuantitativeScaleLength = 300;
+      bullet.Minimum = 0;
+      bullet.Maximum = 10;
+      bullet.Interval = 2;
+      bullet.MinorTicksPerInterval = 3;
+      bullet.MajorTickSize = 15;
+      bullet.MinorTickSize = 10;
+      bullet.MajorTickStroke = new SolidColorBrush(Colors.Red);
+      bullet.LabelStroke = new SolidColorBrush(Colors.Black);
+      bullet.MinorTickStroke = new SolidColorBrush(Colors.Green);
+      this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
@@ -145,33 +145,33 @@ You can add ranges to **SfBulletGraph** by creating ranges collection using **Qu
 
 {% highlight c# %}
 
-           SfBulletGraph bulletgraph = new SfBulletGraph();
-            bulletgraph.QualitativeRangesSize = 30;
-            bulletgraph.QuantitativeScaleLength = 300;
-            bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
-            bulletgraph.Orientation = Orientation.Horizontal;
-            bulletgraph.Minimum = 0;
-            bulletgraph.Maximum = 10;
-            bulletgraph.Interval = 2;
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange()
+           SfBulletGraph bullet = new SfBulletGraph();
+            bullet.QualitativeRangesSize = 30;
+            bullet.QuantitativeScaleLength = 300;
+            bullet.FlowDirection = BulletGraphFlowDirection.Forward;
+            bullet.Orientation = Orientation.Horizontal;
+            bullet.Minimum = 0;
+            bullet.Maximum = 10;
+            bullet.Interval = 2;
+            bullet.QualitativeRanges.Add(new QualitativeRange()
             {
                 RangeEnd = 4.5,
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Red)
             });
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange()
+            bullet.QualitativeRanges.Add(new QualitativeRange()
             {
                 RangeEnd = 7.5,
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Yellow)
             });
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange()
+            bullet.QualitativeRanges.Add(new QualitativeRange()
             {
                 RangeEnd = 10,
                 RangeOpacity = 1,
                 RangeStroke = new SolidColorBrush(Colors.Green)
             });
-            this.Grid.Children.Add(bulletgraph);
+            this.Grid.Children.Add(bullet);
             
 {% endhighlight %}
 {% endtabs %}

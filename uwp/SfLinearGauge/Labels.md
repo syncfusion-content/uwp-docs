@@ -29,15 +29,15 @@ The foreground of the label is customized by setting **LabelStroke** of the line
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
+            SfLinearGauge linear = new SfLinearGauge();
             LinearScale _mainScale = new LinearScale();
             _mainScale.Minimum = 0;
             _mainScale.Maximum = 10;
             _mainScale.LabelStroke = new SolidColorBrush(Colors.Red);
             _mainScale.LabelSize = 13;
             _mainScale.LabelOffset = 5;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge);
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear);
 
 {% endhighlight %}
 {% endtabs %}
@@ -65,11 +65,11 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 {% highlight c# %}
 
-            SfLinearGauge lineargauge = new SfLinearGauge();
+            SfLinearGauge linear = new SfLinearGauge();
             LinearScale _mainScale = new LinearScale();
             _mainScale.LabelPosition = LinearLabelsPosition.Above;
-            lineargauge.MainScale = _mainScale;
-            this.Grid.Children.Add(lineargauge); 
+            linear.MainScale = _mainScale;
+            this.Grid.Children.Add(linear); 
 
 {% endhighlight %}
 {% endtabs %}
