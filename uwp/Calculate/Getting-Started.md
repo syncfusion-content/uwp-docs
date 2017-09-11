@@ -199,6 +199,9 @@ of `ICalcData` interface is used to get and set the values of the variables at r
 
 For more information regarding calculating with `ICalcData`, refer [here](https://help.syncfusion.com/uwp/calculate/working-with-icalcdata)
 
+
+N> Please find the sample which uses ICalcData and CalcQuickBase for computations, [Calculate](http://www.syncfusion.com/downloads/support/directtrac/general/CALCUL~1-947794915.ZIP)
+
 ## Cross Sheet Reference
 
 [CalcEngine](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine.html) provides support to perform the calculation by accessing the values from the different sheets using [RegisterGridAsSheet](https://help.syncfusion.com/cr/cref_files/windowsforms/calculate/Syncfusion.Calculate.Base~Syncfusion.Calculate.CalcEngine~RegisterGridAsSheet.html) method.
