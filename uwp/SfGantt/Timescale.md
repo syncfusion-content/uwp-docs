@@ -38,7 +38,7 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier();
 
 {% endtabs %}
 
-![](Timescale_images/Timescale_img1.jpeg)
+![](Timescale_images/overview.jpeg)
 
 
 By default, the interval type is set as Auto. We can also change the interval type and interval using the below properties in TimescaleTier class.
@@ -97,7 +97,7 @@ IntervalType = IntervalType.Days
 
 {% endhighlight %}
 {% endtabs %}
-![](Timescale_images/Timescale_img2.jpeg)
+![](Timescale_images/Interval.jpeg)
 
 
 N>The top tier’s interval and interval type must be greater the bottom tier’s interval and interval type.
@@ -171,7 +171,7 @@ this.Gantt.TimescaleSettings.BottomTier.LabelAlignment = TextAlignment.Left;
 {% endhighlight %}
 
 {% endtabs %}
-![](Timescale_images/Timescale_img3.jpeg)
+![](Timescale_images/DisplayFormats.jpeg)
 
 
 **Template**
@@ -232,7 +232,7 @@ The default appearance of the label in timescale cell can be customized using La
 
 {% endtabs %}
 
-![](Timescale_images/Timescale_img4.jpeg)
+![](Timescale_images/Template.jpeg)
 
 
 **Cell** **Width** **Customization**
@@ -267,7 +267,7 @@ this.Gantt.TimescaleSettings.CellSize = 350;
 
 {% endtabs %}
 
-![](Timescale_images/Timescale_img5.jpeg)
+![](Timescale_images/cellwidth.jpeg)
 
 N>The value for the cell width can range between 25 to 1000.
 
@@ -306,4 +306,4 @@ this.Gantt.TimescaleEndDate = new DateTime(2014, 5, 1);
 
 {% endtabs %}
 
-![](Timescale_images/Timescale_img6.jpeg)
+![](Timescale_images/range.jpeg)
