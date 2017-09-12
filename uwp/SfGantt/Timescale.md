@@ -5,6 +5,7 @@ This topic gives an overview on the features of Timescale. The following propert
 * TopTier – Represents the top tier of the timescale.
 * BottomTier – Represents the bottom tier of the timescale.
 
+{% tabs %}
 {% highlight xaml %}
 <Gantt:SfGantt.TimescaleSettings>
 
@@ -35,6 +36,8 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier();
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Timescale_images/Timescale_img1.jpeg)
 
 
@@ -44,7 +47,7 @@ By default, the interval type is set as Auto. We can also change the interval ty
 * Interval – Used to set a value that determines the interval between the timescale tier cells.
 
 The following code snippet illustrates the timescale displaying year and days.
-
+{% tabs %}
 {% highlight xaml %}
 <Gantt:SfGantt.TimescaleSettings>
 
@@ -93,7 +96,7 @@ IntervalType = IntervalType.Days
 
 
 {% endhighlight %}
-
+{% endtabs %}
 ![](Timescale_images/Timescale_img2.jpeg)
 
 
@@ -120,6 +123,20 @@ The default view of the timescale can be customized using the below properties.
 
 The following code snippet illustrates the customization of timescale.
 
+{% tabs %}
+
+{% highlight xaml %}
+this.Gantt.TimescaleSettings.Background = new SolidColorBrush(Colors.LightBlue);
+
+this.Gantt.TimescaleSettings.BorderBrush = new SolidColorBrush(Colors.DarkBlue);
+
+this.Gantt.TimescaleSettings.Foreground = new SolidColorBrush(Colors.Blue);
+
+this.Gantt.TimescaleSettings.TopTier.LabelAlignment = TextAlignment.Left;
+
+this.Gantt.TimescaleSettings.BottomTier.LabelAlignment = TextAlignment.Left;
+
+{% endhighlight %}
 {% highlight c# %}
 
 
@@ -151,31 +168,16 @@ The following code snippet illustrates the customization of timescale.
 
 </Gantt:SfGantt>
 
-
-
 {% endhighlight %}
 
-{% highlight xaml %}
-this.Gantt.TimescaleSettings.Background = new SolidColorBrush(Colors.LightBlue);
-
-this.Gantt.TimescaleSettings.BorderBrush = new SolidColorBrush(Colors.DarkBlue);
-
-this.Gantt.TimescaleSettings.Foreground = new SolidColorBrush(Colors.Blue);
-
-this.Gantt.TimescaleSettings.TopTier.LabelAlignment = TextAlignment.Left;
-
-this.Gantt.TimescaleSettings.BottomTier.LabelAlignment = TextAlignment.Left;
-
-
-
-{% endhighlight %}
-
+{% endtabs %}
 ![](Timescale_images/Timescale_img3.jpeg)
 
 
 **Template**
 
 The default appearance of the label in timescale cell can be customized using LabelTemplate property in TimescaleTier class.
+{% tabs %}
 
 {% highlight xaml %}
 <Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" AllowEditing="True" ProjectResources="{Binding ResourceCollection}">
@@ -226,9 +228,9 @@ The default appearance of the label in timescale cell can be customized using La
 
 </Gantt:SfGantt>
 
-
-
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Timescale_images/Timescale_img4.jpeg)
 
@@ -239,7 +241,9 @@ The width for the timescale cell in bottom tier can be set using CellSize proper
 
 The following code illustrates the CellSize property in timescale.
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 <Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}">
 
 <Gantt:SfGantt.TimescaleSettings>
@@ -261,6 +265,8 @@ this.Gantt.TimescaleSettings.CellSize = 350;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Timescale_images/Timescale_img5.jpeg)
 
 N>The value for the cell width can range between 25 to 1000.
@@ -270,6 +276,8 @@ N>The value for the cell width can range between 25 to 1000.
 The timescale range can be explicitly set using TimescaleStartDate and TimescaleEndDate properties in SfGantt class. 
 
 The following code illustrates the timescale range customization.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -295,5 +303,7 @@ this.Gantt.TimescaleEndDate = new DateTime(2014, 5, 1);
 
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Timescale_images/Timescale_img6.jpeg)

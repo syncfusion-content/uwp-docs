@@ -37,7 +37,7 @@ Occurs when the task is going to be expanded. The arguments contain the followin
 
 **TaskExpanded**
 
-Occurs when the task is expanded.  The arguments contain the following information.****
+Occurs when the task is expanded.  The arguments contain the following information.
 
 * Item - Gets the parent task of the item that is expanded.
 
@@ -49,13 +49,13 @@ Occurs when the task is going to be collapsed. The arguments contain the followi
 
 **TaskCollapsed**
 
-Occurs when the task is collapsed. The arguments contain the following information.****
+Occurs when the task is collapsed. The arguments contain the following information.
 
 * Item - Gets the parent task of the item that is collapsed.
 
 **TaskRelationshipEstablished**
 
-Occurs when the link is established between two tasks through mouse or touch interaction. The arguments contain the following information.****
+Occurs when the link is established between two tasks through mouse or touch interaction. The arguments contain the following information.
 
 * StartTask - Gets the start task of the relation.
 * EndTask – Gets the end task of the relation.
@@ -63,14 +63,14 @@ Occurs when the link is established between two tasks through mouse or touch int
 
 **TaskBarProgressChanging**
 
-Occurs while dragging the progress bar through mouse or touch interaction. The arguments contain the following information.****
+Occurs while dragging the progress bar through mouse or touch interaction. The arguments contain the following information.
 
 * Task - Gets the task in which the progress value is changing.
 * NewValue - Gets the current value of the progress.
 
 **TaskBarProgressChanged**
 
-Occurs after progress bar dragging is completed through mouse or touch interaction. The arguments contain the following information.****
+Occurs after progress bar dragging is completed through mouse or touch interaction. The arguments contain the following information.
 
 * Task - Gets the task in which the progress value is changed.
 * OldValue – Gets the previous progress value.
@@ -78,13 +78,13 @@ Occurs after progress bar dragging is completed through mouse or touch interacti
 
 **TaskBarDragStart**
 
-Occurs when the taskbar dragging is started. The arguments contain the following information.****
+Occurs when the taskbar dragging is started. The arguments contain the following information.
 
 * Task - Gets the task which is dragged.
 
 **TaskBarDragDelta**
 
-Occurs when the taskbar dragging is performed. The arguments contain the following information.****
+Occurs when the taskbar dragging is performed. The arguments contain the following information.
 
 * Task - Gets the task which is dragged.
 * NewStartDate - Gets the current start date of the task bar.
@@ -92,20 +92,20 @@ Occurs when the taskbar dragging is performed. The arguments contain the followi
 
 **TaskBarDragCompletedEventArgs**
 
-Occurs when the taskbar dragging is completed. The arguments contain the following information.****
+Occurs when the taskbar dragging is completed. The arguments contain the following information.
 
 * Task - Gets the task which is dragged.
 
 **TaskBarResizeStart**
 
-Occurs when the taskbar resizing is started. The arguments contain the following information.****
+Occurs when the taskbar resizing is started. The arguments contain the following information.
 
 * Task - Gets the task which is resized.
 * ResizingDirection - Gets the direction in which task is resized.
 
 **TaskBarResizeDelta**
 
-Occurs when the taskbar is resized. The arguments contain the following information.****
+Occurs when the taskbar is resized. The arguments contain the following information.
 
 * Task - Gets the task which is resized.
 * ResizingDirection - Gets the direction in which task is resized.
@@ -113,7 +113,7 @@ Occurs when the taskbar is resized. The arguments contain the following informat
 
 **TaskBarResizeCompleted**
 
-Occurs when the taskbar resizing is completed. The arguments contain the following information.****
+Occurs when the taskbar resizing is completed. The arguments contain the following information.
 
 * Task - Gets the task which is resized.
 * ResizingDirection - Gets the direction in which task is resized.
