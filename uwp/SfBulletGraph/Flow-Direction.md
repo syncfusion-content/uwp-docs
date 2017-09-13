@@ -23,9 +23,9 @@ By default the flow direction of SfBulletGraph is forward (LTR). It can be custo
 
 {% highlight c# %}
 
-     SfBulletGraph bulletgraph = new SfBulletGraph();
-     bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
-     this.Grid.Children.Add(bulletgraph);
+     SfBulletGraph bullet = new SfBulletGraph();
+     bullet.FlowDirection = BulletGraphFlowDirection.Forward;
+     this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
