@@ -72,7 +72,7 @@ Situations arise where, any combination of available shapefiles needs to be load
                    </syncfusion:SubShapeFileLayer>
                    <syncfusion:SubShapeFileLayer ShapeIDPath="NAME" ShapeIDTableField="ADMIN_NAME"
                                                ItemsSource="{Binding OceaniaList}" 
-                                               Uri=" MapApp.ShapeFiles.australia.shp">
+                                               Uri=" MapApp.ShapeFiles.Australia.shp">
                        <syncfusion:SubShapeFileLayer.ShapeSettings>
                            <syncfusion:ShapeSetting ShapeStroke="#2F8CEA" ShapeValuePath="Weather" 
                                                                              ShapeFill="#8DCEFF"/>
