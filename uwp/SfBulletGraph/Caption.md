@@ -29,14 +29,14 @@ The **Caption** for a bullet graph is used to specify a unique label describing 
 
 {% highlight c# %}
 
-        SfBulletGraph bulletgraph = new SfBulletGraph();
+        SfBulletGraph bullet = new SfBulletGraph();
         TextBlock _textBlock = new TextBlock() { Text = "Revenue YTD" };
         TextBlock _textBlock1 = new TextBlock() { Text = "$ in Thousands" };
         StackPanel _stackPanel = new StackPanel();
         _stackPanel.Children.Add(_textBlock);
         _stackPanel.Children.Add(_textBlock1);
-        bulletgraph.Caption = _stackPanel;
-        this.Grid.Children.Add(bulletgraph);
+        bullet.Caption = _stackPanel;
+        this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
@@ -60,10 +60,10 @@ The caption in the bullet graph can be placed in the start or end of the quantit
 
 {% highlight c# %}
 
-    SfBulletGraph bulletgraph = new SfBulletGraph();
-    bulletgraph.Caption = Revenue YTD;
-    bulletgraph.CaptionPosition  = BulletGraphCaptionPosition.Far;
-    this.Grid.Children.Add(bulletgraph);
+    SfBulletGraph bullet = new SfBulletGraph();
+    bullet.Caption = Revenue YTD;
+    bullet.CaptionPosition  = BulletGraphCaptionPosition.Far;
+    this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
