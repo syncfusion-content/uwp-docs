@@ -35,7 +35,7 @@ Syncfusion.UI.Xaml.Controls.SfSpellChecker spellChecker = new Syncfusion.UI.Xaml
 
 <Grid  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-<TextBox x:Name="txtbx" TextWrapping="Wrap" VerticalContentAlignment="Top"
+<TextBox x:Name="Textbox" TextWrapping="Wrap" VerticalContentAlignment="Top"
          Text="Ribbn illustrats the Microsoft illustrats Offce 2007 UI.
          Our prduct exposes most of the featres of the new UI and eeps intact
          winhth the Slverlight architecture. Configuring and designing
