@@ -407,19 +407,19 @@ public TreeViewModel()
 
 Models = new List<TreeModel>();
 
-TreeModel winrt = new TreeModel() { Header = "WinRT (XAML)" };
+TreeModel win = new TreeModel() { Header = "WinRT (XAML)" };
 
 TreeModel metroStudio = new TreeModel() { Header = "Metro Studio" };
 
-TreeModel winrt_chart = new TreeModel() { Header = "Chart" };
+TreeModel win_chart = new TreeModel() { Header = "Chart" };
 
-TreeModel winrt_tools = new TreeModel() { Header = "Tools" };
+TreeModel win_tools = new TreeModel() { Header = "Tools" };
 
-winrt.Models.Add(winrt_chart);
+win.Models.Add(win_chart);
 
-winrt.Models.Add(winrt_tools);
+win.Models.Add(win_tools);
 
-Models.Add(winrt);
+Models.Add(win);
 
 Models.Add(metroStudio);
 
@@ -433,19 +433,19 @@ Public Sub New()
 
 Models = New List(Of TreeModel)()
 
-Dim winrt As New TreeModel() With {.Header = "WinRT (XAML)"}
+Dim win As New TreeModel() With {.Header = "WinRT (XAML)"}
 
 Dim metroStudio As New TreeModel() With {.Header = "Metro Studio"}
 
-Dim winrt_chart As New TreeModel() With {.Header = "Chart"}
+Dim win_chart As New TreeModel() With {.Header = "Chart"}
 
-Dim winrt_tools As New TreeModel() With {.Header = "Tools"}
+Dim win_tools As New TreeModel() With {.Header = "Tools"}
 
-winrt.Models.Add(winrt_chart)
+win.Models.Add(win_chart)
 
-winrt.Models.Add(winrt_tools)
+win.Models.Add(win_tools)
 
-Models.Add(winrt)
+Models.Add(win)
 
 Models.Add(metroStudio)
 
