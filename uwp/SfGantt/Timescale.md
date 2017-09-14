@@ -1,3 +1,10 @@
+---
+layout: post
+title: Timescale
+platform: uwp
+control: SfGantt
+documentation: ug
+---
 # Timescale
 
 This topic gives an overview on the features of Timescale. The following properties is used for configuring timescale in TimescaleSettings class.
