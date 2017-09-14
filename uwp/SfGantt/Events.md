@@ -1,3 +1,10 @@
+---
+layout: post
+title: Events
+platform: uwp
+control: SfGantt
+documentation: ug
+---
 # Events
 
 **BeginCellEdit**
