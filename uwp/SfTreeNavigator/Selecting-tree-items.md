@@ -41,13 +41,13 @@ TreeNavigator items can be selected in one or more ways as give below:
 
 {% highlight C# %}
 
-treeNavigator.SelectedItem = wpf;
+treeNavigator.SelectedItem = WPF;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-treeNavigator.SelectedItem = wpf
+treeNavigator.SelectedItem = WPF
 
 {% endhighlight %}
 
