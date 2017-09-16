@@ -150,7 +150,7 @@ throw new NotImplementedException();
 {% highlight C# %}
 
 
-TextSpellEditor TextEditor = new TextSpellEditor(txtbx);
+TextSpellEditor TextEditor = new TextSpellEditor(Textboxx);
 
 SpellEditor = TextEditor;  
 
