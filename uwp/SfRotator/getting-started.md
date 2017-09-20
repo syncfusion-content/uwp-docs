@@ -99,7 +99,7 @@ To develop an application with Rotator is simple. The following steps explain ho
 					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/Agile.jpg", Text = "The Agile" });
 					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/Delphi.jpg", Text = "The Delphi" });
 					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/NancyFX.jpg", Text = "The NancyFX" });
-					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/roslyn.jpg", Text = "The Roslyn" });
+					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/Roslyn.jpg", Text = "The Roslyn" });
 					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/1.gif", Text = "The Spark" });
 					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/SQL.jpg", Text = "The SQL" });
 					Items.Add(new ImageData() { ImageURL = "ms-appx:///Assets/T4.jpg", Text = "The T4" });

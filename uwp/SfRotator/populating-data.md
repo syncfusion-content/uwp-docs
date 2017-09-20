@@ -58,7 +58,7 @@ SfRotatorItem can be populated with a collection of image data using `ItemsSourc
 				Items.Add(new SfRotatorItem() { Content = new Button() { Height = 100, Width = 100, Content = "Hi", Background = new SolidColorBrush(Color.FromArgb(255, 200, 150, 130)), FontSize = 25 }, Text = "The Agile Succinctly" });
 				Items.Add(new SfRotatorItem() { Content = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Assets/Delphi.jpg", UriKind.RelativeOrAbsolute)) }, Text = "The Delphi Succinctly" });
 				Items.Add(new SfRotatorItem() { Content = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Assets/NancyFX.jpg", UriKind.RelativeOrAbsolute)) }, Text = "The NancyFX Succinctly" });
-				Items.Add(new SfRotatorItem() { Content = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Assets/roslyn.jpg", UriKind.RelativeOrAbsolute)) }, Text = "The Roslyn Succinctly" });
+				Items.Add(new SfRotatorItem() { Content = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Assets/Roslyn.jpg", UriKind.RelativeOrAbsolute)) }, Text = "The Roslyn Succinctly" });
 				Items.Add(new SfRotatorItem() { Content = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Assets/Spark.jpg", UriKind.RelativeOrAbsolute)) }, Text = "The Spark Succinctly" });
 				Items.Add(new SfRotatorItem() { Content = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Assets/SQL.jpg", UriKind.RelativeOrAbsolute)) }, Text = "The SQL Succinctly" });
 				Items.Add(new SfRotatorItem() { Content = new Image() { Source = new BitmapImage(new Uri("ms-appx:///Assets/T4.jpg", UriKind.RelativeOrAbsolute)) }, Text = "The T4 Succinctly" });
