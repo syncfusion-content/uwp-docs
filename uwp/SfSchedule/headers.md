@@ -9,7 +9,7 @@ documentation: ug
 
 # Header
 
-You can customize the header of the Schedule using [SfSchedule.ScheduleHeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassScheduleHeaderStyleTopic.html) property in Schedule and [ScheduleHeaderStyle.HeaderHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderHeightTopic.html) property in `ScheduleHeaderStyle` of Schedule.
+You can customize the header of the Schedule using [SfSchedule.ScheduleHeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleHeaderStyle.html) property in Schedule and [ScheduleHeaderStyle.HeaderHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle~HeaderHeight.html) property in `ScheduleHeaderStyle` of Schedule.
 
 ## Header Height
 
@@ -38,7 +38,7 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 
 You can change the header format and style using `ScheduleHeaderStyle` property in schedule.
 
-You can change the background color,text style and text size using properties such as [ScheduleHeaderStyle.HeaderBackground](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderBackgroundTopic.html), [ScheduleHeaderStyle.HeaderTextStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderTextStyleTopic.html), [ScheduleHeaderStyle.HeaderTextSize](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderTextSizeTopic.html), [ScheduleHeaderStyle.HeaderTextColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/frlrfSyncfusionUIXamlScheduleScheduleHeaderStyleClassHeaderTextColorTopic.html), of Header using `ScheduleHeaderStyle` property in schedule.
+You can change the background color,text style and text size using properties such as [ScheduleHeaderStyle.HeaderBackground](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle~HeaderBackground.html), [ScheduleHeaderStyle.HeaderTextStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle~HeaderTextStyle.html), [ScheduleHeaderStyle.HeaderTextSize](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle~HeaderTextSize.html), [ScheduleHeaderStyle.HeaderTextColor](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle~HeaderTextColor.html), of Header using `ScheduleHeaderStyle` property in schedule.
 
 {% tabs %} 
 {% highlight xaml %}
