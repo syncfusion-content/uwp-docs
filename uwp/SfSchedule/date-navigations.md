@@ -10,7 +10,7 @@ documentation: ug
 # Date Navigations
 
 ## Enabling Navigation 
-By default, Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation gesture can be enabled or disabled by setting [EnableNavigation](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassEnableNavigationTopic.html) property of `SfSchedule`. By default, it is enabled.
+By default, Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation gesture can be enabled or disabled by setting [EnableNavigation](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~EnableNavigationProperty.html) property of `SfSchedule`. By default, it is enabled.
 
 {% tabs %}   
 {% highlight xaml %} 
@@ -26,7 +26,7 @@ By default, Schedule views can be moved backwards and forwards using touch swipe
 {% endtabs %} 
 
 ## Programmatically change to specific dates 
-Visible dates can be moved to specific date using [MoveToDate](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassMoveToDateTopic.html) method available in `SfSchedule`. It will move to any specific date if the schedule view is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view
+Visible dates can be moved to specific date using [MoveToDate](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~MoveToDate.html) method available in `SfSchedule`. It will move to any specific date if the schedule view is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view
 
 >**Note:** The specified date should lies between MinDisplayDate and MaxDisplayDate, if the specified date is greater than *MaxDisplayDate* then the view moved to MaxDisplayDate similarly if the specified date is lesser than the *MinDisplayDate* then the view moved to MinDisplayDate.
 
@@ -39,7 +39,7 @@ Visible dates can be moved to specific date using [MoveToDate](https://help.sync
 
 
 ## Programmatically change to specific time.
-You can move the `SfSchedule` to particular time by passing the Timespan value to [MoveToTime](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassMoveToTimeTopic.html) method. This method is applicable for Day, week and TimeLine view of `SfSchedule` control.
+You can move the `SfSchedule` to particular time by passing the Timespan value to [MoveToTime](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~MoveToTime.html) method. This method is applicable for Day, week and TimeLine view of `SfSchedule` control.
 
 >**Note:** Since this method handles the position of scroll, it calls only after SfSchedule view gets loaded and MoveToTime is only applicable in day view of Windows Phone.
 
@@ -51,7 +51,7 @@ You can move the `SfSchedule` to particular time by passing the Timespan value t
 {% endhighlight %}   
 
 ## Programmatically change to adjacent dates.
-By default the date can be navigated to next and previous view using touch gesture, by swiping the control in right to left and right to left direction. The view can be also changed programmatically using [Forward](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassForwardTopic.html) and [Backward](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassBackwardTopic.html) method available in `SfSchedule`. 
+By default the date can be navigated to next and previous view using touch gesture, by swiping the control in right to left and right to left direction. The view can be also changed programmatically using [Forward](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~Forward.html) and [Backward](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~Backward.html) method available in `SfSchedule`. 
 
 *  	Forward
 *	Backward
@@ -85,7 +85,7 @@ You can use the `Backward` method for viewing the previous immediate visible dat
 >**Note: - Date can be navigated until it reaches the Min Max date.**
 
 ## Range for visible dates
-Visible dates can be restricted between certain range of dates using [MinimumDisplayDate](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassMinimumDisplayDateTopic.html) and [MaximumDisplayDate](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/index.html#frlrfSyncfusionUIXamlScheduleSfScheduleClassMaximumDisplayDateTopic.html) properties available in `SfSchedule` control. It is applicable in all the schedule views.
+Visible dates can be restricted between certain range of dates using [MinimumDisplayDate](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinimumDisplayDateProperty.html) and [MaximumDisplayDate](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~MaximumDisplayDateProperty.html) properties available in `SfSchedule` control. It is applicable in all the schedule views.
 So that beyond the min max date range, it will restrict date navigations features of `Forward`, `backward`, `MoveToDate` and also can’t swipe the control using touch gesture beyond the min max date range.
 
 {% highlight c# %} 
