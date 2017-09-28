@@ -14,16 +14,16 @@ This topic gives an overview on the features of Timescale. The following propert
 
 {% tabs %}
 {% highlight xaml %}
-    <Gantt:SfGantt.TimescaleSettings>
-                <Gantt:TimescaleSettings>
-                    <Gantt:TimescaleSettings.TopTier>
-                        <Gantt:TimescaleTier></Gantt:TimescaleTier>
-                    </Gantt:TimescaleSettings.TopTier>
-                    <Gantt:TimescaleSettings.BottomTier>
-                        <Gantt:TimescaleTier IntervalType="Days"></Gantt:TimescaleTier>
-                    </Gantt:TimescaleSettings.BottomTier>
-                </Gantt:TimescaleSettings>
-    </Gantt:SfGantt.TimescaleSettings>
+<Gantt:SfGantt.TimescaleSettings>
+      <Gantt:TimescaleSettings>
+         <Gantt:TimescaleSettings.TopTier>
+             <Gantt:TimescaleTier></Gantt:TimescaleTier>
+          </Gantt:TimescaleSettings.TopTier>
+         <Gantt:TimescaleSettings.BottomTier>
+              <Gantt:TimescaleTier IntervalType="Days"></Gantt:TimescaleTier>
+          </Gantt:TimescaleSettings.BottomTier>
+      </Gantt:TimescaleSettings>
+ </Gantt:SfGantt.TimescaleSettings>
 {% endhighlight %}
 
 {% highlight c# %}
@@ -46,15 +46,15 @@ By default, the interval type is set as Auto. We can also change the interval ty
 The following code snippet illustrates the timescale displaying year and days.
 {% tabs %}
 {% highlight xaml %}
-  <Gantt:SfGantt.TimescaleSettings>
-                <Gantt:TimescaleSettings>
-                    <Gantt:TimescaleSettings.TopTier>
-                        <Gantt:TimescaleTier Interval="1" IntervalType="Years"></Gantt:TimescaleTier>
-                    </Gantt:TimescaleSettings.TopTier>
-                    <Gantt:TimescaleSettings.BottomTier>
-                        <Gantt:TimescaleTier Interval="4" IntervalType="Days"></Gantt:TimescaleTier>
-                    </Gantt:TimescaleSettings.BottomTier>
-                </Gantt:TimescaleSettings>
+<Gantt:SfGantt.TimescaleSettings>
+    <Gantt:TimescaleSettings>
+       <Gantt:TimescaleSettings.TopTier>
+          <Gantt:TimescaleTier Interval="1" IntervalType="Years"></Gantt:TimescaleTier>
+       </Gantt:TimescaleSettings.TopTier>
+       <Gantt:TimescaleSettings.BottomTier>
+          <Gantt:TimescaleTier Interval="4" IntervalType="Days"></Gantt:TimescaleTier>
+       </Gantt:TimescaleSettings.BottomTier>
+    </Gantt:TimescaleSettings>
   </Gantt:SfGantt.TimescaleSettings>
 
 {% endhighlight %}
@@ -71,8 +71,6 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier()
                 Interval = 4,
                 IntervalType = IntervalType.Days
             };
-
-
 
 {% endhighlight %}
 {% endtabs %}
@@ -105,33 +103,33 @@ The following code snippet illustrates the customization of timescale.
 {% tabs %}
 
 {% highlight xaml %}
-       <Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}">
+<Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}">
 
-            <Gantt:SfGantt.TimescaleSettings>
+     <Gantt:SfGantt.TimescaleSettings>
 
-                <Gantt:TimescaleSettings  Background="LightBlue" BorderBrush="DarkBlue" Foreground="Blue">
+        <Gantt:TimescaleSettings  Background="LightBlue" BorderBrush="DarkBlue" Foreground="Blue">
 
-                    <Gantt:TimescaleSettings.TopTier>
+           <Gantt:TimescaleSettings.TopTier>
 
-                        <Gantt:TimescaleTier LabelAlignment="Left"  IntervalType="Years" >
+               <Gantt:TimescaleTier LabelAlignment="Left"  IntervalType="Years" >
 
-                        </Gantt:TimescaleTier>
+            </Gantt:TimescaleTier>
 
-                    </Gantt:TimescaleSettings.TopTier>
+            </Gantt:TimescaleSettings.TopTier>
 
-                    <Gantt:TimescaleSettings.BottomTier>
+            <Gantt:TimescaleSettings.BottomTier>
 
-                        <Gantt:TimescaleTier LabelAlignment="Left" IntervalType="Days">
+                <Gantt:TimescaleTier LabelAlignment="Left" IntervalType="Days">
 
-                        </Gantt:TimescaleTier>
+                </Gantt:TimescaleTier>
 
-                    </Gantt:TimescaleSettings.BottomTier>
+           </Gantt:TimescaleSettings.BottomTier>
 
-                </Gantt:TimescaleSettings>
+       </Gantt:TimescaleSettings>
 
-            </Gantt:SfGantt.TimescaleSettings>
+   </Gantt:SfGantt.TimescaleSettings>
 
-        </Gantt:SfGantt>
+</Gantt:SfGantt>
 
 {% endhighlight %}
 {% highlight c# %}
@@ -154,53 +152,53 @@ The default appearance of the label in timescale cell can be customized using [`
 {% tabs %}
 
 {% highlight xaml %}
-        <Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" AllowEditing="True" ProjectResources="{Binding ResourceCollection}">
+ <Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" AllowEditing="True" ProjectResources="{Binding ResourceCollection}">
 
-            <Gantt:SfGantt.TimescaleSettings>
+      <Gantt:SfGantt.TimescaleSettings>
 
-                <Gantt:TimescaleSettings >
+          <Gantt:TimescaleSettings >
 
-                    <Gantt:TimescaleSettings.TopTier>
+             <Gantt:TimescaleSettings.TopTier>
 
-                        <Gantt:TimescaleTier  IntervalType="Years" >
+                 <Gantt:TimescaleTier  IntervalType="Years" >
 
-                            <Gantt:TimescaleTier.LabelTemplate>
+                     <Gantt:TimescaleTier.LabelTemplate>
 
-                                <DataTemplate>
+                        <DataTemplate>
 
-                                    <TextBlock Text="{Binding Content}" Foreground="Red" FontSize="24"></TextBlock>
+                            <TextBlock Text="{Binding Content}" Foreground="Red" FontSize="24"></TextBlock>
 
-                                </DataTemplate>
+                         </DataTemplate>
 
-                            </Gantt:TimescaleTier.LabelTemplate>
+                    </Gantt:TimescaleTier.LabelTemplate>
 
-                        </Gantt:TimescaleTier>
+                  </Gantt:TimescaleTier>
 
-                    </Gantt:TimescaleSettings.TopTier>
+               </Gantt:TimescaleSettings.TopTier>
 
-                    <Gantt:TimescaleSettings.BottomTier>
+         <Gantt:TimescaleSettings.BottomTier>
 
-                        <Gantt:TimescaleTier IntervalType="Days">
+         <Gantt:TimescaleTier IntervalType="Days">
 
-                            <Gantt:TimescaleTier.LabelTemplate>
+              <Gantt:TimescaleTier.LabelTemplate>
 
-                                <DataTemplate>
+                   <DataTemplate>
 
-                                    <TextBlock Text="{Binding Content}" Width="30" Foreground="Black" FontSize="20"></TextBlock>
+                       <TextBlock Text="{Binding Content}" Width="30" Foreground="Black" FontSize="20"></TextBlock>
 
-                                </DataTemplate>
+                   </DataTemplate>
 
-                            </Gantt:TimescaleTier.LabelTemplate>
+                 </Gantt:TimescaleTier.LabelTemplate>
 
-                        </Gantt:TimescaleTier>
+              </Gantt:TimescaleTier>
 
-                    </Gantt:TimescaleSettings.BottomTier>
+           </Gantt:TimescaleSettings.BottomTier>
 
-                </Gantt:TimescaleSettings>
+       </Gantt:TimescaleSettings>
 
-            </Gantt:SfGantt.TimescaleSettings>
+    </Gantt:SfGantt.TimescaleSettings>
 
-        </Gantt:SfGantt>
+</Gantt:SfGantt>
 {% endhighlight %}
 
 {% endtabs %}
@@ -217,17 +215,17 @@ The following code illustrates the increasing width of the timescale cell.
 {% tabs %}
 
 {% highlight xaml %}
-      <Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}">
+<Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}">
 
-            <Gantt:SfGantt.TimescaleSettings>
+     <Gantt:SfGantt.TimescaleSettings>
 
-                <Gantt:TimescaleSettings CellSize="350" >
+        <Gantt:TimescaleSettings CellSize="350" >
 
-                </Gantt:TimescaleSettings>
+        </Gantt:TimescaleSettings>
 
-            </Gantt:SfGantt.TimescaleSettings>
+     </Gantt:SfGantt.TimescaleSettings>
 
-        </Gantt:SfGantt>
+</Gantt:SfGantt>
 
 {% endhighlight %}
 
@@ -256,12 +254,9 @@ The following code illustrates the timescale range customization.
 
 
 <Gantt:SfGantt x:Name="Gantt" TimescaleStartDate="2014/1/1" 
-
-TimescaleEndDate="2014/4/1"
-
-ItemsSource="{Binding TaskCollection}" 
-
-ProjectResources="{Binding ResourceCollection}">
+               TimescaleEndDate="2014/4/1" 
+               ItemsSource="{Binding TaskCollection}"
+               ProjectResources="{Binding ResourceCollection}">
 
 </Gantt:SfGantt>
 
