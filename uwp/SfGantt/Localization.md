@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization 
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the GanttControl by [adding resource file](https://msdn.microsoft.com/library/aa992030.aspx). Application culture can be changed by setting `PrimaryLanguageOverride` in the MainPage() constructor. 
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfGantt by adding resource file. Application culture can be changed by setting `PrimaryLanguageOverride` in the MainPage() constructor. 
 
 In the below application, culture is configured to French language.
 
@@ -25,7 +25,7 @@ public MainPage()
 {% endtabs %}
 
 
-To localize the GanttControl based on `PrimaryLanguageOverride` using resource files, follow the below steps. 
+To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, follow the below steps. 
 
 1.Right-click the project, select **Add** and then **NewItem**.
 
