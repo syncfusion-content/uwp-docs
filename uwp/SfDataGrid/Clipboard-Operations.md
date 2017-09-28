@@ -24,7 +24,7 @@ Copy operation works based on [GridCopyOption](https://help.syncfusion.com/cr/cr
 
 [IncludeHeaders](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Column header also copied along with data.
 
-[IncludeFormat](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.htmls) – Copies the display text with format instead of actual value.
+[IncludeFormat](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Copies the display text with format instead of actual value.
 
 [IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Hidden column also copied to clipboard.
 
@@ -129,7 +129,7 @@ private void DataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 
 ### GridPasteContent
 
-[GridPasteContent](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridPasteContent_EV.html) event occurs when paste the clipboard value into SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs_EV.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
+[GridPasteContent](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridPasteContent_EV.html) event occurs when paste the clipboard value into SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
