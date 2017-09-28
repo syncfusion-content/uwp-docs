@@ -26,6 +26,8 @@ The following procedure illustrates how to install Essential Studio.
 
 Syncfusion UWP NuGet packages are available [here](http://nuget.syncfusion.com/package/universalwindows)
 
+N> If you wish to use the UWP NuGet packages then Essential Studio or UWP platform installation not required to implement with Syncfusion UWP controls. 
+
 ### NuGet Configuration  
 
 Syncfusion NuGet Package feed links are configured in Visual Studio in the following ways,
