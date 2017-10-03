@@ -7,7 +7,7 @@ documentation: ug
 ---
 # Timescale
 
-This topic gives an overview on the features of Timescale. The following properties is used for configuring timescale in [`TimescaleSettings`]() class.
+This topic gives an overview on the features of Timescale. The following properties is used for configuring timescale in [`TimescaleSettings`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html) class.
 
 * [`TopTier`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~TopTier.html) – Represents the top tier of the timescale.
 * [`BottomTier`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~BottomTier.html) – Represents the bottom tier of the timescale.
@@ -40,7 +40,7 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier();
 
 By default, the interval type is set as Auto. We can also change the interval type and interval using the below properties in TimescaleTier class.
 
-* [`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~Interval.html) – Used to define the type of the interval as minutes, hours, days, weeks, quarter and year.
+* [`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~IntervalType.html) – Used to define the type of the interval as minutes, hours, days, weeks, quarter and year.
 * [`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~Interval.html) – Used to set a value that determines the interval between the timescale tier cells.
 
 The following code snippet illustrates the timescale displaying year and days.
@@ -146,7 +146,7 @@ this.Gantt.TimescaleSettings.BottomTier.LabelAlignment = TextAlignment.Left;
 ![](Timescale_images/DisplayFormats.jpeg)
 
 
-** Label ** ** Template**
+**Label** **Template**
 
 The default appearance of the label in timescale cell can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~LabelTemplate.html) property in TimescaleTier class.
 {% tabs %}
