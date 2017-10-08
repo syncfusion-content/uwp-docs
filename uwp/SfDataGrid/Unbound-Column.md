@@ -10,7 +10,7 @@ documentation: ug
 
 # GridUnBoundColumn
 
-SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnBoundColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnBoundColumnClassTopic.html) class. Unbound columns support for sorting, filtering, grouping, exporting and printing as normal columns.
+SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnBoundColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html) class. Unbound columns support for sorting, filtering, grouping, exporting and printing as normal columns.
 
 {% tabs %}
 {% highlight xaml %}
@@ -37,11 +37,11 @@ N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnBoundColum
 
 ## Populating data for unbound column
 
-You can populate the data for unbound column by setting [Expression](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnBoundColumnClassExpressionTopic.html) or [Format](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnBoundColumnClassFormatTopic.html) property or through [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassQueryUnboundColumnValueTopic.html) event.
+You can populate the data for unbound column by setting [Expression](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn~Expression.html) or [Format](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn~Format.html) property or through [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryUnboundColumnValue_EV.html) event.
  
 ### Using Expression
 
-You can specify the arithmetic or logic expression using `Expression` property to compute the display value. By default, `GridUnBoundColumn` evaluates the expression with casing. You can disable the casing while evaluate the expression by setting [CaseSensitive](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnBoundColumnClassCaseSensitiveTopic.html) property to `false`.
+You can specify the arithmetic or logic expression using `Expression` property to compute the display value. By default, `GridUnBoundColumn` evaluates the expression with casing. You can disable the casing while evaluate the expression by setting [CaseSensitive](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn~CaseSensitive.html) property to `false`.
  
 Below are the list of Arithmetic and logical operations supported.
 
@@ -208,7 +208,7 @@ NOT
 
 ### Using Format
 
-You can format the values of other columns and display the formatted value in unbound column using [Format](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnBoundColumnClassFormatTopic.html) property.
+You can format the values of other columns and display the formatted value in unbound column using [Format](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn~Format.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -234,11 +234,11 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Rate"
 
 ### Using QueryUnBoundColumnValue event
 
-You can populate the data for unbound column by handling the [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassQueryUnboundColumnValueTopic.html) event. 
+You can populate the data for unbound column by handling the [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryUnboundColumnValue_EV.html) event. 
 
-[GridUnBoundColumnEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnboundColumnEventsArgsClassTopic.html) of the `QueryUnBoundColumnValue` event provides the information about the cell triggered this event. [GridUnBoundColumnValueEventsArgs.OriginalSender](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridEventArgsClassOriginalSenderTopic.html) returns the DataGrid fired this event for DetailsView.
+[GridUnBoundColumnEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs.html) of the `QueryUnBoundColumnValue` event provides the information about the cell triggered this event. [GridUnBoundColumnValueEventsArgs.OriginalSender](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridEventArgs~OriginalSender.html) returns the DataGrid fired this event for DetailsView.
 
-You can get or set the `GridUnBoundColumnEventArgs.Value` property based on the [UnBoundAction](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnboundColumnEventsArgsClassUnBoundActionTopic.html).
+You can get or set the `GridUnBoundColumnEventArgs.Value` property based on the [UnBoundAction](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs~UnBoundAction.html).
 
 UnBoundAction - `QueryData` denotes the event triggered to query value and cell information and the
  
@@ -270,7 +270,7 @@ void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs
 
 ## Refreshing the unbound column at runtime
 
-You can trigger the [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassQueryUnboundColumnValueTopic.html) event or recalculate the value for the cells of unbound column at runtime by calling [UpdateUnboundColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridHelpersGridHelperClassUpdateUnboundColumnTopic_overloads--.html) method.
+You can trigger the [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryUnboundColumnValue_EV.html) event or recalculate the value for the cells of unbound column at runtime by calling [UpdateUnboundColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.GridHelper~UpdateUnboundColumn.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -289,7 +289,7 @@ private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventA
 
 ### Cancel the editing for unbound column cell
 
-You can cancel the editing of unbound column cell by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCurrentCellBeginEditTopic.html) event.
+You can cancel the editing of unbound column cell by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellBeginEdit_EV.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -305,7 +305,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEv
 
 ### Saving edited value of unbound column using QueryUnBoundColumnValue.
 
-You can get the edited value of unbound column from [GridUnboundColumnEventsArgs.Value](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridUnboundColumnEventsArgsClassValueTopic.html) property of [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassQueryUnboundColumnValueTopic.html) event when UnBoundAction is `CommitData`.
+You can get the edited value of unbound column from [GridUnboundColumnEventsArgs.Value](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs~Value.html) property of [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryUnboundColumnValue_EV.html) event when UnBoundAction is `CommitData`.
 
 {% tabs %}
 {% highlight c# %}
@@ -324,7 +324,7 @@ private void DataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEv
 
 ### Read unbound column values
 
-You can get the value of `GridUnBoundColumn` using [GetUnBoundCellValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassGetUnBoundCellValueTopic.html) method.
+You can get the value of `GridUnBoundColumn` using [GetUnBoundCellValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GetUnBoundCellValue.html) method.
  
 {% tabs %}
 {% highlight c# %}
@@ -342,7 +342,7 @@ private void DataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
 
 ## Styling unbound column
 
-You can customize the style of unbound column by writing style of TargetType [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridCellClassTopic.html) or setting [GridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassCellStyleTopic.html) property.
+You can customize the style of unbound column by writing style of TargetType [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCell.html) or setting [GridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property.
 
 In the below code snippet, `Foreground` and `Background` of the cells in GridUnBoundColumn changed.
 
@@ -391,7 +391,7 @@ Renderer
 UnBoundTemplateColumn
 </td>
 <td>
-[GridUnBoundCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTemplateRendererClassTopic.html)
+[GridUnBoundCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundCellTemplateRenderer.html)
 </td>
 </tr>
 <tr>
@@ -399,21 +399,21 @@ UnBoundTemplateColumn
 UnBoundTextColumn
 </td>
 <td>
-[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTextBoxRendererClassTopic.html)
+[GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundCellTextBoxRenderer.html)
 </td>
 </tr>
 </table>
 
 
-If the [GridUnBoundColumn.EditTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridTemplateColumnClassEditTemplateTopic.html) not defined, then the `UnboundTextColumn**`** set as default cell type of `GridUnBoundColumn`.
+If the [GridUnBoundColumn.EditTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplate.html) not defined, then the `UnboundTextColumn**`** set as default cell type of `GridUnBoundColumn`.
  
 If `GridUnBoundColumn.EditTemplate` property defined, then `UnBoundTemplateColumn` set as cell type of `GridUnBoundColumn`
 
 ### Overriding Existing CellType
 
-You can customize the unbound row cell behavior by overriding existing renderer and replace the default one in [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCellRenderersTopic.html).
+You can customize the unbound row cell behavior by overriding existing renderer and replace the default one in [SfDataGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html).
 
-In the below code snippet, [GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridUnBoundCellTextBoxRendererClassTopic.html) is customized to change the foreground and replaced the default renderer with customized renderer in 'SfDataGrid.CellRenderers' collection.
+In the below code snippet, [GridUnBoundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridUnBoundCellTextBoxRenderer.html) is customized to change the foreground and replaced the default renderer with customized renderer in 'SfDataGrid.CellRenderers' collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -454,7 +454,7 @@ public class GridUnBoundCellTextBoxRendererExt: GridUnBoundCellTextBoxRenderer
 
 ### Custom Renderer
 
-You can change the renderer of unbound column by removing the predefined cell type value from [CellRenderers](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfDataGridClassCellRenderersTopic.html) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridCellsGridVirtualizingCellRenderer%602ClassTopic.html). Refer the [Create the renderer for existing column section](http://help.syncfusion.com/uwp/sfdatagrid/column-types#create-the-renderer-of-existing-column) for more information to create the custom renderer in columns section.
+You can change the renderer of unbound column by removing the predefined cell type value from [CellRenderers](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer%602.html). Refer the [Create the renderer for existing column section](http://help.syncfusion.com/uwp/sfdatagrid/column-types#create-the-renderer-of-existing-column) for more information to create the custom renderer in columns section.
 
 ## Templating unbound column
 
