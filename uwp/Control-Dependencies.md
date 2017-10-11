@@ -239,9 +239,10 @@ Syncfusion.DocIO.UWP</td><td>
 Syncfusion.OfficeChart.UWP<br/></td></tr>
 <tr>
 <td>
-SfPdfViewer</td><td>
-Syncfusion.SfPdfViewer.UWP</td><td>
-Syncfusion.Pdf.UWP</td></tr>
+SfPdfViewer</td>
+<td>Syncfusion.SfPdfViewer.UWP</td>
+<td>Syncfusion.Pdf.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfRadialMenu.UWP<br/><br/>Syncfusion.SfColorPickers.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/></td>
+</tr>
 <tr>
 <td>
 XlsIO</td><td>
