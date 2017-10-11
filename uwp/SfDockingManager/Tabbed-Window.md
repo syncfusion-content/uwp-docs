@@ -234,7 +234,7 @@ dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacemen
 ![](Tabbed-Window-images/Tab-Alignments-img4.jpeg)
 
 
-## TabbedWindow customization
+## TabbedWindow Customization
 
 `DockWindow` have an internal `DockTabControl` for Tabbed Windows in `SfDockingManager` and its `DockTabItem` Background and Foreground can be customized. The following table lists the details of the customization properties in DockTabControl.
 
