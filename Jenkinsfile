@@ -1,4 +1,4 @@
-node('content')
+node('content1')
 { 
 String platform='UWP';
    try
