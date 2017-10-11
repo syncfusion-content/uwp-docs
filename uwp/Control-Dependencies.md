@@ -211,7 +211,7 @@ Syncfusion.SfShared.UWP</td></tr>
 <td>
 SfBusyIndicator</td><td>
 Syncfusion.SfBusyIndicator.UWP</td><td>
-</td></tr>
+Syncfusion.SfShared.UWP</td></tr>
 <tr>
 <td>
 SfHubTile</td><td>
