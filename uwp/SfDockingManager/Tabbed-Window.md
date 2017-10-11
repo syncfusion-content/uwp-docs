@@ -234,3 +234,74 @@ dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacemen
 ![](Tabbed-Window-images/Tab-Alignments-img4.jpeg)
 
 
+## TabbedWindow Customization
+
+`DockWindow` have an internal `DockTabControl` for Tabbed Windows in `SfDockingManager` and its `DockTabItem` Background and Foreground can be customized. The following table lists the details of the customization properties in DockTabControl.
+
+### Customization Properties
+
+<table>
+<tr>
+<td>
+*Property*<br/><br/></td><td>
+*Data* *Type* <br/><br/></td><td>
+*Type*<br/><br/></td><td>
+*Description*<br/><br/></td></tr>
+<tr>
+<td>
+DockTabItemSelectedBackground<br/><br/><br/><br/></td><td>
+Brush<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+Used to set the background of a Selected Tab Item in the tabbed Dock Window.<br/><br/></td></tr>
+<tr>
+<td>
+DockTabItemSelectedForeground<br/><br/><br/><br/></td><td>
+Brush<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+Used to set the foreground of a Selected Tab Item in the tabbed Dock Window.<br/><br/></td></tr>
+<tr>
+<td>
+DockTabItemBackground<br/><br/></td><td>
+Brush<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+Used to set the background of a Tab Items in the tabbed Dock Window.<br/><br/></td></tr>
+<tr>
+<td>
+DockTabItemForeground<br/><br/><br/><br/></td><td>
+Brush<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+Used to set the foreground of a Tab Items in the tabbed Dock Window.<br/><br/></td></tr>
+<tr>
+<td>
+DockTabItemMouseOverBackground<br/><br/><br/><br/></td><td>
+Brush<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+Used to set the background of a mouse hovered tab Items in the tabbed Dock Window.<br/><br/></td></tr>
+<tr>
+<td>
+DockTabItemMouseOverForeground<br/><br/><br/><br/></td><td>
+Brush<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+Used to set the foreground of a mouse hovered tab Items in the tabbed Dock Window.<br/><br/></td></tr>
+<tr>
+<td>
+DockTabPanelBackground<br/><br/></td><td>
+Brush<br/><br/></td><td>
+Dependency property<br/><br/></td><td>
+Used to set the background for Items Panel of the tabbed Dock Window<br/><br/></td></tr>
+</table>
+
+
+{% highlight XAML %}
+
+    <syncfusion:SfDockingManager DockTabPanelBackground="GreenYellow"   DockTabItemBackground="Yellow"              DockTabItemForeground="Red" DockTabItemSelectedBackground="Orange" DockTabItemSelectedForeground="White" DockTabItemMouseOverBackground="Green" DockTabItemMouseOverForeground="Red">
+            
+         <ContentControl syncfusion:SfDockingManager.Header="Dock1" Name="Dock1" syncfusion:SfDockingManager.DockState="Dock"/>
+
+           <ContentControl syncfusion:SfDockingManager.Header="Dock2" syncfusion:SfDockingManager.SideInDockedMode="Tabbed" syncfusion:SfDockingManager.TargetNameInDockedMode="Dock1" syncfusion:SfDockingManager.DockState="Dock"/>
+
+    </syncfusion:SfDockingManager>
+
+{%endhighlight%}
+
+![](Tabbed-Window-images/Tabbed-Window-img5.png)
