@@ -27,10 +27,10 @@ Description
 </tr>
 <tr>
 <td>
-{{'[TreeGridTextColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridTextColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellTextBoxRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellTextBoxRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellTextBoxRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the string data. 
@@ -38,10 +38,10 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridNumericColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellNumericRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellNumericRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellNumericRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the numeric data.
@@ -49,10 +49,10 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellDateTimeRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellDateTimeRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellDateTimeRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellDateTimeRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the date time value.
@@ -60,10 +60,10 @@ Use to display the date time value.
 </tr>
 <tr>
 <td>
-{{'[TreeGridComboBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridComboBoxColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellComboBoxRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellComboBoxRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using ComboBox.
@@ -71,10 +71,10 @@ Use to display the IEnumerable data using ComboBox.
 </tr>
 <tr>
 <td>
-{{'[TreeGridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellCheckBoxRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellCheckBoxRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellCheckBoxRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the boolean type data.
@@ -82,10 +82,10 @@ Use to display the boolean type data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridHyperlinkColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridHyperlinkColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellHyperLinkRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellHyperlinkRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellHyperLinkRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellHyperlinkRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the URI data.
@@ -93,10 +93,10 @@ Use to display the URI data.
 </tr>
 <tr>
 <td>
-{{'[TreeGridTemplateColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridTemplateColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellTemplateRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellTemplateRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellTemplateRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Use to display the custom template-specified content.
@@ -110,7 +110,7 @@ TreeGridColumn is an abstract class provides base functionalities for all the co
 
 ### Mapping column to particular property
 
-Column can be bound to a property in data object using [TreeGridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMappingNameTopic.html) property. In addition, it supports to format or bind different property for display and edit mode separately via [TreeGridColumn.DisplayBinding](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassDisplayBindingTopic.html) and [TreeGridColumn.ValueBinding](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassValueBindingTopic.html). 
+Column can be bound to a property in data object using [TreeGridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~MappingName.html) property. In addition, it supports to format or bind different property for display and edit mode separately via [TreeGridColumn.DisplayBinding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [TreeGridColumn.ValueBinding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html). 
 
 When you set `MappingName`, `DisplayBinding` and `ValueBinding` are created based on `MappingName`, if these properties are not defined explicitly. 
 
@@ -147,7 +147,7 @@ By default, Columns handling the data operations (sorting) based on `MappingName
 
 ### CellTemplate in TreeGridColumn
 
-You can load any UWP control in the display mode for all columns by setting [TreeGridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateTopic.html) property. In edit mode, corresponding editor will be loaded based on column type. 
+You can load any UWP control in the display mode for all columns by setting [TreeGridColumn.CellTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In edit mode, corresponding editor will be loaded based on column type. 
 
 In the below code snippet, `TreeGridNumericColumn` is loaded with `ProgressBar` and `TextBlock`. When you start editing `DoubleTextBox` will be loaded as Editor.
 
@@ -189,13 +189,13 @@ In the below code snippet, `TreeGridNumericColumn` is loaded with `ProgressBar` 
 ![](ColumnTypes_images/ColumnTypes_img2.png)
 
 
-`CellTemplate` is not support by [TreeGridHyperlinkColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridHyperlinkColumnClassTopic.html) and [TreeGridCheckboxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html) columns.
+`CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and [TreeGridCheckboxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
 
 #### Reusing same DataTemplate for multiple columns
 
 By default, underlying record is `DataContext` for CellTemplate. So you have to define, template for each column to display values based on `MappingName`. 
 
-You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassSetCellBoundValueTopic.html)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
+You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) for all columns to display value based on MappingName by setting [TreeGridColumn.SetCellBoundValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundValue.html)  property to `true`. Setting `SetCellBoundValue` to true, changes the DataContext for CellTemplate to `DataContextHelper` which has the following members,
 
 * `Value` - Return the value base on `MappingName`.
 * `Record` - Returns the underlying data object.
@@ -234,7 +234,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
-`TreeGridColumn` provides support to choose different[DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [TreeGridColumn.CellTemplateSelector](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateSelectorTopic.html) property.  
+`TreeGridColumn` provides support to choose different[DataTemplate](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.datatemplate.aspx) based on underlying data object using [TreeGridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplateSelector.html) property.  
 
 For example, two different templates loaded alternatively in `Salary` column. 
 
@@ -468,7 +468,7 @@ public class CurrencyFormatConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-When column is auto-generated, you can set the `Converter` by handling [AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAutoGeneratingColumnTopic.html) event
+When column is auto-generated, you can set the `Converter` by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AutoGeneratingColumn_EV.html) event
 
 {% tabs %}
 {% highlight c# %}
@@ -493,7 +493,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 ### Styling TreeGridColumn
 
-`TreeGridColumn` support to customize the style of particular column using [TreeGridColumn.CellStyle](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellStyleTopic.html) property.
+`TreeGridColumn` support to customize the style of particular column using [TreeGridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property.
  
 #### Change the font setting
 
@@ -649,17 +649,17 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 #### Hide Column
 
-You can hide or unhide the particular column programmatically by setting [TreeGridColumn.IsHidden](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassIsHiddenTopic.html) property. For allowing end-user to hide or unhide column in UI refer Resizing Columns section.
+You can hide or unhide the particular column programmatically by setting [TreeGridColumn.IsHidden](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~IsHidden.html) property. For allowing end-user to hide or unhide column in UI refer Resizing Columns section.
 
 #### Disable column
 
-You can disable column by setting [TreeGridColumn.AllowFocus](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassAllowFocusTopic.html) property. Therefore, that column can’t be selected or edited. 
+You can disable column by setting [TreeGridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowFocus.html) property. Therefore, that column can’t be selected or edited. 
 
 ### Width, alignment and padding settings
 
 #### Width
 
-The width of `TreeGridColumn` can be changed by setting `Width` property. Column width set based on [TreeGridColumn.MinimumWidth](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMinimumWidthTopic.html) and [TreeGridColumn.MaximumWidth](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMaximumWidthTopic.html) properties.
+The width of `TreeGridColumn` can be changed by setting `Width` property. Column width set based on [TreeGridColumn.MinimumWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~MinimumWidth.html) and [TreeGridColumn.MaximumWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~MaximumWidth.html) properties.
 
 N> If the `TreeGridColumn.Width` is defined explicitly takes priority than `TreeGridColumn.ColumnSizer`.
 
@@ -673,7 +673,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 
 ## TreeGridTextColumnBase
 
-[TreeGridTextColumnBase](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnBaseClassTopic.html) is the abstract class derived from `TreeGridColumn`. The following columns are derived from the `TreeGridTextColumnBase`.
+[TreeGridTextColumnBase](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase.html) is the abstract class derived from `TreeGridColumn`. The following columns are derived from the `TreeGridTextColumnBase`.
 
 1. TreeGridTextColumn
 
@@ -685,9 +685,9 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 
 ### TreeGridTextColumnBase properties
 
-* Text trimming - You can [trim](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.texttrimming.aspx) the column’s data using [TextTrimming](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnBaseClassTextTrimmingTopic.html) property.
+* Text trimming - You can [trim](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.texttrimming.aspx) the column’s data using [TextTrimming](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase~TextTrimming.html) property.
 
-* Text wrapping - You can [wrap](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.textwrapping.aspx) the column’s data using [TextWrapping](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnBaseClassTextWrappingTopic.html) property. 
+* Text wrapping - You can [wrap](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.textwrapping.aspx) the column’s data using [TextWrapping](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumnBase~TextWrapping.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -758,7 +758,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 ## TreeGridNumericColumn
 
-[TreeGridNumericColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassTopic.html) derived from `TreeGridTextColumnBase` which displays columns data as numeric. It hosts `SfNumericTextBox` in editing mode.
+[TreeGridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html) derived from `TreeGridTextColumnBase` which displays columns data as numeric. It hosts `SfNumericTextBox` in editing mode.
 
 {% tabs %}
 {% highlight xaml %}
@@ -783,7 +783,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 
 ### Data formatting
 
-`TreeGridNumericColumn` allows you to format the numeric data by specifying the[predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) into [TreeGridNumericColumn.FormatString](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassFormatStringTopic.html) property. 
+`TreeGridNumericColumn` allows you to format the numeric data by specifying the[predefined format specifier](https://msdn.microsoft.com/en-us/library/dwhawy9k.aspx)  or  [custom numeric format strings](https://msdn.microsoft.com/en-us/library/0c899ak8.aspx) into [TreeGridNumericColumn.FormatString](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn~FormatString.html) property. 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:TreeGridNumericColumn  MappingName="Salary" 
@@ -801,7 +801,7 @@ treeGrid.Columns.Add(new TreeGridNumericColumn()
 
 ### Null value support
 
-TreeGridNumericColumn provides support to restrict or allow null value in columns based on [AllowNull](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassAllowNullTopic.html) property. Instead of displaying null values, you can display hint text using [Watermark](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassWaterMarkTopic.html) property. 
+TreeGridNumericColumn provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn~AllowNull.html) property. Instead of displaying null values, you can display hint text using [Watermark](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn~WaterMark.html) property. 
 
 The `Watermark` property won’t work, when the ` AllowNull` is `false`.
 
@@ -829,11 +829,11 @@ treeGrid.Columns.Add(new TreeGridNumericColumn()
 
 ### Parsing Mode
 
-You can bind either `Decimal` or `Double` values with TreeGridNumericColumn by using [ParsingMode](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassParsingModeTopic.html) property. The default parsing mode is `Double`.
+You can bind either `Decimal` or `Double` values with TreeGridNumericColumn by using [ParsingMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn~ParsingMode.html) property. The default parsing mode is `Double`.
 
 ## TreeGridDateTimeColumn
 
-[TreeGridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassTopic.html) derived from `TreeGridTextColumnBase` and it displays columns data as date time. It hosts `SfDatePicker` element in editing mode.
+[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html) derived from `TreeGridTextColumnBase` and it displays columns data as date time. It hosts `SfDatePicker` element in editing mode.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"                               
@@ -861,7 +861,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 ### Formatting date time value
 
-You can format the date time value by specifying the [predefined format specifier](https://msdn.microsoft.com/en-us/library/az4se3k1.aspx) into [TreeGridDateTimeColumn.FormatString](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassFormatStringTopic.html) property. 
+You can format the date time value by specifying the [predefined format specifier](https://msdn.microsoft.com/en-us/library/az4se3k1.aspx) into [TreeGridDateTimeColumn.FormatString](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~FormatString.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -905,7 +905,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 ### Editing support 
 
-By default, the user can input the date time value by selecting through date selector. You can allow users to input or delete the date time value from the keyboard by setting [AllowInlineEditing](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassAllowInlineEditingTopic.html) to `true`.
+By default, the user can input the date time value by selecting through date selector. You can allow users to input or delete the date time value from the keyboard by setting [AllowInlineEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~AllowInlineEditing.html) to `true`.
 
 ### Setting input scope for On-Screen Keyboard
 
@@ -935,7 +935,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 ### Null value support
 
-`TreeGridDateTimeColumn` provides support to restrict or allow null value in columns based on [AllowNullValue](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassAllowNullValueTopic.html) property. Instead of displaying null values, you can display hint text using [Watermark](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassWaterMarkTopic.html) property.
+`TreeGridDateTimeColumn` provides support to restrict or allow null value in columns based on [AllowNullValue](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~AllowNullValue.html) property. Instead of displaying null values, you can display hint text using [Watermark](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~WaterMark.html) property.
 
 The `Watermark` property won’t work, when the `AllowNullValue` is `false`.
 
@@ -961,7 +961,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 ### Setting date time value range
 
-You can restrict and display the input value with in the range using [MinDate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassMinDateTopic.html) and [MaxDate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassMaxDateTopic.html) properties.
+You can restrict and display the input value with in the range using [MinDate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~MaxDate.html) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -994,7 +994,7 @@ public DateTime MaxDate
 
 ### Dropdown customization
 
-You can hide or unhide the dropdown button by using [ShowDropDownButton](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassShowDropDownButtonTopic.html) property. The height of dropdown can be changed using [DropDownHeight](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassDropDownHeightTopic.html) property. 
+You can hide or unhide the dropdown button by using [ShowDropDownButton](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~ShowDropDownButton.html) property. The height of dropdown can be changed using [DropDownHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~DropDownHeight.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1019,7 +1019,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 ### Styling
 
-You can style the SelectorItem with solid color using `[AccentBrush](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassAccentBrushTopic.html "")` property.
+You can style the SelectorItem with solid color using `[AccentBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~AccentBrush.html "")` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1043,7 +1043,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 #### Height and width customization
 
-The height and width of SelectorItem can be customized using [SelectorItemWidth](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassSelectorItemWidthTopic.html) and [SelectorItemHeight](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassSelectorItemHeightTopic.html) property.
+The height and width of SelectorItem can be customized using [SelectorItemWidth](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~SelectorItemWidth.html) and [SelectorItemHeight](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~SelectorItemHeight.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1067,7 +1067,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 #### SelectorItem formatting
 
-you can specify the format for the selector using [SelectorFormatString](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassSelectorFormatStringTopic.html) property.
+you can specify the format for the selector using [SelectorFormatString](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~SelectorFormatString.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1089,8 +1089,8 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 #### Spacing and count customization
 
-You can customize the space between date, month and year selector items using [SelectorItemSpacing](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassSelectorItemSpacingTopic.html) property.
-You can restrict the number of item to displayed in selector using [SelectorItemCount](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassSelectorItemCountTopic.html) property and 
+You can customize the space between date, month and year selector items using [SelectorItemSpacing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~SelectorItemSpacing.html) property.
+You can restrict the number of item to displayed in selector using [SelectorItemCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn~SelectorItemCount.html) property and 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1115,7 +1115,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 
 ## TreeGridCheckBoxColumn
 
-[TreeGridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html) derived from `TreeGridColumn` and it used display and edit `Boolean` type data. It hosts `CheckBox` element as `TreeGridCell` content.
+[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) derived from `TreeGridColumn` and it used display and edit `Boolean` type data. It hosts `CheckBox` element as `TreeGridCell` content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1143,13 +1143,13 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn()
 
 `TreeGridCheckBoxColumn` allows you to customize check box state and its alignment.
 
-* [IsThreeState](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassIsThreeStateTopic.html) - By default, the `TreeGridCheckBoxColumn` has `Checked` and `Unchecked**`** state. You can enable another `Intermediate` state setting `IsThreeState` property to `true`.
+* [IsThreeState](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn~IsThreeState.html) - By default, the `TreeGridCheckBoxColumn` has `Checked` and `Unchecked**`** state. You can enable another `Intermediate` state setting `IsThreeState` property to `true`.
 
-* [HorizontalAlignment](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassHorizontalAlignmentTopic.html) - You can change the horizontal alignment of CheckBox using `HorizontalAlignment` property.  
+* [HorizontalAlignment](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn~HorizontalAlignment.html) - You can change the horizontal alignment of CheckBox using `HorizontalAlignment` property.  
 
 ## TreeGridTemplateColumn
 
-[TreeGridTemplateColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridTemplateColumnClassTopic.html) derived from `TreeGridTextColumnBase` and it displays the template-specified cell content. You can load any UWP control in the display mode for all columns by setting `CellTemplate` and `EditTemplate` properties.
+[TreeGridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html) derived from `TreeGridTextColumnBase` and it displays the template-specified cell content. You can load any UWP control in the display mode for all columns by setting `CellTemplate` and `EditTemplate` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1202,7 +1202,7 @@ this.treeGrid.Columns.Add(new TreeGridTemplateColumn()
 
 ### Keyboard interaction for UIElement loaded inside CellTemplate
 
-You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting `[FocusManagerHelper.WantsKeyInput](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridFocusManagerHelperClassWantsKeyInputPropertyTopic.html "")` attached property to `TreeGridColumn`. You can use this when loading edit element in CellTemplate. 
+You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting `[FocusManagerHelper.WantsKeyInput](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~WantsKeyInputProperty.html "")` attached property to `TreeGridColumn`. You can use this when loading edit element in CellTemplate. 
 
 In this case SfTreeGrid handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`. 
 
@@ -1224,7 +1224,7 @@ In this case SfTreeGrid handles the below key operations and other keys are hand
 
 ### Setting focus to particular element inside Template when cell gets activated or edited
 
-You can allow logical focus to specific UIElement loaded inside `EditTemplate` or `CellTemplate` by setting `[FocusManagerHelper.FocusedElement](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridFocusManagerHelperClassFocusedElementPropertyTopic.html# "")` attached property. 
+You can allow logical focus to specific UIElement loaded inside `EditTemplate` or `CellTemplate` by setting `[FocusManagerHelper.FocusedElement](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html# "")` attached property. 
 
 You can use this property to start editing the template column value as like normal column when the user gets into edit mode.
 
@@ -1304,7 +1304,7 @@ N> EditTemplate support available only for TreeGridTemplateColumn.
 
 ### Sets EditTemplate based on custom logic
 
-`TreeGridTemplateColumn` provides support to load different edit elements based on underlying data object using [TreeGridTemplateColumn.EditTemplateSelector](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTemplateColumnClassEditTemplateSelectorTopic.html) property.
+`TreeGridTemplateColumn` provides support to load different edit elements based on underlying data object using [TreeGridTemplateColumn.EditTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn~EditTemplateSelector.html) property.
 
 Below code returns the `DefaultTemplate` and `AlternateTemplate` based on ID’s value.
 
@@ -1408,9 +1408,9 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 
 ## TreeGridComboBoxColumn
 
-[TreeGridComboBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridComboBoxColumnClassTopic.html) derived from `TreeGridColumn` which hosts `ComboBox` as edit element. The data source to ComboBox can be set by using `[TreeGridComboBoxColumn.ItemsSource](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridComboBoxColumnClassItemsSourceTopic.html) property.
+[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html) derived from `TreeGridColumn` which hosts `ComboBox` as edit element. The data source to ComboBox can be set by using `[TreeGridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn~ItemsSource.html) property.
 
-By default, `TreeGridComboBoxColumn` displays the value using `MappingName` property. You can set [DisplayMemberPath](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridComboBoxColumnClassDisplayMemberPathTopic.html) which denotes the path to a value on the source object (TreeGridComboBoxColumn.ItemsSource) to serve as the visual representation of object. You can set the `SelectedValuePath` which denotes the path to get the SelectedValue from the SelectedItem. 
+By default, `TreeGridComboBoxColumn` displays the value using `MappingName` property. You can set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn~DisplayMemberPath.html) which denotes the path to a value on the source object (TreeGridComboBoxColumn.ItemsSource) to serve as the visual representation of object. You can set the `SelectedValuePath` which denotes the path to get the SelectedValue from the SelectedItem. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -1433,7 +1433,7 @@ treeGrid.Columns.Add(new TreeGridComboBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellDropDownSelectionChangedEventArgsClassTopic.html) of [CurrentCellDropDownSelectionChanged](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellDropDownSelectionChangedTopic.html) event provides the information about the changed cell value. 
+SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellDropDownSelectionChanged_EV.html) event provides the information about the changed cell value. 
 
 `SelectedIndex` property returns the index of selected item.
 
@@ -1464,7 +1464,7 @@ You can improve the drop-down opening time on loading by setting [VirtualizingSt
 ### Opening dropdown popup in single-click
 
 You can open the drop down within single click by setting [ComboBox.IsDropDownOpen](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.combobox.isdropdownopen.aspx) property to `true` in `OnInitializeEditElement`method by overriding existing renderer.
-Below code, creates `TreeGridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in [SfTreeGrid.CellRenderers](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCellRenderersTopic.html) collection.
+Below code, creates `TreeGridCellComboBoxRendererExt` to set `IsDropDownOpen` property. Replace the default renderer with created renderer in [SfTreeGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellRenderers.html) collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -1486,7 +1486,7 @@ N> This is applicable when `SfTreeGrid.EditTrigger` is `OnTap`
 
 ## TreeGridHyperlinkColumn
 
-[TreeGridHyperlinkColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridHyperlinkColumnClassTopic.html) derived from `TreeGridTextColumn` and it displays columns data as hyperlink. It hosts `HyperlinkButton` element as `TreeGridCell` content.
+[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) derived from `TreeGridTextColumn` and it displays columns data as hyperlink. It hosts `HyperlinkButton` element as `TreeGridCell` content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1514,9 +1514,9 @@ treeGrid.Columns.Add(new TreeGridHyperlinkColumn()
 
 
 
-You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCurrentCellRequestNavigateTopic.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `TreeGridHyperLinkColumn` is clicked for navigation.  
+You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellRequestNavigate_EV.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `TreeGridHyperLinkColumn` is clicked for navigation.  
 
-[CurrentCellRequestNavigateEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassTopic.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. [CurrentCellRequestNavigateEventArgs.NavigateText](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassNavigateTextTopic.html) returns the value using `ValueBinding` or `MappingName` to navigate. 
+[CurrentCellRequestNavigateEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs.html) of `CurrentCellRequestNavigate` event provide information about the hyperlink triggered this event. [CurrentCellRequestNavigateEventArgs.NavigateText](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~NavigateText.html) returns the value using `ValueBinding` or `MappingName` to navigate. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1532,7 +1532,7 @@ private async void TreeGrid_CurrentCellRequestNavigate(object sender, Syncfusion
 
 ### Cancel the navigation
 
-You can cancel the navigation when clicking hyperlink by setting [CurrentCellRequestNavigateEventArgs.Handled](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridCurrentCellRequestNavigateEventArgsClassHandledTopic.html) to `false`. 
+You can cancel the navigation when clicking hyperlink by setting [CurrentCellRequestNavigateEventArgs.Handled](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellRequestNavigateEventArgs~Handled.html) to `false`. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1694,10 +1694,10 @@ Cell Type
 </tr>
 <tr>
 <td>
-{{'[TreeGridTextColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridTextColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellTextBoxRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellTextBoxRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellTextBoxRenderer.html#"")'| markdownify }}
 </td>
 <td>
 TextBox
@@ -1705,10 +1705,10 @@ TextBox
 </tr>
 <tr>
 <td>
-{{'[TreeGridNumericColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellNumericRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellNumericRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellNumericRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Numeric
@@ -1716,10 +1716,10 @@ Numeric
 </tr>
 <tr>
 <td>
-{{'[TreeGridCheckBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridCheckBoxColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCheckBoxCellRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellCheckBoxRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCheckBoxCellRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellCheckBoxRenderer.html#"")'| markdownify }}
 </td>
 <td>
 CheckBox
@@ -1727,10 +1727,10 @@ CheckBox
 </tr>
 <tr>
 <td>
-{{'[TreeGridTemplateColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTemplateColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellTemplateRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellTemplateRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellTemplateRenderer.html#"")'| markdownify }}
 </td>
 <td>
 Template
@@ -1738,10 +1738,10 @@ Template
 </tr>
 <tr>
 <td>
-{{'[TreeGridComboBoxColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridComboBoxColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellComboBoxRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellComboBoxRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellComboBoxRenderer.html#"")'| markdownify }}
 </td>
 <td>
 ComboBox
@@ -1749,10 +1749,10 @@ ComboBox
 </tr>
 <tr>
 <td>
-{{'[TreeGridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridDateTimeColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridDateTimeColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellDateTimeRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellDateTimeRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellDateTimeRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellDateTimeRenderer.html#"")'| markdownify }}
 </td>
 <td>
 DateTime
@@ -1760,10 +1760,10 @@ DateTime
 </tr>
 <tr>
 <td>
-{{'[TreeGridHyperlinkColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridHyperlinkColumnClassTopic.html#"")'| markdownify }}
+{{'[TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html#"")'| markdownify }}
 </td>
 <td>
-{{'[TreeGridCellHyperlinkRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridCellsTreeGridCellHyperlinkRendererClassTopic.html#"")'| markdownify }}
+{{'[TreeGridCellHyperlinkRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridCellHyperlinkRenderer.html#"")'| markdownify }}
 </td>
 <td>
 HyperlinkButton
@@ -1804,7 +1804,7 @@ public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 
 ### Create the renderer of existing column
 
-You can change the renderer of existing column by removing the predefined cell type value from `CellRenderers` collection and add the newly derived renderer from [TreeGridVirtualizingCellRenderer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridCellsTreeGridVirtualizingCellRenderer%602ClassTopic.html).
+You can change the renderer of existing column by removing the predefined cell type value from `CellRenderers` collection and add the newly derived renderer from [TreeGridVirtualizingCellRenderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridVirtualizingCellRenderer%602.html).
 
 Below code creates the new `TreeGridComboBoxRenderer` with `SfComboBox` as edit element for `TreeGridComboBoxColumn` and replacing created renderer to `CellRenderers`.
 
@@ -1998,7 +1998,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 
 You can restrict the range of input using `MaxLength` property on `TreeGridColumn` in below ways.
 
-* Using Converter property in [DisplayBinding](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassDisplayBindingTopic.html) and [ValueBinding](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridGridColumnBaseClassValueBindingTopic.html) 
+* Using Converter property in [DisplayBinding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~DisplayBinding.html) and [ValueBinding](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ValueBinding.html) 
 
 * Using control style 
 
@@ -2081,7 +2081,7 @@ N> TextBlock does not have the MaxLength property. Therefore, you can use the co
 #### Overriding existing cell types
 
 You can set the `MaxLength` property to the edit element of the particular column by overriding existing cell types. 
-Below code, overrides the `OnInitializeEditElement` method of the corresponding renderer and set the `MaxLength` to the UIElement and add the renderer to [STreeGrid.CellRenderers](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassCellRenderersTopic.html) collection.
+Below code, overrides the `OnInitializeEditElement` method of the corresponding renderer and set the `MaxLength` to the UIElement and add the renderer to [STreeGrid.CellRenderers](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellRenderers.html) collection.
 
 {% tabs %}
 {% highlight c# %}
