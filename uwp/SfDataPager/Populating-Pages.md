@@ -11,7 +11,7 @@ documentation: ug
 
 ## Binding with data
 
-You can use [Source](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassSourceTopic.html#) property to bind collection of data with [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassTopic.html#). Based on number of items in collection and [PageSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPageSizeTopic.html#), the [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPageCountTopic.html#) will be calculated. 
+You can use [Source](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~Source.html#) property to bind collection of data with [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#). Based on number of items in collection and [PageSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageSize.html#), the [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageCount.html#) will be calculated. 
 
 Below code snippet shows, how to bind `SfDataPager` with data. 
 
@@ -46,7 +46,7 @@ Based on number of items in the collection and `PageSize` and the `PageCount` is
 
 ## Unbound Mode
 
-You can define the [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassPageCountTopic.html#) of `SfDataPager` by setting [UseOnDemandPaging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlControlsDataPagerSfDataPagerClassUseOnDemandPagingPropertyTopic.html#) to `true` and `PageCount` property.
+You can define the [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageCount.html#) of `SfDataPager` by setting [UseOnDemandPaging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~UseOnDemandPagingProperty.html#) to `true` and `PageCount` property.
 
 {% tabs %}
 {% highlight xaml %}
