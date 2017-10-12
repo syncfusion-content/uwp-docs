@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns
 
-SfTreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnsTopic.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
+SfTreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~Columns.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
 
 Below are the built-in column types supported in SfTreeGrid. Each column has its own properties to handle different types of data. 
 
@@ -89,9 +89,9 @@ You can let the SfTreeGrid to create columns or you can manually defined columns
 
 ### Automatically generating columns
 
-The automatic column generation based on properties of data object can be enabled or disabled by setting [SfTreeGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassAutoGenerateColumnsTopic.html). Default value is `true`. 
+The automatic column generation based on properties of data object can be enabled or disabled by setting [SfTreeGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html). Default value is `true`. 
 
-Columns are generated based on type of property. For example, [TreeGridNumericColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridNumericColumnClassTopic.html) is added for `int` type property. Below are table shows data type and its column type. For remaining types, [TreeGridTextColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridTextColumnClassTopic.html) will be added. 
+Columns are generated based on type of property. For example, [TreeGridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridNumericColumn.html) is added for `int` type property. Below are table shows data type and its column type. For remaining types, [TreeGridTextColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html) will be added. 
 
 <table>
 <tr>
@@ -149,7 +149,7 @@ N> The order of columns in the collection will determine the order of that they 
 
 #### AutoGenerateColumns with different modes
 
-Column auto generation is controlled using [SfTreeGrid.AutoGenerateColumnsMode](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassAutoGenerateColumnsModeTopic.html) property.
+Column auto generation is controlled using [SfTreeGrid.AutoGenerateColumnsMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumnsMode.html) property.
 
 The `SfTreeGrid.AutoGenerateColumnsMode` includes the following modes.
 
@@ -216,7 +216,7 @@ Keeps old columns in TreeGrid.Columns collection.
 
 ### Customize auto-generated columns
 
-You can customize or cancel the generated column by handling [AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassAutoGeneratingColumnTopic.html) event. `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
+You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AutoGeneratingColumn_EV.html) event. `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
 
 {% tabs %}
 {% highlight c# %}
@@ -229,7 +229,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-[TreeGridAutoGeneratingColumnEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridAutoGeneratingColumnEventArgsClassTopic.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [TreeGridAutoGeneratingColumnEventArgs.Column](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridAutoGeneratingColumnEventArgsClassColumnTopic.html) property returns the newly created column.
+[TreeGridAutoGeneratingColumnEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridAutoGeneratingColumnEventArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [TreeGridAutoGeneratingColumnEventArgs.Column](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridAutoGeneratingColumnEventArgs~Column.html) property returns the newly created column.
 
 #### Cancel column generation for particular property
 
@@ -294,7 +294,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 ### Setting template to auto-generated column
 
-You can set [TreeGridColumn.HeaderTemplate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassHeaderTemplateTopic.html) and [TreeGridColumn.CellTemplate](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassCellTemplateTopic.html) properties for auto-generated column in `AutoGeneratingColumn` event handler. 
+You can set [TreeGridColumn.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderTemplate.html) and [TreeGridColumn.CellTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) properties for auto-generated column in `AutoGeneratingColumn` event handler. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -452,7 +452,7 @@ public double? Salary
 
 ### Manually defining columns
 
-SfTreeGrid control allows you to define the columns manually by adding desired column to the [SfTreeGrid.Columns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnsTopic.html) collection.
+SfTreeGrid control allows you to define the columns manually by adding desired column to the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~Columns.html) collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -486,7 +486,7 @@ You can refer more information about handling the column level operations for ma
 
 ## Column manipulation
 
-You can get the columns (added or auto-generated) from [SfTreeGrid.Columns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnsTopic.html) property.
+You can get the columns (added or auto-generated) from [SfTreeGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~Columns.html) property.
 
 ### Adding column
 
@@ -500,7 +500,7 @@ treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", Heade
 
 ### Accessing column
 
-You can access the column through its column index or [TreeGridColumn.MappingName](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridGridColumnBaseClassMappingNameTopic.html) from the SfTreeGrid.Columns collection.
+You can access the column through its column index or [TreeGridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~MappingName.html) from the SfTreeGrid.Columns collection.
 
 {% tabs %}
 {% highlight c# %}
@@ -532,9 +532,9 @@ treeGrid.Columns.RemoveAt(1);
 
 ## Resizing Columns
 
-SfTreeGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfTreeGrid.AllowResizingColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAllowResizingColumnsTopic.html) or 
+SfTreeGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfTreeGrid.AllowResizingColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowResizingColumns.html) or 
 
-[TreeGridColumn.AllowResizing](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnClassAllowResizingTopic.html) property.
+[TreeGridColumn.AllowResizing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~AllowResizing.html) property.
 
 N> Resizing considers MinWidth and MaxWidth of column.
 
@@ -555,14 +555,14 @@ You can change the column width by click and dragging the resizing cursor at the
 
 ### Hidden column resizing
 
-SfTreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlGridSfGridBaseClassAllowResizingHiddenColumnsTopic.html) property to `true`.
+SfTreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowResizingHiddenColumns.html) property to `true`.
 
 ![](Columns_images/Columns_img4.jpeg)
 
 ### Disable resizing
 
-You can cancel resizing of particular column by setting [TreeGridColumn.AllowResizing](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnClassAllowResizingTopic.html) property to `false`. In another way, you can cancel the resizing by handling [SfTreeGrid.ResizingColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassResizingColumnsTopic.html) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
-[ResizingColumnsEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridResizingColumnsEventArgsClassTopic.html) of `ResizingColumns` provides information about the columns’s index and width. 
+You can cancel resizing of particular column by setting [TreeGridColumn.AllowResizing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~AllowResizing.html) property to `false`. In another way, you can cancel the resizing by handling [SfTreeGrid.ResizingColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ResizingColumns_EV.html) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
+[ResizingColumnsEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html) of `ResizingColumns` provides information about the columns’s index and width. 
 
 {% tabs %}
 {% highlight c# %}
@@ -578,7 +578,7 @@ private void TreeGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 
 ## Column drag and drop
 
-You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfTreeGrid.AllowDraggingColumns](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridSfGridBaseClassAllowDraggingColumnsTopic.html) to `true`.
+You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfTreeGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowDraggingColumns.html) to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -594,7 +594,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 
 ![](Columns_images/Columns_img5.jpeg)
 
-You can enable or disable dragging on particular column using [TreeGridColumn.AllowDragging](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridTreeGridColumnClassAllowDraggingTopic.html) property.
+You can enable or disable dragging on particular column using [TreeGridColumn.AllowDragging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~AllowDragging.html) property.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:TreeGridTextColumn AllowDragging="True"
@@ -603,15 +603,15 @@ You can enable or disable dragging on particular column using [TreeGridColumn.Al
 {% endhighlight %}
 {% endtabs %}
 ### Disable column reordering
-You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDragging](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnDraggingTopic.html). `ColumnDragging` event occurs when you start dragging the column header. 
+You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDragging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnDragging.html). `ColumnDragging` event occurs when you start dragging the column header. 
 
-[TreeGridColumnDraggingEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnDraggingEventArgsClassTopic.html) of `ColumnDragging` event provides information about the column triggered this event. 
+[TreeGridColumnDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnDraggingEventArgs.html) of `ColumnDragging` event provides information about the column triggered this event. 
 
-[TreeGridColumnDraggingEventArgs.From](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnDraggingEventArgsClassFromTopic.html) - It returns the index of column triggered this event.
+[TreeGridColumnDraggingEventArgs.From](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnDraggingEventArgs~From.html) - It returns the index of column triggered this event.
 
-[TreeGridColumnDraggingEventArgs.To](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnDraggingEventArgsClassToTopic.html) - It returns the index where you try to drop the column. 
+[TreeGridColumnDraggingEventArgs.To](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnDraggingEventArgs~To.html) - It returns the index where you try to drop the column. 
 
-[TreeGridColumnDraggingEventArgs.Reason](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnDraggingEventArgsClassReasonTopic.html) - It returns column dragging details by [QueryColumnDraggingReason](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlGridQueryColumnDraggingReasonClassTopic.html).  
+[TreeGridColumnDraggingEventArgs.Reason](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnDraggingEventArgs~Reason.html) - It returns column dragging details by [QueryColumnDraggingReason](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.QueryColumnDraggingReason.html).  
 
 
 {% tabs %}
@@ -631,7 +631,7 @@ private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventA
 
 ## Column Sizing
 
-SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/frlrfSyncfusionUIXamlTreeGridSfTreeGridClassColumnSizerTopic.html) or [TreeGridColumn.ColumnSizer](http://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/index.html#frlrfSyncfusionUIXamlTreeGridTreeGridColumnClassColumnSizerTopic.html) property. 
+SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnSizer.html) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~ColumnSizer.html) property. 
 
 Below is the list of predefined column sizing options available.
 
