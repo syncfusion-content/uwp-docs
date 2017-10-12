@@ -466,7 +466,7 @@ You can refer [here](http://help.syncfusion.com/uwp/sfdatagrid/master-details-vi
 
 ### Programmatic Selection in DetailsViewDataGrid
 
-You can select data objects while loading DetailsViewDataGrid using [DetailsViewLoading](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewLoading.html) event.
+You can select data objects while loading DetailsViewDataGrid using [DetailsViewLoading](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewLoading_EV.html) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -492,7 +492,7 @@ void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEv
 
 ### Getting the parent of DetailsViewDataGrid
 
-You can get the immediate parent of `DetailsViewDataGrid` through [GetParentDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HelpersSelectionHelper~GetParentDataGrid.html) helper method.
+You can get the immediate parent of `DetailsViewDataGrid` through [GetParentDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper~GetParentDataGrid.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -503,7 +503,7 @@ var parentDataGrid = this.dataGrid.SelectedDetailsViewGrid.GetParentDataGrid();
 {% endhighlight %}
 {% endtabs %}
 
-You can get the top level DataGrid for the `DetailsViewDataGrid` through the [GetTopLevelParentDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HelpersSelectionHelper~GetTopLevelParentDataGrid.html) helper method.
+You can get the top level DataGrid for the `DetailsViewDataGrid` through the [GetTopLevelParentDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper~GetTopLevelParentDataGrid.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -516,7 +516,7 @@ var dataGrid = this.detailsViewDataGrid.GetTopLevelParentDataGrid();
 
 ### Getting the DetailsViewDataGrid based on index
 
-You can get the `DetailsViewDataGrid` based on row index through [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HelpersSelectionHelper~GetDetailsViewGrid.html) helper method.
+You can get the `DetailsViewDataGrid` based on row index through [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper~GetDetailsViewGrid.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -526,7 +526,7 @@ var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(2);
 {% endhighlight %}
 {% endtabs %}
 
-You can also get the `DetailsViewDataGrid` based on the record index and relational column name using [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HelpersSelectionHelper~GetDetailsViewGrid.html) method.
+You can also get the `DetailsViewDataGrid` based on the record index and relational column name using [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper~GetDetailsViewGrid.html) method.
 
 {% tabs %}
 {% highlight c# %}

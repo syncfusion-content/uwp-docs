@@ -68,7 +68,7 @@ SfDataGrid allows you to clear the filters by clearing the filter predicates. Th
 
 * [SfDataGrid.ClearFilters](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilters.html) - Clears filters for all the columns programmatically.
 * [SfDataGrid.ClearFilter(String columnName)](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilter(String).html) - Clears the filter for particular column that has the columnName as `MappingName`.
-* [SfDataGrid.ClearFilter(GridColumn column)](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilte(GridColumn).html) - Clears the filter for particular column alone.
+* [SfDataGrid.ClearFilter(GridColumn column)](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ClearFilter(GridColumn).html) - Clears the filter for particular column alone.
 
 {% tabs %}
 {% highlight c# %}
