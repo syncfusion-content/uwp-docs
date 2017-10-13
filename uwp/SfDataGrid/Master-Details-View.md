@@ -1274,7 +1274,7 @@ You can refer [here](#handling-events) to know about handling events for `Detail
 
 ### Getting the parent DataGrid
 
-You can get the immediate parent DataGrid of corresponding [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) through [GetParentDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HelpersSelectionHelper~GetParentDataGrid.html) helper method.
+You can get the immediate parent DataGrid of corresponding [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) through [GetParentDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper~GetParentDataGrid.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1284,7 +1284,7 @@ var parentDataGrid = this.dataGrid.SelectedDetailsViewGrid.GetParentDataGrid();
 
 ### Getting the DetailsViewDataGrid
  
-You can get the `DetailsViewDataGrid` based on row index through [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HelpersSelectionHelper~GetDetailsViewGrid.html) helper method.
+You can get the `DetailsViewDataGrid` based on row index through [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper~GetDetailsViewGrid.html) helper method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1302,7 +1302,7 @@ var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(0, "ProductDetails");
 
 ### Programmatic Selection in DetailsViewDataGrid
 
-In `DetailsViewDataGrid`, you can add or remove the selection programmatically like parent DataGrid. You can get particular `DetailsViewDataGrid` by using [DetailsViewLoading](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewLoading_EV.html) event or [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HelpersSelectionHelper~GetDetailsViewGrid.html) method to process the selection operations.
+In `DetailsViewDataGrid`, you can add or remove the selection programmatically like parent DataGrid. You can get particular `DetailsViewDataGrid` by using [DetailsViewLoading](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewLoading_EV.html) event or [GetDetailsViewGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.SelectionHelper~GetDetailsViewGrid.html) method to process the selection operations.
 
 #### Selecting records
 
@@ -1642,7 +1642,7 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 By default, the expander is hidden in row, when the [HideEmptyGridViewDefinition](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~HideEmptyGridViewDefinition.html) is set to `true` and [RelationalColumn](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ViewDefinition~RelationalColumn.html) property has an empty collection or null. You can refresh row to display expender when records are added to RelationalColumn property by calling `UpdateDataRow` method. 
 
-For example, if you try to add the new record in `ProductDetails` collection in the parent record having `OrderID` as 1009 and 1010 at run time, the new record is added but the expander is not shown.  But it needs to be shown in UI since RelationalColumn property has record now. In this case, you need to refresh the particular data row to display expander by using [UpdateDataRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HelpersGridHelper~UpdateDataRow.html) helper method. 
+For example, if you try to add the new record in `ProductDetails` collection in the parent record having `OrderID` as 1009 and 1010 at run time, the new record is added but the expander is not shown.  But it needs to be shown in UI since RelationalColumn property has record now. In this case, you need to refresh the particular data row to display expander by using [UpdateDataRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.GridHelper~UpdateDataRow.html) helper method. 
 
 {% tabs %}
 {% highlight c# %}

@@ -143,7 +143,7 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 ## ToolTip
 
-ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid. You can enable the ToolTip for the GridCell by setting the [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowToolTip.html) as true.
+ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid. You can enable the ToolTip for the GridCell by setting the [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html) as true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -163,7 +163,7 @@ this.dataGrid.ShowToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can enable the ToolTip for the particular column by setting the [GridColumn.ShowToolTip](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~ShowToolTip.html) as true.
+You can enable the ToolTip for the particular column by setting the [GridColumn.ShowToolTip](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowToolTip.html) as true.
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid.Columns>

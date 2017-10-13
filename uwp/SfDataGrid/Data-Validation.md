@@ -704,7 +704,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 #### Row Validation 
 
-You can validate the row using [RowValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating.html) event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) when the cell is edited. The `RowValidating` event occurs when edited cells tries to commit the row data or lose the focus. 
+You can validate the row using [RowValidating](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) when the cell is edited. The `RowValidating` event occurs when edited cells tries to commit the row data or lose the focus. 
 
 {% tabs %}
 {% highlight xaml %}
