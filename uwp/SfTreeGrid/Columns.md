@@ -603,7 +603,7 @@ You can enable or disable dragging on particular column using [TreeGridColumn.Al
 {% endhighlight %}
 {% endtabs %}
 ### Disable column reordering
-You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDragging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnDragging.html). `ColumnDragging` event occurs when you start dragging the column header. 
+You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDragging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnDragging_EV.html). `ColumnDragging` event occurs when you start dragging the column header. 
 
 [TreeGridColumnDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnDraggingEventArgs.html) of `ColumnDragging` event provides information about the column triggered this event. 
 
