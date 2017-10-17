@@ -34,7 +34,7 @@ This event is triggered when whenever dragging is canceled. The argument contain
 * [`IsCancel`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~IsCancel.html)			- Used to cancel the drag action.
 * [`SelectedCard`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCard.html)			- Used to get the underlying model of the card.
 * [`SelectedColumn`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumn.html) 	- Used to get the source column of the card.
-* [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanDragEventArgsClassSelectedCardIndexTopic.html)		- Used to get the index of the card in source column.
+* [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCardIndex.html)		- Used to get the index of the card in source column.
 * [`TargetKey`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~TargetKey.html) 	- Used to get the category of the column where the card is going to be dropped.
 * [`TargetColumn`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~TargetColumn.html)	- Used to get the current column which is the drop target for the card.
 * [`TargetCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~TargetCardIndex.html)		- Used to get the index of the card in target column.
@@ -43,12 +43,12 @@ This event is triggered when whenever dragging is canceled. The argument contain
 
 This event is triggered when a card enters into a column while dragging. The argument contains the following information.
 
-* [`IsCancel`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanDragEnterEventArgsClassIsCancelTopic.html)				- Used to cancel the drag action.
-* [`SelectedCard`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanDragEventArgsClassSelectedCardTopic.html)				- Used to get the underlying model of the card.
-* [`SelectedColumn`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanDragEventArgsClassSelectedColumnTopic.html) 		- Used to get the source column of the card.
-* [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanDragEventArgsClassSelectedCardIndexTopic.html)			- Used to get the index of the card in source column.
-* [`CurrentColumn`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanDragEnterEventArgsClassCurrentColumnTopic.html)		- Used to get the column upon which the card enters.
-* [`CurrentIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/frlrfSyncfusionUIXamlKanbanKanbanDragEnterEventArgsClassCurrentIndexTopic.html)			- Used to get the index of the card in current column.
+* [`IsCancel`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs~IsCancel.html)				- Used to cancel the drag action.
+* [`SelectedCard`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCard.html)				- Used to get the underlying model of the card.
+* [`SelectedColumn`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumn.html) 		- Used to get the source column of the card.
+* [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCardIndex.html)			- Used to get the index of the card in source column.
+* [`CurrentColumn`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs~CurrentColumn.html)		- Used to get the column upon which the card enters.
+* [`CurrentIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfkanban/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs~CurrentIndex.html)			- Used to get the index of the card in current column.
 
 ## DragLeave 
 
