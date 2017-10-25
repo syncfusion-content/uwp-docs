@@ -296,6 +296,6 @@ private void CreateChart()
 
 {% endtabs %}
 
-### Listening Biniding Property Changes
-When underlying data object implements INotifyPropertyChanged, you need to enable the ListenPropertyChange property of the series, to make the chart listen to the property changes of your data object.
+### Updating Binding path properties
+When enabling [`ListerPropertyChange`](https://help.syncfusion.com/uwp/sfchart/series#fast-charts) property to the series, you need to implements INotifyPropertyChanged to the underlying data object , to make the chart listen to the property changes of your data object.
 
