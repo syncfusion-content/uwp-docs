@@ -181,7 +181,6 @@ this.Demands = new ObservableCollection<GoldDemand>
       { 
           Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 
       }
-      } 
 };
 
 {% endhighlight %}
@@ -212,7 +211,7 @@ Here you specify “Demands Comparison” as header as in below code example.
 
     <Grid>
 
-        <syncfusion:SfChart Header="Demands Comparison" Height="300" Width="400">
+        <syncfusion:SfChart Header="Demands Comparison" Height="300" Width="500">
                         
         </syncfusion:SfChart>
 
