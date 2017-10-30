@@ -5,11 +5,14 @@ platform: uwp
 control: SfGantt
 documentation: ug
 ---
+
+#Events
+
 **BeginCellEdit**
 
 Occurs when the editing is started in the grid cell. The arguments contain the following information.
 
-* Item - Gets the vallue of the editing task.
+* Item - Gets the value of the editing task.
 * MappingName – Gets the current cell mapping name.
 * Cancel – Sets the value as True to cancel the editing.
 
