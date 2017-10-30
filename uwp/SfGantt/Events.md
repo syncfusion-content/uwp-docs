@@ -5,13 +5,14 @@ platform: uwp
 control: SfGantt
 documentation: ug
 ---
-# Events
+
+#Events
 
 **BeginCellEdit**
 
 Occurs when the editing is started in the grid cell. The arguments contain the following information.
 
-* Item - Gets the current cell editing item.
+* Item - Gets the value of the editing task.
 * MappingName – Gets the current cell mapping name.
 * Cancel – Sets the value as True to cancel the editing.
 
@@ -19,21 +20,21 @@ Occurs when the editing is started in the grid cell. The arguments contain the f
 
 Occurs when the editing is completed in the grid cell. The arguments contain the following information.
 
-* Item - Gets the item value which is edited.
+* Item - Gets the value of the task which is edited.
 * MappingName – Gets the current cell mapping name.
 
 **SelectionChanging**
 
 Occurs when the task selection is changing through mouse or touch interaction. The arguments contain the following information.
 
-* Item - Gets the item value which is selected.
+* Item - Gets the value of the task which is selected.
 * Index -  Gets the selected index.
 
 **SelectionChanged**
 
 Occurs when the task is selected through mouse or touch interaction. . The arguments contain the following information.
 
-* Item - Gets the item value which is selected.
+* Item - Gets the selected task value.
 * Index -  Gets the selected index.
 
 **TaskExpanding**
