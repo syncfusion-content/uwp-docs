@@ -12,7 +12,7 @@ documentation: ug
 
 Occurs when the editing is started in the grid cell. The arguments contain the following information.
 
-* Item - Gets the value of the editing task.
+* Item - Gets the editing task item.
 * MappingName – Gets the current cell mapping name.
 * Cancel – Sets the value as True to cancel the editing.
 
@@ -20,21 +20,21 @@ Occurs when the editing is started in the grid cell. The arguments contain the f
 
 Occurs when the editing is completed in the grid cell. The arguments contain the following information.
 
-* Item - Gets the value of the task which is edited.
+* Item - Gets the edited task item.
 * MappingName – Gets the current cell mapping name.
 
 **SelectionChanging**
 
 Occurs when the task selection is changing through mouse or touch interaction. The arguments contain the following information.
 
-* Item - Gets the value of the task which is selected.
+* Item - Gets the selected task item.
 * Index -  Gets the selected index.
 
 **SelectionChanged**
 
 Occurs when the task is selected through mouse or touch interaction. . The arguments contain the following information.
 
-* Item - Gets the selected task value.
+* Item - Gets the selected task item.
 * Index -  Gets the selected index.
 
 **TaskExpanding**
