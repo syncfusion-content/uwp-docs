@@ -264,7 +264,7 @@ public class ProjectTrackerViewModel
             Progress = 100
         });
 		
-		ScheduleProcess[0].Children = Planning;
+        ScheduleProcess[0].Children = Planning;
 
         return Schedule;
     }
@@ -346,7 +346,7 @@ The below code illustrates how to enable sorting in the Gantt control.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 sfGantt.AllowSorting = true;
 
