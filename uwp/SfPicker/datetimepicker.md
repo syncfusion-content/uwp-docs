@@ -231,7 +231,7 @@ The below code demonstrates Date collection creation.
   
             {
 
-                bool Isupdate = false;
+                bool _isupdate = false;
   
                 if (e.AddedItems != null && e.RemovedItems != null)
   
@@ -241,7 +241,7 @@ The below code demonstrates Date collection creation.
   
                     {
   
-                        Isupdate = true;
+                        _isupdate = true;
   
                     }
 
@@ -249,13 +249,13 @@ The below code demonstrates Date collection creation.
   
                     {
   
-                        Isupdate = true;
+                        _isupdate = true;
   
                     }
   
                 }
 
-                if (Isupdate)
+                if (_isupdate)
   
                 {
   
