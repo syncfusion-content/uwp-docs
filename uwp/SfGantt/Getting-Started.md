@@ -264,7 +264,7 @@ public class ProjectTrackerViewModel
             Progress = 100
         });
 		
-		ScheduleProcess[0].Children = Planning;
+ScheduleProcess[0].Children = Planning;
 
         return Schedule;
     }
