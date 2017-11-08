@@ -176,7 +176,7 @@ public class ProjectTrackerViewModel
             ID = "1"
         });
 
-        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>()
+        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>();
 
         ScheduleProcess.Add(new TaskDetail
         {
@@ -263,6 +263,10 @@ public class ProjectTrackerViewModel
             ID = "6",
             Progress = 100
         });
+		
+		ScheduleProcess[0].Children = Planning;
+
+        return Schedule;
     }
 }
 
@@ -282,7 +286,8 @@ To bind the data source of the SfGantt, set **ItemsSource** property as shown
 
 {% highlight C# %}
 
-SfGantt sfGantt = new SfGantt() { ItemsSource = this.taskDetails.TaskCollection };
+SfGantt sfGantt = new SfGantt();
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 {% endhighlight %}
 
@@ -310,7 +315,7 @@ The following code example illustrates how this can be done.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate |
                              TaskAttributes.FinishDate | TaskAttributes.Progress;
@@ -371,7 +376,7 @@ The below code illustrates enabling the editing in Gantt.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 sfGantt.AllowEditing = true;
 
@@ -481,9 +486,9 @@ private GanttResourceCollection GetResources()
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
-sfGantt.ProjectResources = this.taskDetails.ResourceCollection;
+sfGantt.ProjectResources = (this.DataContext as ProjectTrackerViewModel)..ResourceCollection;
 
 {% endhighlight %}
 
@@ -542,7 +547,7 @@ The below code illustrates how to display the weekend as Friday.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 sfGantt.NonWorkingDays = Days.Friday;
 
