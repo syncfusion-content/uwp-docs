@@ -221,7 +221,7 @@ The below code demonstrates Date collection creation.
   
         }
 
-        //Updatedays method is used to alter the Date collection as per selection change in Month column(if feb is Selected day collection has value from 1 to 28)
+        //Update days method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
 
         private void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
   
@@ -231,7 +231,7 @@ The below code demonstrates Date collection creation.
   
             {
 
-                bool isupdate = false;
+                bool Isupdate = false;
   
                 if (e.AddedItems != null && e.RemovedItems != null)
   
@@ -241,7 +241,7 @@ The below code demonstrates Date collection creation.
   
                     {
   
-                        isupdate = true;
+                        Isupdate = true;
   
                     }
 
@@ -249,13 +249,13 @@ The below code demonstrates Date collection creation.
   
                     {
   
-                        isupdate = true;
+                        Isupdate = true;
   
                     }
   
                 }
 
-                if (isupdate)
+                if (Isupdate)
   
                 {
   
@@ -418,9 +418,9 @@ The below code demonstrates Date collection creation.
       
             this.InitializeComponent();
       
-            DateTimeViewModel datetimeviewmodel = new DateTimeViewModel();
+            DateTimeViewModel datetime view model = new DateTimeViewModel();
       
-            this.DataContext = datetimeviewmodel;
+            this.DataContext = datetime view model;
       
         }
 

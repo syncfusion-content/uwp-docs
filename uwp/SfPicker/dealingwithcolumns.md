@@ -15,7 +15,7 @@ This section explains about the customization of SfPicker Columns
 
 SfPicker allows user to adjust the column width by hooking `SfPicker.ColumnLoaded` event and then check the column using `ColumnLoadedEventArgs.Column` property and then adjust width of column by setting `ColumnLoadedEventArgs.Width` property.
 
-We have prepared below code snippets to demonstarted DateTimePicker sample using `ColumnLoaded` event.
+We have prepared below code snippets to demonstrated DateTimePicker sample using `ColumnLoaded` event.
 
 *MainPage*
 
@@ -91,9 +91,9 @@ Column width of the each and every column can be adjusted by the use of ColumnLo
 
             this.InitializeComponent();
 
-            DateTimePickerViewModel datetimepickerviewmodel = new DateTimePickerViewModel();
+            DateTimePickerViewModel datetime picker view model = new DateTimePickerViewModel();
 
-            this.DataContext = datetimepickerviewmodel;
+            this.DataContext = datetime picker view model;
         
         }
 
@@ -666,9 +666,9 @@ We have prepared cascading sample for change the SfPicker background color when 
     
             this.InitializeComponent();
    
-            ColorInfo colorinfo = new ColorInfo();
+            ColorInfo color info = new ColorInfo();
      
-            this.DataContext = colorinfo;
+            this.DataContext = color info;
      
         }
 

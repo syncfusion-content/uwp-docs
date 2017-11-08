@@ -203,9 +203,9 @@ The below code demonstrates Time collection creation.
  
             this.InitializeComponent();
  
-            DateTimeViewModel datetimeviewmodel = new DateTimeViewModel();
+            DateTimeViewModel datetime view model = new DateTimeViewModel();
  
-            this.DataContext = datetimeviewmodel;       
+            this.DataContext = datetime view model;       
             
          }
 

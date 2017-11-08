@@ -261,11 +261,11 @@ SfPicker allow you to bind collection of data’s by setting `SfPicker.ItemsSour
 
             SfPicker picker = new SfPicker();
 
-            ColorInfo colorinfo = new ColorInfo();
+            ColorInfo color info = new ColorInfo();
 
-            this.DataContext = colorinfo;
+            this.DataContext = color info;
 
-            picker.ItemsSource = colorinfo.Colors;
+            picker.ItemsSource = color info.Colors;
 
             this.Content = picker;
 
@@ -463,7 +463,7 @@ In SfPickerSfPicker can be rendered as a dialog by setting `SfPicker.PickerMode`
 
 {% endtabs %}
 
-The picker can be opened programatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
+The picker can be opened programmatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
 
 Note: This property automatically changed to False when close the dialog by click outside of dialog SfPicker.
 

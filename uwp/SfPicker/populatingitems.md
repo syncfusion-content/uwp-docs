@@ -60,11 +60,11 @@ To bind the data source in SfPicker, set the `SfPicker.ItemsSource` property as 
 
             SfPicker picker = new SfPicker();
 
-            ColorInfo colorinfo = new ColorInfo();
+            ColorInfo color info = new ColorInfo();
 
-            this.DataContext = colorinfo;
+            this.DataContext = color info;
 
-            picker.ItemsSource = colorinfo.Colors;
+            picker.ItemsSource = color info.Colors;
 
             this.Content = picker;
 
@@ -126,9 +126,9 @@ The following code example illustrates about to populate Month, Day and Year val
 
             this.InitializeComponent();
  
-            DatesInfo datesinfo = new DatesInfo();
+            DatesInfo dates info = new DatesInfo();
  
-            this.DataContext = datesinfo;
+            this.DataContext = dates info;
 
         }
         
@@ -590,7 +590,7 @@ Unselected item text FontFamily can be customized by setting `SfPicker.UnSelecte
 
                 SfPicker picker = new SfPicker();
 
-                picker.FontFamily = new FontFamily("Consolas");
+                picker.FontFamily = new FontFamily("Ariel");
 
                 this.Content = picker;
 

@@ -67,13 +67,13 @@ The below code demonstrates Date collection creation.
 
         #region Public Properties
 
-        // Months api is used to modify the Day collection as per change in Month
+        // Months API is used to modify the Day collection as per change in Month
 
         internal Dictionary<string, string> Months { get; set; }
 
         /// <summary>
 
-        /// Date is the acutal DataSource for SfPicker control which will holds the collection of Day ,Month and Year
+        /// Date is the actual DataSource for SfPicker control which will holds the collection of Day ,Month and Year
 
         /// </summary>
 
@@ -196,7 +196,7 @@ The below code demonstrates Date collection creation.
    
         }
 
-        //Updatedays method is used to alter the Date collection as per selection change in Month column(if feb is Selected day collection has value from 1 to 28)
+        //Update days method is used to alter the Date collection as per selection change in Month column(if Feb is Selected day collection has value from 1 to 28)
 
         private void UpdateDays(ObservableCollection<object> Date, SelectionChangedEventArgs e)
    
@@ -206,7 +206,7 @@ The below code demonstrates Date collection creation.
    
             {
 
-                bool isupdate = false;
+                bool Isupdate = false;
    
                 if (e.AddedItems != null && e.RemovedItems != null)
    
@@ -216,7 +216,7 @@ The below code demonstrates Date collection creation.
    
                     {
    
-                        isupdate = true;
+                        Isupdate = true;
    
                     }
 
@@ -224,13 +224,13 @@ The below code demonstrates Date collection creation.
    
                     {
    
-                        isupdate = true;
+                        Isupdate = true;
    
                     }
    
                 }
 
-                if (isupdate)
+                if (Isupdate)
    
                 {
    
@@ -301,7 +301,7 @@ The below code demonstrates Date collection creation.
 
         /// <summary>
 
-        /// Headers api is holds the column name for every column in date picker
+        /// Headers API is holds the column name for every column in date picker
 
         /// </summary>
 
@@ -407,9 +407,9 @@ The below code demonstrates Date collection creation.
  
             this.InitializeComponent();
  
-            DateTimeViewModel datetimeviewmodel = new DateTimeViewModel();
+            DateTimeViewModel datetime view model = new DateTimeViewModel();
  
-            this.DataContext = datetimeviewmodel;
+            this.DataContext = datetime view model;
  
         }
 
