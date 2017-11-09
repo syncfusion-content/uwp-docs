@@ -78,7 +78,7 @@ Occurs while dragging the progress bar through mouse or touch interaction. This 
 
 **TaskBarProgressChanged**
 
-Occurs after progress bar dragging is completed through mouse or touch interaction. The arguments contain the following information.
+Occurs when the taskbar dragging is being performed. This event contains the following arguments:
 
 * [`Task`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarProgressChangedEventArgs~Task.html) - Gets the task  when the progress value has been changed.
 * [`OldValue`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarProgressChangedEventArgs~OldValue.html) - Gets the previous progress value.
@@ -121,7 +121,7 @@ Occurs when the taskbar is resized. This event contains the following arguments:
 
 **TaskBarResizeCompleted**
 
-Occurs when the taskbar resizing is completed. The arguments contain the following information.
+Occurs when the taskbar resizing is completed. This event contains the following arguments:
 
 * [`Task`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarResizeCompletedEventArgs~Task.html) - Gets the task which is resized.
 * [`ResizingDirection`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarResizeCompletedEventArgs~ResizingDirection.html) - Gets the direction in resized task.

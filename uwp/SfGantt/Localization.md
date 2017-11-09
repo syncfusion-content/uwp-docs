@@ -36,7 +36,7 @@ For example, you will have to give name as **fr.resw** for French culture.
 
 ![](Localization_images/AddResource.png)
 
-4.Add the Name/Value pair in Resource Designer of **fr.resw** file and change its corresponding value to corresponding culture. 
+4. Add the Name/Value pair in Resource Designer of **fr.resw** file and change its corresponding value to corresponding culture.
 
 ![](Localization_images/FinalOutput.png)
 
