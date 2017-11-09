@@ -1807,7 +1807,7 @@ chart.Series.Add(series);
 
 **Axis Label Border**
 
-[`ChartAxis`](https://help.syncfusion.com/uwp/sfchart/axis#axis-labels) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`] property of axis and it can be set as shown in the below code snippet,
+[`ChartAxis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`] property of axis and it can be set as shown in the below code snippet,
 
 {% tabs %}
 
@@ -2163,7 +2163,7 @@ chart.Series.Add(series);
 
 ##Multi-level Labels
 
-[`Axis`](https://help.syncfusion.com/wpf/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`] property. These labels are placed based on the provided [`Start`] and [`End`] range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
+[`Axis`](https://help.syncfusion.com/uwp/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`] property. These labels are placed based on the provided [`Start`] and [`End`] range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
 
 {% tabs %}
 
