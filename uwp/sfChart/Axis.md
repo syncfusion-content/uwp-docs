@@ -2328,7 +2328,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Border** **Type**
 
-[`Chart Axis`]((https://help.syncfusion.com/wpf/sfchart/axis)) provides support to various types of border for [`ChartMultiLevelLabels`] and it can be applied by using its [`MultiLevelLabelsBorderType`] property.The default [`MultiLevelLabelsBorderType`] is [`Rectangle`]. The another supported border types are [`Brace`],[`None`] and [`WithoutTopAndBottomBorder`].
+[`Chart Axis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to various types of border for [`ChartMultiLevelLabels`] and it can be applied by using its [`MultiLevelLabelsBorderType`] property.The default [`MultiLevelLabelsBorderType`] is [`Rectangle`]. The another supported border types are [`Brace`],[`None`] and [`WithoutTopAndBottomBorder`].
 
 **Rectangle**
 
