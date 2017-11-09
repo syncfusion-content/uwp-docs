@@ -28,7 +28,7 @@ To localize the SfGantt based on `PrimaryLanguageOverride` using resource files,
 
 1.Right click the project, select **Add** and then **NewItem**.
 
-2.In Add New Item  dialog, select the Resource File  and name the filename as **<culture name>.resw**. The culture name that indicates the name of language and country. 
+2.In Add New Item  dialog, select the Resource File  and name the filename as **[culture name].resw**. The culture name that indicates the name of language and country. 
 
 For example, you will have to give name as **fr.resw** for French culture.
  
