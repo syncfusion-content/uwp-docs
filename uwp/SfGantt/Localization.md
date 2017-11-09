@@ -7,12 +7,11 @@ control: SfGantt
 documentation: ug
 ---
 
-
 # Localization 
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfGantt by adding resource file. Application culture can be changed by setting `PrimaryLanguageOverride` in the MainPage() constructor. 
+Localization is the process of translating the application resources into different languages for the specific cultures. You can localize the SfGantt by adding resource file. Application culture can be changed by setting `PrimaryLanguageOverride` in the MainPage() constructor. 
 
-In the below application, culture is configured to French language.
+In the below code example, culture is configured to French language.
 
 {% tabs %}
 {% highlight c# %}
@@ -25,13 +24,13 @@ public MainPage()
 {% endtabs %}
 
 
-To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, follow the below steps. 
+To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, follow the below steps: 
 
-1.Right-click the project, select **Add** and then **NewItem**.
+1.Right click the project, select **Add** and then **NewItem**.
 
-2.In `Add New Item` wizard, select the **Resource File** option and name the filename as **&lt;culture name&gt;.resw**. 
+2.In Add New Item  dialog, select the Resource File  and name the filename as **<culture name>** **. ** **resw **. The culture name that indicates the name of language and country. 
 
-For example, you have to give name as **fr.resw** for French culture.
+For example, you will have to give name as **fr.resw** for French culture.
  
 3.The culture name that indicates the name of language and country. 
 
