@@ -8,14 +8,14 @@ documentation: ug
 ---
 # Getting started
 
-The following section provides an assistance to create a simple Gantt application and to configure it.
+This section provides an assistance to create and configure a simple Gantt application.
 
 ## Referencing Essential Studio Components in your Solution
 
 ### Adding SDK reference
 
-1.Open the Reference Manager window from project.
-2.Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
+1. Open the Reference Manager window from project.
+2. Windows > Extensions > Syncfusion Controls for UWP XAML.
 
 ![](SfGantt_images/SDK_Reference.jpeg)
 
@@ -23,13 +23,13 @@ The following section provides an assistance to create a simple Gantt applicatio
 
 Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” which refers all the controls in the Syncfusion control library.
 
-![](SfGantt_images/Gantt_dll_reference.jpeg)
-
 In the Add Reference window, browse and choose the reference assembly from the following location.
+
+![](SfGantt_images/Gantt_dll_reference.jpeg)
 
 **[Installed location]**\Syncfusion\Essential Studio\\**[Installed version]**\Assemblies for Universal Windows\10.0\
 
-The following list of assemblies needs to be added as reference to use SfGantt control in any application,
+The following list of assemblies should be added as reference to use SfGantt control in applications:
 
 <table>
 <tr>
@@ -45,7 +45,7 @@ Description
 Syncfusion.SfGantt.UWP
 </td>
 <td>
-Syncfusion.SfGantt.UWP assembly contains classes that handles all the operations in Gantt.
+Contains classes that handles all the operations in Gantt.
 </td>
 </tr>
 <tr>
@@ -53,7 +53,7 @@ Syncfusion.SfGantt.UWP assembly contains classes that handles all the operations
 Syncfusion.Data.UWP
 </td>
 <td>
-Syncfusion.Data.UWP assembly is dependent assembly for Syncfusion.SfGrid.UWP
+Dependent assembly for Syncfusion.SfGrid.UWP.
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ Syncfusion.Data.UWP assembly is dependent assembly for Syncfusion.SfGrid.UWP
 Syncfusion.SfGrid.UWP
 </td>
 <td>
-Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations of tree grid view in the Gantt.
+Contains classes that handles all UI operations of tree grid view in the Gantt.
 </td>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations o
 Syncfusion.SfInput.UWP
 </td>
 <td>
-Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in the tree grid view.
+Contains various editor controls (SfNumericTextBox, SfDateTimeEdit etc.) which are used in the tree grid view.
 </td>
 </tr>
 <tr>
@@ -77,16 +77,24 @@ Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBo
 Syncfusion.SfShared.UWP
 </td>
 <td>
-Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
+Dependent assembly for Syncfusion.SfInput.UWP.
+</td>
+</tr>
+<tr>
+<td>
+Syncfusion.SfTabControl.UWP
+</td>
+<td>
+Contains classes that handles tab control.
 </td>
 </tr>
 </table>
 
 ## Adding SfGantt manually
 
-1.After adding the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
+1. After adding the required assembly references to the project as discussed in the previous section, add the “Syncfusion.UI.Xaml.Gantt” namespace to the application as shown below.
 
-2.Add the “Syncfusion.UI.Xaml.Gantt” namespace to the application as shown below.
+2. Instance the Gantt as shown in the below code example.
 
 {% tabs %}
 
@@ -124,11 +132,11 @@ SfGantt sfGantt = new SfGantt();
 
 ## Adding SfGantt from toolbox
 
-Drag and drop the Gantt control from the toolbox to your application.
+Drag and drop the SfGantt  control from the toolbox to your application.
 
 ![](SfGantt_images/Tool_Box.jpeg)
 
-Now the “Syncfusion Controls for UWP XAML” reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
+Now, the “Syncfusion Controls for UWP XAML” reference will be added to the application references and the xmlns namespace code will be generated in MainWindow.xaml as shown below.
 
 ![](SfGantt_images/Added_SDK.jpeg)
 
@@ -136,7 +144,7 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 
 ## Create data model
 
-You need to create a collection of TaskDetails objects to populate task in SfGantt.
+You should create a collection of TaskDetails objects to populate task in SfGantt as shown below code.
 
 {% highlight C# %}
 
@@ -176,7 +184,7 @@ public class ProjectTrackerViewModel
             ID = "1"
         });
 
-        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>()
+        ObservableCollection<TaskDetail> ScheduleProcess = new ObservableCollection<TaskDetail>();
 
         ScheduleProcess.Add(new TaskDetail
         {
@@ -263,6 +271,10 @@ public class ProjectTrackerViewModel
             ID = "6",
             Progress = 100
         });
+		
+        ScheduleProcess[0].Children = Planning;
+
+        return Schedule;
     }
 }
 
@@ -270,7 +282,7 @@ public class ProjectTrackerViewModel
 
 ## Binding data
 
-To bind the data source of the SfGantt, set **ItemsSource** property as shown below.
+To bind the data source of the SfGantt, set [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ItemsSource.html) property as shown below code example.
 
 {% tabs %}
 
@@ -282,7 +294,8 @@ To bind the data source of the SfGantt, set **ItemsSource** property as shown
 
 {% highlight C# %}
 
-SfGantt sfGantt = new SfGantt() { ItemsSource = this.taskDetails.TaskCollection };
+SfGantt sfGantt = new SfGantt();
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 {% endhighlight %}
 
@@ -290,11 +303,11 @@ SfGantt sfGantt = new SfGantt() { ItemsSource = this.taskDetails.TaskCollection 
 
 ## Defining visible columns
 
-By default, the grid view is manipulated with Name, Start Date, Finish Date, Duration, Progress, Predecessor and Resources columns.
+By default, the grid view is manipulated with Name, Start Date, Finish Date, Duration, Progress, Predecessor, and Resources columns.
 
-You can also customize the visible columns of grid view using **VisibleGridColumns** property in SfGantt.
+The visible columns of grid view can be customized by using [`VisibleGridColumns`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~VisibleGridColumns.html) property in SfGantt.
 
-The following code example illustrates how this can be done.
+The following code example illustrates how  to customize the visible columns.
 
 {% tabs %}
 
@@ -310,7 +323,7 @@ The following code example illustrates how this can be done.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate |
                              TaskAttributes.FinishDate | TaskAttributes.Progress;
@@ -323,9 +336,9 @@ sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttri
 
 ## Sorting
 
-You can enable sorting using **AllowSorting** property. Sorting functionality to arrange the tasks in ascending or descending order based on a column.
+Sorting can be enabled by using [`AllowSorting`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowSorting.html) property. Sorting functionality uses to arrange the tasks in ascending or descending order based on a column.
 
-The below code illustrates how to enable sorting in the Gantt control.
+The following code example illustrates how to enable sorting in the Gantt control.
 
 {% tabs %}
 
@@ -341,7 +354,7 @@ The below code illustrates how to enable sorting in the Gantt control.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 sfGantt.AllowSorting = true;
 
@@ -353,9 +366,9 @@ sfGantt.AllowSorting = true;
 
 ## Editing
 
-You can enable editing using **AllowEditing** property in the Gantt. Editing can be done by cell editing in grid or drag/resize the task bar or progress bar in chart view, also drag and drop to establish relationship between the two tasks.
+Editing can be enabled by using [`AllowEditing`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowEditing.html) property in the Gantt. You can edit cell by cell and drag/resize the task bar or progress bar in chart view. Drag and drop establishes the relationship between two tasks.
 
-The below code illustrates enabling the editing in Gantt.
+The below code example illustrates how to enable the editing in Gantt.
 
 {% tabs %}
 
@@ -371,7 +384,7 @@ The below code illustrates enabling the editing in Gantt.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 sfGantt.AllowEditing = true;
 
@@ -379,7 +392,7 @@ sfGantt.AllowEditing = true;
 
 {% endtabs %}
 
-N>Currently editing is not available in the Windows Phone.
+N>Now, editing is not available in the Windows Phone.
 
 ## Task relationships
 
@@ -390,9 +403,9 @@ You can visualize the relationship between two tasks in the Gantt. These relatio
 * Finish to Start(FS) - You cannot start a task until the other task completes.
 * Finish to Finish(FF) - You cannot finish a task until the other task completes.
 
-The relationship can be created between two tasks, by adding the task relationship in predecessor collection for the task in the TaskDetails.
+The relationship can be created between two tasks by adding the task relationship in predecessor collection for the task in the TaskDetails.
 
-The below code illustrates adding the predecessor in the tasks.
+The below code example illustrates how to add the predecessor in the tasks.
 
 {% highlight C# %}
 
@@ -432,9 +445,9 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 ## Resources
 
-In Gantt control, you can display and assign the resource for each task.
+In Gantt control, you can display and assign the resource for every task.
 
-1.Create the resource collection to be displayed in Gantt.
+1. Create the resource collection to be displayed in Gantt.
 
 {% highlight C# %}
 
@@ -465,7 +478,7 @@ private GanttResourceCollection GetResources()
 
 {% endhighlight %}
 
-2.Bind the resource collection to the property **ProjectResources** property in SfGantt.
+2. Bind the resource collection to the property [`ProjectResources`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ProjectResources.html) property in SfGantt.
 
 {% tabs %}
 
@@ -481,15 +494,15 @@ private GanttResourceCollection GetResources()
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
-sfGantt.ProjectResources = this.taskDetails.ResourceCollection;
+sfGantt.ProjectResources = (this.DataContext as ProjectTrackerViewModel)..ResourceCollection;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-3.Assign the resource to the tasks.
+3. Assign the resource to the tasks.
 
 {% highlight C# %}
 
@@ -511,13 +524,13 @@ public ObservableCollection<TaskDetail> GetData()
 
 ## Non-working days
 
-To highlight and customize the weekends in the Gantt. By default, Saturday and Sunday is considered as weekends.
+This is used to highlight and customize the weekends in the Gantt. By default, Saturday and Sunday is considered as weekends.
 
-* **ShowNonWorkingDays** property can be used to enable or disable the non-working 
-* **NonWorkingDays** property can be used to customize the weekends.
-* **NonWorkingDaysBackground** property can be used change the weekends highlighting color.
+* [`ShowNonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) property can be used to enable or disable the non-working 
+* [`NonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDays.html) property can be used to customize the weekends.
+* [`NonWorkingDaysBackground`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDaysBackground.html) property can be used change the weekends highlighting color.
 
-The below code illustrates how to display the weekend as Friday.
+The below code example illustrates how to display the weekend as Friday.
 
 {% tabs %}
 
@@ -542,7 +555,7 @@ The below code illustrates how to display the weekend as Friday.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = this.taskDetails.TaskCollection;
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
 sfGantt.NonWorkingDays = Days.Friday;
 
@@ -558,4 +571,4 @@ sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
 ![](SfGantt_images/NonWorkingDays.jpeg)
 
-N>To display non-working days the interval type must be week or lesser interval type as days, hours and minutes.
+N>To display non-working days, the interval type must be week or less interval type as days, hours, and minutes.
