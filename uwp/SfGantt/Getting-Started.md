@@ -15,7 +15,7 @@ This section provides an assistance to create and configure a simple Gantt appli
 ### Adding SDK reference
 
 1. Open the Reference Manager window in project.
-2. Select Universal Windows > Extensions > Syncfusion Controls for UWP XAML.
+2. Select Universal Windows -> Extensions -> Syncfusion Controls for UWP XAML.
 
 ![](SfGantt_images/SDK_Reference.jpeg)
 
