@@ -81,35 +81,35 @@ You can also add annotation for a particular axis when there is multiple axes us
 
 {% highlight xaml %}
 
-<syncfusion:SfChart>
+<Chart:SfChart>
 
-<syncfusion:SfChart.RowDefinitions>
+<Chart:SfChart.RowDefinitions>
 
-<syncfusion:ChartRowDefinition></syncfusion:ChartRowDefinition>
+<Chart:ChartRowDefinition></Chart:ChartRowDefinition>
 
-<syncfusion:ChartRowDefinition></syncfusion:ChartRowDefinition>
+<Chart:ChartRowDefinition></Chart:ChartRowDefinition>
 
-</syncfusion:SfChart.RowDefinitions>
+</Chart:SfChart.RowDefinitions>
 
-<syncfusion:SfChart.PrimaryAxis>
+<Chart:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis/>
+<Chart:CategoryAxis/>
 
-</syncfusion:SfChart.PrimaryAxis>
+</Chart:SfChart.PrimaryAxis>
 
-<syncfusion:SfChart.SecondaryAxis>
+<Chart:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis  
+<Chart:NumericalAxis  
 
 x:Name="FirstYAxis"                                         
 
-syncfusion:ChartBase.Row="0"/>
+Chart:ChartBase.Row="0"/>
 
-</syncfusion:SfChart.SecondaryAxis>      
+</Chart:SfChart.SecondaryAxis>      
 
-<syncfusion:SfChart.Annotations>
+<Chart:SfChart.Annotations>
 
-<syncfusion:HorizontalLineAnnotation X1="-0.5" X2="3.5"
+<Chart:HorizontalLineAnnotation X1="-0.5" X2="3.5"
 
 Stroke="DarkGray"
 
@@ -123,9 +123,9 @@ YAxisName="FirstYAxis"
 
 Y1="500">                    
 
-</syncfusion:HorizontalLineAnnotation>               
+</Chart:HorizontalLineAnnotation>               
 
-<syncfusion:RectangleAnnotation  X1="0.6" CanDrag="True" CanResize="True"                                
+<Chart:RectangleAnnotation  X1="0.6" CanDrag="True" CanResize="True"                                
 
 X2="2.2" Y2="1500" Y1="1800" 
 
@@ -137,11 +137,11 @@ Opacity="0.5"
 
 YAxisName="SecondYAxis">            
 
-</syncfusion:RectangleAnnotation>
+</Chart:RectangleAnnotation>
 
-</syncfusion:SfChart.Annotations>
+</Chart:SfChart.Annotations>
 
-<syncfusion:ColumnSeries  Label="2011" Interior="#777777"
+<Chart:ColumnSeries  Label="2011" Interior="#777777"
 
 ItemsSource="{Binding Demands}" 
 
@@ -149,13 +149,13 @@ XBindingPath="Demand"
 
 YBindingPath="Year2011"/>
 
-<syncfusion:ScatterSeries  Interior="#777777" ItemsSource="{Binding Demands}" 
+<Chart:ScatterSeries  Interior="#777777" ItemsSource="{Binding Demands}" 
 
 XBindingPath="Demand"  YBindingPath="Year2010">
 
-<syncfusion:ScatterSeries.YAxis>
+<Chart:ScatterSeries.YAxis>
 
-<syncfusion:NumericalAxis x:Name="SecondYAxis"    
+<Chart:NumericalAxis x:Name="SecondYAxis"    
 
 LabelTemplate="{StaticResource label}" TickLineSize="5" 
 
@@ -163,11 +163,11 @@ MajorTickLineStyle="{StaticResource tick}" Minimum="0" Maximum="2000" Interval="
 
 AxisLineStyle="{StaticResource axis}" ShowGridLines="False"
 
-syncfusion:ChartBase.Row="1"></syncfusion:NumericalAxis>
+Chart:ChartBase.Row="1"></Chart:NumericalAxis>
 
-</syncfusion:ScatterSeries.YAxis>
+</Chart:ScatterSeries.YAxis>
 
-</syncfusion:ScatterSeries>
+</Chart:ScatterSeries>
 
 {% endhighlight %}
 
