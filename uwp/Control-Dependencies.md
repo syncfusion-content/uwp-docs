@@ -231,7 +231,7 @@ Syncfusion.SfShared.UWP</td></tr>
 <td>
 SfBusyIndicator</td><td>
 Syncfusion.SfBusyIndicator.UWP</td><td>
-</td></tr>
+Syncfusion.SfShared.UWP</td></tr>
 <tr>
 <td>
 SfHubTile</td><td>
@@ -328,4 +328,9 @@ Syncfusion.SfPivotGrid.UWP
 Syncfusion.Data.UWP<br/><br/>Syncfusion.Olap.UWP<br/><br/>Syncfusion.PivotAnalysis.UWP<br/><br/>Syncfusion.SfBusyIndicator.UWP<br/><br/>Syncfusion.SfCellGrid.UWP<br/><br/>Syncfusion.SfColorPickers.UWP<br/><br/>Syncfusion.SfGrid.UWP<br/><br/>Syncfusion.SfGridCommon.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>
 </td>
 </tr>
+<tr>
+<td>
+SfReportViewer</td><td>
+Syncfusion.SfReportViewer.UWP</td><td>
+Syncfusion.DocIO.UWP<br/><br/>Syncfusion.Pdf.UWP<br/><br/>Syncfusion.SfGridCommon.UWP<br/><br/>Syncfusion.SfChart.UWP<br/><br/>Syncfusion.SfGauge.UWP<br/><br/>Syncfusion.SfCellGrid.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfMaps.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfTreeNavigator.UWP<br/><br/>Syncfusion.XlsIO.UWP</td></tr>
 </table>
