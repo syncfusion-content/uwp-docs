@@ -401,7 +401,9 @@ Header text FontAttribute can be customized by setting `SfPicker.HeaderFontStyle
         
         </Grid>
     
-    </Page>      
+    </Page>    
+	
+{% endhighlight %}  
       
 {% highlight c# %}
 
@@ -554,7 +556,7 @@ SfPicker allows providing custom view to Footer of SfPicker by setting `SfPicker
 
 ## Perform validation with default validation Button
 
-SfPicker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
+SfPicker allows performing validation based on Ok or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
 
 
 {% tabs %}
