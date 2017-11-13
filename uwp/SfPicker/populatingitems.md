@@ -241,7 +241,7 @@ Selected item text color can be customized by setting `SfPicker.SelectedItemFore
 
 {% tabs %}
 
-{% highlight xmal %}
+{% highlight xaml %}
     
     <Page
         x:Class="PopulatingItems.MainPage"

@@ -399,6 +399,8 @@ The below code demonstrates Date collection creation.
 
     </Page>
 
+	{% endhighlight %}
+	
 {% highlight c# %}
 
     using Syncfusion.UI.Xaml.Controls.Input;
