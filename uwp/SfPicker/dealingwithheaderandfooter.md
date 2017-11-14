@@ -401,7 +401,9 @@ Header text FontAttribute can be customized by setting `SfPicker.HeaderFontStyle
         
         </Grid>
     
-    </Page>      
+    </Page>    
+	
+{% endhighlight %}  
       
 	  {% endhighlight %}
 	  
