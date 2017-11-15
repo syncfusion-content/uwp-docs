@@ -405,8 +405,7 @@ Header text FontAttribute can be customized by setting `SfPicker.HeaderFontStyle
 	
 {% endhighlight %}  
       
-	  {% endhighlight %}
-	  
+  
 {% highlight c# %}
 
     using Syncfusion.UI.Xaml.Controls.Input;
