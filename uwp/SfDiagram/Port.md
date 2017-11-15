@@ -119,7 +119,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 By default, Port will make connection to specific Point on Node. Now, We have provided `Dynamic` constraint for `NodePort` to establish the connection at a relative point on Node’s boundary and direction of the Connector is dependent with that Port.
 
-We can enable the `Dynamic` constraint in PortConstraints to achieve this behaviour.
+We can enable the `Dynamic` constraint in PortConstraints to achieve this behavior.
 
 Following code illustrates how to enable the `Dynamic` constraint to the NodePort.
 
