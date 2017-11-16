@@ -408,7 +408,7 @@ The following table illustrates the defination of the Shape,ShapeStyle,Content a
 
 ![](Interaction_images/QuickCommand_img2.jpg)
 
-The below code example illustrates, how to use customize the appearence of the QuickCommand. 
+The below code example illustrates, how to use customize the appearance of the QuickCommand. 
 
 {% highlight xml %}
 <!--Style for QuickCommand-->
@@ -457,8 +457,11 @@ Quick.Margin = new Thickness( -25,0, 0, 0);
 Quick.Shape = "M0.5,0.5L25.5,0.5L25.5,25.557L0.5,25.557z";
 
 Quick.Command = (Diagram.Info as IGraphInfo).Commands.Zoom;
-
-Quick.CommandParameter = zoomin;
+ZoomPositionParamenter zoomingcommand = new ZoomPositionParamenter()
+ {
+  ZoomCommand = ZoomCommand.ZoomIn
+ };
+Quick.CommandParameter = zoomingcommand;
 
 // To define the Background style
 
@@ -498,7 +501,7 @@ The `OffsetX` and `OffsetY` property of QuickCommand is used to align the Quick
 
 ### Horizontal and Vertical alignments
 
-The `HorizontalAlignment` property of QuickCommand is used to set how the QuickCommad is horizontally aligned at the QuickCommand position and its can determined from the fraction values. The `VerticalAlignment` property is used to set how QuickCommand is vertically aligned at the QuickCommand position.
+The `HorizontalAlignment` property of QuickCommand is used to set how the QuickCommand is horizontally aligned at the QuickCommand position and its can determined from the fraction values. The `VerticalAlignment` property is used to set how QuickCommand is vertically aligned at the QuickCommand position.
 
 The following table illustrates all the possible alignments visually with `Offset (0, 0)`.
 
