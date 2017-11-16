@@ -44,7 +44,7 @@ PivotGauge1.ColumnsCount = 2
 
 ## Gauge Radius
 
-SfPivotgauge provides support to adjust its radius by assigning a proper value to its `Radius` property. The following code snippet illustrates about how to modify the radius of SfPivotGauge.
+SfPivotGauge provides support to adjust its radius by assigning a proper value to its `Radius` property. The following code snippet illustrates about how to modify the radius of SfPivotGauge.
 
 {% tabs %}
 
