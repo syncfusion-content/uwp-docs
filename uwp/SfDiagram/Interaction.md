@@ -457,11 +457,11 @@ Quick.Margin = new Thickness( -25,0, 0, 0);
 Quick.Shape = "M0.5,0.5L25.5,0.5L25.5,25.557L0.5,25.557z";
 
 Quick.Command = (Diagram.Info as IGraphInfo).Commands.Zoom;
-ZoomPositionParamenter zoomingcommand = new ZoomPositionParamenter()
+ZoomPositionParamenter parameter = new ZoomPositionParamenter()
  {
   ZoomCommand = ZoomCommand.ZoomIn
  };
-Quick.CommandParameter = zoomingcommand;
+Quick.CommandParameter = parameter;
 
 // To define the Background style
 
