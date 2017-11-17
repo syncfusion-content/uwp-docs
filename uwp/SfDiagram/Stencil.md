@@ -35,142 +35,128 @@ Properties Table
 
 ## Symbol
 
-Symbol is used to implement the ISymbol interface. The ISymbol interface consists of two properties to visualize symbols in Stencil:
+Symbol is used to implement the ISymbol interface. The ISymbol interface consists of two properties to visualize symbols in Stencil.
 
-#### Symbol and SymbolTemplate
+###Adding style to symbol and symbol group
 
-{% highlight C# %}
+The following example illustrates how to add the Symbol and symbolgroups style
+ 
+{% highlight xaml %}
+<!--Style for Symbol-->
+<Style TargetType="stencil:Symbol">
+    <Setter Property="Width" Value="100" />
+    <Setter Property="Height" Value="100" />
+    <Setter Property="Padding" Value="8" />
+    <Setter Property="BorderThickness" Value="1" />
+    <Setter Property="Foreground" Value="Black"/>
+    <Setter Property="Background" Value="Transparent" />
+    <Setter Property="BorderBrush" Value="Transparent" />
+    <Setter Property="Margin" Value="3"/>
+</Style>
 
-public class SymbolItem : ISymbol
+<!--Style for Symbol Group-->
+<Style TargetType="stencil:SymbolGroup">
+    <Setter Property="FontFamily" Value="Regular"/>
+    <Setter Property="Background" Value="#ffffff"/>
+    <Setter Property="Foreground" Value="#222222"/>
+    <Setter Property="FontSize" Value="14"/>
+    <Setter Property="HeaderTemplate">
+        <Setter.Value>
+            <DataTemplate>
+                <stencil:Header>
+                    <stencil:Header.Template>
+                        <ControlTemplate TargetType="stencil:Header">
+                            <Grid>
+                                <Border x:Name="header" Background="#f5f5f5" BorderBrush="#dfdfdf" 
+                                                BorderThickness="1">
+                                    <ContentPresenter Margin="10" Content="{Binding}"/>
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </stencil:Header.Template>
+                </stencil:Header>
+            </DataTemplate>
+        </Setter.Value>
+    </Setter>
+</Style>
+ 
+ {% endhighlight %}
+ 
+####Create the Node into a collection
+ 
+ {% highlight xaml %}
+
+<!--Style for Node-->
+<Style x:Key="shapeStyle" TargetType="Path">
+    <Setter Property="Fill" Value="LightGray"/>
+    <Setter Property="Stroke" Value="#727272"/>
+    <Setter Property="StrokeThickness" Value="2"/>
+    <Setter Property="Stretch" Value="Fill"/>
+</Style>
+ {% endhighlight %}
+
+ {% highlight xaml %}
+
+<!--Initializes a Node-->
+<syncfusion:NodeViewModel UnitHeight="60" UnitWidth="60" OffsetX="30" OffsetY="30" Shape="{StaticResource Rectangle}"
+                                              ShapeStyle="{StaticResource shapeStyle}"
+                                              Key="Nodes">
+</syncfusion:NodeViewModel>
+ 
+ {% endhighlight %}
+
+####Add the object into the Collection.
+ 
+ {% highlight C# %}
+ 
+ // SymbolSource to Stencil
+public class SymbolCollection : ObservableCollection<object>
 {
-	//Symbol-Any Object
-    public object Symbol { get; set; }
-
-    //Custom property for grouping.
-    public object GroupName { get; set; }
-
-	//Data template to visualize the object.
-    public DataTemplate SymbolTemplate { get; set; }
-
-    //For cloning the symbol from the given object and data template.
-    public ISymbol Clone()
-    {
-    	return new SymbolItem()
-        {
-        	Symbol = this.Symbol,
-			SymbolTemplate = this.SymbolTemplate
-		};
-	}
-
-    public object Key { get; set; }
+ 
 }
 
-
-{% endhighlight %}
-
-### Adding the Symbol
-
-The following example illustrates how to add the Symbol into a Collection:
-
-#### Define the SymbolTemplate.
-
-{% highlight xaml %}
-
-<DataTemplate x:Key="Star">
-	<Path Stretch="Fill" Data="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z"
-          Stroke="Black" StrokeThickness="1" />
-</DataTemplate>
-
-{% endhighlight %}
-
-#### Create the ISymbol with Symbol and SymbolTemplate properties.
-
-{% highlight xaml %}
-
-<local:FloorPlanSymbolItem GroupName="Flow Chart" Symbol="Star"
-                           SymbolTemplate="{StaticResource Star}"/>
-
-{% endhighlight %}
-
-#### Add the ISymbol into the Collection.
-
-{% highlight C# %}
-
-// SymbolSource to Stencil
-public class SymbolCollection : ObservableCollection<ISymbol>
-{
-
-}
-
 {% endhighlight %}
 
 {% highlight xaml %}
 
-<local:SymbolCollection x:Key="symbolcollection">
-	<!--Adding Symbol into a collection-->
-	<local:FloorPlanSymbolItem GroupName="Flow Chart" Symbol="Star"
-                               SymbolTemplate="{StaticResource Star}"/>
+<local:SymbolCollection x:Key="collection">
+    <!--Add a Node-->
+    <syncfusion:NodeViewModel UnitHeight="60" UnitWidth="60" OffsetX="30" OffsetY="30" Shape="{StaticResource Rectangle}"
+                                              ShapeStyle="{StaticResource shapeStyle}"
+                                              Key="Nodes">
+    </syncfusion:NodeViewModel>
 </local:SymbolCollection>
+ 
+ {% endhighlight %}
+ 
+![](Stencil_images/Stencil_img5.jpeg)
+ 
+ This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
 
-{% endhighlight %}
-
-![](Stencil_images/Stencil_img2.jpeg)
-
-This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
-
-### Add Node, Connector and Group to Stencil
-
-####  Create a Node ,Connector and Group and to SymbolCollection.
-
-{% highlight xaml %}
-
-<!--Collection of Symbols-->
-<local:SymbolCollection x:Key="symbolcollection">
-	<!--Creates the NodeViewModel-->
-	<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
-			                  Shape="{StaticResource Rectangle}" Key="Nodes"/>
-            
-	<!--Creates the ConnectorViewModel-->
-   	<syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200"
-                                   Key="Connectors"/>
-            
-	<!--Creates the GroupViewModel-->
-   	<syncfusion:GroupViewModel Key="Groups">
-		<!--Creates the Groupable Nodes-->
-        <syncfusion:GroupViewModel.Nodes>
-			<syncfusion:NodeCollection>
-            	<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
-                            			  Shape="{StaticResource Ellipse}">
-				</syncfusion:NodeViewModel>
-			</syncfusion:NodeCollection>
-		</syncfusion:GroupViewModel.Nodes>
-                
-		<!--Creates the Groupable Connectors-->
-        <syncfusion:GroupViewModel.Connectors>
-        	<syncfusion:ConnectorCollection>
-            	<syncfusion:ConnectorViewModel SourcePoint="0,0"  
-                                               TargetPoint="100,100"/>
-			</syncfusion:ConnectorCollection>
-		</syncfusion:GroupViewModel.Connectors>
-	</syncfusion:GroupViewModel>
+###Add Node and Connector to Stencil
+ 
+####Create a Node and Connector to SymbolCollection.
+ 
+ {% highlight xaml %}
+ 
+ <!--Collection of Symbols-->
+<local:SymbolCollection x:Name="collection">
+    <!--Initializes Nodes-->
+    <syncfusion:NodeViewModel UnitHeight="60" UnitWidth="60" OffsetX="30" OffsetY="30" Shape="{StaticResource Rectangle}"
+                                              ShapeStyle="{StaticResource shapeStyle}"
+                                              Key="Nodes">
+    </syncfusion:NodeViewModel>
+    <syncfusion:NodeViewModel UnitHeight="60" UnitWidth="60" OffsetX="30" OffsetY="30"  Shape="{StaticResource Ellipse}"
+                                              ShapeStyle="{StaticResource shapeStyle}"
+                                              Key="Nodes">
+    </syncfusion:NodeViewModel>
+    <!--Add a Connector-->
+    <syncfusion:ConnectorViewModel  SourcePoint="0,0" TargetPoint="60,60" Key="Connectors"/>
 </local:SymbolCollection>
+ 
+ {% endhighlight %}
 
-{% endhighlight %}
-
-####Add SymbolCollection to SymbolSource of Stencil.
-
-{% highlight xaml %}
-
-<stencil:Stencil x:Name="stencil" ExpandMode="All">
-	<stencil:Stencil.SymbolSource>
-    	<!--Collection of Symbols-->
-        <local:SymbolCollection>
-        	<!--From step2, Create a Node, Connector and Group to SymbolCollection.-->
-      	</local:SymbolCollection>
-	</stencil:Stencil.SymbolSource>
-</stencil:Stencil>
-
-{% endhighlight %}
+![](Stencil_images/Stencil_img6.jpeg)
 
 ## SymbolGroups
 
@@ -184,15 +170,16 @@ The following code example illustrates how to create a SymbolGroup.
 
 {% highlight xaml %}
 
-<stencil:Stencil x:Name="stencil" ExpandMode="All" 
-		         SymbolSource="{StaticResource symbolcollection}">
-	<!--SymbolGroup-->
+<!--Adding symbol-->
+<stencil:Stencil x:Name="stencil" SymbolSource="{StaticResource collection}" Grid.Column="0" Grid.Row="1" 
+                                 ExpandMode="All" BorderBrush="#dfdfdf"
+                             BorderThickness="0,0,1,0">
+    <!--SymbolGroup-->
     <stencil:Stencil.SymbolGroups>
-    	<stencil:SymbolGroups>
-        	<!--To Map Symbols based on GroupName-->
-			<stencil:SymbolGroupProvider MappingName="Key"/>
-		</stencil:SymbolGroups>
-	</stencil:Stencil.SymbolGroups>
+        <stencil:SymbolGroups>
+            <stencil:SymbolGroupProvider MappingName="Key"/>
+        </stencil:SymbolGroups>
+   </stencil:Stencil.SymbolGroups>
 </stencil:Stencil>
 
 {% endhighlight %}
@@ -219,37 +206,16 @@ The following code example shows how to create and add the SymbolFilter. Based o
 
 {% highlight C# %}
 
-stencil.SymbolFilters = new SymbolFilters();
+stencil.SelectedFilter = new SymbolFilterProvider() { SymbolFilter = SymbolFilter };        
+ 
+{% endhighlight %}
+ 
+{% highlight C# %}
 
-//Creates the SymbolFilterProvider
-SymbolFilterProvider allFilter = new SymbolFilterProvider
-{
-	Content = "All",
-    Filter = SymbolFilter
-};
-
-SymbolFilterProvider kitchenFilter = new SymbolFilterProvider
-{
-	Content = "Kitchen",
-    Filter = SymbolFilter
-};
-
-//Add the SymbolFilterProvider to SymbolFilters collection
-stencil.SymbolFilters.Add(allFilter);
-stencil.SymbolFilters.Add(kitchenFilter);
-
-// sender: used to get the selected SymbolFilters
+//Filter event
 private bool SymbolFilter(SymbolFilterProvider sender, object symbol)
 {
-	if (sender.Content.ToString() == "All")
-    {
-    	return true;
-	}
-    if ((symbol as SymbolItem).GroupName == sender.Content.ToString())
-    {
-    	return true;
-    }
-	return false;
+   return true;
 }
 
 {% endhighlight %}
