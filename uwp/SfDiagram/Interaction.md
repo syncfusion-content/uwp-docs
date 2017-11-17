@@ -538,7 +538,7 @@ VerticalAlignment = VerticalAlignment.Top;
 
 ### Command
 
-Command is used to execute the certain action. By default, diagram have several commands. For more information about Commands, refer to [Commands] (/wpf/sfdiagram/commands).
+Command is used to execute the certain action. By default, diagram have several commands. For more information about Commands, refer to [Commands] (/uwp/sfdiagram/commands).
 
 ### DragCommand
 
