@@ -39,7 +39,7 @@ Symbol is used to implement the ISymbol interface. The ISymbol interface consist
 
 ###Adding style to symbol and symbol group
 
-The following example illustrates how to add the Symbol and symbolgroups style
+The following example illustrates how to add the Symbol and symbol groups style
  
 {% highlight xaml %}
 <!--Style for Symbol-->
