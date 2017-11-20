@@ -37,7 +37,7 @@ Properties Table
 
 Symbol is used to implement the ISymbol interface. The ISymbol interface consists of two properties to visualize symbols in Stencil.
 
-###Adding style to symbol and symbol group
+### Adding style to symbol and symbol group
 
 The following example illustrates how to add the Symbol and symbol groups style
  
@@ -82,7 +82,7 @@ The following example illustrates how to add the Symbol and symbol groups style
  
  {% endhighlight %}
  
-####Create the Node into a collection
+#### Create the Node into a collection
  
  {% highlight xaml %}
 
@@ -105,7 +105,7 @@ The following example illustrates how to add the Symbol and symbol groups style
  
  {% endhighlight %}
 
-####Add the object into the Collection.
+#### Add the object into the Collection.
  
  {% highlight C# %}
  
@@ -133,9 +133,9 @@ public class SymbolCollection : ObservableCollection<object>
  
  This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
 
-###Add Node and Connector to Stencil
+### Add Node and Connector to Stencil
  
-####Create a Node and Connector to SymbolCollection.
+#### Create a Node and Connector to SymbolCollection.
  
  {% highlight xaml %}
  
@@ -198,7 +198,7 @@ Expand and Collapse can be performed on SymbolGroup (updating the Visibility of 
 | ZeroOrMore | Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![](Stencil_images/Stencil_img9.jpeg) | ![](Stencil_images/Stencil_img10.jpeg) |
 | All | All the SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img11.jpeg) |
 
-##SymbolFilters
+## SymbolFilters
 
 `SymbolFilterProvider` is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider.
 
