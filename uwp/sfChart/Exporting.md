@@ -59,7 +59,7 @@ Guid id = BitmapEncoder.GifEncoderId;
 
 StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
 
-StorageFile sampleFile = await storageFolder.CreateFileAsync("samplechart.png", CreationCollisionOption.ReplaceExisting);
+StorageFile sampleFile = await storageFolder.CreateFileAsync("Chart.png", CreationCollisionOption.ReplaceExisting);
 
 Stream x = await sampleFile.OpenStreamForWriteAsync();
 
