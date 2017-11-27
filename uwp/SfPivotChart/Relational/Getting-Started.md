@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Relational Getting Started with SfPivotChart control for UWP
-description: Relational Getting Started with SfPivotChart control for UWP
-platform: uwp
+title: Relational Getting Started | SfPivotChart | UWP | Syncfusion
+description: Getting Started for SfPivotChart with relational data.
+platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains the steps required to create a simple SfPivotChart control bound to Relational data source such as IList, IEnumerable.etc.,
 
-### Control Initialization
+## Control Initialization
 
 SfPivotChart control can be initialized and added to an application through the following ways:
 
@@ -42,7 +42,7 @@ Open Visual Studio IDE and navigating to *File > New > Project > Universal > Bla
 Then, name the project as "SfPivotChartDemo" while creating the application to access the project later.
 
 In order to add SfPivotChart control manually in XAML, the following assembly references must be added in the project.
-	
+
 * Syncfusion.SfPivotChart.UWP
 * Syncfusion.SfChart.UWP
 * Syncfusion.Olap.UWP
@@ -57,7 +57,7 @@ You can find these libraries under following location.
 Or else, the SfPivotChart control can be added to the project by choosing SDK reference as follows:
 
 Right click on **References** and select Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML.
- 
+
 Now add the following namespace in MainPage.xaml file.
 
 {% highlight xaml %}
@@ -167,19 +167,31 @@ The ItemSource for the SfPivotChart control will be initialized in this file. Pl
 
 public class ProductSales
 {
+    private object productSalesData;
     public string Product { get; set; }
     public string Date { get; set; }
     public string Country { get; set; }
     public double Amount { get; set; }
+
+    public object ProductSalesData
+    {
+      get
+        {
+          this.productSalesData = this.productSalesData ?? ProductSales.GetSalesData();
+          return this.productSalesData;
+        }
+      set { this.productSalesData = (ProductSales.ProductSalesCollection)value; }      
+    }
+    
     public static ProductSalesCollection GetSalesData()
     {
-        /// Geography
+        // Geography
         string[] countries = new string[] { "Germany", "Canada", "United States"};
 
-        /// Time
+        // Time
         string[] dates = new string[] { "FY 2008", "FY 2009", "FY 2010", "FY 2012" };
 
-        /// Products
+        // Products
         string[] products = new string[] { "Bike", "Car" };
         Random r = new Random(123345);
 
@@ -196,12 +208,12 @@ public class ProductSales
         }
         return listOfProductSales;
     }
-        
+
     public class ProductSalesCollection : List<ProductSales>
     {
     }
 }
-    
+
 {% endhighlight %}
 
 Above mentioned GetSalesData method is used to get the collection that needs to be populated in the SfPivotChart control. Now we need to bind the collection to the SfPivotChart control as its ItemSource. It can be done through XAML or code-behind.
@@ -215,7 +227,6 @@ If you need to initialize the ItemSource through XAML, DataContext is used. Plea
 <Page
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     x:Class="SfPivotChartDemo.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SfPivotChartDemo"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -268,7 +279,7 @@ namespace SfPivotChartDemo
             InitializeComponent();
             SfPivotChart PivotChart = new SfPivotChart();
             PivotChart.Name = "PivotChart1";
-            Root_Grid1.Children.Add(PivotChart);
+            Root_Grid.Children.Add(PivotChart);
             PivotChart.ItemSource = ProductSales.GetSalesData();
             //Adding PivotRows to the Control
             PivotChart.PivotAxis.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
@@ -287,4 +298,4 @@ namespace SfPivotChartDemo
 
 **Run** the application, the following output will be generated.
 
-![](Getting-Started_images/Relational.png) 
+![](Getting-Started_images/Relational.png)
