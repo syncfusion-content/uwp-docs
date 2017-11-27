@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Olap Getting Started with SfPivotGrid control for UWP
-description: Olap Getting Started with SfPivotGrid control for UWP
-platform: uwp
+title: OLAP Getting Started | SfPivotGrid | UWP | Syncfusion
+description: Getting Started of SfPivotGrid Control with OLAP Data
+platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
@@ -23,7 +23,7 @@ SfPivotGrid control can be initialized and added to an application through the f
 
 Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
 
-N> Once the UWP application is created, select **"Properties"** under the project shown in Solution Explorer and change the Target Version of the application as **"Windows 10 (10.0; Build 10240)".**
+N> Once the UWP application is created, select `Properties` under the project shown in Solution Explorer and change the Target Version of the application as **Windows 10 (10.0; Build 10240)**.
 
 Now select Toolbox options from View menu and it will appear inside the VisualStudio IDE. From the toolbox select SfPivotGrid control under “Syncfusion Controls for UWP XAML” group, then drag and drop it into the designer section of MainPage.xaml file.
 
@@ -42,7 +42,7 @@ Open Visual Studio IDE and navigating to *File > New > Project > Universal > Bla
 Then, name the project as "SfPivotGridDemo" while creating the application to access the project later.
 
 In order to add SfPivotGrid control manually in XAML, the following assembly references must be added in the project.
-	
+
 * Syncfusion.SfPivotGrid.UWP
 * Syncfusion.SfCellGrid.UWP
 * Syncfusion.SfGridCommon.UWP
@@ -60,8 +60,8 @@ You can find these libraries under following location.
 
 Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
 
-Right click on **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*. 
- 
+Right click on **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+
 Now add the following namespace in MainPage.xaml file.
 
 {% highlight xaml %}
@@ -167,7 +167,7 @@ namespace SfPivotGridDemo
 
 N> The following steps explain about how to refer the online service in Universal Windows Platform application in-order to bind the cube information in SfPivotGrid. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotgrid/getting-started#creating-wcf-service-application).
 
-After initializing SfPivotGrid control, right click on **References** and select **Add Service Reference** option. 
+After initializing SfPivotGrid control, right click on **References** and select **Add Service Reference** option.
 
 In “Add Service Reference” window, enter the following address and click “Go” button to add the online service.
 
@@ -177,8 +177,8 @@ Also change the default service namespace from "ServiceReference1" to “OlapMan
 
 Include the following namespace in code-behind for using OlapDataManager and OlapReport in the application.
 
- * Syncfusion.Olap.UWP.Manager
- * Syncfusion.Olap.UWP.Reports
+* Syncfusion.Olap.UWP.Manager
+* Syncfusion.Olap.UWP.Reports
 
 Then include the following code to initialize the OlapDataManager and to create OlapReport through loaded event of SfPivotGrid control.
 
@@ -191,7 +191,7 @@ namespace SfPivotGridDemo
 {
     public sealed partial class MainPage : Page
     {
-        public MainPage() 
+        public MainPage()
         {
             this.InitializeComponent();
             //Hook PivotGrid's loaded event to assign OlapDataManager
@@ -237,12 +237,12 @@ namespace SfPivotGridDemo
         }
     }
 }
-    
+
 {% endhighlight %}
 
-N> **"OlapDataChanged"** event should be hooked before setting the current report to OlapDataManager.
+N> `OlapDataChanged` event should be hooked before setting the current report to OlapDataManager.
 
-Next declare a global reference to OlapManagerService’s IOlapDataProvider. In the **OlapDataManager_OlapDataChanged method**, call the **"SetConnection"** method to initialize the connection. Then call the **GetJSONDataAsync** operation by passing parameters of serialized OlapReport and the MDX query generated from the current OlapReport. The resultant serialized CellSet is assigned to JSONData of SfPivotGrid’s OlapDataManager.
+Next declare a global reference to OlapManagerService’s IOlapDataProvider. In the **OlapDataManager_OlapDataChanged method**, call the `SetConnection` method to initialize the connection. Then call the **GetJSONDataAsync** operation by passing parameters of serialized OlapReport and the MDX query generated from the current OlapReport. The resultant serialized CellSet is assigned to JSONData of SfPivotGrid’s OlapDataManager.
 
 {% highlight c# %}
 
@@ -252,7 +252,7 @@ namespace SfPivotGridDemo
     {
         OlapManagerService.IOlapDataProvider clientChannel;
 
-        public MainPage() 
+        public MainPage()
         {
             //SfPivotGrid control Initialization
         }
@@ -301,15 +301,15 @@ namespace SfPivotGridDemo
 
 {% endhighlight %}
 
-Finally, the SfPivotGrid control is rendered as shown below. 
+Finally, the SfPivotGrid control is rendered as shown below.
 
-![](Getting-Started_images/PivotGrid.png) 
+![](Getting-Started_images/PivotGrid.png)
 
 ## Creating WCF Service Application
 
-Create a new **WCF** Service application by using Visual Studio IDE and name the WCF project as **"OlapManagerService".**
+Create a new **WCF** Service application by using Visual Studio IDE and name the WCF project as **OlapManagerService**.
 
-Add the following dependency assemblies into your WCF service application.  
+Add the following dependency assemblies into your WCF service application.
 
 * Syncfusion.Olap.Base.dll
 * Syncfusion.OlapUWP.BaseWrapper.dll
@@ -397,7 +397,7 @@ namespace OlapManagerService
 
 N> Here we have specified our demo cube path for demonstration purpose. You can modify the connection string as per your requirement.
 
-Include the basic HTTP binding and service endpoint address in the web.config file by replacing the following code snippet of **"ServiceModel"** section.
+Include the basic HTTP binding and service endpoint address in the web.config file by replacing the following code snippet of `ServiceModel` section.
 
 {% highlight xaml %}
 
@@ -425,11 +425,11 @@ Include the basic HTTP binding and service endpoint address in the web.config fi
         </behavior>
       </serviceBehaviors>
     </behaviors>
-    
+
     <protocolMapping>
         <add binding="basicHttpsBinding" scheme="https"/>
-    </protocolMapping>    
-    
+    </protocolMapping>
+
     <serviceHostingEnvironment multipleSiteBindingsEnabled="false"/>
     <services>
       <!--Bind the WCF service to our custom binding-->

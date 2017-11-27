@@ -1,0 +1,189 @@
+---
+layout: post
+title: Hyperlink Cells | SfPivotGrid | UWP | Syncfusion
+description: Hyperlink Cells
+platform: UWP
+control: SfPivotGrid
+documentation: ug
+---
+
+# Hyperlink Cells
+
+SfPivotGrid allows hyperlinking of cells to retrieve detailed information about a particular cell. Hyperlink can be individually applied to the following cells.
+
+* Column Header Cells
+* Row Header Cells
+* Value Cells
+* Summary Column Cells
+* Summary Row Cells
+
+The hyperlink options can be enabled or disabled separately for column header cells, row header cells, summary column cells, summary row cells and value cells by using the property of `IsHyperlinkCell` in `PivotGridCellStyle` class.
+
+**Hyperlink in Column Header Cells**
+
+The following code snippet illustrates about how to enable hyperlink in column header cells.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfPivotGrid x:Name="PivotGrid1" ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
+                        PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
+    <syncfusion:SfPivotGrid.ColumnHeaderStyle>
+        <syncfusion:PivotGridCellStyle IsHyperlinkCell="True"/>
+    </syncfusion:SfPivotGrid.ColumnHeaderStyle>
+</syncfusion:SfPivotGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.PivotGrid1.ColumnHeaderStyle.IsHyperlinkCell = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.PivotGrid1.ColumnHeaderStyle.IsHyperlinkCell = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Hyperlink-Cells_images/column-header-cell-hyperlink.png)
+
+**Hyperlink in Row Header Cells**
+
+The following code snippet illustrates about how to enable hyperlink in row header cells.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfPivotGrid x:Name="PivotGrid1" ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
+                        PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
+    <syncfusion:SfPivotGrid.RowHeaderStyle>
+        <syncfusion:PivotGridCellStyle IsHyperlinkCell="True"/>
+    </syncfusion:SfPivotGrid.RowHeaderStyle>
+</syncfusion:SfPivotGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.PivotGrid1.RowHeaderStyle.IsHyperlinkCell = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.PivotGrid1.RowHeaderStyle.IsHyperlinkCell = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Hyperlink-Cells_images/row-header-cell-hyperlink.png)
+
+**Hyperlink in Value Cells**
+
+The following code snippet illustrates about how to enable hyperlink in value cells.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfPivotGrid x:Name="PivotGrid1" ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
+                        PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
+    <syncfusion:SfPivotGrid.ValueCellStyle>
+        <syncfusion:PivotGridCellStyle IsHyperlinkCell="True"/>
+    </syncfusion:SfPivotGrid.ValueCellStyle>
+</syncfusion:SfPivotGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.PivotGrid1.ValueCellStyle.IsHyperlinkCell = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.PivotGrid1.ValueCellStyle.IsHyperlinkCell = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Hyperlink-Cells_images/value-cell-hyperlink.png)
+
+**Hyperlink in Summary Column Cells**
+
+The following code snippet illustrates about how to enable hyperlink in summary column cells.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfPivotGrid x:Name="PivotGrid1" ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
+                        PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
+    <syncfusion:SfPivotGrid.SummaryColumnStyle>
+        <syncfusion:PivotGridCellStyle IsHyperlinkCell="True"/>
+    </syncfusion:SfPivotGrid.SummaryColumnStyle>
+</syncfusion:SfPivotGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.PivotGrid1.SummaryColumnStyle.IsHyperlinkCell = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.PivotGrid1.SummaryColumnStyle.IsHyperlinkCell = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Hyperlink-Cells_images/summary-column-cell-hyperlink.png)
+
+**Hyperlink in Summary Row Cells**
+
+The following code snippet illustrates about how to enable hyperlink in summary row cells.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfPivotGrid x:Name="PivotGrid1" ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
+                        PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
+    <syncfusion:SfPivotGrid.SummaryRowStyle>
+        <syncfusion:PivotGridCellStyle IsHyperlinkCell="True"/>
+    </syncfusion:SfPivotGrid.SummaryRowStyle>
+</syncfusion:SfPivotGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.PivotGrid1.SummaryRowStyle.IsHyperlinkCell = true;
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.PivotGrid1.SummaryRowStyle.IsHyperlinkCell = True
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Hyperlink-Cells_images/summary-row-cell-hyperlink.png)
+
+A demo sample is available at the following location.
+
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\Hyperlink.xaml
