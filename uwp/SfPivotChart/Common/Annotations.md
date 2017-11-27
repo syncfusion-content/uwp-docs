@@ -125,7 +125,7 @@ PivotChart1.Annotations.Add(annotation)
 
 **Editing Text Annotation**
 
-The text annoation added in the chart area type can be edited by enabling the property of `EnableEditing`. The following code snippet demonstrates the editing of the text annotation.
+The text annotation added in the chart area type can be edited by enabling the property of `EnableEditing`. The following code snippet demonstrates the editing of the text annotation.
 
 {% tabs %}
 
@@ -255,7 +255,7 @@ annotation.X1 = 1
 annotation.Y1 = 50
 annotation.X2 = 1.5
 annotation.Y2 = 100
-annnotation= 22
+annotation.Angle = 22
 PivotChart1.Annotations.Add(annotation)
 
 {% endhighlight %}

@@ -172,7 +172,7 @@ PivotChart1.PrimaryAxisStyle.ExpanderStyle = TryCast(Resources("PrimaryAxisExpan
 
 ### Group Line Customization
 
-To customize the appearance of group line around primary axis labels, `GroupLineStroke` and `GroupLineStrokThicknes` properties of `PivotChartAxisStyle` are used. The following code snippet describes how to customize the appearance of group lines in primary axis.
+To customize the appearance of group line around primary axis labels, `GroupLineStroke` and `GroupLineStrokeThickness` properties of `PivotChartAxisStyle` are used. The following code snippet describes how to customize the appearance of group lines in primary axis.
 
 {% tabs %}
 
