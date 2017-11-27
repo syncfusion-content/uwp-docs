@@ -64,13 +64,13 @@ In the 'Excel-Like' layout, the summary cells are positioned at the bottom alone
 
 {% highlight c# %}
 
-this.PivotGrid1.Layout = GridLayout.ExceLikeLayout;
+this.PivotGrid1.Layout = GridLayout.ExcelLikeLayout;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-Me.PivotGrid1.Layout = GridLayout.ExceLikeLayout
+Me.PivotGrid1.Layout = GridLayout.ExcelLikeLayout
 
 {% endhighlight %}
 
