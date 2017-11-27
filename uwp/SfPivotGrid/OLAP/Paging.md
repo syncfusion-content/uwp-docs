@@ -43,7 +43,7 @@ N > The assembly **Syncfusion.SfPivotShared.UWP** needs to be included from the 
 private void PivotGrid1_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     PivotGrid1.OlapDataManager.CurrentReport.EnablePaging = true;
-    PivotGrid1.OlapDataManager.CurrentReport.PagerOptions.CategorialPageSize = 5;
+    PivotGrid1.OlapDataManager.CurrentReport.PagerOptions.CategoricalPageSize = 5;
     PivotGrid1.OlapDataManager.CurrentReport.PagerOptions.SeriesPageSize = 5;
     PivotGrid1.OlapDataManager.RaiseGetOlapDataWithTotalCount(new GetOlapDataWithTotalCountEventArgs
     {
@@ -58,7 +58,7 @@ private void PivotGrid1_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 
 Private Sub PivotGrid1_Loaded(sender As Object, e As Windows.UI.Xaml.RoutedEventArgs)
 PivotGrid1.OlapDataManager.CurrentReport.EnablePaging = True
-PivotGrid1.OlapDataManager.CurrentReport.PagerOptions.CategorialPageSize = 5
+PivotGrid1.OlapDataManager.CurrentReport.PagerOptions.CategoricalPageSize = 5
 PivotGrid1.OlapDataManager.CurrentReport.PagerOptions.SeriesPageSize = 5
 PivotGrid1.OlapDataManager.RaiseGetOlapDataWithTotalCount(New GetOlapDataWithTotalCountEventArgs() With { _
     Key .SerializedReport = Syncfusion.Olap.UWP.Common.Common.SerializeObject(PivotGrid1.OlapDataManager.CurrentReport) _
