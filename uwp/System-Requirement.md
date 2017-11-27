@@ -13,7 +13,7 @@ This section describes the system requirements of Syncfusion UWP Controls for de
 
 ## Framework
 
-The following framework is minimum requirement for build the UWP application:
+The following Framework is minimum requirement for build the UWP application:
 
 * Microsoft .NET Framework 4.6
 
