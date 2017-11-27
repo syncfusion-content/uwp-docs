@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Olap Getting Started with SfPivotChart control for UWP
-description: Olap Getting Started with SfPivotChart control for UWP
-platform: uwp
+title: OLAP Getting Started | SfPivotChart | UWP | Syncfusion
+description: Getting Started for SfPivotChart with OLAP data.
+platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 This section covers the information required to create a simple SfPivotChart control bound to OLAP data source and also about creating a WCF service which helps to bind OLAP data to SfPivotChart control through OlapDataManager.
 
-### Control Initialization
+## Control Initialization
 
 SfPivotChart control can be initialized and added to an application through the following ways:
 
@@ -42,7 +42,7 @@ Open Visual Studio IDE and navigating to *File > New > Project > Universal > Bla
 Then, name the project as "SfPivotChartDemo" while creating the application to access the project later.
 
 In order to add SfPivotChart control manually in XAML, the following assembly references must be added in the project.
-	
+
 * Syncfusion.SfPivotChart.UWP
 * Syncfusion.SfChart.UWP
 * Syncfusion.Olap.UWP
@@ -57,7 +57,7 @@ You can find these libraries under following location.
 Or else, the SfPivotChart control can be added to the project by choosing SDK reference as follows:
 
 Right click on **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
- 
+
 Now add the following namespace in MainPage.xaml file.
 
 {% highlight xaml %}
@@ -159,7 +159,7 @@ namespace SfPivotChartDemo
 
 N> The following steps explain about how to refer the online service in Universal Windows Platform application in-order to bind the cube information in SfPivotChart. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotchart/getting-started#creating-wcf-service-application).
 
-After initializing SfPivotChart control, right click on **References** and select **Add Service Reference** option. 
+After initializing SfPivotChart control, right click on **References** and select **Add Service Reference** option.
 
 In “Add Service Reference” window, enter the following address and click “Go” button to add the online service.
 
@@ -250,7 +250,7 @@ public sealed partial class MainPage: Page
 
     private void OlapDataManager_OlapDataChanged(object sender, OlapDataChangedEventArgs args)
     {
-        if (args.MDXQuery != null && sender is OlapDataManager) 
+        if (args.MDXQuery != null && sender is OlapDataManager)
         {
             SetConnection();
             (sender as OlapDataManager).JSONData = clientChannel.GetJSONDataAsync(args.MDXQuery, args.SerializedReport).Result;
@@ -277,7 +277,7 @@ public sealed partial class MainPage: Page
         return null;
     }
 
-    private void SetConnection() 
+    private void SetConnection()
     {
         //To create service contract
         BasicHttpBinding basicHttpBinding = new BasicHttpBinding();
@@ -291,9 +291,9 @@ public sealed partial class MainPage: Page
 
 {% endhighlight %}
 
-Finally, the SfPivotChart control is rendered as shown below. 
+Finally, the SfPivotChart control is rendered as shown below.
 
-![](Getting-Started_images/PivotChart.png) 
+![](Getting-Started_images/PivotChart.png)
 
 ## Creating WCF Service Application
 
@@ -332,13 +332,13 @@ using Syncfusion.Olap.UWP.Manager;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
 
-namespace OlapManagerService 
+namespace OlapManagerService
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
-    public class Service1: IOlapDataProvider 
+    public class Service1: IOlapDataProvider
     {
-		#region Private variables
+        #region Private variables
 
         private readonly OlapDataProvider _dataProvider;
 
@@ -348,7 +348,7 @@ namespace OlapManagerService
         /// <summary>
         /// Initializes a new instance of the <see cref="Service1"/> class.
         /// </summary>
-        public Service1() 
+        public Service1()
         {
             string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
             _dataProvider = new OlapDataProvider(connectionString);
@@ -358,7 +358,7 @@ namespace OlapManagerService
 
         # region IOlapDataProvider Members
 
-        public string GetJSONData(string mDXQuery, string serializedReport) 
+        public string GetJSONData(string mDXQuery, string serializedReport)
         {
             CellSet cellSet = _dataProvider.ExecuteMdxQuery(mDXQuery, serializedReport);
             _dataProvider.DataProvider.CloseConnection();
@@ -415,11 +415,11 @@ Include the basic HTTP binding and service endpoint address in the web.config fi
         </behavior>
       </serviceBehaviors>
     </behaviors>
-    
+
     <protocolMapping>
         <add binding="basicHttpsBinding" scheme="https"/>
-    </protocolMapping>    
-    
+    </protocolMapping>
+
     <serviceHostingEnvironment multipleSiteBindingsEnabled="false"/>
     <services>
       <!--Bind the WCF service to our custom binding-->
@@ -433,4 +433,3 @@ Include the basic HTTP binding and service endpoint address in the web.config fi
 {% endhighlight %}
 
 Then build and host this WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform application (client application). This is how we have hosted our service in IIS and referred the obtained URL as service reference in the sample illustrated in [Adding Service Reference to Project section.](http://help.syncfusion.com/uwp/SfPivotChart/getting-started#adding-service-reference-to-project)
-
