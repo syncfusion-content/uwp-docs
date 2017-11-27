@@ -359,10 +359,10 @@ The following code sample demonstrates about displaying string values from X-axi
         <syncfusion:PivotChartAdornmentsInfo.LabelTemplate>
             <DataTemplate>
                 <Border CornerRadius="3" BorderThickness="1"
-                        Background="{Binding Converter={StaticResource CustomAdornmentConv}, ConverterParameter=Background}"
-                        BorderBrush="{Binding Converter={StaticResource CustomAdornmentConv}, ConverterParameter=BorderBrush}">
+                        Background="{Binding Converter={StaticResource CustomAdornmentConverter}, ConverterParameter=Background}"
+                        BorderBrush="{Binding Converter={StaticResource CustomAdornmentConverter}, ConverterParameter=BorderBrush}">
                     <TextBlock FontSize="12" Height="20" Foreground="White" FontWeight="Medium" Margin="5 0"
-                               Text="{Binding Converter={StaticResource CustomAdornmentConv}}" 
+                               Text="{Binding Converter={StaticResource CustomAdornmentConverter}}"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Border>
             </DataTemplate>
@@ -464,7 +464,7 @@ End Class
 
 ### Rotating Label
 
-The label in adornments can be rotated to the desired specific angle via the property `LabelRotatioAngle`. The following code snippet demonstrates how to rotate the labels.
+The label in adornments can be rotated to the desired specific angle via the property `LabelRotationAngle`. The following code snippet demonstrates how to rotate the labels.
 
 {% tabs %}
 
@@ -711,13 +711,13 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ## Positioning Adornments
 
-The adornmnets can be positioned with respect to chart segment by using the property of `AdornmentsPosition`.
+The adornments can be positioned with respect to chart segment by using the property of `AdornmentsPosition`.
 
 * `Top`- Positions the adornment at the top edge point of a chart segment.
 * `Bottom`- Positions the adornment at the bottom edge point of a chart segment.
 * `TopAndBottom`- Positions the adornment at the center point of a chart segment.
 
-The below code snippet explains about how the adornments are placed at centre postion.
+The below code snippet explains about how the adornments are placed at centre position.
 
 {% tabs %}
 

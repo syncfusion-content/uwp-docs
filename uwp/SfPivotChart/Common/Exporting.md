@@ -78,10 +78,10 @@ export.ExportToDocument("Sample")
 
 To export the SfPivotChart contents to PDF, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then create an instance of `ExportPivotChartToPdf` object to access the `ExportToDocument` method. `FileSavePicker` option can be used to save the exported file in the preferred location.
 
-Please refer the below code snippet to export the SfPivotChart to Pdf document.
+Please refer the below code snippet to export the SfPivotChart to PDF document.
 
 {% tabs %}
-  
+
 {% highlight c# %}
 
 FileSavePicker savePicker = new FileSavePicker();

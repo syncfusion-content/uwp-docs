@@ -384,7 +384,7 @@ Zooming Toolbar can be customized by using the following properties.
 * `ToolBarItemMargin` - Represents the margin for the toolbar item.
 * `ToolBarItemWidth` - Represents the width of the toolbar item.
 * `ToolBarItemHeight` - Represents the height of the toolbar item.
-* `ToolBarOrientation` - Represents the orienatation of the toolbar.
+* `ToolBarOrientation` - Represents the orientation of the toolbar.
 
 {% tabs %}
 
