@@ -45,7 +45,7 @@ Multiple selected elements are visually represented as shown.
 
 Multiple Selection will show the preview for the selected Items. We have provided customization option for the appearance of the Preview.
 
-| Style | Behaviour |
+| Style | Behavior |
 | --|--|
 | NodeSelectionIndicatorStyle | Defines the customization option for Selection Preview for the Node. |
 | ConnectorSelectionIndicatorStyle | Defines the customization option for Selection Preview for the Connector.|
