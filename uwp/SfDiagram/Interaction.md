@@ -41,6 +41,18 @@ Multiple selected elements are visually represented as shown.
 
 ![](Interaction_images/Interaction_img5.jpeg)
 
+#### Selection Indicator Style
+
+Multiple Selection will show the preview for the selected Items. We have provided customization option for the appearance of the Preview.
+
+| Style | Behaviour |
+| --|--|
+| NodeSelectionIndicatorStyle | Defines the customization option for Selection Preview for the Node. |
+| ConnectorSelectionIndicatorStyle | Defines the customization option for Selection Preview for the Connector.|
+| FirstSelectionIndicatorStyle | Defines the customization option for selection preview of first selected item.|
+
+![](Interaction_images/Interaction_img13.png)
+
 ### Select/Unselect the elements programmatically
 
 The IsSelected Property is used to select/unselect the elements at runtime.
