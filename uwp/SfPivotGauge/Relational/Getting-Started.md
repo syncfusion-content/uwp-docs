@@ -79,14 +79,14 @@ Then initialize the SfPivotGauge control inside the Gauge by using the specified
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGauge"
     mc:Ignorable="d">
 
-    <Gauge Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <syncfusion:SfPivotGauge x:Name="PivotGauge1"/>
-    </Gauge>
+    </Grid>
 </Page>
 
 {% endhighlight %}
 
-## Adding Control through code-behind
+## Adding Control through Code-Behind
 
 Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
 
@@ -121,8 +121,8 @@ Now open the MainPage.xaml file, and include name for the Gauge as “Root_Gauge
     x:Class="SfPivotGaugeDemo.MainPage"
     mc:Ignorable="d">
 
-    <Gauge Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="Root_Grid">
-    </Gauge>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="Root_Grid">
+    </Grid>
 </Page>
 
 {% endhighlight %}
@@ -153,7 +153,7 @@ namespace SfPivotGaugeDemo
 
 {% endhighlight %}
 
-## Adding Relational data source to SfPivotGauge Control
+## Adding Relational Data Source to SfPivotGauge
 
 Right-click on the project in the solution explorer and select *Add -> New Folder* and then name the folder as **"ViewModel"**.
 
@@ -172,13 +172,13 @@ public class ProductSales
 
     public static ProductSalesCollection GetSalesData()
     {
-        /// Geography
+        // Geography
         string[] countries = new string[] { "Germany", "Canada", "United States"};
 
-        /// Time
+        // Time
         string[] dates = new string[] { "FY 2008", "FY 2009", "FY 2010", "FY 2012" };
 
-        /// Products
+        // Products
         string[] products = new string[] { "Bike", "Car" };
         Random r = new Random(123345);
 
@@ -205,7 +205,7 @@ public class ProductSales
 
 Above mentioned GetSalesData method is used to get the collection that needs to be populated in the SfPivotGauge control. Now we need to bind the collection to the SfPivotGauge control as its ItemSource. It can be done through XAML or code-behind.
 
-### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotGauge through XAML
+### Binding ItemSource, Defining PivotItems and PivotComputations to SfPivotGauge through XAML
 
 If you need to initialize the ItemSource through XAML, DataContext is used. Please refer the following code.
 
@@ -217,34 +217,34 @@ If you need to initialize the ItemSource through XAML, DataContext is used. Plea
     xmlns:local="using:SfPivotGaugeDemo"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:pivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGauge"
     xmlns:pivots="using:Syncfusion.PivotAnalysis.UWP"
     xmlns:viewModel="using:SfPivotGaugeDemo.ViewModel"
     x:Class="SfPivotGaugeDemo.MainPage"
     mc:Ignorable="d">
 
-    <Gauge Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Gauge.DataContext>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
              <viewModel:ProductSales/>
-        </Gauge.DataContext>
+        </Grid.DataContext>
         <syncfusion:SfPivotGauge x:Name="PivotGauge1" ItemSource="{Binding ProductSalesData}">
-         <pivotGauge:SfPivotGauge.PivotRows>
-                    <pivots:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
-                    <pivots:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
-                </pivotGauge:SfPivotGauge.PivotRows>
-                <pivotGauge:SfPivotGauge.PivotColumns>
-                    <pivots:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
-                </pivotGauge:SfPivotGauge.PivotColumns>
-                <pivotGauge:SfPivotGauge.PivotCalculations>
-                    <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
-                </pivotGauge:SfPivotGauge.PivotCalculations>
-         </pivotGauge:SfPivotGauge>
-    </Gauge>
+            <syncfusion:SfPivotGauge.PivotRows>
+                <pivots:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
+                <pivots:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
+            </syncfusion:SfPivotGauge.PivotRows>
+            <syncfusion:SfPivotGauge.PivotColumns>
+                <pivots:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
+            </syncfusion:SfPivotGauge.PivotColumns>
+            <syncfusion:SfPivotGauge.PivotCalculations>
+                <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+            </syncfusion:SfPivotGauge.PivotCalculations>
+         </syncfusion:SfPivotGauge>
+    </Grid>
 </Page>
 
 {% endhighlight %}
 
-### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotGauge through code-behind
+### Binding ItemSource, Defining PivotItems and PivotComputations to SfPivotGauge through Code-Behind
 
 If you need to initialize the ItemSource through code-behind, please refer the below code snippet.
 
