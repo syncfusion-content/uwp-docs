@@ -2,7 +2,7 @@
 layout: post
 title: Overview of SfPivotGrid control for UWP
 description: Overview of SfPivotGrid control for UWP
-platform: uwp
+platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
