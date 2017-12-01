@@ -281,7 +281,7 @@ SfGantt
 Syncfusion.SfGantt.UWP
 </td>
 <td>
-Syncfusion.SfGrid.UWP<br/><br/>Syncfusion.Data.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>
+Syncfusion.SfGrid.UWP<br/><br/>Syncfusion.Data.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfTabControl.UWP<br/><br/>
 </td>
 </tr>
 <tr>
