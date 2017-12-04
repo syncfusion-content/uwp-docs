@@ -29,11 +29,15 @@ Now select Toolbox options from View menu and it will appear inside the VisualSt
 
 Finally name the added SfPivotClient control as “PivotClient1” in MainPage.xaml to refer it in code-behind as follows:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <PivotClient:SfPivotClient x:Name="PivotClient1"/>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Control through XAML
 
@@ -72,13 +76,19 @@ Right click on **References** and select *Add Reference > Universal Windows > Ex
  
 Now add the following namespace in MainPage.xaml file.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotClient"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Then initialize the SfPivotClient control inside the Grid by using the specified namespace and name the control as “PivotClient1”.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -98,6 +108,8 @@ Then initialize the SfPivotClient control inside the Grid by using the specified
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Control through Code-Behind
 
@@ -136,6 +148,8 @@ Right click on **References** and select *Add Reference > Universal Windows > Ex
 
 Now open the MainPage.xaml file and include name for the Grid as “Root_Grid” to refer it in code-behind.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Page
@@ -153,7 +167,11 @@ Now open the MainPage.xaml file and include name for the Grid as “Root_Grid”
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Add the namespace - "Syncfusion.UI.Xaml.PivotClient" in MainPage.xaml.cs file. Then initialize the SfPivotClient control and add it into the parent Grid as follows.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -179,6 +197,29 @@ namespace SfPivotClientDemo
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Imports Windows.UI.Xaml.Controls
+Imports Syncfusion.UI.Xaml.PivotClient
+
+Namespace SfPivotClientDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Public Sub New()
+            Me.InitializeComponent()
+            Dim PivotClient As SfPivotClient = New SfPivotClient()
+            PivotClient.Name = "PivotClient1"
+            Root_Grid.Children.Add(PivotClient)
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Relational data source to SfPivotClient Control
 
 Right-click on the project in the solution explorer and select *Add -> New Folder* and then name the folder as **"Model"**.
@@ -186,6 +227,8 @@ Right-click on the project in the solution explorer and select *Add -> New Folde
 Then create a new class file by right-click on the project in the solution explorer and select *Add -> New Item -> Class*. In "Add New Item" window, provide the name of the class as ProductSales.cs and click **OK**.
 
 The ItemSource for the SfPivotClient control will be initialized in this file. Please refer the below code sample.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -288,8 +331,79 @@ public class ProductSales
     {
     }
 }
-    
+
 {% endhighlight %}
+
+{% highlight vb %}
+
+Public Class ProductSales
+
+    Public Property Product As String
+
+    Public Property Date As String
+
+    Public Property Country As String
+
+    Public Property State As String
+
+    Public Property Quantity As Integer
+
+    Public Property Amount As Double
+
+    Public Shared Function GetSalesData() As ProductSalesCollection
+        Dim countries As String() = New String() {"Australia", "Canada", "France", "Germany", "United States"}
+        Dim ausStates As String() = New String() {"New South Wales", "Queensland", "South Australia", "Tasmania", "Victoria"}
+        Dim canadaStates As String() = New String() {"Alberta", "British Columbia", "Brunswick", "Manitoba", "Ontario", "Quebec"}
+        Dim franceStates As String() = New String() {"Charente-Maritime", "Essonne", "Garonne (Haute)", "Gers"}
+        Dim germanyStates As String() = New String() {"Bayern", "Brandenburg", "Hamburg", "Hessen", "Nordrhein-Westfalen", "Saarland"}
+        Dim ukStates As String() = New String() {"England"}
+        Dim usStates As String() = New String() {"New York", "North Carolina", "Alabama", "California", "Colorado", "New Mexico", "South Carolina"}
+        Dim dates As String() = New String() {"FY 2005", "FY 2006", "FY 2007", "FY 2008", "FY 2009"}
+        Dim products As String() = New String() {"Bike", "Car"}
+        Dim r As Random = New Random(123345345)
+        Dim numberOfRecords As Integer = 2000
+        Dim listOfProductSales As ProductSalesCollection = New ProductSalesCollection()
+        For i As Integer = 0 To numberOfRecords - 1
+            Dim sales As ProductSales = New ProductSales()
+            sales.Country = countries(r.[Next](1, countries.GetLength(0)))
+            sales.Quantity = r.[Next](1, 12)
+            Dim discount As Double =(sales.Quantity) * (Double.Parse(sales.Quantity.ToString()) / 100)
+            sales.Amount =(sales.Quantity) - discount
+            sales.Date = dates(r.[Next](r.[Next](dates.GetLength(0) + 1)))
+            sales.Product = products(r.[Next](r.[Next](products.GetLength(0) + 1)))
+            Select Case sales.Country
+                Case "Australia"
+                    sales.State = ausStates(r.[Next](ausStates.GetLength(0)))
+                    Exit Select
+                Case "Canada"
+                    sales.State = canadaStates(r.[Next](canadaStates.GetLength(0)))
+                    Exit Select
+                Case "France"
+                    sales.State = franceStates(r.[Next](franceStates.GetLength(0)))
+                    Exit Select
+                Case "Germany"
+                    sales.State = germanyStates(r.[Next](germanyStates.GetLength(0)))
+                    Exit Select
+                Case "United States"
+                    sales.State = usStates(r.[Next](usStates.GetLength(0)))
+                    Exit Select
+            End Select
+
+            listOfProductSales.Add(sales)
+        Next
+
+        Return listOfProductSales
+    End Function
+
+    Public Class ProductSalesCollection
+        Inherits List(Of ProductSales)
+
+    End Class
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Above mentioned GetSalesData method is used to get the collection that needs to be populated in the SfPivotClient control. Now we need to bind the collection to the SfPivotClient control as its ItemSource. It can be done through XAML or code-behind.
 
@@ -298,6 +412,8 @@ Right-click on the project in the solution explorer and select *Add -> New Folde
 Then create a new class file by right-click on the project in the solution explorer and select *Add -> New Item -> Class*. In "Add New Item" window, provide the name of the class as ViewModel.cs and click **OK**.
 
 The ItemSource for the SfPivotClient control will be defined in this file. Please refer the below code sample.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -323,15 +439,39 @@ public class ViewModel
        return this.productSalesData;
       }
       set { this.productSalesData = value; }
-    }     
-    #endregion    
+    }
+    #endregion
 }
-    
+
 {% endhighlight %}
+
+{% highlight vb %}
+
+Public Class ViewModel
+
+    Private productSalesData As Object
+
+    Public Property ProductSalesData As Object
+        Get
+            Me.productSalesData = If(Me.productSalesData, Model.ProductSales.GetSalesData())
+            Return Me.productSalesData
+        End Get
+
+        Set(ByVal value As Object)
+            Me.productSalesData = value
+        End Set
+    End Property
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotClient through XAML
 
 If you need to initialize the ItemSource through XAML, DataContext is used. Please refer the following code.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -369,9 +509,13 @@ If you need to initialize the ItemSource through XAML, DataContext is used. Plea
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotClient through code-behind
 
 If you need to initialize the ItemSource through code-behind, please refer the below code snippet.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -408,6 +552,36 @@ namespace SfPivotClientDemo
 }
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+Imports Windows.UI.Xaml.Controls
+Imports Syncfusion.PivotAnalysis.UWP
+Imports Syncfusion.UI.Xaml.PivotClient
+
+Namespace SfPivotClientDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Public Sub New()
+            Me.InitializeComponent()
+            Dim pivotClient As SfPivotClient = New SfPivotClient()
+            pivotClient.Name = "PivotClient1"
+            Root_Grid.Children.Add(PivotClient)
+            pivotClient.ItemsSource = ProductSales.GetSalesData()
+            pivotClient.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+            pivotClient.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Date", .TotalHeader = "Total"})
+            pivotClient.PivotColumns.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+            pivotClient.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format = "C", .SummaryType = SummaryType.DoubleTotalSum})
+            pivotClient.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format = "#,##", .SummaryType = SummaryType.Count})
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
 
 **Run** the application, the following output will be generated.
 

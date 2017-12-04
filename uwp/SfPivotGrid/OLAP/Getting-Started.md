@@ -29,11 +29,15 @@ Now select Toolbox options from View menu and it will appear inside the VisualSt
 
 Finally name the added SfPivotGrid control as “PivotGrid1” in MainPage.xaml to refer it in code-behind as follows:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <PivotGrid:SfPivotGrid x:Name="PivotGrid1"/>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Control through XAML
 
@@ -64,13 +68,19 @@ Right click on **References** and select *Add Reference > Universal Windows > Ex
 
 Now add the following namespace in MainPage.xaml file.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGrid"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Then initialize the SfPivotGrid control inside the Grid by using the specified namespace and name the control as “PivotGrid1”.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -90,6 +100,8 @@ Then initialize the SfPivotGrid control inside the Grid by using the specified n
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Control through code-behind
 
@@ -120,6 +132,8 @@ Right click on **References** and select *Add Reference > Universal Windows > Ex
 
 Now open the MainPage.xaml file, and include name for the Grid as “Root_Grid” to refer it in code-behind.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Page
@@ -137,7 +151,11 @@ Now open the MainPage.xaml file, and include name for the Grid as “Root_Grid�
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Next add the namespace - "Syncfusion.UI.Xaml.PivotGrid" in MainPage.xaml.cs file. Then initialize the SfPivotGrid control and assign a name for it as "PivotGrid1". Then add the control in parent Grid as follows.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -163,6 +181,29 @@ namespace SfPivotGridDemo
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Imports Windows.UI.Xaml.Controls
+Imports Syncfusion.UI.Xaml.PivotGrid
+
+Namespace SfPivotGridDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Public Sub New()
+            Me.InitializeComponent()
+            Dim pivotGrid As SfPivotGrid = New SfPivotGrid()
+            pivotGrid.Name = "PivotGrid1"
+            Root_Grid.Children.Add(pivotGrid)
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Service Reference to Project
 
 N> The following steps explain about how to refer the online service in Universal Windows Platform application in-order to bind the cube information in SfPivotGrid. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotgrid/getting-started#creating-wcf-service-application).
@@ -182,6 +223,8 @@ Include the following namespace in code-behind for using OlapDataManager and Ola
 
 Then include the following code to initialize the OlapDataManager and to create OlapReport through loaded event of SfPivotGrid control.
 
+{% tabs %}
+
 {% highlight c# %}
 
 using Syncfusion.Olap.UWP.Manager;
@@ -191,6 +234,8 @@ namespace SfPivotGridDemo
 {
     public sealed partial class MainPage : Page
     {
+        private OlapManagerService.IOlapDataProvider clientChannel;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -204,15 +249,15 @@ namespace SfPivotGridDemo
             olapDataManager.OlapDataChanged += OlapDataManager_OlapDataChanged;
             olapDataManager.GetCubeSchema += OlapDataManager_GetCubeSchema;
             olapDataManager.GetCubeInfoCollection += OlapDataManager_GetCubeInfoCollection;
+            olapDataManager.GetLevelMembersUsingMdx += OlapDataManager_GetLevelMembersUsingMdx;
             olapDataManager.SetCurrentReport(CreateOlapReport());
             PivotGrid1.OlapDataManager = olapDataManager;
         }
 
-        private void OlapDataManager_OlapDataChanged(object sender, OlapDataChangedEventArgs args) {}
-
         private OlapReport CreateOlapReport()
         {
             OlapReport olapReport = new OlapReport();
+            olapReport.Name = "Sales Report";
             olapReport.CurrentCubeName = "Adventure Works";
 
             DimensionElement dimensionElementColumn = new DimensionElement();
@@ -240,9 +285,63 @@ namespace SfPivotGridDemo
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Imports Syncfusion.Olap.UWP.Manager
+Imports Syncfusion.Olap.UWP.Reports
+
+Namespace SfPivotGridDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Private clientChannel As OlapManagerService.IOlapDataProvider
+
+        Public Sub New()
+            Me.InitializeComponent()
+            PivotGrid1.Loaded += AddressOf PivotGrid_Loaded
+        End Sub
+
+        Private Sub PivotGrid_Loaded(ByVal sender As Object, ByVal e As Windows.UI.Xaml.RoutedEventArgs)
+            Dim olapDataManager As OlapDataManager = New OlapDataManager()
+            olapDataManager.OlapDataChanged += OlapDataManager_OlapDataChanged
+            olapDataManager.GetCubeSchema += OlapDataManager_GetCubeSchema
+            olapDataManager.GetCubeInfoCollection += OlapDataManager_GetCubeInfoCollection
+            olapDataManager.GetLevelMembersUsingMdx += OlapDataManager_GetLevelMembersUsingMdx
+            olapDataManager.SetCurrentReport(CreateOlapReport())
+            PivotGrid1.OlapDataManager = olapDataManager
+        End Sub
+
+        Private Function CreateOlapReport() As OlapReport
+            Dim olapReport As OlapReport = New OlapReport()
+            olapReport.Name = "Sales Report"
+            olapReport.CurrentCubeName = "Adventure Works"
+            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
+            dimensionElementColumn.Name = "Customer"
+            dimensionElementColumn.HierarchyName = "Customer Geography"
+            dimensionElementColumn.AddLevel("Customer Geography", "Country")
+            Dim measureElementColumn As MeasureElements = New MeasureElements()
+            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
+            Dim dimensionElementRow As DimensionElement = New DimensionElement()
+            dimensionElementRow.Name = "Date"
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+            olapReport.CategoricalElements.Add(dimensionElementColumn)
+            olapReport.CategoricalElements.Add(measureElementColumn)
+            olapReport.SeriesElements.Add(dimensionElementRow)
+            Return olapReport
+        End Function
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
+
 N> `OlapDataChanged` event should be hooked before setting the current report to OlapDataManager.
 
 Next declare a global reference to OlapManagerService’s IOlapDataProvider. In the **OlapDataManager_OlapDataChanged method**, call the `SetConnection` method to initialize the connection. Then call the **GetJSONDataAsync** operation by passing parameters of serialized OlapReport and the MDX query generated from the current OlapReport. The resultant serialized CellSet is assigned to JSONData of SfPivotGrid’s OlapDataManager.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -257,31 +356,41 @@ namespace SfPivotGridDemo
             //SfPivotGrid control Initialization
         }
 
-        private void OlapDataManager_OlapDataChanged(object sender, OlapDataChangedEventArgs args)
+        private void OlapDataManager_OlapDataChanged(object sender, OlapDataChangedEventArgs e)
         {
-            if (args.MDXQuery != null && sender is OlapDataManager)
+            if (e.MDXQuery != null && sender is OlapDataManager)
             {
                 SetConnection();
-                (sender as OlapDataManager).JSONData = clientChannel.GetJSONDataAsync(args.MDXQuery, args.SerializedReport).Result;
+                (sender as OlapDataManager).JSONData = clientChannel.GetJSONDataAsync(e.MDXQuery, e.SerializedReport, e.AllowMdxToOlapReportParse).Result;
             }
         }
 
-        private string OlapDataManager_GetCubeSchema(object sender, GetCubeSchemaEventArgs args)
+        private string OlapDataManager_GetCubeSchema(object sender, GetCubeSchemaEventArgs e)
         {
-            if (args.CubeName != null && sender is OlapDataManager)
+            if (e.CubeName != null && sender is OlapDataManager)
             {
                 SetConnection();
-                return clientChannel.GetJSONCubeSchemaAsync(args.CubeName).Result;
+                return clientChannel.GetJSONCubeSchemaAsync(e.CubeName).Result;
             }
             return null;
         }
 
-        private string OlapDataManager_GetCubeInfoCollection(object sender, GetCubeInfoCollectionEventArgs args)
+        private string OlapDataManager_GetCubeInfoCollection(object sender, GetCubeInfoCollectionEventArgs e)
         {
             if (sender is OlapDataManager)
             {
                 SetConnection();
                 return clientChannel.GetJSONCubesAsync().Result;
+            }
+            return null;
+        }
+
+        private string OlapDataManager_GetLevelMembersUsingMdx(object sender, GetLevelMembersUsingMdxEventArgs e)
+        {
+            if (sender is OlapDataManager)
+            {
+                SetConnection();
+                return clientChannel.GetJSONLevelMembersUsingMdxAsync(e.MemberUniqueName, e.AxisPosition, e.IsGrandTotalOn, e.CubeName, e.PagingParams).Result;
             }
             return null;
         }
@@ -293,13 +402,74 @@ namespace SfPivotGridDemo
             basicHttpBinding.MaxReceivedMessageSize = 2147483647;
             basicHttpBinding.MaxBufferSize = 2147483647;
             EndpointAddress address = new EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/");
-            ChannelFactory < OlapManagerService.IOlapDataProvider > clientFactory = new ChannelFactory < OlapManagerService.IOlapDataProvider > (basicHttpBinding, address);
+            ChannelFactory<OlapManagerService.IOlapDataProvider> clientFactory = new ChannelFactory <OlapManagerService.IOlapDataProvider> (basicHttpBinding, address);
             clientChannel = clientFactory.CreateChannel();
         }
     }
 }
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+Namespace SfPivotGridDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Private clientChannel As OlapManagerService.IOlapDataProvider
+
+        Public Sub New()
+        End Sub
+
+        Private Sub OlapDataManager_OlapDataChanged(ByVal sender As Object, ByVal e As OlapDataChangedEventArgs)
+            If e.MDXQuery IsNot Nothing AndAlso TypeOf sender Is OlapDataManager Then
+                SetConnection()
+                (TryCast(sender, OlapDataManager)).JSONData = clientChannel.GetJSONDataAsync(e.MDXQuery, e.SerializedReport, e.AllowMdxToOlapReportParse).Result
+            End If
+        End Sub
+
+        Private Function OlapDataManager_GetCubeSchema(ByVal sender As Object, ByVal e As GetCubeSchemaEventArgs) As String
+            If e.CubeName IsNot Nothing AndAlso TypeOf sender Is OlapDataManager Then
+                SetConnection()
+                Return clientChannel.GetJSONCubeSchemaAsync(e.CubeName).Result
+            End If
+
+            Return Nothing
+        End Function
+
+        Private Function OlapDataManager_GetCubeInfoCollection(ByVal sender As Object, ByVal e As GetCubeInfoCollectionEventArgs) As String
+            If TypeOf sender Is OlapDataManager Then
+                SetConnection()
+                Return clientChannel.GetJSONCubesAsync().Result
+            End If
+
+            Return Nothing
+        End Function
+
+        Private Function OlapDataManager_GetLevelMembersUsingMdx(ByVal sender As Object, ByVal e As GetLevelMembersUsingMdxEventArgs) As String
+            If TypeOf sender Is OlapDataManager Then
+                SetConnection()
+                Return clientChannel.GetJSONLevelMembersUsingMdxAsync(e.MemberUniqueName, e.AxisPosition, e.IsGrandTotalOn, e.CubeName, e.PagingParams).Result
+            End If
+
+            Return Nothing
+        End Function
+
+        Private Sub SetConnection()
+            Dim basicHttpBinding As BasicHttpBinding = New BasicHttpBinding()
+            basicHttpBinding.MaxReceivedMessageSize = 2147483647
+            basicHttpBinding.MaxBufferSize = 2147483647
+            Dim address As EndpointAddress = New EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/")
+            Dim clientFactory As ChannelFactory(Of OlapManagerService.IOlapDataProvider) = New ChannelFactory(Of OlapManagerService.IOlapDataProvider)(basicHttpBinding, address)
+            clientChannel = clientFactory.CreateChannel()
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
 
 Finally, the SfPivotGrid control is rendered as shown below.
 
@@ -326,13 +496,19 @@ If you have installed any version of SQL Server Analysis Service (SSAS) or Micro
 
 Now the "Service1.svc" would look like:
 
+{% tabs %}
+
 {% highlight xml %}
 
 <%@ ServiceHost Language="C#" Debug="true" Service="OlapManagerService.Service1" CodeBehind="Service1.svc.cs" %>
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Then open the “Service1.svc.cs” file under “OlapManagerService” project and replace the existing code with the exact following code.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -368,11 +544,11 @@ namespace OlapManagerService
 
         # region IOlapDataProvider Members
 
-        public string GetJSONData(string mDXQuery, string serializedReport)
+        public string GetJSONData(string mDXQuery, string currentReport, bool allowMdxToOlapReportParse)
         {
-            CellSet cellSet = _dataProvider.ExecuteMdxQuery(mDXQuery, serializedReport);
+            CellSet cellSet = _dataProvider.ExecuteMdxQuery(mDXQuery, currentReport, allowMdxToOlapReportParse);
             _dataProvider.DataProvider.CloseConnection();
-            return Utils.Serialize(cellSet);
+            return cellSet != null ? Utils.Serialize(cellSet) : string.Empty;
         }
 
         public string GetJSONCubeSchema(string cubeName)
@@ -389,17 +565,169 @@ namespace OlapManagerService
             return cubeInfoCollection != null ? Utils.Serialize(cubeInfoCollection) : string.Empty;
         }
 
+        public string GetJSONChildMembers(string cubeName, string levelName)
+        {
+            MemberCollection memberCollection = _dataProvider.GetChildMembers(cubeName, levelName);
+            _dataProvider.DataProvider.CloseConnection();
+            return memberCollection != null ? Utils.Serialize(memberCollection) : string.Empty;
+        }
+
+        public string GetJSONChildrenByMDX(string command)
+        {
+            MemberCollection memberCollection = _dataProvider.GetChildrenByMDX(command);
+            _dataProvider.DataProvider.CloseConnection();
+            return memberCollection != null ? Utils.Serialize(memberCollection) : string.Empty;
+        }
+
+        public string GetJSONDataWithTotalCount(string currentReport)
+        {
+            SerializableDictionary<string, object> count = _dataProvider.GetCellSetWithTotalCount(currentReport);
+            _dataProvider.DataProvider.CloseConnection();
+            return count != null ? Utils.Serialize(count) : string.Empty;
+        }
+
+        public string GetJSONExecuteDrillThroughQuery(string mdxQuery)
+        {
+            var executedQuery = _dataProvider.ExecuteDrillThroughQuery(mdxQuery);
+            _dataProvider.DataProvider.CloseConnection();
+            return executedQuery != null ? Utils.Serialize(executedQuery) : null;
+        }
+
+        public string GetJSONExecuteMemberCount(string mdxQuery)
+        {
+            var memberCount = _dataProvider.ExecuteMemberCount(mdxQuery);
+            _dataProvider.DataProvider.CloseConnection();
+            return memberCount >= 0 ? Utils.Serialize(memberCount) : string.Empty;
+        }
+
+        public string GetJSONLevelMembersUsingMdx(string memberUniqueName, int axisPosition, bool isGrandTotalOn, string cubeName, string pagingParams)
+        {
+            var levelMembers = _dataProvider.GetLevelMembersUsingMdx(memberUniqueName, axisPosition, isGrandTotalOn, cubeName, pagingParams);
+            _dataProvider.DataProvider.CloseConnection();
+            return levelMembers != null ? Utils.Serialize(levelMembers) : string.Empty;
+        }
+
+        public string GetJSONMeasureGroupsDimensions(string cubeName, string measureGroupName)
+        {
+            var dimensions = _dataProvider.GetMeasureGroupsDimensions(cubeName, measureGroupName);
+            _dataProvider.DataProvider.CloseConnection();
+            return dimensions != null ? Utils.Serialize(dimensions) : string.Empty;
+        }
+
+        public string GetJSONParentMember(string uniqueName, string currentCubeName)
+        {
+            var parentMember = _dataProvider.GetParentMember(uniqueName, currentCubeName);
+            _dataProvider.DataProvider.CloseConnection();
+            return parentMember != null ? Utils.Serialize(parentMember) : string.Empty;
+        }
+
         #endregion
     }
 }
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Imports Syncfusion.Olap.UWP.Common
+Imports Syncfusion.Olap.UWP.Data
+Imports Syncfusion.Olap.UWP.Manager
+Imports System.ServiceModel
+Imports System.ServiceModel.Activation
+
+Namespace OlapManagerService
+
+    <AspNetCompatibilityRequirements(RequirementsMode:=AspNetCompatibilityRequirementsMode.Allowed)>
+    <ServiceBehavior(IncludeExceptionDetailInFaults:=True)>
+    Public Class Service1
+        Inherits IOlapDataProvider
+
+        Private ReadOnly _dataProvider As OlapDataProvider
+
+        Public Sub New()
+            Dim connectionString As String = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"
+            _dataProvider = New OlapDataProvider(connectionString)
+        End Sub
+
+        Public Function GetJSONData(ByVal mDXQuery As String, ByVal currentReport As String, ByVal allowMdxToOlapReportParse As Boolean) As String
+            Dim cellSet As CellSet = _dataProvider.ExecuteMdxQuery(mDXQuery, currentReport, allowMdxToOlapReportParse)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(cellSet IsNot Nothing, Utils.Serialize(cellSet), String.Empty)
+        End Function
+
+        Public Function GetJSONCubeSchema(ByVal cubeName As String) As String
+            Dim cubeSchema As CubeSchema = _dataProvider.GetCubeSchema(cubeName)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(cubeSchema IsNot Nothing, Utils.Serialize(cubeSchema), String.Empty)
+        End Function
+
+        Public Function GetJSONCubes() As String
+            Dim cubeInfoCollection As CubeInfoCollection = _dataProvider.GetCubes()
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(cubeInfoCollection IsNot Nothing, Utils.Serialize(cubeInfoCollection), String.Empty)
+        End Function
+
+        Public Function GetJSONChildMembers(ByVal cubeName As String, ByVal levelName As String) As String
+            Dim memberCollection As MemberCollection = _dataProvider.GetChildMembers(cubeName, levelName)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(memberCollection IsNot Nothing, Utils.Serialize(memberCollection), String.Empty)
+        End Function
+
+        Public Function GetJSONChildrenByMDX(ByVal command As String) As String
+            Dim memberCollection As MemberCollection = _dataProvider.GetChildrenByMDX(command)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(memberCollection IsNot Nothing, Utils.Serialize(memberCollection), String.Empty)
+        End Function
+
+        Public Function GetJSONDataWithTotalCount(ByVal currentReport As String) As String
+            Dim count As SerializableDictionary(Of String, Object) = _dataProvider.GetCellSetWithTotalCount(currentReport)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(count IsNot Nothing, Utils.Serialize(count), String.Empty)
+        End Function
+
+        Public Function GetJSONExecuteDrillThroughQuery(ByVal mdxQuery As String) As String
+            Dim executedQuery = _dataProvider.ExecuteDrillThroughQuery(mdxQuery)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(executedQuery IsNot Nothing, Utils.Serialize(executedQuery), Nothing)
+        End Function
+
+        Public Function GetJSONExecuteMemberCount(ByVal mdxQuery As String) As String
+            Dim memberCount = _dataProvider.ExecuteMemberCount(mdxQuery)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(memberCount >= 0, Utils.Serialize(memberCount), String.Empty)
+        End Function
+
+        Public Function GetJSONLevelMembersUsingMdx(ByVal memberUniqueName As String, ByVal axisPosition As Integer, ByVal isGrandTotalOn As Boolean, ByVal cubeName As String, ByVal pagingParams As String) As String
+            Dim levelMembers = _dataProvider.GetLevelMembersUsingMdx(memberUniqueName, axisPosition, isGrandTotalOn, cubeName, pagingParams)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(levelMembers IsNot Nothing, Utils.Serialize(levelMembers), String.Empty)
+        End Function
+
+        Public Function GetJSONMeasureGroupsDimensions(ByVal cubeName As String, ByVal measureGroupName As String) As String
+            Dim dimensions = _dataProvider.GetMeasureGroupsDimensions(cubeName, measureGroupName)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(dimensions IsNot Nothing, Utils.Serialize(dimensions), String.Empty)
+        End Function
+
+        Public Function GetJSONParentMember(ByVal uniqueName As String, ByVal currentCubeName As String) As String
+            Dim parentMember = _dataProvider.GetParentMember(uniqueName, currentCubeName)
+            _dataProvider.DataProvider.CloseConnection()
+            Return If(parentMember IsNot Nothing, Utils.Serialize(parentMember), String.Empty)
+        End Function
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
+
 N> Here we have specified our demo cube path for demonstration purpose. You can modify the connection string as per your requirement.
 
 Include the basic HTTP binding and service endpoint address in the web.config file by replacing the following code snippet of `ServiceModel` section.
 
-{% highlight xaml %}
+{% tabs %}
+
+{% highlight xml %}
 
 <system.serviceModel>
     <bindings>
@@ -441,5 +769,7 @@ Include the basic HTTP binding and service endpoint address in the web.config fi
 </system.serviceModel>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Then build and host this WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform application (client application). This is how we have hosted our service in IIS and referred the obtained URL as service reference in the sample illustrated in [Adding Service Reference to Project section.](http://help.syncfusion.com/uwp/SfPivotGrid/getting-started#adding-service-reference-to-project)
