@@ -29,11 +29,15 @@ Now select Toolbox options from View menu and it will appear inside the VisualSt
 
 Finally name the added SfPivotChart control as “PivotChart1” in MainPage.xaml to refer it in code-behind as follows:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <PivotChart:SfPivotChart x:Name="PivotChart1"/>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Control through XAML
 
@@ -60,13 +64,19 @@ Right click on **References** and select Add Reference > Universal Windows > Ext
 
 Now add the following namespace in MainPage.xaml file.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotChart"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Then initialize the SfPivotChart control inside the Grid by using the specified namespace and name the control as "PivotChart1".
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -86,6 +96,8 @@ Then initialize the SfPivotChart control inside the Grid by using the specified 
 </Page>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Control through Code-Behind
 
@@ -112,6 +124,8 @@ Right click on **References** and select Add Reference > Universal Windows > Ext
 
 Now open the MainPage.xaml file, and include name for the Grid as “Root_Grid” to refer it in code-behind.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Page
@@ -129,7 +143,11 @@ Now open the MainPage.xaml file, and include name for the Grid as “Root_Grid�
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Next add the namespace - "Syncfusion.UI.Xaml.PivotChart" in MainPage.xaml.cs file. Then initialize the SfPivotChart control and assign a name for it as “PivotChart1”. Then add the control in parent Grid as follows.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -155,6 +173,29 @@ namespace SfPivotChartDemo
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Imports Windows.UI.Xaml.Controls
+Imports Syncfusion.UI.Xaml.PivotChart
+
+Namespace SfPivotChartDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Public Sub New()
+            Me.InitializeComponent()
+            Dim pivotChart As SfPivotChart = New SfPivotChart()
+            pivotChart.Name = "PivotChart1"
+            Root_Grid.Children.Add(pivotChart)
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Adding Relational data source to SfPivotChart Control
 
 Right-click on the project in the solution explorer and select *Add -> New Folder* and then name the folder as **"ViewModel"**.
@@ -162,6 +203,8 @@ Right-click on the project in the solution explorer and select *Add -> New Folde
 Then create a new class file by right-click on the project in the solution explorer and select *Add -> New Item -> Class*. In "Add New Item" window, provide the name of the class as ProductSales.cs and click **OK**.
 
 The ItemSource for the SfPivotChart control will be initialized in this file. Please refer the below code sample.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -216,11 +259,67 @@ public class ProductSales
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Public Class ProductSales
+
+    Private productSalesData As Object
+
+    Public Property Product As String
+
+    Public Property Date As String
+
+    Public Property Country As String
+
+    Public Property Amount As Double
+
+    Public Property ProductSalesData As Object
+        Get
+            Me.productSalesData = If(Me.productSalesData, ProductSales.GetSalesData())
+            Return Me.productSalesData
+        End Get
+
+        Set(ByVal value As Object)
+            Me.productSalesData = CType(value, ProductSales.ProductSalesCollection)
+        End Set
+    End Property
+
+    Public Shared Function GetSalesData() As ProductSalesCollection
+        Dim countries As String() = New String() {"Germany", "Canada", "United States"}
+        Dim dates As String() = New String() {"FY 2008", "FY 2009", "FY 2010", "FY 2012"}
+        Dim products As String() = New String() {"Bike", "Car"}
+        Dim r As Random = New Random(123345)
+        Dim numberOfRecords As Integer = 1000
+        Dim listOfProductSales As ProductSalesCollection = New ProductSalesCollection()
+        For i As Integer = 0 To numberOfRecords - 1
+            Dim sales As ProductSales = New ProductSales()
+            sales.Country = countries(r.[Next](1, countries.GetLength(0)))
+            sales.Amount =(3000 * r.[Next](1, 12))
+            sales.Date = dates(r.[Next](r.[Next](dates.GetLength(0) + 1)))
+            sales.Product = products(r.[Next](r.[Next](products.GetLength(0) + 1)))
+            listOfProductSales.Add(sales)
+        Next
+
+        Return listOfProductSales
+    End Function
+
+    Public Class ProductSalesCollection
+        Inherits List(Of ProductSales)
+
+    End Class
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Above mentioned GetSalesData method is used to get the collection that needs to be populated in the SfPivotChart control. Now we need to bind the collection to the SfPivotChart control as its ItemSource. It can be done through XAML or code-behind.
 
 ### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotChart through XAML
 
 If you need to initialize the ItemSource through XAML, DataContext is used. Please refer the following code.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -257,9 +356,13 @@ If you need to initialize the ItemSource through XAML, DataContext is used. Plea
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotChart through code-behind
 
 If you need to initialize the ItemSource through code-behind, please refer the below code sample.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -295,6 +398,35 @@ namespace SfPivotChartDemo
 }
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+Imports Windows.UI.Xaml.Controls
+Imports Syncfusion.UI.Xaml.PivotChart
+Imports Syncfusion.PivotAnalysis.UWP
+
+Namespace SfPivotChartDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Public Sub New()
+            InitializeComponent()
+            Dim PivotChart As SfPivotChart = New SfPivotChart()
+            PivotChart.Name = "PivotChart1"
+            Root_Grid.Children.Add(PivotChart)
+            PivotChart.ItemSource = ProductSales.GetSalesData()
+            PivotChart.PivotAxis.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+            PivotChart.PivotAxis.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Country"})
+            PivotChart.PivotLegend.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Date", .TotalHeader = "Date"})
+            PivotChart.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format = "#.##", .SummaryType = SummaryType.DoubleTotalSum})
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
 
 **Run** the application, the following output will be generated.
 
