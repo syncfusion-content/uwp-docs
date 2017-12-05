@@ -535,8 +535,8 @@ namespace SfPivotClientDemo
             this.InitializeComponent();
             SfPivotClient pivotClient = new SfPivotClient();
             pivotClient.Name = "PivotClient1";
-            Root_Grid.Children.Add(PivotClient);
-            pivotClient.ItemsSource = ProductSales.GetSalesData()
+            Root_Grid.Children.Add(pivotClient);
+            pivotClient.ItemsSource = ProductSales.GetSalesData();
             // Adding PivotRows to the Control
             pivotClient.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
             pivotClient.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Date", TotalHeader = "Total" });
@@ -568,7 +568,7 @@ Namespace SfPivotClientDemo
             Me.InitializeComponent()
             Dim pivotClient As SfPivotClient = New SfPivotClient()
             pivotClient.Name = "PivotClient1"
-            Root_Grid.Children.Add(PivotClient)
+            Root_Grid.Children.Add(pivotClient)
             pivotClient.ItemsSource = ProductSales.GetSalesData()
             pivotClient.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
             pivotClient.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Date", .TotalHeader = "Total"})
