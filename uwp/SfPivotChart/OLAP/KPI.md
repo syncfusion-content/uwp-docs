@@ -11,14 +11,14 @@ documentation: ug
 
 KPI (Key Performance Indicator) is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how the applications should display the results of KPIs calculations.
 
-The following are the different types of Indicators:
+The following are the different types of indicators:
 
 * KPI Goal
 * KPI Status
 * KPI Trend
 * KPI Value
 
-The KPI elements can be defined in the OLAP Report in the following way:
+The KPI elements can be defined in the OLAP report in the following way:
 
 {% tabs %}
 
@@ -81,6 +81,6 @@ PivotChart1.OlapDataManager.SetCurrentReport(olapReport)
 
 ![](Kpi_images/kpi_image1.png)
 
-A demo sample is located in the below location.
+A demo sample is located in the below location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotChart\PivotChart\View\KPI.xaml
