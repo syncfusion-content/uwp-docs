@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-SfPivotChart provides support to customize the default appearance of the control. You can customize the default style of the control by modifying its properties as specified in the following code snippet.
+SfPivotChart provides support to customize the default appearance of the control. You can customize the default style of the control by modifying its properties as specified in the following code snippet:
 
 {% tabs %}
 

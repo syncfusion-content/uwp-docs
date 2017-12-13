@@ -9,7 +9,7 @@ documentation: ug
 
 # Adornments
 
-Adornments are used to display data values of a chart segment with custom formatting options. A data point value(x,y) can be formatted by using `AdornmentsInfo` property of SfPivotChart. You can initialize the adornments as specified in the below code snippet.
+Adornments are used to display data values of a chart segment with custom formatting options. A data point value(x,y) can be formatted by using `AdornmentsInfo` property of the SfPivotChart. You can initialize the adornments as specified in the below code snippet:
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-Each adornment can be represented by the following components.
+Each adornment can be represented by the following components:
 
 * Marker - Displays a symbol at the data point (X,Y).
 * Label - Displays a segmented label content at the data point (X,Y).
@@ -47,7 +47,7 @@ Each adornment can be represented by the following components.
 
 To enable marker in adornments, `ShowMarker` property is used. By default, no symbol is shown in adornments unless the desired symbol is specified.
 
-The following code snippet demonstrates how to show cross type markers in adornments.
+The following code snippet demonstrates how to show cross type markers in adornments:
 
 {% tabs %}
 
@@ -81,9 +81,9 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/default_MarkerAdornments.png)
 
-### Customizing Marker Appearance
+### Customizing marker appearance
 
-The marker's size can be customized with the help of `SymbolHeight` and `SymbolWidth` properties. And, its appearance can be customized with the help of `SymbolInterior` and `SymbolStroke` properties respectively.
+The marker's size can be customized with the help of `SymbolHeight` and `SymbolWidth` properties; its appearance can be customized with the help of `SymbolInterior` and `SymbolStroke` properties respectively.
 
 {% tabs %}
 
@@ -126,9 +126,9 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/symbolSize_MarkerAdornments.png)
 
-### Custom Marker
+### Custom marker
 
-You can also specify a custom template for creating your own symbols by using the `SymbolTemplate` property as shown in the below code snippet.
+You can also specify a custom template to create your own symbols by using the `SymbolTemplate` property as shown in the below code snippet:
 
 {% tabs %}
 
@@ -204,9 +204,9 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/default_LabelAdornments.png)
 
-### Defining Label Content
+### Defining label content
 
-By using the `SegmentLabelContent` property, you can define the value to be displayed as label for the data point segments in SfPivotChart. The label content may be specified as one of the following values.
+By using the `SegmentLabelContent` property, you can define the value to be displayed as label for the data point segments in the SfPivotChart. The label content can be specified as one of the following values:
 
 **XValue**
 
@@ -346,9 +346,9 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 **LabelContentPath**
 
-By default, the Y value of the SfPivotChart point in the provided chart segment gets displayed in the label's text. You can also define other specific label values by defining `LabelTemplate` property. This returns the adornment value for every chart segments that are being rendered.
+By default, the Y value of the SfPivotChart point in the provided chart segment can be displayed in the label's text. You can also define other specific label values by defining the `LabelTemplate` property. This property returns the adornment value for every chart segments that are being rendered.
 
-The following code sample demonstrates about displaying string values from X-axis.
+The following code sample demonstrates about displaying string values from the X-axis.
 
 {% tabs %}
 
@@ -462,9 +462,9 @@ End Class
 
 ![](Adornments_images/labelTemplate_LabelAdornments.png)
 
-### Rotating Label
+### Rotating label
 
-The label in adornments can be rotated to the desired specific angle via the property `LabelRotationAngle`. The following code snippet demonstrates how to rotate the labels.
+The label in adornments can be rotated to the specific angle through the property `LabelRotationAngle`. The following code snippet demonstrates how to rotate the labels:
 
 {% tabs %}
 
@@ -498,9 +498,9 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/labelRotation_LabelAdornments.png)
 
-### Customizing Label Appearance
+### Customizing label appearance
 
-The following code snippet illustrates about how to customize the appearance of label in adornments.
+The following code snippet illustrates about how to customize the appearance of label in adornments:
 
 {% tabs %}
 
@@ -549,9 +549,9 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/customizedLabel_LabelAdornments.png)
 
-### Applying Series Brush
+### Applying series brush
 
-The series color palette can be applied to the background of label in adornments by enabling the property of `UseSeriesPalette`.
+The series color palette can be applied to the background of the label in adornments by enabling the `UseSeriesPalette` property.
 
 {% tabs %}
 
@@ -585,9 +585,9 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/useSeriesPalette_LabelAdornments.png)
 
-### Formatting Label
+### Formatting label
 
-The content of the label in adornments can be set to the desired format by using the `SegmentLabelFormat` property. The following code snippet illustrates about how to format the adornment label to decimal digits.
+The content of the label in adornments can be set to the desired format by using the `SegmentLabelFormat` property. The following code snippet illustrates about how to format the adornment label to decimal digits:
 
 {% tabs %}
 
@@ -621,9 +621,9 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/labelFormat_LabelAdornments.png)
 
-## Connector Line
+## Connector line
 
-A connector line can be added to the adornments via the `ShowConnectorLine` property. It can be customized by using the properties of `ConnectorHeight` and `ConnectorRotationAngle` as shown below.
+A connector line can be added to the adornments through the `ShowConnectorLine` property. It can be customized by using the properties of `ConnectorHeight` and `ConnectorRotationAngle` as shown below:
 
 {% tabs %}
 
@@ -661,7 +661,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/connectorLine_LabelAdornments.png)
 
-### Styling Connector Line
+### Styling connector line
 
 You can define your own style for the connector line by using the `ConnectorLineStyle` property.
 
@@ -709,15 +709,15 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/styledConnectorLine_LabelAdornments.png)
 
-## Positioning Adornments
+## Positioning adornments
 
 The adornments can be positioned with respect to chart segment by using the property of `AdornmentsPosition`.
 
-* `Top`- Positions the adornment at the top edge point of a chart segment.
-* `Bottom`- Positions the adornment at the bottom edge point of a chart segment.
-* `TopAndBottom`- Positions the adornment at the center point of a chart segment.
+* `Top`- Positions the adornment at the top edge point of the chart segment.
+* `Bottom`- Positions the adornment at the bottom edge point of the chart segment.
+* `TopAndBottom`- Positions the adornment at the center point of the chart segment.
 
-The below code snippet explains about how the adornments are placed at centre position.
+The below code snippet explains about how the adornments are placed at center position:
 
 {% tabs %}
 
@@ -753,7 +753,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/positioningLabel_LabelAdornments.png)
 
-The label in adornments can also be aligned by using the properties of `HorizontalAlignment` and `VerticalAlignment` as explained in the below code snippet.
+The label in adornments can also be aligned by using the properties of `HorizontalAlignment` and `VerticalAlignment` as explained in the below code snippet:
 
 {% tabs %}
 
@@ -789,7 +789,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/alignedLabel_LabelAdornments.png)
 
-In addition, SfPivotChart provides support for positioning the label in adornments depending upon the selected chart type by using the `LabelPosition` property. The following code snippet defines about positioning the label based on `Auto` position.
+In addition, SfPivotChart provides support to position the label in adornments depending upon the selected chart type by using the `LabelPosition` property. The following code snippet defines about positioning the label based on `Auto` position:
 
 {% tabs %}
 
@@ -826,6 +826,6 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![](Adornments_images/autoAlignedLabel_LabelAdornments.png)
 
-A demo sample is located in the below location.
+A demo sample is located in the below location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotChart\PivotChart\View\Adornments.xaml

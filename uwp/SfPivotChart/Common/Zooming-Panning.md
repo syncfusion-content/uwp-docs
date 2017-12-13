@@ -9,13 +9,13 @@ documentation: ug
 
 # Zooming and Panning
 
-SfPivotChart allows you to zoom-in, zoom-out and pan the chart area with the help of this support. Zooming is mostly used to view the in-depth information of specific chart area, when there are number of data points inside the chart. Panning is mostly used to navigate the chart area.
+SfPivotChart allows you to zoom-in, zoom-out, and pan the chart area with the help of this support. Zooming is mostly used to view the in-depth information of specific chart area, when there are number of data points inside the chart. Panning is mostly used to navigate the chart area.
 
 Zooming and panning provides you to take a close-up look of the data point plotted in the series.
 
 **Initialization**
 
-By using the property of `ZoomPanBehavior` in SfPivotChart, you can enable the zooming and panning support as shown in the following code snippet.
+By using the `ZoomPanBehavior` property in the SfPivotChart, you can enable the zooming and panning support as shown in the following code snippet:
 
 {% tabs %}
 
@@ -41,13 +41,13 @@ PivotChart1.ZoomPanBehavior = New PivotChartZoomPanBehavior()
 
 {% endtabs %}
 
-## Zooming Chart Area
+## Zooming chart area
 
-Zooming can be performed by any of the following ways.
+Zooming can be performed by any of the following ways:
 
-### Mouse Wheel Zooming
+### Mouse wheel zooming
 
-Zooming can be performed by mouse wheel action by setting `EnableMouseWheelZooming` property to true as shown in the following code snippet.
+Zooming can be performed by mouse wheel action by setting `EnableMouseWheelZooming` property to true as shown in the following code snippet:
 
 {% tabs %}
 
@@ -75,9 +75,9 @@ PivotChart1.ZoomPanBehavior.EnableMouseWheelZooming = True
 
 {% endtabs %}
 
-**Zooming Relative to Cursor**
+**Zooming relative to cursor**
 
-To enable the zooming relative to cursor position you can set `ZoomRelativeToCursor` property to true. This support is applicable only for mouse wheel zooming.
+To enable the zooming relative to cursor position, you can set `ZoomRelativeToCursor` property to true. This support is applicable only for the mouse wheel zooming.
 
 {% tabs %}
 
@@ -107,9 +107,9 @@ PivotChart1.ZoomPanBehavior.ZoomRelativeToCursor = True
 
 {% endtabs %}
 
-### Pinch Zooming
+### Pinch zooming
 
-If you want to zoom the chart area using fingers by touch, then you have to set `EnablePinchZooming` property to true as shown in the below code snippet.
+If you want to zoom the chart area using fingers by touch, then you have to set `EnablePinchZooming` property to true as shown in the below code snippet:
 
 {% tabs %}
 
@@ -137,9 +137,9 @@ PivotChart1.ZoomPanBehavior.EnablePinchZooming = True
 
 {% endtabs %}
 
-### Selection Zooming
+### Selection zooming
 
-Zooming can also be performed by selecting a particular region in rectangular form. To enable the selection zooming, you have to set `EnableSelectionZooming` property to true as illustrated below.
+Zooming can also be performed by selecting a particular region in rectangular form. To enable the selection zooming, you have to set `EnableSelectionZooming` property to true as illustrated below:
 
 {% tabs %}
 
@@ -169,9 +169,9 @@ PivotChart1.ZoomPanBehavior.EnableSelectionZooming = True
 
 ![](Zooming-Panning_images/default_selctionBox.png)
 
-**Customizing the Selection Rectangle**
+**Customizing the selection rectangle**
 
-The rectangle which is seen while selecting a region for zooming can be customized by using the properties of `Fill`, `Stroke`, `StrokeThickness` as shown below.
+The rectangle which is seen while selecting a region for zooming can be customized by using the properties of `Fill`, `Stroke`, and `StrokeThickness` as shown below:
 
 {% tabs %}
 
@@ -207,11 +207,11 @@ PivotChart1.ZoomPanBehavior.StrokeThickness = True
 
 ![](Zooming-Panning_images/customized_selctionBox.png)
 
-## Zooming Mode
+## Zooming mode
 
-Zooming can be done horizontally and vertically based on the axis defined by using `ZoomMode` property. By default, `ZoomMode` is set as `XY` and so, the zooming can be performed on both the axes.
+Zooming can be done horizontally and vertically based on the axis that is defined by using `ZoomMode` property. By default, `ZoomMode` is set as `XY`, so that the zooming can be performed on both the axes.
 
-**Zooming along X Axis**
+**Zooming along x-axis**
 
 {% tabs %}
 
@@ -243,7 +243,7 @@ PivotChart1.ZoomPanBehavior.ZoomMode = ZoomMode.X
 
 ![](Zooming-Panning_images/zoomModeX.png)
 
-**Zooming along Y Axis**
+**Zooming along y-axis**
 
 {% tabs %}
 
@@ -275,9 +275,9 @@ PivotChart1.ZoomPanBehavior.ZoomMode = ZoomMode.Y
 
 ![](Zooming-Panning_images/zoomModeY.png)
 
-## Zoom Level
+## Zoom level
 
-You can also limit the zooming by setting the property of `MaximumZoomLevel` as illustrated in the following code snippet.
+You can also limit the zooming by setting the property of `MaximumZoomLevel` as illustrated in the following code snippet:
 
 {% tabs %}
 
@@ -305,9 +305,9 @@ PivotChart1.ZoomPanBehavior.MaximumZoomLevel = 5
 
 {% endtabs %}
 
-## Zooming Toolbar
+## Zooming toolbar
 
-Zooming toolbar is encompassed with buttons for performing actions like Zoom In, Zoom-Out, Reset, Pan, etc. You can add the zooming toolbar to the chart area by enabling the property of `EnableZoomingToolBar` as shown as follows.
+Zooming toolbar is encompassed with buttons for performing actions like zoom in, zoom-out, reset, pan, etc. You can add the zooming toolbar to the chart area by enabling the property of `EnableZoomingToolBar` as shown below:
 
 {% tabs %}
 
@@ -339,9 +339,9 @@ PivotChart1.ZoomPanBehavior.EnableSelectionZooming = True
 
 ![](Zooming-Panning_images/defaultZoomingToolbar.png)
 
-**Positioning Zooming Toolbar**
+**Positioning zooming toolbar**
 
-Zooming toolbar can be positioned using the `HorizontalPosition` and `VerticalPosition` properties as illustrated in the following code snippet.
+Zooming toolbar can be positioned by using the `HorizontalPosition` and `VerticalPosition` properties as illustrated in the following code snippet:
 
 {% tabs %}
 
@@ -375,9 +375,9 @@ PivotChart1.ZoomPanBehavior.VerticalPosition = VerticalAlignment.Bottom
 
 ![](Zooming-Panning_images/alignedZoomingToolbar.png)
 
-**Customization of Zooming Toolbar**
+**Customization of zooming toolbar**
 
-Zooming Toolbar can be customized by using the following properties.
+Zooming toolbar can be customized by using the following properties:
 
 * `ToolBarBackground` - Represents the background of zooming toolbar.
 * `ToolBarItems` - Represents the collection of toolbar items.
@@ -426,9 +426,9 @@ PivotChart1.ZoomPanBehavior.ToolBarItemMargin = New Thickness(5)
 
 ![](Zooming-Panning_images/customizedZoomingToolBar.png)
 
-## Panning Chart Area
+## Panning chart area
 
-Panning allows to navigate the visible area of the chart when it is zoomed in. To enable panning, you have to set `EnablePanning` property to true as shown below.
+Panning allows to navigate the visible area of the chart when it is zoomed in. To enable panning, you can set `EnablePanning` property to true as shown below:
 
 {% tabs %}
 
@@ -458,9 +458,9 @@ PivotChart1.ZoomPanBehavior.EnablePanning = True
 
 ![](Zooming-Panning_images/pannedChartArea.png)
 
-## Reset Zooming and Panning
+## Reset zooming and panning
 
-SfPivotChart provides support to reset to the default view when you double tap the chart area by setting `ResetOnDoubleTap` property to true.
+SfPivotChart provides support to reset to the default view when you double-tap the chart area by setting `ResetOnDoubleTap` property to true.
 
 {% tabs %}
 
