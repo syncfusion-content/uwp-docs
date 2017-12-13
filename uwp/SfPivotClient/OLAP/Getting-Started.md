@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Olap Getting Started with SfPivotClient control for UWP
-description: Olap Getting Started with SfPivotClient control for UWP
-platform: uwp
+title: OLAP Getting Started | SfPivotClient | UWP | Syncfusion
+description: Getting Started for SfPivotClient with OLAP data.
+platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
@@ -11,15 +11,15 @@ documentation: ug
 
 This section covers the information required to create a simple SfPivotClient control bound to OLAP data source and also about creating a WCF service which helps to bind OLAP data with SfPivotClient control through OlapDataManager.
 
-### Control Initialization
+## Control Initialization
 
 SfPivotClient control can be initialized and added to an application through the following ways:
 
-1. Through designer
-2. Through XAML
-3. Through code-behind
+1.Through designer
+2.Through XAML
+3.Through code-behind
 
-## Adding Control through Designer
+## Adding control through Designer
 
 Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
 
@@ -39,32 +39,32 @@ Finally name the added SfPivotClient control as “PivotClient1” in MainPage.x
 
 {% endtabs %}
 
-## Adding Control through XAML
+## Adding control through XAML
 
 Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
 
 Then name the project as "SfPivotClientDemo" while creating the application to access the project later.
 
 In order to add SfPivotClient control manually in XAML, the following assembly references must be added into the project.
-	
- * Syncfusion.SfPivotClient.UWP
- * Syncfusion.SfPivotGrid.UWP
- * Syncfusion.SfPivotChart.UWP
- * Syncfusion.SfPivotGridConverter.UWP
- * Syncfusion.SfPivotChartConverter.UWP
- * Syncfusion.SfPivotShared.UWP
- * Syncfusion.Olap.UWP
- * Syncfusion.PivotAnalysis.UWP
- * Syncfusion.Data.UWP
- * Syncfusion.SfCellGrid.UWP
- * Syncfusion.SfGrid.UWP
- * Syncfusion.SfGridCommon.UWP
- * Syncfusion.SfShared.UWP
- * Syncfusion.SfInput.UWP
- * Syncfusion.SfBusyIndicator.UWP
- * Syncfusion.SfChart.UWP
- * Syncfusion.SfColorPickers.UWP
- * Syncfusion.SfTabControl.UWP
+
+* Syncfusion.SfPivotClient.UWP
+* Syncfusion.SfPivotGrid.UWP
+* Syncfusion.SfPivotChart.UWP
+* Syncfusion.SfPivotGridConverter.UWP
+* Syncfusion.SfPivotChartConverter.UWP
+* Syncfusion.SfPivotShared.UWP
+* Syncfusion.Olap.UWP
+* Syncfusion.PivotAnalysis.UWP
+* Syncfusion.Data.UWP
+* Syncfusion.SfCellGrid.UWP
+* Syncfusion.SfGrid.UWP
+* Syncfusion.SfGridCommon.UWP
+* Syncfusion.SfShared.UWP
+* Syncfusion.SfInput.UWP
+* Syncfusion.SfBusyIndicator.UWP
+* Syncfusion.SfChart.UWP
+* Syncfusion.SfColorPickers.UWP
+* Syncfusion.SfTabControl.UWP
 
 You can find these libraries under following location.
 
@@ -72,8 +72,8 @@ You can find these libraries under following location.
 
 Or else, the SfPivotClient control can be added to the project by choosing SDK reference as follows:
 
-Right click on **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*. 
- 
+Right click on **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+
 Now add the following namespace in MainPage.xaml file.
 
 {% tabs %}
@@ -111,7 +111,7 @@ Then initialize the SfPivotClient control inside the Grid by using the specified
 
 {% endtabs %}
 
-## Adding Control through Code-Behind
+## Adding control through Code-Behind
 
 Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
 
@@ -119,24 +119,24 @@ Then name the project as "SfPivotClientDemo" while creating the application to a
 
 In order to add SfPivotClient control manually in code-behind, the following assembly references must be added into the project.
 
- * Syncfusion.SfPivotClient.UWP
- * Syncfusion.SfPivotGrid.UWP
- * Syncfusion.SfPivotChart.UWP
- * Syncfusion.SfPivotGridConverter.UWP
- * Syncfusion.SfPivotChartConverter.UWP
- * Syncfusion.SfPivotShared.UWP
- * Syncfusion.Olap.UWP
- * Syncfusion.PivotAnalysis.UWP
- * Syncfusion.Data.UWP
- * Syncfusion.SfCellGrid.UWP
- * Syncfusion.SfGrid.UWP
- * Syncfusion.SfGridCommon.UWP
- * Syncfusion.SfShared.UWP
- * Syncfusion.SfInput.UWP
- * Syncfusion.SfBusyIndicator.UWP
- * Syncfusion.SfChart.UWP
- * Syncfusion.SfColorPickers.UWP
- * Syncfusion.SfTabControl.UWP
+* Syncfusion.SfPivotClient.UWP
+* Syncfusion.SfPivotGrid.UWP
+* Syncfusion.SfPivotChart.UWP
+* Syncfusion.SfPivotGridConverter.UWP
+* Syncfusion.SfPivotChartConverter.UWP
+* Syncfusion.SfPivotShared.UWP
+* Syncfusion.Olap.UWP
+* Syncfusion.PivotAnalysis.UWP
+* Syncfusion.Data.UWP
+* Syncfusion.SfCellGrid.UWP
+* Syncfusion.SfGrid.UWP
+* Syncfusion.SfGridCommon.UWP
+* Syncfusion.SfShared.UWP
+* Syncfusion.SfInput.UWP
+* Syncfusion.SfBusyIndicator.UWP
+* Syncfusion.SfChart.UWP
+* Syncfusion.SfColorPickers.UWP
+* Syncfusion.SfTabControl.UWP
 
 You can find these libraries under the following location.
 
@@ -224,7 +224,7 @@ End Namespace
 
 N> The following steps explain about how to refer the online service in Universal Windows Platform application in-order to bind the Cube information in SfPivotClient. The service URL used here refers our demo Cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotclient/getting-started#creating-wcf-service-application).
 
-After initializing SfPivotClient control, right click on **References** and select **Add Service Reference** option. 
+After initializing SfPivotClient control, right click on **References** and select **Add Service Reference** option.
 
 In “Add Service Reference” window, enter the following address and click “Go” button to add the online service.
 
@@ -234,10 +234,10 @@ Name the service namespace as “OlapManagerService” and click “OK” button
 
 Include the following namespace in code-behind for using OlapDataManager and OlapReport in the application.
 
- * Syncfusion.Olap.UWP.Manager
- * Syncfusion.Olap.UWP.Reports
+* Syncfusion.Olap.UWP.Manager
+* Syncfusion.Olap.UWP.Reports
 
-Then include the following code to initialize the OlapDataManager and to create OlapReport through loaded event of SfPivotClient control.   
+Then include the following code to initialize the OlapDataManager and to create OlapReport through loaded event of SfPivotClient control.
 
 {% tabs %}
 
@@ -273,7 +273,7 @@ namespace SfPivotClientDemo
             PivotClient1.OlapDataManager = olapDataManager;
         }
 
-        private OlapReport CreateOlapReport() 
+        private OlapReport CreateOlapReport()
         {
             OlapReport olapReport = new OlapReport();
             olapReport.Name = "Sales Report";
@@ -287,7 +287,7 @@ namespace SfPivotClientDemo
             MeasureElements measureElementColumn = new MeasureElements();
             measureElementColumn.Elements.Add(new MeasureElement {
                 Name = "Internet Sales Amount" });
-        
+
             DimensionElement dimensionElementRow = new DimensionElement();
             dimensionElementRow.Name = "Date";
             dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
@@ -360,7 +360,7 @@ End Namespace
 
 N> **OlapDataChanged** event should be hooked before setting the current report to OlapDataManager.
 
-Next declare a global reference to OlapManagerService’s IOlapDataProvider. Then include the following code to initialize the connection and to get the Cube information as JSON data through online WCF service reference.  
+Next declare a global reference to OlapManagerService’s IOlapDataProvider. Then include the following code to initialize the connection and to get the Cube information as JSON data through online WCF service reference.
 
 {% tabs %}
 
@@ -549,15 +549,15 @@ End Namespace
 
 {% endtabs %}
 
-Run the application, the SfPivotClient control is rendered as shown below. 
+Run the application, the SfPivotClient control is rendered as shown below.
 
-![](GettingStarted_Images/GettingStarted.png) 
+![](Getting-Started_images/GettingStarted.png)
 
 ## Creating WCF Service Application
 
 Create a new **WCF** Service application by using Visual Studio IDE and name the WCF project as **"OlapManagerService"**
 
-Add the following dependency assemblies into your WCF service application.  
+Add the following dependency assemblies into your WCF service application.
 
 * Syncfusion.Olap.Base
 * Syncfusion.OlapUWP.BaseWrapper
@@ -609,6 +609,7 @@ namespace OlapManagerService
         #endregion
 
         #region Constructor
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Service1"/> class.
         /// </summary>
@@ -642,7 +643,7 @@ namespace OlapManagerService
             _dataProvider.DataProvider.CloseConnection();
             return cubeInfoCollection != null ? Utils.Serialize(cubeInfoCollection) : string.Empty;
         }
-        
+
         public string GetJSONChildMembers(string cubeName, string levelName)
         {
             MemberCollection memberCollection = _dataProvider.GetChildMembers(cubeName, levelName);
@@ -714,7 +715,6 @@ Imports System.ServiceModel
 Imports System.ServiceModel.Activation
 
 Namespace OlapManagerService
-
     <AspNetCompatibilityRequirements(RequirementsMode:=AspNetCompatibilityRequirementsMode.Allowed)>
     <ServiceBehavior(IncludeExceptionDetailInFaults:=True)>
     Public Class Service1
@@ -801,11 +801,11 @@ Include the basic HTTP binding and service endpoint address in the web.config fi
         </behavior>
       </serviceBehaviors>
     </behaviors>
-    
+
     <protocolMapping>
         <add binding="basicHttpsBinding" scheme="https"/>
-    </protocolMapping>    
-    
+    </protocolMapping>
+
     <serviceHostingEnvironment multipleSiteBindingsEnabled="false"/>
     <services>
       <!--Bind the WCF service to our custom binding-->
