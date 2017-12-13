@@ -9,16 +9,16 @@ documentation: ug
 
 # Grid Layout
 
-The position of summary cells in SfPivotGrid can be customized with the help of `GridLayout` property. It can be either positioned at the top or bottom of the value cells.
+The position of summary cells in the SfPivotGrid can be customized with the help of `GridLayout` property. It can be positioned at the top or bottom of value cells.
 
-The following are the two different kinds of layouts supported by SfPivotGrid.
+The following are the two different kinds of layouts supported by the SfPivotGrid:
 
-* Normal Layout
-* Top Summary Layout
+* Normal layout
+* Top summary layout
 
-**Normal Layout**
+**Normal layout**
 
-'Normal' layout is the default layout of SfPivotGrid in which the summary cells are positioned at the bottom of the value cells. Please refer the below code snippet to customize the grid layout.
+'Normal' layout is the default layout of SfPivotGrid in which the summary cells are positioned at the bottom of the value cells. Please refer the below code snippet to customize the grid layout:
 
 {% tabs %}
 
@@ -46,9 +46,9 @@ Me.PivotGrid1.GridLayout = GridLayout.Normal
 
 ![](Grid-Layout_images/Grid-Layouts_img1.png)
 
-**Top Summary Layout**
+**Top summary layout**
 
-In 'Top Summary' layout, the summary cells are positioned at the beginning of the value cells. The following code snippet illustrates how to set top summary layout in SfPivotGrid.
+In 'Top Summary' layout, the summary cells are positioned at the beginning of the value cells. The following code snippet illustrates how to set top summary layout in the SfPivotGrid:
 
 {% tabs %}
 
@@ -76,6 +76,6 @@ Me.PivotGrid1.GridLayout = GridLayout.TopSummary
 
 ![](Grid-Layout_images/Grid-Layouts_img2.png)
 
-A demo sample is available at the following location.
+A demo sample is available at the following location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\Relational.xaml
