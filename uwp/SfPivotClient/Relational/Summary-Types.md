@@ -1,0 +1,105 @@
+---
+layout: post
+title: Summary Types | SfPivotClient | UWP | Syncfusion
+description: Summary Types
+platform: UWP
+control: SfPivotClient
+documentation: ug
+---
+
+# Summary Types
+
+SfPivotClient provides support to summarize the data for various data types by using the property of `SummaryType`. This property should be defined while defining the PivotCalculation using `PivotComputationInfo` class to specify the type of the summary. It holds the following summary types.
+
+* **DoubleTotalSum** - Computes the sum of double or integer from PivotValues for corresponding PivotItem
+* **DoubleAverage** - Computes the average of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleMaximum** - Computes the maximum of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleMinimum** - Computes the minimum of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleStandardDeviation** - Computes the standard deviation of double or integer from PivotValues for corresponding PivotItem.
+* **DoubleVariance** - Computes the variance of double or integer from PivotValues for corresponding PivotItem.
+* **Count** - Computes the count of double or integer from PivotValues for corresponding PivotItem.
+* **DecimalTotalSum** - Computes the sum of decimal from PivotValues for corresponding PivotItem.
+* **IntTotalSum** - Computes the sum of integer from PivotValues for corresponding PivotItem.
+* **Custom** - Specifies that you are using a custom SummaryBase object to define the calculation.
+* **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the Pivot Computation column if all the values are common.
+
+The following code snippet shows how to set the summary type of PivotCalculation.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfPivotClient Name="PivotClient1" ItemSource="{Binding ProductSalesData}"
+                        PivotRows="{Binding PivotRows}" PivotColumns="{Binding PivotColumns}">
+    <syncfusion:SfPivotClient.PivotCalculations>
+        <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" />
+    </syncfusion:SfPivotClient.PivotCalculations>
+</syncfusion:SfPivotClient>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+PivotClient1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum });
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With { _
+    Key .FieldName = "Amount", _
+    Key .Format = "C", _
+    Key .SummaryType = SummaryType.DoubleTotalSum _
+})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Summary-images/custom_summary_type-image1.png)
+
+## DisplayIfDiscreteValuesEqual SummaryType
+
+**DisplayIfDiscreteValuesEqual** is a new summary type that displays the aggregated value in PivotCalculation column if all the values are common, else the default value will be displayed as **'*'**.
+
+You can also change the default value to any custom string of your choice by using the `PadString` property as specified in the below code snippet.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfPivotClient Name="PivotClient1" ItemSource="{Binding ProductSalesData}"
+                          PivotRows="{Binding PivotRows}" PivotColumns="{Binding PivotColumns}">
+    <syncfusion:SfPivotClient.PivotCalculations>
+        <syncfusion:PivotComputationInfo CalculationName="Total" FieldName="Quantity" Format="#.##"                                                                     SummaryType="DisplayIfDiscreteValuesEqual" PadString="***"/>
+    </syncfusion:SfPivotClient.PivotCalculations>
+</syncfusion:SfPivotClient>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+PivotClient1.PivotCalculations.Add(new PivotComputationInfo
+{
+    FieldName = "Quantity",
+    Format = "#.##",
+    SummaryType = SummaryType.DisplayIfDiscreteValuesEqual,
+    PadString ="***"
+});
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With { _
+    Key .FieldName = "Quantity", _
+    Key .Format = "#.##", _
+    Key .SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, _
+    Key .PadString = "***" _
+})
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Summary-Types_images/custom_summary_type-image2.png)
