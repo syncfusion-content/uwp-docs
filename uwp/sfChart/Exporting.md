@@ -11,7 +11,7 @@ documentation: ug
 Chart can be exported into the following types of image formats:
 
 * JPG or JPEG
-* JPG-XR
+* JPEG-XR
 * GIF
 * TIFF
 * PNG
@@ -33,7 +33,7 @@ Chart.Save();
 
 ### Save(string fileName, StorageFolder folderLocation)
 
-This method will export the chart as image to the specified location, and the below code example illustrates the usage of this method,
+This method will export the chart as image to the specified location. The following code example illustrates the usage of this method.
 
 {% highlight c# %}
 
@@ -51,7 +51,7 @@ Chart.Save("Chart", null);
 
 ### Save(IRandomAccessStream stream, Guid bitmapEncoderID)
 
-This method allows to export the chart into a stream and it is described in below code snippet,
+This method allows you to export the chart into a stream. It is illustrated in following code example.
 
 {% highlight c# %}
 
