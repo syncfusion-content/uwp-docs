@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Relational Getting Started | SfPivotChart | UWP | Syncfusion
 description: Getting Started for SfPivotChart with relational data.
@@ -9,23 +9,23 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to create a simple SfPivotChart control bound to Relational data source such as IList, IEnumerable.etc.,
+This section explains about the steps required to create a simple SfPivotChart control bound to relational data source such as IList, IEnumerable, etc.
 
-## Control Initialization
+## Control initialization
 
 SfPivotChart control can be initialized and added to an application through the following ways:
 
-1. Through designer
-2. Through XAML
-3. Through code-behind
+1. Through designer.
+2. Through XAML.
+3. Through code-behind.
 
-## Adding Control through Designer
+## Adding control through designer
 
-Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
+Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
 
-N> Once the UWP application is created, select **"Properties"** under the project shown in Solution Explorer and change the Target Version of the application as **"Windows 10 (10.0; Build 10240)".**
+N> Once the UWP application is created, select **"Properties"** under the project shown in the solution explorer and change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
-Now select Toolbox options from View menu and it will appear inside the VisualStudio IDE. From the toolbox select SfPivotChart control under “Syncfusion Controls for UWP XAML” group, then drag and drop it into the designer section of MainPage.xaml file.
+Now, select toolbox from the view menu and it will appear inside the VisualStudio IDE. From the toolbox, select SfPivotChart control under “Syncfusion Controls for UWP XAML” group, then drag and drop it into the designer section of the MainPage.xaml file.
 
 Finally name the added SfPivotChart control as “PivotChart1” in MainPage.xaml to refer it in code-behind as follows:
 
@@ -39,13 +39,13 @@ Finally name the added SfPivotChart control as “PivotChart1” in MainPage.xam
 
 {% endtabs %}
 
-## Adding Control through XAML
+## Adding control through XAML
 
-Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
+Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
 
 Then, name the project as "SfPivotChartDemo" while creating the application to access the project later.
 
-In order to add SfPivotChart control manually in XAML, the following assembly references must be added in the project.
+To add the SfPivotChart control manually in the XAML, the following assembly references must be added in the project:
 
 * Syncfusion.SfPivotChart.UWP
 * Syncfusion.SfChart.UWP
@@ -54,15 +54,15 @@ In order to add SfPivotChart control manually in XAML, the following assembly re
 * Syncfusion.SfBusyIndicator.UWP
 * Syncfusion.PivotAnalysis.UWP
 
-You can find these libraries under following location.
+You can find these libraries under the following location.
 
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
 Or else, the SfPivotChart control can be added to the project by choosing SDK reference as follows:
 
-Right click on **References** and select Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML.
+Right-click on **References** and select Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML.
 
-Now add the following namespace in MainPage.xaml file.
+Now, add the following namespace in the MainPage.xaml file.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotChart"
 
 {% endtabs %}
 
-Then initialize the SfPivotChart control inside the Grid by using the specified namespace and name the control as "PivotChart1".
+Then initialize the SfPivotChart control inside the grid by using the specified namespace and naming the control as "PivotChart1".
 
 {% tabs %}
 
@@ -99,13 +99,13 @@ Then initialize the SfPivotChart control inside the Grid by using the specified 
 
 {% endtabs %}
 
-## Adding Control through Code-Behind
+## Adding control through code-behind
 
-Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
+Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
 
 Then, name the project as "SfPivotChartDemo" while creating the application to access the project later.
 
-In order to add SfPivotChart control manually in code-behind, the following assembly references must be added in the project.
+To add SfPivotChart control manually in code-behind, the following assembly references must be added in the project:
 
 * Syncfusion.SfPivotChart.UWP
 * Syncfusion.SfChart.UWP
@@ -114,15 +114,15 @@ In order to add SfPivotChart control manually in code-behind, the following asse
 * Syncfusion.SfBusyIndicator.UWP
 * Syncfusion.PivotAnalysis.UWP
 
-You can find these libraries under following location.
+You can find these libraries under the following location.
 
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
 Or else, the SfPivotChart control can be added to the project by choosing SDK reference as follows:
 
-Right click on **References** and select Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML.
+Right-click the **References** and select Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML.
 
-Now open the MainPage.xaml file, and include name for the Grid as “Root_Grid” to refer it in code-behind.
+Now, open the MainPage.xaml file, and include name for the grid as “Root_Grid” to refer it in code-behind.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ Now open the MainPage.xaml file, and include name for the Grid as “Root_Grid�
 
 {% endtabs %}
 
-Next add the namespace - "Syncfusion.UI.Xaml.PivotChart" in MainPage.xaml.cs file. Then initialize the SfPivotChart control and assign a name for it as “PivotChart1”. Then add the control in parent Grid as follows.
+Add the namespace - "Syncfusion.UI.Xaml.PivotChart" in MainPage.xaml.cs file. Then initialize the SfPivotChart control and assign a name for it as “PivotChart1”. Then add the control in the parent grid as follows:
 
 {% tabs %}
 
@@ -196,13 +196,13 @@ End Namespace
 
 {% endtabs %}
 
-## Adding Relational data source to SfPivotChart Control
+## Adding relational data source to SfPivotChart control
 
-Right-click on the project in the solution explorer and select *Add -> New Folder* and then name the folder as **"ViewModel"**.
+Right-click the project in the solution explorer and select *Add > New Folder* and then name the folder as **"ViewModel"**.
 
-Then create a new class file by right-click on the project in the solution explorer and select *Add -> New Item -> Class*. In "Add New Item" window, provide the name of the class as ProductSales.cs and click **OK**.
+Then create a new class file by right-clicking the project in the solution explorer and select *Add > New Item > Class*. In "Add New Item" window, provide the name of the class as ProductSales.cs and click **OK**.
 
-The ItemSource for the SfPivotChart control will be initialized in this file. Please refer the below code sample.
+The ItemSource for the SfPivotChart control will be initialized in this file. Please refer the below code sample:
 
 {% tabs %}
 
@@ -313,11 +313,11 @@ End Class
 
 {% endtabs %}
 
-Above mentioned GetSalesData method is used to get the collection that needs to be populated in the SfPivotChart control. Now we need to bind the collection to the SfPivotChart control as its ItemSource. It can be done through XAML or code-behind.
+Above mentioned GetSalesData method is used to get the collection that needs to be populated in the SfPivotChart control. Now, you have to bind the collection to the SfPivotChart control as its ItemSource. It can be done through XAML or code-behind.
 
-### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotChart through XAML
+### Binding ItemSource, defining PivotItems, and PivotComputations to SfPivotChart through XAML
 
-If you need to initialize the ItemSource through XAML, DataContext is used. Please refer the following code.
+If you need to initialize the ItemSource through XAML, the DataContext is used. Please refer the following code:
 
 {% tabs %}
 
@@ -358,9 +358,9 @@ If you need to initialize the ItemSource through XAML, DataContext is used. Plea
 
 {% endtabs %}
 
-### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotChart through code-behind
+### Binding ItemSource, defining PivotItems, and PivotComputations to SfPivotChart through code-behind
 
-If you need to initialize the ItemSource through code-behind, please refer the below code sample.
+If you need to initialize the ItemSource through code-behind, please refer the below code sample:
 
 {% tabs %}
 

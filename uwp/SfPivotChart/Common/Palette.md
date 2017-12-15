@@ -11,9 +11,9 @@ documentation: ug
 
 A pre-defined collection or a set of colors can be applied to the chart series. Palette can be used to provide a rich look for your business applications.
 
-**In-built Palette**
+**In-built palette**
 
-SfPivotChart supports 12 types of in-built chart palette that are specified as follows.
+SfPivotChart supports 12 types of in-built chart palette that are specified as follows:
 
 * Metro
 * AutumnBrights
@@ -28,7 +28,7 @@ SfPivotChart supports 12 types of in-built chart palette that are specified as f
 * SandyBeach
 * LightCandy
 
-The following code snippet shows how to apply a palette to the SfPivotChart control.
+The following code snippet shows how to apply the palette to the SfPivotChart control:
 
 {% tabs %}
 
@@ -48,9 +48,9 @@ PivotChart1.ColorPalette = PivotChartColorPalette.AutumnBrights
 
 ![](Palette_images/palette_AutumnBrights.png)
 
-**Custom Palette**
+**Custom palette**
 
-SfPivotChart provides a custom option which enables you to define your own color brushes with your preferred order for the palette. Using the `CustomBrushes` property of SfPivotChart, you can add a collection of colors to series as shown in the following code snippet.
+SfPivotChart provides a custom option to define own color brushes with your preferred order for the palette. Using the `CustomBrushes` property of the SfPivotChart, you can add a collection of colors to series as shown in the following code snippet:
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Layout Customization
 
-SfPivotGauge provides support to display multiple gauges in a structured layout and it can be achieved by using the properties of `RowsCount` and `ColumnsCount`. These properties specify the number of rows and columns required for displaying the control.
+SfPivotGauge provides support to display multiple gauges in a structured layout and it can be achieved by using the properties of `RowsCount` and `ColumnsCount`. These properties specify the number of rows and columns required to display the control.
 
 {% tabs %}
 
@@ -42,9 +42,9 @@ PivotGauge1.ColumnsCount = 2
 
 ![](Appearance_images/Layout-customization.png)
 
-## Gauge Radius
+## Gauge radius
 
-SfPivotGauge provides support to adjust its radius by assigning a proper value to its `Radius` property. The following code snippet illustrates about how to modify the radius of SfPivotGauge.
+SfPivotGauge provides support to adjust its radius by assigning a proper value to its `Radius` property. The following code snippet illustrates about how to modify the radius of the SfPivotGauge:
 
 {% tabs %}
 
@@ -73,9 +73,9 @@ PivotGauge1.Radius = 75
 
 ![](Appearance_images/Gauge-radius.png)
 
-## Gauge Header
+## Gauge header
 
-Gauge header is the combination of details about calculation and KPI. The header components of SfPivotGauge can be hidden by using the property of `ShowGaugeHeader` as specified in the following code snippet.
+Gauge header is the combination of details about the calculation and KPI. The header components of the SfPivotGauge can be hidden by using the property of `ShowGaugeHeader` as specified in the following code snippet:
 
 {% tabs %}
 
@@ -104,9 +104,9 @@ PivotGauge1.ShowGaugeHeaders = False
 
 ![](Appearance_images/Gauge-header.png)
 
-## Gauge Label
+## Gauge label
 
-The visibility of gauge labels that is displayed inside the gauge can be toggled with the help of `ShowGaugeFactors` property. The following code snippet shows how to hide the labels of SfPivotGauge.
+The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of `ShowGaugeFactors` property. The following code snippet shows how to hide labels of the SfPivotGauge:
 
 {% tabs %}
 
@@ -135,9 +135,9 @@ PivotGauge1.ShowGaugeLabels = False
 
 ![](Appearance_images/Gauge-label.png)
 
-## Gauge Factor
+## Gauge factor
 
-Gauge factor component can be hidden by using the property of `ShowGaugeFactors` as specified in the below code snippet.
+Gauge factor component can be hidden by using the property of `ShowGaugeFactors` as specified in the below code snippet:
 
 {% tabs %}
 
