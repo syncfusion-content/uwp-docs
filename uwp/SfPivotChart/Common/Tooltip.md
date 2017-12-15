@@ -9,9 +9,9 @@ documentation: ug
 
 # Tooltip
 
-SfPivotChart provides tooltip support, by which the series information (such as measure, x-axis values, y-axis values, and series name) can be displayed over chart area when the mouse pointer is moved over chart points.
+SfPivotChart provides tooltip support, by which the series information (such as measure, x-axis values, y-axis values, and series name) can be displayed over the chart area when the mouse pointer is moved over chart points.
 
-The following code snippet shows how to enable the series tooltip by using `ShowToolTip` property.
+The following code snippet shows how to enable the series tooltip by using `ShowToolTip` property:
 
 {% tabs %}
 
