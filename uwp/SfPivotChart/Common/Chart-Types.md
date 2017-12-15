@@ -182,7 +182,7 @@ PivotChart1.ChartType = PivotChartType.StackingBar
 
 ### Stacking bar 100 chart
 
-Stacking bar 100 chart is similar to the stacking column 100 chart. But, it differes from direction; it is rotated 90 degree in clockwise direction. This type of chart is widely used for proportional analysis over a particular period of time.
+Stacking bar 100 chart is similar to the stacking column 100 chart. But, it differs from direction; it is rotated 90 degree in clockwise direction. This type of chart is widely used for proportional analysis over a particular period of time.
 
 The following code snippet shows how to select a stacking bar 100 chart:
 
@@ -685,7 +685,7 @@ PivotChart1.EnableAntiAliasing = True
 
 ![](Chart-Types_images/fastLineBitmap_antiAlaisingEnabled.png)
 
-### Fast scatter bitmap
+### Fast scatter bitmap chart
 
 The fast scatter bitmap chart is used to display a large set of scatter points. The following code snippet shows how to select a fast scatter bitmap chart:
 
@@ -749,7 +749,7 @@ PivotChart1.ScatterHeight = 7
 
 ![](Chart-Types_images/fastScatterBitmap_customScatterSize.png)
 
-### Fast stacking column bitmap
+### Fast stacking column bitmap chart
 
 The fast stacking column charts are similar to stacking column charts but it loads faster and provides better performance comparatively.
 
@@ -780,7 +780,7 @@ PivotChart1.ChartType = PivotChartType.FastStackingColumnBitmap
 
 ![](Chart-Types_images/fastStackingColumnBitmap.png)
 
-### Fast step line bitmap
+### Fast step line bitmap chart
 
 The fast step line charts are the high performance version of step line charts.
 
