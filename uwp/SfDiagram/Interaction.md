@@ -41,6 +41,18 @@ Multiple selected elements are visually represented as shown.
 
 ![](Interaction_images/Interaction_img5.jpeg)
 
+#### Selection Indicator Style
+
+Multiple Selection will show the preview for the selected Items. We have provided customization option for the appearance of the Preview.
+
+| Style | Behavior |
+| --|--|
+| NodeSelectionIndicatorStyle | Defines the customization option for Selection Preview for the Node. |
+| ConnectorSelectionIndicatorStyle | Defines the customization option for Selection Preview for the Connector.|
+| FirstSelectionIndicatorStyle | Defines the customization option for selection preview of first selected item.|
+
+![](Interaction_images/Interaction_img13.png)
+
 ### Select/Unselect the elements programmatically
 
 The IsSelected Property is used to select/unselect the elements at runtime.
@@ -113,6 +125,40 @@ Source and target points of the selected Connectors are represented with two han
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
 ![](Interaction_images/Interaction_img12.jpeg)
+
+## Interaction on thumb
+
+DiagramThumb is used to allow interaction with Diagram elements. We have provided virtual method to customize the thumb interaction. This method will be invoked if any diagram thumb is involved in interaction.
+
+We have provided `ThumbInteractionTool` virtual method in SfDiagram. Argument of this method is type of `InteractionToolArgs`.
+
+Following table describes the details of the properties for `InteractionToolArgs` 
+
+| Property | Description |
+|---|---|
+| Thumbs | To identify the type of the thumb. |
+| ThumbCorners | To identify the corner of the thumb. |
+| DragConstraints | To customize the interaction of the thumb. |
+ 
+Following code illustrates how to customize the thumb interaction using `ThumbInteractionTool` virtual method.
+
+{% highlight C# %}
+
+//Override the ThumbInteractionTool method
+protected override void ThumbInteractionTool(InteractionToolArgs args)
+{
+    if(args.Thumbs==Thumbs.Resizer)
+    {
+           if(args.ThumbCorners==ThumbCorners.BottomRight)
+           {
+           
+               //Here, Aspect Ratio of the Node is customized based on the Thumb Type.
+               args.DragConstraints = DragConstraints.AspectRatio;
+           }
+    }
+} 
+
+{% endhighlight %}
 
 ## Drag and Drop Nodes over other elements
 

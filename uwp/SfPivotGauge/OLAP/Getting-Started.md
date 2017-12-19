@@ -86,7 +86,7 @@ Then initialize the SfPivotGauge control inside the Grid by using the specified 
 
 {% endhighlight %}
 
-## Adding Control through code-behind
+## Adding Control through Code-Behind
 
 Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
 
