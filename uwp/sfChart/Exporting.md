@@ -11,7 +11,7 @@ documentation: ug
 Chart can be exported into the following types of image formats:
 
 * JPG or JPEG
-* JPG-XR
+* JPEG-XR
 * GIF
 * TIFF
 * PNG
