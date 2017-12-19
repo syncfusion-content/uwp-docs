@@ -29,11 +29,15 @@ Now select Toolbox options from View menu and it will appear inside the VisualSt
 
 Finally name the added SfPivotGauge control as “PivotGauge1” in MainPage.xaml to refer it in code-behind as follows:
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <PivotGauge:SfPivotGauge x:Name="PivotGauge1"/>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Adding Control through XAML
 
@@ -59,13 +63,19 @@ Right click on **References** and select Add Reference > Universal Windows > Ext
 
 Now add the following namespace in MainPage.xaml file.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGauge"
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Then initialize the SfPivotGauge control inside the Gauge by using the specified namespace and name the control as “PivotGauge1”.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -79,14 +89,16 @@ Then initialize the SfPivotGauge control inside the Gauge by using the specified
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGauge"
     mc:Ignorable="d">
 
-    <Gauge Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <syncfusion:SfPivotGauge x:Name="PivotGauge1"/>
-    </Gauge>
+    </Grid>
 </Page>
 
 {% endhighlight %}
 
-## Adding Control through code-behind
+{% endtabs %}
+
+## Adding Control through Code-Behind
 
 Open Visual Studio IDE and navigating to *File > New > Project > Universal > Blank APP(Universal Windows)* under Windows option inside the Visual C# Templates to create a new UWP application.
 
@@ -110,6 +122,8 @@ Right click on **References** and select Add Reference > Universal Windows > Ext
 
 Now open the MainPage.xaml file, and include name for the Gauge as “Root_Gauge” to refer it in code-behind.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <Page
@@ -121,13 +135,17 @@ Now open the MainPage.xaml file, and include name for the Gauge as “Root_Gauge
     x:Class="SfPivotGaugeDemo.MainPage"
     mc:Ignorable="d">
 
-    <Gauge Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="Root_Grid">
-    </Gauge>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="Root_Grid">
+    </Grid>
 </Page>
 
 {% endhighlight %}
 
+{% endtabs %}
+
 Next add the namespace - "Syncfusion.UI.Xaml.PivotGauge" in MainPage.xaml.cs file. Then initialize the SfPivotGauge control and assign a name for it as "PivotGauge1". Then add the control in parent Gauge as follows.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -153,13 +171,38 @@ namespace SfPivotGaugeDemo
 
 {% endhighlight %}
 
-## Adding Relational data source to SfPivotGauge Control
+{% highlight vb %}
+
+Imports Windows.UI.Xaml.Controls
+Imports Syncfusion.UI.Xaml.PivotGauge
+
+Namespace SfPivotGaugeDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Public Sub New()
+            Me.InitializeComponent()
+            Dim pivotGauge As SfPivotGauge = New SfPivotGauge()
+            pivotGauge.Name = "PivotGauge1"
+            Root_Grid.Children.Add(pivotGauge)
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Adding Relational Data Source to SfPivotGauge
 
 Right-click on the project in the solution explorer and select *Add -> New Folder* and then name the folder as **"ViewModel"**.
 
 Then create a new class file by right-click on the project in the solution explorer and select *Add -> New Item -> Class*. In "Add New Item" window, provide the name of the class as ProductSales.cs and click **OK**.
 
 The ItemSource for the SfPivotGauge control will be initialized in this file. Please refer the below code sample.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -172,13 +215,13 @@ public class ProductSales
 
     public static ProductSalesCollection GetSalesData()
     {
-        /// Geography
+        // Geography
         string[] countries = new string[] { "Germany", "Canada", "United States"};
 
-        /// Time
+        // Time
         string[] dates = new string[] { "FY 2008", "FY 2009", "FY 2010", "FY 2012" };
 
-        /// Products
+        // Products
         string[] products = new string[] { "Bike", "Car" };
         Random r = new Random(123345);
 
@@ -203,11 +246,54 @@ public class ProductSales
 
 {% endhighlight %}
 
+{% highlight vb %}
+
+Public Class ProductSales
+
+    Public Property Product As String
+
+    Public Property Date As String
+
+    Public Property Country As String
+
+    Public Property Amount As Double
+
+    Public Shared Function GetSalesData() As ProductSalesCollection
+        Dim countries As String() = New String() {"Germany", "Canada", "United States"}
+        Dim dates As String() = New String() {"FY 2008", "FY 2009", "FY 2010", "FY 2012"}
+        Dim products As String() = New String() {"Bike", "Car"}
+        Dim r As Random = New Random(123345)
+        Dim numberOfRecords As Integer = 1000
+        Dim listOfProductSales As ProductSalesCollection = New ProductSalesCollection()
+        For i As Integer = 0 To numberOfRecords - 1
+            Dim sales As ProductSales = New ProductSales()
+            sales.Country = countries(r.[Next](1, countries.GetLength(0)))
+            sales.Amount =(3000 * r.[Next](1, 12))
+            sales.Date = dates(r.[Next](r.[Next](dates.GetLength(0) + 1)))
+            sales.Product = products(r.[Next](r.[Next](products.GetLength(0) + 1)))
+            listOfProductSales.Add(sales)
+        Next
+
+        Return listOfProductSales
+    End Function
+
+    Public Class ProductSalesCollection
+        Inherits List(Of ProductSales)
+
+    End Class
+End Class
+
+{% endhighlight %}
+
+{% endtabs %}
+
 Above mentioned GetSalesData method is used to get the collection that needs to be populated in the SfPivotGauge control. Now we need to bind the collection to the SfPivotGauge control as its ItemSource. It can be done through XAML or code-behind.
 
-### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotGauge through XAML
+### Binding ItemSource, Defining PivotItems and PivotComputations to SfPivotGauge through XAML
 
 If you need to initialize the ItemSource through XAML, DataContext is used. Please refer the following code.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -217,36 +303,40 @@ If you need to initialize the ItemSource through XAML, DataContext is used. Plea
     xmlns:local="using:SfPivotGaugeDemo"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:pivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGauge"
     xmlns:pivots="using:Syncfusion.PivotAnalysis.UWP"
     xmlns:viewModel="using:SfPivotGaugeDemo.ViewModel"
     x:Class="SfPivotGaugeDemo.MainPage"
     mc:Ignorable="d">
 
-    <Gauge Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Gauge.DataContext>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
              <viewModel:ProductSales/>
-        </Gauge.DataContext>
+        </Grid.DataContext>
         <syncfusion:SfPivotGauge x:Name="PivotGauge1" ItemSource="{Binding ProductSalesData}">
-         <pivotGauge:SfPivotGauge.PivotRows>
-                    <pivots:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
-                    <pivots:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
-                </pivotGauge:SfPivotGauge.PivotRows>
-                <pivotGauge:SfPivotGauge.PivotColumns>
-                    <pivots:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
-                </pivotGauge:SfPivotGauge.PivotColumns>
-                <pivotGauge:SfPivotGauge.PivotCalculations>
-                    <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
-                </pivotGauge:SfPivotGauge.PivotCalculations>
-         </pivotGauge:SfPivotGauge>
-    </Gauge>
+            <syncfusion:SfPivotGauge.PivotRows>
+                <pivots:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
+                <pivots:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
+            </syncfusion:SfPivotGauge.PivotRows>
+            <syncfusion:SfPivotGauge.PivotColumns>
+                <pivots:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
+            </syncfusion:SfPivotGauge.PivotColumns>
+            <syncfusion:SfPivotGauge.PivotCalculations>
+                <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+            </syncfusion:SfPivotGauge.PivotCalculations>
+         </syncfusion:SfPivotGauge>
+    </Grid>
 </Page>
 
 {% endhighlight %}
 
-### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotGauge through code-behind
+{% endtabs %}
+
+### Binding ItemSource, Defining PivotItems and PivotComputations to SfPivotGauge through Code-Behind
 
 If you need to initialize the ItemSource through code-behind, please refer the below code snippet.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -267,21 +357,50 @@ namespace SfPivotGaugeDemo
             SfPivotGauge pivotGauge = new SfPivotGauge();
             pivotGauge.Name = "PivotGauge1";
             Root_Grid.Children.Add(pivotGauge);
-            pivotGauge.ItemSource = ProductSales.GetSalesData()
+            pivotGauge.ItemSource = ProductSales.GetSalesData();
             // Adding PivotRows to the Control
-            this.pivotGauge.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
-            this.pivotGauge.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Date", TotalHeader = "Total" });
+            pivotGauge.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
+            pivotGauge.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Date", TotalHeader = "Total" });
 
             // Adding PivotColumns to the Control
-            this.pivotGauge.PivotColumns.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
+            pivotGauge.PivotColumns.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
 
             // Adding PivotCalculations to the Control
-            this.pivotGauge.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum });
+            pivotGauge.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum });
         }
     }
 }
 
 {% endhighlight %}
+
+{% highlight vb %}
+
+Imports Windows.UI.Xaml.Controls
+Imports Syncfusion.UI.Xaml.PivotGauge
+Imports Syncfusion.PivotAnalysis.UWP
+
+Namespace SfPivotGaugeDemo
+
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
+
+        Public Sub New()
+            Me.InitializeComponent()
+            Dim pivotGauge As SfPivotGauge = New SfPivotGauge()
+            pivotGauge.Name = "PivotGauge1"
+            Root_Grid.Children.Add(pivotGauge)
+            pivotGauge.ItemSource = ProductSales.GetSalesData()
+            pivotGauge.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+            pivotGauge.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Date", .TotalHeader = "Total"})
+            pivotGauge.PivotColumns.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+            pivotGauge.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format = "C", .SummaryType = SummaryType.DoubleTotalSum})
+        End Sub
+    End Class
+End Namespace
+
+{% endhighlight %}
+
+{% endtabs %}
 
 **Run** the application, the following output will be generated.
 

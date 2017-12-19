@@ -40,4 +40,4 @@ For example, you will have to give name as **fr.resw** for French culture.
 
 ![](Localization_images/FinalOutput.png)
 
-You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/SFGANT~11958419239.ZIP)
+You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization-918242921.zip)
