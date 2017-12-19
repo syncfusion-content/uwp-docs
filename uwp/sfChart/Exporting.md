@@ -33,7 +33,7 @@ Chart.Save();
 
 ### Save(string fileName, StorageFolder folderLocation)
 
-This method will export the chart as image to the specified location, and the below code example illustrates the usage of this method,
+This method will export the chart as image to the specified location. The following code example illustrates the usage of this method.
 
 {% highlight c# %}
 
