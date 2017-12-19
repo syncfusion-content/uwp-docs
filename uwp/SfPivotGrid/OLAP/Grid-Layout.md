@@ -9,18 +9,18 @@ documentation: ug
 
 # Grid Layout
 
-The position of summary cells in SfPivotGrid can be customized with the help of `Layout` property. It can be either positioned at the top or bottom of each parent member.
+The position of summary cells in the SfPivotGrid can be customized with the help of `Layout` property. It can be positioned at the top or bottom of each parent member.
 
-The following are the five different kinds of layouts supported by SfPivotGrid.
+The following are the five different kinds of layouts supported by the SfPivotGrid:
 
 * Normal Layout
 * Excel Like Layout
 * Normal Top Summary Layout
 * No Summaries Layout
 
-**Normal Layout**
+**Normal layout**
 
-'Normal' layout is the default layout of SfPivotGrid in which the summary cells are positioned at the bottom of the value cells. Please refer the below code snippet to customize the grid layout.
+'Normal' layout is the default layout of SfPivotGrid in which the summary cells are positioned at the bottom of value cells. Refer the below code snippet to customize the grid layout:
 
 {% tabs %}
 
@@ -48,7 +48,7 @@ Me.PivotGrid1.Layout = GridLayout.Normal
 
 ![](Grid-Layouts_images/Grid-Layouts_img1.png)
 
-**Excel Like Layout**
+**Excel like layout**
 
 In the 'Excel-Like' layout, the summary cells are positioned at the bottom alone and the child members appear below the parent member with some indent space.
 
@@ -78,7 +78,7 @@ Me.PivotGrid1.Layout = GridLayout.ExcelLikeLayout
 
 ![](Grid-Layouts_images/Grid-Layouts_img2.png)
 
-**Normal Top Summary Layout**
+**Normal top summary layout**
 
 In 'Normal Top Summary' layout, the summary cells are positioned at the top of each parent member and the child members appear adjacent to it.
 
@@ -108,9 +108,9 @@ Me.PivotGrid1.Layout = GridLayout.NormalTopSummary
 
 ![](Grid-Layouts_images/Grid-Layouts_img3.png)
 
-**No Summaries Layout**
+**No summaries layout**
 
-In 'No Summaries' layout, the summary cells are hidden and the child members appear adjacent to the parent member.
+In 'No Summaries' layout, the summary cells can be hidden and the child members can be appeared adjacent to the parent member.
 
 {% tabs %}
 
@@ -138,6 +138,6 @@ Me.PivotGrid1.Layout = GridLayout.NoSummaries
 
 ![](Grid-Layouts_images/Grid-Layouts_img4.png)
 
-A demo sample is available at the following location.
+A demo sample is available at the following location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\GridLayout.xaml
