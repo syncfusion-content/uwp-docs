@@ -51,7 +51,7 @@ Chart.Save("Chart", null);
 
 ### Save(IRandomAccessStream stream, Guid bitmapEncoderID)
 
-This method allows to export the chart into a stream and it is described in below code snippet,
+This method allows you to export the chart into a stream. It is described in following code example.
 
 {% highlight c# %}
 
