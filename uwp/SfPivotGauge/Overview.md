@@ -9,16 +9,16 @@ documentation: ug
 
 # Overview
 
-The SfPivotGauge control for OLAP is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. It lets you present values against goals in a very intuitive manner. For relational data, PivotGauge lets you visualize the summary value using the pointer over a circular scale.
+The SfPivotGauge control for OLAP is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. It allows you to present values against goals in a very intuitive manner. For relational data, PivotGauge allows to visualize the summary value using the pointer over a circular scale.
 
-## Key Features
+## Key features
 
 The key features of **SfPivotGauge** control are:
 
-* **Data Source**: Supports OLAP data binding with XML/A data sources and Relational data sources.
+* **Data source**: Supports OLAP data binding with XML/A data sources and relational data sources.
 * **Tooltip**: Displays the value and goal information in the tooltip.
-* **Multiple gauges and Layouts**: Support to customize the layout while rendering multiple controls.
-* **Indicators**: Displays the active/inactive state of PivotGauge.
-* **Ranges**: Highlighting the range of values in scale.
+* **Multiple gauges and layouts**: Supports to customize the layout while rendering multiple controls.
+* **Indicators**: Displays the active/inactive state of the PivotGauge.
+* **Ranges**: Highlights the range of values in scale.
 * **Pointers**: Points the actual value and goal information.
-* **Header labels**: Support to show or hide header labels and indicators.
+* **Header labels**: Supports to show or hide header labels and indicators.
