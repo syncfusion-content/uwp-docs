@@ -9,15 +9,15 @@ documentation: ug
 
 # Exporting
 
-SfPivotGrid can be exported to Excel, Word, PDF and CSV file formats. By default, the Grid style to export is obtained from ExportingGridStyleInfo instance. In-order to perform exporting operation, refer the following assembly in the application.
+SfPivotGrid can be exported to Excel, Word, PDF, and CSV file formats. By default, the grid style for export is obtained from ExportingGridStyleInfo instance. To perform exporting operation, refer the following assembly in the application.
 
 * Syncfusion.SfPivotGridConverter.UWP
 
 ## Export to Excel
 
-To export the SfPivotGrid contents to Excel, include the namespace **Syncfusion.UI.Xaml.PivotGridConverter** in the code-behind file. Then create an instance of `ExportPivotGridToExcel` object to access the `ExportToDocument` method. `FileSavePicker` option can be used to save the exported file in the preferred location.
+To export the SfPivotGrid contents to Excel, include the namespace **Syncfusion.UI.Xaml.PivotGridConverter** in the code-behind file. Then create an instance of `ExportPivotGridToExcel` object to access the `ExportToDocument` method. `FileSavePicker` can be used to save the exported file in the preferred location.
 
-Please refer the below code snippet to export the SfPivotGrid to Excel document.
+Please refer the below code snippet to export the SfPivotGrid to Microsoft Excel:
 
 {% tabs %}
 
@@ -44,9 +44,9 @@ export.ExportToDocument("Sample")
 
 ## Export to Word
 
-To export the SfPivotGrid contents to Word, include the namespace **Syncfusion.UI.Xaml.PivotGridConverter** in the code-behind file. Then create an instance of `ExportPivotGridToWord` object to access the `ExportToDocument` method. `FileSavePicker` option can be used to save the exported file in the preferred location.
+To export the SfPivotGrid contents to Word, include the namespace **Syncfusion.UI.Xaml.PivotGridConverter** in the code-behind file. Then create an instance of `ExportPivotGridToWord` object to access the `ExportToDocument` method. `FileSavePicker` can be used to save the exported file in the preferred location.
 
-Please refer the below code snippet to export the SfPivotGrid to Word document.
+Please refer the below code snippet to export the SfPivotGrid to Word document:
 
 {% tabs %}
 
@@ -74,9 +74,9 @@ export.ExportToDocument("Sample")
 
 ## Export to PDF
 
-To export the SfPivotGrid contents to PDF, include the namespace **Syncfusion.UI.Xaml.PivotGridConverter** in the code-behind file. Then create an instance of `ExportPivotGridToPdf` object to access the `ExportToDocument` method. `FileSavePicker` option can be used to save the exported file in the preferred location.
+To export the SfPivotGrid contents to PDF, include the namespace **Syncfusion.UI.Xaml.PivotGridConverter** in the code-behind file. Then create an instance of `ExportPivotGridToPdf` object to access the `ExportToDocument` method. `FileSavePicker` can be used to save the exported file in the preferred location.
 
-Please refer the below code snippet to export the SfPivotGrid to Word document.
+Please refer the below code snippet to export the SfPivotGrid to Word document:
 
 {% tabs %}
 
@@ -104,9 +104,9 @@ export.ExportToDocument("Sample")
 
 ## Export to CSV
 
-To export the SfPivotGrid contents to CSV, include the namespace **Syncfusion.UI.Xaml.PivotGridConverter** in the code-behind file. Then create an instance of `ExportPivotGridToCsv` object in-order to access the `ExportToDocument` method. `FileSavePicker` option can be used to save the exported file in the preferred location.
+To export the SfPivotGrid contents to CSV, include the namespace **Syncfusion.UI.Xaml.PivotGridConverter** in the code-behind file. Then create an instance of `ExportPivotGridToCsv` object to access the `ExportToDocument` method. `FileSavePicker` can be used to save the exported file in the preferred location.
 
-Please refer the below code snippet to export the SfPivotGrid to CSV document.
+Please refer the below code snippet to export the SfPivotGrid to CSV document:
 
 {% tabs %}
 
@@ -132,8 +132,8 @@ export.ExportToDocument("Sample")
 
 ![](Exporting_images/Export-csv-image.png)
 
-N> You can use a *Button* instance to the page and then specify the required code snippet for exporting the SfPivotChart in the `Click` event handler method.
+N> You can use a *Button* instance to the page and then specify the required code snippet to export the SfPivotChart in the `Click` event handler method.
 
-A demo sample is available at the following location.
+A demo sample is available at the following location:
 
 {system drive}:\Users\<User_Name>\AppData\Local\Syncfusion\EssentialStudio\<Version_Number>\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\Exporting.xaml

@@ -13,9 +13,9 @@ SfPivotChart provides support for watermark which is used to add text or images 
 
 ## Text watermark
 
-You can add a text as watermark in chart background by using the `Content` property of `PivotChartWatermark` instance.
+You can add a text as watermark in the chart background by using the `Content` property of `PivotChartWatermark` instance.
 
-The following code snippet explains how to set your custom text as watermark.
+The following code snippet explains how to set the custom text as watermark:
 
 {% tabs %}
 
@@ -63,7 +63,7 @@ PivotChart1.Watermark = watermark
 
 ## Image watermark
 
-You can also set images as Watermark as in below code snippet.
+You can also set images as watermark like shown in the below code snippet:
 
 {% tabs %}
 

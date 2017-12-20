@@ -2,7 +2,7 @@
 layout: post
 title: Overview of SfPivotClient control for UWP
 description: Overview of SfPivotClient control for UWP
-platform: uwp
+platform: UWP
 control: SfPivotClient
 documentation: ug
 ---

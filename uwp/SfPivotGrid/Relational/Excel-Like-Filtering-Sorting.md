@@ -9,9 +9,9 @@ documentation: ug
 
 # Excel-Like Filtering and Sorting
 
-SfPivotGrid control provides support for excel-like filtering and sorting applied to a PivotItem. We can enable or disable the excel-like sorting and filtering support by setting the property of `AllowMultiFunctionalSortFilter` in SfPivotGrid.
+SfPivotGrid control provides support for excel-like filtering and sorting applied to a PivotItem. You can enable or disable the excel-like sorting and filtering support by setting the property of `AllowMultiFunctionalSortFilter` in the SfPivotGrid.
 
-Please refer the below code snippet to enable excel-like filtering and sorting.
+Please refer the below code snippet to enable excel-like filtering and sorting:
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ Me.PivotGrid1.AllowMultiFunctionalSortFilter = True
 
 ![](Excel-Like-Filtering-Sorting_images/Excel-like-Filter-Popup.png)
 
-## Multi-Functional Features
+## Multi-functional features
 
 **Sort A to Z**
 
@@ -47,9 +47,9 @@ It can be used to sort the corresponding PivotItem in the *Ascending order*.
 
 It can be used to sort the corresponding PivotItem in the *Descending order*.
 
-**More Sort Options**
+**More sort options**
 
-It is used to sort the corresponding PivotItem based upon the grand total of PivotCalculation field.
+It is used to sort the corresponding PivotItem based on the grand total of the PivotCalculation field.
 
 ![](Excel-Like-Filtering-Sorting_images/More-sort-options.png)
 
@@ -57,9 +57,9 @@ It is used to sort the corresponding PivotItem based upon the grand total of Piv
 
 It is used to clear all the filter changes applied to the corresponding PivotItem and could bring back the SfPivotGrid to normal state.
 
-**Label Filters**
+**Label filters**
 
-It is used to filter SfPivotGrid based on the labels of PivotItem field and it can be achieved by using various options which are listed below.
+It is used to filter SfPivotGrid based on the labels of PivotItem field and it can be achieved by using various options which are listed below:
 
 * Equals
 * Does Not Equal
@@ -78,15 +78,15 @@ It is used to filter SfPivotGrid based on the labels of PivotItem field and it c
 
 ![](Excel-Like-Filtering-Sorting_images/Label-filter-popup.png)
 
-_Label Filter popup for filtering "Canada" in Country_
+_Label Filter pop-up for filtering "Canada" in Country_
 
 ![](Excel-Like-Filtering-Sorting_images/Filtered-PivotGrid-by-using-label-filter.png)
 
 _SfPivotGrid applied with Label Filter_
 
-**Value Filters**
+**Value filters**
 
-It is used to filter SfPivotGrid based on the values of PivotItem field and it can be achieved by using various options which are listed below.
+It is used to filter the SfPivotGrid based on the values of PivotItem field and it can be achieved by using various options which are listed below:
 
 * Equals
 * Does Not Equal
@@ -100,12 +100,12 @@ It is used to filter SfPivotGrid based on the values of PivotItem field and it c
 
 ![](Excel-Like-Filtering-Sorting_images/Value-filter-popup.png)
 
-_Value Filter popup for filtering "Canada" using its Quantity value "409"_
+_Value Filter pop-up for filtering "Canada" using its Quantity value "409"_
 
 ![](Excel-Like-Filtering-Sorting_images/Filtered-PivotGrid-by-using-value-filter.png)
 
 _SfPivotGrid applied with Value Filter_
 
-A demo sample is available at the following location.
+A demo sample is available at the following location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\SummaryDisplay.xaml

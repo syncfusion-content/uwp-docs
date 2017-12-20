@@ -9,7 +9,7 @@ documentation: ug
 
 # State Persistence
 
-SfPivotGrid provides support to maintain the collapsed and expanded state when the corresponding pivot item gets changed. This can be achieved by enabling the property of `StatePersistenceEnabled` in SfPivotGrid control. Please refer the below code snippet to enable the state persistence.
+SfPivotGrid provides support to maintain the collapsed and expanded state of corresponding pivot item when it gets changed. This can be achieved by enabling the property of `StatePersistenceEnabled` in the SfPivotGrid control. Please refer the below code snippet to enable the state persistence:
 
 {% tabs %}
 
