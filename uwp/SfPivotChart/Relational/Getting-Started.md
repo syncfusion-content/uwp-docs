@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Relational Getting Started | SfPivotChart | UWP | Syncfusion
 description: Getting Started for SfPivotChart with relational data.

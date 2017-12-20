@@ -9,11 +9,11 @@ documentation: ug
 
 # Display Options
 
-SfPivotGrid control provides support for PivotComputationInfo to display calculation values in preferred areas of SfPivotGrid with the help of `DisplayOption` property. The following are the different kinds of display options available in SfPivotGrid.
+SfPivotGrid control provides support for PivotComputationInfo to display calculation values in preferred areas of the SfPivotGrid with the help of `DisplayOption` property. The following are the different kinds of display options available in the SfPivotGrid.
 
-**All Option**
+**All option**
 
-This option displays all the calculation values in all columns of SfPivotGrid. Please refer below the code snippet.
+This option displays all the calculation values in all columns of the SfPivotGrid. Please refer the below code snippet:
 
 {% tabs %}
 
@@ -44,9 +44,9 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.All
 
 ![](Display-Options_images/PivotComputationinfo-using-All-option.png)
 
-**Summary Option**
+**Summary option**
 
-Summary option is used to display only the calculation values in summary columns of SfPivotGrid. Please refer below the code snippet.
+Summary option is used to display only the calculation values in summary columns of the SfPivotGrid. Please refer the below code snippet:
 
 {% tabs %}
 
@@ -77,9 +77,9 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.Summary
 
 ![](Display-Options_images/PivotComputationinfo-using-summary-option.png)
 
-**Calculations Option**
+**Calculations option**
 
-Calculation option displays only the calculation values in value columns other than summary and grand total of SfPivotGrid. Please refer below the code snippet.
+Calculation option displays only the calculation values in value columns other than summary and grand total of the SfPivotGrid. Please refer the below code snippet:
 
 {% tabs %}
 
@@ -110,9 +110,9 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.Calculations
 
 ![](Display-Options_images/PivotComputationinfo-using-calculations-option.png)
 
-**GrandTotal Option**
+**GrandTotal option**
 
-GrandTotal option is used to display only the calculation values in grand total columns of SfPivotGrid. Please refer below the code snippet.
+GrandTotal option is used to display only the calculation values in grand total columns of the SfPivotGrid. Please refer the below code snippet.
 
 {% tabs %}
 
@@ -143,9 +143,9 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.GrandTotal
 
 ![](Display-Options_images/PivotComputationinfo-using-Grand-Totals-option.png)
 
-**None Option**
+**None option**
 
-This option hides all the calculation values in all columns of SfPivotGrid. Please refer below the code snippet.
+This option hides all the calculation values in all columns of the SfPivotGrid. Please refer the below code snippet:
 
 {% tabs %}
 
@@ -176,6 +176,6 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.None
 
 ![](Display-Options_images/PivotComputationinfo-using-none-option.png)
 
-A demo sample is available at the following location.
+A demo sample is available at the following location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\SummaryDisplay.xaml

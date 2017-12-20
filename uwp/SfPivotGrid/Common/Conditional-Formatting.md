@@ -9,11 +9,11 @@ documentation: ug
 
 # Conditional Formatting
 
-SfPivotGrid supports conditional formatting which allows you to format the grid cells based on certain conditions. Conditional formats can be specified with the help of `ConditionalFormats` property through which required number of formatters of type **PivotGridDataConditionalFormat** can be added to SfPivotGrid.
+SfPivotGrid supports conditional formatting which allows you to format the grid cells based on certain conditions. Conditional formats can be specified with the help of `ConditionalFormats` property through which required number of formatters of **PivotGridDataConditionalFormat** type can be added to the SfPivotGrid.
 
-Using the `Conditions` property of PivotGridDataConditionalFormat instance, you can specify the filter criteria for the cells and the style to be applied for the filtered cells can be specified with the help of `CellStyle` property. Once these specifications are defined, the respective styles are applied to only those cells that satisfy the specified condition.
+Using the `Conditions` property of PivotGridDataConditionalFormat instance, you can specify the filter criteria for the cells and the style to be applied for the filtered cells with the help of `CellStyle` property. After defining these specifications, the respective styles are applied to only those cells that satisfy the specified condition.
 
-The following code snippet illustrates how to add conditional formats in SfPivotGrid.
+The following code snippet illustrates how to add conditional formats in the SfPivotGrid:
 
 {% tabs %}
 
@@ -89,6 +89,6 @@ Me.PivotGrid1.ConditionalFormats.Add(conditionalFormat)
 
 ![](Conditional-Formatting_images/conditional-formatting.png)
 
-A demo sample is available at the following location.
+A demo sample is available at the following location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\ConditionalFormat.xaml
