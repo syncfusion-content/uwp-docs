@@ -21,7 +21,7 @@ Cube selector allows you to select any one of the cube from cubes available in t
 
 ## Cube dimension browser
 
-Cube dimension browser is a tree-view like structure that organizes the cube elements such as dimensions, hierarchies, measures, etc., from the selected cube into independent, and logical groups.
+Cube dimension browser is a tree-view like structure that organizes the cube elements such as dimensions, hierarchies, measures, etc., from the selected cube into independent and logical groups.
 
 ### Node types
 
@@ -29,9 +29,9 @@ Cube dimension browser is a tree-view like structure that organizes the cube ele
 * Measure - Quantity available for analysis.
 * Dimension - A name given to the parts of the cube that categorize the data.
 * Attribute hierarchy - Level of attributes down the hierarchy.
-* User-Defined Hierarchy - Members of a dimension in a hierarchical structure.
+* User-defined hierarchy - Members of a dimension in a hierarchical structure.
 * Level - Denotes a specific level in the category.
-* Named Set - A collection of tuples and members, which can be defined and saved as a part of the cube definition.
+* Named set - A collection of tuples and members, which can be defined and saved as a part of the cube definition.
 
 **Attribute hierarchy**
 
@@ -70,7 +70,7 @@ Axis element builder allows you to build elements in the axes of the SfPivotClie
 
 ### Categorical axis (columns)
 
-The categorical axis defines one or more elements that are displayed in columns of the SfPivotGrid and as labels of y-axis in the SfPivotChart. If more than one dimension is present on the categorical axis, then the SfPivotGrid and the SfPivotChart will stack each dimension based on order that they appear on the categorical axis.
+The categorical axis defines one or more elements that are displayed in columns of the SfPivotGrid and as labels of y-axis in the SfPivotChart. If more than one dimension is present on the categorical axis, then the SfPivotGrid and the SfPivotChart will stack each dimension based on the order that they appear on the categorical axis.
 
 ### Series axis (rows)
 
@@ -122,7 +122,7 @@ The below screenshot illustrates the element being rearranged in the axis elemen
 
 ### Measure editor
 
-Measure editor is a dialog that displays the collection of measures in the current report. It can be opened by clicking the *filter icon* present over the right corner of the measure node in the axis element builder.
+Measure editor is a dialog that displays the collection of measures in the current report. It can be opened by clicking the *filter icon* that is present over the right corner of the measure node in the axis element builder.
 
 ![](PivotClient-Components_images/measureEditor.png)
 
@@ -183,9 +183,9 @@ Save report option saves the report in the local system. The Save As dialog open
 
 ![](PivotClient-Components_images/saveAsReport.png)
 
-**SaveAs report**
+**Save As report**
 
-SaveAs report option saves the report in the local system. The Save As dialog opens for prompting a name with the report, which needs to be stored. It stores the report collection by more than one name in a database.
+Save As report option saves the report in the local system. The Save As dialog opens for prompting a name with the report, which needs to be stored. It stores the report collection by more than one name in a database.
 
 **Load report**
 

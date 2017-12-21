@@ -9,12 +9,12 @@ documentation: ug
 
 # Toggle Axis
 
-Toggle axis support swaps all the axis elements between column and row axes, which in turn refreshes the view of SfPivotChart and SfPivotGrid. This option is available in the toolbar of SfPivotClient.
+Toggle axis support swaps all the axis elements between column and row axes, which in turn refreshes the view of the SfPivotChart and SfPivotGrid. This option is available in the toolbar of the SfPivotClient.
 
-For example, Product and Date elements are present in the row section and Country element is present in the column section.
+For example, product and date elements are present in the row section and country element is present in the column section.
 
 ![](Toggle-Axis_images/Toggle-Pivot_image1.png)
 
-After clicking the *Toggle Pivot* button ![](Toggle-Axis_images/Toggle-pivot-icon.png) in the client toolbar, Product and Date elements are moved to column section and Country element is moved to row section. Based on the Toggle Pivot selection, SfPivotGrid and SfPivotChart will display the resultant data.
+After clicking the *Toggle Pivot* ![](Toggle-Axis_images/Toggle-pivot-icon.png) in the client toolbar, product and date elements are moved to the column section and country element is moved to the row section. Based on the toggle pivot selection, the SfPivotGrid and the SfPivotChart will display the resultant data.
 
 ![](Toggle-Axis_images/Toggle-Pivot_image2.png)
