@@ -41,7 +41,7 @@ PivotClient1.EnablePaging = True
 
 {% endtabs %}
 
-N> Paging can be enabled or disabled at run time by using the *Pivot Pager* ![](Paging_images/pagerButton.ico) in the Pivot Client's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
+N> Paging can be enabled or disabled at run time by using the *Pivot Pager* icon ![](Paging_images/pagerButton.ico) in the Pivot Client's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
 
 ![](Paging_images/pagerEnabled_UI.png)
 
