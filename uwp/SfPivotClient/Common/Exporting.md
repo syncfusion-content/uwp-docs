@@ -20,7 +20,7 @@ By clicking the respective icons in the PivotGrid's toolbar, the user can export
 | ![](Exporting_images/pdfIcon.png) | Export to PDF | Exports the PivotGrid to a PDF document |
 | ![](Exporting_images/csvIcon.png) | Export to CSV | Exports the PivotGrid to a CSV document |
 
-The following screenshots illustrate the exported PivotGrid.
+The following screenshots illustrate the exported PivotGrid:
 
 ![](Exporting_images/excelExportedGrid.png)
 
@@ -40,7 +40,7 @@ By clicking the respective icons in the PivotChart's toolbar, the user can expor
 | ![](Exporting_images/wordIcon.png) | Export to Word | Exports the PivotChart to a Word document |
 | ![](Exporting_images/pdfIcon.png) | Export to PDF | Exports the PivotChart to a PDF document |
 
-The following screenshots illustrate the exported PivotChart.
+The following screenshots illustrate the exported PivotChart:
 
 ![](Exporting_images/imageExportedChart.png)
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Advanced Filtering
 
-SfPivotClient provides advanced filtering support through which the members can be filtered based on value and label fields and it can be achieved with the help of `EnableAdvancedFilter` property. The following code snippet illustrates how to enable **Advanced Filtering** in SfPivotClient.
+SfPivotClient provides advanced filtering support through which members can be filtered based on value and label fields, and it can be achieved with the help of the `EnableAdvancedFilter` property. The following code snippet illustrates how to enable **Advanced Filtering** in the SfPivotClient.
 
 {% tabs %}
 
@@ -35,9 +35,9 @@ PivotClient1.EnableAdvancedFilter = True
 
 ![](Advanced-Filtering_images/advancedFilteringEnabled.png)
 
-## Label Filtering
+## Label filtering
 
-Label filtering provides an option to filter members of the selected field purely based on their caption. The following screenshots describe how the label filtering is applied in SfPivotClient.
+Label filtering provides an option to filter members of the selected field based on their caption. The following screenshots describe how the label filtering is applied in the SfPivotClient.
 
 ![](Advanced-Filtering_images/labelFiletring_step1.png)
 
@@ -46,9 +46,9 @@ Label filtering provides an option to filter members of the selected field purel
 ![](Advanced-Filtering_images/labelFilteredClient.png)
 *SfPivotClient applied with label filter*
 
-## Value Filtering
+## Value filtering
 
-Value filtering provides an option to filter members based on the total values of the appropriate measure between the members of the level. The following screenshots describe how the value filtering is applied in SfPivotClient.
+Value filtering provides an option to filter members based on the total values of the appropriate measure between the level members. The following screenshots describe how the value filtering is applied in the SfPivotClient.
 
 ![](Advanced-Filtering_images/valueFiltering_step1.png)
 
@@ -57,6 +57,6 @@ Value filtering provides an option to filter members based on the total values o
 ![](Advanced-Filtering_images/valueFilteredClient.png)
 *SfPivotClient applied with value filter*
 
-A demo sample is available at the following location.
+A demo sample is available at the following location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotClient\PivotClient\View\AdvancedFiltering.xaml

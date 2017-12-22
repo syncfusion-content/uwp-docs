@@ -9,9 +9,9 @@ documentation: ug
 
 # Localization
 
-Localization is the key feature for providing IT solutions targeted at global users. SfPivotClient allows users to localize the control to a specific locale. SfPivotClient supports “resx” based localization.
+Localization is the key feature to provide software solutions that are targeted at global users. SfPivotClient allows users to localize the control to a specific locale. SfPivotClient supports “resx” based localization.
 
-You need to perform the following steps in-order to localize the control.
+You can use the following steps to localize the control:
 
 * Translation
 * Resource file and file name conventions
@@ -21,14 +21,14 @@ You need to perform the following steps in-order to localize the control.
 
 The first step in localization is translating the strings that can be localized to the destination locale.
 
-N> Localization key field should be same for the all locales. Do not translate the key fields.
+N> Localization key field should be same for all locales. Do not translate the key fields.
 
-## Resource File and File Name Conventions
+## Resource file and file name conventions
 
-After translating the strings, perform the following steps in the application.
+After translating the strings, perform the following steps in the application:
 
-1.Right-click the project file to create a new folder in the project by selecting Add-> New Folder and rename the folder as “Resources”.
-2.Then, right-click the **Resources** folder to create a new resource file by selecting Add -> New Item.
+1.Right-click the project file to create a new folder in the project by selecting Add > New Folder and renaming the folder as “Resources”.
+2.Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
 
 ![](Localization_images/localization_step1.png)
 
@@ -36,13 +36,13 @@ After translating the strings, perform the following steps in the application.
 
 N> The resource file name should be in the format “&lt;Culture Code&gt;.resx”.
 
-3.Then, copy and paste the translated locale to the resource file which is created in the previous step.
+3.Copy and paste the translated locale to the resource file which is created in the previous step.
 
-## Culture Specification
+## Culture specification
 
-You need to specify the CurrentUICulture in either Application_Startup method in App.xaml.cs file or constructor in MainPage.xaml.cs file.
+You need to specify the CurrentUICulture in Application_Startup method of the App.xaml.cs file or in the constructor of the MainPage.xaml.cs file.
 
-N> If you are specifying the current culture in the constructor of MainPage, then make sure that the culture is specified before calling the InitializeComponent() method.
+N> If you are specifying the current culture in the constructor of the mainPage, then ensure that the culture is specified before calling the InitializeComponent() method.
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ End Class
 
 ## RTL
 
-SfPivotClient provides RTL support to display the content from right to left direction by setting the property of `FlowDirection` property as **RightToLeft**.
+SfPivotClient provides RTL support to display the content from right to left direction by setting the `FlowDirection` property as **RightToLeft**.
 
 {% tabs %}
 
@@ -103,6 +103,6 @@ PivotClient1.FlowDirection = FlowDirection.RightToLeft
 
 ![](Localization_images/rtlApplied.png)
 
-A demo sample is available at the following location.
+A demo sample is available at the following location:
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotClient\PivotClient\View\Localization.xaml
