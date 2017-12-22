@@ -68,7 +68,7 @@ The pivot items or pivot computation items can be dragged from the pivot browser
 
 **Removing items from axis**
 
-To remove the pivot item or pivot computation item from the axis element builder, right-click the items in rows or columns, or filters, or values and select the **Remove** from the fly-out menu.
+To remove the pivot item or pivot computation item from the axis element builder, right-click the items in rows or columns, or filters, or values and select the **Remove** option from the context menu.
 
 The below screenshot illustrates how to remove an item from the axis element builder:
 
