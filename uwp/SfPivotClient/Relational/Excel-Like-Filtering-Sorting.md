@@ -9,9 +9,9 @@ documentation: ug
 
 # Excel-Like Filtering and Sorting
 
-SfPivotClient control provides support for excel-like filtering and sorting applied to a PivotItem. We can enable or disable the excel-like sorting and filtering support in SfPivotClient by setting the property of  `AllowMultiFunctionalSortFilter`.
+SfPivotClient control provides support for excel-like filtering and sorting that is applied to a PivotItem. You can enable or disable the excel-like sorting and filtering support in the SfPivotClient by setting the `AllowMultiFunctionalSortFilter` property.
 
-Please refer the below code snippet to enable excel like filtering and sorting.
+Please refer the below code snippet to enable excel like filtering and sorting:
 
 {% tabs %}
 
@@ -37,27 +37,27 @@ Me.pivotClient.AllowMultiFunctionalSortFilter = True
 
 ![](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image1.png)
 
-## Multi-Functional Features
+## Multi-functional features
 
 **Sort A to Z**
 
-It can be used to sort the corresponding PivotItem in the *Ascending order*.
+This allows you to sort the corresponding PivotItem in the *Ascending order*.
 
 **Sort Z to A**
 
-It can be used to sort the corresponding PivotItem in the *Descending order*.
+This allows you to sort the corresponding PivotItem in the *Descending order*.
 
-**More Sort Options**
+**More sort options**
 
-It is used to sort the corresponding PivotItem based upon the Grandtotal of the PivotCalculation field.
+This allows you to sort the corresponding PivotItem based on the Grandtotal of the PivotCalculation field.
 
 **Clear filters**
 
-It is used to clear all the filter changes applied to the corresponding PivotItem and could bring back the SfPivotClient to the normal state.
+This allows you to clear all the filter changes that are applied to the corresponding PivotItem and could bring back the SfPivotClient to the normal state.
 
-**Label Filters**
+**Label filters**
 
-It is used to filter the SfPivotClient based on the labels of PivotItem field and it can be achieved by using various options which are listed below.
+This allows you to filter the SfPivotClient based on the labels of the PivotItem field and it can be achieved by using various options that are listed below:
 
 * Equals
 * Does Not Equal
@@ -84,7 +84,7 @@ _SfPivotClient applied with label filter_
 
 **Value Filters**
 
-It is used to filter the SfPivotClient based on the values of PivotItem field and it can be achieved by using various options which are listed below.
+This allows you to filter the SfPivotClient based on values of the PivotItem field and it can be achieved by using various options that are listed below:
 
 * Equals
 * Does Not Equal
