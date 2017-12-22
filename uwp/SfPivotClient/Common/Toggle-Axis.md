@@ -15,6 +15,6 @@ For example, product and date elements are present in the row section and countr
 
 ![](Toggle-Axis_images/Toggle-Pivot_image1.png)
 
-After clicking the *Toggle Pivot* ![](Toggle-Axis_images/Toggle-pivot-icon.png) in the client toolbar, product and date elements are moved to the column section and country element is moved to the row section. Based on the toggle pivot selection, the SfPivotGrid and the SfPivotChart will display the resultant data.
+After clicking the *Toggle Pivot* icon ![](Toggle-Axis_images/Toggle-pivot-icon.png) in the client toolbar, product and date elements are moved to the column section and country element is moved to the row section. Based on the toggle pivot selection, the SfPivotGrid and the SfPivotChart will display the resultant data.
 
 ![](Toggle-Axis_images/Toggle-Pivot_image2.png)
