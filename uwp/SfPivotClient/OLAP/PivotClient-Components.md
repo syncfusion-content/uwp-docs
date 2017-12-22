@@ -104,7 +104,7 @@ The measure, dimension, hierarchy, level, and named set elements can be dragged 
 
 **Removing elements from axis**
 
-To remove measures, dimension, hierarchy, level, and named set element from the axis element builder, right-click the element and select the *Remove* from the context menu.
+To remove measures, dimension, hierarchy, level, and named set element from the axis element builder, right-click the element and select the *Remove* option from the context menu.
 
 The below screenshot illustrates the element being removed from the axis element builder:
 
