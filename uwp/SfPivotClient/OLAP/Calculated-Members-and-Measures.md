@@ -13,7 +13,7 @@ SfPivotGrid allows users to add calculated measures and members in the OLAP repo
 
 **Using calculated member editor dialog**
 
-The calculated member editor dialog can be opened by clicking the *Create a Calculated Member/Measure* ![](Calculated-Members-and-Measures_images/Calculated-member-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableCalculatedMembers` property is enabled as mentioned below:
+The calculated member editor dialog can be opened by clicking the *Create a Calculated Member/Measure* icon ![](Calculated-Members-and-Measures_images/Calculated-member-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableCalculatedMembers` property is enabled as mentioned below:
 
 {% tabs %}
 
