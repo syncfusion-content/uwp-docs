@@ -9,21 +9,21 @@ documentation: ug
 
 # Summary Types
 
-SfPivotClient provides support to summarize the data for various data types by using the property of `SummaryType`. This property should be defined while defining the PivotCalculation using `PivotComputationInfo` class to specify the type of the summary. It holds the following summary types.
+SfPivotClient provides support to summarize the data for various data types by using the property of `SummaryType`. This property should be defined while defining the PivotCalculation by using the `PivotComputationInfo` class to specify the type of the summary. It holds the following summary types:
 
-* **DoubleTotalSum** - Computes the sum of double or integer from PivotValues for corresponding PivotItem
-* **DoubleAverage** - Computes the average of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleMaximum** - Computes the maximum of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleMinimum** - Computes the minimum of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleStandardDeviation** - Computes the standard deviation of double or integer from PivotValues for corresponding PivotItem.
-* **DoubleVariance** - Computes the variance of double or integer from PivotValues for corresponding PivotItem.
-* **Count** - Computes the count of double or integer from PivotValues for corresponding PivotItem.
-* **DecimalTotalSum** - Computes the sum of decimal from PivotValues for corresponding PivotItem.
-* **IntTotalSum** - Computes the sum of integer from PivotValues for corresponding PivotItem.
+* **DoubleTotalSum** - Computes the sum of double or integer from PivotValues for the corresponding PivotItem.
+* **DoubleAverage** - Computes the average of double or integer from PivotValues for the corresponding PivotItem.
+* **DoubleMaximum** - Computes the maximum of double or integer from PivotValues for the corresponding PivotItem.
+* **DoubleMinimum** - Computes the minimum of double or integer from PivotValues for the corresponding PivotItem.
+* **DoubleStandardDeviation** - Computes the standard deviation of double or integer from PivotValues for the corresponding PivotItem.
+* **DoubleVariance** - Computes the variance of double or integer from PivotValues for the corresponding PivotItem.
+* **Count** - Computes the count of double or integer from PivotValues for the corresponding PivotItem.
+* **DecimalTotalSum** - Computes the sum of decimal from PivotValues for the corresponding PivotItem.
+* **IntTotalSum** - Computes the sum of integer from PivotValues for the corresponding PivotItem.
 * **Custom** - Specifies that you are using a custom SummaryBase object to define the calculation.
-* **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the Pivot Computation column if all the values are common.
+* **DisplayIfDiscreteValuesEqual** - Displays the aggregated value in the pivot computation column if all the values are common.
 
-The following code snippet shows how to set the summary type of PivotCalculation.
+The following code snippet shows how to set the summary type of the PivotCalculation:
 
 {% tabs %}
 
@@ -60,9 +60,9 @@ PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With { _
 
 ## DisplayIfDiscreteValuesEqual SummaryType
 
-**DisplayIfDiscreteValuesEqual** is a new summary type that displays the aggregated value in PivotCalculation column if all the values are common, else the default value will be displayed as **'*'**.
+**DisplayIfDiscreteValuesEqual** is a new summary type that displays the aggregated value in the PivotCalculation column if all the values are common, else the default value will be displayed as **'*'**.
 
-You can also change the default value to any custom string of your choice by using the `PadString` property as specified in the below code snippet.
+You can also change the default value to any custom string of your choice by using the `PadString` property as specified in the below code snippet:
 
 {% tabs %}
 

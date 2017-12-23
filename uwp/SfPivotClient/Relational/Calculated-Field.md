@@ -11,20 +11,20 @@ documentation: ug
 
 SfPivotClient provides support to add a new calculated field based on existing calculated items using the calculated field dialog.
 
-**Adding a Calculated Field**
+**Adding a calculated field**
 
-* To add a calculated field, click the *Calculated Field* button ![](Calculated-Field_images/Calculated-field-icon.png) in the client toolbar. In result, the calculated field dialog will be opened as shown below.
+* To add a calculated field, click *Calculated Field* ![](Calculated-Field_images/Calculated-field-icon.png) in the client toolbar. The calculated field dialog will be opened as follows:
 
 ![](Calculated-Field_images/CalculatedField_image1.png)
 
-* **Name** for the calculated field should be defined.
+* You should define the **Name** for the calculated field.
 
  ![](Calculated-Field_images/CalculatedField_image2.png)
 
-* **Formula** can be entered by inserting calculation fields through **Fields** section. For inserting numerical operator, you can use formula pop-up as shown in the below screen-shot.
+* **Formula** can be entered by inserting calculation fields through the **Fields** section. For inserting numerical operator, you can use formula pop-up as shown in the below screenshot:
 
 ![](Calculated-Field_images/CalculatedField_image3.png)
 
-* Click the **Add** button for adding that calculated field and then click the **OK** button to populate the values in SfPivotClient.
+* Click the **Add** to add the calculated field, and then click **OK** to populate values in the SfPivotClient.
 
 ![](Calculated-Field_images/CalculatedField_image4.png)

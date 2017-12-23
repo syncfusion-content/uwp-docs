@@ -9,13 +9,13 @@ documentation: ug
 
 # Show Calculations as Columns or Rows
 
-SfPivotClient provides support to show the calculation values as either columns or rows by using the property of `ShowCalculationsAsColumns`. By default, its value is true. In-order to view the calculation values in row, it should be set as false.
+SfPivotClient provides support to show the calculation values as columns or rows by using the property of `ShowCalculationsAsColumns`. By default, its value is true. To view the calculation values in the row, it should be set as false.
 
-There are two ways to enable or disable this feature such as illustrated below.
+There are two ways to enable or disable this feature as illustrated below:
 
-**Using Code**
+**Using code**
 
-The calculations can be displayed as either columns or rows by setting the "ShowCalculationsAsColumns" property of SfPivotClient.
+The calculations can be displayed as columns or rows by setting the "ShowCalculationsAsColumns" property of the SfPivotClient.
 
 Please refer the below code snippet to display the calculations as column.
 
@@ -41,9 +41,9 @@ Me.pivotClient.ShowCalculationsAsColumns = True
 
 {% endtabs %}
 
-## Using Pivot Table Field List
+## Using pivot table field list
 
-You can enable or disable this support by using the "Show Calculations as Column” check box available in PivotTableFieldList.
+You can enable or disable this support by using the "Show Calculations as Column” check box available in the PivotTableFieldList.
 
 ![](Show-Calculations-As-Columns-Rows_images/Show-Calculations-As-Columns_image1.png)
 _PivotClient displaying calculations as columns_
