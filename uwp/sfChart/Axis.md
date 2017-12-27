@@ -2161,9 +2161,9 @@ chart.Series.Add(series);
 
 
 
-##Multi-level Labels
+## Multi-level Labels
 
-[`Axis`](https://help.syncfusion.com/uwp/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`] property. These labels are placed based on the provided [`Start`] and [`End`] range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
+[`Axis`](https://help.syncfusion.com/uwp/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`]() property. These labels are placed based on the provided [`Start`] and [`End`] range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
 
 {% tabs %}
 
@@ -3636,5 +3636,11 @@ ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
 
 ![](Axis_images/label12.png)
 
+## Events
+
+* [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html)   - Occurs at the when the range is changed in the axis.
+* [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html)- Occurs when labels is created.
+* [`AxisBoundChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html)- Occurs when the bounds of the axis changed.
+* [`LabelClicked`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels are clicked. Supports for 2D axis.
 
 

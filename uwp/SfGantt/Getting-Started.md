@@ -14,8 +14,8 @@ This section provides an assistance to create and configure a simple Gantt appli
 
 ### Adding SDK reference
 
-1. Open the Reference Manager window from project.
-2. Windows > Extensions > Syncfusion Controls for UWP XAML.
+1. Open the Reference Manager window in project.
+2. Select Universal Windows -> Extensions -> Syncfusion Controls for UWP XAML.
 
 ![](SfGantt_images/SDK_Reference.jpeg)
 
@@ -94,8 +94,6 @@ Contains classes that handles tab control.
 
 1. After adding the required assembly references to the project as discussed in the previous section, add the “Syncfusion.UI.Xaml.Gantt” namespace to the application as shown below.
 
-2. Instance the Gantt as shown in the below code example.
-
 {% tabs %}
 
 {% highlight xaml %}
@@ -112,7 +110,7 @@ using Syncfusion.UI.Xaml.Gantt;
 
 {% endtabs %}
 
-3.Instance the Gantt as like in the below code.
+2. Instance the Gantt as shown in the below code example.
 
 {% tabs %}
 
@@ -400,8 +398,8 @@ You can visualize the relationship between two tasks in the Gantt. These relatio
 
 * Start to Start(SS) - You cannot start a task until the other task also starts.
 * Start to Finish(SF) - You cannot finish a task until the other task finishes.
-* Finish to Start(FS) - You cannot start a task until the other task completes.
-* Finish to Finish(FF) - You cannot finish a task until the other task completes.
+* Finish to Start(FS) - You cannot start a task until the other task finishes.
+* Finish to Finish(FF) - You cannot finish a task until the other task finishes.
 
 The relationship can be created between two tasks by adding the task relationship in predecessor collection for the task in the TaskDetails.
 
@@ -478,7 +476,7 @@ private GanttResourceCollection GetResources()
 
 {% endhighlight %}
 
-2. Bind the resource collection to the property [`ProjectResources`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ProjectResources.html) property in SfGantt.
+2. Bind the resource collection to the [`ProjectResources`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ProjectResources.html) property in SfGantt.
 
 {% tabs %}
 
@@ -526,7 +524,7 @@ public ObservableCollection<TaskDetail> GetData()
 
 This is used to highlight and customize the weekends in the Gantt. By default, Saturday and Sunday is considered as weekends.
 
-* [`ShowNonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) property can be used to enable or disable the non-working 
+* [`ShowNonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) property can be used to enable or disable the non-working days.
 * [`NonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDays.html) property can be used to customize the weekends.
 * [`NonWorkingDaysBackground`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDaysBackground.html) property can be used change the weekends highlighting color.
 
