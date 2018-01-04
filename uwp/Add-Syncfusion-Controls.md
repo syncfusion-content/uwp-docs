@@ -213,7 +213,7 @@ After Installed required Syncfusion UWP NuGet packages in your application, we c
 
 2. The following steps helps to add a required Essential UWP control through XAML code, for example: SfColorPicker
 
-        a. Include the namespace for Syncfusion.SfColorPickers.UWP assembly from Syncfusion.SfColorPickers.UWP NuGet package in MainPage.xaml.
+    a.Include the namespace for Syncfusion.SfColorPickers.UWP assembly from Syncfusion.SfColorPickers.UWP NuGet package in MainPage.xaml.
 
         {% tabs %}
 
@@ -229,7 +229,7 @@ After Installed required Syncfusion UWP NuGet packages in your application, we c
 
         {% endtabs %}
 
-        b. Now add the `SfColorPicker` control with a required optimal name using the included namespace
+    b.Now add the `SfColorPicker` control with a required optimal name using the included namespace
 
         {% tabs %}
 
@@ -243,7 +243,7 @@ After Installed required Syncfusion UWP NuGet packages in your application, we c
 
 3. The following steps helps to add a required Essential UWP control through code, for example: SfColorPicker
         
-        a. Include the namespace for Syncfusion. SfColorPickers.UWP assembly in MainPage.xaml.cs
+    a.Include the namespace for Syncfusion. SfColorPickers.UWP assembly in MainPage.xaml.cs
 
         {% tabs %}
 
@@ -261,7 +261,7 @@ After Installed required Syncfusion UWP NuGet packages in your application, we c
 
         {% endtabs %}
 
-        b. Now add the SfColorPicker control with a required optimal name 
+    b.Now add the SfColorPicker control with a required optimal name 
 
         {% tabs %}
 
