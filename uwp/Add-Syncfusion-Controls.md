@@ -193,7 +193,7 @@ The following steps direct you to create the **Syncfusion** **UWP** **Applicatio
 
 ## Through NuGet Packages
 
-Syncfusion UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion NuGet package installation. Please refer below topic for steps to configure and install the Syncfusion UWP NuGet packages in UWP application from Visual Studio.
+Syncfusion UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion NuGet package installation. Please refer below topic to configure and install the Syncfusion UWP NuGet packages in UWP application from Visual Studio.
 
 [https://help.syncfusion.com/uwp/installation-and-deployment#configuring-syncfusion-nuget-packages-in-visual-studio](https://help.syncfusion.com/uwp/installation-and-deployment#configuring-syncfusion-nuget-packages-in-visual-studio)
 
