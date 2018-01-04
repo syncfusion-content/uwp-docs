@@ -15,7 +15,7 @@ DockStateChanging event will raise whenever the child element changing its State
 
 {% highlight XAML %}
 
-<syncfusion:SfDockingManager Name="dockingmanager" DockStateChanging="dockingmanager_DockStateChanging">
+<syncfusion:SfDockingManager Name="docking" DockStateChanging="docking_DockStateChanging">
 
 <ContentControl syncfusion:SfDockingManager.Header="Solution Explorer"  syncfusion:SfDockingManager.SideInDockedMode="Right"  syncfusion:SfDockingManager.DesiredWidthInDockedMode="200"/>
 
@@ -31,7 +31,7 @@ DockStateChanging event will raise whenever the child element changing its State
 
 {% highlight C# %}
 
-private void dockingmanager_DockStateChanging(object sender, DockStateChangingEventArgs args)
+private void docking_DockStateChanging(object sender, DockStateChangingEventArgs args)
 
 {
 
@@ -60,7 +60,7 @@ State of the child element will change to `Hidden` while closing it. It can be r
 
 {% highlight XAML %}
 
-<syncfusion:SfDockingManager Name="dockingmanager" DockStateChanging="dockingmanager_DockStateChanging">
+<syncfusion:SfDockingManager Name="docking" DockStateChanging="docking_DockStateChanging">
 
 <ContentControl syncfusion:SfDockingManager.Header="Solution Explorer"  syncfusion:SfDockingManager.SideInDockedMode="Right"  syncfusion:SfDockingManager.DesiredWidthInDockedMode="200"/>
 
@@ -76,7 +76,7 @@ State of the child element will change to `Hidden` while closing it. It can be r
 
 {% highlight C# %}
 
-private void dockingmanager_DockStateChanging(object sender, DockStateChangingEventArgs args)
+private void docking_DockStateChanging(object sender, DockStateChangingEventArgs args)
 
 {
 
