@@ -14,6 +14,7 @@ The Syncfusion UWP controls can be added in a Visual Studio projects by using ei
 * Through Designer
 * Through Code-Behind
 * Through Project Templates
+* Through NuGet Packages
 
 ## Through Designer
 
@@ -188,3 +189,100 @@ The following steps direct you to create the **Syncfusion** **UWP** **Applicatio
 5. Once the Project Configuration Wizard is done, the Syncfusion UWP Application is created with required SDK/references and pages.
 
    ![](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img5.jpeg)
+
+
+## Through NuGet Packages
+
+Syncfusion UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion NuGet package installation. Please refer below topic to configure and install the Syncfusion UWP NuGet packages in UWP application from Visual Studio.
+
+[Configuring Syncfusion NuGet packages in Visual Studio](https://help.syncfusion.com/uwp/installation-and-deployment#configuring-syncfusion-nuget-packages-in-visual-studio)
+
+After Installed required Syncfusion UWP NuGet packages in your application, we can utilize the Syncfusion UWP controls by following ways. 
+
+* Through Designer
+* Through XMAL
+* Through Code-Behind
+
+1.Syncfusion UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion NuGet package installation. We can add required Syncfusion UWP control through drag and drop from ToolBox. Toolbox configured from Syncfusion UWP NuGet package, controls will be listed under “Syncfusion controls for UWP” category. For example: SfColorPicker
+
+   ![](Add-Syncfusion-Controls_images/Toolbox_ColoPicker1.png)
+    
+   ![](Add-Syncfusion-Controls_images/Toolbox_ColoPicker2.png)
+
+   N> Toolbox configuration by installing UWP NuGet packages support available from v15.4.0.17.
+
+
+2.The following steps helps to add a required Essential UWP control through XAML code, for example: SfColorPicker
+
+a. Include the namespace for Syncfusion.SfColorPickers.UWP assembly from Syncfusion.SfColorPickers.UWP NuGet package in MainPage.xaml.
+
+        {% tabs %}
+
+        {% highlight XAML %}
+
+        <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        xmlns:media="using:Syncfusion.UI.Xaml.Controls.Media">
+
+        {% endhighlight %}
+
+        {% endtabs %}
+
+b. Now add the `SfColorPicker` control with a required optimal name using the included namespace
+
+        {% tabs %}
+
+        {% highlight XAML %}
+
+        <media:SfColorPicker x:Name="colorPicker">
+
+        {% endhighlight %}
+
+        {% endtabs %}
+
+
+3.The following steps helps to add a required Essential UWP control through code, for example: SfColorPicker
+        
+a. Include the namespace for Syncfusion. SfColorPickers.UWP assembly in MainPage.xaml.cs
+
+        {% tabs %}
+
+        {% highlight C# %}
+
+        using Syncfusion.UI.Xaml.Controls.Media;
+
+        {% endhighlight %}
+
+        {% highlight VB %}
+
+        Imports Syncfusion.UI.Xaml.Controls.Media
+
+        {% endhighlight %}
+
+        {% endtabs %}
+
+b. Now add the SfColorPicker control with a required optimal name 
+
+        {% tabs %}
+
+        {% highlight C# %}
+
+        SfColorPicker colorPicker = new SfColorPicker();
+
+        {% endhighlight %}
+
+        {% highlight VB %}
+
+        Dim colorPicker As New SfColorPicker()
+
+        {% endhighlight %}
+
+        {% endtabs %}
+
+
+
+
+
+
