@@ -40,13 +40,13 @@ The `CanFloat` AttachedProperty helps to enable or disable the floating function
 <layout:SfDockingManager>
 
 <ContentControl Name="SolutionExplorer" layout:SfDockingManager.Header="SolutionExplorer"
-                layout:SfDockingManager.CanFloat="False"/>
+                layout:SfDockingManager.CanFloat="false"/>
 
 <ContentControl Name="ToolBox" layout:SfDockingManager.Header="ToolBox"
-                layout:SfDockingManager.CanFloat="False"/>
+                layout:SfDockingManager.CanFloat="false"/>
                 
 <ContentControl Name="ErrorList" layout:SfDockingManager.Header="ErrorList"
-                layout:SfDockingManager.CanFloat="False"/>
+                layout:SfDockingManager.CanFloat="false"/>
 
 </layout:SfDockingManager>
 

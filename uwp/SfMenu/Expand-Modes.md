@@ -21,7 +21,7 @@ Submenu of each `SfMenuItem` can be opened by clicking it when `ExpandMode` prop
 
 <menu:SfMenu  x:Name="Sfmenu"  ExpandMode="ExpandOnClick" Width="176">
 
-<menu:SfMenuItem Header="File" StaysOpenOnClick="True" >
+<menu:SfMenuItem Header="File" StaysOpenOnClick="true" >
 
 <menu:SfMenuItem  Header="New" />
 

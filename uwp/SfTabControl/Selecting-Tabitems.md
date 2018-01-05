@@ -117,7 +117,7 @@ IsSelected property is used to check whether an item is selected or not. An item
 
 <navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent"/>
 
-<navigation:SfTabItem x:Name="Niko" IsSelected="True"
+<navigation:SfTabItem x:Name="Niko" IsSelected="true"
                       Header="Niko" Content="Description about Niko"/>
 
 <navigation:SfTabItem Header="James" Content="Description about James"/>
@@ -158,7 +158,7 @@ Niko.IsSelected = True
 
 <navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent"/>
 
-<navigation:SfTabItem x:Name="niko" IsSelected="True"
+<navigation:SfTabItem x:Name="niko" IsSelected="true"
                       Header="Niko" Content="Description about Niko"/>
 
 <navigation:SfTabItem Header="James" Content="Description about James"/>

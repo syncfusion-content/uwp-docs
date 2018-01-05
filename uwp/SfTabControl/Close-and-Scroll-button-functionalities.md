@@ -172,7 +172,7 @@ CanClose property is used to decide whether a tab item can be closed or not even
 {% highlight XAML %}
 
 <navigation:SfTabItem x:Name="Paul" Header="Paul Vent"
-                      Content="Description about Paul Vent" CanClose="True"/>
+                      Content="Description about Paul Vent" CanClose="true"/>
 
 
 {% endhighlight %}
@@ -213,13 +213,13 @@ Default close button type is Hide. The possible close button types are:
 <navigation:SfTabControl x:Name="tabControl" CloseButtonType="Both">
 
 <navigation:SfTabItem Header="Paul Vent"
-                      Content="Description about Paul Vent" CanClose="True"/>
+                      Content="Description about Paul Vent" CanClose="true"/>
 
-<navigation:SfTabItem Header="Niko" Content="Description about Niko" CanClose="True"/>
+<navigation:SfTabItem Header="Niko" Content="Description about Niko" CanClose="true"/>
 
-<navigation:SfTabItem Header="James" Content="Description about James" CanClose="True"/>
+<navigation:SfTabItem Header="James" Content="Description about James" CanClose="true"/>
 
-<navigation:SfTabItem Header="Carl" Content="Description about Carl" CanClose="True"/>
+<navigation:SfTabItem Header="Carl" Content="Description about Carl" CanClose="true"/>
 
 </navigation:SfTabControl>
 

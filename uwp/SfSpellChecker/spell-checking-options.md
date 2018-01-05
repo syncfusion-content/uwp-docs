@@ -21,27 +21,27 @@ Description<br/><br/></td></tr>
 <tr>
 <td>
 IgnoreEmailAddress<br/><br/></td><td>
-Specifies whether or not to ignore email address during Spell Check. Default value is False.<br/><br/></td></tr>
+Specifies whether or not to ignore email address during Spell Check. Default value is false.<br/><br/></td></tr>
 <tr>
 <td>
 IgnoreHtmlTags<br/><br/></td><td>
-Specifies whether or not to ignore HTML tags during Spell Check. Default value is False.<br/><br/></td></tr>
+Specifies whether or not to ignore HTML tags during Spell Check. Default value is false.<br/><br/></td></tr>
 <tr>
 <td>
 IgnoreUrl<br/><br/></td><td>
-Specifies whether or not to ignore Internet address during Spell Check. Default value is False.<br/><br/></td></tr>
+Specifies whether or not to ignore Internet address during Spell Check. Default value is false.<br/><br/></td></tr>
 <tr>
 <td>
 IgnoreMixedCaseWords<br/><br/></td><td>
-Specifies whether or not to ignore mixed case words during Spell Check.  Default value is False.<br/><br/></td></tr>
+Specifies whether or not to ignore mixed case words during Spell Check.  Default value is false.<br/><br/></td></tr>
 <tr>
 <td>
 IgnoreUpperCaseWords<br/><br/></td><td>
-Specifies whether or not to ignore uppercase words during Spell Check. Default value is False.<br/><br/></td></tr>
+Specifies whether or not to ignore uppercase words during Spell Check. Default value is false.<br/><br/></td></tr>
 <tr>
 <td>
 IgnoreAlphaNumericWords<br/><br/></td><td>
-Specifies whether or not to Spell Check numbers or words with numbers during Spell Check. Default value is False.<br/><br/></td></tr>
+Specifies whether or not to Spell Check numbers or words with numbers during Spell Check. Default value is false.<br/><br/></td></tr>
 </table>
 
 
