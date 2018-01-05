@@ -278,7 +278,7 @@ mosaicTile.ImageList.Add("Assets/employee9.png")
 {% highlight XAML %}
 
 <notification:SfMosaicTile Header="Mosaic tile"
-                           IsBitmapImageList="True"
+                           IsBitmapImageList="true"
 						   x:Name="mosaicTile"/>
 
 {% endhighlight %}
