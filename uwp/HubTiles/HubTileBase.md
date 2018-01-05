@@ -131,7 +131,7 @@ The flip effect can be enabled or disabled using `OverrideDefaultStates` propert
 
 {% highlight XAML %}
 
-<notification:SfHubTile x:Name="hubTile" Header="HubTile" OverrideDefaultStates="True"/>
+<notification:SfHubTile x:Name="hubTile" Header="HubTile" OverrideDefaultStates="true"/>
 
 {% endhighlight %}
 
@@ -165,7 +165,7 @@ A tile is said to be frozen when the animation pauses until it is resumed. All t
 
 {% highlight XAML %}
 
-<notification:SfHubTile x:Name="hubTile" Interval="0:0:1" IsFrozen="True"
+<notification:SfHubTile x:Name="hubTile" Interval="0:0:1" IsFrozen="true"
 
 ImageSource="Assets/New Mail.png" 
 

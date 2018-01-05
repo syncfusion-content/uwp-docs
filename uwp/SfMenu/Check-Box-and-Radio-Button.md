@@ -23,30 +23,30 @@ documentation: ug
 
 <menu:SfMenuItem Header="File"   >
 
-<menu:SfMenuItem  Header="New" IsCheckable="True"
-                  CheckIconType="CheckBox" IsChecked="True"/>
+<menu:SfMenuItem  Header="New" IsCheckable="true"
+                  CheckIconType="CheckBox" IsChecked="true"/>
 
-<menu:SfMenuItem  Header="Open" IsCheckable="True"
-                  CheckIconType="RadioButton" IsChecked="True"/>
+<menu:SfMenuItem  Header="Open" IsCheckable="true"
+                  CheckIconType="RadioButton" IsChecked="true"/>
 
-<menu:SfMenuItem Header="Close"  IsCheckable="True"
-                 CheckIconType="CheckBox" IsChecked="True"/>
+<menu:SfMenuItem Header="Close"  IsCheckable="true"
+                 CheckIconType="CheckBox" IsChecked="true"/>
 
 </menu:SfMenuItem>
 
 <menu:SfMenuItem Header="Edit">
 
-<menu:SfMenuItem Header="Undo" IsCheckable="True"
-                 CheckIconType="CheckBox" IsChecked="True"/>
+<menu:SfMenuItem Header="Undo" IsCheckable="true"
+                 CheckIconType="CheckBox" IsChecked="true"/>
 
-<menu:SfMenuItem Header="Redo"  IsCheckable="True"
-                 CheckIconType="RadioButton" IsChecked="True"/>
+<menu:SfMenuItem Header="Redo"  IsCheckable="true"
+                 CheckIconType="RadioButton" IsChecked="true"/>
 
-<menu:SfMenuItem Header="Cut"  IsCheckable="True"
-                 CheckIconType="RadioButton" IsChecked="True"/>
+<menu:SfMenuItem Header="Cut"  IsCheckable="true"
+                 CheckIconType="RadioButton" IsChecked="true"/>
 
-<menu:SfMenuItem Header="Copy" IsCheckable="True"
-                 CheckIconType="CheckBox" IsChecked="True"/>
+<menu:SfMenuItem Header="Copy" IsCheckable="true"
+                 CheckIconType="CheckBox" IsChecked="true"/>
 
 </menu:SfMenuItem>
 

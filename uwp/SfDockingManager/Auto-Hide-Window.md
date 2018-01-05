@@ -160,7 +160,7 @@ The Pin button, that performs Auto Hide functionality will be visible by default
 
 {% highlight XAML %}
 
-<layout:SfDockingManager ShowPinButton="False">
+<layout:SfDockingManager ShowPinButton="false">
 
 <ContentControl layout:SfDockingManager.Header="SolutionExplorer" />
 
@@ -182,10 +182,10 @@ To show or collapse the AutoHide button for a specific child in the `SfDockingMa
 <layout:SfDockingManager>
 
 <ContentControl layout:SfDockingManager.Header="SolutionExplorer"
-                layout:SfDockingManager.IsPinButtonVisible="False"/>
+                layout:SfDockingManager.IsPinButtonVisible="false"/>
 
 <ContentControl layout:SfDockingManager.Header="ToolBox"
-                layout:SfDockingManager.IsPinButtonVisible="True"/>
+                layout:SfDockingManager.IsPinButtonVisible="true"/>
 
 </layout:SfDockingManager>
 
@@ -205,10 +205,10 @@ To enable or disable the AutoHide functionality for a specific child in the `SfD
 <layout:SfDockingManager>
 
 <ContentControl layout:SfDockingManager.Header="SolutionExplorer"
-                layout:SfDockingManager.CanAutoHide="False"/>
+                layout:SfDockingManager.CanAutoHide="false"/>
 
 <ContentControl layout:SfDockingManager.Header="ToolBox"
-                layout:SfDockingManager.CanAutoHide="True"/>
+                layout:SfDockingManager.CanAutoHide="true"/>
 
 </layout:SfDockingManager>
 

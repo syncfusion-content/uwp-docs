@@ -53,7 +53,7 @@ DropDownButton visibility can be changed by using the ShowDropDownButton propert
 
 {% highlight xaml %}
 
-   <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center"  Width="200" Margin="15" ShowDropDownButton="True"/>
+   <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center"  Width="200" Margin="15" ShowDropDownButton="true"/>
 
 {% endhighlight %}
 

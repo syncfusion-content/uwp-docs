@@ -140,7 +140,7 @@ End Sub
 
 ## Selecting Item using IsSelected
 
-`SfAccordionItem` has a property `IsSelected` that determines whether the item is expanded or collapsed. More than one accordion item can have IsSelected as `True` based on the `SelectionMode`.
+`SfAccordionItem` has a property `IsSelected` that determines whether the item is expanded or collapsed. More than one accordion item can have IsSelected as `true` based on the `SelectionMode`.
 
 * IsSelected=true – Item is expanded
 * IsSelected=false – Item is collapsed
@@ -151,7 +151,7 @@ End Sub
 
 <layout:SfAccordion>
 
-<layout:SfAccordionItem Header="Linda" IsSelected="True" Content="Description about Linda">
+<layout:SfAccordionItem Header="Linda" IsSelected="true" Content="Description about Linda">
 
 </layout:SfAccordion>           
 
@@ -215,7 +215,7 @@ Content="Essential Studio for Silverlight"/>
 
 <layout:SfAccordionItem x:Name="winrt" Header="WinRT" Content="Essential Studio for WinRT"/>
 
-<layout:SfAccordionItem x:Name="phone" IsSelected="True" Header="Windows Phone" 
+<layout:SfAccordionItem x:Name="phone" IsSelected="true" Header="Windows Phone" 
 
 Content="Essential Studio for Windows Phone"/>
 

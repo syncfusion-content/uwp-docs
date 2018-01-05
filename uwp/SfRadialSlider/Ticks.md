@@ -55,7 +55,7 @@ Maximum Value of SfRadialSlider can be displayed even the difference between Max
 {% highlight xaml %}
 
 <navigation:SfRadialSlider x:Name="sfradialslider" Maximum="100" 
-                                   TickFrequency="12" ShowMaximumValue="True"/>
+                                   TickFrequency="12" ShowMaximumValue="true"/>
 
 {% endhighlight %}
 
