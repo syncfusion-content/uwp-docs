@@ -115,7 +115,7 @@ To set the child window as TabbedWindow, the window should aware of a Target win
 <ContentControl layout:SfDockingManager.Header="Toolbox"/>
 
 <ContentControl layout:SfDockingManager.Header="Solution Explorer"
-                layout:SfDockingManager.NoHeader="True">
+                layout:SfDockingManager.NoHeader="true">
                 
 <TextBlock Text="Content of NoHeader window" FontStyle="Italic"
            Foreground="Gray" TextWrapping="Wrap"/>
@@ -142,7 +142,7 @@ The `CanDock` AttachedProperty used to enable or disable the docking functionali
 <layout:SfDockingManager>
 
 <ContentControl layout:SfDockingManager.Header="Toolbox"
-                layout:SfDockingManager.CanDock="False"/>
+                layout:SfDockingManager.CanDock="false"/>
 
 </layout:SfDockingManager>
 

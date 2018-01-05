@@ -28,16 +28,16 @@ The following code example and screen shot illustrate this.
 <navigation:SfTabControl>
 
 <navigation:SfTabItem Header="Paul Vent" x:Name="Paul"
-                      Content="Description about Paul Vent" ShowPinnableButton="True"/>
+                      Content="Description about Paul Vent" ShowPinnableButton="true"/>
 
 <navigation:SfTabItem Header="Niko"
-                      Content="Description about Niko" ShowPinnableButton="True"/>
+                      Content="Description about Niko" ShowPinnableButton="true"/>
 
 <navigation:SfTabItem Header="James"
-                      Content="Description about James" ShowPinnableButton="True"/>
+                      Content="Description about James" ShowPinnableButton="true"/>
 
 <navigation:SfTabItem Header="Carl"
-                      Content="Description about Carl" ShowPinnableButton="True"/>
+                      Content="Description about Carl" ShowPinnableButton="true"/>
 
 </navigation:SfTabControl>
 
@@ -76,13 +76,13 @@ The pinned item tab panel is scrollable. The scroll buttons can be enabled by se
 
 <navigation:SfTabControl x:Name="tabControl" PinnedTabScrollButtonVisibility="Visible">
 
-<navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent" ShowPinnableButton="True"/>
+<navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent" ShowPinnableButton="true"/>
 
-<navigation:SfTabItem Header="Niko" Content="Description about Niko" ShowPinnableButton="True"/>
+<navigation:SfTabItem Header="Niko" Content="Description about Niko" ShowPinnableButton="true"/>
 
-<navigation:SfTabItem Header="James" Content="Description about James" ShowPinnableButton="True"/>
+<navigation:SfTabItem Header="James" Content="Description about James" ShowPinnableButton="true"/>
 
-<navigation:SfTabItem Header="Carl" Content="Description about Carl" ShowPinnableButton="True"/>
+<navigation:SfTabItem Header="Carl" Content="Description about Carl" ShowPinnableButton="true"/>
 
 </navigation:SfTabControl>
 

@@ -19,7 +19,7 @@ The collapse buttons can be enabled or disabled using the `EnableCollapseButton`
 
 {% highlight XAML %}
 
-<input:SfGridSplitter Grid.Row="1" EnableCollapseButton="True" x:Name="gridSplitter"/>
+<input:SfGridSplitter Grid.Row="1" EnableCollapseButton="true" x:Name="gridSplitter"/>
 
 {% endhighlight %}
 
@@ -57,8 +57,8 @@ The template collapse buttons can be customized using the properties UpButtonTem
 
 {% highlight XAML %}
 
-<input:SfGridSplitter Grid.Row="1" ShowsPreview="True"
-                      EnableCollapseButton="True" x:Name="gridSplitter">
+<input:SfGridSplitter Grid.Row="1" ShowsPreview="true"
+                      EnableCollapseButton="true" x:Name="gridSplitter">
 
 <input:SfGridSplitter.UpButtonTemplate>
 
@@ -138,18 +138,18 @@ The template collapse buttons can be customized using the properties UpButtonTem
 
 <Rectangle x:Name="Rectangle" Fill="Transparent" Width="22" Height="22"/>
 
-<Path x:Name="up" Width="13" Height="11" Stretch="Fill" Fill="White" Data="F1 M 143.011,160.869L 143.021,160.879L 143.001,160.898L 140.771,163.129L 140.771,165.325L 143.303,162.794L 144.1,161.995L 144.118,161.979L 144.906,162.764L 147.438,165.296L 147.438,163.101L 145.207,160.869L 144.108,159.773L 143.011,160.869 Z" HorizontalAlignment="Center" UseLayoutRounding="False" VerticalAlignment="Center"/>
+<Path x:Name="up" Width="13" Height="11" Stretch="Fill" Fill="White" Data="F1 M 143.011,160.869L 143.021,160.879L 143.001,160.898L 140.771,163.129L 140.771,165.325L 143.303,162.794L 144.1,161.995L 144.118,161.979L 144.906,162.764L 147.438,165.296L 147.438,163.101L 145.207,160.869L 144.108,159.773L 143.011,160.869 Z" HorizontalAlignment="Center" UseLayoutRounding="false" VerticalAlignment="Center"/>
 
 </Grid>
 
 </Border>
 
-<Rectangle x:Name="FocusVisualWhite" IsHitTestVisible="False"
+<Rectangle x:Name="FocusVisualWhite" IsHitTestVisible="false"
            Opacity="0" StrokeDashOffset="1.5" StrokeEndLineCap="Square"
 		   Stroke="{StaticResource FocusVisualWhiteStrokeThemeBrush}"
 		   StrokeDashArray="1,1"/>
 
-<Rectangle x:Name="FocusVisualBlack" IsHitTestVisible="False"
+<Rectangle x:Name="FocusVisualBlack" IsHitTestVisible="false"
            Opacity="0" StrokeDashOffset="0.5" StrokeEndLineCap="Square"
 		   Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}"
 		   StrokeDashArray="1,1"/>
@@ -248,12 +248,12 @@ The template collapse buttons can be customized using the properties UpButtonTem
 
 </Border>
 
-<Rectangle x:Name="FocusVisualWhite" IsHitTestVisible="False" Opacity="0"
+<Rectangle x:Name="FocusVisualWhite" IsHitTestVisible="false" Opacity="0"
            StrokeDashOffset="1.5" StrokeEndLineCap="Square"
 		   Stroke="{StaticResource FocusVisualWhiteStrokeThemeBrush}"
 		   StrokeDashArray="1,1"/>
 
-<Rectangle x:Name="FocusVisualBlack" IsHitTestVisible="False" Opacity="0"
+<Rectangle x:Name="FocusVisualBlack" IsHitTestVisible="false" Opacity="0"
            StrokeDashOffset="0.5" StrokeEndLineCap="Square"
 		   Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}"
 		   StrokeDashArray="1,1"/>

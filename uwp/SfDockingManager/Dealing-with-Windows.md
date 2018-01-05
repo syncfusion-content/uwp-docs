@@ -308,7 +308,7 @@ The AttachedProperty `IsDragEnabled` helps to enable or disable the dragging fun
 <layout:SfDockingManager>
 
 <ContentControl layout:SfDockingManager.Header="Item1"
-                layout:SfDockingManager.IsDragEnabled="False"/>
+                layout:SfDockingManager.IsDragEnabled="false"/>
 
 </layout:SfDockingManager>
 
@@ -370,7 +370,7 @@ To arrange the dock windows to a whole available space in the `SfDockingManager`
 
 {% highlight XAML %}
 
-<layout:SfDockingManager DockFill="True">
+<layout:SfDockingManager DockFill="true">
 
 <ContentControl layout:SfDockingManager.Header="Item1"/>
 
@@ -395,7 +395,7 @@ Docking, floating and auto hiding windows have a ContextMenu button that contain
 
 {% highlight XAML %}
 
-<layout:SfDockingManager ShowMenuButton="False">
+<layout:SfDockingManager ShowMenuButton="false">
 
 <ContentControl layout:SfDockingManager.Header="Item1"/>
 
@@ -417,7 +417,7 @@ Document windows have a ContextMenu button, that contains options for switching 
 
 {% highlight XAML %}
 
-<layout:SfDockingManager ShowDocumentTabStripMenu="True">
+<layout:SfDockingManager ShowDocumentTabStripMenu="true">
 
 <ContentControl layout:SfDockingManager.Header="Item1"
                 layout:SfDockingManager.DockState="Document"/>
@@ -439,7 +439,7 @@ One or more `DocumentTabItems` can be closed using Document TabItem ContextMenu.
 
 {% highlight XAML %}
 
-<layout:SfDockingManager ShowDocumentTabItemContextMenu="True">
+<layout:SfDockingManager ShowDocumentTabItemContextMenu="true">
 
 <ContentControl layout:SfDockingManager.Header="Item1"
                 layout:SfDockingManager.DockState="Document"/>

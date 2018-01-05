@@ -71,7 +71,7 @@ To enable/disable this menu set the property ShowTabStripMenu in SfTabControl
 
 {% highlight XAML %}
 
-<navigation:SfTabControl x:Name="tabControl" ShowTabstripMenu="True">
+<navigation:SfTabControl x:Name="tabControl" ShowTabstripMenu="true">
 
 <navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent"/>
 
@@ -115,7 +115,7 @@ Custom menu items can be added to the tab strip menu using TabStripMenuItems pro
 
 {% highlight XAML %}
 
-<navigation:SfTabControl x:Name="tabControl" ShowTabstripMenu="True">
+<navigation:SfTabControl x:Name="tabControl" ShowTabstripMenu="true">
 
 <navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent"/>
 
@@ -167,7 +167,7 @@ Tab strip menu items can be customized using the TabStripMenuItemTemplate proper
 
 {% highlight XAML %}
 
-<navigation:SfTabControl ShowTabstripMenu="True">
+<navigation:SfTabControl ShowTabstripMenu="true">
 
 <navigation:SfTabItem Header="Paul Vent" Content="Description about Paul Vent"/>
 
