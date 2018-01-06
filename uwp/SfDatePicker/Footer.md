@@ -31,7 +31,7 @@ The following code sample shows how to hide the done button:
 
                 <Style TargetType="syncfusion:SfDateSelector">
 
-                    <Setter Property="ShowDoneButton" Value="False"/>
+                    <Setter Property="ShowDoneButton" Value="false"/>
 
                 </Style>
 
@@ -66,7 +66,7 @@ The following code sample shows how to hide the cancel button:
 
                 <Style TargetType="syncfusion:DateSelector">
 
-<Setter Property="ShowCancelButton" Value="False"/>
+<Setter Property="ShowCancelButton" Value="false"/>
 
                 </Style>
 

@@ -39,7 +39,7 @@ Data="M14.911999,36.994997C14.911999,36.994997 20.409431,39.888113 31.999999,39.
 
 </Border>
 
-<input:SfGridSplitter Grid.Row="1" ShowsPreview="True" x:Name="gridSplitter"/>
+<input:SfGridSplitter Grid.Row="1" ShowsPreview="true" x:Name="gridSplitter"/>
 
 <Border Background="LightBlue" Grid.Row="2">
 
@@ -101,7 +101,7 @@ Data="M14.911999,36.994997C14.911999,36.994997 20.409431,39.888113 31.999999,39.
 
 </Border>
 
-<input:SfGridSplitter Grid.Row="1" ShowsPreview="True" x:Name="gridSplitter">
+<input:SfGridSplitter Grid.Row="1" ShowsPreview="true" x:Name="gridSplitter">
 
 <input:SfGridSplitter.PreviewStyle>
 

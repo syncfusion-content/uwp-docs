@@ -19,7 +19,7 @@ The following code example and screen shot illustrate the usage of the AllowNull
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-<syncfusion:SfDatePicker VerticalAlignment="Center" Width="200" Value="{x:Null}" AllowNull="True"/>
+<syncfusion:SfDatePicker VerticalAlignment="Center" Width="200" Value="{x:Null}" AllowNull="true"/>
 
 </Grid>
 
@@ -35,7 +35,7 @@ The following code example and screen shot illustrate this property.
 
 
 
-N> The AllowInlineEditing property must be set to True for this property to take effect.
+N> The AllowInlineEditing property must be set to `true` for this property to take effect.
 
 
 
@@ -46,7 +46,7 @@ N> The AllowInlineEditing property must be set to True for this property to take
 
 <syncfusion:SfDatePicker VerticalAlignment="Center" Width="200"
 
-AllowInlineEditing="True"InputScope="Number"/>
+AllowInlineEditing="true"InputScope="Number"/>
 
 </Grid>
 
