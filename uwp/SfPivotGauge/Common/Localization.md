@@ -27,8 +27,8 @@ N> Localization key field should be same for all locales. Do not translate the k
 
 After translating the strings, perform the following steps in the application:
 
-1. Right-click the project file to create a new folder in the project by selecting Add > New Folder and rename the folder as “Resources”.
-2. Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
+1.Right-click the project file to create a new folder in the project by selecting Add > New Folder and rename the folder as “Resources”.
+2.Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
 
 ![](Localization_images/Localization-step1.png)
 
@@ -36,7 +36,7 @@ After translating the strings, perform the following steps in the application:
 
 N> The resource file name should be in the format “&lt;Culture Code&gt;.resx”.
 
-3. Copy and paste the translated locale to the resource file which is created in the previous step.
+3.Copy and paste the translated locale to the resource file which is created in the previous step.
 
 ## Culture specification
 
