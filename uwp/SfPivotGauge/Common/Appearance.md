@@ -106,7 +106,7 @@ PivotGauge1.ShowGaugeHeaders = False
 
 ## Gauge label
 
-The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of `ShowGaugeFactors` property. The following code snippet shows how to hide labels of the SfPivotGauge:
+The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of `ShowGaugeLabels` property. The following code snippet shows how to hide labels of the SfPivotGauge:
 
 {% tabs %}
 
