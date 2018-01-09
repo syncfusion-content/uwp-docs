@@ -15,17 +15,17 @@ This section covers the information required to create a simple SfPivotGauge con
 
 SfPivotGauge control can be initialized and added to an application through the following ways:
 
-1. Through designer
-2. Through XAML
-3. Through code-behind
+1.Through designer
+2.Through XAML
+3.Through code-behind
 
-## Adding control through designer
+### Adding control through designer
 
 Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
 
 N> After creating the UWP application, select the **"Properties"** under the project shown in the solution explorer and change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
-Now, select toolbox options from the view menu and it will appear inside the VisualStudio IDE. From the toolbox, select the SfPivotGauge control under “Syncfusion Controls for UWP XAML” group, and then drag and drop it into the designer section of the MainPage.xaml file.
+Now, select toolbox option from the view menu and it will appear inside the Visual Studio IDE. From the toolbox, select the SfPivotGauge control under “Syncfusion Controls for UWP XAML” group, and then drag and drop it into the designer section of the MainPage.xaml file.
 
 Finally, name the added SfPivotGauge control as “PivotGauge1” in MainPage.xaml to refer it in code-behind as follows:
 
@@ -39,7 +39,7 @@ Finally, name the added SfPivotGauge control as “PivotGauge1” in MainPage.xa
 
 {% endtabs %}
 
-## Adding control through XAML
+### Adding control through XAML
 
 Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
 
@@ -98,7 +98,7 @@ Then, initialize the SfPivotGauge control inside the grid by using the specified
 
 {% endtabs %}
 
-## Adding control through code-behind
+### Adding control through code-behind
 
 Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
 
@@ -555,7 +555,7 @@ namespace OlapManagerService
             _dataProvider.DataProvider.CloseConnection();
             return cubeInfoCollection != null ? Utils.Serialize(cubeInfoCollection) : string.Empty;
         }
-        
+
         public string GetJSONChildMembers(string cubeName, string levelName)
         {
             MemberCollection memberCollection = _dataProvider.GetChildMembers(cubeName, levelName);
