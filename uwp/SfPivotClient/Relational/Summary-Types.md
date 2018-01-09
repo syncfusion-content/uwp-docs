@@ -56,7 +56,7 @@ PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With { _
 
 {% endtabs %}
 
-![](Summary-images/custom_summary_type-image1.png)
+![](Summary-Types_images/custom_summary_type-image1.png)
 
 ## DisplayIfDiscreteValuesEqual SummaryType
 
