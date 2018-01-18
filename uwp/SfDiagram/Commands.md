@@ -538,8 +538,10 @@ private async void OnSaveCommand(Object obj)
        }
   }
   {% endhighlight %}
+  
 #### Map and user defined command with key gesture:
-//Add new Commands to CommandManager - Ctrl + S -> Save
+
+Add new Commands to CommandManager - Ctrl + S -> Save
             
 {% highlight C# %}			
 sfdiagram.CommandManager.Commands.Add
