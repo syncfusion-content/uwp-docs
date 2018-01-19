@@ -1105,9 +1105,9 @@ TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 
 ## Interaction
 
-Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/uwp/sfdiagram/Interaction#Connection-Editing "Connection Editing").
+Diagram allows to edit the Connectors at runtime. To edit the Connector segments at runtime, refer to [Connection Editing](/uwp/sfdiagram/Interaction#connection-editing "Connection Editing").
 
 ## Constraints
 
-The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/Constraints#ConnectorConstraints "Connector Constraints").
+The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/Constraints#connector-constraints "Connector Constraints").
 

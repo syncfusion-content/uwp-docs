@@ -12,7 +12,7 @@ documentation: ug
 `Constraints` are used to enable/disable certain behaviors of the diagram, Node and Connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).
 
-## GraphConstraints
+## Graph Constraints
 
 Graph constraints allow to enable or disable the following behaviors.
 
@@ -20,8 +20,6 @@ Graph constraints allow to enable or disable the following behaviors.
 * Line Bridging
 * Zoom and Pan
 * Undo Redo
-
-For more information about GraphConstraints, refer to [GraphConstraints]. 
 
 **Example** 
 
@@ -34,7 +32,7 @@ diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
 
 {% endhighlight %}
 
-## NodeConstraints
+## Node Constraints
 
 NodeConstraints allow to enable or disable the following behaviors of Node.
 
@@ -45,8 +43,6 @@ NodeConstraints allow to enable or disable the following behaviors of Node.
 * Rotate
 * Connect
 * Annotation Dragging
-
-For more information about NodeConstraints, refer to [NodeConstraints]. 
 
 **Example**
 
@@ -73,7 +69,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-## ConnectorConstraints
+## Connector Constraints
 
 ConnectorConstraints allow to enable or disable certain behaviors of Connectors. They are as follows.
 
@@ -83,8 +79,6 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Segment editing
 * Bridging
 * Annotation dragging
-
-For more information about ConnectorConstraints, refer to [ConnectorConstraints]. 
 
 **Example**
 
@@ -105,13 +99,11 @@ diagram.Connectors = connectors;
 
 {% endhighlight %}
 
-## PortConstraints
+## Port Constraints
 
 You can enable or disable certain behaviors of port. They are as follows.
 
 * Connect
-
-For more information about PortConstraints, refer to [PortConstraints]. 
 
 Example
 
@@ -140,7 +132,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-## AnnotationConstraints
+## Annotation Constraints
 AnnotationConstraints allow to enable or disable the following behaviors of Annotation.
 
 * Selection
@@ -177,15 +169,13 @@ the following code illustrates how to enable annotation dragging.
 
 {% endhighlight %} 
 
-## SelectorConstraints
+## Selector Constraints
 
 Selector visually represents the selected elements with certain editable thumbs. The visually of the thumbs can be controlled with selector constraints. The part of selector is categorized as follows.
 
 * Resizer
 * Rotator
 * Quick Commands
-
-For more information about SelectorConstraints, refer to [SelectorConstraints].
 
 **Example**
 
@@ -198,7 +188,7 @@ The following code illustrates how to hide rotator.
 
 {% endhighlight %}
 
-## SnapConstraints
+## Snap Constraints
 
 Snap Constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
 
@@ -206,8 +196,6 @@ Snap Constraints control the visibility of gridlines and enable/disable snapping
 * Show both Horizontal or Vertical Gridlines
 * Show to either Horizontal or Vertical Gridlines
 * Show to both Horizontal or vertical gridlines
-
-For more information about SnapConstraints, refer to [SnapConstraints].
 
 **Example**
 
