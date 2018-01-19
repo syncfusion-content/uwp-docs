@@ -227,4 +227,4 @@ Diagram provides support to drag, resize, or rotate the Node interactively. For 
 
 ## Constraints
 aa
-The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/uwp/sfdiagram/Constraints#NodeConstraints "Node Constraints").
+The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/uwp/sfdiagram/Constraints#node-constraints "Node Constraints").
