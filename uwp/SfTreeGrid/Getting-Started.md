@@ -179,8 +179,10 @@ In order to add control manually in C#, do the below steps,
 using Syncfusion.UI.Xaml.TreeGrid;
 namespace GettingStarted
 {   
+
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -218,31 +220,37 @@ public class EmployeeInfo
     private string _title;
     double? _salary;
     int _reportsTo;
+
     public int ID
     {
         get { return _id; }
         set { _id = value; }
     }
+
     public string FirstName
     {
         get { return _firstName; }
         set { _firstName = value; }
     }
+
     public string LastName
     {
         get { return _lastName; }
         set { _lastName = value; }
     }
+
     public string Title
     {
         get { return _title; }
         set { _title = value; }
     }
+
     public double? Salary
     {
         get { return _salary; }
         set { _salary = value; }
     }
+
     public int ReportsTo
     {
         get { return _reportsTo; }
@@ -260,12 +268,13 @@ N> If you want your data object (EmployeeInfo class) to automatically reflect pr
 {% highlight c# %}
 public class ViewModel
 {
+
     public ViewModel()
     {
         this.Employees = this.GetEmployees();
     }
-
     private ObservableCollection<EmployeeInfo> _employees;
+
     public ObservableCollection<EmployeeInfo> Employees
     {
         get { return _employees; }
@@ -281,8 +290,8 @@ private  ObservableCollection<EmployeeInfo> GetEmployees()
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Ulysses", LastName = "Pierce", Title = "HumanResource", Salary = 1500000, ReportsTo = -1, ID = 6 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Jimmy", LastName = "Harrison", Title = "Purchasing", Salary = 200000, ReportsTo = -1, ID = 7 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Ronald", LastName = "Fillmore", Title = "Production", Salary = 2800000, ReportsTo = -1, ID = 8 });
-        //Management
 
+        //Management
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Andrew", LastName = "Fuller", ID = 9, Salary = 1200000, ReportsTo = 2, Title = "Vice President" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Janet", LastName = "Leverling", ID = 10, Salary = 1000000, ReportsTo = 2, Title = "GM" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Steven", LastName = "Buchanan", ID = 11, Salary = 900000, ReportsTo = 2, Title = "Manager" });
@@ -310,7 +319,6 @@ private  ObservableCollection<EmployeeInfo> GetEmployees()
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Albert", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
 
         //Purchasing
-
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Pamela", LastName = "Wolfe", ID = 26, Salary = 600000, ReportsTo = 7, Title = "Purchase Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Blythe", ID = 27, Salary = 550000, ReportsTo = 7, Title = "Store Keeper" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "David", LastName = "Campbell", ID = 28, Salary = 450000, ReportsTo = 7, Title = "Store Keeper" });
@@ -360,8 +368,10 @@ Bind the self-relations collection created in the previous step to `SfTreeGrid.I
 {% highlight c# %}
 namespace GettingStarted
 {
+
 public sealed partial class MainPage : Page
 {
+
     public MainPage()
     {
         this.InitializeComponent();
@@ -422,6 +432,7 @@ public class PersonInfo
         get { return _salary; }
         set { _salary = value; }
     }
+
     public ObservableCollection<PersonInfo> Children
     {
         get { return _children; }
@@ -438,11 +449,11 @@ public class PersonInfo
 {% highlight c# %}
 public class ViewModel 
 {
+
     public ViewModel()
     {
         this.PersonDetails = this. CreatePersonData();
     }
-
     private ObservableCollection<PersonInfo> _personDetails;
 
     public ObservableCollection<PersonInfo> PersonDetails
@@ -507,8 +518,10 @@ Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSour
 {% highlight c# %}
 namespace NestedCollectionDemo
 {
+
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -547,31 +560,37 @@ public class EmployeeInfo
     private string _title;
     double? _salary;
     int _reportsTo;
+
     public int ID
     {
         get { return _id; }
         set { _id = value; }
     }
+
     public string FirstName
     {
         get { return _firstName; }
         set { _firstName = value; }
     }
+
     public string LastName
     {
         get { return _lastName; }
         set { _lastName = value; }
     }
+
     public string Title
     {
         get { return _title; }
         set { _title = value; }
     }
+
     public double? Salary
     {
         get { return _salary; }
         set { _salary = value; }
     }
+
     public int ReportsTo
     {
         get { return _reportsTo; }
@@ -587,12 +606,13 @@ public class EmployeeInfo
 {% highlight c# %}
 public class ViewModel
 {
+
     public ViewModel()
     {
         this.Employees = this.GetEmployees();
     }
-
     private ObservableCollection<EmployeeInfo> _employees;
+
     public ObservableCollection<EmployeeInfo> Employees
     {
         get { return _employees; }
@@ -609,8 +629,8 @@ public class ViewModel
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Ulysses", LastName = "Pierce", Title = "HumanResource", Salary = 1500000, ReportsTo = -1, ID = 6 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Jimmy", LastName = "Harrison", Title = "Purchasing", Salary = 200000, ReportsTo = -1, ID = 7 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Ronald", LastName = "Fillmore", Title = "Production", Salary = 2800000, ReportsTo = -1, ID = 8 });
-        //Management
 
+        //Management
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Andrew", LastName = "Fuller", ID = 9, Salary = 1200000, ReportsTo = 2, Title = "Vice President" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Janet", LastName = "Leverling", ID = 10, Salary = 1000000, ReportsTo = 2, Title = "GM" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Steven", LastName = "Buchanan", ID = 11, Salary = 900000, ReportsTo = 2, Title = "Manager" });
@@ -638,7 +658,6 @@ public class ViewModel
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Albert", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
 
         //Purchasing
-
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Pamela", LastName = "Wolfe", ID = 26, Salary = 600000, ReportsTo = 7, Title = "Purchase Manager" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Blythe", ID = 27, Salary = 550000, ReportsTo = 7, Title = "Store Keeper" });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "David", LastName = "Campbell", ID = 28, Salary = 450000, ReportsTo = 7, Title = "Store Keeper" });
@@ -665,13 +684,16 @@ treeGrid.RequestTreeItems += TreeGrid_RequestTreeItems;
       
 private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEventArgs args)
 {
+
     if (args.ParentItem == null)
     {
         args.ChildItems = viewModel.Employees.Where(x => x.ReportsTo == -1);
     }
+
     else
     {
         EmployeeInfo employee = args.ParentItem as EmployeeInfo;
+
         if (employee != null)
         {
             args.ChildItems = viewModel.GetEmployees().Where(x => x.ReportsTo == employee.ID);
