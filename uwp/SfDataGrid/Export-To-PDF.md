@@ -27,11 +27,8 @@ You can export SfDataGrid to PDF by using the following extension methods presen
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Converter;
-
 var document = dataGrid.ExportToPdf();
-
-StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + 
-".pdf", CreationCollisionOption.ReplaceExisting);
+StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
     await document.SaveAsync(storageFile);
@@ -54,11 +51,8 @@ You can export SfDataGrid to PDF by fitting column widths based on its content b
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.AutoColumnWidth = true;
-
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -76,11 +70,8 @@ You can export SfDataGrid to PDF by fitting row heights based on its content by 
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-           
 options.AutoRowHeight = true;
-
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -98,13 +89,9 @@ By default, all the columns (including hidden columns) in SfDataGrid will be exp
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExcludeColumns.Add("CustomerName");
-
 options.ExcludeColumns.Add("Country");
-
 var document = dataGrid.ExportToPdf(options);
-            
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -123,11 +110,8 @@ By default, display text only will be exported to PDF. If you want to export the
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportFormat = false;
-
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -145,11 +129,8 @@ Column headers can be exported on each page by setting [RepeatHeaders](https://h
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.RepeatHeaders = true;
-
 var document = dataGrid.ExportToPdf(options);            
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -165,11 +146,8 @@ While exporting to PDF, you can fit all columns on one page by setting [FitAllCo
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.FitAllColumnsInOnePage = true;
-
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -185,11 +163,8 @@ While exporting data to PDF, if paging is used, current page only will be export
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportAllPages = true;      
-      
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -207,11 +182,8 @@ By default, all the groups in SfDataGrid will be exported to PDF. If you want to
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportGroups = false;
-
 var document = dataGrid.ExportToPdf(options);     
-       
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -229,11 +201,8 @@ By default, group summaries in SfDataGrid will be exported to PDF. If you want t
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportGroupSummary = true;
-                        
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -251,11 +220,8 @@ By default, table summaries in SfDataGrid will be exported to PDF. If you want t
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportTableSummary = true;
-                        
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -273,11 +239,8 @@ You can export unbound rows to PDF by setting [ExportUnBoundRows](https://help.s
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportUnBoundRows = true;
-
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -295,11 +258,8 @@ You can export stacked headers to PDF by setting [ExportStackedHeaders](https://
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportStackedHeaders = true;
-
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -317,11 +277,8 @@ You can export merged cells to PDF by setting [ExportMergedCells](https://help.s
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportMergedCells = true;
-
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -341,11 +298,8 @@ You can insert string, image or any drawing in header and footer in [PdfHeaderFo
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.PageHeaderFooterEventHandler = PdfHeaderFooterEventHandler;
-
 var document = this.dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -354,13 +308,9 @@ if (storageFile != null)
 static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs e)
 {
     PdfFont font = new PdfStandardFont(PdfFontFamily.TimesRoman, 20f,  PdfFontStyle.Bold);
-                     
     var width = e.PdfPage.GetClientSize().Width;
-    
     PdfPageTemplateElement header = new PdfPageTemplateElement(width, 38);
-    
     header.Graphics.DrawString("Order Details", font, PdfPens.Black, 70, 3);
-    
     e.PdfDocumentTemplate.Top = header;
 }
 {% endhighlight %}
@@ -380,23 +330,16 @@ To change the page orientation, you need to get the exported [PdfGrid](https://h
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 var document = new PdfDocument();
-
 document.PageSettings.Orientation = PdfPageOrientation.Landscape;
-
 var page = document.Pages.Add();
-
 var PDFGrid = dataGrid.ExportToPdfGrid(dataGrid.View, options);
-
 var format = new PdfGridLayoutFormat()
 {
     Layout = PdfLayoutType.Paginate,
     Break = PdfLayoutBreakType.FitPage
 };
-
 PDFGrid.Draw(page, new PointF(), format);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -412,11 +355,8 @@ By default, entire grid will be exported to PDF. You can export selected items o
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.AutoColumnWidth = true;
-
 var document = this.dataGrid.ExportToPdf(this.dataGrid.SelectedItems, options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -435,20 +375,14 @@ After exporting to PDF, you can save exported PDF file to stream by using [Save]
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 var document = dataGrid.ExportToPdf();
-
 FileStream stream = null;
-
 string directory = @"C:\Users\administrator\Documents\output.pdf";
-
 await Task.Run(() =>
 {
     stream = new FileStream(directory, FileMode.Create);
 });          
-
 document.Save(stream);
-
 document.Close();
 {% endhighlight %}
 {% endtabs %}
@@ -460,40 +394,30 @@ After exporting to PDF, you can save exported PDF file by opening `FileSavePicke
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 var document = dataGrid.ExportToPdf();
-
 var savePicker = new FileSavePicker
 {
     SuggestedStartLocation = PickerLocationId.Desktop,
     SuggestedFileName = "Sample"
 };
-            
 savePicker.FileTypeChoices.Add("PDF File (.pdf)", new List<string>() { ".pdf" });
-
 var storageFile = await savePicker.PickSaveFileAsync();
 
 if (storageFile != null)
     await document.SaveAsync(storageFile);
-
 var messageDialog = new MessageDialog("Do you want to view the Document?", "File has been created successfully.");
-
 var yesCmd = new UICommand("Yes");
-
 var noCmd = new UICommand("No");
-
 messageDialog.Commands.Add(yesCmd);
-
 messageDialog.Commands.Add(noCmd);
-
 var cmd = await messageDialog.ShowAsync();
 
 if (cmd == yesCmd)
 {
+
     // Launch the saved file
     bool success = await Windows.System.Launcher.LaunchFileAsync(storageFile);
 }
-
 document.Close();
 {% endhighlight %}
 {% endtabs %}
@@ -506,20 +430,14 @@ You can open the saved PDF file using `FileOpenPicker`.
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 var document = dataGrid.ExportToPdf();
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
     await document.SaveAsync(storageFile);
-
 FileOpenPicker openPicker = new FileOpenPicker();
-
 openPicker.FileTypeFilter.Add(".pdf");
-
 openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;
-
 StorageFile file = await openPicker.PickSingleFileAsync();
 {% endhighlight %}
 {% endtabs %}
@@ -534,19 +452,16 @@ You can customize the cell styles based on `CellType` by using [ExportingEventHa
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.ExportingEventHandler = GridPdfExportingEventHandler;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
     await document.SaveAsync(storageFile);
 
-
 void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {
+
     if (e.CellType == ExportCellType.HeaderCell)
         e.CellStyle.BackgroundBrush = PdfBrushes.LightSteelBlue;
 
@@ -570,26 +485,20 @@ By default, some fonts (such as Unicode font) are not supported in PDF. In
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.ExportingEventHandler = GridPdfExportingEventHandler;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
     await document.SaveAsync(storageFile);
 
-
 void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {
+
     if (e.CellType != ExportCellType.RecordCell)
         return;
-
     Stream stream = typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Assets.segoeui.ttf") as Stream;
-
     var font = new PdfTrueTypeFont(stream, 9);
-
     e.CellStyle.Font = font;
 }
 {% endhighlight %}
@@ -612,25 +521,26 @@ You can customize the call values while exporting to PDF by using [CellsExportin
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.CellsExportingEventHandler = CellsExportingEventHandler;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
     await document.SaveAsync(storageFile);
 
-
 private void CellsExportingEventHandler(object sender, GridCellPdfExportingEventArgs e)
 {
+
     // Based on the column mapping name and the cell type, you can change the cell values while exporting to PDF.
+
     if (e.CellType == ExportCellType.RecordCell && e.ColumnName == "IsClosed")
     {
+
         //if the cell value is True, "Y" will be displayed else "N" will be displayed.
+
         if (e.CellValue.Equals("True"))
             e.CellValue = "Y";
+
         else
             e.CellValue = "N";
     }
@@ -651,11 +561,8 @@ You can customize the rows based on the record values by using [CellsExportingEv
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.CellsExportingEventHandler = CellsExportingEventHandler;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -663,17 +570,15 @@ if (storageFile != null)
     
 private void CellsExportingEventHandler(object sender, GridCellPdfExportingEventArgs e)
 {
+
     if (!(e.NodeEntry is OrderInfo))
         return;
         
     if ((e.NodeEntry as OrderInfo).Country == "Mexico")
     {
         var cellStyle = new PdfGridCellStyle();
-        
         cellStyle.BackgroundBrush = PdfBrushes.LightPink;
-                     
         cellStyle.Borders.All = new PdfPen(PdfBrushes.DarkGray, 0.2f);
-        
         e.PdfGridCell.Style = cellStyle;
     }
 }
@@ -689,11 +594,8 @@ By default, images which is loaded in the GridTemplateColumn will not be exporte
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.CellsExportingEventHandler = CellsExportingEventHandler;        
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -708,23 +610,23 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
         PdfPen normalBorder = new PdfPen(PdfBrushes.DarkGray, 0.2f);
 
         //Images are exported based on the CellValue 
+
         if (e.CellValue.Equals("True"))
         {
+
             //Access the image from the specified path 
             style.BackgroundImage = PDFImage.FromStream(typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Images.True.png") as Stream);
         }
+
         else
         {
             style.BackgroundImage = PDFImage.FromStream(typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("Localization.Images.False.png") as Stream);
         }
-
         e.PdfGridCell.ImagePosition = PdfGridImagePosition.Fit;
-
         e.PdfGridCell.Style = style;
 
         //customize the Border color of PdfGridCell
         e.PdfGridCell.Style.Borders.All = normalBorder;
-
         e.CellValue = null;
     }
 }
@@ -742,11 +644,8 @@ By default, `DetailsViewDataGrid` will not be exported to PDF. You can export `D
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-
 options.ExportDetailsView = true;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -759,13 +658,9 @@ By default, only expanded DetailsViewDataGrid’s only will be exported to PDF d
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.ExportDetailsView = true;
-
 options.ExportAllDetails = true;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -789,15 +684,10 @@ You can exclude particular `DetailsViewDataGrid` while exporting, by using the [
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.ExportDetailsView = true;
-
 options.ExportAllDetails = true;
-
 options.ChildGridExportingEventHandler = ChildGridExportingEventHandler;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
@@ -806,6 +696,7 @@ if (storageFile != null)
 void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArgs e)
 {
     var recordEntry = e.NodeEntry as RecordEntry;
+
     if ((recordEntry.Data as OrderInfo).OrderID == 1002)
         e.Cancel = true;
 }
@@ -824,19 +715,13 @@ You can exclude `DetailsViewDataGrid` columns while exporting, by using `ChildGr
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.ExportDetailsView = true;
-
 options.ChildGridExportingEventHandler = ChildGridExportingEventHandler;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
     await document.SaveAsync(storageFile);
-    
-    
     
 void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArgs e)
 { 
@@ -856,33 +741,25 @@ Like parent DataGrid, you can customize the `DetailsViewDataGrid` cells also by 
 {% tabs %}
 {% highlight c# %}
 var options = new PdfExportingOptions();
-
 options.ExportDetailsView = true;
-
 options.CellsExportingEventHandler = CellsExportingEventHandler;
-
 var document = dataGrid.ExportToPdf(options);
-
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
 if (storageFile != null)
     await document.SaveAsync(storageFile);
 
-
-
 private void CellsExportingEventHandler(object sender, GridCellPdfExportingEventArgs e)
 {
+
     if (e.GridViewDefinition == null || e.GridViewDefinition.RelationalColumn != "ProductDetails")                                     
         return;
         
     if (e.ColumnName == "OrderID")
     {
         var cellStyle = new PdfGridCellStyle();
-        
         cellStyle.BackgroundBrush = PdfBrushes.Wheat;
-        
         cellStyle.Borders.All = new PdfPen(PdfBrushes.DarkGray, 0.2f);
-        
         e.PdfGridCell.Style = cellStyle;
     }
 }
