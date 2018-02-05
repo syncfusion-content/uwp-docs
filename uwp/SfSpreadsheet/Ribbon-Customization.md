@@ -34,7 +34,6 @@ To create a custom Ribbon tab with user defined menu options in `SfSpreadsheetRi
 {% tabs %}
 {% highlight c# %}
 
-
 ribbon.Loaded += ribbon_Loaded;
 
 void ribbon_Loaded(object sender, RoutedEventArgs e)
@@ -43,24 +42,24 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
 
     if (ribbon1 != null)
     {
-      SfRibbonTab ribbonTab = new SfRibbonTab();
-      ribbonTab.Caption = "OTHER";
-      SfRibbonButton Button1 = new SfRibbonButton();
-      Button1.Label = "PRINT";              
-      Button1.SizeMode = SizeMode.Large;                
-      Button1.Click += Button1_Click;
+        SfRibbonTab ribbonTab = new SfRibbonTab();
+        ribbonTab.Caption = "OTHER";
+        SfRibbonButton Button1 = new SfRibbonButton();
+        Button1.Label = "PRINT";              
+        Button1.SizeMode = SizeMode.Large;                
+        Button1.Click += Button1_Click;
 
-      SfRibbonButton Button2 = new SfRibbonButton();
-      Button2.Label = "PRINT PREVIEW";
-      Button2.SizeMode = SizeMode.Large; 
-      Button2.Click += Button2_Click;
+        SfRibbonButton Button2 = new SfRibbonButton();
+        Button2.Label = "PRINT PREVIEW";
+        Button2.SizeMode = SizeMode.Large; 
+        Button2.Click += Button2_Click;
 
-      var customRibbonBar = new SfRibbonBar();
-      customRibbonBar.Header = "Printing Options";
-      customRibbonBar.Items.Add(Button1);
-      customRibbonBar.Items.Add(Button2);               
-      ribbonTab.Items.Add(customRibbonBar);
-      ribbon1.Items.Add(ribbonTab);
+        var customRibbonBar = new SfRibbonBar();
+        customRibbonBar.Header = "Printing Options";
+        customRibbonBar.Items.Add(Button1);
+        customRibbonBar.Items.Add(Button2);               
+        ribbonTab.Items.Add(customRibbonBar);
+       ribbon1.Items.Add(ribbonTab);
     }
 
 }
@@ -93,12 +92,12 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
     
     if (ribbon1 != null)
     {
-      var ribbonTab = ribbon1.Items[2] as RibbonTab;
-      RibbonButton Button1 = new RibbonButton();
-      Button1.Label = "PRINT";
-      Button1.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
-      Button1.Click += Button1_Click;
-      ribbonTab.Items.Add(Button1);
+        var ribbonTab = ribbon1.Items[2] as RibbonTab;
+        RibbonButton Button1 = new RibbonButton();
+        Button1.Label = "PRINT";
+        Button1.SmallIcon = new BitmapImage(new Uri("/../Icon/Icons_Print.png", UriKind.Relative));
+        Button1.Click += Button1_Click;
+        ribbonTab.Items.Add(Button1);
     }
 }
 
@@ -127,10 +126,11 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
     var ribbon1 = GridUtil.GetVisualChild<SfRibbon>(sender as FrameworkElement);
     
     //To remove the Data tab from the ribbon,
+
     if (ribbon1 != null)
     {
-      var item = ribbon1.Items[1];
-      ribbon1.Items.Remove(item);
+        var item = ribbon1.Items[1];
+        ribbon1.Items.Remove(item);
     }
 }
 
@@ -163,8 +163,8 @@ void ribbon_Loaded(object sender, RoutedEventArgs e)
     
     if (ribbon1 != null)
     {
-      var ribbonTab = ribbon1.Items[2] as RibbonTab;
-      ribbonTab.Items.Remove(ribbonTab.Items[1]);
+        var ribbonTab = ribbon1.Items[2] as RibbonTab;
+        ribbonTab.Items.Remove(ribbonTab.Items[1]);
     }
 }
 
