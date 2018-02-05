@@ -26,7 +26,6 @@ You can validate the data by implementing the [INotifyDataErrorInfo](https://msd
 {% highlight c# %}
 public class OrderInfo : INotifyDataErrorInfo
 {
-
     private string city;
 
     public string City
@@ -37,6 +36,7 @@ public class OrderInfo : INotifyDataErrorInfo
 
     public System.Collections.IEnumerable GetErrors(string propertyName)
     {
+
         if (!propertyName.Equals("City"))
             return null;
         List<string> errors = new List<string>();    
@@ -48,6 +48,7 @@ public class OrderInfo : INotifyDataErrorInfo
     }
 
     [Display(AutoGenerateField = false)]
+
     public bool HasErrors
     {
         get
@@ -88,6 +89,7 @@ The numeric type like int, double, decimal properties can be validated using [Ra
 {% highlight c# %}
 private int orderID;
 [Range(1001, 1005, ErrorMessage = "OrderID between 1001 and 1005 alone processed")]        
+
 public int OrderID
 {
     get { return orderID; }
@@ -96,6 +98,7 @@ public int OrderID
 
 private decimal price;
 [Range(typeof(decimal),"12","20")]
+
 public decimal Price
 {
     get { return price; }
@@ -110,6 +113,7 @@ The string type property can be validated using [Required](https://msdn.microsof
 {% highlight c# %}
 private string shippingCity;
 [Required]
+
 public string ShipCity
 {
     get { return shippingCity; }
@@ -118,6 +122,7 @@ public string ShipCity
 
 private string customerName;
 [StringLength(17)]
+
 public string CustomerName
 {
     get { return customerName; }
@@ -131,6 +136,7 @@ The data that has heterogeneous type (combination of number, special character) 
 {% tabs %}
 {% highlight c# %}
 [RegularExpressionAttribute(@"^[a-zA-Z]{1,40}$", ErrorMessage="Numbers and special characters not allowed")]
+
 public string CustomerID
 {
     get { return customerId; }
@@ -153,8 +159,10 @@ You can validate the cells using [CurrentCellValidating](https://help.syncfusion
 {% tabs %}
 {% highlight c# %}
 treeGrid.CurrentCellValidating += TreeGrid_CurrentCellValidating;
+
 private void TreeGrid_CurrentCellValidating(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValidatingEventArgs e)
 {
+
     if (e.NewValue.ToString().Equals("1004"))
     {
         e.IsValid = false;
@@ -172,7 +180,6 @@ treeGrid.CurrentCellValidated += TreeGrid_CurrentCellValidated;
 
 private void TreeGrid_CurrentCellValidated(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValidatedEventArgs e)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -191,6 +198,7 @@ treeGrid.RowValidating += TreeGrid_RowValidating;
 private void TreeGrid_RowValidating(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowValidatingEventArgs e)
 {
     var data = e.RowData.GetType().GetProperty("FirstName").GetValue(e.RowData);
+
     if (data.ToString().Equals("Andrew"))
     {
         e.IsValid = false;
@@ -208,7 +216,6 @@ treeGrid.RowValidated += TreeGrid_RowValidated;
 
 void treeGrid_RowValidated(object sender, TreeGridRowValidatedEventArgs e)
 {
-
 }
 {% endhighlight %}
 {% endtabs %}
@@ -294,7 +301,6 @@ You can change the validation error template shape of the `TreeGridCell` by ch
                 </Setter>
             </Style>
         </ResourceDictionary>
-
 </Page.Resources>
 {% endhighlight %}
 {% endtabs %}
@@ -308,29 +314,29 @@ You can change the validation error template color of the `TreeGridCell` by ch
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///Syncfusion.SfGrid.UWP/Control/Themes/Generic.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-            <local:BoolToVisibilityConverter x:Key="VisibilityConverter" />
-            <Style TargetType="syncfusion:TreeGridExpanderCell">
-                <Setter Property="Background" Value="Transparent" />
-                <Setter Property="BorderThickness" Value="0,0,1,1" />
-                <Setter Property="BorderBrush" Value="Gray" />
-                <Setter Property="Padding" Value="0" />
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="syncfusion:TreeGridExpanderCell">
-                            <Grid x:Name="Root"
-                                  BorderBrush="{TemplateBinding BorderBrush}"
-                                  BorderThickness="{TemplateBinding BorderThickness}">
-                                <Grid Margin="{TemplateBinding IndentMargin}">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="18" />
-                                        <ColumnDefinition Width="Auto" />
-                                        <ColumnDefinition Width="*" />
-                                    </Grid.ColumnDefinitions>
-                                    <syncfusion:TreeGridExpander x:Name="PART_ExpanderCell"
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="ms-appx:///Syncfusion.SfGrid.UWP/Control/Themes/Generic.xaml" />
+        </ResourceDictionary.MergedDictionaries>
+        <local:BoolToVisibilityConverter x:Key="VisibilityConverter" />
+        <Style TargetType="syncfusion:TreeGridExpanderCell">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0,0,1,1" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="syncfusion:TreeGridExpanderCell">
+                        <Grid x:Name="Root"
+                              BorderBrush="{TemplateBinding BorderBrush}"
+                              BorderThickness="{TemplateBinding BorderThickness}">
+                            <Grid Margin="{TemplateBinding IndentMargin}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="18" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <syncfusion:TreeGridExpander x:Name="PART_ExpanderCell"
                                                                  Grid.Column="0"
                                                                  Width="16"
                                                                  Height="16"
@@ -414,11 +420,11 @@ You can change the validation error template color of the `TreeGridCell` by ch
                                     </VisualStateGroup>
                                 </VisualStateManager.VisualStateGroups>
                             </Grid>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-        </ResourceDictionary>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </ResourceDictionary>
 </Page.Resources>
 {% endhighlight %}
 {% highlight c# %}
@@ -426,6 +432,7 @@ public class BoolToVisibilityConverter : IValueConverter
 {     
     public object Convert(object value, Type targetType, object parameter, string language)
     {
+
         if ((bool)value)
             return Visibility.Visible;
         return Visibility.Collapsed;
@@ -433,6 +440,7 @@ public class BoolToVisibilityConverter : IValueConverter
     
     public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
+
         if ((Visibility)value == Visibility.Visible)
             return true;
         return false;
@@ -454,80 +462,80 @@ You can change the error tip background color by setting `Background` property o
 {% tabs %}
 {% highlight xaml %}
 <ControlTemplate x:Key="ValidationToolTipTemplate">
-                <Grid x:Name="PART_ToolTipPresenter"
-                      Margin="5,0"
-                      Opacity="0"
-                      RenderTransformOrigin="0,0">
-                    <Grid.RenderTransform>
-                        <TranslateTransform x:Name="Transform" X="-25" />
-                    </Grid.RenderTransform>
+    <Grid x:Name="PART_ToolTipPresenter"
+          Margin="5,0"
+          Opacity="0"
+          RenderTransformOrigin="0,0">
+        <Grid.RenderTransform>
+            <TranslateTransform x:Name="Transform" X="-25" />
+        </Grid.RenderTransform>
 
-                    <Border Margin="4,4,-4,-4"
-                            Background="#052A2E31"
-                            CornerRadius="5" />
-                    <Border Margin="3,3,-3,-3"
-                            Background="#152A2E31"
-                            CornerRadius="4" />
-                    <Border Margin="2,2,-2,-2"
-                            Background="#252A2E31"
-                            CornerRadius="3" />
-                    <Border Margin="1,1,-1,-1"
-                            Background="#352A2E31"
-                            CornerRadius="2" />
+        <Border Margin="4,4,-4,-4"
+            Background="#052A2E31"
+            CornerRadius="5" />
+        <Border Margin="3,3,-3,-3"
+            Background="#152A2E31"
+            CornerRadius="4" />
+        <Border Margin="2,2,-2,-2"
+            Background="#252A2E31"
+            CornerRadius="3" />
+        <Border Margin="1,1,-1,-1"
+            Background="#352A2E31"
+            CornerRadius="2" />
 
-                    <Border Background="Orange" CornerRadius="2" />
-                    <Border CornerRadius="2">
-                        <TextBlock MaxWidth="250"
-                                   Margin="8,4,8,4"
-                                   Foreground="Black"
-                                   Text="{TemplateBinding Tag}"
-                                   TextWrapping="Wrap"
-                                   UseLayoutRounding="false" />
-                    </Border>
-                    <VisualStateManager.VisualStateGroups>
-                        <VisualStateGroup x:Name="OpenStates">
-                            <VisualStateGroup.Transitions>
-                                <VisualTransition GeneratedDuration="0" />
-                                <VisualTransition GeneratedDuration="0:0:0.2" To="Opened">
-                                    <Storyboard>
-                                        <DoubleAnimation Duration="0:0:0.2"
-                                                         Storyboard.TargetName="Transform"
-                                                         Storyboard.TargetProperty="X"
-                                                         To="0">
-                                            <DoubleAnimation.EasingFunction>
-                                                <BackEase Amplitude=".3" EasingMode="EaseOut" />
-                                            </DoubleAnimation.EasingFunction>
-                                        </DoubleAnimation>
-                                        <DoubleAnimation Duration="0:0:0.2"
-                                                         Storyboard.TargetName="PART_ToolTipPresenter"
-                                                         Storyboard.TargetProperty="Opacity"
-                                                         To="1" />
-                                    </Storyboard>
-                                </VisualTransition>
-                            </VisualStateGroup.Transitions>
-                            <VisualState x:Name="Closed">
-                                <Storyboard>
-                                    <DoubleAnimation Duration="0"
-                                                     Storyboard.TargetName="PART_ToolTipPresenter"
-                                                     Storyboard.TargetProperty="Opacity"
-                                                     To="0" />
-                                </Storyboard>
-                            </VisualState>
-                            <VisualState x:Name="Opened">
-                                <Storyboard>
-                                    <DoubleAnimation Duration="0"
-                                                     Storyboard.TargetName="Transform"
-                                                     Storyboard.TargetProperty="X"
-                                                     To="0" />
-                                    <DoubleAnimation Duration="0"
-                                                     Storyboard.TargetName="PART_ToolTipPresenter"
-                                                     Storyboard.TargetProperty="Opacity"
-                                                     To="1" />
-                                </Storyboard>
-                            </VisualState>
-                        </VisualStateGroup>
-                    </VisualStateManager.VisualStateGroups>
-                </Grid>
+        <Border Background="Orange" CornerRadius="2" />
+            <Border CornerRadius="2">
+                <TextBlock MaxWidth="250"
+                    Margin="8,4,8,4"
+                   Foreground="Black"
+                   Text="{TemplateBinding Tag}"
+                   TextWrapping="Wrap"
+                   UseLayoutRounding="false" />
+        </Border>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="OpenStates">
+                <VisualStateGroup.Transitions>
+                    <VisualTransition GeneratedDuration="0" />
+                    <VisualTransition GeneratedDuration="0:0:0.2" To="Opened">
+                    <Storyboard>
+                    <DoubleAnimation Duration="0:0:0.2"
+                         Storyboard.TargetName="Transform"
+                         Storyboard.TargetProperty="X"
+                         To="0">
+                        <DoubleAnimation.EasingFunction>
+                        <BackEase Amplitude=".3" EasingMode="EaseOut" />
+                        </DoubleAnimation.EasingFunction>
+                    </DoubleAnimation>
+                    <DoubleAnimation Duration="0:0:0.2"
+                        Storyboard.TargetName="PART_ToolTipPresenter"
+                         Storyboard.TargetProperty="Opacity"
+                         To="1" />
+                    </Storyboard>
+                    </VisualTransition>
+                </VisualStateGroup.Transitions>
+                <VisualState x:Name="Closed">
+                <Storyboard>
+                    <DoubleAnimation Duration="0"
+                         Storyboard.TargetName="PART_ToolTipPresenter"
+                         Storyboard.TargetProperty="Opacity"
+                         To="0" />
+                </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Opened">
+                    <Storyboard>
+                        <DoubleAnimation Duration="0"
+                         Storyboard.TargetName="Transform"
+                         Storyboard.TargetProperty="X"
+                         To="0" />
+                        <DoubleAnimation Duration="0"
+                         Storyboard.TargetName="PART_ToolTipPresenter"
+                         Storyboard.TargetProperty="Opacity"
+                         To="1" />
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
 </ControlTemplate>
 {% endhighlight %}
 {% endtabs %}
@@ -541,10 +549,12 @@ SfTreeGrid supports to show the error information in row header by setting INoti
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateField = false)]
+
 public bool HasErrors
 {
     get
     {
+ 
         if (this.City.Contains("Mexico D.F."))
             return true;
         return false;
@@ -570,6 +580,7 @@ private void TreeGrid_CurrentCellValueChanged(object sender, Syncfusion.UI.Xaml.
     int columnIndex = this.treeGrid.ResolveToGridVisibleColumnIndex(e.RowColumnIndex.ColumnIndex);
 
     //We are enabling the RowValidating, CellValidating event if the changes happen in GridCheckBoxColumn
+
     if (this.treeGrid.Columns[columnIndex].CellType == "CheckBox")
     {
         this.treeGrid.GetValidationHelper().SetCurrentRowValidated(false);
@@ -578,8 +589,10 @@ private void TreeGrid_CurrentCellValueChanged(object sender, Syncfusion.UI.Xaml.
 }
 
 treeGrid.CurrentCellValidating += TreeGrid_CurrentCellValidating;
+
 private void TreeGrid_CurrentCellValidating(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValidatingEventArgs e)
 {
+
     if (!(bool)e.NewValue)
     {
         e.IsValid = false;
@@ -592,6 +605,7 @@ treeGrid.RowValidating += TreeGrid_RowValidating;
 private void TreeGrid_RowValidating(object sender, Syncfusion.UI.Xaml.TreeGrid.TreeGridRowValidatingEventArgs e)
 {
     var status = e.RowData.GetType().GetProperty("Availability").GetValue(e.RowData);
+
     if (!(bool)status)
     {
         e.IsValid = false;
