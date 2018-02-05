@@ -218,17 +218,11 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar` and 
                        AllowEditing="True"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridNumericColumn HeaderText="Unit Price" MappingName="UnitPrice">
-
             <syncfusion:GridNumericColumn.CellTemplate>
-
                 <DataTemplate>
-
                     <Grid>
-
                         <ProgressBar x:Name="progressBar"
                                      Height="50"
                                      Background="Transparent"
@@ -237,22 +231,15 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar` and 
                                      Minimum="0"
                                      Visibility="Visible"
                                      Value="{Binding Path=UnitPrice}" />
-
                         <TextBlock HorizontalAlignment="Right"
                                    VerticalAlignment="Center"
                                    Text="{Binding Path=UnitPrice}"
                                    TextAlignment="Center" />
-
                     </Grid>
-
                 </DataTemplate>
-
             </syncfusion:GridNumericColumn.CellTemplate>
-
         </syncfusion:GridNumericColumn>
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -274,33 +261,26 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-        
     <DataTemplate x:Key="cellTemplate">
         <TextBlock Margin="3,0,0,0"
                    Foreground="Red"
                    Text="{Binding Path=Value}" />
     </DataTemplate>
-
 </Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTextColumn CellTemplate="{StaticResource cellTemplate}"
                                    HeaderText="Order ID"
                                    MappingName="OrderID"
                                    SetCellBoundValue="True" />
-
         <syncfusion:GridTextColumn CellTemplate="{StaticResource cellTemplate}"
                                    HeaderText="Customer Name"
                                    MappingName="CustomerName"
                                    SetCellBoundValue="True" />
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -317,14 +297,12 @@ For example, two different templates loaded alternatively in OrderID column.
 {% highlight xaml %}
 <App.Resources>
     <local:CustomCellTemplateSelector x:Key="cellTemplateSelector"/>
-
     <DataTemplate   x:Key="DefaultTemplate">
         <TextBlock  Background="Wheat"
                     Foreground="Red"
                     Text="{Binding Path=OrderID}"
                     TextAlignment="Center" />
     </DataTemplate>
-
     <DataTemplate   x:Key="AlternateTemplate">
         <TextBlock  Background="Beige"
                     Foreground="Green"
@@ -341,11 +319,12 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on OrderI
 {% highlight c# %}
 public class CustomCellTemplateSelector: DataTemplateSelector
 {
+
     protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
     {
+
         if (item == null)
             return null;
-
         var data = item as OrderInfo;
 
         if (data.OrderID % 2 == 0)
@@ -391,15 +370,10 @@ Below command defined in ViewModel is bound to `Button` inside `CellTemplate`. B
 public class BaseCommand : ICommand
 {
     #region Fields
-
     readonly Action<object> _execute;
-
     readonly Predicate<object> _canExecute;
-
     public event EventHandler CanExecuteChanged;
-
     #endregion
-
     #region Constructors
     
     /// <summary>
@@ -407,18 +381,18 @@ public class BaseCommand : ICommand
     /// </summary>
     /// <param name="execute">The execution logic.</param>
     public BaseCommand(Action<object> execute)
-
         : this(execute, null)
     {
     }
-
     /// <summary>
     /// Creates a new command.
     /// </summary>
     /// <param name="execute">The execution logic.</param>
     /// <param name="canExecute">The execution status logic.</param>
+
     public BaseCommand(Action<object> execute, Predicate<object> canExecute)
     {
+
         if (execute == null)
             throw new ArgumentNullException("execute");
         _execute = execute;
@@ -448,21 +422,26 @@ Below code, defines the command for `Button` in ViewModel.
 public class ViewModel
 {    
     private BaseCommand deleteRecord;
+
     public BaseCommand DeleteRecord
     {
         get
         {
+
             if (deleteRecord == null)
                 deleteRecord = new BaseCommand(OnDeleteRecordClicked, OnCanDelete);
             return deleteRecord;
         }
     }
+
     private static bool OnCanDelete(object obj)
     {
         return true;
     }
+
     private void OnDeleteRecordClicked(object obj)
     {
+
         //TODO ACTION.
     }
 }
@@ -477,35 +456,23 @@ In the below code, Button inside CellTemplate bound to the command in ViewModel.
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTextColumn MappingName="Delete">
-
             <syncfusion:GridTextColumn.CellTemplate>
-
                 <DataTemplate>
-
                     <Button Command="{Binding DataContext.DeleteRecord,
                                               ElementName=dataGrid}"
                             CommandParameter="{Binding}"
                             Content="Delete" />
-
                     <!--  or  -->
-
                     <Button Command="{Binding DeleteRecord,
                                               Source={StaticResource viewModel}}"
                             CommandParameter="{Binding}"
                             Content="Delete" />
-
                 </DataTemplate>
-
             </syncfusion:GridTextColumn.CellTemplate>
-
         </syncfusion:GridTextColumn>
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -522,6 +489,7 @@ You can format the column using `Converter` property by defining `DisplayBinding
 {% highlight c# %}
 public class CurrencyFormatConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         return string.Format("{0:C2}", value);
@@ -545,16 +513,12 @@ public class CurrencyFormatConverter : IValueConverter
                        AllowEditing="True"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridNumericColumn DisplayBinding="{Binding UnitPrice,
                                                                Converter={StaticResource currencyFormatConverter}}"
                                       HeaderText="Unit Price"
                                       MappingName="UnitPrice" />
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -568,8 +532,10 @@ this.dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
 
 private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "UnitPrice")
     {
+
         if (e.Column is GridNumericColumn)
         {
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
@@ -618,7 +584,6 @@ When column is auto-generated, you can style the column by handling `AutoGenerat
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-        
     <Style x:Key="cellStyle" TargetType="syncfusion:GridCell">
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontFamily" Value="Segoe UI" />
@@ -638,6 +603,7 @@ this.dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
 
 private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs e)
 {  
+
     if (e.Column.MappingName == "CustomerName")
         e.Column.CellStyle = this.Resources["cellStyle"] as Style;               
 }
@@ -656,7 +622,6 @@ Below code creates two different styles by TargetType `GridCell`.
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-
     <Style x:Key="cellStyle1" TargetType="syncfusion:GridCell">
         <Setter Property="Background" Value="Bisque" />
     </Style>
@@ -675,18 +640,17 @@ In the below code, returns the style based on OrderID value. Using `Container` y
 {% highlight c# %}
 public class CustomCellStyleSelector: StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var gridCell = container as GridCell;
-
         var mappingName = gridCell.ColumnBase.GridColumn.MappingName;
-
         var record = gridCell.DataContext;
-
         var cellValue = record.GetType().GetProperty(mappingName).GetValue(record);
 
         if (mappingName.Equals("OrderID"))
         {
+
             if (Convert.ToInt16(cellValue) <= 1005)
                 return App.Current.Resources["cellStyle1"] as Style;
 
@@ -725,6 +689,7 @@ this.dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;
 
 private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "OrderID")
     {
         e.Column.CellStyleSelector = new CustomCellStyleSelector();
@@ -778,23 +743,19 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 
 * Text trimming - You can [trim](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.texttrimming.aspx) the column’s data using `TextTrimming` property.
 * Text wrapping - You can [wrap](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.textwrapping.aspx) the column’s data using `TextWrapping` property.
- 
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTextColumn Width="60"
                                    HeaderText="Customer Name"
                                    MappingName="CustomerName"
                                    TextTrimming="CharacterEllipsis"
                                    TextWrapping="Wrap" />
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -811,13 +772,9 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTextColumn HeaderText="Customer Name" MappingName="CustomerName" />
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 
 {% endhighlight %}
@@ -855,13 +812,9 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-                       
     <syncfusion:SfDataGrid.Columns>
-    
-        <syncfusion:GridNumericColumn HeaderText="Quantity" MappingName="Quantity" />
-        
+            <syncfusion:GridNumericColumn HeaderText="Quantity" MappingName="Quantity" />
     </syncfusion:SfDataGrid.Columns>
-    
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -1048,7 +1001,6 @@ public class ViewModel
         get { return minDate; }
         set { minDate = value; RaisePropertyChanged("MinDate"); }
     }
-
     DateTime maxDate = new DateTime(2015 , 5 , 5);
     
     public DateTime MaxDate
@@ -1173,13 +1125,9 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridCheckBoxColumn HeaderText="Is Delivered" MappingName="IsDelivered" />
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -1205,31 +1153,20 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-                       
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTemplateColumn MappingName="CustomerID">           
-
             <syncfusion:GridTemplateColumn.CellTemplate>
-
                 <DataTemplate>
                     <TextBlock Text="{Binding CustomerID}" />
                 </DataTemplate>
-
             </syncfusion:GridTemplateColumn.CellTemplate>
-
             <syncfusion:GridTemplateColumn.EditTemplate>
-
                 <DataTemplate>
                     <TextBox Text="{Binding CustomerID, Mode=TwoWay}"  syncfusion:FocusManagerHelper.FocusedElement="True"/>
                 </DataTemplate>
-
             </syncfusion:GridTemplateColumn.EditTemplate>        
-    
-        </syncfusion:GridTemplateColumn>       
-
+            </syncfusion:GridTemplateColumn>       
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -1285,39 +1222,24 @@ You can use this property to start editing the template column value as like nor
 <syncfusion:SfDataGrid x:Name=”dataGrid”                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTemplateColumn MappingName="CustomerName">
-
             <syncfusion:GridTemplateColumn.CellTemplate>
-
                 <DataTemplate>
-
                     <Grid>
                         <TextBlock Text="{Binding CustomerName}" />
                     </Grid>
-
                 </DataTemplate>
-
             </syncfusion:GridTemplateColumn.CellTemplate>
-
             <syncfusion:GridTemplateColumn.EditTemplate>
-
                 <DataTemplate>
-
                     <Grid>
                         <TextBox Text="{Binding CustomerName}" syncfusion:FocusManagerHelper.FocusedElement="True" />
                     </Grid>
-
                 </DataTemplate>
-
             </syncfusion:GridTemplateColumn.EditTemplate>
-
         </syncfusion:GridTemplateColumn>
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -1340,40 +1262,24 @@ N> EditTemplate support available only for GridTemplateColumn.
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTemplateColumn MappingName="OrderID" SetCellBoundValue="True">
-
             <syncfusion:GridTemplateColumn.CellTemplate>
-
                 <DataTemplate>
-
                     <Grid>
                         <TextBlock Text="{Binding Value}" />
                     </Grid>
-
                 </DataTemplate>
-
             </syncfusion:GridTemplateColumn.CellTemplate>
-
             <syncfusion:GridTemplateColumn.EditTemplate>
-
                 <DataTemplate>
-
                     <Grid>
                         <TextBox Text="{Binding Value}" syncfusion:FocusManagerHelper.FocusedElement="True"  />
                     </Grid>
-
                 </DataTemplate>
-
             </syncfusion:GridTemplateColumn.EditTemplate>
-
-
         </syncfusion:GridTemplateColumn>
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -1423,14 +1329,18 @@ Below code returns the `DefaultTemplate` and `AlternateTemplate` based on OrderI
 {% highlight c# %}
 public class CustomEditTemplateSelector: DataTemplateSelector
 {
+ 
     protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
     {
+ 
         if (item == null)
             return null;
 
         var data = item as OrderInfo;
+ 
         if (data.OrderID % 2 == 0)
             return App.Current.Resources["AlternateEditTemplate"] as DataTemplate;
+ 
         else
             return App.Current.Resources["DefaultEditTemplate"] as DataTemplate;
     }
@@ -1451,15 +1361,11 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTemplateColumn MappingName="OrderID"
                                        CellTemplateSelector="{StaticResource cellTemplateSelector}"
                                        EditTemplateSelector="{StaticResource editTemplateSelector}"/>
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -1480,13 +1386,10 @@ By default, `GridComboBoxColumn` displays the value using `MappingName` property
                        ItemsSource="{Binding Orders}">
                        
     <syncfusion:SfDataGrid.Columns> 
-    
         <syncfusion:GridComboBoxColumn  HeaderText="Customer ID"
-                                        ItemsSource="{Binding ComboItems,
-                                                              Source={StaticResource viewModel}}"
+                                        ItemsSource="{Binding ComboItems, Source={StaticResource viewModel}}"
                                         MappingName=" Customer ID " />
     </syncfusion:SfDataGrid.Columns> 
-    
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -1534,6 +1437,7 @@ this.dataGrid.CellRenderers.Add("ComboBox", new GridCellComboBoxRendererExt());
 
 public class GridCellComboBoxRendererExt: GridCellComboBoxRenderer
 {
+
     protected override void OnEditElementLoaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
     {
         (sender as ComboBox).IsDropDownOpen = true;
@@ -1555,12 +1459,10 @@ By default, the `GroupCaptionText` will be displayed based on `MappingName`. You
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
         <syncfusion:GridComboBoxColumn DisplayMemberPath="CustomerID"
                                        HeaderText="Customer ID"
-                                       ItemsSource="{Binding Orders,
-                                                             Source={StaticResource viewModel}}"
+                                       ItemsSource="{Binding Orders, Source={StaticResource viewModel}}"
                                        MappingName="CustomerName"
                                        SelectedValuePath="CustomerName" />
     </syncfusion:SfDataGrid.Columns>
@@ -1576,15 +1478,15 @@ public class GroupCaptionConverter : IValueConverter
 {
     object IValueConverter.Convert(object value, Type targetType, object parameter, string language)
     {
+
         if (!(parameter is GridComboBoxColumn))
             return value;
-
         var column = parameter as GridComboBoxColumn; 
-        
         var record = value as OrderInfo;
-        
+    
         foreach (var item in column.ItemsSource)
         {
+
             if (record.CustomerName == (item as OrderInfo).CustomerName)
                 return (item as OrderInfo).CustomerID;
         }
@@ -1607,6 +1509,7 @@ this.dataGrid.GroupColumnDescriptions.CollectionChanged += GroupColumnDescriptio
 
 private void GroupColumnDescriptions_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
 {
+
     if (e.Action == NotifyCollectionChangedAction.Add)
     {
         var groupDescription = e.NewItems[0] as GroupColumnDescription;
@@ -1633,45 +1536,29 @@ You can change the value by selecting the item from drop down or you can edit th
                        AllowEditing="True"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridMultiColumnDropDownList AutoGenerateColumns="False"
                                                 DisplayMember="CustomerID"
                                                 HeaderText="Customer ID"
-                                                ItemsSource="{Binding Orders,
-                                                                      Source={StaticResource viewModel}}"
+                                                ItemsSource="{Binding Orders, Source={StaticResource viewModel}}"
                                                 MappingName="OrderID"
                                                 ValueMember="OrderID">
-
             <syncfusion:GridMultiColumnDropDownList.Columns>
-
                 <syncfusion:Columns>
-
                     <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
-
                     <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
-
                 </syncfusion:Columns>
-
             </syncfusion:GridMultiColumnDropDownList.Columns>
-
         </syncfusion:GridMultiColumnDropDownList>
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 
 {% endhighlight %}
 {% highlight c# %}
 var viewModel = this.dataGrid.DataContext as ViewModel;
-
 Columns columns = new Columns();
-
 columns.Add(new GridTextColumn() { HeaderText = "Order ID", MappingName = "OrderID" });
-
 columns.Add(new GridTextColumn() { HeaderText = "Customer ID", MappingName = "CustomerID" });
-
 this.dataGrid.Columns.Add(new GridMultiColumnDropDownList() { ItemsSource = viewModel.Orders, MappingName = "OrderID", HeaderText = "Customer ID", DisplayMember = "CustomerID", ValueMember = "OrderID", AutoGenerateColumns = false, Columns = columns });
 {% endhighlight %}
 {% endtabs %}
@@ -1737,6 +1624,7 @@ this.dataGrid.CellRenderers.Add("MultiColumnDropDown", new GridCellMultiColumnDr
 
 public class GridCellMultiColumnDropDownRendererExt: GridCellMultiColumnDropDownRenderer
 {
+
     protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
     {
         (sender as SfMultiColumnDropDownControl).AllowImmediatePopup = true;
@@ -1756,13 +1644,9 @@ public class GridCellMultiColumnDropDownRendererExt: GridCellMultiColumnDropDown
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridHyperlinkColumn HeaderText="Country" MappingName="Country" />
-
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -1880,18 +1764,13 @@ public class StringToImageConverter : IValueConverter
 <syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
                        AutoGenerateColumns="False" 
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridImageColumn MappingName="Country"
                             HeaderText="Flag"
                             Stretch="Uniform"
                             TextAlignment="Center"
-                            ValueBinding="{Binding Path=Country,
-                                                   Converter={StaticResource ImageConverter}}" />
-
+                            ValueBinding="{Binding Path=Country, Converter={StaticResource ImageConverter}}" />
     </syncfusion:SfDataGrid.Columns>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -1918,13 +1797,10 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 <syncfusion:SfDataGrid x:Name="dataGrid"                        
                        AutoGenerateColumns="False"                        
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridUpDownColumn Width="150"
                                      HeaderText="Unit Price"
                                      MappingName="UnitPrice" />
-
     </syncfusion:SfDataGrid.Columns>
 
 </syncfusion:SfDataGrid>
@@ -1974,9 +1850,9 @@ If you want to increment or decrement the value when <Kbd>PageUp</kbd> and <kbd>
                        AutoGenerateColumns="False"
                        AllowEditing="True"
                        ItemsSource="{Binding OrderInfoCollection}">
-            <syncfusion:SfDataGrid.Columns>
-                <syncfusion:GridToggleSwitchColumn HeaderText="IsDelivered" MappingName="IsDelivered"/>
-            </syncfusion:SfDataGrid.Columns>
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridToggleSwitchColumn HeaderText="IsDelivered" MappingName="IsDelivered"/>
+    </syncfusion:SfDataGrid.Columns>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -2006,6 +1882,7 @@ In the below code snippet, converter created to format the DateTimeOffSet value 
 {% highlight c# %}
 public class DateTimeOffsetFormatConverter : IValueConverter
 {
+
     private GridDateTimeOffsetColumn cachedColumn;
 
     public DateTimeOffsetFormatConverter(GridDateTimeOffsetColumn column)
@@ -2016,11 +1893,11 @@ public class DateTimeOffsetFormatConverter : IValueConverter
     object IValueConverter.Convert(object value, Type targetType, object parameter, string language)
     {
         value = ((DateTimeOffset)value).DateTime;
-
         var column = cachedColumn as GridDateTimeColumn;
 
         if (value == null || DBNull.Value == value)
         {
+
             if (column.AllowNullValue && column.MaxDate != System.DateTime.MaxValue && column.WaterMark == string.Empty)
                 return column.MaxDate;
                
@@ -2049,22 +1926,20 @@ public class DateTimeOffsetFormatConverter : IValueConverter
     }
 }
 
-
 public class DateTimeOffsetToDateTimeConverter : IValueConverter
 {
     object IValueConverter.Convert(object value, Type targetType, object parameter, string language)
     {
         if (value == null)
             return null;
-
         return value != null ? ((DateTimeOffset)value).DateTime : DateTime.Now;
     }
 
     object IValueConverter.ConvertBack(object value, Type targetType, object parameter, string language)
     {
+
         if (value == null)
             return null;
-
         return value != null ? (new DateTimeOffset((DateTime)value)) : new DateTimeOffset(DateTime.Now);
 
     }
@@ -2078,8 +1953,10 @@ In the below code snippet, `GridDateTimeOffsetColumn` column created from `GridD
 {% highlight c# %}
 public class GridDateTimeOffsetColumn:GridDateTimeColumn
 {
+
     protected override void SetDisplayBindingConverter()
     {
+
         if ((DisplayBinding as Binding).Converter == null)
             (DisplayBinding as Binding).Converter = new DateTimeOffsetFormatConverter(this);
 
@@ -2097,13 +1974,10 @@ In the below code snippet, created `GridDateTimeOffsetColumn` added to `SfDataGr
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <local:GridDateTimeOffsetColumn FormatString="F"
                                         HeaderText="Order Date"
                                         MappingName="OrderDate" />
-
     </syncfusion:SfDataGrid.Columns>
 
 </syncfusion:SfDataGrid>
@@ -2265,6 +2139,7 @@ this.dataGrid.CellRenderers.Add("TextBox", new GridCellTextBoxRendererExt());
 
 public class GridCellTextBoxRendererExt: GridCellTextBoxRenderer
 {
+
     public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         base.OnInitializeDisplayElement(dataColumn, uiElement, dataContext);
@@ -2303,42 +2178,42 @@ public class GridComboBoxRenderer: GridVirtualizingCellRenderer<ContentControl,S
     public GridComboBoxRenderer()
     {
     }
-
     /// <summary>
     /// Create new display element.
     /// </summary>
     /// <returns></returns>
+
     protected override ContentControl OnCreateDisplayUIElement()
     {
         return new ContentControl();
     }
-
     /// <summary>
     /// Create new edit element.
     /// </summary>
     /// <returns></returns>
+
     protected override SfComboBox OnCreateEditUIElement()
     {
         return new SfComboBox();
     }
-
     /// <summary>
     /// Initialize binding for display element.
     /// </summary>
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnInitializeDisplayElement(DataColumnBase dataColumn, ContentControl uiElement, object dataContext)
     {         
         SetDisplayBinding(uiElement, dataColumn.GridColumn, dataContext);
     }
-
     /// <summary>
     /// custom binding for display element.
     /// </summary>
     /// <param name="element"></param>
     /// <param name="column"></param>
     /// <param name="dataContext"></param>
+
     private static void SetDisplayBinding(ContentControl element, GridColumn column, object dataContext)
     {
         var comboBoxColumn = (GridComboBoxColumn)column;
@@ -2351,49 +2226,50 @@ public class GridComboBoxRenderer: GridVirtualizingCellRenderer<ContentControl,S
         };
         element.SetBinding(ContentControl.ContentProperty, binding);
     }
-
     /// <summary>
     /// Update binding for display element.
     /// </summary>
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, ContentControl uiElement, object dataContext)
     {           
         SetDisplayBinding(uiElement, dataColumn.GridColumn, dataContext);
     }
-
     /// <summary>
     /// Initialize binding for edit element.
     /// </summary>
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnInitializeEditElement(DataColumnBase dataColumn, SfComboBox uiElement, object dataContext)
     {        
         SetEditBinding(uiElement, dataColumn.GridColumn, dataContext);
     }
-
     /// <summary>
     /// Update binding for edit element.
     /// </summary>
     /// <param name="dataColumn"></param>
     /// <param name="uiElement"></param>
     /// <param name="dataContext"></param>
+
     public override void OnUpdateEditBinding(DataColumnBase dataColumn, SfComboBox element, object dataContext)
     {          
         SetEditBinding(element, dataColumn.GridColumn, dataContext);
     }
-
     /// <summary>
     /// custom binding for display element.
     /// </summary>
     /// <param name="element"></param>
     /// <param name="column"></param>
     /// <param name="dataContext"></param>
+
     private static void SetEditBinding(SfComboBox element, GridColumn column, object dataContext)
     {
         var comboboxColumn = (GridComboBoxColumn)column;
+
         var binding = new Binding
         {
             Source = dataContext,
@@ -2416,7 +2292,6 @@ public class GridComboBoxRenderer: GridVirtualizingCellRenderer<ContentControl,S
         element.SetBinding(SfComboBox.ItemTemplateProperty, itemTemplateBinding);
 
     }
-
     /// <summary>
     /// Let Renderer decide whether the parent grid should be allowed to handle keys and prevent
     /// the key event from being handled by the visual UIElement for this renderer. 
@@ -2425,8 +2300,10 @@ public class GridComboBoxRenderer: GridVirtualizingCellRenderer<ContentControl,S
     /// <returns>
     /// True if the parent grid should be allowed to handle keys; false otherwise.
     /// </returns>
+
     protected override bool ShouldGridTryToHandleKeyDown(KeyRoutedEventArgs e)
     {
+
         if (!HasCurrentCellState || !IsInEditing)
             return true;
 
@@ -2436,6 +2313,7 @@ public class GridComboBoxRenderer: GridVirtualizingCellRenderer<ContentControl,S
             case VirtualKey.Home:
             case VirtualKey.Enter:
             case VirtualKey.Escape:
+
                 return !((SfComboBox)CurrentCellRendererElement).IsDropDownOpen;
             case VirtualKey.Down:
             case VirtualKey.Up:
@@ -2445,29 +2323,31 @@ public class GridComboBoxRenderer: GridVirtualizingCellRenderer<ContentControl,S
         }
         return base.ShouldGridTryToHandleKeyDown(e);
     }
-
     /// <summary>
     /// Gets the control value.
     /// </summary>
+
     public override object GetControlValue()
     {
+
         if (!HasCurrentCellState)
             return base.GetControlValue();
-
         return CurrentCellRendererElement.GetValue(IsInEditing ? SfComboBox.SelectedValueProperty : ContentControl.ContentProperty);
     }
-
     /// <summary>
     /// Sets the control value.
     /// </summary>
     /// <param name="value">The value.</param>
+
     public override void SetControlValue(object value)
     {
+
         if (!HasCurrentCellState)
             return;
 
         if (IsInEditing)
             ((SfComboBox)CurrentCellRendererElement).SelectedValue = value;
+
         else
             throw new Exception("Value cannot be Set for Unloaded Editor");
     }
@@ -2500,6 +2380,7 @@ In the below code, new column created with `CellType` as TimePicker.
 {% highlight c# %}
 public class TimePickerColumn:GridColumn
 {
+
     public TimePickerColumn()
     {
         SetCellType("TimePicker");
@@ -2523,8 +2404,10 @@ In the below code snippet, display and edit `UIElement` defined via `GridVirtual
 /// </summary>
 /// <param name="TextBlock">Display Control</param>
 /// <param name="SfTimePicker">Edit Control</param>
+
 public class TimePickerRenderer: GridVirtualizingCellRenderer<TextBlock, SfTimePicker>
 {
+
     public TimePickerRenderer()
     {
 
@@ -2541,15 +2424,16 @@ With the below code snippet, you can allow to create the display and edit elemen
 /// Creates new display element.
 /// </summary>
 /// <returns></returns>
+
 protected override TextBlock OnCreateDisplayUIElement()
 {
     return new TextBlock();
 }
-
 /// <summary>
 /// Creates new edit element.
 /// </summary>
 /// <returns></returns>
+
 protected override SfTimePicker OnCreateEditUIElement()
 {
     return new SfTimePicker();
@@ -2567,32 +2451,28 @@ With the below code snippet, you can initialize the binding for display element 
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
 {
     SetDisplayBinding(uiElement, dataColumn.GridColumn, dataContext);
 }
-
 /// <summary>
 /// custom binding for display element.
 /// </summary>
 /// <param name="element"></param>
 /// <param name="column"></param>
 /// <param name="dataContext"></param>
+
 private static void SetDisplayBinding(TextBlock element, GridColumn column, object dataContext)
 {
 
     var customColumn = (TimePickerColumn)column;
-
     var binding = new Binding
     {
-
         Path = new PropertyPath(customColumn.MappingName),
-
         Mode = BindingMode.TwoWay,
-
         Converter = (column.DisplayBinding as Binding).Converter, //Bind Custom converter for display.
     };
-
     element.SetBinding(TextBlock.TextProperty, binding);
 }
 
@@ -2609,6 +2489,7 @@ With the below code snippet, updates the binding while UI interaction by overrid
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnUpdateDisplayBinding(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
 {
     SetDisplayBinding(uiElement, dataColumn.GridColumn, dataContext);
@@ -2627,44 +2508,40 @@ Similarly, you can initialize and update the binding for edit element by overrid
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnInitializeEditElement(DataColumnBase dataColumn, SfTimePicker uiElement, object dataContext)
 {
     SetEditBinding(uiElement, dataColumn.GridColumn, dataContext);
 }
-
 /// <summary>
 /// Update binding for edit element.
 /// </summary>
 /// <param name="dataColumn"></param>
 /// <param name="uiElement"></param>
 /// <param name="dataContext"></param>
+
 public override void OnUpdateEditBinding(DataColumnBase dataColumn, SfTimePicker element, object dataContext)
 {
     SetEditBinding(element, dataColumn.GridColumn, dataContext);
 }
-
 /// <summary>
 /// custom binding for display element.
 /// </summary>
 /// <param name="element"></param>
 /// <param name="column"></param>
 /// <param name="dataContext"></param>
+
 private static void SetEditBinding(SfTimePicker element, GridColumn column, object dataContext)
 {
 
     var customColumn = (TimePickerColumn)column;
-
     var binding = new Binding
     {
-
         Path = new PropertyPath(customColumn.MappingName),
-
         Mode = BindingMode.TwoWay,
-
     };
     element.SetBinding(SfTimePicker.ValueProperty, binding);
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -2677,10 +2554,10 @@ You can customize the editor control while loading by overriding [OnEditElementL
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
+
 protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
 {
     var timePicker = (sender as SfTimePicker);
-
     timePicker.Focus(FocusState.Programmatic);
 }
 
@@ -2699,6 +2576,7 @@ With the below code snippet, you can customize the keyboard interactions for the
 /// <returns>
 /// True if the parent grid should be allowed to handle keys; false otherwise.
 /// </returns>
+
 protected override bool ShouldGridTryToHandleKeyDown(Windows.UI.Xaml.Input.KeyRoutedEventArgs e)
 {
 
@@ -2707,6 +2585,7 @@ protected override bool ShouldGridTryToHandleKeyDown(Windows.UI.Xaml.Input.KeyRo
 
     if (!IsInEditing)
     {
+
         if (!(CurrentCellRendererElement is SfTimePicker))
             return true;
     }
@@ -2722,25 +2601,28 @@ You can handle the cell value for the custom renderer by overriding [GetControlV
 /// <summary>
 /// Gets the control value.
 /// </summary>
+
 public override object GetControlValue()
 {
+
     if (!HasCurrentCellState)
         return base.GetControlValue();
-
     return CurrentCellRendererElement.GetValue(IsInEditing ? SfTimePicker.ValueProperty : TextBlock.TextProperty);
 }
-
 /// <summary>
 /// Sets the control value.
 /// </summary>
 /// <param name="value">The value.</param>
+
 public override void SetControlValue(object value)
 {
+
     if (!HasCurrentCellState)
         return;
 
     if (IsInEditing)
         ((SfTimePicker)CurrentCellRendererElement).Value = value.ToString();
+
     else
         throw new Exception("Value cannot be Set for Unloaded Editor");
 }
@@ -2766,11 +2648,8 @@ By below code, you can define the custom column in SfDataGrid.
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <local:TimePickerColumn HeaderText="Delivered Time" MappingName="DeliveredTime" />
-
     </syncfusion:SfDataGrid.Columns>
 
 </syncfusion:SfDataGrid>
@@ -2800,14 +2679,19 @@ You can restrict the length of user input in both display and edit element using
 {% highlight c# %}
 public class MaxLengthConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
+
         // Define maxLength for column
         int maxLength = 5;
+
         // Get the ColumnValue
         var columnValue = System.Convert.ToString(value);
+
         if (columnValue.Length < maxLength)
             return columnValue;
+
         else
             return columnValue.Substring(0, maxLength);
     }
@@ -2878,12 +2762,15 @@ this.dataGrid.CellRenderers.Add("TextBox", new GridCellTextBoxRendererExt());
 
 public class GridCellTextBoxRendererExt : GridCellTextBoxRenderer
 {
+ 
     public override void OnInitializeEditElement(DataColumnBase dataColumn, TextBox uiElement, object dataContext)
     {
+ 
         if (dataColumn.GridColumn != null && dataColumn.GridColumn.MappingName == "EmployeeName")
         {
             uiElement.MaxLength = 7;
         }
+ 
         else
         {
             uiElement.MaxLength = 0;
