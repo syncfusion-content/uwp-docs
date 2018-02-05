@@ -97,6 +97,7 @@ private async void sfDataPager_PageIndexChanging(object sender, PageIndexChangin
     messageDialog.Commands.Add(new UICommand { Label = "Yes", Id = 0 });
     messageDialog.Commands.Add(new UICommand { Label = "No", Id = 1 });
     var result = await messageDialog.ShowAsync();
+
     if ((int)result.Id == 1 )
     {
         args.Cancel = true;
