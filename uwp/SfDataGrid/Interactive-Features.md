@@ -279,6 +279,7 @@ public class ToolTipTemplateSelector : DataTemplateSelector
     /// <summary>
     /// Gets or sets DefaultTemplate.
     /// </summary>
+
     public DataTemplate DefaultTemplate
     {
         get { return _defaultTemplate; }
@@ -288,22 +289,30 @@ public class ToolTipTemplateSelector : DataTemplateSelector
     /// <summary>
     /// Gets or Sets AlternateTemplate.
     /// </summary>
+
     public DataTemplate AlternateTemplate
     {
         get { return _alternateTemplate; }
         set { _alternateTemplate = value; }
     }
+
     public override System.Windows.DataTemplate SelectTemplate(object item, System.Windows.DependencyObject container)
     {
+
         //The item that comes from ToolTipTemplate is DataContextHelper. When set SetCellBoundValue to true, it sets DataContextHelper as DataContext to DataTemplate. Refer property section of CellTemplate.
         OrderInfo dataUnit = item as OrderInfo;
+
         if (dataUnit == null) return this.DefaultTemplate;
+
         //use reflection to retrieve property
         Type type = dataUnit.GetType();
         PropertyInfo property = type.GetProperty("OrderID");
+
         //To see what template needs to be select according to the specified property value.
+
         if (property.GetValue(dataUnit, null).ToString().Contains('9') || property.GetValue(dataUnit, null).ToString().Contains('4'))
             return this.AlternateTemplate;
+
         else
             return this.DefaultTemplate;
     }
