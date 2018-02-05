@@ -18,17 +18,18 @@ spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
 
 void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {
+
   foreach (var grid in args.GridCollection)
     AddCustomFormula(grid); 
   
   //Computing the formula at runtime
    var range = spreadsheetControl.ActiveSheet.Range["B2"];
    spreadsheetControl.ActiveGrid.SetCellValue(range,"=FindLength(Sample)");
-         
 }  
 
 private void AddCustomFormula(SpreadsheetGrid grid)
 {
+
   // Add a formula named FindLength to the Library.
    grid.FormulaEngine.AddFunction("FindLength", new FormulaEngine.LibraryFunction(ComputeLength));      
 }    
@@ -37,6 +38,7 @@ private void AddCustomFormula(SpreadsheetGrid grid)
     
 public string ComputeLength(string range)
 {
+
   //Used to calculate the length of the string
     return range.Length.ToString();
 }
