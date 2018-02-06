@@ -31,147 +31,155 @@ Create an `Employee` class with `Sales` and `Orders` property of type [Observabl
 {% highlight c# %}
 public class SalesInfo : INotifyPropertyChanged
 {
-        private int _orderID;
-        private string _salesID;
-        private string _productName;        
+    private int _orderID;
+    private string _salesID;
+    private string _productName;        
 
-        public int OrderID
+    public int OrderID
+    {
+        get { return _orderID; }
+        set
         {
-            get { return _orderID; }
-            set
-            {
-                _orderID = value;
-                OnPropertyChanged("OrderID");
-            }
+            _orderID = value;
+            OnPropertyChanged("OrderID");
         }
-        public string SalesID
-        {
-            get { return _salesID; }
-            set
-            {
-                _salesID = value;
-                OnPropertyChanged("SalesID");
-            }
-        }
-        public string ProductName
-        {
-            get { return _productName; }
-            set
-            {
-                _productName = value;
-                OnPropertyChanged("ProductName");
-            }
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
+    }
 
-        private void OnPropertyChanged(String name)
+    public string SalesID
+    {
+        get { return _salesID; }
+        set
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(name));
-            }
+            _salesID = value;
+            OnPropertyChanged("SalesID");
         }
+    }
+
+    public string ProductName
+    {
+        get { return _productName; }
+        set
+        {
+            _productName = value;
+            OnPropertyChanged("ProductName");
+        }
+    }
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void OnPropertyChanged(String name)
+    {
+
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(name));
+        }
+    }
 }
 
 public class OrderInfo : INotifyPropertyChanged
 {
-        private int orderId;
-        private int _quantity;
+    private int orderId;
+    private int _quantity;
 
-        public int OrderID
+    public int OrderID
+    {
+        get { return orderId; }
+        set
         {
-            get { return orderId; }
-            set
-            {
-                orderId = value;
-                OnPropertyChanged("OrderID");
-            }
+            orderId = value;
+            OnPropertyChanged("OrderID");
         }
-        public int Quantity
-        {
-            get { return _quantity; }
-            set
-            {
-                _quantity = value;
-                OnPropertyChanged("Quantity");
-            }
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
+    }
 
-        private void OnPropertyChanged(String name)
+    public int Quantity
+    {
+        get { return _quantity; }
+        set
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(name));
-            }
+            _quantity = value;
+            OnPropertyChanged("Quantity");
         }
+    }
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void OnPropertyChanged(String name)
+    {
+
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(name));
+        }
+    }
 }
 
 public class Employee : INotifyPropertyChanged
 {
-        private int _EmployeeID;
-        private int _orderId;
-        private string _city;
-        private ObservableCollection<SalesInfo> _sales;
-        private ObservableCollection<OrderInfo> _orders;
+    private int _EmployeeID;
+    private int _orderId;
+    private string _city;
+    private ObservableCollection<SalesInfo> _sales;
+    private ObservableCollection<OrderInfo> _orders;
 
-        public int EmployeeID
+    public int EmployeeID
+    {
+        get { return this._EmployeeID; }
+        set
         {
-            get { return this._EmployeeID; }
-            set
-            {
-                this._EmployeeID = value;
-                OnPropertyChanged("EmployeeID");
-            }
+            this._EmployeeID = value;
+            OnPropertyChanged("EmployeeID");
         }
-        public int OrderID
-        {
-            get { return this._orderId; }
-            set
-            {
-                this._orderId = value;
-                OnPropertyChanged("OrderID");
-            }
-        }
+    }
 
-        public string City
+    public int OrderID
+    {
+        get { return this._orderId; }
+        set
         {
-            get { return _city; }
-            set
-            {
-                _city = value;
-                OnPropertyChanged("City");
-            }
+            this._orderId = value;
+            OnPropertyChanged("OrderID");
         }
+    }
 
-        public ObservableCollection<SalesInfo> Sales
+    public string City
+    {
+        get { return _city; }
+        set
         {
-            get { return _sales; }
-            set
-            {
-                _sales = value;
-                OnPropertyChanged("Sales");
-            }
+            _city = value;
+            OnPropertyChanged("City");
         }
-        public ObservableCollection<OrderInfo> Orders
-        {
-            get { return _orders; }
-            set
-            {
-                _orders = value;
-                OnPropertyChanged("Orders");
-            }
-        }
+    }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged(String name)
+    public ObservableCollection<SalesInfo> Sales
+    {
+        get { return _sales; }
+        set
         {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(name));
-            }
+            _sales = value;
+            OnPropertyChanged("Sales");
         }
+    }
+
+    public ObservableCollection<OrderInfo> Orders
+    {
+        get { return _orders; }
+        set
+        {
+            _orders = value;
+            OnPropertyChanged("Orders");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    private void OnPropertyChanged(String name)
+    {
+
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(name));
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -183,6 +191,7 @@ Create a `ViewModel` class with `Employees` property and it is initialized with 
 public class ViewModel
 {
     ObservableCollection<Employee> _employees;
+
     public ObservableCollection<Employee> Employees
     {
         get { return _employees; }
@@ -195,6 +204,7 @@ public class ViewModel
         this.GenerateSales();
         _employees = GetEmployeesDetails();
     }
+
     public ObservableCollection<Employee> GetEmployeesDetails()
     {
         var employees = new ObservableCollection<Employee>();
@@ -208,6 +218,7 @@ public class ViewModel
 
     //Orders collection is initialized here.
     ObservableCollection<OrderInfo> Orders = new ObservableCollection<OrderInfo>();
+
     public void GenerateOrders()
     {
         Orders.Add(new OrderInfo() { OrderID = 1001, Quantity = 10 });
@@ -219,10 +230,13 @@ public class ViewModel
         Orders.Add(new OrderInfo() { OrderID = 1005, Quantity = 20 });
         Orders.Add(new OrderInfo() { OrderID = 1005, Quantity = 20 });
     }
+
     private ObservableCollection<OrderInfo> GetOrders(int orderID)
     {
         ObservableCollection<OrderInfo> orders = new ObservableCollection<OrderInfo>();
+
         foreach (var order in Orders)
+
             if (order.OrderID == orderID)
                 orders.Add(order);
         return orders;
@@ -230,6 +244,7 @@ public class ViewModel
 
     //Sales collection is initialized here.
     ObservableCollection<SalesInfo> Sales = new ObservableCollection<SalesInfo>();
+
     public void GenerateSales()
     {
         Sales.Add(new SalesInfo() { OrderID = 1001, SalesID = "A00001", ProductName = "Bike1" });
@@ -237,10 +252,13 @@ public class ViewModel
         Sales.Add(new SalesInfo() { OrderID = 1002, SalesID = "A00003", ProductName = "Cycle" });
         Sales.Add(new SalesInfo() { OrderID = 1003, SalesID = "A00004", ProductName = "Car" });
     }
+
     private ObservableCollection<SalesInfo> GetSales(int orderID)
     {
         ObservableCollection<SalesInfo> sales = new ObservableCollection<SalesInfo>();
+
         foreach (var sale in Sales)
+
             if (sale.OrderID == orderID)
                 sales.Add(sale);
         return sales;
@@ -453,13 +471,13 @@ public async Task<bool> Schedule(Action _onCompletion, int durationMS)
 { 
     DispatcherTimer timer = new DispatcherTimer();
     timer.Interval = TimeSpan.FromMilliseconds(durationMS);
+
     //Task that causes time delay
     timer.Tick += timer_Tick;            
     _onCompletion();
     timer.Stop();
     return true;
 }
-
 
 async void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.GridDetailsViewExpandingEventArgs e)
 {
@@ -587,8 +605,7 @@ void dataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsArgs
                                        FirstLevelNestedGrid_AutoGeneratingRelations;
 }
 
-Void FirstLevelNestedGrid_AutoGeneratingRelations(object sender,
-                               AutoGeneratingRelationsArgs e)   
+Void FirstLevelNestedGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsArgs e)   
 {
      e.GridViewDefinition.DataGrid.AutoGenerateColumns = true;
      e.GridViewDefinition.DataGrid.AllowEditing = true;
@@ -699,6 +716,7 @@ this.dataGrid.DetailsViewLoading += dataGrid_DetailsViewLoading;
 
 void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
+
      if (!e.DetailsViewDataGrid.CellRenderers.ContainsKey("DatePickerRenderer"))
          e.DetailsViewDataGrid.CellRenderers.Add("DatePickerRenderer", new DatePickerRenderer());
 }
@@ -751,17 +769,17 @@ For manually defined relation, the events can be wired from [ViewDefinition.Data
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="True"
                        ItemsSource="{Binding Orders}">
-            <syncfusion:SfDataGrid.DetailsViewDefinition>
-                <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
-                    <syncfusion:GridViewDefinition.DataGrid>
-                        <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
-                                               AutoGenerateColumns="True"                                               
-                                               CurrentCellBeginEdit="FirstLevelNestedGrid_CurrentCellBeginEdit"                                               
-                                               FilterChanging="FirstLevelNestedGrid_FilterChanging"                                               
-                                               SortColumnsChanging="FirstLevelNestedGrid_SortColumnsChanging" />
-                    </syncfusion:GridViewDefinition.DataGrid>
-                </syncfusion:GridViewDefinition>
-            </syncfusion:SfDataGrid.DetailsViewDefinition>
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
+        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
+            <syncfusion:GridViewDefinition.DataGrid>
+                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+                                       AutoGenerateColumns="True"                                               
+                                       CurrentCellBeginEdit="FirstLevelNestedGrid_CurrentCellBeginEdit"                                               
+                                       FilterChanging="FirstLevelNestedGrid_FilterChanging"                                               
+                                       SortColumnsChanging="FirstLevelNestedGrid_SortColumnsChanging" />
+            </syncfusion:GridViewDefinition.DataGrid>
+        </syncfusion:GridViewDefinition>
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -779,39 +797,37 @@ For second level nested grid,
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="False"
                        ItemsSource="{Binding Employees}">
-            <syncfusion:SfDataGrid.DetailsViewDefinition>
-                <syncfusion:GridViewDefinition RelationalColumn="Sales">
-                    <syncfusion:GridViewDefinition.DataGrid>
-                        <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
-                                               AutoGenerateColumns="True"
-                                               AutoGenerateRelations="False">
-                            <syncfusion:SfDataGrid.DetailsViewDefinition>
-                                <syncfusion:GridViewDefinition 
-                                                           RelationalColumn="Products">
-                                    <syncfusion:GridViewDefinition.DataGrid>
-                                        <syncfusion:SfDataGrid 
-                                               x:Name="SecondLevelNestedGrid"
-                                               AllowFiltering="True"
-                                               AutoGenerateColumns="True"
-                                               CurrentCellBeginEdit="SecondLevelNestedGrid_CurrentCellBeginEdit"                                                               
-                                               FilterChanging="SecondLevelNestedGrid_FilterChanging"/>
-                                    </syncfusion:GridViewDefinition.DataGrid>
-                                </syncfusion:GridViewDefinition>
-                            </syncfusion:SfDataGrid.DetailsViewDefinition>
-                        </syncfusion:SfDataGrid>
-                    </syncfusion:GridViewDefinition.DataGrid>
-                </syncfusion:GridViewDefinition>                
-            </syncfusion:SfDataGrid.DetailsViewDefinition>
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
+        <syncfusion:GridViewDefinition RelationalColumn="Sales">
+            <syncfusion:GridViewDefinition.DataGrid>
+                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+                                       AutoGenerateColumns="True"
+                                       AutoGenerateRelations="False">
+                <syncfusion:SfDataGrid.DetailsViewDefinition>
+                        <syncfusion:GridViewDefinition 
+                                           RelationalColumn="Products">
+                            <syncfusion:GridViewDefinition.DataGrid>
+                                <syncfusion:SfDataGrid 
+                                           x:Name="SecondLevelNestedGrid"
+                                           AllowFiltering="True"
+                                           AutoGenerateColumns="True"
+                                           CurrentCellBeginEdit="SecondLevelNestedGrid_CurrentCellBeginEdit"                                                               
+                                           FilterChanging="SecondLevelNestedGrid_FilterChanging"/>
+                            </syncfusion:GridViewDefinition.DataGrid>
+                        </syncfusion:GridViewDefinition>
+                </syncfusion:SfDataGrid.DetailsViewDefinition>
+                </syncfusion:SfDataGrid>
+            </syncfusion:GridViewDefinition.DataGrid>
+        </syncfusion:GridViewDefinition>                
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-SecondLevelNestedGrid.CurrentCellBeginEdit+=
-                                           SecondLevelNestedGrid_CurrentCellBeginEdit;
+SecondLevelNestedGrid.CurrentCellBeginEdit+= SecondLevelNestedGrid_CurrentCellBeginEdit;
 SecondLevelNestedGrid.FilterChanging += SecondLevelNestedGrid_FilterChanging;
 
 private void SecondLevelNestedGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
 {
-
 }
 {% endhighlight %}
 {% endtabs %}
@@ -843,7 +859,6 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 void FirstLevelNestedGrid_CurrentCellBeginEdit(object sender, 
                                     CurrentCellBeginEditEventArgs args)
 {
-
 }
 
 {% endhighlight %}
@@ -854,16 +869,20 @@ For second level nested grid,
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.AutoGeneratingRelations += dataGrid_AutoGeneratingRelations;
+
 void dataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelationsArgs e)
 {
+
      // FirstLevelNestedGrid
      e.GridViewDefinition.DataGrid.AutoGenerateRelations = true;
      e.GridViewDefinition.DataGrid.AutoGeneratingRelations +=                                              
                                          FirstLevelNestedGrid_AutoGeneratingRelations;
 }
+
 void FirstLevelNestedGrid_AutoGeneratingRelations(object sender,  
                                                         AutoGeneratingRelationsArgs e)
 {
+
      // SecondLevelNestedGrid
      e.GridViewDefinition.DataGrid.CurrentCellBeginEdit +=
                                        SecondLevelNestedGrid_CurrentCellBeginEdit;  
@@ -880,15 +899,15 @@ You can listen DetailsViewDataGrid events in ParentDataGrid event handlers itsel
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid.DetailsViewDefinition>
-                <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
-                    <syncfusion:GridViewDefinition.DataGrid>
-                        <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid"
-                                            AllowEditing="True"
-                                            AutoGenerateColumns="True"
-                                            NotifyEventsToParentDataGrid="True">
-                        </syncfusion:SfDataGrid>
-                    </syncfusion:GridViewDefinition.DataGrid>
-                </syncfusion:GridViewDefinition>
+    <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
+        <syncfusion:GridViewDefinition.DataGrid>
+            <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid"
+                                    AllowEditing="True"
+                                    AutoGenerateColumns="True"
+                                    NotifyEventsToParentDataGrid="True">
+            </syncfusion:SfDataGrid>
+        </syncfusion:GridViewDefinition.DataGrid>
+    </syncfusion:GridViewDefinition>
 </syncfusion:SfDataGrid.DetailsViewDefinition>
 {% endhighlight %}
 {% endtabs %}
@@ -904,6 +923,7 @@ You can wire the events in ParentDataGrid and get the corresponding DetailsViewD
 {% endhighlight %}
 {% highlight c# %}
 this.datagrid.RowValidating += Datagrid_RowValidating;
+
 private void Datagrid_RowValidating(object sender, RowValidatingEventArgs e)
 {
     var detailsViewDataGrid = e.OriginalSender as DetailsViewDataGrid;
@@ -955,6 +975,7 @@ Bind the events using commands in ViewModel as like below.
 public class ViewModel : INotifyPropertyChanged
 {   
     private ICommand _rowValidatingCommand;
+
     public ICommand RowValidating
     {
         get
@@ -962,15 +983,17 @@ public class ViewModel : INotifyPropertyChanged
             return _rowValidatingCommand ?? (_rowValidatingCommand = new CommandHandler(() => RowValidatingEvent(), true));
         }
     }     
+
     public void RowValidatingEvent()
     {
-
     }
 }
+
 public class CommandHandler : ICommand
 {
     private Action _action;
     private bool _canExecute;
+
     public CommandHandler(Action action, bool canExecute)
     {
         _action = action;
@@ -981,7 +1004,6 @@ public class CommandHandler : ICommand
     {
         return _canExecute;
     }
-
     public event EventHandler CanExecuteChanged;
 
     public void Execute(object parameter)
@@ -1052,15 +1074,19 @@ dataGrid.DetailsViewLoading += dataGrid_DetailsViewLoading;
 void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
     var parentGrid = e.OriginalSender is DetailsViewDataGrid ? (e.OriginalSender as SfDataGrid) : sender as SfDataGrid;
+
     if (!CanResize(parentGrid))
         return;
+
     if (parentGrid.Columns.Count != e.DetailsViewDataGrid.Columns.Count)
         return;
     double width = 0;
     var detailsViewStartColumnIndex = e.DetailsViewDataGrid.ResolveToStartColumnIndex();   
+
     for (int i = 0; i < parentGrid.Columns.Count; i++)
     {
         width = i == 0 ? parentGrid.Columns[i].ActualWidth - detailsViewStartColumnIndex * 24 : parentGrid.Columns[i].Width;
+
         if (e.DetailsViewDataGrid.Columns[i].Width != parentGrid.Columns[i].Width)
             e.DetailsViewDataGrid.Columns[i].Width = width;
     }            
@@ -1078,8 +1104,10 @@ dataGrid.ResizingColumns += dataGrid_ResizingColumns;
 void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {
     var grid = sender as SfDataGrid;          
+
     if (e.OriginalSender is DetailsViewDataGrid)
         grid = e.OriginalSender as SfDataGrid;
+
     if (grid.View == null)
         return;
     SetWidth(grid, e.ColumnIndex, e.Width);
@@ -1087,15 +1115,19 @@ void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 
 private void SetWidth(SfDataGrid grid, int scrollColumnIndex, double width)
 {
+
     if (grid.DetailsViewDefinition == null || !grid.DetailsViewDefinition.Any())
         return;
+
     if (!CanResize(grid))
         return;
     var columnIndex = grid.HelperResolveToGridVisibleColumnIndex(scrollColumnIndex);
+
     if (columnIndex < 0)
         return;
     var parentStartColumnIndex = grid.HelperResolveToStartColumnIndex();
     var indentColumnsWidth = 0;
+
     foreach (var definition in grid.DetailsViewDefinition)
     {
         var detailsViewDataGrid = (definition as GridViewDefinition).DataGrid;
@@ -1103,7 +1135,9 @@ private void SetWidth(SfDataGrid grid, int scrollColumnIndex, double width)
         indentColumnsWidth = startColumnIndex * 24;
         var tempWidth = width - indentColumnsWidth < 0 ? 0 : width - indentColumnsWidth;
         detailsViewDataGrid.Columns[columnIndex].Width = scrollColumnIndex == parentStartColumnIndex ? tempWidth : width;
+ 
         // If DetailsViewDataGrid has DetailsViewDefinition(nested levels), recursively set width upto all levels
+ 
         if (detailsViewDataGrid.DetailsViewDefinition != null && detailsViewDataGrid.DetailsViewDefinition.Any())
             SetWidth(detailsViewDataGrid, detailsViewDataGrid.HelperResolveToScrollColumnIndex(columnIndex), detailsViewDataGrid.Columns[columnIndex].Width);
     }
@@ -1111,13 +1145,17 @@ private void SetWidth(SfDataGrid grid, int scrollColumnIndex, double width)
 
 private bool CanResize(SfDataGrid dataGrid)
 {
+
     if (dataGrid.DetailsViewDefinition == null && !dataGrid.DetailsViewDefinition.Any())
         return true;
+
     foreach (var definition in dataGrid.DetailsViewDefinition)
     {
         var detailsViewGrid = (definition as GridViewDefinition).DataGrid;
+
         if (detailsViewGrid.DetailsViewDefinition == null && !detailsViewGrid.DetailsViewDefinition.Any())
             return CanResize(detailsViewGrid);
+
         if (detailsViewGrid.Columns.Count != dataGrid.Columns.Count)
             return false;
     }
@@ -1141,13 +1179,17 @@ public static class GridHelperClass
     /// <returns>
     /// Returns the start column index of the ViewDefinition.DataGrid.
     /// </returns>
+
     public static int HelperResolveToStartColumnIndex(this SfDataGrid dataGrid)
     {
         int startIndex = 0;
+
         if (dataGrid.ShowRowHeader)
             startIndex += 1;
+
         if (dataGrid.GroupColumnDescriptions != null && dataGrid.GroupColumnDescriptions.Any())
             startIndex += dataGrid.GroupColumnDescriptions.Count;
+
         if (dataGrid.DetailsViewDefinition != null && dataGrid.DetailsViewDefinition.Any())
             startIndex += 1;
         return startIndex;
@@ -1165,6 +1207,7 @@ public static class GridHelperClass
     /// <returns>
     /// Returns the corresponding visible column index for the specified column index.
     /// </returns>
+
     public static int HelperResolveToGridVisibleColumnIndex(this SfDataGrid dataGrid, int visibleColumnIndex)
     {
         var indentColumnCount = (dataGrid.GroupColumnDescriptions != null ? dataGrid.GroupColumnDescriptions.Count : 0) +
@@ -1185,6 +1228,7 @@ public static class GridHelperClass
     /// <returns>
     /// Returns the scroll column index for the specified column index.
     /// </returns>
+
     public static int HelperResolveToScrollColumnIndex(this SfDataGrid dataGrid, int gridColumnIndex)
     {
         var indentColumnCount = ((dataGrid.DetailsViewDefinition != null && dataGrid.DetailsViewDefinition.Any()) ? 1 : 0) +
@@ -1259,7 +1303,6 @@ You can get the [CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/sfda
 {% tabs %}
 {% highlight c# %}
 var currentCell = this.dataGrid.SelectedDetailsViewGrid.SelectionController.CurrentCellManager.CurrentCell;
-
 this.FirstLevelNestedGrid.CurrentCellBeginEdit += FirstLevelNestedGrid_CurrentCellBeginEdit;
 
 void FirstLevelNestedGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
@@ -1311,6 +1354,7 @@ You can select the particular record by using [SelectedItem](https://help.syncfu
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.DetailsViewLoading += dataGrid_DetailsViewLoading;
+
 void dataGrid_DetailsViewLoading (object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
     var record = e.DetailsViewDataGrid.GetRecordAtRowIndex(1);
@@ -1369,17 +1413,24 @@ Before bringing the `DetailsViewDataGrid` into view, you have to expand the corr
 int parentRowIndex = 25;
 RecordEntry record = null;
 var recordIndex = this.dataGrid.ResolveToRecordIndex(parentRowIndex);
+
 if (this.dataGrid.View != null && this.dataGrid.View.GroupDescriptions.Any())
     record = (this.dataGrid.View.TopLevelGroup.DisplayElements[recordIndex] is RecordEntry) ? (this.dataGrid.View.TopLevelGroup.DisplayElements[recordIndex] as RecordEntry) : null;            
+
 else
     record = this.dataGrid.View.Records[recordIndex];
+
 if (record == null)
     return;
+
 //Get the DetailsViewManager using Reflection
 var propertyInfo = dataGrid.GetType().GetField("DetailsViewManager", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
             DetailsViewManager detailsViewManager = propertyInfo.GetValue(dataGrid) as DetailsViewManager;
+
 // Expand DetailsView at specified record index
-if (!record.IsExpanded)                     this.dataGrid.ExpandDetailsViewAt(this.dataGrid.ResolveToRecordIndex(parentRowIndex));
+
+if (!record.IsExpanded)  
+    this.dataGrid.ExpandDetailsViewAt(this.dataGrid.ResolveToRecordIndex(parentRowIndex));
 
 {% endhighlight %}
 {% endtabs %}
@@ -1390,8 +1441,10 @@ If the `DetailsViewDataGrid` is already expanded, you can use [ScrollInView](htt
 {% highlight c# %}
 //  find DetailsViewDataRow index based on relational column
 int index = 0;
+
 foreach (var def in this.dataGrid.DetailsViewDefinition)
 {
+
     if (def.RelationalColumn == "ProductDetails")
     {
        index = this.dataGrid.DetailsViewDefinition.IndexOf(def);
@@ -1399,11 +1452,15 @@ foreach (var def in this.dataGrid.DetailsViewDefinition)
     }
 }
 var rowColumnIndex = new RowColumnIndex(index, 1);
+
 // if the DetailsViewDataGrid is already expanded, bring that into view
 dataGrid.ScrollInView(rowColumnIndex);
+
 //Get the DetailsViewDataGrid by passing the corresponding row index and relation name
 var detailsViewDataGrid = this.dataGrid.GetDetailsViewGrid(this.dataGrid.ResolveToRecordIndex(parentRowIndex), "ProductDetails");
+
 //if the DetailsViewDataGrid is not already expanded, call BringIntoView method
+
 if (detailsViewDataGrid == null)
 {
    detailsViewManager.BringIntoView(index);      
@@ -1428,8 +1485,10 @@ public class CustomSelectionController:GridSelectionController
     }
 }
 this.dataGrid.DetailsViewLoading += dataGrid_DetailsViewLoading;
+
 void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
+
      if (!(e.DetailsViewDataGrid.SelectionController is CustomSelectionController))
         e.DetailsViewDataGrid.SelectionController = new CustomSelectionController(e.DetailsViewDataGrid);
 }
@@ -1480,6 +1539,7 @@ When the relation is auto-generated, you can assign the customized header style 
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.AutoGeneratingRelations += dataGrid_AutoGeneratingRelations;
+
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
 {
     e.GridViewDefinition.DataGrid.HeaderStyle = this.FindResource("headerStyle") as Style;
@@ -1647,9 +1707,7 @@ For example, if you try to add the new record in `ProductDetails` collection in 
 {% tabs %}
 {% highlight c# %}
 var dataContext = DataContext as OrderInfoRepository;
-
 var data = dataContext.Orders.Where(item => item.OrderID == 1009).FirstOrDefault();
-
 var newItem = new List<ProductInfo>();
 newItem.Add(new ProductInfo() { OrderID = 1009, ProductName = "Bike" });
 data.ProductDetails = newItem;
@@ -1670,8 +1728,9 @@ this.dataGrid.DetailsViewLoading += dataGrid_DetailsViewLoading;
 
 void dataGrid_DetailsViewLoading(object sender, DetailsViewLoadingAndUnloadingEventArgs e)
 {
+
      if (!(e.DetailsViewDataGrid.SelectionController is CustomSelectionController))
-                e.DetailsViewDataGrid.SelectionController = new   CustomSelectionController(e.DetailsViewDataGrid);
+        e.DetailsViewDataGrid.SelectionController = new   CustomSelectionController(e.DetailsViewDataGrid);
 }
 {% endhighlight %}
 {% endtabs %}
@@ -1759,6 +1818,7 @@ this.dataGrid.DetailsViewExpanding += dataGrid_DetailsViewExpanding;
 
 void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.GridDetailsViewExpandingEventArgs e)
 {
+
     if ((e.Record as OrderInfo).OrderID == 1002)
         e.Cancel = true;
 }
@@ -1773,6 +1833,7 @@ this.dataGrid.DetailsViewCollapsing += dataGrid_DetailsViewCollapsing;
 
 void dataGrid_DetailsViewCollapsing(object sender, Syncfusion.UI.Xaml.Grid.GridDetailsViewCollapsingEventArgs e)
 {
+
     if ((e.Record as OrderInfo).OrderID == 1002)
         e.Cancel = true;
 }
