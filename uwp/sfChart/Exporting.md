@@ -19,7 +19,7 @@ Chart can be exported into the following types of image formats:
 
 The following example illustrates exporting of the chart.
 
-![Chart For Printing](Exporting_images/Exporting.PNG)
+![Chart For Printing](Exporting_images/Exporting.png)
 
 ## Methods
 
