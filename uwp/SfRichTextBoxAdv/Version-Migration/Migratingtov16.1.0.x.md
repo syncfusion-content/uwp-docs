@@ -11,9 +11,14 @@ keywords: migration, upgrade-changes, 2018vol1-changes, sfrichtextboxadv
 The SfRichTextBoxAdv control validates DocumentAdv instance internally when the value of Document property is updated. It ensures that minimal child elements are available in each container elements like,
 
 * At least one section should be available in document
+
 * At least one paragraph should be available in each table cell, section body, header and footer
+
 * At least one row should be available in each table
+
 * At least one cell should be available in each table row
+
+* At least one paragraph should be available after a table 
 
 N> In earlier versions, this internal validation to ensure minimal child element is not performed.
 
