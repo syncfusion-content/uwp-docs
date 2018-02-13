@@ -6,7 +6,7 @@ control: SfRichTextBoxAdv
 documentation: ug
 keywords: migration, upgrade-changes, 2018vol1-changes, sfrichtextboxadv
 ---
-# Migrating to v16.1.x.x
+# Document Validation Changes
 
 The SfRichTextBoxAdv control validates DocumentAdv instance internally when the value of Document property is updated. It ensures that minimal child elements are available in each container elements like,
 
