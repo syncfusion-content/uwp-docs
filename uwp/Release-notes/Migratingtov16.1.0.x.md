@@ -1,12 +1,11 @@
 ---
-title: Migrating UWP SfRichTextBoxAdv control to 16.1.x.x
-description: Migration document of UWP SfRichTextBoxAdv control to 16.1.x.x
+title: Essential Studio for Universal Windows Platform 2018 volume 1 Migration document
+description: Essential Studio for Universal Windows Platform 2018 volume 1 Migration document
 platform: uwp
-control: SfRichTextBoxAdv
 documentation: ug
-keywords: migration, upgrade-changes, 2018vol1-changes, sfrichtextboxadv
+keywords: migration, upgrade-changes, 2018vol1-changes
 ---
-# Document Validation Changes
+## SfRichTextBoxAdv
 
 The SfRichTextBoxAdv control validates DocumentAdv instance internally when the value of Document property is updated. It ensures that minimal child elements are available in each container elements like,
 
