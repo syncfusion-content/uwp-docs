@@ -234,7 +234,7 @@ This section demonstrates how to run RDLC report using SfReportViewer control.
    #endregion
    ~~~~
 
-4. Set datasource for RDLC reports in code behind with the help of created class objects and `Refresh` the report as like below code sample.  
+4. Set datasource for RDLC reports in code behind with the help of created class objects and invoke `RefreshReport` to render the report.  
 
    ~~~~ csharp
    ReportViewer.DataSources.Clear();
