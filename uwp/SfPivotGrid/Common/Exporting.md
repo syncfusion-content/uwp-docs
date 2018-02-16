@@ -132,7 +132,7 @@ export.ExportToDocument("Sample")
 
 ![](Exporting_images/Export-csv-image.png)
 
-N> You can use a *Button* instance to the page and then specify the required code snippet to export the SfPivotChart in the `Click` event handler method.
+N> You can use a *Button* instance to the page and then specify the required code snippet to export the SfPivotGrid in the `Click` event handler method.
 
 A demo sample is available at the following location:
 

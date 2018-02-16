@@ -9,24 +9,48 @@ documentation: ug
 
 # Serialization and Deserialization
 
-SfPivotGrid provides support to save and load the entire report and control setting using DataContractSerializer.The Serialization and de-serialization can be done using any one of the below formats.
+This support allows you to serialize and deserialize the settings of SfPivotGrid control using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
 
-## Serialization 
+## Serialization
 
-It allows the user to serialize SfPivotGrid by using Serialize method which exports the current PivotGrid control properties to an XML file.The Serialization can be done using any one of the below formats.
+Serialization allows you to save the settings of SfPivotGrid by using `Serialize` method of SfPivotGrid. It exports the current SfPivotGrid control settings to an XML file and it can be done with the help of one of the following methods.
 
-### Serialize using Stream 
+### Serialize using FileSavePicker
 
-It allows the user to save the SfPivotGrid control properties using Serialize method by passing the Stream.Please refer the below code snippet.
+It allows you to save the settings of SfPivotGrid control to the desired location in _*.xml_ format by using `Serialize` method. Please refer the below code snippet.
 
 {% tabs %}
 
 {% highlight C# %}
 
- var folder = ApplicationData.Current.LocalFolder;
- var storageFile = await folder.CreateFileAsync("PivotGrid.xml", CreationCollisionOption.ReplaceExisting);
- var stream = await storageFile.OpenStreamForWriteAsync();
- this.PivotGrid.Serialize(stream);
+this.pivotGrid.Serialize();
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGrid.Serialize()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+As a result, SfPivotGrid control will be serialized in XML file as shown below:
+
+![Serialized-PivotGrid](Serialization-and-Deserialization_images/Serialized-PivotGrid.png)
+
+### Serialize using stream
+
+It allows you to save the SfPivotGrid control's settings with the help of `Serialize` method by passing the stream as parameter. Please refer the below code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+var folder = ApplicationData.Current.LocalFolder;
+var storageFile = await folder.CreateFileAsync("PivotGrid.xml", CreationCollisionOption.ReplaceExisting);
+var stream = await storageFile.OpenStreamForWriteAsync();
+this.pivotGrid.Serialize(stream);
 
 {% endhighlight %}
 
@@ -35,63 +59,23 @@ It allows the user to save the SfPivotGrid control properties using Serialize me
 Dim folder As var = ApplicationData.Current.LocalFolder
 Dim storageFile As var = folder.CreateFileAsync("PivotGrid.xml", CreationCollisionOption.ReplaceExisting)
 Dim stream As var = storageFile.OpenStreamForWriteAsync
-Me.PivotGrid.Serialize(stream)
+Me.pivotGrid.Serialize(stream)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Serialize using FileSavePicker 
+### Serialize using storage file
 
-It Allows the user to save the properties and control settings of the SfPivotGrid control to the desired location in *.xml format using Serialize method.Please refer the below code snippet.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.PivotGrid.Serialize();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.PivotGrid.Serialize()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Serialize as String Format
-
-It allows the user to save the properties and control settings of the SfPivotGrid control into a XML String format using the SerializeToXml method.Please refer the below code snippet.
+It allows you to save the SfPivotGrid control's settings with the help of `Serialize` method by passing the storage file as parameter. Please refer the below code snippet.
 
 {% tabs %}
 
 {% highlight C# %}
 
-this.PivotGrid.SerializeToXml();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.PivotGrid.SerializeToXml()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Serialize using Storage File 
-
-It allows the user to save the SfPivotGrid control properties using Serialize method by passing the storage file.Please refer the below code snippet.
-
-{% tabs %}
-
-{% highlight C# %}
-
-var folder = ApplicationData.Current.LocalFolder;         
+var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.CreateFileAsync("PivotGrid.xml", CreationCollisionOption.ReplaceExisting);
-this.PivotGrid.Serialize(storageFile);
+this.pivotGrid.Serialize(storageFile);
 
 {% endhighlight %}
 
@@ -99,19 +83,61 @@ this.PivotGrid.Serialize(storageFile);
 
 Dim folder As var = ApplicationData.Current.LocalFolder
 Dim storageFile As var = folder.CreateFileAsync("PivotGrid.xml", CreationCollisionOption.ReplaceExisting)
-Me.PivotGrid.Serialize(storageFile)
+Me.pivotGrid.Serialize(storageFile)
 
 {% endhighlight %}
 
 {% endtabs %}
 
+### Serialize To XML string
+
+It allows you to save the settings of SfPivotGrid control into a XML string using the method of `SerializeToXml`. Please refer the below code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+string serializedPivotGrid = this.pivotGrid.SerializeToXml();
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGrid.SerializeToXml()
+
+{% endhighlight %}
+
+Private serializedPivotGrid As String = Me.pivotGrid.SerializeToXml()
+
+{% endtabs %}
+
 ## Deserialization
 
-It allows the user to deserialize the SfPivotGrid setting by using Deserialize method which reconstructs the SfPivotGrid based on the setting in the stored XML file.The Deserialization can be done using any one of the below formats.
+Deserialization allows you to load the settings of SfPivotGrid by using `Deserialize` method of SfPivotGrid. It reconstructs the SfPivotGrid control based on the settings stored in the XML file and it can be done with the help of one of the following methods.
 
-### Deserialize using Stream 
+### Deserialize using FileSavePicker
 
-It allows the user to deserialize the SfPivotGrid control properties using Deserialize method by passing the Stream.Please refer the below code snippet.
+It allows you to reload the SfPivotGrid control with the settings available in the _*.xml_ file. This can be achieved by using the `Deserialize` method. Please refer the below code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+this.pivotGrid.Deserialize();
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+Me.pivotGrid.Deserialize()
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Deserialize using stream
+
+It allows you to reload the SfPivotGrid control with the settings available in the stream. This can be achieved with the help of `Deserialize` method by passing the stream as parameter. Please refer the below code snippet.
 
 {% tabs %}
 
@@ -120,7 +146,7 @@ It allows the user to deserialize the SfPivotGrid control properties using Deser
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.GetFileAsync("PivotGrid.xml");
 var stream = await storageFile.OpenStreamForReadAsync();
-this.PivotGrid.Deserialize(stream);
+this.pivotGrid.Deserialize(stream);
 
 {% endhighlight %}
 
@@ -129,54 +155,15 @@ this.PivotGrid.Deserialize(stream);
 Dim folder As var = ApplicationData.Current.LocalFolder
 Dim storageFile As var = folder.GetFileAsync("PivotGrid.xml")
 Dim stream As var = storageFile.OpenStreamForReadAsync
-Me.PivotGrid.Deserialize(stream)
+Me.pivotGrid.Deserialize(stream)
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Deserialize using FileSavePicker 
+### Deserialize using storage file
 
-It Allows the user to deserialize the properties and control settings of the SfPivotGrid control from the specified *.xml file using the Deserialize method.Please refer the below code snippet.
-
-{% tabs %}
-
-{% highlight C# %}
-
-this.PivotGrid.Deserialize();
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.PivotGrid.Deserialize()
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Deserialize as String Format
-
-It allows the user to deserialize the properties and control settings of the SfPivotGrid control using the Deserialize method by passing the XML string.
-{% tabs %}
-
-{% highlight C# %}
-
-this.PivotGrid.Deserialize(this.PivotGrid.SerializeToXml());
-
-{% endhighlight %}
-
-{% highlight vb %}
-
-Me.PivotGrid.Deserialize(Me.PivotGrid.SerializeToXml())
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Deserialize using Storage File 
-
-It allows the user to deserialize the SfPivotGrid control properties using Deserialize method by passing the storage file.Please refer the below code snippet.
+It allows you to reload the SfPivotGrid control with the settings available in the storage file. This can be achieved by with the help of `Deserialize` method by passing the storage file as parameter. Please refer the below code snippet.
 
 {% tabs %}
 
@@ -184,7 +171,7 @@ It allows the user to deserialize the SfPivotGrid control properties using Deser
 
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.GetFileAsync("PivotGrid.xml");
-this.PivotGrid.Deserialize(storageFile);
+this.pivotGrid.Deserialize(storageFile);
 
 {% endhighlight %}
 
@@ -192,15 +179,34 @@ this.PivotGrid.Deserialize(storageFile);
 
 Dim folder As var = ApplicationData.Current.LocalFolder
 Dim storageFile As var = folder.GetFileAsync("PivotGrid.xml")
-Me.PivotGrid.Deserialize(storageFile)
+Me.pivotGrid.Deserialize(storageFile)
 
 {% endhighlight %}
 
 {% endtabs %}
 
+### Deserialize from XML string
 
-![](Serialization_images/Serialized-PivotGrid.png)
+It allows you to reload the SfPivotGrid with the settings available in the XML string. This can be achieved with the help of `Deserialize` method by passing the XML string as parameter. Please refer the below code snippet.
 
-A demo sample is available at the following location.
+{% tabs %}
 
-{system drive}:\Users\<User_Name>\AppData\Local\Syncfusion\EssentialStudio\<Version_Number>\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\Serialization.xaml
+{% highlight C# %}
+
+// string serializedPivotGrid = this.pivotGrid.Serialize();
+this.pivotGrid.Deserialize(serializedPivotGrid);
+
+{% endhighlight %}
+
+{% highlight vb %}
+
+' Dim serializedPivotGrid As String = Me.pivotGrid.Serialize()
+Me.pivotGrid.Deserialize(serializedPivotGrid)
+
+{% endhighlight %}
+
+{% endtabs %}
+
+A demo sample is available at the following location:
+
+{system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\Serialization.xaml

@@ -17,13 +17,13 @@ Drill up, also called as roll up; it navigates from more detailed data to less d
 
 Drill down, also called as roll down; it is the reverse of drill up which navigates from less detailed data to more detailed data by climbing down the concept hierarchy for the dimension.
 
-While binding hierarchical dimensions (for example, the time dimension could include 3 levels namely Year, Quarter, and Month), the SfPivotChart allows you to visualize the data for different levels by using the collapsible labels which is illustrated in the following screenshot:
+While binding hierarchical dimensions (for example, the time dimension could include 3 levels namely Year, Quarter, and Month), the SfPivotGrid allows you to visualize the data for different levels by using the collapsible labels which is illustrated in the following screenshot:
 
 ![](Drill-Operation_images/Drill-operation.png)
 
 ## Drill types
 
-The following drill types are supported in the SfPivotChart:
+The following drill types are supported in the SfPivotGrid:
 
 * Drill member
 * Drill position
