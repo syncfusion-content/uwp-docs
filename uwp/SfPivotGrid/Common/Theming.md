@@ -28,7 +28,7 @@ Theming is the process of applying particular settings to visual elements of a c
 * VisualStudio2013
 * VisualStudio2015
 
-By using the property of `GridVisualStyle` in the SfPivotGrid, you can set the visual style of the control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotChart.
+By using the property of `GridVisualStyle` in the SfPivotGrid, you can set the visual style of the control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotGrid.
 
 {% tabs %}
 
