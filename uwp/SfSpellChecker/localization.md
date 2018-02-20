@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization 
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfSpellCheker by adding resource file. Application culture can be changed by setting [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) before `InitializeComponent()` method.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfSpellChecker by adding resource file. Application culture can be changed by setting [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) before `InitializeComponent()` method.
  
 Below application culture changed to Arabic.
 
@@ -30,7 +30,7 @@ public MainPage()
 
 {% endtabs %}
 
-To localize the SfSpellCheker based on [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) using .resw files, follow the below steps.
+To localize the SfSpellChecker based on [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) using .resw files, follow the below steps.
  
 1. Create a folder named **Resource** in the application.
 
@@ -40,7 +40,7 @@ To localize the SfSpellCheker based on [ApplicationLanguages.PrimaryLanguageOver
 
 3. Right Click on project and select the “Add New Item” Dialog using Ctrl+Shift+A keys.
 
-Create a resource .Resw file and name it as asemblyname.Resources.resw (**Syncfusion.SfSpellChecker.UWP.Resources.resw**)
+Create a resource .Resw file and name it as assemblyname.Resources.resw (**Syncfusion.SfSpellChecker.UWP.Resources.resw**)
  
 ![](localization-images/localizationimg2.png)
 
