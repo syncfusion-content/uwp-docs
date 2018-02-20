@@ -40,7 +40,7 @@ To localize the SfSpellChecker based on [ApplicationLanguages.PrimaryLanguageOve
 
 3. Right Click on project and select the “Add New Item” Dialog using Ctrl+Shift+A keys.
 
-Create a resource .Resw file and name it as assemblyname.Resources.resw (**Syncfusion.SfSpellChecker.UWP.Resources.resw**)
+Create a resource .Resw file and name it as assembly name.Resources.resw (**Syncfusion.SfSpellChecker.UWP.Resources.resw**)
  
 ![](localization-images/localizationimg2.png)
 
