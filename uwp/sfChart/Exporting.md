@@ -17,6 +17,10 @@ Chart can be exported into the following types of image formats:
 * PNG
 * BMP
 
+The following example illustrates exporting of the chart.
+
+![Chart For Printing](Exporting_images/Exporting.png)
+
 ## Methods
 
 Chart contains the following overloading methods for saving a chart as an image.
@@ -27,7 +31,10 @@ This method will export the chart as image into a desired location by using File
 
 {% highlight c# %}
 
-Chart.Save();
+private void SaveImageButton_Click(object sender, RoutedEventArgs e)
+{
+    this.SampleChart.Save();
+}
 
 {% endhighlight %}
 
@@ -37,7 +44,11 @@ This method will export the chart as image to the specified location. The follow
 
 {% highlight c# %}
 
-chart.Save("a.png", Windows.Storage.KnownFolders.PicturesLibrary);
+private void SaveImageLocation_Click(object sender, RoutedEventArgs e)
+{
+    StorageFolder storageFolder = Windows.Storage.KnownFolders.PicturesLibrary;
+    this.SampleChart.Save("ChartImage", storageFolder);
+}
 
 {% endhighlight %}
 
@@ -55,20 +66,15 @@ This method allows you to export the chart into a stream. It is described in fol
 
 {% highlight c# %}
 
-Guid id = BitmapEncoder.GifEncoderId;
-
-StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-
-StorageFile sampleFile = await storageFolder.CreateFileAsync("Chart.png", CreationCollisionOption.ReplaceExisting);
-
-Stream x = await sampleFile.OpenStreamForWriteAsync();
-
-Chart.Save(x.AsRandomAccessStream(), id);
+private async void SaveImageEncoder_Click(object sender, RoutedEventArgs e)
+{
+    StorageFile storageFile = await Windows.Storage.KnownFolders.PicturesLibrary.CreateFileAsync("EncodedChartImage");
+    Guid encoder = BitmapEncoder.BmpEncoderId;
+    this.SampleChart.Save(await storageFile.OpenAsync(FileAccessMode.ReadWrite), encoder);
+}
 
 {% endhighlight %}
 
+The following screenshot represents the exported image.
 
-
-
-
-
+![Chart Printed](Exporting_images/Exported.PNG)
