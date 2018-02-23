@@ -9,13 +9,13 @@ documentation: ug
 
 # Drill Operation
 
-## Drill Down/Drill Up
-
 This is the basic feature of SfPivotChart through which the amount of information can be limited for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the expanders present in the primary axis' labels.
 
-Drill up, also called as roll up; it navigates from more detailed data to less detailed data by climbing up a concept hierarchy for a dimension.
+## Drill Down/Drill Up
 
 Drill down, also called as roll down; it is the reverse of drill up operation which navigates from less detailed data to more detailed data by climbing down the concept hierarchy for the dimension.
+
+Drill up, also called as roll up; it navigates from more detailed data to less detailed data by climbing up a concept hierarchy for a dimension.
 
 While binding hierarchical dimensions (for example, the time dimension could include 3 levels namely Year, Quarter, and Month), the SfPivotChart allows you to visualize the data for different levels by using the collapsible labels which are illustrated in the following screenshot.
 
