@@ -592,7 +592,7 @@ Right click on the project in the solution explorer and select *Add > Reference.
 N> You can find these libraries under the following location.
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies\4.6\
 
-N> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotClient control.
+I> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotClient control.
 The above assembly can be obtained only after installing the following setup files:
 **SQLSERVER2008_ASADOMD10.msi** and **SQLSERVER2008_ASOLEDB10.msi**
 These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-in/download/details.aspx?id=16978).
@@ -846,4 +846,4 @@ Then, include the basic HTTP binding and service endpoint address in the web.con
 
 {% endtabs %}
 
-Then build and host the WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform (UWP) application (client application). This is how you can host the service in IIS and refer the obtained URL as service reference in the sample as illustrated in the [previous section](#Adding service reference to project).
+Then build and host the WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform (UWP) application (client application). This is how you can host the service in IIS and refer the obtained URL as service reference in the sample as illustrated in the [previous section](#adding-service-reference-to-project).
