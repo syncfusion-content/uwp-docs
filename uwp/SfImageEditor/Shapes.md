@@ -1,0 +1,80 @@
+---
+layout: post
+title: Shapes | SfImageEditor | uwp | Syncfusion
+description: Shapes
+platform: uwp
+control: SfImageEditor
+documentation: ug
+---
+# Shapes
+
+You can annotate any path on an image by using free hand drawing and adding texts and shapes such as rectangle, circle, arrow over the image. The shapes and text can be added in the following two ways:
+
+* From Toolbar
+* Using Code
+
+## To add a shape (Rectangle, Circle, Arrow) over an image
+
+### From Toolbar
+
+To add shapes from the toolbar, click the `Shapes` icon in the toolbar. When the `Shapes` icon is tapped, a sub toolbar will appear on top of that toolbar. From that sub toolbar, choose the shape (`Rectangle`, `Circle` or `Arrow`). Click the desired shape; the shape will be added to the center of the image. The shape will has the handles on each edge; it helps to resize the shape to the desired size and it can be moved to the desired position by dragging.
+
+#### Change Color and Fill Options of the Shape
+
+You can change the selected shape Color and [`Mode`](https://help.syncfusion.com/cr/uwp/sfimageeditor) of the shape as outline or fill. The color palette of the shapes can be customized by using ColorPalette property.
+
+T> By default, the shape color is Red stroke with Transparent fill.
+
+### Using Code
+
+Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uwp/sfimageeditor) and [`PenSettings`](https://help.syncfusion.com/cr/uwp/sfimageeditor) by using a method `AddShape` in the SfImageEditor control.
+
+* To add a rectangle, circle or arrow over the image, specify the ShapeType as well as the desired PenSettings as shown in below code,
+
+
+{% highlight C# %}
+
+    imageEditor.AddShape(ShapeType.Arrow,new PenSettings() 
+    {
+        StrokeWidth = 2
+    });
+
+{% endhighlight %}
+
+![](shapes_images/annotate.png)
+
+* You can annotate any path on an image by using free hand drawing as shown in the below code,
+
+{% highlight C# %}
+
+    imageEditor.AddShape(ShapeType.Path,new PenSettings() 
+    { 
+        PathStrokeWidth=10
+    });
+
+{% endhighlight %}
+
+![](shapes_images/path.png)
+
+## To delete a shape or text from the view
+
+You can delete a selected shape or text from the view in the following two ways:
+
+* Using Code
+* From Toolbar
+
+### From Toolbar
+
+When a shape is selected, a circular floating button with Delete icon will appear on top of the toolbar. To delete the selected shape from the view, use `Delete` icon.
+
+### Using Code
+
+programmatically, the selected shape can be deleted by using the Delete method as shown below,
+
+{% highlight C# %}
+
+    imageEditor.Delete();
+
+{% endhighlight %}
+
+N> You cannot delete the path.
