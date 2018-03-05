@@ -9,22 +9,22 @@ documentation: ug
 
 # Series
 
-ChartSeries is the visual representation of the data. SfChart offers many types of series ranging from LineSeries to FinancialSeries like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization. 
+[`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html) is the visual representation of the data. [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) offers many types of series ranging from [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html) to [`FinancialSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase_properties.html) like [`HiLo`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.hiloSeries.html) and [`Candle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.candleSeries.html). Based on your requirements and specifications, any type of [`Series`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Series.html) can be added for data visualization. 
 
 The following APIs are common for the most of the series types:
 
-* XBindingPath-A string property that represents the X values for the series.
-* YBindingPath-A string property that represents the Y values for the series.
-* Stroke-Represents the brush for the series outline.
-* StrokeThickness-Represents the thickness of the for the series outline.
-* Interior-Represents the brush to fill the series.
-* Palette-Used to define the set of pre-defined or custom colors for the series.
+* [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html)-A string property that represents the X values for the series.
+* [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XyDataSeries~YBindingPath.html)-A string property that represents the Y values for the series.
+* [`Stroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries~Stroke.html)-Represents the brush for the series outline.
+* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries~StrokeThickness.html)-Represents the thickness of the for the series outline.
+* [`Interior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Interior.html)-Represents the brush to fill the series.
+* [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html)-Used to define the set of pre-defined or custom colors for the series.
 
 ## Column and Bar Charts
 
 ### Column
 
-Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of `ColumnSeries`.
+Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries.html).
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ chart.Series.Add(series);
 
 ### Bar
 
-Bar series are similar to column series, excepts its orientation. The following code examples shows how to use `BarSeries`.
+Bar series are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BarSeries.html).
 
 {% tabs %}
 
@@ -98,7 +98,7 @@ BarSeries series = new BarSeries()
 
 ### Line
 
-Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple `LineSeries` using given data
+Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html) using given data
 
 {% tabs %}
 
@@ -159,7 +159,7 @@ chart.Series.Add(series2);
 
 ### Spline
 
-`SplineSeries` resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
+[`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
 
 {% tabs %}
 
@@ -222,9 +222,9 @@ chart.Series.Add(series2);
 
 ### Bubble
 
-`BubbleSeries` is represented by closely packed circles, whose areas are proportional to the quantities. 
+[`BubbleSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BubbleSeries.html) is represented by closely packed circles, whose areas are proportional to the quantities. 
 
-The size of the bubble series is relative proportional to the value bind with the series using `Size` property. You can set the constraints on this size using `MinimumRadius` and `MaximumRadius`.
+The size of the bubble series is relative proportional to the value bind with the series using [`Size`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BubbleSeries~Size.html) property. You can set the constraints on this size using [`MinimumRadius`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BubbleSeries~MinimumRadius.html) and [`MaximumRadius`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BubbleSeries~MaximumRadius.html).
 
 {% tabs %}
 
@@ -269,7 +269,7 @@ chart.Series.Add(series);
 
 ### Scatter
 
-`ScatterSeries` is similar to bubble series, where each point being represented by an ellipse with equal size. This size can be defined using `ScatterHeight` and `ScatterWidth` property.
+[`ScatterSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries.html) is similar to bubble series, where each point being represented by an ellipse with equal size. This size can be defined using [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html) and [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html) property.
 
 {% tabs %}
 
@@ -314,9 +314,9 @@ chart.Series.Add(series);
 
 ### Area
 
-`AreaSeries` is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
+[`AreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AreaSeries.html) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
 
-The following code example initializes the AreaSeries:
+The following code example initializes the [`AreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AreaSeries.html):
 
 {% tabs %}
 
@@ -353,7 +353,7 @@ chart.Series.Add(series);
 
 ### Spline Area
 
-`SplineAreaSeries` connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
+[`SplineAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
 
 {% tabs %}
 
@@ -393,7 +393,7 @@ chart.Series.Add(series);
 
 ### Step Area
 
-`StepAreaSeries` is similar to AreaSeries but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this ChartSeries uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
+[`StepAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StepAreaSeries.html) is similar to [`AreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AreaSeries.html) but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html) uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
 
 {% tabs %}
 
@@ -432,7 +432,7 @@ chart.Series.Add(series);
 
 ### Closed Area
 
-If you wish to draw the open area series (Area with stroke only at top), SfChart provides `IsClosed` property. By default, this property is true.
+If you wish to draw the open area series (Area with stroke only at top), [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides [`IsClosed`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AreaSeries~IsClosed.html) property. By default, this property is true.
 
 {% tabs %}
 
@@ -476,7 +476,7 @@ chart.Series.Add(series);
 
 ### Pie
 
-`PieSeries` is divided into sectors, illustrating numerical proportion. The following code example illustrates the PieSeries.
+[`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html#) is divided into sectors, illustrating numerical proportion. The following code example illustrates the [`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html#).
 
 {% tabs %}
 
@@ -511,7 +511,7 @@ chart.Series.Add(series);
 
 ![](Series_images/pie.png)
 
-The rendering size of the PieSeries can be controlled using `PieCoefficient` property as in below code example.
+The rendering size of the [`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html#) can be controlled using [`PieCoefficient`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html) property as in below code example.
 
 {% tabs %}
 
@@ -552,7 +552,7 @@ chart.Series.Add(series);
 
 ### Doughnut
 
-`DoughnutSeries` is similar to PieSeries. It is used to show the relationship between parts of data and whole data. 
+[`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#) is similar to [`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html#). It is used to show the relationship between parts of data and whole data. 
 
 The DoughnutSeries can be added to chart as in below code example:
 
@@ -588,7 +588,7 @@ chart.Series.Add(series);
 
 ![](Series_images/doughnut.png)
 
-The Doughnut also having coefficient property, `DoughnutCoefficient` which defines the inner circle. Also it has `DoughnutSize`, used to define the size for this series like `PieCoefficient` in PieSeries.
+The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutCoefficient.html) which defines the inner circle. Also it has [`DoughnutSize`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutSize.html), used to define the size for this series like [`PieCoefficient`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html) in [`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
 {% tabs %}
 
@@ -626,7 +626,7 @@ chart.Series.Add(series);
 
 ### Semi Pie and Doughnut
 
-By having custom `StartAngle` and `EndAngle`, you can draw pie series in different shapes like semicircular or quarter circular series.
+By having custom [`StartAngle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~StartAngle.html) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EndAngle.html), you can draw pie series in different shapes like semicircular or quarter circular series.
 
 {% tabs %}
 
@@ -710,10 +710,10 @@ chart.Series.Add(series);
 
 The following properties are used to explode the individual segments in Pie, Doughnut, Funnel and Pyramid.
 
-* `ExplodeAll`  - Used to explode all the segments of these series.
-* `ExplodeIndex` - Used to explode any specific segment.
-* `ExplodeRadius`- Used to define the explode distance.
-* `ExplodeOnMouseClick`-Used to explode the segment on mouse click or tap.
+* [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html)  - Used to explode all the segments of these series.
+* [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html) - Used to explode any specific segment.
+* [`ExplodeRadius`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~ExplodeRadius.html)- Used to define the explode distance.
+* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeOnMouseClick.html)-Used to explode the segment on mouse click or tap.
 
 **Explode** **Index**
 
