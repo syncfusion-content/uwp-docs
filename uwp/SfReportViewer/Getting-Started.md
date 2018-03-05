@@ -77,7 +77,6 @@ This section demonstrates how to run RDLC report using SfReportViewer control.
    ReportViewer.ProcessingMode = ProcessingMode.Local;
    ReportViewer.ExportMode = ExportMode.Local;
    ReportViewer.LoadReport(reportStream);
-   ReportViewer.RefreshReport();
    ~~~~
 
 3. Create a Class named as SalesPersons, Stores, Products and declare the fields required for report as properties as shown below.
@@ -235,13 +234,14 @@ This section demonstrates how to run RDLC report using SfReportViewer control.
    #endregion
    ~~~~
 
-4. Set datasource for RDLC reports in code behind with the help of created class objects as like below code sample.  
+4. Set datasource for RDLC reports in code behind with the help of created class objects and invoke `RefreshReport` to render the report.  
 
    ~~~~ csharp
    ReportViewer.DataSources.Clear();
    ReportViewer.DataSources.Add(new ReportDataSource { Name = "TopSalesPerson", Value = SalesPersons.GetTopSalesPerson() });
    ReportViewer.DataSources.Add(new ReportDataSource { Name = "TopStores", Value = Stores.GetTopStores() });
    ReportViewer.DataSources.Add(new ReportDataSource { Name = "TopProduct", Value = Products.GetTopProducts() });
+   ReportViewer.RefreshReport();
    ~~~~
    
    N> Name - “TopSalesPerson” – Specifies the dataset name in the report.
