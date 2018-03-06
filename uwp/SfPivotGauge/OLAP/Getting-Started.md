@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Olap Getting Started with SfPivotGauge control for UWP
-description: Olap Getting Started with SfPivotGauge control for UWP
+title: OLAP Getting Started | SfPivotGauge | UWP | Syncfusion
+description: Getting Started for SfPivotGauge with OLAP data.
 platform: uwp
 control: SfPivotGauge
 documentation: ug
@@ -9,90 +9,85 @@ documentation: ug
 
 # Getting Started
 
-This section covers the information required to create a simple SfPivotGauge control bound to the OLAP data source and also about creating a WCF service which helps to bind the OLAP data to SfPivotGauge control through the OlapDataManager.
+This section explains about the information required to create a simple SfPivotGauge control bound to the OLAP data source and also about creating a WCF service that helps to bind the OLAP data with the SfPivotGauge control through the OlapDataManager.
 
-## Control initialization
+## Initializing SfPivotGauge control
 
-SfPivotGauge control can be initialized and added to an application through the following ways:
+Open Visual Studio IDE and select *File > New > Project* to open the new project dialog.
 
-1.Through designer
-2.Through XAML
-3.Through code-behind
+Select *Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)* to create a new UWP application and name the project as "SfPivotGaugeDemo".
+
+The target version/minimum version dialog appears, in which change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
+
+SfPivotGauge control can be initialized and added to the application through any of the following ways:
+
+1. Through designer.
+2. Through XAML.
+3. Through code-behind.
 
 ### Adding control through designer
 
-Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
+Double-click on MainPage.xaml from the solution explorer to open it in the design view.
 
-N> After creating the UWP application, select the **"Properties"** under the project shown in the solution explorer and change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
+Click on the toolbox and drag the **SfPivotGauge** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
-Now, select toolbox option from the view menu and it will appear inside the Visual Studio IDE. From the toolbox, select the SfPivotGauge control under “Syncfusion Controls for UWP XAML” group, and then drag and drop it into the designer section of the MainPage.xaml file.
+As a result, the SfPivotGauge control will be added to the designer as shown below:
 
-Finally, name the added SfPivotGauge control as “PivotGauge1” in MainPage.xaml to refer it in code-behind as follows:
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<PivotGauge:SfPivotGauge x:Name="PivotGauge1"/>
-
-{% endhighlight %}
-
-{% endtabs %}
+![GettingStarted_Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
-Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
+SfPivotGauge control can be added to the project by referring assemblies or extension SDK as described below:
 
-Then, name the project as "SfPivotGaugeDemo" while creating the application to access the project later.
+**Assembly reference**
 
-To add SfPivotGauge control manually in XAML, the following assembly references must be added in the project.
+Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
 
-* Syncfusion.SfPivotGauge.UWP
-* Syncfusion.SfGauge.UWP
 * Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
 * Syncfusion.PivotAnalysis.UWP
+* Syncfusion.SfGauge.UWP
+* Syncfusion.SfPivotGauge.UWP
 
-You can find these libraries under the following location:
+N> You can find these libraries under the following location.
+&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
-{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
+**Extension SDK reference**
 
-Or else, the SfPivotGauge control can be added to the project by choosing SDK reference as follows:
+Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
 
-Right-click the **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
-
-Now, add the following namespace in the MainPage.xaml file.
+After adding the required reference, add the following namespace in the *MainPage.xaml* file.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGauge"
+xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Then, initialize the SfPivotGauge control inside the grid by using the specified namespace and name the control as “PivotGauge1”.
+Then add the SfPivotGauge control to the grid by using the specified namespace as specified in the below code snippet.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Page
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SfPivotGaugeDemo"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    x:Class="SfPivotGaugeDemo.MainPage"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGauge"
-    mc:Ignorable="d">
+    <Page
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:SfPivotGaugeDemo"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
+        x:Class="SfPivotGaugeDemo.MainPage"
+        mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <syncfusion:SfPivotGauge x:Name="PivotGauge1"/>
-    </Grid>
-</Page>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <PivotGauge:SfPivotGauge/>
+        </Grid>
+    </Page>
 
 {% endhighlight %}
 
@@ -100,50 +95,50 @@ Then, initialize the SfPivotGauge control inside the grid by using the specified
 
 ### Adding control through code-behind
 
-Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
+SfPivotGauge control can be added to the project by referring assemblies or extension SDK.
 
-Name the project as "SfPivotGaugeDemo" while creating the application to access the project later.
+**Assembly reference**
 
-To add SfPivotGauge control manually in code-behind, the following assembly references must be added in the project.
+Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
 
-* Syncfusion.SfPivotGauge.UWP
-* Syncfusion.SfGauge.UWP
 * Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
 * Syncfusion.PivotAnalysis.UWP
+* Syncfusion.SfGauge.UWP
+* Syncfusion.SfPivotGauge.UWP
 
-You can find these libraries under the following location:
+YN> You can find these libraries under the following location.
+&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
-{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
+**Extension SDK reference**
 
-Or else, the SfPivotGauge control can be added to the project by choosing SDK reference as follows:
+Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
 
-Right-click the **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*
-
-Now, open the MainPage.xaml file, and include name for the grid as “Root_Grid” to refer it in code-behind.
+After adding the required reference, open the *MainPage.xaml* file and name the grid as "RootGrid" to refer it in the code-behind.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Page
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SfPivotGaugeDemo"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    x:Class="SfPivotGaugeDemo.MainPage"
-    mc:Ignorable="d">
+    <Page
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:SfPivotGaugeDemo"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
+        x:Class="SfPivotGaugeDemo.MainPage"
+        mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="Root_Grid">
-    </Grid>
-</Page>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="RootGrid">
+        </Grid>
+    </Page>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Add the namespace - "Syncfusion.UI.Xaml.PivotGauge" in the MainPage.xaml.cs file. Then, initialize the SfPivotGauge control and assign a name for it as "PivotGauge1". You can add the control in the parent grid as follows:
+Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGauge". Then initialize the SfPivotGauge control in the constructor and add it to the grid as illustrated below:
 
 {% tabs %}
 
@@ -154,14 +149,16 @@ using Syncfusion.UI.Xaml.PivotGauge;
 
 namespace SfPivotGaugeDemo
 {
-    public sealed partial class MainPage: Page
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class MainPage : Page
     {
         public MainPage()
         {
             this.InitializeComponent();
             SfPivotGauge pivotGauge = new SfPivotGauge();
-            pivotGauge.Name = "PivotGauge1";
-            Root_Grid.Children.Add(pivotGauge);
+            RootGrid.Children.Add(pivotGauge);
         }
     }
 }
@@ -174,15 +171,15 @@ Imports Windows.UI.Xaml.Controls
 Imports Syncfusion.UI.Xaml.PivotGauge
 
 Namespace SfPivotGaugeDemo
-
+    ''' <summary>
+    ''' An empty page that can be used on its own or navigated to within a Frame.
+    ''' </summary>
     Public NotInheritable Partial Class MainPage
         Inherits Page
-
         Public Sub New()
             Me.InitializeComponent()
-            Dim pivotGauge As SfPivotGauge = New SfPivotGauge()
-            pivotGauge.Name = "PivotGauge1"
-            Root_Grid.Children.Add(pivotGauge)
+            Dim pivotGauge As New SfPivotGauge()
+            RootGrid.Children.Add(pivotGauge)
         End Sub
     End Class
 End Namespace
@@ -193,76 +190,127 @@ End Namespace
 
 ## Adding service reference to project
 
-N> The following steps explain about how to refer the online service in Universal Windows Platform application to bind the cube information in the SfPivotGauge. The service URL used here refers the demo cube - “Adventure Works”, mainly for illustration purpose. To create your own WCF service, please refer the topic of [Creating WCF Service Application.](http://help.syncfusion.com/uwp/sfpivotgauge/getting-started#creating-wcf-service-application).
+N> This section explains about how to refer the online service in UWP application for binding the cube information in the SfPivotGauge. The service URL used here refers the demo cube - “Adventure Works”, mainly used for illustration purpose.
+To create your own WCF service, please refer the topic of [Creating WCF Service Application.](#creating-wcf-service-application).
 
-After initializing the SfPivotGauge control, right-click the **References** and select the **Add Service Reference**.
+After initializing the SfPivotGauge control, right click on the project in the solution explorer and select *Add > Service Reference...*.
 
-In “Add Service Reference” window, enter the following address and click “Go” to add the online service.
+In “Add Service Reference” dialog, enter the following address and click *Go* to add the online service.
 
 [http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc](http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc)
 
-You can change the default service namespace from "ServiceReference1" to "OlapManagerService", so that it will be easier to identify the OLAP service later. Finally, click "OK" to add the service reference.
+Also change the default namespace of service reference from "ServiceReference1" to "OlapManagerService" so that it will be easier to identify the OLAP service later. Finally click *OK* to add the service reference.
 
-Include the following namespace in code-behind for using the OlapDataManager and OlapReport in the application.
+## Binding OLAP data to SfPivotGauge control
 
-* Syncfusion.Olap.UWP.Manager
-* Syncfusion.Olap.UWP.Reports
+### Defining OlapReport and OlapDataManager through view model
 
-Then, include the following code to initialize the OlapDataManager and to create OlapReport through the loaded event of the SfPivotGauge control.
+Right click on the project in the solution explorer and select *Add > New Item... > Class* to create a new class file. Then name the class as *OlapViewModel* and click *OK*.
+
+The following code snippet illustrates about how to define OlapDataManager and OlapReport for SfPivotGauge control.
+
+N> The `OlapDataChanged` event should be hooked before assigning the current report to OlapDataManager.
 
 {% tabs %}
 
 {% highlight c# %}
 
+using System.ServiceModel;
+using SfPivotGaugeDemo.OlapManagerService;
 using Syncfusion.Olap.UWP.Manager;
 using Syncfusion.Olap.UWP.Reports;
 
 namespace SfPivotGaugeDemo
 {
-    public sealed partial class MainPage : Page
+    class OlapViewModel
     {
-        private OlapManagerService.IOlapDataProvider clientChannel;
+        #region Private Fields
 
-        public MainPage()
+        /// <summary>
+        /// Gets or sets the client channel.
+        /// </summary>
+        IOlapDataProvider clientChannel;
+        /// <summary>
+        /// Gets or sets the OlapDataManager.
+        /// </summary>
+        OlapDataManager olapDataManager;
+
+        #endregion
+
+        #region Public Properties
+
+        /// <summary>
+        /// Gets or sets the OlapDataManager.
+        /// </summary>
+        public OlapDataManager OlapDataManager
         {
-            this.InitializeComponent();
-            //Hook PivotGauge's loaded event to assign OlapDataManager
-            PivotGauge1.Loaded += PivotGauge_Loaded;
+            get
+            {
+                this.olapDataManager = this.olapDataManager ?? this.SetDataManager();
+                return this.olapDataManager;
+            }
+            set { this.olapDataManager = value; }
         }
 
-        private void PivotGauge_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        #endregion
+
+        #region Setting Connection to Service
+
+        private void SetConnection()
         {
-            OlapDataManager olapDataManager = new OlapDataManager();
-            olapDataManager.OlapDataChanged += OlapDataManager_OlapDataChanged;
-            olapDataManager.GetCubeSchema += OlapDataManager_GetCubeSchema;
-            olapDataManager.GetCubeInfoCollection += OlapDataManager_GetCubeInfoCollection;
-            olapDataManager.GetLevelMembersUsingMdx += OlapDataManager_GetLevelMembersUsingMdx;
-            olapDataManager.SetCurrentReport(CreateOlapReport());
-            PivotGauge1.OlapDataManager = olapDataManager;
+            BasicHttpBinding basicHttpBinding = new BasicHttpBinding();
+            basicHttpBinding.MaxReceivedMessageSize = 2147483647;
+            basicHttpBinding.MaxBufferSize = 2147483647;
+            EndpointAddress address = new EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/");
+            ChannelFactory<IOlapDataProvider> clientFactory = new ChannelFactory<IOlapDataProvider>(basicHttpBinding, address);
+            this.clientChannel = clientFactory.CreateChannel();
         }
+
+        #endregion
+
+        #region Setting OLAP Data Manager
+
+        private OlapDataManager SetDataManager()
+        {
+            this.olapDataManager = new OlapDataManager();
+            this.olapDataManager.OlapDataChanged += this.OlapDataManager_OlapDataChanged;
+            this.olapDataManager.GetCubeSchema += this.OlapDataManager_GetCubeSchema;
+            this.olapDataManager.GetCubeInfoCollection += this.OlapDataManager_GetCubeInfoCollection;
+            this.olapDataManager.SetCurrentReport(this.CreateOlapReport());
+            return this.olapDataManager;
+        }
+
+        #endregion
+
+        #region OLAP Report Creation
 
         private OlapReport CreateOlapReport()
         {
-            OlapReport olapReport = new OlapReport()
-            {
-                Name = "Sales Report"
-            };
+            OlapReport olapReport = new OlapReport();
+            olapReport.Name = "Sales Report";
             olapReport.CurrentCubeName = "Adventure Works";
 
             DimensionElement internalDimension = new DimensionElement();
             internalDimension.Name = "Product";
             internalDimension.AddLevel("Product Categories", "Category");
-            internalDimension.Hierarchy.LevelElements[0].Add(new MemberElement {
+            internalDimension.Hierarchy.LevelElements[0].Add(new MemberElement
+            {
                 Name = "Bikes"
             });
 
             KpiElements kpiElement = new KpiElements();
-            kpiElement.Elements.Add(new KpiElement {
-                Name = "Revenue", ShowKPIStatus = true, ShowKPIGoal = false, ShowKPITrend = true, ShowKPIValue = true
+            kpiElement.Elements.Add(new KpiElement
+            {
+                Name = "Revenue",
+                ShowKPIStatus = true,
+                ShowKPIGoal = false,
+                ShowKPITrend = true,
+                ShowKPIValue = true
             });
 
             MeasureElements measureElementColumn = new MeasureElements();
-            measureElementColumn.Elements.Add(new MeasureElement {
+            measureElementColumn.Elements.Add(new MeasureElement
+            {
                 Name = "Sales Amount"
             });
 
@@ -276,6 +324,56 @@ namespace SfPivotGaugeDemo
 
             return olapReport;
         }
+
+        #endregion
+
+        #region Event Handlers
+
+        /// <summary>
+        /// The event handler method is hooked when the data manager was changed.
+        /// </summary>
+        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="args">The argument parameter.</param>
+        private void OlapDataManager_OlapDataChanged(object sender, OlapDataChangedEventArgs args)
+        {
+            if (args.MDXQuery != null && sender is OlapDataManager)
+            {
+                this.SetConnection();
+                (sender as OlapDataManager).JSONData = this.clientChannel.GetJSONDataAsync(args.MDXQuery, args.SerializedReport, args.AllowMdxToOlapReportParse).Result;
+            }
+        }
+
+        /// <summary>
+        /// The event handler method is hooked to get the current cube schema.
+        /// </summary>
+        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="args">The argument parameter.</param>
+        private string OlapDataManager_GetCubeSchema(object sender, GetCubeSchemaEventArgs args)
+        {
+            if (args.CubeName != null && sender is OlapDataManager)
+            {
+                this.SetConnection();
+                return this.clientChannel.GetJSONCubeSchemaAsync(args.CubeName).Result;
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// The event handler method is hooked to get the collection of cube information.
+        /// </summary>
+        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="args">The argument parameter.</param>
+        private string OlapDataManager_GetCubeInfoCollection(object sender, GetCubeInfoCollectionEventArgs args)
+        {
+            if (sender is OlapDataManager)
+            {
+                this.SetConnection();
+                return this.clientChannel.GetJSONCubesAsync().Result;
+            }
+            return null;
+        }
+
+        #endregion
     }
 }
 
@@ -283,49 +381,96 @@ namespace SfPivotGaugeDemo
 
 {% highlight vb %}
 
+Imports System.ServiceModel
+Imports SfPivotGaugeDemo.OlapManagerService
 Imports Syncfusion.Olap.UWP.Manager
 Imports Syncfusion.Olap.UWP.Reports
 
 Namespace SfPivotGaugeDemo
 
-    Public NotInheritable Partial Class MainPage
-        Inherits Page
+    Class OlapViewModel
 
-        Private clientChannel As OlapManagerService.IOlapDataProvider
+        Private clientChannel As IOlapDataProvider
 
-        Public Sub New()
-            Me.InitializeComponent()
-            PivotGauge1.Loaded += AddressOf PivotGauge_Loaded
+        Private olapDataManager As OlapDataManager
+
+        Public Property OlapDataManager As OlapDataManager
+            Get
+                Me.olapDataManager = If(Me.olapDataManager, Me.SetDataManager())
+                Return Me.olapDataManager
+            End Get
+
+            Set(ByVal value As OlapDataManager)
+                Me.olapDataManager = value
+            End Set
+        End Property
+
+        Private Sub SetConnection()
+            Dim basicHttpBinding As BasicHttpBinding = New BasicHttpBinding()
+            basicHttpBinding.MaxReceivedMessageSize = 2147483647
+            basicHttpBinding.MaxBufferSize = 2147483647
+            Dim address As EndpointAddress = New EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/")
+            Dim clientFactory As ChannelFactory(Of IOlapDataProvider) = New ChannelFactory(Of IOlapDataProvider)(basicHttpBinding, address)
+            Me.clientChannel = clientFactory.CreateChannel()
         End Sub
 
-        Private Sub PivotGauge_Loaded(ByVal sender As Object, ByVal e As Windows.UI.Xaml.RoutedEventArgs)
-            Dim olapDataManager As OlapDataManager = New OlapDataManager()
-            olapDataManager.OlapDataChanged += OlapDataManager_OlapDataChanged
-            olapDataManager.GetCubeSchema += OlapDataManager_GetCubeSchema
-            olapDataManager.GetCubeInfoCollection += OlapDataManager_GetCubeInfoCollection
-            olapDataManager.GetLevelMembersUsingMdx += OlapDataManager_GetLevelMembersUsingMdx
-            olapDataManager.SetCurrentReport(CreateOlapReport())
-            PivotGauge1.OlapDataManager = olapDataManager
-        End Sub
+        Private Function SetDataManager() As OlapDataManager
+            Me.olapDataManager = New OlapDataManager()
+            Me.olapDataManager.OlapDataChanged += AddressOf Me.OlapDataManager_OlapDataChanged
+            Me.olapDataManager.GetCubeSchema += AddressOf Me.OlapDataManager_GetCubeSchema
+            Me.olapDataManager.GetCubeInfoCollection += AddressOf Me.OlapDataManager_GetCubeInfoCollection
+            Me.olapDataManager.SetCurrentReport(Me.CreateOlapReport())
+            Return Me.olapDataManager
+        End Function
 
         Private Function CreateOlapReport() As OlapReport
-            Dim olapReport As OlapReport = New OlapReport() With {.Name = "Sales Report"}
+            Dim olapReport As New OlapReport()
+            olapReport.Name = "Sales Report"
             olapReport.CurrentCubeName = "Adventure Works"
-            Dim internalDimension As DimensionElement = New DimensionElement()
+
+            Dim internalDimension As New DimensionElement()
             internalDimension.Name = "Product"
             internalDimension.AddLevel("Product Categories", "Category")
             internalDimension.Hierarchy.LevelElements(0).Add(New MemberElement With {.Name = "Bikes"})
-            Dim kpiElement As KpiElements = New KpiElements()
+
+            Dim kpiElement As New KpiElements()
             kpiElement.Elements.Add(New KpiElement With {.Name = "Revenue", .ShowKPIStatus = True, .ShowKPIGoal = False, .ShowKPITrend = True, .ShowKPIValue = True})
-            Dim measureElementColumn As MeasureElements = New MeasureElements()
+
+            Dim measureElementColumn As New MeasureElements()
             measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Sales Amount"})
-            Dim dimensionElementRow As DimensionElement = New DimensionElement()
+
+            Dim dimensionElementRow As New DimensionElement()
             dimensionElementRow.Name = "Date"
             dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+
             olapReport.CategoricalElements.Add(measureElementColumn)
             olapReport.CategoricalElements.Add(kpiElement)
             olapReport.SeriesElements.Add(dimensionElementRow)
+
             Return olapReport
+        End Function
+
+        Private Sub OlapDataManager_OlapDataChanged(ByVal sender As Object, ByVal args As OlapDataChangedEventArgs)
+            If args.MDXQuery IsNot Nothing AndAlso TypeOf sender Is OlapDataManager Then
+                Me.SetConnection()
+                (TryCast(sender, OlapDataManager)).JSONData = Me.clientChannel.GetJSONDataAsync(args.MDXQuery, args.SerializedReport, args.AllowMdxToOlapReportParse).Result
+            End If
+        End Sub
+
+        Private Function OlapDataManager_GetCubeSchema(ByVal sender As Object, ByVal args As GetCubeSchemaEventArgs) As String
+            If args.CubeName IsNot Nothing AndAlso TypeOf sender Is OlapDataManager Then
+                Me.SetConnection()
+                Return Me.clientChannel.GetJSONCubeSchemaAsync(args.CubeName).Result
+            End If
+            Return Nothing
+        End Function
+
+        Private Function OlapDataManager_GetCubeInfoCollection(ByVal sender As Object, ByVal args As GetCubeInfoCollectionEventArgs) As String
+            If TypeOf sender Is OlapDataManager Then
+                Me.SetConnection()
+                Return Me.clientChannel.GetJSONCubesAsync().Result
+            End If
+            Return Nothing
         End Function
     End Class
 End Namespace
@@ -334,71 +479,65 @@ End Namespace
 
 {% endtabs %}
 
-N> **"OlapDataChanged"** event should be hooked before setting the current report to OlapDataManager.
+### Binding OlapDataManager with SfPivotGauge control
 
-Next, declare a global reference to OlapManagerService’s IOlapDataProvider. In the **OlapDataManager_OlapDataChanged** method, call the **"SetConnection"** method to initialize the connection. You can call the **GetJSONDataAsync** operation by passing parameters of the serialized OlapReport and the MDX query generated from the current OlapReport. The resultant serialized CellSet is assigned to JSONData of the SfPivotGauge’s OlapDataManager.
+The OLAP data can be bound with SfPivotGauge control by using the property of `OlapDataManager` through any of the following ways:
+
+* Through XAML
+* Through code-behind
+
+**Through XAML**
+
+The following code snippet explains about how to bind the OLAP data mentioned in the *OlapViewModel* to the SfPivotGauge control with the help of `DataContext` in XAML.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:SfPivotGaugeDemo"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
+        x:Class="SfPivotGaugeDemo.MainPage"
+        mc:Ignorable="d">
+
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.DataContext>
+                <local:OlapViewModel/>
+            </Grid.DataContext>
+            <PivotGauge:SfPivotGauge OlapDataManager="{Binding OlapDataManager}"/>
+        </Grid>
+    </Page>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Through code-behind**
+
+The following code snippet illustrates about how to bind the OLAP data to the SfPivotGauge control in code-behind.
 
 {% tabs %}
 
 {% highlight c# %}
 
-public sealed partial class MainPage: Page
+using Syncfusion.UI.Xaml.PivotGauge;
+using Windows.UI.Xaml.Controls;
+
+namespace SfPivotGaugeDemo
 {
-    OlapManagerService.IOlapDataProvider clientChannel;
-
-    public MainPage()
+    public sealed partial class MainPage : Page
     {
-        //SfPivotGauge control initialization
-    }
-
-    private void OlapDataManager_OlapDataChanged(object sender, OlapDataChangedEventArgs e)
-    {
-        if (e.MDXQuery != null && sender is OlapDataManager)
+        public MainPage()
         {
-            SetConnection();
-            (sender as OlapDataManager).JSONData = clientChannel.GetJSONDataAsync(e.MDXQuery, e.SerializedReport, e.AllowMdxToOlapReportParse).Result;
+            this.InitializeComponent();
+            SfPivotGauge pivotGauge = new SfPivotGauge();
+            OlapViewModel olapViewModel = new OlapViewModel();
+            pivotGauge.OlapDataManager = olapViewModel.OlapDataManager;
+            this.RootGrid.Children.Add(pivotGauge);
         }
-    }
-
-    private string OlapDataManager_GetCubeSchema(object sender, GetCubeSchemaEventArgs e)
-    {
-        if (e.CubeName != null && sender is OlapDataManager)
-        {
-            SetConnection();
-            return clientChannel.GetJSONCubeSchemaAsync(e.CubeName).Result;
-        }
-        return null;
-    }
-
-    private string OlapDataManager_GetCubeInfoCollection(object sender, GetCubeInfoCollectionEventArgs e)
-    {
-        if (sender is OlapDataManager)
-        {
-            SetConnection();
-            return clientChannel.GetJSONCubesAsync().Result;
-        }
-        return null;
-    }
-
-    private string OlapDataManager_GetLevelMembersUsingMdx(object sender, GetLevelMembersUsingMdxEventArgs e)
-    {
-        if (sender is OlapDataManager)
-        {
-            SetConnection();
-            return clientChannel.GetJSONLevelMembersUsingMdxAsync(e.MemberUniqueName, e.AxisPosition, e.IsGrandTotalOn, e.CubeName, e.PagingParams).Result;
-        }
-        return null;
-    }
-
-    private void SetConnection()
-    {
-        //To create service contract
-        BasicHttpBinding basicHttpBinding = new BasicHttpBinding();
-        basicHttpBinding.MaxReceivedMessageSize = 2147483647;
-        basicHttpBinding.MaxBufferSize = 2147483647;
-        EndpointAddress address = new EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/");
-        ChannelFactory<OlapManagerService.IOlapDataProvider> clientFactory = new ChannelFactory <OlapManagerService.IOlapDataProvider>(basicHttpBinding, address);
-        clientChannel = clientFactory.CreateChannel();
     }
 }
 
@@ -406,82 +545,50 @@ public sealed partial class MainPage: Page
 
 {% highlight vb %}
 
-Public NotInheritable Partial Class MainPage
-    Inherits Page
+Imports Syncfusion.UI.Xaml.PivotGauge
+Imports Windows.UI.Xaml.Controls
 
-    Private clientChannel As OlapManagerService.IOlapDataProvider
+Namespace SfPivotGaugeDemo
 
-    Public Sub New()
-    End Sub
+    Public NotInheritable Partial Class MainPage
+        Inherits Page
 
-    Private Sub OlapDataManager_OlapDataChanged(ByVal sender As Object, ByVal e As OlapDataChangedEventArgs)
-        If e.MDXQuery IsNot Nothing AndAlso TypeOf sender Is OlapDataManager Then
-            SetConnection()
-            (TryCast(sender, OlapDataManager)).JSONData = clientChannel.GetJSONDataAsync(e.MDXQuery, e.SerializedReport, e.AllowMdxToOlapReportParse).Result
-        End If
-    End Sub
-
-    Private Function OlapDataManager_GetCubeSchema(ByVal sender As Object, ByVal e As GetCubeSchemaEventArgs) As String
-        If e.CubeName IsNot Nothing AndAlso TypeOf sender Is OlapDataManager Then
-            SetConnection()
-            Return clientChannel.GetJSONCubeSchemaAsync(e.CubeName).Result
-        End If
-
-        Return Nothing
-    End Function
-
-    Private Function OlapDataManager_GetCubeInfoCollection(ByVal sender As Object, ByVal e As GetCubeInfoCollectionEventArgs) As String
-        If TypeOf sender Is OlapDataManager Then
-            SetConnection()
-            Return clientChannel.GetJSONCubesAsync().Result
-        End If
-
-        Return Nothing
-    End Function
-
-    Private Function OlapDataManager_GetLevelMembersUsingMdx(ByVal sender As Object, ByVal e As GetLevelMembersUsingMdxEventArgs) As String
-        If TypeOf sender Is OlapDataManager Then
-            SetConnection()
-            Return clientChannel.GetJSONLevelMembersUsingMdxAsync(e.MemberUniqueName, e.AxisPosition, e.IsGrandTotalOn, e.CubeName, e.PagingParams).Result
-        End If
-
-        Return Nothing
-    End Function
-
-    Private Sub SetConnection()
-        Dim basicHttpBinding As BasicHttpBinding = New BasicHttpBinding()
-        basicHttpBinding.MaxReceivedMessageSize = 2147483647
-        basicHttpBinding.MaxBufferSize = 2147483647
-        Dim address As EndpointAddress = New EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/")
-        Dim clientFactory As ChannelFactory(Of OlapManagerService.IOlapDataProvider) = New ChannelFactory(Of OlapManagerService.IOlapDataProvider)(basicHttpBinding, address)
-        clientChannel = clientFactory.CreateChannel()
-    End Sub
-End Class
+        Public Sub New()
+            Me.InitializeComponent()
+            Dim pivotGauge As SfPivotGauge = New SfPivotGauge()
+            Dim olapViewModel As OlapViewModel = New OlapViewModel()
+            pivotGauge.OlapDataManager = olapViewModel.OlapDataManager
+            Me.RootGrid.Children.Add(pivotGauge)
+        End Sub
+    End Class
+End Namespace
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Finally, the SfPivotGauge control is rendered as shown below:
+Finally, run the application to generate the following output.
 
-![](Getting-Started_images/PivotGauge.png)
+![GettingStarted-OLAP](Getting-Started_images/PivotGauge.png)
+
 
 ## Creating WCF service application
 
-Create a new **WCF** service application by using Visual Studio IDE and name the WCF project as **"OlapManagerService".**
+Open Visual Studio IDE and select *File > New > Project* to open the new project dialog.
 
-Add the following dependency assemblies into your WCF service application.
+Select *Installed > Templates > Visual C# > WCF > WCF Service Application* to create a new WCF service application and name the project as "OlapManagerService".
+
+Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
 
 * Syncfusion.Olap.Base.dll
 * Syncfusion.OlapUWP.BaseWrapper.dll
 
-You can find these libraries under the following location:
+N> You can find these libraries under the following location.
+&lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies\4.6\
 
-{Installed Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies\4.6\
-
-N> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotGauge control.
-The above assembly can be obtained after installing the following setup files:
-SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi
+I> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotGauge control.
+The above assembly can be obtained only after installing the following setup files:
+**SQLSERVER2008_ASADOMD10.msi** and **SQLSERVER2008_ASOLEDB10.msi**
 These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-in/download/details.aspx?id=16978).
 If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
@@ -497,7 +604,7 @@ Now, the "Service1.svc" would look like:
 
 {% endtabs %}
 
-You can open the “Service1.svc.cs” file under “OlapManagerService” project and replace the existing code with the exact following code.
+Then double click on "Service1.svc" file in the solution explorer and replace the existing code with the exact following code.
 
 {% tabs %}
 
@@ -640,8 +747,8 @@ Namespace OlapManagerService
             _dataProvider = New OlapDataProvider(connectionString)
         End Sub
 
-        Public Function GetJSONData(ByVal mDXQuery As String, ByVal currentReport As String, ByVal allowMdxToOlapReportParse As Boolean) As String
-            Dim cellSet As CellSet = _dataProvider.ExecuteMdxQuery(mDXQuery, currentReport, allowMdxToOlapReportParse)
+        Public Function GetJSONData(ByVal mDXQuery As String, ByVal serializedReport As String) As String
+            Dim cellSet As CellSet = _dataProvider.ExecuteMdxQuery(mDXQuery, serializedReport)
             _dataProvider.DataProvider.CloseConnection()
             Return If(cellSet IsNot Nothing, Utils.Serialize(cellSet), String.Empty)
         End Function
@@ -670,40 +777,10 @@ Namespace OlapManagerService
             Return If(memberCollection IsNot Nothing, Utils.Serialize(memberCollection), String.Empty)
         End Function
 
-        Public Function GetJSONDataWithTotalCount(ByVal currentReport As String) As String
-            Dim count As SerializableDictionary(Of String, Object) = _dataProvider.GetCellSetWithTotalCount(currentReport)
+        Public Function GetJSONDataWithTotalCount(ByVal serializedReport As String) As String
+            Dim count As SerializableDictionary(Of String, Object) = _dataProvider.GetCellSetWithTotalCount(serializedReport)
             _dataProvider.DataProvider.CloseConnection()
             Return If(count IsNot Nothing, Utils.Serialize(count), String.Empty)
-        End Function
-
-        Public Function GetJSONExecuteDrillThroughQuery(ByVal mdxQuery As String) As String
-            Dim executedQuery = _dataProvider.ExecuteDrillThroughQuery(mdxQuery)
-            _dataProvider.DataProvider.CloseConnection()
-            Return If(executedQuery IsNot Nothing, Utils.Serialize(executedQuery), Nothing)
-        End Function
-
-        Public Function GetJSONExecuteMemberCount(ByVal mdxQuery As String) As String
-            Dim memberCount = _dataProvider.ExecuteMemberCount(mdxQuery)
-            _dataProvider.DataProvider.CloseConnection()
-            Return If(memberCount >= 0, Utils.Serialize(memberCount), String.Empty)
-        End Function
-
-        Public Function GetJSONLevelMembersUsingMdx(ByVal memberUniqueName As String, ByVal axisPosition As Integer, ByVal isGrandTotalOn As Boolean, ByVal cubeName As String, ByVal pagingParams As String) As String
-            Dim levelMembers = _dataProvider.GetLevelMembersUsingMdx(memberUniqueName, axisPosition, isGrandTotalOn, cubeName, pagingParams)
-            _dataProvider.DataProvider.CloseConnection()
-            Return If(levelMembers IsNot Nothing, Utils.Serialize(levelMembers), String.Empty)
-        End Function
-
-        Public Function GetJSONMeasureGroupsDimensions(ByVal cubeName As String, ByVal measureGroupName As String) As String
-            Dim dimensions = _dataProvider.GetMeasureGroupsDimensions(cubeName, measureGroupName)
-            _dataProvider.DataProvider.CloseConnection()
-            Return If(dimensions IsNot Nothing, Utils.Serialize(dimensions), String.Empty)
-        End Function
-
-        Public Function GetJSONParentMember(ByVal uniqueName As String, ByVal currentCubeName As String) As String
-            Dim parentMember = _dataProvider.GetParentMember(uniqueName, currentCubeName)
-            _dataProvider.DataProvider.CloseConnection()
-            Return If(parentMember IsNot Nothing, Utils.Serialize(parentMember), String.Empty)
         End Function
     End Class
 End Namespace
@@ -712,55 +789,55 @@ End Namespace
 
 {% endtabs %}
 
-N> Here, you have specified the demo cube path for demonstration purpose. You can modify the connection string as per your requirement.
+N> Here, the sample cube path is specified for demonstration purpose. You can modify the connection string as per your requirement.
 
-Include the basic HTTP binding and service endpoint address in the web.config file by replacing the following code snippet of the **"ServiceModel"** section.
+Then, include the basic HTTP binding and service endpoint address in the web.config file by replacing the following code snippet of the *"serviceModel"* section.
 
 {% tabs %}
 
 {% highlight xml %}
 
-<system.serviceModel>
-    <bindings>
-      <basicHttpBinding>
-        <!-- Create a custom binding for our service to enable sending large amount of data -->
-        <binding name="MyBasicHttpBinding" maxBufferPoolSize="2147483647" maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
-          <readerQuotas maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxDepth="2147483647" maxNameTableCharCount="2147483647" maxStringContentLength="2147483647" />
-        </binding>
-      </basicHttpBinding>
-    </bindings>
-    <behaviors>
-      <serviceBehaviors>
-        <behavior name="">
-          <serviceMetadata httpGetEnabled="true" httpsGetEnabled="true" />
-          <serviceDebug includeExceptionDetailInFaults="false" />
-          <dataContractSerializer maxItemsInObjectGraph="2147483647" />
-        </behavior>
-        <!-- Enable the serializer to serialize greater number of records -->
-        <behavior name="OlapService.OlapManager">
-          <serviceMetadata httpGetEnabled="true" />
-          <serviceDebug includeExceptionDetailInFaults="true" />
-          <dataContractSerializer maxItemsInObjectGraph="2147483647" />
-        </behavior>
-      </serviceBehaviors>
-    </behaviors>
+    <system.serviceModel>
+        <bindings>
+        <basicHttpBinding>
+            <!-- Create a custom binding for our service to enable sending large amount of data -->
+            <binding name="MyBasicHttpBinding" maxBufferPoolSize="2147483647" maxReceivedMessageSize="2147483647" maxBufferSize="2147483647">
+            <readerQuotas maxArrayLength="2147483647" maxBytesPerRead="2147483647" maxDepth="2147483647" maxNameTableCharCount="2147483647" maxStringContentLength="2147483647" />
+            </binding>
+        </basicHttpBinding>
+        </bindings>
+        <behaviors>
+        <serviceBehaviors>
+            <behavior name="">
+            <serviceMetadata httpGetEnabled="true" httpsGetEnabled="true" />
+            <serviceDebug includeExceptionDetailInFaults="false" />
+            <dataContractSerializer maxItemsInObjectGraph="2147483647" />
+            </behavior>
+            <!-- Enable the serializer to serialize greater number of records -->
+            <behavior name="OlapManagerService.OlapManager">
+            <serviceMetadata httpGetEnabled="true" />
+            <serviceDebug includeExceptionDetailInFaults="true" />
+            <dataContractSerializer maxItemsInObjectGraph="2147483647" />
+            </behavior>
+        </serviceBehaviors>
+        </behaviors>
 
-    <protocolMapping>
-        <add binding="basicHttpsBinding" scheme="https"/>
-    </protocolMapping>
+        <protocolMapping>
+            <add binding="basicHttpsBinding" scheme="https"/>
+        </protocolMapping>
 
-    <serviceHostingEnvironment multipleSiteBindingsEnabled="false"/>
-    <services>
-      <!--Bind the WCF service to our custom binding-->
-      <service behaviorConfiguration="OlapService.OlapManager" name="OlapService.OlapManager">
-        <endpoint address="" binding="basicHttpBinding" bindingConfiguration="MyBasicHttpBinding" contract="Syncfusion.Olap.UWP.Manager.IOlapDataProvider" />
-        <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
-      </service>
-    </services>
-</system.serviceModel>
+        <serviceHostingEnvironment multipleSiteBindingsEnabled="false"/>
+        <services>
+        <!--Bind the WCF service to our custom binding-->
+        <service behaviorConfiguration="OlapManagerService.OlapManager" name="OlapManagerService.Service1">
+            <endpoint address="" binding="basicHttpBinding" bindingConfiguration="MyBasicHttpBinding" contract="Syncfusion.Olap.UWP.Manager.IOlapDataProvider" />
+            <endpoint address="mex" binding="mexHttpBinding" contract="IMetadataExchange" />
+        </service>
+        </services>
+    </system.serviceModel>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Then, build and host this WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform application (client application). This is how you can host the service in IIS and refer the obtained URL as service reference in the sample illustrated in [Adding Service Reference to Project section.](http://help.syncfusion.com/uwp/SfPivotGauge/getting-started#adding-service-reference-to-project)
+Then build and host the WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform (UWP) application (client application). This is how you can host the service in IIS and refer the obtained URL as service reference in the sample as illustrated in the [previous section](#adding-service-reference-to-project).
