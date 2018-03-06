@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Relational Getting Started | SfPivotGrid | UWP | Syncfusion
-description: Getting Started of SfPivotGrid Control with Relational Data
+description: Getting Started for SfPivotGrid with relational data.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
@@ -9,151 +9,147 @@ documentation: ug
 
 # Getting Started
 
-This section explains about the steps required to create a simple SfPivotGrid control that is bound to relational data sources such as IList, IEnumerable, etc.
+This section explains about the steps required to create a simple SfPivotGrid control bound to relational data source such as IList, IEnumerable, etc.
 
-## Control initialization
+## Initializing SfPivotGrid control
 
-SfPivotGrid control can be initialized and added to an application through the following ways:
+Open Visual Studio IDE and select *File > New > Project* to open the new project dialog.
 
-1. Through designer
-2. Through XAML
-3. Through code-behind
+Select *Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)* to create a new UWP application and name the project as "SfPivotGridDemo".
 
-## Adding control through designer
+The target version/minimum version dialog appears, in which change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
-Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
+SfPivotGrid control can be initialized and added to the application through any of the following ways:
 
-N> After creating the UWP application, select the `Properties` under the project shown in the solution explorer and change the target version of the application as **Windows 10 (10.0; Build 10240)**.
+1. Through designer.
+2. Through XAML.
+3. Through code-behind.
 
-Now, select toolbox options from the view menu and it will appear inside the VisualStudio IDE. From the toolbox, select SfPivotGrid control under “Syncfusion Controls for UWP XAML” group, then drag and drop it into the designer section of the MainPage.xaml file.
+### Adding control through designer
 
-Finally, name the added SfPivotGrid control as “PivotGrid1” in MainPage.xaml to refer it in code-behind as follows:
+Double-click on MainPage.xaml from the solution explorer to open it in the design view.
 
-{% tabs %}
+Click on the toolbox and drag the **SfPivotGrid** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
-{% highlight xaml %}
+As a result, the SfPivotGrid control will be added to the designer as shown below:
 
-<PivotGrid:SfPivotGrid x:Name="PivotGrid1"/>
+![GettingStarted_Designer](Getting-Started_images/Designer.png)
 
-{% endhighlight %}
+### Adding control through XAML
 
-{% endtabs %}
+SfPivotGrid control can be added to the project by referring assemblies or SDK as described below:
 
-## Adding control through XAML
+**Assembly reference**
 
-Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
+Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
 
-Then, name the project as "SfPivotGridDemo" while creating the application to access the project later.
-
-To add SfPivotGrid control manually in XAML, the following assembly references must be added in the project:
-
-* Syncfusion.SfPivotGrid.UWP
-* Syncfusion.SfCellGrid.UWP
-* Syncfusion.SfGridCommon.UWP
-* Syncfusion.SfShared.UWP
-* Syncfusion.SfInput.UWP
-* Syncfusion.SfBusyIndicator.UWP
-* Syncfusion.SfColorPickers.UWP
+* Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
 * Syncfusion.PivotAnalysis.UWP
-* Syncfusion.Data.UWP
+* Syncfusion.SfBusyIndicator.UWP
+* Syncfusion.SfCellGrid.UWP
+* Syncfusion.SfColorPickers.UWP
+* Syncfusion.SfGrid.UWP
+* Syncfusion.SfGridCommon.UWP
+* Syncfusion.SfInput.UWP
+* Syncfusion.SfPivotGrid.UWP
+* Syncfusion.SfShared.UWP
 
-You can find these libraries under the following location.
-
+N> You can find these libraries under the following location.
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
-Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
+**Extension SDK reference**
 
-Right-click the **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
 
-Now, add the following namespace in the MainPage.xaml file.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGrid"
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Then, initialize the SfPivotGrid control inside the grid by using the specified namespace and name the control as “PivotGrid1”.
+After adding the required reference, add the following namespace in the *MainPage.xaml* file.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Page
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SfPivotGridDemo"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    x:Class="SfPivotGridDemo.MainPage"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGrid"
-    mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <syncfusion:SfPivotGrid x:Name="PivotGrid1"/>
-    </Grid>
-</Page>
+xmlns:PivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## Adding control through code-behind
+Then add the SfPivotGrid control to the grid by using the specified namespace as specified in the below code snippet.
 
-Open Visual Studio IDE and navigate to *File > New > Project > Universal > Blank APP(Universal Windows)* under windows option inside the Visual C# Templates to create a new UWP application.
+{% tabs %}
 
-Then, name the project as "SfPivotGridDemo" while creating the application to access the project later.
+{% highlight xaml %}
 
-To add SfPivotGrid control manually in code-behind, the following assembly references must be added in the project.
+    <Page
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:SfPivotGridDemo"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="SfPivotGridDemo.MainPage"
+        xmlns:PivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
+        mc:Ignorable="d">
 
-* Syncfusion.SfPivotGrid.UWP
-* Syncfusion.SfCellGrid.UWP
-* Syncfusion.SfGridCommon.UWP
-* Syncfusion.SfShared.UWP
-* Syncfusion.SfInput.UWP
-* Syncfusion.SfBusyIndicator.UWP
-* Syncfusion.SfColorPickers.UWP
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <PivotGrid:SfPivotGrid/>
+        </Grid>
+    </Page>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Adding control through code-behind
+
+SfPivotGrid control can be added to the project by referring assemblies or SDK.
+
+**Assembly reference**
+
+Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
+
+* Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
 * Syncfusion.PivotAnalysis.UWP
-* Syncfusion.Data.UWP
+* Syncfusion.SfBusyIndicator.UWP
+* Syncfusion.SfCellGrid.UWP
+* Syncfusion.SfColorPickers.UWP
+* Syncfusion.SfGrid.UWP
+* Syncfusion.SfGridCommon.UWP
+* Syncfusion.SfInput.UWP
+* Syncfusion.SfPivotGrid.UWP
+* Syncfusion.SfShared.UWP
 
-You can find these libraries under the following location:
-
+N> You can find these libraries under the following location.
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies for Universal Windows\10.0
 
-Or else, the SfPivotGrid control can be added to the project by choosing SDK reference as follows:
+**Extension SDK reference**
 
-Right-click the **References** and select *Add Reference > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
 
-Now, open the MainPage.xaml file, and include name for the grid as “Root_Grid” to refer it in code-behind.
+After adding the required reference, open the *MainPage.xaml* file and name the grid as "RootGrid" to refer it in the code-behind.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Page
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SfPivotGridDemo"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    x:Class="SfPivotGridDemo.MainPage"
-    mc:Ignorable="d">
+    <Page
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:SfPivotGridDemo"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="SfPivotGridDemo.MainPage"
+        mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="Root_Grid">
-    </Grid>
-</Page>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="RootGrid">
+        </Grid>
+    </Page>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Add the namespace - "Syncfusion.UI.Xaml.PivotGrid" in the MainPage.xaml.cs file. Then initialize the SfPivotGrid control and assign a name for it as "PivotGrid1". You can add the control in the parent grid as follows:
+Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGrid". Then initialize the SfPivotGrid control in the constructor and add it to the grid as illustrated below:
 
 {% tabs %}
 
@@ -173,8 +169,7 @@ namespace SfPivotGridDemo
         {
             this.InitializeComponent();
             SfPivotGrid pivotGrid = new SfPivotGrid();
-            pivotGrid.Name = "PivotGrid1";
-            Root_Grid.Children.Add(pivotGrid);
+            RootGrid.Children.Add(pivotGrid);
         }
     }
 }
@@ -194,8 +189,7 @@ Namespace SfPivotGridDemo
         Public Sub New()
             Me.InitializeComponent()
             Dim pivotGrid As SfPivotGrid = New SfPivotGrid()
-            pivotGrid.Name = "PivotGrid1"
-            Root_Grid.Children.Add(pivotGrid)
+            RootGrid.Children.Add(pivotGrid)
         End Sub
     End Class
 End Namespace
@@ -204,61 +198,74 @@ End Namespace
 
 {% endtabs %}
 
-## Adding relational data source to SfPivotGrid control
+## Binding relational data to SfPivotGrid control
 
-Right-click the project in the solution explorer and select *Add > New Folder*, and then name the folder as `ViewModel`.
+### Creating relational data through view model
 
-Create a new class file by right-clicking the project in the solution explorer and select *Add > New Item > Class*. In "Add New Item" window, provide the name of the class as ProductSales.cs and click **OK**.
+After initializing the SfPivotGrid control, right click on the project in the solution explorer and select *Add > New Item... > Class* to create a new class file. Then name the class as *ProductSalesViewModel* and click *OK*.
 
-The ItemSource for the SfPivotGrid control will be initialized in this file. Please refer the below code sample:
+The following code snippet illustrates about how to define relational data for the SfPivotGrid.
 
 {% tabs %}
 
 {% highlight c# %}
 
-public class ProductSales
+using System;
+using System.Collections.ObjectModel;
+
+namespace SfPivotGridDemo
 {
-    private object productSalesData;
-    public string Product { get; set; }
-    public string Date { get; set; }
-    public string Country { get; set; }
-    public double Amount { get; set; }
-     public object ProductSalesData
+    public class ProductSalesViewModel
     {
-      get
+        private ProductSalesCollection productSales;
+
+        public ProductSalesCollection ProductSales
         {
-          this.productSalesData = this.productSalesData ?? ProductSales.GetSalesData();
-          return this.productSalesData;
+            get { return this.productSales; }
+            set { this.productSales = value; }
         }
-      set { this.productSalesData = (ProductSales.ProductSalesCollection)value; }      
+
+        public ProductSalesViewModel()
+        {
+            this.productSales = GetSalesData();
+        }
+
+        public static ProductSalesCollection GetSalesData()
+        {
+            // Geography
+            string[] countries = new string[] { "Germany", "Canada", "United States" };
+
+            // Time
+            string[] dates = new string[] { "FY 2008", "FY 2009", "FY 2010", "FY 2012" };
+
+            // Products
+            string[] products = new string[] { "Bike", "Car" };
+            Random r = new Random(123345);
+
+            int numberOfRecords = 1000;
+            ProductSalesCollection listOfProductSales = new ProductSalesCollection();
+            for (int i = 0; i < numberOfRecords; i++)
+            {
+                ProductSale sales = new ProductSale();
+                sales.Country = countries[r.Next(1, countries.GetLength(0))];
+                sales.Amount = (3000 * r.Next(1, 12));
+                sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
+                sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
+                listOfProductSales.Add(sales);
+            }
+            return listOfProductSales;
+        }
     }
-    public static ProductSalesCollection GetSalesData()
+
+    public class ProductSale
     {
-        // Geography
-        string[] countries = new string[] { "Germany", "Canada", "United States"};
-
-        // Time
-        string[] dates = new string[] { "FY 2008", "FY 2009", "FY 2010", "FY 2012" };
-
-        // Products
-        string[] products = new string[] { "Bike", "Car" };
-        Random r = new Random(123345);
-
-        int numberOfRecords = 1000;
-        ProductSalesCollection listOfProductSales = new ProductSalesCollection();
-        for (int i = 0; i < numberOfRecords; i++)
-        {
-            ProductSales sales = new ProductSales();
-            sales.Country = countries[r.Next(1, countries.GetLength(0))];
-            sales.Amount = (3000 * r.Next(1, 12));
-            sales.Date = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
-            sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
-            listOfProductSales.Add(sales);
-        }
-        return listOfProductSales;
+        public string Product { get; set; }
+        public string Date { get; set; }
+        public string Country { get; set; }
+        public double Amount { get; set; }
     }
 
-    public class ProductSalesCollection : List<ProductSales>
+    public class ProductSalesCollection : ObservableCollection<ProductSale>
     {
     }
 }
@@ -267,138 +274,153 @@ public class ProductSales
 
 {% highlight vb %}
 
-Public Class ProductSales
+Imports System
+Imports System.Collections.ObjectModel
 
-    Private productSalesData As Object
+Namespace SfPivotGridDemo
 
-    Public Property Product As String
+    Public Class ProductSalesViewModel
 
-    Public Property Date As String
+        Private productSales As ProductSalesCollection
 
-    Public Property Country As String
+        Public Property ProductSales As ProductSalesCollection
+            Get
+                Return Me.productSales
+            End Get
 
-    Public Property Amount As Double
+            Set(ByVal value As ProductSalesCollection)
+                Me.productSales = value
+            End Set
+        End Property
 
-    Public Property ProductSalesData As Object
-        Get
-            Me.productSalesData = If(Me.productSalesData, ProductSales.GetSalesData())
-            Return Me.productSalesData
-        End Get
+        Public Sub New()
+            Me.productSales = GetSalesData()
+        End Sub
 
-        Set(ByVal value As Object)
-            Me.productSalesData = CType(value, ProductSales.ProductSalesCollection)
-        End Set
-    End Property
+        Public Shared Function GetSalesData() As ProductSalesCollection
+            Dim countries As String() = New String() {"Germany", "Canada", "United States"}
+            Dim dates As String() = New String() {"FY 2008", "FY 2009", "FY 2010", "FY 2012"}
+            Dim products As String() = New String() {"Bike", "Car"}
+            Dim r As Random = New Random(123345)
+            Dim numberOfRecords As Integer = 1000
+            Dim listOfProductSales As ProductSalesCollection = New ProductSalesCollection()
+            For i As Integer = 0 To numberOfRecords - 1
+                Dim sales As ProductSale = New ProductSale()
+                sales.Country = countries(r.[Next](1, countries.GetLength(0)))
+                sales.Amount =(3000 * r.[Next](1, 12))
+                sales.Date = dates(r.[Next](r.[Next](dates.GetLength(0) + 1)))
+                sales.Product = products(r.[Next](r.[Next](products.GetLength(0) + 1)))
+                listOfProductSales.Add(sales)
+            Next
 
-    Public Shared Function GetSalesData() As ProductSalesCollection
-        Dim countries As String() = New String() {"Germany", "Canada", "United States"}
-        Dim dates As String() = New String() {"FY 2008", "FY 2009", "FY 2010", "FY 2012"}
-        Dim products As String() = New String() {"Bike", "Car"}
-        Dim r As Random = New Random(123345)
-        Dim numberOfRecords As Integer = 1000
-        Dim listOfProductSales As ProductSalesCollection = New ProductSalesCollection()
-        For i As Integer = 0 To numberOfRecords - 1
-            Dim sales As ProductSales = New ProductSales()
-            sales.Country = countries(r.[Next](1, countries.GetLength(0)))
-            sales.Amount =(3000 * r.[Next](1, 12))
-            sales.Date = dates(r.[Next](r.[Next](dates.GetLength(0) + 1)))
-            sales.Product = products(r.[Next](r.[Next](products.GetLength(0) + 1)))
-            listOfProductSales.Add(sales)
-        Next
+            Return listOfProductSales
+        End Function
+    End Class
 
-        Return listOfProductSales
-    End Function
+    Public Class ProductSale
+        Public Property Product As String
+        Public Property Date As String
+        Public Property Country As String
+        Public Property Amount As Double
+    End Class
 
     Public Class ProductSalesCollection
-        Inherits List(Of ProductSales)
-
+        Inherits ObservableCollection(Of ProductSale)
     End Class
-End Class
+End Namespace
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Above mentioned GetSalesData method is used to get the collection that needs to be populated in the SfPivotGrid control. Now, you should bind the collection to the SfPivotGrid control as its ItemSource. It can be done through XAML or code-behind.
+### Defining ItemSource, PivotColumns, PivotRows and PivotCalculations for SfPivotGrid control
 
-### Binding ItemSource, defining PivotItems and PivotComputations to SfPivotGrid through XAML
+Relational data can be bound to SfPivotGrid control by using the property of `ItemSource` through any of the following ways:
 
-If you need to initialize the ItemSource through XAML, the DataContext is used. Please refer the following code:
+* Through XAML
+* Through code-behind
+
+**Through XAML**
+
+The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivotGrid control with the help of `DataContext`. In addition to this, `PivotColumns`, `PivotRows` and `PivotCalculations` should be assigned to SfPivotGrid for populating the data.
+
+Please refer the below code snippet:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Page
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:SfPivotGridDemo"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotGrid"
-    xmlns:pivots="using:Syncfusion.PivotAnalysis.UWP"
-    xmlns:viewModel="using:SfPivotGridDemo.ViewModel"
-    x:Class="SfPivotGridDemo.MainPage"
-    mc:Ignorable="d">
+    <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:local="using:SfPivotGridDemo"
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:PivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
+            xmlns:pivot="using:Syncfusion.PivotAnalysis.UWP"
+            x:Class="SfPivotGridDemo.MainPage"
+            mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.DataContext>
-             <viewModel:ProductSales/>
-        </Grid.DataContext>
-        <syncfusion:SfPivotGrid x:Name="PivotGrid1" ItemSource="{Binding ProductSalesData}">
-         <syncfusion:SfPivotGrid.PivotRows>
-                    <pivots:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
-                    <pivots:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
-                </syncfusion:SfPivotGrid.PivotRows>
-                <syncfusion:SfPivotGrid.PivotColumns>
-                    <pivots:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
-                </syncfusion:SfPivotGrid.PivotColumns>
-                <syncfusion:SfPivotGrid.PivotCalculations>
-                    <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
-                </syncfusion:SfPivotGrid.PivotCalculations>
-         </syncfusion:SfPivotGrid>
-    </Grid>
-</Page>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.DataContext>
+                <local:ProductSalesViewModel/>
+            </Grid.DataContext>
+            <PivotGrid:SfPivotGrid ItemSource="{Binding ProductSales}">
+                <PivotGrid:SfPivotGrid.PivotRows>
+                    <pivot:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
+                    <pivot:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
+                </PivotGrid:SfPivotGrid.PivotRows>
+                <PivotGrid:SfPivotGrid.PivotColumns>
+                    <pivot:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
+                </PivotGrid:SfPivotGrid.PivotColumns>
+                <PivotGrid:SfPivotGrid.PivotCalculations>
+                    <pivot:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="#.##" SummaryType="DoubleTotalSum"/>
+                </PivotGrid:SfPivotGrid.PivotCalculations>
+            </PivotGrid:SfPivotGrid>
+        </Grid>
+    </Page>
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Binding ItemSource, defining PivotItems, and PivotComputations to SfPivotGrid through code-behind
+**Through code-behind**
 
-If you need to initialize the ItemSource through code-behind, please refer the below code snippet:
+The following code snippet illustrates about how to bind the data to SfPivotGrid control in code-behind.
 
 {% tabs %}
 
 {% highlight c# %}
 
 using Windows.UI.Xaml.Controls;
-using Syncfusion.UI.Xaml.PivotGrid;
 using Syncfusion.PivotAnalysis.UWP;
+using Syncfusion.UI.Xaml.PivotGrid;
 
 namespace SfPivotGridDemo
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         public MainPage()
         {
             this.InitializeComponent();
+
+            ProductSalesViewModel productSalesViewModel = new ProductSalesViewModel();
+
             SfPivotGrid pivotGrid = new SfPivotGrid();
-            pivotGrid.Name = "PivotGrid1";
-            Root_Grid.Children.Add(pivotGrid);
-            pivotGrid.ItemSource = ProductSales.GetSalesData();
-            // Adding PivotRows to the Control
-            pivotGrid.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
-            pivotGrid.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Date", TotalHeader = "Total" });
 
-            // Adding PivotColumns to the Control
-            pivotGrid.PivotColumns.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
+            // Assigning ItemSource to PivotGrid
+            pivotGrid.ItemSource = productSalesViewModel.ProductSales;
 
-            // Adding PivotCalculations to the Control
-            pivotGrid.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", Format = "C", SummaryType = SummaryType.DoubleTotalSum });
+            // Adding PivotColumns to PivotGrid
+            pivotGrid.PivotColumns.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
+            pivotGrid.PivotColumns.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Country", TotalHeader = "Country" });
+
+            // Adding PivotRows to PivotGrid
+            pivotGrid.PivotRows.Add(new Syncfusion.PivotAnalysis.UWP.PivotItem { FieldMappingName = "Date", TotalHeader = "Date" });
+
+            // Adding PivotCalculations to PivotGrid
+            pivotGrid.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount", Format = "#.##", SummaryType = SummaryType.DoubleTotalSum });
+
+            RootGrid.Children.Add(pivotGrid);
         }
     }
 }
@@ -408,24 +430,33 @@ namespace SfPivotGridDemo
 {% highlight vb %}
 
 Imports Windows.UI.Xaml.Controls
-Imports Syncfusion.UI.Xaml.PivotGrid
 Imports Syncfusion.PivotAnalysis.UWP
+Imports Syncfusion.UI.Xaml.PivotGrid
 
 Namespace SfPivotGridDemo
-
     Public NotInheritable Partial Class MainPage
         Inherits Page
-
         Public Sub New()
             Me.InitializeComponent()
-            Dim pivotGrid As SfPivotGrid = New SfPivotGrid()
-            pivotGrid.Name = "PivotGrid1"
-            Root_Grid.Children.Add(pivotGrid)
-            pivotGrid.ItemSource = ProductSales.GetSalesData()
-            pivotGrid.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
-            pivotGrid.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Date", .TotalHeader = "Total"})
-            pivotGrid.PivotColumns.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
-            pivotGrid.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format = "C", .SummaryType = SummaryType.DoubleTotalSum})
+
+            Dim productSalesViewModel As New ProductSalesViewModel()
+
+            Dim pivotGrid As New SfPivotGrid()
+
+            ' Assigning ItemSource to PivotGrid
+            pivotGrid.ItemSource = productSalesViewModel.ProductSales
+
+            ' Adding PivotColumns to PivotGrid
+            pivotGrid.PivotColumns.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+            pivotGrid.PivotColumns.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Country"})
+
+            ' Adding PivotRows to PivotGrid
+            pivotGrid.PivotRows.Add(New Syncfusion.PivotAnalysis.UWP.PivotItem With {.FieldMappingName = "Date", .TotalHeader = "Date"})
+
+            ' Adding PivotCalculations to PivotGrid
+            pivotGrid.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format = "#.##", .SummaryType = SummaryType.DoubleTotalSum})
+
+            RootGrid.Children.Add(pivotGrid)
         End Sub
     End Class
 End Namespace
@@ -434,6 +465,6 @@ End Namespace
 
 {% endtabs %}
 
-**Run** the application, the following output will be generated.
+Finally, run the application to generate the following output.
 
-![](Getting-Started_images/Relational.png)
+![GettingStarted-Relational](Getting-Started_images/Relational.png)

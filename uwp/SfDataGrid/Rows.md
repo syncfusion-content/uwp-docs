@@ -180,7 +180,7 @@ Set the frozen columns count in left side of the SfDataGrid.
 </tr>
 <tr>
 <td>
-[FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterColumnCount.html)
+[FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html)
 </td>
 <td>
 Set the frozen columns in right side of the SfDataGrid.
