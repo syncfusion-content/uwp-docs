@@ -9,7 +9,7 @@ documentation: ug
 
 # Interactive Features
 
-SfChart provides interactive features such as zooming, selection, and tracking data points.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides interactive features such as zooming, selection, and tracking data points.
 
 The following interactive features are supported in SfChart.
 
@@ -23,11 +23,11 @@ The following interactive features are supported in SfChart.
 
 ## ToolTip
 
-The ToolTip feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
+The [`ToolTip`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~Tooltip.html) feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html). It is used in conjunction with the pointer. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
 By default, a small box containing the data points y values are displayed as the ToolTip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html). For example, a single y value is usually displayed in Column and [`BarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BarSeries.html). In the [`FinancialSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html), high, low, open, and close values are displayed in ToolTip. 
 
-The tooltip will be visible if you enable ShowTooltip property as in the below code snippet.
+The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowTooltip.html) property as in the below code snippet.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ chart.Series.Add(series2);
 
 ![](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
-N> By default the horizontal alignment is center for the tooltip.
+N> By default the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~HorizontalAlignmentProperty.html) is center for the tooltip.
 
 **VerticalAlignment**
 
@@ -223,7 +223,7 @@ chart.Series.Add(series2);
 
 **ToolTipMargin**
 
-You can also set the distance for the margin to be positioned from the cursor using ToolTipMargin property as in the below code snippet.
+You can also set the distance for the margin to be positioned from the cursor using [`ToolTipMargin`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~TooltipMarginProperty.html) property as in the below code snippet.
 
 {% tabs %}
 
@@ -298,7 +298,7 @@ chart.Series.Add(series2);
 ![](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
-N>By default the VerticalAlignment of the Tooltip is Top
+N>By default the [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~VerticalAlignmentProperty.html) of the Tooltip is Top
 
 **VerticalOffset** **and** **HorizontalOffset**
 
@@ -635,7 +635,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-To view the TrackBall in the particular Axis you have to enable the ShowTrackBallInfo property in that axis as in the below code snippet.
+To view the TrackBall in the particular Axis you have to enable the [`ShowTrackBallInfo`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowTrackBallInfo.html) property in that axis as in the below code snippet.
 
 {% tabs %}
 
@@ -683,7 +683,7 @@ The Trackball is composed of the following parts.
 
 ### Vertical Line
 
-The vertical line in the trackball is visible when you initialize the TrackBallBehavior.If you want to collapse the visibility of the trackball line then you have to set ShowLine to false.
+The vertical line in the trackball is visible when you initialize the TrackBallBehavior.If you want to collapse the visibility of the trackball line then you have to set [`ShowLine`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~ShowLine.html) to false.
 
 The following code snippet illustrates the collapsing the visibility of trackball line.
 
@@ -719,7 +719,7 @@ chart.Behaviors.Add(behavior);
 
 **Customization** **of** **TrackBall** **Line**
 
-SfChart allows you to customize the appearance of  trackball vertical line using [`LineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LineStyle.html) property.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to customize the appearance of  trackball vertical line using [`LineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LineStyle.html) property.
 
 The following code snippet illustrates the customization of trackball line.
 
@@ -823,21 +823,21 @@ chart.Behaviors.Add(trackball);
 
 ### Axis Label
 
-The axis label will be viewed when the ShowTrackBallInfo property is set to true. If you want to collapse the visibility of axis label in trackball then you have to set ShowTrackballInfo as false.
+The axis label will be viewed when the [`ShowTrackBallInfo`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowTrackBallInfo.html) property is set to true. If you want to collapse the visibility of axis label in trackball then you have to set [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowTrackBallInfo.html) as false.
 
-N>By default the value of ShowTrackBallInfo is false.
+N>By default the value of [`ShowTrackBallInfo`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowTrackBallInfo.html) is false.
 
 **Alignment** **of** **Axis** **Label**
 
 The alignment of the axis label while moving trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~AxisLabelAlignment.html) property.
 
-Auto –Axis label is aligned in Near/Far positions based on the trackball movement.
+[`Auto`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html) –Axis label is aligned in Near/Far positions based on the trackball movement.
 
-Far-Axis label is positioned far from the position of trackball.
+[`Far`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html)-Axis label is positioned far from the position of trackball.
 
-Near- Axis label is near to the position of trackball.
+[`Near`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html)- Axis label is near to the position of trackball.
 
-Center-Axis label is aligned to the center of the trackball. By default the axis label will positioned in center.
+[`Center`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html)-Axis label is aligned to the center of the trackball. By default the axis label will positioned in center.
 
 **Far**
 
@@ -909,7 +909,7 @@ chart.Behaviors.Add(behavior);
 
 **Customization** **of** **Axis** **Label**
 
-You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TrackBallLabelTemplate.html) property in ChartAxis as in the below code snippet.
+You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TrackBallLabelTemplate.html) property in [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) as in the below code snippet.
 
 {% tabs %}
 
@@ -977,7 +977,7 @@ When the trackball is hovered over you can view the label is also displayed over
 
 **ShowTrackballInfo**
 
-`ShowTrackballInfo` property of [`Cartesian Series`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) label for corresponding series. By default, `ShowTrackballInfo` property is true. The property can be set as shown in the below code example:
+[`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowTrackBallInfo.html) property of [`Cartesian Series`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) label for corresponding series. By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowTrackBallInfo.html) property is true. The property can be set as shown in the below code example:
 
 {% tabs %}
 
@@ -1210,7 +1210,7 @@ chart.Series.Add(series);
 
 **Applying** **Palette** **to** **the** **Series** **Label**
 
-Palette or Interior color of the Series is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~UseSeriesPalette.html) to True as shown in the below code snippet.
+[`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html) or [`Interior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Interior.html) color of the [`Series`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Series.html) is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~UseSeriesPalette.html) to True as shown in the below code snippet.
 
 {% tabs %}
 
@@ -1248,13 +1248,13 @@ chart.Behaviors.Add(behavior);
 
 The following events are available in ChartTrackBallBehavior,
 
-* `PositionChanging` - Occurs when [`trackball`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position changing from current mouse position to new mouse position.
-* `PositionChanged` - Occurs when [`trackball`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position changed from current mouse position to new mouse position.
+* [`PositionChanging`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanging_EV.html) - Occurs when [`trackball`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position changing from current mouse position to new mouse position.
+* [`PositionChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanged_EV.html) - Occurs when [`trackball`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position changed from current mouse position to new mouse position.
 
 
 ## Visual Data Editing
 
-SfChart has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) has a feature that allows you to edit an entire series or a single data point at run time by dragging the single point or the series as a whole.
 
 ### Segment Dragging
 
@@ -1356,7 +1356,7 @@ chart.Series.Add(series)
 
 **ScatterSeries**
 
-This series supports dragging in both the x and y co-ordinates. The dragging co – ordinates can be set by using the enum property `DragDirection`.
+This series supports dragging in both the x and y co-ordinates. The dragging co – ordinates can be set by using the enum property [`DragDirection`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries~DragDirection.html).
 
 {% tabs %}
 
@@ -1389,14 +1389,14 @@ chart.Series.Add(series)
 ![](Interactive-Features_images/Scatter_Dragging.png)
 
 
-N> By default the DragDirection of the scatter series is XY.
+N> By default the [`DragDirection`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries~DragDirection.html) of the scatter series is XY.
 
 
 ### Series Dragging
 
-SfChart provides support to drag the LineSeries and SplineSeries. This allows the series to move to a new position by dragging. To enable the series dragging, you have to set [`EnableSeriesDragging`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySeriesDraggingBase~EnableSeriesDragging.html) property to true.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to drag the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html) and [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html). This allows the series to move to a new position by dragging. To enable the series dragging, you have to set [`EnableSeriesDragging`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySeriesDraggingBase~EnableSeriesDragging.html) property to true.
 
-The following code snippet explains the series dragging feature in LineSeries
+The following code snippet explains the series dragging feature in [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html)
 
 {% tabs %}
 
@@ -1444,7 +1444,7 @@ N>In line and Spline Series if segment and series dragging is enabled, the serie
 
 ### Adding ToolTip for Dragging
 
-While the series or segment is dragged by default you can view the tooltip showing the new y value. To disable the tooltip while dragging you have to set the EnableDragToolTip as false.
+While the series or segment is dragged by default you can view the tooltip showing the new y value. To disable the tooltip while dragging you have to set the [`EnableDragToolTip`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~EnableDragTooltip.html) as false.
 
 {% tabs %}
 
@@ -1576,19 +1576,19 @@ chart.Series.Add(series);
 
 **Drag Tooltip Style**
 
-The dragging tooltip can be customized by using the `DragTooltipStyle` property of the series.
+The dragging tooltip can be customized by using the [`DragTooltipStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragTooltipStyle.html) property of the series.
 
 The following are the API’s in ChartDragTooltipStyle.
 
-`FontFamily` – Gets or sets the font family for dragging tooltip text.
+[`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle~FontFamily.html) – Gets or sets the font family for dragging tooltip text.
 
-`FontSize` – Gets or sets the font size for dragging tooltip text.
+[`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle~FontSize.html) – Gets or sets the font size for dragging tooltip text.
 
-`FontStyle` – Gets or sets the font style for dragging tooltip text.
+[`FontStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle~FontStyle.html) – Gets or sets the font style for dragging tooltip text.
 
-`Foreground` – Gets or sets the brush for dragging tooltip text.
+[`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle~Foreground.html) – Gets or sets the brush for dragging tooltip text.
 
-`Background` – Gets or sets the background brush for dragging tooltip.
+[`Background`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartDragTooltipStyle~Background.html) – Gets or sets the background brush for dragging tooltip.
 
 {% tabs %}
 
@@ -1782,13 +1782,13 @@ Series with visual data editing has support for following events,
 
 ## Zoom and Pan
 
-SfChart allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
 
 Zooming and panning provides you to take a close-up look of the data point plotted in the series
 
 ### Adding Zooming/Panning to the SfChart
 
-You can create an instance ChartZoomPanBehavior and add it to the Behaviors collection.
+You can create an instance [`ChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Behaviors.html) collection.
 
 {% tabs %}
 
@@ -2372,7 +2372,7 @@ The following image demonstrates the cursor panning in the left direction.
 
 ### Resetting the Zooming/Panning
 
-SfChart provides support to reset to the default view when you double tap the chart area by setting [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~ResetOnDoubleTap.html) property to true.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to reset to the default view when you double tap the chart area by setting [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~ResetOnDoubleTap.html) property to true.
 
 {% tabs %}
 
@@ -2406,7 +2406,7 @@ chart.Behaviors.Add(zooming);
 
 ### Events
 
-The following events are available in SfChart for ChartZoomPanBehavior,
+The following events are available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) for [`ChartZoomPanBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html),
 
 * [`ZoomChanging`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanging_ev.html)- Occurs when zoom started in chart area.
 * [`ZoomChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanged_ev.html)- Occurs when zooming done in chart area.
@@ -2418,11 +2418,11 @@ The following events are available in SfChart for ChartZoomPanBehavior,
 
 ## Selection:
 
-SfChart supports selection that enables you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html). 
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) supports selection that enables you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html). 
 
 ### Adding Selection Behavior to SfChart
 
-You can create an instance [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html) and add it to the Behaviors collection.
+You can create an instance [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Behaviors.html) collection.
 
 {% tabs %}
 
@@ -2674,11 +2674,11 @@ chart.Series.Add(series2);
 
 ![](Interactive-Features_images/Interactive-Features_img36.jpeg)
 
-N>By default the segment selection is true, so for selecting series you have to set the EnableSegmentSelection property to false.
+N>By default the segment selection is true, so for selecting series you have to set the [`EnableSegmentSelection`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior~EnableSegmentSelection.html) property to false.
 
 ### Selection Mode
 
-SfChart provides support to select using mouse move or mouse click. By default the selection will take place in mouse click. The selection mode can be defined using [`SelectionMode`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior~SelectionMode.html) property for segment and series selection.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to select using mouse move or mouse click. By default the selection will take place in mouse click. The selection mode can be defined using [`SelectionMode`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior~SelectionMode.html) property for segment and series selection.
 
 The following code snippet demonstrates the selection mode using mouse move.
 
@@ -2715,7 +2715,7 @@ chart.Behaviors.Add(selection);
 
 ### Selection Style
 
-SfChart allows you to select single or multiple segment /series using [`SelectionStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior~SelectionStyle.html) property. By default the SelectionStyle is single.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to select single or multiple segment /series using [`SelectionStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior~SelectionStyle.html) property. By default the [`SelectionStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior~SelectionStyle.html) is [`Single`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SelectionStyle.html).
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -2795,7 +2795,7 @@ chart.Behaviors.Add(selection);
 
 ### Adornment Selection:
 
-SfChart provides selection for adornments by defining [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HighlightOnSelection.html) property which allows you to select the segment or series with the corresponding adornments.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides selection for adornments by defining [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HighlightOnSelection.html) property which allows you to select the segment or series with the corresponding adornments.
 
 **HighlightOnSelection**
 
@@ -3016,7 +3016,7 @@ chart.Series.Add(series2);
 
 ### Events
 
-The following events are available in SfChart for ChartSelectionBehavior,
+The following events are available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) for [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html),
 
 * [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanging_ev.html)- Occurs when selection changing in chart area.
 * [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanged_ev.html)- Occurs when selection changed in chart area. 
@@ -3060,7 +3060,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Deferred** **Scrolling**
 
-SfChart provides support to suspend the value updates for every thumb values. This can be done using [`DeferredScrolling`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~DeferredScrolling.html) property in chart axis.The following code snippet demonstrates the deferred scrolling.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to suspend the value updates for every thumb values. This can be done using [`DeferredScrolling`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~DeferredScrolling.html) property in chart axis.The following code snippet demonstrates the deferred scrolling.
 
 {% tabs %}
 
@@ -3091,7 +3091,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 **Resizing** **the** **scrollbar**
 
-SfChart allows you to resize the scrollbar using [`EnableScrollBarResizing`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~EnableScrollBarResizing.html) property to true. By default the EnableScrollBarResizing property is true. The following code example and image demonstrates scrollbar without resizing option.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to resize the scrollbar using [`EnableScrollBarResizing`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~EnableScrollBarResizing.html) property to true. By default the [`EnableScrollBarResizing`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~EnableScrollBarResizing.html) property is true. The following code example and image demonstrates scrollbar without resizing option.
 
 {% tabs %}
 
@@ -3262,11 +3262,11 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ## CrossHair
 
-ChartCrossHairBehavior is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
+[`ChartCrossHairBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html) is used to view the values at mouse point or touch contact point. By moving these lines horizontally, you can get the X values and by moving these lines vertically, you can get the Y values.
 
 ### Adding CrossHairBehavior to SfChart
 
-You can create an instance [`ChartCrossHairBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html) and add it to the Behaviors collection.
+You can create an instance [`ChartCrossHairBehavior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Behaviors.html) collection.
 
 {% tabs %}
 
@@ -3453,13 +3453,13 @@ The vertical line in contact with the x axes shows axis label. The horizontal ax
 
 Axis Label can be aligned by Near, Far, Center, Auto and None Options.
 
-Auto –Axis label is aligned in Near/Far positions based on the movement of vertical line.
+[`Auto`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html) –Axis label is aligned in Near/Far positions based on the movement of vertical line.
 
-Far-Axis label is positioned far from the position of vertical line in cross hair.
+[`Far`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html)-Axis label is positioned far from the position of vertical line in cross hair.
 
-Near- Axis label is near to the position of trackball.
+[`Near`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html)- Axis label is near to the position of trackball.
 
-Center-Axis label is aligned to the center of the vertical line. By default the axis label will positioned in center.
+[`Center`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html)-Axis label is aligned to the center of the vertical line. By default the axis label will positioned in center.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
@@ -3538,7 +3538,7 @@ chart.Behaviors.Add(behavior);
 
 Vertical axis label is displayed when the horizontal line in contact with x axis.The label can be aligned using [`VerticalAxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior~VerticalAxisLabelAlignment.html) property.
 
-Axis Label can be aligned by Near, Far, Center, Auto and None Options.
+Axis Label can be aligned by [`Near`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html), [`Far`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html), [`Center`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html) and [`Auto`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAlignment.html) Options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
