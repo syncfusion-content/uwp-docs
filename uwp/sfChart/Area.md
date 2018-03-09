@@ -45,7 +45,7 @@ chart.Header = "Usage of Metals";
 ![SfChart with header.](Area_images/Area_img1.jpeg)
 
 
-Header can be positioned left or right side of the chart using `HorizontalHeaderAlignment` property.
+Header can be positioned left or right side of the chart using [`HorizontalHeaderAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~HorizontalHeaderAlignment.html) property.
 
 Also you can add more customization for the header as below: 
 
@@ -125,7 +125,7 @@ N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 
 ## Area Customization
 
-SfChart provides the properties like `AreaBorderBrush`, `AreaBorderThickness`, `AreaBackground` and `Background` for customizing the plot area.
+SfChart provides the properties like [`AreaBorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderBrush.html), [`AreaBorderThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~AreaBorderThickness.html), [`AreaBackground`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~AreaBackground.html) and `Background` for customizing the plot area.
 
 The following code examples illustrates the usage of these properties:
 
@@ -170,7 +170,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 ## Multiple Area 
 
-You can split plot area into multiple rows and columns using `ChartRowDefinition` and `ChartColumnDefinition` like Grid panel’s row and column definition. 
+You can split plot area into multiple rows and columns using [`ChartRowDefinition`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartRowDefinition.html) and [`ChartColumnDefinition`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartColumnDefinition.html) like Grid panel’s row and column definition. 
 
 The following code example demonstrates, how you can create multiple panes in the chart area:
 
@@ -464,14 +464,14 @@ chart.Series.Add(lineSeries);
 
 ## Placing Series Side-By-Side
 
-It defines the placement pattern of bar type series like Column, Bar, RangeColumn, etc. 
+It defines the placement pattern of bar type series like [`Column`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries.html), [`Bar`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BarSeries.html), [`RangeColumn`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html), etc. 
 
 It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
 
 ![Column chart type placed side by side](Area_images/Area_img6.jpeg)
 
 
-The following code example and image illustrates the placement of series while setting `SideBySideSeriesPlacement` as false.
+The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SideBySideSeriesPlacement.html) as false.
 
 {% tabs %}
 
@@ -599,13 +599,13 @@ chart.Series.Add(columnSeries2);
 ![Column chart type place one over another.](Area_images/Area_img7.jpeg)
 
 
-N>As the series will be placed one over the other(overlapped), to differentiate between the series the `SegmentSpacing` is used.
+N>As the series will be placed one over the other(overlapped), to differentiate between the series the [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ISegmentSpacing~SegmentSpacing.html) is used.
 
 ## Serialization
 
 SfChart supports serialization and deserialization for save the settings of the chart and reload. 
 
-This can be done using `Serialize` and `Deserialize` methods as in below code example:
+This can be done using [`Serialize`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Serialize.html) and [`Deserialize`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Deserialize.html) methods as in below code example:
 
 {% tabs %}
 
@@ -794,7 +794,7 @@ chart.Serialize();
 
 ## Clone or copy the chart
 
-More like serialization, you can use `Clone` method for SfChart control state persistence. This method creates a copy of the chart instance.
+More like serialization, you can use [`Clone`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ICloneable~Clone.html) method for SfChart control state persistence. This method creates a copy of the chart instance.
 
 {% tabs %}
 
@@ -816,34 +816,34 @@ T> You can use this method for copy and paste like requirement, by cloning chart
 
 You can hold and resume the series updates in dynamic update scenarios using the below methods.
 
-`SuspendSeriesNotification`
+[`SuspendSeriesNotification`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SuspendSeriesNotification.html)
 
-`ResumeSeriesNotification`
+[`ResumeSeriesNotification`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~ResumeSeriesNotification.html)
 
 
 ## Chart events
 
 SfChart provides the following list of events.
 
-* [`SelectionChanging`](http://help.syncfusion.com/uwp/sfchart/interactive-features#selection)
+* [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanging_EV.html)
 
-* [`SelectionChanged`](http://help.syncfusion.com/uwp/sfchart/interactive-features#selection)
+* [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanged_EV.html)
 
-* [`ZoomChanging`](http://help.syncfusion.com/uwp/sfchart/interactive-features#zooming-and-panning)
+* [`ZoomChanging`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanging_EV.html)
 
-* [`ZoomChanged`](http://help.syncfusion.com/uwp/sfchart/interactive-features#zooming-and-panningg)
+* [`ZoomChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ZoomChanged_EV.html)
 
-* [`SelectionZoomingStart`](http://help.syncfusion.com/uwp/sfchart/interactive-features#zooming-and-panning)
+* [`SelectionZoomingStart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingStart_EV.html)
 
-* [`SelectionZoomingEnd`](http://help.syncfusion.com/uwp/sfchart/interactive-features#zooming-and-panning)
+* [`SelectionZoomingEnd`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingEnd_EV.html)
 
-* [`SelectionZoomingDelta`](http://help.syncfusion.com/uwp/sfchart/interactive-features#zooming-and-panning)
+* [`SelectionZoomingDelta`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SelectionZoomingDelta_EV.html)
 
-* [`PanChanging`](http://help.syncfusion.com/uwp/sfchart/interactive-features#zooming-and-panning)
+* [`PanChanging`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PanChanging_EV.html)
 
-* [`PanChanged`](http://help.syncfusion.com/uwp/sfchart/interactive-features#zooming-and-panning)
+* [`PanChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PanChanged_EV.html)
 
-* [`ResetZooming`](http://help.syncfusion.com/uwp/sfchart/interactive-features#zooming-and-panning)
+* [`ResetZooming`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html)
 
 **See also**
 
