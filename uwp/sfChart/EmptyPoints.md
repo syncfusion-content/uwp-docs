@@ -27,7 +27,7 @@ Fruits.Add(new Model() { FruitName = "Blueberry", People = 20 });
 
 {% endhighlight %}
 
-By default, `ShowEmptyPoints` property is false. So the empty points will not be rendered as in below screenshots:
+By default, [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) property is false. So the empty points will not be rendered as in below screenshots:
 
 ![](EmptyPoints_images/emptypoint_1.png)
 
@@ -40,12 +40,12 @@ By default, `ShowEmptyPoints` property is false. So the empty points will not be
 
 ## Display Empty Points
 
-You can show these empty points by setting the `ShowEmptyPoints` property as True. So we need to define the value for this empty points and that can be defined using `EmptyPointValue` property.
+You can show these empty points by setting the [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) property as True. So we need to define the value for this empty points and that can be defined using [`EmptyPointValue`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html) property.
 
 This is an enum property having the following values: 
 
-* Zero- Replace all the empty points with zero (0), this is the default value.
-* Average- Replace all the empty points with average value.
+* [`Zero`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html)- Replace all the empty points with zero (0), this is the default value.
+* [`Average`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html)- Replace all the empty points with average value.
 
 The following code examples shows how to display the empty points:
 
@@ -106,9 +106,9 @@ chart.Series.Add(series);
 ![](EmptyPoints_images/emptypoint_4.png)
 
 
-Since the `EmptyPointValue` as Zero by default, it will draw a line to 0 when we set `ShowEmptyPoint` as True.
+Since the [`EmptyPointValue`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html) as Zero by default, it will draw a line to 0 when we set [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) as True.
 
-The following code example shows the `EmptyPointValue` as Average:
+The following code example shows the [`EmptyPointValue`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html) as Average:
 
 {% tabs %}
 
@@ -173,17 +173,17 @@ chart.Series.Add(series);
 
 ## Customizing Empty Points
 
-You can customize the empty points using `EmptyPointStyle` property. The following are the values of EmptyPointStyle:
+You can customize the empty points using [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html) property. The following are the values of [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html):
 
-* Interior- Used to define the custom brush for the empty points.
-* Symbol- Used to add symbols for the empty points.
-* Symbol and Interior- This is similar to Symbol, which includes empty point brush also.
+* [`Interior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html)- Used to define the custom brush for the empty points.
+* [`Symbol`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html)- Used to add symbols for the empty points.
+* [`Symbol and Interior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EmptyPointStyle.html)- This is similar to Symbol, which includes empty point brush also.
 
 ### Interior
 
-This option fills an interior indicating the empty points and this custom brush can be defined using the `EmptyPointInterior` property.
+This option fills an interior indicating the empty points and this custom brush can be defined using the [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html) property.
 
-The following code example illustrates the use of `EmptyPointStyle` and `EmptyPointInterior`:
+The following code example illustrates the use of [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html) and [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html):
 
 {% tabs %}
 
@@ -223,7 +223,7 @@ chart.Series.Add(series);
 ![](EmptyPoints_images/emptypoint_6.png)
 
 
-N> This is the default value for `EmptyPointStyle`. So when you enable empty points using `ShowEmptyPoints` , empty point segment render with this `EmptyPointInterior`.
+N> This is the default value for [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html). So when you enable empty points using [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) , empty point segment render with this [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html).
 
 ### Symbol
 
@@ -296,7 +296,7 @@ chart.Series.Add(series);
 
 ### Symbol and Interior
 
-This option combines above two options, which draw a symbol with defined `EmptyPointInterior`. The following code example shows the use of this value.
+This option combines above two options, which draw a symbol with defined [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html). The following code example shows the use of this value.
 
 {% tabs %}
 

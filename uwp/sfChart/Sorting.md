@@ -12,15 +12,15 @@ documentation: ug
 Chart provides the support for sorting the data point rendering either in ascending or descending based on X or Y axis.
 
 ### Enable Sorting
-This `IsSortData` property used to enable the sorting in series.
+This [`IsSortData`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~IsSortData.html) property used to enable the sorting in series.
 
 ### Changing sorting direction
 
-The `SortDirection` property defines the direction of sorting either in Ascending or Descending based on x or y value.
+The [`SortDirection`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SortDirection.html) property defines the direction of sorting either in Ascending or Descending based on x or y value.
 
 ### Changing sorting axis
 
-This `SortBy` property decides whether sorting should be done based on x or y values.
+This [`SortBy`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SortBy.html) property decides whether sorting should be done based on x or y values.
 
 
 The following example illustrates a simple chart (without apply sorting):
@@ -214,16 +214,16 @@ chart.Series.Add(columnSeries);
 
 ![](sorting_chart_images/sorting_5.png)
 
-N> This feature is primarily applicable for indexed (non-linear) axis like CategoryAxis. For linear axis like NumericalAxis, only the order of rendering will be sorted. i.e., the order in which the data point is being rendered.
+N> This feature is primarily applicable for indexed (non-linear) axis like [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html). For linear axis like [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html), only the order of rendering will be sorted. i.e., the order in which the data point is being rendered.
 
 
 ## Sorting for linear axis
 
-As mentioned above, the sorting for the linear axis is different from CategoryAxis. Here the rendering order of the data point (x or y) will be sorted.
+As mentioned above, the sorting for the linear axis is different from [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html). Here the rendering order of the data point (x or y) will be sorted.
 
-This will be useful especially when we have one or more values added in same data point. Also this rendering order sorting will be captured by applying Palette to each point.
+This will be useful especially when we have one or more values added in same data point. Also this rendering order sorting will be captured by applying [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html) to each point.
 
-The following example illustrates a simple chart having AutumnBrights palette (without apply sorting):
+The following example illustrates a simple chart having [`AutumnBrights`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartColorPalette.html) palette (without apply sorting):
 
 ![](sorting_chart_images/linearaxis_nosort.png)
 
