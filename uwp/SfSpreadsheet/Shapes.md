@@ -118,7 +118,6 @@ SfSpreadsheet provides support to import RichText Box in SpreadsheetGrid and to 
 {% highlight c# %}
 
 var rtfText = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset1 Calibri;}{\\f1\\fnil\\fcharset1 Calibri;}}{\\colortbl;\\red0\\green0\\blue0;\\red255\\green0\\blue0;}{\\f0\\fs22\\b\\cf1\\u83*\\u121*\\u110*\\u99*\\u102*\\u117*\\u115*\\u105*\\u111*\\u110*\\u32*\\b0}                           {\\f1\\fs22\\cf2\\u83*\\u111*\\u102*\\u116*\\u119*\\u97*\\u114*\\u101*\\u32*}{\\f1\\fs22\\cf1\\u80*\\u118*\\u116*\\u46*\\u32*\\u76*\\u116*\\u100*}}";
-  
 var textBox = spreadsheet.AddTextBox(spreadsheet.ActiveSheet, new RowColumnIndex(5, 5), new Size(200, 200), rtfText) as TextBoxShapeImpl;
 
 // Re-positioning RichTextBox
@@ -136,14 +135,17 @@ SfSpreadsheet allows the user to access the selected shapes and modify the prope
 {% highlight c# %}
 
 var selectedShape = spreadsheet.ActiveGrid.GraphicModel.SelectedShapes;
+
 for(int i = 0; i < selectedShape.Count ; i++)
 {
+
     if(ExcelShapeType.Chart == selectedShape[i].ShapeType)
     {
         var chart = selectedShape[i] as IChart;
         chart.ChartArea.Fill.FillType = ExcelFillType.Gradient;
         chart.ChartArea.Fill.ForeColor = Color.Blue;
     }
+
     else if(ExcelShapeType.Picture == selectedShape[i].ShapeType)
     {
         var picture = selectedShape[i] as ShapeImpl;

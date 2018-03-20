@@ -21,12 +21,10 @@ To `Group` the rows/columns
 {% highlight c# %}
 
 //Group rows,
-
 var gridRange = GridRangeInfo.Rows(4,8);
 spreadsheet.Group(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByRows);
 
 //Group columns,
-
 var gridRange = GridRangeInfo.Cols(4,8);
 spreadsheet.Group(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
@@ -42,12 +40,10 @@ To `Ungroup` the rows/columns
 {% tabs %}
 {% highlight c# %}
 //Ungroup rows,
-
 var gridRange = GridRangeInfo.Rows(4,8);
 spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByRows);
 
 //Ungroup columns,
-
 var gridRange = GridRangeInfo.Cols(4,8);
 spreadsheet.UnGroup(spreadsheet.ActiveSheet, gridRange, ExcelGroupBy.ByColumns);
 
@@ -62,25 +58,21 @@ Groups can be Expanded by `ExpandGroup` method  and Collapsed  by `CollapseGroup
 {% highlight c# %}
 
 //Expand Rows,
-
 spreadsheet.ActiveSheet.Range["A4:A8"].ExpandGroup(ExcelGroupBy.ByRows);
 spreadsheet.ActiveGrid.RowHeights.SetHidden(4, 8, false);
 spreadsheet.RefreshOutlines(true,false);
 
 //Expand Columns,
-
 spreadsheet.ActiveSheet.Range["A3:F3"].ExpandGroup(ExcelGroupBy.ByColumns);
 spreadsheet.ActiveGrid.ColumnWidths.SetHidden(1, 6, false);
 spreadsheet.RefreshOutlines(false,true);
 
 //Collapse Rows,
-
 spreadsheet.ActiveSheet.Range["A4:A8"].CollapseGroup(ExcelGroupBy.ByRows);
 spreadsheet.ActiveGrid.RowHeights.SetHidden(4, 8, true);
 spreadsheet.RefreshOutlines(true,false);
 
 //Collapse Columns,
-
 spreadsheet.ActiveSheet.Range["A3:F3"].CollapseGroup(ExcelGroupBy.ByColumns);
 spreadsheet.ActiveGrid.ColumnWidths.SetHidden(1, 6, true);
 spreadsheet.RefreshOutlines(false,true);
@@ -112,6 +104,7 @@ SfSpreadsheet provides support to clear all the Outlines of the Grouped range.
 {% highlight c# %}
 
 var sheet = spreadsheet.Workbook.Worksheets[0] as WorksheetImpl;
+
 foreach (OutlineWrapper outline in sheet.OutlineWrappers)
 {
   outline.OutlineRange.Ungroup(outline.GroupBy);
