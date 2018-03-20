@@ -14,11 +14,11 @@ SfTreeGrid allows you to sort the data against one or more columns either in asc
 
 {% tabs %}
 {% highlight xaml %}
-  <syncfusion:SfTreeGrid Name="treeGrid"
-                               AllowSorting="True"                             
-                               ChildPropertyName="ReportsTo"
-                               ItemsSource="{Binding EmployeeInfo}"
-                               ParentPropertyName="ID">
+ <syncfusion:SfTreeGrid Name="treeGrid"
+                       AllowSorting="True"                             
+                       ChildPropertyName="ReportsTo"
+                       ItemsSource="{Binding EmployeeInfo}"
+                       ParentPropertyName="ID">
 {% endhighlight %}
 {% highlight c# %}
 
@@ -38,14 +38,14 @@ In another way, you can enable or disable the sorting for particular column by s
                                ItemsSource="{Binding EmployeeInfo}"
                                ParentPropertyName="ID">
 
-            <syncfusion:SfTreeGrid.Columns>
-                <syncfusion:TreeGridTextColumn AllowSorting="True" MappingName="FirstName" />
-                <syncfusion:TreeGridTextColumn AllowSorting="False" MappingName="LastName" />
-                <syncfusion:TreeGridTextColumn  MappingName="ID" />
-                <syncfusion:TreeGridTextColumn MappingName="Title" />
-                <syncfusion:TreeGridNumericColumn MappingName="Salary" />
-                <syncfusion:TreeGridTextColumn MappingName="ReportsTo" />
-            </syncfusion:SfTreeGrid.Columns>
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridTextColumn AllowSorting="True" MappingName="FirstName" />
+        <syncfusion:TreeGridTextColumn AllowSorting="False" MappingName="LastName" />
+        <syncfusion:TreeGridTextColumn  MappingName="ID" />
+        <syncfusion:TreeGridTextColumn MappingName="Title" />
+        <syncfusion:TreeGridNumericColumn MappingName="Salary" />
+        <syncfusion:TreeGridTextColumn MappingName="ReportsTo" />
+    </syncfusion:SfTreeGrid.Columns>
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
@@ -165,6 +165,7 @@ You can unsort the data by removing the corresponding SortColumnDescription from
 {% tabs %}
 {% highlight c# %}
 var sortColumnDescription = this.treeGrid.SortColumnDescriptions.FirstOrDefault(col => col.ColumnName == "FirstName");
+
 if (sortColumnDescription != null)
           this.treeGrid.SortColumnDescriptions.Remove(sortColumnDescription);
 {% endhighlight %}
@@ -201,36 +202,40 @@ In the below code snippet, `FirstName` property is compared based on its string 
  
 {% tabs %}
 {% highlight c# %}
-  public class CustomSortComparer : IComparer<object>, ISortDirection
-    {
-        public int Compare(object x, object y)
-        {
-            var item1 = x as EmployeeInfo;
-            var item2 = y as EmployeeInfo;
-            var value1 = item1.FirstName;
-            var value2 = item2.FirstName;
-            int c = 0;
-            if (value1 != null && value2 == null)
-            {
-                c = 1;
-            }
-            else if (value1 == null && value2 != null)
-            {
-                c = -1;
-            }
-            else if (value1 != null && value2 != null)
-            {
-                c = value1.Length.CompareTo(value2.Length);
-            }
+public class CustomSortComparer : IComparer<object>, ISortDirection
+{
+       public int Compare(object x, object y)
+       {
+           var item1 = x as EmployeeInfo;
+           var item2 = y as EmployeeInfo;
+           var value1 = item1.FirstName;
+           var value2 = item2.FirstName;
+           int c = 0;
+ 
+           if (value1 != null && value2 == null)
+           {
+               c = 1;
+           }
+ 
+           else if (value1 == null && value2 != null)
+           {
+               c = -1;
+           }
+ 
+           else if (value1 != null && value2 != null)
+           {
+               c = value1.Length.CompareTo(value2.Length);
+           }
 
-            if (SortDirection == ListSortDirection.Descending)
-                c = -c;
+           if (SortDirection == ListSortDirection.Descending)
+               c = -c;
 
-            return c;
-        }
+           return c;
+       }
 
         //Get or Set the SortDirection value
         private ListSortDirection _SortDirection;
+
         public ListSortDirection SortDirection
         {
             get { return _SortDirection; }
@@ -292,6 +297,7 @@ You can prevent sorting for the particular column through [GridSortColumnsChangi
 treeGrid.SortColumnsChanging += TreeGrid_SortColumnsChanging;
 private void TreeGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
         {
+
             if (e.AddedItems[0].ColumnName == "FirstName")
             {
                 e.Cancel = true;

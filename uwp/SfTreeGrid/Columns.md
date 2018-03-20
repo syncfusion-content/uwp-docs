@@ -224,7 +224,6 @@ this.treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -243,6 +242,7 @@ treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
     if (e.Column.MappingName == "ReportsTo")
         e.Cancel = true;
 }
@@ -260,8 +260,10 @@ treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
     if (e.Column.MappingName == "Salary")
     {
+
         if (e.Column is TreeGridNumericColumn)
             e.Column = new TreeGridTextColumn() { MappingName = "Salary" };
     }
@@ -279,6 +281,7 @@ treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
 
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+
     if (e.Column.MappingName == "Salary")
     {
         e.Column.AllowEditing = false;
@@ -308,8 +311,10 @@ You can set [TreeGridColumn.HeaderTemplate](https://help.syncfusion.com/cr/cref_
 {% endhighlight %}
 {% highlight c# %}
 treeGrid.AutoGeneratingColumn += TreeGrid_AutoGeneratingColumn;
+
 private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGeneratingColumnEventArgs e)
 {
+ 
     if (e.Column.MappingName == "FirstName")
     {
         e.Column.HeaderTemplate = this.Resources["headerTemplate"] as DataTemplate;
@@ -336,6 +341,7 @@ You can skip the column generation using `AutoGenerateField` property or set the
 {% highlight c# %}
 
 [Display(AutoGenerateField = false, Description = "Title field is not generated in UI")]
+
 public string Title
 {
     get
@@ -358,6 +364,7 @@ You can change the value of the property using `Editable` attribute.
 {% tabs %}
 {% highlight c# %}
 [Editable(true)]
+
 public string FirstName
 {
     get
@@ -380,6 +387,7 @@ You can customize header text of column using `Display.Name` property.
 {% tabs %}
 {% highlight c# %}
 [Display(Name ="FirstName of the employee",Description ="First Name is necessary for identification")]
+
 public string FirstName
 {
     get
@@ -402,6 +410,7 @@ You can change the columns order using `DisplayAttribute.Order` property.
 {% tabs %}
 {% highlight c# %}
 [Display(Order = 0)]
+
 public string FirstName
 {
     get { return _firstName; }
@@ -412,6 +421,7 @@ public string FirstName
     }
 } 
 [Display(Order = -1)]
+
 public string LastName
 {
     get { return _lastName; }
@@ -435,6 +445,7 @@ You can customize the data format using `DataTypeAttribute.DataType` property.
 {% tabs %}
 {% highlight c# %}
 [DataType(DataType.Currency)]
+
 public double? Salary
 {
     get
@@ -505,6 +516,7 @@ You can access the column through its column index or [TreeGridColumn.MappingNam
 {% tabs %}
 {% highlight c# %}
 TreeGridColumn column = treeGrid.Columns[1];
+
 //OR
 TreeGridColumn column = treeGrid.Columns["FirstName"];
 {% endhighlight %}
@@ -519,6 +531,7 @@ You can remove all the columns by clearing the `SfTreeGrid.Columns` property.
 this.treeGrid.Columns.Clear();
 {% endhighlight %}
 {% endtabs %}
+
 You can remove a column using Remove and RemoveAt methods.
 <table>
 <th>
@@ -570,6 +583,7 @@ treeGrid.ResizingColumns += TreeGrid_ResizingColumns;
 
 private void TreeGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {
+
     if (e.ColumnIndex == 1)
         e.Cancel = true;
 }
@@ -595,6 +609,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 ![](Columns_images/Columns_img5.jpeg)
 
 You can enable or disable dragging on particular column using [TreeGridColumn.AllowDragging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~AllowDragging.html) property.
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:TreeGridTextColumn AllowDragging="True"
@@ -602,6 +617,7 @@ You can enable or disable dragging on particular column using [TreeGridColumn.Al
                                 MappingName="FirstName" />
 {% endhighlight %}
 {% endtabs %}
+
 ### Disable column reordering
 You can cancel the particular column dragging by handling [SfTreeGrid.ColumnDragging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnDragging_EV.html). `ColumnDragging` event occurs when you start dragging the column header. 
 
@@ -621,6 +637,7 @@ treeGrid.ColumnDragging += TreeGrid_ColumnDragging;
 private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventArgs e)
 {
     var column = treeGrid.Columns[e.From];
+
     if(column.MappingName=="FirstName" && e.Reason==QueryColumnDraggingReason.Dropping)
     {
         e.Cancel = true;
@@ -671,6 +688,7 @@ SfTreeGrid provides MVVM support for binding `TreeGridColumn` properties with Vi
 public class ViewModel
 {
     private bool _allowEditing =true;
+
     public bool AllowEditing
     {
         get { return _ allowEditing; }
@@ -679,6 +697,7 @@ public class ViewModel
 }
 {% endhighlight %}
 {% endtabs %}
+
 Below code, binds the `ViewModel.AllowEditing` property to `TreeGridColumn. AllowEditing` property.
 {% tabs %}
 {% highlight xaml %}
