@@ -20,15 +20,12 @@ A workbook consists of one or more worksheets stored within the worksheet coll
 {% highlight c# %}
 
 //By Specifying the index as,
-
 spreadsheet.Workbook.Worksheets[0]
 
 //By Specifying the sheet name as,
-
 spreadsheet.Workbook.Worksheets["sheet1"]
 
 //Access the Active worksheet as,
-
 spreadsheet.ActiveSheet
       
 {% endhighlight %}
@@ -52,11 +49,11 @@ Hence you can access the `ActiveGrid` either in the `WorkbookLoaded` or `Workshe
 {% highlight c# %}
 
 spreadsheet.WorksheetAdded += spreadsheet_WorksheetAdded;
-
 spreadsheet.WorksheetRemoved += spreadsheet_WorksheetRemoved;
 
 void spreadsheet_WorksheetAdded(object sender, WorksheetAddedEventArgs args)
 {
+
    //Access the Active SpreadsheetGrid and hook the events associated with it.
     var grid = spreadsheet.ActiveGrid;
     grid.CurrentCellActivated += grid_CurrentCellActivated;
@@ -64,6 +61,7 @@ void spreadsheet_WorksheetAdded(object sender, WorksheetAddedEventArgs args)
 
 void spreadsheet_WorksheetRemoved(object sender, WorksheetRemovedEventArgs args)
 {
+
    //Access the Active SpreadsheetGrid and unhook the events associated with it
     var grid = spreadsheet.ActiveGrid;
     grid.CurrentCellActivated -= grid_CurrentCellActivated;
@@ -94,12 +92,13 @@ spreadsheet.GridCollection[sheet.Name].ColumnCount = 12;
 {% highlight c# %}
 
 spreadsheet.WorkbookLoaded += spreadsheet_WorkbookLoaded;
-
 spreadsheet.WorkbookUnloaded += spreadsheet_WorkbookUnloaded;
 
 void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 {
+
   //Hook the events here
+
    foreach (var grid in args.GridCollection)
    {
     grid.QueryRange += grid_QueryRange; 
@@ -108,7 +107,9 @@ void spreadsheet_WorkbookLoaded(object sender, WorkbookLoadedEventArgs args)
 
 void spreadsheet_WorkbookUnloaded(object sender, WorkbookUnloadedEventArgs args)
 {
+
   //Unhook the events here
+
    foreach (var grid in args.GridCollection)
    {
     grid.QueryRange -= grid_QueryRange; 
@@ -143,23 +144,18 @@ The following code shows the several ways of accessing a single cell or range of
 {% highlight c# %}
 
 // Access a cell by specifying cell address. 
-
 var cell = spreadsheet.Workbook.Worksheets[0].Range["A3"];
 
 // Access a cell by specifying cell row and column index. 
-
 var cell1 = spreadsheet.Workbook.Worksheets[0].Range[3, 1];
 
 // Access a cells by specifying user defined name.
-
 var cell2 = spreadsheet.Workbook.Worksheets[0].Range["Namerange"];
 
 // Accessing a range of cells by specifying cell's address.
-
 var cell3 = spreadsheet.Workbook.Worksheets[0].Range["A5:C8"];
 
 // Accessing a range of cells specifying cell row and column index.
-
 var cell4 = spreadsheet.Workbook.Worksheets[0].Range[15, 1, 15, 3];
 
 {% endhighlight %}
@@ -177,11 +173,9 @@ SfSpreadsheet allows you to access the value of a cell by using [Value](http://h
 {% highlight c# %}
 
 // Access a cell value by using "Value" Property,
-
 var cellValue = spreadsheet.Workbook.Worksheets[1].Range["A3"].Value
 
 // Access a cell value by using "DisplayText" Property. 
-
 var displayValue = spreadsheet.Workbook.Worksheets[1].Range[4, 1].DisplayText;
 
 {% endhighlight %}
@@ -195,9 +189,7 @@ In SfSpreadsheet, to update the cell value and formula programmatically, `SetCel
 {% highlight c# %}
 
 var range = spreadsheet.ActiveSheet.Range[2,2];
-
 spreadsheet.ActiveGrid.SetCellValue(range, "cellValue");
-
 spreadsheet.ActiveGrid.InvalidateCell(2,2);
 
 {% endhighlight %}
@@ -213,15 +205,12 @@ The following code illustrates the different way of deleting the value from a ce
 {% highlight c# %}
 
 //To clear the contents in the range alone,
-
 spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear();
 
 //To clear the contents along with its formatting in the range,   
-       
 spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear(true);
 
 //To clear the range with specified ExcelClearOptions,
-           
 spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear(ExcelClearOptions.ClearDataValidations);
 
 {% endhighlight %}
@@ -296,9 +285,7 @@ spreadsheet.FormulaBarVisibility =  Windows.UI.Xaml.Visibility.Collapsed;
 {% highlight c# %}
 
 var workbook = spreadsheet.Workbook as WorkbookImpl;
-
 var binding = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic;
-
 var value = typeof(WorkbookImpl).GetProperty("IsCellModified", binding).GetValue(workbook);
 
 {% endhighlight %}
@@ -363,10 +350,12 @@ Spreadsheet.PropertyChanged += Spreadsheet_PropertyChanged;
 
 void Spreadsheet_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
 {
+
     // when the worksheets in the workbook changed
 	
     if(e.PropertyName == "ActiveSheet")
     {
+
         //Implement code
     }
 }

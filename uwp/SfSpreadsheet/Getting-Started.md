@@ -123,36 +123,26 @@ Spreadsheet is available in the following namespace “_Syncfusion_._UI_._Xaml_.
 
 {% highlight xaml %}
 
-    <Page
-
+<Page
     x:Class="SfSpreadsheetDemo.MainPage"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
     xmlns:local="using:SfSpreadsheetDemo"
-
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-
     xmlns:tools="using:Syncfusion.UI.Xaml.Controls.Navigation"
-
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Spreadsheet"
-
     mc:Ignorable="d">
 
     <syncfusion:SfSpreadsheet x:Name="spreadsheet" FormulaBarVisibility="Visible" />
-
-    </Page>
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfSpreadsheet spreadsheet = new SfSpreadsheet();
-
 this.grid.Children.Add(spreadsheet);
 
 {% endhighlight %}
@@ -168,40 +158,26 @@ N> To load the SfSpreadsheet in Windows Mobile, add the below code in MainPage.x
 {% tabs %}
 {% highlight xaml %}
 
-    <Page
-
+<Page
     x:Class="SfSpreadsheetDemo.MainPage"
-
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
     xmlns:local="using:SfSpreadsheetDemo"
-
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-
     xmlns:tools="using:Syncfusion.UI.Xaml.Controls.Navigation"
-
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Spreadsheet"
 
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    
         <Syncfusion:SfSpreadsheetRibbon DataContext="{Binding ElementName=spreadsheet}">
-        
             <Syncfusion:SfSpreadsheetRibbon.Content>
-            
                 <Syncfusion:SfSpreadsheet x:Name="spreadsheet"/>
-                
             </Syncfusion:SfSpreadsheetRibbon.Content>
-            
         </Syncfusion:SfSpreadsheetRibbon>
     </Grid>
-
-    </Page>
+</Page>
 
 {% endhighlight %}
 {% endtabs %}
@@ -227,15 +203,12 @@ The Excel Workbook can be opened in SfSpreadsheet using the `Open` method in var
 {% highlight c# %}
 
 //Using Stream, 
-
 spreadsheet.Open (Stream file)
 
 //Using StorageFile,
-
 spreadsheet.Open (StorageFile file)
 
 //Using Workbook,
-
 spreadsheet.Open(IWorkbook workbook)
 
 {% endhighlight %}
@@ -245,7 +218,6 @@ spreadsheet.Open(IWorkbook workbook)
 {% highlight c# %}
 
 Stream fileStream = typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("SfSpreadsheetDemo.Assets.BidDetails.xlsx");
-
 this.spreadsheet.Open(fileStream);
 
 {% endhighlight %}
@@ -274,16 +246,13 @@ The `SaveAs` method in SfSpreadsheet can be used in various ways,
 {% highlight c# %}
 
 //Using Storage File,
-
- spreadsheet.SaveAs (StorageFile file);
+spreadsheet.SaveAs (StorageFile file);
 
 //Using String,
-
- spreadsheet.SaveAs (string file);
+spreadsheet.SaveAs (string file);
 
 //For Dialog box,
-
- spreadsheet.SaveAs();
+spreadsheet.SaveAs();
       
 {% endhighlight %}
 {% endtabs %}

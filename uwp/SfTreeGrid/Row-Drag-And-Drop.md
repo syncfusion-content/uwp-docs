@@ -57,17 +57,20 @@ If [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/
 {% highlight c# %}
 public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {
+
     public TreeGridRowDragDropControllerExt(SfTreeGrid treeGrid) : base(treeGrid)
     {
-
     }
+
     protected override DropPosition GetDropPosition(DragEventArgs args, RowColumnIndex rowColumnIndex)
     {
         SfTreeGrid sourceTreeGrid = null;
+
         if (args.DataView.Properties.ContainsKey("SourceTreeGrid"))
             sourceTreeGrid = args.DataView.Properties["SourceTreeGrid"] as SfTreeGrid;
 
         // Disable drop operation if source tree grid is different.
+
         if (sourceTreeGrid != TreeGrid)
             return DropPosition.None;
         return base.GetDropPosition(args, rowColumnIndex);
@@ -93,18 +96,22 @@ Here, drag operation is disabled for root nodes.
 {% highlight c# %}
 public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {
+
     public TreeGridRowDragDropControllerExt(SfTreeGrid treeGrid) : base(treeGrid)
     {
-
     }
+
     protected override void ProcessOnDragStarting(DragStartingEventArgs args, RowColumnIndex rowColumnIndex)
     {
         base.ProcessOnDragStarting(args, rowColumnIndex);
+
         // Skip dragging of root nodes.
+
         if (args.Data.Properties.ContainsKey("Nodes"))
         {
             var nodes = args.Data.Properties["Nodes"] as ObservableCollection<TreeNode>;
             var node = nodes.FirstOrDefault(n => n.Level == 0);
+
             if (node != null)
                 args.Cancel = true;
         }
@@ -123,16 +130,18 @@ Here, drop operation is disabled on leaf nodes.
 {% highlight c# %}
 public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {
+
     public TreeGridRowDragDropControllerExt(SfTreeGrid treeGrid) : base(treeGrid)
     {
-
     }
 
     protected override DropPosition GetDropPosition(DragEventArgs args, RowColumnIndex rowColumnIndex)
     {
         var nodeIndex = TreeGrid.ResolveToNodeIndex(rowColumnIndex.RowIndex);
         var node = TreeGrid.View.GetNodeAt(nodeIndex);
+
         // Disable drop on leaf nodes.
+
         if (!node.HasChildNodes)
             return DropPosition.None;
         return base.GetDropPosition(args, rowColumnIndex);
@@ -153,19 +162,20 @@ You can customize the drag UI text by overriding the [ProcessOnDragOver](https:/
 {% highlight c# %}
 public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {
+
     public TreeGridRowDragDropControllerExt(SfTreeGrid treeGrid) : base(treeGrid)
     {
-
     }
+
     protected override void ProcessOnDragOver(DragEventArgs args, RowColumnIndex rowColumnIndex)
     {
         base.ProcessOnDragOver(args, rowColumnIndex);
         var dropPosition = GetDropPosition(args, rowColumnIndex);
+        
         if (dropPosition == DropPosition.DropAbove)
             args.DragUIOverride.Caption = "rube fallen";
     }
 }
-
 treeGrid.RowDragDropController = new TreeGridRowDragDropControllerExt(treeGrid);
 {% endhighlight %}
 {% endtabs %}
@@ -178,14 +188,16 @@ While dragging, all selected nodes will be added to dragging nodes collection. I
 {% highlight c# %}
 public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {
+
     public TreeGridRowDragDropControllerExt(SfTreeGrid treeGrid) : base(treeGrid)
     {
-
     }
+
     protected override void ProcessOnDragStarting(DragStartingEventArgs args, RowColumnIndex rowColumnIndex)
     {
         var nodes = new ObservableCollection<TreeNode>();
         var node = this.TreeGrid.GetNodeAtRowIndex(rowColumnIndex.RowIndex);
+
         if (node == null)
             return;
         nodes.Add(node);
@@ -195,7 +207,6 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
         args.DragUI.SetContentFromDataPackage();
     }
 }
-
 treeGrid.RowDragDropController = new TreeGridRowDragDropControllerExt(treeGrid);
 {% endhighlight %}
 {% endtabs %}
@@ -222,6 +233,7 @@ private void ListView_DragItemsStarting(object sender, DragItemsStartingEventArg
 
 private void ListView_DragItemsCompleted(ListViewBase sender, DragItemsCompletedEventArgs args)
 {
+
     foreach (var item in args.Items)
     {
         (listView.ItemsSource as ObservableCollection<PersonInfo>).Remove(item as PersonInfo);
@@ -234,20 +246,24 @@ private void ListView_DragItemsCompleted(ListViewBase sender, DragItemsCompleted
 {% highlight c# %}
 public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {
+
     public TreeGridRowDragDropControllerExt(SfTreeGrid treeGrid) : base(treeGrid)
     {
-
     }
+
     protected override void ProcessOnDrop(DragEventArgs args, RowColumnIndex rowColumnIndex)
     {
         this.TreeGrid.AutoScroller.AutoScrolling = AutoScrollOrientation.None;
         var dropPosition = GetDropPosition(args, rowColumnIndex);
+
         if (dropPosition != DropPosition.None && rowColumnIndex.RowIndex != -1)
         {
             var draggedItem = GetDraggedItem(args);
+
             if (this.TreeGrid.View is TreeGridNestedView)
             {
                 var treeNode = this.TreeGrid.GetNodeAtRowIndex(rowColumnIndex.RowIndex);
+
                 if (treeNode == null)
                     return;
                 var data = treeNode.Item;
@@ -255,39 +271,49 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
                 var itemIndex = -1;
 
                 TreeNode parentNode = null;
+
                 if (dropPosition == DropPosition.DropBelow || dropPosition == DropPosition.DropAbove)
                     parentNode = treeNode.ParentNode;
+
                 else if (dropPosition == DropPosition.DropAsChild)
                 {
+
                     if (!treeNode.IsExpanded)
                         TreeGrid.ExpandNode(treeNode);
                     parentNode = treeNode;
                 }
                 IList sourceCollection = null;
+
                 if (dropPosition == DropPosition.DropBelow || dropPosition == DropPosition.DropAbove)
                 {
+
                     if (treeNode.ParentNode != null)
                     {
                         var collection = TreeGrid.View.GetPropertyAccessProvider().GetValue(treeNode.ParentNode.Item, TreeGrid.ChildPropertyName) as IEnumerable;
                         sourceCollection = GetSourceListCollection(collection);
                     }
+
                     else
                     {
                         sourceCollection = GetSourceListCollection(TreeGrid.View.SourceCollection);
                     }
                     itemIndex = sourceCollection.IndexOf(data);
+
                     if (dropPosition == DropPosition.DropBelow)
                     {
                         itemIndex += 1;
                     }
                 }
+
                 else if (dropPosition == DropPosition.DropAsChild)
                 {
                     var collection = TreeGrid.View.GetPropertyAccessProvider().GetValue(data, TreeGrid.ChildPropertyName) as IEnumerable;
                     sourceCollection = GetSourceListCollection(collection);
+                    
                     if (sourceCollection == null)
                     {
                         var list = data.GetType().GetProperty(TreeGrid.ChildPropertyName).PropertyType.CreateNew() as IList;
+
                         if (list != null)
                         {
                             TreeGrid.View.GetPropertyAccessProvider().SetValue(treeNode.Item, TreeGrid.ChildPropertyName, list);
@@ -304,6 +330,7 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
         CloseDragIndicators();
 
     }
+  
     protected override DropPosition GetDropPosition(DragEventArgs args, RowColumnIndex rowColumnIndex)
     {
         bool canDrop = true;
@@ -311,6 +338,7 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
         var treeNode = this.TreeGrid.GetNodeAtRowIndex(rowColumnIndex.RowIndex);
         ScrollAxisRegion columnRegion = ScrollAxisRegion.Body;
         var treeGridPanel = TreeGrid.GetTreePanel();
+  
         if (treeGridPanel.FrozenColumns > 0)
             columnRegion = ScrollAxisRegion.Header;
         var rowRect = treeGridPanel.RangeToRect(ScrollAxisRegion.Body, columnRegion, rowColumnIndex, true, false);
@@ -318,18 +346,22 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 
         if (!canDrop)
             return DropPosition.None;
+  
         else if (p.Y > rowRect.Y + 15 && p.Y < rowRect.Y + 35)
         {
             return DropPosition.DropAsChild;
         }
+  
         else if (p.Y < rowRect.Y + 15)
         {
             return DropPosition.DropAbove;
         }
+  
         else if (p.Y > rowRect.Y + 35)
         {
             return DropPosition.DropBelow;
         }
+  
         else
             return DropPosition.Default;
     }
@@ -351,14 +383,17 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
             args.DragUIOverride.Caption = "Can't drop here";
             return;
         }
+
         else if (dropPosition == DropPosition.DropAbove)
         {
             args.DragUIOverride.Caption = "Drop above";
         }
+
         else if (dropPosition == DropPosition.DropAsChild)
         {
             args.DragUIOverride.Caption = "Drop as child";
         }
+
         else
         {
             args.DragUIOverride.Caption = "Drop below";
@@ -370,8 +405,10 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 
     private object GetDraggedItem(DragEventArgs dragEventArgs)
     {
+
         if (dragEventArgs.DataView.Properties.ContainsKey("DraggedItem"))
             return dragEventArgs.DataView.Properties["DraggedItem"];
+
         else
             return null;
     }
@@ -379,8 +416,10 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
     internal IList GetSourceListCollection(IEnumerable collection = null)
     {
         IList list = null;
+
         if (collection == null)
             collection = TreeGrid.View.SourceCollection;
+
         if ((collection as IList) != null)
         {
             list = collection as IList;

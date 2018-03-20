@@ -32,9 +32,7 @@ For single cell
 {% highlight c# %}
 
 IRange range = spreadsheet.ActiveSheet.Range["A5"];
-
 range.CellStyle.ColorIndex = Syncfusion.XlsIO.ExcelKnownColors.Blue;
-
 spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
 
 {% endhighlight %}
@@ -68,33 +66,25 @@ IRange range = spreadsheet.Workbook.Worksheets[0].Range["A1:B5"];
 var gridRange = GridExcelHelper.ConvertExcelRangeToGridRange(range);
 
 //Setting the Font Family Name,
-
 range.CellStyle.Font.FontName = "Arial Black";
 
 //Setting the Font Styles,
-
 range.CellStyle.Font.Bold = true;
-
 range.CellStyle.Font.Italic = true;
 
 //Setting the Font Size,
-
 range.CellStyle.Font.Size = 18;
 
 //Setting the Font Effects,
-
 range.CellStyle.Font.Strikethrough = true;
 
 //Setting the UnderLine Types,
-
 range.CellStyle.Font.Underline = ExcelUnderline.Single;
 
 //Setting the Font Color,
-
 range.CellStyle.Font.Color = ExcelKnownColors.Blue;
 
 //Invalidating the range, to update in view,
-
 spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 
 {% endhighlight %}
@@ -108,14 +98,12 @@ SfSpreadsheet allows the user to apply the borders at runtime for particular cel
 {% highlight c# %}
 
 //For a single cell,
-
 IRange range = spreadsheet.Workbook.Worksheets[0].Range["A5"];
 range.Borders.LineStyle = ExcelLineStyle.Dash_dot;
 range.Borders.Color = ExcelKnownColors.Gold;
 spreadsheet.ActiveGrid.InvalidateCell(range.Row, range.Column);
 
 //For a range of cells,
-
 IRange excelRange = spreadsheet.Workbook.Worksheets[0].Range["C3:D8"];
 excelRange.BorderAround(ExcelLineStyle.Double, ExcelKnownColors.Green);
 excelRange.BorderInside(ExcelLineStyle.Dotted, ExcelKnownColors.Tan);
@@ -133,17 +121,14 @@ SfSpreadsheet allows the user to align the content of the cell. The alignment op
 {% highlight c# %}
 
 //Applying Horizontal Alignment for the cell "A2",
-
 spreadsheet.Workbook.Worksheets[0].Range["A2"].CellStyle.HorizontalAlignment = ExcelHAlign.HAlignCenter;
 spreadsheet.ActiveGrid.InvalidateCell(2,1);
 
 //Applying Vertical Alignment for the cell "B2",
-
 spreadsheet.Workbook.Worksheets[0].Range["B2"].CellStyle.VerticalAlignment = ExcelVAlign.VAlignBottom;
 spreadsheet.ActiveGrid.InvalidateCell(2,2);
 
 //Applying Orientation for the selected cell or ranges,
-
 spreadsheet.FormatOrientation(90);
 
 //For Indentation,
@@ -188,15 +173,11 @@ For merging the cells in SfSpreadsheet, you need to add the `CoveredCellInfo` in
 {% highlight c# %}
 
 var gridRange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
 var excelRange = gridRange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
-
 var coverCell = new CoveredCellInfo(gridRange.Top, gridRange.Left, gridRange.Bottom, gridRange.Right);
 
 spreadsheet.ActiveGrid.CoveredCells.Add(coverCell);
-
 spreadsheet.ActiveSheet.Range[excelRange].Merge();
-
 spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 
 {% endhighlight %}
@@ -212,13 +193,10 @@ For unmerging the cells in SfSpreadsheet, you need to clear the `CoveredCells` f
 {% highlight c# %}
 
 var gridRange = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
 var excelRange = gridRange.ConvertGridRangeToExcelRange(spreadsheet.ActiveGrid);
 
 spreadsheet.ActiveGrid.CoveredCells.Clear(gridRange);
-
 spreadsheet.ActiveSheet.Range[excelRange].UnMerge();
-
 spreadsheet.ActiveGrid.InvalidateCell(gridRange, true);
 
 {% endhighlight %}
@@ -316,13 +294,10 @@ SfSpreadsheet allows the users to format a table with built in styles of table (
 {% highlight c# %}
 
 // Creating a table
-
 IListObject table = spreadsheet.Workbook.ActiveSheet.ListObjects.Create("Table1", spreadsheet.Workbook.ActiveSheet.Range["C1:G5"]);
 
 // Formatting table with a built-in style
-
 table.BuiltInTableStyle = TableBuiltInStyles.TableStyleLight6;
-
 spreadsheet.ActiveGrid.InvalidateCells();
 
 {% endhighlight %}
@@ -340,11 +315,9 @@ SfSpreadsheet provides support to clear the contents of a cell along with its fo
 {% highlight c# %}
 
 //To clear the contents along with its formatting in the range,   
-       
 spreadsheet.Workbook.Worksheets[0].Range[4, 5].Clear(true);
 
 //To clear the range with specified ExcelClearOptions,
-           
 spreadsheet.Workbook.Worksheets[0].Range[4, 5].Clear(ExcelClearOptions.ClearConditionalFormats);
 
 {% endhighlight %}

@@ -76,13 +76,10 @@ For `Cut` Operation,
 {% highlight c# %}
 			
 //To perform cut operation for selected ranges
-
 var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
 spreadsheet.ActiveGrid.CopyPaste.Copy(range, true);
 
 //To perform cut operation
-
 spreadsheet.ActiveGrid.CopyPaste.Cut();
 
 {% endhighlight %}
@@ -94,13 +91,10 @@ For `Copy` Operation,
 {% highlight c# %}
 
 //To perform copy operation for selected ranges
-
 var range = spreadsheet.ActiveGrid.SelectedRanges.ActiveRange;
-
- spreadsheet.ActiveGrid.CopyPaste.Copy(range, false);
+spreadsheet.ActiveGrid.CopyPaste.Copy(range, false);
 
 //To perform Copy operation
-
 spreadsheet.ActiveGrid.CopyPaste.Copy();
 
 {% endhighlight %}
@@ -112,15 +106,11 @@ For `Paste` Operation,
 {% highlight c# %}
 
 //To perform paste operation
-
 spreadsheet.ActiveGrid.CopyPaste.Paste();
 
 //To perform paste operation with range and Paste Options
-
 var copyPaste = spreadsheet.ActiveGrid.CopyPaste as SpreadsheetCopyPaste;
-
 copyPaste.Paste(range);
-
 copyPaste.Paste(range, PasteOptions.Paste);
 
 {% endhighlight %}
@@ -167,11 +157,8 @@ To programmatically, invoke the Undo/Redo operations,
 {% highlight c# %}
 
 spreadsheet.HistoryManager.Enabled = true;
-
 spreadsheet.HistoryManager.Undo();
-
 spreadsheet.HistoryManager.Redo();
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -204,6 +191,7 @@ spreadsheet.ActiveGrid.CellContextMenuOpening += ActiveGrid_CellContextMenuOpeni
 
 void ActiveGrid_CellContextMenuOpening(object sender, CellContextMenuOpeningEventArgs e)
 {
+
     //Adding Customized Menu item
         
     MenuItem PasteSpecial = new MenuItem();

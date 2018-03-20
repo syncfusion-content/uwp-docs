@@ -271,6 +271,7 @@ treeGrid.NodeExpanding += TreeGrid_NodeExpanding;
 
 private void TreeGrid_NodeExpanding(object sender, NodeExpandingEventArgs e)
 {
+
     if ((e.Node.Item as EmployeeInfo).ID == 2)
         e.Cancel = true;
 }
@@ -397,6 +398,7 @@ You can cancel the node collapsing operation through [TreeGrid.NodeCollapsing](h
 {% tabs %}
 {% highlight c# %}
 treeGrid.NodeCollapsing += TreeGrid_NodeCollapsing;
+
 private void TreeGrid_NodeCollapsing(object sender, NodeCollapsingEventArgs e)
 {
     e.Cancel = true;
@@ -409,8 +411,10 @@ You can cancel the specific node being collapsed by using `TreeGrid.NodeCollapsi
 {% tabs %}
 {% highlight c# %}
 treeGrid.NodeCollapsing += TreeGrid_NodeCollapsing;
+
 private void TreeGrid_NodeCollapsing(object sender, NodeCollapsingEventArgs e)
 {
+
     if ((e.Node.Item as EmployeeInfo).ID == 2)
         e.Cancel = true;
 }
