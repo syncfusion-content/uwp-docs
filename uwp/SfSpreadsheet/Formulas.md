@@ -19,9 +19,7 @@ To add formulas into a cell programmatically, use `SetCellValue` method of `Spre
 {% highlight c# %}
 
 var range = spreadsheet.ActiveSheet.Range["A2"];
-
 spreadsheet.ActiveGrid.SetCellValue(range, "=SUM(B1:B2)");
-
 spreadsheet.ActiveGrid.InvalidateCell(2,1);
 
 {% endhighlight %}
@@ -51,12 +49,10 @@ SfSpreadsheet allows the user to edit the named ranges at runtime by `EditNamedR
 {% highlight c# %}
 
 //To Edit the named ranges,
-
 IName name = spreadsheet.Workbook.Names["Sample"];
 spreadsheet.EditNamedRange("Test", "A3:B3", name);
 
 //To remove the named ranges,
-
 IName name = spreadsheet.Workbook.Names["Sample"];
 spreadsheet.DeleteNamedRange(name);
 

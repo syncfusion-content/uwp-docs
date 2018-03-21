@@ -25,7 +25,6 @@ Setting of the culture information,
 public MainPage()
 {
     System.Globalization.CultureInfo.CurrentUICulture = new System.Globalization.CultureInfo("ja");
-
     InitializeComponent();
 }
 

@@ -245,8 +245,10 @@ You can collapse node CheckBox for certain nodes by editing the control template
 {% highlight c# %}
 public class BoolToVisibilityConverter : IValueConverter
 {     
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
+
         if ((bool)value)
             return Visibility.Visible;
         return Visibility.Collapsed;
@@ -254,6 +256,7 @@ public class BoolToVisibilityConverter : IValueConverter
     
     public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
+
         if ((Visibility)value == Visibility.Visible)
             return true;
         return false;
@@ -383,7 +386,9 @@ You can get the checked nodes collection using [GetCheckedNodes](https://help.sy
 var nodes = treeGrid.GetCheckedNodes();
 {% endhighlight %}
 {% endtabs %}
+
 If you want to get all the checked nodes even though they are not in view, you can pass parameter as ‘true’ in `GetCheckedNodes` method.
+
 {% tabs %}
 {% highlight c# %}
 var nodes = treeGrid.GetCheckedNodes(true);
