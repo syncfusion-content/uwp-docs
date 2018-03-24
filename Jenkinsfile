@@ -7,14 +7,14 @@ String platform='UWP';
    try
 	{   
 	
-	def Content="";
+	def Content=""; 
 		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
 	
 
 		//Clone scm repository in Workspace source directory
 		stage ('Checkout')   
 	    { 
-	    dir('Spell-Checker') 
+	    dir('Spell-Checker')  
            {
 		     checkout scm
 			 
