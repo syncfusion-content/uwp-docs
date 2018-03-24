@@ -14,7 +14,7 @@ String platform='UWP';
 		//Clone scm repository in Workspace source directory
 		stage ('Checkout')   
 	    { 
-	    dir('Spell-Checker') 
+	    dir('Spell-Checker')  
            {
 		     checkout scm
 			 
