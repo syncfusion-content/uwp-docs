@@ -7,7 +7,7 @@ String platform='UWP';
    try
 	{   
 	
-	def Content="";
+	def Content=""; 
 		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
 	
 
