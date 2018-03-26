@@ -113,12 +113,10 @@ By default, SfDataGrid allows you to serialize the caption summary, group summar
 {% highlight c# %}
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.CreateFileAsync("DataGrid.xml", CreationCollisionOption.ReplaceExisting);
-
 SerializationOptions options = new SerializationOptions();
 options.SerializeCaptionSummary = false;
 options.SerializeGroupSummaries = false;
 options.SerializeTableSummaries = false;
-
 this.dataGrid.Serialize(storageFile, options);
 {% endhighlight %}
 {% endtabs %}
@@ -145,10 +143,8 @@ By default, SfDataGrid allows you to serialize the DetailsViewDefinition. You ca
 {% highlight c# %}
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.CreateFileAsync("DataGrid.xml", CreationCollisionOption.ReplaceExisting);
-
 SerializationOptions options = new SerializationOptions();
 options.SerializeDetailsViewDefinition = false;
-
 this.dataGrid.Serialize(storageFile, options);
 {% endhighlight %}
 {% endtabs %}
@@ -161,10 +157,8 @@ By default, SfDataGrid allows you to serialize the unbound rows settings. You ca
 {% highlight c# %}
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.CreateFileAsync("DataGrid.xml", CreationCollisionOption.ReplaceExisting);
-
 SerializationOptions options = new SerializationOptions();
 options.SerializeUnBoundRows = false;
-
 this.dataGrid.Serialize(storageFile, options);
 {% endhighlight %}
 {% endtabs %}
@@ -209,10 +203,8 @@ By default, SfDataGrid allows you to deserialize the sorting operation. You can 
 {% highlight c# %}
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.GetFileAsync("DataGrid.xml");
-
 DeserializationOptions options = new DeserializationOptions();
 options.DeserializeSorting = false;
-
 this.dataGrid.Deserialize(storageFile, options);
 {% endhighlight %}
 {% endtabs %}
@@ -267,12 +259,10 @@ By default, SfDataGrid allows you to deserialize the group summary, caption summ
 {% highlight c# %}
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.GetFileAsync("DataGrid.xml");
-
 DeserializationOptions options = new DeserializationOptions();
 options.DeserializeCaptionSummary = false;
 options.DeserializeGroupSummaries = false;
 options.DeserializeTableSummaries = false;
-
 this.dataGrid.Deserialize(storageFile, options);
 {% endhighlight %}
 {% endtabs %}
@@ -299,10 +289,8 @@ By default, SfDataGrid allows you to deserialize the DetailsViewDefinition. You 
 {% highlight c# %}
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.GetFileAsync("DataGrid.xml");
-
 DeserializationOptions options = new DeserializationOptions();
 options.DeserializeDetailsViewDefinition = false;
-
 this.dataGrid.Deserialize(storageFile, options);
 {% endhighlight %}
 {% endtabs %}
@@ -316,10 +304,8 @@ By default, SfDataGrid allows you to deserialize the unbound rows settings. You 
 
 var folder = ApplicationData.Current.LocalFolder;
 var storageFile = await folder.GetFileAsync("DataGrid.xml");
-
 DeserializationOptions options = new DeserializationOptions();
 options.DeserializeUnBoundRows = false;
-
 this.dataGrid.Deserialize(storageFile, options);
 {% endhighlight %}
 {% endtabs %}
@@ -338,6 +324,7 @@ In the below code snippet,  TimePickerColumn is created .For more information ab
 {% highlight c# %}
 public class TimePickerColumn : GridColumn
 {
+    
     public TimePickerColumn()
     {
         SetCellType("TimePicker");
@@ -353,7 +340,6 @@ In the below code snippet, the TimePickerColumn is defined in SfDataGrid.
 <syncfusion:SfDataGrid x:Name="dataGrid"
                         AutoGenerateColumns="False"
                         ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
        <local:TimePickerColumn HeaderText="Delivered Time" MappingName="OrderDate" />
     </syncfusion:SfDataGrid.Columns>
@@ -369,9 +355,9 @@ To serialize the above TimePickerColumn, follow the below steps.
 {% tabs %}
 {% highlight c# %}
 [DataContract(Name = "SerializableCustomGridColumn")]
+
 public class SerializableCustomGridColumn:SerializableGridColumn
 {
-
 }
 {% endhighlight %}
 {% endtabs %}
@@ -385,10 +371,11 @@ dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
 
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
+
+    public SerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
-        {
-        }
+    {
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -399,13 +386,15 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
+
+    public SerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
-        {
-        }
+    {
+    }
 
     protected override SerializableGridColumn GetSerializableGridColumn(GridColumn column)
     {
+    
         if (column.MappingName == "OrderDate")
         {
             return new SerializableCustomGridColumn();
@@ -422,14 +411,16 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
+   
+   public SerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
-        {
-        }
-    protected override void StoreGridColumnProperties(GridColumn column, SerializableGridColumn serializableColumn)
-    {
+   {
+   }
+  
+   protected override void StoreGridColumnProperties(GridColumn column, SerializableGridColumn serializableColumn)
+   {
         base.StoreGridColumnProperties(column, serializableColumn);
-    }
+   }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -440,10 +431,10 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
+    public SerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
-        {
-        }
+    {
+    }
 
     public override Type[] KnownTypes()
     {
@@ -469,6 +460,7 @@ public class SerializationControllerExt : SerializationController
 
     protected override GridColumn GetGridColumn(SerializableGridColumn serializableColumn)
     {
+     
         if (serializableColumn is SerializableCustomGridColumn)
             return new TimePickerColumn();
             
@@ -485,10 +477,10 @@ public class SerializationControllerExt : SerializationController
 {% highlight c# %}
 public class SerializationControllerExt : SerializationController
 {
-        public SerializationControllerExt(SfDataGrid dataGrid)
+    public SerializationControllerExt(SfDataGrid dataGrid)
             : base(dataGrid)
-        {
-        }
+    {
+    }
 
     protected override void RestoreColumnProperties(SerializableGridColumn  serializableColumn, GridColumn column)
    { 
@@ -517,9 +509,7 @@ By default, you cannot serialize the template content in SfDataGrid. This is the
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTemplateColumn CellTemplate="{StaticResource cellTemplate}"
                                        HeaderText="Order ID"
                                        MappingName="OrderID"
@@ -539,17 +529,19 @@ this.dataGrid.SerializationController = new SerializationControllerExt(this.data
 
 public class SerializationControllerExt : SerializationController
 {
+ 
     public SerializationControllerExt(SfDataGrid grid)
         : base(grid)
     {
-
     }
         
     protected override void RestoreColumnProperties(SerializableGridColumn serializableColumn, GridColumn column)
     {
         base.RestoreColumnProperties(serializableColumn, column);
+    
         if (column is GridTemplateColumn)
         {
+    
             if (column.MappingName == "OrderID")
             {
                 column.CellTemplate = App.Current.Resources["TemplateColumn"] as DataTemplate;

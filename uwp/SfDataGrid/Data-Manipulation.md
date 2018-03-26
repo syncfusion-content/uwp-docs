@@ -289,7 +289,6 @@ You can get the row index of AddNewRow where it placed by using the [GridAddNewR
 using Syncfusion.UI.Xaml.Grid.Helpers
 
 var addNewRowController=this.dataGrid.GetAddNewRowController();
-
 int addNewRowIndex = addNewRowController.GetAddNewRowIndex();
 {% endhighlight %}
 {% endtabs %}
@@ -378,14 +377,16 @@ AddNewRow operations can be performed programmatically by using [GridAddNewRowCo
 using Syncfusion.UI.Xaml.Grid.Helpers;
 
 //Check whether the data is newly added 
+
 if (this.dataGrid.View.IsAddingNew)
 {
+
     // Which end edit the current cell. By passing false, it revert the entered value.
+
     if (this.dataGrid.SelectionController.CurrentCellManager.CurrentCell.IsEditing)
         this.dataGrid.SelectionController.CurrentCellManager.EndEdit(true);
 
     var addNewRowController = this.dataGrid.GetAddNewRowController();
-
     addNewRowController.CancelAddNew();
 }
 {% endhighlight %}
@@ -399,22 +400,21 @@ RowColumnIndex rowColumnIndex = new RowColumnIndex();
 
 if (this.dataGrid.View.IsAddingNew)
 {
+
     if (this.dataGrid.SelectionController.CurrentCellManager.CurrentCell.IsEditing)
         this.dataGrid.SelectionController.CurrentCellManager.EndEdit(true);
-
     rowColumnIndex = this.dataGrid.SelectionController.CurrentCellManager.CurrentRowColumnIndex;
 
     //Process the commit operation in AddNewRow.
     var addNewRowController = this.dataGrid.GetAddNewRowController();
-
     addNewRowController.CommitAddNew();
 
     //Gets the row index of AddNewRow 
     rowColumnIndex.RowIndex = addNewRowController.GetAddNewRowIndex();
-
     this.dataGrid.SelectedItems.Clear();
 
     //If the AddNewRowPosition is Top need to move the current cell to next row 
+
     if (this.dataGrid.AddNewRowPosition == AddNewRowPosition.Top)
         rowColumnIndex.RowIndex = rowColumnIndex.RowIndex + 1;
 
@@ -436,6 +436,7 @@ this.dataGrid.RowValidating += dataGrid_RowValidating;
 
 void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {
+
     if(this.dataGrid.IsAddNewIndex(args.RowIndex))
     {
         var data = args.RowData as OrderInfo;
@@ -471,130 +472,81 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-
     <Style TargetType="syncfusion:AddNewRowControl">
-
         <Setter Property="BorderBrush" Value="Gray" />
-
         <Setter Property="BorderThickness" Value="0" />
-
         <Setter Property="Template">
-
             <Setter.Value>
-
                 <ControlTemplate TargetType="syncfusion:AddNewRowControl">
-
                     <Grid>
                         <VisualStateManager.VisualStateGroups>
-
                             <VisualStateGroup x:Name="AddNewRowStates">
-
                                 <VisualState x:Name="Normal" />
-
                                 <VisualState x:Name="Edit">
-                                
-                                    <Storyboard>
-                                    
+                                <Storyboard>
                                         <ObjectAnimationUsingKeyFrames Storyboard.TargetName="WM_TextBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
-
                                             <DiscreteObjectKeyFrame KeyTime="0">
-
                                                 <DiscreteObjectKeyFrame.Value>
-
                                                     <Visibility>Collapsed</Visibility>
-
                                                 </DiscreteObjectKeyFrame.Value>
-
                                             </DiscreteObjectKeyFrame>
-
                                         </ObjectAnimationUsingKeyFrames>
-
                                     </Storyboard>
-
                                 </VisualState>
-
                             </VisualStateGroup>
-
                             <VisualStateGroup x:Name="BorderStates">
-
                                 <VisualState x:Name="NormalRow" />
-
                                 <VisualState x:Name="FooterRow">
-                                    
                                     <Storyboard BeginTime="0">
-                                    
                                         <ObjectAnimationUsingKeyFrames BeginTime="0"
                                                                        Duration="1"
                                                                        Storyboard.TargetName="PART_AddNewRowBorder"
                                                                        Storyboard.TargetProperty="BorderThickness">
-
                                             <DiscreteObjectKeyFrame KeyTime="0" Value="0, 1, 0, 0" />
-                                            
                                         </ObjectAnimationUsingKeyFrames>
-
                                         <ObjectAnimationUsingKeyFrames BeginTime="0"
                                                                        Duration="1"
                                                                        Storyboard.TargetName="PART_AddNewRowBorder"
                                                                        Storyboard.TargetProperty="Margin">
-
                                             <DiscreteObjectKeyFrame KeyTime="0" Value="0, -1, 0, 0" />
-
                                         </ObjectAnimationUsingKeyFrames>
-
                                     </Storyboard>
-
                                 </VisualState>
-
                             </VisualStateGroup>
-
                         </VisualStateManager.VisualStateGroups>
-
                         <Rectangle x:Name="PART_CurrentFocusRow"
                                    Margin="{TemplateBinding CurrentFocusBorderMargin}"
                                    Stroke="DarkGray"
                                    StrokeDashArray="3,3"
                                    StrokeThickness="1"
                                    Visibility="{TemplateBinding CurrentFocusRowVisibility}" />
-
                         <Border x:Name="PART_RowSelectionBorder"
                                 Background="{TemplateBinding RowSelectionBrush}"
                                 Visibility="{TemplateBinding SelectionBorderVisiblity}" />
-
                         <Border x:Name="PART_AddNewRowBorder"
                                 Background="{TemplateBinding Background}"
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}">
-
-                            <ContentPresenter />
-
+                        <ContentPresenter />
                         </Border>
-
                         <Border x:Name="WM_TextBorder"
                                 Background="LightGray"
                                 BorderBrush="Transparent"
                                 BorderThickness="0,0,1,1"
                                 IsHitTestVisible="False">
-
-                            <ContentPresenter Margin="{TemplateBinding TextMargin}"
+                        <ContentPresenter Margin="{TemplateBinding TextMargin}"
                                               HorizontalAlignment="Left"
                                               VerticalAlignment="Center"
                                               Content="Add New Row"
                                               FontSize="16"
                                               FontWeight="Light"
                                               Foreground="White" />
-
                         </Border>
-
                     </Grid>
-
                 </ControlTemplate>
-
             </Setter.Value>
-
         </Setter>
-
     </Style>
-
 </Application.Resources>
 {% endhighlight %}
 {% endtabs %}
@@ -612,7 +564,6 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
                        AutoGenerateColumns="True"
                        AutoGenerateRelations="False"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.DetailsViewDefinition>
         <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
             <syncfusion:GridViewDefinition.DataGrid>
@@ -642,7 +593,6 @@ this.FirstLevelNestedGrid.AddNewRowInitiating += FirstLevelNestedGrid_AddNewRowI
 
 void FirstLevelNestedGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -673,7 +623,6 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 {
-
 }
 {% endhighlight %}
 {% endtabs %}
@@ -728,6 +677,7 @@ this.dataGrid.RecordDeleting += DataGrid_RecordDeleting;
 void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 {
     var item = args.Items[0] as OrderInfo;
+
     if (item.OrderID == 1005)
     {
         args.Cancel = true;
@@ -769,14 +719,19 @@ this.dataGrid.SelectionController = new GridSelectionControllerExt(dataGrid);
 
 public class GridSelectionControllerExt : GridSelectionController
 {
+ 
     public GridSelectionControllerExt(SfDataGrid dataGrid) : base(dataGrid)
     {
     }
+ 
     protected override void ProcessKeyDown(KeyEventArgs args)
     {
+ 
         //Customizes the Delete key operation.
+ 
         if (args.Key == Key.Delete)
         {
+ 
             //Gets the cell value of current column.
             var record = this.DataGrid.CurrentItem;
             var currentColumnIndex = this.CurrentCellManager.CurrentCell.ColumnIndex;
@@ -785,11 +740,13 @@ public class GridSelectionControllerExt : GridSelectionController
             var cellVal = this.DataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
 
             //Returns the cell value when the current column's cell is not set to null.
+ 
             if (cellVal != null)
             {
                 PropertyDescriptorExtensions.SetValue(this.DataGrid.View.GetItemProperties(), record, null, mappingName);
             }
         }
+
         else
             base.ProcessKeyDown(args);
     }
@@ -807,8 +764,10 @@ this.dataGrid.RecordDeleting += dataGrid_RecordDeleting;
 
 void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 {
+
     foreach(var item in args.Items)
     {
+
         if((item as OrderInfo).OrderID==1001)
         {
             args.Cancel = true;

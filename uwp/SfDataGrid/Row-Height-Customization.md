@@ -23,6 +23,7 @@ this.dataGrid.Loaded +=dataGrid_Loaded;
 void dataGrid_Loaded(object sender, RoutedEventArgs e)
 {
      var VisualContainer = this.dataGrid.GetVisualContainer();
+
      //Sets Height to the second row.
      VisualContainer.RowHeights[2] = 70;
      VisualContainer.InvalidateMeasure();
@@ -40,6 +41,7 @@ this.dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+
     if (e.RowIndex == 2) //Sets Height to the second row.
     {
         e.Height = 70;
@@ -71,6 +73,7 @@ this.dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+ 
     if (e.RowIndex == 1) //Sets Height to the first row.
     {
         e.Height = 70;
@@ -119,8 +122,10 @@ this.dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+ 
     if (this.dataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
     {
+    
         if (autoHeight > 45)
         {
             e.Height = autoHeight;
@@ -158,16 +163,15 @@ double autoHeight = double.NaN;
 
 // The list contains the column names that will excluded from the height calculation in GetAutoRowHeight method.
 List<string> excludeColumns = new List<string>() { "CustomerID", "Country" }; 
-    
 this.dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;
-    
 gridRowResizingOptions.ExcludeColumns = excludeColumns;
     
-
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+    
     if (this.dataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
     {
+    
         if (autoHeight > 45)
         {
             e.Height = autoHeight;
@@ -235,8 +239,10 @@ void dataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+  
     if (this.dataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
     {
+  
         if (autoHeight > 45)
         {
             e.Height = autoHeight;
@@ -276,16 +282,19 @@ GridRowSizingOptions gridRowResizingOptions = new GridRowSizingOptions();
 
 //To get the calculated height from the GetAutoRowHeight method.
 double autoHeight;
-
 this.dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;            
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+    
      //checked whether the row index is header or not.
+    
      if (this.dataGrid.GetHeaderIndex() == e.RowIndex)
      {
+    
           if (this.dataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
           {
+    
               if (autoHeight > 45)
               {
                    e.Height = autoHeight;
@@ -345,15 +354,17 @@ GridRowSizingOptions gridRowResizingOptions = new GridRowSizingOptions();
 
 //To get the calculated height from the GetAutoRowHeight method.
 double autoHeight;
-
 this.dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+    
      if (e.RowIndex < this.dataGrid.StackedHeaderRows.Count)
      {
+    
          if (this.dataGrid.GridColumnSizer.GetAutoRowHeight(e.RowIndex, gridRowResizingOptions, out autoHeight))
          {
+    
                if (autoHeight > 45)
                {
                     e.Height = autoHeight;
@@ -375,11 +386,11 @@ You can change the table summary row height by using `QueryRowHeight` event. You
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
-
 this.dataGrid.QueryRowHeight += dataGrid_QueryRowHeight;        
 
 void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {
+    
      if (dataGrid.IsTableSummaryIndex(e.RowIndex))
      {
           e.Height = 60;

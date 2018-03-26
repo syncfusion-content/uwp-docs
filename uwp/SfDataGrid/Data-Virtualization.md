@@ -76,6 +76,7 @@ In the below code, ViewModel defined with `GridVirtualizingCollectionView` by pa
 public class ViewModel
 {
     private GridVirtualizingCollectionView _gridVirtualizingItemsSource;
+
     public GridVirtualizingCollectionView GridVirtualizingItemsSource
     {
         get { return _gridVirtualizingItemsSource; }
@@ -172,6 +173,7 @@ public class GridVirtualizingCollectionViewExt: GridVirtualizingCollectionView
     /// </summary>
     /// <param name="item">Specifies the item to get the index</param>
     /// <returns>Returns the index  of specified item<returns>
+
     protected override int GetIndexOf(object item)
     {
         return sourceCollection.IndexOf(item as OrderInfo);
@@ -182,15 +184,17 @@ public class GridVirtualizingCollectionViewExt: GridVirtualizingCollectionView
     /// </summary>
     /// <param name="index"></param>
     /// <returns></returns>
+
     public override object GetItemAt(int index)
     {
         return sourceCollection[index];
     }
-    
+
     /// <summary>
     /// Gets the records count that are inView.
     /// </summary>
     /// <returns>Returns the records count that are inView</returns>
+
     public override int GetViewRecordCount()
     {
         return sourceCollection.Count();
@@ -200,6 +204,7 @@ public class GridVirtualizingCollectionViewExt: GridVirtualizingCollectionView
     /// Gets the list of records in view.
     /// </summary>
     /// <returns>Returns the list of records in view</returns>
+
     public override System.Collections.IEnumerable GetInternalSource()
     {
         return sourceCollection;
@@ -209,6 +214,7 @@ public class GridVirtualizingCollectionViewExt: GridVirtualizingCollectionView
     /// Process the sort on collection based on specified sort description. 
     /// </summary>
     /// <param name="sortDescription">Specifies the sort description to sort the collection</param>
+
     protected override void ProcessSort(SortDescriptionCollection sortDescription)
     {
     }
@@ -222,6 +228,7 @@ Below code, sets the `GridVirtualizingCollectionViewExt` to `SfDataGrid.ItemsSou
 {% highlight c# %}
 public partial class MainWindow : Window
 {
+
     public MainWindow()
     {
         InitializeComponent();
@@ -290,6 +297,7 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
     /// Process the sort on collection based on specified sort description. 
     /// </summary>
     /// <param name="sortDescription">Specifies the sort description to sort the   collection</param>
+
     protected override void ProcessSort(SortDescriptionCollection sortDescription)
     {
             this.sourceCollection = this.sourceCollection.OrderBy(item => item.Country).ToList();
@@ -309,6 +317,7 @@ You need to use the filtered source if the collection has filtered in `GetElemen
 public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
 {
     IList<OrderInfo> filteredSource;
+
     public GridVirtualizingCollectionViewExt()
             : base()
     {
@@ -320,6 +329,7 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
     /// Gets the SourceCollection to load items source in Filter Pop-up control.
     /// </summary>
     /// <returns>Returns the SourceCollection</returns>
+
     public override System.Collections.IEnumerable GetSourceListForFilteringItems()
     {
         return sourceCollection;
@@ -329,12 +339,16 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
     /// Applies filter on collection.
     /// </summary>
     /// <param name="RowFilter">Specifies the Row Filter to apply filter on collection</param>
+
     protected override void ApplyFilter(Predicate<object> RowFilter)
     {
+
         foreach (var item in sourceCollection)
         {
+
             if (FilterRecord(item))
             {
+
                 // The filtered data is stored in filteredSource. After filtering is applied- the GetItemAt method is called, you need to pass the Data from filteredSource to display the filtered data.
                 this.filteredSource.Add(item);
             }
@@ -349,6 +363,7 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
     /// <summary>
     /// Refresh the view while apply and clear the filter
     /// </summary>
+
     public override void RefreshFilter()
     {
         var filterPresent = this.FilterPredicates.Any(v => v.FilterPredicates != null && v.FilterPredicates.Count > 0);
@@ -356,17 +371,13 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
         if (filterPresent)
         {
             var source = this.sourceCollection.OfQueryable().AsQueryable();
-            
             ParameterExpression paramExpression;
-
             Expression predicate = this.GetPredicateExpression(source, out paramExpression);
             
             if (paramExpression != null && predicate != null)
             {
                 var lambda = Expression.Lambda(predicate, paramExpression);
-                
                 var delegate = lambda.Compile();
-                
                 this.RowFilter = (o) =>
                 {
                     var result = (bool)delegate.DynamicInvoke(o);
@@ -374,6 +385,7 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
                 };
             }         
         }
+
         else
             this.RowFilter = null;   
 
@@ -382,7 +394,6 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
             
         else
             ClearFilter();
-
         Refresh();
     }
 }
@@ -402,12 +413,11 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
     /// </summary>
     /// <param name="groupBy">Specifies the group by array to get the group result on collection</param>
     /// <returns></returns>
+
     protected override IEnumerable<GroupResult> GetGroupedSource(string[] groupBy)
     {
         IQueryable queryable = this.sourceCollection.OfQueryable().AsQueryable();
-        
         var result = queryable.GroupByMany(this.SourceType, (property) => this.GetExpressionFunc(property), groupBy).ToList();
-        
         return result;
     }
 }
@@ -437,7 +447,6 @@ In the below code, `IncrementalList` is initialized by passing Action to its con
 {% highlight c# %}
 public class ViewModel
 {
-
     private IncrementalList<OrderInfo> _incrementalItemsSource;
 
     public IncrementalList<OrderInfo> IncrementalItemsSource
@@ -460,7 +469,6 @@ public class ViewModel
             this.GenerateOrders();
             list = _orders.Skip(baseIndex).Take(10).ToList();
         }));
-
         return list;
     }
 }   
@@ -536,13 +544,9 @@ In the below code snippet data fetched from service using `BackgroundWorker` and
 public class ViewModel : INotifyPropertyChanged
 {
     #region Members
-
     NorthwindEntities northwindEntity;
-
     #endregion
-
     #region Properties
-
     private IncrementalList<Order> incrementalItemsSource;
 
     public IncrementalList<Order> IncrementalItemsSource
@@ -550,7 +554,6 @@ public class ViewModel : INotifyPropertyChanged
         get { return incrementalItemsSource; }
         set { incrementalItemsSource = value; RaisePropertyChanged("IncrementalItemsSource"); }
     }
-
     private bool isBusy;
 
     public bool IsBusy
@@ -558,7 +561,6 @@ public class ViewModel : INotifyPropertyChanged
         get { return isBusy; }
         set { isBusy = value; RaisePropertyChanged("IsBusy"); }
     }
-
     private bool noNetwork;
 
     public bool NoNetwork
@@ -566,9 +568,7 @@ public class ViewModel : INotifyPropertyChanged
         get { return noNetwork; }
         set { noNetwork = value; RaisePropertyChanged("NoNetwork"); }
     }
-
     #endregion
-
     #region Constructor
 
     public ViewModel()
@@ -578,18 +578,16 @@ public class ViewModel : INotifyPropertyChanged
         if (IsConnectedToInternet())
         {
             incrementalItemsSource = new IncrementalList<Order>(LoadMoreItems) { MaxItemCount = 10000 };
-
             northwindEntity = new NorthwindEntities(new Uri(url));
         }
+
         else
         {
             NoNetwork = true;
             IsBusy = false;
         }
     }
-
     #endregion
-
     #region Methods
 
     async Task<IList<Order>> LoadMoreItems(CancellationToken c, uint count, int baseIndex)
@@ -600,13 +598,9 @@ public class ViewModel : INotifyPropertyChanged
         await Task.Run(new Action(() =>
         {
             DataServiceQuery<Order> query = (northwindEntity.Orders as DataServiceQuery<Order>).Expand("Customer");
-
             query = query.Skip<Order>(baseIndex).Take<Order>(50) as DataServiceQuery<Order>;
-
             IAsyncResult ar = query.BeginExecute(null, null);
-
             var items = query.EndExecute(ar);
-
             list = items.ToList();
         }));
 
@@ -618,28 +612,27 @@ public class ViewModel : INotifyPropertyChanged
     public static bool IsConnectedToInternet()
     {
         ConnectionProfile connectionProfile = NetworkInformation.GetInternetConnectionProfile();
-
         return (connectionProfile != null && connectionProfile.GetNetworkConnectivityLevel() == NetworkConnectivityLevel.InternetAccess);
     }
 
     #endregion
-
     #region INotifyPropertyChanged Member
 
     public event PropertyChangedEventHandler PropertyChanged;
 
     void RaisePropertyChanged(string propertyName)
     {
+
         if (PropertyChanged != null)
         {
             PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
     }
-
     #endregion
 
     public void Dispose()
     {
+
         if (incrementalItemsSource != null)
             incrementalItemsSource.Clear();
     }
@@ -666,17 +659,14 @@ In the below code, data fetched when you click the `Load Items` button.
 </Page.DataContext>
 
 Grid x:Name="Root_Grid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
     <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*" />
         <ColumnDefinition Width="50" />
     </Grid.ColumnDefinitions>
-
     <syncfusion:SfDataGrid x:Name="dataGrid"
                             Grid.Column="0"
                             DataFetchSize="5"
                             ItemsSource="{Binding IncrementalItemsSource}" />
-
     <Button x:Name="LoadItems"
             Grid.Column="1"
             Command="{Binding DataContext.LoadItems,
@@ -689,13 +679,9 @@ Grid x:Name="Root_Grid" Background="{ThemeResource ApplicationPageBackgroundThem
 public class ViewModel : INotifyPropertyChanged
 {
     #region Members
-
     NorthwindEntities northwindEntity;
-
     #endregion
-
     #region Properties
-
     private IncrementalList<Order> incrementalItemsSource;
 
     public IncrementalList<Order> IncrementalItemsSource
@@ -703,34 +689,29 @@ public class ViewModel : INotifyPropertyChanged
         get { return incrementalItemsSource; }
         set { incrementalItemsSource = value; RaisePropertyChanged("IncrementalItemsSource"); }
     }
-
     private BaseCommand loadItems;
+
     public BaseCommand LoadItems
     {
         get
         {
+
             if (loadItems == null)
 
                 loadItems = new BaseCommand(OnLoadItemsClicked, OnCanLoad);
             return loadItems;
         }
     }
-
     #endregion
-
     #region Constructor
 
     public ViewModel()
     {
         string url = "http://services.odata.org/Northwind/Northwind.svc/";
-
         incrementalItemsSource = new IncrementalList<Order>(LoadMoreItems) { MaxItemCount = 20};
-
         northwindEntity = new NorthwindEntities(new Uri(url));           
     }
-
     #endregion
-
     #region Methods
 
     async Task<IList<Order>> LoadMoreItems(CancellationToken c, uint count, int baseIndex)
@@ -740,18 +721,12 @@ public class ViewModel : INotifyPropertyChanged
         await Task.Run(new Action(() =>
         {
             DataServiceQuery<Order> query = (northwindEntity.Orders as DataServiceQuery<Order>).Expand("Customer");
-
             query = query.Skip<Order>(baseIndex).Take<Order>((int)count) as DataServiceQuery<Order>;
-
             IAsyncResult ar = query.BeginExecute(null, null);
-
             var items = query.EndExecute(ar);
-
             list = items.ToList();
                 
         }));
-       
-
         return list;
     }
 
@@ -766,13 +741,12 @@ public class ViewModel : INotifyPropertyChanged
         incrementalItemsSource.LoadMoreItemsAsync(10);
     }
     #endregion
-
     #region INotifyPropertyChanged Member
-
     public event PropertyChangedEventHandler PropertyChanged;
 
     void RaisePropertyChanged(string propertyName)
     {
+
         if (PropertyChanged != null)
         {
             PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
@@ -783,6 +757,7 @@ public class ViewModel : INotifyPropertyChanged
 
     public void Dispose()
     {
+
         if (incrementalItemsSource != null)
             incrementalItemsSource.Clear();
     }

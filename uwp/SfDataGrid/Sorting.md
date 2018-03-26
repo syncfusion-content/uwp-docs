@@ -31,7 +31,6 @@ In another way, you can enable or disable the sorting for particular column by s
                         AllowSorting="False"
                         AutoGenerateColumns="False"
                         ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
         <syncfusion:GridTextColumn AllowSorting="True" MappingName="OrderID" />
         <syncfusion:GridTextColumn AllowSorting="False" MappingName="CustomerID" />
@@ -126,20 +125,15 @@ N> [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/cref_files/uw
                         AutoGenerateColumns="True"
                         ItemsSource="{Binding Orders}"
                         ShowGroupDropArea="True">
-
     <syncfusion:SfDataGrid.SortColumnDescriptions>
-
         <syncfusion:SortColumnDescription ColumnName="OrderID" SortDirection="Ascending" />
-
         <syncfusion:SortColumnDescription ColumnName="CustomerName" SortDirection="Descending" />
-
     </syncfusion:SfDataGrid.SortColumnDescriptions>
 
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "OrderID", SortDirection = ListSortDirection.Ascending });
-
 this.dataGrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = "CustomerName", SortDirection = ListSortDirection.Descending });
 {% endhighlight %}
 {% endtabs %}
@@ -199,6 +193,7 @@ public class CustomComparer : IComparer<object>, ISortDirection
     /// <remarks>
     /// SortDirection gets updated only when sorting the groups. For other cases, SortDirection is always ascending.
     /// </remarks>
+  
     public ListSortDirection SortDirection
     {
         get { return _SortDirection; }            
@@ -208,10 +203,10 @@ public class CustomComparer : IComparer<object>, ISortDirection
     public int Compare(object x, object y)
     {
         int nameX;
-
         int nameY;
 
         //While data object passed to comparer
+    
         if (x.GetType() == typeof(OrderInfo))
         {
             nameX = ((OrderInfo)x).CustomerName.Length;
@@ -219,8 +214,10 @@ public class CustomComparer : IComparer<object>, ISortDirection
         }
 
         //While sorting groups
+    
         else if (x.GetType() == typeof(Group))
         {
+    
             //Calculating the group key length
             nameX = ((Group)x).Key.ToString().Length;
             nameY = ((Group)y).Key.ToString().Length;
@@ -233,6 +230,7 @@ public class CustomComparer : IComparer<object>, ISortDirection
         }
 
         //returns the comparison result based in SortDirection.
+   
         if (nameX.CompareTo(nameY) > 0)
             return SortDirection == ListSortDirection.Ascending ? 1 : -1;
 
@@ -259,11 +257,9 @@ xmlns:Linq="using:Syncfusion.Data"
 </Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.SortComparers>
         <Linq:SortComparer Comparer="{StaticResource comparer}" PropertyName="CustomerName" />
     </syncfusion:SfDataGrid.SortComparers>
-
     <syncfusion:SfDataGrid.SortColumnDescriptions>
         <syncfusion:SortColumnDescription ColumnName="CustomerName" SortDirection="Ascending" />
     </syncfusion:SfDataGrid.SortColumnDescriptions>
@@ -292,7 +288,6 @@ this.dataGrid.SortColumnsChanged += DataGrid_SortColumnsChanged;
 void DataGrid_SortColumnsChanged(object sender, GridSortColumnsChangedEventArgs e)
 {
     var viewModel = this.DataContext as ViewModel;
-
     IEnumerable<OrderInfo> OrderedSource = viewModel.Orders;
 
     foreach (var sortColumn in this.dataGrid.View.SortDescriptions)
@@ -315,6 +310,7 @@ private object GetOrderSource(OrderInfo source, string name)
     var propInfo = source.GetType().GetRuntimeProperty(name);
 
     if (propInfo != null)
+   
         // Get the current sort column value
         return propInfo.GetValue(source);
 
@@ -347,6 +343,7 @@ this.dataGrid.SortColumnsChanging += DataGrid_SortColumnsChanging;
 
 void DataGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
 {
+  
     if (e.AddedItems[0].ColumnName == "OrderID")
     {
         e.Cancel = true;
