@@ -101,6 +101,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 ### Configure NuGet feed URL 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+
     N> To update the existing nuget.exe to latest version use the following command:
 
     ~~~
@@ -196,6 +197,7 @@ To update the installed Syncfusion UWP NuGet packages using the Package Manager 
 Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version: 
 
 1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+
     N> To update the existing nuget.exe to latest version use the following command: 
 
     ~~~
