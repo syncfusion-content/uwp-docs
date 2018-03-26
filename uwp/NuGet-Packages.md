@@ -2,7 +2,7 @@
 layout: post
 title: NuGet Packages | UWP | Syncfusion
 description: NuGet Packages
-platform: UWP
+platform: uwp
 control: NuGet Packages
 documentation: ug
 ---
