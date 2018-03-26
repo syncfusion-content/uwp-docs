@@ -124,22 +124,27 @@ Similarly, you can able to customize:
 1. [GridUnboundRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html)
 2. [FilterRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRow.html)
 3. [SpannedDataRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SpannedDataRow.html)
+
 The below code example shows how to animate the `DataRow` when the row data is changed.
+
 {% tabs %}
 {% highlight c# %}
 this.datagrid.RowGenerator = new CustomRowGenerator(this.datagrid);
 
 public class CustomDataRow : DataRow
 {
+    
     public CustomDataRow()
         : base()
     {                  
     }
      
     protected Storyboard storyboard = null;
+    
     protected override void OnRowDataChanged()
     {
         base.OnRowDataChanged();
+    
         if (this.WholeRowElement != null)
         {
             DoubleAnimation animation = new DoubleAnimation
@@ -150,7 +155,6 @@ public class CustomDataRow : DataRow
                 AutoReverse = true,
                 FillBehavior = FillBehavior.Stop
             };
-
             Storyboard.SetTarget(animation, this.WholeRowElement);
             Storyboard.SetTargetProperty(animation, "Path.Opacity");
             storyboard = new Storyboard();
@@ -162,13 +166,16 @@ public class CustomDataRow : DataRow
 
 public class CustomRowGenerator : RowGenerator
 {
+  
     public CustomRowGenerator(SfDataGrid dataGrid)
         : base(dataGrid)
     { }
 
     protected override GridDataRow GetDataRow<T>(RowType type)
     {
+  
         //Set the customized DataRow.
+  
         if (typeof(T) == typeof(DataRow))
             return new CustomDataRow();
         return base.GetDataRow<T>(type);
@@ -187,6 +194,7 @@ this.datagrid.RowGenerator = new CustomRowGenerator(this.datagrid);
 
 public class CustomVirtualizingCellsControl : VirtualizingCellsControl
 {
+ 
     public CustomVirtualizingCellsControl()
         : base()
     {
@@ -198,8 +206,10 @@ public class CustomVirtualizingCellsControl : VirtualizingCellsControl
         var newValue = e.NewValue as INotifyPropertyChanged;
         newValue.PropertyChanged += NewValue_PropertyChanged;
     }      
+ 
     private void NewValue_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
+ 
         if (e.PropertyName == "CustomerID")
             this.Background = new SolidColorBrush(Colors.Pink);
     }
@@ -207,13 +217,16 @@ public class CustomVirtualizingCellsControl : VirtualizingCellsControl
 
 public class CustomRowGenerator : RowGenerator
 {
+   
     public CustomRowGenerator(SfDataGrid dataGrid)
         : base(dataGrid)
     { }
 
     protected override VirtualizingCellsControl GetVirtualizingCellsControl<T>()
     {
+   
         //Set the customized VirtualizingCellsControl
+   
         if (typeof(T) == typeof(VirtualizingCellsControl))
             return new CustomVirtualizingCellsControl();
         return base.GetVirtualizingCellsControl<T>();
@@ -267,13 +280,16 @@ You can customize the [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/s
 Similarly, you can able to customize:
 1. [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
 2. [GridFilterRowCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
+
 The below code example shows how to animate the cell based on the changes occur in another cell using the `DataContextChanged` and `PropertyChanged` events.
+
 {% tabs %}
 {% highlight c# %}
 this.datagrid.RowGenerator = new CustomRowGenerator(this.datagrid);
 
 public class CustomGridCell : GridCell
 {       
+   
     public CustomGridCell() : base()
     {
         this.DataContextChanged += CustomGridCell_DataContextChanged;            
@@ -285,8 +301,10 @@ public class CustomGridCell : GridCell
         newData.PropertyChanged += Data_PropertyChanged;
     }
     protected Storyboard storyboard = null;
+   
     private void Data_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
+   
         if (e.PropertyName == "CustomerID")
         {
             DoubleAnimation animation = new DoubleAnimation
@@ -297,7 +315,6 @@ public class CustomGridCell : GridCell
                 AutoReverse = false,
                 FillBehavior = FillBehavior.HoldEnd
             };
-
             Storyboard.SetTarget(animation, this);
             Storyboard.SetTargetProperty(animation, "Path.Opacity");
             storyboard = new Storyboard();
@@ -315,6 +332,7 @@ public class CustomGridCell : GridCell
 
 public class CustomRowGenerator : RowGenerator
 {
+  
     public CustomRowGenerator(SfDataGrid dataGrid)
         : base(dataGrid)
     {
@@ -426,18 +444,14 @@ You can style the alternate rows by setting [SfDataGrid.AlternatingRowStyle](htt
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-
     <Style x:Key="customRowStyle" TargetType="syncfusion:VirtualizingCellsControl">
         <Setter Property="Background" Value="Bisque" />
     </Style>
-
     <Style x:Key="alternatingRowStyle" TargetType="syncfusion:VirtualizingCellsControl">
         <Setter Property="Background" Value="LightCyan" />
     </Style>
     
 </Page.Resources>
-
-
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AlternatingRowStyle="{StaticResource alternatingRowStyle}"
                        AlternationCount="3"
@@ -510,21 +524,13 @@ The header style can be applied to [DetailsViewDataGrid](https://help.syncfusion
 </Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.DetailsViewDefinition>
-
         <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
-
             <syncfusion:GridViewDefinition.DataGrid>
-
                 <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"             HeaderStyle="{StaticResource headerStyle}"/>
-
             </syncfusion:GridViewDefinition.DataGrid>
-
         </syncfusion:GridViewDefinition>
-
     </syncfusion:SfDataGrid.DetailsViewDefinition>
-
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -603,7 +609,7 @@ public class GridStackedHeaderCellRendererExt: GridStackedHeaderCellRenderer
     public GridStackedHeaderCellRendererExt()
     {
     }
-
+    
     public override void OnInitializeEditElement(DataColumnBase dataColumn, GridStackedHeaderCellControl uiElement, object dataContext)
     {
         if (dataColumn.ColumnIndex == 0)
@@ -637,13 +643,10 @@ You can also skip the cell styling for particular column from other setting like
                        AutoGenerateColumns="False"
                        CellStyle="{StaticResource customCellStyle}"
                        ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTextColumn CellStyle="{x:Null}"
                                    HeaderText="Customer ID"
                                    MappingName="CustomerID" />
-
     </syncfusion:SfDataGrid.Columns>
 
 </syncfusion:SfDataGrid>
@@ -672,8 +675,6 @@ The caption summary cells can be customized by writing style of TargetType [Grid
         <Setter Property="FontSize" Value="14" />
     </Style>
 </Page.Resources>
-
-
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        CaptionSummaryCellStyle="{StaticResource customCaptionSummaryStyle}"
                        ItemsSource="{Binding Orders}"/>
@@ -698,8 +699,6 @@ The caption summary rows can be customized by writing style of TargetType [GridC
         <Setter Property="FontSize" Value="18" />
     </Style>
 </Page.Resources> 
-
-
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AutoGenerateColumns="False"
                        CaptionSummaryRowStyle="{StaticResource captionSummaryRowStyle}"
@@ -719,7 +718,6 @@ The group summary cells can be customized by writing style of TargetType [GridGr
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-
     <Style x:Key="groupSummaryCellStyle" TargetType="syncfusion:GridGroupSummaryCell">
         <Setter Property="FontWeight" Value="SemiBold" />
         <Setter Property="Foreground" Value="DarkBlue" />
@@ -746,7 +744,6 @@ The group summary rows can be customized by writing style of TargetType [GridGro
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-
     <Style x:Key="groupSummaryRowStyle" TargetType="syncfusion:GroupSummaryRowControl">
         <Setter Property="Background" Value="Bisque" />
     </Style>
@@ -951,17 +948,14 @@ Here, custom template applied to CustomerID column based on OrderID.
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-
     <DataTemplate x:Key="CellTemplate1">
         <TextBlock Foreground="DarkBlue" Text="{Binding Path=Value}" />
     </DataTemplate>
-
     <DataTemplate x:Key="CellTemplate2">
         <TextBlock Foreground="DarkRed" Text="{Binding Path=Value}" />
     </DataTemplate>
 
 </Application.Resources> 
-
 
 <Page.Resources>
     <local:CellTemplateSelector x:Key="cellTemplateSelector" />
@@ -987,8 +981,10 @@ Here, custom template applied to CustomerID column based on OrderID.
 {% highlight c# %}
 public class CellTemplateSelector:DataTemplateSelector
 {
+    
     protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
     {
+    
         if (item != null)
         {
             var data = (item as DataContextHelper).Record as OrderInfo;
@@ -1043,7 +1039,6 @@ You can customize the appearance of particular SfDataGrid column header by setti
                         ItemsSource="{Binding Orders}">
                         
     <syncfusion:SfDataGrid.Columns>
-
         <syncfusion:GridTextColumn HeaderTemplate="{StaticResource headerTemplate}"
                                    HeaderText="Order ID"
                                    MappingName="OrderID" />
@@ -1065,7 +1060,6 @@ The different editor elements can be loaded in a same template column conditiona
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
-
     <DataTemplate x:Key="EditTemplate1">
         <TextBox Foreground="DarkBlue" Text="{Binding Path=Value}" />
     </DataTemplate>
@@ -1084,7 +1078,6 @@ The different editor elements can be loaded in a same template column conditiona
                         AllowEditing="True"
                         AutoGenerateColumns="False"
                         ItemsSource="{Binding Orders}">
-
     <syncfusion:SfDataGrid.Columns>
     
         <syncfusion:GridTemplateColumn CellTemplateSelector="{StaticResource cellTemplateSelector}"
@@ -1106,8 +1099,10 @@ For example, in the below code example `TextBox` will be loaded based on OrderID
 {% highlight c# %}
 public class EditTemplateSelector:DataTemplateSelector
 {
+ 
     protected override DataTemplate SelectTemplateCore(object item, DependencyObject container)
     {
+ 
         if (item != null)
         {
             var data = (item as DataContextHelper).Record as OrderInfo;
@@ -1441,7 +1436,6 @@ The appearance of [GroupDropArea](https://help.syncfusion.com/cr/cref_files/uwp/
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-
     <Style TargetType="syncfusion:GroupDropArea">
         <Setter Property="BorderBrush" Value="Purple" />
         <Setter Property="Foreground" Value="Purple" />
@@ -1482,7 +1476,6 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification"
 {% tabs %}
 {% highlight c# %}
 this.dataGrid.Loaded += DataGrid_Loaded;
-
 this.dataGrid.ItemsSourceChanged += DataGrid_ItemsSourceChanged;     
 
 private async void DataGrid_Loaded(object sender, RoutedEventArgs e)

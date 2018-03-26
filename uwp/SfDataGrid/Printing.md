@@ -130,6 +130,7 @@ SfDataGrid provides a way to display additional content at the top (Header) or b
 Steps to add page header while printing,
 
 1. Create DataTemplate in Application.Resources.
+
 {% tabs %}
 {% highlight xaml %}
 <Application.Resources>
@@ -312,13 +313,17 @@ SfDataGrid allows you to set different Row height for specific rows while printi
 {% highlight c# %}
 public class CustomPrintManager : GridPrintManager
 {
+
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
     }
+
     protected override double GetRowHeight(object record, int rowIndex, RowType type)
     {
+
         if (rowIndex != -1 && !(record is Group))
+
             if (rowIndex % 2 != 0)
                 return 80.0;
         return base.GetRowHeight(record, rowIndex, type);
@@ -346,12 +351,15 @@ Here, unbound row is excluded while printing. Likewise, you can hide any row bas
 {% highlight c# %}
 public class CustomPrintManager : GridPrintManager
 {
+
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
     }
+ 
     protected override double GetRowHeight(object record, int rowIndex, RowType type)
     {
+ 
             if (record is GridUnBoundRow)
                 return 0;
             return base.GetRowHeight(record, rowIndex, type);
@@ -376,6 +384,7 @@ SfDataGrid allows you to the exclude the columns while printing the grid. You ca
 {% highlight c# %}
 public class CustomPrintManager : GridPrintManager
 {
+
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
@@ -410,6 +419,7 @@ SfDataGrid allows you to change column header text while printing the grid. You 
 {% highlight c# %}
 public class CustomPrintManager : GridPrintManager
 {
+
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
@@ -417,6 +427,7 @@ public class CustomPrintManager : GridPrintManager
 
     protected override string GetColumnHeaderText(string mappingName)
     {
+
         if (mappingName == "OrderID")
             return "Order ID";
         return base.GetColumnHeaderText(mappingName);
@@ -443,6 +454,7 @@ You can apply row styles based on custom logic by overriding [GetPrintGridCell](
 {% highlight c# %}
 public class CustomPrintManager : GridPrintManager
 {
+
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
@@ -450,11 +462,13 @@ public class CustomPrintManager : GridPrintManager
 
     public override ContentControl GetPrintGridCell(object record, string mappingName)
     {
+
         if (!(record is OrderInfo))
             return base.GetPrintGridCell(record, mappingName);
 
         if ((record as OrderInfo).Country == "Germany")
             return new PrintGridCell() { Background = new SolidColorBrush(Colors.Bisque) };
+
         else if ((record as OrderInfo).Country == "Mexico")
             return new PrintGridCell() { Background = new SolidColorBrush(Colors.LightSkyBlue) };
         return base.GetPrintGridCell(record, mappingName);
@@ -541,6 +555,7 @@ SfDataGrid allows you to apply alternative row style by overriding [GetPrintGrid
 {% highlight c# %}
 public class CustomPrintManager : GridPrintManager
 {
+
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
@@ -549,6 +564,7 @@ public class CustomPrintManager : GridPrintManager
     public override ContentControl GetPrintGridCell(object record, string mappingName)
     {
        var index = dataGrid.View.Records.IndexOfRecord(record);
+
        if (index % 2 == 0)
           return new PrintGridCell() { Background = new SolidColorBrush(Colors.Bisque) };
        return base.GetPrintGridCell(record, mappingName);
@@ -575,6 +591,7 @@ You can apply column styles based on custom logic by overriding [GetPrintGridCel
 {% highlight c# %}
 public class CustomPrintManager : GridPrintManager
 {
+
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
@@ -582,6 +599,7 @@ public class CustomPrintManager : GridPrintManager
 
     public override ContentControl GetPrintGridCell(object record, string mappingName)
     {
+ 
     if (mappingName == "OrderID")
         return new PrintGridCell() { Background = new SolidColorBrush(Colors.LightGreen), FontStyle = Windows.UI.Text.FontStyle.Italic };
     return base.GetPrintGridCell(record, mappingName);
@@ -610,6 +628,7 @@ Selected rows can be printed by overriding [GetSourceListForPrinting](https://he
 {% highlight c# %}
 public class CustomPrintManager : GridPrintManager
 {
+
     public CustomPrintManager(SfDataGrid grid)
         : base(grid)
     {
@@ -619,15 +638,19 @@ public class CustomPrintManager : GridPrintManager
     {
         List<object> selectedRecords = new List<object>();
         var selectedRows = dataGrid.SelectionController.SelectedRows.ToList();
+
         foreach (var row in selectedRows)
         {
+
             if (row.IsAddNewRow || (row.NodeEntry != null && (!row.NodeEntry.IsRecords)))
                 continue;
+
             if (row.IsUnBoundRow)
             {
                 var _row = dataGrid.UnBoundRows.FirstOrDefault(r => r.Position == row.GridUnboundRowInfo.Position && r.ShowBelowSummary == row.GridUnboundRowInfo.ShowBelowSummary && r.RowIndex == row.GridUnboundRowInfo.RowIndex);
                 selectedRecords.Add(_row);
             }
+
             else
                 selectedRecords.Add(row.NodeEntry);
         }
