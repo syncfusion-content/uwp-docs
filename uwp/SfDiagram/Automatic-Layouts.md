@@ -2,7 +2,7 @@
 layout: post
 title: Layout nodes and connectors in an organized structure.
 description: How to arrange Nodes by using the Automatic Layouts?
-platform: universal
+platform: uwp
 control: SfDiagram
 documentation: ug
 ---
