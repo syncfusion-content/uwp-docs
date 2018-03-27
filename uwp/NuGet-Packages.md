@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NuGet Packages | UWP | Syncfusion
+title: UWP | NuGet Packages | Syncfusion
 description: NuGet Packages
 platform: uwp
 control: NuGet Packages
