@@ -26,6 +26,7 @@ SfDataGrid allows you to add, remove and update more number of records efficient
 {% tabs %}
 {% highlight c# %}
 //Batch Updates
+
 //Suspends data manipulation operations in View
 this.dataGrid.View.BeginInit();
 
@@ -45,8 +46,8 @@ You can improve the performance while adding, removing columns by suspending all
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid.Helpers;
-
 this.dataGrid.Columns.Suspend();
+
 // Add or Remove More columns
 this.dataGrid.Columns.Resume();
 this.dataGrid.RefreshColumns();
@@ -78,6 +79,7 @@ Below code to enable summary calculation optimization by inheriting [INotifyProp
 public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
 {
     private int orderID;
+
     public int OrderID
     {
         get { return orderID; }
@@ -88,14 +90,18 @@ public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
             this.RaisePropertyChanged("OrderID");
         }
     }
+
     public void RaisePropertyChanged(string propName)
     {
+
         if (this.PropertyChanged != null)
             this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
     }
     public event PropertyChangedEventHandler PropertyChanged;
+
     public void RaisePropertyChanging(string propName)
     {
+
         if (this.PropertyChanging != null)
             this.PropertyChanging(this, new PropertyChangingEventArgs(propName));
     }

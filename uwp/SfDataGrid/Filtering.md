@@ -27,8 +27,10 @@ public bool FilterRecords(object o)
 {
    string filterText = "Germany";
    var item = o as OrderInfo;
+
    if (item != null)
    {
+
       if (item.Country.Equals(filterText))
           return true;
    }
@@ -189,6 +191,7 @@ this.dataGrid.FilterItemsPopulating += dataGrid_FilterItemsPopulating;
 
 void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridFilterItemsPopulatingEventArgs e)
 {
+ 
      if (e.Column.MappingName == "OrderID")
            e.FilterControl.FilterMode = FilterMode.AdvancedFilter;
 }
@@ -341,6 +344,7 @@ this.dataGrid.FilterItemsPopulating += dataGrid_FilterItemsPopulating;
 
 void dataGrid_FilterItemsPopulating(object sender, Syncfusion.UI.Xaml.Grid.GridFilterItemsPopulatingEventArgs e)
 {
+
     if (e.Column.MappingName != "OrderID")
         return;
      e.FilterControl.AdvancedFilterType = AdvancedFilterType.TextFilter;
@@ -527,6 +531,7 @@ You can get the filtered records from [View](https://help.syncfusion.com/cr/cref
 this.dataGrid.FilterChanged += dataGrid_FilterChanged;
 void dataGrid_FilterChanged(object sender, GridFilterEventArgs e)
 {
+
     //OrderInfo is Model Class 
     ObservableCollection<OrderInfo> order = new ObservableCollection<OrderInfo>();
 
@@ -632,12 +637,9 @@ void dataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEven
 {
     if (e.Column.MappingName == "OrderID")
         e.FilterControl.AdvancedFilterType = AdvancedFilterType.TextFilter;
-
-    e.FilterControl.SetColumnDataType(typeof(string));
-
-    e.FilterControl.AscendingSortString = GridResourceWrapper.SortStringAscending;
-
-    e.FilterControl.DescendingSortString = GridResourceWrapper.SortStringDescending;
+        e.FilterControl.SetColumnDataType(typeof(string));
+        e.FilterControl.AscendingSortString = GridResourceWrapper.SortStringAscending;
+        e.FilterControl.DescendingSortString = GridResourceWrapper.SortStringDescending;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -664,6 +666,7 @@ this.dataGrid.FilterItemsPopulated += dataGrid_FilterItemsPopulated;
 
 void dataGrid_FilterItemsPopulated(object sender, GridFilterItemsPopulatedEventArgs e)
 {
+ 
      if (e.Column.MappingName == "OrderID")
      {
          var itemsSource = e.ItemsSource as List<FilterElement>;
@@ -690,6 +693,7 @@ this.dataGrid.FilterChanging += dataGrid_FilterChanging;
 
 void dataGrid_FilterChanging(object sender, GridFilterEventArgs e)
 {
+
     if (e.FilterPredicates == null || e.Column.MappingName != "CustomerID" || e.FilterPredicates.Count == 0)
         return;
 
@@ -737,6 +741,7 @@ this.dataGrid.FilterItemsPopulating += DataGrid_FilterItemsPopulating;
 
 void DataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEventArgs e)
 {
+ 
     if(e.Column.MappingName=="CustomerName")
     {
         e.FilterControl.AscendingSortString = "Sort Ascending";

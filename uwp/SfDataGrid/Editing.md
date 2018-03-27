@@ -141,16 +141,16 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
         get { return shippingCity; }
         set { shippingCity = value; RaisePropertyChanged("ShipCity"); }
     }
-
     public event PropertyChangedEventHandler PropertyChanged;
 
     public void RaisePropertyChanged(string propName)
     {
+
         if (this.PropertyChanged != null)
             this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
     }
-
     private Dictionary<string, object> storedValues;
+
     public void BeginEdit()
     {
         this.storedValues = this.BackUp();
@@ -158,12 +158,15 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
 
     public void CancelEdit()
     {
+
         if (this.storedValues == null)
             return;
+
         foreach (var item in this.storedValues)
         {
             var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
             var pDesc = itemProperties.FirstOrDefault(p => p.Name == item.Key);
+
             if (pDesc != null)
                 pDesc.SetValue(this, item.Value);
         }
@@ -172,6 +175,7 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
 
     public void EndEdit()
     {
+
         if (this.storedValues != null)
         {
             this.storedValues.Clear();
@@ -184,8 +188,10 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
     {
         var dictionary = new Dictionary<string, object>();
         var itemProperties = this.GetType().GetTypeInfo().DeclaredProperties;
+
         foreach (var pDescriptor in itemProperties)
         {
+
             if (pDescriptor.CanWrite)
                 dictionary.Add(pDescriptor.Name, pDescriptor.GetValue(this));
         }
@@ -217,7 +223,6 @@ this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
 
 private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -233,10 +238,8 @@ private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEv
 {% highlight c# %}
 this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
 
-
 private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
 {
-           
 }
 {% endhighlight %}
 {% endtabs %}
@@ -259,7 +262,6 @@ this.dataGrid.CurrentCellValueChanged += DataGrid_CurrentCellValueChanged;
 
 private void DataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEventArgs args)
 {
-            
 }
 {% endhighlight %}
 {% endtabs %}
@@ -286,7 +288,6 @@ this.dataGrid.CurrentCellDropDownSelectionChanged += DataGrid_CurrentCellDropDow
 
 private void DataGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDropDownSelectionChangedEventArgs args)
 {
-            
 }
 
 {% endhighlight %}
@@ -317,6 +318,7 @@ this.dataGrid.CellTapped += Datagrid_CellTapped;
 
 private void Datagrid_CellTapped(object sender, GridCellTappedEventArgs e)
 {
+
     //You can do your own logic here.
 }
 {% endhighlight %}
@@ -347,6 +349,7 @@ this.dataGrid.CellDoubleTapped += Datagrid_CellDoubleTapped;
 
 private void Datagrid_CellDoubleTapped(object sender, GridCellDoubleTappedEventArgs e)
 {
+
     //you can do your own logic here.
 }
 {% endhighlight %}
@@ -383,9 +386,7 @@ this.dataGrid.Loaded += DataGrid_Loaded;
 private void DataGrid_Loaded(object sender, RoutedEventArgs e)
 {
     RowColumnIndex rowColumnIndex = new RowColumnIndex(3, 2);
-    
     this.dataGrid.MoveCurrentCell(rowColumnIndex);
-    
     this.dataGrid.SelectionController.CurrentCellManager.EndEdit();
 }
 {% endhighlight %}
@@ -403,18 +404,13 @@ this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
 private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
 {
     var recordIndex = this.dataGrid.ResolveToRecordIndex(args.RowColumnIndex.RowIndex);
-
     var columnIndex = this.dataGrid.ResolveToGridVisibleColumnIndex(args.RowColumnIndex.ColumnIndex);
-
     var mappingName = this.dataGrid.Columns[columnIndex].MappingName;
-
     var record = this.dataGrid.View.Records.GetItemAt(recordIndex);
-
     var cellValue = this.dataGrid.View.GetPropertyAccessProvider().GetValue(record, mappingName);
 
     if (args.RowColumnIndex == new RowColumnIndex(3, 2))
         args.Cancel = true;
-
 }
 {% endhighlight %}
 {% endtabs %}
@@ -431,34 +427,23 @@ You can focus to the particular UIElement loaded inside template when cell gets 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:GridTemplateColumn HeaderText="Customer ID" MappingName="CustomerID">
-
     <syncfusion:GridTemplateColumn.CellTemplate>
-
         <DataTemplate>
-
             <TextBlock FontStyle="Italic"
                        FontWeight="SemiBold"
                        Padding="2,0"
                        Text="{Binding CustomerID}" />
-
         </DataTemplate>
-
     </syncfusion:GridTemplateColumn.CellTemplate>
-
     <syncfusion:GridTemplateColumn.EditTemplate>
-
         <DataTemplate>
-
             <TextBox FontStyle="Italic"
                      FontWeight="SemiBold"
                      Padding="2,0"
                      Text="{Binding CustomerID}"
                      syncfusion:FocusManagerHelper.FocusedElement="True" />
-
         </DataTemplate>
-
     </syncfusion:GridTemplateColumn.EditTemplate>
-
 </syncfusion:GridTemplateColumn>
 {% endhighlight %}
 {% endtabs %}
@@ -502,6 +487,7 @@ this.dataGrid.CurrentCellValueChanged += DataGrid_CurrentCellValueChanged;
 
 private void DataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEventArgs args)
 {
+
     if (!(args.Record as OrderInfo).EditedColumns.Contains(args.Column.MappingName))
         (args.Record as OrderInfo).EditedColumns.Add(args.Column.MappingName);
 
@@ -539,6 +525,7 @@ private void DataGrid_CurrentCellValueChanged(object sender, CurrentCellValueCha
 {% highlight c# %}
 public class CellStyleSelector:StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
 
@@ -546,12 +533,10 @@ public class CellStyleSelector:StyleSelector
 
         if (gridCell.ColumnBase == null || gridCell.ColumnBase.GridColumn == null)
             base.SelectStyle(item, container);
-
-        var record = item as OrderInfo;
+       var record = item as OrderInfo;
 
         if (record.EditedColumns.Contains(gridCell.ColumnBase.GridColumn.MappingName))
             return App.Current.Resources["cellStyle"] as Style;
-
         return base.SelectStyleCore(item, container);
     }
 }
@@ -574,31 +559,39 @@ this.grid.CellRenderers.Add("Numeric", new GridCellNumericRendererExt());
 
 public class GridCellNumericRendererExt : GridCellNumericRenderer
 {
+ 
     //ShouldGridTryToHandleKeyDown() is responsible for all key navigation  associated with  GridNumericColumn.
+ 
     protected override bool ShouldGridTryToHandleKeyDown(Windows.UI.Xaml.Input.KeyRoutedEventArgs e)
     {
+ 
         //If the GridNumericColumn's cell is not already in Edit mode 
+ 
         if (!IsInEditing)
         {
+ 
             //Edit mode will be based on the ProcessPreviewTextInput method 
             ProcessPreviewTextInput(e);
 
             if (!(CurrentCellRendererElement is SfNumericTextBox))
                 return true;
         }
-
-        return base.ShouldGridTryToHandleKeyDown(e);
+       return base.ShouldGridTryToHandleKeyDown(e);
     }
 
 
     //ProcessPreviewTextInput() will be responsible for Edit mode behavior 
+
     private void ProcessPreviewTextInput(Windows.UI.Xaml.Input.KeyRoutedEventArgs e)
     {
+
         //Here you can customize the edit mode behavior whether it is based on letters or digits or any key 
+
         if ((!char.IsLetterOrDigit(e.Key.ToString(), 0) || !DataGrid.AllowEditing || DataGrid.NavigationMode != NavigationMode.Cell) || CheckControlKeyPressed() || (e.Key == VirtualKey.F2))
             return;
 
         //The Editing for current cell of GridNumericColumn is processed here.
+
         if (DataGrid.SelectionController.CurrentCellManager.BeginEdit())
             PreviewTextInput(e);
     }

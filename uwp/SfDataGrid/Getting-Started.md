@@ -168,11 +168,8 @@ In order to add control manually in XAML, do the below steps,
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
       mc:Ignorable="d">
-
     <Grid>
-
         <syncfusion:SfDataGrid x:Name="dataGrid" />
-
     </Grid>  
   
 </Page>
@@ -197,14 +194,15 @@ In order to add control manually in C#, do the below steps,
 {% tabs %}
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
-
 namespace GettingStarted
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
+
     public sealed partial class MainPage : Page
     {
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -283,6 +281,7 @@ N> If you want your data object (OrderInfo class) to automatically reflect prope
 public class ViewModel
 {
     private ObservableCollection<OrderInfo> _orders;
+
     public ObservableCollection<OrderInfo> Orders
     {
         get { return _orders; }
@@ -329,19 +328,14 @@ Bind the collection created in previous step to `SfDataGrid.ItemsSource` propert
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:syncfusion="using:Syncfusion.UI.Xaml.Grid"
       mc:Ignorable="d">
-
     <Page.DataContext>
         <local:ViewModel />
     </Page.DataContext>
-
     <Grid>
-
         <syncfusion:SfDataGrid x:Name="dataGrid"
                                AutoGenerateColumns="True"
                                ItemsSource="{Binding Orders}" />
-
     </Grid>
-
 </Page>
 {% endhighlight %}
 {% endtabs %}
@@ -555,7 +549,6 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"  ItemsSource="{Binding Orders}" >
-
     <syncfusion:SfDataGrid.SortColumnDescriptions>
         <syncfusion:SortColumnDescription ColumnName="CustomerName"/>
     </syncfusion:SfDataGrid.SortColumnDescriptions>
@@ -577,6 +570,7 @@ this.dataGrid.SortColumnsChanging += dataGrid_SortColumnsChanging;
 
 void dataGrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventArgs e)
 {
+
     if (e.AddedItems[0].ColumnName == "CustomerName")
         e.Cancel = true;
 }
@@ -590,7 +584,6 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid"  ItemsSource="{Binding Orders}" > 
-
     <syncfusion:SfDataGrid.GroupColumnDescriptions>
         <syncfusion:GroupColumnDescription ColumnName="CustomerName"/>
     </syncfusion:SfDataGrid.GroupColumnDescriptions>

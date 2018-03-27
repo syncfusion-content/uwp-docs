@@ -283,6 +283,7 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "OrderID")
         e.Cancel = true;
 }
@@ -301,8 +302,10 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "UnitPrice")
     {
+
         if (e.Column is GridNumericColumn)
         {
             e.Column = new GridTextColumn() { MappingName = "UnitPrice", HeaderText = "Unit Price" };
@@ -322,6 +325,7 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if(e.Column.MappingName=="OrderID")
     {
         e.Column.AllowEditing = false;
@@ -344,7 +348,6 @@ You can set [GridColumn.HeaderTemplate](https://help.syncfusion.com/cr/cref_file
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-
     <DataTemplate x:Key="headerTemplate">
         <TextBlock Text="The product has been purchased by the following OrderID" TextWrapping="Wrap" />
     </DataTemplate>
@@ -360,6 +363,7 @@ this.dataGrid.AutoGeneratingColumn += dataGrid_AutoGeneratingColumn;
 
 void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {
+
     if (e.Column.MappingName == "OrderID")
     {
         e.Column.HeaderTemplate = this.FindResource("headerTemplate") as DataTemplate;
@@ -385,6 +389,7 @@ You can skip the column generation using `AutoGenerateField` property to `false`
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateField = false, Description = "OrderID field is not generated in UI")]
+
 public int OrderID
 {
     get { return orderID; }
@@ -400,6 +405,7 @@ You can enable filtering automatically for the field using `Display.AutoGenerate
 {% tabs %}
 {% highlight c# %}
 [Display(AutoGenerateFilter = true, Description = "Filter enabled for CustomerID column")]
+
 public string CustomerID
 {
     get { return customerId; }
@@ -415,6 +421,7 @@ You can change the value of the property using `Editable` attribute.
 {% tabs %}
 {% highlight c# %}
 [Editable(true)]
+
 public string Country
 {
     get { return country; }
@@ -430,6 +437,7 @@ You can customize header text of column using `Display.Name` property.
 {% tabs %}
 {% highlight c# %}
 [Display(Name="Name of the Customer",Description="CustomerName is necessary for identification ")]
+
 public string CustomerName
 {
     get { return customerName; }

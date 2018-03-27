@@ -77,13 +77,17 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         int input = (int)value;
+
         if (input < 1003)
             return new SolidColorBrush(Colors.LightBlue);
+
         else if (input < 1007)
             return new SolidColorBrush(Colors.Bisque);
+
         else
             return DependencyProperty.UnsetValue;
     }
@@ -125,15 +129,19 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var data = value as OrderInfo;
+
         //custom condition is checked based on data.
 
         if (data.OrderID < 1003)
             return new SolidColorBrush(Colors.LightBlue);
+
         else if (data.OrderID < 1007)
             return new SolidColorBrush(Colors.Bisque);
+
         else
             return DependencyProperty.UnsetValue;
     }
@@ -175,12 +183,16 @@ N> `GridColumn.CellStyleSelector` takes higher priority than `SfDataGrid.CellS
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var data = item as OrderInfo;
+
         if (data != null && ((container as GridCell).ColumnBase.GridColumn.MappingName == "OrderID"))
         {
+
             //custom condition is checked based on data.
+
             if (data.OrderID < 1005)
                 return App.Current.Resources["redCellStyle"] as Style;
             return App.Current.Resources["blueCellStyle"] as Style;
@@ -224,14 +236,19 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var input = (value as OrderInfo).OrderID;
+
         //custom condition is checked based on data.
+
         if (input < 1003)
             return new SolidColorBrush(Colors.Bisque);
+
         else if (input < 1007)
             return new SolidColorBrush(Colors.LightBlue);
+
         else
             return DependencyProperty.UnsetValue;
     }
@@ -271,10 +288,12 @@ The record rows ([VirtualizingCellsControl](https://help.syncfusion.com/cr/cref_
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+ 
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var row = (item as DataRowBase).RowData;
         var data = row as OrderInfo;
+ 
         if (data.OrderID < 1004)
             return App.Current.Resources["rowStyle1"] as Style;
         return App.Current.Resources["rowStyle2"] as Style;
@@ -310,10 +329,12 @@ The appearance of alternating rows can be customized conditionally based on data
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var row = (item as DataRowBase).RowData;
         var data = row as OrderInfo;
+
         if (data.OrderID < 1006)
             return App.Current.Resources["rowStyle1"] as Style;
         return App.Current.Resources["rowStyle2"] as Style;
@@ -371,12 +392,15 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var summaryValue = (value as Group).SummaryDetails.SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue < 1005)
             return new SolidColorBrush(Colors.Red);
         return new SolidColorBrush(Colors.DarkBlue);
@@ -430,12 +454,15 @@ The appearance of caption summary cell can be customized conditionally based on 
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var summaryValue = (item as Group).SummaryDetails.SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue > 1005)
             return App.Current.Resources["captionSummaryStyle"] as Style;
         return base.SelectStyleCore(item, container);
@@ -461,9 +488,9 @@ The caption summary cells can be conditionally customized summary column. Here, 
 </Application.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" 
-                                           ShowGroupDropArea="True"
-                                           CaptionSummaryCellStyleSelector="{StaticResource selector}"
-                                           ItemsSource="{Binding Orders}">
+                       ShowGroupDropArea="True"
+                       CaptionSummaryCellStyleSelector="{StaticResource selector}"
+                       ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.CaptionSummaryRow>
         <syncfusion:GridSummaryRow ShowSummaryInRow="False">
             <syncfusion:GridSummaryRow.SummaryColumns>
@@ -483,13 +510,17 @@ The caption summary cells can be conditionally customized summary column. Here, 
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var cell = container as GridCaptionSummaryCell;
+
         if (cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
         {
             var groupKey = (int)(item as Group).Key;
+
             //custom condition is checked.
+
             if (groupKey < 1005)
                 return App.Current.Resources["captionSummaryStyle"] as Style;
         }
@@ -544,16 +575,20 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
             var summaryValue = (value as Group).SummaryDetails.SummaryValues[0];
             var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
             var calculatedValue = aggregateValue.Value;
+
             //custom condition is checked.
+
             if ((double)calculatedValue < 1005)
                 return new SolidColorBrush(Colors.LightBlue);
             return new SolidColorBrush(Colors.Bisque);
-        }
+    }
+
     public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
         throw new NotImplementedException();
@@ -602,11 +637,14 @@ In another way, appearance of caption summary row can be customized conditionall
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var row = (item as SpannedDataRow).RowData;
         var groupKey = (int)(row as Group).Key;
+
         //custom condition is checked.
+
         if (groupKey < 1005)
             return App.Current.Resources["captionSummaryStyle"] as Style;
         return null;
@@ -649,15 +687,20 @@ The appearance of caption summary row can be conditionally customized based on 
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+ 
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var dataRow = item as DataRowBase;
         var level = dataRow.Level;
+ 
         //based on group levels, style applied to CaptionSummaryRow
+ 
         if (level == 1)
             return App.Current.Resources["rowStyle1"] as Style;
+ 
         else if (level == 2)
             return App.Current.Resources["rowStyle2"] as Style;
+ 
         else if (level == 3)
             return App.Current.Resources["rowStyle3"] as Style;
         return base.SelectStyle(item, container);
@@ -723,12 +766,15 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var summaryValue = (value as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue % 2 == 0 )
             return new SolidColorBrush(Colors.Red);
         return new SolidColorBrush(Colors.DarkBlue);
@@ -792,16 +838,18 @@ The appearance of group summary cell can be customized conditionally based on su
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+ 
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var summaryValue = (item as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+ 
         //custom condition is checked.
+ 
         if ((double)calculatedValue < 0)
             return App.Current.Resources["customGroupSummary1"] as Style;
-
-        return App.Current.Resources["customGroupSummary"] as Style;
+       return App.Current.Resources["customGroupSummary"] as Style;
     }        
 }
 {% endhighlight %}
@@ -858,15 +906,19 @@ The group summary cells can be conditionally customized based on summary column.
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var cell = container as GridGroupSummaryCell;
+
         if (cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
         {
             var summaryValue = (item as SummaryRecordEntry).SummaryValues[0];
             var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
             var calculatedValue = aggregateValue.Value;
+
             //custom condition is checked.
+
             if (aggregateValue.Key != "Count" && (double)calculatedValue < 0)
                 return App.Current.Resources["customGroupSummary1"] as Style;
         }
@@ -933,16 +985,20 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+ 
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var summaryValue = (value as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+ 
         //custom condition is checked.
+ 
         if (aggregateValue.Key != "Count" && (double)calculatedValue % 2 == 0)
             return new SolidColorBrush(Colors.LightBlue);
         return new SolidColorBrush(Colors.Bisque);
     }
+ 
     public object ConvertBack(object value, Type targetType, object parameter, string language)
     {
         throw new NotImplementedException();
@@ -1002,16 +1058,18 @@ The appearance of group summary row can be customized conditionally based on sum
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var summaryRecordEntry = (item as SpannedDataRow).RowData;
         var summaryValue = (summaryRecordEntry as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if ((double)calculatedValue % 2 == 0)
             return App.Current.Resources["customGroupSummary1"] as Style;
-
         return App.Current.Resources["customGroupSummary"] as Style;
     }    
 }
@@ -1050,7 +1108,6 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
     <syncfusion:SfDataGrid.TableSummaryRows>
         <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
             <syncfusion:GridTableSummaryRow.SummaryColumns>
-
                 <syncfusion:GridSummaryColumn Name="price"
                                               Format="'{Sum:c}'"
                                               MappingName="TotalPrice"
@@ -1061,7 +1118,6 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
                                               SummaryType="CountAggregate" />
             </syncfusion:GridTableSummaryRow.SummaryColumns>
         </syncfusion:GridTableSummaryRow>
-
         <syncfusion:GridSummaryRow Title="Count : {count}, Total Price :  {totalPrice}" ShowSummaryInRow="True">
             <syncfusion:GridSummaryRow.SummaryColumns>
                 <syncfusion:GridSummaryColumn Name="count"
@@ -1080,12 +1136,15 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var summaryValue = (value as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if (aggregateValue.Key != "Count" && (double)calculatedValue < 1500)
             return new SolidColorBrush(Colors.Red);
         return new SolidColorBrush(Colors.LightBlue);
@@ -1135,7 +1194,6 @@ The appearance of table summary cell can be customized conditionally based on su
                                               SummaryType="CountAggregate" />
             </syncfusion:GridTableSummaryRow.SummaryColumns>
         </syncfusion:GridTableSummaryRow>
-
         <syncfusion:GridSummaryRow Title="Total Price :  {totalPrice}" ShowSummaryInRow="True">
                     <syncfusion:GridSummaryRow.SummaryColumns>
                         <syncfusion:GridSummaryColumn Name="totalPrice"
@@ -1150,16 +1208,18 @@ The appearance of table summary cell can be customized conditionally based on su
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var summaryValue = (item as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
         var cell = container as GridTableSummaryCell;
+
         //custom condition is checked.
+
         if ((double)calculatedValue > 8500 && cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
             return App.Current.Resources["customTableSummary"] as Style;
-
         return App.Current.Resources["customTableSummary1"] as Style;
     }
 }
@@ -1191,7 +1251,6 @@ The table summary cells can be conditionally customized based on summary column.
     <syncfusion:SfDataGrid.TableSummaryRows>
         <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
             <syncfusion:GridTableSummaryRow.SummaryColumns>
-
                 <syncfusion:GridSummaryColumn Name="price"
                                                 Format="'{Sum:c}'"
                                                 MappingName="TotalPrice"
@@ -1200,17 +1259,14 @@ The table summary cells can be conditionally customized based on summary column.
                                                 Format="'{Count:n0}'"
                                                 MappingName="CustomerID"
                                                 SummaryType="CountAggregate" />
-
             </syncfusion:GridTableSummaryRow.SummaryColumns>
         </syncfusion:GridTableSummaryRow>
-
         <syncfusion:GridSummaryRow Title="Total Price :  {totalPrice}" ShowSummaryInRow="True">
                     <syncfusion:GridSummaryRow.SummaryColumns>
                         <syncfusion:GridSummaryColumn Name="totalPrice"
                                                 Format="'{Sum:c}'"
                                                 MappingName="TotalPrice"
                                                 SummaryType="DoubleAggregate" />
-
             </syncfusion:GridSummaryRow.SummaryColumns>
         </syncfusion:GridSummaryRow>
     </syncfusion:SfDataGrid.TableSummaryRows>
@@ -1219,10 +1275,13 @@ The table summary cells can be conditionally customized based on summary column.
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var cell = container as GridTableSummaryCell;
+
         // column name is checked.
+
         if (cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
             return App.Current.Resources["customTableSummary"] as Style;
         return App.Current.Resources["customTableSummary1"] as Style;
@@ -1261,7 +1320,6 @@ The appearance of table summary row can be customized conditionally based on sum
     <syncfusion:SfDataGrid.TableSummaryRows>
         <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
             <syncfusion:GridTableSummaryRow.SummaryColumns>
-
                 <syncfusion:GridSummaryColumn Name="price"
                                                 Format="'{Sum:c}'"
                                                 MappingName="TotalPrice"
@@ -1270,10 +1328,8 @@ The appearance of table summary row can be customized conditionally based on sum
                                                 Format="'{Count:n0}'"
                                                 MappingName="CustomerID"
                                                 SummaryType="CountAggregate" />
-
             </syncfusion:GridTableSummaryRow.SummaryColumns>
         </syncfusion:GridTableSummaryRow>
-
         <syncfusion:GridSummaryRow Title="Count : {count}, Total Price :  {totalPrice}" ShowSummaryInRow="True">
             <syncfusion:GridSummaryRow.SummaryColumns>
                 <syncfusion:GridSummaryColumn Name="count"
@@ -1284,7 +1340,6 @@ The appearance of table summary row can be customized conditionally based on sum
                                                 Format="'{Sum:c}'"
                                                 MappingName="TotalPrice"
                                                 SummaryType="DoubleAggregate" />
-
             </syncfusion:GridSummaryRow.SummaryColumns>
         </syncfusion:GridSummaryRow>
     </syncfusion:SfDataGrid.TableSummaryRows>
@@ -1293,12 +1348,15 @@ The appearance of table summary row can be customized conditionally based on sum
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var summaryValue = (value as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+
         //custom condition is checked.
+
         if (aggregateValue.Key != "Count" && (double)calculatedValue < 1500)
             return new SolidColorBrush(Colors.Bisque);
         return new SolidColorBrush(Colors.LightBlue);
@@ -1339,7 +1397,6 @@ The appearance of table summary row can be customized conditionally based on sum
     <syncfusion:SfDataGrid.TableSummaryRows>
         <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
             <syncfusion:GridTableSummaryRow.SummaryColumns>
-
                 <syncfusion:GridSummaryColumn Name="price"
                                                 Format="'{Sum:c}'"
                                                 MappingName="TotalPrice"
@@ -1348,10 +1405,8 @@ The appearance of table summary row can be customized conditionally based on sum
                                                 Format="'{Count:n0}'"
                                                 MappingName="CustomerID"
                                                 SummaryType="CountAggregate" />
-
             </syncfusion:GridTableSummaryRow.SummaryColumns>
         </syncfusion:GridTableSummaryRow>
-
                 <syncfusion:GridSummaryRow Title="Count : {count}, Total Price :  {totalPrice}" ShowSummaryInRow="True">
                     <syncfusion:GridSummaryRow.SummaryColumns>
                         <syncfusion:GridSummaryColumn Name="count"
@@ -1362,7 +1417,6 @@ The appearance of table summary row can be customized conditionally based on sum
                                                 Format="'{Sum:c}'"
                                                 MappingName="TotalPrice"
                                                 SummaryType="DoubleAggregate" />
-
             </syncfusion:GridSummaryRow.SummaryColumns>
         </syncfusion:GridSummaryRow>
     </syncfusion:SfDataGrid.TableSummaryRows>
@@ -1371,17 +1425,19 @@ The appearance of table summary row can be customized conditionally based on sum
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+ 
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var summaryRecordEntry = (item as SpannedDataRow).RowData;
         var summaryValue = (summaryRecordEntry as SummaryRecordEntry).SummaryValues[0];
         var aggregateValue = summaryValue.AggregateValues.ElementAt(0);
         var calculatedValue = aggregateValue.Value;
+ 
         //custom condition is checked.
+ 
         if (aggregateValue.Key != "Count" && (double)calculatedValue < 0)
             return App.Current.Resources["tableSummaryRowStyle"] as Style;
-
-        return App.Current.Resources["tableSummaryRowStyle1"] as Style;
+       return App.Current.Resources["tableSummaryRowStyle1"] as Style;
     }
 }
 {% endhighlight %}
@@ -1413,8 +1469,7 @@ The alignment of summary cells can be customized conditionally based on summary 
     <syncfusion:SfDataGrid.TableSummaryRows>
     <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
         <syncfusion:GridTableSummaryRow.SummaryColumns>
-
-            <syncfusion:GridSummaryColumn Name="price"
+           <syncfusion:GridSummaryColumn Name="price"
                                                 Format="'{Sum:c}'"
                                                 MappingName="TotalPrice"
                                                 SummaryType="DoubleAggregate" />
@@ -1422,10 +1477,8 @@ The alignment of summary cells can be customized conditionally based on summary 
                                                 Format="'{Count:n0}'"
                                                 MappingName="CustomerID"
                                                 SummaryType="CountAggregate" />
-
         </syncfusion:GridTableSummaryRow.SummaryColumns>
     </syncfusion:GridTableSummaryRow>
-
     <syncfusion:GridSummaryRow Title="Count : {count}, Total Price :  {totalPrice}" ShowSummaryInRow="True">
         <syncfusion:GridSummaryRow.SummaryColumns>
             <syncfusion:GridSummaryColumn Name="count"
@@ -1436,7 +1489,6 @@ The alignment of summary cells can be customized conditionally based on summary 
                                                 Format="'{Sum:c}'"
                                                 MappingName="TotalPrice"
                                                 SummaryType="DoubleAggregate" />
-
         </syncfusion:GridSummaryRow.SummaryColumns>
     </syncfusion:GridSummaryRow>
     </syncfusion:SfDataGrid.TableSummaryRows>
@@ -1445,10 +1497,13 @@ The alignment of summary cells can be customized conditionally based on summary 
 {% highlight c# %}
 public class SelectorClass : StyleSelector
 {
+ 
     protected override Style SelectStyleCore(object item, DependencyObject container)
     {
         var cell = container as GridTableSummaryCell;
+ 
         // column name is checked.
+ 
         if (cell.ColumnBase.GridColumn.MappingName == "TotalPrice")
             return App.Current.Resources["customTableSummary"] as Style;
         return App.Current.Resources["customTableSummary1"] as Style;
@@ -1490,12 +1545,16 @@ xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
 {% highlight c# %}
 public class ColorConverter : IValueConverter
 {
+
     public object Convert(object value, Type targetType, object parameter, string language)
     {
         var data = value as OrderInfo;
+
         //custom condition is checked.
+
         if (data.AmountPaid)
             return new SolidColorBrush(Colors.Green);
+
         else
             return new SolidColorBrush(Colors.Red);
     }

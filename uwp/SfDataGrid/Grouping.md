@@ -105,7 +105,6 @@ You can group more than one column programmatically.
 <syncfusion:SfDataGrid x:Name="dataGrid"                               
                         ItemsSource="{Binding Orders}"
                         ShowGroupDropArea="True">
-
     <syncfusion:SfDataGrid.GroupColumnDescriptions>
         <syncfusion:GroupColumnDescription ColumnName="OrderID" />
         <syncfusion:GroupColumnDescription ColumnName="CustomerID" />
@@ -290,7 +289,6 @@ You can expand or collapse specific group by using [SfDataGrid.ExpandGroup](http
 {% highlight c# %}
 var group = (dataGrid.View.CollectionGroups[0] as Group);
 this.dataGrid.ExpandGroup(group);
-
 this.dataGrid.CollapseGroup(group);
 {% endhighlight %}
 {% endtabs %}
@@ -385,6 +383,7 @@ For an example, the Date column is grouped based on the week basis in the follow
 {% highlight c# %}
 public class GroupDateTimeConverter : IValueConverter
 {
+
     public object Convert(object value, System.Type targetType, object parameter, CultureInfo culture)
     {
         var saleInfo = value as SalesByDate;
@@ -395,20 +394,27 @@ public class GroupDateTimeConverter : IValueConverter
 
         if (days <= dayofWeek)
         {
+
             if (days == 0)
                 return "TODAY";
+
             if (days == 1)
                 return "YESTERDAY";
             return saleInfo.Date.DayOfWeek.ToString().ToUpper();
         }
+
         if (difference > 0 && difference <= 7)
             return "LAST WEEK";
+
         if (difference > 7 && difference <= 14)
             return "TWO WEEKS AGO";
+
         if (difference > 14 && difference <= 21)
             return "THREE WEEKS AGO";
+
         if (date.Year == saleInfo.Date.Year && date.Month == saleInfo.Date.Month)
             return "EARLIER THIS MONTH";
+
         if (DateTime.Now.AddMonths(-1).Month == saleInfo.Date.Month)
             return "LAST MONTH";
         return "OLDER";
@@ -435,7 +441,6 @@ Now, assign the GroupDateTimeConverter into `GroupColumnDescription.Converter` a
 <syncfusion:SfDataGrid  x:Name="dataGrid"                          
                         AutoGenerateColumns="True"                          
                         ItemsSource="{Binding DailySalesDetails}">
-
     <syncfusion:SfDataGrid.GroupColumnDescriptions>
         <syncfusion:GroupColumnDescription ColumnName="Date" Converter="{StaticResource customGroupDateTimeConverter}" />
     </syncfusion:SfDataGrid.GroupColumnDescriptions>
@@ -527,11 +532,9 @@ Custom group comparer can be defined in SfDataGrid using [SfDataGrid.SummaryGrou
                         ItemsSource="{Binding Orders}"
                         ShowGroupDropArea="True"
                         SummaryGroupComparer="{StaticResource groupComparer}">
-
     <syncfusion:SfDataGrid.GroupColumnDescriptions>
         <syncfusion:GroupColumnDescription ColumnName="OrderID" />
     </syncfusion:SfDataGrid.GroupColumnDescriptions>
-
     <syncfusion:SfDataGrid.CaptionSummaryRow>
         <syncfusion:GridSummaryRow Title="Items Count: {IDCount}" ShowSummaryInRow="True">
             <syncfusion:GridSummaryRow.SummaryColumns>
@@ -574,6 +577,7 @@ this.dataGrid.GroupExpanding += DataGrid_GroupExpanding;
 
 private void DataGrid_GroupExpanding(object sender, GroupChangingEventArgs e)
 {
+
     if (e.Group.Key.Equals(1001))
         e.Cancel = true;
 }
@@ -611,6 +615,7 @@ this.dataGrid.GroupCollapsing += DataGrid_GroupCollapsing;
 
 private void DataGrid_GroupCollapsing(object sender, GroupChangingEventArgs e)
 {
+ 
     if (e.Group.Key.Equals(1001))
         e.Cancel = true;
 }
