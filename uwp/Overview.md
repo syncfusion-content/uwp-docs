@@ -31,176 +31,348 @@ If you are still unable to find the information that you are looking for in the 
 ## List of Controls
 
 <table>
-<tr>
-<td>
-Category</td><td>
-Controls</td></tr>
-<tr>
-<td>
-GRIDS</td><td>
-SfDataGrid</td></tr>
-<tr>
-<td>
-DATAVISUALIZATION</td><td>
-SfChart</td></tr>
-<tr>
-<td>
-</td><td>
-SfDateTimeRangeNavigator</td></tr>
-<tr>
-<td>
-</td><td>
-Sparkline</td></tr>
-<tr>
-<td>
-</td><td>
-SfSchedule</td></tr>
-<tr>
-<td>
-</td><td>
-SfDiagram</td></tr>
-<tr>
-<td>
-LAYOUT</td><td>
-SfAccordion</td></tr>
-<tr>
-<td>
-</td><td>
-SfCarousel</td></tr>
-<tr>
-<td>
-</td><td>
-SfDockingManager</td></tr>
-<tr>
-<td>
-</td><td>
-SfRibbon</td></tr>
-<tr>
-<td>
-</td><td>
-SfTileView</td></tr>
-<tr>
-<td>
-EDITORS</td><td>
-SfRichTextBoxAdv</td></tr>
-<tr>
-<td>
-</td><td>
-SfCalculator</td></tr>
-<tr>
-<td>
-</td><td>
-SfCalendar</td></tr>
-<tr>
-<td>
-</td><td>
-SfComboBox</td></tr>
-<tr>
-<td>
-</td><td>
-SfDatePicker</td></tr>
-<tr>
-<td>
-</td><td>
-SfDateTimeCombo</td></tr>
-<tr>
-<td>
-</td><td>
-SfDomainUpDown</td></tr>
-<tr>
-<td>
-</td><td>
-SfDropDownButton</td></tr>
-<tr>
-<td>
-</td><td>
-SfGridSplitter</td></tr>
-<tr>
-<td>
-</td><td>
-SfMaskedEdit</td></tr>
-<tr>
-<td>
-</td><td>
-SfNumericTextBox</td></tr>
-<tr>
-<td>
-</td><td>
-SfNumericUpDown</td></tr>
-<tr>
-<td>
-</td><td>
-SfRadialSlider</td></tr>
-<tr>
-<td>
-</td><td>
-SfRangeSlider</td></tr>
-<tr>
-<td>
-</td><td>
-SfRating</td></tr>
-<tr>
-<td>
-</td><td>
-SfTextBoxExt</td></tr>
-<tr>
-<td>
-</td><td>
-SfTimePicker</td></tr>
-<tr>
-<td>
-NAVIGATION</td><td>
-SfColorPalette</td></tr>
-<tr>
-<td>
-</td><td>
-SfColorPicker</td></tr>
-<tr>
-<td>
-</td><td>
-SfRadialMenu</td></tr>
-<tr>
-<td>
-</td><td>
-SfTabControl</td></tr>
-<tr>
-<td>
-</td><td>
-SfTreeNavigator</td></tr>
-<tr>
-<td>
-NOTIFICATION</td><td>
-SfBusyIndicator</td></tr>
-<tr>
-<td>
-</td><td>
-SfHubTile</td></tr>
-<tr>
-<td>
-</td><td>
-SfMosaicTile</td></tr>
-<tr>
-<td>
-</td><td>
-SfSplitMosaicTile</td></tr>
-<tr>
-<td>
-</td><td>
-SfPulsingTile</td></tr>
-<tr>
-<td>
-FILE FORMATS</td><td>
-DocIO</td></tr>
-<tr>
-<td>
-</td><td>
-SfPdfViewer</td></tr>
-<tr>
-<td>
-</td><td>
-XlsIO</td></tr>
-<tr>
-<td>
-</td><td>
-PDF</td></tr>
+	<tr>
+		<th>
+			Category<br/><br/>
+		</th>
+		<th>
+			Control<br/><br/>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			GRIDS<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfdatagrid/getting-started">SfDataGrid </a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			DATA VISUALIZATION<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfchart/getting-started">SfChart</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfdatetimerangenavigator/getting-started">SfDateTimeRangeNavigator</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfsparkline/getting-started">Sparkline</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfschedule/getting-started">SfSchedule</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfdiagram/getting-started">SfDiagram</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			LAYOUT<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfaccordion/getting-started">SfAccordion</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfcarousel/getting-started">SfCarousel</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfdockingmanager/getting-started">SfDockingManager</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfribbon/getting-started">SfRibbon</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sftileview/getting-started">SfTileView</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			EDITORS<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfrichtextboxadv/getting-started">SfRichTextBoxAdv</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfcalculator/getting-started">SfCalculator</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfcalendar/getting-started">SfCalendar</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfcombobox/getting-started">SfComboBox</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfdatepicker/getting-started">SfDatePicker</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfdatetimecombo/getting-started">SfDateTimeCombo</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfdomainupdown/getting-started">SfDomainUpDown</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfdropdownbutton/getting-started">SfDropDownButton</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfgridsplitter/getting-started">SfGridSplitter</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfmaskededit/getting-started">SfMaskedEdit</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfnumerictextbox/getting-started">SfNumericTextBox</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfnumericupdown/getting-started">SfNumericUpDown</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfradialslider/getting-started">SfRadialSlider</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfrangeslider/getting-started">SfRangeSlider</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfrating/getting-started">SfRating</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sftextboxext/getting-started">SfTextBoxExt</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sftimepicker/getting-started">SfTimePicker</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			NAVIGATION<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfcolorpalette/getting-started">SfColorPalette</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfcolorpicker/getting-started">SfColorPicker</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfradialmenu/getting-started">SfRadialMenu</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sftabcontrol/getting-started">SfTabControl</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sftreenavigator/getting-started">SfTreeNavigator</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			NOTIFICATION<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfbusyindicator/getting-started">SfBusyIndicator</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/hubtiles/sfhubtile">SfHubTile</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/hubtiles/sfmosaictile">SfMosaicTile</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/hubtiles/sfsplitmosaictile">SfSplitMosaicTile</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/hubtiles/sfpulsingtile">SfPulsingTile</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			FILE FORMATS<br/><br/>
+		</td>
+		<td>
+			<a href="/file-formats/docio/overview">DocIO</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/sfpdfviewer/getting-started">SfPdfViewer</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/file-formats/xlsio/overview">XlsIO</a><br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/file-formats/pdf/overview">PDF</a><br/><br/>
+		</td>
+	</tr>
 </table>
