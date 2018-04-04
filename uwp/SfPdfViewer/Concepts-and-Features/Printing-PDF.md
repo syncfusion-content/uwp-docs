@@ -53,6 +53,6 @@ The following code shows how to bind the PrintCommand to a Button
 {% endhighlight %}
 {% endtabs %}
 
-Where the instance fileStream is the stream read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the (https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf "Viewing PDF") section. 
+Where the instance fileStream is the stream read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
 
 N> The SfPdfViewer control for UWP does not support silent printing and so this method can be used only when the PDF document is displayed in the PDF viewer.
