@@ -11,12 +11,14 @@ documentation: ug
 
 Printing can be done using the Print method or by using the Print command.
 
-The following code shows how to perform the print operation using Print method
+The following code shows how to perform the print operation using Print method. 
 
 {% tabs %}
 {% highlight c# %}
 private void Page_Loaded(object sender, RoutedEventArgs e)
 {
+    byte[] buffer = new byte[fileStream.Length];
+    fileStream.Read(buffer, 0, buffer.Length);
     PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
     pdfViewer.LoadDocument(loadedDocument);
 }
@@ -50,5 +52,7 @@ The following code shows how to bind the PrintCommand to a Button
 </Grid>
 {% endhighlight %}
 {% endtabs %}
+
+Where the instance fileStream is the stream read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the (https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf "Viewing PDF") section. 
 
 N> The SfPdfViewer control for UWP does not support silent printing and so this method can be used only when the PDF document is displayed in the PDF viewer.
