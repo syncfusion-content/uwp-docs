@@ -7,13 +7,16 @@ control: SfMaskedEdit
 documentation: ug
 ---
 
-# Setting Watermark
+# Watermark
 
 The control prompts you with some information, when it is not in focus and contains an empty string.
 
 ### By using the Watermark
 
 Watermark property allows you to specify some information, when the text is empty. For illustration, create a simple textbox, where you enter names separated by a comma.
+
+{% tabs %}
+
 {% highlight xaml %}
 
  <syncfusion:SfMaskedEdit Width="200" 
@@ -26,9 +29,13 @@ Watermark property allows you to specify some information, when the text is empt
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Watermark_images/Watermark_img1.png)
 
 N> The Watermark property is the object type. So, any Framework element can be hosted as Watermark content.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -53,6 +60,8 @@ N> The Watermark property is the object type. So, any Framework element can be h
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Watermark_images/Watermark_img3.png)
 
 
@@ -60,6 +69,9 @@ N> The Watermark property is the object type. So, any Framework element can be h
 ### By using the Watermark template
 
 Any business object can be bound to the Watermark property and that object can be decorated by applying the WatermarkTemplate property.
+
+{% tabs %}
+
 {% highlight xaml %}
 
 <editors:SfMaskedEdit Mask="[A-Za-z\s]+" 
@@ -81,4 +93,6 @@ Any business object can be bound to the Watermark property and that object can b
 </editors:SfMaskedEdit>
 
 {% endhighlight %}
+
+{% endtabs %}
 
