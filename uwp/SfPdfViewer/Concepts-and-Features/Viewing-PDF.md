@@ -13,7 +13,7 @@ The below code explains how to load the document using a PdfLoadedDocument objec
 {% tabs %}
 {% highlight c# %}
 Assembly assembly = typeof(MainPage).GetTypeInfo().Assembly;
-fileStream = assembly.GetManifestResourceStream("ApplicationNampeSpace.Assets.PDFFileName.pdf");
+fileStream = assembly.GetManifestResourceStream("ApplicationNameSpace.Assets.PDFFileName.pdf");
 byte[] buffer = new byte[fileStream.Length];
 fileStream.Read(buffer, 0, buffer.Length);
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
