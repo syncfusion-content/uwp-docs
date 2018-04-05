@@ -11,6 +11,8 @@ documentation: ug
 
 Magnification of the PDF document can be done in multiple ways and the different ways are explained below. By default the viewer control supports ctrl+ mouse scroll to manipulate the magnification of the document. 
 
+In all code snippets that follow, 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
+
 **Setting Custom zoom**
 
 The user is allowed to set custom magnification factor between 100 and 300 to magnify the document displayed. The following code illustrates the same.

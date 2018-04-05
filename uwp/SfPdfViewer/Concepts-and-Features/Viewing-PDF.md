@@ -9,9 +9,13 @@ documentation: ug
 
 ## Viewing PDF
 The SfPdfViewer has the ability to load PDF documents from stream and PdfLoadedDocument object.
-The below code explains how to load the document using a PdfLoadedDocument object.
+The below code explains how to load the document using a PdfLoadedDocument object that was created from the PDF in Assets folder of the application.
 {% tabs %}
 {% highlight c# %}
+Assembly assembly = typeof(MainPage).GetTypeInfo().Assembly;
+fileStream = assembly.GetManifestResourceStream("ApplicationNampeSpace.Assets.PDFFileName.pdf");
+byte[] buffer = new byte[fileStream.Length];
+fileStream.Read(buffer, 0, buffer.Length);
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
 pdfViewer.LoadDocument(loadedDocument);
 {% endhighlight %}

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Get coordinates of a text in a PDF document
-The SfPdfViewer control allows you to acquire the coordinates of multiple instances of a particular text in a page of the PDF document. The following code illustrates the same. 
+The SfPdfViewer control allows you to acquire the coordinates of multiple instances of a particular text in a page of the PDF document. The following code illustrates the same. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
 {% tabs %}
 {% highlight c# %}
 private void Page_Loaded(object sender, RoutedEventArgs e)
