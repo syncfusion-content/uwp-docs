@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Get page offset collection
-Page offset collection is a dictionary of page numbers and location where the vertical offset page ends. The following code example illustrates accessing the same. 
+Page offset collection is a dictionary with page numbers as keys and the corresponding vertical location where the page ends as values. The following code example illustrates accessing the same. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section.
 {% tabs %}
 {% highlight c# %}
 private void Page_Loaded(object sender, RoutedEventArgs e)

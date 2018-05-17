@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Customizing progress ring
-The following code illustrates the design of the progress ring in red color foreground with dimension of 100x100.
+The following code illustrates the design of the progress ring in red color foreground with dimension of 100x100. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
 {% tabs %}
 {% highlight c# %}
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
