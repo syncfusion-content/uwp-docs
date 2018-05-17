@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Get page gap between the pages
-The SfPdfViewer control provides the property to access the gap between two pages being displayed in the PDF Viewer. This value can be accessed using the following code.
+The SfPdfViewer control provides the property to access the gap between two pages being displayed in the PDF Viewer. This value can be accessed using the following code. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section.
 {% tabs %}
 {% highlight c# %}
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
