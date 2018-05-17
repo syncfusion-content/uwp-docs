@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ## Get current vertical and horizontal offsets
-The SfPdfViewer control provides the value of the current vertical and horizontal offsets. The following code allows you to access the same.
+The SfPdfViewer control provides the value of the current vertical and horizontal offsets. The following code allows you to access the same. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
 {% tabs %}
 {% highlight c# %}
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
