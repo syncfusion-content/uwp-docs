@@ -10,14 +10,25 @@ documentation: ug
 # Getting Started
 This section explains about the assemblies required for the deployment of SfPdfViewer and how to create simple application using the SfPdfViewer control.
 
-**Required Assemblies**
+## Required Assemblies
 
 The following list of assemblies are required for adding a PDF viewer control to the Universal Windows Platform application.
 
 * Syncfusion.SfPdfViewer.UWP
 * Syncfusion.Pdf.UWP
+* Syncfusion.SfColorPickers.UWP
+* Syncfusion.SfInput.UWP
+* Syncfusion.SfRadialMenu.UWP
+* Syncfusion.SfShared.UWP
 
-**Create a simple application with the SfPdfViewer**
+Each of these assemblies always needs to be in parallel with its associated resource files as shown in the screenshot below. However, it is not necessary to have all these assmblies in a single folder as long as the resource files are along with the assemblies in their respective folders. The screenshot shows only the SfPdfViewer assembly for brievity.
+
+![](Getting-Started_images/Getting-Started_img3.jpeg)
+
+The aforementioned placement of the assemblies and the resource files in the same folder becomes important only when the assemblies need to be moved from the installed location of the assemblies to somewhere else. When the assemblies are moved the resource files must also be moved and placed in the same folder as the assemblies.
+
+
+## Create a simple application with the SfPdfViewer
 
 Follow the below steps to create a simple application with the SfPdfViewer and load a PDF document.
 
@@ -29,10 +40,7 @@ Follow the below steps to create a simple application with the SfPdfViewer and l
 
 When you drag the SfPdfViewer toolbox item to the window, it automatically adds the required assembly references to the current application.
 
-To add the SfPdfViewer by using code, add the following assemblies as reference to the project.
-
-* Syncfusion.Pdf.UWP
-* Syncfusion.SfPdfViewer.UWP
+To add the SfPdfViewer by using code, add the required assemblies mentioned previously as reference to the project.
 
 Add the following code in XAML to make use of the SfPdfViewer.
 
@@ -54,7 +62,7 @@ Add the following code in XAML to make use of the SfPdfViewer.
 {% endhighlight %}
 {% endtabs %}
 
-**Loading PDF document through binding** 
+## Loading PDF document through binding
 
 The following steps explains how to load a PDF document through binding.
 
@@ -181,7 +189,7 @@ Once the DataContext has been set, the ItemSource dependency property can be set
 {% endtabs %}
 
 
-**Loading PDF document using FileOpenPicker**
+## Loading PDF document using FileOpenPicker
 
 Alternatively, a FileOpenPicker can also be used to load documents at run time. To achieve this, include a button to the application.
 
@@ -239,7 +247,7 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
-**Magnification operations**
+## Magnification operations
 
 The SfPdfViewer provides the following set of commands to perform magnification.
 
@@ -274,7 +282,7 @@ The following XAML code shows how to bind the PrintCommand to a Button
 {% endhighlight %}
 {% endtabs %}
 
-**Search Operations**
+## Search Operations
 
 The SearchText method can be used to search a text in the document. In addition to the current match, the method also highlights all the possible matches in the current page with a different color.
 
@@ -309,7 +317,7 @@ Binding SearchNextCommand and SearchPreviousCommand to buttons
 {% endhighlight %}
 {% endtabs %}
 
-**Page Navigations**
+## Page Navigations
 
 The below list of commands are helpful for performing the page navigation operations.
 
