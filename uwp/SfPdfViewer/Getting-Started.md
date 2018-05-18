@@ -21,7 +21,7 @@ The following list of assemblies are required for adding a PDF viewer control to
 * Syncfusion.SfRadialMenu.UWP
 * Syncfusion.SfShared.UWP
 
-Each of these assemblies always needs to be in parallel with its associated resource files as shown in the screenshot below. However, it is not necessary to have all these assmblies in a single folder as long as the resource files are along with the assemblies in their respective folders. The screenshot shows only the SfPdfViewer assembly for brievity.
+Each of these assemblies always needs to be in parallel with its associated resource files as shown in the screenshot below. However, it is not necessary to have all these assemblies in a single folder as long as the resource files are along with the assemblies in their respective folders. The screenshot shows only the SfPdfViewer assembly for brevity.
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
