@@ -186,6 +186,50 @@ Active docking window can be customized using the property `DockWindowActiveFore
 
 ![](Dealing-with-Windows-images/Dealing-with-Windows-img5.jpeg)
 
+## Customizing Inactive Document window
+
+ForeColor and BackColor of Inactive document window can be customized using the properties `DocumentTabItemBackground`, `DocumentTabItemForeground` with the desired values. 
+
+{% highlight XAML %}
+
+<layout:SfDockingManager x:Name="dockingmanager" DocumentTabItemBackground="DarkBlue" DocumentTabItemForeground="White">
+
+<ContentControl layout:SfDockingManager.Header="Item 1" layout:SfDockingManager.DockState="Document"/>
+
+<ContentControl layout:SfDockingManager.Header="Item 2" layout:SfDockingManager.DockState="Document"/>
+
+<ContentControl layout:SfDockingManager.Header="Item 3" layout:SfDockingManager.DockState="Document"/>
+
+<ContentControl layout:SfDockingManager.Header="Item 4" layout:SfDockingManager.DockState="Document"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+![](Dealing-with-Windows-images/Dealing-with-windows-document-img1.jpeg)
+
+## Customizing Selected Document window
+
+Selected Document window can be customized using the property `DocumentTabItemBackground`, `DocumentTabItemForeground` with desired brush values. Font size of the selected document window can be customized through `DocumentTabItemSelectedFontSize` property of DockingManager.
+
+{% highlight XAML %}
+
+<layout:SfDockingManager x:Name="dockingmanager" DocumentTabItemSelectedBackground="Green" DocumentTabItemSelectedForeground="Yellow" DocumentTabItemSelectedFontSize="20">
+
+<ContentControl layout:SfDockingManager.Header="Item 1" layout:SfDockingManager.DockState="Document"/>
+
+<ContentControl layout:SfDockingManager.Header="Item 2" layout:SfDockingManager.DockState="Document"/>
+
+<ContentControl layout:SfDockingManager.Header="Item 3" layout:SfDockingManager.DockState="Document"/>
+
+<ContentControl layout:SfDockingManager.Header="Item 4" layout:SfDockingManager.DockState="Document"/>
+
+</layout:SfDockingManager>
+
+{% endhighlight %}
+
+![](Dealing-with-Windows-images/Dealing-with-windows-document-img2.jpeg)
+
 
 ## Customizing Floating Window
 
