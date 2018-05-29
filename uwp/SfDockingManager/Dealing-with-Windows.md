@@ -190,6 +190,8 @@ Active docking window can be customized using the property `DockWindowActiveFore
 
 ForeColor and BackColor of Inactive document window can be customized using the properties `DocumentTabItemBackground`, `DocumentTabItemForeground` with the desired values. 
 
+{% tabs %}
+
 {% highlight XAML %}
 
 <layout:SfDockingManager x:Name="dockingmanager" DocumentTabItemBackground="DarkBlue" DocumentTabItemForeground="White">
@@ -206,11 +208,15 @@ ForeColor and BackColor of Inactive document window can be customized using the 
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Dealing-with-Windows-images/Dealing-with-windows-document-img1.jpeg)
 
 ## Customizing Selected Document window
 
 Selected Document window can be customized using the property `DocumentTabItemBackground`, `DocumentTabItemForeground` with desired brush values. Font size of the selected document window can be customized through `DocumentTabItemSelectedFontSize` property of DockingManager.
+
+{% tabs %}
 
 {% highlight XAML %}
 
@@ -227,6 +233,8 @@ Selected Document window can be customized using the property `DocumentTabItemBa
 </layout:SfDockingManager>
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Dealing-with-Windows-images/Dealing-with-windows-document-img2.jpeg)
 
