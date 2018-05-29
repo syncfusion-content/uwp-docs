@@ -356,8 +356,12 @@ End Sub
 
 When the control is no longer used, we have to clear all the reference of the control from the application. Dispose method is used to  release all the reference for SfTabControl from the application, so the memory which is held by the SfTabControl is reclaimed.  
 
+{% tabs %}
+
 {% highlight C# %}
 
 this.tabcontrol.Dispose();
 
 {% endhighlight %}
+
+{% endtabs %}
