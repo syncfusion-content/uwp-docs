@@ -194,7 +194,7 @@ ForeColor and BackColor of Inactive document window can be customized using the 
 
 {% highlight XAML %}
 
-<layout:SfDockingManager x:Name="dockingmanager" DocumentTabItemBackground="DarkBlue" DocumentTabItemForeground="White">
+<layout:SfDockingManager x:Name="dockingmanager" DocumentTabItemBackground="#FF353535" DocumentTabItemForeground="White">
 
 <ContentControl layout:SfDockingManager.Header="Item 1" layout:SfDockingManager.DockState="Document"/>
 
@@ -220,7 +220,7 @@ Selected Document window can be customized using the property `DocumentTabItemBa
 
 {% highlight XAML %}
 
-<layout:SfDockingManager x:Name="dockingmanager" DocumentTabItemSelectedBackground="Green" DocumentTabItemSelectedForeground="Yellow" DocumentTabItemSelectedFontSize="20">
+<layout:SfDockingManager x:Name="dockingmanager" DocumentTabItemSelectedBackground="DarkBlue" DocumentTabItemSelectedForeground="White" DocumentTabItemSelectedFontSize="20">
 
 <ContentControl layout:SfDockingManager.Header="Item 1" layout:SfDockingManager.DockState="Document"/>
 
