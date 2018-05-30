@@ -219,6 +219,8 @@ SfDataGrid triggers the following events during editing.
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.ScrollAxis;
+
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
 
 private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
@@ -236,6 +238,8 @@ private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEv
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.ScrollAxis;
+
 this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
 
 private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
@@ -258,6 +262,8 @@ private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventA
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.UI.Xaml.ScrollAxis;
+
 this.dataGrid.CurrentCellValueChanged += DataGrid_CurrentCellValueChanged;
 
 private void DataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEventArgs args)
