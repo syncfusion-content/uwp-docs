@@ -26,18 +26,20 @@ public MainPage()
 
 To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, follow the below steps: 
 
-1.Right click the project, select **Add** and then **NewItem**.
+1.Right click the project, select **Add** and then **NewFolder**, name the foldername as **Resources**.
 
-2.In Add New Item  dialog, select the Resource File  and name the filename as **[culture name].resw**. The culture name that indicates the name of language and country. 
+2.Right click on the **Resources** folder, select **Add** and then **NewFolder**, name the foldername as **[culture name]**. The culture name that indicates the name of language and country. 
 
-For example, you will have to give name as **fr.resw** for French culture.
- 
-3.The culture name that indicates the name of language and country. 
+For example, you will have to give name as **fr-FR** for French culture.
+
+3.Right click the **[culture name]** folder, select **Add** and then **NewItem**.
+
+4.In Add New Item  dialog, select the Resource File  and name the filename as **Syncfusion.SfGantt.UWP.Resources.resw**.
 
 ![](Localization_images/AddResource.png)
 
-4. Add the Name/Value pair in Resource Designer of **fr.resw** file and change its corresponding value to corresponding culture.
+5.Add the Name/Value pair in Resource Designer of **Syncfusion.SfGantt.UWP.Resources.resw** file and change its corresponding value to corresponding culture.
 
 ![](Localization_images/FinalOutput.png)
 
-You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/SFGANT~11958419239.ZIP)
+You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGantt_Localization-817789850.zip)
