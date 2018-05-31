@@ -26,9 +26,9 @@ public MainPage()
 
 To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, follow the below steps: 
 
-1.Right click the project, select **Add** and then **NewFolder**, name the foldername as **Resources**.
+1.Right click the project, select **Add** and then **NewFolder**, name the folder name as **Resources**.
 
-2.Right click on the **Resources** folder, select **Add** and then **NewFolder**, name the foldername as **[culture name]**. The culture name that indicates the name of language and country. 
+2.Right click on the **Resources** folder, select **Add** and then **NewFolder**, name the folder name as **[culture name]**. The culture name that indicates the name of language and country. 
 
 For example, you will have to give name as **fr-FR** for French culture.
 
