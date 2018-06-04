@@ -68,7 +68,7 @@ While mention the path, You should need to mention font file name with ".ttf" ex
 
 {% highlight C# %}
 
-    editor.AddText("New Xefus Text", new TextSettings() { FontFamily = new FontFamily("Assets/Xefus.ttf#Xefus") });
+    editor.AddText("New Lighthouse Text", new TextSettings() { FontFamily = new FontFamily("Assets/Lighthouse.ttf#Lighthouse Personal Use") });
 
 {% endhighlight %}
 
