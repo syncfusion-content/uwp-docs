@@ -60,7 +60,7 @@ Right click the font file and open properties, in that Change the "Build Action"
     
 ![](text_images/UWPCustomFont2.png)
     
-Finally use the below code snippet to apply custom font family for Universal Windows platform.
+Finally use the below code snippet to apply custom font family for Universal Windows Platform.
 
 While mention the path, You should need to mention font file name with ".ttf" extension and the symbol of "#" with font family name.
 
@@ -68,7 +68,7 @@ While mention the path, You should need to mention font file name with ".ttf" ex
 
 {% highlight C# %}
 
-    editor.AddText("New Pacifico Text", new TextSettings() { FontFamily = new FontFamily("Assets/Pacifico.ttf#Pacifico") });
+    editor.AddText("New Xefus Text", new TextSettings() { FontFamily = new FontFamily("Assets/Xefus.ttf#Xefus") });
 
 {% endhighlight %}
 
