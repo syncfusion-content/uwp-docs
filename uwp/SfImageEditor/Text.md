@@ -27,11 +27,12 @@ programmatically, the desired text elements also can be added over the image. Th
 
 ### TextSettings
 
-TextSettings is defined to set the values for Color and FontSize.
+TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
+`Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Roundhand`.
 
 {% highlight C# %}
 
-    imageEditor.AddText("CustomTextView", new TextSettings() { Color = new SolidColorBrush(Colors.Orange) });
+    imageEditor.AddText("CustomTextView", new TextSettings() { Color = new SolidColorBrush(Colors.Red), FontSize=16, FontFamily=new FontFamily("ms-appx:///Syncfusion.SfImageEditor.UWP/Assets/Fonts/Arial.ttf#Arial") });
 
 {% endhighlight %}
 
@@ -41,26 +42,17 @@ TextSettings is defined to set the values for Color and FontSize.
 
 We can able to change the font family of selected text from default font family into custom font family.
 
-   * From Toolbar
-   * Using Code
-
-### From Toolbar
-
-After adding text we can able to change the font family of the selected text from toolbar, Select the desired text and click the font family buttons available in the sub menu.
+After adding text, Select the desired text and click the font family buttons available in the sub menu.
    
 Now the font family of the selected text has been changed.
 
-### Using Code
-
-Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project. Refer the below screen shot.
-
-![](text_images/UWPCustomFont1.png)
+Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project.
    
 Right click the font file and open properties, in that Change the "Build Action" property of every font file as "Content" and "Copy to output directory" to "Copy Always".
     
-![](text_images/UWPCustomFont2.png)
+![](text_images/CustomFont.png)
     
-Finally use the below code snippet to apply custom font family for Universal Windows Platform.
+Finally use the below code snippet to apply custom font family.
 
 While mention the path, You should need to mention font file name with ".ttf" extension and the symbol of "#" with font family name.
 
