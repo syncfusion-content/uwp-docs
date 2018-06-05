@@ -8,16 +8,13 @@ documentation: ug
 ---
 # Appearance
 
-The appearance of the `SfMaskedEdit` control can be customized by using the `BorderBrush` and `ErrorBorderBrush` property
+Appearance of the `SfMaskedEdit` control can be customized by using the `BorderBrush` and `ErrorBorderBrush` properties.
 
 ## Border
 
-
 ### BorderBrush
 
-`BorderBrush` provides the border color for the `SfMaskedEdit`.
-
-We can Customize the `BorderBrush` property as follows
+Customize the `BorderBrush` property that provides border color for the `SfMaskedEdit`.
 
 {% tabs %}
 
@@ -41,10 +38,7 @@ maskededit.BorderBrush = Brushes.Blue;
 
 ### ErrorBorderBrush
 
-
-`ErrorBorderBrush` provide the border color for the `SfMaskedEdit` when validation becomes failed.
-
-We can Customize the ErrorBorderBrush property as follows
+Customize the `ErrorBorderBrush` property that provides border color for the `SfMaskedEdit` when the validation becomes failed.
 
 {% tabs %}
 
@@ -65,14 +59,9 @@ maskededit.ErrorBorderBrush = Brushes.DarkOrange;
 
 ![](Appearence_Images/Appearence_Img2.jpg)
 
-
 ## ShowPromptOnFocus
 
-
-When the `ShowPromptOnFocus` is set to true, prompt characters are ignored when control loses focus. Again, the prompt characters are restored when the control is focused
-
-### Example
-
+If the `ShowPromptOnFocus` property is set to true, the prompt characters will be ignored when the control lost it focus. The prompt characters will be restored when focusing the control.
 
 {% tabs %}
 
