@@ -40,19 +40,9 @@ TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamil
 
 # Custom Font Family
 
-We can able to change the font family of selected text from default font family into custom font family.
+Using a font other than the built-in font family is also available in UWP. Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project.
 
-After adding text, Select the desired text and click the font family buttons available in the sub menu.
-   
-Now the font family of the selected text has been changed.
-
-Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project.
-   
-Right click the font file and open properties, in that Change the "Build Action" property of every font file as "Content" and "Copy to output directory" to "Copy Always".
-    
-![](text_images/CustomFont.png)
-    
-Finally use the below code snippet to apply custom font family.
+Use the below code snippet to apply custom fonts.
 
 While mention the path, You should need to mention font file name with ".ttf" extension and the symbol of "#" with font family name.
 
@@ -67,3 +57,9 @@ While mention the path, You should need to mention font file name with ".ttf" ex
 {% endtabs %}
 
 ![](text_images/FontFamily.png)
+
+Right click the font file and open properties, in that Change the "Build Action" property of every font file as "Content" and "Copy to output directory" to "Copy Always".
+    
+![](text_images/CustomFont.png)
+
+
