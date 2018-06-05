@@ -40,6 +40,8 @@ For example, you will have to give name as **fr-FR** for French culture.
 
 5.	Add the Name/Value pair in Resource Designer of **Syncfusion.SfGantt.UWP.Resources.resw** file, and change its corresponding value to corresponding culture.
 
+You can get the SfGantt’s key from default resource [Syncfusion.SfGantt.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGantt.UWP.Resources845531575.zip).
+
 ![](Localization_images/FinalOutput.png)
 
-You can download the sample for localizing the Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGantt_Localization-817789850.zip)
+You can download the sample for localizing the Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGantt_Localization1607055000.zip)
