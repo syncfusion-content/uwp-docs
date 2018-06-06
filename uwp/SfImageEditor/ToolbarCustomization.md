@@ -118,7 +118,7 @@ Toolbar items will be resize based on the toolbar height. To change Height of th
 
 {% endtabs %}
 
-![](toolbarCustomization_images/ToolbarHeightUWP.png)
+![](toolbarCustomization_images/ToolbarHeightCustomization.png)
 
 ### Individual Toolbar Item Height Customization
 
