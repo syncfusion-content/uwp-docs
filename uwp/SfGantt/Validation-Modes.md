@@ -7,17 +7,19 @@ documentation: ug
 ---
 # Validation mode
 
-The SfGantt control provides support to control task scheduling. The start and finish  dates of the task can be validated automatically or manually. The following validation modes can be set to the [`ValidationMode`]() property in SfGantt. 
-* [`Manual`]() validation mode allows user to control task scheduling and gives responsibility to track schedules on any task.
-* [`Auto`]() validation mode calculates the start and finish dates of any task based on its task dependencies and non-working days.
+The SfGantt control provides support to control task scheduling. The start and finish  dates of the task can be validated automatically or manually. The following validation modes can be set to the `ValidationMode` property in SfGantt. 
+
+* `Manual` - Validation mode allows user to control task scheduling and gives responsibility to track schedules on any task.
+
+* `Auto` - Validation mode calculates the start and finish dates of any task based on its task dependencies and non-working days.
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <gantt:SfGantt ValidationMode="Auto">
+<gantt:SfGantt ValidationMode="Auto">
 
- </gantt:SfGantt>
+</gantt:SfGantt>
 
 {% endhighlight %}
 
