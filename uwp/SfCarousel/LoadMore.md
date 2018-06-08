@@ -134,6 +134,10 @@ N>The default value of the `LoadMoreItemsCount` property is 3.
 
 carousel.LoadMoreItemsCount = true;
 
+{% endhighlight %}
+
+{% endtabs %}
+
 Custom view can be passed instead of the LoadMore label by using the `LoadMoreView` property. 
 
 {% tabs %}
