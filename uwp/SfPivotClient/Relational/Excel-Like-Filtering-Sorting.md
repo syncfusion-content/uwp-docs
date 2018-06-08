@@ -49,7 +49,7 @@ This allows you to sort the corresponding PivotItem in the *Descending order*.
 
 **More sort options**
 
-This allows you to sort the corresponding PivotItem based on the Grandtotal of the PivotCalculation field.
+This allows you to sort the corresponding PivotItem based on the grand total of the PivotCalculation field.
 
 **Clear filters**
 
