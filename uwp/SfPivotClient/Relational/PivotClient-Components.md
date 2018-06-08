@@ -76,7 +76,7 @@ The below screenshot illustrates how to remove an item from the axis element bui
 
 **Rearranging items in axis**
 
-The items in the aixs can be rearranged by using the context menu available in the axis element builder. Right-click the desired item from rows or columns, or values, or filters, and then select the desired option like *Move Down*, *Move Up*, *Move First*, and *Move Last*  from menu items to rearrange the selected item.
+The items in the axis can be rearranged by using the context menu available in the axis element builder. Right-click the desired item from rows or columns, or values, or filters, and then select the desired option like *Move Down*, *Move Up*, *Move First*, and *Move Last*  from menu items to rearrange the selected item.
 
 The below screenshot illustrates how to rearrange an item in the axis element builder.
 
