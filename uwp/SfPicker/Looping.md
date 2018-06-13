@@ -67,7 +67,7 @@ picker.EnableLooping = true;
 
 ![](images/Looping.png)
 
-You can find the complete Looping sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoopingUWP1359129979 )
+You can find the complete Looping sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoopingUWP2032409493.zip)
 
 # How to restrict Looping in a particular column of the picker
 
@@ -98,4 +98,4 @@ private void date_ColumnLoaded(object source, ColumnLoadedEventArgs args)
 
 ![](images/ColumnEnableLooping.png)
 
-You can find sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ColumnEnableLooping-282854774)
+You can find sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ColumnEnableLooping-642618465.zip)
