@@ -71,4 +71,4 @@ carousel.EnableVirtualization = true;
 
 ![](SfCarousel-images/UIVirtualization.png)
 
-You can find the complete UIVirtualization sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/UIVirtualizationUWP1611547667)
+You can find the complete UIVirtualization sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/UIVirtualizationUWP-1730634570.zip )
