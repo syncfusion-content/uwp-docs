@@ -110,9 +110,9 @@ Import SfSchedule control namespace `Syncfusion.UI.Xaml.Schedule`.
       
 ## Changing Schedule Views     
       
-SfSchedule control provides different types of views to display dates and it can be assigned to the control by using [SfSchedule.ScheduleType](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleTypeProperty.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.   
+SfSchedule control provides different types of views to display dates and it can be assigned to the control by using [SfSchedule.ScheduleType](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~ScheduleTypeProperty.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.   
    
-Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [SfSchedule.FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeekProperty.html) property of `SfSchedule`.   
+Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [SfSchedule.FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~FirstDayOfWeekProperty.html) property of `SfSchedule`.   
      
 {% tabs %}   
 {% highlight xaml %}    
@@ -229,11 +229,11 @@ DayView is used to display a single day, current day will be visible by default.
 
 ## Binding data to SfSchedule control    
    
-Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [SfSchedule.Appointments](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~Appointments.html) property of `SfSchedule`. 
+Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [SfSchedule.Appointments](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~Appointments.html) property of `SfSchedule`. 
    
 ### Adding Appointments    
    
- [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [ScheduleAppointment.StartTime](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~StartTimeProperty.html), [ScheduleAppointment.EndTime](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~EndTimeProperty.html), [ScheduleAppointment.Subject](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~SubjectProperty.html) and some additional information about the appointment can be added using [ScheduleAppointment.AppointmentBackground](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AppointmentBackgroundProperty.html), [ScheduleAppointment.Notes](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~NotesProperty.html), [ScheduleAppointment.Location](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~LocationProperty.html), [ScheduleAppointment.AllDay](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AllDayProperty.html), [ScheduleAppointment.IsRecursive](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursiveProperty.html) properties.    
+ [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [ScheduleAppointment.StartTime](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~StartTimeProperty.html), [ScheduleAppointment.EndTime](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~EndTimeProperty.html), [ScheduleAppointment.Subject](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~SubjectProperty.html) and some additional information about the appointment can be added using [ScheduleAppointment.AppointmentBackground](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AppointmentBackgroundProperty.html), [ScheduleAppointment.Notes](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~NotesProperty.html), [ScheduleAppointment.Location](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~LocationProperty.html), [ScheduleAppointment.AllDay](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~AllDayProperty.html), [ScheduleAppointment.IsRecursive](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ScheduleAppointment~IsRecursiveProperty.html) properties.    
      
 {% highlight c# %}    
      
@@ -291,7 +291,7 @@ You can create a custom class `Meeting` with mandatory fields "From", "To" and "
  
 #### Mapping custom class   
   
-You can map those properties of `Meeting` class with our schedule control by using [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMappingProperty.html).    
+You can map those properties of `Meeting` class with our schedule control by using [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~AppointmentMappingProperty.html).    
 
 {% tabs %}
 {% highlight xaml %}
@@ -435,7 +435,7 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
 
 #### Setting data source for SfSchedule   
     
- Assign those appointments collection `Meetings` to the [SfSchedule.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfschedule/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~ItemsSource.html) property. 
+ Assign those appointments collection `Meetings` to the [SfSchedule.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~ItemsSource.html) property. 
    
 {% highlight c# %}   
    
