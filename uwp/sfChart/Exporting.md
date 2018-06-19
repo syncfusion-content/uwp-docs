@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Exporting
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) can be exported into the following types of image formats:
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) can be exported into the following types of image formats:
 
 * JPG or JPEG
 * JPEG-XR
@@ -23,7 +23,7 @@ The following example illustrates exporting of the chart.
 
 ## Methods
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) contains the following overloading methods for saving a chart as an image.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) contains the following overloading methods for saving a chart as an image.
 
 ### Save()
 

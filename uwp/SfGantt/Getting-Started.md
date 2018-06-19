@@ -15,7 +15,7 @@ This section provides an assistance to create and configure a simple Gantt appli
 ### Adding SDK reference
 
 1. Open the Reference Manager window in project.
-2. Select Universal Windows -> Extensions -> Syncfusion Controls for UWP XAML.
+2. Select Universal Windows Platform -> Extensions -> Syncfusion Controls for UWP XAML.
 
 ![](SfGantt_images/SDK_Reference.jpeg)
 
@@ -280,7 +280,7 @@ public class ProjectTrackerViewModel
 
 ## Binding data
 
-To bind the data source of the SfGantt, set [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ItemsSource.html) property as shown below code example.
+To bind the data source of the SfGantt, set [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ItemsSource.html) property as shown below code example.
 
 {% tabs %}
 
@@ -303,7 +303,7 @@ sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollecti
 
 By default, the grid view is manipulated with Name, Start Date, Finish Date, Duration, Progress, Predecessor, and Resources columns.
 
-The visible columns of grid view can be customized by using [`VisibleGridColumns`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~VisibleGridColumns.html) property in SfGantt.
+The visible columns of grid view can be customized by using [`VisibleGridColumns`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~VisibleGridColumns.html) property in SfGantt.
 
 The following code example illustrates how  to customize the visible columns.
 
@@ -334,7 +334,7 @@ sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttri
 
 ## Sorting
 
-Sorting can be enabled by using [`AllowSorting`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowSorting.html) property. Sorting functionality uses to arrange the tasks in ascending or descending order based on a column.
+Sorting can be enabled by using [`AllowSorting`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowSorting.html) property. Sorting functionality uses to arrange the tasks in ascending or descending order based on a column.
 
 The following code example illustrates how to enable sorting in the Gantt control.
 
@@ -364,7 +364,7 @@ sfGantt.AllowSorting = true;
 
 ## Editing
 
-Editing can be enabled by using [`AllowEditing`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowEditing.html) property in the Gantt. You can edit cell by cell and drag/resize the task bar or progress bar in chart view. Drag and drop establishes the relationship between two tasks.
+Editing can be enabled by using [`AllowEditing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowEditing.html) property in the Gantt. You can edit cell by cell and drag/resize the task bar or progress bar in chart view. Drag and drop establishes the relationship between two tasks.
 
 The below code example illustrates how to enable the editing in Gantt.
 
@@ -476,7 +476,7 @@ private GanttResourceCollection GetResources()
 
 {% endhighlight %}
 
-2. Bind the resource collection to the [`ProjectResources`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ProjectResources.html) property in SfGantt.
+2. Bind the resource collection to the [`ProjectResources`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ProjectResources.html) property in SfGantt.
 
 {% tabs %}
 
@@ -524,9 +524,9 @@ public ObservableCollection<TaskDetail> GetData()
 
 This is used to highlight and customize the weekends in the Gantt. By default, Saturday and Sunday is considered as weekends.
 
-* [`ShowNonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) property can be used to enable or disable the non-working days.
-* [`NonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDays.html) property can be used to customize the weekends.
-* [`NonWorkingDaysBackground`](https://help.syncfusion.com/cr/cref_files/uwp/sfgantt/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDaysBackground.html) property can be used change the weekends highlighting color.
+* [`ShowNonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) property can be used to enable or disable the non-working days.
+* [`NonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDays.html) property can be used to customize the weekends.
+* [`NonWorkingDaysBackground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDaysBackground.html) property can be used change the weekends highlighting color.
 
 The below code example illustrates how to display the weekend as Friday.
 
