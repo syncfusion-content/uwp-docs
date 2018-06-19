@@ -9,9 +9,9 @@ documentation: ug
 
 # Localization 
 
-Localization is the process of translating the application resources into different languages for the specific cultures. You can localize the SfGantt by adding resource file. Application culture can be changed by setting `PrimaryLanguageOverride` in the MainPage() constructor. 
+Localization is the process of translating the application resources into different languages for specific cultures. You can localize the SfGantt by adding a resource file. Application culture can be changed by setting the `PrimaryLanguageOverride` in the MainPage() constructor.
 
-In the below code example, culture is configured to French language.
+In the following code example, application culture is configured to French language.
 
 {% tabs %}
 {% highlight c# %}
@@ -24,20 +24,24 @@ public MainPage()
 {% endtabs %}
 
 
-To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, follow the below steps: 
+To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, use the following steps: 
 
-1.Right click the project, select **Add** and then **NewItem**.
+1. Right-click the project, click **Add**, and then click **NewFolder**, name the folder as **Resources**.
 
-2.In Add New Item  dialog, select the Resource File  and name the filename as **[culture name].resw**. The culture name that indicates the name of language and country. 
+2.	Right-click the **Resources** folder, click **Add**, and then click **NewFolder**, name the folder as **[culture name]**. The culture name indicates name of language and country. 
 
-For example, you will have to give name as **fr.resw** for French culture.
- 
-3.The culture name that indicates the name of language and country. 
+For example, you will have to give name as **fr-FR** for French culture.
+
+3.	Right-click the **[culture name]** folder, click **Add**, and then click **NewItem**.
+
+4.	In the Add New Item dialog, click the Resource File, and name the filename as **Syncfusion.SfGantt.UWP.Resources.resw**.
 
 ![](Localization_images/AddResource.png)
 
-4. Add the Name/Value pair in Resource Designer of **fr.resw** file and change its corresponding value to corresponding culture.
+5.	Add the Name/Value pair in Resource Designer of **Syncfusion.SfGantt.UWP.Resources.resw** file, and change its corresponding value to corresponding culture.
+
+You can get the SfGantt’s key from default resource [Syncfusion.SfGantt.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGantt.UWP.Resources845531575.zip).
 
 ![](Localization_images/FinalOutput.png)
 
-You can download the sample for localization of Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/SFGANT~11958419239.ZIP)
+You can download the sample for localizing the Gantt from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGantt_Localization1607055000.zip)
