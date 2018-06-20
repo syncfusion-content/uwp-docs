@@ -27,37 +27,12 @@ programmatically, the desired text elements also can be added over the image. Th
 
 ### TextSettings
 
-TextSettings is defined to set the values for `Color`, `FontSize` and `FontFamily`. By default there are six types of font family has been given in toolbar that are 
-`Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`,`Bradley Hand`, `Snell Round hand`.
+TextSettings is defined to set the values for Color and FontSize.
 
 {% highlight C# %}
 
-    imageEditor.AddText("CustomTextView", new TextSettings() { Color = new SolidColorBrush(Colors.Red), FontSize=16, FontFamily=new FontFamily("ms-appx:///Syncfusion.SfImageEditor.UWP/Assets/Fonts/Arial.ttf#Arial") });
+    imageEditor.AddText("CustomTextView", new TextSettings() { Color = new SolidColorBrush(Colors.Orange) });
 
 {% endhighlight %}
 
 ![](text_images/AddedText.png)
-
-# Custom Font Family
-
-Using a font other than the built-in font family is also available in UWP. Download the custom fonts file in ttf file format and add these fonts into "Assets" folder in sample project.
-
-Right click the font file and open properties, in that Change the "Build Action" property of every font file as "Content" and "Copy to output directory" to "Copy Always".
-    
-![](text_images/CustomFont.png)
-
-Use the below code snippet to apply custom fonts.
-
-While mention the path, You should need to mention font file name with ".ttf" extension and the symbol of "#" with font family name.
-
-{% tabs %}
-
-{% highlight C# %}
-
-    editor.AddText("New Lighthouse Text", new TextSettings() { FontFamily = new FontFamily("Assets/Lighthouse.ttf#Lighthouse Personal Use") });
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![](text_images/FontFamily.png)

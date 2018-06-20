@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) Animation allows you to animate the chart series on loading, and whenever the ItemsSource changes. Animation in chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EnableAnimation.html) property as True and defining the corresponding animation speed with [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~AnimationDuration.html) property.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) Animation allows you to animate the chart series on loading, and whenever the ItemsSource changes. Animation in chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EnableAnimation.html) property as True and defining the corresponding animation speed with [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~AnimationDuration.html) property.
 
 The following types of series support Animation.
 
