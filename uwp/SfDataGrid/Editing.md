@@ -219,8 +219,6 @@ SfDataGrid triggers the following events during editing.
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.ScrollAxis;
-
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
 
 private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
@@ -238,8 +236,6 @@ private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEv
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.ScrollAxis;
-
 this.dataGrid.CurrentCellEndEdit += DataGrid_CurrentCellEndEdit;
 
 private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args)
@@ -262,8 +258,6 @@ private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventA
 
 {% tabs %}
 {% highlight c# %}
-using Syncfusion.UI.Xaml.ScrollAxis;
-
 this.dataGrid.CurrentCellValueChanged += DataGrid_CurrentCellValueChanged;
 
 private void DataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEventArgs args)
@@ -369,6 +363,11 @@ SfDataGrid allows you to edit the cell programmatically by calling the [BeginEdi
 
 {% tabs %}
 {% highlight c# %}
+
+//Add this namespace to access the RowColumnIndex struct type in SfDataGrid 
+
+using Syncfusion.UI.Xaml.ScrollAxis;
+
 this.dataGrid.Loaded += DataGrid_Loaded;
 
 private void DataGrid_Loaded(object sender, RoutedEventArgs e)
@@ -387,6 +386,11 @@ You can call the [EndEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatag
 
 {% tabs %}
 {% highlight c# %}
+
+//Add this namespace to access the RowColumnIndex struct type in SfDataGrid 
+
+using Syncfusion.UI.Xaml.ScrollAxis;
+
 this.dataGrid.Loaded += DataGrid_Loaded;
 
 private void DataGrid_Loaded(object sender, RoutedEventArgs e)
@@ -405,6 +409,11 @@ You can use the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files
 
 {% tabs %}
 {% highlight c# %}
+
+//Add this namespace to access the RowColumnIndex struct type in SfDataGrid
+
+using Syncfusion.UI.Xaml.ScrollAxis;
+
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
 
 private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArgs args)
