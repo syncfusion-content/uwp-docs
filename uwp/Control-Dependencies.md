@@ -9,328 +9,1231 @@ documentation: ug
 
 # Control Dependencies
 
-The following table illustrates the control’s assembly and its dependencies.
+This page lists the assemblies required for each control to be referred
+
+## SfDataGrid
 
 <table>
 <tr>
-<td>
-Controls</td><td>
-Assembly</td><td>
-Dependencies</td></tr>
-<tr>
-<td>
-SfDataGrid</td><td>
-Syncfusion.SfGrid.UWP</td><td>
-Syncfusion.Data.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfGridConverter.UWP<br/><br/>Syncfusion.Pdf.UWP<br/><br/>Syncfusion.XlsIo.UWP</td></tr>
-<tr>
-<td>
-SfChart</td><td>
-Syncfusion.SfChart.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfDateTimeRangeNavigator</td><td>
-Syncfusion.SfChart.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-Sparkline</td><td>
-Syncfusion.SfChart.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfSchedule</td><td>
-Syncfusion.SfSchedule.UWP</td><td>
-Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfRadialMenu.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfTabControl.UWP</td></tr>
-<tr>
-<td>
-SfDiagram</td><td>
-Syncfusion.SfDiagram.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfAccordion</td><td>
-Syncfusion.SfAccordion.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfMaps</td><td>
-Syncfusion.SfMaps.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfTreeMap</td><td>
-Syncfusion.SfTreeMap.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfGauge</td><td>
-Syncfusion.SfGauge.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfBulletGraph</td><td>
-Syncfusion.SfBulletGraph.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfCarousel</td><td>
-Syncfusion.SfCarousel.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfDockingManager</td><td>
-Syncfusion.SfDockingManager.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfRibbon</td><td>
-Syncfusion.SfRibbon.UWP</td><td>
-Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfInput.UWP</td></tr>
-<tr>
-<td>
-SfTileView</td><td>
-Syncfusion.SfTileView.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfRichTextBoxAdv</td><td>
-Syncfusion.SfRichTextBoxAdv.UWP</td><td>
-Syncfusion.OfficeChart.UWP<br/>Syncfusion.DocIO.UWP<br/>Syncfusion.SfRadialMenu.UWP<br/>Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfCalculator</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfCalendar</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfComboBox</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfDatePicker</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfDateTimeCombo</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfDomainUpDown</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfDropDownButton</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfGridSplitter</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfGroupBar</td><td>
-Syncfusion.SfGroupBar.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfKanban</td><td>
-Syncfusion.SfKanban.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfMaskedEdit</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfMenu</td><td>
-Syncfusion.SfMenu.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfNumericTextBox</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfNumericUpDown</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfProgressBar</td><td>
-Syncfusion.SfProgressBar.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfRadialSlider</td><td>
-Syncfusion.SfRadialMenu.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfRangeSlider</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfRating</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfSpellChecker</td><td>
-Syncfusion.SfSpellChecker.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfTextBoxExt</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfTimePicker</td><td>
-Syncfusion.SfInput.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfColorPalette</td><td>
-Syncfusion.SfColorPickers.UWP</td><td>
-Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfRadialMenu.UWP</td></tr>
-<tr>
-<td>
-SfColorPicker</td><td>
-Syncfusion.SfColorPickers.UWP</td><td>
-Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfRadialMenu.UWP</td></tr>
-<tr>
-<td>
-SfRadialMenu</td><td>
-Syncfusion.SfRadialMenu.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfTabControl</td><td>
-Syncfusion.SfTabControl.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfTreeNavigator</td><td>
-Syncfusion.SfTreeNavigator.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfBusyIndicator</td><td>
-Syncfusion.SfBusyIndicator.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfHubTile</td><td>
-Syncfusion.SfHubTile.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfMosaicTile</td><td>
-Syncfusion.SfHubTile.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfSplitMosaicTile</td><td>
-Syncfusion.SfHubTile.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-SfPulsingTile</td><td>
-Syncfusion.SfHubTile.UWP</td><td>
-Syncfusion.SfShared.UWP</td></tr>
-<tr>
-<td>
-DocIO</td><td>
-Syncfusion.DocIO.UWP</td><td>
-Syncfusion.OfficeChart.UWP<br/></td></tr>
-<tr>
-<td>
-SfPdfViewer</td>
-<td>Syncfusion.SfPdfViewer.UWP</td>
-<td>Syncfusion.Pdf.UWP<br/>Syncfusion.SfInput.UWP<br/>Syncfusion.SfRadialMenu.UWP<br/>Syncfusion.SfColorPickers.UWP<br/>Syncfusion.SfShared.UWP<br/></td>
+<th>Assembly references </th>
+<th>Nuget package </th>
 </tr>
 <tr>
-<td>
-XlsIO</td><td>
-Syncfusion.XlsIO.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-PDF</td><td>
-Syncfusion.Pdf.UWP</td><td>
-</td></tr>
-<tr>
-<td>
-SfGantt
+<td> 
+Syncfusion.SfGrid.UWP </br>
+Syncfusion.Data.UWP </br>
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
 </td>
-<td>
+<td> 
+Syncfusion.SfGrid.UWP
+</td>
+</tr>
+</table>
+
+### Exporting DataGrid to Excel, PDF and CSV
+
+For exporting DataGrid to excel, pdf or csv, the following references need to be added in your application.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGridConverter.UWP </br>
+Syncfusion.XlsIO.UWP </br>
+Syncfusion.Pdf.UWP
+</td>
+<td> 
+Syncfusion.SfGridConverter.UWP
+</td>
+</tr>
+</table>
+
+## SfChart
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.UWP
+</td>
+<td> 
+Syncfusion.SfChart.UWP
+</td>
+</tr>
+</table>
+
+## SfDateTimeRangeNavigator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.UWP
+</td>
+<td> 
+Syncfusion.SfChart.UWP
+</td>
+</tr>
+</table>
+
+## Sparkline
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfChart.UWP
+</td>
+<td> 
+Syncfusion.SfChart.UWP
+</td>
+</tr>
+</table>
+
+## SfSchedule
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfSchedule.UWP </br>
+Syncfusion.SfRadialMenu.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfTabControl.UWP </br>
+Syncfusion.SfInput.UWP
+</td>
+<td> 
+Syncfusion.SfSchedule.UWP
+</td>
+</tr>
+</table>
+
+## SfDiagram
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfDiagram.UWP
+</td>
+<td> 
+Syncfusion.SfDiagram.UWP
+</td>
+</tr>
+</table>
+
+## SfHeatMap
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfHeatMap.UWP
+</td>
+<td> 
+Syncfusion.SfHeatMap.UWP
+</td>
+</tr>
+</table>
+
+## SfAccordion
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfAccordion.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfAccordion.UWP
+</td>
+</tr>
+</table>
+
+## SfMaps
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfMaps.UWP
+</td>
+<td> 
+Syncfusion.SfMaps.UWP
+</td>
+</tr>
+</table>
+
+## SfTreeMap
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTreeMap.UWP
+</td>
+<td> 
+Syncfusion.SfTreeMap.UWP
+</td>
+</tr>
+</table>
+
+## SfGauge
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGauge.UWP
+</td>
+<td> 
+Syncfusion.SfGauge.UWP
+</td>
+</tr>
+</table>
+
+## SfBulletGraph
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfBulletGraph.UWP
+</td>
+<td> 
+Syncfusion.SfBulletGraph.UWP
+</td>
+</tr>
+</table>
+
+## SfCarousel
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfCarousel.UWP
+</td>
+<td> 
+Syncfusion.SfCarousel.UWP
+</td>
+</tr>
+</table>
+
+## SfDockingManager
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfDockingManager.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfDockingManager.UWP
+</td>
+</tr>
+</table
+
+## SfRibbon
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfRibbon.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfInput.UWP
+</td>
+<td> 
+Syncfusion.SfRibbon.UWP
+</td>
+</tr>
+</table>
+
+## SfTileView
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTileView.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfRibbon.UWP
+</td>
+</tr>
+</table>
+
+## SfRichTextBoxAdv
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfRichTextBoxAdv.UWP </br>
+Syncfusion.OfficeChart.UWP </br>
+Syncfusion.DocIO.UWP </br>
+Syncfusion.SfRadialMenu.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfRichTextBoxAdv.UWP
+</td>
+</tr>
+</table>
+
+## SfCalculator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfCalendar
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfComboBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfDatePicker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfDateTimeCombo
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfDomainUpDown
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfDropDownButton
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfGridSplitter
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfGroupBar
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGroupBar.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfKanban
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfKanban.UWP
+</td>
+<td> 
+Syncfusion.SfKanban.UWP
+</td>
+</tr>
+</table>
+
+## SfMaskedEdit
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfMenu
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfMenu.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfMenu.UWP
+</td>
+</tr>
+</table>
+
+## SfNumericTextBox
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfNumericUpDown
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfProgressBar
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfProgressBar.UWP
+</td>
+<td> 
+Syncfusion.SfProgressBar.UWP
+</td>
+</tr>
+</table>
+
+## SfRadialSlider
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfRating
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfNavigationDrawer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfNavigationDrawer.UWP
+</td>
+<td> 
+Syncfusion.SfNavigationDrawer.UWP
+</td>
+</tr>
+</table>
+
+## SfSpellChecker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfSpellChecker.UWP
+</td>
+<td> 
+Syncfusion.SfSpellChecker.UWP
+</td>
+</tr>
+</table>
+
+## SfTextBoxExt
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfTimePicker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfColorPalette
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfColorPickers.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfRadialMenu.UWP
+</td>
+<td> 
+Syncfusion.SfColorPickers.UWP
+</td>
+</tr>
+</table>
+
+## SfColorPicker
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfColorPickers.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfRadialMenu.UWP
+</td>
+<td> 
+Syncfusion.SfInput.UWP
+</td>
+</tr>
+</table>
+
+## SfRadialMenu
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfRadialMenu.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfRadialMenu.UWP
+</td>
+</tr>
+</table>
+
+## SfTabControl
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTabControl.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfTabControl.UWP
+</td>
+</tr>
+</table>
+
+## SfTreeNavigator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfTreeNavigator.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfTreeNavigator.UWP
+</td>
+</tr>
+</table>
+
+## SfBusyIndicator
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfBusyIndicator.UWP
+</td>
+<td> 
+Syncfusion.SfBusyIndicator.UWP
+</td>
+</tr>
+</table>
+
+## SfHubTile
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfHubTile.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfHubTile.UWP
+</td>
+</tr>
+</table>
+
+## SfMosaicTile
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfHubTile.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfHubTile.UWP
+</td>
+</tr>
+</table>
+
+## SfSplitMosaicTile
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfHubTile.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfHubTile.UWP
+</td>
+</tr>
+</table>
+
+## SfPulsingTile
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfHubTile.UWP </br>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfHubTile.UWP
+</td>
+</tr>
+</table>
+
+## SfPdfViewer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfPdfViewer.UWP </br>
+Syncfusion.Pdf.UWP </br>
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfRadialMenu.UWP </br>
+Syncfusion.SfColorPickers.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfTreeNavigator.UWP
+</td>
+<td> 
+Syncfusion.SfPdfViewer.UWP
+</td>
+</tr>
+</table>
+
+## SfGantt
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGantt.UWP </br>
+Syncfusion.SfGrid.UWP </br>
+Syncfusion.Data.UWP </br>
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfTabControl.UWP
+</td>
+<td> 
 Syncfusion.SfGantt.UWP
 </td>
-<td>
-Syncfusion.SfGrid.UWP<br/><br/>Syncfusion.Data.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>
-</td>
+</tr>
+</table>
+
+## SfPivotChart
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
 </tr>
 <tr>
-<td>
-SfPivotChart
+<td> 
+Syncfusion.Data.UWP </br>
+Syncfusion.Olap.UWP </br>
+Syncfusion.PivotAnalysis.UWP </br>
+Syncfusion.SfBusyIndicator.UWP </br>
+Syncfusion.SfChart.UWP
 </td>
-<td>
+<td> 
 Syncfusion.SfPivotChart.UWP
 </td>
-<td>
-Syncfusion.Data.UWP<br/><br/>Syncfusion.Olap.UWP<br/><br/>Syncfusion.PivotAnalysis.UWP<br/><br/>Syncfusion.SfBusyIndicator.UWP<br/><br/>Syncfusion.SfChart.UWP<br/><br/>
-</td>
+</tr>
+</table>
+
+### Exporting Pivot Chart to PDF, Word and Image
+
+For exporting pivot chart contents to PDF, word and image, the following reference needs to be added in addition to the above assemblies.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
 </tr>
 <tr>
-<td>
-SfPivotClient
+<td> 
+Syncfusion.SfPivotChartConverter.UWP
 </td>
-<td>
+<td> 
+Syncfusion.SfPivotChartConverter.UWP
+</td>
+</tr>
+</table>
+
+## SfPivotClient
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Data.UWP </br>
+Syncfusion.Olap.UWP </br>
+Syncfusion.PivotAnalysis.UWP </br>
+Syncfusion.SfBusyIndicator.UWP </br>
+Syncfusion.SfChart.UWP </br>
+Syncfusion.SfCellGrid.UWP </br>
+Syncfusion.SfGrid.UWP </br>
+Syncfusion.SfGridCommon.UWP </br>
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfMenu.UWP </br>
+Syncfusion.SfPivotChart.UWP </br>
+Syncfusion.SfPivotChartConverter.UWP </br>
+Syncfusion.SfPivotGrid.UWP </br>
+Syncfusion.SfPivotGridConverter.UWP </br>
+Syncfusion.SfPivotShared.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfTabControl.UWP
+</td>
+<td> 
 Syncfusion.SfPivotClient.UWP
 </td>
-<td>
-Syncfusion.Olap.UWP<br/><br/>Syncfusion.SfGridCommon.UWP<br/><br/>Syncfusion.SfTabControl.UWP<br/><br/>Syncfusion.Data.UWP<br/><br/>Syncfusion.PivotAnalysis.UWP<br/><br/>Syncfusion.SfBusyIndicator.UWP<br/><br/>Syncfusion.SfCellGrid.UWP<br/><br/>Syncfusion.SfChart.UWP<br/><br/>Syncfusion.SfGrid.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfMenu.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfPivotChart.UWP<br/><br/>Syncfusion.SfPivotChartConverter.UWP<br/><br/>Syncfusion.SfPivotGrid.UWP<br/><br/>Syncfusion.SfPivotGridConverter.UWP<br/><br/>Syncfusion.SfPivotShared.UWP<br/><br/>
-</td>
+</tr>
+</table>
+
+## SfPivotGauge
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
 </tr>
 <tr>
-<td>
-SfPivotGauge
+<td> 
+Syncfusion.Data.UWP </br>
+Syncfusion.Olap.UWP </br>
+Syncfusion.PivotAnalysis.UWP </br>
+Syncfusion.SfBusyIndicator.UWP </br>
+Syncfusion.SfGauge.UWP </br>
+Syncfusion.SfShared.UWP
 </td>
-<td>
+<td> 
 Syncfusion.SfPivotGauge.UWP
 </td>
-<td>
-Syncfusion.Data.UWP<br/><br/>Syncfusion.Olap.UWP<br/><br/>Syncfusion.PivotAnalysis.UWP<br/><br/>Syncfusion.SfBusyIndicator.UWP<br/><br/>Syncfusion.SfGauge.UWP<br/><br/>
-</td>
+</tr>
+</table>
+
+## SfPivotGrid
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
 </tr>
 <tr>
-<td>
-SfPivotGrid
+<td> 
+Syncfusion.Data.UWP </br>
+Syncfusion.Olap.UWP </br>
+Syncfusion.PivotAnalysis.UWP </br>
+Syncfusion.SfBusyIndicator.UWP </br>
+Syncfusion.SfCellGrid.UWP </br>
+Syncfusion.SfColorPickers.UWP </br>
+Syncfusion.SfGrid.UWP </br>
+Syncfusion.SfGridCommon.UWP </br>
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfMenu.UWP </br>
+Syncfusion.SfShared.UWP
 </td>
-<td>
+<td> 
 Syncfusion.SfPivotGrid.UWP
 </td>
-<td>
-Syncfusion.Data.UWP<br/><br/>Syncfusion.Olap.UWP<br/><br/>Syncfusion.PivotAnalysis.UWP<br/><br/>Syncfusion.SfBusyIndicator.UWP<br/><br/>Syncfusion.SfCellGrid.UWP<br/><br/>Syncfusion.SfColorPickers.UWP<br/><br/>Syncfusion.SfGrid.UWP<br/><br/>Syncfusion.SfGridCommon.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>
-</td>
+</tr>
+</table>
+
+### Exporting Pivot Grid to Excel, Word, PDF and CSV
+
+For exporting pivot grid contents to excel, word, PDF and CSV, the following reference needs to be added in addition to the above assemblies.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
 </tr>
 <tr>
-<td>
-SfReportViewer</td><td>
-Syncfusion.SfReportViewer.UWP</td><td>
-Syncfusion.DocIO.UWP<br/><br/>Syncfusion.Pdf.UWP<br/><br/>Syncfusion.SfGridCommon.UWP<br/><br/>Syncfusion.SfChart.UWP<br/><br/>Syncfusion.SfGauge.UWP<br/><br/>Syncfusion.SfCellGrid.UWP<br/><br/>Syncfusion.SfInput.UWP<br/><br/>Syncfusion.SfMaps.UWP<br/><br/>Syncfusion.SfShared.UWP<br/><br/>Syncfusion.SfTreeNavigator.UWP<br/><br/>Syncfusion.XlsIO.UWP</td></tr>
+<td> 
+Syncfusion.SfPivotGridConverter.UWP
+</td>
+<td> 
+Syncfusion.SfPivotGridConverter.UWP
+</td>
+</tr>
+</table>
+
+## SfReportViewer
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.DocIO.UWP </br>
+Syncfusion.Pdf.UWP </br>
+Syncfusion.SfGridCommon.UWP </br>
+Syncfusion.SfChart.UWP </br>
+Syncfusion.SfGauge.UWP </br>
+Syncfusion.SfCellGrid.UWP </br>
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfMaps.UWP </br>
+Syncfusion.SfReportViewer.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfTreeNavigator.UWP </br>
+Syncfusion.XlsIO.UWP
+</td>
+<td> 
+Syncfusion.SfReportViewer.UWP
+</td>
+</tr>
+</table>
+
+## SfImageEditor
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfImageEditor.UWP
+</td>
+<td> 
+Syncfusion.SfImageEditor.UWP
+</td>
+</tr>
+</table>
+
+## SfPullToRefresh
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfPullToRefresh.UWP
+</td>
+<td> 
+Syncfusion.SfPullToRefresh.UWP
+</td>
+</tr>
+</table>
+
+## SfBarcode
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfBarcode.UWP
+</td>
+<td> 
+Syncfusion.SfBarcode.UWP
+</td>
+</tr>
+</table>
+
+## SfCellGrid
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfCellGrid.UWP </br>
+Syncfusion.SfGridCommon.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfInput.UWP </br>
+Syncfusion.XlsIO.UWP
+</td>
+<td> 
+Syncfusion.SfCellGrid.UWP
+</td>
+</tr>
+</table>
+
+## SfSpreadsheet
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfCellGrid.UWP </br>
+Syncfusion.SfGridCommon.UWP </br>
+Syncfusion.SfSpreadsheet.UWP </br>
+Syncfusion.SfShared.UWP </br>
+Syncfusion.SfInput.UWP </br>
+Syncfusion.SfRibbon.UWP </br>
+Syncfusion.SfTabControl.UWP </br>
+Syncfusion.XlsIO.UWP
+</td>
+<td> 
+Syncfusion.SfSpreadsheet.UWP
+</td>
+</tr>
+</table>
+
+### Include Chart to SfSpreadsheet
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfSpreadsheetHelper.UWP </br>
+Syncfusion.ExcelChartToImageConverter.UWP </br>
+Syncfusion.SfChart.UWP
+</td>
+<td> 
+Syncfusion.SfSpreadsheet.UWP
+</td>
+</tr>
+</table>
+
+## Calculate
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>Nuget package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.Calculate.UWP
+</td>
+<td> 
+Syncfusion.Calculate.UWP
+</td>
+</tr>
 </table>
