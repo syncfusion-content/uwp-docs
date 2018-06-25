@@ -277,7 +277,7 @@ Syncfusion.SfShared.UWP
 Syncfusion.SfDockingManager.UWP
 </td>
 </tr>
-</table
+</table>
 
 ## SfRibbon
 
