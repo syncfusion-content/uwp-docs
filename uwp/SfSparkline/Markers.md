@@ -10,7 +10,7 @@ documentation: ug
 
 Markers are used to indicate the value point for line and area series, and we can customize with different template.It is applicable for LineSparkLine and AreaSparkLine
 
-* [`MarkerVisibility`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~MarkerVisibility.html) – Gets or sets the visibility for marker.
+* [`MarkerVisibility`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~MarkerVisibility.html) – Gets or sets the visibility for marker.
 
 {% tabs %}
 
