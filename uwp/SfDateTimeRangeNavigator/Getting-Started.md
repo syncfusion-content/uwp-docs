@@ -151,9 +151,9 @@ Content which needs to be displayed inside a SfDateTimeRangeNavigator can be of 
 
 The following properties are used to add content.
 
-* [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ItemsSource.html#) - Gets or sets an IEnumerable source used to render range.
-* [`XBindingPath`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~XBindingPath.html#) - Gets or sets the property path of the x data in ItemsSource.
-* [`Content`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~Content.html#) - Gets or sets the content that needs to be hosted inside the Navigator, the content can be any UI element.
+* [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ItemsSource.html#) - Gets or sets an IEnumerable source used to render range.
+* [`XBindingPath`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~XBindingPath.html#) - Gets or sets the property path of the x data in ItemsSource.
+* [`Content`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~Content.html#) - Gets or sets the content that needs to be hosted inside the Navigator, the content can be any UI element.
 
 {% tabs %}
 

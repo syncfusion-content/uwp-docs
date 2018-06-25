@@ -10,7 +10,7 @@ documentation: ug
 
 ## Display Modes
 
-The [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html) control allows you to customize the visual parts to be displayed using [DisplayMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~DisplayMode.html#) property. The following table shows different `PageDisplayMode` options available.
+The [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html) control allows you to customize the visual parts to be displayed using [DisplayMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~DisplayMode.html#) property. The following table shows different `PageDisplayMode` options available.
 
 <table>
 <tr>
@@ -82,7 +82,7 @@ It does not display anything</td></tr>
 
 ## Numeric Buttons count
 
-SfDataPager allows you to display the number of page buttons to be displayed in view by setting [NumericButtonCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~NumericButtonCount.html#) property. 
+SfDataPager allows you to display the number of page buttons to be displayed in view by setting [NumericButtonCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~NumericButtonCount.html#) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,7 +114,7 @@ Now after changing `NumberButtonCount` as 5, only 5-page button will be displaye
 
 ## Orientation
 
-SfDataPager allows you to change the orientation on the control through [Orientation](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~Orientation.html#) property. 
+SfDataPager allows you to change the orientation on the control through [Orientation](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~Orientation.html#) property. 
 
 <table>
 <tr>
@@ -137,10 +137,10 @@ Arranges all the Navigation Buttons and Numeric Buttons Vertically.{{'![B:/Suppo
 
 ## AutoEllipsisMode
 
-The AutoEllipsis button is displayed when the page count is greater than numeric button count. The [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control allows you enable this by using [AutoEllipsisMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AutoEllipsisMode.html#) property which is the Enum type.
+The AutoEllipsis button is displayed when the page count is greater than numeric button count. The [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control allows you enable this by using [AutoEllipsisMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AutoEllipsisMode.html#) property which is the Enum type.
 
-* [AutoEllipsisMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AutoEllipsisMode.html#) – This Property is used to set the `AutoEllipsisMode`. By default, it is set to None.
-* [AutoEllipsisText](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AutoEllipsisText.html#)– This property is used to change the `AutoEllipsisButton` Text.
+* [AutoEllipsisMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AutoEllipsisMode.html#) – This Property is used to set the `AutoEllipsisMode`. By default, it is set to None.
+* [AutoEllipsisText](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AutoEllipsisText.html#)– This property is used to change the `AutoEllipsisButton` Text.
 
 The following table explains the different `AutoEllipsisModes`.
 
@@ -190,9 +190,9 @@ The following screenshot displays the output for `AutoEllipsisText` changed as `
 
 AccentBrush properties are used to decorate the SfDataPager control with a solid color. There are two AccentBrush properties in the `SfDataPager` control:
 
-* [AccentBackground](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AccentBackground.html#) – Property that is applied to the background color for `NavigationButtons` and current selected numeric page button. By default, it set to DarkGray.
-* [AccentForeground](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AccentForeground.html#) – Property that is applied to the foreground color for the current selected numeric page button. By default, it set to White.
-* [NumericButtonStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~NumericButtonStyleProperty.html#) – Property that is applied to the Style of Numeric Button. This is the Style type property. By default, it set to Null.
+* [AccentBackground](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AccentBackground.html#) – Property that is applied to the background color for `NavigationButtons` and current selected numeric page button. By default, it set to DarkGray.
+* [AccentForeground](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~AccentForeground.html#) – Property that is applied to the foreground color for the current selected numeric page button. By default, it set to White.
+* [NumericButtonStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~NumericButtonStyleProperty.html#) – Property that is applied to the Style of Numeric Button. This is the Style type property. By default, it set to Null.
 
 The following code example explains how to apply the `AccentBackground` and `AccentForeground` properties for the `SfDataPager` control.
 
