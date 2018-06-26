@@ -167,7 +167,7 @@ N>  If the user has made any modifications with XlsIO range in SfSpreadsheet, th
 
 ## Accessing the value of a cell
 
-SfSpreadsheet allows you to access the value of a cell by using [Value](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~Value.html) property of `IRange` and to get the value of the cell along with its format,  [DisplayText](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~DisplayText.html) property can be used.
+SfSpreadsheet allows you to access the value of a cell by using [Value](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~Value.html) property of `IRange` and to get the value of the cell along with its format,  [DisplayText](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.IRange~DisplayText.html) property can be used.
 
 {% tabs %}
 {% highlight c# %}
@@ -216,7 +216,7 @@ spreadsheet.Workbook.Worksheets[0].Range[3, 3].Clear(ExcelClearOptions.ClearData
 {% endhighlight %}
 {% endtabs %}
 
-N> [ExcelClearOptions](http://help.syncfusion.com/cr/cref_files/file-formats/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelClearOptions.html) is an enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
+N> [ExcelClearOptions](http://help.syncfusion.com/cr/cref_files/file-formats/xlsio/Syncfusion.XlsIO.Base~Syncfusion.XlsIO.ExcelClearOptions.html) is an enum which specifies the possible directions to clear the cell formats, content, comments,conditional format,data validation or clear all of them.
 
 ## Refreshing the view
 

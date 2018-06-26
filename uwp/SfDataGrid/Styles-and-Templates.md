@@ -22,7 +22,7 @@ SfDataGrid arrange the cell and row content using cell and row container’s. Be
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img31.png)
 
-[RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding RowGenerator class and set it [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Thus, it is possible to customize the row and cell containers by customizing the RowGeneration which cannot be done with styling and conditional styling customization options.
+[RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.RowGenerator.html) class processes the creation and re-using of containers for SfDataGrid. You create your own containers by overriding RowGenerator class and set it [SfDataGrid.RowGenerator](https://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowGenerator.html). Thus, it is possible to customize the row and cell containers by customizing the RowGeneration which cannot be done with styling and conditional styling customization options.
 
 ### Row containers
 Below table shows the different types of grid rows and its container.
@@ -119,11 +119,11 @@ GridStackedHeaderCellControl
 
 ### Animating the data row when property changes
 
-You can customize the [DataRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DataRow.html) operations by overriding the `DataRow` class. You have to override the [GetData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DataRowBase~GetDataRow.html)Row method in [RowGenerator](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowGenerator.html)  to load the customized `DataRow`.
+You can customize the [DataRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DataRow.html) operations by overriding the `DataRow` class. You have to override the [GetData](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DataRowBase~GetDataRow.html)Row method in [RowGenerator](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowGenerator.html)  to load the customized `DataRow`.
 Similarly, you can able to customize:
-1. [GridUnboundRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html)
-2. [FilterRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRow.html)
-3. [SpannedDataRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SpannedDataRow.html)
+1. [GridUnboundRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html)
+2. [FilterRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.FilterRow.html)
+3. [SpannedDataRow](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SpannedDataRow.html)
 
 The below code example shows how to animate the `DataRow` when the row data is changed.
 
@@ -276,10 +276,10 @@ OrientedCellsPanel
 
 ### Animating the data cell when property changes
 
-You can customize the [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCell.html) behavior by overriding the `GridCell` class. You have to override the [GetGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowGenerator~GetGridCell.html) method in [RowGenerator](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `GridCell`.
+You can customize the [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCell.html) behavior by overriding the `GridCell` class. You have to override the [GetGridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowGenerator~GetGridCell.html) method in [RowGenerator](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowGenerator.html) to load the customized `GridCell`.
 Similarly, you can able to customize:
-1. [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
-2. [GridFilterRowCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
+1. [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html)
+2. [GridFilterRowCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCell.html)
 
 The below code example shows how to animate the cell based on the changes occur in another cell using the `DataContextChanged` and `PropertyChanged` events.
 
@@ -366,7 +366,7 @@ properties exposed.
  
 ## Styling Record cell
 
-The record cells can be customized by writing style of TargetType [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) property and the particular column can be styled by setting [GridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property. Underlying record will be the DataContext for `GridCell`.
+The record cells can be customized by writing style of TargetType [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) property and the particular column can be styled by setting [GridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellStyle.html) property. Underlying record will be the DataContext for `GridCell`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -418,7 +418,7 @@ You can also change the gridline color by setting [GridCell.BorderBrush](https:/
 
 ## Styling Record row
 
-The record rows can be customized by writing style of TargetType [VirtualizingCellsControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.RowStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowStyle.html) property.
+The record rows can be customized by writing style of TargetType [VirtualizingCellsControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.VirtualizingCellsControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.RowStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -439,7 +439,7 @@ The record rows can be customized by writing style of TargetType [VirtualizingCe
 
 ## Alternating Row Style
 
-You can style the alternate rows by setting [SfDataGrid.AlternatingRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AlternatingRowStyle.html) and [SfDataGrid.RowStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowStyle.html) property. `AlternateRowStyle` will be applied based on [SfDataGrid.AlternationCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AlternationCount.html) property.
+You can style the alternate rows by setting [SfDataGrid.AlternatingRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AlternatingRowStyle.html) and [SfDataGrid.RowStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowStyle.html) property. `AlternateRowStyle` will be applied based on [SfDataGrid.AlternationCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AlternationCount.html) property.
  
 {% tabs %}
 {% highlight xaml %}
@@ -466,7 +466,7 @@ You can style the alternate rows by setting [SfDataGrid.AlternatingRowStyle](htt
 
 ## Selection
 
-The foreground and background for the selected row, cell can be customized by setting [SfDataGrid.RowSelectionBrush](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowSelectionBrush.html) and [SfDataGrid.SelectionForegroundBrush](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionForegroundBrush.html) property.
+The foreground and background for the selected row, cell can be customized by setting [SfDataGrid.RowSelectionBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowSelectionBrush.html) and [SfDataGrid.SelectionForegroundBrush](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectionForegroundBrush.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -484,7 +484,7 @@ The foreground and background for the selected row, cell can be customized by se
 
 ### Styling Header cell
 
-The header cell can be customized by writing style of TargetType [GridHeaderCellControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property and the particular column can be styled by setting [GridColumn.HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderStyle.html) property.
+The header cell can be customized by writing style of TargetType [GridHeaderCellControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property and the particular column can be styled by setting [GridColumn.HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderStyle.html) property.
 
 
 N> `GridColumn.HeaderStyle` takes higher priority than `SfDataGrid.HeaderStyle` property.
@@ -511,7 +511,7 @@ N> `GridColumn.HeaderStyle` takes higher priority than `SfDataGrid.HeaderStyle` 
 
 ### Styling DetailsViewDataGrid header
 
-The header style can be applied to [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) alone by setting [HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property to `DetailsViewDataGrid` in both XAML and code behind.
+The header style can be applied to [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) alone by setting [HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderStyle.html) property to `DetailsViewDataGrid` in both XAML and code behind.
 
 {% tabs %}
 {% highlight xaml %}
@@ -559,7 +559,7 @@ private void DataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelat
 
 ### Styling Stacked Headers
 
-The appearance of stacked header can be customized by writing style of TargetType [GridStackedHeaderCellControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html).
+The appearance of stacked header can be customized by writing style of TargetType [GridStackedHeaderCellControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridStackedHeaderCellControl.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -578,7 +578,7 @@ The appearance of stacked header can be customized by writing style of TargetTyp
 
 ### Setting different styles to StackedHeader
 
-You can apply the different style to stacked header by overriding the [default renderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) of StackedHeader.
+You can apply the different style to stacked header by overriding the [default renderer](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellRenderers.html) of StackedHeader.
 
 {% tabs %}
 {% highlight xaml %}
@@ -629,7 +629,7 @@ public class GridStackedHeaderCellRendererExt: GridStackedHeaderCellRenderer
 
 ## Setting Default Style for one column
 
-You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderStyle.html) to `null`. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`).
+You can also skip the cell styling for particular column from other setting like [SfDataGrid.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellStyle.html) by setting [GridColumn.CellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderStyle.html) to `null`. Likewise, you can skip all the style properties in particular column (example: `HeaderStyle`).
  
 {% tabs %}
 {% highlight xaml %}
@@ -663,7 +663,7 @@ this.dataGrid.Columns["CustomerID"].CellStyle = null;
 
 ### Styling CaptionSummary cells
 
-The caption summary cells can be customized by writing style of TargetType [GridCaptionSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCaptionSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyle.html) property.
+The caption summary cells can be customized by writing style of TargetType [GridCaptionSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCaptionSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryCellStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -686,7 +686,7 @@ The caption summary cells can be customized by writing style of TargetType [Grid
 
 ### Styling CaptionSummary rows
 
-The caption summary rows can be customized by writing style of TargetType [GridCaptionSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryRowStyle.html) property.
+The caption summary rows can be customized by writing style of TargetType [GridCaptionSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CaptionSummaryRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.CaptionSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CaptionSummaryRowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -713,7 +713,7 @@ The caption summary rows can be customized by writing style of TargetType [GridC
 
 ### Styling GroupSummary cells
 
-The group summary cells can be customized by writing style of TargetType [GridGroupSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridGroupSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryCellStyle.html) property.
+The group summary cells can be customized by writing style of TargetType [GridGroupSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridGroupSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryCellStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -739,7 +739,7 @@ The group summary cells can be customized by writing style of TargetType [GridGr
 
 ### Styling GroupSummary rows
 
-The group summary rows can be customized by writing style of TargetType [GridGroupSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRowStyle.html) property.
+The group summary rows can be customized by writing style of TargetType [GridGroupSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html). You can set to particular SfDataGrid by setting [SfDataGrid.GroupSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryRowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -763,7 +763,7 @@ The group summary rows can be customized by writing style of TargetType [GridGro
 
 ### Styling TableSummary cells
 
-The table summary cells can be customized by writing style of TargetType [GridTableSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTableSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyle.html) property.
+The table summary cells can be customized by writing style of TargetType [GridTableSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTableSummaryCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryCellStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -787,7 +787,7 @@ The table summary cells can be customized by writing style of TargetType [GridTa
 
 ### Styling TableSummary rows
 
-The table summary rows can be customized by writing style of TargetType [GridTableSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRowStyle.html) property.
+The table summary rows can be customized by writing style of TargetType [GridTableSummaryRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTableSummaryRow.html). You can set to particular SfDataGrid by setting [SfDataGrid.TableSummaryRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryRowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -811,7 +811,7 @@ The table summary rows can be customized by writing style of TargetType [GridTab
 
 ### Styling unbound row cells
 
-The unbound row cells can be customized by writing style of TargetType [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowCellStyle.html) property.
+The unbound row cells can be customized by writing style of TargetType [GridUnBoundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundRowCell.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowCellStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -836,7 +836,7 @@ The unbound row cells can be customized by writing style of TargetType [GridUnBo
 
 ### Styling unbound row 
 
-The unbound rows can be customized by writing style of TargetType [UnBoundRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowStyle.html) property.
+The unbound rows can be customized by writing style of TargetType [UnBoundRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.UnBoundRowControl.html). You can set to particular SfDataGrid by setting [SfDataGrid.UnBoundRowStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -859,7 +859,7 @@ The unbound rows can be customized by writing style of TargetType [UnBoundRowCon
 
 ## Styling AddNewRow
 
-The appearance of AddNewRow can customized by writing style of TargetType [AddNewRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AddNewRowControl.html).
+The appearance of AddNewRow can customized by writing style of TargetType [AddNewRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AddNewRowControl.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -884,7 +884,7 @@ The appearance of AddNewRow can customized by writing style of TargetType [AddNe
 
 ## Styling RowHeader
 
-The appearance of header row can be customized by writing style of TargetType [HeaderRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HeaderRowControl.html).
+The appearance of header row can be customized by writing style of TargetType [HeaderRowControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.HeaderRowControl.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -902,7 +902,7 @@ The appearance of header row can be customized by writing style of TargetType [H
 
 ### Displaying row index in row header cell
 
-The appearance of row header can be customized by writing style of TargetType [RowHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html).
+The appearance of row header can be customized by writing style of TargetType [RowHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridRowHeaderCell.html).
 
 You can also display the row index value in the row header cell by customizing its style.
 
@@ -941,7 +941,7 @@ You can also display the row index value in the row header cell by customizing i
 
 ## Template Selectors
 
-The [DataTemplateSelector](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.datatemplateselector.aspx) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~CellTemplateSelector.html) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplateSelector.html).
+The [DataTemplateSelector](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.datatemplateselector.aspx) can be used to set the custom templates to the cell or rows based on the data. You can set to particular SfDataGrid by setting [SfDataGrid.CellTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~CellTemplateSelector.html) and the template can be set to particular column by setting [GridColumn.CellTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplateSelector.html).
 
 Here, custom template applied to CustomerID column based on OrderID.
 
@@ -1007,7 +1007,7 @@ public class CellTemplateSelector:DataTemplateSelector
 
 ### Changing HeaderTemplates
 
-You can customize the appearance of particular SfDataGrid column header by setting [SfDataGrid.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderTemplate.html) and the particular column header can be customized by setting [GridColumn.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderTemplate.html).
+You can customize the appearance of particular SfDataGrid column header by setting [SfDataGrid.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~HeaderTemplate.html) and the particular column header can be customized by setting [GridColumn.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderTemplate.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -1055,7 +1055,7 @@ You can customize the appearance of particular SfDataGrid column header by setti
 
 ### Loading different editor elements in a same column
 
-The different editor elements can be loaded in a same template column conditionally based on data by setting [GridTemplateColumn.EditTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplateSelector.html).
+The different editor elements can be loaded in a same template column conditionally based on data by setting [GridTemplateColumn.EditTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTemplateColumn~EditTemplateSelector.html).
  
 {% tabs %}
 {% highlight xaml %}
@@ -1122,7 +1122,7 @@ public class EditTemplateSelector:DataTemplateSelector
 
 ## Styling DetailsViewDataGrid
 
-The appearance of `DetailsViewDataGrid` can be customized by writing style of TargetType `DetailsViewDataGrid`. You can set to particular SfDataGrid by setting [SfDataGrid.DetailsViewDataGridStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDataGridStyle.html) property.
+The appearance of `DetailsViewDataGrid` can be customized by writing style of TargetType `DetailsViewDataGrid`. You can set to particular SfDataGrid by setting [SfDataGrid.DetailsViewDataGridStyle](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDataGridStyle.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1151,7 +1151,7 @@ The appearance of `DetailsViewDataGrid` can be customized by writing style of Ta
  
 ## Styling Sort icon
 
-The appearance of sort indicator can be customized by editing the style of [GridHeaderCellControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). Once the `GridHeaderCellControl` style is edited, go to PART_SortButtonPresenter.
+The appearance of sort indicator can be customized by editing the style of [GridHeaderCellControl](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridHeaderCellControl.html). Once the `GridHeaderCellControl` style is edited, go to PART_SortButtonPresenter.
 
 **Default GridHeaderCellControl style**
 
@@ -1431,7 +1431,7 @@ And also, you can change the appearance of Descending sort indicator by customiz
 
 ## Styling GroupDropArea
 
-The appearance of [GroupDropArea](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GroupDropArea.html) can be customized by writing style of TargetType `GroupDropArea`. You can disable the water mark displayed in GroupDropArea by setting [WaterMarkTextVisibility](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GroupDropArea~WatermarkTextVisibility.html) as `Collapsed`.
+The appearance of [GroupDropArea](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GroupDropArea.html) can be customized by writing style of TargetType `GroupDropArea`. You can disable the water mark displayed in GroupDropArea by setting [WaterMarkTextVisibility](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GroupDropArea~WatermarkTextVisibility.html) as `Collapsed`.
 
 {% tabs %}
 {% highlight xaml %}

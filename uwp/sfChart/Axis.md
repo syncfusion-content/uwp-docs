@@ -9,7 +9,7 @@ documentation: ug
 
 # Axis
 
-[`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate a data point inside the chart area. Generally, to locate a data point, you require two axes, along each direction, that is, horizontal and vertical, in a chart. The vertical axis, or y-axis, usually represents numerical values .The horizontal axis, or x-axis, represents categorical or numerical or date and time values. [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) supports the following types.
+[`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate a data point inside the chart area. Generally, to locate a data point, you require two axes, along each direction, that is, horizontal and vertical, in a chart. The vertical axis, or y-axis, usually represents numerical values .The horizontal axis, or x-axis, represents categorical or numerical or date and time values. [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) supports the following types.
 
 * Double                
 
@@ -23,13 +23,13 @@ documentation: ug
 
 * Logarithmic
 
-You can choose any [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) derived types, like [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html), [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html), [`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) or [`TimeSpanAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html) depending on the value type. [`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html) is a special type, used to plot date and time values for the given datapoints. 
+You can choose any [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) derived types, like [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html), [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html), [`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) or [`TimeSpanAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html) depending on the value type. [`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html) is a special type, used to plot date and time values for the given datapoints. 
 
 ## NumericAxis
 
-[`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical value to the chart. You can set [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) for both [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html).
+[`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical value to the chart. You can set [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) for both [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html).
 
-The following APIs are used to customize [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html).
+The following APIs are used to customize [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html).
 
 Properties
 
@@ -142,9 +142,9 @@ chart.Series.Add(series);
 
 ## CategoryAxis
 
-[`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is an index based axis that plots values based on the index of the data point collection. The points are equally spaced here.
+[`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is an index based axis that plots values based on the index of the data point collection. The points are equally spaced here.
 
-The following APIs are used in [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html).
+The following APIs are used in [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html).
 
 CategoryAxis
 
@@ -250,9 +250,9 @@ chart.Series.Add(series);
 
 ## DateTimeAxis
 
-[`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot DateTime values. The DateTimeAxis is widely used to make financial charts in places like the Stock Market, where index plotting is done everyday.
+[`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is used to plot DateTime values. The DateTimeAxis is widely used to make financial charts in places like the Stock Market, where index plotting is done everyday.
 
-The following APIs are used for customizing [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html).
+The following APIs are used for customizing [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html).
 
 DateTimeAxis
 
@@ -301,9 +301,9 @@ Gets or sets the double value that represents the working days of a week.</td></
 
 ### DateTimeIntervalType
 
-The DateTime interval corresponds to the type specified in the [`IntervalType`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property.
+The DateTime interval corresponds to the type specified in the [`IntervalType`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property.
 
-For instance, if the Interval is set as 2 and IntervalType is set as Days, the labels are plotted for every two days. The following are the values for [`IntervalType`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property:
+For instance, if the Interval is set as 2 and IntervalType is set as Days, the labels are plotted for every two days. The following are the values for [`IntervalType`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) property:
 
 * Auto
 * Days
@@ -316,7 +316,7 @@ For instance, if the Interval is set as 2 and IntervalType is set as Days, the l
 
 
 
-The default [`IntervalType`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) of a [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is Auto. It calculates the type automatically and the interval, accordingly.
+The default [`IntervalType`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html#) of a [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is Auto. It calculates the type automatically and the interval, accordingly.
 
 {% tabs %}
 
@@ -429,7 +429,7 @@ chart.Series.Add(series);
 
 ## DateTimeCategoryAxis
 
-[`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html) is a special type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html), thereby removing space for missing dates. Intervals and range for the axis are calculated similar to [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html). There are no visual gaps between points, even when the difference between two points is more than a year.
+[`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html) is a special type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html), thereby removing space for missing dates. Intervals and range for the axis are calculated similar to [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html). There are no visual gaps between points, even when the difference between two points is more than a year.
 
 DateTimeCategoryAxis
 
@@ -535,9 +535,9 @@ chart.Series.Add(series);
 
 ## TimeSpanAxis
 
-[`TimeSpanAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html) is used to plot the time span values in the PrimaryAxis. TimeSpanAxis has the advantage of plotting data with milliseconds difference. The limitation of TimeSpanAxis is that it can only accept timespan values (hh:mm:ss) and datetime values are not accepted.
+[`TimeSpanAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html) is used to plot the time span values in the PrimaryAxis. TimeSpanAxis has the advantage of plotting data with milliseconds difference. The limitation of TimeSpanAxis is that it can only accept timespan values (hh:mm:ss) and datetime values are not accepted.
 
-The following APIs are used in [`TimeSpanAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html).
+The following APIs are used in [`TimeSpanAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html).
 
 TimeSpanAxis
 
@@ -640,9 +640,9 @@ chart.Series.Add(series);
 
 ## LogarithmicAxis
 
-[`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) is used to plot the logarithmic scale for the chart. In order to plot the logarithmic scale, you must specify the base value using [`LogarithmicBase`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~LogarithmicBase.html) Property.
+[`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) is used to plot the logarithmic scale for the chart. In order to plot the logarithmic scale, you must specify the base value using [`LogarithmicBase`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~LogarithmicBase.html) Property.
 
-The following APIs are used to customize the [`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html).
+The following APIs are used to customize the [`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html).
 
 LogarithmicAxis
 
@@ -756,7 +756,7 @@ The following screenshot illustrates the SfChart with LogarithmicAxis.
 
 ## Multiple Axes
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern. 
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern. 
 
 By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. There are two properties XAxis and YAxis in all the series, except Accumulation Series.
 
@@ -880,7 +880,7 @@ The following screenshot illustrates SfChart with multiple axes.
 
 By default, the x-axis is arranged horizontally at the bottom of the chart and the y-axis is arranged vertically on the left-side of the chart. You can change the alignment of the axes by setting OpposedPosition to True. It arranges the x-axis at the top and the y-axis on the right-side of the chart. 
 
-The following is the code example for setting the [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html) property.
+The following is the code example for setting the [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html) property.
 
 {% tabs %}
 
@@ -928,7 +928,7 @@ columnSeries.YAxis = new NumericalAxis()
 
 {% endtabs %}
 
-The following is a screenshot demonstrating y-axis of a chart arranged in [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html).
+The following is a screenshot demonstrating y-axis of a chart arranged in [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html).
 
 ![C:/Users/rachel/Desktop/snaps/7.png](Axis_images/Axis_img8.png)
 
@@ -998,15 +998,15 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Axis range and Interval
 
-[`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) calculates the range and intervals automatically based on the values of series data points. You can also explicitly specify the range and interval using the Minimum, Maximum and Interval properties. 
+[`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) calculates the range and intervals automatically based on the values of series data points. You can also explicitly specify the range and interval using the Minimum, Maximum and Interval properties. 
 
-T> You cannot specify range for [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) instead you can use [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ZoomFactor.html) and [`ZoomPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ZoomPosition.html).
+T> You cannot specify range for [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) instead you can use [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ZoomFactor.html) and [`ZoomPosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ZoomPosition.html).
 
 
 
- You can force the [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) to start range from zero by enabling [`StartRangeFromZero`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~StartRangeFromZero.html). The following is the code example for setting the ChartAxis properties.
+ You can force the [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) to start range from zero by enabling [`StartRangeFromZero`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~StartRangeFromZero.html). The following is the code example for setting the ChartAxis properties.
 
- The following is the code sample for setting the [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) properties:
+ The following is the code sample for setting the [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) properties:
 
  {% tabs %}
 
@@ -1049,48 +1049,48 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### Range Padding
 
-The [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) and [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) have a [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) property that can be used to add padding to the range of a chart's axes.
+The [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) and [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) have a [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) property that can be used to add padding to the range of a chart's axes.
 
 ### NumericalAxis RangePadding
 
-The following types are available for [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html): 
+The following types are available for [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html): 
 
 * Additional
 * None
 * Normal
 * Round
 
-By default, the default [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html) is [`Auto`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html) and for [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html), the default value is [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+By default, the default [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html) is [`Auto`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html) and for [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html), the default value is [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
 ![](Axis_images/Axis_img10.png)
 
 
 
-The following screenshot demonstrates [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) as [`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html), where no padding is applied for the axis.
+The following screenshot demonstrates [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) as [`None`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html), where no padding is applied for the axis.
 
 ![](Axis_images/Axis_img11.png)
 
 
 
-[`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html) [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) for a [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used mostly for the y-axis to have padding based on the Range calculation.
+[`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html) [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) for a [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used mostly for the y-axis to have padding based on the Range calculation.
 
-The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
 ![](Axis_images/Axis_img12.png)
 
 
 
-Round [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) for a [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) rounds the range of the chart axis to the nearest possible value.
+Round [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) for a [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) rounds the range of the chart axis to the nearest possible value.
 
-The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
 ![](Axis_images/Axis_img13.png)
 
 
 
-If [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) for [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html), the interval of the axis is added as padding.
+If [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) for [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html), the interval of the axis is added as padding.
 
-The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
 ![](Axis_images/Axis_img14.png)
 
@@ -1098,27 +1098,27 @@ The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](h
 
 ### DateTimeAxis RangePadding
 
-The [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) types available in the [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) are: 
+The [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) types available in the [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) are: 
 
 * Additional
 * None
 * Round
 
-By default, the [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for a [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is [`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
+By default, the [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for a [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is [`None`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html).
 
-The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) set to [`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html). 
+The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) set to [`None`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html). 
 
 ![](Axis_images/Axis_img15.png)
 
 
 
-When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the DateTime interval of the axis is added as padding, as shown in the following screenshot.
+When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
 ![](Axis_images/Axis_img16.png)
 
 
 
-When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
+When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
 
 ![](Axis_images/Axis_img17.png)
 
@@ -1128,14 +1128,14 @@ When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.S
 
 ### Label Placement
 
-The [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) includes the [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html) property, used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html) value for the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is [`OnTicks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelPlacement.html).
+The [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) includes the [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html) property, used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html) value for the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is [`OnTicks`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelPlacement.html).
 
-There are two types of [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html):
+There are two types of [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html):
 
 * BetweenTicks
 * OnTicks
 
-The following code example and screenshot shows [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html) set to [`OnTicks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelPlacement.html).
+The following code example and screenshot shows [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html) set to [`OnTicks`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelPlacement.html).
 
 {% tabs %}
 
@@ -1170,7 +1170,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 
 
-The following code example and screenshot shows [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html) set to [`BetweenTicks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelPlacement.html).
+The following code example and screenshot shows [`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html) set to [`BetweenTicks`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelPlacement.html).
 
 {% tabs %}
 
@@ -1209,9 +1209,9 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### Label Position 
 
-The [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsPosition.html) property is used to position the axis label either inside or outside the chart plotting area.
+The [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsPosition.html) property is used to position the axis label either inside or outside the chart plotting area.
 
-The following code example and screenshot illustrate the use of [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsPosition.html).
+The following code example and screenshot illustrate the use of [`LabelsPosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsPosition.html).
 
 {% tabs %}
 
@@ -1280,9 +1280,9 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### Positioning Edge Labels
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the edge labels of the axis to adjust its position using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) property. 
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the edge labels of the axis to adjust its position using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) property. 
 
-The following are the customizing options in [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html).
+The following are the customizing options in [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html).
 
 * Center- Positions the label with tickline as center.
 * Fit- Position the gridline inside based on the edge label size.
@@ -1291,7 +1291,7 @@ The following are the customizing options in [`EdgeLabelsDrawingMode`](https://h
 
 
 
-The following code example and screenshot show [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) set to [`Center`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
+The following code example and screenshot show [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) set to [`Center`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
 
 {% tabs %}
 
@@ -1326,7 +1326,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 
 
-The following code example and screenshot shows [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) set to [`Fit`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
+The following code example and screenshot shows [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) set to [`Fit`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
 
 {% tabs %}
 
@@ -1361,7 +1361,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 
 
-The following code example and screenshot shows [`EdgeLabelDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) set to [`Hide`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
+The following code example and screenshot shows [`EdgeLabelDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) set to [`Hide`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
 
 {% tabs %}
 
@@ -1396,7 +1396,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 
 
-The following code example and screenshot shows [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) set to [`Shift`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
+The following code example and screenshot shows [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~EdgeLabelsDrawingMode.html) set to [`Shift`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.html).
 
 {% tabs %}
 
@@ -1433,7 +1433,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ## Smart Labels
 
-When a number of axis labels exist, they may overlap with each other. [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides features to handle the overlapping labels using the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html) property.
+When a number of axis labels exist, they may overlap with each other. [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides features to handle the overlapping labels using the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html) property.
 
 The following are the options for intersecting action.
 
@@ -1443,7 +1443,7 @@ The following are the options for intersecting action.
 
 
 
-The following code example and screenshot shows [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html) set to [`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
+The following code example and screenshot shows [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html) set to [`None`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
 
 {% tabs %}
 
@@ -1478,7 +1478,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 
 
-The following code example and screenshot shows [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html) set to [`Hide`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
+The following code example and screenshot shows [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html) set to [`Hide`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
 
 {% tabs %}
 
@@ -1513,7 +1513,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 
 
-The following code example and screenshot show [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html) set to [`MultipleRows`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
+The following code example and screenshot show [`LabelsIntersectAction`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsIntersectAction.html) set to [`MultipleRows`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.html).
 
 {% tabs %}
 
@@ -1552,9 +1552,9 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ## Add units to labels
 
-You can customize the axis label to display its measuring units by adding a prefix or a suffix. This feature can be achieved using the [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PrefixLabelTemplate.html) and [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PostfixLabelTemplate.html) properties.
+You can customize the axis label to display its measuring units by adding a prefix or a suffix. This feature can be achieved using the [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PrefixLabelTemplate.html) and [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PostfixLabelTemplate.html) properties.
 
-The following code example and screenshot demonstrate the usage of [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PrefixLabelTemplate.html).
+The following code example and screenshot demonstrate the usage of [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PrefixLabelTemplate.html).
 
 {% tabs %}
 
@@ -1597,7 +1597,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 
 
-The following code example and screenshot demonstrate the usage of [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PostfixLabelTemplate.html).
+The following code example and screenshot demonstrate the usage of [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PostfixLabelTemplate.html).
 
 {% tabs %}
 
@@ -1642,7 +1642,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Formatting axis labels
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides the [`LabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelFormat.html) property for defining the custom formatting for the axis labels. This property supports all standard formatting type of numerical and date time values.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides the [`LabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelFormat.html) property for defining the custom formatting for the axis labels. This property supports all standard formatting type of numerical and date time values.
 
 {% tabs %}
 
@@ -1698,9 +1698,9 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Styling Header and Labels
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the axis header and label. The following APIs are used to customize the header and label.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the axis header and label. The following APIs are used to customize the header and label.
 
-[`HeaderStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderStyle.html) and [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelStyle.html)
+[`HeaderStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderStyle.html) and [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelStyle.html)
 
 <table>
 <tr>
@@ -1807,7 +1807,7 @@ chart.Series.Add(series);
 
 **Axis Label Border**
 
-[`ChartAxis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ShowLabelBorder.html) property of axis and it can be set as shown in the below code snippet,
+[`ChartAxis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ShowLabelBorder.html) property of axis and it can be set as shown in the below code snippet,
 
 {% tabs %}
 
@@ -1847,7 +1847,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![](Axis_images/label1.png)
 
-The border color and width can be customized with [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrush.html) and [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidth.html) properties of chart axis and it can be set as shown in the below code snippet,
+The border color and width can be customized with [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrush.html) and [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidth.html) properties of chart axis and it can be set as shown in the below code snippet,
 
 {% tabs %}
 
@@ -1902,9 +1902,9 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### GridLines
 
-By default, gridlines are automatically added to the [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) supports customization of gridline. You can control the visibility of the gridlines using the [`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowGridLines.html) property. 
+By default, gridlines are automatically added to the [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) in its defined intervals. [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) supports customization of gridline. You can control the visibility of the gridlines using the [`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowGridLines.html) property. 
 
-The following code example and screenshot show [`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowGridLines.html) set to False.
+The following code example and screenshot show [`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowGridLines.html) set to False.
 
 {% tabs %}
 
@@ -1943,7 +1943,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line.
 
-The following code example and screenshot illustrate major and small ticklines set to [`Inside`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisElementPosition.html).
+The following code example and screenshot illustrate major and small ticklines set to [`Inside`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisElementPosition.html).
 
 {% tabs %}
 
@@ -1986,7 +1986,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 
 
-You can customize the appearance of major gridline, minor gridlines and ticklines using the [`MajorTickLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~MajorTickLineStyle.html), [`MinorTickLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~MinorTickLineStyle.html), [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~MinorGridLineStyle.html) properties. Also axis lines can be customized using [`AxisLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineStyle.html) as follows.
+You can customize the appearance of major gridline, minor gridlines and ticklines using the [`MajorTickLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~MajorTickLineStyle.html), [`MinorTickLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~MinorTickLineStyle.html), [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~MajorGridLineStyle.html) and [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~MinorGridLineStyle.html) properties. Also axis lines can be customized using [`AxisLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineStyle.html) as follows.
 
 {% tabs %}
 
@@ -2163,7 +2163,7 @@ chart.Series.Add(series);
 
 ## Multi-level Labels
 
-[`Axis`](https://help.syncfusion.com/uwp/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabels.html) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~End.html) range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
+[`Axis`](https://help.syncfusion.com/uwp/sfchart/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabels.html) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~End.html) range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
 
 {% tabs %}
 
@@ -2216,7 +2216,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Regarding** **Start** **and** **End** **Property**
 
-[`Start`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~End.html) properties of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) are type of objects, we can provide the start and end values for a multi-level label based on its Axis type. It is described  in the following table,
+[`Start`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~Start.html) and [`End`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~End.html) properties of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) are type of objects, we can provide the start and end values for a multi-level label based on its Axis type. It is described  in the following table,
 
 <table>
 <tr>
@@ -2268,7 +2268,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Border** **Customization**
 
-[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) border width and color can be customized with [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidth.html) and [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrush.html) properties of chart axis.It can be set as shown in the below code snippet,
+[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) border width and color can be customized with [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidth.html) and [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrush.html) properties of chart axis.It can be set as shown in the below code snippet,
 
 {% tabs %}
 
@@ -2328,7 +2328,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Border** **Type**
 
-[`ChartAxis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) and it can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsBorderType.html) property.The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsBorderType.html) is [`Rectangle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BorderType.html). The another supported border types are [`Brace`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BorderType.html),[`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BorderType.html) and [`WithoutTopAndBottomBorder`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BorderType.html).
+[`ChartAxis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) and it can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsBorderType.html) property.The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~MultiLevelLabelsBorderType.html) is [`Rectangle`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BorderType.html). The another supported border types are [`Brace`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BorderType.html),[`None`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BorderType.html) and [`WithoutTopAndBottomBorder`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BorderType.html).
 
 **Rectangle**
 
@@ -2988,7 +2988,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 **Text** **Customization**
 
-[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSize.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamily.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) property and it is shown in below code snippet,
+[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSize.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamily.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) property and it is shown in below code snippet,
 
 {% tabs %}
 
@@ -3047,7 +3047,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 **Label** **Alignment**
 
-The text of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) can be aligned with its [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~LabelAlignment.html) property. The default value of [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~LabelAlignment.html) property is [`Center`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelAlignment.html).
+The text of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) can be aligned with its [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~LabelAlignment.html) property. The default value of [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~LabelAlignment.html) property is [`Center`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelAlignment.html).
 
 **Center**
 
@@ -3556,7 +3556,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 ![](Axis_images/label11.png)
 
-The text of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text will automatically trim, when the text width exceeds the width of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) and it is shown below,
+The text of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text will automatically trim, when the text width exceeds the width of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) and it is shown below,
 
 {% tabs %}
 
@@ -3638,9 +3638,9 @@ ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
 
 ## Events
 
-* [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html)   - Occurs at the when the range is changed in the axis.
-* [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html)- Occurs when labels is created.
-* [`AxisBoundChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html)- Occurs when the bounds of the axis changed.
-* [`LabelClicked`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels are clicked. Supports for 2D axis.
+* [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html)   - Occurs at the when the range is changed in the axis.
+* [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html)- Occurs when labels is created.
+* [`AxisBoundChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html)- Occurs when the bounds of the axis changed.
+* [`LabelClicked`](http://help.syncfusion.com/cr/cref_files/wpf/sfchart/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels are clicked. Supports for 2D axis.
 
 
