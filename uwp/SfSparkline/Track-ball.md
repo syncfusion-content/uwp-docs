@@ -10,9 +10,9 @@ documentation: ug
 
 This is used to indicate the value point on mouse move and this feature is applicable for line and area sparkline.
 
-* [`ShowTrackBall`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~ShowTrackBall.html) – Gets or sets the bool value whether showing track ball.
-* [`TrackBallStyle`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~TrackBallStyle.html) – Gets or sets the style for track ball.
-* [`LineStyle`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~LineStyle.html) – Gets or sets the style for trackball line.
+* [`ShowTrackBall`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~ShowTrackBall.html) – Gets or sets the bool value whether showing track ball.
+* [`TrackBallStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~TrackBallStyle.html) – Gets or sets the style for track ball.
+* [`LineStyle`](http://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~LineStyle.html) – Gets or sets the style for trackball line.
 
 **Show TrackBall**
 

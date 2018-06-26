@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Value Mode
 
-The `SfMaskedEdit` allows character formatting in the `Value` property in a mask scenario (when the Mask property is set). By default, the `Value` property holds input characters, prompt characters, and literals defined in the mask. You can allow the `Value` property to hold the characters without prompt and literals by setting the `ValueMaskFormat` property of the control. `Value` in the `SfMaskedEdit` is formatted by any one of the following formatting enum value:
+`SfMaskedEdit` allows you to format the characters in the `Value` property in a mask scenario (when the Mask property is set). By default, the `Value` property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the `ValueMaskFormat` property of the control. The `Value` in the `SfMaskedEdit` is formatted by any one of the following formatting enum values:
 
 * ExcludePromptAndLiterals
 * IncludePrompt
@@ -18,6 +18,8 @@ The `SfMaskedEdit` allows character formatting in the `Value` property in a mask
 ## ExcludePromptAndLiterals
     
 The `Value` property returns only the text entered by the user. It does not include prompt and literals characters.
+
+### Example
 
 {% tabs %}
 
@@ -54,17 +56,19 @@ label.Content = maskededit.Value;
 
 {% endtabs %}
 
-Before entering input: It excludes prompt and literals.
+Before Entering the input:  It excludes prompt and literals
 
 ![](Value_Mode_Images/Value_Mode_Img1.jpg)
 
-After entering input:
+After entering the input:
 
 ![](Value_Mode_Images/Value_Mode_Img2.jpg)
 
 ## IncludePrompt
     
-The `Value` property returns the text entered by the user as well as prompt character.
+The `Value` property returns text entered by the user as well as the prompt character.
+
+### Example
 
 {% tabs %}
 
@@ -101,7 +105,7 @@ label.Content = maskededit.Value;
 
 {% endtabs %}
 
-Before entering input: It excludes literals.
+Before Entering the input:  It excludes literals
 
 ![](Value_Mode_Images/Value_Mode_Img3.jpg)
 
@@ -109,9 +113,11 @@ After entering the input:
 
 ![](Value_Mode_Images/Value_Mode_Img4.jpg)
 
-## Include literals
+## Include Literals
    
-The `Value` property returns the text entered by the user as well as any literal character defined in the mask.
+The `Value` property returns text entered by the user as well as any literal characters defined in the mask.
+
+### Example
 
 {% tabs %}
 
@@ -148,7 +154,7 @@ label.Content = maskededit.Value;
 
 {% endtabs %}
 
-Before entering input: It excludes prompt.
+Before Entering the input:  It excludes prompt 
 
 ![](Value_Mode_Images/Value_Mode_Img5.jpg)
 
@@ -158,7 +164,9 @@ After entering the input:
 
 ## IncludePromptAndLiterals
     
-The `Value` property returns text entered by the user as well as any literal character defined in the mask and the prompt character.
+The `Value` property returns text entered by the user as well as any literal characters defined in the mask and the prompt character
+
+### Example
 
 {% tabs %}
 
@@ -195,10 +203,10 @@ label.Content = maskededit.Value;
 
 {% endtabs %}
 
-Before entering input: It excludes prompt and literals.
+Before Entering the input:  It excludes prompt and literals
 
 ![](Value_Mode_Images/Value_Mode_Img7.jpg)
 
-After entering input:
+After entering the input:
 
 ![](Value_Mode_Images/Value_Mode_Img8.jpg)

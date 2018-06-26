@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Virtualization
 
-SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
+SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~View.html) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
 <table>
 <tr>
@@ -66,7 +66,7 @@ Use to load data in on-demand. You can load data only for current page from serv
 
 ## VirtualizingCollectionView
  
-You can load the large amount of data in less time using [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html).
+You can load the large amount of data in less time using [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html).
  
 In the below code, ViewModel defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
 
@@ -99,15 +99,15 @@ public class ViewModel
 
 ### Limitations
  
-1. Data update using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
+1. Data update using [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) is not supported.
 
 2. Details view is not supported.
 
-3. [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
+3. [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowFrozenGroupHeaders.html) is not supported.
 
 ## Creating Custom VirtualizingCollectionView
 
-SfDataGrid supports to override [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) and retrieve the data in on-demand by inheriting `GridVirtualizingCollectionView` class. The `GridVirtualizingCollectionView` class provides set of virtual methods to load data and handle the operations like sorting, filtering, and grouping. 
+SfDataGrid supports to override [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) and retrieve the data in on-demand by inheriting `GridVirtualizingCollectionView` class. The `GridVirtualizingCollectionView` class provides set of virtual methods to load data and handle the operations like sorting, filtering, and grouping. 
 
 You can load the data in on-demand by overriding below methods in `GridVirtualizingCollectionView`.
 
@@ -122,7 +122,7 @@ Description
 </tr>
 <tr>
 <td>
-[GetInternalSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.CollectionViewAdv~GetInternalSource.html)
+[GetInternalSource](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.CollectionViewAdv~GetInternalSource.html)
 </td>
 <td>
 Returns the source.
@@ -130,7 +130,7 @@ Returns the source.
 </tr>
 <tr>
 <td>
-[GetItemAt](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.CollectionViewAdv~GetItemAt.html)
+[GetItemAt](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.CollectionViewAdv~GetItemAt.html)
 </td>
 <td>
 Returns the data object by specified index from the collection. If the collection is filtered then returns from filtered source.
@@ -138,7 +138,7 @@ Returns the data object by specified index from the collection. If the collectio
 </tr>
 <tr>
 <td>
-[GetIndexOf](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~GetIndexOf.html)
+[GetIndexOf](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~GetIndexOf.html)
 </td>
 <td>
 Returns the index by specified data object from the collection. If the collection is filtered then returns from filtered source.
@@ -146,7 +146,7 @@ Returns the index by specified data object from the collection. If the collectio
 </tr>
 <tr>
 <td>
-[GetViewRecordCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~GetViewRecordCount.html)
+[GetViewRecordCount](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~GetViewRecordCount.html)
 </td>
 <td>
 Returns the data object count from collection. If the collection is filtered then returns using filtered source count.
@@ -253,7 +253,7 @@ Description
 </tr>
 <tr>
 <td>
-[GetSourceListForFilteringItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~GetSourceList.html)
+[GetSourceListForFilteringItems](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~GetSourceList.html)
 </td>
 <td>
 Returns the whole source to apply filter. Used to populate the items for ExcelLikeFilter pop-up.
@@ -261,7 +261,7 @@ Returns the whole source to apply filter. Used to populate the items for ExcelLi
 </tr>
 <tr>
 <td>
-[ApplyFilter](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~ApplyFilter.html)
+[ApplyFilter](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~ApplyFilter.html)
 </td>
 <td>
 Apply filter on source collection based on filter predicates.
@@ -269,7 +269,7 @@ Apply filter on source collection based on filter predicates.
 </tr>
 <tr>
 <td>
-[ProcessSort](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~ProcessSort.html)
+[ProcessSort](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~ProcessSort.html)
 </td>
 <td>
 Apply sorting on the source collection based on the sort descriptions. 
@@ -277,7 +277,7 @@ Apply sorting on the source collection based on the sort descriptions.
 </tr>
 <tr>
 <td>
-[GetGroupedSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~GetGroupedSource.html)
+[GetGroupedSource](https://help.syncfusion.com/cr/cref_files/uwp/data/Syncfusion.Data.UWP~Syncfusion.Data.VirtualizingCollectionView~GetGroupedSource.html)
 </td>
 <td>
 Apply grouping on source collection based on group descriptions and returns the grouped source.
@@ -428,10 +428,10 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
  
 SfDataGrid supports to load the data incrementally using `ISupportIncrementalLoading` interface.
 
-`ISupportIncrementalLoading` interface has `LoadMoreItemsAsync` method which helps to load the data incrementally. [LoadMoreItemsAsync](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html) called in on-demand while scrolling based on [HasMoreItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IncrementalList%601~HasMoreItems.html) property.
+`ISupportIncrementalLoading` interface has `LoadMoreItemsAsync` method which helps to load the data incrementally. [LoadMoreItemsAsync](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html) called in on-demand while scrolling based on [HasMoreItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IncrementalList%601~HasMoreItems.html) property.
 If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  
 
-SfDataGrid have [IncrementalList](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IncrementalList%601.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
+SfDataGrid have [IncrementalList](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IncrementalList%601.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
 
 In the below code, `IncrementalList` is initialized by passing Action to its constructor for loading items incrementally.
 
@@ -480,7 +480,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ### Displaying animation when fetching data from services
 
-You can display animations when fetching data from service for [LoadMoreItemsAsync](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html) method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx).
+You can display animations when fetching data from service for [LoadMoreItemsAsync](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IncrementalList%601~LoadMoreItemsAsync.html) method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx).
  
 In the below code snippet data fetched from service using `BackgroundWorker` and `SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
 

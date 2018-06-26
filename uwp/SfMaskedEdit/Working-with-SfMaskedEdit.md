@@ -7,15 +7,15 @@ control: SfMaskedEdit
 documentation: ug
 ---
 
-#  Working with SfMaskedEdit
+#  Working With SfMaskedEdit
 
-This section explains accessing `SfMaskedEdit` properties and events associated with it.
+This section explains about accessing `SfMaskedEdit` properties and events associated with it.
 
-## Masking the input
+## Masking the Input
 
-The Mask property may contain literals and special mask characters. You can use back-slash character to display any special mask character as literal. Mask can be set based on the MaskType elements.
+The Mask property may contain literals and special mask characters. You can use the back-slash character to escape any special mask characters so that they are displayed as literals. Mask can be set based on MaskType elements
 
-For Masking the input set MaskType and Mask properties as follows.
+For Masking the input set MaskType and Mask property as follows:
 
 <table>
 <tr>
@@ -40,15 +40,15 @@ RegEx</td><td>
 [A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}</td></tr>
 </table>
 
-### Simple mask
+### Simple Mask
 
-If the MaskType is set as Simple, the mask can be created by using the simple mask elements.
+If MaskType set as Simple, Mask can be created using Simple Mask Elements
 
-For example, Date
+Example: Date
 
 Mask = "00/00/0000";
 
-In the previous example, you can create Mask for Date  ("dd/mm/yyyy") format. It will accept only digits. So that element '0' and literal '/' can be used.
+In the above example, we can create Mask for Date  ("dd/mm/yyyy") format. It will accept only digits. So that element '0' is used and the literal '/' is used.
 
 {% tabs %}
 
@@ -71,15 +71,16 @@ maskedEdit.Mask="00/00/0000";
 
 ![](MaskOptions_images/mask_option_image2.jpg)
 
-### Regular mask
+### Regular Mask
 
-If the MaskType is set as Regular, the mask can be created by using the regular mask elements.
+If MaskType set as Regular, Mask can be created using Regular Mask Elements
 
-For example, phone Number
+Example: Phone Number
 
 Mask = "(d{3})-\d{3}-\d{4}"
 
-In the previous example, you can create a mask for Phone Number("(123)-456-7890"). It will accept only digits. So that element 'd' is used. Mobile Number has fixed size. So that element '{}' and literal '()' and '-' can be used.
+In the above example, we can create a mask for Phone Number("(123)-456-7890"). It will accept only digits. So that element 'd' is used. Mobile Number has fixed size. So that element '{}' is used and the literal '()' and '-' is used.
+
 
 {% tabs %}
 
@@ -103,15 +104,15 @@ maskedEdit.Mask = "(\d{0,3})\d{3}-\d{2}-\d{2}";
 
 ![](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img2.jpg)
 
-### RegEx mask
+### RegEx Mask
 
-If the MaskType is set as RegEx, the mask can be created by using the RegEx mask elements.
+If MaskType set as RegEx, Mask can be created using RegEx Mask Elements
 
-For example, Email ID
+Example : Email ID
 
 Mask ="[A-Za-z0-9._%-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}"
 
-In the previous example, you can create a mask for Mail ID. It will accept both alphabets and digits. So that element `A-Z a-z 0-9` is used. For accepting any number of characters, element '[ ]' and literal '@' and '.' can be used.
+In the above example, we can create a mask for Mail ID. It will accept both alphabets and digits. So that element `A-Z a-z 0-9` is used. For accepting any number of characters  element '[ ]' is used and the literal '@' and '.' is used.
 
 {% tabs %}
 
@@ -134,13 +135,13 @@ maskedEdit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
 
 ![](MaskOptions_images/mask_option_image9.jpg)
 
-## Binding value
+## Binding Value
 
-The `SfMaskedEdit` control displays the value that can be set by using the `Value` property.
+The `SfMaskedEdit` control displays the value that can be set using the `Value` property:
 
-### Set the value property directly
+### Set the Value property directly
 
-The following example shows how to set the `Value` directly in `SfMaskedEdit`.
+The following example shows how to set the `Value` directly in `SfMaskedEdit`
 
 {% tabs %}
 
@@ -164,7 +165,8 @@ maskedEdit.Value = "14/11/2014";
 
 ### Set the value property through binding
 
-The following example sets the Value property in ComboBox items to bind the `Value` property of the control.
+The following example shows Set the value property in ComboBox items to bind the `Value` property of the control
+
 
 {% tabs %}
 
@@ -178,10 +180,12 @@ The following example sets the Value property in ComboBox items to bind the `Val
 
 ## ValueChanged event
 
-Occurs when the value of `Value` property is changed by either entering the valid input character or setting the value to the `Value` property through XAML or C# code. The event arguments are of type `ValueChangedEventArgs` and exposes the following ways:
+Occurs when the value of the `Value` property is changed by either entering the valid input character or setting the value to the `Value` property through XAML or C# code. The event arguments are of type `ValueChangedEventArgs` and expose the following property:
 
-* Your valid input character is updated to the `Value` property based on the `ValidationMode` property.
-* Refer to this [link](validation.html#validation-mode) to know more about the `ValidationMode` property of the `SfMaskedEdit` control.
+> Your valid input character is updated to `Value` property based on the `ValidationMode` property.
+> Refer to this [link](validation.html#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
+
+### Example
 
 {% tabs %}
 
@@ -207,7 +211,9 @@ private void SfMaskedEdit_ValueChanged(object sender, EventArgs e)
 
 ## Watermark
 
-Watermark will prompt you with instructions or important information when it is not on focus and any valid character is not entered. The `Watermark` property of `SfMaskedEdit` is used to set watermark text for the control.
+The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The `Watermark` property of `SfMaskedEdit` is used to set the watermark text for the control.
+
+### Example
 
 {% tabs %}
 
@@ -229,3 +235,6 @@ maskedEdit.Watermark = "Type here";
 {% endtabs %}
 
 ![](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img4.jpg)
+
+
+

@@ -50,7 +50,7 @@ The following steps explain how to create 3D charts.
    
 
 
-5. Next, declare the [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D~SecondaryAxis.html):
+5. Next, declare the [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D~SecondaryAxis.html):
 
 {% highlight xaml %}
 
@@ -160,7 +160,7 @@ public class UsersViewModel
 
 ### Binding Data to ChartSeries
 
-Add the above UsersViewModel to the DataContext of the chart, bind the data source to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ItemsSource.html) property of the 3D column series, and then map the data using [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XyDataSeries3D~YBindingPath.html) properties.
+Add the above UsersViewModel to the DataContext of the chart, bind the data source to the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ItemsSource.html) property of the 3D column series, and then map the data using [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html) and [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XyDataSeries3D~YBindingPath.html) properties.
 
 {% highlight xml %}
 
@@ -452,7 +452,7 @@ The following image illustrates the result of the above code sample:
 
 ### Dynamic rotation
 
-3D charts allow us to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the [`EnableRotation`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D~EnableRotation.html) property to true.
+3D charts allow us to view the best possible view of data dynamically using a mouse or touch device. To enable dynamic rotation, set the [`EnableRotation`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D~EnableRotation.html) property to true.
 
 The following code example illustrates how to enable the dynamic rotation:
 
@@ -463,7 +463,7 @@ The following code example illustrates how to enable the dynamic rotation:
 
 ### SegmentSelection
 
-To enable segment selection in a 3D chart, set the [`SegmentSelectionBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries3D~SegmentSelectionBrush.html) property in chart series.
+To enable segment selection in a 3D chart, set the [`SegmentSelectionBrush`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries3D~SegmentSelectionBrush.html) property in chart series.
 
 The following code example illustrates how to set the selection brush for individual series. For data refer to the Series category in 3D charts.
 
@@ -535,9 +535,9 @@ The following screenshot illustrates the result of the above code example.
 
 ### SeriesSelection
 
-Series selection support is used to highlight the series programmatically or by user interaction. Also you can get a [`SeriesSelectedIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesSelectedIndex.html), [`PreviousSelectedIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs~PreviousSelectedIndex.html) value in [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanged_EV.html) event arguments. 
+Series selection support is used to highlight the series programmatically or by user interaction. Also you can get a [`SeriesSelectedIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SeriesSelectedIndex.html), [`PreviousSelectedIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs~PreviousSelectedIndex.html) value in [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanged_EV.html) event arguments. 
 
-The following code example can be used to set series selection in a [`SfChart3D`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D.html).
+The following code example can be used to set series selection in a [`SfChart3D`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D.html).
 
 {% highlight xml %}
 
@@ -591,7 +591,7 @@ The following code example can be used to set series selection in a [`SfChart3D`
 
 </chart:SfChart3D >
 {% endhighlight %}
-The following screenshot is an example of a [`SfChart3D`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D.html) with series selection.
+The following screenshot is an example of a [`SfChart3D`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D.html) with series selection.
 
 ![](3D-Charts_images/3D-Charts_img4.png)
 
@@ -599,7 +599,7 @@ The following screenshot is an example of a [`SfChart3D`](https://help.syncfusi
 
 ### Dynamic explode
 
-This feature allows users to explode a particular segment in a circular series. This can also be achieved by setting the [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeIndex.html) property. 
+This feature allows users to explode a particular segment in a circular series. This can also be achieved by setting the [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeIndex.html) property. 
 
 The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
 

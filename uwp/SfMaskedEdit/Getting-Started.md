@@ -9,23 +9,25 @@ documentation: ug
 
 # Getting Started
 
-## Assembly deployment
+## Assembly Deployment
 
-Namespace: Syncfusion.UI.Xaml.Controls.Input
+Namespace : Syncfusion.UI.Xaml.Controls.Input
 
 Assembly: Syncfusion.SfInput.UWP
 
 Dependent assembly: Syncfusion.SfShared.UWP
 
-## Adding control via designer
+## Adding control via Designer
 
-Create a new WPF application in the Visual Studio to generate SfMaskedEdit by dragging the `SfMaskedEdit` control from toolbox to the designer.
+Create a new WPF application in the Visual Studio and follow the steps given.
+
+1. Drag and drop the `SfMaskedEdit` control from the toolbox to the designer. It generates the `SfMaskedEdit` as shown:
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 ## Adding control manually in XAML
 
-The following code example shows how to create `SfMaskedEdit` from XAML.
+The following code example shows how to create the `SfMaskedEdit` from XAML.
 
 {% tabs %}
 
@@ -40,7 +42,7 @@ The following code example shows how to create `SfMaskedEdit` from XAML.
 
 ## Adding control manually in C Sharp
 
-To create a MaskedEdit control, follow the code.
+To create a MaskedEdit control, use the following code.
 
 {% tabs %}
 
@@ -55,13 +57,13 @@ this.Content = maskededit;
 
 ![](Getting-Started_images/Getting-Started_img2.jpg)
 
-## Adding mask to the control
+## Adding Mask to the control
 
-To mask the input of SfMaskedEdit, set the `MaskType` and `Mask` properties.
+To mask the input of SfMaskedEdit,  we must set `MaskType` and `Mask` property.
 
-The `MaskType` property has different sets of mask characters combined to form a mask expression. Based on the complexity and usage, mask types are classified as Simple, Regular, and RegEx.
+`MaskType` has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as Simple, Regular and RegEx.
 
-The `Mask` property specifies the input without writing any custom validation logic in your application. Mask can be set based on the `MaskType` elements. The `Mask` property may contain literals and special mask characters. You can use back-slash character to display any special mask character as literal.
+Using the `Mask` property, you can specify input without writing any custom validation logic in your application. Mask can be set based on `MaskType` elements. The `Mask` property may contain literals and special mask characters. You can use the back-slash character to escape any special mask characters so that they are displayed as literals.
 
 {% tabs %}
 
@@ -80,13 +82,14 @@ maskedEdit.Mask="00/00/0000";
 
 {% endtabs %}
 
+
 This mask expression allows only numeric inputs in the places of 0.
 
-## Assigning value to the control
+## Assigning Value to the control
 
-By default, value holds the characters without including the prompt characters and the literals defined in the mask. To include the literal and prompt characters, use the ValueMaskFormat property of the control.
+By default, the Value holds the characters without including the prompt characters and the literals defined in the mask. You can alter this and allow the value to hold also literal and prompt characters by setting the ValueMaskFormat property of the control.
 
-To set value for the control, the `Value` property can be used.
+To set the value for the control, `Value` property can be used as follows:
 
 {% tabs %}
 
@@ -107,11 +110,11 @@ maskedEdit.Value="14/11/2014";
 
 {% endtabs %}
 
-## Defining watermark
+## Defining Watermark
 
-`Watermark` guides to the end user on what should be entered in the text input. It can be displayed when the content of SfMaskedEdit is empty and the control is not focused.
+`Watermark`  allows you to give guidance to the end user on what should be enter in the text input. It can be displayed when the content of SfMaskedEdit is empty and the control is not focused.
 
-To set watermark for the control, the `WaterMark` property can be used.
+To set the watermark for the control, `WaterMark` property can be used as follows:
 
 {% tabs %}
 
