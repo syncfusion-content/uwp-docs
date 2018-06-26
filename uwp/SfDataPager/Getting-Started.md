@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting started
 
-The [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control provides a configurable user interface for paging. You can specify the page count or you can bind the `SfDataPager` to any [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx#) . When you bind collection, the `SfDataPager` control process the collection internally and provides the data for the current page using [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PagedSource.html#) property. 
+The [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control provides a configurable user interface for paging. You can specify the page count or you can bind the `SfDataPager` to any [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx#) . When you bind collection, the `SfDataPager` control process the collection internally and provides the data for the current page using [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PagedSource.html#) property. 
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control in any application,
+The following list of assemblies needs to be added as reference to use [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control in any application,
 
 <table>
 <tr>
@@ -30,7 +30,7 @@ Syncfusion.Data.UWP</td><td>
 Handles data operations and paging.</td></tr>
 </table>
 
-When you use [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) with [SfDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid.html#), need to add the following assemblies along with above assemblies.
+When you use [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) with [SfDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid.html#), need to add the following assemblies along with above assemblies.
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Syncfusion.SfShared.UWP</td><td>
 
 ## Creating simple application with SfDataPager
 
-The following steps help you to use the [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) in an application,
+The following steps help you to use the [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) in an application,
 
 ### Creating the Project
 
@@ -59,7 +59,7 @@ Create new Universal Windows Platform project in Visual Studio.
 
 ### Adding control via Designer
 
-[SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+[SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
@@ -73,7 +73,7 @@ In order to add control manually in XAML, do the below steps
 * Syncfusion.SfInput.UWP
 * Syncfusion.SfShared.UWP
 
-2. Import [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#)  control namespace `Syncfusion.UI.Xaml.Controls.DataPager` in XAML page.
+2. Import [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#)  control namespace `Syncfusion.UI.Xaml.Controls.DataPager` in XAML page.
 
 3. Declare `SfDataPager` control in XAML page.
 
@@ -105,7 +105,7 @@ In order to add control manually in C#, do the below steps,
 * Syncfusion.SfInput.UWP
 * Syncfusion.SfShared.UWP
 
-2. Import [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#)  control namespace `Syncfusion.UI.Xaml.Controls.DataPager`.
+2. Import [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#)  control namespace `Syncfusion.UI.Xaml.Controls.DataPager`.
 
 3. Create `SfDataPager` control instance and add it to the Page.
 
@@ -225,7 +225,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-3.Bind the collection created in previous step to [SfDataPager.Source](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~Source.html#) property in XAML by setting `ViewModel` as `DataContext`. 
+3.Bind the collection created in previous step to [SfDataPager.Source](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~Source.html#) property in XAML by setting `ViewModel` as `DataContext`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -242,13 +242,13 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-`Orders` collection has 10 items and [PageSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageSize.html#) is 5. Therefore, SfDataPager loaded with two page buttons and [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageCount.html#) is two. Here `PageSize` denotes number of records per page. 
+`Orders` collection has 10 items and [PageSize](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageSize.html#) is 5. Therefore, SfDataPager loaded with two page buttons and [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageCount.html#) is two. Here `PageSize` denotes number of records per page. 
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ### Using with SfDataGrid
 
-Then bind the [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PagedSource.html#) property of the [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property. You can define the number of records per page by setting [PageSize](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageSize.html#) property. 
+Then bind the [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PagedSource.html#) property of the [SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ItemsSource.html) property. You can define the number of records per page by setting [PageSize](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageSize.html#) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -280,7 +280,7 @@ Then bind the [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/sfdata
 
 ## Populating control in Unbound Mode
 
-You can define the number of pages by setting [UseOnDemandPaging](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~UseOnDemandPagingProperty.html#) to `true` and [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageCount.html#) property, where you don’t have to bind `SfDataPager` to any collection.
+You can define the number of pages by setting [UseOnDemandPaging](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~UseOnDemandPagingProperty.html#) to `true` and [PageCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PageCount.html#) property, where you don’t have to bind `SfDataPager` to any collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -296,14 +296,14 @@ You can define the number of pages by setting [UseOnDemandPaging](https://help.s
 
 ### Using with SfDataGrid
 
-If you want to load the data for any control, you can load using [OnDemandLoading](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs_members.html#) event and [LoadDynamicItems](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~LoadDynamicItems.html#) method. In this case, you have to specify the `PageSize` property to denote the number of records per page.
+If you want to load the data for any control, you can load using [OnDemandLoading](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs_members.html#) event and [LoadDynamicItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~LoadDynamicItems.html#) method. In this case, you have to specify the `PageSize` property to denote the number of records per page.
 
 The `OnDemandLoading` event is triggered when the user moves to the corresponding page. The `OnDemandLoading` event contains the following event arguments,
 
 * StartIndex: Corresponding page start index.
 * PageSize: Number of items to be load for that page.
 
-In an [OnDemandLoading](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs_members.html#) event, you can use the `LoadDynamicItems` method to load the data for the corresponding page.
+In an [OnDemandLoading](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.OnDemandLoadingEventArgs_members.html#) event, you can use the `LoadDynamicItems` method to load the data for the corresponding page.
 
 {% tabs %}
 {% highlight xaml %}
