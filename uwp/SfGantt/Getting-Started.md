@@ -575,6 +575,12 @@ N>To display non-working days, the interval type must be week or less interval t
 
 The Holidays support is used to highlight the non-working days in the Gantt chart.
 
+* [`Holidays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html) property can be used to specify the collection of holidays.
+
+* [`Day`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.GanttHoliday~Day.html) property can be used to specify the date of holiday.
+
+* [`Background`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.GanttHoliday~Background.html)  property can be used to specify the color to highlight the holiday.
+
 The below code example illustrates how to display the holidays.
 
 {% tabs %}
