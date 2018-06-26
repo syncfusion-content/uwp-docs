@@ -20,9 +20,9 @@ This page lists the assemblies required for each control to be referred
 </tr>
 <tr>
 <td> 
-Syncfusion.SfGrid.UWP </br>
-Syncfusion.Data.UWP </br>
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfGrid.UWP <br/>
+Syncfusion.Data.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -42,8 +42,8 @@ For exporting DataGrid to excel, pdf or csv, the following references need to be
 </tr>
 <tr>
 <td> 
-Syncfusion.SfGridConverter.UWP </br>
-Syncfusion.XlsIO.UWP </br>
+Syncfusion.SfGridConverter.UWP <br/>
+Syncfusion.XlsIO.UWP <br/>
 Syncfusion.Pdf.UWP
 </td>
 <td> 
@@ -112,10 +112,10 @@ Syncfusion.SfChart.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfSchedule.UWP </br>
-Syncfusion.SfRadialMenu.UWP </br>
-Syncfusion.SfShared.UWP </br>
-Syncfusion.SfTabControl.UWP </br>
+Syncfusion.SfSchedule.UWP <br/>
+Syncfusion.SfRadialMenu.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.SfTabControl.UWP <br/>
 Syncfusion.SfInput.UWP
 </td>
 <td> 
@@ -167,7 +167,7 @@ Syncfusion.SfHeatMap.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfAccordion.UWP </br>
+Syncfusion.SfAccordion.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -270,7 +270,7 @@ Syncfusion.SfCarousel.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfDockingManager.UWP </br>
+Syncfusion.SfDockingManager.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -288,8 +288,8 @@ Syncfusion.SfDockingManager.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfRibbon.UWP </br>
-Syncfusion.SfShared.UWP </br>
+Syncfusion.SfRibbon.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
 Syncfusion.SfInput.UWP
 </td>
 <td> 
@@ -307,7 +307,7 @@ Syncfusion.SfRibbon.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfTileView.UWP </br>
+Syncfusion.SfTileView.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -325,10 +325,10 @@ Syncfusion.SfRibbon.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfRichTextBoxAdv.UWP </br>
-Syncfusion.OfficeChart.UWP </br>
-Syncfusion.DocIO.UWP </br>
-Syncfusion.SfRadialMenu.UWP </br>
+Syncfusion.SfRichTextBoxAdv.UWP <br/>
+Syncfusion.OfficeChart.UWP <br/>
+Syncfusion.DocIO.UWP <br/>
+Syncfusion.SfRadialMenu.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -346,7 +346,7 @@ Syncfusion.SfRichTextBoxAdv.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -364,7 +364,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -382,7 +382,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -400,7 +400,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -418,7 +418,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -436,7 +436,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -454,7 +454,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -472,7 +472,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -490,7 +490,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfGroupBar.UWP </br>
+Syncfusion.SfGroupBar.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -525,7 +525,7 @@ Syncfusion.SfKanban.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -543,7 +543,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfMenu.UWP </br>
+Syncfusion.SfMenu.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -561,7 +561,7 @@ Syncfusion.SfMenu.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -579,7 +579,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -614,7 +614,7 @@ Syncfusion.SfProgressBar.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -632,7 +632,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -684,7 +684,7 @@ Syncfusion.SfSpellChecker.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -702,7 +702,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -720,8 +720,8 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfColorPickers.UWP </br>
-Syncfusion.SfShared.UWP </br>
+Syncfusion.SfColorPickers.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
 Syncfusion.SfRadialMenu.UWP
 </td>
 <td> 
@@ -739,8 +739,8 @@ Syncfusion.SfColorPickers.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfColorPickers.UWP </br>
-Syncfusion.SfShared.UWP </br>
+Syncfusion.SfColorPickers.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
 Syncfusion.SfRadialMenu.UWP
 </td>
 <td> 
@@ -758,7 +758,7 @@ Syncfusion.SfInput.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfRadialMenu.UWP </br>
+Syncfusion.SfRadialMenu.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -776,7 +776,7 @@ Syncfusion.SfRadialMenu.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfTabControl.UWP </br>
+Syncfusion.SfTabControl.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -794,7 +794,7 @@ Syncfusion.SfTabControl.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfTreeNavigator.UWP </br>
+Syncfusion.SfTreeNavigator.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -829,7 +829,7 @@ Syncfusion.SfBusyIndicator.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfHubTile.UWP </br>
+Syncfusion.SfHubTile.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -847,7 +847,7 @@ Syncfusion.SfHubTile.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfHubTile.UWP </br>
+Syncfusion.SfHubTile.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -865,7 +865,7 @@ Syncfusion.SfHubTile.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfHubTile.UWP </br>
+Syncfusion.SfHubTile.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -883,7 +883,7 @@ Syncfusion.SfHubTile.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfHubTile.UWP </br>
+Syncfusion.SfHubTile.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -901,12 +901,12 @@ Syncfusion.SfHubTile.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfPdfViewer.UWP </br>
-Syncfusion.Pdf.UWP </br>
-Syncfusion.SfInput.UWP </br>
-Syncfusion.SfRadialMenu.UWP </br>
-Syncfusion.SfColorPickers.UWP </br>
-Syncfusion.SfShared.UWP </br>
+Syncfusion.SfPdfViewer.UWP <br/>
+Syncfusion.Pdf.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfRadialMenu.UWP <br/>
+Syncfusion.SfColorPickers.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
 Syncfusion.SfTreeNavigator.UWP
 </td>
 <td> 
@@ -924,11 +924,11 @@ Syncfusion.SfPdfViewer.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfGantt.UWP </br>
-Syncfusion.SfGrid.UWP </br>
-Syncfusion.Data.UWP </br>
-Syncfusion.SfInput.UWP </br>
-Syncfusion.SfShared.UWP </br>
+Syncfusion.SfGantt.UWP <br/>
+Syncfusion.SfGrid.UWP <br/>
+Syncfusion.Data.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
 Syncfusion.SfTabControl.UWP
 </td>
 <td> 
@@ -946,10 +946,10 @@ Syncfusion.SfGantt.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.Data.UWP </br>
-Syncfusion.Olap.UWP </br>
-Syncfusion.PivotAnalysis.UWP </br>
-Syncfusion.SfBusyIndicator.UWP </br>
+Syncfusion.Data.UWP <br/>
+Syncfusion.Olap.UWP <br/>
+Syncfusion.PivotAnalysis.UWP <br/>
+Syncfusion.SfBusyIndicator.UWP <br/>
 Syncfusion.SfChart.UWP
 </td>
 <td> 
@@ -986,22 +986,22 @@ Syncfusion.SfPivotChartConverter.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.Data.UWP </br>
-Syncfusion.Olap.UWP </br>
-Syncfusion.PivotAnalysis.UWP </br>
-Syncfusion.SfBusyIndicator.UWP </br>
-Syncfusion.SfChart.UWP </br>
-Syncfusion.SfCellGrid.UWP </br>
-Syncfusion.SfGrid.UWP </br>
-Syncfusion.SfGridCommon.UWP </br>
-Syncfusion.SfInput.UWP </br>
-Syncfusion.SfMenu.UWP </br>
-Syncfusion.SfPivotChart.UWP </br>
-Syncfusion.SfPivotChartConverter.UWP </br>
-Syncfusion.SfPivotGrid.UWP </br>
-Syncfusion.SfPivotGridConverter.UWP </br>
-Syncfusion.SfPivotShared.UWP </br>
-Syncfusion.SfShared.UWP </br>
+Syncfusion.Data.UWP <br/>
+Syncfusion.Olap.UWP <br/>
+Syncfusion.PivotAnalysis.UWP <br/>
+Syncfusion.SfBusyIndicator.UWP <br/>
+Syncfusion.SfChart.UWP <br/>
+Syncfusion.SfCellGrid.UWP <br/>
+Syncfusion.SfGrid.UWP <br/>
+Syncfusion.SfGridCommon.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfMenu.UWP <br/>
+Syncfusion.SfPivotChart.UWP <br/>
+Syncfusion.SfPivotChartConverter.UWP <br/>
+Syncfusion.SfPivotGrid.UWP <br/>
+Syncfusion.SfPivotGridConverter.UWP <br/>
+Syncfusion.SfPivotShared.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
 Syncfusion.SfTabControl.UWP
 </td>
 <td> 
@@ -1019,11 +1019,11 @@ Syncfusion.SfPivotClient.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.Data.UWP </br>
-Syncfusion.Olap.UWP </br>
-Syncfusion.PivotAnalysis.UWP </br>
-Syncfusion.SfBusyIndicator.UWP </br>
-Syncfusion.SfGauge.UWP </br>
+Syncfusion.Data.UWP <br/>
+Syncfusion.Olap.UWP <br/>
+Syncfusion.PivotAnalysis.UWP <br/>
+Syncfusion.SfBusyIndicator.UWP <br/>
+Syncfusion.SfGauge.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -1041,16 +1041,16 @@ Syncfusion.SfPivotGauge.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.Data.UWP </br>
-Syncfusion.Olap.UWP </br>
-Syncfusion.PivotAnalysis.UWP </br>
-Syncfusion.SfBusyIndicator.UWP </br>
-Syncfusion.SfCellGrid.UWP </br>
-Syncfusion.SfColorPickers.UWP </br>
-Syncfusion.SfGrid.UWP </br>
-Syncfusion.SfGridCommon.UWP </br>
-Syncfusion.SfInput.UWP </br>
-Syncfusion.SfMenu.UWP </br>
+Syncfusion.Data.UWP <br/>
+Syncfusion.Olap.UWP <br/>
+Syncfusion.PivotAnalysis.UWP <br/>
+Syncfusion.SfBusyIndicator.UWP <br/>
+Syncfusion.SfCellGrid.UWP <br/>
+Syncfusion.SfColorPickers.UWP <br/>
+Syncfusion.SfGrid.UWP <br/>
+Syncfusion.SfGridCommon.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfMenu.UWP <br/>
 Syncfusion.SfShared.UWP
 </td>
 <td> 
@@ -1087,17 +1087,17 @@ Syncfusion.SfPivotGridConverter.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.DocIO.UWP </br>
-Syncfusion.Pdf.UWP </br>
-Syncfusion.SfGridCommon.UWP </br>
-Syncfusion.SfChart.UWP </br>
-Syncfusion.SfGauge.UWP </br>
-Syncfusion.SfCellGrid.UWP </br>
-Syncfusion.SfInput.UWP </br>
-Syncfusion.SfMaps.UWP </br>
-Syncfusion.SfReportViewer.UWP </br>
-Syncfusion.SfShared.UWP </br>
-Syncfusion.SfTreeNavigator.UWP </br>
+Syncfusion.DocIO.UWP <br/>
+Syncfusion.Pdf.UWP <br/>
+Syncfusion.SfGridCommon.UWP <br/>
+Syncfusion.SfChart.UWP <br/>
+Syncfusion.SfGauge.UWP <br/>
+Syncfusion.SfCellGrid.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfMaps.UWP <br/>
+Syncfusion.SfReportViewer.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.SfTreeNavigator.UWP <br/>
 Syncfusion.XlsIO.UWP
 </td>
 <td> 
@@ -1166,10 +1166,10 @@ Syncfusion.SfBarcode.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfCellGrid.UWP </br>
-Syncfusion.SfGridCommon.UWP </br>
-Syncfusion.SfShared.UWP </br>
-Syncfusion.SfInput.UWP </br>
+Syncfusion.SfCellGrid.UWP <br/>
+Syncfusion.SfGridCommon.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
 Syncfusion.XlsIO.UWP
 </td>
 <td> 
@@ -1187,13 +1187,13 @@ Syncfusion.SfCellGrid.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfCellGrid.UWP </br>
-Syncfusion.SfGridCommon.UWP </br>
-Syncfusion.SfSpreadsheet.UWP </br>
-Syncfusion.SfShared.UWP </br>
-Syncfusion.SfInput.UWP </br>
-Syncfusion.SfRibbon.UWP </br>
-Syncfusion.SfTabControl.UWP </br>
+Syncfusion.SfCellGrid.UWP <br/>
+Syncfusion.SfGridCommon.UWP <br/>
+Syncfusion.SfSpreadsheet.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfRibbon.UWP <br/>
+Syncfusion.SfTabControl.UWP <br/>
 Syncfusion.XlsIO.UWP
 </td>
 <td> 
@@ -1211,8 +1211,8 @@ Syncfusion.SfSpreadsheet.UWP
 </tr>
 <tr>
 <td> 
-Syncfusion.SfSpreadsheetHelper.UWP </br>
-Syncfusion.ExcelChartToImageConverter.UWP </br>
+Syncfusion.SfSpreadsheetHelper.UWP <br/>
+Syncfusion.ExcelChartToImageConverter.UWP <br/>
 Syncfusion.SfChart.UWP
 </td>
 <td> 
