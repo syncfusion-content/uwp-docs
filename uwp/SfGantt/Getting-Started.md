@@ -570,3 +570,49 @@ sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 ![](SfGantt_images/NonWorkingDays.jpeg)
 
 N>To display non-working days, the interval type must be week or less interval type as days, hours, and minutes.
+
+## Holidays
+
+The Holidays support is used to highlight the non-working days in the Gantt chart.
+
+The below code example illustrates how to display the holidays.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gantt:SfGantt ItemsSource="{Binding TaskCollection}" ShowNonWorkingDays="True" >
+    <gantt:SfGantt.Holidays>
+        <gantt:GanttHolidayCollection>
+            <gantt:GanttHoliday Day="5/28/2018"
+                                Background="CadetBlue" />
+        </gantt:GanttHolidayCollection>
+    </gantt:SfGantt.Holidays>
+</gantt:SfGantt>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfGantt sfGantt = new SfGantt();
+
+sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+
+sfGantt.ShowNonWorkingDays = True;
+
+sfGantt.Holidays = new GanttHolidayCollection()
+{
+    new GanttHoliday()
+    {
+        Day = new DateTime(2018, 5, 28),
+        Background = new SolidColorBrush(Colors.CadetBlue)
+    }
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](SfGantt_images/Holidays.png)
+
+N>To display Holidays, ShowNonWorkingDays must be enabled.
