@@ -11,7 +11,7 @@ documentation: ug
 
 # Editing 
 
-SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html) property.
+SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,7 +25,7 @@ treeGrid.AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
-You can enable or disable editing for particular column by setting [TreeGridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowEditing.html) property.
+You can enable or disable editing for particular column by setting [TreeGridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowEditing.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,7 +46,7 @@ N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navig
 
 ### Entering into edit mode
 
-You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~EditTrigger.html) property.
+You can enter into edit mode by pressing &lt;kbd&gt;F2&lt;/kbd&gt; key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~EditTrigger.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -65,7 +65,7 @@ treeGrid.EditTrigger = EditTrigger.OnTap;
 
 ### Cursor placement
 
-When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~EditorSelectionBehavior.html) property.
+When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~EditorSelectionBehavior.html) property.
 
 SelectAll – selects the text of edit element loaded inside cell.
 
@@ -278,13 +278,13 @@ SfTreeGrid triggers the following events during editing.
 
 ### CurrentCellBeginEdit Event
 
-[CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellBeginEdit_EV.html) event occurs when the `CurrentCell` enter into edit mode. [TreeCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
+[CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellBeginEdit_EV.html) event occurs when the `CurrentCell` enter into edit mode. [TreeCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
 *  [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) : When set to `true`, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
-* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row column index of the TreeGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs~RowColumnIndex.html) : Gets the current row column index of the TreeGrid.
 
-* [Column](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs~Column.html) : Gets the Tree Grid Column of the SfTreeGrid.
+* [Column](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellBeginEditEventArgs~Column.html) : Gets the Tree Grid Column of the SfTreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -298,8 +298,8 @@ void TreeGrid_CurrentCellBeginEdit(object sender, TreeGridCurrentCellBeginEditEv
 
 ### CurrentCellEndEdit Event
 
-[CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellEndEdit_EV.html) event occurs when the `CurrentCell` exits the edit mode. 
-[CurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs.html) has following members which provides information for [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellEndEdit_EV.html) event.
+[CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellEndEdit_EV.html) event occurs when the `CurrentCell` exits the edit mode. 
+[CurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellEndEditEventArgs.html) has following members which provides information for [CurrentCellEndEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellEndEdit_EV.html) event.
 
 * RowColumnIndex : Gets the value for the current row column index.
 
@@ -315,11 +315,11 @@ void TreeGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventArgs args
 
 ### CurrentCellValueChanged Event
 
-[CurrentCellValueChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellValueChanged_EV.html) event occurs whenever a value changes in TreeGridColumn that supports editing. 
-[TreeGridCurrentCellValueChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs.html) has following members which provides information for `CurrentCellValueChanged` event.
+[CurrentCellValueChanged](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellValueChanged_EV.html) event occurs whenever a value changes in TreeGridColumn that supports editing. 
+[TreeGridCurrentCellValueChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs.html) has following members which provides information for `CurrentCellValueChanged` event.
 
-* [Column](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs~Column.html) : Gets the Grid Column of the SfTreeGrid.
-* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs~RowColumnIndex.html) : Gets the value of the current RowColumnIndex.
+* [Column](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs~Column.html) : Gets the Grid Column of the SfTreeGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellValueChangedEventArgs~RowColumnIndex.html) : Gets the value of the current RowColumnIndex.
 
 {% tabs %}
 {% highlight c# %}
@@ -334,12 +334,12 @@ N> For TreeGridComboBoxColumn, you have to use the CurrentCellDropDownSelectionC
 
 ### CurrentCellDropDownSelectionChanged Event
 
-[CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellDropDownSelectionChanged_EV.html) event occurs whenever the `SelectedItem` of `TreeGridComboBoxColumn` column changed.
-[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
+[CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellDropDownSelectionChanged_EV.html) event occurs whenever the `SelectedItem` of `TreeGridComboBoxColumn` column changed.
+[CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) has following members which provides information for `CurrentCellDropDownSelectionChanged` event.
 
-* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~RowColumnIndex.html)  - Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
-* [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~SelectedIndex.html) - Gets the index of the corresponding item that were selected from the drop-down control.
-* [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~SelectedItem.html) - Gets the data item that were selected from the drop-down control.
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~RowColumnIndex.html)  - Gets the RowColumnIndex of the corresponding item that were selected from the drop-down control.
+* [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~SelectedIndex.html) - Gets the index of the corresponding item that were selected from the drop-down control.
+* [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs~SelectedItem.html) - Gets the data item that were selected from the drop-down control.
 
 {% tabs %}
 {% highlight c# %}
@@ -355,7 +355,7 @@ void TreeGrid_CurrentCellDropDownSelectionChanged(object sender, CurrentCellDrop
 
 ### BeginEdit
 
-SfTreeGrid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager~BeginEdit.html) method. Initially the[CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager~CurrentCell.html) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
+SfTreeGrid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager~BeginEdit.html) method. Initially the[CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager~CurrentCell.html) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
 
 {% tabs %}
 {% highlight c# %}
@@ -372,7 +372,7 @@ void TreeGrid_Loaded(object sender, RoutedEventArgs e)
 
 ### EndEdit
 
-You can call the [EndEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager~EndEdit.html) method to programmatically end edit. 
+You can call the [EndEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCurrentCellManager~EndEdit.html) method to programmatically end edit. 
 
 {% tabs %}
 {% highlight c# %}
@@ -389,7 +389,7 @@ void TreeGrid_Loaded(object sender, RoutedEventArgs e)
 
 ### CancelEdit
 
-You can use the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellBeginEdit_EV.html) event to cancel the editing operation for the corresponding cell.
+You can use the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellBeginEdit_EV.html) event to cancel the editing operation for the corresponding cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -406,10 +406,10 @@ treeGrid.CurrentCellBeginEdit += TreeGrid_CurrentCellBeginEdit;void TreeGrid_Cur
 
 ## Keyboard operations for UIElement inside Template
 
-You can directly load edit element using [TreeGridTemplateColumn.CellTemplate](https://help.syncfusion.com/cr/cref_files/uwp/sfdatagrid/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In this case, you can provide focus and control to the UIElement inside
+You can directly load edit element using [TreeGridTemplateColumn.CellTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) property. In this case, you can provide focus and control to the UIElement inside
  CellTemplate in the below ways,
 
-You can allow focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FocusedElement](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property to the `UIElement` inside DataTemplate and let the UIElement to handle keyboard operations which is loaded inside the template by setting [FocusManagerHelper.WantsKeyInput](http://help.syncfusion.com/cr/cref_files/wpf/sfdatagrid/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~WantsKeyInputProperty.html) attached property to `TreeGridColumn`.
+You can allow focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FocusedElement](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property to the `UIElement` inside DataTemplate and let the UIElement to handle keyboard operations which is loaded inside the template by setting [FocusManagerHelper.WantsKeyInput](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~WantsKeyInputProperty.html) attached property to `TreeGridColumn`.
 
 {% tabs %}
 {% highlight xaml %}
