@@ -59,4 +59,4 @@ sfGantt.Holidays = new GanttHolidayCollection()
 
 ![](SfGantt_images/Holidays.png)
 
-N>To display Holidays, ShowNonWorkingDays must be enabled.
+N>To display Holidays, ['ShowNonWorkingDays'](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) must be enabled.
