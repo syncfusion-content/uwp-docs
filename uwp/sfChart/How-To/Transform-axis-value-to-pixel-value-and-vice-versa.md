@@ -9,7 +9,7 @@ documentation: ug
 
 # Transform axis value to pixel value and vice versa
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) offers two utility methods for converting your data points into pixel values (device coordinates).
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) offers two utility methods for converting your data points into pixel values (device coordinates).
 
 * ValueToPoint(ChartAxis axis, double value)
 * PointToValue(ChartAxis axis, Point point)
