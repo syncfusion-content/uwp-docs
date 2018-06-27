@@ -9,11 +9,11 @@ documentation: ug
 
 # Pointers
 
-Pointers are used to indicate values on the scale. Value of the pointer can be modified using the `Value` property.
+Pointers are used to indicate values on the scale. Value of the pointer can be modified using the [`Value`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~Value.html) property.
 
 ## Pointer Type
 
-There are three types of pointers. You can choose a pointer using the `PointerType` property. 
+There are three types of pointers. You can choose a pointer using the [`PointerType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~PointerType.html) property. 
 
 ## Needle pointer
 
@@ -57,8 +57,8 @@ sfCircularGauge.Scales.Add(scale);
 
 ### NeedlePointerType
 
-The appearance of the needle pointer can be customized using the `NeedlePointerType` property. The default value of this property is Rectangle.
-The `NeedlePointerType` is an `enum` property that includes the following options:
+The appearance of the needle pointer can be customized using the [`NeedlePointerType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerType.html) property. The default value of this property is Rectangle.
+The [`NeedlePointerType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerType.html) is an `enum` property that includes the following options:
 
 1.	Rectangle
 2.	Triangle
@@ -105,7 +105,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ### Needle pointer customization
 
-The length of a needle is controlled using the `NeedleLengthFactor` property. The minimum and maximum bounds of the `NeedleLengthFactor` property are 0 and 1. The needle’s UI is customized using the `NeedlePointerStroke` and `NeedlePointerStrokeThickness` properties. The size of the pointer cap can be modified by changing the `PointerCapDiameter` property, and color can be modified using the `PointerCapStroke` property.
+The length of a needle is controlled using the [`NeedleLengthFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedleLengthFactor.html) property. The minimum and maximum bounds of the [`NeedleLengthFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedleLengthFactor.html) property are 0 and 1. The needle’s UI is customized using the [`NeedlePointerStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStroke.html) and [`NeedlePointerStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerStrokeThickness.html) properties. The size of the pointer cap can be modified by changing the [`PointerCapDiameter`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~PointerCapDiameter.html) property, and color can be modified using the [`PointerCapStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~PointerCapStroke.html) property.
 
 {% tabs %}
 
@@ -158,7 +158,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ### Setting visibility of needle pointer
 
-The visibility of the needle pointer can be set using the `NeedlePointerVisibility` property.
+The visibility of the needle pointer can be set using the [`NeedlePointerVisibility`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~NeedlePointerVisibility.html) property.
 
 {% tabs %}
 
@@ -240,7 +240,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ### Range pointer customization
 
-The range pointer’s UI is customized using the `RangePointerStroke` and `RangePointerStrokeThickness` properties.  
+The range pointer’s UI is customized using the [`RangePointerStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangePointerStroke.html) and [`RangePointerStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangePointerStrokeThickness.html) properties.  
 
 {% tabs %}
 
@@ -286,7 +286,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ### Setting visibility for range pointer
 
-The `RangePointerVisibility` property is used to set the visibility of the range pointer.
+The [`RangePointerVisibility`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~RangePointerVisibility.html) property is used to set the visibility of the range pointer.
 
 {% tabs %}
 
@@ -327,9 +327,12 @@ sfCircularGauge.Scales.Add(scale);
 ### Setting position for range pointer
 
 The `RangePointer` can be placed inside or outside the scale by the following two ways:
-1.	Using the `RangePointerPosition` property.
+1.	Using the [`RangePointerPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) property.
 
-You can place the range pointer by selecting one of the options available in the `RangePointerPosition` property. They are:
+You can place the range pointer by selecting one of the options available in the [`RangePointerPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) property. 
+
+They are:
+
 1.	Inside (Default)
 2.	Outside
 3.	Cross
@@ -377,7 +380,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ![](Pointers_images/Pointers_img8.png)
 
-2.	Using the `RangePointerOffset` property. First, set the `RangePointerPosition` to custom, and then set the `RangePointerOffset` property.
+2.	Using the [`RangePointerOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerOffset.html) property. First, set the [`RangePointerPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerPosition.html) to custom, and then set the [`RangePointerOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePointerOffset.html) property.
 
 {% tabs %}
 
@@ -465,7 +468,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ### Symbol pointer customization
 
-You can modify the stroke of the symbol by changing the `SymbolPointerStroke` property. The `SymbolPointerHeight` property is used to set the height of the symbol pointer. The value should be given as a double value. The `SymbolPointerWidth` property is used to set the width of the symbol pointer.
+You can modify the stroke of the symbol by changing the [`SymbolPointerStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~SymbolPointerStroke.html) property. The [`SymbolPointerHeight`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~SymbolPointerHeight.html) property is used to set the height of the symbol pointer. The value should be given as a double value. The [`SymbolPointerWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~SymbolPointerWidth.html) property is used to set the width of the symbol pointer.
 
 {% tabs %}
 
@@ -514,7 +517,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ### Setting visibility of symbol pointer
 
-The visibility of the symbol pointer can be set using the `SymbolPointerVisibility` Property.
+The visibility of the symbol pointer can be set using the [`SymbolPointerVisibility`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~SymbolPointerVisibility.html) Property.
 
 {% tabs %}
 
@@ -554,7 +557,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ### Setting multiple pointers
 
-In addition to the default pointer, you can add n number of pointers to a scale using the `Pointer` property.
+In addition to the default pointer, you can add n number of pointers to a scale using the [`Pointers`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~Pointers.html) property.
 
 {% tabs %}
 
@@ -634,7 +637,7 @@ sfCircularGauge.Scales.Add(scale);
 
 ## Setting animation for pointer
 
-The `EnableAnimation` property is a Boolean property that enables or disables the animation of the pointers in circular gauge.
+The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularPointer~EnableAnimation.html) property is a Boolean property that enables or disables the animation of the pointers in circular gauge.
 
 {% tabs %}
 

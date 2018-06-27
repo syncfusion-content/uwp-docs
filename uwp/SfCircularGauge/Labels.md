@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Labels 
 
-The [`Scale`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html)  labels associate numeric values with major scale tick marks.
+The [`Scale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html)  labels associate numeric values with major scale tick marks.
 
 ## Label stroke customization
 
-The label color can be changed using the [`LabelStroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelStroke.html)  property.
+The label color can be changed using the [`LabelStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelStroke.html)  property.
 
 {% tabs %}
 
@@ -150,7 +150,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 The `Labels` can be placed inside the scale, outside the scale, or on the scale using the following two ways:
 
-1. Placing the labels by selecting one of the options available in the `LabelPosition` property. 
+1. Placing the labels by selecting one of the options available in the [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html) property. 
 
 They are,
 
@@ -222,7 +222,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ![](Labels_images/Labels_img3.png)
 
-2. Positioning the labels far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelOffset.html)  property. First, set the [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html)  to custom, and then position the label using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelOffset.html)  property.
+2. Positioning the labels far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelOffset.html)  property. First, set the [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPosition.html)  to custom, and then position the label using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelOffset.html)  property.
 
 {% tabs %}
 
@@ -294,11 +294,11 @@ Smart labels allow to change the numeric scale type of the labels displayed in a
 
 ###  Enable/disable smart labels
 
-The [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~EnableSmartLabels.html)  property is a Boolean property that enables or disables the smart label feature of the circular gauge.
+The [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~EnableSmartLabels.html)  property is a Boolean property that enables or disables the smart label feature of the circular gauge.
 
 ## Setting numeric scale type
 
-The [`NumericScaleType`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~NumericScaleType.html)  property allows to set the type of label. The following types can be applied to labels:
+The [`NumericScaleType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~NumericScaleType.html)  property allows to set the type of label. The following types can be applied to labels:
 
 •Auto
 
@@ -386,7 +386,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting number of fraction digits for labels
 
-The [`NoOfFractionDigit`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~NoOfFractionalDigit.html)  property is used to set the number of fractional digits to be displayed in the scale labels.
+The [`NoOfFractionDigit`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~NoOfFractionalDigit.html)  property is used to set the number of fractional digits to be displayed in the scale labels.
 
 {% tabs %}
 
@@ -452,11 +452,11 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting postfix and prefix for labels
 
-You can postfix/prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPostfix.html)  and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPrefix.html)  properties, respectively.
+You can postfix/prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPostfix.html)  and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPrefix.html)  properties, respectively.
 
 ### Label postfix
 
-The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPostfix.html) property allows to postfix the values to the scale labels.
+The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPostfix.html) property allows to postfix the values to the scale labels.
 
 {% tabs %}
 
@@ -522,7 +522,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ### Label prefix
 
-The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPrefix.html)  property allows to prefix the values to the scale labels.
+The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~LabelPrefix.html)  property allows to prefix the values to the scale labels.
 
 {% tabs %}
 
@@ -588,7 +588,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Edge label customization
 
-You can customize the edge label by using the [`ShowFirstLabel`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowFirstLabel.html)  and [`ShowLastLabel`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowLastLabel.html)  properties, which are Boolean properties. The [`ShowFirstLabel`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowFirstLabel.html)  property is used to enable or disable first label, and the [`ShowLastLabel`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowLastLabel.html) property is used to enable or disable the last label in circular gauge.
+You can customize the edge label by using the [`ShowFirstLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowFirstLabel.html)  and [`ShowLastLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowLastLabel.html)  properties, which are Boolean properties. The [`ShowFirstLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowFirstLabel.html)  property is used to enable or disable first label, and the [`ShowLastLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~ShowLastLabel.html) property is used to enable or disable the last label in circular gauge.
 
 {% tabs %}
 
@@ -670,7 +670,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting auto angle for label
 
-Scale labels can be rotated automatically based on the current angle. To enable or disable the auto angle, use the [`EnableAutoAngle`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~EnableAutoAngle.html)  property.
+Scale labels can be rotated automatically based on the current angle. To enable or disable the auto angle, use the [`EnableAutoAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~EnableAutoAngle.html)  property.
 
 {% tabs %}
 

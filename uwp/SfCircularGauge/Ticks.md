@@ -13,9 +13,9 @@ Ticks help you identify the gauge’s data value by marking the gauge scale in r
 
 ## Tick customization
 
-The Interval property is used to calculate the tick count for a scale. Similar ticks, small ticks are calculated using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~MinorTicksPerInterval.html) property.
+The Interval property is used to calculate the tick count for a scale. Similar ticks, small ticks are calculated using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~MinorTicksPerInterval.html) property.
 
-The length, stroke, and stroke thickness of a tick are set using the [`TickLength`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~TickLength.html), [`TickStroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~TickStroke.html), and [`TickStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~TickStrokeThickness.html) UI properties, respectively. Similar ticks, the length, stroke, and stroke thickness of a small tick are set using the [`SmallTickLength`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SmallTickLength.html), [`SmallTickStroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SmallTickStroke.html), and [`SmallTickStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SmallTickStrokeThickness.html) UI properties, respectively.
+The length, stroke, and stroke thickness of a tick are set using the [`TickLength`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~TickLength.html), [`TickStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~TickStroke.html), and [`TickStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~TickStrokeThickness.html) UI properties, respectively. Similar ticks, the length, stroke, and stroke thickness of a small tick are set using the [`SmallTickLength`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SmallTickLength.html), [`SmallTickStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SmallTickStroke.html), and [`SmallTickStrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SmallTickStrokeThickness.html) UI properties, respectively.
 
 ### Customize major ticks for scale
 
@@ -126,7 +126,7 @@ The length, stroke, and stroke thickness of a tick are set using the [`TickLengt
 
 ## Setting shape for tick
 
-The [`TickShape`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~TickShape.html) is an enum property that provides an option to select shape of the circular mark ticks, which contains several shapes such as rectangle, ellipse, and triangle.
+The [`TickShape`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~TickShape.html) is an enum property that provides an option to select shape of the circular mark ticks, which contains several shapes such as rectangle, ellipse, and triangle.
 
 {% tabs %}
 

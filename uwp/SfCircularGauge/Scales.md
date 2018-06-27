@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Scales 
 
-Scales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html) elements, which integrate labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
+Scales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html) elements, which integrate labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 
 ## Scale
 
-The [`CircularScale`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html) contains sub elements such as rim, ticks, labels, ranges, and pointers. They define the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. A scale will have multiple ranges.
+The [`CircularScale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html) contains sub elements such as rim, ticks, labels, ranges, and pointers. They define the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. A scale will have multiple ranges.
 
-A range is a visual element, which begins and ends at the specified values within a [`CircularScale`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html). A range will have one or more pointers to point out the values in a scale.
+A range is a visual element, which begins and ends at the specified values within a [`CircularScale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html). A range will have one or more pointers to point out the values in a scale.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting start and end values for scale
 
-The [`StartValue`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~StartValue.html)  and [`EndValue`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~EndValue.html)  properties allow you to set the start and end values for a scale.
+The [`StartValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~StartValue.html)  and [`EndValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~EndValue.html)  properties allow you to set the start and end values for a scale.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting start and sweep angles for scale
 
-The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~StartAngle.html)   and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepAngle.html)  properties allow you to set the start and end angles for a scale.
+The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~StartAngle.html)   and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepAngle.html)  properties allow you to set the start and end angles for a scale.
 
 {% tabs %}
 
@@ -197,7 +197,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting interval for scale
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~Interval.html)  property allows you to set the interval for a scale.
+The [`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~Interval.html)  property allows you to set the interval for a scale.
 
 {% tabs %}
 
@@ -265,7 +265,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting auto interval for scale
 
-By default, the interval value is calculated by 10. By using the [`EnableAutoInterval`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~EnableAutoInterval.html) property, you can set auto interval based on the start and end values.
+By default, the interval value is calculated by 10. By using the [`EnableAutoInterval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~EnableAutoInterval.html) property, you can set auto interval based on the start and end values.
 
 {% tabs %}
 
@@ -333,7 +333,7 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 
 ## Setting scale direction for scale
 
-The [`SweepDirection`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepDirection.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
+The [`SweepDirection`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~SweepDirection.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
 
 {% tabs %}
 
@@ -401,7 +401,7 @@ The [`SweepDirection`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syn
 
 ## Setting multiple scales for circular gauge
 
-You can add multiple scales to the same circular gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~Scales.html)  collection.
+You can add multiple scales to the same circular gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~Scales.html)  collection.
 
 {% tabs %}
 

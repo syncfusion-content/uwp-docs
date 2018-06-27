@@ -12,7 +12,7 @@ Range is a visual element, which begins and ends at the specified values within 
 
 ## Setting start and end values for range
 
-The start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StartValue.html)  and [`EndValue`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~EndValue.html)  properties.
+The start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StartValue.html)  and [`EndValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~EndValue.html)  properties.
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Range customization
 
-A range’s UI is customized by using the [`Stroke`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~Stroke.html) , [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StrokeThickness.html) , and [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html)  properties. First, set the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  property to custom, and then set the offset.
+A range’s UI is customized by using the [`Stroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~Stroke.html) , [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StrokeThickness.html) , and [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html)  properties. First, set the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  property to custom, and then set the offset.
 
 {% tabs %}
 
@@ -174,7 +174,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting width for range
 
-The appearance of the circular range is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StartWidth.html)  and [`EndWidth`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~EndWidth.html)  properties.
+The appearance of the circular range is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StartWidth.html)  and [`EndWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~EndWidth.html)  properties.
 
 {% tabs %}
 
@@ -260,7 +260,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Binding range stroke
 
-You can bind the range’s stroke to the tick lines and labels within its range by setting the [`BindRangeStrokeToLabels`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~BindRangeStrokeToLabels.html)  and [`BindRangeStrokeToTicks`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~BindRangeStrokeToTicks.html)  properties to true.
+You can bind the range’s stroke to the tick lines and labels within its range by setting the [`BindRangeStrokeToLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~BindRangeStrokeToLabels.html)  and [`BindRangeStrokeToTicks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~BindRangeStrokeToTicks.html)  properties to true.
 
 {% tabs %}
 
@@ -365,7 +365,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 ### Range position
 
-You can place the range by selecting one of the options available in the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  property.
+You can place the range by selecting one of the options available in the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  property.
 
 1.Inside
 
@@ -483,7 +483,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ### Range offset
 
-You can place the range by using [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html)  property. First, set the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  to custom, and then set the [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html) property.
+You can place the range by using [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html)  property. First, set the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  to custom, and then set the [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html) property.
 
 {% tabs %}
 
@@ -567,7 +567,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting multiple ranges
 
-In addition to the default range, you can add n number of ranges to a scale by using the [`Ranges`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~Ranges.html)  property.
+In addition to the default range, you can add n number of ranges to a scale by using the [`Ranges`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~Ranges.html)  property.
 
 {% tabs %}
 

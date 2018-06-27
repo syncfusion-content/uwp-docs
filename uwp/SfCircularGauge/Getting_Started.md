@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to configure the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html]) , and also explains the steps required to add basic elements to [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  through various APIs available within it.
+This section explains the steps required to configure the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) , and also explains the steps required to add basic elements to [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  through various APIs available within it.
 
 ## Adding Gauge Reference
 
@@ -16,7 +16,7 @@ Refer this [article](https://help.syncfusion.com/uwp/add-syncfusion-controls) 
 
 ## Initialize Gauge
 
-Import  the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  namespace as shown below in your respective Window,
+Import  the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  namespace as shown below in your respective Window,
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ using Syncfusion.UI.Xaml.Gauges;
 
 {% endtabs %}
 
-You can initialize an empty [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  control.
+You can initialize an empty [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  control.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ this.Content = sfCircularGauge;
 
 ## Adding header
 
-You can assign a unique header to [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  by using the [`GaugeHeader`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html) property.
+You can assign a unique header to [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  by using the [`GaugeHeader`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html) property.
 
 {% tabs %}
 
@@ -106,16 +106,22 @@ sfCircularGauge.GaugeHeader = textBlock;
 
 ## Configuring Scales
 
-You can configure the [`CircularScale`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html)  elements by making use of following API’s available in [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html).
+You can configure the [`CircularScale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale.html)  elements by making use of following API’s available in [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html).
 
 They are:
 
 * StartAngle
+
 * SweepAngle
+
 * StartValue
+
 * EndValue
+
 * Interval
+
 * TickStroke
+
 * LabelStroke
 
 {% tabs %}
@@ -156,7 +162,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Adding ranges
 
-You can add ranges to the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html])   by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange.html)   property.
+You can add ranges to the [`CircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)   by creating ranges collection using the [`CircularRange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange.html)   property.
 
 {% tabs %}
 

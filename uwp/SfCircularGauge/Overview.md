@@ -12,9 +12,9 @@ Circular Gauge helps you to visualize the numeric values over a circular scale. 
 
 ## Key features
 
-[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  is a composed control of several scales. Scales will be an integrated UI part of the circular gauge.
+[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html)  is a composed control of several scales. Scales will be an integrated UI part of the circular gauge.
 
-[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/sfgauge/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) is a composite UI element with the following subparts:
+[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) is a composite UI element with the following subparts:
 
 * Scales
 * Ranges
