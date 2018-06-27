@@ -7,7 +7,7 @@ documentation: ug
 ---
 # Validation mode
 
-The SfGantt control provides support to control task scheduling. The start and finish  dates of the task can be validated automatically or manually. The following validation modes can be set to the `ValidationMode` property in SfGantt. 
+The SfGantt control provides support to control task scheduling. The start and finish  dates of the task can be validated automatically or manually. The following validation modes can be set to the [`ValidationMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ValidationMode.html) property in SfGantt. 
 
 * `Manual` - Allows user to control task scheduling and gives responsibility to track schedules on any task.
 
