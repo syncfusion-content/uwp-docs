@@ -23,28 +23,33 @@ By using the `ContentTemplate` property of annotation object, you can specify th
 
     <gauge:SfLinearGauge>
 
-        <gauge:SfLinearGauge.Annotations>
+    <gauge:SfLinearGauge.Annotations>
 
-            <gauge:LinearGaugeAnnotation OffsetX = "0.5" OffsetY ="0.4">
+    <gauge:LinearGaugeAnnotation OffsetX = "0.5" OffsetY ="0.4">
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
-                    <DataTemplate>
-                    <TextBlock Text="CPU Utilization" Foreground="Black" Height="40" Width="120"/>
-                    </DataTemplate>
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-            </gauge:LinearGaugeAnnotation>
+    <DataTemplate>
 
-        </gauge:SfLinearGauge.Annotations>
+    <TextBlock Text="CPU Utilization" Foreground="Black" Height="40" Width="120"/>
+
+    </DataTemplate>
+
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
+
+    </gauge:LinearGaugeAnnotation>
+
+    </gauge:SfLinearGauge.Annotations>
         
-        <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-            <gauge:LinearScale      MajorTickStroke="Gray" MajorTickSize="25" 
-                                   MinorTickSize="15" LabelSize="15" 
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   MinorTicksPerInterval="3" ScaleBarLength="300" />
+    <gauge:LinearScale      MajorTickStroke="Gray" MajorTickSize="25" 
 
-        </gauge:SfLinearGauge.MainScale>
+     MinorTickSize="15" LabelSize="15" MinorTickStroke="Gray" LabelStroke="#424242"
+
+     MinorTicksPerInterval="3" ScaleBarLength="300" />
+
+    </gauge:SfLinearGauge.MainScale>
 
     </gauge:SfLinearGauge>
 
@@ -114,32 +119,33 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
 
     <gauge:SfLinearGauge>
 
+    <gauge:SfLinearGauge.Annotations>
 
-        <gauge:SfLinearGauge.Annotations>
+    <gauge:LinearGaugeAnnotation OffsetX = "0.5" OffsetY ="0.6">
 
-            <gauge:LinearGaugeAnnotation OffsetX = "0.5" OffsetY ="0.6">
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    <DataTemplate>
 
-                    <DataTemplate>
-                        <TextBlock Text="CPU Utilization" Foreground="Black" Height="40" Width="120"/>
-                    </DataTemplate>
+    <TextBlock Text="CPU Utilization" Foreground="Black" Height="40" Width="120"/>
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    </DataTemplate>
 
-            </gauge:LinearGaugeAnnotation>
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
 
-        </gauge:SfLinearGauge.Annotations>
+    </gauge:LinearGaugeAnnotation>
 
+    </gauge:SfLinearGauge.Annotations>
 
-        <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-            <gauge:LinearScale      MajorTickStroke="Gray" MajorTickSize="25" 
-                                   MinorTickSize="15" LabelSize="15" 
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   MinorTicksPerInterval="3" ScaleBarLength="300" />
+    <gauge:LinearScale      MajorTickStroke="Gray" MajorTickSize="25" 
 
-        </gauge:SfLinearGauge.MainScale>
+     MinorTickSize="15" LabelSize="15"  MinorTickStroke="Gray" LabelStroke="#424242"
+
+     MinorTicksPerInterval="3" ScaleBarLength="300" />
+
+    </gauge:SfLinearGauge.MainScale>
 
     </gauge:SfLinearGauge>
 
@@ -148,7 +154,7 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
 {% highlight c# %}
 
 
-   SfLinearGauge linearGauge = new SfLinearGauge();
+            SfLinearGauge linearGauge = new SfLinearGauge();
 
             LinearGaugeAnnotation linearGaugeAnnotation = new LinearGaugeAnnotation();
 
@@ -207,39 +213,43 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
 
     <gauge:SfLinearGauge>
 
+    <gauge:SfLinearGauge.Annotations>
 
-        <gauge:SfLinearGauge.Annotations>
+    <gauge:LinearGaugeAnnotation ScaleValue="60">
 
-            <gauge:LinearGaugeAnnotation ScaleValue="60">
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    <DataTemplate>
 
-                    <DataTemplate>
-                        <TextBlock Text="60%" Foreground="Black" />
-                    </DataTemplate>
+    <TextBlock Text="60%" Foreground="Black" />
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    </DataTemplate>
 
-            </gauge:LinearGaugeAnnotation>
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
 
-        </gauge:SfLinearGauge.Annotations>
+    </gauge:LinearGaugeAnnotation>
 
+    </gauge:SfLinearGauge.Annotations>
 
-         <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-            <gauge:LinearScale   Interval="10"   MajorTickStroke="Gray" MajorTickSize="25" 
-                                   MinorTickSize="15" LabelSize="15" 
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   MinorTicksPerInterval="3" ScaleBarLength="300" >
+    <gauge:LinearScale Minimum="0" Maximum="90" ScaleBarSize="30"   Interval="10"   MajorTickStroke="Gray" 
+    
+    MajorTickSize="25" MinorTickSize="15" LabelSize="15"  MinorTickStroke="Gray" LabelStroke="#424242"
 
-                <gauge:LinearScale.Pointers>
-                    <gauge:LinearPointer  PointerType="BarPointer" Value="60" BarPointerStroke = "#f95c85" BarPointerStrokeThickness = "20" 
-                                          CornerRadius ="0,10,10,0" />
-                </gauge:LinearScale.Pointers>
+    MinorTicksPerInterval="3" ScaleBarLength="300" >
 
-            </gauge:LinearScale>
+    <gauge:LinearScale.Pointers>
 
-        </gauge:SfLinearGauge.MainScale>
+    <gauge:LinearPointer  PointerType="BarPointer" Value="60" BarPointerStroke = "#f95c85" 
+                    
+    BarPointerStrokeThickness = "20"  CornerRadius ="0,10,10,0" />
+
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
 
     </gauge:SfLinearGauge>
 
@@ -268,6 +278,14 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
             linearGauge.Annotations.Add(linearGaugeAnnotation);
 
             LinearScale linearScale = new LinearScale();
+
+             linearScale.Minimum = 0;
+
+            linearScale.Maximum = 90;
+
+            linearScale.ScaleBarSize = 30;
+
+            linearScale.Interval = 10;
 
             linearScale.ScaleBarLength = 300;
 
@@ -318,38 +336,43 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
     <gauge:SfLinearGauge>
 
-        <gauge:SfLinearGauge.Annotations>
+    <gauge:SfLinearGauge.Annotations>
 
-            <gauge:LinearGaugeAnnotation ScaleValue="60" ViewMargin ="10,60">
+    <gauge:LinearGaugeAnnotation ScaleValue="60" ViewMargin ="10,60">
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                    <DataTemplate>
-                        <TextBlock Text="60%" Foreground="Black"/>
-                    </DataTemplate>
+    <DataTemplate>
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <TextBlock Text="60%" Foreground="Black"/>
 
-            </gauge:LinearGaugeAnnotation>
+    </DataTemplate>
 
-        </gauge:SfLinearGauge.Annotations>
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
 
+    </gauge:LinearGaugeAnnotation>
 
-         <gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.Annotations>
 
-            <gauge:LinearScale   Interval="10"   MajorTickStroke="Gray" MajorTickSize="25" 
-                                   MinorTickSize="15" LabelSize="15" 
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   MinorTicksPerInterval="3" ScaleBarLength="300" >
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale.Pointers>
-                    <gauge:LinearPointer  PointerType="BarPointer" Value="60" BarPointerStroke = "#f95c85" BarPointerStrokeThickness = "20" 
-                                          CornerRadius ="0,10,10,0" />
-                </gauge:LinearScale.Pointers>
+    <gauge:LinearScale   Interval="10" Minimum="0" Maximum="90" ScaleBarSize="30"  MajorTickStroke="Gray" 
+    
+    MajorTickSize="25"  MinorTickSize="15" LabelSize="15"  MinorTickStroke="Gray" LabelStroke="#424242"
 
-            </gauge:LinearScale>
+     MinorTicksPerInterval="3" ScaleBarLength="300" >
 
-        </gauge:SfLinearGauge.MainScale>
+    <gauge:LinearScale.Pointers>
+
+    <gauge:LinearPointer  PointerType="BarPointer" Value="60" BarPointerStroke = "#f95c85" 
+                    
+    BarPointerStrokeThickness = "20"  CornerRadius ="0,10,10,0" />
+
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
 
     </gauge:SfLinearGauge>
 
@@ -380,6 +403,14 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
             linearGauge.Annotations.Add(linearGaugeAnnotation);
 
             LinearScale linearScale = new LinearScale();
+
+             linearScale.Minimum = 0;
+
+            linearScale.Maximum = 90;
+
+            linearScale.ScaleBarSize = 30;
+
+            linearScale.Interval = 10;
 
             linearScale.ScaleBarLength = 300;
 
@@ -413,7 +444,6 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
             linearGauge.MainScale = linearScale;
           
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -432,38 +462,45 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
 
     <gauge:SfLinearGauge>
 
-        <gauge:SfLinearGauge.Annotations>
+    <gauge:SfLinearGauge.Annotations>
 
-            <gauge:LinearGaugeAnnotation ScaleValue="60" HorizontalPosition="Start">
+    <gauge:LinearGaugeAnnotation ScaleValue="60" HorizontalPosition="Start">
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                    <DataTemplate>
-                        <TextBlock Text="CPU Utilization" Foreground="Black"/>
-                    </DataTemplate>
+    <DataTemplate>
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <TextBlock Text="CPU Utilization" Foreground="Black"/>
 
-            </gauge:LinearGaugeAnnotation>
+    </DataTemplate>
 
-        </gauge:SfLinearGauge.Annotations>
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
 
+    </gauge:LinearGaugeAnnotation>
 
-         <gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.Annotations>
 
-            <gauge:LinearScale   Interval="10"   MajorTickStroke="Gray" MajorTickSize="25" 
-                                   MinorTickSize="15" LabelSize="15" 
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   MinorTicksPerInterval="3" ScaleBarLength="300" >
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale.Pointers>
-                    <gauge:LinearPointer  PointerType="BarPointer" Value="60" BarPointerStroke = "#f95c85" BarPointerStrokeThickness = "20" 
-                                          CornerRadius ="0,10,10,0" />
-                </gauge:LinearScale.Pointers>
+    <gauge:LinearScale   Interval="10" Minimum="0" Maximum="90" ScaleBarSize="30"
+    
+      MajorTickStroke="Gray" MajorTickSize="25" 
 
-            </gauge:LinearScale>
+    MinorTickSize="15" LabelSize="15"  MinorTickStroke="Gray" LabelStroke="#424242"
 
-        </gauge:SfLinearGauge.MainScale>
+    MinorTicksPerInterval="3" ScaleBarLength="300" >
+
+    <gauge:LinearScale.Pointers>
+
+    <gauge:LinearPointer  PointerType="BarPointer" Value="60" BarPointerStroke = "#f95c85" 
+                    
+    BarPointerStrokeThickness = "20"  CornerRadius ="0,10,10,0" />
+
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
 
     </gauge:SfLinearGauge>
 
@@ -496,6 +533,14 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
             LinearScale linearScale = new LinearScale();
 
             linearScale.ScaleBarLength = 300;
+
+            linearScale.Minimum = 0;
+
+            linearScale.Maximum = 90;
+
+            linearScale.ScaleBarSize = 30;
+
+            linearScale.Interval = 10;
 
             linearScale.ScaleBarStroke =new SolidColorBrush(Color.FromArgb(0xff, 0xe0, 0xe0, 0xe0));
 
@@ -542,38 +587,45 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
 
     <gauge:SfLinearGauge>
 
-        <gauge:SfLinearGauge.Annotations>
+    <gauge:SfLinearGauge.Annotations>
 
-            <gauge:LinearGaugeAnnotation ScaleValue="60" VerticalPosition="Start">
+    <gauge:LinearGaugeAnnotation ScaleValue="60" VerticalPosition="Center">
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                    <DataTemplate>
-                        <TextBlock Text="CPU Utilization" Foreground="Black"/>
-                    </DataTemplate>
+    <DataTemplate>
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <TextBlock Text="CPU Utilization" Foreground="Black"/>
 
-            </gauge:LinearGaugeAnnotation>
+    </DataTemplate>
 
-        </gauge:SfLinearGauge.Annotations>
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
 
+    </gauge:LinearGaugeAnnotation>
 
-         <gauge:SfLinearGauge.MainScale>
+    </gauge:SfLinearGauge.Annotations>
 
-            <gauge:LinearScale   Interval="10"   MajorTickStroke="Gray" MajorTickSize="25" 
-                                   MinorTickSize="15" LabelSize="15" 
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   MinorTicksPerInterval="3" ScaleBarLength="300" >
+    <gauge:SfLinearGauge.MainScale>
 
-                <gauge:LinearScale.Pointers>
-                    <gauge:LinearPointer  PointerType="BarPointer" Value="60" BarPointerStroke = "#f95c85" BarPointerStrokeThickness = "20" 
-                                          CornerRadius ="0,10,10,0" />
-                </gauge:LinearScale.Pointers>
+    <gauge:LinearScale   Interval="10"  Minimum="0" Maximum="90" ScaleBarSize="30"
+    
+     MajorTickStroke="Gray" MajorTickSize="25" 
 
-            </gauge:LinearScale>
+    MinorTickSize="15" LabelSize="15"  MinorTickStroke="Gray" LabelStroke="#424242"
 
-        </gauge:SfLinearGauge.MainScale>
+    MinorTicksPerInterval="3" ScaleBarLength="300" >
+
+    <gauge:LinearScale.Pointers>
+
+    <gauge:LinearPointer  PointerType="BarPointer" Value="60" BarPointerStroke = "#f95c85" 
+                    
+    BarPointerStrokeThickness = "20"   CornerRadius ="0,10,10,0" />
+
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
 
     </gauge:SfLinearGauge>
 
@@ -587,7 +639,7 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
 
             linearGaugeAnnotation.ScaleValue = 60;
 
-           linearGaugeAnnotation.VerticalPosition = ViewAlignment.Start;
+           linearGaugeAnnotation.VerticalPosition = ViewAlignment.Center;
 
             var content = "<DataTemplate xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\">";
 
@@ -604,6 +656,14 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
             linearGauge.Annotations.Add(linearGaugeAnnotation);
 
             LinearScale linearScale = new LinearScale();
+
+             linearScale.Minimum = 0;
+
+            linearScale.Maximum = 90;
+
+            linearScale.ScaleBarSize = 30;
+
+            linearScale.Interval = 10;
 
             linearScale.ScaleBarLength = 300;
 
@@ -652,109 +712,125 @@ You can add multiple annotations to the gauge as demonstrated below.
 
 {% highlight xaml %}
 
-     <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-        <gauge:SfLinearGauge.Annotations>
+    <gauge:SfLinearGauge.Annotations>
 
-            <gauge:LinearGaugeAnnotation  ScaleValue="15" ViewMargin ="0,30" >
+    <gauge:LinearGaugeAnnotation  ScaleValue="15" ViewMargin ="0,30" >
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                    <DataTemplate>
-                        <Image Source="Low.png" Height="30" Width="30"/>
-                    </DataTemplate>
+    <DataTemplate>
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <Image Source="Low.png" Height="30" Width="30"/>
 
-            </gauge:LinearGaugeAnnotation>
+    </DataTemplate>
 
-            <gauge:LinearGaugeAnnotation ScaleValue="45" ViewMargin ="0,30">
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    </gauge:LinearGaugeAnnotation>
 
-                    <DataTemplate>
-                        <Image Source="Moderate.png" Height="30" Width="30"/>
-                    </DataTemplate>
+    <gauge:LinearGaugeAnnotation ScaleValue="45" ViewMargin ="0,30">
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
+
+    <DataTemplate>
+
+    <Image Source="Moderate.png" Height="30" Width="30"/>
+
+    </DataTemplate>
+
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
                 
-            </gauge:LinearGaugeAnnotation>
+    </gauge:LinearGaugeAnnotation>
 
-            <gauge:LinearGaugeAnnotation ScaleValue="75" ViewMargin ="0,30">
+    <gauge:LinearGaugeAnnotation ScaleValue="75" ViewMargin ="0,30">
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                    <DataTemplate>
-                        <Image Source="High.png" Height="30" Width="30"/>
-                    </DataTemplate>
+    <DataTemplate>
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <Image Source="High.png" Height="30" Width="30"/>
 
-            </gauge:LinearGaugeAnnotation>
+    </DataTemplate>
 
-            <gauge:LinearGaugeAnnotation ScaleValue="10" ViewMargin ="0,80">
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    </gauge:LinearGaugeAnnotation>
 
-                    <DataTemplate>
-                        <TextBlock Text="Low" Foreground="#30b32d" FontSize="18" />
-                    </DataTemplate>
+    <gauge:LinearGaugeAnnotation ScaleValue="10" ViewMargin ="0,80">
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
+
+    <DataTemplate>
+
+    <TextBlock Text="Low" Foreground="#30b32d" FontSize="18" />
+
+    </DataTemplate>
+
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
      
-            </gauge:LinearGaugeAnnotation>
+    </gauge:LinearGaugeAnnotation>
 
-            <gauge:LinearGaugeAnnotation ScaleValue="40" ViewMargin ="0,80">
+    <gauge:LinearGaugeAnnotation ScaleValue="40" ViewMargin ="0,80">
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                    <DataTemplate>
-                        <TextBlock Text="Moderate" Foreground="#ffdd00" FontSize="18" />
-                    </DataTemplate>
+    <DataTemplate>
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <TextBlock Text="Moderate" Foreground="#ffdd00" FontSize="18" />
 
-            </gauge:LinearGaugeAnnotation>
+    </DataTemplate>
 
-            <gauge:LinearGaugeAnnotation ScaleValue="70" ViewMargin ="0,80">
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
 
-                <gauge:LinearGaugeAnnotation.ContentTemplate>
+    </gauge:LinearGaugeAnnotation>
 
-                    <DataTemplate>
-                        <TextBlock Text="High" Foreground="#f03e3e" FontSize="18" />
-                    </DataTemplate>
+    <gauge:LinearGaugeAnnotation ScaleValue="70" ViewMargin ="0,80">
 
-                </gauge:LinearGaugeAnnotation.ContentTemplate>
+    <gauge:LinearGaugeAnnotation.ContentTemplate>
+
+    <DataTemplate>
+
+    <TextBlock Text="High" Foreground="#f03e3e" FontSize="18" />
+
+    </DataTemplate>
+
+    </gauge:LinearGaugeAnnotation.ContentTemplate>
                 
-            </gauge:LinearGaugeAnnotation>
+    </gauge:LinearGaugeAnnotation>
 
-        </gauge:SfLinearGauge.Annotations>
+    </gauge:SfLinearGauge.Annotations>
 
-        <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-            <gauge:LinearScale  Minimum="0" Maximum="90" ShowLabels="False" ScaleBarStroke="Transparent"
-                               ShowTicks="False"  ScaleBarSize="13"
-                                   ScaleDirection="Backward"
-                                   MinorTicksPerInterval="1" ScaleBarLength="300" >
+    <gauge:LinearScale  Minimum="0" Maximum="90" ShowLabels="False" ScaleBarStroke="Transparent"
 
-                <gauge:LinearScale.Ranges>
-                    <gauge:LinearRange StartValue="0" RangeStroke="#30b32d" EndValue="30" StartWidth="60" EndWidth="60" />
-                    <gauge:LinearRange StartValue="30" RangeStroke="#ffdd00" EndValue="60" StartWidth="60" EndWidth="60" />
-                    <gauge:LinearRange StartValue="60" RangeStroke="#f03e3e" EndValue="90" StartWidth="60" EndWidth="60" />
-                </gauge:LinearScale.Ranges>
+    ShowTicks="False"  ScaleBarSize="13"   ScaleDirection="Backward"
 
-                <gauge:LinearScale.Pointers>
+    MinorTicksPerInterval="1" ScaleBarLength="300" >
 
-                    <gauge:LinearPointer  PointerType="SymbolPointer" Value="35" SymbolPointerStyle="InvertedTriangle" 
-                                          SymbolPointerStroke = "Red" 
-                                          SymbolPointerHeight = "20" 
-                                        SymbolPointerWidth="20" />
+    <gauge:LinearScale.Ranges>
 
-                </gauge:LinearScale.Pointers>
+     <gauge:LinearRange StartValue="0" RangeStroke="#30b32d" EndValue="30" StartWidth="60" EndWidth="60" />
 
-            </gauge:LinearScale>
+    <gauge:LinearRange StartValue="30" RangeStroke="#ffdd00" EndValue="60" StartWidth="60" EndWidth="60" />
 
-        </gauge:SfLinearGauge.MainScale>
+    <gauge:LinearRange StartValue="60" RangeStroke="#f03e3e" EndValue="90" StartWidth="60" EndWidth="60" />
+
+    </gauge:LinearScale.Ranges>
+
+    <gauge:LinearScale.Pointers>
+
+    <gauge:LinearPointer  PointerType="SymbolPointer" Value="35" SymbolPointerStyle="InvertedTriangle" 
+
+    SymbolPointerStroke = "Red"  SymbolPointerHeight = "20"  SymbolPointerWidth="20" />
+
+    </gauge:LinearScale.Pointers>
+
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
         
     </gauge:SfLinearGauge>
 
@@ -901,6 +977,10 @@ You can add multiple annotations to the gauge as demonstrated below.
             linearScale.Minimum = 0;
 
             linearScale.Maximum = 90;
+
+            linearScale.ScaleBarSize = 30;
+
+            linearScale.Interval = 10;
 
             linearScale.ShowLabels = false;
 

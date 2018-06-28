@@ -40,7 +40,7 @@ You can initialize an empty [`SfLinearGauge`](https://help.syncfusion.com/cr/cre
 
 {% highlight xml %}
 
-      <gauge:SfLinearGauge/>
+    <gauge:SfLinearGauge/>
 
 {% endhighlight %}
 
@@ -111,21 +111,21 @@ They are:
 
 {% highlight xml %}
 
-       <gauge:SfLinearGauge>
+    <gauge:SfLinearGauge>
 
-            <gauge:SfLinearGauge.MainScale>
+    <gauge:SfLinearGauge.MainScale>
 
-            <gauge:LinearScale     Interval="10" 
-                                   MajorTickStroke="Gray" MajorTickSize="25" 
-                                   MinorTickSize="12" LabelSize="15"
-                                   MinorTickStroke="Gray" LabelStroke="#424242"
-                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+    <gauge:LinearScale     Interval="10" 
 
-            </gauge:LinearScale>
+     MajorTickStroke="Gray" MajorTickSize="25"    MinorTickSize="12" LabelSize="15"
 
-            </gauge:SfLinearGauge.MainScale>
+     MinorTickStroke="Gray" LabelStroke="#424242"  MinorTicksPerInterval="3" ScaleBarLength="300">
 
-        </gauge:SfLinearGauge>
+    </gauge:LinearScale>
+
+    </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
