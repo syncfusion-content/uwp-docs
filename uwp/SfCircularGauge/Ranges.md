@@ -20,29 +20,29 @@ The start and end values of ranges are set by using the [`StartValue`](https://h
 
     <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
     <gauge:CircularScale  Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-       TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-      <gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Ranges>
 
-      <gauge:CircularRange StartValue="0" EndValue="50" Stroke="#D1DBDB"/>
+    <gauge:CircularRange StartValue="0" EndValue="50" Stroke="#D1DBDB"/>
 
-      </gauge:CircularScale.Ranges>
+    </gauge:CircularScale.Ranges>
 
-      <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-      <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-      </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-     </gauge:CircularScale>
+    </gauge:CircularScale>
 
-     </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-     </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -96,31 +96,31 @@ A range’s UI is customized by using the [`Stroke`](https://help.syncfusion.com
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-         <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-         <gauge:CircularScale RangePosition="Custom" RangeOffset="0.55"  Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale RangePosition="Custom" RangeOffset="0.55"  Radius="150" RimStroke="#39B2C6" 
+    
+    RimStrokeThickness="8" TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-            TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    <gauge:CircularScale.Ranges>
 
-               <gauge:CircularScale.Ranges>
+    <gauge:CircularRange StartValue="0" EndValue="50" Stroke="Pink" StrokeThickness="40"/>
 
-               <gauge:CircularRange StartValue="0" EndValue="50" Stroke="Pink" StrokeThickness="40"/>
+    </gauge:CircularScale.Ranges>
 
-               </gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Pointers>
 
-               <gauge:CircularScale.Pointers>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-                   <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    </gauge:CircularScale.Pointers>
 
-               </gauge:CircularScale.Pointers>
+    </gauge:CircularScale>
 
-               </gauge:CircularScale>
+    </gauge:SfCircularGauge.Scales>
 
-             </gauge:SfCircularGauge.Scales>
-
-              </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -184,27 +184,27 @@ The appearance of the circular range is customized by setting the [`StartWidth`]
 
      <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-        TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-      <gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Ranges>
 
-      <gauge:CircularRange StartValue="10" EndValue="80" StrokeThickness ="10" StartWidth="1" EndWidth="10" Stroke="#D1DBDB"/>
+    <gauge:CircularRange StartValue="10" EndValue="80" StrokeThickness ="10" StartWidth="1" EndWidth="10" Stroke="#D1DBDB"/>
 
-      </gauge:CircularScale.Ranges>
+    </gauge:CircularScale.Ranges>
 
-       <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-      <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-      </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-       </gauge:CircularScale>
+    </gauge:CircularScale>
 
-      </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-      </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -268,31 +268,31 @@ You can bind the range’s stroke to the tick lines and labels within its range 
 
     <gauge:SfCircularGauge >
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale  BindRangeStrokeToLabels="True" BindRangeStrokeToTicks="True" Radius="150">
+    <gauge:CircularScale  BindRangeStrokeToLabels="True" BindRangeStrokeToTicks="True" Radius="150">
 
-     <gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Ranges>
 
-     <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" />
+    <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" />
 
-     <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" />
+    <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" />
 
-     <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
+    <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
 
-      </gauge:CircularScale.Ranges>
+    </gauge:CircularScale.Ranges>
 
-      <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-      <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-      </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-        </gauge:CircularScale>
+    </gauge:CircularScale>
 
-       </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-       </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -379,35 +379,35 @@ You can place the range by selecting one of the options available in the [`Range
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale  RangePosition="Outside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale  RangePosition="Outside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-       TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-      <gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Ranges>
 
-         <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" />
+    <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" />
 
-        <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" />
+    <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" />
 
-        <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
+    <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
 
-        </gauge:CircularScale.Ranges>
+    </gauge:CircularScale.Ranges>
 
-            <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-           <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-           </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-         </gauge:CircularScale>
+    </gauge:CircularScale>
 
-         </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-        </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -491,29 +491,29 @@ You can place the range by using [`RangeOffset`](https://help.syncfusion.com/cr/
 
     <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale  RangePosition="Custom" RangeOffset="0.5" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale  RangePosition="Custom" RangeOffset="0.5" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-        TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-         <gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Ranges>
 
-       <gauge:CircularRange StartValue="0" EndValue="100" Stroke="#D1DBDB" StrokeThickness="8"/>
+    <gauge:CircularRange StartValue="0" EndValue="100" Stroke="#D1DBDB" StrokeThickness="8"/>
 
-       </gauge:CircularScale.Ranges>
+    </gauge:CircularScale.Ranges>
 
-         <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-          <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-          </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-            </gauge:CircularScale>
+    </gauge:CircularScale>
 
-           </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-            </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -573,35 +573,37 @@ In addition to the default range, you can add n number of ranges to a scale by u
 
 {% highlight xml %}
 
-       <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-        <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-            <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-              TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-            <gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Ranges>
 
-               <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
+    <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
 
-                <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
+    <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" StartWidth="1" 
+    
+    EndWidth="10"/>
 
-                    <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
+    <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
 
-                   </gauge:CircularScale.Ranges>
+    </gauge:CircularScale.Ranges>
 
-              <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-              <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-               </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-           </gauge:CircularScale>
+    </gauge:CircularScale>
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-           </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -697,36 +699,39 @@ You can give smooth color transition to range by specifying the different colors
 
     <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-                <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-              TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-                    <gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Ranges>
 
-                        <gauge:CircularRange StartValue="0" EndValue="50"  >
+    <gauge:CircularRange StartValue="0" EndValue="50"  >
 
-                            <gauge:CircularRange.GradientStops>
-                                <gauge:GaugeGradientStop Value="0" Color="#30B32D"/>
-                                <gauge:GaugeGradientStop Value="50" Color="#FFDD00"/>
-                            </gauge:CircularRange.GradientStops>
+    <gauge:CircularRange.GradientStops>
 
-                        </gauge:CircularRange>
+    <gauge:GaugeGradientStop Value="0" Color="#30B32D"/>
 
-                    </gauge:CircularScale.Ranges>
+    <gauge:GaugeGradientStop Value="50" Color="#FFDD00"/>
 
-                    <gauge:CircularScale.Pointers>
+    </gauge:CircularRange.GradientStops>
 
-                        <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    </gauge:CircularRange>
 
-                    </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Ranges>
 
-                </gauge:CircularScale>
+    <gauge:CircularScale.Pointers>
 
-            </gauge:SfCircularGauge.Scales>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-        </gauge:SfCircularGauge>
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 

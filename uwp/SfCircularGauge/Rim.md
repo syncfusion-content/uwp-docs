@@ -16,29 +16,29 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGa
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale  StartAngle="270" SweepAngle="360" StartValue="0" EndValue="360"
+    <gauge:CircularScale  StartAngle="270" SweepAngle="360" StartValue="0" EndValue="360"
 
-         Interval="20" MinorTicksPerInterval="0"
+    Interval="20" MinorTicksPerInterval="0"
 
-          Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-          TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE" ShowFirstLabel="false">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE" ShowFirstLabel="false">
 
-          <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-           <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-          </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-          </gauge:CircularScale>
+    </gauge:CircularScale>
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-          </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -98,25 +98,25 @@ The color and thickness of the rim can be set by using the [`RimStroke`](https:/
 
     <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale  RadiusFactor="1" RimStrokeThickness="40" RimStroke="SkyBlue"
+    <gauge:CircularScale  RadiusFactor="1" RimStrokeThickness="40" RimStroke="SkyBlue"
 
-       Radius="150" 
+    Radius="150" 
 
-      TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-     <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-      </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-     </gauge:CircularScale>
+    </gauge:CircularScale>
 
-     </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-     </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -176,21 +176,21 @@ The value for [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syn
 
      <gauge:CircularScale   RadiusFactor="0.5" Radius="200"
 
-      RimStroke="#39B2C6" RimStrokeThickness="30"
+     RimStroke="#39B2C6" RimStrokeThickness="30"
 
-       TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-      <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-     </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-     </gauge:CircularScale>
+    </gauge:CircularScale>
 
-     </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-     </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -238,25 +238,25 @@ You can set the [`Radius`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfus
 
     <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale  Radius="100"
+    <gauge:CircularScale  Radius="100"
 
-       RimStroke="#39B2C6" RimStrokeThickness="8"
+    RimStroke="#39B2C6" RimStrokeThickness="8"
 
-     TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-     <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-      </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-      </gauge:CircularScale>
+    </gauge:CircularScale>
 
-     </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-     </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 

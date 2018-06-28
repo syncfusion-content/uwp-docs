@@ -23,52 +23,59 @@ Annotations provide options to add any image over the gauge control with respect
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-            <Grid.Resources>
+    <Grid.Resources>
 
-                <DataTemplate  x:Key="dataTemplate">
-                    <Image Source="weather.jpg" Height="60" Width="60"/>
-                </DataTemplate>
+    <DataTemplate  x:Key="dataTemplate">
 
-            </Grid.Resources>
+    <Image Source="weather.jpg" Height="60" Width="60"/>
 
-            <gauge:SfCircularGauge HeaderAlignment="Custom" GaugeHeaderPosition="0.46,0.5">
+    </DataTemplate>
 
-            <gauge:SfCircularGauge.Annotations>
-                <gauge:GaugeAnnotation Angle="270" Offset="0.1" ContentTemplate="{StaticResource dataTemplate}">
-                </gauge:GaugeAnnotation>
-            </gauge:SfCircularGauge.Annotations>
+    </Grid.Resources>
 
-            <gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge HeaderAlignment="Custom" GaugeHeaderPosition="0.46,0.5">
 
-                    <TextBlock Text="73.2 F"
+    <gauge:SfCircularGauge.Annotations>
 
-                Height="40" Width="120"
+    <gauge:GaugeAnnotation Angle="270" Offset="0.1" ContentTemplate="{StaticResource dataTemplate}">
 
-                 FontSize="20" Foreground="#424242"/>
+    </gauge:GaugeAnnotation>
 
-                </gauge:SfCircularGauge.GaugeHeader>
+    </gauge:SfCircularGauge.Annotations>
 
-                <gauge:SfCircularGauge.Scales>
-                    <gauge:CircularScale Radius="150" RimStrokeThickness="20" RimStroke="#e0e0e0"
-                                         StartAngle="90" SweepAngle="360" 
-                                         StartValue="0" EndValue="100"
-                                         Interval="10" RangePointerPosition="Custom"
-                                         RangePointerOffset="0" >
+    <gauge:SfCircularGauge.GaugeHeader>
 
-                        <gauge:CircularScale.Pointers>
+    <TextBlock Text="73.2 F"
+
+    Height="40" Width="120"
+
+    FontSize="20" Foreground="#424242"/>
+
+    </gauge:SfCircularGauge.GaugeHeader>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale Radius="150" RimStrokeThickness="20" RimStroke="#e0e0e0"
+
+    StartAngle="90" SweepAngle="360"  StartValue="0" EndValue="100"
+
+    Interval="10" RangePointerPosition="Custom" RangePointerOffset="0" >
+
+    <gauge:CircularScale.Pointers>
                             
-                        <gauge:CircularPointer PointerType="RangePointer" Value="73.2" RangePointerStrokeThickness="20" RangeCap="Both" RangePointerStroke="#FCFB48"/>
+    <gauge:CircularPointer PointerType="RangePointer" Value="73.2" RangePointerStrokeThickness="20" RangeCap="Both"
+    
+    RangePointerStroke="#FCFB48"/>
 
-                    </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-                    </gauge:CircularScale>
+    </gauge:CircularScale>
 
-                </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
+    </gauge:SfCircularGauge>
 
-            </gauge:SfCircularGauge>
-
-        </Grid>
+    </Grid>
 
 {% endhighlight %}
 
@@ -176,47 +183,55 @@ You can add any text over the gauge control to enhance the readability. You can 
 
    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Grid.Resources>
+    <Grid.Resources>
            
-            <DataTemplate  x:Key="dataTemplate">
-                <Image Source="shot.jpg" Height="60" Width="60"/>
-            </DataTemplate>
+    <DataTemplate  x:Key="dataTemplate">
+
+    <Image Source="shot.jpg" Height="60" Width="60"/>
+
+    </DataTemplate>
             
-        </Grid.Resources>
+    </Grid.Resources>
        
-        <gauge:SfCircularGauge HeaderAlignment="Custom" GaugeHeaderPosition="0.48,0.48">
+    <gauge:SfCircularGauge HeaderAlignment="Custom" GaugeHeaderPosition="0.48,0.48">
 
-            <gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge.GaugeHeader>
 
-                <TextBlock Text="13M"
+    <TextBlock Text="13M" Height="40" Width="120" FontSize="20" Foreground="#0682F6"/>
 
-                Height="40" Width="120"
+    </gauge:SfCircularGauge.GaugeHeader>
 
-                 FontSize="20" Foreground="#0682F6"/>
+    <gauge:SfCircularGauge.Scales>
 
-            </gauge:SfCircularGauge.GaugeHeader>
+    <gauge:CircularScale Radius="200" RangePointerOffset="0.2" SymbolPointerOffset="0.5"
 
-            <gauge:SfCircularGauge.Scales>
-                <gauge:CircularScale Radius="200" RangePointerOffset="0.2" SymbolPointerOffset="0.5"
-                          StartAngle="160" SweepAngle="270" StartValue="0" EndValue="15" >
+    StartAngle="160" SweepAngle="270" StartValue="0" EndValue="15" >
 
-                    <gauge:CircularScale.Pointers>
-                        <gauge:CircularPointer PointerType="RangePointer" RangeStart="1.5" Value="13" RangePointerStrokeThickness="30" RangeCap="End" RangePointerStroke="#0682F6"/>
-                        <gauge:CircularPointer PointerType="SymbolPointer" SymbolPointerWidth="60" SymbolPointerHeight="60"
-                                          Value="0" SymbolPointerTemplate="{StaticResource dataTemplate}" Symbol="Custom">
+    <gauge:CircularScale.Pointers>
 
-                        </gauge:CircularPointer>
+    <gauge:CircularPointer PointerType="RangePointer" RangeStart="1.5" Value="13" 
                         
-                        <gauge:CircularPointer PointerType="SymbolPointer" Symbol="Ellipse" SymbolPointerWidth="40" SymbolPointerHeight="40" SymbolPointerBorderBrush="#9e9e9e" SymbolPointerStroke="#9e9e9e"
-                                         Value="13" />
-                    </gauge:CircularScale.Pointers>
+    RangePointerStrokeThickness="30" RangeCap="End" RangePointerStroke="#0682F6"/>
 
-                </gauge:CircularScale>
+    <gauge:CircularPointer PointerType="SymbolPointer" SymbolPointerWidth="60" 
+                        
+    SymbolPointerHeight="60" Value="0" SymbolPointerTemplate="{StaticResource dataTemplate}" Symbol="Custom">
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:CircularPointer>
+                        
+    <gauge:CircularPointer PointerType="SymbolPointer" Symbol="Ellipse" SymbolPointerWidth="40" 
+                        
+    SymbolPointerHeight="40" SymbolPointerBorderBrush="#9e9e9e" SymbolPointerStroke="#9e9e9e"
 
+    Value="13" />
 
-        </gauge:SfCircularGauge>
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
     </Grid>
 

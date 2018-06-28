@@ -26,9 +26,7 @@ A range is a visual element, which begins and ends at the specified values withi
 
     <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-     TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
-
-     </gauge:CircularScale>
+     TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE" />
 
      </gauge:SfCircularGauge.Scales>
 
@@ -72,23 +70,23 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGa
 
     <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
      <gauge:CircularScale StartValue="-30" EndValue="50" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-       TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-      <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-        </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-        </gauge:CircularScale>
+    </gauge:CircularScale>
 
-        </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-         </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -136,25 +134,25 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGa
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale StartAngle="185" SweepAngle="270" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale StartAngle="185" SweepAngle="270" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-           TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-       <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-      </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-        </gauge:CircularScale>
+    </gauge:CircularScale>
 
-           </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-       </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -203,25 +201,27 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGaug
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-       <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-       <gauge:CircularScale StartValue="0" EndValue="500" Interval="100" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale StartValue="0" EndValue="500" Interval="100" Radius="150" RimStroke="#39B2C6" 
+    
+    RimStrokeThickness="8"
 
-         TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-        <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-          <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-       </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-      </gauge:CircularScale>
+    </gauge:CircularScale>
 
-      </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-      </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -271,25 +271,27 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 
 {% highlight xml %}
 
-        <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-                <gauge:CircularScale StartValue="0" EndValue="1000" EnableAutoInterval="true"  Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale StartValue="0" EndValue="1000" EnableAutoInterval="true"  Radius="150" RimStroke="#39B2C6" 
+    
+    RimStrokeThickness="8"
 
-         TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-                    <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-                        <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-                    </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-                </gauge:CircularScale>
+    </gauge:CircularScale>
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-        </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -339,25 +341,27 @@ The [`SweepDirection`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.
 
 {% highlight xml %}
 
-        <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-                <gauge:CircularScale StartValue="0" EndValue="100" SweepDirection="Counterclockwise"  Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale StartValue="0" EndValue="100" SweepDirection="Counterclockwise"  Radius="150" 
+    
+    RimStroke="#39B2C6" RimStrokeThickness="8"
 
-         TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-                    <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-                        <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-                    </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-                </gauge:CircularScale>
+    </gauge:CircularScale>
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-        </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -407,87 +411,61 @@ You can add multiple scales to the same circular gauge and customize all the sca
 
 {% highlight xml %}
 
-      <Grid Background="Black">
+    <Grid Background="Black">
 
-      <gauge:SfCircularGauge SpacingMargin="0.7">
+    <gauge:SfCircularGauge SpacingMargin="0.7">
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-        <gauge:CircularScale Radius="175" TickStroke="White" SmallTickStroke="White" LabelStroke="White">
+    <gauge:CircularScale Radius="175" TickStroke="White" SmallTickStroke="White" LabelStroke="White">
 
-        <gauge:CircularScale.Ranges>
+    <gauge:CircularScale.Ranges>
 
-          <gauge:CircularRange  StartValue="0" 
+    <gauge:CircularRange  StartValue="0" 
 
-          EndValue="60" 
+    EndValue="60"  Stroke="#B0B0B0"  StrokeThickness="5" />
 
-           Stroke="#B0B0B0" 
+    <gauge:CircularRange  StartValue="60" 
 
-            StrokeThickness="5" />
+    EndValue="100" Stroke="#C1252C" StrokeThickness="5"/>
 
-         <gauge:CircularRange  StartValue="60" 
+    </gauge:CircularScale.Ranges>
 
-          EndValue="100"    
+    <gauge:CircularScale.Pointers>
 
-           Stroke="#C1252C" StrokeThickness="5"/>
+    <gauge:CircularPointer Value="30" 
 
-        </gauge:CircularScale.Ranges>
+    PointerType="SymbolPointer"  Symbol="InvertedArrow"   SymbolPointerWidth="30" 
 
-         <gauge:CircularScale.Pointers>
+    SymbolPointerHeight="20"    SymbolPointerStroke="Green"  SymbolPointerBorderBrush="Green"/>
 
-        <gauge:CircularPointer Value="30" 
+    </gauge:CircularScale.Pointers>
 
-         PointerType="SymbolPointer"
+    </gauge:CircularScale>
 
-           Symbol="InvertedArrow"  
+    <gauge:CircularScale Radius="90" TickStroke="White" SmallTickStroke="White" LabelStroke="White">
 
-         SymbolPointerWidth="30" 
+    <gauge:CircularScale.Ranges>
 
-            SymbolPointerHeight="20" 
+    <gauge:CircularRange  StartValue="0"   EndValue="60"  Stroke="#B0B0B0"  StrokeThickness="5" />
 
-           SymbolPointerStroke="Green"
+    <gauge:CircularRange  StartValue="60"    EndValue="100"   Stroke="#C1252C" StrokeThickness="5"/>
 
-             SymbolPointerBorderBrush="Green"/>
+    </gauge:CircularScale.Ranges>
 
-            </gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-             </gauge:CircularScale>
+    <gauge:CircularPointer Value="30" PointerType="NeedlePointer" NeedlePointerStroke="#C1252C"/>
 
-              <gauge:CircularScale Radius="90" TickStroke="White" SmallTickStroke="White" LabelStroke="White">
+    </gauge:CircularScale.Pointers>
 
-                <gauge:CircularScale.Ranges>
+    </gauge:CircularScale>
 
-             <gauge:CircularRange  StartValue="0" 
+    </gauge:SfCircularGauge.Scales>
 
-              EndValue="60" 
+    </gauge:SfCircularGauge>
 
-            Stroke="#B0B0B0" 
-
-            StrokeThickness="5" />
-
-          <gauge:CircularRange  StartValue="60" 
-
-               EndValue="100"    
-
-            Stroke="#C1252C" StrokeThickness="5"/>
-
-                 </gauge:CircularScale.Ranges>
-
-          <gauge:CircularScale.Pointers>
-
-            <gauge:CircularPointer Value="30" 
-
-                PointerType="NeedlePointer" NeedlePointerStroke="#C1252C"/>
-
-             </gauge:CircularScale.Pointers>
-
-          </gauge:CircularScale>
-
-               </gauge:SfCircularGauge.Scales>
-
-                </gauge:SfCircularGauge>
-
-               </Grid>
+    </Grid>
 
 {% endhighlight %}
 

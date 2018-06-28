@@ -40,7 +40,7 @@ You can initialize an empty [`CircularGauge`](https://help.syncfusion.com/cr/cre
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge/>
+    <gauge:SfCircularGauge/>
 
 {% endhighlight %}
 
@@ -62,15 +62,13 @@ You can assign a unique header to [`CircularGauge`](https://help.syncfusion.com
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.7">
+    <gauge:SfCircularGauge HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.7">
 
-      <gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge.GaugeHeader>
 
-             <TextBlock Text="Temperature (K)"
+    <TextBlock Text="Temperature (K)"
 
-                    Height="40" Width="120"
-
-                    FontSize="15" Foreground="Black"/>
+    Height="40" Width="120" FontSize="15" Foreground="Black"/>
 
     </gauge:SfCircularGauge.GaugeHeader>
 
@@ -130,9 +128,9 @@ They are:
 
     <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
 
-     TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE"/>
 
     </gauge:SfCircularGauge.Scales>
 
@@ -234,11 +232,11 @@ Create a `Needle Pointer`, and associate it with a scale that is to be displayed
 
      NeedlePointerStroke="#39B2C6"/>
 
-      </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-      </gauge:CircularScale>
+    </gauge:CircularScale>
 
-      </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
      </gauge:SfCircularGauge>
 
@@ -284,23 +282,23 @@ The `Range Pointer` provides an alternative way to indicate the current value.
 
     <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale>
+    <gauge:CircularScale>
 
-     <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-      <gauge:CircularPointer PointerType="RangePointer" Value="40" 
+    <gauge:CircularPointer PointerType="RangePointer" Value="40" 
 
-        RangePointerStroke="#D1DBDB" RangePointerStrokeThickness="9"/>
+    RangePointerStroke="#D1DBDB" RangePointerStrokeThickness="9"/>
 
-       </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-       </gauge:CircularScale>
+    </gauge:CircularScale>
 
-       </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-      </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -336,23 +334,23 @@ The `Symbol Pointer` points to the current value in a scale.
 
 {% highlight xml %}
 
-       <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-        <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-          <gauge:CircularScale>
+    <gauge:CircularScale>
 
-           <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-           <gauge:CircularPointer PointerType="SymbolPointer" Value="70" Symbol="InvertedArrow"/>
+    <gauge:CircularPointer PointerType="SymbolPointer" Value="70" Symbol="InvertedArrow"/>
 
-            </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-           </gauge:CircularScale>
+    </gauge:CircularScale>
 
-          </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-            </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -384,73 +382,71 @@ The following code example is the complete code of the previous configurations.
 
 {% highlight xml %}
 
-        <Page
+    <Page
 
-          x:Class="GaugeGettingStarted.MainPage"
+    x:Class="GaugeGettingStarted.MainPage"
 
-          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-           xmlns:local="using:GaugeGettingStarted"
+    xmlns:local="using:GaugeGettingStarted"
 
-           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 
-           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 
-           mc:Ignorable="d"
+    mc:Ignorable="d"
 
-           xmlns:gauge="using:Syncfusion.UI.Xaml.Gauges">
+    xmlns:gauge="using:Syncfusion.UI.Xaml.Gauges">
 
-          <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-          <gauge:SfCircularGauge Height="500" Width="500" HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.7">
+    <gauge:SfCircularGauge Height="500" Width="500" HeaderAlignment="Custom" GaugeHeaderPosition="0.4,0.7">
 
-           <gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge.GaugeHeader>
 
-           <TextBlock Text="Temperature (K)"
+    <TextBlock Text="Temperature (K)" Height="40" Width="120" FontSize="15" Foreground="Black"/>
 
-                Height="40" Width="120"
+    </gauge:SfCircularGauge.GaugeHeader>
 
-                 FontSize="15" Foreground="Black"/>
+    <gauge:SfCircularGauge.Scales>
 
-             </gauge:SfCircularGauge.GaugeHeader>
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
 
-           <gauge:SfCircularGauge.Scales>
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-            <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
+    <gauge:CircularScale.Ranges>
 
-                TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    <gauge:CircularRange StartValue="0" EndValue="60" Stroke="#D1DBDB" StrokeThickness="9" />
 
-               <gauge:CircularScale.Ranges>
+    </gauge:CircularScale.Ranges>
 
-             <gauge:CircularRange StartValue="0" EndValue="60" Stroke="#D1DBDB" StrokeThickness="9" />
+    <gauge:CircularScale.Pointers>
 
-              </gauge:CircularScale.Ranges>
+    <gauge:CircularPointer PointerType="NeedlePointer" Value="60" 
 
-           <gauge:CircularScale.Pointers>
-
-           <gauge:CircularPointer PointerType="NeedlePointer" Value="60" 
-
-              NeedleLengthFactor="0.5" NeedlePointerType="Triangle"
+    NeedleLengthFactor="0.5" NeedlePointerType="Triangle"
  
-             PointerCapDiameter="20" PointerCapStroke="#39B2C6" NeedlePointerStroke="#39B2C6" />
+    PointerCapDiameter="20" PointerCapStroke="#39B2C6" NeedlePointerStroke="#39B2C6" />
 
-              <gauge:CircularPointer PointerType="RangePointer" Value="40" RangePointerStroke="#D1DBDB" RangePointerStrokeThickness="9"/>
+    <gauge:CircularPointer PointerType="RangePointer" Value="40" RangePointerStroke="#D1DBDB" 
+    
+    RangePointerStrokeThickness="9"/>
 
-             <gauge:CircularPointer PointerType="SymbolPointer" Value="70" Symbol="InvertedArrow"/>
+    <gauge:CircularPointer PointerType="SymbolPointer" Value="70" Symbol="InvertedArrow"/>
 
-              </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-                     </gauge:CircularScale>
+    </gauge:CircularScale>
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-            </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
-             </Grid>
+    </Grid>
 
-             </Page>
+    </Page>
 
 {% endhighlight %}
 
@@ -597,7 +593,6 @@ this.Content = sfCircularGauge;
 The following screenshot illustrates the result of the previous codes.
 
 ![](Getting_Started_images/Getting_Started_img1.png)
-
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GaugeGettingStarted-1968766965).
 

@@ -17,10 +17,14 @@ Circular Gauge helps you to visualize the numeric values over a circular scale. 
 [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) is a composite UI element with the following subparts:
 
 * Scales
+
 * Ranges
+
 * Pointers
+
 * Header
-* Annotation
+
+* Annotations
 
 The circular gauge control is highly customizable control with variety of simple APIs to modify its basic look and feel. You can position ranges, ticks, labels, and range pointers as needed.
 

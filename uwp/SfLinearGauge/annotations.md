@@ -532,7 +532,7 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
 
 {% endtabs %}
 
-![](annotations_images/annotation_img4.png)
+![](annotations_images/annotation_img5.png)
 
 ### Setting vertical position
 
@@ -642,7 +642,7 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
 
 {% endtabs %}
 
-![](annotations_images/annotation_img5.png)
+![](annotations_images/annotation_img6.png)
 
 ## Multiple annotations
 
@@ -962,4 +962,4 @@ You can add multiple annotations to the gauge as demonstrated below.
 
 {% endtabs %}
 
-![](annotations_images/annotation_img6.png)
+![](annotations_images/annotation_img7.png)

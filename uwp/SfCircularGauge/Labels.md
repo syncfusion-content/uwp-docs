@@ -18,27 +18,27 @@ The label color can be changed using the [`LabelStroke`](https://help.syncfusion
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale  Radius="150"
+    <gauge:CircularScale  Radius="150"
 
-     RimStroke="#39B2C6" RimStrokeThickness="8"
+    RimStroke="#39B2C6" RimStrokeThickness="8"
 
-      TickStroke="#BEBEBE" LabelStroke="DeepPink" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="DeepPink" SmallTickStroke="#BEBEBE">
 
-       <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-       <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-        </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-        </gauge:CircularScale>
+    </gauge:CircularScale>
 
-         </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-        </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -82,29 +82,29 @@ The label font can be customized using the `FontSize`, `FontFamily`, and `FontSt
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale  Radius="150" FontFamily="Monotype Corsiva" FontSize="20" 
+    <gauge:CircularScale  Radius="150" FontFamily="Monotype Corsiva" FontSize="20" 
 
-       FontStyle="Italic"
+    FontStyle="Italic"
 
-       RimStroke="#39B2C6" RimStrokeThickness="8"
+    RimStroke="#39B2C6" RimStrokeThickness="8"
 
-        TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-          <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-         <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-          </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-         </gauge:CircularScale>
+    </gauge:CircularScale>
 
-         </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-         </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -164,27 +164,27 @@ They are,
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale  Radius="150" LabelPosition="Outside"
+    <gauge:CircularScale  Radius="150" LabelPosition="Outside"
 
-        RimStroke="#39B2C6" RimStrokeThickness="8"
+    RimStroke="#39B2C6" RimStrokeThickness="8"
 
-        TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-          <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-          <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-            </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-             </gauge:CircularScale>
+    </gauge:CircularScale>
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-          </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -228,27 +228,27 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-            <gauge:CircularScale  Radius="150" LabelPosition="Custom" LabelOffset="0.5" 
+    <gauge:CircularScale  Radius="150" LabelPosition="Custom" LabelOffset="0.5" 
 
-             RimStroke="#39B2C6" RimStrokeThickness="8"
+    RimStroke="#39B2C6" RimStrokeThickness="8"
 
-                TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-                <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-           <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-                </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-                 </gauge:CircularScale>
+    </gauge:CircularScale>
 
-         </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-      </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -322,7 +322,7 @@ The [`NumericScaleType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusio
 
     <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale  Radius="150" StartValue="0" EndValue="100" 
+    <gauge:CircularScale  Radius="150" StartValue="0" EndValue="100" 
 
     EnableSmartLabels="True" NumericScaleType="Thousands" 
 
@@ -392,27 +392,27 @@ The [`NoOfFractionDigit`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusi
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale  Radius="150" NoOfFractionalDigit="3"
+    <gauge:CircularScale  Radius="150" NoOfFractionalDigit="3"
 
-     RimStroke="#39B2C6" RimStrokeThickness="8"
+    RimStroke="#39B2C6" RimStrokeThickness="8"
 
-      TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-     <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-     </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-     </gauge:CircularScale>
+    </gauge:CircularScale>
 
     </gauge:SfCircularGauge.Scales>
 
-     </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -474,13 +474,13 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Sf
 
     <gauge:CircularScale.Pointers>
 
-     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
     </gauge:CircularScale.Pointers>
 
-     </gauge:CircularScale>
+    </gauge:CircularScale>
 
-     </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
     </gauge:SfCircularGauge>
 
@@ -530,25 +530,25 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfG
 
      <gauge:SfCircularGauge>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale  Radius="150" LabelPrefix="$"
+    <gauge:CircularScale  Radius="150" LabelPrefix="$"
 
-      RimStroke="#39B2C6" RimStrokeThickness="8"
+    RimStroke="#39B2C6" RimStrokeThickness="8"
 
-     TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-      <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-     </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-     </gauge:CircularScale>
+    </gauge:CircularScale>
 
-     </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-     </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -604,7 +604,7 @@ You can customize the edge label by using the [`ShowFirstLabel`](https://help.sy
 
       MinorTicksPerInterval = "5" StartAngle = "270" SweepAngle = "360" 
 
-     RimStroke="#39B2C6" RimStrokeThickness="8"
+      RimStroke="#39B2C6" RimStrokeThickness="8"
 
       TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
@@ -682,7 +682,7 @@ Scale labels can be rotated automatically based on the current angle. To enable 
 
       <gauge:CircularScale  Radius="150" EnableAutoAngle="true"
 
-        RimStroke="#39B2C6" RimStrokeThickness="8"
+       RimStroke="#39B2C6" RimStrokeThickness="8"
 
        TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 

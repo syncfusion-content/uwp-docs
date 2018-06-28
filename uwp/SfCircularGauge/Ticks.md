@@ -23,19 +23,19 @@ The length, stroke, and stroke thickness of a tick are set using the [`TickLengt
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-                <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9" TickLength="20"
-                                     TickStrokeThickness="2"
-                                     TickStroke="Brown" LabelStroke="#9E9E9E" SmallTickStroke="White">
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9" TickLength="20"
 
-                    </gauge:CircularScale>
+    TickStrokeThickness="2"  TickStroke="Brown" LabelStroke="#9E9E9E" SmallTickStroke="White">
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:CircularScale>
 
-        </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -75,20 +75,21 @@ The length, stroke, and stroke thickness of a tick are set using the [`TickLengt
 
 {% highlight xml %}
 
-        <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-                <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
-                                     MinorTicksPerInterval="3" SmallTickStrokeThickness="2"
-                                     SmallTickLength="10"
-                                     TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="Blue">
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
 
-                </gauge:CircularScale>
+     MinorTicksPerInterval="3" SmallTickStrokeThickness="2"   SmallTickLength="10"
 
-            </gauge:SfCircularGauge.Scales>
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="Blue">
 
-        </gauge:SfCircularGauge>
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -132,20 +133,23 @@ The [`TickShape`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGau
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-                <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
-                                     MinorTicksPerInterval="3" SmallTickStrokeThickness="2"
-                                     SmallTickLength="10" TickShape="Triangle"
-                                     TickStroke="Blue" LabelStroke="#9E9E9E" SmallTickStroke="Blue">
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
 
-                </gauge:CircularScale>
+    MinorTicksPerInterval="3" SmallTickStrokeThickness="2"
 
-            </gauge:SfCircularGauge.Scales>
+    SmallTickLength="10" TickShape="Triangle"
 
-        </gauge:SfCircularGauge>
+    TickStroke="Blue" LabelStroke="#9E9E9E" SmallTickStroke="Blue">
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -193,22 +197,25 @@ The major and minor ticks can be positioned far away from the rim using the foll
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge>
+    <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-                <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
-                                     MinorTicksPerInterval="3" TickPosition="Custom"
-                                     MajorTickOffset="0.5" MinorTickOffset="0.5"
-                                    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
 
-                </gauge:CircularScale>
+    MinorTicksPerInterval="3" TickPosition="Custom"
 
-            </gauge:SfCircularGauge.Scales>
+    MajorTickOffset="0.5" MinorTickOffset="0.5"
 
-        </gauge:SfCircularGauge>
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-        {% endhighlight %}
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
 
 {% highlight c# %}
 
@@ -249,8 +256,11 @@ The major and minor ticks can be positioned far away from the rim using the foll
     They are:
 
 1.	Inside (Default)
+
 2.	Outside
+
 3.	Cross
+
 4.	Custom
 
 {% tabs %}
@@ -259,17 +269,17 @@ The major and minor ticks can be positioned far away from the rim using the foll
 
     <gauge:SfCircularGauge>
 
-            <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-                <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
-                                     MinorTicksPerInterval="3" TickPosition="Outside"
-                                    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="9"
 
-                </gauge:CircularScale>
+    MinorTicksPerInterval="3" TickPosition="Outside" TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-            </gauge:SfCircularGauge.Scales>
+    </gauge:CircularScale>
 
-        </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 
 {% endhighlight %}

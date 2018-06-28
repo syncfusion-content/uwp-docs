@@ -20,33 +20,33 @@ The [`GaugeHeader`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfG
 
     <gauge:SfCircularGauge HeaderAlignment="Center">
 
-     <gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge.GaugeHeader>
 
     <TextBlock Text="Temperature (K)"
 
-       Height="40" Width="100"
+    Height="40" Width="100"
 
-        FontSize="13" Foreground="Black"/>
+    FontSize="13" Foreground="Black"/>
 
-     </gauge:SfCircularGauge.GaugeHeader>
+    </gauge:SfCircularGauge.GaugeHeader>
 
-     <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-     <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-     TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-      <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-      </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-       </gauge:CircularScale>
+    </gauge:CircularScale>
 
-      </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-     </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -128,35 +128,35 @@ It includes the following options:
 
 {% highlight xml %}
 
-      <gauge:SfCircularGauge HeaderAlignment="Top">
+    <gauge:SfCircularGauge HeaderAlignment="Top">
 
-       <gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge.GaugeHeader>
 
-        <TextBlock Text="Temperature (K)"
+    <TextBlock Text="Temperature (K)"
 
-          Height="40" Width="100"
+    Height="40" Width="100"
 
-           FontSize="13" Foreground="Black"/>
+    FontSize="13" Foreground="Black"/>
 
-      </gauge:SfCircularGauge.GaugeHeader>
+    </gauge:SfCircularGauge.GaugeHeader>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-       TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-       <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-        <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-         </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-           </gauge:CircularScale>
+    </gauge:CircularScale>
 
-         </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-       </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -216,35 +216,35 @@ The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfu
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.42,0.6">
+    <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.42,0.6">
 
-     <gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge.GaugeHeader>
 
-     <TextBlock Text="Temperature (K)"
+    <TextBlock Text="Temperature (K)"
 
-      Height="40" Width="100"
+    Height="40" Width="100"
 
-      FontSize="13" Foreground="Black"/>
+    FontSize="13" Foreground="Black"/>
 
-      </gauge:SfCircularGauge.GaugeHeader>
+    </gauge:SfCircularGauge.GaugeHeader>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-       <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-       TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-       <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-       <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-       </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-       </gauge:CircularScale>
+    </gauge:CircularScale>
 
-      </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
-      </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -306,35 +306,35 @@ You can customize the header’s text by using the `FontFamily`, `FontStyle`, `F
 
 {% highlight xml %}
 
-     <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.42,0.6" 
+    <gauge:SfCircularGauge  HeaderAlignment="Custom" GaugeHeaderPosition="0.42,0.6" 
 
-      FontFamily="Monotype Corsiva" FontSize="15"
+    FontFamily="Monotype Corsiva" FontSize="15"
 
-      FontStyle="Italic"  Foreground="Blue">
+    FontStyle="Italic"  Foreground="Blue">
 
-     <gauge:SfCircularGauge.GaugeHeader>
+    <gauge:SfCircularGauge.GaugeHeader>
 
-       <TextBlock Text="Temperature (K)"
+    <TextBlock Text="Temperature (K)"
 
-       Height="40" Width="100" />
+    Height="40" Width="100" />
 
-      </gauge:SfCircularGauge.GaugeHeader>
+    </gauge:SfCircularGauge.GaugeHeader>
 
-      <gauge:SfCircularGauge.Scales>
+    <gauge:SfCircularGauge.Scales>
 
-      <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+    <gauge:CircularScale Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
 
-       TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-      <gauge:CircularScale.Pointers>
+    <gauge:CircularScale.Pointers>
 
-     <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-     </gauge:CircularScale.Pointers>
+    </gauge:CircularScale.Pointers>
 
-     </gauge:CircularScale>
+    </gauge:CircularScale>
 
-     </gauge:SfCircularGauge.Scales>
+    </gauge:SfCircularGauge.Scales>
 
     </gauge:SfCircularGauge>
 
