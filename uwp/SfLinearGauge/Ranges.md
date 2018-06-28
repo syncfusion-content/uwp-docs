@@ -1,190 +1,719 @@
 ---
 layout: post
-title: Ranges | SfLinearGauge | uwp | Syncfusion
-description: Ranges 
+title: Ranges| SfLinearGauge | uwp | Syncfusion
+description: Ranges
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Ranges
+# Ranges 
 
-Ranges of the linear scale are a collection of the linear range. A linear range is a visual element which starts at a specified **StartValue** and ends at a specified **EndValue** within the linear scale. These start and end values are mentioned with the help of **LinearRange** class. 
+Range is a visual element, which begins and ends at specified values within a scale. You can add any number of ranges to a scale using the array of range objects.
 
-## Customizing Ranges
+## Setting start and end values for range
 
-A range shows the start and end values of the inner divisions within the linear scale’s whole range. The ranges UI element is customized by changing **RangeStroke** of the linear range. The appearance of linear range is customized by setting the **StartWidth** and **EndWidth** properties. With the help of the **RangeOffset** property, the linear range can be positioned with respect to the linear scale. By setting **RangeOpacity** of LinearRange**,** the opacity of the range can be modified.
+The start and end values of ranges are set using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange~EndValue.html) properties.
 
 {% tabs %}
-{% highlight xaml %}
 
-        <Gauges:SfLinearGauge>
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale>
-                    <Gauges:LinearScale.Ranges>
-                        <Gauges:LinearRange StartValue="0" EndValue="35" 
+{% highlight xml %}
+
+    <gauge:SfLinearGauge>
+
+        <gauge:SfLinearGauge.MainScale>
+
+            <gauge:LinearScale     Interval="10" 
+                                   MajorTickStroke="Gray" MajorTickSize="25" 
+                                   MinorTickSize="12" LabelSize="15" ScaleBarSize="20"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+
+                <gauge:LinearScale.Ranges>
+
+                    <gauge:LinearRange StartValue="0" EndValue="60"
+                                           RangeStroke="#27BEB7"  StartWidth="10"
+                                           EndWidth="10" RangeOffset="0.4" />
+
+                </gauge:LinearScale.Ranges>
+
+            </gauge:LinearScale>
+
+        </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Interval = 10;
+
+            linearScale.LabelSize = 15;
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x42, 0x42, 0x42));
+
+            linearScale.MajorTickSize = 25;
+
+            linearScale.MinorTickSize = 12;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 60;
+
+            linearRange.RangeStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x27, 0xBE, 0xB7));
+
+            linearRange.StartWidth = 10;
+
+            linearRange.EndWidth = 10;
+
+            linearRange.RangeOffset = 0.4;
+
+            linearScale.Ranges.Add(linearRange);
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img1.png)
+
+## Range customization
+
+The UI element of a range is customized by changing the [`RangeStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange~RangeStroke.html) of the linear range, and the appearance of linear range is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange~StartWidth.html) and [`EndWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange~EndWidth.html) properties. By setting the [`RangeOpacity`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange~RangeOpacity.html) of LinearRange, the opacity of the range can be modified.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <gauge:SfLinearGauge>
+
+        <gauge:SfLinearGauge.MainScale>
+
+            <gauge:LinearScale     Interval="10" 
+                                   MajorTickStroke="Gray" MajorTickSize="25" 
+                                   MinorTickSize="12" LabelSize="15" ScaleBarSize="20"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+
+                <gauge:LinearScale.Ranges>
+
+                    <gauge:LinearRange StartValue="0" EndValue="50"
+                                           RangeStroke="#F95C85"  StartWidth="5"
+                                           EndWidth="20"  RangeOpacity="1"/>
+
+                </gauge:LinearScale.Ranges>
+
+            </gauge:LinearScale>
+
+        </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+      
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Interval = 10;
+
+            linearScale.LabelSize = 15;
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x42, 0x42, 0x42));
+
+            linearScale.MajorTickSize = 25;
+
+            linearScale.MinorTickSize = 12;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 50;
+
+            linearRange.RangeOpacity = 1;
+
+            linearRange.RangeStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xF9, 0x5C, 0x85));
+
+            linearRange.StartWidth = 5;
+
+            linearRange.EndWidth = 20;
+
+            linearScale.Ranges.Add(linearRange);
+
+            sfLinearGauge.MainScale = linearScale;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img2.png)
+
+## Binding range stroke to ticks and labels
+
+You can bind the range’s stroke to tick lines and labels within its range by setting the [`BindWithRangeStrokeToLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~BindRangeStrokeToLabels.html). Stroke of the labels can be set related to stroke of the specified ranges. Similarly, by setting the [`BindWithRangeStrokeToTicks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~BindRangeStrokeToTicks.html), stroke of the ticks can be set related to stroke of the specified ranges.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <gauge:SfLinearGauge>
+
+        <gauge:SfLinearGauge.MainScale>
+
+            <gauge:LinearScale     Interval="10" BindRangeStrokeToLabels="True" 
+                                   BindRangeStrokeToTicks="True"
+                                   MajorTickStroke="Gray" MajorTickSize="25" 
+                                   MinorTickSize="12" LabelSize="15" ScaleBarSize="20"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+
+                <gauge:LinearScale.Ranges>
+
+                    <gauge:LinearRange StartValue="0" EndValue="35" 
+                                            StartWidth="15" EndWidth="15" 
+                                            RangeOffset="5" RangeStroke="Green"/>
+                    <gauge:LinearRange StartValue="35" EndValue="65" 
+                                            StartWidth="15" EndWidth="15" 
+                                            RangeOffset="5" RangeStroke="Yellow"/>
+                    <gauge:LinearRange StartValue="65" EndValue="100" 
+                                            StartWidth="15" EndWidth="15" 
+                                            RangeOffset="5" RangeStroke="Red"/>
+
+                </gauge:LinearScale.Ranges>
+
+            </gauge:LinearScale>
+
+        </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Interval = 10;
+
+            linearScale.LabelSize = 15;
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x42, 0x42, 0x42));
+
+            linearScale.MajorTickSize = 25;
+
+            linearScale.MinorTickSize = 12;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            linearScale.BindRangeStrokeToLabels = true;
+
+            linearScale.BindRangeStrokeToTicks = true;
+
+            sfLinearGauge.MainScale = linearScale;
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 35;
+
+            linearRange.StartWidth = 15;
+
+            linearRange.EndWidth = 15;
+
+            linearRange.RangeOffset = 5;
+
+            linearRange.RangeStroke = new SolidColorBrush(Colors.Green);
+
+            linearScale.Ranges.Add(linearRange);
+
+            LinearRange linearRange1 = new LinearRange();
+
+            linearRange1.StartValue = 35;
+
+            linearRange1.EndValue = 65;
+
+            linearRange1.StartWidth = 15;
+
+            linearRange1.EndWidth = 15;
+
+            linearRange1.RangeOffset = 5;
+
+            linearRange1.RangeStroke = new SolidColorBrush(Colors.Yellow);
+
+            linearScale.Ranges.Add(linearRange1);
+
+            LinearRange linearRange2 = new LinearRange();
+
+            linearRange2.StartValue = 65;
+
+            linearRange2.EndValue = 100;
+
+            linearRange2.StartWidth = 15;
+
+            linearRange2.EndWidth = 15;
+
+            linearRange2.RangeOffset = 5;
+
+            linearRange2.RangeStroke = new SolidColorBrush(Colors.Red);
+
+            linearScale.Ranges.Add(linearRange2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img3.png)
+
+## Setting range position
+
+	Using the [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange~RangeOffset.html) property, the linear range can be positioned with respect to the linear scale.
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <gauge:SfLinearGauge>
+
+        <gauge:SfLinearGauge.MainScale>
+
+            <gauge:LinearScale     Interval="10" 
+                                   MajorTickStroke="Gray" MajorTickSize="25" 
+                                   MinorTickSize="12" LabelSize="15" ScaleBarSize="20"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+
+                <gauge:LinearScale.Ranges>
+
+                    <gauge:LinearRange StartValue="0" EndValue="60"
+                                           RangeStroke="#27BEB7" RangeOffset="40" StartWidth="10"
+                                           EndWidth="10"/>
+
+                </gauge:LinearScale.Ranges>
+
+            </gauge:LinearScale>
+
+        </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Interval = 10;
+
+            linearScale.LabelSize = 15;
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x42, 0x42, 0x42));
+
+            linearScale.MajorTickSize = 25;
+
+            linearScale.MinorTickSize = 12;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 60;
+
+            linearRange.RangeOffset = 40;
+
+            linearRange.RangeStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x27, 0xBE, 0xB7));
+
+            linearRange.StartWidth = 10;
+
+            linearRange.EndWidth = 10;
+
+            linearScale.Ranges.Add(linearRange);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img4.png)
+
+### Adding multiple ranges
+
+You can add “n” number of ranges to a scale using the [`LinearRange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange.html) property of range as shown in the following code.
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <gauge:SfLinearGauge>
+
+        <gauge:SfLinearGauge.MainScale>
+
+            <gauge:LinearScale     Interval="10" 
+                                   MajorTickStroke="Gray" MajorTickSize="25" 
+                                   MinorTickSize="12" LabelSize="15" ScaleBarSize="20"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+
+                <gauge:LinearScale.Ranges>
+
+                    <gauge:LinearRange StartValue="0" EndValue="35" 
                                             StartWidth="25" EndWidth="10" 
                                             RangeOffset="5" RangeOpacity="1"
                                             RangeStroke="Green"/>
-                        <Gauges:LinearRange StartValue="65" EndValue="100" 
+
+                    <gauge:LinearRange StartValue="65" EndValue="100" 
                                             StartWidth="10" EndWidth="25" 
                                             RangeOffset="5" RangeOpacity="1"
                                             RangeStroke="Red"/>
-                    </Gauges:LinearScale.Ranges>
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge>
+
+                </gauge:LinearScale.Ranges>
+
+            </gauge:LinearScale>
+
+        </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-           SfLinearGauge linear = new SfLinearGauge();
-            LinearScale _mainScale = new LinearScale();
-            _mainScale.Ranges.Add(new LinearRange()
-            {
-                StartValue = 0,
-                EndValue = 35,
-                StartWidth = 25,
-                EndWidth = 10,
-                RangeOffset = 5,
-                RangeOpacity = 1,
-                RangeStroke = new SolidColorBrush(Colors.Green)
-            });
-            _mainScale.Ranges.Add(new LinearRange()
-            {
-                StartValue = 65,
-                EndValue = 100,
-                StartWidth = 10,
-                EndWidth = 25,
-                RangeOffset = 5,
-                RangeOpacity = 1,
-                RangeStroke = new SolidColorBrush(Colors.Red)
-            });
-            linear.MainScale = _mainScale;
-            this.Grid.Children.Add(linear);
-            
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Interval = 10;
+
+            linearScale.LabelSize = 15;
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x42, 0x42, 0x42));
+
+            linearScale.MajorTickSize = 25;
+
+            linearScale.MinorTickSize = 12;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 35;
+
+            linearRange.StartWidth = 25;
+
+            linearRange.EndWidth = 10;
+
+            linearRange.RangeOffset = 5;
+
+            linearRange.RangeOpacity = 1;
+
+            linearRange.RangeStroke = new SolidColorBrush(Colors.Green);
+
+            linearScale.Ranges.Add(linearRange);
+
+            LinearRange linearRange1 = new LinearRange();
+
+            linearRange1.StartValue = 65;
+
+            linearRange1.EndValue = 100;
+
+            linearRange1.StartWidth = 10;
+
+            linearRange1.EndWidth = 25;
+
+            linearRange1.RangeOffset = 5;
+
+            linearRange1.RangeOpacity = 1;
+
+            linearRange1.RangeStroke = new SolidColorBrush(Colors.Red);
+
+            linearScale.Ranges.Add(linearRange1);
+
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Ranges_images/Ranges_img1.jpeg)
+![](Ranges_images/Ranges_img5.png)
 
-## Binding RangeStroke to Ticks and Labels
+### Setting gradient color for range
 
-User can bind the range’s stroke to the tick lines and labels within its range by setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set related to the stroke of the specified ranges. Similarly, by setting **BindWithRangeStrokeToTicks**, the stroke of the ticks can be set related to the stroke of the specified ranges.
+You can give smooth color transition to range to specifying the different colors based on range value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange~GradientStops.html) property.
 
 {% tabs %}
-{% highlight xaml %}
 
-       <Gauges:SfLinearGauge>
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale BindRangeStrokeToLabels="True"
-                                    BindRangeStrokeToTicks="True">
-                    <Gauges:LinearScale.Ranges>
-                        <Gauges:LinearRange StartValue="0" EndValue="35" 
-                                            StartWidth="15" EndWidth="15" 
-                                            RangeOffset="5" RangeStroke="Green"/>
-                        <Gauges:LinearRange StartValue="35" EndValue="65" 
-                                            StartWidth="15" EndWidth="15" 
-                                            RangeOffset="5" RangeStroke="Yellow"/>
-                        <Gauges:LinearRange StartValue="65" EndValue="100" 
-                                            StartWidth="15" EndWidth="15" 
-                                            RangeOffset="5" RangeStroke="Red"/>
-                    </Gauges:LinearScale.Ranges>
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge>
+{% highlight xml %}
 
+     <gauge:SfLinearGauge>
+
+        <gauge:SfLinearGauge.MainScale>
+
+            <gauge:LinearScale     Interval="10" 
+                                   MajorTickStroke="Gray" MajorTickSize="25" 
+                                   MinorTickSize="12" LabelSize="15" ScaleBarSize="20"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+
+                <gauge:LinearScale.Ranges>
+
+                    <gauge:LinearRange StartValue="0" EndValue="100" 
+                                            StartWidth="20" EndWidth="20" 
+                                            RangeOffset="5">
+                        
+                        <gauge:LinearRange.GradientStops>
+                            <gauge:GaugeGradientStop Value="0" Color="#FFF9C2C3"/>
+                            <gauge:GaugeGradientStop Value="100" Color="#FFD91D71"/>
+                        </gauge:LinearRange.GradientStops>
+
+                    </gauge:LinearRange>
+
+                </gauge:LinearScale.Ranges>
+
+            </gauge:LinearScale>
+
+        </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-           SfLinearGauge linear = new SfLinearGauge();
-            LinearScale _mainScale = new LinearScale();
-            _mainScale.BindRangeStrokeToLabels = true;
-            _mainScale.BindRangeStrokeToTicks = true;
-            _mainScale.Ranges.Add(new LinearRange()
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Interval = 10;
+
+            linearScale.LabelSize = 15;
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x42, 0x42, 0x42));
+
+            linearScale.MajorTickSize = 25;
+
+            linearScale.MinorTickSize = 12;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 100;
+
+            linearRange.StartWidth = 20;
+
+            linearRange.EndWidth = 20;
+
+            linearRange.RangeOffset = 5;
+
+            ObservableCollection<GaugeGradientStop> gradientColor = new ObservableCollection<GaugeGradientStop>()
             {
-                StartValue = 0,
-                EndValue = 35,
-                StartWidth = 15,
-                EndWidth = 15,
-                RangeOffset = 5,
-                RangeStroke = new SolidColorBrush(Colors.Green)
-            });
-            _mainScale.Ranges.Add(new LinearRange()
-            {
-                StartValue = 35,
-                EndValue = 65,
-                StartWidth = 15,
-                EndWidth = 15,
-                RangeOffset = 5,
-                RangeStroke = new SolidColorBrush(Colors.Yellow)
-            });
-            _mainScale.Ranges.Add(new LinearRange()
-            {
-                StartValue = 65,
-                EndValue = 100,
-                StartWidth = 25,
-                EndWidth = 10,
-                RangeOffset = 5,
-                RangeStroke = new SolidColorBrush(Colors.Red)
-            });
-            linear.MainScale = _mainScale;
-            this.Grid.Children.Add(linear);
-            
+                new GaugeGradientStop() {Value = 0, Color = Color.FromArgb(0xff, 0xF9, 0xC2, 0xC3) },
+                new GaugeGradientStop() {Value = 100 ,Color = Color.FromArgb(0xff, 0xD9, 0x1D, 0x71) }
+            };
+
+            linearRange.GradientStops = gradientColor;
+
+            linearScale.Ranges.Add(linearRange);
+
 {% endhighlight %}
+
 {% endtabs %}
-![](Ranges_images/Ranges_img2.jpeg)
 
-## Range Position
+![](Ranges_images/Ranges_img6.png)
 
-The range can be placed above or below the scale by choosing the options available in the **RangePosition** property.
+### Multiple range with multiple gradient
 
-They are:
-
-1. Above(Default)
-2. Below
+You can add “n” number of ranges with gradient color to a scale using the [`LinearRange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange.html) property of range as shown in the following code.
 
 {% tabs %}
-{% highlight xaml %}
 
-       <Gauges:SfLinearGauge>
-            <Gauges:SfLinearGauge.MainScale>
-                <Gauges:LinearScale RangePosition="Above">                      
-                    <Gauges:LinearScale.Ranges>
-                        <Gauges:LinearRange StartValue="65" EndValue="100" 
+{% highlight xml %}
+
+    <gauge:SfLinearGauge>
+
+        <gauge:SfLinearGauge.MainScale>
+
+            <gauge:LinearScale     Interval="10" 
+                                   MajorTickStroke="Gray" MajorTickSize="25" 
+                                   MinorTickSize="12" LabelSize="15" ScaleBarSize="20"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+
+                <gauge:LinearScale.Ranges>
+
+                    <gauge:LinearRange StartValue="0" EndValue="35" 
+                                            StartWidth="25" EndWidth="10" 
+                                            RangeOffset="5" >
+
+                        <gauge:LinearRange.GradientStops>
+                            <gauge:GaugeGradientStop Value="0" Color="#FFF9C2C3"/>
+                            <gauge:GaugeGradientStop Value="35" Color="#FFD91D71"/>
+                        </gauge:LinearRange.GradientStops>
+
+                    </gauge:LinearRange>
+
+                    <gauge:LinearRange      StartValue="65" EndValue="100" 
                                             StartWidth="10" EndWidth="25" 
-                                            RangeOffset="5" RangeOpacity="1"
-                                            RangeStroke="Red"/>
-                    </Gauges:LinearScale.Ranges>
-                </Gauges:LinearScale>
-            </Gauges:SfLinearGauge.MainScale>
-        </Gauges:SfLinearGauge>
+                                            RangeOffset="5" >
+
+                        <gauge:LinearRange.GradientStops>
+                            <gauge:GaugeGradientStop Value="65" Color="Orange"/>
+                            <gauge:GaugeGradientStop Value="100" Color="Yellow"/>
+                        </gauge:LinearRange.GradientStops>
+
+                    </gauge:LinearRange>
+
+                </gauge:LinearScale.Ranges>
+
+            </gauge:LinearScale>
+
+        </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-           SfLinearGauge linear = new SfLinearGauge();
-            LinearScale _mainScale = new LinearScale();
-            _mainScale.ScaleBarLength = 300;
-            _mainScale.RangePosition = LinearRangesPosition.Above;
-            _mainScale.Ranges.Add(new LinearRange()
+            SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Interval = 10;
+
+            linearScale.LabelSize = 15;
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x42, 0x42, 0x42));
+
+            linearScale.MajorTickSize = 25;
+
+            linearScale.MinorTickSize = 12;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
+
+            LinearRange linearRange = new LinearRange();
+
+            linearRange.StartValue = 0;
+
+            linearRange.EndValue = 35;
+
+            linearRange.StartWidth = 25;
+
+            linearRange.EndWidth = 10;
+
+            linearRange.RangeOffset = 5;
+
+            ObservableCollection<GaugeGradientStop> gradientColor = new ObservableCollection<GaugeGradientStop>()
             {
-                StartValue = 65,
-                EndValue = 100,
-                StartWidth = 10,
-                EndWidth = 25,
-                RangeOffset = 5,
-                RangeOpacity = 1,
-                RangeStroke = new SolidColorBrush(Colors.Red)
-            });
-            linear.MainScale = _mainScale;
-            this.Grid.Children.Add(linear);
+                new GaugeGradientStop() {Value = 0, Color = Color.FromArgb(0xff, 0xF9, 0xC2, 0xC3) },
+                new GaugeGradientStop() {Value = 35 ,Color = Color.FromArgb(0xff, 0xD9, 0x1D, 0x71) }
+            };
+
+            linearRange.GradientStops = gradientColor;
+
+
+            linearScale.Ranges.Add(linearRange);
+
+            LinearRange linearRange1 = new LinearRange();
+
+            linearRange1.StartValue = 65;
+
+            linearRange1.EndValue = 100;
+
+            linearRange1.StartWidth = 10;
+
+            linearRange1.EndWidth = 25;
+
+            linearRange1.RangeOffset = 5;
+
+            ObservableCollection<GaugeGradientStop> gradientColor1 = new ObservableCollection<GaugeGradientStop>()
+            {
+                new GaugeGradientStop() {Value = 65, Color = Colors.Orange },
+                new GaugeGradientStop() {Value = 100 ,Color = Colors.Yellow }
+            };
+
+            linearRange1.GradientStops = gradientColor1;
+
+            linearScale.Ranges.Add(linearRange1);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Ranges_images/Ranges_img3.jpeg)
+![](Ranges_images/Ranges_img7.png)
