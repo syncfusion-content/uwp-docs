@@ -11,9 +11,9 @@ documentation: ug
 
 The Holidays support is used to highlight the non-working days in the Gantt chart.
 
-It can be specify using the [`Holidays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html) property in the SfGantt, which holds a collection of ['GanttHoliday'][https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html].
+It can be specify using the [`Holidays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html) property in the SfGantt, which holds a collection of [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html).
 
-The following properties in ['GanttHoliday'](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html) are used to define the holidays.
+The following properties in [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html) are used to define the holidays.
 
 * [`Day`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.GanttHoliday~Day.html) property can be used to specify the date of holiday.
 
