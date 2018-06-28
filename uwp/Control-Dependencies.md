@@ -1118,7 +1118,7 @@ Syncfusion.SfSpreadsheet.UWP
 </tr>
 </table>
 
-### Include Chart to SfSpreadsheet
+### Import Chart, Sparklines from Excel to SfSpreadsheet
 
 <table>
 <tr>
@@ -1132,7 +1132,7 @@ Syncfusion.ExcelChartToImageConverter.UWP <br/>
 Syncfusion.SfChart.UWP
 </td>
 <td> 
-Syncfusion.SfSpreadsheet.UWP
+Syncfusion.SfSpreadsheetHelper.UWP
 </td>
 </tr>
 </table>
