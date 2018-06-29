@@ -6,7 +6,7 @@ control: SfGantt
 documentation: ug
 ---
 
-#Events
+# Events
 
 **BeginCellEdit**
 
