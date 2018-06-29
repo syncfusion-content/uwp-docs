@@ -646,6 +646,31 @@ private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventA
 {% endhighlight %}
 {% endtabs %}
 
+## Freezing Columns
+
+You can freeze the columns in view at the left and right side like in excel by setting [SfTreeGrid.FrozenColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) and [SfTreeGrid.FooterColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html) properties.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid Name="treeGrid" 
+                        AutoExpandMode="RootNodesExpanded"
+                        ChildPropertyName="Children"
+                        FrozenColumnCount="2"
+						FooterColumnCount="2"
+                        ItemsSource="{Binding EmployeeDetails}">
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.FrozenColumnCount = 2;
+this.treeGrid.FooterColumnCount = 2;
+	
+{% endhighlight %}
+{% endtabs %}
+
+![](Columns_images/Columns_img6.png)
+
 ## Column Sizing
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnSizer.html) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~ColumnSizer.html) property. 
