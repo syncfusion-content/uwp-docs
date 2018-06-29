@@ -1544,8 +1544,8 @@ public class ItemsSourceSelector : IItemsSourceSelector
         if (record == null)
             return null;
   
-        var orderinfo = record as OrderDetails;
-        var countryName = orderinfo.ShipCountry;
+        var orderDetails = record as OrderDetails;
+        var countryName = orderDetails.ShipCountry;
   
         var viewModel = dataContext as ViewModel;
   
