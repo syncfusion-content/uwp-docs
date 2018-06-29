@@ -1,37 +1,68 @@
 ---
 layout: post
 title: Orientation | SfLinearGauge | uwp | Syncfusion
-description: Orientation 
+description: Labels 
 platform: uwp
-control: SfLinearGauge
+control: Orientation
 documentation: ug
 ---
 
 # Orientation
 
-The orientation of the linear gauge can be changed by setting the **Orientation** property of the SfLinearGauge. By default orientation of SfLinearGauge is Horizontal.
+The [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control supports horizontal and vertical orientations. By default, the [`LinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) is rendered with horizontal orientation. You can change the orientation using the [`Orientation`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge~Orientation.html) property.
 
 {% tabs %}
-{% highlight xaml %}
 
-    <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal"/>
-    
+{% highlight xml %}
+
+     <gauge:SfLinearGauge Orientation="Vertical">
+
+        <gauge:SfLinearGauge.MainScale>
+
+            <gauge:LinearScale     Interval="10" 
+                                   MajorTickStroke="Gray" MajorTickSize="25" 
+                                   MinorTickSize="12" LabelSize="15" ScaleBarSize="20"
+                                   MinorTickStroke="Gray" LabelStroke="#424242"
+                                   MinorTicksPerInterval="3" ScaleBarLength="300">
+
+            </gauge:LinearScale>
+
+        </gauge:SfLinearGauge.MainScale>
+
+    </gauge:SfLinearGauge>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfLinearGauge linear = new SfLinearGauge();
-    linear.Orientation = Orientation.Horizontal;
-    this.Grid.Children.Add(linear);
+          SfLinearGauge sfLinearGauge = new SfLinearGauge();
+
+            sfLinearGauge.Orientation = Orientation.Vertical;
+
+            LinearScale linearScale = new LinearScale();
+
+            linearScale.Interval = 10;
+
+            linearScale.LabelSize = 15;
+
+            linearScale.MajorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.MinorTickStroke = new SolidColorBrush(Colors.Gray);
+
+            linearScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x42, 0x42, 0x42));
+
+            linearScale.MajorTickSize = 25;
+
+            linearScale.MinorTickSize = 12;
+
+            linearScale.ScaleBarLength = 300;
+
+            linearScale.MinorTicksPerInterval = 3;
+
+            sfLinearGauge.MainScale = linearScale;
 
 {% endhighlight %}
+
 {% endtabs %}
 
-<table>
-<tr>
-<td>
-{{'![](Orientation_images/Orientation_img2.png)'| markdownify }}
-</td><td>
-{{'![](Orientation_images/Orientation_img1.jpeg)'| markdownify }}
-</td></tr>
-</table>
+![](Orientation_images/Orientation_img1.png)

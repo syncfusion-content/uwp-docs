@@ -6,193 +6,796 @@ platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
+# Ranges 
 
-# Ranges
+Range is a visual element, which begins and ends at the specified values within a scale.
 
-A range is a visual element which begins and ends at specified values within a scale. 
+## Setting start and end values for range
 
-## Ranges Customization
-
-Ranges start and end values are set by the **StartValue** and **EndValue** properties of the range. A range’s UI is customized by the Stroke and **StrokeThickness** properties.
+The start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StartValue.html)  and [`EndValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~EndValue.html)  properties.
 
 {% tabs %}
-{% highlight xaml %}
 
-        <syncfusion:SfCircularGauge x:Name="gauge">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale >
-                    <syncfusion:CircularScale.Ranges>
-                        <syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
-                        <syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
-                        <syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
-                    </syncfusion:CircularScale.Ranges>
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+    <gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+
+    <gauge:CircularScale.Ranges>
+
+    <gauge:CircularRange StartValue="0" EndValue="50" Stroke="#D1DBDB"/>
+
+    </gauge:CircularScale.Ranges>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale circularScale = new CircularScale();
+
+circularScale.Radius = 150;
+
+circularScale.RimStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x57, 0xb2, 0xc6));
+
+circularScale.TickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.SmallTickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.RimStrokeThickness = 8;
+
+circularScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x99, 0x99, 0x99));
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 0;
+
+circularRange.EndValue = 50;
+
+circularRange.Stroke = new SolidColorBrush(Color.FromArgb(0xff, 0xd1, 0xdb, 0xdb));
+
+circularScale.Ranges.Add(circularRange);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+circularScale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(circularScale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img1.png)
+
+## Range customization
+
+A range’s UI is customized by using the [`Stroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~Stroke.html) , [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StrokeThickness.html) , and [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html)  properties. First, set the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  property to custom, and then set the offset.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale RangePosition="Custom" RangeOffset="0.55"  Radius="150" RimStroke="#39B2C6" 
     
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _scale = new CircularScale();
-            _scale.Ranges.Add(new CircularRange()
-            {
-                StartValue = 0,
-                EndValue = 40,
-                Stroke = new SolidColorBrush(Colors.Green),
-                StrokeThickness = 10
-            });
-            _scale.Ranges.Add(new CircularRange()
-            {
-                StartValue = 40,
-                EndValue = 60,
-                Stroke = new SolidColorBrush(Colors.Yellow),
-                StrokeThickness = 10
-            });
-            _scale.Ranges.Add(new CircularRange()
-            {
-                StartValue = 60,
-                EndValue = 100,
-                Stroke = new SolidColorBrush(Colors.Red),
-                StrokeThickness = 10
-            });
-            circularGauge.Scales.Add(_scale);
-            this.Grid.Children.Add(circularGauge);
+    RimStrokeThickness="8" TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
 
-{% endhighlight %}
-{% endtabs %}
+    <gauge:CircularScale.Ranges>
 
-![](Ranges_images/Ranges_img1.jpeg)
+    <gauge:CircularRange StartValue="0" EndValue="50" Stroke="Pink" StrokeThickness="40"/>
 
-## Range’s Width
+    </gauge:CircularScale.Ranges>
 
-The appearance of Circular range is customized by setting the **StartWidth** and **EndWidth** properties.
+    <gauge:CircularScale.Pointers>
 
-{% tabs %}
-{% highlight xaml %}
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
 
-       <syncfusion:SfCircularGauge x:Name="gauge">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale  RangePosition="Inside" Radius="200">
-                    <syncfusion:CircularScale.Ranges>
-                        <syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
-                        <syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
-                        <syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
-                    </syncfusion:CircularScale.Ranges>
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
-        
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _scale = new CircularScale();
-            _scale.Radius = 200;
-            _scale.RangePosition = RangePosition.Inside;
-            _scale.Ranges.Add(new CircularRange()
-            { 
-                StartValue = 0, 
-                EndValue = 40, 
-                Stroke = new SolidColorBrush(Colors.Green), 
-                StrokeThickness = 10,
-                StartWidth = 1,
-                EndWidth = 10
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
 
-            });
-            _scale.Ranges.Add(new CircularRange()
-            { 
-                StartValue = 40,
-                EndValue = 60,
-                Stroke = new SolidColorBrush(Colors.Yellow), 
-                StrokeThickness = 10,
-                StartWidth = 1,
-                EndWidth = 10
-            });
-            _scale.Ranges.Add(new CircularRange() 
-            { 
-                StartValue = 60,
-                EndValue = 100,
-                Stroke = new SolidColorBrush(Colors.Red), 
-                StrokeThickness = 10,
-                StartWidth = 1,
-                EndWidth = 10
-            });
-            circularGauge.Scales.Add(_scale);
-            this.Grid.Children.Add(circularGauge);
+CircularScale circularScale = new CircularScale();
+
+circularScale.RangePosition = RangePosition.Custom;
+
+circularScale.RangeOffset = 0.55;
+
+circularScale.Radius = 150;
+
+circularScale.RimStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x57, 0xb2, 0xc6));
+
+circularScale.TickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.SmallTickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.RimStrokeThickness = 8;
+
+circularScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x99, 0x99, 0x99));
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 0;
+
+circularRange.EndValue = 50;
+
+circularRange.Stroke = new SolidColorBrush(Colors.Pink);
+
+circularRange.StrokeThickness = 40;
+
+circularScale.Ranges.Add(circularRange);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+circularScale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(circularScale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
-![](Ranges_images/Ranges_img2.jpeg)
+![](Ranges_images/Ranges_img2.png)
 
-## Binding Range Stroke
+## Setting width for range
 
-You can bind the range’s stroke to the tick lines and labels within its range by setting the **BindRangeStrokeToLabels** and **BindRangeStrokeToTicks** properties to true.
+The appearance of the circular range is customized by setting the [`StartWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~StartWidth.html)  and [`EndWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularRange~EndWidth.html)  properties.
 
 {% tabs %}
-{% highlight xaml %}
 
-     <syncfusion:SfCircularGauge x:Name="gauge">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale  BindRangeStrokeToLabels="True"
-                                               BindRangeStrokeToTicks="True">
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
-        
+{% highlight xml %}
+
+     <gauge:SfCircularGauge>
+
+     <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+
+    <gauge:CircularScale.Ranges>
+
+    <gauge:CircularRange StartValue="10" EndValue="80" StrokeThickness ="10" StartWidth="1" EndWidth="10" Stroke="#D1DBDB"/>
+
+    </gauge:CircularScale.Ranges>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-      SfCircularGauge circularGauge = new SfCircularGauge();
-        CircularScale _scale = new CircularScale();
-        _scale.BindRangeStrokeToLabels = true;
-        _scale.BindRangeStrokeToTicks = true;
-        circularGauge.Scales.Add(_scale);
-        this.Grid.Children.Add(circularGauge);
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale circularScale = new CircularScale();
+
+circularScale.RangePosition = RangePosition.Inside;
+
+circularScale.Radius = 150;
+
+circularScale.RimStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x57, 0xb2, 0xc6));
+
+circularScale.TickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.SmallTickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.RimStrokeThickness = 8;
+
+circularScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x99, 0x99, 0x99));
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 10;
+
+circularRange.EndValue = 80;
+
+circularRange.StrokeThickness = 10;
+
+circularRange.StartWidth = 1;
+
+circularRange.EndWidth = 10;
+
+circularRange.Stroke = new SolidColorBrush(Color.FromArgb(0xff, 0xd1, 0xdb, 0xdb));
+
+circularScale.Ranges.Add(circularRange);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+circularScale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(circularScale);
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![](Ranges_images/Ranges_img3.png)
 
-## RangePosition
+## Binding range stroke
 
-The range can be placed inside the scale, outside the scale, or on the scale by selecting one of the options available in the RangePosition property. 
-
-These options are:
-
-1. Inside
-2. Outside
-3. SetAsGaugeRim (Default)
-4. Custom
+You can bind the range’s stroke to the tick lines and labels within its range by setting the [`BindRangeStrokeToLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~BindRangeStrokeToLabels.html)  and [`BindRangeStrokeToTicks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~BindRangeStrokeToTicks.html)  properties to true.
 
 {% tabs %}
-{% highlight xaml %}
 
-     <syncfusion:SfCircularGauge x:Name="gauge">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale RangePosition="Outside">
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
+{% highlight xml %}
+
+    <gauge:SfCircularGauge >
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  BindRangeStrokeToLabels="True" BindRangeStrokeToTicks="True" Radius="150">
+
+    <gauge:CircularScale.Ranges>
+
+    <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" />
+
+    <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" />
+
+    <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
+
+    </gauge:CircularScale.Ranges>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-           SfCircularGauge circularGauge = new SfCircularGauge();
-            CircularScale _scale = new CircularScale();
-            _scale.RangePosition = RangePosition.Outside;
-            circularGauge.Scales.Add(_scale);
-            this.Grid.Children.Add(circularGauge);
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale scale = new CircularScale();
+
+scale.Radius = 150;
+
+scale.BindRangeStrokeToLabels = true;
+
+scale.BindRangeStrokeToTicks = true;
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 0;
+
+circularRange.EndValue = 40;
+
+circularRange.Stroke = new SolidColorBrush(Colors.Green);
+
+circularRange.StrokeThickness = 10;
+
+scale.Ranges.Add(circularRange);
+
+CircularRange circularRange1 = new CircularRange();
+
+circularRange1.StartValue = 40;
+
+circularRange1.EndValue = 60;
+
+circularRange1.Stroke = new SolidColorBrush(Colors.Yellow);
+
+circularRange1.StrokeThickness = 10;
+
+scale.Ranges.Add(circularRange1);
+
+CircularRange circularRange2 = new CircularRange();
+
+circularRange2.StartValue = 60;
+
+circularRange2.EndValue = 100;
+
+circularRange2.Stroke = new SolidColorBrush(Colors.Red);
+
+circularRange2.StrokeThickness = 10;
+
+scale.Ranges.Add(circularRange2);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+scale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(scale);
 
 {% endhighlight %}
+
 {% endtabs %}
-![](Ranges_images/Ranges_img4.jpeg)
+
+![](Ranges_images/Ranges_img4.png)
+
+
+## Setting position for range
+
+The range can be placed inside the scale, outside the scale, or on the scale by using the following two ways:
+
+### Range position
+
+You can place the range by selecting one of the options available in the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  property.
+
+1.Inside
+
+2.Outside
+
+3.SetAsGaugeRim (Default)
+
+4.Custom
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  RangePosition="Outside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+
+    <gauge:CircularScale.Ranges>
+
+    <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" />
+
+    <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" />
+
+    <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
+
+    </gauge:CircularScale.Ranges>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale circularScale = new CircularScale();
+
+circularScale.RangePosition = RangePosition.Outside;
+
+circularScale.Radius = 150;
+
+circularScale.RimStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x57, 0xb2, 0xc6));
+
+circularScale.TickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.SmallTickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.RimStrokeThickness = 8;
+
+circularScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x99, 0x99, 0x99));
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 0;
+
+circularRange.EndValue = 40;
+
+circularRange.Stroke = new SolidColorBrush(Colors.Green);
+
+circularRange.StrokeThickness = 10;
+
+circularScale.Ranges.Add(circularRange);
+
+CircularRange circularRange1 = new CircularRange();
+
+circularRange1.StartValue = 40;
+
+circularRange1.EndValue = 60;
+
+circularRange1.Stroke = new SolidColorBrush(Colors.Yellow);
+
+circularRange1.StrokeThickness = 10;
+
+circularScale.Ranges.Add(circularRange1);
+
+CircularRange circularRange2 = new CircularRange();
+
+circularRange2.StartValue = 60;
+
+circularRange2.EndValue = 100;
+
+circularRange2.Stroke = new SolidColorBrush(Colors.Red);
+
+circularRange2.StrokeThickness = 10;
+
+circularScale.Ranges.Add(circularRange2);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+circularScale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(circularScale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img5.png)
+
+### Range offset
+
+You can place the range by using [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html)  property. First, set the [`RangePosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangePosition.html)  to custom, and then set the [`RangeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~RangeOffset.html) property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  RangePosition="Custom" RangeOffset="0.5" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+
+    <gauge:CircularScale.Ranges>
+
+    <gauge:CircularRange StartValue="0" EndValue="100" Stroke="#D1DBDB" StrokeThickness="8"/>
+
+    </gauge:CircularScale.Ranges>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale circularScale = new CircularScale();
+
+circularScale.RangeOffset = 0.5;
+
+circularScale.RangePosition = RangePosition.Custom;
+
+circularScale.Radius = 150;
+
+circularScale.RimStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x57, 0xb2, 0xc6));
+
+circularScale.TickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.SmallTickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.RimStrokeThickness = 8;
+
+circularScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x99, 0x99, 0x99));
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 0;
+
+circularRange.EndValue = 100;
+
+circularRange.StrokeThickness = 8;
+
+circularRange.Stroke = new SolidColorBrush(Color.FromArgb(0xff, 0xd1, 0xdb, 0xdb));
+
+circularScale.Ranges.Add(circularRange);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+circularScale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(circularScale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img6.png)
+
+## Setting multiple ranges
+
+In addition to the default range, you can add n number of ranges to a scale by using the [`Ranges`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.CircularScale~Ranges.html)  property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+
+    <gauge:CircularScale.Ranges>
+
+    <gauge:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
+
+    <gauge:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10" StartWidth="1" 
+    
+    EndWidth="10"/>
+
+    <gauge:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10" StartWidth="1" EndWidth="10"/>
+
+    </gauge:CircularScale.Ranges>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+CircularScale circularScale = new CircularScale();
+
+circularScale.RangePosition = RangePosition.Inside;
+
+circularScale.Radius = 150;
+
+circularScale.RimStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x57, 0xb2, 0xc6));
+
+circularScale.TickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.SmallTickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+circularScale.RimStrokeThickness = 8;
+
+circularScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x99, 0x99, 0x99));
+
+CircularRange circularRange = new CircularRange();
+
+circularRange.StartValue = 0;
+
+circularRange.EndValue = 40;
+
+circularRange.Stroke = new SolidColorBrush(Colors.Green);
+
+circularRange.StrokeThickness = 10;
+
+circularRange.StartWidth = 1;
+
+circularRange.EndWidth = 10;
+
+circularScale.Ranges.Add(circularRange);
+
+CircularRange circularRange1 = new CircularRange();
+
+circularRange1.StartValue = 40;
+
+circularRange1.EndValue = 60;
+
+circularRange1.Stroke = new SolidColorBrush(Colors.Yellow);
+
+circularRange1.StrokeThickness = 10;
+
+circularRange1.StartWidth = 1;
+
+circularRange1.EndWidth = 10;
+
+circularScale.Ranges.Add(circularRange1);
+
+CircularRange circularRange2 = new CircularRange();
+
+circularRange2.StartValue = 60;
+
+circularRange2.EndValue = 100;
+
+circularRange2.Stroke = new SolidColorBrush(Colors.Red);
+
+circularRange2.StrokeThickness = 10;
+
+circularRange2.StartWidth = 1;
+
+circularRange2.EndWidth = 10;
+
+circularScale.Ranges.Add(circularRange2);
+
+CircularPointer circularPointer = new CircularPointer();
+
+circularPointer.NeedlePointerVisibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+circularScale.Pointers.Add(circularPointer);
+
+sfCircularGauge.Scales.Add(circularScale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img7.png)
+
+## Setting gradient color for range
+
+You can give smooth color transition to range by specifying the different colors based on range value.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <gauge:SfCircularGauge>
+
+    <gauge:SfCircularGauge.Scales>
+
+    <gauge:CircularScale  RangePosition="Inside" Radius="150" RimStroke="#39B2C6" RimStrokeThickness="8"
+
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE">
+
+    <gauge:CircularScale.Ranges>
+
+    <gauge:CircularRange StartValue="0" EndValue="50"  >
+
+    <gauge:CircularRange.GradientStops>
+
+    <gauge:GaugeGradientStop Value="0" Color="#30B32D"/>
+
+    <gauge:GaugeGradientStop Value="50" Color="#FFDD00"/>
+
+    </gauge:CircularRange.GradientStops>
+
+    </gauge:CircularRange>
+
+    </gauge:CircularScale.Ranges>
+
+    <gauge:CircularScale.Pointers>
+
+    <gauge:CircularPointer NeedlePointerVisibility="Collapsed"/>
+
+    </gauge:CircularScale.Pointers>
+
+    </gauge:CircularScale>
+
+    </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+            CircularScale circularScale = new CircularScale();
+
+            circularScale.RangePosition = RangePosition.Inside;
+
+            circularScale.Radius = 150;
+
+            circularScale.RimStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x57, 0xb2, 0xc6));
+
+            circularScale.TickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+            circularScale.SmallTickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+            circularScale.RimStrokeThickness = 8;
+
+            circularScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x99, 0x99, 0x99));
+
+            CircularRange circularRange = new CircularRange();
+
+            circularRange.StartValue = 0;
+
+            circularRange.EndValue = 50;
+
+            ObservableCollection<GaugeGradientStop> gradientColor1 = new ObservableCollection<GaugeGradientStop>();
+
+            GaugeGradientStop gaugeGradientStop = new GaugeGradientStop();
+
+            gaugeGradientStop.Value = 0;
+
+            gaugeGradientStop.Color = Color.FromArgb(0xff, 0x30, 0xB3, 0x2D);
+
+            gradientColor1.Add(gaugeGradientStop);
+
+            GaugeGradientStop gaugeGradientStop1 = new GaugeGradientStop();
+
+            gaugeGradientStop1.Value = 50;
+
+            gaugeGradientStop1.Color = Color.FromArgb(0xff, 0xFF, 0xDD, 0x00);
+
+            gradientColor1.Add(gaugeGradientStop1);
+
+            circularRange.GradientStops = gradientColor1;
+
+            circularScale.Ranges.Add(circularRange);
+
+            CircularPointer circularPointer = new CircularPointer();
+
+            circularPointer.NeedlePointerVisibility = Windows.UI.Xaml.Visibility.Collapsed;
+
+            circularScale.Pointers.Add(circularPointer);
+
+            sfCircularGauge.Scales.Add(circularScale);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ranges_images/Ranges_img8.png)
+
 
 
