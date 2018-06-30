@@ -1498,6 +1498,78 @@ public class TreeGridCellComboBoxRendererExt : TreeGridCellComboBoxRenderer
 
 N> This is applicable when `SfTreeGrid.EditTrigger` is `OnTap`
 
+### Loading Different ItemSource for each row of TreeGridComboBoxColumn
+
+You can load the different ItemsSource to each row of TreeGridComboBoxColumn by setting  [SfTreeGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridComboBoxColumn~ItemsSourceSelector.html) property. 
+
+### Implementing IItemsSourceSelector
+
+`ItemsSourceSelector` needs to implement [IItemsSourceSelector](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IItemsSourceSelector.html) interface which requires you to implement [GetItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.IItemsSourceSelector~GetItemsSource.html) method which receives the below parameters,
+<ul>
+<li> <b>Record</b> – data object associated with row.</li>
+<li> <b>Data Context</b>  – Data context of data grid.</li>
+</ul>
+
+In the below code, ItemsSource for ShipCity column returned based on ShipCountry column value using the record and data context of data grid passed to `GetItemsSource` method.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Page.Resources>
+    <local:ItemsSourceSelector x:Key="itemsSourceSelector"/>
+</Page.Resources>
+
+<syncfusion:SfTreeGrid x:Name="treeGrid"         
+						AllowEditing="True"
+						AutoGenerateColumns="False"
+						ChildPropertyName="Children"
+						ItemsSource="{Binding OrderDetails}"
+						ColumnSizer="Star">
+    <syncfusion:SfTreeGrid.Columns>
+        <syncfusion:TreeGridComboBoxColumn MappingName="ShipCountry"  ItemsSource="{Binding Path=DataContext.CountryList, ElementName=treeGrid}"/>
+        <syncfusion:TreeGridComboBoxColumn  HeaderText="ShipCity" DisplayMemberPath="ShipCityName"
+                                        ItemsSourceSelector="{StaticResource itemSourceSelector}"
+                                        MappingName="ShipCityID" SelectedValuePath="ShipCityID"/>
+    </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
+{% endhighlight %}
+{% highlight c# %}
+/// <summary>
+/// Implementation class for ItemsSourceSelector interface
+/// </summary>
+public class ItemsSourceSelector : IItemsSourceSelector
+{
+    public IEnumerable GetItemsSource(object record, object dataContext)
+    {
+        if (record == null)
+            return null;
+  
+        var orderDetails = record as OrderDetails;
+        var countryName = orderDetails.ShipCountry;
+  
+        var viewModel = dataContext as ViewModel;
+  
+        //Returns ShipCity collection based on ShipCountry.
+        if (viewModel.ShipCities.ContainsKey(countryName))
+        {
+            ObservableCollection<ShipCityDetails> shipCities = null;
+            viewModel.ShipCities.TryGetValue(countryName, out shipCities);
+            return shipCities.ToList();
+        }
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates the different ShipCity ItemsSource bound to each row of the ComboBox based on the Country Name.
+
+![](Column-Types_images/Column-Types_img32.png)
+
+![](Column-Types_images/Column-Types_img33.png)
+
+You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsUWP748006862.zip).
+
 ## TreeGridHyperlinkColumn
 
 [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) derived from `TreeGridTextColumn` and it displays columns data as hyperlink. It hosts `HyperlinkButton` element as `TreeGridCell` content.
