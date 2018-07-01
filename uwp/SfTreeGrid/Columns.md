@@ -646,6 +646,161 @@ private void TreeGrid_ColumnDragging(object sender, TreeGridColumnDraggingEventA
 {% endhighlight %}
 {% endtabs %}
 
+## Freezing Columns
+
+You can freeze the columns in view at the left and right side like in excel by setting [SfTreeGrid.FrozenColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) and [SfTreeGrid.FooterColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html) properties.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfTreeGrid Name="treeGrid" 
+                        AutoExpandMode="RootNodesExpanded"
+                        ChildPropertyName="Children"
+                        FrozenColumnCount="2"
+						FooterColumnCount="2"
+                        ItemsSource="{Binding EmployeeDetails}">
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.FrozenColumnCount = 2;
+this.treeGrid.FooterColumnCount = 2;
+	
+{% endhighlight %}
+{% endtabs %}
+
+![](Columns_images/Columns_img6.png)
+
+## Stacked Headers
+
+SfTreeGrid supports additional unbound header rows known as `stacked header rows` that span across the TreeGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~StackedHeaderRows.html). You can group one or more columns under each stacked header.
+
+Each [StackedHeaderRow](http://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedHeaderRow.html) contains the [StackedColumns](http://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedHeaderRow~StackedColumns.html) where each [StackedColumn](http://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedColumn.html) contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are grouped under the stacked header row. `StackedColumn.HeaderText` returns the text that displays in stacked header row.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Page
+    x:Class="StackedHeaderDemo.MainPage"
+    xmlns:local="using:StackedHeaderDemo"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.TreeGrid"
+    xmlns:syncfusion1="using:Syncfusion.UI.Xaml.Grid">
+
+	<syncfusion:SfTreeGrid Name="treeGrid"
+						   AllowEditing="True"
+						   AllowSorting="True"
+						   AutoExpandMode="RootNodesExpanded"
+						   AutoGenerateColumns="False"
+						   ChildPropertyName="Children"
+						   ItemsSource="{Binding EmployeeDetails}"
+						   LiveNodeUpdateMode="AllowDataShaping">
+		<syncfusion:SfTreeGrid.StackedHeaderRows>
+			<syncfusion1:StackedHeaderRow>
+				<syncfusion1:StackedHeaderRow.StackedColumns>
+					<syncfusion1:StackedColumn ChildColumns="OrderID,OrderDate" HeaderText="Order Details" />
+					<syncfusion1:StackedColumn ChildColumns="CustomerID,CustomerArea" HeaderText="Customer Details" />
+					<syncfusion1:StackedColumn ChildColumns="UnitPrice,Discount" HeaderText="Price Details" />
+				</syncfusion1:StackedHeaderRow.StackedColumns>
+			</syncfusion1:StackedHeaderRow>
+		</syncfusion:SfTreeGrid.StackedHeaderRows>
+		<syncfusion:SfTreeGrid.Columns>
+			<syncfusion:TreeGridTextColumn HeaderText="Order ID" MappingName="OrderID" />
+			<syncfusion:TreeGridDateTimeColumn HeaderText="Order Date" MappingName="OrderDate" />
+			<syncfusion:TreeGridTextColumn HeaderText="Customer ID" MappingName="CustomerID">
+			</syncfusion:TreeGridTextColumn>
+			<syncfusion:TreeGridTextColumn HeaderText="Customer Area" MappingName="CustomerArea">
+			</syncfusion:TreeGridTextColumn>
+			<syncfusion:TreeGridTextColumn HeaderText="Price" MappingName="UnitPrice"/>
+			<syncfusion:TreeGridTextColumn MappingName="Discount" />
+		</syncfusion:SfTreeGrid.Columns>
+
+	</syncfusion:SfTreeGrid>
+	
+</Page>
+
+{% endhighlight %}
+{% highlight c# %}
+
+var stackedHeaderRow = new StackedHeaderRow();
+stackedHeaderRow.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate,CustomerID,CustomerArea,UnitPrice,Discount", HeaderText = "Sales Details" });
+this.treeGrid.StackedHeaderRows.Add(stackedHeaderRow);
+var stackedHeaderRow1 = new StackedHeaderRow();
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order Details" });
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "CustomerID,CustomerArea", HeaderText = "Customer Details" });
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn() { ChildColumns = "UnitPrice,Discount", HeaderText = "Price Details" });
+this.treeGrid.StackedHeaderRows.Add(stackedHeaderRow1);
+	
+{% endhighlight %}
+{% endtabs %}
+
+![](Columns_images/Columns_img7.png)
+
+### Adding ChildColumns
+
+You can add the child columns in particular stacked header directly.
+
+{% tabs %}
+{% highlight c# %}
+
+var childColumn = this.treeGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns;
+this.treeGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumn + ","  + "Discount";
+
+{% endhighlight %}
+{% endtabs %}
+
+### Removing ChildColumns
+
+Similarly, you can remove the child columns from particular stacked header directly.
+
+{% tabs %}
+{% highlight c# %}
+
+var removingColumns = this.treeGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns.Split(',').ToList<string>();
+string childColumns = string.Empty;
+
+foreach (var stackedColumnName in removingColumns.ToList())
+{
+
+    if (stackedColumnName.Equals("OrderID"))
+    {
+        removingColumns.Remove(stackedColumnName);
+    }
+
+    else
+        childColumns = childColumns + stackedColumnName + ",";
+}
+
+this.treeGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Changing Stacked Header Row Height
+
+You can change the height of StackedHeaderRows by using [GetTreePanel.RowHeights](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridPanel~RowHeights.html) property.
+
+{% tabs %}
+{% highlight c# %}
+
+this.treeGrid.Loaded += TreeGrid_Loaded;
+
+private void TreeGrid_Loaded(object sender, RoutedEventArgs e)
+{
+    var getTreePanel = this.treeGrid.GetTreePanel();
+    int count = this.treeGrid.StackedHeaderRows.Count;
+
+    for (int i = 0; i < count; i++)
+    {
+        getTreePanel.RowHeights[i] = 50;
+    }
+    getTreePanel.InvalidateMeasure();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Column Sizing
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ColumnSizer.html) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn~ColumnSizer.html) property. 
