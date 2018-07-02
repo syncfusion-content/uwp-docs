@@ -542,6 +542,8 @@ The `SymbolPointer` in the scale can be placed above, below, or in between the s
 
 The [`SymbolPointerStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearPointer~SymbolPointerStyle.html) property is used to select symbol pointer style.
 
+{% tabs %}
+
 {% highlight xml %}
 
         <gauge:SfLinearGauge >
