@@ -1681,7 +1681,7 @@ By default, the expander will be visible for all the data rows in parent DataGri
 
 ## Hiding GridDetailsViewIndentCell in SfDataGrid
 
-[GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowDetailsViewIndentCell.html) property to `False` for the respective parent grid.
+[GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowDetailsViewIndentCell.html) property to `False` for the respective parent grid.
 
 ![](Master-Details-View_images/Master-Details-View_img11.png)
 
