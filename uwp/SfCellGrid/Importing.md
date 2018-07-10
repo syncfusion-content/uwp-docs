@@ -9,25 +9,25 @@ documentation: ug
 
 # Import
 
-The `ExcelImportExtension` class is used to import the entire cells from Excel sheet to SfCellGrid. 
+The `ExcelImportExtension` class is used to import entire cells from the Excel sheet to SfCellGrid. 
 
-The following styles are imported from Excel,
+Following styles are imported from Excel:
 
 * Font
-* Back color and Fore color
+* Back color and fore color
 * Alignment
 * Borders
-* Number Formats
+* Number formats
 * Merge cells
 * Row height
 * Column width
 * Freeze panes
 * Orientation
-* Conditional Formats
+* Conditional formats
 
 ## ExcelImportingOptions
 
-`ExcelImportingOptions` is added as second parameter while importing from excel. It sets the importing mode, such as Value, Style and Text. Default `ImportMode` is `Value`.
+The `ExcelImportingOptions` is added as second parameter when importing from Excel. Various importing modes are value, style, and text. Default `ImportMode` is `Value`.
 
 {% tabs %}
 {% highlight c# %}
@@ -47,9 +47,9 @@ option.ImportMode = ImportMode.Text;
 {% endhighlight %}
 {% endtabs %}
 
-## Using Stream
+## Using stream
 
-SfCellGrid provides support to import the data from Excel using `ImportFromExcel` method by passing the excel file as `Stream`.
+The SfCellGrid provides support to import the data from Excel using the `ImportFromExcel` method by passing the Excel file as `Stream`.
 
 {% tabs %}
 {% highlight c# %}
@@ -72,9 +72,9 @@ cellGrid.ImportFromExcel(fileStream,option);
 {% endhighlight %}
 {% endtabs %}
 
-## Using Worksheet
+## Using worksheet
 
-SfCellGrid provides support to import the data from Excel using `ImportFromExcel` method by passing the worksheet(`IWorksheet`) from XlsIO.
+The SfCellGrid provides support to import the data from Excel using the `ImportFromExcel` method by passing the worksheet(`IWorksheet`) from XlsIO.
 
 {% tabs %}
 {% highlight c# %}
@@ -100,9 +100,9 @@ cellGrid.ImportFromExcel((workbook as IWorkbook).ActiveSheet,option);
 {% endhighlight %}
 {% endtabs %}
 
-## Using Storage File
+## Using storage file
 
-SfCellGrid provides support to import the data from Excel using `ImportFromExcel` method by passing the excel file as `StorageFile`.
+The SfCellGrid provides support to import the data from Excel using the `ImportFromExcel` method by passing the Excel file as `StorageFile`.
 
 {% tabs %}
 {% highlight c# %}
@@ -133,4 +133,3 @@ cellGrid.ImportFromExcel(file, option);
 
 {% endhighlight %}
 {% endtabs %}
-
