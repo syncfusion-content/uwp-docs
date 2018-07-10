@@ -7,19 +7,17 @@ control: SfCellGrid
 documentation: ug
 ---
 
-
 # Interactive Features
 
-This section explains about the interactive operations with SfCellGrid.
+This section explains interactive operations in the SfCellGrid.
 
-## Clipboard Operations
+## Clipboard operations
 
-SfCellGrid provides support to clipboard operations such as Cut, Copy and Paste which are managed in `GridCopyPaste` class. This class can be accessed by
-`CopyPaste` property of SfCellGrid which provides methods to perform clipboard operations.
+The supported clipboard operations, cut, copy, and paste are managed in `GridCopyPaste` class. This class can be accessed by `CopyPaste` property of the SfCellGrid that provides methods to perform clipboard operations.
 
 ### Cut
 
-The selected range of cells or data can be cut by using `Cut` method. The keyboard keys <kbd>Ctrl</kbd> +<kbd> X</kbd> combination is also used to perform the Cut operation.
+The selected range of cells or data can be cut by using the `Cut` method or keyboard keys <kbd>Ctrl</kbd> +<kbd> X</kbd> combination.
 
 {% tabs %}
 {% highlight c# %}
@@ -34,9 +32,9 @@ cellGrid.CopyPaste.Copy(range, true);
 {% endhighlight %}
 {% endtabs %}
 
-#### Event related with Cut Operation
+#### Event related with cut operation
 
-The `ClipboardCut` event occurs when the cut operation is performed in SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` which provides an option to get the copied range and handle the event.
+The `ClipboardCut` event occurs when perfoming cut operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -54,7 +52,7 @@ private void Model_ClipboardCut(object sender, GridCutPasteEventArgs e)
 
 ### Copy
 
-The selected range of cells or data can be copied using `Copy` method. The keyboard keys <kbd>Ctrl</kbd> + <kbd>C</kbd> combination is also used to perform Copy operation.
+The selected range of cells or data can be copied by using the `Copy` method or keyboard keys <kbd>Ctrl</kbd> + <kbd>C</kbd> combination.
 
 {% tabs %}
 {% highlight c# %}
@@ -71,7 +69,7 @@ cellGrid.CopyPaste.Copy(range, false);
 
 #### Event related with Copy Operation
 
-The `ClipboardCopy` event occurs when the copy operation is performed in SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` which provides an option to get the copied range and handle the event.
+The `ClipboardCopy` event occurs when performing copy operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,7 +86,7 @@ private void Model_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 
 ### Paste
 
-The copied ranges from the SfCellGrid can be pasted using `Paste` method. The keyboard keys <kbd>Ctrl<kbd> + <kbd>V</kbd> combination is also used to perform Paste operation.
+The copied ranges from the SfCellGrid can be pasted by using the `Paste` method or keyboard keys <kbd>Ctrl<kbd> + <kbd>V</kbd> combination.
 
 {% tabs %}
 {% highlight c# %}
@@ -101,9 +99,9 @@ cellGrid.CopyPaste.Paste();
 {% endhighlight %}
 {% endtabs %}
 
-#### Copy Paste Options
+#### Copy paste options
 
-The following are the list of paste options enum that can be used to perform paste operation based on user's requirement.
+The following list of paste enum options can be used to perform paste operation.
 
 <table>
 <tr>
@@ -113,36 +111,36 @@ Description</th></tr>
 <tr>
 <td>
 All</td><td>
-To paste with all the format options. </td></tr>
+Pastes with all the format options. </td></tr>
 <tr>
 <td>
 Formulas</td><td>
-To paste the formulas alone. </td></tr>
+Pastes the formulas alone. </td></tr>
 <tr>
 <td>
 Formats</td><td>
-To maintain the copied range’s formatting</td></tr>
+Maintains the formatting of copied range.</td></tr>
 <tr>
 <td>
 Values</td><td>
-To paste the values alone</td></tr>
+Pastes the values alone.</td></tr>
 <tr>
 <td>
 Comments</td><td>
-To paste comments only without pasting formats and values. </td></tr>
+Pastes the comments without formats and values. </td></tr>
 <tr>
 <td>
 Transpose</td><td>
-Copies the vertical range of cells and paste in horizontal range or vice versa. </td></tr>
+Copies the vertical range of cells and pastes in horizontal range and vice-versa. </td></tr>
 <tr>
 <td>
 ClipboardOnly</td><td>
-To copy and paste from clipboard without pasting any styles. </td></tr>
+Copies and pastes from the clipboard without pasting any styles. </td></tr>
 </table>
 
-#### Event related with Paste Operation
+#### Event related with paste operation
 
-The `ClipboardPaste` event occurs when the paste operation is performed in SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` which provides an option to get or set the pasting range and handle the event.
+The `ClipboardPaste` event occurs when performing paste operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get or set the pasting range and handles this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,11 +155,11 @@ private void Model_ClipboardPaste(object sender, GridCutPasteEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Tool Tip
+## Tooltip
 
-SfCellGrid provides support for adding tooltip for individual cells. Tooltip will be displayed as small popup window, when the mouse hover the cells in SfCellGrid. 
+The SfCellGrid provides support for adding tooltip for individual cells. Tooltip will be displayed as small pop-up window when the mouse hover the cells. 
 
-To display the Tooltip, user need to set `ShowTooltip` property to true.
+To display the tooltip, set the `ShowTooltip` property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -171,9 +169,9 @@ cellGrid.ShowTooltip  = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Adding Tooltip
+### Adding tooltip
 
-The Tooltip can be added to the cell by setting the `Tooltip` property. The text assigned will be displayed in the tooltip window.
+Tooltip can be added to the cell by setting the `Tooltip` property. The assigned text will be displayed in the tooltip window.
 
 {% tabs %}
 {% highlight c# %}
@@ -196,9 +194,9 @@ cellGrid.Model.RowStyles[3].Tooltip = "Syncfusion";
 {% endhighlight %}
 {% endtabs %}
 
-### Customization of Tooltip
+### Customization of tooltip
 
-The tooltip can be customized by defining a custom data template and assign to `TooltipTemplate` property of SfCellGrid.
+The tooltip can be customized by defining a custom data template and assign to the `TooltipTemplate` property of the SfCellGrid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -227,9 +225,9 @@ cellGrid.Model[3, 3].Tooltip = "Custom Tooltip";
 
 N> Customized data template should be defined in SfCellGrid.Resources in XAML file.
 
-### Reset Tooltip
+### Reset tooltip
 
-`ResetTooltip` method is used to reset or remove the tooltip in SfCellGrid.
+The `ResetTooltip` method is used to reset or remove the tooltip from the SfCellGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -239,9 +237,9 @@ cellGrid.Model[3, 3].ResetTooltip();
 {% endhighlight %}
 {% endtabs %}
 
-### Reset Tooltip template
+### Reset tooltip template
 
-`ResetTooltipTemplate` method is used to reset or remove the custom tooltip template defined in SfCellGrid.
+The `ResetTooltipTemplate` method is used to reset or remove the defined custom tooltip template from the SfCellGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -251,9 +249,9 @@ cellGrid.Model[3, 3].ResetTooltipTemplate();
 {% endhighlight %}
 {% endtabs %}
 
-### CellTooltipOpening Event
+### CellTooltipOpening event
 
-`CellTooltipOpening` event occurs when the tooltip is opened in SfCellGrid. It receives an argument of type `CellTooltipOpeningEventArgs` containing the following information about the event.
+The `CellTooltipOpening` event occurs when opening the tooltip in the SfCellGrid. It receives an argument of type `CellTooltipOpeningEventArgs` containing the following information about the event.
 
 <table>
 <tr>
@@ -267,7 +265,7 @@ Gets or sets the value that indicates cell tooltip index. </td></tr>
 <tr>
 <td>
 <code>Cancel</code></td><td>
-Gets or sets whether the event should be cancel or not. </td></tr>
+Gets or sets whether the event should be canceled or not. </td></tr>
 <tr>
 <td>
 <code>Tooltip</code></td><td>
@@ -289,12 +287,13 @@ private void CellGrid_CellTooltipOpening(object sender, CellTooltipOpeningEventA
 {% endhighlight %}
 {% endtabs %}
 
-## Comment Tip
+## Comment tip
 
-SfCellGrid provides support for adding the Excel-like comment tip to the individual cells. This acts as note that provides more information about data in an individual cell on mouse hover.
-When a cell has a comment, a red indicator appears in the corner of the cell. When you rest the pointer on the cell, the comment appears.
+The SfCellGrid provides support for adding the Excel-like comment tip to the individual cells. This acts as note that provides more information about the data in an individual cell on mouse hover.
 
-To display the Comment, user need to set `ShowComment` property to true.
+When a cell has a comment, a red indicator appears in the corner of the cell. When resetting the pointer on the cell, the comment appears.
+
+To display the comment, set the `ShowComment` property to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -304,9 +303,9 @@ cellGrid.ShowComment  = true;
 {% endhighlight %}
 {% endtabs %}
 
-### Adding Comment
+### Adding comment
 
-The Comment tip can be added to the cell by setting the `Comment` property. The text assigned will be displayed in the comment window.
+The comment tip can be added to the cell by setting the `Comment` property. The assigned text will be displayed in the comment window.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,9 +328,9 @@ cellGrid.Model.RowStyles[3].Comment = "Syncfusion";
 {% endhighlight %}
 {% endtabs %}
 
-### Comment Brush
+### Comment brush
 
-This `CommentBrush` property is used to determine the color of the rectangle at the top corner of the comment cell.
+The `CommentBrush` property is used to determine the color of the rectangle at the top corner of the comment cell.
 
 {% tabs %}
 {% highlight c# %}
@@ -341,9 +340,9 @@ cellGrid.Model[5, 5].CommentBrush = new SolidColorBrush(Colors.GreenYellow);
 {% endhighlight %}
 {% endtabs %}
 
-### Customization of Comment
+### Customization of comment
 
-The comment can be customized by defining a custom data template and assign to `CommentTemplate` property of SfCellGrid.
+The comment can be customized by defining a custom data template and assign to the `CommentTemplate` property of the SfCellGrid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -370,11 +369,11 @@ cellGrid.Model[3, 3].Comment = "CustomComment";
 {% endhighlight %}
 {% endtabs %}
 
-N> Customized data template should be defined in SfCellGrid.Resources in XAML file.
+N> Customized data template should be defined in the SfCellGrid.Resources in XAML file.
 
-### Reset Comment
+### Reset comment
 
-`ResetComment` method is used to reset or remove the comment in SfCellGrid.
+The `ResetComment` method is used to reset or remove the comment from the SfCellGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -384,9 +383,9 @@ cellGrid.Model[3, 3].ResetComment();
 {% endhighlight %}
 {% endtabs %}
 
-### Reset Comment template
+### Reset comment template
 
-`ResetCommentTemplate` method is used to reset or remove the custom comment template defined in SfCellGrid.
+The `ResetCommentTemplate` method is used to reset or remove the custom comment template defined in the SfCellGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -396,9 +395,9 @@ cellGrid.Model[3, 3].ResetCommentTemplate();
 {% endhighlight %}
 {% endtabs %}
 
-### CellCommentOpening Event
+### CellCommentOpening event
 
-`CellCommentOpening` event occurs when the comment is opened in SfCellGrid. It receives an argument of type `CellCommentOpeningEventArgs` containing the following information about the event.
+The `CellCommentOpening` event occurs when opening the comment in the SfCellGrid. It receives an argument of type `CellCommentOpeningEventArgs` containing the following information about the event.
 
 <table>
 <tr>
@@ -441,9 +440,9 @@ private void CellGrid_CellCommentOpening(object sender, CellCommentOpeningEventA
 
 ## Context menu
 
-Context menu is customizable menu which can be used for various functionalities. The Context menu opens when the user right-click on cell or selection of cells in SfCellGrid.
+Context menu is a customizable menu used for various functionalities. The context menu opens when the user right-click the cell or selection of cells in the SfCellGrid.
 
-Users can add their own menu items and assign to the `CellContextMenu` property.
+User can add their own menu items and assign to the `CellContextMenu` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -468,9 +467,9 @@ public ContextMenu menu()
 {% endhighlight %}
 {% endtabs %}
 
-### CellContextMenuOpening Event
+### CellContextMenuOpening event
 
-This event occurs when the context menu opens in SfCellGrid. It receives an argument of type `CellContextMenuOpeningEventArgs` containing the following information about the event.
+This event occurs when the context menu opens in the SfCellGrid. It receives an argument of type `CellContextMenuOpeningEventArgs` containing the following information about the event.
 
 <table>
 <tr>
@@ -480,7 +479,7 @@ Description</th></tr>
 <tr>
 <td>
 <code>Cell</code></td><td>
-Gets or sets the row/column index of the cell. </td></tr>
+Gets or sets the row or column index of the cell. </td></tr>
 <tr>
 <td>
 <code>Handled</code></td><td>
@@ -491,7 +490,7 @@ Gets or sets whether the event should be handled or not. </td></tr>
 Gets or sets the context menu for the cell. </td></tr>
 </table>
 
-Users can add or delete the context menu items at runtime using `CellContextMenuOpening` Event.
+User can add or delete the context menu items at runtime by using the `CellContextMenuOpening` event.
 
 {% tabs %}
 {% highlight c# %}
