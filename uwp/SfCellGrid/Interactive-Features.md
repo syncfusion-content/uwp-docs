@@ -34,7 +34,7 @@ cellGrid.CopyPaste.Copy(range, true);
 
 #### Event related with cut operation
 
-The `ClipboardCut` event occurs when perfoming cut operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
+The `ClipboardCut` event occurs when performing cut operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
 
 {% tabs %}
 {% highlight c# %}
