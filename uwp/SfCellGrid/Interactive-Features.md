@@ -13,7 +13,7 @@ This section explains interactive operations in the SfCellGrid.
 
 ## Clipboard operations
 
-The supported clipboard operations, cut, copy, and paste are managed in `GridCopyPaste` class. This class can be accessed by `CopyPaste` property of the SfCellGrid that provides methods to perform clipboard operations.
+The supported clipboard operations, cut, copy, and paste are managed in `GridCopyPaste` class. This class can be accessed by using the `CopyPaste` property of the SfCellGrid that provides methods to perform clipboard operations.
 
 ### Cut
 
@@ -67,7 +67,7 @@ cellGrid.CopyPaste.Copy(range, false);
 {% endhighlight %}
 {% endtabs %}
 
-#### Event related with Copy Operation
+#### Event related with copy operation
 
 The `ClipboardCopy` event occurs when performing copy operation in the SfCellGrid. It receives an argument of type `GridCutPasteEventArgs` that provides an option to get the copied range and handles this event.
 
