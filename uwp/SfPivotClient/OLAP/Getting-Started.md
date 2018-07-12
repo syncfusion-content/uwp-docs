@@ -349,7 +349,7 @@ namespace SfPivotClientDemo
         /// <summary>
         /// The event handler method is hooked when the data manager was changed.
         /// </summary>
-        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="sender">The OlapDataManager.</param>
         /// <param name="args">The argument parameter.</param>
         private void OlapDataManager_OlapDataChanged(object sender, OlapDataChangedEventArgs args)
         {
@@ -363,7 +363,7 @@ namespace SfPivotClientDemo
         /// <summary>
         /// The event handler method is hooked to get the current cube schema.
         /// </summary>
-        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="sender">The OlapDataManager.</param>
         /// <param name="args">The argument parameter.</param>
         private string OlapDataManager_GetCubeSchema(object sender, GetCubeSchemaEventArgs args)
         {
@@ -378,7 +378,7 @@ namespace SfPivotClientDemo
         /// <summary>
         /// The event handler method is hooked to get the collection of cube information.
         /// </summary>
-        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="sender">The OlapDataManager.</param>
         /// <param name="args">The argument parameter.</param>
         private string OlapDataManager_GetCubeInfoCollection(object sender, GetCubeInfoCollectionEventArgs args)
         {
