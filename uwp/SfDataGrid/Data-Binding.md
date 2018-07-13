@@ -249,3 +249,18 @@ When BeginInit method is called it suspends all the updates until EndInit method
 
 
 N> View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
+
+## Maintain scroll position when changing the ItemsSource
+
+By default, scroll position is not maintained. It gets reset, when changing `SfDataGrid.ItemsSource` value. You can maintain the scroll position of the grid by setting the [SfDataGrid.CanMaintainScrollPosition](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CanMaintainScrollPosition.html) value to `true`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        CanMaintainScrollPosition="True"
+                        ItemsSource="{Binding Orders}"/>
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.CanMaintainScrollPosition = true;
+{% endhighlight %}
+{% endtabs %}
