@@ -9,7 +9,8 @@ documentation: ug
 
 # Getting Started
 
-[!IMPORTANT] Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your UWP application to use our components.
+>**Important**
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your UWP application to use our components.
 
 This section explains about the information required to create a simple SfPivotGrid control bound to the OLAP data source and also about creating a WCF service that helps to bind the OLAP data with the SfPivotGrid control through the OlapDataManager.
 
@@ -330,7 +331,7 @@ namespace SfPivotGridDemo
         /// <summary>
         /// The event handler method is hooked when the data manager was changed.
         /// </summary>
-        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="sender">The OlapDataManager.</param>
         /// <param name="args">The argument parameter.</param>
         private void OlapDataManager_OlapDataChanged(object sender, OlapDataChangedEventArgs args)
         {
@@ -344,7 +345,7 @@ namespace SfPivotGridDemo
         /// <summary>
         /// The event handler method is hooked to get the current cube schema.
         /// </summary>
-        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="sender">The OlapDataManager.</param>
         /// <param name="args">The argument parameter.</param>
         private string OlapDataManager_GetCubeSchema(object sender, GetCubeSchemaEventArgs args)
         {
@@ -359,7 +360,7 @@ namespace SfPivotGridDemo
         /// <summary>
         /// The event handler method is hooked to get the collection of cube information.
         /// </summary>
-        /// <param name="sender">The OlpaDataManager.</param>
+        /// <param name="sender">The OlapDataManager.</param>
         /// <param name="args">The argument parameter.</param>
         private string OlapDataManager_GetCubeInfoCollection(object sender, GetCubeInfoCollectionEventArgs args)
         {
