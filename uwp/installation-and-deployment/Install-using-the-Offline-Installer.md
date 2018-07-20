@@ -20,7 +20,7 @@ The following procedure illustrates how to install Essential Studio UWP platform
 
    ![](Platform_images/Step-by-Step-Installation_img1.png)
 
-   N> The Setup wizard extracts the syncfusionessentialuwp_(version).exe dialog, displaying the unzip operation of the package.
+   N> The Setup wizard extracts the syncfusionessentialuniversalwindows_(version).exe dialog, displaying the unzip operation of the package.
 
 3. You have two options to unlock the Syncfusion setup:
 
@@ -87,9 +87,9 @@ The Syncfusion Essential Studio Platform Installer supports installing/uninstall
 Follow the steps below to install through Command Line in Silent mode.
 
 1. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically. 
-2. The syncfusionessentialuwp_(version).exe file is extracted into the Temp folder.
-3. Run %temp%. The Temp folder will open. The syncfusionessentialuwp_(version).exe file is available in one of the folders.
-4. Copy the extracted syncfusionessentialuwp_(version).exe file in local drive.
+2. The syncfusionessentialuniversalwindows_(version).exe file is extracted into the Temp folder.
+3. Run %temp%. The Temp folder will open. The syncfusionessentialuniversalwindows_(version).exe file is available in one of the folders.
+4. Copy the extracted syncfusionessentialuniversalwindows_(version).exe file in local drive.
 5. Cancel the Wizard.
 6. Open the Command Prompt in administrator mode and pass the following arguments.
 
@@ -99,7 +99,7 @@ Follow the steps below to install through Command Line in Silent mode.
 
    N> [..] – Arguments inside the square brackets are optional.
 
-   **Example:** “D:\Temp\syncfusionessentialuwp_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+   **Example:** “D:\Temp\syncfusionessentialuniversalwindows_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
 
 	
 7. Setup is installed.
@@ -111,17 +111,17 @@ Follow the steps below to install through Command Line in Silent mode.
 
 Syncfusion Essential Studio supports uninstalling the setup through Command Line in Silent mode. The following steps illustrate this. 
 
-1. When you do not have the extracted setup (syncfusionessentialuwp_(version).exe) then follow the steps from 2 to 7.
+1. When you do not have the extracted setup (syncfusionessentialuniversalwindows_(version).exe) then follow the steps from 2 to 7.
 2. Double-click the Syncfusion Essential Studio platform setup file. The Setup Wizard opens and extracts the package automatically.
-3. The syncfusionessentialuwp_(version).exe file is extracted into the Temp folder.
-4. Run %temp%. The Temp folder will open. The syncfusionessentialuwp_(version).exe file is available in one of the folders.
-5. Copy the syncfusionessentialuwp_(version).exe file in local drive. 
+3. The syncfusionessentialuniversalwindows_(version).exe file is extracted into the Temp folder.
+4. Run %temp%. The Temp folder will open. The syncfusionessentialuniversalwindows_(version).exe file is available in one of the folders.
+5. Copy the syncfusionessentialuniversalwindows_(version).exe file in local drive. 
 6. Cancel the Wizard.
 7. Open the Command Prompt in administrator mode and pass the following arguments.
    
-   **Arguments:** “Copied setup file path\syncfusionessentialuwp_(version).exe” /uninstall silent 
+   **Arguments:** “Copied setup file path\syncfusionessentialuniversalwindows_(version).exe” /uninstall silent 
 
-   **Example:** “D:\Temp\syncfusionessentialuwp_x.x.x.x.exe" /uninstall silent
+   **Example:** “D:\Temp\syncfusionessentialuniversalwindows_x.x.x.x.exe" /uninstall silent
 
 
 8. Setup is uninstalled.
