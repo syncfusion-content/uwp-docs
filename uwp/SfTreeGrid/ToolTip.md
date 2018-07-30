@@ -111,8 +111,8 @@ public class StringToImageConverter : IValueConverter
 {
        public object Convert(object value, Type targetType, object parameter, string language)
         {
-            string imagename = value.ToString();
-            return @"Assets\" + imagename + @".png";
+            string image = value.ToString();
+            return @"Assets\" + image + @".png";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)
