@@ -210,10 +210,10 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 
 ### CellToolTipOpening event
 
-The [CellToolTipOpening](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellToolTipOpening_EV.html) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [GridCellToolTipOpeningEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
+The [CellToolTipOpening](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellToolTipOpening_EV.html) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [GridCellToolTipOpeningEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html) as argument which has the following properties:
 
 <ul>
-<li> <a href="https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html">Column:</a> Gets the hovered cell column in the SfTreeGrid.</li>
+<li> <a href="http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html">Column:</a> Gets the hovered cell column in the SfTreeGrid.</li>
 <li> <a href="https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Record.html">Record:</a> Gets the data context of hovered cell.</li>
 <li> <a href="https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~RowColumnIndex.html">RowColumnIndex:</a> Gets the row and column index of the hovered cell.</li>
 <li> <a href="https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~ToolTip.html">ToolTip:</a> Gets the tooltip of the hovered cells.</li>
