@@ -9,7 +9,11 @@ documentation: ug
 
 # ToolTip
 
-ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid. You can enable the ToolTip for the GridCell by setting the [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html) as true.
+ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid.
+
+## Record cell tooltip
+
+You can enable the ToolTip for the GridCell by setting the [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowToolTip.html) as true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -42,14 +46,17 @@ You can enable the ToolTip for the particular column by setting the [GridColumn.
 {% highlight c# %}
 
 this.dataGrid.Columns["OrderID"].ShowToolTip = true;
+this.dataGrid.Columns["CustomerID"].ShowToolTip = true;
+
 
 {% endhighlight %}
 {% endtabs %}
 
+N> `GridColumn.ShowToolTip` takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowToolTip.html).
+
 ![](Interactive-Features_images/InteractiveFeatures_img4.png)
 
-
-N> `GridColumn.ShowToolTip` takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowToolTip.html).
+## Header tooltip
 
 You can enable the ToolTip for the header cell by setting the [GridColumn.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowHeaderToolTip.html) as true.
 
@@ -82,12 +89,12 @@ You can customize the appearance of the ToolTip for particular column by setting
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
+<Page.Resources>
     <local:StringToImageConverter x:Key="ImageConverter" />        
     <DataTemplate x:Key="TemplateToolTip">
         <Image Height="100" Width="100" Source="{Binding CustomerID,Converter={StaticResource ImageConverter}}" />
     </DataTemplate>
-</Window.Resources>
+</Page.Resources>
 
 <syncfusion:SfDataGrid.Columns>
     <syncfusion:GridTextColumn HeaderText="Order ID"  ShowToolTip="True" MappingName="OrderID" />
@@ -109,7 +116,7 @@ The different ToolTip template can be loaded in a same column conditionally base
 {% tabs %}
 {% highlight xaml %}
 
-<Window.Resources>        
+<Page.Resources>        
     <DataTemplate x:Key="ToolTip1">
         <Grid>
             <Rectangle Fill="Transparent"/>
@@ -122,7 +129,7 @@ The different ToolTip template can be loaded in a same column conditionally base
             <TextBlock Text="{Binding OrderID}" FontStyle="Italic" Background="LightGreen"/>
         </Grid>
     </DataTemplate>
-</Window.Resources>
+</Page.Resources>
 
 <syncfusion:SfDataGrid.Columns>
     <syncfusion:GridTextColumn HeaderText="Order ID" ShowToolTip="True" MappingName="OrderID" >
@@ -198,3 +205,33 @@ The below image refers the AlternateTemplate which is applied through ToolTipTem
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipSample-394161722.zip).
+
+## Events
+
+### CellToolTipOpening event
+
+The [CellToolTipOpening](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CellToolTipOpening_EV.html) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [GridCellToolTipOpeningEventArgs](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCellToolTipOpeningEventArgs.html) as argument which has the following properties:
+
+<ul>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html">Column:</a> Gets the hovered cell column in the SfTreeGrid.</li>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Record.html">Record:</a> Gets the data context of hovered cell.</li>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~RowColumnIndex.html">RowColumnIndex:</a> Gets the row and column index of the hovered cell.</li>
+<li> <a href="https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~ToolTip.html">ToolTip:</a> Gets the tooltip of the hovered cells.</li>
+</ul>
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid Name="DataGrid"  
+                        CellToolTipOpening="DataGrid_CellToolTipOpening"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding Orders}">
+{% endhighlight %}
+{% highlight c# %}
+this.DataGrid.CellToolTipOpening += DataGrid_CellToolTipOpening;
+
+private void DataGrid_CellToolTipOpening(object sender, Syncfusion.UI.Xaml.Grid.GridCellToolTipOpeningEventArgs e)
+{
+           
+}
+{% endhighlight %}
+{% endtabs %}
