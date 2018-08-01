@@ -9,34 +9,22 @@ documentation: ug
 
 # Hiding Grand totals
 
-It can be achieved by setting the property 'ShowGrandTotals' to false. By default, SfPivotGrid displays the grand total for both rows and columns.
+Grand totals can be hidden by setting the property of 'ShowGrandTotals' to false. By default, the pivot grid displays the grand total values for both rows and columns.
 
-Please refer the below code sample.
+Refer to the below code sample to hide grand totals in the pivot grid control.
 
 {% highlight c# %}
 
-    public partial class MainPage : Windows.UI.Xaml.Controls.Page
-    {
-        public MainPage()
-        {
-            this.InitializeComponent();
-            this.pivotGrid.PivotEngine.ShowGrandTotals = false;
-        }
-    }
+this.pivotGrid.PivotEngine.ShowGrandTotals = false;
 
-    {% endhighlight %}
+{% endhighlight %}
 
-    {% highlight vb %}
+{% highlight vb %}
 
-	Partial Public Class MainPage
-		Inherits Windows.UI.Xaml.Controls.Page
-		Public Sub New()
-			Me.InitializeComponent()
-			Me.pivotGrid.PivotEngine.ShowGrandTotals = False
-		End Sub
-	End Class
+Me.pivotGrid.PivotEngine.ShowGrandTotals = False
 
-    {% endhighlight %}
+End Class
 
+{% endhighlight %}
 
 ![](Hiding-Sub-Totals_images/Hiding-Sub-Totals_image5.png)
