@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hiding-Subtotals
-description: hiding subtotals
+title: Hiding Subtotals
+description: Hiding subtotals in pivot grid
 platform: uwp
 control: SfPivotGrid
 documentation: ug
@@ -103,7 +103,7 @@ Me.pivotGrid1.ShowColumnSubTotals = False
 
 ![Hiding-Sub-Totals_image3](Hiding-Sub-Totals_images/Hiding-Sub-Totals_image3.png)
 
-## Hiding the sub-totals for specific pivot item
+## Hiding the subtotals for specific pivot item
 
 It can be achieved by setting the `ShowSubTotal` property to false for the specific pivot item. Refer to the below code sample to hide the subtotal values of "Date" pivot item.
 
