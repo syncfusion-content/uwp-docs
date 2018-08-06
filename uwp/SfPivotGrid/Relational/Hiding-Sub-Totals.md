@@ -105,7 +105,7 @@ Me.pivotGrid1.ShowColumnSubTotals = False
 
 ## Hiding the sub-totals for specific pivot item
 
-It can be achieved by setting the `ShowSubTotal` property to false for the specific pivot item. Refer to the below code sample to hide the subtotal values of 
+It can be achieved by setting the `ShowSubTotal` property to false for the specific pivot item. Refer to the below code sample to hide the subtotal values of "Date" pivot item.
 
 N>
 If `ShowSubTotals` property of pivot grid control is set to false, then hiding the subtotals of specific pivot item will do nothing.
