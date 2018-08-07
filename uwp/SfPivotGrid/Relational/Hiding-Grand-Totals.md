@@ -9,7 +9,7 @@ documentation: ug
 
 # Hiding Grand totals
 
-Grand totals can be hidden by setting the property of 'ShowGrandTotals' to false. By default, the pivot grid displays the grand total values for both rows and columns.
+Grand totals can be hidden by setting the property of [ShowGrandTotals](https://help.syncfusion.com/cr/wpf/Syncfusion.PivotAnalysis.Base~Syncfusion.PivotAnalysis.Base.PivotEngine~ShowGrandTotals.html) to false. By default, the pivot grid displays the grand total values for both rows and columns.
 
 Refer to the below code sample to hide grand totals in the pivot grid control.
 
