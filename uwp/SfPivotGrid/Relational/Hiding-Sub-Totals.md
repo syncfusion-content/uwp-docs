@@ -68,7 +68,7 @@ this.pivotGrid1.ShowRowSubTotals = false;
 
 Me.pivotGrid1.ShowRowSubTotals = False
 
-{% endhighlight}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -97,7 +97,7 @@ this.pivotGrid1.ShowColumnSubTotals = false;
 
 Me.pivotGrid1.ShowColumnSubTotals = False
 
-{% endhighlight}
+{% endhighlight %}
 
 {% endtabs %}
 
