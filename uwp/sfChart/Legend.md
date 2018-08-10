@@ -953,7 +953,7 @@ When there is more number of legends, the legend exceeds the chart will be cropp
 
         <ItemsPanelTemplate x:Key="itemPanelTemplate">
 
-             <WrapPanel/>
+             <ItemsWrapGrid Orientation="Horizontal"/>
 
         </ItemsPanelTemplate>
                 
