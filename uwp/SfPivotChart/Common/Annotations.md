@@ -9,21 +9,21 @@ documentation: ug
 
 # Annotations
 
-SfPivotChart supports annotations that allows you to mark the specific area of interest in the chart area. You can draw custom shapes, specify a text note, and add images with the help of annotations.
+The SfPivotChart supports annotations that allow you to mark a specific area of interest in the chart area. You can draw custom shapes, specify a text note, and add images with the help of annotations.
 
-You can add annotation by using the property of `Annotations` in the SfPivotChart. Using this property, varieties of annotations can be added to the chart control. Following are the different types of annotations that are supported by the SfPivotChart:
+You can add an annotation by using the `Annotations` property in the SfPivotChart. Using this property, varieties of annotations can be added to the chart control. Following are the different types of annotations that are supported by the SfPivotChart:
 
-* Text Annotation
-* Image Annotation
-* Rectangle Annotation
-* Ellipse Annotation
-* Line Annotation
-* Horizontal Line Annotation
-* Vertical Line Annotation
+* Text annotation.
+* Image annotation.
+* Rectangle annotation.
+* Ellipse annotation.
+* Line annotation.
+* Horizontal line annotation.
+* Vertical line annotation.
 
 ## Text annotation
 
-Text annotations are used to add simple text representation in the chart area of the SfPivotChart. The following code snippet shows how to add text annotation to the SfPivotChart:
+Text annotations are used to add simple text representation in the chart area of the SfPivotChart. The following code snippet shows how to add text annotation to the SfPivotChart.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ PivotChart1.Annotations.Add(annotation)
 
 **Rotating text annotation**
 
-Text annotation can be rotated by using the `Angle` property. The below code snippet illustrates about rotating the text annotation:
+Text annotation can be rotated by using the `Angle` property. The following code snippet illustrates rotating the text annotation.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ PivotChart1.Annotations.Add(annotation)
 
 **Editing text annotation**
 
-The text annotation added in the chart area type can be edited by enabling the `EnableEditing` property. The following code snippet demonstrates the editing of the text annotation:
+The text annotation added in the chart area type can be edited by enabling the `EnableEditing` property. The following code snippet demonstrates editing of the text annotation.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Image annotation
 
-SfPivotChart allows to add an image annotation to the specific chart by mentioning the `AnnotationType` as `ImageAnnotation`. The following code snippet shows how to add the image annotation to the SfPivotChart.
+The SfPivotChart allows you to add an image annotation to the specific chart by mentioning the `AnnotationType` as `ImageAnnotation`. The following code snippet shows how to add the image annotation to the SfPivotChart.
 
 {% tabs %}
 
@@ -221,7 +221,7 @@ PivotChart1.Annotations.Add(annotation)
 
 **Rotating image annotation**
 
-Image annotation can be rotated by using the `Angle` property. The below code snippet illustrates about rotating the image annotation:
+An image annotation can be rotated by using the `Angle` property. The folowing code snippet illustrates rotating the image annotation.
 
 {% tabs %}
 
@@ -266,7 +266,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Line annotation
 
-Line annotation draws a line over the specific chart area. The following code snippet specifies about adding the line annotation to the SfPivotChart.
+Line annotation draws a line over a specific chart area. The following code snippet specifies adding the line annotation to the SfPivotChart.
 
 {% tabs %}
 
@@ -318,7 +318,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Horizontal line annotation
 
-Horizontal line annotation draws a horizontal line over the chart area. The following code snippet demonstrates the horizontal line annotation:
+Horizontal line annotation draws a horizontal line over the chart area. The following code snippet demonstrates the horizontal line annotation.
 
 {% tabs %}
 
@@ -368,7 +368,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Vertical line annotation
 
-Vertical line annotation draws a vertical line over the chart area. The following code snippet specifies the vertical line annotation:
+Vertical line annotation draws a vertical line over the chart area. The following code snippet specifies the vertical line annotation.
 
 {% tabs %}
 
@@ -464,7 +464,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Ellipse annotation
 
-Ellipse annotation draws an ellipse over the chart area. The following code snippet illustrates about adding the ellipse annotation:
+Ellipse annotation draws an ellipse over the chart area. The following code snippet illustrates adding the ellipse annotation.
 
 {% tabs %}
 
@@ -510,19 +510,19 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Positioning annotations
 
-Annotations can be positioned in the SfPivotChart based on `X1` and `Y1` properties, and for image and shape (Line, Ellipse, Rectangle, Horizontal Line, and Vertical Line) annotations you need to specify `X2` and `Y2` properties. These X and Y values can be specified with axis units or pixel units and can be identified by using `CoordinateUnit` property.
+Annotations can be positioned in the SfPivotChart based on `X1` and `Y1` properties. For image and shape (line, ellipse, rectangle, horizontal line, and vertical line) annotations, you should specify `X2` and `Y2` properties. These X and Y values can be specified with axis units or pixel units and can be identified by using the `CoordinateUnit` property.
 
 **CoordinateUnit as axis**
 
-To position the annotation based on axis values, you have to set the *CoordinateUnit* as *Pixels* and the values specified in `X1` and `Y1`, `X2` and `Y2` (if needed) are considered based on range values of primary and secondary axes.
+To position an annotation based on axis values, you should set the *CoordinateUnit* as *axes*, so that the values specified in `X1` and `Y1`, `X2` and `Y2` (if needed) are considered based on the range values of primary and secondary axes.
 
 **CoordinateUnit as pixels**
 
-To position the annotation based on pixel values, you have to set the *CoordinateUnit* as *Pixels* and the values specified in `X1` and `Y1`, `X2` and `Y2` (if needed) are considered based on pixels.
+To position the annotation based on pixel values, you should set the *CoordinateUnit* as *Pixels*, so that the values specified in `X1` and `Y1`, `X2` and `Y2` (if needed) are considered based on pixels.
 
 ## Dragging and resizing annotations
 
-The annotations can be dragged and resized by enabling the properties of `CanDrag` and `CanDrop` as specified in the below code snippet:
+The annotations can be dragged and resized by enabling the `CanDrag` and `CanDrop` properties as specified in the following code snippet.
 
 {% tabs %}
 
@@ -574,6 +574,6 @@ PivotChart1.Annotations.Add(annotation)
 
 ![](Annotations_images/resizing_Dragging_Annotations.png)
 
-A demo sample is located in the below location:
+A demo sample is located in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotChart\PivotChart\View\Annotations.xaml
