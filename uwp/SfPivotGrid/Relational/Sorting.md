@@ -9,13 +9,13 @@ documentation: ug
 
 # Sorting
 
-Sorting enables you to quickly visualize and understand your data better. Ultimately, it allows you to organize and find the data by which you can make more effective decisions. By default, the SfPivotGrid holds built-in comparers for all data types so that it will populate the data in ascending/descending order based on its data type. You can also define own custom comparer to view the data based on your requirement.
+Sorting enables you to quickly visualize and understand your data better. Ultimately, it allows you to organize and find the data by which you can make more effective decisions. By default, the SfPivotGrid holds built-in comparers for all data types so that it will populate the data in ascending/descending order based on its data type. You can also define own custom comparer to view the data.
 
 **Sorting using custom comparer**
 
-Sorting can be achieved by defining own custom comparer and initializing its instance to the `Comparer` property of the corresponding PivotItem.
+Sorting can be achieved by defining own custom comparer and initializing its instance to the `Comparer` property of the corresponding pivot item.
 
-For example, a custom comparer named as `ReverseOrderComparer` is defined to sort items in descending order. Please refer the below code snippet:
+For example, a custom comparer named as `ReverseOrderComparer` is defined to sort items in the descending order.
 
 {% tabs %}
 
@@ -58,7 +58,7 @@ End Class
 
 {% endtabs %}
 
-To apply this comparer to PivotItem, an instance of `ReverseOrderComparer` is created and assigned to the `Comparer` property of the PivotItem as specified in the following code snippet:
+To apply this comparer to the pivot item, an instance of `ReverseOrderComparer` is created and assigned to the `Comparer` property of the pivot item as specified in the following code snippet.
 
 {% tabs %}
 
@@ -86,7 +86,7 @@ _SfPivotGrid with ReverseOrderComparer_
 
 ## Sorting using values
 
-SfPivotGrid supports sorting based on value fields. The sorting order such as ascending or descending can be specified with the help of `SortDirection` property and the way of sorting is differentiated by using the `SortOption` property.
+The SfPivotGrid supports sorting based on value fields. The sorting order such as ascending or descending can be specified with the help of `SortDirection` property and the way of sorting is differentiated by using the `SortOption` property.
 
 The following are the different kinds of sorting options available in the SfPivotGrid:
 
@@ -98,7 +98,7 @@ The following are the different kinds of sorting options available in the SfPivo
 
 **Sorting all columns**
 
-`All` option allows you to sort all value columns of the SfPivotGrid. Please refer the below code snippet:
+The `All` option allows you to sort all value columns of the SfPivotGrid.
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ PivotGrid1.SortOption = SortOption.All
 
 **Sorting all columns except total and grandTotal columns**
 
-`ColumnSorting` option is used to enable sorting for all value columns other than the sub total and grand total columns of the SfPivotGrid. Please refer the below code snippet:
+The `ColumnSorting` option is used to enable sorting for all value columns other than the sub total and grand total columns of the SfPivotGrid.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ PivotGrid1.SortOption = SortOption.ColumnSorting
 
 **Sorting only total columns**
 
-`TotalSorting` option is used to enable sorting only for sub-total columns of the SfPivotGrid. Please refer the below code snippet:
+The `TotalSorting` option is used to enable sorting only for sub-total columns of the SfPivotGrid.
 
 {% tabs %}
 
@@ -182,7 +182,7 @@ PivotGrid1.SortOption = SortOption.TotalSorting
 
 **Sorting only grand total columns**
 
-`GrandTotalSorting` option is used to enable sorting only for grand total columns of the SfPivotGrid. Please refer the below code snippet:
+The `GrandTotalSorting` option is used to enable sorting only for grand total columns of the SfPivotGrid.
 
 {% tabs %}
 
@@ -210,7 +210,7 @@ PivotGrid1.SortOption = SortOption.GrandTotalSorting
 
 **Disable sorting**
 
-**None** is the default option that disables sorting on all value columns of the SfPivotGrid. Please refer the below code snippet:
+**None** is the default option that disables sorting on all value columns of the SfPivotGrid.
 
 {% tabs %}
 

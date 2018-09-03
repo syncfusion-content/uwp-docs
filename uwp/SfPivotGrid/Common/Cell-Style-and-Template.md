@@ -9,17 +9,17 @@ documentation: ug
 
 # Cell Style and Template
 
-## Cell Style
+## Cell style
 
-The column cells, row cells, summary cells, and value cells of a grid can be formatted independently with the help of specific style properties as listed below:
+The column cells, row cells, summary cells, and value cells of a grid can be formatted independently with the help of specific style properties:
 
-* `ColumnHeaderStyle` - Specifies the style for column headers.
-* `RowHeaderStyle` - Specifies the style for row headers.
-* `SummaryColumnStyle` - Specifies the style for summary column cells.
-* `SummaryRowStyle` - Specifies the style for summary row cells.
-* `ValueCellStyle` - Specifies the style for value cells.
+* `ColumnHeaderStyle`: Specifies the style for column headers.
+* `RowHeaderStyle`: Specifies the style for row headers.
+* `SummaryColumnStyle`: Specifies the style for summary column cells.
+* `SummaryRowStyle`: Specifies the style for summary row cells.
+* `ValueCellStyle`: Specifies the style for value cells.
 
-A cell can be customized by using the properties listed below:
+A cell can be customized by using the following properties.
 
 <table>
 <tr>
@@ -56,7 +56,7 @@ Brush</td></tr>
 
 **Defining cell style**
 
-The following code snippet illustrates how to customize the style of column header cell:
+The following code snippet illustrates how to customize the style of column header cell.
 
 {% tabs %}
 
@@ -107,13 +107,13 @@ Me.PivotGrid1.ColumnHeaderStyle.FontSize = 13
 
 ## Cell template
 
-SfPivotGrid allows you to define custom template for modifying the default appearance of all cells in the SfPivotGrid. The style for each cell can be defined by using the property of `Style` in `PivotGridCellStyle` and the style should be defined with the `PivotGridTemplateCell` type.
+The SfPivotGrid allows you to define custom template for modifying the default appearance of all cells in the SfPivotGrid. The style for each cell can be defined by using the `Style` property in `PivotGridCellStyle` and the style should be defined with the `PivotGridTemplateCell` type.
 
 **Defining cell template**
 
-You can define your own style for column cells by using `ColumnHeaderStyle` property, row cells by using `RowHeaderStyle`, value cells by using `ValueCellStyle`, and summary cells by using `SummaryRowStyle` and `SummaryColumnStyle`. The defined template is assigned to the `Style` property of corresponding cell style in the SfPivotGrid control.
+You can define your own style for column cells by using the `ColumnHeaderStyle` property, row cells by using the `RowHeaderStyle` property, value cells by using the `ValueCellStyle` property, and summary cells by using the `SummaryRowStyle` and `SummaryColumnStyle` properties. The defined template is assigned to the `Style` property of corresponding cell style in the SfPivotGrid control.
 
-The following code snippet illustrates how to customize the style of column header cell using the custom template:
+The following code snippet illustrates how to customize the style of column header cell using the custom template.
 
 {% tabs %}
 
@@ -234,6 +234,6 @@ End Class
 
 ![](Cell-Style-and-Template_images/PivotGrid-shows-templated-cells.png)
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\CellTemplate.xaml

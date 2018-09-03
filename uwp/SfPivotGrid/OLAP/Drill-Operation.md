@@ -9,7 +9,7 @@ documentation: ug
 
 # Drill Operation
 
-## Drill Down/Drill Up
+## Drill down/Drill up
 
 This is a basic feature of the SfPivotGrid through which the amount of information can be limited for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the expander present in grid cells.
 
@@ -17,7 +17,7 @@ Drill up, also called as roll up; it navigates from more detailed data to less d
 
 Drill down, also called as roll down; it is the reverse of drill up which navigates from less detailed data to more detailed data by climbing down the concept hierarchy for the dimension.
 
-While binding hierarchical dimensions (for example, the time dimension could include 3 levels namely Year, Quarter, and Month), the SfPivotGrid allows you to visualize the data for different levels by using the collapsible labels which is illustrated in the following screenshot:
+While binding hierarchical dimensions (for example, the time dimension includes 3 levels namely year, quarter, and month), the SfPivotGrid allows you to visualize the data for different levels by using the collapsible labels which is illustrated in the following screenshot.
 
 ![](Drill-Operation_images/Drill-operation.png)
 
@@ -31,7 +31,7 @@ The following drill types are supported in the SfPivotGrid:
 
 **Drill member**
 
-'Drill Member' is the default drilling type performed in the SfPivotGrid. When multiple dimensions are added in the grid, expanding a single member expands the corresponding member element across all of its positions. The following code snippet and screenshot illustrates how the elements are drilled in the drill member type:
+The drill member is the default drilling type performed in the SfPivotGrid. When multiple dimensions are added in the grid, expanding a single member expands the corresponding member element across all of its positions. The following code snippet and screenshot illustrates how the elements are drilled in the drill member type.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ pivotGrid1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillMember
 
 **Drill position**
 
-'Drill Position' type enables the user to drill only the current position of the selected member in the OLAP report. This excludes the drilled data of the selected member in other positions by using an MDX query. The following code snippet and screenshot illustrate how the elements are drilled in the drill position type:
+The drill position type enables users to drill only the current position of the selected member in the OLAP report. This excludes the drilled data of the selected member in other positions by using an MDX query. The following code snippet and screenshot illustrate how the elements are drilled in the drill position type.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ pivotGrid1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillPosition
 
 **Drill replace**
 
-SfPivotGrid supports 'Drill Replace' type, in which the control would tend to display only the immediate child members and ancestors on drill-down. The following code snippet and screenshot illustrate how the elements are drilled in the drill member type:
+The SfPivotGrid supports drill replace type, in which the control tends to display only the immediate child members and ancestors on drill-down. The following code snippet and screenshot illustrate how the elements are drilled in the drill replace type.
 
 {% tabs %}
 
@@ -93,15 +93,15 @@ pivotGrid1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillReplace
 
 ![](Drill-Operation_images/Drill-replace.png)
 
-N> The drilled-down member will be replaced with the drilled data and it cannot be drilled-up.
+N> The drilled-down member will be replaced with drilled data and it cannot be drilled-up.
 
-N> Since the property `DrillType` interacts with the `OlapDataManager`, you should call `DataBind()` method of the SfPivotGrid after assigning the value to this property.
+N> Since the `DrillType` property interacts with `OlapDataManager`, you should call the `DataBind()` method of the SfPivotGrid after assigning the value to this property.
 
-## Show/Hide expanders
+## Show/hide expanders
 
 The expander refers to the arrow sign prior to the member present in grid cells. The visibility of expanders in the SfPivotGrid can be toggled with the help of `ShowExpanders` property available in the OLAP report.
 
-Please refer the below code snippet to disable expanders in the SfPivotGrid:
+Refer to the following code snippet to disable expanders in the SfPivotGrid.
 
 {% tabs %}
 
@@ -121,4 +121,4 @@ pivotGrid1.OlapDataManager.CurrentReport.ShowExpanders = False
 
 ![](Drill-Operation_images/Drill-operation-hide-expanders.png)
 
-N> Since the property `ShowExpanders` interacts with the `OlapDataManager`, you should call `DataBind()` method of the SfPivotGrid after assigning the value to this property.
+N> Since the `ShowExpanders` property interacts with the `OlapDataManager`, you should call the `DataBind()` method of the SfPivotGrid after assigning the value to this property.

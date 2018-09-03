@@ -9,13 +9,13 @@ documentation: ug
 
 # Localization
 
-Localization is the key feature for providing software solutions targeted at global users. SfPivotGrid allows users to localize the control to a specific locale. SfPivotGrid supports “resx” based localization.
+Localization is the key feature for providing software solutions targeted at global users. SfPivotGrid allows users to localize the control to a specific locale and supports “resx” based localization.
 
 You should perform the following steps to localize the control.
 
-* Translation
-* Resource file and file name conventions
-* Culture specification
+* Translation.
+* Resource file and file name conventions.
+* Culture specification.
 
 ## Translation
 
@@ -25,22 +25,22 @@ N> Localization key field should be same for all locales. Do not translate the k
 
 ## Resource file and file name conventions
 
-After translating the strings, perform the following steps in the application:
+After translating the strings, proceed with following steps in the application:
 
-1. Right-click the project file to create a new folder in the project by selecting Add > New Folder and rename the folder as “Resources”.
-2. Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
+1. Right-click the project file to create a new folder in the project by selecting **Add > New Folder** and rename the folder as “Resources”.
+2. Then, right-click the **Resources** folder to create a new resource file by selecting **Add > New Item**.
 
 ![](Localization_images/newResxFile_step1.png)
 
 ![](Localization_images/newResxFile_step2.png)
 
-N> The resource file name should be in the format “&lt;Culture Code&gt;.resx”.
+N> The resource file name should be in the “&lt;Culture Code&gt;.resx” format.
 
-3. Copy and paste the translated locale to the resource file which is created in the previous step.
+3. Copy and paste the translated locale to the created resource file.
 
 ## Culture specification
 
-You should specify the CurrentUICulture in the Application_Startup method of App.xaml.cs file or in the constructor of MainPage.xaml.cs file.
+You should specify the CurrentUICulture in the Application_Startup method of the App.xaml.cs file or in the constructor of the MainPage.xaml.cs file.
 
 N> If you are specifying the current culture in the constructor of MainPage, then ensure that the culture is specified before calling the InitializeComponent() method.
 
@@ -75,7 +75,7 @@ End Class
 
 ## RTL
 
-SfPivotGrid provides RTL support to display the content from right to left direction by setting the `FlowDirection` property as **RightToLeft**.
+The SfPivotGrid provides RTL support to display the content from right to left direction by setting the `FlowDirection` property to **RightToLeft**.
 
 {% tabs %}
 
@@ -103,6 +103,6 @@ PivotGrid1.FlowDirection = FlowDirection.RightToLeft
 
 ![](Localization_images/relationalRTL.png)
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\Localization.xaml
