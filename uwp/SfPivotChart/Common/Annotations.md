@@ -221,7 +221,7 @@ PivotChart1.Annotations.Add(annotation)
 
 **Rotating image annotation**
 
-An image annotation can be rotated by using the `Angle` property. The folowing code snippet illustrates rotating the image annotation.
+An image annotation can be rotated by using the `Angle` property. The following code snippet illustrates rotating the image annotation.
 
 {% tabs %}
 
