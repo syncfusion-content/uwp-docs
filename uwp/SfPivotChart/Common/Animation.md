@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-SfPivotChart allows you to animate the chart series on loading, and on changing the data source. An animation in the chart can be enabled by setting the `EnableAnimation` property as true and defining the corresponding animation speed with the `AnimationDuration` property.
+The SfPivotChart allows you to animate the chart series when loading and changing the data source. An animation in the chart can be enabled by setting the `EnableAnimation` property to true and defining the corresponding animation speed with the `AnimationDuration` property.
 
 The following chart types support animation:
 
@@ -26,7 +26,7 @@ The following chart types support animation:
 * Scatter
 * Pie
 
-You can use the below code snippet to enable animation in the SfPivotChart.
+You can use the following snippet to enable animation in the SfPivotChart.
 
 {% tabs %}
 
