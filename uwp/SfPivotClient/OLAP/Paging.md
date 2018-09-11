@@ -9,15 +9,15 @@ documentation: ug
 
 # Paging
 
-Paging in the SfPivotClient provides support to load and render large amount of data without any performance constraint.
+Paging in the SfPivotClient supports loading and rendering the large amounts of data without any performance constraint.
 
-When you process the large CellSet, it is split into several segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by using the UI options available in the SfPivotPager.
+When you process the large CellSet, it is split into several segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options available in the SfPivotPager.
 
-Paging can be enabled in any of the following ways as illustrated below:
+Paging can be enabled in any of the following ways as illustrated below.
 
 **Using 'EnablePaging' Property**
 
-To enable paging, `EnablePaging` property must be set as true. The SfPivotPager is included and the OlapDataManager object of the SfPivotClient is bounded to respective instance of the SfPivotPager. The below code snippet and screenshot illustrate about how to enable the paging option in the SfPivotClient.
+To enable paging, the `EnablePaging` property should be set to true. The SfPivotPager is included and the OlapDataManager object of the SfPivotClient is bounded to respective instance of the SfPivotPager. The following code snippet and screenshot illustrate how to enable the paging option in the SfPivotClient.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ PivotClient1.EnablePaging = True
 
 {% endtabs %}
 
-N> Paging can be enabled or disabled at run time by using the *Pivot Pager* icon ![](Paging_images/Pager-button.png) in the SfPivotClient's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
+N> Paging can be enabled or disabled at runtime by using the *Pivot Pager* icon ![](Paging_images/Pager-button.png) in the SfPivotClient's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
 
 ![](Paging_images/pagerEnabled_UI.png)
 
@@ -141,11 +141,11 @@ End Function
 
 ## Pager settings
 
-The page size and current page of both column and row section can be modified by using the options available in the pager settings dialog. The pager settings dialog can be opened by clicking the *Settings button* in the pager.
+The page size and current page of both column and row sections can be modified by using the options available in the pager settings dialog. The pager settings dialog can be opened by clicking the settings button in the pager.
 
 ![](Paging_images/pagerSettingsPopup.png)
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\Universal
 Windows\SampleBrowser\PivotClient\PivotClient\View\Paging.xaml

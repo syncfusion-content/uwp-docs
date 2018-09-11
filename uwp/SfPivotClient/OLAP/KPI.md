@@ -9,34 +9,34 @@ documentation: ug
 
 # Key Performance Indicator (KPI)
 
-Key Performance Indicators (KPIs) are business metrics that help to figure out the progress of an enterprise when meeting its business goals. Typically, these calculations are a combination of Multi-Dimensional Expressions (MDX) or calculated members. The KPIs also have an additional metadata that provides information about how the client applications should display the results of KPI’s calculations.
+Key Performance Indicator (KPI) is a business metric that helps to figure out the progress of an enterprise when meeting its business goals. Typically, these calculations are a combination of Multi-Dimensional Expressions (MDX) or calculated members. The KPIs also have an additional metadata that provides information about how the client applications should display the results of KPI’s calculations.
 
 ## Indicator types
 
 There are four types of indicators available in the KPI as listed below:
 
-* KPI Goal
-* KPI Status
-* KPI Trend
-* KPI Value
+* KPI goal.
+* KPI status.
+* KPI trend.
+* KPI value.
 
 ## Adding KPI elements
 
-There are two ways to define KPI elements in the SfPivotClient as illustrated below:
+There are two ways to define KPI elements in the SfPivotClient as follows.
 
 **Using drag and drop**
 
-You can dynamically drag and drop KPI elements from the cube dimension browser to the axis element builder to add KPI in the current report.
+You can dynamically drag and drop the KPI elements from the cube dimension browser to the axis element builder to add a KPI in the current report.
 
 N> If the current report does not contain a measure element, then the KPI element cannot be added to the current report.
 
-The below screenshot illustrates the collection of KPI elements available in the connected OLAP cube:
+The following screenshot illustrates the collection of KPI elements available in the connected OLAP cube.
 
 ![](KPI_images/kpi_Drag_Drop.png)
 
 **Using OLAP report**
 
-You can define KPI elements in the OLAP report along with its associated measures and it can be added to any axis of the current OLAP report. The below code specifies about how to define KPI elements in the OLAP report.
+You can define KPI elements in the OLAP report along with its associated measures and it can be added to any axis of the current OLAP report. The following code specifies how to define KPI elements in the OLAP report.
 
 N> KPI elements must be specified in the same axis containing measure elements.
 

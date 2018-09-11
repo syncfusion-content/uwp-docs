@@ -9,11 +9,11 @@ documentation: ug
 
 # Calculated Members and Measures
 
-SfPivotGrid allows users to add calculated measures and members in the OLAP report. There are two ways to define the calculated member or measure in the SfPivotClient as illustrated below:
+The SfPivotGrid allows users to add calculated measures and members in the OLAP report. There are two ways to define the calculated member or measure in the SfPivotClient as illustrated below.
 
 **Using calculated member editor dialog**
 
-The calculated member editor dialog can be opened by clicking the *Create a Calculated Member/Measure* icon ![](Calculated-Members-and-Measures_images/Calculated-member-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableCalculatedMembers` property is enabled as mentioned below:
+The calculated member editor dialog can be opened by clicking the *Create a Calculated Member/Measure* icon ![](Calculated-Members-and-Measures_images/Calculated-member-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableCalculatedMembers` property is enabled.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ PivotClient1.EnableCalculatedMembers = True
 
 **Using OLAP report**
 
-You can define the calculated member or measure, and it can be added to any axis of the current OLAP report as specified in the following code snippet:
+You can define the calculated member or measure, and it can be added to any axis of the current OLAP report as specified in the following code snippet.
 
 {% tabs %}
 
@@ -136,6 +136,6 @@ PivotClient1.OlapDataManager.SetCurrentReport(olapReport)
 
 {% endtabs %}
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotClient\PivotClient\View\CalculatedMembers.xaml

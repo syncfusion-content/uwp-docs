@@ -15,7 +15,7 @@ By default, the SfPivotClient displays both the grid and chart components. To vi
 
 **Chart only**
 
-To view the PivotChart alone in the SfPivotClient, the `DisplayMode` property should be set as `ChartOnly` like specified in the below code snippet.
+To view the pivot chart alone in the SfPivotClient, the `DisplayMode` property should be set to `ChartOnly` as specified in the following code snippet.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ PivotClient1.DisplayMode = PivotClientDisplayMode.ChartOnly
 
 **Grid only**
 
-To view the PivotGrid alone in the SfPivotClient, the `DisplayMode` property should be set as `GridOnly` like specified in the below code snippet.
+To view the pivot grid alone in the SfPivotClient, the `DisplayMode` property should be set to `GridOnly` as specified in the following code snippet.
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ PivotClient1.DisplayMode = PivotClientDisplayMode.GridOnly
 
 **Both**
 
-To view both the PivotGrid and PivotChart in the SfPivotClient, the `DisplayMode` property should be set as `Both` like shown in the below code snippet.
+To view both the pivot grid and pivot chart in the SfPivotClient, the `DisplayMode` property should be set to `Both` as shown in the following code snippet.
 
 {% tabs %}
 
@@ -97,6 +97,6 @@ PivotClient1.DisplayMode = PivotClientDisplayMode.Both
 
 ![](Layout-Customization_images/DisplayMode-both.png)
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotClient\PivotClient\View\Configuration.xaml
