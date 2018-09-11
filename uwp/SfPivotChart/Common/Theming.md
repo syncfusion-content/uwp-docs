@@ -9,7 +9,7 @@ documentation: ug
 
 # Theming
 
-Theming is the process of applying particular settings to the visual elements of the control. Following in-built themes are supported in the SfPivotChart control.
+Theming is the process of applying particular settings to visual elements of the control. Following built-in themes are supported in the SfPivotChart control.
 
 * Blend
 * Lime
@@ -28,7 +28,7 @@ Theming is the process of applying particular settings to the visual elements of
 * VisualStudio2013
 * VisualStudio2015
 
-By using the `ChartVisualStyle` property in the SfPivotChart, you can set the visual style of a control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotChart:
+By using the `ChartVisualStyle` property in the SfPivotChart, you can set the visual style of a control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotChart.
 
 {% tabs %}
 

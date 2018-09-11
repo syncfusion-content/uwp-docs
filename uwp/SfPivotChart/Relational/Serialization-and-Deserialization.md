@@ -13,11 +13,11 @@ This support allows you to serialize and deserialize the settings of SfPivotChar
 
 ## Serialization
 
-Serialization allows you to save the settings of SfPivotChart by using `Serialize` method of SfPivotChart. It exports the current SfPivotChart control settings to an XML file and it can be done with the help of one of the following methods.
+Serialization allows you to save the settings of the SfPivotChart by using the `Serialize` method. It exports the current SfPivotChart control settings to an XML file and it can be done with the help of one of the following methods.
 
 ### Serialize using FileSavePicker
 
-It allows you to save the settings of SfPivotChart control to the desired location in _*.xml_ format by using `Serialize` method. Please refer the below code snippet.
+It allows you to save the settings of SfPivotChart control to the desired location in _*.xml_ format by using the `Serialize` method. Refer to the following code snippet.
 
 {% tabs %}
 
@@ -35,13 +35,13 @@ Me.pivotChart.Serialize()
 
 {% endtabs %}
 
-As a result, SfPivotChart control will be serialized in XML file as shown below:
+The SfPivotChart control will be serialized in XML file as follows.
 
 ![Serialized-PivotChart](Serialization-and-Deserialization_images/Serialized-PivotChart.png)
 
 ### Serialize using stream
 
-It allows you to save the SfPivotChart control's settings with the help of `Serialize` method by passing the stream as parameter. Please refer the below code snippet.
+It allows you to save the SfPivotChart control's settings with the help of `Serialize` method by passing the stream as parameter. Refer to the following code snippet.
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ Me.pivotChart.Serialize(stream)
 
 ### Serialize using storage file
 
-It allows you to save the SfPivotChart control's settings with the help of `Serialize` method by passing the storage file as parameter. Please refer the below code snippet.
+It allows you to save the SfPivotChart control's settings with the help of `Serialize` method by passing the storage file as parameter. Refer to the following code snippet.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ Me.pivotChart.Serialize(storageFile)
 
 ### Serialize To XML string
 
-It allows you to save the settings of SfPivotChart control into a XML string using the method of `SerializeToXml`. Please refer the below code snippet.
+It allows you to save the settings of SfPivotChart control into an XML string using the `SerializeToXml` method.
 
 {% tabs %}
 
@@ -113,11 +113,11 @@ Private serializedPivotChart As String = Me.pivotChart.SerializeToXml()
 
 ## Deserialization
 
-Deserialization allows you to load the settings of SfPivotChart by using `Deserialize` method of SfPivotChart. It reconstructs the SfPivotChart control based on the settings stored in the XML file and it can be done with the help of one of the following methods.
+Deserialization allows you to load the settings of SfPivotChart by using the `Deserialize` method. It reconstructs the SfPivotChart control based on the settings stored in the XML file and it can be done with the help of one of the following methods.
 
 ### Deserialize using FileSavePicker
 
-It allows you to reload the SfPivotChart control with the settings available in the _*.xml_ file. This can be achieved by using the `Deserialize` method. Please refer the below code snippet.
+It allows you to reload the SfPivotChart control with the settings available in the _*.xml_ file. This can be achieved by using the `Deserialize` method.
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ Me.pivotChart.Deserialize()
 
 ### Deserialize using stream
 
-It allows you to reload the SfPivotChart control with the settings available in the stream. This can be achieved with the help of `Deserialize` method by passing the stream as parameter. Please refer the below code snippet.
+It allows you to reload the SfPivotChart control with the settings available in the stream. This can be achieved with the help of `Deserialize` method by passing the stream as parameter.
 
 {% tabs %}
 
@@ -163,7 +163,7 @@ Me.pivotChart.Deserialize(stream)
 
 ### Deserialize using storage file
 
-It allows you to reload the SfPivotChart control with the settings available in the storage file. This can be achieved by with the help of `Deserialize` method by passing the storage file as parameter. Please refer the below code snippet.
+It allows you to reload the SfPivotChart control with the settings available in the storage file. This can be achieved using the `Deserialize` method by passing the storage file as parameter.
 
 {% tabs %}
 
@@ -187,7 +187,7 @@ Me.pivotChart.Deserialize(storageFile)
 
 ### Deserialize from XML string
 
-It allows you to reload the SfPivotChart with the settings available in the XML string. This can be achieved with the help of `Deserialize` method by passing the XML string as parameter. Please refer the below code snippet.
+It allows you to reload the SfPivotChart with the settings available in the XML string. This can be achieved with the help of `Deserialize` method by passing the XML string as parameter.
 
 {% tabs %}
 
@@ -207,6 +207,6 @@ Me.pivotChart.Deserialize(serializedPivotChart)
 
 {% endtabs %}
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotChart\PivotChart\View\Serialization.xaml

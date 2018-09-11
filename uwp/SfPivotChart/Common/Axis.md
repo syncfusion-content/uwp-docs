@@ -19,7 +19,7 @@ The primary axis style can be modified by using the `PrimaryAxisStyle` property 
 
 To customize the grid line of chart axis, you can use the `GridLineStyle` property.
 
-The following code snippet describes how to customize the style of grid lines in the primary axis:
+The following code snippet describes how to customize the style of grid lines in the primary axis.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ PivotChart1.PrimaryAxisStyle.GridLineStyle = TryCast(Resources("LineStyle"), Sty
 
 ![](Axis_images/relationalPrimaryAxisGridLineStyle.png)
 
-The following code snippet describes how to customize the style of grid lines in the secondary axis:
+The following code snippet describes how to customize the style of gridlines in the secondary axis.
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ PivotChart1.SecondaryAxisStyle.GridLineStyle = TryCast(Resources("LineStyle"), S
 
 To customize the expanders of primary axis labels, you should assign the `ExpanderStyle` property in the `PivotChartAxisStyle`. It is applicable only for the primary axis having expanders in labels.
 
-The following code snippet describes how to customize the style of expanders in primary axis labels:
+The following code snippet describes how to customize the style of expanders in primary axis labels.
 
 {% tabs %}
 
@@ -172,7 +172,7 @@ PivotChart1.PrimaryAxisStyle.ExpanderStyle = TryCast(Resources("PrimaryAxisExpan
 
 ### Group line customization
 
-To customize the appearance of group line around primary axis labels, `GroupLineStroke` and `GroupLineStrokeThickness` properties of `PivotChartAxisStyle` are used. The following code snippet describes how to customize the appearance of group lines in the primary axis:
+To customize the appearance of group line around primary axis labels, the `GroupLineStroke` and `GroupLineStrokeThickness` properties of `PivotChartAxisStyle` are used. The following code snippet describes how to customize the appearance of group lines in the primary axis.
 
 {% tabs %}
 
@@ -266,7 +266,7 @@ To modify the format of axis labels, you should use the `LabelFormat` property. 
 
 **Label rotation**
 
-The labels of primary axis and secondary axis can be rotated with the help of `LabelRotationAngle` property in the `PivotChartAxisStyle`. The following code snippet illustrates about how to rotate the angle of primary axis labels to -20 degrees:
+The labels of primary axis and secondary axis can be rotated with the help of `LabelRotationAngle` property in the `PivotChartAxisStyle`. The following code snippet illustrates how to rotate the angle of primary axis labels to -20 degrees.
 
 {% tabs %}
 
@@ -294,9 +294,9 @@ PivotChart1.PrimaryAxisStyle.LabelRotationAngle = -20
 
 ![](Axis_images/axisLabelRotation.png)
 
-## Show/Hide axis
+## Show/hide axis
 
-The visibility of pivot chart axis can be toggled by setting the `Visibility` property of `PrimaryAxis` or `SecondaryAxis`. The following code snippet shows how to hide the primary axis of the SfPivotChart:
+The visibility of pivot chart axis can be toggled by setting the `Visibility` property of `PrimaryAxis` or `SecondaryAxis`. The following code snippet shows how to hide the primary axis of the SfPivotChart.
 
 {% tabs %}
 
