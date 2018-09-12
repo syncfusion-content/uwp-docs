@@ -9,15 +9,15 @@ documentation: ug
 
 # Chart types
 
-SfPivotChart offers many types of charts ranging from column charts to pie chart. Based on your requirements and specifications, any type of chart can be used for data visualization.
+The SfPivotChart offers different types of charts ranging from column chart to pie chart. Based on your requirements and specifications, any type of chart can be used for data visualization.
 
 ## Column charts
 
 ### Column chart
 
-Column charts are the most common chart types that are being used for comparison analysis. It uses vertical bars (called columns) to display different values of one or more items.
+Column charts are the most common chart type that are being used for comparison analysis. It uses vertical bars (called columns) to display different values of one or more items.
 
-The following code snippet shows how to select a simple column chart:
+The following code snippet shows how to select a simple column chart.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ PivotChart1.ChartType = PivotChartType.Column
 
 Stacking column charts are similar to regular column charts except that the Y values are stacked on top of each other in the specified series order. This chart helps to visualize the relationship of parts to the whole and it is widely used for proportional analysis over a particular period of time.
 
-The following code snippet shows how to select a stacking column chart:
+The following code snippet shows how to select a stacking column chart.
 
 {% tabs %}
 
@@ -81,9 +81,9 @@ PivotChart1.ChartType = PivotChartType.StackingColumn
 
 ### Stacking column 100 chart
 
-Stacking column 100 chart is a simple form of chart, which contains stacked segments. In the 100 % stacked column chart, the cumulative proportion of each stacked element always totals 100%. This type of chart is used for visualizing the relative contribution of each series values to the whole.
+Stacking column 100 chart contains stacked segments; it is a simple form of chart. In the 100 % stacked column chart, the cumulative proportion of each stacked element always totals 100%. This type of chart is used for visualizing the relative contribution of each series values to the whole.
 
-The following code snippet shows how to select a stacking column 100 chart:
+The following code snippet shows how to select a stacking column 100 chart.
 
 {% tabs %}
 
@@ -118,7 +118,7 @@ PivotChart1.ChartType = PivotChartType.StackingColumn100
 
 Bar chart is the simplest and most versatile of statistical diagrams. It displays horizontal bars for each point in the series and it is widely used for comparison analysis over a particular period of time.
 
-The following code snippet shows how to select a bar chart:
+The following code snippet shows how to select a bar chart.
 
 {% tabs %}
 
@@ -184,7 +184,7 @@ PivotChart1.ChartType = PivotChartType.StackingBar
 
 Stacking bar 100 chart is similar to the stacking column 100 chart. But, it differs from direction; it is rotated 90 degree in clockwise direction. This type of chart is widely used for proportional analysis over a particular period of time.
 
-The following code snippet shows how to select a stacking bar 100 chart:
+The following code snippet shows how to select a stacking bar 100 chart.
 
 {% tabs %}
 
@@ -219,7 +219,7 @@ PivotChart1.ChartType = PivotChartType.StackingBar100
 
 Area chart fills the quantitative data over a period of time. It is mainly used to compare the quantity that is plotted over two or more series.
 
-The following code snippet shows how to select an area chart:
+The following code snippet shows how to select an area chart.
 
 {% tabs %}
 
@@ -252,7 +252,7 @@ PivotChart1.ChartType = PivotChartType.Area
 
 Stacking area chart fills the quantitative data over a period of time like the area chart. The variation is plotting each series on the top of the previous series rather than starting from 0 in the horizontal axis. It is mainly used to compare the quantity plotted over two or more series.
 
-The following code snippet shows how to select a stacking area chart:
+The following code snippet shows how to select a stacking area chart.
 
 {% tabs %}
 
@@ -285,7 +285,7 @@ PivotChart1.ChartType = PivotChartType.StackingArea
 
 Spline area chart is mostly used to approximate the intervals with the help of spline curve. It is often used when data points are in limited number.
 
-The following code snippet shows how to select a spline area chart:
+The following code snippet shows how to select a spline area chart.
 
 {% tabs %}
 
@@ -318,7 +318,7 @@ PivotChart1.ChartType = PivotChartType.SplineArea
 
 In the step area chart, the points are plotted instead of a straight line tracing the shortest path between points; the values are connected by continuous vertical and horizontal lines.
 
-The following code snippet shows how to select a step area chart:
+The following code snippet shows how to select a step area chart.
 
 {% tabs %}
 
@@ -353,7 +353,7 @@ PivotChart1.ChartType = PivotChartType.StepArea
 
 Line chart is the simple form of chart, which connects a series of data points with a straight line. Usually, it is used for trend analysis, forecasting, or visualizing large data points.
 
-The following code snippet shows how to select a line chart:
+The following code snippet shows how to select a line chart.
 
 {% tabs %}
 
@@ -386,7 +386,7 @@ PivotChart1.ChartType = PivotChartType.Line
 
 Spline chart is a simple form of chart, which connects the series of data points with an arc rather than a straight line.
 
-The following code snippet shows how to select a spline chart:
+The following code snippet shows how to select a spline chart.
 
 {% tabs %}
 
@@ -419,7 +419,7 @@ PivotChart1.ChartType = PivotChartType.Spline
 
 Step line chart is another form of chart, which connects the series of data points by using horizontal and vertical lines.
 
-The following code snippet shows how to select a step line chart:
+The following code snippet shows how to select a step line chart.
 
 {% tabs %}
 
@@ -452,7 +452,7 @@ PivotChart1.ChartType = PivotChartType.StepLine
 
 Scatter chart is a collection of points that are plotted in the rectangular co-ordinate system. It is often used in relationship analysis up to one independent variable. The size of scatter segments can be modified with the help of `ScatterWidth` and `ScatterHeight` properties.
 
-The following code snippet shows how to select a scatter chart:
+The following code snippet shows how to select a scatter chart.
 
 {% tabs %}
 
@@ -489,7 +489,7 @@ PivotChart1.ScatterHeight = 20
 
 Pie chart renders Y values as slices in a pie. These slices are rendered in a proportion to the whole which is simply the sum of all the Y values in the series. Pie chart can display only one data series at a time.
 
-The following code snippet shows how to select a pie chart:
+The following code snippet shows how to select a pie chart.
 
 {% tabs %}
 
@@ -526,7 +526,7 @@ N> Pie chart should not be used for comparison analysis of large data points, be
 
 Fast bar bitmap charts are similar to bar type charts except that it boosts up the performance of loading large data points.
 
-The following code snippet shows how to select a fast bar bitmap chart:
+The following code snippet shows how to select a fast bar bitmap chart.
 
 {% tabs %}
 
@@ -559,7 +559,7 @@ PivotChart1.ChartType = PivotChartType.FastBarBitmap
 
 Fast column bitmap charts are similar to column type charts except that it boosts up the performance of loading large data points.
 
-The following code snippet shows how to select a fast column bitmap chart:
+The following code snippet shows how to select a fast column bitmap chart.
 
 {% tabs %}
 
@@ -592,7 +592,7 @@ PivotChart1.ChartType = PivotChartType.FastColumnBitmap
 
 The fast line chart is a special kind of line chart that renders a huge collection of data points using the polyline segment.
 
-The following code snippet shows how to select a fast line chart:
+The following code snippet shows how to select a fast line chart.
 
 {% tabs %}
 
@@ -625,7 +625,7 @@ PivotChart1.ChartType = PivotChartType.FastLine
 
 The fast line bitmap chart displays a series of line segments that are rendered by using the `WriteableBitmap`. The advantage of this chart is rendering a million data points in a fraction of seconds.
 
-The following code snippet shows how to select a fast line bitmap chart:
+The following code snippet shows how to select a fast line bitmap chart.
 
 {% tabs %}
 
@@ -654,7 +654,7 @@ PivotChart1.ChartType = PivotChartType.FastLineBitmap
 
 ![](Chart-Types_images/fastLineBitmap.png)
 
-As this chart is rendered using bitmap, there might be some jagged lines at edges and it can be reduced by enabling the property of `EnableAntiAliasing` as shown below:
+As this chart is rendered using bitmap, there might be some jagged lines at the edges and it can be reduced by enabling the `EnableAntiAliasing` property as follows.
 
 {% tabs %}
 
@@ -687,7 +687,7 @@ PivotChart1.EnableAntiAliasing = True
 
 ### Fast scatter bitmap chart
 
-The fast scatter bitmap chart is used to display a large set of scatter points. The following code snippet shows how to select a fast scatter bitmap chart:
+The fast scatter bitmap chart is used to display a large set of scatter points. The following code snippet shows how to select a fast scatter bitmap chart.
 
 {% tabs %}
 
@@ -716,7 +716,7 @@ PivotChart1.ChartType = PivotChartType.FastScatterBitmap
 
 ![](Chart-Types_images/fastScatterBitmap.png)
 
-The size of the scatter points can be customized with the help of `ScatterWidth` and `ScatterHeight` properties as shown below:
+The size of the scatter points can be customized with the help of `ScatterWidth` and `ScatterHeight` properties as follows.
 
 {% tabs %}
 
@@ -811,7 +811,7 @@ PivotChart1.ChartType = PivotChartType.FastStepLineBitmap
 
 ![](Chart-Types_images/fastStepLineBitmap.png)
 
-As fast step line bitmap chart is rendered using bitmap, some jagged lines can be occurred at edges and it can be reduced by enabling the property of `EnableAntiAliasing` as shown below:
+As fast step line bitmap chart is rendered using bitmap, some jagged lines can be occurred at the edges and it can be reduced by enabling the  `EnableAntiAliasing` property as follows.
 
 {% tabs %}
 
@@ -842,6 +842,6 @@ PivotChart1.EnableAntiAliasing = True
 
 ![](Chart-Types_images/fastStepLineBitmap_antiAlaisingEnabled.png)
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\User3s\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotChart\PivotChart\View\ChartType.xaml

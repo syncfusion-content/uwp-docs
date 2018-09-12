@@ -13,7 +13,7 @@ Legend displays the metadata that helps to identify the data series in the chart
 
 ## Icon
 
-Legend icon represents the symbol associated with each legend item. By default, the legend icon is visible and it can be hidden by using the `IconVisibility` property as mentioned below:
+Legend icon represents the symbol associated with each legend item. By default, the legend icon is visible, and it can be hidden by using the `IconVisibility` property as follows.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ PivotChart1.Legend.IconVisibility = Visibility.Collapsed
 
 **Icon customization**
 
-The size of the legend icon can be customized by using the properties of `IconWidth` and `IconHeight` as illustrated in the following code snippet:
+The size of the legend icon can be customized by using the `IconWidth` and `IconHeight`properties as illustrated in the following code snippet.
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ PivotChart1.Legend.IconHeight = 15
 
 ## Check box
 
-Check box is used to view or collapse the associated series. By default, `CheckBoxVisibility` is collapsed and it can be shown in the legend as follows:
+Check box is used to view or collapse the associated series. By default, the `CheckBoxVisibility` is collapsed and can be shown in the legend as follows.
 
 {% tabs %}
 
@@ -103,9 +103,9 @@ PivotChart1.Legend.CheckBoxVisibility = Visibility.Visible
 
 ![](Legend_images/checkBoxVisibility.png)
 
-## Show/Hide legend
+## Show/hide legend
 
-You can show or hide the legend in the SfPivotChart control by using the `Visibility` property of the PivotChartLegend. The following code snippet shows how to collapse the visibility of the legend:
+You can show or hide the legend in the SfPivotChart control by using the `Visibility` property of the PivotChartLegend. The following code snippet shows how to collapse the visibility of the legend.
 
 {% tabs %}
 
@@ -135,9 +135,9 @@ PivotChart1.Legend.Visibility = Visibility.Collapsed
 
 ## Toggling series visibility
 
-The property `ToggleSeriesVisibility` is used to view or collapse the associated series by clicking its legend item. By default, `ToggleSeriesVisibility` property is set to `False`.
+The `ToggleSeriesVisibility` property is used to view or collapse the associated series by clicking its legend item. By default, the `ToggleSeriesVisibility` property is set to `False`.
 
-You can enable the ToggleSeriesVisibility property as shown in the below code example:
+You can enable the `ToggleSeriesVisibility` property as shown in the following code example.
 
 {% tabs %}
 
@@ -163,17 +163,17 @@ PivotChart1.Legend.ToggleSeriesVisibility = True
 
 {% endtabs %}
 
-The series can be collapsed by clicking the respective legend item as shown below:
+The series can be collapsed by clicking the respective legend item as follows.
 
 ![](Legend_images/togglingVisibility_seriesHidden.png)
 
-You can view the associated series again by clicking the respective disabled legend item as shown below:
+You can view the associated series again by clicking the respective disabled legend item as follows.
 
 ![](Legend_images/togglingVisibility_seriesRevealed.png)
 
 ## Legend customization
 
-`ItemMargin` property can be used to modify the space between legend items. The following code snippet illustrates how to customize the default appearance of the legend:
+The `ItemMargin` property can be used to modify the space between legend items. The following code snippet illustrates how to customize the default appearance of the legend.
 
 {% tabs %}
 
@@ -213,7 +213,7 @@ PivotChart1.Legend.BorderThickness = New Thickness(1.5)
 
 ### Legend position
 
-`LegendPosition` property allows to position the legend inside or outside the chart area. By default, the legend is positioned outside the chart area. You can change the position of the legend as shown below:
+The `LegendPosition` property allows to position the legend inside or outside the chart area. By default, the legend is positioned outside the chart area. You can change the position of the legend as follows.
 
 {% tabs %}
 
@@ -245,7 +245,7 @@ PivotChart1.Legend.LegendPosition = LegendPosition.Inside
 
 **Docking legend**
 
-Legends can be docked left, right, top, or bottom around the chart area by using the `DockPosition` property. By default, the legend is docked at the top of the chart. The following code snippet shows how to display the legend at the bottom:
+Legends can be docked left, right, top, or bottom around the chart area by using the `DockPosition` property. By default, the legend is docked at the top of the chart. The following code snippet shows how to display the legend at the bottom.
 
 {% tabs %}
 
@@ -275,7 +275,7 @@ PivotChart1.Legend.DockPosition = ChartDock.Bottom
 
 **Floating legend**
 
-Legends can be floated at any arbitrary location inside the chart by setting the `DockPosition` as `Floating`. It is positioned by providing its relative position with the help of `OffsetX` and `OffsetY` properties. The following code snippet shows how to display the legend at the bottom:
+Legends can be floated at any arbitrary location inside the chart by setting the `DockPosition` as `Floating`. It is positioned by providing its relative position with the help of `OffsetX` and `OffsetY` properties. The following code snippet shows how to display the legend at the bottom.
 
 {% tabs %}
 
@@ -373,7 +373,7 @@ PivotChart1.Legend.Orientation = ChartOrientation.Vertical
 
 By default, the orientation is set as **Default** and the legend items are arranged in a single row or single column based on the legend position.
 
-To arrange the items of legend in predefined number of rows and columns, `RowCount` and `ColumnCount` properties are used. Based on the following scenarios, legend items are arranged in the legend.
+To arrange the legend items in predefined number of rows and columns, the `RowCount` and `ColumnCount` properties are used. Based on the following scenarios, the legend items are arranged in the legend.
 
 **Scenario 1:**
 
@@ -441,7 +441,7 @@ PivotChart1.Legend.ColumnCount = 2
 
 **Scenario 3:**
 
-When **both the options have different values** is specified, then the one which has the higher value is given preference. For example, if the row count is 1 and the column count is 4, then the legend items are arranged in 4 rows by giving preference to row count.
+When **both the options have different values** is specified, then the preference is given to one which has the higher value. For example, if the row count is 1 and the column count is 4, then the legend items are arranged in 4 rows by giving preference to row count.
 
 {% tabs %}
 
@@ -475,7 +475,7 @@ PivotChart1.Legend.ColumnCount = 4
 
 **Scenario 4:**
 
-When **both the options have same value**, then the preference is given to the column count when it is positioned at the top/bottom position, and the preference is given to the row count when it is positioned at the left/right position.
+When **both the options have same value** is specified, then the preference is given to the column count when it is positioned at the top or bottom position, and the preference is given to the row count when it is positioned at the left or right position.
 
 {% tabs %}
 
@@ -509,8 +509,8 @@ PivotChart1.Legend.ColumnCount = 1
 
 **Scenario 5:**
 
-When **none** of the options are specified, then the elements are arranged in horizontal order if the legend is positioned at top/bottom position, and the elements are arranged in vertical order if the legend is positioned at left/right position.
+When **none** of the options are specified, then the elements are arranged in horizontal order if the legend is positioned at top or bottom position, and the elements are arranged in vertical order if the legend is positioned at left or right position.
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotChart\PivotChart\View\LegendCustomization.xaml

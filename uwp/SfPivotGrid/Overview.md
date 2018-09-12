@@ -23,5 +23,5 @@ The key features of the SfPivotGrid control are listed as follows:
 * **Hyperlink**: Allows hyperlinking of cells to retrieve a detailed information about a particular cell.
 * **Cell templates**: Customizes the headers by applying the styles using the data templates.
 * **Conditional formatting**: Defines certain conditions, format cell's font, color, and border settings.
-* **Exporting**: Allows you to export the SfPivotGrid control into various formats such as PDF, Microsoft word, and Microsoft Excel formats.
+* **Exporting**: Allows you to export the SfPivotGrid control into various formats such as PDF, Microsoft Word, and Microsoft Excel formats.
 * **Tooltip**: Displays row and column values of respective grid cells on mouse hovering.
