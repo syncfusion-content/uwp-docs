@@ -9,9 +9,9 @@ documentation: ug
 
 # Freeze Headers
 
-SfPivotGrid provides built-in support to freeze the column and row headers. This is achieved by setting the `FreezeHeaders` property of SfPivotGrid to `true`.
+The SfPivotGrid provides built-in support to freeze the column and row headers. This can be achieved by setting the `FreezeHeaders` property of SfPivotGrid to `true`.
 
-Please refer the below code snippet to enable FreezeHeaders:
+Refer to the following code snippet to enable FreezeHeaders.
 
 {% tabs %}
 
@@ -37,10 +37,10 @@ Me.PivotGrid1.FreezeHeaders = True
 
 {% endtabs %}
 
-This is illustrated in the following screenshot:
+This is illustrated in the following screenshot.
 
 ![](Freeze-Headers_images/FreezeHeaders_image2.png)
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\GettingStarted.xaml
