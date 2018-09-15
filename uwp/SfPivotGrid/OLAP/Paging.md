@@ -9,13 +9,13 @@ documentation: ug
 
 # Paging
 
-SfPivotGrid provides support to load and render the large amount of data without any performance constraint. The below code snippet illustrates the paging using the current OLAP report.
+The SfPivotGrid supports loading and rendering the large amount of data without any performance constraint. The following code snippet illustrates the paging using the current OLAP report.
 
-SfPivotPager (custom control) is included and bound with the `OlapDataManager` of the respective SfPivotGrid. To enable paging, set the “EnablePaging” property of `OlapDataManager` to true.
+The SfPivotPager (custom control) is included and bound with the "OlapDataManager" of the respective SfPivotGrid. To enable paging, set the `EnablePaging` property of "OlapDataManager" to true.
 
-When you process a large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options, and you can also change the page size and the page number dynamically with the help of settings available in the SfPivotPager.
+When you process a large CellSet, it is split into several segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options, and you can change the page size and page number dynamically with the help of settings available in the SfPivotPager.
 
-N> The assembly **Syncfusion.SfPivotShared.UWP** should be included from the installed location to add the SfPivotPager with the SfPivotGrid. You can also get the assemblies by browsing the default assembly location i.e., {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\<version number>\Assemblies for Universal Windows\10.0\
+N> The assembly **Syncfusion.SfPivotShared.UWP** should be included from the installed location to add the SfPivotPager with SfPivotGrid. You can also get the assemblies by browsing the default assembly location i.e., {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\<version number>\Assemblies for Universal Windows\10.0\
 
 {% tabs %}
 
