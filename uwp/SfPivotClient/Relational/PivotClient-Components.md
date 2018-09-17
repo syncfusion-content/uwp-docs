@@ -112,7 +112,7 @@ By default the following options are available in the toolbar.
 * Custom summary: Changes the SummaryType into custom for existing pivot calculations.
 * Calculated field: Adds a calculated field at runtime.
 * Toggle pivot: Swaps the pivot items from rows to columns and vice versa.
-* Show/hide expanders: Toggles the visibility of expanders used for drilling operations.
+* Show/hide icon: Toggles the visibility of show/hide icon used for drilling operations.
 
 ## SfPivotGrid and SfPivotChart
 

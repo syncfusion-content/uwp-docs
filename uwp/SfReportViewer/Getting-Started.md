@@ -29,7 +29,7 @@ This section demonstrates how to create an application using SfReportViewer cont
    xmlns:Reports="using:Syncfusion.UI.Xaml.Reports"
    ~~~~
    
-   N> Adding the extension Syncfusion Controls for UWP XAML, adds all the Syncfusion UWP controls, you can also add the SfReportViewer reference and its dependent assemblies from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies for Universal Windows Platform\
+   N> Adding the extension Syncfusion Controls for UWP XAML, adds all the Syncfusion UWP controls, you can also add the SfReportViewer reference and its dependent assemblies from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\Universal Windows\{{ site.releaseversion }}\Assemblies for Universal Windows Platform\
  
 4. You can initialize the SfReportViewer control in XAML as follows.
 

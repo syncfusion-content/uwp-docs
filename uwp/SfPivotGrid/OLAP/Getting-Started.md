@@ -10,19 +10,19 @@ documentation: ug
 # Getting Started
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use our components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
 
-This section explains about the information required to create a simple SfPivotGrid control bound to the OLAP data source and also about creating a WCF service that helps to bind the OLAP data with the SfPivotGrid control through the OlapDataManager.
+This section explains about the information required to create a simple SfPivotGrid control bound to the OLAP data source and create a WCF service that helps to bind the OLAP data with the SfPivotGrid control through the OlapDataManager.
 
 ## Initializing SfPivotGrid control
 
-Open Visual Studio IDE and select *File > New > Project* to open the new project dialog.
+Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
 
-Select *Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)* to create a new UWP application and name the project as "SfPivotGridDemo".
+Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "SfPivotGridDemo".
 
-The target version/minimum version dialog appears, in which change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
+The target version/minimum version dialog appears, in which you should change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
-SfPivotGrid control can be initialized and added to the application through any of the following ways:
+The SfPivotGrid control can be initialized and added to the application through any of the following ways:
 
 1. Through designer.
 2. Through XAML.
@@ -32,19 +32,19 @@ SfPivotGrid control can be initialized and added to the application through any 
 
 Double-click on MainPage.xaml from the solution explorer to open it in the design view.
 
-Click on the toolbox and drag the **SfPivotGrid** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
+Click the toolbox and drag the **SfPivotGrid** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
-As a result, the SfPivotGrid control will be added to the designer as shown below:
+Now, the SfPivotGrid control will be added to the designer as follows.
 
 ![GettingStarted_Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
-SfPivotGrid control can be added to the project by referring assemblies or extension SDK as described below:
+The SfPivotGrid control can be added to the project by referring assemblies or extension SDK as follows.
 
 **Assembly reference**
 
-Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
+Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
 
 * Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
@@ -63,7 +63,7 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
 After adding the required reference, add the following namespace in the *MainPage.xaml* file.
 
@@ -77,7 +77,7 @@ xmlns:PivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
 
 {% endtabs %}
 
-Then add the SfPivotGrid control to the grid by using the specified namespace as specified in the below code snippet.
+Then, add the SfPivotGrid control to the grid by using the specified namespace as specified in the following code snippet.
 
 {% tabs %}
 
@@ -104,11 +104,11 @@ Then add the SfPivotGrid control to the grid by using the specified namespace as
 
 ### Adding control through code-behind
 
-SfPivotGrid control can be added to the project by referring assemblies or extension SDK.
+The SfPivotGrid control can be added to the project by referring assemblies or extension SDK.
 
 **Assembly reference**
 
-Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
+Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
 
 * Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
@@ -127,7 +127,7 @@ YN> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
 After adding the required reference, open the *MainPage.xaml* file and name the grid as "RootGrid" to refer it in the code-behind.
 
@@ -153,7 +153,7 @@ After adding the required reference, open the *MainPage.xaml* file and name the 
 
 {% endtabs %}
 
-Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGrid". Then initialize the SfPivotGrid control in the constructor and add it to the grid as illustrated below:
+Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGrid". Then, initialize the SfPivotGrid control in the constructor and add it to the grid as follows.
 
 {% tabs %}
 
@@ -205,24 +205,24 @@ End Namespace
 
 ## Adding service reference to project
 
-N> This section explains about how to refer the online service in UWP application for binding the cube information in the SfPivotGrid. The service URL used here refers the demo cube - “Adventure Works”, mainly used for illustration purpose.
-To create your own WCF service, please refer the topic of [Creating WCF Service Application.](#creating-wcf-service-application).
+N> This section explains how to refer the online service in UWP application for binding the cube information in the SfPivotGrid. The service URL used here refers the demo cube - “Adventure Works”, mainly used for illustration purpose.
+To create your own WCF service, refer to the topic of [Creating WCF Service Application.](#creating-wcf-service-application).
 
-After initializing the SfPivotGrid control, right click on the project in the solution explorer and select *Add > Service Reference...*.
+After initializing the SfPivotGrid control, right-click the project in the solution explorer and select **Add > Service Reference...**.
 
-In “Add Service Reference” dialog, enter the following address and click *Go* to add the online service.
+In “Add Service Reference” dialog, enter the following address and click **Go** to add the online service.
 
 [http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc](http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc)
 
-Also change the default namespace of service reference from "ServiceReference1" to "OlapManagerService" so that it will be easier to identify the OLAP service later. Finally click *OK* to add the service reference.
+Also change the default namespace of service reference from "ServiceReference1" to "OlapManagerService", so that it will be easier to identify the OLAP service later. Finally, click **OK** to add the service reference.
 
 ## Binding OLAP data to SfPivotGrid control
 
 ### Defining OlapReport and OlapDataManager through view model
 
-Right click on the project in the solution explorer and select *Add > New Item... > Class* to create a new class file. Then name the class as *OlapViewModel* and click *OK*.
+Right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class as *OlapViewModel* and click **OK**.
 
-The following code snippet illustrates about how to define OlapDataManager and OlapReport for SfPivotGrid control.
+The following code snippet illustrates how to define OlapDataManager and OlapReport for the SfPivotGrid control.
 
 N> The `OlapDataChanged` event should be hooked before assigning the current report to OlapDataManager.
 
@@ -472,14 +472,14 @@ End Namespace
 
 ### Binding OlapDataManager with SfPivotGrid control
 
-The OLAP data can be bound with SfPivotGrid control by using the property of `OlapDataManager` through any of the following ways:
+The OLAP data can be bound with SfPivotGrid control by using the `OlapDataManager` property through any of the following ways:
 
 * Through XAML
 * Through code-behind
 
 **Through XAML**
 
-The following code snippet explains about how to bind the OLAP data mentioned in the *OlapViewModel* to the SfPivotGrid control with the help of `DataContext` in XAML.
+The following code snippet explains how to bind the OLAP data mentioned in the *OlapViewModel* to the SfPivotGrid control with the help of `DataContext` in XAML.
 
 {% tabs %}
 
@@ -508,7 +508,7 @@ The following code snippet explains about how to bind the OLAP data mentioned in
 
 **Through code-behind**
 
-The following code snippet illustrates about how to bind the OLAP data to the SfPivotGrid control in code-behind.
+The following code snippet illustrates how to bind the OLAP data to the SfPivotGrid control in code-behind.
 
 {% tabs %}
 
@@ -564,11 +564,11 @@ Finally, run the application to generate the following output.
 
 ## Creating WCF service application
 
-Open Visual Studio IDE and select *File > New > Project* to open the new project dialog.
+Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
 
-Select *Installed > Templates > Visual C# > WCF > WCF Service Application* to create a new WCF service application and name the project as "OlapManagerService".
+Select **Installed > Templates > Visual C# > WCF > WCF Service Application** to create a new WCF service application and name the project as "OlapManagerService".
 
-Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
+Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
 
 * Syncfusion.Olap.Base.dll
 * Syncfusion.OlapUWP.BaseWrapper.dll
@@ -576,13 +576,13 @@ Right click on the project in the solution explorer and select *Add > Reference.
 N> You can find these libraries under the following location.
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies\4.6\
 
-I> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create SfPivotGrid control.
-The above assembly can be obtained only after installing the following setup files:
+I> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create a SfPivotGrid control.
+The above assembly can be obtained only after installing the following setup files.
 **SQLSERVER2008_ASADOMD10.msi** and **SQLSERVER2008_ASOLEDB10.msi**
 These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-in/download/details.aspx?id=16978).
 If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
-Now, the "Service1.svc" would look like:
+Now, the "Service1.svc" looks like:
 
 {% tabs %}
 
@@ -594,7 +594,7 @@ Now, the "Service1.svc" would look like:
 
 {% endtabs %}
 
-Then double click on "Service1.svc" file in the solution explorer and replace the existing code with the exact following code.
+Then, double-click the "Service1.svc" file in the solution explorer and replace the existing code with the exact following code.
 
 {% tabs %}
 
@@ -779,7 +779,7 @@ End Namespace
 
 {% endtabs %}
 
-N> Here, the sample cube path is specified for demonstration purpose. You can modify the connection string as per your requirement.
+N> Here, the sample cube path is specified for demonstration purpose. You can modify the connection string as desired.
 
 Then, include the basic HTTP binding and service endpoint address in the web.config file by replacing the following code snippet of the *"serviceModel"* section.
 
@@ -830,4 +830,4 @@ Then, include the basic HTTP binding and service endpoint address in the web.con
 
 {% endtabs %}
 
-Then build and host the WCF service in IIS. Refer the hosted URL as service reference in your Universal Windows Platform (UWP) application (client application). This is how you can host the service in IIS and refer the obtained URL as service reference in the sample as illustrated in the [previous section](#adding-service-reference-to-project).
+Then, build and host the WCF service in IIS. Refer to the hosted URL as service reference in your Universal Windows Platform (UWP) application (client application). This is how you can host the service in IIS and refer to the obtained URL as service reference in the sample as illustrated in the [previous section](#adding-service-reference-to-project).
