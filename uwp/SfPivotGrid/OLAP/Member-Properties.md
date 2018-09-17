@@ -9,9 +9,9 @@ documentation: ug
 
 # Member Properties
 
-SfPivotGrid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level.
+The SfPivotGrid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level.
 
-To display the member properties along with the dimension member, OlapReport requires member properties can be defined in the concerned dimension element. And the grid layout should be set as “ExcelLikeLayoutWithMemberProperties” as specified in the following code snippet:
+To display the member properties along with the dimension member, the OLAP report requires member properties defined in the concerned dimension element. The grid layout should be set to “ExcelLikeLayoutWithMemberProperties” as specified in the following code snippet.
 
 {% tabs %}
 
@@ -96,6 +96,6 @@ PivotGrid1.OlapDataManager.SetCurrentReport(olapReport)
 
 ![](Member-Properties_images/Member-properties_image1.png)
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\MemberProperties.xaml

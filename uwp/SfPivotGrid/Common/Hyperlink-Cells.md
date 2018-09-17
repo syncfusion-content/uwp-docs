@@ -9,19 +9,19 @@ documentation: ug
 
 # Hyperlink Cells
 
-SfPivotGrid allows hyperlinking of cells to retrieve detailed information about a particular cell. Hyperlink can be individually applied to the following cells:
+The SfPivotGrid allows hyperlinking of cells to retrieve detailed information about a particular cell. Hyperlink can be individually applied to the following cells:
 
-* Column header cells
-* Row header cells
-* Value cells
-* Summary column cells
-* Summary row cells
+* Column header cells.
+* Row header cells.
+* Value cells.
+* Summary column cells.
+* Summary row cells.
 
-The hyperlink options can be enabled or disabled separately for column header cells, row header cells, summary column cells, summary row cells, and value cells by using the property of `IsHyperlinkCell` in the `PivotGridCellStyle` class.
+The hyperlink options can be enabled or disabled separately for column header cells, row header cells, summary column cells, summary row cells, and value cells by using the `IsHyperlinkCell` property in the `PivotGridCellStyle` class.
 
 **Hyperlink in column header cells**
 
-The following code snippet illustrates about how to enable hyperlink in column header cells:
+The following code snippet illustrates how to enable hyperlink in column header cells.
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ Me.PivotGrid1.ColumnHeaderStyle.IsHyperlinkCell = True
 
 **Hyperlink in row header cells**
 
-The following code snippet illustrates about how to enable hyperlink in row header cells:
+The following code snippet illustrates how to enable the hyperlink in row header cells.
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ Me.PivotGrid1.RowHeaderStyle.IsHyperlinkCell = True
 
 **Hyperlink in value cells**
 
-The following code snippet illustrates about how to enable hyperlink in value cells:
+The following code snippet illustrates how to enable the hyperlink in value cells.
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ Me.PivotGrid1.ValueCellStyle.IsHyperlinkCell = True
 
 **Hyperlink in summary column cells**
 
-The following code snippet illustrates about how to enable hyperlink in summary column cells:
+The following code snippet illustrates how to enable the hyperlink in summary column cells.
 
 {% tabs %}
 
@@ -153,7 +153,7 @@ Me.PivotGrid1.SummaryColumnStyle.IsHyperlinkCell = True
 
 **Hyperlink in summary row cells**
 
-The following code snippet illustrates about how to enable hyperlink in summary row cells:
+The following code snippet illustrates how to enable hyperlink in summary row cells.
 
 {% tabs %}
 
@@ -184,6 +184,6 @@ Me.PivotGrid1.SummaryRowStyle.IsHyperlinkCell = True
 
 ![](Hyperlink-Cells_images/summary-row-cell-hyperlink.png)
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotGrid\PivotGrid\View\Hyperlink.xaml

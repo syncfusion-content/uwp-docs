@@ -9,7 +9,7 @@ documentation: ug
 
 # Theming
 
-Theming is the process of applying particular settings to visual elements of a control. Following in-built themes are supported in the SfPivotGrid control.
+Theming is the process of applying particular settings to visual elements of a control. Following built-in themes are supported in the SfPivotGrid control.
 
 * Blend
 * Lime
@@ -28,7 +28,7 @@ Theming is the process of applying particular settings to visual elements of a c
 * VisualStudio2013
 * VisualStudio2015
 
-By using the property of `GridVisualStyle` in the SfPivotGrid, you can set the visual style of the control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotGrid.
+By using the `GridVisualStyle` property in the SfPivotGrid, you can set the visual style of the control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotGrid.
 
 {% tabs %}
 
