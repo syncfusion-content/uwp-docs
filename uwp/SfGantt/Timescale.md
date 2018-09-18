@@ -5,12 +5,13 @@ platform: uwp
 control: SfGantt
 documentation: ug
 ---
+
 # Timescale
 
-This topic gives an overview on the features of Timescale. The following properties are used for configuring timescale in [`TimescaleSettings`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html) class.
+This section provides an overview on the features of timescale. The following properties are used for configuring the timescale in the [`TimescaleSettings`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html) class:
 
-* [`TopTier`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~TopTier.html) – Represents the top tier of the timescale.
-* [`BottomTier`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~BottomTier.html) – Represents the bottom tier of the timescale.
+* [`TopTier`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~TopTier.html): Represents the top tier of the timescale.
+* [`BottomTier`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~BottomTier.html): Represents the bottom tier of the timescale.
 
 {% tabs %}
 {% highlight xaml %}
@@ -37,13 +38,12 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier();
 
 ![](Timescale_images/overview.jpeg)
 
+By default, the interval type is set to Auto. You can change the interval type and interval using the following properties in `TimescaleTier` class:
 
-By default, the interval type is set as Auto. We can also change the interval type and interval using the below properties in TimescaleTier class.
+* [`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~IntervalType.html): Defines the type of the interval as minutes, hours, days, weeks, quarter, and year.
+* [`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~Interval.html): Sets a value that determines the interval between the timescale tier cells.
 
-* [`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~IntervalType.html) – Used to define the type of the interval as minutes, hours, days, weeks, quarter and year.
-* [`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~Interval.html) – Used to set a value that determines the interval between the timescale tier cells.
-
-The following code example illustrates the timescale displaying year and days.
+The following code sample demonstrates displaying the timescale as years and days.
 
 {% tabs %}
 {% highlight xaml %}
@@ -77,29 +77,28 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier()
 {% endtabs %}
 ![](Timescale_images/Interval.jpeg)
 
+N> The top tier’s interval and interval type must be greater than the bottom tier’s interval and interval type.
 
-N>The top tier’s interval and interval type must be greater than bottom tier’s interval and interval type.
+**Display formats**
 
-**Display** **Formats**
+The display formats can be defined for each interval type. You can set the default date-time format strings as display formats. The display formats can be defined using the following properties:
 
-The display formats can be defined for each interval type. You can set the default date time format strings as display formats. Display formats can be defined using the following properties.
+* [`YearsLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~YearsLabelFormat.html): Sets the the label format for year interval type.
+* [`QuarterLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~QuarterLabelFormat.html): Sets the the label format for quarter interval type.
+* [`WeeksLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~WeeksLabelFormat.html): Sets the the label format for week interval type.
+* [`DaysLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~DaysLabelFormat.html): Sets the label format for days interval type.
+* [`HoursLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~HoursLabelFormat.html): Sets the the label format for hours interval type.
 
-* [`YearsLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~YearsLabelFormat.html) - Used to set the format for the label for the year interval type.
-* [`QuarterLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~QuarterLabelFormat.html) - Used to set the format for the label for the quarter interval type.
-* [`WeeksLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~WeeksLabelFormat.html)- Used to set the format for the label for the week interval type.
-* [`DaysLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~DaysLabelFormat.html) - Used to set the format for the label for the days interval type.
-* [`HoursLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~HoursLabelFormat.html)- Used to set the format for the label for the hours interval type.
+## Visual customization
 
-## Visual Customization
+The default view of the timescale can be customized using the following properties:
 
-The default view of the timescale can be customized using the below properties.
+* [`Background`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~Background.html): Sets the background color for timescale.
+* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~BorderBrush.html): Sets the color for the border for every timescale cell.
+* [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~Foreground.html): Sets the color for the text in timescale.
+* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~LabelAlignment.html): Changes the alignment of the label in timescale cell.
 
-* [`Background`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~Background.html) - Used to set the background color for timescale.
-* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~BorderBrush.html) - Used to set the color for the border for every timescale cell.
-* [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~Foreground.html) - Used to set the color for the text in the timescale.
-* [`LabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~LabelAlignment.html) - Used to change the alignment of the label in the timescale cell.
-
-The following code example illustrates the customization of timescale.
+The following code sample demonstrates how to customize a timescale.
 
 {% tabs %}
 
@@ -146,10 +145,10 @@ this.Gantt.TimescaleSettings.BottomTier.LabelAlignment = TextAlignment.Left;
 {% endtabs %}
 ![](Timescale_images/DisplayFormats.jpeg)
 
+**Label template**
 
-**Label** **Template**
+The default appearance of the label in timescale cell can be customized using the [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~LabelTemplate.html) property in TimescaleTier class.
 
-The default appearance of the label in timescale cell can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleTier~LabelTemplate.html) property in TimescaleTier class.
 {% tabs %}
 
 {% highlight xaml %}
@@ -200,18 +199,18 @@ The default appearance of the label in timescale cell can be customized using [`
     </Gantt:SfGantt.TimescaleSettings>
 
 </Gantt:SfGantt>
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ![](Timescale_images/Template.jpeg)
 
+## Cell width customization
 
-**Cell** **Width** **Customization**
+The width for the timescale cell in the bottom tier can be set using the [`CellSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~CellSize.html) property in [`TimescaleSettings`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html).
 
-The width for the timescale cell in bottom tier can be set using [`CellSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings~CellSize.html) property in [`TimescaleSettings`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html).
-
-The following code illustrates the increasing width of the timescale cell.
+The following code sample demonstrates how to increase the width of a timescale cell.
 
 {% tabs %}
 
@@ -241,13 +240,13 @@ this.Gantt.TimescaleSettings.CellSize = 350;
 
 ![](Timescale_images/cellwidth.jpeg)
 
-N>The value for the cell width ranges between 25 and 1000.
+N> The value for the cell width ranges between 25 and 1000.
 
-## Range Customization
+## Range customization
 
-The start or end range of timescale can be explicitly defined using [`TimescaleStartDate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TimescaleStartDate.html) and [`TimescaleEndDate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TimescaleEndDate.html) properties in [`SfGantt`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt.html) class. 
+The start or end range of a timescale can be explicitly defined using the [`TimescaleStartDate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TimescaleStartDate.html) and [`TimescaleEndDate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TimescaleEndDate.html) properties in [`SfGantt`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt.html) class.
 
-The following code example illustrates the timescale range customization.
+The following code sample demonstrates how to customize the range of a timescale.
 
 {% tabs %}
 
