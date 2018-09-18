@@ -16,7 +16,7 @@ The holidays can be specified in a task using the [`Holidays`](https://help.sync
 The following properties in the [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html) are used to define the holidays:
 
 * [`Day`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.GanttHoliday~Day.html): Specifies the holiday date.
-* [`Background`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.GanttHoliday~Background.html): Specifies the color to highlight the holidays.
+* [`Background`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.GanttHoliday~Background.html): Specifies the color to highlight the holiday.
 
 The following code sample demonstrates how to define the holidays.
 
