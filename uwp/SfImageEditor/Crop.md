@@ -77,7 +77,7 @@ imageEditor.ToggleCropping(9,17);
 
 {% endtabs %}
 
-* Crop an image based on custom region. The value of the rectangle should be ranges from 0 to 100.
+* To position the cropping window with custom location, pass the desired rectangle in ToggleCropping method. Each value in the rectangle should be in offset value(0 to 100).
 
 {% tabs %}
 
