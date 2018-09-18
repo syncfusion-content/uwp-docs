@@ -21,6 +21,10 @@ To add text from the toolbar, click on the `Text` icon in the toolbar. When the 
 
 Select the desired text and click on the color palette available in the sub menu.
 
+#### Change TextEffect of selected Text
+
+You can make text as `Bold`, `Italic` or `Underline`, By using TextEffects buttons available in the sub menu. 
+
 ## Using Code
 
 programmatically, the desired text elements also can be added over the image. The `AddText` method in the SfImageEditor control is used to add text based on the string value and [`TextSettings`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
@@ -31,7 +35,7 @@ TextSettings is defined to set the values for Color and FontSize.
 
 {% highlight C# %}
 
-    imageEditor.AddText("CustomTextView", new TextSettings() { Color = new SolidColorBrush(Colors.Orange) });
+    imageEditor.AddText("CustomTextView", new TextSettings() { Color = new SolidColorBrush(Colors.Orange), TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline });
 
 {% endhighlight %}
 
