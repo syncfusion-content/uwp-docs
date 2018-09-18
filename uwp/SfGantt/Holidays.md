@@ -58,4 +58,4 @@ sfGantt.Holidays = new GanttHolidayCollection()
 
 ![](SfGantt_images/Holidays.png)
 
-N> To display the holidays in a task, the ['ShowNonWorkingDays'](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) property must be enabled.
+N> To highligh the holidays in the Gantt chart, the ['ShowNonWorkingDays'](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) property must be enabled.
