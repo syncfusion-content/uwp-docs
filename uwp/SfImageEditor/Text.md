@@ -36,3 +36,21 @@ TextSettings is defined to set the values for Color and FontSize.
 {% endhighlight %}
 
 ![](text_images/AddedText.png)
+
+## Multiline text and text alignment
+
+### Multiline text
+You can annotate multiple line text over an image with the help of text preview window.
+
+### Text alignment
+`TextAlignment` is an enum type and text can be aligned with the help of text alignment enum values such as left, right and center. 
+
+N> The default text alignment is `Left` and text alignment is not applicable for single line text.
+
+{% highlight C# %}
+
+    editor.AddText("Hello\nGood morning\nHave a nice day", new TextSettings() {TextAlignment = TextAlignment.Right });
+
+{% endhighlight %}
+
+![SfImageEditor](text_images/multiline.png)
