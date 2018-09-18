@@ -9,18 +9,18 @@ documentation: ug
 
 # Exporting
 
-## Exporting PivotGrid
+## Exporting pivot grid
 
-By clicking the respective icons in the PivotGrid's toolbar, the user can export the PivotGrid to the required file format.
+By clicking the respective icons in the pivot grid's toolbar, users can export the pivot grid to the required file format.
 
 | Icon | Name | Description |
 | ---- | ---- | ----------- |
-| ![](Exporting_images/excelIcon.png) | Export to Excel | Exports the PivotGrid to an Excel document |
-| ![](Exporting_images/wordIcon.png) | Export to Word | Exports the PivotGrid to a Word document |
-| ![](Exporting_images/pdfIcon.png) | Export to PDF | Exports the PivotGrid to a PDF document |
-| ![](Exporting_images/csvIcon.png) | Export to CSV | Exports the PivotGrid to a CSV document |
+| ![](Exporting_images/excelIcon.png) | Export to Excel | Exports the pivot grid to an Excel document. |
+| ![](Exporting_images/wordIcon.png) | Export to Word | Exports the pivot grid to a Word document. |
+| ![](Exporting_images/pdfIcon.png) | Export to PDF | Exports the pivot grid to a PDF document. |
+| ![](Exporting_images/csvIcon.png) | Export to CSV | Exports the pivot grid to a CSV document. |
 
-The following screenshots illustrate the exported PivotGrid:
+The following screenshots illustrate the exported pivot grid.
 
 ![](Exporting_images/excelExportedGrid.png)
 
@@ -30,17 +30,17 @@ The following screenshots illustrate the exported PivotGrid:
 
 ![](Exporting_images/csvExportedGrid.png)
 
-## Exporting PivotChart
+## Exporting pivot chart
 
-By clicking the respective icons in the PivotChart's toolbar, the user can export the PivotChart to the required file format.
+By clicking the respective icons in the pivot chart's toolbar, users can export the pivot chart to the required file format.
 
 | Icon | Name | Description |
 | ---- | ---- | ----------- |
-| ![](Exporting_images/imageIcon.png) | Export as Image | Saves the PivotChart as an image |
-| ![](Exporting_images/wordIcon.png) | Export to Word | Exports the PivotChart to a Word document |
-| ![](Exporting_images/pdfIcon.png) | Export to PDF | Exports the PivotChart to a PDF document |
+| ![](Exporting_images/imageIcon.png) | Export as an Image | Saves the pivot chart as an image. |
+| ![](Exporting_images/wordIcon.png) | Export to Word | Exports the pivot chart to a Word document. |
+| ![](Exporting_images/pdfIcon.png) | Export to PDF | Exports the pivot chart to a PDF document. |
 
-The following screenshots illustrate the exported PivotChart:
+The following screenshots illustrate the exported pivot chart.
 
 ![](Exporting_images/imageExportedChart.png)
 

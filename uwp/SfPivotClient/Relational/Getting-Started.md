@@ -8,43 +8,45 @@ documentation: ug
 ---
 
 # Getting Started
-
+t
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use our components.
+To start with v16.2.0.x, if you refer to Syncfusion assemblies from a trial setup or NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
 
-This section explains about the steps required to create a simple SfPivotClient control bound to relational data source such as IList, IEnumerable, etc.
+This section explains the steps required to create a simple SfPivotClient control bound to the relational data source such as IList, IEnumerable, etc.
 
 ## Initializing SfPivotClient control
 
-Open Visual Studio IDE and select *File > New > Project* to open the new project dialog.
+1. Open Visual Studio IDE and select **File > New > Project** to open a new project dialog.
 
-Select *Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)* to create a new UWP application and name the project as "SfPivotClientDemo".
+2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "SfPivotClientDemo".
 
-The target version/minimum version dialog appears, in which change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
+The target version/minimum version dialog appears, in which you can change the target version of the application to **"Windows 10 (10.0; Build 10240)".**
 
-SfPivotClient control can be initialized and added to the application through any of the following ways:
+The SfPivotClient control can be initialized and added to the application through the following ways:
 
-1. Through designer.
-2. Through XAML.
-3. Through code-behind.
+1. Designer.
+2. XAML.
+3. Code-behind.
 
 ### Adding control through designer
 
-Double-click on MainPage.xaml from the solution explorer to open it in the design view.
+1. Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-Click on the toolbox and drag the **SfPivotClient** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
+2. Click the toolbox and drag the **SfPivotClient** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
-As a result, the SfPivotClient control will be added to the designer as shown below:
+Now, the SfPivotClient control will be added to the designer as follows.
 
 ![GettingStarted_Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
-SfPivotClient control can be added to the project by referring assemblies or extension SDK as described below:
+The SfPivotClient control can be added to the project by referring assemblies or extension SDK as described below.
 
 **Assembly reference**
 
-Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
+1. Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies.
+
+2. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
 
 * Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
@@ -70,9 +72,9 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+1. Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
-After adding the required reference, add the following namespace in the *MainPage.xaml* file.
+2. After adding the required reference, add the following namespace in the *MainPage.xaml* file.
 
 {% tabs %}
 
@@ -84,7 +86,7 @@ xmlns:PivotClient="using:Syncfusion.UI.Xaml.PivotClient"
 
 {% endtabs %}
 
-Then add the SfPivotClient control to the grid by using the specified namespace as specified in the below code snippet.
+3. Then, add the SfPivotClient control to the grid by using the namespace specified in the following code snippet.
 
 {% tabs %}
 
@@ -111,11 +113,13 @@ Then add the SfPivotClient control to the grid by using the specified namespace 
 
 ### Adding control through code-behind
 
-SfPivotClient control can be added to the project by referring assemblies or extension SDK as described below:
+The SfPivotClient control can be added to the project by referring assemblies or extension SDK as described below.
 
 **Assembly reference**
 
-Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
+1. Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies.
+
+2. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
 
 * Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
@@ -141,9 +145,9 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+1. Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
-After adding the required reference, open the *MainPage.xaml* file and name the grid as "RootGrid" to refer it in the code-behind.
+2. After adding the required reference, open the *MainPage.xaml* file and name the grid "RootGrid" to refer it in the code-behind.
 
 {% tabs %}
 
@@ -166,7 +170,9 @@ After adding the required reference, open the *MainPage.xaml* file and name the 
 
 {% endtabs %}
 
-Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotClient". Then initialize the SfPivotClient control in the constructor and add it to the grid as illustrated below:
+3. Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotClient". 
+
+4. Then, initialize the SfPivotClient control in the constructor and add it to the grid as illustrated below.
 
 {% tabs %}
 
@@ -219,9 +225,9 @@ End Namespace
 
 ### Creating relational data through view model
 
-After initializing the SfPivotClient control, right click on the project in the solution explorer and select *Add > New Item... > Class* to create a new class file. Then name the class as *ProductSalesViewModel* and click *OK*.
+After initializing the SfPivotClient control, right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class *ProductSalesViewModel* and click **OK**.
 
-The following code snippet illustrates about how to define the relational data for SfPivotClient control.
+The following code snippet illustrates how to define the relational data for the SfPivotClient control.
 
 {% tabs %}
 
@@ -350,18 +356,16 @@ End Namespace
 
 {% endtabs %}
 
-### Defining ItemsSource, PivotRows, PivotColumns and PivotCalculations for SfPivotClient control
+### Defining items source, pivot rows, pivot columns, and pivot calculations for SfPivotClient control
 
-Relational data can be bound to SfPivotClient control by using the property of `ItemsSource` through any of the following ways:
+Relational data can be bound to the SfPivotClient control by using the `ItemsSource` property through any of the following ways:
 
-* Through XAML
-* Through code-behind
+* XAML
+* Code-behind
 
 **Through XAML**
 
-The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivotClient control with the help of `DataContext`. In addition to this, `PivotRows`, `PivotColumns` and `PivotCalculations` should be assigned to SfPivotClient for populating data in the specific axes.
-
-Please refer the below code snippet:
+The relational data mentioned in the *ProductSalesViewModel* is bound to the SfPivotClient control with the help of `DataContext`. In addition to this, the `PivotRows`, `PivotColumns`, and `PivotCalculations` should be assigned to the SfPivotClient for populating data in the specific axes.
 
 {% tabs %}
 
@@ -404,7 +408,7 @@ Please refer the below code snippet:
 
 **Through code-behind**
 
-The following code snippet illustrates about how to bind the data to SfPivotClient control in code-behind.
+The following code snippet illustrates how to bind data to the SfPivotClient control in code-behind.
 
 {% tabs %}
 

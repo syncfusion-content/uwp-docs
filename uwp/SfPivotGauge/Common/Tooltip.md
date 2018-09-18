@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-SfPivotGauge provides the information about values when the mouse pointer is moved over the gauge. The below code snippet illustrates how to show a tooltip by using the `ShowGaugeTooltip` property.
+The SfPivotGauge provides the information about values when the mouse pointer is moved over the gauge. The following code snippet illustrates how to show a tooltip by using the `ShowGaugeTooltip` property.
 
 {% tabs %}
 

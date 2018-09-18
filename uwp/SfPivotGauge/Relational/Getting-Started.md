@@ -10,41 +10,43 @@ documentation: ug
 # Getting Started
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use our components.
+To start with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
 
-This section explains about the steps required to create a simple SfPivotGauge control bound to relational data source such as IList, IEnumerable, etc.
+This section explains the steps required to create a simple SfPivotGauge control bound to relational data source such as IList, IEnumerable, etc.
 
 ## Initializing SfPivotGauge control
 
-Open Visual Studio IDE and select *File > New > Project* to open the new project dialog.
+1. Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
 
-Select *Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)* to create a new UWP application and name the project as "SfPivotGaugeDemo".
+2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "SfPivotGaugeDemo".
 
-The target version/minimum version dialog appears, in which change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
+The target version/minimum version dialog appears, in which you can change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
-SfPivotGauge control can be initialized and added to the application through any of the following ways:
+The SfPivotGauge control can be initialized and added to the application through any of the following ways:
 
-1. Through designer.
-2. Through XAML.
-3. Through code-behind.
+1. Designer.
+2. XAML.
+3. Code-behind.
 
 ### Adding control through designer
 
-Double-click on MainPage.xaml from the solution explorer to open it in the design view.
+1. Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-Click on the toolbox and drag the **SfPivotGauge** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
+2. Click the toolbox and drag the **SfPivotGauge** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
-As a result, the SfPivotGauge control will be added to the designer as shown below:
+Now, the SfPivotGauge control will be added to the designer as follows.
 
 ![GettingStarted_Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
-SfPivotGauge control can be added to the project by referring assemblies or SDK as described below:
+The SfPivotGauge control can be added to the project by referencing assemblies or SDK as described below.
 
 **Assembly reference**
 
-Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
+1. Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies.
+
+2. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
 
 * Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
@@ -58,9 +60,9 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+1. Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
-After adding the required reference, add the following namespace in the *MainPage.xaml* file.
+2. After adding the required reference, add the following namespace in the *MainPage.xaml* file.
 
 {% tabs %}
 
@@ -72,7 +74,7 @@ xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
 
 {% endtabs %}
 
-Then add the SfPivotGauge control to the grid by using the specified namespace as specified in the below code snippet.
+3. Then, add the SfPivotGauge control to the grid by using the namespace specified in the following code snippet.
 
 {% tabs %}
 
@@ -99,11 +101,13 @@ Then add the SfPivotGauge control to the grid by using the specified namespace a
 
 ### Adding control through code-behind
 
-SfPivotGauge control can be added to the project by referring assemblies or SDK.
+The SfPivotGauge control can be added to the project by referencing assemblies or SDK.
 
 **Assembly reference**
 
-Right click on the project in the solution explorer and select *Add > Reference...* to add the required assemblies. Then click *Browse* to select the following assemblies from the installed location and click *OK*.
+1. Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies.
+
+2. Click **Browse** to select the following assemblies from the installed location and click **OK**.
 
 * Syncfusion.Data.UWP
 * Syncfusion.Olap.UWP
@@ -117,9 +121,9 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click on the project in the solution explorer and select *Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML*.
+1. Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
-After adding the required reference, open the *MainPage.xaml* file and name the grid as "RootGrid" to refer it in the code-behind.
+2. After adding the required reference, open the *MainPage.xaml* file and name the grid "RootGrid" to refer it in the code-behind.
 
 {% tabs %}
 
@@ -142,7 +146,9 @@ After adding the required reference, open the *MainPage.xaml* file and name the 
 
 {% endtabs %}
 
-Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGauge". Then initialize the SfPivotGauge control in the constructor and add it to the grid as illustrated below:
+3. Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGauge". 
+
+4. Then, initialize the SfPivotGauge control in the constructor and add it to the grid as illustrated below.
 
 {% tabs %}
 
@@ -195,9 +201,9 @@ End Namespace
 
 ### Creating relational data through view model
 
-After initializing the SfPivotGauge control, right click on the project in the solution explorer and select *Add > New Item... > Class* to create a new class file. Then name the class as *ProductSalesViewModel* and click *OK*.
+After initializing the SfPivotGauge control, right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class *ProductSalesViewModel* and click **OK**.
 
-The following code snippet illustrates about how to define relational data for the SfPivotGauge.
+The following code snippet illustrates how to define relational data for the SfPivotGauge.
 
 {% tabs %}
 
@@ -326,18 +332,17 @@ End Namespace
 
 {% endtabs %}
 
-### Defining ItemSource, PivotRows, PivotColumns and PivotCalculations for SfPivotGauge control
+### Defining item sSource, pivot rows, pivot columns and pivot calculations for SfPivotGauge control
 
-Relational data can be bound to SfPivotGauge control by using the property of `ItemSource` through any of the following ways:
+Relational data can be bound to SfPivotGauge control by using the `ItemSource` property through any of the following ways:
 
-* Through XAML
-* Through code-behind
+* XAML
+* Code-behind
 
 **Through XAML**
 
-The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivotGauge control with the help of `DataContext`. In addition to this, `PivotRows`, `PivotColumns` and `PivotCalculations` should be assigned to SfPivotGauge for populating the data.
+The relational data mentioned in the *ProductSalesViewModel* is bound to the SfPivotGauge control with the help of `DataContext`. In addition to this, the `PivotRows`, `PivotColumns`, and `PivotCalculations` should be assigned to SfPivotGauge for populating the data.
 
-Please refer the below code snippet:
 
 {% tabs %}
 
@@ -378,7 +383,7 @@ Please refer the below code snippet:
 
 **Through code-behind**
 
-The following code snippet illustrates about how to bind the data to SfPivotGauge control in code-behind.
+The following code snippet illustrates how to bind the data to SfPivotGauge control in code-behind.
 
 {% tabs %}
 
