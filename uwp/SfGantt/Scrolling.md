@@ -10,7 +10,7 @@ documentation: ug
 
 ## Scroll to visible region
 
-The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~BringTaskOnVerticalScroll.html) property in the SfGantt, provides support to scroll to the visible task region while vertical scrolling in the Gantt chart. 
+The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~BringTaskOnVerticalScroll.html) property in the SfGantt, enables to scroll to the visible task region when the Gantt chart is vertically scrolled. 
 
 The below code example illustrates how to enable the BringTaskOnVerticalScroll.
 
@@ -37,7 +37,7 @@ sfGantt.BringTaskOnVerticalScroll = True;
 
 ## Scroll to particular region
 
-You can also scroll the Gantt chart horizontally to the specified date and vertically to the specified task's index using  ['ScrollGanttTo'](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ScrollGanttTo.html) method in SfGantt. 
+You can also scroll the Gantt chart horizontally to the specific date and vertically to the specific row index using ['ScrollGanttTo'](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ScrollGanttTo.html) method in SfGantt. 
 
 {% highlight C# %}
 
