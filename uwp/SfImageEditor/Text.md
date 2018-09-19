@@ -21,9 +21,9 @@ To add text from the toolbar, click on the `Text` icon in the toolbar. When the 
 
 Select the desired text and click on the color palette available in the sub menu.
 
-#### Change TextEffect of selected Text
+### Change TextEffect of selected Text
 
-You can make text as `Bold`, `Italic` or `Underline`, By using TextEffects buttons available in the sub menu. 
+Changes the effects of the text such as `Bold`, `Italic` and `Underline`. 
 
 ## Using Code
 
