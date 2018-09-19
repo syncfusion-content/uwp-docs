@@ -22,7 +22,7 @@ Occurs when editing is completed in grid cell. This event contains the following
 
 * [`Item`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.EndCellEditEventArgs~Item.html): Gets the edited task item.
 * [`MappingName`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.EndCellEditEventArgs~MappingName.html): Gets the current cell mapping name.
-* [`OldItem`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.EndCellEditEventArgs~OldItem.html): Gets the old value of the edited task.
+* [`OldItem`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.EndCellEditEventArgs~OldItem.html): Gets the old details of the edited task.
 
 **SelectionChanging**
 
@@ -133,6 +133,6 @@ Occurs when the taskbar resizing is completed. This event contains the following
 
 **TaskGenerated**
 
-Occurs when task is generated in the view. This event contains the following arguments:
+Occurs when a task is generated in the view. This event contains the following arguments:
 
-* [`Task`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskEventArgs~Task.html): Gets the task which is added.
+* [`Task`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskEventArgs~Task.html): Gets the task that has been added.
