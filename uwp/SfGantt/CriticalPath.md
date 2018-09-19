@@ -8,7 +8,7 @@ documentation: ug
 
 # Critical Path
 
-Critical path is the chain of linked critical tasks that defines the project finish date. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~HighlightCriticalTasksProperty.html) property in SfGantt as like in the following code sample.
+Critical path is a chain of linked critical tasks that defines the finish date of project. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~HighlightCriticalTasksProperty.html) property in SfGantt as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -30,12 +30,12 @@ this.Gantt.HighlightCriticalTasks = True;
 
 ## Customization
 
-We can customize the critical path color with the following properties
+You can customize the color of critical path using the following properties:
 
-* [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~CriticalTaskBarBrushProperty.html) property can be used to specify the color to highlight the critical task bar color.
-* [`CriticalProgressBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~CriticalProgressBarBrushProperty.html) property can be used to specify the color to highlight the critical task bar progress color.
+* [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~CriticalTaskBarBrushProperty.html): Specifies the color to highlight the critical task bar color.
+* [`CriticalProgressBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~CriticalProgressBarBrushProperty.html): Specifies the color to highlight the critical task bar progress color.
 
-N> The same [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~CriticalTaskBarBrushProperty.html) is applied to connector lines that connects two critical tasks.
+N> The same [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~CriticalTaskBarBrushProperty.html)  is applied to connector lines that connect two critical tasks.
 
 {% tabs %}
 
