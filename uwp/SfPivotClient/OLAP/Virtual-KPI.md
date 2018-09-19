@@ -9,13 +9,13 @@ documentation: ug
 
 # Virtual KPI
 
-Key performance indicators can be virtually defined during the run time. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is very useful when the user want to define KPIs dynamically, and it minimizes the time required to create KPIs.
+Key performance indicators can be virtually defined during the runtime. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is very useful when users want to define KPIs dynamically, and it minimizes the time required to create KPIs.
 
-There are two ways to define a virtual KPI element in the SfPivotClient as illustrated below:
+There are two ways to define a virtual KPI element in the SfPivotClient as illustrated below.
 
 **Using virtual KPI editor dialog**
 
-The virtual KPI editor dialog can be opened by clicking the *Create a Virtual KPI Element* ![](Virtual-KPI_images/Virtual-KPI-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableVirtualKpi` property is set as true like mentioned below:
+The virtual KPI editor dialog can be opened by clicking the **Create a Virtual KPI Element** ![](Virtual-KPI_images/Virtual-KPI-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableVirtualKpi` property is set to true as mentioned below.
 
 {% tabs %}
 
@@ -43,9 +43,9 @@ PivotClient1.EnableVirtualKpi = True
 
 **Using OLAP report**
 
-You can define the virtual KPI element in the OLAP report along with its associated measures and it can be added to any axis of the current OLAP report. The below code specifies how to define the virtual KPI element in the OLAP report:
+You can define the virtual KPI element in the OLAP report along with its associated measures, and it can be added to any axis of the current OLAP report. The following code specifies how to define the virtual KPI element in the OLAP report.
 
-N> Virtual KPI element must be specified in the same axis containing measure elements.
+N> The vVirtual KPI element should be specified in the same axis containing measure elements.
 
 {% tabs %}
 
@@ -203,6 +203,6 @@ PivotClient1.OlapDataManager.SetCurrentReport(olapReport)
 
 {% endtabs %}
 
-A demo sample is available at the following location:
+A demo sample is available in the following location.
 
 {system drive}:\Users\&lt;User Name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Samples\UWP\SampleBrowser\PivotClient\PivotClient\View\VirtualKPI.xaml

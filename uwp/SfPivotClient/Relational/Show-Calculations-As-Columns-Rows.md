@@ -9,15 +9,15 @@ documentation: ug
 
 # Show Calculations as Columns or Rows
 
-SfPivotClient provides support to show the calculation values as columns or rows by using the property of `ShowCalculationsAsColumns`. By default, its value is true. To view the calculation values in the row, it should be set as false.
+The SfPivotClient supports showing the calculation values as columns or rows by using the `ShowCalculationsAsColumns` property. By default, its value is true. To view the calculation values in the row, it should be set to false.
 
-There are two ways to enable or disable this feature as illustrated below:
+There are two ways to enable or disable this feature as illustrated below.
 
 **Using code**
 
-The calculations can be displayed as columns or rows by setting the "ShowCalculationsAsColumns" property of the SfPivotClient.
+The calculations can be displayed in columns or rows by setting the `ShowCalculationsAsColumns` property of the SfPivotClient.
 
-Please refer the below code snippet to display the calculations as column.
+Refer to the following code snippet to display the calculations in column.
 
 {% tabs %}
 
