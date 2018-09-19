@@ -56,4 +56,4 @@ this.GanttControl.CriticalProgressBarBrush = new SolidColorBrush(Colors.Pink);
 
 ![UWP Gantt chart with critical tasks highlighted with custom colors.](CriticalPath_images/CriticalPathCustomization.jpg)
 
-N> In default, the HighlightCriticalTasks feature is disabled.
+N> By default, the HighlightCriticalTasks feature is disabled.
