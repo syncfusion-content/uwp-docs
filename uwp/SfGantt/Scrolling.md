@@ -10,7 +10,7 @@ documentation: ug
 
 ## Scroll to visible region
 
-The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~BringTaskOnVerticalScroll.html) property in the SfGantt,provides support to scroll to the visible task region while vertical scrolling in the Gantt chart. 
+The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~BringTaskOnVerticalScroll.html) property in the SfGantt, provides support to scroll to the visible task region while vertical scrolling in the Gantt chart. 
 
 The below code example illustrates how to enable the BringTaskOnVerticalScroll.
 
