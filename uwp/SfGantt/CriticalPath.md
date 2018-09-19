@@ -8,7 +8,7 @@ documentation: ug
 
 # Critical Path
 
-Critical path is the chain of linked critical tasks that defines the project finish date. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~HighlightCriticalTasksProperty.html) property in Gantt
+Critical path is the chain of linked critical tasks that defines the project finish date. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~HighlightCriticalTasksProperty.html) property in SfGantt as like in the below code example.
 
 {% tabs %}
 
@@ -26,11 +26,11 @@ this.Gantt.HighlightCriticalTasks = True;
 
 {% endtabs %}
 
-![](CriticalPath_images/CriticalPathDefault.jpg)
+![UWP Gantt chart with highlighted critical tasks](CriticalPath_images/CriticalPathDefault.jpg)
 
 ## Customization
 
-We can customize the critical path color by the following properties
+We can customize the critical path color with the following properties
 
 * [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~CriticalTaskBarBrushProperty.html) property can be used to specify the color to highlight the critical task bar color.
 * [`CriticalProgressBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~CriticalProgressBarBrushProperty.html) property can be used to specify the color to highlight the critical task bar progress color.
@@ -41,7 +41,7 @@ N> The same [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/u
 
 {% highlight xaml %}
 
-<gantt:SfGantt HighlightCriticalTasks="True" CriticalTaskBarBrush="#ffdbe0" CriticalProgressBarBrush="Pink">
+<gantt:SfGantt HighlightCriticalTasks="True" CriticalTaskBarBrush="#ffdbe0" CriticalProgressBarBrush="Pink" />
 
 {% endhighlight %}
 
@@ -54,6 +54,6 @@ this.GanttControl.CriticalProgressBarBrush = new SolidColorBrush(Colors.Pink);
 
 {% endtabs %}
 
-![](CriticalPath_images/CriticalPathCustomization.jpg)
+![UWP Gantt chart with critical tasks highlighted with custom colors.](CriticalPath_images/CriticalPathCustomization.jpg)
 
 N> In default, the HighlightCriticalTasks feature is disabled.
