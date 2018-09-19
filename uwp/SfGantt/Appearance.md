@@ -67,7 +67,7 @@ N> The basic functionalities of the TaskBar like resizing, drag and drop and too
                 </Grid>
             </ControlTemplate>
             <!--Parent task template-->
-            <ControlTemplate x:Key="ParentTaskBarTemplate"&gt;
+            <ControlTemplate x:Key="ParentTaskBarTemplate">
                 <Grid>
                     <TextBlock Margin="-150,0,150,0"  FontWeight="Bold" Text="{Binding Converter={StaticResource TextConverter}}"></TextBlock>
                     <Grid>
