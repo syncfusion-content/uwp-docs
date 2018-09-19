@@ -22,6 +22,7 @@ Occurs when editing is completed in grid cell. This event contains the following
 
 * [`Item`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.EndCellEditEventArgs~Item.html): Gets the edited task item.
 * [`MappingName`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.EndCellEditEventArgs~MappingName.html): Gets the current cell mapping name.
+* [`OldItem`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.EndCellEditEventArgs~OldItem.html): Gets the old value of the edited task.
 
 **SelectionChanging**
 
@@ -103,6 +104,8 @@ Occurs when the taskbar is being dragged. This event contains the following argu
 Occurs when the taskbar dragging is completed. This event contains the following argument.
 
 * [`Task`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarDragCompletedEventArgs~Task.html): Gets the task that is dragged.
+* [`OldStartDate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarDragCompletedEventArgs~OldStartDate.html): Gets the start date before dragging.
+* [`OldFinishDate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarDragCompletedEventArgs~OldFinishDate.html): Gets the finish date before dragging.
 
 **TaskBarResizeStart**
 
@@ -125,4 +128,11 @@ Occurs when the taskbar resizing is completed. This event contains the following
 
 * [`Task`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarResizeCompletedEventArgs~Task.html): Gets the task that is resized.
 * [`ResizingDirection`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarResizeCompletedEventArgs~ResizingDirection.html): Gets the direction in resized task.
+* [`OldValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskBarResizeCompletedEventArgs~OldValue.html): Gets the value before resizing the task.
 
+
+**TaskGenerated**
+
+Occurs when task is generated in the view. This event contains the following arguments:
+
+* [`Task`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskEventArgs~Task.html): Gets the task which is added.
