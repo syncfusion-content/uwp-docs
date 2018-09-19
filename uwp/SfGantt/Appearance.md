@@ -22,6 +22,7 @@ Following code snippet shows how to use these properties for the visual customiz
 </td>
 </tr>
 </table>
+![](Appearance_images/VisualCustomization.jpeg)
 
 ### Template Customization
 The following properties are used for customizing the template of the TaskBar. 
@@ -115,6 +116,6 @@ N> The basic functionalities of the TaskBar like resizing, drag and drop and too
 </td>
 </tr>
 </table>
-![](Appearance_images/Appearance_img1.jpeg)
+![](Appearance_images/TemplateCustomization.jpeg)
 
 Please find the demo sample from the following link [Template Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TemplateSupport1085883211.zip# ""). 
