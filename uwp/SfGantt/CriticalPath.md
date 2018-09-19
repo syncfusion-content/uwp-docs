@@ -8,7 +8,7 @@ documentation: ug
 
 # Critical Path
 
-Critical path is the chain of linked critical tasks that defines the project finish date. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~HighlightCriticalTasksProperty.html) property in SfGantt as like in the below code example.
+Critical path is the chain of linked critical tasks that defines the project finish date. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~HighlightCriticalTasksProperty.html) property in SfGantt as like in the following code sample.
 
 {% tabs %}
 
