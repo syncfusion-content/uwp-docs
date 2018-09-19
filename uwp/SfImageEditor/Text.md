@@ -54,3 +54,33 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 {% endhighlight %}
 
 ![SfImageEditor](text_images/multiline.png)
+
+## Text Rotation
+
+You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text, CustomView and None as shown in the following code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.RotatableElements = ImageEditorElements.Text;   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The default value for RotatableElements is `None`.
+
+You can rotate the text based on a particular angle using `Angle` property in `TextSettings` as shown in the following code snippet. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.AddText("Good morning", new TextSettings(){Angle = 45});    
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor](text_images/textrotation.png)
