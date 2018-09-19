@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-Localization is the key feature to provide software solutions that are targeted at global users. The SfPivotGauge allows users to localize the control to a specific locale and supports “resx” based localization.
+Localization is a key feature to provide software solutions targeted at global users. The SfPivotGauge allows users to localize the control to a specific locale and supports “resx” based localization.
 
 You should perform the following steps to localize the control:
 
@@ -21,15 +21,15 @@ You should perform the following steps to localize the control:
 
 The first step in localization is translating the strings that can be localized to the destination locale.
 
-N> Localization key field should be same for all locales. Do not translate the key fields.
+N> The localization key field should be the same for all locales. Do not translate it.
 
 ## Resource file and file name conventions
 
-After translating the strings, perform the following steps in the application:
+After translating the strings that can be localized:
 
-1. Right-click the project file to create a new folder in the project by selecting **Add > New Folder** and rename the folder as “Resources”.
+1. Right-click the project file to create a new folder in the project. Select **Add > New Folder** and rename the folder “Resources”.
 
-2. Then, right-click the **Resources** folder to create a new resource file by selecting **Add > New Item**.
+2. Right-click the **Resources** folder to create a new resource file. Go to **Add > New Item**.
 
 ![](Localization_images/Localization-step1.png)
 
@@ -37,13 +37,13 @@ After translating the strings, perform the following steps in the application:
 
 N> The resource file name should be in the format “&lt;Culture Code&gt;.resx”.
 
-3. Copy and paste the translated locale to the resource file which is created in the previous step.
+3. Copy and paste the translated locale to the resource file created in the previous step.
 
 ## Culture specification
 
-You should specify the CurrentUICulture in the Application_Startup method of App.xaml.cs file or in the constructor of MainPage.xaml.cs file.
+You should specify the CurrentUICulture in the Application_Startup method of App.xaml.cs file or the constructor of the MainPage.xaml.cs file.
 
-N> If you are specifying the current culture in the constructor of main page, then ensure that the culture is specified before calling the InitializeComponent() method.
+N> If you are specifying the current culture in the constructor of main page, ensure that the culture is specified before calling the InitializeComponent() method.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ End Class
 
 ## RTL
 
-The SfPivotGauge provides RTL support to display the content from right to left direction by setting the `FlowDirection` property to **RightToLeft**.
+The SfPivotGauge provides RTL support to display the content from right to left by setting the `FlowDirection` property to **RightToLeft**.
 
 {% tabs %}
 

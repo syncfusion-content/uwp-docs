@@ -16,23 +16,23 @@ This section explains the information required to create a simple SfPivotGauge c
 
 ## Initializing SfPivotGauge control
 
-Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
+1. Open Visual Studio IDE and select **File > New > Project** to open a new project dialog.
 
-Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project "SfPivotGaugeDemo".
+2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project "SfPivotGaugeDemo".
 
 The target version/minimum version dialog appears, in which you can change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
 The SfPivotGauge control can be initialized and added to the application through any of the following ways:
 
-1. Designer.
-2. XAML.
-3. Code-behind.
+1. Designer
+2. XAML
+3. Code-behind
 
 ### Adding control through designer
 
-Double-click the MainPage.xaml from the solution explorer to open it in the design view.
+1. Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-Click the toolbox and drag the **SfPivotGauge** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
+2. Click the toolbox and drag the **SfPivotGauge** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
 Now, the SfPivotGauge control will be added to the designer as follows.
 
@@ -119,9 +119,9 @@ YN> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
+1. Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
-After adding the required reference, open the *MainPage.xaml* file and name the grid "RootGrid" to refer it in the code-behind.
+2. After adding the required reference, open the *MainPage.xaml* file and name the grid "RootGrid" to refer to it in the code-behind.
 
 {% tabs %}
 
@@ -145,7 +145,7 @@ After adding the required reference, open the *MainPage.xaml* file and name the 
 
 {% endtabs %}
 
-Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGauge". Then, initialize the SfPivotGauge control in the constructor and add it to the grid as illustrated below.
+3. Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGauge". Then, initialize the SfPivotGauge control in the constructor and add it to the grid as illustrated below.
 
 {% tabs %}
 
@@ -197,7 +197,7 @@ End Namespace
 
 ## Adding service reference to project
 
-N> This section explains about how to refer the online service in UWP application for binding the cube information in the SfPivotGauge. The service URL used here refers to the demo cube - “Adventure Works”, mainly used for illustration purpose.
+N> This section explains how to refer to the online service in UWP application for binding the cube information in the SfPivotGauge. The service URL used here refers to the demo cube - “Adventure Works”, mainly used for illustration purpose.
 To create your own WCF service, refer to the topic of [Creating WCF Service Application.](#creating-wcf-service-application).
 
 After initializing the SfPivotGauge control, right-click the project in the solution explorer and select **Add > Service Reference...**.
@@ -210,13 +210,13 @@ Change the default namespace of service reference from "ServiceReference1" to "O
 
 ## Binding OLAP data to SfPivotGauge control
 
-### Defining OlapReport and OlapDataManager through view model
+### Defining OLAP report and OLAP data manager through view model
 
-Right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class *OlapViewModel* and click **OK**.
+1. Right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class "OlapViewModel" and click **OK**.
 
-The following code snippet illustrates how to define OlapDataManager and OlapReport for the SfPivotGauge control.
+The following code snippet illustrates how to define OLAP data manager and OLAP report for the SfPivotGauge control.
 
-N> The `OlapDataChanged` event should be hooked before assigning the current report to OlapDataManager.
+N> The `OlapDataChanged` event should be hooked before assigning the current report to OLAP data manager.
 
 {% tabs %}
 
@@ -486,7 +486,7 @@ End Namespace
 
 {% endtabs %}
 
-### Binding OlapDataManager with SfPivotGauge control
+### Binding OLAP data manager with SfPivotGauge control
 
 The OLAP data can be bound with SfPivotGauge control by using the `OlapDataManager` property through any of the following ways:
 
@@ -581,11 +581,11 @@ Finally, run the application to generate the following output.
 
 ## Creating WCF service application
 
-Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
+1. Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
 
-Select **Installed > Templates > Visual C# > WCF > WCF Service Application** to create a new WCF service application and name the project as "OlapManagerService".
+2. Select **Installed > Templates > Visual C# > WCF > WCF Service Application** to create a new WCF service application and name the project "OlapManagerService".
 
-Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
+3. Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
 
 * Syncfusion.Olap.Base.dll
 * Syncfusion.OlapUWP.BaseWrapper.dll

@@ -9,7 +9,7 @@ documentation: ug
 
 # KPI
 
-The SfPivotGauge supports displaying Key Performance Indicators (KPIs) from the OLAP cube. The KPI value is viewed with the help of pointers, and KPI goal is viewed with the help of markers. The KPI status and KPI trend values are represented through user friendly images like traffic light or road signs and standard arrow. Each gauge in the SfPivotGauge represents a member against one KPI combination.
+The SfPivotGauge supports displaying Key Performance Indicators (KPIs) from the OLAP cube. The KPI value is viewed with the help of pointers, and KPI goal is viewed with the help of markers. The KPI status and KPI trend values are represented through user friendly images like traffic light, road signs, and standard arrow. Each gauge in the SfPivotGauge represents a member against one KPI combination.
 
 ![](KPI_images/kpi.png)
 

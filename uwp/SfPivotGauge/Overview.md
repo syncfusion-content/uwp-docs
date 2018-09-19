@@ -15,7 +15,7 @@ The SfPivotGauge control for UWP is ideal for highlighting business critical Key
 
 The key features of **SfPivotGauge** control are listed as follows:
 
-* **Data source**: Supports data binding with OLAP data source such as Microsoft SQL Server Analysis Services (SSAS) and XML/A and relational data source such as IList, IEnumerable, etc.
+* **Data source**: Supports data binding with OLAP data source such as Microsoft SQL Server Analysis Services (SSAS) and XML/A and relational data source such as IList or IEnumerable.
 * **Multiple gauges and layouts**: Customizes the layout while rendering the multiple controls.
 * **Indicators**: Displays the active/inactive state of the SfPivotGauge control.
 * **Ranges**: Highlights the range of values in the circular scale.

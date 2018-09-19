@@ -11,7 +11,7 @@ documentation: ug
 
 ## Layout customization
 
-The SfPivotGauge supports displaying the multiple gauges in a structured layout and this can be achieved by using the `RowsCount` and `ColumnsCount` properties. These properties specify the number of rows and columns required to display the control.
+The SfPivotGauge supports displaying the multiple gauges in a structured layout using the `RowsCount` and `ColumnsCount` properties. These properties specify the number of rows and columns required to display the control.
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ PivotGauge1.Radius = 75
 
 ## Gauge header
 
-The gauge header is the combination of details about the calculation and KPI. The header components of the SfPivotGauge can be hidden by using the `ShowGaugeHeader` property as specified in the following code snippet.
+The gauge header is a combination of details about the calculation and KPI. The header components of the SfPivotGauge can be hidden by using the `ShowGaugeHeader` property as specified in the following code snippet.
 
 {% tabs %}
 
@@ -106,7 +106,7 @@ PivotGauge1.ShowGaugeHeaders = False
 
 ## Gauge label
 
-The visibility of gauge labels that are displayed inside the gauge can be toggled with the help of `ShowGaugeLabels` property. The following code snippet shows how to hide labels of the SfPivotGauge.
+The visibility of gauge labels displayed inside the gauge can be toggled with the help of `ShowGaugeLabels` property. The following code snippet shows how to hide labels of the SfPivotGauge.
 
 {% tabs %}
 
