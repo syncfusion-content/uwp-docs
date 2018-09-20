@@ -14,13 +14,16 @@ Critical path is a chain of linked critical tasks that defines the finish date o
 
 {% highlight xaml %}
 
-<gantt:SfGantt HighlightCriticalTasks="True">
+<gantt:SfGantt HighlightCriticalTasks="True"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-this.Gantt.HighlightCriticalTasks = True;
+SfGantt gantt = new SfGantt
+{
+    HighlightCriticalTasks = true
+};
 
 {% endhighlight %}
 
@@ -47,8 +50,12 @@ N> The same [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/u
 
 {% highlight c# %}
 
-this.GanttControl.CriticalTaskBarBrush = new SolidColorBrush(Color.FromArgb(255, 255, 219, 224));
-this.GanttControl.CriticalProgressBarBrush = new SolidColorBrush(Colors.Pink);
+SfGantt gantt = new SfGantt
+    {
+        HighlightCriticalTasks = true,
+        CriticalTaskBarBrush = new SolidColorBrush(Color.FromArgb(255, 255, 219, 224)),
+        CriticalProgressBarBrush = new SolidColorBrush(Colors.Pink)
+    };
 
 {% endhighlight %}
 
@@ -56,4 +63,4 @@ this.GanttControl.CriticalProgressBarBrush = new SolidColorBrush(Colors.Pink);
 
 ![UWP Gantt chart with critical tasks highlighted with custom colors.](CriticalPath_images/CriticalPathCustomization.jpg)
 
-N> By default, the HighlightCriticalTasks feature is disabled.
+N> By default, the HighlightCriticalTasks property is disabled.
