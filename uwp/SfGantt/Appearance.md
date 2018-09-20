@@ -22,7 +22,7 @@ Following code snippet shows how to use these properties for the visual customiz
 </td>
 </tr>
 </table>
-![](Appearance_images/VisualCustomization.jpeg)
+![](Appearance_images/VisualCustomization.png)
 
 ### Template Customization
 The following properties are used for customizing the template of the TaskBar. 
