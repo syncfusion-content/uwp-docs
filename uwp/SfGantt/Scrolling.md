@@ -42,7 +42,7 @@ You can also scroll the Gantt chart programmatically using [`ScrollGanttTo`](htt
 The following parameter's in the method allows the user to scroll the Gantt chart programmatically:
 
 * [`Date`] : Specifies date to scroll horizontally.
-* [`Index`] : Specfies row index to scroll vertically.
+* [`Index`] : Specifies row index to scroll vertically.
  
 {% highlight C# %}
 
