@@ -12,9 +12,7 @@ The fill color of the taskbar,parent taskbar, milestone and progressbar can be d
 
 The following code example explains the visual customization of the TaskBar.
 
-<table>
-<tr>
-<td>
+{% highlight xaml %}
         <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
                        ParentTaskBarBrush="#33ffbe06" 
                        ParentProgressIndicatorBrush="#FFffbe06"
@@ -22,9 +20,8 @@ The following code example explains the visual customization of the TaskBar.
                        TaskProgressIndicatorBrush="#FF90a84e"
                        MilestoneBrush="#999999">
         </gantt:SfGantt>
-</td>
-</tr>
-</table>
+{% endhighlight %}
+
 ![](Appearance_images/VisualCustomization.PNG)
 
 **Template Customization**
@@ -37,10 +34,8 @@ You can also customize the template for the taskbar,parent taskbar and milestone
 N> The basic functionalities of the TaskBar like resizing, drag and drop and tooltip are available only when the template has the predefined name and the drag and drop/resizing thumbs. Otherwise the custom TaskBar will appear with the defined template, but you cannot access these features of Gantt.
 
 The following code example illustrates the template customization.
-**Xaml**
-<table>
-<tr>
-<td>
+
+{% highlight xaml %}
 <Grid>
   <Grid.Resources>
             <local:TextConverter x:Key="TextConverter"></local:TextConverter>
@@ -119,7 +114,5 @@ The following code example illustrates the template customization.
                        TaskBarTemplate="{StaticResource TaskBarTemplate}">
         </gantt:SfGantt>
 </Grid>
-</td>
-</tr>
-</table>
+{% endhighlight %}
 ![](Appearance_images/TemplateCustomization.jpeg)
