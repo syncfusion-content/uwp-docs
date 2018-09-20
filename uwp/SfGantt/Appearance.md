@@ -123,5 +123,3 @@ The following code example illustrates the template customization.
 </tr>
 </table>
 ![](Appearance_images/TemplateCustomization.jpeg)
-
-Please find the demo sample from the following link [Template Demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TemplateSupport1085883211.zip# ""). 
