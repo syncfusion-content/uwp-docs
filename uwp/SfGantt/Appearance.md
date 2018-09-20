@@ -1,14 +1,17 @@
 # Appearance
-## Customization
-This topic gives an overview on how to customize the TaskBar in the Gantt chart. 
-### Visual Customization
-The following properties are used for visual customization of the TaskBar. 
-* [`ParentTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarBrushProperty.html) – To customize the parent taskbar brush.
-* [`ParentProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentProgressIndicatorBrushProperty.html) – To customize the parent progress brush.
-* [`TaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarBrushProperty.html) – To customize the taskbar brush. 
-* [`TaskProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskProgressIndicatorBrushProperty.html) – To customize the task progress brush.
-* [`MilestoneBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneBrushProperty.html) – To customize the milestone brush.
-Following code snippet shows how to use these properties for the visual customization of the TaskBar.
+
+The SfGantt control provides options to customize the look and feel of the visual. 
+
+## Visual Customization
+The fill color of the taskbar,parent taskbar, milestone and progressbar can be defined by using the below properties. 
+* [`ParentTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarBrushProperty.html) – Used to set the background color for the parent taskbar.
+* [`ParentProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentProgressIndicatorBrushProperty.html) – Used to set the background color for the parent progress bar.
+* [`TaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarBrushProperty.html) – Used to set the background color for the taskbar.
+* [`TaskProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskProgressIndicatorBrushProperty.html) – Used to set the background color for task progress bar.
+* [`MilestoneBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneBrushProperty.html) – Used to set the background color for the milestone.
+
+The following code example explains the visual customization of the TaskBar.
+
 <table>
 <tr>
 <td>
@@ -22,15 +25,18 @@ Following code snippet shows how to use these properties for the visual customiz
 </td>
 </tr>
 </table>
-![](Appearance_images/VisualCustomization.png)
+![](Appearance_images/VisualCustomization.PNG)
 
-### Template Customization
-The following properties are used for customizing the template of the TaskBar. 
+## Template Customization
+You can also customize the template for the taskbar,parent taskbar and milestone by using the ParentTaskBarTemplate,TaskBarTemplate and MilestoneTemplate properties respectively.
+
 * [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html) – To customize the header task in the Gantt chart.
 * [`TaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarTemplateProperty.html) – To customize the child task in the Gantt chart.
 * [`MilestoneTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneTemplate.html) – To customize the milestone task in the Gantt chart.
 
 N> The basic functionalities of the TaskBar like resizing, drag and drop and tooltip are available only when the template has the predefined name and the drag and drop/resizing thumbs. Otherwise the custom TaskBar will appear with the defined template, but you cannot access these features of Gantt.
+
+The following code example illustrates the template customization.
 **Xaml**
 <table>
 <tr>
