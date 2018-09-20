@@ -2,7 +2,7 @@
 
 The SfGantt control provides options to customize the look and feel of the visual. 
 
-## Visual Customization
+**Visual Customization**
 The fill color of the taskbar,parent taskbar, milestone and progressbar can be defined by using the below properties. 
 * [`ParentTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarBrushProperty.html) – Used to set the background color for the parent taskbar.
 * [`ParentProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentProgressIndicatorBrushProperty.html) – Used to set the background color for the parent progress bar.
@@ -27,7 +27,7 @@ The following code example explains the visual customization of the TaskBar.
 </table>
 ![](Appearance_images/VisualCustomization.PNG)
 
-## Template Customization
+**Template Customization**
 You can also customize the template for the taskbar,parent taskbar and milestone by using the ParentTaskBarTemplate,TaskBarTemplate and MilestoneTemplate properties respectively.
 
 * [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html) – To customize the header task in the Gantt chart.
