@@ -115,4 +115,5 @@ The following code example illustrates the template customization.
         </gantt:SfGantt>
 </Grid>
 {% endhighlight %}
+
 ![](Appearance_images/TemplateCustomization.jpeg)
