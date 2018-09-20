@@ -12,7 +12,7 @@ documentation: ug
 
 The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~BringTaskOnVerticalScroll.html) property in the SfGantt, enables to scroll to the visible task region when the Gantt chart is vertically scrolled. 
 
-The below code example illustrates how to enable the [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~BringTaskOnVerticalScroll.html).
+The following code sample illustrates how to enable the [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~BringTaskOnVerticalScroll.html).
 
 {% tabs %}
 
@@ -37,12 +37,12 @@ sfGantt.BringTaskOnVerticalScroll = True;
 
 ## Scroll to particular region
 
-You can also scroll the Gantt chart horizontally to the specific date and vertically to the specific row index using [`ScrollGanttTo`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ScrollGanttTo.html) method in SfGantt. 
+You can also scroll the Gantt chart programmatically  horizontally to the specific date and vertically to the specific row index using [`ScrollGanttTo`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ScrollGanttTo.html) method in SfGantt. 
 
 This method allows the user to scroll the Gantt chart programmatically in horizontal or vertical direction by using this following parameter's:
 
-* [`Date`] : DateTime value to scroll horizontally.
-* [`Index`] : Task's index value to scroll vertically.
+* [`Date`] : Specifies date to scroll horizontally.
+* [`Index`] : Specfies row index to scroll vertically.
  
 {% highlight C# %}
 
