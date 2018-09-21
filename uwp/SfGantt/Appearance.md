@@ -30,84 +30,72 @@ You can also customize the template for the taskbar,parent taskbar and milestone
 The following code example illustrates the template customization.
 
 {% highlight xaml %}
-<Grid>
-  <Grid.Resources>
-            <local:TextConverter x:Key="TextConverter"></local:TextConverter>
-            <local:ProgressColorConverter x:Key="ProgressFillConverter"></local:ProgressColorConverter>
-            <local:ColorConverter x:Key="TaskFillConverter"></local:ColorConverter>
-
+        <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
+                       DisplayTaskNames="False">
             <!--TaskBar Template-->
-            <ControlTemplate x:Key="TaskBarTemplate">
-                <Grid x:Name="PART_TaskGrid">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid Grid.Column="2">
-                        <!--Bound the task height and task width-->
-                        <Rectangle x:Name="PART_TaskBar" HorizontalAlignment="Left"
-                                           Height="{Binding ActualTaskHeight}"   
-                                           Width="{Binding TaskWidth}"
-                                           Fill="{Binding Converter={StaticResource TaskFillConverter}}" 
-                                           RadiusX="10" RadiusY="10" ></Rectangle>
-                        <!--Bound the progress width-->
-                        <Rectangle x:Name="PART_ProgressBar" Width="{Binding ProgressWidth}"
-                                           HorizontalAlignment="Left" RadiusX="10" 
-                                           RadiusY="10"
+            <gantt:SfGantt.TaskBarTemplate>
+                <ControlTemplate>
+                    <Grid x:Name="PART_TaskGrid">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="2">
+                            <!--Bound task height, task width and task brush-->
+                            <Rectangle x:Name="PART_TaskBar" HorizontalAlignment="Left"
+                                           Height="{Binding ActualTaskHeight}" Width="{Binding TaskWidth}"
+                                           Fill="{Binding TaskBrush}" RadiusX="10" RadiusY="10" ></Rectangle>
+                            <!--Bound task height, progress width and progress brush--> 
+                            <Rectangle x:Name="PART_ProgressBar" Width="{Binding ProgressWidth}"
+                                           HorizontalAlignment="Left" RadiusX="10" RadiusY="10"
                                            Height="{Binding ActualTaskHeight}"
-                                           Fill="{Binding Converter={StaticResource ProgressFillConverter}}"/>
+                                           Fill="{Binding ProgressBrush}"/>
+                        </Grid>
                     </Grid>
-                </Grid>
-            </ControlTemplate>
-            <!--Parent task template-->
-            <ControlTemplate x:Key="ParentTaskBarTemplate">
-                <Grid>
-                    <TextBlock Margin="-150,0,150,0"  FontWeight="Bold" Text="{Binding Converter={StaticResource TextConverter}}"></TextBlock>
-                    <Grid>
-                        <!--Bound the task height and task width-->
-                        <Rectangle x:Name="PART_TaskBar" HorizontalAlignment="Left"
-                                           Height="{Binding ActualTaskHeight}" 
-                                           Width="{Binding TaskWidth}"
-                                           Fill="{Binding Converter={StaticResource TaskFillConverter}}"
-                                           RadiusX="10" RadiusY="10" ></Rectangle>
-                        <!--Bound the progress width-->
-                        <Rectangle x:Name="PART_ProgressBar" Width="{Binding ProgressWidth}"
-                                           HorizontalAlignment="Left" RadiusX="10" 
-                                           RadiusY="10"
-                                           Height="{Binding ActualTaskHeight}"
-                                           Fill="{Binding Converter={StaticResource ProgressFillConverter}}"/>
-                    </Grid>
-                </Grid>
-            </ControlTemplate>
+                </ControlTemplate>
+            </gantt:SfGantt.TaskBarTemplate>
+
             <!--Milestone Template-->
-            <ControlTemplate x:Key="MilestoneTemplate">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
-                    <Viewbox Grid.Column="1">
-                        <!--Bound the task height and task width-->
-                        <Path x:Name="PART_TaskBar" HorizontalAlignment="Left"
+            <gantt:SfGantt.MilestoneTemplate>
+                <ControlTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Viewbox Grid.Column="1">
+                            <!--Bound task height, task width and task brush-->
+                            <Path x:Name="PART_TaskBar" HorizontalAlignment="Left"
                                       Data="M1540.22,2082.07L1546.95,2102.78 1568.73,2102.78 1551.11,2115.58 1557.84,2136.29 1540.22,2123.49 1522.6,2136.29 1529.33,2115.58 1511.71,2102.78 1533.49,2102.78 1540.22,2082.07z"
                                       Stretch="Uniform" Width="{Binding TaskWidth}" Height="{Binding ActualTaskHeight}"
-                                      Fill="#4773b5">
-                        </Path>
-                    </Viewbox>
-                </Grid>
-            </ControlTemplate>
-        </Grid.Resources>
-        <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
-                       DisplayTaskNames="False" 
-                       MilestoneTemplate="{StaticResource MilestoneTemplate}"
-                       ParentTaskBarTemplate="{StaticResource ParentTaskBarTemplate}" 
-                       TaskBarTemplate="{StaticResource TaskBarTemplate}">
+                                      Fill="{Binding TaskBrush}">
+                            </Path>
+                        </Viewbox>
+                    </Grid>
+                </ControlTemplate>
+            </gantt:SfGantt.MilestoneTemplate>
+
+            <!--Parent task template-->
+            <gantt:SfGantt.ParentTaskBarTemplate>
+                <ControlTemplate>
+                    <Grid>
+                        <!--Bound task height, task width and task brush-->
+                        <Rectangle x:Name="PART_TaskBar" HorizontalAlignment="Left"
+                                   Height="{Binding ActualTaskHeight}" Width="{Binding TaskWidth}"
+                                   Fill="{Binding TaskBrush}" RadiusX="10" RadiusY="10" ></Rectangle>
+                        <!--Bound task height, progress width and progress brush-->
+                        <Rectangle x:Name="PART_ProgressBar" Width="{Binding ProgressWidth}"
+                                   HorizontalAlignment="Left" RadiusX="10" RadiusY="10"
+                                   Height="{Binding ActualTaskHeight}"
+                                   Fill="{Binding ProgressBrush}"/>
+                    </Grid>
+                </ControlTemplate>
+            </gantt:SfGantt.ParentTaskBarTemplate>
         </gantt:SfGantt>
-</Grid>
 {% endhighlight %}
 
 ![](Appearance_images/TemplateCustomization.jpeg)
