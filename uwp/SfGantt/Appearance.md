@@ -1,16 +1,17 @@
 # Appearance
 
-The SfGantt control provides options to customize the look and feel of the visual. 
+The SfGantt control provides options to customize the look and feel of the task visual. 
 
 **Visual Customization**
-The fill color of the taskbar,parent taskbar, milestone and progressbar can be defined by using the below properties. 
-* [`ParentTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarBrushProperty.html) – Used to set the background color for the parent taskbar.
-* [`ParentProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentProgressIndicatorBrushProperty.html) – Used to set the background color for the parent progress bar.
-* [`TaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarBrushProperty.html) – Used to set the background color for the taskbar.
-* [`TaskProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskProgressIndicatorBrushProperty.html) – Used to set the background color for task progress bar.
-* [`MilestoneBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneBrushProperty.html) – Used to set the background color for the milestone.
+Color of parent taskbar, task bar, milestone and progress bar can be customized by using the following properties. 
 
-The following code example explains the visual customization of the TaskBar.
+* [`ParentTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarBrushProperty.html) – Specifies the color for the parent taskbar.
+* [`ParentProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentProgressIndicatorBrushProperty.html) – Specifies the color for the parent progress bar.
+* [`TaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarBrushProperty.html) – Specifies the color for the taskbar.
+* [`TaskProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskProgressIndicatorBrushProperty.html) – Specifies the color for task progress bar.
+* [`MilestoneBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneBrushProperty.html) – Specifies the color for the milestone.
+
+The following code sample explains the visual customization of the TaskBar.
 
 {% highlight xaml %}
         <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
@@ -27,7 +28,7 @@ The following code example explains the visual customization of the TaskBar.
 **Template Customization**
 You can also customize the template for the taskbar,parent taskbar and milestone by using the [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html),[`TaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarTemplateProperty.html) and [`MilestoneTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneTemplate.html) properties respectively.
 
-The following code example illustrates the template customization.
+The following code sample illustrates the template customization.
 
 {% highlight xaml %}
         <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
