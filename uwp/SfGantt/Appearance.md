@@ -25,13 +25,7 @@ The following code example explains the visual customization of the TaskBar.
 ![](Appearance_images/VisualCustomization.PNG)
 
 **Template Customization**
-You can also customize the template for the taskbar,parent taskbar and milestone by using the ParentTaskBarTemplate,TaskBarTemplate and MilestoneTemplate properties respectively.
-
-* [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html) – To customize the header task in the Gantt chart.
-* [`TaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarTemplateProperty.html) – To customize the child task in the Gantt chart.
-* [`MilestoneTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneTemplate.html) – To customize the milestone task in the Gantt chart.
-
-N> The basic functionalities of the TaskBar like resizing, drag and drop and tooltip are available only when the template has the predefined name and the drag and drop/resizing thumbs. Otherwise the custom TaskBar will appear with the defined template, but you cannot access these features of Gantt.
+You can also customize the template for the taskbar,parent taskbar and milestone by using the [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html),[`TaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarTemplateProperty.html) and [`MilestoneTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneTemplate.html) properties respectively.
 
 The following code example illustrates the template customization.
 
