@@ -44,6 +44,8 @@ The following parameters allow users to scroll the Gantt chart programmatically:
 * `Date` : Specifies date to scroll horizontally.
 * `Index` : Specifies row index to scroll vertically.
  
+{% tabs %}
+
 {% highlight C# %}
 
 SfGantt sfGantt = new SfGantt();
@@ -53,3 +55,5 @@ sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollecti
 sfGantt.ScrollGanttTo(new DateTime(2014, 3, 1), 2);
 
 {% endhighlight %}
+
+{% endtabs %}
