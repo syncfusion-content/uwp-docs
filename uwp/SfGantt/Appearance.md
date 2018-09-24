@@ -156,4 +156,4 @@ The following code sample illustrates the template customization.
     </Grid>
 {% endhighlight %}
 
-![](Appearance_images/TemplateCustomization.jpeg)
+![UWP Gantt chart task customized with custom template](Appearance_images/TemplateCustomization.jpeg)
