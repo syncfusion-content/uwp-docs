@@ -13,6 +13,15 @@ SfRangeSlider control allows the user to select the range of value within the sp
 
 ![](Overview_images/Overview_img1.png)
 
+# Key features
+
+Provides support to select values as a range.
+ 
+Restricts values to choose within a minimum and maximum constraints.
+ 
+Supports to change the tick intervals in uniform pattern.
+ 
+Provides user-friendly customization support to customize ticks and labels.
 
 
 
