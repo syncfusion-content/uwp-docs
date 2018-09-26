@@ -35,11 +35,11 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-# Export options
+## Export options
 
 The exporting operation can be customized by passing [TreeGridPdfExportingOptions ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html)instance as an argument to the `ExportToPdf` and `ExportToPdfGrid` methods.
 
-## Auto size column width in PDF 
+### Auto size column width in PDF 
 
 You can export the tree grid to PDF by fitting the column width based on its content by setting the [AutoColumnWidth ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~AutoColumnWidth.html)property to `true`.
 
@@ -55,7 +55,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-## Auto size row height in PDF
+### Auto size row height in PDF
 
 You can export the tree grid to PDF by fitting the row height based on its content by setting the [AutoRowHeight ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~AutoRowHeight.html)property to `true`.
 
@@ -71,7 +71,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-## Exclude columns when exporting
+### Exclude columns when exporting
 
 By default, all the columns (including hidden columns) in the tree grid will be exported to PDF. To exclude some columns when exporting to PDF, use the [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~ExcludeColumns.html) property in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class.
 
@@ -88,7 +88,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-## Export format
+### Export format
 
 By default, the display text will be exported to PDF. To export an actual value, set the [ExportFormat ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~ExportFormat.html# "")property to `false`.
 
@@ -104,7 +104,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-## Repeat column headers on each page
+### Repeat column headers on each page
 
 The column headers can be exported on each page by setting the [RepeatHeaders ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~RepeatHeaders.html)property.
 
@@ -120,7 +120,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-## Export all the columns in one page
+### Export all the columns in one page
 
 When exporting to PDF, you can fit all the  columns in one page by setting the [FitAllColumnsInOnePage ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~FitAllColumnsInOnePage.html)property to `true`.
 
@@ -136,7 +136,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-## Export stacked headers to PDF
+### Export stacked headers to PDF
 
 You can export the stacked headers to PDF by setting the [ExportStackedHeaders ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~ExportStackedHeaders.html)property to `true`.
 
@@ -152,7 +152,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-# Define header and footer for PDF page
+## Define header and footer for PDF page
 
 TreeGrid provides a way to display additional content at the top (header) or bottom (footer) of a page when exporting to PDF. This can be performed by setting the [PageHeaderFooterEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~PageHeaderFooterEventHandler.html# "") property in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html# "") class.
 You can insert any string, image or drawing in the header and footer using the `PdfHeaderFooterEventHandler` property.
@@ -185,7 +185,7 @@ static void PdfHeaderFooterEventHandler(object sender, TreeGridPdfHeaderFooterEv
 
 Here, `string` is inserted in the header of the exported PDF file using the [DrawString](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawString.html) method. Similarly, you can insert any image, line, etc., using the [DrawImage](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawImage.html# ""), [DrawLine](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfGraphics~DrawLine.html), etc., methods respectively.
 
-# Change PDF page orientation
+## Change PDF page orientation
 
 You can change the page orientation of PDF when exporting. The default page orientation is Portrait.
 To change the page orientation, get the exported [PdfGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGrid.html) by using the [ExportToPdfGrid](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGridConverter.WPF~Syncfusion.UI.Xaml.Grid.Converter.GridPdfExportExtension~ExportToPdfGrid.html) method. Then, draw that `PdfGrid` into a [PdfDocument](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocument.html) by changing the [PageSettings.Orientation](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfPageSettings~Orientation.html) property.
@@ -212,9 +212,9 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-# Save Options
+## Save Options
 
-## Save PDF as stream
+### Save PDF as stream
 
 After exporting to PDF, you can save the exported PDF file to stream using [Save](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.PdfDocumentBase~Save.html) method.
 
@@ -233,7 +233,7 @@ document.Close();
 {% endhighlight %}
 {% endtabs %}
 
-## Save PDF using file dialog
+### Save PDF using file dialog
 
 After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx).
 
@@ -268,7 +268,7 @@ document.Close();
 {% endhighlight %}
 {% endtabs %}
 
-## Open PDF using FileOpenPicker
+### Open PDF using FileOpenPicker
 
 You can open the saved PDF file using `FileOpenPicker`.
 
@@ -287,11 +287,11 @@ StorageFile file = await openPicker.PickSingleFileAsync();
 {% endhighlight %}
 {% endtabs %}
 
-# Cell appearance customization when exporting
+## Cell appearance customization when exporting
 
 When exporting, you can customize the cells in a PDF document by setting the [CellsExportingEventHandler ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~CellsExportingEventHandler.html)in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class.
 
-## Cell styling based on cell type in PDF
+### Cell styling based on cell type in PDF
 
 You can customize the cell styles based on the `CellType` using the[CellsExportingEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~CellsExportingEventHandler.html) property.
 
@@ -318,7 +318,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 
 ![](Export-To-PDF_images/Export-To-PDF_img2.png)
 
-## Cell styling based on the TreeGridPdfExportingOptions in PDF
+### Cell styling based on the TreeGridPdfExportingOptions in PDF
 
 You can style the stacked header, header and record cells in PDF using  the [StackedHeaderCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~StackedHeaderCellStyle.html), [HeaderCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~HeaderCellStyle.html) and [RecordCellStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~RecordCellStyle.html) respectively in [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class.
 
@@ -355,7 +355,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-## Customize exporting content
+### Customize exporting content
 
 You can customize the cell values when exporting to PDF by using the [CellsExportingEventHandler ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~CellsExportingEventHandler.html)property and [TreeGridPdfExportingOptions](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions.html) class.
 
@@ -390,7 +390,7 @@ void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExportingEventAr
 
 ![](Export-To-PDF_images/Export-To-PDF_img3.png)
 
-## Export images to PDF
+### Export images to PDF
 
 By default, images loaded in the [GridTemplateColumn](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) will not be exported to PDF. To export it, by use the [CellsExportingEventHandler ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridPdfExportingOptions~CellsExportingEventHandler.html# "")property in PdfExportingOptions class. In `CellsExportingEventHandler`, an image will be loaded in [PdfGridCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Grid.PdfGridCell.html).
 
@@ -443,7 +443,7 @@ public void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExporting
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/UWP-196425352.zip).
 
-# Embed fonts in PDF file
+## Embed fonts in PDF file
 
 By default, some fonts (such as Unicode font) are not supported in PDF. In this case, it is possible to embed the font in PDF document with the help of [PdfTrueTypeFont](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.Pdf.Base~Syncfusion.Pdf.Graphics.PdfTrueTypeFont.html).
 
@@ -475,7 +475,7 @@ public void GridPdfExportingEventHandler(object sender, TreeGridCellPdfExporting
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/UWP-153139256.zip).
 
-# Export parent and expanded child nodes
+## Export parent and expanded child nodes
 
 By default, all the tree grid nodes will be exported when exporting. You can export the parent and expanded child nodes alone by overriding the [ExportNodesToPdf](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter~ExportNodesToPdf.html) method of [TreeGridToPdfConverter](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridToPdfConverter_members.html) class,
 
