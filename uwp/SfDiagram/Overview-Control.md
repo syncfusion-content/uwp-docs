@@ -33,9 +33,7 @@ The following code example explains how to add Overview to an Application.
 
 Refer to the Overview Sample from the following link.
 
-Sample Link:
-
-Navigation->UWP->Diagram->Overview
+Sample Link: [Overview](http://www.syncfusion.com/downloads/support/directtrac/215887/ze/Overview_Sample-1338316743).
 
 ## Zoom Pan
 In overview, the view port of the Diagram is highlighted with a red colored rectangle. Diagram can be zoomed/panned by interacting with that. You can interact with overview as follows.
