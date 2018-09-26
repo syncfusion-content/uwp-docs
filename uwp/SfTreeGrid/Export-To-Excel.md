@@ -60,7 +60,7 @@ if (storageFile != null)
 
 ### Export without outlines	
 
-By default, all the children in the tree grid will be exported in expanded state. You can disable the outlines in Excel by setting the [AllowOutlingGroups](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions~AllowOutliningGroups.html) property to `false` in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html).
+By default, all the children in the tree grid will be exported in expanded state. You can disable the outlines in Excel by setting the [AllowOutliningGroups](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions~AllowOutliningGroups.html) property to `false` in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -80,7 +80,7 @@ if (storageFile != null)
 
 ### Exclude columns when exporting
 
-By default, all the columns (including hidden columns) in the tree grid will be exported to Excel. To exclude some columns, use [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions~ExcludeColumns.html)field in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html) class.
+By default, all the columns (including hidden columns) in the tree grid will be exported to Excel. To exclude some columns, use [ExcludeColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions~ExcludeColumns.html) field in [TreeGridExcelExportingOptions](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGridConverter.UWP~Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportingOptions.html) class.
 
 {% tabs %}
 {% highlight c# %}
