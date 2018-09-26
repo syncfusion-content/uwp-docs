@@ -7,9 +7,9 @@ control: SfRange Slider
 documentation: ug
 ---
 
-# Overview 
+# Overview
 
-SfRangeSlider control allows the user to select the range of value within the specified minimum and maximum limit. The range can be selected by moving the Thumb control along a track.  
+The range slider control for UWP allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
 
 ![](Overview_images/Overview_img1.png)
 
