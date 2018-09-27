@@ -265,7 +265,37 @@ Tick marks not appear.
 
 ![](Ticks_images/Ticks_img9.png)
 
+## Customizing tick color
 
+The range slider control provides the `TickBarFill` property to customize the color of ticks in tick bar.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<editors:SfRangeSlider x:Name="rangeSlider" Width="300" TickBarFill="Blue" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Horizontal"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.TickBarFill= new SolidColorBrush(Color.FromArgb(255, (byte)0, (byte)0, (byte)255));
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+  rangeSlider.TickBarFill= new SolidColorBrush(Color.FromArgb(255, (byte)0, (byte)0, (byte)255))
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Ticks_images/Ticks_img10.png)
 
 
 
