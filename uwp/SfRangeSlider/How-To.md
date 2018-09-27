@@ -18,7 +18,9 @@ The `DragStarted` event is raised when a thumb is dragged. After the thumb relea
 </tr>
 <tr>
 <td>Index</td>
-<td>Indicates the thumb used for performing drag operations.</td>
+<td>Indicates the thumb used for performing drag operations.
+Value 0 for start thumb and 1 for end thumb.
+</td>
 </tr>
 </table>
 
