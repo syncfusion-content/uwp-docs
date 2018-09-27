@@ -13,6 +13,8 @@ Color of parent taskbar, task bar, milestone and progress bar can be customized 
 
 The following code sample explains the visual customization of the task.
 
+{% tabs %}
+
 {% highlight xaml %}
         <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
                        ParentTaskBarBrush="#33ffbe06" 
@@ -21,7 +23,10 @@ The following code sample explains the visual customization of the task.
                        TaskProgressIndicatorBrush="#FF90a84e"
                        MilestoneBrush="#999999">
         </gantt:SfGantt>
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ![UWP Gantt chart with customized colors](Appearance_images/VisualCustomization.PNG)
 
@@ -29,6 +34,8 @@ The following code sample explains the visual customization of the task.
 You can also customize the template of the parent taskbar, taskbar and milestone by using the [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html), [`TaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarTemplateProperty.html) and [`MilestoneTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneTemplate.html) properties respectively.
 
 The following code sample illustrates the template customization.
+
+{% tabs %}
 
 {% highlight xaml %}
     <Grid>
@@ -154,6 +161,9 @@ The following code sample illustrates the template customization.
                        MilestoneTemplate="{StaticResource MilestoneTemplate}">
         </gantt:SfGantt>
     </Grid>
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ![UWP Gantt chart task customized with custom template](Appearance_images/TemplateCustomization.jpeg)
