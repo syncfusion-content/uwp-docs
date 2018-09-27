@@ -166,6 +166,6 @@ The following code sample demonstrates how to customize a template.
 
 {% endtabs %}
 
-N> The thumb and ellipse of the template is visible only when [`AllowEditing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowEditing.html) is true.
+N> The thumbs and ellipses will be visible only when when [`AllowEditing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowEditing.html) is true.
 
 ![UWP Gantt chart task customized with custom template](Appearance_images/TemplateCustomization.jpeg)
