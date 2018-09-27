@@ -305,3 +305,63 @@ Used to set the background for Items Panel of the tabbed Dock Window<br/><br/></
 {%endhighlight%}
 
 ![](Tabbed-Window-images/Tabbed-Window-img5.png)
+
+
+## Set icon to TabbedWindow 
+
+[SetIcon](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDockingManager.UWP~Syncfusion.UI.Xaml.Controls.Layout.SfDockingManager~SetIcon.html) method can be used to set the icon/image for the TabbedWindow. 
+
+
+{% tabs %}
+
+{% highlight Xaml %}
+
+<!--Setting icon in Tabbed Window -->
+
+<ContentControl x:Name="SolutionExplorer" Layout:SfDockingManager.Header="Solution Explorer"  Layout:SfDockingManager.DesiredWidthInDockedMode="300"  Layout:SfDockingManager.SideInDockedMode="Right" Layout:SfDockingManager.DockState="Dock"  >
+
+	<Layout:SfDockingManager.Icon>
+
+		<Image Source="/Assets/image1.png" />
+
+	</Layout:SfDockingManager.Icon>
+
+</ContentControl>
+
+<ContentControl Name="Properties" Layout:SfDockingManager.Header="Properties" Layout:SfDockingManager.DesiredWidthInDockedMode="300" Layout:SfDockingManager.SideInDockedMode="Tabbed" Layout:SfDockingManager.TargetNameInDockedMode="Solution Explorer" >
+
+	<Layout:SfDockingManager.Icon>
+
+		<Image Source="/Assets/image2.png" />
+
+	</Layout:SfDockingManager.Icon>
+
+</ContentControl>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+//Initialize image 
+		
+Image image = new Image();
+
+Image image1 = new Image();
+
+//Get Image 
+
+image.Source = new BitmapImage(new Uri("ms-appx:///Assets/image1.png", UriKind.Absolute));
+
+image1.Source = new BitmapImage(new Uri("ms-appx:///Assets/image2.png", UriKind.Absolute));
+
+//Set Image to Tabbed Control
+			
+SfDockingManager.SetIcon(Properties,image1);
+
+SfDockingManager.SetIcon(SolutionExplorer, image);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Tabbed-Window-images/SetIconImage.png)
