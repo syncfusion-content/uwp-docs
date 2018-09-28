@@ -21,6 +21,10 @@ To add text from the toolbar, click on the `Text` icon in the toolbar. When the 
 
 Select the desired text and click on the color palette available in the sub menu.
 
+### Change TextEffect of selected Text
+
+Changes the effects of the text such as `Bold`, `Italic` and `Underline`. 
+
 ## Using Code
 
 programmatically, the desired text elements also can be added over the image. The `AddText` method in the SfImageEditor control is used to add text based on the string value and [`TextSettings`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
@@ -31,8 +35,56 @@ TextSettings is defined to set the values for Color and FontSize.
 
 {% highlight C# %}
 
-    imageEditor.AddText("CustomTextView", new TextSettings() { Color = new SolidColorBrush(Colors.Orange) });
+    imageEditor.AddText("CustomTextView", new TextSettings() { Color = new SolidColorBrush(Colors.Orange), TextEffects = TextEffects.Bold | TextEffects.Italic | TextEffects.Underline });
 
 {% endhighlight %}
 
 ![](text_images/AddedText.png)
+
+## Multiline text and text alignment
+
+### Multiline text
+You can annotate multiple line text over an image with the help of text preview window.
+
+### Text alignment
+`TextAlignment` is an enum type and text can be aligned with the help of text alignment enum values such as left, right and center. 
+
+N> The default text alignment is `Left` and text alignment is not applicable for single line text.
+
+{% highlight C# %}
+
+    editor.AddText("Hello\nGood morning\nHave a nice day", new TextSettings() {TextAlignment = TextAlignment.Right });
+
+{% endhighlight %}
+
+![SfImageEditor](text_images/multiline.png)
+
+## Text Rotation
+
+You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text, CustomView and None as shown in the following code snippet.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.RotatableElements = ImageEditorElements.Text;   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The default value for RotatableElements is `None`.
+
+You can rotate the text based on a particular angle using `Angle` property in `TextSettings` as shown in the following code snippet. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.AddText("Good morning", new TextSettings(){Angle = 45});    
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor](text_images/textrotation.png)
