@@ -34,7 +34,7 @@ This section demonstrates how to create an application using SfReportViewer cont
 4. You can initialize the SfReportViewer control in XAML as follows.
 
    ~~~~ xml
-   <Reports:SfReportViewer Name="ReportViewer"/>
+   <Reports:SfReportViewer x:Name="ReportViewer">
    ~~~~
 
 5. You can also create SfReportViewer control through code with the help of following namespace.  
@@ -62,6 +62,8 @@ This section demonstrates how to create an application using SfReportViewer cont
    * Syncfusion.SfShared.UWP
    * Syncfusion.SfTreeNavigator.UWP
    * Syncfusion.XlsIO.UWP
+
+   N> You can also add the SfReportViewer reference and its dependent assemblies from the nuget packages. Please refer the [link](https://help.syncfusion.com/uwp/control-dependencies) for control dependencies and nuget packages.
 
 ## Load RDLC reports
 
@@ -268,7 +270,17 @@ SfReportViewer control requires WebAPI service to process and render RDL/SSRS re
    * System.Net.Http.Formatting
    * System.Web.Http
    * System.Web.Http.WebHost
+   * Syncfusion.Linq.Base
+   * Syncfusion.EJ
+   * Syncfusion.EJ.MVC
    * Syncfusion.EJ.ReportViewer
+   * Syncfusion.Pdf.Base
+   * Syncfusion.XlsIO.Base
+   * Syncfusion.DocIO.Base
+   * Syncfusion.Shared.Wpf
+   * Syncfusion.Chart.Wpf
+   * Syncfusion.Gauge.Wpf
+   * Syncfusion.SfMaps.Wpf
 
    N> Refer the above assemblies from the installed location, C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Assemblies
    N> 
