@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfPivotClient control for UWP
-description: Overview of SfPivotClient control for UWP
+title: Overview of Pivot Client Control | UWP | Syncfusion
+description: The pivot client control is used to read and visualize the business information in tabular and graphical formats.
 platform: UWP
 control: SfPivotClient
 documentation: ug

@@ -388,6 +388,43 @@ The following code sample shows the usage of LabelOrientation property. The outp
 ![](Label-Support_images/Label-Support_img9.png)
 
 
+## Customizing label font
 
+The range slider control provides the `FontFamily`, `FontWeight` , `FontStyle` and `FontSize` properties to customize the value text and custom label text.
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<editors:SfRangeSlider x:Name="rangeSlider" Width="300" FontFamily="Times New Roman" FontSize="15" FontStyle="Normal" FontWeight="Bold" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Horizontal"/>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
+   rangeSlider.FontSize = 15;
+   rangeSlider.FontStyle = Windows.UI.Text.FontStyle.Normal;
+   rangeSlider.FontWeight = Windows.UI.Text.FontWeights.Bold;
+   rangeSlider.FontFamily = new FontFamily("Times New Roman");
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+   rangeSlider.FontSize = 15
+   rangeSlider.FontStyle = Windows.UI.Text.FontStyle.Normal
+   rangeSlider.FontWeight = Windows.UI.Text.FontWeights.Bold
+   rangeSlider.FontFamily = new FontFamily("Times New Roman")
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Label-Support_images/Label-Support_img10.png)
 
 
