@@ -39,9 +39,28 @@ The following code example demonstrates how to bind commands for applying charac
 <!-- Binds button to the ItalicCommand -->
 <Button Content="Italic" Command="{Binding ElementName=richTextBoxAdv, Path=ItalicCommand, Mode=TwoWay}" />
 
-
 {% endhighlight %}
 
+{% highlight c# %}
+/// <summary>
+/// Apply bold style for the selected contents of SfRichTextBoxAdv.
+/// </summary>
+public void Bold()
+{
+    // Executes bold command.
+    if (richTextBoxAdv.BoldCommand.CanExecute(null))
+        richTextBoxAdv.BoldCommand.Execute(null);
+}
+/// <summary>
+/// Apply itaic style for the selected contents of SfRichTextBoxAdv.
+/// </summary>
+public void Italic()
+{
+    // Executes copy command.
+    if (richTextBoxAdv.ItalicCommand.CanExecute(null))
+        richTextBoxAdv.ItalicCommand.Execute(null);
+}
+{% endhighlight %}
 {% endtabs %}
 
 ## List of available Commands
