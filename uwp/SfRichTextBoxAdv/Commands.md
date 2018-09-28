@@ -52,7 +52,7 @@ public void Bold()
         richTextBoxAdv.BoldCommand.Execute(null);
 }
 /// <summary>
-/// Apply itaic style for the selected contents of SfRichTextBoxAdv.
+/// Apply Italic style for the selected contents of SfRichTextBoxAdv.
 /// </summary>
 public void Italic()
 {
