@@ -330,7 +330,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DeleteColumnCommand</p>
 </td>
 <td>
-<p>Represents the command to delete the entire column of a table at current position.</p>
+<p>Represents the command that to delete the selected column of a table.</p>
 </td>
 <td>
 <p>NA</p>
@@ -352,7 +352,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DeleteRowCommand</p>
 </td>
 <td>
-<p>Represents the command that delete the entire row of the table at current position.</p>
+<p>Represents the command that delete the selected row of a table.</p>
 </td>
 <td>
 <p>NA</p>
@@ -363,7 +363,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DeleteTableCommand</p>
 </td>
 <td>
-<p>Represents the command that delete the entire table at current position.</p>
+<p>Represents the command that delete the selected table.</p>
 </td>
 <td>
 <p>NA</p>
