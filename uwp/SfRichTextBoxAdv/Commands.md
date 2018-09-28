@@ -360,7 +360,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>DeleteCommentCommand</p>
 </td>
 <td>
-<p>Represents the command that any comment at the current position be deleted.</p>
+<p>Represents the command that deletes the selected comment.</p>
 </td>
 <td>
 <p>NA</p>
@@ -447,7 +447,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>IgnoreAllSpellingErrorsCommand</p>
 </td>
 <td>
-<p>Represents the command that that all occurrences of any misspelled word at the current position be ignored.</p>
+<p>Represents the command that ignores all the occurrence of selected misspelled word.</p>
 </td>
 <td>
 <p>The misspelled word to be ignored.</p>
@@ -469,7 +469,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>InsertBreakCommand</p>
 </td>
 <td>
-<p>Represents the command that inserts a break at current position.</p>
+<p>Represents the command that inserts a break at selection.</p>
 </td>
 <td>
 <p>The break type to be inserted</p>
@@ -480,7 +480,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>InsertColumnCommand</p>
 </td>
 <td>
-<p>Represents the command that insert a column at current position.</p>
+<p>Represents the command that insert a column at selection.</p>
 </td>
 <td>
 <p>The `ColumnPlacement` value to insert column.</p>
@@ -491,7 +491,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>InsertHyperlinkCommand</p>
 </td>
 <td>
-<p>Represents the command that inserts a hyperlink at current position.</p>
+<p>Represents the command that inserts a hyperlink at selection.</p>
 </td>
 <td>
 <p>The hyperlink to be inserted.</p>
@@ -502,7 +502,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>InsertPictureCommand</p>
 </td>
 <td>
-<p>Represents the command that inserts a picture at current position.</p>
+<p>Represents the command that inserts a picture at selection.</p>
 </td>
 <td>
 <p>The picture to be inserted.</p>
@@ -513,7 +513,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>InsertRowCommand</p>
 </td>
 <td>
-<p>Represents the command that insert a row at current position in `SfRichTextBoxAdv` control.</p>
+<p>Represents the command that insert a row at selection. </p>
 </td>
 <td>
 <p>The `RowPlacement` value to insert row.</p>
@@ -524,7 +524,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>InsertTableCommand</p>
 </td>
 <td>
-<p>Represents the command that inserts a table at current position.</p>
+<p>Represents the command that inserts a table at selection.</p>
 </td>
 <td>
 <p>The row and column count to insert.</p>
@@ -601,7 +601,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 <p>NewCommentCommand</p>
 </td>
 <td>
-<p>Represents the command that adds a comment at the current position.</p>
+<p>Represents the command that adds a comment at the selection.</p>
 </td>
 <td>
 <p>NA</p>
