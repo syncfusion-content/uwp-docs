@@ -26,18 +26,18 @@ To explore those properties, see [DataSourceSettings](https://help.syncfusion.co
 
 <!-- Initializes the employee collection-->
 <local:Employees x:Key="employees">
-    <local:Employee Name="Steve" EmpId="1" ParentId="" Designation="CEO"/>
-    <local:Employee Name="Kevin" EmpId="2" ParentId="1" Designation="Manager"/>
-    <local:Employee Name="John" EmpId="3" ParentId="1" Designation="Manager"/>
-    <local:Employee Name="Raj" EmpId="4" ParentId="2" Designation="Team Lead"/>
-    <local:Employee Name="Will" EmpId="5" ParentId="2" Designation="S/w Developer"/>
-    <local:Employee Name="Sarah" EmpId="6" ParentId="3" Designation="TeamLead"/>
-    <local:Employee Name="Mike" EmpId="7" ParentId="3" Designation="Testing Engineer"/>
+    <local:Employee Name="Steve" EmployeeId="1" ParentId="" Designation="CEO"/>
+    <local:Employee Name="Kevin" EmployeeId="2" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="John" EmployeeId="3" ParentId="1" Designation="Manager"/>
+    <local:Employee Name="Raj" EmployeeId="4" ParentId="2" Designation="Team Lead"/>
+    <local:Employee Name="Will" EmployeeId="5" ParentId="2" Designation="S/w Developer"/>
+    <local:Employee Name="Sarah" EmployeeId="6" ParentId="3" Designation="TeamLead"/>
+    <local:Employee Name="Mike" EmployeeId="7" ParentId="3" Designation="Testing Engineer"/>
 </local:Employees>
 
 <!--Initializes the DataSourceSettings -->
 <syncfusion:DataSourceSettings x:Key="DataSourceSettings" DataSource="{StaticResource employees}"
-                               ParentId="ParentId" Id="EmpId" Root="1"/>
+                               ParentId="ParentId" Id="EmployeeId" Root="1"/>
                
 <!--Initializes the Layout-->                
 <syncfusion:DirectedTreeLayout x:Key="treeLayout" HorizontalSpacing="80" VerticalSpacing="50" 
