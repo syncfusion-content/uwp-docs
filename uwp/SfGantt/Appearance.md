@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance
-description: The following section describes the customization of Gantt chart items.
+description: The section describes about the visual customization of Gantt chart tasks.
 platform: uwp
 control: SfGantt
 documentation: ug
