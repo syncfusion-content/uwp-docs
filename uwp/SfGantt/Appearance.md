@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Appearance
+description: The following section describes the customization of Gantt chart items.
 platform: uwp
 control: SfGantt
 documentation: ug
