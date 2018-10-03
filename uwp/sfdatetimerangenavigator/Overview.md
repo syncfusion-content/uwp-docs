@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview 
-description: Overview
+title: Overview | SfDateTimeRangeNavigator | uwp | Syncfusion 
+description: What are the key features available in the Essential SfDateTimeRangeNavigator for UWP.
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started 
-description: Getting Started
+title: Getting Started | SfDateTimeRangeNavigator | uwp | Syncfusion 
+description: Explains the visual structure , steps to create a SfDateTimeRangeNavigator , configure the ItemsSource in UWP.
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
