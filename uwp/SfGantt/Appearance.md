@@ -1,3 +1,11 @@
+---
+layout: post
+title: Appearance
+platform: uwp
+control: SfGantt
+documentation: ug
+---
+
 # Appearance
 
 The Gantt control provides options to customize the look and feel of the task visual in the Gantt chart. 
