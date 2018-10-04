@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential UWP PDF viewer.
-description: Overview of Syncfusion Essential UWP PDF viewer.
+title: Overview| PDF Viewer | UWP | Syncfusion
+description: Overview of PDF viewer UWP provides a detailed description and provides the summary of the features supported.
 platform: uwp
 control: PDF viewer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfChart | uwp | Syncfusion
-description: overview
+description: What are the key features available in the Essential Chart for UWP.
 platform: uwp
 control: SfChart
 documentation: ug

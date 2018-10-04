@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Technical Indicators | SfChart | uwp | Syncfusion
-description: technical indicators
+description: How to enable and customize the technical indicator behavior in chart UWP.
 platform: uwp
 control: SfChart
 documentation: ug

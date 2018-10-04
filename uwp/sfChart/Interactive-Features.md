@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features | SfChart | uwp | Syncfusion
-description: interactive features
+description: Explains the interactive features such as Tooltip, TrackBall, Visual Data Editing, ZoomPan, Selection, resizing Scrollbar , CrossHair.
 platform: uwp
 control: SfChart
 documentation: ug

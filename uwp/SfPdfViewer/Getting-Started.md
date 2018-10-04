@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Essential UWP PDF viewer.
-description: Getting Started with Syncfusion Essential UWP PDF viewer.
+title: Getting Started | PDF viewer | UWP | Syncfusion
+description: Getting started section will guide through how to use the PDF viewer UWP control in the UWP application, step by step in MVVM pattern.
 platform: uwp
 control: PDF viewer
 documentation: ug

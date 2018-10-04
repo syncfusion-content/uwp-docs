@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series | SfChart | uwp | Syncfusion
-description: series
+description: Learn how to render different types of series in a chart.
 platform: uwp
 control: SfChart
 documentation: ug
