@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trendlines | SfChart | uwp | Syncfusion
-description: trendlines
+description: Explains the trendlines, types of trendlines , forecasting and trendlines customization. 
 platform: uwp
 control: SfChart
 documentation: ug

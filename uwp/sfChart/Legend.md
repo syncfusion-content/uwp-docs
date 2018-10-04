@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend | SfChart | uwp | Syncfusion
-description: legend
+description: How to configure the chart legend and customize the appearance of the legend Icons, labels, and ItemTemplate in UWP.
 platform: uwp
 control: SfChart
 documentation: ug
