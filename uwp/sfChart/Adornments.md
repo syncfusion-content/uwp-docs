@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adornments | SfChart | uwp | Syncfusion
-description: Learn how to add adornments , customizing markers in adornments, custom template, label format, adding connector lines, positioning the adornments.
+description: Learn how to add adornments , customizing markers, custom template, label format, adding connector lines, positioning the adornments.
 platform: uwp
 control: SfChart
 documentation: ug
