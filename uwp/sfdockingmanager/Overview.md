@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion SfDockingManager control for UWP
-description: Features overview of SfDockingManager control for UWP
+title: Overview of SfDockingManager control | UWP | Syncfusion
+description: Overview section of SfDockingManager control for UWP platform provides details about its essential features
 platform: uwp
 control: SfDockingManager
 documentation: ug

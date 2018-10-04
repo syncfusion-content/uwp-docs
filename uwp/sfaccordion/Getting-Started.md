@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with SfAccordion control for UWP
-description: A quick tour to initial users on SfAccordion control for UWP
+title: Getting Started of SfAccordion control | UWP | Syncfusion
+description: Getting started section provide details about how to use the SfAccordion control in the UWP application
 platform: uwp
 control: SfAccordion
 documentation: ug

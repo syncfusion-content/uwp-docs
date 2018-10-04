@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features of Syncfusion SfHubTile control for UWP
-description: Features of Syncfusion SfHubTile control for UWP
+title: Features of SfHubTile control | UWP | Syncfusion
+description: This section explains about how to use the SfHubTile control in the UWP application and its essential features 
 platform: uwp
 control: SfHubTile
 documentation: ug

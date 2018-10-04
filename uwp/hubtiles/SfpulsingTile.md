@@ -1,7 +1,7 @@
 ---
 layout: post
-title: overview of Syncfusion SfPulsingTile control for UWP
-description: overview of Syncfusion SfPulsingTile control for UWP
+title: Features of SfPulsingTile control | UWP | Syncfusion
+description: This section explains about how to use the SfPulsingTile control in the UWP application and its essential features
 platform: uwp
 control: SfPulsingTile
 documentation: ug

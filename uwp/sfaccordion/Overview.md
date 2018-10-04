@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfAccordion control for UWP
-description: Overview of SfAccordion control for UWP
+title: Overview of SfAccordion control | UWP | Syncfusion
+description: Overview section of SfAccordion control for UWP platform provides details about its essential features
 platform: uwp
 control: SfAccordion
 documentation: ug

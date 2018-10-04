@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfDatePicker control for UWP
-description: Explains about overview and Keyfeatures of SfDatePicker control for UWP
+title: Overview of SfDatePicker control | UWP | Syncfusion
+description: Overview section of SfDatePicker control for UWP platform provides details about its essential features
 platform: uwp
 control: SfDatePicker
 documentation: ug

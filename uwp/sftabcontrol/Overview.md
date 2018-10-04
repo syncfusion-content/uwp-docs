@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfTabControl control for UWP
-description: Overview of SfTabControl control for UWP
+title: Overview of SfTabControl control | UWP | Syncfusion
+description: Overview section of SfTabControl control for UWP platform provides details about its essential features
 platform: uwp
 control: SfTabControl
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion SfSplitMosaicTile control for UWP
-description: Overview of Syncfusion SfSplitMosaicTile control for UWP
+title: Features of SfSplitMosaicTile control | UWP | Syncfusion
+description: This section explains about how to use the SfSplitMosaicTile control in the UWP application and its essential features
 platform: uwp
 control: SfSplitMosaicTile
 documentation: ug

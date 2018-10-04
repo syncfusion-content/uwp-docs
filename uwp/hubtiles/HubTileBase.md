@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features of Syncfusion Hub Tile control for UWP 
-description: Features of Syncfusion Hub Tile control for UWP
+title: Features of Hub Tile control | UWP | Syncfusion
+description: This section provide details about basic functionalities of various tiles control available in UWP platform
 platform: uwp
 control: HubTileBase
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfTimePicker control for UWP
-description: Overview of SfTimePicker control for UWP
+title: Overview of SfTimePicker control | UWP | Syncfusion
+description: Overview section of SfTimePicker control for UWP platform provides details about its essential features
 platform: uwp
 control: SfTimePicker
 documentation: ug

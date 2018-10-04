@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion SfTileView control for UWP
-description: Overview of Syncfusion SfTileView control for UWP
+title: Overview of SfTileView control | UWP | Syncfusion
+description: Overview section of SfTileView control for UWP platform provides details about its essential features
 platform: uwp
 control: SfTileView
 documentation: ug

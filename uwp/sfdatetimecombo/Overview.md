@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfDateTimeCombo control for UWP
-description: Overview of SfDateTimeCombo control for UWP
+title: Overview of SfDateTimeCombo control | UWP | Syncfusion
+description: Overview section of SfDateTimeCombo control for UWP platform provides details about its essential features
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfRadialSlider control for UWP  
-description: Overview of SfRadialSlider control for UWP  
+title: Overview of SfRadialSlider control | UWP | Syncfusion  
+description: Overview section of SfRadialSlider control for UWP platform provides details about its essential features 
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
