@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axis | SfChart | uwp | Syncfusion
-description: axis
+description: Explains the types of axis, axis features, styling the header and labels, customizing the gridlines and ticklines. 
 platform: uwp
 control: SfChart
 documentation: ug
