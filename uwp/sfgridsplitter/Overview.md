@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfGridSplitter control | UWP | Syncfusion
-description: Overview section of SfGridSplitter control for UWP platform provides details about its essential features
+description: SfGridSplitter control allows user to split and resize the elements between rows and columns. It also provide support to preview the resized elements.
 platform: uwp
 control: SfGridSplitter
 documentation: ug

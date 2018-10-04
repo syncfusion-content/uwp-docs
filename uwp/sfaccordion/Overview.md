@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfAccordion control | UWP | Syncfusion
-description: Overview section of SfAccordion control for UWP platform provides details about its essential features
+description: SfAccordion control is a container control, it helps to expand and collapse the views from a stacked list of views.
 platform: uwp
 control: SfAccordion
 documentation: ug

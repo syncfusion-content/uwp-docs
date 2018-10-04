@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started of SfTileView control | UWP | Syncfusion
-description: Getting started section provide details about how to use the SfTileView control in the UWP application
+description: Getting started section provide details about how to use the SfTileView control in the UWP application, step by step in MVVM pattern.
 platform: uwp
 control: SfTileView
 documentation: ug
