@@ -1,9 +1,18 @@
+---
+layout: post
+title: Appearance
+description: The section describes about the visual customization of Gantt chart tasks.
+platform: uwp
+control: SfGantt
+documentation: ug
+---
+
 # Appearance
 
-The SfGantt control provides options to customize the look and feel of the task visual in the Gantt chart. 
+The Gantt control provides options to customize the look and feel of the task visual in the Gantt chart. 
 
-**Visual Customization**
-Color of parent taskbar, task bar, milestone and progress bar can be customized by using the following properties. 
+**Visual customization**
+The colors of parent taskbar, taskbar, milestone, and progress bar can be customized using the following properties:
 
 * [`ParentTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarBrushProperty.html) – Specifies the color for the parent taskbar.
 * [`ParentProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentProgressIndicatorBrushProperty.html) – Specifies the color for the parent progress bar.
@@ -11,7 +20,9 @@ Color of parent taskbar, task bar, milestone and progress bar can be customized 
 * [`TaskProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskProgressIndicatorBrushProperty.html) – Specifies the color for task progress bar.
 * [`MilestoneBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneBrushProperty.html) – Specifies the color for the milestone.
 
-The following code sample explains the visual customization of the task.
+The following code sample demonstrates how to customize the visual of a task.
+
+{% tabs %}
 
 {% highlight xaml %}
         <gantt:SfGantt x:Name="GanttControl" ItemsSource="{Binding TaskCollection}"
@@ -21,14 +32,19 @@ The following code sample explains the visual customization of the task.
                        TaskProgressIndicatorBrush="#FF90a84e"
                        MilestoneBrush="#999999">
         </gantt:SfGantt>
+
 {% endhighlight %}
+
+{% endtabs %}
 
 ![UWP Gantt chart with customized colors](Appearance_images/VisualCustomization.PNG)
 
-**Template Customization**
-You can also customize the template of the parent taskbar, taskbar and milestone by using the [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html), [`TaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarTemplateProperty.html) and [`MilestoneTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneTemplate.html) properties respectively.
+**Template customization**
+You can customize the templates of the parent taskbar, taskbar, and milestone using the [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html), [`TaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarTemplateProperty.html) and [`MilestoneTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneTemplate.html) properties, respectively.
 
-The following code sample illustrates the template customization.
+The following code sample demonstrates how to customize a template.
+
+{% tabs %}
 
 {% highlight xaml %}
     <Grid>
@@ -154,6 +170,11 @@ The following code sample illustrates the template customization.
                        MilestoneTemplate="{StaticResource MilestoneTemplate}">
         </gantt:SfGantt>
     </Grid>
+
 {% endhighlight %}
+
+{% endtabs %}
+
+N> The thumbs and ellipses will be visible only when when [`AllowEditing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowEditing.html) is true.
 
 ![UWP Gantt chart task customized with custom template](Appearance_images/TemplateCustomization.jpeg)
