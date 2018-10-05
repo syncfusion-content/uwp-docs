@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Area | SfChart | uwp | Syncfusion
-description: area
+description: Explains the chart area, customizing the area, placing the series side-by-side, serialization, chart events. 
 platform: uwp
 control: SfChart
 documentation: ug
