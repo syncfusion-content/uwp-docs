@@ -71,7 +71,7 @@ Dim _ribbon As New SfRibbon()
 
 Execute the above code to render the following output.
 
-![SfRibbon(Touch Ribbon) control for UWP](Getting-Started_images/Getting-Started_img1.jpeg)
+![SfRibbon control for UWP](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 ## Add Ribbon Tab

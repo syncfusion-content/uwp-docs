@@ -55,7 +55,7 @@ this.Content = maskededit;
 
 {% endtabs %}
 
-![Adding control manually in C#](Getting-Started_images/Getting-Started_img2.jpg)
+![Adding control manually](Getting-Started_images/Getting-Started_img2.jpg)
 
 ## Adding Mask to the control
 
