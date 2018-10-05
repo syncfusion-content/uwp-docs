@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfDockingManager control for UWP
-description: A quick tour to initial users on Syncfusion SfDockingManager control for UWP
+title: Getting Started of SfDockingManager control | UWP | Syncfusion
+description: Getting started section provide details about how to use the SfDockingManager control in the UWP application.
 platform: uwp
 control: SfDockingManager
 documentation: ug
@@ -82,7 +82,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-![](Getting-Started-images/Getting-Started-img1.jpeg)
+![Docking Manager displayed dock windows without header](Getting-Started-images/Getting-Started-img1.jpeg)
 
 
 ## Set Header for the Children
@@ -111,7 +111,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-![](Getting-Started-images/Getting-Started-img2.jpeg)
+![Dock windows with header in DockingManager](Getting-Started-images/Getting-Started-img2.jpeg)
 
 
 ## Set State for the Children
@@ -142,7 +142,7 @@ To Auto hide the “ToolBox” window, set its `DockState` property as `AutoHidd
 
 {% endtabs %}
 
-![](Getting-Started-images/Getting-Started-img4.jpeg)
+![Dock, float and document windows in Docking Manager](Getting-Started-images/Getting-Started-img4.jpeg)
 
 
 ## Set Sides for the Children
@@ -181,6 +181,6 @@ The `SideInDockedMode` property’s Tabbed option is used to tab a window on ano
 
 {% endtabs %}
 
-![](Getting-Started-images/Getting-Started-img5.jpeg)
+![Docked windows over another window in Docking Manager](Getting-Started-images/Getting-Started-img5.jpeg)
 
 

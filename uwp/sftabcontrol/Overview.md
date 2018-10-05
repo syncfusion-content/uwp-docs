@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfTabControl control for UWP
-description: Overview of SfTabControl control for UWP
+title: Overview of SfTabControl control | UWP | Syncfusion
+description: SfTabControl provides a tab-based navigation functionality to your application. It provides close button, tab placement and pinnable tabs, etc.,
 platform: uwp
 control: SfTabControl
 documentation: ug
