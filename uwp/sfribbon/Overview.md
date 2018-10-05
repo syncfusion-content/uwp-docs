@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfRibbon control for UWP
-description: overview of SfRibbon control for UWP
+description: An overview about SfRibbon control for UWP which allows the user to implement Touch based Ribbon layout and functionality
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
@@ -17,7 +17,7 @@ SfRibbon allows the user to implement Touch based Ribbon layout and functionalit
 * Several Ribbon controls are provided with three size forms Extra-Small, Small and Large.
 
 
-![](Overview_images/Overview_img1.png)
+![SfRibbon control](Overview_images/Overview_img1.png)
 
 
 

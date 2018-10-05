@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview| SfMaskedEdit | UWP | Syncfusion
-description: overview
+title: Overview of Syncfusion SfMaskedEdit control for UWP
+description: Overview of Syncfusion SfMaskedEdit control which restricts the input based on the mask with its features like Validation, Watermark etc
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 The Masked text box is an advanced version of the Entry control that restricts your input to certain types of characters, text, and numbers using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
 
 
-![](Overview_images/Overview_img1.jpg)
+![Overview of Syncfusion SfMaskedEdit](Overview_images/Overview_img1.jpg)
 
 
 ## Key features

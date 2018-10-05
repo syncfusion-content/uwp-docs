@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started| SfMaskedEdit | UWP | Syncfusion
-description: getting started
+title: Getting Started with SfMaskedEdit for UWP
+description: Guidelines to create Syncfusion SfMaskedEdit control for Universal Windows Platform project in Visual Studio 
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
@@ -23,7 +23,7 @@ Create a new WPF application in the Visual Studio and follow the steps given.
 
 1. Drag and drop the `SfMaskedEdit` control from the toolbox to the designer. It generates the `SfMaskedEdit` as shown:
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Creating SfMaskedEdit control](Getting-Started_images/Getting-Started_img1.png)
 
 ## Adding control manually in XAML
 
@@ -55,7 +55,7 @@ this.Content = maskededit;
 
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.jpg)
+![Adding control manually in C#](Getting-Started_images/Getting-Started_img2.jpg)
 
 ## Adding Mask to the control
 
