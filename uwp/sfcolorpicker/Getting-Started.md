@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with SfColorPicker control for UWP
-description: Getting Started with SfColorPicker control for UWP
+description: Guidelines to create Syncfusion SfColorPicker control for Universal Windows Platform project in Visual Studio 
 platform: uwp
 control: SfColorPicker
 documentation: ug
@@ -89,4 +89,4 @@ Dim colorPicker As New SfColorPicker()
 
 {% endtabs %}
 
-![](Overview-images/Overview-img1.jpeg)
+![Overview of SfColorPicker control](Overview-images/Overview-img1.jpeg)

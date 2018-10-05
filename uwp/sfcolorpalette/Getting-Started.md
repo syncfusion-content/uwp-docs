@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with SfColorPalette control for UWP
-description: Getting Started with SfColorPalette control for UWP
+description: Guidelines to create Syncfusion SfColorPalette control for Universal Windows Platform project in Visual Studio 
 platform: uwp
 control: SfColorPalette
 documentation: ug
@@ -87,4 +87,4 @@ Dim colorPalette As New SfColorPalette()
 
 {% endtabs %}
 
-![](SfColorPalette-images/SfColorPalette-img1.jpeg)
+![SfColorPalette control](SfColorPalette-images/SfColorPalette-img1.jpeg)
