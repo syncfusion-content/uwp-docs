@@ -185,7 +185,7 @@ accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
 
 {% endtabs %}
 
-![](Overview-images/GettingStarted_image1.png)
+![](Overview-images/Setting-header-for-accordion-item.png)
 
 ## Applying Template for Item Header
 
@@ -527,4 +527,4 @@ FontSize="12"/>
 
 {% endtabs %}
 
-![](Overview-images/GettingStarted-image2.png)
+![](Overview-images/Setting-content-for-accordion-item.png)
