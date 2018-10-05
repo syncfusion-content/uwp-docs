@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started documentation of SfTimePicker control  for UWP
-description: Getting Started documentation of SfTimePicker control  for UWP
+title: Getting Started of SfTimePicker control | UWP | Syncfusion
+description: Getting started section provide details about how to use the SfTimePicker control in the UWP application.
 platform: uwp
 control: SfTimePicker
 documentation: ug

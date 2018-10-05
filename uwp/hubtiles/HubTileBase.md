@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features of Syncfusion Hub Tile control for UWP 
-description: Features of Syncfusion Hub Tile control for UWP
+title: Features of Hub Tile control | UWP | Syncfusion
+description: HubTileBase provide some basic functionalities that are available in the live tiles of Windows 8 start screen.
 platform: uwp
 control: HubTileBase
 documentation: ug
@@ -52,7 +52,7 @@ hubTile.RotationDepth = 40.0
 
 {% endtabs %}
 
-![](HubTileBase-images/HubTileBase-img1.jpeg)
+![Hubtile slide at right side](HubTileBase-images/HubTileBase-img1.jpeg)
 
 
 ### Scale Depth
@@ -91,7 +91,7 @@ hubTile.ScaleDepth = 1.2
 
 {% endtabs %}
 
-![](HubTileBase-images/HubTileBase-img2.jpeg)
+![Hubtile Zoom-out by scaling](HubTileBase-images/HubTileBase-img2.jpeg)
 
 ### Tile press duration
 
@@ -519,10 +519,7 @@ hubTile.AccentBrush = New SolidColorBrush(Windows.UI.Colors.CornflowerBlue)
 
 {% endtabs %}
 
-![](HubTileBase-images/HubTileBase-img3.jpeg)
-
-
-![](HubTileBase-images/HubTileBase-img4.jpeg)
+![Hubtile background customized](HubTileBase-images/HubTileBase-img3.jpeg)
 
 
 ### TitleStyle
@@ -551,6 +548,6 @@ Title text is customized with `TitleStyle` property. It can be set as follows:
 
 {% endtabs %}
 
-![](HubTileBase-images/HubTileBase-img5.jpeg)
+![Hubtile title drawn in white color](HubTileBase-images/HubTileBase-img5.jpeg)
 
 
