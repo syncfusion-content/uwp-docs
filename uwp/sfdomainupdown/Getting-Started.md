@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with SfDomainUpDown control for UWP
-description:  A quick tour to initial users on SfDomainUpDown control for UWP
+description:  A quick tour to initial users on SfDomainUpDown control for for Universal Windows Platform project in Visual Studio 
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
