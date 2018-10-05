@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features of Syncfusion Hub Tile control for UWP 
-description: Features of Syncfusion Hub Tile control for UWP
+title: Features of Hub Tile control | UWP | Syncfusion
+description: HubTileBase provide some basic functionalities that are available in the live tiles of Windows 8 start screen.
 platform: uwp
 control: HubTileBase
 documentation: ug

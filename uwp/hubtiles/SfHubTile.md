@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features of Syncfusion SfHubTile control for UWP
-description: Features of Syncfusion SfHubTile control for UWP
+title: Features of SfHubTile control | UWP | Syncfusion
+description: SfHubTile control provides live tile updates and notifications to your application like live tile feature in Windows 10. 
 platform: uwp
 control: SfHubTile
 documentation: ug

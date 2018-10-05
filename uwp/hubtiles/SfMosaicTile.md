@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion SfMosaicTile control for UWP
-description: Overview of Syncfusion SfMosaicTile control for UWP
+title: Features of SfMosaicTile control | UWP | Syncfusion
+description: SfMosaicTile control provides a way to display images randomly with transition effect similar to people tile in Windows Phone home screen.
 platform: uwp
 control: SfMosaicTile
 documentation: ug

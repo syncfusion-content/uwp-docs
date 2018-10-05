@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfDockingManager control for UWP
-description: A quick tour to initial users on Syncfusion SfDockingManager control for UWP
+title: Getting Started of SfDockingManager control | UWP | Syncfusion
+description: Getting started section provide details about how to use the SfDockingManager control in the UWP application.
 platform: uwp
 control: SfDockingManager
 documentation: ug
@@ -143,6 +143,7 @@ To Auto hide the “ToolBox” window, set its `DockState` property as `AutoHidd
 {% endtabs %}
 
 ![Dock, float and document windows in Docking Manager](Getting-Started-images/Getting-Started-img4.jpeg)
+
 
 ## Set Sides for the Children
 

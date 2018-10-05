@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with SfTabControl control for UWP
-description: A quick tour to initial users on SfTabControl control for UWP
+title: Getting Started of SfTabControl control | UWP | Syncfusion
+description: Getting started section provide details about how to use the SfTabControl control in the UWP application, step by step in MVVM pattern.
 platform: uwp
 control: SfTabControl
 documentation: ug

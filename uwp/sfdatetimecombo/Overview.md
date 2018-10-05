@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfDateTimeCombo control for UWP
-description: Overview of SfDateTimeCombo control for UWP
+title: Overview of SfDateTimeCombo control | UWP | Syncfusion
+description: SfDateTimeCombo control displays the date or time in a separate DateTimeItem drop-down list which can be edited.
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug
