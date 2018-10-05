@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Getting Started documentation of the SfDropDownButton control for UWP
-description: Getting Started documentation of the SfDropDownButton control for UWP
+description: Getting Started documentation to create Syncfusion SfDropDownButton control for Universal Windows Platform project in Visual Studio 
+
 platform: uwp
 control:  SfDropDownButton
 documentation: ug
@@ -85,6 +86,6 @@ Dim dropDownButton As New SfDropDownButton()
 
 This will create an empty SfDropDownButton control.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![SfDropDownButton control](Getting-Started_images/Getting-Started_img1.jpeg)
 
 

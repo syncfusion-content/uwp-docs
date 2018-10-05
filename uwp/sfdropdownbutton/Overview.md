@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfDropDownButton control for UWP
-description: Overview of SfDropDownButton control for UWP
+description: Overview of SfDropDownButton control for UWP which used as a content holder that shows content in a drop down popup on demand
 platform: uwp
 control:  SfDropDownButton
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 SfDropDownButton is used as a content holder that shows content in a drop down popup on demand. 
 
-![](Overview_images/Overview_img1.png)
+![Overview of SfDropDownButton](Overview_images/Overview_img1.png)
 
 
 ## Key Features

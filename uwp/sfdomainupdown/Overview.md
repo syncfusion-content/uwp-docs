@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfDomainUpDown control for UWP
-description: Overview of SfDomainUpDown control for UWP
+description: Overview of SfDomainUpDown control for UWP which spins the collection of objects up or down and its key features
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
@@ -13,7 +13,7 @@ SfDomainUpDown is an up-down control which spins the collection of objects up or
 
 
 
-![](Overview_images/Overview_img1.png)
+![Overview of SfDomainUpDown](Overview_images/Overview_img1.png)
 
 
 
