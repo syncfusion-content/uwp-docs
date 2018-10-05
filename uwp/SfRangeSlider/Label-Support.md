@@ -397,7 +397,21 @@ The range slider control provides the `FontFamily`, `FontWeight` , `FontStyle` a
 
 {% highlight xaml %}
 
-<editors:SfRangeSlider x:Name="rangeSlider" Width="300" FontFamily="Times New Roman" FontSize="15" FontStyle="Normal" FontWeight="Bold" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Horizontal"/>
+<Page
+    x:Class="RangeSlider_Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RangeSlider_Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <input:SfRangeSlider x:Name="rangeSlider"  Width="300" HorizontalAlignment="Center"  VerticalAlignment="Center" TickFrequency="20" TickPlacement="BottomRight"  LabelPlacement="BottomRight" Orientation="Horizontal"
+         FontFamily="Times New Roman" FontSize="15" FontStyle="Normal" FontWeight="Bold" ShowValueLabels="True" ValuePlacement="BottomRight"/>
+    </Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -407,19 +421,88 @@ The range slider control provides the `FontFamily`, `FontWeight` , `FontStyle` a
 
 {% highlight c# %}
 
-   rangeSlider.FontSize = 15;
-   rangeSlider.FontStyle = Windows.UI.Text.FontStyle.Normal;
-   rangeSlider.FontWeight = Windows.UI.Text.FontWeights.Bold;
-   rangeSlider.FontFamily = new FontFamily("Times New Roman");
+using Syncfusion.UI.Xaml.Controls.Input;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Navigation;
+
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+
+namespace RangeSlider_Sample
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class MainPage : Page
+    {
+        public MainPage()
+        {
+            this.InitializeComponent();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                TickFrequency = 20,
+                TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.BottomRight,
+                LabelPlacement = LabelPlacement.BottomRight,
+                Orientation = Orientation.Horizontal,
+                FontFamily = new FontFamily("Times New Roman"),
+                FontSize = 15,
+                FontStyle = Windows.UI.Text.FontStyle.Normal,
+                FontWeight = Windows.UI.Text.FontWeights.Bold,
+                ShowValueLabels = true,
+                ValuePlacement = ValuePlacement.BottomRight
+            };
+            this.Content = rangeSlider;
+        }
+    }
+}
+
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-   rangeSlider.FontSize = 15
-   rangeSlider.FontStyle = Windows.UI.Text.FontStyle.Normal
-   rangeSlider.FontWeight = Windows.UI.Text.FontWeights.Bold
-   rangeSlider.FontFamily = new FontFamily("Times New Roman")
+' The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+
+Imports Syncfusion.UI.Xaml.Controls.Input
+''' <summary>
+''' An empty page that can be used on its own or navigated to within a Frame.
+''' </summary>
+Public NotInheritable Class MainPage
+    Inherits Page
+    Public Sub New()
+        InitializeComponent()
+        Dim rangeSlider As New SfRangeSlider()
+        rangeSlider.Width = 300
+        rangeSlider.HorizontalAlignment = HorizontalAlignment.Center
+        rangeSlider.VerticalAlignment = VerticalAlignment.Center
+        rangeSlider.TickFrequency = 20
+        rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.BottomRight
+        rangeSlider.LabelPlacement = LabelPlacement.BottomRight
+        rangeSlider.Orientation = Orientation.Horizontal
+        rangeSlider.ShowValueLabels = True
+        rangeSlider.ValuePlacement = ValuePlacement.BottomRight
+        rangeSlider.FontSize = 15
+        rangeSlider.FontStyle = Windows.UI.Text.FontStyle.Normal
+        rangeSlider.FontWeight = Windows.UI.Text.FontWeights.Bold
+        rangeSlider.FontFamily = New FontFamily("Times New Roman")
+        Me.Content = rangeSlider
+    End Sub
+End Class
+
 
 {% endhighlight %}
 
