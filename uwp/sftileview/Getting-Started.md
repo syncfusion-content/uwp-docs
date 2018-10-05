@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started of SfTileView control | UWP | Syncfusion
-description: Getting started section provide details about how to use the SfTileView control in the UWP application, step by step in MVVM pattern.
+title: Getting Started with SfTileView control for UWP
+description: Getting Started with SfTileView control for UWP
 platform: uwp
 control: SfTileView
 documentation: ug
@@ -455,4 +455,4 @@ void Restore(object sender, TappedRoutedEventArgs e)
 
 {% endtabs %}
 
-![](Overview-images/Overview-img1.jpeg)
+![Selected content maximized in TileView with minimized items docked at right side](Overview-images/Overview-img1.jpeg)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started of SfAccordion control | UWP | Syncfusion
-description: Getting started section provide details about how to use the SfAccordion control in the UWP application.
+title: Getting Started with SfAccordion control for UWP
+description: A quick tour to initial users on SfAccordion control for UWP
 platform: uwp
 control: SfAccordion
 documentation: ug
@@ -185,7 +185,7 @@ accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
 
 {% endtabs %}
 
-![](Overview-images/Setting-header-for-accordion-item.png)
+![Accordion items displayed in collapsed state with header](Overview-images/GettingStarted_image1.png)
 
 ## Applying Template for Item Header
 
@@ -527,4 +527,4 @@ FontSize="12"/>
 
 {% endtabs %}
 
-![](Overview-images/Setting-content-for-accordion-item.png)
+![Single item expanded in Accordion and displayed content under corresponding header](Overview-images/GettingStarted-image2.png)

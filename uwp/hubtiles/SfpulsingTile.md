@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features of SfPulsingTile control | UWP | Syncfusion
-description: SfPulsingTile control allows user to create a tile similar to Music and Video hub tile in Windows Phone.
+title: overview of Syncfusion SfPulsingTile control for UWP
+description: overview of Syncfusion SfPulsingTile control for UWP
 platform: uwp
 control: SfPulsingTile
 documentation: ug
@@ -116,7 +116,7 @@ Set the image as Content of `SfPulsingTile` as given below:
 
 {% endtabs %}
 
-![](SfpulsingTile-images/SfpulsingTile-img1.jpeg)
+![Pulsing tile displayed bitmap](SfpulsingTile-images/SfpulsingTile-img1.jpeg)
 
 ### Applying zoom animation
 
@@ -172,7 +172,7 @@ pulsingTile.Content = New Image() With {
 
 {% endtabs %}
 
-![](SfpulsingTile-images/SfpulsingTile-img1.jpeg)
+![Pulsing tile zoom displayed bitmap content](SfpulsingTile-images/SfpulsingTile-img1.jpeg)
 
 ## Configuring the tile
 
@@ -208,7 +208,7 @@ pulsingTile.Header = "Pulsing Tile"
 
 {% endtabs %}
 
-![](SfpulsingTile-images/SfpulsingTile-img4.jpeg)
+![Pulsing tile displayed header](SfpulsingTile-images/SfpulsingTile-img4.jpeg)
 
 ### Setting the content
 
@@ -258,7 +258,7 @@ pulsingTile.Content = New Image() With {
 
 {% endtabs %}
 
-![](SfpulsingTile-images/SfpulsingTile-img5.jpeg)
+![Pulsing tile displayed bitmap content](SfpulsingTile-images/SfpulsingTile-img5.jpeg)
 
 ## Customizing animation
 

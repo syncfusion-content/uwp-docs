@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features of SfSplitMosaicTile control | UWP | Syncfusion
-description: SfSplitMosaicTile control provides a way to integrate a tile similar to contacts group tile in Windows Phone.
+title: Overview of Syncfusion SfSplitMosaicTile control for UWP
+description: Overview of Syncfusion SfSplitMosaicTile control for UWP
 platform: uwp
 control: SfSplitMosaicTile
 documentation: ug
@@ -109,7 +109,7 @@ Store the images in project and set the properties `Header` and `ImageList` as g
 
 {% endtabs %}
 
-![](SfSplitMosaicTile-images/SfSplitMosaicTile-img1.jpeg)
+![Pulsing tile displayed bitmap](SfSplitMosaicTile-images/SfSplitMosaicTile-img1.jpeg)
 
 ## Configuring the tile
 
@@ -145,7 +145,7 @@ splitMosaicTile.Header = "Mosaic Tile"
 
 {% endtabs %}
 
-![](SfSplitMosaicTile-images/SfSplitMosaicTile-img4.jpeg)
+![Pulsing tile scaled the bitmap content](SfSplitMosaicTile-images/SfSplitMosaicTile-img4.jpeg)
 
 ## Adding image collection
 
@@ -334,7 +334,7 @@ End Sub
 
 {% endtabs %}
 
-![](SfSplitMosaicTile-images/SfSplitMosaicTile-img5.jpeg)
+![Pulsing tile displayed header](SfSplitMosaicTile-images/SfSplitMosaicTile-img5.jpeg)
 
 ## Checking image existence
 
