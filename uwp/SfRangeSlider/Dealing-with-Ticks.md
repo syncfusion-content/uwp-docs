@@ -41,7 +41,7 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 {% endtabs %}
 
-![Tick Frequency ](Ticks_images/TickFrequency.png)
+![Tick Frequency](Ticks_images/TickFrequency.png)
 
 N>  When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
 
