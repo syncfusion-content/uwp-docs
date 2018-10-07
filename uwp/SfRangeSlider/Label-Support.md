@@ -121,7 +121,7 @@ In the following sample, we have bound the CustomCollection property to CustomLa
 
 
 
-![](Label-Support_images/Label-Support_img1.png)
+![CustomLabels](Label-Support_images/CustomLabels.png)
 
 
 ## ShowCustomLabels
@@ -155,7 +155,7 @@ The default value of ShowCustomLabels is false. When set to true, it will displa
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img2.png)
+![ShowCustomLabels](Label-Support_images/ShowCustomLabels.png)
 
 ## LabelPlacement
 
@@ -192,7 +192,7 @@ The following code sample shows the usage of the LabelPlacement property. The ou
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img3.png)
+![LabelPlacement BottomRight](Label-Support_images/LabelPlacementBottomRight.png)
 
 {% tabs %}
 
@@ -222,7 +222,7 @@ CustomLabels="{Binding CustomCollection}" LabelPlacement="TopLeft"/>
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img4.png)
+![LabelPlacement TopLeft](Label-Support_images/LabelPlacementTopLeft.png)
 
 ## ShowValueLabels
 
@@ -254,7 +254,7 @@ The default value of the ShowValueLabels property is false. When set to true, it
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img5.png)
+![ShowValueLabels](Label-Support_images/ShowValueLabels.png)
 
 ## ValuePlacement
 
@@ -291,7 +291,7 @@ The following code sample shows the usage of ValuePlacement property. The output
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img6.png)
+![ValuePlacement TopLeft](Label-Support_images/ValuePlacementTopLeft.png)
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ The following code sample shows the usage of ValuePlacement property. The output
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img7.png)
+![ValuePlacement BottomRight](Label-Support_images/ValuePlacementBottomRight.png)
 
 ## LabelOrientation
 
@@ -356,7 +356,7 @@ The following code sample shows the usage of LabelOrientation property. The outp
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img8.png)
+![LabelOrientation Horizontal](Label-Support_images/LabelOrientationHorizontal.png)
 
 {% tabs %}
 
@@ -385,7 +385,7 @@ The following code sample shows the usage of LabelOrientation property. The outp
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img9.png)
+![LabelOrientation Vertical](Label-Support_images/LabelOrientationVertical.png)
 
 
 ## Customizing label font
@@ -422,20 +422,9 @@ The range slider control provides the `FontFamily`, `FontWeight` , `FontStyle` a
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Controls.Input;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -508,6 +497,6 @@ End Class
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img10.png)
+![Customizing Label Font](Label-Support_images/CustomizingLabelFont.png)
 
 

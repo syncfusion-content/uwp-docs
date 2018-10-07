@@ -41,7 +41,7 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img1.png)
+![Tick Frequency ](Ticks_images/TickFrequency.png)
 
 N>  When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
 
@@ -130,7 +130,7 @@ TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img3.png)
+![TickPlacement BottomRight](Ticks_images/TickPlacementBottomRight.png)
 
 N>  In Vertical Orientation, this option will place the ticks to right side. 
 
@@ -164,7 +164,7 @@ Tick marks placed either above the track in horizontal orientation or left of th
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img5.png)
+![TickPlacement TopLeft](Ticks_images/TickPlacementTopLeft.png)
 
 
 N>  In Vertical Orientation, this option will place the ticks to left side.
@@ -199,7 +199,7 @@ Tick marks placed on both sides of the track either in horizontal or vertical or
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img7.png)
+![TickPlacement Outside](Ticks_images/TickPlacementOutside.png)
 
 ### Inline 
 
@@ -231,7 +231,7 @@ Ticks are placed inside the track.
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img8.png)
+![TickPlacement Inline](Ticks_images/TickPlacementInline.png)
 
 ### None 
 
@@ -263,7 +263,7 @@ Tick marks not appear.
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img9.png)
+![TickPlacement None](Ticks_images/TickPlacementNone.png)
 
 ## Customizing tick color
 
@@ -299,21 +299,10 @@ The range slider control provides the `TickBarFill` property to customize the co
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Controls.Input;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -381,7 +370,7 @@ End Class
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img10.png)
+![Customizing Tick Color](Ticks_images/CustomizingTickColor.png)
 
 
 
