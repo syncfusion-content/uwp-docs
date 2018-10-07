@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio UWP products
+title: Assembly installation and deployment | UWP | Syncfusion
 description: Learn how to install and deploy the Syncfusion UWP component
 platform: uwp
 control: Installation and Deployment
