@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Sparkline
-description: Overview of Sparkline
+description: What are the key features available in sparkline.
 platform: uwp
 control: SfSparkline
 documentation: ug
