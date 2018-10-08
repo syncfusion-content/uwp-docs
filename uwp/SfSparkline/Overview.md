@@ -6,7 +6,7 @@ platform: uwp
 control: SfSparkline
 documentation: ug
 ---
-## Overview
+# Overview
 
 A sparkline is a very small chart, typically drawn without axes or coordinates. It presents the general shape of data’s in a simple and highly condensed way.
 
