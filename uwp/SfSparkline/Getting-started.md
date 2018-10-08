@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started for Sparkline
-description: A quick tour to initial users on Syncfusion SfSparkline control for UWP Platform
+description: A quick tour to initial users on Syncfusion Sparkline control for UWP Platform
 platform: uwp
 control: SfSparkline
 documentation: ug
