@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started for Sparkline
-description: Getting started for Sparkline
+description: A quick tour to initial users on Syncfusion Sparkline control for UWP Platform
 platform: uwp
 control: SfSparkline
 documentation: ug
@@ -48,7 +48,7 @@ Now the Syncfusion.SfChart.UWP reference is added to the application references 
 
 ![Project Solution Window contains SfChart reference](Getting-started_images/GettingStarted_img2.png)
 
-![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts" in MainWindow](Getting-started_images/GettingStarted_img3.jpeg)
+![UWP Sparkline Getting Started Image](Getting-started_images/GettingStarted_img3.jpeg)
 
 ### Initialize the Sparkline
 
