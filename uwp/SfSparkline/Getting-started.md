@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started for Sparkline
-description: How to create a sparkline, initialize view model, populate data in sparkline.
+description: This section explains the key features and quick overview about Syncfusion SfSparkline control for UWP.
 platform: uwp
 control: SfSparkline
 documentation: ug
