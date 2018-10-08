@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfRating control for UWP
-description: Overview of SfRating control for UWP
+description: This section provides a overview on features of SfRating control for UWP.
 platform: uwp
 control: SfRating
 documentation: ug

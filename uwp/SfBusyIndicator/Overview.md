@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfBusyIndicator control for UWP
-description: Overview of SfBusyIndicator control for UWP
+description: The following section explains the Busy Indicator control and the features.
 platform: uwp
 control: SfBusyIndicator
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with SfRating control for UWP
-description: A quick tour to initial users on SfRating control for UWP
+description: This section provides a quick tour to initial users on SfRating control for UWP.
 platform: uwp
 control: SfRating
 documentation: ug

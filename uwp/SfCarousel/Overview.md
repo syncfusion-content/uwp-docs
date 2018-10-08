@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfCarousel control for UWP 
-description: Overview of SfCarousel control for UWP
+description: The following section explains the carousel control and its features.
 platform: uwp
 control: SfCarousel
 documentation: ug

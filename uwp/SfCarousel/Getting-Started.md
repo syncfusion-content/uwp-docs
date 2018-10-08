@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with SfCarousel control for UWP 
-description: Getting Started with SfCarousel control for UWP
+description: The following section provides an assistance to create a carousel in application and to configure it.
 platform: uwp
 control: SfCarousel
 documentation: ug

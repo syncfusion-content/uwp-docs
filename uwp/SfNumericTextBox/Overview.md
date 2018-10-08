@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfNumericTextBox control for UWP
-description: Features overview of SfNumericTextBox control for UWP
+description: This section explains the features overview of SfNumericTextBox control for UWP.
 platform: uwp
 control: SfNumeric TextBox
 documentation: ug

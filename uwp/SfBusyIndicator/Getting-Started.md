@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with SfBusyIndicator control for UWP
-description: Getting Started with SfBusyIndicator control for UWP
+description: The following section provides an assistance to create a Busy Indicator in application and to configure it.
 platform: uwp
 control: SfBusyIndicator
 documentation: ug
