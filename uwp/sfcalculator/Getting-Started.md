@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Getting Started with SfCalculator control for UWP 
-description:  Getting Started with SfCalculator control for UWP
+description: Guidelines to create Syncfusion SfCalculator control for Universal Windows Platform project in Visual Studio 
 platform: uwp
 control: SfCalculator
 documentation: ug
@@ -61,4 +61,4 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 Above code example creates the calculator as follows and perform mathematical arithmetic operations using the provided buttons:
 
-![](SfCalculator-images/SfCalculator-img1.jpeg)
+![SfCalculator](SfCalculator-images/SfCalculator-img1.jpeg)

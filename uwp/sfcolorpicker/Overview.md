@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfColorPicker control for UWP
-description: Overview of SfColorPicker control for UWP
+description: Overview of SfColorPicker control for UWP which is used to pick a color using touch navigation and allows to modify RGB values 
 platform: uwp
 control: SfColorPicker
 documentation: ug

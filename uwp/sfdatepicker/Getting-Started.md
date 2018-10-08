@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started documentation of SfDatePicker control for UWP
-description: Getting Started documentation of SfDatePicker control for UWP
+title: Getting Started of SfDatePicker control | UWP | Syncfusion
+description: Getting started section provide details about how to use the SfDatePicker control in the UWP application.
 platform: uwp
 control: SfDatePicker
 documentation: ug
