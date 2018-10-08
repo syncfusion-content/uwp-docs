@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Sparkline
-description: What are the key features available in sparkline.
+description: This section explains the key features and quick overview about Syncfusion SfSparkline control for UWP.
 platform: uwp
 control: SfSparkline
 documentation: ug
