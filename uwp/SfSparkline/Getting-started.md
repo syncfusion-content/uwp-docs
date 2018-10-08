@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started for Sparkline
-description: Getting started for Sparkline
+description: How to create a sparkline, initialize view model, populate data in sparkline.
 platform: uwp
 control: SfSparkline
 documentation: ug
