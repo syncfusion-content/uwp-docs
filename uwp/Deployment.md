@@ -13,7 +13,7 @@ documentation: ug
 
 Copying assemblies to local folder is supported by Syncfusion components. It can be achieved by setting the assembly’s Copy Local property to true, so that it can be copied to Bin\Release, Bin\Debug folders. The files .exe, .dll, .xml, .pri, rd.xml, .xaml  are copied to client machines.
 
-![](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)
+![UWP assembly Installation and deployment](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)
 
 
 ## Installed Location
