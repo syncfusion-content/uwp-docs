@@ -9,9 +9,9 @@ documentation: ug
 
 # Hiding Grand Totals
 
-You can hide the grand total values of pivot grid control by setting the `ShowGrandTotals` property to false. By default, the pivot grid displays the grand total values of both rows and columns.
+You can hide the grand total values of the pivot grid control by setting the `ShowGrandTotals` property to false. By default, the pivot grid displays the grand total values of both rows and columns.
 
-Refer to the below code sample to hide the grand total values in the pivot grid control.
+Refer to the following code sample to hide the grand total values of the pivot grid control.
 
 {% tabs %}
 
