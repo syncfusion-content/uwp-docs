@@ -50,7 +50,7 @@ rating.Value = 2
 
 `PreviewValue` property is used to get the pointer over value in SfRating control, and this value is displayed as tool tip content.
 
-![](Dealing-with-Value-and-PreviewValue-images/Dealing-with-Value-and-PreviewValue-img2.jpeg)
+![Rating PreviewValue view](Dealing-with-Value-and-PreviewValue-images/Dealing-with-Value-and-PreviewValue-img2.jpeg)
 
 
 ## ValueChanged event
