@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion SfDockingManager control for UWP
-description: Features overview of SfDockingManager control for UWP
+title: Overview of SfDockingManager control | UWP | Syncfusion
+description: SfDockingManager control provides an interface to create Visual Studio-like dockable windows, and provides floating panels, autohide, and tabbed documents.
 platform: uwp
 control: SfDockingManager
 documentation: ug

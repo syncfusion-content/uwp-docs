@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion SfTileView control for UWP
-description: Overview of Syncfusion SfTileView control for UWP
+title: Overview of SfTileView control | UWP | Syncfusion
+description: SfTileView control displays the items in tiles with supports to drag, reorder, minimize and maximize tiles.
 platform: uwp
 control: SfTileView
 documentation: ug

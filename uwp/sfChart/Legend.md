@@ -9,8 +9,8 @@ documentation: ug
 
 # Legend
 
-[`Legend`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) provides metadata which helps for identifying elements in chart like [`chart series`](http://help.syncfusion.com/uwp/sfchart/series), 
-[`technical indicators`](http://help.syncfusion.com/uwp/sfchart/technical-indicators), and [`trendlines`](http://help.syncfusion.com/uwp/sfchart/trendlines). 
+[`Legend`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) provides metadata which helps for identifying elements in chart like [`chart series`](https://help.syncfusion.com/uwp/sfchart/series), 
+[`technical indicators`](https://help.syncfusion.com/uwp/sfchart/technical-indicators), and [`trendlines`](https://help.syncfusion.com/uwp/sfchart/trendlines). 
 You can define the legend using the following code example.
 
 {% tabs %}

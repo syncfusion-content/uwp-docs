@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfRadialSlider control for UWP  
-description: Overview of SfRadialSlider control for UWP  
+title: Overview of SfRadialSlider control | UWP | Syncfusion  
+description: SfRadialSlider control provides an intuitive touch interface to select numeric values in a circular display.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The SfRadialSlider provides an optimized interface for selecting a numeric value using touch interface.
 
-![](Overview_images/Overview_img1.png)
+![Circular slider to select numeric values](Overview_images/Overview_img1.png)
 
 ### Key Features
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfCalculator control for UWP
-description: Overview of SfCalculator control for UWP
+description: Overview of SfCalculator control which is a standalone calculator control that provide options to perform basic arithmetic operations.
 platform: uwp
 control: SfCalculator
 documentation: ug
