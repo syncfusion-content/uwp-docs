@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfRangeSlider control for UWP
-description: Overview of SfRangeSlider control for UWP
+description:This section provides an features overview of SfRangeSlider control for UWP.
 platform: uwp
 control: SfRange Slider 
 documentation: ug

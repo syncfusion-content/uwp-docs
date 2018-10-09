@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with SfRadialMenu control for UWP
-description: Getting Started with SfRadialMenu control for UWP
+description:This section provides an guidance for getting Started with SfRadialMenu control for UWP.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
