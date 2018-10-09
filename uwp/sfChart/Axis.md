@@ -136,7 +136,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Axis_images/Axis_img1.png)
+![NumericalAxis support in UWP Chart](Axis_images/Axis_img1.png)
 
 
 
@@ -245,7 +245,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Axis_images/Axis_img2.png)
+![CategoryAxis support in UWP Chart](Axis_images/Axis_img2.png)
 
 
 ## DateTimeAxis
@@ -423,7 +423,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Axis_images/Axis_img3.png)
+![DateTimeAxis support in UWP Chart](Axis_images/Axis_img3.png)
 
 
 
@@ -529,7 +529,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Axis_images/Axis_img4.png)
+![DateTimeCategoryAxis support in UWP Chart](Axis_images/Axis_img4.png)
 
 
 
@@ -634,7 +634,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Axis_images/Axis_img5.png)
+![TimeSpanAxis support in UWP Chart](Axis_images/Axis_img5.png)
 
 
 
@@ -750,7 +750,7 @@ Logarithmic Axis does not support zero or negative values.
 
 The following screenshot illustrates the SfChart with LogarithmicAxis.
 
-![](Axis_images/Axis_img6.png)
+![LogarithmicAxis support in UWP Chart](Axis_images/Axis_img6.png)
 
 
 
@@ -870,7 +870,7 @@ chart.Series.Add(series2);
 
 The following screenshot illustrates SfChart with multiple axes.
 
-![C:/Users/rachel/Desktop/snaps/6.png](Axis_images/Axis_img7.png)
+![Multiple axes support in UWP Chart](Axis_images/Axis_img7.png)
 
 
 
@@ -930,7 +930,7 @@ columnSeries.YAxis = new NumericalAxis()
 
 The following is a screenshot demonstrating y-axis of a chart arranged in [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~OpposedPosition.html).
 
-![C:/Users/rachel/Desktop/snaps/7.png](Axis_images/Axis_img8.png)
+![Axis Positioning support in UWP Chart](Axis_images/Axis_img8.png)
 
 
 
@@ -992,7 +992,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![C:/Users/rachel/Desktop/snaps/8.png](Axis_images/Axis_img9.png)
+![Inversed axis support in UWP Chart](Axis_images/Axis_img9.png)
 
 
 
@@ -1062,13 +1062,13 @@ The following types are available for [`NumericalAxis`](https://help.syncfusion.
 
 By default, the default [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) value for [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html) is [`Auto`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html) and for [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html), the default value is [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
-![](Axis_images/Axis_img10.png)
+![NumericalAxis range padding support in UWP Chart](Axis_images/Axis_img10.png)
 
 
 
 The following screenshot demonstrates [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) as [`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html), where no padding is applied for the axis.
 
-![](Axis_images/Axis_img11.png)
+![NumericalAxis range padding support in UWP Chart](Axis_images/Axis_img11.png)
 
 
 
@@ -1076,7 +1076,7 @@ The following screenshot demonstrates [`RangePadding`](https://help.syncfusion.c
 
 The following screenshot illustrates a chart’s y-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
-![](Axis_images/Axis_img12.png)
+![NumericalAxis range padding support in UWP Chart](Axis_images/Axis_img12.png)
 
 
 
@@ -1084,7 +1084,7 @@ Round [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
-![](Axis_images/Axis_img13.png)
+![NumericalAxis range padding support in UWP Chart](Axis_images/Axis_img13.png)
 
 
 
@@ -1092,7 +1092,7 @@ If [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfC
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html) set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalPadding.html).
 
-![](Axis_images/Axis_img14.png)
+![NumericalAxis range padding support in UWP Chart](Axis_images/Axis_img14.png)
 
 
 
@@ -1108,19 +1108,19 @@ By default, the [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/S
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) set to [`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html). 
 
-![](Axis_images/Axis_img15.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img15.png)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
-![](Axis_images/Axis_img16.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img16.png)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
 
-![](Axis_images/Axis_img17.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img17.png)
 
 
 
@@ -1166,7 +1166,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img18.png)
+![Axis label placement support in UWP Chart](Axis_images/Axis_img18.png)
 
 
 
@@ -1203,7 +1203,7 @@ chart.PrimaryAxis = new CategoryAxis()
 {% endtabs %}
 
 
-![](Axis_images/Axis_img19.png)
+![Axis label placement support in UWP Chart](Axis_images/Axis_img19.png)
 
 
 
@@ -1242,7 +1242,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img20.png)
+![Axis label positioning support in UWP Chart](Axis_images/Axis_img20.png)
 
 {% tabs %}
 
@@ -1274,7 +1274,7 @@ chart.PrimaryAxis = new CategoryAxis()
 {% endtabs %}
 
 
-![](Axis_images/Axis_img21.png)
+![Axis label positioning support in UWP Chart](Axis_images/Axis_img21.png)
 
 
 
@@ -1322,7 +1322,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img22.png)
+![Axis edge label positioning support in UWP Chart](Axis_images/Axis_img22.png)
 
 
 
@@ -1357,7 +1357,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img23.png)
+![Axis edge label positioning support in UWP Chart](Axis_images/Axis_img23.png)
 
 
 
@@ -1392,7 +1392,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img24.png)
+![Axis edge label positioning support in UWP Chart](Axis_images/Axis_img24.png)
 
 
 
@@ -1427,7 +1427,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img25.png)
+![Axis edge label positioning support in UWP Chart](Axis_images/Axis_img25.png)
 
 
 
@@ -1474,7 +1474,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img26.png)
+![Smart axis labels support in UWP Chart](Axis_images/Axis_img26.png)
 
 
 
@@ -1509,7 +1509,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img27.png)
+![Smart axis labels support in UWP Chart](Axis_images/Axis_img27.png)
 
 
 
@@ -1546,7 +1546,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img28.png)
+![Smart axis labels support in UWP Chart](Axis_images/Axis_img28.png)
 
 
 
@@ -1593,7 +1593,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img29.png)
+![Adding units axis labels in UWP Chart](Axis_images/Axis_img29.png)
 
 
 
@@ -1636,7 +1636,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img30.png)
+![Adding units axis labels in UWP Chart](Axis_images/Axis_img30.png)
 
 
 
@@ -1692,7 +1692,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img31.png)
+![Axis labels formatting support in UWP Chart](Axis_images/Axis_img31.png)
 
 
 
@@ -1845,7 +1845,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Axis_images/label1.png)
+![Axis labels border support in UWP Chart](Axis_images/label1.png)
 
 The border color and width can be customized with [`LabelBorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderBrush.html) and [`LabelBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelBorderWidth.html) properties of chart axis and it can be set as shown in the below code snippet,
 
@@ -1895,7 +1895,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Axis_images/label2.png)
+![Axis labels border support in UWP Chart](Axis_images/label2.png)
 
 
 ## GridLines and TickLines 
@@ -1935,7 +1935,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img32.png)
+![GridLines customization support in UWP Chart](Axis_images/Axis_img32.png)
 
 
 
@@ -1982,7 +1982,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Axis_images/Axis_img33.png)
+![TickLines customization support in UWP Chart](Axis_images/Axis_img33.png)
 
 
 
@@ -2157,7 +2157,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Axis_images/Axis_img34.png)
+![GridLines customization support in UWP Chart](Axis_images/Axis_img34.png)
 
 
 
@@ -2212,7 +2212,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 {% endtabs %}
 
-![](Axis_images/label3.png)
+![Multi-level axis labels support in UWP Chart](Axis_images/label3.png)
 
 **Regarding** **Start** **and** **End** **Property**
 
@@ -2323,7 +2323,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 {% endtabs %}
 
-![](Axis_images/label4.png)
+![Axis border customization support in UWP Chart](Axis_images/label4.png)
 
 
 **Border** **Type**
@@ -2487,7 +2487,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![](Axis_images/label5.png)
+![Axis border customization support in UWP Chart](Axis_images/label5.png)
 
 
 **Brace**
@@ -2651,7 +2651,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![](Axis_images/label6.png)
+![Axis border customization support in UWP Chart](Axis_images/label6.png)
 
 **None**
 
@@ -2818,7 +2818,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![](Axis_images/label7.png)
+![Axis border customization support in UWP Chart](Axis_images/label7.png)
 
 **WithoutTopAndBottomBorder**
 
@@ -2983,7 +2983,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![](Axis_images/label8.png)
+![Axis border customization support in UWP Chart](Axis_images/label8.png)
 
 
 **Text** **Customization**
@@ -3042,7 +3042,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 {% endtabs %}
 
-![](Axis_images/label9.png)
+![Multi-level axis labels text customization support in UWP Chart](Axis_images/label9.png)
 
 
 **Label** **Alignment**
@@ -3206,7 +3206,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![](Axis_images/label13.png)
+![Multi-level axis label alignment support in UWP Chart](Axis_images/label13.png)
 
 
 **Near**
@@ -3380,7 +3380,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![](Axis_images/label10.png)
+![Multi-level axis label alignment support in UWP Chart](Axis_images/label10.png)
 
 
 **Far**
@@ -3554,7 +3554,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 {% endtabs %}
 
-![](Axis_images/label11.png)
+![Multi-level axis label alignment support in UWP Chart](Axis_images/label11.png)
 
 The text of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text will automatically trim, when the text width exceeds the width of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) and it is shown below,
 
@@ -3634,7 +3634,7 @@ ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
 
 {% endtabs %}
 
-![](Axis_images/label12.png)
+![Multi-level axis label alignment support in UWP Chart](Axis_images/label12.png)
 
 ## Events
 
