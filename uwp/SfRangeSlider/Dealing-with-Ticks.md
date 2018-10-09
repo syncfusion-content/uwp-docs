@@ -41,7 +41,7 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img1.png)
+![Tick Frequency](Ticks_images/TickFrequency.png)
 
 N>  When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
 
@@ -130,7 +130,7 @@ TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img3.png)
+![TickPlacement BottomRight](Ticks_images/TickPlacementBottomRight.png)
 
 N>  In Vertical Orientation, this option will place the ticks to right side. 
 
@@ -164,7 +164,7 @@ Tick marks placed either above the track in horizontal orientation or left of th
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img5.png)
+![TickPlacement TopLeft](Ticks_images/TickPlacementTopLeft.png)
 
 
 N>  In Vertical Orientation, this option will place the ticks to left side.
@@ -199,7 +199,7 @@ Tick marks placed on both sides of the track either in horizontal or vertical or
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img7.png)
+![TickPlacement Outside](Ticks_images/TickPlacementOutside.png)
 
 ### Inline 
 
@@ -231,7 +231,7 @@ Ticks are placed inside the track.
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img8.png)
+![TickPlacement Inline](Ticks_images/TickPlacementInline.png)
 
 ### None 
 
@@ -263,7 +263,7 @@ Tick marks not appear.
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img9.png)
+![TickPlacement None](Ticks_images/TickPlacementNone.png)
 
 ## Customizing tick color
 
@@ -273,7 +273,22 @@ The range slider control provides the `TickBarFill` property to customize the co
 
 {% highlight xaml %}
 
-<editors:SfRangeSlider x:Name="rangeSlider" Width="300" TickBarFill="Blue" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Horizontal"/>
+<Page
+    x:Class="RangeSlider_Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RangeSlider_Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <input:SfRangeSlider x:Name="rangeSlider"  Width="300" HorizontalAlignment="Center"  VerticalAlignment="Center" TickFrequency="20" TickPlacement="BottomRight"  LabelPlacement="BottomRight" Orientation="Horizontal"
+         TickBarFill="Blue" ShowValueLabels="True" ValuePlacement="BottomRight"/>
+    </Grid>
+</Page>
+
 
 {% endhighlight %}
 
@@ -283,19 +298,77 @@ The range slider control provides the `TickBarFill` property to customize the co
 
 {% highlight c# %}
 
-   rangeSlider.TickBarFill= new SolidColorBrush(Color.FromArgb(255, (byte)0, (byte)0, (byte)255));
+using Syncfusion.UI.Xaml.Controls.Input;
+using Windows.UI;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
+
+
+namespace RangeSlider_Sample
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class MainPage : Page
+    {
+        public MainPage()
+        {
+            this.InitializeComponent();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                TickFrequency = 20,
+                TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.BottomRight,
+                LabelPlacement = LabelPlacement.BottomRight,
+                Orientation = Orientation.Horizontal,
+                TickBarFill = new SolidColorBrush(Color.FromArgb(255, (byte)0, (byte)0, (byte)255)),
+                ShowValueLabels = true,
+                ValuePlacement = ValuePlacement.BottomRight
+            };
+            this.Content = rangeSlider;
+        }
+    }
+}
+
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-  rangeSlider.TickBarFill= new SolidColorBrush(Color.FromArgb(255, (byte)0, (byte)0, (byte)255))
+
+Imports Syncfusion.UI.Xaml.Controls.Input
+Imports Windows.UI
+''' <summary>
+''' An empty page that can be used on its own or navigated to within a Frame.
+''' </summary>
+Public NotInheritable Class MainPage
+    Inherits Page
+    Public Sub New()
+        InitializeComponent()
+        Dim rangeSlider As New SfRangeSlider()
+        rangeSlider.Width = 300
+        rangeSlider.HorizontalAlignment = HorizontalAlignment.Center
+        rangeSlider.VerticalAlignment = VerticalAlignment.Center
+        rangeSlider.TickFrequency = 20
+        rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.BottomRight
+        rangeSlider.LabelPlacement = LabelPlacement.BottomRight
+        rangeSlider.Orientation = Orientation.Horizontal
+        rangeSlider.ShowValueLabels = True
+        rangeSlider.ValuePlacement = ValuePlacement.BottomRight
+        rangeSlider.TickBarFill = New SolidColorBrush(Color.FromArgb(255, 0, 0, 255))
+        Me.Content = rangeSlider
+    End Sub
+End Class
+
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img10.png)
+![Customizing Tick Color](Ticks_images/CustomizingTickColor.png)
 
 
 
