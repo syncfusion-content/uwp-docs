@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hiding Grandtotals
-description: hiding grand totals in pivot grid
+title: Hiding Grand Totals
+description: Hiding grand totals in pivot grid
 platform: uwp
 control: SfPivotGrid
 documentation: ug
