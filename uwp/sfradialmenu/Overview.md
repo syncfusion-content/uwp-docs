@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfRadialMenu  control for UWP
-description: Overview of SfRadialMenu control for UWP
+description:This section provides an features overview of SfRadialMenu control for UWP.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
