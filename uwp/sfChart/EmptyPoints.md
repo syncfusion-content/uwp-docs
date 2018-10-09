@@ -29,13 +29,13 @@ Fruits.Add(new Model() { FruitName = "Blueberry", People = 20 });
 
 By default, [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) property is false. So the empty points will not be rendered as in below screenshots:
 
-![](EmptyPoints_images/emptypoint_1.png)
+![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_1.png)
 
 
-![](EmptyPoints_images/emptypoint_2.png)
+![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_2.png)
 
 
-![](EmptyPoints_images/emptypoint_3.png)
+![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_3.png)
 
 
 ## Display Empty Points
@@ -103,7 +103,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](EmptyPoints_images/emptypoint_4.png)
+![Displaying empty points support in UWP Chart](EmptyPoints_images/emptypoint_4.png)
 
 
 Since the [`EmptyPointValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html) as Zero by default, it will draw a line to 0 when we set [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) as True.
@@ -168,7 +168,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](EmptyPoints_images/emptypoint_5.png)
+![Displaying empty points support in UWP Chart](EmptyPoints_images/emptypoint_5.png)
 
 
 ## Customizing Empty Points
@@ -220,7 +220,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](EmptyPoints_images/emptypoint_6.png)
+![Customizing empty points support in UWP Chart](EmptyPoints_images/emptypoint_6.png)
 
 
 N> This is the default value for [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html). So when you enable empty points using [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) , empty point segment render with this [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html).
@@ -291,7 +291,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](EmptyPoints_images/emptypoint_7.png)
+![Adding symbol for empty points support in UWP Chart](EmptyPoints_images/emptypoint_7.png)
 
 
 ### Symbol and Interior
@@ -364,7 +364,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](EmptyPoints_images/emptypoint_8.png)
+![Symbol and interior support in UWP Chart](EmptyPoints_images/emptypoint_8.png)
 
 
 ### Custom Symbol
@@ -415,7 +415,7 @@ Fill="LightGray"/>
 
 {% endhighlight %}
 
-![](EmptyPoints_images/emptypoint_9.png)
+![Custom symbol for empty points in UWP Chart](EmptyPoints_images/emptypoint_9.png)
 
 
 ## EmptyPoints and Series
@@ -424,14 +424,14 @@ The following section illustrating few chart types and its behavior with EmptyPo
 
 **ColumnSeries** **with** **EmptyPoint** **as** **Average**
 
-![](EmptyPoints_images/emptypoint_10.png)
+![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_10.png)
 
 
 **SplineSeries** **with** **EmptyPoint** **as** **Average**
 
-![](EmptyPoints_images/emptypoint_11.png)
+![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_11.png)
 
 
 **Accumulation** **Series** **with** **EmptyPoint** **as** **Average**
 
-![](EmptyPoints_images/emptypoint_12.png)
+![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_12.png)

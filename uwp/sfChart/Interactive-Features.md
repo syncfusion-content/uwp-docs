@@ -83,7 +83,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![Tooltip support in UWP Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 
 ### Aligning the ToolTip
@@ -152,7 +152,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 N> By default the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~HorizontalAlignmentProperty.html) is center for the tooltip.
 
@@ -218,7 +218,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 **ToolTipMargin**
@@ -295,7 +295,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![Margin for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 N>By default the [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~VerticalAlignmentProperty.html) of the Tooltip is Top
@@ -380,7 +380,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![VerticalOffset and HorizontalOffset support for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 ### ToolTip Duration
 
@@ -599,7 +599,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img6.jpeg)
+![Tooltip customization support in UWP Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 ## TrackBall
 
@@ -668,7 +668,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The default appearance of the trackball in primary axis (CategoryAxis).
 
-![](Interactive-Features_images/Interactive-Features_img7.jpeg)
+![TrackBall support in UWP Chart](Interactive-Features_images/Interactive-Features_img7.jpeg)
 
 
 The Trackball is composed of the following parts.
@@ -714,7 +714,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img8.jpeg)
+![Visibility support for trackball line in UWP Chart](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
 **Customization** **of** **TrackBall** **Line**
@@ -768,7 +768,7 @@ chart.Behaviors.Add(trackball);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img9.jpeg)
+![TrackBall line customization in UWP Chart](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
 ### Symbol
@@ -818,7 +818,7 @@ chart.Behaviors.Add(trackball);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img10.jpeg)
+![Symbol for trackball in UWP Chart](Interactive-Features_images/Interactive-Features_img10.jpeg)
 
 
 ### Axis Label
@@ -870,7 +870,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img11.jpeg)
+![Alignment support for trackball axis label in UWP Chart](Interactive-Features_images/Interactive-Features_img11.jpeg)
 
 
 **Near**
@@ -904,7 +904,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img12.jpeg)
+![Alignment support for trackball axis label in UWP Chart](Interactive-Features_images/Interactive-Features_img12.jpeg)
 
 
 **Customization** **of** **Axis** **Label**
@@ -968,7 +968,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img13.jpeg)
+![Customization support for trackball axis label in UWP Chart](Interactive-Features_images/Interactive-Features_img13.jpeg)
 
 
 ### Series Label
@@ -1015,7 +1015,7 @@ SplineSeries series1 = new SplineSeries()
 
 {% endtabs %}
 
-![](Interactive-Features_images/ShowTrackball.png)
+![TrackBall series label in UWP Chart](Interactive-Features_images/ShowTrackball.png)
 
 
 
@@ -1058,7 +1058,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img14.jpeg)
+![Alignment support for trackball series label in UWP Chart](Interactive-Features_images/Interactive-Features_img14.jpeg)
 
 
 **LabelDisplayMode**
@@ -1096,7 +1096,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img15.jpeg)
+![LabelDisplayMode support for trackball in UWP Chart](Interactive-Features_images/Interactive-Features_img15.jpeg)
 
 
 **NearestPoint**
@@ -1130,7 +1130,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img16.jpeg)
+![LabelDisplayMode support for trackball in UWP Chart](Interactive-Features_images/Interactive-Features_img16.jpeg)
 
 
 [`TrackBallLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TrackBallLabelTemplate.html) property in [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html) allows you to customize the appearance of series label in trackball.
@@ -1205,7 +1205,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img17.jpeg)
+![Customization support for trackball series label in UWP Chart](Interactive-Features_images/Interactive-Features_img17.jpeg)
 
 
 **Applying** **Palette** **to** **the** **Series** **Label**
@@ -1241,7 +1241,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img18.jpeg)
+![Applying palette to the trackball series label in UWP Chart](Interactive-Features_images/Interactive-Features_img18.jpeg)
 
 
 ### Events
@@ -1303,7 +1303,7 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img19.png)
+![Segment dragging support in UWP Chart](Interactive-Features_images/Interactive-Features_img19.png)
 
 
 **ColumnSeries**
@@ -1351,7 +1351,7 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img20.png)
+![Segment dragging support in UWP Chart](Interactive-Features_images/Interactive-Features_img20.png)
 
 
 **ScatterSeries**
@@ -1386,7 +1386,7 @@ chart.Series.Add(series)
 
 {% endtabs %}
 
-![](Interactive-Features_images/Scatter_Dragging.png)
+![Segment dragging support in UWP Chart](Interactive-Features_images/Scatter_Dragging.png)
 
 
 N> By default the [`DragDirection`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries~DragDirection.html) of the scatter series is XY.
@@ -1437,7 +1437,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img21.png)
+![Series dragging support in UWP Chart](Interactive-Features_images/Interactive-Features_img21.png)
 
 
 N>In line and Spline Series if segment and series dragging is enabled, the series dragging is having higher priority over segment dragging.
@@ -1492,7 +1492,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img22.png)
+![Adding tooltip for dragging support in UWP Chart](Interactive-Features_images/Interactive-Features_img22.png)
 
 
 **DragTooltipTemplate**
@@ -1571,7 +1571,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img23.png)
+![Customizing tooltip support while dragging in UWP Chart](Interactive-Features_images/Interactive-Features_img23.png)
 
 
 **Drag Tooltip Style**
@@ -1618,7 +1618,7 @@ The following are the API’s in ChartDragTooltipStyle.
 
 {% endtabs %}
 
-![](Interactive-Features_images/Drag_Tooltip.png)
+![Customizing tooltip support while dragging in UWP Chart](Interactive-Features_images/Drag_Tooltip.png)
 
 
 **Rounding** **Off** **the** **Dragged** **Value**
@@ -1855,7 +1855,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img24.jpeg)
+![Zooming support in UWP Chart](Interactive-Features_images/Interactive-Features_img24.jpeg)
 
 **Mouse** **Wheel** **Zooming**
 
@@ -1992,7 +1992,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img25.jpeg)
+![Selection zooming support in UWP Chart](Interactive-Features_images/Interactive-Features_img25.jpeg)
 
 
 **Customization** **of** **Selection** **Rectangle**
@@ -2042,7 +2042,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img26.jpeg)
+![Customizing selection rectangle support in UWP Chart](Interactive-Features_images/Interactive-Features_img26.jpeg)
 
 
 **Zooming** **Mode**
@@ -2082,7 +2082,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img27.jpeg)
+![Zoom mode support in UWP Chart](Interactive-Features_images/Interactive-Features_img27.jpeg)
 
 
 Zooming along Y axis
@@ -2118,7 +2118,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img28.jpeg)
+![Zoom mode support in UWP Chart](Interactive-Features_images/Interactive-Features_img28.jpeg)
 
 **Maximum** **Zoom** **Level**
 
@@ -2190,7 +2190,7 @@ chart.Behaviors.Add(zooming);
 
 The following image depicts the default view of the zooming toolbar.
 
-![](Interactive-Features_images/Interactive-Features_img29.jpeg)
+![Zooming toolbar support in UWP Chart](Interactive-Features_images/Interactive-Features_img29.jpeg)
 
 
 **Positioning** **the** **zooming** **toolbar**
@@ -2230,7 +2230,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img30.jpeg)
+![Positioning the zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img30.jpeg)
 
 
 **Customization** **of** **Zooming** **Toolbar**
@@ -2286,7 +2286,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img31.jpeg)
+![Customization of zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img31.jpeg)
 
 
 **Orientation** **of** **Zooming** **Toolbar**
@@ -2328,7 +2328,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img32.jpeg)
+![Orientation of zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img32.jpeg)
 
 
 ### Panning the ChartArea
@@ -2367,7 +2367,7 @@ chart.Behaviors.Add(zooming);
 
 The following image demonstrates the cursor panning in the left direction.
 
-![](Interactive-Features_images/Interactive-Features_img33.jpeg)
+![Panning support in UWP Chart](Interactive-Features_images/Interactive-Features_img33.jpeg)
 
 
 ### Resetting the Zooming/Panning
@@ -2506,7 +2506,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img34.jpeg)
+![Segment selection support in UWP Chart](Interactive-Features_images/Interactive-Features_img34.jpeg)
 
 **SplineSeries**
 
@@ -2581,7 +2581,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img35.jpeg)
+![Segment selection support in UWP Chart](Interactive-Features_images/Interactive-Features_img35.jpeg)
 
 ### Series Selection
 
@@ -2672,7 +2672,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img36.jpeg)
+![Series selection support in UWP Chart](Interactive-Features_images/Interactive-Features_img36.jpeg)
 
 N>By default the segment selection is true, so for selecting series you have to set the [`EnableSegmentSelection`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior~EnableSegmentSelection.html) property to false.
 
@@ -2750,7 +2750,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img37.jpeg)
+![Selection style support in UWP Chart](Interactive-Features_images/Interactive-Features_img37.jpeg)
 
 
 ### Changing Cursor while Selection
@@ -2790,7 +2790,7 @@ chart.Behaviors.Add(selection);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img38.jpeg)
+![Changing cursor while selection support in UWP Chart](Interactive-Features_images/Interactive-Features_img38.jpeg)
 
 
 ### Adornment Selection:
@@ -2876,7 +2876,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img39.jpeg)
+![Segments selection with adornments in UWP Chart](Interactive-Features_images/Interactive-Features_img39.jpeg)
 
 **Series** **Selection**
 
@@ -3011,7 +3011,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img40.jpeg)
+![Series selection with adornments in UWP Chart](Interactive-Features_images/Interactive-Features_img40.jpeg)
 
 
 ### Events
@@ -3055,7 +3055,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img41.jpeg)
+![Adding scrollbar to axis in UWP Chart](Interactive-Features_images/Interactive-Features_img41.jpeg)
 
 
 **Deferred** **Scrolling**
@@ -3120,7 +3120,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img42.jpeg)
+![Resizing the scrollbar in UPW Chart](Interactive-Features_images/Interactive-Features_img42.jpeg)
 
 
 ### Scrollbar for Touch Mode
@@ -3154,7 +3154,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img43.jpeg)
+![Scrollbar for touch mode support in UWP Chart](Interactive-Features_images/Interactive-Features_img43.jpeg)
 
 
 **Thumb** **Label**
@@ -3192,7 +3192,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img44.jpeg)
+![Thumb label for scrollbar in UWP Chart](Interactive-Features_images/Interactive-Features_img44.jpeg)
 
 
 **ThumbLabelTemplate**
@@ -3258,7 +3258,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img45.jpeg)
+![Label template support for scrollbar thumb in UWP Chart](Interactive-Features_images/Interactive-Features_img45.jpeg)
 
 ## CrossHair
 
@@ -3334,7 +3334,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img46.jpeg)
+![Cross hair support in UWP Chart](Interactive-Features_images/Interactive-Features_img46.jpeg)
 
 
 Cross hair is composed of the following parts.
@@ -3394,7 +3394,7 @@ chart.Behaviors.Add(crosshair);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img47.jpeg)
+![Vertical and horizontal line for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img47.jpeg)
 
 
 **VerticalLineStyle**
@@ -3444,7 +3444,7 @@ chart.Behaviors.Add(crosshair);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img48.jpeg)
+![Cross hair line style in UWP Chart](Interactive-Features_images/Interactive-Features_img48.jpeg)
 
 
 ### Horizontal axis label
@@ -3463,7 +3463,7 @@ Axis Label can be aligned by Near, Far, Center, Auto and None Options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
-![](Interactive-Features_images/Interactive-Features_img49.jpeg)
+![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img49.jpeg)
 
 
 **Far**
@@ -3497,7 +3497,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img50.jpeg)
+![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img50.jpeg)
 
 
 **Near**
@@ -3531,7 +3531,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img51.jpeg)
+![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img51.jpeg)
 
 
 ### Vertical axis label
@@ -3542,7 +3542,7 @@ Axis Label can be aligned by [`Near`](https://help.syncfusion.com/cr/cref_files/
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
-![](Interactive-Features_images/Interactive-Features_img52.jpeg)
+![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img52.jpeg)
 
 
 **Near**
@@ -3576,7 +3576,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img53.jpeg)
+![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img53.jpeg)
 
 **Far**
 
@@ -3609,7 +3609,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![](Interactive-Features_images/Interactive-Features_img54.jpeg)
+![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img54.jpeg)
 
 
 
