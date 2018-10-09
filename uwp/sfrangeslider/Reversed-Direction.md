@@ -38,7 +38,7 @@ The direction of increasing value can be changed using IsDirectionReversed prope
 
 {% endtabs %}
 
-![](Direction-Reversed_images/Direction-Reversed_img1.jpg)
+![RangeSlider IsDirectionReversed view](Direction-Reversed_images/Direction-Reversed_img1.jpg)
 
 
 

@@ -39,7 +39,7 @@ rating.ShowToolTip = True
 
 {% endtabs %}
 
-![](ToolTips-images/ToolTips-img1.jpeg)
+![Rating Enable ToolTip view](ToolTips-images/ToolTips-img1.jpeg)
 
 
 ## Tooltip Precision

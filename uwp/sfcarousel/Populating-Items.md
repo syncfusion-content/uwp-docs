@@ -139,7 +139,7 @@ carousel.Items.Add(New SfCarouselItem() With {.Content = "Item 5"})
 
 {% endtabs %}
 
-![](SfCarousel-images/SfCarousel-img4.jpeg)
+![Provided the Content to Carousel](SfCarousel-images/SfCarousel-img4.jpeg)
 
 ## Using ItemsSource
 
@@ -284,7 +284,7 @@ Employees.Add(New Employee() With {
 
 `SfCarousel` control is populated as follows:
 
-![](SfCarousel-images/SfCarousel-img5.jpeg)
+![Provided the ItemSource to Carousel](SfCarousel-images/SfCarousel-img5.jpeg)
 
 ### Displaying the item
 
@@ -300,7 +300,7 @@ Content can be displayed using the `DisplayMemberPath` and `ItemTemplate` proper
 
 {% endtabs %}
 
-![](SfCarousel-images/SfCarousel-img6.jpeg)
+![Provided the DisplayMemberPath to Carousel](SfCarousel-images/SfCarousel-img6.jpeg)
 
 {% tabs %}
 

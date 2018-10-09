@@ -65,7 +65,7 @@ FormatString="C"
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img1.png)
+![Currency FormatString view](Concepts_images/Concepts_img1.png)
 
 N>  A detailed explanation of Numeric formatting is available here. The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different numeric settings will generate different result strings.
  
@@ -98,7 +98,7 @@ updown.Culture = New CultureInfo("de-DE")
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img3.png)
+![Germany Culture view](Concepts_images/Concepts_img3.png)
 
 
 N> Note that the decimal separator and group separator are affected by the culture in this case.
@@ -155,4 +155,4 @@ numericUpDown.Culture = New System.Globalization.CultureInfo("de-DE")
 {% endhighlight %}
 
 {% endtabs %}
-![](Concepts_images/Concepts_img5.png)
+![Germany Culture Currency view](Concepts_images/Concepts_img5.png)

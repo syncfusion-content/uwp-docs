@@ -37,4 +37,4 @@ AllowNull="True"
 
 {% endhighlight %}
 
-![](Concepts_images/Concepts_img6.png)
+![NumericUpDown Null value view](Concepts_images/Concepts_img6.png)

@@ -123,7 +123,7 @@ Dim radialMenu As New SfRadialMenu() With {.IsOpen = True}
 
 {% endtabs %}
 
-![](Populating-Color-Palette_images/Populating-Color-Palette_img1.png)
+![RadialMenu Customized Color view](Populating-Color-Palette_images/Populating-Color-Palette_img1.png)
 
 
 

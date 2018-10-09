@@ -46,7 +46,7 @@ busyIndicator.IsBusy = True
 
 {% endtabs %}
 
-![](SfBusyIndicator1/Busy.png)
+![Enable the Animation to Show](SfBusyIndicator1/Busy.png)
 
 ## Busy Caption
 
@@ -87,7 +87,7 @@ busyIndicator.Header = "Loading..."
 
 {% endtabs %}
 
-![](SfBusyIndicator1/Load.png)
+![Provide the Animation Header](SfBusyIndicator1/Load.png)
 
 ## Customizing Busy Caption
 
@@ -123,7 +123,7 @@ busyIndicator.Header = "Loading..."
 
 {% endtabs %}
 
-![](SfBusyIndicator1/CustomizeHeader.png)
+![Provide the Template for Header](SfBusyIndicator1/CustomizeHeader.png)
 
 ## Sizing the BusyIndicator
 
@@ -151,9 +151,9 @@ Here is an example showing resized `SfBusyIndicator`.
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 
-busyIndicator. ViewboxHeight = 70.0;
+busyIndicator.ViewboxHeight = 70.0;
 
-busyIndicator. ViewboxWidth = 70.0;
+busyIndicator.ViewboxWidth = 70.0;
 
 {% endhighlight %}
 
@@ -169,5 +169,5 @@ busyIndicator.ViewboxWidth = 70.0
 
 {% endtabs %}
 
-![](SfBusyIndicator1/Sizing.png)
+![Provide the Size of the Control](SfBusyIndicator1/Sizing.png)
 

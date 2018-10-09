@@ -142,7 +142,7 @@ radialMenu.Items.Add(radialMenuItem6)
 
 {% endtabs %}
 
-![](Checkable-Items_images/Checkable-Items_img1.png)
+![RadialMenu CheckMode view](Checkable-Items_images/Checkable-Items_img1.png)
 
 
 

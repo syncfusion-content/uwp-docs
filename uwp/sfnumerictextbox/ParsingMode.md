@@ -60,4 +60,4 @@ Value of the SfNumericTextBox gets parsed based on ParsingMode property. Parsing
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img7.png)
+![Parsingmode view](Concepts_images/Concepts_img7.png)

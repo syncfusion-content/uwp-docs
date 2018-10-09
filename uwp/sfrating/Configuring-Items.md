@@ -42,6 +42,6 @@ rating.ItemsCount = 5
 {% endtabs %}
 
 
-![](Configuring-Items-images/Configuring-Items-img1.jpeg)
+![Rating ItemsCount view](Configuring-Items-images/Configuring-Items-img1.jpeg)
 
 

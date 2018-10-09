@@ -121,7 +121,7 @@ In the following sample, we have bound the CustomCollection property to CustomLa
 
 
 
-![](Label-Support_images/Label-Support_img1.png)
+![RangeSlider CustomLabels view](Label-Support_images/Label-Support_img1.png)
 
 
 ## ShowCustomLabels
@@ -155,7 +155,7 @@ The default value of ShowCustomLabels is false. When set to true, it will displa
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img2.png)
+![RangeSlider ShowCustomLabels view](Label-Support_images/Label-Support_img2.png)
 
 ## LabelPlacement
 
@@ -192,7 +192,7 @@ The following code sample shows the usage of the LabelPlacement property. The ou
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img3.png)
+![RangeSlider LabelPlacement BottomRight view](Label-Support_images/Label-Support_img3.png)
 
 {% tabs %}
 
@@ -222,7 +222,7 @@ CustomLabels="{Binding CustomCollection}" LabelPlacement="TopLeft"/>
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img4.png)
+![RangeSlider LabelPlacement TopLeft view](Label-Support_images/Label-Support_img4.png)
 
 ## ShowValueLabels
 
@@ -254,7 +254,7 @@ The default value of the ShowValueLabels property is false. When set to true, it
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img5.png)
+![RangeSlider ShowValueLabels view](Label-Support_images/Label-Support_img5.png)
 
 ## ValuePlacement
 
@@ -291,7 +291,7 @@ The following code sample shows the usage of ValuePlacement property. The output
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img6.png)
+![RangeSlider ValuePlacement TopLeft view](Label-Support_images/Label-Support_img6.png)
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ The following code sample shows the usage of ValuePlacement property. The output
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img7.png)
+![RangeSlider ValuePlacement BottomRight view](Label-Support_images/Label-Support_img7.png)
 
 ## LabelOrientation
 
@@ -356,7 +356,7 @@ The following code sample shows the usage of LabelOrientation property. The outp
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img8.png)
+![RangeSlider LabelOrientation Horizontal view](Label-Support_images/Label-Support_img8.png)
 
 {% tabs %}
 
@@ -385,7 +385,7 @@ The following code sample shows the usage of LabelOrientation property. The outp
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img9.png)
+![RangeSlider LabelOrientation Vertical view](Label-Support_images/Label-Support_img9.png)
 
 
 ## Customizing label font
@@ -425,6 +425,6 @@ The range slider control provides the `FontFamily`, `FontWeight` , `FontStyle` a
 
 {% endtabs %}
 
-![](Label-Support_images/Label-Support_img10.png)
+![RangeSlider Font Customization view](Label-Support_images/Label-Support_img10.png)
 
 

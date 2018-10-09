@@ -38,7 +38,7 @@ Rating items are customizable in much simpler and easier way. The following prop
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
+![Rating PointerOverFill view](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 
 ##  PointerOverStroke
@@ -69,7 +69,7 @@ Rating items are customizable in much simpler and easier way. The following prop
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
+![Rating PointerOverStroke view](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
 
 
 ## PointerOverStrokeThickness
@@ -101,7 +101,7 @@ Rating items are customizable in much simpler and easier way. The following prop
 {% endtabs %}
 
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img3.jpeg)
+![Rating PointerOverStrokeThickness view](Appearance-and-Styling-images/Appearance-and-Styling-img3.jpeg)
 
 
 ## RatedFill
@@ -132,7 +132,7 @@ Rating items are customizable in much simpler and easier way. The following prop
 {% endtabs %}
 
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img4.jpeg)
+![Rating RatedFill view](Appearance-and-Styling-images/Appearance-and-Styling-img4.jpeg)
 
 
 ## RatedStroke
@@ -164,7 +164,7 @@ Rating items are customizable in much simpler and easier way. The following prop
 {% endtabs %}
 
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
+![Rating RatedStroke view](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
 
 
 ## Rated StrokeThickness
@@ -196,7 +196,7 @@ Rating items are customizable in much simpler and easier way. The following prop
 {% endtabs %}
 
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img6.jpeg)
+![Rating Rated StrokeThickness view](Appearance-and-Styling-images/Appearance-and-Styling-img6.jpeg)
 
 
 ## Unrated Fill
@@ -225,7 +225,7 @@ Rating items are customizable in much simpler and easier way. The following prop
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
+![Rating Unrated Fill view](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
 
 
 ## Unrated Stroke
@@ -255,7 +255,7 @@ Rating items are customizable in much simpler and easier way. The following prop
 {% endtabs %}
 
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img8.jpeg)
+![Rating Unrated Stroke view](Appearance-and-Styling-images/Appearance-and-Styling-img8.jpeg)
 
 
 ## Unrated StrokeThickness
@@ -286,6 +286,6 @@ Rating items are customizable in much simpler and easier way. The following prop
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img9.jpeg)
+![Rating Unrated StrokeThickness view](Appearance-and-Styling-images/Appearance-and-Styling-img9.jpeg)
 
 

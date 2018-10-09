@@ -52,7 +52,7 @@ carousel.SelectedIndex = 2
 
 {% endtabs %}
 
-![](SfCarousel-images/SfCarousel-img7.jpeg)
+![Provided SelectedIndex for Carousel](SfCarousel-images/SfCarousel-img7.jpeg)
 
 
 ## Selecting an item using SelectedItem
@@ -97,7 +97,7 @@ carousel.SelectedItem = item3
 
 {% endtabs %}
 
-![](SfCarousel-images/SfCarousel-img8.jpeg)
+![Provided SelectedItem for Carousel](SfCarousel-images/SfCarousel-img8.jpeg)
 
 ## Navigating to next item
 

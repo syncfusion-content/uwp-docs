@@ -41,7 +41,7 @@ When ShowRange property is set to true, two Thumbs are placed in the track. One 
 
 {% endtabs %}
 
-![](Range_images/Range_img1.jpg)
+![RangeSlider ShowRange view](Range_images/Range_img1.jpg)
 
 ## RangeStart  
 
@@ -73,7 +73,7 @@ Gets or sets the start value of the range start.
 
 {% endtabs %}
 
-![](Range_images/Range_img2.jpg)
+![RangeSlider RangeStart view](Range_images/Range_img2.jpg)
 
 ## RangeEnd 
 
@@ -105,7 +105,7 @@ Gets or sets the end value of the range end.
 
 {% endtabs %}
 
-![](Range_images/Range_img3.jpg)
+![RangeSlider RangeEnd view](Range_images/Range_img3.jpg)
 
 
 

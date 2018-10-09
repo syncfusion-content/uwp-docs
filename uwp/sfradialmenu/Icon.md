@@ -74,7 +74,7 @@ Dim radialMenu As New SfRadialMenu() With {.IsOpen = True}
 
 {% endtabs %}
 
-![](Icon_images/Icon_img1.png)
+![RadialMenu Icon view](Icon_images/Icon_img1.png)
 
 
 

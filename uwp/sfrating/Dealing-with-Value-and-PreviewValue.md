@@ -43,7 +43,7 @@ rating.Value = 2
 
 {% endtabs %}
 
-![](Dealing-with-Value-and-PreviewValue-images/Dealing-with-Value-and-PreviewValue-img1.jpeg)
+![Setting the rated value view](Dealing-with-Value-and-PreviewValue-images/Dealing-with-Value-and-PreviewValue-img1.jpeg)
 
 
 ## Previewing the rate

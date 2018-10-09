@@ -39,4 +39,4 @@ AllowNull="True"
 
 {% endhighlight %}
 
-![](Concepts_images/Concepts_img6.png)
+![Nullable NumericTextBox view](Concepts_images/Concepts_img6.png)

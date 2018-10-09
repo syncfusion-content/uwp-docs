@@ -63,7 +63,7 @@ FormatString="C"
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img1.png)
+![FormatString view](Concepts_images/Concepts_img1.png)
 
 N>  A detailed explanation of Numeric formatting is available [here](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx). 
 The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different numeric settings will generate different result strings.

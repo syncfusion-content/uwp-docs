@@ -119,7 +119,7 @@ radialMenu.Items.Add(New SfRadialMenuItem() With {
 
 {% endtabs %}
 
-![](Layout-Types_images/Layout-Types_img1.png)
+![RadialMenu Customized view](Layout-Types_images/Layout-Types_img1.png)
 
 
 

@@ -55,7 +55,7 @@ rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Standard
 
 {% endtabs %}
 
-![](Rating-Precisions-images/Rating-Precisions-img1.jpeg)
+![Rating Precision Standard view](Rating-Precisions-images/Rating-Precisions-img1.jpeg)
 
 
 ## Rating the item partially
@@ -97,7 +97,7 @@ rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Half
 
 {% endtabs %}
 
-![](Rating-Precisions-images/Rating-Precisions-img2.jpeg)
+![Rating Precision Half view](Rating-Precisions-images/Rating-Precisions-img2.jpeg)
 
 
 ## Rating the item exactly
@@ -139,6 +139,6 @@ rating.Precision = Syncfusion.UI.Xaml.Primitives.Precision.Exact
 
 {% endtabs %}
 
-![](Rating-Precisions-images/Rating-Precisions-img3.jpeg)
+![Rating Precision Exact view](Rating-Precisions-images/Rating-Precisions-img3.jpeg)
 
 

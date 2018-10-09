@@ -94,8 +94,8 @@ In below code sample, the control with name "Quantity_sfNumericTextBox" for Quan
 
 ###OnKeyFocus
 
-![](Concepts_images/Concepts_img10.png)
+![NumericTextBox OnKeyFocus view](Concepts_images/Concepts_img10.png)
 
 ###OnLostFocus
 
-![](Concepts_images/Concepts_img11.png)
+![NumericTextBox OnLostFocus view](Concepts_images/Concepts_img11.png)

@@ -41,7 +41,7 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img1.png)
+![RangeSlider TickFrequency view](Ticks_images/Ticks_img1.png)
 
 N>  When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
 
@@ -130,7 +130,7 @@ TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img3.png)
+![RangeSlider TickPlacement BottomRight view](Ticks_images/Ticks_img3.png)
 
 N>  In Vertical Orientation, this option will place the ticks to right side. 
 
@@ -164,7 +164,7 @@ Tick marks placed either above the track in horizontal orientation or left of th
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img5.png)
+![RangeSlider TickPlacement TopLeft view](Ticks_images/Ticks_img5.png)
 
 
 N>  In Vertical Orientation, this option will place the ticks to left side.
@@ -199,7 +199,7 @@ Tick marks placed on both sides of the track either in horizontal or vertical or
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img7.png)
+![RangeSlider TickPlacement Outside view](Ticks_images/Ticks_img7.png)
 
 ### Inline 
 
@@ -231,7 +231,7 @@ Ticks are placed inside the track.
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img8.png)
+![RangeSlider TickPlacement Inline view](Ticks_images/Ticks_img8.png)
 
 ### None 
 
@@ -263,7 +263,7 @@ Tick marks not appear.
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img9.png)
+![RangeSlider TickPlacement None view](Ticks_images/Ticks_img9.png)
 
 ## Customizing tick color
 
@@ -295,7 +295,7 @@ The range slider control provides the `TickBarFill` property to customize the co
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img10.png)
+![RangeSlider TickBarFill view](Ticks_images/Ticks_img10.png)
 
 
 

@@ -37,7 +37,7 @@ numericTextBox.Culture = New CultureInfo("de-DE")
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img3.png)
+![Germany Culture view](Concepts_images/Concepts_img3.png)
 
 N> Note that the decimal separator and group separator are affected by the culture in this case.
 
@@ -93,5 +93,5 @@ numericTextBox.Culture = New System.Globalization.CultureInfo("de-DE")
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img5.png)
+![Germany Culture Currency view](Concepts_images/Concepts_img5.png)
 

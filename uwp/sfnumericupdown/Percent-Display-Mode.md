@@ -48,7 +48,7 @@ numericUpDown.PercentDisplayMode = Syncfusion.UI.Xaml.Controls.Input.PercentDisp
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img8.png)
+![PercentDisplayMode Value view](Concepts_images/Concepts_img8.png)
 
 {% tabs %}
 
@@ -84,4 +84,4 @@ numericUpDown.PercentDisplayMode = Syncfusion.UI.Xaml.Controls.Input.PercentDisp
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img9.png)
+![PercentDisplayMode Compute view](Concepts_images/Concepts_img9.png)

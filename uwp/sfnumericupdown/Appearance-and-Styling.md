@@ -69,7 +69,7 @@ numericUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlig
 
 {% endtabs %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![Spin Buttons Alignment Right view](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ### Left
 
@@ -121,7 +121,7 @@ SpinButtonsAlignment="Left"
 
 {% endtabs %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![Spin Buttons Alignment Left view](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ### Both
 
@@ -173,7 +173,7 @@ numericUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlig
 
 {% endtabs %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![Spin Buttons Alignment Both view](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 ## Accent Brush
 
@@ -217,4 +217,4 @@ AccentBrush="Green"/>
 
 The following image shows the control with various accent brushes.
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![Button Hot spot view](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)

@@ -156,7 +156,7 @@ Bind the Application command collection to the ItemsSource property of the SfRad
 
 This will populate the SfRadialMenu as shown in the image below. 
 
-![](Populating-Items_images/Populating-Items_img1.png)
+![RadialMenu Initial view](Populating-Items_images/Populating-Items_img1.png)
 
 
 
@@ -175,7 +175,7 @@ DisplayMemberPath="Name"/>
 
 
 {% endhighlight %}
-![](Populating-Items_images/Populating-Items_img2.png)
+![RadialMenu Display Member Path view](Populating-Items_images/Populating-Items_img2.png)
 
 ### Command Path
 
@@ -221,7 +221,7 @@ ItemTemplate property of the SfRadialMenu can be used to customize the header pa
 {% endhighlight %}
 
 
-![](Populating-Items_images/Populating-Items_img3.png)
+![RadialMenu Itemtemplate view](Populating-Items_images/Populating-Items_img3.png)
 
 
 

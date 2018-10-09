@@ -71,7 +71,7 @@ radialMenu.CenterRimRadiusFactor = 0.3
 
 {% endtabs %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![RadialMenu Center RimRadius Factor view](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## RimBackground
 
@@ -104,7 +104,7 @@ radialMenu.RimBackground = New SolidColorBrush(Colors.Green)
 {% endtabs %}
 
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![RadialMenu RimBackground view](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 ## RimActiveBrush
@@ -137,7 +137,7 @@ radialMenu.RimActiveBrush = New SolidColorBrush(Colors.Red)
 
 {% endtabs %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![RadialMenu RimActiveBrush view](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
 
@@ -171,7 +171,7 @@ radialMenu.RimRadiusFactor = 0.7
 
 {% endtabs %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+![RadialMenu RimRadiusFactor view](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
 ## Navigation Button Style
@@ -244,7 +244,7 @@ radialMenu.DrillDownItem = edit
 
 {% endtabs %}
 
-![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
+![RadialMenu DrillDownItem view](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 
 

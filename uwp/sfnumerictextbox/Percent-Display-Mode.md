@@ -48,7 +48,7 @@ The following code example and screen shots illustrate the usage of the PercentD
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img8.png)
+![PercentDisplayMode Value view](Concepts_images/Concepts_img8.png)
 
 {% tabs %}
 
@@ -84,4 +84,4 @@ PercentDisplayMode="Compute"/>
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img9.png)
+![PercentDisplayMode Compute view](Concepts_images/Concepts_img9.png)

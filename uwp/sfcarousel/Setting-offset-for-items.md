@@ -93,7 +93,7 @@ carousel.Offset = 100.0
 
 {% endtabs %}
 
-![](SfCarousel-images/SfCarousel-img9.jpeg)
+![Offset view](SfCarousel-images/SfCarousel-img9.jpeg)
 
 ## Scaling the unselected items
 
@@ -177,7 +177,7 @@ carousel.ScaleOffset = 0.5
 
 {% endtabs %}
 
-![](SfCarousel-images/SfCarousel-img10.jpeg)
+![ScaleOffset view](SfCarousel-images/SfCarousel-img10.jpeg)
 
 ## Displacing the selected and unselected items
 
@@ -261,6 +261,6 @@ carousel.SelectedItemOffset = 60.0
 
 {% endtabs %}
 
-![](SfCarousel-images/SfCarousel-img11.jpeg)
+![SelectedItemOffset view](SfCarousel-images/SfCarousel-img11.jpeg)
 
 

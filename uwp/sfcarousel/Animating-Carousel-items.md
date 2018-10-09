@@ -138,6 +138,6 @@ carousel.RotationAngle = 70.0
 
 {% endtabs %}
 
-![](SfCarousel-images/SfCarousel-img12.jpeg)
+![Provided the Animated to Carousel](SfCarousel-images/SfCarousel-img12.jpeg)
 
 

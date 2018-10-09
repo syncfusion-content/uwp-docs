@@ -57,4 +57,4 @@ numericUpDown.ParsingMode = Syncfusion.UI.Xaml.Controls.Input.Parsers.Decimal
 
 {% endtabs %}
 
-![](Concepts_images/Concepts_img7.png)
+![ParsingMode view](Concepts_images/Concepts_img7.png)
