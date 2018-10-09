@@ -223,7 +223,7 @@ YBindingPath="NoOfUsers">
 {% endhighlight %}
 The following screenshot illustrates the result of the above code sample:
 
-![Chart 3D support in UWP](3D-Charts_images/3D-Charts_img1.png)
+![Chart 3D support in UWP](3D-Charts_images/Charts-3D_img1.png)
 
 
 
@@ -442,7 +442,7 @@ public class UsersViewModel
 
 The following image illustrates the result of the above code sample:
 
-![Series types in UWP 3D Chart](3D-Charts_images/3D-Charts_img2.png)
+![Series types in UWP 3D Chart](3D-Charts_images/Charts-3D_img2.png)
 
 
 
@@ -529,7 +529,7 @@ SegmentSelectionBrush="Red"
 {% endhighlight %}
 The following screenshot illustrates the result of the above code example.
 
-![Segment selection support in UWP 3D Chart](3D-Charts_images/3D-Charts_img3.png)
+![Segment selection support in UWP 3D Chart](3D-Charts_images/Charts-3D_img3.png)
 
 
 
@@ -593,7 +593,7 @@ The following code example can be used to set series selection in a [`SfChart3D`
 {% endhighlight %}
 The following screenshot is an example of a [`SfChart3D`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D.html) with series selection.
 
-![Series selection support in UWP 3D Chart](3D-Charts_images/3D-Charts_img4.png)
+![Series selection support in UWP 3D Chart](3D-Charts_images/Charts-3D_img4.png)
 
 
 
@@ -661,7 +661,7 @@ YBindingPath="NoOfUsers">
 {% endhighlight %}
 The following image illustrates the result of the above code sample:
 
-![Dynamic explode support in UWP 3D Chart](3D-Charts_images/3D-Charts_img5.png)
+![Dynamic explode support in UWP 3D Chart](3D-Charts_images/Charts-3D_img5.png)
 
 
 

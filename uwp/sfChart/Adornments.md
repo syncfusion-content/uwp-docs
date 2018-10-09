@@ -405,7 +405,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Label to represents the text for adornments in UWP Chart](Adornments_images/label_1.png)
+![Label to represent the text for adornments in UWP Chart](Adornments_images/label_1.png)
 
 
 ### Defining the Label Content

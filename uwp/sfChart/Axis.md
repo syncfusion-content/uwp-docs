@@ -1935,7 +1935,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![GridLines customization support in UWP Chart](Axis_images/Axis_img32.png)
+![Gridlines customization support in UWP Chart](Axis_images/Axis_img32.png)
 
 
 
@@ -1982,7 +1982,7 @@ chart.PrimaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![TickLines customization support in UWP Chart](Axis_images/Axis_img33.png)
+![Ticklines customization support in UWP Chart](Axis_images/Axis_img33.png)
 
 
 
@@ -2157,7 +2157,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![GridLines customization support in UWP Chart](Axis_images/Axis_img34.png)
+![Gridlines customization support in UWP Chart](Axis_images/Axis_img34.png)
 
 
 
