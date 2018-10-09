@@ -1492,7 +1492,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adding tooltip for dragging support in UWP Chart](Interactive-Features_images/Interactive-Features_img22.png)
+![Adding tooltip for dragging in UWP Chart](Interactive-Features_images/Interactive-Features_img22.png)
 
 
 **DragTooltipTemplate**
@@ -1571,7 +1571,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing tooltip support while dragging in UWP Chart](Interactive-Features_images/Interactive-Features_img23.png)
+![Customizing tooltip while dragging in UWP Chart](Interactive-Features_images/Interactive-Features_img23.png)
 
 
 **Drag Tooltip Style**
@@ -1618,7 +1618,7 @@ The following are the API’s in ChartDragTooltipStyle.
 
 {% endtabs %}
 
-![Customizing tooltip support while dragging in UWP Chart](Interactive-Features_images/Drag_Tooltip.png)
+![Customizing tooltip while dragging in UWP Chart](Interactive-Features_images/Drag_Tooltip.png)
 
 
 **Rounding** **Off** **the** **Dragged** **Value**
@@ -2190,7 +2190,7 @@ chart.Behaviors.Add(zooming);
 
 The following image depicts the default view of the zooming toolbar.
 
-![Zooming toolbar support in UWP Chart](Interactive-Features_images/Interactive-Features_img29.jpeg)
+![Zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img29.jpeg)
 
 
 **Positioning** **the** **zooming** **toolbar**

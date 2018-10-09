@@ -103,7 +103,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Displaying empty points support in UWP Chart](EmptyPoints_images/emptypoint_4.png)
+![Displaying empty points in UWP Chart](EmptyPoints_images/emptypoint_4.png)
 
 
 Since the [`EmptyPointValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html) as Zero by default, it will draw a line to 0 when we set [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) as True.
@@ -168,7 +168,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Displaying empty points support in UWP Chart](EmptyPoints_images/emptypoint_5.png)
+![Displaying empty points in UWP Chart](EmptyPoints_images/emptypoint_5.png)
 
 
 ## Customizing Empty Points
@@ -220,7 +220,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing empty points support in UWP Chart](EmptyPoints_images/emptypoint_6.png)
+![Customizing empty points in UWP Chart](EmptyPoints_images/emptypoint_6.png)
 
 
 N> This is the default value for [`EmptyPointStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointStyle.html). So when you enable empty points using [`ShowEmptyPoints`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ShowEmptyPoints.html) , empty point segment render with this [`EmptyPointInterior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointInterior.html).
@@ -291,7 +291,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adding symbol for empty points support in UWP Chart](EmptyPoints_images/emptypoint_7.png)
+![Adding symbol for empty points in UWP Chart](EmptyPoints_images/emptypoint_7.png)
 
 
 ### Symbol and Interior

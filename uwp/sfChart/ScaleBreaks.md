@@ -122,7 +122,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Scale break positioning based on the data count in UWP Chart](ScaleBreak_images/ScaleBreak_img3.jpeg)
+![Positioning the scale break based on the data count in UWP Chart](ScaleBreak_images/ScaleBreak_img3.jpeg)
 
 
 ### Scale
@@ -171,7 +171,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Scale break positioning based on the delta value of axis range in UWP Chart](ScaleBreak_images/ScaleBreak_img4.jpeg)
+![Positioning the scale break based on the delta value of axis range in UWP Chart](ScaleBreak_images/ScaleBreak_img4.jpeg)
 
 
 ### Percent
@@ -244,7 +244,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Scale break positioning based on percent in UWP Chart](ScaleBreak_images/ScaleBreak_img5.jpeg)
+![Positioning the scale break based on percent in UWP Chart](ScaleBreak_images/ScaleBreak_img5.jpeg)
 
 
 ## Multiple Breaks
