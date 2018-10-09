@@ -1593,7 +1593,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Adding units axis labels in UWP Chart](Axis_images/Axis_img29.png)
+![Adding units to axis labels in UWP Chart](Axis_images/Axis_img29.png)
 
 
 
@@ -1636,7 +1636,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Adding units axis labels in UWP Chart](Axis_images/Axis_img30.png)
+![Adding units to axis labels in UWP Chart](Axis_images/Axis_img30.png)
 
 
 
