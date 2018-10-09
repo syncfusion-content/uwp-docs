@@ -7,11 +7,11 @@ control: SfPivotGrid
 documentation: ug
 ---
 
-# Hiding Grand totals
+# Hiding Grand Totals
 
-You can hide the grand totals of pivot grid control by setting the `ShowGrandTotals` property to false. By default, the pivot grid displays the grand total values for both rows and columns.
+You can hide the grand total values of pivot grid control by setting the `ShowGrandTotals` property to false. By default, the pivot grid displays the grand total values of both rows and columns.
 
-Refer to the following code sample to hide both row and column grand total in the pivot grid.
+Refer to the below code sample to hide the grand total values in the pivot grid control.
 
 {% tabs %}
 
@@ -35,4 +35,4 @@ Me.pivotGrid1.ShowGrandTotals = False
 
 {% endtabs %}
 
-![](Hiding-Sub-Totals_images/Hiding-Sub-Totals_image5.png)
+![Hiding grand totals](Hiding-Sub-Totals_images/Hiding-Sub-Totals_image5.png)
