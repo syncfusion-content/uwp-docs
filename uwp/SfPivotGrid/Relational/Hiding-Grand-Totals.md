@@ -35,4 +35,4 @@ Me.pivotGrid1.ShowGrandTotals = False
 
 {% endtabs %}
 
-![Pivot grid without grand totals](Hiding-Grand-Totals_images/Hiding-Grand-Totals_image1.png)
+![Pivot grid without grand totals](Hiding-Grand-Totals_images/HidingGrandTotals.png)
