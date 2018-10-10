@@ -13,7 +13,7 @@ documentation: ug
 
 
 
-![](Overview_images/Overview_img1.png)
+![Overview of UWP Chart](Overview_images/Overview_img1.png)
 
 
 

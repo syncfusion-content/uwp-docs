@@ -85,7 +85,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_1.png)
+![Error bars support in UWP Chart](ErrorBar_images/ErrorBar_1.png)
 
 
 ## Mode
@@ -135,7 +135,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_2.png)
+![Mode for error bars in UWP Chart](ErrorBar_images/ErrorBar_2.png)
 
 
 ### Vertical
@@ -181,7 +181,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_3.png)
+![Mode for error bars in UWP Chart](ErrorBar_images/ErrorBar_3.png)
 
 
 ## Type
@@ -242,7 +242,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_4.png)
+![Fixed error bar type in UWP Chart](ErrorBar_images/ErrorBar_4.png)
 
 ### Percentage
 
@@ -292,7 +292,7 @@ chart.Series.Add(errorBar);
 {% endtabs %}
 
 
-![](ErrorBar_images/ErrorBar_5.png)
+![Percentage error bar type in UWP Chart](ErrorBar_images/ErrorBar_5.png)
 
 
 ### Standard Deviation
@@ -342,7 +342,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_6.png)
+![Standard deviation error bar type in UWP Chart](ErrorBar_images/ErrorBar_6.png)
 
 ### Standard Errors
 
@@ -391,7 +391,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_7.png)
+![Standard error bar type in UWP Chart](ErrorBar_images/ErrorBar_7.png)
 
 
 ### Custom
@@ -445,7 +445,7 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_8.png)
+![Custom error bar type in UWP Chart](ErrorBar_images/ErrorBar_8.png)
 
 
 ## Customization 
@@ -485,7 +485,7 @@ errorBarSeries.HorizontalLineStyle = new LineStyle()
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_9.png)
+![Error bar lines customization support in UWP Chart](ErrorBar_images/ErrorBar_9.png)
 
 {% tabs %}
 
@@ -516,7 +516,7 @@ errorBarSeries.VerticalLineStyle = new LineStyle()
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_10.png)
+![Error bar lines customization support in UWP Chart](ErrorBar_images/ErrorBar_10.png)
 
 
 ### Line Cap Style
@@ -554,7 +554,7 @@ errorBarSeries.HorizontalCapLineStyle = new CapLineStyle()
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_11.png)
+![Error bar lines customization support in UWP Chart](ErrorBar_images/ErrorBar_11.png)
 
 {% tabs %}
 
@@ -587,4 +587,4 @@ errorBarSeries.VerticalCapLineStyle = new CapLineStyle()
 
 {% endtabs %}
 
-![](ErrorBar_images/ErrorBar_12.png)
+![Error bar lines customization support in UWP Chart](ErrorBar_images/ErrorBar_12.png)
