@@ -40,7 +40,7 @@ chart.Legend = new ChartLegend();
 
 Each legend composed of the following parts:
 
-![Parts of legend in UWP Chart](Legend_images/legend_overview_1.png)
+![Legend support in UWP Chart](Legend_images/legend_overview_1.png)
 
 
 ## Legend Icon
@@ -360,7 +360,7 @@ chart.Legend = new ChartLegend()
 
 The series can be collapsed by unchecking the CheckBox as below:
 
-![Collapsing the series in UWP Chart](Legend_images/chkbox_2.png)
+![Series collapsing in UWP Chart](Legend_images/chkbox_2.png)
 
 
 ## ToggleSeriesVisibility 
