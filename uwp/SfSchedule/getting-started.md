@@ -1,6 +1,6 @@
 ---     
 layout: post     
-title: Syncfusion SfSchedule control Getting Started for Xamarin.Forms     
+title: Getting Started | SfSchedule | UWP | Syncfusion     
 description: A quick tour to initial users on Syncfusion SfSchedule control for uwp platform     
 platform: uwp     
 control: SfSchedule     
