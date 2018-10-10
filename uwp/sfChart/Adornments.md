@@ -131,7 +131,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/marker_1.png)
+![Symbol support in UWP Chart](Adornments_images/marker_1.png)
 
 
 ### Customization
@@ -210,7 +210,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/marker_2.png)
+![Symbol customization support in UWP Chart](Adornments_images/marker_2.png)
 
 
 **Custom Template**
@@ -340,7 +340,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/custom_template.png)
+![Template support for symbol in UWP Chart](Adornments_images/custom_template.png)
 
 
 ## Label
@@ -405,7 +405,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_1.png)
+![Label to represent the text for adornments in UWP Chart](Adornments_images/label_1.png)
 
 
 ### Defining the Label Content
@@ -474,7 +474,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_2.png)
+![Adornments label content customization support in UWP Chart](Adornments_images/label_2.png)
 
 
 N>For CategoryAxis, the x values will be taken as the index since it is an indexed based axis. If it is a numerical axis or date time the corresponding x value will be displayed.
@@ -541,7 +541,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_3.png)
+![Adornments label content customization support in UWP Chart](Adornments_images/label_3.png)
 
 
 **YofTot**
@@ -604,7 +604,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_4.png)
+![Adornments label content customization support in UWP Chart](Adornments_images/label_4.png)
 
 
 **DateTime**
@@ -660,7 +660,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/label_5.png)
+![Adornments label content customization support in UWP Chart](Adornments_images/label_5.png)
 
 N> If you are having DateTimeAxis then the corresponding date time value will be displayed. In case of category or numerical axis the value will be converted to OADate.
 
@@ -739,7 +739,7 @@ return value;
 {% endtabs %}
 
 
-![](Adornments_images/labelcontent.png)
+![LabelTemplate support for adornments in UWP Chart](Adornments_images/labelcontent.png)
 
 
 **Label Rotation**
@@ -777,7 +777,7 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 {% endtabs %}
 
-![](Adornments_images/label_rotation.png)
+![Adornments label rotation support in UWP Chart](Adornments_images/label_rotation.png)
 
 ### Customization
 
@@ -871,7 +871,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/custom_label.png)
+![Adornments label customization support in UWP Chart](Adornments_images/custom_label.png)
 
 
 ## Applying Series Brush
@@ -917,7 +917,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/series_palette.png)
+![Series brush for adornments background support in UWP Chart](Adornments_images/series_palette.png)
 
 
 The default appearance of the label can be customized using `LabelTemplate` property as in the below code example:
@@ -996,7 +996,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![](Adornments_images/label_template.png)
+![LabelTemplate support for adornments in UWP Chart](Adornments_images/label_template.png)
 
 
 ## Label Format
@@ -1005,7 +1005,7 @@ YBindingPath="Year2011">
 
 In the following image, you can see the decimal position will be rounded off to two digits by default.
 
-![](Adornments_images/label_format.png)
+![Adornments label format support in UWP Chart](Adornments_images/label_format.png)
 
 
 The following code example demonstrates the rounding off the y value having three decimal digits:
@@ -1098,7 +1098,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/connectorline_1.png)
+![Connector line for adornments support in UWP Chart](Adornments_images/connectorline_1.png)
 
 
 ### Connector Height and Rotation
@@ -1174,7 +1174,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/connectorline_2.png)
+![Connector line style support in UWP Chart](Adornments_images/connectorline_2.png)
 
 
 ### Connector Type
@@ -1183,7 +1183,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 **Line**
 
-![](Adornments_images/connectorline_3.png)
+![Connector type support in UWP Chart](Adornments_images/connectorline_3.png)
 
 **Bezier**
 
@@ -1251,7 +1251,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/connectorline_4.png)
+![Connector type support in UWP Chart](Adornments_images/connectorline_4.png)
 
 
 ## Positioning the Adornments
@@ -1301,7 +1301,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_1.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_1.png)
 
 Also you can define the label alignment using  `HorizontalAlignment` and `VerticalAlignment` properties and the following code example demonstrates the labels positioned using horizontal and vertical alignment.
 
@@ -1340,7 +1340,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_2.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_2.png)
 
 ### Advanced Positioning
 
@@ -1393,7 +1393,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_3.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_3.png)
 
 
 LabelPosition as Inner
@@ -1431,7 +1431,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_4.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_4.png)
 
 
 LabelPosition as Outer
@@ -1469,7 +1469,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_5.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_5.png)
 
 
 **Line Series**
@@ -1511,7 +1511,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_6.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_6.png)
 
 LabelPosition as Inner
 
@@ -1550,7 +1550,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_7.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_7.png)
 
 
 LabelPosition as Outer
@@ -1590,7 +1590,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_8.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_8.png)
 
 LabelPosition as Center
 
@@ -1629,7 +1629,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/adornment_pos_9.png)
+![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_9.png)
 
 
 ## Smart Labels for Accumulation Series
@@ -1712,6 +1712,6 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![](Adornments_images/smartlabel.png)
+![Smart labels for adornments in UWP Chart](Adornments_images/smartlabel.png)
 
 
