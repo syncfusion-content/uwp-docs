@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Dependencies and Dependency assembly details for Syncfusion Essential UWP controls
+title: Control dependencies | Universal Windows Platform | Syncfusion
 description: Control and it's Dependency assembly details for Syncfusion Essential Studio UWP products
 platform: uwp
 control: Control Dependencies
