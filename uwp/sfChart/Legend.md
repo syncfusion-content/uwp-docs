@@ -799,7 +799,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Series visibility on legend in UWP Chart](Legend_images/seriesvisibile.png)
+![Series visibility of legend in UWP Chart](Legend_images/seriesvisibile.png)
 
 
 ## Legend Orientation

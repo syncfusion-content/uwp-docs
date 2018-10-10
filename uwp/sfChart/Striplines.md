@@ -446,7 +446,7 @@ chart.SecondaryAxis = axis;
 
 {% endtabs %}
 
-![Stripline reoccurence in UWP Chart](Striplines_images/stripline_7.png)
+![Stripline re-occurence in UWP Chart](Striplines_images/stripline_7.png)
 
 
 ## Segmented Stripline

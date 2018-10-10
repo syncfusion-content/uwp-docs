@@ -75,7 +75,7 @@ chart.Series.Add(columnSeries);
 ![Axis with sorting in UWP Chart](sorting_chart_images/sorting_2.png)
 
 
-**Sorting x axis in descending order**:
+**Sorting x-axis in descending order**:
 
 {% tabs %}
 
@@ -118,7 +118,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Sorting x axis in descending order in UWP Chart](sorting_chart_images/sorting_3.png)
+![Sorting x-axis in descending order in UWP Chart](sorting_chart_images/sorting_3.png)
 
 
 **Sorting y axis in ascending order**:
@@ -165,7 +165,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Sorting y axis in ascending order in UWP Chart](sorting_chart_images/sorting_4.png)
+![Sorting y-axis in ascending order in UWP Chart](sorting_chart_images/sorting_4.png)
 
 
 **Sorting y axis in descending order**:
@@ -212,7 +212,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Sorting y axis in descending order in UWP Chart](sorting_chart_images/sorting_5.png)
+![Sorting y-axis in descending order in UWP Chart](sorting_chart_images/sorting_5.png)
 
 N> This feature is primarily applicable for indexed (non-linear) axis like [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html). For linear axis like [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html), only the order of rendering will be sorted. i.e., the order in which the data point is being rendered.
 
@@ -272,7 +272,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Sorting x axis in ascending order in UWP Chart](sorting_chart_images/linearaxis_sort1.png)
+![Sorting x-axis in ascending order in UWP Chart](sorting_chart_images/linearaxis_sort1.png)
 
 **Sorting x axis in descending order**
 
@@ -321,7 +321,7 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Sorting x axis in descending order in UWP Chart](sorting_chart_images/linearaxis_sort2.png)
+![Sorting x-axis in descending order in UWP Chart](sorting_chart_images/linearaxis_sort2.png)
 
 **Sorting y axis in ascending order**
 
@@ -417,6 +417,6 @@ chart.Series.Add(columnSeries);
 
 {% endtabs %}
 
-![Sorting y axis in descending order in UWP Chart](sorting_chart_images/linearaxis_sort4.png)
+![Sorting y-axis in descending order in UWP Chart](sorting_chart_images/linearaxis_sort4.png)
 
 
