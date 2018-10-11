@@ -576,7 +576,7 @@ SuggestionMode="StartsWithOrdinal"
 
 {% endtabs %}
 
-![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img11.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img11.png)
 
 ### StartsWithOrdinalCaseSensitive
 
@@ -620,7 +620,7 @@ SuggestionMode="StartsWithOrdinalCaseSensitive"
 
 {% endtabs %}
 
-![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img12.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img12.png)
 
 ### Contains
 
@@ -840,7 +840,7 @@ SuggestionMode="Equals"
 
 {% endtabs %}
 
-![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img17.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img17.png)
 
 ### EqualsCaseSensitive
 
@@ -884,7 +884,7 @@ SuggestionMode="EqualsCaseSensitive"
 
 {% endtabs %}
 
-![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img18.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img18.png)
 
 ### EqualsOrdinal
 
@@ -928,7 +928,7 @@ SuggestionMode="EqualsOrdinal"
 
 {% endtabs %}
 
-![C:/Users/labuser/Desktop/a.png](AutoComplete_images/AutoComplete_img19.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img19.png)
 
 ### EqualsOrdinalCaseSensitive
 
