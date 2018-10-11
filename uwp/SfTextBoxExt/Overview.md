@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Overview of SfTextBoxExt control for UWP  
-description: This section provides an feature overview of SfTextBoxExt control for UWP. 
+description: This section provides an overview about the features in SfTextBoxExt control for UWP. 
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
