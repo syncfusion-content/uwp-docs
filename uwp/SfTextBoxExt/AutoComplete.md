@@ -177,7 +177,7 @@ SearchItemPath="Name"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img1.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img1.png)
 
 N>  Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section.
 
@@ -238,7 +238,7 @@ textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img3.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img3.png)
 
 ### Append
 
@@ -280,7 +280,7 @@ textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img4.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img4.png)
 
 N>  By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard.
 
@@ -324,7 +324,7 @@ textBoxExt.AutoCompleteMode = Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img6.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img6.png)
 
 
 
@@ -374,7 +374,7 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img7.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img7.png)
 
 ### Filtering Customization
 
@@ -443,7 +443,7 @@ SuggestionMode="None"
 
 {% endtabs %}
 						
-![](AutoComplete_images/AutoComplete_img8.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img8.png)
 
 
 ### StartsWith
@@ -488,7 +488,7 @@ SuggestionMode="StartsWith"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img9.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img9.png)
 
 ### StartsWithCaseSensitive
 
@@ -532,7 +532,7 @@ textBoxExt.SuggestionMode = Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.Sta
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img10.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img10.png)
 
 ### StartsWithOrdinal
 
@@ -664,7 +664,7 @@ SuggestionMode="Contains"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img13.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img13.png)
 
 ### ContainsCaseSensitive
 
@@ -708,7 +708,7 @@ SuggestionMode="ContainsCaseSensitive"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img14.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img14.png)
 
 ### ContainsOrdinal
 
@@ -752,7 +752,7 @@ SuggestionMode="ContainsOrdinal"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img15.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img15.png)
 
 ### ContainsOrdinalCaseSensitive
 
@@ -796,7 +796,7 @@ SuggestionMode="ContainsOrdinalCaseSensitive"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img16.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img16.png)
 
 ### Equals
 
@@ -972,7 +972,7 @@ SuggestionMode="EqualsOrdinalCaseSensitive"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img20.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img20.png)
 
 ### Custom
 
@@ -1076,7 +1076,7 @@ autoComplete.Filter = AddressOf MyFilter
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img21.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img21.png)
 
 N>  Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend.
 
@@ -1122,7 +1122,7 @@ MinimumPrefixCharacters="2"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img24.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img24.png)
 
 ### Popup Delay
 
@@ -1224,7 +1224,7 @@ SuggestionBoxPlacement="Top"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img25.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img25.png)
 
 ### Bottom
 
@@ -1268,7 +1268,7 @@ SuggestionBoxPlacement="Bottom"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img26.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img26.png)
 
 ### None
 
@@ -1312,7 +1312,7 @@ SuggestionBoxPlacement="None"
 
 {% endtabs %}
 
-![](AutoComplete_images/AutoComplete_img27.png)
+![AutoComplete_images](AutoComplete_images/AutoComplete_img27.png)
 
 N>  In None mode, the drop-down list will not open but the Suggestions property of SfTextBoxExt gets filled with filtered suggestions so users who want to display the suggestions in a separate list box can use this option.
 

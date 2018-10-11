@@ -37,7 +37,7 @@ textBox.ShowSuggestionsOnFocus = True
 
 {% endtabs %}
 
-![](Viewing-Suggestions-on-Control-Focus_images/Viewing-Suggestions-on-Control-Focus_img1.png)
+![ Viewing Suggestions on Control Focus](Viewing-Suggestions-on-Control-Focus_images/Viewing-Suggestions-on-Control-Focus_img1.png)
 
 
 

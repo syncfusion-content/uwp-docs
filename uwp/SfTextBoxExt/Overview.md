@@ -11,7 +11,7 @@ documentation: ug
 
 SfTextBoxExt is an extended version of TextBox control. Most of the functionality of SfTextBoxExt is inherited from the [TextBox](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.textbox) class.
 
-![](Overview_images/Overview_img1.png)
+![Overview of SfTextBoxExt control for UWP ](Overview_images/Overview_img1.png)
 
 ### Key Features
 
