@@ -72,7 +72,7 @@ chart.Watermark.Content = new TextBlock()
 
 {% endtabs %}
 
-![](Watermark_images/Watermark_1.png)
+![Text watermark support in UWP Chart](Watermark_images/Watermark_1.png)
 
 ## Adding image watermark
 
@@ -127,6 +127,6 @@ chart.Watermark.Content = new Image()
 
 {% endtabs %}
 
-![](Watermark_images/Watermark_2.png)
+![Image watermark support in UWP Chart](Watermark_images/Watermark_2.png)
 
 

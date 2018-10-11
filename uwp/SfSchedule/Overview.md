@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview  | SfSchedule | uwp | Syncfusion
-description: Overview 
+description: Overview of SfSchedule control in UWP
 platform: uwp
 control: SfSchedule
 documentation: ug
