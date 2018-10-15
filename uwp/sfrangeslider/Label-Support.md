@@ -121,7 +121,7 @@ In the following sample, we have bound the CustomCollection property to CustomLa
 
 
 
-![RangeSlider CustomLabels view](Label-Support_images/Label-Support_img1.png)
+![CustomLabels](Label-Support_images/CustomLabels.png)
 
 
 ## ShowCustomLabels
@@ -155,7 +155,7 @@ The default value of ShowCustomLabels is false. When set to true, it will displa
 
 {% endtabs %}
 
-![RangeSlider ShowCustomLabels view](Label-Support_images/Label-Support_img2.png)
+![ShowCustomLabels](Label-Support_images/ShowCustomLabels.png)
 
 ## LabelPlacement
 
@@ -192,7 +192,7 @@ The following code sample shows the usage of the LabelPlacement property. The ou
 
 {% endtabs %}
 
-![RangeSlider LabelPlacement BottomRight view](Label-Support_images/Label-Support_img3.png)
+![LabelPlacement BottomRight](Label-Support_images/LabelPlacementBottomRight.png)
 
 {% tabs %}
 
@@ -222,7 +222,7 @@ CustomLabels="{Binding CustomCollection}" LabelPlacement="TopLeft"/>
 
 {% endtabs %}
 
-![RangeSlider LabelPlacement TopLeft view](Label-Support_images/Label-Support_img4.png)
+![LabelPlacement TopLeft](Label-Support_images/LabelPlacementTopLeft.png)
 
 ## ShowValueLabels
 
@@ -254,7 +254,7 @@ The default value of the ShowValueLabels property is false. When set to true, it
 
 {% endtabs %}
 
-![RangeSlider ShowValueLabels view](Label-Support_images/Label-Support_img5.png)
+![ShowValueLabels](Label-Support_images/ShowValueLabels.png)
 
 ## ValuePlacement
 
@@ -291,7 +291,7 @@ The following code sample shows the usage of ValuePlacement property. The output
 
 {% endtabs %}
 
-![RangeSlider ValuePlacement TopLeft view](Label-Support_images/Label-Support_img6.png)
+![ValuePlacement TopLeft](Label-Support_images/ValuePlacementTopLeft.png)
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ The following code sample shows the usage of ValuePlacement property. The output
 
 {% endtabs %}
 
-![RangeSlider ValuePlacement BottomRight view](Label-Support_images/Label-Support_img7.png)
+![ValuePlacement BottomRight](Label-Support_images/ValuePlacementBottomRight.png)
 
 ## LabelOrientation
 
@@ -356,7 +356,7 @@ The following code sample shows the usage of LabelOrientation property. The outp
 
 {% endtabs %}
 
-![RangeSlider LabelOrientation Horizontal view](Label-Support_images/Label-Support_img8.png)
+![LabelOrientation Horizontal](Label-Support_images/LabelOrientationHorizontal.png)
 
 {% tabs %}
 
@@ -385,7 +385,7 @@ The following code sample shows the usage of LabelOrientation property. The outp
 
 {% endtabs %}
 
-![RangeSlider LabelOrientation Vertical view](Label-Support_images/Label-Support_img9.png)
+![LabelOrientation Vertical](Label-Support_images/LabelOrientationVertical.png)
 
 
 ## Customizing label font
@@ -397,7 +397,21 @@ The range slider control provides the `FontFamily`, `FontWeight` , `FontStyle` a
 
 {% highlight xaml %}
 
-<editors:SfRangeSlider x:Name="rangeSlider" Width="300" FontFamily="Times New Roman" FontSize="15" FontStyle="Normal" FontWeight="Bold" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Horizontal"/>
+<Page
+    x:Class="RangeSlider_Sample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RangeSlider_Sample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <input:SfRangeSlider x:Name="rangeSlider"  Width="300" HorizontalAlignment="Center"  VerticalAlignment="Center" TickFrequency="20" TickPlacement="BottomRight"  LabelPlacement="BottomRight" Orientation="Horizontal"
+         FontFamily="Times New Roman" FontSize="15" FontStyle="Normal" FontWeight="Bold" ShowValueLabels="True" ValuePlacement="BottomRight"/>
+    </Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -407,24 +421,80 @@ The range slider control provides the `FontFamily`, `FontWeight` , `FontStyle` a
 
 {% highlight c# %}
 
-   rangeSlider.FontSize = 15;
-   rangeSlider.FontStyle = Windows.UI.Text.FontStyle.Normal;
-   rangeSlider.FontWeight = Windows.UI.Text.FontWeights.Bold;
-   rangeSlider.FontFamily = new FontFamily("Times New Roman");
+using Syncfusion.UI.Xaml.Controls.Input;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
+
+
+namespace RangeSlider_Sample
+{
+    /// <summary>
+    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// </summary>
+    public sealed partial class MainPage : Page
+    {
+        public MainPage()
+        {
+            this.InitializeComponent();
+            SfRangeSlider rangeSlider = new SfRangeSlider()
+            {
+                Width = 300,
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center,
+                TickFrequency = 20,
+                TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.BottomRight,
+                LabelPlacement = LabelPlacement.BottomRight,
+                Orientation = Orientation.Horizontal,
+                FontFamily = new FontFamily("Times New Roman"),
+                FontSize = 15,
+                FontStyle = Windows.UI.Text.FontStyle.Normal,
+                FontWeight = Windows.UI.Text.FontWeights.Bold,
+                ShowValueLabels = true,
+                ValuePlacement = ValuePlacement.BottomRight
+            };
+            this.Content = rangeSlider;
+        }
+    }
+}
+
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-   rangeSlider.FontSize = 15
-   rangeSlider.FontStyle = Windows.UI.Text.FontStyle.Normal
-   rangeSlider.FontWeight = Windows.UI.Text.FontWeights.Bold
-   rangeSlider.FontFamily = new FontFamily("Times New Roman")
+
+Imports Syncfusion.UI.Xaml.Controls.Input
+''' <summary>
+''' An empty page that can be used on its own or navigated to within a Frame.
+''' </summary>
+Public NotInheritable Class MainPage
+    Inherits Page
+    Public Sub New()
+        InitializeComponent()
+        Dim rangeSlider As New SfRangeSlider()
+        rangeSlider.Width = 300
+        rangeSlider.HorizontalAlignment = HorizontalAlignment.Center
+        rangeSlider.VerticalAlignment = VerticalAlignment.Center
+        rangeSlider.TickFrequency = 20
+        rangeSlider.TickPlacement = Syncfusion.UI.Xaml.Controls.Input.TickPlacement.BottomRight
+        rangeSlider.LabelPlacement = LabelPlacement.BottomRight
+        rangeSlider.Orientation = Orientation.Horizontal
+        rangeSlider.ShowValueLabels = True
+        rangeSlider.ValuePlacement = ValuePlacement.BottomRight
+        rangeSlider.FontSize = 15
+        rangeSlider.FontStyle = Windows.UI.Text.FontStyle.Normal
+        rangeSlider.FontWeight = Windows.UI.Text.FontWeights.Bold
+        rangeSlider.FontFamily = New FontFamily("Times New Roman")
+        Me.Content = rangeSlider
+    End Sub
+End Class
+
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![RangeSlider Font Customization view](Label-Support_images/Label-Support_img10.png)
+![Customizing Label Font](Label-Support_images/CustomizingLabelFont.png)
 
 
