@@ -94,6 +94,11 @@ listAdv.AbstractListId = 1;
 // Adds list to the document.
 richTextBoxAdv.Document.Lists.Add(listAdv);
 
+// Add list item 1
+ParagraphAdv paragraphAdv = new ParagraphAdv();
+paragraphAdv.Inlines.Add(new SpanAdv() { Text = "List Item 1" });
+richTextBoxAdv.Document.Sections[0].Blocks.Add(paragraphAdv);
+
 // Defines the list format for the paragraph.
 paragraphAdv.ParagraphFormat.ListFormat.ListId = 1;
 paragraphAdv.ParagraphFormat.ListFormat.ListLevelNumber = 0;
