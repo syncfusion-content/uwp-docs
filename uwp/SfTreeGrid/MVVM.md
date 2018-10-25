@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM approach | TreeGrid | UWP | Syncfusion
-description: This section explains about binding the data to TreeGrid control uisng MVVM pattern
+description: This section explains about binding the data to TreeGrid control using MVVM pattern
 platform: uwp
 control: SfTreeGrid
 documentation: ug
@@ -13,7 +13,7 @@ This section explains various MVVM requirements using SfTreeGrid.
 
 ## Bind the SelectedItem property of treegrid
 
-You can bind the [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property directly to the treegrid by setting the `SfTreeGrid.SelectedItem` property.
+You can bind the [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property directly to treegrid by setting the `SfTreeGrid.SelectedItem` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -74,7 +74,7 @@ In the following example, ViewModel command receives the underlying data object 
 {% endhighlight %}
 {% endtabs %}
 
-![](MVVM_images/MVVM_img1.jpeg)
+![Button command image](MVVM_images/MVVM_img1.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-button-command-to-view-model-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/UWP).
 
@@ -100,7 +100,7 @@ public ObservableCollection<string> EyeColorList
 {% endhighlight %}
 {% endtabs %}
 
-![](MVVM_images/MVVM_img2.jpeg)
+![ComboBox column image](MVVM_images/MVVM_img2.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-bind-combobox-column-ItemsSource-from-view-model-in-wpf-and-uwp-treegrid-in-mvvm/tree/master/UWP).
 
