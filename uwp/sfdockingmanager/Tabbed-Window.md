@@ -242,11 +242,10 @@ dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacemen
 
 <table>
 <tr>
-<td>
-*Property*<br/><br/></td><td>
-*Data* *Type* <br/><br/></td><td>
-*Type*<br/><br/></td><td>
-*Description*<br/><br/></td></tr>
+<th>Property</th>
+<th>Data Type</th>
+<th>Type</th>
+<th>Description</th></tr>
 <tr>
 <td>
 DockTabItemSelectedBackground<br/><br/><br/><br/></td><td>
