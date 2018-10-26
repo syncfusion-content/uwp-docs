@@ -123,7 +123,7 @@ Create new Universal Windows Platform project in Visual Studio to display SfTree
 
 SfTreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically
 
-![](GettingStarted_images/GettingStarted_img1.png)
+![Add control vis designer](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding control manually in XAML
 
@@ -135,8 +135,6 @@ In order to add control manually in XAML, do the below steps,
 * Syncfusion.SfGrid.UWP
 * Syncfusion.SfInput.UWP
 * Syncfusion.SfShared.UWP
-
- ![](GettingStarted_images/GettingStarted_img2.png)
 
 2.Import SfTreeGrid control namespace `Syncfusion.UI.Xaml.TreeGrid` in XAML page.
 
@@ -390,7 +388,7 @@ public sealed partial class MainPage : Page
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img3.png)
+![Binding data](GettingStarted_images/GettingStarted_img3.png)
 
 ### Binding Nested collection with SfTreeGrid
 
@@ -537,7 +535,7 @@ namespace NestedCollectionDemo
 {% endhighlight %}
 {% endtabs %}
 
-![](GettingStarted_images/GettingStarted_img4.png)
+![Binding to data](GettingStarted_images/GettingStarted_img4.png)
 
 ### Populate SfTreeGrid in on-demand (unbound mode)
 
@@ -706,7 +704,7 @@ private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEv
 
 You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree()](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RepopulateTree.html) method.
 
-![](GettingStarted_images/GettingStarted_img3.png)
+![Populate tree grid](GettingStarted_images/GettingStarted_img3.png)
 
 ### Populate child nodes asynchronously
 
@@ -797,7 +795,7 @@ public class ViewModel
     public ObservableCollection<EmployeeInfo> GetParentEmployees()
     {
         ObservableCollection<EmployeeInfo> employeeDetails = new ObservableCollection<EmployeeInfo>();
-        employeeDetails.Add(new EmployeeInfo() { FirstName = "Ferando", LastName = "Joseph", Title = "Management", Salary = 2000000, ReportsTo = -1, ID = 2 });
+        employeeDetails.Add(new EmployeeInfo() { FirstName = "Fernando", LastName = "Joseph", Title = "Management", Salary = 2000000, ReportsTo = -1, ID = 2 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "John", LastName = "Adams", Title = "Accounts", Salary = 2000000, ReportsTo = -1, ID = 3 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Thomas", LastName = "Jefferson", Title = "Sales", Salary = 300000, ReportsTo = -1, ID = 4 });
         employeeDetails.Add(new EmployeeInfo() { FirstName = "Andrew", LastName = "Madison", Title = "Marketing", Salary = 4000000, ReportsTo = -1, ID = 5 });
@@ -810,13 +808,13 @@ public class ViewModel
     //internal void async IEnumerable GetEmployees(int iD)
     public async Task<IEnumerable<EmployeeInfo>> GetEmployees(int iD)
     {
-        Debug.WriteLine("## ThreadId = " + Environment.CurrentManagedThreadId + " Begin calling viewModel.GetEmployees(emp.ID) ##");
+        Debug.WriteLine("## ThreadId = " + Environment.CurrentManagedThreadId + " Begin calling viewModel.GetEmployees(ID) ##");
 
         ObservableCollection<EmployeeInfo> employeeDetails = new ObservableCollection<EmployeeInfo>();
 
         Debug.WriteLine("## ThreadId = " + Environment.CurrentManagedThreadId + " Before calling await Task.Delay(1000) ##");
 
-        // ====>>> Used to simulate a Web Service that supports the pattern asyn / await (here we just use Task.Delay() instead
+        // ====>>> Used to simulate a Web Service that supports the pattern async / await (here we just use Task.Delay() instead
         await Task.Delay(1000);
            
 
@@ -830,7 +828,7 @@ public class ViewModel
         }
         else if (iD == 3)
         {
-            employeeDetails.Add(new EmployeeInfo() { FirstName = "Nancy", LastName = "Davolio", ID = 12, Salary = 850000, ReportsTo = 3, Title = "Accounts Manager" });
+            employeeDetails.Add(new EmployeeInfo() { FirstName = "Nancy", LastName = "King", ID = 12, Salary = 850000, ReportsTo = 3, Title = "Accounts Manager" });
             employeeDetails.Add(new EmployeeInfo() { FirstName = "Margaret", LastName = "Peacock", ID = 13, Salary = 700000, ReportsTo = 3, Title = "Accountant" });
             employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Suyama", ID = 14, Salary = 700000, ReportsTo = 3, Title = "Accountant" });
             employeeDetails.Add(new EmployeeInfo() { FirstName = "Robert", LastName = "King", ID = 15, Salary = 650000, ReportsTo = 3, Title = "Accountant" });
@@ -840,9 +838,9 @@ public class ViewModel
         {
             employeeDetails.Add(new EmployeeInfo() { FirstName = "Laura", LastName = "Callahan", ID = 16, Salary = 900000, ReportsTo = 4, Title = "Sales Manager" });
             employeeDetails.Add(new EmployeeInfo() { FirstName = "Anne", LastName = "Dodsworth", ID = 17, Salary = 800000, ReportsTo = 4, Title = "Sales Representative" });
-            employeeDetails.Add(new EmployeeInfo() { FirstName = "Albert", LastName = "Hellstern", ID = 18, Salary = 750000, ReportsTo = 4, Title = "Sales Representative" });
+            employeeDetails.Add(new EmployeeInfo() { FirstName = "Albert", LastName = "Hells", ID = 18, Salary = 750000, ReportsTo = 4, Title = "Sales Representative" });
             employeeDetails.Add(new EmployeeInfo() { FirstName = "Tim", LastName = "Smith", ID = 19, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
-            employeeDetails.Add(new EmployeeInfo() { FirstName = "Justin", LastName = "Brid", ID = 20, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
+            employeeDetails.Add(new EmployeeInfo() { FirstName = "Justin", LastName = "Bride", ID = 20, Salary = 700000, ReportsTo = 4, Title = "Sales Representative" });
         }
         else if (iD == 5)
         {
@@ -851,9 +849,9 @@ public class ViewModel
         }
         else if (iD == 6)
         {
-            employeeDetails.Add(new EmployeeInfo() { FirstName = "Laurent", LastName = "Pereira", ID = 23, Salary = 900000, ReportsTo = 6, Title = "HR Manager" });
-            employeeDetails.Add(new EmployeeInfo() { FirstName = "Syed", LastName = "Abbas", ID = 24, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
-            employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Alberts", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
+            employeeDetails.Add(new EmployeeInfo() { FirstName = "Laurent", LastName = "Peregrine", ID = 23, Salary = 900000, ReportsTo = 6, Title = "HR Manager" });
+            employeeDetails.Add(new EmployeeInfo() { FirstName = "Syd", LastName = "Abba", ID = 24, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
+            employeeDetails.Add(new EmployeeInfo() { FirstName = "Amy", LastName = "Albert", ID = 25, Salary = 650000, ReportsTo = 6, Title = "HR Assistant" });
         }
         else if (iD == 9)
         {
@@ -871,7 +869,7 @@ public class ViewModel
             employeeDetails.Add(new EmployeeInfo() { FirstName = "Michael", LastName = "Suyama", ID = 24, Salary = 700000, ReportsTo = 11, Title = "Accountant" });
         }
 
-        Debug.WriteLine("## ThreadId = " + Environment.CurrentManagedThreadId + " End calling viewModel.GetEmployees(emp.ID) ##");
+        Debug.WriteLine("## ThreadId = " + Environment.CurrentManagedThreadId + " End calling viewModel.GetEmployees(ID) ##");
 
         return employeeDetails;
     }
@@ -894,16 +892,16 @@ private async void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeI
     //if ParentItem not null, then set args.ChildList to the child items for the given ParentItem.
     else
     {
-        EmployeeInfo emp = args.ParentItem as EmployeeInfo;
+        EmployeeInfo ems = args.ParentItem as EmployeeInfo;
               
-        if (emp != null)
+        if (ems != null)
         {
             await Task.Run(async () =>
             {
                 await this.treeGrid.Dispatcher.RunAsync(CoreDispatcherPriority.High, async() =>
                 {
                     //Get the child items with time delay
-                    var childItems = await viewModel.GetEmployees(emp.ID);
+                    var childItems = await viewModel.GetEmployees(ems.ID);
 
                     //Populate the child nodes based on the child items
                     args.ParentNode.PopulateChildNodes(childItems);

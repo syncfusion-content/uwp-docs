@@ -40,7 +40,7 @@ treeGrid.Columns["FirstName"].AllowEditing = true;
 
 N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEditing`
 
-![](Editing_images/Editing_img1.png)
+![Editing image](Editing_images/Editing_img1.png)
 
 N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navigation and editing.
 
@@ -404,7 +404,7 @@ treeGrid.CurrentCellBeginEdit += TreeGrid_CurrentCellBeginEdit;void TreeGrid_Cur
 {% endhighlight %}
 {% endtabs %}
 
-## ReadOny
+## ReadOnly
 
 You can prevent users from modifying the contents of a treegrid cell by setting the [SfTreeGrid.IsReadOnly ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~IsReadOnly.html) property, but the user can able to perform copy and selection operation.
 
