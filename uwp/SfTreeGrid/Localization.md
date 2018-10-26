@@ -31,7 +31,7 @@ To localize the treegrid, drag and drop window based on CurrentUICulture using
 
 2.In Add New Item wizard, select the `Resource File` option and name the filename as `Syncfusion.SfGrid.UWP.Resources.&lt;culture name&gt;.resw`.
 
-![https://help.syncfusion.com/uwp/sfdatagrid/Localization_images/Localization_img1.png](Localization_images/Localization_img1.jpeg)
+![Localization resource image](Localization_images/Localization_img1.jpeg)
 
 3.For example, you have to give name as `Syncfusion.SfGrid.UWP.Resources.de.resw` for German culture.
 
@@ -39,7 +39,7 @@ To localize the treegrid, drag and drop window based on CurrentUICulture using
 
 5.Now the resource file is added.
 
-![https://help.syncfusion.com/uwp/sfdatagrid/Localization_images/Localization_img2.png](Localization_images/Localization_img2.jpeg)
+![Localization resource1 image](Localization_images/Localization_img2.jpeg)
 
 6.Add the Name/Value pair in Resource Designer of `Syncfusion.SfGrid.UWP.Resources.de.resw` file and change its corresponding value to corresponding culture.
 ![Localization image](Localization_images/Localization_img3.jpeg)
@@ -54,7 +54,7 @@ You can download the sample [here](http://www.syncfusion.com/downloads/support/d
 
 You can edit default resource file by adding it to your application where the treegrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-531431521.zip).
 
-![https://help.syncfusion.com/uwp/sfdatagrid/Localization_images/Localization_img5.png](Localization_images/Localization_img5.jpeg)
+![Default resources image](Localization_images/Localization_img5.jpeg)
 
 Now, change the Name/Value pair in Resource Designer of `Syncfusion.SfGrid.UWP.Resources.resw` file.
 
