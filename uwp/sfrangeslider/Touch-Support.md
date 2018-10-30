@@ -50,7 +50,7 @@ The following code example and screen shot illustrate this.
 
 {% endtabs %}
 
-![](Touch-Support_images/Touch-Support_img1.png)
+![RangeSlider MoveToPoint view](Touch-Support_images/Touch-Support_img1.png)
 
 ### IncrementBySmallChange
 
@@ -84,7 +84,7 @@ The following code example and screen shot illustrates this.
 
 {% endtabs %}
 
-![](Touch-Support_images/Touch-Support_img2.png)
+![RangeSlider MoveToPoint IncrementBySmallChange view](Touch-Support_images/Touch-Support_img2.png)
 
 ### IncrementByLargeChange
 
@@ -119,7 +119,7 @@ The following code example and screen shot illustrates this.
 
 {% endtabs %}
 
-![](Touch-Support_images/Touch-Support_img3.png)
+![RangeSlider MoveToPoint IncrementByLargeChange view](Touch-Support_images/Touch-Support_img3.png)
 
 ### None
 
@@ -154,7 +154,7 @@ The following code example and screen shot illustrates this.
 
 {% endtabs %}
 
-![](Touch-Support_images/Touch-Support_img4.png)
+![RangeSlider MoveToPoint None view](Touch-Support_images/Touch-Support_img4.png)
 
 
 

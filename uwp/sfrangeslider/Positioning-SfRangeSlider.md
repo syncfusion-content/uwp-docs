@@ -16,7 +16,7 @@ The Orientation property has the following two options.
 
 The default option is Horizontal.  
 
-![](Orientation_images/Orientation_img1.jpg)
+![RangeSlider Orientation Horizontal view](Orientation_images/Orientation_img1.jpg)
 
 The following code sample shows how to set Vertical Orientation to SfRangeSlider.  
 
@@ -46,7 +46,7 @@ The following code sample shows how to set Vertical Orientation to SfRangeSlider
 
 {% endtabs %}
 
-![](Orientation_images/Orientation_img2.jpg)
+![RangeSlider Orientation Vertical view](Orientation_images/Orientation_img2.jpg)
 
 
 
