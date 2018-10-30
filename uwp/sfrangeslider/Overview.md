@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of SfRangeSlider control for UWP
-description: Overview of SfRangeSlider control for UWP
+description:This section provides an features overview of SfRangeSlider control for UWP.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The range slider control for UWP allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
 
-![](Overview_images/Overview_img1.png)
+![RangeSlider Sample view](Overview_images/Overview_img1.png)
 
 # Key features
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The Thumb tooltip shows the current value on which the Thumb stands. 
 
-![](Thumb-ToolTip_images/Thumb-ToolTip_img1.jpg)
+![RangeSlider Thumb ToolTip view](Thumb-ToolTip_images/Thumb-ToolTip_img1.jpg)
 
 ## Thumb ToolTip Precision  
 
@@ -43,7 +43,7 @@ ThumbToolTipPrecision property is used to define the precision of the value disp
 
 {% endtabs %}
 
-![](Thumb-ToolTip_images/Thumb-ToolTip_img2.jpg)
+![RangeSlider ThumbToolTipPrecision view](Thumb-ToolTip_images/Thumb-ToolTip_img2.jpg)
 
 ## Thumb ToolTip Position 
 
@@ -83,7 +83,7 @@ Tooltip placed either below the Thumb in horizontal orientation or right of the 
 
 {% endtabs %}
 
-![](Thumb-ToolTip_images/Thumb-ToolTip_img3.jpg)
+![RangeSlider ThumbToolTipPlacement BottomRight view](Thumb-ToolTip_images/Thumb-ToolTip_img3.jpg)
 
 N>  This option will show tooltip to right in vertical orientation.
 
@@ -117,7 +117,7 @@ Tooltip placed either above the Thumb in horizontal orientation or left of the T
 
 {% endtabs %}
 
-![](Thumb-ToolTip_images/Thumb-ToolTip_img5.jpg)
+![RangeSlider ThumbToolTipPlacement TopLeft view](Thumb-ToolTip_images/Thumb-ToolTip_img5.jpg)
 
 N>  This option will show tooltip to left in vertical orientation.
 
@@ -125,7 +125,7 @@ N>  This option will show tooltip to left in vertical orientation.
 
 Tooltip will not appear. 
 
-![](Thumb-ToolTip_images/Thumb-ToolTip_img7.jpg)
+![RangeSlider Tooltip None view](Thumb-ToolTip_images/Thumb-ToolTip_img7.jpg)
 
 
 
