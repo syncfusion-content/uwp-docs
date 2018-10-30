@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tabbed Window of Syncfusion SfDockingManager control for UWP
+title: Tabbed Window | SfDockingManager | UWP | Syncfusion 
 description: Learn how to change the tab alignments and closing behaviour of Tabbed Window
 platform: uwp
 control: SfDockingManager
@@ -33,7 +33,7 @@ Child window can be arranged as Tabbed window by setting `TargetName` and side v
 
 {% endtabs %}
 
-![](Tabbed-Window-images/Tabbed-Window-img1.jpeg)
+![UI structure of TabbedWindow](Tabbed-Window-images/Tabbed-Window-img1.jpeg)
 
 
 ## Tab Alignments
@@ -86,7 +86,7 @@ dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacemen
 
 {% endtabs %}
 
-![](Tabbed-Window-images/Tab-Alignments-img1.jpeg)
+![DockTabPlacement is bottom](Tabbed-Window-images/Tab-Alignments-img1.jpeg)
 
 
 * Setting `DockTabPlacement` as `Top`
@@ -134,7 +134,7 @@ dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacemen
 
 {% endtabs %}
 
-![](Tabbed-Window-images/Tab-Alignments-img2.jpeg)
+![DockTabPlacement is top](Tabbed-Window-images/Tab-Alignments-img2.jpeg)
 
 
 * Setting `DockTabPlacement` as `Left`
@@ -183,7 +183,7 @@ dockingManager.DockTabPlacement= Syncfusion.UI.Xaml.Controls.Layout.TabPlacement
 
 {% endtabs %}
 
-![](Tabbed-Window-images/Tab-Alignments-img3.jpeg)
+![DockTabPlacement is left](Tabbed-Window-images/Tab-Alignments-img3.jpeg)
 
 
 * Setting `DockTabPlacement` as `Right`
@@ -231,7 +231,7 @@ dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacemen
 
 {% endtabs %}
 
-![](Tabbed-Window-images/Tab-Alignments-img4.jpeg)
+![DockTabPlacement is right](Tabbed-Window-images/Tab-Alignments-img4.jpeg)
 
 
 ## TabbedWindow Customization
@@ -242,11 +242,10 @@ dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacemen
 
 <table>
 <tr>
-<td>
-*Property*<br/><br/></td><td>
-*Data* *Type* <br/><br/></td><td>
-*Type*<br/><br/></td><td>
-*Description*<br/><br/></td></tr>
+<th>Property</th>
+<th>Data Type</th>
+<th>Type</th>
+<th>Description</th></tr>
 <tr>
 <td>
 DockTabItemSelectedBackground<br/><br/><br/><br/></td><td>
@@ -293,18 +292,13 @@ Used to set the background for Items Panel of the tabbed Dock Window<br/><br/></
 
 
 {% highlight XAML %}
-
-    <syncfusion:SfDockingManager DockTabPanelBackground="GreenYellow"   DockTabItemBackground="Yellow"              DockTabItemForeground="Red" DockTabItemSelectedBackground="Orange" DockTabItemSelectedForeground="White" DockTabItemMouseOverBackground="Green" DockTabItemMouseOverForeground="Red">
-            
-         <ContentControl syncfusion:SfDockingManager.Header="Dock1" Name="Dock1" syncfusion:SfDockingManager.DockState="Dock"/>
-
-           <ContentControl syncfusion:SfDockingManager.Header="Dock2" syncfusion:SfDockingManager.SideInDockedMode="Tabbed" syncfusion:SfDockingManager.TargetNameInDockedMode="Dock1" syncfusion:SfDockingManager.DockState="Dock"/>
-
-    </syncfusion:SfDockingManager>
-
+<syncfusion:SfDockingManager DockTabPanelBackground="GreenYellow"   DockTabItemBackground="Yellow"              DockTabItemForeground="Red" DockTabItemSelectedBackground="Orange" DockTabItemSelectedForeground="White" DockTabItemMouseOverBackground="Green" DockTabItemMouseOverForeground="Red">
+    <ContentControl syncfusion:SfDockingManager.Header="Dock1" Name="Dock1" syncfusion:SfDockingManager.DockState="Dock"/>
+    <ContentControl syncfusion:SfDockingManager.Header="Dock2" syncfusion:SfDockingManager.SideInDockedMode="Tabbed" syncfusion:SfDockingManager.TargetNameInDockedMode="Dock1" syncfusion:SfDockingManager.DockState="Dock"/>
+</syncfusion:SfDockingManager>
 {%endhighlight%}
 
-![](Tabbed-Window-images/Tabbed-Window-img5.png)
+![Tabbed window customization](Tabbed-Window-images/Tabbed-Window-img5.png)
 
 
 ## Set icon to TabbedWindow 
@@ -364,4 +358,4 @@ SfDockingManager.SetIcon(SolutionExplorer, image);
 
 {% endtabs %}
 
-![](Tabbed-Window-images/SetIconImage.png)
+![Tabbed window has custom icon](Tabbed-Window-images/SetIconImage.png)
