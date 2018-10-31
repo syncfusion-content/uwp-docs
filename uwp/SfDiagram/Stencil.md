@@ -137,7 +137,7 @@ The following example illustrates how to add the Symbol into a Collection:
 	<!--Adding Symbol into a collection-->
 	<local:SymbolItem GroupName="Flow Chart" Symbol="Star"
                                SymbolTemplate="{StaticResource Star}"/>
-</local:SymbolColl>
+</local:Symbols>
 
 {% endhighlight %}
 {% endtabs %}
