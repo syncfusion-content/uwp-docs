@@ -175,9 +175,8 @@ This Collection will be the SymbolSource to the Stencil. Based on the SymbolSour
 {% tabs %}
 {% highlight xaml %}
 
-            <stencil:Stencil x:Name="stencil" ExpandMode="All"
-                            SymbolSource="{StaticResource symbolcollection}">
-            </stencil:Stencil>
+            <stencil:Stencil x:Name="stencil" ExpandMode="All" 
+                             SymbolSource="{StaticResource symbolcollection}">
 
 {% endhighlight %}
 {% endtabs %}
