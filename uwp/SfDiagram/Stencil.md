@@ -156,7 +156,7 @@ This Collection will be the SymbolSource to the Stencil. Based on the SymbolSour
 {% highlight xaml %}
 
             <!--Collection of Symbols-->
-            <syncfusion:SymbolCollection x:Key="symbolcollection">
+            <syncfusion:SymbolCollection x:Key="symbols">
                 <!--Creates the NodeViewModel-->
                 <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" ShapeStyle="{StaticResource shapeStyle}"
 			                  Shape="{StaticResource Rectangle}" Key="Nodes"/>
@@ -176,7 +176,7 @@ This Collection will be the SymbolSource to the Stencil. Based on the SymbolSour
 {% highlight xaml %}
 
             <stencil:Stencil x:Name="stencil" ExpandMode="All" 
-                             SymbolSource="{StaticResource symbolcollection}">
+                             SymbolSource="{StaticResource symbols}">
 
 {% endhighlight %}
 {% endtabs %}
@@ -195,7 +195,7 @@ The following code example illustrates how to create a SymbolGroup.
 {% highlight xaml %}
 
 <stencil:Stencil x:Name="stencil" ExpandMode="All" 
-		         SymbolSource="{StaticResource symbolcollection}">
+		         SymbolSource="{StaticResource symbols}">
 	<!--SymbolGroup-->
     <stencil:Stencil.SymbolGroups>
     	<stencil:SymbolGroups>
