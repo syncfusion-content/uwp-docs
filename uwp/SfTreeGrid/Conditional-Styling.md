@@ -303,7 +303,7 @@ internal class StyleConverter : IValueConverter
 </tr>
 </table>
 
-![Style rows uing converter](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
+![Style rows using converter](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
 
 ## Style rows using style selector
 

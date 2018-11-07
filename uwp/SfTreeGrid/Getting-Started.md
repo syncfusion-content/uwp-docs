@@ -123,7 +123,7 @@ Create new Universal Windows Platform project in Visual Studio to display SfTree
 
 SfTreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically
 
-![Add control vis designer](GettingStarted_images/GettingStarted_img1.png)
+![Add control via designer](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding control manually in XAML
 
@@ -914,7 +914,7 @@ private async void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeI
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/OnDemandLoading_Async1760471255.zip).
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-populate-child-nodes-asynchronously-in-uwp-treegrid).
 
 ### Defining Columns
 
