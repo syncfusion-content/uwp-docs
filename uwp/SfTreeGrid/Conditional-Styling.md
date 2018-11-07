@@ -253,7 +253,7 @@ public object ConvertBack(object value, Type targetType, object parameter, strin
 
 ![Adding images](Conditional-Styling_images/Conditional-Styling_img4.jpeg)
 
-You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/UWP544934294.zip).
+You can download the sample [here](https://github.com/SyncfusionExamples/how-to-load-images-in-a-cell-in-wpf-and-uwp-treegrid/tree/master/UWP).
 
 # Rows
 
