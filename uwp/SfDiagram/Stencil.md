@@ -17,7 +17,7 @@ xmlns:stencil="using:Syncfusion.UI.Xaml.Diagram.Stencil"
 
 {% endhighlight %}
 
-![](Stencil_images/Stencil_img1.jpeg)
+![Stencil](Stencil_images/Stencil_img1.jpeg)"
 
 Key Terms Table
 
@@ -39,6 +39,7 @@ Symbol is used to implement the ISymbol interface. The ISymbol interface consist
 
 #### Symbol and SymbolTemplate
 
+{% tabs %}
 {% highlight C# %}
 
 public class SymbolItem : ISymbol
@@ -67,6 +68,25 @@ public class SymbolItem : ISymbol
 
 
 {% endhighlight %}
+{% endtabs %}
+
+#### Symbol Filter
+
+{% tabs %}
+{% highlight %}
+
+        stencil.SelectedFilter = new SymbolFilterProvider { SymbolFilter = SymbolFilter };
+        
+        // For separating each symbol group
+        private bool SymbolFilter(SymbolFilterProvider sender, object symbol)
+        {
+            return true;
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
+
 
 ### Adding the Symbol
 
@@ -74,6 +94,7 @@ The following example illustrates how to add the Symbol into a Collection:
 
 #### Define the SymbolTemplate.
 
+{% tabs %}
 {% highlight xaml %}
 
 <DataTemplate x:Key="Star">
@@ -82,95 +103,83 @@ The following example illustrates how to add the Symbol into a Collection:
 </DataTemplate>
 
 {% endhighlight %}
+{% endtabs %}
 
 #### Create the ISymbol with Symbol and SymbolTemplate properties.
 
+{% tabs %}
 {% highlight xaml %}
 
-<local:FloorPlanSymbolItem GroupName="Flow Chart" Symbol="Star"
+<local:SymbolItem GroupName="Flow Chart" Symbol="Star"
                            SymbolTemplate="{StaticResource Star}"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 #### Add the ISymbol into the Collection.
 
+{% tabs %}
 {% highlight C# %}
 
-// SymbolSource to Stencil
-public class SymbolCollection : ObservableCollection<ISymbol>
-{
+    // SymbolSource to Stencil
+    public class Symbols : ObservableCollection<ISymbol>
+    {
 
-}
+    }
 
 {% endhighlight %}
+{% endtabs %}
 
+{% tabs %}
 {% highlight xaml %}
 
-<local:SymbolCollection x:Key="symbolcollection">
+<local:Symbols x:Key="symbolcollection">
 	<!--Adding Symbol into a collection-->
-	<local:FloorPlanSymbolItem GroupName="Flow Chart" Symbol="Star"
+	<local:SymbolItem GroupName="Flow Chart" Symbol="Star"
                                SymbolTemplate="{StaticResource Star}"/>
-</local:SymbolCollection>
+</local:Symbols>
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Stencil_images/Stencil_img2.jpeg)
+![Stencil](Stencil_images/Stencil_img2.jpeg)"
+
+Sample Link : [Stencil With ISymbol](http://www.syncfusion.com/downloads/support/directtrac/218913/ze/Stencil_Isymbol-925417050).
 
 This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
 
-### Add Node, Connector and Group to Stencil
+### Add Node and Connector to Stencil
 
-####  Create a Node ,Connector and Group and to SymbolCollection.
+####  Create a Node and Connector to SymbolCollection.
 
+{% tabs %}
 {% highlight xaml %}
 
-<!--Collection of Symbols-->
-<local:SymbolCollection x:Key="symbolcollection">
-	<!--Creates the NodeViewModel-->
-	<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
+            <!--Collection of Symbols-->
+            <syncfusion:SymbolCollection x:Key="symbols">
+                <!--Creates the NodeViewModel-->
+                <syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" ShapeStyle="{StaticResource shapeStyle}"
 			                  Shape="{StaticResource Rectangle}" Key="Nodes"/>
-            
-	<!--Creates the ConnectorViewModel-->
-   	<syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200"
+
+                <!--Creates the ConnectorViewModel-->
+                <syncfusion:ConnectorViewModel SourcePoint="100,100" TargetPoint="200,200"
                                    Key="Connectors"/>
-            
-	<!--Creates the GroupViewModel-->
-   	<syncfusion:GroupViewModel Key="Groups">
-		<!--Creates the Groupable Nodes-->
-        <syncfusion:GroupViewModel.Nodes>
-			<syncfusion:NodeCollection>
-            	<syncfusion:NodeViewModel UnitHeight="100" UnitWidth="100" 
-                            			  Shape="{StaticResource Ellipse}">
-				</syncfusion:NodeViewModel>
-			</syncfusion:NodeCollection>
-		</syncfusion:GroupViewModel.Nodes>
-                
-		<!--Creates the Groupable Connectors-->
-        <syncfusion:GroupViewModel.Connectors>
-        	<syncfusion:ConnectorCollection>
-            	<syncfusion:ConnectorViewModel SourcePoint="0,0"  
-                                               TargetPoint="100,100"/>
-			</syncfusion:ConnectorCollection>
-		</syncfusion:GroupViewModel.Connectors>
-	</syncfusion:GroupViewModel>
-</local:SymbolCollection>
+
+            </syncfusion:SymbolCollection>
 
 {% endhighlight %}
+{% endtabs %}
 
 #### Add SymbolCollection to SymbolSource of Stencil.
 
+{% tabs %}
 {% highlight xaml %}
 
-<stencil:Stencil x:Name="stencil" ExpandMode="All">
-	<stencil:Stencil.SymbolSource>
-    	<!--Collection of Symbols-->
-        <local:SymbolCollection>
-        	<!--From step2, Create a Node, Connector and Group to SymbolCollection.-->
-      	</local:SymbolCollection>
-	</stencil:Stencil.SymbolSource>
-</stencil:Stencil>
+            <stencil:Stencil x:Name="stencil" ExpandMode="All" 
+                             SymbolSource="{StaticResource symbols}">
 
 {% endhighlight %}
+{% endtabs %}
 
 ## Symbol Groups
 
@@ -182,10 +191,11 @@ The SymbolGroupProvider groups the symbols into SymbolGroup based on the Mapping
 
 The following code example illustrates how to create a SymbolGroup.
 
+{% tabs %}
 {% highlight xaml %}
 
 <stencil:Stencil x:Name="stencil" ExpandMode="All" 
-		         SymbolSource="{StaticResource symbolcollection}">
+		         SymbolSource="{StaticResource symbols}">
 	<!--SymbolGroup-->
     <stencil:Stencil.SymbolGroups>
     	<stencil:SymbolGroups>
@@ -196,8 +206,11 @@ The following code example illustrates how to create a SymbolGroup.
 </stencil:Stencil>
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Stencil_images/Stencil_img3.jpeg)
+![Stencil](Stencil_images/Stencil_img3.jpg)"
+
+Sample Link: [Stencil With Node and Connector](http://www.syncfusion.com/downloads/support/directtrac/218913/ze/Stencil_Node,_Connector-1184387452).
 
 ### Expand or Collapse SymbolGroup
 
@@ -205,11 +218,11 @@ Expand and Collapse can be performed on SymbolGroup (updating the Visibility of 
 
 | Expand Mode | Description | Images |
 |---|---|---|
-| One | Always one SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img4.jpeg) |
-| OneOrMore | At least one SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img5.jpeg) | ![](Stencil_images/Stencil_img6.jpeg) |
-| ZeroOrOne | Not more than a single SymbolGroup is in expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![](Stencil_images/Stencil_img7.jpeg) | ![](Stencil_images/Stencil_img8.jpeg) |
-| ZeroOrMore | Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![](Stencil_images/Stencil_img9.jpeg) | ![](Stencil_images/Stencil_img10.jpeg) |
-| All | All the SymbolGroup is in expanded state. | ![](Stencil_images/Stencil_img11.jpeg) |
+| One | Always one SymbolGroup is in expanded state. | ![Stencil](Stencil_images/Stencil_img4.jpeg)" |
+| OneOrMore | At least one SymbolGroup is in expanded state. | ![Stencil](Stencil_images/Stencil_img5.jpeg)" | ![Stencil](Stencil_images/Stencil_img6.jpeg)" |
+| ZeroOrOne | Not more than a single SymbolGroup is in expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![Stencil](Stencil_images/Stencil_img7.jpeg)" | ![Stencil](Stencil_images/Stencil_img8.jpeg)" |
+| ZeroOrMore | Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ can be in collapsed state. | ![Stencil](Stencil_images/Stencil_img9.jpeg)" | ![Stencil](Stencil_images/Stencil_img10.jpeg)" |
+| All | All the SymbolGroup is in expanded state. | ![Stencil](Stencil_images/Stencil_img11.jpeg)" |
 
 ## Symbol Filters
 
@@ -217,6 +230,7 @@ Expand and Collapse can be performed on SymbolGroup (updating the Visibility of 
 
 The following code example shows how to create and add the SymbolFilter. Based on the return Boolean value of the SymbolFilter delegate, the corresponding item is removed from Stencil. When a SymbolGroup does not have any Symbols, the corresponding SymbolGroup is also removed.
 
+{% tabs %}
 {% highlight C# %}
 
 stencil.SymbolFilters = new SymbolFilters();
@@ -253,14 +267,15 @@ private bool SymbolFilter(SymbolFilterProvider sender, object symbol)
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Stencil_images/Stencil_img12.jpeg)
+![Stencil](Stencil_images/Stencil_img12.jpeg)"
 
 ### SelectedFilter
 
 There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
-![](Stencil_images/Stencil_img13.jpeg)
+![Stencil](Stencil_images/Stencil_img13.jpeg)"
 
 ## Preview for Drag and Drop
 
@@ -276,6 +291,7 @@ To enable preview for the dragged item from Stencil, set the Constraints propert
 
 The following code example illustrates how to enable preview support.
 
+{% tabs %}
 {% highlight C# %}
 
 //Enables the drag and drop preview.
@@ -285,21 +301,23 @@ stencil.Constraints = stencil.Constraints | StencilConstraints.ShowPreview;
 stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 {% endhighlight %}
+{% endtabs %}
 
 Here, Stencil is an instance of Stencil.
 
 #### Preview of the dragging Symbol
 
-![](Stencil_images/Stencil_img14.jpeg)
+![Stencil](Stencil_images/Stencil_img14.jpeg)"
 
 #### Dragged Symbol
 
-![](Stencil_images/Stencil_img15.jpeg)
+![Stencil](Stencil_images/Stencil_img15.jpeg)"
 
 #### Customization of Preview for Drag and Drop
 
 You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
 
+{% tabs %}
 {% highlight C# %}
 
 public class CustomStencil : Stencil
@@ -320,8 +338,9 @@ public class CustomStencil : Stencil
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Stencil_images/Stencil_img16.jpeg)
+![Stencil](Stencil_images/Stencil_img16.jpeg)"
 
 ## Events
 
