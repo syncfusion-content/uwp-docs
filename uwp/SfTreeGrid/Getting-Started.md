@@ -123,7 +123,7 @@ Create new Universal Windows Platform project in Visual Studio to display SfTree
 
 SfTreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically
 
-![Add control via designer in treegrid UWP](GettingStarted_images/GettingStarted_img1.png)
+![Add control via designer in UWP treegrid](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding control manually in XAML
 
@@ -388,7 +388,7 @@ public sealed partial class MainPage : Page
 {% endhighlight %}
 {% endtabs %}
 
-![Binding data to treegrid UWP](GettingStarted_images/GettingStarted_img3.png)
+![Binding data to UWP treegrid](GettingStarted_images/GettingStarted_img3.png)
 
 ### Binding Nested collection with SfTreeGrid
 
@@ -535,7 +535,7 @@ namespace NestedCollectionDemo
 {% endhighlight %}
 {% endtabs %}
 
-![Binding nested collection in treegrid UWP](GettingStarted_images/GettingStarted_img4.png)
+![Binding nested collection in UWP treegrid](GettingStarted_images/GettingStarted_img4.png)
 
 ### Populate SfTreeGrid in on-demand (unbound mode)
 
@@ -704,7 +704,7 @@ private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEv
 
 You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree()](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RepopulateTree.html) method.
 
-![Populate tree grid UWP](GettingStarted_images/GettingStarted_img3.png)
+![Populate UWP treegrid](GettingStarted_images/GettingStarted_img3.png)
 
 ### Populate child nodes asynchronously
 
