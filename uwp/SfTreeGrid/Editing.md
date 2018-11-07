@@ -40,7 +40,7 @@ treeGrid.Columns["FirstName"].AllowEditing = true;
 
 N> `TreeGridColumn.AllowEditing` takes higher priority than `SfTreeGrid.AllowEditing`
 
-![Editing image](Editing_images/Editing_img1.png)
+![Editing in treegrid UWP](Editing_images/Editing_img1.png)
 
 N> It is mandatory to set the NavigationMode to Cell to enable CurrentCell navigation and editing.
 
