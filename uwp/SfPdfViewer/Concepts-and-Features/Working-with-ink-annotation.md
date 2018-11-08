@@ -97,7 +97,7 @@ pdfViewer.InkAnnotationSettings.Thickness = 5;
 
 You can change the properties of a selected ink annotation or remove it by right clicking it and choosing the desired property from the displayed options.
 
-![](images/image2.png)
+![Customtoolbarimage](images/image2.png)
 
 ## Detecting the change in appearance properties of ink annotations
 

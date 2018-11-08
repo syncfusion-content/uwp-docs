@@ -103,7 +103,7 @@ pdfViewer.RectangleAnnotationSettings.Thickness = 5;
 
 You can change the properties of the selected annotation or remove it by right clicking it and choosing the desired property from the displayed options.
 
-![](images/image1.png)
+![Customtoolbarimage](images/image1.png)
 
 ## Detecting the change in appearance properties of shape annotations
 
