@@ -82,8 +82,8 @@ private async void PageLoaded(object sender, RoutedEventArgs e)
     BookmarkButton.IsEnabled = false;
     pdfViewer.PageChanged += PdfViewer_PageChanged;
     pdfViewer.LoadDocument(ldoc);
-    if (PageCounttext != null)
-       PageCounttext.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
+    if (PageCountText != null)
+       PageCountText.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
 	if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.Phone.UI.Input.HardwareButtons"))
 	{
 		PdfSlider.Minimum = 1;
@@ -273,8 +273,8 @@ private void SaveButton_Click(object sender, RoutedEventArgs e)
          st.Flush();
          st.Dispose();
          fileStream.Dispose();
-         MessageDialog msgDialog = new MessageDialog("File has been saved successfully.");
-         IUICommand cmd = await msgDialog.ShowAsync();
+         MessageDialog messageDialog = new MessageDialog("File has been saved successfully.");
+         IUICommand cmd = await messageDialog.ShowAsync();
     }
 
 }
@@ -299,13 +299,13 @@ async private void OpenButton_Click(object sender, RoutedEventArgs e)
 	Stream fileStream = stream.AsStreamForRead();
 	byte[] buffer = new byte[fileStream.Length];
 	fileStream.Read(buffer, 0, buffer.Length);
-	PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
+	PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
 
-	if (PageCounttext != null)
-		PageCounttext.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
+	if (PageCountText != null)
+		PageCountText.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
 
 	//Fill the bookmark tree with the bookmarks available in the PDF
-	LoadNavigator(ldoc);
+	LoadNavigator(loadedDocument);
 }
 
 {% endhighlight %}
@@ -738,7 +738,7 @@ Bookmark toolbar has the following UI elements.
 1.	SfTreeNavigator inside a ScrollView to display the available bookmarks
 2.	Button to hide the bookmark toolbar
 
-Add a grid to the parent grid with name &#34;BoomarkLayer&#34; and add the tree navigator and the button. The bookmarks will be populated in the navigator whenever a new PDF is opened as described earlier. 
+Add a grid to the parent grid with name &#34;BookmarkLayer&#34; and add the tree navigator and the button. The bookmarks will be populated in the navigator whenever a new PDF is opened as described earlier. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -863,14 +863,14 @@ When the enter key is pressed after entering the input page number, navigate to 
 
 private async void PageDestinationTextBox_KeyDown(object sender, KeyRoutedEventArgs e)
 {
-   int destPage = 0;
+   int destinationPage = 0;
 
    if (!string.IsNullOrEmpty(CurrentPage.Text))
    {
-       bool gotoResult = int.TryParse(CurrentPage.Text, out destPage);
+       bool gotoResult = int.TryParse(CurrentPage.Text, out destinationPage);
        if (e.Key == VirtualKey.Enter && gotoResult)
        {
-            pdfViewer.GotoPage(destPage);
+            pdfViewer.GotoPage(destinationPage);
             PageDestinationTextBox.Text = string.Empty;
             e.Handled = true;
        }

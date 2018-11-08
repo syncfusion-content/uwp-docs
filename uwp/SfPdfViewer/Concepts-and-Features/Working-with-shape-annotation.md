@@ -15,7 +15,7 @@ PDF Viewer allows you to include shape annotations in a PDF document and provide
 2. Ellipse
 3. Line
 
-In all the code snippets that follow, only Rectangle shape annotation is used for brievity. Other shape annotations can be used in the same way. 
+In all the code snippets that follow, only Rectangle shape annotation is used for brevity. Other shape annotations can be used in the same way. 
 
 ## Adding shape annotations
 

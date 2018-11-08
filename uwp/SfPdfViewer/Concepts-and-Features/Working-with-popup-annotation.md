@@ -150,7 +150,7 @@ The author name and subject of popup annotations can be added by right clicking 
 
 ## Detecting the change in appearance properties of popup annotations
 
-The changes made in popup annotation's properties can be detected using the `SfPdfViewerControl.PopupEdited` event. The property values before and after change can be obtained using the `PopupEditedEventArgs` parameter of the event's handler. In the below example, only the new propertis are illustrated.
+The changes made in popup annotation's properties can be detected using the `SfPdfViewerControl.PopupEdited` event. The property values before and after change can be obtained using the `PopupEditedEventArgs` parameter of the event's handler. In the below example, only the new properties are illustrated.
 
 {% highlight c# %}
 

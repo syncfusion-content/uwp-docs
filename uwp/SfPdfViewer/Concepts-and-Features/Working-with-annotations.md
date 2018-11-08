@@ -29,7 +29,7 @@ PDF viewer provides the following events.
 5. AnnotationRemoved
 6. AnnotationMovedOrResized
 
-The properties of the annotation involved in the event can be obtained from the `AnnotationProperties` property of the event args paramater of each event except AnnotationMovedOrResized. Since the annotation properties are obtained from the same `AnnotationProperties` instance for all events except AnnotationMovedOrResized, only the AnnotationAdded event is illustrated below. 
+The properties of the annotation involved in the event can be obtained from the `AnnotationProperties` property of the event args parameter of each event except AnnotationMovedOrResized. Since the annotation properties are obtained from the same `AnnotationProperties` instance for all events except AnnotationMovedOrResized, only the AnnotationAdded event is illustrated below. 
 
 The properties of the included annotation can be obtained by casting the `AnnotationAddedEventArgs` parameter's AnnotationProperties property to the property of corresponding annotation type.
 

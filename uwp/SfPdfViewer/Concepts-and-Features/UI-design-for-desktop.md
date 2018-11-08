@@ -69,8 +69,8 @@ private async void PageLoaded(object sender, RoutedEventArgs e)
     BookmarkButton.IsEnabled = false;
     pdfViewer.PageChanged += PdfViewer_PageChanged;
     pdfViewer.LoadDocument(ldoc);
-    if (PageCounttext != null)
-       PageCounttext.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
+    if (PageCountText != null)
+       PageCountText.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
 
     if (ldoc.Bookmarks.Count > 0)
        BookmarkButton.IsEnabled = true;
@@ -163,12 +163,12 @@ async private void OpenButton_Click(object sender, RoutedEventArgs e)
     Stream fileStream = stream.AsStreamForRead();
     byte[] buffer = new byte[fileStream.Length];
     fileStream.Read(buffer, 0, buffer.Length);
-    PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
-    pdfViewer.LoadDocument(ldoc);
-    if (PageCounttext != null)
-       PageCounttext.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
+    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+    pdfViewer.LoadDocument(loadedDocument);
+    if (PageCountText != null)
+       PageCountText.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
     //Fill the bookmark tree with the bookmarks available in the PDF
-    LoadNavigator(ldoc);
+    LoadNavigator(loadedDocument);
 }
 
 {% endhighlight %}
@@ -235,12 +235,12 @@ private async void PageDestinationTextBox_KeyDown(object sender, KeyRoutedEventA
 {
     if (!string.IsNullOrEmpty(PageDestinationTextBox.Text))
     {
-         bool result = int.TryParse(PageDestinationTextBox.Text, out destPage);
+         bool result = int.TryParse(PageDestinationTextBox.Text, out destinationPage);
          if (e.Key == VirtualKey.Enter && result)
          {
-             if (destPage > 0 && destPage <= pdfViewer.PageCount)
+             if (destinationPage > 0 && destinationPage <= pdfViewer.PageCount)
              {
-                 pdfViewer.GotoPage(destPage);
+                 pdfViewer.GotoPage(destinationPage);
                  e.Handled = true;
              }     
          }
@@ -257,7 +257,7 @@ Add a text block with name &#34;PageCountText&#34;.
 {% tabs %}
 {% highlight xaml %}
 
-<TextBlock x:Name="PageCounttext " Grid.Column="7" />
+<TextBlock x:Name="PageCountText " Grid.Column="7" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -372,7 +372,7 @@ The annotation toolbar will have buttons for the following operations.
 1.	Add ink annotations
 2.	Add text highlights
 3.	Add text underlines
-4.	Add text strikethroughs 
+4.	Add text strikethrough
 5.	Add Lines
 6.	Add Rectangles
 7.	Add ellipses
@@ -663,9 +663,9 @@ Implement the LoadNavigator method which is called when a PDF is loaded as menti
 {% tabs %}
 {% highlight c# %}
 
-private void LoadNavigator(PdfLoadedDocument ldoc)
+private void LoadNavigator(PdfLoadedDocument loadedDocument)
 {
-    PdfBookmarkBase bookmarkBase = ldoc.Bookmarks;
+    PdfBookmarkBase bookmarkBase = loadedDocument.Bookmarks;
     PdfBookmark bookmark;
     SfTreeNavigatorItem navigatorItem;
 
