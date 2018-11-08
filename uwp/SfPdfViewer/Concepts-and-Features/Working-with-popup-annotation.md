@@ -140,13 +140,13 @@ pdfViewer.PopupAnnotationSettings.Icon = PopupIcon.Comment;
 
 You can change the properties of a selected popup annotation or remove it by right clicking it and choosing the desired property from the displayed options.
 
-![](images/image4.png)
+![customtoolbarimage](images/image4.png)
 
 ### Setting author name and subject of popup annotations
 
 The author name and subject of popup annotations can be added by right clicking the popup and choose 'Edit' from the context menu
 
-![](images/image5.png)
+![customtoolbarimage](images/image5.png)
 
 ## Detecting the change in appearance properties of popup annotations
 

@@ -27,13 +27,13 @@ To enable a text markup annotation, execute the annotation's corresponding comma
 {% highlight xaml %}
 
 <syncfusion:SfPdfViewerControl x:Name="pdfViewer"/>
-<Button x:Name="textmarkupAnnotationButton" Click="textmarkupAnnotationButton_Click"/>
+<Button x:Name="textMarkupAnnotationButton" Click="TextMarkupAnnotationButton_Click"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-private void textmarkupAnnotationButton_Click(object sender, RoutedEventArgs e)
+private void TextMarkupAnnotationButton_Click(object sender, RoutedEventArgs e)
 {
 	pdfViewer.HighlightAnnotationCommand.Execute(true);
 }
@@ -92,7 +92,7 @@ pdfViewer.HighlightAnnotationSettings.Opacity = 0.5f;
 
 You can change the properties of a selected text markup annotation or remove it by right clicking it and choosing the desired property from the displayed options.
 
-![](images/image3.png)
+![customtoolbarimage](images/image3.png)
 
 ## Detecting the change in appearance properties of text markup annotations
 

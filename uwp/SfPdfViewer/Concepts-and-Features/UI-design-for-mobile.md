@@ -9,7 +9,7 @@ documentation: ug
 
 ## UI design for mobile
 
-![](CustomToolbarImages/CustomToolbarImage23.png)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage23.png)
 
 PdfViewer does not have a toolbar by default. But a custom toolbar can be designed at the sample with its buttons wired to the PdfViewer APIs. 
 
@@ -78,10 +78,10 @@ private async void PageLoaded(object sender, RoutedEventArgs e)
     Stream fileStream = assembly.GetManifestResourceStream("PdfViewerCustomToolbar.Assets.WindowsStoreApps_Succinctly.pdf");
     byte[] buffer = new byte[fileStream.Length];
     fileStream.Read(buffer, 0, buffer.Length);
-    PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
+    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
     BookmarkButton.IsEnabled = false;
     pdfViewer.PageChanged += PdfViewer_PageChanged;
-    pdfViewer.LoadDocument(ldoc);
+    pdfViewer.LoadDocument(loadedDocument);
     if (PageCountText != null)
        PageCountText.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
 	if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.Phone.UI.Input.HardwareButtons"))
@@ -94,10 +94,10 @@ private async void PageLoaded(object sender, RoutedEventArgs e)
 		DocumentName.Text = "Windows Store Apps Succinctly.pdf";
 	}
 
-    if (ldoc.Bookmarks.Count > 0)
+    if (loadedDocument.Bookmarks.Count > 0)
        BookmarkButton.IsEnabled = true;
 
-    LoadNavigator(ldoc);
+    LoadNavigator(loadedDocument);
 }
 
 {% endhighlight %}
@@ -105,7 +105,7 @@ private async void PageLoaded(object sender, RoutedEventArgs e)
 
 ### Top toolbar
 
-![](CustomToolbarImages/CustomToolbarImage9.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage9.jpeg)
 
 Top toolbar has the following elements
 
@@ -173,7 +173,7 @@ private void MoreButton_Unchecked(object sender, RoutedEventArgs e)
 
 ### More options toolbar
 
-![](CustomToolbarImages/CustomToolbarImage10.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage10.jpeg)
 
 More options toolbar contains buttons to perform the following operations
 1.	Add ink annotations
@@ -337,7 +337,7 @@ When any of the annotations button is clicked the annotation toolbars will be sh
 
 ### Common bottom toolbar
 
-![](CustomToolbarImages/CustomToolbarImage24.png)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage24.png)
 
 The bottom toolbar is common for ink, text markup, shape and popup annotations. 
 
@@ -392,7 +392,7 @@ private void BackButton_Click(object sender, RoutedEventArgs e)
 
 ### Ink toolbar
 
-![](CustomToolbarImages/CustomToolbarImage12.png)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage12.png)
 
 The ink toolbar has only one button which enables or disables the ink annotation mode alternatively. 
 Add a grid with name &#34;InkAnnotationToolbar&#34; to the parent grid with a toggle button. 
@@ -427,7 +427,7 @@ private void InkButton_Unchecked(object sender, RoutedEventArgs e)
 
 ### Shape annotation toolbar
 
-![](CustomToolbarImages/CustomToolbarImage13.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage13.jpeg)
 
 The shape annotation toolbar has three buttons. 
 1.	Line annotation mode button
@@ -497,7 +497,7 @@ private void EllipseButton_Unchecked(object sender, RoutedEventArgs e)
 
 ### Popup annotation toolbar
 
-![](CustomToolbarImages/CustomToolbarImage21.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage21.jpeg)
 
 Popup annotation toolbar also has only one button to toggle the popup annotation mode.
 Add a grid to the parent grid and add a toggle button to it. 
@@ -532,7 +532,7 @@ private void PopupButton_Unchecked(object sender, RoutedEventArgs e)
 
 ### Text markup annotation toolbar
 
-![](CustomToolbarImages/CustomToolbarImage20.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage20.jpeg)
 
 Text markup annotation toolbar has three toggle buttons for the options listed below. 
 1.	Text highlight 
@@ -602,13 +602,13 @@ private void StrikethroughButton_Unchecked(object sender, RoutedEventArgs e)
 
 ### Search toolbar
 
-![](CustomToolbarImages/CustomToolbarImage19.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage19.jpeg)
 
 The search toolbar has two toolbars, one at the top and one at the bottom. 
 
 ### Search top toolbar
 
-![](CustomToolbarImages/CustomToolbarImage18.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage18.jpeg)
 
 The search top toolbar has the following UI elements
 
@@ -701,7 +701,7 @@ private void CloseSearch_Click(object sender, RoutedEventArgs e)
 
 ### Search bottom toolbar
 
-![](CustomToolbarImages/CustomToolbarImage17.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage17.jpeg)
 
 The search bottom toolbar has two buttons
 
@@ -731,7 +731,7 @@ Add a grid to the parent grid with the name &#34;SearchBottomToolbar&#34; and tw
 
 ### Bookmark toolbar
 
-![](CustomToolbarImages/CustomToolbarImage16.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage16.jpeg)
 
 Bookmark toolbar has the following UI elements. 
 
@@ -779,7 +779,7 @@ private void BookmarkBackButton_Click(object sender, RoutedEventArgs e)
 
 ### Page slider
 
-![](CustomToolbarImages/CustomToolbarImage14.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage14.jpeg)
 
 The page slider grid has a slider which will navigate to pages when it is adjusted.
 
@@ -800,7 +800,7 @@ The page slider grid has a slider which will navigate to pages when it is adjust
 {% endhighlight %}
 {% endtabs %}
 
-When the value of the slider changes, run the slidertimer. When the slider timer ticks go to the page that corresponds to the current position of the slider. 
+When the value of the slider changes, run the slider timer. When the slider timer ticks go to the page that corresponds to the current position of the slider. 
 
 {% tabs %}
 {% highlight c# %}
@@ -832,7 +832,7 @@ void sliderTimer_Tick(object sender, object e)
 
 ### Page number panel 
 
-![](CustomToolbarImages/CustomToolbarImage15.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage15.jpeg)
 
 The page number panel has the following UI elements
 

@@ -9,7 +9,7 @@ documentation: ug
 
 ## UI design for desktop
 
-![](CustomToolbarImages/CustomToolbarImage22.png)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage22.png)
 
 In desktop the custom toolbar application has the following toolbars.
 
@@ -65,17 +65,17 @@ private async void PageLoaded(object sender, RoutedEventArgs e)
     Stream fileStream = assembly.GetManifestResourceStream("PdfViewerCustomToolbar.Assets.WindowsStoreApps_Succinctly.pdf");
     byte[] buffer = new byte[fileStream.Length];
     fileStream.Read(buffer, 0, buffer.Length);
-    PdfLoadedDocument ldoc = new PdfLoadedDocument(buffer);
+    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
     BookmarkButton.IsEnabled = false;
     pdfViewer.PageChanged += PdfViewer_PageChanged;
-    pdfViewer.LoadDocument(ldoc);
+    pdfViewer.LoadDocument(loadedDocument);
     if (PageCountText != null)
        PageCountText.Text = string.Format("of {0}", pdfViewer.PageCount.ToString());
 
-    if (ldoc.Bookmarks.Count > 0)
+    if (loadedDocument.Bookmarks.Count > 0)
        BookmarkButton.IsEnabled = true;
 
-    LoadNavigator(ldoc);
+    LoadNavigator(loadedDocument);
 }
 
 {% endhighlight %}
@@ -83,7 +83,7 @@ private async void PageLoaded(object sender, RoutedEventArgs e)
 
 ### Top toolbar
 
-![](CustomToolbarImages/CustomToolbarImage4.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage4.jpeg)
 
 The top toolbar will have buttons and other UI elements which will do the following operations. 
 
@@ -365,7 +365,7 @@ private void SearchButton_Click(object sender, RoutedEventArgs e)
 
 ### Annotation toolbar
 
-![](CustomToolbarImages/CustomToolbarImage5.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage5.jpeg)
 
 The annotation toolbar will have buttons for the following operations. 
 
@@ -546,7 +546,7 @@ Add two buttons set their Command properties to UndoCommand and RedoCommand resp
 
 ### Search toolbar
 
-![](CustomToolbarImages/CustomToolbarImage6.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage6.jpeg)
 
 The search toolbar will have the UI elements listed below. 
 
@@ -579,7 +579,7 @@ Set the Command properties of the buttons to SearchNextCommand and SearchPreviou
 
 ### Bookmark toolbar
 
-![](CustomToolbarImages/CustomToolbarImage7.jpeg)
+![customtoolbarimage](CustomToolbarImages/CustomToolbarImage7.jpeg)
 
 Bookmark toolbar consists of a button which when clicked shows the bookmarks available in the PDF. 
 Add a Grid with name &#34;BookmarkToolbar&#34; to the parentGrid. Add a button with name &#34;BookmarkButton&#34; to this grid. 
