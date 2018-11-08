@@ -1,0 +1,89 @@
+---
+layout: post
+title: Working with annotations in Syncfusion Essential UWP PDF viewer.
+description: Working with annotations in Syncfusion Essential UWP PDF viewer.
+platform: uwp
+control: PDF viewer
+documentation: ug
+---
+
+## Working with annotations
+
+PDF Viewer allows user to include annotations in PDF files and provides options to modify or remove the existing annotations. The supported annotations are below. 
+
+1. Text markup annotations
+2. Shape annotations
+3. Ink annotations
+4. Popup annotations
+
+The individual annotation types are discussed in detail under their own sections. 
+
+### Annotation events. 
+
+PDF viewer provides the following events. 
+
+1. AnnotationAdded
+2. AnnotationTapped
+3. AnnotationSelected
+4. AnnotationDeselected
+5. AnnotationRemoved
+6. AnnotationMovedOrResized
+
+The properties of the annotation involved in the event can be obtained from the `AnnotationProperties` property of the event args paramater of each event except AnnotationMovedOrResized. Since the annotation properties are obtained from the same `AnnotationProperties` instance for all events except AnnotationMovedOrResized, only the AnnotationAdded event is illustrated below. 
+
+The properties of the included annotation can be obtained by casting the `AnnotationAddedEventArgs` parameter's AnnotationProperties property to the property of corresponding annotation type.
+
+{% highlight c# %}
+
+SfPdfViewerControl pdfViewer = new SfPdfViewerControl();
+pdfViewer.AnnotationAdded += PdfViewer_AnnotationAdded;
+
+private void PdfViewer_AnnotationAdded(object sender, AnnotationAddedEventArgs e)
+{	
+	//Check whether the annotation is text markup
+	if (e.AnnotationProperties is TextMarkupProperties)
+	{
+		TextMarkupProperties properties = e.AnnotationProperties as TextMarkupProperties;
+
+		//Obtain the annotation type such as Highlight, Underline, Strikethrough
+		AnnotationMode annotationMode = properties.AnnotationType;
+
+		//Obtain color of the annotation
+		Color color = properties.Color;
+
+		//Obtain the opacity value of the annotation
+		double opacity = properties.Opacity;
+
+		//Obtain the page number in which the annotation is added
+		int pageNumber = properties.PageNumber;
+	}
+}
+
+{% endhighlight %}
+
+The properties of the annotation involved in the `AnnotationMovedOrResized` event can be obtained from the `AnnotationMovedOrResizedEventArgs` parameter of the event handler. 
+
+{% highlight c# %}
+
+SfPdfViewerControl pdfViewer = new SfPdfViewerControl();
+pdfViewer.AnnotationMovedOrResized += PdfViewer_AnnotationMovedOrResized;
+
+private void PdfViewer_AnnotationAdded(object sender, AnnotationMovedOrResizedEventArgs e)
+{	
+	//Obtain the new position and size
+	int newX = e.NewX;
+	int newY = e.NewY;
+	int newHeight = e.NewHeight;
+	int newWidth = e.NewWidth;
+
+	//Obtain the old position and size
+	int oldX = e.OldX;
+	int oldY = e.OldY;
+	int oldHeight = e.OldHeight;
+	int oldWidth = e.OldWidth;
+
+	//Obtain the page number in which the annotation is added
+	int pageNumber = e.PageNumber;
+}
+
+{% endhighlight %}
