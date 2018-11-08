@@ -19,7 +19,7 @@ The following steps illustrates you how to configure the app package for localiz
 * Double-click the **Package****.****appxmanifest** file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
 * Now specify the **Default** **language** on the **Application** tab as required to localize your app. Click on **More** **information** to know about the supported languages.
 
-![](Localization_images/Localization_img1.png)
+![Package manifest](Localization_images/Localization_img1.png)
 
 
 * Save the app manifest file after setting the default language.
@@ -30,15 +30,15 @@ The following steps illustrates you how to configure the app package for localiz
 * Create a folder with language (“en-US”, “fr-FR”, etc.) under ‘Resources’ to hold the resource file for the respective language.
 * Add default English (“en-US”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RESOUR~1154747619)(resource) file of SfPdfViewerControl in the ‘en-US’ folder, named as Syncfusion.SfPdfViewerControl.UWP.Resources.resw, Syncfusion.SfColorPickers.WinRT.Resources.resw and Localization.Resources. resw respectively. For your reference, French(“fr-FR”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources2076091381) file.
 
-![](Localization_images/Localization_img2.png)
+![Culture resources](Localization_images/Localization_img2.png)
 
 
 * Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfPdfViewerControl.UWP.Resources.resw, Syncfusion.SfColorPickers.WinRT.Resources.resw file.
 
-![](Localization_images/Localization_img3.png)
+![Resource Dictionary](Localization_images/Localization_img3.png)
 
 
 The following screenshot shows the localization of context menu in SfPdfViewerControl.
 
-![](Localization_images/Localization_img4.png)
+![Output](Localization_images/Localization_img4.png)
 

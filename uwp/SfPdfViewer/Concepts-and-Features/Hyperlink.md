@@ -9,11 +9,11 @@ documentation: ug
 
 # Working with hyperlink navigation
 
-PDF Viewer supports hyperlink navigation which detects documentlink and weblinks present in the pages of the PDF document. Tapping on the TOC and hyperlink will behave in the following manner.
+PDF Viewer supports hyperlink navigation which detects document link and web link present in the pages of the PDF document. Tapping on the TOC and hyperlink will behave in the following manner.
 
-1) If the tapped text contains weblinks, then the URI associated with the hyperlink will be opened in the default browser.
+1) If the tapped text contains web link, then the URI associated with the hyperlink will be opened in the default browser.
 
-2) If the tapped text contains documentlink, then the PDF Viewer navigates to the destination page index which is associated with it.
+2) If the tapped text contains document link, then the PDF Viewer navigates to the destination page index which is associated with it.
 
 ## How to disable hyperlink navigation in PDF document using PDF Viewer control?
 
@@ -59,7 +59,7 @@ You can acquire the details of the hyperlink that is tapped in the PDF Viewer co
             //Gets the bounds of the hyperlink is being clicked.
             RectangleF hyperlinkBound = args.Bounds;
 
-            //Gets the whether the tapped hyper link is a WebLink or DocumentLink.
+            //Gets the whether the tapped hyper link is a Web Link or Document Link.
             HyperlinkType linkType = args.HyperlinkType
 
         }
@@ -100,7 +100,7 @@ The event `HyperlinkPointerMoved` will be raised when the mouse pointer is moved
             //Gets the bounds of the hyperlink is being clicked.
             RectangleF hyperlinkBound = args.Bounds;
 
-            //Gets the whether the tapped hyper link is a WebLink or DocumentLink.
+            //Gets the whether the tapped hyper link is a Web Link or Document Link.
             HyperlinkType linkType = args.HyperlinkType
 
         }
@@ -110,7 +110,7 @@ The event `HyperlinkPointerMoved` will be raised when the mouse pointer is moved
 
 ## How to restrict the URI navigation from the PDF Viewer?
 
-By default, weblink or documentlink navigation is performed on tapping the hyperlink text. This navigation can be restricted using the property 'Handled' of the `HyperlinkEventArgs`. Refer to the following code snippet for more details.
+By default, web link or document link navigation is performed on tapping the hyperlink text. This navigation can be restricted using the property 'Handled' of the `HyperlinkEventArgs`. Refer to the following code snippet for more details.
 
 {% tabs %}
 {% highlight c# %}
