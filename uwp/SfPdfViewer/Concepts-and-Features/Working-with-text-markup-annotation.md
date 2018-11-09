@@ -93,32 +93,3 @@ pdfViewer.HighlightAnnotationSettings.Opacity = 0.5f;
 You can change the properties of a selected text markup annotation or remove it by right clicking it and choosing the desired property from the displayed options.
 
 ![customtoolbarimage](images/image3.png)
-
-## Detecting the change in appearance properties of text markup annotations
-
-The changes made in text markup annotations' properties can be detected using the `SfPdfViewerControl.TextmarkupEdited` event. The property values before and after change can be obtained using the `TextmarkupEditedEventArgs` parameter of the event's handler. 
-
-{% highlight c# %}
-
-SfPdfViewerControl pdfViewer = new SfPdfViewerControl();
-pdfViewer.TextmarkupEdited += PdfViewer_TextmarkupEdited;
-
-private void PdfViewer_TextmarkupEdited(object sender, TextmarkupEditedEventArgs e)
-{
-	//Obtain the opacity after change
-	double newOpacity = e.NewOpacity;
-	
-	//Obtain the opacity before change
-	double oldOpacity = e.OldOpacity;
-	
-	//Obtain the color after change
-	Color newColor = e.NewColor;
-	
-	//Obtain the color before change
-	Color oldColor = e.OldColor;
-	
-	//Obtain the page number in which the text markup is added
-	int pageNumber = e.PageNumber;
-}
-
-{% endhighlight %}
