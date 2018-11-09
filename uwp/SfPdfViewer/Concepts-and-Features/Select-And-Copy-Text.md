@@ -60,7 +60,7 @@ Follow below steps to select text in the PDF file.
 
 ## How to modify the selection color?
 
-The color used for text selection and the color of the handle can be customized. The properties TextSelectionColor and TextSelectionHandleColor in the TextSelectionSettings class of PdfViewerControl can be used to customize them. The below code snippet illustrates the same.
+The color used for text selection and the color of the handle can be customized. The property SelectionColor in the TextSelectionSettings class of PdfViewerControl can be used to customize them. The below code snippet illustrates the same.
 
 {% tabs %}
 {% highlight c# %}
