@@ -9,9 +9,7 @@ documentation: ug
 
 # Rows
 
-This section explains about various row types in treegrid.
-
-[StackedHeaderRow](https://help.syncfusion.com/uwp/sftreegrid/columns#stacked-headers)
+This section explains about various row types in treegrid and its customizations.
 
 # RowHeader
 
@@ -76,7 +74,7 @@ Denotes that the current row which has errors.
 
 ## Show row index in row header
 
-You can display the row index value in row header by customizing the TreeGridRowHeaderCell style with the binding of `RowIndex` to `TextBlock.Text` property.
+You can display the row index value in row header by customizing the `TreeGridRowHeaderCell` style with the binding of `RowIndex` to `TextBlock.Text` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,13 +109,13 @@ You can display the row index value in row header by customizing the Tre
 {% endhighlight %}
 {% endtabs %}
 
-![Row index image](Rows_images/Rows_img5.jpeg)
+![Row header with row index displayed in UWP treegrid](Rows_images/Rows_img5.jpeg)
 
 # HeaderRow
 
 Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![HeaderRow image](Rows_images/Rows_img6.jpeg)
+![HeaderRow of UWP treegrid](Rows_images/Rows_img6.jpeg)
 
 ## Hiding header row
 
@@ -138,7 +136,7 @@ You can hide the header row by setting [SfTreeGrid.HeaderRowHeight ](https://h
 
 ## Change the position of sort icon in header cell
 
-By default, the `sort icon` appears at the right of the header text. You can change the default position to left of the header text by customizing the TreeGridHeaderCell style.
+By default, the `sort icon` appears at the right of the header text. You can change the default position to left of the header text by customizing the `TreeGridHeaderCell` style.
 
 {% tabs %}
 {% highlight xaml %}
@@ -247,7 +245,7 @@ By default, the `sort icon` appears at the right of the header text. You ca
 {% endhighlight %}
 {% endtabs %}
 
-![Sort icon image](Rows_images/Rows_img7.jpeg)
+![Sort icon position changed in UWP treegrid](Rows_images/Rows_img7.jpeg)
 
 ## Customize style of header row
 
@@ -272,9 +270,9 @@ You can change the header cell background and foreground for specific column or
 {% endhighlight %}
 {% endtabs %}
 
-![HeaderRow image](Rows_images/Rows_img8.jpeg)
+![Style of HeaderRow in UWP treegrid customized](Rows_images/Rows_img8.jpeg)
 
-You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~HeaderStyle.html) property in column,
+You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderStyle.html) property in column,
 
 {% tabs %}
 {% highlight xaml %}
@@ -282,5 +280,5 @@ You can change the style of the particular column header by using the [HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Column image](Rows_images/Rows_img9.jpeg)
+![Style of a column header in UWP treegrid customized](Rows_images/Rows_img9.jpeg)
 
