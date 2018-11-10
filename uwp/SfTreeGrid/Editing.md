@@ -437,6 +437,7 @@ You can enable or disable editing for particular column by setting [TreeGridColu
 this.treeGrid.Columns["OrderID"].IsReadOnly = true;
 
 {% endhighlight %}
+{% endtabs %}
 
 N> We should set the AllowEditing property to achieve the IsReadOnly behavior.
 [TreeGridColumn.IsReadOnly ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~IsReadOnly.html)takes higher priority than [SfTreeGrid.IsReadOnly](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~IsReadOnly.html).
