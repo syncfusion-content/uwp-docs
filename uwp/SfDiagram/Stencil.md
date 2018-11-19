@@ -73,7 +73,7 @@ public class SymbolItem : ISymbol
 #### Symbol Filter
 
 {% tabs %}
-{% highlight %}
+{% highlight C# %}
 
         stencil.SelectedFilter = new SymbolFilterProvider { SymbolFilter = SymbolFilter };
         
