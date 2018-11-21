@@ -15,11 +15,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 ### Single Selection
 
-An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elements are visually represented.
-
-![](Interaction_images/Interaction_img2.jpeg)
-
-![](Interaction_images/Interaction_img4.jpeg)
+An element can be selected by clicking that element. During single click, all previously selected items are cleared.
 
 ### Selecting a Group
 
@@ -29,17 +25,54 @@ When a child element of any Group is clicked, its contained Group is selected in
 
 Multiple elements can be selected with the following ways.
 
-1. Ctrl+Click
+* Ctrl+Click
+* Selection rectangle / Rubber band selection
+
+#### Ctrl+Click
 
 During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.
 
-2. Selection rectangle / Rubber band selection
+#### Selection rectangle / Rubber band selection
 
 Clicking and dragging the Diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.
 
 Multiple selected elements are visually represented as shown.
 
 ![](Interaction_images/Interaction_img5.jpeg)
+
+* `SelectorChangedEvent` will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and interaction state with their old and new values.To explore about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
+
+### Select/Unselect the elements programmatically
+
+The `IsSelected` Property is used to select/unselect the elements at runtime.
+
+The following code example illustrates how to select/unselect an item through programmatically.
+
+{% tabs %}
+{% highlight C# %}
+
+// Selects an elements 
+
+node.IsSelected = true;
+
+// Unselect an element
+
+node.IsSelected = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
+
+* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source.To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
+
+## Deletion
+
+Selected objects can be deleted by <kdb> Delete </kdb> and In-built Delete command. 
+
+* `ItemDeletedEvent` will notify you with the deleted item in argument. To explore about arguments , please refer to [ItemDeletedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDeletedEventArgs.html).
+
+* `ItemDeletingEvent` will notify you with the item , option to cancel the deleting operation of item. To explore about arguments , please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html)   
 
 #### Selection Indicator Style
 
@@ -53,112 +86,15 @@ Multiple Selection will show the preview for the selected Items. We have provide
 
 ![](Interaction_images/Interaction_img13.png)
 
-### Select/Unselect the elements programmatically
+## Events
 
-The IsSelected Property is used to select/unselect the elements at runtime.
+The below events are common for Node, Connector, Group, Port and Annotation.
 
-The following code example illustrates how to select/unselect an item through programmatically.
+* `ItemTappedEvent` is invoked on clicking the diagramming element. To explore about arguments, please refer to [ItemTappedEventargs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
+* `ItemDoubleTappedEvent` is invoked on double clicking the diagramming element. To explore about arguments, please refer to [ItemDoubleTappedEventargs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
+* `MouseDown` and `MouseUp` are invoked as similar to framework element, which is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, please refer to [MouseDownEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
+[MouseUpEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
 
-{% highlight C# %}
-
-// Selects an elements 
-
-node.IsSelected = true;
-
-// Unselect an element
-
-node.IsSelected = false;
-
-{% endhighlight %}
-
-## Drag
-
-* An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/uwp/sfdiagram/Gridlines#snapping "Snapping").
-
-![](Interaction_images/Interaction_img6.jpeg)
-
-## Resize
-
-* Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
-* When one corner of the selector is dragged, opposite corner is in a static position.
-* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/uwp/sfdiagram/Gridlines#snapping "Snapping").
-
-![](Interaction_images/Interaction_img7.jpeg)
-
-## Rotate
-
-* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
-* The Node is rotated with reference to the static pivot point.
-* Pivot thumb (thumb at the middle of the Node) appears while rotating the Node to represent the static point.For more information about pivot, refer to [Position](/uwp/sfdiagram/Node#position "Position").
-
-![](Interaction_images/Interaction_img8.jpeg)
-
-## Connection Editing
-
-* Each segment of a selected Connector is editable with some specific handles/thumbs.
-
-### End point handles
-
-Source and target points of the selected Connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
-
-![](Interaction_images/Interaction_img9.jpeg)
-
-### Straight segment editing
-
-* End point of each straight segment is represented by a thumb that enables to edit the segment.
-* Any number of new segments can be inserted into a straight line by clicking that when shift and ctrl keys are pressed. (Ctrl+Shift+Click).
-* Straight segments can be removed by clicking the segment end point, when ctrl and shift keys are pressed. (Ctrl+Shift+Click).
-
-### Orthogonal thumbs
-
-* Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
-
-![](Interaction_images/Interaction_img10.jpeg)
-
-* When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
-
-![](Interaction_images/Interaction_img11.jpeg)
-
-### Bezier thumbs
-
-* Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
-
-![](Interaction_images/Interaction_img12.jpeg)
-
-## Interaction on thumb
-
-DiagramThumb is used to allow interaction with Diagram elements. We have provided virtual method to customize the thumb interaction. This method will be invoked if any diagram thumb is involved in interaction.
-
-We have provided `ThumbInteractionTool` virtual method in SfDiagram. Argument of this method is type of `InteractionToolArgs`.
-
-Following table describes the details of the properties for `InteractionToolArgs` 
-
-| Property | Description |
-|---|---|
-| Thumbs | To identify the type of the thumb. |
-| ThumbCorners | To identify the corner of the thumb. |
-| DragConstraints | To customize the interaction of the thumb. |
- 
-Following code illustrates how to customize the thumb interaction using `ThumbInteractionTool` virtual method.
-
-{% highlight C# %}
-
-//Override the ThumbInteractionTool method
-protected override void ThumbInteractionTool(InteractionToolArgs args)
-{
-    if(args.Thumbs==Thumbs.Resizer)
-    {
-           if(args.ThumbCorners==ThumbCorners.BottomRight)
-           {
-           
-               //Here, Aspect Ratio of the Node is customized based on the Thumb Type.
-               args.DragConstraints = DragConstraints.AspectRatio;
-           }
-    }
-} 
-
-{% endhighlight %}
 
 ## Drag and Drop Nodes over other elements
 
