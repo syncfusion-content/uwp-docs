@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Draw a line connecting two points, nodes or ports.
+title: Syncfusion Diagram supports to draw a line connecting two points, nodes or ports.
 description: How to draw a line to connect points, nodes, or ports?
 platform: uwp
 control: SfDiagram
@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
-![](Connector_images/Connector_img1.PNG)
+![link between two nodes and ports](Connector_images/Connector_img1.PNG)
 
 ## Define Connector
 
@@ -71,7 +71,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img2.PNG)
+![Straightline with source and target points](Connector_images/Connector_img2.PNG)
 
 ### Connectors from stencil
 
@@ -115,7 +115,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 (diagram.Connectors as ConnectorCollection).Add(connector1);
 
 
-//Creating NodeViewmodel
+//Creating NodeViewModel
 public NodeViewModel AddNode(double offsetX, string text)
 {
     NodeViewModel node = new NodeViewModel();
@@ -132,7 +132,7 @@ public NodeViewModel AddNode(double offsetX, string text)
 
 The `SourceNodeID` and `TargetNodeID` properties also allows to define the nodes to be connected.
 
-![](Connector_images/Connector_img3.PNG)
+![Orthogonal connector with source and target nodes](Connector_images/Connector_img3.PNG)
 
 N> By default, connections are created at the intersecting point of Segments and Node bounds. The connection between any specific point of Source and Target Nodes can be achieved with Ports.
 
@@ -146,7 +146,7 @@ For Connections with Ports, please refer to [Port](https://help.syncfusion.com/u
 
 The path of the Connector is defined with a collection of `Segments`.
 
-![](Connector_images/Connector_img31.PNG)
+![Orthogonal connector with source and target ports](Connector_images/Connector_img31.PNG)
 
 ### Straight
 
@@ -173,7 +173,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img6.PNG)
+![Straightline with source and target points](Connector_images/Connector_img6.PNG)
 
 ### Orthogonal
 
@@ -200,7 +200,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img8.PNG)
+![Orthogonal connector with source and target points along with segment thumbs](Connector_images/Connector_img8.PNG)
 
 ### CubicCurveSegment
 
@@ -230,15 +230,15 @@ ConnectorViewModel connector = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img12.PNG)
+![cubic curve connector with source and target points along with segment thumbs](Connector_images/Connector_img12.PNG)
 
 #### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target Nodes.
 
-![](Connector_images/Connector_img10.PNG)
+![When placing the source and target node of the connector in some distance](Connector_images/Connector_img10.PNG)
 
-![](Connector_images/Connector_img11.PNG)
+![when placing the source and target node of the connector with intersection](Connector_images/Connector_img11.PNG)
 
 N> Overlapping with Source and Target nodes are only avoided. Other nodes are not considered as obstacles.
 
@@ -248,7 +248,7 @@ Start and end points of a Connector can be decorated with some customizable shap
 
 The `SourceDecoratorStyle` and `TargetDecoratorStyle` properties allows to define the shape of the decorators.
 
-![](Connector_images/Connector_img15.PNG)
+![Connector with source and target decorator](Connector_images/Connector_img15.PNG)
 
 The `SourceDecoratorPivot` and `TargetDecoratorPivot` properties allows to Customize the position of the decorators in the connector.
 
@@ -275,7 +275,7 @@ SegmentDecorators = new ObservableCollection<ISegmentDecorator>()
  {% endtabs %}
  
 
- ![](Connector_images/SegmentDecorator.PNG)
+ ![Connector with segment decorator](Connector_images/SegmentDecorator.PNG)
 
 ## Corner radius
 
@@ -315,7 +315,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img21.PNG)
+![connector with corner radius](Connector_images/Connector_img21.PNG)
 
 ## Padding
 
@@ -343,15 +343,13 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img16.PNG)
+![padding or gap between connector ends and its source and target node](Connector_images/Connector_img16.PNG)
 
 ## Bridging
 
 Line Bridging creates a bridge for lines to smartly cross over other lines, at points of interaction. When two lines Connectors meet each other, the line with higher z-order (upper one) draws an arc over the underlying Connector. Bridging can be enabled/disabled either with the `Constraints` property of Connector or with `GraphConstraints`.
 
 The Direction of Bridge can be customized with property `BridgeDirection`.
-
-![](Connector_images/Bridging1.PNG)
 
 {% tabs %}
 {% highlight xaml %}
@@ -399,7 +397,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/bridging.png)
+![bridging will be shown when two connectors are intersecting](Connector_images/bridging.png)
 
 N> Bezier segments do not support Bridging.
 
@@ -436,7 +434,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/bridgespace.png)
+![customize the size the bridge of the connector](Connector_images/bridgespace.png)
 
 ## Appearance
 
@@ -472,7 +470,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Connector_images/Connector_img22.PNG)
+![custom appearence of the connector](Connector_images/Connector_img22.PNG)
 
 ## Interaction
 
@@ -488,7 +486,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![](Connector_images/StraightEditing.PNG)
+![straight connector with editing end thumbs](Connector_images/StraightEditing.PNG)
 
 * If any changes made in the source thumb of the connector ,`ConnectorSourceChangedEvent` will notify the DragState, Connector Item with its old and new values.To explore about arguments ,please refer to [ChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs.html) .
 
@@ -509,13 +507,13 @@ To explore about arguments, please refer to [ChangedEventArgs](https://help.sync
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![](Connector_images//SegmentEditing.png)
+![orthogonal connector with segment thumbs](Connector_images//SegmentEditing.png)
 
 ### Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![](Connector_images/Bezier3.gif)
+![bezier connector with control thumbs](Connector_images/Bezier3.gif)
 
 
 ## Constraints

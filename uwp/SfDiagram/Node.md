@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visually represent the geometrical informations, process flow, or entities.
+title: Syncfusion Diagram supports to represent the geometrical informations, process flow, or entities visually.
 description: How to visually represent the geometrical information and process flows as nodes?
 platform: uwp
 control: SfDiagram
@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
-![](Node_images/Node_Content.PNG)
+![can host any uielements as content of the node](Node_images/Node_Content.PNG)
 
 ## Shapes
 
@@ -62,7 +62,7 @@ NodeViewModel Begin = new NodeViewModel()
 
 Now,Node would be like this,
 
-![](Node_images/addNode.png)
+![node with shape and shapestyle](Node_images/addNode.png)
 
 ### Add Node from stencil
 
@@ -138,7 +138,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![](Node_images/Node_img3.PNG)
+![node with pivot as (0,0)](Node_images/Node_img3.PNG)
 
 ## Padding
 
@@ -182,7 +182,7 @@ public NodeViewModel AddNode(double offsetX, double offsetY,double height,double
 {% endhighlight %}
 {% endtabs %}
 
-![](Node_images/Node_img6.PNG)
+![padding or gap between node and its connector](Node_images/Node_img6.PNG)
 
 ## Appearance
 
@@ -209,7 +209,7 @@ return style;
 {% endhighlight %}
 {% endtabs %}
 
-![](Node_images/Node_img4.PNG)
+![node with custom appearence](Node_images/Node_img4.PNG)
 
 ## Flip
 
@@ -226,7 +226,7 @@ Diagram provides support to drag, resize, or rotate the Node interactively.
 #### Select
 Node can be selected by clicking on it.
 
-![](Node_images/Node_img7.jpg)
+![node with selection](Node_images/Node_img7.jpg)
 
 To explore about selection and selection related events , refer to [Selection](/uwp/sfdiagram/interaction#selection) .
 
@@ -237,7 +237,7 @@ To explore about selection and selection related events , refer to [Selection](/
 
 * `NodeChangedEvent` will notify the `OffsetX` and `OffsetY` changes with their old and new values.Along with that, this event will give information about interaction state. To explore about aruguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
-![](Node_images/Drag.gif)
+![dragging the nodes](Node_images/Drag.gif)
 
 #### Resize
 
@@ -247,7 +247,7 @@ To explore about selection and selection related events , refer to [Selection](/
 
 * `NodeChangedEvent` will notify the `UnitHeight` and `UnitWidth` changes with their old and new values.Along with that, this event will give information about  interaction state. To explore about arguments, please refer to [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
-![](Node_images/Resize.gif)
+![resizing the selected the node](Node_images/Resize.gif)
 
 #### Rotate
 
@@ -257,7 +257,7 @@ To explore about selection and selection related events , refer to [Selection](/
 
 * `NodeChangedEvent` will notify the `RotateAngle` changes with their old and new values.Along with that, this event will give information about iteraction State. To explore about arguments, please refer to the [NodeChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs.html) .
 
-![](Node_images/Rotate.gif)
+![rotating the selected node](Node_images/Rotate.gif)
 
 ## Constraints
 aa

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactively edit nodes and connectors during runtime
+title: Syncfusion diagram provides support to interactively edit nodes and connectors during runtime.
 description: How to select and edit nodes and connectors during runtime?
 platform: uwp
 control: SfDiagram
@@ -38,7 +38,7 @@ Clicking and dragging the Diagram area allows to create a rectangular region. Th
 
 Multiple selected elements are visually represented as shown.
 
-![](Interaction_images/Interaction_img5.jpeg)
+![Single selection container for multiple elements](Interaction_images/Interaction_img5.jpeg)
 
 * `SelectorChangedEvent` will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and interaction state with their old and new values.To explore about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
 
@@ -84,14 +84,14 @@ Multiple Selection will show the preview for the selected Items. We have provide
 | ConnectorSelectionIndicatorStyle | Defines the customization option for Selection Preview for the Connector.|
 | FirstSelectionIndicatorStyle | Defines the customization option for selection preview of first selected item.|
 
-![](Interaction_images/Interaction_img13.png)
+![preview of the element selection](Interaction_images/Interaction_img13.png)
 
 ## Events
 
 The below events are common for Node, Connector, Group, Port and Annotation.
 
-* `ItemTappedEvent` is invoked on clicking the diagramming element. To explore about arguments, please refer to [ItemTappedEventargs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
-* `ItemDoubleTappedEvent` is invoked on double clicking the diagramming element. To explore about arguments, please refer to [ItemDoubleTappedEventargs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
+* `ItemTappedEvent` is invoked on clicking the diagramming element. To explore about arguments, please refer to [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
+* `ItemDoubleTappedEvent` is invoked on double clicking the diagramming element. To explore about arguments, please refer to [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
 * `MouseDown` and `MouseUp` are invoked as similar to framework element, which is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, please refer to [MouseDownEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
 [MouseUpEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
 
