@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Diagram supports to represent the geometrical informations, process flow, or entities visually.
+title: Syncfusion Diagram gives the visual representation for the data or entities.
 description: How to visually represent the geometrical information and process flows as nodes?
 platform: uwp
 control: SfDiagram
@@ -138,7 +138,7 @@ NodeViewModel node = new NodeViewModel()
 {% endhighlight %}
 {% endtabs %}
 
-![node with pivot as (0,0)](Node_images/Node_img3.PNG)
+![node position is calculated based on the pivot value](Node_images/Node_img3.PNG)
 
 ## Padding
 
