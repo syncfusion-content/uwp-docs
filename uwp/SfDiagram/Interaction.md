@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion diagram supports to edit the nodes and connectors interactively at runtime.
+title: Syncfusion diagram provides run time editing support for nodes and connectors.
 description: How to select and edit nodes and connectors during runtime?
 platform: uwp
 control: SfDiagram
