@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Diagram gives the visual representation for the data or entities.
+title: Syncfusion diagram represents the data or entities visually.
 description: How to visually represent the geometrical information and process flows as nodes?
 platform: uwp
 control: SfDiagram
