@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range options to select range of values in SfRangeSlider control
+title: Range options with RangeSlider widget for Syncfusion UWP
 description: Range options to select range of values in SfRangeSlider control 
 platform: uwp
 control: SfRange Slider 

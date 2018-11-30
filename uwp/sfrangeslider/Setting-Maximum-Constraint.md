@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Maximum constraint of SfRangeSlider control for UWP
+title: Setting Maximum constraint of Syncfusion SfRangeSlider control for UWP
 description: Setting Maximum constraint of SfRangeSlider control for UWP 
 platform: uwp
 control: SfRange Slider 

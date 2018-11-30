@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with Ticks in SfRangeSlider control for UWP
+title: Dealing with Ticks in Syncfusion SfRangeSlider control for UWP
 description: Explains about Ticks in SfRangeSlider control for UWP 
 platform: uwp
 control: SfRange Slider 
