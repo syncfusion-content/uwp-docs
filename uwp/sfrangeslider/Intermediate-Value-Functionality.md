@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with Intermediate value for RangeSlider widget for Syncfusion UWP
+title: Intermediate value with Syncfusion RangeSlider widget for UWP
 description: Explains about Intermediate value options of SfRangeSlider control for UWP 
 platform: uwp
 control: SfRange Slider 

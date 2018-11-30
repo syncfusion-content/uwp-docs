@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with Reversed direction in Syncfusion SfRangeSlider control for UWP
+title: Reversed direction with RangeSlider widget for Syncfusion UWP
 description: Explains about Reversed direction options in SfRangeSlider control for UWP   
 platform: uwp
 control: SfRange Slider 
