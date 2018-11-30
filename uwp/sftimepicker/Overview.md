@@ -26,7 +26,7 @@ The SfTimePicker control allows the user to select time values in a touch friend
 
 
 
-###Key Features
+### Key Features
 
 Formatting – The control displays the selected time value in a various formats.
 
