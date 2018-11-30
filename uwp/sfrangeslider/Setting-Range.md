@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range options to select range of values in SfRangeSlider control
+title: Range options to select range of values in Syncfusion SfRangeSlider control
 description: Range options to select range of values in SfRangeSlider control 
 platform: uwp
 control: SfRange Slider 

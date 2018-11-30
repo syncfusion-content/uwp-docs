@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch Support options of SfRangeSlider control for UWP
+title: Touch Support options of Syncfusion SfRangeSlider control for UWP
 description: Touch Support options of SfRangeSlider control for UWP
 platform: uwp
 control: SfRange Slider 

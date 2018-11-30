@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with Tooltip options supported by SfRangeSlider control for UWP
+title: Deals with Tooltip options supported by Syncfusion SfRangeSlider control for UWP
 description: Explains about the Tooltip options supported by SfRangeSlider control for UWP
 platform: uwp
 control: SfRange Slider 
