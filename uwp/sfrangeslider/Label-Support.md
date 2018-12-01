@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with label options in SfRangeSlider control for UWP
+title: Deals with label options in Syncfusion SfRangeSlider control for UWP
 description: Explains about label options in SfRangeSlider control for UWP
 platform: uwp
 control: SfRange Slider 

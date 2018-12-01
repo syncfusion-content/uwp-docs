@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gestures supported by SfRangeSlider control for UWP
+title: Gestures supported by Syncfusion SfRangeSlider control for UWP
 description: Gestures supported by SfRangeSlider control for UWP  
 platform: uwp
 control: SfRange Slider 

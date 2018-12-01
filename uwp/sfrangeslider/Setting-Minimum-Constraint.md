@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Minimum constraint of SfRangeSlider control for UWP
+title: Setting Minimum constraint of Syncfusion SfRangeSlider control for UWP
 description:  Setting Minimum constraint of SfRangeSlider control for UWP 
 platform: uwp
 control: SfRange Slider 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deals with orientation to change the position of SfRangeSlider control for UWP
+title: Orientation support in Syncfusion SfRangeSlider control for UWP
 description: Deals with orientation to change the position of SfRangeSlider control for UWP  
 platform: uwp
 control: SfRange Slider 
