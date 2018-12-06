@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with SfCellGrid 
+title: Working with SfCellGrid | UWP CellGrid | Syncfusion
 description: How to work with CellGrid and its properties
 platform: uwp
 control: SfCellGrid
