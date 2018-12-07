@@ -221,7 +221,7 @@ In the default layout, the maps will be rendered based on the given points of sh
 
 ### Tile
 
-In the default layout, the maps will be rendered based on the given points of shape file without any further manipulation of maps scale.
+In the tile layout, the maps scale value is maintained in every direction around a point. Therefore, the shapes are represented accurately and without distortion for small areas
 
 {% highlight xaml %}
 
