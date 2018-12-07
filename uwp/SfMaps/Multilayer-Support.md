@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multilayer Support in SfMaps control
+title: Multilayer Support in Syncfusion Maps control
 description: Learn how to provide multilayer support in Maps
 platform: UWP
 control: Maps
@@ -178,7 +178,7 @@ Situations arise where, any combination of available shapefiles needs to be load
 
 ![Multilayer support](Multilayer-Support_images/Multilayer-Support_img1.png)
 
-# Layout type
+## Layout type
 
 The LayoutType defines how to project the map. This can be categorized into the following types:
  
