@@ -176,4 +176,78 @@ Situations arise where, any combination of available shapefiles needs to be load
  
 {%endtabs%}
 
-![](Multilayer-Support_images/Multilayer-Support_img1.png)
+![Multilayer support](Multilayer-Support_images/Multilayer-Support_img1.png)
+
+# Layout type
+
+The LayoutType defines how to project the map. This can be categorized into the following types:
+ 
+  * Default
+  * Tile
+
+### Default
+
+In the default layout, the maps will be rendered based on the given points of shape file without any further manipulation of maps scale.
+
+{% highlight xaml %}
+
+                <syncfusion:ShapeFileLayer  x:Name="shapelayer" Uri="Maps.Assets.world1.shp" LayoutType="Default">
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
+                        <syncfusion:ShapeSetting ShapeFill="Gray" ShapeStroke="Black" 
+                                                 ShapeStrokeThickness="0.5"></syncfusion:ShapeSetting>
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
+                </syncfusion:ShapeFileLayer>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "Maps.Assets.world1.shp";
+            layer.LayoutType = LayoutType.Default;
+
+            ShapeSetting setting = new ShapeSetting();
+            setting.ShapeFill = new SolidColorBrush(Colors.Gray);
+            setting.ShapeStroke= new SolidColorBrush(Colors.Black);
+            setting.ShapeStrokeThickness = 0.5;
+
+            layer.ShapeSettings = setting;
+            map.Layers.Add(layer);
+
+{% endhighlight %}
+
+![Default layout](Multilayer-Support_images/Default.png)
+
+### Tile
+
+In the default layout, the maps will be rendered based on the given points of shape file without any further manipulation of maps scale.
+
+{% highlight xaml %}
+
+                  <syncfusion:ShapeFileLayer  x:Name="shapelayer" Uri="Maps.Assets.world1.shp" LayoutType="Tile">
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
+                        <syncfusion:ShapeSetting ShapeFill="Gray" ShapeStroke="Black" 
+                                                 ShapeStrokeThickness="0.5"></syncfusion:ShapeSetting>
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
+                </syncfusion:ShapeFileLayer>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+            layer.Uri = "Maps.Assets.world1.shp";
+            layer.LayoutType = LayoutType.Tile;
+
+            ShapeSetting setting = new ShapeSetting();
+            setting.ShapeFill = new SolidColorBrush(Colors.Gray);
+            setting.ShapeStroke= new SolidColorBrush(Colors.Black);
+            setting.ShapeStrokeThickness = 0.5;
+
+            layer.ShapeSettings = setting;
+            map.Layers.Add(layer);
+
+{% endhighlight %}
+
+![Tile layout](Multilayer-Support_images/Tile.png)
