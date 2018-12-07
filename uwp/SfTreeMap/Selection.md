@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in TreeMap control
+title: Selection in Syncfusion TreeMap control
 description: Selection
 platform: UWP
 control: TreeMap
@@ -55,7 +55,7 @@ Code Sample:
 
 ![Selection support](Features_images/highlightselection.png)
 
-# Programmatic Selection
+## Programmatic Selection
 
 The `SelectedItems` property allows you select the shapes programmatically without tapping or touching them.
 
@@ -86,7 +86,7 @@ The following code sample demonstrates how to select and deselect a shape.
 
 ![Selected items](Features_images/highlightselection1.png)
 
-# Events
+## Events
 
 The SelectionChanged event is fired when the leaf node selection is changed. The item added in the collection is passed as an SelectionChangedEventArgs.
 
