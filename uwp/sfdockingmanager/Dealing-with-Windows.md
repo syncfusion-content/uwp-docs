@@ -67,12 +67,12 @@ docking.ActivateWindow(SolutionExplorer);
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img1.jpeg)
+![Activate particular child window in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img1.jpeg)
 
 
 ## Adding Window Programmatically
 
-Any UI element can be added inside the `SfDockingManager` as its child windows. The windows are added as Dock windows, since the default value of the `DockState` is Dock. The UI element is added in the `SfDockingManager` using the Add method of the `Children` property of the `SfDockingManager`.
+Any UI element can be added inside the `SfDockingManager` as its child windows. The windows are added as Dock windows, since the default value of the `DockState` is Dock. The UI element is added in the `SfDockingManager` using the Add method of the `DockItems` property of the `SfDockingManager`.
 
 For example, `ContentControl` is added as a window for `SfDockingManager`.
 
@@ -102,22 +102,22 @@ ContentControl content5 = new ContentControl();
 
 SfDockingManager.SetHeader(content5, "Window5");
 
-DockingManager1.Children.Add(content1);
+DockingManager1.DockItems.Add(content1);
 
-DockingManager1.Children.Add(content2);
+DockingManager1.DockItems.Add(content2);
 
-DockingManager1.Children.Add(content3);
+DockingManager1.DockItems.Add(content3);
 
-DockingManager1.Children.Add(content4);
+DockingManager1.DockItems.Add(content4);
 
-DockingManager1.Children.Add(content5);
+DockingManager1.DockItems.Add(content5);
 
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img2.jpeg)
+![Displayed dock windows in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img2.jpeg)
 
 
 ## Hiding Window Programmatically
@@ -134,7 +134,7 @@ SfDockingManager.SetDockState(content1, DockState.Hidden);
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img3.jpeg)
+![Hide child windows in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img3.jpeg)
 
 
 ## Customizing Docking window
@@ -159,7 +159,7 @@ A Docking window can be customized using the property `DockWindowCaptionBackgrou
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img4.jpeg)
+![Customized dock window in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img4.jpeg)
 
 
 ## Customizing Active Docking Window
@@ -184,7 +184,7 @@ Active docking window can be customized using the property `DockWindowActiveFore
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img5.jpeg)
+![Customized active dock window in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img5.jpeg)
 
 ## Customizing Inactive Document window
 
@@ -210,11 +210,11 @@ ForeColor and BackColor of Inactive document window can be customized using the 
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-windows-document-img1.jpeg)
+![Customized inactive document window in Docking Manager](Dealing-with-Windows-images/Dealing-with-windows-document-img1.jpeg)
 
 ## Customizing Selected Document window
 
-Selected Document window can be customized using the property `DocumentTabItemBackground`, `DocumentTabItemForeground` with desired brush values. Font size of the selected document window can be customized through `DocumentTabItemSelectedFontSize` property of DockingManager.
+Selected Document window can be customized using the property `DocumentTabItemSelectedBackground`, `DocumentTabItemSelectedForeground` with desired brush values. Font size of the selected document window can be customized through `DocumentTabItemSelectedFontSize` property of DockingManager.
 
 {% tabs %}
 
@@ -236,7 +236,7 @@ Selected Document window can be customized using the property `DocumentTabItemBa
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-windows-document-img2.jpeg)
+![Customized active document window in Docking Manager](Dealing-with-Windows-images/Dealing-with-windows-document-img2.jpeg)
 
 
 ## Customizing Floating Window
@@ -260,7 +260,7 @@ The float window can be customized by setting `FloatWindowBackground`, `FloatWin
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img6.jpeg)
+![Customized float window in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img6.jpeg)
 
 
 ## Handling state changing of DockingManager child element
@@ -386,7 +386,7 @@ The fill color of hint shadow/dock preview element can be customized using `Dock
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img8.jpeg)
+![Customized docking hint shadow color in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img8.jpeg)
 
 
 ## Sizing Docking Windows
@@ -411,7 +411,7 @@ The desired height and width can be set for the Dock windows through the Attache
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img9.jpeg)
+![Change the width and height for dock window in DockingManager](Dealing-with-Windows-images/Dealing-with-Windows-img9.jpeg)
 
 
 ## Occupy Whole Window
@@ -432,7 +432,7 @@ To arrange the dock windows to a whole available space in the `SfDockingManager`
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img10.jpeg)
+![Arranged dock windows to available space in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img10.jpeg)
 
 
 ## Enable/Disable ContextMenus
@@ -458,7 +458,7 @@ Docking, floating and auto hiding windows have a ContextMenu button that contain
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img11.jpeg)
+![Enabled context menu for dock, float and auto hide windows in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img11.jpeg)
 
 
 ### Enable/Disable ContextMenu for Document windows
@@ -480,7 +480,7 @@ Document windows have a ContextMenu button, that contains options for switching 
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img12.jpeg)
+![Enabled context menu for document windows in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img12.jpeg)
 
 
 ### Enable/Disable context menu of DocumentTabItems
@@ -502,6 +502,6 @@ One or more `DocumentTabItems` can be closed using Document TabItem ContextMenu.
 
 {% endtabs %}
 
-![](Dealing-with-Windows-images/Dealing-with-Windows-img13.jpeg)
+![Enabled context menu for document tab items in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img13.jpeg)
 
 
