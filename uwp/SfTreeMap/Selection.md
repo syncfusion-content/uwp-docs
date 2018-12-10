@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in TreeMap control
+title: Selection in Syncfusion TreeMap control
 description: Selection
 platform: UWP
 control: TreeMap
@@ -53,5 +53,52 @@ Code Sample:
 
 {% endhighlight %}
 
+![Selection support](Features_images/highlightselection.png)
 
-![](Features_images/highlightselection.png)
+## Programmatic Selection
+
+The `SelectedItems` property allows you select the shapes programmatically without tapping or touching them.
+
+To select a shape and deselect it from the same collection programmatically, just add the shape that is to be selected to the selected items collection.
+
+The following code sample demonstrates how to select and deselect a shape.
+
+{% highlight xaml %}
+
+ <syncfusion:SfTreeMap x:Name="TreeMap"  Margin="10"  HighlightOnSelection="True" HighlightBorderBrush="Black"
+                                      HighlightBorderThickness="5"
+                                      ItemsSource="{Binding OlympicMedalsDetails}"
+                                      WeightValuePath="TotalMedals" ColorValuePath="GoldMedals" 
+                                   >
+
+{% endhighlight %}
+
+
+{% highlight c# %}
+
+   private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            OlympicMedalsViewModel viewModel = (sender as Button).DataContext as OlympicMedalsViewModel;
+            TreeMap.SelectedItems.Add(viewModel.OlympicMedalsDetails[0]);
+        }
+
+{% endhighlight %}
+
+![Selected items](Features_images/highlightselection1.png)
+
+## Events
+
+The SelectionChanged event is fired when the leaf node selection is changed. The item added in the collection is passed as an SelectionChangedEventArgs.
+
+{% highlight c# %}
+
+  TreeMap.SelectionChanged += TreeMap_SelectionChanged;
+
+  private void TreeMap_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            txtBlock.Text = (e.AddedItems[0] as OlympicMedals).GameName;           
+        }
+  
+{% endhighlight %}
+
+
