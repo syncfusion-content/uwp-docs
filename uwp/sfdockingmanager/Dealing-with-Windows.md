@@ -72,7 +72,7 @@ docking.ActivateWindow(SolutionExplorer);
 
 ## Adding Window Programmatically
 
-Any UI element can be added inside the `SfDockingManager` as its child windows. The windows are added as Dock windows, since the default value of the `DockState` is Dock. The UI element is added in the `SfDockingManager` using the Add method of the `Children` property of the `SfDockingManager`.
+Any UI element can be added inside the `SfDockingManager` as its child windows. The windows are added as Dock windows, since the default value of the `DockState` is Dock. The UI element is added in the `SfDockingManager` using the Add method of the `DockItems` property of the `SfDockingManager`.
 
 For example, `ContentControl` is added as a window for `SfDockingManager`.
 
@@ -102,15 +102,15 @@ ContentControl content5 = new ContentControl();
 
 SfDockingManager.SetHeader(content5, "Window5");
 
-DockingManager1.Children.Add(content1);
+DockingManager1.DockItems.Add(content1);
 
-DockingManager1.Children.Add(content2);
+DockingManager1.DockItems.Add(content2);
 
-DockingManager1.Children.Add(content3);
+DockingManager1.DockItems.Add(content3);
 
-DockingManager1.Children.Add(content4);
+DockingManager1.DockItems.Add(content4);
 
-DockingManager1.Children.Add(content5);
+DockingManager1.DockItems.Add(content5);
 
 
 {% endhighlight %}
