@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with SfCellGrid 
+title: Working with SfCellGrid | UWP CellGrid | Syncfusion
 description: How to work with CellGrid and its properties
 platform: uwp
 control: SfCellGrid
@@ -107,7 +107,7 @@ private void Model_CommitCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Sty
 
 ## Gridlines
 
-Enabling grid lines creates a borders around all cells within the CellGrid. Grid lines can be shown or hided by using `ShowGridLines` property.
+Enabling grid lines creates a borders around all cells within the CellGrid. Grid lines can be shown or hidden by using `ShowGridLines` property.
 By default, the grid lines are visible in the SfCellGrid. If you want to hide the grid lines, then set the `ShowGridLines` property to false.
 
 {% tabs %}

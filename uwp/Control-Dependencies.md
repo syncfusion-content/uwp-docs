@@ -284,7 +284,7 @@ Syncfusion.XlsIO.UWP <br/>
 Syncfusion.Pdf.UWP
 </td>
 <td> 
-Syncfusion.SfGridConverter.UWP
+Syncfusion.DataGridExcelExport.UWP
 </td>
 </tr>
 </table>
@@ -740,7 +740,7 @@ For exporting pivot chart contents to PDF, word and image, the following referen
 Syncfusion.SfPivotChartConverter.UWP
 </td>
 <td> 
-Syncfusion.SfPivotChartConverter.UWP
+Syncfusion.PivotChartExport.UWP
 </td>
 </tr>
 </table>
@@ -841,7 +841,7 @@ For exporting pivot grid contents to excel, word, PDF and CSV, the following ref
 Syncfusion.SfPivotGridConverter.UWP
 </td>
 <td> 
-Syncfusion.SfPivotGridConverter.UWP
+Syncfusion.PivotTableExport.UWP
 </td>
 </tr>
 </table>
