@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive feature of SfTreeGrid.
+title: Interactive feature | TreeGrid | WPF | Syncfusion
 description: Interactive feature of SfTreeGrid | SfTreeGrid | ToolTip 
 platform: wpf
 control: SfTreeGrid
@@ -151,7 +151,7 @@ this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Paste" });
 {% endhighlight %}
 {% endtabs %}
 
-![](ContextMenu_images/ContextMenu_img1.png)
+![ContextMenu cut copy paste](ContextMenu_images/ContextMenu_img1.png)
 
 While binding the menu item using CommandBinding you can get the command parameter as TreeGridNodeContextMenuInfo which contains the node of the corresponding row.
 
@@ -208,7 +208,7 @@ this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearFilter
 {% endhighlight %}
 {% endtabs %}
 
-![](ContextMenu_images/ContextMenu_img2.png)
+![ContextMenu sorting](ContextMenu_images/ContextMenu_img2.png)
 
 While binding the menu item using CommandBinding you can get the parameter as TreeGridColumnContextMenuInfo which contains the particular GridColumn.
 
@@ -288,7 +288,7 @@ While binding the menu item using CommandBinding you can get the parameter as Tr
 {% endhighlight %}
 {% endtabs %}
 
-# Events
+### Events
 
   [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~TreeGridContextMenuOpening_EV.html) event occurs while opening the context menu in SfTreeGrid. TreeGridContextMenuEventArgs has the following members which provides the information about TreeGridContextMenuOpening event.
   
@@ -343,7 +343,7 @@ void dataGrid_ TreeGridContextMenuOpening (object sender, TreeGridContextMenuEve
 {% endhighlight %}
 {% endtabs %}
 
-![](ContextMenu_images/ContextMenu_img3.png)
+![ContextMenu Record and Data](ContextMenu_images/ContextMenu_img3.png)
 
 ####  Changing background to ContextMenu
 
@@ -365,7 +365,7 @@ You can change the appearance of the context menu by customizing the style with 
 
 {% endhighlight %}
 
-![](ContextMenu_images/ContextMenu_img4.png)
+![ContextMenu Expand and Collapse](ContextMenu_images/ContextMenu_img4.png)
 
 
 ##s  Drag and Drop Rows
@@ -384,10 +384,10 @@ treeGrid.AllowDraggingRows = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img1.png)
+![Drag and drop window while dragging in WPF treegrid](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img1.png)
 
 While dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop at the bottom of node, it will be added below the node and if you are dropping over the node, the it will be added as child of that node.
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img2.png)
+![Drap and drop row as child](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img2.png)
 
 ### Auto expanding the node on drag over
 
@@ -405,7 +405,7 @@ N> When drop position is “Drop as child”, drag indicators will not be shown.
 ### Dragging multiple nodes
 
 SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting  [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) as `Multiple` or `Extended`.  
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img3.png)
+![Drag and drop multiple rows](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img3.png)
 
 ### Drag and Drop between TreeGrids
 
