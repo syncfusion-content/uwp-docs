@@ -260,7 +260,8 @@ Custom type properties will be auto-generated through [AutoGenerateColumnsModeFo
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfDataGrid ItemsSource="{Binding Source}" AllowEditing="True" 
-                               AllowFiltering="True" x:Name="dataGrid" AutoGenerateColumnsForCustomType="True"
+                               AllowFiltering="True" x:Name="dataGrid" 
+							   AutoGenerateColumnsForCustomType="True"
                                AllowSorting="True" AddNewRowInitiating="dataGrid_AddNewRowInitiating" 
                                AutoGenerateColumnsModeForCustomType="Both"
                                GridCopyOption="CopyData" GridPasteOption="PasteData"
