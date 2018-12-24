@@ -1548,7 +1548,134 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Smart axis labels support in UWP Chart](Axis_images/Axis_img28.png)
 
+## Custom Labels
 
+SfChart allows user to define the labels for the axis. For defining the axis label you have to set the [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html#) and [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html#) property .You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~CustomLabels.html#) property as in the below code snippet.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis >
+
+<syncfusion:CategoryAxis.CustomLabels>
+
+<syncfusion:ChartAxisLabel Position="0" LabelContent="0-1"/>
+
+<syncfusion:ChartAxisLabel Position="1" LabelContent="1-2"/>
+
+<syncfusion:ChartAxisLabel Position="2" LabelContent="2-3"/>
+
+<syncfusion:ChartAxisLabel Position="3" LabelContent="3-4"/>
+
+<syncfusion:ChartAxisLabel Position="4" LabelContent="4-5"/>
+
+<syncfusion:ChartAxisLabel Position="5" LabelContent="5-5"/>
+
+</syncfusion:CategoryAxis.CustomLabels>
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis axis = new CategoryAxis();
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 0, LabelContent = "0-1" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 1, LabelContent = "1-2" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 2, LabelContent = "2-3" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 3, LabelContent = "3-4" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 4, LabelContent = "4-5" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 5, LabelContent = "5-5" });
+
+chart.PrimaryAxis = axis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Axis label customization support in UWP Chart](Axis_images/Axis_img35.jpg)
+
+
+You can also directly bind the collection of labels to the [`LabelsSource`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsSource.html#) property for defining custom labels. The following code example demonstrates the defining the label collection in code behind and binding the property in XAML page.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis LabelsSource="{Binding Labels}" ContentPath="Content" PositionPath="Position">
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    ContentPath ="Content",
+
+    PositionPath = "Position",
+
+    LabelsSource = Labels
+
+};
+
+
+public List<LabelItem> Labels { get; set; }
+
+Labels = new List<LabelItem>
+
+{
+
+    new LabelItem() {Position=0, Content = "0-1"},
+
+    new LabelItem() {Position=1, Content = "1-2"},
+
+    new LabelItem() {Position=2, Content = "2-3"},
+
+    new LabelItem() {Position=3, Content = "3-4"},
+
+    new LabelItem() {Position=4, Content = "4-5"},
+
+    new LabelItem() {Position=5, Content = "5-6"},
+
+    new LabelItem() {Position=6, Content = "6-7"},
+
+    new LabelItem() {Position=7, Content = "7-8"},
+
+};
+
+public class LabelItem
+
+{
+
+    public string Content { get; set; }
+
+    public int Position { get; set; }
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Axis label customization support in UWP Chart](Axis_images/Axis_img36.jpg)
 
 ## Add units to labels
 
