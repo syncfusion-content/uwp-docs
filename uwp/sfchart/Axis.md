@@ -1640,7 +1640,6 @@ chart.PrimaryAxis = new CategoryAxis()
 public List<LabelItem> Labels { get; set; }
 
 Labels = new List<LabelItem>
-
 {
 
     new LabelItem() {Position=0, Content = "0-1"},
@@ -1662,7 +1661,6 @@ Labels = new List<LabelItem>
 };
 
 public class LabelItem
-
 {
 
     public string Content { get; set; }
