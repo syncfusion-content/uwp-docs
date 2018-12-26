@@ -25,7 +25,6 @@ The below code example shows the context menu with command bindings.
 </ContextMenu>
 
 {% endhighlight %}
-{% endhighlight %}
 {% highlight c# %}
 
 public class BaseCommand : ICommand
@@ -364,6 +363,7 @@ You can change the appearance of the context menu by customizing the style with 
 </ContextMenu>
 
 {% endhighlight %}
+{% endtabs %}
 
 ![ContextMenu Expand and Collapse](ContextMenu_images/ContextMenu_img4.png)
 
