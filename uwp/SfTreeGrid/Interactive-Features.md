@@ -150,7 +150,7 @@ this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Paste" });
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu cut copy paste](ContextMenu_images/ContextMenu_img1.png)
+![ContextMenu for nodes in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img1.png)
 
 While binding the menu item using CommandBinding you can get the command parameter as TreeGridNodeContextMenuInfo which contains the node of the corresponding row.
 
@@ -207,7 +207,7 @@ this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearFilter
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu sorting](ContextMenu_images/ContextMenu_img2.png)
+![ContextMenu for header in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img2.png)
 
 While binding the menu item using CommandBinding you can get the parameter as TreeGridColumnContextMenuInfo which contains the particular GridColumn.
 
@@ -342,7 +342,7 @@ void dataGrid_ TreeGridContextMenuOpening (object sender, TreeGridContextMenuEve
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu Record and Data](ContextMenu_images/ContextMenu_img3.png)
+![ContextMenu for opening the menu items in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img3.png)
 
 ####  Changing background to ContextMenu
 
@@ -363,9 +363,8 @@ You can change the appearance of the context menu by customizing the style with 
 </ContextMenu>
 
 {% endhighlight %}
-{% endtabs %}
 
-![ContextMenu Expand and Collapse](ContextMenu_images/ContextMenu_img4.png)
+![ContextMenu for appearance in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img4.png)
 
 
 ##s  Drag and Drop Rows
