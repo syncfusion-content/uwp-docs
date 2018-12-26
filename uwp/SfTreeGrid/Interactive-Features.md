@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interactive feature | TreeGrid | WPF | Syncfusion
+title: Interactive feature | TreeGrid | UWP | Syncfusion
 description: Interactive feature of SfTreeGrid | SfTreeGrid | ToolTip 
-platform: wpf
+platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
