@@ -917,7 +917,7 @@ The [`PanChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfCh
  
 ### ResetZooming
 
-The [`ResetZooming`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html) event is triggered after the chart is reset on double tap. The argument contains the following information.
+The [`ResetZooming`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html) event is triggered while resetting the chart on double tap, and this is a cancelable event. The argument contains the following information.
 
 * [`Axis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs~Axis.html) - Instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
 * [`Cancel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs~Cancel.html) - Used to set a value indicating whether the panning should be canceled.
