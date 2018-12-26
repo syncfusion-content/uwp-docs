@@ -114,7 +114,7 @@ foreach (var order in viewModel.PersonDetails)
 {% endhighlight %}
 {% endtabs %}
 
-![Row with LastName as Buchanan added to SelectedItems collection](Selection_images/Selection_img3.jpeg)
+![UWP treegrid shows row with LastName as Buchanan added to SelectedItems collection](Selection_images/Selection_img3.jpeg)
 
 ### Process selection using methods
 
@@ -128,7 +128,7 @@ this.treeGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![Rows from 3 to 7 are selected](Selection_images/Selection_img4.jpeg)
+![UWP treegrid shows with rows from 3 to 7 are selected](Selection_images/Selection_img4.jpeg)
 
 ### Process current cell
 
