@@ -827,7 +827,7 @@ SfChart provides the following list of events.
 
 ### SelectionChanging
 
-The [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanging_EV.html) event is triggered before the data point is selected. You can restrict a data point from being selected, by canceling this event, by setting Cancel property in the event argument to true. The argument contains the following information.
+The [`SelectionChanging`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~SelectionChanging_EV.html) event is triggered before the data point is selected, and this is a cancelable event.The argument contains the following information.
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs~SelectedSeries.html) - Used to get the series of selected data point.
 * [`SelectedSegments`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs~SelectedSegments.html) - Used to get or set the segments collection of selected series.
@@ -910,14 +910,14 @@ The [`PanChanging`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfC
 
 ### PanChanged
 
-The [`PanChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PanChanged_EV.html)
+The [`PanChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PanChanged_EV.html) event is triggered when the panning is completed. The argument contains the following information.
 
 * [`Axis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PanningEventArgs~Axis.html) - Instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
 * [`NewZoomPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PanningEventArgs~NewZoomPosition.html) - Used to get the new zoom position of the axis.
  
 ### ResetZooming
 
-The [`ResetZooming`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html)
+The [`ResetZooming`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~ResetZooming_EV.html) event is triggered after the chart is reset on double tap. The argument contains the following information.
 
 * [`Axis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs~Axis.html) - Instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
 * [`Cancel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs~Cancel.html) - Used to set a value indicating whether the panning should be canceled.
