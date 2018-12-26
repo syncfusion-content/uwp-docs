@@ -3638,9 +3638,36 @@ ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
 
 ## Events
 
-* [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html)   - Occurs at the when the range is changed in the axis.
-* [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html)- Occurs when labels is created.
-* [`AxisBoundChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html)- Occurs when the bounds of the axis changed.
-* [`LabelClicked`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels are clicked. Supports for 2D axis.
+### ActualRangeChanged
 
+The [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html) event is triggered when the axis range is changed. The argument contains the following information.
+
+* [`ActualMinimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~ActualMinimum.html) - Used to get or set the actual minimum value of the axis.
+* [`ActualMaximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~ActualMaximum.html) - Used to get or set the actual maximum value of the axis.
+* [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~VisibleMinimum.html) - Used to get or set the visible minimum value of the axis.
+* [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~VisibleMaximum.html) - Used to get or set the visible maximum value of the axis.
+* [`ActualInterval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~ActualInterval.html) -  Used to get the actual interval of the axis.
+
+### LabelCreated
+
+The [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html) event is triggered when the axis label is created. The argument contains [`AxisLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelCreatedEventArgs~AxisLabel.html) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html) which contains following properties.
+
+* [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html) - Used to get or set the content of the label.
+* [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html) - Used to get or set the position of the label.
+
+### AxisBoundChanged
+
+The [`AxisBoundChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html) event is triggered when the bounds of the axis changed. The argument contains the following information.
+
+* [`NewBounds`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBoundsEventArgs~NewBounds.html) - Used to get the new axis bounds.
+* [`OldBounds`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBoundsEventArgs~OldBounds.html) - Used to get the old axis bounds.
+
+### LabelClicked
+
+The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelClicked_EV.html) event is triggered when labels are clicked. Supports for 2D axis. The argument contains [`AxisLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisLabelClickedEventArgs~AxisLabel.html) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html) which contains following properties.
+
+* [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html) - Used to get the content of the label.
+* [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html) - Used to get the position of the label.
+* [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~PrefixLabelTemplate.html) -  Used to get the prefix template of the label.
+* [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~PostfixLabelTemplate.html) - Used to get the postfix template of the label.
 
