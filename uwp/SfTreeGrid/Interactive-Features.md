@@ -367,7 +367,7 @@ You can change the appearance of the context menu by customizing the style with 
 ![ContextMenu for appearance in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img4.png)
 
 
-##s  Drag and Drop Rows
+###  Drag and Drop Rows
 
 You can allow end-users to drag and drop the rows in SfTreeGrid and between two SfTreeGrid by setting [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) to `true`.It is also possible to drag and drop to and from any other control.
 
