@@ -19,7 +19,7 @@ This section explains how to create and configure a simple Gantt application.
 2. Go to Universal Windows > Extensions.
 3. Select Syncfusion Controls for UWP XAML.
 
-![](SfGantt_images/SDK_Reference.jpeg)
+![Adding sdk references in project](SfGantt_images/SDK_Reference.jpeg)
 
 ### Adding assembly reference
 
@@ -29,7 +29,7 @@ In the Add Reference window, browse and choose the reference assembly from the f
 
 **[Installed location]**\Syncfusion\Essential Studio\\**[Installed version]**\Assemblies for Universal Windows\10.0\
 
-![](SfGantt_images/Gantt_dll_reference.jpeg)
+![Adding UWP gantt assembly reference in project](SfGantt_images/Gantt_dll_reference.jpeg)
 
 The following list of assemblies should be added as references to use the Gantt control in applications.
 
@@ -134,13 +134,13 @@ SfGantt sfGantt = new SfGantt();
 
 Drag the SfGantt control from the toolbox to your application.
 
-![](SfGantt_images/Tool_Box.jpeg)
+![Loading UWP gantt control to toolbox page](SfGantt_images/Tool_Box.jpeg)
 
 Now, the “Syncfusion Controls for UWP XAML” reference will be added to the application references, and the xmlns namespace will be generated in MainWindow.xaml as shown in the following screenshot.
 
-![](SfGantt_images/Added_SDK.jpeg)
+![SDK Reference added automatically](SfGantt_images/Added_SDK.jpeg)
 
-![](SfGantt_images/XAML_Reference.jpeg)
+![Automatically initializes UWP gantt control instance](SfGantt_images/XAML_Reference.jpeg)
 
 ## Creating data model
 
@@ -332,7 +332,7 @@ sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttri
 
 {% endtabs %}
 
-![](SfGantt_images/Getting_Started.jpeg)
+![UWP gantt with visible columns](SfGantt_images/Getting_Started.jpeg)
 
 ## Sorting
 
@@ -362,7 +362,7 @@ sfGantt.AllowSorting = true;
 
 {% endtabs %}
 
-![](SfGantt_images/Sorting.jpeg)
+![UWP gantt with sorting feature](SfGantt_images/Sorting.jpeg)
 
 ## Editing
 
@@ -441,7 +441,46 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 {% endhighlight %}
 
-![](SfGantt_images/Task_Relationships.jpeg)
+![UWP gantt with task relationship](SfGantt_images/Task_Relationships.jpeg)
+
+### Predecessor offset 
+
+While adding task dependency between two tasks, we can add lead or lag time in the property [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskRelationship~Offset.html).
+
+**Lead** is the amount of time by which a successor task can be advanced with regard to its predecessor.
+**Lag** is the amount of time that is added between a predecessor task and its successor. Lag is always associated with delay.
+
+Below code sample demonstrates to add lead time to predecessor.
+
+{% highlight C# %}
+
+ImplementiationModule1Child[1].Predecessors.Add(new TaskRelationship
+{
+    ID = "15",
+	Offset = 4,
+    Relationship = Relationship.FinishToStart
+});
+ImplementiationModule1Child[2].Predecessors.Add(new TaskRelationship
+{
+    ID = "16",
+	Offset = 2,
+    Relationship = Relationship.FinishToStart
+});
+ImplementiationModule1Child[3].Predecessors.Add(new TaskRelationship
+{
+    ID = "17",
+	Offset = -4,
+    Relationship = Relationship.FinishToStart
+});
+ImplementiationModule1Child[4].Predecessors.Add(new TaskRelationship
+{
+    ID = "18",
+	Offset = -2,
+    Relationship = Relationship.FinishToStart
+});
+
+{% endhighlight %}
+![UWP gantt with predecessor offset](SfGantt_images/predecessor.jpeg)
 
 ## Resources
 
@@ -520,7 +559,7 @@ public ObservableCollection<TaskDetail> GetData()
 
 {% endhighlight %}
 
-![](SfGantt_images/Resources.jpeg)
+![UWP gantt can assign the resource for task](SfGantt_images/Resources.jpeg)
 
 ## Non-working days
 
@@ -569,6 +608,6 @@ sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
 {% endtabs %}
 
-![](SfGantt_images/NonWorkingDays.jpeg)
+![UWP gantt with non working days feature](SfGantt_images/NonWorkingDays.jpeg)
 
 N> To display the non-working days, either the interval type must be set to week or the less interval type set to days, hours, and minutes.
