@@ -63,7 +63,7 @@ While using Extended, you can select multiple rows by pressing the key modifier
 
 ![Multiple rows selected in UWP treegrid](Selection_images/Selection_img2.jpeg)
 
-N> When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) as [Multiple](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select or deselect multiple rows by clicking the respective row. Also, in multiple selection pressing navigation keys will move only the current cell and you can select or deselect by pressing `Space` key.
+N> When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) as [Multiple](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select or deselect multiple rows by clicking the respective row. Also, in multiple selection pressing navigation keys will move only the current cell and you can select or deselect by pressing <kbd>space</kbd> key.
 
 ## Get selected rows
 
@@ -101,7 +101,7 @@ this.treeGrid.SelectedItem = node.Item;
 
 {% endhighlight %}
 {% endtabs %}
-In Row selection, you can select multiple rows by adding data objects to [SelectedItems ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html# "")property.
+In Row selection, you can select multiple rows by adding data objects to [SelectedItems ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html)property.
 {% tabs %}
 {% highlight c# %}
 var viewModel = this.treeGrid.DataContext as ViewModel;
@@ -213,7 +213,9 @@ this.treeGrid.ScrollInView(new RowColumnIndex(rowIndex, columnIndex));
 </tr>
 <tr>
 <td>
+<kbd>
 DownArrow
+</kbd>
 
 </td>
 <td>
@@ -222,7 +224,9 @@ Moves CurrentCell directly below the active current cell. If the CurrentCell is 
 </tr>
 <tr>
 <td>
+<kbd>
 UpArrow
+</kbd>
 
 </td>
 <td>
@@ -231,7 +235,9 @@ Moves the CurrentCell directly above the active current cell. If the CurrentCell
 </tr>
 <tr>
 <td>
+<kbd>
 LeftArrow
+</kbd>
 
 </td>
 <td>
@@ -240,7 +246,9 @@ Moves the current cell to previous to the active current cell. If the CurrentCel
 </tr>
 <tr>
 <td>
+<kbd>
 RightArrow
+</kbd>
 
 </td>
 <td>
@@ -249,7 +257,7 @@ Moves the current cell to next to the active current cell. If the CurrentCell is
 </tr>
 <tr>
 <td>
-Home / Ctrl + LeftArrow
+<kbd>Home</kbd> / <kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd>
 
 </td>
 <td>
@@ -258,7 +266,7 @@ Moves the current cell to the first cell of the current row.
 </tr>
 <tr>
 <td>
-End / Ctrl + RightArrow
+<kbd>End</kbd> / <kbd>Ctrl</kbd> + <kbd>RightArrow</kbd>
 
 </td>
 <td>
@@ -267,7 +275,7 @@ Moves the current cell to the last cell of the current row.
 </tr>
 <tr>
 <td>
-PageDown
+<kbd>PageDown</kbd>
 
 </td>
 <td>
@@ -276,7 +284,7 @@ The treegrid will be scrolled to next set of rows that are not displayed in view
 </tr>
 <tr>
 <td>
-PageUp
+<kbd>PageUp</kbd>
 
 </td>
 <td>
@@ -285,7 +293,7 @@ The treegrid will be scrolled to previous set of rows that are not displayed in 
 </tr>
 <tr>
 <td>
-Tab
+<kbd>Tab</kbd>
 
 </td>
 <td>
@@ -294,7 +302,7 @@ Moves the current cell to next to the active current cell. If the active current
 </tr>
 <tr>
 <td>
-Shift + Tab
+<kbd>Shift</kbd> + <kbd>Tab</kbd>
 
 </td>
 <td>
@@ -303,7 +311,7 @@ Moves the current cell to previous to the active current cell. If the active cur
 </tr>
 <tr>
 <td>
-Ctrl + DownArrow
+<kbd>Ctrl</kbd> + <kbd>DownArrow</kbd>
 
 </td>
 <td>
@@ -312,7 +320,7 @@ Moves the current cell to the current column of the last row.
 </tr>
 <tr>
 <td>
-Ctrl + UpArrow
+<kbd>Ctrl</kbd> + <kbd>UpArrow</kbd>
 
 </td>
 <td>
@@ -321,7 +329,7 @@ Moves the current cell to the current column of the first row.
 </tr>
 <tr>
 <td>
-Ctrl + Home
+<kbd>Ctrl</kbd> + <kbd>Home</kbd>
 
 </td>
 <td>
@@ -330,7 +338,7 @@ Moves the current cell to the first cell of the first row.
 </tr>
 <tr>
 <td>
-Ctrl + End
+<kbd>Ctrl</kbd> + <kbd>End</kbd>
 
 </td>
 <td>
@@ -339,7 +347,7 @@ Moves the current cell to the last cell of the last row.
 </tr>
 <tr>
 <td>
-Enter
+<kbd>Enter</kbd>
 
 </td>
 <td>
@@ -348,7 +356,7 @@ If the active current cell is in edit mode, the changes will be committed and mo
 </tr>
 <tr>
 <td>
-Ctrl + Enter
+<kbd>Ctrl</kbd> + <kbd>Enter</kbd>
 
 </td>
 <td>
@@ -357,7 +365,7 @@ Commits only the changes when the current cell in edit mode and retains the focu
 </tr>
 <tr>
 <td>
-F2
+<kbd>F2</kbd>
 
 </td>
 <td>
@@ -367,7 +375,7 @@ If the treegrid property is true and the 
 </tr>
 <tr>
 <td>
-Esc
+<kbd>Esc</kbd>
 </td>
 <td>
 If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#%22%22"")'| markdownify }}, on pressing of Esc key for the second time will cancel the edit mode for entire row.
@@ -375,7 +383,7 @@ If the current cell is in edit mode, reverts the changes that had been done in t
 </tr>
 <tr>
 <td>
-Ctrl + A
+<kbd>Ctrl</kbd> + <kbd>A</kbd>
 </td>
 <td>
 All rows or cells will be selected.
@@ -395,77 +403,77 @@ When the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusi
 </tr>
 <tr>
 <td>
-Shift + DownArrow
+<kbd>Shift</kbd> + <kbd>DownArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + UpArrow
+<kbd>Shift</kbd> + <kbd>UpArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + LeftArrow
+<kbd>Shift</kbd> + <kbd>LeftArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Home
+<kbd>Shift</kbd> + <kbd>Home</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + End
+<kbd>Shift</kbd> + <kbd>End</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + PageDown
+<kbd>Shift</kbd> + <kbd>PageDown</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + PageUp
+<kbd>Shift</kbd> + <kbd>PageUp</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Ctrl + DownArrow
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Ctrl + UpArrow
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Ctrl + RightArrow
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>RightArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Ctrl + LeftArrow
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Ctrl + Home
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>Home</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Ctrl + End
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>End</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Ctrl + PageDown
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>PageDown</kbd>
 </td>
 </tr>
 <tr>
 <td>
-Shift + Ctrl +PageUp
+<kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>PageUp</kbd>
 </td>
 </tr>
 </table>
@@ -500,7 +508,7 @@ You can customize mouse and keyboard behaviors by overriding the selection contr
                        CurrentCellActivating="TreeGrid_CurrentCellActivating"                        
                        ItemsSource="{Binding EmployeeInfo}"
                        LiveNodeUpdateMode="AllowDataShaping"
-                       Converter={StaticResource SelectionModeConverter}}">
+                       Converter="{StaticResource SelectionModeConverter}">
                                                                                                           
 {% endhighlight %}
 {% highlight c# %}
@@ -544,9 +552,8 @@ The [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/uwp/Syncfu
 
 [PreviousRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~PreviousRowColumnIndex.html) – RowColumnIndex of the cell from where the current cell has been moved.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
                        Grid.Row="0"
                        AutoExpandMode="RootNodesExpanded"
@@ -555,21 +562,18 @@ The [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/uwp/Syncfu
                        CurrentCellActivated="TreeGrid_CurrentCellActivated"                        
                        ItemsSource="{Binding EmployeeInfo}"
                        LiveNodeUpdateMode="AllowDataShaping"
-                       Converter={StaticResource SelectionModeConverter}}">
+                       Converter="{StaticResource SelectionModeConverter}">
 
-</td>
-</tr>
-<tr>
-<td>
+{% endhighlight %}
+{% highlight c# %}
 this.treeGrid.CurrentCellActivated += TreeGrid_CurrentCellActivated;
+
 private void TreeGrid_CurrentCellActivated(object sender, Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs e)
 {
 
 }
-
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ### SelectionChanging
 
@@ -590,7 +594,7 @@ private void TreeGrid_CurrentCellActivated(object sender, Syncfusion.UI.Xaml.Gri
                        SelectionChanging="TreeGrid_SelectionChanging"
                        ItemsSource="{Binding EmployeeInfo}"
                        LiveNodeUpdateMode="AllowDataShaping"
-                       Converter={StaticResource SelectionModeConverter}}">
+                       Converter="{StaticResource SelectionModeConverter}">
 
 {% endhighlight %}
 {% highlight c# %}
@@ -621,7 +625,7 @@ The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion
                        SelectionChanged="TreeGrid_SelectionChanged"
                        ItemsSource="{Binding EmployeeInfo}"
                        LiveNodeUpdateMode="AllowDataShaping"
-                       Converter={StaticResource SelectionModeConverter}}">
+                       Converter="{StaticResource SelectionModeConverter}">
 
 {% endhighlight %}
 {% highlight c# %}
@@ -913,7 +917,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ### Read cell values from selected items
 
-You can able to get the cell values of [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) by using [SfTreeGrid.SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html# "") and internal reflector which reflects the field value from data object based on field name.
+You can able to get the cell values of [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) by using [SfTreeGrid.SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) and internal reflector which reflects the field value from data object based on field name.
 
 {% tabs %}
 {% highlight c# %}

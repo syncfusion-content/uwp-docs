@@ -94,7 +94,7 @@ this.treeGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Copied record pasted in new record] (Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
+![UWP treegrid shows with Copied record pasted in new record](Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
 
 ## Cut
 
@@ -198,9 +198,6 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 
 The below code example changes the clipboard value as 100 instead of cell value 1094 in treegrid.
 
-<table>
-<tr>
-<td>
 {% tabs %}
 {% highlight c# %}
 private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventArgs e)
@@ -210,25 +207,6 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 }
 {% endhighlight %}
 {% endtabs %}
-<table>
-<tr>
-<td>
-private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventArgs e)
-{
-    if (e.Column.MappingName == "Id" && (e.RowData as PersonInfo).Id == 1)
-        e.ClipBoardValue = 100;
-}
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-
-</td>
-</tr>
-</table>
 
 ![UWP treegrid shows with Copied data customized through CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img4.jpeg)
 
@@ -241,8 +219,6 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
     if (e.Column.MappingName == "Id")
         e.Handled = true;
 }
-
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -250,7 +226,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 
 ### PasteCellContent
 
-[PasteGridCellContent](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~PasteCellContent_EV.html) event occurs when cell being paste. [TreeGridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html# "") provides information for `PasteGridCellContent` event, which has following members.
+[PasteGridCellContent](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~PasteCellContent_EV.html) event occurs when cell being paste. [TreeGridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html) provides information for `PasteGridCellContent` event, which has following members.
 
 [ClipBoardValue ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~ClipBoardValue.html) - Returns clipboard value of a particular cell.
 
