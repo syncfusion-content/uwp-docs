@@ -94,7 +94,7 @@ this.treeGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Copied record pasted in new record(Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
+![UWP treegrid shows with Copied record pasted in new record] (Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
 
 ## Cut
 
