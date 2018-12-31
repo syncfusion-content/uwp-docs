@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for SfGantt
+title: Getting Started| Gantt | Uwp | Syncfusion
 description: The following section provides an assistance to create a simple Gantt application and to configure it.
 platform: uwp
 control: SfGantt
