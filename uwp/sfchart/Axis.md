@@ -870,7 +870,7 @@ chart.Series.Add(series2);
 
 The following screenshot illustrates SfChart with multiple axes.
 
-![Multiple axes support in UWP Chart](Axis_images/Axis_img7.png)
+![Multiple axes support in UWP Chart](Axis_images/Axis_img7.jpg)
 
 
 
@@ -1108,19 +1108,19 @@ By default, the [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/S
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) set to [`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html). 
 
-![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img15.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img15.jpg)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
-![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img16.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img16.jpg)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
 
-![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img17.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img17.jpg)
 
 
 
@@ -1242,7 +1242,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Axis label positioning support in UWP Chart](Axis_images/Axis_img20.png)
+![Axis label positioning support in UWP Chart](Axis_images/Axis_img20.jpg)
 
 {% tabs %}
 
@@ -2282,7 +2282,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Gridlines customization support in UWP Chart](Axis_images/Axis_img34.png)
+![Gridlines customization support in UWP Chart](Axis_images/Axis_img34.jpg)
 
 
 
