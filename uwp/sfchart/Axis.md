@@ -1550,7 +1550,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ## Custom Labels
 
-SfChart allows user to define the labels for the axis. For defining the axis label you have to set the [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html#) and [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html#) property .You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~CustomLabels.html#) property as in the below code snippet.
+SfChart allows user to define the labels for the axis. For defining the axis label you have to set the [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html#) and [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html#) properties.You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~CustomLabels.html#) property as demonstrated in the following code snippet.
 
 {% tabs %}
 
@@ -1607,7 +1607,7 @@ chart.PrimaryAxis = axis;
 ![Axis label customization support in UWP Chart](Axis_images/Axis_img35.jpg)
 
 
-You can also directly bind the collection of labels to the [`LabelsSource`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsSource.html#) property for defining custom labels. The following code example demonstrates the defining the label collection in code behind and binding the property in XAML page.
+You can also directly bind the collection of labels to the [`LabelsSource`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsSource.html#) property for defining custom labels. The following code example demonstrates how to define a label collection in code behind and binding the property in XAML page.
 
 {% tabs %}
 
