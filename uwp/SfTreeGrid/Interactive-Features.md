@@ -9,11 +9,11 @@ documentation: ug
 
 # Interactive Features
 
-## Context Menu
+## Context menu
 
-SfTreeGrid provides an entirely customizable menu to expose the functionality on user interface. You can create context menus for different rows in an efficient manner.
+SfTreeGrid provides an entirely customizable menu to expose the functionalities on user interface. You can create context menus for different rows in an efficient manner.
 
-The below code example shows the context menu with command bindings.
+The following code example shows the context menu with command bindings.
 
 {% tabs %}
 {% highlight xaml %}
@@ -121,11 +121,11 @@ public class EmployeeInfoViewModel : INotifyPropertyChanged
 
 ### ContextMenu based on rows
 
-You can set different context menu for SfTreeGrid based on rows. 
+You can set different context menus for SfTreeGrid based on rows.
 
-#### ContextMenu for Nodes
+#### ContextMenu for nodes
 
-  You can set the context menu for the data rows by using [SfTreeGrid.RecordContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RecordContextMenu.html) property.
+You can set the context menu for data rows using the [SfTreeGrid.RecordContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~RecordContextMenu.html) property.
   
 {% tabs %}
 {% highlight xaml %}
@@ -152,7 +152,7 @@ this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Paste" });
 
 ![ContextMenu for nodes in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img1.png)
 
-While binding the menu item using CommandBinding you can get the command parameter as TreeGridNodeContextMenuInfo which contains the node of the corresponding row.
+When binding the menu item using CommandBinding, you can get the command parameter as TreeGridNodeContextMenuInfo, which contains the node of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -179,9 +179,9 @@ private static void OnCopyClicked(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-#### ContextMenu for Header
+#### ContextMenu for header
 
-You can set the context menu for the header by using [SfTreeGrid.HeaderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderContextMenu.html) property.
+You can set the context menu to header using the [SfTreeGrid.HeaderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderContextMenu.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -209,7 +209,7 @@ this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearFilter
 
 ![ContextMenu for header in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img2.png)
 
-While binding the menu item using CommandBinding you can get the parameter as TreeGridColumnContextMenuInfo which contains the particular GridColumn.
+When binding the menu item using CommandBinding, you can get the parameter as TreeGridColumnContextMenuInfo, which contains a particular GridColumn.
 
 {% tabs %}
 {% highlight xaml %}
@@ -237,9 +237,9 @@ While binding the menu item using CommandBinding you can get the parameter as Tr
 {% endhighlight %}
 {% endtabs %}
 
-### ContextMenu for Expander
+### ContextMenu for expander
 
-You can set the context menu for the header by using [SfTreeGrid.ExpanderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpanderContextMenu.html) property.
+You can set the context menu to header using the [SfTreeGrid.ExpanderContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ExpanderContextMenu.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -261,7 +261,7 @@ this.treeGrid.ExpanderContextMenu.Items.Add(new MenuItem() { Header = "Collapse"
 {% endhighlight %}
 {% endtabs %}
 
-While binding the menu item using CommandBinding you can get the parameter as TreeGridNodeContextMenuInfo which contains the expander node.
+When binding the menu item using CommandBinding, you can get the parameter as TreeGridNodeContextMenuInfo, which contains the expander node.
 
 {% tabs %}
 {% highlight xaml %}
@@ -289,19 +289,19 @@ While binding the menu item using CommandBinding you can get the parameter as Tr
 
 ### Events
 
-  [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~TreeGridContextMenuOpening_EV.html) event occurs while opening the context menu in SfTreeGrid. TreeGridContextMenuEventArgs has the following members which provides the information about TreeGridContextMenuOpening event.
+The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~TreeGridContextMenuOpening_EV.html): Occurs when opening the context menu in SfTreeGrid. TreeGridContextMenuEventArgs has the following members, which provides information about the TreeGridContextMenuOpening event:
   
 [ContextMenu](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenu.html) – Gets the corresponding context menu. 
-[ContextMenuInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenuInfo.html) – Returns the context menu info based on the row which opens the context menu.
+[ContextMenuInfo](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenuInfo.html) – Returns the context menu info based on the row that opens the context menu.
 [ContextMenuType](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~ContextMenuType.html) –  Returns the type of context menu.
-[RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~RowColumnIndex.html) – RowColumnIndex of the context menu which is currently going to open. RowColumnIndex is updated only for the RecordContextMenu and remains left empty.
+[RowColumnIndex](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs~RowColumnIndex.html) – RowColumnIndex of the context menu that is currently going to be opened. RowColumnIndex is updated only for the RecordContextMenu and remains empty.
 [Handled](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridHandledEventArgs~Handled.html) - Indicates whether the TreeGridContextMenuOpening event is handled or not.
 
 ### Customizing ContextMenus
 
-#### Change the menu item when ContextMenu opening
+#### Changing the menu item when ContextMenu opening
 
-You can use the TreeGridContextMenuOpening event to change the menu item when the context menu opening. 
+You can use the TreeGridContextMenuOpening event to change the menu item when the context menu opens.
 
 {% tabs %}
 {% highlight xaml %}
@@ -368,9 +368,9 @@ You can change the appearance of the context menu by customizing the style with 
 ![ContextMenu for appearance in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img4.png)
 
 
-###  Drag and Drop Rows
+### Drag and drop rows
 
-You can allow end-users to drag and drop the rows in SfTreeGrid and between two SfTreeGrid by setting [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) to `true`.It is also possible to drag and drop to and from any other control.
+It allows users to drag and drop the rows in SfTreeGrid and between two SfTreeGrid by setting the [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) property to `true`. It is also possible to drag and drop from any other control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -386,12 +386,13 @@ treeGrid.AllowDraggingRows = true;
 
 ![Drag and drop window while dragging in WPF treegrid](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img1.png)
 
-While dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop at the bottom of node, it will be added below the node and if you are dropping over the node, the it will be added as child of that node.
+When dropping, the dragged node(s) can be added above or below as a child node based on its drop position. For example, if you drop at the bottom of node, it will be added below the node. If you are drop over the node, then it will be added as a child of that node.
+
 ![Drap and drop row as child](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img2.png)
 
 ### Auto expanding the node on drag over
 
-When drag over the tree node, if drop position is “Drop as child”, then you can auto expand the corresponding tree node by setting  [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html) as `true`. It is also possible to control the delay in expanding the node when drag over using [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html) property.  Its default value in 3 sec.
+When drag over the tree node, if drop position is “Drop as child”, then you can auto expand the corresponding tree node by setting the [TreeGridRowDragDropController.CanAutoExpand](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~CanAutoExpand.html) as `true`. It is also possible to control the delay in expanding the node when drag over using [TreeGridRowDragDropController.AutoExpandDelay](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~AutoExpandDelay.html) property. Its default value in 3 sec.
 
 {% tabs %}
 {% highlight c# %}
@@ -404,16 +405,17 @@ N> When drop position is “Drop as child”, drag indicators will not be shown.
 
 ### Dragging multiple nodes
 
-SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting  [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) as `Multiple` or `Extended`.  
+SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) property to `Multiple` or `Extended`.
+
 ![Drag and drop multiple rows](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img3.png)
 
-### Drag and Drop between TreeGrids
+### Drag and drop between TreeGrids
 
-SfTreeGrid provides build built in support for drag and drop nodes between SfTreeGrid’s.
+SfTreeGrid provides built-in support to drag and drop the nodes between SfTreeGrid.
 
-### Disabling drag and drop between TreeGrid
+### Disabling drag and drop between SfTreeGrid
 
-If [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) is set to `true`, you can drag and drop nodes between TreeGrids and within TreeGrid. If you want to disable drag and drop from one TreeGrid to another TreeGrid, you need to override target TreeGrid’s [GetDropPosition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~GetDropPosition.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+If [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AllowDraggingRows.html) is set to `true`, you can drag and drop nodes between TreeGrids and within TreeGrid. If you want to disable the drag-and-drop functionality from one TreeGrid to another TreeGrid, override the target TreeGrid’s [GetDropPosition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~GetDropPosition.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -442,15 +444,15 @@ treeGrid.RowDragDropController = new TreeGridRowDragDropControllerExt(treeGrid);
 {% endhighlight %}
 {% endtabs %}
 
-If source tree grid and target tree grid are different, drop operation is disabled.
+If source tree grid and target tree grid are different, drop operation will be disabled.
 
-### Customizing Row drag and drop
+### Customizing row drag and drop
 
 SfTreeGrid processes row drag and drop operations in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class. You can customize the row drag and drop operations by overriding `TreeGridRowDragDropController` and set it to[SfTreeGrid.RowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowDragDropController.html).
 
 #### Disable dragging of certain nodes
 
-If you want to restrict the dragging of specific node, you need to override [ProcessOnDragStarting](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDragStarting.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+If you want to restrict the dragging for specific node, you need to override the [ProcessOnDragStarting](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDragStarting.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
 Here, drag operation is disabled for root nodes.
 
@@ -484,9 +486,9 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 
 #### Disable drop over specific node
 
-If you want to restrict the drop over specific node, you need to override [GetDropPosition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~GetDropPosition.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+If you want to restrict the drop for specific nodes, you need to override the [GetDropPosition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~GetDropPosition.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
-Here, drop operation is disabled on leaf nodes.
+Here, the drop operation is disabled on leaf nodes.
 
 {% tabs %}
 {% highlight c# %}
@@ -514,11 +516,11 @@ treeGrid.RowDragDropController = new TreeGridRowDragDropControllerExt(treeGrid);
 {% endhighlight %}
 {% endtabs %}
 
-#### Customizing Drag UI Text
+#### Customizing drag UI text
 
 You can customize the drag UI text by overriding the [ProcessOnDragOver](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDragOver.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
- Here, drag UI text is localized based on German language.
+Here, the drag UI text is localized based to the German language.
 
 {% tabs %}
 {% highlight c# %}
@@ -544,7 +546,7 @@ treeGrid.RowDragDropController = new TreeGridRowDragDropControllerExt(treeGrid);
 
 ### Customizing dragging nodes
 
-While dragging, all selected nodes will be added to dragging nodes collection. If you want to customize the dragging nodes collection, you need to override [ProcessOnDragOver](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDragOver.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+When dragging, all the selected nodes will be added to the dragging nodes collection. If you want to customize the dragging nodes collection, override the [ProcessOnDragOver](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDragOver.html) method in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -573,13 +575,13 @@ treeGrid.RowDragDropController = new TreeGridRowDragDropControllerExt(treeGrid);
 {% endhighlight %}
 {% endtabs %}
 
-Here, even though multiple nodes are selected, only dragged node will be added to dragging nodes collection.
+Here, even multiple nodes had been selected, only the dragged node will be added to the dragging nodes collection.
 
-### Drag and Drop between ListView and TreeGrid
+### Drag and drop between ListView and TreeGrid
 
-You can drag the item from ListView and drop into TreeGrid. For this, you need to override [GetDropPosition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~GetDropPosition.html),  [ProcessOnDragOver](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDragOver.html), [ProcessOnDrop](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDrop.html) methods in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
+You can drag the item from ListView and drop into TreeGrid by overriding the [GetDropPosition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~GetDropPosition.html), [ProcessOnDragOver](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDragOver.html), and [ProcessOnDrop](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController~ProcessOnDrop.html) methods in the [TreeGridRowDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class.
 
-In ListView, you need to use DragItemsStarting event and add dragged item.
+In ListView, use the DragItemsStarting event and add dragged item.
 
 {% tabs %}
 {% highlight c# %}
@@ -792,5 +794,7 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {% endhighlight %}
 {% endtabs %}
 
-After dropping in tree grid, dragged item is added to TreeGrid based on the dropped position.
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
+After dropping in tree grid, the dragged item is added to TreeGrid based on the dropped position.
+Sample for dragging the item from ListView and dropping into TreeGrid: [Sampe](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
+
+
