@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Adornments
+# Adornments.
 
 Chart adornments are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 

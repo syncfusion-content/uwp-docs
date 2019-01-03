@@ -6,7 +6,7 @@ platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# Getting Started
+# Getting Started.
 
 ## Visual Structure 
 

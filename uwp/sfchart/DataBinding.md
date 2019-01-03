@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# DataBinding
+# DataBinding.
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) offers [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ItemsSource.html) property to bind various datasource ranges from simple collection property to complex properties.
 

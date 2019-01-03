@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Trendlines
+# Trendlines.
 
 [`Trendlines`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CartesianSeries~Trendlines.html) are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends. 
 

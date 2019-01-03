@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features.
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides interactive features such as zooming, selection, and tracking data points.
 

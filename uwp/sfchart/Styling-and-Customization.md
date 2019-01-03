@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Styling and Customization
+# Styling and Customization.
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) support various customizing and styling options that allows you to enrich the application.
 

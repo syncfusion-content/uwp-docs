@@ -6,7 +6,7 @@ platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# Overview
+# Overview.
 
 The SfDateTimeRangeNavigator is a time bound data visualization control. Its purpose is to allow scrolling and navigation through large period of time. The control can be easily combined with other controls such as Chart, Datagrid, etc. to create rich and powerful dashboards.
 

@@ -5,7 +5,7 @@ platform: uwp
 control: SfKanban
 documentation: ug
 ---
-# Swim lanes
+# Swim lanes.
 
 Swim lanes are horizontal categorizations that allow you to categorize your current workflow by different projects, teams, users, or whatever you need. 
 

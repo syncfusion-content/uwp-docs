@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Performance
+# Performance.
 
 * When your underlying data object implements INotifyPropertyChanged, you need to enable the [`ListenPropertyChange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ListenPropertyChange.html) property of the series, to make the chart listen to the property changes of your data object. However enabling this property registers PropertyChanged event of every object in the data source. Due to this, chart’s loading time is affected when there are a large number of points. By default, [`ListenPropertyChange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ListenPropertyChange.html) is set to false in order to avoid the event registration unnecessarily.
 * In case of a [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html), when you have large number of points to plot, you can make use of fast series types like [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineSeries.html) and [`FastLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html).

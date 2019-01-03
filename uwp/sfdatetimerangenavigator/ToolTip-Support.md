@@ -6,7 +6,7 @@ platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# ToolTip Support
+# ToolTip Support.
 
 DateTimeRangeNavigator control provides ToolTip support for Sliders. Sliders are used to select a particular region of data in the DateTimeRangeNavigator control. ToolTips for sliders show the selected start and end date time values. You can even view exact date values to the precision of milliseconds.
 

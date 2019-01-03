@@ -6,7 +6,7 @@ platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# Customization
+# Customization.
 
 ## Higher Level Bar Customization
 
