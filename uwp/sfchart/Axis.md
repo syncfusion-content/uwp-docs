@@ -40,23 +40,23 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-Interval</td><td>
+[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Interval.html)</td><td>
 Gets or sets the double that represents the interval between the labels.</td></tr>
 <tr>
 <td>
-Minimum</td><td>
+[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Minimum.html)</td><td>
 Gets or sets the double that represents the Minimum value for the Axis.</td></tr>
 <tr>
 <td>
-Maximum</td><td>
+[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Maximum.html)</td><td>
 Gets or sets the double that represents the Maximum value for the Axis.</td></tr>
 <tr>
 <td>
-RangePadding</td><td>
+[`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html)</td><td>
 Gets or sets the NumericalPadding that specifies how to render the segments in chart area.</td></tr>
 <tr>
 <td>
-StartRangeFromZero</td><td>
+[`StartRangeFromZero`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~StartRangeFromZero.html)</td><td>
 Gets or sets the bool that represents a value to enable start the range from zero. </td></tr>
 </table>
 
@@ -155,11 +155,11 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-Interval</td><td>
+[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~Interval.html)</td><td>
 Gets or sets the double value that represents the interval between the labels.</td></tr>
 <tr>
 <td>
-LabelPlacement</td><td>
+[`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html)</td><td>
 Gets or sets the LabelPlacement that represents the position of the label in the axis.</td></tr>
 </table>
 
@@ -263,39 +263,39 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-Minimum</td><td>
+[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Minimum.html)</td><td>
 Gets or sets the DateTime value that represents a minimum value of the Axis.</td></tr>
 <tr>
 <td>
-Maximum</td><td>
+[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Maximum.html)</td><td>
 Gets or sets the DateTime value that represents a maximum value of the Axis.</td></tr>
 <tr>
 <td>
-RangePadding</td><td>
+[`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html)</td><td>
 Gets or sets the DateTimeRangePadding value that specifies segment arrangement in the chart area.</td></tr>
 <tr>
 <td>
-Interval</td><td>
+[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Interval.html)</td><td>
 Gets or sets the double value as the interval between labels.</td></tr>
 <tr>
 <td>
-IntervalType</td><td>
+[`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html)</td><td>
 Gets or sets the DateTimeIntervalType. It represents the type of the interval. This property is used to define the type of interval to be displayed and considered for plotting the series.</td></tr>
 <tr>
 <td>
-EnableBusinessHours</td><td>
+[`EnableBusinessHours`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~EnableBusinessHours.html)</td><td>
 Gets or sets the bool value that represents a value to enable business hours.</td></tr>
 <tr>
 <td>
-OpenTime</td><td>
+[`OpenTime`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~OpenTime.html)</td><td>
 Gets or sets the double value that represents the open working time of a day.</td></tr>
 <tr>
 <td>
-CloseTime</td><td>
+[`CloseTime`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~CloseTime.html)</td><td>
 Gets or sets the double value that represents the close working time of a day.</td></tr>
 <tr>
 <td>
-WorkingDays</td><td>
+[`WorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~WorkingDays.html)</td><td>
 Gets or sets the double value that represents the working days of a week.</td></tr>
 </table>
 
@@ -440,11 +440,11 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-Interval</td><td>
+[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis~Interval.html)</td><td>
 Gets or sets the double value that represents the interval between the labels.</td></tr>
 <tr>
 <td>
-IntervalType</td><td>
+[`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis~IntervalType.html)</td><td>
 Gets or sets the DateTimeIntervalType that represents the type of the interval.</td></tr>
 </table>
 
@@ -548,15 +548,15 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-Interval</td><td>
+[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Interval.html)</td><td>
 Gets or sets the double value that represents the interval between the labels.</td></tr>
 <tr>
 <td>
-Minimum</td><td>
+[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Minimum.html)</td><td>
 Gets or sets the timespan value that represents the minimum value for the Axis.</td></tr>
 <tr>
 <td>
-Maximum</td><td>
+[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Maximum.html)</td><td>
 Gets or sets the timespan value that represents the maximum value for the Axis. </td></tr>
 </table>
 
@@ -653,19 +653,19 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-Interval</td><td>
+[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Interval.html)</td><td>
 Gets or sets the double value that represents the interval between the labels</td></tr>
 <tr>
 <td>
-Minimum</td><td>
+[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Minimum.html)</td><td>
 Gets or sets the double value that represents the minimum value for the Axis.</td></tr>
 <tr>
 <td>
-Maximum</td><td>
+[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Maximum.html)</td><td>
 Gets or sets the double value that represents the maximum value of the Axis. </td></tr>
 <tr>
 <td>
-LogarithmicBase</td><td>
+[`LogarithmicBase`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~LogarithmicBase.html)</td><td>
 Gets or sets the double value that represents the logarithmic base value of the Axis.</td></tr>
 </table>
 
@@ -758,7 +758,7 @@ The following screenshot illustrates the SfChart with LogarithmicAxis.
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern. 
 
-By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. There are two properties XAxis and YAxis in all the series, except Accumulation Series.
+By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. There are two properties [`XAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CartesianSeries~XAxis.html) and [`YAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CartesianSeries~YAxis.html) in all the series, except Accumulation Series.
 
 {% tabs %}
 
@@ -870,7 +870,7 @@ chart.Series.Add(series2);
 
 The following screenshot illustrates SfChart with multiple axes.
 
-![Multiple axes support in UWP Chart](Axis_images/Axis_img7.png)
+![Multiple axes support in UWP Chart](Axis_images/Axis_img7.jpg)
 
 
 
@@ -936,7 +936,7 @@ The following is a screenshot demonstrating y-axis of a chart arranged in [`Oppo
 
 ## Inversed Axis
 
-This feature is used to reverse chart plotting inverse the axis scaling.
+[`IsInversed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~IsInversed.html) property is used to reverse chart plotting inverse the axis scaling.
 
 {% tabs %}
 
@@ -1108,19 +1108,19 @@ By default, the [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/S
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) set to [`None`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html). 
 
-![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img15.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img15.jpg)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Additional`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
-![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img16.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img16.jpg)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html) for [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`Round`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeRangePadding.html), the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
 
-![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img17.png)
+![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img17.jpg)
 
 
 
@@ -1242,7 +1242,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-![Axis label positioning support in UWP Chart](Axis_images/Axis_img20.png)
+![Axis label positioning support in UWP Chart](Axis_images/Axis_img20.jpg)
 
 {% tabs %}
 
@@ -1548,7 +1548,132 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Smart axis labels support in UWP Chart](Axis_images/Axis_img28.png)
 
+## Custom Labels
 
+SfChart allows user to define the labels for the axis. For defining the axis label you have to set the [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html#) and [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html#) properties.You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~CustomLabels.html#) property as demonstrated in the following code snippet.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis >
+
+<syncfusion:CategoryAxis.CustomLabels>
+
+<syncfusion:ChartAxisLabel Position="0" LabelContent="0-1"/>
+
+<syncfusion:ChartAxisLabel Position="1" LabelContent="1-2"/>
+
+<syncfusion:ChartAxisLabel Position="2" LabelContent="2-3"/>
+
+<syncfusion:ChartAxisLabel Position="3" LabelContent="3-4"/>
+
+<syncfusion:ChartAxisLabel Position="4" LabelContent="4-5"/>
+
+<syncfusion:ChartAxisLabel Position="5" LabelContent="5-5"/>
+
+</syncfusion:CategoryAxis.CustomLabels>
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+CategoryAxis axis = new CategoryAxis();
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 0, LabelContent = "0-1" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 1, LabelContent = "1-2" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 2, LabelContent = "2-3" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 3, LabelContent = "3-4" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 4, LabelContent = "4-5" });
+
+axis.CustomLabels.Add(new ChartAxisLabel() { Position = 5, LabelContent = "5-5" });
+
+chart.PrimaryAxis = axis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Axis label customization support in UWP Chart](Axis_images/Axis_img35.jpg)
+
+
+You can also directly bind the collection of labels to the [`LabelsSource`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelsSource.html#) property for defining custom labels. The following code example demonstrates how to define a label collection in code behind and binding the property in XAML page.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis LabelsSource="{Binding Labels}" ContentPath="Content" PositionPath="Position">
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    ContentPath ="Content",
+
+    PositionPath = "Position",
+
+    LabelsSource = Labels
+
+};
+
+
+public List<LabelItem> Labels { get; set; }
+
+Labels = new List<LabelItem>
+{
+
+    new LabelItem() {Position=0, Content = "0-1"},
+
+    new LabelItem() {Position=1, Content = "1-2"},
+
+    new LabelItem() {Position=2, Content = "2-3"},
+
+    new LabelItem() {Position=3, Content = "3-4"},
+
+    new LabelItem() {Position=4, Content = "4-5"},
+
+    new LabelItem() {Position=5, Content = "5-6"},
+
+    new LabelItem() {Position=6, Content = "6-7"},
+
+    new LabelItem() {Position=7, Content = "7-8"},
+
+};
+
+public class LabelItem
+{
+
+    public string Content { get; set; }
+
+    public int Position { get; set; }
+
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Axis label customization support in UWP Chart](Axis_images/Axis_img36.jpg)
 
 ## Add units to labels
 
@@ -2157,7 +2282,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Gridlines customization support in UWP Chart](Axis_images/Axis_img34.png)
+![Gridlines customization support in UWP Chart](Axis_images/Axis_img34.jpg)
 
 
 
