@@ -278,7 +278,7 @@ chart.Series.Add(series);
 
 ## Label
 
-This allows us to specify the label for each series which is to be displayed in legend label.
+[`Label`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LegendItem~Label.html) property allows us to specify the label for each series which is to be displayed in legend label.
 
 {% tabs %}
 
