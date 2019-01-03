@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Striplines.
+# Striplines
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to add [`Striplines`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~StripLines.html) to the chart, which shades the specific region or range in the plot area background at regular or custom intervals. 
 

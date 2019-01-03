@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Interactivity 
+title: Interactivity | SfDateTimeRangeNavigator | UWP | Syncfusion 
 description: Interactivity
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# Interactivity.
+# Interactivity
 
 The SfDateTimeRangeNavigator helps the user to visualize large data in a simplified manner. The timespan of the data is represented in the higher level bar and lower level bar. The timespan in default is calculated smartly and provide suitable DateTime format and Interval for the given data. It can hold any type of UI element inside the Navigator.
 
@@ -356,7 +356,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![](Interactivity_images/Interactivity_img3.jpeg)
+![Interactivity in UWP SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img3.jpeg)
 
 
 ## Resizable Scrollbar

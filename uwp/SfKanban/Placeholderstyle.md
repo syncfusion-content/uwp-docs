@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Placeholder.
+# Placeholder
 
 The placeholder is to denote a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
 
@@ -97,4 +97,4 @@ sfKanban.PlaceholderStyle = style;
 
 The following output demonstrates the above code example.
 
-![](SfKanban_images/PlaceholderStyle.png)
+![Styling the placeholder in UWP SfKanban](SfKanban_images/PlaceholderStyle.png)

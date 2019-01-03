@@ -6,7 +6,7 @@ platform: uwp
 control: SfChart
 documentation: ug
 ---
-# Exporting.
+# Exporting
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) can be exported into the following types of image formats:
 

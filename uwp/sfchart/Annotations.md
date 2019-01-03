@@ -6,7 +6,7 @@ platform: uwp
 control: SfChart
 documentation: ug
 ---
-# Annotations.
+# Annotations
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Annotations.html), which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using [`Annotations`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Annotations.html). 
 

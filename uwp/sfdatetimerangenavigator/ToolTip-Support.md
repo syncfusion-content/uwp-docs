@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ToolTip Support 
+title: Tooltip Support | SfDateTimeRangeNavigator | uwp | Syncfusion  
 description: Tooltip Support
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# ToolTip Support.
+# ToolTip Support
 
 DateTimeRangeNavigator control provides ToolTip support for Sliders. Sliders are used to select a particular region of data in the DateTimeRangeNavigator control. ToolTips for sliders show the selected start and end date time values. You can even view exact date values to the precision of milliseconds.
 
@@ -19,7 +19,7 @@ The following properties are used to customize the ToolTip settings for the Date
 
 Default tool tip template of SfDateTimeRangeNavigator.
 
-![](ToolTip-Support_images/ToolTipSupport_img1.jpeg)
+![ToolTip support for UWP SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img1.jpeg)
 
 
 The following code illustrates the customization of tool tip.
@@ -96,6 +96,6 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
+![ToolTip customization support in UWP SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
 
 

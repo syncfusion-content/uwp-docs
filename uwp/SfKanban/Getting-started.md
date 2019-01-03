@@ -6,7 +6,7 @@ platform: uwp
 control: SfKanban
 documentation: ug
 ---
-# Getting Started. 
+# Getting Started 
 
 The following section provides an assistance to create a simple Kanban application and to configure it. 
 
@@ -17,14 +17,14 @@ The following section provides an assistance to create a simple Kanban applicati
 1. Open the Reference Manager window from project.
 2. Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
 
-![](SfKanban_images/new_kanban_img1.jpeg)
+![Getting Started for UWP SfKanban](SfKanban_images/new_kanban_img1.jpeg)
 
 
 ### Adding assembly reference
 
 Individual reference can be added to the project instead of SDK “Syncfusion Controls for UWP XAML” which refers all the controls in the Syncfusion control library.
 
-![](SfKanban_images/new_kanban_img2.jpeg)
+![Getting Started for UWP SfKanban](SfKanban_images/new_kanban_img2.jpeg)
 
 
 In the Add Reference window, browse and choose the reference assembly from the following location. 
@@ -82,15 +82,15 @@ SfKanban kanban = new SfKanban();
 
 Drag and drop the Kanban control from the toolbox to your application.
 
-![](SfKanban_images/new_kanban_img3.jpeg)
+![Adding SfKanban from toolbox](SfKanban_images/new_kanban_img3.jpeg)
 
 
 Now the “Syncfusion Controls for UWP XAML” reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![](SfKanban_images/new_kanban_img4.jpeg)
+![Adding SfKanban from toolbox](SfKanban_images/new_kanban_img4.jpeg)
 
 
-![](SfKanban_images/new_kanban_img5.jpeg)
+![Adding SfKanban from toolbox](SfKanban_images/new_kanban_img5.jpeg)
 
 
 ### Create data model
@@ -280,7 +280,7 @@ grid.Children.Add(kanban);
 
 {% endtabs %}
 
-![](SfKanban_images/column.png)
+![Defining columns in UWP SfKanban](SfKanban_images/column.png)
 
 
 You can also set AutoGenerateColumns property to true in which you don’t need to define the columns as mentioned in the above example. This will create columns depending on the ColumnMappingPath property for all the distinct values in ItemsSource.

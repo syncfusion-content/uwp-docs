@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Overview.
+# Overview
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity and simplicity of use. [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) also provides a wide variety of charting features that are used to visualize large quantities of data, flexible data binding and user customization.
 

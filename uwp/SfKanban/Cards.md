@@ -7,7 +7,7 @@ control: SfKanban
 documentation: ug
 ---
 
-# Cards.
+# Cards
 
 The default elements of a card can be customized using the below properties of [`KanbanModel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
@@ -76,7 +76,7 @@ sfKanban.IndicatorColorPalette = indicatorColorPalette;
 
 {% endtabs %}
 
-![](SfKanban_images/CardCustomization.png)
+![Card customization in UWP](SfKanban_images/CardCustomization.png)
 
 ## Template
 
@@ -117,4 +117,4 @@ You can replace the entire card template with your own design using [`SfKanban.C
 {% endhighlight %}
 
 
-![](SfKanban_images/CardTemplate.png)
+![Template support for card in UWP SfKanban](SfKanban_images/CardTemplate.png)

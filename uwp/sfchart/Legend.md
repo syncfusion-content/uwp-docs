@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Legend.
+# Legend
 
 [`Legend`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) provides metadata which helps for identifying elements in chart like [`chart series`](https://help.syncfusion.com/uwp/sfchart/series), 
 [`technical indicators`](https://help.syncfusion.com/uwp/sfchart/technical-indicators), and [`trendlines`](https://help.syncfusion.com/uwp/sfchart/trendlines). 
