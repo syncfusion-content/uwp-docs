@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swimlane | SfKanban | uwp | Syncfusion
+title: Swimlane | SfKanban | UWP | Syncfusion
 platform: uwp
 control: SfKanban
 documentation: ug

@@ -76,7 +76,7 @@ sfKanban.IndicatorColorPalette = indicatorColorPalette;
 
 {% endtabs %}
 
-![Card customization in UWP](SfKanban_images/CardCustomization.png)
+![Card customization in UWP SfKanban](SfKanban_images/CardCustomization.png)
 
 ## Template
 
