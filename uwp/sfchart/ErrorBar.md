@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Error Bar support for SfChart.
+title: Error Bar support for Syncfusion SfChart in UWP.
 description: Error Bar support for SfChart.
 platform: uwp
 control: SfChart
