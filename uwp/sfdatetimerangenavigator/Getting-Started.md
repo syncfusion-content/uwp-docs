@@ -208,7 +208,7 @@ rangeNavigator.Content = sparkline;
 
 The following output is displayed as a result of the above code example.
 
-![](Getting-Started_images/GettingStarted_img6.jpeg)
+![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
 
 
 ## Create a SfDateTimeRangeNavigator from Code Behind
@@ -331,6 +331,6 @@ this.MainGrid.Children.Add(navigator);
 
 The following output is displayed as a result of the above code example.
 
-![](Getting-Started_images/GettingStarted_img6.jpeg)
+![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
 
 

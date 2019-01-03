@@ -11,7 +11,7 @@ documentation: ug
 
 The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps to define elegant planning and clear visualization of work progression. SfKanban also provide many features that are used to monitor the progressing tasks in software development cycle. 
 
-![](SfKanban_images/SfKanban_img1.png)
+![Overview of SfKanban in UWP](SfKanban_images/SfKanban_img1.png)
 
 
 ## Key features

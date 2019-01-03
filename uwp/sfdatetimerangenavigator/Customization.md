@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization 
+title: Customization | SfDateTimeRangeNavigator | UWP | Syncfusion 
 description: Customization
 platform: uwp
 control: SfDateTimeRangeNavigator
@@ -301,7 +301,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![](Customization_images/Customization_img6.jpeg)
+![Customization of SfDateTimeRangeNavigator in UWP](Customization_images/Customization_img6.jpeg)
 
 
 * [`LowerLevelBarStyle`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerLevelBarStyle.html#)- Gets or sets the styles for the lower label bar of SfDateTimeRangeNavigator.
