@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip Support | SfDateTimeRangeNavigator | uwp | Syncfusion  
+title: Tooltip Support | SfDateTimeRangeNavigator | UWP | Syncfusion  
 description: Tooltip Support
 platform: uwp
 control: SfDateTimeRangeNavigator
@@ -96,6 +96,6 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![ToolTip customization support in UWP SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
+![ToolTip customization support for UWP SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
 
 
