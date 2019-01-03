@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip Support 
+title: Tooltip Support | SfDateTimeRangeNavigator | UWP | Syncfusion  
 description: Tooltip Support
 platform: uwp
 control: SfDateTimeRangeNavigator
@@ -19,7 +19,7 @@ The following properties are used to customize the ToolTip settings for the Date
 
 Default tool tip template of SfDateTimeRangeNavigator.
 
-![](ToolTip-Support_images/ToolTipSupport_img1.jpeg)
+![ToolTip support for UWP SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img1.jpeg)
 
 
 The following code illustrates the customization of tool tip.
@@ -96,6 +96,6 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
+![ToolTip customization support for UWP SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
 
 
