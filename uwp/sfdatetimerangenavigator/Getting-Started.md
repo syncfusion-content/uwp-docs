@@ -151,9 +151,9 @@ Content which needs to be displayed inside a SfDateTimeRangeNavigator can be of 
 
 The following properties are used to add content.
 
-* [`ItemsSource`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ItemsSource.html#) - Gets or sets an IEnumerable source used to render range.
-* [`XBindingPath`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~XBindingPath.html#) - Gets or sets the property path of the x data in ItemsSource.
-* [`Content`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~Content.html#) - Gets or sets the content that needs to be hosted inside the Navigator, the content can be any UI element.
+* [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ItemsSource.html#) - Gets or sets an IEnumerable source used to render range.
+* [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~XBindingPath.html#) - Gets or sets the property path of the x data in ItemsSource.
+* [`Content`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~Content.html#) - Gets or sets the content that needs to be hosted inside the Navigator, the content can be any UI element.
 
 {% tabs %}
 
@@ -208,7 +208,7 @@ rangeNavigator.Content = sparkline;
 
 The following output is displayed as a result of the above code example.
 
-![](Getting-Started_images/GettingStarted_img6.jpeg)
+![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
 
 
 ## Create a SfDateTimeRangeNavigator from Code Behind
@@ -331,6 +331,6 @@ this.MainGrid.Children.Add(navigator);
 
 The following output is displayed as a result of the above code example.
 
-![](Getting-Started_images/GettingStarted_img6.jpeg)
+![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
 
 
