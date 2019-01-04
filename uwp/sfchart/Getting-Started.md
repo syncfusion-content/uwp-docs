@@ -180,11 +180,11 @@ N> Add namespace of `ViewModel` class in your XAML page if you prefer to set `Da
 
 <Page
     x:Class="ChartDemo.MainPage"
-    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ChartDemo"
-    xmlns:d="https://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="https://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
     mc:Ignorable="d">
 
@@ -517,11 +517,11 @@ The following code example gives you the complete code of above configurations.
 
 <Page
     x:Class="ChartDemo.MainPage"
-    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ChartDemo"
-    xmlns:d="https://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="https://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
     mc:Ignorable="d">
 

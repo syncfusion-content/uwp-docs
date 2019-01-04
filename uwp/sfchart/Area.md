@@ -649,9 +649,9 @@ This can be done using [`Serialize`](https://help.syncfusion.com/cr/cref_files/u
 Serialized Chart
 
 <SfChart Header="Defect Rates" Name="chart" Margin="10,10,10,10" Width="500" Height="420"
-         xmlns="https://schemas.syncfusion.com/wpf"
+         xmlns="http://schemas.syncfusion.com/wpf"
          xmlns:s="clr-namespace:System;assembly=mscorlib"
-         xmlns:av="https://schemas.microsoft.com/winfx/2006/xaml/presentation">
+         xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
 <SfChart.PrimaryAxis>
 
@@ -716,8 +716,8 @@ Serialized Chart
               ItemsSource="{av:Binding Path=CategoricalData}"
               XBindingPath="Category"
               Name="series"
-              xmlns="https://schemas.syncfusion.com/wpf"
-              xmlns:av="https://schemas.microsoft.com/winfx/2006/xaml/presentation">
+              xmlns="http://schemas.syncfusion.com/wpf"
+              xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
 <ColumnSeries.Trendlines>
     <ChartTrendLineCollection />
