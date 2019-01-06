@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactivity 
+title: Syncfusion Interactivity 
 description: Interactivity
 platform: uwp
 control: SfDateTimeRangeNavigator
@@ -356,7 +356,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![](Interactivity_images/Interactivity_img3.jpeg)
+![Interactive feature support for DateTimeRangeNavigator](Interactivity_images/Interactivity_img3.jpeg)
 
 
 ## Resizable Scrollbar
