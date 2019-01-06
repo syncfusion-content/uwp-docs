@@ -365,7 +365,7 @@ SfDateTimeRangeNavigator provides interactive features such as zooming, panning.
 
 * [`EnableDeferredUpdate`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~EnableDeferredUpdate.html#)- Gets or sets a value that indicates whether to defer the ValueChanged notification.
 * [`ScrollbarVisibility`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ScrollbarVisibility.html#) – Gets or sets bool value whether enable or disable the scrollbar.
-* `DeferredUpdateDelay` - Gets or sets the delay value, when EnableDeferredUpdate is enabled.
+* [`DeferredUpdateDelay`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~DeferredUpdateDelay.html#) - Gets or sets the delay value, when EnableDeferredUpdate is enabled.
 
 ![interactive](Interactivity_images/Interactivity_img4.jpeg)
 
