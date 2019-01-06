@@ -1823,7 +1823,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Styling Header and Labels
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the axis header and label. The following APIs are used to customize the header and label.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the axis [`Header`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~Header.html) and label. The following APIs are used to customize the header and label.
 
 [`HeaderStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderStyle.html) and [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelStyle.html)
 
@@ -1835,11 +1835,11 @@ Definition</th></tr>
 <tr>
 <td>
 HeaderStyle</td><td>
-Gets or sets the style for the axis header. The header’s Foreground, FontSize and FontFamily are customized using this property.</td></tr>
+Gets or sets the style for the axis header. The header’s [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~Foreground.html), [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontSize.html) and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontFamily.html) are customized using this property.</td></tr>
 <tr>
 <td>
 LabelStyle</td><td>
-Gets or sets the style for the axis labels. The label’s Foreground, FontSize and FontFamily are customized using this property.</td></tr>
+Gets or sets the style for the axis labels. The label’s [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~Foreground.html), [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontSize.html) and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontFamily.html) are customized using this property.</td></tr>
 </table>
 
 {% tabs %}
@@ -3113,7 +3113,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 **Text** **Customization**
 
-[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSize.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamily.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) property and it is shown in below code snippet,
+[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSize.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamily.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~Foreground.html) property and it is shown in below code snippet,
 
 {% tabs %}
 

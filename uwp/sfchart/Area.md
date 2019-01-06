@@ -23,7 +23,7 @@ The following are the major properties of chart(SfChart):
 
 ## Chart Header
 
-Header property is used to define the title for the chart. This allows you to add any object (.Net object) as content for chart title. 
+[`Header`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Header.html) property is used to define the title for the chart. This allows you to add any object (.Net object) as content for chart title. 
 
 {% tabs %}
 

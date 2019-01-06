@@ -13,7 +13,7 @@ DateTimeRangeNavigator control provides ToolTip support for Sliders. Sliders are
 The following properties are used to customize the ToolTip settings for the DateTimeRangeNavigator control.
 
 * [`ShowToolTip`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ShowToolTip.html#)- Gets or sets to show ToolTip.
-* [`ToolTipLabelFormat`]http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ToolTipLabelFormat.html#)-Gets or sets label format for ToolTip.
+* [`ToolTipLabelFormat`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ToolTipLabelFormat.html#)-Gets or sets label format for ToolTip.
 * [`LeftToolTipTemplate`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LeftToolTipTemplate.html#)-Gets or sets template for the left side ToolTip.
 * [`RightToolTipTemplate`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~RightToolTipTemplate.html#)- Gets or sets template for the right side ToolTip.
 
