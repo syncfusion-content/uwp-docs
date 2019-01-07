@@ -13,7 +13,7 @@ The placeholder is to denote a card's new position in the [`KanbanColumn`](https
 
 ### Placeholder style
 
-[`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
+[`PlaceholderStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.SfKanban~PlaceholderStyle.html) property is used to customize the placeholder. Following properties are used to customize its appearance.
 
 * [`Fill`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Fill.html)  	 - This property is used to change the background color of the placeholder.
 * [`Stroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Stroke.html) 	 	 - This property is used to change the border color of the placeholder.
