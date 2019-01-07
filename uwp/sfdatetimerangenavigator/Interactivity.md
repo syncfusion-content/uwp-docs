@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactivity 
+title: Interactivity | SfDateTimeRangeNavigator | UWP | Syncfusion 
 description: Interactivity
 platform: uwp
 control: SfDateTimeRangeNavigator
@@ -12,8 +12,8 @@ The SfDateTimeRangeNavigator helps the user to visualize large data in a simplif
 
 The following properties are used while selecting the range of data from the SfDateTimeRangeNavigator.
 
-* [`ViewRangeStart`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ViewRangeStart.html#)- Gets or sets Navigator's Start Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
-* [`ViewRangeEnd`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ViewRangeEnd.html#)- Gets or sets Navigator's End Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
+* [`ViewRangeStart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ViewRangeStart.html#)- Gets or sets Navigator's Start Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
+* [`ViewRangeEnd`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ViewRangeEnd.html#)- Gets or sets Navigator's End Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
 
 {% tabs %}
 
@@ -65,8 +65,8 @@ In two ways the selected region of the SfDateTimeRangeNavigator can be viewed in
 
 Both the ways produce the same result.
 
-* [`ZoomPosition`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ZoomPosition.html#)- Gets or sets zoom position. Value must fall within 0 to 1. It determines starting value of visible range.
-* [`ZoomFactor`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ZoomFactor.html#)- Gets or sets zoom factor. Value must fall within 0 to 1. It determines delta of visible range.
+* [`ZoomPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ZoomPosition.html#)- Gets or sets zoom position. Value must fall within 0 to 1. It determines starting value of visible range.
+* [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ZoomFactor.html#)- Gets or sets zoom factor. Value must fall within 0 to 1. It determines delta of visible range.
 
 The ZoomPosition and ZoomFactor of the chart axis can be bind with the SfDateTimeRangeNavigator.
 
@@ -244,7 +244,7 @@ chart.Series.Add(candleSeries);
 
 {% endtabs %}
 
-* [`SelectedData`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~SelectedData.html#)- Gets an IEnumerable source for the particular selected region.
+* [`SelectedData`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~SelectedData.html#)- Gets an IEnumerable source for the particular selected region.
 
 Displays the selected data alone from the SfDateTimeRangeNavigator, into the chart.
 
@@ -323,9 +323,9 @@ The following output is displayed as the result of above code sample.
 
 The following are the properties used to provide interactive features.
 
-* [`ShowGridLines`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ShowGridLines.html#)- Gets or sets a value that indicates whether to show grid lines inside the content.
-* [`RangePadding`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~RangePadding.html#)- Gets or sets value which is used to shift the SfDateTimeRangeNavigator axis range inside or outside.
-* [`OverlayBrush`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~OverlayBrush.html#)- Gets or sets the overlay brush color.
+* [`ShowGridLines`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ShowGridLines.html#)- Gets or sets a value that indicates whether to show grid lines inside the content.
+* [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~RangePadding.html#)- Gets or sets value which is used to shift the SfDateTimeRangeNavigator axis range inside or outside.
+* [`OverlayBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~OverlayBrush.html#)- Gets or sets the overlay brush color.
 
 {% tabs %}
 
@@ -356,15 +356,15 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![](Interactivity_images/Interactivity_img3.jpeg)
+![Interactivity in UWP SfDateTimeRangeNavigator](Interactivity_images/Interactivity_img3.jpeg)
 
 
 ## Resizable Scrollbar
 
 SfDateTimeRangeNavigator provides interactive features such as zooming, panning. The navigator has a resizable scrollbar which is used to zoom in large amount of data and also helps to navigate to particular timespan by moving the scrollbar.
 
-* [`EnableDeferredUpdate`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~EnableDeferredUpdate.html#)- Gets or sets a value that indicates whether to defer the ValueChanged notification.
-* [`ScrollbarVisibility`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ScrollbarVisibility.html#) – Gets or sets bool value whether enable or disable the scrollbar.
+* [`EnableDeferredUpdate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~EnableDeferredUpdate.html#)- Gets or sets a value that indicates whether to defer the ValueChanged notification.
+* [`ScrollbarVisibility`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ScrollbarVisibility.html#) – Gets or sets bool value whether enable or disable the scrollbar.
 * `DeferredUpdateDelay` - Gets or sets the delay value, when EnableDeferredUpdate is enabled.
 
 ![interactive](Interactivity_images/Interactivity_img4.jpeg)
