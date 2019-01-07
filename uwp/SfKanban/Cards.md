@@ -78,6 +78,21 @@ sfKanban.IndicatorColorPalette = indicatorColorPalette;
 
 ![Card customization in UWP SfKanban](SfKanban_images/CardCustomization.png)
 
+## Customizing kanban cards
+
+The [`CardStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.SfKanban~CardStyle.html) property is used to customize the kanban cards. Following properties of [`CardStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.SfKanban~CardStyle.html) cab be used to used to customize its appearance.
+
+* [`Background`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~Background.html) - Used to change the background color of a card.
+* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~BorderBrush.html) - Used to change the border brush of a card.
+* [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~BorderThickness.html) - Used to change the border thickness of a card.
+* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~CornerRadius.html) - Used to add rounded corners for a card.
+* [`IconVisibility`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~IconVisibility.html) - Used to change the icon visibility of a card.
+* [`IndicatorVisibility`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~IndicatorVisibility.html) - Used to change the indicator visibility of a card.
+* [`TagVisibility`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~TagVisibility.html) -  Used to change the tag panel visibility of a card.
+* [`TitleColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~TitleColor.html) - Used to change the header color of kanban card item.
+* [`TitleFontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~TitleFontSize.html) - Used to change the font size of a card title.
+* [`TitleHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanCardStyle~TitleHorizontalAlignment.html) - Used to change the horizontal alignment of a card title.
+
 ## Template
 
 You can replace the entire card template with your own design using [`SfKanban.CardTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.SfKanban~CardTemplate.html) property. The following code snippet and screenshot illustrates this.
