@@ -21,6 +21,10 @@ The placeholder is to denote a card's new position in the [`KanbanColumn`](https
 * [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~StrokeDashArray.html)     - This property is used to change the dashes of the placeholder border.
 * [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~FontSize.html)            - This is used to change the text size of the placeholder.
 * [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~Foreground.html)           - This property is used to change the text color of the placeholder.
+* [`RadiusX`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~RadiusX.html) - This property is used to change the x-radius of the placeholder.
+* [`RadiusY`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~RadiusY.html) - This property is used to change the y-radius of the placeholder.
+* [`TextHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~TextHorizontalAlignment.html) - This property is used to change the horizontal alignment of the placeholder text.
+* [`TextVerticalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.PlaceholderStyle~TextVerticalAlignment.html) - This property is used to change the vertical alignment of the placeholder text.
 
 Following properties are used to customize the selected category when you have more than one category in a column.
 

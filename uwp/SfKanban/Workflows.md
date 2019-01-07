@@ -84,7 +84,7 @@ Kanban.Workflows = workflows;
 
 [`MinimumLimit`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanColumn~MinimumLimit.html) and [`MaximumLimit`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanColumn~MaximumLimit.html) properties are used to limit the minimum and maximum items in the Kanban column. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the [`ValidationColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanColumn~ValidationColor.html) of the error bar.
 
-Following properties are used to customize the error bar.
+Following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanColumn~ErrorBarSettings.html) are used to customize the error bar.
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.ErrorBarSettings~Color.html) – used to set the default color of the error bar.
 
