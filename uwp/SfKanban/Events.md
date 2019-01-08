@@ -16,6 +16,8 @@ This event is triggered when you tap on any card. The argument contains the foll
 * [`SelectedColumn`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumn.html)          - Used to get the column of the selected card.
 * [`SelectedCard`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCard.html) 			- Used to get the selected card.
 * [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCardIndex.html) 			- Used to get the index of the card in a column.
+* [`SelectedRowIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedRowIndex.html) - Used to get the index of dragging card's row.
+* [`SelectedColumnIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumnIndex.html) - Used to get the index of dragging card's column. 
 
 ## DragStart
 
@@ -38,6 +40,8 @@ This event is triggered when whenever dragging is canceled. The argument contain
 * [`TargetKey`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~TargetKey.html) 	- Used to get the category of the column where the card is going to be dropped.
 * [`TargetColumn`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~TargetColumn.html)	- Used to get the current column which is the drop target for the card.
 * [`TargetCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~TargetCardIndex.html)		- Used to get the index of the card in target column.
+* [`TargetRowIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~TargetRowIndex.html) - Used to get the target row index where the card is going to be inserted.
+* [`TargetColumnIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs~TargetColumnIndex.html) - Used to get the target column index where the card is going to be inserted.
 
 ## DragEnter 
 
@@ -49,6 +53,8 @@ This event is triggered when a card enters into a column while dragging. The arg
 * [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCardIndex.html)			- Used to get the index of the card in source column.
 * [`CurrentColumn`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs~CurrentColumn.html)		- Used to get the column upon which the card enters.
 * [`CurrentIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs~CurrentIndex.html)			- Used to get the index of the card in current column.
+* [`CurrentRowIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs~CurrentRowIndex.html) - Used to get the current index of the card's row.
+* [`CurrentColumnIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEnterEventArgs~CurrentColumnIndex.html) - Used to get the current index of the card's column.
 
 ## DragLeave 
 
@@ -58,7 +64,10 @@ This event is triggered when a card leaves a column while dragging. The argument
 * [`SelectedColumn`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedColumn.html)        - Used to get the source column of the card.
 * [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCardIndex.html)         - Used to get the index of the card in source column.
 * [`LeftColumn`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs~LeftColumn.html)		- Used to get the column from which the card leaves.
-* [`PreviousCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs~PreviousCardIndex.html)   -   used to get the index of the card left.
+* [`PreviousCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs~PreviousCardIndex.html)   -   Used to get the index of the card left.
+* [`PreviousRowIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs~PreviousRowIndex.html) - Used to get the previous card's row index while drag enter into next column.
+* [`PreviousColumnIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragLeaveEventArgs~PreviousColumnIndex.html) - Used to get the previous card's column index while drag enter into next column.
+
 
 ## DragOver
 
@@ -70,6 +79,8 @@ This event is triggered when a card is dragged to a new index within a column. T
 * [`SelectedCardIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs~SelectedCardIndex.html)		- Used to get the index of the card in source column.
 * [`CurrentColumn`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs~CurrentColumn.html)	- Used to get the current column which is the drop target for the card.
 * [`CurrentIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs~CurrentIndex.html)		- Used to get the new index of the card in current column.
+* [`CurrentRowIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs~CurrentRowIndex.html) - Used to get the current index of the card's row.
+* [`CurrentColumnIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs~CurrentColumnIndex.html) - Used to get the current index of the card's column.
 
 ## ColumnsGenerated 
 
