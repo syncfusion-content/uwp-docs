@@ -389,7 +389,7 @@ chart.RadialAxis.MinorGridlinesCount = 12;
     
 {% endtabs %}
 
-![SfSmithChart MinorGridlinesCount](Axes_images/Axes_img12.png)
+![SfSmithChart MinorGridlinesCount](Axes_images/Axes_img12.jpg)
 
 **MinorGridlineStyle**
 
@@ -423,7 +423,7 @@ chart.RadialAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
     
 {% endtabs %}
 
-![SfSmithChart MinorGridlineStyle](Axes_images/Axes_img13.png)
+![SfSmithChart MinorGridlineStyle](Axes_images/Axes_img13.jpg)
 
 ### AxisLine
 
