@@ -137,7 +137,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![SfSmithChart Floating Legends*](Legend_images/Legend_img3.png)
+![SfSmithChart Floating Legends](Legend_images/Legend_img3.png)
 
 ## Legend Icon
 

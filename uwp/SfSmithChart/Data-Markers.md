@@ -107,7 +107,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img3.png)
+![SfSmithChart MarkerTemplate](Data-Markers_images/Data-Markers_img3.png)
 
 ## Add Labels
 

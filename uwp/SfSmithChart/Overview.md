@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of SfSmithChart UWP.
+title: Overview| SfSmithChart | UWP | Syncfusion
 description: Overview and the highlighting features of the SfSmithChart control.
 platform: uwp
 control: SfSmithChart
