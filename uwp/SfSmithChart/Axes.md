@@ -2,7 +2,7 @@
 layout: post
 title: Axis and its types. 
 description: Axis behavior and its types.
-platform: wpf
+platform: uwp
 control: SfSmithChart
 documentation: ug
 ---

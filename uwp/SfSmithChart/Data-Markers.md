@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Markers | DataLabel | SfSmithChart | Wpf | Syncfusion
+title: Markers | DataLabel | SfSmithChart | UWP | Syncfusion
 description: Data-Markers
-platform: wpf
+platform: uwp
 control: SfSmithChart
 documentation: ug
 ---

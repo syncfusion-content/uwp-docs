@@ -1,8 +1,8 @@
 ---
 layout: post
-title: User Interactions| ToolTip | SfSmithChart | Wpf | Syncfusion
+title: User Interactions| ToolTip | SfSmithChart | UWP | Syncfusion
 description: user interactions
-platform: wpf
+platform: uwp
 control: SfSmithChart
 documentation: ug
 ---

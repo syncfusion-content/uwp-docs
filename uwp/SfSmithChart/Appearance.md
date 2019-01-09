@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance | SfSmithChart | Wpf | Syncfusion
+title: Appearance | SfSmithChart | UWP | Syncfusion
 description: appearance
-platform: wpf
+platform: uwp
 control: SfSmithChart
 documentation: ug
 ---

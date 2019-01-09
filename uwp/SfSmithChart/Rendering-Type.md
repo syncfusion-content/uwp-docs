@@ -2,7 +2,7 @@
 layout: post
 title: SfSmithChart Rendering Type
 description: Rendering type SfSmithChart control.
-platform: wpf
+platform: uwp
 control: SfSmithChart
 documentation: ug
 ---

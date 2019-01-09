@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Series| SfSmithChart | Wpf | Syncfusion
+title: Series| SfSmithChart | UWP | Syncfusion
 description: Rendering type SfSmithChart control.
-platform: wpf
+platform: uwp
 control: series
 documentation: ug
 ---
