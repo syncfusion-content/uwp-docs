@@ -39,7 +39,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img1.png)
+![SfSmithChart Add Shapes](Data-Markers_images/Data-Markers_img1.png)
 
 ## Customizing Marker
 
@@ -71,7 +71,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img2.png)
+![SfSmithChart Customizing Marker](Data-Markers_images/Data-Markers_img2.png)
 
 **MarkerTemplate**
 
@@ -141,7 +141,7 @@ N> The position changed data label will be connected by using connector line and
 
 The following screenshot illustrates how the data labels can be positioned.
 
-![](Data-Markers_images/Data-Markers_img4.png)
+![SfSmithChart Add Labels](Data-Markers_images/Data-Markers_img4.png)
 
 **LabelStyle**
 
@@ -181,7 +181,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img5.png)
+![SfSmithChart LabelStyle](Data-Markers_images/Data-Markers_img5.png)
 
 **LabelTemplate**
 
@@ -226,4 +226,4 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Data-Markers_images/Data-Markers_img6.png)
+![SfSmithChart LabelTemplate](Data-Markers_images/Data-Markers_img6.png)

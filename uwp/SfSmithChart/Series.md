@@ -51,7 +51,7 @@ The below code example explains how to create a simple `LineSeries` by using giv
     
 {% endtabs %}
 
-![](Series_images/Series_img1.png)
+![SfSmithChart Series](Series_images/Series_img1.png)
 
 **Customizing LineSeries**
 
@@ -80,7 +80,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Series_images/Series_img2.png)
+![SfSmithChart Customizing LineSeries](Series_images/Series_img2.png)
 
 ## Animation
 
@@ -143,4 +143,4 @@ chart.Series.Add(series2);
     
 {% endtabs %}
 
-![](Series_images/Series_img3.png)
+![SfSmithChart Series Visibility](Series_images/Series_img3.png)

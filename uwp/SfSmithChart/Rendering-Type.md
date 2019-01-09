@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SfSmithChart Rendering Type
+title: RenderingType| SfSmithChart | UWP | Syncfusion
 description: Rendering type SfSmithChart control.
 platform: uwp
 control: SfSmithChart

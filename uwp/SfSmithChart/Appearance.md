@@ -35,7 +35,7 @@ chart.ColorModel.Palette = ColorPalette.BlueChrome;
     
 {% endtabs %}
 
-![](Appearance_images/Appearance_img1.png)
+![SmithChart color palette](Appearance_images/Appearance_img1.png)
 
 **Series Palette**
 
@@ -66,7 +66,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](Appearance_images/Appearance_img2.png)
+![SmithChart series palette](Appearance_images/Appearance_img2.png)
 
 ## Chart Area Customization
 
@@ -95,7 +95,7 @@ chart.ChartAreaBorderThickness = new Thickness(2);
     
 {% endtabs %}
 
-![](Appearance_images/Appearance_img3.png)
+![SmithChart chart appearance](Appearance_images/Appearance_img3.png)
 
 ## Circle Radius
 
@@ -123,4 +123,4 @@ this.Grid1.Children.Add(chart);
     
 {% endtabs %}
 
-![](Appearance_images/Appearance_img4.png)
+![SmithChart circle radius](Appearance_images/Appearance_img4.png)

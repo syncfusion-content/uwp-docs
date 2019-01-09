@@ -35,7 +35,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](User-Interactions_images/User-Interactions_img1.png)
+![SfSmithChart ToolTip](User-Interactions_images/User-Interactions_img1.png)
 
 **ToolTipTemplate**
 
@@ -88,4 +88,4 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![](User-Interactions_images/User-Interactions_img2.png)
+![SfSmithChart ToolTipTemplate](User-Interactions_images/User-Interactions_img2.png)

@@ -65,7 +65,7 @@ this.Grid1.Children.Add(chart);
     
 {% endtabs %}
 
-![](Legend_images/Legend_img1.png)
+![SfSmithChart Legend](Legend_images/Legend_img1.png)
 
 ## Positioning the Legend
 
@@ -102,7 +102,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img2.png)
+![SfSmithChart Positioning the Legend](Legend_images/Legend_img2.png)
 
 **Floating Legends**
 
@@ -137,7 +137,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img3.png)
+![SfSmithChart Floating Legends*](Legend_images/Legend_img3.png)
 
 ## Legend Icon
 
@@ -170,7 +170,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img4.png)
+![SfSmithChart Legend Icon](Legend_images/Legend_img4.png)
 
 **Custom Legend Icon**
 
@@ -207,7 +207,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img5.png)
+![SfSmithChart Custom Legend Icon](Legend_images/Legend_img5.png)
 
 ## Customizing Legend
 
@@ -252,7 +252,7 @@ The following code example illustrates the customization of legend icon and text
     
 {% endtabs %}
 
-![](Legend_images/Legend_img6.png)
+![SfSmithChart Customizing Legend](Legend_images/Legend_img6.png)
 
 ## VisibilityOnLegend
 
@@ -300,7 +300,7 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img7.png)
+![SfSmithChart VisibilityOnLegend](Legend_images/Legend_img7.png)
 
 ## Series Visibility
 
@@ -347,4 +347,4 @@ chart.Legend = legend;
     
 {% endtabs %}
 
-![](Legend_images/Legend_img8.png)
+![SfSmithChart Series Visibility](Legend_images/Legend_img8.png)
