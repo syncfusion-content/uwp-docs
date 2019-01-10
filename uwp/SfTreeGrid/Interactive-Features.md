@@ -795,6 +795,6 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {% endtabs %}
 
 After dropping in tree grid, the dragged item is added to TreeGrid based on the dropped position.
-Sample for dragging the item from ListView and dropping into TreeGrid: [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
+Sample for dragging the item from ListView and dropping into TreeGrid: [Sample](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-in-wpf-and-uwp-between-listview-and-treegrid/tree/master/UWP).
 
 
