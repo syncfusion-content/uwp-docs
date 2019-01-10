@@ -97,4 +97,4 @@ sfKanban.PlaceholderStyle = style;
 
 The following output demonstrates the above code example.
 
-![](SfKanban_images/PlaceholderStyle.png)
+![Styling the placeholder in UWP SfKanban](SfKanban_images/PlaceholderStyle.png)

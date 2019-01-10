@@ -126,7 +126,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 The following sections covers all the different types of technical indicators available in [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html).
 
-Most of the indicators are having the `Period` and `SignalLineColor` properties as common, in which Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
+Most of the indicators are having the [`Period`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~Period.html) and [`SignalLineColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator~SignalLineColor.html) properties as common, in which Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
 
 ## Average True Range
 
