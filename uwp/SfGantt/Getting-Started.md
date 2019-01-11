@@ -19,7 +19,7 @@ This section explains how to create and configure a simple Gantt application.
 2. Go to Universal Windows > Extensions.
 3. Select Syncfusion Controls for UWP XAML.
 
-![Adding sdk references in project](SfGantt_images/SDK_Reference.jpeg)
+![Adding SDK references in project](SfGantt_images/SDK_Reference.jpeg)
 
 ### Adding assembly reference
 
@@ -138,9 +138,9 @@ Drag the SfGantt control from the toolbox to your application.
 
 Now, the “Syncfusion Controls for UWP XAML” reference will be added to the application references, and the xmlns namespace will be generated in MainWindow.xaml as shown in the following screenshot.
 
-![SDK Reference added automatically](SfGantt_images/Added_SDK.jpeg)
+![Adding SDK reference automatically](SfGantt_images/Added_SDK.jpeg)
 
-![Automatically initializes UWP Gantt control instance](SfGantt_images/XAML_Reference.jpeg)
+![Initializes the UWP Gantt control instance automatically](SfGantt_images/XAML_Reference.jpeg)
 
 ## Creating data model
 
@@ -445,11 +445,11 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 ### Predecessor offset 
 
-In Gantt, predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskRelationship~Offset.html) can be defined with the following duration unit.
+In Gantt, the predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskRelationship~Offset.html) can be defined with the following duration unit.
 
 * Day
 
-Below code sample demonstrates to add lead time to predecessor.
+The following code sample demonstrates how to add lead time to predecessor.
 
 {% highlight C# %}
 
@@ -607,6 +607,6 @@ sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
 {% endtabs %}
 
-![UWP Gantt with non working days feature](SfGantt_images/NonWorkingDays.jpeg)
+![UWP Gantt with non-working days feature](SfGantt_images/NonWorkingDays.jpeg)
 
 N> To display the non-working days, either the interval type must be set to week or the less interval type set to days, hours, and minutes.
