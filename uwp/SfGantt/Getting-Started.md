@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started| Gantt | Uwp | Syncfusion
+title: Getting Started | Gantt | UWP | Syncfusion
 description: The following section provides an assistance to create a simple Gantt application and to configure it.
 platform: uwp
 control: SfGantt
@@ -29,7 +29,7 @@ In the Add Reference window, browse and choose the reference assembly from the f
 
 **[Installed location]**\Syncfusion\Essential Studio\\**[Installed version]**\Assemblies for Universal Windows\10.0\
 
-![Adding UWP gantt assembly reference in project](SfGantt_images/Gantt_dll_reference.jpeg)
+![Adding UWP Gantt assembly reference in project](SfGantt_images/Gantt_dll_reference.jpeg)
 
 The following list of assemblies should be added as references to use the Gantt control in applications.
 
@@ -134,13 +134,13 @@ SfGantt sfGantt = new SfGantt();
 
 Drag the SfGantt control from the toolbox to your application.
 
-![Loading UWP gantt control to toolbox page](SfGantt_images/Tool_Box.jpeg)
+![Loading UWP Gantt control to toolbox page](SfGantt_images/Tool_Box.jpeg)
 
 Now, the “Syncfusion Controls for UWP XAML” reference will be added to the application references, and the xmlns namespace will be generated in MainWindow.xaml as shown in the following screenshot.
 
 ![SDK Reference added automatically](SfGantt_images/Added_SDK.jpeg)
 
-![Automatically initializes UWP gantt control instance](SfGantt_images/XAML_Reference.jpeg)
+![Automatically initializes UWP Gantt control instance](SfGantt_images/XAML_Reference.jpeg)
 
 ## Creating data model
 
@@ -332,7 +332,7 @@ sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttri
 
 {% endtabs %}
 
-![UWP gantt with visible columns](SfGantt_images/Getting_Started.jpeg)
+![UWP Gantt with visible columns](SfGantt_images/Getting_Started.jpeg)
 
 ## Sorting
 
@@ -362,7 +362,7 @@ sfGantt.AllowSorting = true;
 
 {% endtabs %}
 
-![UWP gantt with sorting feature](SfGantt_images/Sorting.jpeg)
+![UWP Gantt with sorting feature](SfGantt_images/Sorting.jpeg)
 
 ## Editing
 
@@ -441,7 +441,7 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 {% endhighlight %}
 
-![UWP gantt with task relationship](SfGantt_images/Task_Relationships.jpeg)
+![UWP Gantt with task relationship](SfGantt_images/Task_Relationships.jpeg)
 
 ### Predecessor offset 
 
@@ -480,7 +480,7 @@ ImplementiationModule1Child[4].Predecessors.Add(new TaskRelationship
 });
 
 {% endhighlight %}
-![UWP gantt with predecessor offset](SfGantt_images/predecessor.jpeg)
+![UWP Gantt with predecessor offset](SfGantt_images/predecessor.jpeg)
 
 ## Resources
 
@@ -559,7 +559,7 @@ public ObservableCollection<TaskDetail> GetData()
 
 {% endhighlight %}
 
-![UWP gantt can assign the resource for task](SfGantt_images/Resources.jpeg)
+![UWP Gantt can assign the resource for task](SfGantt_images/Resources.jpeg)
 
 ## Non-working days
 
@@ -608,6 +608,6 @@ sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
 {% endtabs %}
 
-![UWP gantt with non working days feature](SfGantt_images/NonWorkingDays.jpeg)
+![UWP Gantt with non working days feature](SfGantt_images/NonWorkingDays.jpeg)
 
 N> To display the non-working days, either the interval type must be set to week or the less interval type set to days, hours, and minutes.
