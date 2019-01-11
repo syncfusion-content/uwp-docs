@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of SfSmithChart UWP.
+title: Overview| SfSmithChart | UWP | Syncfusion
 description: Overview and the highlighting features of the SfSmithChart control.
 platform: uwp
 control: SfSmithChart
@@ -13,7 +13,7 @@ Smith chart is one of the most useful data visualization tools for high frequenc
 
 SfSmithChart provides a perfect way to visualize data with high level of user interactivity that focuses on development, productivity, and simplicity of use. 
 
-![](Overview_images/Overview_img1.png)
+![SfSmithChart Overview](Overview_images/Overview_img1.png)
     
 
 
