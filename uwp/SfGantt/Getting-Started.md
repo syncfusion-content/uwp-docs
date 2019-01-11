@@ -445,10 +445,9 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 ### Predecessor offset 
 
-While adding task dependency between two tasks, we can add lead or lag time in the property [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskRelationship~Offset.html).
+In Gantt, predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskRelationship~Offset.html) can be defined with the following duration unit.
 
-**Lead** is the amount of time by which a successor task can be advanced with regard to its predecessor.
-**Lag** is the amount of time that is added between a predecessor task and its successor. Lag is always associated with delay.
+* Day
 
 Below code sample demonstrates to add lead time to predecessor.
 
