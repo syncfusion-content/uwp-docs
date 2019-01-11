@@ -111,3 +111,19 @@ pdfViewer.ViewMode = PageViewMode.OnePage
 N> 
 * In Desktop view, when the zoom value is reduced below 100 percentage, the view will be automatically changes to show the thumbnails for easier navigation.
 * One page view mode is supported only in mobile view, where the view will be changed to Flip View for easier navigation.
+
+## Set minimum zoom percentage for PDF Viewer
+
+The PDF Viewer control allows you to set the minimum zoom percentage value for the PDF document being displayed. The following code example will set minimum zoom percentage of PDF Viewer instance to 30.
+
+{% tabs %}
+{% highlight c# %}
+pdfViewer.MinimumZoomPercentage = 30;
+{% endhighlight %}
+{% highlight vbnet %}
+pdfViewer.MinimumZoomPercentage = 30
+{% endhighlight %}
+{% endtabs %}
+
+N> The accepted minimum zoom percentage ranges from 10% to 100%. Values less than 10% will be taken as 10%. Likewise values greater than 100% will be taken as 100%. Default value is the zoom percentage at which a single page completely fits the view port of PdfViewer.
+* This fit-page zoom percentage is computed at runtime.
