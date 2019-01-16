@@ -1823,7 +1823,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Styling Header and Labels
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the axis header and label. The following APIs are used to customize the header and label.
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the axis [`Header`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~Header.html) and label. The following APIs are used to customize the header and label.
 
 [`HeaderStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderStyle.html) and [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelStyle.html)
 
@@ -1835,11 +1835,11 @@ Definition</th></tr>
 <tr>
 <td>
 HeaderStyle</td><td>
-Gets or sets the style for the axis header. The header’s Foreground, FontSize and FontFamily are customized using this property.</td></tr>
+Gets or sets the style for the axis header. The header’s [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~Foreground.html), [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontSize.html) and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontFamily.html) are customized using this property.</td></tr>
 <tr>
 <td>
 LabelStyle</td><td>
-Gets or sets the style for the axis labels. The label’s Foreground, FontSize and FontFamily are customized using this property.</td></tr>
+Gets or sets the style for the axis labels. The label’s [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~Foreground.html), [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontSize.html) and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontFamily.html) are customized using this property.</td></tr>
 </table>
 
 {% tabs %}
@@ -3113,7 +3113,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 **Text** **Customization**
 
-[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSize.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamily.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~ForegroundProperty.html) property and it is shown in below code snippet,
+[`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontSize.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~FontFamily.html) and [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel~Foreground.html) property and it is shown in below code snippet,
 
 {% tabs %}
 
@@ -3763,9 +3763,37 @@ ChartMultiLevelLabel label7 = new ChartMultiLevelLabel()
 
 ## Events
 
-* [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html)   - Occurs at the when the range is changed in the axis.
-* [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html)- Occurs when labels is created.
-* [`AxisBoundChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html)- Occurs when the bounds of the axis changed.
-* [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html#)- Occurs when labels are clicked. Supports for 2D axis.
+### ActualRangeChanged
+
+The [`ActualRangeChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ActualRangeChanged_EV.html) event occurs when an axis range is changed. This argument contains the following information.
+
+* [`ActualMinimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~ActualMinimum.html) - Gets or sets the actual minimum value of axis.
+* [`ActualMaximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~ActualMaximum.html) - Gets or sets the actual maximum value of axis.
+* [`VisibleMinimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~VisibleMinimum.html) - Gets or sets the visible minimum value of axis.
+* [`VisibleMaximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~VisibleMaximum.html) - Gets or sets the visible maximum value of axis.
+* [`ActualInterval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ActualRangeChangedEventArgs~ActualInterval.html) - Gets the actual interval of axis.
+
+### LabelCreated
+
+The [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelCreated_EV.html) event occurs when the axis label is created. This argument contains [`AxisLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelCreatedEventArgs~AxisLabel.html) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which contains the following properties.
+
+* [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html) - Gets or sets the content of label.
+* [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html) - Gets or sets the position of label.
+
+### AxisBoundChanged
+
+The [`AxisBoundChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisBoundsChanged_EV.html) event occurs when the bounds of the axis are changed. This argument contains the following information.
+
+* [`NewBounds`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBoundsEventArgs~NewBounds.html) - Gets the new axis bounds.
+* [`OldBounds`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBoundsEventArgs~OldBounds.html) - Gets the old axis bounds.
+
+### LabelClicked
+
+The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~LabelClicked_EV.html) event is triggered when labels are clicked. Supports for 2D axis. The argument contains [`AxisLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisLabelClickedEventArgs~AxisLabel.html) of [`ChartAxisLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html), which contains the following properties.
+
+* [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~LabelContent.html) - Gets the content of label.
+* [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~Position.html) - Gets the position of label.
+* [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~PrefixLabelTemplate.html) - Gets the prefix template of label.
+* [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisLabel~PostfixLabelTemplate.html) - Gets the postfix template of label.
 
 
