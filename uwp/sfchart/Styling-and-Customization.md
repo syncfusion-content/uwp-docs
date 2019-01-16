@@ -442,7 +442,7 @@ Foreground="Black" FontSize="10"/>
 
 ## Customize Series
 
-CustomTemplate property is used to customize the chart series. It supports the following series
+[`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries~CustomTemplate.html) property is used to customize the chart series. It supports the following series
 
 * BarSeries
 * BubbleSeries
@@ -458,12 +458,12 @@ CustomTemplate property is used to customize the chart series. It supports the f
 
 The respective segment of each series will be your DataTemplate context, which contain the following properties in common. This will be used to plot the custom shapes for the series.
 
-* `XData`-Returns the actual X value of the segment.
-* `YData`-Returns the actual Y value of the segment.
-* `Item`-Returns the underlying model object of the segment.
-* `Interior`-Returns the brush color of the segment.
+* [`XData`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSegment~XData.html)-Returns the actual X value of the segment.
+* [`YData`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSegment~YData.html)-Returns the actual Y value of the segment.
+* [`Item`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSegment~Item.html)-Returns the underlying model object of the segment.
+* [`Interior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSegment~Interior.html)-Returns the brush color of the segment.
 
-The following code example illustrates the use of `CustomTemplate` property:
+The following code example illustrates the use of [`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries~CustomTemplate.html) property:
 
 {% tabs %}
 
