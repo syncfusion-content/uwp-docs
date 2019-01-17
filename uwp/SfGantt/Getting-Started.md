@@ -445,11 +445,10 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 ### Predecessor offset 
 
-In Gantt, the predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskRelationship~Offset.html) can be defined with the following duration unit.
+In Gantt, the predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskRelationship~Offset.html) can be defined with the day duration unit.
 
-* Day
 
-The following code sample demonstrates how to add lead time to predecessor.
+The following code sample demonstrates how to define offset time to the predecessor.
 
 {% highlight C# %}
 
