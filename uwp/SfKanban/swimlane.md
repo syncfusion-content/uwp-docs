@@ -31,11 +31,11 @@ this.Kanban.SwimlaneKey = "ColorKey";
 ![Swimlane support in UWP SfKanban](SfKanban_images/swimlane.jpeg)
 
 
-N > If there is no value assigned for the [`SwimlaneKey`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.SfKanban~SwimlaneKey.html) mapped property in a task, then it will be grouped under Unassigned swim lane.
+N> If there is no value assigned for the [`SwimlaneKey`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.SfKanban~SwimlaneKey.html) mapped property in a task, then it will be grouped under Unassigned swim lane.
 
 ## Customization
 
-SfKanban provides support to customize header, which is displayed before the swim lane group. The following code example displays image along with name.
+SfKanban provides support to customize header, which is displayed before the swim lane group using [`SwimlaneHeaderTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfKanban.UWP~Syncfusion.UI.Xaml.Kanban.SfKanban~SwimlaneHeaderTemplate.html) property. The following code example displays image along with name.
 
 {% highlight xaml %}
 <kanban:SfKanban x:Name="Kanban" ItemsSource="{Binding Tasks}">
