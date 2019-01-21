@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip Support | SfDateTimeRangeNavigator | UWP | Syncfusion  
+title: Syncfusion ToolTip Support 
 description: Tooltip Support
 platform: uwp
 control: SfDateTimeRangeNavigator
@@ -12,14 +12,14 @@ DateTimeRangeNavigator control provides ToolTip support for Sliders. Sliders are
 
 The following properties are used to customize the ToolTip settings for the DateTimeRangeNavigator control.
 
-* [`ShowToolTip`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ShowToolTip.html#)- Gets or sets to show ToolTip.
-* [`ToolTipLabelFormat`]https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ToolTipLabelFormat.html#)-Gets or sets label format for ToolTip.
-* [`LeftToolTipTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LeftToolTipTemplate.html#)-Gets or sets template for the left side ToolTip.
-* [`RightToolTipTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~RightToolTipTemplate.html#)- Gets or sets template for the right side ToolTip.
+* [`ShowToolTip`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ShowToolTip.html#)- Gets or sets to show ToolTip.
+* [`ToolTipLabelFormat`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~ToolTipLabelFormat.html#)-Gets or sets label format for ToolTip.
+* [`LeftToolTipTemplate`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LeftToolTipTemplate.html#)-Gets or sets template for the left side ToolTip.
+* [`RightToolTipTemplate`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~RightToolTipTemplate.html#)- Gets or sets template for the right side ToolTip.
 
 Default tool tip template of SfDateTimeRangeNavigator.
 
-![ToolTip support for UWP SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img1.jpeg)
+![ToolTip support for DateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img1.jpeg)
 
 
 The following code illustrates the customization of tool tip.
@@ -96,6 +96,6 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![ToolTip customization support for UWP SfDateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
+![Customizing the labels of tooltip for DateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img2.jpeg)
 
 
