@@ -270,7 +270,7 @@ chart.Series.Add(series2);
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
 
-The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html) as
+The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html):
 
 * Natural
 * Monotonic
