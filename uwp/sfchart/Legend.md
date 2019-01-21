@@ -677,7 +677,7 @@ chart.Series.Add(splineSeries);
 
 ## Legends for Accumulation Series
 
-For the series like [`Pie`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html), [`Doughnut`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html), [`Funnel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FunnelSeries.html) and [`Pyramid`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PyramidSeries.html), legends will be generated for all the data points. But for remaining series, each legend corresponds to each series. By default, the Interior color of the segment (data point) is applied to the legend icon. 
+For the series like [`Pie`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html), [`Doughnut`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html), [`Funnel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FunnelSeries.html) and [`Pyramid`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PyramidSeries.html), legends will be generated for all the data points. But for remaining series, each legend corresponds to each series. By default, the [`Interior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LegendItem~Interior.html) color of the segment (data point) is applied to the legend icon. 
 
 The following code snippets explains how the legends displaying for accumulation series.
 
