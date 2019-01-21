@@ -17,15 +17,15 @@ The copy operation works based on the [GridCopyOption](https://help.syncfusion.c
 
 GridCopyOption provides the following options:
 
-[None](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Disables copy in tree grid.
+* [None](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Disables copy in tree grid.
 
-[CopyData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Enables copy in tree grid.
+* [CopyData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Enables copy in tree grid.
 
-[IncludeHeaders](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies column header along with data.
+* [IncludeHeaders](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies column header along with data.
 
-[IncludeFormat](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies the display text with format instead of actual value.
+* [IncludeFormat](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies the display text with format instead of actual value.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies hidden column to clipboard.
+* [IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies hidden column to clipboard.
 
 You can use the IncludeHeaders, IncludeFormat, and IncludeHiddenColumn options along with the CopyData option.
 
@@ -58,13 +58,13 @@ The paste operation works based on the [GridPasteOption](https://help.syncfusion
 
 GridPasteOption provides the following options:
 
-[None](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Disables paste in tree grid.
+* [None](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Disables paste in tree grid.
 
-[PasteData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Enables paste in tree grid. When an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
+* [PasteData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Enables paste in tree grid. When an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
 
-[ExcludeFirstLine](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Pastes data copied with `IncludeHeaders` copy option.
+* [ExcludeFirstLine](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Pastes data copied with `IncludeHeaders` copy option.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Pastes the values in hidden columns also.
+* [IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Pastes the values in hidden columns also.
 
 You can use the ExcludeFirstLine and IncludeHiddenColumn options along with the PasteData option.
 
@@ -101,15 +101,15 @@ The cut operation works based on the [GridCopyOption](https://help.syncfusion.co
 
 GridCopyOption provides the following options:
 
-[None](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Disables cut in tree grid.
+* [None](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Disables cut in tree grid.
 
-[CutData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Enables cut in tree grid.
+* [CutData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Enables cut in tree grid.
 
-[IncludeHeaders](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html):Copies column header along with data.
+* [IncludeHeaders](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html):Copies column header along with data.
 
-[IncludeFormat](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Cuts the display text with format instead of actual value.
+* [IncludeFormat](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Cuts the display text with format instead of actual value.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies hidden column also to clipboard.
+* [IncludeHiddenColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies hidden column also to clipboard.
 
 You can use the IncludeHeaders, IncludeFormat, and IncludeHiddenColumn options along with CutData option.
 
@@ -173,13 +173,13 @@ private void TreeGrid_PasteContent(object sender, GridCopyPasteEventArgs e)
 
 The [CopyGridCellContent](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CopyCellContent_EV.html) event occurs when a cell is being copied/cut. [TreeGridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html) provides information to the CopyGridCellContent event, which has the following members:
 
-[ClipBoardValue](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~ClipBoardValue.html): Returns cell value.
+* [ClipBoardValue](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~ClipBoardValue.html): Returns cell value.
 
-[Column](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~Column.html): Returns corresponding GridColumn of a cell.
+* [Column](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~Column.html): Returns corresponding GridColumn of a cell.
 
-[RowData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~RowData.html): Returns corresponding RowData of a cell.
+* [RowData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~RowData.html): Returns corresponding RowData of a cell.
 
-[OriginalSender](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCancelEventArgs~OriginalSender.html): Returns SfTreeGrid.
+* [OriginalSender](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCancelEventArgs~OriginalSender.html): Returns SfTreeGrid.
 
 You can change the text copied to clipboard by changing the ClipBoardValue.
 
@@ -227,13 +227,13 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 
 The [PasteGridCellContent](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~PasteCellContent_EV.html) event occurs when a cell is being pasted. [TreeGridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html) provides information to the `PasteGridCellContent` event, which has the following members:
 
-[ClipBoardValue](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~ClipBoardValue.html): Returns the clipboard value of a particular cell.
+* [ClipBoardValue](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~ClipBoardValue.html): Returns the clipboard value of a particular cell.
 
-[Column](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~Column.html): Returns the corresponding GridColumn of a cell.
+* [Column](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~Column.html): Returns the corresponding GridColumn of a cell.
 
-[RowData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~RowData.html): Returns the corresponding RowData of a cell.
+* [RowData](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs~RowData.html): Returns the corresponding RowData of a cell.
 
-[OriginalSender](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCancelEventArgs~OriginalSender.html): Returns SfTeeGrid.
+* [OriginalSender](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCancelEventArgs~OriginalSender.html): Returns SfTeeGrid.
 
 You can paste the text to tree grid by changing the ClipBoardValue.
 
