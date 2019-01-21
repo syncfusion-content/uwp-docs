@@ -94,7 +94,7 @@ BarSeries series = new BarSeries()
 
 ![Bar chart type in UWP](Series_images/bar.png)
 
-### SegmentSpacing
+**SegmentSpacing**
 
 [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingColumnSeries~SegmentSpacing.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the SegmentSpacing property in series:
 
