@@ -13,7 +13,7 @@ documentation: ug
 
 ## Key features
 
-* Eight types of chart series.
+* Eight types of chart [`Series`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart3D~Series.html).
 * Perspective view.
 * Data binding.
 * Animations.
@@ -599,7 +599,7 @@ The following screenshot is an example of a [`SfChart3D`](https://help.syncfusi
 
 ### Dynamic explode
 
-This feature allows users to explode a particular segment in a circular series. This can also be achieved by setting the [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeIndex.html) property. 
+This feature allows users to explode a particular segment in a circular series using [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries3D~ExplodeOnMouseClick.html). This can also be achieved by setting the [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeIndex.html) or [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/uwp/sfchart/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase3D~ExplodeAll.html) property. 
 
 The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
 
