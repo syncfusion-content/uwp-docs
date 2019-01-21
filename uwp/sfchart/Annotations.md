@@ -1136,8 +1136,9 @@ The text in annotation can be customized using the following API’s
 * [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Annotation~FontFamily.html)– Represents the font family of the annotation text.
 * [`FontStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Annotation~FontStyle.html)– Represents the font style of the annotation text.
 * [`FontWeight`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Annotation~FontWeight.html)- Represents the font weight of the annotation text.
-* [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Annotation~Foreground.html)– Represents the brush value of the annotation text color. 
-
+* [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Annotation~Foreground.html)– Represents the brush value of the annotation text color.
+* [`FontStretch`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Annotation~FontStretch.html) - Represents the font stretch for the annotation description.
+ 
 The following code example demonstrates the customization of annotation text.
 
 {% highlight xaml %}
