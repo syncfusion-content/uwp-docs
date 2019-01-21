@@ -341,7 +341,7 @@ The following code example demonstrates the axis with [`AggregateFunctions`](htt
 
 <syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Count"/>
                 
- </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -374,7 +374,7 @@ The following code example demonstrates the axis with [`AggregateFunctions`](htt
 
 <syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Max"/>
                 
- </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -407,7 +407,7 @@ The following code example demonstrates the axis with [`AggregateFunctions`](htt
 
 <syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Min"/>
                 
- </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -440,7 +440,7 @@ The following code example demonstrates the axis with [`AggregateFunctions`](htt
 
 <syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Sum"/>
                 
- </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
