@@ -247,6 +247,219 @@ chart.Series.Add(series);
 
 ![CategoryAxis support in UWP Chart](Axis_images/Axis_img2.png)
 
+**IsIndexed**
+
+By default, [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots the values based on the index of the data points. However, the CategoryAxis can be made to plot the data points based on its data, instead of index value by disabling the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) property of CategoryAxis, and it is shown in the following code example.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False"/>
+                
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+            
+};
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot illustrates the series with [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) value as False.
+
+![Plotting datapoints based on axis data in UWP Chart](Axis_images/IsIndexedDisabled.png)
+
+By default, the value of [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) property is true, and it is shown in following screenshot.
+
+![Plotting datapoints based on index in UWP Chart](Axis_images/IsIndexedEnabled.png)
+
+**AggregateFunctions**
+
+When the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) property of the [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is disabled, the same index values(XValue) are grouped by [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) property of the axis. The following are the types of [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html):
+
+* Average
+* Count
+* Max
+* Min
+* None
+* Sum
+
+The default value of AggregateFunctions is None.
+
+**Average**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Average`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Average"/>
+                
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Average
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Average.png)
+
+**Count**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Count`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Count"/>
+                
+ </syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Count
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Count.png)
+
+**Max**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Max`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Max"/>
+                
+ </syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Max
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Max.png)
+
+**Min**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Min`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Min"/>
+                
+ </syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Min
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Min.png)
+
+**Sum**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Sum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Sum"/>
+                
+ </syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Sum
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Sum.png)
 
 ## DateTimeAxis
 
