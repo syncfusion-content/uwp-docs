@@ -96,7 +96,7 @@ BarSeries series = new BarSeries()
 
 **SegmentSpacing**
 
-[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingColumnSeries~SegmentSpacing.html) property is used to set the spacing among the segments, when multiple series are added in chart. Its value ranges from 0 to 1. The following code illustrates how to use the SegmentSpacing property in series:
+The [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingColumnSeries~SegmentSpacing.html) property sets spacing among the segments when multiple series are added to the chart. Its value ranges from 0 to 1. The following code demonstrates how to use the SegmentSpacing property in series.
 
 {% tabs %}
 
@@ -266,9 +266,9 @@ chart.Series.Add(series2);
 
 ![Spline chart type in UWP](Series_images/spline.png)
 
-**Spline** **Rendering** **Types**
+**Spline** **rendering** **types**
 
-[`SplineType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
+The [`SplineType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
 
 The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html):
 
@@ -277,11 +277,11 @@ The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/
 * Cardinal
 * Clamped
 
-By default SplineType value is [`Natural`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+By default, the value of SplineType is [`Natural`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 **Cardinal**
 
-The following code illustrates how to set the SplineType value as [`Cardinal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html):
+The following code demonstrates how to set the value of SplineType to [`Cardinal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
 
@@ -307,7 +307,7 @@ series.SplineType = SplineType.Cardinal;
 
 **Monotonic**
 
-The following code illustrates how to set the SplineType value as [`Monotonic`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html):
+The following code demonstrates how to set the value of SplineType to [`Monotonic`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
 
@@ -333,7 +333,7 @@ series.SplineType = SplineType.Monotonic;
 
 **Clamped**
 
-The following code illustrates how to set the SplineType value as [`Clamped`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+The following code demonstrates how to set the value of SplineType to [`Clamped`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
 
