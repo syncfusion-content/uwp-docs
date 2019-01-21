@@ -283,6 +283,8 @@ By default, the value of [`IsIndexed`](https://help.syncfusion.com/cr/cref_files
 
 ![Plotting datapoints based on index in UWP Chart](Axis_images/IsIndexedEnabled.png)
 
+N>This feature is not applicable for Accumulation series, ErrorBarSeries, RadarSeries, and PolarSeries.
+
 **AggregateFunctions**
 
 When the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) property of [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is disabled, the same index values(XValue) are grouped using the [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) property of the axis. The [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) property has the following types:
