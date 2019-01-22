@@ -1383,7 +1383,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![ PlotOffset support in UWP Chart](Axis_images/PlotOffset.jpg)
+![ PlotOffset support in UWP Chart](Axis_images/PlotOffset.png)
 
 ## Positioning axis labels
 
