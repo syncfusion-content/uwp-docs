@@ -14,7 +14,7 @@ This section is to help you understand how to use the [`Watermark`](https://help
 
 ## Adding text watermark
 
-You can add the text to chart background using the Content property of Watermark.
+You can add the text to chart background using the Content property of [`Watermark`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Watermark.html).
 
 The following code example explains how to set your custom text as Watermark.
 
