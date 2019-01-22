@@ -1337,7 +1337,53 @@ When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.S
 
 ![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img17.jpg)
 
+### Applying padding to the axis
 
+The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PlotOffset.html) property is used to provide padding to the axis. The following code sample demonstrates the padding applied to both x and y axes.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis  PlotOffset="30">
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis PlotOffset="30">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    PlotOffset = 30
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    PlotOffset = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ PlotOffset support in UWP Chart](Axis_images/PlotOffset.jpg)
 
 ## Positioning axis labels
 
