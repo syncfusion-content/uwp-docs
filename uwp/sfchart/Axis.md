@@ -1644,7 +1644,36 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Axis edge label positioning support in UWP Chart](Axis_images/Axis_img25.png)
 
+### LabelExtent
 
+The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelExtent.html) property allows us to set the distance between the axis header and the axis label. The following code sample demonstrates the LabelExtent property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+<syncfusion:CategoryAxis Header="Items" LabelExtent="50"/>
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new NumericalAxis()
+{
+
+    Header = "Items",
+
+    LabelExtent = 50
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Label extent support in UWP Chart](Axis_images/LabelExtent.png)
 
 ## Smart Labels
 
