@@ -2115,7 +2115,7 @@ SfChart allows you to customize the origin. By default the axis will be rendered
 
 ### ShowAxisNextToOrigin
 
-[`ShowAxisNextToOrigin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowAxisNextToOrigin.html) property is used to move the axis line to the origin value in [`Origin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~Origin.html) property based on the x or y axes. The following code example demonstrates shifting the axis in the origin value in numerical axis.
+The [`ShowAxisNextToOrigin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowAxisNextToOrigin.html) property is used to move the axis line to the origin value in [`Origin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~Origin.html) property based on x or y-axis. The following code example demonstrates how to shift the axis in the origin value in numerical axis.
 
 {% tabs %}
 
