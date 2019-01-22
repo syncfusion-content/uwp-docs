@@ -2109,7 +2109,40 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Axis labels formatting support in UWP Chart](Axis_images/Axis_img31.png)
 
+## Origin Customization
 
+SfChart allows you to customize the origin. By default the axis will be rendered having (0,0) as origin in x and y axes.
+
+### ShowAxisNextToOrigin
+
+[`ShowAxisNextToOrigin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowAxisNextToOrigin.html) property is used to move the axis line to the origin value in [`Origin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~Origin.html) property based on the x or y axes. The following code example demonstrates shifting the axis in the origin value in numerical axis.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis Origin="3" ShowAxisNextToOrigin="True">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Origin = 3,
+
+    ShowAxisNextToOrigin = true 
+    
+};
+
+{% highlight c# %}
+
+![Moving the axis line to the specified origin value support in UWP Chart](Axis_images/ShowAxisNextToOrigin.png)
 
 ## Styling Header and Labels
 
