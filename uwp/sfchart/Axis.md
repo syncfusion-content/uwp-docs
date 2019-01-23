@@ -25,11 +25,11 @@ documentation: ug
 
 You can choose any [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) derived types, like [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html), [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html), [`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) or [`TimeSpanAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html) depending on the value type. [`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html) is a special type, used to plot date and time values for the given datapoints. 
 
-The following are the API’s in ChartAxis
+ChartAxis has the following APIs:
 
 * [`ArrangeRect`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ArrangeRect.html) – Represents the bounds of chart axis size.
-* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~VisibleRange.html) – Represent the axis start and end values.
-* [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~VisibleLabels.html) – Represents the axis label collection which are visible in axis.
+* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~VisibleRange.html) – Represents the start and end values of axis.
+* [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~VisibleLabels.html) –  Represents the axis label collection that is visible in axis.
 
 ## NumericAxis
 
@@ -1393,7 +1393,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### Applying padding to the axis line
 
-The padding to the axis line is defined using [`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineOffset.html) property. The following code sample demonstrates the setting [`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineOffset.html) for x-axis.
+Padding to the axis line is defined using [`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineOffset.html) property. The following code sample demonstrates how to set [`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineOffset.html) to x-axis.
 
 {% tabs %}
 
@@ -1762,7 +1762,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### LabelRotationAngle
 
-The [`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelRotationAngle.html) property allows you to define the angle for the label content. The following code sample demonstrates the [`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelRotationAngle.html).
+The [`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelRotationAngle.html) property allows you to define the angle to the label content. The following code sample demonstrates [`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelRotationAngle.html).
 
 {% tabs %}
 
@@ -2179,7 +2179,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Axis label customization
 
-The [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelTemplate.html) property allows you to define the appearance for the axis labels. The following code sample demonstrates the [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelTemplate.html) property.
+The [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelTemplate.html) property allows you to define the appearance to the axis labels. The following code sample demonstrates the [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelTemplate.html) property.
 
 {% tabs %}
 
@@ -2271,7 +2271,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### Adding Origin line
 
-The origin line can be added to chart area by setting the [`ShowOrigin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowOrigin.html) property to true .The following code example demonstrates the displaying origin line at (3,0) position value as set in [`Origin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~Origin.html) property.
+The origin line can be added to chart area by setting the [`ShowOrigin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowOrigin.html) property to true. The following code example demonstrates how to display the origin line at (3,0).
 
 {% tabs %}
 
@@ -2306,7 +2306,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### Customizing the OriginLine
 
-The origin line of axis can be customized by using the [`OriginLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~OriginLineStyle.html) property of the ChartAxis. The following code demonstrates how to apply style for origin line.
+The origin line of axis can be customized by using the [`OriginLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~OriginLineStyle.html) property of ChartAxis. The following code demonstrates how to apply style to origin line.
 
 {% tabs %}
 
@@ -2471,7 +2471,7 @@ chart.Series.Add(series);
 
 **Header Customization**
 
-Default appearance of the header can be customized using [`HeaderTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderTemplate.html) property. The following code sample demonstrates the header customization.
+The default appearance of header can be customized using the [`HeaderTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderTemplate.html) property. The following code sample demonstrates how to customize the header.
 
 {% tabs %}
 
