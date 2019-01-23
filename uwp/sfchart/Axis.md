@@ -40,7 +40,7 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Interval.html)</td><td>
+{{'[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Interval.html)'| markdownify }}</td><td>
 Gets or sets the double that represents the interval between the labels.</td></tr>
 <tr>
 <td>
