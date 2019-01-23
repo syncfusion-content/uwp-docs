@@ -2337,14 +2337,13 @@ The origin line of axis can be customized by using the [`OriginLineStyle`](https
 {% highlight c# %}
 
 NumericalAxis numericalAxis = new NumericalAxis()
-
-   {
+{
         
-        Origin = 3,
+    Origin = 3,
                 
-        ShowOrigin = true
+    ShowOrigin = true
         
-    };
+};
 
 Style style = new Style(typeof(Line));
 
