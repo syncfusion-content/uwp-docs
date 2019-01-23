@@ -783,13 +783,13 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 The following properties are used to customize the adornment label.
 
-* `BorderBrush`
-* `BorderThickness`
-* `Margin`
-* `FontStyle`
-* `FontSize`
-* `Foreground`
-* `FontFamily`
+* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderBrush.html)
+* [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderThickness.html)
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Margin.html)
+* [`FontStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontStyle.html)
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontSize.html)
+* [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Foreground.html)
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontFamily.html)
 
 The following code example demonstrates the customization of label using the above properties:
 
