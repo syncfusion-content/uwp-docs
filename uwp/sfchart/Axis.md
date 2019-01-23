@@ -2131,6 +2131,8 @@ The [`ShowAxisNextToOrigin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncf
 
 {% endhighlight %}
 
+{% highlight c# %}
+
 chart.SecondaryAxis = new NumericalAxis()
 {
 
@@ -2140,7 +2142,9 @@ chart.SecondaryAxis = new NumericalAxis()
     
 };
 
-{% highlight c# %}
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Moving the axis line to the specified origin value support in UWP Chart](Axis_images/ShowAxisNextToOrigin.png)
 
