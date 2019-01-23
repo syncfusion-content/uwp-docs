@@ -1752,7 +1752,7 @@ chart.Series.Add(series);
 
 ### Drag Cancel using KeyModifiers
 
-While you are dragging you can set the KeyModifiers to cancel the drag by setting [`DragCancelKeyModifier`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragCancelKeyModifiers.html) property as in the below code snippet.
+While you are dragging you can set the [`KeyModifiers`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~KeyModifiers.html) to cancel the drag by setting [`DragCancelKeyModifier`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~DragCancelKeyModifiers.html) property as in the below code snippet.
 
 {% tabs %}
 
