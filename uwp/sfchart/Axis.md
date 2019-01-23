@@ -1339,7 +1339,7 @@ When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.S
 
 ### Applying padding to the axis
 
-The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PlotOffset.html) property is used to provide padding to the axis. The following code sample demonstrates the padding applied to both x and y axes.
+The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PlotOffset.html) property is used to provide padding to the axis. The following code sample demonstrates the padding applied to both x and y-axes.
 
 {% tabs %}
 
@@ -2111,7 +2111,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Origin Customization
 
-SfChart allows you to customize the origin. By default the axis will be rendered having (0,0) as origin in x and y axes.
+SfChart allows you to customize the origin. By default the axis will be rendered with(0,0) as origin in x and y-axes.
 
 ### ShowAxisNextToOrigin
 
