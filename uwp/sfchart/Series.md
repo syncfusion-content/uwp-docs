@@ -94,6 +94,52 @@ BarSeries series = new BarSeries()
 
 ![Bar chart type in UWP](Series_images/bar.png)
 
+**SegmentSpacing**
+
+The [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property sets spacing among the segments when multiple series are added to the chart. Its value ranges from 0 to 1. The following code demonstrates how to use the SegmentSpacing property in series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Item" YBindingPath="Price" SegmentSpacing="0.6">
+          
+</syncfusion:ColumnSeries>
+
+<syncfusion:ColumnSeries ItemsSource="{Binding Data1}" XBindingPath="Item" YBindingPath="Price" SegmentSpacing="0.6">
+             
+</syncfusion:ColumnSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+ColumnSeries series1 = new ColumnSeries()
+{
+
+    SegmentSpacing = 0.6,
+
+};
+
+chart.Series.Add(series1);
+
+ColumnSeries series2 = new ColumnSeries()
+{
+
+    SegmentSpacing = 0.6
+
+};
+
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Colum SegmentSpacing support in UWP Chart](Series_images/SegmentSpacing.png)
+
 ## Line and Spline Charts
 
 ### Line
@@ -217,6 +263,96 @@ chart.Series.Add(series2);
 
 ![Spline chart type in UWP](Series_images/spline.png)
 
+**Spline** **rendering** **types**
+
+The [`SplineType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
+
+The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html):
+
+* Natural
+* Monotonic
+* Cardinal
+* Clamped
+
+By default, the value of SplineType is [`Natural`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+
+**Cardinal**
+
+The following code demonstrates how to set the value of SplineType to [`Cardinal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineSeries SplineType="Cardinal">
+
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries();
+
+series.SplineType = SplineType.Cardinal;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Cardinal spline support in UWP Chart](Series_images/Cardinal.png)
+
+**Monotonic**
+
+The following code demonstrates how to set the value of SplineType to [`Monotonic`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineSeries SplineType="Monotonic">
+
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries();
+
+series.SplineType = SplineType.Monotonic;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Monotonic spline support in UWP Chart](Series_images/Monotonic.png)
+
+**Clamped**
+
+The following code demonstrates how to set the value of SplineType to [`Clamped`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineSeries SplineType="Clamped">
+
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries();
+
+series.SplineType = SplineType.Clamped;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Clamped spline support in UWP Chart](Series_images/Clamped.png)
 
 ## Bubble and Scatter 
 
