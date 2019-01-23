@@ -110,7 +110,6 @@ The [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.
              
 </syncfusion:ColumnSeries>
 
-
 {% endhighlight %}
 
 {% highlight c# %}
@@ -118,7 +117,6 @@ The [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.
 SfChart chart = new SfChart();
 
 ColumnSeries series1 = new ColumnSeries()
-
 {
 
     SegmentSpacing = 0.6,
@@ -128,7 +126,6 @@ ColumnSeries series1 = new ColumnSeries()
 chart.Series.Add(series1);
 
 ColumnSeries series2 = new ColumnSeries()
-
 {
 
     SegmentSpacing = 0.6
