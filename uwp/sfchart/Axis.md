@@ -247,6 +247,221 @@ chart.Series.Add(series);
 
 ![CategoryAxis support in UWP Chart](Axis_images/Axis_img2.png)
 
+**IsIndexed**
+
+By default, [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) plots values based on the index of the data points. However, the CategoryAxis can be made to plot the data points based on its data by disabling the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) property of CategoryAxis, and it is shown in the following code example.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False"/>
+                
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+            
+};
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot illustrates the series with [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) value as False.
+
+![Plotting datapoints based on axis data in UWP Chart](Axis_images/IsIndexedDisabled.png)
+
+By default, the value of [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) property is true, and it is shown in following screenshot.
+
+![Plotting datapoints based on index in UWP Chart](Axis_images/IsIndexedEnabled.png)
+
+N>This feature is not applicable for Accumulation series, ErrorBarSeries, RadarSeries, and PolarSeries.
+
+**AggregateFunctions**
+
+When the [`IsIndexed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~IsIndexed.html) property of [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is disabled, the same index values(XValue) are grouped using the [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) property of the axis. The [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) property has the following types:
+
+* Average
+* Count
+* Max
+* Min
+* None
+* Sum
+
+The default value of AggregateFunctions is None.
+
+**Average**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Average`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Average"/>
+                
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Average
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Average.png)
+
+**Count**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Count`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Count"/>
+                
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Count
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Count.png)
+
+**Max**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Max`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Max"/>
+                
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Max
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Max.png)
+
+**Min**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Min`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Min"/>
+                
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Min
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Min.png)
+
+**Sum**
+
+The following code example demonstrates the axis with [`AggregateFunctions`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~AggregateFunctions.html) as [`Sum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AggregateFunctions.html).
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis IsIndexed="False" AggregateFunctions="Sum"/>
+                
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+                
+    IsIndexed = false,
+    
+    AggregateFunctions = AggregateFunctions.Sum
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Grouping of same datapoint index value in UWP Chart](Axis_images/AggregateFunctions_Sum.png)
 
 ## DateTimeAxis
 
@@ -1122,7 +1337,53 @@ When [`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.S
 
 ![DateTimeAxis range padding support in UWP Chart](Axis_images/Axis_img17.jpg)
 
+### Applying padding to the axis
 
+The [`PlotOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~PlotOffset.html) property is used to provide padding to the axis. The following code sample demonstrates the padding applied to both x and y-axes.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis  PlotOffset="30">
+
+</syncfusion:CategoryAxis>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis PlotOffset="30">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    PlotOffset = 30
+
+};
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    PlotOffset = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ PlotOffset support in UWP Chart](Axis_images/PlotOffset.png)
 
 ## Positioning axis labels
 
@@ -1429,7 +1690,36 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Axis edge label positioning support in UWP Chart](Axis_images/Axis_img25.png)
 
+### LabelExtent
 
+The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelExtent.html) property allows us to set the distance between the axis header and the axis label. The following code sample demonstrates the LabelExtent property.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.PrimaryAxis>
+<syncfusion:CategoryAxis Header="Items" LabelExtent="50"/>
+</syncfusion:SfChart.PrimaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis()
+{
+
+    Header = "Items",
+
+    LabelExtent = 50
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Label extent support in UWP Chart](Axis_images/LabelExtent.png)
 
 ## Smart Labels
 
@@ -1819,7 +2109,44 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Axis labels formatting support in UWP Chart](Axis_images/Axis_img31.png)
 
+## Origin Customization
 
+SfChart allows you to customize the origin. By default the axis will be rendered with(0,0) as origin in x and y-axes.
+
+### ShowAxisNextToOrigin
+
+The [`ShowAxisNextToOrigin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowAxisNextToOrigin.html) property is used to move the axis line to the origin value in [`Origin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~Origin.html) property based on x or y-axis. The following code example demonstrates how to shift the axis in the origin value in numerical axis.
+
+{% tabs %}
+
+{% highlight xml %}
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis Origin="3" ShowAxisNextToOrigin="True">
+
+</syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis()
+{
+
+    Origin = 3,
+
+    ShowAxisNextToOrigin = true 
+    
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Moving the axis line to the specified origin value support in UWP Chart](Axis_images/ShowAxisNextToOrigin.png)
 
 ## Styling Header and Labels
 
