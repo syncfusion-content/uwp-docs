@@ -1706,7 +1706,7 @@ The [`LabelExtent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfC
 
 {% highlight c# %}
 
-chart.PrimaryAxis = new NumericalAxis()
+chart.PrimaryAxis = new CategoryAxis()
 {
 
     Header = "Items",
