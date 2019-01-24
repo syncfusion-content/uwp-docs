@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with Data Validation of SfTextBoxExt control for UWP
+title: Data Validation of Syncfusion SfTextBoxExt control for UWP
 description: Explains about Data Validation of SfTextBoxExt control for UWP
 platform: UWP
 control: SfTextBoxExt

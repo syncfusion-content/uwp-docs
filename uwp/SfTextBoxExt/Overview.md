@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Overview of SfTextBoxExt control for UWP  
+title:  Overview of Syncfusion SfTextBoxExt control for UWP  
 description: This section provides an overview about the features in SfTextBoxExt control for UWP. 
 platform: uwp
 control: SfTextBoxExt

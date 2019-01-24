@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting watermark to prompt the user with some information
+title: Watermark support in Syncfusion SfTextBoxExt control
 description: Explains about setting WaterMark content to the SfTextBoxExt control.
 platform: uwp
 control: SfTextBoxExt

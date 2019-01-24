@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with AutoComplete functionality of SfTextBoxExt control
+title: AutoComplete functionality of Syncfusion SfTextBoxExt control
 description: Dealing with AutoComplete functionality of SfTextBoxExt control for UWP
 platform: uwp
 control: SfTextBoxExt

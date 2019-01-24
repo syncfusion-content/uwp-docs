@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Viewing Suggestions on SfTextBoxExt control focus
+title: Suggestions on focus in Syncfusion SfTextBoxExt control
 description: Viewing Suggestions on SfTextBoxExt control focus
 platform: uwp
 control: SfTextBoxExt

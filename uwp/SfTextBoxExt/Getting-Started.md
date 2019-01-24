@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with SfTextBoxExt control for UWP
+title: Getting Started with Syncfusion SfTextBoxExt control for UWP
 description: This section provides a quick tour to initial users on SfTextBoxExt control for UWP.
 platform: uwp
 control: SfTextBoxExt
