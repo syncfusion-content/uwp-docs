@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with AutoComplete functionality of SfTextBoxExt control for UWP
+title: Dealing with AutoComplete functionality of SfTextBoxExt control
 description: Dealing with AutoComplete functionality of SfTextBoxExt control for UWP
 platform: uwp
 control: SfTextBoxExt
