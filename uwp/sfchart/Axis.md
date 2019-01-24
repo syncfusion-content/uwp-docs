@@ -40,23 +40,23 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Interval.html)</td><td>
+{{'[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Interval.html)'| markdownify }}</td><td>
 Gets or sets the double that represents the interval between the labels.</td></tr>
 <tr>
 <td>
-[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Minimum.html)</td><td>
+{{'[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Minimum.html)'| markdownify }}</td><td>
 Gets or sets the double that represents the Minimum value for the Axis.</td></tr>
 <tr>
 <td>
-[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Maximum.html)</td><td>
+{{'[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~Maximum.html)'| markdownify }}</td><td>
 Gets or sets the double that represents the Maximum value for the Axis.</td></tr>
 <tr>
 <td>
-[`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html)</td><td>
+{{'[`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~RangePadding.html)'| markdownify }}</td><td>
 Gets or sets the NumericalPadding that specifies how to render the segments in chart area.</td></tr>
 <tr>
 <td>
-[`StartRangeFromZero`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~StartRangeFromZero.html)</td><td>
+{{'[`StartRangeFromZero`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis~StartRangeFromZero.html)'| markdownify }}</td><td>
 Gets or sets the bool that represents a value to enable start the range from zero. </td></tr>
 </table>
 
@@ -155,11 +155,11 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~Interval.html)</td><td>
+{{'[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~Interval.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the interval between the labels.</td></tr>
 <tr>
 <td>
-[`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html)</td><td>
+{{'[`LabelPlacement`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis~LabelPlacement.html)'| markdownify }}</td><td>
 Gets or sets the LabelPlacement that represents the position of the label in the axis.</td></tr>
 </table>
 
@@ -263,39 +263,39 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Minimum.html)</td><td>
+{{'[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Minimum.html)'| markdownify }}</td><td>
 Gets or sets the DateTime value that represents a minimum value of the Axis.</td></tr>
 <tr>
 <td>
-[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Maximum.html)</td><td>
+{{'[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Maximum.html)'| markdownify }}</td><td>
 Gets or sets the DateTime value that represents a maximum value of the Axis.</td></tr>
 <tr>
 <td>
-[`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html)</td><td>
+{{'[`RangePadding`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~RangePadding.html)'| markdownify }}</td><td>
 Gets or sets the DateTimeRangePadding value that specifies segment arrangement in the chart area.</td></tr>
 <tr>
 <td>
-[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Interval.html)</td><td>
+{{'[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~Interval.html)'| markdownify }}</td><td>
 Gets or sets the double value as the interval between labels.</td></tr>
 <tr>
 <td>
-[`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html)</td><td>
+{{'[`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~IntervalType.html)'| markdownify }}</td><td>
 Gets or sets the DateTimeIntervalType. It represents the type of the interval. This property is used to define the type of interval to be displayed and considered for plotting the series.</td></tr>
 <tr>
 <td>
-[`EnableBusinessHours`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~EnableBusinessHours.html)</td><td>
+{{'[`EnableBusinessHours`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~EnableBusinessHours.html)'| markdownify }}</td><td>
 Gets or sets the bool value that represents a value to enable business hours.</td></tr>
 <tr>
 <td>
-[`OpenTime`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~OpenTime.html)</td><td>
+{{'[`OpenTime`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~OpenTime.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the open working time of a day.</td></tr>
 <tr>
 <td>
-[`CloseTime`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~CloseTime.html)</td><td>
+{{'[`CloseTime`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~CloseTime.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the close working time of a day.</td></tr>
 <tr>
 <td>
-[`WorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~WorkingDays.html)</td><td>
+{{'[`WorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis~WorkingDays.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the working days of a week.</td></tr>
 </table>
 
@@ -440,11 +440,11 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis~Interval.html)</td><td>
+{{'[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis~Interval.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the interval between the labels.</td></tr>
 <tr>
 <td>
-[`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis~IntervalType.html)</td><td>
+{{'[`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis~IntervalType.html)'| markdownify }}</td><td>
 Gets or sets the DateTimeIntervalType that represents the type of the interval.</td></tr>
 </table>
 
@@ -548,15 +548,15 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Interval.html)</td><td>
+{{'[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Interval.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the interval between the labels.</td></tr>
 <tr>
 <td>
-[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Minimum.html)</td><td>
+{{'[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Minimum.html)'| markdownify }}</td><td>
 Gets or sets the timespan value that represents the minimum value for the Axis.</td></tr>
 <tr>
 <td>
-[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Maximum.html)</td><td>
+{{'[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis~Maximum.html)'| markdownify }}</td><td>
 Gets or sets the timespan value that represents the maximum value for the Axis. </td></tr>
 </table>
 
@@ -653,19 +653,19 @@ Property</th><th>
 Definition</th></tr>
 <tr>
 <td>
-[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Interval.html)</td><td>
+{{'[`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Interval.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the interval between the labels</td></tr>
 <tr>
 <td>
-[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Minimum.html)</td><td>
+{{'[`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Minimum.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the minimum value for the Axis.</td></tr>
 <tr>
 <td>
-[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Maximum.html)</td><td>
+{{'[`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~Maximum.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the maximum value of the Axis. </td></tr>
 <tr>
 <td>
-[`LogarithmicBase`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~LogarithmicBase.html)</td><td>
+{{'[`LogarithmicBase`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis~LogarithmicBase.html)'| markdownify }}</td><td>
 Gets or sets the double value that represents the logarithmic base value of the Axis.</td></tr>
 </table>
 
@@ -1835,11 +1835,11 @@ Definition</th></tr>
 <tr>
 <td>
 HeaderStyle</td><td>
-Gets or sets the style for the axis header. The header’s [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~Foreground.html), [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontSize.html) and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontFamily.html) are customized using this property.</td></tr>
+Gets or sets the style for the axis header. The header’s {{'[`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~Foreground.html), {{'[`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontSize.html)'| markdownify }} and {{'[`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontFamily.html)'| markdownify }} are customized using this property.</td></tr>
 <tr>
 <td>
 LabelStyle</td><td>
-Gets or sets the style for the axis labels. The label’s [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~Foreground.html), [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontSize.html) and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontFamily.html) are customized using this property.</td></tr>
+Gets or sets the style for the axis labels. The label’s {{'[`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~Foreground.html), {{'[`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontSize.html)'| markdownify }} and {{'[`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelStyle~FontFamily.html)'| markdownify }} are customized using this property.</td></tr>
 </table>
 
 {% tabs %}
