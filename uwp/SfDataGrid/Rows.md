@@ -156,7 +156,7 @@ Description
 </tr>
 <tr>
 <td>
-[FrozenRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FrozenRowsCount.html)
+{{'[FrozenRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FrozenRowsCount.html)'| markdownify }}
 </td>
 <td>
 Set the frozen rows count at top of the SfDataGrid.
@@ -164,7 +164,7 @@ Set the frozen rows count at top of the SfDataGrid.
 </tr>
 <tr>
 <td>
-[FooterRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterRowsCount.html)
+{{'[FooterRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterRowsCount.html)'| markdownify }}
 </td>
 <td>
 Set the footer rows count at bottom of the SfDataGrid.
@@ -172,7 +172,7 @@ Set the footer rows count at bottom of the SfDataGrid.
 </tr>
 <tr>
 <td>
-[FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html)
+{{'[FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html)'| markdownify }}
 </td>
 <td>
 Set the frozen columns count in left side of the SfDataGrid. 
@@ -180,7 +180,7 @@ Set the frozen columns count in left side of the SfDataGrid.
 </tr>
 <tr>
 <td>
-[FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html)
+{{'[FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html)'| markdownify }}
 </td>
 <td>
 Set the frozen columns in right side of the SfDataGrid.
@@ -350,6 +350,8 @@ private void DataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEven
 1. When using `DetailsView` with freeze panes, exception will be raised like “DetailsView is not supported with Freeze panes support”.
 
 2. When `AllowFrozenGroupHeaders` is `true`, frozen rows will not be considered.
+
+3. SfDataGrid is supported only for freezing as number of rows in top and number of rows in bottom and it cannot be frozen with specific rows.
 
 N> 
 

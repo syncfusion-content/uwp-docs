@@ -838,6 +838,10 @@ You can freeze the columns in view at the left and right side like in excel by s
 
 ![Freezing Columns ](Columns_images/Columns_img6.png)
 
+### Limitations
+
+1. SfDataGrid is supported only for freezing as number of columns in left and number of columns in right and it cannot be frozen with specific column.
+
 ## Stacked Headers
 
 SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedHeaderRows.html). You can group one or more columns under each stacked header.
