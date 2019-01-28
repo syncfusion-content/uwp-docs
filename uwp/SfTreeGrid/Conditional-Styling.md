@@ -49,39 +49,34 @@ It affects scrolling performance while styling more number of columns based on n
 </tr>
 </table>
 
-# Cells
+## Cells
 
-## Style cells using converter
+### Style cells using converter
 
 The record cells ([TreeGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally by changing its property value based on cell value or data object using converter.
 
 Here, grid cell background is changed using converter, where converter returns the value based on ID property of underlying record.
 
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight xaml %}
 xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
-&lt;Page.Resources&gt;
-   &lt;local:StyleConverter x:Key="converter"/&gt;
-&lt;/Page.Resources&gt;
-&lt;syncfusion:TreeGridTextColumn MappingName="Id" TextAlignment="Left" &gt;
-         &lt;syncfusion:TreeGridTextColumn.CellStyle&gt;
-                &lt;Style TargetType="syncfusion:TreeGridCell"&gt;
-                     &lt;Setter Property="utils:SetterValueBindingHelper.PropertyBinding"&gt;
-                          &lt;Setter.Value&gt;
-                                    &lt;utils:SetterValueBindingHelper Property="Background" Binding="{Binding Id,Converter={StaticResource converter}}"/&gt;
-                          &lt;/Setter.Value&gt;
-                      &lt;/Setter&gt;
-                &lt;/Style&gt;
-        &lt;/syncfusion:TreeGridTextColumn.CellStyle&gt;
-&lt;/syncfusion:TreeGridTextColumn&gt;
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
+<Page.Resources>;
+   <local:StyleConverter x:Key="converter"/>
+</Page.Resources>
+<syncfusion:TreeGridTextColumn MappingName="Id" TextAlignment="Left">
+         <syncfusion:TreeGridTextColumn.CellStyle>
+                <Style TargetType="syncfusion:TreeGridCell>
+                     <Setter Property="utils:SetterValueBindingHelper.PropertyBinding>
+                          <Setter.Value>
+                                    <utils:SetterValueBindingHelper Property="Background" Binding="{Binding Id,Converter={StaticResource converter}}">
+                          <Setter.Value>
+                      </Setter>
+                </Style&gt;
+        <syncfusion:TreeGridTextColumn.CellStyle>
+<syncfusion:TreeGridTextColumn>
+{% endhighlight %}
+{% highlight c# %}
 internal class StyleConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)
@@ -100,36 +95,30 @@ internal class StyleConverter : IValueConverter
         throw new NotImplementedException();
     }
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![Styling cells using converter in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img1.jpeg)
 
-## Style cells based on record using converter
+### Style cells based on record using converter
 
 You can also style the cells based on record instead of passing single property to converter, where converter returns the value based on underlying record. This can be assigned to GridColumn.CellStyle to style the column based on other column properties.
 
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight xaml %}
 xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
-&lt;Page.Resources&gt;
-  &lt;local:StyleConverter x:Key="converter"/&gt;
-    &lt;Style TargetType="syncfusion:TreeGridCell"&gt;
-        &lt;Setter Property="utils:SetterValueBindingHelper.PropertyBinding"&gt;
-            &lt;Setter.Value&gt;
-                &lt;utils:SetterValueBindingHelper Property="Background" Binding="{Binding Converter={StaticResource converter}}"/&gt;
-            &lt;/Setter.Value&gt;
-        &lt;/Setter&gt;
-   &lt;/Style&gt;
-&lt;/Page.Resources&gt;
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
+<Page.Resources>
+  <local:StyleConverter x:Key="converter"/>
+    <Style TargetType="syncfusion:TreeGridCell">
+        <Setter Property="utils:SetterValueBindingHelper.PropertyBinding">
+            <Setter.Value>
+                <utils:SetterValueBindingHelper Property="Background" Binding="{Binding Converter={StaticResource converter}}"/>
+            </Setter.Value>
+        </Setter>
+   </Style>
+</Page.Resources>
+{% endhighlight %}
+{% highlight c# %}
 internal class StyleConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, string language)
@@ -148,33 +137,27 @@ internal class StyleConverter : IValueConverter
             throw new NotImplementedException();
         }
    }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![Styling cells based on record in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img2.jpeg)
 
-## Style cells using style selector
+### Style cells using style selector
 
 The record cells ([TreeGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally based on data by setting [SfTreeGrid.CellStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellStyleSelectorProperty.html)property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellStyleSelectorProperty.html)property and you can get the container as TreeGridCell in the StyleSelector.
 
-<table>
-<tr>
-<td>
-&lt;Application.Resources&gt;
-       &lt;Style x:Key="redCellStyle" TargetType="syncfusion:TreeGridCell"&gt;
-            &lt;Setter Property="Foreground" Value="Red" /&gt;
-        &lt;/Style&gt;
-        &lt;Style x:Key="blueCellStyle" TargetType="syncfusion:TreeGridCell"&gt;
-            &lt;Setter Property="Foreground" Value="DarkBlue" /&gt;
-        &lt;/Style&gt;
-&lt;/Application.Resources&gt;
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight xaml %}
+<Application.Resources>
+       <Style x:Key="redCellStyle" TargetType="syncfusion:TreeGridCell">
+            <Setter Property="Foreground" Value="Red" />
+        </Style>
+        <Style x:Key="blueCellStyle" TargetType="syncfusion:TreeGridCell">
+            <Setter Property="Foreground" Value="DarkBlue" />
+        </Style>
+</Application.Resources>
+{% endhighlight %}
+{% highlight c# %}
 public class SelectorClass : StyleSelector
 {
     protected override Style SelectStyleCore(object item, DependencyObject container)
@@ -190,37 +173,31 @@ public class SelectorClass : StyleSelector
         return base.SelectStyleCore(item, container);
     }
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![Styling cells using style selector in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img3.jpeg)
 
-## Add image to cell
+### Add image to cell
 
 You can add image to cell by using TreeGridTemplateColumn,
 
-<table>
-<tr>
-<td>
-&lt;syncfusion:TreeGridTemplateColumn HeaderText="Country" MappingName="ImageLink"&gt;
-       &lt;syncfusion:TreeGridTemplateColumn.CellTemplate&gt;
-            &lt;DataTemplate&gt;
-                   &lt;Grid&gt;
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:TreeGridTemplateColumn HeaderText="Country" MappingName="ImageLink">
+       <syncfusion:TreeGridTemplateColumn.CellTemplate>
+            <DataTemplate>
+                   <Grid>
                       <Image Width="30"
                              Height="20"
                              Source="{Binding ImageLink,
                                                         Converter={StaticResource converter}}" />
-                   &lt;/Grid&gt;
-           &lt;/DataTemplate&gt;
-     &lt;/syncfusion:TreeGridTemplateColumn.CellTemplate&gt;
- &lt;/syncfusion:TreeGridTemplateColumn&gt;
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
+                   </Grid>
+           </DataTemplate>
+     </syncfusion:TreeGridTemplateColumn.CellTemplate>
+ </syncfusion:TreeGridTemplateColumn>
+{% endhighlight %}
+{% highlight c# %}
 public object Convert(object value, Type targetType, object parameter, string language)
 {
     string imageName = value.ToString();
@@ -247,40 +224,34 @@ public object ConvertBack(object value, Type targetType, object parameter, strin
 {
     throw new NotImplementedException();
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![Adding images in a cell in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img4.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-load-images-in-a-cell-in-wpf-and-uwp-treegrid/tree/master/UWP).
 
-# Rows
+## Rows
 
-## Style rows using converter
+### Style rows using converter
 
 The record rows ([TreeGridRowControl ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter, where converter returns the value based on underlying record.
 
-<table>
-<tr>
-<td>
-&lt;Page.Resources&gt;
-        &lt;local:StyleConverter x:Key="converter"/&gt;
+{% tabs %}
+{% highlight xaml %}
+<Page.Resources>
+        <local:StyleConverter x:Key="converter"/>
 
-        &lt;Style TargetType="syncfusion:TreeGridRowControl"&gt;
-            &lt;Setter Property="utils:SetterValueBindingHelper.PropertyBinding"&gt;
-                &lt;Setter.Value&gt;
-                    &lt;utils:SetterValueBindingHelper Property="Background" Binding="{Binding Converter={StaticResource converter}}"/&gt;
-                &lt;/Setter.Value&gt;
-            &lt;/Setter&gt;
-        &lt;/Style&gt;
-&lt;/Page.Resources&gt;
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
+        <Style TargetType="syncfusion:TreeGridRowControl">
+            <Setter Property="utils:SetterValueBindingHelper.PropertyBinding">
+                <Setter.Value>
+                    <utils:SetterValueBindingHelper Property="Background" Binding="{Binding Converter={StaticResource converter}}"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+</Page.Resources>
+{% endhighlight %}
+{% highlight c# %}
 internal class StyleConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)
@@ -299,34 +270,28 @@ internal class StyleConverter : IValueConverter
         throw new NotImplementedException();
     }
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![Styling rows using converter in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
 
-## Style rows using style selector
+### Style rows using style selector
 
 The record rows ([TreeGridRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally based on data by setting [SfTreeGrid.RowStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowStyleSelectorProperty.html)property and you can get the container as TreeGridRowControl in StyleSelector.
 
-<table>
-<tr>
-<td>
-&lt;Application.Resources&gt;
-        &lt;local:SelectorClass x:Key="rowStyleSelector" /&gt;
-        &lt;Style x:Key="rowStyle1" TargetType="syncfusion:TreeGridRowControl"&gt;
-            &lt;Setter Property="Background" Value="Red" /&gt;
-        &lt;/Style&gt;
-        &lt;Style x:Key="rowStyle2" TargetType="syncfusion:TreeGridRowControl"&gt;
-            &lt;Setter Property="Background" Value="DarkBlue" /&gt;
-        &lt;/Style&gt;
-&lt;/Application.Resources&gt;
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight xaml %}
+<Application.Resources>
+        <local:SelectorClass x:Key="rowStyleSelector" />
+        <Style x:Key="rowStyle1" TargetType="syncfusion:TreeGridRowControl">
+            <Setter Property="Background" Value="Red" />
+        </Style>
+        <Style x:Key="rowStyle2" TargetType="syncfusion:TreeGridRowControl">
+            <Setter Property="Background" Value="DarkBlue" />
+        </Style>
+</Application.Resources>
+{% endhighlight %}
+{% highlight c# %}
 public class SelectorClass : StyleSelector
 {
     protected override Style SelectStyleCore(object item, DependencyObject container)
@@ -339,31 +304,25 @@ public class SelectorClass : StyleSelector
         return base.SelectStyleCore(item, container);
     }
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![Styling rows using style selector in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img6.jpeg)
 
-# Row Header
+## Row Header
 
 The appearance of row header ([TreeGridRowHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter,where converter returns the value based on Underlying record.
 
-<table>
-<tr>
-<td>
-&lt;syncfusion:ChromelessWindow.Resources&gt;
-        &lt;local:StyleConverter x:Key="converter"/&gt;
-        &lt;Style TargetType="syncfusion:TreeGridRowHeaderCell"&gt;
-            &lt;Setter Property="Background" Value="{Binding Converter={StaticResource converter}}" /&gt;
-        &lt;/Style&gt;
-&lt;/syncfusion:ChromelessWindow.Resources&gt;
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:ChromelessWindow.Resources>
+        <local:StyleConverter x:Key="converter"/>
+        <Style TargetType="syncfusion:TreeGridRowHeaderCell">
+            <Setter Property="Background" Value="{Binding Converter={StaticResource converter}}" />
+        </Style>
+</syncfusion:ChromelessWindow.Resources>
+{% endhighlight %}
+{% highlight c# %}
 internal class StyleConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)
@@ -380,9 +339,8 @@ internal class StyleConverter : IValueConverter
         throw new NotImplementedException();
     }
 }
-</td>
-</tr>
-</table>
+{% endhighlight %}
+{% endtabs %}
 
 ![Styling row header in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img7.jpeg)
 

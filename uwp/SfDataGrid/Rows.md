@@ -38,7 +38,7 @@ dataGrid.ShowRowHeader = true;
 {% endtabs %}
 
 
-![](Rows_images/Rows_img1.png)
+![RowHeader in SfDataGrid](Rows_images/Rows_img1.png)
 
 You can change the width of row header by setting `SfDataGrid.RowHeaderWidth` property.
 
@@ -106,7 +106,7 @@ See also.
 
 Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![](Rows_images/Rows_img7.png)
+![Show the column header in Header row](Rows_images/Rows_img7.png)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
 
@@ -139,7 +139,7 @@ You can also hide the header row of DetailsViewDataGrid by setting `HeaderRowHei
 {% endtabs %}
 
 
-![](Rows_images/Rows_img8.png)
+![Hiding the row header in details view datagrid](Rows_images/Rows_img8.png)
 
 ## Freeze panes
 
@@ -156,7 +156,7 @@ Description
 </tr>
 <tr>
 <td>
-[FrozenRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FrozenRowsCount.html)
+{{'[FrozenRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FrozenRowsCount.html)'| markdownify }}
 </td>
 <td>
 Set the frozen rows count at top of the SfDataGrid.
@@ -164,7 +164,7 @@ Set the frozen rows count at top of the SfDataGrid.
 </tr>
 <tr>
 <td>
-[FooterRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterRowsCount.html)
+{{'[FooterRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterRowsCount.html)'| markdownify }}
 </td>
 <td>
 Set the footer rows count at bottom of the SfDataGrid.
@@ -172,7 +172,7 @@ Set the footer rows count at bottom of the SfDataGrid.
 </tr>
 <tr>
 <td>
-[FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html)
+{{'[FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html)'| markdownify }}
 </td>
 <td>
 Set the frozen columns count in left side of the SfDataGrid. 
@@ -180,7 +180,7 @@ Set the frozen columns count in left side of the SfDataGrid.
 </tr>
 <tr>
 <td>
-[FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html)
+{{'[FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html)'| markdownify }}
 </td>
 <td>
 Set the frozen columns in right side of the SfDataGrid.
@@ -207,7 +207,7 @@ dataGrid.FrozenRowsCount = 3;
 {% endtabs %}
 
 
-![](Rows_images/Rows_img9.png)
+![Show the Fotter column, Footer rows, Frozen column , Frozen rows in SfDataGrid](Rows_images/Rows_img9.png)
 
 ### Differentiate frozen rows from normal rows
 
@@ -307,7 +307,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 {% endtabs %}
 
 
-![](Rows_images/Rows_img10.png)
+![Show the differentiation of Frozen Rows and Fotter Rows from normal rows](Rows_images/Rows_img10.png)
 
 ### Disable drag and drop between frozen and non-frozen columns
 
@@ -350,6 +350,8 @@ private void DataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEven
 1. When using `DetailsView` with freeze panes, exception will be raised like “DetailsView is not supported with Freeze panes support”.
 
 2. When `AllowFrozenGroupHeaders` is `true`, frozen rows will not be considered.
+
+3. SfDataGrid has support to freeze the number of rows from top or bottom. There is no support to freeze a specific row.
 
 N> 
 
