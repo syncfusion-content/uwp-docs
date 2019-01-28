@@ -49,9 +49,9 @@ It affects scrolling performance while styling more number of columns based on n
 </tr>
 </table>
 
-# Cells
+## Cells
 
-## Style cells using converter
+### Style cells using converter
 
 The record cells ([TreeGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally by changing its property value based on cell value or data object using converter.
 
@@ -100,7 +100,7 @@ internal class StyleConverter : IValueConverter
 
 ![Styling cells using converter in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img1.jpeg)
 
-## Style cells based on record using converter
+### Style cells based on record using converter
 
 You can also style the cells based on record instead of passing single property to converter, where converter returns the value based on underlying record. This can be assigned to GridColumn.CellStyle to style the column based on other column properties.
 
@@ -142,7 +142,7 @@ internal class StyleConverter : IValueConverter
 
 ![Styling cells based on record in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img2.jpeg)
 
-## Style cells using style selector
+### Style cells using style selector
 
 The record cells ([TreeGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally based on data by setting [SfTreeGrid.CellStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellStyleSelectorProperty.html)property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellStyleSelectorProperty.html)property and you can get the container as TreeGridCell in the StyleSelector.
 
@@ -178,7 +178,7 @@ public class SelectorClass : StyleSelector
 
 ![Styling cells using style selector in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img3.jpeg)
 
-## Add image to cell
+### Add image to cell
 
 You can add image to cell by using TreeGridTemplateColumn,
 
@@ -231,9 +231,9 @@ public object ConvertBack(object value, Type targetType, object parameter, strin
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-load-images-in-a-cell-in-wpf-and-uwp-treegrid/tree/master/UWP).
 
-# Rows
+## Rows
 
-## Style rows using converter
+### Style rows using converter
 
 The record rows ([TreeGridRowControl ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter, where converter returns the value based on underlying record.
 
@@ -275,7 +275,7 @@ internal class StyleConverter : IValueConverter
 
 ![Styling rows using converter in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
 
-## Style rows using style selector
+### Style rows using style selector
 
 The record rows ([TreeGridRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally based on data by setting [SfTreeGrid.RowStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowStyleSelectorProperty.html)property and you can get the container as TreeGridRowControl in StyleSelector.
 
@@ -309,7 +309,7 @@ public class SelectorClass : StyleSelector
 
 ![Styling rows using style selector in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img6.jpeg)
 
-# Row Header
+## Row Header
 
 The appearance of row header ([TreeGridRowHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter,where converter returns the value based on Underlying record.
 
