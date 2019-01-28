@@ -38,7 +38,7 @@ dataGrid.ShowRowHeader = true;
 {% endtabs %}
 
 
-![RowHeader in DataGrid UWP](Rows_images/Rows_img1.png)
+![RowHeader in SfDataGrid](Rows_images/Rows_img1.png)
 
 You can change the width of row header by setting `SfDataGrid.RowHeaderWidth` property.
 
@@ -106,7 +106,7 @@ See also.
 
 Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Show the column Header in Header row](Rows_images/Rows_img7.png)
+![Show the column header in Header row](Rows_images/Rows_img7.png)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
 
@@ -207,7 +207,7 @@ dataGrid.FrozenRowsCount = 3;
 {% endtabs %}
 
 
-![Show the Fotter column, Footer rows, Frozen column , Frozen rows in DataGrid UWP](Rows_images/Rows_img9.png)
+![Show the Fotter column, Footer rows, Frozen column , Frozen rows in SfDataGrid](Rows_images/Rows_img9.png)
 
 ### Differentiate frozen rows from normal rows
 
