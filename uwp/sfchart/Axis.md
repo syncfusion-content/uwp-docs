@@ -2683,7 +2683,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### Ticklines
 
-Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line.
+Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line using [`TickLinesPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~TickLinesPosition.html) and [`SmallTickLinesPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeAxisBase~SmallTickLinesPosition.html) property. The size of major and minor ticklines can be set using [`TickLineSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~TickLineSize.html) and [`SmallTickLineSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeAxisBase~SmallTickLineSize.html) property.
 
 The following code example and screenshot illustrate major and small ticklines set to [`Inside`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisElementPosition.html).
 
