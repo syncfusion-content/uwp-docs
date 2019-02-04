@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Draw shapes, selection rectangles, or Pan Diagram, when you click and drag over the Digram surface.
+title: Override default behavior, when you are interacing on Digram surface.
 description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
 platform: uwp
 control: SfDiagram

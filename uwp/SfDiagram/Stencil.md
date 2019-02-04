@@ -37,7 +37,7 @@ Properties Table
 
 Symbol is used to implement the ISymbol interface. The ISymbol interface consists of two properties to visualize symbols in Stencil:
 
-#### Symbol and SymbolTemplate
+### Symbol and SymbolTemplate
 
 {% tabs %}
 {% highlight C# %}
@@ -70,7 +70,7 @@ public class SymbolItem : ISymbol
 {% endhighlight %}
 {% endtabs %}
 
-#### Symbol Filter
+### Symbol Filter
 
 {% tabs %}
 {% highlight C# %}
@@ -281,11 +281,11 @@ There can be multiple SymbolFilters, but only one filter can be selected at a ti
 
 SfDiagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.
 
-#### Use Case Scenario
+### Use Case Scenario
 
 This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the SfDiagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
 
-#### Enabling preview
+### Enabling preview
 
 To enable preview for the dragged item from Stencil, set the Constraints property of Stencil to ShowPreview. To disable preview, remove ShowPreview from Constraints property. By default, preview for drag and drop is enabled.
 
@@ -305,15 +305,15 @@ stencil.Constraints = stencil.Constraints & ~StencilConstraints.ShowPreview;
 
 Here, Stencil is an instance of Stencil.
 
-#### Preview of the dragging Symbol
+### Preview of the dragging Symbol
 
 ![Stencil](Stencil_images/Stencil_img14.jpeg)"
 
-#### Dragged Symbol
+### Dragged Symbol
 
 ![Stencil](Stencil_images/Stencil_img15.jpeg)"
 
-#### Customization of Preview for Drag and Drop
+### Customization of Preview for Drag and Drop
 
 You can customize the preview content by overriding the PrepareDragDropPreview method of the Stencil feature. The following code example illustrates how to customize preview content.
 
@@ -348,12 +348,12 @@ Stencil declares number of events that can be invoked by the user or by the syst
 
 Following table describes stencil related events.
 
-| Event | Event Arguments | Description |
+| Event | Event Handler | Description |
 |---|---|---|
-| ExpandEvent | [StencilExpandCollapseEventArgs](/uwp/sfdiagram/Stencil#StencilExpandCollapseEventArgs "StencilExpandCollapseEventArgs") | Occurs when expand the symbol group in the Stencil. |
-| CollpaseEvent | [StencilExpandCollapseEventArgs](/uwp/sfdiagram/Stencil#StencilExpandCollapseEventArgs "StencilExpandCollapseEventArgs") | Occurs when collapse the symbol group in the Stencil. |
+| ExpandEvent | [SymbolGroupExpandEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandEventHandler.html "SymbolGroupExpandEventHandler") | Occurs when expand the symbol group in the Stencil. |
+| CollpaseEvent | [SymbolGroupCollapseEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupCollapseEventHandler.html "SymbolGroupCollapseEventHandler") | Occurs when collapse the symbol group in the Stencil. |
 
-# StencilExpandCollapseEventArgs
+### StencilExpandCollapseEventArgs
 
 Following table describes the details of the parameters for StencilExpandCollapseEventArgs.
 

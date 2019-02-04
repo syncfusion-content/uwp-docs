@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create custom connection points to draw connections with any specific point of Node.
+title: Draw connections with any specific point of Node using Ports.
 description: How to draw connections with specific points of Node?
 platform: uwp
 control: SfDiagram
@@ -130,7 +130,7 @@ port.Constraints |= PortConstraints.Dynamic;
 
 {% endhighlight %}
 
-To know more about bitwise operators, refer to [Bitwise Operations](/wpf/sfdiagram/Constraints#bitwise-operations).
+To know more about bitwise operators, refer to [Bitwise Operations](/uwp/sfdiagram/constraints#bitwise-operations).
 
 ![](Port_images/Port_img9.jpeg)
 
@@ -220,7 +220,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 ## Connect with ports
 
-Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. For more information about creating connections with port, refer to [Connections with Ports](/uwp/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
+Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. For more information about creating connections with port, refer to [Connections with Ports](/uwp/sfdiagram/connector#connections-with-ports "Connections with Ports").
 
 ##Appearance
 
@@ -285,4 +285,4 @@ The following code illustrates how to change the appearance of port.
 
 ## Constraints
 
-The Constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/uwp/sfdiagram/Constraints#port-constraints "Port Constraints").
+The Constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/uwp/sfdiagram/constraints#port-constraints "Port Constraints").

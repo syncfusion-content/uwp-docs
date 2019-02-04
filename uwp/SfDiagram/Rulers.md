@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ruler is used to measure the distance of nodes and connectors from origin of the page. 
+title: Ruler represents position of objects from origin of the page.
 description: how to measure the distance of Nodes and Connectors? 
 platform: uwp
 control: SfDiagram

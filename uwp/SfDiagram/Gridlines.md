@@ -36,7 +36,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 ![](Gridlines_images/Gridlines_img1.jpeg)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/uwp/sfdiagram/Constraints#snap-constraints "SnapConstraints").
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/uwp/sfdiagram/constraints#snap-constraints "SnapConstraints").
 
 ## Appearance
 
@@ -178,9 +178,9 @@ public class Intervals : List<double>
 
 ![](Gridlines_images/Gridlines_img3.jpeg)
 
-# Snapping
+## Snapping
 
-## Snap To Lines
+### Snap To Lines
 
 This feature allows the Diagram objects to snap to the nearest interaction of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
@@ -193,9 +193,9 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
 
 {% endhighlight %}
 
-To enable/disable snapping to horizontal/vertical lines, refer to [SnapConstraints](/uwp/sfdiagram/Constraints#snap-constraints "SnapConstraints").
+To enable/disable snapping to horizontal/vertical lines, refer to [SnapConstraints](/uwp/sfdiagram/constraints#snap-constraints "SnapConstraints").
 
-## Snap To Objects
+### Snap To Objects
 
 The snap-to-object provides visual cues to assist with aligning and spacing Diagram. A Node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as smart guides.
 
