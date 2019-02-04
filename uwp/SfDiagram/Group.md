@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Group two or more relevant objects.
+title: Group two or more relevant objects | Syncfusion.
 description: How to group two or more nodes and connectors?
 platform: uwp
 control: SfDiagram

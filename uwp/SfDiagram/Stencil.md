@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Define and add the frequently used Nodes/Connectors to the Stencil.
+title: Define reusable Nodes/Connectors to the Stencil | Syncfusion.
 description: How to add Symbol to the Stencil and drag and drop them over the drawing area?
 platform: uwp
 control: SfDiagram

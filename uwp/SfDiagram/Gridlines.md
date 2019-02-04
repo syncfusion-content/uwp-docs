@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add gridlines behind nodes and connectors to ease alignments.
+title: Align with gridlines and objects | Syncfusion.
 description: How to add gridlines behind Nodes and Connectors?
 platform: uwp
 control: SfDiagram
@@ -34,7 +34,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 {% endhighlight %}
 
-![](Gridlines_images/Gridlines_img1.jpeg)
+![Gridlines](Gridlines_images/Gridlines_img1.jpeg)
 
 To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/uwp/sfdiagram/constraints#snap-constraints "SnapConstraints").
 
@@ -95,7 +95,7 @@ public class GridLineStyle : List<Style>
 
 {% endhighlight %}
 
-![](Gridlines_images/Gridlines_img2.jpeg)
+![Custom gridlines](Gridlines_images/Gridlines_img2.jpeg)
 
 ### Line Intervals
 
@@ -176,7 +176,7 @@ public class Intervals : List<double>
 
 {% endhighlight %}
 
-![](Gridlines_images/Gridlines_img3.jpeg)
+![Grid line intervals](Gridlines_images/Gridlines_img3.jpeg)
 
 ## Snapping
 

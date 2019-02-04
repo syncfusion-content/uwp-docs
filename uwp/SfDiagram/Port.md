@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Draw connections with any specific point of Node using Ports.
+title: Connect to a specific point of Node using Ports | Syncfusion.
 description: How to draw connections with specific points of Node?
 platform: uwp
 control: SfDiagram
@@ -11,15 +11,15 @@ documentation: ug
 
 Essential Diagram for UWP provides support to define custom ports for making connections.
 
-![](Port_images/Port_img1.jpeg)![](Port_images/Port_img2.jpeg)
+![Node Port](Port_images/Port_img1.jpeg)![Connector Port](Port_images/Port_img2.jpeg)
 
 When a Connector is connected between two Nodes, its end points are automatically docked to Node’s nearest boundary as shown in the following image.
 
-![](Port_images/Port_img3.jpeg)
+![Connect to node wihout port](Port_images/Port_img3.jpeg)
 
 Port act as the connection points of node and allows to create connections with only specific points as shown in the following image.
 
-![](Port_images/Port_img4.jpeg)![](Port_images/Port_img5.jpeg)
+![Connect to node with port](Port_images/Port_img4.jpeg)![Connector port](Port_images/Port_img5.jpeg)
 
 ## Node Port
 
@@ -113,7 +113,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 {% endhighlight %}
 
-![](Port_images/Port_img6.jpeg)
+![Add port](Port_images/Port_img6.jpeg)
 
 ## Connection to Boundary with Port
 
@@ -132,7 +132,7 @@ port.Constraints |= PortConstraints.Dynamic;
 
 To know more about bitwise operators, refer to [Bitwise Operations](/uwp/sfdiagram/constraints#bitwise-operations).
 
-![](Port_images/Port_img9.jpeg)
+![Dynamic port](Port_images/Port_img9.jpeg)
 
 ## Connector Port
 
@@ -216,7 +216,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 {% endhighlight %}
 
-![](Port_images/Port_img7.jpeg)
+![Connector port](Port_images/Port_img7.jpeg)
 
 ## Connect with ports
 
@@ -281,7 +281,7 @@ The following code illustrates how to change the appearance of port.
 
 {% endhighlight %}
 
-![](Port_images/Port_img8.jpeg)
+![Node port](Port_images/Port_img8.jpeg)
 
 ## Constraints
 
