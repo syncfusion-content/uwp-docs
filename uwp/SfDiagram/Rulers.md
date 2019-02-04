@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ruler is used to measure the distance of nodes and connectors from origin of the page. 
+title: Ruler represents position of objects from origin | Syncfusion
 description: how to measure the distance of Nodes and Connectors? 
 platform: uwp
 control: SfDiagram
@@ -22,7 +22,7 @@ diagramcontrol.VerticalRuler = new Ruler() { Orientation = Orientation.Vertical 
 
 {% endhighlight %}
 
-![](Rulers_images/Rulers_img1.jpeg)
+![Ruler](Rulers_images/Rulers_img1.jpeg)
 
 ## Customizing the Ruler
 
@@ -101,5 +101,5 @@ public class CustomTick : Tick
 
 {% endhighlight %}
 
-![](Rulers_images/Rulers_img2.jpeg)
+![Custom ruler](Rulers_images/Rulers_img2.jpeg)
 
