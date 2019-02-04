@@ -72,7 +72,7 @@ DiagramMenuItem mi = new DiagramMenuItem()
 
 {% endhighlight %}
 
-![](Context-Menu_images/Context-Menu_img3.jpeg)
+![Context menu for Node or Connector](Context-Menu_images/Context-Menu_img3.jpeg)
 
 You can be notified with events when you click the custom menu items. The following code example illustrates the how to define the event for custom context menu.
 
