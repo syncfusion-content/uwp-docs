@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Draw shapes, selection rectangles, or Pan Diagram, when you click and drag over the Digram surface.
+title: Override default iteraction behavior | Syncfusion
 description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
 platform: uwp
 control: SfDiagram
@@ -61,7 +61,7 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 {% endhighlight %}
 
-![](Tools_images/Tools_img1.jpeg)
+![Draw node using drawing tool](Tools_images/Tools_img1.jpeg)
 
 The following code example illustrates how to draw a path.
 
@@ -108,7 +108,7 @@ private void MainWindow_GetDrawType(object sender, DrawTypeEventArgs args)
 
 {% endhighlight %}
 
-![](Tools_images/Tools_img2.jpeg)
+![Draw start using drawing tool](Tools_images/Tools_img2.jpeg)
 
 ### Connectors
 
@@ -145,7 +145,7 @@ diagram.Tool = Tool.DrawOnce;
 
 {% endhighlight %}
 
-![](Tools_images/Tools_img3.jpg)
+![Connect nodes using drawing tool](Tools_images/Tools_img3.jpg)
 
 ### Text
 

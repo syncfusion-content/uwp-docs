@@ -518,5 +518,5 @@ To explore about arguments, please refer to [ChangedEventArgs](https://help.sync
 
 ## Constraints
 
-The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/Constraints#connector-constraints "Connector Constraints").
+The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/constraints#connector-constraints "Connector Constraints").
 

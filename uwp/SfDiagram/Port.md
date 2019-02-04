@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create custom connection points to draw connections with any specific point of Node.
+title: Connect to a specific point of Node using Ports | Syncfusion.
 description: How to draw connections with specific points of Node?
 platform: uwp
 control: SfDiagram
@@ -11,15 +11,15 @@ documentation: ug
 
 Essential Diagram for UWP provides support to define custom ports for making connections.
 
-![](Port_images/Port_img1.jpeg)![](Port_images/Port_img2.jpeg)
+![Node Port](Port_images/Port_img1.jpeg)![Connector Port](Port_images/Port_img2.jpeg)
 
 When a Connector is connected between two Nodes, its end points are automatically docked to Node’s nearest boundary as shown in the following image.
 
-![](Port_images/Port_img3.jpeg)
+![Connect to node wihout port](Port_images/Port_img3.jpeg)
 
 Port act as the connection points of node and allows to create connections with only specific points as shown in the following image.
 
-![](Port_images/Port_img4.jpeg)![](Port_images/Port_img5.jpeg)
+![Connect to node with port](Port_images/Port_img4.jpeg)![Connector port](Port_images/Port_img5.jpeg)
 
 ## Node Port
 
@@ -113,7 +113,7 @@ public class PortCollection : ObservableCollection<IPort>
 
 {% endhighlight %}
 
-![](Port_images/Port_img6.jpeg)
+![Add port](Port_images/Port_img6.jpeg)
 
 ## Connection to Boundary with Port
 
@@ -130,9 +130,9 @@ port.Constraints |= PortConstraints.Dynamic;
 
 {% endhighlight %}
 
-To know more about bitwise operators, refer to [Bitwise Operations](/wpf/sfdiagram/Constraints#bitwise-operations).
+To know more about bitwise operators, refer to [Bitwise Operations](/uwp/sfdiagram/constraints#bitwise-operations).
 
-![](Port_images/Port_img9.jpeg)
+![Dynamic port](Port_images/Port_img9.jpeg)
 
 ## Connector Port
 
@@ -216,11 +216,11 @@ public class PortCollection : ObservableCollection<IPort>
 
 {% endhighlight %}
 
-![](Port_images/Port_img7.jpeg)
+![Connector port](Port_images/Port_img7.jpeg)
 
 ## Connect with ports
 
-Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. For more information about creating connections with port, refer to [Connections with Ports](/uwp/sfdiagram/Connector#Connections-with-Ports "Connections with Ports").
+Connector’s `SourcePort` and `TargetPort` properties allow to create connections between some specific points of Source/Target Nodes. For more information about creating connections with port, refer to [Connections with Ports](/uwp/sfdiagram/connector#connections-with-ports "Connections with Ports").
 
 ##Appearance
 
@@ -281,8 +281,8 @@ The following code illustrates how to change the appearance of port.
 
 {% endhighlight %}
 
-![](Port_images/Port_img8.jpeg)
+![Node port](Port_images/Port_img8.jpeg)
 
 ## Constraints
 
-The Constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/uwp/sfdiagram/Constraints#port-constraints "Port Constraints").
+The Constraints property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/uwp/sfdiagram/constraints#port-constraints "Port Constraints").
