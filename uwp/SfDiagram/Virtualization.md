@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virtualization enable faster rendering by loading only object in view
+title: Virtualization enable faster rendering | Syncfusion
 description: how to enable faster rendering in Diagram?
 platform: uwp
 control: SfDiagram
