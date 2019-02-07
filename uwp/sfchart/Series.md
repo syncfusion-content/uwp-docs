@@ -3081,6 +3081,224 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 ![Outlier template support for BoxAndWhiskerSeries in UWP chart](Series_images/OutlierTemplate.png)
 
+## Waterfall Series
+
+[`WaterfallSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles.
+
+The following code illustrates how to use the series in chart.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
+                      
+                       XBindingPath="Category" 
+                      
+                       YBindingPath="Value">
+
+</syncfusion:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ItemsSource = new ViewModel().RevenueDetails;
+
+waterfallSeries.XBindingPath = "Category";
+
+waterfallSeries.YBindingPath = "Value";
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Waterfall chart type in UWP](Series_images/WaterfallSeries.png)
+
+**SummaryBindingPath and SummarySegmentBrush**
+
+The [`SummaryBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummaryBindingPath.html) gets or sets the string value that indicates the sum of previous segments in series.
+
+The summary segment can be differentiated by applying the [`SummarySegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummarySegmentBrush.html) in series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
+                                  
+                                   XBindingPath="Category"
+                                  
+                                   YBindingPath="Value" Interior="Gray"
+                                  
+                                   SummaryBindingPath="IsSummary"
+                                  
+                                   SummarySegmentBrush="RoyalBlue">
+
+</syncfusion:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ItemsSource = new ViewModel().RevenueDetails;
+
+waterfallSeries.XBindingPath = "Category";
+
+waterfallSeries.YBindingPath = "Value";
+
+waterfallSeries.SummaryBindingPath = "IsSummary";
+
+waterfallSeries.SummarySegmentBrush = new SolidColorBrush(Colors.RoyalBlue);
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Summary segment customization for WaterfallSeries in UWP chart](Series_images/SummaryBinding.png)
+
+**NegativeSegmentBrush**
+
+The appearance of the negative segment can be changed by using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~NegativeSegmentBrush.html) property of series. The following code illustrates how to change the appearance of the negative segment.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries NegativeSegmentBrush="Red">
+
+</chart:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Highlighting negative segments of WaterfallSeries in chart UWP](Series_images/NegativeSegmentBrush.png)
+
+**AllowAutoSum**
+
+The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSum.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+
+The following code example illustrates how the AllowAutoSum property value can be set.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries AllowAutoSum="False"
+                       
+    SummaryBindingPath="IsSummary"
+                       
+    SummarySegmentBrush="RoyalBlue">
+ 
+</syncfusion:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.AllowAutoSum = false;
+
+waterfallSeries.SummaryBindingPath = "IsSummary";
+
+waterfallSeries.SummarySegmentBrush = new SolidColorBrush(Colors.RoyalBlue);
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Disable auto sum for waterfallSeries summary segments in UWP chart](Series_images/AllowAutoSum.png)
+
+**ConnectorLine**
+
+The connector line of series can be enabled or disabled by using its [`ShowConnector`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ShowConnector.html) line property. By default, the property value is true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries ShowConnector="False">
+
+</syncfusion:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ShowConnector = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Disable connector line for WaterfallSeries in UWP chart](Series_images/Connectorline_Disabled.png)
+
+**Connector line customization**
+
+The connector line can be customized by applying [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyle.html) property of the series. The following code example illustrates how to apply style for connector line.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries.ConnectorLineStyle>
+
+<Style TargetType="Line">
+
+<Setter Property="Stroke" Value="Red"/>
+
+<Setter Property="StrokeDashArray" Value="1"/>
+
+<Setter Property="StrokeThickness" Value="2"/>
+
+</Style>
+
+</syncfusion:WaterfallSeries.ConnectorLineStyle>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Style style = new Style(typeof(Line));
+
+style.Setters.Add(new Setter(Line.StrokeProperty, new SolidColorBrush(Colors.Red)));
+
+style.Setters.Add(new Setter(Line.StrokeDashArrayProperty, new DoubleCollection() { 1 }));
+
+style.Setters.Add(new Setter(Line.StrokeThicknessProperty, 2));
+
+WaterfallSeries series = new WaterfallSeries();
+
+series.ConnectorLineStyle = style;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Connector line customization for WaterfallSeries in UWP chart](Series_images/Connectorline_Customization.png)
+
 ## Fast Charts
 
 ### Fast Line
