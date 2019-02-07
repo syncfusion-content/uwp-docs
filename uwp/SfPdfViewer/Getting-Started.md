@@ -355,6 +355,61 @@ End Sub
 {% endhighlight %}
 {% endtabs %}
 
+## Supported input interactions
+
+The SfPdfViewerControl supports the following input interactions to be performed in the PDF document:
+
+* Mouse or Touch pad
+* Touch
+* Stylus or pen
+
+The following is the list of possible operations to be performed with the supported input interactions in the SfPdfViewerControl:
+
+<table>
+
+<tr>
+<th>Operations</th>
+<th>Mouse or Touch pad</th>
+<th>Touch</th>
+<th>Stylus or Pen</th>
+</tr>
+
+<tr>
+<td>Scrolling</td>
+<td>Supported</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+
+<tr>
+<td>Zooming</td>
+<td>Supported</td>
+<td>Supported</td>
+<td>Not supported</td>
+</tr>
+
+<tr>
+<td>Adding annotations</td>
+<td>Supported</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+
+<tr>
+<td>Moving and resizing the annotations</td>
+<td>Supported</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+
+<tr>
+<td>Editing the annotations</td>
+<td>Supported</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+
+</table>
 The following image shows the final SfPdfViewer with all the features being implemented.
 ![D:/UG/UWP/GettingStarted/CompleteImplementation.png](Getting-Started_images/Getting-Started_img2.jpeg)
 
