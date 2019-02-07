@@ -939,6 +939,89 @@ chart.Series.Add(series);
 
 ![Exploding all the segments of accumlation series in UWP Chart](Series_images/explodeall.png)
 
+**Stacked** **doughnut**
+
+Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~IsStackedDoughnut.html) property. The following properties are used to customize the stacked doughnut chart:
+
+*	[`CapStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CapStyle.html) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
+*	[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
+*	[`MaximumValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~MaximumValue.html) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
+*	[`TrackColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackColor.html) - Changes the color of the track area.
+*	[`TrackBorderColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
+*	[`TrackBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Syncfusion:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
+                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+                          MaximumValue="100">
+</syncfusion:DoughnutSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+    XBindingPath = "Category",
+    YBindingPath = "Expenditure",
+    ItemsSource = new ViewModel().ExpenditureData,
+    IsStackedDoughnut = true,
+    CapStyle = DoughnutCapStyle.BothCurve,
+    SegmentSpacing = 0.2,
+    MaximumValue = 100
+};
+
+chart.Series.Add(doughnutSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Stacked doughnut support in UWP Chart](Series_images/StackedDoughnut.png)
+
+**Add content to the center of doughnut chart**
+
+You can add any content to the center of the doughnut chart using the [`CenterView`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) property of DoughnutSeries. The binding context of the [`CenterView`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) will be the respective DoughnutSeries.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:DoughnutSeries.CenterView>
+    <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
+    <Image Source="/Image/Person.png" Width="164" Height="164"/>
+    </ContentControl>
+</syncfusion:DoughnutSeries.CenterView>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ContentControl centerView = new ContentControl()
+{
+    Content = new Image()
+    {
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center,
+        Source = new BitmapImage(new Uri("Image/Person.png", UriKind.Relative)),
+        Width = 164,
+        Height = 164
+    }
+};
+
+doughnutSeries.CenterView = centerView;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![CenterView support for DoughnutSeries in UWP Chart](Series_images/CenterView.png)
+
 ## Funnel and Pyramid Charts
 
 ### Pyramid
