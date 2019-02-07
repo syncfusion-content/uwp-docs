@@ -2917,6 +2917,170 @@ chart.Series.Add(series);
 
 ![Interval customization support for histogram series in UWP Chart](Series_images/histogram_interval.png)
 
+## Box and Whisker
+
+[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangle and lines to show the distribution of the dataset. The following code illustrates how to define the series in chart.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"  
+                          
+    XBindingPath="Department" 
+                          
+    YBindingPath="Age">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ItemsSource = new BoxWhiskerViewModel().BoxWhiskerData;
+
+boxAndWhisker.XBindingPath = "Department";
+
+boxAndWhisker.YBindingPath = "Age";
+
+boxWhiskerChart.Series.Add(boxAndWhisker);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BoxAndWhisker chart type in UWP](Series_images/BoxAndWhiskerSeries.png)
+
+N> By default, the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property value is Exclusive.
+
+**Customize the series box mode**
+
+The series box plotting mode can be changed by using [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
+
+* [`Exclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N+1) * P (N count, P percentile) and its index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N−1) * P (N count, P percentile) and its index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
+
+**Normal**
+
+The following code illustrates how to define the BoxPlotMode value as Normal.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  BoxPlotMode="Normal">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.BoxPlotMode = BoxPlotMode.Normal;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BoxPlotMode support for BoxAndWhiskerSeries in UWP chart](Series_images/BoxPlotMode_Normal.png)
+
+**Inclusive**
+
+The following code illustrates how to define the BoxPlotMode value as Inclusive.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  BoxPlotMode="Inclusive">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BoxPlotMode support for BoxAndWhiskerSeries in UWP chart](Series_images/BoxPlotMode_Inclusive.png)
+
+**ShowMedian**
+
+The Median values of given dataset is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property of BoxAndWhiskerSeries. The following code illustrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  ShowMedian="True">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ShowMedian = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowMedian support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowMedian.png)
+
+**OutlierTemplate**
+
+The default appearance of the outlier symbol can be customized by using the [`OutlierTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~OutlierTemplate.html) property of BoxAndWhiskerSeries. The following code illustrates how to customize the outlier symbol.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   <syncfusion:BoxAndWhiskerSeries.OutlierTemplate>
+
+                    <DataTemplate>
+
+                        <Canvas>
+
+                            <Path Stretch="Fill" Height="10" Width="10"  Fill="{Binding Interior}" 
+                              
+                         Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
+      
+                            Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,
+            
+                                    78.9463L 145.193,78.9463L 145.193,103.074L 121.071,
+            
+                                    103.074L 121.071,78.9463L 96.946,78.9463L 96.946,
+           
+                                    54.8249L 121.071,54.8249L 121.071,
+            
+                                    30.6983L 145.193,30.6983L 145.193,54.8249 Z"/>
+
+                        </Canvas>
+
+                    </DataTemplate>
+
+                </syncfusion:BoxAndWhiskerSeries.OutlierTemplate>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Outlier template support for BoxAndWhiskerSeries in UWP chart](Series_images/OutlierTemplate.png)
+
 ## Fast Charts
 
 ### Fast Line
