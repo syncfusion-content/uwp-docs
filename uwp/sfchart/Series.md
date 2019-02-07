@@ -955,8 +955,8 @@ Doughnut segments can be separated as individual circles using the [`IsStackedDo
 {% highlight xaml %}
 
 <Syncfusion:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
-                          IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
-                          MaximumValue="100">
+    IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+      MaximumValue="100">
 </syncfusion:DoughnutSeries>
 
 {% endhighlight %}
