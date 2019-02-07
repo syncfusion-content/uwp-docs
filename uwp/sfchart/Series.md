@@ -3049,31 +3049,31 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 {% highlight xaml %}
 
-   <syncfusion:BoxAndWhiskerSeries.OutlierTemplate>
+<syncfusion:BoxAndWhiskerSeries.OutlierTemplate>
 
-                    <DataTemplate>
+    <DataTemplate>
 
-                        <Canvas>
+        <Canvas>
 
-                            <Path Stretch="Fill" Height="10" Width="10"  Fill="{Binding Interior}" 
+            <Path Stretch="Fill" Height="10" Width="10"  Fill="{Binding Interior}" 
                               
-                         Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
+                Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
       
-                            Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,
+                Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,
             
-                                    78.9463L 145.193,78.9463L 145.193,103.074L 121.071,
+                78.9463L 145.193,78.9463L 145.193,103.074L 121.071,
             
-                                    103.074L 121.071,78.9463L 96.946,78.9463L 96.946,
+                103.074L 121.071,78.9463L 96.946,78.9463L 96.946,
            
-                                    54.8249L 121.071,54.8249L 121.071,
+                54.8249L 121.071,54.8249L 121.071,
             
-                                    30.6983L 145.193,30.6983L 145.193,54.8249 Z"/>
+                30.6983L 145.193,30.6983L 145.193,54.8249 Z"/>
 
-                        </Canvas>
+            </Canvas>
 
-                    </DataTemplate>
+    </DataTemplate>
 
-                </syncfusion:BoxAndWhiskerSeries.OutlierTemplate>
+</syncfusion:BoxAndWhiskerSeries.OutlierTemplate>
 
 {% endhighlight %}
 
