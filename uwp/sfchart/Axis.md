@@ -25,12 +25,6 @@ documentation: ug
 
 You can choose any [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) derived types, like [`DateTimeAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html), [`CategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CategoryAxis.html), [`LogarithmicAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) or [`TimeSpanAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html) depending on the value type. [`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html) is a special type, used to plot date and time values for the given datapoints. 
 
-ChartAxis has the following APIs:
-
-* [`ArrangeRect`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ArrangeRect.html) – Represents the bounds of chart axis size.
-* [`VisibleRange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~VisibleRange.html) – Represents the start and end values of axis.
-* [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~VisibleLabels.html) –  Represents the axis label collection that is visible in axis.
-
 ## NumericAxis
 
 [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) is used to plot numerical value to the chart. You can set [`NumericalAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NumericalAxis.html) for both [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~SecondaryAxis.html).
@@ -1391,39 +1385,6 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![ PlotOffset support in UWP Chart](Axis_images/PlotOffset.png)
 
-### Applying padding to the axis line
-
-Padding to the axis line is defined using [`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineOffset.html) property. The following code sample demonstrates how to set [`AxisLineOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~AxisLineOffset.html) to x-axis.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-
-<syncfusion:CategoryAxis AxisLineOffset="20" >
-
-</syncfusion:CategoryAxis>
-
-</syncfusion:SfChart.PrimaryAxis>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.PrimaryAxis = new CategoryAxis()
-{
-
-    AxisLineOffset = 20
-    
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![AxisLineOffset support in UWP Chart](Axis_images/AxisLineOffset.png)
-
 ## Positioning axis labels
 
 ### Label Placement
@@ -1759,35 +1720,6 @@ chart.PrimaryAxis = new CategoryAxis()
 {% endtabs %}
 
 ![Label extent support in UWP Chart](Axis_images/LabelExtent.png)
-
-### LabelRotationAngle
-
-The [`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelRotationAngle.html) property allows you to define the angle to the label content. The following code sample demonstrates [`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelRotationAngle.html).
-
-{% tabs %}
-
-{% highlight xml %}
-
-<syncfusion:SfChart.PrimaryAxis>
-<syncfusion:CategoryAxis LabelRotationAngle="270"/>
-</syncfusion:SfChart.PrimaryAxis>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.PrimaryAxis = new CategoryAxis()
-{
-
-     LabelRotationAngle = 270
-
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Axis label rotation support in UWP Chart](Axis_images/LabelRotation.png)
 
 ## Smart Labels
 
@@ -2177,59 +2109,6 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Axis labels formatting support in UWP Chart](Axis_images/Axis_img31.png)
 
-## Axis label customization
-
-The [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelTemplate.html) property allows you to define the appearance to the axis labels. The following code sample demonstrates the [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~LabelTemplate.html) property.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<syncfusion:SfChart x:Name="chart">
-
-    <syncfusion:SfChart.Resources>
-
-        <DataTemplate x:Key="labelTemplate">
-
-            <Border Background="Gray" CornerRadius="5" >
-
-                    <TextBlock Text="{Binding LabelContent}" Foreground="White"
-                                   
-                                FontStyle="Normal" FontSize="10" 
-                                   
-                                FontWeight="Bold" Margin="3"/>
-
-            </Border>
-
-       </DataTemplate>
-
-    </syncfusion:SfChart.Resources>
-
-    <syncfusion:SfChart.PrimaryAxis>
-
-        <syncfusion:CategoryAxis LabelTemplate="{StaticResource labelTemplate}"/>
-
-    </syncfusion:SfChart.PrimaryAxis>
-
-</syncfusion:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.PrimaryAxis = new CategoryAxis()
-{
-
-    LabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
-
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Axis label customization in UWP Chart](Axis_images/LabelTemplate.png)
-
 ## Origin Customization
 
 SfChart allows you to customize the origin. By default the axis will be rendered with(0,0) as origin in x and y-axes.
@@ -2268,98 +2147,6 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Moving the axis line to the specified origin value support in UWP Chart](Axis_images/ShowAxisNextToOrigin.png)
-
-### Adding Origin line
-
-The origin line can be added to chart area by setting the [`ShowOrigin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowOrigin.html) property to true. The following code example demonstrates how to display the origin line at (3,0).
-
-{% tabs %}
-
-{% highlight xml %}
-
-<syncfusion:SfChart.SecondaryAxis>
-
-<syncfusion:NumericalAxis Origin="3" ShowOrigin="True">
-
-</syncfusion:NumericalAxis>
-
-</syncfusion:SfChart.SecondaryAxis>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.SecondaryAxis = new NumericalAxis()
-{
-
-    Origin = 3,
-
-    ShowOrigin = true 
-
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Adding origin line to the UWP Chart area](Axis_images/ShowOrigin.png)
-
-### Customizing the OriginLine
-
-The origin line of axis can be customized by using the [`OriginLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~OriginLineStyle.html) property of ChartAxis. The following code demonstrates how to apply style to origin line.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<syncfusion:SfChart.SecondaryAxis>
- 
-    <syncfusion:NumericalAxis Origin="3" ShowOrigin="True">
-
-          <syncfusion:NumericalAxis.OriginLineStyle>
-
-                        <Style TargetType="Line">
-
-                            <Setter Property="Stroke" Value="Red"/>
-
-                            <Setter Property="StrokeDashArray" Value="3"/>
-
-                        </Style>
-
-          </syncfusion:NumericalAxis.OriginLineStyle>
-
-    </syncfusion:NumericalAxis>
-
-</syncfusion:SfChart.SecondaryAxis>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-NumericalAxis numericalAxis = new NumericalAxis()
-{
-        
-    Origin = 3,
-                
-    ShowOrigin = true
-        
-};
-
-Style style = new Style(typeof(Line));
-
-style.Setters.Add(new Setter(Line.StrokeProperty, new SolidColorBrush(Colors.Red)));
-
-style.Setters.Add(new Setter(Line.StrokeDashArrayProperty, new DoubleCollection() { 3 }));
-
-numericalAxis.OriginLineStyle = style;
-
-chart.SecondaryAxis = numericalAxis;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![OriginLine customization in UWP Chart](Axis_images/Originline_Customization.png)
 
 ## Styling Header and Labels
 
@@ -2469,83 +2256,6 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-**Header Customization**
-
-The default appearance of header can be customized using the [`HeaderTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~HeaderTemplate.html) property. The following code sample demonstrates how to customize the header.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<syncfusion:SfChart x:Name="chart">
-
-    <syncfusion:SfChart.Resources>
-
-        <DataTemplate x:Key="headerTemplate1">
-
-            <Border BorderBrush="Black" CornerRadius="5" BorderThickness="1">
-
-                    <TextBlock Text="Demands" FontSize="12" 
-                                   
-                               FontStyle="Italic" 
-                                   
-                               FontWeight="Bold" Margin="3"/>
-
-            </Border>
-
-        </DataTemplate>
-
-        <DataTemplate x:Key="headerTemplate2">
-
-            <Border BorderBrush="Black" CornerRadius="5" BorderThickness="1">
-
-                    <TextBlock Text="Values (In Tonnes)" FontSize="12" Margin="3"
-                                   
-                               FontStyle="Italic" FontWeight="Bold"/>
-
-            </Border>
-
-        </DataTemplate>
-
-    </syncfusion:SfChart.Resources>
-
-    <syncfusion:SfChart.PrimaryAxis>
-
-        <syncfusion:CategoryAxis HeaderTemplate="{StaticResource headerTemplate1}"/>
-
-    </syncfusion:SfChart.PrimaryAxis>
-
-    <syncfusion:SfChart.SecondaryAxis>
-
-        <syncfusion:NumericalAxis HeaderTemplate="{StaticResource headerTemplate2}"/>
-
-    </syncfusion:SfChart.SecondaryAxis>
-        
-</syncfusion:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-chart.PrimaryAxis = new CategoryAxis()
-{
-
-    HeaderTemplate = chart.Resources["headerTemplate1"] as DataTemplate
-
-};
-
-chart.SecondaryAxis = new NumericalAxis()
-{
-
-    HeaderTemplate = chart.Resources["headerTemplate2"] as DataTemplate
-
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Axis Header customization in UWP Chart](Axis_images/Header_Customization.png)
 
 **Axis Label Border**
 
@@ -2683,7 +2393,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ### Ticklines
 
-Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line using [`TickLinesPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~TickLinesPosition.html) and [`SmallTickLinesPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeAxisBase~SmallTickLinesPosition.html) property. The size of major and minor ticklines can be set using [`TickLineSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~TickLineSize.html) and [`SmallTickLineSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeAxisBase~SmallTickLineSize.html) property.
+Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line.
 
 The following code example and screenshot illustrate major and small ticklines set to [`Inside`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AxisElementPosition.html).
 
