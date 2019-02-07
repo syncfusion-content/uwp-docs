@@ -943,12 +943,12 @@ chart.Series.Add(series);
 
 Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~IsStackedDoughnut.html) property. The following properties are used to customize the stacked doughnut chart:
 
-*	[`CapStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CapStyle.html) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
-*	[`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
-*	[`MaximumValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~MaximumValue.html) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
-*	[`TrackColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackColor.html) - Changes the color of the track area.
-*	[`TrackBorderColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
-*	[`TrackBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
+* [`CapStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CapStyle.html) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
+* [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
+* [`MaximumValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~MaximumValue.html) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
+* [`TrackColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackColor.html) - Changes the color of the track area.
+* [`TrackBorderColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
+* [`TrackBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
 
 {% tabs %}
 
@@ -3002,7 +3002,7 @@ chart.Series.Add(series);
 
 ## Box and Whisker
 
-[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangle and lines to show the distribution of the dataset. The following code illustrates how to define the series in chart.
+[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangles and lines to show the distribution of data set. The following code demonstrates how to define the series in chart.
 
 {% tabs %}
 
@@ -3036,19 +3036,19 @@ boxWhiskerChart.Series.Add(boxAndWhisker);
 
 ![BoxAndWhisker chart type in UWP](Series_images/BoxAndWhiskerSeries.png)
 
-N> By default, the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property value is Exclusive.
+N> By default, the value of the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property is Exclusive.
 
 **Customize the series box mode**
 
-The series box plotting mode can be changed by using [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
+The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N+1) * P (N count, P percentile) and its index value starts from 1 in the list.
-* [`Inclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by using the formula (N−1) * P (N count, P percentile) and its index value starts from 0 in the list.
+* [`Exclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
 * [`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
 
 **Normal**
 
-The following code illustrates how to define the BoxPlotMode value as Normal.
+The following code demonstrates how to define the BoxPlotMode value to Normal.
 
 {% tabs %}
 
@@ -3074,7 +3074,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Normal;
 
 **Inclusive**
 
-The following code illustrates how to define the BoxPlotMode value as Inclusive.
+The following code demonstrates how to define the BoxPlotMode value to Inclusive.
 
 {% tabs %}
 
@@ -3100,7 +3100,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
 
 **ShowMedian**
 
-The Median values of given dataset is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property of BoxAndWhiskerSeries. The following code illustrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property of BoxAndWhiskerSeries. The following code demonstrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property.
 
 {% tabs %}
 
@@ -3126,7 +3126,7 @@ boxAndWhisker.ShowMedian = true;
 
 **OutlierTemplate**
 
-The default appearance of the outlier symbol can be customized by using the [`OutlierTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~OutlierTemplate.html) property of BoxAndWhiskerSeries. The following code illustrates how to customize the outlier symbol.
+The default appearance of the outlier symbol can be customized using the [`OutlierTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~OutlierTemplate.html) property of BoxAndWhiskerSeries. The following code demonstrates how to customize the outlier symbol.
 
 {% tabs %}
 
@@ -3166,9 +3166,9 @@ The default appearance of the outlier symbol can be customized by using the [`Ou
 
 ## Waterfall Series
 
-[`WaterfallSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles.
+[`WaterfallSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by rectangles and a connector between the rectangles.
 
-The following code illustrates how to use the series in chart.
+The following code demonstrates how to use the series in chart.
 
 {% tabs %}
 
@@ -3204,9 +3204,9 @@ chart.Series.Add(waterfallSeries);
 
 **SummaryBindingPath and SummarySegmentBrush**
 
-The [`SummaryBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummaryBindingPath.html) gets or sets the string value that indicates the sum of previous segments in series.
+The [`SummaryBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummaryBindingPath.html) gets or sets the string value that indicates the sum of the previous segments in series.
 
-The summary segment can be differentiated by applying the [`SummarySegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummarySegmentBrush.html) in series.
+The summary segment can be differentiated by applying [`SummarySegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummarySegmentBrush.html) in series.
 
 {% tabs %}
 
@@ -3250,7 +3250,7 @@ chart.Series.Add(waterfallSeries);
 
 **NegativeSegmentBrush**
 
-The appearance of the negative segment can be changed by using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~NegativeSegmentBrush.html) property of series. The following code illustrates how to change the appearance of the negative segment.
+The appearance of the negative segment can be changed using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~NegativeSegmentBrush.html) property of series. The following code demonstrates how to change the appearance of the negative segment.
 
 {% tabs %}
 
@@ -3276,9 +3276,9 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 **AllowAutoSum**
 
-The summary segment calculation can be changed by using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSum.html) property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+The summary segment calculation can be changed using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSum.html) property. By default, this property is true. When disabling this property, it renders the segment using the y-value of provided ItemsSource collection.
 
-The following code example illustrates how the AllowAutoSum property value can be set.
+The following code example demonstrates how the to set value to the AllowAutoSum property.
 
 {% tabs %}
 
@@ -3314,7 +3314,7 @@ chart.Series.Add(waterfallSeries);
 
 **ConnectorLine**
 
-The connector line of series can be enabled or disabled by using its [`ShowConnector`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ShowConnector.html) line property. By default, the property value is true.
+The connector line of series can be enabled or disabled using its [`ShowConnector`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ShowConnector.html) line property. By default, the value of this property is true.
 
 {% tabs %}
 
@@ -3340,7 +3340,7 @@ waterfallSeries.ShowConnector = false;
 
 **Connector line customization**
 
-The connector line can be customized by applying [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyle.html) property of the series. The following code example illustrates how to apply style for connector line.
+The connector line can be customized by applying the [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyle.html) property of the series. The following code example demonstrates how to apply style to connector line.
 
 {% tabs %}
 
