@@ -45,7 +45,7 @@ Each legend composed of the following parts:
 
 ## Legend Icon
 
-Represents the symbol associated with each legend item. By default, the legend icon is Rectangle. 
+Represents the symbol associated with each legend item. By default, the legend icon is [`Rectangle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html). 
 
 This can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~LegendIcon.html) property in any series as in below code snippet:
 
@@ -409,7 +409,7 @@ We can view the associated [`series`](https://help.syncfusion.com/uwp/sfchart/se
 
 **Legend** **Position**
 
-This allows us to position the legends inside or outside of the chart area (plotting area). 
+This allows us to position the legends [`Inside`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LegendPosition.html) or [`Outside`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LegendPosition.html) of the chart area (plotting area). 
 By default, it will be displayed outside and positioned at top (using [`DockPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html)) of the chart area.
 
 {% tabs %}
@@ -445,7 +445,7 @@ chart.Legend = new ChartLegend()
 [`Legends`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) can be docked left, right, and top or bottom around the chart area using `DockPosition` property. 
 By default, the [`ChartLegend`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartLegend.html) is docked at the top of the chart as mentioned earlier.
 
-To display the legend at the bottom, you can set the [`DockPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as **Bottom** as in below code snippet.
+To display the legend at the bottom, you can set the [`DockPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartLegend~DockPosition.html) as [`Bottom`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartDock.html) as in below code snippet.
 
 {% tabs %}
 
@@ -804,7 +804,7 @@ chart.Series.Add(columnSeries);
 
 ## Legend Orientation
 
-Orientation of the [`Legend`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) can be vertical or horizontal. By default the [`Orientation`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartLegend~Orientation.html) is *Horizontal*. 
+Orientation of the [`Legend`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Legend.html) can be vertical or horizontal. By default the [`Orientation`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartLegend~Orientation.html) is [`Horizontal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartOrientation.html). 
 
 {% tabs %}
 

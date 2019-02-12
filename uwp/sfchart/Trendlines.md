@@ -142,11 +142,11 @@ N> Here we have enabled the [`CheckBoxVisibility`](https://help.syncfusion.com/c
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) supports the following type of [`Trendlines`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CartesianSeries~Trendlines.html).
 
-* Linear
-* Exponential
-* Power
-* Logarithmic
-* Polynomial
+* [`Linear`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Exponential`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Power`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Logarithmic`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
+* [`Polynomial`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TrendlineType.html)
 
 ### Linear
 

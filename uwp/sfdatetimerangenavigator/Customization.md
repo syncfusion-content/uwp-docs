@@ -683,12 +683,12 @@ interval2.LabelFormatters = new ObservableCollection<string>(); interval2.LabelF
 
 Interval has the following types:
 
-* Year
-* Quarter
-* Month
-* Week
-* Day
-* Hour
+* [`Year`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Quarter`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Month`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Week`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Day`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Hour`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 
 The auto timespan format simplifies the visual representation of data while zooming.
 
