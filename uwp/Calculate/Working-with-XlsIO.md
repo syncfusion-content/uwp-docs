@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Essential XlsIO
+title: Working with Essential XlsIO | Calculate | UWP | Syncfusion
 description: Explains about working with CalcWorkbook, CalcSheet
 platform: UWP
 control: Calculate
