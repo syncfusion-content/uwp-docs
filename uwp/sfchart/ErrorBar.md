@@ -225,7 +225,7 @@ chart.Series.Add(errorBar);
 
 **Minus**
 
-The following code illustrates how to set the HorizontalDirection value as minus.
+The following code demonstrates how to set the HorizontalDirection value as minus.
 
 {% tabs %}
 
@@ -253,7 +253,7 @@ chart.Series.Add(errorBar);
 
 **Plus**
 
-The following code illustrates how to set the HorizontalDirection value as plus.
+The following code demonstrates how to set the HorizontalDirection value as plus.
 
 {% tabs %}
 
@@ -289,7 +289,7 @@ chart.Series.Add(errorBar);
 
 **Both**
 
-The following code illustrates how to set the VerticalDirection value as both.
+The following code demonstrates how to set the VerticalDirection value as both.
 
 {% tabs %}
 
@@ -317,7 +317,7 @@ chart.Series.Add(errorBar);
 
 **Minus**
 
-The following code illustrates how to set the VerticalDirection value as minus.
+The following code demonstrates how to set the VerticalDirection value as minus.
 
 {% tabs %}
 
@@ -345,7 +345,7 @@ chart.Series.Add(errorBar);
 
 **Plus**
 
-The following code illustrates how to set the VerticalDirection value as plus.
+The following code demonstrates how to set the VerticalDirection value as plus.
 
 {% tabs %}
 
