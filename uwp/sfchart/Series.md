@@ -939,6 +939,89 @@ chart.Series.Add(series);
 
 ![Exploding all the segments of accumlation series in UWP Chart](Series_images/explodeall.png)
 
+**Stacked** **doughnut**
+
+Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~IsStackedDoughnut.html) property. The following properties are used to customize the stacked doughnut chart:
+
+* [`CapStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CapStyle.html) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
+* [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
+* [`MaximumValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~MaximumValue.html) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
+* [`TrackColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackColor.html) - Changes the color of the track area.
+* [`TrackBorderColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
+* [`TrackBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<Syncfusion:DoughnutSeries XBindingPath="Category" YBindingPath="Expenditure" ItemsSource="{Binding ExpenditureData}"
+    IsStackedDoughnut="True" CapStyle="BothCurve" SegmentSpacing="0.2"
+      MaximumValue="100">
+</syncfusion:DoughnutSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+DoughnutSeries doughnutSeries = new DoughnutSeries()
+{
+    XBindingPath = "Category",
+    YBindingPath = "Expenditure",
+    ItemsSource = new ViewModel().ExpenditureData,
+    IsStackedDoughnut = true,
+    CapStyle = DoughnutCapStyle.BothCurve,
+    SegmentSpacing = 0.2,
+    MaximumValue = 100
+};
+
+chart.Series.Add(doughnutSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Stacked doughnut support in UWP Chart](Series_images/StackedDoughnut.png)
+
+**Add content to the center of doughnut chart**
+
+You can add any content to the center of the doughnut chart using the [`CenterView`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) property of DoughnutSeries. The binding context of the [`CenterView`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) will be the respective DoughnutSeries.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:DoughnutSeries.CenterView>
+    <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
+    <Image Source="/Image/Person.png" Width="164" Height="164"/>
+    </ContentControl>
+</syncfusion:DoughnutSeries.CenterView>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ContentControl centerView = new ContentControl()
+{
+    Content = new Image()
+    {
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center,
+        Source = new BitmapImage(new Uri("Image/Person.png", UriKind.Relative)),
+        Width = 164,
+        Height = 164
+    }
+};
+
+doughnutSeries.CenterView = centerView;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![CenterView support for DoughnutSeries in UWP Chart](Series_images/CenterView.png)
+
 ## Funnel and Pyramid Charts
 
 ### Pyramid
@@ -2916,6 +2999,388 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Interval customization support for histogram series in UWP Chart](Series_images/histogram_interval.png)
+
+## Box and Whisker
+
+[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangles and lines to show the distribution of data set. The following code demonstrates how to define the series in chart.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"  
+                          
+    XBindingPath="Department" 
+                          
+    YBindingPath="Age">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ItemsSource = new BoxWhiskerViewModel().BoxWhiskerData;
+
+boxAndWhisker.XBindingPath = "Department";
+
+boxAndWhisker.YBindingPath = "Age";
+
+boxWhiskerChart.Series.Add(boxAndWhisker);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BoxAndWhisker chart type in UWP](Series_images/BoxAndWhiskerSeries.png)
+
+N> By default, the value of the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property is Exclusive.
+
+**Customize the series box mode**
+
+The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
+
+* [`Exclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
+
+**Normal**
+
+The following code demonstrates how to define the BoxPlotMode value to Normal.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  BoxPlotMode="Normal">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.BoxPlotMode = BoxPlotMode.Normal;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BoxPlotMode support for BoxAndWhiskerSeries in UWP chart](Series_images/BoxPlotMode_Normal.png)
+
+**Inclusive**
+
+The following code demonstrates how to define the BoxPlotMode value to Inclusive.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  BoxPlotMode="Inclusive">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BoxPlotMode support for BoxAndWhiskerSeries in UWP chart](Series_images/BoxPlotMode_Inclusive.png)
+
+**ShowMedian**
+
+The Median values of given data set is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property of BoxAndWhiskerSeries. The following code demonstrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  ShowMedian="True">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ShowMedian = true;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowMedian support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowMedian.png)
+
+**OutlierTemplate**
+
+The default appearance of the outlier symbol can be customized using the [`OutlierTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~OutlierTemplate.html) property of BoxAndWhiskerSeries. The following code demonstrates how to customize the outlier symbol.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries.OutlierTemplate>
+
+    <DataTemplate>
+
+        <Canvas>
+
+            <Path Stretch="Fill" Height="10" Width="10"  Fill="{Binding Interior}" 
+                              
+                Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
+      
+                Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,
+            
+                78.9463L 145.193,78.9463L 145.193,103.074L 121.071,
+            
+                103.074L 121.071,78.9463L 96.946,78.9463L 96.946,
+           
+                54.8249L 121.071,54.8249L 121.071,
+            
+                30.6983L 145.193,30.6983L 145.193,54.8249 Z"/>
+
+            </Canvas>
+
+    </DataTemplate>
+
+</syncfusion:BoxAndWhiskerSeries.OutlierTemplate>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Outlier template support for BoxAndWhiskerSeries in UWP chart](Series_images/OutlierTemplate.png)
+
+## Waterfall Series
+
+[`WaterfallSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by rectangles and a connector between the rectangles.
+
+The following code demonstrates how to use the series in chart.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
+                      
+                       XBindingPath="Category" 
+                      
+                       YBindingPath="Value">
+
+</syncfusion:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ItemsSource = new ViewModel().RevenueDetails;
+
+waterfallSeries.XBindingPath = "Category";
+
+waterfallSeries.YBindingPath = "Value";
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Waterfall chart type in UWP](Series_images/WaterfallSeries.png)
+
+**SummaryBindingPath and SummarySegmentBrush**
+
+The [`SummaryBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummaryBindingPath.html) gets or sets the string value that indicates the sum of the previous segments in series.
+
+The summary segment can be differentiated by applying [`SummarySegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummarySegmentBrush.html) in series.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
+                                  
+                                   XBindingPath="Category"
+                                  
+                                   YBindingPath="Value" Interior="Gray"
+                                  
+                                   SummaryBindingPath="IsSummary"
+                                  
+                                   SummarySegmentBrush="RoyalBlue">
+
+</syncfusion:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ItemsSource = new ViewModel().RevenueDetails;
+
+waterfallSeries.XBindingPath = "Category";
+
+waterfallSeries.YBindingPath = "Value";
+
+waterfallSeries.SummaryBindingPath = "IsSummary";
+
+waterfallSeries.SummarySegmentBrush = new SolidColorBrush(Colors.RoyalBlue);
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Summary segment customization for WaterfallSeries in UWP chart](Series_images/SummaryBinding.png)
+
+**NegativeSegmentBrush**
+
+The appearance of the negative segment can be changed using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~NegativeSegmentBrush.html) property of series. The following code demonstrates how to change the appearance of the negative segment.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries NegativeSegmentBrush="Red">
+
+</chart:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Highlighting negative segments of WaterfallSeries in chart UWP](Series_images/NegativeSegmentBrush.png)
+
+**AllowAutoSum**
+
+The summary segment calculation can be changed using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSum.html) property. By default, this property is true. When disabling this property, it renders the segment using the y-value of provided ItemsSource collection.
+
+The following code example demonstrates how the to set value to the AllowAutoSum property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries AllowAutoSum="False"
+                       
+    SummaryBindingPath="IsSummary"
+                       
+    SummarySegmentBrush="RoyalBlue">
+ 
+</syncfusion:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.AllowAutoSum = false;
+
+waterfallSeries.SummaryBindingPath = "IsSummary";
+
+waterfallSeries.SummarySegmentBrush = new SolidColorBrush(Colors.RoyalBlue);
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Disable auto sum for waterfallSeries summary segments in UWP chart](Series_images/AllowAutoSum.png)
+
+**ConnectorLine**
+
+The connector line of series can be enabled or disabled using its [`ShowConnector`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ShowConnector.html) line property. By default, the value of this property is true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries ShowConnector="False">
+
+</syncfusion:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries();
+
+waterfallSeries.ShowConnector = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Disable connector line for WaterfallSeries in UWP chart](Series_images/Connectorline_Disabled.png)
+
+**Connector line customization**
+
+The connector line can be customized by applying the [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyle.html) property of the series. The following code example demonstrates how to apply style to connector line.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:WaterfallSeries.ConnectorLineStyle>
+
+<Style TargetType="Line">
+
+<Setter Property="Stroke" Value="Red"/>
+
+<Setter Property="StrokeDashArray" Value="1"/>
+
+<Setter Property="StrokeThickness" Value="2"/>
+
+</Style>
+
+</syncfusion:WaterfallSeries.ConnectorLineStyle>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Style style = new Style(typeof(Line));
+
+style.Setters.Add(new Setter(Line.StrokeProperty, new SolidColorBrush(Colors.Red)));
+
+style.Setters.Add(new Setter(Line.StrokeDashArrayProperty, new DoubleCollection() { 1 }));
+
+style.Setters.Add(new Setter(Line.StrokeThicknessProperty, 2));
+
+WaterfallSeries series = new WaterfallSeries();
+
+series.ConnectorLineStyle = style;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Connector line customization for WaterfallSeries in UWP chart](Series_images/Connectorline_Customization.png)
 
 ## Fast Charts
 
