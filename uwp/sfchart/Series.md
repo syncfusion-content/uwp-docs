@@ -979,7 +979,7 @@ chart.Series.Add(series);
 ![Pyramid chart type in UWP](Series_images/pyramid.png)
 
 
-The [`PyramidMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PyramidSeries~PyramidMode.html) is used to define the rendering mode of the pyramid segments.
+The [`PyramidMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PyramidSeries~PyramidMode.html) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) for pyramid segments.
 
 **PyramidMode** **as** **Surface**
 
@@ -1100,7 +1100,7 @@ chart.Series.Add(series);
 
 ### Funnel Mode
 
-The [`FunnelMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FunnelSeries~FunnelMode.html) defines a rendering mode for the funnel series which define, where to bind your values (to height or width).
+The [`FunnelMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FunnelSeries~FunnelMode.html) defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [`ValueIsHeight`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) and [`ValueIsWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) funnel mode:
 
 **ValueIsHeight**
 
@@ -1413,7 +1413,7 @@ chart.Series.Add(series);
 
 ### DrawType
 
-This property defines type of curve, whether its line or area.
+This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
 
 **DrawType** **as** **Area**
 
