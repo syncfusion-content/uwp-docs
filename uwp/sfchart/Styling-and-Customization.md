@@ -55,7 +55,7 @@ chart.Palette = ChartColorPalette.Metro;
 ![Predefined palettes in UWP Chart](Styling-and-Customization_images/palette_1.png)
 
 
-The following code example defined [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Palette.html) as BlueChrome.
+The following code example defined [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Palette.html) as [`BlueChrome`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
 
 {% tabs %}
 

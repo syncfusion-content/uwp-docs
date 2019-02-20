@@ -44,8 +44,8 @@ You can show these empty points by setting the [`ShowEmptyPoints`](https://help
 
 This is an enum property having the following values: 
 
-* [`Zero`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html)- Replace all the empty points with zero (0), this is the default value.
-* [`Average`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EmptyPointValue.html)- Replace all the empty points with average value.
+* [`Zero`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EmptyPointValue.html)- Replace all the empty points with zero (0), this is the default value.
+* [`Average`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.EmptyPointValue.html)- Replace all the empty points with average value.
 
 The following code examples shows how to display the empty points:
 

@@ -605,7 +605,7 @@ Text="{Binding}">
 
 **Adding** **Arrow** **to** **LineAnnotation**
 
-To display single headed arrow you can modify the line annotation by setting [`LineCap`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html) property to Arrow. By default the [`LineCap`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html) property value in none.
+To display single headed arrow you can modify the line annotation by setting [`LineCap`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html) property to [`Arrow`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineCap.html). By default the [`LineCap`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineAnnotation~LineCap.html) property value in none.
 
 ![Arrow support for line annotation in UWP Chart](Annotation_images/Annotation_img9.jpeg)
 
