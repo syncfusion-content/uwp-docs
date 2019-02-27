@@ -482,8 +482,8 @@ public class GridRowDragDropControllerExt : GridRowDragDropController
                     return;
                 }
 
-                var recordindex = this.DataGrid.ResolveToRecordIndex(draggingIndex);
-                var recordEntry = this.DataGrid.View.Records[recordindex];
+                var recordIndex = this.DataGrid.ResolveToRecordIndex(draggingIndex);
+                var recordEntry = this.DataGrid.View.Records[recordIndex];
                 this.DataGrid.View.Records.Remove(recordEntry);
 
                 if (draggingIndex < rowColumnIndex.RowIndex && dropPosition == DropPosition.DropAbove)
