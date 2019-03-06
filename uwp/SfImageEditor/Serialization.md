@@ -72,6 +72,48 @@ LoadEdits() method used to deserialize the shapes.
 
 {% endtabs %}
 
+You can also Serialize and Deserialize the current edited image.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Serialization" Grid.Row="0" Grid.Column="0" x:Name="serialize" Click="Serialize_Click" HorizontalAlignment="Center"/>
+        <Button Content="Deserialization" Grid.Row="0" Grid.Column="1" x:Name="deserialize" Click="Deserialize_Click" HorizontalAlignment="Center"/>
+        <syncfusion:SfImageEditor Grid.Row="1" Grid.ColumnSpan="2" x:Name="editor" ImageSource="Assets/Bulding.jpeg"/>
+    </Grid>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+        private Stream stream;
+
+        private void Serialize_Click(object sender, RoutedEventArgs e)
+        {
+            stream = editor.SaveEdits();
+            editor.Reset();
+        }
+
+        private void Deserialize_Click(object sender, RoutedEventArgs e)
+        {
+            editor.LoadEdits(stream);
+        }        
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can find the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ImageEditor_Serilaization238220795.zip) for serialize and deserialize the current edited image.
 
 ![SfImageEditor](SerializationImages/serialization.png)
 
