@@ -16,10 +16,21 @@ This table represents the Syncfusion Essential Studio UWP controls supported .NE
 <tr>
 <td>
 Syncfusion version</td><td>
-.NET 4.6</td></tr>
+Visual Studio 2015</td><td>
+Visual Studio 2017</td><td>
+Visual Studio 2019</td></tr>
 <tr>
 <td>
 From 13.3</td><td>
+Yes</td><td>
+Yes</td><td>
+No</td></tr>
+<tr>
+<tr>
+<td>
+From 17.1</td><td>
+No</td><td>
+Yes</td><td>
 Yes</td></tr>
 </table>
 
