@@ -265,7 +265,7 @@ chart.Series.Add(series2);
 
 **Dashed Lines**
 
-[`StrokeDashArray`] property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html) is used to render spline series with dashes.
+[`StrokeDashArray`]() property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html) is used to render spline series with dashes.
 
 {% tabs %}
 
