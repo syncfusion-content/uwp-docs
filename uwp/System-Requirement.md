@@ -29,15 +29,31 @@ The following IDEs can be used for development that are [compatible](https://www
 <tr>
 <td>
 Syncfusion Version</td><td>
-System Requirements</td><td>
+System Requirements</td></tr>
+<tr>
+<td>
+From 13.3</td><td>
+Windows 8.1 with Windows 10 toolkit<br/></td><td>
+</td></tr>
+<tr>
+<td>
+From 17.1</td><td>
+OS - Windows 10 1709 (OS Build 16299) or higher<br/>
+Windows 10 SDK 16299 or higher<br/>
+Visual Studio 2017 version 15.4.0 or higher</td><td>
+</td></tr>
+</table>
+
+<table>
+<tr>
+<td>
+Syncfusion Version</td><td>
 Visual Studio 2015</td><td>
 Visual Studio 2017</td><td>
 Visual Studio 2019</td></tr>
 <tr>
 <td>
 From 13.3</td><td>
-Windows 8.1 with Windows10 toolkit<br/>
-Windows10</td><td>
 Yes</td><td>
 Yes</td><td>
 No</td></tr>
@@ -45,9 +61,6 @@ No</td></tr>
 <tr>
 <td>
 From 17.1</td><td>
-OS - Windows 10 1709 (OS Build 16299) or higher<br/>
-Windows 10 SDK 16299 or higher<br/>
-Visual Studio 2017 version 15.4.0 or higher</td><td>
 No</td><td>
 Yes</td><td>
 Yes</td></tr>
