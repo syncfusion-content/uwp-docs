@@ -33,7 +33,8 @@ System Requirements</td></tr>
 <tr>
 <td>
 From 13.3</td><td>
-Windows 8.1 with Windows 10 toolkit<br/></td><td>
+Windows 8.1 with Windows 10 toolkit<br/>
+Windows 10</td><td>
 </td></tr>
 <tr>
 <td>
