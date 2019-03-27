@@ -34,15 +34,13 @@ System Requirements</td></tr>
 <td>
 From 13.3</td><td>
 Windows 8.1 with Windows 10 toolkit<br/>
-Windows 10</td><td>
-</td></tr>
+Windows 10</td></tr>
 <tr>
 <td>
 From 17.1</td><td>
 OS - Windows 10 1709 (OS Build 16299) or higher<br/>
 Windows 10 SDK 16299 or higher<br/>
-Visual Studio 2017 version 15.4.0 or higher</td><td>
-</td></tr>
+Visual Studio 2017 version 15.4.0 or higher</td></tr>
 </table>
 
 <table>
