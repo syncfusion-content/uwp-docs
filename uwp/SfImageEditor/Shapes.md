@@ -78,3 +78,15 @@ programmatically, the selected shape can be deleted by using the Delete method a
 {% endhighlight %}
 
 N> You cannot delete the path.
+
+## Resize a shape or text or customview
+
+You can resize a selected shape, text, or customview using the `ResizableElements` property (e.g.: imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.ImageEditorResizableElements.Shapes represents that shapes(`Rectangle`, `Circle` or `Arrow`) can be resizable. Other elements such as Text and CustomView cannot be resizable).
+
+>Note: By default, all the elements are resizable.
+
+{% highlight C# %}
+
+    imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.ImageEditorResizableElements.Shapes;
+
+{% endhighlight %}
