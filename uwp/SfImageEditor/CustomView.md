@@ -27,7 +27,7 @@ The CustomViewSettings is defined to set values for the `CanMaintainAspectRatio`
 
 * The CanMaintainAspectRatio property is used to decide whether the aspect ratio value needs to be maintained when resizing the custom view.
 
-* Bounds property is used to set the boundries of the custom view. Using this property, you can position the custom view wherever you want on the image. In percentage, the value should fall between 0 and 100.
+* Bounds property is used to set the boundaries of the custom view. Using this property, you can position the custom view wherever you want on the image. In percentage, the value should fall between 0 and 100.
 
 * Angle property is used to set the angle for custom view. Using this property, you can rotate the custom view to the desired angle.
 
@@ -41,7 +41,7 @@ The CustomViewSettings is defined to set values for the `CanMaintainAspectRatio`
 
 {% endhighlight %}
 
-![](CustomView_Images/CustomView_Settings.png)
+![Adding Custom view to an image in UWP ImageEditor](CustomView_Images/CustomView_Settings.png)
 
 ## CustomView Rotation
 
@@ -67,4 +67,4 @@ You can rotate the custom view based on a particular angle using `Angle` propert
 
 {% endtabs %}
 
-![](CustomView_Images/CustomView_Rotation.png)
+![Rotate and resize the custom view in UWP ImageEditor](CustomView_Images/CustomView_Rotation.png)
