@@ -263,6 +263,37 @@ chart.Series.Add(series2);
 
 ![Spline chart type in UWP](Series_images/spline.png)
 
+**Dashed Lines**
+
+[`StrokeDashArray`]() property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html) is used to render spline series with dashes.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SplineSeries ItemsSource="{Binding List}" XBindingPath="Year" YBindingPath="India" StrokeDashArray="5,3" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries series = new SplineSeries()
+{
+    ItemsSource = new ViewModel().List,
+    XBindingPath = "Year",
+    YBindingPath = "India"
+};
+
+DoubleCollection doubleCollection = new DoubleCollection();
+doubleCollection.Add(5);
+doubleCollection.Add(3);
+series.StrokeDashArray = doubleCollection;
+chart.Series.Add(series);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 **Spline** **rendering** **types**
 
 The [`SplineType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
