@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Parse and Compute
-description: Explains about the parsing and computing methods in Calculate.
+title: Parse and Compute | Calculate | uwp/syncfusion
+description: This section lists out the parsing and computing methods to compute a custom function in Calculate for uwp/Syncfusion
 platform: UWP
 control: Calculate
 documentation: ug

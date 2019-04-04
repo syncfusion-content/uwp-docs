@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Essential Calculate
-description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData
+title: Getting Started with Essential Calculate| uwp/Syncfusion
+description: This section explains that how to compute the formulas using CalcQuickBase,CalcEngine and ICalcData for uwp/syncfusion
 platform: UWP
 control: Calculate
 documentation: ug
