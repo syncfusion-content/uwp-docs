@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with SfTreeNavigator control for UWP
-description:Guidelines to create Syncfusion SfTreeNavigator control for Universal Windows Platform project in Visual Studio 
+title: Getting Started of SfTreeNavigator control | UWP | Syncfusion
+description: This section explains about the getting started with the important key features of treenavigator control for universal windows platform project in visual studio. 
 platform: uwp
 control: SfTreeNavigator
 documentation: ug
