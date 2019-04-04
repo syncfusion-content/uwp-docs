@@ -15,7 +15,7 @@ This table represents the Syncfusion Essential Studio UWP controls supported .NE
 <table>
 <tr>
 <td>
-Syncfusion version</td><td>
+Syncfusion Version</td><td>
 .NET 4.6</td></tr>
 <tr>
 <td>
