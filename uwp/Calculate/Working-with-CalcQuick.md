@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with CalcQuickBase
-description: Explains about the computation with CalcQuickBase
+title: Working with CalcQuickBase | Calculate | UWP | Syncfusion
+description: This section explains that how the computation/calculation for the formul are working with CalcQuickBase for Syncfusion Essential UWP.
 platform: UWP
 control: Calculate
 documentation: ug
