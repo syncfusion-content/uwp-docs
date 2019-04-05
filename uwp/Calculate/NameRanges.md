@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Named Ranges | Calculate | Essential uwp/Syncfusion
-description: This section explains that how the named ranges are works with CalcEngine in Essential Calculate for uwp/Syncfusion
+title: Named Ranges | Calculate | Syncfusion Essential UWP
+description: This section explains that how the named ranges are works with CalcEngine in Essential Calculate for Syncfusion Essential UWP.
 platform: UWP
 control: Calculate
 documentation: ug

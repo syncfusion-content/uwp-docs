@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Supported Formulas | Calculate | uwp/syncfusion
-description: This section defines the list of supported formulas with simple example of the CalcEngine for Syncfusion Essential uwp
+title: Supported Formulas | Calculate | UWP | syncfusion
+description: This section defines the list of supported formulas with simple example of the CalcEngine for Syncfusion Essential UWP.
 platform: UWP
 control: Calculate
 documentation: ug

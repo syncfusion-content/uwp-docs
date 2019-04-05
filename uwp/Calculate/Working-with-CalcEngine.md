@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with CalcEngine | Calculate | uwp/syncfusion
-description: This section provides a basic idea of properties and methods maintained in CalcEngine for uwp/Syncfusion
+title: Working with CalcEngine | Calculate | UWP | syncfusion
+description: This section provides a basic idea of properties and methods maintained in CalcEngine for Syncfusion Essential UWP.
 platform: UWP
 control: Calculate
 documentation: ug

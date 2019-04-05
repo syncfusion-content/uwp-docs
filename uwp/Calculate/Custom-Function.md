@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Function | Calculate | uwp/syncfusion
-description: This section describes that how to add and remove the user defined function for uwp/Syncfusion essential calculate
+title: Custom Function | Calculate | UWP | syncfusion
+description: This section describes that how to add and remove the user defined function for Syncfusion Essential UWP calculate
 platform: UWP
 control: Calculate
 documentation: ug
