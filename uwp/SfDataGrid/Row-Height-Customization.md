@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Height customization in SfDataGrid.
+title: Row Height Customization | SfDataGrid | UWP | Syncfusion
 description: How to customize the row heights in SfDataGrid.
 platform: uwp
 control: SfDataGrid
@@ -11,6 +11,20 @@ documentation: ug
 # Row Height Customization
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) and the other rows height can be changed by setting [SfDataGrid.RowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~RowHeight.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"  
+   					   RowHeight="30"
+					   HeaderRowHeight="50"
+					   ItemsSource="{Binding Orders}" />
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.HeaderRowHeight = 50;
+this.dataGrid.RowHeight = 30;
+{% endhighlight %}
+{% endtabs %}
+
 You can also change the particular row height using [VisualContainer.RowHeights](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.VisualContainer~RowHeights.html) property.
 
 
@@ -51,7 +65,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Row-Height-Customization_images/Row-Height-Customization_img1.png)
+![Changing RowHeight of particular Row image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img1.png)
 
 
 ## QueryRowHeight event
@@ -83,7 +97,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Row-Height-Customization_images/Row-Height-Customization_img2.png)
+![OnDemand Changing of RowHeight image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img2.png)
 
 
 ### Limitations
@@ -138,7 +152,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here, row heights are customized based on the large text content.
 
-![](Row-Height-Customization_images/Row-Height-Customization_img3.png)
+![AutoFit RowHeight based on content Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img3.png)
 
 #### GridRowSizingOptions
 
@@ -185,7 +199,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here `CustomerID` and `Country` columns are excluded from height calculation and the row height is calculated based on `CustomerName` column only.
  
-![](Row-Height-Customization_images/Row-Height-Customization_img4.png)
+![AutoFit RowHeight for specific columns Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img4.png)
 
 ## Reset Row Height at runtime
 
@@ -306,7 +320,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Row-Height-Customization_images/Row-Height-Customization_img5.png)
+![AutoFit HeaderRowHeight Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img5.png)
 
 ## Change StackedHeaderRow Height based on its content
 
@@ -376,7 +390,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Row-Height-Customization_images/Row-Height-Customization_img6.png)
+![AutoFit StackedHeaderRow Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img6.png)
 
 ## Change TableSummaryRow Height
 
@@ -400,5 +414,5 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Row-Height-Customization_images/Row-Height-Customization_img7.png)
+![Customized TableSummaryRow height Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img7.png)
 
