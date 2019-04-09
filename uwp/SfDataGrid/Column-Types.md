@@ -202,7 +202,7 @@ public class DisplayBindingConverter : IValueConverter
 
 In the below screenshot, Unit Price column display value is formatted to currency by setting `DisplayBinding` property.
 
-![](Column-Types_images/Column-Types_img1.png)
+![Image used to display the currency value in SfDataGrid UWP](Column-Types_images/Column-Types_img1.png)
 
 By default, Columns handling the data operations (sorting and grouping) based on `MappingName` property. You can perform data operations based on `ValueBinding` by setting [GridColumn.UseBindingValue](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~UseBindingValue.html) to `true`, when the standard reflection not works or binding column with complex or indexer properties.
 
@@ -244,7 +244,7 @@ In the below code snippet, `GridNumericColumn` is loaded with `ProgressBar` and 
 {% endhighlight %}
 {% endtabs %}
 
-![](Column-Types_images/Column-Types_img2.png)
+![Image used to display the column with progressBar in SfDataGrid UWP](Column-Types_images/Column-Types_img2.png)
 
 `CellTemplate` is not support by `GridHyperlinkColumn`, `GridCheckboxColumn` and `GridImageColumn` columns.
 
@@ -285,7 +285,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 {% endhighlight %}
 {% endtabs %}
 
-![](Column-Types_images/Column-Types_img3.png)
+![Image used to display the column with CellTemplate in SfDataGrid UWP](Column-Types_images/Column-Types_img3.png)
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -357,7 +357,7 @@ In the below code, the custom template selector set to `GridColumn.CellTemplateS
 N> Non-Editable columns does not support `CellTemplate`.
 
 
-![](Column-Types_images/Column-Types_img4.png)
+![Image used to display the column with CellTemplateSelector in SfDataGrid UWP](Column-Types_images/Column-Types_img4.png)
 
 #### Binding ViewModel properties with CellTemplate
 
@@ -547,7 +547,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img5.png)
+![Image used to format the column with converter in SfDataGrid UWP](Column-Types_images/Column-Types_img5.png)
 
 ### Styling GridColumn
 
@@ -611,7 +611,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img6.png)
+![Image used to apply the cell style to the columns in SfDataGrid UWP](Column-Types_images/Column-Types_img6.png)
 
 #### Styles based on custom logic
 
@@ -699,7 +699,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img7.png)
+![Image used to apply the cell style to the columns by using CellStyleSelector in SfDataGrid UWP]](Column-Types_images/Column-Types_img7.png)
 
 ### UI Interaction
 
@@ -761,7 +761,7 @@ GridColumn allows you to change the alignment of `GridCell` and `GridHeaderCellC
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img8.png)
+![Image used to apply the TextTrimming,TextDecorations,TextAlignment,TextWrapping to columns in SfDataGrid UWP](Column-Types_images/Column-Types_img8.png)
 
 ## GridTextColumn
 
@@ -801,7 +801,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Ship City", Mappi
 {% endhighlight %}
 {% endtabs %}
 
-![](Column-Types_images/Column-Types_img9.png)
+![Image used to display the spell check in SfDataGrid UWP](Column-Types_images/Column-Types_img9.png)
 
 ## GridNumericColumn
 
@@ -823,7 +823,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { MappingName = "Quantity", He
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img10.png)
+![Image used to display numeric column in SfDataGrid UWP](Column-Types_images/Column-Types_img10.png)
 
 ### Data formatting
 
@@ -841,7 +841,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", M
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img11.png)
+![Image used to display the data formatting of numeric column in SfDataGrid WPF](Column-Types_images/Column-Types_img11.png)
 
 ### Null value support
 
@@ -862,7 +862,7 @@ this.dataGrid.Columns.Add(new GridNumericColumn() { HeaderText = "Unit Price", M
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img12.png)
+![Image used to display the WaterMark support of numeric column in SfDataGrid UWP](Column-Types_images/Column-Types_img12.png)
 
 ### Parsing Mode
 
@@ -901,7 +901,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endhighlight %}
 {% endtabs %}
 
-![](Column-Types_images/Column-Types_img13.png)
+![Image used to display GridDateTimeColumn with SfDatePicker in SfDataGrid UWP](Column-Types_images/Column-Types_img13.png)
 
 ### Formatting date time value
 
@@ -919,7 +919,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img14.png)
+![Image used to display data formatting in GridDateTimeColumn with SfDatePicker in SfDataGrid UWP](Column-Types_images/Column-Types_img14.png)
 
 When the predefined format specifier does not meet your requirement, you can set the [custom date and time format strings](https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx) into `FormatString` property.
 
@@ -936,7 +936,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img15.png)
+![Image used to display custom date-time formatting in GridDateTimeColumn with SfDatePicker in SfDataGrid UWP](Column-Types_images/Column-Types_img15.png)
 
 ### Editing support 
 
@@ -960,10 +960,10 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img16.png)
+![Image used to display editing in GridDateTimeColumn with On-Screen keyboard in Desktop view in SfDataGrid UWP](Column-Types_images/Column-Types_img16.png)
 
 
-![](Column-Types_images/Column-Types_img17.png)
+![Image used to display editing in GridDateTimeColumn with On-Screen keyboard in Mobile view in SfDataGrid UWP](Column-Types_images/Column-Types_img17.png)
 
 ### Null value support
 
@@ -984,7 +984,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img18.png)
+![Image used to display null value support in GridDateTimeColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img18.png)
 
 ### Setting date time value range
 
@@ -1033,7 +1033,7 @@ public class ViewModel
 
 You can hide or unhide the dropdown button by using [ShowDropDownButton](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~ShowDropDownButton.html) property. The height of dropdown can be changed using [DropDownHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn~DropDownHeight.html) property.
  
-![](Column-Types_images/Column-Types_img19.png)
+![Image used to display drop-down customization with GridDateTimeColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img19.png)
 
 ### Styling
 
@@ -1052,7 +1052,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img20.png)
+![Image used to display styling SelectorItem in GridDateTimeColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img20.png)
 
 ### SelectorItem customization
 
@@ -1074,7 +1074,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img21.png)
+![Image used to display customization of height and width of SelectorItem in GridDateTimeColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img21.png)
 
 #### SelectorItem formatting
 
@@ -1092,7 +1092,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img22.png)
+![Image used to display formatting SelectorItem in GridDateTimeColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img22.png)
 
 #### SelectorItem spacing and count customization
 
@@ -1114,7 +1114,7 @@ this.dataGrid.Columns.Add(new GridDateTimeColumn() { HeaderText = "Order Date", 
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img23.png)
+![Image used to display customization of space and count between SelectorItems in GridDateTimeColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img23.png)
 
 ## GridCheckBoxColumn
 
@@ -1136,7 +1136,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxColumn() { HeaderText = "Is Delivered"
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img24.png)
+![Image used to display GridCheckBoxColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img24.png)
 
 `GridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -1371,7 +1371,7 @@ In the below code, custom template selector set to `GridTemplateColumn.EditTempl
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img25.png)
+![Image used to display CellTemplateSelector and EditTemplateSelector with GridTemplateColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img25.png)
 
 ## GridComboBoxColumn
 
@@ -1402,7 +1402,7 @@ SfDataGrid triggers, [CurrentCellDropDownSelectionChanged](https://help.syncfusi
 `SelectedIndex` property returns the index of selected item.
 `SelectedItem` property returns the selected item from drop down list.
 
-![](Column-Types_images/Column-Types_img26.png)
+![Image used to display SelectedItem of GridComboBoxColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img26.png)
 
 ### Improving dropdown opening time
 
@@ -1591,9 +1591,9 @@ public class ItemsSourceSelector : IItemsSourceSelector
 
 The following screenshot illustrates the different ShipCity ItemsSource bound to each row of the ComboBox based on the Country Name.
 
-![](Column-Types_images/Column-Types_img37.png)
+![Image used to display different itemssource for different rows using ItemsSourceSelector property of GridComboBoxColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img37.png)
 
-![](Column-Types_images/Column-Types_img38.png)
+![Image used to display different itemssource for different rows using ItemsSourceSelector property of GridComboBoxColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img38.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnUWP-1974208434.zip).
 
@@ -1645,7 +1645,7 @@ SfDataGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 `SelectedItem` property returns the selected item from drop down list.
 
 
-![](Column-Types_images/Column-Types_img27.png)
+![Image used to display GridMultiColumnDropDownList in SfDataGrid UWP](Column-Types_images/Column-Types_img27.png)
 
 ### Auto complete support
 
@@ -1659,7 +1659,7 @@ You can allow SfMultiDropDownControl to filter the drop-down list items dynamica
  
 `GridMultiColumnDropDownList` allows you to filter the items based on case by setting [AllowCasingforFilter](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowCasingforFilter.html) to `true`. This will help users to select from large number of items.
 
-![](Column-Types_images/Column-Types_img28.png)
+![Image used to display filtering with GridMultiColumnDropDownList in SfDataGrid UWP](Column-Types_images/Column-Types_img28.png)
 
 ### Auto increment
 
@@ -1685,7 +1685,7 @@ SfMultiDropDownControl can automatically adjust the popup width based on the act
 
 You can allow end-user to resize the drop-down popup by showing resizing thumb by setting [ShowResizeThumb](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~ShowResizeThumb.html) property to `Visible`.
 
-![](Column-Types_images/Column-Types_img29.png)
+![Image used to display resizing with GridMultiColumnDropDownList in SfDataGrid UWP](Column-Types_images/Column-Types_img29.png)
 
 #### Keep popup open on editing
 
@@ -1730,7 +1730,7 @@ this.dataGrid.Columns.Add(new GridHyperlinkColumn() { HeaderText = "Country", Ma
 {% endhighlight %}
 {% endtabs %}
 
-![](Column-Types_images/Column-Types_img30.png)
+![Image used to display GridHyperlinkColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img30.png)
 
 You can allow end-user to navigate the `Uri` when the cell value contains valid `Uri` address or using [CurrentCellRequestNavigate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellRequestNavigate_EV.html) event. The `CurrentCellRequestNavigate` occurs when the current cell in `GridHyperlinkColumn` is clicked for navigation.
   
@@ -1804,7 +1804,7 @@ this.dataGrid.Columns.Add(new GridImageColumn() { HeaderText = "Flag", MappingNa
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img31.png)
+![Image used to display GridImageColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img31.png)
 
 ### Read image from path using ValueBinding
 
@@ -1887,7 +1887,7 @@ this.dataGrid.Columns.Add(new GridUpDownColumn() { HeaderText = "Unit Price", Ma
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img32.png)
+![Image used to display GridUpDownColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img32.png)
 
 ### Parsing Mode
 
@@ -1940,7 +1940,7 @@ this.sfDataGrid.Columns.Add(new GridToggleSwitchColumn() { MappingName = "IsDeli
 
 GridToggleSwitchColumn provides support to display the text, while ToggleSwitch is in `ON`/`OFF` state based on [OnContent](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridToggleSwitchColumn~OnContent.html) and [OffContent](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridToggleSwitchColumn~OffContent.html) properties.
 
-![](Column-Types_images/Column-Types_img36.png)
+![Image used to display GridToggleSwitchColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img36.png)
 
 ## Custom column support
 
@@ -2240,7 +2240,7 @@ public class GridCellTextBoxRendererExt: GridCellTextBoxRenderer
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img33.png)
+![Image used to display customization of foreground of column by customizing the renderer in SfDataGrid UWP](Column-Types_images/Column-Types_img33.png)
 
 ### Create the renderer of existing column
 
@@ -2436,7 +2436,7 @@ public class GridComboBoxRenderer: GridVirtualizingCellRenderer<ContentControl,S
 {% endtabs %}
 
 
-![](Column-Types_images/Column-Types_img34.png)
+![Image used to display custom column created from existing renderer in SfDataGrid UWP](Column-Types_images/Column-Types_img34.png)
 
 ### Creating new column and renderer
 
@@ -2739,7 +2739,7 @@ this.dataGrid.Columns.Add(new TimePickerColumn() { HeaderText = "Delivered Time"
 {% endhighlight %}
 {% endtabs %}
 
-![](Column-Types_images/Column-Types_img35.png)
+![Image used to display custom TimePickerColumn in SfDataGrid UWP](Column-Types_images/Column-Types_img35.png)
 
 ## How To
 
