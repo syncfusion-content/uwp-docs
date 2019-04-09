@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Types in SfDataGrid
+title: Column Types | DataGrid | UWP | Syncfusion
 description: How to use different column types in SfDataGrid.
 platform: uwp
 control: SfDataGrid
