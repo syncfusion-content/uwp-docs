@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Getting Started with SfComboBox control for UWP 
+title:  Getting Started | SfComboBox control for UWP | Syncfusion
 description:  Guidelines to create Syncfusion SfComboBox control for Universal Windows Platform project in Visual Studio 
 platform: uwp
 control: SfComboBox  
