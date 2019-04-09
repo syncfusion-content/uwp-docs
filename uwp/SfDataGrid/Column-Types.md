@@ -2008,7 +2008,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
     {
         if (value == null)
             return null;
-        return value != null ? ((DateTimeOffset)value).DateTime : DateTime.Now;
+        return ((DateTimeOffset)value).DateTime;
     }
 
     object IValueConverter.ConvertBack(object value, Type targetType, object parameter, string language)
@@ -2016,7 +2016,7 @@ public class DateTimeOffsetToDateTimeConverter : IValueConverter
 
         if (value == null)
             return null;
-        return value != null ? (new DateTimeOffset((DateTime)value)) : new DateTimeOffset(DateTime.Now);
+        return value is DateTimeOffset ? value : new DateTimeOffset((DateTime)value);
 
     }
 }
@@ -2053,15 +2053,19 @@ In the below code snippet, created `GridDateTimeOffsetColumn` added to `SfDataGr
     <syncfusion:SfDataGrid.Columns>
         <local:GridDateTimeOffsetColumn FormatString="F"
                                         HeaderText="Order Date"
-                                        MappingName="OrderDate" />
+                                        MappingName="OrderDate" 
+                                        AllowInlineEditing="True"
+                                        UseBindingValue="True"/>
     </syncfusion:SfDataGrid.Columns>
 
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridDateTimeOffsetColumn() { HeaderText = "Order Date", MappingName = "OrderDate", FormatString = "F" });
+this.dataGrid.Columns.Add(new GridDateTimeOffsetColumn() { HeaderText = "Order Date", MappingName = "OrderDate", FormatString = "F" , AllowInlineEditing = true, UseBindingValue = true });
 {% endhighlight %}
 {% endtabs %}
+
+You can get the sample from [here](https://github.com/SyncfusionExamples/how-to-create-a-custom-column-from-existing-column-in-wpf-and-uwp-datagrid/tree/master/UWP).
 
 ### Customize column renderer
 
