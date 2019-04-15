@@ -81,7 +81,9 @@ N> You cannot delete the path.
 
 ## Resize a shape or text or customView
 
-You can resize a selected shape, text, or customView using the `ResizableElements` property (e.g.: imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.ImageEditorResizableElements.Shapes represents that shapes(`Rectangle`, `Circle` or `Arrow`) can be resizable. Other elements such as Text and CustomView cannot be resizable).
+You can resize a selected shape, text, or customView using the `ResizableElements` property.
+
+Example: imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.ImageEditorResizableElements.Shapes represents that shapes(`Rectangle`, `Circle` or `Arrow`) can be resizable. Other elements such as Text and CustomView cannot be resizable.
 
 >Note: By default, all the elements are resizable.
 
