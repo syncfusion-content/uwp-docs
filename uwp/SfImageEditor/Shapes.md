@@ -41,7 +41,7 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
 
 {% endhighlight %}
 
-![](shapes_images/annotate.png)
+![Change StrokWidth of the shape in UWP ImageEditor](shapes_images/annotate.png)
 
 * You can annotate any path on an image by using free hand drawing as shown in the below code,
 
@@ -54,7 +54,7 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
 
 {% endhighlight %}
 
-![](shapes_images/path.png)
+![Annotate path on an image in UWP ImageEditor](shapes_images/path.png)
 
 ## To delete a shape or text from the view
 
@@ -78,3 +78,17 @@ programmatically, the selected shape can be deleted by using the Delete method a
 {% endhighlight %}
 
 N> You cannot delete the path.
+
+## Resize a shape or text or customView
+
+You can resize a selected shape, text, or customView using the `ResizableElements` property.
+
+Example: imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.ImageEditorResizableElements.Shapes represents that shapes(`Rectangle`, `Circle` or `Arrow`) can be resizable. Other elements such as Text and CustomView cannot be resizable.
+
+>Note: By default, all the elements are resizable.
+
+{% highlight C# %}
+
+    imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.ImageEditorResizableElements.Shapes;
+
+{% endhighlight %}
