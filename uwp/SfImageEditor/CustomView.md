@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-## Adding custom view
+## Adding the custom view
 
  You can add any custom shape or view to an image using the `AddCustomView` method in the image editor
  control. To add a custom view, specify the view and its desired `CustomViewSettings` as demonstrated in the 
@@ -21,9 +21,9 @@ documentation: ug
 
 {% endhighlight %}
 
- ## Custom view settings
+## Custom view settings
 
-The CustomViewSettings is defined to set values for the `CanMaintainAspectRatio`, `Bounds`, and `Angle` properties.
+The `CustomViewSettings` is defined to set values for the `CanMaintainAspectRatio`, `Bounds`, and `Angle` properties.
 
 * The CanMaintainAspectRatio property is used to decide whether the aspect ratio value needs to be maintained when resizing the custom view.
 
