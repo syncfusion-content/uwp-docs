@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UWP Extension | uwp | Syncfusion
+title: Overview | uwp | Syncfusion
 description: The Syncfusion UWP Project Templates provides quick access to create Syncfusion UWP Application by adding the required assemblies
 platform: uwp
 control: Syncfusion Extensions
@@ -17,8 +17,8 @@ I> The Syncfusion UWP menu option is available from v17.1.0.32.
 
 The Syncfusion provides the following extension supports in Visual Studio:
 
-1.	[Create Project](https://help.syncfusion.com/uwp/Visual-Studio-Integration/Visual-Studio-Extensions/Create-Project): To create the Syncfusion UWP application by adding required Syncfusion assemblies/NuGet based on the control chosen.
-2.	[Troubleshooter](https://help.syncfusion.com/uwp/Visual-Studio-Integration/Visual-Studio-Extensions/Troubleshooting): Troubleshoot the project with the Syncfusion configuration and apply the fix like, wrong Framework Syncfusion assembly added to the project or missing any Syncfusion dependent assembly of a referred assembly.
+1.	[Create Project](https://help.syncfusion.com/uwp/Visual-Studio-Integration/Visual-Studio-Extensions/Create-Project): Create the Syncfusion UWP application by adding required Syncfusion assemblies/NuGet based on the control chosen.
+2.	[Troubleshooting](https://help.syncfusion.com/uwp/Visual-Studio-Integration/Visual-Studio-Extensions/Troubleshooting): Troubleshoots the project with the Syncfusion configuration and apply the fix like, wrong Framework Syncfusion assembly added to the project or missing any Syncfusion dependent assembly of a referred assembly.
 
 **No project selected in Visual Studio**
 
@@ -28,12 +28,6 @@ The Syncfusion provides the following extension supports in Visual Studio:
 
 ![Syncfusion Menu when Selected Syncfusion UWP application in Visual Studio](Overview-images/Syncfusion_Menu_OverView2.png)
 
-N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
+N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
-The Syncfusion UWP Visual Studio Extensions are installed along with the following setups,
-
-* Essential Studio for Enterprise Edition with the platform UWP
-* Essential Studio for UWP
-
-N> The Syncfusion UWP Project Templates provide Visual Studio 2015 support from v15.3.0.26 to v16.4.0.52.
 

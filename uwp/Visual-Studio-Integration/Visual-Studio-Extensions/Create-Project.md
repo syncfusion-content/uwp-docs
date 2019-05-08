@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion UWP Project Templates | uwp | Syncfusion
+title: Create Project | uwp | Syncfusion
 description: Syncfusion provides the Visual Studio Project Templates for the Syncfusion UWP platform to create Syncfusion UWP Applications
 platform: uwp
 control: Syncfusion Extensions
@@ -22,7 +22,7 @@ Use the following steps to create the Syncfusion UWP project through the Visual 
    
    ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog via Syncfusion menu](Syncfusion-Project-Templates_images/Syncfusion_Menu_ProjectTemplate.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2:**  
    Choose **File > New > Project** and navigate to **Syncfusion > Windows Universal > Syncfusion Universal Windows Application** in **Visual Studio**.
@@ -51,7 +51,7 @@ Use the following steps to create the Syncfusion UWP project through the Visual 
    
    N> If SDK is chosen as the reference type, then all the Syncfusion UWP controls will be added. So, you no need to select any components.
    
-4. Once you click Create button, the Syncfusion UWP Application is created with required SDK/references and pages.
+4. After click **Create** button, the Syncfusion UWP Application is created with required SDK/references and pages.
 
    ![Syncfusion UWP Project created with SDK reference](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img5.jpeg)
 
