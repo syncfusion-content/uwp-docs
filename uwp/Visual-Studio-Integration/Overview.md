@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | uwp | Syncfusion
+title: Overview | UWP | Syncfusion
 description: The Syncfusion UWP Project Templates provides quick access to create Syncfusion UWP Application by adding the required assemblies
 platform: uwp
 control: Syncfusion Extensions
