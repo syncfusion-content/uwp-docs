@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check for Updates | uwp | Syncfusion
+title: Check for Updates | UWP | Syncfusion
 description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio release.
 platform: uwp
 control: Visual Studio Extensions
