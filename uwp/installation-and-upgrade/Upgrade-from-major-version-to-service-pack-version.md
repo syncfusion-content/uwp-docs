@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrade from major version to service pack version| common | Syncfusion
+title: Upgrade from major version to service pack version | UWP | Syncfusion
 description: upgrade from major version to service pack version
 platform: uwp
 control: Essential Studio
