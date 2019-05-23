@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started documentation of the SfDropDownButton control for UWP
-description: Getting Started documentation to create Syncfusion SfDropDownButton control for Universal Windows Platform project in Visual Studio 
+title: Getting Started | DropDownButton Control | UWP
+description: This documentation provides details about creating DropDownButton control in UWP application.  
 
 platform: uwp
 control:  SfDropDownButton
