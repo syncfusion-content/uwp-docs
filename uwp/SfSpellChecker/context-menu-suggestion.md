@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu Suggestion for SfSpellChecker control in UWP
+title: Context Menu Suggestion for SfSpellChecker | Syncfusion | UWP
 description: Context Menu Suggestion for SfSpellChecker control in UWP
 platform: UWP
 control: SfSpellChecker
@@ -160,6 +160,6 @@ SpellChecker.PerformSpellCheckUsingContextMenu(SpellEditor);
 
 {% endtabs %}
 
-![](context-menu-suggestion-images/context-menu-suggestion.jpeg)
+![Suggestion using context menu](context-menu-suggestion-images/context-menu-suggestion.jpeg)
 
 
