@@ -32,11 +32,11 @@ public TextSpellEditor(Control control)
 
 {
 
-ControlToSpellCheck = control;
+ControlToCheck = control;
 
 }
 
-public Control ControlToSpellCheck
+public Control ControlToCheck
 
 {
 
@@ -122,7 +122,7 @@ public void Focus()
 
 {
 
-textbox.Focus();
+textbox.Focus(Windows.UI.Xaml.FocusState.Pointer);
 
 }
 
