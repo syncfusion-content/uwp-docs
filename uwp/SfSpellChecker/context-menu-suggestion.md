@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context Menu Suggestion for SfSpellChecker control in UWP
+title: Context Menu Suggestion for SfSpellChecker | Syncfusion | UWP
 description: Context Menu Suggestion for SfSpellChecker control in UWP
 platform: UWP
 control: SfSpellChecker
@@ -32,11 +32,11 @@ public TextSpellEditor(Control control)
 
 {
 
-ControlToSpellCheck = control;
+ControlToCheck = control;
 
 }
 
-public Control ControlToSpellCheck
+public Control ControlToCheck
 
 {
 
@@ -122,7 +122,7 @@ public void Focus()
 
 {
 
-textbox.Focus();
+textbox.Focus(Windows.UI.Xaml.FocusState.Pointer);
 
 }
 
@@ -160,6 +160,6 @@ SpellChecker.PerformSpellCheckUsingContextMenu(SpellEditor);
 
 {% endtabs %}
 
-![](context-menu-suggestion-images/context-menu-suggestion.jpeg)
+![Suggestion using context menu](context-menu-suggestion-images/context-menu-suggestion.jpeg)
 
 
