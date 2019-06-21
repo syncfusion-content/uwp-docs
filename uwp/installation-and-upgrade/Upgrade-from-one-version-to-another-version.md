@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrade from one version to another version| common | Syncfusion
+title: Upgrade from one version to another version | UWP | Syncfusion
 description: upgrade from one version to another version
 platform: uwp
 control: Essential Studio

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of SfRadialMenu  control for UWP
-description:This section provides an features overview of SfRadialMenu control for UWP.
+title: Overview | RadialMenu | UWP | Syncfusion
+description: The UWP RadialMenu control displays a hierarchy of menu items in a circular layout. It supports nested items, data binding, dragging, and more which allows users to set the style or properties according to their need.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug

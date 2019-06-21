@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with SfRadialMenu control for UWP
-description:This section provides an guidance for getting Started with SfRadialMenu control for UWP.
+title: Getting Started | RadialMenu | UWP | Syncfusion
+description:This section provides the steps to create RadialMenu control in UWP application.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
