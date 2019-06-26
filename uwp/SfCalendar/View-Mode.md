@@ -1,10 +1,10 @@
 ---
 layout: post
-title: View Modes on SfCalendar for UWP
+title: title: View Modes | SfCalendar | uwp | Syncfusion
 description: Learn how to change the view mode for calendar
 platform: uwp
 control: Calendar
-documentation: ugs
+documentation: ug
 ---
 
 # Built-in Views
