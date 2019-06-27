@@ -1,6 +1,6 @@
 ---
-title: Overview
-description: overview
+title: Overview of RichTextBox | UWP | Syncfusion
+description: The UWP RichTextBox control, also known as WYSIWYG rich text editor allows users to create, view, edit, and print rich text documents similar to Microsoft Word.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
