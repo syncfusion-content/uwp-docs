@@ -11,7 +11,7 @@ documentation: ug
 
 Page settings enable to customize the appearance, width, and height of the Diagram page.
 
-![](Page-Settings_images/Page-Settings_img1.jpeg)
+![UWP SfDiagram customize the page of node](Page-Settings_images/Page-Settings_img1.jpeg)
 
 ## Page size and appearance
 
@@ -59,15 +59,15 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 {% endhighlight %}
 
-![](Page-Settings_images/Page-Settings_img2.jpeg)
+![UWP SfDiagram displays border thickness of page](Page-Settings_images/Page-Settings_img2.jpeg)
 
-![](Page-Settings_images/Page-Settings_img3.jpeg)
+![UWP SfDiagram displays border thickness page with node](Page-Settings_images/Page-Settings_img3.jpeg)
 
 ## Multiple Page and Page Breaks
 
 When MultiplePage is enabled, size of the page dynamically increases or decreases in multiple of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
 
-![](Page-Settings_images/Page-Settings_img4.jpeg)
+![UWP SfDiagram displays multiple page](Page-Settings_images/Page-Settings_img4.jpeg)
 
 `MultiplePage` and `ShowPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively. The following code illustrates how to enable multiple page and page break lines.
 
