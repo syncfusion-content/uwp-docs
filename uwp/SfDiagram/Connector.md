@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Diagram supports for connecting two points, nodes or ports.
+title: UWP Diagram supports for connecting two nodes | Syncfusion
 description: How to draw a line to connect points, nodes, or ports?
 platform: uwp
 control: SfDiagram

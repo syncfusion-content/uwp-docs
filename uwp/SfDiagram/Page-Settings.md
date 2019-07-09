@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Customize the size and appearance of single or multiple Diagram pages.
+title: UWP Diagram page customization | Syncfusion
 description: How to customize the size and appearance of the Diagram pages?
 platform: uwp
 control: SfDiagram

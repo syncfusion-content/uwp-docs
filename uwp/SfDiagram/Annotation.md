@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add text annotations to Diagram objects to textually describe them.
+title: Add text annotation to Diagram objects | Syncfusion
 description: How to textually describe Nodes and Connectors?
 platform: uwp
 control: SfDiagram
