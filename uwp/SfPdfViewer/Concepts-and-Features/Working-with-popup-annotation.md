@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with popup annotations in Syncfusion Essential UWP PDF viewer.
+title: Using with popup annotations in UWP PDF Viewer | Syncfusion
 description: Working with popup annotations in Syncfusion Essential UWP PDF viewer.
 platform: uwp
 control: PDF viewer

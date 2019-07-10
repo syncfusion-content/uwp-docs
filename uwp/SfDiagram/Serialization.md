@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Serialize the Diagram as XAML and load Diagram from serialized XAML
+title: UWP Diagram serialization and de-serialization | Syncfusion
 description: How to save and load the Diagram?
 platform: uwp
 control: SfDiagram
