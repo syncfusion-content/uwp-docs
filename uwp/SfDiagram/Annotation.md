@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add text annotations to Diagram objects to textually describe them.
+title: Add text annotation to UWP Diagram objects | Syncfusion
 description: How to textually describe Nodes and Connectors?
 platform: uwp
 control: SfDiagram
@@ -77,7 +77,7 @@ diagram.Connectors = lines;
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img1.jpeg)
+![UWP SfDiagram showing add new node](Annotation_images/Annotation_img1.jpeg)
 
 ## Alignment
 
@@ -89,11 +89,11 @@ The `Offset` property of IAnnotation is used to align the Annotations based on f
 
 The following image shows the relationship between the Annotation position (black colored circle) and Offset (fraction values).
 
-![](Annotation_images/Annotation_img2.jpeg)
+![UWP SfDiagram showing offset value](Annotation_images/Annotation_img2.jpeg)
 
 By using Offset property, without creating the template we can arrange the Annotation.
 
-![](Annotation_images/Annotation_img3.jpeg)
+![UWP SfDiagram showing arrange the offset value](Annotation_images/Annotation_img3.jpeg)
 
 ### Horizontal and Vertical alignments
 
@@ -103,15 +103,15 @@ The following table illustrates all the possible alignments visually with **Offs
 
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
-| Left | Top | ![](Annotation_images/Annotation_img4.jpeg) |
-| Center | | ![](Annotation_images/Annotation_img5.jpeg) |
-| Right | | ![](Annotation_images/Annotation_img6.jpeg) |
-| Left | Center | ![](Annotation_images/Annotation_img7.jpeg) |
-| Center | | ![](Annotation_images/Annotation_img8.jpeg) |
-| Right | | ![](Annotation_images/Annotation_img9.jpeg) |
-| Left | Bottom | ![](Annotation_images/Annotation_img10.jpeg) |
-| Center | | ![](Annotation_images/Annotation_img11.jpeg) |
-| Right | | ![](Annotation_images/Annotation_img12.jpeg) |
+| Left | Top | ![UWP SfDiagram displays left and top alignment of annotation](Annotation_images/Annotation_img4.jpeg) |
+| Center | | ![UWP SfDiagram displays center alignment of annotation](Annotation_images/Annotation_img5.jpeg) |
+| Right | | ![UWP SfDiagram displays right alignment of annotation](Annotation_images/Annotation_img6.jpeg) |
+| Left | Center | ![UWP SfDiagram displays left and center alignment of annotation](Annotation_images/Annotation_img7.jpeg) |
+| Center | | ![UWP SfDiagram displays center alignment of annotation](Annotation_images/Annotation_img8.jpeg) |
+| Right | | ![UWP SfDiagram displays right alignment of annotation](Annotation_images/Annotation_img9.jpeg) |
+| Left | Bottom | ![UWP SfDiagram displays left and bottom alignment of annotation](Annotation_images/Annotation_img10.jpeg) |
+| Center | | ![UWP SfDiagram displays center alignment of annotation](Annotation_images/Annotation_img11.jpeg) |
+| Right | | ![UWP SfDiagram displays right alignment of annotation](Annotation_images/Annotation_img12.jpeg) |
 
 The following codes illustrates how to align Annotations.
 
@@ -146,7 +146,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img16.jpeg)
+![UWP SfDiagram added nodes](Annotation_images/Annotation_img16.jpeg)
 
 ### Margin
 
@@ -185,7 +185,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img17.jpeg)
+![UWP SfDiagram display add margin values to annotation](Annotation_images/Annotation_img17.jpeg)
 
 The following code illustrates how to displace Annotation through with the Margin property.
 
@@ -204,7 +204,7 @@ new AnnotationEditorViewModel()
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img18.jpeg)
+![UWP SfDiagram showing offset and absolute position of annotation](Annotation_images/Annotation_img18.jpeg)
 
 ## Wrapping
 
@@ -239,12 +239,12 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img19.jpeg)
+![UWP SfDiagram displays wrapped the text of annotation](Annotation_images/Annotation_img19.jpeg)
 
 | Values | Description | Node | Connector|
 |---|---|---|---|
-| NoWrap | Text will not be wrapped. | ![](Annotation_images/Annotation_img20.jpeg) | ![](Annotation_images/Annotation_img21.jpeg) |
-| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![](Annotation_images/Annotation_img22.jpeg) | ![](Annotation_images/Annotation_img23.jpeg) |
+| NoWrap | Text will not be wrapped. | ![UWP SfDiagram text not applied to wrap with node](Annotation_images/Annotation_img20.jpeg) | ![UWP SfDiagram text not applied to wrap with connector](Annotation_images/Annotation_img21.jpeg) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available Node width. | ![UWP SfDiagram text applied to wrap with node](Annotation_images/Annotation_img22.jpeg) | ![UWP SfDiagram text applied to wrap with connector](Annotation_images/Annotation_img23.jpeg) |
 
 ## Appearance 
 
@@ -294,7 +294,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img24.jpeg)
+![UWP SfDiagram customize the appearance of annotation](Annotation_images/Annotation_img24.jpeg)
 
 The Appearance of the Annotation can also be customized with appearance specific properties. The following code illustrates how to customize background and border of a Annotation.
 
@@ -311,7 +311,7 @@ The Appearance of the Annotation can also be customized with appearance specific
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img25.jpeg)
+![UWP SfDiagram applied background and border color of annotation](Annotation_images/Annotation_img25.jpeg)
 
 ## Edit
 
@@ -370,7 +370,7 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img28.jpeg)
+![UWP SfDiagram showing edit the nodes of annotation](Annotation_images/Annotation_img28.jpeg)
 
 ## Interaction
 
@@ -402,7 +402,7 @@ Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction
 
 {% endhighlight %}
 
-![](Annotation_images/annotation_selection.png)
+![UWP SfDiagram showing selected node of annotation](Annotation_images/annotation_selection.png)
 
 ## Rotation
 Automatic annotation orientation based on Parent(Node/Connector) or Page direction. To make Annotation of the Node as always horizontal when Node is rotated. We have provided `RotationReference` property to the Annotation.
@@ -434,11 +434,11 @@ Automatic annotation orientation based on Parent(Node/Connector) or Page directi
 
 The below image represents " RotationReference=RotationReference.Page" for Annotation (Node).
 
-![](Annotation_images/annotation_rotation.png)
+![UWP SfDiagram displays rotated node](Annotation_images/annotation_rotation.png)
 
 The below image represents " RotationReference=RotationReference.Parent" for Annotation(Connector).
 
-![](Annotation_images/Annotation_ParentRotation.png)
+![UWP SfDiagram displays rotated connector](Annotation_images/Annotation_ParentRotation.png)
 
 
 ## Read Only Annotation
@@ -521,4 +521,4 @@ diagram.Nodes = nodes;
 
 {% endhighlight %}
 
-![](Annotation_images/Annotation_img29.jpeg)
+![UWP SfDiagram displays add more annotations of nodes](Annotation_images/Annotation_img29.jpeg)

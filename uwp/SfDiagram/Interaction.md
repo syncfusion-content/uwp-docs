@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion diagram supports nodes and connectors run time interaction.
+title: UWP Diagram nodes selection and CRUD operations | Syncfusion
 description: How to select and edit nodes and connectors during runtime?
 platform: uwp
 control: SfDiagram
