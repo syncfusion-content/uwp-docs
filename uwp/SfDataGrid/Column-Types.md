@@ -1655,7 +1655,7 @@ You can allow SfMultiDropDownControl to complete the entered input value automat
  
 ### Filtering
 
-You can allow SfMultiDropDownControl to filter the drop-down list items dynamically based on the text typed on editor by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowIncrementalFiltering.html) property to `true’.
+You can allow SfMultiDropDownControl to filter the drop-down list items dynamically based on the text typed on editor by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowIncrementalFiltering.html) property to `true`.
  
 `GridMultiColumnDropDownList` allows you to filter the items based on case by setting [AllowCasingforFilter](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList~AllowCasingforFilter.html) to `true`. This will help users to select from large number of items.
 
@@ -1710,6 +1710,80 @@ public class GridCellMultiColumnDropDownRendererExt: GridCellMultiColumnDropDown
 }
 {% endhighlight %}
 {% endtabs %}
+
+### Loading different ItemsSource for each row
+
+You can load different ItemsSource to each row of `GridMultiColumnDropDownList` by setting the `SfDataGrid.ItemsSourceSelector` property. 
+
+### Implementing IItemsSourceSelector
+
+`ItemsSourceSelector` needs to implement the `IItemsSourceSelector` interface, which is required to implement the `GetItemsSource` method. The `GetItemsSource` method receives the following parameters:
+<ul>
+<li> <b>Record</b> – Data object associated with row.</li>
+<li> <b>Data Context</b>  – Data context of data grid.</li>
+</ul>
+
+In the following code, ItemsSource for `ShipCity` column is returned based on `ShipCountry` column value using the record and data context of data grid passed to the `GetItemsSource` method.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Page.Resources>
+        <local:ItemsSourceSelector x:Key="itemSourceSelector" />
+</Page.Resources>
+
+<syncfusion:SfDataGrid x:Name="sfdatagrid"
+                                AllowEditing="True"
+                                AutoGenerateColumns="False"
+                                ItemsSource="{Binding OrderDetails}"
+                                ColumnSizer="Star">
+   <syncfusion:SfDataGrid.Columns>
+                <syncfusion:GridTextColumn MappingName="OrderID" />
+                <syncfusion:GridTextColumn MappingName="CustomerID" />
+                <syncfusion:GridComboBoxColumn MappingName="ShipCountry"  ItemsSource="{Binding Path=DataContext.CountryList, ElementName=sfdatagrid}"/>
+                <syncfusion:GridMultiColumnDropDownList AllowEditing="True"  HeaderText="ShipCity"  DisplayMember="ShipCityName"
+                                         				ItemsSourceSelector="{StaticResource itemSourceSelector}" 
+														MappingName="ShipCityID"  ValueMember="ShipCityID"/>
+                <syncfusion:GridTextColumn MappingName="ProductName" />
+           </syncfusion:SfDataGrid.Columns>
+ </syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+/// <summary>
+/// Implementation class for ItemsSourceSelector interface
+/// </summary>
+public class ItemsSourceSelector : IItemsSourceSelector
+{
+    public IEnumerable GetItemsSource(object record, object dataContext)
+    {
+        if (record == null)
+            return null;
+  
+        var orderinfo = record as OrderDetails;
+        var countryName = orderinfo.ShipCountry;
+  
+        var viewModel = dataContext as ViewModel;
+  
+        //Returns ShipCity collection based on ShipCountry.
+        if (viewModel.ShipCities.ContainsKey(countryName))
+        {
+            ObservableCollection<ShipCityDetails> shipCities = null;
+            viewModel.ShipCities.TryGetValue(countryName, out shipCities);
+            return shipCities.ToList();
+        }
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+The following screenshot illustrates the different `ShipCity` ItemsSource bound to each row of `MultiColumnDropDownList` based on the country name.
+
+![Displaying different itemssource for different rows using the ItemsSourceSelector property of GridMultiColumnDropDownList in UWP SfDataGrid](Column-Types_images/Column-Types_img39.png)
+
+![Displaying different itemssource for different rows using the ItemsSourceSelector property of GridMultiColumnDropDownList in UWP SfDataGrid](Column-Types_images/Column-Types_img40.png)
+
+You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-load-different-items-for-each-row-in-multicolumn-dropdown-column-in-wpf-and-uwp-datagrid).
 
 ## GridHyperlinkColumn
 

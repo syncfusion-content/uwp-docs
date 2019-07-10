@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with shape annotations in Syncfusion Essential UWP PDF viewer.
+title: Using shape annotations in UWP PDF Viewer | Syncfusion
 description: Working with shape annotations in Syncfusion Essential UWP PDF viewer.
 platform: uwp
 control: PDF viewer
