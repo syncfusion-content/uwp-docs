@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalize and Localize the Diagram control.
+title: Syncfusion | Globalize and Localize the Diagram control.
 description: How to globalize and localize the Diagram control?
 platform: uwp
 control: SfDiagram
@@ -13,7 +13,7 @@ Localization is the process of providing controls in different cultures to help 
 
 ## Customizing Context Menu
 
-![](Localization_images/Localization_img1.jpeg)
+![Localizing context menu](Localization_images/Localization_img1.jpeg)
 
 The following code illustrates how to provide localization support for Context Menu items.
 
@@ -32,6 +32,6 @@ manager = new System.Resources.ResourceManager("Localization.Resources.Syncfusio
 
 {% endhighlight %}
 
-![](Localization_images/Localization_img2.jpeg)
+![Node with localized context menu](Localization_images/Localization_img2.jpeg)
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.

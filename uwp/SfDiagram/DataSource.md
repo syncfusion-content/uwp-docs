@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate Diagram from external data sources.
+title: Syncfusion | Populate Diagram from external data sources.
 description: How to populate the Diagram from the local data?
 platform: uwp
 control: SfDiagram
@@ -64,7 +64,7 @@ For more information about Node, Connector and Business Class[Employee] , Please
 
 Sample Link : [DataSource Sample](http://www.syncfusion.com/downloads/support/directtrac/215122/ze/Data_Source_Settings653993591)
 
-![](DataSource_images/DataSource_img1.png)
+![DataSource](DataSource_images/DataSource_img1.png)
 
 ## Root
 
@@ -79,4 +79,4 @@ diagram.DataSourceSettings.Root = “CEO”;
 {% endhighlight %}
 {% endtabs %}
 
-![](DataSource_images/DataSource_img2.jpeg)
+![DataSource with Root](DataSource_images/DataSource_img2.jpeg)
