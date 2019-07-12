@@ -388,7 +388,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![Manually defined relations for nested level DataGrid in UWP](Master-Details-View_images/Master-Details-View_img4.png)
+![Manually defined relations for master details view DataGrid in UWP](Master-Details-View_images/Master-Details-View_img4.png)
 
 ## Populating Master-Details view through events
 
@@ -1547,7 +1547,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![header appearance of DetailsViewDataGrid in UWP](Master-Details-View_images/Master-Details-View_img7.png)
+![header appearance customization in master details view of UWP DataGrid](Master-Details-View_images/Master-Details-View_img7.png)
 
 ### Hiding header row of Master-Details View
 You can hide the header row of `DetailsViewDataGrid` by setting [HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
@@ -1605,7 +1605,7 @@ this.dataGrid.DetailsViewPadding = new Thickness(15);
 {% endhighlight %}
 {% endtabs %}
 
-![customizing padding in UWP DataGrid](Master-Details-View_images/Master-Details-View_img9.png)
+![Padding customization of master details view in UWP DataGrid](Master-Details-View_images/Master-Details-View_img9.png)
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties).
 
@@ -1677,13 +1677,13 @@ By default, the expander will be visible for all the data rows in parent DataGri
 {% endhighlight %}
 {% endtabs %}
 
-![hiding expander when parent records relation property has an empty collection or null in UWP DataGrid](Master-Details-View_images/Master-Details-View_img10.png)
+![Hiding expander icon for empty details view in UWP DataGrid](Master-Details-View_images/Master-Details-View_img10.png)
 
 ## Hiding GridDetailsViewIndentCell
 
 [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowDetailsViewIndentCell.html) property to `False` for the respective parent grid.
 
-![UWP DataGrid shows griddetailsviewindentCell](Master-Details-View_images/Master-Details-View_img11.png)
+![Indent cells of master details view in UWP DataGrid](Master-Details-View_images/Master-Details-View_img11.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1707,7 +1707,7 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![hiding griddetailsviewindentCell in UWP DataGrid](Master-Details-View_images/Master-Details-View_img12.png)
+![hiding indent cells of master details view in UWP DataGrid](Master-Details-View_images/Master-Details-View_img12.png)
 
 ## Hiding the details view expander icon based on child items count
 
