@@ -29,7 +29,7 @@ The following code example explains how to add Overview to an Application.
 	
 {% endhighlight %}	
 
-![](Overview-Control_images/Overview-Control_img1.jpeg)
+![Overview control](Overview-Control_images/Overview-Control_img1.jpeg)
 
 Refer to the Overview Sample from the following link.
 
