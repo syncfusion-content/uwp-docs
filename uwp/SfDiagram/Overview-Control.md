@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create a preview of the entire content of the Diagram.
+title: Syncfusion | Create a preview of the entire content of the Diagram.
 description: How to see the preview of the large Diagrams and to ease navigations within that Diagram?
 platform: uwp
 control: SfDiagram
@@ -29,7 +29,7 @@ The following code example explains how to add Overview to an Application.
 	
 {% endhighlight %}	
 
-![](Overview-Control_images/Overview-Control_img1.jpeg)
+![Overview control](Overview-Control_images/Overview-Control_img1.jpeg)
 
 Refer to the Overview Sample from the following link.
 
