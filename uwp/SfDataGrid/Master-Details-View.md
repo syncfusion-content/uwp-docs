@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Master-Details View in SfDataGrid
+title: Master-Details View in SfDataGrid | Syncfusion
 description: Master-Details View in SfDataGrid.
 platform: uwp
 control: SfDataGrid
@@ -11,7 +11,7 @@ documentation: ug
 
 SfDataGrid provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 
-![](Master-Details-View_images/Master-Details-View_img1.png)
+![UWP DataGrid shows master details view](Master-Details-View_images/Master-Details-View_img1.png)
 
 ## Generating Master-Details view from IEnumerable
 
@@ -289,7 +289,7 @@ dataGrid.AutoGenerateRelations = true;
 When relations are auto-generated, you can handle the [SfDataGrid.AutoGeneratingRelations](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event to customize or cancel the [GridViewDefinition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridViewDefinition.html) before they are added to the [SfDataGrid.DetailsViewDefinition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~DetailsViewDefinition.html). 
 Here, two relations are created from `Sales` and `Orders` collection property.
 
-![](Master-Details-View_images/Master-Details-View_img2.png)
+![UWP DataGrid shows auto-generated relations](Master-Details-View_images/Master-Details-View_img2.png)
 
 #### Manually defining Relations
 
@@ -336,7 +336,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition2);
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img3.png)
+![Manually defined relations in UWP DataGrid](Master-Details-View_images/Master-Details-View_img3.png)
 
 In the same way, you can define relations for first level nested grids by defining relations to the [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) of first level nested grid.
 
@@ -388,7 +388,7 @@ dataGrid.DetailsViewDefinition.Add(gridViewDefinition1);
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img4.png)
+![Manually defined relations for nested level DataGrid in UWP](Master-Details-View_images/Master-Details-View_img4.png)
 
 ## Populating Master-Details view through events
 
@@ -616,7 +616,7 @@ Void FirstLevelNestedGrid_AutoGeneratingRelations(object sender, AutoGeneratingR
 
 N> When you make any change in one [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), that change will be applied to all [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) in the same level. For example, when you resize the first column in one [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html), the same column width is applied to all [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html) at that level. This is applicable for features like filtering, sorting, grouping and re ordering columns also. 
 
-![](Master-Details-View_images/Master-Details-View_img5.png)
+![UWP DataGrid shows auto-generated relations](Master-Details-View_images/Master-Details-View_img5.png)
 
 Here, `SalesID` column is sorted in all DetailsViewDataGrid at the same level.
 
@@ -753,7 +753,7 @@ Now, you can add the custom column to `Columns` collection of `ViewDefinition.Da
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img6.png)
+![custom column in master details view of UWP DataGrid](Master-Details-View_images/Master-Details-View_img6.png)
 
 ## Handling events for DetailsViewDataGrid
 
@@ -1275,7 +1275,7 @@ var detailsViewDataGrid = this.dataGrid.GetDataGrid();
 
 ### Getting the SelectedItem, SelectedItems and SelectedIndex of DetailsViewDataGrid
 
-You can access the selected record or records and selected record index of `DetailsViewDataGrid’ by using [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html), [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) and [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedIndex.html) properties directly.
+You can access the selected records and selected record index of `DetailsViewDataGrid` using the [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html), [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) and [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedIndex.html) properties directly.
 
 {% tabs %}
 {% highlight c# %}
@@ -1547,7 +1547,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img7.png)
+![Image used to display the header appearance of details view in UWP DataGrid](Master-Details-View_images/Master-Details-View_img7.png)
 
 ### Hiding header row of Master-Details View
 You can hide the header row of `DetailsViewDataGrid` by setting [HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
@@ -1577,7 +1577,7 @@ FirstLevelNestedGrid.HeaderRowHeight = 0;
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img8.png)
+![UWP DataGrid shows hiding the header row of master details view](Master-Details-View_images/Master-Details-View_img8.png)
 
 ### Customizing padding of the DetailsViewDataGrid
 
@@ -1605,7 +1605,7 @@ this.dataGrid.DetailsViewPadding = new Thickness(15);
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img9.png)
+![UWP DataGrid shows customizing padding in master details view](Master-Details-View_images/Master-Details-View_img9.png)
 
 N> For customizing appearance for second level nested grid, you can refer [here](#defining-properties).
 
@@ -1677,13 +1677,13 @@ By default, the expander will be visible for all the data rows in parent DataGri
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img10.png)
+![Image used to display the hiding expander when parent records relation property has an empty collection or null](Master-Details-View_images/Master-Details-View_img10.png)
 
 ## Hiding GridDetailsViewIndentCell
 
 [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) is used to indicate the space between the expander and first column of the [DetailsViewDataGrid](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can hide the [GridDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDetailsViewIndentCell.html) by setting [SfDataGrid.ShowDetailsViewIndentCell](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ShowDetailsViewIndentCell.html) property to `False` for the respective parent grid.
 
-![](Master-Details-View_images/Master-Details-View_img11.png)
+![UWP DataGrid shows griddetailsviewindentCell](Master-Details-View_images/Master-Details-View_img11.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1707,7 +1707,35 @@ dataGrid.ShowDetailsViewIndentCell= False;
 {% endhighlight %}
 {% endtabs %}
 
-![](Master-Details-View_images/Master-Details-View_img12.png)
+![uwp dataGrid shows hiding griddetailsviewindentCell](Master-Details-View_images/Master-Details-View_img12.png)
+
+## Hiding the details view expander icon based on child items count
+
+By default, the state of expander icon is visible for all the data rows in parent DataGrid even if its `RelationalColumn` property has an empty collection or null.
+
+You can customize hiding the details view expander icon by handling the `SfDataGrid.QueryDetailsViewExpanderState` event. This event occurs when expander icon is changed on expanding or collapsing the details view. You can hide the expander icon by setting the `ExpanderVisibility` property to `false` in the `SfDataGrid.QueryDetailsViewExpanderState` event based on condition.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.QueryDetailsViewExpanderState += DataGrid_QueryDetailsViewExpanderState;
+
+private void DataGrid_QueryDetailsViewExpanderState(object sender, Syncfusion.UI.Xaml.Grid.QueryDetailsViewExpanderStateEventArgs e)
+        {
+            var orderInfo = e.Record as OrderInfo;
+            if (orderInfo != null)
+            {
+                if (orderInfo.OrderDetails.Count == 0)
+                {
+                    e.ExpanderVisibility = false;
+                }
+            }
+        }
+{% endhighlight %}
+{% endtabs %} 
+
+The following screenshot illustrates hiding expander icon state based on child items count.
+![Image used to display hidden expander icon state of SfDataGird UWP](Master-Details-View_images/Master-Details-View_img13.png)
+You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-hide-the-detailsview-expander-icon-based-on-child-records-count-wpf-datagrid).
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
 
