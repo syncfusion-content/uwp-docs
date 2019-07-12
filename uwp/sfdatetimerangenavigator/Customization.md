@@ -386,6 +386,9 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 ![LowerLabelStyle](Customization_images/Customization_img7.jpeg)
 
+### Label bar visibility.
+
+SfDateTimeRangeNavigator provides the support to customise its visibility using `LowerLabelBarVisibility` and `UpperLabelBarVisibility` of type `Visibility`.
 
 ## Thumb Style Customization
 
