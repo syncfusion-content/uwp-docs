@@ -1547,7 +1547,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the header appearance of details view in UWP DataGrid](Master-Details-View_images/Master-Details-View_img7.png)
+![UWP DataGrid shows header appearance of details view](Master-Details-View_images/Master-Details-View_img7.png)
 
 ### Hiding header row of Master-Details View
 You can hide the header row of `DetailsViewDataGrid` by setting [HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
@@ -1677,7 +1677,7 @@ By default, the expander will be visible for all the data rows in parent DataGri
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the hiding expander when parent records relation property has an empty collection or null](Master-Details-View_images/Master-Details-View_img10.png)
+![UWP DataGrid shows hiding expander when parent records relation property has an empty collection or null](Master-Details-View_images/Master-Details-View_img10.png)
 
 ## Hiding GridDetailsViewIndentCell
 
@@ -1734,7 +1734,7 @@ private void DataGrid_QueryDetailsViewExpanderState(object sender, Syncfusion.UI
 {% endtabs %} 
 
 The following screenshot illustrates hiding expander icon state based on child items count.
-![Image used to display hidden expander icon state of SfDataGird UWP](Master-Details-View_images/Master-Details-View_img13.png)
+![UWP SfDataGird shows expander icon hidden state](Master-Details-View_images/Master-Details-View_img13.png)
 You can download the sample from the following link: [Sample](https://github.com/SyncfusionExamples/how-to-hide-the-detailsview-expander-icon-based-on-child-records-count-wpf-datagrid).
 
 ## Change DetailsViewDataGrid ItemsSource at runtime using LiveDataUpdateMode property
