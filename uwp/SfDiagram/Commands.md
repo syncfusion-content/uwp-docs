@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Explore the frequently used inbuilt commands
+title: Syncfusion | Explore the frequently used inbuilt commands
 description:  How to explore and use the inbuilt commands?
 platform: uwp
 control: SfDiagram

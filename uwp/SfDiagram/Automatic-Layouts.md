@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout nodes and connectors in an organized structure.
+title: Syncfusion | Layout nodes and connectors in an organized structure.
 description: How to arrange Nodes by using the Automatic Layouts?
 platform: uwp
 control: SfDiagram

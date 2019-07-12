@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalize and Localize the Diagram control.
+title: Syncfusion | Globalize and Localize the Diagram control.
 description: How to globalize and localize the Diagram control?
 platform: uwp
 control: SfDiagram

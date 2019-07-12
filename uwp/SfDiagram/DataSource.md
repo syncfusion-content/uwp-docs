@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate Diagram from external data sources.
+title: Syncfusion | Populate Diagram from external data sources.
 description: How to populate the Diagram from the local data?
 platform: uwp
 control: SfDiagram
