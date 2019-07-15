@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting in SfSpreadsheet
+title: Conditional Formatting in SfSpreadsheet | Syncfusion
 description: How to apply conditional formatting rules at run time in SfSpreadsheet.
 platform: UWP
 control: SfSpreadsheet
@@ -95,7 +95,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(1));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img1.PNG)
+![UWP SfSpreadsheet displays different colors applied as per the conditions ](Conditional-Formatting_images/Conditional-Formatting_img1.PNG)
 
 ## Data Bars
 
@@ -117,7 +117,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(2));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img2.PNG)
+![UWP SfSpreadsheet displays different colors applied in different columns based on conditions](Conditional-Formatting_images/Conditional-Formatting_img2.PNG)
 
 ## Color Scales
 
@@ -139,7 +139,7 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(3));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
+![UWP SfSpreadsheet displays colors changed as per the scales](Conditional-Formatting_images/Conditional-Formatting_img3.PNG)
 
 ## Icon Sets
 
@@ -159,4 +159,4 @@ spreadsheet.ActiveGrid.InvalidateCell(GridRangeInfo.Col(4));
 
 Sample Output
 
-![](Conditional-Formatting_images/Conditional-Formatting_img4.PNG)
+![UWP SfSpreadsheet displays the applied icons as per the applied conditions](Conditional-Formatting_images/Conditional-Formatting_img4.PNG)
