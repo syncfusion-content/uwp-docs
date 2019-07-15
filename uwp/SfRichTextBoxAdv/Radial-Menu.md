@@ -1,5 +1,5 @@
 ---
-title: Radial Menu
+title: UWP Radial Menu | Syncfusion
 description: radial-menu
 platform: uwp
 control: SfRichTextBoxAdv
@@ -10,7 +10,8 @@ keywords: radial-menu
 
 The SfRichTextBoxAdv supports built-in radial menu to provide rich text formatting options such as bold, italic etc.
 The following screenshot shows built-in radial menu for SfRichTextBoxAdv control.
-![](Radial-Menu_images/Radial-Menu_img1.jpeg)
+
+![UWP SfRichtextBoxAdv displays radial menu](Radial-Menu_images/Radial-Menu_img1.jpeg)
 
 N> In Windows Phone device, the built-in radial menu is not supported.
 
@@ -108,7 +109,7 @@ The following code example demonstrates how to customize the appearance of navig
 
 {% endtabs %}
 The following screenshot shows the radial menu with customized style.
-![](Radial-Menu_images/Radial-Menu_img2.jpeg)
+![UWP SfRichTextBoxAdv displays applied different styles in radial menu](Radial-Menu_images/Radial-Menu_img2.jpeg)
 
 The sample to demonstrate customizing the style of built-in radial menu, can be downloaded from the following link.
 [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadialMenuCustomization-1397995223# "Click here to download the sample")

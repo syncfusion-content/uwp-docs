@@ -252,7 +252,7 @@ This section demonstrates how to run RDLC report using SfReportViewer control.
 
 5. Run the application the following output will be displayed.
 
-   ![](Getting-Started_images/Getting-Started_img1.png) 
+   ![UWP SfReportViewer displays report details](Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create WebAPI service for SfReportViewer
 
@@ -260,7 +260,7 @@ SfReportViewer control requires WebAPI service to process and render RDL/SSRS re
 
 1. Open Visual Studio and create a new project by clicking New Project. Select the Web category, select the ASP.NET Web Application template, and then click OK. The following screenshot displays the Project Creation Wizard.
     
-   ![](Getting-Started_images/Getting-Started_img2.png)
+   ![UWP SfReportViewer displays create new project](Getting-Started_images/Getting-Started_img2.png)
    
 2. Add following references to your application.
 
@@ -288,7 +288,7 @@ SfReportViewer control requires WebAPI service to process and render RDL/SSRS re
 
 3. Add WebAPI controller to your application as shown in below screen shot.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+   ![UWP SfReportViewer displays adding Web API Controller file](Getting-Started_images/Getting-Started_img3.png)
 
 ### Inherit IReportController
 
@@ -345,7 +345,7 @@ namespace WebAPIService
 
 1. Right click the project, select Add and select Global.asax file from the listed templates.
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+   ![UWP SfReportViewer displays adding Global application file](Getting-Started_images/Getting-Started_img4.png)
 
 2. You can route the WebAPI in Application_Start event into Global.asax file as follows.
 
@@ -392,7 +392,7 @@ This section demonstrates how to run RDL report using SfReportViewer control.
 
 2. Run the sample application the following output will be displayed as result.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+   ![UWP SfReportViewer displays RDL report](Getting-Started_images/Getting-Started_img6.png)
    
 ## Load SSRS reports
 
@@ -431,4 +431,4 @@ This section demonstrates how to run SSRS report using SfReportViewer control.
 
 3. Run the sample application the following output will be displayed as result.
 
-   ![](Getting-Started_images/Getting-Started_img5.png)   
+   ![UWP SfReportViewer displays SSRS report](Getting-Started_images/Getting-Started_img5.png)   

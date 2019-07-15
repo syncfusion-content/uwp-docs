@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization
+title: Localization in SfRichTextBoxAdv | Syncfusion
 description: How to localize the SfRichTextBoxAdv to any language settings
 platform: UWP
 control: SfRichTextBoxAdv
@@ -19,7 +19,7 @@ The following steps illustrates you how to configure the app package for localiz
 * Double-click the **Package****.****appxmanifest** file. If the manifest file is already open in the XML code view, Visual Studio prompts you to close the file.
 * Now specify the **Default** **language** on the **Application** tab as required to localize your app. Click on **More** **information** to know about the supported languages.
 
-![](Localization_images/Localization_img1.jpeg)
+![UWP SfRichTextBoxAdv displays manifest file of package](Localization_images/Localization_img1.jpeg)
 
 
 * Save the app manifest file after setting the default language.
@@ -30,18 +30,18 @@ The following steps illustrates you how to configure the app package for localiz
 * Create a folder with language (“en-US”, “fr-FR”, etc.) under ‘Resources’ to hold the resource file for the respective language.
 * Add default English (“en-US”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources_File-1713514901)(resource) file of SfRichTextBoxAdv and application (Localization) in the ‘en-US’ folder, named as Syncfusion.SfRichTextBoxAdv.UWP.Resources. resw, Syncfusion.SfRibbon. Resources.resw and Localization.Resources. resw respectively. For your reference, French(“fr-FR”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources2076091381) file.
 
-![](Localization_images/Localization_img2.jpeg)
+![UWP SfRichTextBoxAdv displays added resource file](Localization_images/Localization_img2.jpeg)
 
 
 * Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfRichTextBoxAdv.UWP.Resources. resw, Syncfusion.SfRibbon. Resources.resw and Localization. Resources.resw file.
 
-![](Localization_images/Localization_img3.jpeg)
+![UWP SfRichTextBoxAdv displays resource file list](Localization_images/Localization_img3.jpeg)
 
 
 N> If you have not used SfRibbon in your application, you can skip Syncfusion.SfRibbon.UWP.[Culture name].resw file mentioned above.
 
 The following screenshot shows the localization in SfRichTextBoxAdv
 
-![](Localization_images/Localization_img4.jpeg)
+![UWP shows the localization in SfRichTextBoxAdv](Localization_images/Localization_img4.jpeg)
 
 
