@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in SfSpreadsheet
+title: Localization in SfSpreadsheet | Syncfusion
 description: How to localize the SfSpreadsheet to any language settings
 platform: UWP
 control: SfSpreadsheet
@@ -43,16 +43,16 @@ The following steps show how to implement the localization in SfSpreadsheet,
 * Create Resw(resource) file under the 'Resources' folder and name it as Syncfusion.SfSpreadsheet.UWP.[Culture name].resw. 
   For example, Syncfusion.SfSpreadsheet.UWP.ja.resw for Japanese culture. 
 
-![](localization_images/Loc_Image1.png)
+![UWP SfSpreadsheet displays added resource file](localization_images/Loc_Image1.png)
 
 * Add the resource key such as name and its corresponding localized value in Resource Designer of Syncfusion.SfSpreadsheet.UWP.ja.resw file. 
   For your reference, you can download the Japanese("ja-JP") Resw file [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpreadsheet.UWP.Resources.ja2068752327)
 
-![](localization_images/Loc_Image2.png)
+![UWP SfSpreadsheet displays resource file item list](localization_images/Loc_Image2.png)
 
 The following screenshot shows you the localization in SfSpreadsheet,
 
-![](localization_images/Loc_Image3.png)
+![UWP SfSpreadsheet displays locaization applied in sheet](localization_images/Loc_Image3.png)
 
 ## Modifying the localized strings in Resource file
 
@@ -60,4 +60,4 @@ Users can modify the default localized strings in Resource file by adding the de
 
 Now, the default localized strings can be modified by changing the Name/Value pair in the Syncfusion.SfSpreadsheet.UWP.resw file.
 
-![](localization_images/Loc_Image4.jpg)
+![UWP SfSpreadsheet displays modified resource file item](localization_images/Loc_Image4.jpg)
