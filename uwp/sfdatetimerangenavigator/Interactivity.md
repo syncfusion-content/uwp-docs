@@ -383,4 +383,14 @@ Description<br/><br/></td></tr>
 {{'[`ValueChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ValueChanged_EV.html)'| markdownify }}<br/><br/></td><td>
 ValueChanged(Object sender, EventArgs e)<br/><br/></td><td>
 This event is triggered when the position of the scrollbar changed.<br/><br/></td></tr>
+<tr>
+<td>
+`LowerBarLabelsCreated`<br/><br/></td><td>
+LowerBarLabelsCreated(Object sender, LowerBarLabelsCreatedEventArgs e)<br/><br/></td><td>
+This event is triggered when the lower bar labels gets created.<br/><br/></td></tr>
+<tr>
+<td>
+`UpperBarLabelsCreated`<br/><br/></td><td>
+UpperBarLabelsCreated(Object sender, UpperBarLabelsCreatedEventArgs e)<br/><br/></td><td>
+This event is triggered when the upper bar labels gets created.<br/><br/></td></tr>
 </table>
