@@ -25,7 +25,7 @@ To execute SampleBrowser, select the corresponding product and click “RUN LOCA
 
 Sample Browser is available under following folder location:
 
-“[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\UWP\SampleBrowser”
+“[Installed Drive]:C:\Users\Public\Documents\Syncfusion\Universal Windows\17.1.0.38\SampleBrowser”
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
