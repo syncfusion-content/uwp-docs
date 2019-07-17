@@ -175,7 +175,9 @@ namespace TextBoxExtSample
 
         private void TextBoxExt_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            var selectedItem = (sender as SfTextBoxExt).SelectedItem;
+            string selectedItem = ((sender as SfTextBoxExt).SelectedItem).ToString();
+            var dialog = new MessageDialog(selectedItem, "SelectedItem");
+            dialog.ShowAsync();
         }
     }
 }
@@ -270,7 +272,9 @@ namespace TextBoxExtSample
 
         private void TextBoxExt_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            var selectedIndex = (sender as SfTextBoxExt).SuggestionIndex;
+            string suggestionIndex = ((sender as SfTextBoxExt).SuggestionIndex).ToString();
+            var dialog = new MessageDialog(suggestionIndex, "SuggestionIndex");
+            dialog.ShowAsync();
         }
     }
 }
@@ -357,9 +361,11 @@ namespace TextBoxExtSample
             this.Content = textBoxExt;
         }
 
-        private void TextBoxExt_SelectionChanged(object sender, RoutedEventArgs e)
+       private void TextBoxExt_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            var selectedValue = (sender as SfTextBoxExt).SelectedValue;
+            string selectedValue = ((sender as SfTextBoxExt).SelectedValue).ToString();
+            var dialog = new MessageDialog(selectedValue, "SelectedValue");
+            dialog.ShowAsync();
         }
     }
 }
@@ -433,7 +439,9 @@ namespace TextBoxExtSample
    
         private void TextBoxExt_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            var selectedValue = (sender as SfTextBoxExt).SelectedValue;
+            string selectedValue = ((sender as SfTextBoxExt).SelectedValue).ToString();
+            var dialog = new MessageDialog(selectedValue, "SelectedValue");
+            dialog.ShowAsync();
         }
     }
 
