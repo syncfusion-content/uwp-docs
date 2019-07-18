@@ -41,6 +41,13 @@ The following code example demonstrates how to bind commands for applying charac
 
 {% endhighlight %}
 
+The following code example demonstrates how to bind commands with parameter.
+{% tabs %}
+{% highlight xaml %}
+<Button Content="TextAlignment" Command="{Binding ElementName=richTextBoxAdv, Path=TextAlignmentCommand, Mode=TwoWay}" CommandParameter="Right" />
+{% endhighlight %}
+{% endtabs %}
+
 {% highlight c# %}
 /// <summary>
 /// Apply bold style for the selected contents of SfRichTextBoxAdv.
@@ -262,6 +269,17 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 </td>
 <td>
 <p>Represents the command that copies the selected contents to clipboard.</p>
+</td>
+<td>
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CopyHyperlinkCommand</p>
+</td>
+<td>
+<p>Represents the command that copies the selected hyperlink to clipboard.</p>
 </td>
 <td>
 <p>NA</p>
@@ -701,6 +719,17 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 </td>
 <td>
 <p>Represents the command that redo the last undo operation in `SfRichTextBoxAdv` control.</p>
+</td>
+<td>
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RemoveHyperlinkCommand</p>
+</td>
+<td>
+<p>Represents the command that removes the selected hyperlink.</p>
 </td>
 <td>
 <p>NA</p>
