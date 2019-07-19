@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MatchHighlighting of AutoComplete in SfTextBoxExt control for UWP
+title: MatchHighlighting of AutoComplete in Syncfusion SfTextBoxExt.
 description: Learn how to highlight the matched text in AutoComplete
 platform: uwp
 control: SfTextBoxExt

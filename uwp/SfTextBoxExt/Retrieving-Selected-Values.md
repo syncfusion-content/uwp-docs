@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Retrieving selected value in AutoComplete of Syncfusion SfTextBoxExt control for UWP  
+title:  Retrieving selected value in AutoComplete of Syncfusion SfTextBoxExt. 
 description: Learn how to retrieve selected value from AutoComplete. 
 platform: uwp
 control: SfTextBoxExt

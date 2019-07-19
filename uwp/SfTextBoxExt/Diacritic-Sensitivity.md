@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diacritic sensitivity of AutoComplete in Syncfusion SfTextBoxExt control
+title: Diacritic sensitivity of AutoComplete in Syncfusion SfTextBoxExt.
 description: Learn how to enable and disable Diacritic sensitivity in AutoComplete
 platform: uwp
 control: SfTextBoxExt
@@ -98,6 +98,4 @@ namespace TextBoxExtSample
 {% endhighlight %}
 
 {% endtabs %}
-
-![Diacritic-Sensitivity](images/Diacritic-Sensitivity/Diacritic.png)
 
