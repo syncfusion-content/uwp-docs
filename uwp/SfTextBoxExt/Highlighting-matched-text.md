@@ -98,7 +98,7 @@ namespace TextBoxExtSample
             };
 
             textBoxExt.AutoCompleteSource = list;
-            //this.Content = textBoxExt;
+            this.Content = textBoxExt;
         }
     }
 }
@@ -107,7 +107,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![](images/Highlighting-matched-text/FirstOccurrance.png)
+![First Occurrance](AutoComplete_images/FirstOccurrance.png)
 
 ## Multiple occurrence
 
@@ -196,4 +196,4 @@ namespace TextBoxExtSample
 {% endhighlight %}
 
 {% endtabs %}
-![](images/Highlighting-matched-text/MultipleOccurrance.png)
+![Multiple Occurrance](AutoComplete_images/MultipleOccurrance.png)

@@ -91,7 +91,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![SuggestionBoxPlacement](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
+![SuggestionBoxPlacement](AutoComplete_images/suggestion-box-placement-top.png)
 
 ## Maximum suggestion box height
 
@@ -173,7 +173,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![MaximumDropDownHeight](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
+![MaximumDropDownHeight](AutoComplete_images/maximum-dropdown-height.png)
 
 ## Opening suggestion box on focus
 
@@ -255,7 +255,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![SuggestionsOnFocus](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
+![SuggestionsOnFocus](AutoComplete_images/show-suggestions-on-focus.png)
 
 ## Avoid opening suggestion box
 

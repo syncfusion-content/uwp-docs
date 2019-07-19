@@ -89,6 +89,6 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![](images/Maximum-display-item-with-Expander/LoadMore.png)
+![Load More](AutoComplete_images/LoadMore.png)
 
 

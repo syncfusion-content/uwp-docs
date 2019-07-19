@@ -42,15 +42,15 @@ You can provide the header content at the top of the suggestion box. The `DropDo
                               SearchItemPath="Name"
                               ShowDropDownHeaderView="True"
                               DropDownHeaderViewHeight="50"
-                              AutoCompleteSource="{Binding Employees}"
-                              TextChanged="TextBoxExt_TextChanged">
+                              AutoCompleteSource="{Binding Employees}">
             <editors:SfTextBoxExt.DropDownHeaderView>
-                <StackPanel Background="#f0f0f0" >
+                <StackPanel>
                     <TextBlock x:Name="SearchLabel" 
+                               Text="Header"
                                FontSize="20" 
                                VerticalAlignment="Center" 
                                HorizontalTextAlignment="Center" 
-                               Foreground="#006bcd"   />
+                               Foreground="Red"/>
                 </StackPanel>
             </editors:SfTextBoxExt.DropDownHeaderView>
         </editors:SfTextBoxExt>
@@ -75,7 +75,7 @@ namespace TextBoxExtSample
     /// <summary>
     /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+   public sealed partial class MainPage : Page
     {
         TextBlock SearchLabel;
         public MainPage()
@@ -90,16 +90,16 @@ namespace TextBoxExtSample
                 Width = 200,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
                 SearchItemPath = "Name",
-                ShowDropDownHeaderView = true,
-                DropDownHeaderViewHeight = 50
+                ShowDropDownFooterView = true,
+                DropDownFooterViewHeight = 50
             };
 
             textBoxExt.AutoCompleteSource = employeeCollection.Employees;
-            textBoxExt.TextChanged += TextBoxExt_TextChanged;
 
             StackPanel stackPanel = new StackPanel();
             SearchLabel = new TextBlock()
             {
+                Text = "Header",
                 FontSize = 20,
                 VerticalAlignment = VerticalAlignment.Center,
                 HorizontalTextAlignment = TextAlignment.Center,
@@ -108,11 +108,6 @@ namespace TextBoxExtSample
             this.Content = textBoxExt;
             stackPanel.Children.Add(SearchLabel);
             textBoxExt.DropDownHeaderView = stackPanel;
-        }
-
-        private void TextBoxExt_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            SearchLabel.Text = "Search for " + (sender as SfTextBoxExt).Text;
         }
     }
 
@@ -161,7 +156,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![](images/Header-and-Footer/Header.png)
+![Header Image](AutoComplete_images/Header.png)
 
 ## Footer content
 
@@ -309,5 +304,5 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![](images/Header-and-Footer/Footer.png)
+![Footer Image](AutoComplete_images/Footer.png)
 

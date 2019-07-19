@@ -85,6 +85,8 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
+![TextBox Customization ](AutoComplete_images/Text.png)
+
 ## Customizing the suggestion box
 
 ### Changing suggestion item height
@@ -168,6 +170,8 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
+![SuggestionItemHeight](AutoComplete_images/SuggestionItemHeight.png)
+
 ### Changing the corner radius of suggestion box
 
 The `DropDownCornerRadius` property is used to modify the corner radius of suggestion box. The following code example demonstrates how to change the corner radius of  suggestion box.
@@ -248,7 +252,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![Dropdown corner radius](images/Customizing-AutoComplete/dropdown-corner-radius.png)
+![Dropdown corner radius](AutoComplete_images/DropDownCornerRadius.png)
 
 ### Changing the background color of suggestion box
 
@@ -334,7 +338,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![Dropdown background color](images/Customizing-AutoComplete/dropdown-background-color.png)
+![Dropdown background color](AutoComplete_images/DropDownBackground.png)
 
 ### Customizing suggestion items
 
@@ -424,7 +428,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![Customizing dropdown](images/Customizing-AutoComplete/customizing-dropdown.png)
+![Customizing dropdown](AutoComplete_images/customizing-dropdown.png)
 
 ### Show Clear button
 
@@ -586,4 +590,4 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![Border visibility](images/Customizing-AutoComplete/show-border.png)
+![Border visibility](AutoComplete_images/show-border.png)

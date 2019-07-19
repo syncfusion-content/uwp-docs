@@ -247,7 +247,7 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![Token represented with image and text with wrap mode](images/MultiSelect/TokenRepresentation_Wrap.png)
+![Token represented with image and text with wrap mode](AutoComplete_images/TokenRepresentation_Wrap.png)
  
 ### Token customization
 
@@ -432,18 +432,49 @@ namespace TextBoxExtSample
 
 {% endhighlight %}
 
-![Token represents the image and text with the close button](images/MultiSelect/TokenRepresentation.png)
+{% endtabs %}
+
+![Token represents the image and text with the close button](AutoComplete_images/TokenRepresentation.png)
 
 ## Delimiter
 
 When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the `Delimiter` property.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<Page
+    x:Class="TextBoxExtSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TextBoxExtSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+
+        <editors:SfTextBoxExt x:Name="textBoxExt" 
+                              HorizontalAlignment="Center" 
+                              VerticalAlignment="Center" 
+                              AutoCompleteMode="Suggest"
+                              Width="200"
+                              MultiSelectMode="Delimiter"
+                              Delimiter=",">
+        </editors:SfTextBoxExt>
+    </Grid>
+</Page>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
 using Syncfusion.UI.Xaml.Controls.Input;
 using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-
-// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
@@ -469,7 +500,7 @@ namespace TextBoxExtSample
             List<string> list = new List<string>()
             {
                 "India",
-                "Ukanda",
+                "Uganda",
                 "Ukraine",
                 "Canada",
                 "United Arab Emirates"
@@ -485,10 +516,8 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![Delimiter supports to separate the items with delimiter text](images/MultiSelect/Delimiter.png)
+![Delimiter supports to separate the items with delimiter text](AutoComplete_images/Delimiter.png)
 
-{% endhighlight %}
 
-{% endtabs %}
 
 
