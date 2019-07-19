@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  minimum Prefix Characters of AutoComplete in Syncfusion SfTextBoxExt control 
+title:  Minimum Prefix Characters of AutoComplete in Syncfusion SfTextBoxExt.
 description: Learn how to set minimum Prefix Characters of AutoComplete in SfTextBoxExt control
 platform: uwp
 control: SfTextBoxExt
