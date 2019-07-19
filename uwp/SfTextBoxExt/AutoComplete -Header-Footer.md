@@ -9,11 +9,11 @@ documentation: ug
 
 # Header and Footer
 
-We can provide Header and Footer view in the suggestion list in AutoComplete by enabling `ShowDropDownHeaderView` and `ShowDropDownFooterView`. 
+You can provide header and footer views in a suggestion list in AutoComplete by enabling the `ShowDropDownHeaderView` and `ShowDropDownFooterView` properties. 
 
-## Header Content
+## Header content
 
-We can provide Header Content at the top of the AutoComplete's Suggestion box. `DropDownHeaderView` property is used to set the content of the header. The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownHeaderViewHeight`.
+You can provide the header content at the top of the suggestion box. The `DropDownHeaderView` property is used to set content to the header. The height of the header in the SfAutoComplete can be adjusted using the `DropDownHeaderViewHeight` property.
 
 {% tabs %}
 
@@ -68,12 +68,12 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -163,11 +163,11 @@ namespace TextBoxExtSample
 
 ![](images/Header-and-Footer/Header.png)
 
-## Footer Content
+## Footer content
 
-We can provide Footer Content at the bottom of the AutoComplete's Suggestion box. `DropDownFooterView` property is used to set the content of the footer.The height of the Header in the SfAutoComplete can be adjusted by the property `DropDownFooterViewHeight`.
+You can provide the footer content at the bottom of the suggestion box. The `DropDownFooterView` property is used to set the content of the footer. The height of the header in the SfAutoComplete can be adjusted using the `DropDownFooterViewHeight` property.
 
-The following code example illustrate how to set Footer content in SfAutoComplete.
+The following code example demonstrates how to set the footer content in SfAutoComplete.
 
 {% tabs %}
 
@@ -222,12 +222,12 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -310,3 +310,4 @@ namespace TextBoxExtSample
 {% endtabs %}
 
 ![](images/Header-and-Footer/Footer.png)
+
