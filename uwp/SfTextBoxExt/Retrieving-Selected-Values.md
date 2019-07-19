@@ -13,11 +13,11 @@ AutoComplete provides a way to handle the selected item using the `SelectedItem`
 
 ## SelectedItem
 
-The `SelectedItem` property is used to select the particular item from the suggestion list. You can either get or set the SelectedItem.
+The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
 
 ### How to set the SelectedItem
 
-The following code snippet demonstrates the way to set `SelectedItem`.
+The following code snippet demonstrates how to set `SelectedItem`.
 
 {% tabs %}
 
@@ -55,12 +55,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -95,11 +95,11 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-### Retrieving Selected items
+### Retrieving selected items
 
-AutoComplete provides a way to get the selected item using `SelectionChanged` event.
+AutoComplete provides a way to get the selected item using the `SelectionChanged` event.
 
-The following code example demonstrates the way to retrieve SelectedItem.
+The following code example demonstrates how to retrieve SelectedItem.
 
 {% tabs %}
 
@@ -137,12 +137,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -186,17 +186,17 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-## Retrieving Selected value
+## Retrieving selected value
 
-AutoComplete provides a way to get the selected values using SelectedValue and SelectedIndex properties.
+AutoComplete provides a way to get the selected values using the SelectedValue and SelectedIndex properties.
 
-### Retrieving the Index of Selected Item
+### Retrieving the index of selected item
 
-When an item is selected from suggestion list, its index can be retrieved using `SuggestionIndex` property. 
+When an item is selected from suggestion list, its index can be retrieved using the `SuggestionIndex` property.
 
-SuggestionIndex property holds the index of selected item in suggestion list. 
+The `SuggestionIndex` property holds the index of selected item in suggestion list.
 
-The following code example demonstrates the way to retrieve SuggestionIndex.
+The following code example demonstrates how to retrieve `SuggestionIndex`.
 
 {% tabs %}
 
@@ -234,12 +234,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -283,11 +283,11 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-### Retrieving the Value of Selected Item
+### Retrieving the value of selected item
 
-When an item is selected from suggestion list, selected value can be retrieved using `SelectedValue` property. 
+When an item is selected from suggestion list, selected value can be retrieved using the `SelectedValue` property. 
 
-The following code example demonstrates the way to retrieve SelectedValue.
+The following code example demonstrates how to retrieve SelectedValue.
 
 {% tabs %}
 
@@ -325,12 +325,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -374,9 +374,9 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-### Retrieving a Member of Model Object
+### Retrieving a member of model object
 
-If the AutoCompleteSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties. So, it is necessary to intimate AutoComplete that which property of model class should be stored in SelectedValue property. This can be accomplished by `ValueMemberPath` property.
+If the AutoCompleteSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties. So, it is necessary to intimate AutoComplete that which property of model class should be stored in the SelectedValue property. This can be accomplished using the `ValueMemberPath` property.
 
 {% tabs %}
 
@@ -423,12 +423,12 @@ using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
