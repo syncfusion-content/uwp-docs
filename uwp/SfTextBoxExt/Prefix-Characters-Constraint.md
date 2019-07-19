@@ -9,7 +9,7 @@ documentation: ug
 
 # Prefix Characters Constraint
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done by `MinimumPrefixCharacters` property and its default value is 1.
+Instead of displaying suggestion list on each character entry, matches can be filtered and displayed after a few character entries. This can be done using the `MinimumPrefixCharacters` property, and its default value is 1.
 
 {% tabs %}
 
@@ -47,12 +47,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
