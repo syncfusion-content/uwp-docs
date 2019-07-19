@@ -6,17 +6,17 @@ platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
+
 # Multiple Selection
 
-Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
+You can select multiple items from a suggestion list. Multiple selection can be performed in the following two ways in AutoComplete:
 
-* Token Representation
+* Token representation
+* Delimiter
 
-*  Delimiter
+## Token representation
 
-## Token Representation
-
-Selected items will be displayed with a customizable token representation and the users can remove each tokenized item with the close button.
+The selected items will be displayed with a customizable token representation, and the users can remove each tokenized item using the Close button.
 
 {% tabs %}
 
@@ -55,12 +55,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -97,13 +97,12 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-### Wrap Mode of Token
+### Wrap mode of token
 
-The selected item can be displayed as token inside AutoComplete in two ways. They are
+The selected item can be displayed as token inside AutoComplete in the following two ways:
 
-* `Wrap` - When `TokensWrapMode` is set to `Wrap` the selected items will be wrap to the next line of the AutoComplete.
-
-* `None` - When `TokensWrapMode` is set to `None` the selected item will be wrap in horizontal orientation.
+* `Wrap` - When `TokensWrapMode` is set to `Wrap`, the selected items will be wrapped to the next line of AutoComplete.
+* `None` - When `TokensWrapMode` is set to `None`, the selected item will be wrapped in horizontal orientation.
 
 {% tabs %}
 
@@ -149,12 +148,12 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -248,28 +247,27 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-
-![token represents with image and text with wrap mode](images/MultiSelect/TokenRepresentation_Wrap.png)
+![Token represented with image and text with wrap mode](images/MultiSelect/TokenRepresentation_Wrap.png)
  
-### Token Customization
+### Token customization
 
-Customization can be done for Token. There are various ways to customize the tokens. They are as follows.
+Tokens can be customized in the following ways:
 
-* `Foreground` - sets the color of the text inside the token.
+* `Foreground`: Sets the color of the text inside the token.
 
-* `FontSize` - sets the size of the Font inside the token.
+* `FontSize`: Sets the size of the font inside the token.
 
-* `FontFamily` - sets the Font family for the text inside the token.
+* `FontFamily`: Sets the font family for the text inside the token.
 
-* `Background` - sets the background color of the token.
+* `Background`: Sets the background color of the token.
 
-* `ShowDeleteButton` - Enables and disables the close button inside AutoComplete.
+* `ShowDeleteButton`: Enables and disables the Close button inside AutoComplete.
 
-* `DeleteButtonColor` - sets the color of the close button inside AutoComplete.
+* `DeleteButtonColor`: Sets the color of the Close button inside AutoComplete.
 
-* `DeleteButtonAlignment` - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
+* `DeleteButtonAlignment`: Sets the placement of the delete button to `Left` or `Right`. By default, it is placed at the right side of the token.
 
-N> SelectedBackgroundColor and CornerRadius support has enhanced only on iOS and Android platform.
+N> The SelectedBackgroundColor and CornerRadius supports have been enhanced in only on the iOS and Android platforms.
 
 {% tabs %}
 
@@ -325,12 +323,12 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -434,23 +432,23 @@ namespace TextBoxExtSample
 
 {% endhighlight %}
 
-![token represents the image and text with closebutton](images/MultiSelect/TokenRepresentation.png)
+![Token represents the image and text with the close button](images/MultiSelect/TokenRepresentation.png)
 
 ## Delimiter
 
-When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
+When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the `Delimiter` property.
 
 using Syncfusion.UI.Xaml.Controls.Input;
 using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -487,11 +485,10 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-![delimiter supports to separate the items with delimiter text](images/MultiSelect/Delimiter.png)
+![Delimiter supports to separate the items with delimiter text](images/MultiSelect/Delimiter.png)
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
 
