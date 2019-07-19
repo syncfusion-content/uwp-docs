@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Customizations of AutoComplete in Syncfusion SfTextBoxExt control
-description: This section describes about the visual customization of textbox, suggestion box and suggestion items in the AutoComplete.  
+title:  Customizations of AutoComplete in Syncfusion SfTextBoxExt control.
+description: This section describes about the visual customization of textbox, suggestion box and suggestion items in the AutoComplete.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Customizing AutoComplete
 
-AutoComplete provides user friendly customizing options for both textbox part and drop down part. In this section, customizing entire AutoComplete control is explained.
+AutoComplete provides user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
 
-## Customizing the TextBox
+## Customizing the text box
 
-`Text`, `FontSize`, `FontWeight` and `FontFamily` are the properties used to customize the textbox part.
+The `Text`, `FontSize`, `FontWeight`, and `FontFamily` properties are used to customize the text box.
 
 {% tabs %}
 
@@ -53,12 +53,12 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -85,11 +85,11 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
-## Customizing the Suggestion Box
+## Customizing the suggestion box
 
 ### Changing suggestion item height
 
-`SuggestionItemHeight` property is used to modify the height of suggestion items in drop down list. The code example is given below:
+The `SuggestionItemHeight` property is used to modify the height of suggestion items in the drop-down list.
 
 {% tabs %}
 
@@ -128,12 +128,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -168,10 +168,9 @@ namespace TextBoxExtSample
 
 {% endtabs %}
 
+### Changing the corner radius of suggestion box
 
-### Changing suggestion box corner radius
-
-The `DropDownCornerRadius` property is used to modify the corner radius of suggestion box. The following code example demonstrates how to change the suggestion box corner radius. 
+The `DropDownCornerRadius` property is used to modify the corner radius of suggestion box. The following code example demonstrates how to change the corner radius of  suggestion box.
 
 {% tabs %}
 
@@ -209,12 +208,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -251,9 +250,9 @@ namespace TextBoxExtSample
 
 ![Dropdown corner radius](images/Customizing-AutoComplete/dropdown-corner-radius.png)
 
-### Changing suggestion box background color
+### Changing the background color of suggestion box
 
-The `DropDownBackground` property is used to modify the background color of suggestion box. The following code example demonstrates how to change the suggestion box background color. 
+The `DropDownBackground` property is used to modify the background color of suggestion box. The following code example demonstrates how to change the background color of  suggestion box.
 
 {% tabs %}
 
@@ -295,12 +294,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -339,7 +338,7 @@ namespace TextBoxExtSample
 
 ### Customizing suggestion items
 
-Suggestion box items can be customized using `SuggestionItemFontWeight`, `SuggestionItemFontStyle`, `SuggestionItemForeground`, `SuggestionItemFontSize` and `SuggestionItemFontFamily` properties.
+The suggestion box items can be customized using the `SuggestionItemFontWeight`, `SuggestionItemFontStyle`, `SuggestionItemForeground`, `SuggestionItemFontSize`, and `SuggestionItemFontFamily` properties.
 
 {% tabs %}
 
@@ -381,12 +380,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -427,9 +426,9 @@ namespace TextBoxExtSample
 
 ![Customizing dropdown](images/Customizing-AutoComplete/customizing-dropdown.png)
 
-### Show clear button
+### Show Clear button
 
-The autocomplete provided the user to show or hide the clear button using `ShowClearButton` property.
+The AutoComplete allows users to show or hide the Clear button using the `ShowClearButton` property.
 
 {% tabs %}
 
@@ -467,12 +466,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -547,12 +546,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
