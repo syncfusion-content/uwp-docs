@@ -6,21 +6,20 @@ platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
+
 # Highlighting matched text
 
-Highlight matching characters in a suggestion list to pick an item with more clarity. There are two ways to highlight the matching text:
+You can highlight matching characters in a suggestion list to pick an item with more clarity. The matching text can be highlighted in the following two ways:
 
-* First Occurrence
+* First occurrence
+* Multiple occurrence
 
-* Multiple Occurrence
+The text highlight can be indicated with various customizing styles by enabling the following properties:
 
-The text highlight can be indicated with various customizing styles by enabling the below properties. They are
+* HighlightedTextColor: Sets the color of the highlighted text for differentiating the highlighted characters.
+* HighlightTextFontAttributes: Sets the FontAttributes of the highlighted text.
 
-* HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
-
-* HighlightTextFontAttributes - sets the FontAttributes of the highlighted text.
-
-## First Occurrence
+## First occurrence
 
 It highlights the first position of the matching characters in the suggestion list.
 
@@ -65,12 +64,12 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -110,9 +109,9 @@ namespace TextBoxExtSample
 
 ![](images/Highlighting-matched-text/FirstOccurrance.png)
 
-## Multiple Occurrence
+## Multiple occurrence
 
-It highlights the matching character that are present everywhere in the suggestion list for Contains case in SuggestionMode.
+It highlights the matching character that presents everywhere in the suggestion list for Contains case in SuggestionMode.
 
 {% tabs %}
 
@@ -155,12 +154,12 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
