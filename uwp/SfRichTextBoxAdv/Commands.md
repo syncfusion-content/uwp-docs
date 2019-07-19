@@ -41,13 +41,6 @@ The following code example demonstrates how to bind commands for applying charac
 
 {% endhighlight %}
 
-The following code example demonstrates how to bind commands with parameter.
-{% tabs %}
-{% highlight xaml %}
-<Button Content="TextAlignment" Command="{Binding ElementName=richTextBoxAdv, Path=TextAlignmentCommand, Mode=TwoWay}" CommandParameter="Right" />
-{% endhighlight %}
-{% endtabs %}
-
 {% highlight c# %}
 /// <summary>
 /// Apply bold style for the selected contents of SfRichTextBoxAdv.
@@ -67,6 +60,13 @@ public void Italic()
     if (richTextBoxAdv.ItalicCommand.CanExecute(null))
         richTextBoxAdv.ItalicCommand.Execute(null);
 }
+{% endhighlight %}
+{% endtabs %}
+
+The following code example demonstrates how to bind commands with parameter.
+{% tabs %}
+{% highlight xaml %}
+<Button Content="TextAlignment" Command="{Binding ElementName=richTextBoxAdv, Path=TextAlignmentCommand, Mode=TwoWay}" CommandParameter="Right" />
 {% endhighlight %}
 {% endtabs %}
 
