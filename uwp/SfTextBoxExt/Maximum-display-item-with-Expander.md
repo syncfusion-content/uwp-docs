@@ -9,7 +9,7 @@ documentation: ug
 
 # Maximum Display Item with Expander
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
+You can restrict the number of suggestions displayed and load the remaining items by selecting LoadMore. The maximum suggestion to be displayed can be restricted using the `MaximumSuggestion` property. You can set the desire text for the displaying the Load More text using the `LoadMoreText` property.
 
 {% tabs %}
 
@@ -48,12 +48,12 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated within a frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
