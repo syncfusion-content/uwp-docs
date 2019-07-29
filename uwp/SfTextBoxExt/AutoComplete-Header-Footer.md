@@ -26,12 +26,10 @@ You can provide the header content at the top of the suggestion box. The `DropDo
     xmlns:local="using:TextBoxExtSample"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input"
     mc:Ignorable="d"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
-        <local:EmployeeCollection/>
-    </Page.DataContext>
+
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
         <editors:SfTextBoxExt x:Name="textBoxExt" 
@@ -39,10 +37,8 @@ You can provide the header content at the top of the suggestion box. The `DropDo
                               VerticalAlignment="Center" 
                               AutoCompleteMode="Suggest"
                               Width="200"
-                              SearchItemPath="Name"
                               ShowDropDownHeaderView="True"
-                              DropDownHeaderViewHeight="50"
-                              AutoCompleteSource="{Binding Employees}">
+                              DropDownHeaderViewHeight="50">
             <editors:SfTextBoxExt.DropDownHeaderView>
                 <StackPanel>
                     <TextBlock x:Name="SearchLabel" 
@@ -68,33 +64,36 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated within a frame.
+    /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-   public sealed partial class MainPage : Page
+    public sealed partial class MainPage : Page
     {
-        TextBlock SearchLabel;
         public MainPage()
         {
             this.InitializeComponent();
-            EmployeeCollection employeeCollection = new EmployeeCollection();
-            this.DataContext = employeeCollection;
             SfTextBoxExt textBoxExt = new SfTextBoxExt()
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
                 Width = 200,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
-                SearchItemPath = "Name",
-                ShowDropDownFooterView = true,
-                DropDownFooterViewHeight = 50
+                ShowDropDownHeaderView = true,
+                DropDownHeaderViewHeight = 50
             };
 
-            textBoxExt.AutoCompleteSource = employeeCollection.Employees;
+            List<string> list = new List<string>()
+            {
+                 "Lucas",
+                 "James",
+                 "Jacob"
+            };
+
+            textBoxExt.AutoCompleteSource = list;
 
             StackPanel stackPanel = new StackPanel();
             SearchLabel = new TextBlock()
@@ -105,52 +104,13 @@ namespace TextBoxExtSample
                 HorizontalTextAlignment = TextAlignment.Center,
                 Foreground = new SolidColorBrush(Colors.Red)
             };
-            this.Content = textBoxExt;
+
             stackPanel.Children.Add(SearchLabel);
             textBoxExt.DropDownHeaderView = stackPanel;
-        }
-    }
-
-    public class Employee
-
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
-
-        public Employee()
-        {
-
-        }
-
-    }
-
-    public class EmployeeCollection
-    {
-        private List<Employee> employees;
-
-        public List<Employee> Employees
-
-        {
-
-            get { return employees; }
-
-            set { employees = value; }
-
-        }
-
-        public EmployeeCollection()
-        {
-            Employees = new List<Employee>();
-
-            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
-
-            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
-
-            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+            this.Content = textBoxExt;
         }
     }
 }
-
 
 {% endhighlight %}
 
@@ -175,12 +135,10 @@ The following code example demonstrates how to set the footer content in AutoCom
     xmlns:local="using:TextBoxExtSample"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input"
     mc:Ignorable="d"
+    xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
-        <local:EmployeeCollection/>
-    </Page.DataContext>
+
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
         <editors:SfTextBoxExt x:Name="textBoxExt" 
@@ -188,18 +146,16 @@ The following code example demonstrates how to set the footer content in AutoCom
                               VerticalAlignment="Center" 
                               AutoCompleteMode="Suggest"
                               Width="200"
-                              SearchItemPath="Name"
                               ShowDropDownFooterView="True"
-                              DropDownFooterViewHeight="50"
-                              AutoCompleteSource="{Binding Employees}">
+                              DropDownFooterViewHeight="50">
             <editors:SfTextBoxExt.DropDownFooterView>
                 <StackPanel>
                     <TextBlock x:Name="SearchLabel" 
-                               Text="Footer"
+                               Text="Header"
                                FontSize="20" 
                                VerticalAlignment="Center" 
                                HorizontalTextAlignment="Center" 
-                               Foreground="Red"   />
+                               Foreground="Red"/>
                 </StackPanel>
             </editors:SfTextBoxExt.DropDownFooterView>
         </editors:SfTextBoxExt>
@@ -217,33 +173,36 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 
-// The BlankPage item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409.
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace TextBoxExtSample
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated within a frame.
+    /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        TextBlock SearchLabel;
         public MainPage()
         {
             this.InitializeComponent();
-            EmployeeCollection employeeCollection = new EmployeeCollection();
-            this.DataContext = employeeCollection;
             SfTextBoxExt textBoxExt = new SfTextBoxExt()
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
                 VerticalAlignment = VerticalAlignment.Center,
                 Width = 200,
                 AutoCompleteMode = AutoCompleteMode.Suggest,
-                SearchItemPath = "Name",
                 ShowDropDownFooterView = true,
                 DropDownFooterViewHeight = 50
             };
 
-            textBoxExt.AutoCompleteSource = employeeCollection.Employees;
+            List<string> list = new List<string>()
+            {
+                 "Lucas",
+                 "James",
+                 "Jacob"
+            };
+
+            textBoxExt.AutoCompleteSource = list;
 
             StackPanel stackPanel = new StackPanel();
             SearchLabel = new TextBlock()
@@ -254,51 +213,14 @@ namespace TextBoxExtSample
                 HorizontalTextAlignment = TextAlignment.Center,
                 Foreground = new SolidColorBrush(Colors.Red)
             };
-            this.Content = textBoxExt;
+
             stackPanel.Children.Add(SearchLabel);
             textBoxExt.DropDownFooterView = stackPanel;
-        }
-    }
-
-    public class Employee
-
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
-
-        public Employee()
-        {
-
-        }
-
-    }
-
-    public class EmployeeCollection
-    {
-        private List<Employee> employees;
-
-        public List<Employee> Employees
-
-        {
-
-            get { return employees; }
-
-            set { employees = value; }
-
-        }
-
-        public EmployeeCollection()
-        {
-            Employees = new List<Employee>();
-
-            Employees.Add(new Employee { Name = "Lucas", Email = "lucas@syncfusion.com" });
-
-            Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
-
-            Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
+            this.Content = textBoxExt;
         }
     }
 }
+
 
 {% endhighlight %}
 

@@ -95,7 +95,7 @@ namespace TextBoxExtSample
 
 ## Maximum suggestion box height
 
-The maximum height of the suggestion box in the SfAutocomplete control can be changed using the `MaximumDropDownHeight` property.
+The maximum height of the suggestion box in the Autocomplete control can be changed using the `MaximumDropDownHeight` property.
 
 {% tabs %}
 
@@ -320,11 +320,9 @@ namespace TextBoxExtSample
 
             List<string> list = new List<string>()
             {
-                 "India",
-                 "Uganda",
-                 "Ukraine",
-                 "Canada",
-                 "United Arab Emirates"
+                 "James",
+                 "Jacob",
+                 "Lucas"
             };
 
             textBoxExt.AutoCompleteSource = list;
@@ -336,3 +334,7 @@ namespace TextBoxExtSample
 {% endhighlight %}
 
 {% endtabs %}
+
+![SuggestionBoxPlacement_None](AutoComplete_images/AutoComplete_img27.png)
+
+N>  In None mode, the drop-down list will not open but the Suggestions property of SfTextBoxExt gets filled with filtered suggestions so users who want to display the suggestions in a separate list box can use this option.

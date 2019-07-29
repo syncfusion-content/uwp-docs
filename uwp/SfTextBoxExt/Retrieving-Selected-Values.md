@@ -13,7 +13,7 @@ AutoComplete provides a way to handle the selected item using the `SelectedItem`
 
 ## SelectedItem
 
-The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
+The `SelectedItem` property is used to select a particular item from the data source. You can either get or set the SelectedItem.
 
 ### How to set the SelectedItem
 

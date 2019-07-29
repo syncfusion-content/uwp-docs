@@ -289,12 +289,8 @@ The `DropDownBackground` property is used to modify the background color of sugg
 
 {% highlight c# %}
 
-using Syncfusion.SfAutoComplete.XForms;
 using System.Collections.Generic;
-using Xamarin.Forms;
-
 using Syncfusion.UI.Xaml.Controls.Input;
-using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
