@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoComplete functionality of Syncfusion SfTextBoxExt control
-description: Dealing with AutoComplete Header nd Footer for UWP
+description: Dealing with AutoComplete Header and Footer for UWP
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
@@ -13,7 +13,7 @@ You can provide header and footer views in a suggestion list in AutoComplete by 
 
 ## Header content
 
-You can provide the header content at the top of the suggestion box. The `DropDownHeaderView` property is used to set content to the header. The height of the header in the SfAutoComplete can be adjusted using the `DropDownHeaderViewHeight` property.
+You can provide the header content at the top of the suggestion box. The `DropDownHeaderView` property is used to set content to the header. The height of the header in the AutoComplete can be adjusted using the `DropDownHeaderViewHeight` property.
 
 {% tabs %}
 
@@ -160,9 +160,9 @@ namespace TextBoxExtSample
 
 ## Footer content
 
-You can provide the footer content at the bottom of the suggestion box. The `DropDownFooterView` property is used to set the content of the footer. The height of the header in the SfAutoComplete can be adjusted using the `DropDownFooterViewHeight` property.
+You can provide the footer content at the bottom of the suggestion box. The `DropDownFooterView` property is used to set the content of the footer. The height of the header in the AutoComplete can be adjusted using the `DropDownFooterViewHeight` property.
 
-The following code example demonstrates how to set the footer content in SfAutoComplete.
+The following code example demonstrates how to set the footer content in AutoComplete.
 
 {% tabs %}
 
