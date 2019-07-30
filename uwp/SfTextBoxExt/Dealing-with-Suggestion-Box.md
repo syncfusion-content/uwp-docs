@@ -7,11 +7,11 @@ control: SfTextBoxExt
 documentation: ug
 ---
 
-# Dealing with suggestion box
+# Dealing with SuggestionBox
 
 The suggestion box is a drop-down list box that displays the filtered suggestions inside a popup. This section explains the properties that deal with drop-down list in the AutoComplete control.
 
-## Suggestion box placement mode
+## SuggestionBox placement mode
 
 The suggestion box can be placed either at the top or bottom using the `SuggestionBoxPlacement` property. By default, it is placed at the bottom.
 
