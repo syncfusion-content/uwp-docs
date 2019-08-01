@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with SfCalendar control for UWP
+title: Getting Started with Syncfusion SfCalendar control for UWP
 description: A quick tour to initial users on SfCalendar control for UWP
 platform: uwp
 control: SfCalendar
@@ -89,7 +89,7 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 
 {% endtabs %}
 
-![](SfCalendar-images/SfCalendar-img1.jpeg)
+![Calendar with navigation buttons](SfCalendar-images/SfCalendar-img1.jpeg)
 
 ## Culture Support
 
@@ -121,6 +121,6 @@ calendar.Culture = New System.Globalization.CultureInfo("fr-FR")
 
 {% endtabs %}
 
-![](SfCalendar-images/SfCalendar-img4.jpeg)
+![Cuture support in calendar](SfCalendar-images/SfCalendar-img4.jpeg)
 
 
