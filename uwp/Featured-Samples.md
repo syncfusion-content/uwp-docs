@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Guidance to run the samples
+title: Guidance to run the samples | Syncfusion
 description: Learn how to run the samples of Syncfusion Essential Studio UWP products
 platform: uwp
 control: Featured Samples
@@ -11,21 +11,21 @@ documentation: ug
 
 ## Guide to run the samples
 
-To run the samples, search it from Start by name of “Dashboard”
+To run the samples, search it from Start by name of “UWP Control”
 
-![](Featured-Samples_images/Featured-Samples_img1.jpeg)
+![Search a UWP Control Panel from Strat](Featured-Samples_images/Featured-Samples_img1.jpeg)
 
 
 To execute SampleBrowser, select the corresponding product and click “RUN LOCAL SAMPLES” button.
 
-![](Featured-Samples_images/Featured-Samples_img2.jpeg)
+![Run the samples from the SampleBrower Window](Featured-Samples_images/Featured-Samples_img2.jpeg)
 
 
 ## SampleBrowser
 
 Sample Browser is available under following folder location:
 
-“[Installed Drive]:\Users[user name]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\UWP\SampleBrowser”
+“[Installed Drive]:\Users\Public\Documents\Syncfusion\Universal Windows\{{ site.releaseversion }}\SampleBrowser”
 
 N> In above section, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
 
