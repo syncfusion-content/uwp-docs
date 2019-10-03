@@ -159,6 +159,17 @@ Use to display the numeric data using <code>SfNumericUpDown</code>.
 Use to display the boolean data using <code>ToggleSwitch</code>.
 </td>
 </tr>
+<tr>
+<td>
+{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html)'| markdownify }}
+</td>
+<td>
+{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
+</td>
+<td>
+Use to select/deselect rows based on the checkbox value which is not bound with data object.
+</td>
+</tr>
 </table>
 
 ## GridColumn
@@ -2016,6 +2027,71 @@ GridToggleSwitchColumn provides support to display the text, while ToggleSwitch 
 
 ![Displaying GridToggleSwitchColumn in UWP SfDataGrid](Column-Types_images/Column-Types_img36.png)
 
+##GridCheckBoxSelectorColumn
+
+`SfDataGrid` allows you to select/deselect individual rows via `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html) which are not bound with data object from underlying data source and it can be added like normal columns. The selector column supports row selection alone. And selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html).
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+                       AutoGenerateColumns="False" 
+                       ItemsSource="{Binding Orders}">
+      <syncfusion:SfDataGrid.Columns>
+            <syncfusion:GridCheckBoxSelectorColumn MappingName="SelectorColumn" 
+                                                   Width="40"/>
+      </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn() 
+{ 
+       MappingName = "SelectorColumn", 
+       Width = 40 
+});
+{% endhighlight %}
+{% endtabs %}
+
+![uwp datagrid selector column](Column-Types_images/Column-Types_img41.png)
+
+###Text on column header
+
+By default, CheckBox is displayed in the header of selector column which is used to select/deselect all the rows in the datagrid. However, you can display text instead of checkbox in the header of selector column by setting [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `true`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"                                                                       
+                       AutoGenerateColumns="False" 
+                       ItemsSource="{Binding Orders}">
+      <syncfusion:SfDataGrid.Columns>
+            <syncfusion:GridCheckBoxSelectorColumn MappingName="SelectorColumn"
+                                                   AllowCheckBoxOnHeader="False"
+                                                   HeaderText="Selector" 
+                                                   Width="70"/>         
+      </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn() 
+{ 
+       HeaderText = "Selector", 
+       MappingName = "SelectorColumn", 
+       AllowCheckBoxOnHeader = false , 
+       Width = 70 
+});
+{% endhighlight %}
+{% endtabs %}
+
+![uwp datagrid selector column with text in column header](Column-Types_images/Column-Types_img42.png)
+
+###Limitations
+
+Following are the limitations of GridCheckBoxSelectorColumn,
+
+1.	Selector column does not support cell selection.
+2.	Selector column does not support data operations like sorting, filtering and grouping.
+3.	Selector column will be excluded in operations like printing, exporting.
+4.	Selector column does not have filter row support.
+
 ## Custom column support
 
 SfDataGrid allows you to create your own column by overriding predefined column type or creating a new custom column.
@@ -2277,6 +2353,17 @@ GridUpDownColumn
 </td>
 <td>
 {{'[GridCellUpDownRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellUpDownRenderer.html)'| markdownify }}
+</td>
+<td>
+UpDown
+</td>
+</tr>
+<tr>
+<td>
+GridCheckBoxSelectorColumn
+</td>
+<td>
+{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
 </td>
 <td>
 UpDown
