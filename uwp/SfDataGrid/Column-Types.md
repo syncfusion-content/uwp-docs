@@ -2027,7 +2027,7 @@ GridToggleSwitchColumn provides support to display the text, while ToggleSwitch 
 
 ![Displaying GridToggleSwitchColumn in UWP SfDataGrid](Column-Types_images/Column-Types_img36.png)
 
-##GridCheckBoxSelectorColumn
+## GridCheckBoxSelectorColumn
 
 `SfDataGrid` allows you to select/deselect individual rows via `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html) which are not bound with data object from underlying data source and it can be added like normal columns. The selector column supports row selection alone. And selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html).
 
@@ -2051,11 +2051,13 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
+By default, CheckBox is displayed in the header of selector column which is used to select/deselect all the rows in the datagrid.
+
 ![uwp datagrid selector column](Column-Types_images/Column-Types_img41.png)
 
-###Text on column header
+### Text on column header
 
-By default, CheckBox is displayed in the header of selector column which is used to select/deselect all the rows in the datagrid. However, you can display text instead of checkbox in the header of selector column by setting [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `true`.
+You can display text instead of checkbox in the header of selector column by setting [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2083,13 +2085,13 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 
 ![uwp datagrid selector column with text in column header](Column-Types_images/Column-Types_img42.png)
 
-###Limitations
+### Limitations
 
 Following are the limitations of GridCheckBoxSelectorColumn,
 
 1.	Selector column does not support cell selection.
 2.	Selector column does not support data operations like sorting, filtering and grouping.
-3.	Selector column will be excluded in operations like printing, exporting.
+3.	Selector column will be excluded in operations like printing and exporting.
 4.	Selector column does not have filter row support.
 
 ## Custom column support

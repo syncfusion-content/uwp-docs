@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection support in SfDataGrid
-description: How to select the rows or cells in SfDataGrid
+title: Selection in UWP DataGrid | Syncfusion
+description: How to select the rows or cells in DataGrid
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -76,6 +76,9 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 
 ![](Selection_images/Selection_img3.png)
 
+## CheckBox column selection
+
+`SfDataGrid` allows you to select/deselect rows via `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html). Please refer [this](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) section. 
 
 ## Get Selected Rows and Cells
 
