@@ -78,7 +78,7 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 
 ## CheckBox column selection
 
-`SfDataGrid` allows you to select/deselect rows via `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html). Please refer [this](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) section. 
+`SfDataGrid` allows you to select/deselect rows via `CheckBox`. You can refer [GridCheckBoxSelectorColumn](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) for more information.
 
 ## Get Selected Rows and Cells
 
