@@ -167,7 +167,7 @@ Use to display the boolean data using <code>ToggleSwitch</code>.
 {{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
 </td>
 <td>
-Use to select/deselect rows based on the checkbox value which is not bound with data object.
+Selects or deselects rows based on the check box value, which is not bound with data object.
 </td>
 </tr>
 </table>
@@ -2029,7 +2029,7 @@ GridToggleSwitchColumn provides support to display the text, while ToggleSwitch 
 
 ## GridCheckBoxSelectorColumn
 
-`SfDataGrid` allows you to select/deselect individual rows via `CheckBox` using [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html) which are not bound with data object from underlying data source and it can be added like normal columns. The selector column supports row selection alone. And selection in selector column works based on the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html).
+`SfDataGrid` allows you to select or deselect individual rows through `CheckBox` using the [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -2051,13 +2051,13 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 {% endhighlight %}
 {% endtabs %}
 
-By default, CheckBox is displayed in the header of selector column which is used to select/deselect all the rows in the datagrid.
+By default, check box is displayed in header of selector column, which is used to select or deselect all the rows in the datagrid.
 
 ![uwp datagrid selector column](Column-Types_images/Column-Types_img41.png)
 
 ### Text on column header
 
-You can display text instead of checkbox in the header of selector column by setting [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `true`.
+You can display text instead of check box in header of selector column by setting the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2087,12 +2087,12 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 
 ### Limitations
 
-Following are the limitations of GridCheckBoxSelectorColumn,
+The following are the limitations of GridCheckBoxSelectorColumn:
 
-1.	Selector column does not support cell selection.
-2.	Selector column does not support data operations like sorting, filtering and grouping.
-3.	Selector column will be excluded in operations like printing and exporting.
-4.	Selector column does not have filter row support.
+* Selector column does not support cell selection.
+* Selector column does not support data operations like sorting, filtering, and grouping.
+* Selector column will be excluded in operations like printing and exporting.
+* Selector column does not have filter row support.
 
 ## Custom column support
 
