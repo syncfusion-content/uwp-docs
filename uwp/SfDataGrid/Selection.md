@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection support in SfDataGrid
-description: How to select the rows or cells in SfDataGrid
+title: Selection in UWP DataGrid | Syncfusion
+description: This section explains about how to select rows or cells in UWP SfDataGrid and its different modes of selection.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -31,7 +31,7 @@ The `SelectionUnit` and `SelectionMode` properties together define the behavior 
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img1.png)
+![Single mode row selection in UWP DataGrid](Selection_images/Selection_img1.png)
 
 
 ### Disable selection for rows and columns
@@ -58,7 +58,7 @@ While using `Extended`, you can select multiple rows or cells by pressing the ke
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img2.png)
+![Extended mode cell selection in UWP DataGrid](Selection_images/Selection_img2.png)
 
 N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple rows and cells by clicking the respective cell or row.  Also in multiple selection pressing navigation keys will move only the current cell and you can select or deselect by pressing <kbd>space</kbd> key.
 
@@ -74,8 +74,11 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img3.png)
+![Multiple mode cell selection in UWP DataGrid](Selection_images/Selection_img3.png)
 
+## Check box column selection
+
+`SfDataGrid` allows you to select or deselect rows by interacting with check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) for more information.
 
 ## Get Selected Rows and Cells
 
@@ -146,7 +149,7 @@ foreach(var order in viewModel.Orders)
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img4.png)
+![Programmatic selection of records using the SelectedItems property in UWP DataGrid](Selection_images/Selection_img4.png)
 
 
 ### Process selection using methods
@@ -161,7 +164,7 @@ this.dataGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img5.png)
+![Programmatic selection of records using the SelectRows method in UWP DataGrid](Selection_images/Selection_img5.png)
 
 
 You can select a specific cell by using the [SelectCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectCell.html) method in cell selection.
@@ -176,7 +179,7 @@ this.dataGrid.SelectCell(record, column);
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img6.png)
+![Programmatic selection of cell using the SelectCell method in UWP DataGrid](Selection_images/Selection_img6.png)
 
 
 You can select a range of cells through [SelectCells](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectCells.html) method in cell selection.
@@ -232,7 +235,7 @@ public class GridSelectionControllerExt : GridCellSelectionController
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img7.png)
+![Programmatic selection of cells using the SelectCells method in UWP DataGrid](Selection_images/Selection_img7.png)
 
 
 You can select all the rows or cells using [SelectAll](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectAll.html) method.
@@ -306,14 +309,14 @@ this.dataGrid.UnSelectCell(removeRecord, removeColumn);
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img8.png)
+![Programmatic removal of selection for a cell using the UnSelectCell method in UWP DataGrid](Selection_images/Selection_img8.png)
 
 
 ## Selection in Master-Details View
 
 Master-Details View provides support to select one or more rows or cells in [DetailsViewDataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html). You can’t able to maintain the selection in both ParentDataGrid and `DetailsViewDataGrid`. Selection will be maintained either in ParentDataGrid or in `DetailsViewDataGrid`.
 
-![](Selection_images/Selection_img9.png)
+![Selection in Master-Details View in UWP DataGrid](Selection_images/Selection_img9.png)
 
 
 ### Getting SelectedDetailsViewDataGrid
@@ -593,7 +596,7 @@ if (detailsViewDataGrid == null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img10.png)
+![Programmatic expansion and scrolling of Master-Details View in UWP DataGrid](Selection_images/Selection_img10.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/SELECT~1-1466905114.ZIP).
@@ -1191,7 +1194,7 @@ You can change the selection background and foreground using [RowSelectionBrush]
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img11.png)
+![Appearance customization of rows in UWP DataGrid](Selection_images/Selection_img11.png)
 
 
 ### Changing Current Cell Border Style
@@ -1209,7 +1212,7 @@ You can change the current cell border thickness and border color using [Current
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img12.png)
+![Appearance customization of current cell in UWP DataGrid](Selection_images/Selection_img12.png)
 
 
 ### Customizing Row Selection Border
@@ -1275,7 +1278,7 @@ Filter Row - `FilterRowControl`
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img13.png)
+![Customization of row selection border in UWP DataGrid](Selection_images/Selection_img13.png)
 
 
 ### Customizing Cell Selection
@@ -1344,7 +1347,7 @@ Filter Row - `GridFilterRowCell`
 {% endhighlight %}
 {% endtabs %}
 
-![](Selection_images/Selection_img14.png)
+![Custom cell selection for UWP SfDataGrid](Selection_images/Selection_img14.png)
 
 
 ## Binding Selection Properties
@@ -1562,7 +1565,7 @@ private void dataGrid_PointerPressed(object sender, PointerRoutedEventArgs e)
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/COLUMN~1-134284707.ZIP).
 
-![](Selection_images/Selection_img15.png)
+![Column selection when clicking column header in UWP DataGrid](Selection_images/Selection_img15.png)
 
 
 ### Avoid CaptionSummaryRow selection on Grouping
