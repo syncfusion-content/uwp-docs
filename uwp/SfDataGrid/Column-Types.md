@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in UWP DataGrid | Syncfusion
-description: UWP DataGrid supports various built-in editors through built-in column types such as textbox column , combobox column, template column, datetime column, etc.
+description: This section explains about the different types of built-in column types and custom column support in UWP SfDataGrid.
 platform: uwp
 control: SfDataGrid
 documentation: ug

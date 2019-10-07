@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in UWP DataGrid | Syncfusion
-description: How to select the rows or cells in UWP DataGrid
+description: This section explains about how to select rows or cells in UWP SfDataGrid and its different modes of selection.
 platform: uwp
 control: SfDataGrid
 documentation: ug
