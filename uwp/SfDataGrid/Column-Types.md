@@ -161,10 +161,10 @@ Use to display the boolean data using <code>ToggleSwitch</code>.
 </tr>
 <tr>
 <td>
-{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html)'| markdownify }}
+GridCheckBoxSelectorColumn
 </td>
 <td>
-{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
+GridCellCheckBoxSelectorRenderer
 </td>
 <td>
 Selects or deselects rows based on the check box value, which is not bound with data object.
@@ -2029,7 +2029,7 @@ GridToggleSwitchColumn provides support to display the text, while ToggleSwitch 
 
 ## GridCheckBoxSelectorColumn
 
-`SfDataGrid` allows you to select or deselect individual rows through `CheckBox` using the [GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html), which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html).
+`SfDataGrid` allows you to select or deselect individual rows through `CheckBox` using the `GridCheckBoxSelectorColumn`, which is not bound with data object from underlying data source, and it can be added like normal columns. The selector column supports row selection alone, and selection in selector column works based on [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -2057,7 +2057,7 @@ By default, check box is displayed in header of selector column, which is used t
 
 ### Text on column header
 
-You can display text instead of check box in header of selector column by setting the [AllowCheckBoxOnHeader](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn~AllowCheckBoxOnHeader.html) property to `true`.
+You can display text instead of check box in header of selector column by setting the `AllowCheckBoxOnHeader` property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2365,10 +2365,10 @@ UpDown
 GridCheckBoxSelectorColumn
 </td>
 <td>
-{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
+GridCellCheckBoxSelectorRenderer
 </td>
 <td>
-UpDown
+Selector
 </td>
 </tr>
 </table>
