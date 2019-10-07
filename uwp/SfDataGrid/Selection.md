@@ -76,9 +76,9 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 
 ![Multiple mode cell selection in UWP DataGrid](Selection_images/Selection_img3.png)
 
-## CheckBox column selection
+## Check box column selection
 
-`SfDataGrid` allows you to select/deselect rows by interacting with the checkbox in a column. All the rows in a datagrid can also be selected by interacting with an intuitive checkbox in the column header. You can refer [GridCheckBoxSelectorColumn](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) for more information.
+`SfDataGrid` allows you to select or deselect rows by interacting with check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) for more information.
 
 ## Get Selected Rows and Cells
 
@@ -149,7 +149,7 @@ foreach(var order in viewModel.Orders)
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection of records using SelectedItems property in UWP DataGrid](Selection_images/Selection_img4.png)
+![Programmatic selection of records using the SelectedItems property in UWP DataGrid](Selection_images/Selection_img4.png)
 
 
 ### Process selection using methods
@@ -164,7 +164,7 @@ this.dataGrid.SelectRows(3, 7);
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection of records using SelectRows method in UWP DataGrid](Selection_images/Selection_img5.png)
+![Programmatic selection of records using the SelectRows method in UWP DataGrid](Selection_images/Selection_img5.png)
 
 
 You can select a specific cell by using the [SelectCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectCell.html) method in cell selection.
@@ -179,7 +179,7 @@ this.dataGrid.SelectCell(record, column);
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection of cell using SelectCell method in UWP DataGrid](Selection_images/Selection_img6.png)
+![Programmatic selection of cell using the SelectCell method in UWP DataGrid](Selection_images/Selection_img6.png)
 
 
 You can select a range of cells through [SelectCells](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectCells.html) method in cell selection.
@@ -235,7 +235,7 @@ public class GridSelectionControllerExt : GridCellSelectionController
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic selection of cells using SelectCells method in UWP DataGrid](Selection_images/Selection_img7.png)
+![Programmatic selection of cells using the SelectCells method in UWP DataGrid](Selection_images/Selection_img7.png)
 
 
 You can select all the rows or cells using [SelectAll](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SelectAll.html) method.
@@ -309,7 +309,7 @@ this.dataGrid.UnSelectCell(removeRecord, removeColumn);
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic removal of selection for a cell using UnSelectCell method in UWP DataGrid](Selection_images/Selection_img8.png)
+![Programmatic removal of selection for a cell using the UnSelectCell method in UWP DataGrid](Selection_images/Selection_img8.png)
 
 
 ## Selection in Master-Details View
