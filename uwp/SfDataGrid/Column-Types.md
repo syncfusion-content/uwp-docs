@@ -2057,7 +2057,7 @@ By default, check box is displayed in header of selector column, which is used t
 
 ### Text on column header
 
-You can display text instead of check box in header of selector column by setting the `AllowCheckBoxOnHeader` property to `true`.
+You can display text instead of check box in header of selector column by setting the `AllowCheckBoxOnHeader` property to `False`.
 
 {% tabs %}
 {% highlight xaml %}
