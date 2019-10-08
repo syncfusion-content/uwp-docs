@@ -76,7 +76,7 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 
 ![Multiple mode cell selection in UWP DataGrid](Selection_images/Selection_img3.png)
 
-## Check box column selection
+## Checkbox column selection
 
 `SfDataGrid` allows you to select or deselect rows by interacting with check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) for more information.
 
