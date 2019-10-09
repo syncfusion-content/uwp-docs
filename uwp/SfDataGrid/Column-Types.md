@@ -2087,7 +2087,7 @@ this.dataGrid.Columns.Add(new GridCheckBoxSelectorColumn()
 
 ### Styling selector column
 
-The style of checkbox in record cells and header can be customized by changing the default template of checkbox.
+The style of check box in record cells and header can be customized by changing the default template of check box.
 
 {% tabs %}
 {% highlight xaml %}
