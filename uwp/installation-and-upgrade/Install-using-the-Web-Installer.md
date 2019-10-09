@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installation Using Web Installer | UWP | Syncfusion
-description: Learn how to install and deploy the Syncfusion UWP component
+description: This section provides information regarding learn how to install and deploy the Syncfusion UWP component
 platform: uwp
 control: Installation and Deployment
 documentation: ug
