@@ -2687,7 +2687,7 @@ UpDown
 GridCheckBoxSelectorColumn
 </td>
 <td>
-[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells_namespace.html)
+[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)
 </td>
 <td>
 Selector
