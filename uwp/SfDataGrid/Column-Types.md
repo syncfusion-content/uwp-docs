@@ -161,10 +161,10 @@ Use to display the boolean data using <code>ToggleSwitch</code>.
 </tr>
 <tr>
 <td>
-[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html)
+{{'[GridCheckBoxSelectorColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxSelectorColumn.html)'| markdownify }}
 </td>
 <td>
-[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)
+{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
 </td>
 <td>
 Selects or deselects rows based on the check box value, which is not bound with data object.
@@ -2687,7 +2687,7 @@ UpDown
 GridCheckBoxSelectorColumn
 </td>
 <td>
-[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)
+{{'[GridCellCheckBoxSelectorRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.GridCellCheckBoxSelectorRenderer.html)'| markdownify }}
 </td>
 <td>
 Selector
