@@ -53,7 +53,7 @@ N> You can get the default resource files of all Syncfusion UWP libraries from [
 
 2) Add [default resource files](https://github.com/syncfusion/uwp-controls-localization-resource-files) of libraries you are using into `Resources` folder.
 
-N> > Consider you are using `SfDataGrid` control in your application. Then you need to copy and include `Syncfusion.SfGrid.UWP.Resources.resw` (since `SfDataGrid` present in `Syncfusion.SfGrid.UWP` library) file in your application under `Resources` folder. So, now you can know the key names and values of default strings used in `Syncfusion.SfGrid.UWP.dll` library.
+N> Consider you are using `SfDataGrid` control in your application. Then you need to copy and include `Syncfusion.SfGrid.UWP.Resources.resw` (since `SfDataGrid` present in `Syncfusion.SfGrid.UWP` library) file in your application under `Resources` folder. So, now you can know the key names and values of default strings used in `Syncfusion.SfGrid.UWP.dll` library.
 
 ![UWP datagrid Localization](Localization_images/uwp-default-resw-file.png)
 
@@ -69,7 +69,7 @@ N> > Consider you are using `SfDataGrid` control in your application. Then you n
 
 ![UWP datagrid localized .resw file](Localization_images/uwp-localized-resw-file.png)
 
-N> Download demo link from GitHub.
+N> Download demo link from [GitHub](https://github.com/SyncfusionExamples/uwp-datagrid-localization).
 
 ## Editing default culture strings
 
