@@ -1,6 +1,6 @@
 ---
 title: Selection | SfRichTextBoxAdv | UWP | Syncfusion
-description: This section illustrates how to select the content of UWP RichTextBox control
+description: This section illustrates how to select a portion of the document through supported APIs in UWP RichTextBox control
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
