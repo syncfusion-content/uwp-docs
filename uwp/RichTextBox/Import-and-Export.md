@@ -1,6 +1,6 @@
 ---
-title: Import and Export
-description: import-and-export
+title: Import and Export |  SfRichTextBoxAdv | UWP | Syncfusion
+description: This section describes how to perform the import/export word, rich text format, HTML, XAML and text documents in UWP SfRichTextBoxAdv Control.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug

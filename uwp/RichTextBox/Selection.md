@@ -1,6 +1,6 @@
 ---
-title: Selection
-description: selection
+title: Selection | SfRichTextBoxAdv | UWP | Syncfusion
+description: This section illustrates how to select the content of UWP RichTextBox control
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
