@@ -252,13 +252,13 @@ Date Filters
 </tr>
 <tr>
 <td>
-When the string value is bounded to the [GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn.html) or the items source is {{'[dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx)'| markdownify }}, then TextFilters are loaded in [AdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html). 
+When the string value is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items source is {{'[dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx)'| markdownify }}, then TextFilters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}. 
 </td>
 <td>
-When integer, double, short, decimal, byte or long are bound to the [GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn.html) then Number Filters are loaded in [AdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html).
+When integer, double, short, decimal, byte or long are bound to the {{'[GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} then Number Filters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}.
 </td>
 <td>
-When the `DateTime` type value is bound to the [GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn.html), then Date Filters are loaded in [AdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html).
+When the <code>DateTime</code> type value is bound to the {{'[GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }}, then Date Filters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}.
 </td>
 </tr>
 <tr>

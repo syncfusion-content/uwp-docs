@@ -53,7 +53,7 @@ FilterRowConditions
 TextBox
 </td>
 <td>
-Equals, NotEquals, Empty, NotEmpty, Contains, NotContains, BeginsWith, EndsWith, Null, NotNull
+Equals, NotEquals, Empty, NotEmpty, Contains, NotContains, BeginsWith, NotBeginsWith, EndsWith, NotEndsWith, Null, NotNull
 </td>
 </tr>
 <tr>
