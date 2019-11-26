@@ -1,7 +1,7 @@
 ---
 layout: post
-title: FilterRow support in SfDataGrid.
-description: How to filter the data using FilterRow
+title: Filter row in UWP DataGrid control | Syncfusion
+description: Learn about filter data using built-in filter row support in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -34,7 +34,7 @@ this.dataGrid.FilterRowPosition = FilterRowPosition.FixedTop;
 {% endhighlight %}
 {% endtabs %}
 
-![](FilterRow_images/FilterRow_img1.png)
+![UWP DataGrid with filter row](FilterRow_images/FilterRow_img1.png)
 
 
 The each GridFilterRowCell which loads TextBox, DoubleTextBox and DateTimeEdit will contains the filter options button in right corner. You can change the FilterRowCondition at runtime. The below FilterRowConditions will be loaded based on editors.
