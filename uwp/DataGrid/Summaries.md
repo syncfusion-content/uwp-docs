@@ -73,10 +73,15 @@ In the below code snippet, summary is defined for `UnitPrice` and `ProductName` 
 
 ![SummaryColumns in TableSummaryRow for UWP DataGrid](Summaries_images/Summaries_img3.png)
 
-## Displaying summary columns along with title
+### Displaying summary columns along with title
 
-You can display summary information with title text by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` and  defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in title text.
-If you can setting the  `GridSummaryRow.TitleColumnCount`  to  how many column should be display the title text and other defined column shows the summary for defining summary columns.
+You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows columns summary. 
+
+Refer [Defining summary for column](#defining-summary-for-column) section to know more about how to defining summary columns.
+
+You have to define [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in defined title columns.
+
+You have to setting the `GridSummaryRow.TitleColumnCount` to how many columns should be display the title and other defined column shows the summary for defining summary columns.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
 
@@ -147,7 +152,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns along with title text at same time.
+The following screenshot illustrates displaying summary columns along with title at same time.
 
 ![SummaryColumns along with title in TableSummaryRow for UWP DataGrid](Summaries_images/Summaries_img21.png)
 
@@ -361,10 +366,15 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 
 ![SummaryColumns in group summary row for UWP DataGrid](Summaries_images/Summaries_img6.png)
 
-## Displaying summary columns along with title
+### Displaying summary columns along with title
 
-You can display summary information with title text by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` and  defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in title text.
-If you can setting the  `GridSummaryRow.TitleColumnCount`  to  how many column should be display the title text and other defined column shows the summary for defining summary columns.
+You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows columns summary. 
+
+Refer [Defining summary for column](#defining-summary-for-column-1) section to know more about how to defining summary columns.
+
+You have to define [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in defined title columns.
+
+You have to setting the `GridSummaryRow.TitleColumnCount` to how many columns should be display the title and other defined column shows the summary for defining summary columns.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
 
@@ -434,7 +444,7 @@ this.dataGrid.GroupSummaryRows.Add(new GridSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns along with title text at same time.
+The following screenshot illustrates displaying summary columns along with title at same time.
 
 ![SummaryColumns along with title in group summary row for UWP DataGrid](Summaries_images/Summaries_img20.png)
 
@@ -599,10 +609,15 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 
 ![Caption summary in columns for UWP DataGrid](Summaries_images/Summaries_img10.png)
 
-## Displaying summary columns along with title
+### Displaying summary columns along with title
 
-You can display summary information with title text by setting [GridSummaryRow.ShowSummaryInRow](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` and  defining summary columns. You have to define [GridSummaryRow.Title](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in title text.
-If you can setting the  `GridSummaryRow.TitleColumnCount`  to  how many column should be display the title text and other defined column shows the summary for defining summary columns.
+You can display summary information along with title by setting [GridSummaryRow.ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow~ShowSummaryInRow.html) to `false` and setting the `GridSummaryRow.TitleColumnCount` for how many columns should be shows title and other defined columns  shows columns summary. 
+
+Refer [Defining summary for column](#defining-summary-for-column-2) section to know more about how to defining summary columns.
+
+You have to define [GridSummaryRow.Title](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow~Title.html) based on [GridSummaryColumn.Name](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryColumn~Name.html) property to format summary columns values in defined title columns.
+
+You have to setting the `GridSummaryRow.TitleColumnCount` to how many columns should be display the title and other defined column shows the summary for defining summary columns.
 
 Refer [Formatting Summary](#formatting-summary) section to know more about how to format summary.
 
@@ -672,7 +687,7 @@ this.dataGrid.CaptionSummaryRow = new GridSummaryRow()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot illustrates displaying summary columns along with title text at same time.
+The following screenshot illustrates displaying summary columns along with title at same time.
 
 ![Caption summary columns along with title in UWP DataGrid](Summaries_images/Summaries_img19.png)
 
