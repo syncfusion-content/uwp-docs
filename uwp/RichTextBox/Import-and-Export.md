@@ -78,7 +78,7 @@ The following code example demonstrates how to hide the loading page number in S
 {% highlight xaml %}
 <RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv">
        <RichTextBoxAdv:SfRichTextBoxAdv.LoadAsyncSettings>
-           <RichTextBoxAdv:LoadAsyncSettings ShowLoadingPageNumber="False"/>
+           <RichTextBoxAdv:LoadAsyncSettings ShowPageNumber="False"/>
        </RichTextBoxAdv:SfRichTextBoxAdv.LoadAsyncSettings>
 </RichTextBoxAdv:SfRichTextBoxAdv>
 
@@ -88,7 +88,7 @@ The following code example demonstrates how to hide the loading page number in S
 // Initializes a new instance of RichTextBoxAdv.
 SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 ////Hides the loading page number.
-richTextBoxAdv.LoadAsyncSettings.ShowLoadingPageNumber = false;
+richTextBoxAdv.LoadAsyncSettings.ShowPageNumber = false;
 
 
 {% endhighlight %}
@@ -96,7 +96,7 @@ richTextBoxAdv.LoadAsyncSettings.ShowLoadingPageNumber = false;
 ' Initializes a new instance of RichTextBoxAdv.
 Dim richTextBoxAdv As New SfRichTextBoxAdv()
 ' Hides the loading page number.
-richTextBoxAdv.LoadAsyncSettings.ShowLoadingPageNumber = false
+richTextBoxAdv.LoadAsyncSettings.ShowPageNumber = false
 
 
 {% endhighlight %}
