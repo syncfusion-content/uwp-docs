@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in SfDataGrid.
-description: How to localize the SfDataGrid.
+title: Localization in UWP DataGrid control | Syncfusion
+description: Learn about localization support to customize the default strings in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization 
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfDataGrid by adding resource file. Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before `InitializeComponent()` method.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfDataGrid by adding [resource] (https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before `InitializeComponent()` method.
  
 Below application culture changed to German.
 
@@ -31,7 +31,7 @@ To localize the SfDataGrid based on [CurrentUICulture](https://msdn.microsoft.co
 
 2. In Add New Item wizard, select the **Resource File** option and name the filename as **Syncfusion.SfGrid.UWP.Resources.&lt;culture name&gt;.resw** .
  
-![](Localization_images/Localization_img1.png)
+![Shows the name of resource file to be added for UWP DataGrid](Localization_images/Localization_img1.png)
 
 For example, you have to give name as **Syncfusion.SfGrid.UWP.Resources.de.resw** for German culture.
  
@@ -40,30 +40,30 @@ For example, you have to give name as **Syncfusion.SfGrid.UWP.Resources.de.resw*
 4. Now the resource file is added.
 
 
-![](Localization_images/Localization_img2.png)
+![Shows the added resource file for German language in UWP DataGrid](Localization_images/Localization_img2.png)
 
 5.Add the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.UWP.Resources.de.resw** file and change its corresponding value to corresponding culture.
  
-![](Localization_images/Localization_img3.png)
+![Shows the added resource file name / value pair in the resource designer in UWP DataGrid](Localization_images/Localization_img3.png)
 
 
-You can get the SfDataGrid’s key from default resource  [Syncfusion.SfGrid.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-531431521.zip).
+You can get the SfDataGrid’s key from default resource  [Syncfusion.SfGrid.UWP.Resources.resw](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-145129753.zip).
 
 
-![](Localization_images/Localization_img4.png)
+![Shows the localized in German for UWP DataGrid](Localization_images/Localization_img4.png)
 
 
 ## Editing default culture resource
 
 
-You can edit default resource file by adding it to your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-531431521.zip).
+You can edit default resource file by adding it to your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-145129753.zip).
 
-![](Localization_images/Localization_img5.png)
+![Displaying the default culture resource editing for UWP SfDataGrid](Localization_images/Localization_img5.png)
 
 Now, change the Name/Value pair in Resource Designer of **Syncfusion.SfGrid.UWP.Resources.resw** file.
 
-![](Localization_images/Localization_img6.png)
+![Displaying the name / value pair in the resource designer for default culture resource in UWP SfDataGrid](Localization_images/Localization_img6.png)
 
 
-![](Localization_images/Localization_img7.png)
+![Displaying UWP SfDataGrid with the default culture resource edited](Localization_images/Localization_img7.png)
 
