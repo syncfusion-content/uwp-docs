@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Handle Animation support for Syncfusion SfBusyIndicator control in UWP
-description: Syncfusion SfBusyIndicator control provides thirty-eight types of Animation support in UWP platform.
+description: Syncfusion SfBusyIndicator control provides thirty-one different types of Animation support in UWP platform.
 platform: uwp
 control: SfBusyIndicator
 documentation: ug
@@ -116,11 +116,7 @@ busyIndicator.AnimationType = AnimationTypes.Ball
 
 ![Animation Umberlla](SfBusyIndicator1/Umberlla.png)	![Animation Winmil](SfBusyIndicator1/Winmil.png)	![Animation Box](SfBusyIndicator1/Box.png)
 
-![Animation Bulb](SfBusyIndicator1/Bulb.png) ![Animation BarChart](SfBusyIndicator1/BarChart.png)  ![Animation DoubleRing](SfBusyIndicator1/DoubleRing.png)
-
-![Animation DualRing](SfBusyIndicator1/DualRing.png) ![Animation Ripple](SfBusyIndicator1/Ripple.png) ![Animation Message](SfBusyIndicator1/Message.png)
-
-![Animation Cupertino](SfBusyIndicator1/Cupertino.png) ![Animation DotCircle](SfBusyIndicator1/DotCircle.png) 
+![Animation Bulb](SfBusyIndicator1/Bulb.png)
 
 
 ## Accelerating Animation Speed
