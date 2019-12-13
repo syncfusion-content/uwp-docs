@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summaries in SfDataGrid for UWP | Syncfusion
+title: Summaries in UWP DataGrid control | Syncfusion
 description: Learn about summary row (table, group and caption) support in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: uwp
 control: SfDataGrid
@@ -21,7 +21,7 @@ SfDataGrid provides support to display the concise information about the data ob
 ![Shows the different summaries in UWP DataGrid](Summaries_images/Summaries_img1.png)
 
 
-![DataGrid with summary rows](Summaries_images/Summaries_img2.png)
+![Shows the different summaries in tablet mode of UWP DataGrid](Summaries_images/Summaries_img2.png)
 
 Summary rows are represented by using [GridSummaryRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow.html) and each `GridSummaryRow` hold summary information of columns in [SummaryColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryRow~SummaryColumns.html) property. The `SummaryColumns` contains the collection of [GridSummaryColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html) which carries the name of column, format and its summary aggregate type.
 
