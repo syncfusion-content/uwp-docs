@@ -14,7 +14,7 @@ The following code illustrates how to apply color as background to the document.
 
 {% tabs %}
 {% highlight xaml %}
-<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" Background="LightGreen " />
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" Background="#6699cc" />
 
 
 {% endhighlight %}
@@ -22,7 +22,7 @@ The following code illustrates how to apply color as background to the document.
 // Initializes a new instance of RichTextBoxAdv.
 SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 // Sets the control background color
-richTextBoxAdv.Background = new SolidColorBrush(Colors.LightGreen);
+richTextBoxAdv.Background = new SolidColorBrush(Color.FromRgb(102, 153, 204));
 
 
 {% endhighlight %}
@@ -31,7 +31,7 @@ richTextBoxAdv.Background = new SolidColorBrush(Colors.LightGreen);
 Dim richTextBoxAdv As New SfRichTextBoxAdv()
 
 ' Sets the control background color.
-richTextBoxAdv.Background = new SolidColorBrush(Colors.LightGreen)
+richTextBoxAdv.Background = new SolidColorBrush(Color.FromRgb(102, 153, 204))
 
 
 {% endhighlight %}
@@ -40,6 +40,9 @@ richTextBoxAdv.Background = new SolidColorBrush(Colors.LightGreen)
 
 Pages layout
 ![Pages layout](Image_images/control_page.PNG)
+
+Continuous layout
+![Continuous layout](Image_images/continous_noBackground.PNG)
 
 Block layout
 The block layout always inherits the control background color.
@@ -54,7 +57,7 @@ The following code illustrates how to override the document background color.
 
 {% tabs %}
 {% highlight xaml %}
-<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" LayoutType="Continuous" Background="Green" OverridesDocumentBackground="True" />
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv" LayoutType="Continuous" Background="#6699cc" OverridesDocumentBackground="True" />
 
 
 {% endhighlight %}
@@ -74,7 +77,7 @@ richTextBoxAdv.OverridesDocumentBackground = true;
 ' Initializes a new instance of RichTextBoxAdv.
 Dim richTextBoxAdv As New SfRichTextBoxAdv()
 ' Sets the control background color.
-richTextBoxAdv.Background = new SolidColorBrush(Colors.LightGreen)
+richTextBoxAdv.Background = new SolidColorBrush(Color.FromRgb(102, 153, 204))
 ' Sets the layout type as continous 
 richTextBoxAdv.LayoutType = LayoutType.Continuous
 ' Enable the OverridesDocumentBackground property
@@ -103,7 +106,7 @@ The following code illustrates how to apply color as background to the document 
 // Initializes a new instance of RichTextBoxAdv.
 SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
 // Sets the document background color
-richTextBoxAdv.Document.Background.Color = Colors.LightGreen;
+richTextBoxAdv.Document.Background.Color = Color.FromRgb(102, 153, 204);
 
 
 {% endhighlight %}
@@ -111,7 +114,7 @@ richTextBoxAdv.Document.Background.Color = Colors.LightGreen;
 ' Initializes a new instance of RichTextBoxAdv.
 Dim richTextBoxAdv As New SfRichTextBoxAdv()
 ' Sets the document background color.
-richTextBoxAdv.Document.Background.Color = Colors.LightGreen
+richTextBoxAdv.Document.Background.Color = Color.FromRgb(102, 153, 204)
 
 
 

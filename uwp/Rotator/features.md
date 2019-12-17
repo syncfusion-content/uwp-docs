@@ -111,3 +111,59 @@ The `NavigationDirection` property specifies the direction in which items should
     <syncfusion:SfRotator NavigationDirection="Vertical"/>
 
 {% endhighlight %}
+
+* `LeftToRight` - Items can be navigated from Left to Right only.
+
+{% highlight C# %}
+
+	Rotator.NavigationDirection = NavigationDirection.LeftToRight;
+
+{% endhighlight %}
+
+{% highlight Xaml %}
+
+    <syncfusion:SfRotator NavigationDirection="LeftToRight"/>
+
+{% endhighlight %}
+
+* `RightToLeft` - Items can be navigated from Right to Left only.
+
+{% highlight C# %}
+
+	Rotator.NavigationDirection = NavigationDirection.RightToLeft;
+
+{% endhighlight %}
+
+{% highlight Xaml %}
+
+    <syncfusion:SfRotator NavigationDirection="RightToLeft"/>
+
+{% endhighlight %}
+
+* `TopToBottom` - Items can be navigated from Top to Bottom only.
+
+{% highlight C# %}
+
+	Rotator.NavigationDirection = NavigationDirection.TopToBottom;
+
+{% endhighlight %}
+
+{% highlight Xaml %}
+
+    <syncfusion:SfRotator NavigationDirection="TopToBottom"/>
+
+{% endhighlight %}
+
+* `BottomToTop` - Items can be navigated from Bottom to Top only.
+
+{% highlight C# %}
+
+	Rotator.NavigationDirection = NavigationDirection.BottomToTop;
+
+{% endhighlight %}
+
+{% highlight Xaml %}
+
+    <syncfusion:SfRotator NavigationDirection="BottomToTop"/>
+
+{% endhighlight %}
