@@ -149,8 +149,8 @@ In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [Gr
                        ItemsSource="{Binding Orders}"
                        ShowGroupDropArea="True">
     <syncfusion:SfDataGrid.TableSummaryRows>
-        <syncfusion:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Top"
-                                        Title="Total Price : {PriceAmount} for {ProductCount} products" >
+       <syncfusion:GridTableSummaryRow ShowSummaryInRow="False" TitleColumnCount="2" Position="Top"
+                                       Title="Total Price : {PriceAmount} for {ProductCount} products">
             <syncfusion:GridSummaryRow.SummaryColumns>
                 <syncfusion:GridSummaryColumn Name="CustomerName" 
                                               Format=" {Count:d}"
@@ -165,7 +165,7 @@ In the below code snippet, `GridSummaryRow.TitleColumnCount` is set as 2 and [Gr
                                               MappingName="ProductName"
                                               SummaryType="CountAggregate" />                        
             </syncfusion:GridSummaryRow.SummaryColumns>
-        </syncfusion:GridTableSummaryRow>
+       </syncfusion:GridTableSummaryRow>
     </syncfusion:SfDataGrid.TableSummaryRows>    
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -215,8 +215,8 @@ The following screenshot illustrates displaying summary columns with title at sa
 
 The following are the limitations of displaying column summary along with title at same time for `TableSummaryRow`:
 
-*If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
-*Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
 ### Positioning TableSummaryRow
 
@@ -507,8 +507,8 @@ The following screenshot illustrates displaying summary columns with title at sa
 
 The following are the limitations of displaying column summary along with title at same time for `GroupSummaryRow`:
 
-*If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
-*Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
 ## Caption Summaries
 
@@ -751,8 +751,8 @@ The following screenshot illustrates displaying summary columns with title at sa
 
 The following are the limitations of displaying column summary along with title at same time for `CaptionSummaryRow`:
 
-*If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
-*Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
+* If [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) is defined lesser than `GridSummaryRow.TitleColumnCount`, the title summary will be spanned to [FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) range, since spanned range and frozen range cannot be vary.
+* Summary columns defined in the `GridSummaryRow.TitleColumnCount` range will not be shown.
 
 ## Formatting summary
 
