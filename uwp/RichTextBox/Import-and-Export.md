@@ -70,7 +70,7 @@ N> When the SfRichTextBoxAdv control encounters an unsupported element, it does 
 
 ### Show or hide the loading page number
 
-The SfRichTextBoxAdv control shows the current loading page number by default at the bottom right corner of the control while loading the document asynchronously. You can hide this loading page number by using the ShowLoadingPageNumber property of LoadAsyncSettings class.
+The SfRichTextBoxAdv control shows the current loading page number by default at the bottom right corner of the control while loading the document asynchronously. You can hide this loading page number by using the ShowPageNumber property of LoadAsyncSettings class.
 
 The following code example demonstrates how to hide the loading page number in SfRichTextBoxAdv control.
 
