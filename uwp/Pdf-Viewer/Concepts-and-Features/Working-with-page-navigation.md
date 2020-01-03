@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with page navigation in Syncfusion Essential UWP PDF viewer.
-description: Working with page navigation in Syncfusion Essential UWP PDF viewer.
+title: Page navigation in Syncfusion Essential UWP PDF viewer.
+description: Page navigation in Syncfusion Essential UWP PDF viewer.
 platform: uwp
 control: PDF viewer
 documentation: ug
