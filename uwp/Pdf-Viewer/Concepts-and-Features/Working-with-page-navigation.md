@@ -9,9 +9,9 @@ documentation: ug
 
 ## Working with page navigation
 
-Navigation between the pages of the PDF document can be achieved using the GotoPage method or using the commands.
+The PdfViewer allows navigation through the pages of PDF documents. The navigation from one page to other can be done by using “GoToPage” method.
 
-The following code snippet explains the page navigation using the GotoPage Method.
+The following code snippet illustrates page navigation using the GotoPage method.
 
 {% tabs %}
 {% highlight c# %}
@@ -24,7 +24,7 @@ pdfViewer.GotoPage(5)
 {% endhighlight %}
 {% endtabs %}
 
-The following commands can also be used for page navigation:
+There are also commands in PdfViewer, which could make the page navigation simpler:
 
 <table>
 <tr>
@@ -40,7 +40,7 @@ Description
 FirstPageCommand
 </td>
 <td>
-Goes to the first page.
+Navigates to the first page of the PDF document.
 </td>
 </tr>
 <tr>
@@ -48,7 +48,7 @@ Goes to the first page.
 LastPageCommand
 </td>
 <td>
-Goes to the last page.
+Navigates to the last page of the PDF document.
 </td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@ Goes to the last page.
 PreviousPageCommand
 </td>
 <td>
-Goes to the previous page.
+Navigates to the previous page of the PDF document.
 </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ Goes to the previous page.
 NextPageCommand
 </td>
 <td>
-Goes to the next page.
+Navigates to the next page of the PDF document.
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ Goes to the next page.
 GoToPageCommand
 </td>
 <td>
-Goes to the specified page.
+Navigates to the specified page of the PDF document.
 </td>
 </tr>
 </table>
@@ -99,7 +99,7 @@ Navigation to the last page can be achieved by using the LastPageCommand as show
 
 **NextPageCommand**
 
-NextPageCommand displays the page next to the currently displayed page in the PDF Viewer. 
+NextPageCommand navigates to the page next to the currently displayed page in the PDF Viewer. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -109,7 +109,7 @@ NextPageCommand displays the page next to the currently displayed page in the PD
 
 **PreviousPageCommand**
 
-PreviousPageCommand displays the page previous to the currently displayed page in the PDF Viewer. 
+PreviousPageCommand navigates to the page previous to the currently displayed page in the PDF Viewer. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,7 +119,7 @@ PreviousPageCommand displays the page previous to the currently displayed page i
 
 **GoToPageCommand**
 
-This predefined command displays the specified page. 
+This command navigates to the specified page. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -127,42 +127,12 @@ This predefined command displays the specified page.
 {% endhighlight %}
 {% endtabs %}
 
-Events associated with the Page Navigation:
+In the above snippet, the PageNumberTextBox refers to a text box instance that gets the page number input. 
 
-<table>
-<tr>
-<td>
-Name
-</td>
-<td>
-Description
-</td>
-<td>
-Arguments
-</td>
-<td>
-Type
-</td>
-</tr>
-<tr>
-<td>
-PageChanged
-</td>
-<td>
-Triggers when the specified page is rendered.
-</td>
-<td>
-PageChangedEventArgs
-</td>
-<td>
-EventHandler
-</td>
-</tr>
-</table>
+**Tracking the change of pages in PDF document**
 
-**PageChanged Event**
 
-This event is triggered when there is a change in the page being displayed in the PDF Viewer.
+The PageChanged event is triggered when there is a change in the page being displayed in the PDF Viewer.
 
 The following code snippet updates the current page number in a text block, whenever the page is changed.
 
