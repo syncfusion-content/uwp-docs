@@ -674,6 +674,24 @@ void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+### Retrieve the width of the column after resizing completed
+
+SfDataGrid allows to get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in ResizingColumns event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.ResizingColumns += OnResizingColumns;
+
+void OnResizingColumns(object sender, ResizingColumnsEventArgs e)
+{
+    if (e.Reason == Syncfusion.UI.Xaml.Grid.ColumnResizingReason.Resized)
+    {
+        var resizedWidth = e.Width;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Column drag and drop
 
 You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowDraggingColumns.html) to `true`.
