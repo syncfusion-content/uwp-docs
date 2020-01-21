@@ -1,7 +1,7 @@
 ---
 layout: post
 title: System Requirements | UWP | Syncfusion
-description: Learn what are the system requirements needed to use Syncfusion Essential UWP components
+description: this section provides the information about the system requirements for UWP platform with supported browsers
 platform: uwp
 control: System Requirement
 documentation: ug

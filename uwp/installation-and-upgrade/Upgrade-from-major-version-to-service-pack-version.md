@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrade from major version to service pack version | UWP | Syncfusion
-description: upgrade from major version to service pack version
+description: this section provides the information about upgrading the UWP projects from major version to service pack version
 platform: uwp
 control: Essential Studio
 documentation: ug

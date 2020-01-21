@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Install and Deployment process of Syncfusion Xamarin products
-description: Learn how to install and deploy the Syncfusion Xamarin component
+title: Trial Version to License Version| UWP | Syncfusion
+description: this section provides the information about upgrading the UWP projects from trial version to license version
 platform: uwp
 control: Installation and Deployment
 documentation: ug
