@@ -1,7 +1,7 @@
 ---
 layout: post
 title: System Requirements | UWP | Syncfusion
-description: Learn what are the system requirements needed to use Syncfusion Essential UWP components
+description: this section provides the information about the system requirements for UWP platform with supported browsers
 platform: uwp
 control: System Requirement
 documentation: ug
@@ -21,7 +21,7 @@ The following frameworks are supported:
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 2.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing the setup in other drive.
+* Hard disk: up to 2.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing in other drive.
 
 ## Development Environments
 
