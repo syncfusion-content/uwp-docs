@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns | DataGrid | UWP | Syncfusion
-description: Columns
+title: Columns | DataGrid Control for UWP | Syncfusion
+description: This section explains about the columns manipulation and customization in Syncfusion UWP DataGrid (SfDataGrid) control
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -670,6 +670,24 @@ void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {    
     if(e.ColumnIndex == 1)            
         e.Cancel = true;         
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Identify resizing of the column gets completed
+
+SfDataGrid allows you to identify the progress of the resizing of columns through `ResizingColumnsEventArgs.Reason` property. You can get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in `ResizingColumns` event.
+
+{% tabs %}
+{% highlight c# %}
+this.dataGrid.ResizingColumns += OnResizingColumns;
+
+void OnResizingColumns(object sender, ResizingColumnsEventArgs e)
+{
+    if (e.Reason == Syncfusion.UI.Xaml.Grid.ColumnResizingReason.Resized)
+    {
+        var resizedWidth = e.Width;
+    }
 }
 {% endhighlight %}
 {% endtabs %}
