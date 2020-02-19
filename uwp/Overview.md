@@ -1,6 +1,6 @@
 ---
 title: Syncfusion Universal Windows Platform
-description: Syncfusion Universal Windows Platform
+description: Over 70 Universal Windows controls like DataGrid, Charts, Docking, PDF Viewer and much more to build mobile applications.
 platform: uwp
 control: overview
 documentation: ug
@@ -44,7 +44,7 @@ If you are still unable to find the information that you are looking for in the 
 			GRIDS<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfdatagrid/getting-started">SfDataGrid </a><br/><br/>
+			<a href="/uwp/datagrid/getting-started">SfDataGrid </a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -52,7 +52,7 @@ If you are still unable to find the information that you are looking for in the 
 			DATA VISUALIZATION<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfchart/getting-started">SfChart</a><br/><br/>
+			<a href="/uwp/charts/getting-started">SfChart</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -60,7 +60,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfdatetimerangenavigator/getting-started">SfDateTimeRangeNavigator</a><br/><br/>
+			<a href="/uwp/range-selector/getting-started">SfDateTimeRangeNavigator</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -68,7 +68,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfsparkline/getting-started">Sparkline</a><br/><br/>
+			<a href="/uwp/sparkline/getting-started">Sparkline</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -76,7 +76,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfschedule/getting-started">SfSchedule</a><br/><br/>
+			<a href="/uwp/scheduler/getting-started">SfSchedule</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -84,7 +84,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfdiagram/getting-started">SfDiagram</a><br/><br/>
+			<a href="/uwp/diagram/getting-started">SfDiagram</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -92,7 +92,7 @@ If you are still unable to find the information that you are looking for in the 
 			LAYOUT<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfaccordion/getting-started">SfAccordion</a><br/><br/>
+			<a href="/uwp/accordion/getting-started">SfAccordion</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -100,7 +100,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfcarousel/getting-started">SfCarousel</a><br/><br/>
+			<a href="/uwp/carousel/getting-started">SfCarousel</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -108,7 +108,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfdockingmanager/getting-started">SfDockingManager</a><br/><br/>
+			<a href="/uwp/docking/getting-started">SfDockingManager</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -116,7 +116,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfribbon/getting-started">SfRibbon</a><br/><br/>
+			<a href="/uwp/ribbon/getting-started">SfRibbon</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -124,7 +124,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sftileview/getting-started">SfTileView</a><br/><br/>
+			<a href="/uwp/tile-view/getting-started">SfTileView</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -132,7 +132,7 @@ If you are still unable to find the information that you are looking for in the 
 			EDITORS<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfrichtextboxadv/getting-started">SfRichTextBoxAdv</a><br/><br/>
+			<a href="/uwp/richtextbox/getting-started">SfRichTextBoxAdv</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -140,7 +140,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfcalculator/getting-started">SfCalculator</a><br/><br/>
+			<a href="/uwp/calculator/getting-started">SfCalculator</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -148,7 +148,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfcalendar/getting-started">SfCalendar</a><br/><br/>
+			<a href="/uwp/calendar/getting-started">SfCalendar</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -156,7 +156,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfcombobox/getting-started">SfComboBox</a><br/><br/>
+			<a href="/uwp/combobox/getting-started">SfComboBox</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -164,7 +164,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfdatepicker/getting-started">SfDatePicker</a><br/><br/>
+			<a href="/uwp/datepicker/getting-started">SfDatePicker</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -172,7 +172,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfdatetimecombo/getting-started">SfDateTimeCombo</a><br/><br/>
+			<a href="/uwp/datetimepicker/getting-started">SfDateTimeCombo</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -180,7 +180,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfdomainupdown/getting-started">SfDomainUpDown</a><br/><br/>
+			<a href="/uwp/domain-updown/getting-started">SfDomainUpDown</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -188,7 +188,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfdropdownbutton/getting-started">SfDropDownButton</a><br/><br/>
+			<a href="/uwp/dropdown-button/getting-started">SfDropDownButton</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -196,7 +196,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfgridsplitter/getting-started">SfGridSplitter</a><br/><br/>
+			<a href="/uwp/grid-splitter/getting-started">SfGridSplitter</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -204,7 +204,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfmaskededit/getting-started">SfMaskedEdit</a><br/><br/>
+			<a href="/uwp/masked-textbox/getting-started">SfMaskedEdit</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -212,7 +212,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfnumerictextbox/getting-started">SfNumericTextBox</a><br/><br/>
+			<a href="/uwp/numeric-textbox/getting-started">SfNumericTextBox</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -220,7 +220,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfnumericupdown/getting-started">SfNumericUpDown</a><br/><br/>
+			<a href="/uwp/numeric-updown/getting-started">SfNumericUpDown</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -228,7 +228,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfradialslider/getting-started">SfRadialSlider</a><br/><br/>
+			<a href="/uwp/radial-slider/getting-started">SfRadialSlider</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -236,7 +236,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfrangeslider/getting-started">SfRangeSlider</a><br/><br/>
+			<a href="/uwp/range-slider/getting-started">SfRangeSlider</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -244,7 +244,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfrating/getting-started">SfRating</a><br/><br/>
+			<a href="/uwp/rating/getting-started">SfRating</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -252,7 +252,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sftextboxext/getting-started">SfTextBoxExt</a><br/><br/>
+			<a href="/uwp/autocomplete/getting-started">SfTextBoxExt</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -260,7 +260,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sftimepicker/getting-started">SfTimePicker</a><br/><br/>
+			<a href="/uwp/timepicker/getting-started">SfTimePicker</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -268,7 +268,7 @@ If you are still unable to find the information that you are looking for in the 
 			NAVIGATION<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfcolorpalette/getting-started">SfColorPalette</a><br/><br/>
+			<a href="/uwp/color-palette/getting-started">SfColorPalette</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -276,7 +276,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfcolorpicker/getting-started">SfColorPicker</a><br/><br/>
+			<a href="/uwp/color-picker/getting-started">SfColorPicker</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -284,7 +284,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfradialmenu/getting-started">SfRadialMenu</a><br/><br/>
+			<a href="/uwp/radial-menu/getting-started">SfRadialMenu</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -292,7 +292,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sftabcontrol/getting-started">SfTabControl</a><br/><br/>
+			<a href="/uwp/tab-control/getting-started">SfTabControl</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -300,7 +300,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sftreenavigator/getting-started">SfTreeNavigator</a><br/><br/>
+			<a href="/uwp/tree-navigator/getting-started">SfTreeNavigator</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -308,7 +308,7 @@ If you are still unable to find the information that you are looking for in the 
 			NOTIFICATION<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfbusyindicator/getting-started">SfBusyIndicator</a><br/><br/>
+			<a href="/uwp/busy-indicator/getting-started">SfBusyIndicator</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -356,7 +356,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/sfpdfviewer/getting-started">SfPdfViewer</a><br/><br/>
+			<a href="/uwp/pdf-viewer/getting-started">SfPdfViewer</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
