@@ -1,6 +1,6 @@
 ---
 title: Syncfusion Universal Windows Platform
-description: Syncfusion Universal Windows Platform
+description: Over 70 Universal Windows controls like DataGrid, Charts, Docking, PDF Viewer and much more to build mobile applications.
 platform: uwp
 control: overview
 documentation: ug
