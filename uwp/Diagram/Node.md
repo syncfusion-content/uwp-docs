@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion diagram represents the data or entities visually.
-description: How to visually represent the geometrical information and process flows as nodes?
+description: How to visually represent the geometrical information and process flows as nodes and how to customize their appearance?
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Node
+# Node in UWP Diagram (SfDiagram)
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
