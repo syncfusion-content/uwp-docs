@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance tips of SfDataGrid control for UWP 
-description: Performance tips of SfDataGrid control for UWP
+title: Performance tips in UWP DataGrid control | Syncfusion
+description: Learn about optmize the performance tips in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Performance tips
+# Performance tips in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates. 
 
