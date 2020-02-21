@@ -37,6 +37,31 @@ this.dataGrid.View.EndInit();
 {% endhighlight %}
 {% endtabs %}
 
+## Improving loading performance when DataGrid loaded into the ScrollViewer
+
+When loading datagrid inside other controls disables virtualization which causes the performance delay. You can improve the loading performance when datagrid loaded into the scroll viewer by setting height for the datagrid.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid 	x:Name="dataGrid" 
+						Height="500" 
+                        FilterRowPosition="FixedTop" 
+                        AllowEditing="False"  
+                        ColumnSizer="Star"  
+                        Margin="0" 
+                        AutoGenerateColumns="False"   
+                        ItemsSource="{Binding ItemsPersonnel}">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:GridTextColumn MappingName="Name"/>
+        <syncfusion:GridTextColumn MappingName="Role"/>
+    </syncfusion:SfDataGrid.Columns>
+    <syncfusion:SfDataGrid.SortColumnDescriptions>
+        <syncfusion:SortColumnDescription ColumnName="Name" />
+    </syncfusion:SfDataGrid.SortColumnDescriptions>
+</syncfusion:SfDataGrid> 
+{% endhighlight %}
+{% endtabs %}
+
 ## Adding columns efficiently
 
 SfDataGrid allows you to add more number of columns to [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance.
