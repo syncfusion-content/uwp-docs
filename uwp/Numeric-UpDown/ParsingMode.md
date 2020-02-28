@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ParsingMode options in SfNumericUpDown control 
-description:  ParsingMode options in SfNumericUpDown control 
+description:  ParsingMode options in Syncfusion NumericUpDown control 
 platform: uwp
 control: SfNumeric UpDown
 documentation: ug

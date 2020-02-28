@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parsing Mode options of SfNumericTextBox control for UWP
-description: Parsing Mode options of SfNumericTextBox control for UWP
+description: Parsing Mode options of Syncfusion NumericTextBox control for UWP
 platform: uwp
 control: SfNumeric TextBox
 documentation: ug
