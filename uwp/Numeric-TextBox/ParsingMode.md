@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Parsing Mode options of SfNumericTextBox control for UWP
-description: Parsing Mode options of Syncfusion NumericTextBox control for UWP
+title: Parsing Mode options of Syncfusion NumericTextBox control for UWP
+description: This section describes how to change the parsing mode for the NumericTextBox control. The default value is Double and it also accepts 'decimal'.
 platform: uwp
 control: SfNumeric TextBox
 documentation: ug
 ---
 
-# ParsingMode
+# ParsingMode in UWP Numeric TextBox (SfNumericTextBox)
 
 Value of the SfNumericTextBox gets parsed based on ParsingMode property. ParsingMode is of type Parsers which is enum of Double and Decimal. DefaultValue for ParsingMode is Double.
 
