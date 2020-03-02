@@ -60,6 +60,6 @@ Value of the SfNumericTextBox gets parsed based on ParsingMode property. Parsing
 
 {% endtabs %}
 
-N>The `ParsingMode` should be set based on the data type. For example, if a `Decimal` type property is binded to Value property of SfNumericTextBox, then the `ParsingMode` should be set as `Decimal`.
+N>The `ParsingMode` should be set based on the data type. For example, if a `Decimal` type property is bound to Value property of SfNumericTextBox, then the `ParsingMode` should be set as `Decimal`.
 
 ![Parsingmode view](Concepts_images/Concepts_img7.png)
