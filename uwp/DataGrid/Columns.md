@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Columns
+# Columns in UWP DataGrid (SfDataGrid)
 
 SfDataGrid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
 
