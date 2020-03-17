@@ -13,7 +13,26 @@ SfDataGrid provides various built-in options to optimize the performance when ha
 
 ## Improving loading performance
 
+### Data virtualization for loading
+
 You can load the large amount of data in less time using built-in [Data Virtualization](https://help.syncfusion.com/uwp/sfdatagrid/data-virtualization).
+
+### Improving loading performance when DataGrid loaded into the ScrollViewer
+
+Loading DataGrid inside other controls disables the virtualization which results in performance delay. You can improve the loading performance when DataGrid is loaded into the `ScrollViewer` by setting `SfDataGrid.Height`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        Height="500"
+                        FilterRowPosition="FixedTop"
+                        AllowEditing="False"
+                        ColumnSizer="Star"
+                        Margin="0"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding ItemsPersonnel}" />
+{% endhighlight %}
+{% endtabs %}
 
 ## Improving performance when doing batch updates
 
@@ -34,31 +53,6 @@ this.dataGrid.View.BeginInit();
 
 //Resumes data manipulation operations and refresh the View.
 this.dataGrid.View.EndInit();
-{% endhighlight %}
-{% endtabs %}
-
-## Improving loading performance when DataGrid loaded into the ScrollViewer
-
-When loading datagrid inside other controls disables virtualization which causes the performance delay. You can improve the loading performance when datagrid loaded into the scroll viewer by setting height for the datagrid.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid 	x:Name="dataGrid" 
-						Height="500" 
-                        FilterRowPosition="FixedTop" 
-                        AllowEditing="False"  
-                        ColumnSizer="Star"  
-                        Margin="0" 
-                        AutoGenerateColumns="False"   
-                        ItemsSource="{Binding ItemsPersonnel}">
-    <syncfusion:SfDataGrid.Columns>
-        <syncfusion:GridTextColumn MappingName="Name"/>
-        <syncfusion:GridTextColumn MappingName="Role"/>
-    </syncfusion:SfDataGrid.Columns>
-    <syncfusion:SfDataGrid.SortColumnDescriptions>
-        <syncfusion:SortColumnDescription ColumnName="Name" />
-    </syncfusion:SfDataGrid.SortColumnDescriptions>
-</syncfusion:SfDataGrid> 
 {% endhighlight %}
 {% endtabs %}
 
