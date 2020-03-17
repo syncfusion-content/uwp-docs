@@ -19,7 +19,7 @@ You can load the large amount of data in less time using built-in [Data Virtuali
 
 ### Improving loading performance when DataGrid loaded into the ScrollViewer
 
-Loading DataGrid within other controls disables the virtualization resulting in performance delay. By setting 'SfDataGrid.Height' you can improve the performance when loading DataGrid into the 'ScrollViewer'.
+Loading DataGrid within other controls disables the virtualization resulting in performance delay. By setting `SfDataGrid.Height` you can improve the performance when loading DataGrid into the `ScrollViewer`.
 
 {% tabs %}
 {% highlight xaml %}
