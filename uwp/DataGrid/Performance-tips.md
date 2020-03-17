@@ -1,19 +1,38 @@
 ---
 layout: post
-title: Performance tips of SfDataGrid control for UWP 
-description: Performance tips of SfDataGrid control for UWP
+title: Performance tips in UWP DataGrid control | Syncfusion
+description: Learn about optmize the performance tips in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Performance tips
+# Performance tips in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates. 
 
 ## Improving loading performance
 
+### Data virtualization for loading
+
 You can load the large amount of data in less time using built-in [Data Virtualization](https://help.syncfusion.com/uwp/sfdatagrid/data-virtualization).
+
+### Improving loading performance when DataGrid loaded into the ScrollViewer
+
+Loading DataGrid within other controls disables the virtualization resulting in performance delay. By setting `SfDataGrid.Height` you can improve the performance when loading DataGrid into the `ScrollViewer`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid  x:Name="dataGrid"
+                        Height="500"
+                        FilterRowPosition="FixedTop"
+                        AllowEditing="False"
+                        ColumnSizer="Star"
+                        Margin="0"
+                        AutoGenerateColumns="True"
+                        ItemsSource="{Binding ItemsPersonnel}" />
+{% endhighlight %}
+{% endtabs %}
 
 ## Improving performance when doing batch updates
 
