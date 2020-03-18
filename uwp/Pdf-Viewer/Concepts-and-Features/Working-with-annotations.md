@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with annotations in Syncfusion Essential UWP PDF viewer.
-description: Working with annotations in Syncfusion Essential UWP PDF viewer.
+description: Learn about working with various annotations supported in Syncfusion UWP PDF Viewer and their functionalities.
 platform: uwp
 control: PDF viewer
 documentation: ug
@@ -85,5 +85,16 @@ private void PdfViewer_AnnotationAdded(object sender, AnnotationMovedOrResizedEv
 	//Obtain the page number in which the annotation is added
 	int pageNumber = e.PageNumber;
 }
+
+{% endhighlight %}
+
+###Enable and disable selection of annotations
+
+By default, PdfViewer allows the user to select the annotations by tapping on it, this action is followed by the appearance of the selector around the selected annotation. The selection of annotations can be disabled by setting 'IsReadOnly' property of 'AnnotationSettings' class to true. The default value of this API will be false.
+
+{% highlight c# %}
+
+//Disable the selection of annotations
+pdfViewer.AnnotationSettings.IsReadOnly = true;
 
 {% endhighlight %}
