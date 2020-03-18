@@ -63,6 +63,34 @@ dataGrid.Columns["OrderID"].FilterPredicates.Add(new FilterPredicate() { FilterT
 * StringTyped - Records are filtered without considering the type and it takes [FilterValue](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.FilterPredicate~FilterValue.html) type as string.
 * StronglyTyped - Records are filtered by considering the `FilterValue` underlying type.
 
+#### Improving performance while adding multiple FilterPredicates to the column in loop
+
+You can suspend the data operation while adding the multiple `FilterPredicates` to the column for bulk updates by calling [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.CollectionViewAdv~BeginInit.html) and [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, before and after the data operation.
+
+{% tabs %}
+{% highlight c# %}
+private void OnApplyFilterPredicate(object obj)
+{
+    var dataGrid = obj as SfDataGrid;            
+    var columns = dataGrid.Columns["EmployeeId"];
+    dataGrid.View.BeginInit();
+    foreach (var filterValue in FilterValues)
+    {
+        columns.FilterPredicates.Add(new FilterPredicate()
+        {
+            FilterType = FilterType.Equals,
+            FilterValue = filterValue,
+            FilterBehavior = FilterBehavior.StronglyTyped,
+            FilterMode = ColumnFilter.Value,
+            PredicateType = PredicateType.Or,
+            IsCaseSensitive = true
+        });
+    }            
+    dataGrid.View.EndInit();
+}
+{% endhighlight %}
+{% endtabs %}
+
 ### Clear Filtering
 
 SfDataGrid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
