@@ -268,6 +268,39 @@ chart.ColorModel = colorModel;
 ![Custom palette in UWP chart](Styling-and-Customization_images/palette_6.png)
 
 
+## SegmentColorPath
+
+The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property of series. The following code illustrates how to bind the color to the series with [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:ColumnSeries  SegmentColorPath="ColorPath">
+
+</chart:ColumnSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries()
+ 
+{
+        
+   SegmentColorPath = "SegmentColor"
+            
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SegmentColorPath in UWP Chart](Styling-and-Customization_images/segmentcolor.png)
+
+N> `SegmentColorPath` property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType is Area).
+
+
 ## Customize Legends
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
