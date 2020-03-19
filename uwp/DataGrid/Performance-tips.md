@@ -17,23 +17,6 @@ SfDataGrid provides various built-in options to optimize the performance when ha
 
 You can load the large amount of data in less time using built-in [Data Virtualization](https://help.syncfusion.com/uwp/sfdatagrid/data-virtualization).
 
-### Improving loading performance when DataGrid loaded into the ScrollViewer
-
-Loading DataGrid within other controls disables the virtualization resulting in performance delay. By setting `SfDataGrid.Height` you can improve the performance when loading DataGrid into the `ScrollViewer`.
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfDataGrid  x:Name="dataGrid"
-                        Height="500"
-                        FilterRowPosition="FixedTop"
-                        AllowEditing="False"
-                        ColumnSizer="Star"
-                        Margin="0"
-                        AutoGenerateColumns="True"
-                        ItemsSource="{Binding ItemsPersonnel}" />
-{% endhighlight %}
-{% endtabs %}
-
 ## Improving performance when doing batch updates
 
 SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
