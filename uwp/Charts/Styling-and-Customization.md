@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Customization | SfChart | uwp | Syncfusion
-description: styling and customization
+description: This section explains how to apply the styling and customization options available in UWP Charts(SfChart)
 platform: uwp
 control: SfChart
 documentation: ug
