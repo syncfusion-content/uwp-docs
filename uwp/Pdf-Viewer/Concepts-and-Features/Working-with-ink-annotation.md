@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with ink annotations in UWP PDF Viewer | Syncfusion
-description: Working with ink annotations in Syncfusion Essential UWP PDF viewer.
+description: Learn about working with ink annotation supported in Syncfusion UWP PDF Viewer and their functionalities.
 platform: uwp
 control: PDF viewer
 documentation: ug
