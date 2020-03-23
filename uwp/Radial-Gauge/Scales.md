@@ -673,5 +673,5 @@ N> Default value of the IsCenterAligned property is false.
 
 {% endtabs %}
 
-![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.jpg)
+![Center Aligned SfCircularGauge image](Scales_images/iscenteraligned.jpg)
 
