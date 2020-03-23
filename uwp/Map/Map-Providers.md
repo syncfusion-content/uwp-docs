@@ -275,3 +275,76 @@ You can get imagery layer pixel bounds by using `MapBounds` property while zoomi
 {% endhighlight %}
 
 {% endtabs %}
+
+## Reset the old custom view marker
+
+If you add any view for marker using `CustomView` property from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the `ResetOldSelectedView` property. If the Boolean set as true, then it will be removed the old view of marker and load the initially rendered marker.
+
+{% tabs %}
+
+{% highlight xaml %}
+       <Page.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <Grid Margin="-12,-30,0,0">
+                    <Canvas>
+                        <Image Source="pin.png" Height="30"/>
+                    </Canvas>
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid>
+        <maps:SfMap>
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer LayerType="OSM" Markers="{Binding Models}"  MarkerSelected="Layer_MarkerSelected" ResetOldSelectedView="True" >
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+    </Grid>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public sealed partial class ResetMarkerSample : Page
+    {
+        public ResetMarkerSample()
+        {
+            this.InitializeComponent();
+            this.DataContext = new ViewModel();
+        }
+
+        private void Layer_MarkerSelected(object sender, Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs e)
+        {
+            e.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
+        }
+    }
+
+    public class ViewModel
+    {
+        public ObservableCollection<Model> Models { get; set; }
+        public ViewModel()
+        {
+            this.Models = new ObservableCollection<Model>();
+            this.Models.Add(new Model() { Name = "USA ", Latitude = "38.8833N", Longitude = "77.0167W" });
+            this.Models.Add(new Model() { Name = "Brazil ", Latitude = "15.7833S", Longitude = "47.8667W" });
+            this.Models.Add(new Model() { Name = "India ", Latitude = "21.0000N", Longitude = "78.0000E" });
+            this.Models.Add(new Model() { Name = "China ", Latitude = "35.0000N", Longitude = "103.0000E" });
+            this.Models.Add(new Model() { Name = "Indonesia ", Latitude = "6.1750S", Longitude = "106.8283E" });
+        }
+    }
+
+    public class Model
+    {
+        public string Name { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Reset the previously selected marker](Map-Providers_images/ResetMarker.gif)
+
