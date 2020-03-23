@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Save and Events | SfImageEditor | uwp | Syncfusion
-description: Save and Events
+description:  Learn how to save the image in different ways as well as the use of different events in ImageEditor for UWP platform
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Save
+# Save in SfImageEditor UWP Platform
 
 The image can be saved along with the changes. Saving an image can be done in the following two ways:
 
@@ -30,7 +30,7 @@ Programmatically, `Save` method can be used in the SfImageEditor control to save
 {% endhighlight %}
 
 
-# Events
+## Events
 
 The SfImageEditor has Events namely, [`ImageSaving`](https://help.syncfusion.com/cr/uwp/sfimageeditor) and [`ImageSaved`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
 
@@ -93,7 +93,7 @@ This event occurs after the image has been saved. To get the location of the sav
 
 {% endhighlight %}
 
-# Reset
+## Reset
 
 You can `reset` the changes which has been made in the image.
 
@@ -112,7 +112,7 @@ The `Reset` method resets the all changes which has been made in the image and r
 
 {% endhighlight %}
 
-# Events
+## Events
 
 The SfImageEditor has Events namely, [`BeginReset`](https://help.syncfusion.com/cr/uwp/sfimageeditor) and [`EndReset`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
 

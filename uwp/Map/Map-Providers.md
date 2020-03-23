@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Providers in SfMap control
-description: Learn how to work with online maps
+title: Maps provider of Syncfusion Maps control for UWP
+description: Describes the adding OSM map, bing map and other imagery layer support in UWP SfMaps control
 platform: UWP
 control: SfMap
 documentation: ug
 ---
 
-# Map Providers
+# Map providers support in SfMaps
 
 SfMap control supports map providers such as `OpenStreetMap` and `Bing Map` that can be added to any layers in maps.
 
