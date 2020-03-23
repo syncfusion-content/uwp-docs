@@ -69,7 +69,7 @@ The foreground of the label is customized by setting the [`LabelStroke`](https:/
 
 {% endtabs %}
 
-![](Labels_images/Labels_img1.png)
+![Scale label image](Labels_images/Labels_img1.png)
 
 ## Label font customization
 
@@ -134,7 +134,7 @@ The label font can be customized using the [`LabelSize`](https://help.syncfusion
 
 {% endtabs %}
 
-![](Labels_images/Labels_img2.png)
+![Label font customization image](Labels_images/Labels_img2.png)
 
 ## Setting position for labels
 
@@ -199,7 +199,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 {% endtabs %}
 
-![](Labels_images/Labels_img3.png)
+![Label position image](Labels_images/Labels_img3.png)
 
 ## Setting postfix and prefix for labels
 
@@ -268,7 +268,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Sf
 
 {% endtabs %}
 
-![](Labels_images/Labels_img4.png)
+![Label postfix image](Labels_images/Labels_img4.png)
 
 ### Setting label prefix
 
@@ -332,7 +332,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfG
 
 {% endtabs %}
 
-![](Labels_images/Labels_img5.png)
+![](Label prefix image/Labels_img5.png)
 
 ## Setting label offset
 
@@ -387,7 +387,7 @@ The labels can be positioned far away from the ticks using the [`LabelOffset`](h
 
 {% endtabs %}
 
-![](Labels_images/Labels_img6.png)
+![Custom labels image](Labels_images/Labels_img6.png)
 
 ## Labels visibility
 
@@ -442,7 +442,7 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
 
 {% endtabs %}
 
-![](Labels_images/Labels_img7.png)
+![Labels visibility image](Labels_images/Labels_img7.png)
 
 ## Customize the scale labels
  

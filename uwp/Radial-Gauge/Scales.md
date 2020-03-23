@@ -58,7 +58,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Scales_images/Scales_img1.png)
+![Circular Scale Image](Scales_images/Scales_img1.png)
 
 ## Setting start and end values for scale
 
@@ -124,7 +124,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Scales_images/Scales_img2.png)
+![Circular Scale Start And End Image](Scales_images/Scales_img2.png)
 
 ## Setting start and sweep angles for scale
 
@@ -190,7 +190,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Scales_images/Scales_img3.png)
+![Circular Scale Start And End Angle Image](Scales_images/Scales_img3.png)
 
 
 ## Setting interval for scale
@@ -261,7 +261,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Scales_images/Scales_img4.png)
+![Circular Scale Interval Image](Scales_images/Scales_img4.png)
 
 ## Setting auto interval for scale
 
@@ -331,7 +331,7 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 
 {% endtabs %}
 
-![](Scales_images/Scales_img5.png)
+![Circular Scale Auto Interval Image](Scales_images/Scales_img5.png)
 
 ## Setting scale direction for scale
 
@@ -401,7 +401,7 @@ The [`SweepDirection`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.
 
 {% endtabs %}
 
-![](Scales_images/Scales_img6.png)
+![Circular Scale Direction Image](Scales_images/Scales_img6.png)
 
 ## Setting multiple scales for circular gauge
 
@@ -579,7 +579,7 @@ circularGauge.Scales.Add(scale2);
 
 {% endtabs %}
 
-![](Scales_images/Scales_img7.png)
+![Circular Scale Maximum Labels Image](Scales_images/Scales_img7.png)
 
 ## Calculate radius and center based on angle
 

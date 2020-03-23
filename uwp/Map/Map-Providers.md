@@ -28,7 +28,7 @@ You can enable this feature by setting the `LayerType` property value as `OSM`
         </syncfusion:SfMap >
         
 {% endhighlight %}
-![](Map-Providers_images/Map-Providers_img1.png)
+![OSM image](Map-Providers_images/Map-Providers_img1.png)
 
 
 
@@ -60,7 +60,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 {% endhighlight %}
 
 
-![](Map-Providers_images/Map-Providers_img2.png)
+![Bing aerial image](Map-Providers_images/Map-Providers_img2.png)
 
 
 ### Road View
@@ -76,7 +76,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 {% endhighlight %}
 
-![](Map-Providers_images/Map-Providers_img3.png)
+![Bing road view image](Map-Providers_images/Map-Providers_img3.png)
 
 
 
@@ -93,7 +93,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 {% endhighlight %}
 
-![](Map-Providers_images/Map-Providers_img4.png)
+![Bing aerialwithlabel image](Map-Providers_images/Map-Providers_img4.png)
 
 
 ## Calculate zoom level based on map geo-bounds or distance
