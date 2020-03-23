@@ -332,7 +332,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfG
 
 {% endtabs %}
 
-![Label prefix image](Label prefix image/Labels_img5.png)
+![Label prefix image](Labels_images/Labels_img5.png)
 
 ## Setting label offset
 

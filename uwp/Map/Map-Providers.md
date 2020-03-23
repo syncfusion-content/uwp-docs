@@ -60,7 +60,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 {% endhighlight %}
 
 
-![Bing aerial image](Map-Providers_images/Map-Providers_img2.png)
+![Bing aerial image](Map-Providers_images/aerial.jpg)
 
 
 ### Road View
@@ -76,7 +76,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 {% endhighlight %}
 
-![Bing road view image](Map-Providers_images/Map-Providers_img3.png)
+![Bing road view image](Map-Providers_images/Road.png)
 
 
 
@@ -93,7 +93,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 
 {% endhighlight %}
 
-![Bing aerialwithlabel image](Map-Providers_images/Map-Providers_img4.png)
+![Bing aerialwithlabel image](Map-Providers_images/aerialWithLabel.jpg)
 
 
 ## Calculate zoom level based on map geo-bounds or distance
