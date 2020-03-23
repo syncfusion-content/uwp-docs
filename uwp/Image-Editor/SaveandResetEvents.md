@@ -36,11 +36,50 @@ The SfImageEditor has Events namely, [`ImageSaving`](https://help.syncfusion.com
 
 ## ImageSaving
 
-This event occurs before saving the image. You can control the save functionality by using the `Cancel` argument.  
+This event occurs before saving the image. Described the ImageSaving event arguments below.
+
+`Cancel` : You can control the save functionality using the `Cancel` argument.
+
+It restricts saving image to the default location when set `Cancel` value to `true`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+            <imageeditor:SfImageEditor ImageSaving="SfImageEditor_ImageSaving" />
+
+{% endhighlight %}
 
 {% highlight C# %}
+           
+  		    private void SfImageEditor_ImageSaving(object sender, Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs args)
+            {
+                args.Cancel = true;  
+            }
 
-    args.Cancel = true;
+{% endhighlight %}
+
+{% endtabs %}
+
+`Stream` : You can get current image edits as stream using this argument.
+
+{% highlight C# %}
+           
+            private void SfImageEditor_ImageSaving(object sender, Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs args)
+            {
+                var stream = args.Stream;
+            }
+
+{% endhighlight %}
+
+`FileName`: You can save the edited image in the specified name. 
+
+{% highlight c# %}
+
+          private void SfImageEditor_ImageSaving(object sender, Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs args)
+          {
+             args.FileName = "SavedImage";
+          }
 
 {% endhighlight %}
 
