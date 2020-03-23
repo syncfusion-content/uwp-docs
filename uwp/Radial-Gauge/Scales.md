@@ -581,4 +581,97 @@ circularGauge.Scales.Add(scale2);
 
 ![](Scales_images/Scales_img7.png)
 
+## Calculate radius and center based on angle
+
+This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties by enable the `IsCenterAligned` property of gauge.
+
+N> Default value of the IsCenterAligned property is false. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+         <gauge:SfCircularGauge Height="500" IsCenterAligned="True" Width="500" >
+            <gauge:SfCircularGauge.Scales>
+                <gauge:CircularScale  EnableAutoAngle="True" 
+                    StartAngle="181" 
+                    SweepAngle="180" 
+                    StartValue="0" 
+                    EndValue="1000"
+                    SymbolPointerOffset="1"
+                    Interval="500" 
+                    RangePointerOffset="0"
+                    RimStroke="LightGray"
+                    EnableAutoInterval="True"
+                    RimStrokeThickness="15"  
+                    TickStroke="#BEBEBE" 
+                    LabelStroke="Black"
+                     FontSize="20"
+                    SmallTickStroke="#BEBEBE">
+                    <gauge:CircularScale.Pointers>
+                        <gauge:CircularPointer PointerType="NeedlePointer" Value="500"  NeedleLengthFactor="0.5" NeedlePointerType="Triangle" PointerCapDiameter="15" PointerCapStroke="#007DD1" BorderBrush="#007DD1"  NeedlePointerStroke="#424242" />
+                        <gauge:CircularPointer RangeCap="Both" PointerType="RangePointer" Value="1000" RangePointerStroke="Brown" RangePointerStrokeThickness="15"/>
+                        <gauge:CircularPointer PointerType="SymbolPointer" Value="300" Symbol="InvertedArrow" SymbolPointerBorderBrush="Brown" SymbolPointerStroke="Brown" SymbolPointerHeight="30"  SymbolPointerWidth="30"  />
+                    </gauge:CircularScale.Pointers>
+                </gauge:CircularScale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+   
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+           SfCircularGauge sfCircularGauge = new SfCircularGauge();
+            sfCircularGauge.Height = 500;
+            sfCircularGauge.Width = 500;
+            sfCircularGauge.IsCenterAligned = true;
+            CircularScale circularScale = new CircularScale();
+            circularScale.EnableAutoAngle = true;
+            circularScale.StartAngle = 180;
+            circularScale.SweepAngle = 180;
+            circularScale.StartValue = 0;
+            circularScale.EndValue = 1000;
+            circularScale.SymbolPointerOffset = 1;
+            circularScale.Interval = 500;
+            circularScale.RangePointerOffset = 0;
+            circularScale.RimStroke = new SolidColorBrush(Colors.LightGray);
+            circularScale.EnableAutoInterval = true;
+            circularScale.RimStrokeThickness = 15;
+            circularScale.TickStroke = new SolidColorBrush(Colors.LightGray);
+            circularScale.LabelStroke = new SolidColorBrush(Colors.Black);
+            circularScale.FontSize = 20;
+            circularScale.SmallTickStroke = new SolidColorBrush(Colors.LightGray);
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.PointerType = PointerType.NeedlePointer;
+            circularPointer.Value = 500;
+            circularPointer.NeedleLengthFactor = 0.5;
+            circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
+            circularPointer.PointerCapDiameter = 15;
+            circularPointer.PointerCapStroke = new SolidColorBrush(Colors.Blue);
+            circularPointer.NeedlePointerStroke = new SolidColorBrush(Colors.Black);
+            circularScale.Pointers.Add(circularPointer);
+            CircularPointer circularPointer1 = new CircularPointer();
+            circularPointer1.RangeCap = RangeCap.Both;
+            circularPointer1.PointerType = PointerType.RangePointer;
+            circularPointer1.Value = 1000;
+            circularPointer1.RangePointerStrokeThickness = 15;
+            circularPointer1.RangePointerStroke = new SolidColorBrush(Colors.Brown);
+            circularScale.Pointers.Add(circularPointer1);
+            CircularPointer circularPointer2 = new CircularPointer();
+            circularPointer2.PointerType = PointerType.SymbolPointer;
+            circularPointer2.Value = 300;
+            circularPointer2.Symbol = Syncfusion.UI.Xaml.Gauges.Symbol.InvertedArrow;
+            circularPointer2.SymbolPointerBorderBrush = new SolidColorBrush(Colors.Brown);
+            circularPointer2.SymbolPointerStroke = new SolidColorBrush(Colors.Brown);
+            circularPointer2.SymbolPointerWidth = 30;
+            circularPointer2.SymbolPointerHeight = 30;
+            circularScale.Pointers.Add(circularPointer2);
+            sfCircularGauge.Scales.Add(circularScale);
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.jpg)
 
