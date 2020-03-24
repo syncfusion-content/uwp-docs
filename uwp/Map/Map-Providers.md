@@ -96,7 +96,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 ![Bing aerialwithlabel image](Map-Providers_images/Map-Providers_img4.jpg)
 
 
-## Calculate zoom level based on map geo-bounds or distance
+## Calculate zoom level based on map Geo-bounds or distance
 
 This feature is used to calculate the initial zoom level automatically in two ways.
 
