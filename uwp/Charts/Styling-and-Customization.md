@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Customization | SfChart | uwp | Syncfusion
-description: This section explains how to apply the styling and customization options available in UWP Charts(SfChart)
+description: This section explains how the UWP Chart(SfChart) can be customized with its available customization and styling options
 platform: uwp
 control: SfChart
 documentation: ug
@@ -270,27 +270,52 @@ chart.ColorModel = colorModel;
 
 ## SegmentColorPath
 
-The color for the chart segments can be bound from its items source collection by using the [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property of series. The following code illustrates how to bind the color to the series with [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property.
+The color of the chart segments can be updated by binding its corresponding model property from its `ItemsSource` collection to its [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property of series as per in below
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ColumnSeries  SegmentColorPath="ColorPath">
-
+<chart:ColumnSeries ItemsSource="{Binding Data}"
+                    XBindingPath="XValue" 
+                    YBindingPath="YValue" 
+                    SegmentColorPath="SegmentColor">
+                    
 </chart:ColumnSeries>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-ColumnSeries series = new ColumnSeries()
- 
+public class ViewModel
 {
-        
-   SegmentColorPath = "SegmentColor"
-            
+    public ObservableCollection<Model> Data { get; set; }
+
+    public ViewModel()
+    {
+        Data = new ObservableCollection<Model>();
+        Data.Add(new Model() { XValue = "Jewelry", YValue = 10, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 0, 255, 255)) });
+        Data.Add(new Model() { XValue = "Electronics", YValue = 50,
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 238, 130, 238))});
+        Data.Add(new Model() { XValue = "Research", YValue = 30, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 255, 165, 0)) });
+        Data.Add(new Model() { XValue = "Investment", YValue = 40, 
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 255, 105, 180)) });
+        Data.Add(new Model() { XValue = "Others", YValue = 20,
+                    SegmentColor = new SolidColorBrush(Color.FromArgb(255, 152, 251, 152)) });
+    }
+}
+
+ColumnSeries series = new ColumnSeries()
+{
+    ItemsSource = viewModel.Data,
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    SegmentColorPath = "SegmentColor"
 };
+
 
 {% endhighlight %}
 
