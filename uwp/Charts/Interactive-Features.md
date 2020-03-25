@@ -300,7 +300,7 @@ chart.Series.Add(series2);
 
 N>By default the [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~VerticalAlignmentProperty.html) of the Tooltip is Top
 
-**VerticalOffset** **and** **HorizontalOffset**
+**VerticalOffset and HorizontalOffset**
 
 The tooltip can be positioned at a particular distance from the cursor horizontally using [`HorizontalOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~HorizontalOffsetProperty.html) and vertically using [`VerticalOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~VerticalOffsetProperty.html) properties.
 
@@ -433,7 +433,7 @@ chart.Series.Add(series);
 
 N> The tooltip by default will be displayed for 1000 milliseconds.
 
-**Show** **Delay**
+**Show Delay**
 
 ToolTip also has support for delay the time to display by setting [`SetInitialShowDelay`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTooltip~SetInitialShowDelay.html) property in milliseconds.
 
@@ -717,7 +717,7 @@ chart.Behaviors.Add(behavior);
 ![Visibility support for trackball line in UWP Chart](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
-**Customization** **of** **TrackBall** **Line**
+**Customization of TrackBall Line**
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to customize the appearance of  trackball vertical line using [`LineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LineStyle.html) property.
 
@@ -827,7 +827,7 @@ The axis label will be viewed when the [`ShowTrackBallInfo`](https://help.syncfu
 
 N>By default the value of [`ShowTrackBallInfo`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ShowTrackBallInfo.html) is false.
 
-**Alignment** **of** **Axis** **Label**
+**Alignment of Axis Label**
 
 The alignment of the axis label while moving trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~AxisLabelAlignment.html) property.
 
@@ -907,7 +907,7 @@ chart.Behaviors.Add(behavior);
 ![Alignment support for trackball axis label in UWP Chart](Interactive-Features_images/Interactive-Features_img12.jpeg)
 
 
-**Customization** **of** **Axis** **Label**
+**Customization of Axis Label**
 
 You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TrackBallLabelTemplate.html) property in [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) as in the below code snippet.
 
@@ -1019,7 +1019,7 @@ SplineSeries series1 = new SplineSeries()
 
 
 
-**Alignment** **of** **Series** **Label**
+**Alignment of Series Label**
 
 The trackball label displayed over the series can be aligned using [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelHorizontalAlignment.html) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~LabelVerticalAlignment.html) properties. By default the series label will be horizontally aligned to the left and vertically to the top.
 
@@ -1133,6 +1133,8 @@ chart.Behaviors.Add(behavior);
 ![LabelDisplayMode support for trackball in UWP Chart](Interactive-Features_images/Interactive-Features_img16.jpeg)
 
 
+### TrackBallLabelTemplate
+
 [`TrackBallLabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TrackBallLabelTemplate.html) property in [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html) allows you to customize the appearance of series label in trackball.
 
 {% tabs %}
@@ -1163,13 +1165,17 @@ chart.Behaviors.Add(behavior);
 
         </syncfusion:SfChart.Behaviors>
 
-        <syncfusion:ColumnSeries Label="2010"  Interior="#4A4A4A"     
-
-                                 ItemsSource="{Binding Demands}" 
-
-                                 XBindingPath="Demand" 
-                                     
-                                 YBindingPath="Year2010"/>
+        <syncfusion:ColumnSeries Label="2010" 
+        
+        Interior="#4A4A4A" 
+        
+        ItemsSource="{Binding Demands}" 
+        
+        XBindingPath="Demand" 
+        
+        YBindingPath="Year2010" 
+        
+        TrackBallLabelTemplate="{StaticResource labelTemplate}"/>
           
 </syncfusion:SfChart>
 
@@ -1208,7 +1214,7 @@ chart.Series.Add(series);
 ![Customization support for trackball series label in UWP Chart](Interactive-Features_images/Interactive-Features_img17.jpeg)
 
 
-**Applying** **Palette** **to** **the** **Series** **Label**
+**Applying Palette to the Series Label**
 
 [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html) or [`Interior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Interior.html) color of the [`Series`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Series.html) is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~UseSeriesPalette.html) to True as shown in the below code snippet.
 
@@ -1248,14 +1254,14 @@ chart.Behaviors.Add(behavior);
 
 The following events are available in ChartTrackBallBehavior,
 
-##PositionChanging
+## PositionChanging
 
 The [`PositionChanging`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanging_EV.html) event occurs when the [`trackball`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position is changing from current mouse position to new mouse position. This argument contains the following information.
 
 * [`Cancel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs~Cancel.html) - Gets or sets a value that indicates whether to show the trackball on new mouse pointer position.
 * [`PointInfos`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs~PointInfos.html) - Gets or sets the current [`ChartPointInfo`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
 
-##PositionChanged
+## PositionChanged
 
 The [`PositionChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior~PositionChanged_EV.html) event occurs when the [`trackball`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position is changed from current mouse position to new mouse position. This argument contains the following information.
 
@@ -1656,7 +1662,7 @@ The following are the API’s in ChartDragTooltipStyle.
 ![Customizing tooltip while dragging in UWP Chart](Interactive-Features_images/Drag_Tooltip.png)
 
 
-**Rounding** **Off** **the** **Dragged** **Value**
+**Rounding Off the Dragged Value**
 
 To round off the dragged values, you have to set the [`SnapToPoint`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~SnapToPoint.html) and [`RoundToDecimal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase~RoundToDecimal.html) properties. The following code snippet explains rounding the dragged y value to 2 decimal digits.
 
@@ -1851,7 +1857,7 @@ chart.Behaviors.Add(zooming);
 
 ### Zooming the ChartArea
 
-**Zooming** **by** **setting** **ZoomFactor** **and** **ZoomPosition**
+**Zooming by setting ZoomFactor and ZoomPosition**
 
 [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ZoomFactor.html) defines the percentage of visible range from the total range of axis values. [`ZoomPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ZoomPosition.html) defines the ranges of values that need to be displayed as a result of [`ZoomFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~ZoomFactor.html). 
 
@@ -1892,7 +1898,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Zooming support in UWP Chart](Interactive-Features_images/Interactive-Features_img24.jpeg)
 
-**Mouse** **Wheel** **Zooming**
+**Mouse Wheel Zooming**
 
 Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZooming`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~EnableMouseWheelZooming.html) property to true.
 
@@ -1958,7 +1964,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-**Zooming** **Relative** **to** **Cursor**
+**Zooming Relative to Cursor**
 
 To enable the zooming relative to cursor position you can set [`ZoomRelativeToCursor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~ZoomRelativeToCursor.html) property to true. This support is applicable only for mouse wheel zooming.
 
@@ -2080,7 +2086,7 @@ chart.Behaviors.Add(zooming);
 ![Customizing selection rectangle support in UWP Chart](Interactive-Features_images/Interactive-Features_img26.jpeg)
 
 
-**Zooming** **Mode**
+**Zooming Mode**
 
 The zooming can be done both horizontally and vertically. The zooming direction is defined using [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~ZoomMode.html) property.
 
@@ -2155,7 +2161,7 @@ chart.Behaviors.Add(zooming);
 
 ![Zoom mode support in UWP Chart](Interactive-Features_images/Interactive-Features_img28.jpeg)
 
-**Maximum** **Zoom** **Level**
+**Maximum Zoom Level**
 
 You can also limit the zooming by setting [`MaximumZoomLevel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~MaximumZoomLevel.html) property as shown in the below code snippet.
 
@@ -2228,7 +2234,7 @@ The following image depicts the default view of the zooming toolbar.
 ![Zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img29.jpeg)
 
 
-**Positioning** **the** **zooming** **toolbar**
+**Positioning the zooming toolbar**
 
 Zooming Toolbar can be positioned using the [`HorizontalPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~HorizontalPosition.html) and [`VerticalPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior~VerticalPosition.html) properties.The following code demonstrates the positioning of the toolbar.
 
@@ -2268,7 +2274,7 @@ chart.Behaviors.Add(zooming);
 ![Positioning the zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img30.jpeg)
 
 
-**Customization** **of** **Zooming** **Toolbar**
+**Customization of Zooming Toolbar**
 
 Zooming Toolbar can be customized using the following API’s
 
@@ -2324,7 +2330,7 @@ chart.Behaviors.Add(zooming);
 ![Customization of zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img31.jpeg)
 
 
-**Orientation** **of** **Zooming** **Toolbar**
+**Orientation of Zooming Toolbar**
 
 Zooming toolbar orientation is horizontal by default.You can change the orientation to vertical by setting 
 
@@ -2834,7 +2840,7 @@ chart.Behaviors.Add(selection);
 
 **HighlightOnSelection**
 
-**Segment** **Selection**
+**Segment Selection**
 
 The following code example demonstrates the segment selection with adornments 
 
@@ -2913,7 +2919,7 @@ chart.Series.Add(series);
 
 ![Segments selection with adornments in UWP Chart](Interactive-Features_images/Interactive-Features_img39.jpeg)
 
-**Series** **Selection**
+**Series Selection**
 
 The following code example demonstrates the series selection with adornments 
 
@@ -3093,7 +3099,7 @@ chart.PrimaryAxis = new CategoryAxis()
 ![Adding scrollbar to axis in UWP Chart](Interactive-Features_images/Interactive-Features_img41.jpeg)
 
 
-**Deferred** **Scrolling**
+**Deferred Scrolling**
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to suspend the value updates for every thumb values. This can be done using [`DeferredScrolling`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~DeferredScrolling.html) property in chart axis.The following code snippet demonstrates the deferred scrolling.
 
@@ -3124,7 +3130,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 {% endtabs %}
 
-**Resizing** **the** **scrollbar**
+**Resizing the scrollbar**
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to resize the scrollbar using [`EnableScrollBarResizing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~EnableScrollBarResizing.html) property to true. By default the [`EnableScrollBarResizing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~EnableScrollBarResizing.html) property is true. The following code example and image demonstrates scrollbar without resizing option.
 
@@ -3192,7 +3198,7 @@ chart.PrimaryAxis = new CategoryAxis()
 ![Scrollbar for touch mode support in UWP Chart](Interactive-Features_images/Interactive-Features_img43.jpeg)
 
 
-**Thumb** **Label**
+**Thumb Label**
 
 In touch mode while resizing or dragging the scrollbar to view thumb labels the [`ThumbLabelVisibility`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis~ThumbLabelVisibility.html) is set to true.
 
