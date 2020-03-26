@@ -270,7 +270,7 @@ chart.ColorModel = colorModel;
 
 ## SegmentColorPath
 
-The color of the chart segments can be updated by binding its corresponding model property from its `ItemsSource` collection to its [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property of series as per in below
+The color of the chart segments can be updated by binding their corresponding model property from the `ItemsSource` collection to its [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property of series as follows.
 
 {% tabs %}
 
@@ -323,7 +323,7 @@ ColumnSeries series = new ColumnSeries()
 
 ![SegmentColorPath in UWP Chart](Styling-and-Customization_images/segmentcolor.png)
 
-N> `SegmentColorPath` property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType is Area).
+N> `SegmentColorPath` property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType are Area).
 
 
 ## Customize Legends
