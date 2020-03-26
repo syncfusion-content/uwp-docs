@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Save in SfImageEditor UWP Platform
+# Save edited image in SfImageEditor UWP platform
 
 The image can be saved along with the changes. Saving an image can be done in the following two ways:
 
