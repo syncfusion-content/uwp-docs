@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with ink annotations in UWP PDF Viewer | Syncfusion
-description: Learn about working with ink annotation and its functionalities in Syncfusion Essential PDF viewer for UWP platform. 
+description: Working with ink annotations in Syncfusion Essential UWP PDF viewer.
 platform: uwp
 control: PDF viewer
 documentation: ug
@@ -133,17 +133,3 @@ private void PdfViewer_InkEdited(object sender, InkEditedEventArgs e)
 }
 
 {% endhighlight %}
-
-## Improving the smoothness of ink annotation
-
-By default, SfPdfViewer uses the `Windows.UI.Xaml.Controls.Canvas` to draw ink strokes. The smoothness of ink annotations can be improved further by using the `UseWindowsInkCanvas` of `InkAnnotationSettings` of the PdfViewer. This API allows the control to use `WindowsUI.UI.Xaml.Controls.InkCanvas` for drawing ink strokes, which enables the smooth drawing of ink strokes. The code snippet for improving the smoothness of ink annotation is as follows.
-
-{% highlight c# %}
-
-//Enable the smooth drawing of ink strokes with the use of WindowsUI.UI.Xaml.Controls.InkCanvas.
-pdfViewer.InkAnnotationSettings.UseWindowsInkCanvas = true;
-
-{% endhighlight %}
-
-N> When `UseWindowsInkCanvas` is set to true, other annotations (except ink) cannot be selected in ink mode and the cursor will be changed to hand tool when it is hovered on any existing ink strokes.
-
