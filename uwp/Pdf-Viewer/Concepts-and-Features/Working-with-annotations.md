@@ -88,9 +88,9 @@ private void PdfViewer_AnnotationAdded(object sender, AnnotationMovedOrResizedEv
 
 {% endhighlight %}
 
-### Enable and disable selection of annotations.
+###Enable and disable selection of annotations
 
-By default, PdfViewer allows the user to select the annotations by tapping on it, this action is followed by the appearance of the selector around the selected annotation. The selection of annotations can be disabled by setting `IsReadOnly` property of `AnnotationSettings` class to true. The default value of this API will be false.
+By default, PdfViewer allows the user to select the annotations by tapping on it, this action is followed by the appearance of the selector around the selected annotation. The selection of annotations can be disabled by setting 'IsReadOnly' property of 'AnnotationSettings' class to true. The default value of this API will be false.
 
 {% highlight c# %}
 
