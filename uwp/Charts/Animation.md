@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation | SfChart | uwp | Syncfusion
-description: Learn how to create a sfchart animation and its customization options in Universal Windows Platform 
+description: Learn how to create a syncfusion sfchart animation and its customization options in Universal Windows Platform 
 platform: uwp
 control: SfChart
 documentation: ug
