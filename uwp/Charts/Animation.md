@@ -2,12 +2,12 @@
 layout: post
 title: Animation | SfChart | uwp | Syncfusion
 description: animation
-platform: uwp
+platform: Learn how to create a sfchart animation and its customization options in Universal Windows Platform 
 control: SfChart
 documentation: ug
 ---
 
-# Animation
+# Animation UWP Chart (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) Animation allows you to animate the chart series on loading, and whenever the ItemsSource changes. Animation in chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~EnableAnimation.html) property as True and defining the corresponding animation speed with [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~AnimationDuration.html) property.
 
@@ -32,8 +32,6 @@ The following types of series support Animation.
 * Pie
 * Polar/Radar
 
-
-
 The following APIs are used to customize the Animation.
 
 Customization API for Animation
@@ -42,15 +40,18 @@ Customization API for Animation
 <tr>
 <th>
 Property</th><th>
-Definition</th></th>
+Definition</th>
+</tr>
 <tr>
 <td>
 EnableAnimation</td><td>
-Gets or sets the bool value that represents a value to enable the animation for series.</td></tr>
+Gets or sets the bool value that represents a value to enable the animation for series.</td> </tr>
 <tr>
 <td>
 AnimationDuration</td><td>
-Gets or sets the TimeSpan value that represents the animation speed for the chart.</td></tr>
+Gets or sets the TimeSpan value that represents the animation speed for the chart.
+</td>
+</tr>
 </table>
 
 
