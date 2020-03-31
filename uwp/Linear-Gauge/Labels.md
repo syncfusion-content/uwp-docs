@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Labels | SfLinearGauge | uwp | Syncfusion
-description:  This section describes how to add and customize the labels of linear gauge scales in UWP platform.
+description:  This section describes how to add and customize the labels of SfLinearGauge scales in UWP platform.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
