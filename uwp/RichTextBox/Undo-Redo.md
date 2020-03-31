@@ -1,6 +1,6 @@
 ---
-title: UWP Redo | WPF RichTextBox | Syncfusion
-description: This section illustrates about history preservation support of editing actions in WPF RichTextBox control.
+title: Undo Redo | UWP RichTextBox | Syncfusion
+description: This section illustrates about history preservation support of editing actions in UWP RichTextBox control.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
