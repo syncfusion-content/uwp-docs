@@ -587,6 +587,8 @@ This feature is used to automatically adjust the radius and center of a circular
 
 N> Default value of the IsCenterAligned property is false. 
 
+N> All the feature should be Custom.
+
 {% tabs %}
 
 {% highlight xaml %}
