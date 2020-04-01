@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scales| SfCircularGauge | uwp | Syncfusion
-description:  This section explains the steps required to add and customize scales in Syncfusion circular gauge control for UWP
+description:  This section explains the steps required to add and customize scales in circular gauge control for UWP.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
