@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Save and Events | SfImageEditor | uwp | Syncfusion
-description:  Learn how to save the image in different ways as well as the use of different events in ImageEditor for UWP platform
+description:  Learn how to save the image in different ways and use of different events in ImageEditor for UWP platform.
 platform: uwp
 control: SfImageEditor
 documentation: ug
