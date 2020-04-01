@@ -585,9 +585,7 @@ circularGauge.Scales.Add(scale2);
 
 This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties by enable the `IsCenterAligned` property of gauge.
 
-N> Default value of the IsCenterAligned property is false. 
-
-N> All the feature should be Custom.
+N> Default value of the IsCenterAligned property is false. To enable the center align feature, you need to set all features Ticks, Labels and Range position as Custom and set IsCenterAligned as true.
 
 {% tabs %}
 
