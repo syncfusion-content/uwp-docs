@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Labels | SfLinearGauge | uwp | Syncfusion
-description:  This section explains how the color, font and change location of the labels in linear gauge scales can be applied and customized.
+description:  This section explains how the color, font and position of the labels in linear gauge scales can be applied and customized.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
