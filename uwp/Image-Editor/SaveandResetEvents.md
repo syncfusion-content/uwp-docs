@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Save and Events | SfImageEditor | uwp | Syncfusion
-description: Save and Events
+description:  Learn how to save the image in different ways and use of different events in ImageEditor for UWP platform.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Save
+# Save edited image in SfImageEditor
 
 The image can be saved along with the changes. Saving an image can be done in the following two ways:
 
@@ -30,17 +30,56 @@ Programmatically, `Save` method can be used in the SfImageEditor control to save
 {% endhighlight %}
 
 
-# Events
+## Events
 
 The SfImageEditor has Events namely, [`ImageSaving`](https://help.syncfusion.com/cr/uwp/sfimageeditor) and [`ImageSaved`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
 
 ## ImageSaving
 
-This event occurs before saving the image. You can control the save functionality by using the `Cancel` argument.  
+This event occurs before saving the image. Described the ImageSaving event arguments below.
+
+`Cancel` : You can control the save functionality using the `Cancel` argument.
+
+It restricts saving image to the default location when set `Cancel` value to `true`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+            <imageeditor:SfImageEditor ImageSaving="SfImageEditor_ImageSaving" />
+
+{% endhighlight %}
 
 {% highlight C# %}
+           
+  		    private void SfImageEditor_ImageSaving(object sender, Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs args)
+            {
+                args.Cancel = true;  
+            }
 
-    args.Cancel = true;
+{% endhighlight %}
+
+{% endtabs %}
+
+`Stream` : You can get current image edits as stream using this argument.
+
+{% highlight C# %}
+           
+            private void SfImageEditor_ImageSaving(object sender, Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs args)
+            {
+                var stream = args.Stream;
+            }
+
+{% endhighlight %}
+
+`FileName`: You can save the edited image in the specified name. 
+
+{% highlight c# %}
+
+          private void SfImageEditor_ImageSaving(object sender, Syncfusion.UI.Xaml.ImageEditor.ImageSavingEventArgs args)
+          {
+             args.FileName = "SavedImage";
+          }
 
 {% endhighlight %}
 
@@ -54,7 +93,7 @@ This event occurs after the image has been saved. To get the location of the sav
 
 {% endhighlight %}
 
-# Reset
+## Reset
 
 You can `reset` the changes which has been made in the image.
 
@@ -73,7 +112,7 @@ The `Reset` method resets the all changes which has been made in the image and r
 
 {% endhighlight %}
 
-# Events
+## Events
 
 The SfImageEditor has Events namely, [`BeginReset`](https://help.syncfusion.com/cr/uwp/sfimageeditor) and [`EndReset`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
 
