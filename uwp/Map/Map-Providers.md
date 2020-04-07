@@ -172,6 +172,8 @@ N> `DistanceType` property default value is KiloMeter.
 
 Calculate the initial zoom level automatically based on the LatLngBounds(Northeast, Southwest) of imagery layer class.
 
+{% tabs %}
+
 {% highlight xml %}
 
      <Page.Resources>
