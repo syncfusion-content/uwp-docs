@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation | SfChart | uwp | Syncfusion
-description: Learn how to create a syncfusion sfchart with its supported animation in UWP Platform. 
+description: Learn about how to create a Syncfusion SfChart control with its supported animation in UWP Platform. 
 platform: uwp
 control: SfChart
 documentation: ug
