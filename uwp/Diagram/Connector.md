@@ -520,3 +520,8 @@ To explore about arguments, please refer to [ChangedEventArgs](https://help.sync
 
 The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/constraints#connector-constraints "Connector Constraints").
 
+{% seealso %}
+
+[How to get or set the positions of the segments by programmatically)](https://www.syncfusion.com/kb/11345/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-uwp-diagramsfdiagram)
+
+{% endseealso %}
