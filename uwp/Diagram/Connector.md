@@ -1,13 +1,13 @@
 ---
 layout: post
 title: UWP Diagram supports for connecting two nodes | Syncfusion
-description: How to draw a line to connect points, nodes, or ports?
+description: How to draw a line to connect points, nodes, or ports and describe the connector types, its customization of appearance and functions
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Connector
+# Connector creation and customization
 
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
@@ -515,8 +515,12 @@ To explore about arguments, please refer to [ChangedEventArgs](https://help.sync
 
 ![bezier connector with control thumbs](Connector_images/Bezier3.gif)
 
-
 ## Constraints
 
 The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/constraints#connector-constraints "Connector Constraints").
 
+{% seealso %}
+
+[How to get or set the positions of the segments by programmatically?](https://www.syncfusion.com/kb/11345/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-uwp-diagramsfdiagram)
+
+{% endseealso %}
