@@ -543,13 +543,13 @@ private void ListView_DragItemsStarting(object sender, DragItemsStartingEventArg
 
 ![Image used to display the row drag and drop between sfdatagrid and listview in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img15.png)
 
-You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/UWP).
+N> [View in Sample GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/UWP).
 
 ### Row Drag and Drop between two SfDataGrids
 
 You should enable [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDraggingRows.html) and [AllowDrop](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop) property for the SfDataGrid’ s which are involved in row drag and drop operations.
 
-You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/UWP).
+N> [View in Sample GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/UWP)
 
 ## Context Menu
 
@@ -586,11 +586,10 @@ public class DelegateCommand : ICommand
     /// <param name="execute">The execution logic.</param>
 
     public DelegateCommand(Action<object> executeAction)
+	      : this(executeAction, null)
+    {
 
-    : this(executeAction, null)
-	{
-
-	}     
+    }     
 
     /// <summary>
     /// Creates a new command.
@@ -599,13 +598,13 @@ public class DelegateCommand : ICommand
     /// <param name="canExecute">The execution status logic.</param>
 
     public DelegateCommand(Action<object> executeAction, Func<object, bool> canExecute)
-	{
-		if (executeAction == null)            
-			throw new ArgumentNullException("executeAction");
+    {
+        if (executeAction == null)            
+            throw new ArgumentNullException("executeAction");
     
-		this.executeAction = executeAction;        
-		this.canExecute = canExecute;
-	}        
+        this.executeAction = executeAction;        
+        this.canExecute = canExecute;
+    }        
     #endregion
     
     #region ICommand Members
@@ -626,22 +625,22 @@ public class DelegateCommand : ICommand
     public event EventHandler CanExecuteChanged;
 
     public void RaiseCanExecuteChanged()
-	{
-		EventHandler handler = this.CanExecuteChanged;
-		if (handler != null)
-		{
-			handler(this, new EventArgs());
-		}
-	}
+    {
+	    EventHandler handler = this.CanExecuteChanged;
+	    if (handler != null)
+	    {
+           handler(this, new EventArgs());
+        }
+    }
 
     public void Execute(object parameter)
-	{		
-		if (this.executeAction != null)
-		{
-			this.executeAction(parameter);
-			return;
-		}           
-	}
+    {		
+        if (this.executeAction != null)
+        {
+            this.executeAction(parameter);
+            return;
+        }           
+    }
     
     #endregion
 }
@@ -669,13 +668,13 @@ public class ContextMenuViewModel : MenuFlyoutItem, INotifyPropertyChanged
     }
     
     public void Copy(object param)
-	{
-		if (param is GridRecordContextMenuInfo)
-		{
-			var grid = (param as GridRecordContextMenuInfo).DataGrid;
-			grid.GridCopyPaste.Copy();
-		}
-	}
+    {
+        if (param is GridRecordContextMenuInfo)
+        {
+            var grid = (param as GridRecordContextMenuInfo).DataGrid;
+            grid.GridCopyPaste.Copy();
+        }
+    }
 }
 
 {% endhighlight %}
