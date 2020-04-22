@@ -576,7 +576,7 @@ public class DelegateCommand : ICommand
 
     #region Fields
     Func<object, bool> canExecute;
-	Action<object> executeAction; 
+    Action<object> executeAction;
     #endregion
 
     #region Constructors
@@ -586,7 +586,7 @@ public class DelegateCommand : ICommand
     /// <param name="execute">The execution logic.</param>
 
     public DelegateCommand(Action<object> executeAction)
-	      : this(executeAction, null)
+	    : this(executeAction, null)
     {
 
     }     
@@ -627,8 +627,8 @@ public class DelegateCommand : ICommand
     public void RaiseCanExecuteChanged()
     {
 	    EventHandler handler = this.CanExecuteChanged;
-	    if (handler != null)
-	    {
+        if (handler != null)
+        {
            handler(this, new EventArgs());
         }
     }
