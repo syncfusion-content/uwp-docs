@@ -586,7 +586,7 @@ public class DelegateCommand : ICommand
     /// <param name="execute">The execution logic.</param>
 
     public DelegateCommand(Action<object> executeAction)
-	    : this(executeAction, null)
+        : this(executeAction, null)
     {
 
     }     
@@ -626,7 +626,7 @@ public class DelegateCommand : ICommand
 
     public void RaiseCanExecuteChanged()
     {
-	    EventHandler handler = this.CanExecuteChanged;
+        EventHandler handler = this.CanExecuteChanged;
         if (handler != null)
         {
            handler(this, new EventArgs());
