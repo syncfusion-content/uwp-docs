@@ -543,13 +543,13 @@ private void ListView_DragItemsStarting(object sender, DragItemsStartingEventArg
 
 ![Image used to display the row drag and drop between sfdatagrid and listview in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img15.png)
 
-N> [View in Sample GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/UWP).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/UWP)
 
 ### Row Drag and Drop between two SfDataGrids
 
 You should enable [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDraggingRows.html) and [AllowDrop](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop) property for the SfDataGrid’ s which are involved in row drag and drop operations.
 
-N> [View in Sample GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/UWP)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/UWP)
 
 ## Context Menu
 
