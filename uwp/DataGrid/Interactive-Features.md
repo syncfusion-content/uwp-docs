@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features | UWP SfDataGrid | Syncfusion
-description: Interactive features of SfDataGrid | SfDataGrid | Row Header | Drag and Drop
+title: Interactive Features in UWP DataGrid control | Syncfusion
+description: Learn about interactive features row header, drag and drop and so on in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: UWP
 control: SfDataGrid
 documentation: ug
 ---
 
-# InteractiveFeatures
+# Interactive Features in UWP DataGrid (SfDataGrid)
 
 ## RowHeader
 
@@ -543,10 +543,673 @@ private void ListView_DragItemsStarting(object sender, DragItemsStartingEventArg
 
 ![Image used to display the row drag and drop between sfdatagrid and listview in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img15.png)
 
-You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/UWP).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/UWP)
 
 ### Row Drag and Drop between two SfDataGrids
 
-You should enable [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDraggingRows.html] and [AllowDrop](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop) property for the SfDataGrid’ s which are involved in row drag and drop operations.
+You should enable [AllowDraggingRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AllowDraggingRows.html) and [AllowDrop](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop) property for the SfDataGrid’ s which are involved in row drag and drop operations.
 
-You can download the sample [here](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/UWP).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/UWP)
+
+## Context Menu
+
+DataGrid provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
+
+The below code example shows the context menu with command bindings.
+
+{% tabs %}
+{% highlight xaml %}
+
+<MenuFlyout>
+    <MenuFlyoutItem Text="Copy" Command="{Binding Path=DataGrid.DataContext.GridCopyCommand}"
+                    CommandParameter="{Binding}">
+    </MenuFlyoutItem>
+</MenuFlyout>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+public class DelegateCommand : ICommand
+{
+
+    #region Fields
+    Func<object, bool> canExecute;
+    Action<object> executeAction;
+    #endregion
+
+    #region Constructors
+    /// <summary>
+    /// Creates a new command that can always execute.
+    /// </summary>
+    /// <param name="execute">The execution logic.</param>
+
+    public DelegateCommand(Action<object> executeAction)
+        : this(executeAction, null)
+    {
+
+    }     
+
+    /// <summary>
+    /// Creates a new command.
+    /// </summary>
+    /// <param name="execute">The execution logic.</param>
+    /// <param name="canExecute">The execution status logic.</param>
+
+    public DelegateCommand(Action<object> executeAction, Func<object, bool> canExecute)
+    {
+        if (executeAction == null)            
+            throw new ArgumentNullException("executeAction");
+    
+        this.executeAction = executeAction;        
+        this.canExecute = canExecute;
+    }        
+    #endregion
+    
+    #region ICommand Members
+
+    public bool CanExecute(object parameter)
+    {
+        bool result = true;
+        Func<object, bool> canExecuteHandler = this.canExecute;
+
+        if (canExecuteHandler != null)
+        {
+            result = canExecuteHandler(parameter);
+            return result;
+        }
+        return result;
+    }
+    
+    public event EventHandler CanExecuteChanged;
+
+    public void RaiseCanExecuteChanged()
+    {
+        EventHandler handler = this.CanExecuteChanged;
+        if (handler != null)
+        {
+           handler(this, new EventArgs());
+        }
+    }
+
+    public void Execute(object parameter)
+    {		
+        if (this.executeAction != null)
+        {
+            this.executeAction(parameter);
+            return;
+        }           
+    }
+    
+    #endregion
+}
+
+public class ContextMenuViewModel : MenuFlyoutItem, INotifyPropertyChanged
+{
+
+    public ContextMenuViewModel()
+    {
+        copyCommand = new DelegateCommand(Copy);
+    }
+    
+    private DelegateCommand copyCommand
+
+    public DelegateCommand CopyCommand
+    {
+        get
+        {
+            return copyCommand;
+        }
+        set
+        {
+            copyCommand = value;
+        }
+    }
+    
+    public void Copy(object param)
+    {
+        if (param is GridRecordContextMenuInfo)
+        {
+            var grid = (param as GridRecordContextMenuInfo).DataGrid;
+            grid.GridCopyPaste.Copy();
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Context menu for record rows
+
+You can set the context menu for the data rows by using [SfDataGrid.RecordContextMenu](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~RecordContextMenu.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.RecordContextMenu>
+    <MenuFlyout>
+        <MenuFlyoutItem x:Name="Cut" Text="Cut" />
+        <MenuFlyoutItem x:Name="Copy" Text="Copy"  />
+        <MenuFlyoutItem x:Name="Paste" Text="Paste" />
+        <MenuFlyoutItem x:Name="Delete" Text="Delete" />
+    </MenuFlyout>
+</syncfusion:SfDataGrid.RecordContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.dataGrid.RecordContextMenu = new MenuFlyout();
+this.dataGrid.RecordContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Cut" });
+this.dataGrid.RecordContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Copy" });
+this.dataGrid.RecordContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Paste" });
+this.dataGrid.RecordContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Delete" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Context menu added for data rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img16.png)
+
+
+While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.RecordContextMenu>
+	<MenuFlyout>
+		<MenuFlyoutItem Text="Copy"
+                        Command="{Binding Path=DataGrid.DataContext.GridCopyCommand}"
+                        CommandParameter="{Binding}">
+		</MenuFlyoutItem>
+	<MenuFlyout>
+</syncfusion:SfDataGrid.RecordContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void Copy(object param)
+{
+    if (param is GridRecordContextMenuInfo)
+    {
+        var grid = (param as GridRecordContextMenuInfo).DataGrid;
+		var record = (param as GridRecordContextMenuInfo).Record;
+        grid.GridCopyPaste.Copy();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Context menu for column header
+
+You can set the context menu for the header by using [SfDataGrid.HeaderContextMenu](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderContextMenu.html) property. 
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.HeaderContextMenu>
+    <MenuFlyout>
+        <MenuFlyoutItem x:Name=" SortAscending " Text="SortAscending" />
+        <MenuFlyoutItem x:Name=" SortDescending " Text="SortDescending" />
+        <MenuFlyoutItem x:Name=" ClearSorting " Text="ClearSorting" />
+        <MenuFlyoutItem x:Name=" ClearFiltering " Text="ClearFiltering" />
+        <MenuFlyoutItem x:Name=" Group by this column " Text="Group by this column" />
+        <MenuFlyoutItem x:Name=" Expand/Collapse Group Drop Area " Text="Expand/Collapse Group Drop Area" />
+        <MenuFlyoutItem x:Name=" BestFit " Text="BestFit" />
+    </MenuFlyout>
+</syncfusion:SfDataGrid.HeaderContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.dataGrid.HeaderContextMenu = new MenuFlyout();
+this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = "SortAscending" });
+this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = "SortDescending" });
+this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = "ClearSorting" });
+this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = " ClearFiltering " });
+this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Group by this column" });
+this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Expand/Collapse Group Drop Area" });
+this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = "BestFit" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Context menu added for header row in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img17.png)
+
+
+While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.HeaderContextMenu>
+	<MenuFlyout>
+        <MenuFlyoutItem Text="SortAscending"
+                        Command="{Binding Path=DataGrid.DataContext.SortAscendingCommand}"                                    
+                        CommandParameter="{Binding}" >
+		</MenuFlyoutItem>
+	<MenuFlyout>
+</syncfusion:SfDataGrid.HeaderContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void SortAscending(object param)                
+{
+    if (param is GridColumnContextMenuInfo)
+    {
+        var grid = (param as GridContextMenuInfo).DataGrid;
+        var column = (param as GridColumnContextMenuInfo).Column;
+        grid.SortColumnDescriptions.Clear();
+        grid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName = column.MappingName, SortDirection = ListSortDirection.Ascending });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Context menu for group drop area
+
+You can set the context menu for the GroupDropArea by using [SfDataGrid.GroupDropAreaContextMenu](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropAreaContextMenu.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.GroupDropAreaContextMenu>
+    <MenuFlyout>
+        <MenuFlyoutItem x:Name=" ExpandAll " Text="ExpandAll" />
+        <MenuFlyoutItem x:Name=" CollapseAll " Text="CollapseAll" />
+        <MenuFlyoutItem x:Name=" ClearGroups " Text="ClearGroups" />
+    </MenuFlyout>
+</syncfusion:SfDataGrid.GroupDropAreaContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.dataGrid.GroupDropAreaContextMenu = new MenuFlyout();
+this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuFlyoutItem() { Text = "ExpandAll" });
+this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuFlyoutItem() { Text = "CollapseAll" });
+this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuFlyoutItem() { Text = "ClearGroups" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Context menu added for GroupDropArea in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img18.png)
+
+
+While binding the menu item using CommandBinding you can get the parameter as `GroupDropAreaContextMenuInfo`. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.GroupDropAreaContextMenu>
+	<MenuFlyout>
+        <MenuFlyoutItem Text="Expand all"
+                        Command="{Binding Path=DataGrid.DataContext.ExpandAllCommand}"        
+                        CommandParameter="{Binding}" >
+		</MenuFlyoutItem>
+	</MenuFlyout>
+</syncfusion:SfDataGrid.GroupDropAreaContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void ExpandAll(object param)
+{
+    if (param is Syncfusion.UI.Xaml.Grid.GridContextMenuInfo)
+    {
+        var grid = (param as Syncfusion.UI.Xaml.Grid.GridContextMenuInfo).DataGrid;
+        grid.ExpandAllGroup();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Context menu for group item
+
+You can set the context menu for the group drop item by using [SfDataGrid.GroupDropItemContextMenu](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupDropItemContextMenu.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.GroupDropItemContextMenu>
+    <MenuFlyout>
+        <MenuFlyoutItem x:Name=" ExpandAll " Text="ExpandAll" />
+        <MenuFlyoutItem x:Name=" CollapseAll " Text="CollapseAll" />
+        <MenuFlyoutItem x:Name=" SortAscending " Text="SortAscending" />
+        <MenuFlyoutItem x:Name=" SortDescending " Text="SortDescending" />
+        <MenuFlyoutItem x:Name=" ClearGroup " Text="ClearGroup" />
+        <MenuFlyoutItem x:Name=" ClearSorting " Text="ClearSorting" />
+    </MenuFlyout>
+</syncfusion:SfDataGrid.GroupDropItemContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.dataGrid.GroupDropItemContextMenu = new MenuFlyout();
+this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuFlyoutItem() { Text = "ExpandAll" });
+this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuFlyoutItem() { Text = "CollapseAll" });
+this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuFlyoutItem() { Text = "SortAscending" });
+this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuFlyoutItem() { Text = "SortDescending" });
+this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuFlyoutItem() { Text = "ClearGroup" });
+this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuFlyoutItem() { Text = "ClearSorting" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Context menu added for GroupDropItem in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img19.png)
+
+
+While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.GroupDropItemContextMenu>
+	<MenuFlyout>
+		<MenuFlyoutItem Text="Collapse all"
+                    Command="{Binding Path=DataGrid.DataContext.CollapseAllCommand}"
+                    CommandParameter="{Binding}" >					
+		</MenuFlyoutItem>
+	</MenuFlyout>
+</syncfusion:SfDataGrid.GroupDropItemContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void CollapseAll(object param)
+{
+    if (param is GridContextMenuInfo)
+    {
+        var grid = (param as GridContextMenuInfo).DataGrid;
+        grid.CollapseAllGroup();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Context menu for caption summary wow
+
+You can set the context menu for the group caption by using [SfDataGrid.GroupCaptionContextMenu](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupCaptionContextMenu.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.GroupCaptionContextMenu>
+    <MenuFlyout>
+        <MenuFlyoutItem x:Name=" Expand " Text="Expand" />
+        <MenuFlyoutItem x:Name=" Collapse " Text="Collapse" />
+    </MenuFlyout>
+</syncfusion:SfDataGrid.GroupCaptionContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.dataGrid.GroupCaptionContextMenu = new MenuFlyout();
+this.dataGrid.GroupCaptionContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Expand" });
+this.dataGrid.GroupCaptionContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Collapse" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Context menu added for group caption rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img20.png)
+
+
+While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.GroupCaptionContextMenu>
+	<MenuFlyout>
+        <MenuFlyoutItem Text="Expand" 
+						Command="{Binding Path=DataGrid.DataContext.ExpandCommand}"
+						CommandParameter="{Binding}"/>				
+		</MenuFlyoutItem>
+	<MenuFlyout>
+</syncfusion:SfDataGrid.GroupCaptionContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void Expand(object param)
+{
+    if (param is GridRecordContextMenuInfo)
+    {
+        var grid = (param as GridRecordContextMenuInfo).DataGrid;
+        var group = (param as GridRecordContextMenuInfo).Record as Group;
+        grid.ExpandGroup(group);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Context menu for group summary row
+
+You can set the context menu for the group summary by using [SfDataGrid.GroupSummaryContextMenu](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GroupSummaryContextMenu.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.GroupSummaryContextMenu>
+    <MenuFlyout>
+        <MenuFlyoutItem x:Name="ClearSummary" Text="ClearSummary" />
+    </MenuFlyout>
+</syncfusion:SfDataGrid.GroupSummaryContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.dataGrid.GroupSummaryContextMenu = new MenuFlyout();
+this.dataGrid.GroupSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "ClearSummary" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Context menu added for group summary rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img21.png)
+
+
+While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.GroupSummaryContextMenu>
+	<MenuFlyout>
+        <MenuFlyoutItem Text="Clear Summary"
+                        Command="{Binding Path=DataGrid.DataContext.ClearSummaryCommand}"
+                        CommandParameter="{Binding}">
+		</MenuFlyoutItem>
+	</MenuFlyout>
+</syncfusion:SfDataGrid.GroupSummaryContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void ClearSummary(object param)
+{
+    if (param is GridRecordContextMenuInfo)
+    {
+        var grid = (param as GridRecordContextMenuInfo).DataGrid;
+
+        if (grid.GroupSummaryRows.Any())
+            grid.GroupSummaryRows.Clear();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Context menu for table summary row
+
+You can set the context menu for the table summary by using [SfDataGrid.TableSummaryContextMenu](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~TableSummaryContextMenu.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.TableSummaryContextMenu>
+    <MenuFlyout>
+        <MenuFlyoutItem x:Name="TableSummaryCount" Text="Count" />
+        <MenuFlyoutItem x:Name="TableSummaryMax" Text="Max" />
+        <MenuFlyoutItem x:Name="TableSummaryMin" Text="Min" />
+        <MenuFlyoutItem x:Name="TableSummaryMin" Text="Average" />
+        <MenuFlyoutItem x:Name="TableSummaryMin" Text="Sum" />
+    </MenuFlyout>
+</syncfusion:SfDataGrid.TableSummaryContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.dataGrid.TableSummaryContextMenu = new MenuFlyout();
+this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Count" });
+this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Max" });
+this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Min" });
+this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Average" });
+this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Sum" });
+
+{% endhighlight %}
+{% endtabs %}
+
+![Context menu added for table summary rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img22.png)
+
+
+While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.TableSummaryContextMenu>
+	<MenuFlyout>
+        <MenuFlyoutItem Command="{Binding Path=DataGrid.DataContext.TotalSummaryCountCommand}" 
+						CommandParameter="{Binding}" 
+						Text="Count" >
+		</MenuFlyoutItem>
+	</MenuFlyout>
+</syncfusion:SfDataGrid.TableSummaryContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void TotalSummaryCount(object param)
+{
+    if (param is GridRecordContextMenuInfo)
+    {
+        var grid = (param as GridRecordContextMenuInfo).DataGrid;
+        var record = (param as GridRecordContextMenuInfo).Record as SummaryRecordEntry;
+        if (record != null)
+        {
+            var summaryrow = new GridSummaryRow() { Name = "totalgroupsummaryrow", Title = "{totalSummary}", ShowSummaryInRow = true };
+            summaryrow.SummaryColumns.Add(new GridSummaryColumn() { Name = "totalSummary", MappingName = "OrderID", SummaryType = SummaryType.CountAggregate, Format = "Total Employee Count : {Count}" });
+            grid.TableSummaryRows.Clear();
+            grid.TableSummaryRows.Add(summaryrow);
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Events
+
+#### GridContextMenuOpening
+
+[GridContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~GridContextMenuOpening_EV.html) event occurs while opening the context menu in SfDataGrid. 
+
+[GridContextMenuEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs.html) has the following members which provides the information about `GridContextMenuOpening` event.
+
+* [ContextMenu](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenu.html) – Gets the corresponding context menu.
+
+* [ContextMenuInfo](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenuInfo.html) – Returns the context menu info based on the row which opens the context menu.
+
+* [ContextMenuType](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~ContextMenuType.html) – Returns the type of context menu.
+
+* [RowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs~RowColumnIndex.html) – `RowColumnIndex` of the context menu which is currently going to open. `RowColumnIndex` is updated only for the `RecordContextMenu` and remains left empty.
+
+* [Handled](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridHandledEventArgs~Handled.html) – Indicates whether the `GridContextMenuOpening` event is handled or not.
+
+### Customization of context menu
+
+#### Change the menu item when the context menu opening.
+
+You can use the `GridContextMenuOpening` event to change the menu item when the context menu opening.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid.RecordContextMenu>
+    <MenuFlyout>
+        <MenuFlyoutItem Text="Cut"
+                                Command="{Binding Path=DataGrid.DataContext.GridCutCommand}"
+                                CommandParameter="{Binding}"/>
+        <MenuFlyoutItem Text="Copy"
+                                Command="{Binding Path=DataGrid.DataContext.GridCopyCommand}"
+                                CommandParameter="{Binding}"/>
+        <MenuFlyoutItem Text="Paste"
+                                Command="{Binding Path=DataGrid.DataContext.GridPasteCommand}"
+                                CommandParameter="{Binding}"/>
+    </MenuFlyout>
+</syncfusion:SfDataGrid.RecordContextMenu>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+this.dataGrid.GridContextMenuOpening += DataGrid_GridContextMenuOpening;
+
+private void DataGrid_GridContextMenuOpening(object sender, GridContextMenuEventArgs e)
+{
+    e.ContextMenu.Items.Clear();
+
+    if (e.ContextMenuType == ContextMenuType.RecordCell)
+    {
+        e.ContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Record" });
+        e.ContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Data" });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+       
+![Context menu changed for record cell while opening in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img23.png)
+
+#### Changing background of Context menu
+
+You can change the appearance of the context menu by customizing the style with TargetType as MenuFlyoutPresenter.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Style x:Key="MenuFlyoutPresenterStyle" TargetType="MenuFlyoutPresenter">
+    <Setter Property="Background" Value="AliceBlue"/>
+    <Setter Property="BorderBrush" Value="Red"/>
+    <Setter Property="BorderThickness" Value="2,2,2,2"/>
+</Style>
+
+<MenuFlyout MenuFlyoutPresenterStyle="{StaticResource MenuFlyoutPresenterStyle}">
+    <MenuFlyoutItem x:Name="Cut" Text="Cut" />
+    <MenuFlyoutItem x:Name="Copy" Text="Copy"  />
+    <MenuFlyoutItem x:Name="Paste" Text="Paste" />
+    <MenuFlyoutItem x:Name="Delete" Text="Delete" />
+</MenuFlyout>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Context menu background changed in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img24.png)
