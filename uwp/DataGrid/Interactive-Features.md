@@ -712,7 +712,7 @@ this.dataGrid.RecordContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Delete"
 ![Context menu added for data rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img16.png)
 
 
-While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+While binding the menu item using CommandBinding you can get the command parameter as [GridRecordContextMenuInfo](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridRecordContextMenuInfo.html) which contains the record of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -780,7 +780,7 @@ this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = "BestFit
 ![Context menu added for header row in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img17.png)
 
 
-While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
+While binding the menu item using CommandBinding you can get the parameter as [GridColumnContextMenuInfo](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnContextMenuInfo.html) which contains the particular GridColumn.
 
 {% tabs %}
 {% highlight xaml %}
@@ -842,7 +842,7 @@ this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuFlyoutItem() { Text = "
 ![Context menu added for GroupDropArea in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img18.png)
 
 
-While binding the menu item using CommandBinding you can get the parameter as `GroupDropAreaContextMenuInfo`. 
+While binding the menu item using CommandBinding you can get the parameter as [GridGroupDropAreaContextMenuInfo](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridGroupDropAreaContextMenuInfo.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -908,7 +908,7 @@ this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuFlyoutItem() { Text = "
 ![Context menu added for GroupDropItem in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img19.png)
 
 
-While binding the menu item using CommandBinding you can get the parameter as `GridColumnContextMenuInfo` which contains the particular GridColumn.
+While binding the menu item using CommandBinding you can get the parameter as [GridColumnContextMenuInfo](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnContextMenuInfo.html) which contains the particular GridColumn.
 
 {% tabs %}
 {% highlight xaml %}
@@ -966,7 +966,7 @@ this.dataGrid.GroupCaptionContextMenu.Items.Add(new MenuFlyoutItem() { Text = "C
 ![Context menu added for group caption rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img20.png)
 
 
-While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+While binding the menu item using CommandBinding you can get the command parameter as [GridRecordContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridRecordContextMenuInfo.html) which contains the record of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1023,7 +1023,7 @@ this.dataGrid.GroupSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "C
 ![Context menu added for group summary rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img21.png)
 
 
-While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+While binding the menu item using CommandBinding you can get the command parameter as [GridRecordContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridRecordContextMenuInfo.html) which contains the record of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1089,7 +1089,7 @@ this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "S
 ![Context menu added for table summary rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img22.png)
 
 
-While binding the menu item using CommandBinding you can get the command parameter as `GridRecordContextMenuInfo` which contains the record of the corresponding row.
+While binding the menu item using CommandBinding you can get the command parameter as [GridRecordContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridRecordContextMenuInfo.html) which contains the record of the corresponding row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1189,7 +1189,7 @@ private void DataGrid_GridContextMenuOpening(object sender, GridContextMenuEvent
        
 ![Context menu changed for record cell while opening in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img23.png)
 
-#### Changing background of Context menu
+#### Customizing appearance of context menu
 
 You can change the appearance of the context menu by customizing the style with TargetType as MenuFlyoutPresenter.
 
