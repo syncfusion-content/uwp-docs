@@ -289,4 +289,4 @@ You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_fi
 
 N> When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Kanban-UWP-Getting-Started/tree/master/).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Kanban-UWP-Getting-Started).
