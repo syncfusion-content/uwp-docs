@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Getting Started | SfKanban | uwp | Syncfusion
-description: Getting Started of Kanban control
+description: How to create a simple kanban board view with its available customization by adding columns in UWP platform.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
-# Getting Started 
+# Getting Started of Kanban (SfKanban) in UWP
 
 The following section provides an assistance to create a simple Kanban application and to configure it. 
 
