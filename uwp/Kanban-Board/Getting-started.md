@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started | SfKanban | uwp | Syncfusion
-description: getting started
+description: Getting Started of Kanban control
 platform: uwp
 control: SfKanban
 documentation: ug
@@ -46,7 +46,7 @@ In this walk through, you will create a new application that contains the SfKanb
 
 
 1. Add the required assembly references to the project as discussed in the Reference Essential Studio Components in your Solution section.
-2. Add the “Syncfusion.UI.Xaml.Kanban” namespace to the application as shown below.
+2. Add the `Syncfusion.UI.Xaml.Kanban` namespace to the application as shown below.
 
 {% tabs %}
 
@@ -187,7 +187,7 @@ You need to create a collection of KanbanModel objects for populating SfKanban.
 
 ### Binding data
 
-In order to bind the data source of the SfKanban, set ItemsSource property as shown below.
+In order to bind the data source of the SfKanban, set `ItemsSource` property as shown below.
 
 {% tabs %}
 
@@ -246,7 +246,9 @@ The following code example illustrates how this can be done.
 SfKanban kanban = new SfKanban()
 {
     AutoGenerateColumns = false,
-    ItemsSource = new TaskDetails().Tasks
+    ItemsSource = new TaskDetails().Tasks,
+    MinColumnWidth = 150,
+    ColumnMappingPath="Category" 
 };
 
 kanban.Columns.Add(new KanbanColumn()
@@ -287,6 +289,4 @@ You can also set [`AutoGenerateColumns`](https://help.syncfusion.com/cr/cref_fi
 
 N> When the columns are auto-generated, you can handle the ColumnsGenerated event to customize the columns.
 
-
-
-
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Kanban-UWP-Getting-Started/tree/master/).
