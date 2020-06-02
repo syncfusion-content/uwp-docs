@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Axis
+# Axis in UWP Chart(SfChart)
 
 [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate a data point inside the chart area. Generally, to locate a data point, you require two axes, along each direction, that is, horizontal and vertical, in a chart. The vertical axis, or y-axis, usually represents numerical values .The horizontal axis, or x-axis, represents categorical or numerical or date and time values. [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxis.html) supports the following types.
 
@@ -2339,7 +2339,7 @@ chart.Series.Add(series);
 
 <syncfusion:SfChart.SecondaryAxis>
 
-</syncfusion:NumericalAxis ShowLabelBorder="True"  />       
+<syncfusion:NumericalAxis ShowLabelBorder="True"  />       
 
 </syncfusion:SfChart.SecondaryAxis>
 

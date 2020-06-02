@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Area	
+# Area in UWP Chart(SfChart)
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series etc. 
 
@@ -926,7 +926,7 @@ The [`ResetZooming`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Sf
 
 **See also**
 
-`PointToValue`
+[`PointToValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~PointToValue.html)
 
-`ValueToPoint`
+[`ValueToPoint`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~ValueToPoint.html)
 
