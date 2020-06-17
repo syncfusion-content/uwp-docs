@@ -56,9 +56,9 @@ The following code shows how to bind the PrintCommand to a Button
 
 PDF viewer provides the following print events.
 
-1.	PrintStarted
-2.	PrintProgress
-3.	PrintCompleted
+1. PrintStarted
+2. PrintProgress
+3. PrintCompleted
 
 You can use the `SfPdfViewerControl.PrintStarted` event to detect the printing process has been initialized and started to print the PDF document using SfPdfViewer. Please refer to the following code sample,
 
