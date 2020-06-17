@@ -134,3 +134,5 @@ maskedEdit.Watermark = "Type here";
 {% endhighlight %}
 
 {% endtabs %}
+
+You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MaskedEdit-GettingStarted_Sample1182969424).
