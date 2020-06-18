@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation Support with UWP SfProgressBar Control | Syncfusion
-description: This section explains how to Animating Custom Objects for Syncfusion SfProgressBar control for UWP
+description: This section explains how to Animating Custom Objects for Syncfusion SfProgressBar control for Universal Windows Platform
 platform: UWP
 control: SfProgressBar
 documentation: ug
@@ -55,7 +55,7 @@ progressBar.FillDirection = Syncfusion.UI.Xaml.Controls.Notification.Directions.
 
 {% endtabs %}
 
-![](Animating-Custom-Objects-images/Animating-Custom-Objects-img1.jpeg)
+![Animating Custom Objects along Directions](Animating-Custom-Objects-images/Animating-Custom-Objects-img1.jpeg)
 
 
 Set the [FillDirection](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfProgressBar.UWP~Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar~FillDirection.html) to Vertical and the object will be filled in vertical direction.
@@ -70,7 +70,7 @@ progressBar.FillDirection = Syncfusion.UI.Xaml.Controls.Notification.Directions.
 
 {% endtabs %}
 
-![](Animating-Custom-Objects-images/Animating-Custom-Objects-img2.jpeg)
+![Animating Custom Objects along Directions](Animating-Custom-Objects-images/Animating-Custom-Objects-img2.jpeg)
 
 
 N> Progress types other than `Custom` does not show any changes in their animation direction
@@ -99,7 +99,7 @@ progressBar.IsDirectionReversed = true;
 
 {% endtabs %}
 
-![](Animating-Custom-Objects-images/Animating-Custom-Objects-img3.jpeg)
+![Reverse Animation](Animating-Custom-Objects-images/Animating-Custom-Objects-img3.jpeg)
 
 
 {% tabs %}
@@ -124,7 +124,7 @@ progressBar.IsDirectionReversed = true;
 
 {% endtabs %}
 
-![](Animating-Custom-Objects-images/Animating-Custom-Objects-img4.jpeg)
+![Reverse Animation](Animating-Custom-Objects-images/Animating-Custom-Objects-img4.jpeg)
 
 
 {% tabs %}
@@ -172,7 +172,7 @@ progressBar.IsDirectionReversed = true;
 
 {% endtabs %}
 
-![](Animating-Custom-Objects-images/Animating-Custom-Objects-img5.jpeg)
+![Reverse Animation](Animating-Custom-Objects-images/Animating-Custom-Objects-img5.jpeg)
 
 {% tabs %}
 
@@ -197,7 +197,7 @@ progressBar.IsDirectionReversed = true;
 
 The above code shows the reverse animation in Horizontal direction.
 
-![](Animating-Custom-Objects-images/Animating-Custom-Objects-img6.jpeg)
+![Horizontal direction](Animating-Custom-Objects-images/Animating-Custom-Objects-img6.jpeg)
 
 
 {% tabs %}
@@ -215,4 +215,4 @@ progressBar.IsDirectionReversed = true;
 
 The above code shows the reverse animation in Vertical direction.
 
-![](Animating-Custom-Objects-images/Animating-Custom-Objects-img7.jpeg)
+![Vertical direction](Animating-Custom-Objects-images/Animating-Custom-Objects-img7.jpeg)

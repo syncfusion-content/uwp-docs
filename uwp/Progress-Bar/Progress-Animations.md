@@ -43,7 +43,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img1.jpeg)
+![Circular Progress Animations](Progress-Animations-images/Progress-Animations-img1.jpeg)
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img2.jpeg)
+![Circular Progress Animations](Progress-Animations-images/Progress-Animations-img2.jpeg)
 
 
 ## Linear Progress Animations
@@ -96,7 +96,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img3.jpeg)
+![Linear Progress Animations](Progress-Animations-images/Progress-Animations-img3.jpeg)
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img4.jpeg)
+![Linear Progress Animations](Progress-Animations-images/Progress-Animations-img4.jpeg)
 
 
 ## Animating Fill in Custom Object
@@ -149,7 +149,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img5.jpeg)
+![Animating Fill in Custom Object](Progress-Animations-images/Progress-Animations-img5.jpeg)
 
 
 The above code displays only the display content. The custom object can be set using `Template` and [FillPath](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfProgressBar.UWP~Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar~FillPath.html) property. `FillPath` property holds the name of the element in template that is to be animated.
@@ -186,6 +186,6 @@ The above code displays only the display content. The custom object can be set u
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img6.jpeg)
+![Animating Fill in Custom Object](Progress-Animations-images/Progress-Animations-img6.jpeg)
 
 
