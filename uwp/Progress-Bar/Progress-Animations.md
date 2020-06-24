@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Progress Animations
-description: Progress Animations for Syncfusion SfProgressBar control for UWP
+title: Progress Animations with UWP SfProgressBar Control | Syncfusion
+description: This section explains how to Progress Animations for Syncfusion SfProgressBar control for Universal Windows Platform
 platform: UWP
 control: SfProgressBar
 documentation: ug
 --- 
 
-# Progress Animations
+# Progress Animations with UWP SfProgressBar
 
-The built-in progress bar shapes are circular and linear. However, any custom object can be used for fill animation. `ProgressType` property is used to choose the progress type(shape) and the enumeration values are
+The built-in progress bar shapes are circular and linear. However, any custom object can be used for fill animation. [ProgressType](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfProgressBar.UWP~Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar~ProgressType.html) property is used to choose the progress type(shape) and the enumeration values are
 
 1. SolidCircular
 2. SolidLinear
 3. SegmentedCircular
 4. SegmentedLinear
-5. CustomFill
+5. Custom
 
 ## Circular Progress Animations
 
@@ -43,7 +43,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img1.jpeg)
+![Circular Progress Animations](Progress-Animations-images/Progress-Animations-img1.jpeg)
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img2.jpeg)
+![Circular Progress Animations](Progress-Animations-images/Progress-Animations-img2.jpeg)
 
 
 ## Linear Progress Animations
@@ -96,7 +96,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img3.jpeg)
+![Linear Progress Animations](Progress-Animations-images/Progress-Animations-img3.jpeg)
 
 {% tabs %}
 
@@ -120,18 +120,18 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img4.jpeg)
+![Linear Progress Animations](Progress-Animations-images/Progress-Animations-img4.jpeg)
 
 
 ## Animating Fill in Custom Object
 
-Set the property `ProgressType` to `CustomFill` for animating a custom object with fill animation. 
+Set the property `ProgressType` to `Custom` for animating a custom object with fill animation. 
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<notification:SfProgressBar x:Name="progressBar" ProgressType="CustomFill"  />
+<notification:SfProgressBar x:Name="progressBar" ProgressType="Custom"  />
 
 {% endhighlight %}
 
@@ -141,7 +141,7 @@ Set the property `ProgressType` to `CustomFill` for animating a custom object wi
 
 {% highlight C# %}
 
-progressBar.ProgressType = Syncfusion.UI.Xaml.Controls.Notification.ProgressTypes.CustomFill;
+progressBar.ProgressType = Syncfusion.UI.Xaml.Controls.Notification.ProgressTypes.Custom;
 
 progressBar.Value = 35.0;
 
@@ -149,16 +149,16 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img5.jpeg)
+![Animating Fill in Custom Object](Progress-Animations-images/Progress-Animations-img5.jpeg)
 
 
-The above code displays only the display content. The custom object can be set using `Template` and `FillPath` property. `FillPath` property holds the name of the element in template that is to be animated.
+The above code displays only the display content. The custom object can be set using `Template` and [FillPath](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfProgressBar.UWP~Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar~FillPath.html) property. `FillPath` property holds the name of the element in template that is to be animated.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<notification:SfProgressBar ProgressType="CustomFill" FillPath="CloudFillPath" Value="35">
+<notification:SfProgressBar ProgressType="Custom" FillPath="CloudFillPath" Value="35">
 
 <notification:SfProgressBar.Template>
 
@@ -186,6 +186,6 @@ The above code displays only the display content. The custom object can be set u
 
 {% endtabs %}
 
-![](Progress-Animations-images/Progress-Animations-img6.jpeg)
+![Animating Fill in Custom Object](Progress-Animations-images/Progress-Animations-img6.jpeg)
 
 
