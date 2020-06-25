@@ -135,4 +135,4 @@ maskedEdit.Watermark = "Type here";
 
 {% endtabs %}
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/MaskedEdit-GettingStarted_Sample1182969424).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/SfMaskedEdit_GettingStarted_UWP).

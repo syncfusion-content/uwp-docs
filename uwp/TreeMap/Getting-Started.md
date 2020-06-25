@@ -185,5 +185,5 @@ N>  The specified field must be available in each and every sub class (object) d
 
 ![Output image of SfTreeMap](GettingStarted_images/treemapimage.png)
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_Sample-45321827.zip).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/SfTreeMap_GettingStarted_UWP).
 
