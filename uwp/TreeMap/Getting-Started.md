@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started in TreeMap control
-description: getting started
+title: Getting Started with Syncfusion TreeMap control for UWP
+description: A quick tour to initial users on Syncfusion TreeMap control for UWP platform and also describes how to sizing the TreeMapItem.
 platform: UWP
 control: TreeMap
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfTreeMap
 
 TreeMap is a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. TreeMap also can use color to represent any number of values, but it is often used to categorize the various boxes within the treemap.
 
@@ -24,17 +24,17 @@ Namespace: Syncfusion.UI.Xaml.TreeMap
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
 
-![](GettingStarted_images/gettingstarted_1.png)
+![Image to choose SyncfusionControls for UWP XAML](GettingStarted_images/gettingstarted_1.png)
 
 
 ### Add SfTreeMap from Toolbox
 
 Drag and drop the SfTreeMap control from the Toolbox to your application.
 
-![](GettingStarted_images/treemapdesigner.png)
+![Image to drap and drop the SfTreeMap](GettingStarted_images/treemapdesigner.png)
 
 
-![](GettingStarted_images/addingreference.png)
+![Image to show the SyncfusionControls for UWP XAML reference is added to the application references](GettingStarted_images/addingreference.png)
 
 Now the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml .
 
@@ -183,5 +183,7 @@ N>  The specified field must be available in each and every sub class (object) d
 
 
 
-![](GettingStarted_images/treemapimage.png)
+![Output image of SfTreeMap](GettingStarted_images/treemapimage.png)
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/SfTreeMap_GettingStarted_UWP).
 
