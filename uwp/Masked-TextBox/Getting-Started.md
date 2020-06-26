@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfMaskedEdit for UWP
+title: Getting Started with Syncfusion MaskedEdit control for UWP platform.
 description: Guidelines to create Syncfusion SfMaskedEdit control for Universal Windows Platform project in Visual Studio 
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfMaskedEdit
 
 ## Assembly Deployment
 
@@ -134,3 +134,5 @@ maskedEdit.Watermark = "Type here";
 {% endhighlight %}
 
 {% endtabs %}
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/SfMaskedEdit_GettingStarted_UWP).
