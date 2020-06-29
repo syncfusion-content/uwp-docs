@@ -275,6 +275,42 @@ if (richTextBoxAdv.Selection.EditingContext.Type == EditingContextType.Text)
  }
 
 
+## How to delete the selected content
+ 
+The SfRichTextBoxAdv supports deleting the selected portion of the document either through UI command, keyboard or through supported APIs.
+
+The following code sample demonstrates how to delete the selected portion of the document using the DeleteKeyCommand.
+{% tabs %}
+{% highlight c# %}
+// Initializes the new binding for toggle delete.
+Binding binding = new Binding() { Source = richTextBoxAdv, Path = new PropertyPath("Selection.Delete"), Mode = BindingMode.TwoWay };
+
+// Binds the IsChecked property to Selection.Delete property of RichTextBoxAdv.
+toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding);
+
+{% tabs %}
+{% highlight VB %}
+' Initializes the new binding for toggle delete.
+Dim binding As New Binding() With { _
+	Key .Source = richTextBoxAdv, _
+	Key .Path = New PropertyPath("Selection.Delete"), _
+	Key .Mode = BindingMode.TwoWay _
+}
+
+' Binds the IsChecked property to Selection.Delete property of RichTextBoxAdv.
+toggleButton.SetBinding(ToggleButton.IsCheckedProperty, binding)
+
+
+The following code sample demonstrates how to delete the selected portion of the document using the Delete method. This method is valid only when the selection is non-empty, and it returns true if the selected content is deleted. Otherwise false.
+
+{% tabs %}
+{% highlight c# %}
+SfRichTextBoxAdv.Selection.Delete(position, position);
+
+{% tabs %}
+{% highlight VB %}
+SfRichTextBoxAdv.Selection.[Delete](position, position)
+
 {% endhighlight %}
 
 {% endtabs %}
