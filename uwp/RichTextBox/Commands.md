@@ -1,6 +1,6 @@
 ---
 title: Commands | UWP RichTextBox | Syncfusion
-description: This section illustrates the list of built-in commands supported in UWP RichTextBox control
+description: This section illustrates the list of built-in commands supported in UWP RichTextBox control (SfRichTextBoxAdv).
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
