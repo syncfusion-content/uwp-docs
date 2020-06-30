@@ -1,12 +1,12 @@
 ---
 title: Commands | UWP RichTextBox | Syncfusion
-description: This section illustrates the built-in commands of UWP RichTextBox control
+description: This section illustrates the list of built-in commands supported in UWP RichTextBox control
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: commands
 ---
-# This section illustrates the list of built-in commands supported in UWP RichTextBox control
+# Commands
 
 Commands are a way to handle user interface (UI) actions. They are a loosely coupled way to bind the UI to the logic that performs the action. The SfRichTextBoxAdv supports commands for mostly used operations which are classified below.
 
