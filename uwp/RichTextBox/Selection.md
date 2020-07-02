@@ -282,8 +282,8 @@ The SfRichTextBoxAdv supports deleting the selected portion of the document eith
 The following code sample demonstrates how to delete the selected portion of the document using the DeleteKeyCommand.
 {% tabs %}
 {% highlight Xaml %}
-<!-- Binds button to the DeleteKeyCommand -->
-<Button Content="Delete" Command="{Binding ElementName=richTextBoxAdv, Path=DeleteKeyCommand, Mode=TwoWay}" />
+<!-- Binds button to the DeleteCommand -->
+<Button Content="Delete" Command="{Binding ElementName=richTextBoxAdv, Path=DeleteCommand, Mode=TwoWay}" />
 
 
 The following code sample demonstrates how to delete the selected portion of the document using the Delete method. This method is valid only when the selection is non-empty, and it returns true if the selected content is deleted. Otherwise false.

@@ -386,7 +386,7 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 </tr>
 <tr>
 <td>
-<p>DeleteKeyCommand</p>
+<p>DeleteCommand</p>
 </td>
 <td>
 <p>Represents the command that performs action for "DELETE" key.</p>
