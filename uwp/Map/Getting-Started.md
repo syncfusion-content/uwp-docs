@@ -225,3 +225,5 @@ To load a shapefile and DBF file:
 
 {% endhighlight %}
 
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/SfMaps_GettingStarted_UWP)
+
