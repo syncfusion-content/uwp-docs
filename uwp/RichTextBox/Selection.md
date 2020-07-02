@@ -279,7 +279,7 @@ if (richTextBoxAdv.Selection.EditingContext.Type == EditingContextType.Text)
  
 The SfRichTextBoxAdv supports deleting the selected portion of the document either through UI command, keyboard or through supported APIs.
 
-The following code sample demonstrates how to delete the selected portion of the document using the DeleteKeyCommand.
+The following code sample demonstrates how to delete the selected portion of the document using the DeleteCommand.
 {% tabs %}
 {% highlight Xaml %}
 <!-- Binds button to the DeleteCommand -->
