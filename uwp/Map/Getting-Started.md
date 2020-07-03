@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started in SfMaps control
-description: Learn how to create a map control?
+title: Getting Started with Syncfusion Maps control for UWP platform.
+description: Guidelines to create Syncfusion Maps control for Universal Windows Platform project in Visual Studio. 
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfMaps
 
 ## Creating Maps for a Windows Store App
 
@@ -23,17 +23,17 @@ documentation: ug
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
 
-![](Getting-Started_images/gettingstarted_1.png)
+![Image to adding assembly reference of Syncfusion controls](Getting-Started_images/gettingstarted_1.png)
 
 ### Add SfMaps from Toolbox
 
 Drag and drop the SfMaps control from the Toolbox to your application.
 
-![](Getting-Started_images/mapdesigner.png)
+![Image to Drag and drop the SfMaps control from the Toolbox](Getting-Started_images/mapdesigner.png)
 
 Now the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![](Getting-Started_images/addingreference.png)
+![Image of Syncfusion controls referred in application references](Getting-Started_images/addingreference.png)
 
 {% highlight xml %}
 
@@ -167,7 +167,7 @@ In the above code sample, MapApp is the namespace, ShapeFile is the subfolder na
 
 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Maps getting started image](Getting-Started_images/Getting-Started_img1.png)
 
 ## Load Shapefile as Content File Instead of Embedded Resource
 
