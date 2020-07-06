@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing PDF in Syncfusion Essential UWP PDF viewer.
-description: Printing PDF in Syncfusion Essential UWP PDF viewer.
+description: Printing PDF in Syncfusion Essential UWP PDF viewer using the Print method or by using the Print command.
 platform: uwp
 control: PDF viewer
 documentation: ug
