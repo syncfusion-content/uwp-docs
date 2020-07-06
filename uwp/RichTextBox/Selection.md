@@ -275,6 +275,30 @@ if (richTextBoxAdv.Selection.EditingContext.Type == EditingContextType.Text)
  }
 
 
+## How to delete the selected content
+ 
+The SfRichTextBoxAdv supports deleting the selected portion of the document either through UI command, keyboard or through supported APIs.
+
+The following code sample demonstrates how to delete the selected portion of the document using the DeleteCommand.
+{% tabs %}
+{% highlight Xaml %}
+<!-- Binds button to the DeleteCommand -->
+<Button Content="Delete" Command="{Binding ElementName=richTextBoxAdv, Path=DeleteCommand, Mode=TwoWay}" />
+
+
+The following code sample demonstrates how to delete the selected portion of the document using the Delete method. This method is valid only when the selection is non-empty, and it returns true if the selected content is deleted. Otherwise false.
+
+{% tabs %}
+{% highlight c# %}
+//Deletes the selected content in SfRichTextBoxAdv control.
+bool isDeleted = richTextBoxAdv.Selection.Delete();
+
+{% tabs %}
+{% highlight VB %} 
+Dim isDeleted As Boolean = richTextBoxAdv.Selection.Delete()
+
 {% endhighlight %}
 
 {% endtabs %}
+
+N> This API is supported starting from release version v18.2.0.X.

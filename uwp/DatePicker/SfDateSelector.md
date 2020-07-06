@@ -14,7 +14,7 @@ The SfDateSelector control opens inside the drop-down popup.
 ![](Features_images/Features_img3.png)
 
 
-
+nsfneklfne
 
 
 The visual elements of the date selector can be customized using the SelectorStyle property.
