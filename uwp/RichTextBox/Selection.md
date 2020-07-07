@@ -274,6 +274,9 @@ if (richTextBoxAdv.Selection.EditingContext.Type == EditingContextType.Text)
  {
  }
 
+{% endhighlight %}
+
+{% endtabs %}
 
 ## How to delete the selected content
  
@@ -285,6 +288,9 @@ The following code sample demonstrates how to delete the selected portion of the
 <!-- Binds button to the DeleteCommand -->
 <Button Content="Delete" Command="{Binding ElementName=richTextBoxAdv, Path=DeleteCommand, Mode=TwoWay}" />
 
+{% endhighlight %}
+
+{% endtabs %}
 
 The following code sample demonstrates how to delete the selected portion of the document using the Delete method. This method is valid only when the selection is non-empty, and it returns true if the selected content is deleted. Otherwise false.
 
@@ -293,7 +299,7 @@ The following code sample demonstrates how to delete the selected portion of the
 //Deletes the selected content in SfRichTextBoxAdv control.
 bool isDeleted = richTextBoxAdv.Selection.Delete();
 
-{% tabs %}
+{% endhighlight %}
 {% highlight VB %} 
 Dim isDeleted As Boolean = richTextBoxAdv.Selection.Delete()
 
