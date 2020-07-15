@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing support in SfDataGrid.
-description: How to edit the data in each cell of SfDataGrid
+title: Editing in WPF DataGrid control | Syncfusion
+description: Learn about editing support to edit the cell values with an intuitive editors in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Editing 
+# Editing in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html) property.
 
@@ -40,7 +40,7 @@ dataGrid.Columns["OrderID"].AllowEditing = true;
 
 N> [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowEditing.html) takes higher priority than [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowEditing.html).
 
-![](Editing_images/Editing_img1.png)
+![UWP DataGrid Cell Editing](Editing_images/Editing_img1.png)
 
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~NavigationMode.html) to Cell to enable [CurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) navigation and editing.
 
@@ -84,11 +84,11 @@ dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 {% endtabs %}
 
 
-![](Editing_images/Editing_img2.png)
+![UWP DataGrid Cell Editing with EditorSelectionBehavior.SelectAll](Editing_images/Editing_img2.png)
 
 ## LostFocusBehavior
 
-While currentcell is in editing, when focus is moved from datagrid to other control, you can decide whether editing should be end or not by setting the [LostFocusBehavior](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~LostFocusBehavior.html) property. The default value is `LostFocusBehavior.EndEditCurrentCell`.
+While current cell is in editing, when focus is moved from datagrid to other control, you can decide whether editing should be end or not by setting the [LostFocusBehavior](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~LostFocusBehavior.html) property. The default value is `LostFocusBehavior.EndEditCurrentCell`.
 
 * **Default** – editing of current cell should not be ended when the datagrid loses focus.
 
@@ -577,7 +577,7 @@ public class CellStyleSelector:StyleSelector
 {% endtabs %}
 
 
-![](Editing_images/Editing_img3.png)
+![UWP DataGrid Changed the foreground of edited cells](Editing_images/Editing_img3.png)
 
 ### Allow editing when pressing minus key
 
