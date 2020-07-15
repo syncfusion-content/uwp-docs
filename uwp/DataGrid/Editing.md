@@ -86,7 +86,7 @@ dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 
 ![UWP DataGrid Cell Editing with EditorSelectionBehavior.SelectAll](Editing_images/Editing_img2.png)
 
-## LostFocusBehavior
+## Retain editing on lost focus
 
 While current cell is in editing, when focus is moved from datagrid to other control, you can decide whether editing should be end or not by setting the [LostFocusBehavior](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~LostFocusBehavior.html) property. The default value is `LostFocusBehavior.EndEditCurrentCell`.
 
