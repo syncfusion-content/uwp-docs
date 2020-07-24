@@ -1,12 +1,12 @@
 ---
 title: Commands | UWP RichTextBox | Syncfusion
-description: This section illustrates the built-in commands of UWP RichTextBox control
+description: This section illustrates the list of built-in commands supported in UWP RichTextBox control (SfRichTextBoxAdv).
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: commands
 ---
-# Commands
+# Commands in UWP RichTextBox (SfRichTextBoxAdv)
 
 Commands are a way to handle user interface (UI) actions. They are a loosely coupled way to bind the UI to the logic that performs the action. The SfRichTextBoxAdv supports commands for mostly used operations which are classified below.
 
@@ -379,6 +379,17 @@ The following table contains the list of available UI Commands in SfRichTextBoxA
 </td>
 <td>
 <p>Represents the command that deletes the selected comment.</p>
+</td>
+<td>
+<p>NA</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>DeleteCommand</p>
+</td>
+<td>
+<p>Represents the command that performs action for "DELETE" key.</p>
 </td>
 <td>
 <p>NA</p>
