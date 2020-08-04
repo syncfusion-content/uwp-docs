@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started | UWP | Syncfusion
-description: This section gives the detailed description on Getting Started with the UWP SfTimePicker control and its basic features.
+title: Getting Started with SfTimePicker | UWP | Syncfusion
+description: This section gives the detailed description on getting started with the UWP SfTimePicker control and its basic features.
 platform: uwp
 control: SfTimePicker
 documentation: ug
@@ -13,7 +13,6 @@ This section provides a quick overview for working with [SfTimePicker](https://h
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sftimepicker) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control in any application.
-
 
 ## Creating Application with SfTimePicker control
 In this walk through, user will create a UWP application that contains [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control.
@@ -50,7 +49,7 @@ In order to add [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfI
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns:Custom="using:Syncfusion.UI.Xaml.Controls.Input">
+xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
@@ -62,7 +61,7 @@ xmlns:Custom="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% highlight XAML %}
 
- <Custom:SfTimePicker x:Name="timePicker" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="50" />
+ <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="50" />
 
 {% endhighlight %}
 
@@ -113,5 +112,54 @@ Dim timePicker1 As SfTimePicker = New SfTimePicker() With {
 
 ![Adding control via XAML or code](GettingStarted_images/GettingStarted_img2.png)
 
+## Customizing the time format
 
+The format of time in [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) can be be customized by using [FormatString](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker~FormatString.html) property.
 
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTimePicker Height="30" Width="200" 
+                         HorizontalAlignment="Center" VerticalAlignment="Center"
+                         FormatString="HH:mm:ss" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+timePicker1.FormatString = "HH:mm:ss";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+timePicker1.FormatString = "HH:mm:ss"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![FormatString in SfTimePicker](GettingStarted_images/GettingStarted_img3.png)
+
+## Customize SfTimeSelector header
+
+You can customize the [SfTimeSelector](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimeSelector.html) in [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control using [SelectorStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker~SelectorStyle.html) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTimePicker Height="30" Width="200" 
+                         HorizontalAlignment="Center" VerticalAlignment="Center">
+    <syncfusion:SfTimePicker.SelectorStyle>
+        <Style TargetType="syncfusion:SfTimeSelector">
+            <Setter Property="Header" Value="Set your alarm" />
+        </Style>
+    </syncfusion:SfTimePicker.SelectorStyle>
+</syncfusion:SfTimePicker>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![customizing SfTimeSelector header](GettingStarted_images/GettingStarted_img4.png)
