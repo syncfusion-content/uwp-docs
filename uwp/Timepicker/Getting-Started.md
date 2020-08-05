@@ -36,7 +36,6 @@ In order to add [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfI
 1. Add the below required assembly references to the project,
 
     * Syncfusion.SfInput.UWP
-
     * Syncfusion.SfShared.UWP
 
 2. Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.XAML.
@@ -74,7 +73,6 @@ In order to add [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfI
 1. Add the below required assembly references to the project,
 
     * Syncfusion.SfInput.UWP
-
     * Syncfusion.SfShared.UWP
 
 2. Import SfTimePicker namespace **Syncfusion.UI.Xaml.Controls.Input**.
@@ -141,7 +139,7 @@ timePicker1.FormatString = "HH:mm:ss"
 
 ![FormatString in SfTimePicker](GettingStarted_images/GettingStarted_img3.png)
 
-## Customize SfTimeSelector header
+## Customize SfTimeSelector Header
 
 You can customize the [SfTimeSelector](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimeSelector.html) in [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control using [SelectorStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker~SelectorStyle.html) property.
 
