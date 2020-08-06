@@ -17,5 +17,6 @@ ImageEditor is a very handy tool; that is used to edit an image by annotating wi
 * Flip
 * Support to add shapes like Rectangle, Circle, Arrow, Text and Path.
 * Undo and Redo support
+* Zoom and pan operations.
 * Save the image to device
 * In-built Toolbar

@@ -1,22 +1,15 @@
 ---
-
-layout : post
-
-title : Zooming and Panning operations in Syncfusion SfImageEditor control in UWP.
-
-description : Learn how to Zoom and pan the image in ImageEditor for UWP.
-
-platform : UWP
-
-control : ImageEditor
-
-documentation : ug
-
+layout: post
+title: Zooming and Panning operations in Syncfusion SfImageEditor UWP
+description: Learn how to perform Zooming and panning in the image in SfImageEditor control for UWP platform
+platform: UWP
+control: ImageEditor
+documentation: ug
 ---
 
-# Zooming
+# Zooming in SfImageEditor
 
-The image editor control provides support for zooming and panning. You can Zoom in and Zoom out the image in image editor control.
+The image editor control provides support to zoom and pan actions over an image. You can Zoom in and Zoom out the image in image editor control.
 
 The following properties are used for zooming feature of the image editor control:
 
@@ -24,47 +17,42 @@ The following properties are used for zooming feature of the image editor contro
 
 * PanningMode
 
-### EnableZooming
+## Enable zooming
 
-You can enable or disable zooming by setting EnableZooming to either true or false. By default, EnableZooming is set to true.
+You can enable or disable the zooming functionality by setting the [`EnableZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfImageEditor.UWP~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~EnableZooming.html) value to true or false. By default, the `EnableZooming` value is set to true.
 
 {% tabs %}
 
 {% highlight XAML %}
-
-
-<imageeditor:SfImageEditor  EnableZooming="false"/>
-
-
+  
+    <imageeditor:SfImageEditor x:Name="editor" EnableZooming="false"/>
+     
 {% endhighlight %}
 
 {% highlight C# %}
-
-
-editor.EnableZooming = false;
-
+   
+     editor.EnableZooming = false;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## PanningMode
+## Panning mode
 
-Image editor control provides support for panning. Image editor allows you to pan the image with two fingers or single finger by setting the PanningMode in image editor.
+The image editor control provides support for panning and allows to pan the image with two fingers or single finger by setting the [`PanningMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfImageEditor.UWP~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~PanningMode.html).
 
-The following properties are used in the panning.
+The following properties are used for panning:
 
-* Single Finger – You can zoom or pan the image but it restrict the select or move the shapes.
+* `SingleFinger`: Zooms or pans the image with single finger, but shapes and text selection cannot be performed with this mode.
+* `TwoFinger`: Zooms or pans the image with two finger. The shapes and text selection can be performed with this mode.
 
-* Two Finger – You can zoom or pan the image and also select or move the shapes.
-
-By default, PanningMode value as TwoFinger.
+By default, the [`PanningMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfImageEditor.UWP~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~PanningMode.html) value is set to `TwoFinger`.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<imageeditor:SfImageEditor  EnableZooming="true" PanningMode="TwoFinger"/>
+    <imageeditor:SfImageEditor x:Name="editor" EnableZooming="true" PanningMode="TwoFinger"/>
 
 {% endhighlight %}
 
