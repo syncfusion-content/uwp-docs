@@ -230,7 +230,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-3. Add the TabControlViewModel in DataContext of MainPage and bind the the ItemSource proeprty of SfTabControl with collection in TabControlViewModel. Assign the name of property from Model class which will be used as tab item header using [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) property. 
+3. Add the TabControlViewModel in DataContext of MainPage and bind the the ItemSource property of SfTabControl with collection in TabControlViewModel. Assign the name of property from Model class which will be used as tab item header using [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) property. 
 4. Content of tab items can be set using [ContentTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl~ContentTemplate.html) property.
 
 {% tabs %}
