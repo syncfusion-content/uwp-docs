@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming and Panning operations in Syncfusion SfImageEditor UWP
-description: Learn how to perform Zooming and panning operation over an image in SfImageEditor control for UWP platform
+description: Learn how to perform zooming and panning operations over an image in SfImageEditor control for UWP platform
 platform: UWP
 control: SfImageEditor
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Zooming in SfImageEditor
 
-The image editor control provides support to zoom and pan actions over an image. You can Zoom in and Zoom out the image in image editor control.
+The image editor control provides support to zoom and pan actions over an image. You can zoom in and zoom out the image in image editor control.
 
 The following properties are used for zooming feature of the image editor control:
 

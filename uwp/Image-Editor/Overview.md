@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion SfImageEditor UWP
-description: This section explains about the Syncfusion SfImageEditor UWP control supports to perform over an image.
+description: This section explains about what are the key features available in Syncfusion SfImageEditor UWP platform.
 platform: UWP
 control: SfImageEditor
 documentation: ug
