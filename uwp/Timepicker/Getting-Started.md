@@ -1,25 +1,44 @@
 ---
 layout: post
-title: Getting Started of SfTimePicker control | UWP | Syncfusion
-description: Getting started section provide details about how to use the SfTimePicker control in the UWP application.
+title: Getting Started with SfTimePicker | UWP | Syncfusion
+description: This section gives the detailed description on getting started with the UWP SfTimePicker control and its basic features.
 platform: uwp
 control: SfTimePicker
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP SfTimePicker
 
-This section explains how to create the SfTimePicker control
+This section provides a quick overview for working with [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control.
 
-## Adding SfTimePicker control
+## Assembly deployment
+Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sftimepicker) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control in any application.
 
-Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
+## Creating Application with SfTimePicker control
+In this walk through, user will create a UWP application that contains [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control.
+1. [Creating project](#Creating-the-project)
+2. [Adding control via designer](#Adding-control-via-designer)
+3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
+4. [Adding control manually in C#](#Adding-control-manually-in-C#)
 
-* Syncfusion.SfInput.UWP
+## Creating project 
+Below section provides detailed information to create new project in Visual Studio to display [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control.
 
-* Syncfusion.SfShared.UWP
+## Adding control via designer
+The [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
 
-1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
+![Adding control via designer](GettingStarted_images/GettingStarted_img1.png)
+
+## Adding control manually in XAML
+
+In order to add [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control manually in XAML, do the below steps,
+
+1. Add the below required assembly references to the project,
+
+    * Syncfusion.SfInput.UWP
+    * Syncfusion.SfShared.UWP
+
+2. Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.XAML.
 
 {% tabs %}
 
@@ -29,36 +48,116 @@ Create a Universal Windows Platform project in Visual Studio and refer to the fo
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
 {% endtabs %}
 
-2.Now add the `SfTimePicker` control with a required optimal name using the included namespace
+3. Now add the [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control in MainPage.XAML.
 
 {% tabs %}
 
 {% highlight XAML %}
 
- <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center" Width="200" Margin="15"/>
+ <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="50" />
 
 {% endhighlight %}
 
+{% endtabs %}
+
+## Adding control manually in C#
+
+In order to add [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control manually in C#, do the below steps,
+
+1. Add the below required assembly references to the project,
+
+    * Syncfusion.SfInput.UWP
+    * Syncfusion.SfShared.UWP
+
+2. Import SfTimePicker namespace **Syncfusion.UI.Xaml.Controls.Input**.
+
+3. Create SfTimePicker control instance and add it to the page.
+
+
+{% tabs %}
+
 {% highlight C# %}
 
- SfTimePicker timePicker = new SfTimePicker();
+SfTimePicker timePicker1 = new SfTimePicker()
+{
+    Height = 50,
+    Width = 250,
+    HorizontalAlignment = HorizontalAlignment.Center,
+    VerticalAlignment = VerticalAlignment.Center
+};
 
 {% endhighlight %}
 
 {% highlight VB %}
 
- Dim timePicker As New SfTimePicker()
+Dim timePicker1 As SfTimePicker = New SfTimePicker() With {
+    .Height = 50,
+    .Width = 250,
+    .HorizontalAlignment = HorizontalAlignment.Center,
+    .VerticalAlignment = VerticalAlignment.Center
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
 
+![Adding control via XAML or code](GettingStarted_images/GettingStarted_img2.png)
 
+## Customizing the time format
 
+The format of time in [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) can be be customized by using [FormatString](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker~FormatString.html) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTimePicker Height="30" Width="200" 
+                         HorizontalAlignment="Center" VerticalAlignment="Center"
+                         FormatString="HH:mm:ss" />
+
+{% endhighlight %}
+{% highlight C# %}
+
+timePicker1.FormatString = "HH:mm:ss";
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+timePicker1.FormatString = "HH:mm:ss"
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![FormatString in SfTimePicker](GettingStarted_images/GettingStarted_img3.png)
+
+## Customize SfTimeSelector Header
+
+You can customize the [SfTimeSelector](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimeSelector.html) in [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control using [SelectorStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker~SelectorStyle.html) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+<syncfusion:SfTimePicker Height="30" Width="200" 
+                         HorizontalAlignment="Center" VerticalAlignment="Center">
+    <syncfusion:SfTimePicker.SelectorStyle>
+        <Style TargetType="syncfusion:SfTimeSelector">
+            <Setter Property="Header" Value="Set your alarm" />
+        </Style>
+    </syncfusion:SfTimePicker.SelectorStyle>
+</syncfusion:SfTimePicker>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![customizing SfTimeSelector header](GettingStarted_images/GettingStarted_img4.png)
