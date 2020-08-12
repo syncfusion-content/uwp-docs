@@ -119,7 +119,7 @@ sfTabControl1.Items.Add(tabitem3)
 
 ### Adding items by DataBinding
 
-In [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) tab items can be added by [ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) binding by which each tab item must have value for `Header` and `Content`.
+In [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) you can add tab items by [ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) binding in which each tab item must have value for `Header` and `Content`.
 
 1.Define the properties required in Model class.
 
@@ -165,21 +165,21 @@ public class TabControlViewModel : NotificationObject
 {		
     public TabControlViewModel()
     {
-	TabControlItems = new ObservableCollection<Person>();
-	TabControlItems.Add(new Person("James", "Assets/1.jpg"));
-    TabControlItems.Add(new Person("Peaches", "Assets/2.jpg"));
-    TabControlItems.Add(new Person("Linda", "Assets/3.jpg"));
-    TabControlItems.Add(new Person("Carl", "Assets/4.jpg"));
-    TabControlItems.Add(new Person("Niko", "Assets/5.jpg"));
-    TabControlItems.Add(new Person("Eric", "Assets/Employee2.png"));
-    TabControlItems.Add(new Person("Paul", "Assets/Employee4.png"));
-    TabControlItems.Add(new Person("Clara", "Assets/Employee6.png"));
-    TabControlItems.Add(new Person("Maria", "Assets/Employee11.png"));
-    TabControlItems.Add(new Person("Mark", "Assets/Employee13.png"));
-    TabControlItems.Add(new Person("Robin", "Assets/Employee16.png"));
-    TabControlItems.Add(new Person("Chris", "Assets/Employee21.png"));
-    TabControlItems.Add(new Person("James", "Assets/Employee23.png"));
-    TabControlItems.Add(new Person("Mathew", "Assets/Employee25.png"));
+	    TabControlItems = new ObservableCollection<Person>();
+	    TabControlItems.Add(new Person("James", "Assets/1.jpg"));
+        TabControlItems.Add(new Person("Peaches", "Assets/2.jpg"));
+        TabControlItems.Add(new Person("Linda", "Assets/3.jpg"));
+        TabControlItems.Add(new Person("Carl", "Assets/4.jpg"));
+        TabControlItems.Add(new Person("Niko", "Assets/5.jpg"));
+        TabControlItems.Add(new Person("Eric", "Assets/Employee2.png"));
+        TabControlItems.Add(new Person("Paul", "Assets/Employee4.png"));
+        TabControlItems.Add(new Person("Clara", "Assets/Employee6.png"));
+        TabControlItems.Add(new Person("Maria", "Assets/Employee11.png"));
+        TabControlItems.Add(new Person("Mark", "Assets/Employee13.png"));
+        TabControlItems.Add(new Person("Robin", "Assets/Employee16.png"));
+        TabControlItems.Add(new Person("Chris", "Assets/Employee21.png"));
+        TabControlItems.Add(new Person("James", "Assets/Employee23.png"));
+        TabControlItems.Add(new Person("Mathew", "Assets/Employee25.png"));
 	}
 
     private ObservableCollection<Person> items;
