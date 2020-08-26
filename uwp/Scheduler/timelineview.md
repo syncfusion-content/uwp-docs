@@ -137,6 +137,24 @@ Non-working hours can be disabled by setting [ShowNonWorkingHours](https://help.
 
 ![](TimeLine-View_images/WorkingHours.png)
 
+## CollapsedHours
+
+Using the [CollapsedHours](https://help.syncfusion.com/cr/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~CollapsedHours.html) property you can collapsed the hours in `TimeLineView` and `DayView` by adding the hours  in `CollapsedHour` collection.
+{% tabs %}
+{% highlight c# %}
+schedule.CollapsedHours.Add(new ScheduleCollapsedHour() 
+    { 
+        StartHour = 0, 
+        EndHour = 7, 
+    }); 
+schedule.CollapsedHours.Add(new ScheduleCollapsedHour() 
+    { 
+        StartHour = 20, 
+        EndHour = 24, 
+    }); 
+{% endhighlight %}   
+{% endtabs %}
+
 ## Timeslot Appearance
 You can customize the default timeslot appearance in timeline view by changing its stoke dash array by using [MajorTickStrokeDashArray](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStrokeDashArray.html) and [MinorTickStrokeDashArray](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStrokeDashArray.html) properties of `SfSchedule`. And, you can change the color by using [MajorTickStroke](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~MajorTickStroke.html) and [MinorTickStroke](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~MinorTickStroke.html) properties of `SfSchedule` control.
 
