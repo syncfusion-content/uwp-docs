@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timeline View
+title: Timeline view scheduler | UWP | Syncfusion
 description: The scheduler timeline view displays the dates in a horizontal time axis with desired days count, displays events accurately across the time slots.
 platform: uwp
 control: SfSchedule
