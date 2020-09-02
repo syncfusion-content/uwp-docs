@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Data Manipulation
+# Data Manipulation in UWP DataGrid (SfDataGrid)
 
 SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~LiveDataUpdateMode.html) property.
  
