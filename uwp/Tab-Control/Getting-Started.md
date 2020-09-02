@@ -119,7 +119,7 @@ sfTabControl1.Items.Add(tabitem3)
 
 ### Adding items by DataBinding
 
-In [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) you can add tab items by [ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) binding in which each tab item must have value for `Header` and `Content`.
+In [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) you can add tab items by [ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) in which each tab item must have property for `Header` and `Content`.
 
 1.Define the properties required in Model class.
 
@@ -230,7 +230,7 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-3. Add the TabControlViewModel in DataContext of MainPage and bind the the ItemSource property of SfTabControl with collection in TabControlViewModel. Assign the name of property from Model class which will be used as tab item header using [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) property. 
+3. Add the TabControlViewModel in DataContext of MainPage and bind the the ItemSource property of SfTabControl with collection in TabControlViewModel. Bind the property from Model class which will be used as tab item header to [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) property. 
 4. Content of tab items can be set using [ContentTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl~ContentTemplate.html) property.
 
 {% tabs %}
