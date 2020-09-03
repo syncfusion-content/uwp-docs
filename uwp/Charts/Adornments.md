@@ -71,9 +71,9 @@ The following topics discuss briefly about various adornment customization.
 
 ## Marker
 
-To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowMarker.html) property as True. By default, there is no symbol displayed, you have to add the desired symbol using [`Symbol`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Symbol.html) property.
+To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property as True. By default, there is no symbol displayed, you have to add the desired symbol using [`Symbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) property.
 
-The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
+The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
 
 {% tabs %}
 
@@ -138,7 +138,7 @@ chart.Series.Add(series);
 
 SfChart provide support more customization for markers in adornments. 
 
-You can customize the marker size using [`SymbolHeight`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolHeight.html) and [`SymbolWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolWidth.html) property. Also the marker fill color and stroke can be customized using [`SymbolInterior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolInterior.html) and [`SymbolStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolStroke.html).
+You can customize the marker size using [`SymbolHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolHeight) and [`SymbolWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolWidth) property. Also the marker fill color and stroke can be customized using [`SymbolInterior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolInterior) and [`SymbolStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke).
 
 {% tabs %}
 
@@ -215,7 +215,7 @@ chart.Series.Add(series);
 
 **Custom Template**
 
-You can also provide the template for the symbol using [`SymbolTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SymbolTemplate.html) property as in the below code snippet.
+You can also provide the template for the symbol using [`SymbolTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate) property as in the below code snippet.
 
 {% tabs %}
 
@@ -345,7 +345,7 @@ chart.Series.Add(series);
 
 ## Label
 
-Label represents the text in the adornments which helps to identify the segment based on it y or x value. You can enable the label by setting [`ShowLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowLabel.html) property as true as in the below code example.
+Label represents the text in the adornments which helps to identify the segment based on it y or x value. You can enable the label by setting [`ShowLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property as true as in the below code example.
 
 {% tabs %}
 
@@ -410,7 +410,7 @@ chart.Series.Add(series);
 
 ### Defining the Label Content
 
-SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelContent.html) property. This property allows you to define the value to be displayed as adornment label.
+SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property. This property allows you to define the value to be displayed as adornment label.
 
 **XValue**
 
@@ -662,11 +662,11 @@ chart.Series.Add(series);
 
 ![Adornments label content customization support in UWP Chart](Adornments_images/label_5.png)
 
-N> If you are having DateTimeAxis then the corresponding date time value will be displayed as [`LabelContent`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelContent.html). In case of category or numerical axis the value will be converted to OADate.
+N> If you are having DateTimeAxis then the corresponding date time value will be displayed as [`LabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelContent.html). In case of category or numerical axis the value will be converted to OADate.
 
 **LabelContentPath**
 
-LabelContentPath property by default displays the y value. If you need to specify the value other than y value you can define the [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelTemplate.html) where you can retrieve the adornment value of every segment. 
+LabelContentPath property by default displays the y value. If you need to specify the value other than y value you can define the [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) where you can retrieve the adornment value of every segment. 
 
 The following code example demonstrates displaying the string value which is taken as x values.
 
@@ -744,7 +744,7 @@ return value;
 
 **Label Rotation**
 
-[`LabelRotationAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelRotationAngle.html) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
+[`LabelRotationAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelRotationAngle) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
 
 {% tabs %}
 
@@ -783,13 +783,13 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 The following properties are used to customize the adornment label.
 
-* [`BorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderBrush.html)
-* [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~BorderThickness.html)
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Margin.html)
-* [`FontStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontStyle.html)
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontSize.html)
-* [`Foreground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~Foreground.html)
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~FontFamily.html)
+* [`BorderBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_BorderBrush)
+* [`BorderThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_BorderThickness)
+* [`Margin`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Margin)
+* [`FontStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_FontStyle)
+* [`FontSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_FontSize)
+* [`Foreground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Foreground)
+* [`FontFamily`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_FontFamily)
 
 The following code example demonstrates the customization of label using the above properties:
 
@@ -876,7 +876,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 ## Applying Series Brush
 
-[`UseSeriesPalette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~UseSeriesPalette.html) property is used to set the interior of the series to the adornment background. 
+[`UseSeriesPalette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_UseSeriesPalette) property is used to set the interior of the series to the adornment background. 
 
 For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior color will be reflected in adornment background.
 
@@ -920,7 +920,7 @@ series.AdornmentsInfo = adornmentInfo;
 ![Series brush for adornments background support in UWP Chart](Adornments_images/series_palette.png)
 
 
-The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelTemplate.html) property as in the below code example:
+The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property as in the below code example:
 
 {% highlight xaml %}
 
@@ -1001,7 +1001,7 @@ YBindingPath="Year2011">
 
 ## Label Format
 
-[`SegmentLabelFormat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~SegmentLabelFormat.html) property allows you to provide formatting for the labels.
+[`SegmentLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelFormat) property allows you to provide formatting for the labels.
 
 In the following image, you can see the decimal position will be rounded off to two digits by default.
 
@@ -1056,7 +1056,7 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 ## Adding Connector Line to Adornments
 
-You can add connector line for the adornments using [`ShowConnectorLine`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ShowConnectorLine.html) property. Also this connector line can be customized using [`ConnectorHeight`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorHeight.html), [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorRotationAngle.html) properties.
+You can add connector line for the adornments using [`ShowConnectorLine`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowConnectorLine) property. Also this connector line can be customized using [`ConnectorHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorHeight), [`ConnectorLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorRotationAngle) properties.
 
 The following code example shows the customization option for connector line:
 
@@ -1107,7 +1107,7 @@ You can customize the connector line height and also line can be rotated to any 
 
 ### Connector Line Style
 
-You can define the style for the connector line using [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~ConnectorLineStyle.html) properties.
+You can define the style for the connector line using [`ConnectorLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) properties.
 
 {% tabs %}
 
@@ -1179,7 +1179,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 ### Connector Type
 
-[`ConnectorType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~ConnectorType.html) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
+[`ConnectorType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
 
 **Line**
 
@@ -1256,11 +1256,11 @@ chart.Series.Add(series);
 
 ## Positioning the Adornments
 
-The positioning of adornments inside the series is defined using [`AdornmentPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~AdornmentsPosition.html) property. 
+The positioning of adornments inside the series is defined using [`AdornmentPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
 
-* [`Top`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the top edge point of a chart segment.
-* [`Bottom`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the bottom edge point of a chart segment.
-* [`TopAndBottom`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the center point of a chart segment.
+* [`Top`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the top edge point of a chart segment.
+* [`Bottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the bottom edge point of a chart segment.
+* [`TopAndBottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the center point of a chart segment.
 
 N> This behavior varies based on the type chart series.
 
@@ -1303,7 +1303,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 ![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_1.png)
 
-Also you can define the label alignment using  [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~VerticalAlignment.html) properties and the following code example demonstrates the labels positioned using horizontal and vertical alignment.
+Also you can define the label alignment using  [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_VerticalAlignment) properties and the following code example demonstrates the labels positioned using horizontal and vertical alignment.
 
 {% tabs %}
 
@@ -1344,15 +1344,15 @@ series.AdornmentsInfo = adornmentInfo;
 
 ### Advanced Positioning
 
-Other than the above positioning options, SfChart providing additional customization option to position the adornments smartly based on series types using [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase~LabelPosition.html) property.
+Other than the above positioning options, SfChart providing additional customization option to position the adornments smartly based on series types using [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property.
 
 The following are the values for this property: 
 
-* [`Default`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Auto`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Inner`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Outer`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Center`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Default`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Inner`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Outer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
 
 The following section shows few examples for this LabelPosition behavior with respect to the series.
 
@@ -1634,7 +1634,7 @@ chart.Series.Add(series);
 
 ## Smart Labels for Accumulation Series
 
-When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EnableSmartLabels.html) property.
+When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
 
 The following code example demonstrates the EnableSmartLabels property:
 

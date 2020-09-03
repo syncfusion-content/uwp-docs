@@ -10,7 +10,7 @@ documentation: ug
 # User Interactions
 
 ## Change the default context menu
-When tapping on the schedule or appointment, our built-in context menu will be opened and triggering [ContextMenuOpening](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.ContextMenuOpeningEventArgs.html) event. You can create your own context menu by setting `e.Cancel` to true in the `ContextMenuOpening` event. It will avoid to open the default context menu. 
+When tapping on the schedule or appointment, our built-in context menu will be opened and triggering [ContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ContextMenuOpeningEventArgs.html) event. You can create your own context menu by setting `e.Cancel` to true in the `ContextMenuOpening` event. It will avoid to open the default context menu. 
 
 
 {% highlight c# %} 
@@ -25,7 +25,7 @@ When tapping on the schedule or appointment, our built-in context menu will be o
 
 
 ## Change the default editor
-[AppointmentEditorOpening](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) event occurs when opening the appointment editor by selecting edit option in the context menu or double tapping the appointment. You can create your own appointment editor by setting `e.Cancel` to true in the `AppointmentEditorOpening` event. It will avoid to open the default editor. 
+[AppointmentEditorOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) event occurs when opening the appointment editor by selecting edit option in the context menu or double tapping the appointment. You can create your own appointment editor by setting `e.Cancel` to true in the `AppointmentEditorOpening` event. It will avoid to open the default editor. 
 
 {% highlight c# %} 
 
@@ -43,7 +43,7 @@ You can use the Context menu to easily drag and drop the appointments from one t
 
 ### Appointment Start Dragging
 
-The event will be triggered when appointment is started to dragging. The [AppointmentStartDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs.html) contains the following properties.
+The event will be triggered when appointment is started to dragging. The [AppointmentStartDraggingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs.html) contains the following properties.
 
 *	**Appointment**- Gets the dragging appointment, this argument is of type object.
 *	**Cancel**- Set this Boolean property to True to disable the drag and drop option.
@@ -62,7 +62,7 @@ The event will be triggered when appointment is started to dragging. The [Appoin
 
 ### Appointment End Dragging
 
-The event will be triggered when appointment is dropping. The [AppointmentEndDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html) contains the following properties.
+The event will be triggered when appointment is dropping. The [AppointmentEndDraggingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.AppointmentEndDraggingEventArgs.html) contains the following properties.
 
 *	**Appointment**- Gets the dragging appointment, this argument is of type object.
 *	**From** – Get the appointment initial dragging time.
@@ -84,7 +84,7 @@ The event will be triggered when appointment is dropping. The [AppointmentEndDra
 
 ### Appointment Dragging
 
-The event will be triggered when drag and drop the appointment. The [AppointmentDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html) contains the following properties.
+The event will be triggered when drag and drop the appointment. The [AppointmentDraggingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.AppointmentDraggingEventArgs.html) contains the following properties.
 
 *	**Appointment**- Gets the dragging appointment, this argument is of type object.
 *	**From** – Get the appointment initial dragging time.
@@ -110,7 +110,7 @@ You can use the Context menu to resizing a Selected Appointment as per required 
 
 ### Appointment Start Resizing
 
-The event will be triggered when appointment is started to resizing. The [AppointmentStartResizingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html) contains the following properties.
+The event will be triggered when appointment is started to resizing. The [AppointmentStartResizingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.AppointmentStartResizingEventArgs.html) contains the following properties.
 
 *	**Appointment**- Gets the resizing appointment, this argument is of type object.
 *	**Cancel**- Set this Boolean property to True to disable the resize option.
@@ -129,7 +129,7 @@ The event will be triggered when appointment is started to resizing. The [Appoin
 
 ### Appointment End Resizing
 
-The event will be triggered when finishing the appointment resizing. The [AppointmentEndResizingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html) contains the following properties.
+The event will be triggered when finishing the appointment resizing. The [AppointmentEndResizingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.AppointmentEndResizingEventArgs.html) contains the following properties.
 
 *	**Appointment**- Gets the resizing appointment, this argument is of type object.
 *	**From** - Get the appointment start resizing time.
@@ -151,7 +151,7 @@ The event will be triggered when finishing the appointment resizing. The [Appoin
 
 ### Appointment Resizing
 
-The event will be triggered when resizing the appointment. The [AppointmentResizingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html) contains the following properties.
+The event will be triggered when resizing the appointment. The [AppointmentResizingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.AppointmentResizingEventArgs.html) contains the following properties.
 
 *	**Appointment**- Gets the resizing appointment, this argument is of type object.
 *	**From** - Get the appointment start dragging time.

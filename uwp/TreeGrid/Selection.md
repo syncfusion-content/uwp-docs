@@ -13,11 +13,11 @@ SfTreeGrid allows you select one or more rows.
 
 ## Current cell navigation
 
-Keyboard navigation through the rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~NavigationMode.html) property. [NavigationMode.Cell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.NavigationMode.html) allows you navigate between the cells in a row and between rows. [NavigationMode.Row](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.NavigationMode.html) allows you navigate only between rows.
+Keyboard navigation through the rows is determined based on the [NavigationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_NavigationMode) property. [NavigationMode.Cell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.NavigationMode.html) allows you navigate between the cells in a row and between rows. [NavigationMode.Row](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.NavigationMode.html) allows you navigate only between rows.
 
 ## Selection modes
 
-The [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) property define the behavior of selection in tree grid. If `SelectionMode` is `Single`, you can select a single row, and if the `SelectionMode` is `Extended` or `Multiple`, you can select multiple rows. If you want to disable the selection, set `SelectionMode` to `None`.
+The [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property define the behavior of selection in tree grid. If `SelectionMode` is `Single`, you can select a single row, and if the `SelectionMode` is `Extended` or `Multiple`, you can select multiple rows. If you want to disable the selection, set `SelectionMode` to `None`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,11 +38,11 @@ The [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfG
 
 ## Disable selection for rows and columns
 
-You can disable selection and navigation on a particular column by setting the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~AllowFocus.html) property. You can disable selection on a particular row or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellActivating_EV.html) event.
+You can disable selection and navigation on a particular column by setting the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowFocus) property. You can disable selection on a particular row or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
 
 ## Multiple row selection
 
-The tree grid allows you select multiple rows by setting the [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) property to [Extended](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html) or [Multiple](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), where you can select multiple rows by dragging the mouse on tree grid and using the key modifiers.
+The tree grid allows you select multiple rows by setting the [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to [Extended](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html) or [Multiple](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), where you can select multiple rows by dragging the mouse on tree grid and using the key modifiers.
 
 When using Extended, you can select multiple rows by pressing the key modifiers Ctrl and Shift.
 
@@ -63,29 +63,29 @@ When using Extended, you can select multiple rows by pressing the key modifiers 
 
 ![Multiple rows selected in UWP treegrid](Selection_images/Selection_img2.jpeg)
 
-N> When [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) is [Multiple](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select or deselect multiple rows by clicking the respective rows. In multiple selection, pressing navigation keys moves only the current cell, and you can select or deselect by pressing the <kbd>space</kbd> key.
+N> When [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is [Multiple](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select or deselect multiple rows by clicking the respective rows. In multiple selection, pressing navigation keys moves only the current cell, and you can select or deselect by pressing the <kbd>space</kbd> key.
 
 ## Get selected rows
 
-The [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property returns the data object of the selected row, and the [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedIndex.html) property returns the index of the SelectedItem in SfTreeGrid. SelectedItem denotes the first selected row in multiple selection.
+The [SelectedItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property returns the data object of the selected row, and the [SelectedIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedIndex) property returns the index of the SelectedItem in SfTreeGrid. SelectedItem denotes the first selected row in multiple selection.
 
-The [CurrentItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentItemProperty.html) returns the data object that currently has focus, and the [CurrentColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentColumn.html) denotes the [GridColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html) that currently has focus. 
+The [CurrentItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentItemProperty) returns the data object that currently has focus, and the [CurrentColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentColumn) denotes the [GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html) that currently has focus. 
 
-The [CurrentCellInfo](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellInfo.html) returns an instance [GridCellInfo](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCellInfo.html), which contains the information about the cell that currently has focus.
+The [CurrentCellInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellInfo) returns an instance [GridCellInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCellInfo.html), which contains the information about the cell that currently has focus.
 
 ### Row selection
 
-You can get all the selected records using the [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) property, and you can also get all the selected rows' information through [SfTreeGrid.SelectionController.SelectedRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridBaseSelectionController~SelectedRows.html), which is a collection of [TreeGridRowInfo](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowInfo.html).
+You can get all the selected records using the [SelectedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems) property, and you can also get all the selected rows' information through [SfTreeGrid.SelectionController.SelectedRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridBaseSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridBaseSelectionController_SelectedRows), which is a collection of [TreeGridRowInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowInfo.html).
 
 ### CurrentItem Vs SelectedItem
 
-Both [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) and [CurrentItem ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentItem.html) return the same data object when a single row is selected in tree grid. When you select more than one rows or cells, the record that had been selected initially is maintained in SelectedItem, and the record that currently has focus is maintained in CurrentItem.
+Both [SelectedItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) and [CurrentItem ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentItem) return the same data object when a single row is selected in tree grid. When you select more than one rows or cells, the record that had been selected initially is maintained in SelectedItem, and the record that currently has focus is maintained in CurrentItem.
 
 ## Programmatic selection
 
 ### Process selection using properties
 
-You can select a single row by setting the [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property or [SelectedIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedIndex.html) property.
+You can select a single row by setting the [SelectedItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property or [SelectedIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedIndex) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -101,7 +101,7 @@ this.treeGrid.SelectedItem = node.Item;
 
 {% endhighlight %}
 {% endtabs %}
-In row selection, you can select multiple rows by adding data objects to the [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) property.
+In row selection, you can select multiple rows by adding data objects to the [SelectedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems) property.
 {% tabs %}
 {% highlight c# %}
 var viewModel = this.treeGrid.DataContext as ViewModel;
@@ -118,7 +118,7 @@ foreach (var order in viewModel.PersonDetails)
 
 ### Process selection using methods
 
-You can select a range of rows using the [SelectRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridBaseSelectionController~SelectedRows.html) method in row selection.
+You can select a range of rows using the [SelectRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridBaseSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridBaseSelectionController_SelectedRows) method in row selection.
 
 {% tabs %}
 {% highlight c# %}
@@ -132,9 +132,9 @@ this.treeGrid.SelectRows(3, 7);
 
 ### Process current cell
 
-When you set [CurrentItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentItemProperty.html) to a particular record, the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) will be moved to the corresponding record. When [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) is [Multiple](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html) or [Extended](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), the selection will added to the particular record item. When the SelectionMode is [Single](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), only one cell will be selected.
+When you set [CurrentItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentItemProperty) to a particular record, the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) will be moved to the corresponding record. When [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is [Multiple](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html) or [Extended](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), the selection will added to the particular record item. When the SelectionMode is [Single](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), only one cell will be selected.
 
-You can move the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) to a particular row or column index using the [MoveCurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController~MoveCurrentCell.html) method.
+You can move the [CurrentCell](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridCurrentCellManager~CurrentCell.html) to a particular row or column index using the [MoveCurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -146,7 +146,7 @@ this.treeGrid.SelectionController.MoveCurrentCell(new RowColumnIndex(3, 2), fals
 
 ### Clear selection
 
-You can clear the selections using the [ClearSelections](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController~ClearSelections.html) method. In row selection, you can remove the selection by setting null to the [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) or clearing the [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) property.
+You can clear the selections using the [ClearSelections](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_ClearSelections_System_Boolean_) method. In row selection, you can remove the selection by setting null to the [SelectedItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) or clearing the [SelectedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -160,7 +160,7 @@ this.treeGrid.SelectionController.ClearSelections(true);
 
 ### Automatic scrolling on drag selection
 
-SfTreeGrid allows scrolling rows and columns automatically when you try to perform the drag selection like in Excel. You can enable or disable auto scrolling by setting the [AutoScroller.AutoScrolling](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~AutoScroller.html) property.
+SfTreeGrid allows scrolling rows and columns automatically when you try to perform the drag selection like in Excel. You can enable or disable auto scrolling by setting the [AutoScroller.AutoScrolling](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoScroller) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -172,7 +172,7 @@ this.treeGrid.AutoScroller.AutoScrolling = AutoScrollOrientation.Both;
 
 ### Scroll to a particular row and column index
 
-You can scroll programmatically to a particular cell using the [ScrollInView](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ScrollInView.html) method by passing row and column indexes.
+You can scroll programmatically to a particular cell using the [ScrollInView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ScrollInView_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_) method by passing row and column indexes.
 
 {% tabs %}
 {% highlight c# %}
@@ -393,7 +393,7 @@ All rows or cells will be selected.
 
 ### Shift key combinations
 
-When [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) is set to [Extended](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select multiple rows using the navigation keys along with the Shift key. Before starting navigation, the current cell will be marked as a pressed cell, and the selection will be done in all rows between the pressed cell and current cell.
+When [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is set to [Extended](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select multiple rows using the navigation keys along with the Shift key. Before starting navigation, the current cell will be marked as a pressed cell, and the selection will be done in all rows between the pressed cell and current cell.
 
 <table>
 <tr>
@@ -480,9 +480,9 @@ When [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Sf
 
 ### Mouse behavior
 
-You can enable/disable the selection when the mouse button is in pressed state by setting the [AllowSelectionOnPointerPressed](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowSelectionOnPointerPressed.html) property.
+You can enable/disable the selection when the mouse button is in pressed state by setting the [AllowSelectionOnPointerPressed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSelectionOnPointerPressed) property.
 
-When [SelectionMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectionMode.html) is set to [Extended](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select multiple rows by clicking any cell along with `Ctrl` and `Shift` keys. When you click a cell along with `Ctrl` key, you can select or deselect a particular row. When you click a cell along with `Shift` key, you can select a range row from the pressed cell to the current cell.
+When [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is set to [Extended](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), you can select multiple rows by clicking any cell along with `Ctrl` and `Shift` keys. When you click a cell along with `Ctrl` key, you can select or deselect a particular row. When you click a cell along with `Shift` key, you can select a range row from the pressed cell to the current cell.
 
 ### Customize mouse and keyboard behaviors
 
@@ -492,11 +492,11 @@ You can customize the mouse and keyboard behaviors by overriding the selection c
 
 ### CurrentCellActivating
 
-[ActivationTrigger](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~ActivationTrigger.html): Returns the reason for moving the current cell.
+[ActivationTrigger](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellActivatingEventArgs_ActivationTrigger): Returns the reason for moving the current cell.
 
-[CurrentRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~CurrentRowColumnIndex.html): RowColumnIndex of the cell where the current cell needs to move.
+[CurrentRowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellActivatingEventArgs_CurrentRowColumnIndex): RowColumnIndex of the cell where the current cell needs to move.
 
-[PreviousRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs~PreviousRowColumnIndex.html): RowColumnIndex of the cell from where the current cell moved.
+[PreviousRowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellActivatingEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellActivatingEventArgs_PreviousRowColumnIndex): RowColumnIndex of the cell from where the current cell moved.
 
 {% tabs %}
 {% highlight xaml %}
@@ -521,7 +521,7 @@ private void TreeGrid_CurrentCellActivating(object sender, Syncfusion.UI.Xaml.Gr
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellActivating_EV.html) to true.
+You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) to true.
 
 {% tabs %}
 {% highlight c# %}
@@ -544,13 +544,13 @@ private void TreeGrid_CurrentCellActivating(object sender, Syncfusion.UI.Xaml.Gr
 
 ### CurrentCellActivated
 
-The [CurrentCellActivated](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CurrentCellActivated_EV.html) event occurs after the current cell has been moved to the corresponding cell. [CurrentCellActivatedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs.html) has the following members, which provide information to the CurrentCellActivated event.
+The [CurrentCellActivated](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs after the current cell has been moved to the corresponding cell. [CurrentCellActivatedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs.html) has the following members, which provide information to the CurrentCellActivated event.
 
-[ActivationTrigger](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~ActivationTrigger.html): Returns the reason of the current cell movement.
+[ActivationTrigger](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellActivatedEventArgs_ActivationTrigger): Returns the reason of the current cell movement.
 
-[CurrentRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~CurrentRowColumnIndex.html): RowColumnIndex of the cell where the current cell moves.
+[CurrentRowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellActivatedEventArgs_CurrentRowColumnIndex): RowColumnIndex of the cell where the current cell moves.
 
-[PreviousRowColumnIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs~PreviousRowColumnIndex.html): RowColumnIndex of the cell where the current cell moved.
+[PreviousRowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellActivatedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellActivatedEventArgs_PreviousRowColumnIndex): RowColumnIndex of the cell where the current cell moved.
 
 {% tabs %}
 {% highlight xaml %}
@@ -577,11 +577,11 @@ private void TreeGrid_CurrentCellActivated(object sender, Syncfusion.UI.Xaml.Gri
 
 ### SelectionChanging
 
-The [SelectionChanging](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SelectionChanging_EV.html) event occurs before processing the selection to a particular row or cell. This event is triggered only to the keyboard and mouse interactions. [GridSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs.html) has the following members, which provide information to the `SelectionChanging` event.
+The [SelectionChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs before processing the selection to a particular row or cell. This event is triggered only to the keyboard and mouse interactions. [GridSelectionChangingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs.html) has the following members, which provide information to the `SelectionChanging` event.
 
-[AddedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs~AddedItems.html): Collection of GridCellInfo where selection is going to be processed.
+[AddedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSelectionChangingEventArgs_AddedItems): Collection of GridCellInfo where selection is going to be processed.
 
-[RemovedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs~RemovedItems.html): Collection of GridRowInfo where the selection is going  to be removed.
+[RemovedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSelectionChangingEventArgs_RemovedItems): Collection of GridRowInfo where the selection is going  to be removed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -608,11 +608,11 @@ private void TreeGrid_SelectionChanging(object sender, Syncfusion.UI.Xaml.Grid.G
 
 ### SelectionChanged
 
-The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SelectionChanged_EV.html) event occurs after the selection process has been completed for a particular row or cell in tree grid. [GridSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs.html) has the following members, which provide information to the `SelectionChanged` event:
+The [SelectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs after the selection process has been completed for a particular row or cell in tree grid. [GridSelectionChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs.html) has the following members, which provide information to the `SelectionChanged` event:
 
-[AddedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs~AddedItems.html): Collection of GridRowInfo where selection has been processed.
+[AddedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSelectionChangedEventArgs_AddedItems): Collection of GridRowInfo where selection has been processed.
 
-[RemovedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs~RemovedItems.html): Collection of `GridRowInfo` where selection has been removed.
+[RemovedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSelectionChangedEventArgs_RemovedItems): Collection of `GridRowInfo` where selection has been removed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -641,7 +641,7 @@ private void TreeGrid_SelectionChanged(object sender, Syncfusion.UI.Xaml.Grid.Gr
 
 ### Change selection background and foreground
 
-You can change the selection background and foreground using the [SelectionBackGround](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SelectionBackgroundProperty.html) and [SelectionForeGround](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SelectionForegroundProperty.html) properties.
+You can change the selection background and foreground using the [SelectionBackGround](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionBackgroundProperty) and [SelectionForeGround](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionForegroundProperty) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -663,7 +663,7 @@ You can change the selection background and foreground using the [SelectionBackG
 
 ### Change current cell border style
 
-You can change the current cell's border thickness and border color using the [CurrentCellBorderThickness](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~CurrentCellBorderThickness.html) and [CurrentCellBorderBrush](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~CurrentCellBorderBrush.html) properties.
+You can change the current cell's border thickness and border color using the [CurrentCellBorderThickness](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_CurrentCellBorderThickness) and [CurrentCellBorderBrush](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_CurrentCellBorderBrush) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -776,9 +776,9 @@ You can customize the row selection by editing the control template of TreeGridR
 
 ## Customize selection behaviors
 
-The tree grid processes the selection operations in selection controller. [GridSelectionController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html) processes selection operations when `SelectionUnit` is `Row`.
+The tree grid processes the selection operations in selection controller. [GridSelectionController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html) processes selection operations when `SelectionUnit` is `Row`.
 
-You can customize the default row selection behaviors by overriding the [GridSelectionController](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridSelectionController.html) class and set it to [SfTreeGrid.SelectionController](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~SelectionController.html).
+You can customize the default row selection behaviors by overriding the [GridSelectionController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionController.html) class and set it to [SfTreeGrid.SelectionController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionController).
 
 {% tabs %}
 {% highlight c# %}
@@ -795,9 +795,9 @@ public class GridSelectionControllerExt : TreeGridRowSelectionController
 
 ### Scroll and select the record programmatically
 
-You can scroll to a record programmatically using the [ScrollInView](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~ScrollInView.html) method by passing the row index of the record. You can get the row index of the record by using the [ResolveToRowIndex](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver~ResolveToRowIndex.html) extension method present in `Syncfusion.UI.Xaml.TreeGrid.Helpers`.
+You can scroll to a record programmatically using the [ScrollInView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ScrollInView_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_) method by passing the row index of the record. You can get the row index of the record by using the [ResolveToRowIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridIndexResolver.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridIndexResolver_ResolveToRowIndex_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_TreeNode_) extension method present in `Syncfusion.UI.Xaml.TreeGrid.Helpers`.
 
-You can select a record programmatically by setting the [SelectedItem](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItem.html) property in tree grid.
+You can select a record programmatically by setting the [SelectedItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property in tree grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -818,7 +818,7 @@ You can download the [sample](https://github.com/SyncfusionExamples/how-to-scrol
 
 ### Prevent the selection when right-click
 
-You can prevent the selection when right-clicking in tree grid by customizing the [SelectionController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html) and overriding the [ProcessPointerPressed](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController~ProcessPointerPressed.html).
+You can prevent the selection when right-clicking in tree grid by customizing the [SelectionController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html) and overriding the [ProcessPointerPressed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_ProcessPointerPressed_Windows_UI_Xaml_Input_PointerRoutedEventArgs_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_).
 
 {% tabs %}
 {% highlight c# %}
@@ -839,7 +839,7 @@ You can download the [sample](https://github.com/SyncfusionExamples/how-to-preve
 
 ### Select rows based on cell value
 
-In tree grid, you can select the rows based on cell value by adding the corresponding records to [SelectedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html). You can get the cell value of a particular cell using the `View.GetPropertyAccessProvider` method.
+In tree grid, you can select the rows based on cell value by adding the corresponding records to [SelectedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems). You can get the cell value of a particular cell using the `View.GetPropertyAccessProvider` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -916,7 +916,7 @@ You can download the [sample](https://github.com/SyncfusionExamples/how-to-searc
 
 ### Read cell values from selected items
 
-You can get the cell values of [SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) using [SfTreeGrid.SelectedItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~SelectedItems.html) and internal reflector, which reflects the field value from data object based on field name.
+You can get the cell values of [SelectedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems) using [SfTreeGrid.SelectedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems) and internal reflector, which reflects the field value from data object based on field name.
 
 {% tabs %}
 {% highlight c# %}
@@ -958,7 +958,7 @@ The `Row`/`Cell` selection border is behind the grid cell content. So, when you 
 
 ### Set the current cell on a particular row when tree grid is loaded 
 
-You can set the current cell in tree grid using the [treeGrid.SelectionController.MoveCurrentCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController~MoveCurrentCell.html) method.
+You can set the current cell in tree grid using the [treeGrid.SelectionController.MoveCurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method.
 
 {% tabs %}
 {% highlight c# %}

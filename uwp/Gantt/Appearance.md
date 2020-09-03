@@ -14,11 +14,11 @@ The Gantt control provides options to customize the look and feel of the task vi
 **Visual customization**
 The colors of parent taskbar, taskbar, milestone, and progress bar can be customized using the following properties:
 
-* [`ParentTaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarBrushProperty.html) – Specifies the color for the parent taskbar.
-* [`ParentProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentProgressIndicatorBrushProperty.html) – Specifies the color for the parent progress bar.
-* [`TaskBarBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarBrushProperty.html) – Specifies the color for the taskbar.
-* [`TaskProgressIndicatorBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskProgressIndicatorBrushProperty.html) – Specifies the color for task progress bar.
-* [`MilestoneBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneBrushProperty.html) – Specifies the color for the milestone.
+* [`ParentTaskBarBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ParentTaskBarBrushProperty) – Specifies the color for the parent taskbar.
+* [`ParentProgressIndicatorBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ParentProgressIndicatorBrushProperty) – Specifies the color for the parent progress bar.
+* [`TaskBarBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_TaskBarBrushProperty) – Specifies the color for the taskbar.
+* [`TaskProgressIndicatorBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_TaskProgressIndicatorBrushProperty) – Specifies the color for task progress bar.
+* [`MilestoneBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_MilestoneBrushProperty) – Specifies the color for the milestone.
 
 The following code sample demonstrates how to customize the visual of a task.
 
@@ -40,7 +40,7 @@ The following code sample demonstrates how to customize the visual of a task.
 ![UWP Gantt chart with customized colors](Appearance_images/VisualCustomization.PNG)
 
 **Template customization**
-You can customize the templates of the parent taskbar, taskbar, and milestone using the [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ParentTaskBarTemplate.html), [`TaskBarTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~TaskBarTemplateProperty.html) and [`MilestoneTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~MilestoneTemplate.html) properties, respectively.
+You can customize the templates of the parent taskbar, taskbar, and milestone using the [`ParentTaskBarTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ParentTaskBarTemplate), [`TaskBarTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_TaskBarTemplateProperty) and [`MilestoneTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_MilestoneTemplate) properties, respectively.
 
 The following code sample demonstrates how to customize a template.
 
@@ -175,6 +175,6 @@ The following code sample demonstrates how to customize a template.
 
 {% endtabs %}
 
-N> The thumbs and ellipses will be visible only when when [`AllowEditing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowEditing.html) is true.
+N> The thumbs and ellipses will be visible only when when [`AllowEditing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_AllowEditing) is true.
 
 ![UWP Gantt chart task customized with custom template](Appearance_images/TemplateCustomization.jpeg)

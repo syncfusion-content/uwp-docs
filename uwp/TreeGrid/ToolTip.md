@@ -58,7 +58,7 @@ It has higher priority than [SfTreeGrid.ShowToolTip](http://help.syncfusion.com
 
 ### Header tooltip
 
-You can enable the tooltip of a header cell by setting the [TreeGridColumn.ShowHeaderToolTip](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ShowHeaderToolTip.html# "") property to true.
+You can enable the tooltip of a header cell by setting the [TreeGridColumn.ShowHeaderToolTip](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ShowHeaderToolTip) property to true.
 
 
 {% tabs %}
@@ -81,14 +81,14 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 
 ### Tooltip customization
 
-You can customize the template of ToolTip by using the [TreeGridColumn.ToolTipTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplate.html) and [TreeGridColumn.ToolTipTemplateSelector](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~ToolTipTemplateSelector.html) properties. 
+You can customize the template of ToolTip by using the [TreeGridColumn.ToolTipTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ToolTipTemplate) and [TreeGridColumn.ToolTipTemplateSelector](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ToolTipTemplateSelector) properties. 
 
 #### Customize the tooltip using ToolTipTemplate
 
 You can customize appearance of the tooltip of a particular column by setting the TreeGridColumn.ToolTipTemplate. You can also customize appearance of the header tooltip of a particular column by using the [TreeGridColumn.HeaderToolTipTemplate ](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderToolTipTemplate.html# "")property.
-The ToolTipTemplate receives the underlying data object as DataContext by default. You can set the [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~SetCellBoundToolTip.html# "") to true to change the DataContext of the tooltip template where it sets the DataContext as DataContextHelper. The [TreeGridDataContextHelper](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html# "") has the following properties to reuse the same template for all the columns:
-* [Record:](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Record.html# "") Gets the underlying data record of a row which has the cell.
-* [Value:](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper~Value.html# "") Gets the underlying value of a cell.
+The ToolTipTemplate receives the underlying data object as DataContext by default. You can set the [TreeGridColumn.SetCellBoundToolTip](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_SetCellBoundToolTip) to true to change the DataContext of the tooltip template where it sets the DataContext as DataContextHelper. The [TreeGridDataContextHelper](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.Cells.TreeGridDataContextHelper.html# "") has the following properties to reuse the same template for all the columns:
+* [Record:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html#Syncfusion_UI_Xaml_Grid_Cells_DataContextHelper_Record) Gets the underlying data record of a row which has the cell.
+* [Value:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Cells.DataContextHelper.html#Syncfusion_UI_Xaml_Grid_Cells_DataContextHelper_Value) Gets the underlying value of a cell.
 
 {% tabs %}
 {% highlight xaml %}
@@ -173,12 +173,12 @@ You can get the sample [here](http://www.syncfusion.com/downloads/support/direc
 
 ### CellToolTipOpening event
 
-The [CellToolTipOpening ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellToolTipOpening_EV.html# "")event occurs when any tooltip of the cell is opened. The CellToolTipOpening event receives the [TreeGridCellToolTipOpeningEventArgs ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html# "")as argument which has the following properties:
-* [Column:](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Column.html# "") Gets the hovered cell column in the SfTreeGrid.
-* [Node:](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs~Node.html# "") Gets the hovered cell node.
-* [Record:](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~Record.html# "") Gets the data context of hovered cell.
-* [RowColumnIndex:](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~RowColumnIndex.html# "") Gets the row and column index of the hovered cell.
-* [ToolTip:](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs~ToolTip.html# "") Gets the tooltip of the hovered cells.
+The [CellToolTipOpening ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html)event occurs when any tooltip of the cell is opened. The CellToolTipOpening event receives the [TreeGridCellToolTipOpeningEventArgs ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html# "")as argument which has the following properties:
+* [Column:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Column) Gets the hovered cell column in the SfTreeGrid.
+* [Node:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCellToolTipOpeningEventArgs_Node) Gets the hovered cell node.
+* [Record:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Record) Gets the data context of hovered cell.
+* [RowColumnIndex:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_RowColumnIndex) Gets the row and column index of the hovered cell.
+* [ToolTip:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_ToolTip) Gets the tooltip of the hovered cells.
 
 {% tabs %}
 {% highlight xaml %}

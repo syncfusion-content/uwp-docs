@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Header
 
-Header allows you to show text or any UI content inside the gauge control using [`GaugeHeader`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html)  option. This provides information about the data that is being plotted in the circular gauge.
+Header allows you to show text or any UI content inside the gauge control using [`GaugeHeader`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader)  option. This provides information about the data that is being plotted in the circular gauge.
 
 ## Header
 
-The [`GaugeHeader`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeader.html)  is an object that can be used to set a unique header for the circular gauge. You can add text and images as header in the circular gauge. Only one header can be added in a circular gauge.
+The [`GaugeHeader`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader)  is an object that can be used to set a unique header for the circular gauge. You can add text and images as header in the circular gauge. Only one header can be added in a circular gauge.
 
 {% tabs %}
 
@@ -100,7 +100,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting alignment for header
 
-The gauge header can be positioned by using the [`HeaderAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~HeaderAlignment.html) property. The default value of this property is Left.
+The gauge header can be positioned by using the [`HeaderAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_HeaderAlignment) property. The default value of this property is Left.
 
 It includes the following options:
 
@@ -210,7 +210,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Setting position for header
 
-The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeaderPosition.html)  property is used to place header in the circular gauge. The value for [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeaderPosition.html)  should be specified in offset value. In the point value, which has been given for the [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~GaugeHeaderPosition.html) , the first value represent x-coordinate and the second value represents y-coordinate. First, set the [`HeaderAlignment`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfCircularGauge~HeaderAlignment.html)  to custom, then set the position of header.
+The [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeaderPosition)  property is used to place header in the circular gauge. The value for [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeaderPosition)  should be specified in offset value. In the point value, which has been given for the [`GaugeHeaderPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeaderPosition) , the first value represent x-coordinate and the second value represents y-coordinate. First, set the [`HeaderAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_HeaderAlignment)  to custom, then set the position of header.
 
 {% tabs %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Annotations
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html)  supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge~Annotations.html) , which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
+[`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html)  supports [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Annotations) , which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
 ##  Annotation
 
@@ -111,7 +111,7 @@ You can place the annotation anywhere in gauge area by using the `Offset` or `Sc
 
 ### Change annotation position by using offset
 
-You can position the annotation anywhere in the linear gauge by using the [`OffsetX`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation~OffsetX.html)  and [`OffsetY`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation~OffsetY.html)  properties. It ranges from 0 to 1.
+You can position the annotation anywhere in the linear gauge by using the [`OffsetX`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_OffsetX)  and [`OffsetY`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_OffsetY)  properties. It ranges from 0 to 1.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
 
 ###  Change annotation position by using scale value
 
-You can also place the annotation by specifying the [`ScaleValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation~ScaleValue.html) property.
+You can also place the annotation by specifying the [`ScaleValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_ScaleValue) property.
 
 {% tabs %}
 
@@ -328,7 +328,7 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
 
 ##  Set margin to the annotation
 
-You can adjust the annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation~ViewMargin.html)  property in pixel, which adjusts the annotation element from its current position. 
+You can adjust the annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_ViewMargin)  property in pixel, which adjusts the annotation element from its current position. 
 
 {% tabs %}
 
@@ -452,7 +452,7 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
 ##   Alignment of annotation
 
-You can align the annotation using the [`HorizontalPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation~HorizontalPosition.html)  and [`VerticalPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation~VerticalPosition.html)  properties.
+You can align the annotation using the [`HorizontalPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_HorizontalPosition)  and [`VerticalPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_VerticalPosition)  properties.
 
 ### Setting horizontal position
 
