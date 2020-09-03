@@ -9,12 +9,12 @@ documentation: ug
 
 # Getting Started with SfMaskedEdit
 
-This section explains how to create a high level tab navigation using [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) control.
+This section explains how to create new project in Visual Studio using [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) control.
 
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sfmaskededit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) in any application.
 
-## Creating Application with SfTabControl
+## Creating Application with SfMaskedEdit
 In this walk through, user will create a UWP application that contains [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
@@ -71,9 +71,9 @@ In order to add [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syn
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP
 
-2. Import SfTabControl namespace **Syncfusion.UI.Xaml.Controls.Input**.
+2. Import SfMaskedEdit namespace **Syncfusion.UI.Xaml.Controls.Input**.
 
-3. Create SfTabControl instance and add it to the page.
+3. Create SfMaskedEdit instance and add it to the page.
 
 
 {% tabs %}
