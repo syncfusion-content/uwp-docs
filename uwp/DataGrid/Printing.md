@@ -720,7 +720,7 @@ private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequest
 {% endhighlight %}
 {% endtabs %}
 
-Specific pages can be printed by overriding OnAddPrintPages method in `PrintManagerClass` class.
+Specific pages can be printed by overriding OnAddPrintPages method in `PrintManagerBase` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -746,7 +746,7 @@ public class CustomPrintManager : GridPrintManager
             for (var i = 1; i <= pageCount; i++)
             {
                 var printpageControl = CreatePage(i);
-                printDocument.AddPage(printpageControl);
+                PrintDocument.AddPage(printpageControl);
             }
         }
         else
@@ -772,13 +772,13 @@ public class CustomPrintManager : GridPrintManager
                     {
                         // Subtract 1 because page numbers are 1-based, but our list is 0-based.
                         var printpageControl = CreatePage(i);
-                        printDocument.AddPage(printpageControl);
+                        PrintDocument.AddPage(printpageControl);
                     }
                 }
             }
         }
         // Indicate that all of the print pages have been provided.
-        printDocument.AddPagesComplete();
+        PrintDocument.AddPagesComplete();
     }
 }
 
