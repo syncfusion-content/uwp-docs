@@ -44,7 +44,7 @@ SfDataGrid provides support to scale rows or columns or both while printing to f
 dataGrid.PrintSettings = new PrintSettings();
 dataGrid.PrintSettings.AllowColumnWidthFitToPrintPage = false;
 dataGrid.PrintSettings.PrintScaleOption = PrintScaleOptions.FitAllColumnsonOnePage;
-dataGrid.ShowPrintPreview();
+dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
@@ -95,7 +95,7 @@ SfDataGrid provides support to switch between Portrait (more rows but fewer colu
 {% highlight c# %}
 dataGrid.PrintSettings = new PrintSettings();
 dataGrid.PrintSettings.PrintPageOrientation = PrintOrientation.Landscape;
-dataGrid.ShowPrintPreview();
+dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
@@ -485,7 +485,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-N> 
+
 <table>
 <tr>
 <th>
