@@ -145,13 +145,8 @@ You can collapse the hours in `TimeLineView` and `DayView` by adding the hours i
 {% highlight c# %}
 schedule.CollapsedHours.Add(new ScheduleCollapsedHour() 
     { 
-        StartHour = 0, 
-        EndHour = 7, 
-    }); 
-schedule.CollapsedHours.Add(new ScheduleCollapsedHour() 
-    { 
-        StartHour = 20, 
-        EndHour = 24, 
+        StartHour = 02, 
+        EndHour = 06, 
     }); 
 {% endhighlight %}   
 {% endtabs %}
