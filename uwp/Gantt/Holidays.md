@@ -11,12 +11,12 @@ documentation: ug
 
 The holidays support is used to highlight the non-working days in the Gantt chart.
 
-The holidays can be specified in a task using the [`Holidays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html) property in the SfGantt, which holds a collection of [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html).
+The holidays can be specified in a task using the [`Holidays`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_Holidays) property in the SfGantt, which holds a collection of [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_Holidays).
 
-The following properties in the [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~Holidays.html) are used to define the holidays:
+The following properties in the [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_Holidays) are used to define the holidays:
 
-* [`Day`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.GanttHoliday~Day.html): Specifies the holiday date.
-* [`Background`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.GanttHoliday~Background.html): Specifies the color to highlight the holiday.
+* [`Day`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.GanttHoliday.html#Syncfusion_UI_Xaml_Gantt_GanttHoliday_Day): Specifies the holiday date.
+* [`Background`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.GanttHoliday.html#Syncfusion_UI_Xaml_Gantt_GanttHoliday_Background): Specifies the color to highlight the holiday.
 
 The following code sample demonstrates how to define the holidays.
 
@@ -58,4 +58,4 @@ sfGantt.Holidays = new GanttHolidayCollection()
 
 ![](SfGantt_images/Holidays.png)
 
-N> To highlight the holidays in the Gantt chart, the ['ShowNonWorkingDays'](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html) property must be enabled.
+N> To highlight the holidays in the Gantt chart, the ['ShowNonWorkingDays'](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ShowNonWorkingDays) property must be enabled.

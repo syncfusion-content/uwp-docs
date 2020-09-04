@@ -380,7 +380,7 @@ Parameters<br/><br/></td><td>
 Description<br/><br/></td></tr>
 <tr>
 <td>
-{{'[`ValueChanged`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfRangeNavigator~ValueChanged_EV.html)'| markdownify }}<br/><br/></td><td>
+{{'[`ValueChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html)'| markdownify }}<br/><br/></td><td>
 ValueChanged(Object sender, EventArgs e)<br/><br/></td><td>
 This event is triggered when the position of the scrollbar changed.<br/><br/></td></tr>
 <tr>

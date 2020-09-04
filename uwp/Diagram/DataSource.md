@@ -19,7 +19,7 @@ Diagram can be populated with the nodes and connectors based on the information 
 
 * The DataSourceSettings `Root` property is used to define root node for the diagram populated from the data source.
 
-To explore those properties, see [DataSourceSettings](https://help.syncfusion.com/cr/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.DataSourceSettings_members.html)
+To explore those properties, see [DataSourceSettings](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.DataSourceSettings.html)
 
 {% tabs %}
 {% highlight xaml %}

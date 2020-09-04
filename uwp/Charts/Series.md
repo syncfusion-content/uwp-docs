@@ -9,22 +9,22 @@ documentation: ug
 
 # Series
 
-[`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html) is the visual representation of the data. [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) offers many types of series ranging from [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html) to [`FinancialSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase_properties.html) like [`HiLo`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.hiloSeries.html) and [`Candle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.candleSeries.html). Based on your requirements and specifications, any type of [`Series`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Series.html) can be added for data visualization. 
+[`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html) is the visual representation of the data. [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) offers many types of series ranging from [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html) to [`FinancialSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html) like [`HiLo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.hiloSeries.html) and [`Candle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.candleSeries.html). Based on your requirements and specifications, any type of [`Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) can be added for data visualization. 
 
 The following APIs are common for the most of the series types:
 
-* [`XBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~XBindingPath.html)-A string property that represents the X values for the series.
-* [`YBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.XyDataSeries~YBindingPath.html)-A string property that represents the Y values for the series.
-* [`Stroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries~Stroke.html)-Represents the brush for the series outline.
-* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries~StrokeThickness.html)-Represents the thickness of the for the series outline.
-* [`Interior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Interior.html)-Represents the brush to fill the series.
-* [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html)-Used to define the set of pre-defined or custom colors for the series.
+* [`XBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath)-A string property that represents the X values for the series.
+* [`YBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XyDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath)-A string property that represents the Y values for the series.
+* [`Stroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Stroke)-Represents the brush for the series outline.
+* [`StrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_StrokeThickness)-Represents the thickness of the for the series outline.
+* [`Interior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior)-Represents the brush to fill the series.
+* [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Palette)-Used to define the set of pre-defined or custom colors for the series.
 
 ## Column and Bar Charts
 
 ### Column
 
-Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries.html).
+Column charts plot discrete rectangles for the given values. The following code example demonstrates the usage of [`ColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ColumnSeries.html).
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ chart.Series.Add(series);
 
 ### Bar
 
-Bar series are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BarSeries.html).
+Bar series are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html).
 
 {% tabs %}
 
@@ -96,7 +96,7 @@ BarSeries series = new BarSeries()
 
 **SegmentSpacing**
 
-The [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries~SegmentSpacing.html) property sets spacing among the segments when multiple series are added to the chart. Its value ranges from 0 to 1. The following code demonstrates how to use the SegmentSpacing property in series.
+The [`SegmentSpacing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ColumnSeries.html#Syncfusion_UI_Xaml_Charts_ColumnSeries_SegmentSpacing) property sets spacing among the segments when multiple series are added to the chart. Its value ranges from 0 to 1. The following code demonstrates how to use the SegmentSpacing property in series.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ chart.Series.Add(series2);
 
 ### Line
 
-Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html) using given data
+Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html) using given data
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ chart.Series.Add(series2);
 
 ### Spline
 
-[`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
+[`SplineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
 
 {% tabs %}
 
@@ -265,7 +265,7 @@ chart.Series.Add(series2);
 
 **Dashed Lines**
 
-[`StrokeDashArray`]() property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html) is used to render spline series with dashes.
+[`StrokeDashArray`]() property of the [`SplineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is used to render spline series with dashes.
 
 {% tabs %}
 
@@ -296,20 +296,20 @@ chart.Series.Add(series);
 
 **Spline** **rendering** **types**
 
-The [`SplineType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
+The [`SplineType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_SplineType) allows you to change the spline curve in series. 
 
-The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineSeries.html):
+The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineSeries.html):
 
 * Natural
 * Monotonic
 * Cardinal
 * Clamped
 
-By default, the value of SplineType is [`Natural`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+By default, the value of SplineType is [`Natural`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 **Cardinal**
 
-The following code demonstrates how to set the value of SplineType to [`Cardinal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+The following code demonstrates how to set the value of SplineType to [`Cardinal`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
 
@@ -335,7 +335,7 @@ series.SplineType = SplineType.Cardinal;
 
 **Monotonic**
 
-The following code demonstrates how to set the value of SplineType to [`Monotonic`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+The following code demonstrates how to set the value of SplineType to [`Monotonic`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
 
@@ -361,7 +361,7 @@ series.SplineType = SplineType.Monotonic;
 
 **Clamped**
 
-The following code demonstrates how to set the value of SplineType to [`Clamped`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineType.html).
+The following code demonstrates how to set the value of SplineType to [`Clamped`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html).
 
 {% tabs %}
 
@@ -389,9 +389,9 @@ series.SplineType = SplineType.Clamped;
 
 ### Bubble
 
-[`BubbleSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BubbleSeries.html) is represented by closely packed circles, whose areas are proportional to the quantities. 
+[`BubbleSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BubbleSeries.html) is represented by closely packed circles, whose areas are proportional to the quantities. 
 
-The size of the bubble series is relative proportional to the value bind with the series using [`Size`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BubbleSeries~Size.html) property. You can set the constraints on this size using [`MinimumRadius`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BubbleSeries~MinimumRadius.html) and [`MaximumRadius`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BubbleSeries~MaximumRadius.html).
+The size of the bubble series is relative proportional to the value bind with the series using [`Size`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_Size) property. You can set the constraints on this size using [`MinimumRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MinimumRadius) and [`MaximumRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BubbleSeries.html#Syncfusion_UI_Xaml_Charts_BubbleSeries_MaximumRadius).
 
 {% tabs %}
 
@@ -436,7 +436,7 @@ chart.Series.Add(series);
 
 ### Scatter
 
-[`ScatterSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries.html) is similar to bubble series, where each point being represented by an ellipse with equal size. This size can be defined using [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterHeight.html) and [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries~ScatterWidth.html) property.
+[`ScatterSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScatterSeries.html) is similar to bubble series, where each point being represented by an ellipse with equal size. This size can be defined using [`ScatterHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_ScatterHeight) and [`ScatterWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_ScatterWidth) property.
 
 {% tabs %}
 
@@ -481,9 +481,9 @@ chart.Series.Add(series);
 
 ### Area
 
-[`AreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AreaSeries.html) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
+[`AreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AreaSeries.html) is rendered using a collection of line segments connected to form a closed loop area, filled with the specified color.
 
-The following code example initializes the [`AreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AreaSeries.html):
+The following code example initializes the [`AreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AreaSeries.html):
 
 {% tabs %}
 
@@ -520,7 +520,7 @@ chart.Series.Add(series);
 
 ### Spline Area
 
-[`SplineAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
+[`SplineAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineAreaSeries.html) connects a series of data points using smooth Bezier line curves, with the underlying areas filled. 
 
 {% tabs %}
 
@@ -560,7 +560,7 @@ chart.Series.Add(series);
 
 ### Step Area
 
-[`StepAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StepAreaSeries.html) is similar to [`AreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AreaSeries.html) but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries.html) uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
+[`StepAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StepAreaSeries.html) is similar to [`AreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AreaSeries.html) but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html) uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
 
 {% tabs %}
 
@@ -599,7 +599,7 @@ chart.Series.Add(series);
 
 ### Closed Area
 
-If you wish to draw the open area series (Area with stroke only at top), [`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides [`IsClosed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AreaSeries~IsClosed.html) property. By default, this property is true.
+If you wish to draw the open area series (Area with stroke only at top), [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides [`IsClosed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AreaSeries.html#Syncfusion_UI_Xaml_Charts_AreaSeries_IsClosed) property. By default, this property is true.
 
 {% tabs %}
 
@@ -643,7 +643,7 @@ chart.Series.Add(series);
 
 ### Pie
 
-[`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html#) is divided into sectors, illustrating numerical proportion. The following code example illustrates the [`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html#).
+[`PieSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html#) is divided into sectors, illustrating numerical proportion. The following code example illustrates the [`PieSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html#).
 
 {% tabs %}
 
@@ -678,7 +678,7 @@ chart.Series.Add(series);
 
 ![Pie chart type in UWP](Series_images/pie.png)
 
-The rendering size of the [`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html#) can be controlled using [`PieCoefficient`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html) property as in below code example.
+The rendering size of the [`PieSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html#) can be controlled using [`PieCoefficient`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_PieCoefficient) property as in below code example.
 
 {% tabs %}
 
@@ -719,7 +719,7 @@ chart.Series.Add(series);
 
 ### Doughnut
 
-[`DoughnutSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#) is similar to [`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html#). It is used to show the relationship between parts of data and whole data. 
+[`DoughnutSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#) is similar to [`PieSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html#). It is used to show the relationship between parts of data and whole data. 
 
 The DoughnutSeries can be added to chart as in below code example:
 
@@ -755,7 +755,7 @@ chart.Series.Add(series);
 
 ![Doughnut chart type in UWP](Series_images/doughnut.png)
 
-The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutCoefficient.html) which defines the inner circle. Also it has [`DoughnutSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~DoughnutSize.html), used to define the size for this series like [`PieCoefficient`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries~PieCoefficient.html) in [`PieSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PieSeries.html).
+The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutCoefficient) which defines the inner circle. Also it has [`DoughnutSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize), used to define the size for this series like [`PieCoefficient`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_PieCoefficient) in [`PieSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
 {% tabs %}
 
@@ -793,7 +793,7 @@ chart.Series.Add(series);
 
 ### Semi Pie and Doughnut
 
-By having custom [`StartAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~StartAngle.html) and [`EndAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~EndAngle.html), you can draw pie series in different shapes like semicircular or quarter circular series.
+By having custom [`StartAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_StartAngle) and [`EndAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EndAngle), you can draw pie series in different shapes like semicircular or quarter circular series.
 
 {% tabs %}
 
@@ -877,10 +877,10 @@ chart.Series.Add(series);
 
 The following properties are used to explode the individual segments in Pie, Doughnut, Funnel and Pyramid.
 
-* [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html)  - Used to explode all the segments of these series.
-* [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html) - Used to explode any specific segment.
-* [`ExplodeRadius`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~ExplodeRadius.html)- Used to define the explode distance.
-* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeOnMouseClick.html)-Used to explode the segment on mouse click or tap.
+* [`ExplodeAll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll)  - Used to explode all the segments of these series.
+* [`ExplodeIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) - Used to explode any specific segment.
+* [`ExplodeRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ExplodeRadius)- Used to define the explode distance.
+* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeOnMouseClick)-Used to explode the segment on mouse click or tap.
 
 **Explode** **Index**
 
@@ -925,7 +925,7 @@ chart.Series.Add(series);
 
 ![Exploding a segment of accumlation series in UWP Chart](Series_images/exploderadius.png)
 
-N> We have defined [`ExplodeRadius`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~ExplodeRadius.html) as 10, by default its value is zero. So you need to define [`ExplodeRadius`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CircularSeriesBase~ExplodeRadius.html), when you set [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html) or [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html).
+N> We have defined [`ExplodeRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ExplodeRadius) as 10, by default its value is zero. So you need to define [`ExplodeRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ExplodeRadius), when you set [`ExplodeIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) or [`ExplodeAll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll).
 
 **Explode** **All**
 
@@ -972,14 +972,14 @@ chart.Series.Add(series);
 
 **Stacked** **doughnut**
 
-Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~IsStackedDoughnut.html) property. The following properties are used to customize the stacked doughnut chart:
+Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_IsStackedDoughnut) property. The following properties are used to customize the stacked doughnut chart:
 
-* [`CapStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CapStyle.html) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
-* [`SegmentSpacing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~SegmentSpacing.html) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
-* [`MaximumValue`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~MaximumValue.html) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
-* [`TrackColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackColor.html) - Changes the color of the track area.
-* [`TrackBorderColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderColor.html) - Changes the color of the track border.
-* [`TrackBorderWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~TrackBorderWidth.html) - Changes the width of the track border.
+* [`CapStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_CapStyle) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
+* [`SegmentSpacing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_SegmentSpacing) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
+* [`MaximumValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_MaximumValue) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
+* [`TrackColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_TrackColor) - Changes the color of the track area.
+* [`TrackBorderColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_TrackBorderColor) - Changes the color of the track border.
+* [`TrackBorderWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_TrackBorderWidth) - Changes the width of the track border.
 
 {% tabs %}
 
@@ -1017,7 +1017,7 @@ chart.Series.Add(doughnutSeries);
 
 **Add content to the center of doughnut chart**
 
-You can add any content to the center of the doughnut chart using the [`CenterView`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) property of DoughnutSeries. The binding context of the [`CenterView`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.DoughnutSeries~CenterView.html) will be the respective DoughnutSeries.
+You can add any content to the center of the doughnut chart using the [`CenterView`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_CenterView) property of DoughnutSeries. The binding context of the [`CenterView`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_CenterView) will be the respective DoughnutSeries.
 
 {% tabs %}
 
@@ -1057,7 +1057,7 @@ doughnutSeries.CenterView = centerView;
 
 ### Pyramid
 
-[`PyramidSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PyramidSeries.html) has the form of a triangle with lines dividing it into sections and each section has a different width. Depending on the Y co-ordinates, this width indicates a level of hierarchy among other categories.
+[`PyramidSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PyramidSeries.html) has the form of a triangle with lines dividing it into sections and each section has a different width. Depending on the Y co-ordinates, this width indicates a level of hierarchy among other categories.
 
 {% tabs %}
 
@@ -1093,7 +1093,7 @@ chart.Series.Add(series);
 ![Pyramid chart type in UWP](Series_images/pyramid.png)
 
 
-The [`PyramidMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PyramidSeries~PyramidMode.html) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) for pyramid segments.
+The [`PyramidMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) for pyramid segments.
 
 **PyramidMode** **as** **Surface**
 
@@ -1176,7 +1176,7 @@ chart.Series.Add(series);
 
 ### Funnel
 
-[`FunnelSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FunnelSeries.html) is similar to [`PyramidSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PyramidSeries.html), displays data in a funnel shape that equals to 100% when totaled. It is a single series, representing data as portions of 100% and does not use any axes. 
+[`FunnelSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FunnelSeries.html) is similar to [`PyramidSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PyramidSeries.html), displays data in a funnel shape that equals to 100% when totaled. It is a single series, representing data as portions of 100% and does not use any axes. 
 
 The following code example shows how to use the funnel series:
 
@@ -1214,7 +1214,7 @@ chart.Series.Add(series);
 
 ### Funnel Mode
 
-The [`FunnelMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FunnelSeries~FunnelMode.html) defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [`ValueIsHeight`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) and [`ValueIsWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) funnel mode:
+The [`FunnelMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FunnelSeries.html#Syncfusion_UI_Xaml_Charts_FunnelSeries_FunnelMode) defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [`ValueIsHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) and [`ValueIsWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) funnel mode:
 
 **ValueIsHeight**
 
@@ -1294,10 +1294,10 @@ chart.Series.Add(series);
 
 The following properties are used to explode the individual segments in Pie, Doughnut, Funnel and Pyramid.
 
-* [`ExplodeAll`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeAll.html) - Used to explode all the segments of these series.
-* [`ExplodeIndex`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeIndex.html) - Used to explode any specific segment.
-* [`ExplodeOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TriangularSeriesBase~ExplodeOffset.html)- Used to define the explode distance like ExplodeRadius for Pie.
-* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase~ExplodeOnMouseClick.html)-Used to explode the segment on mouse click or tap.
+* [`ExplodeAll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll) - Used to explode all the segments of these series.
+* [`ExplodeIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) - Used to explode any specific segment.
+* [`ExplodeOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TriangularSeriesBase.html#Syncfusion_UI_Xaml_Charts_TriangularSeriesBase_ExplodeOffset)- Used to define the explode distance like ExplodeRadius for Pie.
+* [`ExplodeOnMouseClick`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeOnMouseClick)-Used to explode the segment on mouse click or tap.
 
 **Explode** **Offset**
 
@@ -1340,7 +1340,7 @@ chart.Series.Add(series);
 
 **Gap** **Ratio**
 
-The gap between each segment using [`GapRatio`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.TriangularSeriesBase~GapRatio.html) property as in the following code example.
+The gap between each segment using [`GapRatio`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TriangularSeriesBase.html#Syncfusion_UI_Xaml_Charts_TriangularSeriesBase_GapRatio) property as in the following code example.
 
 {% tabs %}
 
@@ -1381,7 +1381,7 @@ chart.Series.Add(series);
 
 ### Radar
 
-[`RadarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RadarSeries.html) represents a collection of data, displayed by quantitative variables, represented on axes starting from the same point. The relative position and angle of the axes is not uniform. 
+[`RadarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RadarSeries.html) represents a collection of data, displayed by quantitative variables, represented on axes starting from the same point. The relative position and angle of the axes is not uniform. 
 
 The following code example illustrates the use of radar series:
 
@@ -1427,7 +1427,7 @@ chart.Series.Add(series);
 
 ### Polar
 
-[`PolarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PolarSeries.html) displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
+[`PolarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PolarSeries.html) displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
 
 {% tabs %}
 
@@ -1469,9 +1469,9 @@ chart.Series.Add(series);
 
 The Radar and Polar charts having the following properties in common:
 
-* [`IsClosed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase~IsClosed.html)
-* [`DrawType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase~DrawType.html)
-* [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html)
+* [`IsClosed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed)
+* [`DrawType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_DrawType)
+* [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle)
 
 ### IsClosed
 
@@ -1527,7 +1527,7 @@ chart.Series.Add(series);
 
 ### DrawType
 
-This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
+This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
 
 **DrawType** **as** **Area**
 
@@ -1621,11 +1621,11 @@ chart.Series.Add(series);
 
 ### PolarAngle
 
-[`Chart axis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html) property.The [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html) is type of [`ChartPolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html) and its default value is [`Rotate270`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate0`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate90`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) and [`Rotate180`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) are another supported value of [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html).Both the primary and secondary axes can be rotated individually based on its [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html) value.
+[`Chart axis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) property.The [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) is type of [`ChartPolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) and its default value is [`Rotate270`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate0`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate90`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) and [`Rotate180`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) are another supported value of [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle).Both the primary and secondary axes can be rotated individually based on its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value.
 
 **Rotate0**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html) value is [`Rotate0`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate0`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
 
 {% tabs %}
 
@@ -1672,7 +1672,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate90**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html) value is [`Rotate90`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate90`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
 
 {% tabs %}
 
@@ -1719,7 +1719,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate180**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html) value is [`Rotate180`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate180`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
 
 {% tabs %}
 
@@ -1766,7 +1766,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate270**
 
-The below snippet explains how the axes of series has been rotated, when [`PolarAngle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartAxisBase2D~PolarAngle.html) value is [`Rotate270`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series has been rotated, when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate270`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
 
 {% tabs %}
 
@@ -1815,7 +1815,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ### OHLC
 
-[`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html) displays each data point as a group of horizontal and one vertical line. The values for this series can be bind using [`High`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html), [`Open`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html) and [`Close`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html) property.
+[`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html) displays each data point as a group of horizontal and one vertical line. The values for this series can be bind using [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_High), [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Low), [`Open`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Open) and [`Close`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Close) property.
 
 The following code example shows how to use OHLC series:
 
@@ -1860,9 +1860,9 @@ chart.Series.Add(series);
 
 ### Candle
 
-[`CandleSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CandleSeries.html) displays each data point as a combination of a vertical column and a vertical line. This series is most widely used in decision making places, like the stock market.
+[`CandleSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CandleSeries.html) displays each data point as a combination of a vertical column and a vertical line. This series is most widely used in decision making places, like the stock market.
 
-The values for this series can be bind using [`High`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html), [`Low`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html), [`Open`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html) and [`Close`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html) property and the following code example shows the usage of candle series.
+The values for this series can be bind using [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_High), [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Low), [`Open`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Open) and [`Close`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Close) property and the following code example shows the usage of candle series.
 
 {% tabs %}
 
@@ -1905,12 +1905,12 @@ chart.Series.Add(series);
 
 
 The APIs present in the Candle series are,
-* [`High`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html)-Gets or sets the string that describes high value in Y-axis.
-* [`Low`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html)- Gets or sets the string that describes low value in Y-axis.
-* [`Open`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Open.html)-Gets or sets the string that describes open value in Y-axis.
-* [`Close`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Close.html)- Gets or sets the string that describes close value in Y-axis.
-* [`BearFillColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BearFillColor.html)-Represents the brush color for the segments that show stock price has gone up in measured time interval.
-* [`BullFillColor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~BullFillColor.html)-Represents that brush color for the segments that show stock price has gone down in measured time interval.
+* [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_High)-Gets or sets the string that describes high value in Y-axis.
+* [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Low)- Gets or sets the string that describes low value in Y-axis.
+* [`Open`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Open)-Gets or sets the string that describes open value in Y-axis.
+* [`Close`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Close)- Gets or sets the string that describes close value in Y-axis.
+* [`BearFillColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BearFillColor)-Represents the brush color for the segments that show stock price has gone up in measured time interval.
+* [`BullFillColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_BullFillColor)-Represents that brush color for the segments that show stock price has gone down in measured time interval.
 
 {% tabs %}
 
@@ -1950,7 +1950,7 @@ chart.Series.Add(series);
 
 ### HiLo
 
-In [`HiLoSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.HiloSeries.html), each segment is represented by a line. The height of the line depends on the value of the data point, high or low. The values for this series can be bind using [`High`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~High.html) and [`Low`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FinancialSeriesBase~Low.html).
+In [`HiLoSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HiloSeries.html), each segment is represented by a line. The height of the line depends on the value of the data point, high or low. The values for this series can be bind using [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_High) and [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_Low).
 
 The following code example shows the use of HiLo series:
 
@@ -1997,9 +1997,9 @@ chart.Series.Add(series);
 
 ### Stacking Line
 
-[`StackingLineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) resembles multiple types of series of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html). Each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries.html). 
+[`StackingLineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) resembles multiple types of series of the [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html). Each series is vertically stacked one above the other. When there is only one series, then it is [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html). 
 
-The following code example illustrates how to use [`StackingLineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingLineSeries.html):
+The following code example illustrates how to use [`StackingLineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingLineSeries.html):
 
 {% tabs %}
 
@@ -2092,7 +2092,7 @@ chart.Series.Add(series3);
 
 ### Stacking Line 100
 
-[`StackingLine100Series`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingLine100Series.html) resembles [`StackingLinenSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
+[`StackingLine100Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingLine100Series.html) resembles [`StackingLinenSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingLineSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
 
 {% tabs %}
 
@@ -2180,9 +2180,9 @@ chart.Series.Add(series3);
 
 ### Stacking Column
 
-[`StackingColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html) resembles multiple types of series of the [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries.html). Each series is vertically stacked one above the other. When there is only one series, then it is [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries.html). 
+[`StackingColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html) resembles multiple types of series of the [`ColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ColumnSeries.html). Each series is vertically stacked one above the other. When there is only one series, then it is [`ColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ColumnSeries.html). 
 
-The following code example illustrates how to use [`StackingColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html):
+The following code example illustrates how to use [`StackingColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html):
 
 {% tabs %}
 
@@ -2273,7 +2273,7 @@ chart.Series.Add(series3);
 
 ### Stacking Column 100
 
-[`StackingColumn100Series`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingColumn100Series.html) resembles [`StackingColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
+[`StackingColumn100Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingColumn100Series.html) resembles [`StackingColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingColumnSeries.html) but the cumulative portion of each stacked element always comes to a total of 100%. 
 
 {% tabs %}
 
@@ -2358,7 +2358,7 @@ chart.Series.Add(series3);
 
 ### Stacking Bar
 
-[`StackingBarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingBarSeries.html) is a multiple series type of [`BarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BarSeries.html). Each [`BarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BarSeries.html) is then stacked horizontally, side by side to each other. When there exists only one series, it resembles a simple [`BarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BarSeries.html). 
+[`StackingBarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingBarSeries.html) is a multiple series type of [`BarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html). Each [`BarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html) is then stacked horizontally, side by side to each other. When there exists only one series, it resembles a simple [`BarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html). 
 
 {% tabs %}
 
@@ -2452,7 +2452,7 @@ chart.Series.Add(series3);
 
 ### Stacking Bar 100
 
-[`StackingBar100Series`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingBar100Series.html) resembles a [`StackingBarSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingBarSeries.html). [`StackingBar100Series`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingBar100Series.html) displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. 
+[`StackingBar100Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingBar100Series.html) resembles a [`StackingBarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingBarSeries.html). [`StackingBar100Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingBar100Series.html) displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. 
 
 {% tabs %}
 
@@ -2539,7 +2539,7 @@ chart.Series.Add(series3);
 
 ### Stacking Area
 
-[`StackingAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html) is representing areas stacked vertically one above the other. 
+[`StackingAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html) is representing areas stacked vertically one above the other. 
 
 {% tabs %}
 
@@ -2622,7 +2622,7 @@ chart.Series.Add(series3);
 
 ### Stacking Area 100
 
-[`StackingArea100Series`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingArea100Series.html) is similar to [`StackingAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html), but the cumulative portion of each stacked element always totals 100%. 
+[`StackingArea100Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingArea100Series.html) is similar to [`StackingAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html), but the cumulative portion of each stacked element always totals 100%. 
 
 The following code example shows the way to add stacking area 100 series:
 
@@ -2709,7 +2709,7 @@ chart.Series.Add(series3);
 
 ![StackingArea100 chart type in UWP](Series_images/stackingarea100.png)
 
-You can draw open curve like Area using this [`IsClosed`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingAreaSeries~IsClosed.html) property.
+You can draw open curve like Area using this [`IsClosed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html#Syncfusion_UI_Xaml_Charts_StackingAreaSeries_IsClosed) property.
 
 {% tabs %}
 
@@ -2817,7 +2817,7 @@ chart.Series.Add(series3);
 
 ### Grouping Stacked Series
 
-You can group the stacked series using [`GroupingLabel`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StackingSeriesBase~GroupingLabel.html) property. The following code example shows how to group the stacking series.
+You can group the stacked series using [`GroupingLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackingSeriesBase_GroupingLabel) property. The following code example shows how to group the stacking series.
 
 {% tabs %}
 
@@ -2946,7 +2946,7 @@ chart.Series.Add(series4);
 
 ### Range Column
 
-[`RangeColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html) is a collection of vertical columns where positioning and height depends on the high and low values of each data point. [`RangeColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html) is used when minimum and maximum need to be specified for the [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries.html).
+[`RangeColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html) is a collection of vertical columns where positioning and height depends on the high and low values of each data point. [`RangeColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html) is used when minimum and maximum need to be specified for the [`ColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ColumnSeries.html).
 
 {% tabs %}
 
@@ -2986,7 +2986,7 @@ chart.Series.Add(series);
 
 ### Range Area
 
-[`RangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html) is used to display continuous data points as a set of lines that vary between [`High`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html) and [`Low`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html) values over intervals of time and across different categories. 
+[`RangeAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html) is used to display continuous data points as a set of lines that vary between [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_High) and [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_Low) values over intervals of time and across different categories. 
 
 {% tabs %}
 
@@ -3028,8 +3028,8 @@ chart.Series.Add(series);
 
 The APIs present in the RangeArea series are,
 
-* [`HighValueInterior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~HighValueInterior.html) -Gets or sets the brush that represents the interior color for the high value data.
-* [`LowValueInterior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeAreaSeries~LowValueInterior.html) - Gets or sets the brush that represents the interior color for the low value data.
+* [`HighValueInterior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html#Syncfusion_UI_Xaml_Charts_RangeAreaSeries_HighValueInterior) -Gets or sets the brush that represents the interior color for the high value data.
+* [`LowValueInterior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html#Syncfusion_UI_Xaml_Charts_RangeAreaSeries_LowValueInterior) - Gets or sets the brush that represents the interior color for the low value data.
 
 {% tabs %}
 
@@ -3074,7 +3074,7 @@ chart.Series.Add(series);
 
 ### Spline Range Area
 
-[`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SplineRangeAreaSeries.html) is used to display continuous data points as smooth Bezier curves that vary between [`High`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~High.html) and [`Low`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeSeriesBase~Low.html) values over intervals of time and across different categories. 
+[`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineRangeAreaSeries.html) is used to display continuous data points as smooth Bezier curves that vary between [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_High) and [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_Low) values over intervals of time and across different categories. 
 
 {% tabs %}
 
@@ -3117,9 +3117,9 @@ chart.Series.Add(splineRangeAreaSeries);
 
 ### Histogram 
 
-[`HistogramSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.HistogramSeries.html) is one of the seven basic tools of quality control. [`HistogramSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.HistogramSeries.html) is often used to plot the density of data.
+[`HistogramSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html) is one of the seven basic tools of quality control. [`HistogramSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html) is often used to plot the density of data.
 
-The following code example shows how to add the [`HistogramSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.HistogramSeries.html):
+The following code example shows how to add the [`HistogramSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html):
 
 {% tabs %}
 
@@ -3165,7 +3165,7 @@ chart.Series.Add(series);
 ![Histogram chart type in UWP](Series_images/histogram.png)
 
 
-You can customize interval using [`HistogramInterval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.HistogramSeries~HistogramInterval.html) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.HistogramSeries~ShowNormalDistributionCurve.html).
+You can customize interval using [`HistogramInterval`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_HistogramInterval) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_ShowNormalDistributionCurve).
 
 {% tabs %}
 
@@ -3216,7 +3216,7 @@ chart.Series.Add(series);
 
 ## Box and Whisker
 
-[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangles and lines to show the distribution of data set. The following code demonstrates how to define the series in chart.
+[`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) plots a combination of rectangles and lines to show the distribution of data set. The following code demonstrates how to define the series in chart.
 
 {% tabs %}
 
@@ -3250,15 +3250,15 @@ boxWhiskerChart.Series.Add(boxAndWhisker);
 
 ![BoxAndWhisker chart type in UWP](Series_images/BoxAndWhiskerSeries.png)
 
-N> By default, the value of the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property is Exclusive.
+N> By default, the value of the [`BoxPlotMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_BoxPlotMode) property is Exclusive.
 
 **Customize the series box mode**
 
-The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~BoxPlotMode.html) property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
+The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_BoxPlotMode) property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
-* [`Inclusive`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
-* [`Normal`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
+* [`Exclusive`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
 
 **Normal**
 
@@ -3314,7 +3314,7 @@ boxAndWhisker.BoxPlotMode = BoxPlotMode.Inclusive;
 
 **ShowMedian**
 
-The Median values of given data set is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property of BoxAndWhiskerSeries. The following code demonstrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~ShowMedian.html) property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowMedian) property of BoxAndWhiskerSeries. The following code demonstrates how to enable the [`ShowMedian`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_ShowMedian) property.
 
 {% tabs %}
 
@@ -3340,7 +3340,7 @@ boxAndWhisker.ShowMedian = true;
 
 **OutlierTemplate**
 
-The default appearance of the outlier symbol can be customized using the [`OutlierTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries~OutlierTemplate.html) property of BoxAndWhiskerSeries. The following code demonstrates how to customize the outlier symbol.
+The default appearance of the outlier symbol can be customized using the [`OutlierTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_OutlierTemplate) property of BoxAndWhiskerSeries. The following code demonstrates how to customize the outlier symbol.
 
 {% tabs %}
 
@@ -3380,7 +3380,7 @@ The default appearance of the outlier symbol can be customized using the [`Outli
 
 ## Waterfall Series
 
-[`WaterfallSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by rectangles and a connector between the rectangles.
+[`WaterfallSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by rectangles and a connector between the rectangles.
 
 The following code demonstrates how to use the series in chart.
 
@@ -3418,9 +3418,9 @@ chart.Series.Add(waterfallSeries);
 
 **SummaryBindingPath and SummarySegmentBrush**
 
-The [`SummaryBindingPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummaryBindingPath.html) gets or sets the string value that indicates the sum of the previous segments in series.
+The [`SummaryBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_SummaryBindingPath) gets or sets the string value that indicates the sum of the previous segments in series.
 
-The summary segment can be differentiated by applying [`SummarySegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~SummarySegmentBrush.html) in series.
+The summary segment can be differentiated by applying [`SummarySegmentBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_SummarySegmentBrush) in series.
 
 {% tabs %}
 
@@ -3464,7 +3464,7 @@ chart.Series.Add(waterfallSeries);
 
 **NegativeSegmentBrush**
 
-The appearance of the negative segment can be changed using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~NegativeSegmentBrush.html) property of series. The following code demonstrates how to change the appearance of the negative segment.
+The appearance of the negative segment can be changed using the [`NegativeSegmentBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_NegativeSegmentBrush) property of series. The following code demonstrates how to change the appearance of the negative segment.
 
 {% tabs %}
 
@@ -3490,7 +3490,7 @@ waterfallSeries.NegativeSegmentBrush = new SolidColorBrush(Colors.Red);
 
 **AllowAutoSum**
 
-The summary segment calculation can be changed using the [`AllowAutoSum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~AllowAutoSum.html) property. By default, this property is true. When disabling this property, it renders the segment using the y-value of provided ItemsSource collection.
+The summary segment calculation can be changed using the [`AllowAutoSum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_AllowAutoSum) property. By default, this property is true. When disabling this property, it renders the segment using the y-value of provided ItemsSource collection.
 
 The following code example demonstrates how the to set value to the AllowAutoSum property.
 
@@ -3528,7 +3528,7 @@ chart.Series.Add(waterfallSeries);
 
 **ConnectorLine**
 
-The connector line of series can be enabled or disabled using its [`ShowConnector`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ShowConnector.html) line property. By default, the value of this property is true.
+The connector line of series can be enabled or disabled using its [`ShowConnector`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_ShowConnector) line property. By default, the value of this property is true.
 
 {% tabs %}
 
@@ -3554,7 +3554,7 @@ waterfallSeries.ShowConnector = false;
 
 **Connector line customization**
 
-The connector line can be customized by applying the [`ConnectorLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.WaterfallSeries~ConnectorLineStyle.html) property of the series. The following code example demonstrates how to apply style to connector line.
+The connector line can be customized by applying the [`ConnectorLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html#Syncfusion_UI_Xaml_Charts_WaterfallSeries_ConnectorLineStyle) property of the series. The following code example demonstrates how to apply style to connector line.
 
 {% tabs %}
 
@@ -3600,7 +3600,7 @@ series.ConnectorLineStyle = style;
 
 ### Fast Line
 
-The [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a huge number of datapoints. This was rendered using polyline segment. 
+The [`FastLineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastLineSeries.html) is a special kind of line series that can render a collection with a huge number of datapoints. This was rendered using polyline segment. 
 
 {% tabs %}
 
@@ -3639,15 +3639,15 @@ chart.Series.Add(series);
 
 The following line properties are available for FastLineSeries:
 
-* [`Stroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries~Stroke.html)
-* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashArray.html)
-* [`StrokeDashOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashOffset.html)
-* [`StrokeDashCap`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineSeries~StrokeDashCap.html)
-* [`StrokeThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeries~StrokeThickness.html)
+* [`Stroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Stroke)
+* [`StrokeDashArray`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastLineSeries.html#Syncfusion_UI_Xaml_Charts_FastLineSeries_StrokeDashArray)
+* [`StrokeDashOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastLineSeries.html#Syncfusion_UI_Xaml_Charts_FastLineSeries_StrokeDashOffset)
+* [`StrokeDashCap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastLineSeries.html#Syncfusion_UI_Xaml_Charts_FastLineSeries_StrokeDashCap)
+* [`StrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_StrokeThickness)
 
 ### Fast Line Bitmap 
 
-[`FastLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments rendered using WritableBitmap. The advantage of [`FastLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) renders a million data point in a fraction of seconds.
+[`FastLineBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) displays a series of line segments rendered using WritableBitmap. The advantage of [`FastLineBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html) renders a million data point in a fraction of seconds.
 
 The following code example shows how to use the fast line bitmap series:
 
@@ -3688,9 +3688,9 @@ chart.Series.Add(series);
 
 ![FastLineBitmap chart type in UWP](Series_images/fastlinebitmap.png)
 
-Like [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineSeries.html), this bitmap series is also having line properties. 
+Like [`FastLineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastLineSeries.html), this bitmap series is also having line properties. 
 
-N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries~EnableAntiAliasing.html) property.
+N> As it was rendered using bitmap, there might be some jagged lines at edges. This is can be reduced using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastLineBitmapSeries_EnableAntiAliasing) property.
 
 {% tabs %}
 
@@ -3736,7 +3736,7 @@ chart.Series.Add(series);
 
 ### Fast Column
 
-[`FastColumnBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html) is used to boost up the performance of the [`ColumnSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ColumnSeries.html).
+[`FastColumnBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html) is used to boost up the performance of the [`ColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ColumnSeries.html).
 
 {% tabs %}
 
@@ -3775,7 +3775,7 @@ chart.Series.Add(series);
 
 ### Fast Bar
 
-[`FastBarBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastBarBitmapSeries.html) is used to boost up the performance of the series.
+[`FastBarBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastBarBitmapSeries.html) is used to boost up the performance of the series.
 
 {% tabs %}
 
@@ -3815,7 +3815,7 @@ chart.Series.Add(series);
 
 ### Fast Candle
 
-[`FastCandleBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastCandleBitmapSeries.html) renders using bitmap and it displays each data point as a combination of a vertical column and a vertical line, like [`CandleSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.CandleSeries.html). 
+[`FastCandleBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastCandleBitmapSeries.html) renders using bitmap and it displays each data point as a combination of a vertical column and a vertical line, like [`CandleSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CandleSeries.html). 
 
 {% tabs %}
 
@@ -3863,7 +3863,7 @@ chart.Series.Add(series);
 
 ### Fast HiLo
 
-[`FastHiLoBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastHiLoBitmapSeries.html) represents a series of line segments with high and low values rendered using WritableBitmap. 
+[`FastHiLoBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastHiLoBitmapSeries.html) represents a series of line segments with high and low values rendered using WritableBitmap. 
 
 {% tabs %}
 
@@ -3904,7 +3904,7 @@ chart.Series.Add(series);
 
 ### Fast OHLC
 
-[`FastHiLoOpenCloseBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html) are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
+[`FastHiLoOpenCloseBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html) are rendered using WritableBitmap like other bitmap series. The following code example illustrates the use of OHLC bitmap series.
 
 {% tabs %}
 
@@ -3949,7 +3949,7 @@ chart.Series.Add(series);
 
 ### Fast Scatter
 
-[`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) used to render high number scatter points. The [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterHeight.html) and [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries~ScatterWidth.html) also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
+[`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) used to render high number scatter points. The [`ScatterHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ScatterHeight) and [`ScatterWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ScatterWidth) also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
 
 {% tabs %}
 
@@ -3997,7 +3997,7 @@ chart.Series.Add(series);
 
 ### Fast Step Line
 
-[`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is the high performance version of [`StepLineSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.StepLineSeries.html).
+[`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is the high performance version of [`StepLineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StepLineSeries.html).
 
 {% tabs %}
 
@@ -4035,7 +4035,7 @@ chart.Series.Add(series);
 ![FastStepLineBitmap chart type in UWP](Series_images/faststepline.png)
 
 
-The anti aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries~EnableAntiAliasing.html) property of [`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) as in below code snippet:
+The anti aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastStepLineBitmapSeries_EnableAntiAliasing) property of [`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) as in below code snippet:
 
 {% tabs %}
 
@@ -4077,7 +4077,7 @@ chart.Series.Add(series);
 
 ### Fast Stacking Column
 
-[`FastStackingColumnBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html) similar to StackingColumnSeries except that it loads faster and provides better performance. 
+[`FastStackingColumnBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html) similar to StackingColumnSeries except that it loads faster and provides better performance. 
 
 {% tabs %}
 
@@ -4118,7 +4118,7 @@ chart.Series.Add(series);
 
 ### Fast Range Area
 
-[`FastRangeAreaBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html) is the high performance version of [`RangeAreaSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html). 
+[`FastRangeAreaBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html) is the high performance version of [`RangeAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html). 
 
 {% tabs %}
 
@@ -4159,7 +4159,7 @@ chart.Series.Add(fastRangeAreaBitmapSeries);
 
 ![Fast Range Area Bitmap Series](Series_images/fastrangeareabitmapseries.png)
 
-The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries~EnableAntiAliasing.html) property of [`FastRangeAreaBitmapSeries`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html) as in below code snippet:
+The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastRangeAreaBitmapSeries_EnableAntiAliasing) property of [`FastRangeAreaBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastRangeAreaBitmapSeries.html) as in below code snippet:
 
 {% tabs %}
 

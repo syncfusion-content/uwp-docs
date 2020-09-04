@@ -40,7 +40,7 @@ Multiple selected elements are visually represented as shown.
 
 ![Single selection container for multiple elements](Interaction_images/Interaction_img5.jpeg)
 
-* `SelectorChangedEvent` will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and interaction state with their old and new values.To explore about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
+* `SelectorChangedEvent` will notify you the OffsetX, OffsetY, Height, Width, Rotate Angle and interaction state with their old and new values.To explore about arguments, please refer to [SelectorChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.SelectorChangedEventArgs.html) .
 
 ### Select/Unselect the elements programmatically
 
@@ -62,17 +62,17 @@ node.IsSelected = false;
 {% endhighlight %}
 {% endtabs %}
 
-* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
+* `ItemSelectingEvent` and `ItemSelectedEvent` for selecting an element, will notify you the item and its original source. To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [ItemSelectedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemSelectedEventArgs.html) .
 
-* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source.To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
+* `ItemUnselectingEvent` and `ItemUnselectedEvent` for unselecting an element, will notify you the item and its original source.To explore about arguments ,please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html) and [DiagramEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.DiagramEventArgs.html) .
 
 ## Deletion
 
 Selected objects can be deleted by <kdb> Delete </kdb> and In-built Delete command. 
 
-* `ItemDeletedEvent` will notify you with the deleted item in argument. To explore about arguments , please refer to [ItemDeletedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.SfDiagram.WPF~Syncfusion.UI.Xaml.Diagram.ItemDeletedEventArgs.html).
+* `ItemDeletedEvent` will notify you with the deleted item in argument. To explore about arguments , please refer to [ItemDeletedEventArgs](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Diagram.ItemDeletedEventArgs.html).
 
-* `ItemDeletingEvent` will notify you with the item , option to cancel the deleting operation of item. To explore about arguments , please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html)   
+* `ItemDeletingEvent` will notify you with the item , option to cancel the deleting operation of item. To explore about arguments , please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html)   
 
 #### Selection Indicator Style
 
@@ -90,10 +90,10 @@ Multiple Selection will show the preview for the selected Items. We have provide
 
 The below events are common for Node, Connector, Group, Port and Annotation.
 
-* `ItemTappedEvent` is invoked on clicking the diagramming element. To explore about arguments, please refer to [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
-* `ItemDoubleTappedEvent` is invoked on double clicking the diagramming element. To explore about arguments, please refer to [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
-* `MouseDown` and `MouseUp` are invoked as similar to framework element, which is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, please refer to [MouseDownEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
-[MouseUpEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
+* `ItemTappedEvent` is invoked on clicking the diagramming element. To explore about arguments, please refer to [ItemTappedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.ItemTappedEventargs.html).
+* `ItemDoubleTappedEvent` is invoked on double clicking the diagramming element. To explore about arguments, please refer to [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.ItemDoubleTappedEventargs.html).
+* `MouseDown` and `MouseUp` are invoked as similar to framework element, which is raised together with either MouseLeftButtonUp or MouseRightButtonUp. To explore about arguments, please refer to [MouseDownEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs.html) and
+[MouseUpEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs.html).  
 
 
 ## Drag and Drop Nodes over other elements

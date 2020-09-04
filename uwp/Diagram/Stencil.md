@@ -350,8 +350,8 @@ Following table describes stencil related events.
 
 | Event | Event Handler | Description |
 |---|---|---|
-| ExpandEvent | [SymbolGroupExpandEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandEventHandler.html "SymbolGroupExpandEventHandler") | Occurs when expand the symbol group in the Stencil. |
-| CollpaseEvent | [SymbolGroupCollapseEventHandler](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDiagram.UWP~Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupCollapseEventHandler.html "SymbolGroupCollapseEventHandler") | Occurs when collapse the symbol group in the Stencil. |
+| ExpandEvent | [SymbolGroupExpandEventHandler](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandEventHandler.html  "SymbolGroupExpandEventHandler") | Occurs when expand the symbol group in the Stencil. |
+| CollpaseEvent | [SymbolGroupCollapseEventHandler](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupCollapseEventHandler.html "SymbolGroupCollapseEventHandler") | Occurs when collapse the symbol group in the Stencil. |
 
 ### StencilExpandCollapseEventArgs
 

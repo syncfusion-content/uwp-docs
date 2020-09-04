@@ -13,7 +13,7 @@ This section explains about various row types in treegrid and its customizations
 
 # RowHeader
 
-RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfTreeGrid.ShowRowHeader](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowRowHeader.html) property.
+RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfTreeGrid.ShowRowHeader](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowRowHeader) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,7 +119,7 @@ Header row is present in top of the treegrid which has column headers in it. Col
 
 ## Hiding header row
 
-You can hide the header row by setting [SfTreeGrid.HeaderRowHeight ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html)as 0 (zero).
+You can hide the header row by setting [SfTreeGrid.HeaderRowHeight ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight)as 0 (zero).
 
 {% tabs %}
 {% highlight xaml %}
@@ -249,7 +249,7 @@ By default, the `sort icon` appears at the right of the header text. You ca
 
 ## Customize style of header row
 
-You can change the header cell background and foreground for specific column or an entire grid by using [HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~HeaderStyle.html) property.
+You can change the header cell background and foreground for specific column or an entire grid by using [HeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_HeaderStyle) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -272,7 +272,7 @@ You can change the header cell background and foreground for specific column or
 
 ![Style of HeaderRow in UWP treegrid customized](Rows_images/Rows_img8.jpeg)
 
-You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderStyle.html) property in column,
+You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_HeaderStyle) property in column,
 
 {% tabs %}
 {% highlight xaml %}
