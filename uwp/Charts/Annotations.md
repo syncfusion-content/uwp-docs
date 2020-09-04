@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotations | SfChart | uwp | Syncfusion
-description: Explains the chart annotations, positioning the annotation, customizing the annotation and types present in annotation.
+description: Explains the chart annotations, positioning the annotation, customizing the annotation and the types present in the annotation.
 platform: uwp
 control: SfChart
 documentation: ug
@@ -297,7 +297,7 @@ chart.Series.Add(scatterSeries);
 
 ## Aligning the Annotation
 
-You can align the annotation horizontally and vertically from its actual plotting position using `HorizontalAlignment` and `VerticalAlignment` properties as in the below code snippet.
+You can align the annotation horizontally and vertically from its actual plotting position using the `HorizontalAlignment` and `VerticalAlignment` properties as in the following code sample.
 
 {% highlight xaml %}
 
@@ -327,7 +327,7 @@ Opacity="0.5">
 
 {% endhighlight %}
 
-In the following image you can see the rectangle annotation aligned to the bottom left from its actual position in chart area.
+In the following image, you can see the rectangle annotation aligned to the bottom left from its actual position in the chart area.
 
 ![Alignment support for annotations in UWP Chart](Annotation_images/Annotation_img3.jpeg)
 
