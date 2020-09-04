@@ -109,24 +109,24 @@ Dim datePicker1 As SfDatePicker = New SfDatePicker() With {
 
 ## Customizing the date format
 
-The format of time in [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) can be be customized by using [FormatString](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker~FormatString.html) property.
+The format of date in [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) can be be customized by using [FormatString](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTimePicker~FormatString.html) property. For example, format of date can be changed to *yyyy-dd-MM* format.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker HorizontalAlignment="Center" VerticalAlignment="Center" FormatString="M"  Width="125"/>
+<syncfusion:SfDatePicker HorizontalAlignment="Center" VerticalAlignment="Center" FormatString="yyyy-dd-MM"  Width="125" />
 
 {% endhighlight %}
 {% highlight C# %}
 
-datePicker1.FormatString = "M";
+datePicker1.FormatString = "yyyy-dd-MM";
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-datePicker1.FormatString = "M"
+datePicker1.FormatString = "yyyy-dd-MM"
 
 {% endhighlight %}
 
