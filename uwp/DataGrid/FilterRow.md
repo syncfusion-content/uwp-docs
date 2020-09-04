@@ -9,7 +9,7 @@ documentation: ug
 
 # FilterRow
 
-SfDataGrid allows you to filter the data by typing the value in FilterRow which is placed either in top or bottom of the DataGrid. You can enable the FilterRow by specifying the position in [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FilterRowPosition.html) property.
+SfDataGrid allows you to filter the data by typing the value in FilterRow which is placed either in top or bottom of the DataGrid. You can enable the FilterRow by specifying the position in [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FilterRowPosition) property.
 
 The FilterRowPosition property contains the below positions to load the FilterRow in SfDataGrid.
 
@@ -65,7 +65,7 @@ Equals, NotEquals, GreaterThan, GreaterThanOrEqual, LessThan, LessThanOrEqual, N
 </td>
 </tr>
 </table>
-You can remove the filter options button by using [GridColumn.FilterRowOptionsVisibility](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowOptionsVisibility.html) property and also you can change the default FilterRowCondition of particular column using [GridColumn.FilterRowCondition](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowCondition.html) property.
+You can remove the filter options button by using [GridColumn.FilterRowOptionsVisibility](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_FilterRowOptionsVisibility) property and also you can change the default FilterRowCondition of particular column using [GridColumn.FilterRowCondition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_FilterRowCondition) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -84,7 +84,7 @@ this.dataGrid.Columns[0].FilterRowOptionsVisibility = Visibility.Collapsed;
 {% endhighlight %}
 {% endtabs %}
 
-You have to set true to [GridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~ImmediateUpdateColumnFilter.html) property for immediate filtering while typing the value. 
+You have to set true to [GridColumn.ImmediateUpdateColumnFilter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ImmediateUpdateColumnFilter) property for immediate filtering while typing the value. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -103,7 +103,7 @@ this.dataGrid.Columns[0].ImmediateUpdateColumnFilter = true;
 
 ## Built-In Editors
 
-The FilterRow will loads with different editors based on underlying type of each column. You can change this default editors by using [GridColumn.FilterRowEditorType](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~FilterRowEditorType.html) property. The FilterRow contains the below editors type.
+The FilterRow will loads with different editors based on underlying type of each column. You can change this default editors by using [GridColumn.FilterRowEditorType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_FilterRowEditorType) property. The FilterRow contains the below editors type.
 
 <table>
 <tr>
@@ -125,7 +125,7 @@ TextBox
 TextBox
 </td>
 <td>
-{{'[GridFilterRowTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowTextBoxRenderer.html)'| markdownify }}
+{{'[GridFilterRowTextBoxRenderer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowTextBoxRenderer.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@ Numeric
 DoubleTextBox
 </td>
 <td>
-{{'[GridFilterRowNumericRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowNumericRenderer.html)'| markdownify }}
+{{'[GridFilterRowNumericRenderer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowNumericRenderer.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -147,7 +147,7 @@ CheckBox
 CheckBox
 </td>
 <td>
-{{'[GridFilterRowCheckBoxRenderer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCheckBoxRenderer.html)'| markdownify }}
+{{'[GridFilterRowCheckBoxRenderer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.RowFilter.GridFilterRowCheckBoxRenderer.html)'| markdownify }}
 </td>
 </tr>
 </table>

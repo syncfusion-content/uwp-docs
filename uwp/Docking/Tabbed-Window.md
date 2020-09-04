@@ -303,7 +303,7 @@ Used to set the background for Items Panel of the tabbed Dock Window<br/><br/></
 
 ## Set icon to TabbedWindow 
 
-[SetIcon](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfDockingManager.UWP~Syncfusion.UI.Xaml.Controls.Layout.SfDockingManager~SetIcon.html) method can be used to set the icon/image for the TabbedWindow. 
+[SetIcon](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Layout.SfDockingManager.html#Syncfusion_UI_Xaml_Controls_Layout_SfDockingManager_SetIcon_Windows_UI_Xaml_UIElement_System_Object_) method can be used to set the icon/image for the TabbedWindow. 
 
 
 {% tabs %}

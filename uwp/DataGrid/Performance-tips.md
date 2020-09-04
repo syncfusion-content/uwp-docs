@@ -21,9 +21,9 @@ You can load the large amount of data in less time using built-in [Data Virtuali
 
 SfDataGrid allows you to add, remove and update more number of records efficiently when you are having sorting, grouping and more summaries in place. By default, SfDataGrid responds to the collection changes and updates the UI instantly. If you are doing bulk or more updates to grid then you can follow below steps for better performance, 
 
-1. Invoke [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.CollectionViewAdv~BeginInit.html) before update the data.
+1. Invoke [SfDataGrid.View.BeginInit](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_BeginInit_System_Boolean_) before update the data.
 2. After that update underlying collection.
-3. Then call [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.CollectionViewAdv~EndInit.html) method, to refresh the View and UI.  Now summaries, sort order and groups will be updated as expected. 
+3. Then call [SfDataGrid.View.EndInit](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_EndInit) method, to refresh the View and UI.  Now summaries, sort order and groups will be updated as expected. 
 
 {% tabs %}
 {% highlight c# %}
@@ -41,9 +41,9 @@ this.dataGrid.View.EndInit();
 
 ## Adding columns efficiently
 
-SfDataGrid allows you to add more number of columns to [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance.
+SfDataGrid allows you to add more number of columns to [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance.
 
-You can improve the performance while adding, removing columns by suspending all the UI updates using [Suspend](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Columns~Suspend.html) and resume the updates after adding columns using [Resume](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Columns~Resume.html) methods. You have to refresh the UI using [RefreshColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.Helpers.GridHelper~RefreshColumns.html) method.
+You can improve the performance while adding, removing columns by suspending all the UI updates using [Suspend](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Columns.html#Syncfusion_UI_Xaml_Grid_Columns_Suspend) and resume the updates after adding columns using [Resume](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Columns.html#Syncfusion_UI_Xaml_Grid_Columns_Resume) methods. You have to refresh the UI using [RefreshColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Helpers.GridHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_GridHelper_RefreshColumns_Syncfusion_UI_Xaml_Grid_SfDataGrid_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -114,7 +114,7 @@ public class OrderInfo : INotifyPropertyChanged, INotifyPropertyChanging
 
 ### Loading performance - On demand summary calculation for group and caption summary 
 
-You can calculate the Caption and Group summary on-demand by setting [SfDataGrid.SummaryCalculationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~SummaryCalculationMode.html) as ‘CalculationMode.OndemandCaptionSummary’ or ‘CalculationMode.OndemandGroupSummary’. You can set this property when you are loading more number of summary columns on summary row or more number of group summaries to improve loading performance. On-demand summary calculation will calculate summaries for the summary rows which are visible and summaries for other rows will be calculated only when it comes into view. 
+You can calculate the Caption and Group summary on-demand by setting [SfDataGrid.SummaryCalculationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryCalculationMode) as ‘CalculationMode.OndemandCaptionSummary’ or ‘CalculationMode.OndemandGroupSummary’. You can set this property when you are loading more number of summary columns on summary row or more number of group summaries to improve loading performance. On-demand summary calculation will calculate summaries for the summary rows which are visible and summaries for other rows will be calculated only when it comes into view. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,7 +129,7 @@ this.datagrid.SummaryCalculationMode = CalculationMode.OnDemandCaptionSummary | 
 
 ## Improving UI Filter loading time
 
-SfDataGrid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AdvancedFilterControl~CanGenerateUniqueItems.html) property to false. By default `GridFilterControl` loads unique items in popup which takes more time to load.
+SfDataGrid allows you to open filter popup in less time by setting [CanGenerateUniqueItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html#Syncfusion_UI_Xaml_Grid_AdvancedFilterControl_CanGenerateUniqueItems) property to false. By default `GridFilterControl` loads unique items in popup which takes more time to load.
 `CanGenerateUniqueItems` property loading `TextBox` to filter instead of `ComboBox` in advanced filter UI View.
 
 {% tabs %}
