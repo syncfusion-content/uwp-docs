@@ -9,11 +9,11 @@ documentation: ug
 
 # Styling and Customization
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) support various customizing and styling options that allows you to enrich the application.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) support various customizing and styling options that allows you to enrich the application.
 
 ## Palettes
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
 
 We have some predefined palette such as
 
@@ -34,7 +34,7 @@ N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap ser
 
 ### Applying Palette to Series
 
-Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Palette.html) for the chart series.
+Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) for the chart series.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ chart.Palette = ChartColorPalette.Metro;
 ![Predefined palettes in UWP Chart](Styling-and-Customization_images/palette_1.png)
 
 
-The following code example defined [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartBase~Palette.html) as [`BlueChrome`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
+The following code example defined [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) as [`BlueChrome`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ chart.Palette = ChartColorPalette.BlueChrome;
 
 ### Applying Palette to Segment
 
-Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html) for the chart series.
+Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Palette) for the chart series.
 
 {% tabs %}
 
@@ -114,7 +114,7 @@ chart.Series.Add(series);
 
 ![Applying palette to segment in UWP Chart](Styling-and-Customization_images/palette_3.png)
 
-The following code example defined [`Palette`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~Palette.html) as **AutumnBrights**.
+The following code example defined [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Palette) as **AutumnBrights**.
 
 {% tabs %}
 
@@ -155,7 +155,7 @@ N> Metro palette is the default palette for both Series and Segment.
 
 ## Custom Palette
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides option which enables you to define your own [`CustomBrushes`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartColorModel~CustomBrushes.html) with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~ColorModel.html#) as shown in the following code example.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides option which enables you to define your own [`CustomBrushes`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColorModel.html#Syncfusion_UI_Xaml_Charts_ChartColorModel_CustomBrushes) with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
 
 {% tabs %}
 
@@ -270,7 +270,7 @@ chart.ColorModel = colorModel;
 
 ## SegmentColorPath
 
-The color of the chart segments can be updated by binding their corresponding model property from the `ItemsSource` collection to its [`SegmentColorPath`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~SegmentColorPath.html) property of series as follows.
+The color of the chart segments can be updated by binding their corresponding model property from the `ItemsSource` collection to its [`SegmentColorPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SegmentColorPath) property of series as follows.
 
 {% tabs %}
 
@@ -328,7 +328,7 @@ N> `SegmentColorPath` property is not applicable for Area, SplineArea, StepArea,
 
 ## Customize Legends
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
 
 The following code example demonstrates applying the palette color to the legend icon interior.
 
@@ -403,7 +403,7 @@ If you are having more number of items in the legend, you can override the Items
 
 ## Customize ToolTip
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSeriesBase~TooltipTemplate.html) property.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property.
 
 {% highlight xaml %}
 
@@ -500,7 +500,7 @@ Foreground="Black" FontSize="10"/>
 
 ## Customize Series
 
-[`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries~CustomTemplate.html) property is used to customize the chart series. It supports the following series
+[`CustomTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_CustomTemplate) property is used to customize the chart series. It supports the following series
 
 * BarSeries
 * BubbleSeries
@@ -516,12 +516,12 @@ Foreground="Black" FontSize="10"/>
 
 The respective segment of each series will be your DataTemplate context, which contain the following properties in common. This will be used to plot the custom shapes for the series.
 
-* [`XData`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSegment~XData.html)-Returns the actual X value of the segment.
-* [`YData`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSegment~YData.html)-Returns the actual Y value of the segment.
-* [`Item`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSegment~Item.html)-Returns the underlying model object of the segment.
-* [`Interior`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ChartSegment~Interior.html)-Returns the brush color of the segment.
+* [`XData`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSegment.html#Syncfusion_UI_Xaml_Charts_LineSegment_XData)-Returns the actual X value of the segment.
+* [`YData`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSegment.html#Syncfusion_UI_Xaml_Charts_LineSegment_YData)-Returns the actual Y value of the segment.
+* [`Item`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Item)-Returns the underlying model object of the segment.
+* [`Interior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Interior)-Returns the brush color of the segment.
 
-The following code example illustrates the use of [`CustomTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LineSeries~CustomTemplate.html) property:
+The following code example illustrates the use of [`CustomTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_CustomTemplate) property:
 
 {% tabs %}
 

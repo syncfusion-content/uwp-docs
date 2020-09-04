@@ -12,7 +12,7 @@ documentation: ug
 
 Higher level bar style can be customized using the following properties.
 
-* [`HigherBarGridLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherBarGridLineStyle.html#)- Gets or sets the style for upper bar gridlines.
+* [`HigherBarGridLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherBarGridLineStyle)- Gets or sets the style for upper bar gridlines.
 
 {% tabs %}
 
@@ -50,7 +50,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 ![Higher LevelBar Tick Customization](Customization_images/Customization_img1.jpeg)
 
 
-* [`HigherBarTickLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherBarTickLineStyle.html#)- Gets or sets the style for ticklines inside the upper bar.
+* [`HigherBarTickLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherBarTickLineStyle)- Gets or sets the style for ticklines inside the upper bar.
 
 {% tabs %}
 
@@ -88,13 +88,13 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 ![HigherBarTickLineStyle](Customization_images/Customization_img2.jpeg)
 
 
-* [`HigherLevelBarStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherLevelBarStyle.html#)- Gets or sets the styles for the higher label bar of SfDateTimeRangeNavigator.
-* [`HigherLabelStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~HigherLabelStyle.html#)- Gets or sets the higher label style.
-* [`SelectedLabelStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelBarStyle~SelectedLabelStyle.html#)- Gets or sets the style for labels in the selected region.
-* [`Position`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelBarStyle~Position.html#)- Gets or sets position value which is used to position the upper and lower labels inside or outside. 
-* [`SelectedLabelBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelBarStyle~SelectedLabelBrush.html#) – Gets or sets the color of the labels inside the selected region.
-* [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.LabelBarStyle~LabelHorizontalAlignment.html#)- An attached property of LabelBarStyle, used to align the labels in level bar.
-* [`Background`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.LabelBarStyle~Background.html#) – Gets or sets the Background the label bar. 
+* [`HigherLevelBarStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherLevelBarStyle)- Gets or sets the styles for the higher label bar of SfDateTimeRangeNavigator.
+* [`HigherLabelStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_HigherLabelStyle)- Gets or sets the higher label style.
+* [`SelectedLabelStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html#Syncfusion_UI_Xaml_Charts_LabelBarStyle_SelectedLabelStyle)- Gets or sets the style for labels in the selected region.
+* [`Position`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html#Syncfusion_UI_Xaml_Charts_LabelBarStyle_Position)- Gets or sets position value which is used to position the upper and lower labels inside or outside. 
+* [`SelectedLabelBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html#Syncfusion_UI_Xaml_Charts_LabelBarStyle_SelectedLabelBrush) – Gets or sets the color of the labels inside the selected region.
+* [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html#Syncfusion_UI_Xaml_Charts_LabelBarStyle_LabelHorizontalAlignment)- An attached property of LabelBarStyle, used to align the labels in level bar.
+* [`Background`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelBarStyle.html#Syncfusion_UI_Xaml_Charts_LabelBarStyle_Background) – Gets or sets the Background the label bar. 
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ The following output is displayed as the result of above code.
 
 Lower level bar style can be customized using the following properties.
 
-* [`LowerBarGridLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerBarGridLineStyle.html#)- Gets or sets the style for lower bar gridlines.
+* [`LowerBarGridLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerBarGridLineStyle)- Gets or sets the style for lower bar gridlines.
 
 {% tabs %}
 
@@ -223,7 +223,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 ![LowerBarGridLineStyle](Customization_images/Customization_img4.jpeg)
 
 
-* [`LowerBarTickLineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerBarTickLineStyle.html#)- Gets or sets the style for ticklines in lower bar.
+* [`LowerBarTickLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerBarTickLineStyle)- Gets or sets the style for ticklines in lower bar.
 
 {% tabs %}
 
@@ -261,8 +261,8 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 ![LowerBarTickLineStyle](Customization_images/Customization_img5.jpeg)
 
 
-* [`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~Minimum.html#)- Gets or sets the Minimum Starting Range of the SfDateTimeRangeNavigator.
-* [`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~Maximum.html#)- Gets or sets the Maximum Ending Range of the SfDateTimeRangeNavigator.
+* [`Minimum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_Minimum)- Gets or sets the Minimum Starting Range of the SfDateTimeRangeNavigator.
+* [`Maximum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_Maximum)- Gets or sets the Maximum Ending Range of the SfDateTimeRangeNavigator.
 
 {% tabs %}
 
@@ -304,8 +304,8 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 ![Customization of SfDateTimeRangeNavigator in UWP](Customization_images/Customization_img6.jpeg)
 
 
-* [`LowerLevelBarStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerLevelBarStyle.html#)- Gets or sets the styles for the lower label bar of SfDateTimeRangeNavigator.
-* [`LowerLabelStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LowerLabelStyle.html#) – Gets or sets the lower label style.
+* [`LowerLevelBarStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLevelBarStyle)- Gets or sets the styles for the lower label bar of SfDateTimeRangeNavigator.
+* [`LowerLabelStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLabelStyle) – Gets or sets the lower label style.
 
 {% tabs %}
 
@@ -394,9 +394,9 @@ SfDateTimeRangeNavigator provides support to customize the visibility of lower b
 
 SfDateTimeRangeNavigator provides the following properties to customize the left and right thumb.
 
-* [`LeftThumbStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~LeftThumbStyle.html#)- Gets or sets the thumb style for left thumb.
-* [`RightThumbStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~RightThumbStyle.html#)- Gets or sets the right thumb style.
-* [`SymbolTemplate`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ThumbStyle~SymbolTemplate.html#)- Gets or sets the data template for the symbol.
+* [`LeftThumbStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle)- Gets or sets the thumb style for left thumb.
+* [`RightThumbStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle)- Gets or sets the right thumb style.
+* [`SymbolTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_SymbolTemplate)- Gets or sets the data template for the symbol.
 
 {% tabs %}
 
@@ -506,7 +506,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 ![LeftThumbStyle](Customization_images/Customization_img8.jpeg)
 
 
-* [`LineStyle`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.ThumbStyle~LineStyle.html#)- Gets or sets the style for the thumb line.
+* [`LineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ThumbStyle.html#Syncfusion_UI_Xaml_Charts_ThumbStyle_LineStyle)- Gets or sets the style for the thumb line.
 
 {% tabs %}
 
@@ -598,7 +598,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 User can also set the Interval which they think suitable for their data, this can be done by using Interval Property and can also set format to the labels.
 
-* [`Intervals`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator~Intervals.html#)- Gets or sets intervals collection to render labels of SfDateTimeRangeNavigator.
+* [`Intervals`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_Intervals)- Gets or sets intervals collection to render labels of SfDateTimeRangeNavigator.
 
 {% tabs %}
 
@@ -671,7 +671,7 @@ rangeNavigator.Content = sparkline;
 ![Label Customization](Customization_images/Customization_img10.jpeg)
 
 
-* [`LabelFormatters`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Interval~LabelFormatters.html#) - Gets or sets string collection to set the label format for the navigator labels.
+* [`LabelFormatters`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Interval.html#Syncfusion_UI_Xaml_Charts_Interval_LabelFormatters) - Gets or sets string collection to set the label format for the navigator labels.
 
 The following code illustrates how to set label format.
 
@@ -682,16 +682,16 @@ interval2.LabelFormatters = new ObservableCollection<string>(); interval2.LabelF
 
 {% endhighlight %}
 
-* [`IntervalType`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Interval~IntervalType.html#)- Gets or sets interval type in which the navigator values should be displayed.
+* [`IntervalType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Interval.html#Syncfusion_UI_Xaml_Charts_Interval_IntervalType)- Gets or sets interval type in which the navigator values should be displayed.
 
 Interval has the following types:
 
-* [`Year`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Quarter`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Month`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Week`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Day`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
-* [`Hour`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Year`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Quarter`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Month`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Week`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Day`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
+* [`Hour`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NavigatorIntervalType.html)
 
 The auto timespan format simplifies the visual representation of data while zooming.
 

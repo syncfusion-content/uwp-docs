@@ -23,7 +23,7 @@ This section explains about various row types in SfDataGrid.
 
 ## Row Header
 
-RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfDataGrid.ShowRowHeader](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~ShowRowHeader.html) property.
+RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfDataGrid.ShowRowHeader](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowRowHeader) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,7 +108,7 @@ Header row is present in top of the SfDataGrid which has column headers in it. C
 
 ![Show the column header in Header row](Rows_images/Rows_img7.png)
 
-You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~HeaderRowHeight.html) property.
+You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) property.
 
 ### Hiding Header row
 
@@ -156,7 +156,7 @@ Description
 </tr>
 <tr>
 <td>
-{{'[FrozenRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FrozenRowsCount.html)'| markdownify }}
+{{'[FrozenRowsCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FrozenRowsCount)'| markdownify }}
 </td>
 <td>
 Set the frozen rows count at top of the SfDataGrid.
@@ -164,7 +164,7 @@ Set the frozen rows count at top of the SfDataGrid.
 </tr>
 <tr>
 <td>
-{{'[FooterRowsCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~FooterRowsCount.html)'| markdownify }}
+{{'[FooterRowsCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FooterRowsCount)'| markdownify }}
 </td>
 <td>
 Set the footer rows count at bottom of the SfDataGrid.
@@ -172,7 +172,7 @@ Set the footer rows count at bottom of the SfDataGrid.
 </tr>
 <tr>
 <td>
-{{'[FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html)'| markdownify }}
+{{'[FrozenColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FrozenColumnCount)'| markdownify }}
 </td>
 <td>
 Set the frozen columns count in left side of the SfDataGrid. 
@@ -180,7 +180,7 @@ Set the frozen columns count in left side of the SfDataGrid.
 </tr>
 <tr>
 <td>
-{{'[FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html)'| markdownify }}
+{{'[FooterColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FooterColumnCount)'| markdownify }}
 </td>
 <td>
 Set the frozen columns in right side of the SfDataGrid.
@@ -311,9 +311,9 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 
 ### Disable drag and drop between frozen and non-frozen columns
 
-You can disable the drag and drop between frozen and non-frozen columns by handling [QueryColumnDragging](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryColumnDragging_EV.html) event.
+You can disable the drag and drop between frozen and non-frozen columns by handling [QueryColumnDragging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
-Using `Reason` property in [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html), you can cancel the column dropping operation.
+Using `Reason` property in [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html), you can cancel the column dropping operation.
  
 In the below code, if the Reason is `QueryColumnDraggingReason.Dropping` and the column is dragged from frozen region to non-frozen region or vice versa, you can cancel the dropping action by setting `e.Cancel` as `true` in the event.
 

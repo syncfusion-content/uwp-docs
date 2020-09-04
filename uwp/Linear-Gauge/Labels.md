@@ -13,7 +13,7 @@ documentation: ug
 
 ## Label color customization
 
-The foreground of the label is customized by setting the [`LabelStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelStroke.html) of the linear scale.
+The foreground of the label is customized by setting the [`LabelStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelStroke) of the linear scale.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ The foreground of the label is customized by setting the [`LabelStroke`](https:/
 
 ## Label font customization
 
-The label font can be customized using the [`LabelSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelSize.html), `FontFamily`, and `FontStyle` properties. 
+The label font can be customized using the [`LabelSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelSize), `FontFamily`, and `FontStyle` properties. 
 
 {% tabs %}
 
@@ -138,7 +138,7 @@ The label font can be customized using the [`LabelSize`](https://help.syncfusion
 
 ## Setting position for labels
 
-The labels in the scale can be placed above or below the linear scale by choosing the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPosition.html) property. The default value of [`LabelPosition`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPosition.html) property is below.
+The labels in the scale can be placed above or below the linear scale by choosing the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property. The default value of [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property is below.
 
 1.	Above
 2.	Below (Default)
@@ -203,11 +203,11 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 ## Setting postfix and prefix for labels
 
-You can postfix and prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPrefix.html) properties, respectively.
+You can postfix and prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPostfix) and [`LabelPrefix`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPrefix) properties, respectively.
 
 ### Setting label postfix
 
-The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPostfix.html) property allows to postfix the values to scale labels.
+The [`LabelPostfix`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPostfix) property allows to postfix the values to scale labels.
 
 {% tabs %}
 
@@ -272,7 +272,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Sf
 
 ### Setting label prefix
 
-The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelPrefix.html) property allows to prefix the values to scale labels.
+The [`LabelPrefix`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPrefix) property allows to prefix the values to scale labels.
 
 {% tabs %}
 
@@ -336,7 +336,7 @@ The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfG
 
 ## Setting label offset
 
-The labels can be positioned far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~LabelOffset.html) property.
+The labels can be positioned far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelOffset) property.
 
 {% tabs %}
 
@@ -391,7 +391,7 @@ The labels can be positioned far away from the ticks using the [`LabelOffset`](h
 
 ## Labels visibility
 
-Labels visibility can be customized using the [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ShowLabels.html) property of linear scale.
+Labels visibility can be customized using the [`ShowLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ShowLabels) property of linear scale.
 
 {% tabs %}
 

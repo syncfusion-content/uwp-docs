@@ -9,7 +9,7 @@ documentation: ug
 
 # Using ListView with SfDataPager
 
-[SfDataPager](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) automatically wraps the collection in [PagedCollectionView](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.Data.UWP~Syncfusion.Data.PagedCollectionView.html) and exposes to the [PagedSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager~PagedSource.html#) property. You can pass the `PagedSource` property to bind with any ItemsControl’s ItemsSource property. Here, the `PagesSource` property is bound to the ListBox.
+[SfDataPager](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) automatically wraps the collection in [PagedCollectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.PagedCollectionView.html) and exposes to the [PagedSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) property. You can pass the `PagedSource` property to bind with any ItemsControl’s ItemsSource property. Here, the `PagesSource` property is bound to the ListBox.
 
 The following code explains how to use Source and `PagedSource` property in ListBox.
 

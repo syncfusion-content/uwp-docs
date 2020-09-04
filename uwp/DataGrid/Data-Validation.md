@@ -9,11 +9,11 @@ documentation: ug
 
 # Data Validation
 
-SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip. 
+SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip. 
 
 ## Built-in validations
 
-Built-in validations through INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) properties. `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
+Built-in validations through INotifyDataErrorInfo and Data annotation attributes, can be enabled by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridValidationMode) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) properties. `GridColumn.GridValidationMode` takes priority than `SfDataGrid.GridValidationMode`.
 
 * `GridValidation.InView` - displays error icons and tips alone.
 * `GridValidation.None` - disables built-in validation support
@@ -63,7 +63,7 @@ public class OrderInfo : INotifyDataErrorInfo
 {% endhighlight %}
 {% endtabs %}
 
-Enable built-in validation support by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property `InView`.
+Enable built-in validation support by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridValidationMode) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) property `InView`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -78,7 +78,7 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 
 ### Built-in validation using Data Annotation
 
-You can validate the data using data annotation attributes by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~GridValidationMode.html) property to `InView`.
+You can validate the data using data annotation attributes by setting [SfDataGrid.GridValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridValidationMode) or [GridColumn.GridValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_GridValidationMode) property to `InView`.
 
 #### Using different annotations
 
@@ -144,13 +144,13 @@ public string CustomerID
 
 ## Custom validation through events
 
-You can validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) and [RowValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) events. SfDataGrid will not allow user to edit other cell / row if validation failed.
+You can validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [RowValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. SfDataGrid will not allow user to edit other cell / row if validation failed.
 
 ## Cell Validation
 
-You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) event when the cell is edited. [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) event occurs when the edited cells tries to commit the data or lose the focus. 
+You can validate the cells using [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event when the cell is edited. [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the edited cells tries to commit the data or lose the focus. 
 
-[CurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.CurrentCellValidatingEventArgs.html) provides information to `CurrentCellValidating` event for validating the cell. `CurrentCellValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. 
+[CurrentCellValidatingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellValidatingEventArgs.html) provides information to `CurrentCellValidating` event for validating the cell. `CurrentCellValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. 
 `CurrentCellValidatingEventArgs.NewValue` returns the edited value and you can set the validation status using `CurrentCellValidatingEventArgs.IsValid` property. 
 
 {% tabs %}
@@ -169,7 +169,7 @@ void dataGrid_CurrentCellValidating(object sender, CurrentCellValidatingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-[SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidated_EV.html) event triggered when the cell has finished validating with valid data.
+[SfDataGrid.CurrentCellValidated](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event triggered when the cell has finished validating with valid data.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,9 +183,9 @@ void dataGrid_CurrentCellValidated(object sender, CurrentCellValidatedEventArgs 
 
 ## Row Validation
 
-You can validate the row using [RowValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus. 
+You can validate the row using [RowValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event when the cell is edited. The `RowValidating` event occurs when the edited cells tries to commit the row data or lose the focus. 
 
-[RowValidatingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.RowValidatingEventArgs.html) provides information to `RowValidating` event for validating row. `RowValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. `RowValidatingEventArgs.RowData` returns the edited value and you can set the validation status using `RowValidatingEventArgs.IsValid` property.
+[RowValidatingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.RowValidatingEventArgs.html) provides information to `RowValidating` event for validating row. `RowValidatingEventArgs.OriginalSender` returns the DataGrid fired this event for DetailsView. `RowValidatingEventArgs.RowData` returns the edited value and you can set the validation status using `RowValidatingEventArgs.IsValid` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -204,7 +204,7 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-[SfDataGrid.RowValidated](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidated_EV.html) event triggered when the row has finished validating with valid row data.
+[SfDataGrid.RowValidated](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event triggered when the row has finished validating with valid row data.
 
 {% tabs %}
 {% highlight c# %}
@@ -581,7 +581,7 @@ You can do both built-in and custom validation of data in `DetailsViewDataGrid`.
 
 ### Built-in validations
 
-You can validate the bound data based on [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) or Data Annotation Attributes by setting [GridValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~GridValidationMode.html) property of `ViewDefinition.DataGrid`.
+You can validate the bound data based on [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) or Data Annotation Attributes by setting [GridValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridValidationMode) property of `ViewDefinition.DataGrid`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -603,7 +603,7 @@ You can validate the bound data based on [INotifyDataErrorInfo](https://msdn.mic
 {% endhighlight %}
 {% endtabs %}
 
-When the relation is auto-generated, the data can be validated by setting `GridValidationMode` property to `AutoGeneratingRelations.GridViewDefinition.DataGrid` in [AutoGeneratingRelations](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingRelations_EV.html) event handler.
+When the relation is auto-generated, the data can be validated by setting `GridValidationMode` property to `AutoGeneratingRelations.GridViewDefinition.DataGrid` in [AutoGeneratingRelations](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -620,11 +620,11 @@ private void DataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelat
 
 ### Custom validation through events
 
-Master-details view support to validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) and [RowValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) events. 
+Master-details view support to validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [RowValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events. 
 
 #### Cell Validation
 
-You can validate the cells using `CurrentCellValidating` event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) when the cell is edited. `CurrentCellValidating` event occurs when the edited cells tries to commit the data or lose the focus. 
+You can validate the cells using `CurrentCellValidating` event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid) when the cell is edited. `CurrentCellValidating` event occurs when the edited cells tries to commit the data or lose the focus. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -663,7 +663,7 @@ private void FirstLevelNestedGrid_CurrentCellValidating(object sender, CurrentCe
 {% endhighlight %}
 {% endtabs %}
 
-[CurrentCellValidated](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidated_EV.html) event `ViewDefinition.DataGrid` triggered when the cell has finished validating with valid data.
+[CurrentCellValidated](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event `ViewDefinition.DataGrid` triggered when the cell has finished validating with valid data.
 
 {% tabs %}
 {% highlight xaml %}
@@ -713,7 +713,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 #### Row Validation 
 
-You can validate the row using [RowValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~RowValidating_EV.html) event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridViewDefinition~DataGrid.html) when the cell is edited. The `RowValidating` event occurs when edited cells tries to commit the row data or lose the focus. 
+You can validate the row using [RowValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event of [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridViewDefinition.html#Syncfusion_UI_Xaml_Grid_GridViewDefinition_DataGrid) when the cell is edited. The `RowValidating` event occurs when edited cells tries to commit the row data or lose the focus. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -804,7 +804,7 @@ void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.Aut
 
 ## Validation with Checkbox column
 
-SfDataGrid doesn’t support to validate the [GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html) through validating events. You can validate the check box column value by setting `ValidationHelper.IsCurrentCellValidated` and `ValidationHelper.IsCurrentRowValidated` static properties by calling [SetCurrentRowValidated](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ValidationHelper~SetCurrentRowValidated.html) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ValidationHelper~SetCurrentCellValidated.html) methods from [ValidationHelper](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ValidationHelper.html).
+SfDataGrid doesn’t support to validate the [GridCheckBoxColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html) through validating events. You can validate the check box column value by setting `ValidationHelper.IsCurrentCellValidated` and `ValidationHelper.IsCurrentRowValidated` static properties by calling [SetCurrentRowValidated](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ValidationHelper.html#Syncfusion_UI_Xaml_Grid_ValidationHelper_SetCurrentRowValidated_System_Boolean_) and [SetCurrentCellValidated](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ValidationHelper.html#Syncfusion_UI_Xaml_Grid_ValidationHelper_SetCurrentCellValidated_System_Boolean_) methods from [ValidationHelper](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ValidationHelper.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -831,5 +831,5 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 
 ## Limitations 
 
-* Non editable columns will not support custom validation except [GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html).
-* [CurrentCellValidating](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CurrentCellValidating_EV.html) event will not triggered for [GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) and 
+* Non editable columns will not support custom validation except [GridCheckBoxColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html).
+* [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event will not triggered for [GridTemplateColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html) and 

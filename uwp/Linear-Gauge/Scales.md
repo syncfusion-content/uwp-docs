@@ -9,7 +9,7 @@ documentation: ug
 
 ## Scale 
 
-The [`MainScale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale.html) is a linear scale integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
+The [`MainScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html) is a linear scale integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ The [`MainScale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGau
 
 ## Setting minimum and maximum values for a scale
 
-To change the minimum and maximum values of a linear scale, use the [`Minimum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~Minimum.html) and [`Maximum`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~Maximum.html) properties as shown in the following code snippet.
+To change the minimum and maximum values of a linear scale, use the [`Minimum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Maximum) properties as shown in the following code snippet.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ To change the minimum and maximum values of a linear scale, use the [`Minimum`](
 
 ## Setting interval for a scale
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~Interval.html) property allows to set intervals for scale. The default value of the `Interval` property is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
+The [`Interval`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Interval) property allows to set intervals for scale. The default value of the `Interval` property is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGaug
 
 ## Scale customization
 
-You can customize the color, length, size, and position of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale.html) using the [`ScaleBarStroke`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleBarStroke.html), [`ScaleBarLength`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleBarLength.html), [`ScaleBarSize`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleBarSize.html), [`ScaleBarBorderThickness`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleBarBorderThickness.html), and [`ScaleBarBorderBrush`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleBarBorderBrush.html) properties, respectively.
+You can customize the color, length, size, and position of the [`LinearScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html) using the [`ScaleBarStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarStroke), [`ScaleBarLength`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarLength), [`ScaleBarSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarSize), [`ScaleBarBorderThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarBorderThickness), and [`ScaleBarBorderBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarBorderBrush) properties, respectively.
 
 {% tabs %}
 
@@ -248,7 +248,7 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 
 ## Setting scale direction
 
-You can set the scale position to its forward and backward using the [`ScaleDirection`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleDirection.html) property.
+You can set the scale position to its forward and backward using the [`ScaleDirection`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleDirection) property.
 
 {% tabs %}
 
@@ -308,7 +308,7 @@ You can set the scale position to its forward and backward using the [`ScaleDire
 
 ## Setting position for a scale
 
-You can set the scale position using the [`ScaleBarPositionFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleBarPositionFactor.html) property. First, set the [`ElementsPositionMode`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ElementsPositionMode.html) to custom, and then set [`ScaleBarPositionFactor`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~ScaleBarPositionFactor.html).
+You can set the scale position using the [`ScaleBarPositionFactor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarPositionFactor) property. First, set the [`ElementsPositionMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ElementsPositionMode) to custom, and then set [`ScaleBarPositionFactor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_ScaleBarPositionFactor).
 
 {% tabs %}
 
@@ -373,7 +373,7 @@ You can set the scale position using the [`ScaleBarPositionFactor`](https://help
 
 ## Setting corner radius type for scale 
 
-Corners of the LinearScale can be customized by setting the value to the [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~CornerRadius.html) property. 
+Corners of the LinearScale can be customized by setting the value to the [`CornerRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_CornerRadius) property. 
 
 {% tabs %}
 
@@ -431,7 +431,7 @@ Corners of the LinearScale can be customized by setting the value to the [`Corne
 
 ## Setting gradient color for scale
 
-You can give smooth color transition to scale to specifying the different colors based on scale value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~GradientStops.html) property.
+You can give smooth color transition to scale to specifying the different colors based on scale value by using [`GradientStops`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_GradientStops) property.
 
 {% tabs %}
 
