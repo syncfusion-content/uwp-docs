@@ -297,7 +297,7 @@ chart.Series.Add(scatterSeries);
 
 ## Aligning the Annotation
 
-You can align the annotation horizontally and vertically using `HorizontalAlignment` and `VerticalAlignment` properties as in the below code snippet.
+You can align the annotation horizontally and vertically from its actual ploting position using `HorizontalAlignment` and `VerticalAlignment` properties as in the below code snippet.
 
 {% highlight xaml %}
 
@@ -307,7 +307,7 @@ You can align the annotation horizontally and vertically using `HorizontalAlignm
 
 HorizontalAlignment="Left"
 
-VerticalAlignment="Top"
+VerticalAlignment="Bottom"
 
 X2="2.2"                                                
 
@@ -327,7 +327,7 @@ Opacity="0.5">
 
 {% endhighlight %}
 
-In the following image you can see the rectangle annotation aligned to the top left of the chart area.
+In the following image you can see the rectangle annotation aligned to the bottom left from its actual position in chart area.
 
 ![Alignment support for annotations in UWP Chart](Annotation_images/Annotation_img3.jpeg)
 
