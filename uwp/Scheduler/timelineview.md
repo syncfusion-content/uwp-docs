@@ -10,7 +10,7 @@ documentation: ug
 # TimeLine View in UWP Scheduler (SfSchedule)
 TimeLine view is used to displays complete TimeLine in selected day, the default visible day of Schedule will be current day. Appointments are added in particular timeslot based on its timeline.
 
-![TimeLine View in UWP scheduler](TimeLine-View_images/TimeLineView.png)
+![Timeline View UWP Scheduler](TimeLine-View_images/TimeLineView.png)
 
 ## View Header Appearance
 You can customize the default appearance of schedule timeline view header using [TimeLineViewHeaderStyle](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~TimeLineViewHeaderStyle.html) property of `SfSchedule`.
@@ -80,7 +80,7 @@ You can customize the time intervals of timeslots in timeline by using [TimeInte
 {% endhighlight %}   
 {% endtabs %}
 
-![TimeInterval in UWP TimeLine View](TimeLine-View_images/TimeInterval.png)
+![TimeInterval UWP TimeLineView](TimeLine-View_images/TimeInterval.png)
 
 You can also set the custom time interval for timeslots  by using [CustomTimeInterval](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~CustomTimeInterval.html) property of `SfSchedule` by making `TimeInterval` as Custom.
 {% tabs %}   
@@ -103,7 +103,7 @@ You can also set the custom time interval for timeslots  by using [CustomTimeInt
 {% endhighlight %}   
 {% endtabs %}
 
-![Custom_TimeInterval in UWP TimeLine View](TimeLine-View_images/Custom_TimeInterval.png)
+![Custom TimeInterval UWP TimeLineView](TimeLine-View_images/Custom_TimeInterval.png)
 
 ## Change Working Hours
 Working hours in `TimeLine` of Schedule control will be differentiated with non-working hours by separate color. By default working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~WorkEndHour.html) properties of `SfSchedule`.
@@ -139,7 +139,8 @@ Non-working hours can be disabled by setting [ShowNonWorkingHours](https://help.
 
 ## CollapsedHours
 
-Using the [CollapsedHours](https://help.syncfusion.com/cr/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~CollapsedHours.html) property you can collapsed the hours in `TimeLineView` and `DayView` by adding the hours  in `CollapsedHour` collection.
+You can collapse the hours in `TimeLineView` and `DayView` by adding the hours in `CollapsedHour` collection using [CollapsedHours](https://help.syncfusion.com/cr/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~CollapsedHours.html) 
+
 {% tabs %}
 {% highlight c# %}
 schedule.CollapsedHours.Add(new ScheduleCollapsedHour() 
