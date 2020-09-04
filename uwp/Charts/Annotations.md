@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Annotations | SfChart | uwp | Syncfusion
-description: annotations
+description: Explains the chart annotations, positioning the annotation, customizing the annotation and types present in annotation.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
-# Annotations
+# Annotations in UWP Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations), which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations). 
 
@@ -297,7 +297,7 @@ chart.Series.Add(scatterSeries);
 
 ## Aligning the Annotation
 
-You can align the annotation horizontally and vertically from its actual ploting position using `HorizontalAlignment` and `VerticalAlignment` properties as in the below code snippet.
+You can align the annotation horizontally and vertically from its actual plotting position using `HorizontalAlignment` and `VerticalAlignment` properties as in the below code snippet.
 
 {% highlight xaml %}
 
