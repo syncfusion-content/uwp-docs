@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Annotations | SfChart | uwp | Syncfusion
-description: annotations
+description: Explains the chart annotations, positioning the annotation, customizing the annotation and the types present in the annotation.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
-# Annotations
+# Annotations in UWP Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations), which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations). 
 
@@ -297,7 +297,7 @@ chart.Series.Add(scatterSeries);
 
 ## Aligning the Annotation
 
-You can align the annotation horizontally and vertically using `HorizontalAlignment` and `VerticalAlignment` properties as in the below code snippet.
+You can align the annotation horizontally and vertically from its actual plotting position using the `HorizontalAlignment` and `VerticalAlignment` properties as in the following code sample.
 
 {% highlight xaml %}
 
@@ -307,7 +307,7 @@ You can align the annotation horizontally and vertically using `HorizontalAlignm
 
 HorizontalAlignment="Left"
 
-VerticalAlignment="Top"
+VerticalAlignment="Bottom"
 
 X2="2.2"                                                
 
@@ -327,7 +327,7 @@ Opacity="0.5">
 
 {% endhighlight %}
 
-In the following image you can see the rectangle annotation aligned to the top left of the chart area.
+In the following image, you can see the rectangle annotation aligned to the bottom left from its actual position in the chart area.
 
 ![Alignment support for annotations in UWP Chart](Annotation_images/Annotation_img3.jpeg)
 
