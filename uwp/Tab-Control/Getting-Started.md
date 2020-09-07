@@ -14,6 +14,8 @@ This section explains how to create a high level tab navigation using [SfTabCont
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sftabcontrol) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) in any application.
 
+You can refer this [documentation](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in a UWP application.
+
 ## Creating Application with SfTabControl
 In this walk through, user will create a UWP application that contains [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html).
 1. [Creating project](#Creating-the-project)
