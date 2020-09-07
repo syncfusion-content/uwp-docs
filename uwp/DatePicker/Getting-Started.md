@@ -11,8 +11,12 @@ documentation: ug
 
 This section provides a quick overview for working with [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
 
+
+
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sfdatepicker) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the[SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control in any application.
+
+You can refer this [documentation](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in a UWP application.
 
 ## Creating Application with SfDatePicker control
 In this walk through, user will create a UWP application that contains [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
