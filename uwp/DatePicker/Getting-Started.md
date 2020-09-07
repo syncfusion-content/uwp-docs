@@ -83,7 +83,6 @@ In order to add [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfI
 
 3. Create SfDatePicker control instance and add it to the page.
 
-
 {% tabs %}
 
 {% highlight C# %}
