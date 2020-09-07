@@ -14,6 +14,8 @@ This section explains how to create new project in Visual Studio using [SfMasked
 ## Assembly deployment
 Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sfmaskededit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) in any application.
 
+You can refer this [documentation](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in a UWP application.
+
 ## Creating Application with SfMaskedEdit
 In this walk through, user will create a UWP application that contains [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
 1. [Creating project](#Creating-the-project)
@@ -75,7 +77,6 @@ In order to add [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syn
 
 3. Create SfMaskedEdit instance and add it to the page.
 
-
 {% tabs %}
 {% highlight C# %}
 
@@ -103,10 +104,6 @@ Dim sfMaskdeEdit1 As SfMaskedEdit = New SfMaskedEdit() With {
 {% endtabs %}
 
 ![Adding control via XAML or code](Getting-Started_images/Getting-Started_img3.png)
-
-
-
-
 
 ## Adding Mask to the control
 
