@@ -139,7 +139,7 @@ Non-working hours can be disabled by setting [ShowNonWorkingHours](https://help.
 
 ## Collapse hours
 
-You can collapse the hours in `TimeLineView` and `DayView` by adding the hours in `CollapsedHour` collection using [CollapsedHours](https://help.syncfusion.com/cr/uwp/Syncfusion.SfSchedule.UWP~Syncfusion.UI.Xaml.Schedule.SfSchedule~CollapsedHours.html) property.
+You can collapse the hours in `TimeLineView` and `DayView` by adding hours in the `CollapsedHour` collection using the [CollapsedHours](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.CollapsedHourCollection.html) property.
 
 {% tabs %}
 {% highlight c# %}
