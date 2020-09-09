@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Getting Started
 
-This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html)  control.
+This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html)  control.
 
 ## Adding gauge references
 
@@ -16,7 +16,7 @@ Refer to this [article](https://help.syncfusion.com/uwp/add-syncfusion-controls)
 
 ### Initialize gauge
 
-Import  the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) namespace to your respective Window as follows.
+Import  the [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) namespace to your respective Window as follows.
 
 {% tabs %}
 
@@ -34,7 +34,7 @@ using Syncfusion.UI.Xaml.Gauges;
 
 {% endtabs %}
 
-You can initialize an empty [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control.
+You can initialize an empty [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ this.Content = sfLinearGauge;
 
 ### Adding header
 
-You can assign a unique header to [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) by using the [`Header`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge~Header.html)  property and position it wherever as you desired by using the [`HeaderOffset`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge~HeaderOffset.html)  property.
+You can assign a unique header to [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) by using the [`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Header)  property and position it wherever as you desired by using the [`HeaderOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_HeaderOffset)  property.
 
 {% tabs %}
 
@@ -88,7 +88,7 @@ You can assign a unique header to [`SfLinearGauge`](https://help.syncfusion.com/
 
 Configuring scale
 
-You can configure the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale.html) elements by making use of following API’s available in [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html).
+You can configure the [`LinearScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html) elements by making use of following API’s available in [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html).
 They are:
 
 •	ScaleDirection
@@ -161,7 +161,7 @@ They are:
 
 ### Adding ranges
 
-You can categorize the scale values using the start and end values properties in [`LinearRange`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearRange.html). You can add multiple ranges for a scale using the [`Ranges`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGauge.UWP~Syncfusion.UI.Xaml.Gauges.LinearScale~Ranges.html) property.
+You can categorize the scale values using the start and end values properties in [`LinearRange`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearRange.html). You can add multiple ranges for a scale using the [`Ranges`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_Ranges) property.
 
 {% tabs %}
 

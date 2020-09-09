@@ -9,7 +9,7 @@ documentation: ug
 
 # Progress Animations with UWP SfProgressBar
 
-The built-in progress bar shapes are circular and linear. However, any custom object can be used for fill animation. [ProgressType](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfProgressBar.UWP~Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar~ProgressType.html) property is used to choose the progress type(shape) and the enumeration values are
+The built-in progress bar shapes are circular and linear. However, any custom object can be used for fill animation. [ProgressType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_ProgressType) property is used to choose the progress type(shape) and the enumeration values are
 
 1. SolidCircular
 2. SolidLinear
@@ -152,7 +152,7 @@ progressBar.Value = 35.0;
 ![Animating Fill in Custom Object](Progress-Animations-images/Progress-Animations-img5.jpeg)
 
 
-The above code displays only the display content. The custom object can be set using `Template` and [FillPath](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfProgressBar.UWP~Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar~FillPath.html) property. `FillPath` property holds the name of the element in template that is to be animated.
+The above code displays only the display content. The custom object can be set using `Template` and [FillPath](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_FillPath) property. `FillPath` property holds the name of the element in template that is to be animated.
 
 {% tabs %}
 
