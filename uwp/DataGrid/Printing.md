@@ -232,7 +232,7 @@ TargetType of Style
 Header Cell
 </td>
 <td>
-{{'[PrintHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.PrintHeaderCell.html)'| markdownify }}
+{{'[PrintHeaderCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintHeaderCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ Header Cell
 Normal Cells
 </td>
 <td>
-{{'[PrintGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.PrintGridCell.html)'| markdownify }}
+{{'[PrintGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintGridCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ Normal Cells
 Caption summary cells
 </td>
 <td>
-{{'[PrintCaptionSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.PrintCaptionSummaryCell.html)"| markdownify }}
+{{'[PrintCaptionSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintCaptionSummaryCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -256,7 +256,7 @@ Caption summary cells
 Group summary cells
 </td>
 <td>
-{{'[PrintGroupSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.PrintGroupSummaryCell.html)'| markdownify }}
+{{'[PrintGroupSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintGroupSummaryCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ Group summary cells
 Table summary cells
 </td>
 <td>
-{{'[PrintTableSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.PrintTableSummaryCell.html)'| markdownify }}
+{{'[PrintTableSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintTableSummaryCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -272,7 +272,7 @@ Table summary cells
 Unbound row cells
 </td>
 <td>
-{{'[PrintUnboundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.PrintUnboundRowCell.html)'| markdownify }}
+{{'[PrintUnboundRowCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintUnboundRowCell.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -500,7 +500,7 @@ Method
 Header Cell
 </td>
 <td>
-{{'[GetPrintHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintHeaderCell.html)'| markdownify }}
+{{'[GetPrintHeaderCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintHeaderCell_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@ Header Cell
 Normal Cells
 </td>
 <td>
-{{'[GetPrintGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintGridCell.html)'| markdownify }}
+{{'[GetPrintGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintGridCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -516,7 +516,7 @@ Normal Cells
 Caption summary cells
 </td>
 <td>
-{{'[GetPrintCaptionSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintCaptionSummaryCell.html)'| markdownify }}
+{{'[GetPrintCaptionSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintCaptionSummaryCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -524,7 +524,7 @@ Caption summary cells
 Group summary cells
 </td>
 <td>
-{{'[GetPrintGroupSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintGroupSummaryCell.html)'| markdownify }}
+{{'[GetPrintGroupSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintGroupSummaryCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -532,7 +532,7 @@ Group summary cells
 Table summary cells
 </td>
 <td>
-{{'[GetPrintTableSummaryCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintTableSummaryCell.html)'| markdownify }}
+{{'[GetPrintTableSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintTableSummaryCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ Table summary cells
 Unbound row cells
 </td>
 <td>
-{{'[GetPrintUnboundRowCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridPrintManager~GetPrintUnboundRowCell.html)'| markdownify }}
+{{'[GetPrintUnboundRowCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintUnboundRowCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 </table>
