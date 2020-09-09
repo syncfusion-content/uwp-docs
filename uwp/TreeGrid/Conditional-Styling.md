@@ -53,7 +53,7 @@ It affects scrolling performance while styling more number of columns based on n
 
 ### Style cells using converter
 
-The record cells ([TreeGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally by changing its property value based on cell value or data object using converter.
+The record cells ([TreeGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally by changing its property value based on cell value or data object using converter.
 
 Here, grid cell background is changed using converter, where converter returns the value based on ID property of underlying record.
 
@@ -144,7 +144,7 @@ internal class StyleConverter : IValueConverter
 
 ### Style cells using style selector
 
-The record cells ([TreeGridCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally based on data by setting [SfTreeGrid.CellStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellStyleSelectorProperty.html)property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~CellStyleSelectorProperty.html)property and you can get the container as TreeGridCell in the StyleSelector.
+The record cells ([TreeGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html)) can be customized conditionally based on data by setting [SfTreeGrid.CellStyleSelector ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CellStyleSelectorProperty)property and the particular column record cells can be customized by setting [GridColumn.CellStyleSelector ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CellStyleSelectorProperty)property and you can get the container as TreeGridCell in the StyleSelector.
 
 {% tabs %}
 {% highlight xaml %}
@@ -235,7 +235,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ### Style rows using converter
 
-The record rows ([TreeGridRowControl ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter, where converter returns the value based on underlying record.
+The record rows ([TreeGridRowControl ](]https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter, where converter returns the value based on underlying record.
 
 {% tabs %}
 {% highlight xaml %}
@@ -277,7 +277,7 @@ internal class StyleConverter : IValueConverter
 
 ### Style rows using style selector
 
-The record rows ([TreeGridRowControl](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally based on data by setting [SfTreeGrid.RowStyleSelector ](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid~RowStyleSelectorProperty.html)property and you can get the container as TreeGridRowControl in StyleSelector.
+The record rows ([TreeGridRowControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally based on data by setting [SfTreeGrid.RowStyleSelector ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowStyleSelectorProperty)property and you can get the container as TreeGridRowControl in StyleSelector.
 
 {% tabs %}
 {% highlight xaml %}
@@ -311,7 +311,7 @@ public class SelectorClass : StyleSelector
 
 ## Row Header
 
-The appearance of row header ([TreeGridRowHeaderCell](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter,where converter returns the value based on Underlying record.
+The appearance of row header ([TreeGridRowHeaderCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridHeaderCell.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter,where converter returns the value based on Underlying record.
 
 {% tabs %}
 {% highlight xaml %}

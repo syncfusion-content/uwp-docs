@@ -19,7 +19,7 @@ The following properties are used for zooming feature of the image editor contro
 
 ## Enable zooming
 
-You can enable or disable the zooming functionality by setting the [`EnableZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfImageEditor.UWP~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~EnableZooming.html) value to true or false. By default, the `EnableZooming` value is set to true.
+You can enable or disable the zooming functionality by setting the [`EnableZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_EnableZooming) value to true or false. By default, the `EnableZooming` value is set to true.
 
 {% tabs %}
 
@@ -39,14 +39,14 @@ You can enable or disable the zooming functionality by setting the [`EnableZoomi
 
 ## Panning mode
 
-The image editor control provides support for panning and allows to pan the image with two fingers or single finger by setting the [`PanningMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfImageEditor.UWP~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~PanningMode.html).
+The image editor control provides support for panning and allows to pan the image with two fingers or single finger by setting the [`PanningMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_PanningMode).
 
 The following properties are used for panning:
 
 * `SingleFinger`: Zooms or pans the image with single finger, but shapes and text selection cannot be performed with this mode.
 * `TwoFinger`: Zooms or pans the image with two finger. The shapes and text selection can be performed with this mode.
 
-By default, the [`PanningMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfImageEditor.UWP~Syncfusion.UI.Xaml.ImageEditor.SfImageEditor~PanningMode.html) value is set to `TwoFinger`.
+By default, the [`PanningMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_PanningMode) value is set to `TwoFinger`.
 
 {% tabs %}
 

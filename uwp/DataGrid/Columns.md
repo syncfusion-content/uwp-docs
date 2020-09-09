@@ -9,7 +9,7 @@ documentation: ug
 
 # Columns in UWP DataGrid (SfDataGrid)
 
-SfDataGrid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
+SfDataGrid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
 
 Below are the built-in column types supported in SfDataGrid. Each column has its own properties to handle different types of data.
 
@@ -24,7 +24,7 @@ Description
 </tr>
 <tr>
 <td>
-{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTextColumn.html)'| markdownify }}
+{{'[GridTextColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridTextColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the string data. 
@@ -32,7 +32,7 @@ Use to display the string data.
 </tr>
 <tr>
 <td>
-{{'[GridNumericColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridNumericColumn.html)'| markdownify }}
+{{'[GridNumericColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridNumericColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric data.
@@ -40,7 +40,7 @@ Use to display the numeric data.
 </tr>
 <tr>
 <td>
-{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridDateTimeColumn.html)'| markdownify }}
+{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridDateTimeColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the date time value 
@@ -48,7 +48,7 @@ Use to display the date time value
 </tr>
 <tr>
 <td>
-{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html)'| markdownify }}
+{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridComboBoxColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using ComboBox.
@@ -56,7 +56,7 @@ Use to display the IEnumerable data using ComboBox.
 </tr>
 <tr>
 <td>
-{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html)'| markdownify }}
+{{'[GridCheckBoxColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCheckBoxColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the boolean type data
@@ -64,7 +64,7 @@ Use to display the boolean type data
 </tr>
 <tr>
 <td>
-{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridImageColumn.html)'| markdownify }}
+{{'[GridImageColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridImageColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the image in each row.
@@ -72,7 +72,7 @@ Use to display the image in each row.
 </tr>
 <tr>
 <td>
-{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn.html)'| markdownify }}
+{{'[GridHyperlinkColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridHyperlinkColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the <code>Uri</code> data
@@ -80,7 +80,7 @@ Use to display the <code>Uri</code> data
 </tr>
 <tr>
 <td>
-{{'[GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html)'| markdownify }}
+{{'[GridTemplateColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridTemplateColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the custom template-specified content.
@@ -88,7 +88,7 @@ Use to display the custom template-specified content.
 </tr>
 <tr>
 <td>
-{{'[GridUnboundColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html)'| markdownify }}
+{{'[GridUnboundColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display custom information of each record.
@@ -96,7 +96,7 @@ Use to display custom information of each record.
 </tr>
 <tr>
 <td>
-{{'[GridMultiColumnDropDownList](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html)'| markdownify }}
+{{'[GridMultiColumnDropDownList](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridMultiColumnDropDownList.html)'| markdownify }}
 </td>
 <td>
 Use to display the IEnumerable data using SfMultiColumnDropdownControl.
@@ -104,7 +104,7 @@ Use to display the IEnumerable data using SfMultiColumnDropdownControl.
 </tr>
 <tr>
 <td>
-{{'[GridUpDownColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridUpDownColumn.html)'| markdownify }}
+{{'[GridUpDownColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUpDownColumn.html)'| markdownify }}
 </td>
 <td>
 Use to display the numeric values .
@@ -121,7 +121,7 @@ You can let the SfDataGrid to create columns or you can manually define columns 
 
 ### Automatically generating columns
 
-The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumns.html). Default value is `true`.
+The automatic column generation based on properties of data object can be enabled or disabled by setting [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns). Default value is `true`.
 
 Columns are generated based on type of property. For example, `GridNumericColumn` is added for `int` type property. 
 
@@ -190,7 +190,7 @@ N> The order of columns in the collection will determine the order of that they 
 
 #### AutoGenerateColumns with different modes
 
-Column auto generation is controlled using [SfDataGrid.AutoGenerateColumnsMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumnsMode.html) property.
+Column auto generation is controlled using [SfDataGrid.AutoGenerateColumnsMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumnsMode) property.
  
 The `SfDataGrid.AutoGenerateColumnsMode` includes the following modes.
 
@@ -254,8 +254,8 @@ Keeps old columns in DataGrid.Columns collection.
 </table>
 
 #### Auto generating CustomType Property
-Custom type properties in data object can be auto-generated by setting [AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumnsForCustomType.html) property as true. Default value is false.
-Custom type properties will be auto-generated through [AutoGenerateColumnsModeForCustomType](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AutoGenerateColumnsModeForCustomType.html) property.
+Custom type properties in data object can be auto-generated by setting [AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumnsForCustomType) property as true. Default value is false.
+Custom type properties will be auto-generated through [AutoGenerateColumnsModeForCustomType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumnsModeForCustomType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -317,7 +317,7 @@ You can download the sample demo [here](https://github.com/SyncfusionExamples/ho
 
 #### Customize auto-generated columns
 
-You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~AutoGeneratingColumn_EV.html) event.
+You can customize or cancel the generated column by handling [AutoGeneratingColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
  
 `AutoGeneratingColumn` event occurs when the individual column is auto-generated for public and non-static property of underlying data object.
 
@@ -331,7 +331,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-[AutoGeneratingColumnArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs~Column.html) property returns the newly created column.
+[AutoGeneratingColumnArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html) provides the information about the auto-generated column to the `AutoGeneratingColumn` event. [AutoGeneratingColumnArgs.Column](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs.html#Syncfusion_UI_Xaml_Grid_AutoGeneratingColumnArgs_Column) property returns the newly created column.
 
 ##### Cancel column generation for particular property
 
@@ -405,7 +405,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 #### Setting template to auto-generated column
 
-You can set [GridColumn.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~HeaderTemplate.html) and [GridColumn.CellTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~CellTemplate.html) properties for auto-generated column in `AutoGeneratingColumn` event handler.
+You can set [GridColumn.HeaderTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_HeaderTemplate) and [GridColumn.CellTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) properties for auto-generated column in `AutoGeneratingColumn` event handler.
  
 {% tabs %}
 {% highlight xaml %}
@@ -536,7 +536,7 @@ The OrderID and CustomerID column rearranged based on specified order.
 
 ### Manually defining columns
 
-SfDataGrid control allows you to define the columns manually by adding desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) collection.
+SfDataGrid control allows you to define the columns manually by adding desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) collection.
  
 {% tabs %}
 {% highlight xaml %}
@@ -571,7 +571,7 @@ You can refer more information about handling the column level operations for ma
 
 ## Column manipulation
 
-You can get the columns (added or auto-generated) from [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~Columns.html) property.
+You can get the columns (added or auto-generated) from [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property.
  
 ### Adding column
 
@@ -633,7 +633,7 @@ foreach (var name in childColumns)
 
 ## Resizing Columns
 
-SfDataGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfDataGrid.AllowResizingColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowResizingColumns.html) or [GridColumn.AllowResizing](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~AllowResizing.html) property.
+SfDataGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfDataGrid.AllowResizingColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingColumns) or [GridColumn.AllowResizing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowResizing) property.
  
 N> Resizing considers MinWidth and MaxWidth of column.
 
@@ -652,15 +652,15 @@ You can change the column width by click and dragging the resizing cursor at the
 
 ### Hidden column resizing
 
-SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowResizingHiddenColumns.html) property to `true`.
+SfDataGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfDataGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property to `true`.
 
 ![Hidden column resizing](Columns_images/Columns_img4.png)
 
 ### Disable resizing
 
-You can cancel resizing of particular column by setting [GridColumn.AllowResizing](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~AllowResizing.html) property to `false`. In another way, you can cancel the resizing by handling [SfDataGrid.ResizingColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ResizingColumns_EV.html) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
+You can cancel resizing of particular column by setting [GridColumn.AllowResizing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowResizing) property to `false`. In another way, you can cancel the resizing by handling [SfDataGrid.ResizingColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. The `ResizingColumns` event occurs when you start dragging by resizing cursor on headers.
  
-[ResizingColumnsEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html) of `ResizingColumns` provides information about the columns’s index and width.
+[ResizingColumnsEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html) of `ResizingColumns` provides information about the columns’s index and width.
 
 {% tabs %}
 {% highlight c# %}
@@ -676,7 +676,7 @@ void dataGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 
 ### Identify resizing of the column gets completed
 
-SfDataGrid allows you to identify the progress of the resizing of columns through [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs~Reason.html) property. You can get the width of the column after resizing completed by getting [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs~Width.html) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnResizingReason.html) in [ResizingColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ResizingColumns_EV.html) event.
+SfDataGrid allows you to identify the progress of the resizing of columns through [ResizingColumnsEventArgs.Reason](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_Reason) property. You can get the width of the column after resizing completed by getting [ResizingColumnsEventArgs.Width](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ResizingColumnsEventArgs.html#Syncfusion_UI_Xaml_Grid_ResizingColumnsEventArgs_Width) when `ResizingColumnsEventArgs.Reason` is [ColumnResizingReason.Resized](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnResizingReason.html) in [ResizingColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -694,7 +694,7 @@ void OnResizingColumns(object sender, ResizingColumnsEventArgs e)
 
 ## Column drag and drop
 
-You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~AllowDraggingColumns.html) to `true`.
+You can allow end-users to rearrange the columns by drag and drop the column headers by setting [SfDataGrid.AllowDraggingColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowDraggingColumns) to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -710,7 +710,7 @@ You can allow end-users to rearrange the columns by drag and drop the column hea
 
 
 
-You can enable or disable dragging on particular column using [GridColumn.AllowDragging](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~AllowDragging.html) property.
+You can enable or disable dragging on particular column using [GridColumn.AllowDragging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_AllowDragging) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -722,7 +722,7 @@ You can enable or disable dragging on particular column using [GridColumn.AllowD
 
 ### Disable column reordering
 
-You can cancel the particular column dragging by handling [SfDataGrid.QueryColumnDragging](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryColumnDragging_EV.html). `QueryColumnDragging` event occurs when you start dragging the column header. [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html) of `QueryColumnDragging` event provides information about the column triggered this event.
+You can cancel the particular column dragging by handling [SfDataGrid.QueryColumnDragging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html). `QueryColumnDragging` event occurs when you start dragging the column header. [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html) of `QueryColumnDragging` event provides information about the column triggered this event.
  
 `QueryColumnDraggingEventArgs.From` property returns the index of column triggered this event. `QueryColumnDraggingEventArgs.To` property returns the index where you try to drop the column. `QueryColumnDraggingEventArgs.Reason` returns column dragging details by `QueryColumnDraggingReason`.
 
@@ -744,7 +744,7 @@ void dataGrid_QueryColumnDragging(object sender, QueryColumnDraggingEventArgs e)
 
 ### Drag and drop customization 
 
-The drag-and-drop operations can be changed by overriding the virtual methods of [GridColumnDragDropController](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnDragDropController.html) class and assigning it to `SfDataGrid.GridColumnDragDropController`.
+The drag-and-drop operations can be changed by overriding the virtual methods of [GridColumnDragDropController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnDragDropController.html) class and assigning it to `SfDataGrid.GridColumnDragDropController`.
  
 {% tabs %}
 {% highlight c# %}
@@ -815,7 +815,7 @@ public class CustomDragDropController:GridColumnDragDropController
 
 ### Disabling drag & drop between frozen and non-frozen columns
 
-By default, the columns re-ordering performed between any column regions of columns. You can cancel the dropping action between the frozen and non-frozen columns by handling [SfDataGrid.QueryColumnDragging](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryColumnDragging_EV.html) event.
+By default, the columns re-ordering performed between any column regions of columns. You can cancel the dropping action between the frozen and non-frozen columns by handling [SfDataGrid.QueryColumnDragging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -842,7 +842,7 @@ N> FrozenColumnCount and FooterColumnCount should be lesser than the number of C
 
 ## Freezing Columns 
 
-You can freeze the columns in view at the left and right side like in excel by setting [SfDataGrid.FrozenColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FrozenColumnCount.html) and [SfDataGrid.FooterColumnCount](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfGridBase~FooterColumnCount.html) properties.
+You can freeze the columns in view at the left and right side like in excel by setting [SfDataGrid.FrozenColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FrozenColumnCount) and [SfDataGrid.FooterColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_FooterColumnCount) properties.
  
 {% tabs %}
 {% highlight xaml %}
@@ -862,9 +862,9 @@ You can freeze the columns in view at the left and right side like in excel by s
 
 ## Stacked Headers
 
-SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedHeaderRows.html). You can group one or more columns under each stacked header.
+SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.StackedHeaderRows.html). You can group one or more columns under each stacked header.
 
-Each [StackedHeaderRow](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedHeaderRow.html) contains the [StackedColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedHeaderRow~StackedColumns.html) where each [StackedColumn](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedColumn.html) contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are grouped under the stacked header row. The `StackedColumn.MappingName` is a unique name used for mapping a specific child columns grouped under the same stacked header row whereas, the `StackedColumn.HeaderText` returns the text that displays in stacked header row.
+Each [StackedHeaderRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.StackedHeaderRow.html) contains the [StackedColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.StackedHeaderRow.html#Syncfusion_UI_Xaml_Grid_StackedHeaderRow_StackedColumns) where each [StackedColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.StackedColumn.html) contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are grouped under the stacked header row. The `StackedColumn.MappingName` is a unique name used for mapping a specific child columns grouped under the same stacked header row whereas, the `StackedColumn.HeaderText` returns the text that displays in stacked header row.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1003,7 +1003,7 @@ this.dataGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns
 
 ### Changing stacked header row height
 
-You can change the height of StackedHeaderRows by using [VisualContainer.RowHeights](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.VisualContainer~RowHeights.html) property.
+You can change the height of StackedHeaderRows by using [VisualContainer.RowHeights](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.VisualContainer.html#Syncfusion_UI_Xaml_Grid_VisualContainer_RowHeights) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1021,7 +1021,7 @@ visualContainer.InvalidateMeasure();
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the height of stacked header rows using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~QueryRowHeight_EV.html) event.
+You can also change the height of stacked header rows using [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
  
 {% tabs %}
 {% highlight c# %}
@@ -1042,7 +1042,7 @@ void dataGrid_QueryRowHeight(object sender, Syncfusion.UI.Xaml.Grid.QueryRowHeig
 
 ## Column Sizing
 
-SfDataGrid allows you to set the column widths based on certain logic using [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~ColumnSizer.html) or [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnSizer.html) property. 
+SfDataGrid allows you to set the column widths based on certain logic using [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ColumnSizer) or [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ColumnSizer) property. 
 
 Below is the list of predefined column sizing options available.
 
@@ -1135,7 +1135,7 @@ N> The `GridColumn.ColumnSizer` takes higher priority than the `SfDataGrid.Colum
 
 ### Fill remaining width for any column instead of last column when ColumnSizer is AutoLastColumnFill or AutoWithLastColumnFill 
 
-In SfDataGrid while setting SfDataGrid.ColumnSizer as AutoLastColumnFill or AutoWithLastColumnFill remaining width is applied to last column. You can apply the remaining width to specific column by setting [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.GridColumn~ColumnSizer.html) property as like below.
+In SfDataGrid while setting SfDataGrid.ColumnSizer as AutoLastColumnFill or AutoWithLastColumnFill remaining width is applied to last column. You can apply the remaining width to specific column by setting [GridColumn.ColumnSizer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_ColumnSizer) property as like below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1161,9 +1161,9 @@ this.datagrid.Columns["OrderID"].ColumnSizer = GridLengthUnitType.AutoWithLastCo
 
 ### Refreshing ColumnSizer at runtime
 
-You can refresh the `ColumnSizer` at runtime by calling [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnSizer~Refresh.html) method. 
+You can refresh the `ColumnSizer` at runtime by calling [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_Refresh) method. 
 
-SfDataGrid support to recalculates the column auto width by calling reset methods of `GridColumnSizer`. [GridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~ResetAutoCalculationforAllColumns.html) method reset widths to all columns. [GridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~ResetAutoCalculation.html) method reset the width to particular column.
+SfDataGrid support to recalculates the column auto width by calling reset methods of `GridColumnSizer`. [GridColumnSizer.ResetAutoCalculationforAllColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculationforAllColumns) method reset widths to all columns. [GridColumnSizer.ResetAutoCalculation](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_ResetAutoCalculation_Syncfusion_UI_Xaml_Grid_GridColumnBase_) method reset the width to particular column.
 
 N> The `GridColumnSizer.ResetAutoCalculationforAllColumns` or `GridColumnSizer.ResetAutoCalculation` methods applicable for Auto, AutoWithLastColumnFill, AutoLastColumnFill, SizeToCells types.
 
@@ -1183,7 +1183,7 @@ this.dataGrid.GridColumnSizer.Refresh();
 
 ### Resetting column width to apply ColumnSizer
 
-When the width of the column is explicitly defined or column is resized, then column width is not changed based on `GridColumnSizer`. You can reset [GridColumn.Width](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnBase~Width.html) by setting `double.NaN` to apply column width based on column sizer.
+When the width of the column is explicitly defined or column is resized, then column width is not changed based on `GridColumnSizer`. You can reset [GridColumn.Width](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_Width) by setting `double.NaN` to apply column width based on column sizer.
 
 {% tabs %}
 {% highlight c# %}
@@ -1200,7 +1200,7 @@ this.dataGrid.GridColumnSizer.Refresh();
 
 ### Customizing built-in column sizing logic
 
-SfDataGrid process column sizing operations in [GridColumnSizer](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to ` SfDataGrid.GridColumnSizer`.
+SfDataGrid process column sizing operations in [GridColumnSizer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html) class. You can customize the column sizing operations by overriding `GridColumnSizer` and set it to ` SfDataGrid.GridColumnSizer`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1235,7 +1235,7 @@ By default, the ColumnSizer calculates column’s width based on fixed `FontSize
 
 #### Changing Sort and Filter Icon width
 
-You can change the filter icon and sort icon widths for column width calculation by setting [GridColumnSizer.SortIconWidth](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~SortIconWidth.html) and [GridColumnSizer.FilterIconWidth](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnSizer~FilterIconWidth.html) properties.
+You can change the filter icon and sort icon widths for column width calculation by setting [GridColumnSizer.SortIconWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_SortIconWidth) and [GridColumnSizer.FilterIconWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_FilterIconWidth) properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -1246,7 +1246,7 @@ dataGrid.GridColumnSizer.FilterIconWidth = 20;
 
 #### Changing Font settings for SfDataGrid
 
-You can change the `font settings` for column width calculation by setting [GridColumnSizer.FontSize](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~FontSize.html), [GridColumnSizer.FontFamily](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~FontFamily.html) and [GridColumnSizer.Margin](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~Margin.html) properties.  These settings will be considered for all columns.
+You can change the `font settings` for column width calculation by setting [GridColumnSizer.FontSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_FontSize), [GridColumnSizer.FontFamily](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_FontFamily) and [GridColumnSizer.Margin](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_Margin) properties.  These settings will be considered for all columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -1258,7 +1258,7 @@ this.dataGrid.GridColumnSizer.Margin = new Thickness(9, 3, 1, 3);
 
 #### Changing Font settings for one Column
 
-You can change the `font setting` for one column width calculation using [GridColumnSizer.SetFontFamily](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~SetFontFamily.html), [GridColumnSizer.SetFontSize](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~SetFontSize.html) and [GridColumnSizer.SetMargin](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.ColumnSizerBase%601~SetMargin.html) static methods of `GridColumnSizer` to `GridColumn`.
+You can change the `font setting` for one column width calculation using [GridColumnSizer.SetFontFamily](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_SetFontFamily_Syncfusion_UI_Xaml_Grid_GridColumnBase_Windows_UI_Xaml_Media_FontFamily_), [GridColumnSizer.SetFontSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_SetFontSize_Syncfusion_UI_Xaml_Grid_GridColumnBase_System_Double_) and [GridColumnSizer.SetMargin](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.ColumnSizerBase-1.html#Syncfusion_UI_Xaml_Grid_ColumnSizerBase_1_SetMargin_Syncfusion_UI_Xaml_Grid_GridColumnBase_Windows_UI_Xaml_Thickness_) static methods of `GridColumnSizer` to `GridColumn`.
  
 {% tabs %}
 {% highlight c# %}
@@ -1271,7 +1271,7 @@ GridColumnSizer.SetMargin(gridColumn, new Thickness(9, 3, 1, 3));
 
 ### Star column sizer ratio support
 
-You can customize the `ColumnSizer.Star` width calculation logic by overriding [SetStarWidth](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnSizer~SetStarWidth.html) method of `GridColumnSizer`.
+You can customize the `ColumnSizer.Star` width calculation logic by overriding [SetStarWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_SetStarWidth_System_Double_System_Collections_Generic_IEnumerable_Syncfusion_UI_Xaml_Grid_GridColumn__) method of `GridColumnSizer`.
 
 For example, you can calculate the column width, with specified ratios instead of dividing equal width for all columns in Star calculation using `ColumnRatio` attached property.
 
@@ -1408,7 +1408,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
 
 ### Change the width of GridComboBoxColumn based on it’s ItemsSource
 
-By default, the `ColumnSizer` calculates auto width based on the column content. You can change the auto width calculation for `GridComboBoxColumn` based on its items source by overriding the [CalculateCellWidth](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.GridColumnSizer~CalculateCellWidth.html) virtual method.
+By default, the `ColumnSizer` calculates auto width based on the column content. You can change the auto width calculation for `GridComboBoxColumn` based on its items source by overriding the [CalculateCellWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_CalculateCellWidth_Syncfusion_UI_Xaml_Grid_GridColumn_System_Boolean_) virtual method.
 
 Below code creates `CustomColumnSizer` to change the width of `GridComboboxColumn` and set to `SfDataGrid.GridColumnSizer`.
 

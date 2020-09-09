@@ -8,13 +8,13 @@ documentation: ug
 ---
 # Watermark
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart.html) provides watermark support which is used to add text or images to the chart area. The major application of watermark is to define the copyright information of the user it belongs to.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides watermark support which is used to add text or images to the chart area. The major application of watermark is to define the copyright information of the user it belongs to.
 
-This section is to help you understand how to use the [`Watermark`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.Watermark.html) in your chart.
+This section is to help you understand how to use the [`Watermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Watermark.html) in your chart.
 
 ## Adding text watermark
 
-You can add the text to chart background using the Content property of [`Watermark`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.SfChart~Watermark.html).
+You can add the text to chart background using the Content property of [`Watermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Watermark).
 
 The following code example explains how to set your custom text as Watermark.
 

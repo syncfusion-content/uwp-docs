@@ -282,7 +282,7 @@ public class ProjectTrackerViewModel
 
 ## Binding data
 
-To bind the data source of the SfGantt, set the [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ItemsSource.html) property as shown in the following code sample.
+To bind the data source of the SfGantt, set the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ItemsSource) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -305,7 +305,7 @@ sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollecti
 
 By default, the grid view is manipulated with name, start date, finish date, duration, progress, predecessor, and resources columns.
 
-The visible columns of grid view can be customized using the [`VisibleGridColumns`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~VisibleGridColumns.html) property.
+The visible columns of grid view can be customized using the [`VisibleGridColumns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_VisibleGridColumns) property.
 
 The following code sample demonstrates how to customize the visible columns.
 
@@ -336,7 +336,7 @@ sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttri
 
 ## Sorting
 
-Sorting can be enabled using the [`AllowSorting`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowSorting.html) property. The sorting functionality is used to arrange the tasks in ascending or descending order based on a column.
+Sorting can be enabled using the [`AllowSorting`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_AllowSorting) property. The sorting functionality is used to arrange the tasks in ascending or descending order based on a column.
 
 The following code sample demonstrates how to enable sorting in the Gantt control.
 
@@ -366,7 +366,7 @@ sfGantt.AllowSorting = true;
 
 ## Editing
 
-Editing can be enabled using the [`AllowEditing`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~AllowEditing.html) property. You can edit cells and drag or resize the task bar or progress bar in chart view. The drag-and-drop functionality establishes the relationship between two tasks.
+Editing can be enabled using the [`AllowEditing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_AllowEditing) property. You can edit cells and drag or resize the task bar or progress bar in chart view. The drag-and-drop functionality establishes the relationship between two tasks.
 
 The following code sample demonstrates how to enable editing in the Gantt control.
 
@@ -445,7 +445,7 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 ### Predecessor offset 
 
-In Gantt, the predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.TaskRelationship~Offset.html) can be defined with the day duration unit.
+In Gantt, the predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskRelationship.html#Syncfusion_UI_Xaml_Gantt_TaskRelationship_Offset) can be defined with the day duration unit.
 
 The following code sample demonstrates how to define offset time to the predecessor.
 
@@ -514,7 +514,7 @@ private GanttResourceCollection GetResources()
 
 {% endhighlight %}
 
-2. Bind the resource collection to the [`ProjectResources`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ProjectResources.html) property.
+2. Bind the resource collection to the [`ProjectResources`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ProjectResources) property.
 
 {% tabs %}
 
@@ -562,9 +562,9 @@ public ObservableCollection<TaskDetail> GetData()
 
 This functionality is used to highlight and customize the weekends in the Gantt control. By default, Saturday and Sunday are considered as weekends.
 
-* [`ShowNonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~ShowNonWorkingDays.html): Enables or disables the non-working days.
-* [`NonWorkingDays`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDays.html): Customizes the weekends.
-* [`NonWorkingDaysBackground`](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGantt.UWP~Syncfusion.UI.Xaml.Gantt.SfGantt~NonWorkingDaysBackground.html): Changes the weekends highlighting color.
+* [`ShowNonWorkingDays`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ShowNonWorkingDays): Enables or disables the non-working days.
+* [`NonWorkingDays`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_NonWorkingDays): Customizes the weekends.
+* [`NonWorkingDaysBackground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_NonWorkingDaysBackground): Changes the weekends highlighting color.
 
 The following code sample demonstrates how to display Friday as weekend.
 
