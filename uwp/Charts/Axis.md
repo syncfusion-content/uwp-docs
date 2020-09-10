@@ -1385,7 +1385,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![ PlotOffset support in UWP Chart](Axis_images/PlotOffset.png)
 
-### PlotOffseStart
+### PlotOffsetStart
 
 The [`PlotOffsetStart`] property is used to provide padding to the axis at start position. The following code sample demonstrates the padding applied to Start position for both x and y-axes.
 
