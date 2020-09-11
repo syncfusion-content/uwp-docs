@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## UI design for desktop
+# UI design for desktop
 
 ![customtoolbarimage](CustomToolbarImages/CustomToolbarImage22.png)
 

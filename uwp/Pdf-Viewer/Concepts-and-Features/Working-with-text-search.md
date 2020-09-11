@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Working with text search
+# Working with text search
 
 Text search can be done in two ways, by using the SearchText method or by using the commands.
 

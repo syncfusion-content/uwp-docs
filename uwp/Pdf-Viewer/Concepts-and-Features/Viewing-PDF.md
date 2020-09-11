@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Viewing PDF
+# Viewing PDF
 The SfPdfViewer has the ability to load PDF documents from stream and PdfLoadedDocument object.
 The below code explains how to load the document using a PdfLoadedDocument object that was created from the PDF in Assets folder of the application.
 {% tabs %}

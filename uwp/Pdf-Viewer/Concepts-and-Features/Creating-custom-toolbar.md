@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Creating a simple PDF viewer application with a toolbar
+# Creating a simple PDF viewer application with a toolbar
 
 PdfViewer does not have a toolbar by default. But a custom toolbar can be designed at the sample with its buttons wired to the PdfViewer APIs. 
 
