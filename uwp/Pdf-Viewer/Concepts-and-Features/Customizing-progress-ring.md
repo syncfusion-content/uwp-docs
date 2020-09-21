@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing progress ring in Syncfusion Essential UWP PDF viewer.
-description: Learn about Customizing progress ring support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
+description: Learn about customizing progress ring support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
 platform: uwp
 control: PDF viewer
 documentation: ug

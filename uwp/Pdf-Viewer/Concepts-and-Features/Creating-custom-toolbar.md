@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating custom toolbar with Syncfusion Essential UWP PDF viewer.
-description: Learn about Creating a simple PdfViewer application support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
+description: Learn about creating a simple Pdf Viewer application support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
 platform: uwp
 control: PDF viewer
 documentation: ug
