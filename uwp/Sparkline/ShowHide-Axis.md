@@ -10,9 +10,9 @@ documentation: ug
 
 ShowAxis is used to enable the axis and this feature is applicable for all the sparkline except WinLoss sparkline, also you can style the axis by AxisStyle property and position the axis by AxisOrigin property.
 
-* [`ShowAxis`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~ShowAxis.html) – Gets or sets the bool value whether to show or hide the axis.
-* [`AxisOrigin`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~AxisOrigin.html#) - Gets or sets the double for axis origin.
-* [`AxisStyle`](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfChart.UWP~Syncfusion.UI.Xaml.Charts.MarkerBase~AxisStyle.html) – Gets or sets the style for axis line.
+* [`ShowAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerBase.html#Syncfusion_UI_Xaml_Charts_MarkerBase_ShowAxis) – Gets or sets the bool value whether to show or hide the axis.
+* [`AxisOrigin`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerBase.html#Syncfusion_UI_Xaml_Charts_MarkerBase_AxisOrigin) - Gets or sets the double for axis origin.
+* [`AxisStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerBase.html#Syncfusion_UI_Xaml_Charts_MarkerBase_AxisStyle) – Gets or sets the style for axis line.
 
 **Show Axis**
 
