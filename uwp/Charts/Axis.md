@@ -1319,7 +1319,7 @@ If [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundStart`].
 
-![NumericalAxis range padding support in UWP Chart]
+![NumericalAxis range padding support in UWP Chart](Axis_images/NumericalAxis_RoundStart.png)
 
 
 
@@ -1327,7 +1327,7 @@ If [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`RoundEnd`].
 
-![NumericalAxis range padding support in UWP Chart]
+![NumericalAxis range padding support in UWP Chart](Axis_images/NumericalAxis_RoundEnd.png)
 
 
 
@@ -1335,7 +1335,7 @@ If [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`PrependInterval`].
 
-![NumericalAxis range padding support in UWP Chart]
+![NumericalAxis range padding support in UWP Chart](Axis_images/NumericalAxis_PrependInterval.png)
 
 
 
@@ -1343,7 +1343,7 @@ If [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 The following screenshot demonstrates a chart’s x-axis with [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) set to [`AppendInterval`].
 
-![NumericalAxis range padding support in UWP Chart]
+![NumericalAxis range padding support in UWP Chart](Axis_images/NumericalAxis_AppendInterval.png)
 
 ### DateTimeAxis RangePadding
 
@@ -1380,25 +1380,25 @@ When [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Char
 
 When [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`RoundStart`], the range of the chart axis is rounded in the start off to the nearest possible DateTime value, as shown in the following screenshot.
 
-![DateTimeAxis range padding support in UWP Chart]
+![DateTimeAxis range padding support in UWP Chart](Axis_images/DateTimeAxis_RoundStart.png)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`RoundEnd`], the range of the chart axis is rounded in the end off to the nearest possible DateTime value, as shown in the following screenshot.
 
-![DateTimeAxis range padding support in UWP Chart]
+![DateTimeAxis range padding support in UWP Chart](Axis_images/DateTimeAxis_RoundEnd.png)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`PrependInterval`], the DateTime interval of the axis is added in the start as padding, as shown in the following screenshot.
 
-![DateTimeAxis range padding support in UWP Chart]
+![DateTimeAxis range padding support in UWP Chart](Axis_images/DateTimeAxis_PrependInterval.png)
 
 
 
 When [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html#Syncfusion_UI_Xaml_Charts_DateTimeAxis_RangePadding) for [`DateTimeAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) is set to [`AppendInterval`], the DateTime interval of the axis is added in the end as padding, as shown in the following screenshot.
 
-![DateTimeAxis range padding support in UWP Chart]
+![DateTimeAxis range padding support in UWP Chart](Axis_images/DateTimeAxis_AppendInterval.png)
 
 ### Applying padding to the axis
 
