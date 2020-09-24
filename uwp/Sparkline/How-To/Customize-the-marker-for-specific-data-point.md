@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Customize the marker for specific data point
 
-We can customize the marker for specific data point with custom template for LineSparkline and AreaSparkline, in order to customize the marker we need to inherit the [`MarkerTemplateSelector`](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfChart.WPF~Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.html#) class and override the SelectTemplate method.
+We can customize the marker for specific data point with custom template for LineSparkline and AreaSparkline, in order to customize the marker we need to inherit the [`MarkerTemplateSelector`](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.html#) class and override the SelectTemplate method.
 
 {%highlight C#%}
 
