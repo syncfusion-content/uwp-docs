@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Creating custom toolbar with Syncfusion Essential UWP PDF viewer.
-description: Creating custom toolbar for desktop with Syncfusion Essential UWP PDF viewer.
+description: Learn about the Desktop support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details. 
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-## UI design for desktop
+# UI design for desktop
 
 ![customtoolbarimage](CustomToolbarImages/CustomToolbarImage22.png)
 
@@ -22,7 +22,7 @@ All the four toolbars will not be always visible. Some of the toolbars will be v
 
 The code snippets provided in this whole section are basic and are only given as examples. Do not copy and paste them as such in your sample. For working code refer the complete sample attached at the bottom of this page. This sample is the same as in the &#34;UI design for mobile&#34; page. 
 
-### PdfViewer
+## PdfViewer
 
 Add a Grid to the desktop XAML page and name it as &#34;parentGrid&#34; and add rows and columns as shown below. This Grid will act as the parent of all elements in the sample. Define an event handler for the Loaded method of the Grid. 
 
@@ -81,7 +81,7 @@ private async void PageLoaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Top toolbar
+## Top toolbar
 
 ![customtoolbarimage](CustomToolbarImages/CustomToolbarImage4.jpeg)
 
@@ -132,7 +132,7 @@ Add a Grid to the parentGrid and add the listed UI elements in successive column
 {% endhighlight %}
 {% endtabs %}
 
-### Opening and saving
+## Opening and saving
 
 Add buttons with names &#34;Open&#34; and &#34;Save&#34;. 
 
@@ -207,7 +207,7 @@ private void SaveButton_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 
-### Printing and page navigation
+## Printing and page navigation
 
 Add buttons with names &#34;PrintButton&#34;, &#34;PrevPageButton&#34;,&#34;NextPageButton&#34;. Set the Command properties of the buttons to PrintCommand, PreviousPageCommand and NextPageCommand respectively. 
 
@@ -250,7 +250,7 @@ private async void PageDestinationTextBox_KeyDown(object sender, KeyRoutedEventA
 {% endhighlight %}
 {% endtabs %}
 
-### Display total number of pages
+## Display total number of pages
 
 Add a text block with name &#34;PageCountText&#34;.
 
@@ -262,7 +262,7 @@ Add a text block with name &#34;PageCountText&#34;.
 {% endhighlight %}
 {% endtabs %}
 
-### Magnification and view mode
+## Magnification and view mode
 
 Add buttons with names &#34;ZoomInButton&#34; and &#34;ZoomOutButton&#34; and set the Command properties to IncreaseZoomCommand and DecreaseZoomCommand. 
 Then add buttons with names &#34;FitWidthButton&#34; and &#34;OnePageButton&#34;.   
@@ -296,7 +296,7 @@ private void OnePageButtonClicked(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Add annotations 
+## Add annotations 
 
 Add a button with name &#34;AnnotationButton&#34;.
 {% tabs %}
@@ -329,7 +329,7 @@ private void AnnotationButton_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Search a given text
+## Search a given text
 
 Add a button with name &#34;SearchButton&#34;. 
 
@@ -363,7 +363,7 @@ private void SearchButton_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Annotation toolbar
+## Annotation toolbar
 
 ![customtoolbarimage](CustomToolbarImages/CustomToolbarImage5.jpeg)
 
@@ -407,7 +407,7 @@ Add a Grid to the desktop xaml with name &#34;AnnotationToolbar&#34; and add the
 {% endhighlight %}
 {% endtabs %}
 
-### Add annotations
+## Add annotations
 
 Add a toggle buttons with names &#34;InkButton&#34;, &#34;HighlightButton&#34;, &#34;UnderlineButton&#34;, &#34;StrikethroughButton&#34;, &#34;LineButton&#34;,&#34;RectangleButton&#34;, &#34;EllipseButton&#34; and &#34;PopupButton&#34;. 
 
@@ -531,7 +531,7 @@ private void PopupButton_Unchecked(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Undo and redo annotation changes
+## Undo and redo annotation changes
 
 Add two buttons set their Command properties to UndoCommand and RedoCommand respectively. 
 
@@ -544,7 +544,7 @@ Add two buttons set their Command properties to UndoCommand and RedoCommand resp
 {% endhighlight %}
 {% endtabs %}
 
-### Search toolbar
+## Search toolbar
 
 ![customtoolbarimage](CustomToolbarImages/CustomToolbarImage6.jpeg)
 
@@ -577,7 +577,7 @@ Set the Command properties of the buttons to SearchNextCommand and SearchPreviou
 {% endhighlight %}
 {% endtabs %}
 
-### Bookmark toolbar
+## Bookmark toolbar
 
 ![customtoolbarimage](CustomToolbarImages/CustomToolbarImage7.jpeg)
 
