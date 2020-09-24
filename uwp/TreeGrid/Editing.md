@@ -447,7 +447,7 @@ N> We should set the AllowEditing property to achieve the IsReadOnly behavior.
 You can directly load edit element using [TreeGridTemplateColumn.CellTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_CellTemplate) property. In this case, you can provide focus and control to the UIElement inside
  CellTemplate in the below ways,
 
-You can allow focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FocusedElement](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~FocusedElementProperty.html) attached property to the `UIElement` inside DataTemplate and let the UIElement to handle keyboard operations which is loaded inside the template by setting [FocusManagerHelper.WantsKeyInput](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.FocusManagerHelper~WantsKeyInputProperty.html) attached property to `TreeGridColumn`.
+You can allow focus to the particular UIElement loaded inside template when cell gets activated by setting [FocusedManager.FocusedElement](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FocusManagerHelper.html#Syncfusion_UI_Xaml_Grid_FocusManagerHelper_FocusedElementProperty) attached property to the `UIElement` inside DataTemplate and let the UIElement to handle keyboard operations which is loaded inside the template by setting [FocusManagerHelper.WantsKeyInput](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.FocusManagerHelper.html#Syncfusion_UI_Xaml_Grid_FocusManagerHelper_WantsKeyInputProperty) attached property to `TreeGridColumn`.
 
 {% tabs %}
 {% highlight xaml %}
