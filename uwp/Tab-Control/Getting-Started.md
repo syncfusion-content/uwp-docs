@@ -121,7 +121,7 @@ sfTabControl1.Items.Add(tabitem3)
 
 ### Adding items by DataBinding
 
-In [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) you can add tab items by [ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) in which each tab item must have property for `Header` and `Content`.
+In [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) you can add tab items by [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#) in which each tab item must have property for `Header` and `Content`.
 
 1.Define the properties required in Model class.
 
@@ -232,8 +232,8 @@ End Class
 {% endhighlight %}
 {% endtabs %}
 
-3. Add the TabControlViewModel in DataContext of MainPage and bind the the ItemSource property of SfTabControl with collection in TabControlViewModel. Bind the property from Model class which will be used as tab item header to [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) property. 
-4. Content of tab items can be set using [ContentTemplate](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl~ContentTemplate.html) property.
+3. Add the TabControlViewModel in DataContext of MainPage and bind the the ItemSource property of SfTabControl with collection in TabControlViewModel. Bind the property from Model class which will be used as tab item header to [DisplayMemberPath](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#) property. 
+4. Content of tab items can be set using [ContentTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#Syncfusion_UI_Xaml_Controls_Navigation_SfTabControl_ContentTemplate) property.
 
 {% tabs %}
 {% highlight XAML %}
@@ -255,7 +255,7 @@ End Class
 
 ## Design view for content 
 
-You can show scroll button for [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) tab items by setting [TabScrollButtonVisibility](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl~TabScrollButtonVisibility.html) property value to `Visible`.You can bind the view model collection to [ItemsSource](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl_members.html#) property and design the template for content.
+You can show scroll button for [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) tab items by setting [TabScrollButtonVisibility](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#Syncfusion_UI_Xaml_Controls_Navigation_SfTabControl_TabScrollButtonVisibility) property value to `Visible`.You can bind the view model collection to [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#) property and design the template for content.
 
 {% tabs %}
 {% highlight XAML %}
