@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Creating custom toolbar with Syncfusion Essential UWP PDF viewer.
-description: Creating custom toolbar with Syncfusion Essential UWP PDF viewer.
+description: Learn about creating a simple Pdf Viewer application support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-## Creating a simple PDF viewer application with a toolbar
+# Creating a simple PDF viewer application with a toolbar
 
 PdfViewer does not have a toolbar by default. But a custom toolbar can be designed at the sample with its buttons wired to the PdfViewer APIs. 
 
-### Creating separate UIs for desktop and mobile
+## Creating separate UIs for desktop and mobile
 
 Create a new UWP project (the name &#34;PdfViewerCustomToolbar&#34; is used here). It will by default have a MainPage.xaml file, a MainPage.xaml.cs file. Create a new folder in the project with name &#34;DeviceFamily-Mobile&#34; and create another XAML file with the same name MainPage.xaml in this folder.  Open this file and set the class property to MainPage.xaml.cs. 
 
