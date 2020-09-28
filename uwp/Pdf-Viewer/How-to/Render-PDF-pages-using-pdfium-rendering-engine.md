@@ -96,7 +96,7 @@ Each external method definition must be preceded by the DllImport attribute.
 
 ### Initialize the PDFium library
 
-The following code sample shows initializing the PDFium library and loading the PDF document. The Initialize method will be called every time a PDF is called.
+The following code sample shows initializing the PDFium library and loading the PDF document. The `Initialize` method will be called every time a PDF is called.
 
 {% tabs %}
 {% highlight c# %}
@@ -214,7 +214,7 @@ When a new PDF is to be loaded, the previous PDF must be closed, and the page co
 
 ### Setting the Renderer property
 
-Set the `Renderer` property to a new instance of the class created above. If the Renderer property is not set, the pages are rendered using the default rendering of a [`SfPdfViewerControl`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html). 
+Set the `Renderer` property to a new instance of the class created above. If the `Renderer` property is not set, the pages are rendered using the default rendering of a [`SfPdfViewerControl`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html). 
 
 {% tabs %}
 {% highlight c# %}
