@@ -53,7 +53,7 @@ The following code shows how to bind the PrintCommand to a Button
 
 ## Printing PDF Asynchronously
 
-The PDF Viewer allows you to print the PDF document asynchronously using the PrintAsync method. You can also cancel the asynchronous printing when it is in progress.
+The PDF Viewer allows you to print the PDF document asynchronously using the `PrintAsync` method. You can also cancel the asynchronous printing when it is in progress.
 
 {% tabs %}
 {% highlight c# %}
@@ -64,7 +64,7 @@ pdfViewer.PrintAsync(cancellationTokenSource);
 {% endhighlight %}
 {% endtabs %}
 
-In the above code sample, the cancellationTokenSource enables you to cancel the asynchronous printing when it is in progress
+In the above code sample, the `cancellationTokenSource` enables you to cancel the asynchronous printing when it is in progress
 
 ### Cancel the asynchronous PDF printing
 
@@ -87,7 +87,7 @@ private void cancelButton_Clicked(object sender, EventArgs e)
  
 ### Handling exceptions while performing the asynchronous print
 
-When the PrintAsync is called, the PDF Viewer will show the print previewer. Exceptions will be thrown if the print cannot be performed. The exceptions will be propagated back to the caller of this method. We recommend catching these exceptions as follows.
+When the `PrintAsync` is called, the PDF Viewer will show the print previewer. Exceptions will be thrown if the print cannot be performed. The exceptions will be propagated back to the caller of this method. We recommend catching these exceptions as follows.
 
 {% tabs %}
 {% highlight c# %}
@@ -114,7 +114,7 @@ When the PrintAsync is called, the PDF Viewer will show the print previewer. Exc
 {% endtabs %}
 
 
-N> The SfPdfViewer control for UWP does not support silent printing and so this method can be used only when the PDF document is displayed in the PDF viewer.
+N> The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) control for UWP does not support silent printing and so this method can be used only when the PDF document is displayed in the PDF viewer.
 
 ## Customizing the print previewer
 

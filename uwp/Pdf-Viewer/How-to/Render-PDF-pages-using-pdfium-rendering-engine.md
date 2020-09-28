@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rendering PDF pages using PDFium renderer | Syncfusion
-description: Rendering PDF pages using PDFium renderer in Syncfusion Essential UWP PDF viewer.
+description: The Syncfusion Essential UWP PDF viewer provides option to render the PDF pages using PDFium rendering engine. 
 platform: uwp
 control: PDF viewer
 documentation: ug
