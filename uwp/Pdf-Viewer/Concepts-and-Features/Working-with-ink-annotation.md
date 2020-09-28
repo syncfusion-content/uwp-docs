@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-# Working with ink annotations in UWP Pdf Viewer (SfPdfViewer)
+# Working with ink annotations in UWP PDF Viewer (SfPdfViewer)
 
 PDF Viewer allows you to include ink annotations in a PDF document and provides options to modify or remove the existing ink annotations.
 
