@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Working with text search in Syncfusion Essential UWP PDF viewer.
-description: Working with text search in Syncfusion Essential UWP PDF viewer.
+description: Learn about working with text search support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-## Working with text search
+# Working with text search
 
 Text search can be done in two ways, by using the SearchText method or by using the commands.
 
