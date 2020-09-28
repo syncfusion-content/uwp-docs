@@ -9,7 +9,7 @@ documentation: ug
 
 ## Render PDF Pages using the PDFium renderer
 
-The [`SfPdfViewerControl`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) allows the users to render the PDF pages using the PDFium rendering engine. The `IPdfRenderer` interface defines the methods and properties which provides the necessary values and perform the necessary operations to render the pages using the Pdfium library. The user needs to add a class in their application which must implement this interface and assign an instance of this class to the Renderer property of the [`SfPdfViewerControl`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html). 
+The [`SfPdfViewerControl`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) allows the users to render the PDF pages using the PDFium rendering engine. The `IPdfRenderer` interface defines the methods and properties which provides the necessary values and perform the necessary operations to render the pages using the PDFium library. The user needs to add a class in their application which must implement this interface and assign an instance of this class to the Renderer property of the [`SfPdfViewerControl`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html). 
 
 The PDF page rendering using the PDFium rendering engine is shown in detail 
 as follows. 
@@ -119,7 +119,7 @@ The following code sample shows initializing the PDFium library and loading the 
 
 ### Implement the PageCount property
 
-The PageCount property must return the total page count by calling the external method defined earlier. When a new PDF is loaded, the previous PDF must be closed and the page count should be reset. 
+The `PageCount` property must return the total page count by calling the external method defined earlier. When a new PDF is loaded, the previous PDF must be closed and the page count should be reset. 
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +139,7 @@ The PageCount property must return the total page count by calling the external 
 
 ### Implement the GetPageSize method
 
-The GetPageSize method must call the external method and return the size of the PDF page corresponding to the given index. 
+The `GetPageSize` method must call the external method and return the size of the PDF page corresponding to the given index. 
 
 {% tabs %}
 {% highlight c# %}
@@ -214,7 +214,7 @@ When a new PDF is to be loaded, the previous PDF must be closed, and the page co
 
 ### Setting the Renderer property
 
-Set the Renderer property to a new instance of the class created above. If the Renderer property is not set, the pages are rendered using the default rendering of a SfPdfViewerControl. 
+Set the `Renderer` property to a new instance of the class created above. If the Renderer property is not set, the pages are rendered using the default rendering of a [`SfPdfViewerControl`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html). 
 
 {% tabs %}
 {% highlight c# %}

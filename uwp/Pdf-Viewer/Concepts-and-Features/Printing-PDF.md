@@ -51,7 +51,7 @@ The following code shows how to bind the PrintCommand to a Button
 {% endhighlight %}
 {% endtabs %}
 
-## Printing PDF
+## Printing PDF Asynchronously
 
 The PDF Viewer allows you to print the PDF document asynchronously using the PrintAsync method. You can also cancel the asynchronous printing when it is in progress.
 
@@ -66,7 +66,7 @@ pdfViewer.PrintAsync(cancellationTokenSource);
 
 In the above code sample, the cancellationTokenSource enables you to cancel the asynchronous printing when it is in progress
 
-## Cancel the asynchronous PDF printing
+### Cancel the asynchronous PDF printing
 
 You can raise the cancel request when printing is in progress
 
@@ -85,7 +85,7 @@ private void cancelButton_Clicked(object sender, EventArgs e)
  
  N> Calling the above method will not have any effect once the printing is complete. It will stop the printing process only when it is in progress.
  
-## Handling exceptions while performing the asynchronous print
+### Handling exceptions while performing the asynchronous print
 
 When the PrintAsync is called, the PDF Viewer will show the print previewer. Exceptions will be thrown if the print cannot be performed. The exceptions will be propagated back to the caller of this method. We recommend catching these exceptions as follows.
 
@@ -129,7 +129,7 @@ pdfViewer.PrintTaskRequested += PdfViewer_PrintTaskRequested;
 {% endhighlight %}
 {% endtabs %}
 
-In the `PrintTaskRequested` event handler, you can include the required print options such as the number of copies, collation, duplex, and more. By creating a `PrintTask` using the properties `Request`, `PrintDocumentSource`, and `PrintTask` obtained from the `SfPdfViewerPrintTaskRequestedEventArgs`. Refer to the following code example.
+In the `PrintTaskRequested` event handler, you can include the required print options such as the number of copies, collation, duplex, and more by creating a `PrintTask` using the properties `Request` and `PrintDocumentSource`. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
