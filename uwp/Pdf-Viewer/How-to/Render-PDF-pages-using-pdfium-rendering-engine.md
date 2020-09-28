@@ -37,7 +37,7 @@ Add the pdfium.dll file to the project with BuildAction as content. When added a
 
 ## Implementing the IPdfRenderer interface
 
-Add a class to the application project and implement the IPdfRenderer interface in the class. 
+Add a class to the application project and implement the `IPdfRenderer` interface in the class. 
 
 ### Add definitions of the external methods
 
