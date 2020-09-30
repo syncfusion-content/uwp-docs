@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using with popup annotations in UWP PDF Viewer | Syncfusion
-description: Working with popup annotations in Syncfusion Essential UWP PDF viewer.
+title: Working with popup annotations in Pdf Viewer control | Syncfusion
+description: Learn about Working with popup annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-## Working with popup annotations
+# Working with popup annotations in UWP PDF Viewer (SfPdfViewer)
 
 PDF Viewer allows you to include popup annotations in a PDF document and provides options to modify or remove the existing popup annotations.
 
