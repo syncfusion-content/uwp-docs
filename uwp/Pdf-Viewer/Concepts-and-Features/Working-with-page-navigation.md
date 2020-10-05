@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Working with page navigation
+# Working with page navigation
 
 The PdfViewer allows navigation through the pages of PDF documents. The navigation from one page to other can be done by using “GoToPage” method.
 

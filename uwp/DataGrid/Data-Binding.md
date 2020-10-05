@@ -252,7 +252,7 @@ N> View has properties that already defined in SfDataGrid. It recommended settin
 
 ## Maintain scroll position when changing the ItemsSource
 
-By default, scroll position is not maintained. It gets reset, when changing `SfDataGrid.ItemsSource` value. You can maintain the scroll position of the grid by setting the [SfDataGrid.CanMaintainScrollPosition](http://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.SfDataGrid~CanMaintainScrollPosition.html) value to `true`.
+By default, scroll position is not maintained. It gets reset, when changing `SfDataGrid.ItemsSource` value. You can maintain the scroll position of the grid by setting the [SfDataGrid.CanMaintainScrollPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CanMaintainScrollPosition) value to `true`.
 
 {% tabs %}
 {% highlight xaml %}
