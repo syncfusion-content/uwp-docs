@@ -9,31 +9,31 @@ documentation: ug
 
 # Getting Started with SfMaskedEdit
 
-This section explains how to create new project in Visual Studio using [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) control.
+This section explains how to create new project in Visual Studio using [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) control.
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sfmaskededit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sfmaskededit) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) in any application.
 
 You can refer this [documentation](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in a UWP application.
 
 ## Creating Application with SfMaskedEdit
-In this walk through, user will create a UWP application that contains [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
+In this walk through, user will create a UWP application that contains [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
 3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
 4. [Adding control manually in C#](#Adding-control-manually-in-C#)
 
 ## Creating project 
-Below section provides detailed information to create new project in Visual Studio to display [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
+Below section provides detailed information to create new project in Visual Studio to display [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html).
 
 ## Adding control via designer
-The [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
+The [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/Getting-Started_img2.png)
 
 ## Adding control manually in XAML
 
-In order to add [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) manually in XAML, do the below steps,
+In order to add [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -54,7 +54,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.SfInput">
 {% endhighlight %}
 {% endtabs %}
 
-3. Now add the [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) in MainPage.XAML.
+3. Now add the [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) in MainPage.XAML.
 
 {% tabs %}
 {% highlight XAML %}
@@ -66,7 +66,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.SfInput">
 
 ## Adding control manually in C#
 
-In order to add [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) manually in C#, do the below steps,
+In order to add [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -107,7 +107,7 @@ Dim sfMaskdeEdit1 As SfMaskedEdit = New SfMaskedEdit() With {
 
 ## Adding Mask to the control
 
-To mask the input of [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html),  we must set [MaskType](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit~MaskType.html) and [Mask](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit~Mask.html) property.
+To mask the input of [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html),  we must set [MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_MaskType) and [Mask](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_Mask) property.
 
 `MaskType` has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as Simple, Regular and RegEx.
 
@@ -131,11 +131,11 @@ maskedEdit.Mask="00/00/0000";
 
 {% endtabs %}
 
-N> [MaskType]([MaskType](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit~MaskType.html)) property with `Simple` value allows only numeric inputs in the places of 0.
+N> [MaskType]([MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_MaskType)) property with `Simple` value allows only numeric inputs in the places of 0.
 
 ## Assigning Value to the control
 
-Value of [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be set by [Value](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit~Value.html) property. By default, the Value property of [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) holds the characters without including the prompt characters and the literals defined in the mask. You can alter this and allow the value to hold literal and prompt characters by setting the [ValueMaskFormat](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit~ValueMaskFormat.html) property of the control.
+Value of [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be set by [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_Value) property. By default, the Value property of [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) holds the characters without including the prompt characters and the literals defined in the mask. You can alter this and allow the value to hold literal and prompt characters by setting the [ValueMaskFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_ValueMaskFormat) property of the control.
 
 {% tabs %}
 
@@ -159,7 +159,7 @@ maskedEdit.Value="14/11/2014";
 
 ## Validation of Value
 
-You can customize how [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) should behave when invalid input is entered using [ValidationMode](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit~ValidationMode.html) property. The following values can be set to ValidationMode property,
+You can customize how [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) should behave when invalid input is entered using [ValidationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_ValidationMode) property. The following values can be set to ValidationMode property,
 
 * `KeyPress` - Validation of value takes places on every key press.
 * `LostFocus` - validation of value takes place when focus is lost from SfMaskedEdit.
@@ -176,7 +176,7 @@ You can customize how [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/u
 
 ## Defining Watermark
 
-You can set watermark for [SfMaskedEdit](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html)  control using [Watermark](https://help.syncfusion.com/cr/cref_files/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt~Watermark.html) property. Watermark will be shown in content of the control when it's not focused and no value is entered.
+You can set watermark for [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html)  control using [Watermark](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.html#Syncfusion_UI_Xaml_Controls_Input_SfTextBoxExt_Watermark) property. Watermark will be shown in content of the control when it's not focused and no value is entered.
 
 {% tabs %}
 

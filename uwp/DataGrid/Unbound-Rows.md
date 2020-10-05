@@ -445,7 +445,7 @@ public class DatePickerRenderer : GridUnBoundRowCellRenderer<TextBlock, SfDatePi
 {% endhighlight %}
 {% endtabs %}
 
-In the below code newly created renderer added in [SfDataGrid.UnBoundRowCellRenderers](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.Grid.SfDataGrid~UnBoundRowCellRenderers.html).
+In the below code newly created renderer added in [SfDataGrid.UnBoundRowCellRenderers](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRowCellRenderers).
 
 {% tabs %}
 {% highlight c# %}

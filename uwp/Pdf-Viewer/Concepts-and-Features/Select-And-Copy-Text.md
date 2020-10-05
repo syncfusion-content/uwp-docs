@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Select and copy the text
-description: Select and copy the text
+title: Working with text selection in UWP Pdf Viewer control |Syncfusion
+description: This section explains on Selecting and copying the text from the PDF in the PDF Viewer (SfPdfViewerControl) control.
 platform: UWP
 control: SfPdfViewerControl
 documentation: ug
 ---
 
-# Select and copy text
+# Working with text selection in UWP PDF Viewer (SfPdfViewer)
 
 The PDF Viewer supports text selection and copy feature, which allows user to select the text in the PDF document and copy it to the clipboard. This section illustrates about how to use this feature.
 
