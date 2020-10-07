@@ -586,7 +586,7 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
     <syncfusion:SfDataGrid.DetailsViewDefinition>
         <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
             <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
                                        AddNewRowPosition="Top"                                       
                                        AutoGenerateColumns="True" />
             </syncfusion:GridViewDefinition.DataGrid>
@@ -596,7 +596,7 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.FirstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
@@ -660,7 +660,7 @@ You can change the default static string of AddNewRow in details view grid by us
     <syncfusion:SfDataGrid.DetailsViewDefinition>
         <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
             <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
                                        AddNewRowPosition="Top"
 									   AddNewRowText="Click here to add new row in child grid"									   
                                        AutoGenerateColumns="True" />
@@ -671,8 +671,8 @@ You can change the default static string of AddNewRow in details view grid by us
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.FirstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
-this.FirstLevelNestedGrid.AddNewRowText = "Click here to add new row in child grid";
+this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.firstLevelNestedGrid.AddNewRowText = "Click here to add new row in child grid";
 {% endhighlight %}
 {% endtabs %}
 
