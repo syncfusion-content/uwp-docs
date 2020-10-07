@@ -830,3 +830,102 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ga
 {% endtabs %}
 
 ![](Pointers_images/Pointers_img14.gif)
+
+## Events
+
+### Value change started event
+
+Called when the user starts updating a new value of the pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged, and ValueChangeCompleted) will be followed after this event.
+
+The [`ValueChangeStarted`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeStarted) event contains the following argument.
+
+[`Value`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_PointerValueChangedEventArgs_Value) : This value will be the last value the pointer had before the changes began.
+
+{% tabs %}
+
+{% highlight xml %}
+
+                    <gauge:CircularScale.Pointers>
+
+                        <gauge:CircularPointer ValueChangeStarted="CircularPointer_ValueChangeStarted" PointerType="NeedlePointer"/>
+
+                    </gauge:CircularScale.Pointers>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void CircularPointer_ValueChangeStarted(object sender, Syncfusion.UI.Xaml.Gauges.PointerValueChangedEventArgs e)
+        {
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Value changing event
+
+Called during a drag when the user is updating before a new value for the pointer by dragging
+
+The [`ValueChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChanging) event contains the following argument.
+
+[`NewValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_PointerValueChangingEventArgs_NewValue) : Gets the new pointer value, which is updated while dragging.
+[`OldValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_PointerValueChangingEventArgs_OldValue) : Gets the old value of the pointer, which is updated by pointer dragging.
+[`Cancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerValueChangingEventArgs.html#Syncfusion_UI_Xaml_Gauges_PointerValueChangingEventArgs_Cancel) : Used to restrict the updating pointer value and cancel dragging.
+
+{% tabs %}
+
+{% highlight xml %}
+
+                   <gauge:CircularScale.Pointers>
+
+                        <gauge:CircularPointer ValueChanging="CircularPointer_ValueChanging" PointerType="NeedlePointer"/>
+
+                    </gauge:CircularScale.Pointers>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void CircularPointer_ValueChanging(object sender, Syncfusion.UI.Xaml.Gauges.PointerValueChangingEventArgs e)
+        {
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Value change completed event
+
+Called after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging, and ValueChanged) will be called prior to the ValueChangeCompleted event.
+
+This event will notify the completion of dragging with a new value being updated.
+
+The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_ValueChangeCompleted) event contains the following argument.
+
+[`Value`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerValueChangedEventArgs.html#Syncfusion_UI_Xaml_Gauges_PointerValueChangedEventArgs_Value) : Gets the updated value of the pointer.
+
+{% tabs %}
+
+{% highlight xml %}
+
+                  <gauge:CircularScale.Pointers>
+
+                        <gauge:CircularPointer ValueChangeCompleted="CircularPointer_ValueChangeCompleted" PointerType="NeedlePointer"/>
+
+                    </gauge:CircularScale.Pointers>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void CircularPointer_ValueChangeCompleted(object sender, Syncfusion.UI.Xaml.Gauges.PointerValueChangedEventArgs e)
+        {
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
