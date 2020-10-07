@@ -61,7 +61,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img1.png)
+![Needle pointer](Pointers_images/Pointers_img1.png)
 
 ### NeedlePointerType
 
@@ -120,7 +120,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img2.png)
+![Needle pointer type](Pointers_images/Pointers_img2.png)
 
 ### Needle pointer customization
 
@@ -182,7 +182,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img3.png)
+![Needle pointer customization](Pointers_images/Pointers_img3.png)
 
 ### Setting visibility of needle pointer
 
@@ -230,7 +230,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img4.png)
+![Needle pointer customization](Pointers_images/Pointers_img4.png)
 
 ## Range pointer
 
@@ -280,7 +280,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img5.png)
+![Range pointer customization](Pointers_images/Pointers_img5.png)
 
 ### Range pointer customization
 
@@ -336,7 +336,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img6.png)
+![Range pointer customization](Pointers_images/Pointers_img6.png)
 
 ### Setting visibility for range pointer
 
@@ -384,7 +384,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img7.png)
+![Range pointer customization](Pointers_images/Pointers_img7.png)
 
 ### Setting position for range pointer
 
@@ -451,7 +451,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img8.png)
+![Range pointer customization](Pointers_images/Pointers_img8.png)
 
 2.	Using the [`RangePointerOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerOffset) property. First, set the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) to custom, and then set the [`RangePointerOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerOffset) property.
 
@@ -503,7 +503,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img9.png)
+![Range pointer customization](Pointers_images/Pointers_img9.png)
 
 ## Symbol pointer
 
@@ -553,7 +553,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img10.png)
+![Symbol pointer](Pointers_images/Pointers_img10.png)
 
 ### Symbol pointer customization
 
@@ -611,7 +611,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img11.png)
+![Symbol pointer customization](Pointers_images/Pointers_img11.png)
 
 ### Setting visibility of symbol pointer
 
@@ -659,7 +659,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img12.png)
+![Symbol pointer customization](Pointers_images/Pointers_img12.png)
 
 ### Setting multiple pointers
 
@@ -749,7 +749,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img13.png)
+![Multiple pointer](Pointers_images/Pointers_img13.png)
 
 ## Setting animation for pointer
 
@@ -829,7 +829,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ga
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img14.gif)
+![Pointer animation](Pointers_images/Pointers_img14.gif)
 
 ## Events
 
