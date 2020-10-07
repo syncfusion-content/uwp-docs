@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolbarCustomization | SfImageEditor | uwp | Syncfusion
-description: ToolbarCustomization
+description: This section describes how to customize the toolbar items appearance, height, colorpalette and visibility.
 platform: uwp
 control: SfImageEditor
 documentation: ug
