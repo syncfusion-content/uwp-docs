@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Manipulation in SfDataGrid.
-description: How to manipulate data in SfDataGrid.
+title: Data Manipulation in UWP DataGrid Controls | Syncfusion
+description: Learn about Data Manipulation Opeartions in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Data Manipulation
+# Data Manipulation in UWP DataGrid (SfDataGrid)
 
 SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) property.
  
@@ -25,7 +25,7 @@ this.dataGrid.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping;
 {% endtabs %}
 
 
-##LiveDataUpdateMode
+## LiveDataUpdateMode
 
 ### LiveDataUpdateMode – Default 
 <table>
@@ -279,7 +279,7 @@ this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img1.png)
+![UWP DataGrid with add new row](Data-Manipulation_images/Data-Manipulation_img1.png)
 
 
 You can get the row index of AddNewRow where it placed by using the [GridAddNewRowController.GetAddNewRowIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridAddNewRowController.html#Syncfusion_UI_Xaml_Grid_GridAddNewRowController_GetAddNewRowIndex) method.
@@ -300,6 +300,25 @@ You can check whether the specified row index is AddNewRow index, by using [SfDa
 bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 {% endhighlight %}
 {% endtabs %}
+
+### Changing the AddNewRow default text in DataGrid
+
+You can change the default static string of AddNewRow in datagrid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfDataGrid x:Name="dataGrid"
+                       AddNewRowPosition="Top"
+                       AddNewRowText="Click here to add new row in datagrid"
+                       ItemsSource="{Binding Employees}" />
+{% endhighlight %}
+{% highlight c# %}
+this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.dataGrid.AddNewRowText = "Click here to add new row in datagrid";
+{% endhighlight %}
+{% endtabs %}
+
+![Changed the addnewrow text in datagrid UWP](Data-Manipulation_images/Data-Manipulation_img8.png)
 
 ### Customize the newly added row position
 
@@ -334,7 +353,7 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endtabs %}
 
 
-![](Data-Manipulation_images/Data-Manipulation_img2.png)
+![UWP DataGrid - Add new row with default values](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 ### Working with complex properties in AddNewRow
 
@@ -451,7 +470,7 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Manipulation_images/Data-Manipulation_img3.png)
+![UWP DataGrid - New row data validation](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
@@ -461,9 +480,9 @@ SfDataGrid enables you to customize the watermark text of AddNewRow by changing 
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.UWP.resw` file and then customize the value of AddNewRowText.
  
-![](Data-Manipulation_images/Data-Manipulation_img4.png)
+![UWP DataGrid resources](Data-Manipulation_images/Data-Manipulation_img4.png)
 
-![](Data-Manipulation_images/Data-Manipulation_img5.png)
+![UWP DataGrid - Add new row text localized](Data-Manipulation_images/Data-Manipulation_img5.png)
 
 ### Customizing AddNewRow text using style
 
@@ -552,7 +571,7 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 {% endtabs %}
 
 
-![](Data-Manipulation_images/Data-Manipulation_img6.png)
+![UWP DataGrid - Image shows the customization of AddNewRow text](Data-Manipulation_images/Data-Manipulation_img6.png)
 
 ### AddNewRow support in Master-Details View
 
@@ -567,7 +586,7 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
     <syncfusion:SfDataGrid.DetailsViewDefinition>
         <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
             <syncfusion:GridViewDefinition.DataGrid>
-                <syncfusion:SfDataGrid x:Name="FirstLevelNestedGrid"
+                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
                                        AddNewRowPosition="Top"                                       
                                        AutoGenerateColumns="True" />
             </syncfusion:GridViewDefinition.DataGrid>
@@ -577,12 +596,12 @@ You can enable the AddNewRow in `DetailsViewDataGrid` by specifying the position
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.FirstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
 
-![](Data-Manipulation_images/Data-Manipulation_img7.png)
+![UWP DataGrid with add new row for detailsview](Data-Manipulation_images/Data-Manipulation_img7.png)
 
 
 Similarly, you can wire [AddNewRowInitiating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event for `ViewDefinition.DataGrid`.
@@ -627,6 +646,37 @@ void DataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endhighlight %}
 {% endtabs %}
 
+### Changing the AddNewRow default text in details view grid
+
+You can change the default static string of AddNewRow in details view grid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property in `ViewDefinition.DataGrid`. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AutoGenerateColumns="True"
+                       AutoGenerateRelations="False"
+                       ItemsSource="{Binding Employees}">
+
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
+        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
+            <syncfusion:GridViewDefinition.DataGrid>
+                <syncfusion:SfDataGrid x:Name="firstLevelNestedGrid"
+                                       AddNewRowPosition="Top"
+									   AddNewRowText="Click here to add new row in child grid"									   
+                                       AutoGenerateColumns="True" />
+            </syncfusion:GridViewDefinition.DataGrid>
+        </syncfusion:GridViewDefinition>
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
+
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
+this.firstLevelNestedGrid.AddNewRowText = "Click here to add new row in child grid";
+{% endhighlight %}
+{% endtabs %}
+
+![Changed the addnewrow text in detailsview datagrid UWP](Data-Manipulation_images/Data-Manipulation_img9.png)
 
 ## Deletion
 
