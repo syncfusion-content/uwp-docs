@@ -63,3 +63,26 @@ editor.PanningMode = PanningMode.TwoFinger;
 {% endhighlight %}
 
 {% endtabs %}
+
+## Maximum zoom level
+
+Zooming of the image can be restricted to certain level based on the value of the [`MaximumZoomLevel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_MaximumZoomLevel) property.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+        <syncfusion:SfImageEditor x:Name="editor" MaximumZoomLevel="2">
+          
+        </syncfusion:SfImageEditor>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfImageEditor editor = new SfImageEditor();
+editor.MaximumZoomLevel = 2;
+
+{% endhighlight %}
+
+{% endtabs %}
