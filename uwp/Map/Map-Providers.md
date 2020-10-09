@@ -278,9 +278,19 @@ You can get imagery layer pixel bounds by using `MapBounds` property while zoomi
 
 {% endtabs %}
 
+## Marker selected event
+
+The [`MarkerSelected`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerSelected) event is fired when a marker is selected. The MarkerSelected event has the following arguments.
+
+[`SelectedMarker`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs.html#Syncfusion_UI_Xaml_Maps_MarkerSelectedEventArgs_SelectedMarker) : Gets the selected marker.
+
+[`CanBringToTop`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs.html#Syncfusion_UI_Xaml_Maps_MarkerSelectedEventArgs_CanBringToTop) : When set to true the selected marker will be on the top of all other markers.
+
+[`MarkerTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MarkerSelectedEventArgs.html#Syncfusion_UI_Xaml_Maps_MarkerSelectedEventArgs_MarkerTemplate) : Gets or sets the template of the selected marker.
+
 ## Reset the old custom view marker
 
-If you add any view for marker using `CustomView` property from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the `ResetOldSelectedView` property. If the Boolean set as true, then it will be removed the old view of marker and load the initially rendered marker.
+If you add any view for marker using `CustomView` property from [`MarkerSelected`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_MarkerSelected) event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the [`ResetOldSelectedView`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapLayer.html#Syncfusion_UI_Xaml_Maps_MapLayer_ResetOldSelectedView) property. If the Boolean set as true, then it will be removed the old view of marker and load the initially rendered marker.
 
 {% tabs %}
 
