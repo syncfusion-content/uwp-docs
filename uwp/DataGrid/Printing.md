@@ -794,3 +794,5 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endtabs %}
 
 ![Print the Specific pages in UWP DataGrid](Printing_images/Printing_img14.png)
+
+N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information [click here](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
