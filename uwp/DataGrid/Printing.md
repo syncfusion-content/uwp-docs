@@ -672,7 +672,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 ### Printing Specific pages
 
-SfDataGrid doesn’t have built-in support for print specific pages. However, specific pages can be printed by customizing the print preview window to have options for custom page range through events and customizing the default print manager.
+The specific pages can be printed by customizing the print preview window to have options for custom page range through events and customizing the default print manager.
 
 #### Add custom page range option
 
