@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in SfDataGrid
-description: How to print the SfDataGrid data
+title: Printing in UWP DataGrid control | Syncfusion
+description: Learn about printing the datagrid with built-in print preview dialog and its customization in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Printing
+# Printing in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Print) method.
  
@@ -33,7 +33,7 @@ dataGrid.Print();
 
 Print method opens the System print dialog where user can select the printer and set the number of copies to be printed.
 
-![](Printing_images/Printing_img1.png)
+![Print preview window for UWP DataGrid before printing](Printing_images/Printing_img1.png)
 
 ### Scaling
 
@@ -44,7 +44,7 @@ SfDataGrid provides support to scale rows or columns or both while printing to f
 dataGrid.PrintSettings = new PrintSettings();
 dataGrid.PrintSettings.AllowColumnWidthFitToPrintPage = false;
 dataGrid.PrintSettings.PrintScaleOption = PrintScaleOptions.FitAllColumnsonOnePage;
-dataGrid.ShowPrintPreview();
+dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,7 +81,7 @@ this.sfDataGrid.PrintSettings.CanPrintStackedHeaders = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img13.png)
+![Shows stacked headers printing in UWP DataGrid](Printing_images/Printing_img13.png)
 
 ## Page Settings
 
@@ -95,7 +95,7 @@ SfDataGrid provides support to switch between Portrait (more rows but fewer colu
 {% highlight c# %}
 dataGrid.PrintSettings = new PrintSettings();
 dataGrid.PrintSettings.PrintPageOrientation = PrintOrientation.Landscape;
-dataGrid.ShowPrintPreview();
+dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
@@ -157,7 +157,7 @@ dataGrid.Print();
 
 3.Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageFooterTemplate) also.
 
-![](Printing_images/Printing_img2.png)
+![Customized HeaderTemplate and HeaderHeight in print preview window for UWP DataGrid](Printing_images/Printing_img2.png)
 
 N> [PrintManagerBase](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) is the DataContext for [PrintPageControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintPageControl.html), where the header and footer templates are loaded.
 
@@ -185,7 +185,7 @@ dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img3.png)
+![Current date time in print preview window for UWP DataGrid](Printing_images/Printing_img3.png)
 
 ## Printing using UIElement Rendering
 
@@ -212,7 +212,7 @@ dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img4.png)
+![Shows same style as in view for UWP DataGrid using AllowPrintStyles API while printing](Printing_images/Printing_img4.png)
 
 ### Applying custom style
 
@@ -221,10 +221,10 @@ Custom styles can be applied while printing by setting [PrintSettings.AllowPrint
 <table>
 <tr>
 <th>
-**Appearance to be customized**
+Appearance to be customized
 </th>
 <th>
-**TargetType of Style**
+TargetType of Style
 </th>
 </tr>
 <tr>
@@ -232,7 +232,7 @@ Custom styles can be applied while printing by setting [PrintSettings.AllowPrint
 Header Cell
 </td>
 <td>
-[PrintHeaderCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintHeaderCell.html)
+{{'[PrintHeaderCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintHeaderCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -240,7 +240,7 @@ Header Cell
 Normal Cells
 </td>
 <td>
-[PrintGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintGridCell.html)
+{{'[PrintGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintGridCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ Normal Cells
 Caption summary cells
 </td>
 <td>
-[PrintCaptionSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintCaptionSummaryCell.html)
+{{'[PrintCaptionSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintCaptionSummaryCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -256,7 +256,7 @@ Caption summary cells
 Group summary cells
 </td>
 <td>
-[PrintGroupSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintGroupSummaryCell.html)
+{{'[PrintGroupSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintGroupSummaryCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -264,7 +264,7 @@ Group summary cells
 Table summary cells
 </td>
 <td>
-[PrintTableSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintTableSummaryCell.html)
+{{'[PrintTableSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintTableSummaryCell.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -272,7 +272,7 @@ Table summary cells
 Unbound row cells
 </td>
 <td>
-[PrintUnboundRowCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintUnboundRowCell.html)
+{{'[PrintUnboundRowCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintUnboundRowCell.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -299,7 +299,7 @@ dataGrid.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img5.png)
+![UWP DataGrid displaying custom style for using AllowPrintStyles API while printing](Printing_images/Printing_img5.png)
 
 ## Printing Customization 
 
@@ -340,7 +340,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img6.png)
+![Customization of row height while printing in UWP DataGrid](Printing_images/Printing_img6.png)
 
 ### Hiding rows while printing
      
@@ -409,7 +409,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img7.png)
+![Shows removal column while printing in UWP DataGrid](Printing_images/Printing_img7.png)
 
 ### Customize the header text while printing
 
@@ -444,7 +444,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img8.png)
+![customize the column header text while printing in UWP DataGrid](Printing_images/Printing_img8.png)
 
 ### Styling Rows
 
@@ -485,14 +485,14 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-N> 
+
 <table>
 <tr>
 <th>
-**Appearance to be customized**
+Appearance to be customized
 </th>
 <th>
-**Method**
+Method
 </th>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ N>
 Header Cell
 </td>
 <td>
-[GetPrintHeaderCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintHeaderCell_System_String_)
+{{'[GetPrintHeaderCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintHeaderCell_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -508,7 +508,7 @@ Header Cell
 Normal Cells
 </td>
 <td>
-[GetPrintGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintGridCell_System_Object_System_String_)
+{{'[GetPrintGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintGridCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -516,7 +516,7 @@ Normal Cells
 Caption summary cells
 </td>
 <td>
-[GetPrintCaptionSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintCaptionSummaryCell_System_Object_System_String_)
+{{'[GetPrintCaptionSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintCaptionSummaryCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -524,7 +524,7 @@ Caption summary cells
 Group summary cells
 </td>
 <td>
-[GetPrintGroupSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintGroupSummaryCell_System_Object_System_String_)
+{{'[GetPrintGroupSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintGroupSummaryCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -532,7 +532,7 @@ Group summary cells
 Table summary cells
 </td>
 <td>
-[GetPrintTableSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintTableSummaryCell_System_Object_System_String_)
+{{'[GetPrintTableSummaryCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintTableSummaryCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -540,12 +540,12 @@ Table summary cells
 Unbound row cells
 </td>
 <td>
-[GetPrintUnboundRowCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintUnboundRowCell_System_Object_System_String_)
+{{'[GetPrintUnboundRowCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPrintManager.html#Syncfusion_UI_Xaml_Grid_GridPrintManager_GetPrintUnboundRowCell_System_Object_System_String_)'| markdownify }}
 </td>
 </tr>
 </table>
 
-![](Printing_images/Printing_img9.png)
+![Row styling with AllowPrintByDrawing disabled while printing in UWP DataGrid](Printing_images/Printing_img9.png)
 
 ### Setup alternate row style
 
@@ -581,7 +581,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img10.png)
+![Alternate row styling with AllowPrintByDrawing enabled while printing in UWP DataGrid](Printing_images/Printing_img10.png)
 
 ### Styling Columns
 
@@ -616,7 +616,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img11.png)
+![Column styling with AllowPrintByDrawing enabled while printing in UWP DataGrid](Printing_images/Printing_img11.png)
 
 N> [GetColumnWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnWidth_System_String_), [GetColumnTextWrapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnTextWrapping_System_String_), [GetColumnTextAlignment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnTextAlignment_System_String_) and [GetColumnPadding](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetColumnPadding_System_String_) methods are also used for column customization while printing.
 
@@ -668,5 +668,144 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 {% endhighlight %}
 {% endtabs %}
 
-![](Printing_images/Printing_img12.png)
+![Print the selected items in UWP DataGrid](Printing_images/Printing_img12.png)
 
+### Printing Specific pages
+
+The specific pages can be printed by customizing the print preview window to have options for custom page range through events and customizing the default print manager.
+
+#### Add custom page range option
+
+You can print the range of pages by adding the [CustomPageRanges](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.standardprinttaskoptions.custompageranges?view=winrt-19041) option to the [PrintTaskOptions.DisplayedOptions](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printtaskoptions.displayedoptions?view=winrt-19041) property and also add all other available options in the [StandardPrintTaskOptions](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.standardprinttaskoptions?view=winrt-19041) and do the customization to support all other options in [SfDataGrid.PrintTaskRequested](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_PrintTaskRequested) event.
+You have to call the [PrintTaskRequest.CreatePrintTask](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printtaskrequest.createprinttask?view=winrt-19041) method using [DataGridPrintTaskRequested.Request](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.DataGridPrintTaskRequestedEventArgs.html#Syncfusion_UI_Xaml_Grid_DataGridPrintTaskRequestedEventArgs_Request) property. While performing the custom operation in this event, you have to set the [DataGridPrintTaskRequestedEventArgs.PrintDocumentSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.DataGridPrintTaskRequestedEventArgs.html#Syncfusion_UI_Xaml_Grid_DataGridPrintTaskRequestedEventArgs_PrintDocumentSource) property in [PrintTaskSourceRequestedArgs.SetSource](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printtasksourcerequestedargs.setsource?view=winrt-19041) which is the event args for event handler available in `PrintTaskRequest.CreatePrintTask` method.
+
+In the below code, to add the page range options in print dialog.
+
+{% tabs %}
+{% highlight c# %}
+
+this.dataGrid.PrintTaskRequested += DataGrid_PrintTaskRequested;
+
+private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequestedEventArgs e)
+{
+    e.PrintTask = e.Request.CreatePrintTask("Printing", sourceRequested =>
+    {
+
+        PrintTaskOptionDetails printDetailedOptions = PrintTaskOptionDetails.GetFromPrintTaskOptions(e.PrintTask.Options);
+        IList<string> displayedOptions = printDetailedOptions.DisplayedOptions;
+        displayedOptions.Add(Windows.Graphics.Printing.StandardPrintTaskOptions.CustomPageRanges);
+        e.PrintTask.Options.PageRangeOptions.AllowCurrentPage = true;
+        e.PrintTask.Options.PageRangeOptions.AllowAllPages = true;
+        e.PrintTask.Options.PageRangeOptions.AllowCustomSetOfPages = true;
+
+        sourceRequested.SetSource(e.PrintDocumentSource);
+
+    });    
+}   
+           
+{% endhighlight %}
+{% endtabs %}
+
+#### Customize print manager to print specific pages
+
+You can print the specific pages by overriding [OnAddPrintPages](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_OnAddPrintPages_Windows_UI_Xaml_Printing_AddPagesEventArgs_) method in `PrintManagerBase` class.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomPrintManager : GridPrintManager
+{
+    
+    public CustomPrintManager(SfDataGrid grid)
+        : base(grid)
+    {
+
+    }
+
+    protected override void OnAddPrintPages(AddPagesEventArgs e)
+    {
+        IList<Windows.Graphics.Printing.PrintPageRange> customPageRanges = e.PrintTaskOptions.CustomPageRanges;           
+        
+		int pageCount = this.PageDictionary.Count;
+        
+        // An empty CustomPageRanges means "All Pages"
+        if (customPageRanges.Count == 0)
+        {
+            // Loop over all of the preview pages and add each one to be printed
+            for (var i = 1; i <= pageCount; i++)
+            {
+                var printpageControl = CreatePage(i);
+                PrintDocument.AddPage(printpageControl);
+            }
+        }
+        else
+        {
+            // Print only the pages chosen by the user.
+            // 
+            // The "Current page" option is a special case of "Custom set of pages".
+            // In case the user selects the "Current page" option, the PrintDialog
+            // will turn that into a CustomPageRanges containing the page that the user was looking at.
+            // If the user typed in an indefinite range such as "6-", the LastPageNumber value
+            // will be whatever this sample app last passed into the PrintDocument.SetPreviewPageCount API.
+            foreach (PrintPageRange pageRange in customPageRanges)
+            {
+                // The user may type in a page number that is not present in the document.
+                // In this case, we just ignore those pages, hence the checks
+                // (pageRange.FirstPageNumber <= printPreviewPages.Count) and (i <= printPreviewPages.Count).
+                //
+                // If the user types the same page multiple times, it will be printed multiple times
+                // (e.g 3-4;1;1 will print pages 3 and 4 followed by two copies of page 1)
+                if (pageRange.FirstPageNumber <= pageCount)
+                {
+                    for (int i = pageRange.FirstPageNumber; (i <= pageRange.LastPageNumber) && (i <= pageCount); i++)
+                    {
+                        // Subtract 1 because page numbers are 1-based, but our list is 0-based.
+                        var printpageControl = CreatePage(i);
+                        PrintDocument.AddPage(printpageControl);
+                    }
+                }
+            }
+        }
+        // Indicate that all of the print pages have been provided.
+        PrintDocument.AddPagesComplete();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+{% tabs %}
+{% highlight c# %}
+dataGrid.PrintSettings.PrintManagerBase = new CustomPrintManager(this.dataGrid);
+dataGrid.PrintSettings.PrintManagerBase.Print();
+{% endhighlight %}
+{% endtabs %}
+
+![Print the Specific pages in UWP DataGrid](Printing_images/Printing_img14.png)
+
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-print-specific-pages-in-uwp-datagrid).
+
+N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information [click here](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
+
+### Disable print preview
+
+You can disable the print preview in print dialog by setting [PrintTask.IsPreviewEnabled](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printtask.ispreviewenabled?view=winrt-19041) property to false.
+
+{% tabs %}
+{% highlight c# %}
+
+this.dataGrid.PrintTaskRequested += DataGrid_PrintTaskRequested;
+
+private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequestedEventArgs e)
+{
+    e.PrintTask = e.Request.CreatePrintTask("Printing", sourceRequested =>
+    {       
+        sourceRequested.SetSource(e.PrintDocumentSource);
+    }); 
+	e.PrintTask.IsPreviewEnabled = false;
+}   
+           
+{% endhighlight %}
+{% endtabs %}
+
+![Disable the print preview in UWP DataGrid](Printing_images/Printing_img15.png)
