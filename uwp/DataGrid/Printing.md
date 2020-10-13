@@ -809,3 +809,5 @@ private void DataGrid_PrintTaskRequested(object sender, DataGridPrintTaskRequest
 {% endtabs %}
 
 ![Disable the print preview in UWP DataGrid](Printing_images/Printing_img15.png)
+
+N> View sample in [GitHub](https://github.com/SyncfusionExamples/how-to-disable-print-preview-in-uwp-datagrid).
