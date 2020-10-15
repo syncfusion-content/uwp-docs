@@ -137,6 +137,18 @@ You can schedule meetings for a day by setting `From` and `To` of `Meeting` clas
 
 ![UWP SfSchedule displays applying color in scheduled time](Appointments_images/custom.png)
 
+N> You can get the Custom appointment in `ScheduleTappedEventArgs` of `ScheduleTapped` event in Recurrence appointment.
+
+{% highlight c# %}
+
+schedule.ScheduleTapped += Schedule_ScheduleTapped;
+private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
+{
+    var appointment = e.Appointment as Meeting;
+}
+
+{% endhighlight %} 
+
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
 
