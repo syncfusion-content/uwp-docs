@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User Interactions
-description: How to drag and drop and resize appointments in Schedule control.
+title: User Interactions in Syncfusion SfSchedule control for UWP
+description: How to perform the drag and drop operations, resize the appointments and Dispose the resources in Schedule control.
 platform: uwp
 control: SfSchedule
 documentation: ug
 ---
 
-# User Interactions
+# User Interactions in UWP Scheduler (SfSchedule)
 
 ## Change the default context menu
 When tapping on the schedule or appointment, our built-in context menu will be opened and triggering [ContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ContextMenuOpeningEventArgs.html) event. You can create your own context menu by setting `e.Cancel` to true in the `ContextMenuOpening` event. It will avoid to open the default context menu. 
