@@ -2,7 +2,7 @@
 
 layout: post
 title: Populating Appointments in Syncfusion SfSchedule control for UWP
-description: Learn how to Populate Appointments in SfSchedule control
+description: Learn how to schedule the appointment and customize different kinds of Appointments in SfSchedule control.
 platform: uwp
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# Appointments
+# Appointments in UWP Scheduler (SfSchedule)
 
 [SfSchedule](https://help.syncfusion.com/cr/uwp/sfschedule) control has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentCollection.html). [ScheduleAppointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule.
 
@@ -136,6 +136,18 @@ You can schedule meetings for a day by setting `From` and `To` of `Meeting` clas
 {% endhighlight %} 
 
 ![UWP SfSchedule displays applying color in scheduled time](Appointments_images/custom.png)
+
+N> You can get the Custom appointment in `ScheduleTappedEventArgs` of `ScheduleTapped` event in Recurrence appointment.
+
+{% highlight c# %}
+
+schedule.ScheduleTapped += Schedule_ScheduleTapped;
+private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
+{
+    var appointment = e.Appointment as Meeting;
+}
+
+{% endhighlight %} 
 
 ## Spanned Appointments
 Spanned Appointment is an appointment which lasts more than 24 hours.
