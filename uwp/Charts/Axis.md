@@ -2835,7 +2835,80 @@ chart.Series.Add(series);
 
 ![Gridlines customization support in UWP Chart](Axis_images/Axis_img34.jpg)
 
+## Customize individual axis elements
 
+The [`RangeStyles`] can be used to customize the gridlines, ticks and axis labels for a specific region of ChartAxis. The following properties are used to customize the specific range in an axis:
+
+[`Start`] - Sets the start range of an axis
+[`End`] - Sets the end range of an axis
+[`MajorGridLineStyle`] - Customizes the major grid lines of an axis.
+[`MinorGridLineStyle`] -  Customizes the minor grid lines of an axis.
+[`MajorTickStyle`] - Customizes the major tick lines of an axis.
+[`MinorTickStyle`] - Customizes the minor tick lines of an axis.
+[`LabelStyle`] -  Customizes the axis labels for a specific range.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+
+  <syncfusion:SfChart.Resources>
+
+         <Style TargetType="Line" x:Key="lineStyle">
+
+                <Setter Property="StrokeThickness" Value="2"/>
+
+                <Setter Property="Stroke" Value="Orange"/>
+
+        </Style>
+
+</syncfusion:SfChart.Resources>
+
+<syncfusion:SfChart.SecondaryAxis>  
+
+    <syncfusion:NumericalAxis>
+          <syncfusion:NumericalAxis.RangeStyles>
+                <syncfusion:ChartAxisRangeStyleCollection>
+                      <syncfusion:ChartAxisRangeStyle Start="500" End="1500" MajorGridLineStyle= "{StaticResource lineStyle}" MajorTickLineStyle="{StaticResource lineStyle}">                     <syncfusion:ChartAxisRangeStyle.LabelStyle>
+            <syncfusion:LabelStyle Foreground="Violet" />
+          </syncfusion:ChartAxisRangeStyle.LabelStyle>
+                     </syncfusion:ChartAxisRangeStyle>
+                </syncfusion:ChartAxisRangeStyleCollection>
+            </syncfusion:NumericalAxis.RangeStyles>
+    </syncfusion:NumericalAxis>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            NumericalAxis secondaryAxis = new NumericalAxis();
+
+            ChartAxisRangeStyleCollection axisRangeStyles = new ChartAxisRangeStyleCollection();
+
+            ChartAxisRangeStyle rangeStyle = new ChartAxisRangeStyle() { Start = 500, End = 1500 };
+
+            rangeStyle.MajorGridLineStyle = chart.Resources["LineStyle"] as Style ;
+
+            rangeStyle.LabelStyle = new LabelStyle();
+
+            rangeStyle.LabelStyle.Foreground = new SolidColorBrush(Colors.Violet);
+
+            rangeStyle.MajorTickLineStyle = chart.Resources["lineStyle"] as Style;
+            
+            axisRangeStyles.Add(rangeStyle);
+
+            secondaryAxis.RangeStyles = axisRangeStyles;
+
+       chart.SecondaryAxis = secondaryAxis;
+            
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RangeStyle support in UWP Chart](Axis_images/RangeStyle.jpg)
 
 ## Multi-level Labels
 
@@ -4331,9 +4404,9 @@ The [`LabelCreated`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Chart
 * [`LabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_LabelContent) - Gets or sets the content of label.
 * [`Position`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) - Gets or sets the position of label.
 
-### AxisBoundChanged
+### AxisBoundsChanged
 
-The [`AxisBoundChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) event occurs when the bounds of the axis are changed. This argument contains the following information.
+The [`AxisBoundsChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) event occurs when the bounds of the axis are changed. This argument contains the following information.
 
 * [`NewBounds`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBoundsEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisBoundsEventArgs_NewBounds) - Gets the new axis bounds.
 * [`OldBounds`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBoundsEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartAxisBoundsEventArgs_OldBounds) - Gets the old axis bounds.
