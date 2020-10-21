@@ -2925,7 +2925,7 @@ The [`RangeStyles`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 {% endtabs %}
 
-![RangeStyle support in UWP Chart](Axis_images/RangeStyle.jpeg)
+![RangeStyle support in UWP Chart](Axis_images/RangeStyle.JPG)
 
 ## Multi-level Labels
 
