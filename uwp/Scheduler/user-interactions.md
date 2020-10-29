@@ -168,15 +168,3 @@ The event will be triggered when resizing the appointment. The [AppointmentResiz
         }
 
 {% endhighlight %}
-
-### Dispose method
-
-You can release the allocated resources of Schedule by calling the [Dispose](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Dispose) method. You can handle the memory leak issue by calling this method while unloading the schedule.
-
-{% highlight c# %} 
-private void Schedule_Unloaded(object sender, RoutedEventArgs e)
-{
-    (sender as SfSchedule).Dispose();
-}
-{% endhighlight %}
- 

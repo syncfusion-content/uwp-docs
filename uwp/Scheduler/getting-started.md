@@ -445,3 +445,14 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
 {% endhighlight %} 
 
 ![Setting data source in UWP Schedule](Getting-Started_images/GettingStarted.png) 
+
+### Dispose method
+
+You can release the allocated resources of `Schedule` by calling the [Dispose](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Dispose) method. You can handle the memory leak issue by calling this method while unloading the `Schedule`.
+
+{% highlight c# %} 
+private void Schedule_Unloaded(object sender, RoutedEventArgs e)
+{
+    (sender as SfSchedule).Dispose();
+}
+{% endhighlight %}
