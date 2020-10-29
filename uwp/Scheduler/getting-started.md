@@ -1,13 +1,13 @@
 ---     
 layout: post     
 title: Getting Started | SfSchedule | UWP | Syncfusion     
-description: A quick tour to initial users on Syncfusion SfSchedule control for uwp platform     
+description: Learn here about getting started with Syncfusion SfSchedule control for uwp platform and more details.    
 platform: uwp     
 control: SfSchedule     
 documentation: ug     
 ---     
       
-# Getting Started     
+# Getting Started with UWP Scheduler (SfSchedule)  
       
 This section provides you an overview for working with SfSchedule for UWP and also provides a walk through to configure SfSchedule control in real time scenario. 
  
