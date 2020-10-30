@@ -137,7 +137,7 @@ You can schedule meetings for a day by setting `From` and `To` of `Meeting` clas
 
 ![UWP SfSchedule displays applying color in scheduled time](Appointments_images/custom.png)
 
-N> You can get the Custom appointment in `ScheduleTappedEventArgs` of `ScheduleTapped` event in Recurrence appointment.
+You can get the custom appointment in `ScheduleTappedEventArgs` of `ScheduleTapped` event in recurrence appointment.
 
 {% highlight c# %}
 
