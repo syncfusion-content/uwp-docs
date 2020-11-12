@@ -1,13 +1,13 @@
 ---     
 layout: post     
 title: Getting Started | SfSchedule | UWP | Syncfusion     
-description: A quick tour to initial users on Syncfusion SfSchedule control for uwp platform     
+description: Learn here about getting started with the Syncfusion SfSchedule control for the UWP platform and more details.   
 platform: uwp     
 control: SfSchedule     
 documentation: ug     
 ---     
       
-# Getting Started     
+# Getting Started with UWP Scheduler (SfSchedule)  
       
 This section provides you an overview for working with SfSchedule for UWP and also provides a walk through to configure SfSchedule control in real time scenario. 
  
@@ -445,3 +445,14 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
 {% endhighlight %} 
 
 ![Setting data source in UWP Schedule](Getting-Started_images/GettingStarted.png) 
+
+### Dispose SfSchedule
+
+You can release the allocated resources of `Schedule` by calling the [Dispose](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Dispose) method. You can handle the memory leak issue by calling the `Dispose` method while unloading the `Schedule`.
+
+{% highlight c# %} 
+private void Schedule_Unloaded(object sender, RoutedEventArgs e)
+{
+    (sender as SfSchedule).Dispose();
+}
+{% endhighlight %}
