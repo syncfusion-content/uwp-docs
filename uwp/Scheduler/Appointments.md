@@ -535,7 +535,7 @@ To configure the views based on resources, refer
 
 ## Resources customization
 
-You can customize the resources in `Timeline` view by using the [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval) , [IntervalHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight) and [ScheduleDateRange](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleDateRange) properties of schedule. You can add the dates in `ScheduleDateRange` collection that need to be displayed in day view and timeline view of schedule.
+You can customize the resources in a `Timeline` view by using the [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval) , [IntervalHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight) and [ScheduleDateRange](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleDateRange) properties of schedule. You can also add the dates in the `ScheduleDateRange` collection that need to be displayed in a day view and timeline view of schedule.
 
 {% tabs %} 
 {% highlight xaml %} 
