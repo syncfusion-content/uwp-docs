@@ -545,7 +545,7 @@ You can customize the resources in a `Timeline` view by using the [TimeInterval]
         TimeInterval="Custom" CustomTimeInterval="1440"
         ScheduleType="TimeLine"
         Appointments="{Binding AppointmentCollection}"
-        ScheduleDateRange="{Binding dateTimes}">
+        ScheduleDateRange="{Binding DateRange}">
 <schedule:SfSchedule.ScheduleResourceTypeCollection>
     <schedule:ResourceType TypeName="Doctors">
         <schedule:Resource
@@ -670,4 +670,5 @@ public class SchedulerBehavior : Behavior<SfSchedule>
 {% endtabs %}
 
 You can download the entire source code [here](https://github.com/SyncfusionExamples/resource-view-customization-uwp)
+
 ![UWP ResourceView Customization](Appointments_images/Resourceview customization.png)
