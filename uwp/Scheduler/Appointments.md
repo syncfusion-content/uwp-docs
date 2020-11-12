@@ -670,3 +670,4 @@ public class SchedulerBehavior : Behavior<SfSchedule>
 {% endtabs %}
 
 You can download the entire source code here.
+![UWP ResourceView Customization](Appointments_images/Resourceview customization.png)
