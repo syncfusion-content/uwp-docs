@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Ranges  | SfBulletGraph | uwp | Syncfusion
-description: Ranges 
+description: This section explains how to customize the range in Syncfusion SfBulletGraph in UWP platform and also explains to set the stroke-related to range.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Ranges
+# Ranges for a SfBulletGraph
 
 Ranges for a bullet graph are a collection of qualitative ranges. A qualitative range is a visual element which ends at a specified **RangeEnd** at the start of the previous range’s RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 
@@ -64,7 +64,7 @@ The width of the ranges can be customized by setting the **QualitativeRangesSize
 {% endhighlight %}
 {% endtabs %}
 
-![](Ranges_images/Ranges_img1.jpeg)
+![Output image of customized range](Ranges_images/Ranges_img1.jpeg)
 
 ## Binding RangeStroke to Ticks and Labels
 
@@ -89,4 +89,8 @@ By setting **BindWithRangeStrokeToLabels**, the stroke of the labels is set rela
 {% endhighlight %}
 {% endtabs %}
 
-![](Ranges_images/Ranges_img2.jpg)
+![Output image of range stroke](Ranges_images/Ranges_img2.jpg)
+
+## See also
+
+[How to refresh bullet graph with dynamic data](https://www.syncfusion.com/kb/9996/how-to-refresh-bulletgraph-with-dynamic-data)

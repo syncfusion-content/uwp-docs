@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfBulletGraph | uwp | Syncfusion
-description: Getting Started
+description: A quick tour to the initial users on the Syncfusion SfBulletGraph in UWP platform and also explains how to add a caption, configure the labels/ticks.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfBulletGraph
 
 This section explains you the steps required to configure the **SfBulletGraph** and also explains the steps to add basic elements of **SfBulletGraph** through various API’s available within it.
 
@@ -34,7 +34,7 @@ This section explains you the steps required to configure the **SfBulletGraph** 
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img1.jpg)
+![Output image of SfBulletGraph getting started](Getting-Started_images/Getting-Started_img1.jpg)
 
 As you can see now in the above image, the SfBulletGraph displays its default elements. To customize its element, you have to add respective elements to SfBulletGraph, following section contains the steps to add the basic elements to SfBulletGraph.
 
@@ -60,7 +60,7 @@ You can assign a caption to **SfBulletGraph** by making use of “Caption” pro
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img2.jpg)
+![Output image of the SfBulletGraph with added caption](Getting-Started_images/Getting-Started_img2.jpg)
 
 ## Configuring Ticks and Labels 
 
@@ -112,7 +112,7 @@ They are:
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.jpg)
+![OUtput image of SfBulletGraph with configured labels and ticks](Getting-Started_images/Getting-Started_img3.jpg)
 
 ## Adding Ranges 
 
@@ -178,6 +178,8 @@ You can add ranges to **SfBulletGraph** by creating ranges collection using **Qu
 
 SfBulletGraph ranges are displayed as follows.
 
-![](Getting-Started_images/Getting-Started_img4.jpg)
+![Output image of bullet graph with ranges](Getting-Started_images/Getting-Started_img4.jpg)
 
+## See also
 
+[How to refresh bullet graph with dynamic data](https://www.syncfusion.com/kb/9996/how-to-refresh-bulletgraph-with-dynamic-data)
