@@ -669,5 +669,5 @@ public class SchedulerBehavior : Behavior<SfSchedule>
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code here.
+You can download the entire source code [here](https://github.com/SyncfusionExamples/resource-view-customization-uwp)
 ![UWP ResourceView Customization](Appointments_images/Resourceview customization.png)
