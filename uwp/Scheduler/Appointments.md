@@ -545,7 +545,7 @@ You can customize the resources in a `Timeline` view by using the [TimeInterval]
         TimeInterval="Custom" CustomTimeInterval="1440"
         ScheduleType="TimeLine"
         Appointments="{Binding AppointmentCollection}"
-        ScheduleDateRange="{Binding dateTimes}">
+        ScheduleDateRange="{Binding DateRange}">
 <schedule:SfSchedule.ScheduleResourceTypeCollection>
     <schedule:ResourceType TypeName="Doctors">
         <schedule:Resource
@@ -572,7 +572,7 @@ public class SchedulerViewModel
     private ObservableCollection<DateTime> datecoll = new ObservableCollection<DateTime>();
     DateTime currentdate;
     public ScheduleAppointmentCollection AppointmentCollection { get; set; } = new ScheduleAppointmentCollection();
-    public ObservableCollection<DateTime> dateTimes { get; set; } = new ObservableCollection<DateTime>();
+    public ObservableCollection<DateTime> DateRange{ get; set; } = new ObservableCollection<DateTime>();
 
     string[] subject = new string[]
   {
@@ -632,11 +632,11 @@ public class SchedulerViewModel
             AppointmentCollection.Add(appointment1);
             AppointmentCollection.Add(appointment2);
 
-            dateTimes.Add(new DateTime(2020, 08, 1));
-            dateTimes.Add(new DateTime(2020, 08, 2));
-            dateTimes.Add(new DateTime(2020, 08, 3));
-            dateTimes.Add(new DateTime(2020, 08, 4));
-            dateTimes.Add(new DateTime(2020, 08, 5));
+            DateRange.Add(new DateTime(2020, 08, 1));
+            DateRange.Add(new DateTime(2020, 08, 2));
+            DateRange.Add(new DateTime(2020, 08, 3));
+            DateRange.Add(new DateTime(2020, 08, 4));
+            DateRange.Add(new DateTime(2020, 08, 5));
         }
     }
 }
@@ -670,4 +670,5 @@ public class SchedulerBehavior : Behavior<SfSchedule>
 {% endtabs %}
 
 You can download the entire source code [here](https://github.com/SyncfusionExamples/resource-view-customization-uwp)
+
 ![UWP ResourceView Customization](Appointments_images/Resourceview customization.png)
