@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Shapes | SfImageEditor | uwp | Syncfusion
-description: Shapes
+description: This section explains how to add shapes on an image in the Syncfusion SfImageEditor in UWP platform and also explains how to delete/resize the shapes.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Shapes
+# Shapes of SfImageEditor
 
 You can annotate any path on an image by using free hand drawing and adding texts and shapes such as rectangle, circle, arrow over the image. The shapes and text can be added in the following two ways:
 
@@ -92,3 +92,7 @@ Example: imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.Im
     imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.ImageEditorResizableElements.Shapes;
 
 {% endhighlight %}
+
+## See also
+
+[How to disable resizing the shapes text and custom](https://www.syncfusion.com/kb/9476/how-to-disable-resizing-the-shapes-text-and-customview)
