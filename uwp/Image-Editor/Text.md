@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Text | SfImageEditor | uwp | Syncfusion
-description: Text
+description: This section explains how to add text on an image in the Syncfusion SfImageEditor in UWP platform and also explains how to delete and resize the text.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Text
+# Text of SfImageEditor
 
 To add the desired text elements over the image, use the following two ways:
 
@@ -39,7 +39,7 @@ TextSettings is defined to set the values for Color and FontSize.
 
 {% endhighlight %}
 
-![](text_images/AddedText.png)
+![Output image of the text on an image](text_images/AddedText.png)
 
 ## Multiline text and text alignment
 
@@ -57,7 +57,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 {% endhighlight %}
 
-![SfImageEditor](text_images/multiline.png)
+![Output image of the multiline text](text_images/multiline.png)
 
 ## Text Rotation
 
@@ -87,4 +87,10 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 
 {% endtabs %}
 
-![SfImageEditor](text_images/textrotation.png)
+![Output image of the text rotation](text_images/textrotation.png)
+
+## See also
+
+[How to add text after image has been loaded in uwp](https://www.syncfusion.com/kb/10073/how-to-add-text-after-image-has-been-loaded-in-uwp)
+
+[How to disable resizing the shapes text and custom](https://www.syncfusion.com/kb/9476/how-to-disable-resizing-the-shapes-text-and-customview)
