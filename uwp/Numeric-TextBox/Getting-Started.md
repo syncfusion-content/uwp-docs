@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfNumericTextBox control for UWP
-description: This section provides a quick tour to initial users on SfNumericTextBox control for UWP.
+title: Getting Started with the Syncfusion SfNumericTextBox control for UWP
+description: This section provides a quick tour to the initial users on the Syncfusion SfNumericTextBox control for UWP and also explains how to set the value to the control
 platform: uwp
-control: SfNumeric TextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfNumericTextBox
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 Assembly:  Syncfusion.SfInput.UWP 
@@ -55,3 +55,7 @@ Dim numericTextBox As New SfNumericTextBox()
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to restrict the decimal values in SfNumericTextBox](https://www.syncfusion.com/kb/6957/how-to-restrict-the-decimal-values-in-sfnumerictextbox)
