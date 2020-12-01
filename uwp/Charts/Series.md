@@ -3378,6 +3378,33 @@ The default appearance of the outlier symbol can be customized using the [`Outli
 
 ![Outlier template support for BoxAndWhiskerSeries in UWP chart](Series_images/OutlierTemplate.png)
 
+**ShowOutlier**
+
+The Outlier value of given data set is viewed by enabling the [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  ShowOutlier="False">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ShowOutlier = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+[ShowMedian support for BoxAndWhiskerSeries in UWP chart]
+
+
 ## Waterfall Series
 
 [`WaterfallSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.WaterfallSeries.html) clarifies the cumulative effect of set of provided positive and negative values. The series is represented by rectangles and a connector between the rectangles.
