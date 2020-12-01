@@ -3402,7 +3402,7 @@ boxAndWhisker.ShowOutlier = false;
 
 {% endtabs %}
 
-[ShowMedian support for BoxAndWhiskerSeries in UWP chart]
+![ShowMedian support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowOutlier.png)
 
 
 ## Waterfall Series
