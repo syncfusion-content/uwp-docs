@@ -3338,6 +3338,36 @@ boxAndWhisker.ShowMedian = true;
 
 ![ShowMedian support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowMedian.png)
 
+## Outlier
+
+The outlier is used to display the outlier point that lie either below the lower whisker or above the upper whisker line.
+
+**ShowOutlier**
+
+The [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) are are used to customize the visible of the outlier. By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  ShowOutlier="False">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ShowOutlier = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowOutlier support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowOutlier.png)
+
 **OutlierTemplate**
 
 The default appearance of the outlier symbol can be customized using the [`OutlierTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_OutlierTemplate) property of BoxAndWhiskerSeries. The following code demonstrates how to customize the outlier symbol.
@@ -3377,33 +3407,6 @@ The default appearance of the outlier symbol can be customized using the [`Outli
 {% endtabs %}
 
 ![Outlier template support for BoxAndWhiskerSeries in UWP chart](Series_images/OutlierTemplate.png)
-
-**ShowOutlier**
-
-The Outlier value of given data set is viewed by enabling the [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:BoxAndWhiskerSeries  ShowOutlier="False">
-
-</syncfusion:BoxAndWhiskerSeries>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
-
-boxAndWhisker.ShowOutlier = false;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![ShowOutlier support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowOutlier.png)
-
 
 ## Waterfall Series
 
