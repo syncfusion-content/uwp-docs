@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-# Series
+# Types of Syncfusion SfChart Series
 
 [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html) is the visual representation of the data. [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) offers many types of series ranging from [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html) to [`FinancialSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html) like [`HiLo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.hiloSeries.html) and [`Candle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.candleSeries.html). Based on your requirements and specifications, any type of [`Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) can be added for data visualization. 
 
@@ -3337,6 +3337,36 @@ boxAndWhisker.ShowMedian = true;
 {% endtabs %}
 
 ![ShowMedian support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowMedian.png)
+
+## Outlier
+
+The outlier is used to display the outlier point that lies either below the lower whisker or above the upper whisker line and it is an observation that is numerically distant from the rest of the data. 
+
+**ShowOutlier**
+
+The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`] property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html) are are used to customize the visible of the outlier. By default, [ShowOutlier] value is true. The following code demonstrates how to disable the [`ShowOutlier`] property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:BoxAndWhiskerSeries  ShowOutlier="False">
+
+</syncfusion:BoxAndWhiskerSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+BoxAndWhiskerSeries boxAndWhisker = new BoxAndWhiskerSeries();
+
+boxAndWhisker.ShowOutlier = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowOutlier support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowOutlier.png)
 
 **OutlierTemplate**
 
