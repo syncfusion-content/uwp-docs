@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check whether the loaded PDF document is edited or not.
+title: Check the document is edited or not in Syncfusion UWP PDF Viewer
 description: Check whether the loaded PDF document is edited or not in Syncfusion Essential UWP PDF viewer control.
 platform: uwp
 control: PDF viewer
