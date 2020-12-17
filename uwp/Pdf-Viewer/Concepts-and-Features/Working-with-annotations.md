@@ -98,3 +98,25 @@ By default, PdfViewer allows the user to select the annotations by tapping on it
 pdfViewer.AnnotationSettings.IsReadOnly = true;
 
 {% endhighlight %}
+
+### Setting the author for the annotations.
+The `Author` property of the [`IAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.IAnnotation.html) is used to set the name of the author for all supported annotations.
+
+Refer to the following code example.
+
+{% highlight c# %}
+//Initialize the SfPdfViewer
+SfPdfViewerControl pdfViewer = new SfPdfViewerControl();
+
+pdfViewer.AnnotationAdded += PdfViewer_AnnotationAdded;
+private void PdfViewer_AnnotationAdded(object sender, Syncfusion.Windows.PdfViewer.AnnotationAddedEventArgs e)
+		{
+			if (e.Annotation is IAnnotation)
+			{
+				//sets the author name for the added annotation.  
+				e.Annotation.Author = "Syncfusion";
+			}
+		}
+{% endhighlight %}
+
+
