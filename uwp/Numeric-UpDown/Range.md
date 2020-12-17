@@ -1,13 +1,13 @@
 ---
 layout: post 
-title: Restrict the input values of SfNumerupDown to a specified Range 
-description: Restrict the input values of SfNumerupDown to a specified Range 
+title: Range | SfNumericUpDown | uwp | Syncfusion
+description: This section explains how to restrict the input values of SfNumerupDown to a specified range in the Syncfusion SfNumericUpDown in UWP platform
 platform: uwp
-control: SfNumeric UpDown
+control: SfNumericUpDown
 documentation: ug
 ---
 
-# Range
+# Range with SfNumericUpDown
 
 Input values can be restricted to a specific range by setting the Maximum and Minimum properties.
 
@@ -110,3 +110,9 @@ Minimum="50"
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to set the maximum and minimum value in SfNumericUpDown control](https://www.syncfusion.com/kb/6958/how-to-set-the-maximum-and-minimum-value-in-sfnumericupdown-control)
+
+[How to increment and decrement the value of SfNumericUpDown control](https://www.syncfusion.com/kb/6961/how-to-increment-and-decrement-the-value-of-sfnumericupdown-control)

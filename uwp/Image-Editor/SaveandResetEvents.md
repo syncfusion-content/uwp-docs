@@ -129,3 +129,13 @@ This event occurs before resetting the changes in an image. You can control the 
 ## EndReset
 
 This event occurs when reset has been completed.
+
+## See also
+
+[How to change the image saving location in the image editor control for uwp](https://www.syncfusion.com/kb/10077/how-to-change-the-image-saving-location-in-the-image-editor-control-for-uwp)
+
+[How to retrieve an image from the saved location in uwp](https://www.syncfusion.com/kb/10060/how-to-retrieve-an-image-from-the-saved-location-in-uwp)
+
+[How to save image to stream in uwp image editor](https://www.syncfusion.com/kb/9463/how-to-save-image-to-stream-in-uwp-imageeditor)
+
+[How to change the image saving location in uwp](https://www.syncfusion.com/kb/8927/how-to-change-the-image-saving-location-in-uwp)

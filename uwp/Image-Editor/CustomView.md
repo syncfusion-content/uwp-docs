@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CustomView | SfImageEditor | uwp | Syncfusion
-description: CustomView
+description: This section describes how to add a custom view on image and customize or rotate the custom view using the settings in UWP SfImageEditor. 
 platform: uwp
 control: SfImageEditor
 documentation: ug
@@ -68,3 +68,7 @@ You can rotate the custom view based on a particular angle using `Angle` propert
 {% endtabs %}
 
 ![Rotate and resize the custom view in UWP ImageEditor](CustomView_Images/CustomView_Rotation.png)
+
+## See also
+
+[How to disable resizing the shapes text and custom](https://www.syncfusion.com/kb/9476/how-to-disable-resizing-the-shapes-text-and-customview)

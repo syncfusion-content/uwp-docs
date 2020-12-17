@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Timescale
+title: Timescale | SfGantt | UWP | Syncfusion
+description: This section explains how the time scale of the Syncfusion SfGantt in UWP platform and also explains the visual customization and label appearance.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Timescale
+# Timescale of SfGantt
 
 This section provides an overview on the features of timescale. The following properties are used for configuring the timescale in the [`TimescaleSettings`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html) class:
 
@@ -36,7 +37,7 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier();
 
 {% endtabs %}
 
-![](Timescale_images/overview.jpeg)
+![Output image of time scale](Timescale_images/overview.jpeg)
 
 By default, the interval type is set to Auto. You can change the interval type and interval using the following properties in `TimescaleTier` class:
 
@@ -75,7 +76,7 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier()
 
 {% endhighlight %}
 {% endtabs %}
-![](Timescale_images/Interval.jpeg)
+![Output image of time scale with interval](Timescale_images/Interval.jpeg)
 
 N> The top tier’s interval and interval type must be greater than the bottom tier’s interval and interval type.
 
@@ -143,7 +144,7 @@ this.Gantt.TimescaleSettings.BottomTier.LabelAlignment = TextAlignment.Left;
 {% endhighlight %}
 
 {% endtabs %}
-![](Timescale_images/DisplayFormats.jpeg)
+![Output image of diplay formats](Timescale_images/DisplayFormats.jpeg)
 
 **Label template**
 
@@ -204,7 +205,7 @@ The default appearance of the label in timescale cell can be customized using th
 
 {% endtabs %}
 
-![](Timescale_images/Template.jpeg)
+![Output image of label appearance](Timescale_images/Template.jpeg)
 
 ## Cell width customization
 
@@ -238,7 +239,7 @@ this.Gantt.TimescaleSettings.CellSize = 350;
 
 {% endtabs %}
 
-![](Timescale_images/cellwidth.jpeg)
+![Output image of cell width customization](Timescale_images/cellwidth.jpeg)
 
 N> The value for the cell width ranges between 25 and 1000.
 
@@ -274,4 +275,14 @@ this.Gantt.TimescaleEndDate = new DateTime(2014, 5, 1);
 
 {% endtabs %}
 
-![](Timescale_images/range.jpeg)
+![Output image of range customization](Timescale_images/range.jpeg)
+
+## See also
+
+[How to customize the time scale label format](https://www.syncfusion.com/kb/7750/how-to-customize-the-timescale-label-format)
+
+[How to customize the time scale labels appearance](https://www.syncfusion.com/kb/7749/how-to-customize-the-timescale-labels-appearance)
+
+[How to customize the time scale range](https://www.syncfusion.com/kb/7726/how-to-customize-the-timescale-range)
+
+

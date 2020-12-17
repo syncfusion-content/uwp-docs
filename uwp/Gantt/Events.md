@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Events
+title: Events | SfGantt | UWP | Syncfusion
+description: This section describes the event of the Syncfusion SfGantt in UWP platform such as BeginCellEdit, EndCellEdit, SelectionChanging, SelectionChanged, and more.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Events
+# Events of Syncfusion SfGantt
 
 **BeginCellEdit**
 
@@ -136,3 +137,7 @@ Occurs when the taskbar resizing is completed. This event contains the following
 Occurs when a task is generated in the view. This event contains the following arguments:
 
 * [`Task`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskEventArgs.html#Syncfusion_UI_Xaml_Gantt_TaskEventArgs_Task): Gets the task that has been added.
+
+## See also
+
+[How to disable editing for a specific cell in gantt](https://www.syncfusion.com/kb/7724/how-to-disable-editing-for-a-specific-cell-in-gantt)

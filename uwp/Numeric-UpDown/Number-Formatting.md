@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Number Formatting for SfNumericUpDown control 
-description: Setting Number Formatting for SfNumericUpDown control 
+title: Setting the Number Formatting for Syncfusion SfNumericUpDown control 
+description: This section explains how to set the number formatting for the Syncfusion SfNumericUpDown control in UWP Platform and also explains the culture with formatting.
 platform: uwp
-control: SfNumeric UpDown
+control: SfNumericUpDown
 documentation: ug
 ---
 
-# Number Formatting
+# Number Formatting with SfNumericUpDown
 
 Number formatting functionality allows to format the text based on the FormatString of the control. The control will format the display text on lost focus. 
 
@@ -156,3 +156,7 @@ numericUpDown.Culture = New System.Globalization.CultureInfo("de-DE")
 
 {% endtabs %}
 ![Germany Culture Currency view](Concepts_images/Concepts_img5.png)
+
+## See also
+
+[How to format the display text as currency in SfNumericUpDown](https://www.syncfusion.com/kb/6959/how-to-format-the-display-text-as-currency-in-sfnumericupdown)

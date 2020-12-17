@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Value Change Mode on SfNumericTextBox control for UWP
-description: Value Change Mode on SfNumericTextBox control for UWP
+title:  Value Change Mode on the Syncfusion SfNumericTextBox control for UWP
+description: This section explains how to set the  Value Change Mode on the SfNumericTextBox control for UWP and explains detailed about the OnKeyFocus and OnLostFocus
 platform: uwp
-control: SfNumeric TextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# Value Change Mode
+# Value Change Mode of SfNumericTextBox
 
 The ValueChangeMode property is used to mention when the validation need to take place, either in key pressed or in focus lost. When ValueChangeMode is set to OnKeyFocus, the validation will be carried out for each key press. When ValueChangeMode is OnLostFocus, the validation occur when the control lost the focus or the focus move to next control. ValueChangeMode includes the following options:
 
@@ -99,3 +99,7 @@ In below code sample, the control with name "Quantity_sfNumericTextBox" for Quan
 ###OnLostFocus
 
 ![NumericTextBox OnLostFocus view](Concepts_images/Concepts_img11.png)
+
+## See also
+
+[What is the purpose of value change mode in SfNumericTextBox](https://www.syncfusion.com/kb/6960/what-is-the-purpose-of-valuechangemode-in-sfnumerictextbox)

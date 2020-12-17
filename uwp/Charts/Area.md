@@ -219,21 +219,21 @@ The following code example demonstrates, how you can create multiple panes in th
 
 <chart:ColumnSeries Palette="LightCandy"
 
-ItemsSource="{Binding SneakersDetail}"         
+ItemsSource="{Binding MetalsDetail}"         
 
-XBindingPath="Brand" 
+XBindingPath="MetalName" 
 
-YBindingPath="ItemsCount1" 
+YBindingPath="MetalCount1" 
 
 />
 
 <chart:ColumnSeries Palette="Metro"
 
-ItemsSource="{Binding SneakersDetail}"  
+ItemsSource="{Binding MetalsDetail}"  
 
-XBindingPath="Brand" 
+XBindingPath="MetalName" 
 
-YBindingPath="ItemsCount" >
+YBindingPath="MetalCount" >
 
 <chart:ColumnSeries.YAxis>
 
@@ -280,11 +280,11 @@ chart.SecondaryAxis = yAxis;
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().MetalsDetail,
 
-    XBindingPath = "Brand",
+    XBindingPath = "MetalName",
 
-    YBindingPath = "ItemsCount",
+    YBindingPath = "MetalCount",
 
     Palette = ChartColorPalette.LightCandy,
 
@@ -299,11 +299,11 @@ SfChart.SetRow(axis, 1);
 ColumnSeries columnSeries2 = new ColumnSeries()
 {
     
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().MetalsDetail,
 
-    XBindingPath = "Brand",
+    XBindingPath = "MetalName",
 
-    YBindingPath = "ItemsCount1",
+    YBindingPath = "MetalCount1",
 
     Palette = ChartColorPalette.Metro,
 
@@ -362,21 +362,21 @@ TickLinesPosition="Outside">
 
 </chart:SfChart.SecondaryAxis>
 
-<chart:ColumnSeries XBindingPath="Brand"
+<chart:ColumnSeries XBindingPath="MetalName"
 
-ItemsSource="{Binding SneakersDetail}"  
+ItemsSource="{Binding MetalsDetail}"  
 
-YBindingPath="ItemsCount1" 
+YBindingPath="MetalCount1" 
 
 />
 
 
 
-<chart:LineSeries Interior="CadetBlue" XBindingPath="Brand"
+<chart:LineSeries Interior="CadetBlue" XBindingPath="MetalName"
 
-ItemsSource="{Binding SneakersDetail}"   
+ItemsSource="{Binding MetalsDetail}"   
 
-YBindingPath="ItemsCount">
+YBindingPath="MetalCount">
 
 <chart:LineSeries.YAxis>
 
@@ -423,11 +423,11 @@ chart.SecondaryAxis = yAxis;
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().MetalsDetail,
 
-    XBindingPath = "Brand",
+    XBindingPath = "MetalName",
 
-    YBindingPath = "ItemsCount1",
+    YBindingPath = "MetalCount1",
 
 };
 
@@ -440,11 +440,11 @@ ChartBase.SetColumnSpan(axis, 2);
 LineSeries lineSeries = new LineSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().MetalsDetail,
 
-    XBindingPath = "Brand",
+    XBindingPath = "MetalName",
 
-    YBindingPath = "ItemsCount",
+    YBindingPath = "MetalCount",
 
     Interior = new SolidColorBrush(Colors.CadetBlue),
 
@@ -506,19 +506,19 @@ AreaBorderThickness="1,1,1,1">
 
 <chart:ColumnSeries Interior="#bcbcbc"
 
-ItemsSource="{Binding SneakersDetail}" Label="2015"  
+ItemsSource="{Binding MetalsDetail}" Label="2015"  
 
-XBindingPath="Brand" 
+XBindingPath="MetalName" 
 
-YBindingPath="ItemsCount" />
+YBindingPath="MetalCount" />
 
-<chart:ColumnSeries ItemsSource="{Binding SneakersDetail}"  
+<chart:ColumnSeries ItemsSource="{Binding MetalsDetail}"  
 
 SegmentSpacing="0.5"
 
-Interior="#4a4a4a"  XBindingPath="Brand" 
+Interior="#4a4a4a"  XBindingPath="MetalName" 
 
-Label="2014" YBindingPath="Position"/>            
+Label="2014" YBindingPath="MetalCount1"/>            
 
 </chart:SfChart>
 
@@ -539,7 +539,7 @@ chart.AreaBorderThickness = new Thickness(1);
 chart.PrimaryAxis = new CategoryAxis()
 {
 
-    Header = "Medals"
+    Header = "Metals"
 
 };
 
@@ -560,11 +560,11 @@ chart.Legend = new ChartLegend()
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().MetalsDetail,
 
-    XBindingPath = "Brand",
+    XBindingPath = "MetalName",
 
-    YBindingPath = "ItemsCount",
+    YBindingPath = "MetalCount",
 
     Label = "2015",
 
@@ -575,11 +575,11 @@ ColumnSeries columnSeries1 = new ColumnSeries()
 ColumnSeries columnSeries2 = new ColumnSeries()
 {
 
-    ItemsSource = new ViewModel().SneakersDetail,
+    ItemsSource = new ViewModel().MetalsDetail,
 
-    XBindingPath = "Brand",
+    XBindingPath = "MetalName",
 
-    YBindingPath = "Position",
+    YBindingPath = "MetalCount1",
 
     Label = "2014",
 

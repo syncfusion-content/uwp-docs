@@ -533,4 +533,142 @@ To configure the views based on resources, refer
 
 ![UWP SfSchedule displays appointment assigned to the customers](Appointments_images/resource.png)
 
+## Resources customization
 
+You can customize the resources in a `Timeline` view by using the [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval) , [IntervalHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight) and [ScheduleDateRange](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleDateRange) properties of schedule. You can also add the dates in the `ScheduleDateRange` collection that need to be displayed in a day view and timeline view of schedule.
+
+{% tabs %} 
+{% highlight xaml %} 
+<schedule:SfSchedule
+        x:Name="schedule"
+        Resource="Doctors"
+        TimeInterval="Custom" CustomTimeInterval="1440"
+        ScheduleType="TimeLine"
+        Appointments="{Binding AppointmentCollection}"
+        ScheduleDateRange="{Binding DateRange}">
+<schedule:SfSchedule.ScheduleResourceTypeCollection>
+    <schedule:ResourceType TypeName="Doctors">
+        <schedule:Resource
+                    DisplayName="Dr.Jacob"
+                    ResourceName="Dr.Jacob"
+                    TypeName="Doctors" />
+        <schedule:Resource
+                    DisplayName="Dr.Darsy"
+                    ResourceName="Dr.Darsy"
+                    TypeName="Doctors" />
+    </schedule:ResourceType>
+</schedule:SfSchedule.ScheduleResourceTypeCollection>
+<schedule:SfSchedule.DataContext>
+    <local:SchedulerViewModel/>
+</schedule:SfSchedule.DataContext>
+<interactivity:Interaction.Behaviors>
+    <local:SchedulerBehavior/>
+</interactivity:Interaction.Behaviors>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %} 
+public class SchedulerViewModel
+{
+    private ObservableCollection<DateTime> datecoll = new ObservableCollection<DateTime>();
+    DateTime currentdate;
+    public ScheduleAppointmentCollection AppointmentCollection { get; set; } = new ScheduleAppointmentCollection();
+    public ObservableCollection<DateTime> DateRange{ get; set; } = new ObservableCollection<DateTime>();
+
+    string[] subject = new string[]
+  {
+            "Oncological Robotic Surgery",
+            "Free Plastic Surgery Camp",
+            "Seminar on Recent Advances in Management of Benign Brain Tumours",
+            "Patient and Public Forum",
+            "4th Clinical Nutrition Update",
+            "Robotic GI Surgery International Congress",
+  };
+
+    public SchedulerViewModel()
+    {
+        Random randomValue = new Random();
+        DateTime today = DateTime.Now;
+        if (today.Month == 12)
+        {
+            today = today.AddMonths(-1);
+        }
+        else if (today.Month == 1)
+        {
+            today = today.AddMonths(1);
+        }
+        int day = (int)today.DayOfWeek;
+        DateTime currentWeek = DateTime.Now.AddDays(-day);
+
+        DateTime startMonth = new DateTime(today.Year, today.Month - 1, 1, 0, 0, 0);
+        for (int i = 1; i < 30; i += 2)
+        {
+            for (int j = -7; j < 14; j++)
+            {
+                datecoll.Add(currentWeek.Date.AddDays(j).AddHours(randomValue.Next(9, 18)));
+            }
+        }
+
+        ObservableCollection<SolidColorBrush> brush = new ObservableCollection<SolidColorBrush>();
+        brush.Add(new SolidColorBrush(Color.FromArgb(0xFF, 0xA2, 0xC1, 0x39)));
+        brush.Add(new SolidColorBrush(Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));
+        brush.Add(new SolidColorBrush(Color.FromArgb(0xFF, 0x1B, 0xA1, 0xE2)));
+        brush.Add(new SolidColorBrush(Color.FromArgb(0xFF, 0xE6, 0x71, 0xB8)));
+        brush.Add(new SolidColorBrush(Color.FromArgb(0xFF, 0xF0, 0x96, 0x09)));
+        brush.Add(new SolidColorBrush(Color.FromArgb(0xFF, 0x33, 0x99, 0x33)));
+        brush.Add(new SolidColorBrush(Color.FromArgb(0xFF, 0x00, 0xAB, 0xA9)));
+        brush.Add(new SolidColorBrush(Color.FromArgb(0xFF, 0xE6, 0x71, 0xB8)));
+
+        int count = 0;
+        for (int index = 0; index < 30; index++)
+        {
+            currentdate = datecoll[randomValue.Next(0, datecoll.Count)];
+            DateTime nextdate = datecoll[randomValue.Next(0, datecoll.Count)];
+            count++;
+            ScheduleAppointment appointment1 = new ScheduleAppointment() { StartTime = currentdate, EndTime = currentdate.AddHours(randomValue.Next(0, 2)), Subject = subject[count % subject.Length], Location = "Chennai", AppointmentBackground = brush[index % 3] };
+            appointment1.ResourceCollection.Add(new Resource() { TypeName = "Doctors", ResourceName = "Dr.Jacob" });
+            count++;
+            ScheduleAppointment appointment2 = new ScheduleAppointment() { StartTime = nextdate, EndTime = nextdate.AddHours(randomValue.Next(0, 2)), Subject = subject[count % subject.Length], Location = "Chennai", AppointmentBackground = brush[(index + 2) % 3] };
+            appointment2.ResourceCollection.Add(new Resource() { TypeName = "Doctors", ResourceName = "Dr.Darsy" });
+            AppointmentCollection.Add(appointment1);
+            AppointmentCollection.Add(appointment2);
+
+            DateRange.Add(new DateTime(2020, 08, 1));
+            DateRange.Add(new DateTime(2020, 08, 2));
+            DateRange.Add(new DateTime(2020, 08, 3));
+            DateRange.Add(new DateTime(2020, 08, 4));
+            DateRange.Add(new DateTime(2020, 08, 5));
+        }
+    }
+}
+{% endhighlight %}
+{% highlight c# %}
+public class SchedulerBehavior : Behavior<SfSchedule>
+{
+    SfSchedule schedule;
+
+    protected override void OnAttached()
+    {
+        base.OnAttached();
+        schedule = this.AssociatedObject;
+        this.AssociatedObject.SizeChanged += Schedule_SizeChanged;
+    }
+
+    private void Schedule_SizeChanged(object sender, SizeChangedEventArgs e)
+    {
+        schedule.IntervalHeight = e.NewSize.Width / 5;
+    }
+    protected override void OnDetaching()
+    {
+        if (schedule != null)
+        {
+            base.OnDetaching();
+            this.AssociatedObject.SizeChanged -= Schedule_SizeChanged;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code [here](https://github.com/SyncfusionExamples/resource-view-customization-uwp)
+
+![UWP ResourceView Customization](Appointments_images/Resourceview customization.png)
