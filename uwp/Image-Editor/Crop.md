@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Crop | SfImageEditor | uwp | Syncfusion
-description: Learn how to crop the the image with apect ratios in syncfusion image editor.
+title: Cropping image in Syncfusion ImageEditor control in UWP
+description: Learn how to crop the image with aspect ratios in syncfusion image editor.
 platform: uwp
 control: SfImageEditor
 documentation: ug
