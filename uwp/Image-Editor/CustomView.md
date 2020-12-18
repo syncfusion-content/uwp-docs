@@ -31,6 +31,8 @@ The `CustomViewSettings` is defined to set values for the `CanMaintainAspectRati
 
 * Angle property is used to set the angle for custom view. Using this property, you can rotate the custom view to the desired angle.
 
+* [`EnableDrag`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.CustomViewSettings.html#Syncfusion_UI_Xaml_ImageEditor_CustomViewSettings_EnableDrag) - Controls the dragging of selected view over the image.
+
 {% highlight C# %}
 
             CustomViewSettings customViewSettings = new CustomViewSettings()
