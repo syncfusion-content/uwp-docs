@@ -121,6 +121,47 @@ imageEditor.Crop(new Rect(0, 0, 0, 0));
 
 {% endtabs %}
 
+### Circle cropping
+
+An image can be cropped in circle or elliptical format, which could be perfect for using it as a profile picture.
+Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping_Windows_Foundation_Rect_System_Boolean_) parameter as shown in the below code sample.
+
+N> When an empty rect is specified in the parameter, a rounded rect will be formed covering the entire image and it will be either in circle or ellipse shape based on the image bounds.
+
+{% highlight C# %}
+
+// To crop an image as a circular dimension.
+
+            var size = editor.ActualImageRenderedBounds;
+            var minSize = Math.Min(size.Width, size.Height);
+            var leftX = (size.Width - minSize) / 2;
+            var topY = (size.Height - minSize) / 2;
+
+            var x = (leftX * 100) / size.Width;
+            var y = (topY * 100) / size.Height;
+            var width = (minSize * 100) / size.Width;
+            var height = (minSize * 100) / size.Height;
+
+            editor.ToggleCropping(new Rect(x, y, width, height), true);
+
+{% endhighlight %}
+
+![SfImageEditor](crop_images/CropPreview.png)
+
+The following image show cases the circularly cropped image.
+
+![SfImageEditor](crop_images/CircleCrop.png)
+
+ The following code shows cropping an image in elliptical format.
+
+{% highlight C# %}
+
+// To crop an image as a elliptical dimension.
+
+  editor.ToggleCropping(new Rect(), true);
+
+{% endhighlight %}
+
 ## Manually set the cropping area
 
 To manually set the cropping rectangle without even enabling the cropping functionality, use overloaded Crop(Rectangle rect) method. This can be done by defining a rectangle and pass it to Crop(rect) method.
@@ -131,3 +172,22 @@ To manually set the cropping rectangle without even enabling the cropping functi
     imageEditor.Crop(new Rect(200, 150, 150, 150));
 
 {% endhighlight %}
+
+
+![](crop_images/cropaspectUWP.png)
+
+### Selecting the cropping ratio programmatically
+
+Programmatically, you can select the desired cropping ratio from the various aspect ratios available in the built-in cropping toolbar by specifying the corresponding index of the toolbar item using the [`ToggleCropping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping_System_Boolean_System_Int32_) method.
+
+The following code sample will add the cropping preview on the image in square shape.
+
+{% tabs %}
+
+{% highlight C# %}
+
+ editor.ToggleCropping(true, 2);
+
+{% endhighlight %}
+
+{% endtabs %}
