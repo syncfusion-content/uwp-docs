@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NumberFormatting in syncfusion NumericTextBox control for UWP
-description: Number formatting and group separator with modes in syncfusion NumericTextBox control for UWP
+description: Number formatting and group separator with modes customization in syncfusion numeric text box control for UWP.
 platform: uwp
 control: SfNumeric TextBox
 documentation: ug
