@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Crop | SfImageEditor | uwp | Syncfusion
-description: Crop
+description: Learn how to crop the the image with apect ratios in syncfusion image editor.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Crop
+
+# Cropping the image with various aspect ratios
 
 The image editor control gives you an option to crop the image as desired. Cropping the image can be done in following two ways:
 
@@ -158,7 +159,7 @@ To manually set the cropping rectangle without even enabling the cropping functi
 {% endhighlight %}
 
 
-![](crop_images/cropaspectUWP.png)
+![Manual cropping](crop_images/cropaspectUWP.png)
 
 ### Selecting the cropping ratio programmatically
 
