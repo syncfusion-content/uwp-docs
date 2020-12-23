@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Crop | SfImageEditor | uwp | Syncfusion
-description: Crop
+description: This section explains how to crop an image in different ways in the SfImageEditor control for UWP platform
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Crop
+# Crop in SfImageEditor
 
 The image editor control gives you an option to crop the image as desired. Cropping the image can be done in following two ways:
 
@@ -58,6 +58,20 @@ imageEditor.ToggleCropping();
 // for cropping the image with original width and height of the image.
 
 imageEditor.ToggleCropping(float.NaN,float.NaN);    
+
+{% endhighlight %}
+
+{% endtabs %}
+
+* To crop an image as square dimension.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// for cropping the image in square format.
+
+imageEditor.ToggleCropping(1, 1);    
 
 {% endhighlight %}
 
@@ -117,4 +131,4 @@ To manually set the cropping rectangle without even enabling the cropping functi
 {% endhighlight %}
 
 
-![](crop_images/cropaspectUWP.png)
+![crop window output image in SfImageEditor](crop_images/cropaspectUWP.png)
