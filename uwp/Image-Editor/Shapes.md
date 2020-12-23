@@ -56,6 +56,17 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
 
 ![Annotate path on an image in UWP ImageEditor](shapes_images/path.png)
 
+N> If you add the shape when the SfImageEditor loaded in a view without image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddShape_Syncfusion_UI_Xaml_ImageEditor_Enums_ShapeType_Syncfusion_UI_Xaml_ImageEditor_PenSettings_) method after some time delay. If you add the shape when the SfImageEditor loaded in a view with image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddShape_Syncfusion_UI_Xaml_ImageEditor_Enums_ShapeType_Syncfusion_UI_Xaml_ImageEditor_PenSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageLoaded) event as shown in the following code sample.
+
+{% highlight C# %}
+
+        imageEditor.ImageLoaded += (Object sender, ImageLoadedEventArgs args) =>
+            {
+                  imageEditor.AddShape(ShapeType.Circle,new PenSettings() { });
+            };
+
+{% endhighlight %}
+
 ## To delete a shape or text from the view
 
 You can delete a selected shape or text from the view in the following two ways:
@@ -90,6 +101,16 @@ Example: imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.Im
 {% highlight C# %}
 
     imageEditor.ResizableElements = Syncfusion.UI.Xaml.ImageEditor.Enums.ImageEditorResizableElements.Shapes;
+
+{% endhighlight %}
+
+## Restricting the shape resize
+
+You can restrict the shape resizing using the [`IsResizable`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the shape added on an image. When the [`IsResizable`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.PenSettings.html#Syncfusion_UI_Xaml_ImageEditor_PenSettings_IsResizable) property is disabled, shape added on an image cannot be resized and you can only drag the shape over an image as shown in the following code sample.
+
+{% highlight c# %}
+
+ imageEditor.AddShape(ShapeType.Circle, new PenSettings() { IsResizable=false });
 
 {% endhighlight %}
 
