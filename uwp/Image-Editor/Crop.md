@@ -105,6 +105,8 @@ editor.ToggleCropping(rect);
 
 {% endtabs %} 
 
+![crop window output image in SfImageEditor](crop_images/cropaspectUWP.JPG)
+
 After the cropping area has been selected, the `Crop` method is called which in turn crops the selected region and displays the cropped image on the ImageEditor.
 
 {% tabs %}
@@ -129,6 +131,3 @@ To manually set the cropping rectangle without even enabling the cropping functi
     imageEditor.Crop(new Rect(200, 150, 150, 150));
 
 {% endhighlight %}
-
-
-![crop window output image in SfImageEditor](crop_images/cropaspectUWP.png)
