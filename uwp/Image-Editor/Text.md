@@ -38,6 +38,8 @@ N> If you add the text when the SfImageEditor loaded in a view without image, th
                  imageEditor.AddText("New Text", new TextSettings());
             };
 
+{% endhighlight %}
+
 ### TextSettings
 
 TextSettings is defined to set the values for Color and FontSize.
