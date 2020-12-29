@@ -29,6 +29,17 @@ Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
 
 programmatically, the desired text elements also can be added over the image. The `AddText` method in the SfImageEditor control is used to add text based on the string value and [`TextSettings`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
 
+N> If you add the text when the SfImageEditor loaded in a view without image, then you need to call the [`AddText`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddText_System_String_Syncfusion_UI_Xaml_ImageEditor_TextSettings_) method after some time delay. If you add the text when the SfImageEditor loaded in a view with image, then you need to call the [`AddText`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddText_System_String_Syncfusion_UI_Xaml_ImageEditor_TextSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageLoaded) event as shown in the following code sample.
+
+{% highlight C# %}
+
+        imageEditor.ImageLoaded += (Object sender, ImageLoadedEventArgs args) =>
+            {
+                 imageEditor.AddText("New Text", new TextSettings());
+            };
+
+{% endhighlight %}
+
 ### TextSettings
 
 TextSettings is defined to set the values for Color and FontSize.
@@ -53,7 +64,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 {% highlight C# %}
 
-    editor.AddText("Hello\nGood morning\nHave a nice day", new TextSettings() {TextAlignment = TextAlignment.Right });
+    imageEditor.AddText("Hello\nGood morning\nHave a nice day", new TextSettings() {TextAlignment = TextAlignment.Right });
 
 {% endhighlight %}
 
@@ -67,7 +78,7 @@ You can rotate and resize the text by enabling the `RotatableElements` property 
 
 {% highlight C# %}
 
-    editor.RotatableElements = ImageEditorElements.Text;   
+    imageEditor.RotatableElements = ImageEditorElements.Text;   
 
 {% endhighlight %}
 
@@ -81,13 +92,33 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 
 {% highlight C# %}
 
-    editor.AddText("Good morning", new TextSettings(){Angle = 45});    
+    imageEditor.AddText("Good morning", new TextSettings(){Angle = 45});    
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Output image of the text rotation](text_images/textrotation.png)
+
+## Restricting the edit text box pop-up window
+
+You can restrict the edit text box pop-up window using the [`IsEditable`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_IsEditable) property. By default, the value of the IsEditable property is true, so you can edit the text in edit text box pop-up window. When setting the IsEditable property to false, the edit text box pop-up window will not be displayed, and you are restricted to edit the text in the edit text box. 
+
+{% highlight c# %}
+
+    imageEditor.AddText("text", new TextSettings { IsEditable=false });
+
+{% endhighlight %}
+
+## Restricting the text resize
+
+You can restrict the text resizing using the [`IsResizable`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the text added on an image. When the [`IsResizable`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.TextSettings.html#Syncfusion_UI_Xaml_ImageEditor_TextSettings_IsResizable) property is disabled, text added on an image cannot be resized and you can only drag the text over an image as shown in the following code sample.
+
+{% highlight c# %}
+
+    imageEditor.AddText("Enter Text", new TextSettings { IsResizable = false });
+
+{% endhighlight %}
 
 ## See also
 
