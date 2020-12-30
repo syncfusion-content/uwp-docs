@@ -573,7 +573,7 @@ public List<object> Search(string searchText)
             return matchedItems;
         }
 {% endhighlight %}
-{% endtabs %
+{% endtabs %}
 
 
 ## Custom insert selected item
