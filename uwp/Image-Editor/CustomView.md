@@ -21,6 +21,21 @@ documentation: ug
 
 {% endhighlight %}
 
+N> If you add the custom view when the SfImageEditor loaded in a view without image, then you need to call the [`AddCustomView`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddCustomView_Windows_UI_Xaml_FrameworkElement_Syncfusion_UI_Xaml_ImageEditor_CustomViewSettings_) method after some time delay. If you add the custom view when the SfImageEditor loaded in a view with image, then you need to call the [`AddCustomView`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddCustomView_Windows_UI_Xaml_FrameworkElement_Syncfusion_UI_Xaml_ImageEditor_CustomViewSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageLoaded) event as shown in the following code sample.
+
+{% highlight C# %}
+
+        imageEditor.ImageLoaded += (Object sender, ImageLoadedEventArgs args) =>
+          {
+              
+            Image customImage = new Image() { Height = 100, Width = 100 };
+            customImage.Source = new BitmapImage(new Uri("ms-appx:///customImage.png"));
+            imageEditor.AddCustomView(customImage, new CustomViewSettings());
+
+          };
+
+{% endhighlight %}
+
 ## Custom view settings
 
 The `CustomViewSettings` is defined to set values for the `CanMaintainAspectRatio`, `Bounds`, and `Angle` properties.
@@ -30,6 +45,8 @@ The `CustomViewSettings` is defined to set values for the `CanMaintainAspectRati
 * Bounds property is used to set the boundaries of the custom view. Using this property, you can position the custom view wherever you want on the image. In percentage, the value should fall between 0 and 100.
 
 * Angle property is used to set the angle for custom view. Using this property, you can rotate the custom view to the desired angle.
+
+* [`EnableDrag`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.CustomViewSettings.html#Syncfusion_UI_Xaml_ImageEditor_CustomViewSettings_EnableDrag) - Controls the dragging of selected view over the image.
 
 {% highlight C# %}
 
@@ -68,6 +85,18 @@ You can rotate the custom view based on a particular angle using `Angle` propert
 {% endtabs %}
 
 ![Rotate and resize the custom view in UWP ImageEditor](CustomView_Images/CustomView_Rotation.png)
+
+## Restricting the custom view resize
+
+You can restrict the custom view resizing using the [`IsResizable`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.CustomViewSettings.html#Syncfusion_UI_Xaml_ImageEditor_CustomViewSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the custom view added on an image. When the [`IsResizable`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.CustomViewSettings.html#Syncfusion_UI_Xaml_ImageEditor_CustomViewSettings_IsResizable) property is disabled, custom view added on an image cannot be resized and you can only drag the custom view over an image as shown in the following code sample.
+
+{% highlight c# %}
+
+        Image customImage = new Image() { Height = 100, Width = 100 };
+        customImage.Source = new BitmapImage(new Uri("ms-appx:///customImage.png"));
+        imageEditor.AddCustomView(customImage, new CustomViewSettings() { IsResizable = false });
+
+{% endhighlight %}
 
 ## See also
 

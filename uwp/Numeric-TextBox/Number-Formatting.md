@@ -1,13 +1,13 @@
 ---
 layout: post
-title: NumberFormatting of SfNumericTextBox control for UWP
-description: NumberFormatting of SfNumericTextBox control for UWP
+title: NumberFormatting in syncfusion NumericTextBox control for UWP
+description: Number formatting and group separator with modes customization in syncfusion numeric text box control for UWP.
 platform: uwp
 control: SfNumeric TextBox
 documentation: ug
 ---
 
-# Number Formatting
+# Number formatting and group separator
 
 Number formatting functionality allows formatting the text based on the FormatString of the control. The control will format the display text on lost focus. 
 
@@ -67,3 +67,37 @@ FormatString="C"
 
 N>  A detailed explanation of Numeric formatting is available [here](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx). 
 The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different numeric settings will generate different result strings.
+
+## Group separator modes
+
+[`GroupSeparatorMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.html#Syncfusion_UI_Xaml_Controls_Input_SfNumericTextBox_GroupSeparatorMode) provides 2 states to display the group separator. 
+When the mode is set as `Always`, it will display separator while typing itself on the other hand when the mode is set as `LostFocus` it will enable the separator when the control lost its focus.
+
+N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.html#Syncfusion_UI_Xaml_Controls_Input_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the [`GroupSeparatorMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.html#Syncfusion_UI_Xaml_Controls_Input_SfNumericTextBox_GroupSeparatorMode).
+
+{% tabs %}
+
+{% highlight xaml %}
+ 
+  <numeric:SfNumericTextBox Value="123456" FormatString="n" GroupSeparatorMode="Always"
+                                  EnableGroupSeparator="True">
+            
+        </numeric:SfNumericTextBox>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+     SfNumericTextBox numericTextBox = new SfNumericTextBox();
+            numericTextBox.Value = 123456;
+            numericTextBox.FormatString = "n";
+            numericTextBox.GroupSeparatorMode = GroupSeparatorMode.Always;
+            numericTextBox.EnableGroupSeparator = true;
+            this.Content = numericTextBox;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Display the value with enable group separator](Concepts_images/GroupSeparatorMode.png)
+
