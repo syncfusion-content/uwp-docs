@@ -7,7 +7,7 @@ control: SfLinearGauge
 documentation: ug
 ---
 
-## Scale 
+# Scale 
 
 The [`MainScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html) is a linear scale integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
 

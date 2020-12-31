@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Printing PDF
+# Printing PDF
 
 Printing can be done using the Print method or by using the Print command.
 
