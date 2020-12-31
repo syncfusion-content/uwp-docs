@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scale | SfLinearGauge | uwp | Syncfusion
-description: Scale 
+title: Scale in UWP Linear Gauge control | Syncfusion
+description: Learn about Scales support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more details. 
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Scale 
+# Scale in UWP Linear Gauge (SfLinearGauge)
 
 The [`MainScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html) is a linear scale integrates ticks, labels, ranges, and pointers to customize the basic look and feel of the linear gauge.
 

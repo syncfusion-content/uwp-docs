@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting pages as image in Syncfusion Essential UWP PDF viewer.
-description: Exporting pages as image in Syncfusion Essential UWP PDF viewer.
+description: Learn about Exporting pages as images support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
 platform: uwp
 control: PDF viewer
 documentation: ug
