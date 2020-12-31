@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scale in UWP Linear Gauge control | Syncfusion
-description: Learn about Scales support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more details. 
+description: Learn about Scales support in Syncfusion Essential UWP Linear Gauge (SfLinearGauge) control and more details. 
 platform: uwp
 control: SfLinearGauge
 documentation: ug
@@ -63,7 +63,7 @@ The [`MainScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.L
 
 {% endtabs %}
 
-![](Scales_images/Scales_img1.png)
+![Scales_img1](Scales_images/Scales_img1.png)
 
 ## Setting minimum and maximum values for a scale
 
@@ -123,7 +123,7 @@ To change the minimum and maximum values of a linear scale, use the [`Minimum`](
 
 {% endtabs %}
 
-![](Scales_images/Scales_img2.png)
+![Scales_img2](Scales_images/Scales_img2.png)
 
 ## Setting interval for a scale
 
@@ -185,7 +185,7 @@ The [`Interval`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.Li
 
 {% endtabs %}
 
-![](Scales_images/Scales_img3.png)
+![Scales_img3](Scales_images/Scales_img3.png)
 
 ## Scale customization
 
@@ -244,7 +244,7 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 
 {% endtabs %}
 
-![](Scales_images/Scales_img4.png)
+![Scales_img4](Scales_images/Scales_img4.png)
 
 ## Setting scale direction
 
@@ -304,7 +304,7 @@ You can set the scale position to its forward and backward using the [`ScaleDire
 
 {% endtabs %}
 
-![](Scales_images/Scales_img5.png)
+![Scales_img5](Scales_images/Scales_img5.png)
 
 ## Setting position for a scale
 
@@ -369,7 +369,7 @@ You can set the scale position using the [`ScaleBarPositionFactor`](https://help
 
 {% endtabs %}
 
-![](Scales_images/Scales_img6.png)
+![Scales_img6](Scales_images/Scales_img6.png)
 
 ## Setting corner radius type for scale 
 
@@ -427,7 +427,7 @@ Corners of the LinearScale can be customized by setting the value to the [`Corne
 
 {% endtabs %}
 
-![](Scales_images/Scales_img7.png)
+![Scales_img7](Scales_images/Scales_img7.png)
 
 ## Setting gradient color for scale
 
@@ -533,4 +533,4 @@ You can give smooth color transition to scale to specifying the different colors
 
 {% endtabs %}
 
-![](Scales_images/Scales_img8.png)
+![Scales_img8](Scales_images/Scales_img8.png)
