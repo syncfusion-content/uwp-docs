@@ -135,7 +135,7 @@ The following sample code demonstrates how to modify the suggestion box item tem
 
 
 ### Custom mention character
-By default, @ is a mention character. But any character can be used as mention character.
+By default, **@** is a mention character. But any character can be used as mention character.
 
 ![Mention Character](Automatic-Suggestion_images/autosuggestion3.PNG)
 
