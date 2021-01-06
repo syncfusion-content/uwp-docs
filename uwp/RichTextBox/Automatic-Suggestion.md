@@ -16,76 +16,76 @@ RichTextBox control shows an inline dropdown with a list of suggested names whil
 The following sample code demonstrates how to use @mentions in RichTextBox.
 {% tabs %}
 {% highlight xaml %}
-    <Grid>
-        <RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextboxadv"
-                                         LayoutType="Continuous">
-            <RichTextBoxAdv:SfRichTextBoxAdv.SuggestionSettings>
-                <RichTextBoxAdv:SuggestionSettings>
-                    <RichTextBoxAdv:SuggestionSettings.SuggestionProviders>
-                        <RichTextBoxAdv:NameSuggestionProvider ItemsSource="{x:Bind suggestionItems}">
-                        </RichTextBoxAdv:NameSuggestionProvider>
-                    </RichTextBoxAdv:SuggestionSettings.SuggestionProviders>
-                </RichTextBoxAdv:SuggestionSettings>
-            </RichTextBoxAdv:SfRichTextBoxAdv.SuggestionSettings>
-        </RichTextBoxAdv:SfRichTextBoxAdv>
-    </Grid>
+<Grid>
+	<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextboxadv"
+									 LayoutType="Continuous">
+		<RichTextBoxAdv:SfRichTextBoxAdv.SuggestionSettings>
+			<RichTextBoxAdv:SuggestionSettings>
+				<RichTextBoxAdv:SuggestionSettings.SuggestionProviders>
+					<RichTextBoxAdv:NameSuggestionProvider ItemsSource="{x:Bind suggestionItems}">
+					</RichTextBoxAdv:NameSuggestionProvider>
+				</RichTextBoxAdv:SuggestionSettings.SuggestionProviders>
+			</RichTextBoxAdv:SuggestionSettings>
+		</RichTextBoxAdv:SfRichTextBoxAdv.SuggestionSettings>
+	</RichTextBoxAdv:SfRichTextBoxAdv>
+</Grid>
 {% endhighlight %}
 {% highlight C# %}
-		SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
-		ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
-		List<NameSuggestionItem> suggestionItems = new List<NameSuggestionItem>();
-		
-		NameSuggestionItem suggestionItem = new NameSuggestionItem();
-		suggestionItem.Name = "Nancy Davolio";
-		suggestionItem.Link = "mailto:nancy.davolio@northwindtraders.com";
-		BitmapImage bitmapImage = new BitmapImage(new Uri(new DirectoryInfo(@"ms - appx:..\..\Assets\People_Circle0.png").FullName));
-		suggestionItem.ImageSource = bitmapImage;
-		suggestionItems.Add(suggestionItem);
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+ISuggestionProvider suggestionProvider = new NameSuggestionProvider();
+List<NameSuggestionItem> suggestionItems = new List<NameSuggestionItem>();
 
-		suggestionItem = new NameSuggestionItem();
-		suggestionItem.Name = "Andrew Fuller";
-		suggestionItem.Link = "mailto:andrew.fuller@northwindtraders.com";
-		bitmapImage = new BitmapImage(new Uri(new DirectoryInfo(@"ms - appx:..\..\Assets\People_Circle5.png").FullName));
-		suggestionItem.ImageSource = bitmapImage;
-		suggestionItems.Add(suggestionItem);
+NameSuggestionItem suggestionItem = new NameSuggestionItem();
+suggestionItem.Name = "Nancy Davolio";
+suggestionItem.Link = "mailto:nancy.davolio@northwindtraders.com";
+BitmapImage bitmapImage = new BitmapImage(new Uri(new DirectoryInfo(@"ms - appx:..\..\Assets\People_Circle0.png").FullName));
+suggestionItem.ImageSource = bitmapImage;
+suggestionItems.Add(suggestionItem);
 
-		suggestionItem = new NameSuggestionItem();
-		suggestionItem.Name = "Steven Buchanan";
-		suggestionItem.Link = "mailto:steven.buchanan@northwindtraders.com";
-		bitmapImage = new BitmapImage(new Uri(new DirectoryInfo(@"ms - appx:..\..\Assets\People_Circle14.png").FullName));
-		suggestionItem.ImageSource = bitmapImage;
-		suggestionItems.Add(suggestionItem);
+suggestionItem = new NameSuggestionItem();
+suggestionItem.Name = "Andrew Fuller";
+suggestionItem.Link = "mailto:andrew.fuller@northwindtraders.com";
+bitmapImage = new BitmapImage(new Uri(new DirectoryInfo(@"ms - appx:..\..\Assets\People_Circle5.png").FullName));
+suggestionItem.ImageSource = bitmapImage;
+suggestionItems.Add(suggestionItem);
 
-		(suggestionProvider as NameSuggestionProvider).ItemsSource = suggestionItems;
+suggestionItem = new NameSuggestionItem();
+suggestionItem.Name = "Steven Buchanan";
+suggestionItem.Link = "mailto:steven.buchanan@northwindtraders.com";
+bitmapImage = new BitmapImage(new Uri(new DirectoryInfo(@"ms - appx:..\..\Assets\People_Circle14.png").FullName));
+suggestionItem.ImageSource = bitmapImage;
+suggestionItems.Add(suggestionItem);
 
-		richTextboxadv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider);
+(suggestionProvider as NameSuggestionProvider).ItemsSource = suggestionItems;
+
+richTextboxadv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider);
 {% endhighlight %}
 {% highlight VB %}
-    Dim richTextBoxAdv As SfRichTextBoxAdv = New SfRichTextBoxAdv()
-    Dim suggestionProvider As ISuggestionProvider = New NameSuggestionProvider()
-    Dim suggestionItems As List<NameSuggestionItem> = New List<NameSuggestionItem>()
-	
-    Dim suggestionItem As NameSuggestionItem = New NameSuggestionItem()
-    suggestionItem.Name = "Nancy Davolio"
-    suggestionItem.Link = "mailto:nancy.davolio@northwindtraders.com"
-    suggestionItem.ImageSource = "images/nancy.png"
-    suggestionItems.Add(suggestionItem)
-	
-    suggestionItem = New NameSuggestionItem()
-    suggestionItem.Name = "Andrew Fuller"
-    suggestionItem.Link = "mailto:andrew.fuller@northwindtraders.com"
-    suggestionItem.ImageSource = "images/andrew.png"
-    suggestionItems.Add(suggestionItem)
-	
-    suggestionItem = New NameSuggestionItem()
-    suggestionItem.Name = "Steven Buchanan"
-    suggestionItem.Link = "mailto:steven.buchanan@northwindtraders.com"
-    suggestionItem.ImageSource = "images/steven.png"
-    suggestionItems.Add(suggestionItem)
-	
-    TryCast(suggestionProvider, NameSuggestionProvider).ItemsSource = suggestionItems
-    richTextBoxAdv.SuggestionSettings = New SuggestionSettings()
-    richTextBoxAdv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider)
+Dim richTextBoxAdv As SfRichTextBoxAdv = New SfRichTextBoxAdv()
+Dim suggestionProvider As ISuggestionProvider = New NameSuggestionProvider()
+Dim suggestionItems As List<NameSuggestionItem> = New List<NameSuggestionItem>()
+
+Dim suggestionItem As NameSuggestionItem = New NameSuggestionItem()
+suggestionItem.Name = "Nancy Davolio"
+suggestionItem.Link = "mailto:nancy.davolio@northwindtraders.com"
+suggestionItem.ImageSource = "images/nancy.png"
+suggestionItems.Add(suggestionItem)
+
+suggestionItem = New NameSuggestionItem()
+suggestionItem.Name = "Andrew Fuller"
+suggestionItem.Link = "mailto:andrew.fuller@northwindtraders.com"
+suggestionItem.ImageSource = "images/andrew.png"
+suggestionItems.Add(suggestionItem)
+
+suggestionItem = New NameSuggestionItem()
+suggestionItem.Name = "Steven Buchanan"
+suggestionItem.Link = "mailto:steven.buchanan@northwindtraders.com"
+suggestionItem.ImageSource = "images/steven.png"
+suggestionItems.Add(suggestionItem)
+
+TryCast(suggestionProvider, NameSuggestionProvider).ItemsSource = suggestionItems
+richTextBoxAdv.SuggestionSettings = New SuggestionSettings()
+richTextBoxAdv.SuggestionSettings.SuggestionProviders.Add(suggestionProvider)
 {% endhighlight %}
 {% endtabs %}
 
@@ -175,7 +175,7 @@ Two or more suggestion providers can be used at a time but, each suggestion prov
 The following sample code demonstrates how to use two suggestion providers. Here we have used ‘@’ and ‘#’ as mention characters.
 {% tabs %}
 {% highlight xaml %}
- <Page.Resources>
+<Page.Resources>
         <Style x:Key="SuggestionBoxStyle" TargetType="ListBox">
             <Setter Property="MinWidth" Value="300" />
             <Setter Property="MinHeight" Value="250" />
@@ -191,24 +191,24 @@ The following sample code demonstrates how to use two suggestion providers. Here
                 </Setter.Value>
             </Setter>
         </Style>
-    </Page.Resources>
-    <Grid>
-        <RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextboxadv"
-                                         LayoutType="Continuous">
-            <RichTextBoxAdv:SfRichTextBoxAdv.SuggestionSettings>
-                <RichTextBoxAdv:SuggestionSettings>
-                    <RichTextBoxAdv:SuggestionSettings.SuggestionProviders>
-                        <RichTextBoxAdv:NameSuggestionProvider ItemsSource="{StaticResource suggestionItems}">
-                        </RichTextBoxAdv:NameSuggestionProvider>
-                        <RichTextBoxAdv:NameSuggestionProvider MentionCharacter="#" 
-                                                               ItemsSource="{StaticResource suggestionItems01}"
-                                                               SuggestionBoxStyle="{StaticResource SuggestionBoxStyle}">
-                        </RichTextBoxAdv:NameSuggestionProvider>
-                    </RichTextBoxAdv:SuggestionSettings.SuggestionProviders>
-                </RichTextBoxAdv:SuggestionSettings>
-            </RichTextBoxAdv:SfRichTextBoxAdv.SuggestionSettings>
-        </RichTextBoxAdv:SfRichTextBoxAdv>
-    </Grid>
+</Page.Resources>
+<Grid>
+	<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextboxadv"
+									 LayoutType="Continuous">
+		<RichTextBoxAdv:SfRichTextBoxAdv.SuggestionSettings>
+			<RichTextBoxAdv:SuggestionSettings>
+				<RichTextBoxAdv:SuggestionSettings.SuggestionProviders>
+					<RichTextBoxAdv:NameSuggestionProvider ItemsSource="{StaticResource suggestionItems}">
+					</RichTextBoxAdv:NameSuggestionProvider>
+					<RichTextBoxAdv:NameSuggestionProvider MentionCharacter="#" 
+														   ItemsSource="{StaticResource suggestionItems01}"
+														   SuggestionBoxStyle="{StaticResource SuggestionBoxStyle}">
+					</RichTextBoxAdv:NameSuggestionProvider>
+				</RichTextBoxAdv:SuggestionSettings.SuggestionProviders>
+			</RichTextBoxAdv:SuggestionSettings>
+		</RichTextBoxAdv:SfRichTextBoxAdv.SuggestionSettings>
+	</RichTextBoxAdv:SfRichTextBoxAdv>
+</Grid>
 {% endhighlight %}
 {% highlight C# %}
 SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
