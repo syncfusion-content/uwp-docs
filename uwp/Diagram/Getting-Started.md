@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential Diagram for UWP.
-description: Getting started walk through to create your Organizational Chart Diagram.
+description: Getting started walk through how to integrate SfDiagram into an application and how to create your first Flow Diagram and Organizational Chart Diagram
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Diagram (SfDiagram)
 
 The following section helps you to build your application with SfDiagram. 
 
