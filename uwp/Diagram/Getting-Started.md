@@ -444,4 +444,4 @@ Now output will be looks like,
 
 ![](Getting-Started_images\completeDiagram.png)
     
-Please find flow Diagram sample from this link: [FlowChart](http://www.syncfusion.com/downloads/support/directtrac/215734/ze/Flow_Diagram659876412).
+[View Sample in GitHub](https://github.com/SyncfusionExamples/UWP-Diagram-Examples/tree/main/Samples/GettingStarted/Flowchartsample).
