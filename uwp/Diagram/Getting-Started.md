@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential Diagram for UWP.
-description: Getting started walk through to create your Organizational Chart Diagram.
+description: Getting started walk through how to integrate SfDiagram into an application and how to create your first Flow Diagram and Organizational Chart Diagram
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Diagram (SfDiagram)
 
 The following section helps you to build your application with SfDiagram. 
 
@@ -21,7 +21,7 @@ Create new UWP project using Visual Studio. For more [details](https://docs.micr
 
 SfDiagram control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![](Getting-Started_images\Diagram.png)
+![Designer](Getting-Started_images\Diagram.png)
 
 ### Adding control manually in XAML
 
@@ -204,7 +204,7 @@ Creating NodeViewModel with Specified Height and Width.
 
  Now Node will be looks like,
    
-![](Getting-Started_images\addNode.png)
+![AddNode](Getting-Started_images\addNode.png)
    
 N> ID sets for each node to identify nodes easily while setting connectors.
    
@@ -262,7 +262,7 @@ N> `Annotations` property is a collection, which indicates that more than one An
 
 Now Node will be looks like,
  
-![](Getting-Started_images\nodeAnnotation.PNG)
+![NodeAnnotation](Getting-Started_images\nodeAnnotation.PNG)
  
 ### Nodes for Flow Diagram
 
@@ -339,7 +339,7 @@ Now Node will be looks like,
 
  Finally all Nodes added to diagram and it will be looks like
 
-![](Getting-Started_images\completeNodes.png)
+![CompleteDiagram](Getting-Started_images\completeNodes.png)
 
 ### Add Connectors
 
@@ -400,7 +400,7 @@ Now Node will be looks like,
 
 Now output will be,
 
- ![](Getting-Started_images\nodewithConnector.png)
+ ![NodeWithConnector](Getting-Started_images\nodewithConnector.png)
  
 #### Connectors for Flow diagram
 
@@ -442,6 +442,6 @@ Now we can connect all nodes using ConnectorViewModel.
 
 Now output will be looks like,
 
-![](Getting-Started_images\completeDiagram.png)
+![FlowDiagram](Getting-Started_images\completeDiagram.png)
     
-Please find flow Diagram sample from this link: [FlowChart](http://www.syncfusion.com/downloads/support/directtrac/215734/ze/Flow_Diagram659876412).
+[View Sample in GitHub](https://github.com/SyncfusionExamples/UWP-Diagram-Examples/tree/main/Samples/GettingStarted/Flowchartsample).
