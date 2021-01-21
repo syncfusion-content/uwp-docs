@@ -139,7 +139,7 @@ Create new Universal Windows Platform project in Visual Studio to display SfData
 
 SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Adding control via Designer](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -351,7 +351,7 @@ dataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the see the below output,
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Binding to Data](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -558,7 +558,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endtabs %}
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Sorting](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -592,7 +592,7 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Grouping](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -600,7 +600,7 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFiltering) property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+![Filtering](Getting-Started_images/Getting-Started_img5.png)
 
 
 
