@@ -674,5 +674,5 @@ The following chart is created as a result of the above codes.
 
 ![Tooltip support in UWP Chart](Getting-Started_images/img3.png)
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfChart-GettingStarted1293886778.zip).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/How-to-create-a-Chart-control-example-in-UWP).
 
