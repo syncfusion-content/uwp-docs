@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Create Project
+# Create UWP application
 
 Syncfusion provides the **Visual Studio Project Templates** for the Syncfusion UWP platform to create the Syncfusion UWP Application adding required Syncfusion assemblies/NuGet based on the control chosen.  
 
