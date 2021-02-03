@@ -15,6 +15,8 @@ I> The Syncfusion UWP project templates are available from v15.3.0.26.
 
 Use the following steps to create the Syncfusion UWP project through the Visual Studio Project Template:
 
+> Before use the Syncfusion UWP Project Template, check whether the **UWP Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+
 1. To create a Syncfusion UWP project, follow either one of the options below:
 
    **Option 1:**   
