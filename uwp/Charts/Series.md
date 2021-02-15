@@ -3214,9 +3214,9 @@ chart.Series.Add(series);
 
 ![Interval customization support for histogram series in UWP Chart](Series_images/histogram_interval.png)
 
-**CurveColor**
+**CurveLineStyle**
 
-This property is used to set the color of curve.
+You can customize interval using [`CurveLineStyle`]property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_ShowNormalDistributionCurve).
 
 {% tabs %}
 
@@ -3241,7 +3241,7 @@ Interior="LightSkyBlue"
 
 ItemsSource="{Binding Product}"
 
-XBindingPath="Price" 
+XBindingPath="Price"
 
 YBindingPath="Value"/>
 
@@ -3249,7 +3249,6 @@ YBindingPath="Value"/>
 
 {% highlight c# %}
 
-...
 ...
 HistogramSeries series = new HistogramSeries()
 {
