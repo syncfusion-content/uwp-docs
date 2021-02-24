@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started of Syncfusion Picker control for UWP
-description: Getting Started of Picker control
+description: Explains you the steps required to populate the Picker with data, header, footer and different modes.
 platform: UWP
 control: Picker
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with UWP Picker (SfPicker)
 
 This section explains you the steps to configure a SfPicker control in a real-time scenario and provides a walk-through on some of the customization features available in SfPicker control.
 
