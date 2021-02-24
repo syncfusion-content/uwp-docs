@@ -465,7 +465,7 @@ In SfPickerSfPicker can be rendered as a dialog by setting `SfPicker.PickerMode`
 
 The picker can be opened programmatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
 
-Note: This property automatically changed to False when close the dialog by click outside of dialog SfPicker.
+Note: This property automatically changed to False when close the dialog by clicking outside of dialog SfPicker.
 
 {% tabs %}
 
