@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started of Syncfusion Picker control for UWP
-description: Getting Started of Picker control
+description: Explains you the steps required to populate the Picker with data, header, footer and different modes.
 platform: UWP
 control: Picker
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with UWP Picker (SfPicker)
 
 This section explains you the steps to configure a SfPicker control in a real-time scenario and provides a walk-through on some of the customization features available in SfPicker control.
 
@@ -465,7 +465,7 @@ In SfPickerSfPicker can be rendered as a dialog by setting `SfPicker.PickerMode`
 
 The picker can be opened programmatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
 
-Note: This property automatically changed to False when close the dialog by click outside of dialog SfPicker.
+Note: This property automatically changed to False when close the dialog by clicking outside of dialog SfPicker.
 
 {% tabs %}
 
@@ -525,7 +525,7 @@ Note: This property automatically changed to False when close the dialog by clic
 
 Screen shot for the above code
 
-![](images/GettingStarted.png)
+![Picker_images](images/GettingStarted.png)
 
 We have attached sample for reference. please download the sample from the below link.
 
