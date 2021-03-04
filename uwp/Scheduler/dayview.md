@@ -187,8 +187,7 @@ Selection and related events will not be working in this blocks.
 
 ## Change first day of week:
 
-Change first day of week
-[FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeekProperty) of `SfSchedule` is not applicable for `DayView` as it displays only one day.
+Scheduler supports to change the first day of week by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeekProperty) property and it is not applicable for `DayView` as it displays only one day.
 
 ## Time Label Formatting
 You can customize the format for the labels which are mentioning the time, by setting [MajorTickTimeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MajorTickTimeFormatProperty) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MinorTickTimeFormatProperty) properties of ` SfSchedule`.

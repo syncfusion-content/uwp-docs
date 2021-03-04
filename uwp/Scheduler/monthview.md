@@ -30,7 +30,7 @@ documentation: ug
 ![](monthview_images/monthview.png)
 
 ## Month Navigation direction
-MonthView of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthNavigationDirection) property of `SfSchedule`, by default Month navigation direction is `Horizontal`.
+MonthView of Schedule can be navigated to both horizontal and vertical direction. You can change the direction of navigation by using the [MonthNavigationDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthNavigationDirection) property of `SfSchedule`, by default Month navigation direction is `Horizontal`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,7 +66,7 @@ You can disable the interaction for certain date in Month view by using [MonthBl
 ![](monthview_images/blackoutdate.png)
 
 ## First day of Week in Month
-You can set First day of week using [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeek) property of `SfSchedule`, by default schedule control will rendered with `Sunday` as the first day of the week. 
+You can change the first day of week by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeek) property of `SfSchedule`, by default schedule control will rendered with `Sunday` as the first day of the week. 
 
 {% tabs %}
 {% highlight xaml %}

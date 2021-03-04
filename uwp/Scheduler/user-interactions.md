@@ -10,7 +10,7 @@ documentation: ug
 # User Interactions in UWP Scheduler (SfSchedule)
 
 ## Change the default context menu
-When tapping on the schedule or appointment, our built-in context menu will be opened and triggering [ContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ContextMenuOpeningEventArgs.html) event. You can create your own context menu by setting `e.Cancel` to true in the `ContextMenuOpening` event. It will avoid to open the default context menu. 
+When you tap the schedule or appointment, our built-in context menu will be opened and triggered the [ContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ContextMenuOpeningEventArgs.html) event. You can create your own context menu by setting `e.Cancel` to true in the `ContextMenuOpening` event. It will avoid to open the default context menu. 
 
 
 {% highlight c# %} 
