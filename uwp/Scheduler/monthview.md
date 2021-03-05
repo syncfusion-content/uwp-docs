@@ -1,13 +1,13 @@
 ---   
 layout: post   
-title: MonthView   
-description: Overview of MonthView related features
+title: Customize the Schedule MonthView in Syncfusion SfSchedule control for UWP 
+description: Learn how to Customize the schedule MonthView, its appearance and appointments in SfSchedule control for UWP
 platform: uwp   
 control: SfSchedule   
 documentation: ug   
 ---   
     
-# Month View
+# Month View in UWP Scheduler (SfSchedule)
 `MonthView` of `SfSchedule` used to display entire dates of the specific month, current month will be displayed by default initially. Current date color is differentiated with other dates of the current month, also the color differentiation for dates will be applicable for previous and next month dates. Single notation will be displayed in the cell to indicate the appointment availability in the specific cell.
 
 {% tabs %}

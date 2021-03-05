@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize the Schedule DayView at SfSchedule control for UWP
-description: Learn how to Customize the schedule DayView in SfSchedule control
+title: Customize the Schedule DayView in Syncfusion SfSchedule control for UWP
+description: Learn how to Customize the schedule DayView, its appearance and appointments in SfSchedule control for UWP
 platform: UWP
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# DayView
+# DayView in UWP Scheduler (SfSchedule)
 
 DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
@@ -45,7 +45,7 @@ You can customize the default appearance of view header in [DayView](https://hel
             schedule.DayViewHeaderStyle = dayViewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/viewheader_day.png)
+![ViewHeader Appearance in UWP](daymodule_images/viewheader_day.png)
 
 ## Change Time Interval
 You can customize the interval of timeslots in `DayView`.
@@ -67,7 +67,7 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
      <Schedule:SfSchedule x:Name="schedule" TimeInterval="ThirtyMin" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timeinterval_day.png)
+![TimeInterval Changing in UWP](daymodule_images/timeinterval_day.png)
 
 ### CustomTimeInterval
 You can customize the interval of timeslots in `DayView` by setting [CustomTimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_CustomTimeIntervalProperty) property of `SfSchedule`.
@@ -87,7 +87,7 @@ You can customize the interval of timeslots in `DayView` by setting [CustomTimeI
             TimeInterval="Custom" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/customtimeinterval_day.png)
+![TimeInterval Customization in UWP](daymodule_images/customtimeinterval_day.png)
 
 ## Change Working hours
 Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHourProperty) and [WorkEndHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHourProperty) properties of `SfSchedule`.
@@ -112,7 +112,7 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
             WorkStartHour="10" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/changeworkinghours_day.png)
+![Changing Working hours in UWP](daymodule_images/changeworkinghours_day.png)
 
 >**Note**:
 `WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
@@ -149,7 +149,7 @@ You can customize the appearance of the Timeslot by its color using [MajorTickSt
             WorkStartHour="9" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timeslotappearance_day.png)
+![Timeslot Appearance Customization](daymodule_images/timeslotappearance_day.png)
 
 ## Non-Accessible timeslots
 
@@ -180,7 +180,7 @@ You can restrict or allocate certain timeslot as non-accessible blocks by using 
     </Schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/nonaccessibleblock_day.png)
+![Non-Accessible Timeslots in UWP](daymodule_images/nonaccessibleblock_day.png)
 
 >**Note**:
 Selection and related events will not be working in this blocks.
@@ -208,7 +208,7 @@ You can customize the format for the labels which are mentioning the time, by se
             ScheduleType="Day" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timelabelformat_day.png)
+![Time label format Customization](daymodule_images/timelabelformat_day.png)
 
 ## Time Label Appearance
 
@@ -229,7 +229,7 @@ You can customize the color for the labels which are mentioning the time, by set
             ScheduleType="Day" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timelabelappearance_day.png)
+![TimeLabel Appearance](daymodule_images/timelabelappearance_day.png)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
@@ -263,7 +263,7 @@ You can customize the timeslot selection by using [ScheduleSelectionStyle](https
         </Schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/selectionstyle_day.png)
+![Selection Customization using Style](daymodule_images/selectionstyle_day.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_SelectionViewProperty) property of `SfSchedule`.
@@ -286,7 +286,7 @@ You can replace the default selection UI with your custom view by setting [Selec
     </Schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/custoselectionview_day.png)
+![Selection customization using custom View](daymodule_images/custoselectionview_day.png)
 
 >**Note:**
 Selection customization is applicable for time slots alone.
@@ -331,7 +331,7 @@ Resource can be added to the schedule control by setting [Resource](https://help
 
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/addresource_day.png)
+![Adding Resources in Scheduler UWP](daymodule_images/addresource_day.png)
 
 ### Sub Resource
 
@@ -401,7 +401,7 @@ SubResourceType enables users to view appointments based on their subcategory on
         </syncfusion:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/subresource_day.png)
+![SubResources Type](daymodule_images/subresource_day.png)
 
 ### Changing resource order
 #### Order by Date
@@ -419,7 +419,7 @@ DayHeaderOrder property is used to set the order by which resources must be disp
                        Resource="Hospital" DayHeaderOrder="OrderByDate"/>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/orderbydate_day.png)
+![Changing the Resource order](daymodule_images/orderbydate_day.png)
 
 #### Order by resource
 DayHeaderOrder property is used to set the order by which resources must be displayed. OrderByResource will be displaying the resource based on resource collection. 
@@ -436,7 +436,7 @@ DayHeaderOrder property is used to set the order by which resources must be disp
                        Resource="Hospital" DayHeaderOrder="OrderByResource"/>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/orderbyresource_day.png)
+![Order by resource](daymodule_images/orderbyresource_day.png)
 
 ### Customizing resource visibility
 
@@ -457,5 +457,5 @@ This support is available for Day view alone.
         Resource="Hospital" DayHeaderOrder="OrderByDate" DayViewColumnCount="5"/>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/column_day.png)
+![Resource Visibility Customization](daymodule_images/column_day.png)
 
