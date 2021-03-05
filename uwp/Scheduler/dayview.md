@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Customize the Schedule DayView in Syncfusion SfSchedule control for UWP
+title: Customize the DayView in Syncfusion SfSchedule control for UWP
 description: Learn how to Customize the schedule DayView, its appearance and appointments in SfSchedule control for UWP
 platform: UWP
 control: SfSchedule

@@ -1,6 +1,6 @@
 ---   
 layout: post   
-title: Customize the Schedule MonthView in Syncfusion SfSchedule control for UWP 
+title: Customize the MonthView in Syncfusion SfSchedule control for UWP 
 description: Learn how to Customize the schedule MonthView, its appearance and appointments in SfSchedule control for UWP
 platform: uwp   
 control: SfSchedule   
