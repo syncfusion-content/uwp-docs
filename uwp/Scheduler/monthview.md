@@ -388,7 +388,7 @@ Resource can be added to the schedule control by setting `Resource` and [Schedul
 {% endhighlight %}
 {% endtabs %}
 
-![](monthview_images/resource.png)
+![Adding resources in UWP Scheduler](monthview_images/resource.png)
 
 >**Notes**: Sub resource support is not available for `MonthView`.
 
