@@ -151,6 +151,7 @@ The following code example explains positioning the tooltip at `Pointer` positio
 {% highlight c# %}
 
 SfChart chart = new SfChart();
+...
 ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
 chartTooltipBehavior.Position = TooltipPosition.Pointer;
 chart.Behaviors.Add(chartTooltipBehavior);
@@ -169,15 +170,16 @@ The following code example explains applying the style for tooltip.
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Resources>
+<chart:SfChart.Resources>
     <Style TargetType="Path" x:Key="style">
        <Setter Property="Stroke" Value="Gray"/>
        <Setter Property="Fill" Value="Black"/>
     </Style>
-</syncfusion:SfChart.Resources>
-<syncfusion:SfChart.Behaviors>
-    <syncfusion:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
-</syncfusion:SfChart.Behaviors>
+</chart:SfChart.Resources>
+...
+<chart:SfChart.Behaviors>
+    <chart:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
+</chart:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -187,6 +189,7 @@ SfChart chart = new SfChart();
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Gray)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Black)));
+...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.Behaviors.Add(tooltipBehavior);
@@ -205,15 +208,16 @@ The following code example explains applying the style for tooltip label.
 
 {% highlight xml %}
 
-<syncfusion:SfChart.Resources>
+<chart:SfChart.Resources>
     <Style TargetType="TextBlock" x:Key="labelStyle">
        <Setter Property="FontSize" Value="14"/>
        <Setter Property="Foreground" Value="Red"/>
     </Style>
-</syncfusion:SfChart.Resources>
-<syncfusion:SfChart.Behaviors>
-   <syncfusion:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
-</syncfusion:SfChart.Behaviors>
+</chart:SfChart.Resources>
+...
+<chart:SfChart.Behaviors>
+   <chart:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
+</chart:SfChart.Behaviors>
 
 {% endhighlight %}
 
@@ -223,6 +227,7 @@ SfChart chart = new SfChart();
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
+...
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
 chart.Behaviors.Add(tooltipBehavior);
@@ -681,24 +686,56 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ShowTooltip="True"
+...
+<chart:SfChart.Resources>
+    <DataTemplate x:Key="tooltipTemplate1">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Item.Demand}"
+                Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding Item.Year2010}"
+                Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+    </DataTemplate>
 
-ItemsSource="{Binding Demands}"
+    <DataTemplate x:Key="tooltipTemplate2">
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="{Binding Item.Demand}"
+                Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text=" : " Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding Item.Year2011}"
+                Foreground="Black" FontWeight="Medium" FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+    </DataTemplate>
 
-TooltipTemplate="{StaticResource tooltip}"
+    <Style TargetType="Path" x:Key="style">
+        <Setter Property="Stroke" Value="Black"/>
+        <Setter Property="Fill" Value="LightGreen"/>
+        <Setter Property="StrokeThickness" Value="2"/>
+    </Style>
+</chart:SfChart.Resources>
+...
 
-XBindingPath="Demand" YBindingPath="Year2010" />
+<chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
+    XBindingPath="Demand" YBindingPath="Year2010" 
+    TooltipTemplate="{StaticResource tooltipTemplate1}">
+</chart:ColumnSeries>
 
-<syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"
-
-TooltipTemplate="{StaticResource tooltip}"
-
-ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
+<chart:ColumnSeries  ItemsSource="{Binding Demands}"
+    ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"
+    TooltipTemplate="{StaticResource tooltipTemplate2}">
+</chart:ColumnSeries>
+...
+<chart:SfChart.Behaviors>
+    <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
+</chart:SfChart.Behaviors>
+...
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+...
 ColumnSeries series1 = new ColumnSeries()
 {
 
@@ -712,9 +749,7 @@ ColumnSeries series1 = new ColumnSeries()
 
     ShowTooltip = true,
 
-    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+    TooltipTemplate = chart.Resources["tooltipTemplate1"] as DataTemplate,
 
 };
 
@@ -731,15 +766,14 @@ ColumnSeries series2 = new ColumnSeries()
 
     ShowTooltip = true,
 
-    TooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate,
-
-    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
+    TooltipTemplate = chart.Resources["tooltipTemplate2"] as DataTemplate,
 
 };
 
 chart.Series.Add(series1);
 
 chart.Series.Add(series2);
+...
 
 {% endhighlight %}
 
