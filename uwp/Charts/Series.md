@@ -3216,7 +3216,7 @@ chart.Series.Add(series);
 
 **CurveLineStyle**
 
-You can customize interval using [`CurveLineStyle`]property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_ShowNormalDistributionCurve).
+You can customize the normal distribution curve by using the [`CurveLineStyle`] property.
 
 {% tabs %}
 
@@ -3263,7 +3263,7 @@ HistogramSeries series = new HistogramSeries()
 
     ShowNormalDistributionCurve = True,
 
-    CurveLineStyle = AreaChart.Resources["CurveColorStyle"] as Style,
+    CurveLineStyle = histogramChart.Resources["CurveColorStyle"] as Style,
 
     Interior = new SolidColorBrush(new SolidColorBrush(Colors.LightSkyBlue))
 
