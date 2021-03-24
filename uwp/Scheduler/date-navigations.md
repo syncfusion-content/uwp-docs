@@ -1,13 +1,13 @@
 ---
 layout: post
 title: DateTime Navigation and Gesture | SfSchedule | uwp | Syncfusion
-description: DateTime Navigation and Gesture
+description: This section describes the complete DateTime Navigation and Gesture support in SfSchedule control in UWP
 platform: uwp
 control: SfSchedule
 documentation: ug
 ---
 
-# Date Navigations
+# Date Navigations in UWP Scheduler (SfSchedule)
 
 ## Enabling Navigation 
 By default, Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation gesture can be enabled or disabled by setting [EnableNavigation](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_EnableNavigationProperty) property of `SfSchedule`. By default, it is enabled.
