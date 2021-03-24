@@ -91,16 +91,16 @@ The `ChartTooltipBehavior` is commonly used for all series to customize the tool
 
 The following properties are used to customize and configure tooltip which is available in the `ChartTooltipBehavior.`
 
-* `EnableAnimation`: Used to enable the animation when showing the tooltip.
-* `Position`: Used to position the tooltip at the data point position or the cursor position.
-* `Style`: Used to customize the fill and stroke of the tooltip.
-* `LabelStyle`: Used to customize the tooltip label.
-* `HorizontalOffset`: Used to position the tooltip at a distance from the data point or cursor position horizontally.
-* `VerticalOffset`: Used to position the tooltip at a distance from the data point or cursor position vertically.
-* `HorizontalAlignment`: Used to align the tooltip label at left, right and center of the data point position or cursor position horizontally.
-* `VerticalAlignment`: Used to align the tooltip label at top, center and bottom of the data point position or cursor position vertically.
-* `ShowDuration`: Used to set the amount of time that the tooltip remains visible in milliseconds.
-* `InitialShowDelay`: Used to delay in milliseconds to show the tooltip once the user interacts with series.
+* `EnableAnimation` - Used to enable the animation when showing the tooltip.
+* `Position` - Used to position the tooltip at the data point position or the cursor position.
+* `Style` - Used to customize the fill and stroke of the tooltip.
+* `LabelStyle` - Used to customize the tooltip label.
+* `HorizontalOffset` - Used to position the tooltip at a distance from the data point or cursor position horizontally.
+* `VerticalOffset` - Used to position the tooltip at a distance from the data point or cursor position vertically.
+* `HorizontalAlignment` - Used to align the tooltip label at left, right and center of the data point position or cursor position horizontally.
+* `VerticalAlignment` - Used to align the tooltip label at top, center and bottom of the data point position or cursor position vertically.
+* `ShowDuration` - Used to set the amount of time that the tooltip remains visible in milliseconds.
+* `InitialShowDelay` - Used to delay in milliseconds to show the tooltip once the user interacts with series.
 
 For customizing the tooltip, you can create an instance `ChartTooltipBehavior` and add it to the SfChart Behaviors collection.
 
@@ -535,7 +535,7 @@ chart.Series.Add(series2);
 
 ### Tooltip Duration
 
-This property [`ShowDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_ShowDurationProperty) in [`ChartTooltip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html) sets the duration time for tooltip to be displayed in milliseconds.
+The [`ShowDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_ShowDurationProperty) property in the [`ChartTooltip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html) sets the duration time for the tooltip to be displayed in milliseconds.
 
 The following code example demonstrates the duration of the tooltip set as 5 seconds.
 
@@ -586,9 +586,9 @@ N> The tooltip by default will be displayed for 1000 milliseconds.
 
 **Show delay**
 
-Tooltip also has support for delay the time to display by setting [`SetInitialShowDelay`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_Windows_UI_Xaml_DependencyObject_System_Int32_) property in milliseconds.
+Tooltip also has support for delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_Windows_UI_Xaml_DependencyObject_System_Int32_) property in milliseconds.
 
-The following code example demonstrates the tooltip will be delayed for 1 second at the before display.
+The following code example explains the tooltip will be delayed for 1 second before the display.
 
 {% tabs %}
 
