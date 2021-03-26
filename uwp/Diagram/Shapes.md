@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Basic Shapes with Syncfusion Essential Diagram for UWP.
-description: How do add different shapes to diagram 
+description: How do add different shapes to diagram control and explain about shapes properties example codes and explain basic shapes.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Shapes
+# Shapes with Syncfusion Essential Diagram for UWP
 
 We have provided some basic built-in shapes as ResourceDictionary.
 
