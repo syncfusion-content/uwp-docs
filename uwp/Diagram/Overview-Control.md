@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion | Create a preview of the entire content of the Diagram.
+title: About UWP SfDiagram Overview control | Syncfusion
 description: How to see the preview of the large Diagrams and to ease navigations within that Diagram?
 platform: uwp
 control: SfDiagram

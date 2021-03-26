@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Diagram Control | UWP | Syncfusion
+title: About UWP SfDiagram control | Syncfusion
 description: User can create and edit flowcharts, organizational charts, UML, swim lanes, mind maps, entity relationships, and any kind of diagram can quickly created using the UWP Diagram control.
 platform: uwp
 control: SfDiagram
