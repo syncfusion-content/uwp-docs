@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DateTime Navigation and Gesture | SfSchedule | uwp | Syncfusion
-description: This section describes the complete DateTime Navigation and Gesture support in SfSchedule control in UWP
+description: This section describes the complete DateTime navigation and Gesture support in the SfSchedule control in UWP
 platform: uwp
 control: SfSchedule
 documentation: ug
