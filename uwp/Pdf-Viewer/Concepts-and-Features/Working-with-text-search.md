@@ -121,7 +121,7 @@ The following code shows how to search for the previous instance using SearchPre
 
 **Using asynchronous search methods**
 
-The PDF viewer allows the users to perform text search asynchronously using the SearchTextAsync method. The user can also cancel the asynchronous text search when it is in progress.
+The PDF viewer allows the users to perform text search asynchronously using the `SearchTextAsync` method. The user can also cancel the asynchronous text search when it is in progress.
 
 {% tabs %}
 {% highlight c# %}
@@ -147,7 +147,7 @@ private void CancelButton_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-In the above code sample, the targetText is the input text to be searched and the cancellationToken enables the users to cancel the asynchronous text search.
+In the above code sample, the targetText is the input text to be searched and the `cancellationToken` enables the users to cancel the asynchronous text search.
 
 The following code explains how to search for the next instance of the text asynchronously.
 
