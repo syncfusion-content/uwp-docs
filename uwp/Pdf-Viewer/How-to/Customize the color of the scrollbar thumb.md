@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toggle the display of the page number in Syncfusion Essential UWP PDF viewer.
-description: Toggle the display of the page number in Syncfusion Essential UWP PDF viewer.
+title: Customize the color of the scrollbar thumb in Syncfusion Essential UWP PDF viewer.
+description: Customize the color of the scrollbar thumb in Syncfusion Essential UWP PDF viewer.
 platform: uwp
 control: PDF viewer
 documentation: ug
