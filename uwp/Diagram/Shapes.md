@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Basic Shapes with Syncfusion Essential Diagram for UWP.
-description: How do add different shapes to diagram 
+description: How do add different shapes to diagram control and explain about shapes properties example codes and explain basic shapes.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Shapes
+# Shapes with Syncfusion Essential Diagram for UWP
 
 We have provided some basic built-in shapes as ResourceDictionary.
 
@@ -42,19 +42,19 @@ The following code example illustrates how to assign Shape property of the Node.
 
 Output Node will be,
 
- ![](Shapes_images\Shapes_image1.PNG)
+ ![UWP SfDiagram Shapes Image1](Shapes_images\Shapes_image1.PNG)
   
  The list of basic shapes are as follows
  
- ![](Shapes_images\Shapes_image2.PNG)
+ ![UWP SfDiagram Shapes Image2](Shapes_images\Shapes_image2.PNG)
  
 The list of flow shapes are as follows
 
-![](Shapes_images\Shapes_image4.PNG)
+![UWP SfDiagram Shapes Image4](Shapes_images\Shapes_image4.PNG)
  
 The list of arrow shapes are as follows
 
-![](Shapes_images\Shapes_image5.PNG)
+![UWP SfDiagram Shapes Image5](Shapes_images\Shapes_image5.PNG)
 
 
 
