@@ -83,7 +83,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in UWP Chart](Interactive-Features_images/Interactive-Features_img1.jpeg)
+![Tooltip support in UWP Chart](Interactive-Features_images/Interactive-Features_image1.png)
 
 ### Customizing tooltip using ChartTooltipBehavior
 
@@ -158,6 +158,8 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
+![Tooltip at pointer position in WPF Chart](Interactive-Features_images/Interactive-Features_image2.png)
+
 ### Customizing the tooltip background
 
 The tooltip's fill and stroke color can be customized using the `Style` property. To define a `Style` for tooltip, specify the style of `TargetType` as `Path.`
@@ -196,6 +198,8 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
+![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image3.png)
+
 ### Customizing the tooltip label style
 
 The tooltip label style can be customized using the `LabelStyle` property. To define a `Style` for the tooltip label, specify the style of `TargetType` as `TextBlock.`
@@ -233,6 +237,8 @@ chart.Behaviors.Add(tooltipBehavior);
 {% endhighlight %}
 
 {% endtabs %}
+
+![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image4.png)
 
 ### Customizing tooltip using ChartTooltip attached properties
 
@@ -302,7 +308,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_img2.jpeg)
+![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_image5.png)
 
 N> By default the [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_HorizontalAlignmentProperty) is center for the tooltip.
 
@@ -368,7 +374,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_img3.jpeg)
+![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_image6.png)
 
 **TooltipMargin**
 
@@ -444,7 +450,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_img4.jpeg)
+![Margin for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_image7.png)
 
 
 N>By default the [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_VerticalAlignmentProperty) of the Tooltip is Top
@@ -529,7 +535,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_img5.jpeg)
+![VerticalOffset and HorizontalOffset support for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_image8.png)
 
 ### Tooltip Duration
 
@@ -777,7 +783,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip customization support in UWP Chart](Interactive-Features_images/Interactive-Features_img6.jpeg)
+![Tooltip customization support in UWP Chart](Interactive-Features_images/Interactive-Features_image9.png)
 
 N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
 
