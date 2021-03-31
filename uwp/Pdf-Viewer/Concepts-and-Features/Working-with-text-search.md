@@ -125,7 +125,7 @@ The PDF viewer allows the users to perform text search asynchronously using the 
 
 {% tabs %}
 {% highlight c# %}
-CancellationTokenSources cts = new CancellationTokenSource();
+CancellationTokenSource cts = new CancellationTokenSource();
 
 private void Page_Loaded(object sender, RoutedEventArgs e)
 {
@@ -154,7 +154,7 @@ The following code explains how to search for the next instance of the text asyn
 {% tabs %}
 {% highlight c# %}
 
-CancellationTokenSources cts = new CancellationTokenSource();
+CancellationTokenSource cts = new CancellationTokenSource();
 
 private void SearchNextButton_Click(object sender, RoutedEventArgs e)
 {
@@ -175,7 +175,7 @@ The following code explains how to search for the previous instance of the text 
 {% tabs %}
 {% highlight c# %}
 
-CancellationTokenSources cts = new CancellationTokenSource();
+CancellationTokenSource cts = new CancellationTokenSource();
 
 private void SearchPreviousButton_Click(object sender, RoutedEventArgs e)
 {
