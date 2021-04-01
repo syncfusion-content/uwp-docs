@@ -32,6 +32,8 @@ Cropping operation can be done programmatically in following two ways:
 * Enable Cropping and Select the Crop region visually.
 * Manually set the cropping area.
 
+N> You can enable the cropping in the zoomed area and crop the specific position from the zoomed area. 
+
 #### Handling the cropping tool
 
 The `ToggleCropping` method in the SfImageEditor control is used to enable and disable a cropping region placed over the image to visually choose the area for cropping. 
@@ -192,3 +194,30 @@ The following code sample will add the cropping preview on the image in square s
 {% endhighlight %}
 
 {% endtabs %}
+
+## Tilt the image
+
+You can tilt the image from -45 to +45 degree by using the `Tilt()` method. It will be in preview state and to apply this effect to the image you can call the `Crop()` method.
+
+N> Any action performed when the image is in Tilt preview state will reset the tilt effect of that image.
+
+{% tabs %}
+
+{% highlight C# %}
+
+editor.Tilt(30);
+
+ // To apply the tilt effect to the image.
+  editor.Crop(new Rect(0, 0, 0, 0));
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Below screenshot depicts the tilt preview state.
+
+![Tilt preview](crop_images/TiltPreview.png)
+
+After tilt preview, cropping can be performed using the available cropping options.
+
+![Tilt crop](crop_images/TiltCrop.png)
