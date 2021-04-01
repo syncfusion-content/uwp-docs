@@ -8,12 +8,24 @@ documentation: ug
 ---
 # Shapes of SfImageEditor
 
-You can annotate any path on an image by using free hand drawing and adding texts and shapes such as rectangle, circle, arrow over the image. The shapes and text can be added in the following two ways:
+You can annotate any path on an image by using free hand drawing and adding texts and shapes.
+
+Following shapes can be added.
+* Rectangle
+* Circle
+* Arrow
+* Line
+* Dotted
+* DoubleArrow
+* DottedArrow
+* DottedDoubleArrow
+
+ over the image. The shapes and text can be added in the following two ways:
 
 * From Toolbar
 * Using Code
 
-## To add a shape (Rectangle, Circle, Arrow) over an image
+## To add a shape over an image
 
 ### From Toolbar
 
@@ -55,6 +67,23 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
 {% endhighlight %}
 
 ![Annotate path on an image in UWP ImageEditor](shapes_images/path.png)
+
+By default, the toolbar contains the `Rectangle`, `Circle`, `Arrow`, and `Path` shapes. You can add other shapes to the toolbar items by using the `VisibleShapesItems` in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html).
+
+`VisibleShapesItems` is an enum property with values of `Rectangle`, `Circle`, `Arrow`, `Path`, `Line`, `Dotted`, `DoubleArrow`, `DottedArrow`, and `DottedDoubleArrow`. You can specify one or more shapes in the property to add shapes into the toolbar.
+
+{% highlight C# %}
+
+ editor.ToolbarSettings.VisibleShapesItems = ImageEditorShapes.Line | ImageEditorShapes.Dotted |
+                                                  ImageEditorShapes.DottedArrow |
+                                                  ImageEditorShapes.DottedDoubleArrow |
+                                                  ImageEditorShapes.DoubleArrow;
+     
+
+{% endhighlight %}
+
+![Shape types](shapes_images/ShapeTypes.png)
+
 
 N> If you add the shape when the SfImageEditor loaded in a view without image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddShape_Syncfusion_UI_Xaml_ImageEditor_Enums_ShapeType_Syncfusion_UI_Xaml_ImageEditor_PenSettings_) method after some time delay. If you add the shape when the SfImageEditor loaded in a view with image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddShape_Syncfusion_UI_Xaml_ImageEditor_Enums_ShapeType_Syncfusion_UI_Xaml_ImageEditor_PenSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageLoaded) event as shown in the following code sample.
 

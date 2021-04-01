@@ -119,4 +119,76 @@ The following code shows how to search for the previous instance using SearchPre
 {% endhighlight %}
 {% endtabs %}
 
+**Using asynchronous search methods**
+
+The PDF viewer allows the users to perform text search asynchronously using the [SearchTextAsync](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_SearchTextAsync_System_String_System_Threading_CancellationToken_) method. The user can also cancel the asynchronous text search when it is in progress.
+
+{% tabs %}
+{% highlight c# %}
+CancellationTokenSource cts = new CancellationTokenSource();
+
+private void Page_Loaded(object sender, RoutedEventArgs e)
+{
+    PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
+    pdfViewer.LoadDocument(loadedDocument);
+}
+
+private void SearchButton_Click(object sender, RoutedEventArgs e)
+{
+    //Searches for the text in the PDF Document.
+    pdfViewer.SearchTextAsync(targetText, cts.Token);
+}
+
+private void CancelButton_Click(object sender, RoutedEventArgs e)
+{
+   cts.Cancel();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+In the above code sample, the `targetText` is the input text to be searched and the `cancellationToken` enables the users to cancel the asynchronous text search.
+
+The following code explains how to search for the next instance of the text asynchronously.
+
+{% tabs %}
+{% highlight c# %}
+
+CancellationTokenSource cts = new CancellationTokenSource();
+
+private void SearchNextButton_Click(object sender, RoutedEventArgs e)
+{
+    //Searches for the next text instance in the PDF Document.
+    pdfViewer.SearchNextTextAsync(targetText, cts.Token);
+}
+
+private void CancelButton_Click(object sender, RoutedEventArgs e)
+{
+   cts.Cancel();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+The following code explains how to search for the previous instance of the text asynchronously. 
+
+{% tabs %}
+{% highlight c# %}
+
+CancellationTokenSource cts = new CancellationTokenSource();
+
+private void SearchPreviousButton_Click(object sender, RoutedEventArgs e)
+{
+    //Searches for the previous instance of the text in the PDF Document.
+    pdfViewer.SearchPreviousTextAsync(targetText, cts.Token);
+}
+
+private void CancelButton_Click(object sender, RoutedEventArgs e)
+{
+   cts.Cancel();
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 N> The text search operations can only be performed after the display of the PDF document in the viewer control and this cannot be initiated immediately after loading the PDF document.
