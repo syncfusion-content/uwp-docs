@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customize the color of the scrollbar thumb | Syncfusion
 description: The Syncfusion Essential UWP PDF viewer provides option to customize the color of the scrollbar thumb.
