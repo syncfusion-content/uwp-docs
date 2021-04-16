@@ -13,9 +13,6 @@ Using [PDF Viewer](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfView
 
 {% tabs %}
 {% highlight c# %}
-
-using Syncfusion.Windows.PdfViewer;
-
 PdfLoadedDocument loadedDocument = new PdfLoadedDocument(buffer);
 pdfViewer.LoadDocument(loadedDocument);
 //Gets the total page count. 
