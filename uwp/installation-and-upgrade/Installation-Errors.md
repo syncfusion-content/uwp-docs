@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio UWP products
-description: Learn how to install and deploy the Syncfusion UWP component
+title: Installation Errors for Syncfusion Essential Studio UWP products
+description: Learn how to install Syncfusion Essential UWP and deploy the Syncfusion Essential Studio UWP component
 platform: UWP
 control: Installation and Deployment
 documentation: ug

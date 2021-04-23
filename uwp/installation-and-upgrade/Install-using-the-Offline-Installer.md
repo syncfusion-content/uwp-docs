@@ -136,7 +136,7 @@ Syncfusion Essential UWP can be uninstalled silently using the Command Line.
 1.	Run the Syncfusion UWP installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 2.	The file syncfusionessentialuniversalwindows_(version).exe file will be extracted into the Temp directory.
 3.	Run %temp%. The Temp folder will be opened. the syncfusionessentialuniversalwindows_(version).exe file will be located in one of the folders.
-4.	Copy the extracted syncfusionessentialuwp_(version).exe file in local drive.
+4.	Copy the extracted syncfusionessentialuniversalwindows_(version).exe file in local drive.
 5.	Exit the Wizard.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
    
