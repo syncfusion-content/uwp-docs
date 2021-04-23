@@ -21,11 +21,12 @@ The following frameworks are supported:
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 2.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing in other drive.
+* Hard disk: up to 3 GB of free space may be required
 
 ## Development Environments
 
 The following IDEs can be used for development that are [compatible](https://www.visualstudio.com/en-us/products/visual-studio-2015-compatibility-vs.aspx) with Microsoft Windows, both 32bit and 64 bit Operating System in Windows 10 and Windows 8.1 with windows10 toolkit.
 
-* Microsoft Visual Studio 2015
+* Microsoft Visual Studio 2015/2017/2019
+* Windows 10 SDK
 
