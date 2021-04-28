@@ -161,21 +161,19 @@ The following table represents installed location of Assemblies and Samples.
 
 <table>
 <tr>
-<td>
-**Assemblies/Samples**</td><td>
-**Installed location**</td></tr>
+<td><b>Assemblies/Samples</b></td>
+<td><b>Installed location</b></td>
+</tr>
 <tr>
 <td>
 SDK package</td><td>
-C:\Program Files (x86)\Syncfusion\Essential Studio\Universal Windows\{{ site.releaseversion }}\10.0\SDK</td></tr>
+C:\Program Files (x86)\Syncfusion\Essential Studio\Universal Windows\{version}\10.0\SDK</td></tr>
 <tr>
 <td>
 Assemblies</td><td>
-C:\Program Files (x86)\Syncfusion\Essential Studio\Universal Windows\{{ site.releaseversion }}\Assemblies for Universal Windows\10.0</td></tr>
+C:\Program Files (x86)\Syncfusion\Essential Studio\Universal Windows\{version}\Assemblies for Universal Windows\10.0</td></tr>
 <tr>
 <td>
 Samples</td><td>
-[drive]:\Users\Public\Documents\Syncfusion\EssentialStudio\UWP\{{ site.releaseversion }}\SampleBrowser</td></tr>
+[drive]:\Users\Public\Documents\Syncfusion\EssentialStudio\UWP\{version}\SampleBrowser</td></tr>
 </table>
-
-N> In above table, Latest Essential Studio version details has been provided. User can refer installed Essential Studio version instead of mentioned version.
