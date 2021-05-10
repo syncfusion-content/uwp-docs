@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfRating control for UWP
-description: This section provides a overview on features of SfRating control for UWP.
+title: About UWP Rating control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Rating (SfRating) control and more.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# Overview
+# UWP Rating (SfRating) Overview
 
 `SfRating` control allows user to rate something by clicking on the icon that represents a rate.
 

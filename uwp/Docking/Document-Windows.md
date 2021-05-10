@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Document functionalities of Syncfusion SfDockingManager control for UWP
-description: Features of document window on SfDockingManager control for UWP
+title: Document Window in UWP Docking control | Syncfusion
+description: Learn here all about Document Window support in Syncfusion UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Document Windows
+# Document Window in UWP Docking (SfDockingManager)
 
 Document window is one of the states available in the `SfDockingManager`. To make the children of the `SfDockingManager` as Document, set child's `DockState` value as Document.
 
 All the Document windows are added in a `DocumentContainer`. Content can be switched by clicking the item header or choosing item from TabStripMenu.
 
-![](Document-Windows-images/Document-Windows-img1.jpeg)
+![Document-Windows-img1](Document-Windows-images/Document-Windows-img1.jpeg)
 
 
 ## Closing Document Windows
@@ -82,7 +82,7 @@ dockingManager.DocumentTabItemPlacement = Syncfusion.UI.Xaml.Controls.Layout.Doc
 
 {% endtabs %}
 
-![](Document-Windows-images/documentstart.jpeg)
+![documentstart](Document-Windows-images/documentstart.jpeg)
 
 
 * Adding Documents at End position
@@ -131,4 +131,4 @@ dockingManager.DocumentTabItemPlacement = Syncfusion.UI.Xaml.Controls.Layout.Doc
 
 {% endtabs %}
 
-![](Document-Windows-images/documentend.jpeg)
+![documentend](Document-Windows-images/documentend.jpeg)

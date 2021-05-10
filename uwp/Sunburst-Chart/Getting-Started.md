@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for SfSunburstChart
-description: This section explains the steps required to populate the sunburst chart with data, add data labels, legends and header.
+title: Getting Started with UWP Sunburst Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
 platform: uwp
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Sunburst Chart (SfSunburstChart)
 
 This section explains you the steps required to populate the sunburst chart with data, add data labels, legends and header. This section covers only the minimal features that you need to know to get started with the Sunburst chart.
 

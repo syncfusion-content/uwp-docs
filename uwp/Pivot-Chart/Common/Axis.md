@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axes| SfPivotChart | UWP | Syncfusion
-description: Axes
+title: Axis in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Axis support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Axis
+# Axis in UWP Pivot Chart (SfPivotChart)
 
 Axis is used to locate a data point inside the chart area. Generally, two axes are required along each direction to locate the data point in the chart, i.e., horizontal and vertical. The vertical axis (y-axis) represents numerical values and the horizontal axis (x-axis) represents categorical values.
 
@@ -52,7 +52,7 @@ PivotChart1.PrimaryAxisStyle.GridLineStyle = TryCast(Resources("LineStyle"), Sty
 
 {% endtabs %}
 
-![](Axis_images/relationalPrimaryAxisGridLineStyle.png)
+![relationalPrimaryAxisGridLineStyle](Axis_images/relationalPrimaryAxisGridLineStyle.png)
 
 The following code snippet describes how to customize the style of gridlines in the secondary axis.
 
@@ -87,7 +87,7 @@ PivotChart1.SecondaryAxisStyle.GridLineStyle = TryCast(Resources("LineStyle"), S
 
 {% endtabs %}
 
-![](Axis_images/relationalSecondaryAxisGridLineStyle.png)
+![relationalSecondaryAxisGridLineStyle](Axis_images/relationalSecondaryAxisGridLineStyle.png)
 
 ### Expander style
 
@@ -168,7 +168,7 @@ PivotChart1.PrimaryAxisStyle.ExpanderStyle = TryCast(Resources("PrimaryAxisExpan
 
 {% endtabs %}
 
-![](Axis_images/relationalPrimaryAxisExpanderStyle.png)
+![relationalPrimaryAxisExpanderStyle](Axis_images/relationalPrimaryAxisExpanderStyle.png)
 
 ### Group line customization
 
@@ -202,7 +202,7 @@ PivotChart1.PrimaryAxisStyle.GroupLineStrokeThickness = New Thickness(1.5)
 
 {% endtabs %}
 
-![](Axis_images/relationalGroupLineStroke.png)
+![relationalGroupLineStroke](Axis_images/relationalGroupLineStroke.png)
 
 ### Label customization
 
@@ -248,7 +248,7 @@ PivotChart1.SecondaryAxisStyle.LabelFontSize = 14.0
 
 {% endtabs %}
 
-![](Axis_images/axisLabelStyle.png)
+![axisLabelStyle](Axis_images/axisLabelStyle.png)
 
 **Label formatting**
 
@@ -262,7 +262,7 @@ To modify the format of axis labels, you should use the `LabelFormat` property. 
 
 {% endhighlight %}
 
-![](Axis_images/axisLabelFormat.png)
+![axisLabelFormat](Axis_images/axisLabelFormat.png)
 
 **Label rotation**
 
@@ -292,7 +292,7 @@ PivotChart1.PrimaryAxisStyle.LabelRotationAngle = -20
 
 {% endtabs %}
 
-![](Axis_images/axisLabelRotation.png)
+![axisLabelRotation](Axis_images/axisLabelRotation.png)
 
 ## Show/hide axis
 
@@ -316,4 +316,4 @@ PivotChart1.SecondaryAxis.Visibility = Windows.UI.Xaml.Visibility.Collapsed
 
 {% endtabs %}
 
-![](Axis_images/axisLabelVisibility.png)
+![axisLabelVisibility](Axis_images/axisLabelVisibility.png)

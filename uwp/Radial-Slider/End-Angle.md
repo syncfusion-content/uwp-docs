@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting End Angle of SfRadialSlider control for UWP
-description: Setting End Angle of SfRadialSlider control for UWP
+title: End Angle in UWP Radial Slider control | Syncfusion
+description: Learn here all about End Angle support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# End Angle 
+# End Angle in UWP Radial Slider (SfRadialSlider)
 
 The EndAngle property can be used to set the ending position for the ticks in the circular track. 
 
@@ -41,4 +41,4 @@ radialSlider.EndAngle = 360
 
 {% endtabs %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img5.png)
+![Concepts--and-Features_img5](Concepts--and-Features_images/Concepts--and-Features_img5.png)

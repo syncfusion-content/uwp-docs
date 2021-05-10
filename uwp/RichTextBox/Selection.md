@@ -1,12 +1,12 @@
 ---
-title: Selection | SfRichTextBoxAdv | UWP | Syncfusion
-description: This section illustrates how to select a portion of the document through supported APIs in UWP RichTextBox control
+title: Selection in UWP RichTextBox control | Syncfusion
+description: Learn here all about Selection support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: selection
 ---
-# Selection in UWP RichTextBox
+# Selection in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv supports selecting a portion of the document either through UI interactions by using mouse, touch, keyboard or through supported APIs.
 The following sample code demonstrates how to retrieve text position from document using paragraph instance and offset value.

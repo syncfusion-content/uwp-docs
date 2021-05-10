@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfDomainUpDown control for UWP
-description: Overview of SfDomainUpDown control for UWP which spins the collection of objects up or down and its key features
+title: About UWP Domain UpDown control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Domain UpDown (SfDomainUpDown) control and more.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
 ---
 
-# Overview
+# UWP Domain UpDown (SfDomainUpDown) Overview
 
 SfDomainUpDown is an up-down control which spins the collection of objects up or down.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Master-Details View in SfDataGrid | Syncfusion
-description: Master-Details View in SfDataGrid.
+title: Master Details View in UWP DataGrid control | Syncfusion
+description: Learn here all about Master Details View support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 --- 
 
-# Master-Details View
+# Master Details View in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provides support to represent the hierarchical data in the form of nested tables using Master-Details View. You can expand or collapse the nested tables ([DetailsViewDataGrid](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.DetailsViewDataGrid.html)) by using an expander in a row or programmatically.  The number of tables nested with relations is unlimited.
 

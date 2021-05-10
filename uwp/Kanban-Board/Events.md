@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Kanban Events | SfKanban | uwp | Syncfusion
-description: This section contains the detailed information about the kanban dragging and column generated events.
+title: Events in UWP Kanban Board control | Syncfusion
+description: Learn here all about Events support in Syncfusion UWP Kanban Board (SfKanban) control and more.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 
-# Events
+# Events in UWP Kanban Board (SfKanban)
 
 ## CardTapped
 

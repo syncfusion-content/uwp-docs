@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip of SfDataGrid.
-description: ToolTip of SfDataGrid 
+title: ToolTip in UWP DataGrid control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: UWP
 control: SfDataGrid
 documentation: ug
 ---
 
-# ToolTip
+# ToolTip in UWP DataGrid (SfDataGrid)
 
 ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid.
 
@@ -54,7 +54,7 @@ this.dataGrid.Columns["CustomerID"].ShowToolTip = true;
 
 N> `GridColumn.ShowToolTip` takes higher priority than [SfDataGrid.ShowToolTip](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_ShowToolTip).
 
-![](Interactive-Features_images/InteractiveFeatures_img4.png)
+![InteractiveFeatures_img4](Interactive-Features_images/InteractiveFeatures_img4.png)
 
 ## Header tooltip
 
@@ -76,7 +76,7 @@ this.dataGrid.Columns["OrderID"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img5.png)
+![InteractiveFeatures_img5](Interactive-Features_images/InteractiveFeatures_img5.png)
 
 
 ## ToolTip Customization
@@ -104,7 +104,7 @@ You can customize the appearance of the ToolTip for particular column by setting
 {% endhighlight %}
 {% endtabs %}
 
-![](Interactive-Features_images/InteractiveFeatures_img6.png)
+![InteractiveFeatures_img6](Interactive-Features_images/InteractiveFeatures_img6.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TemplateSample-844671609.zip). 
@@ -196,12 +196,12 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
 The below image refers the DefaultTemplate which is applied through ToolTipTemplateSelector.
 
-![](Interactive-Features_images/InteractiveFeatures_img7.png)
+![InteractiveFeatures_img7](Interactive-Features_images/InteractiveFeatures_img7.png)
 
 
 The below image refers the AlternateTemplate which is applied through ToolTipTemplateSelector.
 
-![](Interactive-Features_images/InteractiveFeatures_img8.png)
+![InteractiveFeatures_img8](Interactive-Features_images/InteractiveFeatures_img8.png)
 
 
 You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipSample-394161722.zip).

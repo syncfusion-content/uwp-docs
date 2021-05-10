@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Working with Hyperlink navigation
-description: Working with Hyperlink navigation
+title: Hyperlink in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Hyperlink support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: UWP
 control: SfPdfViewerControl
 documentation: ug
 ---
 
-# Working with hyperlink navigation
+# Hyperlink in UWP Pdf Viewer (SfPdfViewer)
 
 PDF Viewer supports hyperlink navigation which detects document link and web link present in the pages of the PDF document. Tapping on the TOC and hyperlink will behave in the following manner.
 

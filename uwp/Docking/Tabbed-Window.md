@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tabbed Window | SfDockingManager | UWP | Syncfusion 
-description: Learn how to change the tab alignments and closing behaviour of Tabbed Window
+title: Tabbed Window in UWP Docking control | Syncfusion
+description: Learn here all about Tabbed Window support in Syncfusion UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Tabbed Window
+# Tabbed Window in UWP Docking (SfDockingManager)
 
 Child window can be arranged as Tabbed window by setting `TargetName` and side value as Tabbed using the property `SideInDockedMode`.
 

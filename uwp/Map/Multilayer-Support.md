@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multilayer Support in Syncfusion Maps control
-description: Learn how to provide multilayer support in Maps
+title: Multilayer Support in UWP Map control | Syncfusion
+description: Learn here all about Multilayer Support support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: Maps
 documentation: ug
 ---
 
-# Multilayer Support
+# Multilayer Support in UWP Map (SfMaps)
 
 `Multilayer` support allows you to load multiple shapefiles in a single container, enabling maps to display more detail.
 

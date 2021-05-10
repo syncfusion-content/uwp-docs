@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Selection | SfPivotGrid | UWP | Syncfusion
-description: cell selection
+title: Cell Selection in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Cell Selection support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Cell Selection
+# Cell Selection in UWP Pivot Grid (SfPivotGrid)
 
 The SfPivotGrid supports cell selection. You can select grid value cells like in Microsoft Excel. This can be achieved by setting the `AllowSelection` property of the SfPivotGrid to true.
 
@@ -40,19 +40,19 @@ Me.PivotGrid1.AllowSelection = True
 
 This is illustrated in the following screenshot.
 
-![](Cell-Selection_images/cell-selection.png)
+![cell-selection](Cell-Selection_images/cell-selection.png)
 
 ## Multi-row selection
 
 You can select a whole row in the pivot grid by clicking the specific row header. You can also select multiple rows by clicking one row header and dragging it through other row headers.
 
-![](Cell-Selection_images/selection-of-multiple-rows.png)
+![selection-of-multiple-rows](Cell-Selection_images/selection-of-multiple-rows.png)
 
 ## Multi-column selection
 
 You can select a whole column in the pivot grid by clicking the specific column header. You can also select multiple columns by clicking one column header and dragging it through other column headers.
 
-![](Cell-Selection_images/selection-of-multiple-columns.png)
+![selection-of-multiple-columns](Cell-Selection_images/selection-of-multiple-columns.png)
 
 ## Selection with headers
 
@@ -84,11 +84,11 @@ Me.PivotGrid1.AllowSelectionWithHeaders = True
 
 The following screenshot illustrates the cell selection along with row headers.
 
-![](Cell-Selection_images/selection-along-with-row-headers.png)
+![selection-along-with-row-headers](Cell-Selection_images/selection-along-with-row-headers.png)
 
 The following screenshot illustrates the cell selection along with column headers.
 
-![](Cell-Selection_images/selection-along-with-column-headers.png)
+![selection-along-with-column-headers](Cell-Selection_images/selection-along-with-column-headers.png)
 
 A demo sample is available in the following location.
 

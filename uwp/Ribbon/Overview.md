@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfRibbon control for UWP
-description: An overview about SfRibbon control for UWP which allows the user to implement Touch based Ribbon layout and functionality
+title: About UWP Ribbon control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
 ---
 
-# Overview
+# UWP Ribbon (SfRibbon(Touch Ribbon)) Overview
 
 SfRibbon allows the user to implement Touch based Ribbon layout and functionality. It exposes most of the features of WinRT touch style. Configuring and designing the layout is very easy through XAML code.
 

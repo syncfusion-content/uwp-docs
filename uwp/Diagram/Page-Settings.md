@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UWP Diagram page customization | Syncfusion
-description: How to customize the size and appearance of the Diagram pages?
+title: Page Settings in UWP Diagram control | Syncfusion
+description: Learn here all about Page Settings support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Page Settings
+# Page Settings in UWP Diagram (SfDiagram)
 
 Page settings enable to customize the appearance, width, and height of the Diagram page.
 

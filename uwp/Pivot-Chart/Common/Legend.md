@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend| SfPivotChart | UWP | Syncfusion
-description: Legend
+title: Legend in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Legend support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Legend
+# Legend in UWP Pivot Chart (SfPivotChart)
 
 Legend displays the metadata that helps to identify the data series in the chart. Legend contains a group of legend items based on the series and each legend item is composed of icon, check box, and label.
 
@@ -39,7 +39,7 @@ PivotChart1.Legend.IconVisibility = Visibility.Collapsed
 
 {% endtabs %}
 
-![](Legend_images/iconVisibility.png)
+![iconVisibility](Legend_images/iconVisibility.png)
 
 **Icon customization**
 
@@ -71,7 +71,7 @@ PivotChart1.Legend.IconHeight = 15
 
 {% endtabs %}
 
-![](Legend_images/iconCustomization.png)
+![iconCustomization](Legend_images/iconCustomization.png)
 
 ## Check box
 
@@ -101,7 +101,7 @@ PivotChart1.Legend.CheckBoxVisibility = Visibility.Visible
 
 {% endtabs %}
 
-![](Legend_images/checkBoxVisibility.png)
+![checkBoxVisibility](Legend_images/checkBoxVisibility.png)
 
 ## Show/hide legend
 
@@ -131,7 +131,7 @@ PivotChart1.Legend.Visibility = Visibility.Collapsed
 
 {% endtabs %}
 
-![](Legend_images/legendVisibility.png)
+![legendVisibility](Legend_images/legendVisibility.png)
 
 ## Toggling series visibility
 
@@ -165,11 +165,11 @@ PivotChart1.Legend.ToggleSeriesVisibility = True
 
 The series can be collapsed by clicking the respective legend item as follows.
 
-![](Legend_images/togglingVisibility_seriesHidden.png)
+![togglingVisibility_seriesHidden](Legend_images/togglingVisibility_seriesHidden.png)
 
 You can view the associated series again by clicking the respective disabled legend item as follows.
 
-![](Legend_images/togglingVisibility_seriesRevealed.png)
+![togglingVisibility_seriesRevealed](Legend_images/togglingVisibility_seriesRevealed.png)
 
 ## Legend customization
 
@@ -207,7 +207,7 @@ PivotChart1.Legend.BorderThickness = New Thickness(1.5)
 
 {% endtabs %}
 
-![](Legend_images/customizedLegend.png)
+![customizedLegend](Legend_images/customizedLegend.png)
 
 ## Legend positioning
 
@@ -239,7 +239,7 @@ PivotChart1.Legend.LegendPosition = LegendPosition.Inside
 
 {% endtabs %}
 
-![](Legend_images/legendPosition_Inside.png)
+![legendPosition_Inside](Legend_images/legendPosition_Inside.png)
 
 ### Dock position
 
@@ -271,7 +271,7 @@ PivotChart1.Legend.DockPosition = ChartDock.Bottom
 
 {% endtabs %}
 
-![](Legend_images/dockedLegend_Bottom.png)
+![dockedLegend_Bottom](Legend_images/dockedLegend_Bottom.png)
 
 **Floating legend**
 
@@ -305,7 +305,7 @@ PivotChart1.Legend.OffsetY = 30
 
 {% endtabs %}
 
-![](Legend_images/dockedLegend_Floating.png)
+![dockedLegend_Floating](Legend_images/dockedLegend_Floating.png)
 
 ## Legend orientation
 
@@ -337,7 +337,7 @@ PivotChart1.Legend.Orientation = ChartOrientation.Horizontal
 
 {% endtabs %}
 
-![](Legend_images/legend_HorizontalOrientation.png)
+![legend_HorizontalOrientation](Legend_images/legend_HorizontalOrientation.png)
 
 ### Vertical orientation
 
@@ -367,7 +367,7 @@ PivotChart1.Legend.Orientation = ChartOrientation.Vertical
 
 {% endtabs %}
 
-![](Legend_images/legend_VerticalOrientation.png)
+![legend_VerticalOrientation](Legend_images/legend_VerticalOrientation.png)
 
 ### Default orientation
 
@@ -405,7 +405,7 @@ PivotChart1.Legend.RowCount  = 2
 
 {% endtabs %}
 
-![](Legend_images/scenario1_DefaultOrientation.png)
+![scenario1_DefaultOrientation](Legend_images/scenario1_DefaultOrientation.png)
 
 **Scenario 2:**
 
@@ -437,7 +437,7 @@ PivotChart1.Legend.ColumnCount = 2
 
 {% endtabs %}
 
-![](Legend_images/scenario2_DefaultOrientation.png)
+![scenario2_DefaultOrientation](Legend_images/scenario2_DefaultOrientation.png)
 
 **Scenario 3:**
 
@@ -471,7 +471,7 @@ PivotChart1.Legend.ColumnCount = 4
 
 {% endtabs %}
 
-![](Legend_images/scenario3_DefaultOrientation.png)
+![scenario3_DefaultOrientation](Legend_images/scenario3_DefaultOrientation.png)
 
 **Scenario 4:**
 
@@ -505,7 +505,7 @@ PivotChart1.Legend.ColumnCount = 1
 
 {% endtabs %}
 
-![](Legend_images/scenario4_DefaultOrientation.png)
+![scenario4_DefaultOrientation](Legend_images/scenario4_DefaultOrientation.png)
 
 **Scenario 5:**
 

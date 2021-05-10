@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shapes Color Customization in SfMaps control
-description: Learn how to customize colors for Shapes
+title: Shapes Color Customization in UWP Map control | Syncfusion
+description: Learn here all about Shapes Color Customization support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Shapes Color Customization
+# Shapes Color Customization in UWP Map (SfMaps)
 
 Maps highly support the customization of the shape’s color. The shape’s color can be customized using the following methods:
 
@@ -53,7 +53,7 @@ N> These setting works only when `AutoFillColor` is set as false.
 
 {% endhighlight  %}
 
-![](Features_images/Features_img9.png)
+![Features_img9](Features_images/Features_img9.png)
 
 
 ## Tree map-like support
@@ -132,7 +132,7 @@ N>  The shape’s under-bound object value must have numeric property and should
 
 {% endhighlight  %}
 
-![](Features_images/Features_img11.png)
+![Features_img11](Features_images/Features_img11.png)
 
 
 ## ColorPalette
@@ -163,7 +163,7 @@ ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorP
 
 {% endhighlight %}
 
-![](Features_images/Features_img12.png)
+![Features_img12](Features_images/Features_img12.png)
 
 ## About CustomPalette
 
@@ -197,4 +197,4 @@ Besides the built-in color palettes, the custom colors can be defined for the co
 
 {% endhighlight  %}
 
-![](Features_images/Features_img13.png)
+![Features_img13](Features_images/Features_img13.png)

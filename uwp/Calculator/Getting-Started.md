@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Getting Started with SfCalculator control for UWP 
-description: Guidelines to create Syncfusion SfCalculator control for Universal Windows Platform project in Visual Studio 
+title: Getting Started with UWP Calculator control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Calculator (SfCalculator) control and more.
 platform: uwp
 control: SfCalculator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Calculator (SfCalculator)
 
 This section explains how to create a standalone calculator control that provide options to perform basic arithmetic operations.
 

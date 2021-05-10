@@ -1,12 +1,12 @@
 ---
-title: List
-description: list
+title: List in UWP RichTextBox control | Syncfusion
+description: Learn here all about List support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: list
 ---
-# List
+# List in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv supports both the single-level and multilevel lists similar to the Microsoft Word. Lists are used to organize data as step-by-step instructions in documents for easy understanding of key points.
 

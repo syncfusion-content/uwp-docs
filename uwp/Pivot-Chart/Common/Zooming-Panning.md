@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming and Panning | SfPivotChart | UWP | Syncfusion
-description: Zooming and Panning
+title: Zooming and Panning in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Zooming and Panning support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Zooming and Panning
+# Zooming and Panning in UWP Pivot Chart (SfPivotChart)
 
 The SfPivotChart allows you to zoom in, zoom out, and pan the chart area with the help of this support. Zooming is used to view the in-depth information of specific chart area, when there are number of data points inside the chart. Panning is used to navigate the chart area.
 
@@ -167,7 +167,7 @@ PivotChart1.ZoomPanBehavior.EnableSelectionZooming = True
 
 {% endtabs %}
 
-![](Zooming-Panning_images/default_selctionBox.png)
+![default_selctionBox](Zooming-Panning_images/default_selctionBox.png)
 
 **Customizing the selection rectangle**
 
@@ -205,7 +205,7 @@ PivotChart1.ZoomPanBehavior.StrokeThickness = True
 
 {% endtabs %}
 
-![](Zooming-Panning_images/customized_selctionBox.png)
+![customized_selctionBox](Zooming-Panning_images/customized_selctionBox.png)
 
 ## Zooming mode
 
@@ -241,7 +241,7 @@ PivotChart1.ZoomPanBehavior.ZoomMode = ZoomMode.X
 
 {% endtabs %}
 
-![](Zooming-Panning_images/zoomModeX.png)
+![zoomModeX](Zooming-Panning_images/zoomModeX.png)
 
 **Zooming along y-axis**
 
@@ -273,7 +273,7 @@ PivotChart1.ZoomPanBehavior.ZoomMode = ZoomMode.Y
 
 {% endtabs %}
 
-![](Zooming-Panning_images/zoomModeY.png)
+![zoomModeY](Zooming-Panning_images/zoomModeY.png)
 
 ## Zoom level
 
@@ -337,7 +337,7 @@ PivotChart1.ZoomPanBehavior.EnableSelectionZooming = True
 
 {% endtabs %}
 
-![](Zooming-Panning_images/defaultZoomingToolbar.png)
+![defaultZoomingToolbar](Zooming-Panning_images/defaultZoomingToolbar.png)
 
 **Positioning zooming toolbar**
 
@@ -373,7 +373,7 @@ PivotChart1.ZoomPanBehavior.VerticalPosition = VerticalAlignment.Bottom
 
 {% endtabs %}
 
-![](Zooming-Panning_images/alignedZoomingToolbar.png)
+![alignedZoomingToolbar](Zooming-Panning_images/alignedZoomingToolbar.png)
 
 **Customization of zooming toolbar**
 
@@ -424,7 +424,7 @@ PivotChart1.ZoomPanBehavior.ToolBarItemMargin = New Thickness(5)
 
 {% endtabs %}
 
-![](Zooming-Panning_images/customizedZoomingToolBar.png)
+![customizedZoomingToolBar](Zooming-Panning_images/customizedZoomingToolBar.png)
 
 ## Panning chart area
 
@@ -456,7 +456,7 @@ PivotChart1.ZoomPanBehavior.EnablePanning = True
 
 {% endtabs %}
 
-![](Zooming-Panning_images/pannedChartArea.png)
+![pannedChartArea](Zooming-Panning_images/pannedChartArea.png)
 
 ## Reset zooming and panning
 

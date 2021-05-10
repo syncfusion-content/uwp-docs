@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | SfPivotChart | UWP | Syncfusion
-description: Zooming
+title: Appearance in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Appearance
+# Appearance in UWP Pivot Chart (SfPivotChart)
 
 The SfPivotChart supports customizing the default appearance of the control. You can customize the default style of the control by modifying its properties as specified in the following code snippet.
 
@@ -42,4 +42,4 @@ PivotChart1.Padding = New Thickness(10)
 
 {% endtabs %}
 
-![](Appearance_images/appearance.png)
+![appearance](Appearance_images/appearance.png)

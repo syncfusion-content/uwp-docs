@@ -1,12 +1,12 @@
 ---
-title: Undo Redo | UWP RichTextBox | Syncfusion
-description: This section illustrates about history preservation support of editing actions in UWP RichTextBox control.
+title: Undo Redo in UWP RichTextBox control | Syncfusion
+description: Learn here all about Undo Redo support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: undo-redo
 ---
-# Undo Redo in UWP RichTextBox
+# Undo Redo in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv provides history preservation support, which means each editing operation performed against its document content will be preserved in history. You can easily undo any editing action with ease. The undone actions will also be preserved in a separate stack enabling you to redo the action again.
 

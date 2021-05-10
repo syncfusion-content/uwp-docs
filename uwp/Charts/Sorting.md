@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting | SfChart | uwp | Syncfusion
-description: sorting 
+title: Sorting in UWP Charts control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Sorting
+# Sorting in UWP Charts (SfChart)
 
 Chart provides the support for sorting the data point rendering either in ascending or descending based on X or Y axis.
 

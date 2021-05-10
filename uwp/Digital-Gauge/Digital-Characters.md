@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Digital Characters | SfDigitalGauge | uwp | Syncfusion
-description: Digital Characters 
+title: Digital Characters in UWP Digital Gauge control | Syncfusion
+description: Learn here all about Digital Characters support in Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Digital Characters
+# Digital Characters in UWP Digital Gauge (SfDigitalGauge)
 
 The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are set to the digital gauge through the **Value** property of type string.
 
@@ -27,7 +27,7 @@ The digital characters in the digital gauge can be viewed in different types of 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img1.jpeg)
+![Digital-Characters_img1](Digital-Characters_images/Digital-Characters_img1.jpeg)
 
 
 ## 7-Segments
@@ -51,7 +51,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img2.jpeg)
+![Digital-Characters_img2](Digital-Characters_images/Digital-Characters_img2.jpeg)
 
 ## 14-Segments
 
@@ -74,7 +74,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img3.jpeg)
+![Digital-Characters_img3](Digital-Characters_images/Digital-Characters_img3.jpeg)
 
 ## 16-Segments
 
@@ -97,7 +97,7 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs %}
 
-![](Digital-Characters_images/Digital-Characters_img4.jpeg)
+![Digital-Characters_img4](Digital-Characters_images/Digital-Characters_img4.jpeg)
 
 ## 8*8 Dot Matrix Segments
 
@@ -120,5 +120,5 @@ The digital characters which are set as the value property of the digital gauge 
 {% endhighlight %}
 {% endtabs%}
 
-![](Digital-Characters_images/Digital-Characters_img5.jpeg)
+![Digital-Characters_img5](Digital-Characters_images/Digital-Characters_img5.jpeg)
 

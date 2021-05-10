@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connect to a specific point of Node using Ports | Syncfusion.
-description: How to draw connections with specific points of Node?
+title: Port in UWP Diagram control | Syncfusion
+description: Learn here all about Port support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Port
+# Port in UWP Diagram (SfDiagram)
 
 Essential Diagram for UWP provides support to define custom ports for making connections.
 

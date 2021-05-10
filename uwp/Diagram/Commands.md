@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Explore the frequently used inbuilt commands
-description:  How to explore and use the inbuilt commands?
+title: Commands in UWP Diagram control | Syncfusion
+description: Learn here all about Commands support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Commands
+# Commands in UWP Diagram (SfDiagram)
 
 There are several commands available in the Diagram as follows.
 

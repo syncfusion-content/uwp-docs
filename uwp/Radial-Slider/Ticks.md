@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Ticks of SfRadialSlider control for UWP
-description: Dealing with Ticks of SfRadialSlider control for UWP 
+title: Ticks in UWP Radial Slider control | Syncfusion
+description: Learn here all about Ticks support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Ticks 
+# Ticks in UWP Radial Slider (SfRadialSlider)
 
 Ticks are placed along the round track in a uniform manner. The position of tick marks can be customized.
 
@@ -44,7 +44,7 @@ radialSlider.TickFrequency = 5
 {% endtabs %}
 
 
-![](Concepts--and-Features_images/Concepts--and-Features_img2.png)
+![Concepts--and-Features_img2](Concepts--and-Features_images/Concepts--and-Features_img2.png)
 
 ## Displaying Maximum Value
 
@@ -79,4 +79,4 @@ Dim radialSlider As New SfRadialSlider() With { _
 {% endtabs %}
 
 
-![](Concepts--and-Features_images/Concepts--and-Features_img18.png)
+![Concepts--and-Features_img18](Concepts--and-Features_images/Concepts--and-Features_img18.png)

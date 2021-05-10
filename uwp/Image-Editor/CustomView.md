@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CustomView | SfImageEditor | uwp | Syncfusion
-description: This section describes how to add a custom view on image and customize or rotate the custom view using the settings in UWP SfImageEditor. 
+title: Custom View in UWP Image Editor control | Syncfusion
+description: Learn here all about Custom View support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: uwp
 control: SfImageEditor
 documentation: ug

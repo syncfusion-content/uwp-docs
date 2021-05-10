@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icon Support
-description: Display an image on SfMenuItem in Syncfusion SfMenu control for UWP
+title: Set Icons in UWP Menu control | Syncfusion
+description: Learn here all about Set Icons support in Syncfusion UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug
 --- 
 
 
-# Icon Support
+# Set Icons in UWP Menu (SfMenu)
 
 `SfMenuItem` allows to display an image on the left of the control. Icon for `SfMenuItem` can be set by providing the image source as a value for the `Icon` property of the `SfMenuItem`.
 
@@ -94,6 +94,6 @@ The Icon for `SfMenuItem` can be added by `Icon` property as shown in the follow
 
 
 
-![](Icon-Support-images/Icon-Support-img1.jpg)
+![Icon-Support-img1](Icon-Support-images/Icon-Support-img1.jpg)
 
 

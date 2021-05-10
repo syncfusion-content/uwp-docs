@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfTimePicker control | UWP | Syncfusion
-description: SfTimePicker control allows users to select and edit the time input. It includes features such as formatting and min and max times support.
+title: About UWP TimePicker control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug
 ---
 
-# Overview
+# UWP TimePicker (SfTimePicker) Overview
 
 The SfTimePicker control allows the user to select time values in a touch friendly manner.
 

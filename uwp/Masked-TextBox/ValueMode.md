@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Value Mode | SfMaskedEdit | UWP | Syncfusion
-description: Learn how to format the characters in the Value property of SfMaskedEdit control
+title: Value Mode in UWP Masked TextBox control | Syncfusion
+description: Learn here all about Value Mode support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug 
 ---
-# Value Mode
+# Value Mode in UWP Masked TextBox (SfMaskedEdit)
 
 `SfMaskedEdit` allows you to format the characters in the `Value` property in a mask scenario (when the Mask property is set). By default, the `Value` property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the `ValueMaskFormat` property of the control. The `Value` in the `SfMaskedEdit` is formatted by any one of the following formatting enum values:
 
@@ -58,11 +58,11 @@ label.Content = maskededit.Value;
 
 Before Entering the input:  It excludes prompt and literals
 
-![](Value_Mode_Images/Value_Mode_Img1.jpg)
+![Value_Mode_Img1](Value_Mode_Images/Value_Mode_Img1.jpg)
 
 After entering the input:
 
-![](Value_Mode_Images/Value_Mode_Img2.jpg)
+![Value_Mode_Img2](Value_Mode_Images/Value_Mode_Img2.jpg)
 
 ## IncludePrompt
     
@@ -107,11 +107,11 @@ label.Content = maskededit.Value;
 
 Before Entering the input:  It excludes literals
 
-![](Value_Mode_Images/Value_Mode_Img3.jpg)
+![Value_Mode_Img3](Value_Mode_Images/Value_Mode_Img3.jpg)
 
 After entering the input:
 
-![](Value_Mode_Images/Value_Mode_Img4.jpg)
+![Value_Mode_Img4](Value_Mode_Images/Value_Mode_Img4.jpg)
 
 ## Include Literals
    
@@ -156,11 +156,11 @@ label.Content = maskededit.Value;
 
 Before Entering the input:  It excludes prompt 
 
-![](Value_Mode_Images/Value_Mode_Img5.jpg)
+![Value_Mode_Img5](Value_Mode_Images/Value_Mode_Img5.jpg)
 
 After entering the input:
 
-![](Value_Mode_Images/Value_Mode_Img6.jpg)
+![Value_Mode_Img6](Value_Mode_Images/Value_Mode_Img6.jpg)
 
 ## IncludePromptAndLiterals
     
@@ -205,8 +205,8 @@ label.Content = maskededit.Value;
 
 Before Entering the input:  It excludes prompt and literals
 
-![](Value_Mode_Images/Value_Mode_Img7.jpg)
+![Value_Mode_Img7](Value_Mode_Images/Value_Mode_Img7.jpg)
 
 After entering the input:
 
-![](Value_Mode_Images/Value_Mode_Img8.jpg)
+![Value_Mode_Img8](Value_Mode_Images/Value_Mode_Img8.jpg)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Align with gridlines and objects | Syncfusion.
-description: How to add gridlines behind Nodes and Connectors?
+title: Gridlines in UWP Diagram control | Syncfusion
+description: Learn here all about Gridlines support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Gridlines
+# Gridlines in UWP Diagram (SfDiagram)
 
 **Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Pivot Gauge Control | UWP | Syncfusion
-description: The pivot gauge control is used to highlight the business information in executive dashboards and report cards.
+title: About UWP Pivot Gauge control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
 platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---
 
-# Overview
+# UWP Pivot Gauge (SfPivotGauge) Overview
 
 The SfPivotGauge control for UWP is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. It allows you to present values against goals in a very intuitive manner. For relational data, the SfPivotGauge control allows you to visualize the summary value using the pointer over a circular scale. It comes with sophisticated customization support that provides endless possibility for customizing the control.
 

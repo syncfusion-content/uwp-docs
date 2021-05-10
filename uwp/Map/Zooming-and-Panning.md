@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming and Panning in SfMaps control
-description: Learn how to perform zooming and panning in Maps
+title: Zooming and Panning in UWP Map control | Syncfusion
+description: Learn here all about Zooming and Panning support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Zooming and Panning
+# Zooming and Panning in UWP Map (SfMaps)
 
 The Zooming and Panning feature of the Map control allows users to zoom in and out and navigate the map.
 
@@ -90,7 +90,7 @@ In addition to the pinching event, the map can be zoomed with mouse events.  Whe
 When the map is double-tapped, the zooming operation is performed. 
 
 
-![](Features_images/Features_img6.png)
+![Features_img6](Features_images/Features_img6.png)
 
 ## Panning the map
 
@@ -143,4 +143,4 @@ The map can be panned by dragging the map through mouse interactions. This works
 
 N>  The map can be panned only when some parts of the map are outside the view of the control.
 
-![](Features_images/Features_img8.png)
+![Features_img8](Features_images/Features_img8.png)

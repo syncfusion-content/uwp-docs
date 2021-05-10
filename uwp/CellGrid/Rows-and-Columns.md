@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows and Columns Operations in SfCellGrid
-description: Operations involved with rows and columns in SfCellGrid
+title: Rows and Columns in UWP CellGrid control | Syncfusion
+description: Learn here all about Rows and Columns support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
 
-# Rows and Columns
+# Rows and Columns in UWP CellGrid (SfCellGrid)
 
 This section explains the operations related with rows and columns in the SfCellGrid.
 

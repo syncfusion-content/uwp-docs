@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started SfDataPager control in UWP.
-description: Getting started of SfDataPager control in UWP.
+title: Getting Started with UWP DataPager control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP DataPager (SfDataPager) control and more.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with UWP DataPager (SfDataPager)
 
 The [SfDataPager](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control provides a configurable user interface for paging. You can specify the page count or you can bind the `SfDataPager` to any [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx#) . When you bind collection, the `SfDataPager` control process the collection internally and provides the data for the current page using [PagedSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) property. 
 
@@ -61,7 +61,7 @@ Create new Universal Windows Platform project in Visual Studio.
 
 [SfDataPager](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.jpeg)
 
 ### Adding Control Manually in XAML
 
@@ -244,7 +244,7 @@ public class ViewModel
 
 `Orders` collection has 10 items and [PageSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) is 5. Therefore, SfDataPager loaded with two page buttons and [PageCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageCount) is two. Here `PageSize` denotes number of records per page. 
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Getting-Started_img2](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ### Using with SfDataGrid
 
@@ -276,7 +276,7 @@ Then bind the [PagedSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xam
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+![Getting-Started_img3](Getting-Started_images/Getting-Started_img3.jpeg)
 
 ## Populating control in Unbound Mode
 
@@ -292,7 +292,7 @@ You can define the number of pages by setting [UseOnDemandPaging](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+![Getting-Started_img4](Getting-Started_images/Getting-Started_img4.jpeg)
 
 ### Using with SfDataGrid
 
@@ -341,4 +341,4 @@ private void SfDataPager_OnDemandLoading(object sender, OnDemandLoadingEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img5.jpeg)
+![Getting-Started_img5](Getting-Started_images/Getting-Started_img5.jpeg)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shapes in SfSpreadsheet
-description: How to import charts, sparklines, pictures and textboxes in SfSpreadsheet
+title: Shapes in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Shapes support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Shapes
+# Shapes in UWP Spreadsheet (SfSpreadsheet)
   This section explains about importing of charts, sparklines, pictures and textboxes in SfSpreadsheet.
 
 ## Charts

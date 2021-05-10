@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MatchHighlighting of AutoComplete in Syncfusion SfTextBoxExt.
-description: Learn how to highlight the matched text in AutoComplete
+title: Highlighting MatchedText in UWP AutoComplete control | Syncfusion
+description: Learn here all about Highlighting MatchedText support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Highlighting matched text
+# Highlighting MatchedText in UWP AutoComplete (SfTextBoxExt)
 
 You can highlight matching characters in a suggestion list to pick an item with more clarity. The matching text can be highlighted in the following two ways:
 

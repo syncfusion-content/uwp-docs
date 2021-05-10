@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling of SfTimePicker control for UWP
-description: Appearance and Styling of SfTimePicker control for UWP
+title: Appearance and Styling in UWP TimePicker control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP TimePicker (SfTimePicker)
 
 ## Accent Brush
 
@@ -54,7 +54,7 @@ The following images showcase the control with various Accent Brushes:
 
 
 
-![](Features_images/Features_img15.png)
+![Features_img15](Features_images/Features_img15.png)
 
 ## Selected Foreground
 
@@ -89,4 +89,4 @@ The SelectedForeground property is used to change the foreground color of  the S
 {% endhighlight  %}
 
 
-![](Features_images/Appearance-and-Styling_img2.png)
+![Appearance-and-Styling_img2](Features_images/Appearance-and-Styling_img2.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multi Selection in Syncfusion SfTextBoxExt control
-description: Learn how to give Multi Selection to the AutoComplete in the SfTextBoxExt control.
+title: Multiple Selection in UWP AutoComplete control | Syncfusion
+description: Learn here all about Multiple Selection support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Multiple Selection
+# Multiple Selection in UWP AutoComplete (SfTextBoxExt)
 
 You can select multiple items from a suggestion list. Multiple selection can be performed in the following two ways in AutoComplete:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles and Formatting in SfCellGrid
-description: How to access and use of GridStyleInfo objects in SfCellGrid.
+title: Styles and Formatting in UWP CellGrid control | Syncfusion
+description: Learn here all about Styles and Formatting support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
 
-# Styles and Formatting
+# Styles and Formatting in UWP CellGrid (SfCellGrid)
 
 This section explains about some of the `GridStyleInfo` properties which customizes the `SfCellGrid` and its inner elements(cell,row, column..)
 

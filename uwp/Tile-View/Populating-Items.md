@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items of SfTileView control for UWP
-description: Populating Items of SfTileView control for UWP
+title: Populating Items in UWP Tile View control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Populating Items
+# Populating Items in UWP Tile View (SfTileView)
 
 `SfTileViewItem` are added as items of `SfTileView`. Items can be added using `Items` or `ItemSource` property.
 
@@ -144,7 +144,7 @@ tileView.Items.Add(New SfTileViewItem() With {.Content = "Description about Paul
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img1.jpeg)
+![Populating-Items-img1](Populating-Items-images/Populating-Items-img1.jpeg)
 
 ### Setting MaximizedContent for items
 
@@ -240,7 +240,7 @@ tileView.Items.Add(New SfTileViewItem() With {
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img2.jpeg)
+![Populating-Items-img2](Populating-Items-images/Populating-Items-img2.jpeg)
 
 ## Using ItemsSource
 
@@ -382,7 +382,7 @@ Employees.Add(New Employee() With {
 
 Tile view items need a template to render so `SfTileView` control is populated as follows:
 
-![](Populating-Items-images/Populating-Items-img3.jpeg)
+![Populating-Items-img3](Populating-Items-images/Populating-Items-img3.jpeg)
 
 ### Setting content for items
 
@@ -426,11 +426,11 @@ Template for tile view items can be set using the `ItemTemplate` property. ItemT
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img4.jpeg)
+![Populating-Items-img4](Populating-Items-images/Populating-Items-img4.jpeg)
 
 Click on the Tile “Niko” to maximize it. Maximized item is not rendered because it requires  MaximizedItemTemplate other than ItemTemplate.
 
-![](Populating-Items-images/Populating-Items-img5.jpeg)
+![Populating-Items-img5](Populating-Items-images/Populating-Items-img5.jpeg)
 
 ### Setting maximized content for items
 
@@ -492,6 +492,6 @@ Template for maximized item is set using `MaximizedItemTemplate` property. It ca
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img6.jpeg)
+![Populating-Items-img6](Populating-Items-images/Populating-Items-img6.jpeg)
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merge Cells of SfDataGrid control for UWP 
-description: Merge Cells of SfDataGrid control for UWP
+title: Merge Cells in UWP DataGrid control | Syncfusion
+description: Learn here all about Merge Cells support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Merge cells 	
+# Merge Cells in UWP DataGrid (SfDataGrid)
 
 SfDataGrid allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. Merged cells can be exported and printed.
 
@@ -60,7 +60,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
-![](Merge-Cells_images/Merge-Cells_img1.png)
+![Merge-Cells_img1](Merge-Cells_images/Merge-Cells_img1.png)
 
 ### Merging cells vertically by fixed range
 
@@ -84,7 +84,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Merge-Cells_images/Merge-Cells_img2.png)
+![Merge-Cells_img2](Merge-Cells_images/Merge-Cells_img2.png)
 
 ### Merging range of cells
 
@@ -106,7 +106,7 @@ private void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEven
 {% endhighlight %}
 {% endtabs %}
 
-![](Merge-Cells_images/Merge-Cells_img3.png)
+![Merge-Cells_img3](Merge-Cells_images/Merge-Cells_img3.png)
 
 ## Merging cells based on the content
 
@@ -333,7 +333,7 @@ private void FirstLevelNestedGrid_QueryCoveredRange(object sender, GridQueryCove
 {% endhighlight %}
 {% endtabs %}
 
-![](Merge-Cells_images/Merge-Cells_img4.png)
+![Merge-Cells_img4](Merge-Cells_images/Merge-Cells_img4.png)
 
 ### Merging range of parent cells 
 

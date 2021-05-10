@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Measures  | SfBulletGraph | uwp | Syncfusion
-description: Measures 
+title: Measures in UWP Bullet Graph control | Syncfusion
+description: Learn here all about Measures support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Measures
+# Measures in UWP Bullet Graph (SfBulletGraph)
 
 ## Featured Measure
 
@@ -37,7 +37,7 @@ The value of the featured measure of the bullet graph is set by the **FeaturedMe
 {% endhighlight %}
 {% endtabs %}
 
-![](Measures_images/Measures_img1.jpeg)
+![Measures_img1](Measures_images/Measures_img1.jpeg)
 
 ## Comparative Measure
 
@@ -68,4 +68,4 @@ The value of the comparative measure is set by using the **ComparativeMeasure** 
 {% endhighlight %}
 {% endtabs %}
 
-![](Measures_images/Measures_img2.jpg)
+![Measures_img2](Measures_images/Measures_img2.jpg)

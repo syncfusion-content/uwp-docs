@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating pages of SfDataPager control in UWP.
-description: Populating pages of SfDataPager control in UWP.
+title: Populating Pages in UWP DataPager control | Syncfusion
+description: Learn here all about Populating Pages support in Syncfusion UWP DataPager (SfDataPager) control and more.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
 
-# Populating pages
+# Populating Pages in UWP DataPager (SfDataPager)
 
 ## Binding with data
 
@@ -42,7 +42,7 @@ Below code snippet shows, how to bind `SfDataPager` with data.
 
 Based on number of items in the collection and `PageSize` and the `PageCount` is calculated for `SfDataPager`.
 
-![](Populating-Pages_images/Populating-Pages_img1.jpeg)
+![Populating-Pages_img1](Populating-Pages_images/Populating-Pages_img1.jpeg)
 
 ## Unbound Mode
 
@@ -56,4 +56,4 @@ You can define the [PageCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.
 {% endhighlight %}
 {% endtabs %}
 
-![](Populating-Pages_images/Populating-Pages_img2.jpeg)
+![Populating-Pages_img2](Populating-Pages_images/Populating-Pages_img2.jpeg)

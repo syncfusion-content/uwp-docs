@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling of Syncfusion SfRadialMenu  control for UWP
-description: Appearance and Styling of Syncfusion SfRadialMenu  control for UWP 
+title: Appearance and Styling in UWP Radial Menu control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
 ---
 
-# Appearance and Styling 
+# Appearance and Styling in UWP Radial Menu (SfRadialMenu)
 
 ## Radius 
 

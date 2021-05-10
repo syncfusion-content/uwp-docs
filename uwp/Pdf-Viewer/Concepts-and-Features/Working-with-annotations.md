@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with annotations in Syncfusion Essential UWP PDF viewer.
-description: Learn about working with various annotations supported in Syncfusion UWP PDF Viewer and their functionalities.
+title: Working with annotations in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Working with annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug

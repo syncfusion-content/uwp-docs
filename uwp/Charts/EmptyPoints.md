@@ -1,13 +1,13 @@
 ---
 layout: post
-title: EmptyPoints | SfChart | uwp | Syncfusion
-description: emptypoints
+title: EmptyPoints in UWP Charts control | Syncfusion
+description: Learn here all about EmptyPoints support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Empty Points
+# EmptyPoints in UWP Charts (SfChart)
 
 The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Retrieving selected value in AutoComplete of Syncfusion SfTextBoxExt. 
-description: Learn how to retrieve selected value from AutoComplete. 
+title: Retrieving Selected Values in UWP AutoComplete control | Syncfusion
+description: Learn here all about Retrieving Selected Values support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Handling Selected values
+# Retrieving Selected Values in UWP AutoComplete (SfTextBoxExt)
 
 AutoComplete provides a way to handle the selected item using the `SelectedItem` property.
 

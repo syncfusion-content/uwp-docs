@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items of SfRating control for UWP
-description: Explains about Populating Items of SfRating control for UWP
+title: Configuring Items in UWP Rating control | Syncfusion
+description: Learn here all about Configuring Items support in Syncfusion UWP Rating (SfRating) control and more.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# Configuring Items
+# Configuring Items in UWP Rating (SfRating)
 
 Specifying the number of rating items in `SfRating` control is much simpler with the property ItemsCount.
 

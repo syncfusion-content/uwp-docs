@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ImageFilter in Syncfusion SfImageEditor control in UWP
-description: This section describes how to apply image filter support in SfImageEditor control for UWP platform and also about image effects toolbar
+title: Image Filter in UWP Image Editor control | Syncfusion
+description: Learn here all about Image Filter support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: UWP
 control: ImageEditor
 documentation: ug
 ---
 
-# Image Filter in SfImageEditor
+# Image Filter in UWP Image Editor (SfImageEditor)
 
 By using the SfImageEditor control, you can add effects such as Hue, Saturation, Brightness, Contrast, Blur, and Sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ApplyImageEffect_Syncfusion_UI_Xaml_ImageEditor_Enums_ImageEffect_System_Single_) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageEffect) and [`EffectValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_EffectValue). The ImageEffect is an Enum, which contains the following effects:
 

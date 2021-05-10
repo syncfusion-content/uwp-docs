@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Diacritic sensitivity of AutoComplete in Syncfusion SfTextBoxExt.
-description: Learn how to enable and disable Diacritic sensitivity in AutoComplete
+title: Diacritic Sensitivity in UWP AutoComplete control | Syncfusion
+description: Learn here all about Diacritic Sensitivity support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Diacritic Sensitivity
+# Diacritic Sensitivity in UWP AutoComplete (SfTextBoxExt)
 
 The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity using the `IgnoreDiacritic` property. The following code example demonstrates how to enable the diacritic sensitivity. The items in the suggestion list will be populated by entering any diacritic character of that alphabet.
 

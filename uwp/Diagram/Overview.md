@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP SfDiagram control | Syncfusion
-description: User can create and edit flowcharts, organizational charts, UML, entity relationships, and any kind of diagram can quickly created using the UWP Diagram.
+title: About UWP Diagram control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Overview of UWP SfDiagram control
+# UWP Diagram (SfDiagram) Overview
 
 **Essential Diagram UWP** creates rich Visio like applications. Its Framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
 

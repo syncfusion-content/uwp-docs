@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfTabControl | UWP | Syncfusion
-description: This section gives the detailed description on getting started with the UWP SfTabControl and its basic features.
+title: Getting Started with UWP Tab Control control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Getting Started with SfTabControl
+# Getting Started with UWP Tab Control (SfTabControl)
 
 This section explains how to create a high level tab navigation using [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) control.
 

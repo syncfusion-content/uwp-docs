@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Conditional Styling | TreeGrid | UWP | Syncfusion
-description: This section explains about style the TreeGrid cells/rows based on conditions.
+title: Conditional Styling in UWP TreeGrid control | Syncfusion
+description: Learn here all about Conditional Styling support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
-# Conditional styling
+# Conditional Styling in UWP TreeGrid (SfTreeGrid)
 
 You can style the treegrid and its inner elements conditionally based on data in three ways,
 

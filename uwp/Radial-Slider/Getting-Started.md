@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started of SfRadialSlider control | UWP | Syncfusion
-description: Getting started section provide details about how to use the SfRadialSlider control in the UWP application.
+title: Getting Started with UWP Radial Slider control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with UWP Radial Slider (SfRadialSlider)
 
 Namespace : Syncfusion.UI.Xaml.Controls.Navigation 
 

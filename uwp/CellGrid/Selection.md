@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection behavior in SfCellGrid 
-description: selection behavior of SfCellGrid
+title: Selection in UWP CellGrid control | Syncfusion
+description: Learn here all about Selection support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: UWP
 control: SfCellGrid
 documentation: ug
 ---
 
-# Selection
+# Selection in UWP CellGrid (SfCellGrid)
 
 This section explains about the Selection behavior in SfCellGrid.
 

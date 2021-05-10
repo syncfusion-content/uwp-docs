@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Handle Animation support for Syncfusion SfBusyIndicator control in UWP
-description: Syncfusion SfBusyIndicator control provides thirty-eight types of Animation support in UWP platform.
+title: Animation in UWP Busy Indicator control | Syncfusion
+description: Learn here all about Animation support in Syncfusion UWP Busy Indicator (SfBusyIndicator) control and more.
 platform: uwp
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# Animation
+# Animation in UWP Busy Indicator (SfBusyIndicator)
 
 `SfBusyIndicator` animation can be frozen and also change the animation type.
 

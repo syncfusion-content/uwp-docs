@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ParsingMode options in Syncfusion NumericUpDown control 
-description: This section describes how to change the parsing mode for the NumericUpDown control. The default value is Double and it also accepts 'decimal'.
+title: ParsingMode in UWP Numeric UpDown control | Syncfusion
+description: Learn here all about ParsingMode support in Syncfusion UWP Numeric UpDown (SfNumericUpDown) control and more.
 platform: uwp
 control: SfNumeric UpDown
 documentation: ug

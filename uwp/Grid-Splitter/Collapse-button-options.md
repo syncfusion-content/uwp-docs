@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Collapse button options of SfGridSplitter control for UWP
-description: Collapse button options of SfGridSplitter control for UWP
+title: Customize Collapse button in UWP Grid Splitter control | Syncfusion
+description: Learn here all about Customize Collapse button support in Syncfusion UWP Grid Splitter (SfGridSplitter) control and more.
 platform: uwp
 control: SfGridSplitter
 documentation: ug
 ---
 
-# Customize Collapse button
+# Customize Collapse button in UWP Grid Splitter (SfGridSplitter)
 
 `SfGridSplitter` has options to collapse the element in either side of the splitter using buttons.
 
@@ -43,11 +43,11 @@ gridSplitter.EnableCollapseButton = True
 
 Pressing the down button
 
-![](Collapse-button-options-images/Collapse-button-options-img1.jpeg)
+![Collapse-button-options-img1](Collapse-button-options-images/Collapse-button-options-img1.jpeg)
 
 Pressing the up button
 
-![](Collapse-button-options-images/Collapse-button-options-img2.jpeg)
+![Collapse-button-options-img2](Collapse-button-options-images/Collapse-button-options-img2.jpeg)
 
 ## Style collapse buttons
 

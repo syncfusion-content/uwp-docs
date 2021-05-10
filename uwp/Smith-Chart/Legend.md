@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend | SfSmithChart | UWP | Syncfusion
-description: legend
+title: Legend in UWP Smith Chart control | Syncfusion
+description: Learn here all about Legend support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: SfSmithChart
 documentation: ug
 ---
 
-# Legend
+# Legend in UWP Smith Chart (SfSmithChart)
 
 The legend contains the list of chart series that appear in a SmithChart. It can be defined by using the following code example.
 

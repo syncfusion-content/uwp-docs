@@ -1,12 +1,12 @@
 ---
-title: Printing Contents
-description: printing-contents
+title: Printing Contents in UWP RichTextBox control | Syncfusion
+description: Learn here all about Printing Contents support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: printing
 ---
-# Printing Contents
+# Printing Contents in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv supports API to retrieve each page as a bitmap image by specifying the page number. Using this API and Print manager support, you can easily achieve printing contents of SfRichTextBoxAdv page by page in Universal Windows Platform applications.
 The following sample code demonstrates how to register for printing and how to implement print document event handlers.

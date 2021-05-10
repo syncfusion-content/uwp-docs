@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Shapes | SfImageEditor | uwp | Syncfusion
-description: This section explains how to add shapes on an image in the Syncfusion SfImageEditor in UWP platform and also explains how to delete/resize the shapes.
+title: Shapes in UWP Image Editor control | Syncfusion
+description: Learn here all about Shapes support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Shapes of SfImageEditor
+# Shapes in UWP Image Editor (SfImageEditor)
 
 You can annotate any path on an image by using free hand drawing and adding texts and shapes.
 

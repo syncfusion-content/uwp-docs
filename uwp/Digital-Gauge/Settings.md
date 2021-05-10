@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Settings| SfDigitalGauge | uwp | Syncfusion
-description: Settings 
+title: Settings in UWP Digital Gauge control | Syncfusion
+description: Learn here all about Settings support in Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Settings
+# Settings in UWP Digital Gauge (SfDigitalGauge)
 
 There are some other elements/behavior in SfDigitalGauge also can be customized. 
 
@@ -41,7 +41,7 @@ The distance between the characters can be set by using the **CharacterSpacing**
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img1.jpeg)
+![Settings_img1](Settings_images/Settings_img1.jpeg)
 
 ## Character Stroke
 
@@ -65,7 +65,7 @@ The Stroke of the character can be changed by **CharacterStroke** property.
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img2.jpeg)
+![Settings_img2](Settings_images/Settings_img2.jpeg)
 
 ## Segment Thickness
 
@@ -89,7 +89,7 @@ Using **SegmentThickness** property, you can adjust the thickness of the segment
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img3.jpeg)
+![Settings_img3](Settings_images/Settings_img3.jpeg)
 
 ## RTL (Right to Left) support
 
@@ -113,7 +113,7 @@ The Characters are aligned using **EnableRTLFormat** property. The default value
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img4.jpeg)
+![Settings_img4](Settings_images/Settings_img4.jpeg)
 
 ## Dimmed Brush stroke
 
@@ -137,7 +137,7 @@ The Characters are aligned using **EnableRTLFormat** property. The default value
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img5.jpeg)
+![Settings_img5](Settings_images/Settings_img5.jpeg)
 
 ## Dimmed Brush opacity
 
@@ -162,4 +162,4 @@ The Characters are aligned using **EnableRTLFormat** property. The default value
 {% endhighlight %}
 {% endtabs %}
 
-![](Settings_images/Settings_img6.jpeg)
+![Settings_img6](Settings_images/Settings_img6.jpeg)

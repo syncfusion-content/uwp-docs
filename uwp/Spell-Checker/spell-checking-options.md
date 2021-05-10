@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Spell Checking Options for SfSpellChecker control in UWP
-description: Spell Checking Options for SfSpellChecker control in UWP
+title: Spell Check in UWP Spell Checker control | Syncfusion
+description: Learn here all about Spell Check support in Syncfusion UWP Spell Checker (SfSpellChecker) control and more.
 platform: UWP
 control: SfSpellChecker
 documentation: ug
 ---
 
-# Spell Check
+# Spell Check in UWP Spell Checker (SfSpellChecker)
 
 The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of email id’s and addresses, HTML tags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
 

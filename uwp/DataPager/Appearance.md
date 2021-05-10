@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance of SfDataPager control in UWP.
-description: Appearance of SfDataPager control in UWP.
+title: Appearance in UWP DataPager control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion UWP DataPager (SfDataPager) control and more.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
-# Appearance
+# Appearance in UWP DataPager (SfDataPager)
 
 ## Display Modes
 
@@ -93,7 +93,7 @@ SfDataPager allows you to display the number of page buttons to be displayed in 
                          PageCount="10" /> 
 {% endhighlight %}
 {% endtabs %}
-![](Appearance_images/Appearance_img11.jpeg)
+![Appearance_img11](Appearance_images/Appearance_img11.jpeg)
 
 
 Now after changing `NumberButtonCount` as 5, only 5-page button will be displayed in view and remaining page buttons can be viewed by clicking the navigation buttons.
@@ -108,7 +108,7 @@ Now after changing `NumberButtonCount` as 5, only 5-page button will be displaye
 {% endhighlight %}
 {% endtabs %}
 
-![](Appearance_images/Appearance_img12.jpeg)
+![Appearance_img12](Appearance_images/Appearance_img12.jpeg)
 
 
 
@@ -182,7 +182,7 @@ The following code example explains how to change the `AutoEllipsisText`.
 
 The following screenshot displays the output for `AutoEllipsisText` changed as `…etc`.
 
-![](Appearance_images/Appearance_img13.jpeg)
+![Appearance_img13](Appearance_images/Appearance_img13.jpeg)
 
 
 
@@ -208,7 +208,7 @@ The following code example explains how to apply the `AccentBackground` and `Acc
 
 The following screenshot displays the output for `AccentBackground` and `AccentForeGround` applied to the `SfDataPager`.
 
-![](Appearance_images/Appearance_img14.jpeg)
+![Appearance_img14](Appearance_images/Appearance_img14.jpeg)
 
 
 The following code example explains how to use `NumericButtonStyle` in SfDataPager.
@@ -230,4 +230,4 @@ The following code example explains how to use `NumericButtonStyle` in SfDataPag
 
 The following screenshot displays the output of `NumericButtonStyle`.
 
-![](Appearance_images/Appearance_img15.jpeg)
+![Appearance_img15](Appearance_images/Appearance_img15.jpeg)

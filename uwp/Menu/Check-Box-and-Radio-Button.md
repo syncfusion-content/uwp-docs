@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Check Box and Radio Button
-description: Check Box and Radio Buttonn Support in SfMenuItem for Syncfusion SfMenu control
+title: CheckBox and RadioButton in UWP Menu control | Syncfusion
+description: Learn here all about CheckBox and RadioButton support in Syncfusion UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug
 --- 
 
-# Check Box and Radio Button
+# CheckBox and RadioButton in UWP Menu (SfMenu)
 
 `SfMenu` provides a support for selecting several items. `SfMenuItem` can be changed as checkable by setting the `IsCheckable` property of the `SfMenuItem` to “true”. You can change the icon type (Check Box or Radio Button) by using the `CheckIconType` property, also it can be checked by using the `IsChecked` property.
 
@@ -66,6 +66,6 @@ documentation: ug
 
 {% endtabs %}
 
-![](Check-Box-and-Radio-Button-images/Check-Box-and-Radio-Button-img1.jpg)
+![Check-Box-and-Radio-Button-img1](Check-Box-and-Radio-Button-images/Check-Box-and-Radio-Button-img1.jpg)
 
 

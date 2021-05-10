@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Syncfusion ToolTip Support 
-description: Tooltip Support
+title: ToolTip Support in UWP Range Selector control | Syncfusion
+description: Learn here all about ToolTip Support support in Syncfusion UWP Range Selector (SfDateTimeRangeNavigator) control and more.
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# ToolTip Support
+# ToolTip Support in UWP Range Selector (SfDateTimeRangeNavigator)
 
 DateTimeRangeNavigator control provides ToolTip support for Sliders. Sliders are used to select a particular region of data in the DateTimeRangeNavigator control. ToolTips for sliders show the selected start and end date time values. You can even view exact date values to the precision of milliseconds.
 

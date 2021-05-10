@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expand and Collapse functionalities of Syncfusion SfGroupBar control 
-description: Expand and Collapse functionalities of Syncfusion SfGroupBar control 
+title: Expand and Collapse in UWP Navigation Pane control | Syncfusion
+description: Learn here all about Expand and Collapse support in Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
 platform: UWP
 control: SfGroupBar
 documentation: ug
 ---
 
-# Expand and Collapse
+# Expand and Collapse in UWP Navigation Pane (SfGroupBar)
 
 `SfGroupBar` can be collapsed in either of the following ways:
 
@@ -143,6 +143,6 @@ Set the property `IsCollapsed` as true for collapsing the SfGroupBar and set `Is
 
 {% endtabs %}
 
-![](Expand-and-Collapse-images/Expand-and-Collapse-img1.jpeg)
+![Expand-and-Collapse-img1](Expand-and-Collapse-images/Expand-and-Collapse-img1.jpeg)
 
 

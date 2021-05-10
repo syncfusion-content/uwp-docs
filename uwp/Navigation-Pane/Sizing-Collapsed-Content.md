@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explains about Sizing Collapsed Content of Syncfusion SfGroupBar control
-description: Explains about Sizing Collapsed Content of Syncfusion SfGroupBar control 
+title: Sizing Collapsed Content in UWP Navigation Pane control | Syncfusion
+description: Learn here all about Sizing Collapsed Content support in Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
 platform: UWP
 control: SfGroupBar
 documentation: ug
 --- 
 
-# Sizing Collapsed Content
+# Sizing Collapsed Content in UWP Navigation Pane (SfGroupBar)
 
 Content is displayed in Popup when `SfGroupBar` is in Collapsed mode. Content popup is opened when the popup expander button is clicked. The content popup can be customized in several ways using the property `PopupSizeMode`.
 
@@ -27,7 +27,7 @@ PopUp can be displayed in full height of the `SfGroupBar` by setting `PopupSizeM
 
 {% endtabs %}
 
-![](Sizing-Collapsed-Content-images/Sizing-Collapsed-Content-img1.jpeg)
+![Sizing-Collapsed-Content-img1](Sizing-Collapsed-Content-images/Sizing-Collapsed-Content-img1.jpeg)
 
 
 ## Displaying PopUp in Default Size
@@ -46,7 +46,7 @@ PopUp can be displayed in equal height of the popup expander button in `SfGroupB
 
 {% endtabs %}
 
-![](Sizing-Collapsed-Content-images/Sizing-Collapsed-Content-img2.jpeg)
+![Sizing-Collapsed-Content-img2](Sizing-Collapsed-Content-images/Sizing-Collapsed-Content-img2.jpeg)
 
 
 ## Displaying Popup in Custom Size 
@@ -67,6 +67,6 @@ Content popup can be set to custom size using the properties `PopupSizeMode`, `P
 
 {% endtabs %}
 
-![](Sizing-Collapsed-Content-images/Sizing-Collapsed-Content-img3.jpg)
+![Sizing-Collapsed-Content-img3](Sizing-Collapsed-Content-images/Sizing-Collapsed-Content-img3.jpg)
 
 

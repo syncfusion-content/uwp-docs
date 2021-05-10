@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adornments | SfPivotChart | UWP | Syncfusion
-description: Adornments
+title: Adornments in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Adornments support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Adornments
+# Adornments in UWP Pivot Chart (SfPivotChart)
 
 Adornments are used to display data values of a chart segment with custom formatting options. The data point values (x,y) can be formatted by using the `AdornmentsInfo` property of the SfPivotChart. You can initialize the adornments as specified in the following code snippet.
 
@@ -79,7 +79,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/default_MarkerAdornments.png)
+![default_MarkerAdornments](Adornments_images/default_MarkerAdornments.png)
 
 ### Customizing marker appearance
 
@@ -124,7 +124,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/symbolSize_MarkerAdornments.png)
+![symbolSize_MarkerAdornments](Adornments_images/symbolSize_MarkerAdornments.png)
 
 ### Custom marker
 
@@ -168,7 +168,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/symbolTemplate_MarkerAdornments.png)
+![symbolTemplate_MarkerAdornments](Adornments_images/symbolTemplate_MarkerAdornments.png)
 
 ## Label
 
@@ -202,7 +202,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/default_LabelAdornments.png)
+![default_LabelAdornments](Adornments_images/default_LabelAdornments.png)
 
 ### Defining label content
 
@@ -240,7 +240,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/xValueContent_LabelAdornments.png)
+![xValueContent_LabelAdornments](Adornments_images/xValueContent_LabelAdornments.png)
 
 **Percentage**
 
@@ -274,7 +274,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/percentageContent_LabelAdornments.png)
+![percentageContent_LabelAdornments](Adornments_images/percentageContent_LabelAdornments.png)
 
 **YofTot**
 
@@ -308,7 +308,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/yOfTotalContent_LabelAdornments.png)
+![yOfTotalContent_LabelAdornments](Adornments_images/yOfTotalContent_LabelAdornments.png)
 
 **DateTime**
 
@@ -342,7 +342,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/dateTimeContent_labelAdornments.png)
+![dateTimeContent_labelAdornments](Adornments_images/dateTimeContent_labelAdornments.png)
 
 **LabelContentPath**
 
@@ -460,7 +460,7 @@ End Class
 
 {% endtabs %}
 
-![](Adornments_images/labelTemplate_LabelAdornments.png)
+![labelTemplate_LabelAdornments](Adornments_images/labelTemplate_LabelAdornments.png)
 
 ### Rotating labels
 
@@ -496,7 +496,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/labelRotation_LabelAdornments.png)
+![labelRotation_LabelAdornments](Adornments_images/labelRotation_LabelAdornments.png)
 
 ### Customizing label appearance
 
@@ -547,7 +547,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/customizedLabel_LabelAdornments.png)
+![customizedLabel_LabelAdornments](Adornments_images/customizedLabel_LabelAdornments.png)
 
 ### Applying series brush
 
@@ -583,7 +583,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/useSeriesPalette_LabelAdornments.png)
+![useSeriesPalette_LabelAdornments](Adornments_images/useSeriesPalette_LabelAdornments.png)
 
 ### Formatting labels
 
@@ -619,7 +619,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/labelFormat_LabelAdornments.png)
+![labelFormat_LabelAdornments](Adornments_images/labelFormat_LabelAdornments.png)
 
 ## Connector line
 
@@ -659,7 +659,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/connectorLine_LabelAdornments.png)
+![connectorLine_LabelAdornments](Adornments_images/connectorLine_LabelAdornments.png)
 
 ### Styling connector line
 
@@ -707,7 +707,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/styledConnectorLine_LabelAdornments.png)
+![styledConnectorLine_LabelAdornments](Adornments_images/styledConnectorLine_LabelAdornments.png)
 
 ## Positioning adornments
 
@@ -751,7 +751,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/positioningLabel_LabelAdornments.png)
+![positioningLabel_LabelAdornments](Adornments_images/positioningLabel_LabelAdornments.png)
 
 A label in adornments can be aligned by using the `HorizontalAlignment` and `VerticalAlignment` properties as explained in the following code snippet.
 
@@ -787,7 +787,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/alignedLabel_LabelAdornments.png)
+![alignedLabel_LabelAdornments](Adornments_images/alignedLabel_LabelAdornments.png)
 
 The SfPivotChart supports positioning a label in adornments, depending upon the selected chart type, using the `LabelPosition` property. The following code snippet defines positioning the label based on the `Auto` position.
 
@@ -824,7 +824,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endtabs %}
 
-![](Adornments_images/autoAlignedLabel_LabelAdornments.png)
+![autoAlignedLabel_LabelAdornments](Adornments_images/autoAlignedLabel_LabelAdornments.png)
 
 A demo sample is located in the following location.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Calculations | SfPivotClient | UWP | Syncfusion
-description: Custom Calculations
+title: Custom Calculations in UWP Pivot Client control | Syncfusion
+description: Learn here all about Custom Calculations support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Custom Calculations
+# Custom Calculations in UWP Pivot Client (SfPivotClient)
 
 **CalculationType** is an enumerator, used to specify the type of the calculation; it is defined in the PivotComputationInfo class. Various types of calculations are used to perform calculations as specified below:
 
@@ -68,7 +68,7 @@ PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With
 
 {% endtabs %}
 
-![](Custom-Calculations_images/custom_calculations-image1.png)
+![custom_calculations-image1](Custom-Calculations_images/custom_calculations-image1.png)
 
 ## Providing expression field calculation for summaries
 
@@ -112,4 +112,4 @@ PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With { _
 
 {% endtabs %}
 
-![](Custom-Calculations_images/custom-calculations_image2.png)
+![custom-calculations_image2](Custom-Calculations_images/custom-calculations_image2.png)

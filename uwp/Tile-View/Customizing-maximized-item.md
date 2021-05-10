@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing maximized items of SfTileView control for UWP
-description: Customizing maximized items of SfTileView control for UWP
+title: Customizing Maximized Item in UWP Tile View control | Syncfusion
+description: Learn here all about Customizing Maximized Item support in Syncfusion UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Customizing Maximized Item
+# Customizing Maximized Item in UWP Tile View (SfTileView)
 
 `SfTileView` provides several properties for customizing the maximized item.
 
@@ -43,7 +43,7 @@ tileView.MaximizedItemHeight = 400.0
 
 {% endtabs %}
 
-![](Customizing-maximized-item-images/Customizing-maximized-item-img1.jpeg)
+![Customizing-maximized-item-img1](Customizing-maximized-item-images/Customizing-maximized-item-img1.jpeg)
 
 ## Changing maximized item width
 
@@ -77,7 +77,7 @@ tileView.MaximizedItemWidth = 400.0
 
 {% endtabs %}
 
-![](Customizing-maximized-item-images/Customizing-maximized-item-img2.jpeg)
+![Customizing-maximized-item-img2](Customizing-maximized-item-images/Customizing-maximized-item-img2.jpeg)
 
 ## Animating maximized content
 
@@ -163,6 +163,6 @@ tileView.Transitions.Add(New PopupThemeTransition())
 
 {% endtabs %}
 
-![](Customizing-maximized-item-images/Customizing-maximized-item-img3.jpeg)
+![Customizing-maximized-item-img3](Customizing-maximized-item-images/Customizing-maximized-item-img3.jpeg)
 
 

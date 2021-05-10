@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | NavigationDrawer | UWP | Syncfusion
-description: getting started
+title: Getting Started with UWP Navigation Drawer control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control and more.
 platform: UWP
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Navigation Drawer (SfNavigationDrawer)
 
 The following section helps you to build your application with SfNavigationDrawer.
 
@@ -28,7 +28,7 @@ These steps were explained below for XAML.
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.png)
 
 Add the following namespace in your XAML window.
 
@@ -44,13 +44,13 @@ Add the following namespace in your XAML window.
 
 Drag and drop the SfNavigationDrawer control from the Toolbox to your application.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started_img2](Getting-Started_images/Getting-Started_img2.png)
 
 Now the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+![Getting-Started_img3](Getting-Started_images/Getting-Started_img3.png)
 
-![](Getting-Started_images/Getting-Started_img4.png)
+![Getting-Started_img4](Getting-Started_images/Getting-Started_img4.png)
 
 
 ## Initialize the NavigationDrawer
@@ -134,5 +134,5 @@ The DrawerView is a panel that is the hidden content, brought to the view by man
 {% endhighlight %}
 
 
-![](Getting-Started_images/Getting-Started_img5.png)                       
+![Getting-Started_img5](Getting-Started_images/Getting-Started_img5.png)                       
 

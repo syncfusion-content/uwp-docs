@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with BackStage component of SfRibbon control for UWP
-description: Deals with BackStage component of SfRibbon control for UWP
+title: BackStage in UWP Ribbon control | Syncfusion
+description: Learn here all about BackStage support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
 ---
 
-# BackStage
+# BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 Commands can be added to BackStage similar to office UI. Backstage is completely customizable. For navigating to backstage click on backstage button in left end on Ribbon Tab Items panel. BackStageTabItems can be easily navigated using the scroll buttons. To navigate back from BackStage click on the back button in top left corner. BackStage can be opened and closed programmatically using the methods “OpenBackStage()” and “CloseBackStage()”.
 
@@ -76,9 +76,9 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 {% endtabs %}
 
-![](BackStage_images/BackStage_img1.jpeg)
+![BackStage_img1](BackStage_images/BackStage_img1.jpeg)
 
-# Populate BackStage page on BackStageTabItem Click
+# BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 * In case of BackStageTabItem, BackStage page has been displayed by loading the Content Control inside it as like below 
 
@@ -100,9 +100,9 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 {% endtabs %}
 
-![](BackStage_images/BackStage_img2.jpeg)
+![BackStage_img2](BackStage_images/BackStage_img2.jpeg)
 
-# Populate BackStage page on BackStageButton Click
+# BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 * In case of BackStageButton, BackStage page has been displayed in the click event of BackStage button as follow
 
@@ -132,6 +132,6 @@ private async void SfBackStageButton_Click(object sender, RoutedEventArgs e)
 
 {% endtabs %}
 
-![](BackStage_images/BackStage_img3.jpeg)
+![BackStage_img3](BackStage_images/BackStage_img3.jpeg)
 
 

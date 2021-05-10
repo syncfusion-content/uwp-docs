@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | SfPivotGauge | UWP | Syncfusion
-description: Appearance
+title: Appearance in UWP Pivot Gauge control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
 platform: UWP
 control: SfPivotGauge
 documentation: ug
 ---
 
-# Appearance
+# Appearance in UWP Pivot Gauge (SfPivotGauge)
 
 ## Layout customization
 
@@ -40,7 +40,7 @@ PivotGauge1.ColumnsCount = 2
 
 {% endtabs %}
 
-![](Appearance_images/Layout-customization.png)
+![Layout-customization](Appearance_images/Layout-customization.png)
 
 ## Gauge radius
 
@@ -71,7 +71,7 @@ PivotGauge1.Radius = 75
 
 {% endtabs %}
 
-![](Appearance_images/Gauge-radius.png)
+![Gauge-radius](Appearance_images/Gauge-radius.png)
 
 ## Gauge header
 
@@ -102,7 +102,7 @@ PivotGauge1.ShowGaugeHeaders = False
 
 {% endtabs %}
 
-![](Appearance_images/Gauge-header.png)
+![Gauge-header](Appearance_images/Gauge-header.png)
 
 ## Gauge label
 
@@ -133,7 +133,7 @@ PivotGauge1.ShowGaugeLabels = False
 
 {% endtabs %}
 
-![](Appearance_images/Gauge-label.png)
+![Gauge-label](Appearance_images/Gauge-label.png)
 
 ## Gauge factor
 
@@ -164,4 +164,4 @@ PivotGauge1.ShowGaugeFactors = False
 
 {% endtabs %}
 
-![](Appearance_images/Gauge-factor.png)
+![Gauge-factor](Appearance_images/Gauge-factor.png)

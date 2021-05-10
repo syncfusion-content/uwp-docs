@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting | SfPivotGrid | UWP | Syncfusion
-description: Exporting
+title: Exporting in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Exporting support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Exporting
+# Exporting in UWP Pivot Grid (SfPivotGrid)
 
 The SfPivotGrid can be exported to Microsoft Excel, Microsoft Word, PDF, and CSV file formats. By default, the grid style for export is obtained from the ExportingGridStyleInfo instance. To perform exporting operation, refer to the following assembly in the application.
 
@@ -40,7 +40,7 @@ export.ExportToDocument("Sample")
 
 {% endtabs %}
 
-![](Exporting_images/Export-excel-image.png)
+![Export-excel-image](Exporting_images/Export-excel-image.png)
 
 ## Export to Word
 
@@ -70,7 +70,7 @@ export.ExportToDocument("Sample")
 
 {% endtabs %}
 
-![](Exporting_images/Export-word-image.png)
+![Export-word-image](Exporting_images/Export-word-image.png)
 
 ## Export to PDF
 
@@ -100,7 +100,7 @@ export.ExportToDocument("Sample")
 
 {% endtabs %}
 
-![](Exporting_images/Export-pdf-image.png)
+![Export-pdf-image](Exporting_images/Export-pdf-image.png)
 
 ## Export to CSV
 
@@ -130,7 +130,7 @@ export.ExportToDocument("Sample")
 
 {% endtabs %}
 
-![](Exporting_images/Export-csv-image.png)
+![Export-csv-image](Exporting_images/Export-csv-image.png)
 
 N> You can use a *Button* instance to the page and then specify the required code snippet to export the SfPivotGrid in the `Click` event handler method.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion SfGroupBar control for UWP
-description: Overview of Syncfusion SfGroupBar control for UWP
+title: About UWP Navigation Pane control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
 platform: UWP
 control: SfGroupBar
 documentation: ug
 ---
 
-# Overview
+# UWP Navigation Pane (SfGroupBar) Overview
 
 The `SfGroupBar` control provides a navigation UI similar to Microsoft Outlook. It has a container to host controls within it. Use it to host a categorized collection of items and custom controls. 
 

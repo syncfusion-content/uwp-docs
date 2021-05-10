@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Navigation Mode of SfTreeNavigator control for UWP
-description: Navigation Mode of SfTreeNavigator control for UWP
+title: Navigation Mode in UWP Tree Navigator control | Syncfusion
+description: Learn here all about Navigation Mode support in Syncfusion UWP Tree Navigator (SfTreeNavigator) control and more.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug
 ---
 
-# Expansion Modes
+# Navigation Mode in UWP Tree Navigator (SfTreeNavigator)
 
 `SfTreeNavigator` supports two different modes to support navigation. They are:
 

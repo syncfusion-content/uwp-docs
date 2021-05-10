@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Content Template of SfRadialSlider control for UWP
-description: Content Template of SfRadialSlider control for UWP
+title: Content Template in UWP Radial Slider control | Syncfusion
+description: Learn here all about Content Template support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Content Template
+# Content Template in UWP Radial Slider (SfRadialSlider)
 
 The ContentTemplate  property can be used to customize the content of the SfRadialSlider. 
 
@@ -33,4 +33,4 @@ The ContentTemplate  property can be used to customize the content of the SfRadi
 
 {% endhighlight %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img4.png)
+![Concepts--and-Features_img4](Concepts--and-Features_images/Concepts--and-Features_img4.png)

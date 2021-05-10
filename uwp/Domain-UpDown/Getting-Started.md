@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfDomainUpDown control for UWP
-description:  A quick tour to initial users on SfDomainUpDown control for for Universal Windows Platform project in Visual Studio 
+title: Getting Started with UWP Domain UpDown control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Domain UpDown (SfDomainUpDown) control and more.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Domain UpDown (SfDomainUpDown)
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Define reusable Nodes/Connectors to the Stencil | Syncfusion.
-description: How to add Symbol to the Stencil and drag and drop them over the drawing area?
+title: Stencil in UWP Diagram control | Syncfusion
+description: Learn here all about Stencil support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Stencil
+# Stencil in UWP Diagram (SfDiagram)
 
 Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroupProvider and filters by using the SymbolFilterProvider through delegates.
 

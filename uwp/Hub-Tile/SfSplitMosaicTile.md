@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features of SfSplitMosaicTile control | UWP | Syncfusion
-description: SfSplitMosaicTile control provides a way to integrate a tile similar to contacts group tile in Windows Phone.
+title: SfSplitMosaicTile in UWP Hub Tile control | Syncfusion
+description: Learn here all about SfSplitMosaicTile support in Syncfusion UWP Hub Tile (HubTiles) control and more.
 platform: uwp
 control: SfSplitMosaicTile
 documentation: ug
 ---
 
-# SfSplitMosaicTile
+# SfSplitMosaicTile in UWP Hub Tile (HubTiles)
 
 ## Overview
 

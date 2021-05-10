@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging | SfPivotClient | UWP | Syncfusion
-description: Paging
+title: Paging in UWP Pivot Client control | Syncfusion
+description: Learn here all about Paging support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Paging
+# Paging in UWP Pivot Client (SfPivotClient)
 
 Paging in the SfPivotClient supports loading and rendering the large amounts of data without any performance constraint.
 
@@ -43,7 +43,7 @@ PivotClient1.EnablePaging = True
 
 N> Paging can be enabled or disabled at runtime by using the *Pivot Pager* icon ![](Paging_images/Pager-button.png) in the SfPivotClient's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
 
-![](Paging_images/pagerEnabled_UI.png)
+![pagerEnabled_UI](Paging_images/pagerEnabled_UI.png)
 
 **Using OLAP report**
 
@@ -137,13 +137,13 @@ End Function
 
 {% endtabs %}
 
-![](Paging_images/pagerEnabled_OlapReport.png)
+![pagerEnabled_OlapReport](Paging_images/pagerEnabled_OlapReport.png)
 
 ## Pager settings
 
 The page size and current page of both column and row sections can be modified by using the options available in the pager settings dialog. The pager settings dialog can be opened by clicking the settings button in the pager.
 
-![](Paging_images/pagerSettingsPopup.png)
+![pagerSettingsPopup](Paging_images/pagerSettingsPopup.png)
 
 A demo sample is available in the following location.
 

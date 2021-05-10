@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Utilities in SfCalculator control for UWP 
-description: Utilities in SfCalculator control for UWP
+title: Utilities in UWP Calculator control | Syncfusion
+description: Learn here all about Utilities support in Syncfusion UWP Calculator (SfCalculator) control and more.
 platform: UWP
 control: SfCalculator
 documentation: ug
 ---
 
-# Utility Functions
+# Utilities in UWP Calculator (SfCalculator)
 
 Several utility functions are available in `SfCalculator` control.
 
@@ -51,7 +51,7 @@ functionText.Text = "The function is: " & [function].ToString()
 
 {% endtabs %}
 
-![](Other-utility-functions-images/Other-utility-functions-img1.jpeg)
+![Other-utility-functions-img1](Other-utility-functions-images/Other-utility-functions-img1.jpeg)
 
 
 ## Clear the Expression
@@ -164,4 +164,4 @@ calculator.Culture = New System.Globalization.CultureInfo("de-DE")
 
 {% endtabs %}
 
-![](Other-utility-functions-images/Other-utility-functions-img2.jpeg)
+![Other-utility-functions-img2](Other-utility-functions-images/Other-utility-functions-img2.jpeg)

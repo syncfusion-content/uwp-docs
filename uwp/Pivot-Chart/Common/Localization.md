@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | SfPivotChart | UWP | Syncfusion
-description: Localization
+title: Localization in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Localization support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Localization
+# Localization in UWP Pivot Chart (SfPivotChart)
 
 Localization is the key feature to provide software solutions targeted at global users. The SfPivotChart allows users to localize the control to a specific locale and supports “resx” based localization.
 
@@ -31,9 +31,9 @@ After translating the strings, perform the following steps in the application:
 
 2. Then, right-click the **Resources** folder to create a new resource file by selecting Add > New Item.
 
-![](Localization_images/newResxFile_step1.png)
+![newResxFile_step1](Localization_images/newResxFile_step1.png)
 
-![](Localization_images/newResxFile_step2.png)
+![newResxFile_step2](Localization_images/newResxFile_step2.png)
 
 N> The resource file name should be in the format “&lt;Culture Code&gt;.resx”.
 
@@ -102,7 +102,7 @@ PivotChart1.FlowDirection = FlowDirection.RightToLeft
 
 {% endtabs %}
 
-![](Localization_images/relationalRTL.png)
+![relationalRTL](Localization_images/relationalRTL.png)
 
 A demo sample is available in the following location.
 

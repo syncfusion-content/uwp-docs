@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Syncfusion SfGroupBar control
-description: Getting Started for Syncfusion SfGroupBar control 
+title: Getting Started with UWP Navigation Pane control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
 platform: UWP
 control: SfGroupBar
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Navigation Pane (SfGroupBar)
 
 This section explains how to add `SfGroupBarItem` and set it’s content in `SfGroupBar`. 
 
@@ -45,7 +45,7 @@ xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 This will just display GroupBar with Collapse button.
 
-![](Getting-Started-images/Getting-Started-img1.jpeg)
+![Getting-Started-img1](Getting-Started-images/Getting-Started-img1.jpeg)
 
 
 ## Adding Items to SfGroupBar
@@ -72,7 +72,7 @@ Add items `SfGroupBarItem` as given below. Use the property `Header` to set disp
 
 {% endtabs %}
 
-![](Getting-Started-images/Getting-Started-img2.jpeg)
+![Getting-Started-img2](Getting-Started-images/Getting-Started-img2.jpeg)
 
 
 ## Setting Icon for SfGroupBar Items
@@ -204,7 +204,7 @@ Use the property `ImagePath` to set image as Path elements. It can be set as fol
 
 {% endtabs %}
 
-![](Getting-Started-images/Getting-Started-img3.jpeg)
+![Getting-Started-img3](Getting-Started-images/Getting-Started-img3.jpeg)
 
 
 ## Setting Content

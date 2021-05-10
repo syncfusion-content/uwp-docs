@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Customizations of AutoComplete in Syncfusion SfTextBoxExt control.
-description: This section describes about the visual customization of textbox, suggestion box and suggestion items in the AutoComplete.
+title: Customizing AutoComplete in UWP AutoComplete control | Syncfusion
+description: Learn here all about Customizing AutoComplete support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Customizing AutoComplete
+# Customizing AutoComplete in UWP AutoComplete (SfTextBoxExt)
 
 AutoComplete provides user-friendly customizing options for both text box and drop-down. This section explains how to customize the entire AutoComplete control.
 

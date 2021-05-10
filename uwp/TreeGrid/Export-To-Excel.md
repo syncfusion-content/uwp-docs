@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To Excel in SfTreeGrid.
-description: How to export the SfTreeGrid to Excel.
+title: Export To Excel in UWP TreeGrid control | Syncfusion
+description: Learn here all about Export To Excel support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Export to Excel
+# Export To Excel in UWP TreeGrid (SfTreeGrid)
 
 SfTreeGrid provides support to export the data to Excel file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering process when exporting.
 
@@ -32,7 +32,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img1.jpeg)
+![Export-To-Excel_img1](Export-To-Excel_images/Export-To-Excel_img1.jpeg)
 
 N> SfTreeGrid exports data to Excel using XlsIO.
 
@@ -76,7 +76,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img2.jpeg)
+![Export-To-Excel_img2](Export-To-Excel_images/Export-To-Excel_img2.jpeg)
 
 ### Exclude columns when exporting
 
@@ -271,7 +271,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img3.jpeg)
+![Export-To-Excel_img3](Export-To-Excel_images/Export-To-Excel_img3.jpeg)
 
 ## Save options
 
@@ -460,7 +460,7 @@ private static void ExportingHandler(object sender, TreeGridExcelExportingEventA
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img4.jpeg)
+![Export-To-Excel_img4](Export-To-Excel_images/Export-To-Excel_img4.jpeg)
 
 ### Customize the exporting content to Excel 
 
@@ -496,7 +496,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img5.jpeg)
+![Export-To-Excel_img5](Export-To-Excel_images/Export-To-Excel_img5.jpeg)
 
 Here, the cell values changed for the `IsClosed` column are based on the custom condition.
 
@@ -529,7 +529,7 @@ private void cellExportingHandler(object sender, TreeGridCellExcelExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img6.jpeg)
+![Export-To-Excel_img6](Export-To-Excel_images/Export-To-Excel_img6.jpeg)
 
 ### Customize the cells based on column name
 
@@ -557,7 +557,7 @@ private static void CellExportingHandler(object sender, TreeGridCellExcelExporti
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img7.jpeg)
+![Export-To-Excel_img7](Export-To-Excel_images/Export-To-Excel_img7.jpeg)
 
 ## Customize exported workbooks and worksheets
 
@@ -583,7 +583,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img8.jpeg)
+![Export-To-Excel_img8](Export-To-Excel_images/Export-To-Excel_img8.jpeg)
 
 ### Enable filters
 
@@ -603,7 +603,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img9.jpeg)
+![Export-To-Excel_img9](Export-To-Excel_images/Export-To-Excel_img9.jpeg)
 
 By using the stacked headers, you can specify the range based on the stacked headers count.
 
@@ -643,7 +643,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img10.jpeg)
+![Export-To-Excel_img10](Export-To-Excel_images/Export-To-Excel_img10.jpeg)
 
 ## Performance
 
@@ -669,7 +669,7 @@ workBook.ActiveSheet.Columns[2].NumberFormat = "0.0";
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img11.jpeg)
+![Export-To-Excel_img11](Export-To-Excel_images/Export-To-Excel_img11.jpeg)
 
 ### Alternate row styling without using CellsExportingEventHandler
 
@@ -698,7 +698,7 @@ condition2.BackColorRGB = System.Drawing.Color.LightGray;
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img12.jpeg)
+![Export-To-Excel_img12](Export-To-Excel_images/Export-To-Excel_img12.jpeg)
 
 ## How to
 

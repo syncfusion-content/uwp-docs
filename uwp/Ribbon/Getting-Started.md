@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started documentation of SfRibbon control for UWP
-description: Guidelines to create Syncfusion SfRibbon(Touch Ribbon) control for Universal Windows Platform project in Visual Studio 
+title: Getting Started with UWP Ribbon control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Ribbon (SfRibbon(Touch Ribbon))
 
 This section explains you on how to add SfRibbon in your application.
 

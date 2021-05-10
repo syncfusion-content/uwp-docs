@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Value and PreviewValue of SfRating control for UWP
-description: Dealing with Value and PreviewValue of SfRating control for UWP
+title: Dealing with Value in UWP Rating control | Syncfusion
+description: Learn here all about Dealing with Value support in Syncfusion UWP Rating (SfRating) control and more.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# Dealing with Value and PreviewValue
+# Dealing with Value in UWP Rating (SfRating)
 
 ## Setting the rated value
 

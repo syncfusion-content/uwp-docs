@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Excel-Like Filtering and Sorting | SfPivotGrid | UWP | Syncfusion
-description: Excel-Like Filtering and Sorting
+title: Excel-Like Filtering and Sorting in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Excel-Like Filtering and Sorting support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Excel-Like Filtering and Sorting
+# Excel-Like Filtering and Sorting in UWP Pivot Grid (SfPivotGrid)
 
 The SfPivotGrid control supports Excel-like filtering and sorting applied to a pivot item. You can enable or disable the Excel-like sorting and filtering support by setting the `AllowMultiFunctionalSortFilter` property in the SfPivotGrid.
 
@@ -35,7 +35,7 @@ Me.PivotGrid1.AllowMultiFunctionalSortFilter = True
 
 {% endtabs %}
 
-![](Excel-Like-Filtering-Sorting_images/Excel-like-Filter-Popup.png)
+![Excel-like-Filter-Popup](Excel-Like-Filtering-Sorting_images/Excel-like-Filter-Popup.png)
 
 ## Multi-functional features
 
@@ -51,7 +51,7 @@ It is used to sort the corresponding pivot item in the descending order.
 
 It is used to sort the corresponding pivot item based on the grand total of the pivot calculation field.
 
-![](Excel-Like-Filtering-Sorting_images/More-sort-options.png)
+![More-sort-options](Excel-Like-Filtering-Sorting_images/More-sort-options.png)
 
 **Clear filters**
 
@@ -76,11 +76,11 @@ It is used to filter the SfPivotGrid based on the labels of pivot item field and
 * Between.
 * Not between.
 
-![](Excel-Like-Filtering-Sorting_images/Label-filter-popup.png)
+![Label-filter-popup](Excel-Like-Filtering-Sorting_images/Label-filter-popup.png)
 
 _Label Filter pop-up for filtering "Canada" in Country_
 
-![](Excel-Like-Filtering-Sorting_images/Filtered-PivotGrid-by-using-label-filter.png)
+![Filtered-PivotGrid-by-using-label-filter](Excel-Like-Filtering-Sorting_images/Filtered-PivotGrid-by-using-label-filter.png)
 
 _SfPivotGrid applied with Label Filter_
 
@@ -98,11 +98,11 @@ It is used to filter the SfPivotGrid based on the values of pivot item field and
 * Not between.
 * Top 10.
 
-![](Excel-Like-Filtering-Sorting_images/Value-filter-popup.png)
+![Value-filter-popup](Excel-Like-Filtering-Sorting_images/Value-filter-popup.png)
 
 _Value Filter pop-up for filtering "Canada" using its Quantity value "409"_
 
-![](Excel-Like-Filtering-Sorting_images/Filtered-PivotGrid-by-using-value-filter.png)
+![Filtered-PivotGrid-by-using-value-filter](Excel-Like-Filtering-Sorting_images/Filtered-PivotGrid-by-using-value-filter.png)
 
 _SfPivotGrid applied with Value Filter_
 

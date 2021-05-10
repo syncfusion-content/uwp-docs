@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SfKanban | uwp | Syncfusion
-description: getting started
+title: About UWP Kanban Board control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Kanban Board (SfKanban) control and more.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 
-# Overview
+# UWP Kanban Board (SfKanban) Overview
 
 The Kanban control is an efficient way to visualize a workflow at each stage of completion. Kanban helps to define elegant planning and clear visualization of work progression. SfKanban also provide many features that are used to monitor the progressing tasks in software development cycle. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Group two or more relevant objects | Syncfusion.
-description: How to group two or more nodes and connectors?
+title: Group in UWP Diagram control | Syncfusion
+description: Learn here all about Group support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Group
+# Group in UWP Diagram (SfDiagram)
 
 Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 

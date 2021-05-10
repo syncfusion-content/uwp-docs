@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Percent Display Mode options of SfNumericTextBox control for UWP
-description: Explains about Percent Display Mode options of SfNumericTextBox control for UWP
+title: Percent Display Mode in UWP Numeric TextBox control | Syncfusion
+description: Learn here all about Percent Display Mode support in Syncfusion UWP Numeric TextBox (SfNumericTextBox) control and more.
 platform: uwp
 control: SfNumeric TextBox
 documentation: ug
 ---
 
-# Percent Display Mode
+# Percent Display Mode in UWP Numeric TextBox (SfNumericTextBox)
 
 With the PercentDisplayMode property, you can specify how to display numeric data in Percent mode. It provides the following options:
 

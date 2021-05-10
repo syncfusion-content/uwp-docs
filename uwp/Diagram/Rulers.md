@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ruler represents position of objects from origin | Syncfusion
-description: how to measure the distance of Nodes and Connectors? 
+title: Rulers in UWP Diagram control | Syncfusion
+description: Learn here all about Rulers support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Rulers
+# Rulers in UWP Diagram (SfDiagram)
 
 The Ruler provides a Horizontal and Vertical guide for measuring in the Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting | SfPivotGrid | UWP | Syncfusion
-description: Sorting
+title: Sorting in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Sorting
+# Sorting in UWP Pivot Grid (SfPivotGrid)
 
 Sorting enables you to quickly visualize and understand your data better. Ultimately, it allows you to organize and find the data by which you can make more effective decisions. By default, the SfPivotGrid holds built-in comparers for all data types so that it will populate the data in ascending/descending order based on its data type. You can also define own custom comparer to view the data.
 
@@ -76,11 +76,11 @@ PivotGrid1.PivotRows(0).Comparer = New ReverseOrderComparer()
 
 {% endtabs %}
 
-![](Sorting_images/Not-Sorted-PivotGrid.png)
+![Not-Sorted-PivotGrid](Sorting_images/Not-Sorted-PivotGrid.png)
 
 _SfPivotGrid without ReverseOrderComparer_
 
-![](Sorting_images/Sorted-PivotGrid.png)
+![Sorted-PivotGrid](Sorting_images/Sorted-PivotGrid.png)
 
 _SfPivotGrid with ReverseOrderComparer_
 
@@ -122,7 +122,7 @@ PivotGrid1.SortOption = SortOption.All
 
 {% endtabs %}
 
-![](Sorting_images/Sorted-PivotGrid-when-using-All-option.png)
+![Sorted-PivotGrid-when-using-All-option](Sorting_images/Sorted-PivotGrid-when-using-All-option.png)
 
 **Sorting all columns except total and grandTotal columns**
 
@@ -150,7 +150,7 @@ PivotGrid1.SortOption = SortOption.ColumnSorting
 
 {% endtabs %}
 
-![](Sorting_images/Sorted-PivotGrid-when-using-Column-sorting-option.png)
+![Sorted-PivotGrid-when-using-Column-sorting-option](Sorting_images/Sorted-PivotGrid-when-using-Column-sorting-option.png)
 
 **Sorting only total columns**
 
@@ -178,7 +178,7 @@ PivotGrid1.SortOption = SortOption.TotalSorting
 
 {% endtabs %}
 
-![](Sorting_images/Sorted-PivotGrid-when-using-Total-Sorting.png)
+![Sorted-PivotGrid-when-using-Total-Sorting](Sorting_images/Sorted-PivotGrid-when-using-Total-Sorting.png)
 
 **Sorting only grand total columns**
 
@@ -206,7 +206,7 @@ PivotGrid1.SortOption = SortOption.GrandTotalSorting
 
 {% endtabs %}
 
-![](Sorting_images/Sorted-PivotGrid-when-using-GrandTotal-Sorting-option.png)
+![Sorted-PivotGrid-when-using-GrandTotal-Sorting-option](Sorting_images/Sorted-PivotGrid-when-using-GrandTotal-Sorting-option.png)
 
 **Disable sorting**
 

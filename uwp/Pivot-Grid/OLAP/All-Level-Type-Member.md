@@ -1,13 +1,13 @@
 ---
 layout: post
-title: All Level Type Member | SfPivotGrid | UWP | Syncfusion
-description: All Level Type Member
+title: All-Level Type Member in UWP Pivot Grid control | Syncfusion
+description: Learn here all about All-Level Type Member support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# All - Level Type Member
+# All-Level Type Member in UWP Pivot Grid (SfPivotGrid)
 
 This feature enables you to display the “All” level type member across the rows and columns in the SfPivotGrid. This member behaves as parent to other members in its hierarchy by controlling their visibility through an expander.
 
@@ -29,4 +29,4 @@ pivotGrid1.OlapDataManager.ShowLevelTypeAll = True
 
 {% endtabs %}
 
-![](All-Level-Type-Member_images/PivotGrid_AllTypeEnabled.png)
+![PivotGrid_AllTypeEnabled](All-Level-Type-Member_images/PivotGrid_AllTypeEnabled.png)
