@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 3D Charts | SfChart | uwp | Syncfusion
-description: 3d charts
+title: 3D Charts in UWP Charts control | Syncfusion
+description: Learn here all about 3D Charts support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# 3D Charts
+# 3D Charts in UWP Charts (SfChart)
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 

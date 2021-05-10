@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Flow Direction | SfBulletGraph | uwp | Syncfusion
-description: Flow Direction 
+title: Flow Direction in UWP Bullet Graph control | Syncfusion
+description: Learn here all about Flow Direction support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
 platform: uwp
 control: SfBulletGraph
 documentation: ug

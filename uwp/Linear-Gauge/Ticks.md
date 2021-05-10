@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks | SfCLinearGauge | uwp | Syncfusion
-description: Ticks   
+title: Ticks in UWP Linear Gauge control | Syncfusion
+description: Learn here all about Ticks support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
 platform: uwp
 control: SfCLinearGauge
 documentation: ug
 ---
 
-# Ticks
+# Ticks in UWP Linear Gauge (SfLinearGauge)
 
 Ticks are used to identify the gauge’s data value by marking the gauge scale in regular increments.
 
@@ -69,7 +69,7 @@ By setting the [`MajorTickStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img1.png)
+![Ticks_img1](Ticks_images/Ticks_img1.png)
 
 ## Setting position for tick
 
@@ -131,7 +131,7 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img2.png)
+![Ticks_img2](Ticks_images/Ticks_img2.png)
 
 ## Setting minor ticks per interval
 
@@ -187,4 +187,4 @@ The [`Interval`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.Li
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img3.png)
+![Ticks_img3](Ticks_images/Ticks_img3.png)

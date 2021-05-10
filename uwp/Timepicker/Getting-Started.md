@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfTimePicker | UWP | Syncfusion
-description: This section gives the detailed description on getting started with the UWP SfTimePicker control and its basic features.
+title: Getting Started with UWP TimePicker control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug
 ---
 
-# Getting Started with UWP SfTimePicker
+# Getting Started with UWP TimePicker (SfTimePicker)
 
 This section provides a quick overview for working with [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control.
 

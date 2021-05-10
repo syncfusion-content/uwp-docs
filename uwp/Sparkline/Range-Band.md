@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range Band support for Sparkline
-description: Range Band support for Sparkline
+title: Range Band in UWP Sparkline control | Syncfusion
+description: Learn here all about Range Band support in Syncfusion UWP Sparkline (SfSparkline) control and more.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
 
-# Range Band
+# Range Band in UWP Sparkline (SfSparkline)
 
 Range band feature is used to highlight the particular mentioned range along Y axis.
 

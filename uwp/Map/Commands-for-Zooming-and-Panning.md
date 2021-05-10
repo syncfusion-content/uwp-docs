@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands for Zooming and Panning in Maps control
-description: How to perform zooming and Panning in Map contol?
+title: Commands for Zooming and Panning in UWP Map control | Syncfusion
+description: Learn here all about Commands for Zooming and Panning support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: Maps
 documentation: ug
 ---
 
-# Commands for Zooming and Panning
+# Commands for Zooming and Panning in UWP Map (SfMaps)
 
 The Map control contains the following commands:
 

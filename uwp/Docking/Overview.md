@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfDockingManager control | UWP | Syncfusion
-description: SfDockingManager control provides an interface to create Visual Studio-like dockable windows, and provides floating panels, autohide, and tabbed documents.
+title: About UWP Docking control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Overview
+# UWP Docking (SfDockingManager) Overview
 
 The `SfDockingManager` control implements an architecture, that allows child controls to be docked at any part of a page as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the page. These windows can also be floated, tabbed, and auto hidden at runtime.
 

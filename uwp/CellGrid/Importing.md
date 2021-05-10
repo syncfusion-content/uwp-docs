@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Importing
-description: How to import the data from excel in SfCellGrid
+title: Importing in UWP CellGrid control | Syncfusion
+description: Learn here all about Importing support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
 
-# Import
+# Importing in UWP CellGrid (SfCellGrid)
 
 The `ExcelImportExtension` class is used to import entire cells from the Excel sheet to SfCellGrid. 
 

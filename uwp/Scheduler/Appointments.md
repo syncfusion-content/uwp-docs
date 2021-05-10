@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Populating Appointments in Syncfusion SfSchedule control for UWP
-description: Learn how to schedule the appointment and customize different kinds of Appointments in SfSchedule control.
+title: Appointments in UWP Scheduler control | Syncfusion
+description: Learn here all about Appointments support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: uwp
 control: SfSchedule
 documentation: ug

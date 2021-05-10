@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance
-description: The section describes about the visual customization of Gantt chart tasks.
+title: Appearance in UWP Gantt control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion UWP Gantt (SfGantt) control and more.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Appearance
+# Appearance in UWP Gantt (SfGantt)
 
 The Gantt control provides options to customize the look and feel of the task visual in the Gantt chart. 
 

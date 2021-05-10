@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items of SfCarousel control for UWP
-description: Populating Items of SfCarousel control for UWP
+title: Populating Items in UWP Carousel control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion UWP Carousel (SfCarousel) control and more.
 platform: uwp
 control: SfCarousel
 documentation: ug
 ---
 
-# Populating Items
+# Populating Items in UWP Carousel (SfCarousel)
 
 `SfCarouselItem` can be added as items of `SfCarousel`. Items of `SfCarousel` can be added though `Items` or `ItemSource` property.
 

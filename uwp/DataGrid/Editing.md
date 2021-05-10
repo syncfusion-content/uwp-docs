@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in WPF DataGrid control | Syncfusion
-description: Learn about editing support to edit the cell values with an intuitive editors in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
+title: Editing in UWP DataGrid control | Syncfusion
+description: Learn here all about Editing support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

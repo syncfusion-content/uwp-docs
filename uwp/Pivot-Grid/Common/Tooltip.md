@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip | SfPivotGrid | UWP | Syncfusion
-description: Tooltip
+title: Tooltip in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in UWP Pivot Grid (SfPivotGrid)
 
 The SfPivotGrid additionally displays the cell information within a tooltip when the mouse pointer is moved over header cells or value cells.
 
@@ -37,7 +37,7 @@ Me.PivotGrid1.ShowHeaderCellsToolTip = True
 
 {% endtabs %}
 
-![](Tooltip_images/ToolTip_RelationalHeader.png)
+![ToolTip_RelationalHeader](Tooltip_images/ToolTip_RelationalHeader.png)
 
 ## Value cell tooltip
 
@@ -65,7 +65,7 @@ Me.PivotGrid1.ShowValueCellToolTip = True
 
 {% endtabs %}
 
-![](Tooltip_images/ToolTip_RelationalValueCell.png)
+![ToolTip_RelationalValueCell](Tooltip_images/ToolTip_RelationalValueCell.png)
 
 A demo sample is available in the following location.
 

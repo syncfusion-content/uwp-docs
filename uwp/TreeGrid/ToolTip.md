@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip of SfTreeGrid.
-description: ToolTip of SfTreeGrid | SfTreeGrid | ToolTip 
+title: ToolTip in UWP TreeGrid control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
@@ -54,7 +54,7 @@ this.treeGrid.Columns["LastName"].ShowToolTip = true;
 **NOTE**
 It has higher priority than [SfTreeGrid.ShowToolTip](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowToolTip "")
 
-![](ToolTip_images/ToolTip_img1.png)
+![ToolTip_img1](ToolTip_images/ToolTip_img1.png)
 
 ### Header tooltip
 
@@ -77,7 +77,7 @@ this.treeGrid.Columns["FirstName"].ShowHeaderToolTip = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Tooltip_images/ToolTip_img2.png)
+![ToolTip_img2](Tooltip_images/ToolTip_img2.png)
 
 ### Tooltip customization
 
@@ -124,7 +124,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](ToolTip_images/ToolTip_img3.png)
+![ToolTip_img3](ToolTip_images/ToolTip_img3.png)
 
 You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateDemo298673222.zip# "").
 
@@ -162,10 +162,10 @@ Different tooltip templates can be loaded conditionally in same column based on 
 {% endtabs %}
 
 The following image shows the DefaultTemplate applied through ToolTipTemplateSelector.
-![](ToolTip_images/ToolTip_img4.png)
+![ToolTip_img4](ToolTip_images/ToolTip_img4.png)
 
 The following image shows the AlternateTemplate applied through  ToolTipTemplateSelector.
-![](ToolTip_images/ToolTip_img5.png)
+![ToolTip_img5](ToolTip_images/ToolTip_img5.png)
 
 You can get the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ToolTipTemplateSelectorDemo-651257281.zip# "").
 

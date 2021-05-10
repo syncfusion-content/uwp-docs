@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize Display on SfCalendar control for UWP
-description: Customize Display on SfCalendar control for UWP
+title: Customize Display in UWP Calendar control | Syncfusion
+description: Learn here all about Customize Display support in Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Customize Display
+# Customize Display in UWP Calendar (SfCalendar)
 
 `SfCalendar` allows to customize the first day of the week and Day name display mode.
 
@@ -42,7 +42,7 @@ calendar.FirstDayofWeek = System.DayOfWeek.Thursday
 {% endtabs %}
 
 
-![](SfCalendar-images/SfCalendar-img13.jpeg)
+![SfCalendar-img13](SfCalendar-images/SfCalendar-img13.jpeg)
 
 
 ## Customize Day Name Display Mode
@@ -78,6 +78,6 @@ calendar.DayNameDisplayMode = Syncfusion.UI.Xaml.Controls.Input.DayNameDisplayMo
 {% endtabs %}
 
 
-![](SfCalendar-images/SfCalendar-img14.jpeg)
+![SfCalendar-img14](SfCalendar-images/SfCalendar-img14.jpeg)
 
 

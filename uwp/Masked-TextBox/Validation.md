@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Validation| SfMaskedEdit | UWP | Syncfusion
-description: validation
+title: Validation in UWP Masked TextBox control | Syncfusion
+description: Learn here all about Validation support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# ValidationMode
+# Validation in UWP Masked TextBox (SfMaskedEdit)
 
 Input validation happens based on the value of the `ValidationMode` property. The enum values of this property are 
 

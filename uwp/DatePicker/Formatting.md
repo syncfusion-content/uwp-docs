@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with  Formatting options of SfDatePicker control for UWP
-description: Deals with  Formatting options of SfDatePicker control for UWP
+title: Formatting in UWP DatePicker control | Syncfusion
+description: Learn here all about Formatting support in Syncfusion UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# Formatting
+# Formatting in UWP DatePicker (SfDatePicker)
 
 The SfDatePicker control allows the user to format the display text in various ways.
 
@@ -56,7 +56,7 @@ The following code sample shows how to create a date picker with a [month day pa
 
 {% endtabs %}
 
-![](Features_images/Features_img1.png)
+![Features_img1](Features_images/Features_img1.png)
 
 ## Specifying format for the DateSelector
 
@@ -93,7 +93,7 @@ sfdatePicker.SelectorFormatString = "M"
 
 {% endtabs %}
 
-![](Features_images/Features_img2.png)
+![Features_img2](Features_images/Features_img2.png)
 
 
 N> A detailed explanation of standard date time formatting is available [here](http://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.71).aspx). The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.

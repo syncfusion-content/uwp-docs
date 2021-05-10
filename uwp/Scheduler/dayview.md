@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize the DayView in Syncfusion SfSchedule control for UWP
-description: Learn how to Customize the schedule DayView, its appearance and appointments in SfSchedule control for UWP
+title: Day View in UWP Scheduler control | Syncfusion
+description: Learn here all about Day View support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: UWP
 control: SfSchedule
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# DayView in UWP Scheduler (SfSchedule)
+# Day View in UWP Scheduler (SfSchedule)
 
 DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 

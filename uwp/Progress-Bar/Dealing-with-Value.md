@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Value
-description: Dealing with Value for Syncfusion SfProgressBar control for UWP
+title: Dealing with Value in UWP Progress Bar control | Syncfusion
+description: Learn here all about Dealing with Value support in Syncfusion UWP Progress Bar (SfProgressBar) control and more.
 platform: UWP
 control: SfProgressBar
 documentation: ug
 --- 
 
-# Dealing with Value
+# Dealing with Value in UWP Progress Bar (SfProgressBar)
 
 ## Setting Progress Value
 
@@ -33,7 +33,7 @@ progressBar.Value = 35.0;
 
 {% endtabs %}
 
-![](Dealing-with-Value-images/Dealing-with-Value-img1.jpeg)
+![Dealing-with-Value-img1](Dealing-with-Value-images/Dealing-with-Value-img1.jpeg)
 
 
 ## Setting Progress Range 
@@ -64,7 +64,7 @@ progressBar.Value = 50.0;
 
 {% endtabs %}
 
-![](Dealing-with-Value-images/Dealing-with-Value-img2.jpeg)
+![Dealing-with-Value-img2](Dealing-with-Value-images/Dealing-with-Value-img2.jpeg)
 
 {% tabs %}
 
@@ -90,7 +90,7 @@ progressBar.Value = 150.0;
 
 {% endtabs %}
 
-![](Dealing-with-Value-images/Dealing-with-Value-img3.jpeg)
+![Dealing-with-Value-img3](Dealing-with-Value-images/Dealing-with-Value-img3.jpeg)
 
 
 ## Retrieving Progress Percentage

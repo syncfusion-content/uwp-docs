@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP TreeGrid | SfTreeGrid | Syncfusion
-description: Learn here about getting started with Syncfusion Essential UWP TreeGrid (SfTreeGrid) control and more details.
+title: Getting Started with UWP TreeGrid control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

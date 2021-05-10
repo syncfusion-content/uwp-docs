@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Deals with the DropDown Customization of the SfDatePicker control for UWP
-description: Explains about DropDown Customization of the SfDatePicker control for UWP
+title: Customizing DropDown in UWP DatePicker control | Syncfusion
+description: Learn here all about Customizing DropDown support in Syncfusion UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
 control:  SfDatePicker
 documentation: ug
 ---
-# Customizing DropDown
+# Customizing DropDown in UWP DatePicker (SfDatePicker)
 
 ## DropDown height
 
@@ -38,7 +38,7 @@ sfdatePicker.DropDownHeight = 200
 
 {% endtabs %}
 
-![](Customizing-DropDown_images/Customizing-DropDown_img2.png)
+![Customizing-DropDown_img2](Customizing-DropDown_images/Customizing-DropDown_img2.png)
 
 
 ## IsDropDownOpen
@@ -75,4 +75,4 @@ DropDownButton visibility can be changed by using the ShowDropDownButton propert
 
 {% endtabs %}
 
-![](Customizing-DropDown_images/Customizing-DropDown_img3.png)
+![Customizing-DropDown_img3](Customizing-DropDown_images/Customizing-DropDown_img3.png)

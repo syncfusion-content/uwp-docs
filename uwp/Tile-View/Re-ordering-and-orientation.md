@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Re-ordering and orientation of SfTileView control for UWP
-description: Re-ordering and orientation of SfTileView control for UWP
+title: Re-ordering and Orientation in UWP Tile View control | Syncfusion
+description: Learn here all about Re-ordering and Orientation support in Syncfusion UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Re-ordering and Orientation
+# Re-ordering and Orientation in UWP Tile View (SfTileView)
 
 ## Reordering through touch
 
@@ -53,7 +53,7 @@ documentation: ug
 
 {% endtabs %}
 
-![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img1.jpeg)
+![Re-ordering-and-orientation-img1](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img1.jpeg)
 
 ## Orientation
 
@@ -99,7 +99,7 @@ tileView.Orientation = Orientation.Horizontal
 
 {% endtabs %}
 
-![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img2.jpeg)
+![Re-ordering-and-orientation-img2](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img2.jpeg)
 
 **Vertical**
 
@@ -139,7 +139,7 @@ tileView.Orientation = Orientation.Vertical
 
 {% endtabs %}
 
-![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img3.jpeg)
+![Re-ordering-and-orientation-img3](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img3.jpeg)
 
 ### Orientation for MinimizedTileViewItems
 
@@ -238,7 +238,7 @@ tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.Minimize
 
 {% endtabs %}
 
-![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img4.jpeg)
+![Re-ordering-and-orientation-img4](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img4.jpeg)
 
 **Bottom**
 
@@ -272,7 +272,7 @@ tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.Minimize
 
 {% endtabs %}
 
-![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img5.jpeg)
+![Re-ordering-and-orientation-img5](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img5.jpeg)
 
 **Left**
 
@@ -306,7 +306,7 @@ tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.Minimize
 
 {% endtabs %}
 
-![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img6.jpeg)
+![Re-ordering-and-orientation-img6](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img6.jpeg)
 
 **Right**
 
@@ -340,6 +340,6 @@ tileView.MinimizedItemsOrientation = Syncfusion.UI.Xaml.Controls.Layout.Minimize
 
 {% endtabs %}
 
-![](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img7.jpeg)
+![Re-ordering-and-orientation-img7](Re-ordering-and-orientation-images/Re-ordering-and-orientation-img7.jpeg)
 
 

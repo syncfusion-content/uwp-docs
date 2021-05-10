@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfCellGrid 
-description: Overview and key features in SfCellGrid
+title: About UWP CellGrid control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
 
-# Overview
+# UWP CellGrid (SfCellGrid) Overview
 
 The cell-oriented Grid Control is a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data. It can be used in a virtual manner where the data is provided on demand in real time. 
 

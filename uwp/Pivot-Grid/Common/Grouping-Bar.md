@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping Bar | SfPivotGrid | UWP | Syncfusion
-description: Grouping Bar
+title: Grouping Bar in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Grouping Bar support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Grouping Bar
+# Grouping Bar in UWP Pivot Grid (SfPivotGrid)
 
 Grouping bar allows you to slice and dice the fields between column, row, value, and filter areas. It allows you to add, rearrange, or remove the fields to show the exact data required in the SfPivotGrid. The following are the different kinds of grouping bar available in the SfPivotGrid.
 
@@ -40,7 +40,7 @@ Me.PivotGrid1.ShowGroupingBar = True
 
 {% endtabs %}
 
-![](Grouping-Bar_images/grouping-bar.png)
+![grouping-bar](Grouping-Bar_images/grouping-bar.png)
 
 ## Grouping bar operations
 
@@ -81,7 +81,7 @@ Me.PivotGrid1.EnableGroupingBarFiltering = False
 
 {% endtabs %}
 
-![](Grouping-Bar_images/grouping-bar-without-filter-icon.png)
+![grouping-bar-without-filter-icon](Grouping-Bar_images/grouping-bar-without-filter-icon.png)
 
 **Sorting operation**
 
@@ -111,7 +111,7 @@ Me.PivotGrid1.EnableGroupingBarSorting = False
 
 The following screenshot shows the SfPivotGrid without sorting icons.
 
-![](Grouping-Bar_images/grouping-bar-without-sort-icon.png)
+![grouping-bar-without-sort-icon](Grouping-Bar_images/grouping-bar-without-sort-icon.png)
 
 **Removing operation**
 
@@ -141,7 +141,7 @@ Me.PivotGrid1.EnableGroupingBarRemoving = False
 
 {% endtabs %}
 
-![](Grouping-Bar_images/grouping-bar-without-remove-icon.png)
+![grouping-bar-without-remove-icon](Grouping-Bar_images/grouping-bar-without-remove-icon.png)
 
 ## Grouping bar customization
 
@@ -173,7 +173,7 @@ Me.PivotGrid1.GroupingBarBackground = New SolidColorBrush(Colors.BurlyWood)
 
 {% endtabs %}
 
-![](Grouping-Bar_images/customized-groupingbar-background.png)
+![customized-groupingbar-background](Grouping-Bar_images/customized-groupingbar-background.png)
 
 **Grouping bar item background**
 
@@ -203,7 +203,7 @@ Me.PivotGrid1.GroupingBarItemBackground = New SolidColorBrush(Colors.BurlyWood)
 
 {% endtabs %}
 
-![](Grouping-Bar_Images/customized-grouping-bar-item-background.png)
+![customized-grouping-bar-item-background](Grouping-Bar_Images/customized-grouping-bar-item-background.png)
 
 ## Disabling specific grouping bar
 
@@ -235,7 +235,7 @@ Me.PivotGrid1.EnableRowHeaderArea = False
 
 {% endtabs %}
 
-![](Grouping-Bar_images/customized-row-grouping-bar-disabled.png)
+![customized-row-grouping-bar-disabled](Grouping-Bar_images/customized-row-grouping-bar-disabled.png)
 
 **Disabling column grouping bar**
 
@@ -263,7 +263,7 @@ Me.PivotGrid1.EnableColumnHeaderArea = False
 
 {% endtabs %}
 
-![](Grouping-Bar_images/customized-column-grouping-bar-disabled.png)
+![customized-column-grouping-bar-disabled](Grouping-Bar_images/customized-column-grouping-bar-disabled.png)
 
 **Disabling value grouping bar**
 
@@ -291,7 +291,7 @@ Me.PivotGrid1.EnableValueHeaderArea = False
 
 {% endtabs %}
 
-![](Grouping-Bar_images/customized-value-grouping-bar-disabled.png)
+![customized-value-grouping-bar-disabled](Grouping-Bar_images/customized-value-grouping-bar-disabled.png)
 
 **Disabling filter grouping bar**
 
@@ -319,7 +319,7 @@ Me.PivotGrid1.EnableFilterHeaderArea = False
 
 {% endtabs %}
 
-![](Grouping-Bar_images/customized-filter-grouping-bar-disabled.png)
+![customized-filter-grouping-bar-disabled](Grouping-Bar_images/customized-filter-grouping-bar-disabled.png)
 
 A demo sample is available in the following location.
 

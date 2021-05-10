@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Displaying Progress Text
-description: Displaying Progress Text for Syncfusion SfProgressBar control for UWP
+title: Displaying Progress Text in UWP Progress Bar control | Syncfusion
+description: Learn here all about Displaying Progress Text support in Syncfusion UWP Progress Bar (SfProgressBar) control and more.
 platform: UWP
 control: SfProgressBar
 documentation: ug
 --- 
 
-# Displaying Progress Text
+# Displaying Progress Text in UWP Progress Bar (SfProgressBar)
 
 `SfProgressBar` can display either `Value` or `Percentage` or `Custom Text` as display content using the property `DisplayContentMode`. The values of `DisplayContentMode` are
 
@@ -40,7 +40,7 @@ progressBar.DisplayContentMode = DisplayContentMode.Value;
 
 {% endtabs %}
 
-![](Displaying-Progress-Text-images/Displaying-Progress-Text-img1.jpeg)
+![Displaying-Progress-Text-img1](Displaying-Progress-Text-images/Displaying-Progress-Text-img1.jpeg)
 
 
 The above code displays the Value as display content.
@@ -69,7 +69,7 @@ progressBar.DisplayContentMode = DisplayContentMode.Percentage;
 
 {% endtabs %}
 
-![](Displaying-Progress-Text-images/Displaying-Progress-Text-img2.jpeg)
+![Displaying-Progress-Text-img2](Displaying-Progress-Text-images/Displaying-Progress-Text-img2.jpeg)
 
 
 The above code displays the computed Percentage value as display content.
@@ -98,7 +98,7 @@ progressBar.DisplayContentMode = DisplayContentMode.Custom;
 
 {% endtabs %}
 
-![](Displaying-Progress-Text-images/Displaying-Progress-Text-img3.jpeg)
+![Displaying-Progress-Text-img3](Displaying-Progress-Text-images/Displaying-Progress-Text-img3.jpeg)
 
 
 The above code displays the custom content as display content.
@@ -127,7 +127,7 @@ progressBar.DisplayContentMode = DisplayContentMode.None;
 
 {% endtabs %}
 
-![](Displaying-Progress-Text-images/Displaying-Progress-Text-img4.jpeg)
+![Displaying-Progress-Text-img4](Displaying-Progress-Text-images/Displaying-Progress-Text-img4.jpeg)
 
 
 The above code displays nothing in display content.
@@ -158,6 +158,6 @@ The above code displays nothing in display content.
 
 {% endtabs %}
 
-![](Displaying-Progress-Text-images/Displaying-Progress-Text-img5.jpeg)
+![Displaying-Progress-Text-img5](Displaying-Progress-Text-images/Displaying-Progress-Text-img5.jpeg)
 
 

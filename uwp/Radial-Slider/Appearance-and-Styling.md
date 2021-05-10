@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling of SfRadialSlider control for UWP
-description: Appearance and Styling of SfRadialSlider control for UWP
+title: Appearance and Styling in UWP Radial Slider control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Appearance and Styling 
+# Appearance and Styling in UWP Radial Slider (SfRadialSlider)
 
 ## Inner Rim 
 
@@ -67,7 +67,7 @@ radialSlider.InnerRimStrokeThickness = 4
 
 {% endtabs %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img6.png)
+![Concepts--and-Features_img6](Concepts--and-Features_images/Concepts--and-Features_img6.png)
 
 ## Outer Rim 
 
@@ -128,7 +128,7 @@ radialSlider.OuterRimStrokeThickness = 4;
 
 {% endtabs %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img7.png)
+![Concepts--and-Features_img7](Concepts--and-Features_images/Concepts--and-Features_img7.png)
 
 ## Ticks
 
@@ -156,7 +156,7 @@ Ticks can be customized using the TickTemplate property.
 
 {% endhighlight %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img8.png)
+![Concepts--and-Features_img8](Concepts--and-Features_images/Concepts--and-Features_img8.png)
 
 ### Tick Radius Factor
 
@@ -188,7 +188,7 @@ radialSlider.TickRadiusFactor = 0.25
 
 {% endtabs %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img9.png)
+![Concepts--and-Features_img9](Concepts--and-Features_images/Concepts--and-Features_img9.png)
 
 ### Tick Visibility
 
@@ -220,7 +220,7 @@ radialSlider.TickVisibility = Visibility.Collapsed
 
 {% endtabs %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img10.png)
+![Concepts--and-Features_img10](Concepts--and-Features_images/Concepts--and-Features_img10.png)
 
 ## Labels
 
@@ -248,13 +248,13 @@ The LabelTemplate property can be used to customize the label object.
 
 {% endhighlight %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img11.png)
+![Concepts--and-Features_img11](Concepts--and-Features_images/Concepts--and-Features_img11.png)
 
 ### Label Radius Factor
 
 LabelRadiusFactor property decides the radius of the labels from the total radius available to render the SfRadialSlider. 
 
-![](Concepts--and-Features_images/Concepts--and-Features_img12.png)
+![Concepts--and-Features_img12](Concepts--and-Features_images/Concepts--and-Features_img12.png)
 
 {% tabs %}
 
@@ -312,7 +312,7 @@ Visibility of ticks can be controlled by LabelVisibility property.
 
 {% endtabs %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img13.png)
+![Concepts--and-Features_img13](Concepts--and-Features_images/Concepts--and-Features_img13.png)
 
 ## Pointer
 The Pointer that is used for the select the value by dragging in circular track can be customized with the following properties. 
@@ -347,7 +347,7 @@ The PointerRadiusFactor property decides the radius of the Pointer from the tota
 
 {% endtabs %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img14.png)
+![Concepts--and-Features_img14](Concepts--and-Features_images/Concepts--and-Features_img14.png)
 
 ### Pointer Style
 
@@ -385,7 +385,7 @@ Style of the Pointer can be customized using the PointerStyle property.
 
 {% endhighlight %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img15.png)
+![Concepts--and-Features_img15](Concepts--and-Features_images/Concepts--and-Features_img15.png)
 
 ### Preview Pointer Style
 
@@ -427,7 +427,7 @@ The Preview Pointer that appears when hovering over the SfRadialSlider can be cu
 
 {% endhighlight %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img16.png)
+![Concepts--and-Features_img16](Concepts--and-Features_images/Concepts--and-Features_img16.png)
 
 
 

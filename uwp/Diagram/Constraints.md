@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Enable/Disable the optional features.
-description: How to enable/disable the optional features?
+title: Constraints in UWP Diagram control | Syncfusion
+description: Learn here all about Constraints support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Constraints
+# Constraints in UWP Diagram (SfDiagram)
 
 `Constraints` are used to enable/disable certain behaviors of the diagram, Node and Connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).

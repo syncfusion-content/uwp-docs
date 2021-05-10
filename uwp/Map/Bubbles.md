@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubbles in SfMaps control
-description: How to add Bubbles to a Map control?
+title: Bubbles in UWP Map control | Syncfusion
+description: Learn here all about Bubbles support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Bubbles
+# Bubbles in UWP Map (SfMaps)
 
 `Bubbles` in the Maps control represent the under-bound data values of the map. Bubbles are scattered throughout map shapes that contain bound values.
 
@@ -73,7 +73,7 @@ To add bubbles to a map, `BubbleMarkerSetting` has to be added to the `ShapeFile
 
 {% endhighlight  %}
 
-![](Features_images/Features_img2.png)
+![Features_img2](Features_images/Features_img2.png)
 
 ## Customizing Bubble Symbol
 
@@ -133,7 +133,7 @@ Gets or sets the template to customize the bubble.>  BubbleType should be set as
 
 {% endhighlight %}
 
-![](Features_images/Features_img3.png)
+![Features_img3](Features_images/Features_img3.png)
 
 ## Range Color Mapping
 
@@ -206,4 +206,4 @@ When the under-bound value is under any of the given sorted range or above the s
 
 {% endhighlight  %}
 
-![](Features_images/Features_img4.png)
+![Features_img4](Features_images/Features_img4.png)

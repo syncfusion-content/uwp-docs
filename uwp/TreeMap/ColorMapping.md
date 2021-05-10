@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ColorMapping in TreeMap control 
-description: ColorMapping
+title: ColorMapping in UWP TreeMap control | Syncfusion
+description: Learn here all about ColorMapping support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
 platform: UWP
 control: TreeMap
 documentation: ug
 ---
 
-# ColorMapping
+# ColorMapping in UWP TreeMap (SfTreeMap)
 
 ColorMapping is categorized into four different types such as,
 
@@ -59,7 +59,7 @@ Code Sample:
 
 {% endhighlight %}
 
-![](Features_images/Features_img9.png)
+![Features_img9](Features_images/Features_img9.png)
 
 
 
@@ -125,7 +125,7 @@ Code Sample:
 {% endhighlight %}
 
 
-![](Features_images/Features_img10.png)
+![Features_img10](Features_images/Features_img10.png)
 
 
 
@@ -174,7 +174,7 @@ Code Sample:
 
 {% endhighlight %}
 
-![](Features_images/Features_img11.png)
+![Features_img11](Features_images/Features_img11.png)
 
 
 Leaf nodes colored by using DesaturationColorMapping
@@ -239,7 +239,7 @@ Code Sample:
 
 {% endhighlight %}
 
-![](Features_images/Features_img12.png)
+![Features_img12](Features_images/Features_img12.png)
 
 
 

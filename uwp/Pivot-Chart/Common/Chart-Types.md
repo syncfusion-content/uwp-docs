@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Types| SfPivotChart | UWP | Syncfusion
-description: Chart Types
+title: Chart Types in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Chart Types support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Chart types
+# Chart Types in UWP Pivot Chart (SfPivotChart)
 
 The SfPivotChart offers different types of charts ranging from column chart to pie chart. Based on your requirements and specifications, any type of chart can be used for data visualization.
 
@@ -44,7 +44,7 @@ PivotChart1.ChartType = PivotChartType.Column
 
 {% endtabs %}
 
-![](Chart-Types_images/column.png)
+![column](Chart-Types_images/column.png)
 
 ### Stacking column chart
 
@@ -77,7 +77,7 @@ PivotChart1.ChartType = PivotChartType.StackingColumn
 
 {% endtabs %}
 
-![](Chart-Types_images/stackingColumn.png)
+![stackingColumn](Chart-Types_images/stackingColumn.png)
 
 ### Stacking column 100 chart
 
@@ -110,7 +110,7 @@ PivotChart1.ChartType = PivotChartType.StackingColumn100
 
 {% endtabs %}
 
-![](Chart-Types_images/stackingColumn100.png)
+![stackingColumn100](Chart-Types_images/stackingColumn100.png)
 
 ## Bar charts
 
@@ -145,7 +145,7 @@ PivotChart1.ChartType = PivotChartType.Bar
 
 {% endtabs %}
 
-![](Chart-Types_images/bar.png)
+![bar](Chart-Types_images/bar.png)
 
 ### Stacking bar chart
 
@@ -178,7 +178,7 @@ PivotChart1.ChartType = PivotChartType.StackingBar
 
 {% endtabs %}
 
-![](Chart-Types_images/stackingBar.png)
+![stackingBar](Chart-Types_images/stackingBar.png)
 
 ### Stacking bar 100 chart
 
@@ -211,7 +211,7 @@ PivotChart1.ChartType = PivotChartType.StackingBar100
 
 {% endtabs %}
 
-![](Chart-Types_images/stackingbar100.png)
+![stackingbar100](Chart-Types_images/stackingbar100.png)
 
 ## Area charts
 
@@ -246,7 +246,7 @@ PivotChart1.ChartType = PivotChartType.Area
 
 {% endtabs %}
 
-![](Chart-Types_images/area.png)
+![area](Chart-Types_images/area.png)
 
 ### Stacking area chart
 
@@ -279,7 +279,7 @@ PivotChart1.ChartType = PivotChartType.StackingArea
 
 {% endtabs %}
 
-![](Chart-Types_images/stackingArea.png)
+![stackingArea](Chart-Types_images/stackingArea.png)
 
 ### Spline area chart
 
@@ -312,7 +312,7 @@ PivotChart1.ChartType = PivotChartType.SplineArea
 
 {% endtabs %}
 
-![](Chart-Types_images/splineArea.png)
+![splineArea](Chart-Types_images/splineArea.png)
 
 ### Step area chart
 
@@ -345,7 +345,7 @@ PivotChart1.ChartType = PivotChartType.StepArea
 
 {% endtabs %}
 
-![](Chart-Types_images/stepArea.png)
+![stepArea](Chart-Types_images/stepArea.png)
 
 ## Line charts
 
@@ -380,7 +380,7 @@ PivotChart1.ChartType = PivotChartType.Line
 
 {% endtabs %}
 
-![](Chart-Types_images/line.png)
+![line](Chart-Types_images/line.png)
 
 ### Spline chart
 
@@ -413,7 +413,7 @@ PivotChart1.ChartType = PivotChartType.Spline
 
 {% endtabs %}
 
-![](Chart-Types_images/spline.png)
+![spline](Chart-Types_images/spline.png)
 
 ### Step line chart
 
@@ -446,7 +446,7 @@ PivotChart1.ChartType = PivotChartType.StepLine
 
 {% endtabs %}
 
-![](Chart-Types_images/stepLine.png)
+![stepLine](Chart-Types_images/stepLine.png)
 
 ## Scatter chart
 
@@ -483,7 +483,7 @@ PivotChart1.ScatterHeight = 20
 
 {% endtabs %}
 
-![](Chart-Types_images/scatter_customScatterSize.png)
+![scatter_customScatterSize](Chart-Types_images/scatter_customScatterSize.png)
 
 ## Pie chart
 
@@ -516,7 +516,7 @@ PivotChart1.ChartType = PivotChartType.Pie
 
 {% endtabs %}
 
-![](Chart-Types_images/pie.png)
+![pie](Chart-Types_images/pie.png)
 
 N> Pie chart should not be used for comparison analysis of large data points, because it is harder for people to estimate angles rather than distance.
 
@@ -553,7 +553,7 @@ PivotChart1.ChartType = PivotChartType.FastBarBitmap
 
 {% endtabs %}
 
-![](Chart-Types_images/fastBarBitmap.png)
+![fastBarBitmap](Chart-Types_images/fastBarBitmap.png)
 
 ### Fast column bitmap chart
 
@@ -586,7 +586,7 @@ PivotChart1.ChartType = PivotChartType.FastColumnBitmap
 
 {% endtabs %}
 
-![](Chart-Types_images/fastColumnBitmap.png)
+![fastColumnBitmap](Chart-Types_images/fastColumnBitmap.png)
 
 ### Fast line chart
 
@@ -619,7 +619,7 @@ PivotChart1.ChartType = PivotChartType.FastLine
 
 {% endtabs %}
 
-![](Chart-Types_images/fastLine.png)
+![fastLine](Chart-Types_images/fastLine.png)
 
 ### Fast line bitmap chart
 
@@ -652,7 +652,7 @@ PivotChart1.ChartType = PivotChartType.FastLineBitmap
 
 {% endtabs %}
 
-![](Chart-Types_images/fastLineBitmap.png)
+![fastLineBitmap](Chart-Types_images/fastLineBitmap.png)
 
 As this chart is rendered using bitmap, there might be some jagged lines at the edges and it can be reduced by enabling the `EnableAntiAliasing` property as follows.
 
@@ -683,7 +683,7 @@ PivotChart1.EnableAntiAliasing = True
 
 {% endtabs %}
 
-![](Chart-Types_images/fastLineBitmap_antiAlaisingEnabled.png)
+![fastLineBitmap_antiAlaisingEnabled](Chart-Types_images/fastLineBitmap_antiAlaisingEnabled.png)
 
 ### Fast scatter bitmap chart
 
@@ -714,7 +714,7 @@ PivotChart1.ChartType = PivotChartType.FastScatterBitmap
 
 {% endtabs %}
 
-![](Chart-Types_images/fastScatterBitmap.png)
+![fastScatterBitmap](Chart-Types_images/fastScatterBitmap.png)
 
 The size of the scatter points can be customized with the help of `ScatterWidth` and `ScatterHeight` properties as follows.
 
@@ -747,7 +747,7 @@ PivotChart1.ScatterHeight = 7
 
 {% endtabs %}
 
-![](Chart-Types_images/fastScatterBitmap_customScatterSize.png)
+![fastScatterBitmap_customScatterSize](Chart-Types_images/fastScatterBitmap_customScatterSize.png)
 
 ### Fast stacking column bitmap chart
 
@@ -778,7 +778,7 @@ PivotChart1.ChartType = PivotChartType.FastStackingColumnBitmap
 
 {% endtabs %}
 
-![](Chart-Types_images/fastStackingColumnBitmap.png)
+![fastStackingColumnBitmap](Chart-Types_images/fastStackingColumnBitmap.png)
 
 ### Fast step line bitmap chart
 
@@ -809,7 +809,7 @@ PivotChart1.ChartType = PivotChartType.FastStepLineBitmap
 
 {% endtabs %}
 
-![](Chart-Types_images/fastStepLineBitmap.png)
+![fastStepLineBitmap](Chart-Types_images/fastStepLineBitmap.png)
 
 As fast step line bitmap chart is rendered using bitmap, some jagged lines can be occurred at the edges and it can be reduced by enabling the  `EnableAntiAliasing` property as follows.
 
@@ -840,7 +840,7 @@ PivotChart1.EnableAntiAliasing = True
 
 {% endtabs %}
 
-![](Chart-Types_images/fastStepLineBitmap_antiAlaisingEnabled.png)
+![fastStepLineBitmap_antiAlaisingEnabled](Chart-Types_images/fastStepLineBitmap_antiAlaisingEnabled.png)
 
 A demo sample is available in the following location.
 

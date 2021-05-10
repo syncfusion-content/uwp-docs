@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | PDF viewer | UWP | Syncfusion
-description: Getting started section will guide through how to use the PDF viewer UWP control in the UWP application, step by step in MVVM pattern.
+title: Getting Started with UWP Pdf Viewer control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Pdf Viewer (SfPdfViewer)
 This section explains about the assemblies required for the deployment of SfPdfViewer and how to create simple application using the SfPdfViewer control.
 
 ## Required Assemblies

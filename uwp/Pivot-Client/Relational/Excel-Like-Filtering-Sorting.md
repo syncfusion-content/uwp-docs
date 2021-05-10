@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Excel Like Filtering and Sorting | SfPivotClient | UWP | Syncfusion
-description: Excel Like Filtering and Sorting
+title: Excel-Like Filtering and Sorting in UWP Pivot Client control | Syncfusion
+description: Learn here all about Excel-Like Filtering and Sorting support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Excel-Like Filtering and Sorting
+# Excel-Like Filtering and Sorting in UWP Pivot Client (SfPivotClient)
 
 The SfPivotClient control supports Excel-like filtering and sorting that is applied to a pivot item. You can enable or disable the Excel-like sorting and filtering support in the SfPivotClient by setting the `AllowMultiFunctionalSortFilter` property.
 
@@ -35,7 +35,7 @@ Me.pivotClient.AllowMultiFunctionalSortFilter = True
 
 {% endtabs %}
 
-![](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image1.png)
+![Excel-like-Filtering-image1](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image1.png)
 
 ## Multi-functional features
 
@@ -74,11 +74,11 @@ This allows you to filter the SfPivotClient based on labels of the pivot item fi
 * Between.
 * Not Between.
 
-![](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image4.png)
+![Excel-like-Filtering-image4](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image4.png)
 
 _Label filter dialog for filtering "Canada" in Country_
 
-![](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image5.png)
+![Excel-like-Filtering-image5](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image5.png)
 
 _SfPivotClient applied with label filter_
 
@@ -96,10 +96,10 @@ This allows you to filter the SfPivotClient based on values of the pivot item fi
 * Not Between.
 * Top 10.
 
-![](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image6.png)
+![Excel-like-Filtering-image6](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image6.png)
 
 _Value filter dialog for filtering "France" using its Quantity value "398"_
 
-![](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image7.png)
+![Excel-like-Filtering-image7](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image7.png)
 
 _SfPivotClient applied with value filter_

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Export To PDF in SfDataGrid.
-description: How to export the SfDataGrid to pdf.
+title: Export To PDF in UWP DataGrid control | Syncfusion
+description: Learn here all about Export To PDF support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Export to PDF
+# Export To PDF in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and details View while exporting.
 
@@ -36,9 +36,9 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img1.png)
+![Export-To-PDF_img1](Export-To-PDF_images/Export-To-PDF_img1.png)
 
-![](Export-To-PDF_images/Export-To-PDF_img2.png)
+![Export-To-PDF_img2](Export-To-PDF_images/Export-To-PDF_img2.png)
 
 ## Exporting Options
 
@@ -61,7 +61,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img3.png)
+![Export-To-PDF_img3](Export-To-PDF_images/Export-To-PDF_img3.png)
 
 ### Exporting with Auto Row height
 
@@ -80,7 +80,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img4.png)
+![Export-To-PDF_img4](Export-To-PDF_images/Export-To-PDF_img4.png)
 
 ### Exclude columns while exporting
 
@@ -101,7 +101,7 @@ if (storageFile != null)
 
 Here, the columns having `CustomerName` and `Country` as MappingName are excluded while exporting.
 
-![](Export-To-PDF_images/Export-To-PDF_img5.png)
+![Export-To-PDF_img5](Export-To-PDF_images/Export-To-PDF_img5.png)
 
 ### Export Format
 
@@ -120,7 +120,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img6.png)
+![Export-To-PDF_img6](Export-To-PDF_images/Export-To-PDF_img6.png)
 
 ### Column header on each page
 
@@ -173,7 +173,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img7.png)
+![Export-To-PDF_img7](Export-To-PDF_images/Export-To-PDF_img7.png)
 
 ### Exclude groups while exporting
 
@@ -192,7 +192,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img8.png)
+![Export-To-PDF_img8](Export-To-PDF_images/Export-To-PDF_img8.png)
 
 ### Exclude group Summaries while exporting
 
@@ -211,7 +211,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img9.png)
+![Export-To-PDF_img9](Export-To-PDF_images/Export-To-PDF_img9.png)
 
 ### Exclude table Summaries while exporting
 
@@ -230,7 +230,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img10.png)
+![Export-To-PDF_img10](Export-To-PDF_images/Export-To-PDF_img10.png)
 
 ### Exporting unbound rows
 
@@ -249,7 +249,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img11.png)
+![Export-To-PDF_img11](Export-To-PDF_images/Export-To-PDF_img11.png)
 
 ### Exporting stacked headers
 
@@ -268,7 +268,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img12.png)
+![Export-To-PDF_img12](Export-To-PDF_images/Export-To-PDF_img12.png)
 
 ### Exporting merged cells
 
@@ -287,7 +287,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img13.png)
+![Export-To-PDF_img13](Export-To-PDF_images/Export-To-PDF_img13.png)
 
 ## Setting Header and Footer
 
@@ -317,7 +317,7 @@ static void PdfHeaderFooterEventHandler(object sender, PdfHeaderFooterEventArgs 
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img14.png)
+![Export-To-PDF_img14](Export-To-PDF_images/Export-To-PDF_img14.png)
 
 Here, `string` is inserted in the header of exported PDF file using [DrawString](https://help.syncfusion.com/cr/uwp/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawString_System_String_Syncfusion_Pdf_Graphics_PdfFont_Syncfusion_Pdf_Graphics_PdfBrush_System_Drawing_PointF_) method. Similarly, you can insert image, line,etc. using [DrawImage](https://help.syncfusion.com/cr/uwp/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawImage_Syncfusion_Pdf_Graphics_PdfImage_System_Drawing_PointF_), [DrawLine](https://help.syncfusion.com/cr/uwp/Syncfusion.Pdf.Graphics.PdfGraphics.html#Syncfusion_Pdf_Graphics_PdfGraphics_DrawLine_Syncfusion_Pdf_Graphics_PdfPen_System_Drawing_PointF_System_Drawing_PointF_) methods respectively.
 
@@ -364,7 +364,7 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img15.png)
+![Export-To-PDF_img15](Export-To-PDF_images/Export-To-PDF_img15.png)
 
 ## Saving options
 
@@ -475,7 +475,7 @@ void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img16.png)
+![Export-To-PDF_img16](Export-To-PDF_images/Export-To-PDF_img16.png)
 
 ### Embedding fonts in PDF file
 
@@ -508,7 +508,7 @@ void GridPdfExportingEventHandler(object sender, GridPdfExportingEventArgs e)
 Here, new font is created from font file and it is assigned to the `Font` of `PdfGridCell`.
 
 
-![](Export-To-PDF_images/Export-To-PDF_img17.png)
+![Export-To-PDF_img17](Export-To-PDF_images/Export-To-PDF_img17.png)
 
 ## Cell customization in PDF while exporting
 
@@ -549,7 +549,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img18.png)
+![Export-To-PDF_img18](Export-To-PDF_images/Export-To-PDF_img18.png)
 
 Here, cell values are changed for IsClosed column based on custom condition.
 
@@ -585,7 +585,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img19.png)
+![Export-To-PDF_img19](Export-To-PDF_images/Export-To-PDF_img19.png)
 
 ### Exporting images to PDF document
 
@@ -635,7 +635,7 @@ private void CellsExportingEventHandler(object sender, GridCellPdfExportingEvent
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img20.png)
+![Export-To-PDF_img20](Export-To-PDF_images/Export-To-PDF_img20.png)
 
 ## Exporting DetailsView
 
@@ -669,7 +669,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img21.png)
+![Export-To-PDF_img21](Export-To-PDF_images/Export-To-PDF_img21.png)
 
 Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
 
@@ -704,7 +704,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 {% endtabs %}
 
 
-![](Export-To-PDF_images/Export-To-PDF_img22.png)
+![Export-To-PDF_img22](Export-To-PDF_images/Export-To-PDF_img22.png)
 
 Here, `DetailsViewDataGrid` is not exported for the parent record having `OrderID` as 1002.
 
@@ -730,7 +730,7 @@ void ChildGridExportingEventHandler(object sender, ChildGridPdfExportingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-PDF_images/Export-To-PDF_img23.png)
+![Export-To-PDF_img23](Export-To-PDF_images/Export-To-PDF_img23.png)
 
 Here, OrderID column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to PDF.
 

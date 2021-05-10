@@ -1,23 +1,23 @@
 ---
 layout: post
-title: PivotClient Components | SfPivotClient | UWP | Syncfusion
-description: PivotClient Components
+title: PivotClient: Components in UWP Pivot Client control | Syncfusion
+description: Learn here all about PivotClient: Components support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# PivotClient: Components
+# PivotClient: Components in UWP Pivot Client (SfPivotClient)
 
 ## Cube selector
 
 The cube selector allows you to select any one of the cubes available in the connected database. This can be achieved by selecting the data connection menu item from the reports menu. The cube selector dialog will be opened with a drop-down list, displaying the list of cubes available in the current connection. The SfPivotClient will load the corresponding cube elements while changing the cube from the drop-down list.
 
-![](PivotClient-Components_images/toolBar_ReportMenu_1.png)
+![toolBar_ReportMenu_1](PivotClient-Components_images/toolBar_ReportMenu_1.png)
 
-![](PivotClient-Components_images/toolBar_ReportMenu_2.png)
+![toolBar_ReportMenu_2](PivotClient-Components_images/toolBar_ReportMenu_2.png)
 
-![](PivotClient-Components_images/cubeSelector.png)
+![cubeSelector](PivotClient-Components_images/cubeSelector.png)
 
 ## Cube dimension browser
 
@@ -94,7 +94,7 @@ While dragging and dropping, a split button is created with the caption, which i
 
 When a measure node is dragged and dropped, a split button is created to maintain the measure collection and it is maintained for holding all measures added to the report.
 
-![](PivotClient-Components_images/axisElementBuilder.png)
+![axisElementBuilder](PivotClient-Components_images/axisElementBuilder.png)
 
 ### Operations in axis element builder
 
@@ -108,7 +108,7 @@ To remove measures, dimension, hierarchy, level, and named set element from the 
 
 The following screenshot illustrates the element being removed from the axis element builder.
 
-![](PivotClient-Components_images/removingElements.png)
+![removingElements](PivotClient-Components_images/removingElements.png)
 
 **Rearranging elements in axis**
 
@@ -116,7 +116,7 @@ Rearranging can be done with the help of context menu available in the axis elem
 
 The following screenshot illustrates the element being rearranged in the axis element builder.
 
-![](PivotClient-Components_images/moveUpElements.png)
+![moveUpElements](PivotClient-Components_images/moveUpElements.png)
 
 ## Element editors
 
@@ -124,7 +124,7 @@ The following screenshot illustrates the element being rearranged in the axis el
 
 The measure editor is a dialog that displays the collection of measures in the current report. It can be opened by clicking the **filter icon** that is present over the right corner of the measure node in the axis element builder.
 
-![](PivotClient-Components_images/measureEditor.png)
+![measureEditor](PivotClient-Components_images/measureEditor.png)
 
 ### Member editor
 
@@ -132,13 +132,13 @@ Member editor is a dialog that displays the collection of members available in t
 
 The *Select All* in the dialog allows users to select and unselect entire nodes for filtering.
 
-![](PivotClient-Components_images/memberEditor.png)
+![memberEditor](PivotClient-Components_images/memberEditor.png)
 
 ## Toolbar
 
 By default, the following options are available in the toolbar.
 
-![](PivotClient-Components_images/Toolbar.png)
+![Toolbar](PivotClient-Components_images/Toolbar.png)
 
 * Report menu: The menu button that contains options with respect to all OLAP report manipulations.
 * Report list: The drop-down list that displays the list of OLAP reports loaded in the SfPivotClient.
@@ -151,21 +151,21 @@ By default, the following options are available in the toolbar.
 
 The OLAP reports can be manipulated with the help of options available under the report menu and the options will be displayed by clicking the **Report Menu** in the SfPivotClient's toolbar.
 
-![](PivotClient-Components_images/toolBar_ReportMenu_1.png)
+![toolBar_ReportMenu_1](PivotClient-Components_images/toolBar_ReportMenu_1.png)
 
-![](PivotClient-Components_images/toolBar_ReportMenu_2.png)
+![toolBar_ReportMenu_2](PivotClient-Components_images/toolBar_ReportMenu_2.png)
 
 **New report**
 
 The new report option helps users to clear the existing report collection and to create a new report collection with a single report. By clicking the new report menu item, a report dialog is prompted to specify the name for the OLAP report. By clicking OK, the only one empty report with the specified name is loaded in the SfPivotClient.
 
-![](PivotClient-Components_images/newReport.png)
+![newReport](PivotClient-Components_images/newReport.png)
 
 **Add report**
 
 Add report option helps users to add a report to the existing report collection. By clicking the add report menu item, a report dialog is prompted to specify the name for the OLAP report. By clicking OK, a report with the specified name is added to the existing collection.
 
-![](PivotClient-Components_images/addReport.png)
+![addReport](PivotClient-Components_images/addReport.png)
 
 **Remove report**
 
@@ -175,13 +175,13 @@ The remove report option removes the current/active report from the report colle
 
 The rename report option helps users to rename the current report. By clicking the rename report menu item, a report dialog is prompted for specifying a new name for the current report. By clicking OK, the active report gets refreshed with the new name.
 
-![](PivotClient-Components_images/renameReport.png)
+![renameReport](PivotClient-Components_images/renameReport.png)
 
 **Save report**
 
 This option saves the report in the local system. The Save As dialog opens only one time for prompting a name with the report, which needs to be stored. It stores the report collection by a single name in a database.
 
-![](PivotClient-Components_images/saveAsReport.png)
+![saveAsReport](PivotClient-Components_images/saveAsReport.png)
 
 **Save As report**
 
@@ -191,13 +191,13 @@ This option saves the report in the local system. The Save As dialog opens for p
 
 This option loads a report from the local system. By clicking the load report menu item, the dialog box opens to load a report into the SfPivotClient.
 
-![](PivotClient-Components_images/loadReport.png)
+![loadReport](PivotClient-Components_images/loadReport.png)
 
 **Report list**
 
 It is the drop-down list that contains the names of all reports in the report collection. By selecting the required report from the report list, the selected report will be set as active report and gets loaded.
 
-![](PivotClient-Components_images/reportList.png)
+![reportList](PivotClient-Components_images/reportList.png)
 
 ## SfPivotGrid and SfPivotChart
 

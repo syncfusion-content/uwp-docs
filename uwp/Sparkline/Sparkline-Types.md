@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Types of Sparkline
-description: Types of Sparkline
+title: Sparkline Types in UWP Sparkline control | Syncfusion
+description: Learn here all about Sparkline Types support in Syncfusion UWP Sparkline (SfSparkline) control and more.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
-# Sparkline Types
+# Sparkline Types in UWP Sparkline (SfSparkline)
 
 ## Line Sparkline
 

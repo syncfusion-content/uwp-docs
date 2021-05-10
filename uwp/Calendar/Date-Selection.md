@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection features on SfCalendar control for UWP
-description: Selection features on SfCalendar control for UWP
+title: Date Selection in UWP Calendar control | Syncfusion
+description: Learn here all about Date Selection support in Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Date Selection
+# Date Selection in UWP Calendar (SfCalendar)
 
 Dates can be selected in `SfCalendar` in several ways
 
@@ -106,12 +106,12 @@ Multiple dates can be selected by
 
 * Setting SelectedDates programmatically
 
-![](SfCalendar-images/SfCalendar-img5.jpeg)
+![SfCalendar-img5](SfCalendar-images/SfCalendar-img5.jpeg)
 
 
 * Clicking on start date and moving the pointer over end date by touch
 
-![](SfCalendar-images/SfCalendar-img6.jpeg)
+![SfCalendar-img6](SfCalendar-images/SfCalendar-img6.jpeg)
 
 
 ## DateRange

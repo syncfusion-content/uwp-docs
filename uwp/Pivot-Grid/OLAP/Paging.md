@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging | SfPivotGrid | UWP | Syncfusion
-description: Paging
+title: Paging in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Paging support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Paging
+# Paging in UWP Pivot Grid (SfPivotGrid)
 
 The SfPivotGrid supports loading and rendering the large amount of data without any performance constraint. The following code snippet illustrates the paging using the current OLAP report.
 
@@ -70,4 +70,4 @@ End Sub
 
 {% endtabs %}
 
-![](Paging_images/Paging_image1.png)
+![Paging_image1](Paging_images/Paging_image1.png)

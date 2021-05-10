@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Customization | SfDateTimeRangeNavigator | UWP | Syncfusion 
-description: Customization
+title: Customization in UWP Range Selector control | Syncfusion
+description: Learn here all about Customization support in Syncfusion UWP Range Selector (SfDateTimeRangeNavigator) control and more.
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# Customization
+# Customization in UWP Range Selector (SfDateTimeRangeNavigator)
 
 ## Higher Level Bar Customization
 

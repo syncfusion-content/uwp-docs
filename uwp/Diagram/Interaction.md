@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UWP Diagram nodes selection and CRUD operations | Syncfusion
-description: How to select and edit nodes and connectors during runtime?
+title: Interaction in UWP Diagram control | Syncfusion
+description: Learn here all about Interaction support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Interaction
+# Interaction in UWP Diagram (SfDiagram)
 
 ## Selection
 

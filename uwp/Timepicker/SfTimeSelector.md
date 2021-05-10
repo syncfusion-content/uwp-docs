@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Explains about TimeSelector of SfTimePicker control for UWP
-description: Explains about TimeSelector of SfTimePicker control for UWP
+title: SfTimeSelector in UWP TimePicker control | Syncfusion
+description: Learn here all about SfTimeSelector support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug
 ---
 
-# SfTimeSelector
+# SfTimeSelector in UWP TimePicker (SfTimePicker)
 
 The SfTimeSelector control opens inside the popup window.
 
 
 
-![](Features_images/Features_img3.png)
+![Features_img3](Features_images/Features_img3.png)
 
 
 
@@ -51,7 +51,7 @@ The header property defines the top part of the time selector.
 
 {% endhighlight %}
 
-![](Features_images/Features_img4.png)
+![Features_img4](Features_images/Features_img4.png)
 
 
 
@@ -119,7 +119,7 @@ The HeaderTemplate property is used to decorate the header.
 
 {% endhighlight %}
 
-![](Features_images/Features_img5.png)
+![Features_img5](Features_images/Features_img5.png)
 
 
 
@@ -196,7 +196,7 @@ N>  The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWr
 
 {% endhighlight %}
 
-![](Features_images/Features_img7.png)
+![Features_img7](Features_images/Features_img7.png)
 
 
 
@@ -264,7 +264,7 @@ The MinuteCellTemplate property is used to decorate the minute cell selection bo
 
 {% endhighlight %}
 
-![](Features_images/Features_img8.png)
+![Features_img8](Features_images/Features_img8.png)
 
 
 
@@ -332,7 +332,7 @@ The MeridiemCellTemplate property is used to decorate the meridiem cell selectio
 
 {% endhighlight %}
 
-![](Features_images/Features_img9.png)
+![Features_img9](Features_images/Features_img9.png)
 
 
 
@@ -391,8 +391,8 @@ timeSelector.SecondsInterval=10
 
 {% endtabs %}
 
-![](Features_images/Features_img10.png)
+![Features_img10](Features_images/Features_img10.png)
 
 
 
-![](Features_images/Features_img11.png)
+![Features_img11](Features_images/Features_img11.png)

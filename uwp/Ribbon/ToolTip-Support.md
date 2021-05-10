@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Deals with ToolTip support provided by SfRibbon control for UWP
-description: Deals with ToolTip support provided by SfRibbon control for UWP
+title: ToolTip Support in UWP Ribbon control | Syncfusion
+description: Learn here all about ToolTip Support support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug

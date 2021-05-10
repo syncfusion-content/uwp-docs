@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfSpellChecker control in UWP
-description: Overview of SfSpellChecker control in UWP
+title: About UWP Spell Checker control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Spell Checker (SfSpellChecker) control and more.
 platform: UWP
 control: SfSpellChecker
 documentation: ug
 ---
 
-# Overview
+# UWP Spell Checker (SfSpellChecker) Overview
 
 `SfSpellChecker` control provides a simple and intuitive interface to check for spelling errors in text editor controls. We can perform spell checking on text editor control and it will also provide suggestions for the misspelled words through dialog and context menu.
 
@@ -19,7 +19,7 @@ You can use Spell Checker to correct spelling mistakes for any input text.
 
 `SfSpellChecker` contains built-in dialog for checking spelling error.
 
-![](overview-images/overview.png)
+![overview](overview-images/overview.png)
 
 
 * The Input Text is the text given as input to the Spell Checker to check the spelling. The word which is spell-checked will be highlighted in red color.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Placeholder style | SfKanban | uwp | Syncfusion
-description: The following section describes how to customize the place holders of Kanban card while drgging.
+title: Placeholder in UWP Kanban Board control | Syncfusion
+description: Learn here all about Placeholder support in Syncfusion UWP Kanban Board (SfKanban) control and more.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 
-# Placeholder
+# Placeholder in UWP Kanban Board (SfKanban)
 
 The placeholder is to denote a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch Support options of Syncfusion SfRangeSlider control for UWP
-description: Touch Support options of SfRangeSlider control for UWP
+title: Touch Support in UWP Range Slider control | Syncfusion
+description: Learn here all about Touch Support support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Touch Support
+# Touch Support in UWP Range Slider (SfRangeSlider)
 
 With the MoveToPoint property, you can move the thumb of the SfRangeSlider by tapping or clicking on the track of the SfRangeSlider. This property provides the following options:
 

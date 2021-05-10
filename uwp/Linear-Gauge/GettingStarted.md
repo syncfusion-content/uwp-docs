@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started | SfLinearGauge | uwp | Syncfusion
-description: Getting Started 
+title: Getting Started with UWP Linear Gauge control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
-# Getting Started
+# Getting Started with UWP Linear Gauge (SfLinearGauge)
 
 This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html)  control.
 
@@ -608,7 +608,7 @@ namespace GaugeGettingStarted
 
 The following screenshot illustrates the result of the previous codes.
 
-![](Getting-Started_images/Getting_started_img1.png)
+![Getting_started_img1](Getting-Started_images/Getting_started_img1.png)
 
 You can find the complete getting started sample from this [`link`]().
 

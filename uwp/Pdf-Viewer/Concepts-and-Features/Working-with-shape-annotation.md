@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with shape annotations in Pdf Viewer | Syncfusion
-description: Learn about Working with shape annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
+title: Working with shape annotations in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Working with shape annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Working with shape annotations in UWP PDF Viewer (SfPdfViewer)
+# Working with shape annotations in UWP Pdf Viewer (SfPdfViewer)
 
 PDF Viewer allows you to include shape annotations in a PDF document and provides options to modify or remove the existing shape annotations. The supported shape annotations are:
 

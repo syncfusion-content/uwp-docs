@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Preview of SfGridSplitter control for UWP
-description: Preview of SfGridSplitter control for UWP
+title: Preview in UWP Grid Splitter control | Syncfusion
+description: Learn here all about Preview support in Syncfusion UWP Grid Splitter (SfGridSplitter) control and more.
 platform: uwp
 control: SfGridSplitter
 documentation: ug
 ---
 
-# Preview
+# Preview in UWP Grid Splitter (SfGridSplitter)
 
 `SfGridSplitter` provides a way to preview the redistributed row or columns before it is done.
 
@@ -71,7 +71,7 @@ gridSplitter.ShowsPreview = True
 
 {% endtabs %}
 
-![](Preview-images/Preview-img1.jpeg)
+![Preview-img1](Preview-images/Preview-img1.jpeg)
 
 ## Style preview
 
@@ -147,6 +147,6 @@ Data="M49.041,37.888998C46.583956,45.443701 40.718889,48.415001 32.000286,48.415
 
 {% endtabs %}
 
-![](Preview-images/Preview-img2.jpeg)
+![Preview-img2](Preview-images/Preview-img2.jpeg)
 
 

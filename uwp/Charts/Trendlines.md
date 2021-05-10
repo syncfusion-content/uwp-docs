@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Trendlines | SfChart | uwp | Syncfusion
-description: Explains the trendlines, types of trendlines , forecasting and trendlines customization. 
+title: Trendlines in UWP Charts control | Syncfusion
+description: Learn here all about Trendlines support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Trendlines
+# Trendlines in UWP Charts (SfChart)
 
 [`Trendlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_Trendlines) are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends. 
 

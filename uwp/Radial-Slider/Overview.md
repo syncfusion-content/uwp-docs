@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfRadialSlider control | UWP | Syncfusion  
-description: SfRadialSlider control provides an intuitive touch interface to select numeric values in a circular display.
+title: About UWP Radial Slider control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Overview  
+# UWP Radial Slider (SfRadialSlider) Overview
 
 The SfRadialSlider provides an optimized interface for selecting a numeric value using touch interface.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: NavigationMode of Syncfusion Rotator control for UWP 
-description: Learn how to view the different navigation modes of the Rotator control in UWP
+title: NavigationStripMode in UWP Rotator control | Syncfusion
+description: Learn here all about NavigationStripMode support in Syncfusion UWP Rotator (SfRotator) control and more.
 platform: UWP 
 control: Rotator
 documentation: ug
 ---
 
-# NavigationStripMode
+# NavigationStripMode in UWP Rotator (SfRotator)
 
 The `NavigationStripMode` property specifies the appearance of navigation bar items. The image data can be selected either by Thumbnail or by Dots navigation modes.
 
@@ -25,7 +25,7 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% endhighlight  %}
 
-![](images/thumbnail.png)
+![thumbnail](images/thumbnail.png)
 
 * `Dots` - The image panel items will be loaded in dots view additionally. When a dots item is clicked, the image panel will switch to the corresponding image data.
 
@@ -41,4 +41,4 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% endhighlight  %}
 
-![](images/dots.png)
+![dots](images/dots.png)

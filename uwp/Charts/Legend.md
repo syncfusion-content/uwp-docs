@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend | SfChart | uwp | Syncfusion
-description: How to configure the chart legend and customize the appearance of the legend Icons, labels, and ItemTemplate in UWP.
+title: Legend in UWP Charts control | Syncfusion
+description: Learn here all about Legend support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Legend
+# Legend in UWP Charts (SfChart)
 
 [`Legend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) provides metadata which helps for identifying elements in chart like [`chart series`](https://help.syncfusion.com/uwp/sfchart/series), 
 [`technical indicators`](https://help.syncfusion.com/uwp/sfchart/technical-indicators), and [`trendlines`](https://help.syncfusion.com/uwp/sfchart/trendlines). 

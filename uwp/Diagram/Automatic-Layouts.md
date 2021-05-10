@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Layout nodes and connectors in an organized structure.
-description: How to arrange Nodes by using the Automatic Layouts?
+title: Automatic Layouts in UWP Diagram control | Syncfusion
+description: Learn here all about Automatic Layouts support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Automatic Layout
+# Automatic Layouts in UWP Diagram (SfDiagram)
 
 SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 

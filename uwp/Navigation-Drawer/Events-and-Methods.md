@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events and Methods | NavigationDrawer | UWP | Syncfusion
-description: Events and Methods 
+title: Events and Methods in UWP Navigation Drawer control | Syncfusion
+description: Learn here all about Events and Methods support in Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control and more.
 platform: UWP
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Events
+# Events and Methods in UWP Navigation Drawer (SfNavigationDrawer)
 
 The below two events are implemented in Transition.
 
@@ -37,7 +37,7 @@ Closed event will be raised when the DrawerContentView is closed in NavigationDr
 	
 {% endhighlight %}
 
-# Methods
+# Events and Methods in UWP Navigation Drawer (SfNavigationDrawer)
 
 ## Toggle Drawer
 

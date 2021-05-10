@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview | PullToRefresh | UWP | Syncfusion
-description: overview
+title: About UWP Pull To Refresh control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Pull To Refresh (SfPullToRefresh) control and more.
 platform: UWP
 control: PullToRefresh
 documentation: ug
 --- 
 
-# SfPullToRefresh
+# UWP Pull To Refresh (SfPullToRefresh) Overview
 
-# Overview 
+# UWP Pull To Refresh (SfPullToRefresh) Overview
 
 SfPullToRefresh is a pullable panel which on pulling down the main content in order to refresh the data in the application application.  RefreshContent will be hidden and can be shown by swiping down on the main content and a refresh content, mainly a progress indicator or refresh indicator will be shown. The application will be refreshed once you have pulled down a certain distance.
 
@@ -31,4 +31,4 @@ PullToRefresh controls are mainly used in applications where the user needs to r
 
 • `Refresh()`: `Refresh()` refreshes the content being viewed.
 
-![](Overview_images/Overview_img1.png)
+![Overview_img1](Overview_images/Overview_img1.png)

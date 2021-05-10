@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in UWP DataGrid control | Syncfusion
-description: Learn about printing the datagrid with built-in print preview dialog and its customization in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
+description: Learn here all about Printing support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

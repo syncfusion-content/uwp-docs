@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Node CheckBox in SfTreeGrid
-description: Node CheckBox support in SfTreeGrid
+title: Node CheckBox in UWP TreeGrid control | Syncfusion
+description: Learn here all about Node CheckBox support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
-# Node Checkbox
+# Node CheckBox in UWP TreeGrid (SfTreeGrid)
 
 SfTreeGrid provides support for loading `CheckBox` in the expander cell of each node, which allows the user to check/uncheck the corresponding node. You can display check box in each node by setting [SfTreeGrid.ShowCheckBox](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ShowCheckBox) property as `true`. It also provides support to process the selection in the context of state of the checkbox based on [SfTreeGrid.CheckBoxSelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CheckBoxSelectionMode) property.
 
@@ -24,7 +24,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-![](Node-CheckBox_images/Node-CheckBox_img1.png)
+![Node-CheckBox_img1](Node-CheckBox_images/Node-CheckBox_img1.png)
 
 ## Indeterminate State Support
 
@@ -64,7 +64,7 @@ treeGrid.EnableRecursiveChecking = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Node-CheckBox_images/Node-CheckBox_img2.png)
+![Node-CheckBox_img2](Node-CheckBox_images/Node-CheckBox_img2.png)
 
 N> Even though [SfTreeGrid.AllowTriStateChecking](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowTriStateChecking) is `false` if [SfTreeGrid.EnableRecursiveChecking](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_EnableRecursiveChecking) is `true`, CheckBox can be in indeterminate state.
 
@@ -121,7 +121,7 @@ You can disable CheckBox by writing style for [TreeGridExpanderCell](https://hel
 
 In the below screenshot, node CheckBox is disabled for leaf nodes.
 
-![](Node-CheckBox_images/Node-CheckBox_img3.png)
+![Node-CheckBox_img3](Node-CheckBox_images/Node-CheckBox_img3.png)
 
 ## Collapsing CheckBox for certain nodes
 You can collapse node CheckBox for certain nodes by editing the control template of [TreeGridExpanderCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridExpanderCell.html) and changing the Checkbox visibility based on condition.
@@ -267,7 +267,7 @@ public class BoolToVisibilityConverter : IValueConverter
 
 Here, node CheckBox is collapsed for leaf nodes.
 
-![](Node-CheckBox_images/Node-CheckBox_img4.png)
+![Node-CheckBox_img4](Node-CheckBox_images/Node-CheckBox_img4.png)
 
 ## Handling Selection based on CheckBox State
 
@@ -296,7 +296,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.Default;
 {% endhighlight %}
 {% endtabs %}
 
-![](Node-CheckBox_images/Node-CheckBox_img5.png)
+![Node-CheckBox_img5](Node-CheckBox_images/Node-CheckBox_img5.png)
 
 **SelectOnCheck**
 
@@ -317,7 +317,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SelectOnCheck;
 {% endhighlight %}
 {% endtabs %}
 
-![](Node-CheckBox_images/Node-CheckBox_img6.png)
+![Node-CheckBox_img6](Node-CheckBox_images/Node-CheckBox_img6.png)
 
 **SynchronizeSelection**
 
@@ -336,7 +336,7 @@ treeGrid.CheckBoxSelectionMode = CheckBoxSelectionMode.SynchronizeSelection;
 {% endhighlight %}
 {% endtabs %}
 
-![](Node-CheckBox_images/Node-CheckBox_img7.png)
+![Node-CheckBox_img7](Node-CheckBox_images/Node-CheckBox_img7.png)
 
 N>
 * Recursive checking is not supported when selection mode is single.

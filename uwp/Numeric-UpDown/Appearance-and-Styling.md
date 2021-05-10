@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearence and Styling of SfNumericupDown control for UWP
-description: Appearence and Styling of SfNumericupDown control for UWP
+title: Appearance and Styling in UWP Numeric UpDown control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Numeric UpDown (SfNumericUpDown) control and more.
 platform: uwp
 control: SfNumeric UpDown
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP Numeric UpDown (SfNumericUpDown)
 
 ## Spin Buttons Alignment
 

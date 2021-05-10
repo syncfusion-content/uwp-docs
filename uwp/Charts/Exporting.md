@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Exporting | SfChart | uwp | Syncfusion
-description: Exporting
+title: Exporting in UWP Charts control | Syncfusion
+description: Learn here all about Exporting support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
-# Exporting
+# Exporting in UWP Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) can be exported into the following types of image formats:
 

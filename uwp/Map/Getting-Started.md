@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Maps control for UWP platform.
-description: Guidelines to create Syncfusion Maps control for Universal Windows Platform project in Visual Studio. 
+title: Getting Started with UWP Map control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Getting Started with SfMaps
+# Getting Started with UWP Map (SfMaps)
 
 ## Creating Maps for a Windows Store App
 

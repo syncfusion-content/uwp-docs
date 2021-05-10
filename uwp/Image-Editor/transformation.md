@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transformation | SfImageEditor | uwp | Syncfusion
-description: Transformation
+title: Transform in UWP Image Editor control | Syncfusion
+description: Learn here all about Transform support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Transformation
+# Transform in UWP Image Editor (SfImageEditor)
 
 The image editor control can perform the image transformations namely, `rotation` and `flip`. The transformations can be achieved in the following two ways:
 
@@ -33,7 +33,7 @@ N> Angle cannot be specified in code to alter the rotation angle of the image
 
 {% endhighlight %}
 
-![](transformation_images/rotate.png)
+![rotate](transformation_images/rotate.png)
 
 
 ## Flip
@@ -55,4 +55,4 @@ N> By default, image flips horizontally.
 
 {% endhighlight %}
 
-![](transformation_images/FlipImage.png)
+![FlipImage](transformation_images/FlipImage.png)

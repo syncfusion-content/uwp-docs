@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfRating control for UWP
-description: This section provides a quick tour to initial users on SfRating control for UWP.
+title: Getting Started with UWP Rating control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Rating (SfRating) control and more.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Rating (SfRating)
 
 This section explains how to create a group of visual symbols used for rating with `SfRating` control.
 

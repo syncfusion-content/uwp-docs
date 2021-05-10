@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | SfPivotGauge | UWP | Syncfusion
-description: Localization
+title: Localization in UWP Pivot Gauge control | Syncfusion
+description: Learn here all about Localization support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
 platform: UWP
 control: SfPivotGauge
 documentation: ug
 ---
 
-# Localization
+# Localization in UWP Pivot Gauge (SfPivotGauge)
 
 Localization is a key feature to provide software solutions targeted at global users. The SfPivotGauge allows users to localize the control to a specific locale and supports “resx” based localization.
 
@@ -31,9 +31,9 @@ After translating the strings that can be localized:
 
 2. Right-click the **Resources** folder to create a new resource file. Go to **Add > New Item**.
 
-![](Localization_images/Localization-step1.png)
+![Localization-step1](Localization_images/Localization-step1.png)
 
-![](Localization_images/Localization-step2.png)
+![Localization-step2](Localization_images/Localization-step2.png)
 
 N> The resource file name should be in the format “&lt;Culture Code&gt;.resx”.
 
@@ -103,7 +103,7 @@ PivotGauge1.FlowDirection = FlowDirection.RightToLeft
 
 {% endtabs %}
 
-![](Localization_images/Localization-RTL.png)
+![Localization-RTL](Localization_images/Localization-RTL.png)
 
 A demo sample is available in the following location.
 

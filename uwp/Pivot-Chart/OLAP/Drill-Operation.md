@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Operation | SfPivotChart | UWP | Syncfusion
-description: Drill Operation
+title: Drill Operation in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Drill Operation support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Drill Operation
+# Drill Operation in UWP Pivot Chart (SfPivotChart)
 
 This is the basic feature of SfPivotChart through which the amount of information can be limited for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the expanders present in primary axis labels.
 
@@ -19,7 +19,7 @@ Drill down, also called as roll down; it is the reverse of drill up operation wh
 
 While binding hierarchical dimensions (for example, the time dimension includes 3 levels namely year, quarter, and month), the SfPivotChart allows you to visualize the data for different levels by using the collapsible labels which are illustrated in the following screenshot.
 
-![](Drill-Operation_images/Drill-operation.png)
+![Drill-operation](Drill-Operation_images/Drill-operation.png)
 
 ## Drill types
 
@@ -49,7 +49,7 @@ pivotChart1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillMember
 
 {% endtabs %}
 
-![](Drill-Operation_images/Drill-member.png)
+![Drill-member](Drill-Operation_images/Drill-member.png)
 
 **Drill position**
 
@@ -93,7 +93,7 @@ pivotChart1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillReplace
 
 N> The drilled-down member can be replaced with drilled data and it cannot be drilled-up.
 
-![](Drill-Operation_images/Drill-replace.png)
+![Drill-replace](Drill-Operation_images/Drill-replace.png)
 
 N> Since the `DrillType` property interacts with the `OlapDataManager`, you should call the `DataBind()` method of SfPivotChart after assigning the value to this property.
 
@@ -119,6 +119,6 @@ pivotChart1.OlapDataManager.CurrentReport.ShowExpanders = False
 
 {% endtabs %}
 
-![](Drill-Operation_images/Drill-operation-hide-expanders.png)
+![Drill-operation-hide-expanders](Drill-Operation_images/Drill-operation-hide-expanders.png)
 
 N> Since the `ShowExpanders` property interacts with the `OlapDataManager`, you should call the `DataBind()` method of SfPivotChart after assigning the value to this property.

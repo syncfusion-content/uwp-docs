@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expand Modes
-description: Expand Modes in Syncfusion SfMenu control for UWP
+title: Expand Modes in UWP Menu control | Syncfusion
+description: Learn here all about Expand Modes support in Syncfusion UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug
 --- 
 
-# Expand Modes
+# Expand Modes in UWP Menu (SfMenu)
 
 Expand Modes in `SfMenu` is used to open the submenu of each `SfMenuItem`, which is added in `SfMenu` by doing click to open the submenu or by doing mouse hover to open the submenu. `SfMenu` supports two kinds of Expand Modes, namely `ExpandOnClick` and `ExpandOnMouseOver` Expand Modes which can be obtained by using the `ExpandMode` property. By default submenu items opened by mouse over on `SfMenuItem`.
 

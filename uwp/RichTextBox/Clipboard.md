@@ -1,12 +1,12 @@
 ---
-title: Clipboard
-description: clipboard
+title: Clipboard in UWP RichTextBox control | Syncfusion
+description: Learn here all about Clipboard support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: clipboard
 ---
-# Clipboard
+# Clipboard in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv takes advantage of the clipboard support and allows you to copy or paste contents to and from the clipboard in the following formats.
 

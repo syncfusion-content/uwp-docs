@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Rim | SfCircularGauge | uwp | Syncfusion
-description: Rim
+title: Rim in UWP Radial Gauge control | Syncfusion
+description: Learn here all about Rim support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Rim 
+# Rim in UWP Radial Gauge (SfCircularGauge)
 
 Scale determines the structure of a circular gauge by using a circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_StartAngle)  and [`SweepAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_SweepAngle)  properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
 
@@ -86,7 +86,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Rim_images/Rim_img1.png)
+![Rim_img1](Rim_images/Rim_img1.png)
 
 ## Rim customization
 
@@ -152,7 +152,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Rim_images/Rim_img2.png)
+![Rim_img2](Rim_images/Rim_img2.png)
 
 ## Setting position for rim
 
@@ -226,7 +226,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Rim_images/Rim_img3.png)
+![Rim_img3](Rim_images/Rim_img3.png)
 
 ### Setting radius for rim
 
@@ -290,4 +290,4 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Rim_images/Rim_img4.png)
+![Rim_img4](Rim_images/Rim_img4.png)

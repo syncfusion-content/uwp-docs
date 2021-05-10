@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with Tooltip options for Syncfusion RangeSlider control in UWP
-description: Explains about the Tooltip options supported by SfRangeSlider control for UWP
+title: Thumb ToolTip in UWP Range Slider control | Syncfusion
+description: Learn here all about Thumb ToolTip support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Thumb ToolTip  
+# Thumb ToolTip in UWP Range Slider (SfRangeSlider)
 
 The Thumb tooltip shows the current value on which the Thumb stands. 
 

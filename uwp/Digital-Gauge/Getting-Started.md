@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SfDigitalGauge | uwp | Syncfusion
-description: Getting Started 
+title: Getting Started with UWP Digital Gauge control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with UWP Digital Gauge (SfDigitalGauge)
 
 This section explains you the steps required to configure the **SfDigitalGauge** and also explains the steps to add basic elements of **SfDigitalGauge** through various API’s available within it.
 
@@ -34,7 +34,7 @@ SfDigitalGauge is existing in the following assembly and namespace.
 {% endhighlight %}
 {% endtabs %}
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 Run the above code and now the default **SfDigitalGauge** can be displayed as follows. UI component of the digital gauge can be customized by adding segments and passing Values which will be explained in the next section.
@@ -61,7 +61,7 @@ You can add alphanumeric characters to SfDigitalGauge using **Value** property i
 
 SfDigitalGauge Values are displayed as follows.
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+![Getting-Started_img2](Getting-Started_images/Getting-Started_img2.jpeg)
 
 ## Changing segments
 
@@ -86,4 +86,4 @@ You can view the digital characters in SfDigitalGauge using different types of S
 
 SfDigitalGauge Segments are displayed as follows.
 
-![](Getting-Started_images/Getting-Started_img3.jpg)
+![Getting-Started_img3](Getting-Started_images/Getting-Started_img3.jpg)

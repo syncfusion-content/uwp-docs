@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation | SfLinearGauge | uwp | Syncfusion
-description: Labels 
+title: Orientation in UWP Linear Gauge control | Syncfusion
+description: Learn here all about Orientation support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
 platform: uwp
 control: Orientation
 documentation: ug
 ---
 
-# Orientation
+# Orientation in UWP Linear Gauge (SfLinearGauge)
 
 The [`LinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) control supports horizontal and vertical orientations. By default, the [`LinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) is rendered with horizontal orientation. You can change the orientation using the [`Orientation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Orientation) property.
 
@@ -65,4 +65,4 @@ The [`LinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges
 
 {% endtabs %}
 
-![](Orientation_images/Orientation_img1.png)
+![Orientation_img1](Orientation_images/Orientation_img1.png)

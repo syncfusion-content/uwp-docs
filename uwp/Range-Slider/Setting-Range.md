@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range options with RangeSlider widget for Syncfusion UWP
-description: Range options to select range of values in SfRangeSlider control 
+title: Setting Range in UWP Range Slider control | Syncfusion
+description: Learn here all about Setting Range support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Setting Range 
+# Setting Range in UWP Range Slider (SfRangeSlider)
 
 The SfRangeSlider control supports to select range of value using two Thumbs.  
 

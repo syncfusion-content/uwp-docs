@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Relational Getting Started | SfPivotGrid | UWP | Syncfusion
-description: Getting Started for SfPivotGrid with relational data.
+title: Getting Started with UWP Pivot Grid control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with UWP Pivot Grid (SfPivotGrid)
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.

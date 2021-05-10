@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Watermark | SfChart | uwp | Syncfusion
-description: watermark
+title: Watermark in UWP Charts control | Syncfusion
+description: Learn here all about Watermark support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
-# Watermark
+# Watermark in UWP Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides watermark support which is used to add text or images to the chart area. The major application of watermark is to define the copyright information of the user it belongs to.
 

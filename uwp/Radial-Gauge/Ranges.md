@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Ranges | SfCircularGauge | uwp | Syncfusion
-description: Ranges
+title: Ranges in UWP Radial Gauge control | Syncfusion
+description: Learn here all about Ranges support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Ranges 
+# Ranges in UWP Radial Gauge (SfCircularGauge)
 
 Range is a visual element, which begins and ends at the specified values within a scale.
 
@@ -86,7 +86,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img1.png)
+![Ranges_img1](Ranges_images/Ranges_img1.png)
 
 ## Range customization
 
@@ -170,7 +170,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img2.png)
+![Ranges_img2](Ranges_images/Ranges_img2.png)
 
 ## Setting width for range
 
@@ -256,7 +256,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img3.png)
+![Ranges_img3](Ranges_images/Ranges_img3.png)
 
 ## Binding range stroke
 
@@ -356,7 +356,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img4.png)
+![Ranges_img4](Ranges_images/Ranges_img4.png)
 
 
 ## Setting position for range
@@ -479,7 +479,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img5.png)
+![Ranges_img5](Ranges_images/Ranges_img5.png)
 
 ### Range offset
 
@@ -563,7 +563,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img6.png)
+![Ranges_img6](Ranges_images/Ranges_img6.png)
 
 ## Setting multiple ranges
 
@@ -687,7 +687,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img7.png)
+![Ranges_img7](Ranges_images/Ranges_img7.png)
 
 ## Setting gradient color for range
 
@@ -795,7 +795,7 @@ You can give smooth color transition to range by specifying the different colors
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img8.png)
+![Ranges_img8](Ranges_images/Ranges_img8.png)
 
 
 

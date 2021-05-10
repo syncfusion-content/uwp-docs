@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items of SfTreeNavigator control for UWP
-description: Populating Items of SfTreeNavigator control for UWP
+title: Populating Items in UWP Tree Navigator control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion UWP Tree Navigator (SfTreeNavigator) control and more.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug
 ---
 
-# Populating Items
+# Populating Items in UWP Tree Navigator (SfTreeNavigator)
 
 `SfTreeNavigatorItem` are added as items of SfTreeNavigator. Items can be added using `Items` or `ItemSource` property.
 

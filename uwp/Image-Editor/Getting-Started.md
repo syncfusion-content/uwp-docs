@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started | SfImageEditor | uwp | Syncfusion
-description: A quick tour to the initial users on the Syncfusion SfImageEditor control for UWP Platform and explains how to load the image to the control in different ways.
+title: Getting Started with UWP Image Editor control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Getting Started with SfImageEditor
+# Getting Started with UWP Image Editor (SfImageEditor)
 
 This section explains the steps required to load an image to the image editor. Image editor has a built-in toolbar that has options to edit the image with shapes, path, text, crop, rotate and flip.
 

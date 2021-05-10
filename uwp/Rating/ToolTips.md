@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip of SfRating control for UWP
-description: Tooltip of SfRating control for UWP
+title: ToolTips in UWP Rating control | Syncfusion
+description: Learn here all about ToolTips support in Syncfusion UWP Rating (SfRating) control and more.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# ToolTips
+# ToolTips in UWP Rating (SfRating)
 
 ## Enable/Disable Tooltip
 

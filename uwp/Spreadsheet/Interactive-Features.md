@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features of SfSpreadsheet | Syncfusion
-description: How to use the clipboard operations, undo/redo and other functionalities in UWP SfSpreadsheet
+title: Interactive Features in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Interactive Features support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in UWP Spreadsheet (SfSpreadsheet)
 
  This section explains about the interactive operations with SfSpreadsheet
  

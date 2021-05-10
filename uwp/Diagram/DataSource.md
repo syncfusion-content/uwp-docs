@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Populate Diagram from external data sources.
-description: How to populate the Diagram from the local data?
+title: DataSource in UWP Diagram control | Syncfusion
+description: Learn here all about DataSource support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# DataSource
+# DataSource in UWP Diagram (SfDiagram)
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Customize segment brush 
-description: Customize segment brush
+title: Customize segment brush in UWP Sparkline control | Syncfusion
+description: Learn here all about Customize segment brush support in Syncfusion UWP Sparkline (SfSparkline) control and more.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
-# Customize segment brush
+# Customize segment brush in UWP Sparkline (SfSparkline)
 
 We can able to customize the first, last, negative, high and low point brushes of column sparkline as like markers in area and line sparkline.
 

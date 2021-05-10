@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in SfRichTextBoxAdv | Syncfusion
-description: How to localize the SfRichTextBoxAdv to any language settings
+title: Localization in UWP RichTextBox control | Syncfusion
+description: Learn here all about Localization support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: UWP
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: localization
 ---
-# Localization
+# Localization in UWP RichTextBox (SfRichTextBoxAdv)
 
 Localization is the process of configuring the application to a specific language. SfRichTextBoxAdv provides support to localize all the static text in radial menu and all its dialogs. Localization can be done by adding resource file (Resw) and setting the specific culture in the application.
 

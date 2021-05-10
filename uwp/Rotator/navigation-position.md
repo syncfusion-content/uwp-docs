@@ -1,13 +1,13 @@
 ---
 layout: post
-title: NavigationStripPosition in Syncfusion Rotator Control for UWP
-description: Learn how to set the position of the navigation bar items in Rotator control
+title: NavigationStripPosition in UWP Rotator control | Syncfusion
+description: Learn here all about NavigationStripPosition support in Syncfusion UWP Rotator (SfRotator) control and more.
 platform: UWP
 control: Rotator
 documentation: ug
 ---
 
-# NavigationStripPosition
+# NavigationStripPosition in UWP Rotator (SfRotator)
 
 The `NavigationStripPosition` position specifies the placement position of the navigation bar items such as thumbnail or dots relative to the image panel area. 
 
@@ -69,4 +69,4 @@ There are four available positions,
 
 {% endhighlight %}
 
-![](images/tabstrip.png)
+![tabstrip](images/tabstrip.png)

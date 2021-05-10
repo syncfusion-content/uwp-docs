@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selecting Color of SfColorPicker control for UWP
-description: Selecting Color of SfColorPicker control for UWP
+title: Selecting Color in UWP Color Picker control | Syncfusion
+description: Learn here all about Selecting Color support in Syncfusion UWP Color Picker (SfColorPicker) control and more.
 platform: uwp
 control: SfColorPicker
 documentation: ug
 ---
 
-# Selecting Color
+# Selecting Color in UWP Color Picker (SfColorPicker)
 
 ## Retrieving the Current Selected Color
 
@@ -39,7 +39,7 @@ colorPicker.SelectedColor = Colors.Green
 
 {% endtabs %}
 
-![](Selecting-Color-images/Selecting-Color-img1.jpeg)
+![Selecting-Color-img1](Selecting-Color-images/Selecting-Color-img1.jpeg)
 
 ## Retrieving the Previous Selected Color
 
@@ -61,7 +61,7 @@ Dim previousColor As Color = colorPicker.PreviousColor
 
 {% endtabs %}
 
-![](Selecting-Color-images/Selecting-Color-img2.jpeg)
+![Selecting-Color-img2](Selecting-Color-images/Selecting-Color-img2.jpeg)
 
 ## Notifying the Selected Color Change
 

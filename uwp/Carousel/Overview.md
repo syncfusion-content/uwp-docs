@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfCarousel control for UWP 
-description: The following section explains the carousel control and its features.
+title: About UWP Carousel control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Carousel (SfCarousel) control and more.
 platform: uwp
 control: SfCarousel
 documentation: ug
 ---
 
-# Overview
+# UWP Carousel (SfCarousel) Overview
 
 `SfCarousel` control provides a rich animated layout to arrange items in touch device.
 

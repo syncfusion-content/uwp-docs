@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selecting Items of SfAccordion control for UWP
-description: Selecting Items of SfAccordion control for UWP
+title: Selecting Items in UWP Accordion control | Syncfusion
+description: Learn here all about Selecting Items support in Syncfusion UWP Accordion (SfAccordion) control and more.
 platform: uwp
 control: SfAccordion
 documentation: ug
 ---
 
-# Selecting Items
+# Selecting Items in UWP Accordion (SfAccordion)
 
 Items can be selected programmatically using the properties `SelectedIndex`, `SelectedItem` and `SelectedItems`.
 
@@ -136,7 +136,7 @@ End Sub
 
 {% endtabs %}
 
-![](Selecting-Items-images/Selecting-Items-img1.jpeg)
+![Selecting-Items-img1](Selecting-Items-images/Selecting-Items-img1.jpeg)
 
 ## Selecting Item using IsSelected
 
@@ -233,7 +233,7 @@ Content="Essential Studio for Universal"/>
 
 {% endtabs %}
 
-![](Selecting-Items-images/Selecting-Items-img2.jpeg)
+![Selecting-Items-img2](Selecting-Items-images/Selecting-Items-img2.jpeg)
 
 ## Checking the Lock State of an Item
 
@@ -480,11 +480,11 @@ End Sub
 
 Expand the item with header Windows Phone
 
-![](Selecting-Items-images/Selecting-Items-img3.jpeg)
+![Selecting-Items-img3](Selecting-Items-images/Selecting-Items-img3.jpeg)
 
 Collapse the item with header Windows Phone
 
-![](Selecting-Items-images/Selecting-Items-img4.jpeg)
+![Selecting-Items-img4](Selecting-Items-images/Selecting-Items-img4.jpeg)
 
 ## Notifying an Item Selection
 

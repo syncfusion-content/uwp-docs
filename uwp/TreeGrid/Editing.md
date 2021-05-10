@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing support in SfTreeGrid.
-description: How to edit the data in each cell of SfTreeGrid
+title: Editing in UWP TreeGrid control | Syncfusion
+description: Learn here all about Editing support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Editing 
+# Editing in UWP TreeGrid (SfTreeGrid)
 
 SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 

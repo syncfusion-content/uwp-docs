@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Export to excel in SfDataGrid
-description: How to export the SfDataGrid into excel.
+title: Export To Excel in UWP DataGrid control | Syncfusion
+description: Learn here all about Export To Excel support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Export to Excel
+# Export To Excel in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
 
@@ -35,10 +35,10 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img1.png)
+![Export-To-Excel_img1](Export-To-Excel_images/Export-To-Excel_img1.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img2.png)
+![Export-To-Excel_img2](Export-To-Excel_images/Export-To-Excel_img2.png)
 
 
 N> SfDataGrid exports data to excel by using XlsIO.
@@ -67,13 +67,13 @@ if (storageFile != null)
 
 ExportMode as Text
 
-![](Export-To-Excel_images/Export-To-Excel_img3.png)
+![Export-To-Excel_img3](Export-To-Excel_images/Export-To-Excel_img3.png)
 
-![](Export-To-Excel_images/Export-To-Excel_img4.png)
+![Export-To-Excel_img4](Export-To-Excel_images/Export-To-Excel_img4.png)
 
 ExportMode as Value
 
-![](Export-To-Excel_images/Export-To-Excel_img5.png)
+![Export-To-Excel_img5](Export-To-Excel_images/Export-To-Excel_img5.png)
 
 ### Export groups with outlines
 
@@ -95,7 +95,7 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img6.png)
+![Export-To-Excel_img6](Export-To-Excel_images/Export-To-Excel_img6.png)
 
 ### Exclude columns while exporting
 
@@ -119,10 +119,10 @@ if (storageFile != null)
 Here, the columns having CustomerName and Country as `MappingName` are excluded while exporting.
 
 
-![](Export-To-Excel_images/Export-To-Excel_img7.png)
+![Export-To-Excel_img7](Export-To-Excel_images/Export-To-Excel_img7.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img8.png)
+![Export-To-Excel_img8](Export-To-Excel_images/Export-To-Excel_img8.png)
 
 ### Excel Version
 
@@ -160,10 +160,10 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img9.png)
+![Export-To-Excel_img9](Export-To-Excel_images/Export-To-Excel_img9.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img10.png)
+![Export-To-Excel_img10](Export-To-Excel_images/Export-To-Excel_img10.png)
 
 ### Exporting merged cells
 
@@ -183,9 +183,9 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img11.png)
+![Export-To-Excel_img11](Export-To-Excel_images/Export-To-Excel_img11.png)
 
-![](Export-To-Excel_images/Export-To-Excel_img12.png)
+![Export-To-Excel_img12](Export-To-Excel_images/Export-To-Excel_img12.png)
 
 ### Exporting unbound rows
 
@@ -206,10 +206,10 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img13.png)
+![Export-To-Excel_img13](Export-To-Excel_images/Export-To-Excel_img13.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img14.png)
+![Export-To-Excel_img14](Export-To-Excel_images/Export-To-Excel_img14.png)
 
 ### Changing start row and column index while exporting
 
@@ -231,10 +231,10 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img15.png)
+![Export-To-Excel_img15](Export-To-Excel_images/Export-To-Excel_img15.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img16.png)
+![Export-To-Excel_img16](Export-To-Excel_images/Export-To-Excel_img16.png)
 
 
 ## Saving options
@@ -361,16 +361,16 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img17.png)
+![Export-To-Excel_img17](Export-To-Excel_images/Export-To-Excel_img17.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img18.png)
+![Export-To-Excel_img18](Export-To-Excel_images/Export-To-Excel_img18.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img19.png)
+![Export-To-Excel_img19](Export-To-Excel_images/Export-To-Excel_img19.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img20.png)
+![Export-To-Excel_img20](Export-To-Excel_images/Export-To-Excel_img20.png)
 
 
 ## Export SelectedItems to Excel
@@ -392,9 +392,9 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img21.png)
+![Export-To-Excel_img21](Export-To-Excel_images/Export-To-Excel_img21.png)
 
-![](Export-To-Excel_images/Export-To-Excel_img22.png)
+![Export-To-Excel_img22](Export-To-Excel_images/Export-To-Excel_img22.png)
 
 ## Export to XML
 
@@ -456,10 +456,10 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img23.png)
+![Export-To-Excel_img23](Export-To-Excel_images/Export-To-Excel_img23.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img24.png)
+![Export-To-Excel_img24](Export-To-Excel_images/Export-To-Excel_img24.png)
 
 ## Styling cells based on CellType in Excel
 
@@ -503,10 +503,10 @@ private static void ExportingHandler(object sender, GridExcelExportingEventArgs 
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img25.png)
+![Export-To-Excel_img25](Export-To-Excel_images/Export-To-Excel_img25.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img26.png)
+![Export-To-Excel_img26](Export-To-Excel_images/Export-To-Excel_img26.png)
 
 ## Cell customization in Excel while exporting
 
@@ -532,10 +532,10 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img27.png)
+![Export-To-Excel_img27](Export-To-Excel_images/Export-To-Excel_img27.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img28.png)
+![Export-To-Excel_img28](Export-To-Excel_images/Export-To-Excel_img28.png)
 
 Here, cell values are changed for IsDelivered column based on custom condition.
 
@@ -570,9 +570,9 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img29.png)
+![Export-To-Excel_img29](Export-To-Excel_images/Export-To-Excel_img29.png)
 
-![](Export-To-Excel_images/Export-To-Excel_img30.png)
+![Export-To-Excel_img30](Export-To-Excel_images/Export-To-Excel_img30.png)
 
 Here, records having the Country name as `Mexico` are customized.
 
@@ -607,10 +607,10 @@ private static void CellExportingHandler(object sender, GridCellExcelExportingEv
 Here, OrderID column cells are customized while exporting.
 
 
-![](Export-To-Excel_images/Export-To-Excel_img31.png)
+![Export-To-Excel_img31](Export-To-Excel_images/Export-To-Excel_img31.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img32.png)
+![Export-To-Excel_img32](Export-To-Excel_images/Export-To-Excel_img32.png)
 
 ## Customize exported workbook and worksheet
 
@@ -673,10 +673,10 @@ if (storageFile != null)
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img33.png)
+![Export-To-Excel_img33](Export-To-Excel_images/Export-To-Excel_img33.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img34.png)
+![Export-To-Excel_img34](Export-To-Excel_images/Export-To-Excel_img34.png)
 
 
 #### Enabling Filters
@@ -698,10 +698,10 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img35.png)
+![Export-To-Excel_img35](Export-To-Excel_images/Export-To-Excel_img35.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img36.png)
+![Export-To-Excel_img36](Export-To-Excel_images/Export-To-Excel_img36.png)
 
 
 While using stacked headers, you can specify the range based on Stacked headers count.
@@ -723,9 +723,9 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img37.png)
+![Export-To-Excel_img37](Export-To-Excel_images/Export-To-Excel_img37.png)
 
-![](Export-To-Excel_images/Export-To-Excel_img38.png)
+![Export-To-Excel_img38](Export-To-Excel_images/Export-To-Excel_img38.png)
 
 #### Customize the range of cells
 
@@ -747,9 +747,9 @@ if (storageFile != null)
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img39.png)
+![Export-To-Excel_img39](Export-To-Excel_images/Export-To-Excel_img39.png)
 
-![](Export-To-Excel_images/Export-To-Excel_img40.png)
+![Export-To-Excel_img40](Export-To-Excel_images/Export-To-Excel_img40.png)
 
 ## Exporting DetailsView
 
@@ -786,10 +786,10 @@ private static void ChildExportingHandler(object sender, GridChildExportingEvent
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img41.png)
+![Export-To-Excel_img41](Export-To-Excel_images/Export-To-Excel_img41.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img42.png)
+![Export-To-Excel_img42](Export-To-Excel_images/Export-To-Excel_img42.png)
 
 
 Here, `DetailsViewDataGrid` is not exported for the parent record having OrderID as 1002.
@@ -819,10 +819,10 @@ private static void ChildExportingHandler(object sender, GridChildExportingEvent
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img43.png)
+![Export-To-Excel_img43](Export-To-Excel_images/Export-To-Excel_img43.png)
 
 
-![](Export-To-Excel_images/Export-To-Excel_img44.png)
+![Export-To-Excel_img44](Export-To-Excel_images/Export-To-Excel_img44.png)
 
 
 Here, OrderID column is displayed in `DetailsViewDataGrid` and it is excluded while exporting to excel.
@@ -862,9 +862,9 @@ private static void ChildExportingHandler(object sender, GridCellExcelExportingE
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img45.png)
+![Export-To-Excel_img45](Export-To-Excel_images/Export-To-Excel_img45.png)
 
-![](Export-To-Excel_images/Export-To-Excel_img46.png)
+![Export-To-Excel_img46](Export-To-Excel_images/Export-To-Excel_img46.png)
 
 ## Performance
 
@@ -887,7 +887,7 @@ workBook.ActiveSheet.Columns[4].NumberFormat = "0.0";
 {% endhighlight %}
 {% endtabs %}
 
-![](Export-To-Excel_images/Export-To-Excel_img47.png)
+![Export-To-Excel_img47](Export-To-Excel_images/Export-To-Excel_img47.png)
 
 ### Alternate row styling without using CellsExportingEventHandler
 
@@ -913,5 +913,5 @@ condition2.BackColorRGB = System.Drawing.Color.LightGray;
 {% endtabs %}
 
 
-![](Export-To-Excel_images/Export-To-Excel_img48.png)
+![Export-To-Excel_img48](Export-To-Excel_images/Export-To-Excel_img48.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User Interactions in Syncfusion SfSchedule control for UWP
-description: How to perform the drag and drop operations, resize the appointments and Dispose the resources in Schedule control.
+title: User Interactions in UWP Scheduler control | Syncfusion
+description: Learn here all about User Interactions support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: uwp
 control: SfSchedule
 documentation: ug

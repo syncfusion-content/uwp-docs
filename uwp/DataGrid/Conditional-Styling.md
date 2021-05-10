@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Styling in SfDataGrid
-description: How to style cells and rows conditionally based on data  in SfDataGrid
+title: Conditional Styling in UWP DataGrid control | Syncfusion
+description: Learn here all about Conditional Styling support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Conditional Styling
+# Conditional Styling in UWP DataGrid (SfDataGrid)
 
 You can style the SfDataGrid and its inner elements conditionally based on data in two ways,
 
@@ -100,7 +100,7 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img1.png)
+![Conditional-Styling_img1](Conditional-Styling_images/Conditional-Styling_img1.png)
 
 ### Styling cells based on record using Converter
 
@@ -154,7 +154,7 @@ public class ColorConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img2.png)
+![Conditional-Styling_img2](Conditional-Styling_images/Conditional-Styling_img2.png)
 
 ### Styling cells using StyleSelector
 
@@ -205,7 +205,7 @@ public class SelectorClass : StyleSelector
 
 Here, GridCell’s are customized based on `OrderID` property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img3.png)
+![Conditional-Styling_img3](Conditional-Styling_images/Conditional-Styling_img3.png)
 
 ## Rows
 
@@ -262,7 +262,7 @@ public class ColorConverter : IValueConverter
 
 Here, rows are customized based on `OrderID`property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img4.png)
+![Conditional-Styling_img4](Conditional-Styling_images/Conditional-Styling_img4.png)
 
 ### Styling rows using StyleSelector
 
@@ -304,7 +304,7 @@ public class SelectorClass : StyleSelector
 
 Here, rows are customized based on `OrderID`property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img5.png)
+![Conditional-Styling_img5](Conditional-Styling_images/Conditional-Styling_img5.png)
 
 ### Styling Alternate Rows
 
@@ -345,7 +345,7 @@ public class SelectorClass : StyleSelector
 
 Here, alternating rows are customized based on`OrderID` property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img6.png)
+![Conditional-Styling_img6](Conditional-Styling_images/Conditional-Styling_img6.png)
 
 ## CaptionSummaryCell
 
@@ -416,7 +416,7 @@ public class ColorConverter : IValueConverter
 
 Here, caption summary cells are customized based on `TotalPrice`summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img7.png)
+![Conditional-Styling_img7](Conditional-Styling_images/Conditional-Styling_img7.png)
 
 ### Styling caption summary using StyleSelector
 
@@ -472,7 +472,7 @@ public class SelectorClass : StyleSelector
 {% endtabs %}
 
 Here, caption summary cells are customized based on `TotalPrice`summary value.
-![](Conditional-Styling_images/Conditional-Styling_img8.png)
+![Conditional-Styling_img8](Conditional-Styling_images/Conditional-Styling_img8.png)
 
 ### Styling caption summary cell based on column
 
@@ -530,7 +530,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![](Conditional-Styling_images/Conditional-Styling_img9.png)
+![Conditional-Styling_img9](Conditional-Styling_images/Conditional-Styling_img9.png)
 
 ## CaptionSummaryRow
 
@@ -599,7 +599,7 @@ public class ColorConverter : IValueConverter
 
 Here, caption summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img10.png)
+![Conditional-Styling_img10](Conditional-Styling_images/Conditional-Styling_img10.png)
 
 ### Styling caption summary row using StyleSelector
 
@@ -655,7 +655,7 @@ public class SelectorClass : StyleSelector
 
 Here, caption summary rows are customized where [group key](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.Group.html#Syncfusion_Data_Group_Key) value is less than 1005.
 
-![](Conditional-Styling_images/Conditional-Styling_img11.png)
+![Conditional-Styling_img11](Conditional-Styling_images/Conditional-Styling_img11.png)
 
 ### Styling caption summary row based on grouping level
 
@@ -711,7 +711,7 @@ public class SelectorClass : StyleSelector
 
 Here, caption summary rows are customized based on `grouping level` (example: level1, level2, level3, etc.).
 
-![](Conditional-Styling_images/Conditional-Styling_img12.png)
+![Conditional-Styling_img12](Conditional-Styling_images/Conditional-Styling_img12.png)
 
 ## GroupSummaryCell
 
@@ -790,7 +790,7 @@ public class ColorConverter : IValueConverter
 
 Here, group summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img13.png)
+![Conditional-Styling_img13](Conditional-Styling_images/Conditional-Styling_img13.png)
 
 ### Styling group summary cell using StyleSelector
 
@@ -857,7 +857,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary cells are customized based on summary values whether it’s positive or negative.
 
-![](Conditional-Styling_images/Conditional-Styling_img14.png)
+![Conditional-Styling_img14](Conditional-Styling_images/Conditional-Styling_img14.png)
 
 ### Styling group summary cell based on column
 
@@ -930,7 +930,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary cells are customized based on `TotalPrice` summary column.
 
-![](Conditional-Styling_images/Conditional-Styling_img15.png)
+![Conditional-Styling_img15](Conditional-Styling_images/Conditional-Styling_img15.png)
 
 ## GroupSummaryRow
 
@@ -1009,7 +1009,7 @@ public class ColorConverter : IValueConverter
 
 Here, group summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img16.png)
+![Conditional-Styling_img16](Conditional-Styling_images/Conditional-Styling_img16.png)
 
 ### Styling group summary row using StyleSelector
 
@@ -1078,7 +1078,7 @@ public class SelectorClass : StyleSelector
 
 Here, group summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img17.png)
+![Conditional-Styling_img17](Conditional-Styling_images/Conditional-Styling_img17.png)
 
 ## TableSummaryCell
 
@@ -1160,7 +1160,7 @@ public class ColorConverter : IValueConverter
 
 Here, table summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img18.png)
+![Conditional-Styling_img18](Conditional-Styling_images/Conditional-Styling_img18.png)
 
 ### Styling table summary cell using StyleSelector
 
@@ -1228,7 +1228,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary cells are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img19.png)
+![Conditional-Styling_img19](Conditional-Styling_images/Conditional-Styling_img19.png)
 
 ### Styling table summary cell based on column
 
@@ -1292,7 +1292,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary cells are customized based on `TotalPrice` summary column.
 
-![](Conditional-Styling_images/Conditional-Styling_img20.png)
+![Conditional-Styling_img20](Conditional-Styling_images/Conditional-Styling_img20.png)
 
 ## TableSummaryRow
 
@@ -1372,7 +1372,7 @@ public class ColorConverter : IValueConverter
 
 Here, table summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img21.png)
+![Conditional-Styling_img21](Conditional-Styling_images/Conditional-Styling_img21.png)
 
 ### Styling table summary row using StyleSelector
 
@@ -1445,7 +1445,7 @@ public class SelectorClass : StyleSelector
 
 Here, table summary rows are customized based on `TotalPrice` summary value.
 
-![](Conditional-Styling_images/Conditional-Styling_img22.png)
+![Conditional-Styling_img22](Conditional-Styling_images/Conditional-Styling_img22.png)
 
 ## Summary Cell alignment based on column
 
@@ -1514,7 +1514,7 @@ public class SelectorClass : StyleSelector
 
 Here, horizontal alignment of `TotalPrice` column alone center, other column horizontal alignment are changed into right
 
-![](Conditional-Styling_images/Conditional-Styling_img23.png)
+![Conditional-Styling_img23](Conditional-Styling_images/Conditional-Styling_img23.png)
 
 ## Row Header
 
@@ -1569,5 +1569,5 @@ public class ColorConverter : IValueConverter
 
 Here, row headers are customized based on `AmountPaid` property of underlying record.
 
-![](Conditional-Styling_images/Conditional-Styling_img24.png)
+![Conditional-Styling_img24](Conditional-Styling_images/Conditional-Styling_img24.png)
 

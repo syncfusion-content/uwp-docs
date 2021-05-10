@@ -1,12 +1,12 @@
 ---
-title: Getting Started
-description: getting-started
+title: Getting Started with UWP RichTextBox control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: getting-started
 ---
-# Getting Started
+# Getting Started with UWP RichTextBox (SfRichTextBoxAdv)
 
 SfRichTextBoxAdv is a control that allows you to view and edit rich text contents including table, text, images and hyperlinks. This section describes how to get started with SfRichTextBoxAdv control.
 
@@ -34,7 +34,7 @@ N> Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion assemblies
 
 After adding the aforementioned assembly references to your application, you can add SfRichTextBoxAdv as any normal control.
 You can either drag the SfRichTextBoxAdv control from the toolbox window to the Design view or directly define the control in XAML view.
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.jpeg)
 
 {% tabs %}
 {% highlight xaml %}

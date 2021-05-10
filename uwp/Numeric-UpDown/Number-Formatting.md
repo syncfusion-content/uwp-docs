@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting the Number Formatting for Syncfusion SfNumericUpDown control 
-description: This section explains how to set the number formatting for the Syncfusion SfNumericUpDown control in UWP Platform and also explains the culture with formatting.
+title: Number Formatting in UWP Numeric UpDown control | Syncfusion
+description: Learn here all about Number Formatting support in Syncfusion UWP Numeric UpDown (SfNumericUpDown) control and more.
 platform: uwp
 control: SfNumericUpDown
 documentation: ug
 ---
 
-# Number Formatting with SfNumericUpDown
+# Number Formatting in UWP Numeric UpDown (SfNumericUpDown)
 
 Number formatting functionality allows to format the text based on the FormatString of the control. The control will format the display text on lost focus. 
 

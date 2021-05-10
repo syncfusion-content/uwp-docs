@@ -1,17 +1,17 @@
 ---
 layout: post
-title: NavigationDrawer | NavigationDrawer | UWP | Syncfusion
-description: overview 
+title: About UWP Navigation Drawer control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control and more.
 platform: UWP
 control: NavigationDrawer
 documentation: ug
 ---
 
-# NavigationDrawer 
+# UWP Navigation Drawer (SfNavigationDrawer) Overview
 
 NavigationDrawer is a sliding panel menu that allows you to navigate between major modules of the application. The Navigation Drawer is usually hidden and it appears when you swipe the screen from any of the four edges or by tapping the app icon, if available.
 
-![](Overview_images/Overview_img1.png) 
+![Overview_img1](Overview_images/Overview_img1.png) 
                                               
 SfNavigationDrawer
 {:.caption}

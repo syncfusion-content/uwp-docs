@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items of SfTabControl control for UWP
-description: Explains about Populating Items of SfTabControl control for UWP
+title: Populating Items in UWP Tab Control control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Populating Items
+# Populating Items in UWP Tab Control (SfTabControl)
 
 SfTabItems are added as items of SfTabControl. Items can be added using Items or ItemSource property.
 
@@ -77,7 +77,7 @@ tabControl.Items.Add(New SfTabItem())
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img1.jpeg)
+![Populating-Items-img1](Populating-Items-images/Populating-Items-img1.jpeg)
 
 
 ### Setting header for items
@@ -136,7 +136,7 @@ tabControl.Items.Add(New SfTabItem() With {.Header = "Carl "})
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img2.jpeg)
+![Populating-Items-img2](Populating-Items-images/Populating-Items-img2.jpeg)
 
 
 ### Setting content for items
@@ -208,7 +208,7 @@ tabControl.Items.Add(New SfTabItem() With {
 {% endtabs %}
 
 
-![](Populating-Items-images/Populating-Items-img3.jpeg)
+![Populating-Items-img3](Populating-Items-images/Populating-Items-img3.jpeg)
 
 
 ## Using ItemsSource
@@ -358,7 +358,7 @@ Employees.Add(New Employee() With {
 
 Tile view items need a template to render so SfTabControl control is populated as follows:
 
-![](Populating-Items-images/Populating-Items-img4.jpeg)
+![Populating-Items-img4](Populating-Items-images/Populating-Items-img4.jpeg)
 
 
 ### Setting header for items
@@ -377,7 +377,7 @@ Header can be displayed using the property DisplayMemberPath. This property is u
 {% endtabs %}
 
 
-![](Populating-Items-images/Populating-Items-img5.jpeg)
+![Populating-Items-img5](Populating-Items-images/Populating-Items-img5.jpeg)
 
 
 ### Setting content for items
@@ -409,6 +409,6 @@ Content can be displayed using the ContentTemplate property. Content is visible 
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img6.jpeg)
+![Populating-Items-img6](Populating-Items-images/Populating-Items-img6.jpeg)
 
 

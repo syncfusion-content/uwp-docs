@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Text | SfImageEditor | uwp | Syncfusion
-description: This section explains how to add text on an image in the Syncfusion SfImageEditor in UWP platform and also explains how to delete and resize the text.
+title: Text in UWP Image Editor control | Syncfusion
+description: Learn here all about Text support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Text of SfImageEditor
+# Text in UWP Image Editor (SfImageEditor)
 
 To add the desired text elements over the image, use the following two ways:
 

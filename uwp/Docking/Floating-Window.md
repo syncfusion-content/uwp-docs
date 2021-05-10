@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Float Window of Syncfusion SfDockingManager control for UWP
-description: This topic deals with float window features and how to position the float window
+title: Floating Window in UWP Docking control | Syncfusion
+description: Learn here all about Floating Window support in Syncfusion UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Floating Window
+# Floating Window in UWP Docking (SfDockingManager)
 
 Floating window is one of the state in the `SfDockingManager`. To make children of the `SfDockingManager` as Float, set the `SfDockingManager` child’s `DockState` values as Float.
 
@@ -26,7 +26,7 @@ Floating window is one of the state in the `SfDockingManager`. To make children 
 
 {% endtabs %}
 
-![](Floating-Window-images/Floating-Window-img1.jpeg)
+![Floating-Window-img1](Floating-Window-images/Floating-Window-img1.jpeg)
 
 
 ## Enabling or Disabling the Float functionality
@@ -97,6 +97,6 @@ SfDockingManager.SetFloatingWindowRect(child1, new Rect(200, 0, 200, 200));
 
 {% endtabs %}
 
-![](Floating-Window-images/Floating-Window-img2.jpeg)
+![Floating-Window-img2](Floating-Window-images/Floating-Window-img2.jpeg)
 
 

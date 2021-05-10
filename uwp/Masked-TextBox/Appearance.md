@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance | SfMaskedEdit | UWP | Syncfusion
-description: Appearance of SfMaskedEdit
+title: Appearance in UWP Masked TextBox control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
 ---
-# Appearance
+# Appearance in UWP Masked TextBox (SfMaskedEdit)
 
 The appearance of the `SfMaskedEdit` control can be customized by using the `BorderBrush` and `ErrorBorderBrush` property
 
@@ -36,7 +36,7 @@ maskededit.BorderBrush = Brushes.Blue;
 
 {% endtabs %}
 
-![](Appearence_Images/Appearence_Img1.jpg)
+![Appearence_Img1](Appearence_Images/Appearence_Img1.jpg)
 
 
 ### ErrorBorderBrush
@@ -63,7 +63,7 @@ maskededit.ErrorBorderBrush = Brushes.DarkOrange;
 
 {% endtabs %}
 
-![](Appearence_Images/Appearence_Img2.jpg)
+![Appearence_Img2](Appearence_Images/Appearence_Img2.jpg)
 
 
 ## ShowPromptOnFocus
@@ -95,8 +95,8 @@ maskedEdit.ShowPromptOnFocus = true;
 
 Control loses focus
 
-![](Appearence_Images/Appearence_Img3.jpg)
+![Appearence_Img3](Appearence_Images/Appearence_Img3.jpg)
 
 Control gets focus
 
-![](Appearence_Images/Appearence_Img4.jpg)
+![Appearence_Img4](Appearence_Images/Appearence_Img4.jpg)

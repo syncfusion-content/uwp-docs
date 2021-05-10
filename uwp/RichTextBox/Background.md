@@ -1,6 +1,6 @@
 ---
-title: Document background | UWP RichTextBox | Syncfusion
-description: This section illustrates about how to apply page and control background color in UWP RichTextBox control.
+title: Background in UWP RichTextBox control | Syncfusion
+description: Learn here all about Background support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
