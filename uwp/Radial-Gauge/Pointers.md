@@ -831,6 +831,112 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ga
 
 ![Pointer animation](Pointers_images/Pointers_img14.gif)
 
+### Step frequency
+
+`StepFrequency` property will be considered as an interval and based on this value needle and marker pointer will gets updated to the next value while dragging.
+For example when the value of step frequency is of 20 then while dragging, pointer will not move continuously instead it will update in terms of 20.
+
+{% tabs %}
+
+{% highlight xml %}
+
+        <gauge:SfCircularGauge Height="500" Width="500" >
+
+            <gauge:SfCircularGauge.Scales>
+
+                <gauge:CircularScale Radius="150" ShowRim="True" RimStroke="#39B2C6" RimStrokeThickness="9"
+
+    TickStroke="#BEBEBE" LabelStroke="#9E9E9E" SmallTickStroke="#BEBEBE" TickPosition="Cross" >                  
+
+                    <gauge:CircularScale.Pointers>
+
+                        <gauge:CircularPointer PointerType="NeedlePointer" Value="60" EnableAnimation="False"
+
+    NeedleLengthFactor="0.7" NeedlePointerType="Triangle" EnableDragging="True" StepFrequency="20"
+ 
+    PointerCapDiameter="20" PointerCapStroke="#39B2C6" NeedlePointerStroke="#39B2C6" />
+
+                       
+
+                        <gauge:CircularPointer PointerType="SymbolPointer" Value="70" StepFrequency="5"
+                                               Symbol="Arrow" EnableDragging="True" EnableAnimation="False"/>
+
+                    </gauge:CircularScale.Pointers>
+
+                </gauge:CircularScale>
+
+            </gauge:SfCircularGauge.Scales>
+
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+
+            sfCircularGauge.Height = 500;
+
+            sfCircularGauge.Width = 500;
+
+            CircularScale circularScale = new CircularScale();
+
+            circularScale.Radius = 150;
+
+            circularScale.RimStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x57, 0xb2, 0xc6));
+
+            circularScale.TickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+            circularScale.SmallTickStroke = new SolidColorBrush(Color.FromArgb(0xff, 0xc1, 0xc1, 0xc1));
+
+            circularScale.RimStrokeThickness = 9;
+            circularScale.TickPosition = TickPosition.Cross;
+
+            circularScale.LabelStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x99, 0x99, 0x99));
+
+            CircularPointer circularPointer = new CircularPointer();
+            circularPointer.PointerType = PointerType.NeedlePointer;
+            circularPointer.Value = 60;
+            circularPointer.EnableAnimation = false;
+            circularPointer.EnableDragging = true;
+            circularPointer.StepFrequency = 20;
+            circularPointer.NeedleLengthFactor = 0.7;
+
+            circularPointer.NeedlePointerType = NeedlePointerType.Triangle;
+
+            circularPointer.PointerCapDiameter = 20;
+
+            circularPointer.PointerCapStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
+
+
+            circularPointer.NeedlePointerStroke = new SolidColorBrush(Color.FromArgb(0xff, 0x39, 0xb2, 0xc6));
+
+            circularScale.Pointers.Add(circularPointer);
+
+            CircularPointer circularPointer2 = new CircularPointer();
+
+            circularPointer2.PointerType = PointerType.SymbolPointer;
+
+            circularPointer2.Value = 70;
+
+            circularPointer2.StepFrequency = 5;
+
+            circularPointer2.EnableDragging = true;
+            circularPointer2.EnableAnimation = false;
+
+            circularPointer2.Symbol = Syncfusion.UI.Xaml.Gauges.Symbol.Arrow;
+
+            circularScale.Pointers.Add(circularPointer2);
+
+            sfCircularGauge.Scales.Add(circularScale);
+
+            grid.Children.Add(sfCircularGauge);
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Events
 
 ### Value change started event
