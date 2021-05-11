@@ -833,8 +833,11 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ga
 
 ### Step frequency
 
-`StepFrequency` property will be considered as an interval and based on this value needle and marker pointer will gets updated to the next value while dragging.
-For example when the value of step frequency is of 20 then while dragging, pointer will not move continuously instead it will update in terms of 20.
+The `StepFrequency` property is used to specify the interval between snap points while dragging the `MarkerPointer` or `NeedlePointer`.
+
+For example, when the value of StepFrequency is 20, then while dragging, the pointer will not move continuously, instead it will update in terms of 20.
+
+N> To work with the StepFrequency value, enable pointer dragging support.
 
 {% tabs %}
 
