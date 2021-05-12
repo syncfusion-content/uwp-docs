@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization in UWP Diagram control | Syncfusion
-description: Learn here all about Virtualization support in Syncfusion UWP Diagram (SfDiagram) control and more.
+description: Learn here all about Virtualization and Deferred scrolling support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
@@ -111,6 +111,6 @@ Find the [Virtualization sample](https://github.com/SyncfusionExamples/UWP-Diagr
 
 [How to localize the diagram control](/uwp/diagram/localization)
 
-[How to have overview for diagram control](/diagram/overview-control)
+[How to have overview for diagram control](/uwp/diagram/overview-control)
 
 {% endseealso %}
