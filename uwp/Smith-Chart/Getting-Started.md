@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for the SfSmithChart.
-description: Getting start with simple application using SfSmithChart in UWP.
+title: Getting Started with UWP Smith Chart control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: SfSmithChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Smith Chart (SfSmithChart)
 
 This section explains the steps required to build the application with SfSmithChart.
 

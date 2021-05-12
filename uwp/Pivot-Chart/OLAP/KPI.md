@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KPI| SfPivotChart | UWP | Syncfusion
-description: KPI
+title: KPI in UWP Pivot Chart control | Syncfusion
+description: Learn here all about KPI support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# KPI
+# KPI in UWP Pivot Chart (SfPivotChart)
 
 KPI (Key Performance Indicator) is a business metric that helps to figure out the progress of an enterprise in meeting its business goals. It is a collection of calculations that are associated with a measure group in a cube. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how the applications should display the results of KPIs calculations.
 
@@ -79,7 +79,7 @@ PivotChart1.OlapDataManager.SetCurrentReport(olapReport)
 
 {% endtabs %}
 
-![](Kpi_images/kpi_image1.png)
+![kpi_image1](Kpi_images/kpi_image1.png)
 
 A demo sample is located in the following location.
 

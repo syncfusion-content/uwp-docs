@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with  Ribbon controls of SfRibbon for UWP
-description:  Explains about Ribbon controls of SfRibbon for UWP
+title: Ribbon Controls in UWP Ribbon control | Syncfusion
+description: Learn here all about Ribbon Controls support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
 ---
 
-# Ribbon Controls
+# Ribbon Controls in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 Several Ribbon controls are provided to add in Ribbon Bar. Button controls are provided with 3 size forms Extra-Small, Small and Large.
 
@@ -111,7 +111,7 @@ _ribbon.Items.Add(_ribbonTab)
 
 {% endtabs %}
 
-![](Ribbon-Controls_images/Ribbon-Controls_img1.jpeg)
+![Ribbon-Controls_img1](Ribbon-Controls_images/Ribbon-Controls_img1.jpeg)
 
 
 ### Set various sizes for RibbonButton
@@ -220,14 +220,14 @@ _ribbon.Items.Add(_ribbonTab)
 
 {% endtabs %}
 
-![](Ribbon-Controls_images/Ribbon-Controls_img2.jpeg)
+![Ribbon-Controls_img2](Ribbon-Controls_images/Ribbon-Controls_img2.jpeg)
 
 
 ## SfDropDownButton
 
 DropDownButton appears like normal button that contains a drop arrow. It will open a popup, while click on it.
 
-![](Ribbon-Controls_images/Ribbon-Controls_img3.jpeg)
+![Ribbon-Controls_img3](Ribbon-Controls_images/Ribbon-Controls_img3.jpeg)
 
 
 {% tabs %}
@@ -281,14 +281,14 @@ DropDownButton appears like normal button that contains a drop arrow. It will op
 
 {% endtabs %}
 
-![](Ribbon-Controls_images/Ribbon-Controls_img4.jpeg)
+![Ribbon-Controls_img4](Ribbon-Controls_images/Ribbon-Controls_img4.jpeg)
 
 
 ## SfRibbonGallery
 
 SfRibbonGallery displays items with good look and feel and it also used to classify the items as groups for easy navigation. Ribbon Gallery popup can be re-sized using the re-size grip at right bottom.
 
-![](Ribbon-Controls_images/Ribbon-Controls_img5.jpeg)
+![Ribbon-Controls_img5](Ribbon-Controls_images/Ribbon-Controls_img5.jpeg)
 
 
 ### SfRibbonGalleryItem
@@ -448,7 +448,7 @@ _ribbonMenu.Items.Add(_ribbonmenuItem2)
 
 {% endtabs %}
 
-![](Ribbon-Controls_images/Ribbon-Controls_img6.jpeg)
+![Ribbon-Controls_img6](Ribbon-Controls_images/Ribbon-Controls_img6.jpeg)
 
 
 ## SfRibbonGroupBar
@@ -533,7 +533,7 @@ _ribbonGroup.Items.Add(_ribbongroupView)
 
 {% endtabs %}
 
-![](Ribbon-Controls_images/Ribbon-Controls_img7.jpeg)
+![Ribbon-Controls_img7](Ribbon-Controls_images/Ribbon-Controls_img7.jpeg)
 
 
 ## SfRibbonComboBox
@@ -589,7 +589,7 @@ _ribbonComboBox.Items.Add(_ribbonComboBoxItem2)
 
 {% endtabs %}
 
-![](Ribbon-Controls_images/Ribbon-Controls_img8.jpeg)
+![Ribbon-Controls_img8](Ribbon-Controls_images/Ribbon-Controls_img8.jpeg)
 
 
 ## SfRibbonToggleButton
@@ -643,6 +643,6 @@ _ribbon.Items.Add(_ribbonTab)
 
 {% endtabs %}
 
-![](Ribbon-Controls_images/Ribbon-Controls_img9.jpeg)
+![Ribbon-Controls_img9](Ribbon-Controls_images/Ribbon-Controls_img9.jpeg)
 
 

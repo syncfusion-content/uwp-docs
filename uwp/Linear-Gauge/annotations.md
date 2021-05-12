@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Annotations| SfLinearGauge | uwp | Syncfusion
-description: Annotations
+title: Annotations in UWP Linear Gauge control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 
 ---
 
-# Annotations
+# Annotations in UWP Linear Gauge (SfLinearGauge)
 
 [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html)  supports [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Annotations) , which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
@@ -103,7 +103,7 @@ By using the `ContentTemplate` property of annotation object, you can specify th
 
 {% endtabs %}
 
-![](annotations_images/annotation_img1.png)
+![annotation_img1](annotations_images/annotation_img1.png)
 
 ##  Positioning the annotation
 
@@ -201,7 +201,7 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
 
 {% endtabs %}
 
-![](annotations_images/annotation_img2.png)
+![annotation_img2](annotations_images/annotation_img2.png)
 
 ###  Change annotation position by using scale value
 
@@ -324,7 +324,7 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
 
 {% endtabs %}
 
-![](annotations_images/annotation_img3.png)
+![annotation_img3](annotations_images/annotation_img3.png)
 
 ##  Set margin to the annotation
 
@@ -448,7 +448,7 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
 {% endtabs %}
 
-![](annotations_images/annotation_img4.png)
+![annotation_img4](annotations_images/annotation_img4.png)
 
 ##   Alignment of annotation
 
@@ -577,7 +577,7 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
 
 {% endtabs %}
 
-![](annotations_images/annotation_img5.png)
+![annotation_img5](annotations_images/annotation_img5.png)
 
 ### Setting vertical position
 
@@ -702,7 +702,7 @@ You can align the annotation using the [`HorizontalPosition`](https://help.syncf
 
 {% endtabs %}
 
-![](annotations_images/annotation_img6.png)
+![annotation_img6](annotations_images/annotation_img6.png)
 
 ## Multiple annotations
 
@@ -1042,4 +1042,4 @@ You can add multiple annotations to the gauge as demonstrated below.
 
 {% endtabs %}
 
-![](annotations_images/annotation_img7.png)
+![annotation_img7](annotations_images/annotation_img7.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PromptChar in Mask| SfMaskedEdit | UWP | Syncfusion
-description: Default and customize PromptChar in Mask
+title: PromptChar in Mask in UWP Masked TextBox control | Syncfusion
+description: Learn here all about PromptChar in Mask support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 Displays prompt character for the absence of your input in Mask and its default value is ‘_’.
 
-![](PromptChar_In_Mask_Images/PromptChar_In_Mask_Img1.jpg)
+![PromptChar_In_Mask_Img1](PromptChar_In_Mask_Images/PromptChar_In_Mask_Img1.jpg)
 
 ## Custom PromptChar
 
@@ -35,4 +35,4 @@ maskedEdit.PromptChar = "*";
 
 {% endtabs %}
 
-![](PromptChar_In_Mask_Images/PromptChar_In_Mask_Img2.jpg)
+![PromptChar_In_Mask_Img2](PromptChar_In_Mask_Images/PromptChar_In_Mask_Img2.jpg)

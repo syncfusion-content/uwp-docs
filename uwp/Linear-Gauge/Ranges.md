@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ranges| SfLinearGauge | uwp | Syncfusion
-description: Ranges
+title: Ranges in UWP Linear Gauge control | Syncfusion
+description: Learn here all about Ranges support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Ranges 
+# Ranges in UWP Linear Gauge (SfLinearGauge)
 
 Range is a visual element, which begins and ends at specified values within a scale. You can add any number of ranges to a scale using the array of range objects.
 
@@ -93,7 +93,7 @@ The start and end values of ranges are set using the [`StartValue`](https://help
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img1.png)
+![Ranges_img1](Ranges_images/Ranges_img1.png)
 
 ## Range customization
 
@@ -177,7 +177,7 @@ The UI element of a range is customized by changing the [`RangeStroke`](https://
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img2.png)
+![Ranges_img2](Ranges_images/Ranges_img2.png)
 
 ## Binding range stroke to ticks and labels
 
@@ -302,7 +302,7 @@ You can bind the range’s stroke to tick lines and labels within its range by s
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img3.png)
+![Ranges_img3](Ranges_images/Ranges_img3.png)
 
 ## Setting range position
 
@@ -384,7 +384,7 @@ You can bind the range’s stroke to tick lines and labels within its range by s
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img4.png)
+![Ranges_img4](Ranges_images/Ranges_img4.png)
 
 ### Adding multiple ranges
 
@@ -492,7 +492,7 @@ You can add “n” number of ranges to a scale using the [`LinearRange`](https:
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img5.png)
+![Ranges_img5](Ranges_images/Ranges_img5.png)
 
 ### Setting gradient color for range
 
@@ -587,7 +587,7 @@ You can give smooth color transition to range to specifying the different colors
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img6.png)
+![Ranges_img6](Ranges_images/Ranges_img6.png)
 
 ### Multiple range with multiple gradient
 
@@ -716,4 +716,4 @@ You can add “n” number of ranges with gradient color to a scale using the [`
 
 {% endtabs %}
 
-![](Ranges_images/Ranges_img7.png)
+![Ranges_img7](Ranges_images/Ranges_img7.png)

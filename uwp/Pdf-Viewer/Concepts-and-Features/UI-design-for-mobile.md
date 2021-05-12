@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating custom toolbar with Syncfusion Essential UWP PDF viewer.
-description: Creating custom toolbar for mobile with Syncfusion Essential UWP PDF viewer.
+title: Mobile in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Mobile support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug

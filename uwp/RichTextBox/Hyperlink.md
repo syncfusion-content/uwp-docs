@@ -1,12 +1,12 @@
 ---
-title: Hyperlink
-description: hyperlink
+title: Hyperlink in UWP RichTextBox control | Syncfusion
+description: Learn here all about Hyperlink support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: hyperlink
 ---
-# Hyperlink
+# Hyperlink in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv supports hyperlink field similar to the Microsoft Word. You can link part of the document content to Internet or file location, mail address or any text.
 The following code example illustrates how to insert a hyperlink field.

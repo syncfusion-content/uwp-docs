@@ -1,13 +1,13 @@
 ---
 layout: post
-title: title: View Modes | SfCalendar | uwp | Syncfusion
-description: Learn how to change the view mode for calendar
+title: Built-in Views in UWP Calendar control | Syncfusion
+description: Learn here all about Built-in Views support in Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: Calendar
 documentation: ug
 ---
 
-# Built-in Views
+# Built-in Views in UWP Calendar (SfCalendar)
 
 `SfCalendar` control provides four types of views to display dates/years such as month,year,decade,century. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html#Com_Syncfusion_Calendar_SfCalendar_ViewMode) property.
 

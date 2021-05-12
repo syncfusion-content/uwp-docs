@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Customization | SfPivotClient | UWP | Syncfusion
-description: Layout Customization
+title: Layout Customization in UWP Pivot Client control | Syncfusion
+description: Learn here all about Layout Customization support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Layout Customization
+# Layout Customization in UWP Pivot Client (SfPivotClient)
 
 ## Display mode
 
@@ -39,7 +39,7 @@ PivotClient1.DisplayMode = PivotClientDisplayMode.ChartOnly
 
 {% endtabs %}
 
-![](Layout-Customization_images/DisplayMode-chart.png)
+![DisplayMode-chart](Layout-Customization_images/DisplayMode-chart.png)
 
 **Grid only**
 
@@ -67,7 +67,7 @@ PivotClient1.DisplayMode = PivotClientDisplayMode.GridOnly
 
 {% endtabs %}
 
-![](Layout-Customization_images/DisplayMode-grid.png)
+![DisplayMode-grid](Layout-Customization_images/DisplayMode-grid.png)
 
 **Both**
 
@@ -95,7 +95,7 @@ PivotClient1.DisplayMode = PivotClientDisplayMode.Both
 
 {% endtabs %}
 
-![](Layout-Customization_images/DisplayMode-both.png)
+![DisplayMode-both](Layout-Customization_images/DisplayMode-both.png)
 
 A demo sample is available in the following location.
 

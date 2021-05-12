@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Read the current scroll status and programmatically pan Diagrams.
-description: How to read/modify the scroll status of the Diagram?
+title: AutoScroll in UWP Diagram control | Syncfusion
+description: Learn here all about AutoScroll support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# AutoScroll
+# AutoScroll in UWP Diagram (SfDiagram)
 
 Autoscroll feature automatically scrolls the Diagram whenever the Node or Connector is moved beyond the boundary of the diagram. So that, it is always visible during dragging, resizing, and multiple selection operations. Autoscroll is automatically triggered when any one of the following is done towards the edges of the Diagram.
 

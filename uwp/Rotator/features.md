@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Various features in Syncfusion Rotator control for UWP
-description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Forms
+title: Features in UWP Rotator control | Syncfusion
+description: Learn here all about Features support in Syncfusion UWP Rotator (SfRotator) control and more.
 platform: UWP
 control: Rotator
 documentation: ug
 ---
 
-# Features
+# Features in UWP Rotator (SfRotator)
 
 ## AutoPlay
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotation | SfPivotChart | UWP | Syncfusion
-description: Annotation
+title: Annotations in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Annotations
+# Annotations in UWP Pivot Chart (SfPivotChart)
 
 The SfPivotChart supports annotations that allow you to mark a specific area of interest in the chart area. You can draw custom shapes, specify a text note, and add images with the help of annotations.
 
@@ -69,7 +69,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/textAnnotation.png)
+![textAnnotation](Annotations_images/textAnnotation.png)
 
 **Rotating text annotation**
 
@@ -121,7 +121,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/rotatedTextAnnotation.png)
+![rotatedTextAnnotation](Annotations_images/rotatedTextAnnotation.png)
 
 **Editing text annotation**
 
@@ -173,7 +173,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/editTextAnnotation.png)
+![editTextAnnotation](Annotations_images/editTextAnnotation.png)
 
 ## Image annotation
 
@@ -217,7 +217,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/imageAnnotation.png)
+![imageAnnotation](Annotations_images/imageAnnotation.png)
 
 **Rotating image annotation**
 
@@ -262,7 +262,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/rotatedImageAnnotation.png)
+![rotatedImageAnnotation](Annotations_images/rotatedImageAnnotation.png)
 
 ## Line annotation
 
@@ -314,7 +314,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/lineAnnotation.png)
+![lineAnnotation](Annotations_images/lineAnnotation.png)
 
 ## Horizontal line annotation
 
@@ -364,7 +364,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/horizontalLineAnnotation.png)
+![horizontalLineAnnotation](Annotations_images/horizontalLineAnnotation.png)
 
 ## Vertical line annotation
 
@@ -414,7 +414,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/verticalLineAnnotation.png)
+![verticalLineAnnotation](Annotations_images/verticalLineAnnotation.png)
 
 ## Rectangle annotation
 
@@ -460,7 +460,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/rectangleAnnotation.png)
+![rectangleAnnotation](Annotations_images/rectangleAnnotation.png)
 
 ## Ellipse annotation
 
@@ -506,7 +506,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/ellipseAnnotation.png)
+![ellipseAnnotation](Annotations_images/ellipseAnnotation.png)
 
 ## Positioning annotations
 
@@ -572,7 +572,7 @@ PivotChart1.Annotations.Add(annotation)
 
 {% endtabs %}
 
-![](Annotations_images/resizing_Dragging_Annotations.png)
+![resizing_Dragging_Annotations](Annotations_images/resizing_Dragging_Annotations.png)
 
 A demo sample is located in the following location.
 

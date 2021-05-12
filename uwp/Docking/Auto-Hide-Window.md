@@ -1,17 +1,17 @@
 ---
 layout: post
-title: AutoHide Window of Syncfusion SfDockingManager control for UWP
-description: Learn how to customize SidePanel, SideTabItem and change pinning behaviour of AutoHide window
+title: Auto Hide Window in UWP Docking control | Syncfusion
+description: Learn here all about Auto Hide Window support in Syncfusion UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Auto Hide Window
+# Auto Hide Window in UWP Docking (SfDockingManager)
 
 `AutoHide` window is one of the state in the `SfDockingManager`. To enable Auto hidden for SfDockingManager’s children, set `SfDockingManager` child `DockState` value as `AutoHidden`.
 
-![](Auto-Hide-Window-images/Auto-Hide-Window-img1.jpeg)
+![Auto-Hide-Window-img1](Auto-Hide-Window-images/Auto-Hide-Window-img1.jpeg)
 
 
 ## Configuring Window in Different Side
@@ -46,7 +46,7 @@ documentation: ug
 
 {% endtabs %}
 
-![](Auto-Hide-Window-images/Auto-Hide-Window-img2.jpeg)
+![Auto-Hide-Window-img2](Auto-Hide-Window-images/Auto-Hide-Window-img2.jpeg)
 
 
 ## Side Panel and TabItem Customization
@@ -71,7 +71,7 @@ The side panel and side panel header can be customized through `SidePanelBackgro
 
 {% endtabs %}
 
-![](Auto-Hide-Window-images/Auto-Hide-Window-img3.jpeg)
+![Auto-Hide-Window-img3](Auto-Hide-Window-images/Auto-Hide-Window-img3.jpeg)
 
 
 ### Scrollable Panel
@@ -170,7 +170,7 @@ The Pin button, that performs Auto Hide functionality will be visible by default
 
 {% endtabs %}
 
-![](Auto-Hide-Window-images/Auto-Hide-Window-img4.jpeg)
+![Auto-Hide-Window-img4](Auto-Hide-Window-images/Auto-Hide-Window-img4.jpeg)
 
 
 To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, `IsPinButtonVisible` AttachedProperty can be used. By default, `IsPinButtonVisible` value is true. This functionality can be disabled by setting its value as false.
@@ -193,7 +193,7 @@ To show or collapse the AutoHide button for a specific child in the `SfDockingMa
 
 {% endtabs %}
 
-![](Auto-Hide-Window-images/Auto-Hide-Window-img5.jpeg)
+![Auto-Hide-Window-img5](Auto-Hide-Window-images/Auto-Hide-Window-img5.jpeg)
 
 
 To enable or disable the AutoHide functionality for a specific child in the `SfDockingManager`, `CanAutoHide` AttachedProperty can be used. By default, `CanAutoHide` value is true. This functionality can be disabled by setting its value as false.

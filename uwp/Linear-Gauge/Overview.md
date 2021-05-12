@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview| SfLinearGauge | uwp | Syncfusion
-description: Overview 
+title: About UWP Linear Gauge control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
-# Overview
+# UWP Linear Gauge (SfLinearGauge) Overview
 
 [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html)  displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and it is present in the horizontal, vertical sliding, or meter.
 
@@ -31,6 +31,6 @@ The [`Pointers`](https://help.syncfusion.com/uwp/sflineargauge/pointers)  suppor
 Annotations are used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
 
-![](Overview_images/Overview_img1.jpeg)
+![Overview_img1](Overview_images/Overview_img1.jpeg)
 
 

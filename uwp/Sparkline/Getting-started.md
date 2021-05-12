@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started for Sparkline
-description: A quick tour to initial users on Syncfusion Sparkline control for UWP Platform
+title: Getting Started with UWP Sparkline control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Sparkline (SfSparkline) control and more.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Sparkline (SfSparkline)
 
 The following section helps you to build your application with SfChart.
 

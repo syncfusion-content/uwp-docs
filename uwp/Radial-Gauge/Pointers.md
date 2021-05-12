@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pointers | SfCircularGauge | uwp | Syncfusion
-description: This section explains the steps required to add and customize pointers in Syncfusion Circular Gauge control for uwp 
+title: Pointers in UWP Radial Gauge control | Syncfusion
+description: Learn here all about Pointers support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Pointers and its customization
+# Pointers in UWP Radial Gauge (SfCircularGauge)
 
 Pointers are used to indicate values on the scale. Value of the pointer can be modified using the [`Value`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_Value) property.
 

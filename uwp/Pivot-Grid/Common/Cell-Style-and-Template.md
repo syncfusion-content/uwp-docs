@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Style And Template | SfPivotGrid | UWP | Syncfusion
-description: Cell Style And Template
+title: Cell Style and Template in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Cell Style and Template support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Cell Style and Template
+# Cell Style and Template in UWP Pivot Grid (SfPivotGrid)
 
 ## Cell style
 
@@ -103,7 +103,7 @@ Me.PivotGrid1.ColumnHeaderStyle.FontSize = 13
 
 {% endtabs %}
 
-![](Cell-Style-and-Template_images/PivotGrid-shows-customized-styles.png)
+![PivotGrid-shows-customized-styles](Cell-Style-and-Template_images/PivotGrid-shows-customized-styles.png)
 
 ## Cell template
 
@@ -232,7 +232,7 @@ End Class
 
 {% endtabs %}
 
-![](Cell-Style-and-Template_images/PivotGrid-shows-templated-cells.png)
+![PivotGrid-shows-templated-cells](Cell-Style-and-Template_images/PivotGrid-shows-templated-cells.png)
 
 A demo sample is available in the following location.
 

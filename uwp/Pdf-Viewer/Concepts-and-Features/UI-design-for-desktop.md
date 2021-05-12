@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating custom toolbar with Syncfusion Essential UWP PDF viewer.
-description: Learn about the Desktop support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details. 
+title: Desktop in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Desktop support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# UI design for desktop
+# Desktop in UWP Pdf Viewer (SfPdfViewer)
 
 ![customtoolbarimage](CustomToolbarImages/CustomToolbarImage22.png)
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Markers 
-description: Markers for sparkline
+title: Markers in UWP Sparkline control | Syncfusion
+description: Learn here all about Markers support in Syncfusion UWP Sparkline (SfSparkline) control and more.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
-# Markers
+# Markers in UWP Sparkline (SfSparkline)
 
 Markers are used to indicate the value point for line and area series, and we can customize with different template.It is applicable for LineSparkLine and AreaSparkLine
 

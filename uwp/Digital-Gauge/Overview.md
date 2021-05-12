@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview| SfDigitalGauge | uwp | Syncfusion
-description: Overview
+title: About UWP Digital Gauge control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Overview
+# UWP Digital Gauge (SfDigitalGauge) Overview
 
 The Digital Gauge control is used to display alphanumeric characters in digital (LED Display) mode. Digital gauge is used to display a range of values that uses character in combination with numbers. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering support in SfTreeGrid.
-description: How to filter the nodes programmatically in SfTreeGrid .
+title: Filtering in UWP TreeGrid control | Syncfusion
+description: Learn here all about Filtering support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Filtering
+# Filtering in UWP TreeGrid (SfTreeGrid)
 
 ## Overview
 
@@ -35,7 +35,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endtabs %}
 
 Here, `FilterNodes` delegate filters the data based on Salary. `FilterNodes` delegate is assigned to [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) predicate to filter the tree grid. After that, [SfTreeGrid.View.RefreshFilter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_RefreshFilter) method is called to refresh the nodes. If the node satisfies the filter conditions, true will be returned. Else false will be returned.
-![](Filtering_images/Filtering_img1.png)
+![Filtering_img1](Filtering_images/Filtering_img1.png)
 
 While filtering, if the node satisfies filter condition, [IsFiltered](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_IsFiltered) property of [TreeNode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) will be set as false. Else, it will be true. If `IsFiltered` value is True, the node will not be displayed in view, else it will be displayed in view.
 

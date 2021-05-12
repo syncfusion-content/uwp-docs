@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Header and Footer of Syncfusion Picker control for Xamarin.Android
-description: Dealing with Header and Footer of Picker control
+title: Dealing with Header and Footer in UWP Picker control | Syncfusion
+description: Learn here all about Dealing with Header and Footer support in Syncfusion UWP Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Dealing with Header and Footer
+# Dealing with Header and Footer in UWP Picker (SfPicker)
 
 This section explains about the header and footer customization of SfPicker.
 

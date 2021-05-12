@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfSpreadsheet 
-description: Overview and the features that are supported in SfSpreadsheet
+title: About UWP Spreadsheet control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Overview
+# UWP Spreadsheet (SfSpreadsheet) Overview
 
 The **SfSpreadsheet** is an Excel inspired control that allows you to create, edit, view and format the Microsoft Excel files without Excel installed. It provides absolute ease of use UI experience with integrated ribbon to cover any possible business scenario. SfSpreadsheet comes with built-in calculation engine with support for 400+ most widely used formulas. 
 

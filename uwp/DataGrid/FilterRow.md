@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filter row in UWP DataGrid control | Syncfusion
-description: Learn about filter data using built-in filter row support in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
+title: FilterRow in UWP DataGrid control | Syncfusion
+description: Learn here all about FilterRow support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# FilterRow
+# FilterRow in UWP DataGrid (SfDataGrid)
 
 SfDataGrid allows you to filter the data by typing the value in FilterRow which is placed either in top or bottom of the DataGrid. You can enable the FilterRow by specifying the position in [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FilterRowPosition) property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Cell Type
-description: How to customize a cell in SfCellGrid
+title: Custom Cell Type in UWP CellGrid control | Syncfusion
+description: Learn here all about Custom Cell Type support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
 
-# Custom Cell Type
+# Custom Cell Type in UWP CellGrid (SfCellGrid)
 
 SfCellGrid provides support to customize the cell by loading any user control into the cell.
 
@@ -189,7 +189,7 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 The following output is generated using the code above while the Cell(5,5) is in Edit mode.
 
-![](Custom_Cell_Type_images/SfCalendarCell.png)
+![SfCalendarCell](Custom_Cell_Type_images/SfCalendarCell.png)
 
 For more reference, please find the [customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/App2-57034699) sample.
 

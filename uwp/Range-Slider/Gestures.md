@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gestures supported by Syncfusion SfRangeSlider control for UWP
-description: Gestures supported by SfRangeSlider control for UWP  
+title: Gestures in UWP Range Slider control | Syncfusion
+description: Learn here all about Gestures support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Gestures  
+# Gestures in UWP Range Slider (SfRangeSlider)
 
 ## Keyboard 
 

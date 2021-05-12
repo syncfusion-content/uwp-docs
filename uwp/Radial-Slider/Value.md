@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Value of SfRadialSlider control for UWP
-description: Value of SfRadialSlider control for UWP
+title: Value in UWP Radial Slider control | Syncfusion
+description: Learn here all about Value support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Value
+# Value in UWP Radial Slider (SfRadialSlider)
 
 Gets or sets the value of the SfRadialSlider.
 
@@ -42,4 +42,4 @@ radialSlider.Value = 40
 
 The value can be changed by dragging the pointer along the circular track. 
 
-![](Concepts--and-Features_images/Concepts--and-Features_img1.png)
+![Concepts--and-Features_img1](Concepts--and-Features_images/Concepts--and-Features_img1.png)

@@ -1,61 +1,61 @@
 ---
 layout: post
-title: Swatches and Colors of SfColorPalette control for UWP
-description: Swatches and Colors of SfColorPalette control for UWP
+title: Navigation in UWP Color Palette control | Syncfusion
+description: Learn here all about Navigation support in Syncfusion UWP Color Palette (SfColorPalette) control and more.
 platform: uwp
 control: SfColorPalette
 documentation: ug
 ---
 
-# Swatches and Colors
+# Navigation in UWP Color Palette (SfColorPalette)
 
 SfColorPalette have swatch buttons, which opens a collection of color items on click under a swatch.
 
 **Apex**
 
-![](SfColorPalette-images/SfColorPalette-img5.jpeg)
+![SfColorPalette-img5](SfColorPalette-images/SfColorPalette-img5.jpeg)
 
 
 **HardCover**
 
-![](SfColorPalette-images/SfColorPalette-img6.jpeg)
+![SfColorPalette-img6](SfColorPalette-images/SfColorPalette-img6.jpeg)
 
 
 **Metro**
 
-![](SfColorPalette-images/SfColorPalette-img7.jpeg)
+![SfColorPalette-img7](SfColorPalette-images/SfColorPalette-img7.jpeg)
 
 
 **Module**
 
-![](SfColorPalette-images/SfColorPalette-img8.jpeg)
+![SfColorPalette-img8](SfColorPalette-images/SfColorPalette-img8.jpeg)
 
 
 **Office**
 
-![](SfColorPalette-images/SfColorPalette-img9.jpeg)
+![SfColorPalette-img9](SfColorPalette-images/SfColorPalette-img9.jpeg)
 
 
 **Paper**
 
-![](SfColorPalette-images/SfColorPalette-img10.jpeg)
+![SfColorPalette-img10](SfColorPalette-images/SfColorPalette-img10.jpeg)
 
 
 **Pushpin**
 
-![](SfColorPalette-images/SfColorPalette-img11.jpeg)
+![SfColorPalette-img11](SfColorPalette-images/SfColorPalette-img11.jpeg)
 
 
 **Solstice**
 
-![](SfColorPalette-images/SfColorPalette-img12.jpeg)
+![SfColorPalette-img12](SfColorPalette-images/SfColorPalette-img12.jpeg)
 
 
 **Urban**
 
-![](SfColorPalette-images/SfColorPalette-img13.jpeg)
+![SfColorPalette-img13](SfColorPalette-images/SfColorPalette-img13.jpeg)
 
 
 **WaveForm**
 
-![](SfColorPalette-images/SfColorPalette-img14.jpeg)
+![SfColorPalette-img14](SfColorPalette-images/SfColorPalette-img14.jpeg)

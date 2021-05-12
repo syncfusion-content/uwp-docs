@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SfBulletGraph | uwp | Syncfusion
-description: A quick tour to the initial users on the Syncfusion SfBulletGraph in UWP platform and also explains how to add a caption, configure the labels/ticks.
+title: Getting Started with UWP Bullet Graph control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Getting Started with SfBulletGraph
+# Getting Started with UWP Bullet Graph (SfBulletGraph)
 
 This section explains you the steps required to configure the **SfBulletGraph** and also explains the steps to add basic elements of **SfBulletGraph** through various API’s available within it.
 

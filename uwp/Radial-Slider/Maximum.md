@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Maximum constraint of SfRadialSlider control for UWP
-description: Dealing with Maximum constraint of SfRadialSlider control for UWP
+title: maximum in UWP Radial Slider control | Syncfusion
+description: Learn here all about maximum support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Maximum
+# maximum in UWP Radial Slider (SfRadialSlider)
 
 Gets or sets the maximum possible value.
 

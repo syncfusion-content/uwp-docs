@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoComplete functionality of Syncfusion SfTextBoxExt control
-description: Dealing with AutoComplete functionality of SfTextBoxExt control for UWP
+title: AutoComplete in UWP AutoComplete control | Syncfusion
+description: Learn here all about AutoComplete support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# AutoComplete
+# AutoComplete in UWP AutoComplete (SfTextBoxExt)
 
 AutoComplete functionality provides suggestions to the user while typing. There are several modes of suggestions. The suggested text can be appended to the original text or it can be displayed in a drop-down list so that user can choose from different options.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dealing with SmallChange of SfRadialSlider control for UWP
-description: Dealing with SmallChange of SfRadialSlider control for UWP
+title: Small Change in UWP Radial Slider control | Syncfusion
+description: Learn here all about Small Change support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
 
-# Small Change 
+# Small Change in UWP Radial Slider (SfRadialSlider)
 
 The SmallChange property can be used to control the smallest possible range of value to be selected in SfRadialSlider.  For example, if SmallChange is set to 5, then it is only possible to select values that are multiples of 5. 
 

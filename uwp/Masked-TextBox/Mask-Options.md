@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Mask Options| SfMaskedEdit | UWP | Syncfusion
-description: masktype
+title: Mask Options in UWP Masked TextBox control | Syncfusion
+description: Learn here all about Mask Options support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# Mask Options
+# Mask Options in UWP Masked TextBox (SfMaskedEdit)
 
 Each `MaskType` has different set of mask elements that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as,
 
@@ -84,9 +84,9 @@ maskedEdit.Mask="00/00/0000";
 
 {% endtabs %}
 
-![](MaskOptions_images/mask_option_image1.jpg)
+![mask_option_image1](MaskOptions_images/mask_option_image1.jpg)
 
-![](MaskOptions_images/mask_option_image2.jpg)
+![mask_option_image2](MaskOptions_images/mask_option_image2.jpg)
 
 ## Regular
 
@@ -152,9 +152,9 @@ maskedEdit.Mask = "(\d{0,3})\d{3}-\d{2}-\d{2}";
 
 {% endtabs %}
 
-![](MaskOptions_images/mask_option_image3.jpg)
+![mask_option_image3](MaskOptions_images/mask_option_image3.jpg)
 
-![](MaskOptions_images/mask_option_image4.jpg)
+![mask_option_image4](MaskOptions_images/mask_option_image4.jpg)
 
 ## RegEx
 
@@ -170,7 +170,7 @@ Example :
 
 For input “\d\w*\d” – The output can be “12” or “1a1” or “123”, because the “\w*” is optional. If the user type the input “1a” the character "a" will match with optional mask and the Masked text will be “1a_”. If the mask text is “12” and if the character “3” is typed, then the character “2” will be considered as optional mask and the masked text will be “123”.
 
-![](MaskOptions_images/mask_option_image5.jpg)
+![mask_option_image5](MaskOptions_images/mask_option_image5.jpg)
 
 ### Positive Lookahead Regex:
 
@@ -183,7 +183,7 @@ Example:
 
 For input “(?=123)\d{3}” – It will allow the first two digit and while entering the third digit it will validate the regex and restrict the input. It will allow the output only when the MaskText is “123” for this given input.
 
-![](MaskOptions_images/mask_option_image6.jpg)
+![mask_option_image6](MaskOptions_images/mask_option_image6.jpg)
 
 ### Negative Lookahead Regex:
 
@@ -195,7 +195,7 @@ Example:
 
 For input “(?!55)(?!000)(?!666)\d{3}” – \d{3} denotes that the output will be of 3 character length, “(?55)” denotes the value will not begin with “55” and the “(?!000)(?!666)” denotes the output cannot be “000” or “666”.
 
-![](MaskOptions_images/mask_option_image7.jpg)
+![mask_option_image7](MaskOptions_images/mask_option_image7.jpg)
 
 ### RegEx mask elements
 
@@ -317,9 +317,9 @@ maskedEdit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
 
 {% endtabs %}
 
-![](MaskOptions_images/mask_option_image8.jpg)
+![mask_option_image8](MaskOptions_images/mask_option_image8.jpg)
 
-![](MaskOptions_images/mask_option_image9.jpg)
+![mask_option_image9](MaskOptions_images/mask_option_image9.jpg)
 
 
 

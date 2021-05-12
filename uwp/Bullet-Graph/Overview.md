@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | SfBulletGraph | uwp | Syncfusion
-description: Overview 
+title: About UWP Bullet Graph control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Overview
+# UWP Bullet Graph (SfBulletGraph) Overview
 
 Bullet Graph is a variation of the bar graph, which is developed as a replacement for the dashboard gauges and meters. The bullet graph features a single, primary measure (for example, current year-to-date revenue), and compares that measure to one or more other measures to enrich its meaning (for example, compared to a target). It displays the measures in the context of the qualitative range of performance, such as poor, satisfactory, and good.
 

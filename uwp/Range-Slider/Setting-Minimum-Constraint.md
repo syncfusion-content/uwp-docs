@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Minimum constraint of Syncfusion SfRangeSlider control for UWP
-description:  Setting Minimum constraint of SfRangeSlider control for UWP 
+title: Setting Minimum Constraint in UWP Range Slider control | Syncfusion
+description: Learn here all about Setting Minimum Constraint support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Setting Minimum Constraint 
+# Setting Minimum Constraint in UWP Range Slider (SfRangeSlider)
 
 Gets or sets the minimum possible value of the range. 
 

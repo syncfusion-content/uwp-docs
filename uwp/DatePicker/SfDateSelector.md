@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Explains about DateSelector of SfDatePicker control for UWP
-description: Explains about the DateSelector of SfDatePicker control for UWP
+title: SfDateSelector in UWP DatePicker control | Syncfusion
+description: Learn here all about SfDateSelector support in Syncfusion UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# SfDateSelector
+# SfDateSelector in UWP DatePicker (SfDatePicker)
 
 The SfDateSelector control opens inside the drop-down popup.
 
-![](Features_images/Features_img3.png)
+![Features_img3](Features_images/Features_img3.png)
 
 
 nsfneklfne
@@ -48,7 +48,7 @@ The header property defines the top part of the SfDateSelector.
 
 {% endhighlight %}
 
-![](Features_images/Features_img4.png)
+![Features_img4](Features_images/Features_img4.png)
 
 
 
@@ -116,7 +116,7 @@ The header template property is used to decorate the header.
 
 
 
-![](Features_images/Features_img5.png)
+![Features_img5](Features_images/Features_img5.png)
 
 
 
@@ -189,7 +189,7 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
 {% endhighlight %}
 
-![](Features_images/Features_img7.png)
+![Features_img7](Features_images/Features_img7.png)
 
 
 ## MonthCellTemplate
@@ -253,7 +253,7 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
 {% endhighlight %}
 
-![](Features_images/Features_img8.png)
+![Features_img8](Features_images/Features_img8.png)
 
 
 
@@ -317,4 +317,4 @@ The YearCellTemplate property is used to decorate the year cell selection box.
 
 			{% endhighlight %}
 			
-![](Features_images/Features_img9.png)
+![Features_img9](Features_images/Features_img9.png)

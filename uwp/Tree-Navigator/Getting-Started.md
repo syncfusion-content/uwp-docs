@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started of SfTreeNavigator control | UWP | Syncfusion
-description: This section explains about the getting started with the important key features of TreeNavigator control for UWP project in Visual Studio. 
+title: Getting Started with UWP Tree Navigator control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Tree Navigator (SfTreeNavigator) control and more.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Tree Navigator (SfTreeNavigator)
 
 This section explains how to visualize hierarchal data in tree structure using `SfTreeNavigator` control.
 

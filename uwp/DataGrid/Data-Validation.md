@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation of SfDataGrid control for UWP 
-description: Data Validation of SfDataGrid control for UWP
+title: Data Validation in UWP DataGrid control | Syncfusion
+description: Learn here all about Data Validation support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Validation
+# Data Validation in UWP DataGrid (SfDataGrid)
 
 SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip. 
 
@@ -74,7 +74,7 @@ Enable built-in validation support by setting [SfDataGrid.GridValidationMode](ht
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img1.png)
+![Data-Validation_img1](Data-Validation_images/Data-Validation_img1.png)
 
 ### Built-in validation using Data Annotation
 
@@ -343,7 +343,7 @@ You can change the validation error template shape of the GridCell by changing t
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img2.png)
+![Data-Validation_img2](Data-Validation_images/Data-Validation_img2.png)
 
 #### Change the color of error icon
 
@@ -464,7 +464,7 @@ You can change the validation error template color of the GridCell by changing t
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img3.png)
+![Data-Validation_img3](Data-Validation_images/Data-Validation_img3.png)
 
 ### Customizing error tip
 
@@ -551,7 +551,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img4.png)
+![Data-Validation_img4](Data-Validation_images/Data-Validation_img4.png)
 
 ### Showing error details in RowHeader
 
@@ -572,7 +572,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img5.png)
+![Data-Validation_img5](Data-Validation_images/Data-Validation_img5.png)
 
 ## Validation with Master-Details View
 
@@ -616,7 +616,7 @@ private void DataGrid_AutoGeneratingRelations(object sender, AutoGeneratingRelat
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img6.png)
+![Data-Validation_img6](Data-Validation_images/Data-Validation_img6.png)
 
 ### Custom validation through events
 
@@ -827,7 +827,7 @@ void dataGrid_CurrentCellValueChanged(object sender, CurrentCellValueChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img7.png)
+![Data-Validation_img7](Data-Validation_images/Data-Validation_img7.png)
 
 ## Limitations 
 

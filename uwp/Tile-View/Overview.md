@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfTileView control | UWP | Syncfusion
-description: SfTileView control displays the items in tiles with supports to drag, reorder, minimize and maximize tiles.
+title: About UWP Tile View control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Overview
+# UWP Tile View (SfTileView) Overview
 
 `SfTileView` acts as a container that holds a set of tile view items that can contain any content. Items can be maximized, minimized, dragged to reorder and arranged in matrix position to achieve best layout.
 

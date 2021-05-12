@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtualization enable faster rendering | Syncfusion
-description: how to enable faster rendering in Diagram?
+title: Virtualization in UWP Diagram control | Syncfusion
+description: Learn here all about Virtualization support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Virtualization
+# Virtualization in UWP Diagram (SfDiagram)
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded (remaining objects are loaded only when they come into view).
 

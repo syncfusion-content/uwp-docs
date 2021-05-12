@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Manipulation in UWP DataGrid Controls | Syncfusion
-description: Learn about Data Manipulation Opeartions in Syncfusion UWP DataGrid (SfDataGrid) control and more details.
+title: Data Manipulation in UWP DataGrid control | Syncfusion
+description: Learn here all about Data Manipulation support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

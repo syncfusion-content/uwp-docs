@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Selecting Item of SfCarousel control for UWP
-description: Selecting Item of SfCarousel control for UWP
+title: Selecting Item in UWP Carousel control | Syncfusion
+description: Learn here all about Selecting Item support in Syncfusion UWP Carousel (SfCarousel) control and more.
 platform: uwp
 control: SfCarousel
 documentation: ug
 ---
-# Selecting Item
+# Selecting Item in UWP Carousel (SfCarousel)
 
 Items can be selected programmatically using the properties `SelectedIndex`, `SelectedItem`.
 

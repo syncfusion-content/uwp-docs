@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolbarCustomization | SfImageEditor | uwp | Syncfusion
-description: This section describes how to customize the toolbar items appearance, height, colorpalette and visibility.
+title: ToolbarCustomization in UWP Image Editor control | Syncfusion
+description: Learn here all about ToolbarCustomization support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Toolbar Customization
+# ToolbarCustomization in UWP Image Editor (SfImageEditor)
 
 You can change the default colors of the ColorPalette and visibility of the toolbar.
 

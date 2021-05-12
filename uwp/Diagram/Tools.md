@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Override default iteraction behavior | Syncfusion
-description: How to draw shapes or pan Diagram by clicking and dragging over the Diagram surface?
+title: Tools in UWP Diagram control | Syncfusion
+description: Learn here all about Tools support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Tools
+# Tools in UWP Diagram (SfDiagram)
 
 ## Drawing Tools
 

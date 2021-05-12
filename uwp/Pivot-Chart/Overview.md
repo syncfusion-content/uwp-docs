@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Pivot Chart Control | UWP | Syncfusion
-description: The pivot chart control is used to read and visualize the business information in the graphical format.
+title: About UWP Pivot Chart control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Overview
+# UWP Pivot Chart (SfPivotChart) Overview
 
 The SfPivotChart control provides a variety of charting features that allows you to visualize data from both OLAP and relational data sources with rich customization. It has built-in support for drill-down and drill-up.
 

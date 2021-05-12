@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Layout | SfPivotGrid | UWP | Syncfusion
-description: Grid Layout for SfPivotGrid with OLAP Data
+title: Grid Layout in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Grid Layout support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Grid Layout
+# Grid Layout in UWP Pivot Grid (SfPivotGrid)
 
 The position of summary cells in the SfPivotGrid can be customized with the help of `Layout` property. It can be positioned at the top or bottom of each parent member.
 
@@ -46,7 +46,7 @@ Me.PivotGrid1.Layout = GridLayout.Normal
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img1.png)
+![Grid-Layouts_img1](Grid-Layouts_images/Grid-Layouts_img1.png)
 
 **Excel-like layout**
 
@@ -76,7 +76,7 @@ Me.PivotGrid1.Layout = GridLayout.ExcelLikeLayout
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img2.png)
+![Grid-Layouts_img2](Grid-Layouts_images/Grid-Layouts_img2.png)
 
 **Normal top summary layout**
 
@@ -106,7 +106,7 @@ Me.PivotGrid1.Layout = GridLayout.NormalTopSummary
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img3.png)
+![Grid-Layouts_img3](Grid-Layouts_images/Grid-Layouts_img3.png)
 
 **No summaries layout**
 
@@ -136,7 +136,7 @@ Me.PivotGrid1.Layout = GridLayout.NoSummaries
 
 {% endtabs %}
 
-![](Grid-Layouts_images/Grid-Layouts_img4.png)
+![Grid-Layouts_img4](Grid-Layouts_images/Grid-Layouts_img4.png)
 
 A demo sample is available in the following location.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Do frequently used commands using Content Menu | Syncfusion
-description: How to execute frequently used commands by using context menu items?
+title: Context Menu in UWP Diagram control | Syncfusion
+description: Learn here all about Context Menu support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Context Menu
+# Context Menu in UWP Diagram (SfDiagram)
 
 In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. Diagram provided some in-build ContextMenu items and allows to define custom menu items.
 

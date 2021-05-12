@@ -1,12 +1,12 @@
 ---
-title: Import and Export |  SfRichTextBoxAdv | UWP | Syncfusion
-description: This section describes how to perform the import/export word, rich text format, HTML, XAML and text documents in UWP SfRichTextBoxAdv Control.
+title: Import and Export in UWP RichTextBox control | Syncfusion
+description: Learn here all about Import and Export support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: import, export, load, save
 ---
-# Import and Export in UWP RichTextBox
+# Import and Export in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv allows you to import/export word documents (.docx, .doc), rich text format documents (.rtf), HTML documents (.htm, .html) and text documents (.txt).
 The following sample code demonstrates how to import contents from storage file into SfRichTextBoxAdv.

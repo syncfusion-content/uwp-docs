@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoComplete LoadMore functionality of Syncfusion SfTextBoxExt control
-description: Learn how to restrict maximum suggestion to be displayed of SfTextBoxExt control 
+title: Maximum DisplayItem with Expander in UWP AutoComplete control | Syncfusion
+description: Learn here all about Maximum DisplayItem with Expander support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Maximum Display Item with Expander
+# Maximum DisplayItem with Expander in UWP AutoComplete (SfTextBoxExt)
 
 You can restrict the number of suggestions displayed and load the remaining items by selecting LoadMore. The maximum suggestion to be displayed can be restricted using the `MaximumSuggestion` property. You can set the desire text for the displaying the Load More text using the `LoadMoreText` property.
 

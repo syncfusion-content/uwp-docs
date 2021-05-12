@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion | Globalize and Localize the Diagram control.
-description: How to globalize and localize the Diagram control?
+title: Localization in UWP Diagram control | Syncfusion
+description: Learn here all about Localization support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Localization
+# Localization in UWP Diagram (SfDiagram)
 
 Localization is the process of providing controls in different cultures to help you set your own culture easily. Diagram provides localization support for Context Menu items.
 

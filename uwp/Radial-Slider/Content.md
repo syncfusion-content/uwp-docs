@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Content of SfRadialSlider control for UWP
-description: Setting Content of SfRadialSlider control for UWP
+title: Content in UWP Radial Slider control | Syncfusion
+description: Learn here all about Content support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Content
+# Content in UWP Radial Slider (SfRadialSlider)
 
 The Content property can be used to place any content inside the Inner Rim. 
 
@@ -21,4 +21,4 @@ The Content property can be used to place any content inside the Inner Rim.
 
 {% endhighlight %}
 
-![](Concepts--and-Features_images/Concepts--and-Features_img3.png)
+![Concepts--and-Features_img3](Concepts--and-Features_images/Concepts--and-Features_img3.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items of SfAccordion control for UWP
-description: Explains about Populating Items of SfAccordion control for UWP
+title: Populating Items in UWP Accordion control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion UWP Accordion (SfAccordion) control and more.
 platform: uwp
 control: SfAccordion
 documentation: ug
 ---
 
-# Populating Items
+# Populating Items in UWP Accordion (SfAccordion)
 
 `SfAccordionItem` can be added as items of `SfAccordion`. Items can be added using `Items` or `ItemsSource` property.
 
@@ -79,7 +79,7 @@ accordion.Items.Add(New SfAccordionItem())
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img1.jpeg)
+![Populating-Items-img1](Populating-Items-images/Populating-Items-img1.jpeg)
 
 ### Setting Header for Items
 
@@ -145,7 +145,7 @@ accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
 
 `SfAccordion` control is populated as follows:
 
-![](Populating-Items-images/Populating-Items-img2.jpeg)
+![Populating-Items-img2](Populating-Items-images/Populating-Items-img2.jpeg)
 
 ### Setting Content for Items
 
@@ -226,7 +226,7 @@ accordion.Items.Add(New SfAccordionItem() With {
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img3.jpeg)
+![Populating-Items-img3](Populating-Items-images/Populating-Items-img3.jpeg)
 
 ## Populating Items through Binding
 
@@ -362,7 +362,7 @@ Employees.Add(New Employee() With {
 
 `SfAccordion` control is populated as follows:
 
-![](Populating-Items-images/Populating-Items-img4.jpeg)
+![Populating-Items-img4](Populating-Items-images/Populating-Items-img4.jpeg)
 
 ### Setting Header for Items
 
@@ -378,7 +378,7 @@ Header can be displayed using the property `DisplayMemberPath`. This property is
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img5.jpeg)
+![Populating-Items-img5](Populating-Items-images/Populating-Items-img5.jpeg)
 
 `HeaderTemplate` property can also be used to display the header. `HeaderTemplateSelector` property is also provided to apply header template based on the selection logic. 
 
@@ -404,7 +404,7 @@ Header can be displayed using the property `DisplayMemberPath`. This property is
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img6.jpeg)
+![Populating-Items-img6](Populating-Items-images/Populating-Items-img6.jpeg)
 
 ### Setting Content for Items
 
@@ -432,4 +432,4 @@ Content can be displayed using the `ContentTemplate` property. Content can be vi
 
 {% endtabs %}
 
-![](Populating-Items-images/Populating-Items-img7.jpeg)
+![Populating-Items-img7](Populating-Items-images/Populating-Items-img7.jpeg)

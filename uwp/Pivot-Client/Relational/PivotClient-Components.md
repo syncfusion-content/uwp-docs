@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotClient Components | SfPivotClient | UWP | Syncfusion
-description: PivotClient Components
+title: PivotClient: Components in UWP Pivot Client control | Syncfusion
+description: Learn here all about PivotClient: Components support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Pivot Client: Components
+# PivotClient: Components in UWP Pivot Client (SfPivotClient)
 
 ## Pivot table field list
 
@@ -20,19 +20,19 @@ table field list is maintained with components listed below:
 * Axis element builder.
 * Show calculations as columns.
 
-![](PivotClient-Components_images/PivotTable-Field-List_image5.png)
+![PivotTable-Field-List_image5](PivotClient-Components_images/PivotTable-Field-List_image5.png)
 
 ### Pivot browser
 
 The pivot browser represents the collection of pivot items available in the data source. You can add the pivot items to rows or columns section by dragging and dropping pivot items from the browser to the required axis element builder.
 
-![](PivotClient-Components_images/PivotTable-Field-List_image1.png)
+![PivotTable-Field-List_image1](PivotClient-Components_images/PivotTable-Field-List_image1.png)
 
 ### Axis element builder
 
 The axis element builder is used to rearrange and reposition fields in the SfPivotClient. Based on fields in the section, the SfPivotGrid and the SfPivotChart will display the resultant data.
 
-![](PivotClient-Components_images/PivotTable-Field-List_image2.png)
+![PivotTable-Field-List_image2](PivotClient-Components_images/PivotTable-Field-List_image2.png)
 
 #### Filters
 
@@ -72,7 +72,7 @@ To remove the pivot item or pivot computation item from the axis element builder
 
 The following screenshot illustrates how to remove an item from the axis element builder.
 
-![](PivotClient-Components_images/PivotTable-Field-List_image3.png)
+![PivotTable-Field-List_image3](PivotClient-Components_images/PivotTable-Field-List_image3.png)
 
 **Rearranging items in axis**
 
@@ -80,13 +80,13 @@ The items in the axis can be rearranged by using the context menu available in t
 
 The following screenshot illustrates how to rearrange an item in the axis element builder.
 
-![](PivotClient-Components_images/PivotTable-Field-List_image4.png)
+![PivotTable-Field-List_image4](PivotClient-Components_images/PivotTable-Field-List_image4.png)
 
 ### Pivot computation information dialog
 
 The pivot computation information dialog is used to change or edit value formats, summary types, calculation types, and field header. It can be opened by double-clicking the fields in the values section.
 
-![](PivotClient-Components_images/pivotComputation_info-image.png)
+![pivotComputation_info-image](PivotClient-Components_images/pivotComputation_info-image.png)
 
 ### Filter editor dialog
 
@@ -96,7 +96,7 @@ Filter editor dialog is used to filter the values at runtime, so that it display
 
 The **Select All** option in the dialog allows users to select or unselect all fields for filtering.
 
-![](PivotClient-Components_images/PivotTable-Field-List_image6.png)
+![PivotTable-Field-List_image6](PivotClient-Components_images/PivotTable-Field-List_image6.png)
 
 ### Show calculations as columns
 
@@ -106,7 +106,7 @@ The SfPivotClient supports showing the calculation values in the columns or rows
 
 By default the following options are available in the toolbar.
 
-![](PivotClient-Components_images/Toolbar.png)
+![Toolbar](PivotClient-Components_images/Toolbar.png)
 
 * Expression field: Adds an expression field at runtime.
 * Custom summary: Changes the SummaryType into custom for existing pivot calculations.

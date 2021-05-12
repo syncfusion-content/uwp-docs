@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Palette| SfPivotChart | UWP | Syncfusion
-description: Palette
+title: Palette in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Palette support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Palette
+# Palette in UWP Pivot Chart (SfPivotChart)
 
 A pre-defined collection or a set of colors can be applied to the chart series. Palette can be used to provide a rich look for your business applications.
 
@@ -46,7 +46,7 @@ PivotChart1.ColorPalette = PivotChartColorPalette.AutumnBrights
 
 {% endtabs %}
 
-![](Palette_images/palette_AutumnBrights.png)
+![palette_AutumnBrights](Palette_images/palette_AutumnBrights.png)
 
 **Custom palette**
 
@@ -78,4 +78,4 @@ PivotChart1.CustomBrushes.Add(New SolidColorBrush(Colors.LightBlue))
 
 {% endtabs %}
 
-![](Palette_images/palette_Custom.png)
+![palette_Custom](Palette_images/palette_Custom.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling
-description: Appearance and Styling for Syncfusion SfProgressBar control for UWP
+title: Appearance and Styling in UWP Progress Bar control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Progress Bar (SfProgressBar) control and more.
 platform: UWP
 control: SfProgressBar
 documentation: ug
 --- 
 
-# Appearance and Styling
+# Appearance and Styling in UWP Progress Bar (SfProgressBar)
 
 ## Customizing the Hot Spots
 
@@ -33,7 +33,7 @@ progressBar.FillColor = new SolidColorBrush(Colors.Green);
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
+![Appearance-and-Styling-img1](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 
 The brush of background element (except Custom progress type) in the control can be changed using `BackRimFillColor` property. It can be set as given below:
@@ -58,7 +58,7 @@ progressBar.BackRimFillColor = new SolidColorBrush(Colors.PaleVioletRed);
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
+![Appearance-and-Styling-img2](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
 
 
 ## Customizing the Circular Progress Types
@@ -77,7 +77,7 @@ The Radius of ArcSegments in SolidCircular progress type can be increased using 
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img3.jpeg)
+![Appearance-and-Styling-img3](Appearance-and-Styling-images/Appearance-and-Styling-img3.jpeg)
 
 
 ### Increasing the StrokeThickness of ArcSegment
@@ -94,7 +94,7 @@ The `StrokeThickness` of ArcSegments in SolidCircular progress type can be incre
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img4.jpeg)
+![Appearance-and-Styling-img4](Appearance-and-Styling-images/Appearance-and-Styling-img4.jpeg)
 
 
 ## Customizing the SegmentedLinear Progress Type
@@ -116,7 +116,7 @@ The SegmentedLinear progress type can be customized as given below:
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
+![Appearance-and-Styling-img5](Appearance-and-Styling-images/Appearance-and-Styling-img5.jpeg)
 
 
 ### Increasing the Width of Progress Line Segment
@@ -131,7 +131,7 @@ The SegmentedLinear progress type can be customized as given below:
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img6.jpeg)
+![Appearance-and-Styling-img6](Appearance-and-Styling-images/Appearance-and-Styling-img6.jpeg)
 
 
 ### Increasing the Height of Progress Line Segment
@@ -146,7 +146,7 @@ The SegmentedLinear progress type can be customized as given below:
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
+![Appearance-and-Styling-img7](Appearance-and-Styling-images/Appearance-and-Styling-img7.jpeg)
 
 
 ### Adjusting the Spacing between Line Segments
@@ -161,6 +161,6 @@ The SegmentedLinear progress type can be customized as given below:
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img8.jpeg)
+![Appearance-and-Styling-img8](Appearance-and-Styling-images/Appearance-and-Styling-img8.jpeg)
 
 

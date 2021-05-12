@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging | SfPivotChart | UWP | Syncfusion
-description: Paging
+title: Paging in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Paging support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Paging
+# Paging in UWP Pivot Chart (SfPivotChart)
 
 The SfPivotGrid supports loading and rendering the large amount of data without any performance constraint.
 
@@ -73,4 +73,4 @@ End Sub
 
 {% endtabs %}
 
-![](Paging_images/enablePaging.png)
+![enablePaging](Paging_images/enablePaging.png)

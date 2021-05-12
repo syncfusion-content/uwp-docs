@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling of Syncfusion SfDomainUpDown control for UWP
-description: Appearance and Styling of Syncfusion SfDomainUpDown control for UWP
+title: Appearance and Styling in UWP Domain UpDown control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Domain UpDown (SfDomainUpDown) control and more.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP Domain UpDown (SfDomainUpDown)
 
 ## Spin Animation
 

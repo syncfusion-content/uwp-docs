@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Freeze Headers | SfPivotGrid | UWP | Syncfusion
-description: freeze headers
+title: Freeze Headers in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Freeze Headers support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Freeze Headers
+# Freeze Headers in UWP Pivot Grid (SfPivotGrid)
 
 The SfPivotGrid provides built-in support to freeze the column and row headers. This can be achieved by setting the `FreezeHeaders` property of SfPivotGrid to `true`.
 
@@ -39,7 +39,7 @@ Me.PivotGrid1.FreezeHeaders = True
 
 This is illustrated in the following screenshot.
 
-![](Freeze-Headers_images/FreezeHeaders_image2.png)
+![FreezeHeaders_image2](Freeze-Headers_images/FreezeHeaders_image2.png)
 
 A demo sample is available in the following location.
 

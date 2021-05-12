@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explains about Close and Scroll button functionalities of SfTabControl control for UWP
-description: Explains about Close and Scroll button functionalities of SfTabControl control for UWP
+title: Close and Scroll button functionalities in UWP Tab Control control | Syncfusion
+description: Learn here all about Close and Scroll button functionalities support in Syncfusion UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Close and Scroll button functionalities
+# Close and Scroll button functionalities in UWP Tab Control (SfTabControl)
 
 SfTabControl provides buttons to scroll and close tab items. 
 
@@ -55,7 +55,7 @@ tabControl.TabScrollButtonVisibility = Syncfusion.UI.Xaml.Controls.Navigation.Ta
 
 {% endtabs %}
 
-![](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img1.jpeg)
+![Close-and-Scroll-button-functionalities-img1](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img1.jpeg)
 
 
 ### PreviousTab event
@@ -247,32 +247,32 @@ tabControl.CloseButtonType = Syncfusion.UI.Xaml.Controls.Navigation.CloseButtonT
 
 **Common**
 
-![](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img2.jpeg)
+![Close-and-Scroll-button-functionalities-img2](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img2.jpeg)
 
 
 **Individual**
 
-![](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img3.jpeg)
+![Close-and-Scroll-button-functionalities-img3](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img3.jpeg)
 
 
 **Both**
 
-![](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img4.jpeg)
+![Close-and-Scroll-button-functionalities-img4](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img4.jpeg)
 
 
 **IndividualOnMouseOver**
 
-![](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img5.jpeg)
+![Close-and-Scroll-button-functionalities-img5](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img5.jpeg)
 
 
 **Extended**
 
-![](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img6.jpeg)
+![Close-and-Scroll-button-functionalities-img6](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img6.jpeg)
 
 
 **Hide**
 
-![](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img7.jpeg)
+![Close-and-Scroll-button-functionalities-img7](Close-and-Scroll-button-functionalities-images/Close-and-Scroll-button-functionalities-img7.jpeg)
 
 
 ## TabClosing event

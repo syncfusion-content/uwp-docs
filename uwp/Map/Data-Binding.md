@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in SfMaps control
-description: How to bind data to map control?
+title: Data Binding in UWP Map control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Data Binding in Map
+# Data Binding in UWP Map (SfMaps)
 
 The following properties expose data binding in the Maps control:
 
@@ -144,7 +144,7 @@ You can customize the shape’s color by using `ShapeFill`, `ShapeStroke` and
 
 {%endtabs%}
 
-![](Getting-Started_images/Getting-Started_img2.png)
+![Getting-Started_img2](Getting-Started_images/Getting-Started_img2.png)
 
 
 

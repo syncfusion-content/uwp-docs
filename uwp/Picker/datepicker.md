@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Demonstrate Date Picker using SfPicker of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
+title: Date Picker in UWP Picker control | Syncfusion
+description: Learn here all about Date Picker support in Syncfusion UWP Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Date Picker
+# Date Picker in UWP Picker (SfPicker)
 
 We have demonstrated in the following steps to create custom Date Picker using Picker control.
 
@@ -431,7 +431,7 @@ The below code demonstrates Date collection creation.
 
 Screen shot for the above code.
 
-![](images/DatePicker.png)
+![DatePicker](images/DatePicker.png)
 
 We have attached DatePicker sample for reference. Please download the sample from the following link.
 

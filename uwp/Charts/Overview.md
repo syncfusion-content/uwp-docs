@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | SfChart | uwp | Syncfusion
-description: What are the key features available in the Essential Chart for UWP.
+title: About UWP Charts control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Overview
+# UWP Charts (SfChart) Overview
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity and simplicity of use. [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) also provides a wide variety of charting features that are used to visualize large quantities of data, flexible data binding and user customization.
 

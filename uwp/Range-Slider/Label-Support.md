@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with label options in Syncfusion SfRangeSlider control for UWP
-description: Explains about label options in SfRangeSlider control for UWP
+title: Label Support in UWP Range Slider control | Syncfusion
+description: Learn here all about Label Support support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Label Support
+# Label Support in UWP Range Slider (SfRangeSlider)
 
 This feature allows users to display labels for custom values given in the CustomLabels collection when the ShowCustomLabels property is set to true. It also displays labels for all of the tick values when ShowValueLabels is set to true.
 

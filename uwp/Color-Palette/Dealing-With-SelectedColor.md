@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with SelectedColor of SfColorPalette control for UWP
-description: Dealing with SelectedColor of SfColorPalette control for UWP
+title: Dealing with SelectedColor in UWP Color Palette control | Syncfusion
+description: Learn here all about Dealing with SelectedColor support in Syncfusion UWP Color Palette (SfColorPalette) control and more.
 platform: uwp
 control: SfColorPalette
 documentation: ug
 ---
 
-# Dealing with SelectedColor
+# Dealing with SelectedColor in UWP Color Palette (SfColorPalette)
 
 Colors can be selected in `SfColorPickerPalette` by navigating between swatches
 
@@ -110,7 +110,7 @@ End Sub
 
 {% endtabs %}
 
-![](SfColorPalette-images/SfColorPalette-img4.jpeg)
+![SfColorPalette-img4](SfColorPalette-images/SfColorPalette-img4.jpeg)
 
 ## Navigation to Swatches
 

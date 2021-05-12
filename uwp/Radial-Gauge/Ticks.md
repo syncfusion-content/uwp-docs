@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks | SfCircularGauge | uwp | Syncfusion
-description: Ticks   
+title: Ticks in UWP Radial Gauge control | Syncfusion
+description: Learn here all about Ticks support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Ticks
+# Ticks in UWP Radial Gauge (SfCircularGauge)
 
 Ticks help you identify the gauge’s data value by marking the gauge scale in regular increments.
 
@@ -67,7 +67,7 @@ The length, stroke, and stroke thickness of a tick are set using the [`TickLengt
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img1.png)
+![Ticks_img1](Ticks_images/Ticks_img1.png)
 
 ### Customize minor ticks for scale
 
@@ -123,7 +123,7 @@ The length, stroke, and stroke thickness of a tick are set using the [`TickLengt
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img2.png)
+![Ticks_img2](Ticks_images/Ticks_img2.png)
 
 ## Setting shape for tick
 
@@ -185,7 +185,7 @@ The [`TickShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.C
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img3.png)
+![Ticks_img3](Ticks_images/Ticks_img3.png)
 
 ## Setting position for tick
 
@@ -249,7 +249,7 @@ The major and minor ticks can be positioned far away from the rim using the foll
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img4.png)
+![Ticks_img4](Ticks_images/Ticks_img4.png)
 
     2. Placing the ticks inside the scale, outside the scale, or across the scale by selecting one of the options available in the `TickPosition` property. 
     
@@ -312,4 +312,4 @@ The major and minor ticks can be positioned far away from the rim using the foll
 
 {% endtabs %}
 
-![](Ticks_images/Ticks_img5.png)
+![Ticks_img5](Ticks_images/Ticks_img5.png)

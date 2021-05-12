@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | DropDownButton Control | UWP
-description: This documentation provides details about creating DropDownButton control in UWP application.  
+title: Getting Started with UWP DropDown Button control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP DropDown Button (SfDropDownButton) control and more.
 
 platform: uwp
 control:  SfDropDownButton
 documentation: ug
 ---
-# Getting Started
+# Getting Started with UWP DropDown Button (SfDropDownButton)
 
 This section explains how to create the SfDropDownButton control.
 

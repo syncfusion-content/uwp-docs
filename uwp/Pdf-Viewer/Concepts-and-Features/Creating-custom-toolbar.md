@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Creating a PdfViewer application in Pdf Viewer | Syncfusion
-description: Learn about creating a simple Pdf Viewer application support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more details.
+title: Creating a simple PdfViewer application in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Creating a simple PdfViewer application support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Creating a simple PDF viewer application with a toolbar
+# Creating a simple PdfViewer application in UWP Pdf Viewer (SfPdfViewer)
 
 PdfViewer does not have a toolbar by default. But a custom toolbar can be designed at the sample with its buttons wired to the PdfViewer APIs. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features | SfChart | uwp | Syncfusion
-description: Explains the interactive features such as Tooltip, TrackBall, Visual Data Editing, ZoomPan, Selection, resizing Scrollbar , CrossHair.
+title: Interactive Features in UWP Charts control | Syncfusion
+description: Learn here all about Interactive Features support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in UWP Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides interactive features such as zooming, selection, and tracking data points.
 

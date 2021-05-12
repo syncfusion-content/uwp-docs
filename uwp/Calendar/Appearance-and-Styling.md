@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling and Templates of SfCalendar control for UWP
-description: Styling and Templates of SfCalendar control for UWP
+title: Appearance and Styling in UWP Calendar control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP Calendar (SfCalendar)
 
 Each and every part in SfCalendar can be customizable. And it can be customized as follows:
 
@@ -38,7 +38,7 @@ The active calendar day button template can be modified using `CellTemplate` pro
 
 {% endtabs %}
 
-![](SfCalendar-images/SfCalendar-img15.jpeg)
+![SfCalendar-img15](SfCalendar-images/SfCalendar-img15.jpeg)
 
 
 ## Customizing the Disabled Date Cell
@@ -93,7 +93,7 @@ calendar.VisibleMaxDate = New Date(2015, 12, 25)
 {% endtabs %}
 
 
-![](SfCalendar-images/SfCalendar-img16.jpeg)
+![SfCalendar-img16](SfCalendar-images/SfCalendar-img16.jpeg)
 
 
 ## Customizing Day Name Cell 
@@ -122,7 +122,7 @@ The template of day names can also be modified using `DayNameCellTemplate` prope
 
 {% endtabs %}
 
-![](SfCalendar-images/SfCalendar-img17.jpeg)
+![SfCalendar-img17](SfCalendar-images/SfCalendar-img17.jpeg)
 
 
 ## Customizing Header
@@ -151,7 +151,7 @@ The template of header in SfCalendar can be modified using `HeaderTemplate` prop
 
 {% endtabs %}
 
-![](SfCalendar-images/SfCalendar-img18.jpeg)
+![SfCalendar-img18](SfCalendar-images/SfCalendar-img18.jpeg)
 
 
 ## Changing Selected Date Background
@@ -184,7 +184,7 @@ calendar.SelectedDateBackground = New SolidColorBrush(Windows.UI.Colors.Red)
 
 {% endtabs %}
 
-![](SfCalendar-images/SfCalendar-img19.jpeg)
+![SfCalendar-img19](SfCalendar-images/SfCalendar-img19.jpeg)
 
 
 ## Customizing Scroll Button
@@ -360,7 +360,7 @@ Margin="-1,0,-1,0" RenderTransformOrigin="0.5,0.5">
 {% endtabs %}
 
 
-![](SfCalendar-images/SfCalendar-img20.jpeg)
+![SfCalendar-img20](SfCalendar-images/SfCalendar-img20.jpeg)
 
 ## Refresh the Layout
 

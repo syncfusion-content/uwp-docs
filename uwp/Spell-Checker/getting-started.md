@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfSpellChecker control in UWP
-description: Getting Started with SfSpellChecker control in UWP
+title: Getting Started with UWP Spell Checker control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Spell Checker (SfSpellChecker) control and more.
 platform: UWP
 control: SfSpellChecker
 documentation: ug
 --- 
 
-# Getting Started
+# Getting Started with UWP Spell Checker (SfSpellChecker)
 
 Spell checking operation can be done on Text editor controls through `SfSpellChecker` in UWP application by implementing `IEditorProperties` interface.
 
@@ -198,7 +198,7 @@ SpellChecker.PerformSpellCheckUsingDialog(Editor);
 
 {% endtabs %}
 
-![](getting-started-images/getting-started.jpeg)
+![getting-started](getting-started-images/getting-started.jpeg)
 
 
 6 . Selected word in suggestion list can be replaced click Replace button in the spell check dialog.

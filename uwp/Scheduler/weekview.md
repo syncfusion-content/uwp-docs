@@ -1,14 +1,14 @@
 ---
 
 layout: post
-title: Customize the Schedule weekview at SfSchedule control for UWP
-description: Learn how to Customize the schedule weekview in SfSchedule control
+title: Week View in UWP Scheduler control | Syncfusion
+description: Learn here all about Week View support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: UWP
 control: SfSchedule
 documentation: ug
 
 ---
-# WeekView
+# Week View in UWP Scheduler (SfSchedule)
 
 WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
 
@@ -43,7 +43,7 @@ You can customize the default appearance of view header in [Week](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/viewheader_week.png)
+![viewheader_week](daymodule_images/viewheader_week.png)
 
 ## Change Time Interval
 You can customize the interval of timeslots in `WeekView`.
@@ -69,7 +69,7 @@ You can customize the interval of timeslots in `WeekView` by setting [TimeInterv
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/timeinterval_week.png)
+![timeinterval_week](daymodule_images/timeinterval_week.png)
 
 ### CustomTimeInterval
 You can customize the interval of timeslots in `WeekView` by setting [CustomTimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_CustomTimeInterval) property of `SfSchedule`.
@@ -91,7 +91,7 @@ You can customize the interval of timeslots in `WeekView` by setting [CustomTime
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/customtimeinterval_week.png)
+![customtimeinterval_week](daymodule_images/customtimeinterval_week.png)
 
 ## Change Working hours
 Working hours in `WeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHour) and [WorkEndHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHour) properties of `SfSchedule`.
@@ -117,7 +117,7 @@ Working hours in `WeekView` of Schedule control will be differentiated with non-
 {% endhighlight %}
 {% endtabs %}
 
-![](daymodule_images/changeworkinghours_week.png)
+![changeworkinghours_week](daymodule_images/changeworkinghours_week.png)
 
 >**Note**:
 `WorkStartHour` and `WorkEndHour` should be in integer value to represent hours.
@@ -155,7 +155,7 @@ You can customize the appearance of the working hour timeslots by its color usin
             WorkStartHour="9" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timeslotappearance_week.png)
+![timeslotappearance_week](daymodule_images/timeslotappearance_week.png)
 
 ## Non-Accessible timeslots
 
@@ -186,7 +186,7 @@ You can restrict or allocate certain timeslot as Non-accessible blocks by using 
         </Schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/nonaccessibleblock_week.png)
+![nonaccessibleblock_week](daymodule_images/nonaccessibleblock_week.png)
 
 >**Note**:
 Selection and related events will not be working in this blocks.
@@ -206,7 +206,7 @@ By default, schedule control will be rendered with Sunday as the first day of th
     <Schedule:SfSchedule FirstDayOfWeek="Tuesday" ScheduleType="Week" /> 
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/firstdayofweek_week.png)
+![firstdayofweek_week](daymodule_images/firstdayofweek_week.png)
 
 ## Time Label Formatting
 You can customize the format for the labels which are mentioning the time, by setting [MajorTickTimeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MajorTickTimeFormat) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MinorTickTimeFormat) properties of `SfSchedule`.
@@ -227,7 +227,7 @@ You can customize the format for the labels which are mentioning the time, by se
             ScheduleType="Week" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timelabelformat_week.png)
+![timelabelformat_week](daymodule_images/timelabelformat_week.png)
 
 ## Time Label Appearance
 
@@ -249,7 +249,7 @@ You can customize the color for the labels which are mentioning the time, by set
             ScheduleType="Week" />
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/timelabelappearance_week.png)
+![timelabelappearance_week](daymodule_images/timelabelappearance_week.png)
 
 ## Selection:
 You can customize the default appearance of selection UI in the timeslots.
@@ -284,7 +284,7 @@ You can customize the timeslot selection by using [ScheduleSelectionStyle](https
         </Schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/selectionstyle_week.png)
+![selectionstyle_week](daymodule_images/selectionstyle_week.png)
 
 ### Selection customization using custom View:
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_SelectionView) property of `SfSchedule`.
@@ -307,7 +307,7 @@ You can replace the default selection UI with your custom view by setting [Selec
         </Schedule:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/custoselectionview_week.png)
+![custoselectionview_week](daymodule_images/custoselectionview_week.png)
 
 >**Note:**
 Selection customization is applicable for time slots alone.
@@ -354,7 +354,7 @@ Resource can be added to the schedule control by setting [Resource](https://help
 
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/addresource_week.png)
+![addresource_week](daymodule_images/addresource_week.png)
 
 ### Sub Resource
 
@@ -424,7 +424,7 @@ SubResourceType enables users to view appointments based on their subcategory on
         </syncfusion:SfSchedule>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/subresource_week.png)
+![subresource_week](daymodule_images/subresource_week.png)
 
 ### Changing resource order
 #### Order by Date
@@ -442,7 +442,7 @@ DayHeaderOrder property is used to set the order by which resources must be disp
         Resource="Hospital" DayHeaderOrder="OrderByDate"/>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/orderbydate_week.png)
+![orderbydate_week](daymodule_images/orderbydate_week.png)
 
 #### Order by resource
 DayHeaderOrder property is used to set the order by which resources must be displayed. OrderByResource will be displaying the resource based on resource collection. 
@@ -459,4 +459,4 @@ DayHeaderOrder property is used to set the order by which resources must be disp
                        Resource="Hospital" DayHeaderOrder="OrderByResource"/>
 {% endhighlight %}
 {% endtabs %}
-![](daymodule_images/orderbyresource_week.png)
+![orderbyresource_week](daymodule_images/orderbyresource_week.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfCalculator control for UWP
-description: Overview of SfCalculator control which is a standalone calculator control that provide options to perform basic arithmetic operations.
+title: About UWP Calculator control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Calculator (SfCalculator) control and more.
 platform: uwp
 control: SfCalculator
 documentation: ug
 ---
 
-# Overview
+# UWP Calculator (SfCalculator) Overview
 
 `SfCalculator` control allows you to perform basic mathematical operations without switching to external applications.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started of SfDockingManager control | UWP | Syncfusion
-description: Getting started section provide details about how to use the SfDockingManager control in the UWP application.
+title: Getting Started with UWP Docking control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Docking (SfDockingManager)
 
 This section explains how to implement a similar UI as Visual Studio using the `SfDockingManager`.
 

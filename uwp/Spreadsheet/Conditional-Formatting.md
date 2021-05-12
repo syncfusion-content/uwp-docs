@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Formatting in SfSpreadsheet | Syncfusion
-description: How to apply conditional formatting rules at run time in SfSpreadsheet.
+title: Conditional Formatting in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Conditional Formatting support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Conditional Formatting 
+# Conditional Formatting in UWP Spreadsheet (SfSpreadsheet)
 
 This section explains about how to apply conditional formatting rules programmatically at run time in SfSpreadsheet.
 

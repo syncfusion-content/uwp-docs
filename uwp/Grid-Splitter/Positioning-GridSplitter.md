@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Positioning GridSplitter of SfGridSplitter control for UWP
-description: Positioning GridSplitter of SfGridSplitter control for UWP
+title: Positioning GridSplitter in UWP Grid Splitter control | Syncfusion
+description: Learn here all about Positioning GridSplitter support in Syncfusion UWP Grid Splitter (SfGridSplitter) control and more.
 platform: uwp
 control: SfGridSplitter
 documentation: ug
 ---
 
-# Positioning GridSplitter
+# Positioning GridSplitter in UWP Grid Splitter (SfGridSplitter)
 
 `SfGridSplitter` can be positioned in Horizontal and Vertical orientation.
 
@@ -43,7 +43,7 @@ To position a GridSplitter horizontally, split the container into rows and place
 
 {% endtabs %}
 
-![](Positioning-GridSplitter-images/Positioning-GridSplitter-img1.jpeg)
+![Positioning-GridSplitter-img1](Positioning-GridSplitter-images/Positioning-GridSplitter-img1.jpeg)
 
 ## Vertical GridSplitter
 
@@ -77,7 +77,7 @@ To position a GridSplitter vertically, split the container into columns and plac
 
 {% endtabs %}
 
-![](Positioning-GridSplitter-images/Positioning-GridSplitter-img2.jpeg)
+![Positioning-GridSplitter-img2](Positioning-GridSplitter-images/Positioning-GridSplitter-img2.jpeg)
 
 ## Move splitter programmatically
 

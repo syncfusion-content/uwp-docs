@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Types in SfCellGrid
-description: This section explains on different kinds of cell types available in SfCellGrid.
+title: Cell Types in UWP CellGrid control | Syncfusion
+description: Learn here all about Cell Types support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
 
-# Cell Types
+# Cell Types in UWP CellGrid (SfCellGrid)
 
 SfCellGrid allows the inclusion of some special controls in the cells. This attribute of a grid cell is referred to as its Cell Type.
 

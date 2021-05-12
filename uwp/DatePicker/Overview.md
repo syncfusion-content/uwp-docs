@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfDatePicker control | UWP | Syncfusion
-description: SfDatePicker control allows the user to select a date and edit the date input. It includes features such as date formatting, minimum and maximum dates, etc.
+title: About UWP DatePicker control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# Overview
+# UWP DatePicker (SfDatePicker) Overview
 
 The SfDatePicker control allows the user to select date values in a touch friendly manner.
 

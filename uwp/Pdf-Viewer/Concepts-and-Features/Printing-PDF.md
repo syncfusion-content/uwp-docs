@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing PDF in Syncfusion Essential UWP PDF viewer.
-description: Printing PDF in Syncfusion Essential UWP PDF viewer using the Print method or by using the Print command.
+title: Printing PDF in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Printing PDF support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Printing PDF in UWP PDF viewer
+# Printing PDF in UWP Pdf Viewer (SfPdfViewer)
 
 Printing can be done using the Print method or by using the Print command.
 
@@ -151,7 +151,7 @@ private void PdfViewer_PrintTaskRequested(object sender, SfPdfViewerPrintTaskReq
                 printTask.Options.PageRangeOptions.AllowAllPages = true;
                 printTask.Options.PageRangeOptions.AllowCustomSetOfPages = true;
 
-                // Set the pdfViewerControl’s print document source
+                // Set the pdfViewerControlï¿½s print document source
                 sourceRequested.SetSource(e.PrintDocumentSource);
                 e.PrintTask = printTask;
 
@@ -174,7 +174,7 @@ pdfViewerControl.PrintTaskRequested+= PrintTaskRequested;
             printTask = e.Request.CreatePrintTask("Printing", sourceRequested =>
             {
 
-                // Set the SfPdfViewerControl’s print document source
+                // Set the SfPdfViewerControlï¿½s print document source
                 sourceRequestedArgs.SetSource(e.PrintDocumentSource);
 
             });

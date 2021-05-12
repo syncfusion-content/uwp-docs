@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion diagram represents the data or entities visually.
-description: How to visually represent the geometrical information and process flows as nodes and how to customize their appearance?
+title: Node in UWP Diagram control | Syncfusion
+description: Learn here all about Node support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug

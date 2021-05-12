@@ -1,12 +1,12 @@
 ---
-title: Styles and Templates
-description: styles-and-templates
+title: Styles and Templates in UWP RichTextBox control | Syncfusion
+description: Learn here all about Styles and Templates support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: styles-and-templates, custom-style
 ---
-# Styles and Templates
+# Styles and Templates in UWP RichTextBox (SfRichTextBoxAdv)
 
 This section describes the styles and templates for the SfRichTextBoxAdv control. The Template defines the structure of the SfRichTextBoxAdv control and the Style defines its visual appearance. You can modify the default Control template to define a unique appearance for the control.
 The following XAML shows the default style and template for the SfRichTextBoxAdv control.
@@ -112,5 +112,5 @@ The following code example demonstrates how to apply the custom style for RichTe
 {% endtabs %}
 
 The following screenshot shows the SfRichTextBoxAdv control with customized style.
-![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
+![Styles-and-Templates_img1](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 

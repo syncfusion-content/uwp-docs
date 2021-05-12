@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started of SfGridSplitter control | UWP | Syncfusion
-description: Getting started section provide details about how to use the SfGridSplitter control in the UWP application.
+title: Getting Started with UWP Grid Splitter control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Grid Splitter (SfGridSplitter) control and more.
 platform: uwp
 control: SfGridSplitter
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Grid Splitter (SfGridSplitter)
 
 This section explains how to create snapping styled splitter using `SfGridSplitter` control.
 

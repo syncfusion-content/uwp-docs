@@ -1,12 +1,12 @@
 ---
-title: Table
-description: table
+title: Table in UWP RichTextBox control | Syncfusion
+description: Learn here all about Table support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: table
 ---
-# Table
+# Table in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv allows you to add tables into the rich text document. You can insert any rows or columns to the existing table and also can delete existing rows and columns. The SfRichTextBoxAdv also allows you to merge the selected cells into one (both vertically and horizontally).
 The following code example illustrates how to add tables into the rich text document.

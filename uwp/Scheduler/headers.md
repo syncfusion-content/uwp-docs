@@ -1,13 +1,13 @@
 ---     
 layout: post     
-title: Header appearance and customization in Syncfusion SfSchedule control for UWP     
-description: Learn how to customize header in SfSchedule control 
+title: Headers in UWP Scheduler control | Syncfusion
+description: Learn here all about Headers support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: uwp    
 control: SfSchedule     
 documentation: ug 
 ---  
 
-# Header
+# Headers in UWP Scheduler (SfSchedule)
 
 You can customize the header of the Schedule using [SfSchedule.ScheduleHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleHeaderStyle) property in Schedule and [ScheduleHeaderStyle.HeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderHeight) property in `ScheduleHeaderStyle` of Schedule.
 
@@ -66,7 +66,7 @@ You can change the background color,text style and text size using properties su
 {% endhighlight %}
 {% endtabs %} 
 
-![](Header_images/HeaderStyle.png) 
+![HeaderStyle](Header_images/HeaderStyle.png) 
 
 ## Loading Custom Headers
 

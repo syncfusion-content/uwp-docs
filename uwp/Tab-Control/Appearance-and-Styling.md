@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling of SfTabControl control for UWP
-description: Appearance and Styling of SfTabControl control for UWP
+title: Appearance and Styling in UWP Tab Control control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Tab Control (SfTabControl) control and more.
 platform: UWP
 control: SfTabControl
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP Tab Control (SfTabControl)
 
 ## Customizing item header
 
@@ -48,7 +48,7 @@ The header of tab item can be customized using the HeaderTemplate property. Head
 {% endtabs %}
 
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
+![Appearance-and-Styling-img1](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 
 ## Customizing content transitions

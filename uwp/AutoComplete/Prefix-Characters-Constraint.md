@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Minimum Prefix Characters of AutoComplete in Syncfusion SfTextBoxExt.
-description: Learn how to set minimum Prefix Characters of AutoComplete in SfTextBoxExt control
+title: Prefix Characters Constraint in UWP AutoComplete control | Syncfusion
+description: Learn here all about Prefix Characters Constraint support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Prefix Characters Constraint
+# Prefix Characters Constraint in UWP AutoComplete (SfTextBoxExt)
 
 Instead of displaying suggestion list on each character entry, matches can be filtered and displayed after a few character entries. This can be done using the `MinimumPrefixCharacters` property, and its default value is 1.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Summary Types | SfPivotClient | UWP | Syncfusion
-description: Summary Types
+title: Summary Types in UWP Pivot Client control | Syncfusion
+description: Learn here all about Summary Types support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Summary Types
+# Summary Types in UWP Pivot Client (SfPivotClient)
 
 The SfPivotClient supports summarizing the data for various data types by using the `SummaryType` property. This property should be defined while defining the pivot calculation by using the `PivotComputationInfo` class to specify the summary type. It holds the following summary types:
 
@@ -56,7 +56,7 @@ PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With { _
 
 {% endtabs %}
 
-![](Summary-Types_images/custom_summary_type-image1.png)
+![custom_summary_type-image1](Summary-Types_images/custom_summary_type-image1.png)
 
 ## DisplayIfDiscreteValuesEqual SummaryType
 
@@ -102,4 +102,4 @@ PivotClient1.PivotCalculations.Add(New PivotComputationInfo() With { _
 
 {% endtabs %}
 
-![](Summary-Types_images/custom_summary_type-image2.png)
+![custom_summary_type-image2](Summary-Types_images/custom_summary_type-image2.png)

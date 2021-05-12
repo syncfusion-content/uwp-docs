@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with the Selector Item Customization of the SfDatePicker control for UWP
-description: Deals with the Selector Item Customization of the SfDatePicker control for UWP
+title: SelectorItem Customization in UWP DatePicker control | Syncfusion
+description: Learn here all about SelectorItem Customization support in Syncfusion UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# SelectorItem Customization
+# SelectorItem Customization in UWP DatePicker (SfDatePicker)
 
 ## SelectorItemWidth and SelectorItemHeight
 
@@ -77,7 +77,7 @@ datePicker.SelectorItemCount = 4;
 
 The output is displayed in the following image:
 
-![](Features_images/Features_img10.png)
+![Features_img10](Features_images/Features_img10.png)
 
 
 

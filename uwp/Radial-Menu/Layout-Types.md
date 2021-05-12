@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout Types of SfRadialMenu  control for UWP
-description: Layout Types of SfRadialMenu  control for UWP
+title: Layout Types in UWP Radial Menu control | Syncfusion
+description: Learn here all about Layout Types support in Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
 ---
 
-# Layout Types
+# Layout Types in UWP Radial Menu (SfRadialMenu)
 
 There are two different layout types available for SfRadialMenu. 
 

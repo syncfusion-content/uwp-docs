@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with text markup annotations in Syncfusion Essential UWP PDF viewer.
-description: Working with text markup annotations in Syncfusion Essential UWP PDF viewer.
+title: Working with text markup annotations in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Working with text markup annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Selection in SfMaps control
-description: How to select map shapes?
+title: Map Selection in UWP Map control | Syncfusion
+description: Learn here all about Map Selection support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Map Selection
+# Map Selection in UWP Map (SfMaps)
 
 Each shape in the map can be selected and unselected when interacted with shapes. There are two ways to select the map shapes:
 
@@ -37,7 +37,7 @@ Single selection allows only one map shape to be selected at a time. You can sel
 
 {% endhighlight %}
 
-![](Features_images/Features_img17.png)
+![Features_img17](Features_images/Features_img17.png)
 
 ## Multi Selection
 
@@ -60,4 +60,4 @@ Multiple shapes in the map can be selected when `EnableMultiSelection` of ShapeF
 {% endhighlight %}
 
 
-![](Features_images/Features_img16.png)
+![Features_img16](Features_images/Features_img16.png)

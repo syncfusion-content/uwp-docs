@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection Style of SfTabControl control for UWP
-description: Selection Style of SfTabControl control for UWP
+title: Selection Style in UWP Tab Control control | Syncfusion
+description: Learn here all about Selection Style support in Syncfusion UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Selection style 
+# Selection Style in UWP Tab Control (SfTabControl)
 
 Header of a selected item can be customized in SfTabControl.
 
@@ -66,7 +66,7 @@ Paul.SelectedForeground = New SolidColorBrush(Colors.Red)
 
 {% endtabs %}
 
-![](Selection-Style-images/Selection-Style-img1.jpeg)
+![Selection-Style-img1](Selection-Style-images/Selection-Style-img1.jpeg)
 
 
 ## Setting Selected Background
@@ -119,6 +119,6 @@ Paul.SelectedForeground = New SolidColorBrush(Colors.Red)
 {% endtabs %}
 
 
-![](Selection-Style-images/Selection-Style-img2.jpeg)
+![Selection-Style-img2](Selection-Style-images/Selection-Style-img2.jpeg)
 
 

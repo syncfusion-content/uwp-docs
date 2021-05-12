@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Z-Ordering in Syncfusion SfImageEditor control in Xamarin.Forms
-description: This section describes how to move shapes to front and back in Syncfusion SfImageEditor control for UWP
+title: Z-Ordering in UWP Image Editor control | Syncfusion
+description: Learn here all about Z-Ordering support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: UWP
 control: ImageEditor
 documentation: ug
 ---
 
-# Moving shapes to front and back
+# Z-Ordering in UWP Image Editor (SfImageEditor)
 
 The image editor control allows to change the position of shapes/edits that are arranged over the editor. This can be achieved using the following methods:
 

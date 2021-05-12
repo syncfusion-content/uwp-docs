@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explains about change placement of TabItems in SfTabControl control for UWP
-description: Explains about change placement of TabItems in SfTabControl control for UWP
+title: TabStripPlacement and Menu in UWP Tab Control control | Syncfusion
+description: Learn here all about TabStripPlacement and Menu support in Syncfusion UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# TabStripPlacement and menu
+# TabStripPlacement and Menu in UWP Tab Control (SfTabControl)
 
 ## Change placement of Tabs
 
@@ -56,7 +56,7 @@ tabControl.TabStripPlacement = Syncfusion.UI.Xaml.Controls.Navigation.TabStripPl
 
 {% endtabs %}
 
-![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img1.jpeg)
+![TabStripPlacement-and-menu-img1](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img1.jpeg)
 
 
 ## TabStripMenu
@@ -104,7 +104,7 @@ tabControl.ShowTabstripMenu = True
 
 {% endtabs %}
 
-![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img2.jpeg)
+![TabStripPlacement-and-menu-img2](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img2.jpeg)
 
 
 ### Adding custom items to TabStrip menu
@@ -156,7 +156,7 @@ tabControl.TabstripMenuItems.Add("Custom")
 
 {% endtabs %}
 
-![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img3.jpeg)
+![TabStripPlacement-and-menu-img3](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img3.jpeg)
 
 
 ### Customizing TabStrip menu item
@@ -195,6 +195,6 @@ Tab strip menu items can be customized using the TabStripMenuItemTemplate proper
 
 {% endtabs %}
 
-![](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img4.jpeg)
+![TabStripPlacement-and-menu-img4](TabStripPlacement-and-menu-images/TabStripPlacement-and-menu-img4.jpeg)
 
 

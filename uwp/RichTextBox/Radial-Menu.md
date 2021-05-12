@@ -1,12 +1,12 @@
 ---
-title: UWP Radial Menu | Syncfusion
-description: radial-menu
+title: Radial Menu in UWP RichTextBox control | Syncfusion
+description: Learn here all about Radial Menu support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: radial-menu
 ---
-# Radial Menu
+# Radial Menu in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv supports built-in radial menu to provide rich text formatting options such as bold, italic etc.
 The following screenshot shows built-in radial menu for SfRichTextBoxAdv control.

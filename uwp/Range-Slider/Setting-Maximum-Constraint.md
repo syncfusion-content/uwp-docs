@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Maximum constraint of Syncfusion SfRangeSlider control for UWP
-description: Setting Maximum constraint of SfRangeSlider control for UWP 
+title: Setting Maximum Constraint in UWP Range Slider control | Syncfusion
+description: Learn here all about Setting Maximum Constraint support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Setting Maximum Constraint
+# Setting Maximum Constraint in UWP Range Slider (SfRangeSlider)
 
 Gets or sets the maximum possible value of the range.
 

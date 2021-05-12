@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Input Gesture Text
-description: Input Gesture Text support for SfMenuItem in Syncfusion SfMenu control for UWP
+title: Input Gesture Text in UWP Menu control | Syncfusion
+description: Learn here all about Input Gesture Text support in Syncfusion UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug
 --- 
 
 
-# Input Gesture Text
+# Input Gesture Text in UWP Menu (SfMenu)
 
 `InputGestureText` is used to set `SfMenuItem` to display shortcut keys along with its Header. This support can be utilized by using the `InputGestureText` property. The value given by using this property will be displayed along with the Header of `SfMenuItem`.
 
@@ -59,5 +59,5 @@ The value assigned by `InputGestureText` property will be displayed in `SfMenuIt
 
 {% endtabs %}
 
-![](Input-Gesture-Text-images/Input-Gesture-Text-img1.jpg)
+![Input-Gesture-Text-img1](Input-Gesture-Text-images/Input-Gesture-Text-img1.jpg)
 

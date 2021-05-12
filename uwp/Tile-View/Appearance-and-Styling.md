@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling of SfTileView control for UWP
-description: Appearance and Styling of SfTileView control for UWP
+title: Appearance and Styling in UWP Tile View control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP Tile View (SfTileView)
 
 ## Customizing item height
 
@@ -53,7 +53,7 @@ tileView.ItemHeight = 50.0
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
+![Appearance-and-Styling-img1](Appearance-and-Styling-images/Appearance-and-Styling-img1.jpeg)
 
 ## Customizing item width
 
@@ -99,4 +99,4 @@ tileView.ItemWidth = 100.0
 
 {% endtabs %}
 
-![](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
+![Appearance-and-Styling-img2](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)

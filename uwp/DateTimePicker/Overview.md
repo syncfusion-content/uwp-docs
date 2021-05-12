@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfDateTimeCombo control | UWP | Syncfusion
-description: SfDateTimeCombo control displays the date or time in a separate DateTimeItem drop-down list which can be edited.
+title: About UWP DateTimePicker control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP DateTimePicker (SfDateTimeCombo) control and more.
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug
 ---
 
-# Overview
+# UWP DateTimePicker (SfDateTimeCombo) Overview
 
 The SfDateTimeCombo control displays each part of a date or time in a separate DateTimeItem drop-down list that can be edited. This control can be used to manipulate DateTime objects, using a familiar drop-down list in a touch-friendly manner.
 

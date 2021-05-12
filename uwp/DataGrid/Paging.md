@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging support in SfDataGrid.
-description: How to use the SfDataPager with SfDataGrid.
+title: Paging in UWP DataGrid control | Syncfusion
+description: Learn here all about Paging support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Paging
+# Paging in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](http://help.syncfusion.com/wpf/sfdatapager) control user guide for more information.
 
@@ -120,7 +120,7 @@ public class OrderInfo
 {% endhighlight %}
 {% endtabs %}
 
-![](Paging_images/Paging_img1.png)
+![Paging_img1](Paging_images/Paging_img1.png)
 
 ### Limitations
 
@@ -316,7 +316,7 @@ public sealed partial class MainPage : Page
 
 Here, records are filtered based on the textbox text in clicking event of Filter button. Initially `PageCount` is 3 and it is changed as 1 once the records are filtered.
 
-![](Paging_images/Paging_img2.png)
+![Paging_img2](Paging_images/Paging_img2.png)
 
 You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingPageCount-412402870.zip) from here.
 
@@ -401,7 +401,7 @@ public sealed partial class MainPage : Page
 {% endhighlight %}
 {% endtabs %}
 
-![](Paging_images/Paging_img3.png)
+![Paging_img3](Paging_images/Paging_img3.png)
 
 ### Loading ItemsSource for page using async and await
 

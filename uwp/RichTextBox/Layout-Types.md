@@ -1,12 +1,12 @@
 ---
-title: Layout Types
-description: layout-types
+title: Layout Types in UWP RichTextBox control | Syncfusion
+description: Learn here all about Layout Types support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: layout-types
 ---
-# Layout Types
+# Layout Types in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv control allows you to choose between the following layout types.
 
@@ -38,7 +38,7 @@ richTextBoxAdv.LayoutType = LayoutType.Pages;
 
 {% endtabs %}
 
-![](Layout-Types_images/Layout-Types_img1.jpeg)
+![Layout-Types_img1](Layout-Types_images/Layout-Types_img1.jpeg)
 
 ## Continuous
 
@@ -61,7 +61,7 @@ richTextBoxAdv.LayoutType = LayoutType.Continuous;
 
 {% endtabs %}
 
-![](Layout-Types_images/Layout-Types_img2.jpeg)
+![Layout-Types_img2](Layout-Types_images/Layout-Types_img2.jpeg)
 
 ## Block
 
@@ -84,6 +84,6 @@ richTextBoxAdv.LayoutType = LayoutType.Block;
 
 {% endtabs %}
 
-![](Layout-Types_images/Layout-Types_img3.jpeg)
+![Layout-Types_img3](Layout-Types_images/Layout-Types_img3.jpeg)
 
 N> In Windows Phone device, the entire rich text content is rendered continuously in a single page as continuous layout type and there is no effect on setting other layout types.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with Setting Null Value options for SfTimePicker control 
-description: Deals with Setting Null Value options for SfTimePicker control 
+title: Setting Null Value in UWP TimePicker control | Syncfusion
+description: Learn here all about Setting Null Value support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug
 ---
 
-# Setting Null Value
+# Setting Null Value in UWP TimePicker (SfTimePicker)
 
 
 AllowNull property can be used to set the SfTimePicker value to Null. When this property is enabled along with the Value property whose value is Null, then the SfTimePicker control will not display any value 
@@ -26,7 +26,7 @@ The following code example and screen shot illustrate the usage of the AllowNull
 
 {% endhighlight %}
 
-![](Features_images/Features_img16.png)
+![Features_img16](Features_images/Features_img16.png)
 
 ## Setting the Input Scope for the On-Screen Keyboard
 
@@ -48,4 +48,4 @@ AllowInlineEditing="true" InputScope="Number"/>
 {% endhighlight %}
 
 
-![](Features_images/Features_img18.png)
+![Features_img18](Features_images/Features_img18.png)

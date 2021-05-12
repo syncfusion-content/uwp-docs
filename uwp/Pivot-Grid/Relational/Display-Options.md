@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Options | SfPivotGrid | UWP | Syncfusion
-description: display options
+title: Display Options in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Display Options support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Display Options
+# Display Options in UWP Pivot Grid (SfPivotGrid)
 
 The SfPivotGrid control provides support for PivotComputationInfo to display calculation values in preferred areas of the SfPivotGrid with the help of `DisplayOption` property. The following are the different types of display options available in the SfPivotGrid.
 
@@ -42,7 +42,7 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.All
 
 {% endtabs %}
 
-![](Display-Options_images/PivotComputationinfo-using-All-option.png)
+![PivotComputationinfo-using-All-option](Display-Options_images/PivotComputationinfo-using-All-option.png)
 
 **Summary option**
 
@@ -75,7 +75,7 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.Summary
 
 {% endtabs %}
 
-![](Display-Options_images/PivotComputationinfo-using-summary-option.png)
+![PivotComputationinfo-using-summary-option](Display-Options_images/PivotComputationinfo-using-summary-option.png)
 
 **Calculations option**
 
@@ -108,7 +108,7 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.Calculations
 
 {% endtabs %}
 
-![](Display-Options_images/PivotComputationinfo-using-calculations-option.png)
+![PivotComputationinfo-using-calculations-option](Display-Options_images/PivotComputationinfo-using-calculations-option.png)
 
 **GrandTotal option**
 
@@ -141,7 +141,7 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.GrandTotal
 
 {% endtabs %}
 
-![](Display-Options_images/PivotComputationinfo-using-Grand-Totals-option.png)
+![PivotComputationinfo-using-Grand-Totals-option](Display-Options_images/PivotComputationinfo-using-Grand-Totals-option.png)
 
 **None option**
 
@@ -174,7 +174,7 @@ pivotGrid.PivotCalculations(0).DisplayOption = DisplayOption.None
 
 {% endtabs %}
 
-![](Display-Options_images/PivotComputationinfo-using-none-option.png)
+![PivotComputationinfo-using-none-option](Display-Options_images/PivotComputationinfo-using-none-option.png)
 
 A demo sample is available in the following location.
 
