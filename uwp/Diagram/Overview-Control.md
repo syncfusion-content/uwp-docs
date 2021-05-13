@@ -7,7 +7,7 @@ control: SfDiagram
 documentation: ug
 ---
 
-# UWP Diagram (SfDiagram) Overview
+# Overview Control in UWP Diagram (SfDiagram)
 
 Overview control is used to display a preview (overall view) of the entire content of a Diagram. This helps you to look overall picture of large Diagram and also to navigate (pan or zoom) to a particular position of the page.
 
