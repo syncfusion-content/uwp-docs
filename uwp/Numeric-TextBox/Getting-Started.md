@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with the Syncfusion SfNumericTextBox control for UWP
-description: This section provides a quick tour to the initial users on the Syncfusion SfNumericTextBox control for UWP and also explains how to set the value to the control
+title: Getting Started with UWP Numeric TextBox control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Numeric TextBox (SfNumericTextBox) control and more.
 platform: uwp
 control: SfNumericTextBox
 documentation: ug
 ---
 
-# Getting Started with SfNumericTextBox
+# Getting Started with UWP Numeric TextBox (SfNumericTextBox)
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 Assembly:  Syncfusion.SfInput.UWP 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styling and Customization | SfChart | uwp | Syncfusion
-description: This section explains how the UWP Chart(SfChart) can be customized with its available customization and styling options
+title: Styling and Customization in UWP Charts control | Syncfusion
+description: Learn here all about Styling and Customization support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Styling and Customization
+# Styling and Customization in UWP Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) support various customizing and styling options that allows you to enrich the application.
 

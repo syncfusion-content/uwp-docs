@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Demonstrate DateTimePicker using SfPicker of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
+title: Date Time Picker in UWP Picker control | Syncfusion
+description: Learn here all about Date Time Picker support in Syncfusion UWP Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Date Time Picker
+# Date Time Picker in UWP Picker (SfPicker)
 
 In our UWP, SfPicker control has multi column support. Using this we can populate day, month, year, hour and minute values of collection in SfPicker control. 
 
@@ -444,7 +444,7 @@ The below code demonstrates Date collection creation.
 
 Screen shot for the above codes.
 
-![](images/DateTimePicker.png)
+![DateTimePicker](images/DateTimePicker.png)
 
 We have attached DateTimePicker sample for reference. Please download the sample from the following link.
 

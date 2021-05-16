@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Types in SfTreeGrid
-description: How to use different column types in SfTreeGrid.
+title: ColumnTypes in UWP TreeGrid control | Syncfusion
+description: Learn here all about ColumnTypes support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
 
-# Column Types
+# ColumnTypes in UWP TreeGrid (SfTreeGrid)
 
 SfTreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 You can also add or override existing columns and renderers as you need.
@@ -142,7 +142,7 @@ public class DisplayBindingConverter : IValueConverter
 
 In the below screenshot, `Salary` column display value is formatted to currency by setting `DisplayBinding` property.
 
-![](ColumnTypes_images/ColumnTypes_img1.png)
+![ColumnTypes_img1](ColumnTypes_images/ColumnTypes_img1.png)
 
 By default, Columns handling the data operations (sorting) based on `MappingName` property.
 
@@ -187,7 +187,7 @@ In the below code snippet, `TreeGridNumericColumn` is loaded with `ProgressBar` 
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img2.png)
+![ColumnTypes_img2](ColumnTypes_images/ColumnTypes_img2.png)
 
 
 `CellTemplate` is not support by [TreeGridHyperlinkColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridHyperlinkColumn.html) and [TreeGridCheckboxColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCheckBoxColumn.html) columns.
@@ -231,7 +231,7 @@ You can use the same [DataTemplate](https://msdn.microsoft.com/en-us/library/win
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img3.png)
+![ColumnTypes_img3](ColumnTypes_images/ColumnTypes_img3.png)
 
 #### Setting CellTemplate based on custom logic using TemplateSelector
 
@@ -303,7 +303,7 @@ In the below code, the custom template selector set to `TreeGridColumn.CellTempl
 
 N> Non-Editable columns does not support `CellTemplate`.
 
-![](ColumnTypes_images/ColumnTypes_img4.png)
+![ColumnTypes_img4](ColumnTypes_images/ColumnTypes_img4.png)
 
 #### Binding ViewModel properties with CellTemplate
 
@@ -496,7 +496,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img5.png)
+![ColumnTypes_img5](ColumnTypes_images/ColumnTypes_img5.png)
 
 
 ### Styling TreeGridColumn
@@ -565,7 +565,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img6.png)
+![ColumnTypes_img6](ColumnTypes_images/ColumnTypes_img6.png)
 
 #### Styles based on custom logic
 
@@ -651,7 +651,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img7.png)
+![ColumnTypes_img7](ColumnTypes_images/ColumnTypes_img7.png)
 
 ### UI Interaction
 
@@ -717,7 +717,7 @@ TreeGridColumn allows you to change the alignment of `TreeGridCell` and `TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img8.png)
+![ColumnTypes_img8](ColumnTypes_images/ColumnTypes_img8.png)
 
 ## TreeGridTextColumn
 
@@ -762,7 +762,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img9.png)
+![ColumnTypes_img9](ColumnTypes_images/ColumnTypes_img9.png)
 
 ## TreeGridNumericColumn
 
@@ -786,7 +786,7 @@ this.treeGrid.Columns.Add(new TreeGridTextColumn() { MappingName = "FirstName", 
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img10.png)
+![ColumnTypes_img10](ColumnTypes_images/ColumnTypes_img10.png)
 
 
 ### Data formatting
@@ -805,7 +805,7 @@ treeGrid.Columns.Add(new TreeGridNumericColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img11.png)
+![ColumnTypes_img11](ColumnTypes_images/ColumnTypes_img11.png)
 
 ### Null value support
 
@@ -833,7 +833,7 @@ treeGrid.Columns.Add(new TreeGridNumericColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img12.png)
+![ColumnTypes_img12](ColumnTypes_images/ColumnTypes_img12.png)
 
 ### Parsing Mode
 
@@ -864,7 +864,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img13.png)
+![ColumnTypes_img13](ColumnTypes_images/ColumnTypes_img13.png)
 
 
 ### Formatting date time value
@@ -887,7 +887,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img14.png)
+![ColumnTypes_img14](ColumnTypes_images/ColumnTypes_img14.png)
 
 When the predefined format specifier does not meet your requirement, you can set the [custom date and time format strings](https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx) into `FormatString` property.
 
@@ -909,7 +909,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img15.png)
+![ColumnTypes_img15](ColumnTypes_images/ColumnTypes_img15.png)
 
 ### Editing support 
 
@@ -937,9 +937,9 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img16.png)
+![ColumnTypes_img16](ColumnTypes_images/ColumnTypes_img16.png)
 
-![](ColumnTypes_images/ColumnTypes_img17.png)
+![ColumnTypes_img17](ColumnTypes_images/ColumnTypes_img17.png)
 
 ### Null value support
 
@@ -965,7 +965,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img18.png)
+![ColumnTypes_img18](ColumnTypes_images/ColumnTypes_img18.png)
 
 ### Setting date time value range
 
@@ -1021,9 +1021,9 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img19.png)
+![ColumnTypes_img19](ColumnTypes_images/ColumnTypes_img19.png)
 
-![](ColumnTypes_images/ColumnTypes_img20.png)
+![ColumnTypes_img20](ColumnTypes_images/ColumnTypes_img20.png)
 
 ### Styling
 
@@ -1045,7 +1045,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img21.png)
+![ColumnTypes_img21](ColumnTypes_images/ColumnTypes_img21.png)
 
 ### SelectorItem customization
 
@@ -1071,7 +1071,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img22.png)
+![ColumnTypes_img22](ColumnTypes_images/ColumnTypes_img22.png)
 
 #### SelectorItem formatting
 
@@ -1093,7 +1093,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img23.png)
+![ColumnTypes_img23](ColumnTypes_images/ColumnTypes_img23.png)
 
 #### Spacing and count customization
 
@@ -1119,7 +1119,7 @@ treeGrid.Columns.Add(new TreeGridDateTimeColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img24.png)
+![ColumnTypes_img24](ColumnTypes_images/ColumnTypes_img24.png)
 
 ## TreeGridCheckBoxColumn
 
@@ -1147,7 +1147,7 @@ treeGrid.Columns.Add(new TreeGridCheckBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img25.png)
+![ColumnTypes_img25](ColumnTypes_images/ColumnTypes_img25.png)
 
 `TreeGridCheckBoxColumn` allows you to customize check box state and its alignment.
 
@@ -1416,7 +1416,7 @@ In the below code, custom template selector set to `TreeGridTemplateColumn.EditT
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img26.png)
+![ColumnTypes_img26](ColumnTypes_images/ColumnTypes_img26.png)
 
 
 ## TreeGridComboBoxColumn
@@ -1452,7 +1452,7 @@ SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the Selec
 
 `SelectedItem**`** property returns the selected item from drop down list.
 
-![](ColumnTypes_images/ColumnTypes_img27.png)
+![ColumnTypes_img27](ColumnTypes_images/ColumnTypes_img27.png)
 
 ### Improving dropdown opening time
 
@@ -1564,9 +1564,9 @@ public class ItemsSourceSelector : IItemsSourceSelector
 
 The following screenshot illustrates the different ShipCity ItemsSource bound to each row of the ComboBox based on the Country Name.
 
-![](ColumnTypes_images/ColumnTypes_img32.png)
+![ColumnTypes_img32](ColumnTypes_images/ColumnTypes_img32.png)
 
-![](ColumnTypes_images/ColumnTypes_img33.png)
+![ColumnTypes_img33](ColumnTypes_images/ColumnTypes_img33.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnsUWP748006862.zip).
 
@@ -1596,7 +1596,7 @@ treeGrid.Columns.Add(new TreeGridHyperlinkColumn()
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img28.png)
+![ColumnTypes_img28](ColumnTypes_images/ColumnTypes_img28.png)
 
 
 
@@ -1649,7 +1649,7 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img29.png)
+![ColumnTypes_img29](ColumnTypes_images/ColumnTypes_img29.png)
 
 ## Custom column support
 
@@ -1890,7 +1890,7 @@ public class TreeGridCellTextBoxRendererExt : TreeGridCellTextBoxRenderer
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img30.png)
+![ColumnTypes_img30](ColumnTypes_images/ColumnTypes_img30.png)
 
 
 ### Create the renderer of existing column
@@ -2097,7 +2097,7 @@ public class TreeGridComboBoxRendererExt : TreeGridVirtualizingCellRenderer<Cont
 {% endhighlight %}
 {% endtabs %}
 
-![](ColumnTypes_images/ColumnTypes_img31.png)
+![ColumnTypes_img31](ColumnTypes_images/ColumnTypes_img31.png)
 
 ## How To
 

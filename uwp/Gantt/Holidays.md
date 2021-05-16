@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Holidays | SfGantt | Uwp | Syncfusion
-description: The following section describes the holiday support in SfGantt.
+title: Holidays in UWP Gantt control | Syncfusion
+description: Learn here all about Holidays support in Syncfusion UWP Gantt (SfGantt) control and more.
 platform: uwp
 control: SfGantt
 documentation: ug
@@ -56,6 +56,6 @@ sfGantt.Holidays = new GanttHolidayCollection()
 
 {% endtabs %}
 
-![](SfGantt_images/Holidays.png)
+![Holidays](SfGantt_images/Holidays.png)
 
 N> To highlight the holidays in the Gantt chart, the ['ShowNonWorkingDays'](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ShowNonWorkingDays) property must be enabled.

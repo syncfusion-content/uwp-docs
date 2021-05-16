@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features of SfPulsingTile control | UWP | Syncfusion
-description: SfPulsingTile control allows user to create a tile similar to Music and Video hub tile in Windows Phone.
+title: SfPulsingTile in UWP Hub Tile control | Syncfusion
+description: Learn here all about SfPulsingTile support in Syncfusion UWP Hub Tile (HubTiles) control and more.
 platform: uwp
 control: SfPulsingTile
 documentation: ug
 ---
 
-# SfPulsingTile
+# SfPulsingTile in UWP Hub Tile (HubTiles)
 
 `SfPulsingTile` control allows to create a tile similar to Music and Video hub tile in Windows Phone. The content zooms in/out randomly with random translation in X and Y axis.
 

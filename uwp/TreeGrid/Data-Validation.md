@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation support in SfTreeGrid.
-description: How to validate the data in SfTreeGrid.
+title: Data Validation in UWP TreeGrid control | Syncfusion
+description: Learn here all about Data Validation support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Data Validation
+# Data Validation in UWP TreeGrid (SfTreeGrid)
 
 SfTreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 
@@ -75,7 +75,7 @@ treeGrid.GridValidationMode = GridValidationMode.InView;
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img1.png)
+![Data-Validation_img1](Data-Validation_images/Data-Validation_img1.png)
 
 ### Built-in validation using Data Annotation
 
@@ -305,7 +305,7 @@ You can change the validation error template shape of the `TreeGridCell` by ch
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img2.png)
+![Data-Validation_img2](Data-Validation_images/Data-Validation_img2.png)
 
 #### Change the color of error icon
 
@@ -449,7 +449,7 @@ public class BoolToVisibilityConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img3.png)
+![Data-Validation_img3](Data-Validation_images/Data-Validation_img3.png)
 
 ### Customizing error tip
 
@@ -540,7 +540,7 @@ You can change the error tip background color by setting `Background` property o
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img4.png)
+![Data-Validation_img4](Data-Validation_images/Data-Validation_img4.png)
 
 ## Showing error details in RowHeader
 
@@ -563,7 +563,7 @@ public bool HasErrors
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img5.png)
+![Data-Validation_img5](Data-Validation_images/Data-Validation_img5.png)
 
 ## Validation with Checkbox column
 
@@ -615,7 +615,7 @@ private void TreeGrid_RowValidating(object sender, Syncfusion.UI.Xaml.TreeGrid.T
 {% endhighlight %}
 {% endtabs %}
 
-![](Data-Validation_images/Data-Validation_img6.png)
+![Data-Validation_img6](Data-Validation_images/Data-Validation_img6.png)
 
 **Limitations**
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview in SfMap control
-description: Overview of SfMap in UWP
+title: About UWP Map control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMap
 documentation: ug
 ---
 
-# Overview
+# UWP Map (SfMaps) Overview
 
 A map is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. Panning and Zooming enables navigation around the map. `Data Visualization` can be enhanced in the map control with bubbles and labels. Bubbles and labels visualize the data that is bound to the map.
 
@@ -30,7 +30,7 @@ A map contains a set of elements, including shapes, bubbles, annotations, and da
 
 Options like zooming, panning, and map selection extend the interactivity of the map.
 
-![](Overview_images/Overview_img1.png)
+![Overview_img1](Overview_images/Overview_img1.png)
 
 
 

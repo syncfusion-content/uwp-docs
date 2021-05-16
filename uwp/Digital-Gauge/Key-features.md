@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Key Features| SfDigitalGauge | uwp | Syncfusion
-description: Key Features
+title: Key Features in UWP Digital Gauge control | Syncfusion
+description: Learn here all about Key Features support in Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Key Features
+# Key Features in UWP Digital Gauge (SfDigitalGauge)
 
 A digital gauge is composed of segments which are a major UI component of the digital gauge. **SfDigitalGauge** comprises of the following segments to display the digital characters.
 

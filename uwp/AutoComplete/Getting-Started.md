@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfTextBoxExt control for UWP
-description: This section provides a quick tour to initial users on SfTextBoxExt control for UWP.
+title: Getting Started with UWP AutoComplete control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP AutoComplete (SfTextBoxExt)
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 

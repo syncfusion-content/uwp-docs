@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Pivot Grid Control | UWP | Syncfusion
-description: The pivot grid control is used to read and visualize the business information in the tabular format.
+title: About UWP Pivot Grid control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Overview
+# UWP Pivot Grid (SfPivotGrid) Overview
 
 The SfPivotGrid control is an easily configurable presentation-quality business control that summarizes data from OLAP and relational data sources with rich customization and represents it in a cross-tabulated form. It allows users to create multi-dimensional views for analysis and satisfies business users need.
 

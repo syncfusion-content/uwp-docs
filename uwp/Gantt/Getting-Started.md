@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | Gantt | UWP | Syncfusion
-description: The following section provides an assistance to create a simple Gantt application and to configure it.
+title: Getting Started with UWP Gantt control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Gantt (SfGantt) control and more.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with UWP Gantt (SfGantt)
 
 This section explains how to create and configure a simple Gantt application.
 

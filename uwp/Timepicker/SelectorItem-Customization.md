@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with customization of SelectorItem of SfTimePicker control for UWP
-description: Deals with customization of SelectorItem of SfTimePicker control for UWP
+title: SelectorItem Customization in UWP TimePicker control | Syncfusion
+description: Learn here all about SelectorItem Customization support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug
 ---
 
-# SelectorItem Customization
+# SelectorItem Customization in UWP TimePicker (SfTimePicker)
 
 ## SelectorItemWidth and SelectorItemHeight
 
@@ -78,4 +78,4 @@ The output is displayed in the following image:
 
 
 
-![](Features_images/Features_img12.png)
+![Features_img12](Features_images/Features_img12.png)

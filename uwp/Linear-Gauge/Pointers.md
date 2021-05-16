@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pointers | SfLinearGauge | uwp | Syncfusion
-description: Pointers 
+title: Pointers in UWP Linear Gauge control | Syncfusion
+description: Learn here all about Pointers support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Pointers
+# Pointers in UWP Linear Gauge (SfLinearGauge)
 
 The [`LinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) provides support to mark values using the `BarPointer` and `SymbolPointer`.
 
@@ -73,7 +73,7 @@ The [`LinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img1.png)
+![Pointers_img1](Pointers_images/Pointers_img1.png)
 
 ### Bar pointer customization
 
@@ -139,7 +139,7 @@ The UI of `Bar pointer` is customized using the [`BarPointerStroke`](https://hel
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img2.png)
+![Pointers_img2](Pointers_images/Pointers_img2.png)
 
 ## Setting corner radius type for bar pointer
 
@@ -211,7 +211,7 @@ Corners of the `BarPointer` can be customized by setting the value to the
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img3.png)
+![Pointers_img3](Pointers_images/Pointers_img3.png)
 
 ## Setting gradient color for bar pointer
 
@@ -326,7 +326,7 @@ You can give smooth color transition to bar pointer to specifying the different 
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img4.png)
+![Pointers_img4](Pointers_images/Pointers_img4.png)
 
 ## Symbol pointer
 
@@ -388,7 +388,7 @@ In `SymbolPointer`, the value is pointed by a symbol on the scale.
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img5.png)
+![Pointers_img5](Pointers_images/Pointers_img5.png)
 
 ### Symbol pointer customization
 
@@ -458,7 +458,7 @@ You can modify the size of symbol pointer by changing the [`SymbolPointerHeight`
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img6.png)
+![Pointers_img6](Pointers_images/Pointers_img6.png)
 
 ## Positioning symbol pointer
 
@@ -536,7 +536,7 @@ The `SymbolPointer` in the scale can be placed above, below, or in between the s
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img7.png)
+![Pointers_img7](Pointers_images/Pointers_img7.png)
 
 ### Change symbol pointer shapes
 
@@ -623,7 +623,7 @@ The [`SymbolPointerStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img8.png)
+![Pointers_img8](Pointers_images/Pointers_img8.png)
 
 ### Adding multiple pointers
 
@@ -710,4 +710,4 @@ In addition to the default pointer, you can add "n" number of pointers to a line
 
 {% endtabs %}
 
-![](Pointers_images/Pointers_img9.png)
+![Pointers_img9](Pointers_images/Pointers_img9.png)

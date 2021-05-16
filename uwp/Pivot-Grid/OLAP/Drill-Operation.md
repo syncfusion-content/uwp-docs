@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Operation | SfPivotGrid | UWP | Syncfusion
-description: Drill Operation
+title: Drill Operation in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Drill Operation support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Drill Operation
+# Drill Operation in UWP Pivot Grid (SfPivotGrid)
 
 ## Drill down/Drill up
 
@@ -19,7 +19,7 @@ Drill down, also called as roll down; it is the reverse of drill up which naviga
 
 While binding hierarchical dimensions (for example, the time dimension includes 3 levels namely year, quarter, and month), the SfPivotGrid allows you to visualize the data for different levels by using the collapsible labels which is illustrated in the following screenshot.
 
-![](Drill-Operation_images/Drill-operation.png)
+![Drill-operation](Drill-Operation_images/Drill-operation.png)
 
 ## Drill types
 
@@ -49,7 +49,7 @@ pivotGrid1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillMember
 
 {% endtabs %}
 
-![](Drill-Operation_images/Drill-member.png)
+![Drill-member](Drill-Operation_images/Drill-member.png)
 
 **Drill position**
 
@@ -91,7 +91,7 @@ pivotGrid1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillReplace
 
 {% endtabs %}
 
-![](Drill-Operation_images/Drill-replace.png)
+![Drill-replace](Drill-Operation_images/Drill-replace.png)
 
 N> The drilled-down member will be replaced with drilled data and it cannot be drilled-up.
 
@@ -119,6 +119,6 @@ pivotGrid1.OlapDataManager.CurrentReport.ShowExpanders = False
 
 {% endtabs %}
 
-![](Drill-Operation_images/Drill-operation-hide-expanders.png)
+![Drill-operation-hide-expanders](Drill-Operation_images/Drill-operation-hide-expanders.png)
 
 N> Since the `ShowExpanders` property interacts with the `OlapDataManager`, you should call the `DataBind()` method of the SfPivotGrid after assigning the value to this property.

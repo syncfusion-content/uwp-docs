@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Unbound column support in SfDataGrid.
-description: How to create Unbound column in SfDataGrid.
+title: Unbound Column in UWP DataGrid control | Syncfusion
+description: Learn here all about Unbound Column support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# GridUnBoundColumn
+# Unbound Column in UWP DataGrid (SfDataGrid)
 
 SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnBoundColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html) class. Unbound columns support for sorting, filtering, grouping, exporting and printing as normal columns.
 
@@ -30,7 +30,7 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Price
 {% endtabs %}
 
 
-![](Unbound-Column_images/Unbound-Column_img1.png)
+![Unbound-Column_img1](Unbound-Column_images/Unbound-Column_img1.png)
 
 N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnBoundColumn` with some name to identify the column. It is not necessary to define name of field in the data object.
 
@@ -204,7 +204,7 @@ NOT
 
 
 
-![](Unbound-Column_images/Unbound-Column_img2.png)
+![Unbound-Column_img2](Unbound-Column_images/Unbound-Column_img2.png)
 
 ### Using Format
 
@@ -230,7 +230,7 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Rate"
 {% endtabs %}
 
 
-![](Unbound-Column_images/Unbound-Column_img3.png)
+![Unbound-Column_img3](Unbound-Column_images/Unbound-Column_img3.png)
 
 ### Using QueryUnBoundColumnValue event
 
@@ -264,7 +264,7 @@ void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs
 {% endtabs %}
 
 
-![](Unbound-Column_images/Unbound-Column_img4.png)
+![Unbound-Column_img4](Unbound-Column_images/Unbound-Column_img4.png)
 
 ## Refreshing the unbound column at runtime
 
@@ -363,7 +363,7 @@ In the below code snippet, `Foreground` and `Background` of the cells in GridUnB
 {% endtabs %}
 
 
-![](Unbound-Column_images/Unbound-Column_img5.png)
+![Unbound-Column_img5](Unbound-Column_images/Unbound-Column_img5.png)
 
 You can refer the [Styling](http://help.syncfusion.com/uwp/sfdatagrid/column-types#styling-gridcolumn) section of `GridColumn` for more information.
 
@@ -445,7 +445,7 @@ public class GridUnBoundCellTextBoxRendererExt: GridUnBoundCellTextBoxRenderer
 {% endtabs %}
 
 
-![](Unbound-Column_images/Unbound-Column_img6.png)
+![Unbound-Column_img6](Unbound-Column_images/Unbound-Column_img6.png)
 
 ### Custom Renderer
 

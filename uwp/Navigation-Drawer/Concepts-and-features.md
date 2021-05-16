@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Concepts-And-Features | NavigationDrawer | UWP | Syncfusion
-description: concepts and features
+title: Concepts and Features in UWP Navigation Drawer control | Syncfusion
+description: Learn here all about Concepts and Features support in Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control and more.
 platform: UWP
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Concepts and Features
+# Concepts and Features in UWP Navigation Drawer (SfNavigationDrawer)
 
 ## ContentView
 
@@ -40,7 +40,7 @@ ContentView is the main view of the NavigationDrawer where the desired items can
 {% endhighlight %}
 
 
-![](Concepts-and-features_images/ContentView_img1.png)  
+![ContentView_img1](Concepts-and-features_images/ContentView_img1.png)  
 
 
 ## DrawerContentView
@@ -79,7 +79,7 @@ Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer contr
 
 {% endhighlight %}
 
-![](Concepts-and-features_images/DrawerFooterView_img1.png) 
+![DrawerFooterView_img1](Concepts-and-features_images/DrawerFooterView_img1.png) 
 
 
 ## DrawerHeaderView
@@ -201,7 +201,7 @@ The default position is Left.
 
 {% endtabs %}
 
-![](Concepts-and-features_images/Position_img1.png)                                            
+![Position_img1](Concepts-and-features_images/Position_img1.png)                                            
 
 
 The following code example shows how to set the SfNavigationDrawer to the right.  
@@ -222,7 +222,7 @@ The following code example shows how to set the SfNavigationDrawer to the right.
 {% endtabs %}
 
 
-![](Concepts-and-features_images/Position_img2.png)
+![Position_img2](Concepts-and-features_images/Position_img2.png)
 
 The following code example shows how to set the SfNavigationDrawer at the top.  
 
@@ -241,7 +241,7 @@ The following code example shows how to set the SfNavigationDrawer at the top.
 
 {% endtabs %}
 
-![](Concepts-and-features_images/Position_img3.png)                                           
+![Position_img3](Concepts-and-features_images/Position_img3.png)                                           
 
 
 The following code example shows how to set the SfNavigationDrawer at the bottom.  
@@ -262,7 +262,7 @@ The following code example shows how to set the SfNavigationDrawer at the bottom
 {% endtabs %}
 
 
-![](Concepts-and-features_images/Position_img4.png)
+![Position_img4](Concepts-and-features_images/Position_img4.png)
 
 
 
@@ -292,7 +292,7 @@ The default transition is SlideOnTop. That draws the DrawerContent on top of the
 
 {% endtabs %}
 
-![](Concepts-and-features_images/Transition_img1.png)                                           
+![Transition_img1](Concepts-and-features_images/Transition_img1.png)                                           
 
 
 The following code example shows how to set Transition as Push to SfNavigationDrawer. This transition moves the Drawer and main content simultaneously.
@@ -312,7 +312,7 @@ The following code example shows how to set Transition as Push to SfNavigationDr
 
 {% endtabs %}
 
-![](Concepts-and-features_images/Transition_img2.png)                                              
+![Transition_img2](Concepts-and-features_images/Transition_img2.png)                                              
 
 
 The following code example shows how to set Transition as Reveal to SfNavigationDrawer. In this transition, the Drawer content is stable and the main content is moved to reveal the drawer content.
@@ -335,4 +335,4 @@ The following code example shows how to set Transition as Reveal to SfNavigation
 
 
 
-![](Concepts-and-features_images/Transition_img3.png)                                         
+![Transition_img3](Concepts-and-features_images/Transition_img3.png)                                         

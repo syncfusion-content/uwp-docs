@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TreeMap control for UWP
-description: A quick tour to initial users on Syncfusion TreeMap control for UWP platform and also describes how to sizing the TreeMapItem.
+title: Getting Started with UWP TreeMap control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP TreeMap (SfTreeMap) control and more.
 platform: UWP
 control: TreeMap
 documentation: ug
 ---
 
-# Getting Started with SfTreeMap
+# Getting Started with UWP TreeMap (SfTreeMap)
 
 TreeMap is a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. TreeMap also can use color to represent any number of values, but it is often used to categorize the various boxes within the treemap.
 

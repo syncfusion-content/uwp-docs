@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with SfCellGrid | UWP CellGrid | Syncfusion
-description: How to work with CellGrid and its properties
+title: Working with CellGrid in UWP CellGrid control | Syncfusion
+description: Learn here all about Working with CellGrid support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
 
-# Working with CellGrid
+# Working with CellGrid in UWP CellGrid (SfCellGrid)
  This section explains about the virtualization behavior, programmatic scrolling and refreshing the grid.
 
 ## Virtualization

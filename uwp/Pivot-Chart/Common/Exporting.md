@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting | SfPivotChart | UWP | Syncfusion
-description: Exporting
+title: Exporting in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Exporting support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Exporting
+# Exporting in UWP Pivot Chart (SfPivotChart)
 
 The SfPivotChart can be exported to an image, Microsoft Word, and PDF file formats. To perform exporting operation, refer to the following assembly in the application:
 
@@ -42,7 +42,7 @@ PivotChart1.SaveToImageAsync()
 
 {% endtabs %}
 
-![](Exporting_images/relationalExportedImage.png)
+![relationalExportedImage](Exporting_images/relationalExportedImage.png)
 
 ## Export to Word document
 
@@ -72,7 +72,7 @@ export.ExportToDocument("Sample")
 
 {% endtabs %}
 
-![](Exporting_images/relationalExportedWord.png)
+![relationalExportedWord](Exporting_images/relationalExportedWord.png)
 
 ## Export to PDF document
 
@@ -102,6 +102,6 @@ export.ExportToDocument("Sample")
 
 {% endtabs %}
 
-![](Exporting_images/relationalExportedPDF.png)
+![relationalExportedPDF](Exporting_images/relationalExportedPDF.png)
 
 N> You can use a *Button* instance to the page and specify the required code snippet for exporting the SfPivotChart in the `Click` event handler method.

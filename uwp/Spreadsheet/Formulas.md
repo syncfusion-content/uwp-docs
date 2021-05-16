@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formulas in SfSpreadsheet
-description: List of formulas supported by SfSpreadsheet
+title: Formulas in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Formulas support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Formulas
+# Formulas in UWP Spreadsheet (SfSpreadsheet)
 
 SfSpreadsheet calculation engine offers automated calculation over a formula, expression, or cross sheet references. SfSpreadsheet calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 

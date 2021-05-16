@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series| SfSmithChart | UWP | Syncfusion
-description: Rendering type SfSmithChart control.
+title: Series in UWP Smith Chart control | Syncfusion
+description: Learn here all about Series support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: series
 documentation: ug
 ---
 
-# Series
+# Series in UWP Smith Chart (SfSmithChart)
 
 Chart series is the visual representation of the given data.
 

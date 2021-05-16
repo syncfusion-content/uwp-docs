@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Concepts and Features | PullToRefresh | UWP | Syncfusion
-description: concepts and features
+title: Customization in UWP Pull To Refresh control | Syncfusion
+description: Learn here all about Customization support in Syncfusion UWP Pull To Refresh (SfPullToRefresh) control and more.
 platform: UWP
 control: PullToRefresh
 documentation: ug
 --- 
 
-# Concepts and Features
+# Customization in UWP Pull To Refresh (SfPullToRefresh)
 
 ## PullingThreshold
 
@@ -103,7 +103,7 @@ The default transition is `SlideOnTop`. That draws the `RefreshContent` on top o
 
 {% endtabs %}
 
-![](Overview_images/Overview_img3.png)
+![Overview_img3](Overview_images/Overview_img3.png)
 
 
 The following code example shows how to set `Transition` as `Push` to SfPullToRefresh. This transition moves the refresh content and main content simultaneously.
@@ -125,7 +125,7 @@ The following code example shows how to set `Transition` as `Push` to SfPullToRe
 {% endtabs %}
 
 
-![](Overview_images/Overview_img4.png)
+![Overview_img4](Overview_images/Overview_img4.png)
 
 ## PullDirection
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Editing behavior in SfSpreadsheet
-description: Editing behavior in SfSpreadsheet
+title: Editing in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Editing support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Editing
+# Editing in UWP Spreadsheet (SfSpreadsheet)
 
 This section explains about the Editing behavior, Data Validation and Hyperlinks in SfSpreadsheet.
 

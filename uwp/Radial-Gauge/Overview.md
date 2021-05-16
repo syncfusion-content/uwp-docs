@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview | SfCircularGauge | uwp | Syncfusion
-description: Overview
+title: About UWP Radial Gauge control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Overview
+# UWP Radial Gauge (SfCircularGauge) Overview
 
 Circular Gauge helps you to visualize the numeric values over a circular scale. The appearance of the gauge is fully customized to integrate your applications without fault.
 
@@ -48,7 +48,7 @@ The circular gauge control is highly customizable control with variety of simple
 
 [`Annotations`](https://help.syncfusion.com/uwp/sfcirculargauge/annotations) allows you to mark the specific area of interest in a circular gauge. You can place custom views, text, and images as annotations by using the annotations feature.
 
-![](Overview_images/Overview_img1.jpeg)
+![Overview_img1](Overview_images/Overview_img1.jpeg)
 
 
 

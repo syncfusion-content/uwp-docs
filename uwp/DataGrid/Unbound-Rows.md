@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unbound Rows of SfDataGrid control for UWP 
-description: Unbound Rows of SfDataGrid control for UWP
+title: Unbound Rows in UWP DataGrid control | Syncfusion
+description: Learn here all about Unbound Rows support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Unbound Rows 
+# Unbound Rows in UWP DataGrid (SfDataGrid)
 
 SfDataGrid allows you to add additional rows at top and also bottom of the SfDataGrid which are not bound with data object from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRows) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be exported and printed.
 
@@ -24,7 +24,7 @@ this.dataGrid.UnBoundRows.Add(new GridUnBoundRow() {Position = UnBoundRowsPositi
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img1.png)
+![Unbound-Rows_img1](Unbound-Rows_images/Unbound-Rows_img1.png)
 
 N> [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFrozenGroupHeaders) is not supported.
 
@@ -94,7 +94,7 @@ Unbound row placed at bottom, right below record rows. In this position, unbound
 
 Below screen shot shows different unbound rows placed in all possible positions.
 
-![](Unbound-Rows_images/Unbound-Rows_img2.png)
+![Unbound-Rows_img2](Unbound-Rows_images/Unbound-Rows_img2.png)
 
 ## Populating data for unbound rows
 
@@ -146,7 +146,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img3.png)
+![Unbound-Rows_img3](Unbound-Rows_images/Unbound-Rows_img3.png)
 
 ## Refreshing the Unbound Rows at runtime 
 
@@ -228,7 +228,7 @@ You can customize the style of unbound row by writing style of TargetType [UnBou
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img4.png)
+![Unbound-Rows_img4](Unbound-Rows_images/Unbound-Rows_img4.png)
 
 ### Unbound row cell’s style
 
@@ -252,7 +252,7 @@ You can customize the style of unbound row cell by writing style of TargetType [
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img5.png)
+![Unbound-Rows_img5](Unbound-Rows_images/Unbound-Rows_img5.png)
 
 ## Customize the Unbound Row’s behavior
 
@@ -332,7 +332,7 @@ dataGrid.UnBoundRowCellRenderers.Add("UnBoundTextColumn", new GridUnBoundRowCell
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img6.png)
+![Unbound-Rows_img6](Unbound-Rows_images/Unbound-Rows_img6.png)
 
 ### Custom Renderer
 
@@ -483,7 +483,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img7.png)
+![Unbound-Rows_img7](Unbound-Rows_images/Unbound-Rows_img7.png)
 
 ## Templating unbound row cells
 
@@ -527,7 +527,7 @@ void dataGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img8.png)
+![Unbound-Rows_img8](Unbound-Rows_images/Unbound-Rows_img8.png)
 
 ## Changing unbound row height
 
@@ -550,7 +550,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img9.png)
+![Unbound-Rows_img9](Unbound-Rows_images/Unbound-Rows_img9.png)
 
 ## Exporting Unbound rows
 
@@ -617,7 +617,7 @@ void dataGrid_QueryCoveredRange(object sender, GridQueryCoveredRangeEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img10.png)
+![Unbound-Rows_img10](Unbound-Rows_images/Unbound-Rows_img10.png)
 
 ## Unbound row for Master-details view
 
@@ -669,5 +669,5 @@ void FirstLevelNestedGrid_QueryUnBoundRow(object sender, GridUnBoundRowEventsArg
 {% endhighlight %}
 {% endtabs %}
 
-![](Unbound-Rows_images/Unbound-Rows_img11.png)
+![Unbound-Rows_img11](Unbound-Rows_images/Unbound-Rows_img11.png)
 

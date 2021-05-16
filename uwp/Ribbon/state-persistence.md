@@ -1,13 +1,13 @@
 ---
 layout: post
-title: State Persistence options of SfRibbon control for UWP
-description: State Persistence options of SfRibbon control for UWP
+title: State Persistence in UWP Ribbon control | Syncfusion
+description: Learn here all about State Persistence support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
 ---
 
-# State Persistence
+# State Persistence in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 State Persistence is the combined process of Serialization and Deserialization. Serialization is the process of converting the state of an object to a format where it can be persisted as a file in the memory. The serialized format contains the object’s state information. Deserialization is the complement process of Serialization that converts into the object from the stored state information. user can save and load the
 

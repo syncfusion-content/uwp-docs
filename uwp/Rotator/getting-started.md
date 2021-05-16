@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with syncfusion Rotator control for UWP
-description:  A quick tour to initial users on Syncfusion Rotator control for UWP platform
+title: Getting Started with UWP Rotator control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Rotator (SfRotator) control and more.
 platform: UWP
 control: Rotator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Rotator (SfRotator)
 
 This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
 
-![](images/rotator.png)
+![rotator](images/rotator.png)
 
 ## Referencing Essential Studio Components in Your Solution	
 

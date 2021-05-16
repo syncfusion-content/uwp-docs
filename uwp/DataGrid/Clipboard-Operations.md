@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard Operations in SfDataGrid
-description: How to perform clipboard operations in SfDataGrid.
+title: Clipboard Operations in UWP DataGrid control | Syncfusion
+description: Learn here all about Clipboard Operations support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 --- 
 
 
-# Clipboard Operations
+# Clipboard Operations in UWP DataGrid (SfDataGrid)
 
 SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> and also can paste the content from [Clipboard](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.clipboard.aspx) to SfDataGrid by pressing <kbd>Ctrl</kbd>+<kbd>V</kbd>.
 
@@ -43,7 +43,7 @@ this.dataGrid.GridCopyOption = GridCopyOption.CopyData | GridCopyOption.IncludeH
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img1.png)
+![Clipboard-Operations_img1](Clipboard-Operations_images/Clipboard-Operations_img1.png)
 
 
 N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
@@ -75,7 +75,7 @@ this.dataGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img2.png)
+![Clipboard-Operations_img2](Clipboard-Operations_images/Clipboard-Operations_img2.png)
 
 ## Cut
 
@@ -106,7 +106,7 @@ this.dataGrid.GridCopyOption = GridCopyOption.CutData | GridCopyOption.IncludeHe
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img3.png)
+![Clipboard-Operations_img3](Clipboard-Operations_images/Clipboard-Operations_img3.png)
 
 N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
@@ -183,7 +183,7 @@ private void DataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img4.png)
+![Clipboard-Operations_img4](Clipboard-Operations_images/Clipboard-Operations_img4.png)
 
 The below code example handled the copy operation when `MappingName` of a Column is Country.
 
@@ -200,7 +200,7 @@ private void DataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img5.png)
+![Clipboard-Operations_img5](Clipboard-Operations_images/Clipboard-Operations_img5.png)
 
 ### PasteGridCellContent
 
@@ -241,7 +241,7 @@ private void DataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img6.png)
+![Clipboard-Operations_img6](Clipboard-Operations_images/Clipboard-Operations_img6.png)
 
 The below code example handled the paste operation when MappingName of Column is OrderID
 
@@ -257,7 +257,7 @@ private void DataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![](Clipboard-Operations_images/Clipboard-Operations_img7.png)
+![Clipboard-Operations_img7](Clipboard-Operations_images/Clipboard-Operations_img7.png)
 
 ## Handling Programmatically
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selecting Items of SfTabControl control for UWP
-description: Selecting Items of SfTabControl control for UWP
+title: Selecting Items in UWP Tab Control control | Syncfusion
+description: Learn here all about Selecting Items support in Syncfusion UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Selecting Tab-Items
+# Selecting Items in UWP Tab Control (SfTabControl)
 
 SfTabControl can have only one selected item at a time. Tab items can be selected by 
 
@@ -59,7 +59,7 @@ tabControl.SelectedItem = Niko
 
 {% endtabs %}
 
-![](Selecting-Tabitems-images/Selecting-Tabitems-img1.jpeg)
+![Selecting-Tabitems-img1](Selecting-Tabitems-images/Selecting-Tabitems-img1.jpeg)
 
 
 ## Selecting item using SelectedIndex
@@ -102,7 +102,7 @@ tabControl.SelectedIndex = 1
 
 {% endtabs %}
 
-![](Selecting-Tabitems-images/Selecting-Tabitems-img2.jpeg)
+![Selecting-Tabitems-img2](Selecting-Tabitems-images/Selecting-Tabitems-img2.jpeg)
 
 
 ## Selecting item using IsSelected
@@ -171,7 +171,7 @@ Niko.IsSelected = True
 
 {% endtabs %}
 
-![](Selecting-Tabitems-images/Selecting-Tabitems-img3.jpeg)
+![Selecting-Tabitems-img3](Selecting-Tabitems-images/Selecting-Tabitems-img3.jpeg)
 
 
 ## Notify on SelectionChanged

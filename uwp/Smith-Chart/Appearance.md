@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance | SfSmithChart | UWP | Syncfusion
-description: Appearance and its customization such as palette and chart area properties of syncfusion smith chart control.
+title: Appearance in UWP Smith Chart control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: SfSmithChart
 documentation: ug
 ---
 
-# Appearance and its customization of smith chart
+# Appearance in UWP Smith Chart (SfSmithChart)
 
 ## SmithChart Palette
 

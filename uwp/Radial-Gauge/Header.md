@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Header | SfCircularGauge | uwp | Syncfusion
-description: Header
+title: Header in UWP Radial Gauge control | Syncfusion
+description: Learn here all about Header support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Header
+# Header in UWP Radial Gauge (SfCircularGauge)
 
 Header allows you to show text or any UI content inside the gauge control using [`GaugeHeader`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html#Syncfusion_UI_Xaml_Gauges_SfCircularGauge_GaugeHeader)  option. This provides information about the data that is being plotted in the circular gauge.
 
@@ -96,7 +96,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Header_images/Header_img1.png)
+![Header_img1](Header_images/Header_img1.png)
 
 ## Setting alignment for header
 
@@ -206,7 +206,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Header_images/Header_img2.png)
+![Header_img2](Header_images/Header_img2.png)
 
 ## Setting position for header
 
@@ -296,7 +296,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Header_images/Header_img3.png)
+![Header_img3](Header_images/Header_img3.png)
 
 ## Customization of header font
 
@@ -396,6 +396,6 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Header_images/Header_img4.png)
+![Header_img4](Header_images/Header_img4.png)
 
 

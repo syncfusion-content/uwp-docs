@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with Spin Button Alignment options of SfDomainUpDown control for UWP
-description: Deals with Spin Button Alignment options of SfDomainUpDown control for UWP
+title: Spin Button Alignment in UWP Domain UpDown control | Syncfusion
+description: Learn here all about Spin Button Alignment support in Syncfusion UWP Domain UpDown (SfDomainUpDown) control and more.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
 ---
 
-# Spin Button Alignment
+# Spin Button Alignment in UWP Domain UpDown (SfDomainUpDown)
 
 The spin button’s position in the SfDomainUpDown control can be changed using SpinButtonsAlignment. It contains three modes for positioning spin buttons:
 
@@ -60,7 +60,7 @@ domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlign
 
 {% endtabs %}
 
-![](Features_images/Features_img3.png)
+![Features_img3](Features_images/Features_img3.png)
 
 
 
@@ -106,7 +106,7 @@ domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlign
 
 {% endtabs %}
 
-![](Features_images/Features_img4.png)
+![Features_img4](Features_images/Features_img4.png)
 
 
 
@@ -150,4 +150,4 @@ domainUpDown.SpinButtonsAlignment = Syncfusion.UI.Xaml.Controls.SpinButtonsAlign
 
 {% endtabs %}
 
-![](Features_images/Features_img5.png)
+![Features_img5](Features_images/Features_img5.png)

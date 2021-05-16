@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with ink annotations in UWP Pdf Viewer | Syncfusion
-description: Learn about working with ink annotation and its functionalities in Syncfusion Essential PDF viewer for UWP platform.
+title: Working with ink annotations in UWP Pdf Viewer control | Syncfusion
+description: Learn here all about Working with ink annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Working with ink annotations in UWP PDF Viewer (SfPdfViewer)
+# Working with ink annotations in UWP Pdf Viewer (SfPdfViewer)
 
 PDF Viewer allows you to include ink annotations in a PDF document and provides options to modify or remove the existing ink annotations.
 

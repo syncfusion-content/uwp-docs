@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Ticks in Syncfusion SfRangeSlider control for UWP
-description: Explains about Ticks in SfRangeSlider control for UWP 
+title: Dealing with Ticks in UWP Range Slider control | Syncfusion
+description: Learn here all about Dealing with Ticks support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Dealing with Ticks 
+# Dealing with Ticks in UWP Range Slider (SfRangeSlider)
 
 It is possible to place tick marks along the track in a uniform manner. The position of tick marks can be customized. 
 

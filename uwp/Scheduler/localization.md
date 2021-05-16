@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | SfSchedule | uwp | Syncfusion
-description: Localization
+title: Localization in UWP Scheduler control | Syncfusion
+description: Learn here all about Localization support in Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: uwp
 control: SfSchedule
 documentation: ug
 ---
 
-# Localization
+# Localization in UWP Scheduler (SfSchedule)
 Schedule control is available with complete localization support. Localization can be specified by setting the local language to the `PrimaryLanguageOverride`. In the format of `Language code`.
 
 ## Change default control language
@@ -26,7 +26,7 @@ By default, schedule control is available with en locale, which is English.
 >**Note:** AM/PM in the timeline will not be localized in the Schedule views.
 
 
-![](Localization_images/Localization_img1.png)
+![Localization_img1](Localization_images/Localization_img1.png)
 
 
 ## Localizing custom text in UWP renderer.
@@ -34,6 +34,6 @@ You can localize custom text available in the control by adding equivalent local
 
 >**Note:** Here resw file name should be match with the given locale language code.
 
-![](Localization_images/Localization_CustomText.png)
+![Localization_CustomText](Localization_images/Localization_CustomText.png)
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Legend in TreeMap control
-description: TreeMap Legend
+title: TreeMap Legend in UWP TreeMap control | Syncfusion
+description: Learn here all about TreeMap Legend support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
 platform: UWP
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Legend
+# TreeMap Legend in UWP TreeMap (SfTreeMap)
 
 TreeMap legend is used to easily demonstrate about the color value of leaf nodes. But this legend could be appropriate only for the treemap having leaf nodes colored by using `RangeBrushColorMapping`. The labels of the legend item can be customized by specifying `LegendLabel` of RangeBrush mentioned in the Brushes of RangeBrushColorMapping.
 
@@ -88,7 +88,7 @@ Code Sample:
 
 {% endhighlight %}
 
-![](Features_images/Features_img13.png)
+![Features_img13](Features_images/Features_img13.png)
 
 
 

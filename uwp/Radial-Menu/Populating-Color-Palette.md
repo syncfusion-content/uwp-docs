@@ -1,13 +1,13 @@
 ---
 layout: post
-title: populating color palette of SfRadialMenu control for UWP
-description: populating color palette of SfRadialMenu control for UWP
+title: Populating Color Palette in UWP Radial Menu control | Syncfusion
+description: Learn here all about Populating Color Palette support in Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
 ---
 
-# Populating Color Palette
+# Populating Color Palette in UWP Radial Menu (SfRadialMenu)
 
 Color Palette can be formed in SfRadialMenu with the Radial Color Items. 
 

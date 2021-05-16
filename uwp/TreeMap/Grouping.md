@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grrouping in TreeMap control
-description: Grouping
+title: Grouping in UWP TreeMap control | Syncfusion
+description: Learn here all about Grouping support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
 platform: UWP
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap Levels
+# Grouping in UWP TreeMap (SfTreeMap)
 
 The levels of TreeMap can be categorized into two types such as,
 

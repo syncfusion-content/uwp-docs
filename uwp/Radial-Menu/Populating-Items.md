@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items of SfRadialMenu control for UWP
-description: Explains about Populating Items of SfRadialMenu control for UWP
+title: Populating Items in UWP Radial Menu control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
 ---
 
-# Populating Items 
+# Populating Items in UWP Radial Menu (SfRadialMenu)
 
 ## Items Source  
 

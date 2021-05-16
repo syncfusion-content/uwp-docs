@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon Customization in SfSpreadsheet
-description: How to customize the SfSpreadsheetRibbon
+title: Ribbon Customization in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Ribbon Customization support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Ribbon Customization
+# Ribbon Customization in UWP Spreadsheet (SfSpreadsheet)
 
 Ribbon Customization can be done in two ways,
 

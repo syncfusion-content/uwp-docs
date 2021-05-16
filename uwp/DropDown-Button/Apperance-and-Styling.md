@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appereance and Styling of the SfDropDownButton control for UWP
-description: Appereance and Styling of the SfDropDownButton control for UWP
+title: Appearance and Styling in UWP DropDown Button control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP DropDown Button (SfDropDownButton) control and more.
 platform: uwp
 control:  SfDropDownButton
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP DropDown Button (SfDropDownButton)
 
 ## Accent brush
 
@@ -21,7 +21,7 @@ AccentBrush property is used to decorate the hot spots of a control with a solid
 
 {% endhighlight %}
 
-![](Apperance-and-Styling_images/Apperance-and-Styling_img1.jpeg)
+![Apperance-and-Styling_img1](Apperance-and-Styling_images/Apperance-and-Styling_img1.jpeg)
 
 
 ## ContentTemplate
@@ -47,7 +47,7 @@ ContentTemplate property is used to decorate the content of the SfDropDownButton
 
 {% endhighlight %}
 
-![](Apperance-and-Styling_images/Apperance-and-Styling_img2.jpeg)
+![Apperance-and-Styling_img2](Apperance-and-Styling_images/Apperance-and-Styling_img2.jpeg)
 
 
 ## DropdownContentTemplate
@@ -73,6 +73,6 @@ DropDownContentTemplate is used to decorate the drop down content of SfDropDownB
 
 {% endhighlight %}
 
-![](Apperance-and-Styling_images/Apperance-and-Styling_img3.jpeg)
+![Apperance-and-Styling_img3](Apperance-and-Styling_images/Apperance-and-Styling_img3.jpeg)
 
 

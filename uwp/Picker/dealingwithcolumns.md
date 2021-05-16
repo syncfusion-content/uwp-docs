@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Columns of Syncfusion Picker control for Xamarin.Android
-description: Dealing with Columns of Picker control
+title: Dealing with Columns in UWP Picker control | Syncfusion
+description: Learn here all about Dealing with Columns support in Syncfusion UWP Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Dealing with Columns
+# Dealing with Columns in UWP Picker (SfPicker)
 
 This section explains about the customization of SfPicker Columns
 
@@ -781,7 +781,7 @@ We have prepared cascading sample for change the SfPicker background color when 
 
 Screen shot for the above code
 
-![](images/CascadingColor.png)
+![CascadingColor](images/CascadingColor.png)
 
 We have attached sample for reference. please download the sample from the below link.
 

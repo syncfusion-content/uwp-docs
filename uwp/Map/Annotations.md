@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotations in SfMaps control
-description: How to add annotations to a map?
+title: Annotations in UWP Map control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Annotations
+# Annotations in UWP Map (SfMaps)
 
 `Annotations` are notes used to leave some message on the map. In SfMap, annotations are denoted by the `MapAnnotations`. MapAnnotation has two major parts:
 
@@ -53,7 +53,7 @@ AnnotationLabel’s appearance is customized by the following properties:
 
 {% endhighlight %}
 
-![](Features_images/Features_img14.png)
+![Features_img14](Features_images/Features_img14.png)
 
 ## Positioning a MapAnnotation
 
@@ -98,4 +98,4 @@ AnnotationTemplate is a `DataTemplate` type, used to customize or override the d
 
 {% endhighlight %}
 
-![](Features_images/Features_img15.png)
+![Features_img15](Features_images/Features_img15.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animating Carousel items of SfCarousel control for UWP
-description: Animating Carousel items of SfCarousel control for UWP
+title: Animation in UWP Carousel control | Syncfusion
+description: Learn here all about Animation support in Syncfusion UWP Carousel (SfCarousel) control and more.
 platform: UWP
 control: SfCarousel
 documentation: ug
 ---
 
-# Animating Carousel items
+# Animation in UWP Carousel (SfCarousel)
 
 The default animation used during the selection of carousel items can be customized using the following properties.
 

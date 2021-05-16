@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Month Navigation on SfCalendar control for UWP
-description: Month Navigation on SfCalendar control for UWP
+title: Month Navigation in UWP Calendar control | Syncfusion
+description: Learn here all about Month Navigation support in Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Month Navigation
+# Month Navigation in UWP Calendar (SfCalendar)
 
 Navigating between months are much simpler with touch. Navigation buttons are also provided.
 
@@ -45,7 +45,7 @@ calendar.ShowNavigationButton = True
 
 {% endtabs %}
 
-![](SfCalendar-images/SfCalendar-img12.jpeg)
+![SfCalendar-img12](SfCalendar-images/SfCalendar-img12.jpeg)
 
 
 ## Navigating to Previous Month

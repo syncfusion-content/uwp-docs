@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP DataGrid | Syncfusion
-description: Learn here about getting started with Syncfusion Essential UWP DataGrid (SfDataGrid) control and more details.
+title: Getting Started with UWP DataGrid control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in SfMaps control
-description: How to display legends in map control?
+title: Legend in UWP Map control | Syncfusion
+description: Learn here all about Legend support in Syncfusion UWP Map (SfMaps) control and more.
 platform: UWP
 control: SfMaps
 documentation: ug
 ---
 
-# Legend
+# Legend in UWP Map (SfMaps)
 
 A legend is a key to symbolism used on a map, usually containing swatches of symbols with descriptions. It provides valuable information for interpreting what the map is showing you, and can be represented in various colors and shapes based on the data.
 
@@ -92,7 +92,7 @@ Layer shape type legends can be different shapes for the legend. The shapes can 
 
 {% endhighlight  %}
 
-![](Legend_images/Legend_img1.png)
+![Legend_img1](Legend_images/Legend_img1.png)
  
 
 ## Legends for Bubbles
@@ -125,7 +125,7 @@ Layer shape type legends can be different shapes for the legend. The shapes can 
 {% endhighlight  %}
 
 
-![](Legend_images/Legend_img2.png)
+![Legend_img2](Legend_images/Legend_img2.png)
 
 ## Arranging the Legends 
 

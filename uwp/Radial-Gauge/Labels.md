@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Labels| SfCircularGauge | uwp | Syncfusion
-description: Labels
+title: Labels in UWP Radial Gauge control | Syncfusion
+description: Learn here all about Labels support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Labels 
+# Labels in UWP Radial Gauge (SfCircularGauge)
 
 The [`Scale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html)  labels associate numeric values with major scale tick marks.
 
@@ -72,7 +72,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img1.png)
+![Labels_img1](Labels_images/Labels_img1.png)
 
 ## Label font customization
 
@@ -144,7 +144,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img2.png)
+![Labels_img2](Labels_images/Labels_img2.png)
 
 ## Setting position for labels
 
@@ -220,7 +220,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img3.png)
+![Labels_img3](Labels_images/Labels_img3.png)
 
 2. Positioning the labels far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_LabelOffset)  property. First, set the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_LabelPosition)  to custom, and then position the label using the [`LabelOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_LabelOffset)  property.
 
@@ -286,7 +286,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img4.png)
+![Labels_img4](Labels_images/Labels_img4.png)
 
 ## Setting smart labels
 
@@ -382,7 +382,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img5.png)
+![Labels_img5](Labels_images/Labels_img5.png)
 
 ## Setting number of fraction digits for labels
 
@@ -448,7 +448,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img6.png)
+![Labels_img6](Labels_images/Labels_img6.png)
 
 ## Setting postfix and prefix for labels
 
@@ -518,7 +518,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img7.png)
+![Labels_img7](Labels_images/Labels_img7.png)
 
 ### Label prefix
 
@@ -584,7 +584,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img8.png)
+![Labels_img8](Labels_images/Labels_img8.png)
 
 ## Edge label customization
 
@@ -666,7 +666,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img9.png)
+![Labels_img9](Labels_images/Labels_img9.png)
 
 ## Setting auto angle for label
 
@@ -732,6 +732,6 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
-![](Labels_images/Labels_img10.png)
+![Labels_img10](Labels_images/Labels_img10.png)
 
 

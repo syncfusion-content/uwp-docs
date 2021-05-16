@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Populating Items of Syncfusion Picker control for Xamarin.Android
-description: Populating Items of Picker control
+title: Populating Items in UWP Picker control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion UWP Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Populating Items
+# Populating Items in UWP Picker (SfPicker)
 
 This section explains about the ways of populating items for SfPicker control
 
@@ -227,7 +227,7 @@ Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtra
 
 Screen shot for the above code.
 
-![](images/MultiColumn.png)
+![MultiColumn](images/MultiColumn.png)
 
 ## Set Items Colors and Font Attributes customization
 
@@ -866,6 +866,6 @@ In SfPicker, the items can be customized with custom view of each item by adding
 
 Screen shot for the above code.
 
-![](images/PopulatingItems.png)
+![PopulatingItems](images/PopulatingItems.png)
 
 

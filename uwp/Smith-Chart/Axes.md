@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axes | SfSmithChart | UWP | Syncfusion
-description: Axis behavior and its types.
+title: Axes in UWP Smith Chart control | Syncfusion
+description: Learn here all about Axes support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: SfSmithChart
 documentation: ug
 ---
 
-# Axes
+# Axes in UWP Smith Chart (SfSmithChart)
 
 Typically, SmithChart  has been used two axes that are used to measure and categorize the data. 
 

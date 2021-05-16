@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Deals with the DropDown Customization of the SfTimePicker control for UWP
-description: Explains about DropDown Customization of the SfTimePicker control for UWP
+title: Customizing DropDown in UWP TimePicker control | Syncfusion
+description: Learn here all about Customizing DropDown support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control:  SfTimePicker
 documentation: ug
 ---
-# Customizing DropDown
+# Customizing DropDown in UWP TimePicker (SfTimePicker)
 
 ## DropDown height
 
@@ -38,7 +38,7 @@ timePicker.DropDownHeight = 200
 
 {% endtabs %}
 
-![](Features_images/Customizing-DropDown_img2.png)
+![Customizing-DropDown_img2](Features_images/Customizing-DropDown_img2.png)
 
 
 ## IsDropDownOpen
@@ -76,4 +76,4 @@ DropDownButton visibility can be changed by using the ShowDropDownButton propert
 
 {% endtabs %}
 
-![](Features_images/Customizing-DropDown_img3.png)
+![Customizing-DropDown_img3](Features_images/Customizing-DropDown_img3.png)

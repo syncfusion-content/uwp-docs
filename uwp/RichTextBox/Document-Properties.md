@@ -1,12 +1,12 @@
 ---
-title: Document Properties | UWP RichTextBox| Syncfusion
-description: This section illustrates about Document Properties support in UWP RichTextBox(SfRichTextBoxAdv) control.
+title: Document Properties in UWP RichTextBox control | Syncfusion
+description: Learn here all about Document Properties support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: Word count, paragraph count, page count, current page number.
 ---
-# Document Properties in UWP RichTextBox
+# Document Properties in UWP RichTextBox (SfRichTextBoxAdv)
 RichTexBox keep tracking the statistics about your documents. These statistics contains information about word count, paragraph count and pages count.
 
 ## Word Count

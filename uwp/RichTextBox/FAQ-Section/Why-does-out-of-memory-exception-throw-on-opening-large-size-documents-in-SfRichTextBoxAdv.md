@@ -1,12 +1,12 @@
 ---
-title: Why does out of memory exception throw on opening large size documents in SfRichTextBoxAdv
-description: why-does-out-of-memory-exception-throw-on-opening-large-size-documents-in-sfrichtextboxadv
+title: Why does out of memory exception throw on opening large size documents in SfRichTextBoxAdv in UWP RichTextBox control | Syncfusion
+description: Learn here all about Why does out of memory exception throw on opening large size documents in SfRichTextBoxAdv support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: out-of-memory-exception
 ---
-# FAQ Section
+# Why does out of memory exception throw on opening large size documents in SfRichTextBoxAdv in UWP RichTextBox (SfRichTextBoxAdv)
 
 ## Why does out of memory exception throw on opening large size documents in SfRichTextBoxAdv
 

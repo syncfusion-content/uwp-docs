@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Syncfusion Interactivity 
-description: Interactivity
+title: Interactivity in UWP Range Selector control | Syncfusion
+description: Learn here all about Interactivity support in Syncfusion UWP Range Selector (SfDateTimeRangeNavigator) control and more.
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# Interactivity
+# Interactivity in UWP Range Selector (SfDateTimeRangeNavigator)
 
 The SfDateTimeRangeNavigator helps the user to visualize large data in a simplified manner. The timespan of the data is represented in the higher level bar and lower level bar. The timespan in default is calculated smartly and provide suitable DateTime format and Interval for the given data. It can hold any type of UI element inside the Navigator.
 

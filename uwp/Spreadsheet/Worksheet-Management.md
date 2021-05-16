@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Worksheet Management in SfSpreadsheet
-description: How to perform worksheet related operations(insert, delete, hide, etc.) in SfSpreadsheet
+title: Worksheet Management in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Worksheet Management support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Worksheet Management
+# Worksheet Management in UWP Spreadsheet (SfSpreadsheet)
 This section explains about the operations that are performed with the worksheet.
 
 ## Insert and Delete

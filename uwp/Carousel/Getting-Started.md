@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfCarousel control for UWP 
-description: The following section provides an assistance to create a carousel in application and to configure it.
+title: Getting Started with UWP Carousel control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Carousel (SfCarousel) control and more.
 platform: uwp
 control: SfCarousel
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Carousel (SfCarousel)
 
 This section explains how to create a preview of slides using SfCarousel control.
 

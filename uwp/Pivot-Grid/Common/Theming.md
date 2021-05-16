@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming | SfPivotGrid | UWP | Syncfusion
-description: Theming
+title: Theming in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Theming support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Theming
+# Theming in UWP Pivot Grid (SfPivotGrid)
 
 Theming is the process of applying particular settings to visual elements of a control. Following built-in themes are supported in the SfPivotGrid control.
 
@@ -54,4 +54,4 @@ Me.PivotGrid1.GridVisualStyle = PivotGridVisualStyle.Office2010Black
 
 {% endtabs %}
 
-![](Theming_images/Theming_img1.png)
+![Theming_img1](Theming_images/Theming_img1.png)

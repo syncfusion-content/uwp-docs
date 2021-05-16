@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RenderingType| SfSmithChart | UWP | Syncfusion
-description: Rendering type SfSmithChart control.
+title: Rendering Type in UWP Smith Chart control | Syncfusion
+description: Learn here all about Rendering Type support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: SfSmithChart
 documentation: ug
 ---
 
-# RenderingType
+# Rendering Type in UWP Smith Chart (SfSmithChart)
 
 SfSmithChart  plots the transmission line in two different ways by using `RenderingType` property. The two  ways are given below.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection Mode of SfAccordion control for UWP
-description: Selection Mode of SfAccordion control for UWP
+title: Selection Mode in UWP Accordion control | Syncfusion
+description: Learn here all about Selection Mode support in Syncfusion UWP Accordion (SfAccordion) control and more.
 platform: uwp
 control: SfAccordion
 documentation: ug
 ---
 
-# Expansion Modes
+# Selection Mode in UWP Accordion (SfAccordion)
 
 `SfAccordion` provides a property `SelectionMode` that helps to decide the number of items that can be expanded or selected at a time. The values of SelectionMode's are
 
@@ -80,6 +80,6 @@ accordion.SelectionMode = AccordionSelectionMode.OneOrMore
 
 {% endtabs %}
 
-![](Selection-Mode-images/Selection-Mode-img1.jpeg)
+![Selection-Mode-img1](Selection-Mode-images/Selection-Mode-img1.jpeg)
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation support in Syncfusion SfRangeSlider control for UWP
-description: Deals with orientation to change the position of SfRangeSlider control for UWP  
+title: Positioning SfRangeSlider in UWP Range Slider control | Syncfusion
+description: Learn here all about Positioning SfRangeSlider support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Orientation  
+# Positioning SfRangeSlider in UWP Range Slider (SfRangeSlider)
 
 The Orientation property has the following two options.  
 

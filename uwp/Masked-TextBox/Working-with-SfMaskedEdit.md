@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working With SfMaskedEdit| SfMaskedEdit | UWP | Syncfusion
-description: Working With SfMaskedEdit
+title: Working with SfMaskedEdit in UWP Masked TextBox control | Syncfusion
+description: Learn here all about Working with SfMaskedEdit support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
@@ -67,9 +67,9 @@ maskedEdit.Mask="00/00/0000";
 
 {% endtabs %}
 
-![](MaskOptions_images/mask_option_image1.jpg)
+![mask_option_image1](MaskOptions_images/mask_option_image1.jpg)
 
-![](MaskOptions_images/mask_option_image2.jpg)
+![mask_option_image2](MaskOptions_images/mask_option_image2.jpg)
 
 ### Regular Mask
 
@@ -100,9 +100,9 @@ maskedEdit.Mask = "(\d{0,3})\d{3}-\d{2}-\d{2}";
 
 {% endtabs %}
 
-![](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img1.jpg)
+![Working_with_SfMaskedEdit_img1](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img1.jpg)
 
-![](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img2.jpg)
+![Working_with_SfMaskedEdit_img2](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img2.jpg)
 
 ### RegEx Mask
 
@@ -131,9 +131,9 @@ maskedEdit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
 
 {% endtabs %}
 
-![](MaskOptions_images/mask_option_image8.jpg)
+![mask_option_image8](MaskOptions_images/mask_option_image8.jpg)
 
-![](MaskOptions_images/mask_option_image9.jpg)
+![mask_option_image9](MaskOptions_images/mask_option_image9.jpg)
 
 ## Binding Value
 
@@ -161,7 +161,7 @@ maskedEdit.Value = "14/11/2014";
 
 {% endtabs %}
 
-![](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img3.jpg)
+![Working_with_SfMaskedEdit_img3](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img3.jpg)
 
 ### Set the value property through binding
 
@@ -234,7 +234,7 @@ maskedEdit.Watermark = "Type here";
 
 {% endtabs %}
 
-![](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img4.jpg)
+![Working_with_SfMaskedEdit_img4](Working_with_SfMaskedEdit_images/Working_with_SfMaskedEdit_img4.jpg)
 
 
 

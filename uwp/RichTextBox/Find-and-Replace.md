@@ -1,12 +1,12 @@
 ---
-title: Find and Replace
-description: find-and-replace
+title: Find and Replace in UWP RichTextBox control | Syncfusion
+description: Learn here all about Find and Replace support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: search,find,replace-text
 ---
-# Find and Replace
+# Find and Replace in UWP RichTextBox (SfRichTextBoxAdv)
 
 The SfRichTextBoxAdv control supports searching text contents in the document. This when used in combination with selection becomes a powerful tool enabling scenarios like highlighting specific parts of the document, applying formatting such as bold or replacing text. You can extend your search by using regular expression to find particular pattern of text in the document. 
 The following code example explains how to find the first occurrence of a particular text in the document and apply bold formatting.

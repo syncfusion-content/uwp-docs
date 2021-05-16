@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Scrolling | SfGantt | UWP | Syncfusion
+title: Scrolling in UWP Gantt control | Syncfusion
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Scrolling
+# Scrolling in UWP Gantt (SfGantt)
 
 ## Scroll to visible region
 

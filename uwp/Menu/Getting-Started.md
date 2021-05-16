@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started
-description: Getting Started for Syncfusion SfMenu control for UWP
+title: Getting Started with UWP Menu control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug
 --- 
 
-# Getting Started
+# Getting Started with UWP Menu (SfMenu)
 
 This section explains how to create the `SfMenu` control.
 

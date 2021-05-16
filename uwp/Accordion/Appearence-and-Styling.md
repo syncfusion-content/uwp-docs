@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance and Styling | SfAccordion | UWP | Syncfusion
-description: Appearance and Styling of Syncfusion SfAccordion control for UWP
+title: Appearance and Styling in UWP Accordion control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion UWP Accordion (SfAccordion) control and more.
 platform: UWP
 control: SfAccordion
 documentation: ug
 
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP Accordion (SfAccordion)
 
 `AccentBrush` property is used to decorate the hot spots of a control with a solid color
 
@@ -46,7 +46,7 @@ accordion.AccentBrush = New SolidColorBrush() With {.Color = Windows.UI.Colors.R
 
 {% endtabs %}
 
-![](Appearence-and-Styling-images/appearence-and-styling-img1.jpeg)
+![appearence-and-styling-img1](Appearence-and-Styling-images/appearence-and-styling-img1.jpeg)
 
 
 ## Customizing SfAccordion Item
@@ -90,7 +90,7 @@ accordion.AccentBrush = New SolidColorBrush() With {.Color = Windows.UI.Colors.R
 
 {% endtabs %}
 
-![](Appearence-and-Styling-images/appearence-and-styling-img2.jpeg)
+![appearence-and-styling-img2](Appearence-and-Styling-images/appearence-and-styling-img2.jpeg)
 
 ## Customizing Accordion Button
 

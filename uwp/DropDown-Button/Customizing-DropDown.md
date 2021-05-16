@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Deals with the Customization of the SfDropDownButton control for UWP
-description: Explains about Customization of the SfDropDownButton control for UWP
+title: Customizing DropDown in UWP DropDown Button control | Syncfusion
+description: Learn here all about Customizing DropDown support in Syncfusion UWP DropDown Button (SfDropDownButton) control and more.
 platform: uwp
 control:  SfDropDownButton
 documentation: ug
 ---
-# Customizing DropDown
+# Customizing DropDown in UWP DropDown Button (SfDropDownButton)
 
 
 ## DropDown direction
@@ -51,7 +51,7 @@ dropdownbutton.DropDownDirection = Syncfusion.UI.Xaml.Controls.Input.DropDownDir
 
 {% endtabs %}
 
-![](Customizing-DropDown_images/Customizing-DropDown_img1.jpeg)
+![Customizing-DropDown_img1](Customizing-DropDown_images/Customizing-DropDown_img1.jpeg)
 
 
 ## DropDown height
@@ -95,7 +95,7 @@ dropdownbutton.DropDownHeight = 250.0
 
 {% endtabs %}
 
-![](Customizing-DropDown_images/Customizing-DropDown_img2.jpeg)
+![Customizing-DropDown_img2](Customizing-DropDown_images/Customizing-DropDown_img2.jpeg)
 
 
 ## IsDropDownOpen

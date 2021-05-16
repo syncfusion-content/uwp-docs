@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization and Deserialization | SfPivotChart | UWP | Syncfusion
-description: Serialization and Deserialization
+title: Serialization and Deserialization in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Serialization and Deserialization support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Serialization and Deserialization
+# Serialization and Deserialization in UWP Pivot Chart (SfPivotChart)
 
 This support allows you to serialize and deserialize the settings of SfPivotChart control using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
 

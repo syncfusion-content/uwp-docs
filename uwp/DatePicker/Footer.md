@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with the Visibility of Done and Cancel Buttons of SfDatePicker contol for UWP
-description: Deals with the Visibility of Done and Cancel Buttons of SfDatePicker contol for UWP
+title: Footer in UWP DatePicker control | Syncfusion
+description: Learn here all about Footer support in Syncfusion UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# Footer
+# Footer in UWP DatePicker (SfDatePicker)
 
 ## Done and Cancel Buttons
 
@@ -41,7 +41,7 @@ The following code sample shows how to hide the done button:
 		
 {% endhighlight %}
 
-![](Features_images/Features_img11.png)
+![Features_img11](Features_images/Features_img11.png)
 
 
 
@@ -74,4 +74,4 @@ The following code sample shows how to hide the cancel button:
 
 			{% endhighlight  %}
 			
-![](Features_images/Features_img12.png)
+![Features_img12](Features_images/Features_img12.png)

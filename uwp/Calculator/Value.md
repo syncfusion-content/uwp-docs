@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Handling Value of SfCalculator control for UWP
-description: Handling Value of SfCalculator control for UWP
+title: Value in UWP Calculator control | Syncfusion
+description: Learn here all about Value support in Syncfusion UWP Calculator (SfCalculator) control and more.
 platform: uwp
 control: SfCalculator
 documentation: ug
 ---
 
-# Dealing with values
+# Value in UWP Calculator (SfCalculator)
 
 ## Retrieving Computed Value
 
@@ -66,7 +66,7 @@ calculator.DefaultValue = 34.67D
 
 {% endtabs %}
 
-![](SfCalculator-images/SfCalculator-img4.jpeg)
+![SfCalculator-img4](SfCalculator-images/SfCalculator-img4.jpeg)
 
 ## Showing Text in Display Panel
 

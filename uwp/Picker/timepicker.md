@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Demonstrate TimePicker using SfPicker of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
+title: Time Picker in UWP Picker control | Syncfusion
+description: Learn here all about Time Picker support in Syncfusion UWP Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Time Picker
+# Time Picker in UWP Picker (SfPicker)
 
 We have demonstrated how to create TimePicker using Picker control in the following steps.
 
@@ -227,7 +227,7 @@ The below code demonstrates Time collection creation.
 
 Screen shot for the above codes.
 
-![](images/TimePicker.png)
+![TimePicker](images/TimePicker.png)
 
 We have attached TimePicker sample for reference. Please download the sample from the following link.
 

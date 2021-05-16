@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Exploration | SfPivotClient | UWP | Syncfusion
-description: data exploration such as filtering, grouping and searching.
+title: Data Exploration in UWP Pivot Client control | Syncfusion
+description: Learn here all about Data Exploration support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Data Exploration
+# Data Exploration in UWP Pivot Client (SfPivotClient)
 
 ## Filtering
 
@@ -19,9 +19,9 @@ The **Select All** option in the dialog allows users to select or deselect all f
 
 The following screenshots illustrate that the members of FY2009 and FY2012 are excluded from the SfPivotClient control.
 
-![](Data-Exploration_images/Filtering_image2.png)
+![Filtering_image2](Data-Exploration_images/Filtering_image2.png)
 
-![](Data-Exploration_images/Filtering_image3.png)
+![Filtering_image3](Data-Exploration_images/Filtering_image3.png)
 
 ## Grouping
 
@@ -29,7 +29,7 @@ The data can be grouped when more than one pivot item is added to the column or 
 
 In the following example, the **Date** values get grouped with respect to the values of the **Product**. Likewise, multiple dimension members can be grouped by dragging the elements from the cube dimension browser to the axis element builder.
 
-![](Data-Exploration_images/Filtering_image1.png)
+![Filtering_image1](Data-Exploration_images/Filtering_image1.png)
 
 ## Searching
 
@@ -37,4 +37,4 @@ If you want to search the pivot item values, you should enter the required text 
 
 The following screenshot shows how to search pivot item values in the filter editor dialog.
 
-![](Data-Exploration_images/Searching_image1.png)
+![Searching_image1](Data-Exploration_images/Searching_image1.png)

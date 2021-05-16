@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Explains about Animation of Syncfusion SfGroupBar control 
-description: Explains about Animation of Syncfusion SfGroupBar control 
+title: Animation in UWP Navigation Pane control | Syncfusion
+description: Learn here all about Animation support in Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
 platform: UWP
 control: SfGroupBar
 documentation: ug
 ---
 
-# Animation
+# Animation in UWP Navigation Pane (SfGroupBar)
 
 While the collapsed content popup is opening, transition effects can be applied using the property `PopupAnimation`. The values of Enumeration `ContentPopupAnimationTypes` are
 

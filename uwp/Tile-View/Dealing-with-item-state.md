@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion SfTileView control for UWP
-description: Overview of Syncfusion SfTileView control for UWP
+title: Dealing with State in UWP Tile View control | Syncfusion
+description: Learn here all about Dealing with State support in Syncfusion UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Dealing with states of TileViewItem
+# Dealing with State in UWP Tile View (SfTileView)
 
 ## Setting item state
 
@@ -104,7 +104,7 @@ tileItem1.State = Syncfusion.UI.Xaml.Controls.Layout.TileViewItemState.Maximized
 
 {% endtabs %}
 
-![](Dealing-with-item-state-images/Dealing-with-item-state-img1.jpeg)
+![Dealing-with-item-state-img1](Dealing-with-item-state-images/Dealing-with-item-state-img1.jpeg)
 
 ## Maximizing item programmatically
 

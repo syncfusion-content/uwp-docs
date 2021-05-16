@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Programmatically processing paging with SfDataPager control in UWP.
-description: Programmatically processing paging with SfDataPager control in UWP.
+title: Programmatically Processing Paging in UWP DataPager control | Syncfusion
+description: Learn here all about Programmatically Processing Paging support in Syncfusion UWP DataPager (SfDataPager) control and more.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
-# Programmatically processing paging
+# Programmatically Processing Paging in UWP DataPager (SfDataPager)
 
 
 ## Changing PageIndex at runtime
@@ -106,4 +106,4 @@ private async void sfDataPager_PageIndexChanging(object sender, PageIndexChangin
 {% endhighlight %}
 {% endtabs %}
 
-![](Programmatically-Processing-Paging_images/Programmatically-Processing-Paging_img1.jpeg)
+![Programmatically-Processing-Paging_img1](Programmatically-Processing-Paging_images/Programmatically-Processing-Paging_img1.jpeg)

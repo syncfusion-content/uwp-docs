@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Dock Window of Syncfusion SfDockingManager control for UWP
-description: Learn how to configure DockWindow in different sides and targets and features in DockWindow
+title: Docking Window in UWP Docking control | Syncfusion
+description: Learn here all about Docking Window support in Syncfusion UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Docking Window
+# Docking Window in UWP Docking (SfDockingManager)
 
 Docking window is one of the state of `SfDockingManager`. Since Dock is the default value, initially all the children stay as Docking Window.
 
-![](Docking-Window-images/Docking-Window-img1.jpeg)
+![Docking-Window-img1](Docking-Window-images/Docking-Window-img1.jpeg)
 
 
 ## Configuring Window in Different Sides
@@ -50,7 +50,7 @@ To Dock four children of `SfDockingManager` to each sides, set `SideInDockedMode
 
 {% endtabs %}
 
-![](Docking-Window-images/Docking-Window-img2.jpeg)
+![Docking-Window-img2](Docking-Window-images/Docking-Window-img2.jpeg)
 
 
 ## Docking Window in Various Targets
@@ -99,7 +99,7 @@ To set the child window as TabbedWindow, the window should aware of a Target win
 
 {% endtabs %}
 
-![](Docking-Window-images/Docking-Window-img3.jpeg)
+![Docking-Window-img3](Docking-Window-images/Docking-Window-img3.jpeg)
 
 
 ## Enabling or Disabling the Header Visibility
@@ -128,7 +128,7 @@ To set the child window as TabbedWindow, the window should aware of a Target win
 
 {% endtabs %}
 
-![](Docking-Window-images/Docking-Window-img4.jpeg)
+![Docking-Window-img4](Docking-Window-images/Docking-Window-img4.jpeg)
 
 
 ## Enabling or Disabling the Dock Functionality

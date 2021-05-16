@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Minutes and Seconds intervals options of SfDateTimeCombo control
-description: Minutes and Seconds intervals options of SfDateTimeCombo control
+title: Setting Minutes and Seconds Intervals in UWP DateTimePicker control | Syncfusion
+description: Learn here all about Setting Minutes and Seconds Intervals support in Syncfusion UWP DateTimePicker (SfDateTimeCombo) control and more.
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug
 ---
 
-# Setting Minutes and Seconds intervals
+# Setting Minutes and Seconds Intervals in UWP DateTimePicker (SfDateTimeCombo)
 
 MinuteInterval and SecondInterval properties can be used to specify the interval for minutes and seconds to be displayed in the SfDateTimeCombo control
 
@@ -46,7 +46,7 @@ combo.SecondsInterval = 15
 
 ### MinuteInterval
 
-![](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img1.png)
+![Minutes-and-Seconds-intervals_img1](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img1.png)
 
 
 
@@ -54,7 +54,7 @@ combo.SecondsInterval = 15
 
 ### SecondInterval
 
-![](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img2.png)
+![Minutes-and-Seconds-intervals_img2](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img2.png)
 
 
 

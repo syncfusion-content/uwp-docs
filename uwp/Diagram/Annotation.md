@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add text annotation to UWP Diagram objects | Syncfusion
-description: How to textually describe Nodes and Connectors?
+title: Annotation in UWP Diagram control | Syncfusion
+description: Learn here all about Annotation support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Annotation
+# Annotation in UWP Diagram (SfDiagram)
 
 Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
 You can add Multiple Labels to a Node/Connector.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transformation of Characters | SfDigitalGauge | uwp | Syncfusion
-description: Transformation of Characters 
+title: Transformation of Characters in UWP Digital Gauge control | Syncfusion
+description: Learn here all about Transformation of Characters support in Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Transformation of Characters
+# Transformation of Characters in UWP Digital Gauge (SfDigitalGauge)
 
 The digital characters in the digital gauge can be transformed by setting certain properties in the digital gauge. Two kinds of transformations are done using this property. They are:
 
@@ -39,7 +39,7 @@ The value of the digital characters is scaled by altering the height and width o
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img1.jpeg)
+![Transformation-of-Characters_img1](Transformation-of-Characters_images/Transformation-of-Characters_img1.jpeg)
 
 ### CharacterWidth
 
@@ -62,7 +62,7 @@ The value of the digital characters is scaled by altering the height and width o
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img2.jpeg)
+![Transformation-of-Characters_img2](Transformation-of-Characters_images/Transformation-of-Characters_img2.jpeg)
 
 ## Skewing
 
@@ -89,7 +89,7 @@ The digital gauge also performs skew transformation for the digital characters. 
 {% endhighlight %}
 {% endtabs%}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img3.jpeg)
+![Transformation-of-Characters_img3](Transformation-of-Characters_images/Transformation-of-Characters_img3.jpeg)
 
 ### SkewAngleY
 
@@ -112,4 +112,4 @@ The digital gauge also performs skew transformation for the digital characters. 
 {% endhighlight %}
 {% endtabs %}
 
-![](Transformation-of-Characters_images/Transformation-of-Characters_img4.jpeg)
+![Transformation-of-Characters_img4](Transformation-of-Characters_images/Transformation-of-Characters_img4.jpeg)

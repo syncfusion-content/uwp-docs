@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Minimum constraint of SfRadialSlider control for UWP
-description: Explains about Minimum constraint of SfRadialSlider control for UWP
+title: Minimum in UWP Radial Slider control | Syncfusion
+description: Learn here all about Minimum support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
 ---
 
-# Minimum 
+# Minimum in UWP Radial Slider (SfRadialSlider)
 
 Gets or sets the minimum possible value. 
 

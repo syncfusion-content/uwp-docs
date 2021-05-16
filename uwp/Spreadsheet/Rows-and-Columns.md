@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows and Columns Operations in SfSpreadsheet
-description: Operations involved with rows and columns in SfSpreadsheet
+title: Rows and Columns in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Rows and Columns support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Rows and Columns
+# Rows and Columns in UWP Spreadsheet (SfSpreadsheet)
 This section explains about the operations related with rows and columns in SfSpreadsheet
 
 ## Insert Rows and Columns

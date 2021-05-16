@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UWP Diagram supports for connecting two nodes | Syncfusion
-description: How to draw a line to connect points, nodes, or ports and describe the connector types, its customization of appearance and functions
+title: Connector in UWP Diagram control | Syncfusion
+description: Learn here all about Connector support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Connector creation and customization
+# Connector in UWP Diagram (SfDiagram)
 
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 

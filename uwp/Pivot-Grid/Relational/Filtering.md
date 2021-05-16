@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering | SfPivotGrid | uwp | Syncfusion
-description: Filtering
+title: Filtering in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Filtering support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Filtering
+# Filtering in UWP Pivot Grid (SfPivotGrid)
 
 Filtering support displays only a subset of data that meets the specific criteria. You can specify and hide the data that you do not want to display. Filters are automatically reapplied every time when the SfPivotGrid is refreshed or updated until you remove those filters. In SfPivotGrid, filters are additive, which means that each additional filter is based on the current filter and further it reduces the subset of data. You can apply 'n' number of filtering conditions to the SfPivotGrid at a time. To apply filter, an instance of **FilterExpression** has to be created and the data will be filtered based on that specification.
 
@@ -61,10 +61,10 @@ PivotGrid1.Filters.Add(filterExpression)
 
 {% endtabs %}
 
-![](Filtering_images/PivotGrid_shows_the_filtered_values.png)
+![PivotGrid_shows_the_filtered_values](Filtering_images/PivotGrid_shows_the_filtered_values.png)
 
 ## Filtering using filter editor
 
 Filtering can also be applied to the SfPivotGrid control at runtime with the help of **Filter Editor**. The filter editor can be opened by clicking the filter icon present in the grouping bar item. The filter editor contains the filter list through which the items can be unchecked to apply filter dynamically. For unchecked items, a FilterExpression is internally created to apply filtering on the SfPivotGrid control.
 
-![](Filtering_images/PivotGrid_with_FilterEditor.png)
+![PivotGrid_with_FilterEditor](Filtering_images/PivotGrid_with_FilterEditor.png)

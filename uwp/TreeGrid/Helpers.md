@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers | SfTreeGrid | UWP | Syncfusion
-description: This section describes about the index resolver class for getting the row/column/node indexes and Dispose method of TreeGrid.
+title: Helpers in UWP TreeGrid control | Syncfusion
+description: Learn here all about Helpers support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Helpers
+# Helpers in UWP TreeGrid (SfTreeGrid)
 
 ## IndexResolver
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items
-description: Adding Menu items in Syncfusion SfMenu control for UWP
+title: Populating Items in UWP Menu control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug
 --- 
 
-# Populating Items
+# Populating Items in UWP Menu (SfMenu)
 
 `SfMenuItem` can be added as items of `SfMenu`. Items can be added using `Items` or `ItemsSource` property.
 
@@ -188,7 +188,7 @@ MenuCollection.Add(new Model() { Header = "Layout" });
 
 `SfMenu` control is populated as follows:
 
-![](Populating-Items-images/Populating-Items-img1.jpg)
+![Populating-Items-img1](Populating-Items-images/Populating-Items-img1.jpg)
 
 
 ## Displaying the Item
@@ -225,4 +225,4 @@ Content can be displayed using the `DisplayMemberPath` and `ItemTemplate` proper
 
 {% endhighlight %}
 
-![](Populating-Items-images/Populating-Items-img2.jpg)
+![Populating-Items-img2](Populating-Items-images/Populating-Items-img2.jpg)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBinding in TreeMap control
-description: DataBinding
+title: DataBinding in UWP TreeMap control | Syncfusion
+description: Learn here all about DataBinding support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
 platform: UWP
 control: TreeMap
 documentation: ug
 ---
 
-# Data Binding
+# DataBinding in UWP TreeMap (SfTreeMap)
 
 The SfTreeMap is bound to an external data source to display the data. It supports the data sources such as List, ObservableCollection, and so on. ItemsSource property helps to bind the TreeMap with the collection of objects.
 
@@ -39,7 +39,7 @@ Code Sample:
 
 N>  The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection and it should be numerical value.
 
-![](GettingStarted_images/treemapimage.png)
+![treemapimage](GettingStarted_images/treemapimage.png)
 
 
 ## ColorValuePath

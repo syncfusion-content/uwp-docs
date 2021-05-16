@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Advanced Filtering | SfPivotClient | UWP | Syncfusion
-description: Advanced Filtering
+title: Advanced Filtering in UWP Pivot Client control | Syncfusion
+description: Learn here all about Advanced Filtering support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Advanced Filtering
+# Advanced Filtering in UWP Pivot Client (SfPivotClient)
 
 The SfPivotClient provides an advanced filtering support through which members can be filtered based on value and label fields, and this can be achieved with the help of `EnableAdvancedFilter` property. The following code snippet illustrates how to enable **Advanced Filtering** in the SfPivotClient.
 
@@ -33,28 +33,28 @@ PivotClient1.EnableAdvancedFilter = True
 
 {% endtabs %}
 
-![](Advanced-Filtering_images/advancedFilteringEnabled.png)
+![advancedFilteringEnabled](Advanced-Filtering_images/advancedFilteringEnabled.png)
 
 ## Label filtering
 
 Label filtering provides an option to filter members of the selected field based on their caption. The following screenshots describe how the label filtering is applied in the SfPivotClient.
 
-![](Advanced-Filtering_images/labelFiletring_step1.png)
+![labelFiletring_step1](Advanced-Filtering_images/labelFiletring_step1.png)
 
-![](Advanced-Filtering_images/labelFiletring_step2.png)
+![labelFiletring_step2](Advanced-Filtering_images/labelFiletring_step2.png)
 
-![](Advanced-Filtering_images/labelFilteredClient.png)
+![labelFilteredClient](Advanced-Filtering_images/labelFilteredClient.png)
 *SfPivotClient applied with label filter*
 
 ## Value filtering
 
 Value filtering provides an option to filter members based on total values of the appropriate measure between the level members. The following screenshots describe how the value filtering is applied in the SfPivotClient.
 
-![](Advanced-Filtering_images/valueFiltering_step1.png)
+![valueFiltering_step1](Advanced-Filtering_images/valueFiltering_step1.png)
 
-![](Advanced-Filtering_images/valueFiltering_step2.png)
+![valueFiltering_step2](Advanced-Filtering_images/valueFiltering_step2.png)
 
-![](Advanced-Filtering_images/valueFilteredClient.png)
+![valueFilteredClient](Advanced-Filtering_images/valueFilteredClient.png)
 *SfPivotClient applied with value filter*
 
 A demo sample is available in the following location.

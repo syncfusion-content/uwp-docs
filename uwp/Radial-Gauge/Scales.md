@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Scales| SfCircularGauge | uwp | Syncfusion
-description:  This section explains the steps required to add and customize scales in circular gauge control for UWP.
+title: Scales in UWP Radial Gauge control | Syncfusion
+description: Learn here all about Scales support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Scales in SfCircularGauge
+# Scales in UWP Radial Gauge (SfCircularGauge)
 
 Scales contain a collection of [`CircularScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html) elements, which integrate labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 

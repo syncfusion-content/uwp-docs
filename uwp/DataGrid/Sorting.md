@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in SfDataGrid
-description: How to sort the data in SfDataGrid
+title: Sorting in UWP DataGrid control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Sorting
+# Sorting in UWP DataGrid (SfDataGrid)
 
 SfDataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
@@ -52,7 +52,7 @@ N> The [GridColumn.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.U
 
 End users can sort the column by clicking column header cell. Once the columns get sorted, the sort indicator will be displayed on the right side of the column header.
 
-![](Sorting_images/Sorting_img1.png)
+![Sorting_img1](Sorting_images/Sorting_img1.png)
 
 
 ## Sort column in double click
@@ -92,7 +92,7 @@ To apply sorting on multiple columns, user have to click the column header by pr
 
 In the below screen shot, the OrderID column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column.  
 
-![](Sorting_images/Sorting_img2.png)
+![Sorting_img2](Sorting_images/Sorting_img2.png)
 
 ### Display sort order
 It is also possible to display sorted order of columns in header by setting [SfDataGrid.ShowSortNumbers](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowSortNumbers) property to `true`. 
@@ -108,7 +108,7 @@ this.dataGrid.ShowSortNumbers = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Sorting_images/Sorting_img3.png)
+![Sorting_img3](Sorting_images/Sorting_img3.png)
 
 ## Programmatic sorting
 
@@ -273,7 +273,7 @@ this.dataGrid.SortComparers.Add(new SortComparer() { Comparer = new CustomCompar
 
 Sorting `CustomerName` column sorts the data using custom comparer available in `SfDataGrid.SortComparers`.
 
-![](Sorting_images/Sorting_img4.png)
+![Sorting_img4](Sorting_images/Sorting_img4.png)
 
 ## Sorting the underlying collection 
 

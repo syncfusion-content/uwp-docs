@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Kanban Cards | SfKanban | uwp | Syncfusion
-description: This section describes how the card can be customized using CardTemplate. It contains how to set the IndicatorColorPalette to Kanban.
+title: Cards in UWP Kanban Board control | Syncfusion
+description: Learn here all about Cards support in Syncfusion UWP Kanban Board (SfKanban) control and more.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 
-# Cards
+# Cards in UWP Kanban Board (SfKanban)
 
 The default elements of a card can be customized using the below properties of [`KanbanModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 

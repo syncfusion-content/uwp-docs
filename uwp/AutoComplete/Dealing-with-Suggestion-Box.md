@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  DropDown of AutoComplete in Syncfusion SfTextBoxExt control for UWP  
-description: Learn how to deal with the properties of Suggestion DropDown
+title: Dealing with SuggestionBox in UWP AutoComplete control | Syncfusion
+description: Learn here all about Dealing with SuggestionBox support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# Dealing with SuggestionBox
+# Dealing with SuggestionBox in UWP AutoComplete (SfTextBoxExt)
 
 The suggestion box is a drop-down list box that displays the filtered suggestions inside a popup. This section explains the properties that deal with drop-down list in the AutoComplete control.
 

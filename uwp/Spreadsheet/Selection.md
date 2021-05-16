@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection behavior in SfSpreadsheet 
-description: selection behavior of SfSpreadsheet
+title: Selection in UWP Spreadsheet control | Syncfusion
+description: Learn here all about Selection support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
 ---
 
-# Selection
+# Selection in UWP Spreadsheet (SfSpreadsheet)
 
 This section explains about the Selection behavior in SfSpreadsheet.
 

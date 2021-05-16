@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Deals with Done and Canel options of SfTimePicker control for UWP
-description: Explains about Done and Canel options of SfTimePicker control for UWP
+title: Footer in UWP TimePicker control | Syncfusion
+description: Learn here all about Footer support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug
 ---
 
-# Footer
+# Footer in UWP TimePicker (SfTimePicker)
 
 ## Done and Cancel Buttons
 
@@ -47,7 +47,7 @@ The following code sample shows how to hide the done button:
 
 {% endhighlight %}
 
-![](Features_images/Features_img13.png)
+![Features_img13](Features_images/Features_img13.png)
 
 
 
@@ -83,4 +83,4 @@ The following code sample shows how to hide the cancel button:
 
 {% endhighlight %}
 
-![](Features_images/Features_img14.png)
+![Features_img14](Features_images/Features_img14.png)

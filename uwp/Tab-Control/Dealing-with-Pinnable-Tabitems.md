@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Pinnable Items of SfTabControl control for UWP
-description: Dealing with Pinnable Items of SfTabControl control for UWP
+title: Dealing with Pinnable Tabitems in UWP Tab Control control | Syncfusion
+description: Learn here all about Dealing with Pinnable Tabitems support in Syncfusion UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Dealing with Pinnable Tab-Items
+# Dealing with Pinnable Tabitems in UWP Tab Control (SfTabControl)
 
 Tab Items in SfTabControl can be pinned or unpinned using the pin button next to its header text. 
 
@@ -63,7 +63,7 @@ Paul.ShowPinnableButton = True
 {% endtabs %}
 
 
-![](Dealing-with-Pinnable-Tabitems-images/Dealing-with-Pinnable-Tabitems-img1.jpeg)
+![Dealing-with-Pinnable-Tabitems-img1](Dealing-with-Pinnable-Tabitems-images/Dealing-with-Pinnable-Tabitems-img1.jpeg)
 
 
 ## Enable scroll buttons for pinned items panel
@@ -108,6 +108,6 @@ tabControl.PinnedTabScrollButtonVisibility = Syncfusion.UI.Xaml.Controls.Navigat
 
 {% endtabs %}
 
-![](Dealing-with-Pinnable-Tabitems-images/Dealing-with-Pinnable-Tabitems-img2.jpeg)
+![Dealing-with-Pinnable-Tabitems-img2](Dealing-with-Pinnable-Tabitems-images/Dealing-with-Pinnable-Tabitems-img2.jpeg)
 
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview
-description: Overview of Syncfusion SfMenu control for UWP
+title: About UWP Menu control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug
 --- 
 
 
-# Overview
+# UWP Menu (SfMenu) Overview
 
 `SfMenu` control allows the hierarchal organization of elements that are associated with commands and event handlers. `SfMenu` contains a collection of `SfMenuItem`, which can be expanded to display additional SfMenuItem's or to perform a specific action when clicked.
 

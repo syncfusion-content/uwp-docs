@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events | SfGantt | UWP | Syncfusion
-description: This section describes the event of the Syncfusion SfGantt in UWP platform such as BeginCellEdit, EndCellEdit, SelectionChanging, SelectionChanged, and more.
+title: Events in UWP Gantt control | Syncfusion
+description: Learn here all about Events support in Syncfusion UWP Gantt (SfGantt) control and more.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Events of Syncfusion SfGantt
+# Events in UWP Gantt (SfGantt)
 
 **BeginCellEdit**
 

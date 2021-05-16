@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns | TreeGrid Control for UWP | Syncfusion
-description: This section explains about the columns manipulation and customization Syncfusion UWP TreeGrid (SfTreeGrid) control
+title: Columns in UWP TreeGrid control | Syncfusion
+description: Learn here all about Columns support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

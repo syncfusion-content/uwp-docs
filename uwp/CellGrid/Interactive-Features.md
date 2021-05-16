@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features
-description: Interactive operations in SfCellGrid
+title: Interactive Features in UWP CellGrid control | Syncfusion
+description: Learn here all about Interactive Features support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in UWP CellGrid (SfCellGrid)
 
 This section explains interactive operations in the SfCellGrid.
 

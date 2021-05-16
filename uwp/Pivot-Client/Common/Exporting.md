@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting | SfPivotClient | UWP | Syncfusion
-description: Exporting
+title: Exporting in UWP Pivot Client control | Syncfusion
+description: Learn here all about Exporting support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Exporting
+# Exporting in UWP Pivot Client (SfPivotClient)
 
 ## Exporting pivot grid
 
@@ -22,13 +22,13 @@ By clicking the respective icons in the pivot grid's toolbar, users can export t
 
 The following screenshots illustrate the exported pivot grid.
 
-![](Exporting_images/excelExportedGrid.png)
+![excelExportedGrid](Exporting_images/excelExportedGrid.png)
 
-![](Exporting_images/wordExportedGrid.png)
+![wordExportedGrid](Exporting_images/wordExportedGrid.png)
 
-![](Exporting_images/pdfExportedGrid.png)
+![pdfExportedGrid](Exporting_images/pdfExportedGrid.png)
 
-![](Exporting_images/csvExportedGrid.png)
+![csvExportedGrid](Exporting_images/csvExportedGrid.png)
 
 ## Exporting pivot chart
 
@@ -42,8 +42,8 @@ By clicking the respective icons in the pivot chart's toolbar, users can export 
 
 The following screenshots illustrate the exported pivot chart.
 
-![](Exporting_images/imageExportedChart.png)
+![imageExportedChart](Exporting_images/imageExportedChart.png)
 
-![](Exporting_images/wordExportedChart.png)
+![wordExportedChart](Exporting_images/wordExportedChart.png)
 
-![](Exporting_images/pdfExportedChart.png)
+![pdfExportedChart](Exporting_images/pdfExportedChart.png)

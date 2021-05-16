@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in Syncfusion TreeMap control
-description: Selection
+title: Selection in UWP TreeMap control | Syncfusion
+description: Learn here all about Selection support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
 platform: UWP
 control: TreeMap
 documentation: ug
 ---
 
-# Selection
+# Selection in UWP TreeMap (SfTreeMap)
 
 While selecting a leaf node, you can highlight it by setting `HighlightOnSelection` property of SfTreeMap to “True”. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap.
 

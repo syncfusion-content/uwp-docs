@@ -1,12 +1,12 @@
 ---
 layout: post
-title: ShowHide Axis support for sparkline
-description: ShowHide Axis support for sparkline
+title: ShowHide Axis in UWP Sparkline control | Syncfusion
+description: Learn here all about ShowHide Axis support in Syncfusion UWP Sparkline (SfSparkline) control and more.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
-# Show/Hide Axis
+# ShowHide Axis in UWP Sparkline (SfSparkline)
 
 ShowAxis is used to enable the axis and this feature is applicable for all the sparkline except WinLoss sparkline, also you can style the axis by AxisStyle property and position the axis by AxisOrigin property.
 

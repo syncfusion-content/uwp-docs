@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview in SfTreeMap control
-description: Overview of SfTreeMap in UWP
+title: About UWP TreeMap control | Syncfusion
+description: Learn here all about Overview support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
 platform: UWP
 control: SfTreeMap
 documentation: ug
 ---
 
-# Overview
+# UWP TreeMap (SfTreeMap) Overview
 
 TreeMap is an ideal for visualizing large amounts of data. The visualization space is split up into rectangles that are sized and colored based on the quantitative variables. The levels in the hierarchy of the tree map are visualized as rectangles containing other rectangles.
 

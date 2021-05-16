@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Technical Indicators | SfChart | uwp | Syncfusion
-description: How to enable and customize the technical indicator behavior in chart UWP.
+title: Technical Indicators in UWP Charts control | Syncfusion
+description: Learn here all about Technical Indicators support in Syncfusion UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Technical Indicator
+# Technical Indicators in UWP Charts (SfChart)
 
 Technical indicators are the base of technical analysis, which is used to determine the future market trends. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip | SfPivotChart | UWP | Syncfusion
-description: Tooltip
+title: Tooltip in UWP Pivot Chart control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in UWP Pivot Chart (SfPivotChart)
 
 The SfPivotChart provides tooltip support by which the series information such as measure, x-axis values, y-axis values, and series name can be displayed over the chart area, when the mouse pointer is moved over chart points.
 
@@ -38,4 +38,4 @@ PivotChart1.ShowToolTip = True
 
 {% endtabs %}
 
-![](Tooltip_images/enableRelationalTooltip.png)
+![enableRelationalTooltip](Tooltip_images/enableRelationalTooltip.png)

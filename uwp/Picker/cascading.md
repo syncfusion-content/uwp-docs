@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Demonstrate CascadingPicker using SfPicker of Syncfusion Picker control for Xamarin.Android
-description: Overview and key features of Picker control
+title: Cascading in UWP Picker control | Syncfusion
+description: Learn here all about Cascading support in Syncfusion UWP Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Cascading
+# Cascading in UWP Picker (SfPicker)
 
 We have demonstrated how to create custom Cascading sample using Picker control in the following steps.
 
@@ -306,7 +306,7 @@ The below code demonstrates Area collection creation.
 
 Screen shot for the above codes.
 
-![](images/Cascading.png)
+![Cascading](images/Cascading.png)
 
 We have attached Cascading sample for reference. Please download the sample from the following link.
 

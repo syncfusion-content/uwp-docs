@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hyperlink Cells | SfPivotGrid | UWP | Syncfusion
-description: Hyperlink Cells
+title: Hyperlink Cells in UWP Pivot Grid control | Syncfusion
+description: Learn here all about Hyperlink Cells support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Hyperlink Cells
+# Hyperlink Cells in UWP Pivot Grid (SfPivotGrid)
 
 The SfPivotGrid allows hyperlinking of cells to retrieve detailed information about a particular cell. Hyperlink can be individually applied to the following cells:
 
@@ -50,7 +50,7 @@ Me.PivotGrid1.ColumnHeaderStyle.IsHyperlinkCell = True
 
 {% endtabs %}
 
-![](Hyperlink-Cells_images/column-header-cell-hyperlink.png)
+![column-header-cell-hyperlink](Hyperlink-Cells_images/column-header-cell-hyperlink.png)
 
 **Hyperlink in row header cells**
 
@@ -83,7 +83,7 @@ Me.PivotGrid1.RowHeaderStyle.IsHyperlinkCell = True
 
 {% endtabs %}
 
-![](Hyperlink-Cells_images/row-header-cell-hyperlink.png)
+![row-header-cell-hyperlink](Hyperlink-Cells_images/row-header-cell-hyperlink.png)
 
 **Hyperlink in value cells**
 
@@ -116,7 +116,7 @@ Me.PivotGrid1.ValueCellStyle.IsHyperlinkCell = True
 
 {% endtabs %}
 
-![](Hyperlink-Cells_images/value-cell-hyperlink.png)
+![value-cell-hyperlink](Hyperlink-Cells_images/value-cell-hyperlink.png)
 
 **Hyperlink in summary column cells**
 
@@ -149,7 +149,7 @@ Me.PivotGrid1.SummaryColumnStyle.IsHyperlinkCell = True
 
 {% endtabs %}
 
-![](Hyperlink-Cells_images/summary-column-cell-hyperlink.png)
+![summary-column-cell-hyperlink](Hyperlink-Cells_images/summary-column-cell-hyperlink.png)
 
 **Hyperlink in summary row cells**
 
@@ -182,7 +182,7 @@ Me.PivotGrid1.SummaryRowStyle.IsHyperlinkCell = True
 
 {% endtabs %}
 
-![](Hyperlink-Cells_images/summary-row-cell-hyperlink.png)
+![summary-row-cell-hyperlink](Hyperlink-Cells_images/summary-row-cell-hyperlink.png)
 
 A demo sample is available in the following location.
 

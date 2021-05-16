@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with SfColorPicker control for UWP
-description: Guidelines to create Syncfusion SfColorPicker control for Universal Windows Platform project in Visual Studio 
+title: Getting Started with UWP Color Picker control | Syncfusion
+description: Learn here all about getting started with Syncfusion UWP Color Picker (SfColorPicker) control and more.
 platform: uwp
 control: SfColorPicker
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with UWP Color Picker (SfColorPicker)
 
 This section explains how to create a RGB color model picker using the `SfColorPicker` control.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizing columns in UWP Kanban board | Syncfusion
-description: This documentation explains the options available to customize the column, including custom size, categorizing the cards, etc. in UWP Kanban board. 
+title: Column in UWP Kanban Board control | Syncfusion
+description: Learn here all about Column support in Syncfusion UWP Kanban Board (SfKanban) control and more.
 platform: UWP
 control: SfKanban
 documentation: ug
 ---
 
-# Column
+# Column in UWP Kanban Board (SfKanban)
 
 ## Customizing column size
 

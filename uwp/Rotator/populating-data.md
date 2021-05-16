@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Populating data in Syncfusion Rotator control in UWP.
-description : Learn how to set the DataSource in Rotator for UWP.
+title: Data Binding in UWP Rotator control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion UWP Rotator (SfRotator) control and more.
 platform : UWP
 control : Rotator 
 documentation : ug
 ---
 
-# Populating data
+# Data Binding in UWP Rotator (SfRotator)
 
 ## Adding RotatorItem to the control
 
