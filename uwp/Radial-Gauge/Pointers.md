@@ -833,11 +833,11 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ga
 
 ### Step frequency
 
-The `StepFrequency` property is used to specify the interval between snap points while dragging the `MarkerPointer` or `NeedlePointer`.
+The [`StepFrequency`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_StepFrequency) property is used to specify the interval between snap points while dragging the [`SymbolPointer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerType.html#Syncfusion_UI_Xaml_Gauges_PointerType_SymbolPointer) or [`NeedlePointer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerType.html#Syncfusion_UI_Xaml_Gauges_PointerType_NeedlePointer).
 
-For example, when the value of `StepFrequency` is 20, then while dragging, the pointer will not move continuously, instead it will update in terms of 20.
+For example, when the value of [`StepFrequency`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_StepFrequency) is 20, then while dragging, the pointer will not move continuously, instead it will update in terms of 20.
 
-N> To work with the `StepFrequency` value, enable pointer dragging support.
+N> To work with the [`StepFrequency`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html#Syncfusion_UI_Xaml_Gauges_CircularPointer_StepFrequency) value, enable pointer dragging support.
 
 {% tabs %}
 
