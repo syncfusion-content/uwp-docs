@@ -9,7 +9,7 @@ documentation: ug
 
 # UWP AutoComplete (SfTextBoxExt) Overview
 
-SfTextBoxExt is an extended version of TextBox control. Most of the functionality of SfTextBoxExt is inherited from the [TextBox](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.textbox) class.
+SfTextBoxExt is an extended version of TextBox control. Most of the functionality of SfTextBoxExt is inherited from the [TextBox](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.TextBox?redirectedfrom=MSDN&view=winrt-19041) class.
 
 ![Overview of SfTextBoxExt control for UWP ](Overview_images/Overview_img1.png)
 
