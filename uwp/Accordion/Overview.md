@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Accordion control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Accordion (SfAccordion) control and more.
+description: Learn here all about introduction of Syncfusion UWP Accordion (SfAccordion) control, its elements and more.
 platform: uwp
 control: SfAccordion
 documentation: ug
