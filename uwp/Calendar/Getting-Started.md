@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Calendar control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn here about getting started with Syncfusion UWP Calendar (SfCalendar) control, its elements and more.
 platform: uwp
 control: SfCalendar
 documentation: ug

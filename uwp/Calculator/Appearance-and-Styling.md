@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearence and Styling of SfCalculator control for UWP
-description: Appearence and Styling of SfCalculator control for UWP
+title: Appearence and Styling in UWP SfCalculator control | Syncfusion
+description: Learn here all about Appearence and Styling in Syncfusion UWP SfCalculator control, its elements and more.
 platform: UWP
 control: SfCalculator
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP SfCalculator control
 
 All the panes in SfCalculator can be customized easily. The panes can be styled as follows:
 
