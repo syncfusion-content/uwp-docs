@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About UWP SfComboBox control | Syncfusion
+title: About UWP ComboBox control | Syncfusion
 description: Learn here all about introduction of Syncfusion UWP ComboBox (SfComboBox) control, its elements and more.
 platform: uwp
 control: SfComboBox
