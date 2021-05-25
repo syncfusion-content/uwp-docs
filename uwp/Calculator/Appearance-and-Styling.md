@@ -53,7 +53,7 @@ Display pane is the panel that contain elements displaying value and expression.
 
 {% endtabs %}
 
-![](SfCalculator-images/SfCalculator-img8.jpeg)
+![SfCalculator-images8](SfCalculator-images/SfCalculator-img8.jpeg)
 
 ## Customizing input panel
 
@@ -76,4 +76,4 @@ Input pane is a panel in SfCalculator that contains number buttons. It can be st
 
 {% endtabs %}
 
-![](SfCalculator-images/SfCalculator-img9.jpeg)
+![SfCalculator-images9](SfCalculator-images/SfCalculator-img9.jpeg)
