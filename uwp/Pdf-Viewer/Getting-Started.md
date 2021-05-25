@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-# Getting Started with UWP Pdf Viewer (SfPdfViewer)
+# Getting Started with UWP PDF Viewer (SfPdfViewer)
 This section explains about the assemblies required for the deployment of SfPdfViewer and how to create simple application using the SfPdfViewer control.
 
 ## Required Assemblies
