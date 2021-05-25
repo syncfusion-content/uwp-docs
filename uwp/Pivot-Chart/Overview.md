@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Pivot Chart control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
+description: Learn here all about introduction of Syncfusion UWP Pivot Chart (SfPivotChart) control, its elements and more.
 platform: uwp
 control: SfPivotChart
 documentation: ug
