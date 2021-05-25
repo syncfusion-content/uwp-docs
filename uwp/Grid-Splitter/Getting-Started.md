@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Grid Splitter control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Grid Splitter (SfGridSplitter) control and more.
+description: Learn here about getting started with Syncfusion UWP Grid Splitter (SfGridSplitter) control, its elements and more.
 platform: uwp
 control: SfGridSplitter
 documentation: ug

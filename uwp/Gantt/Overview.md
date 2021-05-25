@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Gantt control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Gantt (SfGantt) control and more.
+description: Learn here all about introduction of Syncfusion Essential Studio UWP Gantt (SfGantt) control, its elements and more.
 platform: uwp
 control: SfGantt
 documentation: ug

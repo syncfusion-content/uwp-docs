@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Kanban Board control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Kanban Board (SfKanban) control and more.
+description: Learn here all about introduction of Syncfusion UWP Kanban Board (SfKanban) control, its elements and more.
 platform: uwp
 control: SfKanban
 documentation: ug
