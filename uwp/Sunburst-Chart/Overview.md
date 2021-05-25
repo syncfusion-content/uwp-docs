@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+description: Learn here all about introduction of Syncfusion UWP Sunburst Chart (SfSunburstChart) control, its elements and more.
 platform: uwp
 control: SfSunburstChart
 documentation: ug
