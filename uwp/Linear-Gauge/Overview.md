@@ -16,7 +16,7 @@ documentation: ug
 
 ### Scale
 
-The [`Scale`](https://help.syncfusion.com/uwp/sflineargauge/scale)  supports to adding multiple scales on linear gauge by horizontal and vertical orientations.
+The [`Scale`](https://help.syncfusion.com/uwp/linear-gauge/scales)  supports to adding multiple scales on linear gauge by horizontal and vertical orientations.
 
 ### Ranges
 

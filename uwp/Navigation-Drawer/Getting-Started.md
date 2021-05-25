@@ -13,7 +13,7 @@ The following section helps you to build your application with SfNavigationDrawe
 
 ## Steps
 
-* Create new Universal Windows Platform project using Visual Studio.For more [details](https://msdn.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal))
+* Create new Universal Windows Platform project using Visual Studio.For more [details](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal))
 * Add the SfNavigationDrawer assembly to your application.
 * Initialize NavigationDrawer control.
 * Adding content view to the NavigationDrawer control.
