@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Domain UpDown control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Domain UpDown (SfDomainUpDown) control and more.
+description: Learn here all about introduction of Syncfusion UWP Domain UpDown (SfDomainUpDown) control, its elements and more.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
