@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Linear Gauge control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
+description: Learn here all about introduction of Syncfusion UWP Linear Gauge (SfLinearGauge) control, its elements and more.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
