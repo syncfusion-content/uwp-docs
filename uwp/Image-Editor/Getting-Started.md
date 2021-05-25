@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Image Editor control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Image Editor (SfImageEditor) control and more.
+description: Learn here about getting started with Syncfusion UWP Image Editor (SfImageEditor) control, its elements and more.
 platform: uwp
 control: SfImageEditor
 documentation: ug

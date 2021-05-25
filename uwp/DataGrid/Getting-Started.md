@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP DataGrid control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP DataGrid (SfDataGrid) control and more.
+description: Learn here about getting started with Syncfusion UWP DataGrid (SfDataGrid) control, its elements and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -114,7 +114,7 @@ Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
 </tr>
 </table>
 
-You can refer [here](https://help.syncfusion.com/uwp/installation-and-deployment#installed-location) to know the assemblies installation location on your machine.     
+You can refer [here](https://help.syncfusion.com/uwp/installation-and-upgrade/system-requirements) to know the assemblies installation location on your machine.     
 
 ## Creating simple application with SfDataGrid
 

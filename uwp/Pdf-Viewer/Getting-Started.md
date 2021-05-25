@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with UWP Pdf Viewer control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
+description: Learn here about getting started with Syncfusion UWP Pdf Viewer (SfPdfViewer) control, its elements and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Getting Started with UWP Pdf Viewer (SfPdfViewer)
+# Getting Started with UWP PDF Viewer (SfPdfViewer)
 This section explains about the assemblies required for the deployment of SfPdfViewer and how to create simple application using the SfPdfViewer control.
 
 ## Required Assemblies

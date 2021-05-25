@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Carousel control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Carousel (SfCarousel) control and more.
+description: Learn here all about introduction of Syncfusion UWP Carousel (SfCarousel) control, its elements and more.
 platform: uwp
 control: SfCarousel
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Numeric UpDown control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Numeric UpDown (SfNumericUpDown) control and more.
+description: Learn here all about introduction of Syncfusion UWP Numeric UpDown (SfNumericUpDown) control, its elements and more.
 platform: uwp
 control: SfNumeric UpDown
 documentation: ug
