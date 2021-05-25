@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Radial Gauge control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
+description: Learn here about getting started with Syncfusion UWP Radial Gauge (SfCircularGauge) control, its elements and more.
 platform: uwp
 control: SfCircularGauge
 documentation: ug

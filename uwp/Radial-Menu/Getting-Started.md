@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Radial Menu control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
+description: Learn here about getting started with Syncfusion UWP Radial Menu (SfRadialMenu) control, its elements and more.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug

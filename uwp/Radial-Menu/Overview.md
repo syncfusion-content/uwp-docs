@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Radial Menu control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
+description: Learn here all about introduction of Syncfusion UWP Radial Menu (SfRadialMenu) control, its elements and more.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
