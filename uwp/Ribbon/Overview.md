@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Ribbon control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
+description: Learn here all about introduction of Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control, its elements and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug

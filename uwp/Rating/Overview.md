@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Rating control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Rating (SfRating) control and more.
+description: Learn here all about introduction of Syncfusion UWP Rating (SfRating) control, its elements and more.
 platform: uwp
 control: SfRating
 documentation: ug

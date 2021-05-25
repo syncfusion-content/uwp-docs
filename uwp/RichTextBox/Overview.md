@@ -1,6 +1,6 @@
 ---
 title: About UWP RichTextBox control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
+description: Learn here all about introduction of Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control, its elements and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
