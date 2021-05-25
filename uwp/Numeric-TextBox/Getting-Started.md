@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Numeric TextBox control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Numeric TextBox (SfNumericTextBox) control and more.
+description: Learn here about getting started with Syncfusion UWP Numeric TextBox (SfNumericTextBox) control, its elements and more.
 platform: uwp
 control: SfNumericTextBox
 documentation: ug
