@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of SfComboBox control for UWP
-description: Overview of SfComboBox control for UWP which allows the user to select an item from a list of suggestions.
+title: About UWP SfComboBox control | Syncfusion
+description: Learn here all about introduction of Syncfusion UWP ComboBox (SfComboBox) control, its elements and more.
 platform: uwp
 control: SfComboBox
 documentation: ug
 ---
 
-# Overview
+# UWP SfComboBox Overview
 
 The SfComboBox control allows the user to select an item from a list of suggestions. 
 
