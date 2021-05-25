@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Image Editor control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+description: Learn here all about introduction of Syncfusion UWP Image Editor (SfImageEditor) control, its elements and more.
 platform: UWP
 control: SfImageEditor
 documentation: ug
