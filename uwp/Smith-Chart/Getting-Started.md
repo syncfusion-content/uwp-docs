@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Smith Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Smith Chart (SfSmithChart) control and more.
+description: Learn here about getting started with Syncfusion UWP Smith Chart (SfSmithChart) control, its elements and more.
 platform: uwp
 control: SfSmithChart
 documentation: ug

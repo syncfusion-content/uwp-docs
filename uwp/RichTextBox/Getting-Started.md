@@ -1,6 +1,6 @@
 ---
 title: Getting Started with UWP RichTextBox control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control and more.
+description: Learn here about getting started with Syncfusion UWP RichTextBox (SfRichTextBoxAdv) control, its elements and more.
 platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
