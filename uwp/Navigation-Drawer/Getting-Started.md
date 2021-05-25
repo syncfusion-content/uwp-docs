@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Navigation Drawer control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control and more.
+description: Learn here about getting started with Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control, its elements and more.
 platform: UWP
 control: NavigationDrawer
 documentation: ug
@@ -13,7 +13,7 @@ The following section helps you to build your application with SfNavigationDrawe
 
 ## Steps
 
-* Create new Universal Windows Platform project using Visual Studio.For more [details](https://msdn.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal))
+* Create new Universal Windows Platform project using Visual Studio.For more [details](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal))
 * Add the SfNavigationDrawer assembly to your application.
 * Initialize NavigationDrawer control.
 * Adding content view to the NavigationDrawer control.

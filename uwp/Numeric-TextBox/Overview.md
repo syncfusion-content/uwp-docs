@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Numeric TextBox control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Numeric TextBox (SfNumericTextBox) control and more.
+description: Learn here all about introduction of Syncfusion UWP Numeric TextBox (SfNumericTextBox) control, its elements and more.
 platform: uwp
 control: SfNumeric TextBox
 documentation: ug
