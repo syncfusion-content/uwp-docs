@@ -114,7 +114,7 @@ Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
 </tr>
 </table>
 
-You can refer [here](https://help.syncfusion.com/uwp/installation-and-deployment#installed-location) to know the assemblies installation location on your machine.     
+You can refer [here](https://help.syncfusion.com/uwp/installation-and-upgrade/system-requirements) to know the assemblies installation location on your machine.     
 
 ## Creating simple application with SfDataGrid
 
