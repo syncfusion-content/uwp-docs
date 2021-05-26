@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Smith Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Smith Chart (SfSmithChart) control and more.
+description: Learn here about getting started with Syncfusion UWP Smith Chart (SfSmithChart) control, its elements and more.
 platform: uwp
 control: SfSmithChart
 documentation: ug
@@ -13,7 +13,7 @@ This section explains the steps required to build the application with SfSmithCh
 
 ## Steps
 
-1. Create new UWP project using Visual Studio. For more [details](https://msdn.microsoft.com/en-IN/library/bb546958(v=vs.90)).
+1. Create new UWP project using Visual Studio. For more [details](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
 2. Add the SfSmithChart assembly to your application. 
 3. Initialize smith chart control.
 4. Add header to the smith chart control.
@@ -75,7 +75,7 @@ Now the Syncfusion.SfSmithChart.UWP reference has been added to the application 
 ![Project Solution Window contains SfSmithChart reference](Getting-Started_images/Getting-Started_img3.png)
 
 
-![Added xmlns:syncfusion="using:Syncfusion.UI.Xaml.SmithChart" in MainPage](Getting-Started_images/Getting-Started_img4.png)
+![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png)
 
 
 In this section, the data in the following table is used for demonstration.

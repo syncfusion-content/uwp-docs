@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP DropDown Button control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP DropDown Button (SfDropDownButton) control and more.
+description: Learn here all about introduction of Syncfusion UWP DropDown Button (SfDropDownButton) control, its elements and more.
 platform: uwp
 control:  SfDropDownButton
 documentation: ug

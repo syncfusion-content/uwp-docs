@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About UWP Diagram overview control | Syncfusion
+title: About UWP Diagram control | Syncfusion
 description: Learn here all about Overview Control support in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram

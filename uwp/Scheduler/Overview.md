@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Scheduler control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn here all about introduction of Syncfusion UWP Scheduler (SfSchedule) control, its elements and more.
 platform: uwp
 control: SfSchedule
 documentation: ug
