@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Spreadsheet control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+description: Learn here all about introduction of Syncfusion UWP Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Tab Control control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Tab Control (SfTabControl) control and more.
+description: Learn here all about introduction of Syncfusion UWP Tab Control (SfTabControl) control, its elements and more.
 platform: uwp
 control: SfTabControl
 documentation: ug

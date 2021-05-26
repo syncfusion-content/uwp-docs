@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP TreeMap control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn here about getting started with Syncfusion UWP TreeMap (SfTreeMap) control, its elements and more.
 platform: UWP
 control: TreeMap
 documentation: ug
