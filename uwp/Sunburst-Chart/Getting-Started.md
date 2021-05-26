@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Sunburst Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+description: Learn here about getting started with Syncfusion UWP Sunburst Chart (SfSunburstChart) control, its elements and more.
 platform: uwp
 control: SfSunburstChart
 documentation: ug
@@ -30,7 +30,7 @@ Now the Syncfusion.SfSunburstChart.UWP reference is added to the application ref
 
 ![Project Solution Window contains SfSunburstChart reference](Getting-Started_images/gettingstarted_uwp3.png)
 
-![Added xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.SunburstChart" in MainWindow](Getting-Started_images/gettingstarted_uwp4.png)
+![Getting-Started_images4](Getting-Started_images/gettingstarted_uwp4.png)
 
 ## Initialize view model
 
