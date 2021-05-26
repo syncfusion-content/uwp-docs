@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Tile View control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Tile View (SfTileView) control and more.
+description: Learn here all about introduction of Syncfusion UWP Tile View (SfTileView) control, its elements and more.
 platform: uwp
 control: SfTileView
 documentation: ug
