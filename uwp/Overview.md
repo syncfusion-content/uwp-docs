@@ -1,6 +1,6 @@
 ---
 title: About UWP Overview control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio UWP Overview control, its elements and more.
+description: Learn here all about introduction of Syncfusion Essential Studio for UWP, its controls, features and more.
 platform: uwp
 control: overview
 documentation: ug
