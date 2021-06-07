@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-# Working with popup annotations in UWP Pdf Viewer (SfPdfViewer)
+# Working with popup annotations in UWP PDF Viewer (SfPdfViewer)
 
 PDF Viewer allows you to include popup annotations in a PDF document and provides options to modify or remove the existing popup annotations.
 

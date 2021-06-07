@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-# Creating a custom toolbar in UWP Pdf Viewer (SfPdfViewer)
+# Creating a custom toolbar in UWP PDF Viewer (SfPdfViewer)
 
 PdfViewer does not have a toolbar by default. But a custom toolbar can be designed at the sample with its buttons wired to the PdfViewer APIs. 
 

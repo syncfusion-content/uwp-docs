@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-# Working with shape annotations in UWP Pdf Viewer (SfPdfViewer)
+# Working with shape annotations in UWP PDF Viewer (SfPdfViewer)
 
 PDF Viewer allows you to include shape annotations in a PDF document and provides options to modify or remove the existing shape annotations. The supported shape annotations are:
 
