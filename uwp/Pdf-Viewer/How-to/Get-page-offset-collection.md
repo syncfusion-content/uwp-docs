@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Get page offset collection in Syncfusion Essential UWP PDF viewer.
-description: Get page offset collection in Syncfusion Essential UWP PDF viewer.
+description: Learn here about Get page offset collection support in UWP PDF viewer control with page numbers as keys and the corresponding vertical location, and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-## Get page offset collection
+# Get page offset collection in UWP PDF Viewer
 Page offset collection is a dictionary with page numbers as keys and the corresponding vertical location where the page ends as values. The following code example illustrates accessing the same. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section.
 {% tabs %}
 {% highlight c# %}

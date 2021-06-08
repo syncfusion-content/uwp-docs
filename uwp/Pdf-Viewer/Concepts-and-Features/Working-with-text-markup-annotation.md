@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with text markup annotations in UWP Pdf Viewer control | Syncfusion
+title: Working with text markup annotations in UWP Pdf Viewer | Syncfusion
 description: Learn here all about Working with text markup annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-## Working with text markup annotations
+# Working with text markup annotations in UWP PDF Viewer
 
 PDF Viewer allows users to include text markup annotations in a PDF document and provides options to modify or remove the existing text markup annotations. The supported text markup annotations are:
 
