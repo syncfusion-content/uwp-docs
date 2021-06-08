@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get page offset collection in Syncfusion Essential UWP PDF viewer.
-description: Get page offset collection in Syncfusion Essential UWP PDF viewer.
+description: Learn here about Get page offset collection in Syncfusion Essential Studio UWP PDF viewer control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
