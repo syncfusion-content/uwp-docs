@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Working with text markup annotations
+# Working with text markup annotations in UWP PDF Viewer
 
 PDF Viewer allows users to include text markup annotations in a PDF document and provides options to modify or remove the existing text markup annotations. The supported text markup annotations are:
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-## Programmatic filtering  
+# Programmatic filtering in UWP DataGrid (SfDataGrid)
 
 SfDataGrid allows you to filter the data programmatically in below ways
 

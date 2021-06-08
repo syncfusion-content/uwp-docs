@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Enable and disable text selection
+# Enable and disable text selection in UWP PDF Viewer
 The text selection feature of the PDF viewer can be disabled as shown in the following code.
 {% tabs %}
 {% highlight c# %}

@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Customize the color of the scrollbar thumb
+# Customize the color of the scrollbar thumb in UWP PDF Viewer
 
 The PDF viewer uses the [ScrollViewer] (https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control to scroll the pages of a PDF. The color of the vertical and horizontal scrollbar thumbs can be customized using the following code. 
  

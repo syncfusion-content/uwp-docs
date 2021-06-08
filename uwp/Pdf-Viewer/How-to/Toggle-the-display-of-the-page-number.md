@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Toggle the display of the page number
+# Toggle the display of the page number in UWP PDF Viewer
 The following code example can be used to disable the display of the page number on the top left corner of each page. 
 {% tabs %}
 {% highlight c# %}
