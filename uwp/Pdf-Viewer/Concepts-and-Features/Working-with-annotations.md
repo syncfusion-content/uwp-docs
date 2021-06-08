@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## Working with annotations
+# Working with annotations in UWP PDF Viewer
 
 PDF Viewer allows user to include annotations in PDF files and provides options to modify or remove the existing annotations. The supported annotations are below. 
 

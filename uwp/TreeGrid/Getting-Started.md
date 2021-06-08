@@ -7,7 +7,7 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-## Getting Started with UWP TreeGrid (SfTreeGrid)
+# Getting Started with UWP TreeGrid (SfTreeGrid)
 
 The SfTreeGrid is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
 
