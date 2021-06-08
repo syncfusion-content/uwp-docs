@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Get page gap between the pages in Syncfusion Essential UWP PDF viewer.
-description: Get page gap between the pages in Syncfusion Essential UWP PDF viewer.
+title: Get page gap between the pages in UWP PDF viewer | Syncfusion
+description: Learn here about Get page gap between the pages in Syncfusion Essential Studio UWP PDF viewer control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug

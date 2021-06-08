@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Get coordinates of a text in a PDF document in Syncfusion Essential UWP PDF viewer.
-description: Get coordinates of a text in a PDF document in Syncfusion Essential UWP PDF viewer.
+title: Get coordinates text in a PDF document in UWP PDF viewer | Syncfusion
+description: Get coordinates of a text in a PDF document in Syncfusion Essential Studio UWP PDF viewer control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug

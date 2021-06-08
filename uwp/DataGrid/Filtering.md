@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in UWP DataGrid control | Syncfusion
-description: Learn here all about Filtering support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about Filtering support in Syncfusion Essential Studio UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -264,7 +264,7 @@ Below are the built-in filter types supported.
  
 * Text Filters – Loads various menu options to filter the display text effectively.
 * Number Filters – Loads various menu options to filter the numeric data.
-* Date Filters – Loads various menu options and [DatePicker](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.datepicker.aspx) to filter DateTime type column.
+* Date Filters – Loads various menu options and [DatePicker](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.DatePicker) to filter DateTime type column.
 
 <table>
 <tr>
@@ -280,7 +280,7 @@ Date Filters
 </tr>
 <tr>
 <td>
-When the string value is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items source is {{'[dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx)'| markdownify }}, then TextFilters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}. 
+When the string value is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items source is {{'[dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types)'| markdownify }}, then TextFilters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}. 
 </td>
 <td>
 When integer, double, short, decimal, byte or long are bound to the {{'[GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} then Number Filters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}.
@@ -674,7 +674,7 @@ void dataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEven
 
 ### Changing AdvancedFilter type while loading dynamic ItemsSource  
 
-By default, TextFilters will be loaded for the columns if ItemsSource is [dynamic](https://msdn.microsoft.com/en-us/library/dd264741.aspx).  If you want to load `NumberFilter` or `DateFilter` based on column values, you need to use `ColumnMemberType` property.
+By default, TextFilters will be loaded for the columns if ItemsSource is [dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types).  If you want to load `NumberFilter` or `DateFilter` based on column values, you need to use `ColumnMemberType` property.
 
 {% tabs %}
 {% highlight c# %}

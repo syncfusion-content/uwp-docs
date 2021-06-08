@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Get current vertical and horizontal offsets of Syncfusion Essential UWP PDF viewer.
-description: Get current vertical and horizontal offsets of Syncfusion Essential UWP PDF viewer.
+title: Current vertical and horizontal offsets of UWP PDF viewer | Syncfusion
+description: Get current vertical and horizontal offsets of Syncfusion Essential Studio UWP PDF viewer control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug

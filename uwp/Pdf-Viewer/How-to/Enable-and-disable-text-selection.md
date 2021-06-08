@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable and disable text selection in Syncfusion Essential UWP PDF viewer.
-description: Enable and disable text selection in Syncfusion Essential UWP PDF viewer.
+title: Enable and disable text selection in UWP PDF viewer | Syncfusion
+description: Learn here about Enable and disable text selection in Syncfusion Essential Studio UWP PDF viewer control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug

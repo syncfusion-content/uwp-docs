@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toggle the display of the page number in Syncfusion Essential UWP PDF viewer.
-description: Toggle the display of the page number in Syncfusion Essential UWP PDF viewer.
+title: Toggle the display of the page number in UWP PDF viewer | Syncfusion
+description: Learn here about Toggle the display of the page number in Syncfusion Essential Studio UWP PDF viewer control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
