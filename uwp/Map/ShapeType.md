@@ -293,7 +293,7 @@ The size, shape, and position of the map points can be customized using the [`Ma
 
 ## Add shapes using map elements collection
 
-We can provide input as the Geo points collection in sample to draw a multiple shapes in single layer. We can add more number of shapes using MapElements property in layer. There are three type of shapes available in map element.
+We can provide input as the Geo points collection in sample to draw a multiple shapes in single layer. We can add more number of shapes using `MapElements` property in layer. There are three type of shapes available in map element.
 
     1.Polyline
     2.Polygon
@@ -418,35 +418,9 @@ We can provide input as the Geo points collection in sample to draw a multiple s
 
 The following properties are used to customize `MapPolygon`, `MapPolyline` and `MapCircle`.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-Fill</td><td>
-Brush</td><td>
-Gets or sets the color used to fill the shape.</td></tr>
-<tr>
-<td>
-Stroke</td><td>
-Brush</td><td>
-Gets or sets the color used to draw the shape stroke.</td></tr>
-<tr>
-<td>
-StrokeThickness</td><td>
-Double</td><td>
-Gets or sets the width of the stroke line used to draw the shapes, in logical pixels.</td></tr>
-<tr>
-<td>
-Center</td><td>
-Point</td><td>
-Gets or sets the point object that defines the center of the circle, in latitude and longitude. This property only for <b>MapCircle</b>. </td></tr>
-<tr>
-<td>
-Radius</td><td>
-Double</td><td>
-Gets or sets the value that defines the radius of the circle. This property only for <b>MapCircle</b>.</td></tr>
-</table>
+* `Fill` - Gets or sets the color used to fill the shape.
+* `Stroke` - Gets or sets the color used to draw the shape stroke.
+* `StrokeThickness` - Gets or sets the width of the stroke line used to draw the shapes, in logical pixels.
+* `Center` - Gets or sets the point object that defines the center of the circle, in latitude and longitude. This property only for `MapCircle`.
+* `Radius` - Gets or sets the value that defines the radius of the circle. This property only for `MapCircle`.
+
