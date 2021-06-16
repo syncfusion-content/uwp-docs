@@ -165,6 +165,18 @@ The following image show cases the circularly cropped image.
 
 {% endhighlight %}
 
+Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping_Windows_Foundation_Rect_System_Boolean_) method with ratio parameter and optional parameter as true like following code sample to enable and maintain the circle cropping format.
+
+{% highlight C# %} 
+
+// To crop an image only in circle dimension.
+
+editor.ToggleCropping(2, 2, true);
+
+{% endhighlight %}
+
+![Circle cropping](Images/CircleCroppingRatio.png) 
+
 ## Manually set the cropping area
 
 To manually set the cropping rectangle without even enabling the cropping functionality, use overloaded Crop(Rectangle rect) method. This can be done by defining a rectangle and pass it to Crop(rect) method.
