@@ -165,11 +165,13 @@ The following image show cases the circularly cropped image.
 
 {% endhighlight %}
 
-Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping_Windows_Foundation_Rect_System_Boolean_) method with ratio parameter and optional parameter as true like following code sample to enable and maintain the circle cropping format.
+### Circle cropping with ratio
+
+Specify the `ToggleCropping` with ratio parameter and optional parameter as true like following code sample to enable the circle or elliptical format.
 
 {% highlight C# %} 
 
-// To crop an image only in circle dimension.
+// To crop an image as a elliptical dimension with ratio.
 
 editor.ToggleCropping(2, 2, true);
 
