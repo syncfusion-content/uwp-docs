@@ -142,6 +142,15 @@ The polyline is a shape that has a dimension of 1. It is called a simple line if
  xmlns:maps="using:Syncfusion.UI.Xaml.Maps"
  xmlns:p="using:Windows.Foundation"
 ..
+
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <Grid>
+                    <Image Source="pin1.png" Height="30" Margin="0,-20,0,0" />
+                </Grid>
+            </DataTemplate>
+        </ResourceDictionary>
+..
     <Grid>
         <Grid.DataContext>
             <local:ViewModel/>
@@ -150,7 +159,10 @@ The polyline is a shape that has a dimension of 1. It is called a simple line if
             <maps:SfMap.Layers>
                 <maps:ImageryLayer  x:Name="layer">
                     <maps:ImageryLayer.SubShapeFileLayers>
-                        <maps:SubShapeFileLayer x:Name="subLayer" ShapeType="Polyline"  Markers="{Binding Models}">
+                        <maps:SubShapeFileLayer x:Name="subLayer" ShapeType="Polyline"  
+                                                MarkerVerticalAlignment="Near"
+                                                MarkerTemplate="{StaticResource markerTemplate}"
+                                                Markers="{Binding Models}">
                             <maps:SubShapeFileLayer.Points>
                                 <p:Point>39.6737, -100.5</p:Point>
                                 <p:Point>61.35, 18.131</p:Point>
@@ -186,6 +198,8 @@ The polyline is a shape that has a dimension of 1. It is called a simple line if
             subLayer.Points.Add(new Point(-32.259, 145.4214));
             subLayer.ShapeType = ShapeType.Polyline;
             subLayer.Markers = obj.Models;
+            subLayer.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
+            subLayer.MarkerVerticalAlignment = MarkerAlignment.Near;
             ShapeSetting subLayerSetting = new ShapeSetting();
             subLayerSetting.ShapeStrokeThickness = 2;
             subLayerSetting.ShapeFill = new SolidColorBrush(Colors.Gray);
@@ -310,7 +324,7 @@ We can provide input as the Geo points collection in sample to draw a multiple s
             <maps:SfMap.Layers>
                 <maps:ImageryLayer  x:Name="layer">
                     <maps:ImageryLayer.SubShapeFileLayers>
-                        <maps:SubShapeFileLayer x:Name="subLayer" Markers="{Binding Models}">
+                        <maps:SubShapeFileLayer x:Name="subLayer">
                             <maps:SubShapeFileLayer.MapElements>
 
                                 <maps:MapPolyline Stroke="Black">
@@ -320,15 +334,15 @@ We can provide input as the Geo points collection in sample to draw a multiple s
                                     </maps:MapPolyline.Points>
                                 </maps:MapPolyline>
 
-                                <maps:MapCircle Fill="Red">
+                                <maps:MapCircle Fill="Black">
                                     <maps:MapCircle.Center>
-                                        <p:Point>48.95, -122.68</p:Point>
+                                        <p:Point>61.35, 18.131</p:Point>
                                     </maps:MapCircle.Center>
                                 </maps:MapCircle>
 
-                                <maps:MapCircle Fill="Red">
+                                <maps:MapCircle Fill="Black">
                                     <maps:MapCircle.Center>
-                                        <p:Point>30.197, -102.6564</p:Point>
+                                        <p:Point>-32.259, 145.4214</p:Point>
                                     </maps:MapCircle.Center>
                                 </maps:MapCircle>
 
@@ -351,15 +365,14 @@ We can provide input as the Geo points collection in sample to draw a multiple s
 
     public partial class MyPage : ContentPage
     {
-        ViewModel obj = new ViewModel();
+       
         public MyPage()
         {
             InitializeComponent();
-            this.DataContext = obj;
+            
             SfMap maps = new SfMap();
             ImageryLayer layer = new ImageryLayer();
             SubShapeFileLayer subLayer = new SubShapeFileLayer();
-            subLayer.Markers = obj.Models;
 
             MapPolyline mapPolyline = new MapPolyline();
             mapPolyline.Stroke = new SolidColorBrush(Colors.Black);
@@ -371,13 +384,13 @@ We can provide input as the Geo points collection in sample to draw a multiple s
             subLayer.MapElements.Add(mapPolyline);
 
             MapCircle mapCircle = new MapCircle();
-            mapCircle.Center = new Point(48.95, -122.68);
-            mapCircle.Fill = new SolidColorBrush(Colors.Red);
+            mapCircle.Center = new Point(61.35, 18.131);
+            mapCircle.Fill = new SolidColorBrush(Colors.Black);
             subLayer.MapElements.Add(mapCircle);
 
             mapCircle = new MapCircle();
-            mapCircle.Center = new Point(30.197, -102.6564);
-            mapCircle.Fill = new SolidColorBrush(Colors.Red);
+            mapCircle.Center = new Point(-32.259, 145.4214);
+            mapCircle.Fill = new SolidColorBrush(Colors.Black);
             subLayer.MapElements.Add(mapCircle);
 
             mapCircle = new MapCircle();
@@ -390,24 +403,7 @@ We can provide input as the Geo points collection in sample to draw a multiple s
             this.Content = maps;
        }
     }
-
-    public class ViewModel
-    {
-        public ObservableCollection<Model> Models { get; set; }
-        public ViewModel()
-        {
-            this.Models = new ObservableCollection<Model>();
-            this.Models.Add(new Model() { Label = "Swedan ", Latitude = "61.35", Longitude = "18.131" });
-            this.Models.Add(new Model() { Label = "Australia ", Latitude = "-32.259", Longitude = "145.4214" });
-        }
-    }
-
-    public class Model
-    {
-        public string Label { get; set; }
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-    }
+    
 {% endhighlight %}
 
 {% endtabs %}
