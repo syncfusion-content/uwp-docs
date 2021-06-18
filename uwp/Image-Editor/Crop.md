@@ -165,15 +165,15 @@ The following image show cases the circularly cropped image.
 
 {% endhighlight %}
 
-### Circle cropping with ratio
+### Circle cropping with a ratio
 
-For cropping the image in circle or elliptical with specific ratio, specify `ToggleCropping` with ratio argument along with optional parameter as true, which specify the cropping panel should be added as elliptical or rectangle shape. Default value is false.
+To crop an image in a circle or an ellipse with a specific ratio, use `ToggleCropping` with a ratio argument and an optional parameter of true, which specifies whether the cropping panel should be added in an elliptical or rectangle shape. The default value is false.
 
 {% highlight C# %} 
 
 // To crop an image as a elliptical dimension with ratio.
 
-editor.ToggleCropping(2, 2, true);
+editor.ToggleCropping(1, 1, true);
 
 {% endhighlight %}
 
