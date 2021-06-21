@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape Types in UWP Maps (SfMaps)
 
-This feature allows you to draw a polygon, polyline, or point icon on the map. You can provide input as Geo points to draw shapes in two different ways:
+This feature allows you to draw a polygon, polyline, or point icon on the map. You can provide input as geo points(latitude, longitude) to draw shapes in two different ways:
 
     1.Add shapes using point collection
     2.Add shapes using map elements collection
@@ -17,7 +17,7 @@ This feature allows you to draw a polygon, polyline, or point icon on the map. Y
 
 ## Add shapes using point collection
 
-To draw a shape, you can provide input as a Geo point collection in sample. You can also add more number of shapes by using Maps [`SubShapeFileLayer`](https://help.syncfusion.com/uwp/map/multilayer-support#subshapefilelayers) support. In shape file layer, there are three type of shapes that can be changed by using the [`ShapeType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
+To draw a shape, you can provide input as a geo point collection in the map. You can also add more number of shapes by using Maps [`SubShapeFileLayer`](https://help.syncfusion.com/uwp/map/multilayer-support#subshapefilelayers) support. For each shape, you need to use each SubShapeFileLayer. In shape file layer, there are three type of shapes that can be changed by using the [`ShapeType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
 
     1.Polyline
     2.Polygon
@@ -307,7 +307,7 @@ The size, shape, and position of the map points can be customized using the [`Ma
 
 ## Add shapes using map elements collection
 
-You can provide input as a Geo points collection in sample to draw multiple shapes in a single layer. You can also add more shapes using the `MapElements` property of the layer. There are three types of shapes available in map element.
+You can provide input as a geo points collection in the map to draw multiple shapes in a single layer. You can also add more shapes using the `MapElements` property of the layer. There are three types of shapes available in map element.
 
     1.Polyline
     2.Polygon
