@@ -130,7 +130,7 @@ You can add polygon shape on map using `MapPolygon` class and provide Geo points
 
 {% endtabs %}
 
-![Multi polygon shape support in WPF Maps](Shape-Types/PolygonShape.png)
+![Multi polygon shape support in UWP Maps](Shape-Types/PolygonShape.png)
 
 ### MapPolyline
 
@@ -199,7 +199,7 @@ You can add polyline shape on map using `MapPolyline` class and provide Geo poin
 
 {% endtabs %}
 
-![Multi shapes in single layer support in WPF Maps](Shape-Types/PolylineShape.png)
+![Multi shapes in single layer support in UWP Maps](Shape-Types/PolylineShape.png)
 
 ### MapCircle
 
@@ -283,7 +283,7 @@ A circle  has a single Geo coordinate value and it can be positioned on map usin
 
 {% endtabs %}
 
-![Multi shapes in single layer support in WPF Maps](Shape-Types/PointIconShape.png)
+![Multi shapes in single layer support in UWP Maps](Shape-Types/PointIconShape.png)
 
 ### Customization of map elements
 
@@ -351,22 +351,22 @@ The following properties are used to customize `MapPolygon`, `MapPolyline`, and 
 
 {% endtabs %}
 
-![Multi shapes in single layer support in WPF Maps](Shape-Types/MultiShapesCustomization.png)
+![Multi shapes in single layer support in UWP Maps](Shape-Types/MultiShapesCustomization.png)
 
 
 ## Add shapes using point collection
 
-You can add more number of shapes on map by using [`SubShapeFileLayer`](https://help.syncfusion.com/wpf/maps/multilayer-support#subshapefilelayers) and `Points` collection property which contains the Geo coordinate points to draw a shape. In shape file layer, there are three type of shapes available and it can be changed by using the [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
+You can add more number of shapes on map by using [`SubShapeFileLayer`](https://help.syncfusion.com/uwp/map/multilayer-support#subshapefilelayers) and `Points` collection property which contains the Geo coordinate points to draw a shape. In shape file layer, there are three type of shapes available and it can be changed by using the [`ShapeType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeType.html) property.
 
     1.Polygon
     2.Polyline
     3.Point icon
     
-You can customize the appearance of the shape UI by setting [`ShapeFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeFill), [`ShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStroke), and [`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStrokeThickness) properties in [`ShapeSetting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html).
+You can customize the appearance of the shape UI by setting [`ShapeFill`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeFill), [`ShapeStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStroke), and [`ShapeStrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStrokeThickness) properties in [`ShapeSetting`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeSetting.html).
 
 ### Polygon
 
-You can add polygon shape on map by using Points collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) as `Polygon`. Polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
+You can add polygon shape on map by using Points collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeType.html) as `Polygon`. Polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
 
 {% tabs %}
 {% highlight xaml %}
@@ -471,11 +471,11 @@ You can add polygon shape on map by using Points collection property of shape la
 
 {% endtabs %}
 
-![Polygon shape support in WPF Maps](Shape-Types/PolygonShape.png)
+![Polygon shape support in UWP Maps](Shape-Types/PolygonShape.png)
 
 ### Polyline
 
-You can add polyline shape on map by using Points collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) as `Polyline`. Polylines are frequently used to define linear features such as roads, rivers, and power lines.
+You can add polyline shape on map by using Points collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeType.html) as `Polyline`. Polylines are frequently used to define linear features such as roads, rivers, and power lines.
 
 {% tabs %}
 {% highlight xaml %}
@@ -541,13 +541,13 @@ You can add polyline shape on map by using Points collection property of shape l
 
 {% endtabs %}
 
-![Polyline shape support in WPF Maps](Shape-Types/PolylineShape.png)
+![Polyline shape support in UWP Maps](Shape-Types/PolylineShape.png)
 
 ### Point icon
 
-A point icon has a single Geo coordinate value and you can add multi point icon shapes on map by using `Points` collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) as `PointIcon`. The point icons are often used to define features such as oil wells, landmarks, and elevations.
+A point icon has a single Geo coordinate value and you can add multi point icon shapes on map by using `Points` collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeType.html) as `PointIcon`. The point icons are often used to define features such as oil wells, landmarks, and elevations.
 
-The size, shape, and alignment of the map points can be customized using the [`MapPointIconSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIconSize), [`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon), [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointHorizontalAlignment), and [`MapPointVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointVerticalAlignment) properties of the shape file layer.
+The size, shape, and alignment of the map points can be customized using the [`MapPointIconSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIconSize), [`MapPointIcon`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon), [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointHorizontalAlignment), and [`MapPointVerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointVerticalAlignment) properties of the shape file layer.
 
 {% tabs %}
 {% highlight xaml %}
@@ -605,4 +605,4 @@ The size, shape, and alignment of the map points can be customized using the [`M
 
 {% endtabs %}
 
-![Point icon shape support in WPF Maps](Shape-Types/PointIconShape.png)
+![Point icon shape support in UWP Maps](Shape-Types/PointIconShape.png)
