@@ -11,8 +11,9 @@ documentation: ug
 
 This feature allows you to draw a polygon, polyline, or point icon on the map. You can provide input as geo points(latitude, longitude) to draw shapes in two different ways:
 
-    1.Add shapes using point collection
-    2.Add shapes using map elements collection
+    1.Add shapes using map elements collection
+    2.Add shapes using point collection
+    
 	
 
 ## Add shapes using point collection
