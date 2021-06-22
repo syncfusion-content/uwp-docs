@@ -9,24 +9,364 @@ documentation: ug
 
 # Shape Types in UWP Maps (SfMaps)
 
-This feature allows you to draw a polygon, polyline, or point icon on the map. You can provide input as geo points(latitude, longitude) to draw shapes in two different ways:
+This feature allows you to draw a polygon, polyline, or circle on the map. You can provide input as geo points to draw shapes in two different ways:
 
-    1.Add shapes using map elements collection
+    1.Add shapes using map element collection
     2.Add shapes using point collection
-    
 	
+## Add shapes using map element collection
+
+You can provide input as a geo points collection to add multiple shapes in a single layer by using the `MapElements` property of shape layer. There are three types of shapes available in map element.
+
+    1.MapPolygon
+    2.MapPolyline
+    3.MapCircle
+
+### MapPolygon
+
+You can add polygon shape on map using `MapPolygon` class and provide geo points collection to `Points` property. Polygon shape type is used to defines a group of land, water bodies, and other features with a spatial extent.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid Margin="20">
+        <Grid.Resources>
+            <local:ViewModel x:Key="viewModel"/>
+        </Grid.Resources>
+        <maps:SfMap x:Name="Maps" ZoomLevel="4" DataContext="{StaticResource viewModel}">
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer  x:Name="layer" GeoCoordinates="30.9709225,-100.2187212">
+                    <maps:ImageryLayer.SubShapeFileLayers>
+                        <maps:SubShapeFileLayer x:Name="subLayer">
+                            <maps:SubShapeFileLayer.MapElements>
+
+                                <maps:MapPolygon Points="{Binding PolygonPoints1, Source={StaticResource viewModel}}" Fill="Blue" Stroke="DarkBlue" 
+                                               StrokeThickness="4"/>
+
+                                <maps:MapPolygon Points="{Binding PolygonPoints2, Source={StaticResource viewModel}}" Fill="Orange" Stroke="Red"
+                                               StrokeThickness="4"/>
+
+                            </maps:SubShapeFileLayer.MapElements>
+                        </maps:SubShapeFileLayer>
+                    </maps:ImageryLayer.SubShapeFileLayers>
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+    </Grid>
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MyPage : ContentPage
+    {
+        
+        public MyPage()
+        {
+            InitializeComponent();
+            ViewModel viewModel = new ViewModel();
+            SfMap maps = new SfMap();
+            maps.ZoomLevel = 4;
+            ImageryLayer layer = new ImageryLayer();
+            SubShapeFileLayer subLayer = new SubShapeFileLayer();
+            layer.GeoCoordinates = new Point(30.9709225, -100.2187212);
+
+            MapPolygon mapPolygon = new MapPolygon();
+            mapPolygon.Fill = new SolidColorBrush(Colors.Blue);
+            mapPolygon.Stroke = new SolidColorBrush(Colors.DarkBlue);
+            mapPolygon.StrokeThickness = 4;
+            mapPolygon.Points = viewModel.PolygonPoints1;
+            subLayer.MapElements.Add(mapPolygon);
+
+            mapPolygon = new MapPolygon();
+            mapPolygon.Fill = new SolidColorBrush(Colors.Orange);
+            mapPolygon.Stroke = new SolidColorBrush(Colors.Red);
+            mapPolygon.StrokeThickness = 4;
+            mapPolygon.Points = viewModel.PolygonPoints2;
+            subLayer.MapElements.Add(mapPolygon);
+
+            layer.SubShapeFileLayers.Add(subLayer);
+            maps.Layers.Add(layer);
+            this.Content = maps;
+       }
+    }
+
+    public class ViewModel
+    {
+        public ObservableCollection<Point> PolygonPoints1
+        {
+            get; set;
+        }
+
+        public ObservableCollection<Point> PolygonPoints2
+        {
+            get; set;
+        }
+        public ViewModel()
+        {
+
+            PolygonPoints1 = new ObservableCollection<Point>()
+            {
+                new Point(37.042972,-109.085003),
+                new Point(40.992567,-109.021030),
+                new Point(40.968420,-102.048065),
+                new Point(36.991893,-102.144024),
+                new Point(37.042972,-109.085003)
+            };
+            PolygonPoints2 = new ObservableCollection<Point>()
+            {
+              new Point(41.04621681452063, -104.0625),
+              new Point(41.04621681452063, -102.0849609375),
+              new Point(40.01078714046552, -102.041015625),
+              new Point(40.04443758460856, -95.44921875),
+              new Point(42.48830197960227, -96.3720703125),
+              new Point(43.03677585761058, -98.4375),
+              new Point(43.068887774169625, -104.0625),
+              new Point(41.04621681452063, -104.0625),
+            };
+        }
+    }
+   
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multi polygon shape support in WPF Maps](Shape-Types/PolygonShape.png)
+
+### MapPolyline
+
+You can add polyline shape on map using `MapPolyline` class and provide geo points collection to `Points`. Polylines are frequently used to define linear features such as roads, rivers, and power lines.
+
+{% tabs %}
+{% highlight xaml %}
+
+        <maps:SfMap x:Name="Maps" ZoomLevel="5">
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer  x:Name="layer" GeoCoordinates="49.9709225,10.2187212">
+                    <maps:ImageryLayer.SubShapeFileLayers>
+                        <maps:SubShapeFileLayer x:Name="subLayer" >
+                            <maps:SubShapeFileLayer.MapElements>
+
+                                <maps:MapPolyline Stroke="Black">
+                                    <maps:MapPolyline.Points>
+                                        <p:Point>51.5008, -0.1224</p:Point>
+                                        <p:Point>48.8567, 2.3508</p:Point>
+                                        <p:Point>52.5166, 13.3833</p:Point>
+                                        <p:Point>48.21327949272514, 16.388290236693138</p:Point>
+                                    </maps:MapPolyline.Points>
+                                </maps:MapPolyline>
+
+                            </maps:SubShapeFileLayer.MapElements>
+                        </maps:SubShapeFileLayer>
+                    </maps:ImageryLayer.SubShapeFileLayers>
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MyPage : ContentPage
+    {
+        
+        public MyPage()
+        {
+            InitializeComponent();
+             
+	    SfMap maps = new SfMap();
+            maps.ZoomLevel = 5;
+            ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new Point(49.9709225, 10.2187212);
+            SubShapeFileLayer subLayer = new SubShapeFileLayer();
+            MapPolyline mapPolyline = new MapPolyline();
+            mapPolyline.Stroke = new SolidColorBrush(Colors.Black);
+            mapPolyline.Points = new ObservableCollection<Point>()
+            {
+                new Point(51.5008, -0.1224),
+                new Point(48.8567, 2.3508),
+                new Point(52.5166, 13.3833),
+                new Point(48.21327949272514, 16.388290236693138)
+            };
+            subLayer.MapElements.Add(mapPolyline);
+
+            layer.SubShapeFileLayers.Add(subLayer);
+            maps.Layers.Add(layer);
+            this.Content = maps;
+       }
+    }
+   
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multi shapes in single layer support in WPF Maps](Shape-Types/PolylineShape.png)
+
+### MapCircle
+
+A circle  has a single geo coordinate value and it can be positioned on map using `Center` property of `MapCircle`. The circles are often used to define features such as oil wells, landmarks, and elevations.
+
+* `Center` - Holds latitude and longitude values that defines the center of the circle.
+
+{% tabs %}
+{% highlight xaml %}          
+    
+       <maps:SfMap x:Name="Maps" ZoomLevel="4">
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer  x:Name="layer" GeoCoordinates="42.9709225,-90.2187212">
+                    <maps:ImageryLayer.SubShapeFileLayers>
+                        <maps:SubShapeFileLayer x:Name="subLayer" >
+                            <maps:SubShapeFileLayer.MapElements>
+
+                                <maps:MapCircle Fill="Blue">
+                                    <maps:MapCircle.Center>
+                                        <p:Point>43.76140927456403, -79.35451013248883</p:Point>
+                                    </maps:MapCircle.Center>
+                                </maps:MapCircle>
+                                <maps:MapCircle Fill="Blue">
+                                    <maps:MapCircle.Center>
+                                        <p:Point>40.7324105, -74.4416047</p:Point>
+
+                                    </maps:MapCircle.Center>
+                                </maps:MapCircle>
+                                <maps:MapCircle Fill="Blue">
+                                    <maps:MapCircle.Center>
+                                        <p:Point>38.8781708, -77.1889971</p:Point>
+                                    </maps:MapCircle.Center>
+                                </maps:MapCircle>
+
+                            </maps:SubShapeFileLayer.MapElements>
+                        </maps:SubShapeFileLayer>
+                    </maps:ImageryLayer.SubShapeFileLayers>
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MyPage : ContentPage
+    {
+        
+        public MyPage()
+        {
+            InitializeComponent();
+             
+	    SfMap maps = new SfMap();
+            maps.ZoomLevel = 4;
+            ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new Point(42.9709225, -90.2187212);
+            SubShapeFileLayer subLayer = new SubShapeFileLayer();
+            MapCircle mapCircle = new MapCircle();
+            mapCircle.Fill = new SolidColorBrush(Colors.Blue);
+            mapCircle.Center = new Point(43.76140927456403, -79.35451013248883);
+            subLayer.MapElements.Add(mapCircle);
+
+            mapCircle = new MapCircle();
+            mapCircle.Fill = new SolidColorBrush(Colors.Blue);
+            mapCircle.Center = new Point(40.7324105, -74.4416047);
+            subLayer.MapElements.Add(mapCircle);
+
+            mapCircle = new MapCircle();
+            mapCircle.Fill = new SolidColorBrush(Colors.Blue);
+            mapCircle.Center = new Point(38.8781708, -77.1889971);
+            subLayer.MapElements.Add(mapCircle);
+
+            layer.SubShapeFileLayers.Add(subLayer);
+            maps.Layers.Add(layer);
+            this.Content = maps;
+       }
+    }
+
+   
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multi shapes in single layer support in WPF Maps](Shape-Types/PointIconShape.png)
+
+### Customization of map elements
+
+The following properties are used to customize `MapPolygon`, `MapPolyline`, and `MapCircle`.
+
+* `Fill`, `Stroke`, `StrokeThickness` - Used to customize the appearance of the map element's shape UI.
+* `Radius` - Used to customize radius or range of the map circle. This property is available only for `MapCircle`.
+
+{% tabs %}
+{% highlight xaml %}          
+    
+      <maps:SfMap x:Name="Maps" ZoomLevel="4">
+            <maps:SfMap.Layers>
+                <maps:ImageryLayer  x:Name="layer" GeoCoordinates="42.9709225,-90.2187212">
+                    <maps:ImageryLayer.SubShapeFileLayers>
+                        <maps:SubShapeFileLayer x:Name="subLayer" >
+                            <maps:SubShapeFileLayer.MapElements>
+
+                                <maps:MapCircle Fill="#3eFF0000" Stroke="#73FF0000" 
+                                                StrokeThickness="3" Radius="110">
+                                    <maps:MapCircle.Center>
+                                        <p:Point>43.76140927456403, -79.35451013248883</p:Point>
+                                    </maps:MapCircle.Center>
+                                </maps:MapCircle>
+
+                            </maps:SubShapeFileLayer.MapElements>
+                        </maps:SubShapeFileLayer>
+                    </maps:ImageryLayer.SubShapeFileLayers>
+                </maps:ImageryLayer>
+            </maps:SfMap.Layers>
+        </maps:SfMap>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MyPage : ContentPage
+    {
+        
+        public MyPage()
+        {
+            InitializeComponent();
+             
+	    SfMap maps = new SfMap();
+            maps.ZoomLevel = 4;
+            ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new Point(42.9709225, -90.2187212);
+            SubShapeFileLayer subLayer = new SubShapeFileLayer();
+            MapCircle mapCircle = new MapCircle();
+            mapCircle.Fill = new SolidColorBrush(Color.FromArgb(115, 255, 0, 0));
+            mapCircle.StrokeThickness = 3;
+            mapCircle.Stroke = new SolidColorBrush(Color.FromArgb(62, 255, 0, 0));
+            mapCircle.Radius = 110;
+            mapCircle.Center = new Point(43.76140927456403, -79.35451013248883);
+            subLayer.MapElements.Add(mapCircle);
+
+            layer.SubShapeFileLayers.Add(subLayer);
+            maps.Layers.Add(layer);
+            this.Content = maps;
+       }
+    }
+
+   
+{% endhighlight %}
+
+{% endtabs %}
+
+![Multi shapes in single layer support in WPF Maps](Shape-Types/MultiShapesCustomization.png)
+
 
 ## Add shapes using point collection
 
-To draw a shape, you can provide input as a geo point collection in the map. You can also add more number of shapes by using Maps [`SubShapeFileLayer`](https://help.syncfusion.com/uwp/map/multilayer-support#subshapefilelayers) support. For each shape, you need to use each SubShapeFileLayer. In shape file layer, there are three type of shapes that can be changed by using the [`ShapeType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
+You can add more number of shapes on map by using [`SubShapeFileLayer`](https://help.syncfusion.com/wpf/maps/multilayer-support#subshapefilelayers) and `Points` collection property which contains the geo-coordinate points to draw a shape. In shape file layer, there are three type of shapes available and it can be changed by using the [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) property.
 
-    1.Polyline
-    2.Polygon
+    1.Polygon
+    2.Polyline
     3.Point icon
     
+You can customize the appearance of the shape UI by setting [`ShapeFill`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeFill), [`ShapeStroke`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStroke), and [`ShapeStrokeThickness`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeStrokeThickness) properties in [`ShapeSetting`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeSetting.html).
+
 ### Polygon
 
-A polygon is a two-dimensional surface that is stored as a series of points defining its exterior bounding ring and 0 or more interior rings. Polygons are always simple. Generally, the polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
+You can add polygon shape on map by using Points collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) as `Polygon`. Polygon shape type defines a group of land, water bodies, and other features with a spatial extent.
 
 {% tabs %}
 {% highlight xaml %}
@@ -135,50 +475,31 @@ A polygon is a two-dimensional surface that is stored as a series of points defi
 
 ### Polyline
 
-A polyline is a one-dimensional shape. if it does not intersect itself, it is called a simple line. polylines are frequently used to define linear features such as roads, rivers, and power lines.
+You can add polyline shape on map by using Points collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) as `Polyline`. Polylines are frequently used to define linear features such as roads, rivers, and power lines.
 
 {% tabs %}
 {% highlight xaml %}
 
- xmlns:maps="using:Syncfusion.UI.Xaml.Maps"
- xmlns:p="using:Windows.Foundation"
-..
-
-        <ResourceDictionary>
-            <DataTemplate x:Key="markerTemplate">
-                <Grid>
-                    <Image Source="pin1.png" Height="30" Margin="0,-20,0,0" />
-                </Grid>
-            </DataTemplate>
-        </ResourceDictionary>
-..
-    <Grid>
-        <Grid.DataContext>
-            <local:ViewModel/>
-        </Grid.DataContext>
-         <maps:SfMap x:Name="Maps" >
+         <maps:SfMap x:Name="Maps" ZoomLevel="5">
             <maps:SfMap.Layers>
-                <maps:ImageryLayer  x:Name="layer">
+                <maps:ImageryLayer  x:Name="layer" GeoCoordinates="49.9709225,10.2187212">
                     <maps:ImageryLayer.SubShapeFileLayers>
-                        <maps:SubShapeFileLayer x:Name="subLayer" ShapeType="Polyline"  
-                                                MarkerVerticalAlignment="Near"
-                                                MarkerTemplate="{StaticResource markerTemplate}"
-                                                Markers="{Binding Models}">
+                        <maps:SubShapeFileLayer x:Name="subLayer" ShapeType="Polyline">
                             <maps:SubShapeFileLayer.Points>
-                                <p:Point>39.6737, -100.5</p:Point>
-                                <p:Point>61.35, 18.131</p:Point>
-                                <p:Point>-32.259, 145.4214</p:Point>
+                                <p:Point>51.5008, -0.1224</p:Point>
+                                <p:Point>48.8567, 2.3508</p:Point>
+                                <p:Point>52.5166, 13.3833</p:Point>
+                                <p:Point>48.21327949272514, 16.388290236693138</p:Point>
 
                             </maps:SubShapeFileLayer.Points>
                             <maps:SubShapeFileLayer.ShapeSettings>
-                                <maps:ShapeSetting x:Name="settings" ShapeFill="Gray" ShapeStrokeThickness="2"/>
+                                <maps:ShapeSetting x:Name="settings" ShapeFill="Black" ShapeStrokeThickness="1"/>
                             </maps:SubShapeFileLayer.ShapeSettings>
                         </maps:SubShapeFileLayer>
                     </maps:ImageryLayer.SubShapeFileLayers>
                 </maps:ImageryLayer>
             </maps:SfMap.Layers>
-        </maps:SfMap>
-    </Grid>        
+        </maps:SfMap>   
 
 {% endhighlight %}
 
@@ -186,24 +507,28 @@ A polyline is a one-dimensional shape. if it does not intersect itself, it is ca
 
     public partial class MyPage : ContentPage
     {
-        ViewModel obj = new ViewModel();
+        
         public MyPage()
         {
             InitializeComponent();
-            this.DataContext = obj;
+            
             SfMap maps = new SfMap();
+            maps.ZoomLevel = 5;
             ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new Point(49.9709225, 10.2187212);
             SubShapeFileLayer subLayer = new SubShapeFileLayer();
-            subLayer.Points.Add(new Point(39.6737, -100.5));
-            subLayer.Points.Add(new Point(61.35, 18.131));
-            subLayer.Points.Add(new Point(-32.259, 145.4214));
+            subLayer.Points = new ObservableCollection<Point>()
+            {
+                new Point(51.5008, -0.1224),
+                new Point(48.8567, 2.3508),
+                new Point(52.5166, 13.3833),
+                new Point(48.21327949272514, 16.388290236693138)
+            };
             subLayer.ShapeType = ShapeType.Polyline;
-            subLayer.Markers = obj.Models;
-            subLayer.MarkerTemplate = Resources["markerTemplate"] as DataTemplate;
-            subLayer.MarkerVerticalAlignment = MarkerAlignment.Near;
+
             ShapeSetting subLayerSetting = new ShapeSetting();
-            subLayerSetting.ShapeStrokeThickness = 2;
-            subLayerSetting.ShapeFill = new SolidColorBrush(Colors.Gray);
+            subLayerSetting.ShapeStrokeThickness = 1;
+            subLayerSetting.ShapeFill = new SolidColorBrush(Colors.Black);
             subLayer.ShapeSettings = subLayerSetting;
             layer.SubShapeFileLayers.Add(subLayer);
             maps.Layers.Add(layer);
@@ -211,24 +536,7 @@ A polyline is a one-dimensional shape. if it does not intersect itself, it is ca
         }
     }
     
-    public class ViewModel
-    {
-        public ObservableCollection<Model> Models { get; set; }
-        public ViewModel()
-        {
-            this.Models = new ObservableCollection<Model>();
-            this.Models.Add(new Model() { Label = "USA ", Latitude = "39.6737", Longitude = "-100.5" });
-            this.Models.Add(new Model() { Label = "Swedan ", Latitude = "61.35", Longitude = "18.131" });
-            this.Models.Add(new Model() { Label = "Australia ", Latitude = "-32.259", Longitude = "145.4214" });
-        }
-    }
-
-    public class Model
-    {
-        public string Label { get; set; }
-        public string Longitude { get; set; }
-        public string Latitude { get; set; }
-    }
+    
 {% endhighlight %}
 
 {% endtabs %}
@@ -237,35 +545,32 @@ A polyline is a one-dimensional shape. if it does not intersect itself, it is ca
 
 ### Point icon
 
-A point icon is a shape with a dimension of 0 that occupies a single location in coordinate space. A point icon has a single x, y coordinate value. The point icons are often used to define features such as oil wells, landmarks, and elevations.
+A point icon has a single geo coordinate value and you can add multi point icon shapes on map by using `Points` collection property of shape layer or sub layer and set [`ShapeType`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_ShapeType) as `PointIcon`. The point icons are often used to define features such as oil wells, landmarks, and elevations.
+
+The size, shape, and alignment of the map points can be customized using the [`MapPointIconSize`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIconSize), [`MapPointIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon), [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointHorizontalAlignment), and [`MapPointVerticalAlignment`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointVerticalAlignment) properties of the shape file layer.
 
 {% tabs %}
 {% highlight xaml %}
 
-    xmlns:maps="using:Syncfusion.UI.Xaml.Maps"
-    xmlns:p="using:Windows.Foundation"
-
-...
-   
-   <maps:SfMap x:Name="Maps" >
+         <maps:SfMap x:Name="Maps" ZoomLevel="4">
             <maps:SfMap.Layers>
-                <maps:ImageryLayer  x:Name="layer">
+                <maps:ImageryLayer  x:Name="layer" GeoCoordinates="42.9709225,-90.2187212">
                     <maps:ImageryLayer.SubShapeFileLayers>
-                        <maps:SubShapeFileLayer x:Name="subLayer" MapPointIconSize="10" ShapeType="PointIcon">
+                        <maps:SubShapeFileLayer x:Name="subLayer" MapPointIconSize="10"
+                                                ShapeType="PointIcon">
                             <maps:SubShapeFileLayer.Points>
-                                <p:Point>48.95, -122.68</p:Point>
-                                <p:Point>30.197, -102.6564</p:Point>
-                                <p:Point>36.3305, -77.5437</p:Point>
-                                <p:Point>47.2331, -90.140212</p:Point>
+                                <p:Point>43.96140927456403, -79.85451013248883</p:Point>
+                                <p:Point>41.1324105, -74.4416047</p:Point>
+                                <p:Point>39.2781708, -77.5889971</p:Point>
                             </maps:SubShapeFileLayer.Points>
                             <maps:ShapeFileLayer.ShapeSettings>
-                                <maps:ShapeSetting ShapeFill="Red" ShapeStroke="Red"/>
+                                <maps:ShapeSetting ShapeFill="Blue"/>
                             </maps:ShapeFileLayer.ShapeSettings>
                         </maps:SubShapeFileLayer>
                     </maps:ImageryLayer.SubShapeFileLayers>
                 </maps:ImageryLayer>
             </maps:SfMap.Layers>
-        </maps:SfMap>
+        </maps:SfMap> 
 
 {% endhighlight %}
 
@@ -273,27 +578,27 @@ A point icon is a shape with a dimension of 0 that occupies a single location in
 
     public partial class MyPage : ContentPage
     {
-        ViewModel obj = new ViewModel();
         public MyPage()
         {
             InitializeComponent();
-            this.DataContext = obj;
             SfMap maps = new SfMap();
+            maps.ZoomLevel = 4;
             ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new Point(42.9709225, -90.2187212);
             SubShapeFileLayer subLayer = new SubShapeFileLayer();
-            subLayer.Points.Add(new Point(48.95, -122.68));
-            subLayer.Points.Add(new Point(30.197, -102.6564));
-            subLayer.Points.Add(new Point(36.3305, -77.5437));
-            subLayer.Points.Add(new Point(47.2331, -90.140212));
+            subLayer.Points.Add(new Point(43.96140927456403, -79.85451013248883));
+            subLayer.Points.Add(new Point(41.1324105, -74.4416047));
+            subLayer.Points.Add(new Point(39.2781708, -77.5889971));
             subLayer.MapPointIconSize = 10;
             subLayer.ShapeType = ShapeType.PointIcon;
+            subLayer.MapPointIconSize = 10;
             ShapeSetting subLayerSetting = new ShapeSetting();
-            subLayerSetting.ShapeFill = new SolidColorBrush(Colors.Red);
-            subLayerSetting.ShapeStroke = new SolidColorBrush(Colors.Red);
+            subLayerSetting.ShapeFill = new SolidColorBrush(Colors.Blue);
             subLayer.ShapeSettings = subLayerSetting;
             layer.SubShapeFileLayers.Add(subLayer);
             maps.Layers.Add(layer);
             this.Content = maps;
+            
        }
     }
 {% endhighlight %}
@@ -301,123 +606,3 @@ A point icon is a shape with a dimension of 0 that occupies a single location in
 {% endtabs %}
 
 ![Point icon shape support in WPF Maps](Shape-Types/PointIconShape.png)
-
-### Customization of points
-
-The size, shape, and position of the map points can be customized using the [`MapPointIconSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIconSize), [`MapPointIcon`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointIcon), [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointHorizontalAlignment), and [`MapPointVerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_MapPointVerticalAlignment) properties of the shape file layer.
-
-## Add shapes using map elements collection
-
-You can provide input as a geo points collection in the map to draw multiple shapes in a single layer. You can also add more shapes using the `MapElements` property of the layer. There are three types of shapes available in map element.
-
-    1.Polyline
-    2.Polygon
-    3.Circle
-
-{% tabs %}
-{% highlight xaml %}
-
-    xmlns:maps="using:Syncfusion.UI.Xaml.Maps"
-    xmlns:p="using:Windows.Foundation"
-
-...
-           <maps:SfMap x:Name="Maps" >
-            <maps:SfMap.Layers>
-                <maps:ImageryLayer  x:Name="layer">
-                    <maps:ImageryLayer.SubShapeFileLayers>
-                        <maps:SubShapeFileLayer x:Name="subLayer">
-                            <maps:SubShapeFileLayer.MapElements>
-
-                                <maps:MapPolyline Stroke="Black">
-                                    <maps:MapPolyline.Points>
-                                        <p:Point>61.35, 18.131</p:Point>
-                                        <p:Point>-32.259, 145.4214</p:Point>
-                                    </maps:MapPolyline.Points>
-                                </maps:MapPolyline>
-
-                                <maps:MapCircle Fill="Black">
-                                    <maps:MapCircle.Center>
-                                        <p:Point>61.35, 18.131</p:Point>
-                                    </maps:MapCircle.Center>
-                                </maps:MapCircle>
-
-                                <maps:MapCircle Fill="Black">
-                                    <maps:MapCircle.Center>
-                                        <p:Point>-32.259, 145.4214</p:Point>
-                                    </maps:MapCircle.Center>
-                                </maps:MapCircle>
-
-                                <maps:MapCircle Fill="Red">
-                                    <maps:MapCircle.Center>
-                                        <p:Point>6.3305, -77.5437</p:Point>
-                                    </maps:MapCircle.Center>
-                                </maps:MapCircle>
-
-                            </maps:SubShapeFileLayer.MapElements>
-                        </maps:SubShapeFileLayer>
-                    </maps:ImageryLayer.SubShapeFileLayers>
-                </maps:ImageryLayer>
-            </maps:SfMap.Layers>
-        </maps:SfMap>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-    public partial class MyPage : ContentPage
-    {
-       
-        public MyPage()
-        {
-            InitializeComponent();
-            
-            SfMap maps = new SfMap();
-            ImageryLayer layer = new ImageryLayer();
-            SubShapeFileLayer subLayer = new SubShapeFileLayer();
-
-            MapPolyline mapPolyline = new MapPolyline();
-            mapPolyline.Stroke = new SolidColorBrush(Colors.Black);
-            mapPolyline.Points = new ObservableCollection<Point>()
-            {
-                new Point(61.35, 18.131),
-                new Point(-32.259, 145.4214)
-            };
-            subLayer.MapElements.Add(mapPolyline);
-
-            MapCircle mapCircle = new MapCircle();
-            mapCircle.Center = new Point(61.35, 18.131);
-            mapCircle.Fill = new SolidColorBrush(Colors.Black);
-            subLayer.MapElements.Add(mapCircle);
-
-            mapCircle = new MapCircle();
-            mapCircle.Center = new Point(-32.259, 145.4214);
-            mapCircle.Fill = new SolidColorBrush(Colors.Black);
-            subLayer.MapElements.Add(mapCircle);
-
-            mapCircle = new MapCircle();
-            mapCircle.Center = new Point(36.3305, -77.5437);
-            mapCircle.Fill = new SolidColorBrush(Colors.Red);
-            subLayer.MapElements.Add(mapCircle);
-
-            layer.SubShapeFileLayers.Add(subLayer);
-            maps.Layers.Add(layer);
-            this.Content = maps;
-       }
-    }
-    
-{% endhighlight %}
-
-{% endtabs %}
-
-![Multi shapes in single layer support in UWP Maps](Shape-Types/MultiShapes.png)
-
-### Customization of map elements
-
-The following properties are used to customize `MapPolygon`, `MapPolyline`, and `MapCircle`.
-
-* `Fill` - Gets or sets the color used to fill the shape.
-* `Stroke` - Gets or sets the color used to draw the shape stroke.
-* `StrokeThickness` - Gets or sets the width of the stroke line used to draw the shapes, in logical pixels.
-* `Center` - Gets or sets the point object in latitude and longitude that defines the center of the circle. This property is only available for `MapCircle`.
-* `Radius` - Gets or sets the value that defines the radius of the circle. This property is only available for `MapCircle`.
-
