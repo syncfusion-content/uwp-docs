@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Crop in UWP Image Editor control | Syncfusion
-description: Learn here all about Crop support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+description: Learn here all about Crop with ratio support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
 platform: uwp
 control: SfImageEditor
 documentation: ug
@@ -164,6 +164,20 @@ The following image show cases the circularly cropped image.
   editor.ToggleCropping(new Rect(), true);
 
 {% endhighlight %}
+
+### Circle cropping with a ratio
+
+To crop an image in a circle or an ellipse with a specific ratio, use `ToggleCropping` with a ratio argument and an optional parameter of true, which specifies whether the cropping panel should be added in an elliptical or rectangle shape. The default value is false.
+
+{% highlight C# %} 
+
+// To crop an image as a circle dimension with ratio.
+
+editor.ToggleCropping(1, 1, true);
+
+{% endhighlight %}
+
+![Circle cropping](crop_images/CircleCroppingRatio.png) 
 
 ## Manually set the cropping area
 
