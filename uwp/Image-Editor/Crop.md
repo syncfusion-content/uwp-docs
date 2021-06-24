@@ -171,7 +171,7 @@ To crop an image in a circle or an ellipse with a specific ratio, use `ToggleCro
 
 {% highlight C# %} 
 
-// To crop an image as a elliptical dimension with ratio.
+// To crop an image as a circle dimension with ratio.
 
 editor.ToggleCropping(1, 1, true);
 
