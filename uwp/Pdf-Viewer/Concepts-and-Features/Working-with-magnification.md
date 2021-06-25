@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with magnification in UWP Pdf Viewer control | Syncfusion
-description: Learn here all about Working with magnification support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
+title: Working with magnification in UWP PDF Viewer control | Syncfusion
+description: Learn here all about Working with magnification support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Working with magnification in UWP Pdf Viewer (SfPdfViewer)
+# Working with magnification in UWP PDF Viewer (SfPdfViewer)
 
 Magnification of the PDF document can be done in multiple ways and the different ways are explained below. By default the viewer control supports ctrl+ mouse scroll to manipulate the magnification of the document. 
 
