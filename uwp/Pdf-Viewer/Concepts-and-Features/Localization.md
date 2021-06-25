@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Pdf Viewer control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
+title: Localization in UWP PDF Viewer control | Syncfusion
+description: Learn here all about Localization support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
 platform: UWP
 control: SfPdfViewerControl
 documentation: ug
 keywords: localization
 ---
-# Localization in UWP Pdf Viewer (SfPdfViewer)
+# Localization in UWP PDF Viewer (SfPdfViewer)
 
 Localization is the process of configuring the application to a specific language. SfPdfViewerControl provides support to localize the context menu. Localization can be done by adding resource file (Resw) and setting the specific culture in the application.
 
