@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Viewing PDF in UWP Pdf Viewer control | Syncfusion
-description: Learn here all about Viewing PDF support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
+title: Viewing PDF in UWP PDF Viewer control | Syncfusion
+description: Learn here all about Viewing PDF support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Viewing PDF in UWP Pdf Viewer (SfPdfViewer)
+# Viewing PDF in UWP PDF Viewer (SfPdfViewer)
 The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) allows you to load the PDF documents from the [`stream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0), [`storageFile`](https://docs.microsoft.com/en-us/uwp/api/windows.storage.storagefile?view=winrt-19041), and [`PdfLoadedDocument`](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
 
 ## Loading a PDF using PdfLoadedDocument object

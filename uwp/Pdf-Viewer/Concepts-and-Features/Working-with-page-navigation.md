@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with page navigation in UWP Pdf Viewer control | Syncfusion
-description: Learn here all about Working with page navigation support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
+title: Working with page navigation in UWP PDF Viewer control | Syncfusion
+description: Learn here all about Working with page navigation support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-# Working with page navigation in UWP Pdf Viewer (SfPdfViewer)
+# Working with page navigation in UWP PDF Viewer (SfPdfViewer)
 
 The PdfViewer allows navigation through the pages of PDF documents. The navigation from one page to other can be done by using “GoToPage” method.
 
