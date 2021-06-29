@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with UWP TreeGrid control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+description: Learn here about getting started with Syncfusion UWP TreeGrid (SfTreeGrid) control, its elements and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-## Getting Started with UWP TreeGrid (SfTreeGrid)
+# Getting Started with UWP TreeGrid (SfTreeGrid)
 
 The SfTreeGrid is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
 
@@ -96,7 +96,7 @@ Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
 </tr>
 </table>
 
-You can refer [here](https://help.syncfusion.com/uwp/installation-and-deployment#installed-location) to know the assemblies installation location on your machine.
+You can refer [here](https://help.syncfusion.com/uwp/installation-and-upgrade/system-requirements) to know the assemblies installation location on your machine.
 
 ### Creating simple application with SfTreeGrid
 
@@ -259,7 +259,7 @@ public class EmployeeInfo
 {% endhighlight %}
 {% endtabs %}
 
-N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.data.inotifypropertychanged.aspx) interface
+N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Data.INotifyPropertyChanged?redirectedfrom=MSDN&view=winrt-19041) interface
 
 2.Create a `ViewModel` class with Employees property and Employees property is initialized with several data objects in constructor.
 

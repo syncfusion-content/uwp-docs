@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Get coordinates of a text in a PDF document in Syncfusion Essential UWP PDF viewer.
-description: Get coordinates of a text in a PDF document in Syncfusion Essential UWP PDF viewer.
+title: Get coordinates text in a PDF document in UWP PDF viewer | Syncfusion
+description: Learn here all about Get coordinates of a text in a PDF document support in UWP PDF viewer control and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-## Get coordinates of a text in a PDF document
+# Get coordinates of a text in a PDF document in UWP PDF Viewer
 The SfPdfViewer control allows you to acquire the coordinates of multiple instances of a particular text in a page of the PDF document. The following code illustrates the same. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
 {% tabs %}
 {% highlight c# %}

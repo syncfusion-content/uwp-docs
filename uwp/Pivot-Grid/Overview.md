@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Pivot Grid control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+description: Learn here all about introduction of Syncfusion UWP Pivot Grid (SfPivotGrid) control, its elements and more.
 platform: UWP
 control: SfPivotGrid
 documentation: ug

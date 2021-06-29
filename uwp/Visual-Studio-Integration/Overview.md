@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | UWP | Syncfusion
-description: The Syncfusion UWP Project Templates provides quick access to create Syncfusion UWP Application by adding the required assemblies
+title: About UWP Extensions control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio UWP Extensions control, its elements and more.
 platform: uwp
 control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Overview
+# UWP Syncfusion Extensions Overview
  
 The Syncfusion UWP Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio. The Syncfusion UWP Extensions supports Microsoft Visual Studio 2017.
 

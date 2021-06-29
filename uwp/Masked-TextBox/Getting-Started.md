@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Masked TextBox control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
+description: Learn here about getting started with Syncfusion UWP Masked TextBox (SfMaskedEdit) control, its elements and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
@@ -107,7 +107,7 @@ Dim sfMaskdeEdit1 As SfMaskedEdit = New SfMaskedEdit() With {
 
 ## Adding Mask to the control
 
-To mask the input of [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html),  we must set [MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_MaskType) and [Mask](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_Mask) property.
+To mask the input of [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html),  we must set [MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.MaskType.html) and [Mask](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_Mask) property.
 
 `MaskType` has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as Simple, Regular and RegEx.
 

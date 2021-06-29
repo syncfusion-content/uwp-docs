@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Sparkline control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP Sparkline (SfSparkline) control and more.
+description: Learn here all about introduction of Syncfusion UWP Sparkline (SfSparkline) control, its elements and more.
 platform: uwp
 control: SfSparkline
 documentation: ug

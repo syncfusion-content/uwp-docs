@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Rotator control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Rotator (SfRotator) control and more.
+description: Learn here about getting started with Syncfusion UWP Rotator (SfRotator) control, its elements and more.
 platform: UWP
 control: Rotator
 documentation: ug

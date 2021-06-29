@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearence and Styling of SfCalculator control for UWP
-description: Appearence and Styling of SfCalculator control for UWP
+title: Appearence and Styling in UWP Calculator control | Syncfusion
+description: Learn here all about Appearence and Styling in Syncfusion UWP Calculator (SfCalculator) control, its elements and more.
 platform: UWP
 control: SfCalculator
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and Styling in UWP Calculator (SfCalculator) control
 
 All the panes in SfCalculator can be customized easily. The panes can be styled as follows:
 
@@ -53,7 +53,7 @@ Display pane is the panel that contain elements displaying value and expression.
 
 {% endtabs %}
 
-![](SfCalculator-images/SfCalculator-img8.jpeg)
+![SfCalculator-images8](SfCalculator-images/SfCalculator-img8.jpeg)
 
 ## Customizing input panel
 
@@ -76,4 +76,4 @@ Input pane is a panel in SfCalculator that contains number buttons. It can be st
 
 {% endtabs %}
 
-![](SfCalculator-images/SfCalculator-img9.jpeg)
+![SfCalculator-images9](SfCalculator-images/SfCalculator-img9.jpeg)

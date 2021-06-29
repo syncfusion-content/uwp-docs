@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Bullet Graph control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+description: Learn here about getting started with Syncfusion UWP Bullet Graph (SfBulletGraph) control, its elements and more.
 platform: uwp
 control: SfBulletGraph
 documentation: ug

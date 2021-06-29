@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP TreeMap control | Syncfusion
-description: Learn here all about Overview support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn here all about introduction of Syncfusion UWP TreeMap (SfTreeMap) control, its elements and more.
 platform: UWP
 control: SfTreeMap
 documentation: ug
