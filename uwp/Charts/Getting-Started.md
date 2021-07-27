@@ -310,7 +310,7 @@ chart.Series.Add(series)
 
 {% endtabs %} 
 
-N> Syncfusion Chart also supports rendering combination of multiple series. Refer [`this`](https://help.syncfusion.com/uwp/sfchart/area#multiple-area) for details.
+N> Syncfusion Chart also supports rendering combination of multiple series. Refer [`this`](https://help.syncfusion.com/uwp/charts/area#multiple-area) for details.
 
 ## Add Title
 

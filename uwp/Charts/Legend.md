@@ -10,7 +10,7 @@ documentation: ug
 # Legend in UWP Charts (SfChart)
 
 [`Legend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) provides metadata which helps for identifying elements in chart like [`chart series`](https://help.syncfusion.com/uwp/sfchart/series), 
-[`technical indicators`](https://help.syncfusion.com/uwp/sfchart/technical-indicators), and [`trendlines`](https://help.syncfusion.com/uwp/sfchart/trendlines). 
+[`technical indicators`](https://help.syncfusion.com/uwp/charts/technical-indicators), and [`trendlines`](https://help.syncfusion.com/uwp/charts/trendlines). 
 You can define the legend using the following code example.
 
 {% tabs %}
@@ -365,7 +365,7 @@ The series can be collapsed by unchecking the CheckBox as below:
 
 ## ToggleSeriesVisibility 
 
-[`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) is used to view or collapse the associated [`series`](https://help.syncfusion.com/uwp/sfchart/series), by clicking on its legend item. By default, [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is *False*.
+[`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) is used to view or collapse the associated [`series`](https://help.syncfusion.com/uwp/charts/series), by clicking on its legend item. By default, [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is *False*.
 
 We can enable the [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property as in below code example:
 

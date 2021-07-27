@@ -166,7 +166,7 @@ Creating NodeViewModel with Specified Height and Width.
 #### Adding Shape and ShapeStyle to Node
 
  We have provided set of basic shapes for Diagram as ResourceDictionary. In order to use the built-in shapes, Shapes dictionary should be merged in Application.  
- Please refer to [Shapes](https://help.syncfusion.com/uwp/sfdiagram/shapes) to know about built-in Shapes.
+ Please refer to [Shapes](https://help.syncfusion.com/uwp/diagram/shapes) to know about built-in Shapes.
   
 {% tabs %}
 {% highlight xaml %}  

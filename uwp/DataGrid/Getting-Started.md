@@ -453,7 +453,7 @@ Represents SfDataGrid column that hosts textual content in its cells.
 GridNumericColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[SfNumericTextBox](https://help.syncfusion.com/uwp/sfnumerictextbox/overview)'| markdownify}} controls in its cells which is used to format and display Numeric values.
+Represents SfDataGrid column that hosts {{'[SfNumericTextBox](https://help.syncfusion.com/uwp/numeric-textbox/overview)'| markdownify}} controls in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -461,7 +461,7 @@ Represents SfDataGrid column that hosts {{'[SfNumericTextBox](https://help.syncf
 GridDateTimeColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[SfDatePicker](https://help.syncfusion.com/uwp/sfdatepicker/overview)'| markdownify}} controls in its cells which is used to display and format DateTime values.
+Represents SfDataGrid column that hosts {{'[SfDatePicker](https://help.syncfusion.com/uwp/datepicker/overview)'| markdownify}} controls in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>
