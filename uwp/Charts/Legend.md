@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in UWP Charts control | Syncfusion
-description: Learn here all about Legend support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn here all about Legend feature of Syncfusion Universal Windows Platform (UWP) Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Legend in UWP Charts (SfChart)
 
-[`Legend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) provides metadata which helps for identifying elements in chart like [`chart series`](https://help.syncfusion.com/uwp/sfchart/series), 
+[`Legend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) provides metadata which helps for identifying elements in chart like [`chart series`](https://help.syncfusion.com/uwp/charts/series), 
 [`technical indicators`](https://help.syncfusion.com/uwp/charts/technical-indicators), and [`trendlines`](https://help.syncfusion.com/uwp/charts/trendlines). 
 You can define the legend using the following code example.
 
@@ -395,12 +395,12 @@ chart.Legend = new ChartLegend()
 {% endtabs %}
 
 
-The [`series`](https://help.syncfusion.com/uwp/sfchart/series) can be collapsed, by clicking on the respective legend item,
+The [`series`](https://help.syncfusion.com/uwp/charts/series) can be collapsed, by clicking on the respective legend item,
 
 ![ToggleSeriesVisibility support for legend in UWP Chart](Legend_images/Toggling_1.png)
 
 
-We can view the associated [`series`](https://help.syncfusion.com/uwp/sfchart/series), by clicking on its disabled legend item,
+We can view the associated [`series`](https://help.syncfusion.com/uwp/charts/series), by clicking on its disabled legend item,
 
 ![ToggleSeriesVisibility support for legend in UWP Chart](Legend_images/Toggling_2.png)
 

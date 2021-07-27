@@ -383,7 +383,7 @@ series.AdornmentsInfo = New ChartAdornmentInfo() With {.ShowLabel = True}
 
 {% endtabs %}  
 
-Refer [`this`](https://help.syncfusion.com/uwp/sfchart/adornments) link  to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
+Refer [`this`](https://help.syncfusion.com/uwp/charts/adornments) link  to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
 
 ## Enable legend
 
@@ -463,7 +463,7 @@ series.Label = "Heights"
 
 {% endtabs %}  
 
-Refer this [`link`](https://help.syncfusion.com/uwp/sfchart/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize legend.
+Refer this [`link`](https://help.syncfusion.com/uwp/charts/legend) to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize legend.
 
 ## Enable tooltip
 
@@ -507,7 +507,7 @@ series.ShowTooltip = True
 
 {% endtabs %}
 
-Refer [`this`](https://help.syncfusion.com/uwp/sfchart/interactive-features#tooltip) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip.
+Refer [`this`](https://help.syncfusion.com/uwp/charts/interactive-features#tooltip) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip.
 
 The following code example gives you the complete code of above configurations.
 
