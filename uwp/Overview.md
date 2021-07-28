@@ -316,7 +316,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/hubtiles/sfhubtile">SfHubTile</a><br/><br/>
+			<a href="https://help.syncfusion.com/uwp/hub-tile/sfhubtile">SfHubTile</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -324,7 +324,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/hubtiles/sfmosaictile">SfMosaicTile</a><br/><br/>
+			<a href="https://help.syncfusion.com/uwp/hub-tile/sfmosaictile">SfMosaicTile</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -332,7 +332,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/hubtiles/sfsplitmosaictile">SfSplitMosaicTile</a><br/><br/>
+			<a href="https://help.syncfusion.com/uwp/hub-tile/sfsplitmosaictile">SfSplitMosaicTile</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -340,7 +340,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/hubtiles/sfpulsingtile">SfPulsingTile</a><br/><br/>
+			<a href="https://help.syncfusion.com/uwp/hub-tile/sfpulsingtile">SfPulsingTile</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
