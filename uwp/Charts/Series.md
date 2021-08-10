@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series in UWP Charts control | Syncfusion
-description: Learn here all about Series support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn here all about Series feature of Syncfusion Universal WIndows Platform (UWP) Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
@@ -1621,7 +1621,7 @@ chart.Series.Add(series);
 
 ### PolarAngle
 
-[`Chart axis`](https://help.syncfusion.com/uwp/sfchart/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) property.The [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) is type of [`ChartPolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) and its default value is [`Rotate270`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate0`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate90`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) and [`Rotate180`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) are another supported value of [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle).Both the primary and secondary axes can be rotated individually based on its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value.
+[`Chart axis`](https://help.syncfusion.com/uwp/charts/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) property.The [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) is type of [`ChartPolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) and its default value is [`Rotate270`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate0`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate90`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) and [`Rotate180`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) are another supported value of [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle).Both the primary and secondary axes can be rotated individually based on its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value.
 
 **Rotate0**
 

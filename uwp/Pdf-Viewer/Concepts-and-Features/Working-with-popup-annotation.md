@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with popup annotations in UWP Pdf Viewer control | Syncfusion
+title: Working with popup annotations in UWP Pdf Viewer | Syncfusion
 description: Learn here all about Working with popup annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control, its elements, and more.
 platform: uwp
 control: PDF viewer
