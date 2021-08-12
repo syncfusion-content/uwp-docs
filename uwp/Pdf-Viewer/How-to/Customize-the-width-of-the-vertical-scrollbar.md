@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize the width of the vertical scrollbar
 
-The PDF viewer uses the `ScrollViewer` control to scroll the pages of the PDF. The width of the vertical scrollbar of the `ScrollViewer` can be modified by using the `VerticalScrollBarWidth` property. The default value of the API is as same as the default width of the vertical scrollbar of the `ScrollViewer` control. 
+The PDF viewer uses the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-20348) control to scroll the pages of the PDF. The width of the vertical scrollbar of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-20348) can be modified by using the [VerticalScrollBarWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_VerticalScrollBarWidth) property. The default value of the API is as same as the default width of the vertical scrollbar of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-20348) control.
 
 {% tabs %}
 {% highlight c# %}
