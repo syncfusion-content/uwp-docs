@@ -1,13 +1,13 @@
 ---
 layout: post
 title: UWP NuGet Packages | Syncfusion
-description: NuGet Packages
+description: Learn here all about installation, managing and upgrading of NuGet Packages of Syncfusion UWP control and more.
 platform: uwp
 control: NuGet Packages
 documentation: ug
 ---
 
-# NuGet Packages
+# NuGet Packages in UWP 
 
 [NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion UWP NuGet packages without installing the Essential Studio or UWP platform installation to development with the Syncfusion UWP controls. 
 

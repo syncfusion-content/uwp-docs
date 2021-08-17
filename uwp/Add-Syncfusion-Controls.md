@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Steps to add Syncfusion Essential UWP controls
-description: Learn how to add Syncfusion Essential UWP control to the application
+description: Learn here all about the different ways to add Syncfusion Essential UWP controls to the Visual Studio projects.
 platform: uwp
 control: Add Syncfusion Controls
 documentation: ug
 ---
 
-# Add Syncfusion Controls
+# Add Syncfusion UWP Controls
 
 The Syncfusion UWP controls can be added in a Visual Studio projects by using either of the following ways,
 
