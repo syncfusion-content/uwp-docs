@@ -11,7 +11,7 @@ documentation: ug
 
 Printing can be done using the Print method or by using the Print command.
 
-The following code shows how to perform the print operation using Print method. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
+The following code shows how to perform the print operation using Print method. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/pdf-viewer/concepts-and-features/viewing-pdf) section. 
 
 {% tabs %}
 {% highlight c# %}
