@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Group in UWP Diagram control | Syncfusion
-description: Learn here all about Group support in Syncfusion UWP Diagram (SfDiagram) control and more.
+description: Learn here all about Group support in Syncfusion UWP Diagram (SfDiagram) control, its elements, and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
