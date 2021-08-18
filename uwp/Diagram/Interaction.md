@@ -209,5 +209,5 @@ The following table illustrates List of Commands with key Gesture.
 | Ctrl + Shift + ] | BringFront | Brings the selected element to front over all the other overlapped elements. |
 | Ctrl + ] | BringForward | Moves the selected element over the nearest overlapping element. |
 
-To add custom commands, configure or modify key/mouse gesture through [Command Manager](/uwp/sfdiagram/commands#command-manager "Command Manager").
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/uwp/diagram/commands#command-manager "Command Manager").
 
