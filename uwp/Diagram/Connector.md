@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connector in UWP Diagram control | Syncfusion
-description: Learn here all about Connector support in Syncfusion UWP Diagram (SfDiagram) control and more.
+description: Learn here all about Connector support in Syncfusion UWP Diagram (SfDiagram) control, its elements, and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
@@ -77,15 +77,15 @@ ConnectorViewModel connector = new ConnectorViewModel()
 
 Connectors can be predefined and added to the stencil. You can drop those Connectors into the Diagram, when required. 
 
-For more information about adding Connectors from stencil, refer to [Stencil](/uwp/sfdiagram/stencil "Stencil").
+For more information about adding Connectors from stencil, refer to [Stencil](/uwp/diagram/stencil "Stencil").
 
 ### Connectors through data source
 
-Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/uwp/sfdiagram/datasource "DataSource").
+Connectors are automatically generated based on the relationships defined through the data source. For more information about data source, refer to [Data Source](/uwp/diagram/datasource "DataSource").
 
 ### Draw Connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to [Draw Connectors](/uwp/sfdiagram/tools#drawing-tools:connectors "Draw Connectors").
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using Drawing Tool. For more information about drawing Connectors, refer to [Draw Connectors](/uwp/diagram/tools#drawing-tools:connectors "Draw Connectors").
 
 ## Connect Nodes
 
@@ -140,7 +140,7 @@ N> By default, connections are created at the intersecting point of Segments and
 
 The `SourcePort`/`SourcePortID` and `TargetPort`/`TargetPortID` properties allow to create connections between some specific points of Source/Target Nodes. 
 
-For Connections with Ports, please refer to [Port](https://help.syncfusion.com/uwp/sfdiagram/port "Port").
+For Connections with Ports, please refer to [Port](https://help.syncfusion.com/uwp/diagram/port "Port").
 
 ## Segments
 
@@ -517,7 +517,7 @@ To explore about arguments, please refer to [ChangedEventArgs](https://help.sync
 
 ## Constraints
 
-The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/sfdiagram/constraints#connector-constraints "Connector Constraints").
+The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/diagram/constraints#connector-constraints "Connector Constraints").
 
 {% seealso %}
 
