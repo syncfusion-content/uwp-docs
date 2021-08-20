@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SfHubTile in UWP Hub Tile control | Syncfusion
-description: Learn here all about SfHubTile support in Syncfusion UWP Hub Tile (HubTiles) control and more.
+description: Learn here all about SfHubTile support in Syncfusion Universal Windows Platform (UWP) Hub Tile (HubTiles) control and more.
 platform: uwp
 control: SfHubTile
 documentation: ug
