@@ -47,5 +47,5 @@ this.DataContext = pdfViewer;
 
 The UI design of the application for desktop and mobile is illustrated in the following documentation pages. The link to the common sample can be found at the ends of both the documentation pages.  
 
-1.	[Desktop design](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/ui-design-for-desktop)
-2.	[Mobile design](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/ui-design-for-mobile)
+1.	[Desktop design](https://help.syncfusion.com/uwp/pdf-viewer/concepts-and-features/ui-design-for-desktop)
+2.	[Mobile design](https://help.syncfusion.com/uwp/pdf-viewer/concepts-and-features/ui-design-for-mobile)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gridlines in UWP Diagram control | Syncfusion
-description: Learn here all about Gridlines support in Syncfusion UWP Diagram (SfDiagram) control and more.
+description: Learn here all about Gridlines support in Syncfusion UWP Diagram (SfDiagram) control, its elements, and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
@@ -36,7 +36,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
 ![Gridlines](Gridlines_images/Gridlines_img1.jpeg)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/uwp/sfdiagram/constraints#snap-constraints "SnapConstraints").
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapConstraints](/uwp/diagram/constraints#snap-constraints "SnapConstraints").
 
 ## Appearance
 
@@ -193,7 +193,7 @@ diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
 
 {% endhighlight %}
 
-To enable/disable snapping to horizontal/vertical lines, refer to [SnapConstraints](/uwp/sfdiagram/constraints#snap-constraints "SnapConstraints").
+To enable/disable snapping to horizontal/vertical lines, refer to [SnapConstraints](/uwp/diagram/constraints#snap-constraints "SnapConstraints").
 
 ### Snap To Objects
 

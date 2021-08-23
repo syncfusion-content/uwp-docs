@@ -356,9 +356,9 @@ The user can also use the Context menu to edit the selected appointment by selec
 ## Appearance Customization
 The default appearance of the appointment can be customized by using the [ScheduleAppointmentStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html) property and [ScheduleAppointmentLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 
-•	[Customize appearance using Style](https://help.syncfusion.com/uwp/sfschedule/appointments#customize-appearance-using-style) 
-•	[Customize appearance using Event](https://help.syncfusion.com/uwp/sfschedule/appointments#customize-appearance-using-event)
-•	[Customize appearance using Custom View](https://help.syncfusion.com/uwp/sfschedule/appointments#customize-appearance-using-custom-view)
+•	[Customize appearance using Style](https://help.syncfusion.com/uwp/scheduler/appointments#customize-appearance-using-style) 
+•	[Customize appearance using Event](https://help.syncfusion.com/uwp/scheduler/appointments#customize-appearance-using-event)
+•	[Customize appearance using Custom View](https://help.syncfusion.com/uwp/scheduler/appointments#customize-appearance-using-custom-view)
 
 ### Customize appearance using Style
 Schedule appointment can be customized by setting appointment style properties such as [AppointmentTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_AppointmentTextColorProperty), [AppointmentFontStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_AppointmentFontStyleProperty), [BorderColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderColorProperty), [BorderCornerRadius](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderCornerRadiusProperty), [BorderThickness](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderThicknessProperty) to the `ScheduleAppointmentStyle` property of `SfSchedule`.
@@ -524,11 +524,11 @@ The Schedule control allows you to define resources that can be assigned to appo
 
 To configure the views based on resources, refer 
 
-•	[Configuring resources in Day View.](https://help.syncfusion.com/uwp/sfschedule/dayview#configuring-resources) 
-•	[Configuring resources in Week View.](https://help.syncfusion.com/uwp/sfschedule/weekview#configuring-resources)
-•	[Configuring resources in Work Week View.](https://help.syncfusion.com/uwp/sfschedule/workweekview#configuring-resources)
-•	[Configuring resources in Month View.](https://help.syncfusion.com/uwp/sfschedule/monthview#configuring-resources)
-•	[Configuring resources in Timeline View.](https://help.syncfusion.com/uwp/sfschedule/timelineview#configuring-resources)
+•	[Configuring resources in Day View.](https://help.syncfusion.com/uwp/scheduler/dayview#configuring-resources) 
+•	[Configuring resources in Week View.](https://help.syncfusion.com/uwp/scheduler/weekview#configuring-resources)
+•	[Configuring resources in Work Week View.](https://help.syncfusion.com/uwp/scheduler/workweekview#configuring-resources)
+•	[Configuring resources in Month View.](https://help.syncfusion.com/uwp/scheduler/monthview#configuring-resources)
+•	[Configuring resources in Timeline View.](https://help.syncfusion.com/uwp/scheduler/timelineview#configuring-resources)
 
 
 ![UWP SfSchedule displays appointment assigned to the customers](Appointments_images/resource.png)

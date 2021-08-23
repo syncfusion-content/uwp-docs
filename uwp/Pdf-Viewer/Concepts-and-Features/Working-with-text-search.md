@@ -11,7 +11,7 @@ documentation: ug
 
 Text search can be done in two ways, by using the SearchText method or by using the commands.
 
-In all code snippets found below, 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
+In all code snippets found below, 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/pdf-viewer/concepts-and-features/viewing-pdf) section. 
 
 **Using search methods**
 
