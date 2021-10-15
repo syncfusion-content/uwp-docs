@@ -28,7 +28,7 @@ The following steps illustrates you how to configure the app package for localiz
 
 * Create a folder with name ‘Resources’ in your application.
 * Create a folder with language (“en-US”, “fr-FR”, etc.) under ‘Resources’ to hold the resource file for the respective language.
-* Add default English (“en-US”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RESOUR~1154747619)(resource) file of SfPdfViewerControl in the ‘en-US’ folder, named as Syncfusion.SfPdfViewerControl.UWP.Resources.resw, Syncfusion.SfColorPickers.WinRT.Resources.resw and Localization.Resources. resw respectively. For your reference, French(“fr-FR”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources_file814070975) file.
+* Add default English (“en-US”) [Resw](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources_file-384663272.zip)(resource) file of SfPdfViewerControl in the ‘en-US’ folder, named as Syncfusion.SfPdfViewerControl.UWP.Resources.resw, Syncfusion.SfColorPickers.WinRT.Resources.resw and Localization.Resources. resw respectively. For your reference, French(“fr-FR”) [Resw](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources_file-1894054239.zip) file.
 
 ![Culture resources](Localization_images/Localization_img2.png)
 
