@@ -119,4 +119,46 @@ private void PdfViewer_AnnotationAdded(object sender, Syncfusion.Windows.PdfView
 		}
 {% endhighlight %}
 
+## Deleting Annotations
 
+The PDF viewer supports removing a single annotation and all the annotations in the PDF document.
+
+### Remove a selected annotation
+
+The following code snippet illustrates removing a selected annotation from the PDF document.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid> <syncfusion:SfPdfViewerControl Name="pdfViewer"></syncfusion:SfPdfViewerControl> 
+<Button Content="deleteAnnotationButton" Click="deleteAnnotationButton_clicked” ></Button> </Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+pdfViewer.AnnotationSelected += PdfViewer_AnnotationSelected;
+IAnnotation annotation;
+
+private void PdfViewer_AnnotationSelected(object sender, AnnotationSelectedEventArgs e)
+{
+  // Get the selected annotation      
+  annotation = e.Annotation;
+}
+
+private void deleteAnnotationButton_clicked(object sender, RoutedEventArgs e)
+{
+  //Delete the selected shape annotation
+  pdfViewer.RemoveAnnotation(annotation);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### Remove all annotations
+
+The following code snippet illustrates removing all annotations from the PDF.
+
+{% highlight c# %}
+
+pdfViewer.ClearAllAnnotations();
+
+{% endhighlight %}
