@@ -10,7 +10,7 @@ documentation: ug
 
 # Download UWP Installer
 
-The Syncfusion UWP installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/uwp-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
+The Syncfusion UWP installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/uwp-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 
    -	Trial Installer
    -	Licensed Installer

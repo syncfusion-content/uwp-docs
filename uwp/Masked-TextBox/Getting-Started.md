@@ -131,7 +131,7 @@ maskedEdit.Mask="00/00/0000";
 
 {% endtabs %}
 
-N> [MaskType]([MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html#Syncfusion_UI_Xaml_Controls_Input_SfMaskedEdit_MaskType)) property with `Simple` value allows only numeric inputs in the places of 0.
+N> [MaskType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.MaskType.html) property with `Simple` value allows only numeric inputs in the places of 0.
 
 ## Assigning Value to the control
 
