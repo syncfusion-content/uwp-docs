@@ -11,7 +11,7 @@ documentation: ug
 
 You can refer to the [**Download**](https://help.syncfusion.com/uwp/installation-and-upgrade/download) section to learn how to get the UWP trial or licensed installer.
 
-### Overview
+## Overview
 
 For the Essential Studio UWP product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
@@ -25,7 +25,7 @@ The steps below show how to install Essential Studio UWP Web Installer.
     ![Installer Extraction Wizard](WebInstaller/Step-by-Step-Installation_img1.png)
 
     
-    N> The installer wizard extracts theÂ syncfusionessentialwpfwebinstaller_{version}.exe dialog, which displays the package's unzip operation.
+    N> The installer wizard extracts the syncfusionessentialwpfwebinstaller_{version}.exe dialog, which displays the package's unzip operation.
     
 2. 	The Syncfusion UWP Web Installer's welcome wizard will be displayed. Click the Next button.
 
