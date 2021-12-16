@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows in UWP DataGrid control | Syncfusion
-description: Learn here all about Rows support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about Rows support in Syncfusion UWP DataGrid (SfDataGrid) control, its elements and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -38,7 +38,7 @@ dataGrid.ShowRowHeader = true;
 {% endtabs %}
 
 
-![RowHeader in SfDataGrid](Rows_images/Rows_img1.png)
+![Row Header in UWP DataGrid](Rows_images/Rows_img1.png)
 
 You can change the width of row header by setting `SfDataGrid.RowHeaderWidth` property.
 
@@ -56,7 +56,7 @@ Description
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img2.png"/>
+Current cell in the row in UWP DataGrid<img src="Rows_images/Rows_img2.png"/>
 </td>
 <td>
 Denotes the row which has current cell or has selected item.
@@ -64,7 +64,7 @@ Denotes the row which has current cell or has selected item.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img3.png"/>
+Edited row in UWP DataGrid<img src="Rows_images/Rows_img3.png"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -72,7 +72,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img4.png"/>
+Adding new row in UWP DataGrid<img src="Rows_images/Rows_img4.png"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -80,7 +80,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img5.png"/>
+Rows with errors in UWP DataGrid<img src="Rows_images/Rows_img5.png"/>
 </td>
 <td>
 Denotes the row has errors. 
@@ -88,7 +88,7 @@ Denotes the row has errors.
 </tr>
 <tr>
 <td>
-<img src="Rows_images/Rows_img6.png"/>
+Current rows with errors in UWP DataGrid<img src="Rows_images/Rows_img6.png"/>
 </td>
 <td>
 Denotes that the current row which has errors.
@@ -106,7 +106,7 @@ See also.
 
 Header row is present in top of the SfDataGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![Show the column header in Header row](Rows_images/Rows_img7.png)
+![Show the column header in Header row in UWP DataGrid](Rows_images/Rows_img7.png)
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) property.
 
