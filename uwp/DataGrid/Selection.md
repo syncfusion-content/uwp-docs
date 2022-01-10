@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in UWP DataGrid control | Syncfusion
-description: Learn here all about Selection support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about Selection support in Syncfusion UWP DataGrid (SfDataGrid) control, its elements, features, and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
