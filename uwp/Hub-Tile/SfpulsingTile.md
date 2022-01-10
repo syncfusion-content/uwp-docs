@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SfPulsingTile in UWP Hub Tile control | Syncfusion
-description: Learn here all about SfPulsingTile support in Syncfusion UWP Hub Tile (HubTiles) control and more.
+description: Learn here all about SfPulsingTile support in Syncfusion UWP Hub Tile (HubTiles) control, its elements, features, and more.
 platform: uwp
 control: SfPulsingTile
 documentation: ug
