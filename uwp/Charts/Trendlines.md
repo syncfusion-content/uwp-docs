@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Trendlines in UWP Charts control | Syncfusion
-description: Learn here all about Trendlines support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn here all about Trendlines support in Syncfusion UWP Charts (SfChart) control, its elements, features, and more.
 platform: uwp
 control: SfChart
 documentation: ug

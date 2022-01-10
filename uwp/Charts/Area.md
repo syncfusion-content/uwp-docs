@@ -13,12 +13,12 @@ Chart area represents the entire chart and all its elements. It’s a virtual re
 
 The following are the major properties of chart(SfChart):
 
-* [`PrimaryAxis`](http://help.syncfusion.com/uwp/sfchart/axis) –  Gets or sets the horizontal x axis for the chart.
-* [`SecondaryAxis`](http://help.syncfusion.com/uwp/sfchart/axis) –  Gets or sets the vertical y axis for the chart.
-* [`Legend`](http://help.syncfusion.com/uwp/sfchart/legend) –  Gets or sets the legend for the chart.
-* [`Series`](http://help.syncfusion.com/uwp/sfchart/series) –  Gets or sets the list of series in the chart.
-* [`TechnicalIndicators`](http://help.syncfusion.com/uwp/sfchart/technical-indicators) –  Gets or sets the various financial indicators for the chart.
-* [`Behaviors`](http://help.syncfusion.com/uwp/sfchart/interactive-features)–  Used to add one more interactive features to the chart.
+* [`PrimaryAxis`](https://help.syncfusion.com/uwp/charts/axis) –  Gets or sets the horizontal x axis for the chart.
+* [`SecondaryAxis`](https://help.syncfusion.com/uwp/charts/axis) –  Gets or sets the vertical y axis for the chart.
+* [`Legend`](https://help.syncfusion.com/uwp/charts/legend) –  Gets or sets the legend for the chart.
+* [`Series`](https://help.syncfusion.com/uwp/charts/series) –  Gets or sets the list of series in the chart.
+* [`TechnicalIndicators`](https://help.syncfusion.com/uwp/charts/technical-indicators) –  Gets or sets the various financial indicators for the chart.
+* [`Behaviors`](https://help.syncfusion.com/uwp/charts/interactive-features)–  Used to add one more interactive features to the chart.
 * [`Area`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Area) - Gets the instance of chart.
 
 ## Chart Header
