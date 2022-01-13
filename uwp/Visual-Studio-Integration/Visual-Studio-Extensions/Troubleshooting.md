@@ -19,16 +19,18 @@ Troubleshoot the project with the Syncfusion configuration and apply the fix lik
 
 The following steps help you to utilize the Syncfusion Troubleshooter by Visual Studio. 
 
-> Before use the Syncfusion Troubleshooter for UWP, check whether the **UWP Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+> Before use the Syncfusion Troubleshooter for UWP, check whether the **UWP Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 **Tools -> Extensions and Updates -> Installed**.
 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
    **Option 1:**  
-   Open an existing Syncfusion UWP Application, Click **Syncfusion Menu** and choose **Essential Studio for UWP > Troubleshoot…** in Visual Studio.
+   Open an existing Syncfusion UWP Application, Click **Extensions->Syncfusion Menu** and choose **Essential Studio for UWP > Troubleshoot…** in Visual Studio.
+
+   ![Syncfusion Troubleshooter via Syncfusion menu](SyncfusionTroubleshooter_images/Syncfusion_Menu_Troubleshooter-latest.png)
+
+   N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
 
    ![Syncfusion Troubleshooter via Syncfusion menu](SyncfusionTroubleshooter_images/Syncfusion_Menu_Troubleshooter.png)
-
-   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2:**  
    Right-click the Project file in Solution Explorer, then select the command **Syncfusion Troubleshooter…**
