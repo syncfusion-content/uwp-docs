@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in UWP DataGrid control | Syncfusion
-description: Learn here all about Selection support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about Selection support in Syncfusion UWP DataGrid (SfDataGrid) control, its elements, features, and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -893,7 +893,7 @@ If the [DataGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject)'| markdownify }}, on pressing of Esc key for the second time will cancel the edit mode for entire row.
+If the current cell is in edit mode, reverts the changes that had been done in the current cell. If the underlying source implements the {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-6.0)'| markdownify }}, on pressing of Esc key for the second time will cancel the edit mode for entire row.
 </td>
 </tr>
 <tr>
@@ -1048,7 +1048,7 @@ void dataGrid_CurrentCellActivating(object sender, CurrentCellActivatingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) as true.
+You can cancel the current cell moving process within this event by setting [GridCurrentCellActivatingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-6.0#System_ComponentModel_CancelEventArgs_Cancel) as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -1129,7 +1129,7 @@ void dataGrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can cancel the selection process within this event by setting [GridSelectionChangingEventArgs.Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property as true.
+You can cancel the selection process within this event by setting [GridSelectionChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-6.0#System_ComponentModel_CancelEventArgs_Cancel) property as true.
 
 {% tabs %}
 {% highlight c# %}
@@ -1397,7 +1397,7 @@ public class GridSelectionControllerExt:GridSelectionController
 
 By default, while pressing <kbd>Enter</kbd> key the current cell will be moved to next focused cell in the same column. You can change the behavior by overriding the corresponding selection controllers based on `SelectionUnit`.
 
-You can change the <kbd>Enter</kbd> key behavior by overriding [ProcessKeyDown](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionController.html#Syncfusion_UI_Xaml_Grid_GridSelectionController_ProcessKeyDown_Windows_UI_Xaml_Input_KeyRoutedEventArgs_) method in selection controller. In this method you have to create new [KeyEventArgs](https://msdn.microsoft.com/en-us/library/system.windows.input.keyeventargs) which refers the <kbd>Tab</kbd> key and processes the <kbd>Tab</kbd> key action.
+You can change the <kbd>Enter</kbd> key behavior by overriding [ProcessKeyDown](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionController.html#Syncfusion_UI_Xaml_Grid_GridSelectionController_ProcessKeyDown_Windows_UI_Xaml_Input_KeyRoutedEventArgs_) method in selection controller. In this method you have to create new [KeyEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.keyeventargs?redirectedfrom=MSDN&view=windowsdesktop-6.0) which refers the <kbd>Tab</kbd> key and processes the <kbd>Tab</kbd> key action.
 
 {% tabs %}
 {% highlight c# %}
@@ -1511,7 +1511,7 @@ public class GridSelectionControllerExt:GridSelectionController
 
 ### Selecting the column when clicking header
 
-You can select entire column on clicking column header by handling [MouseLeftButtonUp](https://msdn.microsoft.com/en-us/library/system.windows.uielement.mouseleftbuttonup) event of SfDataGrid. You have to set `SelectionUnit` as `Cell` or `Any` and `SelectionMode` as `Extended` or `Multiple` to achieve this behavior. 
+You can select entire column on clicking column header by handling [MouseLeftButtonUp](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.mouseleftbuttonup?redirectedfrom=MSDN&view=windowsdesktop-6.0) event of SfDataGrid. You have to set `SelectionUnit` as `Cell` or `Any` and `SelectionMode` as `Extended` or `Multiple` to achieve this behavior. 
 
 By default the sorting operation will be performed while clicking on column header where you can disable this action by setting `AllowSorting` as false or [SortClickAction](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortClickAction) as `DoubleClick`.
 
