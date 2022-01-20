@@ -17,6 +17,8 @@ The following assemblies needs to be added for exporting to excel.
 * Syncfusion.SfGridConverter.UWP
 * Syncfusion.XlsIO.UWP
 
+For NuGet package, have to install [Syncfusion.DataGridExcelExport.WPF](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.UWP) package. For more details refer this UG link.
+
 You can export SfDataGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.html) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.html) namespace.
 
 {% tabs %}
