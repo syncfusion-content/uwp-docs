@@ -17,6 +17,8 @@ The following assemblies needs to be added for exporting to excel.
 * Syncfusion.SfGridConverter.UWP
 * Syncfusion.XlsIO.UWP
 
+For NuGet package, install [Syncfusion.DataGridExcelExport.UWP](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.UWP) package. For more details refer this [UG link](https://help.syncfusion.com/uwp/control-dependencies#exporting-datagrid-to-excel-pdf-and-csv).
+
 You can export SfDataGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.html) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.html) namespace.
 
 {% tabs %}
@@ -263,7 +265,7 @@ excelEngine.Dispose();
 
 ### Save using FileSavePicker with MessageDialog
 
-After exporting to excel, you can save exported workbook by opening [MessageDialog](https://msdn.microsoft.com/library/windows/apps/br208674). 
+After exporting to excel, you can save exported workbook by opening [MessageDialog](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups.messagedialog). 
 
 {% tabs %}
 {% highlight c# %}
@@ -307,7 +309,7 @@ excelEngine.Dispose();
 
 ## Opening the saved excel file
 
-You can open the saved workbook using [FileOpenPicker](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.pickers.fileopenpicker.aspx).
+You can open the saved workbook using [FileOpenPicker](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker).
  
 {% tabs %}
 {% highlight c# %}
@@ -757,7 +759,7 @@ By default, `DetailsViewDataGrid` will be exported to Excel. You can customize i
 
 ### Excluding DetailsViewDataGrid while exporting
 
-You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx).
+You can exclude particular `DetailsViewDataGrid` while exporting, by using the [ChildExportingEventHandler](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ChildExportingEventHandler) and [GridChildExportingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel).
 
 {% tabs %}
 {% highlight c# %}
