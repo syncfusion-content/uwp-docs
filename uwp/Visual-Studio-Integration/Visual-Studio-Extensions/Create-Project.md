@@ -15,19 +15,25 @@ I> The Syncfusion UWP project templates are available from v15.3.0.26.
 
 Use the following steps to create the Syncfusion UWP project through the Visual Studio Project Template:
 
-> Before use the Syncfusion UWP Project Template, check whether the **UWP Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
+> Before use the Syncfusion UWP Project Template, check whether the **UWP Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 **Tools -> Extensions and Updates -> Installed**.
 
 1. To create a Syncfusion UWP project, follow either one of the options below:
 
    **Option 1:**   
    Click **Syncfusion Menu** and choose **Essential Studio for UWP > Create New Syncfusion Project…** in **Visual Studio**.
    
+   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog via Syncfusion menu](Syncfusion-Project-Templates_images/Syncfusion_Menu_ProjectTemplate-latest.png)
+
+   N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
+
    ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog via Syncfusion menu](Syncfusion-Project-Templates_images/Syncfusion_Menu_ProjectTemplate.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
-
    **Option 2:**  
-   Choose **File > New > Project** and navigate to **Syncfusion > Windows Universal > Syncfusion Universal Windows Application** in **Visual Studio**.
+   Choose **File -> New -> Project**. Opens a new dialog to create a new project. By filtering the project type with Syncfusion or using the **Syncfusion** keyword in the search option, you can get the templates offered by Syncfusion for UWP.
+
+   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img1-latest.png)
+
+   N> In Visual Studio 2017, Choose File > New > Project and navigate to Syncfusion > Windows Universal > Syncfusion Universal Windows Application.
 
    ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img1.jpeg)
 
@@ -39,7 +45,7 @@ Use the following steps to create the Syncfusion UWP project through the Visual 
 
    **Language:** Select the language, either Visual C# or Visual Basic.
 
-   **Reference Type:** Select the reference type of UWP Project, either Assemblies or SDK.
+   **Reference Type:** Select the reference type of UWP Project, NuGet, Assemblies, or SDK.
 
    **Target Version:** Choose the Target Version of the UWP platform that your project is targeting. This sets the **TargetPlatformVersion** setting in your project file.
 
