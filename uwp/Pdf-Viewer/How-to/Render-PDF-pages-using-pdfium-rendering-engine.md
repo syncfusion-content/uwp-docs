@@ -223,3 +223,11 @@ Set the `Renderer` property to a new instance of the class created above. If the
 
 {% endhighlight %}
 {% endtabs %}
+
+### Demo sample
+
+The sample that illustrates loading a PDF using the Pdfium renderer can be downloaded from the link below. 
+  
+https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfiumRenderer-36218231.zip 
+
+N> Please ensure that the proper file path for the pdfium.dll assembly is provided in the Initialize() method of the CustomerPdfRenderer class before running the application. Also make sure that you are  using the appropriate pdfium.dll assembly with respect to their architecture (x86 or x64).
