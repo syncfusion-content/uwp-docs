@@ -1209,6 +1209,48 @@ Syncfusion.SfInput.UWP
 </tr>
 </table>
 
+## SfTreeGrid
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGrid.UWP <br/>
+Syncfusion.Data.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfShared.UWP
+</td>
+<td> 
+Syncfusion.SfGrid.UWP
+</td>
+</tr>
+</table>
+
+### Exporting TreeGrid to Excel, PDF and CSV
+
+For exporting TreeGrid to excel, pdf or csv, the following references need to be added in your application.
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGridConverter.UWP <br/>
+Syncfusion.XlsIO.UWP <br/>
+Syncfusion.Pdf.UWP
+</td>
+<td> 
+Syncfusion.DataGridExcelExport.UWP
+</td>
+</tr>
+</table>
+
+
 ## SfTreeMap
 
 <table>
