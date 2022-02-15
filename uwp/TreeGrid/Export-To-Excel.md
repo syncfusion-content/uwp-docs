@@ -301,7 +301,7 @@ excelEngine.Dispose();
 
 ### Save Excel using FileSavePicker with MessageDialog
 
-After exporting to Excel, you can save the exported workbook by opening the [MessageDialog](https://msdn.microsoft.com/library/windows/apps/br208674).
+After exporting to Excel, you can save the exported workbook by opening the [MessageDialog](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups.messagedialog?view=winrt-22000).
 
 {% tabs %}
 {% highlight c# %}
@@ -345,7 +345,7 @@ excelEngine.Dispose();
 
 ## Open the saved Excel file
 
-You can open the saved workbook using [FileOpenPicker](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.pickers.fileopenpicker.aspx).
+You can open the saved workbook using [FileOpenPicker](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker?view=winrt-22000).
 
 {% tabs %}
 {% highlight c# %}
