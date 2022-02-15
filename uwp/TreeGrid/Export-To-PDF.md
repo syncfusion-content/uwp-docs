@@ -237,7 +237,7 @@ document.Close();
 
 ### Save PDF using file dialog
 
-After exporting to PDF, you can save the exported PDF file by opening [FileDialog](https://msdn.microsoft.com/en-us/library/system.windows.forms.filedialog.aspx).
+After exporting to PDF, you can save the exported PDF file by opening [FileSavePicker](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.filesavepicker?view=winrt-22000).
 
 {% tabs %}
 {% highlight c# %}
