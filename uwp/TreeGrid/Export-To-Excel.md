@@ -16,6 +16,8 @@ The following assemblies should be added for exporting a tree grid to Excel:-
 * Syncfusion.SfGridConverter.UWP
 * Syncfusion.XlsIO.UWP
 
+For NuGet package, install [Syncfusion.DataGridExcelExport.UWP](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.UWP) package. For more details refer this [UG link](https://help.syncfusion.com/uwp/control-dependencies#exporting-treegrid-to-excel-pdf-and-csv).
+
 You can export the tree grid to Excel by using the [ExportToExcel](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.Converter.TreeGridExcelExportExtension.html#Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportExtension_ExportToExcel_Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Syncfusion_UI_Xaml_TreeGrid_Converter_TreeGridExcelExportingOptions_) extension method present in [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.Converter.html) namespace.
 
 {% tabs %}
@@ -299,7 +301,7 @@ excelEngine.Dispose();
 
 ### Save Excel using FileSavePicker with MessageDialog
 
-After exporting to Excel, you can save the exported workbook by opening the [MessageDialog](https://msdn.microsoft.com/library/windows/apps/br208674).
+After exporting to Excel, you can save the exported workbook by opening the [MessageDialog](https://docs.microsoft.com/en-us/uwp/api/windows.ui.popups.messagedialog?view=winrt-22000).
 
 {% tabs %}
 {% highlight c# %}
@@ -343,7 +345,7 @@ excelEngine.Dispose();
 
 ## Open the saved Excel file
 
-You can open the saved workbook using [FileOpenPicker](https://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.pickers.fileopenpicker.aspx).
+You can open the saved workbook using [FileOpenPicker](https://docs.microsoft.com/en-us/uwp/api/windows.storage.pickers.fileopenpicker?view=winrt-22000).
 
 {% tabs %}
 {% highlight c# %}
