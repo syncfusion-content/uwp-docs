@@ -37,8 +37,6 @@ Closed event will be raised when the DrawerContentView is closed in NavigationDr
 	
 {% endhighlight %}
 
-# Events and Methods in UWP Navigation Drawer (SfNavigationDrawer)
-
 ## Toggle Drawer
 
 Represents the opening and closing of the navigation drawer
