@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in UWP Map control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion UWP Map (SfMaps) control and more.
+description: Learn here all about Data Binding support in Syncfusion Essential UWP Map (SfMaps) control, its elements, and more.
 platform: UWP
 control: SfMaps
 documentation: ug
@@ -15,7 +15,7 @@ The following properties expose data binding in the Maps control:
 * `ShapeIDPath`
 * `ShapeIDTableField`
 
-### Items Source
+## Items Source
 
 This is the basic property that exposes data binding for Maps. `ItemsSource` is the property that accepts the collection type values. For example, the ItemsSource property accepts the `ObservableCollections`, `Lists`, and `Linq` result values.
 
