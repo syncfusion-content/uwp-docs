@@ -291,13 +291,13 @@ When the <code>DateTime</code> type value is bound to the {{'[GridColumn](https:
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/Filtering_img5.png" />
+<img src="Filtering_images/Filtering_img5.png" alt="UWP DataGrid with Checkbox Filter View" />
 </td>
 <td>
-<img src="Filtering_images/Filtering_img6.png" />
+<img src="Filtering_images/Filtering_img6.png" alt="UWP DataGrid Text filters" />
 </td>
 <td>
-<img src="Filtering_images/Filtering_img7.png" />
+<img src="Filtering_images/Filtering_img7.png" alt="UWP DataGrid with Advanced Filter View" />
 </td>
 </tr>
 <tr>
