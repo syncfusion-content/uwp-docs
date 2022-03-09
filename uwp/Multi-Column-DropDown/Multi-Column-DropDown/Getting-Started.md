@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with WPF Multi Column Dropdown control | Syncfusion
+title: Getting Started with UWP Multi Column Dropdown control | Syncfusion
 description: Learn here about getting started with Syncfusion UWP Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
 platform: uwp
 control: SfMultiColumnDropDownControl
@@ -56,7 +56,7 @@ Syncfusion.SfGrid.UPF assembly contains classes that handles all UI operations o
 
 ## Creating simple application with SfMultiColumnDropDownControl
 
-In this walk through, you will create WPF application that contains `SfMultiColumnDropDownControl`. 
+In this walk through, you will create UWP application that contains `SfMultiColumnDropDownControl`. 
 
 1. [Creating project](#Creating-the-project)
 2. [Adding control manually in XAML](#Adding-control-manually-in-xaml)
@@ -69,7 +69,7 @@ In this walk through, you will create WPF application that contains `SfMultiColu
 
 ### Creating the project
 
-Create new WPF Project in Visual Studio to display SfMultiColumnDropDownControl with data objects.
+Create new UWP Project in Visual Studio to display SfMultiColumnDropDownControl with data objects.
 
 
 ### Adding control manually in XAML
@@ -115,7 +115,7 @@ In order to add the control manually in C#, do the below steps,
 {% highlight c# %}
 using Syncfusion.UI.Xaml.Grid;
 
-namespace WpfApplication1
+namespace Application1
 {
 
     public partial class MainWindow : Window
