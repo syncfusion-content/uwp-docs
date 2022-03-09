@@ -26,33 +26,10 @@ You can [refer here](https://help.syncfusion.com/uwp/datagrid/getting-started) t
 
 The following list of assemblies needs to be added as reference to use `SfMultiColumnDropDownControl` control in any application,
 
-<table>
-<tr>
-<th>
-Required assemblies
-</th>
-<th>
-Description
-</th>
-</tr>
-<tr>
-<td>
-Syncfusion.Data.UWP
-</td>
-<td>
-Syncfusion.Data.UWP assembly contains fundamental and base classes for CollectionViewAdv which is responsible for data processing operations handled in SfDataGrid.
-</td>
-</tr>
-<tr>
-<td>
-Syncfusion.SfGrid.UWP
-</td>
-<td>
-Syncfusion.SfGrid.UPF assembly contains classes that handles all UI operations of SfMultiColumnDropDownControl, DropDownGrid. SfMultiColumnDropDownControl control present in Syncfusion.UI.Xaml.Grid namespace. 
-</td>
-</tr>
-</table>
-
+    * Syncfusion.Data.UWP
+    * Syncfusion.SfGrid.UWP
+    * Syncfusion.SfInput.UWP
+    * Syncfusion.SfShared.UWP 
 
 ## Creating simple application with SfMultiColumnDropDownControl
 
@@ -79,6 +56,8 @@ In order to add control manually in XAML, do the below steps,
 1. Add the below required assembly references to the project,
     * Syncfusion.Data.UWP
     * Syncfusion.SfGrid.UWP
+    * Syncfusion.SfInput.UWP
+    * Syncfusion.SfShared.UWP 
 2. SfMultiColumnDropDownControl namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 3. Declare `SfMultiColumnDropDownControl` in XAML page.
 
@@ -108,6 +87,8 @@ In order to add the control manually in C#, do the below steps,
 1. Add the below required assembly references to the project,
     * Syncfusion.Data.UWP
     * Syncfusion.SfGrid.UWP
+    * Syncfusion.SfInput.UWP
+    * Syncfusion.SfShared.UWP  
 2. Import SfMultiColumnDropDownControl namespace Syncfusion.UI.Xaml.Grid.
 3. Create `SfMultiColumnDropDownControl` instance and add it to the Page.
 
@@ -263,7 +244,7 @@ ViewModel viewModel = new ViewModel();
 sfMultiColumn.ItemsSource = viewModel.Orders;
 {% endhighlight %}
 {% endtabs %}
-![MultiColumnDropDown - Getting Started](Getting-Started_images/Getting-Started_img3.png)
+![MultiColumnDropDown - Getting Started](Getting-Started_images/Getting-Started_img2.png)
 
 ## Defining DisplayMember and ValueMember
 
@@ -302,4 +283,4 @@ sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
 ## Editing and filtering 
 
 SfMultiColumnDropDownControl provides support to auto append the text from `ItemsSource` when end-user edits in the TextBox by setting [AllowAutoComplete](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowAutoComplete) to `true`. 
-Also, it provides support to filter the items displayed in the drop-down based on text in the TextBox by setting[AllowIncrementalFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) to `true`. 
+Also, it provides support to filter the items displayed in the drop-down based on text in the TextBox by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) to `true`. 
