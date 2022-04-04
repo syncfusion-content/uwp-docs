@@ -9,7 +9,10 @@ documentation: ug
 
 # Installation using Web Installer
 
-You can refer to the [**Download**](https://help.syncfusion.com/uwp/installation-and-upgrade/download) section to learn how to get the UWP trial or licensed installer.
+You can refer to the [**Download**](https://help.syncfusion.com/uwp/installation-and-upgrade/download) section to learn how to get the UWP installer.
+
+I> Starting with 2022 Volume 1 v20.1.0.47, all Syncfusion customers (evaluators and paid customers) who use Syncfusion installers or nuget packages from [nuget.org](https://www.nuget.org/packages?q=Syncfusion) must generate and register the corresponding platform and version license key in your projects.<br>
+For more information, please see [this](https://help.syncfusion.com/uwp/licensing/licensing) help topic.
 
 ## Overview
 
@@ -88,9 +91,7 @@ The steps below show how to install Essential Studio UWP Web Installer.
 
 9.  The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button. 
 
-    ![Login wizard install](WebInstaller/Step-by-Step-Installation_img9.png)
-	
-	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
+    ![Login wizard install](WebInstaller/Step-by-Step-Installation_img9.png)	
 
 10. The download and installation\uninstallation progress will be displayed as shown below.
 
@@ -172,9 +173,7 @@ N> If the **Syncfusion Essential Studio for UWP {version}** entry is selected fr
 
 7.	The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
-    ![Login wizard install/uninstall](WebInstaller/Step-by-Step-Installation_img9.png)
-	
-	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
+    ![Login wizard install/uninstall](WebInstaller/Step-by-Step-Installation_img9.png)	
 
 8.	The download, installation, and uninstallation progresses will be shown.
 
