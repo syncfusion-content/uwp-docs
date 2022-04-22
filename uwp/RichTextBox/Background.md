@@ -7,7 +7,7 @@ documentation: ug
 keywords: background
 ---
 
-## Setting Background for RichTextBox
+# Setting Background for RichTextBox
 The RichTextBox control allows you to change background color of the control. A background of a control is represented by `Background` property of `SfRichTextBoxAdv` class. The default value of this property is black.
 
 The following code illustrates how to apply color as background to the document.
@@ -48,7 +48,7 @@ Block layout
 The block layout always inherits the control background color.
 ![Bolck layout](Image_images/Control_background_block.PNG)
 
-### How to override the document background in continuous layout type?
+## How to override the document background in continuous layout type?
 By default, the document background properties will be applied when the `LayoutType` is continuous. You can suppress the document background and apply the control background by setting `OverridesDocumentBackground` property to true. The default value of this property is false.
 
 N> This property is valid only when the `LayoutType` is continuous.
@@ -92,7 +92,7 @@ Continuous layout:
 ![Continuous layout](Image_images/continous_layout.PNG)
 
 
-## Setting Background for Document Pages
+### Setting Background for Document Pages
 
 The RichTextBox control allows you to change background color of the document pages. A background of a document is represented by `Background` property of `DocumentAdv` class. The default value of this property is white.
 
