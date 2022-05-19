@@ -20,7 +20,7 @@ The Syncfusion UWP web installer can be downloaded from the [Syncfusion.com](htt
 Our 30-day trial can be downloaded in two ways.
 
    * Download Free Trial Setup
-   * Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
+   * Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 ### Download Free Trial Setup
 
@@ -37,7 +37,7 @@ Our 30-day trial can be downloaded in two ways.
    ![Trial and downloads of Syncfusion Essential Studio](images/trial-download.png)
 
 
-### Start Trials if using components through [Nuget.org](https://www.nuget.org/packages?q=syncfusion)
+### Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 You should initiate an evaluation if you have already obtained our components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
@@ -52,7 +52,7 @@ You should initiate an evaluation if you have already obtained our components th
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
-4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) key here at any time before the trial period expires. (as shown in below screenshot.)
+4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/uwp/licensing/generating-license-keys) here at any time before the trial period expires. (as shown in below screenshot.)
 
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-installer.png)
 
@@ -64,11 +64,18 @@ You should initiate an evaluation if you have already obtained our components th
 1. Syncfusion licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion account.
 2. You can view all the licenses (both active and expired) associated with your account.
 3. Click the Download (element 1 in the screenshot below) button to download the UWP web installer.
-   
+4. The most recent version of the installer will be downloaded from this page.
+5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
+6. You can download other platform\add-on installers by going to More Downloads Option (element 3 in the screenshot below).
+
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
    
-4. For Windows OS, EXE and Zip formats are available for download. They are both Offline Installers.
+7. Before the license expires, you can download the installer at any time from your registered account’s [License & Downloads](https://www.syncfusion.com/account/downloads) page (See the screenshot below.)
    
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
+   
+8. After downloading, the Syncfusion UWP web installer can be unlocked using Syncfusion registered login credential.
+
+   N> For Syncfusion trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion trial or licensed products will be installed via web installer.
 
 You can also refer to the [**web installer**](https://help.syncfusion.com/uwp/installation-and-upgrade/install-using-the-web-installer) links for step-by-step installation guidelines.	
