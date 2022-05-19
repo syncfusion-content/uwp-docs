@@ -56,7 +56,7 @@ Description
 </tr>
 <tr>
 <td>
-Current cell in the row in UWP DataGrid<img src="Rows_images/Rows_img2.png"/>
+Current cell in the row in UWP DataGrid<img src="Rows_images/Rows_img2.png" alt="UWP DataGrid Current cell"/>
 </td>
 <td>
 Denotes the row which has current cell or has selected item.
@@ -64,7 +64,7 @@ Denotes the row which has current cell or has selected item.
 </tr>
 <tr>
 <td>
-Edited row in UWP DataGrid<img src="Rows_images/Rows_img3.png"/>
+Edited row in UWP DataGrid<img src="Rows_images/Rows_img3.png" alt="UWP DataGrid Edited row"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -72,7 +72,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-Adding new row in UWP DataGrid<img src="Rows_images/Rows_img4.png"/>
+Adding new row in UWP DataGrid<img src="Rows_images/Rows_img4.png" alt="UWP DataGrid AddNewRow"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -80,7 +80,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-Rows with errors in UWP DataGrid<img src="Rows_images/Rows_img5.png"/>
+Rows with errors in UWP DataGrid<img src="Rows_images/Rows_img5.png" alt="UWP DataGrid Rows with errors"/>
 </td>
 <td>
 Denotes the row has errors. 
@@ -88,7 +88,7 @@ Denotes the row has errors.
 </tr>
 <tr>
 <td>
-Current rows with errors in UWP DataGrid<img src="Rows_images/Rows_img6.png"/>
+Current rows with errors in UWP DataGrid<img src="Rows_images/Rows_img6.png" alt="UWP DataGrid Current rows"/>
 </td>
 <td>
 Denotes that the current row which has errors.
