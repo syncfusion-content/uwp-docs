@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotations in UWP Map control | Syncfusion
-description: Learn here all about Annotations support in Syncfusion UWP Map (SfMaps) control and more.
+description: Learn here all about Annotations support in Syncfusion Essential UWP Map (SfMaps) control, its elements, and more.
 platform: UWP
 control: SfMaps
 documentation: ug
