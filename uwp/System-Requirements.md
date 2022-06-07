@@ -1,15 +1,15 @@
 ---
 layout: post
-title: System Requirements | UWP | Syncfusion
-description: this section provides the information about the system requirements for UWP platform with supported browsers
+title: System Requirements in UWP - Syncfusion
+description: Checkout and learn here all about the system requirements needed to use the Syncfusion UWP Components.
 platform: uwp
 control: System Requirement
 documentation: ug
 ---
 
-# System Requirement for UWP
+# System Requirements for UWP Components
 
-The system requirements for using our Syncfusion UWP platform are as follows
+This section describes the system requirements of Syncfusion UWP Controls for development.
 
 ## Framework
 
@@ -29,4 +29,3 @@ The following IDEs can be used for development that are [compatible](https://www
 
 * Microsoft Visual Studio 2015/2017/2019/2022
 * Windows 10 SDK
-
