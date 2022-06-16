@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series in UWP Smith Chart control | Syncfusion
-description: Learn here all about Series support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
+description: Learn here all about the Series support in the Syncfusion UWP Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: series
 documentation: ug
@@ -149,7 +149,7 @@ chart.Series.Add(series2);
 
 The property *ArrangeByIndex* value is indicating whether to render the data based on the provided index order. the data points are 
 rendered based on the provided index when it is true otherwise, the data points are rendered by sorting based on its resistance value. 
-This property's default value is false.
+The default value is false.
 
 {% tabs %}
 
