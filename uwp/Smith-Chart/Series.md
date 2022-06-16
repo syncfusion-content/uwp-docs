@@ -147,9 +147,9 @@ chart.Series.Add(series2);
 
 ## Customizing Series Data
 
-The property of *ArrangeByIndex* value is indicating whether to render the data based on the provided index order. the data points are 
-rendered based on the provided index when it is true otherwise, the data points are rendered by shorting based on its resistance value. 
-The default value is false.
+The property *ArrangeByIndex* value is indicating whether to render the data based on the provided index order. the data points are 
+rendered based on the provided index when it is true otherwise, the data points are rendered by sorting based on its resistance value. 
+This property's default value is false.
 
 {% tabs %}
 
