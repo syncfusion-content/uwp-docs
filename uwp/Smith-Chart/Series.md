@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Series in UWP Smith Chart control | Syncfusion
-description: Learn here all about Series support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
+description: Learn here all about the Series support in the Syncfusion UWP Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: series
 documentation: ug
@@ -147,7 +147,7 @@ chart.Series.Add(series2);
 
 ## Customizing data plotting
 
-By default, the data points are plotted by sorting them based on the resistance values and it can be plotted based on their index value as it is by setting the [`ArrangeByIndex`]()property as true.
+By default, the data points are plotted by sorting them based on the resistance values and it can be plotted based on their index value as it is by setting the [`ArrangeByIndex`]() property as true.
 
 {% tabs %}
 
