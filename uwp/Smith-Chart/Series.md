@@ -145,7 +145,7 @@ chart.Series.Add(series2);
 
 ![SfSmithChart Series Visibility](Series_images/Series_img3.png)
 
-## Customizing data plotting
+## Data plotting customization
 
 By default, the data points are plotted by sorting them based on the resistance values and they can be plotted based on their index value as it is by setting the [`ArrangeByIndex`]() property as true.
 
@@ -169,4 +169,4 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Customizing Series Data](Series_images/SmithChartUWP_ArrangeByIndex.png)
+![Series data plotting customization](Series_images/SmithChartUWP_ArrangeByIndex.png)
