@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-## Adding custom view
+# Adding custom view UWP Image Editor
 
  You can add any custom shape or view to an image using the `AddCustomView` method in the image editor
  control. To add a custom view, specify the view and its desired `CustomViewSettings` as demonstrated in the 
