@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in UWP Kanban Board control | Syncfusion
-description: Learn here all about Events support in Syncfusion UWP Kanban Board (SfKanban) control and more.
+description: Learn here all about Events support in Syncfusion Essential UWP Kanban Board (SfKanban) control, its elements, and more.
 platform: uwp
 control: SfKanban
 documentation: ug
