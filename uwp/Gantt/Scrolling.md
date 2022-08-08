@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Scrolling in UWP Gantt control | Syncfusion
+description: Learn here about Scrolling support in Syncfusion Essential UWP Gantt Control, its elements, and more.
 platform: uwp
 control: SfGantt
 documentation: ug
