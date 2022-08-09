@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataSource in UWP Diagram control | Syncfusion
-description: Learn here all about DataSource support in Syncfusion UWP Diagram (SfDiagram) control and more.
+description: Learn here all about DataSource settings support and its declaration in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
@@ -62,7 +62,7 @@ To explore those properties, see [DataSourceSettings](https://help.syncfusion.co
 
 For more information about Node, Connector and Business Class[Employee] , Please refer the below sample.
 
-Sample Link : [DataSource Sample](http://www.syncfusion.com/downloads/support/directtrac/215122/ze/Data_Source_Settings653993591)
+Sample Link : [DataSource Sample](https://github.com/SyncfusionExamples/UWP-Diagram-Examples/tree/main/Samples/DataSource)
 
 ![DataSource](DataSource_images/DataSource_img1.png)
 
