@@ -391,17 +391,17 @@ sfCircularGauge.Scales.Add(scale);
 The `RangePointer` can be placed inside or outside the scale by the following two ways:
 1.	Using the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) property.
 
-You can place the range pointer by selecting one of the options available in the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) property. 
+    You can place the range pointer by selecting one of the options available in the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) property. 
 
-They are:
+    They are:
 
-1.	Inside (Default)
+        1.	Inside (Default)
 
-2.	Outside
+        2.	Outside
 
-3.	Cross
+        3.	Cross
 
-4.	Custom
+        4.	Custom
 
 {% tabs %}
 
@@ -455,6 +455,8 @@ sfCircularGauge.Scales.Add(scale);
 
 2.	Using the [`RangePointerOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerOffset) property. First, set the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) to custom, and then set the [`RangePointerOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerOffset) property.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xml %}
@@ -502,6 +504,10 @@ sfCircularGauge.Scales.Add(scale);
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 ![Range pointer customization](Pointers_images/Pointers_img9.png)
 

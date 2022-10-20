@@ -68,6 +68,8 @@ SfTreeMap is a data-bound control. Hence you have to create a data model to bind
 
 1.Create data object class and declare properties as shown below 
 
+{% capture codesnippet1 %}
+
 {% highlight c# %}
       
             public class PopulationDetail
@@ -80,7 +82,13 @@ SfTreeMap is a data-bound control. Hence you have to create a data model to bind
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
+
 2.Create a ViewModel class and assign data values to the PopulationDetail properties
+
+{% capture codesnippet2 %}
 
 {% highlight c# %}
 
@@ -114,9 +122,14 @@ SfTreeMap is a data-bound control. Hence you have to create a data model to bind
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
+
 ### Populating data to the TreeMap
 
 1.Setting DataContext to the MainWindow
+{% capture codesnippet3 %}
 
 {% highlight c# %}
 
@@ -131,8 +144,14 @@ SfTreeMap is a data-bound control. Hence you have to create a data model to bind
 
  {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet3 | OrderList_Indent_Level_1 }} 
 
 2.Assigning ItemsSource to the TreeMap control
+
+
+{% capture codesnippet4 %}
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,7 +179,12 @@ SfTreeMap is a data-bound control. Hence you have to create a data model to bind
     </Page>
 
 {% endhighlight %}
+
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet4 | OrderList_Indent_Level_1 }} 
 
 3.Sizing TreeMapItem by using WeightValuePath  
 

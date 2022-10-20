@@ -63,6 +63,8 @@ N> You can find these libraries under the following location.
 
 2. After adding the required reference, add the following namespace in the *MainPage.xaml* file.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -73,7 +75,13 @@ xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
+
 3. Then, add the SfPivotGauge control to the grid by using the namespace specified in the following code snippet.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -97,6 +105,10 @@ xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ### Adding control through code-behind
 
@@ -123,6 +135,8 @@ YN> You can find these libraries under the following location.
 
 2. After adding the required reference, open the *MainPage.xaml* file and name the grid "RootGrid" to refer to it in the code-behind.
 
+{% capture codesnippet3 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -145,7 +159,13 @@ YN> You can find these libraries under the following location.
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet3 | OrderList_Indent_Level_1 }} 
+
 3. Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGauge". Then, initialize the SfPivotGauge control in the constructor and add it to the grid as illustrated below.
+
+{% capture codesnippet4 %}
 
 {% tabs %}
 
@@ -194,6 +214,10 @@ End Namespace
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet4 | OrderList_Indent_Level_1 }} 
 
 ## Adding service reference to project
 
@@ -587,8 +611,8 @@ Finally, run the application to generate the following output.
 
 3. Right-click the project in the solution explorer and select **Add > Reference...** to add the required assemblies. Then, click **Browse** to select the following assemblies from the installed location and click **OK**.
 
-* Syncfusion.Olap.Base.dll
-* Syncfusion.OlapUWP.BaseWrapper.dll
+    * Syncfusion.Olap.Base.dll
+    * Syncfusion.OlapUWP.BaseWrapper.dll
 
 N> You can find these libraries under the following location.
 &lt;Installed Drive&gt;:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version&gt;\Assemblies\4.6\

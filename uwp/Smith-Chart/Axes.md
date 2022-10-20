@@ -518,6 +518,7 @@ chart.RadialAxis.LabelIntersectAction = LabelIntersectActions.None;
 ## Events
 
 * `LabelCreated`– Occurs when the label is created.
+{% capture codesnippet1 %}
 
 {% highlight C# %} 
 
@@ -538,5 +539,9 @@ chart.RadialAxis.LabelCreated += RadialAxis_LabelCreated;
   }
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 ![SfSmithChart LabelCreated](Axes_images/Axes_img17.png)
