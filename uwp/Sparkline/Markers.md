@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markers in UWP Sparkline control | Syncfusion
-description: Learn here all about Markers support in Syncfusion UWP Sparkline (SfSparkline) control and more.
+description: Learn here all about Markers support in Syncfusion Universal Windows Sparkline (SfSparkline) control and more.
 platform: uwp
 control: SfSparkline
 documentation: ug

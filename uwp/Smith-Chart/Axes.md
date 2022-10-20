@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Axes in UWP Smith Chart control | Syncfusion
-description: Learn here all about Axes support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
+description: Learn here all about Axes support in Syncfusion Universal Windows Smith Chart (SfSmithChart) control and more.
 platform: uwp
 control: SfSmithChart
 documentation: ug
