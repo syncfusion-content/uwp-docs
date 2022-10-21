@@ -40,6 +40,8 @@ The `ToggleCropping` method in the SfImageEditor control is used to enable and d
 
 *	To crop the image to any desired size.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight C# %}
@@ -52,7 +54,13 @@ imageEditor.ToggleCropping();
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * To crop an image based on original width and height of the image.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -66,7 +74,13 @@ imageEditor.ToggleCropping(float.NaN,float.NaN);
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
+
 * To crop an image as square dimension.
+
+{% capture codesnippet3 %}
 
 {% tabs %}
 
@@ -80,7 +94,13 @@ imageEditor.ToggleCropping(1, 1);
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet3 | UnOrderList_Indent_Level_1 }} 
+
 * To crop an image based on specific ratio.
+
+{% capture codesnippet4 %}
 
 {% tabs %}
 
@@ -94,8 +114,14 @@ imageEditor.ToggleCropping(9,17);
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet4 | UnOrderList_Indent_Level_1 }} 
+
 * To position the cropping window with custom location, pass the desired rectangle in ToggleCropping method. Each value in the rectangle should be in offset value(0 to 100).
 
+{% capture codesnippet5 %}
+ 
 {% tabs %}
 
 {% highlight C# %}
@@ -107,6 +133,10 @@ editor.ToggleCropping(rect);
 {% endhighlight %}
 
 {% endtabs %} 
+
+{% endcapture %}
+
+{{ codesnippet5 | UnOrderList_Indent_Level_1 }}
 
 ![crop window output image in SfImageEditor](crop_images/cropaspectUWP.JPG)
 

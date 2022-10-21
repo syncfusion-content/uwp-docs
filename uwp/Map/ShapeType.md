@@ -207,6 +207,8 @@ A circle  has a single Geo coordinate value and it can be positioned on map usin
 
 * [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapCircle.html#Syncfusion_UI_Xaml_Maps_MapCircle_Center) - Holds latitude and longitude values that defines the center of the circle.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 {% highlight xaml %}          
     
@@ -282,6 +284,10 @@ A circle  has a single Geo coordinate value and it can be positioned on map usin
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 ![Multi shapes in single layer support in UWP Maps](Shape-Types/PointIconShape.png)
 

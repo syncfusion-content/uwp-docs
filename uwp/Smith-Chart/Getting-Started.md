@@ -58,9 +58,15 @@ XX.X450.0.X
 
 4. Add the following namespace in your XAML window.
 
+{% capture codesnippet1 %}
+
 {% highlight xaml %}
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.SmithChart" 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 
 

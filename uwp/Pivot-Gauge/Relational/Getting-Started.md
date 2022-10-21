@@ -64,6 +64,8 @@ N> You can find these libraries under the following location.
 
 2. After adding the required reference, add the following namespace to the *MainPage.xaml* file.
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -74,7 +76,13 @@ xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | OrderList_Indent_Level_1 }} 
+
 3. Then, add the SfPivotGauge control to the grid by using the namespace specified in the following code snippet.
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -98,6 +106,10 @@ xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ### Adding control through code-behind
 
@@ -125,6 +137,8 @@ N> You can find these libraries under the following location.
 
 2. After adding the required reference, open the *MainPage.xaml* file and name the grid "RootGrid" to refer to it in the code-behind.
 
+{% capture codesnippet3 %}
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -146,9 +160,15 @@ N> You can find these libraries under the following location.
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet3 | OrderList_Indent_Level_1 }} 
+
 3. Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGauge". 
 
 4. Then, initialize the SfPivotGauge control in the constructor and add it to the grid as illustrated below.
+
+{% capture codesnippet4 %}
 
 {% tabs %}
 
@@ -196,6 +216,10 @@ End Namespace
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet4 | OrderList_Indent_Level_1 }} 
 
 ## Binding relational data to SfPivotGauge control
 
