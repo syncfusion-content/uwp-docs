@@ -403,6 +403,8 @@ They are:
 
         4.	Custom
 
+{% capture codesnippet1 %} 
+ 
 {% tabs %}
 
 {% highlight xml %}
@@ -450,12 +452,16 @@ sfCircularGauge.Scales.Add(scale);
 {% endhighlight %}
 
 {% endtabs %}
+ 
+{% endcapture %} 
+
+{{ codesnippet1 | OrderList_Indent_Level_2 }}  
 
 ![Range pointer customization](Pointers_images/Pointers_img8.png)
 
 2.	Using the [`RangePointerOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerOffset) property. First, set the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) to custom, and then set the [`RangePointerOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerOffset) property.
 
-{% capture codesnippet1 %}
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -507,7 +513,7 @@ sfCircularGauge.Scales.Add(scale);
 
 {% endcapture %}
 
-{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ![Range pointer customization](Pointers_images/Pointers_img9.png)
 

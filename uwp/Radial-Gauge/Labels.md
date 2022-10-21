@@ -160,6 +160,8 @@ The `Labels` can be placed inside the scale, outside the scale, or on the scale 
 
         3. Custom
 
+{% capture codesnippet1 %} 
+
 {% tabs %}
 
 {% highlight xml %}
@@ -220,11 +222,15 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endtabs %}
 
+{% endcapture %} 
+
+{{ codesnippet1 | OrderList_Indent_Level_2 }}  
+
 ![Labels_img3](Labels_images/Labels_img3.png)
 
 2. Positioning the labels far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_LabelOffset)  property. First, set the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_LabelPosition)  to custom, and then position the label using the [`LabelOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_LabelOffset)  property.
 
-{% capture codesnippet1 %}
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -290,7 +296,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 {% endcapture %}
 
-{{ codesnippet1 | OrderList_Indent_Level_1 }} 
+{{ codesnippet2 | OrderList_Indent_Level_1 }} 
 
 ![Labels_img4](Labels_images/Labels_img4.png)
 
