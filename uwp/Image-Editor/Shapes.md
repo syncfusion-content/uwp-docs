@@ -43,6 +43,8 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
 
 * To add a rectangle, circle or arrow over the image, specify the ShapeType as well as the desired PenSettings as shown in below code,
 
+{% capture codesnippet1 %}
+
 
 {% highlight C# %}
 
@@ -53,9 +55,15 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
 
 {% endhighlight %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 ![Change StrokWidth of the shape in UWP ImageEditor](shapes_images/annotate.png)
 
 * You can annotate any path on an image by using free hand drawing as shown in the below code,
+
+{% capture codesnippet2 %}
 
 {% highlight C# %}
 
@@ -65,6 +73,10 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
     });
 
 {% endhighlight %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ![Annotate path on an image in UWP ImageEditor](shapes_images/path.png)
 
