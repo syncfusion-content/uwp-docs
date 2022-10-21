@@ -154,11 +154,11 @@ The `Labels` can be placed inside the scale, outside the scale, or on the scale 
 
     They are,
 
-        1.Inside (Default)
+        1. Inside (Default)
 
-        2.Outside
+        2. Outside
 
-        3.Custom
+        3. Custom
 
 {% tabs %}
 

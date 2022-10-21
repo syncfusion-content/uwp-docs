@@ -391,9 +391,9 @@ sfCircularGauge.Scales.Add(scale);
 The `RangePointer` can be placed inside or outside the scale by the following two ways:
 1.	Using the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) property.
 
-    You can place the range pointer by selecting one of the options available in the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) property. 
+You can place the range pointer by selecting one of the options available in the [`RangePointerPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_RangePointerPosition) property. 
 
-    They are:
+They are:
 
         1.	Inside (Default)
 
