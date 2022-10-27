@@ -395,13 +395,13 @@ You can place the range pointer by selecting one of the options available in the
 
 They are:
 
-        1.	Inside (Default)
+1.	Inside (Default)
 
-        2.	Outside
+2.	Outside
 
-        3.	Cross
+3.	Cross
 
-        4.	Custom
+4.	Custom
 
 {% capture codesnippet1 %} 
  
@@ -455,7 +455,7 @@ sfCircularGauge.Scales.Add(scale);
  
 {% endcapture %} 
 
-{{ codesnippet1 | OrderList_Indent_Level_2 }}  
+{{ codesnippet1 | OrderList_Indent_Level_1 }}  
 
 ![Range pointer customization](Pointers_images/Pointers_img8.png)
 
