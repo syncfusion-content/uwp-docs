@@ -152,13 +152,13 @@ The `Labels` can be placed inside the scale, outside the scale, or on the scale 
 
 1. Placing the labels by selecting one of the options available in the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_LabelPosition) property. 
 
-    They are,
+They are,
 
-        1. Inside (Default)
+1.Inside (Default)
 
-        2. Outside
+2.Outside
 
-        3. Custom
+3.Custom
 
 {% capture codesnippet1 %} 
 
