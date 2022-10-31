@@ -51,6 +51,6 @@ For example, you have to give name as **Syncfusion.SfSpellChecker.UWP.Resources.
 ![Localizationimg3](localization-images/Localizationimg3.png)
 
 You can get the SfSpellChecker’s key from default resource  [Syncfusion.SfSpellChecker.UWP.Resources.resw]
-(http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpellChecker.UWP.Resources-1005709407.zip).
+(https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpellChecker.UWP.Resources-1005709407.zip).
 
 ![localizationimg4](localization-images/localizationimg4.png)
