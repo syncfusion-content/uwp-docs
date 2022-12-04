@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ErrorBar in UWP Charts control | Syncfusion
-description: Learn here all about ErrorBar support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn here about how to add proper ErrorBar support to indicate error in reported values of Syncfusion UWP Charts(SfChart) control.
 platform: uwp
 control: SfChart
 documentation: ug
