@@ -73,7 +73,7 @@ The following topics discuss briefly about various adornment customization.
 
 To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property as True. By default, there is no symbol displayed, you have to add the desired symbol using [`Symbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) property.
 
-The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
+The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Diamond) symbol:
 
 {% tabs %}
 
@@ -1179,7 +1179,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 ### Connector Type
 
-[`ConnectorType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
+[`ConnectorType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Line) or [`Bezier`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Bezier). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
 
 **Line**
 
@@ -1256,11 +1256,11 @@ chart.Series.Add(series);
 
 ## Positioning the Adornments
 
-The positioning of adornments inside the series is defined using [`AdornmentPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
+The positioning of adornments inside the series is defined using [`AdornmentsPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
 
-* [`Top`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the top edge point of a chart segment.
-* [`Bottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the bottom edge point of a chart segment.
-* [`TopAndBottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the center point of a chart segment.
+* [`Top`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_Top) - Positions the Adornment at the top edge point of a chart segment.
+* [`Bottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_Bottom) - Positions the Adornment at the bottom edge point of a chart segment.
+* [`TopAndBottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_TopAndBottom) - Positions the Adornment at the center point of a chart segment.
 
 N> This behavior varies based on the type chart series.
 
@@ -1348,11 +1348,11 @@ Other than the above positioning options, SfChart providing additional customiza
 
 The following are the values for this property: 
 
-* [`Default`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Inner`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Outer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Default`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Default)
+* [`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Auto)
+* [`Inner`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Inner)
+* [`Outer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Outer)
+* [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Center)
 
 The following section shows few examples for this LabelPosition behavior with respect to the series.
 

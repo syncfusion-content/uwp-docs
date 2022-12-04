@@ -12,14 +12,14 @@ documentation: ug
 
 The following annotations are supported in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html)
 
-* [Text Annotation](#Text_Annotation)
-* [Shape Annotation](#Shape_Annotation)
-* [Image Annotation](#Image_Annotation)
+* [Text Annotation](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TextAnnotation.html)
+* [Shape Annotation](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html)
+* [Image Annotation](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html)
 
 ## Adding Annotation
 
 
-You can create an instance for any type of Annotation and add it to [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AnnotationCollection.html) collection. Here for instance, the [`EllipseAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.EllipseAnnotation.html) is added.
+You can create an instance for any type of Annotation and add it to [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations) collection. Here for instance, the [`EllipseAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.EllipseAnnotation.html) is added.
 
 {% tabs %}
 
@@ -63,15 +63,15 @@ chart.Annotations.Add(annotation);
 
 ## Positioning the Annotation
 
-[`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations) can be positioned in plot area based on [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_x1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_y1)  properties and for image and shape annotations you need to specify [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_x2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_y2) properties. These X and Y values can be specified with axis units or pixel units and this can be identified using [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) property.
+[`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations) can be positioned in plot area based on [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1)  properties and for image and shape annotations you need to specify [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Y2) properties. These X and Y values can be specified with axis units or pixel units and this can be identified using [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) property.
 
 **Positioning** **based** **on** **CoordinateUnit** **as** **Axis**
 
-To position based on axis you need to set the X1 and Y1, X2 and Y2 (if needed) properties based on the primary and secondary axis range values and [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) as [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html). 
+To position based on axis you need to set the X1 and Y1, X2 and Y2 (if needed) properties based on the primary and secondary axis range values and [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) as [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html#Syncfusion_UI_Xaml_Charts_CoordinateUnit_Axis). 
 
 **Positioning** **based** **on** **CoordinateUnit** **as** **Pixels**
 
-To position based on the pixel values you have to set the [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) as [`Pixels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html) and the pixel values in X1 and Y1, X2 and Y2 properties in Annotation.
+To position based on the pixel values you have to set the [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) as [`Pixel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html#Syncfusion_UI_Xaml_Charts_CoordinateUnit_Pixel) and the pixel values in X1 and Y1, X2 and Y2 properties in Annotation.
 
 **Adding** **Annotation** **for** **MultipleAxes**
 
@@ -423,9 +423,9 @@ The following API’s are commonly used in all ShapeAnnotation:
 
 * [`Fill`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Fill) - Represents the brush inside the Shape Annotation.
 
-* [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_x2)  - Represents the X2 Coordinate of the Shape Annotation.
+* [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_X2)  - Represents the X2 Coordinate of the Shape Annotation.
 
-* [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_y2) - Represents the Y2 Coordinate of the Shape Annotation.
+* [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Y2) - Represents the Y2 Coordinate of the Shape Annotation.
 
 * [`CanDrag`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_CanDrag) - A Boolean value that represent to drag the Annotation.
 
@@ -605,7 +605,7 @@ Text="{Binding}">
 
 **Adding** **Arrow** **to** **LineAnnotation**
 
-To display single headed arrow you can modify the line annotation by setting [`LineCap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineCap.html). By default the [`LineCap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property value in none.
+To display single headed arrow you can modify the line annotation by setting [`LineCap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineCap.html#Syncfusion_UI_Xaml_Charts_LineCap_Arrow). By default the [`LineCap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property value in none.
 
 ![Arrow support for line annotation in UWP Chart](Annotation_images/Annotation_img9.jpeg)
 
@@ -1209,11 +1209,11 @@ Text="Gold Demand" FontStyle="Italic"></TextBlock>
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides the following events in [`Annotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html).
 
-* [`Selected`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html)- Occurs when the annotation is selected.
-* [`UnSelected`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html)- Occurs when annotation is deselected.
-* [`DragStarted`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html)- Occurs at the start of the dragging.
-* [`DragDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html)- Occurs when the drag takes place.
-* [`DragCompleted`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html)- Occurs when the dragging is completed. You can cancel the dragging by using Cancel argument.
-* [`PointerPressed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the pointer is pressed, while the mouse pointer is over the annotation.
-* [`PointerMoved`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the pointer is moved, while the mouse pointer is over the annotation.
-* [`PointerReleased`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html) - Occurs when the pointer is released, while the mouse pointer is over the annotation.
+* [`Selected`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Selected)- Occurs when the annotation is selected.
+* [`UnSelected`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_UnSelected)- Occurs when annotation is deselected.
+* [`DragStarted`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html#Syncfusion_UI_Xaml_Charts_StraightLineAnnotation_DragStarted)- Occurs at the start of the dragging.
+* [`DragDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html#Syncfusion_UI_Xaml_Charts_StraightLineAnnotation_DragDelta)- Occurs when the drag takes place.
+* [`DragCompleted`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html#Syncfusion_UI_Xaml_Charts_StraightLineAnnotation_DragCompleted)- Occurs when the dragging is completed. You can cancel the dragging by using Cancel argument.
+* [`PointerPressed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_PointerPressed) - Occurs when the pointer is pressed, while the mouse pointer is over the annotation.
+* [`PointerMoved`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_PointerMoved) - Occurs when the pointer is moved, while the mouse pointer is over the annotation.
+* [`PointerReleased`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_PointerReleased) - Occurs when the pointer is released, while the mouse pointer is over the annotation.
