@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scale Breaks in UWP Charts control | Syncfusion
-description: Learn here all about Scale Breaks support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn here about how to add proper charts area Scale Breaks support in Syncfusion UWP Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -127,7 +127,7 @@ chart.SecondaryAxis = axis;
 
 ### Scale
 
-[`Scale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html) option allows you to position the breaks based on the delta of each axis range relative to the other.
+[`Scale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html#Syncfusion_UI_Xaml_Charts_ScaleBreakPosition_Scale) option allows you to position the breaks based on the delta of each axis range relative to the other.
 
 {% tabs %}
 
@@ -176,7 +176,7 @@ chart.SecondaryAxis = axis;
 
 ### Percent
 
-[`Percent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html) option allows to position the breaks at the specified percentage of the axis available height.
+[`Percent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html#Syncfusion_UI_Xaml_Charts_ScaleBreakPosition_Percent) option allows to position the breaks at the specified percentage of the axis available height.
 
 Percentage can be specified using [`BreakPercent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_BreakPercent) property. Default BreakPercent value is 50.
 
@@ -314,7 +314,7 @@ chart.SecondaryAxis = axis;
 
 The following are the customizing options for scale break.
 
-Line type such as [`Wave`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BreakLineType.html) or [`StraightLine`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BreakLineType.html), background, spacing, stroke, stroke thickness of the scale break can be customized using [`LineType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_LineType), [`Fill`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Fill), [`BreakSpacing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_BreakSpacing), [`Stroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Stroke), [`StrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_StrokeThickness) properties respectively.
+Line type such as [`Wave`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BreakLineType.html#Syncfusion_UI_Xaml_Charts_BreakLineType_Wave) or [`StraightLine`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BreakLineType.html#Syncfusion_UI_Xaml_Charts_BreakLineType_StraightLine), background, spacing, stroke, stroke thickness of the scale break can be customized using [`LineType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_LineType), [`Fill`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Fill), [`BreakSpacing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_BreakSpacing), [`Stroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Stroke), [`StrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_StrokeThickness) properties respectively.
 
 {% tabs %}
 

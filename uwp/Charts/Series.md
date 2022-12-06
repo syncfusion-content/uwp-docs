@@ -265,7 +265,7 @@ chart.Series.Add(series2);
 
 **Dashed Lines**
 
-[`StrokeDashArray`]() property of the [`SplineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is used to render spline series with dashes.
+[`StrokeDashArray`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineSeries.html#Syncfusion_UI_Xaml_Charts_SplineSeries_StrokeDashArray) property of the [`SplineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineSeries.html) is used to render spline series with dashes.
 
 {% tabs %}
 
@@ -305,11 +305,11 @@ The following types are used in [`SplineSeries`](https://help.syncfusion.com/cr/
 * Cardinal
 * Clamped
 
-By default, the value of SplineType is [`Natural`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html).
+By default, the value of SplineType is [`Natural`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html#Syncfusion_UI_Xaml_Charts_SplineType_Natural).
 
 **Cardinal**
 
-The following code demonstrates how to set the value of SplineType to [`Cardinal`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html).
+The following code demonstrates how to set the value of SplineType to [`Cardinal`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html#Syncfusion_UI_Xaml_Charts_SplineType_Cardinal).
 
 {% tabs %}
 
@@ -335,7 +335,7 @@ series.SplineType = SplineType.Cardinal;
 
 **Monotonic**
 
-The following code demonstrates how to set the value of SplineType to [`Monotonic`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html).
+The following code demonstrates how to set the value of SplineType to [`Monotonic`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html#Syncfusion_UI_Xaml_Charts_SplineType_Monotonic).
 
 {% tabs %}
 
@@ -361,7 +361,7 @@ series.SplineType = SplineType.Monotonic;
 
 **Clamped**
 
-The following code demonstrates how to set the value of SplineType to [`Clamped`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html).
+The following code demonstrates how to set the value of SplineType to [`Clamped`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineType.html#Syncfusion_UI_Xaml_Charts_SplineType_Clamped).
 
 {% tabs %}
 
@@ -974,7 +974,7 @@ chart.Series.Add(series);
 
 Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_IsStackedDoughnut) property. The following properties are used to customize the stacked doughnut chart:
 
-* [`CapStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_CapStyle) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`BothCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), [`StartCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html), and [`EndCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html). The default value of the this property is BothFlat.
+* [`CapStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_CapStyle) - Specifies the shapes of the start and end points of a circular segment. The supported values are [`BothFlat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html#Syncfusion_UI_Xaml_Charts_DoughnutCapStyle_BothFlat), [`BothCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html#Syncfusion_UI_Xaml_Charts_DoughnutCapStyle_BothCurve), [`StartCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html#Syncfusion_UI_Xaml_Charts_DoughnutCapStyle_StartCurve), and [`EndCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutCapStyle.html#Syncfusion_UI_Xaml_Charts_DoughnutCapStyle_EndCurve). The default value of the this property is BothFlat.
 * [`SegmentSpacing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_SegmentSpacing) - Changes the spacing between two individual segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 represents 100%, and 0 represents 0% of the available space.
 * [`MaximumValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_MaximumValue) - Represents the entire span of an individual circle. The default value of the this property is double.NaN.
 * [`TrackColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_TrackColor) - Changes the color of the track area.
@@ -1093,7 +1093,7 @@ chart.Series.Add(series);
 ![Pyramid chart type in UWP](Series_images/pyramid.png)
 
 
-The [`PyramidMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) or [`Linear`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html) for pyramid segments.
+The [`PyramidMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Surface) or [`Linear`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Linear) for pyramid segments.
 
 **PyramidMode** **as** **Surface**
 
@@ -1214,7 +1214,7 @@ chart.Series.Add(series);
 
 ### Funnel Mode
 
-The [`FunnelMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FunnelSeries.html#Syncfusion_UI_Xaml_Charts_FunnelSeries_FunnelMode) defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [`ValueIsHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) and [`ValueIsWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html) funnel mode:
+The [`FunnelMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FunnelSeries.html#Syncfusion_UI_Xaml_Charts_FunnelSeries_FunnelMode) defines a rendering mode for the funnel series which define, where to bind your values (to height or width). The following example demonstrates [`ValueIsHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsHeight) and [`ValueIsWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartFunnelMode.html#Syncfusion_UI_Xaml_Charts_ChartFunnelMode_ValueIsWidth) funnel mode:
 
 **ValueIsHeight**
 
@@ -1527,7 +1527,7 @@ chart.Series.Add(series);
 
 ### DrawType
 
-This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html) or [`Area`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html).
+This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html#Syncfusion_UI_Xaml_Charts_ChartSeriesDrawType_Line) or [`Area`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html#Syncfusion_UI_Xaml_Charts_ChartSeriesDrawType_Area).
 
 **DrawType** **as** **Area**
 
@@ -1621,11 +1621,11 @@ chart.Series.Add(series);
 
 ### PolarAngle
 
-[`Chart axis`](https://help.syncfusion.com/uwp/charts/axis) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) property.The [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) is type of [`ChartPolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) and its default value is [`Rotate270`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate0`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html), [`Rotate90`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) and [`Rotate180`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) are another supported value of [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle).Both the primary and secondary axes can be rotated individually based on its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value.
+[`Chart axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html) provides support to render polar and radar series on 0,90,180 and 270 degree. It can be achieved by its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) property.The [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) is type of [`ChartPolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html) and its default value is [`Rotate270`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html#Syncfusion_UI_Xaml_Charts_ChartPolarAngle_Rotate270), [`Rotate0`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html#Syncfusion_UI_Xaml_Charts_ChartPolarAngle_Rotate0), [`Rotate90`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html#Syncfusion_UI_Xaml_Charts_ChartPolarAngle_Rotate90) and [`Rotate180`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html#Syncfusion_UI_Xaml_Charts_ChartPolarAngle_Rotate180) are another supported value of [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle).Both the primary and secondary axes can be rotated individually based on its [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value.
 
 **Rotate0**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate0`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate0`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html#Syncfusion_UI_Xaml_Charts_ChartPolarAngle_Rotate0),
 
 {% tabs %}
 
@@ -1672,7 +1672,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate90**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate90`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate90`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html#Syncfusion_UI_Xaml_Charts_ChartPolarAngle_Rotate90),
 
 {% tabs %}
 
@@ -1719,7 +1719,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate180**
 
-The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate180`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series has been rotated when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate180`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html#Syncfusion_UI_Xaml_Charts_ChartPolarAngle_Rotate180),
 
 {% tabs %}
 
@@ -1766,7 +1766,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 **Rotate270**
 
-The below snippet explains how the axes of series has been rotated, when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate270`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html),
+The below snippet explains how the axes of series has been rotated, when [`PolarAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_PolarAngle) value is [`Rotate270`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPolarAngle.html#Syncfusion_UI_Xaml_Charts_ChartPolarAngle_Rotate270),
 
 {% tabs %}
 
@@ -3319,9 +3319,9 @@ N> By default, the value of the [`BoxPlotMode`](https://help.syncfusion.com/cr/u
 
 The series box plotting mode can be changed using the [`BoxPlotMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxAndWhiskerSeries.html#Syncfusion_UI_Xaml_Charts_BoxAndWhiskerSeries_BoxPlotMode) property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
 
-* [`Exclusive`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
-* [`Inclusive`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
-* [`Normal`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html) – The quartile values are calculated by splitting the list and getting the median values.
+* [`Exclusive`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html#Syncfusion_UI_Xaml_Charts_BoxPlotMode_Exclusive) – The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
+* [`Inclusive`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html#Syncfusion_UI_Xaml_Charts_BoxPlotMode_Inclusive) – The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
+* [`Normal`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BoxPlotMode.html#Syncfusion_UI_Xaml_Charts_BoxPlotMode_Normal) – The quartile values are calculated by splitting the list and getting the median values.
 
 **Normal**
 
@@ -4042,7 +4042,7 @@ chart.Series.Add(series);
 
 ### Fast Scatter
 
-[`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) used to render high number scatter points. The [`ScatterHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ScatterHeight) and [`ScatterWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ScatterWidth) also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`ShapeType`]() is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](), [`Diamond`](), [`Ellipse`](), [`Hexagon`](), [`InvertedTriangle`](), [`Pentagon`](), [`Plus`](), [`Rectangle`]() and [`Triangle`]().
+[`FastScatterBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html) used to render high number scatter points. The [`ScatterHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ScatterHeight) and [`ScatterWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ScatterWidth) also available as in [`ScatterSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScatterSeries.html). [`ShapeType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastScatterBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastScatterBitmapSeries_ShapeType) is used to change the rendering shape of fast scatter bitmap series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Cross), [`Diamond`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Diamond), [`Ellipse`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Ellipse), [`Hexagon`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Hexagon), [`InvertedTriangle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_InvertedTriangle), [`Pentagon`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Pentagon), [`Plus`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Plus), [`Square`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Square) and [`Triangle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Triangle).
 
 {% tabs %}
 

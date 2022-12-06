@@ -13,12 +13,12 @@ Chart area represents the entire chart and all its elements. It’s a virtual re
 
 The following are the major properties of chart(SfChart):
 
-* [`PrimaryAxis`](https://help.syncfusion.com/uwp/charts/axis) –  Gets or sets the horizontal x axis for the chart.
-* [`SecondaryAxis`](https://help.syncfusion.com/uwp/charts/axis) –  Gets or sets the vertical y axis for the chart.
-* [`Legend`](https://help.syncfusion.com/uwp/charts/legend) –  Gets or sets the legend for the chart.
-* [`Series`](https://help.syncfusion.com/uwp/charts/series) –  Gets or sets the list of series in the chart.
-* [`TechnicalIndicators`](https://help.syncfusion.com/uwp/charts/technical-indicators) –  Gets or sets the various financial indicators for the chart.
-* [`Behaviors`](https://help.syncfusion.com/uwp/charts/interactive-features)–  Used to add one more interactive features to the chart.
+* [`PrimaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) –  Gets or sets the horizontal x axis for the chart.
+* [`SecondaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis) –  Gets or sets the vertical y axis for the chart.
+* [`Legend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) –  Gets or sets the legend for the chart.
+* [`Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) –  Gets or sets the list of series in the chart.
+* [`TechnicalIndicators`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_TechnicalIndicators) –  Gets or sets the various financial indicators for the chart.
+* [`Behaviors`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors)–  Used to add one more interactive features to the chart.
 * [`Area`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Area) - Gets the instance of chart.
 
 ## Chart Header
@@ -828,7 +828,7 @@ SfChart provides the following list of events.
 
 ### SelectionChanging
 
-The [`SelectionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html) event occurs before the data point is being selected. This is a cancelable event. This argument contains the following information.
+The [`SelectionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging) event occurs before the data point is being selected. This is a cancelable event. This argument contains the following information.
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_SelectedSeries) - Gets the series of the selected data point.
 * [`SelectedSegments`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangingEventArgs_SelectedSegments) - Gets or sets the segments collection of the selected series.
@@ -841,7 +841,7 @@ The [`SelectionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.
 
 ### SelectionChanged
 
-The [`SelectionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html) event occurs after a data point has been selected. This argument contains the following information.
+The [`SelectionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged) event occurs after a data point has been selected. This argument contains the following information.
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSeries) - Gets the series of the selected data point.
 * [`SelectedSegments`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_ChartSelectionChangedEventArgs_SelectedSegments) - Gets the segments collection of the selected series.
@@ -859,7 +859,7 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.C
 
 ### ZoomChanging
 
-The [`ZoomChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) event occurs when users start zooming the chart. This is a cancelable event. This argument contains the following information.
+The [`ZoomChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ZoomChanging) event occurs when users start zooming the chart. This is a cancelable event. This argument contains the following information.
 
 * [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ZoomEventArgs.html#Syncfusion_UI_Xaml_Charts_ZoomEventArgs_Axis) - Gets an instance of the axis whose range is changed through zooming. This event is triggered for each axis in the chart.
 * [`Cancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ZoomChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_ZoomChangingEventArgs_Cancel) - Gets or Sets a value that indicates whether the zooming should be canceled.
@@ -871,7 +871,7 @@ The [`ZoomChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Chart
 
 ### ZoomChanged
 
-The [`ZoomChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) event occurs after the zooming has been completed. This argument contains the following information.
+The [`ZoomChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ZoomChanged) event occurs after the zooming has been completed. This argument contains the following information.
 
 * [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ZoomEventArgs.html#Syncfusion_UI_Xaml_Charts_ZoomEventArgs_Axis) - Gets an instance of the axis whose range is changed through zooming. This event is triggered for each axis in the chart.
 * [`CurrentFactor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ZoomEventArgs.html#Syncfusion_UI_Xaml_Charts_ZoomEventArgs_CurrentFactor) - Gets the current zoom factor of the axis.
@@ -883,26 +883,26 @@ The [`ZoomChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 ### SelectionZoomingStart
 
-The [`SelectionZoomingStart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) event occurs when users start selection zooming. This argument contains the following information.
+The [`SelectionZoomingStart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SelectionZoomingStart) event occurs when users start selection zooming. This argument contains the following information.
 
 * [`ZoomRect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SelectionZoomingEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionZoomingEventArgs_ZoomRect) - Gets the initial bounds of the selected region.
 
 ### SelectionZoomingEnd
 
-The [`SelectionZoomingEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) event occurs after selection zooming ends. This argument contains the following information.
+The [`SelectionZoomingEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SelectionZoomingEnd) event occurs after selection zooming ends. This argument contains the following information.
 
 * [`ZoomRect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SelectionZoomingEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionZoomingEventArgs_ZoomRect) - Gets the final bounds of the selected region.
 
 ### SelectionZoomingDelta
 
-The [`SelectionZoomingDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) event occurs when selecting a region to be zoomed. This is a cancelable event. This argument contains the following information.
+The [`SelectionZoomingDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SelectionZoomingDelta) event occurs when selecting a region to be zoomed. This is a cancelable event. This argument contains the following information.
 
 * [`ZoomRect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SelectionZoomingEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionZoomingEventArgs_ZoomRect) - Gets the final bounds of the selected region.
 * [`Cancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SelectionZoomingDeltaEventArgs.html#Syncfusion_UI_Xaml_Charts_SelectionZoomingDeltaEventArgs_Cancel) - Gets or Sets a value that indicates whether the selection zooming should be canceled.
 
 ### PanChanging
 
-The [`PanChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) event occurs when users start panning the chart. This is a cancelable event. This argument contains the following information:
+The [`PanChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PanChanging) event occurs when users start panning the chart. This is a cancelable event. This argument contains the following information:
 
 * [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PanningEventArgs.html#Syncfusion_UI_Xaml_Charts_PanningEventArgs_Axis) - Gets an instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
 * [`Cancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PanChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_PanChangingEventArgs_Cancel) - Gets or Sets a value that indicates whether the panning should be canceled.
@@ -911,14 +911,14 @@ The [`PanChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 ### PanChanged
 
-The [`PanChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) event occurs when panning is completed. This argument contains the following information.
+The [`PanChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PanChanged) event occurs when panning is completed. This argument contains the following information.
 
 * [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PanningEventArgs.html#Syncfusion_UI_Xaml_Charts_PanningEventArgs_Axis) - Gets an instance of the axis whose range is changed while panning. This event is triggered for each axis in the chart.
 * [`NewZoomPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PanningEventArgs.html#Syncfusion_UI_Xaml_Charts_PanningEventArgs_NewZoomPosition) - Gets a new zoom position of the axis.
  
 ### ResetZooming
 
-The [`ResetZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) event occurs when resetting the chart on double tap. This is a cancelable event. This argument contains the following information.
+The [`ResetZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ResetZooming) event occurs when resetting the chart on double tap. This is a cancelable event. This argument contains the following information.
 
 * [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs.html#Syncfusion_UI_Xaml_Charts_ResetZoomEventArgs_Axis) - Gets an instance of the axis whose range is changed when panning. This event is triggered for each axis in the chart.
 * [`Cancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ResetZoomEventArgs.html#Syncfusion_UI_Xaml_Charts_ResetZoomEventArgs_Cancel) - Gets or Sets a value that indicates whether the panning should be canceled.
