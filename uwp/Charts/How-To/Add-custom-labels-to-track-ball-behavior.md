@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add custom labels to track ball behavior | SfChart | Winrt | Syncfusion
-description: add custom labels to track ball behavior
+title: Add custom labels to track ball behavior | Syncfusion
+description: Learn here about how to add proper custom labels to track ball behavior Syncfusion UWP Charts(SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 In the [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html), each data point will have a label aligned vertically and horizontally using the [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelVerticalAlignment) and [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelHorizontalAlignment) properties by default. However, you can also add custom labels to the [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html).
 
-In order to add a custom label, you need to write a class derived from [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html). You need to override [`GenerateLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_AddLabel_System_Object_Syncfusion_UI_Xaml_Charts_ChartAlignment_Syncfusion_UI_Xaml_Charts_ChartAlignment_Windows_UI_Xaml_DataTemplate_System_Double_System_Double_) method, which will be called whenever new labels are going to be generated, and add the labels using AddLabel method. The following code sample demonstrates this:
+In order to add a custom label, you need to write a class derived from [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html). You need to override [`GenerateLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_GenerateLabels) method, which will be called whenever new labels are going to be generated, and add the labels using AddLabel method. The following code sample demonstrates this:
 
 
 {% highlight c# %}

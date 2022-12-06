@@ -55,7 +55,7 @@ chart.Palette = ChartColorPalette.Metro;
 ![Predefined palettes in UWP Chart](Styling-and-Customization_images/palette_1.png)
 
 
-The following code example defined [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) as [`BlueChrome`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html).
+The following code example defined [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) as [`BlueChrome`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_BlueChrome).
 
 {% tabs %}
 
@@ -114,7 +114,7 @@ chart.Series.Add(series);
 
 ![Applying palette to segment in UWP Chart](Styling-and-Customization_images/palette_3.png)
 
-The following code example defined [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Palette) as **AutumnBrights**.
+The following code example defined [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Palette) as ['AutumnBrights'](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_AutumnBrights).
 
 {% tabs %}
 
@@ -566,7 +566,7 @@ Text="{Binding Label}"></TextBlock>
 ![Customizing legend in UWP Chart](Styling-and-Customization_images/palette_7.png)
 
 
-If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/6157/how-to-add-multiple-legend-items-in-scrollviewer#) kb for more details.
+If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/11671/how-to-add-multiple-legend-items-in-scroll-viewer-in-uwp-chart) kb for more details.
 
 ## Customize ToolTip
 
