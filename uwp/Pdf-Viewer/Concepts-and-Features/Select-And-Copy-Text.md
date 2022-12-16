@@ -48,15 +48,17 @@ Follow below steps to select text in the PDF file.
 
 ### Using touch gestures
 
-1) Tap over the texts in the page, the tapped word will be selected and two bubbles will be displayed on each end.
+1) Tap over the texts in the page, the tapped word will be selected and two bubbles will be displayed on each end. Similarly text can be selected by long pressing a particular word as well.
 
 2) Tap and drag the left bubble to select the text at the left and top, and the right bubble to select the text at the right and bottom directions. 
 
 ### Using mouse
 
-1) To mouse pointer will be changed to the text selection pointer when pointed over the text region.
+1) The mouse pointer will be changed to the text selection pointer when pointed over the text region.
 
 2) Place the mouse pointer on the text area and click the mouse left button and drag the mouse pointer over the text to select the text in any direction.
+
+3) To select a particular word, you can double click on it.
 
 ## How to modify the selection color?
 
@@ -85,3 +87,21 @@ pdfViewerControl.TextSelectionMenu.CopyButton.Visibility = Visibility.Collapsed;
 {% endtabs %}
 
 By default, the visibility of the copy button is Visible.
+
+# How to get the selected text?
+
+When text selection action is completed, the `TextSelectionCompleted` event will be raised. The event arguments will contain the selected text.
+
+{% tabs %}
+{% highlight c# %}
+
+PdfViewer.TextSelectionCompleted += PdfViewer_TextSelectionCompleted;
+
+private void PdfViewer_TextSelectionCompleted(object sender, TextSelectionCompletedEventArgs e)
+{
+    //Get the selected text
+    string selectedText = e.SelectedText;
+}
+
+{% endhighlight %}
+{% endtabs %}
