@@ -58,6 +58,103 @@ To explore those properties, see [DataSourceSettings](https://help.syncfusion.co
 </syncfusion:SfDiagram>
 
 {% endhighlight %}
+{% highlight c# %}
+/// <summary>
+/// Business object class for creating datasource
+/// </summary>
+public class Employee
+{
+    public string ParentId { get; set; }
+    public string Name { get; set; }
+    public string Designation { get; set; }
+    public string EmployeeId { get; set; }
+}
+
+//Employee Collection
+public class Employees : ObservableCollection<Employee>
+{
+}
+
+// Initialize DataSourceSettings for SfDiagram
+Diagram.DataSourceSettings = new DataSourceSettings()
+{
+    Id = "EmployeeId",
+    ParentId = "ParentId",
+    Root = "1",
+    DataSource = GetData(),
+};
+
+// Initialize layout manager for SfDiagram
+Diagram.LayoutManager = new Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager()
+{
+    Layout = new DirectedTreeLayout()
+    {
+        HorizontalSpacing = 80,
+        VerticalSpacing = 50,
+        SpaceBetweenSubTrees = 20,
+        Orientation = TreeOrientation.TopToBottom,
+    }
+};
+
+// Method to initialize the value for DataSource
+private Employees GetData()
+{
+    Employees employees = new Employees();
+
+    employees.Add(new Employee()
+    {
+        Name = "Steve",
+        EmployeeId = "1",
+        ParentId = "",
+        Designation = "CEO"
+    });
+    employees.Add(new Employee()
+    {
+        Name = "Kevin",
+        EmployeeId = "2",
+        ParentId = "1",
+        Designation = "Manager"
+    });
+    employees.Add(new Employee()
+    {
+        Name = "John",
+        EmployeeId = "3",
+        ParentId = "1",
+        Designation = "Manager"
+    });
+    employees.Add(new Employee()
+    {
+        Name = "Raj",
+        EmployeeId = "4",
+        ParentId = "2",
+        Designation = "Team Lead"
+    });
+    employees.Add(new Employee()
+    {
+        Name = "Will",
+        EmployeeId = "5",
+        ParentId = "2",
+        Designation = "S/w Developer"
+    });
+    employees.Add(new Employee()
+    {
+        Name = "Sarah",
+        EmployeeId = "6",
+        ParentId = "3",
+        Designation = "TeamLead"
+    });
+    employees.Add(new Employee()
+    {
+        Name = "Mike",
+        EmployeeId = "7",
+        ParentId = "3",
+        Designation = "Testing Engineer"
+    });
+
+    return employees;
+}
+
+{% endhighlight%}
 {% endtabs %}
 
 For more information about Node, Connector and Business Class[Employee] , Please refer the below sample.
