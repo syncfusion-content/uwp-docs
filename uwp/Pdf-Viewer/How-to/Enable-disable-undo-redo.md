@@ -9,8 +9,7 @@ documentation: ug
 
 # Support to disable the undo and redo operations
 
-The undo operation using both the `UndoCommand` and keyboard short cut Ctrl+Z can be enabled or disabled using the `IsUndoEnabled` property. The default value of this property is true.
-
+The undo operation using both the `UndoCommand` and keyboard shortcut Ctrl+Z can be enabled or disabled using the `IsUndoEnabled` property. The default value of this property is true.
 {% tabs %}
 {% highlight c# %}
 

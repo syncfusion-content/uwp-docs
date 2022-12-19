@@ -88,9 +88,9 @@ pdfViewerControl.TextSelectionMenu.CopyButton.Visibility = Visibility.Collapsed;
 
 By default, the visibility of the copy button is Visible.
 
-# How to get the selected text?
+## How to get the selected text?
 
-When text selection action is completed, the `TextSelectionCompleted` event will be raised. The event arguments will contain the selected text.
+When the text selection action is completed, the `TextSelectionCompleted` event will be raised. The event arguments will contain the selected text.
 
 {% tabs %}
 {% highlight c# %}
