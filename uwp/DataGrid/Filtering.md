@@ -674,7 +674,7 @@ void dataGrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEven
 
 ### Changing AdvancedFilter type while loading dynamic ItemsSource  
 
-By default, TextFilters will be loaded for the columns if ItemsSource is [dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types).  If you want to load `NumberFilter` or `DateFilter` based on column values, you need to use `ColumnMemberType` property.
+By default, TextFilters will be loaded for the columns if ItemsSource is [dynamic](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types).  If you want to load `NumberFilter` or `DateFilter` based on column values, you need to use `ColumnMemberType` property.
 
 {% tabs %}
 {% highlight c# %}
