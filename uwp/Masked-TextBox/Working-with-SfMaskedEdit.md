@@ -7,7 +7,7 @@ control: SfMaskedEdit
 documentation: ug
 ---
 
-#  Working With SfMaskedEdit
+# Working With SfMaskedEdit
 
 This section explains about accessing `SfMaskedEdit` properties and events associated with it.
 
