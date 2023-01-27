@@ -51,12 +51,12 @@ Await pdfViewer.LoadDocumentAsync(loadedDocument, cancellationTokenSource.Token)
 {% endhighlight %}
 {% endtabs %}
 
-In the above code sample, the [`CancellationToken`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-5.0) enables you to cancel the asynchronous loading of a PDF document when it is in progress.
+In the above code sample, the [`CancellationToken`](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-5.0) enables you to cancel the asynchronous loading of a PDF document when it is in progress.
 
 ## Loading a PDF using Stream object
 The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) allows you to load the PDF document synchronously and asynchronously from the specified stream using the `LoadDocument` and `LoadDocumentAsync` methods respectively.
 
-The following code explains how to load the document synchronously using a [`stream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0) object that was created from the PDF in the Assets folder of the application.
+The following code explains how to load the document synchronously using a [`stream`](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0) object that was created from the PDF in the Assets folder of the application.
 
 {% tabs %}
 {% highlight c# %}
@@ -73,7 +73,7 @@ pdfViewer.LoadDocument(docStream)
 {% endhighlight %}
 {% endtabs %}
 
-The following code explains how to load the document asynchronously using a [`stream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0) object that was created from the PDF in the Assets folder of the application.
+The following code explains how to load the document asynchronously using a [`stream`](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0) object that was created from the PDF in the Assets folder of the application.
 
 {% tabs %}
 {% highlight c# %}
