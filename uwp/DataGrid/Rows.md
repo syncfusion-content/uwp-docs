@@ -13,13 +13,13 @@ documentation: ug
 
 This section explains about various row types in SfDataGrid.
 
-[StackedHeaderRow](http://help.syncfusion.com/uwp/sfdatagrid/columns#stacked-headers)
+[StackedHeaderRow](http://help.syncfusion.com/uwp/datagrid/columns#stacked-headers)
 
-[AddNewRow](http://help.syncfusion.com/uwp/sfdatagrid/data-manipulation#built-in-addnewrow)
+[AddNewRow](http://help.syncfusion.com/uwp/datagrid/data-manipulation#built-in-addnewrow)
 
-[SummaryRow](https://help.syncfusion.com/uwp/sfdatagrid/summaries)
+[SummaryRow](https://help.syncfusion.com/uwp/datagrid/summaries)
 
-[UnboundRow](http://help.syncfusion.com/uwp/sfdatagrid/unbound-rows)
+[UnboundRow](http://help.syncfusion.com/uwp/datagrid/unbound-rows)
 
 ## Row Header
 
@@ -98,9 +98,9 @@ Denotes that the current row which has errors.
 
 See also.
 
-[Show row index in RowHeader](http://help.syncfusion.com/uwp/sfdatagrid/styles-and-templates#styling-rowheader)
+[Show row index in RowHeader](http://help.syncfusion.com/uwp/datagrid/styles-and-templates#styling-rowheader)
 
-[Customizing RowHeader based on record](https://help.syncfusion.com/uwp/sfdatagrid/conditional-styling#row-header)
+[Customizing RowHeader based on record](https://help.syncfusion.com/uwp/datagrid/conditional-styling#row-header)
 
 ## Header Row
 
