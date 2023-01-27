@@ -85,7 +85,7 @@ You can display the corresponding row index in each RowHeader, by customizing th
 ![Image used to display the row index displayed in row header cell of uwp datagrid](Interactive-Features_images/InteractiveFeatures_img2.png)
 
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DisplayRowIndex1237508699.zip).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DisplayRowIndex1237508699.zip).
 
 #### Change the CurrentRow Indicator
 
