@@ -7,7 +7,7 @@ control: PDF viewer
 documentation: ug
 ---
 
-## UI design for mobile
+# Mobile in UWP Pdf Viewer control
 
 ![customtoolbarimage](CustomToolbarImages/CustomToolbarImage23.png)
 
