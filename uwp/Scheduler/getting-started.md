@@ -15,8 +15,8 @@ This section provides you an overview for working with SfSchedule for UWP and al
       
 SfSchedule can be included in your UWP project in two ways,    
    
-* [Assembly Reference](#assembly-reference)    
-* [NuGet Configuration](#nuget-configuration)    
+* [Assembly Reference](https://help.syncfusion.com/uwp/scheduler/getting-started#assembly-reference)    
+* [NuGet Configuration](https://help.syncfusion.com/uwp/scheduler/getting-started#nuget-configuration)    
 
 ### Assembly Reference    
    
