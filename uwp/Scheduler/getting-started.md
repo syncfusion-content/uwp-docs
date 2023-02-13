@@ -15,12 +15,12 @@ This section provides you an overview for working with SfSchedule for UWP and al
       
 SfSchedule can be included in your UWP project in two ways,    
    
-* [Assembly Reference](https://help.syncfusion.com/uwp/scheduler/getting-started#assembly-reference)    
-* [NuGet Configuration](https://help.syncfusion.com/uwp/scheduler/getting-started#nuget-configuration)    
+* [Assembly Reference](#assembly-reference)    
+* [NuGet Configuration](#nuget-configuration)    
 
 ### Assembly Reference    
    
-You can download our UWP components directly from our website, refer [here](https://help.syncfusion.com/uwp/system-requirements) for assistance.  
+You can download our UWP components directly from our website, refer [here](https://help.syncfusion.com/uwp/installation-and-upgrade/system-requirements) for assistance.  
  
 Once the assemblies have been downloaded and explored, you can find all the required assemblies in the installation folders [location](https://help.syncfusion.com/uwp/system-requirements). 
  
@@ -56,16 +56,16 @@ here [ScheduleGettingStarted](https://help.syncfusion.com/uwp/scheduler/getting-
      
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.   
      
-* [Creating a new project](https://help.syncfusion.com/uwp/scheduler/getting-started#creating-a-new-project)    
-* [Adding SfSchedule to the project](https://help.syncfusion.com/uwp/scheduler/getting-started#adding-sfschedule-to-the-project)
-* [Changing Schedule Views](https://help.syncfusion.com/uwp/scheduler/getting-started#changing-schedule-views)      
-* [Binding data to SfSchedule control](https://help.syncfusion.com/uwp/scheduler/getting-started#binding-data-to-sfschedule-control)   
+* [Creating a new project](#creating-a-new-project)    
+* [Adding SfSchedule to the project](#adding-sfschedule-to-the-project)
+* [Changing Schedule Views](#changing-schedule-views)      
+* [Binding data to SfSchedule control](#binding-data-to-sfschedule-control)   
 
 ## Creating a new project    
       
 Create a new Blank App (Universal Windows) application in Visual Studio.   
      
-Add the required assembly references to the project as discussed in the [Assembly Configuration](https://help.syncfusion.com/uwp/scheduler/getting-started#assembly-configuration) section.    
+Add the required assembly references to the project as discussed in the [Assembly Configuration](#assembly-configuration) section.    
      
 Import SfSchedule control namespace `Syncfusion.UI.Xaml.Schedule`.  
  
@@ -261,10 +261,10 @@ You can also map custom appointments data to our schedule.
   
 Here steps to render `MeetingRoomScheduler` using SfSchedule control with respective custom data properties created in a class Meeting.   
    
-* [Creating custom class for appointments](https://help.syncfusion.com/uwp/scheduler/getting-started#creating-custom-class-for-appointments)  
-* [Creating view model](https://help.syncfusion.com/uwp/scheduler/getting-started#creating-view-model) 
-* [Mapping custom class](https://help.syncfusion.com/uwp/scheduler/getting-started#mapping-custom-class)   
-* [Setting data source for SfSchedule](https://help.syncfusion.com/uwp/scheduler/getting-started#setting-data-source-for-sfschedule)   
+* [Creating custom class for appointments](#creating-custom-class-for appointments)  
+* [Creating view model](#creating-view-model) 
+* [Mapping custom class](#mapping-custom-class)   
+* [Setting data source for SfSchedule](#setting-data-source-for-sfschedule)   
 
 #### Creating custom class  for appointments 
   
