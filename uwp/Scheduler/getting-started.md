@@ -52,7 +52,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![UWP Schedule](Getting-Started_images/GettingStarted.png) 
 
 You can download the entire source code of this demo for UWP from    
-here [ScheduleGettingStarted](https://help.syncfusion.com/uwp/scheduler/getting-started)    
+here [ScheduleGettingStarted](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_ScheduleUWP1114729068.zip)    
      
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.   
      
