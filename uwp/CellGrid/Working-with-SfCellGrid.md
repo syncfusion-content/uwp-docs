@@ -16,7 +16,7 @@ SfCellGrid provides support for virtualization in which data will be dynamically
 SfCellGrid does not store the cell data in `GridStyleInfo` objects or any other internal grid storage. All information is provided while populating the data through the `QueryCellInfo` event, 
 thus increasing the performance.
 
-The `QueryCellInfo` event will be triggered for each cell when it comes into view. For more information, refer [QueryCellInfo](http://help.syncfusion.com/uwp/sfcellgrid/working-with-sfcellgrid#querycellinfo-event) topic.
+The `QueryCellInfo` event will be triggered for each cell when it comes into view. For more information, refer [QueryCellInfo](https://help.syncfusion.com/uwp/cellgrid/working-with-sfcellgrid#querycellinfo-event) topic.
 
 ## QueryCellInfo Event
 
@@ -67,7 +67,7 @@ private void Model_QueryCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Styl
 {% endtabs %}
 
 N>`QueryCellInfo` event is used to provide the cell values on demand while the changes made in the grid will be saved back by the `CommitCellInfo` event.For more information,
-please refer [here](http://help.syncfusion.com/uwp/sfcellgrid/working-with-sfcellgrid#commitcellinfo-event)
+please refer [here](https://help.syncfusion.com/uwp/cellgrid/working-with-sfcellgrid#commitcellinfo-event)
 
 ## CommitCellInfo Event
 
