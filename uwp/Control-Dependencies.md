@@ -9,11 +9,11 @@ documentation: ug
 
 # Control Dependencies in Syncfusion's UWP Controls
 
-This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/uwp/installation-and-upgrade/install-using-the-web-installer) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
+This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/uwp/installation/web-installer/how-to-install) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
 
 You can refer to the [syncfusion controls section](https://help.syncfusion.com/uwp/add-syncfusion-controls) to learn how to add syncfusion control.
 
-N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion UWP controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) for more information.
+N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion UWP controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
 
 ## Calculate
 
