@@ -13,7 +13,7 @@ The following section helps you to build your application with SfDiagram.
 
 ## Creating the project
 
-Create new UWP project using Visual Studio. For more [details](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal#step-1-create-a-new-project-in-visual-studio).
+Create new UWP project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal#step-1-create-a-new-project-in-visual-studio).
  
 ## Assembly Reference
 
@@ -31,7 +31,7 @@ In order to add control manually in XAML, do the below steps:
 2. Import SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
 3. Declare SfDiagram control in XAML page.
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your UWP application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your UWP application to use our components.
     
 {% tabs %}
 {% highlight xaml %}
