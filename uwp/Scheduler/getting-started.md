@@ -20,7 +20,7 @@ SfSchedule can be included in your UWP project in two ways,
 
 ### Assembly Reference    
    
-You can download our UWP components directly from our website, refer [here](https://help.syncfusion.com/uwp/installation-and-upgrade/system-requirements) for assistance.  
+You can download our UWP components directly from our website, refer [here](https://help.syncfusion.com/uwp/system-requirements) for assistance.  
  
 Once the assemblies have been downloaded and explored, you can find all the required assemblies in the installation folders [location](https://help.syncfusion.com/uwp/system-requirements). 
  
