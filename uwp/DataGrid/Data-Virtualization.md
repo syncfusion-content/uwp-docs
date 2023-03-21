@@ -475,7 +475,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading1101987252.zip).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading1101987252.zip).
 
 
 ### Displaying animation when fetching data from services
@@ -643,7 +643,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ![Data-Virtualization_img1](Data-Virtualization_images/Data-Virtualization_img1.png)
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_Service-1432869387.zip).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_Service-1432869387.zip).
 
 
 ### LoadMore using ISupportIncrementalLoading
@@ -765,7 +765,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_LoadMoreItems-925087250.zip).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/IncrementalLoading_LoadMoreItems-925087250.zip).
 
 ## Paging
 

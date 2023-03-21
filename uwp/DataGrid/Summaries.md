@@ -1129,7 +1129,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ![Custom aggregate summaries in UWP SfDataGrid](Summaries_images/Summaries_img16.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries958318941.zip) .
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries958318941.zip) .
 
 ## Overriding Summary Renderer
 
