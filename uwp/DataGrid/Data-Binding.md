@@ -181,7 +181,7 @@ N> DataGrid creates different types of views derived from [ICollectionViewAdv](h
 <tr>
 <td>CaptionSummaryRows</td>
 <td>ISummaryRow</td>
-<td>Maintains the CaptionSummaryRow information. To know more about CaptionSummaries {{ '[click here](http://help.syncfusion.com/uwp/sfdatagrid/summaries)' | markdownify }} </td>
+<td>Maintains the CaptionSummaryRow information. To know more about CaptionSummaries {{ '[click here](https://help.syncfusion.com/uwp/datagrid/summaries)' | markdownify }} </td>
 </tr>
 </table>
 
@@ -190,7 +190,7 @@ The following events are associated with View.
 
 ### RecordPropertyChanged
 
-[RecordPropertyChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.ICollectionViewAdv.html) event is raised when the DataModel property value is changed, if the DataModel implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.PropertyChangedEventArgs)&rd=true) as object.
+[RecordPropertyChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.ICollectionViewAdv.html) event is raised when the DataModel property value is changed, if the DataModel implements the `INotifyPropertyChanged` interface. The event receives with two arguments namely sender that handles the DataModel and [PropertyChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.PropertyChangedEventArgs)%26rd%3Dtrue&view=net-7.0) as object.
 
 `PropertyChangedEventArgs` has below property,
 
@@ -198,7 +198,7 @@ The following events are associated with View.
 
 ### CollectionChanged
 
-[CollectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) as object.
+[CollectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html) event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and [NotifyCollectionChangedEventArgs](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs)%26rd%3Dtrue&view=net-7.0) as object.
 
 [NotifyCollectionChangedEventArgs](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs)&rd=true) has below properties,
 
@@ -220,9 +220,9 @@ The following events are associated with View.
 
 [Action](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)&rd=true) - It contains the current action. (i.e) Add, Remove, Move, Replace, Reset.
 
-[NewItems](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)&rd=true) - It contains the list of new items involved in the change.
+[NewItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)%26rd%3Dtrue&view=net-7.0) - It contains the list of new items involved in the change.
 
-[OldItems](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems)&rd=true) - It contains the list of old items affected by the Action.
+[OldItems](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-7.0) - It contains the list of old items affected by the Action.
 
 [NewStartingIndex](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex)&rd=true) - It contains the index at which the change occurred.
 

@@ -641,7 +641,7 @@ public class StringToImageConverter : IValueConverter
 
 ![Apply the column filter for image in DataGrid UWP](Filtering_images/Filtering_img18.png)
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDatagridDemo82863041).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDatagridDemo82863041).
 
 ## Functionality Customization
 
