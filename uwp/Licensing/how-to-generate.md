@@ -10,7 +10,7 @@ documentation: ug
 
 # Generate Syncfusion UWP License key
 
-License keys for UWP can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account. 
+License keys for UWP can be generated from the [License & Downloads](https://www.syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account. 
 
 ![Get License Key](licensing-images/generate-license.png)
 
