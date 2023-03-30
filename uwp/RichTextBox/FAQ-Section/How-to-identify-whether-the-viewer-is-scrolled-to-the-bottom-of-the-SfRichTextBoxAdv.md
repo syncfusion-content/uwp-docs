@@ -26,7 +26,7 @@ The following code example illustrates to identify whether the viewer is scrolle
 /// <param name="e">The RoutedEventArgs instance containing the event data.</param>
  private void RichTextBoxAdv_Loaded(object sender, RoutedEventArgs e)
  {
-	 if (richTextBoxAdv.VerticalScrollBar != null)
+     if (richTextBoxAdv.VerticalScrollBar != null)
      {
          richTextBoxAdv.VerticalScrollBar.ValueChanged += VerticalScrollBar_ValueChanged;
      }
