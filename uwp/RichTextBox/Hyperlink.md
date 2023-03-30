@@ -154,7 +154,7 @@ The following section illustrates how to insert hyperlink field with ScreenTip i
 2. Enter the display text, URL link and ScreenTip text.
 3. Click on OK to close the dialog box.
 
-![Adding Hyperlink to WPF RichTextBox](Hyperlink_images/wpf-richtextbox-insert-hyperlink.PNG)
+![Adding Hyperlink to WPF RichTextBox](Hyperlink_images/uwp-richtextbox-insert-hyperlink.PNG)
 
 In the SfRichTextBoxAdv control, ToolTip (ScreenTip) will be shown by default when the mouse hovers over that hyperlink. You can disable ToolTip by using the [DisplayScreenTips](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.RichTextBoxAdv.EditorSettings.html#Syncfusion_UI_Xaml_RichTextBoxAdv_EditorSettings_DisplayScreenTips) property of [EditorSettings](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.RichTextBoxAdv.EditorSettings.html)class.
 
