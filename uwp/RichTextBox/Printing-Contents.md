@@ -155,3 +155,28 @@ void UnRegisterPrinting()
 {% endhighlight %}
 
 {% endtabs %}
+
+In the SfRichTextBoxAdv control, comments will be shown by default on printing the document. You can hide the comments while printing by using the [PrintComments](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.RichTextBoxAdv.EditorSettings.html#Syncfusion_UI_Xaml_RichTextBoxAdv_EditorSettings_PrintComments) property of [EditorSettings](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.RichTextBoxAdv.EditorSettings.html) class.
+
+The following code example illustrates how to hide the comments on printing the document.
+
+{% tabs %}
+{% highlight xaml %}
+<RichTextBoxAdv:SfRichTextBoxAdv x:Name="richTextBoxAdv">
+    <RichTextBoxAdv:SfRichTextBoxAdv.EditorSettings>
+        <RichTextBoxAdv:EditorSettings PrintComments="False" />
+    </RichTextBoxAdv:SfRichTextBoxAdv.EditorSettings>
+</RichTextBoxAdv:SfRichTextBoxAdv>
+
+{% endhighlight %}
+{% highlight c# %}
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+richTextBoxAdv.EditorSettings.PrintComments = false;
+
+{% endhighlight %}
+{% highlight VB %}
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+richTextBoxAdv.EditorSettings.PrintComments = False
+
+{% endhighlight %}
+{% endtabs %}
