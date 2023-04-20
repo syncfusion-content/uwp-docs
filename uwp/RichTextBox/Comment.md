@@ -103,3 +103,4 @@ Dim isCommentPaneVisible As Boolean = richTextBoxAdv.EditorSettings.IsCommentPan
 
 {% endhighlight %}
 {% endtabs %}
+
