@@ -7,7 +7,7 @@ control: SfRibbon (Touch Ribbon)
 documentation: ug
 ---
 
-#ToolTip Support
+# ToolTip Support in UWP Ribbon
 
 
 Ribbon Controls supports tooltip that is used to display small information while hovering mouse on it
@@ -89,6 +89,6 @@ Ribbon Controls supports tooltip that is used to display small information while
 
 {% endhighlight %}
 
-****![](ToolTip-Support_images/ToolTip-Support_img1.jpeg)
+****![UWP Ribbon tooltip](ToolTip-Support_images/ToolTip-Support_img1.jpeg)
 
 
