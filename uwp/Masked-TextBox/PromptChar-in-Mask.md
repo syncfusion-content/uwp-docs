@@ -6,7 +6,7 @@ platform: uwp
 control: SfMaskedEdit
 documentation: ug
 ---
-## Default PromptChar in Mask
+# Default PromptChar in UWP Masked TextBox
 
 Displays prompt character for the absence of your input in Mask and its default value is ‘_’.
 
