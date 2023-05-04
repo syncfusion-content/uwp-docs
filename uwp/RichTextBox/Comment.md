@@ -87,3 +87,22 @@ private void RichTextBoxAdv_CommentAdding(object obj, CommentAddingEventArgs arg
 {% endtabs %}
 ![Comment_img2](Comment_images/Comment_img2.jpeg)
 
+## Visibility of comment pane
+
+The SfRichTextBoxAdv control allows you to determine the visibility of the comment pane using the [IsCommentPaneVisible](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.RichTextBoxAdv.EditorSettings.html#Syncfusion_UI_Xaml_RichTextBoxAdv_EditorSettings_IsCommentPaneVisible) property of the [EditorSettings](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.RichTextBoxAdv.EditorSettings.html) class.
+
+The following code example illustrates how to check whether the comment pane is currently visible or hidden:
+
+{% tabs %}
+{% highlight c# %}
+SfRichTextBoxAdv richTextBoxAdv = new SfRichTextBoxAdv();
+bool isCommentPaneVisible = richTextBoxAdv.EditorSettings.IsCommentPaneVisible;
+
+{% endhighlight %}
+{% highlight VB %}
+Dim richTextBoxAdv As New SfRichTextBoxAdv()
+Dim isCommentPaneVisible As Boolean = richTextBoxAdv.EditorSettings.IsCommentPaneVisible
+
+{% endhighlight %}
+{% endtabs %}
+
