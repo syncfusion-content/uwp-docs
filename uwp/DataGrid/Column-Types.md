@@ -1606,7 +1606,7 @@ The following screenshot illustrates the different ShipCity ItemsSource bound to
 
 ![Displaying different itemssource for different rows using ItemsSourceSelector property of GridComboBoxColumn in UWP SfDataGrid](Column-Types_images/Column-Types_img38.png)
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnUWP-1974208434.zip).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnUWP-1974208434.zip).
 
 ## GridMultiColumnDropDownList
 
