@@ -31,7 +31,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The[SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
 
-![Adding control via designer](Getting-Started_images/Getting-Started-img1.png)
+![Adding control via designer](getting-started_images/getting-started-img1.png)
 
 ## Adding control manually in XAML
 
@@ -108,7 +108,7 @@ Dim datePicker1 As SfDatePicker = New SfDatePicker() With {
 
 {% endtabs %}
 
-![Adding control via XAML or code](Getting-Started_images/Getting-Started-img2.png)
+![Adding control via XAML or code](getting-started_images/getting-started-img3.png)
 
 ## Customizing the date format
 
@@ -157,5 +157,5 @@ You can customize the [SfDateSelector](https://help.syncfusion.com/cr/uwp/Syncfu
 
 {% endtabs %}
 
-![customizing SfDateSelector header](Getting-Started_images/Getting-Started-img4.png)
+![customizing SfDateSelector header](getting-started_images/getting-started-img4.png)
 
