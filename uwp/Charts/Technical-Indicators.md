@@ -121,7 +121,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AccumulationDistributionIndicator type in UWP Chart](Technical-Indicators_images/overview_1.png)
+![AccumulationDistributionIndicator type in UWP Chart](technical-indicators_images/rsi.png)
 
 
 The following sections covers all the different types of technical indicators available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html).
@@ -175,10 +175,10 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AverageTrueRangeIndicator type in UWP Chart](Technical-Indicators_images/atr.png)
+![AverageTrueRangeIndicator type in UWP Chart](technical-indicators_images/atr.png)
 
 
-## Simple Average 
+## Simple Average technical-indicators_images/atr.png
 
 The following code example demonstrates the usage of [`SimpleAverageIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html).
 
@@ -227,7 +227,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![SimpleAverageIndicator type in UWP Chart](Technical-Indicators_images/sa.png)
+![SimpleAverageIndicator type in UWP Chart](technical-indicators_images/sa.png)
 
 
 ## RSI 
@@ -287,7 +287,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![RSITechnicalIndicator type in UWP Chart](Technical-Indicators_images/rsi.png)
+![RSITechnicalIndicator type in UWP Chart](technical-indicators_images/overview_1.png)
 
 
 ## Momentum 
@@ -341,7 +341,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![MomentumTechnicalIndicator type in UWP Chart](Technical-Indicators_images/momentum.png)
+![MomentumTechnicalIndicator type in UWP Chart](technical-indicators_images/momentum.png)
 
 
 ## Stochastic 
@@ -403,7 +403,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![StochasticTechnicalIndicator type in UWP Chart](Technical-Indicators_images/stochastic.png)
+![StochasticTechnicalIndicator type in UWP Chart](technical-indicators_images/stochastic.png)
 
 
 ## Exponential Average
@@ -453,7 +453,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![ExponentialAverageIndicator type in UWP Chart](Technical-Indicators_images/exponential.png)
+![ExponentialAverageIndicator type in UWP Chart](technical-indicators_images/exponential.png)
 
 
 ## Triangular Average 
@@ -503,7 +503,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![TriangularAverageIndicator type in UWP Chart](Technical-Indicators_images/ta.png)
+![TriangularAverageIndicator type in UWP Chart](technical-indicators_images/ta.png)
 
 
 ## Accumulation Distribution 
@@ -557,7 +557,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![AccumulationDistributionIndicator type in UWP Chart](Technical-Indicators_images/accumulation.png)
+![AccumulationDistributionIndicator type in UWP Chart](technical-indicators_images/accumulation.png)
 
 
 ## Bollinger Band
@@ -615,7 +615,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![BollingerBandIndicator type in UWP Chart](Technical-Indicators_images/bollinger.png)
+![BollingerBandIndicator type in UWP Chart](technical-indicators_images/bollinger.png)
 
 
 ## MACD 
@@ -681,6 +681,6 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-![MACDTechnicalIndicator type in UWP Chart](Technical-Indicators_images/macd.png)
+![MACDTechnicalIndicator type in UWP Chart](technical-indicators_images/macd.png)
 
 

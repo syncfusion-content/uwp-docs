@@ -11,7 +11,7 @@ documentation: ug
 
 The SfComboBox control allows the user to select an item from a list of suggestions.
 
-![Overview of the control](Populating-Items_images/SfComboBox.png)
+![Overview of the control](populating-items_images/sfcombobox.png)
 
 ## Adding SfComboBox control
 
@@ -204,7 +204,7 @@ Bind the Employees collection to the ItemsSource property of the SfComboBox.
 
 The above steps populate the SfComboBox as illustrated in the following screenshot.
 
-![Showing itemsource property of UWP sfcombobox](Populating-Items_images/Populating-Items_img1.png)
+![Showing itemsource property of UWP sfcombobox](populating-items_images/populating-items_img1.png)
 
 ### DisplayMemberPath
 
@@ -222,7 +222,7 @@ DisplayMemberPath="Name" ItemsSource="{Binding Products}" />
 
 This populates the SfComboBox as illustrated in the following screenshot. 
 
-![Showing product name of the UWP sfcombobox](Populating-Items_images/Populating-Items_img2.png)
+![Showing product name of the UWP sfcombobox](populating-items_images/populating-items_img2.png)
 
 
 
@@ -260,4 +260,4 @@ The ItemTemplate property of the SfComboBox can be used to customize the content
 
 This populates the SfComboBox as illustrated in the following screenshot.
 
-![Showing employee name of the UWP sfcombobox](Populating-Items_images/Populating-Items_img3.png)
+![Showing employee name of the UWP sfcombobox](populating-items_images/populating-items_img3.png)
