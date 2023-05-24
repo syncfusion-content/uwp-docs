@@ -27,7 +27,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
 
-![Adding control via designer](GettingStarted_images/GettingStarted_img1.png)
+![Adding control via designer](GettingStarted_images/uwp-timepicker-control-added-via-designer.png)
 
 ## Adding control manually in XAML
 
