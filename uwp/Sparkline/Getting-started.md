@@ -18,7 +18,7 @@ The following section helps you to build your application with SfChart.
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
 
-![Reference Manager Dialog Windows in Visual Studio](Getting-started_images/GettingStarted_img1a.png)
+![Reference Manager Dialog Windows in Visual Studio](getting-started_images/gettingstarted_img1a.png)
 
 Add the following namespace in your XAML window.
 
@@ -42,13 +42,13 @@ using Syncfusion.UI.Xaml.Charts;
 
 Drag and drop the Sparkline controls from the Toolbox to your application.
 
-![Visual Studio Toolbox](Getting-started_images/GettingStarted_img1.jpeg)
+![Visual Studio Toolbox](getting-started_images/gettingstarted_img1.jpeg)
 
 Now the Syncfusion.SfChart.UWP reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml as below.
 
-![Project Solution Window contains SfChart reference](Getting-started_images/GettingStarted_img2.png)
+![Project Solution Window contains SfChart reference](getting-started_images/gettingstarted_img2.png)
 
-![UWP Sparkline Getting Started Image](Getting-started_images/GettingStarted_img3.jpeg)
+![UWP Sparkline Getting Started Image](getting-started_images/gettingstarted_img3.jpegg)
 
 ### Initialize the Sparkline
 
@@ -168,7 +168,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![Simple SfLineSparkline](Getting-started_images/GettingStarted_img4.jpeg)
+![Simple SfLineSparkline](getting-started_images/gettingstarted_img4.jpeg)
 
 
 ## Create a simple sparkline from Code behind(C#/VB)
@@ -319,4 +319,4 @@ grid.Children.Add(sfLineSparkline);
 
 {%endhighlight%}
 
-![Simple SfLineSparkline](Getting-started_images/GettingStarted_img4.jpeg)
+![Simple SfLineSparkline](getting-started_images/gettingstarted_img4.jpeg)

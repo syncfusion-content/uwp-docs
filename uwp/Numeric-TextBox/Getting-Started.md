@@ -58,4 +58,4 @@ Dim numericTextBox As New SfNumericTextBox()
 
 ## See also
 
-[How to restrict the decimal values in SfNumericTextBox](https://www.syncfusion.com/kb/6957/how-to-restrict-the-decimal-values-in-sfnumerictextbox)
+[How to restrict the decimal values in SfNumericTextBox](https://www.syncfusion.com/kb/article/6346/how-to-restrict-the-decimal-values-in-sfnumerictextbox)

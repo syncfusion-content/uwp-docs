@@ -17,7 +17,7 @@ SfRibbon allows the user to implement Touch based Ribbon layout and functionalit
 * Several Ribbon controls are provided with three size forms Extra-Small, Small and Large.
 
 
-![SfRibbon control](Overview_images/Overview_img1.png)
+![SfRibbon control](overview_images/overview_img1.png)
 
 
 

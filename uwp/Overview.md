@@ -20,7 +20,7 @@ Essential UWP is a comprehensive collection of 35+ enterprise-grade UWP componen
 
 ## Additional help resources
 
-The [Knowledge Base](https://www.syncfusion.com/kb/uwp) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
+The [Knowledge Base](https://www.syncfusion.com/kb/category/80) section contains responses to some of the most common questions that other customers have asked in the past, so this would be a good place to search for topics that are not covered in the user guide.
 
 Similar to the [Knowledge Base](https://www.syncfusion.com/kb/uwp), the [Forum](https://www.syncfusion.com/forums/uwp) section also contains responses to questions that other customers have asked in the past.
 
