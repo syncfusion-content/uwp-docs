@@ -109,7 +109,7 @@ Store the images in project and set the properties `Header` and `ImageList` as g
 
 {% endtabs %}
 
-![Pulsing tile displayed bitmap](SfSplitMosaicTile-images/SfSplitMosaicTile-img1.jpeg)
+![Pulsing tile displayed bitmap](sfsplitmosaictile-images/sfsplitmosaictile-img1.jpeg)
 
 ## Configuring the tile
 
@@ -145,7 +145,7 @@ splitMosaicTile.Header = "Mosaic Tile"
 
 {% endtabs %}
 
-![Pulsing tile scaled the bitmap content](SfSplitMosaicTile-images/SfSplitMosaicTile-img4.jpeg)
+![Pulsing tile scaled the bitmap content](sfsplitmosaictile-images/sfsplitmosaictile-img4.jpeg)
 
 ## Adding image collection
 
@@ -334,7 +334,7 @@ End Sub
 
 {% endtabs %}
 
-![Pulsing tile displayed header](SfSplitMosaicTile-images/SfSplitMosaicTile-img5.jpeg)
+![Pulsing tile displayed header](sfsplitmosaictile-images/sfsplitmosaictile-img5.jpeg)
 
 ## Checking image existence
 

@@ -86,6 +86,6 @@ Dim dropDownButton As New SfDropDownButton()
 
 This will create an empty SfDropDownButton control.
 
-![SfDropDownButton control](Getting-Started_images/Getting-Started_img1.jpeg)
+![SfDropDownButton control](getting-started_images/getting-started_img1.jpeg)
 
 

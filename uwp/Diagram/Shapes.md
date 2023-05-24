@@ -42,19 +42,19 @@ The following code example illustrates how to assign Shape property of the Node.
 
 Output Node will be,
 
- ![UWP SfDiagram Shapes Image1](Shapes_images\Shapes_image1.PNG)
+ ![UWP SfDiagram Shapes Image1](shapes_images/shapes_image1.png)
   
  The list of basic shapes are as follows
  
- ![UWP SfDiagram Shapes Image2](Shapes_images\Shapes_image2.PNG)
+ ![UWP SfDiagram Shapes Image2](shapes_images/shapes_image2.png)
  
 The list of flow shapes are as follows
 
-![UWP SfDiagram Shapes Image4](Shapes_images\Shapes_image4.PNG)
+![UWP SfDiagram Shapes Image4](shapes_images/shapes_image4.png)
  
 The list of arrow shapes are as follows
 
-![UWP SfDiagram Shapes Image5](Shapes_images\Shapes_image5.PNG)
+![UWP SfDiagram Shapes Image5](shapes_images/shapes_image5.png)
 
 
 

@@ -128,7 +128,7 @@ hubTile.SecondaryContent = New Image() With {.Source = New BitmapImage(New Uri("
 
 {% endtabs %}
 
-![Hubtile displayed mail icon with white forecolor](SfHubTile-images/SfHubTile-img1.jpeg)
+![Hubtile displayed mail icon with white forecolor](sfhubtile-images/sfhubtile-img1.jpeg)
 
 ### Applying tile transitions
 
@@ -299,9 +299,9 @@ hubTile.ImageSource = primaryContent
 
 {% endtabs %}
 
-![Hubtile displayed primary content](SfHubTile-images/SfHubTile-img4.jpeg)
+![Hubtile displayed primary content](sfhubtile-images/sfhubtile-img4.jpeg)
 
-![Hubtile displayed secondary content](SfHubTile-images/SfHubTile-img5.jpeg)
+![Hubtile displayed secondary content](sfhubtile-images/sfhubtile-img5.jpeg)
 
 ## Animation and Transitions
 
@@ -345,24 +345,24 @@ hubTile.Interval = TimeSpan.FromSeconds(1)
 
 Main and Secondary contents rotate with specified interval.
 
-![Hubtile rotate primary content](SfHubTile-images/SfHubTile-img6.jpeg)
+![Hubtile rotate primary content](sfhubtile-images/sfhubtile-img6.jpeg
 
-![Hubtile rotate content vertically](SfHubTile-images/SfHubTile-img7.jpeg)
+![Hubtile rotate content vertically](sfhubtile-images/sfhubtile-img7.jpeg)
 
 ### Tile slide animation
 
 Main and Secondary contents slide with specified interval.
 
-![Hubtile side content with animation](SfHubTile-images/SfHubTile-img8.jpeg)
+![Hubtile side content with animation](sfhubtile-images/sfhubtile-img8.jpeg)
 
 
 ### Tile fade animation
 
 Main and Secondary contents fade with specified interval.
 
-![Hubtile content faded with high opacity](SfHubTile-images/SfHubTile-img10.jpeg)
+![Hubtile content faded with high opacity](sfhubtile-images/sfhubtile-img10.jpeg)
 
-![Hubtile content faded with low opacity](SfHubTile-images/SfHubTile-img11.jpeg)
+![Hubtile content faded with low opacity](sfhubtile-images/sfhubtile-img11.jpegg)
 
 {% tabs %}
 
@@ -533,7 +533,7 @@ Header="HubTile" SecondaryContent="This is secondary.">
 
 {% endtabs %}
 
-![Hubtile secondary content customized with red foreground](SfHubTile-images/SfHubTile-img13.jpeg)
+![Hubtile secondary content customized with red foreground](sfhubtile-images/sfhubtile-img13.jpeg)
 
 AccentBrush and TitleStyle topics are available under HubTileBase section.
 

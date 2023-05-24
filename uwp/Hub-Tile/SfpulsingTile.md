@@ -172,7 +172,7 @@ pulsingTile.Content = New Image() With {
 
 {% endtabs %}
 
-![Pulsing tile zoom displayed bitmap content](SfpulsingTile-images/SfpulsingTile-img1.jpeg)
+![Pulsing tile zoom displayed bitmap content](sfpulsingtile-images/sfpulsingtile-img1.jpeg)
 
 ## Configuring the tile
 
@@ -208,7 +208,7 @@ pulsingTile.Header = "Pulsing Tile"
 
 {% endtabs %}
 
-![Pulsing tile displayed header](SfpulsingTile-images/SfpulsingTile-img4.jpeg)
+![Pulsing tile displayed header](sfpulsingtile-images/sfpulsingtile-img4.jpeg)
 
 ### Setting the content
 
@@ -258,7 +258,7 @@ pulsingTile.Content = New Image() With {
 
 {% endtabs %}
 
-![Pulsing tile displayed bitmap content](SfpulsingTile-images/SfpulsingTile-img5.jpeg)
+![Pulsing tile displayed bitmap content](sfpulsingtile-images/sfpulsingtile-img5.jpeg)
 
 ## Customizing animation
 
