@@ -455,4 +455,4 @@ void Restore(object sender, TappedRoutedEventArgs e)
 
 {% endtabs %}
 
-![Selected content maximized in TileView with minimized items docked at right side](Overview-images/Overview-img1.jpeg)
+![Selected content maximized in TileView with minimized items docked at right side](overview-images/overview-img1.jpeg)
