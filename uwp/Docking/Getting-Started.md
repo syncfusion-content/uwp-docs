@@ -82,7 +82,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-![Docking Manager displayed dock windows without header](Getting-Started-images/Getting-Started-img1.jpeg)
+![Docking Manager displayed dock windows without header](Getting-Started-images/uwp-docking-add-control.jpeg)
 
 
 ## Set Header for the Children
@@ -111,7 +111,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-![Dock windows with header in DockingManager](Getting-Started-images/Getting-Started-img2.jpeg)
+![Dock windows with header in DockingManager](Getting-Started-images/uwp-diagram-set-header.jpeg)
 
 
 ## Set State for the Children
@@ -142,7 +142,7 @@ To Auto hide the “ToolBox” window, set its `DockState` property as `AutoHidd
 
 {% endtabs %}
 
-![Dock, float and document windows in Docking Manager](Getting-Started-images/Getting-Started-img4.jpeg)
+![Dock, float and document windows in Docking Manager](Getting-Started-images/uwp-diagram-set-state.jpeg)
 
 
 ## Set Sides for the Children
@@ -181,6 +181,6 @@ The `SideInDockedMode` property’s Tabbed option is used to tab a window on ano
 
 {% endtabs %}
 
-![Docked windows over another window in Docking Manager](Getting-Started-images/Getting-Started-img5.jpeg)
+![Docked windows over another window in Docking Manager](Getting-Started-images/uwp-diagram-set-sides-img5.jpeg)
 
 
