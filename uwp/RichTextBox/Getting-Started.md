@@ -67,7 +67,7 @@ richTextBoxAdv.Load(memoryStream, FormatType.Docx);
 
 After adding the aforementioned assembly references to your application, you can add SfRichTextBoxAdv as any normal control.
 You can either drag the SfRichTextBoxAdv control from the toolbox window to the Design view or directly define the control in XAML view.
-![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.jpeg)
+![Getting-Started_img1](Getting-Started_images/uwp-richtextbox-adding-to-an-application.jpeg)
 
 {% tabs %}
 {% highlight xaml %}

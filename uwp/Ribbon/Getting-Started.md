@@ -71,7 +71,7 @@ Dim _ribbon As New SfRibbon()
 
 Execute the above code to render the following output.
 
-![SfRibbon control for UWP](Getting-Started_images/Getting-Started_img1.jpeg)
+![SfRibbon control for UWP](Getting-Started_images/uwp-ribbon-add-ribbon-control.jpeg)
 
 
 ## Add Ribbon Tab
@@ -134,7 +134,7 @@ _ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
 
 Execute the above code to render the following output.
 
-![Ribbon Tab](Getting-Started_images/Getting-Started_img2.jpeg)
+![Ribbon Tab](Getting-Started_images/uwp-ribbon-add-ribbon-tab.jpeg)
 
 ## How to capture the click of SfRibbonTab?
 
@@ -168,7 +168,7 @@ private async void SfRibbonTab_Tapped(object sender, TappedRoutedEventArgs e)
 
 {% endtabs %}
 
-![Click of Ribbon tab](Getting-Started_images/Getting-Started_img7.jpeg)
+![Click of Ribbon tab](Getting-Started_images/uwp-ribbon-click-of-ribbon-tab.jpeg)
 
 ## Add Ribbon Bar
 
@@ -249,7 +249,7 @@ _ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
 
 Execute the above code to render the following output.
 
-![Adding Ribbon bar](Getting-Started_images/Getting-Started_img3.jpeg)
+![Adding Ribbon bar](Getting-Started_images/uwp-ribbon-add-ribbon-bar.jpeg)
 
 
 ## Add Ribbon controls to RibbonBar
@@ -355,7 +355,7 @@ _ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
 
 Execute the above code to render the following output.
 
-![Adding items to RibbonBar](Getting-Started_images/Getting-Started_img4.jpeg)
+![Adding items to RibbonBar](Getting-Started_images/uwp-ribbon-adding-items-to-ribbon-bar.jpeg)
 
 
 ## Configure QAT
@@ -399,7 +399,7 @@ QAT items can be added as follows,
 
 You can limit the number of viewable items in QAT by setting DisplayItemsCount property. When the total number of items exceeds DisplayItemsCount, scroll QAT for viewing the items.
 
-![Configuring QAT](Getting-Started_images/Getting-Started_img5.jpeg)
+![Configuring QAT](Getting-Started_images/uwp-ribbon-configuring-qat.jpeg)
 
 
 ## Configure BackStage
@@ -427,6 +427,6 @@ BackStageButton and BackStage TabItems can be added as follows,
 
 {% endtabs %}
 
-![Configure BackStage](Getting-Started_images/Getting-Started_img6.jpeg)
+![Configure BackStage](Getting-Started_images/uwp-ribbon-configure-backstage.jpeg)
 
 
