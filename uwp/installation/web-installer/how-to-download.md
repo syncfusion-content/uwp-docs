@@ -31,7 +31,7 @@ Our 30-day trial can be downloaded in two ways.
    
 3. With a trial license, only the latest version’s trial installer can be downloaded.
 4. After downloading, the Syncfusion UWP web installer can be unlocked using either the trial unlock key or the Syncfusion registered login credential. More information on generating an unlock key can be found in [this](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) article.
-5. Before the trial expires, you can download the trial installer at any time from your registered account’s [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page (as shown in below screenshot.)
+5. Before the trial expires, you can download the trial installer at any time from your registered account’s [Trials & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fmanage-trials%2fdownloads) page (as shown in below screenshot.)
 6. Click the Download (element 1 in the screenshot below) button to get the Syncfusion Essential Studio UWP web installer.
  
    ![Trial and downloads of Syncfusion Essential Studio](images/trial-download.png)
@@ -61,16 +61,16 @@ You should initiate an evaluation if you have already obtained our components th
 
 ## Download the License Version
 
-1. Syncfusion licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion account.
+1. Syncfusion licensed products will be available in the [License & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) page under your registered Syncfusion account.
 2. You can view all the licenses (both active and expired) associated with your account.
 3. Click the Download (element 1 in the screenshot below) button to download the UWP web installer.
 4. The most recent version of the installer will be downloaded from this page.
-5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
+5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads%2fstudio) (element 2 in the screenshot below).
 6. You can download other platform\add-on installers by going to More Downloads Option (element 3 in the screenshot below).
 
    ![License and downloads of Syncfusion Essential Studio](images/license-download.png)
    
-7. Before the license expires, you can download the installer at any time from your registered account’s [License & Downloads](https://www.syncfusion.com/account/downloads) page (See the screenshot below.)
+7. Before the license expires, you can download the installer at any time from your registered account’s [License & Downloads](https://www.syncfusion.com/Account/Login?ReturnUrl=%2faccount%2fdownloads) page (See the screenshot below.)
    
    ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
    

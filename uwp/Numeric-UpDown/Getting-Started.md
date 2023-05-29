@@ -62,6 +62,6 @@ Dim numericUpDown As New SfNumericUpDown() With {
 
 ## See also
 
-[How to restrict the decimal values in SfNumericUpDown](https://www.syncfusion.com/kb/6508/how-to-restrict-the-decimal-values-in-sfnumericupdown)
+[How to restrict the decimal values in SfNumericUpDown](https://www.syncfusion.com/kb/article/6004/how-to-restrict-the-decimal-values-in-sfnumericupdown)
 
-[How to increment and decrement the value of SfNumericUpDown control](https://www.syncfusion.com/kb/6961/how-to-increment-and-decrement-the-value-of-sfnumericupdown-control)
+[How to increment and decrement the value of SfNumericUpDown control](https://www.syncfusion.com/kb/article/6282/how-to-increment-and-decrement-the-value-of-sfnumericupdown-control)
