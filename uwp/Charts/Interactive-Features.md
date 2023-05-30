@@ -900,7 +900,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Visibility support for trackball line in UWP Chart](Interactive-Features_images/Interactive-Features_img8.jpeg)
+![Visibility support for trackball line in UWP Chart](interactive-features_images/uwp-charts-interactive-features-vissibility.jpeg)
 
 
 **Customization of TrackBall line**
@@ -954,7 +954,7 @@ chart.Behaviors.Add(trackball);
 
 {% endtabs %}
 
-![TrackBall line customization in UWP Chart](Interactive-Features_images/Interactive-Features_img9.jpeg)
+![TrackBall line customization in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-line.jpeg)
 
 
 ### Symbol
