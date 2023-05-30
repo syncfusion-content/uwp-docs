@@ -203,4 +203,4 @@ carousel.Items.Add(New SfCarouselItem() With {
 
 {% endtabs %}
 
-![Step by Step Carousel](SfCarousel-images/SfCarousel-img1.jpeg)
+![Step by Step Carousel in UWP](sfcarousel-images/uwp-carousel-step-by-step.jpeg)
