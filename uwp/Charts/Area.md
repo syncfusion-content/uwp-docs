@@ -43,7 +43,7 @@ chart.Header = "Usage of Metals";
 
 {% endtabs %}
 
-![SfChart with header.](Area_images/Area_img1.jpeg)
+![SfChart with header in UWP.](area_images/uwp-charts-area-chart-with-header.jpeg)
 
 
 Header can be positioned left or right side of the chart using [`HorizontalHeaderAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property.
@@ -119,7 +119,7 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Header customization in SfChart](Area_images/Area_img2.jpeg)
+![Header customization in SfChart](area_images/uwp-charts-area-header-customization.jpeg)
 
 
 N> Here, HorizontalHeaderAlignment is set as ‘Right’.
@@ -166,7 +166,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 {% endtabs %}
 
-![SfChart with customized plot area](Area_images/Area_img3.jpeg)
+![SfChart with customized plot area in UWP](area_images/uwp-charts-area-customized-plot.jpeg)
 
 
 ## Multiple Area 
@@ -319,7 +319,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![SfChart with multiple panes](Area_images/Area_img4.jpeg)
+![SfChart with multiple panes in UWP](Area_images/uwp-charts-area-multiple-panes.jpeg)
 
 
 ## Column Span and Row Span
@@ -460,7 +460,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![SfChart with two y axes, one axis spanned to two rows](Area_images/Area_img5.jpeg)
+![SfChart with two y axes, one axis spanned to two rows](area_images/uwp-charts-area-column-and-row-span.jpeg)
 
 
 ## Placing Series Side-By-Side
@@ -469,7 +469,7 @@ It defines the placement pattern of bar type series like [`Column`](https://help
 
 It is a Boolean property and its default value is true so the segment will be placed adjacent to each other (Clustered).
 
-![Column chart type placed side by side](Area_images/Area_img6.jpeg)
+![Column chart type placed side by side in UWP](area_images/uwp-charts-area-side-by-side.jpeg)
 
 
 The following code example and image illustrates the placement of series while setting [`SideBySideSeriesPlacement`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SideBySideSeriesPlacement) as false.
@@ -597,7 +597,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![Column chart type place one over another.](Area_images/Area_img7.jpeg)
+![Column chart type place one over another in UWP.](area_images/uwp-charts-area-one-over-another.jpeg)
 
 
 N>As the series will be placed one over the other(overlapped), to differentiate between the series the [`SegmentSpacing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ISegmentSpacing.html#Syncfusion_UI_Xaml_Charts_ISegmentSpacing_SegmentSpacing) is used.
