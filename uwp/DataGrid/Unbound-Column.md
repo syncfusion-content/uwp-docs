@@ -365,7 +365,7 @@ In the below code snippet, `Foreground` and `Background` of the cells in GridUnB
 
 ![Unbound-Column_img5](Unbound-Column_images/Unbound-Column_img5.png)
 
-You can refer the [Styling](https://help.syncfusion.com/uwp/datagrid/getting-started#styling-gridcolumn) section of `GridColumn` for more information.
+You can refer the [Styling](https://help.syncfusion.com/uwp/datagrid/column-types#styling-gridcolumn) section of `GridColumn` for more information.
 
 
 ## Customize the Unbound column behavior
@@ -449,8 +449,8 @@ public class GridUnBoundCellTextBoxRendererExt: GridUnBoundCellTextBoxRenderer
 
 ### Custom Renderer
 
-You can change the renderer of unbound column by removing the predefined cell type value from [CellRenderers](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellRenderers) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer-2.html). Refer the [Create the renderer for existing column section](https://help.syncfusion.com/uwp/datagrid/getting-started#create-the-renderer-of-existing-column) for more information to create the custom renderer in columns section.
+You can change the renderer of unbound column by removing the predefined cell type value from [CellRenderers](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CellRenderers) collection and add the newly derived renderer from [GridVirtualizingCellRenderer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Cells.GridVirtualizingCellRenderer-2.html). Refer the [Create the renderer for existing column section](https://help.syncfusion.com/uwp/datagrid/column-types#create-the-renderer-of-existing-column) for more information to create the custom renderer in columns section.
 
 ## Templating unbound column
 
-You can load any WPF control in the display mode for `GridUnBoundColumn` by setting `GridColumn.CellTemplate` property. In edit mode, corresponding editor will be loaded based on column type. You can refer the [CellTemplate](https://help.syncfusion.com/uwp/datagrid/getting-started#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](https://help.syncfusion.com/uwp/datagrid/getting-started#gridtemplatecolumn) for more information.
+You can load any WPF control in the display mode for `GridUnBoundColumn` by setting `GridColumn.CellTemplate` property. In edit mode, corresponding editor will be loaded based on column type. You can refer the [CellTemplate](https://help.syncfusion.com/uwp/datagrid/column-types#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](https://help.syncfusion.com/uwp/datagrid/column-types#gridtemplatecolumn) for more information.

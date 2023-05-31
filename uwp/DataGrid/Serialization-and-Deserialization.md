@@ -318,7 +318,7 @@ SfDataGrid allows you to customize the serialization and deserialization operati
  
 By default, the unknown(custom) column types are serialized as `GridTextColumn` type. If you want to serialize the custom column, you have to add custom column type into predefined types.
  
-In the below code snippet,  TimePickerColumn is created .For more information about creating custom column refer [here](https://help.syncfusion.com/uwp/datagrid/getting-started#creating-new-column-and-renderer).
+In the below code snippet,  TimePickerColumn is created .For more information about creating custom column refer [here](https://help.syncfusion.com/uwp/datagrid/column-types#creating-new-column-and-renderer).
 
 {% tabs %}
 {% highlight c# %}
