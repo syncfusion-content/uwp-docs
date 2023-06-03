@@ -385,7 +385,7 @@ private void FirstDetailsViewGrid_SelectionChanged(object sender, Syncfusion.UI.
 
 N> You can get the SelectedIndex and SelectedItems also in selection changed event.
 
-You can refer [here](http://help.syncfusion.com/uwp/sfdatagrid/master-details-view#handling-events-for-detailsviewdatagrid) to wire the events for `ViewDefinition.DataGrid` based on `AutoPopulateRelations` for different levels.
+You can refer [here](https://help.syncfusion.com/uwp/datagrid/master-details-view#handling-events-for-detailsviewdatagrid) to wire the events for `ViewDefinition.DataGrid` based on `AutoPopulateRelations` for different levels.
 
 ### Get the CurrentItem of DetailsViewDataGrid
 
@@ -428,7 +428,7 @@ private void FirstDetailsViewGrid_SelectionChanged(object sender, Syncfusion.UI.
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [here](http://help.syncfusion.com/uwp/sfdatagrid/master-details-view#handling-events-for-detailsviewdatagrid) to wire the events from `ViewDefinition.DataGrid` based on `AutoPopulateRelations` for different levels.
+You can refer [here](https://help.syncfusion.com/uwp/datagrid/master-details-view#handling-events-for-detailsviewdatagrid) to wire the events from `ViewDefinition.DataGrid` based on `AutoPopulateRelations` for different levels.
 
 ### Get CurrentCell of DetailsViewDataGrid
 
@@ -469,7 +469,7 @@ void FirstLevelNestedGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEd
 {% endhighlight %}
 {% endtabs %}
 
-You can refer [here](http://help.syncfusion.com/uwp/sfdatagrid/master-details-view#handling-events-for-detailsviewdatagrid) to wire the events from the `ViewDefinition.DataGrid` based on `AutoPopulateRelations` for different levels.
+You can refer [here](https://help.syncfusion.com/uwp/datagrid/master-details-view#handling-events-for-detailsviewdatagrid) to wire the events from the `ViewDefinition.DataGrid` based on `AutoPopulateRelations` for different levels.
 
 ### Programmatic Selection in DetailsViewDataGrid
 
@@ -599,7 +599,7 @@ if (detailsViewDataGrid == null)
 ![Programmatic expansion and scrolling of Master-Details View in UWP DataGrid](Selection_images/Selection_img10.png)
 
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/SELECT~1-1466905114.ZIP).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/SELECT~1-1466905114.ZIP).
 
 ### Programmatically select the records in DetailsViewDataGrid which is not in view
 
@@ -659,7 +659,7 @@ detailsViewDataGrid.SelectedIndex = childIndex;
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/SELECT~1638424730.ZIP ).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/SELECT~1638424730.ZIP ).
 
 ### Customizing the SelectionController for DetailsViewDataGrid
 
@@ -1563,7 +1563,7 @@ private void dataGrid_PointerPressed(object sender, PointerRoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/COLUMN~1-134284707.ZIP).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/COLUMN~1-134284707.ZIP).
 
 ![Column selection when clicking column header in UWP DataGrid](Selection_images/Selection_img15.png)
 
