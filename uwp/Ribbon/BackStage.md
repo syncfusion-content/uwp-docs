@@ -78,7 +78,7 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 ![BackStage_img1](BackStage_images/BackStage_img1.jpeg)
 
-# BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
+## BackStage Tab Item in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 * In case of BackStageTabItem, BackStage page has been displayed by loading the Content Control inside it as like below 
 
@@ -102,7 +102,7 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 ![BackStage_img2](BackStage_images/BackStage_img2.jpeg)
 
-# BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
+### BackStage Button in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 * In case of BackStageButton, BackStage page has been displayed in the click event of BackStage button as follow
 
