@@ -166,7 +166,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 {% endtabs %}
 
-![SfChart with customized plot area in UWP](area_images/uwp-charts-area-customized-plot.jpeg)
+![SfChart with customized plot area in UWP](area_images/uwp-charts-plot-area-customization.jpeg)
 
 
 ## Multiple Area 
