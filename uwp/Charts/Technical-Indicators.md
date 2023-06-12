@@ -138,7 +138,7 @@ You can define the [`AverageTrueRangeIndicator`](https://help.syncfusion.com/cr/
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:AverageTrueRangeIndicator ItemsSource="{Binding  ViewModel1}"    
+<chart:AverageTrueRangeIndicator ItemsSource="{Binding ViewModel1}"
 
 Period="3" XBindingPath="Date" Volume="Volume"
 
