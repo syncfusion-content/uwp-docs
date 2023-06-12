@@ -319,7 +319,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![SfChart with multiple panes in UWP](Area_images/uwp-charts-area-multiple-panes.jpeg)
+![SfChart with multiple panes in UWP](area_images/uwp-charts-area-multiple-panes.jpeg)
 
 
 ## Column Span and Row Span
