@@ -61,4 +61,4 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 Above code example creates the calculator as follows and perform mathematical arithmetic operations using the provided buttons:
 
-![SfCalculator in UWP](sfcalculator-images/uwp-calculator-adding-sfcalculator-control.jpeg)
+![SfCalculator in UWP](sfcalculator-images/uwp-adding-sfcalculator-control.jpeg)
