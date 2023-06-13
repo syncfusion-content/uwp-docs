@@ -56,7 +56,7 @@ Dim busyIndicator As New SfBusyIndicator()
 
 {% endtabs %}
 
-![Animation Winmil in UWP Busy Indicator](sfbusyindicator1/uwp-busy-indicator-winrt.png)
+![Animation Winmil in UWP Busy Indicator](sfbusyindicator1/uwp-busy-indicator-winmil-animation.png)
 
 ## Choosing Animation
 
