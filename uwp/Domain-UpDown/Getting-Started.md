@@ -55,3 +55,5 @@ Dim domainUpDown As New SfDomainUpDown()
 {% endhighlight %}
 
 {% endtabs %}
+
+N> You can refer to our [UWP Domain Updown feature tour](https://www.syncfusion.com/uwp-ui-controls/domain-up-down) page to know about its other groundbreaking feature representations. You can also explore our [UWP Domain Updown example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) to understand how to present and manipulate data.
