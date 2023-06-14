@@ -58,6 +58,6 @@ Dim numericTextBox As New SfNumericTextBox()
 
 ## See also
 
-[How to restrict the decimal values in SfNumericTextBox](https://www.syncfusion.com/kb/6957/how-to-restrict-the-decimal-values-in-sfnumerictextbox)
+[How to restrict the decimal values in SfNumericTextBox](https://support.syncfusion.com/kb/article/6346/how-to-restrict-the-decimal-values-in-sfnumerictextbox)
 
 N> You can refer to our [UWP Numeric Textbox feature tour](https://www.syncfusion.com/uwp-ui-controls/numeric-textbox) page to know about its other groundbreaking feature representations. You can also explore our [UWP Numeric Textbox example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) to understand how to present and manipulate data.
