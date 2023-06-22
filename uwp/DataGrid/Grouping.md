@@ -71,7 +71,7 @@ Each group is identified by its CaptionSummaryRows and it is used to organize th
 
 Each CaptionSummaryRow carries information about a particular group like group name, number of items (records) in the group, etc. 
 
-You can refer [Caption Summaries](http://help.syncfusion.com/uwp/sfdatagrid/summaries#caption-summaries) section, for more information about CaptionSummaryRow.
+You can refer [Caption Summaries](https://help.syncfusion.com/uwp/datagrid/summaries#caption-summaries) section, for more information about CaptionSummaryRow.
 
 
 ## Programmatic Grouping
@@ -452,12 +452,12 @@ Now, assign the GroupDateTimeConverter into `GroupColumnDescription.Converter` a
 
 ![Grouping_img8](Grouping_images/Grouping_img8.png)
 
-You can refer [here](http://help.syncfusion.com/uwp/sfdatagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied. You can download sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGrouping284384452.zip).
+You can refer [here](https://help.syncfusion.com/uwp/datagrid/sorting#custom-sorting) to apply custom sorting when grouping is applied. You can download sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomGrouping284384452.zip).
 
 ### Sorting Inner Records 
 
 In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_SortGroupRecords)
-sorted based on the column name described in [GroupColumnDescription](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html).
+sorted based on the column name described in [GroupColumnDescription](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -552,7 +552,7 @@ Custom group comparer can be defined in SfDataGrid using [SfDataGrid.SummaryGrou
 
 ![Grouping_img9](Grouping_images/Grouping_img9.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SortBySummaryDemo1086614349.zip).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SortBySummaryDemo1086614349.zip).
 
 
 ## Events
@@ -569,7 +569,7 @@ The [GroupChangingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xa
 
 [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group expansion.
  
-You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) to `true`.
+You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) to `true`.
 
 {% tabs %}
 {% highlight c# %}

@@ -83,7 +83,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in UWP Chart](Interactive-Features_images/Interactive-Features_image1.png)
+![Tooltip support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-tooltip.png)
 
 ### Customizing tooltip using ChartTooltipBehavior
 
@@ -158,7 +158,7 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip at pointer position in WPF Chart](Interactive-Features_images/Interactive-Features_image2.png)
+![Tooltip at pointer position in WPF Chart](interactive-features_images/uwp-charts-interactive-features-positioning-tooltip.png)
 
 ### Customizing the tooltip background
 
@@ -198,7 +198,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image3.png)
+![Tooltip background style customization in WPF Chart](interactive-features_images/uwp-charts-interactive-features-customizing-tooltip.png)
 
 ### Customizing the tooltip label style
 
@@ -238,7 +238,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image4.png)
+![Tooltip label style customization in WPF Chart](interactive-features_images/uwp-charts-interactive-features-customizing-tooltip-label-style.png)
 
 ### Customizing tooltip using ChartTooltip attached properties
 
@@ -308,7 +308,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_image5.png)
+![Tooltip alignment support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-horizontal-alignment.png)
 
 N> By default the [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalAlignment) is center for the tooltip.
 
@@ -374,7 +374,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_image6.png)
+![Tooltip alignment support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-vertical-alignment.png)
 
 **TooltipMargin**
 
@@ -450,7 +450,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_image7.png)
+![Margin for tooltip in UWP Chart](interactive-features_images/uwp-charts-interactive-features-tooltip-margin.png)
 
 
 N>By default the [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) of the Tooltip is Top
@@ -535,7 +535,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_image8.png)
+![VerticalOffset and HorizontalOffset support for tooltip in UWP Chart](interactive-features_images/uwp-charts-interactive-features-offset.png)
 
 ### Tooltip Duration
 
@@ -783,7 +783,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip customization support in UWP Chart](Interactive-Features_images/Interactive-Features_image9.png)
+![Tooltip customization support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-tooltip-customization.png)
 
 N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
 
@@ -854,7 +854,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The default appearance of the trackball in primary axis (CategoryAxis).
 
-![TrackBall support in UWP Chart](Interactive-Features_images/Interactive-Features_img7.jpeg)
+![TrackBall support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-support.jpeg)
 
 
 The Trackball is composed of the following parts.
@@ -900,7 +900,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Visibility support for trackball line in UWP Chart](Interactive-Features_images/Interactive-Features_img8.jpeg)
+![Visibility support for trackball line in UWP Chart](interactive-features_images/uwp-charts-interactive-features-vissibility.jpeg)
 
 
 **Customization of TrackBall line**
@@ -954,7 +954,7 @@ chart.Behaviors.Add(trackball);
 
 {% endtabs %}
 
-![TrackBall line customization in UWP Chart](Interactive-Features_images/Interactive-Features_img9.jpeg)
+![TrackBall line customization in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-line.jpeg)
 
 
 ### Symbol

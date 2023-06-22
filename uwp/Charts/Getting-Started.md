@@ -90,7 +90,7 @@ chart.SecondaryAxis = secondaryAxis
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html).
 
-![Initializing UWP Chart](Getting-Started_images/img1.png)
+![Initializing UWP Chart](getting-started_images/uwp-chart-initializing.png)
 
 N> [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly. 
 
@@ -672,7 +672,7 @@ End Class
 
 The following chart is created as a result of the above codes.
 
-![Tooltip support in UWP Chart](Getting-Started_images/img3.png)
+![Tooltip support in UWP Chart](getting-started_images/uwp-chart-tooltip-support.png)
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/How-to-create-a-Chart-control-example-in-UWP).
 
