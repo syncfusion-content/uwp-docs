@@ -222,7 +222,7 @@ DisplayMemberPath="Name" ItemsSource="{Binding Products}" />
 
 This populates the SfComboBox as illustrated in the following screenshot. 
 
-![Showing product name of the UWP sfcombobox](Populating-Items_images/uwp-combobox-display-member-path.png)
+![Showing product name of the UWP sfcombobox](populating-items_images/uwp-combobox-display-member-path.png)
 
 
 
@@ -260,4 +260,4 @@ The ItemTemplate property of the SfComboBox can be used to customize the content
 
 This populates the SfComboBox as illustrated in the following screenshot.
 
-![Showing employee name of the UWP sfcombobox](Populating-Items_images/uwp-combobox-item-template.png)
+![Showing employee name of the UWP sfcombobox](populating-items_images/uwp-combobox-item-template.png)

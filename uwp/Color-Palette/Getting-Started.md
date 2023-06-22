@@ -87,4 +87,4 @@ Dim colorPalette As New SfColorPalette()
 
 {% endtabs %}
 
-![SfColorPalette control](SfColorPalette-images/uwp-color-palette-control.jpeg)
+![UWP SfColorPalette control](sfcolorPalette-images/uwp-color-palette-control.jpeg)

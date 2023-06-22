@@ -258,4 +258,4 @@ treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header="Silverlight (30
 
 {% endtabs %}
 
-![Creating SfTreeNavigator control](overview-images/uwp-tree-navigator-creating.jpeg)
+![Creating UWP SfTreeNavigator control](overview-images/uwp-tree-navigator-creation.jpeg)

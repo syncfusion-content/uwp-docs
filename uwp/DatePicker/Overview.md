@@ -14,14 +14,14 @@ The SfDatePicker control allows the user to select date values in a touch friend
 ### Normal view:
 
 
-![DatePicker displayed the date in short format](Overview_images/uwp-datepicker-normal-view.png)
+![UWP DatePicker displayed the date in short format](overview_images/uwp-datepicker-normal-view.png)
 
 
 
 ### Expanded view:
 
 
-![DatePicker displayed selector to pick date](Overview_images/uwp-datepicker-expanded-view.png)
+![UWP DatePicker displayed selector to pick date](overview_images/uwp-datepicker-expanded-view.png)
 
 
 ### Key Features

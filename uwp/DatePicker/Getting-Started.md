@@ -108,7 +108,7 @@ Dim datePicker1 As SfDatePicker = New SfDatePicker() With {
 
 {% endtabs %}
 
-![Adding control via XAML or code](Getting-Started_images/uwp-datepicker-adding-control-via-code.png)
+![Adding UWP DatePicker control via XAML or code](getting-started_images/uwp-datepicker-control-adding-via-code.png)
 
 ## Customizing the date format
 
@@ -135,7 +135,7 @@ datePicker1.FormatString = "yyyy-dd-MM"
 
 {% endtabs %}
 
-![FormatString in SfDatePicker](Getting-Started_images/uwp-datepicker-customizing-the-date-format.png)
+![FormatString in UWP SfDatePicker](getting-started_images/uwp-datepicker-customizing-the-date-format.png)
 
 ## Customize SfDateSelector Header
 
@@ -157,5 +157,5 @@ You can customize the [SfDateSelector](https://help.syncfusion.com/cr/uwp/Syncfu
 
 {% endtabs %}
 
-![customizing SfDateSelector header](Getting-Started_images/uwp-datepicker-customize-header.png)
+![customizing UWP SfDateSelector header](getting-started_images/uwp-datepicker-customize-header.png)
 
