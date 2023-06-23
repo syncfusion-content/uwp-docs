@@ -54,6 +54,6 @@ Dim textBox As New SfTextBoxExt()
 
 {% endtabs %}
 
-N> You can refer to our [UWP AutoComplete feature tour](https://www.syncfusion.com/uwp-ui-controls/autosuggestbox) page to know about its other groundbreaking feature representations. You can also explore our [UWP AutoComplete example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) to understand how to present and manipulate data.
+N> You can refer to our [UWP AutoComplete](https://www.syncfusion.com/uwp-ui-controls/autosuggestbox) feature tour page to know about its other groundbreaking feature representations. You can also explore our [UWP AutoComplete example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) that shows you how to render and configure the Autocomplete in UWP.
 
 
