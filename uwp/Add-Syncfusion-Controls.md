@@ -209,7 +209,7 @@ After Installed required Syncfusion UWP NuGet packages in your application, we c
 
    ![Add Colorpicker from ToolBox in UWP](add-ayncfusion-controls_images/add-colorpicker-in-uwp-controls.png)
     
-   ![UWP Colorpicker Control ](add-syncfusion-controls_images/colorpicker-control-in-uwp.png)
+   ![UWP Colorpicker Control](add-syncfusion-controls_images/colorpicker-control-in-uwp.png)
 
    N> Toolbox configuration by installing UWP NuGet packages support available from v15.4.0.17.
 
