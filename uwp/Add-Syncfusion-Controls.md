@@ -193,6 +193,7 @@ The following steps direct you to create the **Syncfusion** **UWP** **Applicatio
 
    ![Syncfusion Licensing Message Box](add-syncfusion-controls_images/create-licensing-in-uwp-controls.jpeg)
 
+
 ## Through NuGet Packages
 
 Syncfusion UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion NuGet package installation. Please refer below topic to configure and install the Syncfusion UWP NuGet packages in UWP application from Visual Studio.
