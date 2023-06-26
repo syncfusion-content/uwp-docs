@@ -91,7 +91,7 @@ hubTile.ScaleDepth = 1.2
 
 {% endtabs %}
 
-![UWP Hubtile Base Scale depth](HubTileBase-images/uwp-hubtile-base-scale-depth.jpeg)
+![UWP Hubtile Base Scale depth](hubtilebase-images/uwp-hubtile-base-scale-depth.jpeg)
 
 ### Tile press duration
 

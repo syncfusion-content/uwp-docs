@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes in UWP Diagram uwp-diagram-shapesontrol | Syncfusion
+title: Shapes in UWP Diagram control | Syncfusion
 description: Learn here all about Shapes feature in Syncfusion Universal Windows Platform (UWP) Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
@@ -46,15 +46,15 @@ Output Node will be,
   
  The list of basic shapes are as follows
  
- ![UWP SfDiagram Basic Shapes](Shapes_images\uwp-diagram-basic-shapes.PNG)
+ ![UWP SfDiagram Basic Shapes](shapes_images\uwp-diagram-basic-shapes.PNG)
  
 The list of flow shapes are as follows
 
-![UWP SfDiagram Flow Shapes](Shapes_images\uwp-diagram-flow-shapes.PNG)
+![UWP SfDiagram Flow Shapes](shapes_images\uwp-diagram-flow-shapes.PNG)
  
 The list of arrow shapes are as follows
 
-![UWP SfDiagram Arrow Shapes](Shapes_images\uwp-diagaram-arrow-shapes.PNG)
+![UWP SfDiagram Arrow Shapes](shapes_images\uwp-diagaram-arrow-shapes.PNG)
 
 
 

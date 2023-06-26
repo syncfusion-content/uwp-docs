@@ -82,7 +82,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-![Docking Manager displayed dock windows without header in UWP](getting-started-images/uwp-add-docking-manager-control.jpeg)
+![Dock windows without header in UWP Docking Manager](getting-started-images/uwp-add-docking-manager-control.jpeg)
 
 
 ## Set Header for the Children
@@ -111,7 +111,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-![Dock windows with header in UWP Docking Manager](getting-started-images/uwp-diagram-set-header.jpeg)
+![Dock windows with header in UWP Docking Manager](getting-started-images/uwp-docking-manager-set-header.jpeg)
 
 
 ## Set State for the Children
@@ -142,7 +142,7 @@ To Auto hide the “ToolBox” window, set its `DockState` property as `AutoHidd
 
 {% endtabs %}
 
-![Dock, float and document windows in UWP Docking Manager](getting-started-images/uwp-diagram-set-state.jpeg)
+![Dock, float and document windows in UWP Docking Manager](getting-started-images/uwp-docking-manager-set-state.jpeg)
 
 
 ## Set Sides for the Children
@@ -181,6 +181,6 @@ The `SideInDockedMode` property’s Tabbed option is used to tab a window on ano
 
 {% endtabs %}
 
-![Docked windows over another window in UWP Docking Manager](getting-started-images/uwp-diagram-set-sides.jpeg)
+![Docked windows over another window in UWP Docking Manager](getting-started-images/uwp-docking-manager-set-sides.jpeg)
 
 

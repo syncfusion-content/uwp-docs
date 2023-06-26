@@ -109,7 +109,7 @@ Store the images in project and set the properties `Header` and `ImageList` as g
 
 {% endtabs %}
 
-![Pulsing tile displayed bitmap](SfSplitMosaicTile-images/uwp-hubtile-setting-image-source-in-split-mosaic.jpeg)
+![Pulsing tile displayed bitmap in UWP SFSplitMosaic Tile](sfsplitmosaictile-images/uwp-hub-tile-adding-images-to-splitmosaictile.jpeg)
 
 ## Configuring the tile
 
@@ -145,7 +145,7 @@ splitMosaicTile.Header = "Mosaic Tile"
 
 {% endtabs %}
 
-![Pulsing tile scaled the bitmap content](SfSplitMosaicTile-images/uwp-hubtile-setting-the-header-in-mosaic-tile.jpeg)
+![Pulsing tile scaled the bitmap content in UWP SFSplitMosaic Tile](sfsplitmosaictile-images/uwp-hub-tile-setting-the-header-in-splitmosaictile.jpeg)
 
 ## Adding image collection
 
@@ -334,7 +334,7 @@ End Sub
 
 {% endtabs %}
 
-![Pulsing tile displayed header](SfSplitMosaicTile-images/uwp-hubtile-setting-image-source-in-mosaic-tile.jpeg)
+![Pulsing tile displayed header in UWP SFSplitMosaic Tile](sfsplitmosaictile-images/uwp-hub-tile-setting-image-source-in-splitmosaic-tile.jpeg)
 
 ## Checking image existence
 

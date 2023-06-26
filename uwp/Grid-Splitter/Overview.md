@@ -11,7 +11,7 @@ documentation: ug
 
 `SfGridSplitter` is a container control helps to split the available space horizontally or vertically with a movable splitter and arrange the visual elements inside it. 
 
-![UWP Grid Splitter control overview](overview-images/uwp-grid-splitter-control-overview.png)
+![Overview of UWP Grid Splitter control](overview-images/uwp-grid-splitter-control-overview.png)
 
 Features 
 
