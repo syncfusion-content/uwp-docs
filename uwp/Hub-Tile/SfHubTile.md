@@ -128,7 +128,7 @@ hubTile.SecondaryContent = New Image() With {.Source = New BitmapImage(New Uri("
 
 {% endtabs %}
 
-![Hubtile displayed mail icon with white forecolor](SfHubTile-images/uwp-hubtile-configuring-the-tile.jpeg)
+![Configuring UWP HubTile](sfhubtile-images/uwp-configuring-the-hubtile.jpeg)
 
 ### Applying tile transitions
 
@@ -223,7 +223,7 @@ Apply the required transitions such as Rotate transition, Slide transition, Fade
 
 {% endtabs %}
 
-![Hubtile animated with different animation](SfHubTile-images/uwp-hubtile-applying-tile-transitions.jpeg)
+![Applying Tile transitions in UWP SFHubtile](sfhubtile-images/uwp-hubtile-applying-tile-transitions.jpeg)
 
 ## Configuring the tile
 
@@ -299,9 +299,9 @@ hubTile.ImageSource = primaryContent
 
 {% endtabs %}
 
-![Hubtile displayed primary content](SfHubTile-images/uwp-hubtile-displayed-primary-content.jpeg)
+![UWP SFHubTile displayed primary content](sfhubtile-images/uwp-hubtile-displayed-primary-content.jpeg)
 
-![Hubtile displayed secondary content](SfHubTile-images/uwp-hubtile-displayed-secondary-content.jpeg)
+![UWP SFHubTile displayed secondary content](sfhubtile-images/uwp-hubtile-displayed-secondary-content.jpeg)
 
 ## Animation and Transitions
 
@@ -345,24 +345,24 @@ hubTile.Interval = TimeSpan.FromSeconds(1)
 
 Main and Secondary contents rotate with specified interval.
 
-![Hubtile rotate primary content](SfHubTile-images/uwp-hubtile-rotate-primary-content.jpeg)
+![UWP SFHubTile rotate primary content](sfhubtile-images/uwp-hubtile-rotate-primary-content.jpeg)
 
-![Hubtile rotate content vertically](SfHubTile-images/uwp-hubtile-rotate-content-vertically.jpeg)
+![UWP SFHubTile rotate content vertically](sfhubtile-images/uwp-hubtile-rotate-content-vertically.jpeg)
 
 ### Tile slide animation
 
 Main and Secondary contents slide with specified interval.
 
-![Hubtile side content with animation](SfHubTile-images/uwp-hubtile-side-content-with-animation.jpeg)
+![UWP SFHubTile side content with animation](SfHubTile-images/uwp-hubtile-side-content-with-animation.jpeg)
 
 
 ### Tile fade animation
 
 Main and Secondary contents fade with specified interval.
 
-![Hubtile content faded with high opacity](SfHubTile-images/uwp-hubtile-tile-fade-animation-with-high-opacity.jpeg)
+![UWP SFHubTile content faded with high opacity](sfhubtile-images/uwp-hubtile-tile-fade-animation-with-high-opacity.jpeg)
 
-![Hubtile content faded with low opacity](SfHubTile-images/uwp-hubtile-tile-fade-animation-wtih-low-opacity.jpeg)
+![UWP SFHubTile content faded with low opacity](sfhubtile-images/uwp-hubtile-tile-fade-animation-wtih-low-opacity.jpeg)
 
 {% tabs %}
 
@@ -533,7 +533,7 @@ Header="HubTile" SecondaryContent="This is secondary.">
 
 {% endtabs %}
 
-![Hubtile secondary content customized with red foreground](SfHubTile-images/uwp-hubtile-customizing-secondary-content.jpeg)
+![UWP SFHubTile Customizing the secondary content](sfhubtile-images/uwp-hubtile-customizing-secondary-content.jpeg)
 
 AccentBrush and TitleStyle topics are available under HubTileBase section.
 

@@ -52,7 +52,7 @@ hubTile.RotationDepth = 40.0
 
 {% endtabs %}
 
-![Hubtile slide at right side](HubTileBase-images/uwp-hubtile-base-rotation-depth.jpeg)
+![UWP Hubtile Base rotation depth](hubtilebase-images/uwp-hubtile-base-rotation-depth.jpeg)
 
 
 ### Scale Depth
@@ -91,7 +91,7 @@ hubTile.ScaleDepth = 1.2
 
 {% endtabs %}
 
-![Hubtile Zoom-out by scaling](HubTileBase-images/uwp-hubtile-base-scale-depth.jpeg)
+![UWP Hubtile Base Scale depth](HubTileBase-images/uwp-hubtile-base-scale-depth.jpeg)
 
 ### Tile press duration
 
@@ -519,7 +519,7 @@ hubTile.AccentBrush = New SolidColorBrush(Windows.UI.Colors.CornflowerBlue)
 
 {% endtabs %}
 
-![Hubtile background customized](HubTileBase-images/uwp-hubtile-base-appearance-and-styling.jpeg)
+![UWP Hubtile customized background](hubtilebase-images/uwp-hubtile-base-appearance-and-styling.jpeg)
 
 
 ### TitleStyle
@@ -548,6 +548,6 @@ Title text is customized with `TitleStyle` property. It can be set as follows:
 
 {% endtabs %}
 
-![Hubtile title drawn in white color](HubTileBase-images/uwp-hubtile-base-title-style.jpeg)
+![UWP Hubtile Base title style](hubtilebase-images/uwp-hubtile-base-title-style.jpeg)
 
 

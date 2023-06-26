@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP Diagram (SfDiagram)
 
-The following saection helps you to build your application with SfDiagram. 
+The following section helps you to build your application with SfDiagram. 
 
 ## Creating the project
 
@@ -204,7 +204,7 @@ Creating NodeViewModel with Specified Height and Width.
 
  Now Node will be looks like,
    
-![AddNode](Getting-Started_images\uwp-diagram-add-Node.png)
+![Add Node in UWP Diagram](getting-started_images\uwp-diagram-add-node.png)
    
 N> ID sets for each node to identify nodes easily while setting connectors.
    
@@ -262,7 +262,7 @@ N> `Annotations` property is a collection, which indicates that more than one An
 
 Now Node will be looks like,
  
-![NodeAnnotation](Getting-Started_images\uwp-diagram-node-annotation.PNG)
+![Node Annotation in UWP Diagram](getting-started_images\uwp-diagram-node-annotation.PNG)
  
 ### Nodes for Flow Diagram
 
@@ -339,7 +339,7 @@ Now Node will be looks like,
 
  Finally all Nodes added to diagram and it will be looks like
 
-![CompleteDiagram](Getting-Started_images\uwp-diagram-complete-nodes.png)
+![Nodes for Flow Diagram in UWP Diagram](getting-started_images\uwp-diagram-nodes-for-flow-diagram.png)
 
 ### Add Connectors
 
@@ -400,7 +400,7 @@ Now Node will be looks like,
 
 Now output will be,
 
- ![NodeWithConnector](Getting-Started_images\uwp-diagram-node-with-Connector.png)
+ ![Node With Connector in UWP Diagram](getting-started_images\uwp-diagram-node-with-connector.png)
  
 #### Connectors for Flow diagram
 
@@ -442,6 +442,6 @@ Now we can connect all nodes using ConnectorViewModel.
 
 Now output will be looks like,
 
-![FlowDiagram](Getting-Started_images\uwp-diagram.png)
+![Add Connectors for Flow Diagram](getting-started_images\uwp-diagram-add-connectors-for-flow-diagram.png)
     
 [View Sample in GitHub](https://github.com/SyncfusionExamples/UWP-Diagram-Examples/tree/main/Samples/GettingStarted/Flowchartsample).
