@@ -10,7 +10,7 @@ documentation: ug
 
 SfDropDownButton is used as a content holder that shows content in a drop down popup on demand. 
 
-![Overview of SfDropDownButton](Overview_images/Overview_img1.png)
+![Overview of UWP SfDropDown Button](overview-images/uwp-dropdown-button-control-overview.png)
 
 
 ## Key Features
