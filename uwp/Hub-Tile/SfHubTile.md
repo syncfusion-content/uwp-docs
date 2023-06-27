@@ -353,7 +353,7 @@ Main and Secondary contents rotate with specified interval.
 
 Main and Secondary contents slide with specified interval.
 
-![UWP SFHubTile side content with animation](SfHubTile-images/uwp-hubtile-side-content-with-animation.jpeg)
+![UWP SFHubTile side content with animation](sfhubTile-images/uwp-hubtile-side-content-with-animation.jpeg)
 
 
 ### Tile fade animation

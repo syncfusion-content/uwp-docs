@@ -86,6 +86,6 @@ Dim dropDownButton As New SfDropDownButton()
 
 This will create an empty SfDropDownButton control.
 
-![Creating UWP SfDropDown Button control](getting-started_images/uwp-creating-dropdown-button-control.jpeg)
+![Creating UWP SfDropDown Button control](getting-started-images/uwp-adding-dropdown-button-control-via-code.jpeg)
 
 

@@ -13,7 +13,7 @@ SfDomainUpDown is an up-down control which spins the collection of objects up or
 
 
 
-![Overview of UWP SfDomain UpDown](overview_images/uwp-domain-up-down-overview.png)
+![Overview of UWP SfDomain UpDown](overview-images/uwp-domain-up-down-overview.png)
 
 
 
