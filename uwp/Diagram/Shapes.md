@@ -54,7 +54,7 @@ The list of flow shapes are as follows
  
 The list of arrow shapes are as follows
 
-![UWP SfDiagram Arrow Shapes](shapes-images\uwp-diagaram-arrow-shapes.PNG)
+![UWP SfDiagram Arrow Shapes](shapes-images\uwp-diagram-arrow-shapes.PNG)
 
 
 

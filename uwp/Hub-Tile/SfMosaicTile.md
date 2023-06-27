@@ -108,7 +108,7 @@ Set the properties Header, ImageList as given below:
 
 {% endtabs %}
 
-![Add image list in UWP SFMosaicTile](sfmosaictile-images/uwp-hub-tile-add-image-list-in-sfmosaictile.jpeg)
+![Add image list in UWP SFMosaicTile](sfmosaictile-images/add-image-list-in-uwp-sfmosaictile.jpeg)
 
 ## Configuring the Tile
 
@@ -144,7 +144,7 @@ mosaicTile.Header = "Mosaic Tile"
 
 {% endtabs %}
 
-![UWP SFMosaicTile displayed with header](sfmosaicTile-images/uwp-hub-tile-set-the-header-in-sfmosaictile.jpeg)
+![UWP SFMosaicTile displayed with header](sfmosaicTile-images/setting-the-header-in-uwp-sfmosaictile.jpeg)
 
 ## Adding image collection
 
@@ -332,7 +332,7 @@ End Sub
 
 {% endtabs %}
 
-![UWP SFMosaicTile displayed collection of bitmaps](sfmosaictile-images/uwp-hubtile-setting-image-source-in-sfmosaictile.jpeg)
+![UWP SFMosaicTile displayed collection of bitmaps](sfmosaictile-images/setting-image-source-in-uwp-sfmosaictile.jpeg)
 
 ## Checking image existence
 

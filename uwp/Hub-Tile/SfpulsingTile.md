@@ -116,7 +116,7 @@ Set the image as Content of `SfPulsingTile` as given below:
 
 {% endtabs %}
 
-![UWP SFPulsing tile displayed bitmap](sfpulsingtile-images/uwp-hub-tile-adding-image-to-sfpulsingtile.jpeg)
+![UWP SFPulsing tile displayed bitmap](sfpulsingtile-images/adding-images-in-uwp-pulsing-tile.jpeg)
 
 ### Applying zoom animation
 
@@ -172,7 +172,7 @@ pulsingTile.Content = New Image() With {
 
 {% endtabs %}
 
-![UWP SFPulsing Tile zoom displayed bitmap content](sfpulsingtile-images/uwp-hub-tile-applying-zoom-animation-in-sfpulsingtile.jpeg)
+![UWP SFPulsing Tile zoom displayed bitmap content](sfpulsingtile-images/applying-zoom-animation-in-uwp-pulsing-tile.jpeg)
 
 ## Configuring the tile
 
@@ -208,7 +208,7 @@ pulsingTile.Header = "Pulsing Tile"
 
 {% endtabs %}
 
-![UWP SFPulsing Tile displayed header](sfpulsingtile-images/uwp-hub-tile-setting-the-header-in-sfpulsingtile.jpeg)
+![UWP SFPulsing Tile displayed header](sfpulsingtile-images/setting-the-header-in-uwp-pulsing-tile.jpeg)
 
 ### Setting the content
 
@@ -258,7 +258,7 @@ pulsingTile.Content = New Image() With {
 
 {% endtabs %}
 
-![UWP SFPulsing Tile displayed bitmap content](sfpulsingtile-images/uwp-hub-tile-setting-the-content-in-sfpulsingtile.jpeg)
+![UWP SFPulsing Tile displayed bitmap content](sfpulsingtile-images/setting-the-content-in-uwp-pulsing-tile.jpeg)
 
 ## Customizing animation
 
