@@ -455,4 +455,4 @@ void Restore(object sender, TappedRoutedEventArgs e)
 
 {% endtabs %}
 
-![Selected content maximized in TileView with minimized items docked at right side](overview-images/overview-img1.jpeg)
+![Adding UWP TileView control](overview-images/uwp-adding-tile-view-control.jpeg)

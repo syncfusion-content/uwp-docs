@@ -204,7 +204,7 @@ Bind the Employees collection to the ItemsSource property of the SfComboBox.
 
 The above steps populate the SfComboBox as illustrated in the following screenshot.
 
-![Showing itemsource property of UWP sfcombobox](Populating-Items_images/uwp-combobox-populate-the-items.png)
+![Showing itemsource property of UWP sfcombobox](populating-items-images/uwp-combobox-populate-the-items.png)
 
 ### DisplayMemberPath
 
@@ -222,7 +222,7 @@ DisplayMemberPath="Name" ItemsSource="{Binding Products}" />
 
 This populates the SfComboBox as illustrated in the following screenshot. 
 
-![Showing product name of the UWP sfcombobox](populating-items_images/uwp-combobox-display-member-path.png)
+![Showing product name of the UWP sfcombobox](populating-items-images/uwp-combobox-display-member-path.png)
 
 
 
@@ -260,4 +260,4 @@ The ItemTemplate property of the SfComboBox can be used to customize the content
 
 This populates the SfComboBox as illustrated in the following screenshot.
 
-![Showing employee name of the UWP sfcombobox](populating-items_images/uwp-combobox-item-template.png)
+![Item Template in UWP sfcombobox](populating-items-images/uwp-combobox-item-template.png)

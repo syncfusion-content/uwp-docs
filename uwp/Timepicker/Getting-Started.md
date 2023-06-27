@@ -27,7 +27,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
 
-![Adding UWP TimePicker control via designer](gettingstarted_images/uwp-timepicker-control-added-via-designer.png)
+![Adding UWP TimePicker control via designer](getting-started-images/uwp-timepicker-control-adding-via-designer.png)
 
 ## Adding control manually in XAML
 
@@ -108,7 +108,7 @@ Dim timePicker1 As SfTimePicker = New SfTimePicker() With {
 {% endtabs %}
 
 
-![Adding UWP TimePicker control via XAML or code](gettingstarted_images/uwp-timepicker-control-added-via-code.png)
+![Adding UWP TimePicker control via XAML or code](getting-started-images/uwp-timepicker-control-adding-via-code.png)
 
 ## Customizing the time format
 
@@ -137,7 +137,7 @@ timePicker1.FormatString = "HH:mm:ss"
 
 {% endtabs %}
 
-![FormatString in UWP SfTimePicker](gettingstarted_images/uwp-timepicker-customizing-time-format.png)
+![Customizing the time format in UWP SfTimePicker](getting-started-images/uwp-timepicker-customizing-time-format.png)
 
 ## Customize SfTimeSelector Header
 
@@ -160,4 +160,4 @@ You can customize the [SfTimeSelector](https://help.syncfusion.com/cr/uwp/Syncfu
 
 {% endtabs %}
 
-![customizing UWP SfTimeSelector header](gettingstarted_images/uwp-timepickercustomizing-timeselector-header.png)
+![Customizing UWP SfTimeSelector header](getting-started-images/uwp-timepicker-customizing-timeselector-header.png)

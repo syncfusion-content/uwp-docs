@@ -27,7 +27,7 @@ The Syncfusion provides the following extension supports in Visual Studio:
 
 **No project selected in Visual Studio**
 
-![Syncfusion Menu when No project selected in UWP Visual Studio]overview-images](overview-images/uwp-visual-studio-integration-syncfusion.png)
+![Syncfusion Menu when No project selected in UWP Visual Studio](overview-images/uwp-visual-studio-integration-syncfusion.png)
 
 **Selected Syncfusion UWP application in Visual Studio**
 
