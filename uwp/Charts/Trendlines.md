@@ -68,7 +68,7 @@ chart.Series.Add(scatterSeries);
 
 {% endtabs %}
 
-![Trendlines in UWP Chart](Trendlines_images/uwp-charts-trendlines.png)
+![Trendlines in UWP Chart](trendlines-images/uwp-charts-trendlines.png)
 
 
 You can get the [`Slope`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TrendlineBase.html#Syncfusion_UI_Xaml_Charts_TrendlineBase_Slope) and [`Intercept`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TrendlineBase.html#Syncfusion_UI_Xaml_Charts_TrendlineBase_Intercept) of the drawn trend line. 
@@ -133,7 +133,7 @@ chart.Series.Add(scatterSeries);
 
 {% endtabs %}
 
-![Visibility of trendlines in UWP Chart](Trendlines_images/uwp-charts-trendline-visible.png)
+![Visibility of trendlines in UWP Chart](trendlines-images/uwp-charts-trendline-visible.png)
 
 
 N> Here we have enabled the [`CheckBoxVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) for the Legend. The CheckBox state indicates that trendline is not visible. You can enable trendline dynamically using this checkbox.
@@ -216,7 +216,7 @@ chart.Series.Add(fastS
 
 {% endtabs %}
 
-![Linear trendline type in UWP Chart](Trendlines_images/uwp-charts-linear-trendline.png)
+![Linear trendline type in UWP Chart](trendlines-images/uwp-charts-linear-trendline.png)
 
 
 ### Exponential
@@ -287,7 +287,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Exponential trendline type in UWP Chart](Trendlines_images/uwp-charts-exponential-trendline.png)
+![Exponential trendline type in UWP Chart](trendlines-images/uwp-charts-exponential-trendline.png)
 
 
 N> This is not recommended for the data values having zero and negative value.
@@ -360,7 +360,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Power trendline type in UWP Chart](Trendlines_images/uwp-charts-power-trendline.png)
+![Power trendline type in UWP Chart](trendlines-images/uwp-charts-power-trendline.png)
 
 ### Logarithmic
 
@@ -430,7 +430,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Logarithmic trendline type in UWP Chart](Trendlines_images/uwp-charts-logarithmic-trendline.png)
+![Logarithmic trendline type in UWP Chart](trendlines-images/uwp-charts-logarithmic-trendline.png)
 
 ### Polynomial
 
@@ -500,7 +500,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Polynomial trendline type in UWP Chart](Trendlines_images/uwp-charts-polynomial-trendline.png)
+![Polynomial trendline type in UWP Chart](trendlines-images/uwp-charts-polynomial-trendline.png)
 
 #### Polynomial Order
 
@@ -568,7 +568,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Polynomial order for trendline in UWP Chart](Trendlines_images/uwp-charts-polynomial-order-trendline.png)
+![Polynomial order for trendline in UWP Chart](trendlines-images/uwp-charts-polynomial-order-trendline.png)
 
 ## Forecasting
 
@@ -645,7 +645,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Forward forecast in UWP Chart](Trendlines_images/uwp-charts-forward-forecast-trendline.png)
+![Forward forecast in UWP Chart](trendlines-images/uwp-charts-forward-forecast-trendline.png)
 
 ### Backward Forecast
 
@@ -713,7 +713,7 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Backward forecast in UWP Chart](Trendlines_images/uwp-charts-backward-forecast-trendline.png)
+![Backward forecast in UWP Chart](trendlines-images/uwp-charts-backward-forecast-trendline.png)
 
 
 ## Customization 
@@ -782,6 +782,6 @@ chart.Series.Add(fastSeries);
 
 {% endtabs %}
 
-![Customization of trendlines in UWP Chart](Trendlines_images/uwp-charts-customization-trendline.png)
+![Customization of trendlines in UWP Chart](trendlines-images/uwp-charts-customization-trendline.png)
 
 
