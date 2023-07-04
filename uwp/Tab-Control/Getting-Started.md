@@ -9,32 +9,32 @@ documentation: ug
 
 # Getting Started with UWP Tab Control (SfTabControl)
 
-This section explains how to create a high level tab navigation using [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) control.
+This section explains how to create a high level tab navigation using [SfTabControl](https://help.syncfusion.com/cr/uwp) control.
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sftabcontrol) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sftabcontrol) section to get the list of assemblies or NuGet package that needs to be added as a reference to use the [SfTabControl](https://help.syncfusion.com/cr/uwp) in any application.
 
-You can refer this [documentation](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in a UWP application.
+You can refer this [documentation](https://help.syncfusion.com/uwp) to find more details about installing the NuGet package in a UWP application.
 
 ## Creating Application with SfTabControl
-In this walk through, user will create a UWP application that contains [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html).
+In this walk through, user will create a UWP application that contains [SfTabControl](https://help.syncfusion.com/cr/uwp).
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
 3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
 4. [Adding control manually in C#](#Adding-control-manually-in-C#)
 
 ## Creating project 
-Below section provides detailed information to create new project in Visual Studio to display [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html).
+Below section provides detailed information to create new project in Visual Studio to display [SfTabControl](https://help.syncfusion.com/cr/uwp).
 
 
 ## Adding control via designer
-The [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
+The [SfTabControl](https://help.syncfusion.com/cr/uwp) can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
 
-![Adding control via designer](GettingStarted-images/GettingStarted-img1.png)
+![Adding control via designer](GettingStarted-images/uwp-tab-control-adding-via-designer.png)
 
 ## Adding control manually in XAML
 
-In order to add [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) manually in XAML, do the below steps,
+In order to add [SfTabControl](https://help.syncfusion.com/cr/uwp) manually in XAML, do the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -55,7 +55,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Navigation">
 {% endhighlight %}
 {% endtabs %}
 
-3. Now add the [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) in MainPage.XAML.
+3. Now add the [SfTabControl](https://help.syncfusion.com/cr/uwp) in MainPage.XAML.
 
 {% tabs %}
 {% highlight XAML %}
@@ -71,7 +71,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 ## Adding control manually in C#
 
-In order to add [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) manually in C#, do the below steps,
+In order to add [SfTabControl](https://help.syncfusion.com/cr/uwp) manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
 
@@ -117,11 +117,11 @@ sfTabControl1.Items.Add(tabitem3)
 {% endhighlight %}
 {% endtabs %}
 
-![Adding control via XAML or code](GettingStarted-images/GettingStarted-img2.png)
+![Adding control via XAML or code](GettingStarted-images/uwp-tab-control-adding-via-code.png)
 
 ### Adding items by DataBinding
 
-In [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) you can add tab items by [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#) in which each tab item must have property for `Header` and `Content`.
+In [SfTabControl](https://help.syncfusion.com/cr/uwp) you can add tab items by [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#) in which each tab item must have property for `Header` and `Content`.
 
 1.Define the properties required in Model class.
 
@@ -255,7 +255,7 @@ End Class
 
 ## Design view for content 
 
-You can show scroll button for [SfTabControl](https://help.syncfusion.com/cr/uwp/Syncfusion.SfTabControl.UWP~Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html) tab items by setting [TabScrollButtonVisibility](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#Syncfusion_UI_Xaml_Controls_Navigation_SfTabControl_TabScrollButtonVisibility) property value to `Visible`.You can bind the view model collection to [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#) property and design the template for content.
+You can show scroll button for [SfTabControl](https://help.syncfusion.com/cr/uwp) tab items by setting [TabScrollButtonVisibility](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#Syncfusion_UI_Xaml_Controls_Navigation_SfTabControl_TabScrollButtonVisibility) property value to `Visible`.You can bind the view model collection to [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Navigation.SfTabControl.html#) property and design the template for content.
 
 {% tabs %}
 {% highlight XAML %}
@@ -299,5 +299,5 @@ You can show scroll button for [SfTabControl](https://help.syncfusion.com/cr/uwp
 {% endhighlight %}
 {% endtabs %}
 
-![TabControl for UWP supports close and pin tabs](Overview-images/Overview-img1.jpeg)
+![TabControl for UWP supports close and pin tabs](Overview-images/uwp-tab-control.jpeg)
 

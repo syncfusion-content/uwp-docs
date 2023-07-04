@@ -11,7 +11,7 @@ documentation: ug
 
 The SfRadialSlider provides an optimized interface for selecting a numeric value using touch interface.
 
-![Circular slider to select numeric values](Overview_images/Overview_img1.png)
+![Circular slider to select numeric values](Overview_images/uwp-radial-slider-overview.png)
 
 ### Key Features
 
