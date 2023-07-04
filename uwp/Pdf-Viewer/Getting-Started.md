@@ -23,7 +23,7 @@ The following list of assemblies are required for adding a PDF viewer control to
 
 Each of these assemblies always needs to be in parallel with its associated resource files as shown in the screenshot below. However, it is not necessary to have all these assemblies in a single folder as long as the resource files are along with the assemblies in their respective folders. The screenshot shows only the SfPdfViewer assembly for brevity.
 
-![Dependent assemblies needed for SfPdfViewerControl](Getting-Started_images/Getting-Started_img3.jpeg)
+![Dependent assemblies needed for SfPdfViewerControl](Getting-Started_images/uwp-pdf-viewer-required-assemblies.jpeg)
 
 The aforementioned placement of the assemblies and the resource files in the same folder becomes important only when the assemblies need to be moved from the installed location of the assemblies to somewhere else. When the assemblies are moved the resource files must also be moved and placed in the same folder as the assemblies.
 
@@ -38,7 +38,7 @@ Follow the below steps to create a simple application with the SfPdfViewer and l
 
 2. Open the Visual Studio tool box and drag the SfPdfViewerControl toolbox item to the designer window. Name the SfPdfViewerControl as pdfViewer.
 
-![SfPdfViewerControl in visual studio toolbox](Getting-Started_images/Getting-Started_img1.jpeg)
+![SfPdfViewerControl in visual studio toolbox](Getting-Started_images/uwp-pdf-viewer-create-a-simple-application.jpeg)
 
 When you drag the SfPdfViewer toolbox item to the window, it automatically adds the required assembly references to the current application.
 
@@ -411,5 +411,5 @@ The following is the list of possible operations to be performed with the suppor
 
 </table>
 The following image shows the final SfPdfViewer with all the features being implemented.
-![Getting started image of SfPdfViewerControl](Getting-Started_images/Getting-Started_img2.jpeg)
+![Getting started image of SfPdfViewerControl](Getting-Started_images/uwp-pdf-viewer-supported-input-interaction.jpeg)
 

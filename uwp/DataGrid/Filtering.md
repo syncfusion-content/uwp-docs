@@ -264,7 +264,7 @@ Below are the built-in filter types supported.
  
 * Text Filters – Loads various menu options to filter the display text effectively.
 * Number Filters – Loads various menu options to filter the numeric data.
-* Date Filters – Loads various menu options and [DatePicker](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.DatePicker) to filter DateTime type column.
+* Date Filters – Loads various menu options and [DatePicker](https://learn.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.DatePicker?view=winrt-22621) to filter DateTime type column.
 
 <table>
 <tr>
@@ -280,7 +280,7 @@ Date Filters
 </tr>
 <tr>
 <td>
-When the string value is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items source is {{'[dynamic](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types)'| markdownify }}, then TextFilters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}. 
+When the string value is bounded to the {{'[GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} or the items source is {{'[dynamic](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/reference-types)'| markdownify }}, then TextFilters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}. 
 </td>
 <td>
 When integer, double, short, decimal, byte or long are bound to the {{'[GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html)'| markdownify }} then Number Filters are loaded in {{'[AdvancedFilterControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html)'| markdownify }}.
