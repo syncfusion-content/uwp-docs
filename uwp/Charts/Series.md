@@ -92,7 +92,7 @@ BarSeries series = new BarSeries()
 
 {% endtabs %}
 
-![Bar chart type in UWP](Series_images/bar.png)
+![Bar chart type in UWP](Series_images/uwp-charts-series-bar.png)
 
 **SegmentSpacing**
 
@@ -138,7 +138,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Colum SegmentSpacing support in UWP Chart](Series_images/SegmentSpacing.png)
+![Colum SegmentSpacing support in UWP Chart](Series_images/uwp-charts-series-segment-spacing.png)
 
 ## Line and Spline Charts
 
@@ -261,7 +261,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Spline chart type in UWP](Series_images/spline.png)
+![Spline chart type in UWP](Series_images/uwp-charts-spline.png)
 
 **Dashed Lines**
 
@@ -331,7 +331,7 @@ series.SplineType = SplineType.Cardinal;
 
 {% endtabs %}
 
-![Cardinal spline support in UWP Chart](Series_images/Cardinal.png)
+![Cardinal spline support in UWP Chart](Series_images/uwp-charts-series-cardinal.png)
 
 **Monotonic**
 
@@ -475,7 +475,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Scatter chart type in UWP](Series_images/scatter.png)
+![Scatter chart type in UWP](Series_images/uwp-charts-series-scatter.png)
 
 ## Area Charts
 
@@ -516,7 +516,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Area chart type in UWP](Series_images/area.png)
+![Area chart type in UWP](Series_images/uwp-charts-series-area.png)
 
 ### Spline Area
 
@@ -555,7 +555,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![SplineArea chart type in UWP](Series_images/splinearea.png)
+![SplineArea chart type in UWP](Series_images/uwp-charts-spline-area.png)
 
 
 ### Step Area
@@ -595,7 +595,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![StepArea chart type in UWP](Series_images/steparea.png)
+![StepArea chart type in UWP](Series_images/uwp-charts-step-area.png)
 
 ### Closed Area
 
@@ -636,7 +636,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed area chart type in UWP](Series_images/closedarea.png)
+![Closed area chart type in UWP](Series_images/uwp-charts-series-closed-area.png)
 
 
 ## Pie and Doughnut Charts
@@ -753,7 +753,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Doughnut chart type in UWP](Series_images/doughnut.png)
+![Doughnut chart type in UWP](Series_images/uwp-charts-series-doughnut.png)
 
 The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutCoefficient) which defines the inner circle. Also it has [`DoughnutSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_DoughnutSize), used to define the size for this series like [`PieCoefficient`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html#Syncfusion_UI_Xaml_Charts_PieSeries_PieCoefficient) in [`PieSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html).
 
@@ -789,7 +789,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![DoughnutCoefficient support in UWP Chart](Series_images/doughnut_1.png)
+![DoughnutCoefficient support in UWP Chart](Series_images/uwp-charts-series-doughnut-coefficient.png)
 
 ### Semi Pie and Doughnut
 
@@ -832,7 +832,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Semi pie support in UWP Chart](Series_images/semipie.png)
+![Semi pie support in UWP Chart](Series_images/uwp-charts-series-semi-pie.png)
 
 {% tabs %}
 
@@ -871,7 +871,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Semi doughnut support in UWP Chart](Series_images/semidoughnut.png)
+![Semi doughnut support in UWP Chart](Series_images/uwp-charts-series-semi-doughnut.png)
 
 ### Explode Segments
 
@@ -923,7 +923,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding a segment of accumlation series in UWP Chart](Series_images/exploderadius.png)
+![Exploding a segment of accumlation series in UWP Chart](Series_images/uwp-charts-series-explode-radius.png)
 
 N> We have defined [`ExplodeRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ExplodeRadius) as 10, by default its value is zero. So you need to define [`ExplodeRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ExplodeRadius), when you set [`ExplodeIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeIndex) or [`ExplodeAll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.html#Syncfusion_UI_Xaml_Charts_AccumulationSeriesBase_ExplodeAll).
 
@@ -968,7 +968,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding all the segments of accumlation series in UWP Chart](Series_images/explodeall.png)
+![Exploding all the segments of accumlation series in UWP Chart](Series_images/uwp-charts-series-explode-all.png)
 
 **Stacked** **doughnut**
 
@@ -1013,7 +1013,7 @@ chart.Series.Add(doughnutSeries);
 
 {% endtabs %}
 
-![Stacked doughnut support in UWP Chart](Series_images/StackedDoughnut.png)
+![Stacked doughnut support in UWP Chart](Series_images/uwp-charts-stacked-doughnut.png)
 
 **Add content to the center of doughnut chart**
 
@@ -1090,7 +1090,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid chart type in UWP](Series_images/pyramid.png)
+![Pyramid chart type in UWP](Series_images/uwp-charts-series-pyramid.png)
 
 
 The [`PyramidMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Surface) or [`Linear`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Linear) for pyramid segments.
@@ -1132,7 +1132,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid modes in UWP Chart](Series_images/pyramidsurface.png)
+![Pyramid modes in UWP Chart](Series_images/uwp-charts-series-pyramid-surface.png)
 
 
 **PyramidMode** **as** **Linear**
@@ -1172,7 +1172,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Pyramid modes in UWP Chart](Series_images/pyramidlinear.png)
+![Pyramid modes in UWP Chart](Series_images/uwp-charts-series-pyramid-linear.png)
 
 ### Funnel
 
@@ -1251,7 +1251,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Funnel modes in UWP Chart](Series_images/valueisheight.png)
+![Funnel modes in UWP Chart](Series_images/uwp-charts-funnel-mode-value-is-height.png)
 
 **ValueIsWidth**
 
@@ -1288,7 +1288,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Funnel modes in UWP Chart](Series_images/valueiswidth.png)
+![Funnel modes in UWP Chart](Series_images/uwp-charts-funnel-mode-value-is-width.png)
 
 ### Explode Segments
 
@@ -1336,7 +1336,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Exploding the segments of accumlation series in UWP Chart](Series_images/funnelexplode_1.png)
+![Exploding the segments of accumlation series in UWP Chart](Series_images/uwp-charts-series-funnel-explode.png)
 
 **Gap** **Ratio**
 
@@ -1422,7 +1422,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Radar chart type in UWP](Series_images/radar.png)
+![Radar chart type in UWP](Series_images/uwp-charts-series-radar.png)
 
 
 ### Polar
@@ -1464,7 +1464,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Polar chart type in UWP](Series_images/polar.png)
+![Polar chart type in UWP](Series_images/uwp-charts-series-polar.png)
 
 
 The Radar and Polar charts having the following properties in common:
@@ -1523,7 +1523,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Closed polar series in UWP Chart](Series_images/isclosed.png)
+![Closed polar series in UWP Chart](Series_images/uwp-charts-series-closed-polar.png)
 
 ### DrawType
 
@@ -1667,7 +1667,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in UWP Chart](Series_images/Rotate0.png)
+![Rotation support for polar series in UWP Chart](Series_images/uwp-charts-rotate0.png)
 
 
 **Rotate90**
@@ -1714,7 +1714,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in UWP Chart](Series_images/Rotate90.png)
+![Rotation support for polar series in UWP Chart](Series_images/uwp-charts-rotate90.png)
 
 
 **Rotate180**
@@ -1761,7 +1761,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in UWP Chart](Series_images/Rotate180.png)
+![Rotation support for polar series in UWP Chart](Series_images/uwp-charts-rotate180.png)
 
 
 **Rotate270**
@@ -1808,7 +1808,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![Rotation support for polar series in UWP Chart](Series_images/Rotate270.png)
+![Rotation support for polar series in UWP Chart](Series_images/uwp-charts-rotate270.png)
 
 
 ## Financial Charts
@@ -2088,7 +2088,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackingLine chart type in UWP](Series_images/stackingline.png)
+![StackingLine chart type in UWP](Series_images/uwp-charts-stacking-line.png)
 
 ### Stacking Line 100
 
@@ -2176,7 +2176,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackingLine100 chart type in UWP](Series_images/stackingLine100.png)
+![StackingLine100 chart type in UWP](Series_images/uwp-charts-stacking-Line100.png)
 
 ### Stacking Column
 
@@ -2269,7 +2269,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackingColumn chart type in UWP](Series_images/stackingcolumn.png)
+![StackingColumn chart type in UWP](Series_images/uwp-charts-stacking-column.png)
 
 ### Stacking Column 100
 
@@ -2354,7 +2354,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackingColumn100 chart type in UWP](Series_images/stackingcolumn100.png)
+![StackingColumn100 chart type in UWP](Series_images/uwp-charts-stacking-column100.png)
 
 ### Stacking Bar
 
@@ -2447,7 +2447,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackingBar chart type in UWP](Series_images/stackingbar.png)
+![StackingBar chart type in UWP](Series_images/uwp-charts-stacking-bar.png)
 
 
 ### Stacking Bar 100
@@ -2535,7 +2535,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackingBar100 chart type in UWP](Series_images/stackingbar100.png)
+![StackingBar100 chart type in UWP](Series_images/uwp-charts-stacking-bar100.png)
 
 ### Stacking Area
 
@@ -2618,7 +2618,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackingArea chart type in UWP](Series_images/stackingarea.png)
+![StackingArea chart type in UWP](Series_images/uwp-charts-stacking-area.png)
 
 ### Stacking Area 100
 
@@ -2707,7 +2707,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![StackingArea100 chart type in UWP](Series_images/stackingarea100.png)
+![StackingArea100 chart type in UWP](Series_images/uwp-charts-stacking-area100.png)
 
 You can draw open curve like Area using this [`IsClosed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingAreaSeries.html#Syncfusion_UI_Xaml_Charts_StackingAreaSeries_IsClosed) property.
 
@@ -2812,7 +2812,7 @@ chart.Series.Add(series3);
 
 {% endtabs %}
 
-![IsClosed support for stacking area series in UWP Chart](Series_images/stackingarea_closed.png)
+![IsClosed support for stacking area series in UWP Chart](Series_images/uwp-charts-stackingarea-closed.png)
 
 
 ### Grouping Stacked Series
@@ -2981,7 +2981,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeColumn chart type in UWP](Series_images/rangeseries.png)
+![RangeColumn chart type in UWP](Series_images/uwp-charts-range-series.png)
 
 
 ### Range Area
@@ -3023,7 +3023,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeArea chart type in UWP](Series_images/rangearea.png)
+![RangeArea chart type in UWP](Series_images/uwp-charts-range-area.png)
 
 
 The APIs present in the RangeArea series are,
@@ -3070,7 +3070,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![RangeArea chart type in UWP](Series_images/rangearea_closed.png)
+![RangeArea chart type in UWP](Series_images/uwp-charts-range-area-closed.png)
 
 ### Spline Range Area
 
@@ -3113,7 +3113,7 @@ chart.Series.Add(splineRangeAreaSeries);
 
 {% endtabs %}
 
-![Spline Range Area Series ](Series_images/splinerangearea.png)
+![Spline Range Area Series ](Series_images/uwp-charts-spline-range-area.png)
 
 ### Histogram 
 
@@ -3399,7 +3399,7 @@ boxAndWhisker.ShowMedian = true;
 
 {% endtabs %}
 
-![ShowMedian support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowMedian.png)
+![ShowMedian support for BoxAndWhiskerSeries in UWP chart](Series_images/uwp-charts-series-show-median.png)
 
 ### Outlier
 
@@ -3429,7 +3429,7 @@ boxAndWhisker.ShowOutlier = false;
 
 {% endtabs %}
 
-![ShowOutlier support for BoxAndWhiskerSeries in UWP chart](Series_images/ShowOutlier.png)
+![ShowOutlier support for BoxAndWhiskerSeries in UWP chart](Series_images/uwp-charts-show-outlier.png)
 
 **OutlierTemplate**
 
@@ -3469,7 +3469,7 @@ The default appearance of the outlier symbol can be customized using the [`Outli
 
 {% endtabs %}
 
-![Outlier template support for BoxAndWhiskerSeries in UWP chart](Series_images/OutlierTemplate.png)
+![Outlier template support for BoxAndWhiskerSeries in UWP chart](Series_images/uwp-charts-outlier-template.png)
 
 ## Waterfall Series
 
@@ -3507,7 +3507,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![Waterfall chart type in UWP](Series_images/WaterfallSeries.png)
+![Waterfall chart type in UWP](Series_images/uwp-charts-waterfall-type.png)
 
 **SummaryBindingPath and SummarySegmentBrush**
 
@@ -3553,7 +3553,7 @@ chart.Series.Add(waterfallSeries);
 
 {% endtabs %}
 
-![Summary segment customization for WaterfallSeries in UWP chart](Series_images/SummaryBinding.png)
+![Summary segment customization for WaterfallSeries in UWP chart](Series_images/uwp-charts-summarybinding.png)
 
 **NegativeSegmentBrush**
 
