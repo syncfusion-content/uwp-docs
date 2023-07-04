@@ -139,7 +139,7 @@ Create new Universal Windows Platform project in Visual Studio to display SfData
 
 SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![Adding control via Designer](Getting-Started_images/Getting-Started_img1.png)
+![Adding UWP DataGrid control via Designer](getting-started-images/uwp-datagrid-control-adding-via-designer.png)
 
 
 
@@ -351,7 +351,7 @@ dataGrid.ItemsSource = viewModel.Orders;
 
 Now, run the application and you can expect the see the below output,
 
-![Binding to Data](Getting-Started_images/Getting-Started_img2.png)
+![Binding to Data in UWP DataGrid](getting-started-images/uwp-datagrid-binding-to-data.png)
 
 
 
@@ -558,7 +558,7 @@ By default, you can sort columns in a SfDataGrid by clicking the column header. 
 {% endtabs %}
 
 
-![Sorting](Getting-Started_images/Getting-Started_img3.png)
+![Sorting in UWP DataGrid](getting-started-images/uwp-datagrid-sorting.png)
 
 
 
@@ -592,7 +592,7 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping](Getting-Started_images/Getting-Started_img4.png)
+![Grouping in UWP DataGrid](getting-started-images/uwp-datagrid-grouping.png)
 
 
 
@@ -600,7 +600,7 @@ Grouping can be enabled by setting [SfDataGrid.ShowGroupDropArea](https://help.s
 
 Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFiltering) property to `true`, where you can open advanced filter UI by clicking the Filter icon in column header and filter the SfDataGrid. You can customize the filtering operations by handling [SfDataGrid.FilterChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) and [SfDataGrid.FilterChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) events.
 
-![Filtering](Getting-Started_images/Getting-Started_img5.png)
+![Filtering in UWP DataGrid](getting-started-images/uwp-datagrid-filtering.png)
 
 
 
