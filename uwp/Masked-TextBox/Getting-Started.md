@@ -29,7 +29,7 @@ Below section provides detailed information to create new project in Visual Stud
 ## Adding control via designer
 The [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfMaskedEdit.html) can be added to the application by dragging it from Toolbox and dropping it in designer. The required assembles will be added automatically.
 
-![Adding control via designer](Getting-Started_images/uwp-masked-textbox-adding-control.png)
+![Adding Masked TextBox control via designer in UWP](getting-started-images/adding-uwp-masked-textbox-control-via-designer.png)
 
 ## Adding control manually in XAML
 
@@ -103,7 +103,7 @@ Dim sfMaskdeEdit1 As SfMaskedEdit = New SfMaskedEdit() With {
 {% endhighlight %}
 {% endtabs %}
 
-![Adding control via XAML or code](Getting-Started_images/uwp-masked-text-box-adding-control-via-code.png)
+![Adding Masked TextBox control via XAML or code in UWP](getting-started-images/adding-uwp-masked-textbox-control-via-code.png)
 
 ## Adding Mask to the control
 
@@ -172,7 +172,7 @@ You can customize how [SfMaskedEdit](https://help.syncfusion.com/cr/uwp/Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![Validation of value in SfMaskedEdit](Getting-Started_images/Getting-Started_img4.gif)
+![Validation of value in UWP SfMaskedEdit](getting-started-images/uwp-value-validation-in-masked-textbox.gif)
 
 ## Defining Watermark
 
@@ -197,6 +197,6 @@ maskedEdit.Watermark = "Type here";
 
 {% endtabs %}
 
-![Watermark in SfMaskedEdit](Getting-Started_images/uwp-masked-textbox-watermark.png)
+![Watermark in UWP SfMaskedEdit](getting-started-images/uwp-masked-textbox-watermark.png)
 
 View sample in [GitHub](https://github.com/SyncfusionExamples/SfMaskedEdit_GettingStarted_UWP).

@@ -11,7 +11,7 @@ documentation: ug
 
 The range slider control for UWP allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
 
-![RangeSlider Sample view](Overview_images/uwp-range-slider-overview.png)
+![UWP RangeSlider Sample view](overview-images/uwp-range-slider-overview.png)
 
 ### Key features
 

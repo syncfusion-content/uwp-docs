@@ -13,7 +13,7 @@ SfNumericTextBox is an advanced version of the TextBox control which restricts i
 
 
 
-![NumericTextBox Example view](Overview_images/uwp-numeric-textbox-overview.png)
+![UWP NumericTextBox Example view](overview-images/uwp-numeric-textbox-overview.png)
 
 
 

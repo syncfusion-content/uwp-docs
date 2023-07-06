@@ -11,7 +11,7 @@ documentation: ug
 
 The SfRadialMenu displays a hierarchical menu in a circular layout optimized for touch devices. Typically used as a context menu, it can expose more menu items in the same space than traditional menus. 
 
-![RadialMenu Example view](Overview_images/uwp-radial-menu-overview.png)
+![Uwp RadialMenu Example view](overview-images/uwp-radial-menu-overview.png)
 
 ### Key Features
 

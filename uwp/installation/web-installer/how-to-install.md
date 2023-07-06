@@ -21,14 +21,14 @@ The steps below show how to install Essential Studio UWP Web Installer.
 
 1.  Open the Syncfusion Essential Studio UWP Web Installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-    ![Installer Extraction Wizard](images/uwp-installation.png)
+    ![Installer Extraction Wizard in UWP](images/uwp-installation.png)
 
     
     N> The installer wizard extracts the syncfusionessentialwpfimages_{version}.exe dialog, which displays the package's unzip operation.
     
 2. 	The Syncfusion UWP Web Installer's welcome wizard will be displayed. Click the Next button.
 
-    ![Welcome wizard](images/uwp-installation-web-installer.png)
+    ![Welcome wizard in UWP Installation](images/uwp-installation-web-installer.png)
 
   
 3.  The Platform Selection Wizard will appear. From the **Available** tab, select the products to be installed. Select the **Install All** checkbox to install all products. 
@@ -41,13 +41,13 @@ The steps below show how to install Essential Studio UWP Web Installer.
 	
 	<em>**Installed**</em>
 	
-    ![Platform Selection wizard Installed](images/uwp-installation-web-installer-installed.png)
+    ![UWP Platform Selection wizard Installed](images/uwp-installation-web-installer-installed.png)
 	
 	I> If the required software for the selected product isn't already installed, the **Additional Software Required** alert will appear. You can, however, continue the installation and install the necessary software later.
 	
 	**Required Software**
 	
-	![Additional Software Alert](images/uwp-installation-web-installer-additional-software-for-installed.png)
+	![Additional Software Alert in UWP Installtion](images/uwp-installation-web-installer-additional-software-for-installed.png)
 		
 	
 4.	If previous version(s) for the selected products are installed, the Uninstall previous version wizard will be displayed. You can see the list of previously installed versions for the products you've chosen here. To remove all versions, check the **Uninstall All** checkbox. Click the Next button.
@@ -59,7 +59,7 @@ The steps below show how to install Essential Studio UWP Web Installer.
 	
 5.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
-	![Existing Version for install](images/Step-by-Step-Installation_img21.png)
+	![Existing Version for install in UWP Installation](images/uwp-existing-version-for-install-in-installation.png)
 	
 	
 6. 	The Confirmation Wizard will appear with the list of products to be installed/uninstalled. You can view and modify the list of products that will be installed and uninstalled from this page.
@@ -71,7 +71,7 @@ The steps below show how to install Essential Studio UWP Web Installer.
 
 7.  The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
-    ![Install and samples location for install](images/uwp-installation-web-installer-sample-locations.png)
+    ![Install and samples location for UWP Installation](images/uwp-installation-web-installer-sample-locations.png)
 	
 	**Additional settings**
 	
@@ -87,23 +87,23 @@ The steps below show how to install Essential Studio UWP Web Installer.
 
 9.  The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button. 
 
-    ![Login wizard install](images/uwp-installation-web-installer-login-wizard.png)
+    ![Login wizard install in UWP Installation](images/uwp-installation-web-installer-login-wizard.png)
 	
 	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
 10. The download and installation\uninstallation progress will be displayed as shown below.
 
-    ![Download and Installation progress install](images/uwp-installation-web-installer-download-and-installation-progress.png)
+    ![Download and Installation progress in UWP](images/uwp-installation-web-installer-download-and-installation-progress.png)
 
 11. When the installation is finished, the **Summary** wizard will appear. Here you can see the list of products that have been installed successfully and those that have failed. To close the Summary wizard, click Finish. 
 
-    ![Installation Summary](images/uwp-installation-web-installer-summary.png)
+    ![Installation Summary in UWP](images/uwp-installation-web-installer-summary.png)
 	
 	* To open the Syncfusion Control Panel, click **Launch Control Panel**.
 
 12. After installation, there will be two Syncfusion control panel entries, as shown below. The Essential Studio entry will manage all Syncfusion products installed in the same version, while the Product entry will only uninstall the specific product setup.
 
-    ![Control Panel](images/uwp-installation-web-installer-control-panel.png)
+    ![Web Installer Control Panel in UWP Installation](images/uwp-installation-web-installer-control-panel.png)
 	
 	
 	
@@ -121,14 +121,14 @@ Follow either one of the option below to uninstall Syncfusion Essential Studio U
 Syncfusion provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
 
-![Platform Selection wizard Installed](images/uwp-installation-web-installer-un-installation.png)
+![Platform Selection wizard Installed in UWP Installation](images/uwp-installation-web-installer-un-installation.png)
 	
 	
 **Option 2: Uninstall the UWP from Windows Control Panel**  
 	
 You can uninstall all the installed products by selecting the **Syncfusion Essential Studio {version}** entry (element 1 in the below screenshot) from the Windows control panel, or you can uninstall UWP alone by selecting the **Syncfusion Essential Studio for UWP {version}** entry (element 2 in the below screenshot) from the Windows control panel.
 
-![Control Panel](images/uwp-installation-web-installer-un-installation-control-panel.png)
+![Control Panel in UWP Installation](images/uwp-installation-web-installer-un-installation-control-panel.png)
 	
 N> If the **Syncfusion Essential Studio for UWP {version}** entry is selected from the Windows control panel, the Syncfusion Essential Studio UWP alone will be removed and the below default MSI uninstallation window will be displayed.	
 
@@ -146,41 +146,41 @@ N> If the **Syncfusion Essential Studio for UWP {version}** entry is selected fr
 	
 	<em>**Available**</em>
 	
-	![Platform Selection wizard Available](images/uwp-installation-web-installer-un-installation-platform-selection.png)
+	![Platform Selection wizard Available in UWP Installation](images/uwp-installation-web-installer-un-installation-platform-selection.png)
 	
 3.  If any other products selected for installation, Uninstall previous version wizard will be displayed with previous version(s) installed for the selected products. Here you can view the list of installed previous versions for the selected products. Select **Uninstall All** checkbox to select all the versions. Click Next.
 
-	![Existing Version for install](images/uwp-installation-web-installer-existing-version-for-install.png)
+	![Existing Version for install in UWP Installation](images/uwp-installation-web-installer-existing-version-for-install.png)
 	
 4.	Pop up screen will be displayed to get the confirmation to uninstall selected previous versions.
 
-	![Existing Version for install](images/uwp-installation-web-installer-displayed-un-installed.png)	
+	![Existing Version for install displayed in UWP Installation](images/uwp-installation-web-installer-displayed-un-installed.png)	
 	
 5.  The Confirmation Wizard will appear with the list of products to be installed/uninstalled. Here you can view and modify the list of products that will be installed/uninstalled.
 
-    ![Confirmation for install/uninstall](images/uwp-installation-web-installer-confirmation-wizard.png)
+    ![Confirmation for install or uninstall in UWP Installation](images/uwp-installation-web-installer-confirmation-wizard.png)
 	
 	N> By clicking the **Download Size and Installation** Size links, you can determine the approximate size of the download and installation
 	
 6.	The Configuration Wizard will appear. You can change the Download, Install, and Demos locations from here. You can also change the Additional settings on a product-by-product basis. Click Next to install with the default settings.
 
-    ![Install and samples location install/uninstall](images/uwp-installation-web-installer-samples-location.png)
+    ![Install and samples location install or uninstall in UWP Installation](images/uwp-installation-web-installer-samples-location.png)
 	
 7.	After reading the License Terms and Conditions, check the **I agree to the License Terms and Privacy Policy** check box. Click the Next button.
 
 8.	The login wizard will appear. You must enter your Syncfusion email address and password. If you do not already have a Syncfusion account, you can create one by clicking on **Create an Account**. If you have forgotten your password, click **Forgot Password** to create a new one. Click the Install button.
 
-    ![Login wizard install/uninstall](images/uwp-installation-web-installer-login-wizard.png)
+    ![Login wizard install or uninstall in UWP Installation](images/uwp-installation-web-installer-login-wizard.png)
 	
 	I> The products you have chosen will be installed based on your Syncfusion License (Trial or Licensed).
 
 9.	The download, installation, and uninstallation progresses will be shown.
 
-    ![Download and Installation progress install/uninstall](images/uwp-installation-web-installer-un-installed-download-and-installation-progress.png)
+    ![Download and Installation progress install or uninstall in UWP](images/uwp-installation-web-installer-un-installed-download-and-installation-progress.png)
 
 10.	When the installation is finished, the **Summary** wizard will appear. Here you can see the list of products that have been successfully and unsuccessfully installed/uninstalled. To close the Summary wizard, click Finish.
 
-    ![Summary install/uninstall](images/uwp-installation-web-installer-un-installed-summary.png)
+    ![Summary install or uninstall in UWP](images/uwp-installation-web-installer-un-installed-summary.png)
 	
 	* To open the Syncfusion Control Panel, click **Launch Control Panel**.
 
