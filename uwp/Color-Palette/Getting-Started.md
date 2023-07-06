@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with UWP Color Palette control | Syncfusion
+title: Getting Started with UWP Color Palette Control | Syncfusion
 description: Learn here about getting started with Syncfusion UWP Color Palette (SfColorPalette) control, its elements and more.
 platform: uwp
 control: SfColorPalette
