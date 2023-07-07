@@ -117,7 +117,7 @@ sfTabControl1.Items.Add(tabitem3)
 {% endhighlight %}
 {% endtabs %}
 
-![Adding control via XAML or code](GettingStarted-images/uwp-tab-control-adding-via-code.png)
+![Adding Tab control via XAML or code](getting-started-images/uwp-adding-tab-control-via-code.png)
 
 ### Adding items by DataBinding
 
@@ -299,5 +299,5 @@ You can show scroll button for [SfTabControl](https://help.syncfusion.com/cr/uwp
 {% endhighlight %}
 {% endtabs %}
 
-![TabControl for UWP supports close and pin tabs](Overview-images/uwp-tab-control.jpeg)
+![Tab Control for UWP supports close and pin tabs](overview-images/uwp-tab-control.jpeg)
 

@@ -71,7 +71,7 @@ Dim _ribbon As New SfRibbon()
 
 Execute the above code to render the following output.
 
-![SfRibbon control for UWP](Getting-Started_images/uwp-ribbon-add-ribbon-control.jpeg)
+![Adding SfRibbon control for UWP](getting-started-images/uwp-add-ribbon-control.jpeg)
 
 
 ## Add Ribbon Tab
@@ -134,7 +134,7 @@ _ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
 
 Execute the above code to render the following output.
 
-![Ribbon Tab](Getting-Started_images/uwp-ribbon-add-ribbon-tab.jpeg)
+![Adding Ribbon Tab in UWP](getting-started-images/uwp-add-ribbon-tab.jpeg)
 
 ## How to capture the click of SfRibbonTab?
 
@@ -168,7 +168,7 @@ private async void SfRibbonTab_Tapped(object sender, TappedRoutedEventArgs e)
 
 {% endtabs %}
 
-![Click of Ribbon tab](Getting-Started_images/uwp-ribbon-click-of-ribbon-tab.jpeg)
+![Click of UWP Ribbon tab](getting-started-images/uwp-click-of-ribbon-tab.jpeg)
 
 ## Add Ribbon Bar
 
@@ -249,7 +249,7 @@ _ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
 
 Execute the above code to render the following output.
 
-![Adding Ribbon bar](Getting-Started_images/uwp-ribbon-add-ribbon-bar.jpeg)
+![Adding Ribbon bar in UWP](getting-started-images/uwp-add-ribbon-bar.jpeg)
 
 
 ## Add Ribbon controls to RibbonBar
@@ -355,7 +355,7 @@ _ribbon.Items.Add(New SfRibbonTab() With {.Caption = "Insert"})
 
 Execute the above code to render the following output.
 
-![Adding items to RibbonBar](Getting-Started_images/uwp-ribbon-adding-items-to-ribbon-bar.jpeg)
+![Adding items to UWP RibbonBar](getting-started-images/uwp-adding-items-to-ribbon-bar.jpeg)
 
 
 ## Configure QAT
@@ -399,7 +399,7 @@ QAT items can be added as follows,
 
 You can limit the number of viewable items in QAT by setting DisplayItemsCount property. When the total number of items exceeds DisplayItemsCount, scroll QAT for viewing the items.
 
-![Configuring QAT](Getting-Started_images/uwp-ribbon-configuring-qat.jpeg)
+![Configuring quick access toolbar in UWP Ribbon](getting-started-images/uwp-ribbon-configuring-quick-access-toolbar.jpeg)
 
 
 ## Configure BackStage
@@ -427,6 +427,6 @@ BackStageButton and BackStage TabItems can be added as follows,
 
 {% endtabs %}
 
-![Configure BackStage](Getting-Started_images/uwp-ribbon-configure-backstage.jpeg)
+![Configure BackStage in UWP Ribbon](getting-started-images/uwp-ribbon-configure-backstage.jpeg)
 
 
