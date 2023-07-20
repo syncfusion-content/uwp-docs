@@ -48,3 +48,4 @@ Dim sfRadialSlider As New SfRadialSlider() With {
 
 {% endtabs %}
 
+N> You can refer to our [UWP Radial Slider](https://www.syncfusion.com/uwp-ui-controls/radial-slider) page to know about its other groundbreaking feature representations. You can also explore our [UWP Radial Slider example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) that shows you how to render and configure the Radial Slider in UWP.
