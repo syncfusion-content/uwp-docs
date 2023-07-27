@@ -11,7 +11,7 @@ documentation: ug
 
 The SfDateTimeCombo control displays each part of a date or time in a separate DateTimeItem drop-down list that can be edited. This control can be used to manipulate DateTime objects, using a familiar drop-down list in a touch-friendly manner.
 
-![DateTimeCombo displayed date and time with dropdown option to select date and time](Overview_images/Overview_img1.png)
+![UWP DateTimeCombo displayed date and time with dropdown option to select date and time](overview-images/uwp-datetimepicker-overview.png)
 
 ### Key Features
 

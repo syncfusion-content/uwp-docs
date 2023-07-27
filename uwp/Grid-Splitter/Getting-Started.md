@@ -206,4 +206,4 @@ Margin="10" FontSize="16"/>
 {% endtabs %}
 
 
-![GridSplitter divide the multiple control with resizable splitter](Overview-images/Overview-img1.jpeg)
+![UWP Grid Splitter divide the multiple control with resizable splitter](overview-images/uwp-placing-the-grid-splitter-control.jpeg)

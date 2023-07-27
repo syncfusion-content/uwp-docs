@@ -21,7 +21,7 @@ Create new UWP project using Visual Studio. For more [details](https://learn.mic
 
 SfDiagram control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
-![Designer](Getting-Started_images\Diagram.png)
+![Adding control via Designer in UWP Diagram](getting-started-images\uwp-diagram-adding-control-via-designer.png)
 
 ### Adding control manually in XAML
 
@@ -204,7 +204,7 @@ Creating NodeViewModel with Specified Height and Width.
 
  Now Node will be looks like,
    
-![AddNode](Getting-Started_images\addNode.png)
+![Add Node in UWP Diagram](getting-started-images\uwp-diagram-add-node.png)
    
 N> ID sets for each node to identify nodes easily while setting connectors.
    
@@ -262,7 +262,7 @@ N> `Annotations` property is a collection, which indicates that more than one An
 
 Now Node will be looks like,
  
-![NodeAnnotation](Getting-Started_images\nodeAnnotation.PNG)
+![Node Annotation in UWP Diagram](getting-started-images\uwp-diagram-node-annotation.PNG)
  
 ### Nodes for Flow Diagram
 
@@ -339,7 +339,7 @@ Now Node will be looks like,
 
  Finally all Nodes added to diagram and it will be looks like
 
-![CompleteDiagram](Getting-Started_images\completeNodes.png)
+![Nodes for Flow Diagram in UWP Diagram](getting-started-images\uwp-diagram-nodes-for-flow-diagram.png)
 
 ### Add Connectors
 
@@ -400,7 +400,7 @@ Now Node will be looks like,
 
 Now output will be,
 
- ![NodeWithConnector](Getting-Started_images\nodewithConnector.png)
+ ![Node With Connector in UWP Diagram](getting-started-images\uwp-diagram-node-with-connector.png)
  
 #### Connectors for Flow diagram
 
@@ -442,6 +442,6 @@ Now we can connect all nodes using ConnectorViewModel.
 
 Now output will be looks like,
 
-![FlowDiagram](Getting-Started_images\completeDiagram.png)
+![Add Connectors for Flow Diagram in UWP](getting-started-images\uwp-diagram-add-connectors-for-flow-diagram.png)
     
 [View Sample in GitHub](https://github.com/SyncfusionExamples/UWP-Diagram-Examples/tree/main/Samples/GettingStarted/Flowchartsample).
