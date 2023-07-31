@@ -185,7 +185,7 @@ accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
 
 {% endtabs %}
 
-![Accordion items displayed in collapsed state with header](Overview-images/Setting-header-for-accordion-item.png)
+![Accordion items displayed in collapsed state with header](overview-images/uwp-accordion-setting-header.png)
 
 ## Applying Template for Item Header
 
@@ -527,4 +527,4 @@ FontSize="12"/>
 
 {% endtabs %}
 
-![Single item expanded in Accordion and displayed content under corresponding header](Overview-images/Setting-content-for-accordion-item.png)
+![Single item expanded in Accordion and displayed content under corresponding header](overview-images/uwp-accordion-setting-content.png)
