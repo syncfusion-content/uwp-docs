@@ -76,7 +76,7 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 {% endtabs %}
 
-![BackStage commands in UWP Ribbon](backStage_images/uwp-ribbon-backstage-commands.jpeg)
+![BackStage commands in UWP Ribbon](backstage_images/uwp-ribbon-backstage-commands.jpeg)
 
 ## BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
 
