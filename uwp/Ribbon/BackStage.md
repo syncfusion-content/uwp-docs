@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BackStage in UWP Ribbon control | Syncfusion
-description: Learn here all about BackStage support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
+description: Learn here all about BackStage support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control, it's elements and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
@@ -76,9 +76,9 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 {% endtabs %}
 
-![BackStage_img1](BackStage_images/BackStage_img1.jpeg)
+![BackStage commands in UWP Ribbon](backStage_images/uwp-ribbon-backstage-commands.jpeg)
 
-# BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
+## BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 * In case of BackStageTabItem, BackStage page has been displayed by loading the Content Control inside it as like below 
 
@@ -100,9 +100,9 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 {% endtabs %}
 
-![BackStage_img2](BackStage_images/BackStage_img2.jpeg)
+![BackStage tab item in UWP Ribbon](backStage_images/uwp-ribbon-backstage-tab-item.jpeg)
 
-# BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
+### BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
 
 * In case of BackStageButton, BackStage page has been displayed in the click event of BackStage button as follow
 
@@ -132,6 +132,6 @@ private async void SfBackStageButton_Click(object sender, RoutedEventArgs e)
 
 {% endtabs %}
 
-![BackStage_img3](BackStage_images/BackStage_img3.jpeg)
+![Backstage button in UWP Ribbon](backStage_images/uwp-ribbon-backstage-button.jpeg)
 
 
