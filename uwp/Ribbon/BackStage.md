@@ -100,7 +100,7 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 {% endtabs %}
 
-![BackStage tab item in UWP Ribbon](backStage_images/uwp-ribbon-backstage-tab-item.jpeg)
+![BackStage tab item in UWP Ribbon](backstage_images/uwp-ribbon-backstage-tab-item.jpeg)
 
 ### BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
 
@@ -132,6 +132,6 @@ private async void SfBackStageButton_Click(object sender, RoutedEventArgs e)
 
 {% endtabs %}
 
-![Backstage button in UWP Ribbon](backStage_images/uwp-ribbon-backstage-button.jpeg)
+![Backstage button in UWP Ribbon](backstage_images/uwp-ribbon-backstage-button.jpeg)
 
 
