@@ -110,4 +110,4 @@ You can load an image to the control as a stream.
 
 ## See also
 
-[How to enable access permission in uwp application](https://www.syncfusion.com/kb/8924/how-to-enable-access-permission-in-uwp-application)
+[How to enable access permission in uwp application](https://support.syncfusion.com/kb/article/7751/how-to-enable-access-permission-in-uwp-application)
