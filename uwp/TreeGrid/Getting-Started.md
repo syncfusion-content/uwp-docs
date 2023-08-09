@@ -102,18 +102,18 @@ You can refer [here](https://help.syncfusion.com/uwp/installation-and-upgrade/sy
 
 In this walk through, you will create UWP application with SfTreeGrid control.
 
-1. [Creating project](http://help.syncfusion.com/uwp/sftreegrid/getting-started#creating-the-project)
-2. [Adding control via Designer](http://help.syncfusion.com/uwp/sftreegrid/getting-started#adding-control-via-designer)
-3. [Adding control manually in XAML](http://help.syncfusion.com/uwp/sftreegrid/getting-started#adding-control-manually-in-xaml)
-4. [Adding control manually in C# ](http://help.syncfusion.com/uwp/sftreegrid/getting-started#adding-control-manually-in-c)
-5. [Binding self-relational data in SfTreeGrid](http://help.syncfusion.com/uwp/sftreegrid/getting-started#binding-self-relational-data-in-sftreegrid)
-6. [Binding nested collection](http://help.syncfusion.com/uwp/sftreegrid/getting-started#binding-nested-collection-with-sftreegrid) 
-7. [Populate SfTreeGrid in on-demand](http://help.syncfusion.com/uwp/sftreegrid/getting-started#populate-sftreegrid-in-on-demand-unbound-mode)
-8. [Populate child nodes asynchronously](http://help.syncfusion.com/uwp/sftreegrid/getting-started#Populate-child-nodes-asynchronously)
-9. [Defining Columns](http://help.syncfusion.com/uwp/sftreegrid/getting-started#defining-columns)
-10. [Selection](http://help.syncfusion.com/uwp/sftreegrid/getting-started#selection)
-11. [Sorting](http://help.syncfusion.com/uwp/sftreegrid/getting-started#sorting)
-12. [Editing](http://help.syncfusion.com/uwp/sftreegrid/getting-started#editing)
+1. [Creating project](https://help.syncfusion.com/uwp/treegrid/getting-started#creating-the-project)
+2. [Adding control via Designer](https://help.syncfusion.com/uwp/treegrid/getting-started#adding-control-via-designer)
+3. [Adding control manually in XAML](https://help.syncfusion.com/uwp/treegrid/getting-started#adding-control-manually-in-xaml)
+4. [Adding control manually in C# ](https://help.syncfusion.com/uwp/treegrid/getting-started#adding-control-manually-in-c)
+5. [Binding self-relational data in SfTreeGrid](https://help.syncfusion.com/uwp/treegrid/getting-started#binding-self-relational-data-in-sftreegrid)
+6. [Binding nested collection](https://help.syncfusion.com/uwp/treegrid/getting-started#binding-nested-collection-with-sftreegrid) 
+7. [Populate SfTreeGrid in on-demand](https://help.syncfusion.com/uwp/treegrid/getting-started#populate-sftreegrid-in-on-demand-unbound-mode)
+8. [Populate child nodes asynchronously](https://help.syncfusion.com/uwp/treegrid/getting-started#Populate-child-nodes-asynchronously)
+9. [Defining Columns](https://help.syncfusion.com/uwp/treegrid/getting-started#defining-columns)
+10. [Selection](https://help.syncfusion.com/uwp/treegrid/getting-started#selection)
+11. [Sorting](https://help.syncfusion.com/uwp/treegrid/getting-started#sorting)
+12. [Editing](https://help.syncfusion.com/uwp/treegrid/getting-started#editing)
 
 ### Creating the project
 
@@ -259,7 +259,7 @@ public class EmployeeInfo
 {% endhighlight %}
 {% endtabs %}
 
-N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Data.INotifyPropertyChanged?redirectedfrom=MSDN&view=winrt-19041) interface
+N> If you want your data object (EmployeeInfo class) to automatically reflect property changes, then the object must implement [INotifyPropertyChanged](https://learn.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Data.INotifyPropertyChanged?redirectedfrom=MSDN&view=winrt-19041) interface
 
 2.Create a `ViewModel` class with Employees property and Employees property is initialized with several data objects in constructor.
 
