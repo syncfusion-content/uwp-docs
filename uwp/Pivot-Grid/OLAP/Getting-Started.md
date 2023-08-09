@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with UWP Pivot Grid (SfPivotGrid)
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
+Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your UWP application to use the components.
 
 This section explains about the information required to create a simple SfPivotGrid control bound to the OLAP data source and create a WCF service that helps to bind the OLAP data with the SfPivotGrid control through the OlapDataManager.
 
