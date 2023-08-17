@@ -27,7 +27,7 @@ The following code example illustrates how to design a table with set of formatt
 {% highlight c# %}
 ///Paste the WordDocument into SfRichTextBoxAdv.
 WordDocument document = CreateTable();
-SfRichTextBoxAdv.PasteCommand.Execute(document,richTextBoxAdv);
+richTextBoxAdv.PasteCommand.Execute(document);
 
 /// <summary>
 ///  The following helper method illustrates how to create table in DocIO.
