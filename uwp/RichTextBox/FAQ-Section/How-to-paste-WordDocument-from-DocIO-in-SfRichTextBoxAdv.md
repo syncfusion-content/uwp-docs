@@ -43,12 +43,12 @@ Private WordDocument CreateTable()
 ///Specifies the total number of rows & columns
   table.ResetCells(10, 6);
 ///Iterates the rows of the table
-for (int i = 0; i < table.Rows.Count; i++)
-{
-    WTableRow wTableRow = table.Rows[i];
-    ///Iterates through the cells of rows
-    for (int j = 0; j < wTableRow.Cells.Count; j++)
-    {
+   for (int i = 0; i < table.Rows.Count; i++)
+   {
+      WTableRow wTableRow = table.Rows[i];
+      ///Iterates through the cells of rows
+      for (int j = 0; j < wTableRow.Cells.Count; j++)
+      {
             WTableCell wTableCell = wTableRow.Cells[j];
             ///Specifies the left, right, top and bottom padding of the cell.
             wTableCell.CellFormat.Paddings.Left = 7.5f;
@@ -67,8 +67,8 @@ for (int i = 0; i < table.Rows.Count; i++)
             wTableCell.CellFormat.Borders.Left.Color = Color.Red;
             ///Set line width for tablecell borders.
             wTableCell.CellFormat.Borders.LineWidth = 7.5f;
-    }
-}
+      }
+   }
      return WordDocument
 }
 
