@@ -185,7 +185,7 @@ public class CustomRowGenerator : RowGenerator
 {% endtabs %}
 ![Styles-and-Templates_img30](Styles-and-Templates_images/Styles-and-Templates_img30.png)
 
-You can download a working demo for the above customization from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataRowUWP-1254907182.zip).
+You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataRowUWP-1254907182.zip).
 
 The below code example shows how to change the background color of the `VirtualizingCellsControl` when the value has been changed for a particular cell. This can be done by hooking the `DataContextChanged` and `PropertyChanged` event.
 {% tabs %}
@@ -235,7 +235,7 @@ public class CustomRowGenerator : RowGenerator
 {% endhighlight %}
 {% endtabs %}
 
-You can download a working demo for the above customization from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VirtualizingControlUWp810114614).
+You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/VirtualizingControlUWp810114614).
 
 ### Cell containers
 Below table shows the different types of cells and its container.
@@ -345,7 +345,7 @@ public class CustomRowGenerator : RowGenerator
 }
 {% endhighlight %}
 {% endtabs %}
-You can download a working demo for the above customization from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GridcellUwp1283030332).
+You can download a working demo for the above customization from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GridcellUwp1283030332).
 
 ## Editing DataGrid Elements Style in Visual Studio Designer
 
@@ -1147,7 +1147,7 @@ The appearance of `DetailsViewDataGrid` can be customized by writing style of Ta
 
 ## Styling Filter popup
 
-[Refer here for filter popup styling](https://help.syncfusion.com/uwp/sfdatagrid/filtering#appearance-customization)
+[Refer here for filter popup styling](http://help.syncfusion.com/uwp/sfdatagrid/filtering#appearance-customization)
  
 ## Styling Sort icon
 
