@@ -139,7 +139,7 @@ You can change the CurrentRowIndicator in the RowHeader by customizing the contr
 ![Image used to display the current row indicator changed in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img3.png)
 
 
-You can get the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator(1)970786330.zip).
+You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator(1)970786330.zip).
 
 
 ## Touch Support
@@ -547,7 +547,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/how-to-drag-and
 
 ### Row Drag and Drop between two SfDataGrids
 
-You should enable [AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop) property for the SfDataGrid’ s which are involved in row drag and drop operations.
+You should enable [AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop?view=winrt-22621) property for the SfDataGrid’ s which are involved in row drag and drop operations.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/UWP)
 
