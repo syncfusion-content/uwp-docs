@@ -28,7 +28,7 @@ The following steps illustrates you how to configure the app package for localiz
 
 * Create a folder with name ‘Resources’ in your application.
 * Create a folder with language (“en-US”, “fr-FR”, etc.) under ‘Resources’ to hold the resource file for the respective language.
-* Add default English (“en-US”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources_File-1713514901)(resource) file of SfRichTextBoxAdv and application (Localization) in the ‘en-US’ folder, named as Syncfusion.SfRichTextBoxAdv.UWP.Resources. resw, Syncfusion.SfRibbon. Resources.resw and Localization.Resources. resw respectively. For your reference, French(“fr-FR”) [Resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources2076091381) file.
+* Add default English (“en-US”) [Resw](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources_File-1713514901)(resource) file of SfRichTextBoxAdv and application (Localization) in the ‘en-US’ folder, named as Syncfusion.SfRichTextBoxAdv.UWP.Resources. resw, Syncfusion.SfRibbon. Resources.resw and Localization.Resources. resw respectively. For your reference, French(“fr-FR”) [Resw](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Resources2076091381) file.
 
 ![UWP SfRichTextBoxAdv displays added resource file](Localization_images/Localization_img2.jpeg)
 

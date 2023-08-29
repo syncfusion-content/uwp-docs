@@ -445,7 +445,7 @@ if (this.dataGrid.View.IsAddingNew)
 
 ### Validating AddNewRow
 
-You can validate the data in AddNewRow like other data rows through [built-in validation](http://help.syncfusion.com/uwp/sfdatagrid/data-validation#built-in-validations) or [custom validation](http://help.syncfusion.com/uwp/sfdatagrid/data-validation#custom-validation-through-events). 
+You can validate the data in AddNewRow like other data rows through [built-in validation](https://help.syncfusion.com/uwp/datagrid/data-validation#built-in-validations) or [custom validation](https://help.syncfusion.com/uwp/datagrid/data-validation#custom-validation-through-events). 
 
 Here, AddNewRow is validated using [RowValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event by setting `RowValidatingEventArgs.IsValid` to `false` which doesn’t allow users to commit the AddNewRow until the validation gets succeeded.
   
@@ -806,7 +806,7 @@ public class GridSelectionControllerExt : GridSelectionController
 
 ### Conditionally deleting records when pressing Delete key
 
-You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `RecordDeleting` event.
+You can cancel the record deletion by using the [RecordDeletingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-7.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue) of `RecordDeleting` event.
   
 {% tabs %}
 {% highlight c# %}
