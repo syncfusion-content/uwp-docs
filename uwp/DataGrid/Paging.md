@@ -318,11 +318,11 @@ Here, records are filtered based on the textbox text in clicking event of Filter
 
 ![Paging_img2](Paging_images/Paging_img2.png)
 
-You can refer the [sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingPageCount-412402870.zip) from here.
+You can refer the [sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingPageCount-412402870.zip) from here.
 
 ### Sorting complete collection
 
-You can sort the complete collection with ‘OnDemandPaging’ by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+You can sort the complete collection with ‘OnDemandPaging’ by using [SfDataGrid.SortColumnsChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortColumnsChanging) event.
 In this event, you can sort the complete underlying collection instead of sorting current page alone by resetting the caches.
 
 {% tabs %}

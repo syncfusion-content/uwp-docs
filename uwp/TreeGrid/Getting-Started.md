@@ -539,7 +539,7 @@ namespace NestedCollectionDemo
 
 ### Populate SfTreeGrid in on-demand (unbound mode)
 
-SfTreeGrid support to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.  RequestTreeItems event is triggered at the time of loading and when user expand any row at runtime.
+SfTreeGrid support to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event.  RequestTreeItems event is triggered at the time of loading and when user expand any row at runtime.
 
 In the below example SfTreeGrid is populated through `SfTreeGrid.RequestTreeItems` instead of setting `SfTreeGrid.ItemsSource`. 
 
@@ -673,7 +673,7 @@ public class ViewModel
 {% endtabs %}
 
 #### Populating TreeGrid
-Populate the data for SfTreeGrid in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. SfTreeGrid gets the root and leaf nodes through this event handler.
+Populate the data for SfTreeGrid in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. SfTreeGrid gets the root and leaf nodes through this event handler.
 TreeGridRequestTreeItemsEventArgs.ParentItem denotes the data object looking for its child nodes. If it is null, it denotes SfTreeGrid requesting root nodes.
 
 {% tabs %}
@@ -708,7 +708,7 @@ You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.Re
 
 ### Populate child nodes asynchronously
 
-SfTreeGrid supports to load the child items asynchronously through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event. RequestTreeItems event is triggered at the time of loading and when user expand any node at runtime.
+SfTreeGrid supports to load the child items asynchronously through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. RequestTreeItems event is triggered at the time of loading and when user expand any node at runtime.
 
 In the below example child nodes are populated asynchronously through SfTreeGrid.RequestTreeItems event.
 
@@ -972,7 +972,7 @@ Property of type Uri
 </td>
 </tr>
 </table>
-When columns are auto-generated, you can handle the [SfTreeGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event to customize or cancel the columns before they are added to the SfTreeGrid.
+When columns are auto-generated, you can handle the [SfTreeGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoGeneratingColumn) event to customize or cancel the columns before they are added to the SfTreeGrid.
 
 You can prevent the automatic column generation by setting [SfTreeGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns) property to false. When `SfTreeGrid.AutoGenerateColumns` property is `false`, you have to define the columns to be displayed as below,
 
@@ -1068,14 +1068,14 @@ Represents SfTreeGrid column that hosts template-specified content in its cells
 
 By default, the entire row is selected when a user clicks a cell in a SfTreeGrid. You can set the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to specify whether a user can select single row or cell, or multiple rows or cells. 
 
-You can handle the selection operations with the help of [SfTreeGrid.SelectionChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) and [SfTreeGrid.SelectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events.
+You can handle the selection operations with the help of [SfTreeGrid.SelectionChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionChanging) and [SfTreeGrid.SelectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionChanged) events.
 
 ### Sorting
 
 By default, you can sort columns in a SfTreeGrid by clicking the column header. You can configure the sorting by setting [SfTreeGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortColumnDescriptions) property.
 
-You can customize sorting by handling the [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) and 
-[SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events. To cancel the default sort, set the Cancel property to true in `SfTreeGrid.SortColumnChanging` event.
+You can customize sorting by handling the [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortColumnsChanging) and 
+[SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortColumnsChanged) events. To cancel the default sort, set the Cancel property to true in `SfTreeGrid.SortColumnChanging` event.
 
 ### Editing
 
