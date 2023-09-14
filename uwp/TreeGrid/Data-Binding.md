@@ -9,8 +9,8 @@ documentation: ug
 
 # Data Binding in UWP TreeGrid (SfTreeGrid)
 
-SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically with [RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html).
-If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604.aspx)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19.aspx), SfTreeGrid will not refresh the UI automatically.
+SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically with [RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems).
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0&redirectedfrom=MSDN) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-7.0&redirectedfrom=MSDN)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0&redirectedfrom=MSDN), SfTreeGrid will not refresh the UI automatically.
 
 Below are the ways to bind the data source to SfTreeGrid.
 
@@ -24,7 +24,7 @@ SfTreeGrid control supports to bind any collection that implements the [IEnumera
 
 ## Binding with dynamic data object
 
-SfTreeGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
+SfTreeGrid control supports to bind [dynamic data object](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic?view=net-7.0&redirectedfrom=MSDN). Below are the limitations when you are binding dynamic data object,
 
 1. In UWP, UI won’t get refreshed when you are changing the property value. This is limitation in UWP platform.
 2. SfTreeGrid doesn’t support [LiveNodeUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode) - `AllowDataShaping`.
@@ -250,7 +250,7 @@ treeGrid.ExpandAllNodes(node);
 
 ### Cancel the node Expanding using NodeExpanding event
 
-You can cancel the node expanding through [SfTreeGrid.NodeExpanding](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
+You can cancel the node expanding through [SfTreeGrid.NodeExpanding](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanding) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -280,7 +280,7 @@ private void TreeGrid_NodeExpanding(object sender, NodeExpandingEventArgs e)
 
 ### NodeExpanded Event
 
-You can get the notification once a node is expanded from [TreeGrid.NodeExpanded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event and here you can get the expanded node and its child nodes.
+You can get the notification once a node is expanded from [TreeGrid.NodeExpanded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeExpanded) event and here you can get the expanded node and its child nodes.
 
 {% tabs %}
 {% highlight c# %}
@@ -393,7 +393,7 @@ treeGrid.CollapseAllNodes(node);
 
 ### Cancel the node collapsing using NodeCollapsing Event
 
-You can cancel the node collapsing operation through [TreeGrid.NodeCollapsing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event.
+You can cancel the node collapsing operation through [TreeGrid.NodeCollapsing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsing) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -423,7 +423,7 @@ private void TreeGrid_NodeCollapsing(object sender, NodeCollapsingEventArgs e)
 
 ### NodeCollapsed Event
 
-You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event and here you can get the collapsed node.
+You can get the notification once a node is collapsed from [TreeGrid.NodeCollapsed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCollapsed) event and here you can get the collapsed node.
 
 {% tabs %}
 {% highlight c# %}
@@ -476,7 +476,7 @@ treeGrid.LiveNodeUpdateMode = LiveNodeUpdateMode.AllowDataShaping;
 
 ### ItemsSourceChanged
 
-[SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property.
+[SfTreeGrid.ItemsSourceChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSourceChanged) event occurs when the data source is changed by using [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property.
 
 This event receives two arguments namely sender that handles SfTreeGrid and `GridItemsSourceChangedEventArgs` as objects.
 
@@ -502,7 +502,7 @@ The following events are associated with View.
 
 #### RecordPropertyChanged
 
-This event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://msdn.microsoft.com/en-us/library/system.collections.specialized.inotifycollectionchanged.aspx) interface. The event receives with two arguments namely `sender` that handles the DataModel and `PropertyChangedEventArgs` as object.
+This event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0&redirectedfrom=MSDN) interface. The event receives with two arguments namely `sender` that handles the DataModel and `PropertyChangedEventArgs` as object.
 
 * `PropertyChangedEventArgs` has below property,
 * `PropertyName` – It denotes the PropertyName of the changed value.
