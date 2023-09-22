@@ -37,7 +37,7 @@ N> It is mandatory to specify the `GridColumn.MappingName` for `GridUnBoundColum
 
 ## Populating data for unbound column
 
-You can populate the data for unbound column by setting [Expression](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Expression) or [Format](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Format) property or through [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+You can populate the data for unbound column by setting [Expression](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Expression) or [Format](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html#Syncfusion_UI_Xaml_Grid_GridUnBoundColumn_Format) property or through [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryUnboundColumnValue) event.
  
 ### Using Expression
 
@@ -234,7 +234,7 @@ this.dataGrid.Columns.Add(new GridUnBoundColumn() { HeaderText = "Discount Rate"
 
 ### Using QueryUnBoundColumnValue event
 
-You can populate the data for unbound column by handling the [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. 
+You can populate the data for unbound column by handling the [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryUnboundColumnValue) event. 
 
 [GridUnBoundColumnEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs.html) of the `QueryUnBoundColumnValue` event provides the information about the cell triggered this event. [GridUnBoundColumnValueEventsArgs.OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridEventArgs.html#Syncfusion_UI_Xaml_Grid_GridEventArgs_OriginalSender) returns the DataGrid fired this event for DetailsView.
 
@@ -268,7 +268,7 @@ void dataGrid_QueryUnboundColumnValue(object sender, GridUnboundColumnEventsArgs
 
 ## Refreshing the unbound column at runtime
 
-You can trigger the [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event or recalculate the value for the cells of unbound column at runtime by calling [UpdateUnboundColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Helpers.GridHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_GridHelper_UpdateUnboundColumn_Syncfusion_UI_Xaml_Grid_SfDataGrid_Syncfusion_UI_Xaml_Grid_DataRowBase_System_String_) method.
+You can trigger the [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryUnboundColumnValue) event or recalculate the value for the cells of unbound column at runtime by calling [UpdateUnboundColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Helpers.GridHelper.html#Syncfusion_UI_Xaml_Grid_Helpers_GridHelper_UpdateUnboundColumn_Syncfusion_UI_Xaml_Grid_SfDataGrid_Syncfusion_UI_Xaml_Grid_DataRowBase_System_String_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -286,7 +286,7 @@ private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventA
 
 ### Cancel the editing for unbound column cell
 
-You can cancel the editing of unbound column cell by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+You can cancel the editing of unbound column cell by handling the [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellBeginEdit) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -302,7 +302,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEv
 
 ### Saving edited value of unbound column using QueryUnBoundColumnValue.
 
-You can get the edited value of unbound column from [GridUnboundColumnEventsArgs.Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnboundColumnEventsArgs_Value) property of [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event when UnBoundAction is `CommitData`.
+You can get the edited value of unbound column from [GridUnboundColumnEventsArgs.Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnboundColumnEventsArgs.html#Syncfusion_UI_Xaml_Grid_GridUnboundColumnEventsArgs_Value) property of [QueryUnBoundColumnValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryUnboundColumnValue) event when UnBoundAction is `CommitData`.
 
 {% tabs %}
 {% highlight c# %}
