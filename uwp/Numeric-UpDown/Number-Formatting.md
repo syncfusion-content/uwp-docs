@@ -159,4 +159,4 @@ numericUpDown.Culture = New System.Globalization.CultureInfo("de-DE")
 
 ## See also
 
-[How to format the display text as currency in SfNumericUpDown](https://www.syncfusion.com/kb/6959/how-to-format-the-display-text-as-currency-in-sfnumericupdown)
+[How to format the display text as currency in SfNumericUpDown](https://support.syncfusion.com/kb/article/6349/how-to-format-display-text-as-currency-in-uwp-editor--numericupdown)
