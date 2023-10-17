@@ -1,5 +1,5 @@
 ---
-title: Overview of UWP controls | Syncfusion
+title: Overview of UWP Controls | Syncfusion
 description: Learn here all about introduction of Syncfusion Essential Studio for UWP, its controls, features and more.
 platform: uwp
 control: overview
