@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP DataPager (SfDataPager)
 
-The [SfDataPager](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control provides a configurable user interface for paging. You can specify the page count or you can bind the `SfDataPager` to any [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-5.0#) . When you bind collection, the `SfDataPager` control process the collection internally and provides the data for the current page using [PagedSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) property. 
+The [SfDataPager](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) control provides a configurable user interface for paging. You can specify the page count or you can bind the `SfDataPager` to any [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-5.0) . When you bind collection, the `SfDataPager` control process the collection internally and provides the data for the current page using [PagedSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) property. 
 
 ## Assembly deployment
 
