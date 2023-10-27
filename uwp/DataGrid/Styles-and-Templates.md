@@ -1147,7 +1147,7 @@ The appearance of `DetailsViewDataGrid` can be customized by writing style of Ta
 
 ## Styling Filter popup
 
-[Refer here for filter popup styling](https://help.syncfusion.com/uwp/sfdatagrid/filtering#appearance-customization)
+[Refer here for filter popup styling](https://help.syncfusion.com/uwp/datagrid/filtering#appearance-customization)
  
 ## Styling Sort icon
 
