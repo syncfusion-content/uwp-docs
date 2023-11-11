@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Viewing PDF in UWP PDF Viewer (SfPdfViewer)
-The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) allows you to load the PDF documents from the [`stream`](https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0), [`storageFile`](https://docs.microsoft.com/en-us/uwp/api/windows.storage.storagefile?view=winrt-19041), and [`PdfLoadedDocument`](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
+The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) allows you to load the PDF documents from the [`stream`](https://learn.microsoft.com/en-us/dotnet/api/system.io.stream?view=net-5.0), [`storageFile`](https://learn.microsoft.com/en-us/uwp/api/windows.storage.storagefile?view=winrt-19041), and [`PdfLoadedDocument`](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.Parsing.PdfLoadedDocument.html) object.
 
 ## Loading a PDF using PdfLoadedDocument object
 The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) allows you to load the PDF document synchronously and asynchronously from the specified pdfLoadedDocument object using the `LoadDocument` and  `LoadDocumentAsync` methods respectively.
@@ -92,13 +92,13 @@ Await pdfViewer.LoadDocumentAsync(fileStream, cancellationTokenSource.Token)
 {% endhighlight %}
 {% endtabs %}
 
-In the above code sample, the [`CancellationToken`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-5.0) enables you to cancel the asynchronous loading of a PDF document when it is in progress.
+In the above code sample, the [`CancellationToken`](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-5.0) enables you to cancel the asynchronous loading of a PDF document when it is in progress.
 
 ## Loading a PDF using the StorageFile object
 
 The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) allows you to load the PDF document synchronously and asynchronously from the specified storage file using the `LoadDocument` and  `LoadDocumentAsync` methods respectively.
 
-The following code explains how to load the document synchronously using a [`StorageFile`](https://docs.microsoft.com/en-us/uwp/api/windows.storage.storagefile?view=winrt-19041) object that was created from the PDF in the Assets folder of the application.
+The following code explains how to load the document synchronously using a [`StorageFile`](https://learn.microsoft.com/en-us/uwp/api/windows.storage.storagefile?view=winrt-19041) object that was created from the PDF in the Assets folder of the application.
 
 {% tabs %}
 {% highlight c# %}
@@ -122,7 +122,7 @@ pdfViewer.LoadDocument(file)
 {% endhighlight %}
 {% endtabs %}
 
-The following code explains how to load the document asynchronously using a [`StorageFile`](https://docs.microsoft.com/en-us/uwp/api/windows.storage.storagefile?view=winrt-19041) object that was created from the PDF in the Assets folder of the application.
+The following code explains how to load the document asynchronously using a [`StorageFile`](https://learn.microsoft.com/en-us/uwp/api/windows.storage.storagefile?view=winrt-19041) object that was created from the PDF in the Assets folder of the application.
 
 {% tabs %}
 {% highlight c# %}
@@ -148,4 +148,4 @@ Await pdfViewer.LoadDocument(file, cancellationTokenSource.Token);
 {% endhighlight %}
 {% endtabs %}
 
-In the above code sample, the [`CancellationToken`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-5.0) enables you to cancel the asynchronous loading of a PDF document when it is in progress.
+In the above code sample, the [`CancellationToken`](https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtoken?view=net-5.0) enables you to cancel the asynchronous loading of a PDF document when it is in progress.
