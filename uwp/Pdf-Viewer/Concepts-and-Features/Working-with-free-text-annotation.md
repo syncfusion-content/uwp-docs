@@ -15,7 +15,7 @@ PDF Viewer allows you to include free text annotations in a PDF document and pro
 
 ### Enabling free text annotation mode
 
-To enable a free text annotation, execute the FreeTextAnnotationCommand with true as parameter.
+To enable a free text annotation, execute the `FreeTextAnnotationCommand` with true as parameter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ You can customize the default values of text color, text size, stroke color, fil
 
 ###Setting the default text color
 
-You can set the default text color of the free text annotations by using the SfPdfViewerControl.FreeTextAnnotationSettings.TextColor property. Refer to the following code.
+You can set the default text color of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.TextColor` property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -72,7 +72,7 @@ pdfViewer.FreeTextAnnotationSettings.TextColor = Color.FromArgb(255, 255, 0, 0);
 
 ### Setting the default text size
 
-You can set the default text size of the free text annotations by using the SfPdfViewerControl.FreeTextAnnotationSettings.TextSize property. Refer to the following code.
+You can set the default text size of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.TextSize` property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -83,7 +83,7 @@ pdfViewer.FreeTextAnnotationSettings.TextSize = 10;
 
 ### Setting the default fill color
 
-You can set the default fill background color of the free text annotations by using the SfPdfViewerControl.FreeTextAnnotationSettings.FillColor property. Refer to the following code.
+You can set the default fill background color of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.FillColor` property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -94,7 +94,7 @@ pdfViewer.FreeTextAnnotationSettings.FillColor= Color.FromArgb(255, 255, 0, 0);
 
 ### Setting the default border stroke color
 
-You can set the default border stroke color of the free text annotations by using the SfPdfViewerControl.FreeTextAnnotationSettings.StrokeColor property. Refer to the following code.
+You can set the default border stroke color of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.StrokeColor` property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -105,7 +105,7 @@ pdfViewer.FreeTextAnnotationSettings.StrokeColor = Color.FromArgb(255, 255, 0, 0
 
 ### Setting the default border stroke width
 
-You can set the default border stroke width of the free text annotations by using the SfPdfViewerControl.FreeTextAnnotationSettings.StrokeWidth property. Refer to the following code.
+You can set the default border stroke width of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.StrokeWidth` property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -122,7 +122,7 @@ You can change the properties of a selected free text annotation or remove it by
 
 ## Detecting the change in appearance properties of free text annotations
 
-The changes made to free text annotation properties can be detected using the SfPdfViewerControl.FreeTextAnnotationEdited event. The property values before and after the change can be obtained using the FreeTextAnnotationEditedEventArgs parameter of the event’s handler.
+The changes made to free text annotation properties can be detected using the `SfPdfViewerControl.FreeTextAnnotationEdited` event. The property values before and after the change can be obtained using the `FreeTextAnnotationEditedEventArgs` parameter of the event’s handler.
 
 {% highlight c# %}
 

@@ -368,7 +368,7 @@ Stream pdfDocumentStream = pdfViewerControl.Save();
 {% endhighlight %}
 {% endtabs %}
 
-N> The Save method does not save the stamp annotations in the PDF document. Instead, use the SaveAsync method to save them.
+N> The Save method does not save the stamp annotations in the PDF document. Instead, use the `SaveAsync` method to save them.
 
 ## Saving a PDF document asynchronously
 
@@ -385,7 +385,7 @@ Task<Stream> pdfDocumentStream = pdfViewerControl.SaveAsync();
 
 ## Events to track the loading of PDFs
 
-The PDFViewer control allows you to track the loading of PDFs using the following events. The DocumentLoaded event triggers after the document is properly loaded in the SfPdfViewer. The following code example explains the same.
+The PDFViewer control allows you to track the loading of PDFs using the following events. The `DocumentLoaded`` event triggers after the document is properly loaded in the SfPdfViewer. The following code example explains the same.
 
 {% tabs %}
 {% highlight c# %}
@@ -405,7 +405,7 @@ private void PdfViewer_DocumentLoaded(object sender, DocumentLoadedEventArgs arg
 
 ## Dispose the managed resources of PDFViewer
 
-The PDFViewer control allows you to dispose the managed resources which are associated with the viewer. You need to call the Dispose method of the PDFViewer control as shown in the following code sample to achieve the same.
+The PDFViewer control allows you to dispose the managed resources which are associated with the viewer. You need to call the `Dispose` method of the PDFViewer control as shown in the following code sample to achieve the same.
 
 {% tabs %}
 {% highlight c# %}

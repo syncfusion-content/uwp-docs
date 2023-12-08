@@ -15,7 +15,7 @@ N> Stamp annotations can be saved only by using the SaveAsync method.
 
 ## Add a custom stamp
 
-The custom stamps can be added using the AddStamp methods.
+The custom stamps can be added using the `AddStamp` methods.
 
 {% tabs %}
 {% highlight c# %}

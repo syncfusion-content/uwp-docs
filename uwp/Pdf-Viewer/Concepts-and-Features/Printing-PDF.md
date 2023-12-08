@@ -96,7 +96,8 @@ When the `PrintAsync` is called, the PDF Viewer will show the print previewer. E
         {
             try
             {
-			    //Sets the name of the printed document
+                
+				//Sets the name of the printed document
                 pdfViewer.PrinterSettings.DocumentName = “PdfFileName.pdf”;
 
                 //Asynchronously  prints the document loaded in the PDF viewer 
