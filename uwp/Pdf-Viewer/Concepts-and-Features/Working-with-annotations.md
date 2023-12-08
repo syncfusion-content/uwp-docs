@@ -15,10 +15,13 @@ PDF Viewer allows user to include annotations in PDF files and provides options 
 2. Shape annotations
 3. Ink annotations
 4. Popup annotations
+5. Free text annotation.
+6. Free text callout annotation. 
+7. Stamp annotation.
 
 The individual annotation types are discussed in detail under their own sections. 
 
-### Annotation events. 
+## Annotation events. 
 
 PDF viewer provides the following events. 
 
@@ -88,7 +91,7 @@ private void PdfViewer_AnnotationAdded(object sender, AnnotationMovedOrResizedEv
 
 {% endhighlight %}
 
-### Enable and disable selection of annotations
+## Enable and disable selection of annotations
 
 By default, PdfViewer allows the user to select the annotations by tapping on it, this action is followed by the appearance of the selector around the selected annotation. The selection of annotations can be disabled by setting `IsReadOnly` property of `AnnotationSettings` class to true. The default value of this API will be false.
 
@@ -99,7 +102,7 @@ pdfViewer.AnnotationSettings.IsReadOnly = true;
 
 {% endhighlight %}
 
-### Setting the author for the annotations.
+## Setting the author for the annotations.
 The `Author` property of the [`IAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.IAnnotation.html) is used to set the name of the author for all supported annotations.
 
 Refer to the following code example.
@@ -160,5 +163,27 @@ The following code snippet illustrates removing all annotations from the PDF.
 {% highlight c# %}
 
 pdfViewer.ClearAllAnnotations();
+
+{% endhighlight %}
+
+### How to get the list of annotations present in the PDF?
+
+By using the `AnnotationCollection` property, you can get the list of annotations present in the PDF document. Refer to the following code sample.
+
+{% highlight c# %}
+
+//Gets the list annotations present in the PDF
+var annotations = pdfViewer.AnnotationCollection;
+
+{% endhighlight %}
+
+### How to show or hide the annotations present in the PDF?
+
+By using the `AnnotationVisibility` property, you can change the visibility of the annotations present in the PDF document. By default, visibility of the annotation is Visibility.Visible.
+
+{% highlight c# %}
+
+//Gets or set the visibility of the annotations.
+pdfViewer.AnnotationVisibility = Visibility.Collapsed;
 
 {% endhighlight %}
