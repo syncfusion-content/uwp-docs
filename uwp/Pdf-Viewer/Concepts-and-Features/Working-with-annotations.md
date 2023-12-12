@@ -168,7 +168,7 @@ pdfViewer.ClearAllAnnotations();
 
 ### How to get the list of annotations present in the PDF?
 
-By using the `AnnotationCollection` property, you can get the list of annotations present in the PDF document. Refer to the following code sample.
+By using the [`AnnotationCollection`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_AnnotationCollection) property, you can get the list of annotations present in the PDF document. Refer to the following code sample.
 
 {% highlight c# %}
 
@@ -179,7 +179,7 @@ var annotations = pdfViewer.AnnotationCollection;
 
 ### How to show or hide the annotations present in the PDF?
 
-By using the `AnnotationVisibility` property, you can change the visibility of the annotations present in the PDF document. By default, visibility of the annotation is Visibility.Visible.
+By using the [`AnnotationVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_AnnotationVisibility) property, you can change the visibility of the annotations present in the PDF document. By default, visibility of the annotation is Visibility.Visible.
 
 {% highlight c# %}
 

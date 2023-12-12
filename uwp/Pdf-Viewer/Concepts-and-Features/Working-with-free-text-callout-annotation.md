@@ -42,12 +42,12 @@ Free text callout annotation can be disabled by executing the same command with 
 {% highlight xaml %}
 
 <syncfusion:SfPdfViewerControl x:Name="pdfViewer"/>
-<Button x:Name="resetAnnotationButton" Click="resetAnnotationButton_Click" />
+<Button x:Name="ResetAnnotationButton" Click="ResetAnnotationButton_Click" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-private void resetAnnotationButton_Click(object sender, RoutedEventArgs e)
+private void ResetAnnotationButton_Click(object sender, RoutedEventArgs e)
 {
 	pdfViewer.FreeTextCalloutAnnotationCommand.Execute(false);
 }
@@ -61,7 +61,7 @@ You can customize the default values of text color, text size, stroke color, fil
 
 ### Setting the default text color
 
-You can set the default text color of the free text callout annotations by using the `SfPdfViewerControl.FreeTextCalloutAnnotationSettings.TextColor` property. Refer to the following code.
+You can set the default text color of the free text callout annotations by using the [`TextColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_TextColor) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -72,7 +72,7 @@ pdfViewer.FreeTextCalloutAnnotationSettings.TextColor = Color.FromArgb(255, 255,
 
 ### Setting the default text size
 
-You can set the default text size of the free text callout annotations by using the `SfPdfViewerControl.FreeTextCalloutAnnotationSettings.TextSize` property. Refer to the following code.
+You can set the default text size of the free text callout annotations by using the [`TextSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_TextSize) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -83,7 +83,7 @@ pdfViewer.FreeTextCalloutAnnotationSettings.TextSize = 10;
 
 ### Setting the default fill color
 
-You can set the default fill background color of the free text callout annotations by using the `SfPdfViewerControl.FreeTextCalloutAnnotationSettings.FillColor` property. Refer to the following code.
+You can set the default fill background color of the free text callout annotations by using the [`FillColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextCalloutAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextCalloutAnnotationSettings_FillColor) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -94,7 +94,7 @@ pdfViewer.FreeTextAnnotationCalloutSettings.FillColor= Color.FromArgb(255, 255, 
 
 ### Setting the default border stroke color
 
-You can set the default border stroke color of the free text callout annotations by using the `SfPdfViewerControl.FreeTextCalloutAnnotationSettings.StrokeColor` property. Refer to the following code.
+You can set the default border stroke color of the free text callout annotations by using the [`StrokeColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextCalloutAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextCalloutAnnotationSettings_StrokeColor) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -105,7 +105,7 @@ pdfViewer.FreeTextCalloutAnnotationSettings.StrokeColor = Color.FromArgb(255, 25
 
 ### Setting the default border stroke width
 
-You can set the default border stroke width of the free text callout annotations by using the `SfPdfViewerControl.FreeTextCalloutAnnotationSettings.StrokeWidth` property. Refer to the following code.
+You can set the default border stroke width of the free text callout annotations by using the [`StrokeWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_StrokeWidth) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -116,7 +116,7 @@ pdfViewer.FreeTextCalloutAnnotationSettings.StrokeWidth = 2;
 
 ### Setting the default opacity
 
-You can set the default opacity of free text callout annotations by using the `SfPdfViewerControl.FreeTextCalloutAnnotationSettings.Opacity` property. Opacity value ranges from 0 to 1. Refer to the following code example.
+You can set the default opacity of free text callout annotations by using the [`Opacity`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextCalloutAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextCalloutAnnotationSettings_Opacity) property. Opacity value ranges from 0 to 1. Refer to the following code example.
 
 {% highlight c# %}
 
@@ -127,7 +127,7 @@ pdfViewer.FreeTextCalloutAnnotationSettings.Opacity = 0.5f;
 
 ### Setting the default minimum width and minimum size
 
-By using the `MinWidth` and `MinHeight` properties, you can set the minimum width and height of the free text callout annotation for resizing.
+By using the [`MinWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextCalloutAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextCalloutAnnotationSettings_MinWidth) and [`MinHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextCalloutAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextCalloutAnnotationSettings_MinHeight) properties, you can set the minimum width and height of the free text callout annotation for resizing.
 
 {% highlight c# %}
 
@@ -139,7 +139,7 @@ pdfViewer.FreeTextCalloutAnnotationSettings.MinHeight= 100;
 
 ### Enable a free text input box with automatic resizing
 
-By using the `AutoSizeFreeTextInputBox` property, you can enable or disable the automatic resizing of the free text input box.
+By using the [`AutoSizeFreeTextInputBox`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextCalloutAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextCalloutAnnotationSettings_AutoSizeFreeTextInputBox) property, you can enable or disable the automatic resizing of the free text input box.
 
 {% highlight c# %}
 
@@ -150,7 +150,7 @@ pdfViewer.FreeTextCalloutAnnotationSettings.AutoSizeFreeTextInputBox= true;
 
 ### Setting the default callout line segment count
 
-You can set the default callout line segment count of the free text callout annotations by using the `SfPdfViewerControl.FreeTextCalloutAnnotationSettings.CalloutLineSegmentCount` property. By default, the free text callout annotation is added with two line segments.
+You can set the default callout line segment count of the free text callout annotations by using the [`CalloutLineSegmentCount`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextCalloutAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextCalloutAnnotationSettings_CalloutLineSegmentCount) property. By default, the free text callout annotation is added with two line segments.
 
 {% highlight c# %}
 
@@ -167,7 +167,7 @@ You can change the properties of a selected free text callout annotation or remo
 
 ## Detecting the movement of free text callout annotations
 
-The movement made in free text callout annotations can be detected using the `SfPdfViewerControl.FreeTextCalloutAnnotationMoved` event. The property values before and after the change can be obtained using the `FreeTextCalloutAnnotationMovedEventArgs` parameter of the event’s handler.
+The movement made in free text callout annotations can be detected using the `FreeTextCalloutAnnotationMoved` event. The property values before and after the change can be obtained using the [`FreeTextCalloutAnnotationMovedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextCalloutAnnotationMovedEventArgs.html) parameter of the event’s handler.
 
 {% highlight c# %}
 
@@ -190,7 +190,7 @@ private void PdfViewer_FreeTextCalloutAnnotationMoved (object sender, FreeTextCa
 
 ## Detecting the resize of free text callout annotations
 
-The resize of free text callout annotations can be detected using the `SfPdfViewerControl.FreeTextCalloutAnnotationResized` event. The property values before and after the change can be obtained using the `FreeTextCalloutAnnotationResizedEventArgs` parameter of the event’s handler.
+The resize of free text callout annotations can be detected using the `FreeTextCalloutAnnotationResized` event. The property values before and after the change can be obtained using the [`FreeTextCalloutAnnotationResizedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextCalloutAnnotationResizedEventArgs.html) parameter of the event’s handler.
 
 {% highlight c# %}
 

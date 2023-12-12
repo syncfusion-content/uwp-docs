@@ -42,12 +42,12 @@ Free text annotation can be disabled by executing the same command with false as
 {% highlight xaml %}
 
 <syncfusion:SfPdfViewerControl x:Name="pdfViewer"/>
-<Button x:Name="resetAnnotationButton" Click="resetAnnotationButton_Click" />
+<Button x:Name="ResetAnnotationButton" Click="ResetAnnotationButton_Click" />
 
 {% endhighlight %}
 {% highlight c# %}
 
-private void resetAnnotationButton_Click(object sender, RoutedEventArgs e)
+private void ResetAnnotationButton_Click(object sender, RoutedEventArgs e)
 {
 	pdfViewer.FreeTextAnnotationCommand.Execute(false);
 }
@@ -61,7 +61,7 @@ You can customize the default values of text color, text size, stroke color, fil
 
 ###Setting the default text color
 
-You can set the default text color of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.TextColor` property. Refer to the following code.
+You can set the default text color of the free text annotations by using the [`TextColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_TextColor) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -72,7 +72,7 @@ pdfViewer.FreeTextAnnotationSettings.TextColor = Color.FromArgb(255, 255, 0, 0);
 
 ### Setting the default text size
 
-You can set the default text size of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.TextSize` property. Refer to the following code.
+You can set the default text size of the free text annotations by using the [`TextSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_TextSize) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -83,7 +83,7 @@ pdfViewer.FreeTextAnnotationSettings.TextSize = 10;
 
 ### Setting the default fill color
 
-You can set the default fill background color of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.FillColor` property. Refer to the following code.
+You can set the default fill background color of the free text annotations by using the [`FillColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_FillColor) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -94,7 +94,7 @@ pdfViewer.FreeTextAnnotationSettings.FillColor= Color.FromArgb(255, 255, 0, 0);
 
 ### Setting the default border stroke color
 
-You can set the default border stroke color of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.StrokeColor` property. Refer to the following code.
+You can set the default border stroke color of the free text annotations by using the [`StrokeColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_StrokeColor) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -105,7 +105,7 @@ pdfViewer.FreeTextAnnotationSettings.StrokeColor = Color.FromArgb(255, 255, 0, 0
 
 ### Setting the default border stroke width
 
-You can set the default border stroke width of the free text annotations by using the `SfPdfViewerControl.FreeTextAnnotationSettings.StrokeWidth` property. Refer to the following code.
+You can set the default border stroke width of the free text annotations by using the [`StrokeWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_StrokeWidth) property. Refer to the following code.
 
 {% highlight c# %}
 
@@ -122,7 +122,7 @@ You can change the properties of a selected free text annotation or remove it by
 
 ## Detecting the change in appearance properties of free text annotations
 
-The changes made to free text annotation properties can be detected using the `SfPdfViewerControl.FreeTextAnnotationEdited` event. The property values before and after the change can be obtained using the `FreeTextAnnotationEditedEventArgs` parameter of the event’s handler.
+The changes made to free text annotation properties can be detected using the `FreeTextAnnotationEdited` event. The property values before and after the change can be obtained using the [`FreeTextAnnotationEditedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextAnnotationEditedEventArgs.html) parameter of the event’s handler.
 
 {% highlight c# %}
 
