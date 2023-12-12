@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with custom stamp annotations in UWP PDF Viewer (SfPdfViewer)
 
-PDFViewer allows you to include any form of UIElement (Button, Entry, Label, Image, etc.) anywhere in the pages of the PDF Viewer as a custom stamp annotation. You can perform operations like add, move, resize, and delete the custom stamp annotations. Also, you can save and load the existing custom stamp annotation that is associated with the PDF document.
+PDF Viewer allows you to include any form of UIElement (Button, Entry, Label, Image, etc.) anywhere in the pages of the PDF Viewer as a custom stamp annotation. You can perform operations like add, move, resize, and delete the custom stamp annotations. Also, you can save and load the existing custom stamp annotation that is associated with the PDF document.
 
 N> Stamp annotations can be saved only by using the SaveAsync method.
 

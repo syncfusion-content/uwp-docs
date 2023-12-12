@@ -405,7 +405,7 @@ private void PdfViewer_DocumentLoaded(object sender, DocumentLoadedEventArgs arg
 
 ## Dispose the managed resources of PDFViewer
 
-The PDFViewer control allows you to dispose the managed resources which are associated with the viewer. You need to call the `Dispose` method of the PDFViewer control as shown in the following code sample to achieve the same.
+The PDF Viewer control allows you to dispose the managed resources which are associated with the viewer. You need to call the `Dispose` method of the PDFViewer control as shown in the following code sample to achieve the same.
 
 {% tabs %}
 {% highlight c# %}
