@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Free text annotation in UWP PDF Viewer control | Syncfusion
-description: Learn here all about free text annotation support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
+description: Learn about free text annotation support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
 platform: UWP
 control: SfPdfViewerControl
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Working with free text annotations in UWP PDF Viewer (SfPdfViewer)
 
-PDF Viewer allows you to include free text annotations in a PDF document and provides options to modify or remove the existing free text annotations.
+The PDF Viewer allows you to include free text annotations in a PDF document and provides options to modify or remove the existing free text annotations.
 
 ## Adding free text annotations
 
 ### Enabling free text annotation mode
 
-To enable a free text annotation, execute the `FreeTextAnnotationCommand` with true as parameter.
+To enable a free text annotation, execute the `FreeTextAnnotationCommand` with true as a parameter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -36,7 +36,7 @@ private void FreeTextAnnotationButton_Click(object sender, RoutedEventArgs e)
 
 ### Disabling free text annotation mode
 
-Free text annotation can be disabled by executing the same command with false as parameter.
+The free text annotation can be disabled by executing the same command with false as a parameter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,7 +57,7 @@ private void ResetAnnotationButton_Click(object sender, RoutedEventArgs e)
 
 ##Customizing the appearance of free text annotations
 
-You can customize the default values of text color, text size, stroke color, fill color and stroke width of all free text annotations to be added. This will not affect the already added free text annotations.
+You can customize the default values of text color, text size, stroke color, fill color, and stroke width of all free text annotations to be added. This will not affect the already added free text annotations.
 
 ###Setting the default text color
 
@@ -122,7 +122,7 @@ You can change the properties of a selected free text annotation or remove it by
 
 ## Detecting the change in appearance properties of free text annotations
 
-The changes made to free text annotation properties can be detected using the `FreeTextAnnotationEdited` event. The property values before and after the change can be obtained using the [`FreeTextAnnotationEditedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextAnnotationEditedEventArgs.html) parameter of the event’s handler.
+The changes made to the free text annotation properties can be detected using the `FreeTextAnnotationEdited` event. The property values before and after the change can be obtained using the [`FreeTextAnnotationEditedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextAnnotationEditedEventArgs.html) parameter of the event’s handler.
 
 {% highlight c# %}
 

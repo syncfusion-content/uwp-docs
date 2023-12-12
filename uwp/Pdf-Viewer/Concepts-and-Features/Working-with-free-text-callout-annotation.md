@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Free text calllout annotation in UWP PDF Viewer control | Syncfusion
-description: Learn here all about free text callout annotation support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
+description: Learn about free text callout annotation support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
 platform: UWP
 control: SfPdfViewerControl
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Working with free text callout annotations in UWP PDF Viewer (SfPdfViewer)
 
-PDF Viewer allows you to include free text callout annotations in a PDF document and provides options to modify or remove the existing free text callout annotations.
+The PDF Viewer allows you to include free text callout annotations in a PDF document and provides options to modify or remove the existing free text callout annotations.
 
 ## Adding free text callout annotations
 
 ### Enabling free text callout annotation mode
 
-To enable a free text callout annotation, execute the `FreeTextCalloutAnnotationCommand` with true as parameter.
+To enable a free text callout annotation, execute the `FreeTextCalloutAnnotationCommand` with true as a parameter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -36,7 +36,7 @@ private void FreeTextCalloutAnnotationButton_Click(object sender, RoutedEventArg
 
 ### Disabling free text callout annotation mode
 
-Free text callout annotation can be disabled by executing the same command with false as parameter.
+The free text callout annotation can be disabled by executing the same command with false as a parameter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,7 +57,7 @@ private void ResetAnnotationButton_Click(object sender, RoutedEventArgs e)
 
 ## Customizing the appearance of free text callout annotations
 
-You can customize the default values of text color, text size, stroke color, fill color, stroke width and opacity of all free text callout annotations to be added. This will not affect the already added free text annotations.
+You can customize the default values of text color, text size, stroke color, fill color, stroke width, and opacity of all free text callout annotations to be added. This will not affect the already added free text annotations.
 
 ### Setting the default text color
 
@@ -167,7 +167,7 @@ You can change the properties of a selected free text callout annotation or remo
 
 ## Detecting the movement of free text callout annotations
 
-The movement made in free text callout annotations can be detected using the `FreeTextCalloutAnnotationMoved` event. The property values before and after the change can be obtained using the [`FreeTextCalloutAnnotationMovedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextCalloutAnnotationMovedEventArgs.html) parameter of the event’s handler.
+The movement made in a free text callout annotations can be detected using the `FreeTextCalloutAnnotationMoved` event. The property values before and after the change can be obtained using the [`FreeTextCalloutAnnotationMovedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextCalloutAnnotationMovedEventArgs.html) parameter of the event’s handler.
 
 {% highlight c# %}
 
@@ -190,7 +190,7 @@ private void PdfViewer_FreeTextCalloutAnnotationMoved (object sender, FreeTextCa
 
 ## Detecting the resize of free text callout annotations
 
-The resize of free text callout annotations can be detected using the `FreeTextCalloutAnnotationResized` event. The property values before and after the change can be obtained using the [`FreeTextCalloutAnnotationResizedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextCalloutAnnotationResizedEventArgs.html) parameter of the event’s handler.
+The resizing of the free text callout annotations can be detected using the `FreeTextCalloutAnnotationResized` event. The property values before and after the change can be obtained using the [`FreeTextCalloutAnnotationResizedEventArgs`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.FreeTextCalloutAnnotationResizedEventArgs.html) parameter of the event’s handler.
 
 {% highlight c# %}
 
