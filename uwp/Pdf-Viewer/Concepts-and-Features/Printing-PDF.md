@@ -96,6 +96,10 @@ When the `PrintAsync` is called, the PDF Viewer will show the print previewer. E
         {
             try
             {
+                
+                //Sets the name of the printed document
+                pdfViewer.PrinterSettings.DocumentName = “PdfFileName.pdf”;
+
                 //Asynchronously  prints the document loaded in the PDF viewer 
                 await pdfViewerControl.PrintAsync(cancellationToken);
             }
@@ -115,6 +119,21 @@ When the `PrintAsync` is called, the PDF Viewer will show the print previewer. E
 
 
 N> The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) control for UWP does not support silent printing and so this method can be used only when the PDF document is displayed in the PDF viewer.
+
+
+## Quality factor for print
+
+The PDF Viewer allows the user to set and retrieve the quality factor for print by using the `QualityFactor` API. The default value of this API is set to 1, and the values are restricted between 1 and 5. The values falling below the range are taken as 1, which represents the lowest page quality, and those above the range are taken as 5, which represents the highest page quality.
+Refer to the following code sample to set the quality factor for print.
+
+{% highlight c# %}
+
+//Sets the quality factor for print.
+pdfViewer.PrinterSettings.QualityFactor = 2;
+
+{% endhighlight %}
+
+N> Printing with quality factors higher than 2 will work as expected in the x64 configuration but may cause System.OutOfMemoryException in the x86 configuration due to the limited memory capacity of this architecture.
 
 ## Customizing the print previewer
 
