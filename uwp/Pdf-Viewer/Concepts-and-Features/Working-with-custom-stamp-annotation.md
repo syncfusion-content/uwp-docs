@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom stamp annotation in UWP PDF Viewer control | Syncfusion
-description: Learn here all about Custom stamp annotation support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
+description: Learn about Custom stamp annotation support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
 platform: UWP
 control: SfPdfViewerControl
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Working with custom stamp annotations in UWP PDF Viewer (SfPdfViewer)
 
-PDF Viewer allows you to include any form of UIElement (Button, Entry, Label, Image, etc.) anywhere in the pages of the PDF Viewer as a custom stamp annotation. You can perform operations like add, move, resize, and delete the custom stamp annotations. Also, you can save and load the existing custom stamp annotation that is associated with the PDF document.
+The PDF Viewer allows you to include any form of UIElement (Button, Entry, Label, Image, and more) anywhere in the pages of the PDF Viewer as a custom stamp annotation. You can add, move, resize, and delete the custom stamp annotations. Also, you can save and load the existing custom stamp annotation associated with a PDF document.
 
 N> Stamp annotations can be saved only by using the SaveAsync method.
 
 ## Add a custom stamp
 
-The custom stamps can be added using the [`AddStamp`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_AddStamp_Windows_UI_Xaml_UIElement_System_Int32_) methods.
+The custom stamps can be added using the [`AddStamp`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_AddStamp_Windows_UI_Xaml_UIElement_System_Int32_) method.
 
 <table>
 
@@ -41,14 +41,14 @@ The custom stamps can be added using the [`AddStamp`](https://help.syncfusion.co
 
 </table>
 
-A typical example of the custom stamp in the real world includes, adding an image as custom stamp. PDF Viewer provides option to add any user defined signature or seal image as custom stamp to the PDF document. The following code sample explains the same.
+A typical example of a custom stamp in the real world includes adding an image as a custom stamp. The PDF Viewer provides an option to add any user-defined signature or seal image as a custom stamp to a PDF document. The following code sample explains the same.
 
 {% tabs %}
 {% highlight c# %}
 
 private async void Button_Clicked(object sender, RoutedEventArgs e)
 {
-    //Set image source
+    //Set the image source.
     Image image = new Image();
     Stream imageStream = typeof(MainPage).GetTypeInfo().Assembly.GetManifestResourceStream("PdfViewerCustomToolbar.Assets.Image.png");
     StackPanel grid = new StackPanel();
@@ -61,7 +61,7 @@ private async void Button_Clicked(object sender, RoutedEventArgs e)
     image.Source = bitmap;
     if (image.Source != null)
         grid.Children.Add(image);
-    //Add image as custom stamp to the first page using `AddStamp` method
+    //Add the image as a custom stamp to the first page using the AddStamp method.
     pdfViewer.AddStamp(grid, 1, new Point(100,100));
 }
 
