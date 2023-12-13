@@ -183,7 +183,7 @@ Use the [`AnnotationVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.W
 
 {% highlight c# %}
 
-//Gets or set the visibility of the annotations.
+//Gets or sets the visibility of the annotations.
 pdfViewer.AnnotationVisibility = Visibility.Collapsed;
 
 {% endhighlight %}
