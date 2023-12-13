@@ -15,9 +15,9 @@ PDF Viewer allows user to include annotations in PDF files and provides options 
 2. Shape annotations
 3. Ink annotations
 4. Popup annotations
-5. Free text annotation.
-6. Free text callout annotation. 
-7. Stamp annotation.
+5. Free text annotations.
+6. Free text callout annotations. 
+7. Stamp annotations.
 
 The individual annotation types are discussed in detail under their own sections. 
 
@@ -166,7 +166,7 @@ pdfViewer.ClearAllAnnotations();
 
 {% endhighlight %}
 
-### How to get the list of annotations present in the PDF?
+## How to get the list of annotations present in the PDF?
 
 Use the [`AnnotationCollection`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_AnnotationCollection) property to get the list of annotations present in the PDF document. Refer to the following code sample.
 
@@ -177,13 +177,13 @@ var annotations = pdfViewer.AnnotationCollection;
 
 {% endhighlight %}
 
-### How to show or hide the annotations present in the PDF?
+## How to show or hide the annotations present in the PDF?
 
 Use the [`AnnotationVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_AnnotationVisibility) property to change the visibility of the annotations present in a PDF document. By default, the visibility of the annotation is Visibility.Visible.
 
 {% highlight c# %}
 
-//Gets or set the visibility of the annotations.
+//Gets or sets the visibility of the annotations.
 pdfViewer.AnnotationVisibility = Visibility.Collapsed;
 
 {% endhighlight %}
