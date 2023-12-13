@@ -121,7 +121,7 @@ When the `PrintAsync` is called, the PDF Viewer will show the print previewer. E
 N> The [`SfPdfViewer`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html) control for UWP does not support silent printing and so this method can be used only when the PDF document is displayed in the PDF viewer.
 
 
-## Quality factor for print
+## Quality factor for Print
 
 The PDF Viewer allows the user to set and retrieve the quality factor for print by using the [`QualityFactor`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PrinterSettings.html#Syncfusion_Windows_PdfViewer_PrinterSettings_QualityFactor) property. The default value of this API is set to 1, and the values are restricted between 1 and 5. The values falling below the range are taken as 1, which represents the lowest page quality, and those above the range are taken as 5, which represents the highest page quality.
 Refer to the following code sample to set the quality factor for the print.
