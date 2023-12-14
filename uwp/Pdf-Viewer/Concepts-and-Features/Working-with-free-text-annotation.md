@@ -55,11 +55,11 @@ private void ResetAnnotationButton_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-##Customizing the appearance of free text annotations
+## Customizing the appearance of free text annotations
 
 You can customize the default values of text color, text size, stroke color, fill color, and stroke width of all free text annotations to be added. This will not affect the already added free text annotations.
 
-###Setting the default text color
+### Setting the default text color
 
 You can set the default text color of the free text annotations by using the [`TextColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.PdfViewerFreeTextAnnotationSettings.html#Syncfusion_Windows_PdfViewer_PdfViewerFreeTextAnnotationSettings_TextColor) property. Refer to the following code.
 

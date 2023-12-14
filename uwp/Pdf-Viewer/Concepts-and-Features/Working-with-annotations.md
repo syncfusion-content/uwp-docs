@@ -179,7 +179,7 @@ var annotations = pdfViewer.AnnotationCollection;
 
 ## How to show or hide the annotations present in the PDF?
 
-Use the [`AnnotationVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_AnnotationVisibility) property to change the visibility of the annotations present in a PDF document. By default, the visibility of the annotation is Visibility.Visible.
+Use the [`AnnotationVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.Windows.PdfViewer.SfPdfViewerControl.html#Syncfusion_Windows_PdfViewer_SfPdfViewerControl_AnnotationVisibility) property to change the visibility of the annotations present in a PDF document. By default, the visibility of the annotation is `Visibility.Visible`.
 
 {% highlight c# %}
 
