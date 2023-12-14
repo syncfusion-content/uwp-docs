@@ -133,7 +133,7 @@ pdfViewer.PrinterSettings.QualityFactor = 2;
 
 {% endhighlight %}
 
-N> Printing with quality factors higher than 2 will work as expected in the x64 configuration but may cause System.OutOfMemoryException in the x86 configuration due to the limited memory capacity of this architecture.
+N> Printing with quality factors higher than 2 will work as expected in the x64 configuration but may cause `System.OutOfMemoryException` in the x86 configuration due to the limited memory capacity of this architecture.
 
 ## Customizing the print previewer
 
