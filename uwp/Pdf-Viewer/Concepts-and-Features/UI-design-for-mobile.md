@@ -883,6 +883,6 @@ private async void PageDestinationTextBox_KeyDown(object sender, KeyRoutedEventA
 The page count on the PageCount text block is set whenever a new PDF is loaded as described earlier. 
 
 Sample link:
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewerCustomToolbar154257435>
+<https://www.syncfusion.com/downloads/support/directtrac/general/ze/PdfViewerCustomToolbar154257435>
 
 Note that this sample is common to both mobile design and desktop design. 
