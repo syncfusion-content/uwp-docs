@@ -18,15 +18,15 @@ N> Clipboard operations is not supported for the summary rows, add new row and u
 
 Copy operation works based on [GridCopyOption](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridCopyOption) property.`GridCopyOption` provides the following options,
 
-[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Disables copy in SfDataGrid.
+[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_None) – Disables copy in SfDataGrid.
 
-[CopyData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Enabled copy in SfDataGrid.
+[CopyData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_CopyData) – Enabled copy in SfDataGrid.
 
-[IncludeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Column header also copied along with data.
+[IncludeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_IncludeHeaders) – Column header also copied along with data.
 
-[IncludeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Copies the display text with format instead of actual value.
+[IncludeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_IncludeFormat) – Copies the display text with format instead of actual value.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Hidden column also copied to clipboard.
+[IncludeHiddenColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_IncludeHiddenColumn) – Hidden column also copied to clipboard.
 
 You have to use `IncludeHeaders`, `IncludeFormat`, `IncludeHiddenColumn` options along with `CopyData` option.
 
@@ -52,13 +52,13 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
 Paste operation works based on [GridPasteOption](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridPasteOption) property. `GridPasteOption` provides the following options,
 
-[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html) – Disable paste in SfDataGrid.
+[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_None) – Disable paste in SfDataGrid.
 
-[PasteData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html) – Enabled paste in SfDataGrid and when an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
+[PasteData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_PasteData) – Enabled paste in SfDataGrid and when an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
 
-[ExcludeFirstLine](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html) – This can be used when pasting data copied with `IncludeHeaders` copy option.
+[ExcludeFirstLine](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_ExcludeFirstLine) – This can be used when pasting data copied with `IncludeHeaders` copy option.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html) – Paste the values in hidden columns also.
+[IncludeHiddenColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_IncludeHiddenColumn) – Paste the values in hidden columns also.
 
 You have to use `ExcludeFirstLine`, `IncludeHiddenColumn` options along with `PasteData` option.
 
@@ -81,15 +81,15 @@ this.dataGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 
 Cut operation works based on [GridCopyOption](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridCopyOption) property. `GridCopyOption` provides the following options,
 
-[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Disables cut in SfDataGrid.
+[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_None) – Disables cut in SfDataGrid.
 
-[CutData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Enabled cut in SfDataGrid.
+[CutData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_CutData) – Enabled cut in SfDataGrid.
 
-[IncludeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Column header also copied along with data.
+[IncludeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_IncludeHeaders) – Column header also copied along with data.
 
-[IncludeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Cut the display text with format instead of actual value.
+[IncludeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_IncludeFormat) – Cut the display text with format instead of actual value.
 
-[IncludeHiddenColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Hidden column also cut to clipboard.
+[IncludeHiddenColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_IncludeHiddenColumn) – Hidden column also cut to clipboard.
 
 You have to use `IncludeHeaders`, `IncludeFormat`, `IncludeHiddenColumn` options along with `CutData` option.
 
@@ -114,7 +114,7 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
 ### GridCopyContent
 
-[GridCopyContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when copy/cut the cells in SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridCopyContent` event. You can cancel copy operation by handling this event.
+[GridCopyContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyContent) event occurs when copy/cut the cells in SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridCopyContent` event. You can cancel copy operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ private void DataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 
 ### GridPasteContent
 
-[GridPasteContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when paste the clipboard value into SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
+[GridPasteContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridPasteContent) event occurs when paste the clipboard value into SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -146,7 +146,7 @@ private void DataGrid_GridPasteContent(object sender, GridCopyPasteEventArgs e)
 
 ### CopyGridCellContent
 
-[CopyGridCellContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when cell being copy/cut. [GridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html) provides information for `CopyGridCellContent` event, which has following members,
+[CopyGridCellContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CopyGridCellContent) event occurs when cell being copy/cut. [GridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html) provides information for `CopyGridCellContent` event, which has following members,
 
 [ClipBoardValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCopyPasteCellEventArgs_ClipBoardValue) – Returns cell value.
 
@@ -204,7 +204,7 @@ private void DataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventA
 
 ### PasteGridCellContent
 
-[PasteGridCellContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when cell being paste. [GridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html) provides information for `PasteGridCellContent` event, which has following members
+[PasteGridCellContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_PasteGridCellContent) event occurs when cell being paste. [GridCopyPasteCellEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html) provides information for `PasteGridCellContent` event, which has following members
 
 [ClipBoardValue](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCopyPasteCellEventArgs_ClipBoardValue) - Returns clipboard value of a particular cell.
 
