@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataBinding in UWP Charts control | Syncfusion
-description: Learn here all about DataBinding support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn all about DataBinding support in Syncfusion UWP Charts (SfChart) control, its functionality, and more
 platform: uwp
 control: SfChart
 documentation: ug
