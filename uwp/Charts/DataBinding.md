@@ -382,7 +382,7 @@ XBindingPath="ID" YBindingPath="Coal">
 
 {% endtabs %}
 
-Also, When enabling this property to the series you need to implements INotifyPropertyChanged to the underlying data object of Model class to make the chart listen to the property changes of your data object.
+Also, when enabling this property of the series, you need to implement INotifyPropertyChanged in the underlying business model class to make the chart listen to the property changes of your data object.
 
 N>By default, the property change was disabled. So the dynamic updates will not get reflect in chart. You need to enable this property.
 
