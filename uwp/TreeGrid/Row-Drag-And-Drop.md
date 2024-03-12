@@ -431,4 +431,4 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {% endtabs %}
 
 After dropping in tree grid, dragged item is added to TreeGrid based on the dropped position.
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
