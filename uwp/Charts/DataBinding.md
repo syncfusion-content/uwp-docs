@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataBinding in UWP Charts control | Syncfusion
-description: Learn here all about DataBinding support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn all about DataBinding support in Syncfusion UWP Charts (SfChart) control, its functionality, and more
 platform: uwp
 control: SfChart
 documentation: ug
@@ -316,34 +316,73 @@ XBindingPath="ID" YBindingPath="Coal">
 
 {% highlight c# %}
 
-ScatterSeries series = new ScatterSeries()
-{
 
-    ItemsSource = new ViewModel().EnergyProductions,
+      
+      public partial class MainWindow : Window
+      {
+     
+     
+            public MainWindow()
+            {
+                  InitializeComponent();
+            }
 
-    XBindingPath = "ID",
+            private void Button_Click_1(object sender, RoutedEventArgs e)
+            {
+                  // When you click on the button, the changes to XBindingPath and YBindingPath are updated in the output
+                  viewmodel.EnergyProductions[1].ID = "1001";
+                  viewmodel.EnergyProductions[1].Coal = 500;
+            }
+      }
 
-    YBindingPath = "Coal",
 
-    ScatterWidth = 20,
+      public class Model : INotifyPropertyChanged
+      {
+            private string id;
+            public string ID
+            {
+                  get
+                  {
+                        return id;
+                  }
+                  set
+                  {
+                        id = value;
+                        OnPropertyChanged(nameof(ID));
+                  }
+            }
 
-    ScatterHeight = 20,
+            private string coal;
+            public string Coal
+            {
+                  get
+                  {
+                        return coal;
+                  }
+                  set
+                  {
+                        coal = value;
+                        OnPropertyChanged(nameof(Coal));
+                  }
+            }
 
-    Label ="Coal",
+            public event PropertyChangedEventHandler PropertyChanged;
 
-    ListenPropertyChange=true,
+            private void OnPropertyChanged(string propertyName)
+            {
+                  if (PropertyChanged != null)
+                  {
+                        PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+                  }
+            }
+      }
 
-    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
-};
-
-chart.Series.Add(series);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Also, When enabling this property to the series you need to implements INotifyPropertyChanged to the underlying data object to make the chart listen to the property changes of your data object.
+Also, when enabling this property of the series, you need to implement INotifyPropertyChanged in the underlying business model class to make the chart listen to the property changes of your data object.
 
 N>By default, the property change was disabled. So the dynamic updates will not get reflect in chart. You need to enable this property.
 
