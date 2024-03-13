@@ -22,10 +22,10 @@ treeGrid.AllowDraggingRows = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img1.png)
+![Row drag and drop in UWP TreeGrid](Row-Drag-And-Drop_images/uwp-treegrid-row-drag-drop.png)
 
 While dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop at the bottom of node, it will be added below the node and if you are dropping over the node, the it will be added as child of that node.
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img2.png)
+![Node drop position in UWP TreeGrid](Row-Drag-And-Drop_images/uwp-treegrid-drop-position.png)
 
 ## Auto expanding the node on drag over
 
@@ -43,7 +43,7 @@ N> When drop position is “Drop as child”, drag indicators will not be shown.
 ## Dragging multiple nodes
 
 SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting  [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) as `Multiple` or `Extended`.  
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img3.png)
+![Dragging multiple nodes in UWP TreeGrid](Row-Drag-And-Drop_images/uwp-treegrid-dragging-multiple-nodes.png)
 
 ## Drag and Drop between TreeGrids
 
