@@ -521,6 +521,6 @@ The `Constraints` property of Connector allows to enable/disable certain feature
 
 {% seealso %}
 
-[How to get or set the positions of the segments by programmatically?](https://www.syncfusion.com/kb/11345/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-uwp-diagramsfdiagram)
+[How to get or set the positions of the segments by programmatically?](https://support.syncfusion.com/kb/article/10088/how-to-get-or-set-the-positions-of-the-segments-by-programmatically-in-uwp-diagramsfdiagram)
 
 {% endseealso %}
