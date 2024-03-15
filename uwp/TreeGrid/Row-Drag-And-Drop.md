@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Row drag and drop in SfTreeGrid
-description: How to perform row drag and drop in SfTreeGrid
+title: Row drag and drop in UWP TreeGrid | Syncfusion
+description: Learn here all about how to perform row drag and drop in UWP TreeGrid control, its elements, and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
-# Row drag and drop
+# Row drag and drop in UWP TreeGrid
 
 You can allow end-users to drag and drop the rows in SfTreeGrid and between two SfTreeGrid by setting [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowDraggingRows) to `true`.It is also possible to drag and drop to and from any other control.
 
@@ -22,10 +22,10 @@ treeGrid.AllowDraggingRows = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img1.png)
+![Row drag and drop in UWP TreeGrid](Row-Drag-And-Drop_images/uwp-treegrid-row-drag-drop.png)
 
 While dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop at the bottom of node, it will be added below the node and if you are dropping over the node, the it will be added as child of that node.
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img2.png)
+![Node drop position in UWP TreeGrid](Row-Drag-And-Drop_images/uwp-treegrid-drop-position.png)
 
 ## Auto expanding the node on drag over
 
@@ -43,7 +43,7 @@ N> When drop position is “Drop as child”, drag indicators will not be shown.
 ## Dragging multiple nodes
 
 SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting  [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) as `Multiple` or `Extended`.  
-![](Row-Drag-And-Drop_images/Row-Drag-And-Drop_img3.png)
+![Dragging multiple nodes in UWP TreeGrid](Row-Drag-And-Drop_images/uwp-treegrid-dragging-multiple-nodes.png)
 
 ## Drag and Drop between TreeGrids
 
@@ -431,4 +431,4 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {% endtabs %}
 
 After dropping in tree grid, dragged item is added to TreeGrid based on the dropped position.
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
