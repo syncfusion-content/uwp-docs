@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in UWP DataGrid control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about grouping support in Syncfusion UWP DataGrid (SfDataGrid) control, its element and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -567,9 +567,9 @@ The [GroupChangingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xa
 
 [Group](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being expanded.
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group expansion.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-8.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue) – Decides whether to cancel the group expansion.
  
-You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) to `true`.
+You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-8.0) to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -604,9 +604,9 @@ The [GroupChangingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xa
 
 [Group](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) -  Gets the group that’s being collapsed.
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) –  Decides whether to cancel the group collapsing.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-8.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue) –  Decides whether to cancel the group collapsing.
  
-You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-8.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue) of `GroupCollapsing` event.
 
 
 {% tabs %}
