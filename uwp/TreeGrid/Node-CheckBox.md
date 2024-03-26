@@ -346,7 +346,7 @@ N>
 
 ### NodeCheckStateChanged
 
-[NodeCheckStateChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event triggered when user check or uncheck the node check box.
+[NodeCheckStateChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_NodeCheckStateChanged) event triggered when user check or uncheck the node check box.
 
 {% tabs %}
 {% highlight c# %}
