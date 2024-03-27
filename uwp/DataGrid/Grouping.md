@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in UWP DataGrid control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about grouping support in Syncfusion UWP DataGrid (SfDataGrid) control, its element and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -560,16 +560,16 @@ You can download the sample demo [here](https://www.syncfusion.com/downloads/sup
 ### GroupExpanding event
 
 
-The [SfDataGrid.GroupExpanding](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the group is being expanded.
+The [SfDataGrid.GroupExpanding](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupExpanding) event occurs when the group is being expanded.
 
  
 The [GroupChangingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html) of the [GroupExpanding](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event provides the information about the expanding group and it has the following members.
 
 [Group](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) - Gets the group that’s being expanded.
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Decides whether to cancel the group expansion.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-8.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue) – Decides whether to cancel the group expansion.
  
-You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) to `true`.
+You can cancel the group expansion by setting [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-8.0) to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -588,7 +588,7 @@ private void DataGrid_GroupExpanding(object sender, GroupChangingEventArgs e)
 ### GroupExpanded event
 
 
-The [SfDataGrid.GroupExpanded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs after the group is expanded.
+The [SfDataGrid.GroupExpanded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupExpanded) event occurs after the group is expanded.
  
 The [GroupChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member.
 
@@ -597,16 +597,16 @@ The [GroupChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xam
 
 ### GroupCollapsing event
  
-The [SfDataGrid.GroupCollapsing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the group is being collapsed.
+The [SfDataGrid.GroupCollapsing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupCollapsing) event occurs when the group is being collapsed.
 
 The [GroupChangingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member.
 
 
 [Group](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GroupChangingEventArgs_Group) -  Gets the group that’s being collapsed.
 
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) –  Decides whether to cancel the group collapsing.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-8.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue) –  Decides whether to cancel the group collapsing.
  
-You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
+You can cancel the group is being collapsed by using [GroupChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-8.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue) of `GroupCollapsing` event.
 
 
 {% tabs %}
@@ -625,7 +625,7 @@ private void DataGrid_GroupCollapsing(object sender, GroupChangingEventArgs e)
 
 ### GroupCollapsed event
  
-The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs after the group is collapsed.
+The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupCollapsed) event occurs after the group is collapsed.
  
 [GroupChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupChangedEventArgs.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member.
 
