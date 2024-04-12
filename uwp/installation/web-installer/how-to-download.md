@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion UWP web installer - Syncfusion
 description: Learn here about how to download Syncfusion UWP web installer from our Syncfusion website with license.
-platform: UWP
+platform: uwp
 control: Installation and Deployment
 documentation: ug
 
