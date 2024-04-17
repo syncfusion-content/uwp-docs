@@ -33,7 +33,7 @@ dataGrid.Print();
 
 Print method opens the System print dialog where user can select the printer and set the number of copies to be printed.
 
-![Print in UWP DataGrid](printing_images/uwp-data-grid-print.png)
+![Print in UWP DataGrid](printing_images/uwp-datagrid-customize-print-manager.png)
 
 ### Scaling
 
