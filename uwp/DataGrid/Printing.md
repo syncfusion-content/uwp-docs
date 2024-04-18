@@ -157,7 +157,7 @@ dataGrid.Print();
 
 3.Now run the application and you can see page header in all the pages. In the same way, you can set [PrintSettings.PrintPageFooterTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintSettings.html#Syncfusion_UI_Xaml_Grid_PrintSettings_PrintPageFooterTemplate) also.
 
-![Customized HeaderTemplate and HeaderHeight in print preview window for UWP DataGrid](printing_images/UWP-data-grid-customize-header-and-footer-setting.png)
+![Customized HeaderTemplate and HeaderHeight in print preview window for UWP DataGrid](printing_images/uwp-data-grid-customize-header-and-footer-setting.png)
 
 N> [PrintManagerBase](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html) is the DataContext for [PrintPageControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintPageControl.html), where the header and footer templates are loaded.
 
@@ -785,7 +785,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-print-specific-pages-in-uwp-datagrid).
 
-N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information [click here](https://learn.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
+N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information [Printing.PrintPageRange](https://learn.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
 
 ### Disable print preview
 
