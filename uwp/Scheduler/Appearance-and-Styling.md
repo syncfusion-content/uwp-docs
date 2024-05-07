@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling | SfSchedule | uwp | Syncfusion
-description: Appearance and Styling
+title: Appearance and styling in UWP Schedule Control | Syncfusion
+description: Learn here all about appearance and styling support in Syncfusion UWP Schedule control, its elements and more.
 platform: uwp
 control: SfSchedule
 documentation: ug
 ---
 
-# Appearance and Styling
+# Appearance and styling in UWP Schedule
 
 ## Date and TimeLine Customization
 
