@@ -30,5 +30,5 @@ Formatting – The Control displays  the selected Date value in a various format
 
 Date Selector – The drop-down portion used for selecting the date can be customized.
 
-N> You can refer to our [UWP DatePicker](https://www.syncfusion.com/uwp-ui-controls/datepicker)feature tour page to know about its other groundbreaking feature representations. You can also explore our [UWP DatePicker example](https://apps.microsoft.com/detail/9nblggh5wngv?hl=en-gb&gl=KE) that shows you how to render and configure the datepicker in UWP.
+N> You can refer to our [UWP DatePicker](https://www.syncfusion.com/uwp-ui-controls/datepicker) feature tour page to know about its other groundbreaking feature representations. You can also explore our [UWP DatePicker example](https://apps.microsoft.com/detail/9nblggh5wngv?hl=en-gb&gl=KE) that shows you how to render and configure the datepicker in UWP.
 
