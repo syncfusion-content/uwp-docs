@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in UWP DataGrid control | Syncfusion
-description: Learn here all about Editing support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Editing in UWP DataGrid Control | Syncfusion
+description: Learn here all about editing support in Syncfusion UWP DataGrid control, its elements, and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Editing in UWP DataGrid (SfDataGrid)
+# Editing in UWP DataGrid Control
 
 SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 
