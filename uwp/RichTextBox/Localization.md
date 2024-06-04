@@ -2,7 +2,7 @@
 layout: post
 title: Localization in UWP RichTextBox Control | Syncfusion
 description: Learn here all about localization support in Syncfusion UWP RichTextBox control, its elements, and more.
-platform: UWP
+platform: uwp
 control: SfRichTextBoxAdv
 documentation: ug
 keywords: localization
