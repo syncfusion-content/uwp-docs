@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upgrading Syncfusion UWP installer to a latest version - Syncfusion
-description: Learn here about the how upgrade Syncfusion UWP installer to a latest version from website and control panel.
+description: Learn here about how to upgrade Syncfusion UWP installer to a latest version, its elements, and more.
 platform: uwp
 control: Essential Studio
 documentation: ug
