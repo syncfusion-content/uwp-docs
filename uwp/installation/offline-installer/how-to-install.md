@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing Syncfusion UWP installer - Syncfusion
-description: Learn here about how to install Syncfusion UWP offline installer after downloading from our Syncfusion website.
+description: Learn here all about how to install Syncfusion Essential UWP offline installer, its elements, and more.
 platform: uwp
 control: Installation and Deployment
 documentation: ug
@@ -9,7 +9,6 @@ documentation: ug
 ---
 
 # Installing Syncfusion UWP Offline Installer
-
 
 ## Installing with UI   
 
