@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in UWP DataGrid Control | Syncfusion
-description: Learn here all about to enable and disable editing support in Syncfusion UWP DataGrid control, its elements, and more.
+description: Learn here all about editing support in Syncfusion UWP DataGrid control, its elements, and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
