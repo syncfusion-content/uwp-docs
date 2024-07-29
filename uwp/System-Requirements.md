@@ -29,3 +29,4 @@ The following IDEs can be used for development that are [compatible](https://www
 
 * Microsoft Visual Studio 2015/2017/2019/2022
 * Windows 10 SDK
+* Windows 11
