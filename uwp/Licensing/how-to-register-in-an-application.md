@@ -2,7 +2,7 @@
 layout: post
 title: Overview of Syncfusion license registration - Syncfusion
 description: Learn here about how to register Syncfusion UWP license key for UWP application for license validation.
-platform: UWP
+platform: uwp
 control: Essential Studio
 documentation: ug
 ---
