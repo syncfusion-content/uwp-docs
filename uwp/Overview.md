@@ -348,7 +348,7 @@ If you are still unable to find the information that you are looking for in the 
 			FILE FORMATS<br/><br/>
 		</td>
 		<td>
-			<a href="/file-formats/docio/overview">DocIO</a><br/><br/>
+			<a href="/word-library/net/overview">DocIO</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -364,7 +364,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/file-formats/xlsio/overview">XlsIO</a><br/><br/>
+			<a href="/excel-library/net/overview">XlsIO</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -372,7 +372,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/file-formats/pdf/overview">PDF</a><br/><br/>
+			<a href="/pdf-library/net/overview">PDF</a><br/><br/>
 		</td>
 	</tr>
 </table>
