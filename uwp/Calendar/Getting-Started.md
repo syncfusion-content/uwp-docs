@@ -89,7 +89,7 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 
 {% endtabs %}
 
-![Calendar with navigation buttons](SfCalendar-images/SfCalendar-img1.jpeg)
+![Calendar with navigation buttons in UWP](sfcalendar-images/uwp-calendar-navigation-button.jpeg)
 
 ## Culture Support
 
@@ -121,6 +121,6 @@ calendar.Culture = New System.Globalization.CultureInfo("fr-FR")
 
 {% endtabs %}
 
-![Cuture support in calendar](SfCalendar-images/SfCalendar-img4.jpeg)
+![Cuture support in UWP Calendar](sfcalendar-images/uwp-calendar-cuture-support.jpeg)
 
 

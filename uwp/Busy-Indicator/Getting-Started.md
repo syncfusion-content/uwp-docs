@@ -56,7 +56,7 @@ Dim busyIndicator As New SfBusyIndicator()
 
 {% endtabs %}
 
-![Animation Winmil](SfBusyIndicator1/Winrt.png)
+![Animation Winmil in UWP Busy Indicator](sfbusyindicator1/uwp-busy-indicator-winmil-animation.png)
 
 ## Choosing Animation
 
@@ -92,7 +92,7 @@ Dim busyIndicator As New SfBusyIndicator() With {.AnimationType = AnimationTypes
 
 {% endtabs %}
 
-![Animation Gear](SfBusyIndicator1/Gear.png)
+![Animation Gear in UWP Busy Indicator](sfbusyindicator1/uwp-busy-indicator-gear.png)
 
 ## Setting Busy Header
 
@@ -128,6 +128,6 @@ SfBusyIndicator busyIndicator = new SfBusyIndicator() { Header="Loading..." };
 
 {% endtabs %}
 
-![Provide the Header Text](SfBusyIndicator1/Load.png)
+![Provide the Header Text in UWP Busy Indicator](sfbusyindicator1/uwp-busy-indicator-load.png)
 
  
