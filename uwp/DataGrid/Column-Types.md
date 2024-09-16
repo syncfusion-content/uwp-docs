@@ -716,7 +716,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 
 #### Hide Column
 
-You can hide or unhide the particular column programmatically by setting [GridColumn.IsHidden](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_IsHidden) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](http://help.syncfusion.com/uwp/sfdatagrid/columns#resizing-columns) section.
+You can hide or unhide the particular column programmatically by setting [GridColumn.IsHidden](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_IsHidden) property. For allowing end-user to hide or unhide column in UI refer [Resizing Columns](https://help.syncfusion.com/uwp/datagrid/columns#resizing-columns) section.
 
 #### Disable column
 
@@ -1606,7 +1606,7 @@ The following screenshot illustrates the different ShipCity ItemsSource bound to
 
 ![Displaying different itemssource for different rows using ItemsSourceSelector property of GridComboBoxColumn in UWP SfDataGrid](Column-Types_images/Column-Types_img38.png)
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnUWP-1974208434.zip).
+You can download the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxColumnUWP-1974208434.zip).
 
 ## GridMultiColumnDropDownList
 

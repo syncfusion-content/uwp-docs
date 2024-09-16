@@ -25,13 +25,13 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
 1.	Right-click the project or solution in the Solution Explorer tab, and choose **Manage NuGet Packages…**
 
-    ![NuGet package manager add-in for windows](NuGet_Packages_Images/img3.png)
+    ![UWP NuGet package manager add-in for windows](nuget-packages-images/uwp-visual-studio-integration-nuget-packages-installation.png)
 
     Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 
 2.	Select the NuGet.org from the **Package source** drop-down.  
 
-     ![NuGet package manager dialog window](NuGet_Packages_Images/img4.png)             
+     ![UWP NuGet package manager dialog window](nuget-packages-images/uwp-visual-studio-integration-nuget-package-source.png)             
 
 3.	All the Syncfusion UWP NuGet packages are listed and available. Search and install the required packages in your application, by clicking the **Install** button.
 
@@ -179,7 +179,7 @@ You should get the private Syncfusion UWP NuGet feed URL to install or upgrade t
 
     [https://nuget.syncfusion.com/nuget_universalwindows/nuget/getsyncfusionpackages/universalwindows](https://nuget.syncfusion.com/nuget_universalwindows/nuget/getsyncfusionpackages/universalwindows) 
 
-    ![Syncfusion UWP NuGet feed URL](NuGet_Packages_Images/img1.png)
+    ![Syncfusion UWP NuGet feed URL](nuget-packages-images/uwp-visual-studio-integration-nuget-packages-feed-url.png)
 
 3. Now, use this NuGet feed URL to access the Syncfusion NuGet Packages in Visual Studio. 
 
@@ -201,7 +201,7 @@ You should get the private Syncfusion UWP NuGet feed URL to install or upgrade t
 
 5.	Click the **Update** button to add the name and source details to package sources. 
 
-    ![NuGet Package Manager dialog with Syncfusion UWP NuGet feed URL for reference](NuGet_Packages_Images/img2.png)
+    ![NuGet Package Manager dialog with Syncfusion UWP NuGet feed URL for reference](nuget-packages-images/uwp-visual-studio-integration-nuget-packages-add-feed-url.png)
 
 #### NuGet CLI 
 

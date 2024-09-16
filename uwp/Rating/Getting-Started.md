@@ -92,4 +92,4 @@ Set the `ItemsCount` property to specify the number of rating items in control.
 {% endtabs %}
 
 
-![Rating Step by Step control view](Overview-images/Overview-img1.jpeg)
+![UWP Rating Step by Step control view](overview-images/uwp-rating-overview.jpeg)

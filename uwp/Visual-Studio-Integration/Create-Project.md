@@ -22,20 +22,20 @@ Use the following steps to create the Syncfusion UWP project through the Visual 
    **Option 1:**   
    Click **Syncfusion Menu** and choose **Essential Studio for UWP > Create New Syncfusion Project…** in **Visual Studio**.
    
-   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog via Syncfusion menu](Syncfusion-Project-Templates_images/Syncfusion_Menu_ProjectTemplate-latest.png)
+   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog via Syncfusion menu](syncfusion-project-templates-images/syncfusion-menu-project-template-latest.png)
 
    N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
 
-   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog via Syncfusion menu](Syncfusion-Project-Templates_images/Syncfusion_Menu_ProjectTemplate.png)
+   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog via Syncfusion menu](syncfusion-project-templates-images/syncfusion-menu-project-template.png)
 
    **Option 2:**  
    Choose **File -> New -> Project**. Opens a new dialog to create a new project. By filtering the project type with Syncfusion or using the **Syncfusion** keyword in the search option, you can get the templates offered by Syncfusion for UWP.
 
-   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img1-latest.png)
+   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog](syncfusion-project-templates-images/uwp-visual-studio-integration-create-application.png)
 
    N> In Visual Studio 2017, Choose File > New > Project and navigate to Syncfusion > Windows Universal > Syncfusion Universal Windows Application.
 
-   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img1.jpeg)
+   ![Choose Syncfusion Universal Windows Application from Visual Studio new project dialog](syncfusion-project-templates-images/uwp-visual-studio-integration-new-project.jpeg)
 
 2. Name the **Project** and choose the destination location if required, then click **OK**. 
 
@@ -55,17 +55,17 @@ Use the following steps to create the Syncfusion UWP project through the Visual 
 
    **Components:** Choose the required Syncfusion components to configure.
    
-   ![Syncfusion UWP Project configuration wizard](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img4.jpeg)
+   ![Syncfusion UWP Project configuration wizard](syncfusion-project-templates-image/uwp-visual-studio-integration-project-configuration.jpeg)
    
    N> If SDK is chosen as the reference type, then all the Syncfusion UWP controls will be added. So, you no need to select any components.
    
 4. After click **Create** button, the Syncfusion UWP Application is created with required SDK/references and pages.
 
-   ![Syncfusion UWP Project created with SDK reference](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img5.jpeg)
+   ![Syncfusion UWP Project created with SDK reference](syncfusion-project-templates-image/uwp-visual-studio-integration-create-project.jpeg)
 
-   ![Syncfusion UWP Project created with readme](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img7.PNG)
+   ![Syncfusion UWP Project created with readme](syncfusion-project-templates-images/uwp-visual-studio-integration-application.PNG)
 
-5. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+5. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
    ![Syncfusion license registration required information dialog in Syncfusion UWP Project](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img6.jpeg)   
 

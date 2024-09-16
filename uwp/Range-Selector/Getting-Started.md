@@ -17,7 +17,7 @@ A SfDateTimeRangeNavigator is composed of various elements such as higher level 
 * Content – Can hold any type of UI element inside the navigator.
 * Resizable scrollbar – Used to zoom and scroll the content and label bars.
 
-![Visaul Structure of SfDateTimeRangeNavigator](Getting-Started_images/GettingStarted_img1.jpeg)
+![Visual Structure of UWP SfDateTimeRangeNavigator](getting-started-images/uwp-range-selector-visual-structure.jpeg)
 
 
 These steps were explained below for both XAML and code behind.
@@ -31,7 +31,7 @@ The following steps explain how to create a SfDateTimeRangeNavigator in XAML.
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
 
-![Reference Manager Dialog Windows in Visual Studio](Getting-Started_images/GettingStarted_img3.jpeg)
+![Reference Manager Dialog Windows in UWP Range Selector Visual Studio](getting-started-images/uwp-range-selector-create-a-datetime-range-navigator.jpeg)
 
 Add the following namespace in your XAML window.
 
@@ -43,7 +43,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
 
 Drag and drop the SfDateTimeRangeNavigator control from the Toolbox to your application.
 
-![Visual Studio Toolbox](Getting-Started_images/GettingStarted_img4.jpeg)
+![Visual Studio Toolbox in UWP Range Selector](getting-started-images/uwp-range-selector-add-datetime-navigator-from-toolbox.jpeg)
 
 
 ### Initializing SfDateTimeRangeNavigator
@@ -331,6 +331,6 @@ this.MainGrid.Children.Add(navigator);
 
 The following output is displayed as a result of the above code example.
 
-![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
+![Adding content for SfDateTimeRangeNavigator in UWP](getting-started-images/uwp-range-selector-adding-content-for-datetime-range-navigator.jpeg)
 
 

@@ -15,14 +15,14 @@ The SfTimePicker control allows the user to select time values in a touch friend
 
 
 
-![TimePicker displayed the time](Overview_images/Overview_img1.png)
+![Normal view in UWP TimePicker](overview-images/uwp-timepicker-normal-view.png)
 
 
 
 ### Expanded view
 
 
-![TimePicker displayed selector to pick time](Overview_images/Overview_img2.png)
+![Expanded view in UWP TimePicker](overview-images/uwp-timepicker-expanded-view.png)
 
 
 

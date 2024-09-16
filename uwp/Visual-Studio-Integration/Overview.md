@@ -22,16 +22,16 @@ I> The Syncfusion UWP menu option is available from v17.1.0.32.
 
 The Syncfusion provides the following extension supports in Visual Studio:
 
-1.	[Create Project](https://help.syncfusion.com/uwp/Visual-Studio-Integration/Visual-Studio-Extensions/Create-Project): Create the Syncfusion UWP application by adding required Syncfusion assemblies/NuGet based on the control chosen.
-2.	[Troubleshooting](https://help.syncfusion.com/uwp/Visual-Studio-Integration/Visual-Studio-Extensions/Troubleshooting): Troubleshoots the project with the Syncfusion configuration and apply the fix like, wrong Framework Syncfusion assembly added to the project or missing any Syncfusion dependent assembly of a referred assembly.
+1.	[Create Project](https://help.syncfusion.com/uwp/Visual-Studio-Integration/visual-studio-integration/create-project): Create the Syncfusion UWP application by adding required Syncfusion assemblies/NuGet based on the control chosen.
+2.	[Troubleshooting](https://help.syncfusion.com/uwp/Visual-Studio-Integration/visual-studio-integration/troubleshooting): Troubleshoots the project with the Syncfusion configuration and apply the fix like, wrong Framework Syncfusion assembly added to the project or missing any Syncfusion dependent assembly of a referred assembly.
 
 **No project selected in Visual Studio**
 
-![Syncfusion Menu when No project selected in Visual Studio](Overview-images/Syncfusion_Menu_OverView1.png)
+![Syncfusion Menu when No project selected in UWP Visual Studio](overview-images/uwp-visual-studio-integration-no-project-selected.png)
 
 **Selected Syncfusion UWP application in Visual Studio**
 
-![Syncfusion Menu when Selected Syncfusion UWP application in Visual Studio](Overview-images/Syncfusion_Menu_OverView2.png)
+![Syncfusion Menu when Selected Syncfusion UWP application in Visual Studio](overview-images/uwp-visual-studio-integration-selected-application.png)
 
 N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
 
