@@ -854,7 +854,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The default appearance of the trackball in primary axis (CategoryAxis).
 
-![TrackBall support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-support.jpeg)
+![TrackBall support in UWP Chart](interactive-features_images/uwp-charts-supports-trackball.png)
 
 
 The Trackball is composed of the following parts.
@@ -1201,7 +1201,7 @@ SplineSeries series1 = new SplineSeries()
 
 {% endtabs %}
 
-![TrackBall series label in UWP Chart](Interactive-Features_images/ShowTrackball.png)
+![TrackBall series label in UWP Chart](Interactive-Features_images/uwp-charts-supports-trackball.png)
 
 
 
