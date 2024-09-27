@@ -12,7 +12,7 @@ documentation: ug
 SfNumericUpDown is an editor control which provides up and down repeat buttons to increment and decrement the values. The control respects the UI culture and can be configured to display different formats like currency format, scientific format, etc.
 
 
-![Sample view of NumericUpDown](Overview_images/Overview_img1.png)
+![Sample view of UWP NumericUpDown](overview-images/uwp-numericupdown-overview.png)
 
 
 ### Key Features
