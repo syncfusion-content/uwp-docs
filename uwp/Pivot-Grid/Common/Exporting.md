@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Exporting in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Exporting support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
-platform: UWP
+description: Learn here all about Exporting support in the Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---
