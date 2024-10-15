@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Exporting in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Exporting support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
-platform: UWP
+description: Learn here all about Exporting support in the Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---
@@ -25,7 +25,7 @@ Refer to the following code snippet to export the SfPivotGrid to Microsoft Excel
 
 FileSavePicker savePicker = new FileSavePicker();
 savePicker.SuggestedFileName = "Sample";
-ExportPivotGridToExcel export = new ExportPivotGridToExcel(this.PivotGrid1, this.PivotGrid1.GetExportingGridStyleInfo());
+ExportPivotGridToExcel export = new ExportPivotGridToExcel(this.PivotGrid1, this.PivotGrid1.GetExportingGridStyleInfo(), "xlsx", true);
 export.ExportToDocument("Sample");
 
 {% endhighlight %}
@@ -34,7 +34,7 @@ export.ExportToDocument("Sample");
 
 Dim savePicker As New FileSavePicker()
 savePicker.SuggestedFileName = "Sample"
-Dim export As New ExportPivotGridToExcel(Me.PivotGrid1, Me.PivotGrid1.GetExportingGridStyleInfo())
+Dim export As New ExportPivotGridToExcel(Me.PivotGrid1, Me.PivotGrid1.GetExportingGridStyleInfo(), "xlsx", True)
 export.ExportToDocument("Sample")
 {% endhighlight %}
 
