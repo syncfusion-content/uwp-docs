@@ -26,6 +26,8 @@ N> In addition, you have to install a [`Win2D`](https://www.nuget.org/packages/W
 
 * Import the SfImageEditor namespace as shown below,
 
+{% capture codesnippet1 %}
+
 {% tabs %}
 
 {% highlight XAML %}
@@ -42,7 +44,13 @@ N> In addition, you have to install a [`Win2D`](https://www.nuget.org/packages/W
 
 {% endtabs %}
 
+{% endcapture %}
+
+{{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
+
 * Initialize the image editor as shown below,
+
+{% capture codesnippet2 %}
 
 {% tabs %}
 
@@ -60,6 +68,10 @@ N> In addition, you have to install a [`Win2D`](https://www.nuget.org/packages/W
 {% endhighlight %}
 
 {% endtabs %}
+
+{% endcapture %}
+
+{{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
 ## Loading an image to the image editor
 
@@ -98,4 +110,4 @@ You can load an image to the control as a stream.
 
 ## See also
 
-[How to enable access permission in uwp application](https://www.syncfusion.com/kb/8924/how-to-enable-access-permission-in-uwp-application)
+[How to enable access permission in uwp application](https://support.syncfusion.com/kb/article/7751/how-to-enable-access-permission-in-uwp-application)

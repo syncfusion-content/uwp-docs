@@ -1,17 +1,49 @@
 ---
 layout: post
-title: License Key Errors of Essential Studio | Syncfusion 
-description: Learn here some information about how to fix Syncfusion license key related errors and more details.
+title: Overview of Syncfusion licensing errors - Syncfusion 
+description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion UWP applications.
 platform: uwp
 control: Essential Studio
 documentation: ug
 ---
 
-# Common Licensing Errors
+# Syncfusion Licensing Errors
 
 Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 
-## License key not registered 
+## Licensing errors
+
+### License key not registered\Trial Expired 
+
+The following error message will be shown if a Syncfusion license key has not been registered in your application or if the trial key has expired after 30 days. 
+
+**Error message :** This application was built using a trial version of Syncfusion Essential Studio. You should include the valid license key to remove the license validation message permanently.
+
+![License key not registered](licensing-images/new-licensing-alert.png)
+
+**Solution:**
+
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+
+* In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/uwp/licensing/how-to-register-in-an-application) for information on registering the license key.
+
+### Invalid key
+
+If the application is registered with an invalid key, another version of license key, or another platform's license key, the following error message will pop up when launching the application. 
+
+**Error Message:** The included Syncfusion license key is invalid.
+
+![License key not registered](licensing-images/new-invalid-key.png)
+
+**Solution:**
+
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+
+* In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/uwp/licensing/how-to-register-in-an-application) for information on registering the license key.
+
+## Licensing errors from version 16.2.0* to 20.3.0*
+
+### License key not registered 
 
 The following error message will be shown if a Syncfusion license key has not been registered in your application. 
 
@@ -19,9 +51,13 @@ The following error message will be shown if a Syncfusion license key has not be
 
 ![License key not registered](licensing-images/licensing-alert.png)
 
-**Solution:** Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+**Solution:**
 
-## Invalid key
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+
+* In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/uwp/licensing/how-to-register-in-an-application) for information on registering the license key.
+
+### Invalid key
 
 If the application is registered with an invalid key, another version of license key, or another platform's license key, the following error message will pop up when launching the application. 
 
@@ -29,9 +65,13 @@ If the application is registered with an invalid key, another version of license
 
 ![License key not registered](licensing-images/invalid-key.png)
 
-**Solution:** Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+**Solution:**
 
-## Trial Expired
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+
+* In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/uwp/licensing/how-to-register-in-an-application) for information on registering the license key.
+
+### Trial Expired
 
 The following error message will be shown if the trial key has expired after 30 days.
 
@@ -41,7 +81,7 @@ The following error message will be shown if the trial key has expired after 30 
 
 **Solution:** Purchase from [here](https://www.syncfusion.com/sales/products) to get a valid Syncfusion license.
 
-## Platform Mismatch
+### Platform Mismatch
 
 If the application is registered with another platform's license key, the following error message will pop up when launching the application.
 
@@ -49,9 +89,13 @@ If the application is registered with another platform's license key, the follow
 
 ![License key not registered](licensing-images/platform-mismatch.png)
 
-**Solution:** Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+**Solution:**
 
-## Version Mismatch
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform.
+
+* In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/uwp/licensing/how-to-register-in-an-application) for information on registering the license key.
+
+### Version Mismatch
 
 If the application is registered with another version's license key, the following error message will pop up when launching the application.
 
@@ -59,13 +103,25 @@ If the application is registered with another version's license key, the followi
 
 ![License key not registered](licensing-images/version-mismatch.png)
 
-**Solution:** Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform. Kindly follow the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate license key.
+**Solution:**
 
-## Could not load Syncfusion.Licensing.dll assembly version...?
-Make sure that all the referenced Syncfusion assembles are of the same version. Try cleaning and rebuilding the application to resolve assembly conflict issues.
+* Generate a valid license key from here [Licensed users](https://www.syncfusion.com/account/downloads) or [Trial users](https://www.syncfusion.com/account/manage-trials/downloads) for a specific version and platform. Kindly follow the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate license key.
 
+* In your application, register the generated license key. Please refer to this [help topic](https://help.syncfusion.com/uwp/licensing/how-to-register-in-an-application) for information on registering the license key.
 
+### Could not load Syncfusion.Licensing.dll assembly version...?
 
+Please ensure that all Syncfusion NuGet packages including [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing) were installed properly, and assembly references are upgraded to the required version. Also, verify that the csproj and packages.config/web.config files references have been referred with the updated version.
+
+To avoid run-time errors, set copy local to true. Copy Local determines whether a reference is copied to the project output path.
+
+![Set copy local to true](licensing-images/SetCopyLocalTrue.png)
+
+Set “CopyLocal” as True for Syncfusion.Licensing.dll along with all other Syncfusion assemblies and ensure that the Syncfusion.Licensing.dll assembly is also present in the output folder or deployment folder of the application.
+
+![Output folder](licensing-images/OutputFolder.png)
+
+Refer to this knowledge base articles to set [copy local](https://www.syncfusion.com/kb/4808/how-to-resolve-server-error-could-not-load-or-assembly-when-publishing-an-application) as true.
 
 
 

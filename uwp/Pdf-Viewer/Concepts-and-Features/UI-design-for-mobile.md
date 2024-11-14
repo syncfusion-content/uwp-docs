@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Mobile in UWP Pdf Viewer control | Syncfusion
-description: Learn here all about Mobile support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control and more.
+description: Learn here all about Mobile support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control, its elements, and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
 ---
 
-## UI design for mobile
+# UI design for mobile in UWP Pdf Viewer
 
-![customtoolbarimage](CustomToolbarImages/CustomToolbarImage23.png)
+![UWP Pdf Viewer in custom toolbar](CustomToolbarImages/CustomToolbarImage23.png)
 
 PdfViewer does not have a toolbar by default. But a custom toolbar can be designed at the sample with its buttons wired to the PdfViewer APIs. 
 
@@ -337,7 +337,7 @@ When any of the annotations button is clicked the annotation toolbars will be sh
 
 ### Common bottom toolbar
 
-![customtoolbarimage](CustomToolbarImages/CustomToolbarImage24.png)
+![UWP Pdf Viewer in common bottom toolbar](CustomToolbarImages/CustomToolbarImage24.png)
 
 The bottom toolbar is common for ink, text markup, shape and popup annotations. 
 
@@ -392,7 +392,7 @@ private void BackButton_Click(object sender, RoutedEventArgs e)
 
 ### Ink toolbar
 
-![customtoolbarimage](CustomToolbarImages/CustomToolbarImage12.png)
+![UWP Pdf Viewer in ink toolbar](CustomToolbarImages/CustomToolbarImage12.png)
 
 The ink toolbar has only one button which enables or disables the ink annotation mode alternatively. 
 Add a grid with name &#34;InkAnnotationToolbar&#34; to the parent grid with a toggle button. 

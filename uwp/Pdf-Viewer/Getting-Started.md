@@ -27,7 +27,7 @@ Each of these assemblies always needs to be in parallel with its associated reso
 
 The aforementioned placement of the assemblies and the resource files in the same folder becomes important only when the assemblies need to be moved from the installed location of the assemblies to somewhere else. When the assemblies are moved the resource files must also be moved and placed in the same folder as the assemblies.
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your UWP application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [this link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your UWP application to use our components.
 
 
 ## Create a simple application with the SfPdfViewer
@@ -275,7 +275,7 @@ N>
 * By default, the SfPdfViewer also supports the Ctrl + scroll key combination for performing magnification by using the keyboard and mouse.
 * When the PDF viewer zoom value is decreased below 100%, the view will be automatically changed to show the thumbnails.
 
-**Printing a document**
+## Printing a document
 
 The following XAML code shows how to bind the PrintCommand to a Button
 {% tabs %}
@@ -328,7 +328,7 @@ The below list of commands are helpful for performing the page navigation operat
 * PreviousPageCommand
 * NextPageCommand
 
-**Unloading PDF document from the viewer**
+## Unloading PDF document from the viewer
 
 The SfPdfViewer control allows you to unload the PDF document from the viewer when the control is not in use anymore. This releases the PDF document and all its associated resources. To achieve this include a button in the application.
 
@@ -352,6 +352,67 @@ private void Unload_Click(object sender, RoutedEventArgs e)
 Private Sub Unload_Click(sender As Object, e As RoutedEventArgs)
     pdfViewer.Unload()
 End Sub
+{% endhighlight %}
+{% endtabs %}
+
+## Saving a PDF document
+
+The `Save` method returns the PDF document along with the changes made (annotations addition and modification) as a stream, which can be saved as a file.
+
+{% tabs %}
+{% highlight c# %}
+
+//Save the PDF document
+Stream pdfDocumentStream = pdfViewerControl.Save();
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The Save method does not save the stamp annotations in the PDF document. Instead, use the `SaveAsync` method to save them.
+
+## Saving a PDF document asynchronously
+
+The PDF Viewer also allows you to save and return the PDF document with the changes as a stream asynchronously using the `SaveAsync` method.
+
+{% tabs %}
+{% highlight c# %}
+
+//Save the PDF document asynchronously 
+Task<Stream> pdfDocumentStream = pdfViewerControl.SaveAsync();
+
+{% endhighlight %}
+{% endtabs %}
+
+## Events to track the loading of PDFs
+
+The PDFViewer control allows you to track the loading of PDFs using the following events. The `DocumentLoaded`` event triggers after the document is properly loaded in the SfPdfViewer. The following code example explains the same.
+
+{% tabs %}
+{% highlight c# %}
+
+SfPdfViewerControl pdfViewer = new SfPdfViewerControl();
+
+pdfViewer.DocumentLoaded += PdfViewer_DocumentLoaded;
+
+private void PdfViewer_DocumentLoaded(object sender, DocumentLoadedEventArgs args)  
+{  
+        // Get the total page count of the loaded PDF document. 
+        int pageCount = pdfViewer.PageCount; 
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Dispose the managed resources of PDFViewer
+
+The PDF Viewer control allows you to dispose the managed resources which are associated with the viewer. You need to call the `Dispose` method of the PDFViewer control as shown in the following code sample to achieve the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Disposes all the managed resources of SfPdfViewer
+pdfViewer.Dispose();
+
 {% endhighlight %}
 {% endtabs %}
 

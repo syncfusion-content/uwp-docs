@@ -83,7 +83,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip support in UWP Chart](Interactive-Features_images/Interactive-Features_image1.png)
+![Tooltip support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-tooltip.png)
 
 ### Customizing tooltip using ChartTooltipBehavior
 
@@ -158,7 +158,7 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip at pointer position in WPF Chart](Interactive-Features_images/Interactive-Features_image2.png)
+![Tooltip at pointer position in WPF Chart](interactive-features_images/uwp-charts-interactive-features-positioning-tooltip.png)
 
 ### Customizing the tooltip background
 
@@ -198,7 +198,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image3.png)
+![Tooltip background style customization in WPF Chart](interactive-features_images/uwp-charts-interactive-features-customizing-tooltip.png)
 
 ### Customizing the tooltip label style
 
@@ -238,13 +238,13 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip label style customization in WPF Chart](Interactive-Features_images/Interactive-Features_image4.png)
+![Tooltip label style customization in WPF Chart](interactive-features_images/uwp-charts-interactive-features-customizing-tooltip-label-style.png)
 
 ### Customizing tooltip using ChartTooltip attached properties
 
 ### Aligning the Tooltip
 
-The tooltip can be aligned with respect to the cursor position using [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_HorizontalAlignmentProperty) and [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_VerticalAlignmentProperty) properties.
+The tooltip can be aligned with respect to the cursor position using [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) properties.
 
 **HorizontalAlignment**
 
@@ -308,9 +308,9 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_image5.png)
+![Tooltip alignment support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-horizontal-alignment.png)
 
-N> By default the [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_HorizontalAlignmentProperty) is center for the tooltip.
+N> By default the [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalAlignment) is center for the tooltip.
 
 **VerticalAlignment**
 
@@ -374,7 +374,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip alignment support in UWP Chart](Interactive-Features_images/Interactive-Features_image6.png)
+![Tooltip alignment support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-vertical-alignment.png)
 
 **TooltipMargin**
 
@@ -450,14 +450,14 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_image7.png)
+![Margin for tooltip in UWP Chart](interactive-features_images/uwp-charts-interactive-features-tooltip-margin.png)
 
 
-N>By default the [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_VerticalAlignmentProperty) of the Tooltip is Top
+N>By default the [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) of the Tooltip is Top
 
 **VerticalOffset and HorizontalOffset**
 
-The tooltip can be positioned at a particular distance from the cursor horizontally using [`HorizontalOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_HorizontalOffsetProperty) and vertically using [`VerticalOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_VerticalOffsetProperty) properties.
+The tooltip can be positioned at a particular distance from the cursor horizontally using [`HorizontalOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalOffset) and vertically using [`VerticalOffset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalOffset) properties.
 
 {% tabs %}
 
@@ -535,11 +535,11 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![VerticalOffset and HorizontalOffset support for tooltip in UWP Chart](Interactive-Features_images/Interactive-Features_image8.png)
+![VerticalOffset and HorizontalOffset support for tooltip in UWP Chart](interactive-features_images/uwp-charts-interactive-features-offset.png)
 
 ### Tooltip Duration
 
-The [`ShowDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_ShowDurationProperty) property in the [`ChartTooltip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html) sets the duration time for the tooltip to be displayed in milliseconds.
+The [`ShowDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) property in the [`ChartTooltip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html) sets the duration time for the tooltip to be displayed in milliseconds.
 
 The following code example demonstrates the duration of the tooltip set as 5 seconds.
 
@@ -590,7 +590,7 @@ N> The tooltip by default will be displayed for 1000 milliseconds.
 
 **Show delay**
 
-Tooltip also has support for delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetInitialShowDelay_Windows_UI_Xaml_DependencyObject_System_Int32_) property in milliseconds.
+Tooltip also has support for delay the time to display by setting the [`SetInitialShowDelay`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_InitialShowDelay) property in milliseconds.
 
 The following code example explains the tooltip will be delayed for 1 second before the display.
 
@@ -783,7 +783,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Tooltip customization support in UWP Chart](Interactive-Features_images/Interactive-Features_image9.png)
+![Tooltip customization support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-tooltip-customization.png)
 
 N> The `ChartTooltipBehavior` is commonly used for all series to customize the tooltip. You can use the attached `ChartTooltip` properties in a series if you need to customize the appearance of the tooltip based on a particular series. Series attached properties are considered as a high precedence.
 
@@ -854,7 +854,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The default appearance of the trackball in primary axis (CategoryAxis).
 
-![TrackBall support in UWP Chart](Interactive-Features_images/Interactive-Features_img7.jpeg)
+![TrackBall support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-support.jpeg)
 
 
 The Trackball is composed of the following parts.
@@ -900,7 +900,7 @@ chart.Behaviors.Add(behavior);
 
 {% endtabs %}
 
-![Visibility support for trackball line in UWP Chart](Interactive-Features_images/Interactive-Features_img8.jpeg)
+![Visibility support for trackball line in UWP Chart](interactive-features_images/uwp-charts-interactive-features-vissibility.jpeg)
 
 
 **Customization of TrackBall line**
@@ -954,7 +954,7 @@ chart.Behaviors.Add(trackball);
 
 {% endtabs %}
 
-![TrackBall line customization in UWP Chart](Interactive-Features_images/Interactive-Features_img9.jpeg)
+![TrackBall line customization in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-line.jpeg)
 
 
 ### Symbol
@@ -1017,13 +1017,13 @@ N>By default the value of [`ShowTrackBallInfo`](https://help.syncfusion.com/cr/u
 
 The alignment of the axis label while moving trackball can be defined using [`AxisLabelAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_AxisLabelAlignment) property.
 
-[`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) –Axis label is aligned in Near/Far positions based on the trackball movement.
+[`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Auto) –Axis label is aligned in Near/Far positions based on the trackball movement.
 
-[`Far`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html)-Axis label is positioned far from the position of trackball.
+[`Far`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Far)-Axis label is positioned far from the position of trackball.
 
-[`Near`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html)- Axis label is near to the position of trackball.
+[`Near`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Near)- Axis label is near to the position of trackball.
 
-[`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html)-Axis label is aligned to the center of the trackball. By default the axis label will positioned in center.
+[`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Center)-Axis label is aligned to the center of the trackball. By default the axis label will positioned in center.
 
 **Far**
 
@@ -1095,7 +1095,7 @@ chart.Behaviors.Add(behavior);
 
 **Customization of axis label**
 
-You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TrackBallLabelTemplate) property in [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) as in the below code snippet.
+You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TrackBallLabelTemplate) property in [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) as in the below code snippet.
 
 {% tabs %}
 
@@ -1163,7 +1163,7 @@ When the trackball is hovered over you can view the label is also displayed over
 
 **ShowTrackballInfo**
 
-[`ShowTrackballInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackBallInfo) property of [`Cartesian Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) label for corresponding series. By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_ShowTrackBallInfo) property is true. The property can be set as shown in the below code example:
+[`ShowTrackballInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballInfo) property of [`Cartesian Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html) allows user to enable or disable the [`trackball`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) label for corresponding series. By default, [`ShowTrackballInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_ShowTrackballInfo) property is true. The property can be set as shown in the below code example:
 
 {% tabs %}
 
@@ -1249,7 +1249,7 @@ chart.Behaviors.Add(behavior);
 
 **LabelDisplayMode**
 
-When there is a multiple series, by default the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayMode) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html).
+When there is a multiple series, by default the trackball series label will be displayed only for the nearest point. If you want to display all the y values with respect to the x value then the [`LabelDisplayMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelDisplayMode) property is set to [`FloatAllPoints`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TrackballLabelDisplayMode.html#Syncfusion_UI_Xaml_Charts_TrackballLabelDisplayMode_FloatAllPoints).
 
 **FloatAllPoints**
 
@@ -1442,14 +1442,14 @@ The following events are available in ChartTrackBallBehavior,
 
 ## PositionChanging
 
-The [`PositionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) event occurs when the [`trackball`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position is changing from current mouse position to new mouse position. This argument contains the following information.
+The [`PositionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_PositionChanging) event occurs when the [`trackball`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position is changing from current mouse position to new mouse position. This argument contains the following information.
 
 * [`Cancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_PositionChangingEventArgs_Cancel) - Gets or sets a value that indicates whether to show the trackball on new mouse pointer position.
 * [`PointInfos`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PositionChangingEventArgs.html#Syncfusion_UI_Xaml_Charts_PositionChangingEventArgs_PointInfos) - Gets or sets the current [`ChartPointInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
 
 ## PositionChanged
 
-The [`PositionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) event occurs when the [`trackball`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position is changed from current mouse position to new mouse position. This argument contains the following information.
+The [`PositionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_PositionChanged) event occurs when the [`trackball`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) position is changed from current mouse position to new mouse position. This argument contains the following information.
 
 * [`PreviousPointInfos`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PositionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_PositionChangedEventArgs_PreviousPointInfos) - Gets or sets the previous [`ChartPointInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
 * [`CurrentPointInfos`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PositionChangedEventArgs.html#Syncfusion_UI_Xaml_Charts_PositionChangedEventArgs_CurrentPointInfos) -  Gets or sets the current [`ChartPointInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPointInfo.html).
@@ -2000,11 +2000,11 @@ chart.Series.Add(series);
 
 Series with visual data editing has support for following events,
 
-* [`DragStart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs when segment/series drag started. 
-* [`DragDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs when segment/series dragging.
-* [`DragEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs when segment/series drag end. 
-* [`PreviewDragEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs before drag end triggered. 
-* [`SegmentEnter`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html)- Occurs when mouse enters in segment. 
+* [`DragStart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragStart)- Occurs when segment/series drag started. 
+* [`DragDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragDelta)- Occurs when segment/series dragging.
+* [`DragEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragEnd)- Occurs when segment/series drag end. 
+* [`PreviewDragEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_PreviewDragEnd)- Occurs before drag end triggered. 
+* [`SegmentEnter`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_SegmentEnter)- Occurs when mouse enters in segment. 
 
 
 ## Zoom and Pan
@@ -2276,7 +2276,7 @@ chart.Behaviors.Add(zooming);
 
 The zooming can be done both horizontally and vertically. The zooming direction is defined using [`ZoomMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomMode) property.
 
-Zooming along [`X`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ZoomMode.html) axis
+Zooming along [`X`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ZoomMode.html#Syncfusion_UI_Xaml_Charts_ZoomMode_X) axis
 
 {% tabs %}
 
@@ -2635,12 +2635,12 @@ chart.Behaviors.Add(zooming);
 
 The following events are available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) for [`ChartZoomPanBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html),
 
-* [`ZoomChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html)- Occurs when zoom started in chart area.
-* [`ZoomChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html)- Occurs when zooming done in chart area.
-* [`SelectionZoomingStart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html)- Occurs when selection zooming started. 
-* [`SelectionZoomingDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html)- Occurs when selection zooming.
-* [`SelectionZoomingEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html)- Occurs when selection zooming end. 
-* [`ResetZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html)- Occurs when zooming get reset in chart area.
+* [`ZoomChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ZoomChanging)- Occurs when zoom started in chart area.
+* [`ZoomChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ZoomChanged)- Occurs when zooming done in chart area.
+* [`SelectionZoomingStart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SelectionZoomingStart)- Occurs when selection zooming started. 
+* [`SelectionZoomingDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SelectionZoomingDelta)- Occurs when selection zooming.
+* [`SelectionZoomingEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SelectionZoomingEnd)- Occurs when selection zooming end. 
+* [`ResetZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ResetZooming)- Occurs when zooming get reset in chart area.
 
 
 ## Selection:
@@ -2907,7 +2907,7 @@ N>By default the segment selection is true, so for selecting series you have to 
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to select using mouse move or mouse click. By default the selection will take place in mouse click. The selection mode can be defined using [`SelectionMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionMode) property for segment and series selection.
 
-The following code snippet demonstrates the selection mode using [`MouseMove`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SelectionMode.html).
+The following code snippet demonstrates the selection mode using [`MouseMove`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SelectionMode.html#Syncfusion_UI_Xaml_Charts_SelectionMode_MouseMove).
 
 {% tabs %}
 
@@ -2942,7 +2942,7 @@ chart.Behaviors.Add(selection);
 
 ### Selection style
 
-[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to select single or multiple segment /series using [`SelectionStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionStyle) property. By default the [`SelectionStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionStyle) is [`Single`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SelectionStyle.html).
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to select single or multiple segment /series using [`SelectionStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionStyle) property. By default the [`SelectionStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html#Syncfusion_UI_Xaml_Charts_ChartSelectionBehavior_SelectionStyle) is [`Single`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SelectionStyle.html#Syncfusion_UI_Xaml_Charts_SelectionStyle_Single).
 
 The following code snippet demonstrates multiple segment selection.
 
@@ -3245,8 +3245,8 @@ chart.Series.Add(series2);
 
 The following events are available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) for [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html),
 
-* [`SelectionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html)- Occurs when selection changing in chart area.
-* [`SelectionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html)- Occurs when selection changed in chart area. 
+* [`SelectionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging)- Occurs when selection changing in chart area.
+* [`SelectionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged)- Occurs when selection changed in chart area. 
 
 
 ## Resizable Scrollbar
@@ -3680,13 +3680,13 @@ The vertical line in contact with the x axes shows axis label. The horizontal ax
 
 Axis Label can be aligned by Near, Far, Center, Auto and None Options.
 
-[`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) –Axis label is aligned in Near/Far positions based on the movement of vertical line.
+[`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Auto) –Axis label is aligned in Near/Far positions based on the movement of vertical line.
 
-[`Far`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html)-Axis label is positioned far from the position of vertical line in cross hair.
+[`Far`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Far)-Axis label is positioned far from the position of vertical line in cross hair.
 
-[`Near`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html)- Axis label is near to the position of trackball.
+[`Near`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Near)- Axis label is near to the position of trackball.
 
-[`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html)-Axis label is aligned to the center of the vertical line. By default the axis label will positioned in center.
+[`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Center)-Axis label is aligned to the center of the vertical line. By default the axis label will positioned in center.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 
@@ -3765,7 +3765,7 @@ chart.Behaviors.Add(behavior);
 
 Vertical axis label is displayed when the horizontal line in contact with x axis.The label can be aligned using [`VerticalAxisLabelAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrossHairBehavior_VerticalAxisLabelAlignment) property.
 
-Axis Label can be aligned by [`Near`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html), [`Far`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html), [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) and [`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html) Options.
+Axis Label can be aligned by [`Near`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Near), [`Far`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Far), [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Center) and [`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAlignment.html#Syncfusion_UI_Xaml_Charts_ChartAlignment_Auto) Options.
 
 The following image demonstrates the horizontal axis label positioned center to the vertical line.
 

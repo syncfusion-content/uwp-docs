@@ -73,7 +73,7 @@ The following topics discuss briefly about various adornment customization.
 
 To enable the marker in adornments you have to set the [`ShowMarker`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property as True. By default, there is no symbol displayed, you have to add the desired symbol using [`Symbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_Symbol) property.
 
-The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html) symbol:
+The following code example demonstrates the column series with [`Diamond`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSymbol.html#Syncfusion_UI_Xaml_Charts_ChartSymbol_Diamond) symbol:
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Symbol support in UWP Chart](Adornments_images/marker_1.png)
+![Symbol support in UWP Chart](adornments_images/uwp-charts-adornments-symbol-support.png)
 
 
 ### Customization
@@ -210,7 +210,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Symbol customization support in UWP Chart](Adornments_images/marker_2.png)
+![Symbol customization support in UWP Chart](adornments_images/uwp-charts-adornments-symbol-customization.png)
 
 
 **Custom Template**
@@ -340,7 +340,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Template support for symbol in UWP Chart](Adornments_images/custom_template.png)
+![Template support for symbol in UWP Chart](adornments_images/uwp-charts-adornments-custom-template.png)
 
 
 ## Label
@@ -405,7 +405,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Label to represent the text for adornments in UWP Chart](Adornments_images/label_1.png)
+![Label to represent the text for adornments in UWP Chart](adornments_images/uwp-charts-adornments-label-text.png)
 
 
 ### Defining the Label Content
@@ -474,7 +474,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adornments label content customization support in UWP Chart](Adornments_images/label_2.png)
+![Adornments label content customization support in UWP Chart](adornments_images/uwp-charts-adornments-label-content.png)
 
 
 N>For CategoryAxis, the x values will be taken as the index since it is an indexed based axis. If it is a numerical axis or date time the corresponding x value will be displayed.
@@ -541,7 +541,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adornments label content customization support in UWP Chart](Adornments_images/label_3.png)
+![Adornments label content customization support in UWP Chart](adornments_images/uwp-charts-adornments-label-content-customization.png)
 
 
 **YofTot**
@@ -604,7 +604,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adornments label content customization support in UWP Chart](Adornments_images/label_4.png)
+![Adornments label content customization support in UWP Chart](adornments_images/uwp-charts-adornments-label-content-yoftof.png)
 
 
 **DateTime**
@@ -660,7 +660,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adornments label content customization support in UWP Chart](Adornments_images/label_5.png)
+![Adornments label content customization support in UWP Chart](adornments_images/uwp-charts-adornments-label-content-datetime.png)
 
 N> If you are having DateTimeAxis then the corresponding date time value will be displayed as [`LabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelContent.html). In case of category or numerical axis the value will be converted to OADate.
 
@@ -739,7 +739,7 @@ return value;
 {% endtabs %}
 
 
-![LabelTemplate support for adornments in UWP Chart](Adornments_images/labelcontent.png)
+![Label Template support for adornments in UWP Chart](adornments_images/uwp-charts-adornments-label-content-path.png)
 
 
 **Label Rotation**
@@ -777,7 +777,7 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 {% endtabs %}
 
-![Adornments label rotation support in UWP Chart](Adornments_images/label_rotation.png)
+![Adornments label rotation support in UWP Chart](adornments_images/uwp-charts-adornments-label-rotation.png)
 
 ### Customization
 
@@ -871,7 +871,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Adornments label customization support in UWP Chart](Adornments_images/custom_label.png)
+![Adornments label customization support in UWP Chart](adornments_images/uwp-charts-adornments-custom-label.png)
 
 
 ## Applying Series Brush
@@ -917,7 +917,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Series brush for adornments background support in UWP Chart](Adornments_images/series_palette.png)
+![Series brush for adornments background support in UWP Chart](adornments_images/uwp-charts-adornments-series-palette.png)
 
 
 The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property as in the below code example:
@@ -996,7 +996,7 @@ YBindingPath="Year2011">
 
 {% endhighlight %}
 
-![LabelTemplate support for adornments in UWP Chart](Adornments_images/label_template.png)
+![Label Template support for adornments in UWP Chart](adornments_images/uwp-charts-adornments-label-template.png)
 
 
 ## Label Format
@@ -1005,7 +1005,7 @@ YBindingPath="Year2011">
 
 In the following image, you can see the decimal position will be rounded off to two digits by default.
 
-![Adornments label format support in UWP Chart](Adornments_images/label_format.png)
+![Adornments label format support in UWP Chart](adornments_images/uwp-charts-adornments-label-format.png)
 
 
 The following code example demonstrates the rounding off the y value having three decimal digits:
@@ -1098,7 +1098,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Connector line for adornments support in UWP Chart](Adornments_images/connectorline_1.png)
+![Connector line for adornments support in UWP Chart](adornments_images/uwp-charts-adornments-adding-connectorline.png)
 
 
 ### Connector Height and Rotation
@@ -1174,16 +1174,16 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Connector line style support in UWP Chart](Adornments_images/connectorline_2.png)
+![Connector line style support in UWP Chart](adornments_images/uwp-charts-adornments-connectorline-style.png)
 
 
 ### Connector Type
 
-[`ConnectorType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html) or [`Bezier`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
+[`ConnectorType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Line) or [`Bezier`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Bezier). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
 
 **Line**
 
-![Connector type support in UWP Chart](Adornments_images/connectorline_3.png)
+![Connector type support in UWP Chart](adornments_images/uwp-charts-adornments-connector-type.png)
 
 **Bezier**
 
@@ -1251,16 +1251,16 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Connector type support in UWP Chart](Adornments_images/connectorline_4.png)
+![Connector type support in UWP Chart](adornments_images/uwp-charts-adornments-connector-type-bezier.png)
 
 
 ## Positioning the Adornments
 
-The positioning of adornments inside the series is defined using [`AdornmentPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
+The positioning of adornments inside the series is defined using [`AdornmentsPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
 
-* [`Top`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the top edge point of a chart segment.
-* [`Bottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the bottom edge point of a chart segment.
-* [`TopAndBottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html) - Positions the Adornment at the center point of a chart segment.
+* [`Top`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_Top) - Positions the Adornment at the top edge point of a chart segment.
+* [`Bottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_Bottom) - Positions the Adornment at the bottom edge point of a chart segment.
+* [`TopAndBottom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsPosition_TopAndBottom) - Positions the Adornment at the center point of a chart segment.
 
 N> This behavior varies based on the type chart series.
 
@@ -1301,7 +1301,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_1.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-positioning.png)
 
 Also you can define the label alignment using  [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_VerticalAlignment) properties and the following code example demonstrates the labels positioned using horizontal and vertical alignment.
 
@@ -1340,7 +1340,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_2.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-positioning-support.png)
 
 ### Advanced Positioning
 
@@ -1348,11 +1348,11 @@ Other than the above positioning options, SfChart providing additional customiza
 
 The following are the values for this property: 
 
-* [`Default`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Inner`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Outer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
-* [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html)
+* [`Default`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Default)
+* [`Auto`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Auto)
+* [`Inner`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Inner)
+* [`Outer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Outer)
+* [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.html#Syncfusion_UI_Xaml_Charts_AdornmentsLabelPosition_Center)
 
 The following section shows few examples for this LabelPosition behavior with respect to the series.
 
@@ -1393,7 +1393,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_3.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-column-series.png)
 
 
 LabelPosition as Inner
@@ -1431,7 +1431,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_4.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-column-series-support.png)
 
 
 LabelPosition as Outer
@@ -1469,7 +1469,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_5.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-label-position.png)
 
 
 **Line Series**
@@ -1511,7 +1511,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_6.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-line-series.png)
 
 LabelPosition as Inner
 
@@ -1550,7 +1550,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_7.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-line-series-support.png)
 
 
 LabelPosition as Outer
@@ -1590,7 +1590,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_8.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-line-series-positioning.png)
 
 LabelPosition as Center
 
@@ -1629,7 +1629,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adornments positioning support in UWP Chart](Adornments_images/adornment_pos_9.png)
+![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-series-positioning.png)
 
 
 ## Smart Labels for Accumulation Series
@@ -1712,6 +1712,6 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Smart labels for adornments in UWP Chart](Adornments_images/smartlabel.png)
+![Smart labels for adornments in UWP Chart](adornments_images/uwp-charts-adornments-smartlabel.png)
 
 

@@ -13,13 +13,13 @@ documentation: ug
 
 This section explains about various row types in SfDataGrid.
 
-[StackedHeaderRow](http://help.syncfusion.com/uwp/sfdatagrid/columns#stacked-headers)
+[StackedHeaderRow](http://help.syncfusion.com/uwp/datagrid/columns#stacked-headers)
 
-[AddNewRow](http://help.syncfusion.com/uwp/sfdatagrid/data-manipulation#built-in-addnewrow)
+[AddNewRow](http://help.syncfusion.com/uwp/datagrid/data-manipulation#built-in-addnewrow)
 
-[SummaryRow](https://help.syncfusion.com/uwp/sfdatagrid/summaries)
+[SummaryRow](https://help.syncfusion.com/uwp/datagrid/summaries)
 
-[UnboundRow](http://help.syncfusion.com/uwp/sfdatagrid/unbound-rows)
+[UnboundRow](http://help.syncfusion.com/uwp/datagrid/unbound-rows)
 
 ## Row Header
 
@@ -56,7 +56,7 @@ Description
 </tr>
 <tr>
 <td>
-Current cell in the row in UWP DataGrid<img src="Rows_images/Rows_img2.png"/>
+Current cell in the row in UWP DataGrid<img src="Rows_images/Rows_img2.png" alt="UWP DataGrid Current cell"/>
 </td>
 <td>
 Denotes the row which has current cell or has selected item.
@@ -64,7 +64,7 @@ Denotes the row which has current cell or has selected item.
 </tr>
 <tr>
 <td>
-Edited row in UWP DataGrid<img src="Rows_images/Rows_img3.png"/>
+Edited row in UWP DataGrid<img src="Rows_images/Rows_img3.png" alt="UWP DataGrid Edited row"/>
 </td>
 <td>
 Denotes row is being edited. 
@@ -72,7 +72,7 @@ Denotes row is being edited.
 </tr>
 <tr>
 <td>
-Adding new row in UWP DataGrid<img src="Rows_images/Rows_img4.png"/>
+Adding new row in UWP DataGrid<img src="Rows_images/Rows_img4.png" alt="UWP DataGrid AddNewRow"/>
 </td>
 <td>
 Denotes row is AddNewRow.
@@ -80,7 +80,7 @@ Denotes row is AddNewRow.
 </tr>
 <tr>
 <td>
-Rows with errors in UWP DataGrid<img src="Rows_images/Rows_img5.png"/>
+Rows with errors in UWP DataGrid<img src="Rows_images/Rows_img5.png" alt="UWP DataGrid Rows with errors"/>
 </td>
 <td>
 Denotes the row has errors. 
@@ -88,7 +88,7 @@ Denotes the row has errors.
 </tr>
 <tr>
 <td>
-Current rows with errors in UWP DataGrid<img src="Rows_images/Rows_img6.png"/>
+Current rows with errors in UWP DataGrid<img src="Rows_images/Rows_img6.png" alt="UWP DataGrid Current rows"/>
 </td>
 <td>
 Denotes that the current row which has errors.
@@ -98,9 +98,9 @@ Denotes that the current row which has errors.
 
 See also.
 
-[Show row index in RowHeader](http://help.syncfusion.com/uwp/sfdatagrid/styles-and-templates#styling-rowheader)
+[Show row index in RowHeader](http://help.syncfusion.com/uwp/datagrid/styles-and-templates#styling-rowheader)
 
-[Customizing RowHeader based on record](https://help.syncfusion.com/uwp/sfdatagrid/conditional-styling#row-header)
+[Customizing RowHeader based on record](https://help.syncfusion.com/uwp/datagrid/conditional-styling#row-header)
 
 ## Header Row
 
@@ -311,7 +311,7 @@ You can differentiate the frozen rows and footer rows from normal rows by writin
 
 ### Disable drag and drop between frozen and non-frozen columns
 
-You can disable the drag and drop between frozen and non-frozen columns by handling [QueryColumnDragging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+You can disable the drag and drop between frozen and non-frozen columns by handling [QueryColumnDragging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_QueryColumnDragging) event.
 
 Using `Reason` property in [QueryColumnDraggingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.QueryColumnDraggingEventArgs.html), you can cancel the column dropping operation.
  

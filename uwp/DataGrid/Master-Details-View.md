@@ -15,7 +15,7 @@ SfDataGrid provides support to represent the hierarchical data in the form of ne
 
 ## Generating Master-Details view from IEnumerable
 
-Master-Details View’s relation can be generated for the properties of type [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx) in the underlying data object contain.
+Master-Details View’s relation can be generated for the properties of type [IEnumerable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-7.0) in the underlying data object contain.
 Follow the below steps to generate the Master-Details View for `IEnumerable`.
 
 * Create the data model with relations (Here, relations are `IEnumerable` type properties)
@@ -25,7 +25,7 @@ Follow the below steps to generate the Master-Details View for `IEnumerable`.
    
 ### Create the data model with relations
 
-Create an `Employee` class with `Sales` and `Orders` property of type [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604.aspx) to form the relations. The `Sales` and `Orders` properties are defined as `ObservableCollection<SalesInfo>` and `ObservableCollection<OrderInfo>` respectively. 
+Create an `Employee` class with `Sales` and `Orders` property of type [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=net-7.0) to form the relations. The `Sales` and `Orders` properties are defined as `ObservableCollection<SalesInfo>` and `ObservableCollection<OrderInfo>` respectively. 
 
 {% tabs %}
 {% highlight c# %}
@@ -1868,7 +1868,7 @@ void dataGrid_DetailsViewCollapsed(object sender, GridDetailsViewCollapsedEventA
 
 ### Cancel expanding or collapsing operations through events
 
-You can cancel expanding operation while expanding the `DetailsViewDataGrid` by using [GridDetailsViewExpandingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property in the [DetailsViewExpanding](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
+You can cancel expanding operation while expanding the `DetailsViewDataGrid` by using [GridDetailsViewExpandingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-7.0#System_ComponentModel_CancelEventArgs_Cancel) property in the [DetailsViewExpanding](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}
@@ -1883,7 +1883,7 @@ void dataGrid_DetailsViewExpanding(object sender, Syncfusion.UI.Xaml.Grid.GridDe
 {% endhighlight %}
 {% endtabs %}
 
-Similarly, the collapsing operation can be canceled through the [GridDetailsViewCollapsingEventArgs.Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property in the [DetailsViewCollapsing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
+Similarly, the collapsing operation can be canceled through the [GridDetailsViewCollapsingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?redirectedfrom=MSDN&view=net-7.0#System_ComponentModel_CancelEventArgs_Cancel) property in the [DetailsViewCollapsing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event handler.
 
 {% tabs %}
 {% highlight c# %}

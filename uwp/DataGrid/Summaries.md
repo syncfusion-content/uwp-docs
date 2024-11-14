@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Summaries in UWP DataGrid control | Syncfusion
-description: Learn here all about Summaries support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about Summaries support in Syncfusion UWP DataGrid (SfDataGrid) control, its features and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
-
 
 # Summaries in UWP DataGrid (SfDataGrid)
 
@@ -1130,7 +1129,7 @@ this.dataGrid.TableSummaryRows.Add(new GridTableSummaryRow()
 
 ![Custom aggregate summaries in UWP SfDataGrid](Summaries_images/Summaries_img16.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries958318941.zip) .
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomSummaries958318941.zip) .
 
 ## Overriding Summary Renderer
 
@@ -1243,7 +1242,7 @@ public class GridTableSummaryCellRendererExt : GridTableSummaryCellRenderer
 
 ![Table summary formatting using renderer in UWP DataGrid](Summaries_images/Summaries_img17.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1847415283.zip).
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-1847415283.zip).
 
 ### Customizing GroupCaptionText
 
@@ -1333,4 +1332,4 @@ public class GridCaptionSummaryCellRendererExt : GridCaptionSummaryCellRenderer
 
 ![Customize the group caption text format in UWP DataGrid](Summaries_images/Summaries_img18.png)
 
-You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-827769441.zip). 
+You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridDemo-827769441.zip). 

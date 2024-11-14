@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting pages as images in UWP PDF Viewer (SfPdfViewer)
 
-The SfPdfViewer allow user to export page of the PDF document as an Image. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/sfpdfviewer/concepts-and-features/viewing-pdf) section. 
+The SfPdfViewer allow user to export page of the PDF document as an Image. Here 'buffer' is the byte array read from the PDF file either using FileOpenPicker or from Assets folder, as illustrated in the [Viewing PDF](https://help.syncfusion.com/uwp/pdf-viewer/concepts-and-features/viewing-pdf) section. 
 
 {% tabs %}
 {% highlight c# %}
