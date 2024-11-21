@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in UWP DataGrid control | Syncfusion
-description: Learn here all about Editing support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Editing in UWP DataGrid Control | Syncfusion
+description: Learn here all about to enable and disable editing support in Syncfusion UWP DataGrid control, its elements, and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Editing in UWP DataGrid (SfDataGrid)
+# Editing in UWP DataGrid (SfDataGrid) control
 
 SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 
@@ -227,7 +227,7 @@ SfDataGrid triggers the following events during editing.
 
 [CurrentCellBeginEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) enter into edit mode. [CurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
+* [Cancel](https://learn.microsoft.com/en-us/visualstudio/ide/not-in-toc/default?view=vs-2022&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellBeginEditEventArgs_RowColumnIndex): Gets the current row column index of the DataGrid.
 
