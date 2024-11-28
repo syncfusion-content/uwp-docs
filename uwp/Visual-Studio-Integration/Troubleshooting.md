@@ -24,7 +24,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 1. To open Syncfusion Troubleshooter Wizard, follow either one of the options below: 
    
    **Option 1:**  
-   Open an existing Syncfusion UWP Application, Click **Extensions->Syncfusion Menu** and choose **Essential Studio for UWP > Troubleshoot…** in Visual Studio.
+   Open an existing Syncfusion UWP Application, Click **Extensions->Syncfusion Menu** and choose **Essential Studio® for UWP > Troubleshoot…** in Visual Studio.
 
    ![Syncfusion Troubleshooter via Syncfusion menu](SyncfusionTroubleshooter_images/Syncfusion_Menu_Troubleshooter-latest.png)
 
@@ -93,6 +93,6 @@ The Syncfusion Troubleshooter deals with the following NuGet package related iss
 
    ![Syncfusion Troubleshooter process success status message in visual studio status bar](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img8.jpeg)
 
-4. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.   
+4. Then, Syncfusion licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the  [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio®.   
 
    ![Syncfusion license registration required information dialog in Syncfusion Troubleshooter](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img9.jpeg)

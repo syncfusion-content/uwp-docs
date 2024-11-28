@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Extensions control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio UWP Extensions control, its elements and more.
+description: Learn here all about introduction of Syncfusion Essential Studio® UWP Extensions control, its elements and more.
 platform: uwp
 control: Syncfusion Extensions
 documentation: ug

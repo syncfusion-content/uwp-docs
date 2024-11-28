@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Check for Updates | UWP | Syncfusion
-description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio release.
+description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio® release.
 platform: uwp
 control: Visual Studio Extensions
 documentation: ug
 ---
 
-# Check for Updates in Syncfusion Essential Studio UWP
+# Check for Updates in Syncfusion Essential Studio® UWP
 
-Syncfusion provides the Extensions to update most recent version of the Essential Studio release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
+Syncfusion provides the Extensions to update most recent version of the Essential Studio® release. So that, you always get the latest features, fixes, and improvements by installing the latest version.
 
 I> The Syncfusion Check for updates is available from v17.1.0.32.
 
@@ -27,4 +27,4 @@ You can check updates availability in Visual Studio, and then install the update
 
    ![Syncfusion check for updates wizard](Check-for-Updates_images/Check-for-Updates_images-img2.png)
 
-3. You can download the Syncfusion Essential Studio from the Syncfusion website by selecting **Download**.
+3. You can download the Syncfusion Essential Studio® from the Syncfusion website by selecting **Download**.
