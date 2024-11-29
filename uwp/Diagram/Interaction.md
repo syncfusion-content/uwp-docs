@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interaction in UWP Diagram control | Syncfusion
-description: Learn here all about Interaction support in Syncfusion UWP Diagram (SfDiagram) control, its elements, and more.
+title: Interaction in UWP Diagram control | Syncfusion®
+description: Learn here all about Interaction support in Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
 platform: uwp
 control: SfDiagram
 documentation: ug

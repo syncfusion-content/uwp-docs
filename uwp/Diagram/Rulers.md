@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rulers in UWP Diagram control | Syncfusion
-description: Learn here all about Rulers support in Syncfusion UWP Diagram (SfDiagram) control and more.
+title: Rulers in UWP Diagram control | Syncfusion®
+description: Learn here all about Rulers support in Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
