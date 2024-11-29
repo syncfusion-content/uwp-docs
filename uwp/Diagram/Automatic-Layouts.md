@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Automatic Layouts in UWP Diagram control | Syncfusion
-description: Learn here all about Automatic Layouts support in Syncfusion UWP Diagram (SfDiagram) control and more.
+title: Automatic Layouts in UWP Diagram control | Syncfusion®
+description: Learn here all about Automatic Layouts support in Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
