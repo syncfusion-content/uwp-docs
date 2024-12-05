@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Connector in UWP Diagram control | Syncfusion®
-description: Learn here all about Connector support in Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
+description: Learn here all about Connector support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
 platform: uwp
 control: SfDiagram
 documentation: ug

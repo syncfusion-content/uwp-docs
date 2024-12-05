@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization in UWP Diagram control | Syncfusion®
-description: Learn here all about Serialization support in Syncfusion® UWP Diagram (SfDiagram) control and more.
+description: Learn here all about Serialization support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Annotation in UWP Diagram control | Syncfusion®
-description: Learn here all about Annotation support in Syncfusion® UWP Diagram (SfDiagram) control and more.
+description: Learn here all about Annotation support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
