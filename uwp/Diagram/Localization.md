@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in UWP Diagram control | Syncfusion®
-description: Learn here all about Localization support in Syncfusion® UWP Diagram (SfDiagram) control and more.
+description: Learn here all about Localization support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
