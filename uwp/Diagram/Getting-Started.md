@@ -169,7 +169,8 @@ Creating NodeViewModel with Specified Height and Width.
  Please refer to [Shapes](https://help.syncfusion.com/uwp/diagram/shapes) to know about built-in Shapes.
   
 {% tabs %}
-{% highlight xaml %}  
+{% highlight xaml %}
+
 <ResourceDictionary>
     <ResourceDictionary.MergedDictionaries>
         <!--Initialize Shapes-->
@@ -184,9 +185,10 @@ Creating NodeViewModel with Specified Height and Width.
 </ResourceDictionary>
 
 <syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" ShapeStyle="{StaticResource ShapeStyle}" UnitHeight="40" UnitWidth="120"/>
-  {% endhighlight %}
 
-{% highlight c# %} 
+{% endhighlight %}
+{% highlight c# %}
+
             NodeViewModel Begin = new NodeViewModel()
             {
                 ID = "Begin",
@@ -199,6 +201,7 @@ Creating NodeViewModel with Specified Height and Width.
                 //Apply style to Shape
                 ShapeStyle = this.Resources["ShapeStyle"] as Style,
             };
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -212,11 +215,15 @@ N> ID sets for each node to identify nodes easily while setting connectors.
    
  To initialize the Annotation property of the Node and Connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
  
- {% highlight xaml %}
+{% tabs %}
+{% highlight xaml %}
+
   <!--To apply Style for AnnotationEditorViewModel-->
  <Style TargetType="syncfusion:AnnotationEditor">
  </Style>
- {% endhighlight %} 
+ 
+{% endhighlight %}
+{% endtabs %}
     
 N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector.
     By default, `Annotations` property of Node and Connector is null.
