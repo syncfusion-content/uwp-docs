@@ -1,7 +1,7 @@
 ---
 layout: post
-title: .NET Framework support history for Syncfusion Essential UWP controls
-description: .NET Framework support history for Syncfusion Essential UWP controls
+title: .NET Framework support history for Syncfusion® Essential UWP controls
+description: .NET Framework support history for Syncfusion® Essential UWP controls
 platform: uwp
 control: .Net Framework support History
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 ## Version Compatibility
 
-This table represents the Syncfusion Essential Studio UWP controls supported .NET Framework versions:
+This table represents the Syncfusion® Essential Studio® UWP controls supported .NET Framework versions:
 
 <table>
 <tr>
@@ -25,7 +25,7 @@ Yes</td></tr>
 
 ## Control compatibility
 
-Syncfusion UWP controls are always updated with the Microsoft latest Framework. The following table contains information about the control’s compatibility with the versions of .NET Framework:
+Syncfusion® UWP controls are always updated with the Microsoft latest Framework. The following table contains information about the control’s compatibility with the versions of .NET Framework:
 
 <table>
 <tr>
