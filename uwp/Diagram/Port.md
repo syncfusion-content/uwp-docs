@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Port in UWP Diagram control | Syncfusion
-description: Learn here all about Port support in Syncfusion UWP Diagram (SfDiagram) control, its elements, and more.
+title: Port in UWP Diagram control | Syncfusion®
+description: Learn here all about Port support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Port in UWP Diagram (SfDiagram)
 
-Essential Diagram for UWP provides support to define custom ports for making connections.
+Essential® Diagram for UWP provides support to define custom ports for making connections.
 
 ![Node Port](Port_images/Port_img1.jpeg)![Connector Port](Port_images/Port_img2.jpeg)
 
