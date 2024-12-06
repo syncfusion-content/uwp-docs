@@ -1,7 +1,7 @@
 ---
 layout: post
-title: UWP NuGet Packages | Syncfusion
-description: Learn here all about installation, managing and upgrading of NuGet Packages of Syncfusion UWP control and more.
+title: UWP NuGet Packages | Syncfusion®
+description: Learn here all about installation, managing and upgrading of NuGet Packages of Syncfusion® UWP control and more.
 platform: uwp
 control: NuGet Packages
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # NuGet Packages in UWP 
 
-[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion UWP NuGet packages without installing the Essential Studio or UWP platform installation to development with the Syncfusion UWP controls. 
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion® UWP NuGet packages without installing the Essential Studio or UWP platform installation to development with the Syncfusion UWP controls. 
 
-From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion components are available as NuGet packages at [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
+From v16.2.0.46 (2018 Volume 2 Service Pack 1) onwards, all the Syncfusion® components are available as NuGet packages at [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
-Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet package, you must include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your UWP application to use Syncfusion controls.
+Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet package, you must include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion license key in your UWP application to use Syncfusion controls.
 
-N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
+N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion® will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 
 ## Installing NuGet Packages
 
@@ -33,13 +33,13 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
      ![NuGet package manager dialog window](NuGet_Packages_Images/img4.png)             
 
-3.	All the Syncfusion UWP NuGet packages are listed and available. Search and install the required packages in your application, by clicking the **Install** button.
+3.	All the Syncfusion® UWP NuGet packages are listed and available. Search and install the required packages in your application, by clicking the **Install** button.
 
-N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/uwp/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> The Syncfusion® NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. To Install earlier version of 16.2.0.46 Syncfusion® NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/uwp/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ### Using Package Manager Console
 
-To reference the Syncfusion UWP component using the Package Manager Console as NuGet packages, follow the below step:
+To reference the Syncfusion® UWP component using the Package Manager Console as NuGet packages, follow the below step:
 
 1.	On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**. 
 
@@ -94,7 +94,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     nuget.exe install “C:\Users\SyncfusionApplication\package.config”
     ~~~
 
-N> To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/uwp/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> To Install earlier version of 16.2.0.46 Syncfusion® NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/uwp/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Upgrading NuGet packages
 
@@ -109,7 +109,7 @@ NuGet packages can be updated to their specific version or latest version availa
 
 ### Using Package Manger Console
 
-To update the installed Syncfusion UWP NuGet packages using the Package Manager Console, follow the below steps:
+To update the installed Syncfusion® UWP NuGet packages using the Package Manager Console, follow the below steps:
 
 1.	On the **Tools** menu, select **NuGet Package Manager**, and then **Package Manager Console.** 
 
@@ -148,7 +148,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion UWP NuGet packages.
+2.	Open the downloaded executable location in the command window. Run the following “update commands” to update the Syncfusion® UWP NuGet packages.
 
     ~~~ 
     #update all NuGet packages from config file
@@ -167,11 +167,11 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
     nuget update “C:\Users\SyncfusionApplication\package.config”
     ~~~
 
-## Syncfusion NuGet feed URL Configuration
+## Syncfusion® NuGet feed URL Configuration
 
-### Get the Syncfusion NuGet feed URL 
+### Get the Syncfusion® NuGet feed URL 
 
-You should get the private Syncfusion UWP NuGet feed URL to install or upgrade the Syncfusion UWP NuGet packages. To get the URL from Syncfusion website use the following steps:
+You should get the private Syncfusion® UWP NuGet feed URL to install or upgrade the Syncfusion® UWP NuGet packages. To get the URL from Syncfusion® website use the following steps:
 
 1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select the **MOBILE** tab.     
 
@@ -181,9 +181,9 @@ You should get the private Syncfusion UWP NuGet feed URL to install or upgrade t
 
     ![Syncfusion UWP NuGet feed URL](NuGet_Packages_Images/img1.png)
 
-3. Now, use this NuGet feed URL to access the Syncfusion NuGet Packages in Visual Studio. 
+3. Now, use this NuGet feed URL to access the Syncfusion® NuGet Packages in Visual Studio. 
 
-### Add the Syncfusion NuGet feed URL
+### Add the Syncfusion® NuGet feed URL
 
 #### Windows
 
@@ -193,7 +193,7 @@ You should get the private Syncfusion UWP NuGet feed URL to install or upgrade t
 
 3.	Expand the **NuGet Package Manager** and select **Package Sources**.
 
-4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion UWP NuGet packages.
+4.	Click the **Add** button (green plus), and enter the ‘Package Name’ and ‘Package Source URL’ of the Syncfusion® UWP NuGet packages.
 
     **Name:** Name of the package listed in the available package sources.
     **Source:** Syncfusion UWP NuGet Feed URL.      
@@ -213,7 +213,7 @@ You should get the private Syncfusion UWP NuGet feed URL to install or upgrade t
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion UWP NuGet packages: 
+2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion® UWP NuGet packages: 
 
     ~~~
     #Add specified Package Source in NuGet.config file 
