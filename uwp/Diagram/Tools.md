@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tools in UWP Diagram control | Syncfusion
-description: Learn here all about Tools support in Syncfusion UWP Diagram (SfDiagram) control and more.
+title: Tools in UWP Diagram control | Syncfusion®
+description: Learn here all about Tools support in the Syncfusion® UWP Diagram (SfDiagram) control and much more.      
 platform: uwp
 control: SfDiagram
 documentation: ug

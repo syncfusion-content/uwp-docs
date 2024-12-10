@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in UWP Diagram control | Syncfusion
-description: Learn here all about Virtualization support in Syncfusion UWP Diagram (SfDiagram) control, its elements and more.
+title: Virtualization in UWP Diagram control | Syncfusion®
+description: Learn here all about Virtualization support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements and more.
 platform: uwp
 control: SfDiagram
 documentation: ug

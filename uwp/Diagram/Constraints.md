@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Constraints in UWP Diagram control | Syncfusion
-description: Learn here all about Constraints support in Syncfusion UWP Diagram (SfDiagram) control and more.
+title: Constraints in UWP Diagram control | Syncfusion®
+description: Learn here all about Constraints support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug

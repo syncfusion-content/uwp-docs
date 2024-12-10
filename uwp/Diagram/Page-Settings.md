@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Page Settings in UWP Diagram control | Syncfusion
-description: Learn here all about Page Settings support in Syncfusion UWP Diagram (SfDiagram) control and more.
+title: Page Settings in UWP Diagram control | Syncfusion®
+description: Learn here all about Page Settings support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
