@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in UWP Controls | Syncfusion&reg;
-description: Learn about localization support in Syncfusio&reg;n UWP UI controls using .resw files and explains editing default strings of UWP controls.
+title: Localization in UWP Controls | Syncfusion
+description: Learn about localization support in Syncfusion UWP UI controls using .resw files and explains editing default strings of UWP controls.
 platform: uwp
 Control: Localization
 documentation: ug
 ---
 
-# Localization of Syncfusion&reg; UWP controls
+# Localization of Syncfusion UWP controls
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the syncfusion&reg; UWP controls by adding resource file for each language.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the syncfusion UWP controls by adding resource file for each language.
 
 ## Changing application culture
 
@@ -47,7 +47,7 @@ End Class
 
 You can create .resw files for any language by following steps,
 
-N> You can get the default resource files of all Syncfusion&reg; UWP libraries from [GitHub](https://github.com/syncfusion/uwp-controls-localization-resource-files).
+N> You can get the default resource files of all Syncfusion UWP libraries from [GitHub](https://github.com/syncfusion/uwp-controls-localization-resource-files).
 
 1) Right click your project and add new folder named `Resources`.
 
@@ -73,4 +73,4 @@ N> Download demo link from [GitHub](https://github.com/SyncfusionExamples/uwp-da
 
 ## Editing default culture strings
 
-You can change the default string of any control by adding the default .resw files ([from GitHub](https://github.com/syncfusion/uwp-controls-localization-resource-files)) to `Resources` folder of your application. Syncfusion&reg; UWP controls reads the default string from the .resw files of application if its added.
+You can change the default string of any control by adding the default .resw files ([from GitHub](https://github.com/syncfusion/uwp-controls-localization-resource-files)) to `Resources` folder of your application. Syncfusion UWP controls reads the default string from the .resw files of application if its added.

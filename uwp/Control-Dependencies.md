@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Control dependencies | Universal Windows Platform | Syncfusion&reg;
-description: Control and it's Dependency assembly details for Syncfusion&reg; Essential Studio&reg; Universal Windows Platform (UWP) products.
+title: Control dependencies | Universal Windows Platform | Syncfusion
+description: Control and it's Dependency assembly details for Syncfusion Essential Studio Universal Windows Platform (UWP) products.
 platform: uwp
 control: Control Dependencies
 documentation: ug
 ---
 
-# Control Dependencies in the Syncfusion&reg; UWP Controls
+# Control Dependencies in the Syncfusion UWP Controls
 
 This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/uwp/installation/web-installer/how-to-install) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
 
