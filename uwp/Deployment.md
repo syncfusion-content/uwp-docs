@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Assembly installation and deployment | UWP | Syncfusion®
-description: Learn how to install and deploy the Syncfusion® UWP component
+title: Assembly installation and deployment | UWP | Syncfusion&reg;
+description: Learn how to install and deploy the Syncfusion&reg; UWP component
 platform: uwp
 control: Installation and Deployment
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Copy Local
 
-Copying assemblies to local folder is supported by Syncfusion® components. It can be achieved by setting the assembly’s Copy Local property to true, so that it can be copied to Bin\Release, Bin\Debug folders. The files .exe, .dll, .xml, .pri, rd.xml, .xaml  are copied to client machines.
+Copying assemblies to local folder is supported by Syncfusion&reg; components. It can be achieved by setting the assembly’s Copy Local property to true, so that it can be copied to Bin\Release, Bin\Debug folders. The files .exe, .dll, .xml, .pri, rd.xml, .xaml  are copied to client machines.
 
 ![UWP assembly Installation and deployment](Installation-and-Deployment_images/Installation-and-Deployment_img5.jpeg)
 
