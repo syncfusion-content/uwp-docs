@@ -10,7 +10,7 @@ documentation: ug
 
 ## Version Compatibility
 
-This table represents the Syncfusion Essential Studio UWP controls supported .NET Framework versions:
+This table represents the Syncfusion&reg; Essential Studio&reg; UWP controls supported .NET Framework versions:
 
 <table>
 <tr>
@@ -25,7 +25,7 @@ Yes</td></tr>
 
 ## Control compatibility
 
-Syncfusion UWP controls are always updated with the Microsoft latest Framework. The following table contains information about the control’s compatibility with the versions of .NET Framework:
+Syncfusion&reg; UWP controls are always updated with the Microsoft latest Framework. The following table contains information about the control’s compatibility with the versions of .NET Framework:
 
 <table>
 <tr>
