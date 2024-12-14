@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guidance to run the samples | Syncfusion&reg;
-description: Learn how to run the samples of Syncfusion&reg; Essential Studio&reg; UWP products
+description: Learn how to run the samples of Syncfusion&reg; Essential Studio&reg; Universal Windows Platform (UWP) products.
 platform: uwp
 control: Featured Samples
 documentation: ug
