@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assembly installation and deployment | UWP | Syncfusion
-description: Learn how to install and deploy the Syncfusion UWP component
+description: Learn how to install and deploy Syncfusion UWP component
 platform: uwp
 control: Installation and Deployment
 documentation: ug
