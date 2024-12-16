@@ -543,7 +543,8 @@ private async void OnSaveCommand(Object obj)
 
 Add new Commands to CommandManager - Ctrl + S -> Save
             
-{% highlight C# %}			
+{% highlight C# %}
+
 sfdiagram.CommandManager.Commands.Add
 (
 	new GestureCommand()
