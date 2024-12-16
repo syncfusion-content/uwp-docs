@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commands in UWP Diagram control | Syncfusion
-description: Learn here all about Commands support in Syncfusion UWP Diagram (SfDiagram) control and more.
+description: Learn here all about Commands support and its usage in Syncfusion UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
