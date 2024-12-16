@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stencil in UWP Diagram control | Syncfusion
-description: Learn here all about Stencil support in Syncfusion UWP Diagram (SfDiagram) control and more.
+title: Stencil in UWP Diagram control | Syncfusion®
+description: Learn here all about Stencil support in the Syncfusion® UWP Diagram (SfDiagram) control and much more.    
 platform: uwp
 control: SfDiagram
 documentation: ug

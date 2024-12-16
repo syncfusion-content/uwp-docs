@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Diagram control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Diagram (SfDiagram) control, its elements and more.
+title: Getting Started with UWP Diagram control | Syncfusion®
+description: Learn here about getting started with the Syncfusion® UWP Diagram (SfDiagram) control, its elements and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
@@ -31,7 +31,7 @@ In order to add control manually in XAML, do the below steps:
 2. Import SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
 3. Declare SfDiagram control in XAML page.
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your UWP application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your UWP application to use our components.
     
 {% tabs %}
 {% highlight xaml %}
@@ -169,7 +169,8 @@ Creating NodeViewModel with Specified Height and Width.
  Please refer to [Shapes](https://help.syncfusion.com/uwp/diagram/shapes) to know about built-in Shapes.
   
 {% tabs %}
-{% highlight xaml %}  
+{% highlight xaml %}
+
 <ResourceDictionary>
     <ResourceDictionary.MergedDictionaries>
         <!--Initialize Shapes-->
@@ -184,9 +185,10 @@ Creating NodeViewModel with Specified Height and Width.
 </ResourceDictionary>
 
 <syncfusion:NodeViewModel ID="Begin" OffsetX="300" OffsetY="60" Shape="{StaticResource Ellipse}" ShapeStyle="{StaticResource ShapeStyle}" UnitHeight="40" UnitWidth="120"/>
-  {% endhighlight %}
 
-{% highlight c# %} 
+{% endhighlight %}
+{% highlight c# %}
+
             NodeViewModel Begin = new NodeViewModel()
             {
                 ID = "Begin",
@@ -199,6 +201,7 @@ Creating NodeViewModel with Specified Height and Width.
                 //Apply style to Shape
                 ShapeStyle = this.Resources["ShapeStyle"] as Style,
             };
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -212,11 +215,15 @@ N> ID sets for each node to identify nodes easily while setting connectors.
    
  To initialize the Annotation property of the Node and Connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
  
- {% highlight xaml %}
+{% tabs %}
+{% highlight xaml %}
+
   <!--To apply Style for AnnotationEditorViewModel-->
  <Style TargetType="syncfusion:AnnotationEditor">
  </Style>
- {% endhighlight %} 
+ 
+{% endhighlight %}
+{% endtabs %}
     
 N> `Annotations` property is a collection, which indicates that more than one Annotation can be added to a Node and Connector.
     By default, `Annotations` property of Node and Connector is null.
