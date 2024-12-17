@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector in UWP Diagram control | Syncfusion
-description: Learn here all about Connector support in Syncfusion UWP Diagram (SfDiagram) control, its elements, and more.
+title: Connector in UWP Diagram control | Syncfusion®
+description: Learn here all about Connector support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
@@ -257,7 +257,7 @@ The `SourceDecoratorPivot` and `TargetDecoratorPivot` properties allows to Custo
  `SegmentDecorator` property allows to customize the shape within the Connector. `SegmentDecoratorStyle` property allows to customize the Style of SegmentDecorator.
  
  {% tabs %}
- {% highlight c# %}
+{% highlight C# %}
  
  //Define the collection of SegmentDecorator
 SegmentDecorators = new ObservableCollection<ISegmentDecorator>()

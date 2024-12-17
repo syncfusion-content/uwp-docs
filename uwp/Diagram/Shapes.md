@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in UWP Diagram control | Syncfusion
-description: Learn here all about Shapes feature in Syncfusion Universal Windows Platform (UWP) Diagram (SfDiagram) control and more.
+title: Shapes in UWP Diagram control | Syncfusion®
+description: Learn here all about Shapes feature in Syncfusion® Universal Windows Platform (UWP) Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commands in UWP Diagram control | Syncfusion
-description: Learn here all about Commands support in Syncfusion UWP Diagram (SfDiagram) control and more.
+title: Commands in UWP Diagram control | Syncfusion®
+description: Learn here all about different types of commands supported in the Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
 control: SfDiagram
 documentation: ug
@@ -543,7 +543,8 @@ private async void OnSaveCommand(Object obj)
 
 Add new Commands to CommandManager - Ctrl + S -> Save
             
-{% highlight C# %}			
+{% highlight C# %}
+
 sfdiagram.CommandManager.Commands.Add
 (
 	new GestureCommand()
