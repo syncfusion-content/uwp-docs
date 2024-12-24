@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark in UWP Charts control | Syncfusion
-description: Learn here all about Watermark support in Syncfusion UWP Charts (SfChart) control and more.
+title: Watermark in UWP Charts control | Syncfusion®
+description: Learn here all about Watermark support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug

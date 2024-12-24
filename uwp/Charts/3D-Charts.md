@@ -1,7 +1,7 @@
 ---
 layout: post 
-title: 3D Charts in UWP Charts control | Syncfusion
-description: Learn here about how to add proper 3D Charts support that can be rotated in Syncfusion UWP Charts(SfChart) control and more.
+title: 3D Charts in UWP Charts control | Syncfusion®
+description: Learn here about how to add proper 3D Charts support that can be rotated in Syncfusion® UWP Charts(SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug

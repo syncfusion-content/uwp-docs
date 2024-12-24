@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting in UWP Charts control | Syncfusion
-description: Learn here all about Exporting support in Syncfusion UWP Charts (SfChart) control and more.
+title: Exporting in UWP Charts control | Syncfusion®
+description: Learn here all about Exporting support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug

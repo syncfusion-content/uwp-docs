@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Striplines in UWP Charts control | Syncfusion
-description: Learn here all about Striplines support in Syncfusion UWP Charts (SfChart) control and more.
+title: Striplines in UWP Charts control | Syncfusion®
+description: Learn here all about Striplines support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug

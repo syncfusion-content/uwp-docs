@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Series in UWP Charts control | Syncfusion
-description: Learn here all about Series feature of Syncfusion Universal Windows Platform (UWP) Charts (SfChart) control and more.
+title: Series in UWP Charts control | Syncfusion®
+description: Learn here all about Series feature of Syncfusion® Universal Windows Platform (UWP) Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug

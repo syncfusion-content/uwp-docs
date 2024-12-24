@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vertical Charts in UWP Charts control | Syncfusion
-description: Learn here all about Vertical Charts support in Syncfusion UWP Charts (SfChart) control and more.
+title: Vertical Charts in UWP Charts control | Syncfusion®
+description: Learn here all about Vertical Charts support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
