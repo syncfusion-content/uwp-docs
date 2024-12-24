@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip Support in UWP Range Selector control | Syncfusion
-description: Learn here all about ToolTip Support support in Syncfusion UWP Range Selector (SfDateTimeRangeNavigator) control and more.
+title: ToolTip Support in UWP Range Selector control | Syncfusion®
+description: Learn here all about ToolTip Support support in Syncfusion® UWP Range Selector (SfDateTimeRangeNavigator) control and more.
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
