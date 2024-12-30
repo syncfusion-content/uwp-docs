@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transform axis value to pixel value and vice versa | SfChart | Winrt | Syncfusion
+title: Transform axis value to pixel value and vice versa | SfChart | Winrt | Syncfusion®
 description: transform axis value to pixel value and vice versa
 platform: wpf
 control: SfChart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add range of points dynamically | SfChart | Winrt | Syncfusion
+title: Add range of points dynamically | SfChart | Winrt | Syncfusion®
 description: add range of points dynamically
 platform: UWP
 control: SfChart
