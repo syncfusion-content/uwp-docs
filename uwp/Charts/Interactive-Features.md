@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features in UWP Charts control | Syncfusion
-description: Learn here all about Interactive Features support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn here all about Interactive Features support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
@@ -450,8 +450,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Margin for tooltip in UWP Chart](interactive-features_images/uwp-charts-interactive-features-tooltip-margin.png)
-
+![Margin for tooltip in UWP Chart](interactive-features_images/uwp-charts-interactive-features-tooltip-margin1.png)
 
 N>By default the [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) of the Tooltip is Top
 
@@ -854,8 +853,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 The default appearance of the trackball in primary axis (CategoryAxis).
 
-![TrackBall support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-support.jpeg)
-
+![TrackBall support in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-support.png)
 
 The Trackball is composed of the following parts.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Charts control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Charts (SfChart) control, its elements and more.
+description: Learn here all about introduction of Syncfusion® UWP Charts (SfChart) control, its elements and more.
 platform: uwp
 control: SfChart
 documentation: ug

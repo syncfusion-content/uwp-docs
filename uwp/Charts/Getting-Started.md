@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Charts control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Charts (SfChart) control, its elements and more.
+description: Learn here about getting started with Syncfusion® UWP Charts (SfChart) control, its elements and more.
 platform: uwp
 control: SfChart
 documentation: ug
@@ -13,7 +13,7 @@ This section explains you the steps required to populate the Chart with data, he
 
 ## Adding Chart Reference
 
-Refer this [article](https://help.syncfusion.com/uwp/add-syncfusion-controls) to know how to add Syncfusion controls in Visual Studio projects through various way. You can also refer [this](https://help.syncfusion.com/uwp/control-dependencies) link to know about the assemblies required for adding Chart to your project. 
+Refer this [article](https://help.syncfusion.com/uwp/add-syncfusion-controls) to know how to add Syncfusion® controls in Visual Studio projects through various way. You can also refer [this](https://help.syncfusion.com/uwp/control-dependencies) link to know about the assemblies required for adding Chart to your project. 
  
 ## Initialize Chart
 
@@ -310,7 +310,7 @@ chart.Series.Add(series)
 
 {% endtabs %} 
 
-N> Syncfusion Chart also supports rendering combination of multiple series. Refer [`this`](https://help.syncfusion.com/uwp/charts/area#multiple-area) for details.
+N> Syncfusion® Chart also supports rendering combination of multiple series. Refer [`this`](https://help.syncfusion.com/uwp/charts/area#multiple-area) for details.
 
 ## Add Title
 

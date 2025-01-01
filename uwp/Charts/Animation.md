@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation in UWP Charts control | Syncfusion
-description: Learn here all about Animation support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn everything about Animation support in Syncfusion® UWP Charts (SfChart) control and explore additional features.
 platform: uwp
 control: SfChart
 documentation: ug
