@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactivity in UWP Range Selector control | Syncfusion®
+title: Interactivity in UWP Range Selector control | Syncfusion
 description: Learn here all about Interactivity support in Syncfusion® UWP Range Selector (SfDateTimeRangeNavigator) control and more.
 platform: uwp
 control: SfDateTimeRangeNavigator

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations in UWP Charts control | Syncfusion®
+title: Annotations in UWP Charts control | Syncfusion
 description: Learn here about how to add proper Annotations support in the chart area of Syncfusion® UWP Charts(SfChart) control and more.
 platform: uwp
 control: SfChart

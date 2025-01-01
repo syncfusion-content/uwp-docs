@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Performance in UWP Charts control | Syncfusion®
+title: Performance in UWP Charts control | Syncfusion
 description: Learn everything about Performance support in Syncfusion® UWP Charts (SfChart) control and explore additional features.
 platform: uwp
 control: SfChart

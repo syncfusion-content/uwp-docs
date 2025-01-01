@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print the SfChart | SfChart | Winrt | Syncfusion®
+title: Print the SfChart | SfChart | Winrt | Syncfusion
 description: print the sfchart
 platform: wpf
 control: SfChart

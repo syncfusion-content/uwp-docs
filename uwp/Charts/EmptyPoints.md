@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EmptyPoints in UWP Charts control | Syncfusion®
+title: EmptyPoints in UWP Charts control | Syncfusion
 description: Learn here about how to add proper EmptyPoints support were data point has NaN or null values in Syncfusion® UWP Charts(SfChart).
 platform: uwp
 control: SfChart

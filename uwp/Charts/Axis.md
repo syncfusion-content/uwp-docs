@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis in UWP Charts control | Syncfusion®
+title: Axis in UWP Charts control | Syncfusion
 description: Learn here all about Axis support in Syncfusion® Universal Windows Platform (UWP) Charts (SfChart) control and more.
 platform: uwp
 control: SfChart

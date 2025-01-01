@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling and Customization in UWP Charts control | Syncfusion®
+title: Styling and Customization in UWP Charts control | Syncfusion
 description: Learn here all about Styling and Customization support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart

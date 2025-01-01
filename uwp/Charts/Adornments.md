@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adornments in UWP Charts control | Syncfusion®
+title: Adornments in UWP Charts control | Syncfusion
 description: Learn here all about Adornments support in Syncfusion® UWP Charts (SfChart) control, its elements, features, and more.
 platform: uwp
 control: SfChart

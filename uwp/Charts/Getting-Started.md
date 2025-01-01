@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with UWP Charts control | Syncfusion®
+title: Getting Started with UWP Charts control | Syncfusion
 description: Learn here about getting started with Syncfusion® UWP Charts (SfChart) control, its elements and more.
 platform: uwp
 control: SfChart

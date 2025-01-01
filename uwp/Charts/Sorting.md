@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in UWP Charts control | Syncfusion®
+title: Sorting in UWP Charts control | Syncfusion
 description: Learn here about how to add proper Sorting data points support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
