@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Pivot Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
+description: Learn here all about getting started with Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with UWP Pivot Chart (SfPivotChart)
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
+Starting with v16.2.0.x, if you refer to Syncfusion® assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion® license key in your UWP application to use the components.
 
 This section explains the information required to create a simple SfPivotChart control bound to the OLAP data source and a WCF service that helps to bind the OLAP data with the SfPivotChart control through the OlapDataManager.
 
@@ -32,7 +32,7 @@ The SfPivotChart control can be initialized and added to the application through
 
 Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-Click the toolbox and drag the **SfPivotChart** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
+Click the toolbox and drag the **SfPivotChart** control from the “Syncfusion® Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
 Now, the SfPivotChart control is added to the designer as follows.
 
@@ -58,7 +58,7 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
+Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion® Controls for UWP XAML**.
 
 After adding the required reference, add the following namespace in the *MainPage.xaml* file.
 
@@ -117,7 +117,7 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
+Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion® Controls for UWP XAML**.
 
 After adding the required reference, open the *MainPage.xaml* file and name the grid as "RootGrid" to refer it in the code-behind.
 
