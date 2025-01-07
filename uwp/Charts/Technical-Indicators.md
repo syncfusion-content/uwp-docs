@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Technical Indicators in UWP Charts control | Syncfusion
-description: Learn here all about Technical Indicators support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn here all about Technical Indicators support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug

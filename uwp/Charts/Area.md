@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Area in UWP Charts control | Syncfusion
-description: Learn here all about Area support in Syncfusion Universal Windows Platform (UWP) Charts (SfChart) control and more.
+description: Learn here all about Area support in Syncfusion® Universal Windows Platform (UWP) Charts (SfChart) control and more.
 platform: uwp
 control: SfChart
 documentation: ug
