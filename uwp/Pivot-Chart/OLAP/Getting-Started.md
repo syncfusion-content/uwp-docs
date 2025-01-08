@@ -32,7 +32,7 @@ The SfPivotChart control can be initialized and added to the application through
 
 Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-Click the toolbox and drag the **SfPivotChart** control from the “Syncfusion® Controls for UWP XAML” group to drop it on the middle of the design canvas.
+Click the toolbox and drag the **SfPivotChart** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
 Now, the SfPivotChart control is added to the designer as follows.
 
@@ -58,7 +58,7 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion® Controls for UWP XAML**.
+Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
 After adding the required reference, add the following namespace in the *MainPage.xaml* file.
 
