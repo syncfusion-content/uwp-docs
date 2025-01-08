@@ -117,7 +117,7 @@ N> You can find these libraries under the following location.
 
 **Extension SDK reference**
 
-Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion® Controls for UWP XAML**.
+Right-click the project in the solution explorer and select **Add > Reference... > Universal Windows > Extensions > Syncfusion Controls for UWP XAML**.
 
 After adding the required reference, open the *MainPage.xaml* file and name the grid as "RootGrid" to refer it in the code-behind.
 
