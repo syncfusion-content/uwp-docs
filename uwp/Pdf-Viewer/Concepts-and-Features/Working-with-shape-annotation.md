@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with shape annotations in UWP Pdf Viewer | Syncfusion
-description: Learn here all about Working with shape annotations support in Syncfusion UWP Pdf Viewer (SfPdfViewer) control, its elements, and more.
+description: Learn here all about Working with shape annotations support in Syncfusion<sup>®</sup> UWP Pdf Viewer (SfPdfViewer) control, its elements, and more.
 platform: uwp
 control: PDF viewer
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Acquire number of pages in the document being displayed | Syncfusion
-description: The Syncfusion Essential UWP PDF viewer provides option to acquire number of pages in the document being displayed.
+description: The Syncfusion Essential<sup>®</sup> UWP PDF viewer provides option to acquire number of pages in the document being displayed.
 platform: uwp
 control: PDF viewer
 documentation: ug
