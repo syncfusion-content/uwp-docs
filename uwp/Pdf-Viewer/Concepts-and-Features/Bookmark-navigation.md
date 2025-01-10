@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Bookmark navigation in UWP PDF Viewer control | Syncfusion
-description: Learn here all about Bookmark navigation support in Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
-platform: UWP
+description: Learn here all about Bookmark navigation support in Syncfusion<sup>®</sup> UWP PDF Viewer (SfPdfViewer) control and more.
+platform: uwp
 control: SfPdfViewerControl
 documentation: ug
 ---

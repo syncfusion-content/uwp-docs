@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming and Panning in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Zooming and Panning support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
+description: Learn here all about Zooming and Panning support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug

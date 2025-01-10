@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Hyperlink in UWP PDF Viewer control | Syncfusion
-description: Learn here all about the Hyperlink support in the Syncfusion UWP PDF Viewer (SfPdfViewer) control and more.
-platform: UWP
+description: Learn here all about the Hyperlink support in the Syncfusion<sup>®</sup> UWP PDF Viewer (SfPdfViewer) control and more.
+platform: uwp
 control: SfPdfViewerControl
 documentation: ug
 ---

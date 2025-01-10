@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About UWP Pdf Viewer control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Pdf Viewer (SfPdfViewer) control, its elements and more.
+description: Learn here all about introduction of Syncfusion<sup>®</sup> UWP Pdf Viewer (SfPdfViewer) control, its elements and more.
 platform: uwp
 control: PDF viewer
 documentation: ug
