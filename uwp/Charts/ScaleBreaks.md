@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scale Breaks in UWP Charts control | Syncfusion
-description: Learn here about how to add proper charts area Scale Breaks support in Syncfusion UWP Charts (SfChart) control and more.
+description: Learn here about how to add proper charts area Scale Breaks support in Syncfusion® UWP Charts (SfChart) control and more.
 platform: wpf
 control: SfChart
 documentation: ug

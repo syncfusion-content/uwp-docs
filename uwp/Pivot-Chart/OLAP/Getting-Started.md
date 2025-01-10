@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Pivot Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
+description: Learn here all about getting started with Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 # Getting Started with UWP Pivot Chart (SfPivotChart)
 
 >**Important**
-Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
+Starting with v16.2.0.x, if you refer to Syncfusion® assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion® license key in your UWP application to use the components.
 
 This section explains the information required to create a simple SfPivotChart control bound to the OLAP data source and a WCF service that helps to bind the OLAP data with the SfPivotChart control through the OlapDataManager.
 
