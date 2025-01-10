@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Adornments in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Adornments support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+description: Learn here all about Adornments support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---

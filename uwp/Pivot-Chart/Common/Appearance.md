@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion UWP Pivot Chart (SfPivotChart) control and more.
+description: Learn here all about Appearance support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
 platform: UWP
 control: SfPivotChart
 documentation: ug
