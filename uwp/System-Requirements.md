@@ -9,7 +9,7 @@ documentation: ug
 
 # System Requirements for UWP Components
 
-This section describes the system requirements of Syncfusion UWP Controls for development.
+This section describes the system requirements of Syncfusion<sup>&reg;</sup> UWP Controls for development.
 
 ## Framework
 

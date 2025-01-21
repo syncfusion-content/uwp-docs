@@ -7,9 +7,9 @@ control: Add Syncfusion Controls
 documentation: ug
 ---
 
-# Add Syncfusion UWP Controls
+# Add Syncfusion<sup>&reg;</sup> UWP Controls
 
-The Syncfusion UWP controls can be added in a Visual Studio projects by using either of the following ways,
+The Syncfusion<sup>&reg;</sup> UWP controls can be added in a Visual Studio projects by using either of the following ways,
 
 * Through Designer
 * Through Code-Behind
@@ -19,7 +19,7 @@ The Syncfusion UWP controls can be added in a Visual Studio projects by using ei
 ## Through Designer
 
 
-Syncfusion UI for UWP are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential UWP control through drag and drop from Toolbox. For example: SfTextBoxExt 
+Syncfusion<sup>&reg;</sup> UI for UWP are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential<sup>&reg;</sup> UWP control through drag and drop from Toolbox. For example: SfTextBoxExt 
 
 1. Create a Universal Windows Platform project in Visual Studio.
 
@@ -77,7 +77,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 ## Through Code-Behind
 
-Syncfusion UI for UWP can added at runtime using C# / VB. The following steps helps to add required Essential UWP control through code. For example: SfTextBoxExt.
+Syncfusion<sup>&reg;</sup> UI for UWP can added at runtime using C# / VB. The following steps helps to add required Essential<sup>&reg;</sup> UWP control through code. For example: SfTextBoxExt.
 
 1.Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -146,25 +146,25 @@ Me.Content = textBoxExt1
 
 {% endtabs %}
 
-N> Syncfusion controls for UWP package can be added (available under Universal Windows Platform => Extensions tab in Add reference dialog) in the cases of using most of the controls from Syncfusion toolkit.
+N> Syncfusion<sup>&reg;</sup> controls for UWP package can be added (available under Universal Windows Platform => Extensions tab in Add reference dialog) in the cases of using most of the controls from Syncfusion<sup>&reg;</sup> toolkit.
 
 ## Through Project Templates
 
-Syncfusion provides the **Visual** **Studio** **Project** **Templates** for the Syncfusion UWP platform to create Syncfusion UWP Applications.  
+Syncfusion<sup>&reg;</sup> provides the **Visual** **Studio** **Project** **Templates** for the Syncfusion<sup>&reg;</sup> UWP platform to create Syncfusion<sup>&reg;</sup> UWP Applications.  
 
-I> The Syncfusion UWP project templates are available from Essential Studio v15.3.0.26.  
+I> The Syncfusion<sup>&reg;</sup> UWP project templates are available from Essential Studio<sup>&reg;</sup> v15.3.0.26.  
 
-### Create Syncfusion UWP Application
+### Create Syncfusion<sup>&reg;</sup> UWP Application
 
 The following steps direct you to create the **Syncfusion** **UWP** **Application** through the **Visual** **Studio** **Project** **Template**.
 
-1. To create a Syncfusion UWP project, choose **New** **Project****->** **Syncfusion****->****Universal** **Windows****->****Syncfusion** **Universal** **Windows** **Application** from **Visual** **Studio**.
+1. To create a Syncfusion<sup>&reg;</sup> UWP project, choose **New** **Project****->** **Syncfusion****->****Universal** **Windows****->****Syncfusion** **Universal** **Windows** **Application** from **Visual** **Studio**.
 
    ![Create Syncfusion UWP project](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img1.jpeg)
 
 2. Name the **Project** and choose the destination location if required, then click **OK**. 
 
-3. Then Project Configuration Wizard appears. Choose the options to configure the Syncfusion UWP Application by using the following Project Configuration dialog.
+3. Then Project Configuration Wizard appears. Choose the options to configure the Syncfusion<sup>&reg;</sup> UWP Application by using the following Project Configuration dialog.
 
    #### Project configurations:
 
@@ -178,36 +178,36 @@ The following steps direct you to create the **Syncfusion** **UWP** **Applicatio
 
    **Template Type:** Select the template type of UWP Project, either Blank or Hamburger Menu or Hamburger Menu (MVVM).
 
-   **Components:** Choose the required Syncfusion components to configure.
+   **Components:** Choose the required Syncfusion<sup>&reg;</sup> components to configure.
    
    ![Configure Syncfusion UWP project](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img4.jpeg)
    
-   N> If SDK is chosen as the reference type, then all the Syncfusion UWP controls will be added. So, you no need to select any components.
+   N> If SDK is chosen as the reference type, then all the Syncfusion<sup>&reg;</sup> UWP controls will be added. So, you no need to select any components.
    
-4. Once you click Create button, the Syncfusion UWP Application is created.
+4. Once you click Create button, the Syncfusion<sup>&reg;</sup> UWP Application is created.
 
-5. Once the Project Configuration Wizard is done, the Syncfusion UWP Application is created with required SDK/references and pages.
+5. Once the Project Configuration Wizard is done, the Syncfusion<sup>&reg;</sup> UWP Application is created with required SDK/references and pages.
 
    ![UWP Application Created with required SDK and References](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img5.jpeg)
 
-6. Then, Syncfusion licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
+6. Then, Syncfusion<sup>&reg;</sup> licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion<sup>&reg;</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>&reg;</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>&reg;</sup> license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>&reg;</sup>.
 
    ![Syncfusion Licensing Message Box](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img6.jpeg)
 
 
 ## Through NuGet Packages
 
-Syncfusion UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion NuGet package installation. Please refer below topic to configure and install the Syncfusion UWP NuGet packages in UWP application from Visual Studio.
+Syncfusion<sup>&reg;</sup> UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion<sup>&reg;</sup> NuGet package installation. Please refer below topic to configure and install the Syncfusion<sup>&reg;</sup> UWP NuGet packages in UWP application from Visual Studio.
 
 [Configuring Syncfusion NuGet packages in Visual Studio](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages)
 
-After Installed required Syncfusion UWP NuGet packages in your application, we can utilize the Syncfusion UWP controls by following ways. 
+After Installed required Syncfusion<sup>&reg;</sup> UWP NuGet packages in your application, we can utilize the Syncfusion<sup>&reg;</sup> UWP controls by following ways. 
 
 * Through Designer
 * Through XMAL
 * Through Code-Behind
 
-1.Syncfusion UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion NuGet package installation. We can add required Syncfusion UWP control through drag and drop from ToolBox. Toolbox configured from Syncfusion UWP NuGet package, controls will be listed under “Syncfusion controls for UWP” category. For example: SfColorPicker
+1.Syncfusion<sup>&reg;</sup> UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion<sup>&reg;</sup> NuGet package installation. We can add required Syncfusion<sup>&reg;</sup> UWP control through drag and drop from ToolBox. Toolbox configured from Syncfusion<sup>&reg;</sup> UWP NuGet package, controls will be listed under “Syncfusion<sup>&reg;</sup> controls for UWP” category. For example: SfColorPicker
 
    ![Add Colorpicker from ToolBox](Add-Syncfusion-Controls_images/Toolbox_ColoPicker1.png)
     
@@ -216,7 +216,7 @@ After Installed required Syncfusion UWP NuGet packages in your application, we c
    N> Toolbox configuration by installing UWP NuGet packages support available from v15.4.0.17.
 
 
-2.The following steps helps to add a required Essential UWP control through XAML code, for example: SfColorPicker
+2.The following steps helps to add a required Essential<sup>&reg;</sup> UWP control through XAML code, for example: SfColorPicker
 
 a. Include the namespace for Syncfusion.SfColorPickers.UWP assembly from Syncfusion.SfColorPickers.UWP NuGet package in MainPage.xaml.
 
@@ -247,7 +247,7 @@ b. Now add the `SfColorPicker` control with a required optimal name using the in
         {% endtabs %}
 
 
-3.The following steps helps to add a required Essential UWP control through code, for example: SfColorPicker
+3.The following steps helps to add a required Essential<sup>&reg;</sup> UWP control through code, for example: SfColorPicker
         
 a. Include the namespace for Syncfusion. SfColorPickers.UWP assembly in MainPage.xaml.cs
 
