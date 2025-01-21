@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Guidance to run the samples | Syncfusion&reg;
-description: Learn how to run the samples of Syncfusion&reg; Essential Studio&reg; Universal Windows Platform (UWP) products.
+title: Guidance to run the samples | Syncfusion
+description: Learn how to run the samples of Syncfusion Essential Studio Universal Windows Platform (UWP) products.
 platform: uwp
 control: Featured Samples
 documentation: ug
@@ -27,5 +27,5 @@ Sample Browser is available under following folder location:
 
 “[Installed Drive]:\Users\Public\Documents\Syncfusion\Universal Windows\{{ site.releaseversion }}\SampleBrowser”
 
-N> In above section, Latest Essential Studio&reg; version details has been provided. User can refer installed Essential Studio&reg; version instead of mentioned version.
+N> In above section, Latest Essential Studio<sup>&reg;</sup> version details has been provided. User can refer installed Essential Studio<sup>&reg;</sup> version instead of mentioned version.
 
