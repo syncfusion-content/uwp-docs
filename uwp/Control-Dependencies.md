@@ -13,7 +13,7 @@ This section lists needed assembly or NuGet references to use any control in the
 
 You can refer to the [syncfusion controls section](https://help.syncfusion.com/uwp/add-syncfusion-controls) to learn how to add syncfusion control.
 
-N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion UWP controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
+N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion<sup>&reg;</sup> UWP controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
 
 ## Calculate
 
