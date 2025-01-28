@@ -35,7 +35,7 @@ Syncfusion<sup>&reg;</sup> UI for UWP are added automatically to the Visual Stud
 
 ## Through XAML
 
-The following steps helps to add a required Essential UWP control through XAML Code, for example: SfTextBoxExt.
+The following steps helps to add a required Essential<sup>&reg;</sup> UWP control through XAML Code, for example: SfTextBoxExt.
 
 1.Create a Universal Windows Platform project in Visual Studio and refer the following assemblies.
 
