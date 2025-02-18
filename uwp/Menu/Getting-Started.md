@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Menu control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio UWP Menu (SfMenu) control, its elements and more.
+title: Getting Started with UWP Menu control | Syncfusion®
+description: Learn here about getting started with Syncfusion® Essential Studio® UWP Menu (SfMenu) control, its elements and more.
 platform: UWP
 control: SfMenu
 documentation: ug

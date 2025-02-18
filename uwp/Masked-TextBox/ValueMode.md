@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value Mode in UWP Masked TextBox control | Syncfusion
-description: Learn here all about Value Mode support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
+title: Value Mode in UWP Masked TextBox control | Syncfusion®
+description: Learn here all about Value Mode support in Syncfusion® UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug 

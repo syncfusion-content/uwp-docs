@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearence and Styling in UWP Calculator control | Syncfusion
-description: Learn here all about Appearence and Styling in Syncfusion UWP Calculator (SfCalculator) control, its elements and more.
+title: Appearence and Styling in UWP Calculator control | Syncfusion®
+description: Learn here all about Appearence and Styling in Syncfusion® UWP Calculator (SfCalculator) control, its elements and more.
 platform: UWP
 control: SfCalculator
 documentation: ug

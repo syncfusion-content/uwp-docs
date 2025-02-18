@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Value in UWP Progress Bar control | Syncfusion
-description: Learn here all about Dealing with Value support in Syncfusion UWP Progress Bar (SfProgressBar) control and more.
+title: Dealing with Value in UWP Progress Bar control | Syncfusion®
+description: Learn here all about Dealing with Value support in Syncfusion® UWP Progress Bar (SfProgressBar) control and more.
 platform: UWP
 control: SfProgressBar
 documentation: ug

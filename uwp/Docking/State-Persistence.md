@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence in UWP Docking control | Syncfusion
-description: Learn here all about State Persistence support in Syncfusion UWP Docking (SfDockingManager) control and more.
+title: State Persistence in UWP Docking control | Syncfusion®
+description: Learn here all about State Persistence support in Syncfusion® UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug
