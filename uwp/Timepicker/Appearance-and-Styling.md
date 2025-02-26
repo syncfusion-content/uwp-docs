@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in UWP TimePicker control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
+title: Appearance and Styling in UWP TimePicker control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug

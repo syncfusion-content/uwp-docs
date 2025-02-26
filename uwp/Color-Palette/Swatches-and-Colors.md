@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation in UWP Color Palette control | Syncfusion
-description: Learn here all about Navigation support in Syncfusion UWP Color Palette (SfColorPalette) control and more.
+title: Navigation in UWP Color Palette control | Syncfusion®
+description: Learn here all about Navigation support in Syncfusion® UWP Color Palette (SfColorPalette) control and more.
 platform: uwp
 control: SfColorPalette
 documentation: ug

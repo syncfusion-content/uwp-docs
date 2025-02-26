@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in UWP Tab Control control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP Tab Control (SfTabControl) control and more.
+title: Appearance and Styling in UWP Tab Control control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® UWP Tab Control (SfTabControl) control and more.
 platform: UWP
 control: SfTabControl
 documentation: ug

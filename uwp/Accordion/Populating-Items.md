@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Items in UWP Accordion control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion UWP Accordion (SfAccordion) control and more.
+title: Populating Items in UWP Accordion control | Syncfusion®
+description: Learn here all about Populating Items support in Syncfusion® UWP Accordion (SfAccordion) control and more.
 platform: uwp
 control: SfAccordion
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Dictionary in UWP Spell Checker control | Syncfusion
-description: Learn here all about Custom Dictionary support in Syncfusion UWP Spell Checker (SfSpellChecker) control and more.
+title: Custom Dictionary in UWP Spell Checker control | Syncfusion®
+description: Learn here all about Custom Dictionary support in Syncfusion® UWP Spell Checker (SfSpellChecker) control and more.
 platform: UWP
 control: SfSpellChecker
 documentation: ug

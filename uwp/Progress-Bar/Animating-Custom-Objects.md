@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animating Custom Objects in UWP Progress Bar control | Syncfusion
-description: Learn here all about Animating Custom Objects support in Syncfusion UWP Progress Bar (SfProgressBar) control and more.
+title: Animating Custom Objects in UWP Progress Bar control | Syncfusion®
+description: Learn here all about Animating Custom Objects support in Syncfusion® UWP Progress Bar (SfProgressBar) control and more.
 platform: UWP
 control: SfProgressBar
 documentation: ug

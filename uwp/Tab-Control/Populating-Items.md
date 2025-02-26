@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Items in UWP Tab Control control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion UWP Tab Control (SfTabControl) control and more.
+title: Populating Items in UWP Tab Control control | Syncfusion®
+description: Learn here all about Populating Items support in Syncfusion® UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug

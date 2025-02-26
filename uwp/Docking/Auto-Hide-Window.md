@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Auto Hide Window in UWP Docking control | Syncfusion
-description: Learn here all about Auto Hide Window support in Syncfusion UWP Docking (SfDockingManager) control and more.
+title: Auto Hide Window in UWP Docking control | Syncfusion®
+description: Learn here all about Auto Hide Window support in Syncfusion® UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug

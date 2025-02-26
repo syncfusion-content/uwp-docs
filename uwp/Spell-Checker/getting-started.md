@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Spell Checker control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Spell Checker (SfSpellChecker) control, its elements and more.
+title: Getting Started with UWP Spell Checker control | Syncfusion®
+description: Learn here about getting started with Syncfusion® UWP Spell Checker (SfSpellChecker) control, its elements and more.
 platform: UWP
 control: SfSpellChecker
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Re-ordering and Orientation in UWP Tile View control | Syncfusion
-description: Learn here all about Re-ordering and Orientation support in Syncfusion UWP Tile View (SfTileView) control and more.
+title: Re-ordering and Orientation in UWP Tile View control | Syncfusion®
+description: Learn here all about Re-ordering and Orientation support in Syncfusion® UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug

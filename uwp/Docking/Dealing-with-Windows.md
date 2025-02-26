@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Windows in UWP Docking control | Syncfusion
-description: Learn here all about Dealing with Windows support in Syncfusion UWP Docking (SfDockingManager) control and more.
+title: Dealing with Windows in UWP Docking control | Syncfusion®
+description: Learn here all about Dealing with Windows support in Syncfusion® UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug

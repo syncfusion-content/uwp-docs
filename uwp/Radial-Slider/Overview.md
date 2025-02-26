@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About UWP Radial Slider control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Radial Slider (SfRadialSlider) control, its elements and more.
+title: About UWP Radial Slider control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® UWP Radial Slider (SfRadialSlider) control, its elements and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug

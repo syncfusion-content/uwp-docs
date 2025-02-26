@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Maximized Item in UWP Tile View control | Syncfusion
-description: Learn here all about Customizing Maximized Item support in Syncfusion UWP Tile View (SfTileView) control and more.
+title: Customizing Maximized Item in UWP Tile View control | Syncfusion®
+description: Learn here all about Customizing Maximized Item support in Syncfusion® UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mask Options in UWP Masked TextBox control | Syncfusion
-description: Learn here all about Mask Options support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
+title: Mask Options in UWP Masked TextBox control | Syncfusion®
+description: Learn here all about Mask Options support in Syncfusion® UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug

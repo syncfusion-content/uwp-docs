@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Spell Check in UWP Spell Checker control | Syncfusion
-description: Learn here all about Spell Check support in Syncfusion UWP Spell Checker (SfSpellChecker) control and more.
+title: Spell Check in UWP Spell Checker control | Syncfusion®
+description: Learn here all about Spell Check support in Syncfusion® UWP Spell Checker (SfSpellChecker) control and more.
 platform: UWP
 control: SfSpellChecker
 documentation: ug

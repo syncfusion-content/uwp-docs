@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PromptChar in Mask in UWP Masked TextBox control | Syncfusion
-description: Learn here all about PromptChar in Mask support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
+title: PromptChar in Mask in UWP Masked TextBox control | Syncfusion®
+description: Learn here all about PromptChar in Mask support in Syncfusion® UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug

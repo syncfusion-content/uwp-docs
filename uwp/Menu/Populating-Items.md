@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Items in UWP Menu control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion UWP Menu (SfMenu) control and more.
+title: Populating Items in UWP Menu control | Syncfusion®
+description: Learn here all about Populating Items support in Syncfusion® UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug

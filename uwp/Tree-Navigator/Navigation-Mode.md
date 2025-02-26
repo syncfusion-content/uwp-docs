@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation Mode in UWP Tree Navigator control | Syncfusion
-description: Learn here all about Navigation Mode support in Syncfusion UWP Tree Navigator (SfTreeNavigator) control and more.
+title: Navigation Mode in UWP Tree Navigator control | Syncfusion®
+description: Learn here all about Navigation Mode support in Syncfusion® UWP Tree Navigator (SfTreeNavigator) control and more.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug

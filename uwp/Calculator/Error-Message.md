@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Error Message in UWP Calculator control | Syncfusion
-description: Learn here all about Error Message support in Syncfusion UWP Calculator (SfCalculator) control and more.
+title: Error Message in UWP Calculator control | Syncfusion®
+description: Learn here all about Error Message support in Syncfusion® UWP Calculator (SfCalculator) control and more.
 platform: uwp
 control: SfCalculator
 documentation: ug

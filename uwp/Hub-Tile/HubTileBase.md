@@ -1,7 +1,7 @@
 ---
 layout: post
-title: HubTileBase in UWP Hub Tile control | Syncfusion
-description: Learn here all about HubTileBase support in Syncfusion UWP Hub Tile (HubTiles) control and more.
+title: HubTileBase in UWP Hub Tile control | Syncfusion®
+description: Learn here all about HubTileBase support in Syncfusion® UWP Hub Tile (HubTiles) control and more.
 platform: uwp
 control: HubTileBase
 documentation: ug

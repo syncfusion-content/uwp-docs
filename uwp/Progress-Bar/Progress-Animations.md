@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Progress Animations in UWP Progress Bar control | Syncfusion
-description: Learn here all about Progress Animations support in Syncfusion UWP Progress Bar (SfProgressBar) control and more.
+title: Progress Animations in UWP Progress Bar control | Syncfusion®
+description: Learn here all about Progress Animations support in Syncfusion® UWP Progress Bar (SfProgressBar) control and more.
 platform: UWP
 control: SfProgressBar
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing GroupBar in UWP Navigation Pane control | Syncfusion
-description: Learn here all about Customizing GroupBar support in Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
+title: Customizing GroupBar in UWP Navigation Pane control | Syncfusion®
+description: Learn here all about Customizing GroupBar support in Syncfusion® UWP Navigation Pane (SfGroupBar) control and more.
 platform: UWP
 control: SfGroupBar
 documentation: ug

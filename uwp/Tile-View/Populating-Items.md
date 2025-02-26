@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Items in UWP Tile View control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion UWP Tile View (SfTileView) control and more.
+title: Populating Items in UWP Tile View control | Syncfusion®
+description: Learn here all about Populating Items support in Syncfusion® UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug

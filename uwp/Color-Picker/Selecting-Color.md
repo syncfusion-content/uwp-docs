@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selecting Color in UWP Color Picker control | Syncfusion
-description: Learn here all about Selecting Color support in Syncfusion UWP Color Picker (SfColorPicker) control and more.
+title: Selecting Color in UWP Color Picker control | Syncfusion®
+description: Learn here all about Selecting Color support in Syncfusion® UWP Color Picker (SfColorPicker) control and more.
 platform: uwp
 control: SfColorPicker
 documentation: ug

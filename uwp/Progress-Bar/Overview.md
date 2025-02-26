@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About UWP Progress Bar control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Progress Bar (SfProgressBar) control, its elements and more.
+title: About UWP Progress Bar control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® UWP Progress Bar (SfProgressBar) control, its elements and more.
 platform: UWP
 control: SfProgressBar
 documentation: ug
