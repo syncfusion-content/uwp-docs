@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About UWP CellGrid control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP CellGrid (SfCellGrid) control, its elements and more.
+title: About UWP CellGrid control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug

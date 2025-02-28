@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in UWP DataGrid control | Syncfusion
+title: Filtering in UWP DataGrid control | Syncfusion®
 description: Learn here all about Filtering support in UWP DataGrid (SfDataGrid) control with programmatic filtering, and more.
 platform: uwp
 control: SfDataGrid

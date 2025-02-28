@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Formatting support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Formatting in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Formatting support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

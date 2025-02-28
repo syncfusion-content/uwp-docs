@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Find and Replace in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Find and Replace support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Find and Replace in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Find and Replace support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

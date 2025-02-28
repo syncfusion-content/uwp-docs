@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Validation in UWP DataGrid control | Syncfusion
-description: Learn here all about Data Validation support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Data Validation in UWP DataGrid control | Syncfusion®
+description: Learn here all about Data Validation support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

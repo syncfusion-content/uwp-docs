@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Types in UWP CellGrid control | Syncfusion
-description: Learn here all about Cell Types support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
+title: Cell Types in UWP CellGrid control | Syncfusion®
+description: Learn here all about Cell Types support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug

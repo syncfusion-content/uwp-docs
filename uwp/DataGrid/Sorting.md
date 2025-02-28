@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in UWP DataGrid control | Syncfusion
-description: Learn here all about Sorting support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Sorting in UWP DataGrid control | Syncfusion®
+description: Learn here all about Sorting support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

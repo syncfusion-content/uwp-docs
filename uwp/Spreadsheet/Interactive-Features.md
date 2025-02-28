@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Interactive Features support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Interactive Features in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Interactive Features support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formulas in UWP CellGrid control | Syncfusion
-description: Learn here all about Formulas support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
+title: Formulas in UWP CellGrid control | Syncfusion®
+description: Learn here all about Formulas support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
 platform: UWP
 control: SfCellGrid
 documentation: ug

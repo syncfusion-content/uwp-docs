@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Unbound Rows in UWP DataGrid control | Syncfusion
-description: Learn here all about Unbound Rows support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Unbound Rows in UWP DataGrid control | Syncfusion®
+description: Learn here all about Unbound Rows support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

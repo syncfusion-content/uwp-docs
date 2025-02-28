@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Virtualization in UWP DataGrid control | Syncfusion
-description: Learn here all about Data Virtualization support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Data Virtualization in UWP DataGrid control | Syncfusion®
+description: Learn here all about Data Virtualization support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

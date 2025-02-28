@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in UWP TreeGrid control | Syncfusion
-description: Learn here all about Editing support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+title: Editing in UWP TreeGrid control | Syncfusion®
+description: Learn here all about Editing support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

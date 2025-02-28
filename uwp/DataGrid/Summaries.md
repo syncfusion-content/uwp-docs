@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summaries in UWP DataGrid control | Syncfusion
-description: Learn here all about Summaries support in Syncfusion UWP DataGrid (SfDataGrid) control, its features and more.
+title: Summaries in UWP DataGrid control | Syncfusion®
+description: Learn here all about Summaries support in Syncfusion® UWP DataGrid (SfDataGrid) control, its features and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

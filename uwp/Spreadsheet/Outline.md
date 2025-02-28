@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Outline in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Outline support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Outline in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Outline support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Printing in UWP DataGrid control | Syncfusion
-description: Learn here all about Printing support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Printing in UWP DataGrid control | Syncfusion®
+description: Learn here all about Printing support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

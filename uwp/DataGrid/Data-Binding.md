@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in UWP DataGrid control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Data Binding in UWP DataGrid control | Syncfusion®
+description: Learn here all about Data Binding support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

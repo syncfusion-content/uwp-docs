@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Helpers in UWP TreeGrid control | Syncfusion
-description: Learn here all about Helpers support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+title: Helpers in UWP TreeGrid control | Syncfusion®
+description: Learn here all about Helpers support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

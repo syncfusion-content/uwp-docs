@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Selection support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Selection in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Selection support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

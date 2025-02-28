@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in UWP DataGrid control | Syncfusion
-description: Learn here all about grouping support in Syncfusion UWP DataGrid (SfDataGrid) control, its elements and more.
+title: Grouping in UWP DataGrid control | Syncfusion®
+description: Learn here all about grouping support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug
