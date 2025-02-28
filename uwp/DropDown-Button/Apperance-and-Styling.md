@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in UWP DropDown Button control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP DropDown Button (SfDropDownButton) control and more.
+title: Appearance and Styling in UWP DropDown Button control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® UWP DropDown Button (SfDropDownButton) control and more.
 platform: uwp
 control:  SfDropDownButton
 documentation: ug

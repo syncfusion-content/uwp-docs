@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Pinnable Tabitems in UWP Tab Control control | Syncfusion
-description: Learn here all about Dealing with Pinnable Tabitems support in Syncfusion UWP Tab Control (SfTabControl) control and more.
+title: Dealing with Pinnable Tabitems in UWP Tab Control control | Syncfusion®
+description: Learn here all about Dealing with Pinnable Tabitems support in Syncfusion® UWP Tab Control (SfTabControl) control and more.
 platform: uwp
 control: SfTabControl
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SelectorItem Customization in UWP DatePicker control | Syncfusion
-description: Learn here all about SelectorItem Customization support in Syncfusion UWP DatePicker (SfDatePicker) control and more.
+title: SelectorItem Customization in UWP DatePicker control | Syncfusion®
+description: Learn here all about SelectorItem Customization support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
 control: SfDatePicker
 documentation: ug

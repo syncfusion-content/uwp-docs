@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in UWP Tree Navigator control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP Tree Navigator (SfTreeNavigator) control and more.
+title: Appearance and Styling in UWP Tree Navigator control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® UWP Tree Navigator (SfTreeNavigator) control and more.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug

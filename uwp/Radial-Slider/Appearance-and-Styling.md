@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in UWP Radial Slider control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
+title: Appearance and Styling in UWP Radial Slider control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug

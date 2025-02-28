@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Memory in UWP Calculator control | Syncfusion
-description: Learn here all about Memory support in Syncfusion UWP Calculator (SfCalculator) control and more.
+title: Memory in UWP Calculator control | Syncfusion®
+description: Discover Memory support in Syncfusion® UWP Calculator (SfCalculator) control, including key features, usage, and more.
 platform: uwp
 control: SfCalculator
 documentation: ug

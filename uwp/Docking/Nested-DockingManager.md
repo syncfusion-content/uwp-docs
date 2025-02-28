@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nested DockingManager in UWP Docking control | Syncfusion
-description: Learn here all about Nested DockingManager support in Syncfusion UWP Docking (SfDockingManager) control and more.
+title: Nested DockingManager in UWP Docking control | Syncfusion®
+description: Learn here all about Nested DockingManager support in Syncfusion® UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug

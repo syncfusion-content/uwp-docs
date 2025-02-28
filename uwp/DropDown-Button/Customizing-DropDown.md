@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing DropDown in UWP DropDown Button control | Syncfusion
-description: Learn here all about Customizing DropDown support in Syncfusion UWP DropDown Button (SfDropDownButton) control and more.
+title: Customizing DropDown in UWP DropDown Button control | Syncfusion®
+description: Learn here all about Customizing DropDown support in Syncfusion® UWP DropDown Button (SfDropDownButton) control and more.
 platform: uwp
 control:  SfDropDownButton
 documentation: ug

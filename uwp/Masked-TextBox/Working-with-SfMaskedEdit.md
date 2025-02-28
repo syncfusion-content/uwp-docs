@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with SfMaskedEdit in UWP Masked TextBox control | Syncfusion
-description: Learn here all about Working with SfMaskedEdit support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
+title: Working with SfMaskedEdit in UWP Masked TextBox control | Syncfusion®
+description: Learn here all about Working with SfMaskedEdit support in Syncfusion® UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug

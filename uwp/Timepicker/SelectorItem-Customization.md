@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SelectorItem Customization in UWP TimePicker control | Syncfusion
-description: Learn here all about SelectorItem Customization support in Syncfusion UWP TimePicker (SfTimePicker) control and more.
+title: SelectorItem Customization in UWP TimePicker control | Syncfusion®
+description: Learn here all about SelectorItem Customization support in Syncfusion® UWP TimePicker (SfTimePicker) control and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug

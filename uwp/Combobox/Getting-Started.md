@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP ComboBox control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP ComboBox (SfComboBox) control, its elements and more.
+title: Getting Started with UWP ComboBox control | Syncfusion®
+description: Learn here about getting started with Syncfusion® UWP ComboBox (SfComboBox) control, its elements and more.
 platform: uwp
 control: SfComboBox  
 documentation: ug
