@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Interactive Features in UWP DataGrid control | Syncfusion
-description: Learn here all about Interactive Features support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Interactive Features in UWP DataGrid control | Syncfusion®
+description: Learn here all about Interactive Features support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: UWP
 control: SfDataGrid
 documentation: ug

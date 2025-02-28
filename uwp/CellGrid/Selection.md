@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in UWP CellGrid control | Syncfusion
-description: Learn here all about Selection support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
+title: Selection in UWP CellGrid control | Syncfusion®
+description: Learn here all about Selection support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
 platform: UWP
 control: SfCellGrid
 documentation: ug

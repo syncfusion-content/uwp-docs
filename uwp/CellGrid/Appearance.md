@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in UWP CellGrid control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
+title: Appearance in UWP CellGrid control | Syncfusion®
+description: Learn here all about Appearance support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug

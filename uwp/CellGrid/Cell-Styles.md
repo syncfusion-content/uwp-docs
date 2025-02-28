@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell Styles in UWP CellGrid control | Syncfusion
-description: Learn here all about Cell Styles support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
+title: Cell Styles in UWP CellGrid control | Syncfusion®
+description: Learn here all about Cell Styles support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug

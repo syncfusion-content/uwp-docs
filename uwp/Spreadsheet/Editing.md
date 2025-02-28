@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Editing support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Editing in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Editing support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

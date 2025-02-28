@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About UWP Multi Column Dropdown control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
+title: About UWP Multi Column Dropdown control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® UWP Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
 platform: uwp
 control: SfMultiColumnDropDownControl
 documentation: ug

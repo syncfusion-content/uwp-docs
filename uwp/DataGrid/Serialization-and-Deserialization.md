@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization and Deserialization in UWP DataGrid control | Syncfusion
-description: Learn here all about Serialization and Deserialization support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Serialization and Deserialization in UWP DataGrid control | Syncfusion®
+description: Learn here all about Serialization and Deserialization support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

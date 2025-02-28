@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP CellGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP CellGrid (SfCellGrid) control, its elements and more.
+title: Getting Started with UWP CellGrid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug
@@ -61,7 +61,7 @@ SfCellGrid control can be added into the application either via designer or via 
 ### Adding control via designer
 
 1. Create a new UWP application in Visual Studio.
-2. Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the SfCellGrid in toolbox items.
+2. Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion<sup>®</sup> Controls” tab, and find the SfCellGrid in toolbox items.
 3. Drag **SfCellGrid** and drop in to the designer area from the toolbox.
 
 ![SfCellGrid_UWP_img1](Getting-Started_images/SfCellGrid_UWP_img1.jpeg)

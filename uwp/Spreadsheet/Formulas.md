@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formulas in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Formulas support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Formulas in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Formulas support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
