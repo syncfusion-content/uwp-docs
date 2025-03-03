@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SfSplitMosaicTile in UWP Hub Tile control | Syncfusion
-description: Learn here all about SfSplitMosaicTile support in Syncfusion UWP Hub Tile (HubTiles) control and more.
+title: SfSplitMosaicTile in UWP Hub Tile control | Syncfusion®
+description: Learn here all about SfSplitMosaicTile support in Syncfusion® UWP Hub Tile (HubTiles) control and more.
 platform: uwp
 control: SfSplitMosaicTile
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Document Window in UWP Docking control | Syncfusion
-description: Learn here all about Document Window support in Syncfusion UWP Docking (SfDockingManager) control and more.
+title: Document Window in UWP Docking control | Syncfusion®
+description: Learn here all about Document Window support in Syncfusion® UWP Docking (SfDockingManager) control and more.
 platform: uwp
 control: SfDockingManager
 documentation: ug

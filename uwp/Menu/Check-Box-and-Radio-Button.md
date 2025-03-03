@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CheckBox and RadioButton in UWP Menu control | Syncfusion
-description: Learn here all about CheckBox and RadioButton support in Syncfusion UWP Menu (SfMenu) control and more.
+title: CheckBox and RadioButton in UWP Menu control | Syncfusion®
+description: Learn here all about CheckBox and RadioButton support in Syncfusion® UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug
