@@ -172,21 +172,21 @@ N> DataGrid creates different types of views derived from [ICollectionViewAdv](h
 <td>TableSummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the TableSummaryRows collection information. To know more about TableSummaries {{'[click here](https://help.syncfusion.com/uwp/datagrid/summaries)'| markdownify }}
+Maintains the TableSummaryRows collection information. To know more about TableSummaries <a href="https://help.syncfusion.com/uwp/datagrid/summaries">click here</a>
 </td> 
 </tr>
 <tr>
 <td>SummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the SummaryRows collection information. To know more about summaries {{'[click here](https://help.syncfusion.com/uwp/sfdatagrid/summaries)'| markdownify }} 
+Maintains the SummaryRows collection information. To know more about summaries <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries">click here</a>  
 </td>
 </tr>
 <tr>
 <td>CaptionSummaryRows</td>
 <td>ISummaryRow</td>
 <td>
-Maintains the CaptionSummaryRow information. To know more about CaptionSummaries {{'[click here](https://help.syncfusion.com/uwp/datagrid/summaries)'| markdownify }} 
+Maintains the CaptionSummaryRow information. To know more about CaptionSummaries <a href="https://help.syncfusion.com/uwp/datagrid/summaries">click here</a>   
 </td>
 </tr>
 </table>
