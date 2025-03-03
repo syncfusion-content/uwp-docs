@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in UWP DataGrid control | Syncfusion®
-description: Learn here all about Columns support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about Columns support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more details. 
 platform: uwp
 control: SfDataGrid
 documentation: ug
