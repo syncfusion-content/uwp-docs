@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in UWP Masked TextBox control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion UWP Masked TextBox (SfMaskedEdit) control and more.
+title: Appearance in UWP Masked TextBox control | Syncfusion®
+description: Learn here all about Appearance support in Syncfusion® UWP Masked TextBox (SfMaskedEdit) control and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug

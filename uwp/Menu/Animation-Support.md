@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation Support in UWP Menu control | Syncfusion
-description: Learn here all about Animation Support support in Syncfusion UWP Menu (SfMenu) control and more.
+title: Animation Support in UWP Menu control | Syncfusion®
+description: Learn here all about Animation Support support in Syncfusion® UWP Menu (SfMenu) control and more.
 platform: UWP
 control: SfMenu
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About UWP TimePicker control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP TimePicker (SfTimePicker) control, its elements and more.
+title: About UWP TimePicker control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® UWP TimePicker (SfTimePicker) control, its elements and more.
 platform: uwp
 control: SfTimePicker
 documentation: ug

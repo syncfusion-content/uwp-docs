@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating Data in UWP Domain UpDown control | Syncfusion
-description: Learn here all about Populating Data support in Syncfusion UWP Domain UpDown (SfDomainUpDown) control and more.
+title: Populating Data in UWP Domain UpDown control | Syncfusion®
+description: Learn here all about Populating Data support in Syncfusion® UWP Domain UpDown (SfDomainUpDown) control and more.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
