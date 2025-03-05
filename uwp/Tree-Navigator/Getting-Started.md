@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Tree Navigator control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Tree Navigator (SfTreeNavigator) control, its elements and more.
+title: Getting Started with UWP Tree Navigator control | Syncfusion®
+description: Learn here about getting started with Syncfusion® UWP Tree Navigator (SfTreeNavigator) control, its elements and more.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug

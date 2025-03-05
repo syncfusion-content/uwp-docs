@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with State in UWP Tile View control | Syncfusion
-description: Learn here all about Dealing with State support in Syncfusion UWP Tile View (SfTileView) control and more.
+title: Dealing with State in UWP Tile View control | Syncfusion®
+description: Learn here all about Dealing with State support in Syncfusion® UWP Tile View (SfTileView) control and more.
 platform: uwp
 control: SfTileView
 documentation: ug

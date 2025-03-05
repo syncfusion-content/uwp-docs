@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Appearance and Styling in UWP Accordion control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP Accordion (SfAccordion) control and more.
-platform: UWP
+title: Appearance and Styling in UWP Accordion control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® UWP Accordion (SfAccordion) control and more.
+platform: uwp
 control: SfAccordion
 documentation: ug
 

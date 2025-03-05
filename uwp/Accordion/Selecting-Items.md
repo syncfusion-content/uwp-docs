@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selecting Items in UWP Accordion control | Syncfusion
-description: Learn here all about Selecting Items support in Syncfusion UWP Accordion (SfAccordion) control and more.
+title: Selecting Items in UWP Accordion control | Syncfusion®
+description: Learn here all about Selecting Items support in Syncfusion® UWP Accordion (SfAccordion) control and more.
 platform: uwp
 control: SfAccordion
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: SfMosaicTile in UWP Hub Tile control | Syncfusion
-description: Learn here all about SfMosaicTile support in Syncfusion Universal Windows Platform (UWP) Hub Tile (HubTiles) control and more.
+title: SfMosaicTile in UWP Hub Tile control | Syncfusion®
+description: Learn here all about SfMosaicTile support in Syncfusion® Universal Windows Platform (UWP) Hub Tile (HubTiles) control and more.
 platform: uwp
 control: SfMosaicTile
 documentation: ug

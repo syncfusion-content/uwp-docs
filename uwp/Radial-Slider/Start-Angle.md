@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Start Angle in UWP Radial Slider control | Syncfusion
-description: Learn here all about Start Angle support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
+title: Start Angle in UWP Radial Slider control | Syncfusion®
+description: Learn here all about Start Angle support in Syncfusion® UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and Styling in UWP Progress Bar control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP Progress Bar (SfProgressBar) control and more.
+title: Appearance and Styling in UWP Progress Bar control | Syncfusion®
+description: Learn here all about Appearance and Styling support in Syncfusion® UWP Progress Bar (SfProgressBar) control and more.
 platform: UWP
 control: SfProgressBar
 documentation: ug

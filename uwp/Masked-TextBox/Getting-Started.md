@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Masked TextBox control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Masked TextBox (SfMaskedEdit) control, its elements and more.
+title: Getting Started with UWP Masked TextBox control | Syncfusion®
+description: Learn here about getting started with Syncfusion® UWP Masked TextBox (SfMaskedEdit) control, its elements and more.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug

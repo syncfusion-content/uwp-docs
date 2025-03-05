@@ -1,7 +1,7 @@
 ---
 layout: post
-title: maximum in UWP Radial Slider control | Syncfusion
-description: Learn here all about maximum support in Syncfusion UWP Radial Slider (SfRadialSlider) control and more.
+title: maximum in UWP Radial Slider control | Syncfusion®
+description: Learn here all about maximum support in Syncfusion® UWP Radial Slider (SfRadialSlider) control and more.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug

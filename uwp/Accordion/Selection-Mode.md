@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection Mode in UWP Accordion control | Syncfusion
-description: Learn here all about Selection Mode support in Syncfusion UWP Accordion (SfAccordion) control and more.
+title: Selection Mode in UWP Accordion control | Syncfusion®
+description: Learn here all about Selection Mode support in Syncfusion® UWP Accordion (SfAccordion) control and more.
 platform: uwp
 control: SfAccordion
 documentation: ug
