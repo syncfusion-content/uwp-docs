@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Unbound Column in UWP DataGrid control | Syncfusion
-description: Learn here all about Unbound Column support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Unbound Column in UWP DataGrid control | Syncfusion®
+description: Learn here all about Unbound Column support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

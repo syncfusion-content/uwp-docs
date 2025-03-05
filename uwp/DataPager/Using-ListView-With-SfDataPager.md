@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Using Listview with SfDataPager in UWP DataPager control | Syncfusion
-description: Learn here all about Using Listview with SfDataPager support in Syncfusion UWP DataPager (SfDataPager) control and more.
+title: Using Listview with SfDataPager in UWP DataPager control | Syncfusion®
+description: Learn here all about Using Listview with SfDataPager support in Syncfusion® UWP DataPager (SfDataPager) control and more.
 platform: uwp
 control: SfDataPager
 documentation: ug

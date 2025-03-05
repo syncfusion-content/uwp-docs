@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in UWP TreeGrid control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+title: Localization in UWP TreeGrid control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

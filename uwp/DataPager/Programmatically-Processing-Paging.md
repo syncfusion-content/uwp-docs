@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Programmatically Processing Paging in UWP DataPager control | Syncfusion
-description: Learn here all about Programmatically Processing Paging support in Syncfusion UWP DataPager (SfDataPager) control and more.
+title: Programmatically Processing Paging in UWP DataPager control | Syncfusion®
+description: Learn here all about Programmatically Processing Paging support in Syncfusion® UWP DataPager (SfDataPager) control and more.
 platform: uwp
 control: SfDataPager
 documentation: ug

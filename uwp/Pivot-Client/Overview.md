@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About UWP Pivot Client control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Pivot Client (SfPivotClient) control, its elements and more.
+title: About UWP Pivot Client control | Syncfusion®
+description: Learn here all about introduction of Syncfusion® UWP Pivot Client (SfPivotClient) control, its elements and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug

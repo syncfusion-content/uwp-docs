@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles and Templates in UWP DataGrid control | Syncfusion
-description: Learn here all about Styles and Templates support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Styles and Templates in UWP DataGrid control | Syncfusion®
+description: Learn here all about Styles and Templates support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

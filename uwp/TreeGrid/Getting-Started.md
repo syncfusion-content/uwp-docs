@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP TreeGrid control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP TreeGrid (SfTreeGrid) control, its elements and more.
+title: Getting Started with UWP TreeGrid control | Syncfusion®
+description: Learn here about getting started with Syncfusion® UWP TreeGrid (SfTreeGrid) control, its elements and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
@@ -129,7 +129,7 @@ SfTreeGrid control can be added to the application by dragging it from Toolbox a
 
 In order to add control manually in XAML, do the below steps,
 
-1.Add the below required assembly references to the project or add the Syncfusion UWP SDK to the project as shown in the below image,
+1.Add the below required assembly references to the project or add the Syncfusion<sup>®</sup> UWP SDK to the project as shown in the below image,
 
 * Syncfusion.Data.UWP
 * Syncfusion.SfGrid.UWP

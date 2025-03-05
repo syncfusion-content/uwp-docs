@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Localization in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Localization support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

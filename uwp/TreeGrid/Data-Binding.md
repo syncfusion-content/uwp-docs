@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in UWP TreeGrid control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+title: Data Binding in UWP TreeGrid control | Syncfusion®
+description: Learn here all about Data Binding support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

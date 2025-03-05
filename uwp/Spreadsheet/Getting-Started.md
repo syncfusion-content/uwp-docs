@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Spreadsheet control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Spreadsheet (SfSpreadsheet) control, its elements and more.
+title: Getting Started with UWP Spreadsheet control | Syncfusion®
+description: Learn here about getting started with Syncfusion® UWP Spreadsheet (SfSpreadsheet) control, its elements and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
@@ -84,7 +84,7 @@ SfSpreadsheet control can be added into the application either via designer or v
 
 1.Create new UWP application in Visual Studio.
 
-2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items
+2.Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion<sup>®</sup> Controls” tab, and find the  SfSpreadsheet/SfSpreadsheetRibbon toolbox items
 
 ![Getting-Started_img1](Getting-Started_images/Getting-Started_img1.jpg)
 

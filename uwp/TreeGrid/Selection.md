@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in UWP TreeGrid control | Syncfusion
-description: Learn here all about Selection support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+title: Selection in UWP TreeGrid control | Syncfusion®
+description: Learn here all about Selection support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
