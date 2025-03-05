@@ -2,7 +2,7 @@
 layout: post
 title: ToolTip in UWP DataGrid control | Syncfusion®
 description: Learn here all about ToolTip support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
-platform: UWP
+platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
