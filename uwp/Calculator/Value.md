@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Value in UWP Calculator control | Syncfusion®
-description: Explore Value support in Syncfusion® UWP Calculator (SfCalculator) control, including key features, usage, and more. 
+description: Explore Value support in Syncfusion® UWP Calculator (SfCalculator) control, including key features, usage, and more.
 platform: uwp
 control: SfCalculator
 documentation: ug
