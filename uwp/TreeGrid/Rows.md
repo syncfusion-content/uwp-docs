@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows in UWP TreeGrid control | Syncfusion
-description: Learn here all about Rows support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+title: Rows in UWP TreeGrid control | Syncfusion®
+description: Learn here all about Rows support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

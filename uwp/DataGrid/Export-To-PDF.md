@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export To PDF in UWP DataGrid control | Syncfusion
-description: Learn here all about Export To PDF support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Export To PDF in UWP DataGrid control | Syncfusion®
+description: Learn here all about Export To PDF support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

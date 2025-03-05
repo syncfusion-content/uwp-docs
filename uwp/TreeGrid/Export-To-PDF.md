@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export To PDF in UWP TreeGrid control | Syncfusion
-description: Learn here all about Export To PDF support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+title: Export To PDF in UWP TreeGrid control | Syncfusion®
+description: Learn here all about Export To PDF support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard Operations in UWP DataGrid control | Syncfusion
-description: Learn here all about Clipboard Operations support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Clipboard Operations in UWP DataGrid control | Syncfusion®
+description: Learn here all about Clipboard Operations support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

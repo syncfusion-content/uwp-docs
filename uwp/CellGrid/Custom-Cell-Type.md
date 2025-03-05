@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Cell Type in UWP CellGrid control | Syncfusion
-description: Learn here all about Custom Cell Type support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
+title: Custom Cell Type in UWP CellGrid control | Syncfusion®
+description: Learn here all about Custom Cell Type support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
 platform: uwp
 control: SfCellGrid
 documentation: ug

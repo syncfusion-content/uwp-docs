@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive feature | TreeGrid | UWP | Syncfusion
+title: Interactive feature | TreeGrid | UWP | Syncfusion®
 description: This section explains about the Interactive Features in SfTreeGrid.
 platform: uwp
 control: SfTreeGrid
