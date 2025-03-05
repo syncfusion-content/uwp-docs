@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export To Excel in UWP DataGrid control | Syncfusion
-description: Learn here all about Export To Excel support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Export To Excel in UWP DataGrid control | Syncfusion®
+description: Learn here all about Export To Excel support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
 platform: uwp
 control: SfDataGrid
 documentation: ug

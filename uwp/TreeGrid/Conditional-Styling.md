@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Conditional Styling in UWP TreeGrid control | Syncfusion
-description: Learn here all about Conditional Styling support in Syncfusion UWP TreeGrid (SfTreeGrid) control and more.
+title: Conditional Styling in UWP TreeGrid control | Syncfusion®
+description: Learn here all about Conditional Styling support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

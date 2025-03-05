@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in UWP DataGrid control | Syncfusion
-description: Learn here all about Editing support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: Editing in UWP DataGrid control | Syncfusion®
+description: Learn here all about Editing support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -227,7 +227,7 @@ SfDataGrid triggers the following events during editing.
 
 [CurrentCellBeginEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when the [CurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) enter into edit mode. [CurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html) has following members which provides information for `CurrentCellBeginEdit` event.
 
-* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
+* [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-9.0): When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellBeginEditEventArgs_RowColumnIndex): Gets the current row column index of the DataGrid.
 

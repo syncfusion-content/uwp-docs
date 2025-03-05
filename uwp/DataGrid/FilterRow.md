@@ -1,7 +1,7 @@
 ---
 layout: post
-title: FilterRow in UWP DataGrid control | Syncfusion
-description: Learn here all about FilterRow support in Syncfusion UWP DataGrid (SfDataGrid) control and more.
+title: FilterRow in UWP DataGrid control | Syncfusion®
+description: Learn here all about FilterRow support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more details.
 platform: uwp
 control: SfDataGrid
 documentation: ug

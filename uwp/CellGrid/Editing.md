@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in UWP CellGrid control | Syncfusion
-description: Learn here all about Editing support in Syncfusion UWP CellGrid (SfCellGrid) control and more.
+title: Editing in UWP CellGrid control | Syncfusion®
+description: Learn here all about Editing support in Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more details.
 platform: uwp
 control: SfCellGrid
 documentation: ug

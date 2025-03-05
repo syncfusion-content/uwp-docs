@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Shapes support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Shapes in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Shapes support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug

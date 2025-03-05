@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance in UWP DataPager control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion UWP DataPager (SfDataPager) control and more.
+title: Appearance in UWP DataPager control | Syncfusion®
+description: Learn here all about Appearance support in Syncfusion® UWP DataPager (SfDataPager) control and more.
 platform: uwp
 control: SfDataPager
 documentation: ug

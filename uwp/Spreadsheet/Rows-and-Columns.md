@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows and Columns in UWP Spreadsheet control | Syncfusion
-description: Learn here all about Rows and Columns support in Syncfusion UWP Spreadsheet (SfSpreadsheet) control and more.
+title: Rows and Columns in UWP Spreadsheet control | Syncfusion®
+description: Learn here all about Rows and Columns support in Syncfusion® UWP Spreadsheet (SfSpreadsheet) control and more.
 platform: UWP
 control: SfSpreadsheet
 documentation: ug
