@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Defer Update in UWP Pivot Client control | Syncfusion
-description: Learn here all about Defer Update support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
+title: Defer Update in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Defer Update support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug

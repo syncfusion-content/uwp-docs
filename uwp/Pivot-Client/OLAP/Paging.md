@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging in UWP Pivot Client control | Syncfusion
-description: Learn here all about Paging support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
+title: Paging in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Paging support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug

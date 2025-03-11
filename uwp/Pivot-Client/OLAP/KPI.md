@@ -1,7 +1,7 @@
 ---
 layout: post
-title: KPI in UWP Pivot Client control | Syncfusion
-description: Learn here all about KPI support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
+title: KPI in UWP Pivot Client control | Syncfusion®
+description: Learn here all about KPI support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug

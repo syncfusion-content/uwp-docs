@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Exploration in UWP Pivot Client control | Syncfusion
-description: Learn here all about Data Exploration support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
+title: Data Exploration in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Data Exploration support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
