@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Show Calculations as Columns or Rows in UWP Pivot Client control | Syncfusion
-description: Learn here all about Show Calculations as Columns or Rows support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
+title: Show Calculations as Columns or Rows in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Show Calculations as Columns or Rows support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug

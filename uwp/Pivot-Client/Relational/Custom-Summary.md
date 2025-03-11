@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Summary in UWP Pivot Client control | Syncfusion
-description: Learn here all about Custom Summary support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
+title: Custom Summary in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Custom Summary support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
 platform: UWP
 control: SfPivotClient
 documentation: ug
