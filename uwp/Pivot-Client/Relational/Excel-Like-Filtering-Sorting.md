@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel-Like Filtering and Sorting in UWP Pivot Client control | Syncfusion®
+title: Excel-Like Filtering in UWP Pivot Client control | Syncfusion®
 description: Learn here all about Excel-Like Filtering and Sorting support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
 platform: uwp
 control: SfPivotClient

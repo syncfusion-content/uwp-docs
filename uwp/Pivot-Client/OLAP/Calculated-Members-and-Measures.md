@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated Members and Measures in UWP Pivot Client control | Syncfusion®
+title: Calculated Member and Measure in UWP Pivot Client control | Syncfusion®
 description: Learn here all about Calculated Members and Measures support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
 platform: uwp
 control: SfPivotClient
