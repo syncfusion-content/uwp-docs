@@ -53,16 +53,16 @@ A user-defined hierarchy organizes the members of a dimension into a hierarchica
 
 | Icon | Name | Node type | Is Draggable |
 | -------- | -------- | -------- | -------- |
-| ![](PivotClient-Components_images/displayFolder.ico) | Display Forlder | Display Folder | False |
-| ![](PivotClient-Components_images/measures.ico) | Measure | Measure | True |
-| ![](PivotClient-Components_images/dimensions.ico) | Dimension | Dimension | True |
-| ![](PivotClient-Components_images/userDefinedHierarchy.ico) | User Defined Hierarchy | Hierarchy | True |
-| ![](PivotClient-Components_images/attributeHierarchy.ico) | Attribute Hierarchy | Hierarchy | True |
-| ![](PivotClient-Components_images/levelsInOrder.ico) | Levels (in order) | Level Element | True |
-| ![](PivotClient-Components_images/namedSets.ico) | Named Set | Named Set | True |
-| ![](PivotClient-Components_images/calculatedMembers.ico) | Calculated Members | Calculated Member | True|
-| ![](PivotClient-Components_images/kpi.ico) | Virtual KPI | VirtualKpi Member | True|
-| ![](PivotClient-Components_images/kpi.ico) | KPI | Kpi Member | True|
+| ![displayFolder](PivotClient-Components_images/displayFolder.ico) | Display Forlder | Display Folder | False |
+| ![measures](PivotClient-Components_images/measures.ico) | Measure | Measure | True |
+| ![dimensions](PivotClient-Components_images/dimensions.ico) | Dimension | Dimension | True |
+| ![userDefinedHierarchy](PivotClient-Components_images/userDefinedHierarchy.ico) | User Defined Hierarchy | Hierarchy | True |
+| ![attributeHierarchy](PivotClient-Components_images/attributeHierarchy.ico) | Attribute Hierarchy | Hierarchy | True |
+| ![levelsInOrder](PivotClient-Components_images/levelsInOrder.ico) | Levels (in order) | Level Element | True |
+| ![namedSets](PivotClient-Components_images/namedSets.ico) | Named Set | Named Set | True |
+| ![calculatedMembers](PivotClient-Components_images/calculatedMembers.ico) | Calculated Members | Calculated Member | True|
+| ![kpi](PivotClient-Components_images/kpi.ico) | Virtual KPI | VirtualKpi Member | True|
+| ![kpi](PivotClient-Components_images/kpi.ico) | KPI | Kpi Member | True|
 
 ## Axis element builder
 

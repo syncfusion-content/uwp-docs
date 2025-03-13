@@ -13,7 +13,7 @@ The SfPivotClient supports adding expression field at runtime by using the expre
 
 **Adding an expression field**
 
-1. To add a new expression field, click **Expression Field** ![](Expression-field_images/Expression-field-icon.png) in the client toolbar. The expression field dialog opens.
+1. To add a new expression field, click **Expression Field** ![Expression-field-icon](Expression-field_images/Expression-field-icon.png) in the client toolbar. The expression field dialog opens.
 
 ![Expression-field-image1](Expression-field_images/Expression-field-image1.png)
 

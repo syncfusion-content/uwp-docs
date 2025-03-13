@@ -9,7 +9,7 @@ documentation: ug
 
 # Defer Update in UWP Pivot Client (SfPivotClient)
 
-Defer update support allows users to refresh the control on-demand and not during every user interaction. To enable on-demand refreshing of data, the `EnableAutoExecute` property should be set to false. If this support is enabled, the *Auto Execute* button ![](Defer-Update_images/Defer-update-icon.png) will be appeared on the SfPivotClient's toolbar. To enable the defer update support, you can use the following code snippet.
+Defer update support allows users to refresh the control on-demand and not during every user interaction. To enable on-demand refreshing of data, the `EnableAutoExecute` property should be set to false. If this support is enabled, the *Auto Execute* button ![Defer-Update-icon](Defer-Update_images/Defer-update-icon.png) will be appeared on the SfPivotClient's toolbar. To enable the defer update support, you can use the following code snippet.
 
 {% tabs %}
 

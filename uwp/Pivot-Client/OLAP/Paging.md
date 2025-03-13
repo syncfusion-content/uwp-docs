@@ -41,7 +41,7 @@ PivotClient1.EnablePaging = True
 
 {% endtabs %}
 
-N> Paging can be enabled or disabled at runtime by using the *Pivot Pager* icon ![](Paging_images/Pager-button.png) in the SfPivotClient's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
+N> Paging can be enabled or disabled at runtime by using the *Pivot Pager* icon ![Pager-button](Paging_images/Pager-button.png) in the SfPivotClient's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
 
 ![pagerEnabled_UI](Paging_images/pagerEnabled_UI.png)
 
