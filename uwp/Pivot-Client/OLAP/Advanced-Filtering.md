@@ -2,7 +2,7 @@
 layout: post
 title: Advanced Filtering in UWP Pivot Client control | Syncfusion®
 description: Learn here all about Advanced Filtering support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---

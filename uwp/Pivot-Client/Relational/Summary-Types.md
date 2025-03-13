@@ -2,7 +2,7 @@
 layout: post
 title: Summary Types in UWP Pivot Client control | Syncfusion®
 description: Learn here all about Summary Types support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---

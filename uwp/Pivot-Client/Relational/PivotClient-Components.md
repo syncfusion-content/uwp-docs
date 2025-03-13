@@ -2,7 +2,7 @@
 layout: post
 title: PivotClient: Components in UWP Pivot Client control | Syncfusion®
 description: Learn here all about PivotClient: Components support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
