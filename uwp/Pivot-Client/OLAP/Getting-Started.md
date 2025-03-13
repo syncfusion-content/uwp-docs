@@ -598,7 +598,7 @@ N> You can find these libraries in the following location.
 I> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create a SfPivotClient control.
 The above assembly can be obtained only after installing the following setup files.
 **SQLSERVER2008_ASADOMD10.msi** and **SQLSERVER2008_ASOLEDB10.msi**
-These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-us/download/404-page).
+These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-us/download).
 If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
 Now, the "Service1.svc" will be as follows.
