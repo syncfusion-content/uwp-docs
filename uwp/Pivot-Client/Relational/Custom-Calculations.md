@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Custom Calculations in UWP Pivot Client control | Syncfusion
-description: Learn here all about Custom Calculations support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
+title: Custom Calculations in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Custom Calculations support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---

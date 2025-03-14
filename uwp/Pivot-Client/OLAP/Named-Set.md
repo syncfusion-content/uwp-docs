@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Named Set in UWP Pivot Client control | Syncfusion
-description: Learn here all about Named Set support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
+title: Named Set in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Named Set support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
