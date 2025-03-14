@@ -970,34 +970,6 @@ Syncfusion.SfInput.UWP
 </tr>
 </table>
 
-## SfReportViewer
-
-<table>
-<tr>
-<th>Assembly references </th>
-<th>NuGet package </th>
-</tr>
-<tr>
-<td> 
-Syncfusion.DocIO.UWP <br/>
-Syncfusion.Pdf.UWP <br/>
-Syncfusion.SfGridCommon.UWP <br/>
-Syncfusion.SfChart.UWP <br/>
-Syncfusion.SfGauge.UWP <br/>
-Syncfusion.SfCellGrid.UWP <br/>
-Syncfusion.SfInput.UWP <br/>
-Syncfusion.SfMaps.UWP <br/>
-Syncfusion.SfReportViewer.UWP <br/>
-Syncfusion.SfShared.UWP <br/>
-Syncfusion.SfTreeNavigator.UWP <br/>
-Syncfusion.XlsIO.UWP
-</td>
-<td> 
-Syncfusion.SfReportViewer.UWP
-</td>
-</tr>
-</table>
-
 ## SfRibbon
 
 <table>
