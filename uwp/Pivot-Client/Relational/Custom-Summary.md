@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Custom Summary in UWP Pivot Client control | Syncfusion
-description: Learn here all about Custom Summary support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
+title: Custom Summary in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Custom Summary support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
@@ -13,7 +13,7 @@ The SfPivotClient supports changing the summary type of existing calculation ite
 
 **Defining a custom summary**
 
-1. To change the summary type as custom summary, click the **Custom Summary** ![](Custom-Summary_images/Custom-summary-icon.png) in the client toolbar. The custom summary dialog opens.
+1. To change the summary type as custom summary, click the **Custom Summary** ![Custom-summary-icon](Custom-Summary_images/Custom-summary-icon.png) in the client toolbar. The custom summary dialog opens.
 
 ![Custom-Summary_image1](Custom-Summary_images/Custom-Summary_image1.png)
 
