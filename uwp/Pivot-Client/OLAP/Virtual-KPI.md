@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Virtual KPI in UWP Pivot Client control | Syncfusion
-description: Learn here all about Virtual KPI support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
+title: Virtual KPI in UWP Pivot Client control | Syncfusion®
+description: Learn here all about Virtual KPI support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
@@ -15,7 +15,7 @@ There are two ways to define a virtual KPI element in the SfPivotClient as illus
 
 **Using virtual KPI editor dialog**
 
-The virtual KPI editor dialog can be opened by clicking the **Create a Virtual KPI Element** ![](Virtual-KPI_images/Virtual-KPI-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableVirtualKpi` property is set to true as mentioned below.
+The virtual KPI editor dialog can be opened by clicking the **Create a Virtual KPI Element** ![Virtual-KPI-icon](Virtual-KPI_images/Virtual-KPI-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableVirtualKpi` property is set to true as mentioned below.
 
 {% tabs %}
 

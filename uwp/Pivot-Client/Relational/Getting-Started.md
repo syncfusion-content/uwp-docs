@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Getting Started with UWP Pivot Client control | Syncfusion
-description: Learn here all about getting started with Syncfusion UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
+title: Getting Started with UWP Pivot Client control | Syncfusion®
+description: Learn here all about getting started with Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
