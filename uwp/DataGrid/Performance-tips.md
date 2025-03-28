@@ -15,7 +15,7 @@ SfDataGrid provides various built-in options to optimize the performance when ha
 
 ### Data virtualization for loading
 
-You can load the large amount of data in less time using built-in [Data Virtualization](https://help.syncfusion.com/uwp/sfdatagrid/data-virtualization).
+You can load the large amount of data in less time using built-in [Data Virtualization](https://help.syncfusion.com/uwp/datagrid/data-virtualization).
 
 ## Improving performance when doing batch updates
 
@@ -72,7 +72,7 @@ SfDataGrid considers only the `removed` item value and the current summary value
 
 ### Property Change in a record
 
-SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanging?view=net-7.0&redirectedfrom=MSDN) and [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-7.0&redirectedfrom=MSDN "") interface to your Data Model.
+SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanging?view=net-7.0&redirectedfrom=MSDN) and [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-7.0&redirectedfrom=MSDN%20%22%22) interface to your Data Model.
 
 Below code to enable summary calculation optimization by inheriting [INotifyPropertyChanging](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanging?view=net-7.0&redirectedfrom=MSDN) and [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-7.0&redirectedfrom=MSDN) interface to Data Model.
 
