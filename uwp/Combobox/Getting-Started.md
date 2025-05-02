@@ -66,21 +66,18 @@ Dim combobox As New SfComboBox()
 
 ### Items Source
 
-SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a SfComboBox that display a list of employees. 
+SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a SfComboBox that display a list of products. 
 
-The Employee model is displayed as follows.
+The Product model is displayed as follows.
 
 {% tabs %}
 
 {% highlight c# %}
 
 public class ProductList
-
-  {
-
-        public string Name { get; set; } 
-
- }
+{
+    public string Name { get; set; } 
+}
 
 {% endhighlight %}
 
@@ -96,7 +93,7 @@ End Class
 
 {% endtabs %}
 
-Create the employee collection as follows.
+Create the products collection as follows in MainPage.xaml.cs.
 
 
 {% tabs %}
@@ -105,19 +102,11 @@ Create the employee collection as follows.
 
 private List<ProductList> products;
 
-
-
-     public List<ProductList> Products
-
-     {
-
-         get { return products; }
-
-
-
-         set { products = value; }
-
-     }
+public List<ProductList> Products
+{
+    get { return products; }
+    set { products = value; }
+}
 
 {% endhighlight %}
 
@@ -127,16 +116,13 @@ Private products_Renamed As List(Of ProductList)
 
 Public Property Products() As List(Of ProductList)
 
+Get
+    Return products_Renamed
+End Get
 
-		 Get
-			 Return products_Renamed
-		 End Get
-
-
-
-		 Set(ByVal value As List(Of ProductList))
-			 products_Renamed = value
-		 End Set
+Set(ByVal value As List(Of ProductList))
+    products_Renamed = value
+End Set
 
 End Property
 
@@ -146,6 +132,7 @@ End Property
 
 ### Populate the items.
 
+Add items to the products collection as follows in MainPage.xaml.cs.
 
 {% tabs %}
 
@@ -166,7 +153,8 @@ End Property
  Products.Add(new ProductList(){ Name = "Pivot" });
             
  Products.Add(new ProductList(){ Name = "SpreadSheet" });
-   
+ 
+ this.DataContext = this;
 
 {% endhighlight %}
 
@@ -187,13 +175,14 @@ End Property
  Products.Add(New ProductList() With {.Name = "Pivot"})
 
  Products.Add(New ProductList() With {.Name = "SpreadSheet"})
-   
+
+ Me.DataContext = Me
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Bind the Employees collection to the ItemsSource property of the SfComboBox.
+Bind the Products collection to the ItemsSource property of the SfComboBox.
 
 {% highlight XAML %}
 
@@ -232,28 +221,17 @@ The ItemTemplate property of the SfComboBox can be used to customize the content
 
 {% highlight html %}
 
-< editors:SfComboBox
-
-            ItemsSource="{Binding Products}" >          <editors:SfComboBox.ItemTemplate>
-
-                <DataTemplate>
-
-                    <Grid>
-
-                        <StackPanel>
-
-             <TextBlock Text="{Binding Name}" FontSize="17"/>
-
-             <TextBlock Text="{Binding Email}" FontSize="10" Opacity="0.5"/>
-
-                        </StackPanel>
-
-                    </Grid>
-
-                </DataTemplate>
-
-            </editors:SfComboBox.ItemTemplate>
-
+<editors:SfComboBox ItemsSource="{Binding Products}">          
+    <editors:SfComboBox.ItemTemplate>
+        <DataTemplate>
+            <Grid>
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}" FontSize="17"/>
+                    <TextBlock Text="{Binding Email}" FontSize="10" Opacity="0.5"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </editors:SfComboBox.ItemTemplate>
 </editors:SfComboBox>
 
 {% endhighlight %}
