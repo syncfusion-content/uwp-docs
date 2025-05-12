@@ -68,7 +68,7 @@ Dim combobox As New SfComboBox()
 
 SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a SfComboBox that display a list of products. 
 
-The Product model is displayed as follows.
+1.Create the Product model as follows.
 
 {% tabs %}
 
@@ -93,102 +93,108 @@ End Class
 
 {% endtabs %}
 
-Create the products collection as follows in MainPage.xaml.cs.
+2.Create a ViewModel class with Products property and Products property is initialized with several data objects in constructor.
 
 
 {% tabs %}
 
 {% highlight c# %}
-
-private List<ProductList> products;
-
-public List<ProductList> Products
+public class ViewModel
 {
-    get { return products; }
-    set { products = value; }
+    private List<ProductList> _products;
+
+    public List<ProductList> Products
+    {
+        get { return _products; }
+        set { _products = value; }
+    }
+
+    public ViewModel()
+    {
+        _products = new List<ProductList>();
+
+        _products.Add(new ProductList() { Name = "Tools" });
+
+        _products.Add(new ProductList() { Name = "Grid" });
+
+        _products.Add(new ProductList() { Name = "Chart" });
+
+        _products.Add(new ProductList() { Name = "Gauge" });
+
+        _products.Add(new ProductList() { Name = "Olap" });
+
+        _products.Add(new ProductList() { Name = "Pivot" });
+
+        _products.Add(new ProductList() { Name "SpreadSheet" });
+    }
 }
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Private products_Renamed As List(Of ProductList)
+Public Class ViewModel
+    Private _products As List(Of ProductList)
 
-Public Property Products() As List(Of ProductList)
+    Public Property Products As List(Of ProductList)
+        Get
+            Return _products
+        End Get
+        Set(value As List(Of ProductList))
+            _products = value
+        End Set
+    End Property
 
-Get
-    Return products_Renamed
-End Get
+    Public Sub New()
+        _products = New List(Of ProductList)()
 
-Set(ByVal value As List(Of ProductList))
-    products_Renamed = value
-End Set
-
-End Property
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Populate the items.
-
-Add items to the products collection as follows in MainPage.xaml.cs.
-
-{% tabs %}
-
-{% highlight c# %}
-
-  Products = new List<ProductList>();
-
- Products.Add(new ProductList() { Name = "Tools" });
-            
- Products.Add(new ProductList() {  Name = "Grid" });
-            
- Products.Add(new ProductList(){ Name = "Chart" });
-            
- Products.Add(new ProductList(){ Name = "Gauge" }); 
-            
- Products.Add(new ProductList(){ Name = "Olap" });
-            
- Products.Add(new ProductList(){ Name = "Pivot" });
-            
- Products.Add(new ProductList(){ Name = "SpreadSheet" });
- 
- this.DataContext = this;
-
-{% endhighlight %}
-
-{% highlight VB %}
-
- Products = New List(Of ProductList)()
-
- Products.Add(New ProductList() With {.Name = "Tools"})
-
- Products.Add(New ProductList() With {.Name = "Grid"})
-
- Products.Add(New ProductList() With {.Name = "Chart"})
-
- Products.Add(New ProductList() With {.Name = "Gauge"})
-
- Products.Add(New ProductList() With {.Name = "Olap"})
-
- Products.Add(New ProductList() With {.Name = "Pivot"})
-
- Products.Add(New ProductList() With {.Name = "SpreadSheet"})
-
- Me.DataContext = Me
+        _products.Add(New ProductList() With {.Name = "Tools"})
+        _products.Add(New ProductList() With {.Name = "Grid"})
+        _products.Add(New ProductList() With {.Name = "Chart"})
+        _products.Add(New ProductList() With {.Name = "Gauge"})
+        _products.Add(New ProductList() With {.Name = "Olap"})
+        _products.Add(New ProductList() With {.Name = "Pivot"})
+        _products.Add(New ProductList() With {.Name = "SpreadSheet"})
+    End Sub
+End Class
 
 {% endhighlight %}
 
 {% endtabs %}
+
+### Binding to Data.
 
 Bind the Products collection to the ItemsSource property of the SfComboBox.
 
-{% highlight XAML %}
-
-<editors:SfComboBox ItemsSource="{Binding Products}" />
-
+{% tabs %}
+{% highlight xml %}
+<Page x:Class="GettingStarted.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:GettingStarted"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input"
+      mc:Ignorable="d">
+    <Page.DataContext>
+        <local:ViewModel />
+    </Page.DataContext>
+    <Grid>
+        <editors:SfComboBox x:Name="comboBox"
+                               ItemsSource="{Binding Products}" />
+    </Grid>
+</Page>
 {% endhighlight %}
+{% endtabs %}
+
+In another way, set the `SfComboBox.ItemsSource` property in C# as follows,
+
+{% tabs %}
+{% highlight c# %}
+ViewModel viewModel = new ViewModel();
+comboBox.ItemsSource = viewModel.Products;
+{% endhighlight %}
+{% endtabs %}
 
 
 The above steps populate the SfComboBox as illustrated in the following screenshot.
