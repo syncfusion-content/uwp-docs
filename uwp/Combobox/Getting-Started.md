@@ -66,21 +66,18 @@ Dim combobox As New SfComboBox()
 
 ### Items Source
 
-SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a SfComboBox that display a list of employees. 
+SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a SfComboBox that display a list of products. 
 
-The Employee model is displayed as follows.
+1.Create the Product model as follows.
 
 {% tabs %}
 
 {% highlight c# %}
 
 public class ProductList
-
-  {
-
-        public string Name { get; set; } 
-
- }
+{
+    public string Name { get; set; } 
+}
 
 {% endhighlight %}
 
@@ -96,110 +93,108 @@ End Class
 
 {% endtabs %}
 
-Create the employee collection as follows.
+2.Create a ViewModel class with Products property and Products property is initialized with several data objects in constructor.
 
 
 {% tabs %}
 
 {% highlight c# %}
+public class ViewModel
+{
+    private List<ProductList> _products;
 
-private List<ProductList> products;
+    public List<ProductList> Products
+    {
+        get { return _products; }
+        set { _products = value; }
+    }
 
+    public ViewModel()
+    {
+        _products = new List<ProductList>();
 
+        _products.Add(new ProductList() { Name = "Tools" });
 
-     public List<ProductList> Products
+        _products.Add(new ProductList() { Name = "Grid" });
 
-     {
+        _products.Add(new ProductList() { Name = "Chart" });
 
-         get { return products; }
+        _products.Add(new ProductList() { Name = "Gauge" });
 
+        _products.Add(new ProductList() { Name = "Olap" });
 
+        _products.Add(new ProductList() { Name = "Pivot" });
 
-         set { products = value; }
-
-     }
+        _products.Add(new ProductList() { Name "SpreadSheet" });
+    }
+}
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-Private products_Renamed As List(Of ProductList)
+Public Class ViewModel
+    Private _products As List(Of ProductList)
 
-Public Property Products() As List(Of ProductList)
+    Public Property Products As List(Of ProductList)
+        Get
+            Return _products
+        End Get
+        Set(value As List(Of ProductList))
+            _products = value
+        End Set
+    End Property
 
+    Public Sub New()
+        _products = New List(Of ProductList)()
 
-		 Get
-			 Return products_Renamed
-		 End Get
-
-
-
-		 Set(ByVal value As List(Of ProductList))
-			 products_Renamed = value
-		 End Set
-
-End Property
+        _products.Add(New ProductList() With {.Name = "Tools"})
+        _products.Add(New ProductList() With {.Name = "Grid"})
+        _products.Add(New ProductList() With {.Name = "Chart"})
+        _products.Add(New ProductList() With {.Name = "Gauge"})
+        _products.Add(New ProductList() With {.Name = "Olap"})
+        _products.Add(New ProductList() With {.Name = "Pivot"})
+        _products.Add(New ProductList() With {.Name = "SpreadSheet"})
+    End Sub
+End Class
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Populate the items.
+### Binding to Data
 
+Bind the Products collection to the ItemsSource property of the SfComboBox.
 
 {% tabs %}
-
-{% highlight c# %}
-
-  Products = new List<ProductList>();
-
- Products.Add(new ProductList() { Name = "Tools" });
-            
- Products.Add(new ProductList() {  Name = "Grid" });
-            
- Products.Add(new ProductList(){ Name = "Chart" });
-            
- Products.Add(new ProductList(){ Name = "Gauge" }); 
-            
- Products.Add(new ProductList(){ Name = "Olap" });
-            
- Products.Add(new ProductList(){ Name = "Pivot" });
-            
- Products.Add(new ProductList(){ Name = "SpreadSheet" });
-   
-
+{% highlight xml %}
+<Page x:Class="GettingStarted.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="using:GettingStarted"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:editors="using:Syncfusion.UI.Xaml.Controls.Input"
+      mc:Ignorable="d">
+    <Page.DataContext>
+        <local:ViewModel />
+    </Page.DataContext>
+    <Grid>
+        <editors:SfComboBox x:Name="comboBox"
+                               ItemsSource="{Binding Products}" />
+    </Grid>
+</Page>
 {% endhighlight %}
-
-{% highlight VB %}
-
- Products = New List(Of ProductList)()
-
- Products.Add(New ProductList() With {.Name = "Tools"})
-
- Products.Add(New ProductList() With {.Name = "Grid"})
-
- Products.Add(New ProductList() With {.Name = "Chart"})
-
- Products.Add(New ProductList() With {.Name = "Gauge"})
-
- Products.Add(New ProductList() With {.Name = "Olap"})
-
- Products.Add(New ProductList() With {.Name = "Pivot"})
-
- Products.Add(New ProductList() With {.Name = "SpreadSheet"})
-   
-
-{% endhighlight %}
-
 {% endtabs %}
 
-Bind the Employees collection to the ItemsSource property of the SfComboBox.
+In another way, set the `SfComboBox.ItemsSource` property in C# as follows,
 
-{% highlight XAML %}
-
-<editors:SfComboBox ItemsSource="{Binding Products}" />
-
+{% tabs %}
+{% highlight c# %}
+ViewModel viewModel = new ViewModel();
+comboBox.ItemsSource = viewModel.Products;
 {% endhighlight %}
+{% endtabs %}
 
 
 The above steps populate the SfComboBox as illustrated in the following screenshot.
@@ -232,28 +227,17 @@ The ItemTemplate property of the SfComboBox can be used to customize the content
 
 {% highlight html %}
 
-< editors:SfComboBox
-
-            ItemsSource="{Binding Products}" >          <editors:SfComboBox.ItemTemplate>
-
-                <DataTemplate>
-
-                    <Grid>
-
-                        <StackPanel>
-
-             <TextBlock Text="{Binding Name}" FontSize="17"/>
-
-             <TextBlock Text="{Binding Email}" FontSize="10" Opacity="0.5"/>
-
-                        </StackPanel>
-
-                    </Grid>
-
-                </DataTemplate>
-
-            </editors:SfComboBox.ItemTemplate>
-
+<editors:SfComboBox ItemsSource="{Binding Products}">          
+    <editors:SfComboBox.ItemTemplate>
+        <DataTemplate>
+            <Grid>
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}" FontSize="17"/>
+                    <TextBlock Text="{Binding Email}" FontSize="10" Opacity="0.5"/>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </editors:SfComboBox.ItemTemplate>
 </editors:SfComboBox>
 
 {% endhighlight %}
