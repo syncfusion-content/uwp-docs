@@ -162,7 +162,7 @@ End Class
 
 {% endtabs %}
 
-### Binding to Data.
+### Binding to Data
 
 Bind the Products collection to the ItemsSource property of the SfComboBox.
 
