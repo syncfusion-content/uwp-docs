@@ -9,4 +9,4 @@ documentation: ug
 
 # Toolbox Configuration
 
-Syncfusion® UWP controls will be automatically configured in Visual Studio toolbox while installing the Syncfusion® UWP setup.
+Syncfusion® UWP controls will be automatically configured in the Visual Studio toolbox while installing the Syncfusion® UWP setup.
