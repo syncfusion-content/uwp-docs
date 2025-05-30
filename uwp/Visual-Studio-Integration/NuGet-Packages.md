@@ -171,7 +171,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
 
 ### Get the Syncfusion NuGet feed URL 
 
-You should get the private Syncfusion® UWP NuGet feed URL to install or upgrade the Syncfusion® UWP NuGet packages. To get the URL from Syncfusion® website use the following steps:
+You should get the private Syncfusion® UWP NuGet feed URL to install or upgrade the Syncfusion® UWP NuGet packages. To get the URL from Syncfusion® website, use the following steps:
 
 1. Navigate to [nuget.syncfusion.com](https://nuget.syncfusion.com/), and select the **MOBILE** tab.     
 
