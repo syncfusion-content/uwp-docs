@@ -9,7 +9,7 @@ documentation: ug
 
 # Create UWP application
 
-Syncfusion® provides the Visual Studio Project Templates for the Syncfusion® UWP platform to create the Syncfusion® UWP Application, adding required Syncfusion® assemblies/NuGet based on the control chosen.  
+Syncfusion® provides the **Visual Studio Project Templates** for the Syncfusion® UWP platform to create the Syncfusion® UWP Application, adding required Syncfusion® assemblies/NuGet based on the control chosen.  
 
 I> The Syncfusion® UWP project templates are available from v15.3.0.26.  
 
