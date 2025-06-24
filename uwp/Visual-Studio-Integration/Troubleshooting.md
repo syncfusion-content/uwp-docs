@@ -9,7 +9,7 @@ documentation: ug
 
 # Troubleshoot the project
 
-Troubleshoot the project with the Syncfusion® configuration and apply the fix like, wrong .NET Framework version of added Syncfusion® assembly to the project or missing any Syncfusion® dependent assembly of a referred assembly. The Syncfusion Troubleshooter can do the following:
+Troubleshoot the project with the Syncfusion® configuration and apply the fix, like the wrong .NET Framework version of the added Syncfusion® assembly to the project or missing any Syncfusion® dependent assembly of a referred assembly. The Syncfusion Troubleshooter can do the following:
 
 * Report the Configuration issues.  
 
@@ -37,7 +37,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 
    ![Syncfusion Troubleshooter add-in](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img1.png)
 
-2. Now, analyze the project and it will report the project configuration issues of Syncfusion® controls in the Troubleshooter dialog if any issues found. If the project does not have any configuration issues, the dialog box will show there is no configuration changes required in following areas:
+2. Now, analyze the project, and it will report the project configuration issues of Syncfusion® controls in the Troubleshooter dialog if any issues are found. If the project does not have any configuration issues, the dialog box will show there are no configuration changes required in the following areas:
 
      * Syncfusion assembly references.
 
@@ -45,7 +45,7 @@ The following steps help you to utilize the Syncfusion Troubleshooter by Visual 
 
    ![No configuration changes required dialog box](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img2.png)
 
-I> The Syncfusion Troubleshooter command will be visible only for Syncfusion® projects that means the project should contain Syncfusion® assemblies or Syncfusion® NuGet packages referred.
+I> The Syncfusion Troubleshooter command will be visible only for Syncfusion® projects, which means the project should contain Syncfusion® assemblies or Syncfusion® NuGet packages referred to.
 
 The Syncfusion Troubleshooter handles the following project configuration issues: 
 
@@ -73,7 +73,7 @@ The Syncfusion Troubleshooter deals with the following assembly reference issues
 
 The Syncfusion Troubleshooter deals with the following NuGet package related issues in Syncfusion® projects. 
 
-1. Multiple versions of Syncfusion® NuGet Packages are installed. If Syncfusion® NuGet Package version is differ from other Syncfusion® NuGet Package version, the Syncfusion Troubleshooter will show Syncfusion® NuGet package version is mismatched. 
+1. Multiple versions of Syncfusion® NuGet Packages are installed. If the Syncfusion® NuGet Package version differs from other Syncfusion® NuGet Package versions, the Syncfusion Troubleshooter will show that the Syncfusion® NuGet Package version is mismatched. 
 
    **For Instance:** Syncfusion® UWP platform packages installed multiple version (v16.4.0.54 & v17.1.0.38), Syncfusion Troubleshooter will be shown Syncfusion® package version mismatched.
  
@@ -85,11 +85,11 @@ The Syncfusion Troubleshooter deals with the following NuGet package related iss
 
    ![Syncfusion Troubleshooter wizard with project configuration issues](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img6.png)
 
-2. A dialog appears, which will ask to take a backup of the project before performing the troubleshooting process. If you need to backup the project before troubleshooting, click “Yes” button. 
+2. A dialog appears, which will ask to take a backup of the project before performing the troubleshooting process. If you need to back up the project before troubleshooting, click the “Yes” button. 
 
    ![Syncfusion Troubleshooter backup dialog](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img7.jpeg)
 
-3. Wait for a while, the Syncfusion Troubleshooter is resolving the selected issues. After the troubleshooting process completed, there will be a status message in the Visual Studio status bar as “Troubleshooting process completed successfully”.
+3. Wait for a while; the Syncfusion Troubleshooter is resolving the selected issues. After the troubleshooting process is completed, there will be a status message in the Visual Studio status bar as “Troubleshooting process completed successfully.”
 
    ![Syncfusion Troubleshooter process success status message in visual studio status bar](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img8.jpeg)
 
