@@ -30,14 +30,16 @@ N> 1. Starting with v16.2.0.41 (2018 Vol 2), if you reference Syncfusion&reg; as
 N> 2. Starting from version v20.3.0.52, we internally disposed all the resources used by SfRichTextBoxAdv instance inside Unloaded event. This change is added to automatically release the memory utilized by SfRichTextBoxAdv instance when it is unloaded. This behavior change may introduce a break if you remove the SfRichTextBoxAdv instance from its parent container and add it to the same or another parent container in your application. In case you used such logic in your application, then kindly add below code before removing the SfRichTextBoxAdv instance from its parent container.
 
 <table>
-<thead>
-    <th>Old code</th>
-    <th>New code</th>
-<thead>
-<tbody>
-  <tr>
-    <td>
-      <pre><code>
+  <thead>
+    <tr>
+      <th>Old code</th>
+      <th>New code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre><code>
 //Remove the control from the parent Grid
 grid.Children.Remove(richTextBoxAdv);
 
