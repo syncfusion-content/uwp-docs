@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-## Tooltip
+# Tooltip
 
 Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of the SfTreeGrid.
 
