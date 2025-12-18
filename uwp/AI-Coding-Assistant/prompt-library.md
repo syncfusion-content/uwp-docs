@@ -104,17 +104,29 @@ The Syncfusion UWP Chart suite offers versatile visualizations across many serie
 {% promptcard Data Labels and ToolTips %}
 #SyncfusionUWPAssistant Enable tooltips and data labels in the Syncfusion UWP Chart.
 {% endpromptcard %}
+{% promptcard Tooltips and Trackball %}
+#SyncfusionUWPAssistant Show interactive tooltips and a trackball with formatted labels and multiple series value display.
+{% endpromptcard %}
+{% promptcard Axes and Multiple Axes %}
+#SyncfusionUWPAssistant Configure CategoryAxis, NumericalAxis, DateTimeAxis, and add a secondary Y-axis with series mapped to it.
+{% endpromptcard %}
+{% promptcard Legend and Title %}
+#SyncfusionUWPAssistant Add chart title, subtitle, and a responsive legend (positioning, overflow modes) in a UWP chart.
+{% endpromptcard %}
+{% promptcard Series Types Quick Setup %}
+#SyncfusionUWPAssistant Create a chart with Line, Spline, StepLine, Area, SplineArea, Column, Bar, Scatter, and Bubble series.
+{% endpromptcard %}
+{% promptcard Segment Color Mapping and Gradients %}
+#SyncfusionUWPAssistant Apply segment color mapping and gradient fills based on Y-value ranges.
+{% endpromptcard %}
+{% promptcard Axis Customization %}
+#SyncfusionUWPAssistant Configure axis intervals, labels format, inversed axis, axis crossing, and logarithmic axis.
+{% endpromptcard %}
 {% promptcard Animation Support %}
 #SyncfusionUWPAssistant How to enable animations in UWP Charts to make visualization more engaging?
 {% endpromptcard %}
-{% promptcard Dynamic Chart with Remote Data %}
-#SyncfusionUWPAssistant Create a chart that updates dynamically from a remote API.
-{% endpromptcard %}
 {% promptcard Multiple Series Types %}
 #SyncfusionUWPAssistant How to combine bar and line series in a single Syncfusion UWP Chart?
-{% endpromptcard %}
-{% promptcard Troubleshooting Data Binding %}
-#SyncfusionUWPAssistant Why isn’t my remote data showing up in the Syncfusion UWP Chart?
 {% endpromptcard %}
 {% promptcard Custom Markers and Labels %}
 #SyncfusionUWPAssistant Show me how to customize chart markers and data label styles.
@@ -288,9 +300,6 @@ The Syncfusion UWP Calendar supports flexible date selection, localization, and 
 {% endpromptcard %}
 {% promptcard Multi-Date Selection %}
 #SyncfusionUWPAssistant Show me how to allow users to select multiple dates in the Calendar.
-{% endpromptcard %}
-{% promptcard Skip Months Feature %}
-#SyncfusionUWPAssistant Enable skipping months in Calendar navigation for faster browsing.
 {% endpromptcard %}
 {% promptcard Show Other Month Days %}
 #SyncfusionUWPAssistant How to show days from adjacent months in the current Calendar view?
