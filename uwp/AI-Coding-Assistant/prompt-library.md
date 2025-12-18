@@ -58,14 +58,11 @@ The Syncfusion UWP DataGrid provides fast, flexible tables for large datasets wi
 {% promptcard Troubleshooting Export %}
 #SyncfusionUWPAssistant Why isn’t my DataGrid exporting to PDF or Excel correctly?
 {% endpromptcard %}
-{% promptcard Inline Editing %}
-#SyncfusionUWPAssistant How to enable inline editing for CRUD operations in the DataGrid?
-{% endpromptcard %}
-{% promptcard Custom Toolbar %}
-#SyncfusionUWPAssistant Add custom toolbar buttons for PDF and Excel export in the DataGrid.
+{% promptcard Cell Editing %}
+#SyncfusionUWPAssistant How to enable cell editing in the DataGrid?
 {% endpromptcard %}
 {% promptcard Dynamic Column Configuration %}
-#SyncfusionUWPAssistant How can I dynamically configure a multi-column layout with filtering and sorting?
+#SyncfusionUWPAssistant How can I add or display the predefined or multi columns in a drop-down in the DataGrid?
 {% endpromptcard %}
 {% promptcard Drag and Drop Support %}
 #SyncfusionUWPAssistant How to enable row drag-and-drop in the Syncfusion UWP DataGrid?
@@ -272,9 +269,6 @@ The Syncfusion UWP Docking Manager provides a Visual Studio–like interface for
 {% endpromptcard %}
 {% promptcard Serialization / Layout Persistence %}
 #SyncfusionUWPAssistant How to save and restore DockingManager layout to a file/stream and manage versioned changes safely?
-{% endpromptcard %}
-{% promptcard Multi-Monitor and Bounds %}
-#SyncfusionUWPAssistant How to persist floating windows across multiple monitors and recover out-of-bounds panes?
 {% endpromptcard %}
 {% promptcard Restrict Docking Targets %}
 #SyncfusionUWPAssistant How to restrict where a pane can dock (left/right/top/bottom/tabbed) or disallow floating?
