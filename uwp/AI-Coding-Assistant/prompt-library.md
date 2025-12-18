@@ -233,11 +233,11 @@ The Syncfusion UWP Ribbon is a command bar that organizes an application’s too
 {% promptcard Ribbon Gallery %}
 #SyncfusionUWPAssistant How to build Ribbon gallery with item templates, filtering, and selection change handling?
 {% endpromptcard %}
-{% promptcard Localization and RTL %}
-#SyncfusionUWPAssistant How to localize Ribbon text and tooltips and enable right-to-left (RTL) layout?
+{% promptcard Localization %}
+#SyncfusionUWPAssistant How to localize all the static text and its dialogs in the UWP Ribbon control?
 {% endpromptcard %}
 {% promptcard Theming %}
-#SyncfusionUWPAssistant How to style ribbon items, screentip, keytip and QAT; support Light/Dark themes.
+#SyncfusionUWPAssistant How to style ribbon items, screen tip, key tip and QAT; support Light/Dark themes.
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -258,8 +258,11 @@ The Syncfusion UWP Docking Manager provides a Visual Studio–like interface for
 {% promptcard Tabbed Documents %}
 #SyncfusionUWPAssistant How to create tabbed document windows and manage document groups?
 {% endpromptcard %}
-{% promptcard Prevent Close and Customize Header %}
-#SyncfusionUWPAssistant How to prevent closing certain panes and customize header text, icons, and header buttons?
+{% promptcard Prevent Close %}
+#SyncfusionUWPAssistant How to prevent closing certain panes in Syncfusion UWP DockingManager?
+{% endpromptcard %}
+{% promptcard Dock Header Customization %}
+#SyncfusionUWPAssistant How to customize header text, icons, and header buttons in DockWindow?
 {% endpromptcard %}
 {% promptcard Context Menu Customization %}
 #SyncfusionUWPAssistant How to disable or customize the dock window/tab context menu?
@@ -275,9 +278,6 @@ The Syncfusion UWP Docking Manager provides a Visual Studio–like interface for
 {% endpromptcard %}
 {% promptcard Restrict Docking Targets %}
 #SyncfusionUWPAssistant How to restrict where a pane can dock (left/right/top/bottom/tabbed) or disallow floating?
-{% endpromptcard %}
-{% promptcard Performance and Memory %}
-#SyncfusionUWPAssistant What are best practices to improve performance and avoid memory leaks when frequently adding/removing panes?
 {% endpromptcard %}
 {% endpromptcards %}
 
