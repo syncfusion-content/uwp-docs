@@ -93,7 +93,7 @@ The Syncfusion UWP Chart suite offers versatile visualizations across many serie
 #SyncfusionUWPAssistant How to enable zooming and panning in UWP Charts for large datasets?
 {% endpromptcard %}
 {% promptcard Annotations %}
-#SyncfusionUWPAssistant Add custom annotations to highlight specific data points in a chart.
+#SyncfusionUWPAssistant Add image and shape annotations to highlight specific data points in a chart.
 {% endpromptcard %}
 {% promptcard Export to Image or PDF %}
 #SyncfusionUWPAssistant How to export a Syncfusion UWP Chart to PDF or image formats?
