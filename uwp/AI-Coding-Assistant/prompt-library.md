@@ -310,9 +310,6 @@ The Syncfusion UWP Calendar supports flexible date selection, localization, and 
 {% promptcard Custom Day Cell Format %}
 #SyncfusionUWPAssistant Customize the day cell format in the Calendar to show short weekday names.
 {% endpromptcard %}
-{% promptcard Highlight Weekends %}
-#SyncfusionUWPAssistant Highlight weekends in the Calendar with a different background color.
-{% endpromptcard %}
 {% promptcard Multi-Selection and Range %}
 #SyncfusionUWPAssistant Enable both multi-date selection and range selection in the Calendar.
 {% endpromptcard %}
