@@ -139,13 +139,13 @@ The Syncfusion UWP Chart suite offers versatile visualizations across many serie
 {% endpromptcard %}
 {% endpromptcards %}
 
-### Scheduler
+### Schedule
 
-The Syncfusion UWP Scheduler helps manage events, resources, and timelines with powerful views and customization.
+The Syncfusion UWP Schedule helps manage events, resources, and timelines with powerful views and customization.
 
 {% promptcards %}
 {% promptcard Views and Quick Switch %}
-#SyncfusionUWPAssistant Configure Day, Week, Work Week, Month, Timeline Day/Week/WorkWeek/Month views and add quick view switching.
+#SyncfusionUWPAssistant Configure Day, Week, Work Week, Month, Timeline views and add quick view switching.
 {% endpromptcard %}
 {% promptcard Appointment Mapping and Data Binding %}
 #SyncfusionUWPAssistant How to bind custom appointment models using mapping (subject, notes, location, start time, end time) with MVVM.
@@ -154,22 +154,19 @@ The Syncfusion UWP Scheduler helps manage events, resources, and timelines with 
 #SyncfusionUWPAssistant Create recurring appointments (daily/weekly/monthly/yearly) and enable editing a single occurrence or the entire series.
 {% endpromptcard %}
 {% promptcard Work Time, Work Days, and First Day of Week %}
-#SyncfusionUWPAssistant How to set working hours, configure work days, customize the first day of week, and hide non-working days.
+#SyncfusionUWPAssistant How to set working hours, configure work days and customize the first day of week.
 {% endpromptcard %}
 {% promptcard Min/Max Date Navigation Limits %}
 #SyncfusionUWPAssistant How to restrict navigation with MinimumDateTime and MaximumDateTime to keep users in a valid planning range.
 {% endpromptcard %}
-{% promptcard Special Time Regions (Blocking Intervals) %}
-#SyncfusionUWPAssistant Define special time regions to block interaction (e.g., holidays/breaks) and highlight them across views.
-{% endpromptcard %}
-{% promptcard Load on Demand %}
-#SyncfusionUWPAssistant Load appointments on demand with a loading indicator for large schedules.
+{% promptcard Non-Accessible blocks %}
+#SyncfusionUWPAssistant Define Non-Accessible blocks to block interaction (e.g., holidays/breaks) and highlight them across views.
 {% endpromptcard %}
 {% promptcard Reminders and Notifications Integration %}
 #SyncfusionUWPAssistant Add reminder metadata to appointments and integrate with app notifications for alerts.
 {% endpromptcard %}
 {% promptcard Theming and Customization %}
-#SyncfusionUWPAssistant How to style headers, cells, appointments, selection, and special regions; support Light/Dark themes.
+#SyncfusionUWPAssistant How to style headers, cells, appointments, selection, and non-Accessible blocks; support Light/Dark themes.
 {% endpromptcard %}
 {% endpromptcards %}
 
