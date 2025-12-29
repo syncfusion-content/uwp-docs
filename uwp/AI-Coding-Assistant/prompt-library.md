@@ -49,10 +49,10 @@ The Syncfusion UWP DataGrid provides fast, flexible tables for large datasets wi
 {% promptcard Virtual Scrolling %}
 #SyncfusionUWPAssistant How to configure virtual scrolling for large datasets in the DataGrid?
 {% endpromptcard %}
-{% promptcard Multicolumn Grid Setup %}
+{% promptcard Multicolumn DataGrid Setup %}
 #SyncfusionUWPAssistant Create a DataGrid with multiple columns that displays product details and includes features for sorting and filtering.
 {% endpromptcard %}
-{% promptcard Advanced Grid Features %}
+{% promptcard Advanced DataGrid Features %}
 #SyncfusionUWPAssistant Show me a DataGrid with paging, sorting, grouping, filtering, and virtual scrolling.
 {% endpromptcard %}
 {% promptcard Troubleshooting Export %}
