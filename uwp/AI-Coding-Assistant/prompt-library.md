@@ -23,7 +23,7 @@ Before starting, make sure your MCP Server is set up and running.
 
 ## Component-Specific Prompts
 
-### Grid
+### DataGrid
 
 The Syncfusion UWP DataGrid provides fast, flexible tables for large datasets with rich built-in interactivity.
 
@@ -38,10 +38,10 @@ The Syncfusion UWP DataGrid provides fast, flexible tables for large datasets wi
 #SyncfusionUWPAssistant How to configure in-place editing using numeric, text, date, checkbox, image, combo box, picker, and template editors in the DataGrid.
 {% endpromptcard %}
 {% promptcard Selection and Keyboard Navigation %}
-#SyncfusionUWPAssistant Enable single and multiple row selection with programmatic selection APIs and Windows keyboard navigation.
+#SyncfusionUWPAssistant Describe how to enable both single‑row and multiple‑row selection and how to perform programmatic row selection using APIs. Also provide explanation of all supported mouse and keyboard interactions.
 {% endpromptcard %}
 {% promptcard CRUD Operations %}
-#SyncfusionUWPAssistant What’s the code to implement full CRUD operations in the Syncfusion UWP DataGrid?
+#SyncfusionUWPAssistant Give me the code example to perform full CRUD operations in the Syncfusion UWP DataGrid?
 {% endpromptcard %}
 {% promptcard Export to PDF and Excel %}
 #SyncfusionUWPAssistant How to export DataGrid content to PDF and Excel in Syncfusion UWP?
@@ -49,10 +49,10 @@ The Syncfusion UWP DataGrid provides fast, flexible tables for large datasets wi
 {% promptcard Virtual Scrolling %}
 #SyncfusionUWPAssistant How to configure virtual scrolling for large datasets in the DataGrid?
 {% endpromptcard %}
-{% promptcard Multicolumn Grid Setup %}
-#SyncfusionUWPAssistant Create a multi-column DataGrid to display product details with sorting and filtering.
+{% promptcard Multicolumn DataGrid Setup %}
+#SyncfusionUWPAssistant Create a DataGrid with multiple columns that displays product details and includes features for sorting and filtering.
 {% endpromptcard %}
-{% promptcard Advanced Grid Features %}
+{% promptcard Advanced DataGrid Features %}
 #SyncfusionUWPAssistant Show me a DataGrid with paging, sorting, grouping, filtering, and virtual scrolling.
 {% endpromptcard %}
 {% promptcard Troubleshooting Export %}
@@ -68,7 +68,7 @@ The Syncfusion UWP DataGrid provides fast, flexible tables for large datasets wi
 #SyncfusionUWPAssistant How to enable row drag-and-drop in the Syncfusion UWP DataGrid?
 {% endpromptcard %}
 {% promptcard Styling and Conditional Formatting %}
-#SyncfusionUWPAssistant Customize cell and header styles and apply conditional formatting based on data values.
+#SyncfusionUWPAssistant Customize cell and header styles and apply conditional formatting based on data values in UWP DataGrid.
 {% endpromptcard %}
 {% endpromptcards %}
 
