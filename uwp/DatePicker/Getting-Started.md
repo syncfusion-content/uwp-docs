@@ -112,7 +112,7 @@ Dim datePicker1 As SfDatePicker = New SfDatePicker() With {
 
 ## Customizing the date format
 
-The format of date in [SfDatePicker](https://help.syncfusion.com/cr/uwp/https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) can be be customized by using [FormatString](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_FormatString) property. For example, format of date can be changed to *yyyy-dd-MM* format.
+The format of date in [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) can be be customized by using [FormatString](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_FormatString) property. For example, format of date can be changed to *yyyy-dd-MM* format.
 
 {% tabs %}
 
@@ -139,7 +139,7 @@ datePicker1.FormatString = "yyyy-dd-MM"
 
 ## Customize SfDateSelector Header
 
-You can customize the [SfDateSelector](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDateSelector.html) in [SfDatePicker](https://help.syncfusion.com/cr/uwp/https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control using [SelectorStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_SelectorStyle) property.
+You can customize the [SfDateSelector](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDateSelector.html) in [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control using [SelectorStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_SelectorStyle) property.
 
 {% tabs %}
 
