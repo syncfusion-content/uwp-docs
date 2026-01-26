@@ -58,7 +58,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-3. Now add the[SfDatePicker](https://help.syncfusion.com/cr/uwp/https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control in MainPage.XAML.
+3. Now add the[SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control in MainPage.XAML.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 ## Adding control manually in C#
 
-In order to add [SfDatePicker](https://help.syncfusion.com/cr/uwp/https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control manually in C#, do the below steps,
+In order to add [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control manually in C#, do the below steps,
 
 1. Add the below required assembly references to the project,
 
