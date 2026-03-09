@@ -34,6 +34,24 @@ The `SelectionUnit` and `SelectionMode` properties together define the behavior 
 ![Single mode row selection in UWP DataGrid](Selection_images/Selection_img1.png)
 
 
+### SingleDeselect mode for Selection and Deselection
+
+SfDataGrid allows you to select or deselect a single row or cell, when the [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is `SingleDeselect`
+
+{% tabs %}
+{% highlight xaml %}
+
+<Syncfusion:SfDataGrid x:Name=”dataGrid”
+                       SelectionUnit="Row"
+                       NavigationMode="Cell"
+                       SelectionMode="SingleDeselect"
+                       ItemsSource="{Binding Orders}">
+
+{% endhighlight %}
+{% endtabs %}
+
+N> When the [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) is `SingleDeselect`, a single row or cell can be selected or deselected by clicking the respective row and cell or by pressing <kbd>space</kbd> key.
+
 ### Disable selection for rows and columns
 
 You can disable selection and navigation on particular column by setting [GridColumn.AllowFocus](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowFocus) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. 
