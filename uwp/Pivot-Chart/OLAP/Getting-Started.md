@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Pivot Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+title: Getting Started with UWP Pivot Chart control | Syncfusion®
+description: This page explains how to set up and configure the Pivot Chart (SfPivotChart) control in a UWP application.
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Getting Started with UWP Pivot Chart (SfPivotChart)
+# Getting Started with UWP Pivot Chart
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion® assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion® license key in your UWP application to use the components.
@@ -567,7 +567,7 @@ N> You can find these libraries under the following location.
 I> ADOMD.NET assembly (Microsoft.AnalysisServices.AdomdClient.dll) is required to create the SfPivotChart control.
 The above assembly can be obtained only after installing the following setup files:
 **SQLSERVER2008_ASADOMD10.msi** and **SQLSERVER2008_ASOLEDB10.msi**
-These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-in/download/details.aspx?id=16978).
+These setup files can be downloaded at [Microsoft download center](https://www.microsoft.com/en-us/download/details.aspx?id=44277).
 If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET].
 
 Now, the "Service1.svc" looks like:
@@ -612,7 +612,7 @@ namespace OlapManagerService
         /// </summary>
         public Service1()
         {
-            string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+            string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
             _dataProvider = new OlapDataProvider(connectionString);
         }
 
@@ -721,7 +721,7 @@ Namespace OlapManagerService
         Private ReadOnly _dataProvider As OlapDataProvider
 
         Public Sub New()
-            Dim connectionString As String = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"
+            Dim connectionString As String = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"
             _dataProvider = New OlapDataProvider(connectionString)
         End Sub
 
