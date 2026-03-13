@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Getting Started with UWP Pivot Client (SfPivotClient)
-t
+
 >**Important**
 To start with v16.2.0.x, if you refer to Syncfusion assemblies from a trial setup or NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
 
