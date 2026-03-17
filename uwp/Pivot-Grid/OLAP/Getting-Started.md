@@ -212,7 +212,7 @@ After initializing the SfPivotGrid control, right-click the project in the solut
 
 In “Add Service Reference” dialog, enter the following address and click **Go** to add the online service.
 
-[http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc](http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc)
+[https://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc](https://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc)
 
 Also change the default namespace of service reference from "ServiceReference1" to "OlapManagerService", so that it will be easier to identify the OLAP service later. Finally, click **OK** to add the service reference.
 
@@ -273,10 +273,10 @@ namespace SfPivotGridDemo
 
         private void SetConnection()
         {
-            BasicHttpBinding basicHttpBinding = new BasicHttpBinding();
+            BasicHttpsBinding basicHttpBinding = new BasicHttpsBinding();
             basicHttpBinding.MaxReceivedMessageSize = 2147483647;
             basicHttpBinding.MaxBufferSize = 2147483647;
-            EndpointAddress address = new EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/");
+            EndpointAddress address = new EndpointAddress("https://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/");
             ChannelFactory<IOlapDataProvider> clientFactory = new ChannelFactory<IOlapDataProvider>(basicHttpBinding, address);
             this.clientChannel = clientFactory.CreateChannel();
         }
@@ -405,10 +405,10 @@ Namespace SfPivotGridDemo
         End Property
 
         Private Sub SetConnection()
-            Dim basicHttpBinding As BasicHttpBinding = New BasicHttpBinding()
+            Dim basicHttpBinding As BasicHttpsBinding = New BasicHttpsBinding()
             basicHttpBinding.MaxReceivedMessageSize = 2147483647
             basicHttpBinding.MaxBufferSize = 2147483647
-            Dim address As EndpointAddress = New EndpointAddress("http://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/")
+            Dim address As EndpointAddress = New EndpointAddress("https://bi.syncfusion.com/OlapUWPTestService/OlapManager.svc/")
             Dim clientFactory As ChannelFactory(Of IOlapDataProvider) = New ChannelFactory(Of IOlapDataProvider)(basicHttpBinding, address)
             Me.clientChannel = clientFactory.CreateChannel()
         End Sub
@@ -624,7 +624,7 @@ namespace OlapManagerService
         /// </summary>
         public Service1()
         {
-            string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+            string connectionString = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
             _dataProvider = new OlapDataProvider(connectionString);
         }
 
@@ -733,7 +733,7 @@ Namespace OlapManagerService
         Private ReadOnly _dataProvider As OlapDataProvider
 
         Public Sub New()
-            Dim connectionString As String = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"
+            Dim connectionString As String = "Data Source=https://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;"
             _dataProvider = New OlapDataProvider(connectionString)
         End Sub
 
