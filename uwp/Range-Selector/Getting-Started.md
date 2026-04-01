@@ -333,4 +333,6 @@ The following output is displayed as a result of the above code example.
 
 ![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
 
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-UWP-DataTimeRangeNavigator)
+
 

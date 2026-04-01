@@ -320,3 +320,5 @@ grid.Children.Add(sfLineSparkline);
 {%endhighlight%}
 
 ![Simple SfLineSparkline](Getting-started_images/GettingStarted_img4.jpeg)
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-UWP-Sparkline)

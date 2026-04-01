@@ -461,3 +461,5 @@ End Namespace
 Finally, run the application to generate the following output.
 
 ![GettingStarted-Relational](Getting-Started_images/Relational.png)
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-UWP-PivotChart/tree/master/GettingStartedRelational)
