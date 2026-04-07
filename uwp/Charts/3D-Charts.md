@@ -225,7 +225,7 @@ The following screenshot illustrates the result of the above code sample:
 
 ![Chart 3D support in UWP](3D-Charts_images/Charts-3D_img1.png)
 
-
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-UWP-SfChart3D)
 
 ## Adornments
 

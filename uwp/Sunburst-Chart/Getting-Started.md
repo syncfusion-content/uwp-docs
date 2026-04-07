@@ -515,4 +515,4 @@ Following is the final output screenshot,
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted_uwp5.png)
 
-You can find the complete getting started sample from this [`link.`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-703249641)
+You can find the complete getting started sample from this [`link.`](https://github.com/SyncfusionExamples/GettingStarted-UWP-SunburstChart)

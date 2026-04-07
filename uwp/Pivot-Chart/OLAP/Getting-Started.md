@@ -550,6 +550,8 @@ Finally, run the application to generate the following output.
 
 ![GettingStarted-OLAP](Getting-Started_images/PivotChart.png)
 
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-UWP-PivotChart/tree/master/GettingStartedOlap)
+
 ## Creating WCF service application
 
 Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
