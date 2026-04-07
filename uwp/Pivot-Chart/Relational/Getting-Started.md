@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with UWP Pivot Chart control | Syncfusion
 description: Learn here all about getting started with Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
@@ -461,3 +461,5 @@ End Namespace
 Finally, run the application to generate the following output.
 
 ![GettingStarted-Relational](Getting-Started_images/Relational.png)
+
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-UWP-PivotChart/tree/master/GettingStartedRelational)
