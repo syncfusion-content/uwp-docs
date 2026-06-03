@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with UWP Barcode control | Syncfusion
 description: Learn here about getting started with Syncfusion UWP Barcode (SfBarcode) control, its elements and more details.
-platform: UWP
+platform: uwp
 control: SfBarcode
 documentation: ug
 ---
