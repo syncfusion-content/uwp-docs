@@ -40,7 +40,6 @@ Now the SyncfusionControls for UWP XAML reference is added to the application re
 
 Refer to the following code to add a TreeMap in an application:
 
-
 {% highlight xaml %}
 
     <Page

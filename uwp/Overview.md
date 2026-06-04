@@ -87,6 +87,14 @@ If you are still unable to find the information that you are looking for in the 
 			<a href="/uwp/diagram/getting-started">SfDiagram</a><br/><br/>
 		</td>
 	</tr>
+		<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/heatmap/getting-started">SfSchedule</a><br/><br/>
+		</td>
+	</tr>
 	<tr>
 		<td>
 			LAYOUT<br/><br/>
