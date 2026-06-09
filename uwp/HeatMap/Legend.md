@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 # Legend in UWP HeatMap (SfHeatMap) control
-Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
+A Legend is a control used to summarize the color ranges in a HeatMap, providing a visual guide for mapping values to their corresponding colors.
 
 ## Create Legend
-Legend can be created with color mapping as shown below,
+Legend can be created with color mapping as shown below.
 
 {% highlight xaml %}
 
@@ -26,16 +26,15 @@ Legend can be created with color mapping as shown below,
 
 {% endhighlight %}
 
-Resultant legend will be like following image,
+The resulting legend will appear as shown in the following image.
 
 ![Legend_Image](Images/Legend.png)
 
 ## Legend Mode
-There are two modes for Legend
+There are two modes available for the legend:
 
 * Gradient
 * List
-
 
 ### Gradient:
 {% highlight xaml %}
@@ -56,7 +55,7 @@ There are two modes for Legend
 ![Legend_Image](Images/Legend_List.png)
 
 ## Orientation
-There are 2 types of Orientation, applicable for Gradient and List Mode
+There are two types of orientation available for both Gradient and List modes:
 * Horizontal
 * Vertical
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ### Creating HeatMap for Windows Store App
 
-TreeMap is available in the following assembly and namespace.
+HeatMap is available in the following assembly and namespace.
 
 Assembly: Syncfusion.SfHeatMap.UWP
 
@@ -26,7 +26,7 @@ Namespace: Syncfusion.UI.Xaml.HeatMap
 
 ### Add SfHeatMap from Toolbox
 
-Drag and drop the SfHeatMap control from the Toolbox to your application.
+Drag and drop the [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.html) control from the Toolbox to your application.
 
 ![Image to drap and drop the SfHeatMap](Getting-Started_images\treemapdesigner.png)
 
@@ -35,7 +35,7 @@ Drag and drop the SfHeatMap control from the Toolbox to your application.
 
 Now the SyncfusionControls for UWP XAML reference is added to the application references and the xmlns namespace code is generated in MainWindow.xaml .
 
-Refer to the following code to add a TreeMap in an application:
+Refer to the following code to add a HeatMap in an application:
 
 {% highlight xaml %}
 
@@ -57,7 +57,7 @@ Refer to the following code to add a TreeMap in an application:
 
 ## Prepare data
 
-Create a class to store Product information to be visualized using SfHeatMap 
+Create a class to store Product information to be visualized using [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.html). 
 
 {% highlight c# %}
 
@@ -90,7 +90,7 @@ public class Products : ObservableCollection<Product>
 
 ## Populate data
 
-Populate product information in a collection
+Populate product information within a collection.
 
 {% highlight xaml %}
 
@@ -125,9 +125,9 @@ Populate product information in a collection
 
 ## Map data into SfHeatMap 
 
-Now data is ready, next we need to configure data source and map rows and columns to visualize.
+Now the data is ready, the next step is to configure the data source and map rows and columns for visualization.
 
-* Prepare ItemsMapping add it in resource.
+* Prepare the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ItemsMapping.html) and add it to the resources, as shown in the following code:
 
 {% capture codesnippet1 %}
 {% highlight xaml %}
@@ -154,7 +154,7 @@ Now data is ready, next we need to configure data source and map rows and column
 {% endcapture %}
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
-* Set items source and mapping
+* Set items source and mapping.
 
 {% capture codesnippet2 %}
 {% highlight xaml %}
@@ -173,9 +173,9 @@ Now data is ready, next we need to configure data source and map rows and column
 
 ## Color Mapping
 
-Next we can configure color range for these values using color mapping
+Next, we can configure a color range for these values using [ColorMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ColorMapping.html).
 
-* Configure items mapping based on items source.
+* Configure the items mapping according to the items source.
 
 {% capture codesnippet3 %}
 {% highlight xaml %}
@@ -208,7 +208,7 @@ Next we can configure color range for these values using color mapping
 
 ## Legend
 
-A legend control is used to represent range value in a gradient, create a legend with the same color mapping as shown below.
+A legend control is used to represent value ranges in a gradient. Create a legend using the same color mapping as shown below.
 
 {% highlight xaml %}
 
@@ -216,7 +216,7 @@ A legend control is used to represent range value in a gradient, create a legend
 
 {% endhighlight %}
 
-Final MainPage.cs looks like this.
+The final MainPage.cs file looks like the following:
 
 {% highlight c# %}
 
@@ -261,7 +261,7 @@ namespace GettingStarted
 
 {% endhighlight %}
 
-Final MainPage.xaml looks like this.
+The final MainPage.xaml file looks like the following:
 
 {% highlight xaml %}
 

@@ -9,12 +9,12 @@ documentation: ug
 
 # Items Mapping in UWP HeatMap (SfHeatMap) control
 
-External data source can be mapped with HeatMap using [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ItemsMapping.html) property. It supports 2 kind of data source.
+External data can be mapped to a HeatMap using the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ItemsMapping.html) property, which supports two types of data sources:
 
-* In [TableMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.TableMapping.html) rows represents an objects in collection, columns represents numerical properties of that object.
-* In [CellMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.CellMapping.html) each cell represent an object in collection, this collection is grouped based on specific property to form as rows and columns.
+* In [TableMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.TableMapping.html) each row represents an object in the collection, while the columns represent its numerical properties.
+* In [CellMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.CellMapping.html) each cell represents an object in the collection, and the data is grouped by specific properties to form rows and columns.
 
-Let us see the difference between two types of mapping. Following table represents two different data structure to represent the same HeatMap.
+Let's examine the differences between these two mapping types. The following table illustrates two distinct data structures that represent the same HeatMap.
 
 <table>
 	<tr>
@@ -51,7 +51,7 @@ public class ProductInfo
 			Here, a single `ProductInfo` object represent a value for a particular product in a particular year
 		</td>
 		<td>
-			Here, a single `ProductInfo` object represents value for a particular product from year 2010 to 2015.	
+			Here, a single `ProductInfo` object represents value for a particular product from year 2020 to 2023.	
 		</td>
 	</tr>
 	<tr>
@@ -75,61 +75,57 @@ public class ProductInfo
 	<local:ProductInfo ProductName="Phone" Year="2022" Value="25"/>
 	<local:ProductInfo ProductName="Phone" Year="2023" Value="30"/>
 </local:Products>
-
 <syncfusion:CellMapping x:Key="CellMapping">
 	<syncfusion:CellMapping.Column>
 		<syncfusion:ColumnMapping 
-	PropertyName="ProductName" 
-	DisplayName="Product Name"/>
-	</syncfusion:CellMapping.Column>
+					PropertyName="ProductName" 
+					DisplayName="Product Name"/>
+					</syncfusion:CellMapping.Column>
 	<syncfusion:CellMapping.Row>
 		<syncfusion:ColumnMapping
-	PropertyName="Year"
-	DisplayName="Year"/>
+					PropertyName="Year"
+					DisplayName="Year"/>
 	</syncfusion:CellMapping.Row>
 	<syncfusion:CellMapping.Value>
 		<syncfusion:ColumnMapping 
-	PropertyName="Value"/>
+					PropertyName="Value"/>
 	</syncfusion:CellMapping.Value>
 </syncfusion:CellMapping>
 			{% endhighlight %}
 		</td>
 		<td>
 			{% highlight xaml %}
-
 <local:Products x:Key="productsData">
 	<local:ProductInfo ProductName="Desktop"
 		Y2020="5" Y2021="15" Y2022="10" Y2023="20"/>
 	<local:ProductInfo ProductName="Tablet"
-Y2020="20" Y2021="30" Y2022="25" Y2023="30"/>
+		Y2020="20" Y2021="30" Y2022="25" Y2023="30"/>
 	<local:ProductInfo ProductName="Laptop"
-Y2020="10" Y2021="5" Y2022="25" Y2023="20"/>
+		Y2020="10" Y2021="5" Y2022="25" Y2023="20"/>
 	<local:ProductInfo ProductName="Phone"
-Y2020="15" Y2021="30" Y2022="25" Y2023="30"/>
+		Y2020="15" Y2021="30" Y2022="25" Y2023="30"/>
 </local:Products>
-
 <syncfusion:TableMapping x:Key="TableMapping">
 	<syncfusion:TableMapping.HeaderMapping>
 		<syncfusion:ColumnMapping 
-PropertyName="ProductName" 
-DisplayName="Product Name"/>
+					PropertyName="ProductName" 
+					DisplayName="Product Name"/>
 	</syncfusion:TableMapping.HeaderMapping>
 	<syncfusion:TableMapping.ColumnMapping>
 		<syncfusion:ColumnMapping 
-PropertyName="Y2020" 
-DisplayName="2020"/>
-		<syncfusion:ColumnMapping 
-PropertyName="Y2021" 
-DisplayName="2021"/>
-		<syncfusion:ColumnMapping 
-PropertyName="Y2022"
-DisplayName="2022"/>
-		<syncfusion:ColumnMapping 
-PropertyName="Y2023" 
-DisplayName="2023"/>
+					PropertyName="Y2020" 
+					DisplayName="2020"/>
+							<syncfusion:ColumnMapping 
+					PropertyName="Y2021" 
+					DisplayName="2021"/>
+							<syncfusion:ColumnMapping 
+					PropertyName="Y2022"
+					DisplayName="2022"/>
+							<syncfusion:ColumnMapping 
+					PropertyName="Y2023" 
+					DisplayName="2023"/>
 	</syncfusion:TableMapping.ColumnMapping>
 </syncfusion:TableMapping> 
-
 			{% endhighlight %}
 		</td>
 	</tr>
