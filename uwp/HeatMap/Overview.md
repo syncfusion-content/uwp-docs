@@ -19,5 +19,3 @@ documentation: ug
 * Color mapping
 * Legend
 * Virtualization
-
-

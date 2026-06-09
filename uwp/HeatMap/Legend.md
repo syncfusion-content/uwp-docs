@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Legend in UWP HeatMap (SfHeatMap) control
-A Legend is a control used to summarize the color ranges in a HeatMap, providing a visual guide for mapping values to their corresponding colors.
+Legend is a control used to summarize the color ranges in a HeatMap, providing a visual guide for mapping values to their corresponding colors.
 
 ## Create Legend
 Legend can be created with color mapping as shown below.

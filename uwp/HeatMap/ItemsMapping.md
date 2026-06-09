@@ -9,7 +9,7 @@ documentation: ug
 
 # Items Mapping in UWP HeatMap (SfHeatMap) control
 
-External data can be mapped to a HeatMap using the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ItemsMapping.html) property, which supports two types of data sources:
+External data can be mapped to a `HeatMap` using the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ItemsMapping.html) property, which supports two types of data sources:
 
 * In [TableMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.TableMapping.html) each row represents an object in the collection, while the columns represent its numerical properties.
 * In [CellMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.CellMapping.html) each cell represents an object in the collection, and the data is grouped by specific properties to form rows and columns.
@@ -138,10 +138,3 @@ public class ProductInfo
 		</td>
 	</tr>
 </table>
-
-
-
-
-
- 	 
-
