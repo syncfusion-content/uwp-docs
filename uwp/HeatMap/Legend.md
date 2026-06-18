@@ -13,6 +13,7 @@ Legend is a control used to summarize the color ranges in a HeatMap, providing a
 ## Create Legend
 Legend can be created with color mapping as shown below.
 
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:ColorMappingCollection x:Key="colorMapping">
@@ -25,6 +26,7 @@ Legend can be created with color mapping as shown below.
 <syncfusion:SfHeatMapLegend ColorMappingCollection="{StaticResource colorMapping}"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 The resulting legend will appear as shown in the following image.
 
@@ -37,20 +39,24 @@ There are two modes available for the legend:
 * List
 
 ### Gradient:
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="Gradient" 
 	ColorMappingCollection="{StaticResource colorMapping}"/>
 {% endhighlight %}
+{% endtabs %}
 
 ![Legend_Image](Images/Legend_Gradient.png)
 
 ### List:
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend
 	LegendMode="List" 
 	ColorMappingCollection="{StaticResource colorMapping}"/>
 {% endhighlight %}
+{% endtabs %}
 
 ![Legend_Image](Images/Legend_List.png)
 
@@ -60,21 +66,25 @@ There are two types of orientation available for both Gradient and List modes:
 * Vertical
 
 ### Horizontal:
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="List" 
 	Orientation="Horizontal" 
 	ColorMappingCollection="{StaticResource colorMapping}"/>
 {% endhighlight %}
+{% endtabs %}
 
 ![Legend_Image](Images/Legend_Horizontal.png)
 
 ### Vertical:
+{% tabs %}
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
 	LegendMode="List" 
 	Orientation="Vertical" 
 	ColorMappingCollection="{StaticResource colorMapping}"/>
 {% endhighlight %}
+{% endtabs %}
 
 ![Legend_Image](Images/Legend_Vertical.png)

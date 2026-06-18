@@ -11,11 +11,11 @@ documentation: ug
 
 ### Creating HeatMap for Windows Store App
 
-HeatMap is available in the following assembly and namespace.
+`HeatMap` is available in the following assembly and namespace.
 
-Assembly: Syncfusion.SfHeatMap.UWP
+`Assembly`: Syncfusion.SfHeatMap.UWP
 
-Namespace: Syncfusion.UI.Xaml.HeatMap
+`Namespace`: Syncfusion.UI.Xaml.HeatMap
 
 ### Adding assembly reference
 
@@ -26,7 +26,7 @@ Namespace: Syncfusion.UI.Xaml.HeatMap
 
 ### Add SfHeatMap from Toolbox
 
-Drag and drop the [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.html) control from the Toolbox to your application.
+Drag and drop the [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html) control from the Toolbox to your application.
 
 ![Image to drap and drop the SfHeatMap](Getting-Started_images\treemapdesigner.png)
 
@@ -37,6 +37,7 @@ Now the SyncfusionControls for UWP XAML reference is added to the application re
 
 Refer to the following code to add a HeatMap in an application:
 
+{% tabs %}
 {% highlight xaml %}
 
 <Page
@@ -55,11 +56,13 @@ Refer to the following code to add a HeatMap in an application:
 </Page>
 
 {% endhighlight %}
+{% endtabs %}
 
-## Prepare data
+### Prepare data
 
-Create a class to store Product information to be visualized using [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.html). 
+Create a class to store Product information to be visualized using [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html). 
 
+{% tabs %}
 {% highlight c# %}
 
 public class Product
@@ -88,11 +91,13 @@ public class Products : ObservableCollection<Product>
 }
 
 {% endhighlight %}
+{% endtabs %}
 
-## Populate data
+### Populate data
 
 Populate product information within a collection.
 
+{% tabs %}
 {% highlight xaml %}
 
 <local:Products x:Key="productsData">
@@ -123,14 +128,16 @@ Populate product information within a collection.
 </local:Products>
 
 {% endhighlight %}
+{% endtabs %}
 
-## Map data into SfHeatMap 
+### Map data into SfHeatMap 
 
 Now the data is ready, the next step is to configure the data source and map rows and columns for visualization.
 
-* Prepare the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ItemsMapping.html) and add it to the resources, as shown in the following code:
+* Prepare the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html#Syncfusion_UI_Xaml_HeatMap_SfHeatMap_ItemsMapping) and add it to the resources, as shown in the following code:
 
 {% capture codesnippet1 %}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:TableMapping x:Key="ItemsMapping">
@@ -152,12 +159,14 @@ Now the data is ready, the next step is to configure the data source and map row
 </syncfusion:TableMapping>
 
 {% endhighlight %}
+{% endtabs %}
 {% endcapture %}
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }}
 
 * Set items source and mapping.
 
 {% capture codesnippet2 %}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfHeatMap ItemsSource="{StaticResource productsData}" 
@@ -165,6 +174,7 @@ Now the data is ready, the next step is to configure the data source and map row
 </syncfusion:SfHeatMap>
 
 {% endhighlight %}
+{% endtabs %}
 {% endcapture %}
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }}
 
@@ -172,13 +182,14 @@ Now the data is ready, the next step is to configure the data source and map row
 
 ![Showing grid with data](Getting-Started_images/Getting-Started_img2.jpeg)
 
-## Color Mapping
+### Color Mapping
 
 Next, we can configure a color range for these values using [ColorMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ColorMapping.html).
 
 * Configure the items mapping according to the items source.
 
 {% capture codesnippet3 %}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:ColorMappingCollection x:Key="colorMapping">
@@ -187,12 +198,14 @@ Next, we can configure a color range for these values using [ColorMapping](https
 </syncfusion:ColorMappingCollection>
 
 {% endhighlight %}
+{% endtabs %}
 {% endcapture %}
 {{ codesnippet3 | UnOrderList_Indent_Level_1 }}
 
-* Set ColorMapping
+* Set ColorMapping to [ColorMappingCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html#Syncfusion_UI_Xaml_HeatMap_SfHeatMap_ColorMappingCollection).
 
 {% capture codesnippet4 %}
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfHeatMap ItemsSource="{StaticResource productsData}" 
@@ -200,6 +213,7 @@ Next, we can configure a color range for these values using [ColorMapping](https
                       ColorMappingCollection="{StaticResource colorMapping}">
 
 {% endhighlight %}
+{% endtabs %}
 {% endcapture %}
 {{ codesnippet4 | UnOrderList_Indent_Level_1 }}
 
@@ -207,18 +221,21 @@ Next, we can configure a color range for these values using [ColorMapping](https
 
 ![Showing the grid data with color based on the range](Getting-Started_images/Getting-Started_img3.jpeg)
 
-## Legend
+### Legend
 
 A legend control is used to represent value ranges in a gradient. Create a legend using the same color mapping as shown below.
 
+{% tabs %}
 {% highlight xaml %}
 
 <syncfusion:SfHeatMapLegend ColorMappingCollection="{StaticResource colorMapping}"/>
 
 {% endhighlight %}
+{% endtabs %}
 
 The final MainPage.cs file looks like the following:
 
+{% tabs %}
 {% highlight c# %}
 
 namespace GettingStarted
@@ -261,9 +278,11 @@ namespace GettingStarted
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 The final MainPage.xaml file looks like the following:
 
+{% tabs %}
 {% highlight xaml %}
 
 <Window x:Class="GettingStarted.MainWindow"
@@ -331,3 +350,4 @@ The final MainPage.xaml file looks like the following:
 </Window>
 
 {% endhighlight %}
+{% endtabs %}
