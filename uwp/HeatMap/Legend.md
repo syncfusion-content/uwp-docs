@@ -38,7 +38,8 @@ There are two modes available for the legend:
 * Gradient
 * List
 
-### Gradient:
+### Gradient
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
@@ -49,7 +50,8 @@ There are two modes available for the legend:
 
 ![Legend_Image](Images/Legend_Gradient.png)
 
-### List:
+### List
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend
@@ -65,7 +67,8 @@ There are two types of orientation available for both Gradient and List modes:
 * Horizontal
 * Vertical
 
-### Horizontal:
+### Horizontal
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 
@@ -77,7 +80,8 @@ There are two types of orientation available for both Gradient and List modes:
 
 ![Legend_Image](Images/Legend_Horizontal.png)
 
-### Vertical:
+### Vertical
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfHeatMapLegend 

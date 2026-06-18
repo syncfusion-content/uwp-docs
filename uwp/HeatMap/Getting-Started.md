@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP HeatMap (SfHeatMap)
 
-### Creating HeatMap for Windows Store App
+## Creating HeatMap for Windows Store App
 
 `HeatMap` is available in the following assembly and namespace.
 
@@ -17,14 +17,14 @@ documentation: ug
 
 `Namespace`: Syncfusion.UI.Xaml.HeatMap
 
-### Adding assembly reference
+## Adding assembly reference
 
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
 
 ![Image to choose SyncfusionControls for UWP XAML](Getting-Started_images\Getting-Started_img1.png)
 
-### Add SfHeatMap from Toolbox
+## Add SfHeatMap from Toolbox
 
 Drag and drop the [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html) control from the Toolbox to your application.
 
@@ -58,7 +58,7 @@ Refer to the following code to add a HeatMap in an application:
 {% endhighlight %}
 {% endtabs %}
 
-### Prepare data
+## Prepare data
 
 Create a class to store Product information to be visualized using [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html). 
 
@@ -93,7 +93,7 @@ public class Products : ObservableCollection<Product>
 {% endhighlight %}
 {% endtabs %}
 
-### Populate data
+## Populate data
 
 Populate product information within a collection.
 
@@ -130,7 +130,7 @@ Populate product information within a collection.
 {% endhighlight %}
 {% endtabs %}
 
-### Map data into SfHeatMap 
+## Map data into SfHeatMap 
 
 Now the data is ready, the next step is to configure the data source and map rows and columns for visualization.
 
@@ -182,7 +182,7 @@ Now the data is ready, the next step is to configure the data source and map row
 
 ![Showing grid with data](Getting-Started_images/Getting-Started_img2.jpeg)
 
-### Color Mapping
+## Color Mapping
 
 Next, we can configure a color range for these values using [ColorMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ColorMapping.html).
 
@@ -221,7 +221,7 @@ Next, we can configure a color range for these values using [ColorMapping](https
 
 ![Showing the grid data with color based on the range](Getting-Started_images/Getting-Started_img3.jpeg)
 
-### Legend
+## Legend
 
 A legend control is used to represent value ranges in a gradient. Create a legend using the same color mapping as shown below.
 
