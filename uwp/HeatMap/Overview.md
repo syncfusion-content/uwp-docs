@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview of UWP HeatMap (SfHeatMap)
 
-**Essential® HeatMap UWP** visualizes tabular data by representing values with gradient colors instead of numeric text. Lower and higher values are displayed using different colors with varying gradients.
+[Essential® HeatMap UWP](https://www.syncfusion.com/uwp-ui-controls/heatmap) visualizes tabular data by representing values with gradient colors instead of numeric text. Lower and higher values are displayed using different colors with varying gradients.
 
 ![Overview_Image](Images/Overview_img1.jpeg)
 

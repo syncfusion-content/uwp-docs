@@ -9,7 +9,7 @@ documentation: ug
 
 # Items Mapping in UWP HeatMap (SfHeatMap) control
 
-External data can be mapped to a `HeatMap` using the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ItemsMapping.html) property, which supports two types of data sources:
+External data can be mapped to a `HeatMap` using the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html#Syncfusion_UI_Xaml_HeatMap_SfHeatMap_ItemsMapping) property, which supports two types of data sources:
 
 * In [TableMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.TableMapping.html) each row represents an object in the collection, while the columns represent its numerical properties.
 * In [CellMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.CellMapping.html) each cell represents an object in the collection, and the data is grouped by specific properties to form rows and columns.
@@ -23,6 +23,7 @@ Let's examine the differences between these two mapping types. The following tab
 	</tr>
 	<tr>
 		<td>
+			{% tabs %}
 			{% highlight C# %}
 public class ProductInfo
 {
@@ -44,18 +45,20 @@ public class ProductInfo
 
 }
 			{% endhighlight %}
+			{% endtabs %}
 		</td>
 	</tr>
 	<tr>
 		<td>
-			Here, a single `ProductInfo` object represent a value for a particular product in a particular year
+			Here, a single <code>ProductInfo</code> object represent a value for a particular product in a particular year
 		</td>
 		<td>
-			Here, a single `ProductInfo` object represents value for a particular product from year 2020 to 2023.	
+			Here, a single <code>ProductInfo</code> object represents value for a particular product from year 2020 to 2023.	
 		</td>
 	</tr>
 	<tr>
 		<td>
+			{% tabs %}
 			{% highlight xaml %}
 <local:Products x:Key="productsData">
 	<local:ProductInfo ProductName="Desktop" Year="2020" Value="5"/>
@@ -92,8 +95,10 @@ public class ProductInfo
 	</syncfusion:CellMapping.Value>
 </syncfusion:CellMapping>
 			{% endhighlight %}
+			{% endtabs %}
 		</td>
 		<td>
+			{% tabs %}
 			{% highlight xaml %}
 <local:Products x:Key="productsData">
 	<local:ProductInfo ProductName="Desktop"
@@ -127,6 +132,7 @@ public class ProductInfo
 	</syncfusion:TableMapping.ColumnMapping>
 </syncfusion:TableMapping> 
 			{% endhighlight %}
+			{% endtabs %}
 		</td>
 	</tr>
 	<tr>
