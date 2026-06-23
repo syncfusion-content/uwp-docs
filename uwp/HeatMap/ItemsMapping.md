@@ -32,8 +32,10 @@ public class ProductInfo
 	public double Value { get; set; }
 }
 			{% endhighlight %}
+			{% endtabs %}
 		</td>
 		<td>
+			{% tabs %}
 			{% highlight C# %}
 public class ProductInfo
 {
