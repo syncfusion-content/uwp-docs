@@ -13,10 +13,10 @@ Schedule is used to provide Outlook-like scheduling. The Schedule control allows
 
 ## Features
 
-* **Multiple built-in views**: Supports Day, Week, WorkWeek, Month, and Timeline views to display appointments in different layouts.
-* **Appointments collection**: Add and manage appointments using the built-in Appointments collection, which supports dynamic updates.
-* **Built-in appointment editor**: Provides a customizable appointment editor for creating and modifying events.
-* **Drag-and-drop interaction**: Allows users to move appointments by dragging with event-based customization.
+* **Multiple built in views**: Supports Day, Week, WorkWeek, Month, and Timeline views to display appointments in different layouts.
+* **Appointments collection**: Add and manage appointments using the built in Appointments collection, which supports dynamic updates.
+* **Built in appointment editor**: Provides a customizable appointment editor for creating and modifying events.
+* **Drag and drop interaction**: Allows users to move appointments by dragging with event-based customization.
 * **Appointment resizing**: Enables adjusting appointment duration using resize interactions.
 * **Recurrence support**: Supports recurring appointments using recurrence rules.
 * **Localization support**: Allows adapting the scheduler UI to different languages and regional formats.
