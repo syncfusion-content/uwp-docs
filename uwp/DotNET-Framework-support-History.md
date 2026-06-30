@@ -64,6 +64,10 @@ Yes</td></tr>
 SfDiagram</td><td>
 Yes</td></tr>
 <tr>
+</td><td>
+SfHeatMap</td><td>
+Yes</td></tr>
+<tr>
 <td>
 LAYOUT</td><td>
 SfAccordion</td><td>
