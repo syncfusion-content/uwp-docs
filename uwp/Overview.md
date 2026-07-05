@@ -6,7 +6,7 @@ control: overview
 documentation: ug
 ---
 
-# Welcome to Syncfusion<sup>&reg;</sup> Essential Studio<sup>&reg;</sup> for UWP
+# Welcome to Syncfusion® Essential Studio® for UWP
 
 Essential<sup>&reg;</sup> UWP is a comprehensive collection of 35+ enterprise-grade UWP components for building windows store applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.
 
@@ -85,6 +85,14 @@ If you are still unable to find the information that you are looking for in the 
 		</td>
 		<td>
 			<a href="/uwp/diagram/getting-started">SfDiagram</a><br/><br/>
+		</td>
+	</tr>
+		<tr>
+		<td>
+			<br/><br/>
+		</td>
+		<td>
+			<a href="/uwp/heatmap/getting-started">SfHeatMap</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
