@@ -356,7 +356,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/uwp/pdf-viewer/getting-started">SfPdfViewer</a><br/><br/>
+			<a href="/pdf/pdf-viewer/uwp/getting-started">SfPdfViewer</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
@@ -364,7 +364,7 @@ If you are still unable to find the information that you are looking for in the 
 			<br/><br/>
 		</td>
 		<td>
-			<a href="/file-formats/xlsio/overview">XlsIO</a><br/><br/>
+			<a href="/document-processing/excel/excel-library/net/overview">XlsIO</a><br/><br/>
 		</td>
 	</tr>
 	<tr>
