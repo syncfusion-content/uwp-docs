@@ -9,9 +9,9 @@ documentation: ug
 
 # Blackout Dates
 
-You can restrict/allocate certain month cell as blackout days using **MonthBlockOutDates** of schedule, so that you can allocate those cells for predefined events/activities like Scheduled maintenance, planned leave etc.
+You can restrict/allocate certain month cells as blackout days using **MonthBlockOutDates** of the schedule, so that you can allocate those cells for predefined events/activities like scheduled maintenance, planned leave, etc.
 
->**Note:-BlockOutDates is only applicable in Month view.**
+>**Note: BlockOutDates is only applicable in Month view.**
 
 {% highlight c# %}
 

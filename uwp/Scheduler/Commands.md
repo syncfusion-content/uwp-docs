@@ -9,7 +9,7 @@ documentation: ug
 
 # Commands
 
-Operations that are done by context menu can also be performed using Schedule commands. The following actions of context menu can be handled by executing schedule commands in the application.
+Operations that are done by the context menu can also be performed using Schedule commands. The following actions of the context menu can be handled by executing schedule commands in the application.
 
 * Adding new appointment
 * Editing appointment
@@ -20,7 +20,7 @@ Operations that are done by context menu can also be performed using Schedule co
 ## AddNewCommand
 
 
-By triggering **AddNewCommand** of ScheduleCommands, the editor window can be opened with all the field with empty value based on last selected date time, without using any UI. After that you can specify the required value and save the appointment.
+By triggering **AddNewCommand** of ScheduleCommands, the editor window can be opened with all fields with empty values based on the last selected date time, without using any UI. After that, you can specify the required values and save the appointment.
 
 {% highlight c# %}
 
@@ -30,7 +30,7 @@ By triggering **AddNewCommand** of ScheduleCommands, the editor window can be op
 
 ## EditCommand
 
-By triggering **EditCommand** of ScheduleCommands, the editor window can be opened with all the field with the last selected appointment detail, without using any UI. After that you can modify the required value and save the appointment.
+By triggering **EditCommand** of ScheduleCommands, the editor window can be opened with all the fields with the last selected appointment details, without using any UI. After that, you can modify the required values and save the appointment.
 
 {% highlight c# %}
 
@@ -40,7 +40,7 @@ By triggering **EditCommand** of ScheduleCommands, the editor window can be open
 
 ## CopyCommand
 
-By triggering  **CopyCommand** of ScheduleCommands, last selected schedule appointment in schedule can be copied.
+By triggering **CopyCommand** of ScheduleCommands, the last selected schedule appointment in the schedule can be copied.
 
 {% highlight c# %}
 
@@ -50,7 +50,7 @@ By triggering  **CopyCommand** of ScheduleCommands, last selected schedule appoi
 
 ## PasteCommand
 
-By triggering **PasteCommand** of ScheduleCommands, last copied schedule appointment can be pasted in SfSchedule.
+By triggering **PasteCommand** of ScheduleCommands, the last copied schedule appointment can be pasted in SfSchedule.
 
 {% highlight c# %}
 

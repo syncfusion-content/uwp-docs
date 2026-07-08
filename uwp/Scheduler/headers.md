@@ -9,11 +9,11 @@ documentation: ug
 
 # Headers in UWP Scheduler (SfSchedule)
 
-You can customize the header of the Schedule using [SfSchedule.ScheduleHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleHeaderStyle) property in Schedule and [ScheduleHeaderStyle.HeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderHeight) property in `ScheduleHeaderStyle` of Schedule.
+You can customize the header of the Schedule using the [SfSchedule.ScheduleHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleHeaderStyle) property in the Schedule and the [ScheduleHeaderStyle.HeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderHeight) property in `ScheduleHeaderStyle` of the Schedule.
 
 ## Header Height
 
-You can customize the height for the Header in Schedule using `HeaderHeight` in `ScheduleHeaderStyle` of Schedule.
+You can customize the height for the Header in the Schedule using `HeaderHeight` in `ScheduleHeaderStyle` of the Schedule.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -36,9 +36,9 @@ You can customize the height for the Header in Schedule using `HeaderHeight` in 
 
 ## Appearance
 
-You can change the header format and style using `ScheduleHeaderStyle` property in schedule.
+You can change the header format and style using the `ScheduleHeaderStyle` property in the schedule.
 
-You can change the background color,text style and text size using properties such as [ScheduleHeaderStyle.HeaderBackground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderBackground), [ScheduleHeaderStyle.HeaderTextStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderTextStyle), [ScheduleHeaderStyle.HeaderTextSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderTextSize), [ScheduleHeaderStyle.HeaderTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderTextColor), of Header using `ScheduleHeaderStyle` property in schedule.
+You can change the background color, text style, and text size using properties such as [ScheduleHeaderStyle.HeaderBackground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderBackground), [ScheduleHeaderStyle.HeaderTextStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderTextStyle), [ScheduleHeaderStyle.HeaderTextSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderTextSize), [ScheduleHeaderStyle.HeaderTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleHeaderStyle_HeaderTextColor), of the Header using the `ScheduleHeaderStyle` property in the schedule.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -70,12 +70,12 @@ You can change the background color,text style and text size using properties su
 
 ## Loading Custom Headers
 
-You can collapse the default header of schedule by setting `HeaderHeight` property of `ScheduleHeaderStyle` of `SfSchedule` as 0. Instead you can use your own custom header for it. While navigating views in schedule, text labels available in the header will be changed based on it visible dates, so while using custom header , respective text value can be obtained from the `VisibleDatesChanging` event of `SfSchedule`.
+You can collapse the default header of the schedule by setting the `HeaderHeight` property of `ScheduleHeaderStyle` of `SfSchedule` to 0. Instead, you can use your own custom header for it. While navigating views in the schedule, text labels available in the header will be changed based on the visible dates, so while using a custom header, the respective text value can be obtained from the `VisibleDatesChanging` event of `SfSchedule`.
 
 {% highlight c# %}
     
     //triggering the visible dates changing event.
-    schedule.VisibleDatesChanging += Schedule_VisibleDatesChanging; 
+    schedule.VisibleDatesChanging += Schedule_VisibleDatesChanging;
 
     private void Schedule_VisibleDatesChanging(object sender, VisibleDatesChangingEventArgs e)
         {
@@ -93,4 +93,4 @@ You can collapse the default header of schedule by setting `HeaderHeight` proper
 
 {% endhighlight %}
 
-You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HeaderSample_UWP-317998418.zip) 
+You can get the complete sample for customizing the Header of the Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HeaderSample_UWP-317998418.zip).
