@@ -9,7 +9,7 @@ documentation: ug
 
 # Enabling or Disabling Editor and ContextMenu
 
-You can enable or disable the Schedule appointment editor and context menu in the schedule using the **AllowEditing** property, and its default value is true. If the **AllowEditing** property value is set to false, you cannot create or edit the schedule appointment using the editor or context menu.
+You can enable or disable the Schedule appointment editor and context menu in schedule using **AllowEditing** property and its default value is true. If the **AllowEditing** property value is set as false, you could not create or edit the schedule appointment using editor or context menu.
 
 {% tabs %}
 {% highlight xaml %}
