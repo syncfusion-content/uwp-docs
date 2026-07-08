@@ -61,7 +61,7 @@ chart.Series.Add(series);
 
 ### Bar
 
-Bar series are similar to column series, excepts its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html).
+Bar series are similar to column series, except for its orientation. The following code examples shows how to use [`BarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html).
 
 {% tabs %}
 
@@ -87,6 +87,8 @@ BarSeries series = new BarSeries()
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
 
 };
+
+chart.Series.Add(series);
 
 {% endhighlight %}
 
@@ -144,13 +146,13 @@ chart.Series.Add(series2);
 
 ### Line
 
-Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html) using given data
+Line series join points on a plot by straight lines, showing data trends at equal intervals. The following code example explains how to create a simple [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html) using the given data.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:LineSeries  XBindingPath="Year
+<chart:LineSeries  XBindingPath="Year"
 
 ItemsSource="{Binding List}" YBindingPath="India"               
 

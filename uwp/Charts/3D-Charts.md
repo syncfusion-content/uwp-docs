@@ -75,7 +75,7 @@ The following steps explain how to create 3D charts.
 
 ### Add Chart Series to Chart
 
-To begin with plotting data choose from a wide variety of graphical representations available in the Chart library (e.g., 3DColumn series, 3D PieSeries). The graph selected will depend on the scenario of the user and the nature of the data.
+To begin with plotting data, choose from a wide variety of graphical representations available in the Chart library (e.g., 3DColumn series, 3D PieSeries). The graph selected will depend on the user's scenario and the nature of the data.
 
 {% highlight xml %}
 
@@ -133,17 +133,17 @@ public class UsersViewModel
 
    DateTime date = DateTime.Today;
 
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5),NoOfUsers=1000});
+   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 1000 });
 
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5),NoOfUsers = 5000 });
+   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 5000 });
 
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
+   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 3000 });
 
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 4000 });
+   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 4000 });
 
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
+   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 2000 });
 
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 1000 });
+   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 1000 });
 
   }
 
@@ -161,6 +161,8 @@ public class UsersViewModel
 ### Binding Data to ChartSeries
 
 Add the above UsersViewModel to the DataContext of the chart, bind the data source to the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property of the 3D column series, and then map the data using [`XBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XyDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyDataSeries3D_YBindingPath) properties.
+
+>Note:- N> The data source must implement the `IEnumerable` interface. For dynamic updates, use `ObservableCollection<T>`. To reflect property changes in existing items, implement `INotifyPropertyChanged`.
 
 {% highlight xml %}
 

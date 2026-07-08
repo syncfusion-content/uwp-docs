@@ -11,6 +11,8 @@ documentation: ug
 
 The data collection that is passed to the chart can have NaN or Null values that are considered as empty points. The empty point can be defined as in the below code example.
 
+{% tabs %}
+
 {% highlight C# %}
 
 Fruits.Add(new Model() { FruitName = "Mango", People = 5 });
@@ -27,6 +29,8 @@ Fruits.Add(new Model() { FruitName = "Blueberry", People = 20 });
 
 {% endhighlight %}
 
+{% endtabs %}
+
 By default, [`ShowEmptyPoints`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowEmptyPoints) property is false. So the empty points will not be rendered as in below screenshots:
 
 ![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_1.png)
@@ -40,7 +44,7 @@ By default, [`ShowEmptyPoints`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI
 
 ## Display Empty Points
 
-You can show these empty points by setting the [`ShowEmptyPoints`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowEmptyPoints) property as True. So we need to define the value for this empty points and that can be defined using [`EmptyPointValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointValue) property.
+You can show these empty points by setting the [`ShowEmptyPoints`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowEmptyPoints) property to true. So we need to define the value for these empty points and that can be defined using [`EmptyPointValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointValue) property.
 
 This is an enum property having the following values: 
 

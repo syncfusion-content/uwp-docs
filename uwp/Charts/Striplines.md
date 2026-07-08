@@ -115,7 +115,7 @@ chart.SecondaryAxis = axis;
 
 ## Label 
 
-We can define any text inside the stripline using [`Label`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Label) property. Also [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provide various customization options for this label like alignment, templates, etc.
+We can define any text inside the stripline using [`Label`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Label) property. Also [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides various customization options for this label like alignment, templates, etc.
 
 The [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelHorizontalAlignment) and [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_LabelVerticalAlignment) property can be used for positioning the labels inside the stripline.
 

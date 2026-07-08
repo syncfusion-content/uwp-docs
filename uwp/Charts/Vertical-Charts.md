@@ -68,7 +68,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## IsTransposed
 
-This property used to switch the plotting of the series to vertical.
+This property is used to switch the plotting of the series to vertical.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ The following example demonstrates the vertical charts.
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  ShowGridLines="False“ >
+<chart:CategoryAxis  ShowGridLines="False" >
 
 </chart:CategoryAxis>
 
@@ -188,7 +188,7 @@ chart.ColumnDefinitions.Add(new ChartColumnDefinition());
 chart.PrimaryAxis = new CategoryAxis()
 {
 
-    ShowGridLines = true
+    ShowGridLines = false
 
 };
 
@@ -237,7 +237,7 @@ LineSeries series2 = new LineSeries()
 
     XBindingPath = "Brand",
 
-    YBindingPath = "position",
+    YBindingPath = "Position",
 
     YAxis = new NumericalAxis()
 

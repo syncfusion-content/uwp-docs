@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with UWP Charts (SfChart)
 
-This section explains you the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
+This section explains the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
 ## Adding Chart Reference
 
-Refer this [article](https://help.syncfusion.com/uwp/add-syncfusion-controls) to know how to add Syncfusion® controls in Visual Studio projects through various way. You can also refer [this](https://help.syncfusion.com/uwp/control-dependencies) link to know about the assemblies required for adding Chart to your project. 
+Refer this [article](https://help.syncfusion.com/uwp/add-syncfusion-controls) to know how to add Syncfusion® controls in Visual Studio projects through various ways. You can also refer [this](https://help.syncfusion.com/uwp/control-dependencies) link to know about the assemblies required for adding Chart to your project. 
  
 ## Initialize Chart
 
@@ -88,11 +88,11 @@ chart.SecondaryAxis = secondaryAxis
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html).
+Run the project and check if you get the following output to make sure you have configured your project properly to add [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html).
 
 ![Initializing UWP Chart](getting-started_images/uwp-chart-initializing.png)
 
-N> [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bind to the chart, if you didn’t specify the axes explicitly. 
+N> [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports default axes, so that these axes ([`PrimaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis)) will get generated automatically based upon the data bound to the chart, if you didn’t specify the axes explicitly. 
 
 ## Initialize view model
 
@@ -263,7 +263,7 @@ secondaryAxis.Header = "Height(in cm)";
 chart.SecondaryAxis = secondaryAxis;
 
 
-//Initialize the two series for SfChart
+//Initialize the series for SfChart
 ColumnSeries series = new ColumnSeries();
 
 series.ItemsSource = (new ViewModel()).Data;
@@ -295,10 +295,10 @@ secondaryAxis.Header = "Height(in cm)"
 
 chart.SecondaryAxis = secondaryAxis        
 
-'Initialize the two series for SfChart
+'Initialize the series for SfChart
 Dim series As New ColumnSeries()
 
-series.ItemsSource = New ViewModel().Demands
+series.ItemsSource = New ViewModel().Data
 series.XBindingPath = "Name"
 series.YBindingPath = "Height"
         
@@ -314,7 +314,7 @@ N> Syncfusion® Chart also supports rendering combination of multiple series. Re
 
 ## Add Title
 
-The header of the chart acts as the title, to provide quick information to the user about the data being plotted in the chart. You can set title using  [`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) property of chart as shown below.
+The header of the chart acts as the title, to provide quick information to the user about the data being plotted in the chart. You can set title using [`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of chart as shown below.
 
 {% tabs %} 
 
@@ -347,7 +347,7 @@ chart.Header = "Chart"
 
 ## Enable data labels
 
-You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentsInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentSeries.html#Syncfusion_UI_Xaml_Charts_AdornmentSeries_AdornmentsInfo) property of [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html). By default, there is no label displayed, you have to set [`ShowLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) as True.
+You can add data labels to improve the readability of the chart and it can be enabled using [`AdornmentsInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AdornmentSeries.html#Syncfusion_UI_Xaml_Charts_AdornmentSeries_AdornmentsInfo) property of [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html). By default, no label is displayed. You have to set the [`ShowLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property of [`ChartAdornmentInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo.html) to true.
 
 {% tabs %} 
 
@@ -383,7 +383,7 @@ series.AdornmentsInfo = New ChartAdornmentInfo() With {.ShowLabel = True}
 
 {% endtabs %}  
 
-Refer [`this`](https://help.syncfusion.com/uwp/charts/adornments) link  to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
+Refer [`this`](https://help.syncfusion.com/uwp/charts/adornments) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize chart adornments.
 
 ## Enable legend
 
@@ -423,7 +423,7 @@ chart.Legend = New ChartLegend ()
 
 {% endtabs %}  
 
-Additionally, you need to set label for each series using [`Label`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in corresponding legend.
+Additionally, you need to set a label for each series using the [`Label`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Label) property of ChartSeries, which will be displayed in corresponding legend.
 
 {% tabs %} 
 
@@ -509,7 +509,7 @@ series.ShowTooltip = True
 
 Refer [`this`](https://help.syncfusion.com/uwp/charts/interactive-features#tooltip) link to learn more about the options available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) to customize tooltip.
 
-The following code example gives you the complete code of above configurations.
+The following code example gives you the complete code of the above configurations.
 
 {% tabs %} 
 
@@ -670,7 +670,7 @@ End Class
 
 {% endtabs %}
 
-The following chart is created as a result of the above codes.
+The following chart is created as a result of the above code.
 
 ![Tooltip support in UWP Chart](getting-started_images/uwp-chart-tooltip-support.png)
 

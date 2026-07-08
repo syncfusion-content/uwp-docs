@@ -9,13 +9,13 @@ documentation: ug
 
 # Styling and Customization in UWP Charts (SfChart)
 
-[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) support various customizing and styling options that allows you to enrich the application.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports various customizing and styling options that allow you to enrich the application.
 
 ## Palettes
 
-[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
 
-We have some predefined palette such as
+The following predefined palettes are available:
 
 * Metro
 * AutumnBrights

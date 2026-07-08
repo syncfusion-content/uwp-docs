@@ -162,7 +162,7 @@ The following is the code example of this trend line.
 
 {% highlight xaml %}
 
-<syncfusion:FatLineSeries XBindingPath="Date"
+<syncfusion:FastLineSeries XBindingPath="Date"
 
 YBindingPath="Value" 
 
@@ -210,7 +210,7 @@ Trendline trendline = new Trendline()
 
 fastSeries.Trendlines.Add(trendline);
 
-chart.Series.Add(fastS
+chart.Series.Add(fastSeries);
 
 {% endhighlight %}
 
@@ -296,7 +296,7 @@ N> This is not recommended for the data values having zero and negative value.
 
 This trend line is used for comparing multiple sets of data that increase at specific rate. 
 
-This will be calculates using the following formula:
+This will be calculated using the following formula:
 
 (Intercept*Math.Pow(xValue,Slope)) (Where xValue is underlying x value).
 

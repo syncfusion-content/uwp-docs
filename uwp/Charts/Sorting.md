@@ -9,18 +9,18 @@ documentation: ug
 
 # Sorting in UWP Charts (SfChart)
 
-Chart provides the support for sorting the data point rendering either in ascending or descending based on X or Y axis.
+Chart provides support for sorting the data point rendering in either ascending or descending order based on the X or Y axis.
 
 ### Enable Sorting
-This [`IsSortData`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_IsSortData) property used to enable the sorting in series.
+The [`IsSortData`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_IsSortData) property is used to enable sorting in the series.
 
 ### Changing sorting direction
 
-The [`SortDirection`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortDirection) property defines the direction of sorting either in Ascending or Descending based on x or y value.
+The [`SortDirection`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortDirection) property defines the direction of sorting in either Ascending or Descending order based on the X or Y value.
 
 ### Changing sorting axis
 
-This [`SortBy`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortBy) property decides whether sorting should be done based on [`X`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SortingAxis.html#Syncfusion_UI_Xaml_Charts_SortingAxis_X) or [`Y`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SortingAxis.html#Syncfusion_UI_Xaml_Charts_SortingAxis_Y) values.
+The [`SortBy`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_SortBy) property decides whether sorting should be done based on the [`X`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SortingAxis.html#Syncfusion_UI_Xaml_Charts_SortingAxis_X) or [`Y`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SortingAxis.html#Syncfusion_UI_Xaml_Charts_SortingAxis_Y) values.
 
 
 The following example illustrates a simple chart (without apply sorting):
@@ -30,7 +30,7 @@ The following example illustrates a simple chart (without apply sorting):
 
 ## Sorting for category(non-linear) axis
 
-**Sorting x axis in ascending order**:
+### Sorting x axis in ascending order
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ chart.Series.Add(columnSeries);
 ![Axis with sorting in UWP Chart](sorting_chart_images/sorting_2.png)
 
 
-**Sorting x-axis in descending order**:
+### Sorting x-axis in descending order
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ chart.Series.Add(columnSeries);
 ![Sorting x-axis in descending order in UWP Chart](sorting_chart_images/sorting_3.png)
 
 
-**Sorting y axis in ascending order**:
+### Sorting y axis in ascending order
 
 {% tabs %}
 
@@ -168,7 +168,7 @@ chart.Series.Add(columnSeries);
 ![Sorting y-axis in ascending order in UWP Chart](sorting_chart_images/sorting_4.png)
 
 
-**Sorting y axis in descending order**:
+### Sorting y axis in descending order
 
 {% tabs %}
 
@@ -227,7 +227,7 @@ The following example illustrates a simple chart having [`AutumnBrights`](https:
 
 ![Axis with sorting in UWP Chart](sorting_chart_images/linearaxis_nosort.png)
 
-**Sorting x axis in ascending order**
+### Sorting x axis in ascending order
 
 {% tabs %}
 
@@ -274,7 +274,7 @@ chart.Series.Add(columnSeries);
 
 ![Sorting x-axis in ascending order in UWP Chart](sorting_chart_images/linearaxis_sort1.png)
 
-**Sorting x axis in descending order**
+### Sorting x axis in descending order
 
 {% tabs %}
 
@@ -323,7 +323,7 @@ chart.Series.Add(columnSeries);
 
 ![Sorting x-axis in descending order in UWP Chart](sorting_chart_images/linearaxis_sort2.png)
 
-**Sorting y axis in ascending order**
+### Sorting y axis in ascending order
 
 {% tabs %}
 
@@ -371,7 +371,7 @@ chart.Series.Add(columnSeries);
 
 ![Sorting y axis in ascending order in UWP Chart](sorting_chart_images/linearaxis_sort3.png)
 
-**Sorting y axis in descending order**
+### Sorting y axis in descending order
 
 {% tabs %}
 

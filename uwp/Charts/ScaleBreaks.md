@@ -2,7 +2,7 @@
 layout: post
 title: Scale Breaks in UWP Charts control | Syncfusion
 description: Learn here about how to add proper charts area Scale Breaks support in Syncfusion® UWP Charts (SfChart) control and more.
-platform: wpf
+platform: uwp
 control: SfChart
 documentation: ug
 ---
@@ -14,7 +14,7 @@ Scale break is a stripe drawn in the chart area to denote the break in the conti
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides [`Start`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Start) and [`End`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_End) properties for defining the scale break range (ranges that needs to be skipped). These values are based on axis values. 
 
-The following image has data points with both greater and smaller magnitude, but the segments with smaller values is not visualized properly.
+The following image has data points with both greater and smaller magnitudes, but the segments with smaller values are not visualized properly.
 
 ![Positioning the scale breaks in UWP Chart](ScaleBreak_images/ScaleBreak_img1.jpeg)
 
@@ -74,7 +74,7 @@ Break position is determined based on the following factors:
 
 Based on the number of data points that fall in axis ranges (other than break range) scale break will be positioned.
 
-In the below image the range [0,350] contains maximum number of data compared to the range 
+In the below image the range [0,350] contains the maximum number of data points compared to the range
 
 [8000, 10000] hence the break is positioned in such a way that allocates more space to the range [0,350].
 

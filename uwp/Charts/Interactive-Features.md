@@ -25,7 +25,7 @@ The following interactive features are supported in SfChart.
 
 The [`Tooltip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_Tooltip) feature allows you to display any information over a [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html). It is used in conjunction with the pointer or at the data point position. It appears when the mouse hovers over any chart segment. It is set to display the metadata of the particular segment or data point.
 
-By default, a small box containing the data points y values are displayed as the Tooltip. The y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html). For example, a single y value is usually displayed in the Column and [`BarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html). In the [`FinancialSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html), high, low, open, and close values are displayed in Tooltip.
+By default, a small box containing the data point's Y values is displayed as the Tooltip. The Y values vary depending on the [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html). For example, a single Y value is usually displayed in the Column and [`BarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html). In the [`FinancialSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html), high, low, open, and close values are displayed in the Tooltip.
 
 The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowTooltip) property as in the below code snippet.
 
@@ -158,7 +158,7 @@ chart.Behaviors.Add(chartTooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip at pointer position in WPF Chart](interactive-features_images/uwp-charts-interactive-features-positioning-tooltip.png)
+![Tooltip at pointer position in UWP Chart](interactive-features_images/uwp-charts-interactive-features-positioning-tooltip.png)
 
 ### Customizing the tooltip background
 
@@ -178,7 +178,7 @@ The following code example explains applying the style for tooltip.
 </chart:SfChart.Resources>
 ...
 <chart:SfChart.Behaviors>
-    <chart:ChartTooltipBehavior LabelStyle = {StaticResource style}/>
+    <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
 </chart:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -198,7 +198,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip background style customization in WPF Chart](interactive-features_images/uwp-charts-interactive-features-customizing-tooltip.png)
+![Tooltip background style customization in UWP Chart](interactive-features_images/uwp-charts-interactive-features-customizing-tooltip.png)
 
 ### Customizing the tooltip label style
 
@@ -218,7 +218,7 @@ The following code example explains applying the style for a tooltip label.
 </chart:SfChart.Resources>
 ...
 <chart:SfChart.Behaviors>
-   <chart:ChartTooltipBehavior LabelStyle = {StaticResource labelStyle}/>
+   <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
 </chart:SfChart.Behaviors>
 
 {% endhighlight %}
@@ -238,7 +238,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 {% endtabs %}
 
-![Tooltip label style customization in WPF Chart](interactive-features_images/uwp-charts-interactive-features-customizing-tooltip-label-style.png)
+![Tooltip label style customization in UWP Chart](interactive-features_images/uwp-charts-interactive-features-customizing-tooltip-label-style.png)
 
 ### Customizing tooltip using ChartTooltip attached properties
 

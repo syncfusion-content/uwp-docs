@@ -65,15 +65,15 @@ chart.Annotations.Add(annotation);
 
 [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations) can be positioned in plot area based on [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1)  properties and for image and shape annotations you need to specify [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Y2) properties. These X and Y values can be specified with axis units or pixel units and this can be identified using [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) property.
 
-**Positioning** **based** **on** **CoordinateUnit** **as** **Axis**
+### Positioning based on CoordinateUnit as Axis
 
 To position based on axis you need to set the X1 and Y1, X2 and Y2 (if needed) properties based on the primary and secondary axis range values and [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) as [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html#Syncfusion_UI_Xaml_Charts_CoordinateUnit_Axis). 
 
-**Positioning** **based** **on** **CoordinateUnit** **as** **Pixels**
+### Positioning based on CoordinateUnit as Pixels
 
 To position based on the pixel values you have to set the [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) as [`Pixel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html#Syncfusion_UI_Xaml_Charts_CoordinateUnit_Pixel) and the pixel values in X1 and Y1, X2 and Y2 properties in Annotation.
 
-**Adding** **Annotation** **for** **MultipleAxes**
+### Adding Annotation for MultipleAxes
 
 You can also add annotation for a particular axis when there is multiple axes using [`XAxisName`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_XAxisName) and [`YAxisName`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_YAxisName) properties as in the below code snippet.
 
@@ -127,7 +127,7 @@ Y1="500">
 
 <Chart:RectangleAnnotation  X1="0.6" CanDrag="True" CanResize="True"                                
 
-X2="2.2" Y2="1500" Y1="1800" 
+X2="2.2" Y1="1500" Y2="1800" 
 
 Stroke="DarkGray"
 

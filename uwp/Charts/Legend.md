@@ -38,7 +38,7 @@ chart.Legend = new ChartLegend();
 ![Legend support in UWP Chart](Legend_images/legend_overview.png)
 
 
-Each legend composed of the following parts:
+Each legend is composed of the following parts:
 
 ![Legend support in UWP Chart](Legend_images/legend_overview_1.png)
 
@@ -57,7 +57,7 @@ This can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/u
 
       <chart:ChartLegend/>
 
-</chart:ChartLegend>
+</chart:SfChart.Legend>
 
 <chart:SplineSeries XBindingPath="Year" Label="Gold"
 	                  

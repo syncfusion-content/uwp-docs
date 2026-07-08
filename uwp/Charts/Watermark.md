@@ -12,9 +12,11 @@ documentation: ug
 
 This section is to help you understand how to use the [`Watermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Watermark.html) in your chart.
 
+>Note:- The watermark content is drawn behind the chart segments, so the underlying series remain visible.
+
 ## Adding text watermark
 
-You can add the text to chart background using the Content property of [`Watermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Watermark).
+You can add text to the chart background using the `Content` property of [`Watermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Watermark).
 
 The following code example explains how to set your custom text as Watermark.
 
@@ -76,7 +78,7 @@ chart.Watermark.Content = new TextBlock()
 
 ## Adding image watermark
 
-You can also set images as Watermark as in below code snippet.
+You can also set images as a Watermark as shown in the below code snippet.
 
 {% tabs %}
 

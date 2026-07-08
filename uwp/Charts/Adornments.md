@@ -136,7 +136,7 @@ chart.Series.Add(series);
 
 ### Customization
 
-SfChart provide support more customization for markers in adornments. 
+SfChart provides more customization support for markers in adornments.
 
 You can customize the marker size using [`SymbolHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolHeight) and [`SymbolWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolWidth) property. Also the marker fill color and stroke can be customized using [`SymbolInterior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolInterior) and [`SymbolStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke).
 
@@ -154,7 +154,7 @@ YBindingPath="Year2011">
 
 <syncfusion:LineSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo SymbolStroke="Black"
+<syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolStroke="Black"
 
 SymbolInterior="DarkGray"
 

@@ -215,7 +215,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Both;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -243,7 +243,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Minus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -271,7 +271,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Plus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -307,7 +307,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.VerticalDirection= ErrorBarDirection.Both;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -335,7 +335,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.VerticalDirection= ErrorBarDirection.Minus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -363,7 +363,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.VerticalDirection= ErrorBarDirection.Plus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 

@@ -18,7 +18,7 @@ The following are the major properties of chart(SfChart):
 * [`Legend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) –  Gets or sets the legend for the chart.
 * [`Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) –  Gets or sets the list of series in the chart.
 * [`TechnicalIndicators`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_TechnicalIndicators) –  Gets or sets the various financial indicators for the chart.
-* [`Behaviors`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors)–  Used to add one more interactive features to the chart.
+* [`Behaviors`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors)–  Used to add one or more interactive features to the chart.
 * [`Area`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Area) - Gets the instance of chart.
 
 ## Chart Header
@@ -173,7 +173,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 You can split plot area into multiple rows and columns using [`ChartRowDefinition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartRowDefinition.html) and [`ChartColumnDefinition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColumnDefinition.html) like Grid panel’s row and column definition. 
 
-The following code example demonstrates, how you can create multiple panes in the chart area:
+The following code example demonstrates how you can create multiple panes in the chart area:
 
 {% tabs %}
 
