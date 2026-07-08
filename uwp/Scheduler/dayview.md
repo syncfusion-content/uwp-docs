@@ -18,7 +18,7 @@ DayView is used to display a single day; the current day will be visible by defa
 You can customize the default appearance of view header in [DayView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleType) by using [DayViewHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewHeaderStyle) and [DayViewHeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleDayViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleDayViewHeaderStyle_DayViewHeaderHeight) properties of [SfSchedule](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html).
 
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
 
     <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day">
             <Schedule:SfSchedule.DayViewHeaderStyle>
@@ -32,7 +32,7 @@ You can customize the default appearance of view header in [DayView](https://hel
         </Schedule:SfSchedule>
 {% endhighlight %}
 
-{% highlight XAML %}
+{% highlight c# %}
 
     SfSchedule schedule = new SfSchedule();
             schedule.ScheduleType = ScheduleType.Day;
@@ -56,13 +56,13 @@ You can customize the interval of timeslots in `DayView`.
 ### TimeInterval customization
 You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeIntervalProperty) property of `SfSchedule`.
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
             schedule.ScheduleType = ScheduleType.Day;
             schedule.TimeInterval = TimeInterval.ThirtyMin;
 {% endhighlight %}
 
-{% highlight XAML %}
+{% highlight xaml %}
 
      <Schedule:SfSchedule x:Name="schedule" TimeInterval="ThirtyMin" />
 {% endhighlight %}
