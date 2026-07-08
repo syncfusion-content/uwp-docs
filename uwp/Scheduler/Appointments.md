@@ -304,7 +304,7 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/uwp/Syncfus
 ![UWP SfSchedule displays appointment in each two days](Appointments_images/recurrence.png)
 
 ## Setting reminders
-Schedule reminds you the appointment in the specified time by setting the EnableReminderTimer property is true. The reminder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTimeProperty) property of `ScheduleAppointment`.
+Schedule reminds you the appointment in the specified time by setting the EnableReminderTimer property is true. The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTimeProperty) property of `ScheduleAppointment`.
 
 N> Open package.appxmanifest file to the Application UI tab and select “Yes” from the “Toast capable” dropdown list to enable toast notifications in your application manifest.
 
