@@ -11,7 +11,7 @@ documentation: ug
 
 ## Appointment Template Customization
 
-The default appearance of the Appointment can be customized by using the **AppointmentTemplate** property. The **AppointmentTemplate** is a `DataTemplate` type, used to customize or override the default template of the Appointments.
+The default appearance of the Appointment can be customized by using the **AppointmentTemplate** property. The **AppointmentTemplate** is a DataTemplate type, used to customize or override the default template of the Appointments.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,9 +57,9 @@ The default appearance of the Appointment can be customized by using the **Appoi
 
 ## CurrentTimeIndicator Template Customization
 
-The default appearance of CurrentTimeIndicator can be customized by using the CurrentTimeIndicatorTemplate property. The CurrentTimeIndicatorTemplate is a DataTemplate type used to customize or override the default template of the CurrentTimeIndicator.
+The default appearance of CurrentTimeIndicator can be customized by using the CurrentTimeIndicatorTemplate property.The CurrentTimeIndicatorTemplate is DataTemplate type used to customize or override the default template of the CurrentTimeIndicator.
 
->**Note: CurrentTimeIndicator customization is only applicable in day, week, workweek, and timeline views in Windows, and for Windows Phone it is applicable for day and timeline views.**
+>**Note:-CurrentTimeIndicator customization is only applicable in day,week,workweek and timeline views in windows,and for Windows Phone it is applicable for day and timeline views.**
 
 
 {% tabs %}
@@ -98,9 +98,9 @@ The default appearance of CurrentTimeIndicator can be customized by using the Cu
 
 ## Customizing NonAccessibleBlock
 
-The default appearance of **NonAccessibleBlock** can be customized by using the **NonAccessibleBlockTemplate** property. The **NonAccessibleBlockTemplate** is a DataTemplate type used to customize or override the default template of the **NonAccessibleBlock**.
+The default appearance of **NonAccessibleBlock** can be customized by using the **NonAccessibleBlockTemplate** property.The **NonAccessibleBlockTemplate** is DataTemplate type used to customize or override the default template of the **NonAccessibleBlock**.
 
->**Note: NonAccessibleBlock customization is only applicable in day, week, workweek, and timeline views in Windows, and for Windows Phone it is applicable for day and timeline views.**
+>**Note:-NonAccessibleBlock customization is only applicable in day,week,workweek and timeline views in windows,and for Windows Phone it is applicable for day and timeline views.**
 
 {% tabs %}
 {% highlight xaml %}

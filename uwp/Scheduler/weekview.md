@@ -10,10 +10,10 @@ documentation: ug
 ---
 # Week View in UWP Scheduler (SfSchedule)
 
-WeekView is to view all days of a particular week. Appointments will be arranged based on the dates of the week in respective timeslots.
+WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
 
 ## ViewHeader Appearance
-You can customize the default appearance of the view header in [Week](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleType.html) by using the [DayViewHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewHeaderStyle) and [DayViewHeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleDayViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleDayViewHeaderStyle_DayViewHeaderHeightProperty) properties of the [SfSchedule](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html).
+You can customize the default appearance of view header in [Week](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleType.html) by using [DayViewHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewHeaderStyle) and [DayViewHeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleDayViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleDayViewHeaderStyle_DayViewHeaderHeightProperty) properties of [SfSchedule](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html).
 {% tabs %}
 {% highlight C# %}
 
@@ -94,7 +94,7 @@ You can customize the interval of timeslots in `WeekView` by setting [CustomTime
 ![customtimeinterval_week](daymodule_images/customtimeinterval_week.png)
 
 ## Change Working hours
-Working hours in `WeekView` of Schedule control will be differentiated from non-working hours by a separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting the [WorkStartHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHour) and [WorkEndHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHour) properties of `SfSchedule`.
+Working hours in `WeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHour) and [WorkEndHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHour) properties of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
 
@@ -159,7 +159,7 @@ You can customize the appearance of the working hour timeslots by its color usin
 
 ## Non-Accessible timeslots
 
-You can restrict or allocate certain timeslots as Non-accessible blocks by using the [NonAccessibleBlocks](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonAccessibleBlocks) of `SfSchedule`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
+You can restrict or allocate certain timeslot as Non-accessible blocks by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonAccessibleBlocks) of `SfSchedule` so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 {% tabs %}
 {% highlight C# %}
 
@@ -189,11 +189,11 @@ You can restrict or allocate certain timeslots as Non-accessible blocks by using
 ![nonaccessibleblock_week](daymodule_images/nonaccessibleblock_week.png)
 
 >**Note**:
-Selection and related events will not work in these blocks.
+Selection and related events will not be working in this blocks.
 
 ## Change first day of week
 
-By default, the schedule control will be rendered with Sunday as the first day of the week, and it can be customized to any day of the week by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeek) property of `SfSchedule`.
+By default, schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by using [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeek) property of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
 
@@ -320,7 +320,7 @@ The Schedule control allows you to define resources that can be assigned to appo
 * [Changing resource order](#changing-resource-order)
 
 ### Adding resource
-Resource can be added to the schedule control by setting the [Resource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollection) of `SfSchedule`. After that, add the [ResourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) for `ScheduleResourceTypeCollection` and assign `Resource` to `ResourceType`.
+Resource can be added to the schedule control by setting [Resource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollection) of `SfSchedule`. After that add the [ResourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) for `ScheduleResourceTypeCollection` and assign `Resource` to `ResourceType`.
 {% tabs %}
 {% highlight C# %}
 
@@ -428,7 +428,7 @@ SubResourceType enables users to view appointments based on their subcategory on
 
 ### Changing resource order
 #### Order by Date
-The DayHeaderOrder property is used to set the order in which resources must be displayed. OrderByDate will display the resource based on date.
+DayHeaderOrder property is used to set the order by which resources must be displayed. OrderByDate will be displaying the resource based on date. 
 {% tabs %}
 {% highlight C# %}
 
@@ -445,7 +445,7 @@ The DayHeaderOrder property is used to set the order in which resources must be 
 ![orderbydate_week](daymodule_images/orderbydate_week.png)
 
 #### Order by resource
-The DayHeaderOrder property is used to set the order in which resources must be displayed. OrderByResource will display the resource based on the resource collection.
+DayHeaderOrder property is used to set the order by which resources must be displayed. OrderByResource will be displaying the resource based on resource collection. 
 {% tabs %}
 {% highlight C# %}
 
