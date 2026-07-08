@@ -162,7 +162,7 @@ You can customize the Month View Header appearance by using [MonthViewHeaderStyl
                     MonthViewHeaderBackground="Blue" 
                     MonthViewHeaderTextColor ="White" 
                     MonthViewHeaderTextSize="15"
-                    MonthViewHeaderHeight="25"
+                    MonthViewHeaderHeight="15"
                     MonthViewHeaderTextStyle="Bold"
                     MonthViewHeaderTextHorizontalAlignment ="Center"
                     MonthViewHeaderTextVerticalAlignment ="Center"
@@ -334,7 +334,7 @@ By using [InlineLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Sc
         {
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentBackground = new SolidColorBrush(Colors.Blue);
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentFontFamily = new FontFamily("Times New Roman");
-            e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentFontStyle = Windows.UI.Text.FontStyle.Italic;
+            e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentFontStyle = FontStyle.Italic;
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentFontWeight = FontWeights.SemiBold;
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentTextColor = new SolidColorBrush(Colors.White);
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentTextHorizontalAlignment = HorizontalAlignment.Center;
