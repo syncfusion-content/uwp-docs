@@ -229,7 +229,7 @@ Recurrence pattern used in the control are in iCal standard. Schedule control su
 |  | IsWeeklyTuesday | Checks whether the event occurs every Tuesday of week |
 |  | IsWeeklyWednesday | Checks whether the event occurs every Wednesday of week |
 |  | IsWeeklyThursday | Checks whether the event occurs every Thursday of week |
-|  | IIsWeeklyFriday | Checks whether the event occurs every Friday of week |
+|  | IsWeeklyFriday | Checks whether the event occurs every Friday of week |
 |  | IsWeeklySaturday | Checks whether the event occurs every Saturday of week |
 |  | NthWeek | Gets or sets the event only nth week of the year. |
 |  | WeekDay | Gets or sets the event every week day. |
@@ -297,14 +297,14 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/uwp/Syncfus
             scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
 
             //Adding schedule appointment collection to SfSchedule DataSource
-            schedule.Appointments = scheduleAppointmentCollection
+            schedule.Appointments = scheduleAppointmentCollection;
 
 {% endhighlight %} 
 
 ![UWP SfSchedule displays appointment in each two days](Appointments_images/recurrence.png)
 
 ## Setting reminders
-Schedule reminds you the appointment in the specified time by setting the EnableReminderTimer property is true. The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTimeProperty) property of `ScheduleAppointment`.
+Schedule reminds you the appointment in the specified time by setting the EnableReminderTimer property is true. The reminder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTimeProperty) property of `ScheduleAppointment`.
 
 N> Open package.appxmanifest file to the Application UI tab and select “Yes” from the “Toast capable” dropdown list to enable toast notifications in your application manifest.
 
@@ -321,8 +321,8 @@ N> Open package.appxmanifest file to the Application UI tab and select “Yes”
             });
             schedule.Appointments.Add(new ScheduleAppointment
             {
-                StartTime = currentDate.Date.AddDays(1).AddHours(10),
-                EndTime = currentDate.Date.AddDays(1).AddHours(16),
+                StartTime = DateTime.Now.Date.AddDays(1).AddHours(10),
+                EndTime = DateTime.Now.Date.AddDays(1).AddHours(16),
                 AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xD8, 0x00, 0x73)),
                 Subject = "Auditing",
                 ReminderTime = ReminderTimeType.TwoDays
@@ -457,7 +457,7 @@ These events will be triggered while perform respective touch actions in timeslo
 ### Selection customization
 The default selection of an appointment can be customized by using [SelectionColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_SelectionColorProperty), [SelectionTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_SelectionTextColorProperty) properties in `ScheduleAppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
-N> `BorderWidth` value must be set to highlight `SelectionColor`.
+N> `BorderThickness` value must be set to highlight `SelectionColor`.
 
 {% tabs %} 
 {% highlight c# %} 
@@ -495,6 +495,7 @@ The Schedule control allows you to define resources that can be assigned to appo
 {% highlight c# %} 
  
         //creating appointments for resource
+    DateTime currentDate = DateTime.Now;
     ScheduleAppointment ScheduleAppointment = new ScheduleAppointment() 
     {                
         StartTime = currentDate, 
@@ -509,7 +510,7 @@ The Schedule control allows you to define resources that can be assigned to appo
     ScheduleAppointment ScheduleAppointment1 = new ScheduleAppointment() 
     { 
         StartTime = currentDate.AddHours(4), 
-        EndTime = currentDate.AddHours(2), 
+        EndTime = currentDate.AddHours(6), 
         Subject = "Meeting", 
         Location = "Chennai", 
         AppointmentBackground = new SolidColorBrush(Colors.Green) 

@@ -446,7 +446,7 @@ DayHeaderOrder property is used to set the order by which resources must be disp
 {% tabs %}
 {% highlight C# %}
 
-            schedule.ScheduleType = ScheduleType.Day;
+            schedule.ScheduleType = ScheduleType.WorkWeek;
             schedule.DayHeaderOrder = DayHeaderOrder.OrderByResource;
 {% endhighlight %}
 
