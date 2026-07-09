@@ -17,17 +17,12 @@ documentation: ug
 
 {% highlight xaml %}
 
-<syncfusion:SfChart >
+<syncfusion:SfChart>
 
-<syncfusion:LineSeries
-
-ItemsSource="{Binding Demands}"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010">
-
-</syncfusion:LineSeries>
+    <syncfusion:LineSeries
+        ItemsSource="{Binding Demands}"
+        XBindingPath="Demand"
+        YBindingPath="Year2010" />
 
 </syncfusion:SfChart>
 
@@ -39,87 +34,47 @@ SfChart chart = new SfChart();
 
 LineSeries lineSeries = new LineSeries()
 {
-
-      ItemsSource = new ViewModel().Demands,
-
-      XBindingPath = "Demand",
-
-      YBindingPath = "Year2010",
-
+    ItemsSource = new ViewModel().Demands,
+    XBindingPath = "Demand",
+    YBindingPath = "Year2010"
 };
 
 chart.Series.Add(lineSeries);
 
-
 public class GoldDemand
-
 {
-
-      public string Demand { get; set; }
-
-
-
-      public double Year2010 { get; set; }
-
-
-
-      public double Year2011 { get; set; }
-
+    public string Demand { get; set; }
+    public double Year2010 { get; set; }
+    public double Year2011 { get; set; }
 }
-
-
 
 public sealed partial class MainPage : Page
-
 {
+    public MainPage()
+    {
+        this.InitializeComponent();
 
-public MainPage()
+        this.Demands = new ObservableCollection<GoldDemand>
+        {
+            new GoldDemand { Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2 },
+            new GoldDemand { Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0 },
+            new GoldDemand { Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0 },
+            new GoldDemand { Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0 },
+            new GoldDemand { Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 },
+            new GoldDemand { Demand = "Others", Year2010 = 1090.5, Year2011 = 1032.0 },
+            new GoldDemand { Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0 },
+            new GoldDemand { Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 },
+            new GoldDemand { Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0 },
+            new GoldDemand { Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0 },
+            new GoldDemand { Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0 },
+            new GoldDemand { Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0 }
+        };
 
-{
+        DataContext = this;
+    }
 
-      this.InitializeComponent();
-
-      this.Demands = new ObservableCollection<GoldDemand>
-
-      {
-
-      new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
-
-      new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
-
-      new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
-
-      new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-      new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
-
-
-
-      new GoldDemand() {Demand = "Others", Year2010 = 1090.5, Year2011 = 1032.0},
-
-      new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-      new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0},
-
-
-
-      new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
-
-      new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
-
-      new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
-
-      new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
-
-      };
-
-
-
-      DataContext = this;
-
+    public ObservableCollection<GoldDemand> Demands { get; set; }
 }
-
-public ObservableCollection<GoldDemand> Demands { get; set; }  }
 
 {% endhighlight %}
 
@@ -129,12 +84,13 @@ public ObservableCollection<GoldDemand> Demands { get; set; }  }
 ### Binding complex property to the chart
 
 The complex property binding feature enables you to access nested object reference property values to render the chart segment. 
-
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:LineSeries ItemsSource="{Binding  DataWithMultipleData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumberSeats" /> 
+<syncfusion:LineSeries ItemsSource="{Binding DataWithMultipleData}" 
+                       XBindingPath="StadiumObject.CupDetailsObj.CupName"
+                       YBindingPath="StadiumObject.NumberSeats" /> 
 
 {% endhighlight %}
 
@@ -142,55 +98,33 @@ The complex property binding feature enables you to access nested object referen
 
 SfChart chart = new SfChart();
 
-StadiumDetails stadiumDetails = new StadiumDetails();
-
 LineSeries series = new LineSeries()
 {
-
-      ItemsSource = new ViewModel().DataWithMultipleData,
-
-      XBindingPath = "stadiumDetails.CupDetailsObj.CupName",
-
-      YBindingPath = "stadiumDetails.NumberSeats",
-
-      Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
+    ItemsSource = new ViewModel().DataWithMultipleData,
+    XBindingPath = "stadiumDetails.CupDetailsObj.CupName",
+    YBindingPath = "stadiumDetails.NumberSeats",
+    Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
 };
 
 chart.Series.Add(series);
 
 public class StadiumDetails
-
 {
-
-      public string PlaceName { get; set; }
-
-      public int NumberSeats { get; set; }
-
-      public int Price { get; set; }
-
-      public CupDetails CupDetailsObj { get; set; }
-
+    public string PlaceName { get; set; }
+    public int NumberSeats { get; set; }
+    public int Price { get; set; }
+    public CupDetails CupDetailsObj { get; set; }
 }
 
-
-
 public class CupDetails
-
 {
-
-      public string CupName { get; set; }
-
+    public string CupName { get; set; }
 }
 
 public class DataPointWithMultipleData
-
 {
-
-      public string Name { get; set; }
-
-      public StadiumDetails StadiumObject { get; set; }
-
+    public string Name { get; set; }
+    public StadiumDetails StadiumObject { get; set; }
 }
 
 {% endhighlight %}
@@ -209,90 +143,82 @@ The following code example demonstrates how to bind the array values for the [`X
 
 <chart:SfChart>
 
-      <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
-
-                          XBindingPath="Brand[1]" YBindingPath="Count[0]" >
-
-      </chart:ColumnSeries>
+    <chart:ColumnSeries
+        x:Name="series"
+        ItemsSource="{Binding Brands}"
+        XBindingPath="Brand[1]"
+        YBindingPath="Count[0]" />
 
 </chart:SfChart>
-
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 public class Model
-
 {
-
-      public string[] Brand { get; set; }
-
-      public double[] Count { get; set; }
-
+    public string[] Brand { get; set; }
+    public double[] Count { get; set; }
 }
 
-public class ViewModel
-
+public class ViewModel
 {
+    public ViewModel()
+    {
+        Brands = new ObservableCollection<Model>();
 
-   public ViewModel()
+        Brands.Add(new Model
+        {
+            Brand = new string[] { "Reebok", "Adidas" },
+            Count = new double[] { 34, 23 }
+        });
 
-   {
+        Brands.Add(new Model
+        {
+            Brand = new string[] { "Benz", "Audi" },
+            Count = new double[] { 50, 20 }
+        });
 
-      Brands = new ObservableCollection<Model>();
+        Brands.Add(new Model
+        {
+            Brand = new string[] { "iPhone", "Nokia" },
+            Count = new double[] { 24, 30 }
+        });
 
-      Brands.Add(new Model() { Brand = new string[] { "Reebok", "Adidas" }, Count 
+        Brands.Add(new Model
+        {
+            Brand = new string[] { "Lenovo", "Acer" },
+            Count = new double[] { 38, 23 }
+        });
 
-= new  double[] { 34, 23 } });
+        Brands.Add(new Model
+        {
+            Brand = new string[] { "Fastrack", "Titan" },
+            Count = new double[] { 27, 29 }
+        });
+    }
 
-      Brands.Add(new Model() { Brand = new string[] { "Benz", "Audi" }, Count 
-
-=  new double[] { 50, 20 } });
-
-      Brands.Add(new Model() { Brand = new string[] { "iPhone", "Nokia" }, Count 
-
-= new double[] { 24, 30 } });
-
-      Brands.Add(new Model() { Brand = new string[] { "Lenovo", "Acer" }, Count 
-
-= new double[] { 38, 23 } });
-
-      Brands.Add(new Model() { Brand = new string[] { "Fastrack", "Titan" },Count 
-
-= new double[] { 27, 29 } });
-
-   }
-
-   public ObservableCollection<Model> Brands { get; set; }
-
+    public ObservableCollection<Model> Brands { get; set; }
 }
 
-private void CreateChart()
-
+private void CreateChart()
 {
+    ViewModel view = new ViewModel();
 
-   ViewModel view = new ViewModel();
+    SfChart chart = new SfChart();
 
-   SfChart chart = new SfChart();
+    ColumnSeries series = new ColumnSeries();
 
-   ColumnSeries series = new ColumnSeries();
+    series.ItemsSource = view.Brands;
+    series.XBindingPath = "Brand[1]";
+    series.YBindingPath = "Count[0]";
 
-   series.ItemsSource = view.Brands;
+    chart.Series.Add(series);
 
-   series.XBindingPath = "Brand[1]";
-
-   series.YBindingPath = "Count[0]";
-
-   chart.Series.Add(series);
-
-   grid.Children.Add(chart);
-
+    grid.Children.Add(chart);
 }
-
 
 {% endhighlight %}
-
 
 {% endtabs %}
 
@@ -304,79 +230,78 @@ You can notify the [`XBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusio
 
 {% highlight xaml %}
 
-<chart:ScatterSeries ScatterWidth="20" ScatterHeight="20"  Label="Coal" ListenPropertyChange="True"
-
-ItemsSource="{Binding EnergyProductions}" Interior="#BCBCBC"
-
-XBindingPath="ID" YBindingPath="Coal">
-
-</chart:ScatterSeries>
+<chart:ScatterSeries
+    ScatterWidth="20"
+    ScatterHeight="20"
+    Label="Coal"
+    ListenPropertyChange="True"
+    ItemsSource="{Binding EnergyProductions}"
+    Interior="#BCBCBC"
+    XBindingPath="ID"
+    YBindingPath="Coal" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+public partial class MainWindow : Window
+{
+    public MainWindow()
+    {
+        InitializeComponent();
+    }
 
-      
-      public partial class MainWindow : Window
-      {
-     
-     
-            public MainWindow()
-            {
-                  InitializeComponent();
-            }
+    private void Button_Click_1(object sender, RoutedEventArgs e)
+    {
+        // When you click the button, the changes to XBindingPath
+        // and YBindingPath are updated in the output.
+        viewmodel.EnergyProductions[1].ID = "1001";
+        viewmodel.EnergyProductions[1].Coal = 500;
+    }
+}
 
-            private void Button_Click_1(object sender, RoutedEventArgs e)
-            {
-                  // When you click on the button, the changes to XBindingPath and YBindingPath are updated in the output
-                  viewmodel.EnergyProductions[1].ID = "1001";
-                  viewmodel.EnergyProductions[1].Coal = 500;
-            }
-      }
+public class Model : INotifyPropertyChanged
+{
+    private string id;
 
+    public string ID
+    {
+        get
+        {
+            return id;
+        }
+        set
+        {
+            id = value;
+            OnPropertyChanged(nameof(ID));
+        }
+    }
 
-      public class Model : INotifyPropertyChanged
-      {
-            private string id;
-            public string ID
-            {
-                  get
-                  {
-                        return id;
-                  }
-                  set
-                  {
-                        id = value;
-                        OnPropertyChanged(nameof(ID));
-                  }
-            }
+    private string coal;
 
-            private string coal;
-            public string Coal
-            {
-                  get
-                  {
-                        return coal;
-                  }
-                  set
-                  {
-                        coal = value;
-                        OnPropertyChanged(nameof(Coal));
-                  }
-            }
+    public string Coal
+    {
+        get
+        {
+            return coal;
+        }
+        set
+        {
+            coal = value;
+            OnPropertyChanged(nameof(Coal));
+        }
+    }
 
-            public event PropertyChangedEventHandler PropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
-            private void OnPropertyChanged(string propertyName)
-            {
-                  if (PropertyChanged != null)
-                  {
-                        PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-                  }
-            }
-      }
-
+    private void OnPropertyChanged(string propertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+        }
+    }
+}
 
 {% endhighlight %}
 

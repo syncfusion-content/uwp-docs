@@ -58,8 +58,7 @@ Also you can add more customization for the header as below:
     <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
         <TextBlock FontSize="14" Text="Chart Area Header" Margin="5">
             <TextBlock.Effect>
-                <DropShadowEffect Color="Black" 
-                                  Opacity="0.5" />
+                <DropShadowEffect Color="Black" Opacity="0.5" />
             </TextBlock.Effect>
         </TextBlock>
     </Border>
@@ -71,30 +70,22 @@ Also you can add more customization for the header as below:
 
 Border border = new Border()
 {
-
     BorderThickness = new Thickness(0.5),
-
     BorderBrush = new SolidColorBrush(Colors.Black),
-
     Margin = new Thickness(10),
-
     CornerRadius = new CornerRadius(5)
-
 };
 
 TextBlock textBlock = new TextBlock()
 {
     Text = "Chart Area Header",
-
     Margin = new Thickness(5),
-
     FontSize = 14
 };
 
 textBlock.Effect = new DropShadowEffect()
 {
     Color = Colors.Black,
-
     Opacity = 0.5
 };
 
@@ -108,7 +99,6 @@ chart.Header = border;
 
 ![Header customization in SfChart](area_images/uwp-charts-area-header-customization.jpeg)
 
-
 N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 
 ## Area Customization
@@ -121,17 +111,12 @@ The following code examples illustrates the usage of these properties:
 
 {% highlight xaml %}
 
-<chart:SfChart Height="250" Width="350" 
-
-Header="Chart Area Header" 
-
-AreaBackground="Cyan" 
-
-Background="LightGray" 
-
-AreaBorderBrush="Gray" 
-
-AreaBorderThickness="3" >
+<chart:SfChart Height="250" Width="350"
+               Header="Chart Area Header"
+               AreaBackground="Cyan"
+               Background="LightGray"
+               AreaBorderBrush="Gray"
+               AreaBorderThickness="3">
 
 {% endhighlight %}
 
@@ -154,7 +139,6 @@ chart.AreaBorderThickness = new Thickness(3);
 {% endtabs %}
 
 ![SfChart with customized plot area in UWP](area_images/uwp-charts-plot-area-customization.jpeg)
-
 
 ## Multiple Area 
 
@@ -189,17 +173,14 @@ The following code example demonstrates how you can create multiple panes in the
     <chart:ColumnSeries Palette="LightCandy"
                          ItemsSource="{Binding MetalsDetail}"         
                          XBindingPath="MetalName" 
-                         YBindingPath="MetalCount1" 
-                         />
+                         YBindingPath="MetalCount1" />
 
     <chart:ColumnSeries Palette="Metro"
                          ItemsSource="{Binding MetalsDetail}"  
                          XBindingPath="MetalName" 
-                         YBindingPath="MetalCount" >
+                         YBindingPath="MetalCount" />
         <chart:ColumnSeries.YAxis>
-            <chart:NumericalAxis  PlotOffset="10"
-                                  chart:SfChart.Row="1" >
-            </chart:NumericalAxis>
+            <chart:NumericalAxis  PlotOffset="10" chart:SfChart.Row="1" />
         </chart:ColumnSeries.YAxis>
     </chart:ColumnSeries>
 </chart:SfChart>
@@ -234,15 +215,10 @@ chart.SecondaryAxis = yAxis;
 
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().MetalsDetail,
-
     XBindingPath = "MetalName",
-
     YBindingPath = "MetalCount",
-
     Palette = ChartColorPalette.LightCandy,
-
 };
 
 NumericalAxis axis = new NumericalAxis();
@@ -253,17 +229,11 @@ SfChart.SetRow(axis, 1);
 
 ColumnSeries columnSeries2 = new ColumnSeries()
 {
-    
     ItemsSource = new ViewModel().MetalsDetail,
-
     XBindingPath = "MetalName",
-
     YBindingPath = "MetalCount1",
-
     Palette = ChartColorPalette.Metro,
-
     YAxis = axis
-
 };
 
 chart.Series.Add(columnSeries1);
@@ -297,8 +267,7 @@ You can set the row span in chart like the following code example.
     <chart:SfChart.PrimaryAxis>
         <chart:CategoryAxis  chart:ChartBase.RowSpan="2" 
                              chart:SfChart.Row="0"
-                             TickLinesPosition="Outside">                                                              
-        </chart:CategoryAxis>
+                             TickLinesPosition="Outside" />
     </chart:SfChart.PrimaryAxis>
 
     <chart:SfChart.SecondaryAxis>
@@ -307,15 +276,13 @@ You can set the row span in chart like the following code example.
 
     <chart:ColumnSeries XBindingPath="MetalName"
                          ItemsSource="{Binding MetalsDetail}"  
-                         YBindingPath="MetalCount1" 
-                         />
+                         YBindingPath="MetalCount1" />
 
     <chart:LineSeries Interior="CadetBlue" XBindingPath="MetalName"
                        ItemsSource="{Binding MetalsDetail}"   
-                       YBindingPath="MetalCount">
+                       YBindingPath="MetalCount" />
         <chart:LineSeries.YAxis>
-            <chart:NumericalAxis chart:ChartBase.RowSpan="2">
-            </chart:NumericalAxis>
+            <chart:NumericalAxis chart:ChartBase.RowSpan="2" />
         </chart:LineSeries.YAxis>              
     </chart:LineSeries>
 </chart:SfChart>
@@ -352,13 +319,9 @@ chart.SecondaryAxis = yAxis;
 
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().MetalsDetail,
-
     XBindingPath = "MetalName",
-
     YBindingPath = "MetalCount1",
-
 };
 
 NumericalAxis axis = new NumericalAxis();
@@ -369,17 +332,11 @@ ChartBase.SetColumnSpan(axis, 2);
 
 LineSeries lineSeries = new LineSeries()
 {
-
     ItemsSource = new ViewModel().MetalsDetail,
-
     XBindingPath = "MetalName",
-
     YBindingPath = "MetalCount",
-
     Interior = new SolidColorBrush(Colors.CadetBlue),
-
     YAxis = axis
-
 };
 
 chart.Series.Add(columnSeries1);
@@ -451,55 +408,36 @@ chart.AreaBorderThickness = new Thickness(1);
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     Header = "Metals"
-
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-
     Header = "Usage"
-
 };
 
 chart.Legend = new ChartLegend()
 {
-
     Visibility = Visibility.Visible
-
 };
 
 ColumnSeries columnSeries1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().MetalsDetail,
-
     XBindingPath = "MetalName",
-
     YBindingPath = "MetalCount",
-
     Label = "2015",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xbc, 0xbc, 0xbc)),
-
 };
 
 ColumnSeries columnSeries2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().MetalsDetail,
-
     XBindingPath = "MetalName",
-
     YBindingPath = "MetalCount1",
-
     Label = "2014",
-
     SegmentSpacing = 0.5,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
-
 };
 
 chart.Series.Add(columnSeries1);
@@ -525,130 +463,33 @@ This can be done using [`Serialize`](https://help.syncfusion.com/cr/uwp/Syncfusi
 
 {% highlight xaml %}
 
-<chart:SfChart Margin="10" x:Name="chart" Header="Defect Rates">
+<chart:SfChart
+    Margin="10"
+    x:Name="chart"
+    Header="Defect Rates">
 
-<chart:SfChart.Annotations>
+    <chart:SfChart.Annotations>
 
-    <chart:RectangleAnnotation X1="0" X2="2" Y1="20" 
+        <chart:RectangleAnnotation X1="0" X2="2"
+            Y1="20" Y2="30" CanDrag="True" CanResize="True" />
 
-                               Y2="30" CanDrag="True"
-                               
-                               CanResize="True"/>
+    </chart:SfChart.Annotations>
 
-</chart:SfChart.Annotations>
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis Header="X Axis" />
+    </chart:SfChart.PrimaryAxis>
 
-<chart:SfChart.PrimaryAxis>
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis Header="Y Axis" />
+    </chart:SfChart.SecondaryAxis>
 
-    <chart:CategoryAxis Header="X Axis" />
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-    <chart:NumericalAxis Header="Y Axis" />
-
-</chart:SfChart.SecondaryAxis>
-
-<chart:ColumnSeries ItemsSource="{Binding CategoricalDatas}" 
-
-                    XBindingPath="Category"
-
-                    YBindingPath="Value">
-
-</chart:ColumnSeries>
+    <chart:ColumnSeries
+        ItemsSource="{Binding CategoricalDatas}"
+        XBindingPath="Category"
+        YBindingPath="Value">
+    </chart:ColumnSeries>
 
 </chart:SfChart>
-
-
-Serialized Chart
-
-<SfChart Header="Defect Rates" Name="chart" Margin="10,10,10,10" Width="500" Height="420"
-         xmlns="http://schemas.syncfusion.com/uwp"
-         xmlns:s="clr-namespace:System;assembly=mscorlib"
-         xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-
-<SfChart.PrimaryAxis>
-
-    <CategoryAxis Header="X Axis">
-
-        <CategoryAxis.StripLines>
-             <ChartStripLines />
-        </CategoryAxis.StripLines>
-
-    </CategoryAxis>
-
-</SfChart.PrimaryAxis>
-
-<SfChart.SecondaryAxis>
-
-    <NumericalAxis Header="Y Axis">
-
-        <NumericalAxis.StripLines>
-            <ChartStripLines />
-        </NumericalAxis.StripLines>
-
-    </NumericalAxis>
-
-</SfChart.SecondaryAxis>
-
-<SfChart.Behaviors>
-    <ChartBehaviorsCollection />
-</SfChart.Behaviors>
-
-<SfChart.Annotations>
-
-    <AnnotationCollection>
-
-        <RectangleAnnotation CanDrag="True" CanResize="True">
-            <RectangleAnnotation.Y2>
-                <s:Int32>30</s:Int32>
-            </RectangleAnnotation.Y2>
-            <RectangleAnnotation.X2>
-                <s:Int32>2</s:Int32>
-            </RectangleAnnotation.X2>
-            <RectangleAnnotation.X1>
-                <s:Int32>0</s:Int32>
-            </RectangleAnnotation.X1>
-            <RectangleAnnotation.Y1>
-                <s:Int32>20</s:Int32>
-            </RectangleAnnotation.Y1>
-        </RectangleAnnotation>
-
-    </AnnotationCollection>
-
-</SfChart.Annotations>
-
-<SfChart.ColumnDefinitions>
-    <ChartColumnDefinitions />
-</SfChart.ColumnDefinitions>
-
-<SfChart.RowDefinitions>
-    <ChartRowDefinitions />
-</SfChart.RowDefinitions>
-
-<ColumnSeries YBindingPath="Value"  
-              ItemsSource="{av:Binding Path=CategoricalData}"
-              XBindingPath="Category"
-              Name="series"
-              xmlns="http://schemas.syncfusion.com/uwp"
-              xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-
-<ColumnSeries.Trendlines>
-    <ChartTrendLineCollection />
-</ColumnSeries.Trendlines>
-
-<ColumnSeries.LegendIconTemplate>
-    <av:DataTemplate>
-        <av:Rectangle Stretch="Fill"
-        Fill="{av:Binding Path=Interior}"
-        Stroke="{av:Binding Path=Stroke}"
-        StrokeThickness="{av:Binding Path=StrokeThickness}" />
-    </av:DataTemplate>
-</ColumnSeries.LegendIconTemplate>
-
-</ColumnSeries>
-
-</SfChart>
 
 {% endhighlight %}
 
@@ -660,40 +501,31 @@ chart.Header = "Defect Rates";
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     Header = "X Axis"
-
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-
     Header = "Y Axis"
-
 };
 
 RectangleAnnotation annotation = new RectangleAnnotation()
 {
-
-    X1 = 0, X2 = 2,
-
-    Y1 = 20, Y2 = 30,
-
-    CanDrag = true, CanResize = true
-
+    X1 = 0,
+    X2 = 2,
+    Y1 = 20,
+    Y2 = 30,
+    CanDrag = true,
+    CanResize = true
 };
 
 chart.Annotations.Add(annotation);
 
 ColumnSeries columnSeries = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "XValue",
-
     YBindingPath = "YValue"
-
 };
 
 chart.Series.Add(columnSeries);

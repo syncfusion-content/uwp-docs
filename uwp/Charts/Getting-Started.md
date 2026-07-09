@@ -47,14 +47,17 @@ Then initialize an empty chart with two axes as shown below,
 
 {% highlight xaml %} 
 
- <syncfusion:SfChart> 
-      <syncfusion:SfChart.PrimaryAxis> 
-           <syncfusion:CategoryAxis /> 
-      </syncfusion:SfChart.PrimaryAxis> 
-      <syncfusion:SfChart.SecondaryAxis> 
-           <syncfusion:NumericalAxis/> 
-      </syncfusion:SfChart.SecondaryAxis>
- </syncfusion:SfChart>
+<syncfusion:SfChart>
+
+    <syncfusion:SfChart.PrimaryAxis>
+        <syncfusion:CategoryAxis />
+    </syncfusion:SfChart.PrimaryAxis>
+
+    <syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:NumericalAxis />
+    </syncfusion:SfChart.SecondaryAxis>
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -105,7 +108,6 @@ Now, let us define a simple data model that represents a data point in [`SfChart
 public class Person   
 {   
     public string Name { get; set; }
-
     public double Height { get; set; }
 }
 
@@ -134,7 +136,6 @@ Next, create a view model class and initialize a list of `Person` objects as sho
 public class ViewModel  
 {
       public List<Person> Data { get; set; }      
-
       public ViewModel()       
       {
             Data = new List<Person>()
@@ -164,6 +165,7 @@ Public Class ViewModel
             New Person With {.Name = "Joel", .Height = 182}
         }
     End Sub
+
 End Class
 
 {% endhighlight %}
@@ -251,7 +253,6 @@ primaryAxis.Header = "Name";
 
 chart.PrimaryAxis = primaryAxis;
 
-
 //Adding vertical axis to the chart 
 
 NumericalAxis secondaryAxis = new NumericalAxis();
@@ -259,7 +260,6 @@ NumericalAxis secondaryAxis = new NumericalAxis();
 secondaryAxis.Header = "Height(in cm)";          
 
 chart.SecondaryAxis = secondaryAxis;
-
 
 //Initialize the series for SfChart
 ColumnSeries series = new ColumnSeries();
@@ -320,9 +320,7 @@ The header of the chart acts as the title, to provide quick information to the u
 
 <Grid> 
 
-   <syncfusion:SfChart Header="Chart" > 
-
-   </syncfusion:SfChart> 
+   <syncfusion:SfChart Header="Chart" />
 
 </Grid>
 
@@ -341,7 +339,6 @@ chart.Header = "Chart"
 {% endhighlight %}
 
 {% endtabs %}  
-
 
 ## Enable data labels
 
@@ -575,7 +572,6 @@ using Syncfusion.UI.Xaml.Charts;
 
 namespace ChartDemo
 {
-    
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -614,7 +610,6 @@ namespace ChartDemo
             //Adding Series to the Chart Series Collection
             chart.Series.Add(series);
             this.Content = chart;
-                      
         }
     }   
 }

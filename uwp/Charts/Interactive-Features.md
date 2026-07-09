@@ -33,17 +33,17 @@ The tooltip will be visible if you enable [`ShowTooltip`](https://help.syncfusio
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  ShowTooltip="True"                                                  
+<syncfusion:ColumnSeries
+    ShowTooltip="True"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />
 
-ItemsSource="{Binding Demands}" 
-
-XBindingPath="Demand"  YBindingPath="Year2010"/>
-
-<syncfusion:ColumnSeries ItemsSource="{Binding Demands}" 
-
-ShowTooltip="True"                           
-
-XBindingPath="Demand"  YBindingPath="Year2011"/>           
+<syncfusion:ColumnSeries
+    ShowTooltip="True"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011" />          
 
 {% endhighlight %}
 
@@ -51,28 +51,18 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true
-
 };
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true
-
 };
 
 chart.Series.Add(series1);
@@ -108,7 +98,7 @@ The following properties are used to customize and configure tooltip which is av
 
 <chart:SfChart.Behaviors>
 
-<chart:ChartTooltipBehavior/>                                                  
+    <chart:ChartTooltipBehavior/>                                                  
 
 </chart:SfChart.Behaviors>
 
@@ -140,7 +130,7 @@ The following code example explains positioning the tooltip at `Pointer` positio
 
 <chart:SfChart.Behaviors>
 
-<chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" Position="Pointer"/>                                               
+    <chart:ChartTooltipBehavior x:Name="chartTooltipBehavior" Position="Pointer" />
 
 </chart:SfChart.Behaviors>
 
@@ -254,17 +244,19 @@ The following code example illustrates the positioning of tooltip to left of the
 
 {% highlight xaml %}
 
-<Chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"  
+<Chart:ColumnSeries
+    ShowTooltip="True"
+    Chart:ChartTooltip.HorizontalAlignment="Left"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />
 
-Chart:ChartTooltip.HorizontalAlignment="Left"
-
-XBindingPath="Demand"  YBindingPath="Year2010" />
-
-<Chart:ColumnSeries ItemsSource="{Binding Demands}" 
-
-Chart:ChartTooltip.HorizontalAlignment="Left" ShowTooltip="True"
-
-XBindingPath="Demand"  YBindingPath="Year2011"/>
+<Chart:ColumnSeries
+    ShowTooltip="True"
+    Chart:ChartTooltip.HorizontalAlignment="Left"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011" />
 
 {% endhighlight %}
 
@@ -272,30 +264,20 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true
-    
 };
 
 ChartTooltip.SetHorizontalAlignment(series1, HorizontalAlignment.Left);
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true
-
 };
 
 ChartTooltip.SetHorizontalAlignment(series2, HorizontalAlignment.Left);
@@ -320,17 +302,19 @@ The following code example illustrates the positioning of tooltip to bottom of t
 
 {% highlight xaml %}
 
-<Chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"  
+<Chart:ColumnSeries
+    ShowTooltip="True"
+    Chart:ChartTooltip.VerticalAlignment="Bottom"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />
 
-Chart:ChartTooltip.VerticalAlignment="Bottom"
-
-XBindingPath="Demand" YBindingPath="Year2010" />
-
-<Chart:ColumnSeries ItemsSource="{Binding Demands}"
-
-Chart:ChartTooltip.VerticalAlignment="Bottom"
-
-ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
+<Chart:ColumnSeries
+    ShowTooltip="True"
+    Chart:ChartTooltip.VerticalAlignment="Bottom"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011" />
 
 {% endhighlight %}
 
@@ -338,30 +322,20 @@ ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true
-    
 };
 
 ChartTooltip.SetVerticalAlignment(series1, VerticalAlignment.Bottom);
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true
-
 };
 
 ChartTooltip.SetVerticalAlignment(series2, VerticalAlignment.Bottom);
@@ -384,21 +358,23 @@ You can also set the distance for the margin to be positioned from the cursor us
 
 {% highlight xaml %}
 
-<Chart:ColumnSeries Label="2010" ShowTooltip="True"
+<Chart:ColumnSeries
+    Label="2010"
+    ShowTooltip="True"
+    Chart:ChartTooltip.TooltipMargin="25"
+    ItemsSource="{Binding Demands}"
+    Interior="#777777"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />
 
-ItemsSource="{Binding Demands}"   Interior="#777777"
-
-Chart:ChartTooltip.TooltipMargin="25"
-
-XBindingPath="Demand" YBindingPath="Year2010" />
-
-<Chart:ColumnSeries Label="2011"  ItemsSource="{Binding Demands}"
-
-Interior="#4A4A4A"
-
-Chart:ChartTooltip.TooltipMargin="25"
-
-ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
+<Chart:ColumnSeries
+    Label="2011"
+    ShowTooltip="True"
+    Chart:ChartTooltip.TooltipMargin="25"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2011" />
 
 {% endhighlight %}
 
@@ -406,38 +382,24 @@ ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetTooltipMargin(series1, new Thickness(25));
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
-
     Label = "2011"
-
 };
 
 ChartTooltip.SetTooltipMargin(series2, new Thickness(25));
@@ -462,23 +424,21 @@ The tooltip can be positioned at a particular distance from the cursor horizonta
 
 {% highlight xaml %}
 
-<Chart:ColumnSeries ShowTooltip="True"
+<Chart:ColumnSeries
+    ShowTooltip="True"
+    Chart:ChartTooltip.HorizontalOffset="40"
+    Chart:ChartTooltip.VerticalOffset="40"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />
 
-ItemsSource="{Binding Demands}" 
-
-Chart:ChartTooltip.HorizontalOffset="40"
-
-Chart:ChartTooltip.VerticalOffset="40"
-
-XBindingPath="Demand" YBindingPath="Year2010" />
-
-<Chart:ColumnSeries ItemsSource="{Binding Demands}"
-
-Chart:ChartTooltip.HorizontalOffset="40"
-
-Chart:ChartTooltip.VerticalOffset="40" ShowTooltip="True"
-
-XBindingPath="Demand"  YBindingPath="Year2011"/>
+<Chart:ColumnSeries
+    ShowTooltip="True"
+    Chart:ChartTooltip.HorizontalOffset="40"
+    Chart:ChartTooltip.VerticalOffset="40"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011" />
 
 {% endhighlight %}
 
@@ -486,19 +446,12 @@ XBindingPath="Demand"  YBindingPath="Year2011"/>
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetHorizontalOffset(series1, 40);
@@ -507,19 +460,12 @@ ChartTooltip.SetVerticalOffset(series1, 40);
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A)),
-
     Label = "2011"
-
 };
 
 ChartTooltip.SetHorizontalOffset(series2, 40);
@@ -546,15 +492,13 @@ The following code example demonstrates the duration of the tooltip set as 5 sec
 
 {% highlight xml %}
 
-<Chart:ColumnSeries ShowTooltip="True"  
-
-Chart:ChartTooltip.ShowDuration="5000"                                          
-
-ItemsSource="{Binding Demands}" Interior="#777777"                                     
-
-XBindingPath="Demand"  YBindingPath="Year2010">                                   
-
-</Chart:ColumnSeries>
+<Chart:ColumnSeries
+    ShowTooltip="True"
+    Chart:ChartTooltip.ShowDuration="5000"
+    ItemsSource="{Binding Demands}"
+    Interior="#777777"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />
 
 {% endhighlight %}
 
@@ -562,19 +506,12 @@ XBindingPath="Demand"  YBindingPath="Year2010">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetShowDuration(series, 5000);
@@ -597,13 +534,14 @@ The following code example explains the tooltip will be delayed for 1 second bef
 
 {% highlight xml %}
 
-<Chart:ColumnSeries Label="2010" ShowTooltip="True"  
-
-Chart:ChartTooltip.InitialShowDelay="1000"                                          
-
-ItemsSource="{Binding Demands}" Interior="#777777"                                     
-
-XBindingPath="Demand"  YBindingPath="Year2010" />                                   
+<Chart:ColumnSeries
+    Label="2010"
+    ShowTooltip="True"
+    Chart:ChartTooltip.InitialShowDelay="1000"
+    ItemsSource="{Binding Demands}"
+    Interior="#777777"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />                                  
 
 {% endhighlight %}
 
@@ -611,19 +549,12 @@ XBindingPath="Demand"  YBindingPath="Year2010" />
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetInitialShowDelay(series, 1000);
@@ -642,15 +573,14 @@ You can also provide animation effects for tooltip by setting [`EnableAnimation`
 
 {% highlight xml %}
 
-<Chart:ColumnSeries Label="2010" ShowTooltip="True"  
-
-Chart:ChartTooltip.EnableAnimation="True"                                          
-
-ItemsSource="{Binding Demands}" Interior="#777777"                                     
-
-XBindingPath="Demand"  YBindingPath="Year2010">                                   
-
-</Chart:ColumnSeries>
+<Chart:ColumnSeries
+    Label="2010"
+    ShowTooltip="True"
+    Chart:ChartTooltip.EnableAnimation="True"
+    ItemsSource="{Binding Demands}"
+    Interior="#777777"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />
 
 {% endhighlight %}
 
@@ -658,19 +588,12 @@ XBindingPath="Demand"  YBindingPath="Year2010">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     ShowTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 ChartTooltip.SetEnableAnimation(series, true);
@@ -741,36 +664,22 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ch
 ...
 ColumnSeries series1 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     Label = "2010",
-
     ShowTooltip = true,
-
     TooltipTemplate = chart.Resources["tooltipTemplate1"] as DataTemplate,
-
 };
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Label = "2011",
-
     ShowTooltip = true,
-
     TooltipTemplate = chart.Resources["tooltipTemplate2"] as DataTemplate,
-
 };
 
 chart.Series.Add(series1);
@@ -800,9 +709,8 @@ You can create an instance [`ChartTrackBallBehavior`](https://help.syncfusion.co
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartTrackBallBehavior>                                                  
-
-</syncfusion:ChartTrackBallBehavior>
+    <syncfusion:ChartTrackBallBehavior>
+    </syncfusion:ChartTrackBallBehavior>
 
 </syncfusion:SfChart.Behaviors>
 
@@ -828,7 +736,7 @@ To view the TrackBall in the particular Axis you have to enable the [`ShowTrackB
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis  ShowTrackBallInfo="True" />
+    <syncfusion:CategoryAxis ShowTrackBallInfo="True" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -842,9 +750,7 @@ chart.Behaviors.Add(behavior);
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     ShowTrackBallInfo = true
-
 };
 
 {% endhighlight %}
@@ -877,7 +783,7 @@ The following code snippet illustrates the collapsing the visibility of trackbal
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartTrackBallBehavior ShowLine="False" />
+    <syncfusion:ChartTrackBallBehavior ShowLine="False" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -887,9 +793,7 @@ The following code snippet illustrates the collapsing the visibility of trackbal
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     ShowLine = false
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -899,7 +803,6 @@ chart.Behaviors.Add(behavior);
 {% endtabs %}
 
 ![Visibility support for trackball line in UWP Chart](interactive-features_images/uwp-charts-interactive-features-vissibility.jpeg)
-
 
 **Customization of TrackBall line**
 
@@ -918,9 +821,7 @@ The following code snippet illustrates the customization of trackball line.
         <Style TargetType="Line" x:Key="lineStyle">
 
             <Setter Property="StrokeDashArray" Value="5,1,2"/>
-
             <Setter Property="Stroke" Value="Red"/>
-
             <Setter Property="StrokeThickness" Value="1.2"/>
 
         </Style>
@@ -941,9 +842,7 @@ The following code snippet illustrates the customization of trackball line.
 
 ChartTrackBallBehavior trackball = new ChartTrackBallBehavior()
 {
-
     LineStyle = chart.Resources["lineStyle"] as Style
-
 };
 
 chart.Behaviors.Add(trackball);
@@ -953,7 +852,6 @@ chart.Behaviors.Add(trackball);
 {% endtabs %}
 
 ![TrackBall line customization in UWP Chart](interactive-features_images/uwp-charts-interactive-features-trackball-line.jpeg)
-
 
 ### Symbol
 
@@ -969,7 +867,7 @@ By default the trackball symbol is displayed as ellipse, to change the default s
 
         <Style TargetType="syncfusion:ChartTrackBallControl" x:Key="trackballStyle">
 
-            <Setter Property="Background" Value="red"></Setter>
+            <Setter Property="Background" Value="red" />
 
         </Style>
 
@@ -991,9 +889,7 @@ SfChart chart = new SfChart();
 
 ChartTrackBallBehavior trackball = new ChartTrackBallBehavior()
 {
-
     ChartTrackBallStyle = chart.Resources["trackballStyle"] as Style
-
 };
 
 chart.Behaviors.Add(trackball);
@@ -1003,7 +899,6 @@ chart.Behaviors.Add(trackball);
 {% endtabs %}
 
 ![Symbol for trackball in UWP Chart](Interactive-Features_images/Interactive-Features_img10.jpeg)
-
 
 ### Axis label
 
@@ -1031,9 +926,7 @@ The alignment of the axis label while moving trackball can be defined using [`Ax
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartTrackBallBehavior AxisLabelAlignment="Far">
-
-</syncfusion:ChartTrackBallBehavior>
+    <syncfusion:ChartTrackBallBehavior AxisLabelAlignment="Far" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -1043,9 +936,7 @@ The alignment of the axis label while moving trackball can be defined using [`Ax
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     AxisLabelAlignment = ChartAlignment.Far
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -1056,7 +947,6 @@ chart.Behaviors.Add(behavior);
 
 ![Alignment support for trackball axis label in UWP Chart](Interactive-Features_images/Interactive-Features_img11.jpeg)
 
-
 **Near**
 
 {% tabs %}
@@ -1065,9 +955,7 @@ chart.Behaviors.Add(behavior);
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartTrackBallBehavior AxisLabelAlignment="Near"  >       
-
-</syncfusion:ChartTrackBallBehavior>
+    <syncfusion:ChartTrackBallBehavior AxisLabelAlignment="Near" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -1077,9 +965,7 @@ chart.Behaviors.Add(behavior);
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     AxisLabelAlignment = ChartAlignment.Near
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -1090,7 +976,6 @@ chart.Behaviors.Add(behavior);
 
 ![Alignment support for trackball axis label in UWP Chart](Interactive-Features_images/Interactive-Features_img12.jpeg)
 
-
 **Customization of axis label**
 
 You can change the default appearance of the axis label in trackball using [`TrackballLabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_TrackBallLabelTemplate) property in [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) as in the below code snippet.
@@ -1099,17 +984,22 @@ You can change the default appearance of the axis label in trackball using [`Tra
 
 {% highlight xaml %}
 
- <syncfusion:SfChart x:Name="chart">
+<syncfusion:SfChart x:Name="chart">
 
     <syncfusion:SfChart.Resources>
 
         <DataTemplate x:Key="labelTemplate">
 
-            <Border CornerRadius="4" BorderThickness="1" BorderBrush="Black"
-                            
-                    Background="BlueViolet" Margin="8">
+            <Border
+                CornerRadius="4"
+                BorderThickness="1"
+                BorderBrush="Black"
+                Background="BlueViolet"
+                Margin="8">
 
-                    <TextBlock Foreground="White" Text="{Binding ValueX}"/>
+                <TextBlock
+                    Foreground="White"
+                    Text="{Binding ValueX}" />
 
             </Border>
 
@@ -1118,16 +1008,14 @@ You can change the default appearance of the axis label in trackball using [`Tra
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.Behaviors>
-
-            <syncfusion:ChartTrackBallBehavior />
-
+        <syncfusion:ChartTrackBallBehavior />
     </syncfusion:SfChart.Behaviors>
 
     <syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:CategoryAxis ShowTrackBallInfo="True" 
-                                         
-                                     LabelTemplate="{StaticResource labelTemplate}"/>
+        <syncfusion:CategoryAxis
+            ShowTrackBallInfo="True"
+            LabelTemplate="{StaticResource labelTemplate}" />
 
     </syncfusion:SfChart.PrimaryAxis>
 
@@ -1141,11 +1029,8 @@ SfChart chart = new SfChart();
 
 chart.PrimaryAxis = new NumericalAxis()
 {
-
     ShowTrackBallInfo = true,
-
     TrackBallLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}
@@ -1153,7 +1038,6 @@ chart.PrimaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Customization support for trackball axis label in UWP Chart](Interactive-Features_images/Interactive-Features_img13.jpeg)
-
 
 ### Series label
 
@@ -1167,11 +1051,11 @@ When the trackball is hovered over you can view the label is also displayed over
 
 {% highlight xaml %}
 
-  <syncfusion:SfChart >
-            <syncfusion:SplineSeries Interior="#4a4a4a"/>    
-            <syncfusion:SplineSeries Interior="#7f7f7f" ShowTrackballInfo="False"/>
-            <syncfusion:SplineSeries Interior="#bcbcbc"/>
-  </syncfusion:SfChart>
+<syncfusion:SfChart >
+    <syncfusion:SplineSeries Interior="#4a4a4a"/>    
+    <syncfusion:SplineSeries Interior="#7f7f7f" ShowTrackballInfo="False"/>
+    <syncfusion:SplineSeries Interior="#bcbcbc"/>
+</syncfusion:SfChart>
   
 {% endhighlight %}
 
@@ -1181,6 +1065,7 @@ SplineSeries series1 = new SplineSeries()
   {
       Interior = new SolidColorBrush(Color.FromArgb(0, 0x4a, 0x4a, 0x4a))
   };
+
   chart.Series.Add(series1);
   SplineSeries series2 = new SplineSeries()
   {
@@ -1188,20 +1073,18 @@ SplineSeries series1 = new SplineSeries()
       ShowTrackballInfo = false
   };
   chart.Series.Add(series2);
+
   SplineSeries series3 = new SplineSeries()
   {
       Interior = new SolidColorBrush(Color.FromArgb(0, 0xbc, 0xbc, 0xbc))
   };
   chart.Series.Add(series3);
 
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![TrackBall series label in UWP Chart](Interactive-Features_images/ShowTrackball.png)
-
-
 
 **Alignment of series label**
 
@@ -1215,11 +1098,7 @@ The following code snippet illustrates the aligning the series label to the cent
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartTrackBallBehavior LabelHorizontalAlignment="Center" 
-
-LabelVerticalAlignment="Center">
-
-</syncfusion:ChartTrackBallBehavior>
+    <syncfusion:ChartTrackBallBehavior LabelHorizontalAlignment="Center" LabelVerticalAlignment="Center" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -1229,11 +1108,8 @@ LabelVerticalAlignment="Center">
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     LabelHorizontalAlignment = ChartAlignment.Center,
-
     LabelVerticalAlignment = ChartAlignment.Center
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -1243,7 +1119,6 @@ chart.Behaviors.Add(behavior);
 {% endtabs %}
 
 ![Alignment support for trackball series label in UWP Chart](Interactive-Features_images/Interactive-Features_img14.jpeg)
-
 
 **LabelDisplayMode**
 
@@ -1257,9 +1132,7 @@ When there is a multiple series, by default the trackball series label will be d
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartTrackBallBehavior LabelDisplayMode="FloatAllPoints" >
-
-</syncfusion:ChartTrackBallBehavior>
+    <syncfusion:ChartTrackBallBehavior LabelDisplayMode="FloatAllPoints" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -1269,9 +1142,7 @@ When there is a multiple series, by default the trackball series label will be d
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     LabelDisplayMode = TrackballLabelDisplayMode.FloatAllPoints
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -1282,7 +1153,6 @@ chart.Behaviors.Add(behavior);
 
 ![LabelDisplayMode support for trackball in UWP Chart](Interactive-Features_images/Interactive-Features_img15.jpeg)
 
-
 **NearestPoint**
 
 {% tabs %}
@@ -1291,9 +1161,7 @@ chart.Behaviors.Add(behavior);
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartTrackBallBehavior LabelDisplayMode="NearestPoint" >
-
-</syncfusion:ChartTrackBallBehavior>
+    <syncfusion:ChartTrackBallBehavior LabelDisplayMode="NearestPoint" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -1303,9 +1171,7 @@ chart.Behaviors.Add(behavior);
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
     LabelDisplayMode = TrackballLabelDisplayMode.NearestPoint
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -1316,7 +1182,6 @@ chart.Behaviors.Add(behavior);
 
 ![LabelDisplayMode support for trackball in UWP Chart](Interactive-Features_images/Interactive-Features_img16.jpeg)
 
-
 ### TrackBallLabelTemplate
 
 [`TrackBallLabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TrackBallLabelTemplate) property in [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html) allows you to customize the appearance of series label in trackball.
@@ -1325,44 +1190,44 @@ chart.Behaviors.Add(behavior);
 
 {% highlight xaml %}
 
-  <syncfusion:SfChart x:Name="chart">
+<syncfusion:SfChart x:Name="chart">
 
-        <syncfusion:SfChart.Resources>
+    <syncfusion:SfChart.Resources>
 
-            <DataTemplate x:Key="labelTemplate">
+        <DataTemplate x:Key="labelTemplate">
 
-                <Border CornerRadius="5" BorderThickness="1" 
-                            
-                        BorderBrush="Black" Background="BlueViolet" Margin="8">
+            <Border
+                CornerRadius="5"
+                BorderThickness="1"
+                BorderBrush="Black"
+                Background="BlueViolet"
+                Margin="8">
 
-                    <TextBlock Foreground="White" Text="{Binding ValueY}"/>
+                <TextBlock
+                    Foreground="White"
+                    Text="{Binding ValueY}" />
 
-                </Border>
+            </Border>
 
-            </DataTemplate>
+        </DataTemplate>
 
-         </syncfusion:SfChart.Resources>
+    </syncfusion:SfChart.Resources>
 
-        <syncfusion:SfChart.Behaviors>
+    <syncfusion:SfChart.Behaviors>
 
-                <syncfusion:ChartTrackBallBehavior />
+        <syncfusion:ChartTrackBallBehavior />
 
-        </syncfusion:SfChart.Behaviors>
+    </syncfusion:SfChart.Behaviors>
 
-        <syncfusion:ColumnSeries Label="2010" 
-        
-        Interior="#4A4A4A" 
-        
-        ItemsSource="{Binding Demands}" 
-        
-        XBindingPath="Demand" 
-        
-        YBindingPath="Year2010" 
-        
-        TrackBallLabelTemplate="{StaticResource labelTemplate}"/>
-          
+    <syncfusion:ColumnSeries
+        Label="2010"
+        Interior="#4A4A4A"
+        ItemsSource="{Binding Demands}"
+        XBindingPath="Demand"
+        YBindingPath="Year2010"
+        TrackBallLabelTemplate="{StaticResource labelTemplate}" />
+
 </syncfusion:SfChart>
-
 
 {% endhighlight %}
 
@@ -1376,17 +1241,11 @@ chart.Behaviors.Add(trackball);
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     TrackBallLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -1396,7 +1255,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Customization support for trackball series label in UWP Chart](Interactive-Features_images/Interactive-Features_img17.jpeg)
-
 
 **Applying Palette to the Series Label**
 
@@ -1408,9 +1266,7 @@ chart.Series.Add(series);
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartTrackBallBehavior UseSeriesPalette="True" >
-
-</syncfusion:ChartTrackBallBehavior>
+    <syncfusion:ChartTrackBallBehavior UseSeriesPalette="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -1420,9 +1276,7 @@ chart.Series.Add(series);
 
 ChartTrackBallBehavior behavior = new ChartTrackBallBehavior()
 {
-
-     UseSeriesPalette = true
-
+    UseSeriesPalette = true
 };
 
 chart.Behaviors.Add(behavior);
@@ -1432,7 +1286,6 @@ chart.Behaviors.Add(behavior);
 {% endtabs %}
 
 ![Applying palette to the trackball series label in UWP Chart](Interactive-Features_images/Interactive-Features_img18.jpeg)
-
 
 ### Events
 
@@ -1491,15 +1344,13 @@ Segment Dragging defines the dragging a particular point or segment based on the
 
 {% highlight xml %}
 
-<syncfusion:LineSeries Label="2010" EnableSegmentDragging="True"
-
-XBindingPath="Demand"   Interior="#777777"
-
-ItemsSource="{Binding Demands}"                                   
-
-YBindingPath="Year2010">
-
-</syncfusion:LineSeries>
+<syncfusion:LineSeries
+    Label="2010"
+    EnableSegmentDragging="True"
+    XBindingPath="Demand"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    YBindingPath="Year2010" />
 
 {% endhighlight %}
 
@@ -1507,19 +1358,12 @@ YBindingPath="Year2010">
 
 LineSeries series = new LineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 chart.Series.Add(series)
@@ -1530,22 +1374,20 @@ chart.Series.Add(series)
 
 ![Segment dragging support in UWP Chart](Interactive-Features_images/Interactive-Features_img19.png)
 
-
 **ColumnSeries**
 
 {% tabs %}
 
 {% highlight xml %}
 
-<syncfusion:ColumnSeries Label="2010" EnableDragTooltip="True" EnableSegmentDragging="True"
-
-XBindingPath="Demand"   Interior="#777777"
-
-ItemsSource="{Binding Demands}"                                   
-
-YBindingPath="Year2010">
-
-</syncfusion:ColumnSeries>
+<syncfusion:ColumnSeries
+    Label="2010"
+    EnableDragTooltip="True"
+    EnableSegmentDragging="True"
+    XBindingPath="Demand"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    YBindingPath="Year2010" />
 
 {% endhighlight %}
 
@@ -1553,21 +1395,13 @@ YBindingPath="Year2010">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
     EnableDragTooltip = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 chart.Series.Add(series)
@@ -1577,7 +1411,6 @@ chart.Series.Add(series)
 {% endtabs %}
 
 ![Segment dragging support in UWP Chart](Interactive-Features_images/Interactive-Features_img20.png)
-
 
 **ScatterSeries**
 
@@ -1591,19 +1424,18 @@ This series supports dragging in both the x and y co-ordinates. The dragging co 
                          YBindingPath="Value" EnableSegmentDragging="True"          
                          Interior="#4A4A4A" DragDirection="XY" />
 
-
 {% endhighlight %}
 
 {% highlight c# %}
 
 ScatterSeries scatterSeries = new ScatterSeries()
-  {
-   ItemsSource = new ViewModel().Data,
-   XBindingPath = "Index",
-   YBindingPath = "Value",
-   Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-   EnableSegmentDragging = true
-  };
+{
+    ItemsSource = new ViewModel().Data,
+    XBindingPath = "Index",
+    YBindingPath = "Value",
+    Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
+    EnableSegmentDragging = true
+};
 
 chart.Series.Add(series)
 
@@ -1613,9 +1445,7 @@ chart.Series.Add(series)
 
 ![Segment dragging support in UWP Chart](Interactive-Features_images/Scatter_Dragging.png)
 
-
 N> By default the [`DragDirection`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScatterSeries.html#Syncfusion_UI_Xaml_Charts_ScatterSeries_DragDirection) of the scatter series is XY.
-
 
 ### Series dragging
 
@@ -1627,11 +1457,14 @@ The following code snippet explains the series dragging feature in [`LineSeries`
 
 {% highlight xaml %}
 
-<syncfusion:LineSeries Label="2010" EnableDragTooltip="True" EnableSeriesDragging="True"
-
-XBindingPath="Demand"   Interior="#777777" ItemsSource="{Binding Demands}"
-
-YBindingPath="Year2010"/>
+<syncfusion:LineSeries
+    Label="2010"
+    EnableDragTooltip="True"
+    EnableSeriesDragging="True"
+    XBindingPath="Demand"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    YBindingPath="Year2010" />
 
 {% endhighlight %}
 
@@ -1639,21 +1472,13 @@ YBindingPath="Year2010"/>
 
 LineSeries series = new LineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSeriesDragging = true,
-
     EnableDragTooltip = true ,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 chart.Series.Add(series);
@@ -1663,7 +1488,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Series dragging support in UWP Chart](Interactive-Features_images/Interactive-Features_img21.png)
-
 
 N>In line and Spline Series if segment and series dragging is enabled, the series dragging is having higher priority over segment dragging.
 
@@ -1675,15 +1499,14 @@ While the series or segment is dragged by default you can view the tooltip showi
 
 {% highlight xml %}
 
-<syncfusion:LineSeries Label="2010"  EnableSegmentDragging="True" EnableDragTooltip="False"
-
-XBindingPath="Demand"   Interior="#777777"
-
-Focusable="False"
-
-ItemsSource="{Binding Demands}"                                   
-
-</syncfusion:LineSeries>
+<syncfusion:LineSeries
+    Label="2010"
+    EnableSegmentDragging="True"
+    EnableDragTooltip="False"
+    XBindingPath="Demand"
+    Interior="#777777"
+    Focusable="False"
+    ItemsSource="{Binding Demands}" />
 
 {% endhighlight %}
 
@@ -1691,34 +1514,23 @@ ItemsSource="{Binding Demands}"
 
 LineSeries series = new LineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSeriesDragging = true,
-
     EnableDragTooltip = true ,
-
     Focusable = false,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     Label = "2010"
-
 };
 
 chart.Series.Add(series);
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Adding tooltip for dragging in UWP Chart](Interactive-Features_images/Interactive-Features_img22.png)
-
 
 **DragTooltipTemplate**
 
@@ -1728,42 +1540,41 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
+<syncfusion:SfChart x:Name="chart">
 
-   <syncfusion:SfChart x:Name="chart">
+    <syncfusion:SfChart.Resources>
 
-            <syncfusion:SfChart.Resources>
+        <DataTemplate x:Key="tooltipTemplate">
 
-                <DataTemplate x:Key="tooltipTemplate">
+            <Border
+                CornerRadius="4"
+                BorderBrush="Black"
+                BorderThickness="1"
+                Background="CadetBlue"
+                Margin="0,0,0,15">
 
-                    <Border CornerRadius="4" BorderBrush="Black"
-                            
-                            BorderThickness="1" Background="CadetBlue"
-                           
-                            Margin="0,0,0,15">
+                <TextBlock
+                    FontSize="12"
+                    Text="{Binding NewValue}"
+                    Width="35"
+                    Foreground="White"
+                    Margin="2" />
 
-                        <TextBlock  FontSize="12" Text="{Binding NewValue}" 
-                                    
-                                    Width="35" Foreground="White"
-                        
-                                    Margin="2"></TextBlock>
+            </Border>
 
-                    </Border>
+        </DataTemplate>
 
-                </DataTemplate>
+    </syncfusion:SfChart.Resources>
 
-            </syncfusion:SfChart.Resources>
-
-            <syncfusion:LineSeries Label="2010" EnableSegmentDragging="True" 
-                                   
-                              Interior="#777777" Focusable="False" 
-
-                               XBindingPath="Demand" ItemsSource="{Binding Demands}"          
-                                   
-                               YBindingPath="Year2010"
-                                   
-                               DragTooltipTemplate="{StaticResource tooltipTemplate }">
-
-            </syncfusion:LineSeries>
+    <syncfusion:LineSeries
+        Label="2010"
+        EnableSegmentDragging="True"
+        Interior="#777777"
+        Focusable="False"
+        XBindingPath="Demand"
+        ItemsSource="{Binding Demands}"
+        YBindingPath="Year2010"
+        DragTooltipTemplate="{StaticResource tooltipTemplate}" />
 
 </syncfusion:SfChart>
 
@@ -1773,21 +1584,13 @@ chart.Series.Add(series);
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     Focusable = false,
-
     EnableSegmentDragging = true,
-
     DragTooltipTemplate = chart.Resources["tooltipTemplate"] as DataTemplate,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -1797,7 +1600,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Customizing tooltip while dragging in UWP Chart](Interactive-Features_images/Interactive-Features_img23.png)
-
 
 **Drag Tooltip style**
 
@@ -1829,22 +1631,20 @@ The following are the API’s in ChartDragTooltipStyle.
 
 {% highlight c# %}
 
-
-  this.lineSeries.DragTooltipStyle = new ChartDragTooltipStyle()
-  {
-     FontFamily = new FontFamily("Calibri"),
-     FontSize = 14,
-     FontStyle = FontStyle.Italic,
-     Background = new SolidColorBrush(Colors.DarkGray),
-     Foreground = new SolidColorBrush(Colors.Black)
-  };
+this.lineSeries.DragTooltipStyle = new ChartDragTooltipStyle()
+{
+    FontFamily = new FontFamily("Calibri"),
+    FontSize = 14,
+    FontStyle = FontStyle.Italic,
+    Background = new SolidColorBrush(Colors.DarkGray),
+    Foreground = new SolidColorBrush(Colors.Black)
+};
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Customizing tooltip while dragging in UWP Chart](Interactive-Features_images/Drag_Tooltip.png)
-
 
 **Rounding Off the dragged value**
 
@@ -1854,15 +1654,15 @@ To round off the dragged values, you have to set the [`SnapToPoint`](https://hel
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries   EnableSegmentDragging="True"
-
-SnapToPoint="Round" RoundToDecimal="2" YBindingPath = "Year2010"
-
-UpdateSource="True" XBindingPath="Demand"   Interior="#777777"
-
-ItemsSource="{Binding Demands}"                                   
-
-</syncfusion:SplineSeries>
+<syncfusion:SplineSeries
+    EnableSegmentDragging="True"
+    SnapToPoint="Round"
+    RoundToDecimal="2"
+    UpdateSource="True"
+    XBindingPath="Demand"
+    YBindingPath="Year2010"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}" />
 
 {% endhighlight %}
 
@@ -1870,23 +1670,14 @@ ItemsSource="{Binding Demands}"
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
     UpdateSource = true ,
-
     RoundToDecimal = 2,
-
     SnapToPoint = SnapToPoint.Round,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -1903,15 +1694,13 @@ When dragging the series or segment at run time, to update the underlying data b
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries   EnableSegmentDragging="True" UpdateSource="True"
-
-XBindingPath="Demand"   Interior="#777777"
-
-ItemsSource="{Binding Demands}"                                   
-
-YBindingPath="Year2010">
-
-</syncfusion:SplineSeries>
+<syncfusion:SplineSeries
+    EnableSegmentDragging="True"
+    UpdateSource="True"
+    XBindingPath="Demand"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    YBindingPath="Year2010" />
 
 {% endhighlight %}
 
@@ -1919,19 +1708,12 @@ YBindingPath="Year2010">
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
     UpdateSource = true ,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -1948,21 +1730,13 @@ While you are dragging you can set the [`KeyModifiers`](https://help.syncfusion.
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries  
-
-EnableSegmentDragging="True" 
-
-DragCancelKeyModifiers="Alt"  
-
-UpdateSource="True"
-
-XBindingPath="Demand"                                   
-
-ItemsSource="{Binding Demands}"                                   
-
-YBindingPath="Year2010">
-
-</syncfusion:SplineSeries>
+<syncfusion:SplineSeries
+    EnableSegmentDragging="True"
+    DragCancelKeyModifiers="Alt"
+    UpdateSource="True"
+    XBindingPath="Demand"
+    ItemsSource="{Binding Demands}"
+    YBindingPath="Year2010" />
 
 {% endhighlight %}
 
@@ -1970,21 +1744,13 @@ YBindingPath="Year2010">
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     EnableSegmentDragging = true,
-
     DragCancelKeyModifiers = ModifierKeys.Alt,
-
     UpdateSource = true ,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -1992,7 +1758,6 @@ chart.Series.Add(series);
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ### Events
 
@@ -2003,7 +1768,6 @@ Series with visual data editing has support for following events,
 * [`DragEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragEnd)- Occurs when segment/series drag end. 
 * [`PreviewDragEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_PreviewDragEnd)- Occurs before drag end triggered. 
 * [`SegmentEnter`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_SegmentEnter)- Occurs when mouse enters in segment. 
-
 
 ## Zoom and Pan
 
@@ -2021,9 +1785,8 @@ You can create an instance [`ChartZoomPanBehavior`](https://help.syncfusion.com/
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior >                                             
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior >
+    </syncfusion:ChartZoomPanBehavior>
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2053,11 +1816,7 @@ The following code example demonstrates the zooming the chart axis by setting zo
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis 
-
-ShowGridLines="False"
-
-ZoomFactor="0.3" ZoomPosition="0.1" />
+    <syncfusion:CategoryAxis ShowGridLines="False" ZoomFactor="0.3" ZoomPosition="0.1" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -2067,13 +1826,9 @@ ZoomFactor="0.3" ZoomPosition="0.1" />
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     ShowGridLines = false,
-
     ZoomFactor = 0.1,
-
     ZoomPosition = 0.3
-
 };
 
 {% endhighlight %}
@@ -2092,9 +1847,7 @@ Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZoom
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2104,9 +1857,7 @@ Zooming can be performed by mouse wheel action by setting [`EnableMouseWheelZoom
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableMouseWheelZooming = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2125,9 +1876,7 @@ If you want to zoom using fingers by touch, then you have to set [`EnablePinchZo
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnablePinchZooming="True" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnablePinchZooming="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2137,9 +1886,7 @@ If you want to zoom using fingers by touch, then you have to set [`EnablePinchZo
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnablePinchZooming = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2158,9 +1905,7 @@ To enable the zooming relative to cursor position you can set [`ZoomRelativeToCu
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior ZoomRelativeToCursor="True" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior ZoomRelativeToCursor="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2170,9 +1915,7 @@ To enable the zooming relative to cursor position you can set [`ZoomRelativeToCu
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     ZoomRelativeToCursor = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2180,7 +1923,6 @@ chart.Behaviors.Add(zooming);
 {% endhighlight %}
 
 {% endtabs %}
-
 
 **SelectionZooming**
 
@@ -2194,9 +1936,7 @@ The following code snippet demonstrated selection zooming.
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2206,9 +1946,7 @@ The following code snippet demonstrated selection zooming.
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2218,7 +1956,6 @@ chart.Behaviors.Add(zooming);
 {% endtabs %}
 
 ![Selection zooming support in UWP Chart](Interactive-Features_images/Interactive-Features_img25.jpeg)
-
 
 **Customization** **of** **Selection** **Rectangle**
 
@@ -2236,11 +1973,7 @@ The following code example demonstrates the customization of selection rectangle
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" 
-
-Fill="LightBlue" Stroke="Blue" StrokeThickness="2" >                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" Fill="LightBlue" Stroke="Blue" StrokeThickness="2" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2250,15 +1983,10 @@ Fill="LightBlue" Stroke="Blue" StrokeThickness="2" >
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true,
-
     Fill = new SolidColorBrush(Colors.LightBlue),
-
     Stroke = new SolidColorBrush(Colors.Blue),
-
     StrokeThickness = 2
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2268,7 +1996,6 @@ chart.Behaviors.Add(zooming);
 {% endtabs %}
 
 ![Customizing selection rectangle support in UWP Chart](Interactive-Features_images/Interactive-Features_img26.jpeg)
-
 
 **Zooming mode**
 
@@ -2282,9 +2009,7 @@ Zooming along [`X`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="X">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="X" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2294,11 +2019,8 @@ Zooming along [`X`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true,
-
     ZoomMode = ZoomMode.X
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2309,7 +2031,6 @@ chart.Behaviors.Add(zooming);
 
 ![Zoom mode support in UWP Chart](Interactive-Features_images/Interactive-Features_img27.jpeg)
 
-
 Zooming along Y axis
 
 {% tabs %}
@@ -2318,9 +2039,7 @@ Zooming along Y axis
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="Y">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="Y" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2330,11 +2049,8 @@ Zooming along Y axis
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true,
-
     ZoomMode = ZoomMode.Y
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2355,9 +2071,7 @@ You can also limit the zooming by setting [`MaximumZoomLevel`](https://help.sync
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" MaximumZoomLevel="100">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True" MaximumZoomLevel="100" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2367,11 +2081,8 @@ You can also limit the zooming by setting [`MaximumZoomLevel`](https://help.sync
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableSelectionZooming = true,
-
     MaximumZoomLevel = 100
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2390,9 +2101,7 @@ Zooming Toolbar encompassed with buttons for performing actions like Zoom In/Out
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2402,9 +2111,7 @@ Zooming Toolbar encompassed with buttons for performing actions like Zoom In/Out
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableZoomingToolBar = true
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2417,7 +2124,6 @@ The following image depicts the default view of the zooming toolbar.
 
 ![Zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img29.jpeg)
 
-
 **Positioning the zooming toolbar**
 
 Zooming Toolbar can be positioned using the [`HorizontalPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_HorizontalPosition) and [`VerticalPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_VerticalPosition) properties.The following code demonstrates the positioning of the toolbar.
@@ -2428,9 +2134,10 @@ Zooming Toolbar can be positioned using the [`HorizontalPosition`](https://help.
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" HorizontalPosition="Left" VerticalPosition="Bottom">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior
+        EnableZoomingToolBar="True"
+        HorizontalPosition="Left"
+        VerticalPosition="Bottom" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2440,13 +2147,9 @@ Zooming Toolbar can be positioned using the [`HorizontalPosition`](https://help.
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableZoomingToolBar = true,
-
     HorizontalPosition = HorizontalAlignment.Left,
-
     VerticalPosition = VerticalAlignment.Bottom
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2456,7 +2159,6 @@ chart.Behaviors.Add(zooming);
 {% endtabs %}
 
 ![Positioning the zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img30.jpeg)
-
 
 **Customization of zooming Toolbar**
 
@@ -2474,13 +2176,13 @@ Zooming Toolbar can be customized using the following API’s
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarItemHeight="15" 
-
-ToolBarItemWidth="15" ToolBarBackground="Black" 
-
-ToolBarItems="All" ToolBarItemMargin="10">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior
+        EnableZoomingToolBar="True"
+        ToolBarItemHeight="15"
+        ToolBarItemWidth="15"
+        ToolBarBackground="Black"
+        ToolBarItems="All"
+        ToolBarItemMargin="10" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2490,19 +2192,12 @@ ToolBarItems="All" ToolBarItemMargin="10">
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableZoomingToolBar = true,
-
     ToolBarBackground = new SolidColorBrush(Colors.Black),
-
     ToolBarItemHeight = 15,
-
     ToolBarItemWidth = 15,
-
     ToolBarItemMargin = new Thickness(10),
-
     ToolBarItems = ZoomToolBarItems.All
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2512,7 +2207,6 @@ chart.Behaviors.Add(zooming);
 {% endtabs %}
 
 ![Customization of zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img31.jpeg)
-
 
 **Orientation of zooming Toolbar**
 
@@ -2526,11 +2220,9 @@ Zooming toolbar orientation is horizontal by default.You can change the orientat
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableZoomingToolBar="True" 
-
-ToolBarOrientation="Vertical">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior
+        EnableZoomingToolBar="True"
+        ToolBarOrientation="Vertical" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2540,11 +2232,8 @@ ToolBarOrientation="Vertical">
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableZoomingToolBar = true,
-
     ToolBarOrientation = Orientation.Vertical
-
 };
 
 chart.Behaviors.Add(zooming);
@@ -2555,7 +2244,6 @@ chart.Behaviors.Add(zooming);
 
 ![Orientation of zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img32.jpeg)
 
-
 ### Panning the chart area
 
 Panning feature allows moving the visible area of the chart when it is zoomed in. To enable panning, you have to set [`EnablePanning`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnablePanning) property to true.
@@ -2565,9 +2253,7 @@ Panning feature allows moving the visible area of the chart when it is zoomed in
 {% highlight xml %}
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" EnablePanning="True">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" EnablePanning="True">
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2577,11 +2263,8 @@ Panning feature allows moving the visible area of the chart when it is zoomed in
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     EnableMouseWheelZooming = true,
-
     EnablePanning = true
-     
 };
 
 chart.Behaviors.Add(zooming);
@@ -2594,7 +2277,6 @@ The following image demonstrates the cursor panning in the left direction.
 
 ![Panning support in UWP Chart](Interactive-Features_images/Interactive-Features_img33.jpeg)
 
-
 ### Resetting the zooming/panning
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to reset to the default view when you double tap the chart area by setting [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ResetOnDoubleTap) property to true.
@@ -2605,9 +2287,7 @@ The following image demonstrates the cursor panning in the left direction.
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartZoomPanBehavior  ResetOnDoubleTap="True">                                              
-
-</syncfusion:ChartZoomPanBehavior>
+    <syncfusion:ChartZoomPanBehavior ResetOnDoubleTap="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2617,9 +2297,7 @@ The following image demonstrates the cursor panning in the left direction.
 
 ChartZoomPanBehavior zooming = new ChartZoomPanBehavior()
 {
-
     ResetOnDoubleTap = true
-     
 };
 
 chart.Behaviors.Add(zooming);
@@ -2627,7 +2305,6 @@ chart.Behaviors.Add(zooming);
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ### Events
 
@@ -2639,7 +2316,6 @@ The following events are available in [`SfChart`](https://help.syncfusion.com/cr
 * [`SelectionZoomingDelta`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SelectionZoomingDelta)- Occurs when selection zooming.
 * [`SelectionZoomingEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SelectionZoomingEnd)- Occurs when selection zooming end. 
 * [`ResetZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_ResetZooming)- Occurs when zooming get reset in chart area.
-
 
 ## Selection:
 
@@ -2655,9 +2331,8 @@ You can create an instance [`ChartSelectionBehavior`](https://help.syncfusion.co
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior >
-
-</syncfusion:ChartSelectionBehavior>
+    <syncfusion:ChartSelectionBehavior >
+    </syncfusion:ChartSelectionBehavior>
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2685,15 +2360,12 @@ Segment Selection allows you to highlight a segment in a chart series. To enable
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior   EnableSegmentSelection="True" >
-
-</syncfusion:ChartSelectionBehavior>
+<syncfusion:ChartSelectionBehavior EnableSegmentSelection="True" />
 
 </syncfusion:SfChart.Behaviors>
 
-<syncfusion:ColumnSeries Label="2011" SegmentSelectionBrush="Green" Interior="#777777"
-
-ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011"/>
+<syncfusion:ColumnSeries Label="2011" SegmentSelectionBrush="Green" Interior="#777777" 
+                         ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011"/>
 
 {% endhighlight %}
 
@@ -2701,28 +2373,19 @@ ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011"/>
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     Label ="2011",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series);
@@ -2743,19 +2406,21 @@ The following code example demonstrates the spline series segment selection by c
 
 {% highlight xml %}
 
-<syncfusion:SplineSeries SegmentSelectionBrush="Red"
+<syncfusion:SplineSeries
+    SegmentSelectionBrush="Red"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2010">
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
+    <syncfusion:SplineSeries.AdornmentsInfo>
 
-XBindingPath="Demand"
+        <syncfusion:ChartAdornmentInfo
+            ShowMarker="True"
+            Symbol="Ellipse"
+            HighlightOnSelection="True" />
 
-YBindingPath="Year2010">
-
-<syncfusion:SplineSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo ShowMarker="True" Symbol="Ellipse" HighlightOnSelection="True"></syncfusion:ChartAdornmentInfo>
-
-</syncfusion:SplineSeries.AdornmentsInfo>
+    </syncfusion:SplineSeries.AdornmentsInfo>
 
 </syncfusion:SplineSeries>
 
@@ -2765,37 +2430,25 @@ YBindingPath="Year2010">
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 SplineSeries series = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Red),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     HighlightOnSelection = true,
-
     Symbol = ChartSymbol.Ellipse
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -2820,25 +2473,27 @@ The following code example demonstrates highlighting a series.
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior EnableSegmentSelection="False" EnableSeriesSelection="True"/>
+    <syncfusion:ChartSelectionBehavior
+        EnableSegmentSelection="False"
+        EnableSeriesSelection="True" />
 
-</syncfusion:SfChart.Behaviors>   
+</syncfusion:SfChart.Behaviors>
 
-<syncfusion:ScatterSeries Label="2010"  SeriesSelectionBrush="Green"
+<syncfusion:ScatterSeries
+    Label="2010"
+    SeriesSelectionBrush="Green"
+    ItemsSource="{Binding Demands}"
+    Interior="#4A4A4A"
+    XBindingPath="Demand"
+    YBindingPath="Year2010" />
 
-ItemsSource="{Binding Demands}" Interior="#4A4A4A"
-
-XBindingPath="Demand"
-
-YBindingPath="Year2010">
-
-</syncfusion:ScatterSeries>
-
-<syncfusion:ScatterSeries Label="2011" SeriesSelectionBrush="Green" Interior="#777777"
-
-ItemsSource="{Binding Demands}" XBindingPath="Demand" 
-
-YBindingPath="Year2011"/>    
+<syncfusion:ScatterSeries
+    Label="2011"
+    SeriesSelectionBrush="Green"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011" />  
 
 {% endhighlight %}
 
@@ -2846,47 +2501,30 @@ YBindingPath="Year2011"/>
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = true,
-
     EnableSeriesSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 ScatterSeries series1 = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     Label = "2010",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 ScatterSeries series2 = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Label = "2011",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 chart.Series.Add(series1);
@@ -2913,9 +2551,7 @@ The following code snippet demonstrates the selection mode using [`MouseMove`](h
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior SelectionMode="MouseMove" EnableSeriesSelection="True">
-
-</syncfusion:ChartSelectionBehavior>
+    <syncfusion:ChartSelectionBehavior SelectionMode="MouseMove" EnableSeriesSelection="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2925,11 +2561,8 @@ The following code snippet demonstrates the selection mode using [`MouseMove`](h
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     SelectionMode = Syncfusion.UI.Xaml.Charts.SelectionMode.MouseMove,
-
     EnableSeriesSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
@@ -2950,9 +2583,7 @@ The following code snippet demonstrates multiple segment selection.
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior SelectionStyle="Multiple" EnableSegmentSelection="True">
-
-</syncfusion:ChartSelectionBehavior>
+    <syncfusion:ChartSelectionBehavior SelectionStyle="Multiple" EnableSegmentSelection="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2962,11 +2593,8 @@ The following code snippet demonstrates multiple segment selection.
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     SelectionStyle = SelectionStyle.Multiple,
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
@@ -2976,7 +2604,6 @@ chart.Behaviors.Add(selection);
 {% endtabs %}
 
 ![Selection style support in UWP Chart](Interactive-Features_images/Interactive-Features_img37.jpeg)
-
 
 ### Changing cursor while selection
 
@@ -2990,9 +2617,7 @@ The following code snippet demonstrates hand cursor in segment selection.
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior SelectionCursor="Hand"  EnableSegmentSelection="True">
-
-</syncfusion:ChartSelectionBehavior>
+    <syncfusion:ChartSelectionBehavior SelectionCursor="Hand"  EnableSegmentSelection="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -3002,11 +2627,8 @@ The following code snippet demonstrates hand cursor in segment selection.
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     SelectionCursor = Cursors.Hand,
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
@@ -3016,7 +2638,6 @@ chart.Behaviors.Add(selection);
 {% endtabs %}
 
 ![Changing cursor while selection support in UWP Chart](Interactive-Features_images/Interactive-Features_img38.jpeg)
-
 
 ### Adornment Selection:
 
@@ -3032,23 +2653,25 @@ The following code example demonstrates the segment selection with adornments
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries Interior="#4A4A4A"
+<syncfusion:ColumnSeries
+    Interior="#4A4A4A"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    SegmentSelectionBrush="Green"
+    YBindingPath="Year2010">
 
-ItemsSource="{Binding Demands}" XBindingPath="Demand"
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-SegmentSelectionBrush="Green"
+        <syncfusion:ChartAdornmentInfo
+            UseSeriesPalette="True"
+            ShowConnectorLine="True"
+            ConnectorHeight="30"
+            ShowLabel="True"
+            HighlightOnSelection="True" />
 
-YBindingPath="Year2010">
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo UseSeriesPalette="True" ShowConnectorLine="True"
-
-ConnectorHeight="30" ShowLabel="True" HighlightOnSelection="True">
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+</syncfusion:ColumnSeries>
 
 {% endhighlight %}
 
@@ -3056,41 +2679,27 @@ ConnectorHeight="30" ShowLabel="True" HighlightOnSelection="True">
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     SegmentSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     ShowConnectorLine = true,
-
     HighlightOnSelection = true,
-
     UseSeriesPalette = true,
-
     ConnectorHeight = 30
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -3113,51 +2722,45 @@ The following code example demonstrates the series selection with adornments
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartSelectionBehavior EnableSegmentSelection="False" 
-
-EnableSeriesSelection="True"/>
+    <syncfusion:ChartSelectionBehavior
+        EnableSegmentSelection="False"
+        EnableSeriesSelection="True" />
 
 </syncfusion:SfChart.Behaviors>
 
-<syncfusion:SplineSeries ItemsSource="{Binding Demands}" SeriesSelectionBrush="Green"
+<syncfusion:SplineSeries
+    ItemsSource="{Binding Demands}"
+    SeriesSelectionBrush="Green"
+    XBindingPath="Demand"
+    YBindingPath="Year2010">
 
-XBindingPath="Demand" 
+    <syncfusion:SplineSeries.AdornmentsInfo>
 
-YBindingPath="Year2010">
+        <syncfusion:ChartAdornmentInfo
+            Symbol="Ellipse"
+            ShowMarker="True"
+            HighlightOnSelection="True" />
 
-<syncfusion:SplineSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo Symbol="Ellipse"
-
-ShowMarker="True"
-
-HighlightOnSelection="True">                                            
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:SplineSeries.AdornmentsInfo>
+    </syncfusion:SplineSeries.AdornmentsInfo>
 
 </syncfusion:SplineSeries>
 
-<syncfusion:SplineSeries Label="2010" Interior="#4A4A4A" 
+<syncfusion:SplineSeries
+    Label="2010"
+    Interior="#4A4A4A"
+    ItemsSource="{Binding Demands}"
+    SeriesSelectionBrush="Green"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-ItemsSource="{Binding Demands}" SeriesSelectionBrush="Green"
+    <syncfusion:SplineSeries.AdornmentsInfo>
 
-XBindingPath="Demand"
+        <syncfusion:ChartAdornmentInfo
+            Symbol="Ellipse"
+            ShowMarker="True"
+            HighlightOnSelection="True" />
 
-YBindingPath="Year2011">
-
-<syncfusion:SplineSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo Symbol="Ellipse"
-
-ShowMarker="True"
-
-HighlightOnSelection="True">
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:SplineSeries.AdornmentsInfo>
+    </syncfusion:SplineSeries.AdornmentsInfo>
 
 </syncfusion:SplineSeries>
 
@@ -3167,63 +2770,42 @@ HighlightOnSelection="True">
 
 ChartSelectionBehavior selection = new ChartSelectionBehavior()
 {
-
     EnableSegmentSelection = false,
-
     EnableSeriesSelection = true
-
 };
 
 chart.Behaviors.Add(selection);
 
 SplineSeries series1 = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2010",
-
     SeriesSelectionBrush = new SolidColorBrush(Colors.Green)
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse
-
 };
 
 series1.AdornmentsInfo = adornmentInfo;
 
 SplineSeries series2 = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     SeriesSelectionBrush = new SolidColorBrush(Colors.Green),
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A,0x4A,0x4A))
-
 };
 
 ChartAdornmentInfo adornmentInfo1 = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse,
-
     HighlightOnSelection = true
-
 };
 
 series2.AdornmentsInfo = adornmentInfo1;
@@ -3238,14 +2820,12 @@ chart.Series.Add(series2);
 
 ![Series selection with adornments in UWP Chart](Interactive-Features_images/Interactive-Features_img40.jpeg)
 
-
 ### Events
 
 The following events are available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) for [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html),
 
 * [`SelectionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging)- Occurs when selection changing in chart area.
 * [`SelectionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged)- Occurs when selection changed in chart area. 
-
 
 ## Resizable Scrollbar
 
@@ -3261,7 +2841,7 @@ The resizable scrollbar is a type of scrollbar that can be resized within the tr
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis EnableScrollBar="True" />
+    <syncfusion:CategoryAxis EnableScrollBar="True" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -3271,9 +2851,7 @@ The resizable scrollbar is a type of scrollbar that can be resized within the tr
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true
-
 };
 
 {% endhighlight %}
@@ -3281,7 +2859,6 @@ chart.PrimaryAxis = new CategoryAxis()
 {% endtabs %}
 
 ![Adding scrollbar to axis in UWP Chart](Interactive-Features_images/Interactive-Features_img41.jpeg)
-
 
 **Deferred scrolling**
 
@@ -3293,7 +2870,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis EnableScrollBar="True" DeferredScrolling="True"/>
+    <syncfusion:CategoryAxis EnableScrollBar="True" DeferredScrolling="True" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -3303,11 +2880,8 @@ chart.PrimaryAxis = new CategoryAxis()
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true,
-
     DeferredScrolling = true,
-
 };
 
 {% endhighlight %}
@@ -3324,7 +2898,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis EnableScrollBar="True" EnableScrollBarResizing="False"/>
+    <syncfusion:CategoryAxis EnableScrollBar="True" EnableScrollBarResizing="False" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -3334,11 +2908,8 @@ chart.PrimaryAxis = new CategoryAxis()
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true,
-
     EnableScrollBarResizing = false,
-
 };
 
 {% endhighlight %}
@@ -3346,7 +2917,6 @@ chart.PrimaryAxis = new CategoryAxis()
 {% endtabs %}
 
 ![Resizing the scrollbar in UPW Chart](Interactive-Features_images/Interactive-Features_img42.jpeg)
-
 
 ### Scrollbar for touch mode
 
@@ -3358,7 +2928,7 @@ Scrollbar provides a touch mode style by enabling [`EnableTouchMode`](https://he
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis EnableScrollBar="True" EnableTouchMode="True"/>
+    <syncfusion:CategoryAxis EnableScrollBar="True" EnableTouchMode="True" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -3368,11 +2938,8 @@ Scrollbar provides a touch mode style by enabling [`EnableTouchMode`](https://he
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true,
-
     EnableTouchMode = true
-
 };
 
 {% endhighlight %}
@@ -3380,7 +2947,6 @@ chart.PrimaryAxis = new CategoryAxis()
 {% endtabs %}
 
 ![Scrollbar for touch mode support in UWP Chart](Interactive-Features_images/Interactive-Features_img43.jpeg)
-
 
 **Thumb label**
 
@@ -3394,7 +2960,7 @@ The following code example demonstrates the thumb labels in scrollbar.
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis EnableScrollBar="True" ThumbLabelVisibility="Visible" EnableTouchMode="True"/>
+<syncfusion:CategoryAxis EnableScrollBar="True" ThumbLabelVisibility="Visible" EnableTouchMode="True" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -3404,13 +2970,9 @@ The following code example demonstrates the thumb labels in scrollbar.
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableScrollBar = true,
-
     EnableTouchMode = true,
-
     ThumbLabelVisibility = Visibility.Visible
-
 };
 
 {% endhighlight %}
@@ -3418,7 +2980,6 @@ chart.PrimaryAxis = new CategoryAxis()
 {% endtabs %}
 
 ![Thumb label for scrollbar in UWP Chart](Interactive-Features_images/Interactive-Features_img44.jpeg)
-
 
 **ThumbLabelTemplate**
 
@@ -3436,12 +2997,8 @@ chart.PrimaryAxis = new CategoryAxis()
 
             <Grid>
 
-                <Border BorderBrush="Black" Background="Pink" 
-                                
-                        BorderThickness="2">
-
-                    <TextBlock Text="{Binding}" FontSize="15"/>
-
+                <Border BorderBrush="Black" Background="Pink" BorderThickness="2">
+                    <TextBlock Text="{Binding}" FontSize="15" />
                 </Border>
 
             </Grid>
@@ -3452,11 +3009,9 @@ chart.PrimaryAxis = new CategoryAxis()
 
     <syncfusion:SfChart.PrimaryAxis>
 
-        <syncfusion:CategoryAxis EnableTouchMode="True" EnableScrollBar="True"
-                                         
-                                 ThumbLabelVisibility="Visible"
-                                         
-                                 ThumbLabelTemplate="{StaticResource labelTemplate}"/>
+        <syncfusion:CategoryAxis EnableTouchMode="True"
+            EnableScrollBar="True" ThumbLabelVisibility="Visible"
+            ThumbLabelTemplate="{StaticResource labelTemplate}" />
 
     </syncfusion:SfChart.PrimaryAxis>
 
@@ -3468,15 +3023,10 @@ chart.PrimaryAxis = new CategoryAxis()
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     EnableTouchMode = true,
-
     EnableScrollBar = true,
-
     ThumbLabelVisibility = Visibility.Visible,
-
     ThumbLabelTemplate = chart.Resources["labelTemplate"] as DataTemplate
-
 };
 
 {% endhighlight %}
@@ -3499,7 +3049,7 @@ You can create an instance [`ChartCrossHairBehavior`](https://help.syncfusion.co
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartCrossHairBehavior />
+     <syncfusion:ChartCrossHairBehavior />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -3523,13 +3073,13 @@ To view the axis labels then set the [`ShowTrackBallInfo`](https://help.syncfusi
 
 <syncfusion:SfChart.PrimaryAxis>
 
-<syncfusion:CategoryAxis  ShowTrackBallInfo="True"/>
+    <syncfusion:CategoryAxis ShowTrackBallInfo="True"/>
 
 </syncfusion:SfChart.PrimaryAxis>
 
 <syncfusion:SfChart.SecondaryAxis>
 
-<syncfusion:NumericalAxis  ShowTrackBallInfo="True"/>
+    <syncfusion:NumericalAxis ShowTrackBallInfo="True"/>
 
 </syncfusion:SfChart.SecondaryAxis>
 
@@ -3543,16 +3093,12 @@ chart.Behaviors.Add(behavior);
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
     ShowTrackBallInfo = true
-
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-
     ShowTrackBallInfo = true
-
 };
 
 {% endhighlight %}
@@ -3560,7 +3106,6 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Cross hair support in UWP Chart](Interactive-Features_images/Interactive-Features_img46.jpeg)
-
 
 Cross hair is composed of the following parts.
 
@@ -3584,19 +3129,17 @@ The following code snippet demonstrates the line style for horizontal line in cr
 
     <syncfusion:SfChart.Resources>
 
-        <Style TargetType="Line" x:Key="lineStyle">
-
-            <Setter Property="Stroke" Value="Green"></Setter>
-
-            <Setter Property="StrokeThickness" Value="1"></Setter>
-
+        <Style x:Key="lineStyle" TargetType="Line">
+            <Setter Property="Stroke" Value="Green" />
+            <Setter Property="StrokeThickness" Value="1" />
         </Style>
-                
+
     </syncfusion:SfChart.Resources>
 
     <syncfusion:SfChart.Behaviors>
 
-        <syncfusion:ChartCrossHairBehavior HorizontalLineStyle="{StaticResource lineStyle}"/>
+        <syncfusion:ChartCrossHairBehavior
+            HorizontalLineStyle="{StaticResource lineStyle}" />
 
     </syncfusion:SfChart.Behaviors>
 
@@ -3608,9 +3151,7 @@ The following code snippet demonstrates the line style for horizontal line in cr
 
 ChartCrossHairBehavior crosshair = new ChartCrossHairBehavior()
 {
-
     HorizontalLineStyle = chart.Resources["lineStyle"] as Style
-
 };
 
 chart.Behaviors.Add(crosshair);
@@ -3632,21 +3173,18 @@ chart.Behaviors.Add(crosshair);
 
     <syncfusion:SfChart.Resources>
 
-        <Style TargetType="Line" x:Key="lineStyle">
-
-            <Setter Property="StrokeDashArray" Value="10,5"/>
-
-            <Setter Property="Stroke" Value="Red"/>
-
-             <Setter Property="StrokeThickness" Value="1"/>
-
+        <Style x:Key="lineStyle" TargetType="Line">
+            <Setter Property="StrokeDashArray" Value="10,5" />
+            <Setter Property="Stroke" Value="Red" />
+            <Setter Property="StrokeThickness" Value="1" />
         </Style>
-                
+
     </syncfusion:SfChart.Resources>
 
-     <syncfusion:SfChart.Behaviors>
+    <syncfusion:SfChart.Behaviors>
 
-                <syncfusion:ChartCrossHairBehavior VerticalLineStyle="{StaticResource lineStyle}"/>
+        <syncfusion:ChartCrossHairBehavior
+            VerticalLineStyle="{StaticResource lineStyle}" />
 
     </syncfusion:SfChart.Behaviors>
 
@@ -3658,9 +3196,7 @@ chart.Behaviors.Add(crosshair);
 
 ChartCrossHairBehavior crosshair = new ChartCrossHairBehavior()
 {
-
     VerticalLineStyle = chart.Resources["lineStyle"] as Style
-
 };
 
 chart.Behaviors.Add(crosshair);
@@ -3670,7 +3206,6 @@ chart.Behaviors.Add(crosshair);
 {% endtabs %}
 
 ![Cross hair line style in UWP Chart](Interactive-Features_images/Interactive-Features_img48.jpeg)
-
 
 ### Horizontal axis label
 
@@ -3690,7 +3225,6 @@ The following image demonstrates the horizontal axis label positioned center to 
 
 ![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img49.jpeg)
 
-
 **Far**
 
 {% tabs %}
@@ -3699,9 +3233,7 @@ The following image demonstrates the horizontal axis label positioned center to 
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Far ">
-
-</syncfusion:ChartCrossHairBehavior>
+    <syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Far" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -3711,9 +3243,7 @@ The following image demonstrates the horizontal axis label positioned center to 
 
 ChartCrossHairBehavior behavior = new ChartCrossHairBehavior()
 {
-
     HorizontalAxisLabelAlignment = ChartAlignment.Far
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -3724,7 +3254,6 @@ chart.Behaviors.Add(behavior);
 
 ![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img50.jpeg)
 
-
 **Near**
 
 {% tabs %}
@@ -3733,9 +3262,7 @@ chart.Behaviors.Add(behavior);
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Near ">
-
-</syncfusion:ChartCrossHairBehavior>
+    <syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Near " />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -3745,9 +3272,7 @@ chart.Behaviors.Add(behavior);
 
 ChartCrossHairBehavior behavior = new ChartCrossHairBehavior()
 {
-
     HorizontalAxisLabelAlignment = ChartAlignment.Near
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -3757,7 +3282,6 @@ chart.Behaviors.Add(behavior);
 {% endtabs %}
 
 ![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img51.jpeg)
-
 
 ### Vertical axis label
 
@@ -3769,7 +3293,6 @@ The following image demonstrates the horizontal axis label positioned center to 
 
 ![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img52.jpeg)
 
-
 **Near**
 
 {% tabs %}
@@ -3778,9 +3301,7 @@ The following image demonstrates the horizontal axis label positioned center to 
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartCrossHairBehavior VerticalAxisLabelAlignment="Near">
-
-</syncfusion:ChartCrossHairBehavior>
+    <syncfusion:ChartCrossHairBehavior VerticalAxisLabelAlignment="Near" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -3790,9 +3311,7 @@ The following image demonstrates the horizontal axis label positioned center to 
 
 ChartCrossHairBehavior behavior = new ChartCrossHairBehavior()
 {
-
     VerticalAxisLabelAlignment = ChartAlignment.Near
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -3811,9 +3330,7 @@ chart.Behaviors.Add(behavior);
 
 <syncfusion:SfChart.Behaviors>
 
-<syncfusion:ChartCrossHairBehavior VerticalAxisLabelAlignment="Far"  >
-
-</syncfusion:ChartCrossHairBehavior>
+    <syncfusion:ChartCrossHairBehavior VerticalAxisLabelAlignment="Far" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -3823,9 +3340,7 @@ chart.Behaviors.Add(behavior);
 
 ChartCrossHairBehavior behavior = new ChartCrossHairBehavior()
 {
-
     VerticalAxisLabelAlignment = ChartAlignment.Far
-
 };
 
 chart.Behaviors.Add(behavior);
@@ -3842,10 +3357,3 @@ chart.Behaviors.Add(behavior);
 - [How to show or hide Zooming Toolbar Items in UWP Chart?](https://support.syncfusion.com/kb/article/12179/how-to-show-or-hide-zooming-toolbar-items-in-uwp-chart)
 - [How to display additional data in Tooltips in UWP Charts?](https://support.syncfusion.com/kb/article/11034/how-to-display-additional-data-in-tooltips-in-uwp-charts)
 - [How to find nearest data point in series using touch point in UWP Chart?](https://support.syncfusion.com/kb/article/8207/how-to-find-nearest-data-point-in-series-using-touch-point-in-uwp-chart)
-
-
-
-
-
-
- 
