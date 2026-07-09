@@ -384,5 +384,10 @@ XBindingPath="ID" YBindingPath="Coal">
 
 Also, when enabling this property of the series, you need to implement INotifyPropertyChanged in the underlying business model class to make the chart listen to the property changes of your data object.
 
-N>By default, the property change was disabled. So the dynamic updates will not get reflect in chart. You need to enable this property.
+N> By default, the property change is disabled, so the dynamic updates will not be reflected in the chart. You need to enable this property.
 
+## See Also
+
+- [How to bind Chart Series Collection using MVVM in UWP Charts?](https://support.syncfusion.com/kb/article/8343/how-to-bind-chart-series-collection-using-mvvm-in-uwp-charts)
+- [How to bind JSON data to UWP Charts?](https://support.syncfusion.com/kb/article/10214/how-to-bind-json-data-to-uwp-charts)
+- [How to bind the SQL Database in UWP Chart?](https://support.syncfusion.com/kb/article/10133/how-to-bind-the-sql-database-in-uwp-chart)

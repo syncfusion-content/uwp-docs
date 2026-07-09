@@ -59,4 +59,6 @@ private void LineChart_MouseMove(object sender, MouseEventArgs e)
 		
 {% endhighlight %}
 
+## See Also
 
+- [How to get Axis Range in UWP chart?](https://support.syncfusion.com/kb/article/9505/how-to-get-axis-range-in-uwp-chart)

@@ -221,23 +221,21 @@ N> You need to set [`XBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusio
 {% highlight xaml %}
 
 <syncfusion:SfChart>
-   
-  <syncfusion:SfChart.PrimaryAxis>
-    
-      <syncfusion:CategoryAxis Header="Name" />             
-   
-  </syncfusion:SfChart.PrimaryAxis>
 
-  <syncfusion:SfChart.SecondaryAxis>
-  
-      <syncfusion:NumericalAxis Header="Height(in cm)" />                        
+    <syncfusion:SfChart.PrimaryAxis>
+        <syncfusion:CategoryAxis Header="Name" />
+    </syncfusion:SfChart.PrimaryAxis>
 
-  </syncfusion:SfChart.SecondaryAxis>
-    
-   <syncfusion:ColumnSeries  ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height" >
-  </syncfusion:ColumnSeries>
+    <syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:NumericalAxis Header="Height(in cm)" />
+    </syncfusion:SfChart.SecondaryAxis>
 
- </syncfusion:SfChart> 
+    <syncfusion:ColumnSeries
+        ItemsSource="{Binding Data}"
+        XBindingPath="Name"
+        YBindingPath="Height" />
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -355,15 +353,15 @@ You can add data labels to improve the readability of the chart and it can be en
 
 <syncfusion:SfChart>
 
-	...
+    ...
 
-  <syncfusion:ColumnSeries > 
-     <syncfusion:ColumnSeries.AdornmentsInfo>
-          <syncfusion:ChartAdornmentInfo ShowLabel="True"/> 
-     </syncfusion:ColumnSeries.AdornmentsInfo> 
-  </syncfusion:ColumnSeries>     
+    <syncfusion:ColumnSeries>
+        <syncfusion:ColumnSeries.AdornmentsInfo>
+            <syncfusion:ChartAdornmentInfo ShowLabel="True" />
+        </syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries>
 
-	...
+    ...
 
 </syncfusion:SfChart>
 
@@ -395,11 +393,11 @@ You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/uw
 
 <syncfusion:SfChart>
 
-	...
+    ...
 
     <syncfusion:SfChart.Legend>
 
-        <syncfusion:ChartLegend/>
+        <syncfusion:ChartLegend />
 
     </syncfusion:SfChart.Legend>
 
@@ -431,11 +429,15 @@ Additionally, you need to set a label for each series using the [`Label`](https:
 
 <syncfusion:SfChart>
 
-	...
+    ...
 
-      <syncfusion:ColumnSeries Label="Heights" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height" />
+    <syncfusion:ColumnSeries
+        Label="Heights"
+        ItemsSource="{Binding Data}"
+        XBindingPath="Name"
+        YBindingPath="Height" />
 
-	...
+    ...
 
 </syncfusion:SfChart>
 
@@ -475,13 +477,17 @@ Tooltips are used to show information about the segment, when you click on the s
 
 <syncfusion:SfChart>
 
-	...
+    ...
 
-   <syncfusion:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Height"/>
+    <syncfusion:ColumnSeries
+        ShowTooltip="True"
+        ItemsSource="{Binding Data}"
+        XBindingPath="Name"
+        YBindingPath="Height" />
 
-	...
+    ...
 
-</syncfusion:SfChart> 
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -676,3 +682,9 @@ The following chart is created as a result of the above code.
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/How-to-create-a-Chart-control-example-in-UWP).
 
+## See Also
+
+- [How to bind Chart Series Collection using MVVM in UWP Charts?](https://support.syncfusion.com/kb/article/8343/how-to-bind-chart-series-collection-using-mvvm-in-uwp-charts)
+- [How to bind JSON data to UWP Charts?](https://support.syncfusion.com/kb/article/10214/how-to-bind-json-data-to-uwp-charts)
+- [How to get a notification when the legend item is clicked in UWP Chart?](https://support.syncfusion.com/kb/article/10171/how-to-get-a-notification-when-the-legend-item-is-clicked-in-uwp-chart)
+- [How to set the tooltip duration in a UWP Chart?](https://support.syncfusion.com/kb/article/5725/how-to-set-the-tooltip-duration-in-a-uwp-chart)

@@ -18,4 +18,3 @@ The following code sample can be used to print the SfChart:
   chart.Print();   
 
 {% endhighlight %}
-

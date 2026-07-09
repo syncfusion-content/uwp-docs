@@ -89,3 +89,7 @@ public class CustomTrackBallBehavior: ChartTrackBallBehavior
 
 {% endhighlight %}
 
+## See Also
+
+- [How to display additional data in Tooltips in UWP Charts?](https://support.syncfusion.com/kb/article/11034/how-to-display-additional-data-in-tooltips-in-uwp-charts)
+- [How to find nearest data point in series using touch point in UWP Chart?](https://support.syncfusion.com/kb/article/8207/how-to-find-nearest-data-point-in-series-using-touch-point-in-uwp-chart)

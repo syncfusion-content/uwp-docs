@@ -13,13 +13,13 @@ Technical indicators are the base of technical analysis, which is used to determ
 
 ## Adding Technical Indicators to the Chart
 
-Technical indicator merely an another type meta series. The following steps illustrates how to add the technical indicators to the chart:
+A technical indicator is merely another type of meta series. The following steps illustrate how to add the technical indicators to the chart:
 
 ### Initializing Indicator
 
-Create the instance for any technical indicator and add it to the [`TechnicalIndicators`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_TechnicalIndicators) collection. 
+Create an instance for any technical indicator and add it to the [`TechnicalIndicators`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_TechnicalIndicators) collection. 
 
-Here for instance, the [AccumulationDistributionIndicator](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html) is added.
+Here, for instance, the [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html) is added.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ### Binding the Data
 
-Next you need to bind the property path for the [`Open`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Open), [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_High), [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Low) , [`Close`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Close) and [`Volume`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Volume) along with x value binding property.
+Next you need to bind the property path for the [`Open`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Open), [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_High), [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Low), [`Close`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Close) and [`Volume`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Volume) along with X value binding property.
 
 {% tabs %}
 
@@ -124,13 +124,13 @@ chart.TechnicalIndicators.Add(indicator);
 ![AccumulationDistributionIndicator type in UWP Chart](Technical-Indicators_images/overview_1.png)
 
 
-The following sections covers all the different types of technical indicators available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html).
+The following sections cover all the different types of technical indicators available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html).
 
-Most of the indicators are having the [`Period`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_Period) and [`SignalLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_SignalLineColor) properties as common, in which Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
+Most of the indicators have the [`Period`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_Period) and [`SignalLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_SignalLineColor) properties as common, in which the Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
 
 ## Average True Range
 
-You can define the [`AverageTrueRangeIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html) using the following code example
+You can define the [`AverageTrueRangeIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html) using the following code example.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ Period="3" XBindingPath="Date" Volume="Volume"
 
 SignalLineColor="Black" High="High" Low="Low"
 
-Open="Open" Close="Close"/ >
+Open="Open" Close="Close"/>
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -232,9 +232,9 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## RSI 
 
-The [`Relative Strength Index(RSI)`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html) indicators are having additional two lines other than signal line, which indicate the overbought and oversold region. 
+The [`Relative Strength Index(RSI)`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html) indicator has two additional lines other than the signal line, which indicate the overbought and oversold regions. 
 
-The [`UpperLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_RSITechnicalIndicator_UpperLineColor) property is used to define the color for the line indicating overbought region and the [`LowerLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_RSITechnicalIndicator_LowerLineColor) property is used to define the color for the line indicating oversold region.
+The [`UpperLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_RSITechnicalIndicator_UpperLineColor) property is used to define the color for the line indicating the overbought region and the [`LowerLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_RSITechnicalIndicator_LowerLineColor) property is used to define the color for the line indicating the oversold region.
 
 To define the [`RSITechnicalIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RSITechnicalIndicator.html), you can use the following code example:
 
@@ -292,7 +292,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Momentum 
 
-This indicator having two lines momentum line and center line. No signal line in this indicator. You can define momentum technical indicator using the following code example.
+This indicator has two lines: a momentum line and a center line. There is no signal line in this indicator. You can define the momentum technical indicator using the following code example.
 
 The [`MomentumLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MomentumTechnicalIndicator_MomentumLineColor) property and [`CenterLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MomentumTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MomentumTechnicalIndicator_CenterLineColor) property are used to define the color for the momentum and center line respectively.
 
@@ -308,7 +308,7 @@ Period="3" CenterLineColor="red" XBindingPath="Date"
 
 Volume="Volume" MomentumLineColor="Black"
 
-High="High" Low="Low" Open="Open" Close="Close"/ >
+High="High" Low="Low" Open="Open" Close="Close"/>
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -346,7 +346,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Stochastic 
 
-[`Stochastic`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html) indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_KPeriod) and [`DPeriod`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_DPeriod) property defining the ‘K’ percentage and ‘D’ percentage respectively.No signal line in this indicator.
+[`Stochastic`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html) indicator is used to measure the range and momentum of price movements. It contains [`KPeriod`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_KPeriod) and [`DPeriod`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_DPeriod) property defining the ‘K’ percentage and ‘D’ percentage respectively. No signal line in this indicator.
 
 The [`UpperLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_UpperLineColor), [`LowerLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_LowerLineColor) and [`PeriodLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_PeriodLineColor) property are used to define the brushes for the Stochastic indicator lines.
 
@@ -422,7 +422,7 @@ Period="3" XBindingPath="Date" Volume="Volume"
 
 SignalLineColor="Black" High="High" Low="Low"
 
-Open="Open" Close="Close"/ >
+Open="Open" Close="Close"/>
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -472,7 +472,7 @@ Period="3" XBindingPath="Date" Volume="Volume"
 
 SignalLineColor="Black" High="High" Low="Low"
 
-Open="Open" Close="Close"/ >
+Open="Open" Close="Close"/>
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -508,7 +508,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Accumulation Distribution 
 
-The following code example help you to add [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html).
+The following code example helps you add the [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html).
 
 {% tabs %}
 
@@ -562,7 +562,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## Bollinger Band
 
-This indicator also having [`UpperLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_UpperLineColor), [`LowerLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_LowerLineColor) and [`SignalLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_SignalLineColor) property for defining the brushes for the indicator lines.
+This indicator also has [`UpperLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_UpperLineColor), [`LowerLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_LowerLineColor) and [`SignalLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_SignalLineColor) property for defining the brushes for the indicator lines.
 
 You can define the [`BollingerBandIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html) using the following code example:
 
@@ -620,9 +620,9 @@ chart.TechnicalIndicators.Add(indicator);
 
 ## MACD 
 
-This is mostly using indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_ShortPeriod) and [`LongPeriod`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_LongPeriod) for defining the motion of the indicator.
+This is a mostly used indicator having [`ShortPeriod`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_ShortPeriod) and [`LongPeriod`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_LongPeriod) for defining the motion of the indicator.
 
-Other than signal line, MACD is having convergence and divergence line. The brushes for these lines can be defined using [`ConvergenceLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_ConvergenceLineColor) and [`DivergenceLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_DivergenceLineColor).
+Other than the signal line, MACD has convergence and divergence lines. The brushes for these lines can be defined using [`ConvergenceLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_ConvergenceLineColor) and [`DivergenceLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_DivergenceLineColor).
 
 Also you can draw [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDType.html#Syncfusion_UI_Xaml_Charts_MACDType_Line), [`Histogram`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDType.html#Syncfusion_UI_Xaml_Charts_MACDType_Histogram) MACD or [`Both`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDType.html#Syncfusion_UI_Xaml_Charts_MACDType_Both) using the [`Type`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MACDTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_MACDTechnicalIndicator_Type) property, which defines the type of MACD to be drawn.
 

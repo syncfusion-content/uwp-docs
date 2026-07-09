@@ -24,7 +24,6 @@ documentation: ug
 
 ## Creating 3D Charts
 
-
 The following steps explain how to create 3D charts.
 
 1. Open the Add Reference window from your project.
@@ -33,45 +32,37 @@ The following steps explain how to create 3D charts.
 
 {% highlight xaml %}
 
-        xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
 
 {% endhighlight %}
-   
 
 4. Initialize the chart represented by the following class, Syncfusion.UI.Xaml.Charts.SfChart3D:
 
 {% highlight xaml %}
 
-        <Syncfusion:SfChart3D>
+<Syncfusion:SfChart3D>
 
-		</Syncfusion:SfChart3D>
+</Syncfusion:SfChart3D>
 
 {% endhighlight %}
-   
-
 
 5. Next, declare the [`PrimaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_PrimaryAxis) and [`SecondaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart3D.html#Syncfusion_UI_Xaml_Charts_SfChart3D_SecondaryAxis):
 
 {% highlight xaml %}
 
-        <Syncfusion:SfChart3D>
+<Syncfusion:SfChart3D>
 
-		<Syncfusion:SfChart3D.PrimaryAxis>
+    <Syncfusion:SfChart3D.PrimaryAxis>
+        <Syncfusion:CategoryAxis3D />
+    </Syncfusion:SfChart3D.PrimaryAxis>
 
-		<Syncfusion:CategoryAxis3D/>
+    <Syncfusion:SfChart3D.SecondaryAxis>
+        <Syncfusion:NumericalAxis3D />
+    </Syncfusion:SfChart3D.SecondaryAxis>
 
-		</Syncfusion:SfChart3D.PrimaryAxis>
-
-		<Syncfusion:SfChart3D.SecondaryAxis>
-
-		<Syncfusion:NumericalAxis3D/>
-
-		</Syncfusion:SfChart3D.SecondaryAxis>
-
-		</Syncfusion:SfChart3D >
+</Syncfusion:SfChart3D>
 
 {% endhighlight %}
-   
 
 ### Add Chart Series to Chart
 
@@ -79,21 +70,17 @@ To begin with plotting data, choose from a wide variety of graphical representat
 
 {% highlight xml %}
 
-<Syncfusion:SfChart3D x:Name="Chart">
+<Syncfusion:SfChart3D x:Name="Chart">
 
-  <Syncfusion:SfChart3D.PrimaryAxis>
+    <Syncfusion:SfChart3D.PrimaryAxis>
+        <Syncfusion:DateTimeAxis3D />
+    </Syncfusion:SfChart3D.PrimaryAxis>
 
-    <Syncfusion:DateTimeAxis3D/>
+    <Syncfusion:SfChart3D.SecondaryAxis>
+        <Syncfusion:NumericalAxis3D />
+    </Syncfusion:SfChart3D.SecondaryAxis>
 
-  </Syncfusion:SfChart3D.PrimaryAxis>
-
-  <Syncfusion:SfChart3D.SecondaryAxis>
-
-   <Syncfusion:NumericalAxis3D/>
-
-  </Syncfusion:SfChart3D.SecondaryAxis>
-
-  <Syncfusion:ColumnSeries3D/>
+    <Syncfusion:ColumnSeries3D />
 
 </Syncfusion:SfChart3D>
 
@@ -105,57 +92,59 @@ Since the above step will produce only an empty column 3D chart, plotting data m
 
 {% highlight c# %}
 
+public class UserProfile
+{
+    public DateTime TimeStamp { get; set; }
+    public double NoOfUsers { get; set; }
+}
 
+public class UsersViewModel
+{
+    public UsersViewModel()
+    {
+        this.UsersList = new ObservableCollection<UserProfile>();
+        DateTime date = DateTime.Today;
 
-public class UserProfile
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 1000
+        });
 
- {
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 5000
+        });
 
-   public DateTime TimeStamp { get; set; }
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 3000
+        });
 
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 4000
+        });
 
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 2000
+        });
 
-   public double NoOfUsers { get; set; }
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 1000
+        });
+    }
 
- }
+    public ObservableCollection<UserProfile> UsersList { get; set; }
+}
 
-
-
-public class UsersViewModel
-
- {
-
- public UsersViewModel()
-
-  {
-
-   this.UsersList = new ObservableCollection<UserProfile>();
-
-   DateTime date = DateTime.Today;
-
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 1000 });
-
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 5000 });
-
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 3000 });
-
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 4000 });
-
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 2000 });
-
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5), NoOfUsers = 1000 });
-
-  }
-
- public ObservableCollection<UserProfile> UsersList
-
-  {
-
-    get; set;
-
-  }
-
- }
 {% endhighlight %}
 
 ### Binding Data to ChartSeries
@@ -166,62 +155,27 @@ Add the above UsersViewModel to the DataContext of the chart, bind the data sour
 
 {% highlight xml %}
 
-
 <Page.DataContext>
-
-      <local:UsersViewModel/>
-
-</ Page.DataContext>
+    <local:UsersViewModel />
+</Page.DataContext>
 
 <Syncfusion:SfChart3D x:Name="Chart" Height="500" Width="500">
 
+    <Syncfusion:SfChart3D.PrimaryAxis>
+        <Syncfusion:CategoryAxis3D />
+    </Syncfusion:SfChart3D.PrimaryAxis>
 
+    <Syncfusion:SfChart3D.SecondaryAxis>
+        <Syncfusion:NumericalAxis3D />
+    </Syncfusion:SfChart3D.SecondaryAxis>
 
-        <Syncfusion:SfChart3D.PrimaryAxis>
+    <Syncfusion:ColumnSeries3D
+        ItemsSource="{Binding UsersList}"
+        XBindingPath="TimeStamp"
+        YBindingPath="NoOfUsers" />
 
+</Syncfusion:SfChart3D>
 
-
-            <Syncfusion:CategoryAxis3D/>
-
-
-
-        </Syncfusion:SfChart3D.PrimaryAxis>
-
-
-
-        <Syncfusion:SfChart3D.SecondaryAxis>
-
-
-
-            <Syncfusion:NumericalAxis3D/>
-
-
-
-        </Syncfusion:SfChart3D.SecondaryAxis>
-
-
-
-        <Syncfusion:ColumnSeries3D
-
-
-
-ItemsSource="{Binding UsersList}"
-
-
-
-XBindingPath="TimeStamp"
-
-
-
-YBindingPath="NoOfUsers">
-
-
-
-        </Syncfusion:ColumnSeries3D>
-
-
-
-    </Syncfusion:SfChart3D >
 {% endhighlight %}
 The following screenshot illustrates the result of the above code sample:
 
@@ -317,8 +271,6 @@ A Boolean property to show or hide the labels</td></tr>
 * Pie
 * Doughnut
 
-
-
 ### Create a simple chart series
 
 The following code can be used to create a simple doughnut series:
@@ -328,114 +280,82 @@ The following code can be used to create a simple doughnut series:
 {% highlight xaml %}
 
 <Page.DataContext>
-
-      <local:UsersViewModel/>
-
+    <local:UsersViewModel />
 </Page.DataContext>
 
 <Syncfusion:SfChart3D x:Name="Chart" Height="500" Width="500">
 
+    <Syncfusion:SfChart3D.PrimaryAxis>
+        <Syncfusion:CategoryAxis3D />
+    </Syncfusion:SfChart3D.PrimaryAxis>
 
+    <Syncfusion:SfChart3D.SecondaryAxis>
+        <Syncfusion:NumericalAxis3D />
+    </Syncfusion:SfChart3D.SecondaryAxis>
 
-        <Syncfusion:SfChart3D.PrimaryAxis>
+    <Syncfusion:DoughnutSeries3D
+        ItemsSource="{Binding UsersList}"
+        XBindingPath="TimeStamp"
+        YBindingPath="NoOfUsers" />
 
-
-
-            <Syncfusion:CategoryAxis3D/>
-
-
-
-        </Syncfusion:SfChart3D.PrimaryAxis>
-
-
-
-        <Syncfusion:SfChart3D.SecondaryAxis>
-
-
-
-            <Syncfusion:NumericalAxis3D/>
-
-
-
-        </Syncfusion:SfChart3D.SecondaryAxis>
-
-
-
-         <Syncfusion:DoughnutSeries3D
-
-
-
-ItemsSource="{Binding UsersList}"
-
-
-
-XBindingPath="TimeStamp"
-
-
-
-YBindingPath="NoOfUsers">
-
-
-
-                </Syncfusion:DoughnutSeries3D>
-
-
-
-    </Syncfusion:SfChart3D >
+</Syncfusion:SfChart3D>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-public class UserProfile
+public class UserProfile
+{
+    public DateTime TimeStamp { get; set; }
+    public double NoOfUsers { get; set; }
+}
 
- {
+public class UsersViewModel
+{
+    public UsersViewModel()
+    {
+        this.UsersList = new ObservableCollection<UserProfile>();
+        DateTime date = DateTime.Today;
 
-   public DateTime TimeStamp { get; set; }
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 1000
+        });
 
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 5000
+        });
 
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 3000
+        });
 
-   public double NoOfUsers { get; set; }
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 4000
+        });
 
- }
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 2000
+        });
 
+        UsersList.Add(new UserProfile
+        {
+            TimeStamp = date.AddHours(0.5),
+            NoOfUsers = 1000
+        });
+    }
 
-
-public class UsersViewModel
-
- {
-
- public UsersViewModel()
-
-  {
-
-   this.UsersList = new ObservableCollection<UserProfile>();
-
-   DateTime date = DateTime.Today;
-
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5),NoOfUsers=1000});
-
-   UsersList.Add(new UserProfile { TimeStamp=date.AddHours(0.5),NoOfUsers = 5000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 4000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
-
-   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 1000 });
-
-  }
-
- public ObservableCollection<UserProfile> UsersList
-
-  {
-
-    get; set;
-
-  }
-
- }
+    public ObservableCollection<UserProfile> UsersList { get; set; }
+}
 
 {% endhighlight %}
 
@@ -445,8 +365,6 @@ public class UsersViewModel
 The following image illustrates the result of the above code sample:
 
 ![Series types in UWP 3D Chart](3D-Charts_images/Charts-3D_img2.png)
-
-
 
 ## Interactivity
 
@@ -471,69 +389,28 @@ The following code example illustrates how to set the selection brush for indivi
 
 {% highlight xml %}
 
-  <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" 
+<Syncfusion:SfChart3D x:Name="Chart" EnableRotation="True" Height="500" Width="600">
 
-                       Height="500" Width="600">
+    <Syncfusion:SfChart3D.PrimaryAxis>
+        <Syncfusion:CategoryAxis3D />
+    </Syncfusion:SfChart3D.PrimaryAxis>
 
+    <Syncfusion:SfChart3D.SecondaryAxis>
+        <Syncfusion:NumericalAxis3D />
+    </Syncfusion:SfChart3D.SecondaryAxis>
 
+    <Syncfusion:ColumnSeries3D
+        SegmentSelectionBrush="Red"
+        ItemsSource="{Binding UsersList}"
+        XBindingPath="TimeStamp"
+        YBindingPath="NoOfUsers" />
 
-  <Syncfusion:SfChart3D.PrimaryAxis>
+</Syncfusion:SfChart3D>
 
-
-
-       <Syncfusion:CategoryAxis3D/>
-
-
-
-   </Syncfusion:SfChart3D.PrimaryAxis>
-
-
-
-
-
-      <Syncfusion:SfChart3D.SecondaryAxis>
-
-
-
-         <Syncfusion:NumericalAxis3D/>
-
-
-
-      </Syncfusion:SfChart3D.SecondaryAxis>
-
-
-
-  <Syncfusion:ColumnSeries3D
-
-
-
-SegmentSelectionBrush="Red"
-
-
-
-                ItemsSource="{Binding UsersList}"
-
-
-
-                XBindingPath="TimeStamp"
-
-
-
-                YBindingPath="NoOfUsers">
-
-
-
-        </Syncfusion:ColumnSeries3D>
-
-
-
-    </Syncfusion:SfChart3D >
 {% endhighlight %}
 The following screenshot illustrates the result of the above code example.
 
 ![Segment selection support in UWP 3D Chart](3D-Charts_images/Charts-3D_img3.png)
-
-
 
 ### SeriesSelection
 
@@ -545,53 +422,38 @@ The following code example can be used to set series selection in a [`SfChart3D`
 
 <chart:SfChart3D EnableSeriesSelection="True" SeriesSelectedIndex="0">
 
+    <chart:ColumnSeries3D
+        XBindingPath="FruitName"
+        YBindingPath="People1"
+        SeriesSelectionBrush="Blue"
+        ItemsSource="{Binding Fruits}">
 
+        <chart:ColumnSeries3D.AdornmentsInfo>
+            <chart:ChartAdornmentInfo3D
+                AdornmentsPosition="TopAndBottom"
+                ShowLabel="True"
+                HighlightOnSelection="True" />
+        </chart:ColumnSeries3D.AdornmentsInfo>
 
-<chart:ColumnSeries3D   XBindingPath="FruitName"  
+    </chart:ColumnSeries3D>
 
-                        SeriesSelectionBrush="Blue" 
+    <chart:ColumnSeries3D
+        XBindingPath="FruitName"
+        YBindingPath="People2"
+        SeriesSelectionBrush="Blue"
+        ItemsSource="{Binding Fruits}">
 
-                        YBindingPath="People1"
+        <chart:ColumnSeries3D.AdornmentsInfo>
+            <chart:ChartAdornmentInfo3D
+                AdornmentsPosition="TopAndBottom"
+                ShowLabel="True"
+                HighlightOnSelection="True" />
+        </chart:ColumnSeries3D.AdornmentsInfo>
 
-                        ItemsSource="{Binding Fruits}">
+    </chart:ColumnSeries3D>
 
-<chart:ColumnSeries3D.AdornmentsInfo>
+</chart:SfChart3D>
 
-<chart:ChartAdornmentInfo3D   AdornmentsPosition="TopAndBottom"
-
-                              ShowLabel="true"
-
-                              HighlightOnSelection="True"/>
-
-</chart:ColumnSeries3D.AdornmentsInfo>
-
-</chart:ColumnSeries3D >
-
-
-
-<chart:ColumnSeries3D   XBindingPath="FruitName"
-
-                        YBindingPath="People2"
-
-                        SeriesSelectionBrush="Blue"
-
-                        ItemsSource="{Binding Fruits}">
-
-<chart:ColumnSeries3D.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo3D   AdornmentsPosition="TopAndBottom"
-
-                              ShowLabel="true"                                                                        
-
-                              HighlightOnSelection="True"/>
-
-</chart:ColumnSeries3D.AdornmentsInfo>
-
-</chart:ColumnSeries3D >
-
-
-
-</chart:SfChart3D >
 {% endhighlight %}
 The following screenshot is an example of a [`SfChart3D`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart3D.html) with series selection.
 
@@ -607,63 +469,27 @@ The following code example illustrates how to enable dynamic explode for circula
 
 {% highlight xml %}
 
-  <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
+<Syncfusion:SfChart3D x:Name="Chart" EnableRotation="True" Height="500" Width="600">
 
+    <Syncfusion:SfChart3D.PrimaryAxis>
+        <Syncfusion:CategoryAxis3D />
+    </Syncfusion:SfChart3D.PrimaryAxis>
 
+    <Syncfusion:SfChart3D.SecondaryAxis>
+        <Syncfusion:NumericalAxis3D />
+    </Syncfusion:SfChart3D.SecondaryAxis>
 
-        <Syncfusion:SfChart3D.PrimaryAxis>
+    <Syncfusion:PieSeries3D
+        ExplodeOnMouseClick="True"
+        ItemsSource="{Binding UsersList}"
+        XBindingPath="TimeStamp"
+        YBindingPath="NoOfUsers">
 
+    </Syncfusion:PieSeries3D>
 
+</Syncfusion:SfChart3D>
 
-            <Syncfusion:CategoryAxis3D/>
-
-
-
-        </Syncfusion:SfChart3D.PrimaryAxis>
-
-
-
-        <Syncfusion:SfChart3D.SecondaryAxis>
-
-
-
-            <Syncfusion:NumericalAxis3D/>
-
-
-
-        </Syncfusion:SfChart3D.SecondaryAxis>
-
-
-
-        <Syncfusion:PieSeries3D
-
-
-
-                       ExplodeOnMouseClick="True"
-
-
-
-ItemsSource="{Binding UsersList}"
-
-
-
-XBindingPath="TimeStamp"
-
-
-
-YBindingPath="NoOfUsers">
-
-
-
-        </Syncfusion:PieSeries3D>
-
-
-
-    </Syncfusion:SfChart3D >
 {% endhighlight %}
 The following image illustrates the result of the above code sample:
 
 ![Dynamic explode support in UWP 3D Chart](3D-Charts_images/Charts-3D_img5.png)
-
-
-

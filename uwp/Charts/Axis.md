@@ -64,33 +64,33 @@ Gets or sets the bool that represents a value to enable start the range from ze
  
 {% highlight xml %}
 
-<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
+<syncfusion:SfChart x:Name="Chart" Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+    <syncfusion:SfChart.DataContext>
+        <local:ViewModel />
+    </syncfusion:SfChart.DataContext>
 
-                <local:ViewModel/>
+    <syncfusion:SfChart.PrimaryAxis>
+        <syncfusion:CategoryAxis Header="Company Name" />
+    </syncfusion:SfChart.PrimaryAxis>
 
-            </syncfusion:SfChart.DataContext>
+    <syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:NumericalAxis
+            Interval="100"
+            Minimum="0"
+            Maximum="1000"
+            RangePadding="Round"
+            Header="Gross Revenue " />
+    </syncfusion:SfChart.SecondaryAxis>
 
-            <syncfusion:SfChart.PrimaryAxis>
+    <syncfusion:ColumnSeries
+        x:Name="series1"
+        Label="Company Details"
+        XBindingPath="CompanyName"
+        YBindingPath="CompanyTurnOver"
+        ItemsSource="{Binding CompanyDetails}" />
 
-                <syncfusion:CategoryAxis   Header="Company Name"/>
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis Interval="100" Minimum="0" Maximum="1000" RangePadding="Round"   Header="Gross Revenue "/>
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-            </syncfusion:ColumnSeries>
-
-        </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -667,39 +667,32 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 
 {% highlight xaml %}
 
-<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
+<syncfusion:SfChart x:Name="Chart" Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+    <syncfusion:SfChart.DataContext>
+        <local:ViewModel />
+    </syncfusion:SfChart.DataContext>
 
-                <local:ViewModel/>
+    <syncfusion:SfChart.PrimaryAxis>
+        <syncfusion:DateTimeCategoryAxis
+            Interval="1"
+            LabelFormat="yyyy"
+            IntervalType="Years"
+            Header="Company Name" />
+    </syncfusion:SfChart.PrimaryAxis>
 
-            </syncfusion:SfChart.DataContext>
+    <syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:NumericalAxis Header="Gross Revenue (cr.)" />
+    </syncfusion:SfChart.SecondaryAxis>
 
+    <syncfusion:LineSeries
+        x:Name="series1"
+        Label="Company Details"
+        XBindingPath="Year"
+        YBindingPath="CompanyTurnOver"
+        ItemsSource="{Binding CompanyDetails}" />
 
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:DateTimeCategoryAxis Interval="1" LabelFormat="yyyy" IntervalType="Years"  Header="Company Name"/>
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/>
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-            </syncfusion:LineSeries>
-
-
-
-        </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -888,37 +881,30 @@ Gets or sets the double value that represents the logarithmic base value of the 
 
 {% highlight xml %}
 
-<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
+<syncfusion:SfChart x:Name="Chart" Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+    <syncfusion:SfChart.DataContext>
+        <local:ViewModel />
+    </syncfusion:SfChart.DataContext>
 
-                <local:ViewModel/>
+    <syncfusion:SfChart.PrimaryAxis>
+        <syncfusion:CategoryAxis Header="Company Name" />
+    </syncfusion:SfChart.PrimaryAxis>
 
-            </syncfusion:SfChart.DataContext>
+    <syncfusion:SfChart.SecondaryAxis>
+        <syncfusion:LogarithmicAxis
+            LogarithmicBase="10"
+            Header="Gross Revenue (cr.)" />
+    </syncfusion:SfChart.SecondaryAxis>
 
+    <syncfusion:LineSeries
+        x:Name="series1"
+        Label="Company Details"
+        XBindingPath="CompanyName"
+        YBindingPath="CompanyTurnOver"
+        ItemsSource="{Binding CompanyDetails}" />
 
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:CategoryAxis   Header="Company Name"/>
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:LogarithmicAxis LogarithmicBase="10"   Header="Gross Revenue (cr.)"/>
-
-            </syncfusion:SfChart.SecondaryAxis>
-
-            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-            </syncfusion:LineSeries>
-
-
-
-        </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -979,51 +965,30 @@ By default, all the series are plotted based on Primary and Secondary Axis. You 
 
 {% highlight xml %}
 
-
- <syncfusion:ColumnSeries Label="2010" 
-
-     ItemsSource="{Binding Demands}"
-
-     XBindingPath="Demand"
-
-     YBindingPath="Year2010"
-
-     Interior="Green"
-
-     
-
-            <syncfusion:ColumnSeries.XAxis>
-
-                <syncfusion:NumericalAxis Header="Additional X Axis"/>
-
-            </syncfusion:ColumnSeries.XAxis>
-
-
-
-            <syncfusion:ColumnSeries.YAxis>
-
-                <syncfusion:NumericalAxis Header="Additional Y Axis"/>
-
-            </syncfusion:ColumnSeries.YAxis>
-
-
-
-        </syncfusion:ColumnSeries>
-
-
-
-        <syncfusion:LineSeries Label="2011" 
-
+<syncfusion:ColumnSeries
+    Label="2010"
     ItemsSource="{Binding Demands}"
-
     XBindingPath="Demand"
+    YBindingPath="Year2010"
+    Interior="Green">
 
+    <syncfusion:ColumnSeries.XAxis>
+        <syncfusion:NumericalAxis Header="Additional X Axis" />
+    </syncfusion:ColumnSeries.XAxis>
+
+    <syncfusion:ColumnSeries.YAxis>
+        <syncfusion:NumericalAxis Header="Additional Y Axis" />
+    </syncfusion:ColumnSeries.YAxis>
+
+</syncfusion:ColumnSeries>
+
+<syncfusion:LineSeries
+    Label="2011"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
     YBindingPath="Year2011"
-
     Interior="Black"
-
-    StrokeThickness="2"/>
-
+    StrokeThickness="2" />
 
 {% endhighlight %}
 
@@ -1116,7 +1081,9 @@ The following is the code example for setting the [`OpposedPosition`](https://he
             <syncfusion:NumericalAxis Header="Additional Y Axis" OpposedPosition="True"/>
 
         </syncfusion:ColumnSeries.YAxis>
-		
+
+    </syncfusion:ColumnSeries>
+
 {% endhighlight %}
 
 {% highlight c# %}
@@ -1570,9 +1537,8 @@ In [`DateTimeAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-      AutoScrollingDelta = 3,
-	  
-      AutoScrollingDeltaType = DateTimeIntervalType.Days
+    AutoScrollingDelta = 3,
+    AutoScrollingDeltaType = DateTimeIntervalType.Days
 };
 
 {% endhighlight %}
@@ -1599,9 +1565,8 @@ The [`AutoScrollingMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.
 
 chart.PrimaryAxis = new DateTimeAxis()
 {
-      AutoScrollingDelta = 3,
-	  
-      AutoScrollingMode = ChartAutoScrollingMode.Start
+    AutoScrollingDelta = 3,
+    AutoScrollingMode = ChartAutoScrollingMode.Start
 };
 
 {% endhighlight %}
@@ -4437,4 +4402,9 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Chart
 * [`PrefixLabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_PrefixLabelTemplate) - Gets the prefix template of label.
 * [`PostfixLabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_PostfixLabelTemplate) - Gets the postfix template of label.
 
+## See Also
 
+- [How to apply the custom labels in UWP Chart Logarithmic Axis?](https://support.syncfusion.com/kb/article/8430/how-to-apply-the-custom-labels-in-uwp-chart-logarithmic-axis)
+- [How to wrap text in multi-level Axis Labels in UWP Chart?](https://support.syncfusion.com/kb/article/8946/how-to-wrap-text-in-multi-level-axis-labels-in-uwp-chart)
+- [How to get Axis Range in UWP chart?](https://support.syncfusion.com/kb/article/9505/how-to-get-axis-range-in-uwp-chart)
+- [How to add space between axis title and labels in UWP Charts?](https://support.syncfusion.com/kb/article/10684/how-to-add-space-between-axis-title-and-labels-in-uwp-charts)

@@ -55,23 +55,14 @@ Also you can add more customization for the header as below:
 {% highlight xaml %}
 
 <chart:SfChart.Header>
-
-<Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
-
-<TextBlock FontSize="14" Text="Chart Area Header" Margin="5">
-
-<TextBlock.Effect>
-
-<DropShadowEffect Color="Black" 
-
-Opacity="0.5" />
-
-</TextBlock.Effect>
-
-</TextBlock>
-
-</Border>
-
+    <Border BorderThickness="0.5" BorderBrush="Black" Margin="10" CornerRadius="5">
+        <TextBlock FontSize="14" Text="Chart Area Header" Margin="5">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" 
+                                  Opacity="0.5" />
+            </TextBlock.Effect>
+        </TextBlock>
+    </Border>
 </chart:SfChart.Header>
 
 {% endhighlight %}
@@ -93,22 +84,18 @@ Border border = new Border()
 
 TextBlock textBlock = new TextBlock()
 {
+    Text = "Chart Area Header",
 
-Text = "Chart Area Header",
+    Margin = new Thickness(5),
 
-Margin = new Thickness(5),
-
-FontSize = 14
-
+    FontSize = 14
 };
 
 textBlock.Effect = new DropShadowEffect()
 {
+    Color = Colors.Black,
 
-Color = Colors.Black,
-
-Opacity = 0.5
-
+    Opacity = 0.5
 };
 
 border.Child = textBlock;
@@ -180,73 +167,41 @@ The following code example demonstrates how you can create multiple panes in the
 {% highlight xaml %}
 
 <chart:SfChart >
+    <!--Adding row definition to the chart-->
+    <chart:SfChart.RowDefinitions>
+        <chart:ChartRowDefinition/>
+        <chart:ChartRowDefinition/>
+    </chart:SfChart.RowDefinitions>
+    <!--Adding column definition to the chart-->
+    <chart:SfChart.ColumnDefinitions>
+        <chart:ChartColumnDefinition/>
+        <chart:ChartColumnDefinition/>
+    </chart:SfChart.ColumnDefinitions>
 
-<!--Adding row definition to the chart-->
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis chart:ChartBase.ColumnSpan="2"/>
+    </chart:SfChart.PrimaryAxis>
 
-<chart:SfChart.RowDefinitions>
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis  PlotOffset="13" chart:ChartBase.ColumnSpan="2" />
+    </chart:SfChart.SecondaryAxis>
 
-<chart:ChartRowDefinition/>
+    <chart:ColumnSeries Palette="LightCandy"
+                         ItemsSource="{Binding MetalsDetail}"         
+                         XBindingPath="MetalName" 
+                         YBindingPath="MetalCount1" 
+                         />
 
-<chart:ChartRowDefinition/>
-
-</chart:SfChart.RowDefinitions>
-
-<!--Adding column definition to the chart-->
-
-<chart:SfChart.ColumnDefinitions>
-
-<chart:ChartColumnDefinition/>
-
-<chart:ChartColumnDefinition/>
-
-</chart:SfChart.ColumnDefinitions>
-
-<chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis chart:ChartBase.ColumnSpan="2"/>
-
-</chart:SfChart.PrimaryAxis>
-
-
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis  PlotOffset="13" chart:ChartBase.ColumnSpan="2" />
-
-</chart:SfChart.SecondaryAxis>
-
-
-
-<chart:ColumnSeries Palette="LightCandy"
-
-ItemsSource="{Binding MetalsDetail}"         
-
-XBindingPath="MetalName" 
-
-YBindingPath="MetalCount1" 
-
-/>
-
-<chart:ColumnSeries Palette="Metro"
-
-ItemsSource="{Binding MetalsDetail}"  
-
-XBindingPath="MetalName" 
-
-YBindingPath="MetalCount" >
-
-<chart:ColumnSeries.YAxis>
-
-<chart:NumericalAxis  PlotOffset="10"
-
-chart:SfChart.Row="1" >
-
-</chart:NumericalAxis>
-
-</chart:ColumnSeries.YAxis>
-
-</chart:ColumnSeries>
-
+    <chart:ColumnSeries Palette="Metro"
+                         ItemsSource="{Binding MetalsDetail}"  
+                         XBindingPath="MetalName" 
+                         YBindingPath="MetalCount" >
+        <chart:ColumnSeries.YAxis>
+            <chart:NumericalAxis  PlotOffset="10"
+                                  chart:SfChart.Row="1" >
+            </chart:NumericalAxis>
+        </chart:ColumnSeries.YAxis>
+    </chart:ColumnSeries>
 </chart:SfChart>
 
 {% endhighlight %}
@@ -333,61 +288,36 @@ You can set the row span in chart like the following code example.
 {% highlight xaml %}
 
 <chart:SfChart>
+    <!--Adding row definition to the chart-->
+    <chart:SfChart.RowDefinitions>
+        <chart:ChartRowDefinition/>
+        <chart:ChartRowDefinition/>
+    </chart:SfChart.RowDefinitions>
 
-<!--Adding row definition to the chart-->
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis  chart:ChartBase.RowSpan="2" 
+                             chart:SfChart.Row="0"
+                             TickLinesPosition="Outside">                                                              
+        </chart:CategoryAxis>
+    </chart:SfChart.PrimaryAxis>
 
-<chart:SfChart.RowDefinitions>
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis />
+    </chart:SfChart.SecondaryAxis>
 
-<chart:ChartRowDefinition/>
+    <chart:ColumnSeries XBindingPath="MetalName"
+                         ItemsSource="{Binding MetalsDetail}"  
+                         YBindingPath="MetalCount1" 
+                         />
 
-<chart:ChartRowDefinition/>
-
-</chart:SfChart.RowDefinitions>
-
-<chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  chart:ChartBase.RowSpan="2" 
-
-chart:SfChart.Row="0"
-
-TickLinesPosition="Outside">                                                              
-
-</chart:CategoryAxis>
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis />
-
-</chart:SfChart.SecondaryAxis>
-
-<chart:ColumnSeries XBindingPath="MetalName"
-
-ItemsSource="{Binding MetalsDetail}"  
-
-YBindingPath="MetalCount1" 
-
-/>
-
-
-
-<chart:LineSeries Interior="CadetBlue" XBindingPath="MetalName"
-
-ItemsSource="{Binding MetalsDetail}"   
-
-YBindingPath="MetalCount">
-
-<chart:LineSeries.YAxis>
-
-<chart:NumericalAxis chart:ChartBase.RowSpan="2">
-
-</chart:NumericalAxis>
-
-</chart:LineSeries.YAxis>              
-
-</chart:LineSeries>
-
+    <chart:LineSeries Interior="CadetBlue" XBindingPath="MetalName"
+                       ItemsSource="{Binding MetalsDetail}"   
+                       YBindingPath="MetalCount">
+        <chart:LineSeries.YAxis>
+            <chart:NumericalAxis chart:ChartBase.RowSpan="2">
+            </chart:NumericalAxis>
+        </chart:LineSeries.YAxis>              
+    </chart:LineSeries>
 </chart:SfChart>
 
 {% endhighlight %}
@@ -479,47 +409,30 @@ The following code example and image illustrates the placement of series while s
 {% highlight xaml %}
 
 <chart:SfChart x:Name="columnChart" AreaBorderBrush="DarkGray" 
+               Header="Usage of Metals"  
+               SideBySideSeriesPlacement="False"
+               AreaBorderThickness="1,1,1,1">
+    <chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis  Header="Metals"/>
+    </chart:SfChart.PrimaryAxis>
 
-Header="Usage of Metals"  
+    <chart:SfChart.SecondaryAxis>
+        <chart:NumericalAxis Header="Usage" />                            
+    </chart:SfChart.SecondaryAxis>
 
-SideBySideSeriesPlacement="False"
+    <chart:SfChart.Legend>
+        <chart:ChartLegend Visibility="Visible" />
+    </chart:SfChart.Legend>
 
-AreaBorderThickness="1,1,1,1">
+    <chart:ColumnSeries Interior="#bcbcbc"
+                         ItemsSource="{Binding MetalsDetail}" Label="2015"  
+                         XBindingPath="MetalName" 
+                         YBindingPath="MetalCount" />
 
-<chart:SfChart.PrimaryAxis>
-
-<chart:CategoryAxis  Header="Metals"/>
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-<chart:NumericalAxis Header="Usage" />                            
-
-</chart:SfChart.SecondaryAxis>
-
-<chart:SfChart.Legend>
-
-<chart:ChartLegend Visibility="Visible" />
-
-</chart:SfChart.Legend>
-
-<chart:ColumnSeries Interior="#bcbcbc"
-
-ItemsSource="{Binding MetalsDetail}" Label="2015"  
-
-XBindingPath="MetalName" 
-
-YBindingPath="MetalCount" />
-
-<chart:ColumnSeries ItemsSource="{Binding MetalsDetail}"  
-
-SegmentSpacing="0.5"
-
-Interior="#4a4a4a"  XBindingPath="MetalName" 
-
-Label="2014" YBindingPath="MetalCount1"/>            
-
+    <chart:ColumnSeries ItemsSource="{Binding MetalsDetail}"  
+                         SegmentSpacing="0.5"
+                         Interior="#4a4a4a"  XBindingPath="MetalName" 
+                         Label="2014" YBindingPath="MetalCount1"/>            
 </chart:SfChart>
 
 {% endhighlight %}
@@ -650,7 +563,7 @@ This can be done using [`Serialize`](https://help.syncfusion.com/cr/uwp/Syncfusi
 Serialized Chart
 
 <SfChart Header="Defect Rates" Name="chart" Margin="10,10,10,10" Width="500" Height="420"
-         xmlns="http://schemas.syncfusion.com/wpf"
+         xmlns="http://schemas.syncfusion.com/uwp"
          xmlns:s="clr-namespace:System;assembly=mscorlib"
          xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
@@ -717,7 +630,7 @@ Serialized Chart
               ItemsSource="{av:Binding Path=CategoricalData}"
               XBindingPath="Category"
               Name="series"
-              xmlns="http://schemas.syncfusion.com/wpf"
+              xmlns="http://schemas.syncfusion.com/uwp"
               xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
 <ColumnSeries.Trendlines>
@@ -929,4 +842,3 @@ The [`ResetZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Chart
 [`PointToValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_PointToValue_Syncfusion_UI_Xaml_Charts_ChartAxis_Windows_Foundation_Point_)
 
 [`ValueToPoint`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ValueToPoint_Syncfusion_UI_Xaml_Charts_ChartAxis_System_Double_)
-

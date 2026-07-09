@@ -7,7 +7,6 @@ control: SfChart
 documentation: ug
 ---
 
-
 # Adornments in UWP Charts (SfChart)
 
 Chart adornments are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
@@ -18,19 +17,15 @@ You can initialize the adornment as in the below code snippet:
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  Interior="#777777"
+<syncfusion:ColumnSeries
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-ItemsSource="{Binding Demands}"  
-
-XBindingPath="Demand" 
-
-YBindingPath="Year2011">
-
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo></syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    <syncfusion:ColumnSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo />
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
@@ -40,15 +35,10 @@ YBindingPath="Year2011">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo();
@@ -79,21 +69,20 @@ The following code example demonstrates the column series with [`Diamond`](https
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  Interior="#777777"
+<syncfusion:ColumnSeries
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-ItemsSource="{Binding Demands}"  
+    <syncfusion:ColumnSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo
+            ShowMarker="True"
+            SymbolInterior="Black"
+            Symbol="Diamond" />
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
-XBindingPath="Demand" 
-
-YBindingPath="Year2011">
-
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolInterior="Black" Symbol="Diamond"></syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
-
-</syncfusion:ColumnSeries>    
+</syncfusion:ColumnSeries>  
 
 {% endhighlight %}
 
@@ -101,26 +90,17 @@ YBindingPath="Year2011">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     SymbolInterior = new SolidColorBrush(Colors.Black),
-
     Symbol = ChartSymbol.Diamond
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -144,29 +124,23 @@ You can customize the marker size using [`SymbolHeight`](https://help.syncfusion
 
 {% highlight xaml %}
 
-<syncfusion:LineSeries  Interior="#777777"
+<syncfusion:LineSeries
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-ItemsSource="{Binding Demands}"  
+    <syncfusion:LineSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo
+            ShowMarker="True"
+            SymbolStroke="Black"
+            SymbolInterior="DarkGray"
+            SymbolWidth="10"
+            SymbolHeight="10"
+            Symbol="Ellipse" />
+    </syncfusion:LineSeries.AdornmentsInfo>
 
-XBindingPath="Demand" 
-
-YBindingPath="Year2011">
-
-<syncfusion:LineSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo ShowMarker="True" SymbolStroke="Black"
-
-SymbolInterior="DarkGray"
-
-SymbolWidth="10"                                                   
-
-SymbolHeight="10"
-
-Symbol="Ellipse"></syncfusion:ChartAdornmentInfo>
-
-</syncfusion:LineSeries.AdornmentsInfo>
-
-</syncfusion:LineSeries>   
+</syncfusion:LineSeries>
 
 {% endhighlight %}
 
@@ -174,32 +148,20 @@ Symbol="Ellipse"></syncfusion:ChartAdornmentInfo>
 
 LineSeries series = new LineSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     SymbolStroke = new SolidColorBrush(Colors.Black),
-
     SymbolInterior = new SolidColorBrush(Colors.DarkGray),
-
     SymbolHeight = 10,
-
     SymbolWidth = 10,
-
     Symbol = ChartSymbol.Ellipse
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -225,82 +187,76 @@ You can also provide the template for the symbol using [`SymbolTemplate`](https:
 
     <syncfusion:SfChart.Resources>
 
-         <DataTemplate x:Key="symbolTemplate">
+        <DataTemplate x:Key="symbolTemplate">
 
             <Grid>
 
-                <Grid Name="backgroundGrid" Width="24" Height="24" Visibility="Visible">
+                <Grid
+                    Name="backgroundGrid"
+                    Width="24"
+                    Height="24"
+                    Visibility="Visible">
 
-                     <Ellipse Fill="#FFE2DBDB" Name="Fill" Visibility="Visible" />
+                    <Ellipse
+                        Name="Fill"
+                        Fill="#FFE2DBDB"
+                        Visibility="Visible" />
 
                 </Grid>
 
-                     <Path Stretch="Uniform" Fill="#FF0F0E0E" Width="24" Height="24" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                <Path
+                    Width="24"
+                    Height="24"
+                    Margin="0,0,0,0"
+                    Stretch="Uniform"
+                    Fill="#FF0F0E0E"
+                    RenderTransformOrigin="0.5,0.5">
 
-                          <Path.Data>
+                    <Path.Data>
 
-                            <PathGeometry FillRule="Nonzero" Figures="M23.9296875,10.6165618896484L20.759765625,11.2200794219971 18.09375,
-                            13.0306243896484 16.283203125,15.6966400146484 15.6796875,18.8665618896484 16.283203125,
-                            22.0423431396484 18.09375,24.7259368896484 20.759765625,26.5540618896484 23.9296875,27.1634368896484 27.1025371551514,
-                            26.5540618896484 29.77734375,24.7259368896484 31.5966796875,22.0423431396484 32.203125,18.8665618896484 31.5966796875,
-                            15.6966400146484 29.77734375,13.0306243896484 27.1025371551514,11.2200794219971 23.9296875,10.6165618896484z M25.265625,
-                            7.35874938964844L26.6953125,9.86656188964844 29.3671875,8.64781188964844 29.765625,11.4837493896484 32.7421875,
-                            11.2728118896484 32.015625,14.1790618896484 34.921875,14.9759368896484 33.1875,17.4134368896484 35.578125,
-                            19.1478118896484 33.140625,20.7884368896484 34.640625,23.3665618896484 31.8046875,23.9759368896484 32.3203125,
-                            26.9759368896484 29.4375,26.5540618896484 28.921875,29.4837493896484 26.25,27.9603118896484 24.75,
-                            30.4681243896484 22.8046875,28.2181243896484 20.5078125,30.0228118896484 19.5703125,27.1634368896484 16.640625,
-                            28.0306243896484 16.875,25.1009368896484 13.875,24.7728118896484 15.140625,22.1478118896484 12.421875,
-                            20.7415618896484 14.5546875,18.6790618896484 12.4921875,16.5228118896484 15.2578125,15.3040618896484 14.203125,
-                            12.5384368896484 17.1328125,12.3978118896484 17.1328125,9.42124938964844 19.921875,10.4056243896484 21.046875,
-                            7.61656188964844 23.296875,9.49156188964844 25.265625,7.35874938964844z" />
+                        <PathGeometry
+                            FillRule="Nonzero"
+                            Figures="M23.9296875,10.6165618896484L20.759765625,11.2200794219971 18.09375,13.0306243896484 16.283203125,15.6966400146484 15.6796875,18.8665618896484 16.283203125,22.0423431396484 18.09375,24.7259368896484 20.759765625,26.5540618896484 23.9296875,27.1634368896484 27.1025371551514,26.5540618896484 29.77734375,24.7259368896484 31.5966796875,22.0423431396484 32.203125,18.8665618896484 31.5966796875,15.6966400146484 29.77734375,13.0306243896484 27.1025371551514,11.2200794219971 23.9296875,10.6165618896484z M25.265625,7.35874938964844L26.6953125,9.86656188964844 29.3671875,8.64781188964844 29.765625,11.4837493896484 32.7421875,11.2728118896484 32.015625,14.1790618896484 34.921875,14.9759368896484 33.1875,17.4134368896484 35.578125,19.1478118896484 33.140625,20.7884368896484 34.640625,23.3665618896484 31.8046875,23.9759368896484 32.3203125,26.9759368896484 29.4375,26.5540618896484 28.921875,29.4837493896484 26.25,27.9603118896484 24.75,30.4681243896484 22.8046875,28.2181243896484 20.5078125,30.0228118896484 19.5703125,27.1634368896484 16.640625,28.0306243896484 16.875,25.1009368896484 13.875,24.7728118896484 15.140625,22.1478118896484 12.421875,20.7415618896484 14.5546875,18.6790618896484 12.4921875,16.5228118896484 15.2578125,15.3040618896484 14.203125,12.5384368896484 17.1328125,12.3978118896484 17.1328125,9.42124938964844 19.921875,10.4056243896484 21.046875,7.61656188964844 23.296875,9.49156188964844 25.265625,7.35874938964844z" />
 
-                        </Path.Data>
+                    </Path.Data>
 
-                        <Path.RenderTransform>
+                    <Path.RenderTransform>
 
-                            <TransformGroup>
+                        <TransformGroup>
 
-                                    <TransformGroup.Children>
+                            <TransformGroup.Children>
+                                <RotateTransform Angle="0" />
+                                <ScaleTransform ScaleX="1" ScaleY="1" />
+                            </TransformGroup.Children>
 
-                                        <RotateTransform Angle="0" />
+                        </TransformGroup>
 
-                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                    </Path.RenderTransform>
 
-                                    </TransformGroup.Children>
+                </Path>
 
-                                </TransformGroup>
+            </Grid>
 
-                            </Path.RenderTransform>
+        </DataTemplate>
 
-                        </Path>
+    </syncfusion:SfChart.Resources>
 
-                    </Grid>
+    <syncfusion:ColumnSeries
+        Label="2011"
+        Interior="#777777"
+        ItemsSource="{Binding Demands}"
+        XBindingPath="Demand"
+        YBindingPath="Year2011">
 
-                </DataTemplate>
+        <syncfusion:ColumnSeries.AdornmentsInfo>
 
-     </syncfusion:SfChart.Resources>
+            <syncfusion:ChartAdornmentInfo
+                AdornmentsPosition="Top"
+                SymbolTemplate="{StaticResource symbolTemplate}" />
 
-            
-    <syncfusion:ColumnSeries  Label="2011" Interior="#777777"
-                                      
-                              ItemsSource="{Binding Demands}"  
-                                
-                              XBindingPath="Demand" 
-                                      
-                              YBindingPath="Year2011">
-
-         <syncfusion:ColumnSeries.AdornmentsInfo>
-
-                    <syncfusion:ChartAdornmentInfo AdornmentsPosition="Top"
-                    
-                                                   SymbolTemplate="{StaticResource symbolTemplate}">
-
-                    </syncfusion:ChartAdornmentInfo>
-
-         </syncfusion:ColumnSeries.AdornmentsInfo>
+        </syncfusion:ColumnSeries.AdornmentsInfo>
 
     </syncfusion:ColumnSeries>
-
 
 </syncfusion:SfChart>
         
@@ -310,26 +266,17 @@ You can also provide the template for the symbol using [`SymbolTemplate`](https:
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Label = "2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     AdornmentsPosition = AdornmentsPosition.Top,
-
     SymbolTemplate = chart.Resources["symbolTemplate"] as DataTemplate
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -342,7 +289,6 @@ chart.Series.Add(series);
 
 ![Template support for symbol in UWP Chart](adornments_images/uwp-charts-adornments-custom-template.png)
 
-
 ## Label
 
 Label represents the text in the adornments which helps to identify the segment based on it y or x value. You can enable the label by setting [`ShowLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property as true as in the below code example.
@@ -351,21 +297,20 @@ Label represents the text in the adornments which helps to identify the segment 
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  Label="2011" Interior="#777777"
+<syncfusion:ColumnSeries
+    Label="2011"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-ItemsSource="{Binding Demands}"  
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-XBindingPath="Demand" 
+        <syncfusion:ChartAdornmentInfo
+            AdornmentsPosition="Top"
+            ShowLabel="True" />
 
-YBindingPath="Year2011">
-
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowLabel="True" >
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
@@ -375,26 +320,17 @@ YBindingPath="Year2011">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Label = "2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     AdornmentsPosition = AdornmentsPosition.Top,
-
     ShowLabel = true
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -407,7 +343,6 @@ chart.Series.Add(series);
 
 ![Label to represent the text for adornments in UWP Chart](adornments_images/uwp-charts-adornments-label-text.png)
 
-
 ### Defining the Label Content
 
 SfChart provides the support to customize the label content using [`SegmentLabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property. This property allows you to define the value to be displayed as adornment label.
@@ -418,21 +353,21 @@ SfChart provides the support to customize the label content using [`SegmentLabel
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  Label="2011" Interior="#777777"
+<syncfusion:ColumnSeries
+    Label="2011"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-ItemsSource="{Binding Demands}"  
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-XBindingPath="Demand" 
+        <syncfusion:ChartAdornmentInfo
+            AdornmentsPosition="Top"
+            SegmentLabelContent="XValue"
+            ShowLabel="True" />
 
-YBindingPath="Year2011">
-
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" SegmentLabelContent="XValue" ShowLabel="True" >
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
@@ -442,28 +377,18 @@ YBindingPath="Year2011">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Label = "2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     AdornmentsPosition = AdornmentsPosition.Top,
-
     ShowLabel = true,
-
     SegmentLabelContent = LabelContent.XValue
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -476,7 +401,6 @@ chart.Series.Add(series);
 
 ![Adornments label content customization support in UWP Chart](adornments_images/uwp-charts-adornments-label-content.png)
 
-
 N>For CategoryAxis, the x values will be taken as the index since it is an indexed based axis. If it is a numerical axis or date time the corresponding x value will be displayed.
 
 **Percentage**
@@ -485,21 +409,21 @@ N>For CategoryAxis, the x values will be taken as the index since it is an index
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  Label="2011" Interior="#777777"
+<syncfusion:ColumnSeries
+    Label="2011"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-ItemsSource="{Binding Demands}"  
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-XBindingPath="Demand" 
+        <syncfusion:ChartAdornmentInfo
+            AdornmentsPosition="Top"
+            SegmentLabelContent="Percentage"
+            ShowLabel="True" />
 
-YBindingPath="Year2011">
-
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" SegmentLabelContent="Percentage" ShowLabel="True" >
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
@@ -509,28 +433,18 @@ YBindingPath="Year2011">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Label = "2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     AdornmentsPosition = AdornmentsPosition.Top,
-
     ShowLabel = true,
-
     SegmentLabelContent = LabelContent.Percentage
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -543,26 +457,25 @@ chart.Series.Add(series);
 
 ![Adornments label content customization support in UWP Chart](adornments_images/uwp-charts-adornments-label-content-customization.png)
 
-
 **YofTot**
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  ItemsSource="{Binding Demands}"  
+<syncfusion:ColumnSeries
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-XBindingPath="Demand" 
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-YBindingPath="Year2011">
+        <syncfusion:ChartAdornmentInfo
+            AdornmentsPosition="Top"
+            SegmentLabelContent="YofTot"
+            ShowLabel="True" />
 
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" SegmentLabelContent="YofTot" ShowLabel="True" >
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
@@ -572,28 +485,18 @@ YBindingPath="Year2011">
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Demand",
-
     YBindingPath = "Year2011",
-
     Label = "2011",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77))
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     AdornmentsPosition = AdornmentsPosition.Top,
-
     ShowLabel = true,
-
     SegmentLabelContent = LabelContent.YofTot
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -613,19 +516,18 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ItemsSource="{Binding Demands}"   XBindingPath="Date"  
+<syncfusion:ColumnSeries
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Date"
+    YBindingPath="Year2011">
 
-YBindingPath="Year2011">
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ColumnSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo
+            ShowLabel="True"
+            SegmentLabelContent="DateTime" />
 
-<syncfusion:ChartAdornmentInfo ShowLabel="True" 
-
-SegmentLabelContent="DateTime" >
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
@@ -635,21 +537,15 @@ SegmentLabelContent="DateTime" >
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().Demands,
-
     XBindingPath = "Date",
-
     YBindingPath = "Year2011",
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     SegmentLabelContent = LabelContent.DateTime
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -674,35 +570,45 @@ The following code example demonstrates displaying the string value which is tak
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries ItemsSource="{Binding Demands}" XBindingPath="Demand"  YBindingPath="Year2011">
+<syncfusion:PieSeries
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-<syncfusion:PieSeries.AdornmentsInfo>
+    <syncfusion:PieSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo ShowLabel="True"  ShowConnectorLine="True" 
+        <syncfusion:ChartAdornmentInfo
+            ShowLabel="True"
+            ShowConnectorLine="True"
+            SegmentLabelContent="LabelContentPath"
+            LabelPosition="Auto"
+            Foreground="Black">
 
-SegmentLabelContent="LabelContentPath"
+            <syncfusion:ChartAdornmentInfo.LabelTemplate>
 
-LabelPosition="Auto"
+                <DataTemplate>
 
-Foreground="Black"  >
+                    <Border
+                        CornerRadius="2"
+                        BorderBrush="Black"
+                        BorderThickness="1"
+                        Background="LightGray">
 
-<syncfusion:ChartAdornmentInfo.LabelTemplate>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            FontSize="11"
+                            Foreground="Black"
+                            Text="{Binding Converter={StaticResource con}}" />
 
-<DataTemplate >
+                    </Border>
 
-<Border CornerRadius="2" BorderBrush="Black" BorderThickness="1" Background="LightGray" >
+                </DataTemplate>
 
-<TextBlock HorizontalAlignment="Center" FontSize="11" Foreground="Black" Text="{Binding Converter={StaticResource con}}"></TextBlock>
+            </syncfusion:ChartAdornmentInfo.LabelTemplate>
 
-</Border>
+        </syncfusion:ChartAdornmentInfo>
 
-</DataTemplate>
-
-</syncfusion:ChartAdornmentInfo.LabelTemplate>
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:PieSeries.AdornmentsInfo>
+    </syncfusion:PieSeries.AdornmentsInfo>
 
 </syncfusion:PieSeries>
 
@@ -710,37 +616,25 @@ Foreground="Black"  >
 
 {% highlight C# %}
 
-public class convert : IValueConverter
-
+public class Convert : IValueConverter
 {
+    public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        ChartPieAdornment adornment = value as ChartPieAdornment;
+        return (adornment.Item as GoldDemand).Demand;
+    }
 
-public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-
-{
-
-    ChartPieAdornment adornment= value as ChartPieAdornment;
-
-    return (adornment.Item as GoldDemand).Demand ;
-
-}
-
-public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-
-{
-
-return value;
-
-}
-
+    public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+    {
+        return value;
+    }
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
 ![Label Template support for adornments in UWP Chart](adornments_images/uwp-charts-adornments-label-content-path.png)
-
 
 **Label Rotation**
 
@@ -752,9 +646,10 @@ return value;
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Outer" LabelRotationAngle="45" >
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo
+        ShowLabel="True"
+        LabelPosition="Outer"
+        LabelRotationAngle="45" />
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
@@ -764,13 +659,9 @@ return value;
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Outer,
-
     LabelRotationAngle = 45
-
 };
 
 {% endhighlight %}
@@ -797,41 +688,28 @@ The following code example demonstrates the customization of label using the abo
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  Label="2011"
+<syncfusion:ColumnSeries
+    Label="2011"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Date"
+    YBindingPath="Year2011">
 
-Interior="#777777"
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-ItemsSource="{Binding Demands}" 
+        <syncfusion:ChartAdornmentInfo
+            ShowLabel="True"
+            LabelPosition="Outer"
+            Foreground="Black"
+            FontSize="11"
+            Background="DarkGray"
+            FontFamily="Calibri"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Margin="1"
+            FontStyle="Italic" />
 
-XBindingPath="Date"  
-
-YBindingPath="Year2011">
-
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer" 
-
-Foreground="Black" 
-
-FontSize="11"
-
-Background="DarkGray"
-
-FontFamily="Calibri"
-
-BorderBrush="Black"
-
-BorderThickness="1"
-
-Margin="1"
-
-FontStyle="Italic" 
-
->
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
@@ -841,38 +719,25 @@ FontStyle="Italic"
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Outer,
-
     Foreground = new SolidColorBrush(Colors.Black),
-
     BorderBrush = new SolidColorBrush(Colors.Black),
-
     Background = new SolidColorBrush(Colors.DarkGray),
-
     BorderThickness = new Thickness(1),
-
     Margin = new Thickness(1),
-
     FontStyle = FontStyles.Italic,
-
     FontFamily = new FontFamily("Calibri"),
-
     FontSize = 11
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Adornments label customization support in UWP Chart](adornments_images/uwp-charts-adornments-custom-label.png)
-
 
 ## Applying Series Brush
 
@@ -886,9 +751,12 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 
 <syncfusion:PieSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo ShowLabel="True" Foreground="White" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="20">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo
+        ShowLabel="True"
+        Foreground="White"
+        UseSeriesPalette="True"
+        ShowConnectorLine="True"
+        ConnectorHeight="20" />
 
 </syncfusion:PieSeries.AdornmentsInfo>
 
@@ -898,17 +766,11 @@ For Accumulation like Pie, Doughnut, Funnel and Pyramid the segment interior col
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     Foreground = new SolidColorBrush(Colors.White),
-
     UseSeriesPalette = true,
-
     ShowConnectorLine = true,
-
     ConnectorHeight = 20
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -924,80 +786,87 @@ The default appearance of the label can be customized using [`LabelTemplate`](ht
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  Label="2011"
+<syncfusion:ColumnSeries
+    Label="2011"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-Interior="#777777"
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-ItemsSource="{Binding Demands}" 
+        <syncfusion:ChartAdornmentInfo
+            ShowLabel="True"
+            LabelPosition="Outer">
 
-XBindingPath="Demand"  
+            <syncfusion:ChartAdornmentInfo.LabelTemplate>
 
-YBindingPath="Year2011">
+                <DataTemplate>
 
-<syncfusion:ColumnSeries.AdornmentsInfo>
+                    <Grid>
 
-<syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="15" />
+                            <RowDefinition Height="15" />
+                        </Grid.RowDefinitions>
 
-<syncfusion:ChartAdornmentInfo.LabelTemplate>
+                        <Grid
+                            Name="backgroundGrid"
+                            Width="24"
+                            Height="24"
+                            Visibility="Collapsed" />
 
-<DataTemplate>
+                        <Path
+                            Grid.Row="0"
+                            Width="24"
+                            Height="24"
+                            Margin="0,0,0,0"
+                            Stretch="Uniform"
+                            Fill="#FF0F0E0E"
+                            RenderTransformOrigin="0.5,0.5">
 
-<Grid>
+                            <Path.Data>
+                                <PathGeometry
+                                    FillRule="Nonzero"
+                                    Figures="M22.5,15.8899993896484L37.5,30.8899993896484 7.5,30.8899993896484 22.5,15.8899993896484z" />
+                            </Path.Data>
 
-<Grid.RowDefinitions>
+                            <Path.RenderTransform>
 
-<RowDefinition Height="15" ></RowDefinition>
+                                <TransformGroup>
 
-<RowDefinition Height="15"></RowDefinition>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="1" ScaleY="1" />
+                                    </TransformGroup.Children>
 
-</Grid.RowDefinitions>
+                                </TransformGroup>
 
-<Grid Name="backgroundGrid" Width="24" Height="24" Visibility="Collapsed" />
+                            </Path.RenderTransform>
 
-<Path Grid.Row="0"  Stretch="Uniform" Fill="#FF0F0E0E" Width="24" Height="24" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                        </Path>
 
-<Path.Data>
+                        <TextBlock
+                            Grid.Row="1"
+                            Text="{Binding}"
+                            FontSize="11"
+                            Foreground="Black" />
 
-<PathGeometry FillRule="Nonzero" Figures="M22.5,15.8899993896484L37.5,30.8899993896484 7.5,30.8899993896484 22.5,15.8899993896484z" />
+                    </Grid>
 
-</Path.Data>
+                </DataTemplate>
 
-<Path.RenderTransform>
+            </syncfusion:ChartAdornmentInfo.LabelTemplate>
 
-<TransformGroup>
+        </syncfusion:ChartAdornmentInfo>
 
-<TransformGroup.Children>
-
-<RotateTransform Angle="0" />
-
-<ScaleTransform ScaleX="1" ScaleY="1" />
-
-</TransformGroup.Children>
-
-</TransformGroup>
-
-</Path.RenderTransform>
-
-</Path>
-
-<TextBlock Grid.Row="1" Text="{Binding}" FontSize="11" Foreground="Black"></TextBlock>
-
-</Grid>
-
-</DataTemplate>
-
-</syncfusion:ChartAdornmentInfo.LabelTemplate>
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
 {% endhighlight %}
 
 ![Label Template support for adornments in UWP Chart](adornments_images/uwp-charts-adornments-label-template.png)
-
 
 ## Label Format
 
@@ -1007,30 +876,27 @@ In the following image, you can see the decimal position will be rounded off to 
 
 ![Adornments label format support in UWP Chart](adornments_images/uwp-charts-adornments-label-format.png)
 
-
 The following code example demonstrates the rounding off the y value having three decimal digits:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries  Label="2011"
+<syncfusion:ColumnSeries
+    Label="2011"
+    Interior="#777777"
+    ItemsSource="{Binding Demands}"
+    XBindingPath="Demand"
+    YBindingPath="Year2011">
 
-Interior="#777777"
+    <syncfusion:ColumnSeries.AdornmentsInfo>
 
-ItemsSource="{Binding Demands}" 
+        <syncfusion:ChartAdornmentInfo
+            ShowLabel="True"
+            SegmentLabelFormat="0.000"
+            AdornmentsPosition="Top" />
 
-XBindingPath="Demand"  
-
-YBindingPath="Year2011">
-
-<syncfusion:ColumnSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo ShowLabel="True" SegmentLabelFormat="0.000" AdornmentsPosition="Top">
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:ColumnSeries.AdornmentsInfo>
+    </syncfusion:ColumnSeries.AdornmentsInfo>
 
 </syncfusion:ColumnSeries>
 
@@ -1040,19 +906,14 @@ YBindingPath="Year2011">
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     AdornmentsPosition = AdornmentsPosition.Top,
-
     SegmentLabelFormat = "0.000"
-
 };
 
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ## Adding Connector Line to Adornments
 
@@ -1066,10 +927,12 @@ The following code example shows the customization option for connector line:
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Outer"
-                                ShowConnectorLine="True" ConnectorHeight="10" 
-                                ConnectorRotationAngle="90">
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo
+        ShowLabel="True"
+        LabelPosition="Outer"
+        ShowConnectorLine="True"
+        ConnectorHeight="10"
+        ConnectorRotationAngle="90" />
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
@@ -1079,17 +942,11 @@ The following code example shows the customization option for connector line:
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Outer,
-
     ShowConnectorLine = true,
-
     ConnectorHeight = 10,
-
     ConnectorRotationAngle = 90
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1099,7 +956,6 @@ series.AdornmentsInfo = adornmentInfo;
 {% endtabs %}
 
 ![Connector line for adornments support in UWP Chart](adornments_images/uwp-charts-adornments-adding-connectorline.png)
-
 
 ### Connector Height and Rotation
 
@@ -1115,13 +971,10 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 
 <syncfusion:ChartAdornmentInfo.ConnectorLineStyle>
 
-<Style TargetType="Path">
-
-<Setter Property="StrokeDashArray" Value="10,7,5"/>
-
-<Setter Property="Stroke" Value="Black"/>
-
-</Style>
+    <Style TargetType="Path">
+        <Setter Property="StrokeDashArray" Value="10,7,5"/>
+        <Setter Property="Stroke" Value="Black"/>
+    </Style>
 
 </syncfusion:ChartAdornmentInfo.ConnectorLineStyle>
 
@@ -1134,20 +987,14 @@ Style style = new Style() { TargetType = typeof(Path) };
 
 Setter strokeDash = new Setter()
 {
-
     Property = Path.StrokeProperty,
-
     Value = new SolidColorBrush(Colors.Red)
-
 };
 
 Setter stroke = new Setter()
 {
-
     Property = Path.StrokeDashArrayProperty,
-
     Value = new DoubleCollection() { 10, 7, 5 }
-
 };
 
 style.Setters.Add(strokeDash);
@@ -1156,15 +1003,10 @@ style.Setters.Add(stroke);
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
-    ShowConnectorLine =true,
-
+    ShowConnectorLine = true,
     ConnectorHeight = 20,
-
     ConnectorLineStyle = style
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1193,19 +1035,13 @@ series.AdornmentsInfo = adornmentInfo;
 
 <syncfusion:PieSeries ConnectorType="Bezier" LabelPosition="Outside"
 
-ItemsSource="{Binding Demands}"   
+                      ItemsSource="{Binding Demands}"
+                      XBindingPath="Demand" EnableSmartLabels="True"
+                      YBindingPath="Year2011">
 
-XBindingPath="Demand"  EnableSmartLabels="True"
-
-YBindingPath="Year2011">
-
-<syncfusion:PieSeries.AdornmentsInfo>
-
-<syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="17" ShowConnectorLine="True" >
-
-</syncfusion:ChartAdornmentInfo>
-
-</syncfusion:PieSeries.AdornmentsInfo>
+    <syncfusion:PieSeries.AdornmentsInfo>
+        <syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="17" ShowConnectorLine="True" />
+    </syncfusion:PieSeries.AdornmentsInfo>
 
 </syncfusion:PieSeries>
 
@@ -1215,32 +1051,20 @@ YBindingPath="Year2011">
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "XValue",
-
     YBindingPath = "YValue",
-
     Label = "2011",
-
     EnableSmartLabels = true,
-
     ConnectorType = ConnectorMode.Bezier,
-
     LabelPosition = CircularSeriesLabelPosition.Outside
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     ShowConnectorLine = true,
-
     ConnectorHeight = 17
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1272,11 +1096,7 @@ The following code example explains the positioning of adornments in the middle 
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo AdornmentsPosition="TopAndBottom" 
-
-ShowMarker="True" Symbol="Ellipse">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo AdornmentsPosition="TopAndBottom" ShowMarker="True" Symbol="Ellipse" />
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
@@ -1286,13 +1106,9 @@ ShowMarker="True" Symbol="Ellipse">
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     AdornmentsPosition = AdornmentsPosition.TopAndBottom,
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1311,9 +1127,7 @@ Also you can define the label alignment using  [`HorizontalAlignment`](https://h
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Default" HorizontalAlignment="Right" VerticalAlignment="Top">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Default" HorizontalAlignment="Right" VerticalAlignment="Top" />
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
@@ -1323,15 +1137,10 @@ Also you can define the label alignment using  [`HorizontalAlignment`](https://h
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     LabelPosition = AdornmentsLabelPosition.Default,
-
     ShowLabel = true,
-
     HorizontalAlignment = HorizontalAlignment.Right,
-
     VerticalAlignment = VerticalAlignment.Top
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1366,9 +1175,7 @@ LabelPosition as Center
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Center">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Center" />
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
@@ -1380,11 +1187,8 @@ ColumnSeries series = new ColumnSeries();
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
-ShowLabel = true,
-
-LabelPosition = AdornmentsLabelPosition.Center
-
+    ShowLabel = true,
+    LabelPosition = AdornmentsLabelPosition.Center
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1404,10 +1208,7 @@ LabelPosition as Inner
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Inner">
-
-</syncfusion:ChartAdornmentInfo>
-
+    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Inner" />
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
 {% endhighlight %}
@@ -1418,11 +1219,8 @@ ColumnSeries series = new ColumnSeries();
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Inner
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1442,9 +1240,7 @@ LabelPosition as Outer
 
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Outer">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer" />
 
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
@@ -1456,11 +1252,8 @@ ColumnSeries series = new ColumnSeries();
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Outer
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1482,9 +1275,7 @@ LabelPosition as Auto
 
 <syncfusion:SplineSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Auto">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Auto" />
 
 </syncfusion:SplineSeries.AdornmentsInfo>
 
@@ -1496,11 +1287,8 @@ SplineSeries series = new SplineSeries();
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Auto
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1521,9 +1309,7 @@ LabelPosition as Inner
 
 <syncfusion:SplineSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Inner">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Inner" />
 
 </syncfusion:SplineSeries.AdornmentsInfo>
 
@@ -1535,11 +1321,8 @@ SplineSeries series = new SplineSeries();
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Inner
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1561,9 +1344,7 @@ LabelPosition as Outer
 
 <syncfusion:SplineSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Outer">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Outer" />
 
 </syncfusion:SplineSeries.AdornmentsInfo>
 
@@ -1575,11 +1356,8 @@ SplineSeries series = new SplineSeries();
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Outer
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1600,9 +1378,7 @@ LabelPosition as Center
 
 <syncfusion:SplineSeries.AdornmentsInfo>
 
-<syncfusion:ChartAdornmentInfo  ShowLabel="True" LabelPosition="Center">
-
-</syncfusion:ChartAdornmentInfo>
+    <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Center" />
 
 </syncfusion:SplineSeries.AdornmentsInfo>
 
@@ -1614,11 +1390,8 @@ SplineSeries series = new SplineSeries();
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     LabelPosition = AdornmentsLabelPosition.Center
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1642,27 +1415,30 @@ The following code example demonstrates the EnableSmartLabels property:
 
 {% highlight xaml %}
 
-<chart:PieSeries EnableAnimation="False" x:Name="DouughnutSeries" 
+<chart:PieSeries
+    x:Name="DouughnutSeries"
+    EnableAnimation="False"
+    ExplodeAll="True"
+    ExplodeRadius="3"
+    Palette="Custom"
+    EnableSmartLabels="True"
+    XBindingPath="Category"
+    ItemsSource="{Binding Tax}"
+    Label="Tax"
+    YBindingPath="Percentage">
 
-ExplodeAll="True" ExplodeRadius="3" Palette="Custom"
+    <chart:PieSeries.AdornmentsInfo>
 
-EnableSmartLabels="True"
+        <chart:ChartAdornmentInfo
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            ShowLabel="True"
+            ShowConnectorLine="True"
+            UseSeriesPalette="True" />
 
-XBindingPath="Category" ItemsSource="{Binding Tax}" 
+    </chart:PieSeries.AdornmentsInfo>
 
-Label="Tax" YBindingPath="Percentage">
-
-<chart:PieSeries.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo HorizontalAlignment="Center"
-
-VerticalAlignment="Center" ShowLabel="True" ShowConnectorLine="True" UseSeriesPalette="True"
-
->
-
-</chart:ChartAdornmentInfo>
-
-</chart:PieSeries.AdornmentsInfo>
+</chart:PieSeries>
 
 {% endhighlight %}
 
@@ -1670,38 +1446,23 @@ VerticalAlignment="Center" ShowLabel="True" ShowConnectorLine="True" UseSeriesPa
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     Label = "Tax",
-
     EnableSmartLabels = true,
-
-    ExplodeAll = true ,
-
+    ExplodeAll = true,
     ExplodeRadius = 3,
-
     Palette = ChartColorPalette.Custom,
-
 };
 
 ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 {
-
     ShowLabel = true,
-
     ShowConnectorLine = true,
-
     UseSeriesPalette = true,
-
     HorizontalAlignment = HorizontalAlignment.Center,
-
     VerticalAlignment = VerticalAlignment.Center
-
 };
 
 series.AdornmentsInfo = adornmentInfo;
@@ -1713,5 +1474,3 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Smart labels for adornments in UWP Chart](adornments_images/uwp-charts-adornments-smartlabel.png)
-
-

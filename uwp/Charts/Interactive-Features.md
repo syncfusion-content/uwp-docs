@@ -3836,6 +3836,13 @@ chart.Behaviors.Add(behavior);
 
 ![Axis label alignment support for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img54.jpeg)
 
+## See Also
+
+- [How to maintain axis interval while zooming in UWP Charts?](https://support.syncfusion.com/kb/article/12268/how-to-maintain-axis-interval-while-zooming-in-uwp-charts)
+- [How to show or hide Zooming Toolbar Items in UWP Chart?](https://support.syncfusion.com/kb/article/12179/how-to-show-or-hide-zooming-toolbar-items-in-uwp-chart)
+- [How to display additional data in Tooltips in UWP Charts?](https://support.syncfusion.com/kb/article/11034/how-to-display-additional-data-in-tooltips-in-uwp-charts)
+- [How to find nearest data point in series using touch point in UWP Chart?](https://support.syncfusion.com/kb/article/8207/how-to-find-nearest-data-point-in-series-using-touch-point-in-uwp-chart)
+
 
 
 

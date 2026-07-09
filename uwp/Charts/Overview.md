@@ -11,15 +11,10 @@ documentation: ug
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity and simplicity of use. [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) also provides a wide variety of charting features that are used to visualize large quantities of data, flexible data binding and user customization.
 
-
-
 ![Overview of UWP Chart](Overview_images/Overview_img1.png)
-
-
 
 SfChart
 {:.caption}
-
 
 
 ## Key features
@@ -33,6 +28,3 @@ SfChart
 * Supports multiple axes that can be stacked and spanned for multiple panes.
 * [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support for rendering multiple series at the same time, with options to compare and visualize two different chart series simultaneously.
 * User friendly and provides various options for you to customize chart features like axis, labels, legends, series, etc and visualize them accordingly. 
-
-
-

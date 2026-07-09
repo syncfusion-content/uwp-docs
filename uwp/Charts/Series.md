@@ -3277,7 +3277,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-![Adding CurveColor in WPF Chart](Series_images/CurveColor.png)
+![Adding CurveColor in UWP Chart](Series_images/CurveColor.png)
 
 ## Box and Whisker
 
@@ -4298,3 +4298,9 @@ chart.Series.Add(fastRangeAreaBitmapSeries);
 {% endtabs %}
 
 ![Fast Range Area Bitmap Series With Anit-Aliasing Enabled](Series_images/fastrangeareabitmapantialiasing.png)
+
+## See Also
+
+- [How to compare Line Series, Fast Line Series, and Fast Line Bitmap Series in UWP Charts?](https://support.syncfusion.com/kb/article/6197/how-to-compare-line-series-fast-line-series-and-fast-line-bitmap-series-in-uwp-charts)
+- [How to generate dynamic Chart Series in UWP SfChart?](https://support.syncfusion.com/kb/article/6856/how-to-generate-dynamic-chart-series-in-uwp-sfchart)
+- [How to set custom colors for a series using the ColorModel property in UWP Chart?](https://support.syncfusion.com/kb/article/5726/how-to-set-custom-colors-for-a-series-using-the-colormodel-property-in-uwp-chart)

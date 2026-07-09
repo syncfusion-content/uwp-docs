@@ -14,5 +14,6 @@ documentation: ug
 * In case of a [`ColumnSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), when you have a large number of points to plot, you can make use of [`FastColumnBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastColumnBitmapSeries.html).
 * You also have Fast Series types for financial charts like [`HiLo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HiloSeries.html) and [`HiLoOpenClose`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HiLoOpenCloseSeries.html), and they are named as [`FastHiLoBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastHiLoBitmapSeries.html) and [`FastHiLoOpenCloseBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastHiLoOpenCloseBitmapSeries.html) respectively.
 
+## See Also
 
-
+- [How to compare Line Series, Fast Line Series, and Fast Line Bitmap Series in UWP Charts?](https://support.syncfusion.com/kb/article/6197/how-to-compare-line-series-fast-line-series-and-fast-line-bitmap-series-in-uwp-charts)

@@ -986,4 +986,7 @@ chart.Legend = new ChartLegend()
 
 ![Customizing legend items layout in UWP Chart](Legend_images/customization_2.png)
 
+## See Also
 
+- [How to get a notification when the legend item is clicked in UWP Chart?](https://support.syncfusion.com/kb/article/10171/how-to-get-a-notification-when-the-legend-item-is-clicked-in-uwp-chart)
+- [How to add multiple legend items in scroll viewer in UWP Chart?](https://support.syncfusion.com/kb/article/10173/how-to-add-multiple-legend-items-in-scroll-viewer-in-uwp-chart)
