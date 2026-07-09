@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transform axis value to pixel value and vice versa | SfChart | Winrt | Syncfusion
-description: transform axis value to pixel value and vice versa
+title: Transform axis value to pixel value | SfChart | Winrt | Syncfusion
+description: Learn how to transform axis values to pixel values and vice versa in SfChart using ValueToPoint and PointToValue utility methods.
 platform: uwp
 control: SfChart
 documentation: ug

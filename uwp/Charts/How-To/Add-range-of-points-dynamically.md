@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add range of points dynamically | SfChart | Winrt | Syncfusion
-description: add range of points dynamically
+description: Learn how to add a range of points dynamically to the SfChart using SuspendSeriesNotification and ResumeSeriesNotification methods.
 platform: uwp
 control: SfChart
 documentation: ug
