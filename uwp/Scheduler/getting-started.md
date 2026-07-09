@@ -9,7 +9,7 @@ documentation: ug
       
 # Getting Started with UWP Scheduler (SfSchedule)
       
-This section provides you an overview for working with SfSchedule for UWP and also provides a walk through to configure SfSchedule control in real time scenario. 
+This section provides you an overview for working with SfSchedule for UWP and also provides a walkthrough to configure the SfSchedule control in a real-time scenario. 
  
 ## Assembly Configuration     
       
@@ -24,7 +24,7 @@ You can download our UWP components directly from our website, refer [here](http
  
 Once the assemblies have been downloaded and explored, you can find all the required assemblies in the installation folders [location](https://help.syncfusion.com/uwp/system-requirements). 
  
-The following list of assemblies need to be added as reference from the installed folder to use SfSchedule in your application.    
+The following list of assemblies needs to be added as references from the installed folder to use SfSchedule in your application.    
      
 <table>    
 <tr>    
@@ -39,7 +39,7 @@ The following list of assemblies need to be added as reference from the installe
       
 ### NuGet Configuration    
       
-Alternatively you can refer SfSchedule in your application by configuring NuGet packages.     
+Alternatively, you can refer to SfSchedule in your application by configuring NuGet packages.     
    
 * [Configuration in Visual Studio](https://help.syncfusion.com/uwp/system-requirements)
    
@@ -47,14 +47,14 @@ Alternatively you can refer SfSchedule in your application by configuring NuGet 
 
 ## Create a simple application with SfSchedule    
       
-This section explains how to create a simple application using SfSchedule control.This is how the final output will look like on UWP Desktop devices. 
+This section explains how to create a simple application using the SfSchedule control. This is how the final output will look on UWP Desktop devices. 
 
 ![UWP Schedule](Getting-Started_images/GettingStarted.png) 
 
 You can download the entire source code of this demo for UWP from    
 here [ScheduleGettingStarted](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_ScheduleUWP1114729068.zip)    
      
-This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.   
+This section provides a walkthrough to create `MeetingRoomScheduler` using our Schedule control.   
      
 * [Creating a new project](#creating-a-new-project)    
 * [Adding SfSchedule to the project](#adding-sfschedule-to-the-project)
@@ -111,9 +111,9 @@ Import SfSchedule control namespace `Syncfusion.UI.Xaml.Schedule`.
       
 ## Changing Schedule Views     
       
-SfSchedule control provides different types of views to display dates and it can be assigned to the control by using [SfSchedule.ScheduleType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleTypeProperty) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.   
+SfSchedule control provides different types of views to display dates, and it can be assigned to the control by using the [SfSchedule.ScheduleType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleTypeProperty) property. By default, the control is assigned with `DayView`. The current date will be displayed initially for all the Schedule views.   
    
-Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [SfSchedule.FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeekProperty) property of `SfSchedule`.   
+The Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize it to any day by using the [SfSchedule.FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeekProperty) property of `SfSchedule`.   
      
 {% tabs %}   
 {% highlight xaml %}    
@@ -133,7 +133,7 @@ Schedule control will be rendered with `Sunday` as the first day of the week, bu
 
 ### Day View    
      
-DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.    
+DayView is used to display a single day; the current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on their duration.    
      
 {% tabs %}    
 {% highlight xaml %}    
@@ -152,7 +152,7 @@ DayView is used to display a single day, current day will be visible by default.
 
 ### Week View    
   
-`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.   
+`WeekView` is to view all days of a particular week. Appointments will be arranged based on the dates of the week in respective timeslots.   
      
 {% tabs %}    
 {% highlight xaml %}    
@@ -171,7 +171,7 @@ DayView is used to display a single day, current day will be visible by default.
 
 ### Work Week View    
   
-`WorkWeekView` is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.   
+`WorkWeekView` is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can customize it with any days of a week. Appointments are arranged in timeslots based on their duration with respect to the day of the week.   
      
 {% tabs %}    
 {% highlight xaml %}    
@@ -186,13 +186,13 @@ DayView is used to display a single day, current day will be visible by default.
 {% endhighlight %}    
 {% endtabs %}    
  
->**Notes**: Appointments in non-working days will not be displayed.   
+>**Notes**: Appointments on non-working days will not be displayed.   
 
 ![Work week view in UWP Schedule](Getting-Started_images/WorkWeekView.png) 
 
 ### Month View    
      
-`MonthView` in Schedule control is to view entire dates of a particular month.Appointments arranged in timeslots based on its duration with respective day of the month.   
+`MonthView` in the Schedule control is to view entire dates of a particular month. Appointments are arranged in timeslots based on their duration with respect to the day of the month.   
      
 {% tabs %}    
 {% highlight xaml %}    
@@ -211,7 +211,7 @@ DayView is used to display a single day, current day will be visible by default.
  
 ### TimeLine View    
      
-`TimeLineView` is used to displays complete TimeLine in selected day, the default visible day of Schedule will be current day. Appointments are added in particular timeslot based on its timeline.   
+`TimeLineView` is used to display the complete TimeLine in the selected day; the default visible day of the Schedule will be the current day. Appointments are added in particular timeslots based on their timeline.   
      
 {% tabs %}    
 {% highlight xaml %}    
@@ -230,11 +230,11 @@ DayView is used to display a single day, current day will be visible by default.
 
 ## Binding data to SfSchedule control    
    
-Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [SfSchedule.Appointments](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Appointments) property of `SfSchedule`. 
+The Schedule control has a built-in capability to handle the appointment arrangement internally based on the ScheduleAppointment collections. You need to assign the created collection to the [SfSchedule.Appointments](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Appointments) property of `SfSchedule`. 
    
 ### Adding Appointments    
    
- [ScheduleAppointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule. It has some basic properties such as [ScheduleAppointment.StartTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_StartTimeProperty), [ScheduleAppointment.EndTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_EndTimeProperty), [ScheduleAppointment.Subject](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_SubjectProperty) and some additional information about the appointment can be added using [ScheduleAppointment.AppointmentBackground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AppointmentBackgroundProperty), [ScheduleAppointment.Notes](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_NotesProperty), [ScheduleAppointment.Location](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_LocationProperty), [ScheduleAppointment.AllDay](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AllDayProperty), [ScheduleAppointment.IsRecursive](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_IsRecursiveProperty) properties.    
+ [ScheduleAppointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in the schedule. It has some basic properties such as [ScheduleAppointment.StartTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_StartTimeProperty), [ScheduleAppointment.EndTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_EndTimeProperty), [ScheduleAppointment.Subject](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_SubjectProperty), and some additional information about the appointment can be added using [ScheduleAppointment.AppointmentBackground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AppointmentBackgroundProperty), [ScheduleAppointment.Notes](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_NotesProperty), [ScheduleAppointment.Location](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_LocationProperty), [ScheduleAppointment.AllDay](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AllDayProperty), [ScheduleAppointment.IsRecursive](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_IsRecursiveProperty) properties.
      
 {% highlight c# %}    
      
@@ -257,9 +257,9 @@ Schedule control has a built-in capability to handle the appointment arrangement
    
 You can also map custom appointments data to our schedule.    
    
->**Notes**: CustomAppointment class should contain two DateTime fields and a string field as mandatory.   
+>**Notes**: The CustomAppointment class should contain two DateTime fields and a string field as mandatory.   
   
-Here steps to render `MeetingRoomScheduler` using SfSchedule control with respective custom data properties created in a class Meeting.   
+Here are the steps to render `MeetingRoomScheduler` using the SfSchedule control with respective custom data properties created in a class Meeting.   
    
 * [Creating custom class for appointments](#creating-custom-class-for appointments)  
 * [Creating view model](#creating-view-model) 
@@ -268,7 +268,7 @@ Here steps to render `MeetingRoomScheduler` using SfSchedule control with respec
 
 #### Creating custom class  for appointments 
   
-You can create a custom class `Meeting` with mandatory fields "From", "To" and "EventName".  
+You can create a custom class `Meeting` with mandatory fields "From", "To", and "EventName".
   
 {% highlight c# %}    
         
@@ -322,7 +322,7 @@ You can map those properties of `Meeting` class with our schedule control by usi
    
 #### Creating view model   
      
-You can schedule meetings for a particular day by setting `From` and `To` of `Meeting` class.Also you can change subject and color of appointment using `EventName` and `color` of Meeting class. In a separate ViewModel class you can describe the collection of custom appointments.    
+You can schedule meetings for a particular day by setting `From` and `To` of the `Meeting` class. Also, you can change the subject and color of the appointment using the `EventName` and `color` of the Meeting class. In a separate ViewModel class, you can describe the collection of custom appointments.    
      
 {% highlight c# %}    
      
@@ -449,7 +449,7 @@ You can schedule meetings for a particular day by setting `From` and `To` of `Me
 
 ### Dispose SfSchedule
 
-You can release the allocated resources of `Schedule` by calling the [Dispose](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Dispose) method. You can handle the memory leak issue by calling the `Dispose` method while unloading the `Schedule`.
+You can release the allocated resources of the `Schedule` by calling the [Dispose](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Dispose) method. You can handle the memory leak issue by calling the `Dispose` method while unloading the `Schedule`.
 
 {% highlight c# %} 
 private void Schedule_Unloaded(object sender, RoutedEventArgs e)
