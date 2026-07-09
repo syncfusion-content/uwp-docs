@@ -49,7 +49,7 @@ You can customize the default appearance of schedule timeline view header using 
                 TimeLineViewHeaderFontWeight = FontWeights.Bold,
                 TimeLineViewHeaderHeight = 50,
                 TimeLineViewHeaderTextColor = new SolidColorBrush(Colors.Black),
-                TimeLineViewHeaderTextFontStyle = FontStyle.Normal,
+                TimeLineViewHeaderTextFontStyle = Windows.UI.Text.FontStyle.Normal,
                 TimeLineViewHeaderTextHorizontalAlignment = HorizontalAlignment.Center,
                 TimeLineViewHeaderTextSize = 14,
                 TimeLineViewHeaderTextVerticalAlignment = VerticalAlignment.Center
