@@ -8,11 +8,11 @@ documentation: ug
 ---
 # Getting Started with UWP Image Editor (SfImageEditor)
 
-This section explains the steps required to load an image to the image editor. Image editor has a built-in toolbar that has options to edit the image with shapes, path, text, crop, rotate and flip.
+This section explains the steps required to load an image to the image editor. The image editor has a built-in toolbar with options to edit the image with shapes, path, text, crop, rotate, and flip.
 
 ## Configuring SfImageEditor
 
-After installing Essential Studio for UWP, you can find all the required assemblies in the installation folder,
+After installing Essential Studio for UWP, you can find all the required assemblies in the installation folder.
 
 **SfImageEditor** is available in the following assembly and namespace:
 
@@ -39,6 +39,9 @@ N> In addition, you have to install a [`Win2D`](https://www.nuget.org/packages/W
 {% highlight C# %}
 
     using Syncfusion.UI.Xaml.ImageEditor;
+    using Windows.Storage;
+    using Windows.Storage.Streams;
+    using Windows.UI.Xaml.Media.Imaging;
     
 {% endhighlight %}
 
@@ -75,22 +78,22 @@ N> In addition, you have to install a [`Win2D`](https://www.nuget.org/packages/W
 
 ## Loading an image to the image editor
 
-It can be done by the following two ways:
+An image can be loaded to the image editor in the following two ways:
 
-* Using bitmap object
-* Using Stream
+* Using a bitmap object
+* Using a Stream
 
-### Using bitmap object
+### Using a bitmap object
 
 You can load an image to the control as a bitmap object.
 
 {% highlight C# %}
 
-     IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.Read);
-     BitmapImage bitMapImage = new BitmapImage();
-     image.SetSource(stream);
-     imageEditor.ImageSource = bitMapImage;
-    
+    IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.Read);
+    BitmapImage bitMapImage = new BitmapImage();
+    bitMapImage.SetSource(stream);
+    imageEditor.ImageSource = bitMapImage;
+
 {% endhighlight %}
 
 ### Using Stream
@@ -104,7 +107,9 @@ You can load an image to the control as a stream.
 
 {% endhighlight %}
 
-* After an image has been loaded to the SfImageEditor, you can start to edit an image by using the built-in Toolbar
+N> In the above code snippets, `file` represents the picked `StorageFile` instance, and `imageEditor` is the `SfImageEditor` instance defined in the previous step.
+
+* After an image has been loaded to the SfImageEditor, you can start editing the image by using the built-in Toolbar
 
 ![Output image of the SfImageEditor getting started](getting-started_images/LoadedImage.png)
 
