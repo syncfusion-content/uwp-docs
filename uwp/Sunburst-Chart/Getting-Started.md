@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP Sunburst Chart (SfSunburstChart)
 
-This section explains you the steps required to populate the sunburst chart with data, add data labels, legends and header. This section covers only the minimal features that you need to know to get started with the Sunburst chart.
+This section explains the steps required to populate the sunburst chart with data, add data labels, legends and header. This section covers only the minimal features that you need to know to get started with the Sunburst chart.
 
 ## Adding assembly reference
 
@@ -515,4 +515,4 @@ Following is the final output screenshot,
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted_uwp5.png)
 
-You can find the complete getting started sample from this [`link.`](https://github.com/SyncfusionExamples/GettingStarted-UWP-SunburstChart)
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/GettingStarted-UWP-SunburstChart).

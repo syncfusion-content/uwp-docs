@@ -3,7 +3,7 @@
 layout: post
 title: Data Label in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Data Label support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -103,7 +103,7 @@ SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 {
          ShowLabel = true,
-         LabelOverflowMode =LabelOverflowMode.Trim
+         LabelOverflowMode = LabelOverflowMode.Trim
 };
 
 chart.DataLabelInfo = dataLabelInfo;
@@ -118,7 +118,7 @@ chart.DataLabelInfo = dataLabelInfo;
 
 You can rotate the data label by using [`LabelRotationMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_LabelRotationMode) property. 
 
-The following code shows how to set [`LabelRotationMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.LabelRotationMode.html) as normal and angle. 
+The following code shows how to set the [`LabelRotationMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.LabelRotationMode.html) as Normal and Angle. 
 
 {% tabs %}
 

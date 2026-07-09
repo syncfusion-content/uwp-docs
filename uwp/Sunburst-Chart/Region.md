@@ -3,7 +3,7 @@
 layout: post
 title: Region in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Region support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -11,7 +11,7 @@ documentation: ug
 
 # Region in UWP Sunburst Chart (SfSunburstChart)
 
-Sunburst region represents the entire chart and all its elements. It includes all the chart elements like Legend, DataLabel, Levels etc. It has some major properties as
+Sunburst region represents the entire chart and all its elements. It includes all the chart elements like Legend, DataLabel, Levels etc. It has the following major properties:
 
 [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ItemsSource) – Gets or sets the IEnumerable values used to generate the chart.
 
@@ -54,7 +54,7 @@ sunburstChart.EndAngle = 360;
 
 ## Sunburst radius
 
-Sunburst chart allows you to customize the sunburst radius by using [`Radius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Radius) property. Default value of this property is 0.9 and the value range between 0 to 1.
+Sunburst chart allows you to customize the sunburst radius by using [`Radius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Radius) property. The default value of this property is 0.9 and the value ranges from 0 to 1.
 
 {% tabs %}
 
@@ -79,7 +79,7 @@ chart.Radius = 0.6;
 
 ## Sunburst inner radius
 
-Sunburst chart allows you to customize the inner radius using [`InnerRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_InnerRadius) property. The default value of this property is 0.2 and value range between 0 to 1.
+Sunburst chart allows you to customize the inner radius using [`InnerRadius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_InnerRadius) property. The default value of this property is 0.2 and the value ranges from 0 to 1.
 
 {% tabs %}
 

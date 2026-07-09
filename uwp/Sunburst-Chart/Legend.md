@@ -3,7 +3,7 @@
 layout: post
 title: Legend in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Legend support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -42,7 +42,7 @@ chart.Legend = legend;
 
 ## Legend Icon
 
-You can specify different shapes of legend icon by using the [`LegendIcon`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_LegendIcon) property. By default, legend icon is Circle. The Sunburst chart have some predefined shapes such as:
+You can specify different shapes of legend icon by using the [`LegendIcon`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_LegendIcon) property. By default, the legend icon is Circle. The Sunburst chart has some predefined shapes such as:
 
 * Circle
 * Cross
@@ -80,8 +80,8 @@ chart.Legend = legend;
 
 The following properties are used to customize the legend icons size.
 
-* [`IconHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_IconHeight) – Gets or sets the double value to represents icon(s) height.
-* [`IconWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_IconWidth) – Gets or sets the double value to represents icon(s) width.
+* [`IconHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_IconHeight) – Gets or sets the double value that represents the icon(s) height.
+* [`IconWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_IconWidth) – Gets or sets the double value that represents the icon(s) width.
 
 You can customize your own legend shape by applying custom template using [`LegendIconTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_LegendIconTemplate) property as shown in the below code. 
 
@@ -111,11 +111,11 @@ You can customize your own legend shape by applying custom template using [`Lege
 ![Legend_img3](Legend_images/Legend_img3.jpeg)
 
 
-Note: You need to set [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegendIcon.html) value as Custom in order to apply custom template.
+N> You need to set the [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegendIcon.html) value as Custom in order to apply the custom template.
 
 ## Positioning the Legend
 
-You can customize the position to left, right, top, bottom for the legend using [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_DockPosition) property as like in below code snippet
+You can customize the position to left, right, top, bottom for the legend using [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_DockPosition) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -133,7 +133,7 @@ You can customize the position to left, right, top, bottom for the legend using 
 
 SunburstLegend legend = new SunburstLegend()
 {
-       DockPosition =ChartDock.Top
+       DockPosition = ChartDock.Top
 };
 chart.Legend = legend;
 
@@ -190,7 +190,7 @@ You can arrange the legend items smartly by using ItemPanelTemplate and ItemTemp
 You can select a specific category while clicking on corresponding legend item through [`ClickAction`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegend.html#Syncfusion_UI_Xaml_SunburstChart_SunburstLegend_ClickAction) property. It has three types of action 
 
 * ToggleSegmentSelection
-* ToggleSegmentVisiblity
+* ToggleSegmentVisibility
 * None
 
 ### ToggleSegmentSelection

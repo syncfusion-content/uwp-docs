@@ -3,7 +3,7 @@
 layout: post
 title: Events in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Events support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -13,7 +13,7 @@ documentation: ug
 
 ## SegmentCreated Event
 
-This event occurs when segment is created. You can get the segment details as argument from the [`SunburstSegmentCreatedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSegmentCreatedEventArgs.html) handler. 
+This event occurs when a segment is created. You can get the segment details as argument from the [`SunburstSegmentCreatedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSegmentCreatedEventArgs.html) handler. 
 
 The following example shows how to set the color for each level after creating the segment. 
 
@@ -50,7 +50,7 @@ private void chart_SegmentCreated(object sender, SunburstSegmentCreatedEventArgs
 
 This event occurs whenever you select the segment by enabling selection behavior. You can get the selected segment details as argument from [`SunburstSelectionChangedEventArgs`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionChangedEventArgs.html) handler. 
 
-The following examples shows how to set the selected segment information.
+The following example shows how to set the selected segment information.
 
 {% tabs %}
 

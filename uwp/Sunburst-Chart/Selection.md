@@ -3,7 +3,7 @@
 layout: post
 title: Selection in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Selection support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -13,7 +13,7 @@ documentation: ug
 
 Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
 
-The below code shows, how to enable the selection behavior.  
+The following code shows how to enable the selection behavior.  
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ You can customize the selected segment appearance by using brush or opacity. You
 * HighlightByColor – To display the selected segment appearance using brush.
 * HighlightByOpacity – To display the selected segment appearance using opacity.
 
-The following code shows, how to set the display mode using brush.
+The following code shows how to set the display mode using brush.
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ chart.Behaviors.Add(selection);
 
 ## SelectionType
 
-Sunburst chart provides multiple option to represent the selected categories. You can select the segment categories by using the [`SelectionType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionType) property in selection behavior.
+Sunburst chart provides multiple options to represent the selected categories. You can select the segment categories by using the [`SelectionType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionType) property in selection behavior.
 
 * Child – To select the child of selected parent.
 * Group – To select the entire categories in group.
@@ -121,7 +121,7 @@ Sunburst chart provides multiple option to represent the selected categories. Yo
 
 ### Child
 
-The following code shows, how to set the selection type as child.
+The following code shows how to set the selection type as child.
 
 {% tabs %}
 
@@ -200,9 +200,9 @@ The following code shows, how to set the selection type as single.
 
 ## Selection Cursor
 
-SelectionCursor property allows you to customize the cursor when mouse is hovered over the segment. 
+The [`SelectionCursor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionCursor) property allows you to customize the cursor when the mouse is hovered over the segment. 
 
-The following code shows, how to set the selection cursor as hand.
+The following code shows how to set the selection cursor as hand.
 
 {% tabs %}
 

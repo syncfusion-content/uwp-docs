@@ -3,7 +3,7 @@
 layout: post
 title: Palette in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Palette support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -13,7 +13,7 @@ documentation: ug
 
 Sunburst chart provides support to apply different types of palettes. You can define the palettes by using [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Palette) property.
 
-We have some predefined palette such as
+The following predefined palettes are available:
 
 * Metro
 * AutumnBrights

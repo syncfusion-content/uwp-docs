@@ -3,7 +3,7 @@
 layout: post
 title: Tooltip in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Tooltip support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -11,7 +11,7 @@ documentation: ug
 
 # Tooltip in UWP Sunburst Chart (SfSunburstChart)
 
-ToolTip allows you to display any information over a sunburst segment. It appears when mouse hovered over or touch any chart segment. By default, it displays the corresponding segment category name and its value.
+Tooltip allows you to display any information over a sunburst segment. It appears when the mouse hovers over or the user touches any chart segment. By default, it displays the corresponding segment category name and its value.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ The tooltip position can be aligned with respect to the cursor position by using
 
 ### HorizontalAlignment
 
-The following code shows, how to position the tooltip to right of the cursor.
+The following code shows how to position the tooltip to the right of the cursor.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ sunburstChart.Behaviors.Add(tooltip);
 
 ### VerticalAlignment
 
-The following code shows, how to position the tooltip to bottom of the cursor.
+The following code shows how to position the tooltip to the bottom of the cursor.
 
 {% highlight xaml %}
 
