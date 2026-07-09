@@ -59,7 +59,7 @@ treeGrid.FilterLevel = FilterLevel.All;
 
 * All - Filter will be applied to all the nodes in SfTreeGrid.
 
-* Extended - In Extended mode, filtering is applied based on the node hierarchy. Child nodes are included in filtering only when their parent node is expanded. If a node matches the filter condition, all of its ancestor nodes are displayed to preserve the hierarchy, even if those ancestor nodes do not match the filter condition. In such cases, the ancestor node's `IsFiltered` property is set to `false`.
+* Extended - Filtering is applied based on the node hierarchy. Child nodes are included in filtering only when their parent node is expanded. If a node matches the filter condition, all of its ancestor nodes are displayed to preserve the hierarchy, even if those ancestor nodes do not match the filter condition. In such cases, the ancestor node's `IsFiltered` property is set to `false`.
 
 **Root**
 
@@ -71,7 +71,7 @@ Filter will be applied to all the nodes in SfTreeGrid. If the parent node does n
 
 **Extended**
 
-In Extended mode, filtering is applied based on the node hierarchy. Child nodes are included in filtering only when their parent node is expanded. If a node matches the filter condition, all of its ancestor nodes are displayed to preserve the hierarchy, even if those ancestor nodes do not match the filter condition. In such cases, the ancestor node's `IsFiltered` property is set to `false`.
+Filtering is applied based on the node hierarchy. Child nodes are included in filtering only when their parent node is expanded. If a node matches the filter condition, all of its ancestor nodes are displayed to preserve the hierarchy, even if those ancestor nodes do not match the filter condition. In such cases, the ancestor node's `IsFiltered` property is set to `false`.
 
 N> It is also possible to change `FilterLevel` at runtime.
 
