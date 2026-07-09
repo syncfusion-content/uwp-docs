@@ -16,6 +16,8 @@ documentation: ug
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
     //Creating an instance for schedule appointment collection
             ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
             //Adding a schedule appointment to the schedule appointment collection 
@@ -65,6 +67,8 @@ N> The CustomAppointment class should contain two DateTime fields and a string f
 You can create a custom class `Meeting` with mandatory fields `From`, `To`, and `EventName`.
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
         /// <summary>   
         /// Represents custom data properties.   
         /// </summary>   
@@ -85,6 +89,8 @@ You can map those properties of the `Meeting` class with our SfSchedule control 
 {% tabs %}
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
         // Schedule data mapping for custom appointments
             ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
             dataMapping.SubjectMapping = "EventName";
@@ -96,6 +102,10 @@ You can map those properties of the `Meeting` class with our SfSchedule control 
 {% endhighlight %}
 {% highlight xaml %} 
  
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
     <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week" ItemsSource="{Binding Meetings}">
             <syncfusion:SfSchedule.AppointmentMapping>
                 <syncfusion:ScheduleAppointmentMapping
@@ -107,12 +117,15 @@ You can map those properties of the `Meeting` class with our SfSchedule control 
             </syncfusion:SfSchedule.AppointmentMapping>
         </syncfusion:SfSchedule>
  
+</Page>
 {% endhighlight %} 
 {% endtabs %} 
 
 You can schedule meetings for a day by setting `From` and `To` of the `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `ItemsSource` property, which is of `IEnumerable` type.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
             //Creating an instance for the custom appointment class
             Meeting meeting = new Meeting();
@@ -141,6 +154,8 @@ You can get the custom appointment in `ScheduleTappedEventArgs` of the `Schedule
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
 schedule.ScheduleTapped += Schedule_ScheduleTapped;
 private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
 {
@@ -153,6 +168,8 @@ private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
 A Spanned Appointment is an appointment which lasts more than 24 hours.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
             //Creating an instance for the custom appointment class
             Meeting meeting = new Meeting();
@@ -177,7 +194,7 @@ A Spanned Appointment is an appointment which lasts more than 24 hours.
 An All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using the `IsAllDay` property in the `ScheduleAppointment`.
 
 {% highlight c# %}
-
+using Syncfusion.UI.Xaml.Schedule;
         // Creating an instance for the schedule appointment collection
             ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
             //Adding a schedule appointment to the schedule appointment collection 
@@ -199,6 +216,8 @@ An all-day appointment doesn't block out the entire time slot in SfSchedule; ins
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ShowAllDay = true; 
 
 {% endhighlight %} 
@@ -207,6 +226,8 @@ The All-Day panel background can be customized by setting `AllDayAppointmentPane
 of the respective view settings.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
          schedule.AllDayAppointmentPanelBrush = new SolidColorBrush(Colors.Green); 
 
@@ -262,6 +283,8 @@ The schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/uwp/Syn
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
    
                 //Creating an instance for the schedule appointment collection
             ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
@@ -309,6 +332,8 @@ Schedule reminds you of the appointment at the specified time by setting the Ena
 N> Open the package.appxmanifest file, go to the Application UI tab, and select "Yes" from the "Toast capable" dropdown list to enable toast notifications in your application manifest.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
                 schedule.EnableReminderTimer = true;
             schedule.Appointments.Add(new ScheduleAppointment
@@ -365,6 +390,8 @@ The schedule appointment can be customized by setting appointment style properti
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
                 //Creating Appointment style 
             ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
             appointmentStyle.AppointmentTextColor = new SolidColorBrush(Colors.Red);
@@ -391,6 +418,8 @@ The schedule appointment can be customized during runtime using [ScheduleAppoint
 •	[Bounds](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_Bounds) – Contains the UI bounds of the appointment.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
  
            schedule.ScheduleAppointmentLoaded += Schedule_ScheduleAppointmentLoaded;
 
@@ -411,6 +440,8 @@ The schedule appointment can be customized during runtime using [ScheduleAppoint
 The default appointment UI can be changed using the `View` property passed through `AppointmentLoadedEventArgs`.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
  
      schedule.ScheduleAppointmentLoaded += Schedule_ScheduleAppointmentLoaded;
 
@@ -439,6 +470,8 @@ These events will be triggered when performing the respective touch actions in t
 • [SelectedResource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleTappedEventArgs_SelectedResource) - Contains the selected time slot DateTime value.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
  
      schedule.ScheduleTapped += Schedule_ScheduleTapped;
      schedule.ScheduleDoubleTapped += Schedule_ScheduleDoubleTapped;
@@ -461,6 +494,8 @@ N> `BorderThickness` value must be set to highlight `SelectionColor`.
 
 {% tabs %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
  
             //Creating Appointment style 
         ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
@@ -474,6 +509,10 @@ N> `BorderThickness` value must be set to highlight `SelectionColor`.
   
 {% highlight xaml %} 
  
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
      <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week" >
             <syncfusion:SfSchedule.ScheduleAppointmentStyle>
                 <syncfusion:ScheduleAppointmentStyle BorderThickness="10" 
@@ -484,6 +523,7 @@ N> `BorderThickness` value must be set to highlight `SelectionColor`.
             </syncfusion:SfSchedule.ScheduleAppointmentStyle>
         </syncfusion:SfSchedule>
  
+</Page>
 {% endhighlight %} 
 {% endtabs %} 
 
@@ -493,7 +533,8 @@ N> `BorderThickness` value must be set to highlight `SelectionColor`.
 The Schedule control allows you to define resources that can be assigned to appointments. [Resources](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.Resource.html) let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
 
 {% highlight c# %} 
- 
+
+using Syncfusion.UI.Xaml.Schedule;
         //creating appointments for resource
     DateTime currentDate = DateTime.Now;
     ScheduleAppointment ScheduleAppointment = new ScheduleAppointment() 
@@ -540,6 +581,11 @@ You can customize the resources in a `Timeline` view by using the [TimeInterval]
 
 {% tabs %} 
 {% highlight xaml %} 
+
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
 <schedule:SfSchedule
         x:Name="schedule"
         Resource="Doctors"
@@ -566,8 +612,13 @@ You can customize the resources in a `Timeline` view by using the [TimeInterval]
     <local:SchedulerBehavior/>
 </interactivity:Interaction.Behaviors>
 </schedule:SfSchedule>
+
+</Page>
 {% endhighlight %}
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
+
 public class SchedulerViewModel
 {
     private ObservableCollection<DateTime> datecoll = new ObservableCollection<DateTime>();
@@ -643,6 +694,9 @@ public class SchedulerViewModel
 }
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
+
 public class SchedulerBehavior : Behavior<SfSchedule>
 {
     SfSchedule schedule;

@@ -20,6 +20,10 @@ You can customize the default appearance of view header in [DayView](https://hel
 {% tabs %}
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
     <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day">
             <Schedule:SfSchedule.DayViewHeaderStyle>
                 <Schedule:ScheduleDayViewHeaderStyle
@@ -30,9 +34,13 @@ You can customize the default appearance of view header in [DayView](https://hel
                     DayViewHeaderTextSize="15" />
             </Schedule:SfSchedule.DayViewHeaderStyle>
         </Schedule:SfSchedule>
+
+</Page>
 {% endhighlight %}
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
     SfSchedule schedule = new SfSchedule();
             schedule.ScheduleType = ScheduleType.Day;
@@ -58,13 +66,21 @@ You can customize the interval of timeslots in `DayView` by setting [TimeInterva
 {% tabs %}
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ScheduleType = ScheduleType.Day;
             schedule.TimeInterval = TimeInterval.ThirtyMin;
 {% endhighlight %}
 
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
      <Schedule:SfSchedule x:Name="schedule" TimeInterval="ThirtyMin" />
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![TimeInterval Changing in UWP Schedule](daymodule_images/timeinterval_day.png)
@@ -74,6 +90,8 @@ You can customize the interval of timeslots in `DayView` by setting [CustomTimeI
 {% tabs %}
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ScheduleType = ScheduleType.Day;
             schedule.TimeInterval = TimeInterval.Custom;
             schedule.CustomTimeInterval = 120;
@@ -81,10 +99,16 @@ You can customize the interval of timeslots in `DayView` by setting [CustomTimeI
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
      <Schedule:SfSchedule
             x:Name="schedule"
             CustomTimeInterval="120"
             TimeInterval="Custom" />
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![TimeInterval Customization in UWP Schedule](daymodule_images/customtimeinterval_day.png)
@@ -93,6 +117,8 @@ You can customize the interval of timeslots in `DayView` by setting [CustomTimeI
 Working hours in `DayView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkStartHourProperty) and [WorkEndHour](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WorkEndHourProperty) properties of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
            schedule.IsHighLightWorkingHours = true;
             schedule.ScheduleType = ScheduleType.Day;
@@ -103,6 +129,10 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
     <Schedule:SfSchedule
             x:Name="schedule"
             IsHighLightWorkingHours="True"
@@ -110,6 +140,8 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
             ScheduleType="Day"
             WorkEndHour="18"
             WorkStartHour="10" />
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Changing Working hours in UWP Schedule](daymodule_images/changeworkinghours_day.png)
@@ -121,6 +153,8 @@ Working hours in `DayView` of Schedule control will be differentiated with non-w
 You can customize the appearance of the Timeslot by its color using [MajorTickStroke](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MajorTickStrokeProperty), [MinorTickStroke](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MinorTickStrokeProperty), [DayViewVerticalLineStroke](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewVerticalLineStrokeProperty),  [MajorTickStrokeDashArray](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MajorTickStrokeDashArrayProperty),  [MinorTickStrokeDashArray](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MinorTickStrokeDashArrayProperty),  [IsHighLightWorkingHours](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_IsHighLightWorkingHoursProperty),  `WorkStartHour` , `WorkEndHour` and [NonWorkingHourBrush](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonWorkingHourBrush) properties of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.ScheduleType = ScheduleType.Day;
             schedule.MajorTickStroke = new SolidColorBrush(Colors.Red);
@@ -136,6 +170,10 @@ You can customize the appearance of the Timeslot by its color using [MajorTickSt
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
     <Schedule:SfSchedule
             x:Name="schedule"
             DayViewVerticalLineStroke="Blue"
@@ -147,6 +185,8 @@ You can customize the appearance of the Timeslot by its color using [MajorTickSt
             NonWorkingHourBrush="LightBlue"
             WorkEndHour="18"
             WorkStartHour="9" />
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Timeslot Appearance Customization in UWP Schedule](daymodule_images/timeslotappearance_day.png)
@@ -156,6 +196,8 @@ You can customize the appearance of the Timeslot by its color using [MajorTickSt
 You can restrict or allocate certain timeslot as non-accessible blocks by using [NonAccessibleBlocks](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_NonAccessibleBlocksProperty) of `SfSchedule`, so that you can allocate those timeslots for predefined events/activities like Lunch hour.
 {% tabs %}
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.ScheduleType = ScheduleType.Day;
             schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock()
@@ -169,6 +211,10 @@ You can restrict or allocate certain timeslot as non-accessible blocks by using 
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
     <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day">
             <Schedule:SfSchedule.NonAccessibleBlocks>
                 <Schedule:NonAccessibleBlock
@@ -178,6 +224,8 @@ You can restrict or allocate certain timeslot as non-accessible blocks by using 
                     StartHour="6.00" />
             </Schedule:SfSchedule.NonAccessibleBlocks>
     </Schedule:SfSchedule>
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Non-Accessible Timeslots in UWP Schedule](daymodule_images/nonaccessibleblock_day.png)
@@ -194,6 +242,8 @@ You can customize the format for the labels which are mentioning the time, by se
 {% tabs %}
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ScheduleType = ScheduleType.Day;
             schedule.MajorTickTimeFormat = "hh:mm tt";
             schedule.MinorTickTimeFormat = "mm";
@@ -201,11 +251,17 @@ You can customize the format for the labels which are mentioning the time, by se
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
     <Schedule:SfSchedule
             x:Name="schedule"
             MajorTickTimeFormat="hh:mm tt"
             MinorTickTimeFormat="mm"
             ScheduleType="Day" />
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Time label format Customization in UWP Schedule](daymodule_images/timelabelformat_day.png)
@@ -215,6 +271,9 @@ You can customize the format for the labels which are mentioning the time, by se
 You can customize the color for the labels which are mentioning the time, by setting [MajorTickLabelStroke](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MajorTickLabelStrokeProperty) and  [MinorTickLabelStroke](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MinorTickLabelStrokeProperty) properties of ` SfSchedule`.
 {% tabs %}
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ScheduleType = ScheduleType.Day;
             schedule.MajorTickLabelStroke = new SolidColorBrush(Colors.Blue);
             schedule.MinorTickLabelStroke = new SolidColorBrush(Colors.Blue);
@@ -222,11 +281,17 @@ You can customize the color for the labels which are mentioning the time, by set
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
     <Schedule:SfSchedule
             x:Name="schedule"
             MajorTickLabelStroke="Blue"
             MinorTickLabelStroke="Blue"
             ScheduleType="Day" />
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![TimeLabel Appearance in UWP Schedule](daymodule_images/timelabelappearance_day.png)
@@ -242,6 +307,8 @@ You can customize the timeslot selection by using [ScheduleSelectionStyle](https
 {% tabs %}
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ScheduleType = ScheduleType.Day;
             ScheduleSelectionStyle selectionStyle = new ScheduleSelectionStyle();
             selectionStyle.Background = new SolidColorBrush(Colors.Blue);
@@ -252,6 +319,10 @@ You can customize the timeslot selection by using [ScheduleSelectionStyle](https
 {% endhighlight %}
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
     <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day">
             <Schedule:SfSchedule.ScheduleSelectionStyle>
                 <Schedule:ScheduleSelectionStyle
@@ -261,6 +332,8 @@ You can customize the timeslot selection by using [ScheduleSelectionStyle](https
                     BorderThickness="5" />
             </Schedule:SfSchedule.ScheduleSelectionStyle>
         </Schedule:SfSchedule>
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Selection Customization using Style in UWP Schedule](daymodule_images/selectionstyle_day.png)
@@ -269,6 +342,8 @@ You can customize the timeslot selection by using [ScheduleSelectionStyle](https
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_SelectionViewProperty) property of `SfSchedule`.
 {% tabs %}
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.ScheduleType = ScheduleType.Day;
             Button selectionView = new Button();
@@ -279,11 +354,17 @@ You can replace the default selection UI with your custom view by setting [Selec
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:Schedule="using:Syncfusion.UI.Xaml.Schedule">
+
     <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day">
             <Schedule:SfSchedule.SelectionView>
                 <Button Background="BlueViolet" Content="+NewEvent" />
             </Schedule:SfSchedule.SelectionView>
     </Schedule:SfSchedule>
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Selection customization using custom View in UWP Schedule](daymodule_images/custoselectionview_day.png)
@@ -304,6 +385,8 @@ Resource can be added to the schedule control by setting the [Resource](https://
 {% tabs %}
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
      //setting resource for schedule
             schedule.Resource = "Doctor";
             //Creating Appointment style 
@@ -315,6 +398,10 @@ Resource can be added to the schedule control by setting the [Resource](https://
             schedule.ScheduleResourceTypeCollection = new ObservableCollection<ResourceType> { resourceType };
 {% endhighlight %}
 {% highlight XAML %}
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
 
     <syncfusion:SfSchedule Name="schedule" Resource="Doctors">
             <syncfusion:SfSchedule.ScheduleResourceTypeCollection>
@@ -329,6 +416,8 @@ Resource can be added to the schedule control by setting the [Resource](https://
             </syncfusion:SfSchedule.ScheduleResourceTypeCollection>
         </syncfusion:SfSchedule>
 
+</Page>
+
 {% endhighlight %}
 {% endtabs %}
 ![Adding Resources in Scheduler UWP Schedule](daymodule_images/addresource_day.png)
@@ -338,6 +427,8 @@ Resource can be added to the schedule control by setting the [Resource](https://
 SubResourceType enables users to view appointments based on their subcategory only in `day`, `week` views and can group appointments under various subcategories.
 {% tabs %}
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
             SfSchedule schedule = new SfSchedule();
             schedule.ScheduleType = ScheduleType.Day;
@@ -378,6 +469,10 @@ SubResourceType enables users to view appointments based on their subcategory on
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
     <syncfusion:SfSchedule
             x:Name="schedule"
             Resource="Hospital"
@@ -399,6 +494,8 @@ SubResourceType enables users to view appointments based on their subcategory on
                 </syncfusion:ResourceType>
             </syncfusion:SfSchedule.ScheduleResourceTypeCollection>
         </syncfusion:SfSchedule>
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![SubResources Type in UWP Schedule](daymodule_images/subresource_day.png)
@@ -409,14 +506,22 @@ DayHeaderOrder property is used to set the order by which resources must be disp
 {% tabs %}
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ScheduleType = ScheduleType.Day;
             schedule.DayHeaderOrder = DayHeaderOrder.OrderByDate;
 {% endhighlight %}
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
     <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Day"
                        Resource="Hospital" DayHeaderOrder="OrderByDate"/>
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Changing the Resource order in UWP Schedule](daymodule_images/orderbydate_day.png)
@@ -426,14 +531,22 @@ DayHeaderOrder property is used to set the order by which resources must be disp
 {% tabs %}
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ScheduleType = ScheduleType.Day;
             schedule.DayHeaderOrder = DayHeaderOrder.OrderByResource;
 {% endhighlight %}
 
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
     <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Day"
                        Resource="Hospital" DayHeaderOrder="OrderByResource"/>
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Order by resource in UWP Schedule](daymodule_images/orderbyresource_day.png)
@@ -448,13 +561,21 @@ This support is available for Day view alone.
 {% tabs %}
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
             schedule.ScheduleType = ScheduleType.Day;
             schedule.DayViewColumnCount = 5;
 {% endhighlight %}
 {% highlight XAML %}
 
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
     <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Day"
         Resource="Hospital" DayHeaderOrder="OrderByDate" DayViewColumnCount="5"/>
+
+</Page>
 {% endhighlight %}
 {% endtabs %}
 ![Resource Visibility Customization in UWP Schedule](daymodule_images/column_day.png)

@@ -18,6 +18,10 @@ You can customize the default appearance of schedule timeline view header using 
 {% tabs %}  
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule x:Name="schedule" ScheduleType="TimeLine">
             <schedule:SfSchedule.TimeLineViewHeaderStyle>
                 <schedule:ScheduleTimeLineViewHeaderStyle
@@ -35,9 +39,13 @@ You can customize the default appearance of schedule timeline view header using 
             </schedule:SfSchedule.TimeLineViewHeaderStyle>
         </schedule:SfSchedule>
 
+</Page>
+
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
               schedule.ScheduleType = ScheduleType.TimeLine;
             schedule.TimeLineViewHeaderStyle = new ScheduleTimeLineViewHeaderStyle()
@@ -66,13 +74,21 @@ You can customize the time intervals of timeslots in timeline by using [TimeInte
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
          <schedule:SfSchedule
             x:Name="schedule"
             TimeInterval="FifteenMin"
             ScheduleType="TimeLine" />
 
+</Page>
+
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.ScheduleType = ScheduleType.TimeLine;
             schedule.TimeInterval= TimeInterval.FifteenMin;
@@ -86,15 +102,23 @@ You can also set a custom time interval for timeslots by using the [CustomTimeIn
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule
             x:Name="schedule"
             TimeInterval="Custom"
             CustomTimeInterval="120"
             ScheduleType="TimeLine" />
 
+</Page>
+
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.TimeInterval= TimeInterval.Custom;
             schedule.CustomTimeInterval = 120;
@@ -112,6 +136,10 @@ Non-working hours can be disabled by setting [ShowNonWorkingHours](https://help.
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule
             x:Name="schedule"
             IsHighLightWorkingHours="True"
@@ -121,10 +149,13 @@ Non-working hours can be disabled by setting [ShowNonWorkingHours](https://help.
             WorkEndHour="20"
             WorkStartHour="8" />
 
+</Page>
 
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.WorkStartHour = 8;
             schedule.WorkEndHour = 20;
@@ -143,6 +174,9 @@ You can collapse the hours in `TimeLineView` and `DayView` by adding hours in th
 
 {% tabs %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
+
 schedule.CollapsedHours.Add(new ScheduleCollapsedHour() 
     { 
         StartHour = 02, 
@@ -159,6 +193,10 @@ You can customize the default timeslot appearance in timeline view by changing i
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
          <schedule:SfSchedule
             x:Name="schedule"
             MajorTickStroke="Blue"
@@ -167,9 +205,13 @@ You can customize the default timeslot appearance in timeline view by changing i
             MinorTickStrokeDashArray="10"
             ScheduleType="TimeLine" />
 
+</Page>
+
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.MajorTickStroke = new SolidColorBrush(Colors.Blue);
             schedule.MinorTickStroke = new SolidColorBrush(Colors.Blue);
@@ -186,6 +228,10 @@ You can restrict/allocate certain timeslots as Non-accessible blocks using the [
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule ScheduleType="TimeLine">
             <schedule:SfSchedule.NonAccessibleBlocks>
                 <schedule:NonAccessibleBlock
@@ -196,10 +242,13 @@ You can restrict/allocate certain timeslots as Non-accessible blocks using the [
             </schedule:SfSchedule.NonAccessibleBlocks>
         </schedule:SfSchedule>
 
+</Page>
 
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.ScheduleType = ScheduleType.TimeLine;
             schedule.NonAccessibleBlocks.Add(new NonAccessibleBlock()
@@ -221,14 +270,22 @@ You can customize the default label format of time in timeline view by using [Ma
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
        <schedule:SfSchedule
             x:Name="schedule"
             MajorTickTimeFormat="HH"
             MinorTickTimeFormat="HH mm"
             ScheduleType="TimeLine" />
 
+</Page>
+
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.ScheduleType = ScheduleType.TimeLine;
             schedule.MajorTickTimeFormat = "HH";
@@ -245,15 +302,23 @@ You can customize the default color of the time label in timeline view by using 
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule
             x:Name="schedule"
             MajorTickLabelStroke="Blue"
             MinorTickLabelStroke="Blue"
             ScheduleType="TimeLine" />
 
+</Page>
+
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.MajorTickLabelStroke=new SolidColorBrush(Colors.Blue);
             schedule.MinorTickLabelStroke = new SolidColorBrush(Colors.Blue);
@@ -265,14 +330,22 @@ You can customize the default font size of the time label in timeline view by us
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule
             x:Name="schedule"
             MajorTickLabelSize="20"
             MinorTickLabelSize="20"
             ScheduleType="TimeLine" />
 
+</Page>
+
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.MajorTickLabelSize=20;
             schedule.MinorTickLabelSize =20;
@@ -294,6 +367,10 @@ You can customize the timeslot selection by using the [ScheduleSelectionStyle](h
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule ScheduleType="TimeLine">
             <schedule:SfSchedule.ScheduleSelectionStyle>
                 <schedule:ScheduleSelectionStyle
@@ -304,9 +381,13 @@ You can customize the timeslot selection by using the [ScheduleSelectionStyle](h
             </schedule:SfSchedule.ScheduleSelectionStyle>
         </schedule:SfSchedule>
 
+</Page>
+
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
         schedule.ScheduleSelectionStyle= new ScheduleSelectionStyle()
             {
@@ -327,14 +408,22 @@ You can replace the default selection UI with your custom view by setting [Selec
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
          <schedule:SfSchedule x:Name="schedule" ScheduleType="TimeLine">
             <schedule:SfSchedule.SelectionView>
                 <Button Background="BlueViolet" Content="+NewEvent" />
             </schedule:SfSchedule.SelectionView>
         </schedule:SfSchedule>
 
+</Page>
+
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
        schedule.SelectionView=new Button()
             {
@@ -359,6 +448,10 @@ Resource can be added to the schedule control by setting the Resource and Schedu
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule
             x:Name="schedule"
             Resource="Doctors"
@@ -377,9 +470,13 @@ Resource can be added to the schedule control by setting the Resource and Schedu
             </schedule:SfSchedule.ScheduleResourceTypeCollection>
         </schedule:SfSchedule>
 
+</Page>
+
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
            var currentDate=DateTime.Now;
             ScheduleAppointment app = new ScheduleAppointment()
@@ -427,6 +524,10 @@ This support can be enabled by using the property [TimeLineViewRowCount](https:/
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
          <schedule:SfSchedule
             x:Name="schedule" TimeLineViewRowCount="1"
             Resource="Doctors"
@@ -445,9 +546,13 @@ This support can be enabled by using the property [TimeLineViewRowCount](https:/
             </schedule:SfSchedule.ScheduleResourceTypeCollection>
         </schedule:SfSchedule>
 
+</Page>
+
 
 {% endhighlight %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.TimeLineViewRowCount = 1;
             var currentDate=DateTime.Now;

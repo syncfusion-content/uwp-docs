@@ -15,9 +15,17 @@ By default, Schedule views can be moved backwards and forwards using touch swipe
 {% tabs %}   
 {% highlight xaml %} 
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule EnableNavigation="False"/>
+
+</Page>
 {% endhighlight %}   
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
          //disabling the navigation gesture
            schedule.EnableNavigation = false;
@@ -33,6 +41,8 @@ Visible dates can be moved to a specific date using the [MoveToDate](https://hel
  
 {% highlight c# %} 
 
+using Syncfusion.UI.Xaml.Schedule;
+
     schedule.MoveToDate(new DateTime(2018, 1, 1));
 
 {% endhighlight %}   
@@ -45,6 +55,8 @@ You can move the `SfSchedule` to a particular time by passing the TimeSpan value
 
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
     schedule.MoveToTime(new TimeSpan(8, 0, 0));
 
@@ -62,6 +74,8 @@ You can use the `Forward` method for viewing the next immediate visible dates in
 
 {% highlight c# %} 
 
+using Syncfusion.UI.Xaml.Schedule;
+
           //Viewing next immediate visible dates
             schedule.Forward();
 
@@ -74,6 +88,8 @@ You can use the `Forward` method for viewing the next immediate visible dates in
 You can use the `Backward` method for viewing the previous immediate visible dates in the `SfSchedule`. It will move to the previous month if the schedule view is month; similarly, it will move to the previous week for week view and the previous day for day view.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
            //Viewing previous immediate visible dates
             schedule.Backward();
@@ -89,6 +105,8 @@ Visible dates can be restricted between a certain range of dates using the [Mini
 Beyond the min and max date range, it will restrict the date navigation features of `Forward`, `Backward`, `MoveToDate`, and also you can't swipe the control using touch gestures beyond the min and max date range.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.MinimumDisplayDate = (new DateTime(2015, 9, 16));
             schedule.MaximumDisplayDate = (new DateTime(2025, 11, 27));

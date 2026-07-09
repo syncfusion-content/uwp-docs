@@ -13,13 +13,21 @@ documentation: ug
 {% tabs %}
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule 
 				x:Name="schedule" 
 				ScheduleType="Month">
 		</schedule:SfSchedule>
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			//setting schedule type
 			schedule.ScheduleType = ScheduleType.Month;
@@ -35,14 +43,22 @@ MonthView of Schedule can be navigated in both horizontal and vertical direction
 {% tabs %}
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule 
                 x:Name="schedule"
                 MonthNavigationDirection="Vertical"
 			    ScheduleType="Month">
         </schedule:SfSchedule> 
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			//To navigate vertically
 			schedule.MonthNavigationDirection = MonthNavigationDirections.Vertical;
@@ -55,6 +71,8 @@ You can disable the interaction for certain dates in Month view by using [MonthB
 
 {% tabs %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			schedule.MonthBlockOutDates.Add(DateTime.Now.Date.AddDays(1));
             schedule.MonthBlockOutDates.Add(DateTime.Now.Date.AddDays(2));
@@ -71,14 +89,22 @@ You can change the first day of week by using the [FirstDayOfWeek](https://help.
 {% tabs %}
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule 
                 x:Name="schedule"
                 FirstDayOfWeek="Monday"
 			    ScheduleType="Month">
         </schedule:SfSchedule>
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			//setting FirstDayOfWeek
 			schedule.FirstDayOfWeek = DayOfWeek.Monday;
@@ -94,14 +120,22 @@ You can display the Week Number of the year in `MonthView` by setting the [ShowW
 {% tabs %}
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule 
                 x:Name="schedule"
                 ShowWeekNumber="True"
 			    ScheduleType="Month">
         </schedule:SfSchedule>  
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			schedule.ShowWeekNumber = true;
 
@@ -115,6 +149,10 @@ You can customize the Week Number appearance by using the [WeekNumberStyle](http
 
 {% tabs %}
 {% highlight xaml %}
+
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
 
         <schedule:SfSchedule  
                 x:Name="schedule"
@@ -131,8 +169,12 @@ You can customize the Week Number appearance by using the [WeekNumberStyle](http
             </schedule:SfSchedule.WeekNumberStyle>
         </schedule:SfSchedule>  
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 		    //creating new instance for WeekNumberStyle
             WeekNumberStyle weekNumberStyle = new WeekNumberStyle();
@@ -154,6 +196,10 @@ You can customize the Month View Header appearance by using the [MonthViewHeader
 {% tabs %}
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
          <schedule:SfSchedule  
                 x:Name="schedule"
                 ScheduleType="Month">
@@ -171,8 +217,12 @@ You can customize the Month View Header appearance by using the [MonthViewHeader
             </schedule:SfSchedule.MonthViewHeaderStyle>
         </schedule:SfSchedule>
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			//creating new instance for ScheduleMonthViewHeaderStyle
             ScheduleMonthViewHeaderStyle scheduleMonthViewHeaderStyle = new ScheduleMonthViewHeaderStyle();       
@@ -204,6 +254,10 @@ By using [MonthCellStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.
 {% tabs %}
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule  
                 x:Name="schedule"               
 			    ScheduleType="Month">
@@ -227,8 +281,12 @@ By using [MonthCellStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.
             </schedule:SfSchedule.ScheduleMonthCellStyle>
         </schedule:SfSchedule> 
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			//creating new instance for MonthCellStyle
             MonthCellStyle monthCellStyle = new MonthCellStyle();
@@ -258,6 +316,8 @@ By using the [MonthCellLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.
 
 {% tabs %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
 			...
@@ -299,6 +359,8 @@ You can set the Custom UI for the month cell using [View](https://help.syncfusio
 {% tabs %}
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
 			schedule.MonthCellLoaded += Schedule_MonthCellLoaded;
 			...
 			private void Schedule_MonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
@@ -327,6 +389,8 @@ By using the [InlineLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xam
 
 {% tabs %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			schedule.InlineLoaded += Schedule_InlineLoaded;
 			...
@@ -357,6 +421,10 @@ Resource can be added to the schedule control by setting `Resource` and [Schedul
 {% tabs %}
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
         <schedule:SfSchedule Name="schedule" 
                              ScheduleType="Month" 
                              Resource="Doctors">
@@ -372,8 +440,12 @@ Resource can be added to the schedule control by setting `Resource` and [Schedul
             </schedule:SfSchedule.ScheduleResourceTypeCollection>
         </schedule:SfSchedule>
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 			//setting resource for schedule
             schedule.Resource = "Doctor";        

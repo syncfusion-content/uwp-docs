@@ -17,15 +17,23 @@ You can customize the height for the Header in the Schedule using `HeaderHeight`
 
 {% tabs %} 
 {% highlight xaml %}
-        
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
     <syncfusion:SfSchedule x:Name="schedule">
         <syncfusion:SfSchedule.ScheduleHeaderStyle>
             <syncfusion:ScheduleHeaderStyle HeaderHeight="50" />
         </syncfusion:SfSchedule.ScheduleHeaderStyle>
     </syncfusion:SfSchedule>
-    
-{% endhighlight %} 
+
+</Page>
+
+{% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 	ScheduleHeaderStyle headerStyle = new ScheduleHeaderStyle();
     headerStyle.HeaderHeight = 50;
@@ -43,6 +51,10 @@ You can change the background color, text style, and text size using properties 
 {% tabs %} 
 {% highlight xaml %}
 
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
     <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Day">
         <syncfusion:SfSchedule.ScheduleHeaderStyle>
             <syncfusion:ScheduleHeaderStyle
@@ -53,8 +65,12 @@ You can change the background color, text style, and text size using properties 
         </syncfusion:SfSchedule.ScheduleHeaderStyle>
     </syncfusion:SfSchedule>
 
+</Page>
+
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 	ScheduleHeaderStyle headerStyle = new ScheduleHeaderStyle();
     headerStyle.HeaderBackground = new SolidColorBrush(Colors.LightPink);
@@ -73,7 +89,9 @@ You can change the background color, text style, and text size using properties 
 You can collapse the default header of the schedule by setting the `HeaderHeight` property of `ScheduleHeaderStyle` of `SfSchedule` to 0. Instead, you can use your own custom header for it. While navigating views in the schedule, text labels available in the header will be changed based on the visible dates, so while using a custom header, the respective text value can be obtained from the `VisibleDatesChanging` event of `SfSchedule`.
 
 {% highlight c# %}
-    
+
+using Syncfusion.UI.Xaml.Schedule;
+
     //triggering the visible dates changing event.
     schedule.VisibleDatesChanging += Schedule_VisibleDatesChanging;
 
