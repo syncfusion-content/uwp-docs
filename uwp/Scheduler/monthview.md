@@ -1,14 +1,14 @@
 ---   
 layout: post   
 title: Month View in UWP Scheduler control | Syncfusion
-description: Learn here all about Month View support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn here all about Month View support in the Syncfusion UWP Scheduler (SfSchedule) control, its features, and more.
 platform: uwp   
 control: SfSchedule   
 documentation: ug   
 ---   
     
 # Month View in UWP Scheduler (SfSchedule)
-`MonthView` of `SfSchedule` used to display entire dates of the specific month, current month will be displayed by default initially. Current date color is differentiated with other dates of the current month, also the color differentiation for dates will be applicable for previous and next month dates. Single notation will be displayed in the cell to indicate the appointment availability in the specific cell.
+`MonthView` of `SfSchedule` is used to display entire dates of the specific month; the current month will be displayed by default initially. The current date color is differentiated from other dates of the current month, and the color differentiation for dates will also be applicable for previous and next month dates. A single notation will be displayed in the cell to indicate the appointment availability in the specific cell.
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,7 +30,7 @@ documentation: ug
 ![Month View in UWP Schedule](monthview_images/monthview.png)
 
 ## Month Navigation direction
-MonthView of Schedule can be navigated to both horizontal and vertical direction. You can change the direction of navigation by using the [MonthNavigationDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthNavigationDirection) property of `SfSchedule`, by default Month navigation direction is `Horizontal`.
+MonthView of Schedule can be navigated in both horizontal and vertical directions. You can change the direction of navigation by using the [MonthNavigationDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthNavigationDirection) property of `SfSchedule`; by default, the Month navigation direction is `Horizontal`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,7 +51,7 @@ MonthView of Schedule can be navigated to both horizontal and vertical direction
 {% endtabs %}
 
 ## Restricted days in Month
-You can disable the interaction for certain date in Month view by using [MonthBlockOutDates](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthBlockOutDates) of `SfSchedule`, using this you can allocate / restrict the specific date for predefined events.
+You can disable the interaction for certain dates in Month view by using [MonthBlockOutDates](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthBlockOutDates) of `SfSchedule`; using this, you can allocate or restrict the specific dates for predefined events.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ You can disable the interaction for certain date in Month view by using [MonthBl
 ![Restricted days in month view UWP Schedule](monthview_images/blackoutdate.png)
 
 ## First day of Week in Month
-You can change the first day of week by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeek) property of `SfSchedule`, by default schedule control will rendered with `Sunday` as the first day of the week. 
+You can change the first day of week by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeek) property of `SfSchedule`; by default, the schedule control will be rendered with `Sunday` as the first day of the week. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -89,7 +89,7 @@ You can change the first day of week by using the [FirstDayOfWeek](https://help.
 ![FirstDayOfWeek in Month UWP Schedule](monthview_images/firstdayofweek.png)
 
 ## Week Number of the Year in Month
-You can display the Week Number of the year in `MonthView` by setting [ShowWeekNumber](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ShowWeekNumber) property of `SfSchedule` as `true`, by default it is `false`.
+You can display the Week Number of the year in `MonthView` by setting the [ShowWeekNumber](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ShowWeekNumber) property of `SfSchedule` to `true`; by default, it is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -111,7 +111,7 @@ You can display the Week Number of the year in `MonthView` by setting [ShowWeekN
 ![Week number of the year in UWP Schedule](monthview_images/showweeknumber.png)
 
 ## Week Number Appearance
-You can customize the Week Number appearance by using [WeekNumberStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WeekNumberStyle) property of `SfSchedule`. Week number [Background](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_Background), [Foreground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_Foreground), [FontFamily](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_FontFamily), [FontSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_FontSize) and  [FontWeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_FontWeight) can be customized using `WeekNumberStyle` properties.
+You can customize the Week Number appearance by using the [WeekNumberStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_WeekNumberStyle) property of `SfSchedule`. The Week number [Background](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_Background), [Foreground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_Foreground), [FontFamily](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_FontFamily), [FontSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_FontSize), and  [FontWeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.WeekNumberStyle.html#Syncfusion_UI_Xaml_Schedule_WeekNumberStyle_FontWeight) can be customized using `WeekNumberStyle` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -149,7 +149,7 @@ You can customize the Week Number appearance by using [WeekNumberStyle](https://
 ![Week number appearance in UWP Schedule](monthview_images/weeknumberstyle.png)
 
 ## View Header Appearance  
-You can customize the Month View Header appearance by using [MonthViewHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthViewHeaderStyle) property of SfSchedule. Month View Header  [MonthViewHeaderBackground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderBackground), [MonthViewHeaderTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextColor), [MonthViewHeaderTextSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextSize), [MonthViewHeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderHeight), [MonthViewHeaderTextStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextStyle), [MonthViewHeaderTextHorizontalAlignment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html), [MonthViewHeaderTextMargin](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextMargin) and [MonthViewHeaderTextVerticalAlignment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextVerticalAlignment) can be customized using `ScheduleMonthViewHeaderStyle` properties.
+You can customize the Month View Header appearance by using the [MonthViewHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MonthViewHeaderStyle) property of SfSchedule. The Month View Header  [MonthViewHeaderBackground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderBackground), [MonthViewHeaderTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextColor), [MonthViewHeaderTextSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextSize), [MonthViewHeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderHeight), [MonthViewHeaderTextStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextStyle), [MonthViewHeaderTextHorizontalAlignment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html), [MonthViewHeaderTextMargin](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextMargin), and [MonthViewHeaderTextVerticalAlignment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleMonthViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleMonthViewHeaderStyle_MonthViewHeaderTextVerticalAlignment) can be customized using `ScheduleMonthViewHeaderStyle` properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -162,7 +162,7 @@ You can customize the Month View Header appearance by using [MonthViewHeaderStyl
                     MonthViewHeaderBackground="Blue" 
                     MonthViewHeaderTextColor ="White" 
                     MonthViewHeaderTextSize="15"
-                    MonthViewHeaderHeight="15"
+                    MonthViewHeaderHeight="25"
                     MonthViewHeaderTextStyle="Bold"
                     MonthViewHeaderTextHorizontalAlignment ="Center"
                     MonthViewHeaderTextVerticalAlignment ="Center"
@@ -254,7 +254,7 @@ By using [MonthCellStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.
 ![Customize the month cell using style in UWP Schedule](monthview_images/monthcellstyle.png)
     
 ### Customize month cell using event
-By using [MonthCellLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event of `SfSchedule`, you can customize the month cell properties in the run time. In `MonthCellLoaded`, arguments such as [MonthCellStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_MonthCellStyle), [MonthCellDate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_MonthCellDate), [View](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_View) and boolean properties such as [IsToday](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_IsToday), [IsNextMonth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_IsNextMonth), [IsPreviousMonth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_IsPreviousMonth) and [IsBlackOutDay](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_IsBlackOutDay) are in the [MonthCellLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html). 
+By using the [MonthCellLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event of `SfSchedule`, you can customize the month cell properties at run time. In `MonthCellLoaded`, arguments such as [MonthCellStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_MonthCellStyle), [MonthCellDate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_MonthCellDate), [View](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_View), and boolean properties such as [IsToday](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_IsToday), [IsNextMonth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_IsNextMonth), [IsPreviousMonth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_IsPreviousMonth), and [IsBlackOutDay](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_MonthCellLoadedEventArgs_IsBlackOutDay) are in the [MonthCellLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.MonthCellLoadedEventArgs.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -318,12 +318,12 @@ You can set the Custom UI for the month cell using [View](https://help.syncfusio
 {% endtabs %}
 
 ## Month InlineView
-Month Inline view is not applicable for desktop, applicable only for mobile by default.
+Month Inline view is not applicable for desktop; it is applicable only for mobile by default.
 
->**Notes**: If appointments not there in the selected day, Inline view displays the text as "No Events".      
+>**Notes**: If there are no appointments in the selected day, the Inline view displays the text as "No Events".      
 
 ## InlineView Appearance  
-By using [InlineLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event of `SfSchedule`, you can customize the month inline view properties in the run time. In `InlineLoaded`, arguments such as [ScheduleExpandedAppointments](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.InLineLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_InLineLoadedEventArgs_ScheduleExpandedAppointments), [ScheduleExpandedAppointmentStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.InLineLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_InLineLoadedEventArgs_ScheduleExpandedAppointmentStyle), [Calendar](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.InLineLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_InLineLoadedEventArgs_Calendar) are in the [InLineLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.InLineLoadedEventArgs.html).
+By using the [InlineLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html) event of `SfSchedule`, you can customize the month inline view properties at run time. In `InlineLoaded`, arguments such as [ScheduleExpandedAppointments](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.InLineLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_InLineLoadedEventArgs_ScheduleExpandedAppointments), [ScheduleExpandedAppointmentStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.InLineLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_InLineLoadedEventArgs_ScheduleExpandedAppointmentStyle), [Calendar](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.InLineLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_InLineLoadedEventArgs_Calendar) are in the [InLineLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.InLineLoadedEventArgs.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -334,7 +334,7 @@ By using [InlineLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Sc
         {
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentBackground = new SolidColorBrush(Colors.Blue);
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentFontFamily = new FontFamily("Times New Roman");
-            e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentFontStyle = FontStyle.Italic;
+            e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentFontStyle = Windows.UI.Text.FontStyle.Italic;
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentFontWeight = FontWeights.SemiBold;
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentTextColor = new SolidColorBrush(Colors.White);
             e.ScheduleExpandedAppointmentStyle.ExpandedAppointmentTextHorizontalAlignment = HorizontalAlignment.Center;
@@ -349,10 +349,10 @@ By using [InlineLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Sc
 {% endtabs %}
 
 ## Configuration Resources
-The Schedule control allows you to define [Resource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
+The Schedule control allows you to define [Resources](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
 
 ### Adding resources
-Resource can be added to the schedule control by setting `Resource` and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollection) of `SfSchedule`. After that add the [ResourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) for `ScheduleResourceTypeCollection` and assign `Resource` to `ResourceType`.
+Resource can be added to the schedule control by setting `Resource` and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollection) of `SfSchedule`. After that, add the [ResourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Resource) for `ScheduleResourceTypeCollection` and assign `Resource` to `ResourceType`.
 
 {% tabs %}
 {% highlight xaml %}

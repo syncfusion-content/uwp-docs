@@ -2,8 +2,8 @@
 
 layout: post
 title: Day View in UWP Scheduler control | Syncfusion
-description: Learn here all about Day View support in Syncfusion UWP Scheduler (SfSchedule) control and more.
-platform: UWP
+description: Learn here all about Day View support in the Syncfusion UWP Scheduler (SfSchedule) control, its features, and more.
+platform: uwp
 control: SfSchedule
 documentation: ug
 
@@ -12,13 +12,13 @@ documentation: ug
 
 # Day View in UWP Scheduler (SfSchedule)
 
-DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
+DayView is used to display a single day; the current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on their duration.
 
 ## ViewHeader Appearance
 You can customize the default appearance of view header in [DayView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleType) by using [DayViewHeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewHeaderStyle) and [DayViewHeaderHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleDayViewHeaderStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleDayViewHeaderStyle_DayViewHeaderHeight) properties of [SfSchedule](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html).
 
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
 
     <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day">
             <Schedule:SfSchedule.DayViewHeaderStyle>
@@ -32,7 +32,7 @@ You can customize the default appearance of view header in [DayView](https://hel
         </Schedule:SfSchedule>
 {% endhighlight %}
 
-{% highlight XAML %}
+{% highlight c# %}
 
     SfSchedule schedule = new SfSchedule();
             schedule.ScheduleType = ScheduleType.Day;
@@ -56,13 +56,13 @@ You can customize the interval of timeslots in `DayView`.
 ### TimeInterval customization
 You can customize the interval of timeslots in `DayView` by setting [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeIntervalProperty) property of `SfSchedule`.
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
             schedule.ScheduleType = ScheduleType.Day;
             schedule.TimeInterval = TimeInterval.ThirtyMin;
 {% endhighlight %}
 
-{% highlight XAML %}
+{% highlight xaml %}
 
      <Schedule:SfSchedule x:Name="schedule" TimeInterval="ThirtyMin" />
 {% endhighlight %}
@@ -183,11 +183,11 @@ You can restrict or allocate certain timeslot as non-accessible blocks by using 
 ![Non-Accessible Timeslots in UWP Schedule](daymodule_images/nonaccessibleblock_day.png)
 
 >**Note**:
-Selection and related events will not be working in this blocks.
+Selection and related events will not work in these blocks.
 
 ## Change first day of week:
 
-Scheduler supports to change the first day of week by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeekProperty) property and it is not applicable for `DayView` as it displays only one day.
+The Scheduler supports changing the first day of the week by using the [FirstDayOfWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_FirstDayOfWeekProperty) property, and it is not applicable for `DayView` as it displays only one day.
 
 ## Time Label Formatting
 You can customize the format for the labels which are mentioning the time, by setting [MajorTickTimeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MajorTickTimeFormatProperty) and [MinorTickTimeFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_MinorTickTimeFormatProperty) properties of ` SfSchedule`.
@@ -300,7 +300,7 @@ The Schedule control allows you to define resources that can be assigned to appo
 * [Customizing resource visibility](#customizing-resource-visibility)
 
 ### Adding resource
-Resource can be added to the schedule control by setting [Resource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ResourceProperty) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollectionProperty) of `SfSchedule`. After that add the [ResourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ResourceType.html) for `ScheduleResourceTypeCollection` and assign `Resource` to `ResourceType`.
+Resource can be added to the schedule control by setting the [Resource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ResourceProperty) and [ScheduleResourceTypeCollection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleResourceTypeCollectionProperty) of `SfSchedule`. After that, add the [ResourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ResourceType.html) for `ScheduleResourceTypeCollection` and assign `Resource` to `ResourceType`.
 {% tabs %}
 {% highlight C# %}
 
@@ -441,7 +441,7 @@ DayHeaderOrder property is used to set the order by which resources must be disp
 ### Customizing resource visibility
 
 #### Column count
-This feature supports to specifying the count of resources that needs to be displayed per view. This support can be enabled by using property [DayViewColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewColumnCountProperty) in `SfSchedule`. By default, its value is “zero”.
+This feature supports specifying the count of resources that need to be displayed per view. This support can be enabled by using the property [DayViewColumnCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_DayViewColumnCountProperty) in `SfSchedule`. By default, its value is "zero".
 
 >**Note**
 This support is available for Day view alone.
