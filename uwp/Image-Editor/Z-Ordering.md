@@ -7,28 +7,34 @@ control: ImageEditor
 documentation: ug
 ---
 
+The following namespace is required for performing Z-ordering in the SfImageEditor control:
+
+* `Syncfusion.UI.Xaml.ImageEditor`
+
 # Z-Ordering in UWP Image Editor (SfImageEditor)
 
-The image editor control allows to change the position of shapes/edits that are arranged over the editor. This can be achieved using the following methods:
+The image editor control allows you to change the position of shapes or edits that are arranged over the image. This can be achieved using the following methods:
 
-1. BringToFront
-2. SendToBack
-3. BringForward
-4. SendBackward
+1. `BringToFront`
+2. `SendToBack`
+3. `BringForward`
+4. `SendBackward`
 
 ## BringToFront
 
-The [`BringToFront`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_BringToFront) method is used to bring the selected shapes or text to the front in a group of elements over an image.
+The [`BringToFront`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_BringToFront) method is used to bring the selected shapes or text to the front of a group of elements over an image.
 
 {% tabs %}
 
 {% highlight C# %}
 
-   editor.BringToFront();
+    imageEditor.BringToFront();
 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> In the above code snippet, `imageEditor` is the `SfImageEditor` instance.
 
 ## SendToBack
 
@@ -38,7 +44,7 @@ The [`SendToBack`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEd
 
 {% highlight C# %}
 
-   editor.SendToBack();
+    imageEditor.SendToBack();
 
 {% endhighlight %}
 
@@ -46,13 +52,13 @@ The [`SendToBack`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEd
 
 ## BringForward
 
-The [`BringForward`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_BringForward) method is used to bring the selected shapes/text to one step front of a group of elements over an image.
+The [`BringForward`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_BringForward) method is used to bring the selected shapes or text one step forward within a group of elements over an image.
 
 {% tabs %}
 
 {% highlight C# %}
 
-   editor.BringForward();
+    imageEditor.BringForward();
 
 {% endhighlight %}
 
@@ -60,13 +66,13 @@ The [`BringForward`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Image
 
 ## SendBackward
 
-The [`SendBackward`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_SendBackward) method is used to send the selected shapes/text to one step backward of a group of elements over an image.
+The [`SendBackward`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_SendBackward) method is used to send the selected shapes or text one step backward within a group of elements over an image.
 
 {% tabs %}
 
 {% highlight C# %}
 
-   editor.SendBackward();
+    imageEditor.SendBackward();
 
 {% endhighlight %}
 
