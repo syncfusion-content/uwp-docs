@@ -2,7 +2,7 @@
 layout: post
 title: Chart Types in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Chart Types support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
@@ -811,7 +811,7 @@ PivotChart1.ChartType = PivotChartType.FastStepLineBitmap
 
 ![fastStepLineBitmap](Chart-Types_images/fastStepLineBitmap.png)
 
-As fast step line bitmap chart is rendered using bitmap, some jagged lines can be occurred at the edges and it can be reduced by enabling the  `EnableAntiAliasing` property as follows.
+As fast step line bitmap chart is rendered using bitmap, some jagged lines can be occurred at the edges and it can be reduced by enabling the `EnableAntiAliasing` property as follows.
 
 {% tabs %}
 

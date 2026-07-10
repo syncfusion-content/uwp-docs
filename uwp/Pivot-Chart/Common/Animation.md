@@ -33,7 +33,7 @@ You can use the following snippet to enable animation in the SfPivotChart.
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart x:Name="PivotChart1" EnableAnimation="True" AnimationDuration="0:0:3"
-                         ItemSource="{Binding ProductSalesData}" PivotAxis="{Binding PivotAxis}" PivotLegend="{Binding PivotLegend}" PivotCalculations="{Binding PivotCalculations}"/>
+                         ItemsSource="{Binding ProductSalesData}" PivotAxis="{Binding PivotAxis}" PivotLegend="{Binding PivotLegend}" PivotCalculations="{Binding PivotCalculations}"/>
 
 {% endhighlight %}
 

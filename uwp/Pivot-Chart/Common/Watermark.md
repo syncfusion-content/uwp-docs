@@ -2,7 +2,7 @@
 layout: post
 title: Watermark in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Watermark support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---

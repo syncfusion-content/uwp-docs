@@ -101,10 +101,10 @@ The marker's size can be customized using the `SymbolHeight` and `SymbolWidth` p
 PivotChartAdornmentsInfo adornmentsInfo = new PivotChartAdornmentsInfo();
 adornmentsInfo.ShowMarker = true;
 adornmentsInfo.Symbol = ChartSymbol.Ellipse;
-adornmentsInfo.Stroke = new SolidColorBrush(Colors.Red);
-adornmentsInfo.Stroke = new SolidColorBrush(Colors.White);
+adornmentsInfo.SymbolStroke = new SolidColorBrush(Colors.Red);
+adornmentsInfo.SymbolInterior = new SolidColorBrush(Colors.White);
 adornmentsInfo.SymbolHeight = 15;
-adornmentsInfo.SymbolWeight = 15;
+adornmentsInfo.SymbolWidth = 15;
 PivotChart1.AdornmentsInfo = adornmentsInfo;
 
 {% endhighlight %}
@@ -114,10 +114,10 @@ PivotChart1.AdornmentsInfo = adornmentsInfo;
 Dim adornmentsInfo As New PivotChartAdornmentsInfo()
 adornmentsInfo.ShowMarker = True
 adornmentsInfo.Symbol = ChartSymbol.Ellipse
-adornmentsInfo.Stroke = New SolidColorBrush(Colors.Red)
-adornmentsInfo.Stroke = New SolidColorBrush(Colors.White)
+adornmentsInfo.SymbolStroke = New SolidColorBrush(Colors.Red)
+adornmentsInfo.SymbolInterior = New SolidColorBrush(Colors.White)
 adornmentsInfo.SymbolHeight = 15
-adornmentsInfo.SymbolWeight = 15
+adornmentsInfo.SymbolWidth = 15
 PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endhighlight %}

@@ -2,16 +2,16 @@
 layout: post
 title: Zooming and Panning in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Zooming and Panning support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
 # Zooming and Panning in UWP Pivot Chart (SfPivotChart)
 
-The SfPivotChart allows you to zoom in, zoom out, and pan the chart area with the help of this support. Zooming is used to view the in-depth information of specific chart area, when there are number of data points inside the chart. Panning is used to navigate the chart area.
+The SfPivotChart allows you to zoom in, zoom out, and pan the chart area with the help of this support. Zooming is used to view the in-depth information of a specific chart area, when there are a large number of data points inside the chart. Panning is used to navigate the chart area.
 
-Zooming and panning allows you to take a close-up look of the data point plotted in the series.
+Zooming and panning allow you to take a close-up look at the data point plotted in the series.
 
 **Initialization**
 
@@ -54,7 +54,7 @@ Zooming can be performed through mouse wheel action by setting the `EnableMouseW
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnableMouseWheelZooming="True"/>
+   <syncfusion:PivotChartZoomPanBehavior EnableMouseWheelZooming="True" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -84,7 +84,7 @@ To enable the zooming relative to cursor position, you can set the `ZoomRelative
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnableMouseWheelZooming="True" ZoomRelativeToCursor="True"/>
+   <syncfusion:PivotChartZoomPanBehavior EnableMouseWheelZooming="True" ZoomRelativeToCursor="True" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -93,7 +93,7 @@ To enable the zooming relative to cursor position, you can set the `ZoomRelative
 
 PivotChart1.ZoomPanBehavior = new PivotChartZoomPanBehavior();
 PivotChart1.ZoomPanBehavior.EnableMouseWheelZooming = true;
-PivotChart1.ZoomPanBehavior..ZoomRelativeToCursor = true;
+PivotChart1.ZoomPanBehavior.ZoomRelativeToCursor = true;
 
 {% endhighlight %}
 
@@ -116,7 +116,7 @@ If you want to zoom the chart area using fingers by touch, then you have to set 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnablePinchZooming="True"/>
+   <syncfusion:PivotChartZoomPanBehavior EnablePinchZooming="True" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -146,7 +146,7 @@ Zooming can also be performed by selecting a particular region in rectangular fo
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnableSelectionZooming ="True"/>
+   <syncfusion:PivotChartZoomPanBehavior EnableSelectionZooming ="True" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -178,7 +178,7 @@ The rectangle that is displayed while selecting a region for zooming can be cust
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnableSelectionZooming="True" Fill="LightBlue" Stroke="Black" StrokeThickness="2"/>
+   <syncfusion:PivotChartZoomPanBehavior EnableSelectionZooming="True" Fill="LightBlue" Stroke="Black" StrokeThickness="2" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -187,9 +187,9 @@ The rectangle that is displayed while selecting a region for zooming can be cust
 
 PivotChart1.ZoomPanBehavior = new PivotChartZoomPanBehavior();
 PivotChart1.ZoomPanBehavior.EnableSelectionZooming = true;
-PivotChart1.ZoomPanBehavior.Fill  = new SolidColorBrush(Colors.LightBlue);
-PivotChart1.ZoomPanBehavior.Stroke  = new SolidColorBrush(Colors.Black);
-PivotChart1.ZoomPanBehavior.StrokeThickness  = true;
+PivotChart1.ZoomPanBehavior.Fill = new SolidColorBrush(Colors.LightBlue);
+PivotChart1.ZoomPanBehavior.Stroke = new SolidColorBrush(Colors.Black);
+PivotChart1.ZoomPanBehavior.StrokeThickness = 2;
 
 {% endhighlight %}
 
@@ -199,7 +199,7 @@ PivotChart1.ZoomPanBehavior = New PivotChartZoomPanBehavior()
 PivotChart1.ZoomPanBehavior.EnableSelectionZooming = True
 PivotChart1.ZoomPanBehavior.Fill = New SolidColorBrush(Colors.LightBlue)
 PivotChart1.ZoomPanBehavior.Stroke = New SolidColorBrush(Colors.Black)
-PivotChart1.ZoomPanBehavior.StrokeThickness = True
+PivotChart1.ZoomPanBehavior.StrokeThickness = 2
 
 {% endhighlight %}
 
@@ -218,7 +218,7 @@ Zooming can be done horizontally and vertically based on the axis that is define
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="X"/>
+   <syncfusion:PivotChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="X" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -250,7 +250,7 @@ PivotChart1.ZoomPanBehavior.ZoomMode = ZoomMode.X
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="Y"/>
+   <syncfusion:PivotChartZoomPanBehavior EnableSelectionZooming="True" ZoomMode="Y" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -284,7 +284,7 @@ You can also limit the zooming by setting the `MaximumZoomLevel` property as ill
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior MaximumZoomLevel="5"/>
+   <syncfusion:PivotChartZoomPanBehavior MaximumZoomLevel="5" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -314,7 +314,7 @@ The zooming toolbar is encompassed with buttons for performing actions such as z
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-    <syncfusion:PivotChartZoomPanBehavior EnableZoomingToolBar="True" EnableSelectionZooming="True"/>
+    <syncfusion:PivotChartZoomPanBehavior EnableZoomingToolBar="True" EnableSelectionZooming="True" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -348,7 +348,7 @@ The zooming toolbar can be positioned by using the `HorizontalPosition` and `Ver
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnableZoomingToolBar="True" HorizontalPosition="Left" VerticalPosition="Bottom"/>
+   <syncfusion:PivotChartZoomPanBehavior EnableZoomingToolBar="True" HorizontalPosition="Left" VerticalPosition="Bottom" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -391,7 +391,7 @@ The zooming toolbar can be customized by using the following properties:
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-    <syncfusion:PivotChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarBackground="SaddleBrown" ToolBarItems="All" ToolBarOrientation="Vertical" ToolBarItemHeight="15" ToolBarItemWidth="15" ToolBarItemMargin="5"/>
+    <syncfusion:PivotChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarBackground="SaddleBrown" ToolBarItems="All" ToolBarOrientation="Vertical" ToolBarItemHeight="15" ToolBarItemWidth="15" ToolBarItemMargin="5" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -435,7 +435,7 @@ Panning allows you to navigate the visible area of the chart when it is zoomed i
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior EnablePanning="True"/>
+   <syncfusion:PivotChartZoomPanBehavior EnablePanning="True" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}
@@ -467,7 +467,7 @@ The SfPivotChart supports resetting the default view when you double-tap the cha
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.ZoomPanBehavior>
-   <syncfusion:PivotChartZoomPanBehavior ResetOnDoubleTap="True"/>
+   <syncfusion:PivotChartZoomPanBehavior ResetOnDoubleTap="True" />
 </syncfusion:SfPivotChart.ZoomPanBehavior>
 
 {% endhighlight %}

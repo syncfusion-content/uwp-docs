@@ -2,14 +2,14 @@
 layout: post
 title: Paging in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Paging support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
 # Paging in UWP Pivot Chart (SfPivotChart)
 
-The SfPivotGrid supports loading and rendering the large amount of data without any performance constraint.
+The SfPivotChart supports loading and rendering large amounts of data without any performance constraint.
 
 The SfPivotPager (custom control) is included and bound with the `OlapDataManager` of the respective SfPivotChart. To enable paging, set the `EnablePaging` property of `OlapDataManager` to true.
 

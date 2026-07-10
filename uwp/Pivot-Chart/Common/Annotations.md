@@ -30,7 +30,7 @@ Text annotations are used to add simple text representation in the chart area of
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="TextAnnotation" Text="Text Annotation" X1="2" Y1="150" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" FontStretch="ExtraExpanded" FontStyle="Italic"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="TextAnnotation" Text="Text Annotation" X1="2" Y1="150" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" FontStretch="ExtraExpanded" FontStyle="Italic"/>
 </syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}
@@ -80,7 +80,7 @@ Text annotation can be rotated by using the `Angle` property. The following code
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart1.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="TextAnnotation" Text="Text Annotation" X1="2" Y1="150" Angle="22" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" FontStretch="ExtraExpanded" FontStyle="Italic"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="TextAnnotation" Text="Text Annotation" X1="2" Y1="150" Angle="22" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" FontStretch="ExtraExpanded" FontStyle="Italic"/>
 </syncfusion:SfPivotChart1.Annotations>
 
 {% endhighlight %}
@@ -125,14 +125,14 @@ PivotChart1.Annotations.Add(annotation)
 
 **Editing text annotation**
 
-The text annotation added in the chart area type can be edited by enabling the `EnableEditing` property. The following code snippet demonstrates editing of the text annotation.
+The text annotation added in the chart area can be edited by enabling the `EnableEditing` property. The following code snippet demonstrates editing of the text annotation.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="TextAnnotation" Text="Text Annotation" X1="2" Y1="150" EnableEditing="True" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" FontStretch="ExtraExpanded" FontStyle="Italic"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="TextAnnotation" Text="Text Annotation" X1="2" Y1="150" EnableEditing="True" FontFamily="Times New Roman" FontSize="16" FontWeight="Bold" FontStretch="ExtraExpanded" FontStyle="Italic"/>
 </syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}
@@ -228,7 +228,7 @@ An image annotation can be rotated by using the `Angle` property. The following 
 {% highlight xaml %}
 <syncfusion:SfPivotChart.Annotations>
     <syncfusion:PivotChartAnnotation AnnotationType="ImageAnnotation" Angle="22" ImageSource="ms-appx:///Assets/anchor.jpg" X1="1" X2="1.5" Y1="50" Y2="100"/>
-</syncfusion:SfPivotChart.Annotations>>
+</syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}
 
@@ -273,7 +273,7 @@ Line annotation draws a line over a specific chart area. The following code snip
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="LineAnnotation" LineCap="Arrow" X1="1" Y1="30" X2="2" Y2="300" Stroke="Orange" StrokeThickness="3" StrokeDashCap="Square" StrokeLineJoin="Round"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="LineAnnotation" LineCap="Arrow" X1="1" Y1="30" X2="2" Y2="300" Stroke="Orange" StrokeThickness="3" StrokeDashCap="Square" StrokeLineJoin="Round"/>
 </syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}
@@ -325,7 +325,7 @@ Horizontal line annotation draws a horizontal line over the chart area. The foll
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="HorizontalLineAnnotation" LineCap="Arrow" X1="0" X2="2" Y1="100" Stroke="LawnGreen" StrokeThickness="3" StrokeDashCap="Square" StrokeLineJoin="Round"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="HorizontalLineAnnotation" LineCap="Arrow" X1="1" X2="2" Y1="100" Stroke="LawnGreen" StrokeThickness="3" StrokeDashCap="Square" StrokeLineJoin="Round"/>
 </syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}
@@ -375,7 +375,7 @@ Vertical line annotation draws a vertical line over the chart area. The followin
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="VerticalLineAnnotation" LineCap="Arrow" X1="1" Y1="55" Y2="300" Stroke="BrulyWood" StrokeThickness="3" StrokeDashCap="Square" StrokeLineJoin="Round"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="VerticalLineAnnotation" LineCap="Arrow" X1="1" Y1="55" Y2="300" Stroke="Orange" StrokeThickness="3" StrokeDashCap="Square" StrokeLineJoin="Round"/>
 </syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}
@@ -425,7 +425,7 @@ Rectangle annotation draws a rectangle over the chart area. The following code s
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="RectangleAnnotation" X1="1" X2="2" Y1="85" Y2="120" Fill="Red" Opacity="0.6"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="RectangleAnnotation" X1="1" X2="2" Y1="85" Y2="120" Fill="Red" Opacity="0.6"/>
 </syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}
@@ -471,7 +471,7 @@ Ellipse annotation draws an ellipse over the chart area. The following code snip
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="EllipseAnnotation" X1="1" X2="2" Y1="85" Y2="120" Fill="Green" Opacity="0.6"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="EllipseAnnotation" X1="1" X2="2" Y1="85" Y2="120" Fill="Green" Opacity="0.6"/>
 </syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}
@@ -514,7 +514,7 @@ Annotations can be positioned in the SfPivotChart based on `X1` and `Y1` propert
 
 **CoordinateUnit as axis**
 
-To position an annotation based on axis values, you should set the *CoordinateUnit* as *axes*, so that the values specified in `X1` and `Y1`, `X2` and `Y2` (if needed) are considered based on the range values of primary and secondary axes.
+To position an annotation based on axis values, you should set the *CoordinateUnit* as *Axis*, so that the values specified in `X1` and `Y1`, `X2` and `Y2` (if needed) are considered based on the range values of primary and secondary axes.
 
 **CoordinateUnit as pixels**
 
@@ -522,14 +522,14 @@ To position the annotation based on pixel values, you should set the *Coordinate
 
 ## Dragging and resizing annotations
 
-The annotations can be dragged and resized by enabling the `CanDrag` and `CanDrop` properties as specified in the following code snippet.
+The annotations can be dragged and resized by enabling the `CanDrag` and `CanResize` properties as specified in the following code snippet.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Annotations>
-<syncfusion:PivotChartAnnotation AnnotationType="EllipseAnnotation" X1="1" X2="2" Y1="85" Y2="120" CanDrag="True" CanResize="True" DraggingMode="All" ResizingMode="All" Fill="Green" Opacity="0.6"/>
+    <syncfusion:PivotChartAnnotation AnnotationType="EllipseAnnotation" X1="1" X2="2" Y1="85" Y2="120" CanDrag="True" CanResize="True" DraggingMode="All" ResizingMode="All" Fill="Green" Opacity="0.6"/>
 </syncfusion:SfPivotChart.Annotations>
 
 {% endhighlight %}

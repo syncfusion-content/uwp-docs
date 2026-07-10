@@ -2,7 +2,7 @@
 layout: post
 title: Theming in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Theming support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
@@ -36,7 +36,7 @@ By using the `ChartVisualStyle` property in the SfPivotChart, you can set the vi
 
 <syncfusion:SfPivotChart x:Name="PivotChart1" ChartVisualStyle="Blend"
                          ItemSource="{Binding ProductSalesData}" PivotAxis="{Binding PivotAxis}"
-                         PivotLegend="{Binding PivotLegend}" PivotCalculations="{Binding PivotCalculations}"/>
+                         PivotLegend="{Binding PivotLegend}" PivotCalculations="{Binding PivotCalculations}" />
 
 {% endhighlight %}
 

@@ -18,7 +18,7 @@ This section explains the steps required to create a simple SfPivotChart control
 
 Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
 
-Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "SfPivotChartDemo".
+Select **Installed > Templates > Visual C# > Windows > Universal > Blank App (Universal Windows)** to create a new UWP application and name the project as "SfPivotChartDemo".
 
 The target version/minimum version dialog appears, in which change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
@@ -78,20 +78,20 @@ Then, add the SfPivotChart control to the grid by using the namespace specified 
 
 {% highlight xaml %}
 
-    <Page
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:SfPivotChartDemo"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        x:Class="SfPivotChartDemo.MainPage"
-        xmlns:PivotChart="using:Syncfusion.UI.Xaml.PivotChart"
-        mc:Ignorable="d">
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SfPivotChartDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="SfPivotChartDemo.MainPage"
+    xmlns:PivotChart="using:Syncfusion.UI.Xaml.PivotChart"
+    mc:Ignorable="d">
 
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <PivotChart:SfPivotChart/>
-        </Grid>
-    </Page>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <PivotChart:SfPivotChart/>
+    </Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -125,18 +125,18 @@ After adding the required reference, open the *MainPage.xaml* file and name the 
 
 {% highlight xaml %}
 
-    <Page
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:SfPivotChartDemo"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        x:Class="SfPivotChartDemo.MainPage"
-        mc:Ignorable="d">
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SfPivotChartDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="SfPivotChartDemo.MainPage"
+    mc:Ignorable="d">
 
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="RootGrid">
-        </Grid>
-    </Page>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="RootGrid">
+    </Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -343,34 +343,34 @@ Refer to the following code snippet.
 
 {% highlight xaml %}
 
-    <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:SfPivotChartDemo"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:PivotChart="using:Syncfusion.UI.Xaml.PivotChart"
-        xmlns:pivot="using:Syncfusion.PivotAnalysis.UWP"
-        x:Class="SfPivotChartDemo.MainPage"
-        mc:Ignorable="d">
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SfPivotChartDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:PivotChart="using:Syncfusion.UI.Xaml.PivotChart"
+    xmlns:pivot="using:Syncfusion.PivotAnalysis.UWP"
+    x:Class="SfPivotChartDemo.MainPage"
+    mc:Ignorable="d">
 
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <Grid.DataContext>
-                <local:ProductSalesViewModel/>
-            </Grid.DataContext>
-            <PivotChart:SfPivotChart ItemSource="{Binding ProductSales}">
-                <PivotChart:SfPivotChart.PivotAxis>
-                    <pivot:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
-                    <pivot:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
-                </PivotChart:SfPivotChart.PivotAxis>
-                <PivotChart:SfPivotChart.PivotLegend>
-                    <pivot:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
-                </PivotChart:SfPivotChart.PivotLegend>
-                <PivotChart:SfPivotChart.PivotCalculations>
-                    <pivot:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="#.##" SummaryType="DoubleTotalSum"/>
-                </PivotChart:SfPivotChart.PivotCalculations>
-            </PivotChart:SfPivotChart>
-        </Grid>
-    </Page>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
+            <local:ProductSalesViewModel/>
+        </Grid.DataContext>
+        <PivotChart:SfPivotChart ItemSource="{Binding ProductSales}">
+            <PivotChart:SfPivotChart.PivotAxis>
+                <pivot:PivotItem FieldCaption="Product" FieldMappingName="Product" TotalHeader="Total"/>
+                <pivot:PivotItem FieldCaption="Country" FieldMappingName="Country" TotalHeader="Total"/>
+            </PivotChart:SfPivotChart.PivotAxis>
+            <PivotChart:SfPivotChart.PivotLegend>
+                <pivot:PivotItem FieldCaption="Date" FieldMappingName="Date" TotalHeader="Total"/>
+            </PivotChart:SfPivotChart.PivotLegend>
+            <PivotChart:SfPivotChart.PivotCalculations>
+                <pivot:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="#.##" SummaryType="DoubleTotalSum"/>
+            </PivotChart:SfPivotChart.PivotCalculations>
+        </PivotChart:SfPivotChart>
+    </Grid>
+</Page>
 
 {% endhighlight %}
 
