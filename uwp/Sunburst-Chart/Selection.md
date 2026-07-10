@@ -11,7 +11,7 @@ documentation: ug
 
 # Selection in UWP Sunburst Chart (SfSunburstChart)
 
-Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
+Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
 
 The following code shows how to enable the selection behavior.  
 

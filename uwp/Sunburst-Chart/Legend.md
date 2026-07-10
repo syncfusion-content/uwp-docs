@@ -111,7 +111,7 @@ You can customize your own legend shape by applying custom template using [`Lege
 ![Legend_img3](Legend_images/Legend_img3.jpeg)
 
 
-N> You need to set the [`LegendIcon`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstLegendIcon.html) value as Custom in order to apply the custom template.
+N> You need to set the [`LegendIcon`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstLegendIcon.html) value as Custom in order to apply the custom template.
 
 ## Positioning the Legend
 
