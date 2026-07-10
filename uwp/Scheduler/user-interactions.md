@@ -15,6 +15,8 @@ When you tap the schedule or appointment, our built-in context menu will be open
 
 {% highlight c# %} 
 
+using Syncfusion.UI.Xaml.Schedule;
+
         schedule.ContextMenuOpening += Schedule_ContextMenuOpening;
         private void Schedule_ContextMenuOpening(object sender,ContextMenuOpeningEventArgs e)
         {
@@ -28,6 +30,8 @@ When you tap the schedule or appointment, our built-in context menu will be open
 The [AppointmentEditorOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.AppointmentEditorOpeningEventArgs.html) event occurs when opening the appointment editor by selecting the edit option in the context menu or double-tapping the appointment. You can create your own appointment editor by setting `e.Cancel` to true in the `AppointmentEditorOpening` event. It will avoid opening the default editor.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
       schedule.AppointmentEditorOpening += Schedule_AppointmentEditorOpening;
       private void Schedule_AppointmentEditorOpening(object sender,AppointmentEditorOpeningEventArgs e)
@@ -51,6 +55,8 @@ The event will be triggered when the appointment is started to drag. The [Appoin
 
 {% highlight c# %} 
 
+using Syncfusion.UI.Xaml.Schedule;
+
       schedule.AppointmentStartDragging += Schedule_AppointmentStartDragging;
       private void Schedule_AppointmentStartDragging(object sender,Syncfusion.UI.Xaml.Schedule.AppointmentStartDraggingEventArgs e)
         {
@@ -72,6 +78,8 @@ The event will be triggered when the appointment is dropping. The [AppointmentEn
 
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
         schedule.AppointmentEndDragging += Schedule_AppointmentEndDragging;
         private void Schedule_AppointmentEndDragging(object sender,AppointmentEndDraggingEventArgs e)
@@ -96,6 +104,8 @@ The event will be triggered when dragging and dropping the appointment. The [App
 
 {% highlight c# %} 
 
+using Syncfusion.UI.Xaml.Schedule;
+
          schedule.AppointmentDragging += Schedule_AppointmentDragging;
          private void Schedule_AppointmentDragging(object sender,AppointmentDraggingEventArgs e)
         {
@@ -117,6 +127,8 @@ The event will be triggered when the appointment is started to resize. The [Appo
 
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
          schedule.AppointmentStartResizing += Schedule_AppointmentStartResizing;
          private void Schedule_AppointmentStartResizing(object sender,AppointmentStartResizingEventArgs e)
@@ -140,6 +152,8 @@ The event will be triggered when finishing the appointment resizing. The [Appoin
 
 {% highlight c# %} 
 
+using Syncfusion.UI.Xaml.Schedule;
+
           schedule.AppointmentEndResizing += Schedule_AppointmentEndResizing;
           private void Schedule_AppointmentEndResizing(object sender,AppointmentEndResizingEventArgs e)
         {
@@ -160,6 +174,8 @@ The event will be triggered when resizing the appointment. The [AppointmentResiz
 *	**To** - Gets the end resizing time.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
 
            schedule.AppointmentResizing += Schedule_AppointmentResizing;
            private void Schedule_AppointmentResizing(object sender,AppointmentResizingEventArgs e)

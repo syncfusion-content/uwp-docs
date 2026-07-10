@@ -117,12 +117,20 @@ The Schedule control will be rendered with `Sunday` as the first day of the week
      
 {% tabs %}   
 {% highlight xaml %}    
-     
-    <syncfusion:SfSchedule x:Name="schedule"  FirstDayOfWeek="Tuesday" />    
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
+        <syncfusion:SfSchedule x:Name="schedule"  FirstDayOfWeek="Tuesday" />    
+
+</Page>
      
 {% endhighlight %}    
 {% highlight c# %}   
-     
+
+using Syncfusion.UI.Xaml.Schedule;
+
     //setting first day of the week     
     schedule.FirstDayOfWeek = DayOfWeek.Tuesday;    
      
@@ -137,12 +145,20 @@ DayView is used to display a single day; the current day will be visible by defa
      
 {% tabs %}    
 {% highlight xaml %}    
-     
-    <syncfusion:SfSchedule x:Name="schedule"  ScheduleType="Day" />    
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
+        <syncfusion:SfSchedule x:Name="schedule"  ScheduleType="Day" />    
+
+</Page>
      
 {% endhighlight %}    
 {% highlight c# %}    
-     
+
+using Syncfusion.UI.Xaml.Schedule;
+
      schedule.ScheduleType = ScheduleType.Day; 
      
 {% endhighlight %}    
@@ -156,12 +172,20 @@ DayView is used to display a single day; the current day will be visible by defa
      
 {% tabs %}    
 {% highlight xaml %}    
-     
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week" />    
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
+        <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week" />    
+
+</Page>
              
 {% endhighlight %}    
 {% highlight c# %}    
-     
+
+using Syncfusion.UI.Xaml.Schedule;
+
     schedule.ScheduleType = ScheduleType.Week;   
      
 {% endhighlight %}    
@@ -175,12 +199,20 @@ DayView is used to display a single day; the current day will be visible by defa
      
 {% tabs %}    
 {% highlight xaml %}    
-     
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleType="WorkWeek" />    
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
+        <syncfusion:SfSchedule x:Name="schedule" ScheduleType="WorkWeek" />    
+
+</Page>
      
 {% endhighlight %}    
 {% highlight c# %}    
-     
+
+using Syncfusion.UI.Xaml.Schedule;
+
     schedule.ScheduleType = ScheduleType.WorkWeek; 
      
 {% endhighlight %}    
@@ -196,12 +228,20 @@ DayView is used to display a single day; the current day will be visible by defa
      
 {% tabs %}    
 {% highlight xaml %}    
-     
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Month" /> 
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
+        <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Month" /> 
+
+</Page>
      
 {% endhighlight %}   
 {% highlight c# %}    
-     
+
+using Syncfusion.UI.Xaml.Schedule;
+
     schedule.ScheduleType = ScheduleType.Month; 
      
 {% endhighlight %}    
@@ -215,12 +255,20 @@ DayView is used to display a single day; the current day will be visible by defa
      
 {% tabs %}    
 {% highlight xaml %}    
-     
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleType="TimeLine" /> 
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
+        <syncfusion:SfSchedule x:Name="schedule" ScheduleType="TimeLine" /> 
+
+</Page>
      
 {% endhighlight %}   
 {% highlight c# %}    
-     
+
+using Syncfusion.UI.Xaml.Schedule;
+
      schedule.ScheduleType = ScheduleType.TimeLine; 
              
 {% endhighlight %}    
@@ -237,8 +285,9 @@ The Schedule control has a built-in capability to handle the appointment arrange
  [ScheduleAppointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in the schedule. It has some basic properties such as [ScheduleAppointment.StartTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_StartTimeProperty), [ScheduleAppointment.EndTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_EndTimeProperty), [ScheduleAppointment.Subject](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_SubjectProperty), and some additional information about the appointment can be added using [ScheduleAppointment.AppointmentBackground](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AppointmentBackgroundProperty), [ScheduleAppointment.Notes](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_NotesProperty), [ScheduleAppointment.Location](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_LocationProperty), [ScheduleAppointment.AllDay](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_AllDayProperty), [ScheduleAppointment.IsRecursive](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_IsRecursiveProperty) properties.
      
 {% highlight c# %}    
-     
-    ScheduleAppointmentCollection appointmentCollection = new ScheduleAppointmentCollection(); 
+
+using Syncfusion.UI.Xaml.Schedule;
+
     //Creating new event    
     ScheduleAppointment clientMeeting = new ScheduleAppointment(); 
     DateTime currentDate = DateTime.Now; 
@@ -271,7 +320,9 @@ Here are the steps to render `MeetingRoomScheduler` using the SfSchedule control
 You can create a custom class `Meeting` with mandatory fields "From", "To", and "EventName".
   
 {% highlight c# %}    
-        
+
+using Syncfusion.UI.Xaml.Schedule;
+
     /// <summary>    
     /// Represents custom data properties.    
     /// </summary>    
@@ -296,20 +347,28 @@ You can map those properties of `Meeting` class with our schedule control by usi
 
 {% tabs %}
 {% highlight xaml %}
-    
-    <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week">
-        <syncfusion:SfSchedule.AppointmentMapping>
-            <syncfusion:ScheduleAppointmentMapping
-                AppointmentBackgroundMapping="color"
-                EndTimeMapping="To"
-                StartTimeMapping="From"
-                SubjectMapping="EventName" />
-        </syncfusion:SfSchedule.AppointmentMapping>
-    </syncfusion:SfSchedule>
+
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
+        <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week">
+            <syncfusion:SfSchedule.AppointmentMapping>
+                <syncfusion:ScheduleAppointmentMapping
+                    AppointmentBackgroundMapping="color"
+                    EndTimeMapping="To"
+                    StartTimeMapping="From"
+                    SubjectMapping="EventName" />
+            </syncfusion:SfSchedule.AppointmentMapping>
+        </syncfusion:SfSchedule>
+
+</Page>
     
 {% endhighlight %}
 {% highlight c# %}    
-     
+
+using Syncfusion.UI.Xaml.Schedule;
+
     ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
     dataMapping.SubjectMapping = "EventName"; 
     dataMapping.StartTimeMapping = "From"; 
@@ -325,8 +384,9 @@ You can map those properties of `Meeting` class with our schedule control by usi
 You can schedule meetings for a particular day by setting `From` and `To` of the `Meeting` class. Also, you can change the subject and color of the appointment using the `EventName` and `color` of the Meeting class. In a separate ViewModel class, you can describe the collection of custom appointments.    
      
 {% highlight c# %}    
-     
-    /// <summary>    
+
+using Syncfusion.UI.Xaml.Schedule;
+
     /// Represents collection of appointments.    
     /// </summary>  
     public class ScheduleViewModel 
@@ -439,8 +499,9 @@ You can schedule meetings for a particular day by setting `From` and `To` of the
  Assign those appointments collection `Meetings` to the [SfSchedule.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ItemsSource) property. 
    
 {% highlight c# %}   
-   
-    ScheduleViewModel viewModel = new ScheduleViewModel(); 
+
+using Syncfusion.UI.Xaml.Schedule;
+
     schedule.ItemsSource = viewModel.Meetings;  
        
 {% endhighlight %} 
@@ -452,6 +513,9 @@ You can schedule meetings for a particular day by setting `From` and `To` of the
 You can release the allocated resources of the `Schedule` by calling the [Dispose](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_Dispose) method. You can handle the memory leak issue by calling the `Dispose` method while unloading the `Schedule`.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
+
 private void Schedule_Unloaded(object sender, RoutedEventArgs e)
 {
     (sender as SfSchedule).Dispose();
