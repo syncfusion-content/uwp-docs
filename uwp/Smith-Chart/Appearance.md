@@ -9,9 +9,9 @@ documentation: ug
 
 # Appearance in UWP Smith Chart (SfSmithChart)
 
-## SmithChart Palette
+## SmithChart palette
 
-The Smith chart displays different series in different color by using *Palette* property of **ColorModel**. By default, Metro palette color has been applied.
+The Smith chart displays different series in different colors by using the *Palette* property of **ColorModel**. By default, the Metro palette color has been applied.
 
 {% tabs %}
 
@@ -19,7 +19,7 @@ The Smith chart displays different series in different color by using *Palette* 
 
 <syncfusion:SfSmithChart x:Name="SmithChart">
             <syncfusion:SfSmithChart.ColorModel>
-                <syncfusion:SmithChartColorModel Palette="BlueChrome"></syncfusion:SmithChartColorModel>
+                <syncfusion:SmithChartColorModel Palette="BlueChrome" />
             </syncfusion:SfSmithChart.ColorModel>
  </syncfusion:SfSmithChart>
 
@@ -37,9 +37,9 @@ chart.ColorModel.Palette = ColorPalette.BlueChrome;
 
 ![SmithChart color palette](Appearance_images/Appearance_img1.png)
 
-**Series Palette**
+**Series palette**
 
-The palette color to each data points of specific series can be defined by using *Palette* property of **ColorModel** in the Series.
+The palette color for each data point of a specific series can be defined by using the *Palette* property of **ColorModel** in the Series.
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ chart.Series.Add(series);
 
 ![SmithChart series palette](Appearance_images/Appearance_img2.png)
 
-## Chart Area Customization
+## Chart area customization
 
 Chart and chart area (circle plotting area) can be customized by using the below properties in SmithChart.
 
@@ -105,9 +105,7 @@ To change the diameter of the Smith chart circle with respect to the plot area, 
 
 {% highlight xaml %}
 
-<syncfusion:SfSmithChart x:Name="SmithChart" Radius="0.5" ChartAreaBorderBrush="CadetBlue">
- 
-</syncfusion:SfSmithChart>
+<syncfusion:SfSmithChart x:Name="SmithChart" Radius="0.5" ChartAreaBorderBrush="CadetBlue" />
 
 {% endhighlight %}
 
@@ -149,8 +147,7 @@ Point centerPoint = smithChart.ChartAreaInfo.CenterPoint;
 
 ### Radius
 
-You can get the radius of the smith chart by using the `Radius` property in the `ChartAreaInfo`
-Code.
+You can get the radius of the smith chart by using the `Radius` property in the `ChartAreaInfo`.
 
 {% highlight C# %}
 

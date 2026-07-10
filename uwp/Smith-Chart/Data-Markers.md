@@ -9,11 +9,11 @@ documentation: ug
 
 # Data Markers in UWP Smith Chart (SfSmithChart)
 
-Data markers are used to provide information about data point to the user. You can add a shape and label to adorn each data point.
+Data markers are used to provide information about a data point to the user. You can add a shape and label to adorn each data point.
 
-## Add Shapes
+## Add shapes
 
-Shapes can be added to line series to indicate each data point and it also can be added to the chart by enabling the `ShowMarker` option of the *Series* property. There are different shapes can be added to the chart by using the `MarkerType` option such as rectangle, circle, diamond, etc.
+Shapes can be added to line series to indicate each data point and they can also be added to the chart by enabling the `ShowMarker` option of the *Series* property. Different shapes can be added to the chart by using the `MarkerType` option such as rectangle, circle, diamond, etc.
 
 The following code example explains how to enable series marker and add shapes,
 
@@ -41,7 +41,7 @@ chart.Series.Add(series);
 
 ![SfSmithChart Add Shapes](Data-Markers_images/Data-Markers_img1.png)
 
-## Customizing Marker
+## Customizing marker
 
 The markers interior, stroke, and size can be customized as demonstrated in the below code snippet.
 
@@ -50,8 +50,7 @@ The markers interior, stroke, and size can be customized as demonstrated in the 
 {% highlight xaml %}
 
 <syncfusion:SfSmithChart x:Name="SmithChart">
-     <syncfusion:LineSeries ShowMarker="True" MarkerType="Circle" MarkerHeight="12" MarkerWidth="12" MarkerInterior="Red" MarkerStroke="Yellow">
-     </syncfusion:LineSeries>
+     <syncfusion:LineSeries ShowMarker="True" MarkerType="Circle" MarkerHeight="12" MarkerWidth="12" MarkerInterior="Red" MarkerStroke="Yellow" />
  </syncfusion:SfSmithChart>
 
 {% endhighlight %}
@@ -75,9 +74,9 @@ chart.Series.Add(series);
 
 **MarkerTemplate**
 
-Apart from the shapes, custom shapes also can be added to mark the data point by using the `MarkerTemplate` property.  To add custom shapes, define the *MarkerType* as **Custom**.
+Apart from the shapes, custom shapes can also be added to mark the data point by using the `MarkerTemplate` property. To add custom shapes, define the *MarkerType* as **Custom**.
 
-The following code example illustrates  how to add custom shapes,
+The following code example illustrates how to add custom shapes:
 
 {% tabs %}
 
@@ -109,9 +108,9 @@ chart.Series.Add(series);
 
 ![SfSmithChart MarkerTemplate](Data-Markers_images/Data-Markers_img3.png)
 
-## Add Labels
+## Add labels
 
-Data label can be added to a chart series by setting the `ShowLabel` property as True in the series **DataLabel** option. By default, the data labels are displayed on top of the data point and it can be automatically adjusted its position when collide with another label.
+Data label can be added to a chart series by setting the `ShowLabel` property as True in the series **DataLabel** option. By default, the data labels are displayed on top of the data point and their position is automatically adjusted when they collide with another label.
 
 {% tabs %}
 
@@ -137,7 +136,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-N> The position changed data label will be connected by using connector line and the label will be hidden if there is no place to position it around the data point.
+N> The position changed data label will be connected by using a connector line and the label will be hidden if there is no place to position it around the data point.
 
 The following screenshot illustrates how the data labels can be positioned.
 
@@ -185,7 +184,7 @@ chart.Series.Add(series);
 
 **LabelTemplate**
 
-The label content can be formatted and customized by  using *LabelTemplate* property of **DataLabel**.  The following code example illustrates how the label content can be formatted and customized.
+The label content can be formatted and customized by using the *LabelTemplate* property of **DataLabel**. The following code example illustrates how the label content can be formatted and customized.
 
 {% tabs %}
 
@@ -211,7 +210,7 @@ The label content can be formatted and customized by  using *LabelTemplate* prop
          <syncfusion:DataLabel ShowLabel="True" LabelTemplate="{StaticResource labelTemplate}"></syncfusion:DataLabel>
      </syncfusion:LineSeries.DataLabel>
     </syncfusion:LineSeries>
- </syncfusion:SfSmithChart>
+</syncfusion:SfSmithChart>
 
 {% endhighlight %}
 

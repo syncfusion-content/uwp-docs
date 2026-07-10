@@ -27,25 +27,24 @@ The below code example explains how to create a simple `LineSeries` by using giv
 
 <syncfusion:SfSmithChart x:Name="SmithChart">
      <syncfusion:LineSeries ResistancePath="Resistance" ReactancePath="Reactance" 
-                                                      ItemsSource="{Binding Data}">
-     </syncfusion:LineSeries>
+                            ItemsSource="{Binding Data}" />
  </syncfusion:SfSmithChart>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-  //Create SfSmithChart instance
-  SfSmithChart chart = new SfSmithChart();
-  //Create line series
-  LineSeries series = new LineSeries();
-  series.ItemsSource = Data;
-  series.ResistancePath = "Resistance";
-  series.ReactancePath = "Reactance";
-  series.Label = "TransmissionLine";
-  //Adding series to SmithChart
-  chart.Series.Add(series);
-  this.Grid1.Children.Add(chart);
+//Create SfSmithChart instance
+SfSmithChart chart = new SfSmithChart();
+//Create line series
+LineSeries series = new LineSeries();
+series.ItemsSource = Data;
+series.ResistancePath = "Resistance";
+series.ReactancePath = "Reactance";
+series.Label = "TransmissionLine";
+//Adding series to SmithChart
+chart.Series.Add(series);
+this.Grid1.Children.Add(chart);
 
 {% endhighlight %}
     
@@ -62,8 +61,7 @@ The line stroke and thickness can be customized by using *Interior* and *StrokeT
 {% highlight xaml %}
 
 <syncfusion:SfSmithChart x:Name="SmithChart">
-     <syncfusion:LineSeries Interior="Orange" StrokeThickness="3">
-     </syncfusion:LineSeries>
+     <syncfusion:LineSeries Interior="Orange" StrokeThickness="3" />
  </syncfusion:SfSmithChart>
 
 {% endhighlight %}
@@ -84,7 +82,7 @@ chart.Series.Add(series);
 
 ## Animation
 
-SfSmithChart allows to animate the chart series on loading whenever the *ItemsSource* changes. Animation in the chart can be enabled by setting the *EnableAnimation* property as True and defining the corresponding animation speed with *AnimationDuration* property.
+SfSmithChart allows animating the chart series on loading whenever the *ItemsSource* changes. Animation in the chart can be enabled by setting the *EnableAnimation* property as True and defining the corresponding animation speed with the *AnimationDuration* property.
 
 {% tabs %}
 
@@ -93,7 +91,7 @@ SfSmithChart allows to animate the chart series on loading whenever the *ItemsSo
 <syncfusion:SfSmithChart x:Name="SmithChart">
      <syncfusion:LineSeries EnableAnimation="True" AnimationDuration="0:0:3">
      </syncfusion:LineSeries>
- </syncfusion:SfSmithChart>
+</syncfusion:SfSmithChart>
 
 {% endhighlight %}
 
@@ -108,9 +106,9 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-## Series Visibility
+## Series visibility
 
-To hide the series segment programmatically, set *IsSeriesVisible* property as False for the specific series.
+To hide the series segment programmatically, set the *IsSeriesVisible* property as False for the specific series.
 
 {% tabs %}
 

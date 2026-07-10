@@ -9,12 +9,11 @@ documentation: ug
 
 # Rendering Type in UWP Smith Chart (SfSmithChart)
 
-SfSmithChart  plots the transmission line in two different ways by using `RenderingType` property. The two  ways are given below.
-
+SfSmithChart plots the transmission line in two different ways by using the `RenderingType` property. The two ways are given below.
 
 ## Impedance
 
-In impedance smith chart, normalized resistance circles and normalized reactance curves are drawn from right to left.  Axis label ranges are start from left to right.
+In the impedance Smith chart, normalized resistance circles and normalized reactance curves are drawn from right to left. Axis label ranges start from left to right.
 
 Impedance is the default rendering type of SmithChart.
 
@@ -22,9 +21,7 @@ Impedance is the default rendering type of SmithChart.
 
 {% highlight xaml %}
 
-<syncfusion:SfSmithChart RenderingType="Impedance">
-            
-</syncfusion:SfSmithChart>
+<syncfusion:SfSmithChart RenderingType="Impedance" />
 
 {% endhighlight %}
 
@@ -41,15 +38,13 @@ chart.RenderingType = RenderingType.Impedance;
 
 ## Admittance
 
-In Admittance smith chart, normalized resistance circles and normalized reactance curves are drawn from left to right.  Axis label ranges are start from right to left.
+In the Admittance Smith chart, normalized resistance circles and normalized reactance curves are drawn from left to right. Axis label ranges start from right to left.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfSmithChart RenderingType="Admittance">
-            
-</syncfusion:SfSmithChart>
+<syncfusion:SfSmithChart RenderingType="Admittance" />
 
 {% endhighlight %}
 
