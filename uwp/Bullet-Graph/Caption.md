@@ -14,38 +14,44 @@ The **Caption** for a bullet graph is used to specify a unique label describing 
 {% tabs %}
 {% highlight xaml %}
 
-              <syncfusion:SfBulletGraph >        
-              <syncfusion:SfBulletGraph.Caption>
-                <StackPanel Margin="0,0,10,0">
-                    <TextBlock Text="Revenue YTD" Foreground="Black"
-                               FontSize="13" HorizontalAlignment="Center"/>
-                    <TextBlock Text="$ in Thousands" Foreground="Black"
-                               FontSize="13" HorizontalAlignment="Center"/>
-                </StackPanel>
-            </syncfusion:SfBulletGraph.Caption>
-      </syncfusion:SfBulletGraph>
+<syncfusion:SfBulletGraph>
+    <syncfusion:SfBulletGraph.Caption>
+        <StackPanel Margin="0,0,10,0">
+            <TextBlock
+                Text="Revenue YTD"
+                Foreground="Black"
+                FontSize="13"
+                HorizontalAlignment="Center" />
+            <TextBlock
+                Text="$ in Thousands"
+                Foreground="Black"
+                FontSize="13"
+                HorizontalAlignment="Center" />
+        </StackPanel>
+    </syncfusion:SfBulletGraph.Caption>
+</syncfusion:SfBulletGraph>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-        SfBulletGraph bullet = new SfBulletGraph();
-        TextBlock _textBlock = new TextBlock() { Text = "Revenue YTD" };
-        TextBlock _textBlock1 = new TextBlock() { Text = "$ in Thousands" };
-        StackPanel _stackPanel = new StackPanel();
-        _stackPanel.Children.Add(_textBlock);
-        _stackPanel.Children.Add(_textBlock1);
-        bullet.Caption = _stackPanel;
-        this.Grid.Children.Add(bullet);
+SfBulletGraph bullet = new SfBulletGraph();
+TextBlock _textBlock = new TextBlock() { Text = "Revenue YTD" };
+TextBlock _textBlock1 = new TextBlock() { Text = "$ in Thousands" };
+StackPanel _stackPanel = new StackPanel();
+_stackPanel.Children.Add(_textBlock);
+_stackPanel.Children.Add(_textBlock1);
+bullet.Caption = _stackPanel;
+this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Caption_img1](Caption_images/Caption_img1.jpg)
 
-## Caption Position
+## Caption position
 
-The caption in the bullet graph can be placed in the start or end of the quantitative scale by choosing from one of the two options available in the **CaptionPosition** property. They are:
+The caption in the bullet graph can be placed at the start or end of the quantitative scale by choosing from one of the two options available in the **CaptionPosition** property. They are:
 
 1. Near (Default)
 2. Far
@@ -53,15 +59,14 @@ The caption in the bullet graph can be placed in the start or end of the quantit
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBulletGraph  CaptionPosition="Far" Caption="Revenue YTD">
-    </syncfusion:SfBulletGraph>
+<syncfusion:SfBulletGraph CaptionPosition="Far" Caption="Revenue YTD" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
     SfBulletGraph bullet = new SfBulletGraph();
-    bullet.Caption = Revenue YTD;
+    bullet.Caption = "Revenue YTD";
     bullet.CaptionPosition  = BulletGraphCaptionPosition.Far;
     this.Grid.Children.Add(bullet);
 

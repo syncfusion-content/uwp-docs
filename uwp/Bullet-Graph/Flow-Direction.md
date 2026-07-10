@@ -9,23 +9,22 @@ documentation: ug
 
 ### Flow Direction
 
-By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using **FlowDirection** property respectively.
+By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using the **FlowDirection** property respectively.
 
->Note:-When the Orientation of **SfBulletGraph** is **Horizontal** the default Flow direction will be Left to Right like when the Orientation of **SfBulletGraph** is **Vertical** the default Flow Direction will be Top to Bottom.
+>Note:- When the Orientation of **SfBulletGraph** is **Horizontal**, the default flow direction will be Left to Right. When the Orientation of **SfBulletGraph** is **Vertical**, the default flow direction will be Top to Bottom.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBulletGraph  FlowDirection="Forward">
-    </syncfusion:SfBulletGraph>
+<syncfusion:SfBulletGraph FlowDirection="Forward" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-     SfBulletGraph bullet = new SfBulletGraph();
-     bullet.FlowDirection = BulletGraphFlowDirection.Forward;
-     this.Grid.Children.Add(bullet);
+SfBulletGraph bullet = new SfBulletGraph();
+bullet.FlowDirection = BulletGraphFlowDirection.Forward;
+this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}

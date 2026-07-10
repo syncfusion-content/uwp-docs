@@ -14,41 +14,40 @@ Quantitative scale is displayed with two types of ticks:
 * Major ticks, the primary scale indicators.
 * Minor ticks, the secondary scale indicators that fall in between the major ticks.
 
-## Customizing Ticks
+## Customizing ticks
 
-The Interval property is used to calculate the Major tick count for a SfBulletGraph. Like ticks, small ticks are calculated using the MinorTicksPerInterval property.
+The Interval property is used to calculate the major tick count for a SfBulletGraph. Similarly, minor ticks are calculated using the MinorTicksPerInterval property.
 
-The stroke of the major and minor ticks is customized by setting the **MajorTickStroke** and **MinorTickStroke** properties. The size can be modified by using the **MajorTickSize** and **MinorTickSize** properties. By setting **MajorTickStrokeThickness** and **MinorTickStrokeThickness**, the stroke’s thickness can be customized.
+The stroke of the major and minor ticks is customized by setting the **MajorTickStroke** and **MinorTickStroke** properties. The size can be modified by using the **MajorTickSize** and **MinorTickSize** properties. By setting **MajorTickStrokeThickness** and **MinorTickStrokeThickness**, the stroke's thickness can be customized.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBulletGraph   Interval="2"
-                                MinorTicksPerInterval="3"
-                                MajorTickSize="15"
-                                MinorTickSize="10"
-                                MajorTickStroke="Red"      
-                                MinorTickStroke="Green">            
-        </syncfusion:SfBulletGraph>
+<syncfusion:SfBulletGraph Interval="2"
+                          MinorTicksPerInterval="3"
+                          MajorTickSize="15"
+                          MinorTickSize="10"
+                          MajorTickStroke="Red"      
+                          MinorTickStroke="Green" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-      SfBulletGraph bullet = new SfBulletGraph();
-      bullet.MinorTicksPerInterval = 3;
-      bullet.MajorTickSize = 15;
-      bullet.MinorTickSize = 10;
-      bullet.MajorTickStroke = new SolidColorBrush(Colors.Red);
-      bullet.MinorTickStroke = new SolidColorBrush(Colors.Green);
-      this.Grid.Children.Add(bullet);
+SfBulletGraph bullet = new SfBulletGraph();
+bullet.MinorTicksPerInterval = 3;
+bullet.MajorTickSize = 15;
+bullet.MinorTickSize = 10;
+bullet.MajorTickStroke = new SolidColorBrush(Colors.Red);
+bullet.MinorTickStroke = new SolidColorBrush(Colors.Green);
+this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Ticks_img](Ticks_images/Ticks_img.jpg)
 
-## TickPosition
+## Tick position
 
 The ticks in the scale can be placed above or below the ranges of the quantitative scale by choosing the options available in the **TickPosition** property. 
 
@@ -61,16 +60,15 @@ They are:
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBulletGraph   TickPosition="Cross">
-    </syncfusion:SfBulletGraph>
+<syncfusion:SfBulletGraph TickPosition="Cross" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfBulletGraph bullet = new SfBulletGraph();
-    bullet.TickPosition = BulletGraphTicksPosition.Cross; 
-    this.Grid.Children.Add(bullet);
+SfBulletGraph bullet = new SfBulletGraph();
+bullet.TickPosition = BulletGraphTicksPosition.Cross; 
+this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
