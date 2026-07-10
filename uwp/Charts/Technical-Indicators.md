@@ -27,9 +27,9 @@ Here, for instance, the [`AccumulationDistributionIndicator`](https://help.syncf
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:AccumulationDistributionIndicator>
+    <chart:AccumulationDistributionIndicator>
 
-</chart:AccumulationDistributionIndicator>
+    </chart:AccumulationDistributionIndicator>
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -55,9 +55,7 @@ Next you need to bind the property path for the [`Open`](https://help.syncfusion
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:AccumulationDistributionIndicator Open="Open" Close="Close" High="High" Low="Low">                    
-
-</chart:AccumulationDistributionIndicator>
+    <chart:AccumulationDistributionIndicator Open="Open" Close="Close" High="High" Low="Low" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -67,11 +65,8 @@ Next you need to bind the property path for the [`Open`](https://help.syncfusion
 
 AccumulationDistributionIndicator indicator = new AccumulationDistributionIndicator()
 {
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low"
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -88,13 +83,11 @@ chart.TechnicalIndicators.Add(indicator);
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:AccumulationDistributionIndicator Open="Open" Close="Close" High="High" 
-
-Low="Low"  ItemsSource="{Binding StockPriceDetails}" 
-
-XBindingPath="Date">                    
-
-</chart:AccumulationDistributionIndicator>
+    <chart:AccumulationDistributionIndicator
+        Open="Open" Close="Close"
+        High="High" Low="Low"
+        ItemsSource="{Binding StockPriceDetails}"
+        XBindingPath="Date" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -104,15 +97,10 @@ XBindingPath="Date">
 
 AccumulationDistributionIndicator indicator = new AccumulationDistributionIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low"
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -122,7 +110,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![AccumulationDistributionIndicator type in UWP Chart](Technical-Indicators_images/overview_1.png)
-
 
 The following sections cover all the different types of technical indicators available in [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html).
 
@@ -138,13 +125,13 @@ You can define the [`AverageTrueRangeIndicator`](https://help.syncfusion.com/cr/
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:AverageTrueRangeIndicator ItemsSource="{Binding  ViewModel1}"    
-
-Period="3" XBindingPath="Date" Volume="Volume"
-
-SignalLineColor="Black" High="High" Low="Low"
-
-Open="Open" Close="Close"/>
+    <chart:AverageTrueRangeIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Period="3" XBindingPath="Date"
+        Volume="Volume"
+        SignalLineColor="Black"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -154,19 +141,12 @@ Open="Open" Close="Close"/>
 
 AverageTrueRangeIndicator indicator = new AverageTrueRangeIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Volume ="Volume", Period = 3,
-
     SignalLineColor = new SolidColorBrush(Colors.Black)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -176,7 +156,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![AverageTrueRangeIndicator type in UWP Chart](Technical-Indicators_images/atr.png)
-
 
 ## Simple Average 
 
@@ -188,15 +167,13 @@ The following code example demonstrates the usage of [`SimpleAverageIndicator`](
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:SimpleAverageIndicator ItemsSource="{Binding  ViewModel1}"  Period="3"     
-
-SignalLineColor="Black" XBindingPath="Date" 
-
-Volume="Volume"  
-
-High="High" Low="Low" Open="Open" Close="Close" >
-
-</chart:SimpleAverageIndicator >
+    <chart:SimpleAverageIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Period="3" SignalLineColor="Black"
+        XBindingPath="Date"
+        Volume="Volume"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -206,19 +183,12 @@ High="High" Low="Low" Open="Open" Close="Close" >
 
 SimpleAverageIndicator indicator = new SimpleAverageIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Volume ="Volume", Period = 3,
-
     SignalLineColor = new SolidColorBrush(Colors.Black)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -228,7 +198,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![SimpleAverageIndicator type in UWP Chart](Technical-Indicators_images/sa.png)
-
 
 ## RSI 
 
@@ -244,15 +213,15 @@ To define the [`RSITechnicalIndicator`](https://help.syncfusion.com/cr/uwp/Syncf
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:RSITechnicalIndicator 
-
-ItemsSource="{Binding  ViewModel1}"  Period="3"   
-
-SignalLineColor="Black" XBindingPath="Date" Volume="Volume"  
-
-UpperLineColor="Blue" LowerLineColor="Red"                  
-
-High="High" Low="Low" Open="Open" Close="Close"/>
+    <chart:RSITechnicalIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Period="3" SignalLineColor="Black"
+        XBindingPath="Date"
+        Volume="Volume"
+        UpperLineColor="Blue"
+        LowerLineColor="Red"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -262,23 +231,14 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 RSITechnicalIndicator indicator = new RSITechnicalIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Volume ="Volume", Period = 3,
-
     SignalLineColor = new SolidColorBrush(Colors.Black),
-
     UpperLineColor = new SolidColorBrush(Colors.Blue),
-
     LowerLineColor = new SolidColorBrush(Colors.Red)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -288,7 +248,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![RSITechnicalIndicator type in UWP Chart](Technical-Indicators_images/rsi.png)
-
 
 ## Momentum 
 
@@ -302,13 +261,14 @@ The [`MomentumLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:MomentumTechnicalIndicator ItemsSource="{Binding  ViewModel1}"     
-
-Period="3" CenterLineColor="red" XBindingPath="Date"        
-
-Volume="Volume" MomentumLineColor="Black"
-
-High="High" Low="Low" Open="Open" Close="Close"/>
+    <chart:MomentumTechnicalIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Period="3" CenterLineColor="Red"
+        XBindingPath="Date"
+        Volume="Volume"
+        MomentumLineColor="Black"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -318,21 +278,13 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 MomentumTechnicalIndicator indicator = new MomentumTechnicalIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Volume ="Volume", Period = 3,
-
     MomentumLineColor = new SolidColorBrush(Colors.Black),
-
     CenterLineColor = new SolidColorBrush(Colors.Red)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -342,7 +294,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![MomentumTechnicalIndicator type in UWP Chart](Technical-Indicators_images/momentum.png)
-
 
 ## Stochastic 
 
@@ -358,15 +309,17 @@ You can define stochastic technical indicator using the following code example:
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:StochasticTechnicalIndicator ItemsSource="{Binding  ViewModel1}" 
-
-Period="3" SignalLineColor="Black" KPeriod="8" DPeriod="5"
-
-XBindingPath="Date" Volume="Volume" UpperLineColor="Blue"
-
-LowerLineColor="Purple" PeriodLineColor="Red"
-
-High="High" Low="Low" Open="Open" Close="Close"/>
+    <chart:StochasticTechnicalIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Period="3" KPeriod="8" DPeriod="5"
+        SignalLineColor="Black"
+        UpperLineColor="Blue"
+        LowerLineColor="Purple"
+        PeriodLineColor="Red"
+        XBindingPath="Date"
+        Volume="Volume"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -376,25 +329,15 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 StochasticTechnicalIndicator indicator = new StochasticTechnicalIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date", Volume = "Volume",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Period = 3,KPeriod = 8,DPeriod = 5,
-
     SignalLineColor = new SolidColorBrush(Colors.Black),
-
     PeriodLineColor = new SolidColorBrush(Colors.Red),
-
     UpperLineColor = new SolidColorBrush(Colors.Blue),
-
     LowerLineColor = new SolidColorBrush(Colors.Purple)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -404,7 +347,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![StochasticTechnicalIndicator type in UWP Chart](Technical-Indicators_images/stochastic.png)
-
 
 ## Exponential Average
 
@@ -416,13 +358,13 @@ The [`ExponentialAverageIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusio
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:ExponentialAverageIndicator  ItemsSource="{Binding  ViewModel1}"    
-
-Period="3" XBindingPath="Date" Volume="Volume"
-
-SignalLineColor="Black" High="High" Low="Low"
-
-Open="Open" Close="Close"/>
+    <chart:ExponentialAverageIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Period="3" XBindingPath="Date"
+        Volume="Volume"
+        SignalLineColor="Black"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -432,19 +374,12 @@ Open="Open" Close="Close"/>
 
 ExponentialAverageIndicator indicator = new ExponentialAverageIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Volume ="Volume", Period = 3,
-
     SignalLineColor = new SolidColorBrush(Colors.Black)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -454,7 +389,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![ExponentialAverageIndicator type in UWP Chart](Technical-Indicators_images/exponential.png)
-
 
 ## Triangular Average 
 
@@ -466,13 +400,13 @@ The [`TriangularAverageIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:TriangularAverageIndicator  ItemsSource="{Binding  ViewModel1}"    
-
-Period="3" XBindingPath="Date" Volume="Volume"
-
-SignalLineColor="Black" High="High" Low="Low"
-
-Open="Open" Close="Close"/>
+    <chart:TriangularAverageIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Period="3" XBindingPath="Date"
+        Volume="Volume"
+        SignalLineColor="Black"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -482,19 +416,12 @@ Open="Open" Close="Close"/>
 
 TriangularAverageIndicator indicator = new TriangularAverageIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Volume ="Volume", Period = 3,
-
     SignalLineColor = new SolidColorBrush(Colors.Black)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -504,7 +431,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![TriangularAverageIndicator type in UWP Chart](Technical-Indicators_images/ta.png)
-
 
 ## Accumulation Distribution 
 
@@ -516,17 +442,12 @@ The following code example helps you add the [`AccumulationDistributionIndicator
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:AccumulationDistributionIndicator 
-
-ItemsSource="{Binding  ViewModel1}" 
-
-XBindingPath="Date" Volume="Volume"    
-
-SignalLineColor="Black" High="High" Low="Low" 
-
-Open="Open" Close="Close" >                 
-
-</chart:AccumulationDistributionIndicator >
+    <chart:AccumulationDistributionIndicator
+        ItemsSource="{Binding ViewModel1}"
+        XBindingPath="Date" Volume="Volume"
+        SignalLineColor="Black"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -536,19 +457,12 @@ Open="Open" Close="Close" >
 
 AccumulationDistributionIndicator indicator = new AccumulationDistributionIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Volume ="Volume", Period = 3,
-
     SignalLineColor = new SolidColorBrush(Colors.Black)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -558,7 +472,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![AccumulationDistributionIndicator type in UWP Chart](Technical-Indicators_images/accumulation.png)
-
 
 ## Bollinger Band
 
@@ -572,15 +485,15 @@ You can define the [`BollingerBandIndicator`](https://help.syncfusion.com/cr/uwp
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:BollingerBandIndicator 
-
-ItemsSource="{Binding  ViewModel1}" Period="3"  
-
-UpperLineColor="Blue" LowerLineColor="Red"
-
-XBindingPath="Date" Volume="Volume" SignalLineColor="Black" 
-
-High="High" Low="Low" Open="Open" Close="Close"/>
+    <chart:BollingerBandIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Period="3" UpperLineColor="Blue"
+        LowerLineColor="Red"
+        XBindingPath="Date"
+        Volume="Volume"
+        SignalLineColor="Black"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -590,23 +503,14 @@ High="High" Low="Low" Open="Open" Close="Close"/>
 
 BollingerBandIndicator indicator = new BollingerBandIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Volume ="Volume", Period = 3,
-
     SignalLineColor = new SolidColorBrush(Colors.Black),
-
     UpperLineColor = new SolidColorBrush(Colors.Blue),
-
     LowerLineColor = new SolidColorBrush(Colors.Red)
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -616,7 +520,6 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![BollingerBandIndicator type in UWP Chart](Technical-Indicators_images/bollinger.png)
-
 
 ## MACD 
 
@@ -634,17 +537,18 @@ You can define the [`MACDTechnicalIndicator`](https://help.syncfusion.com/cr/uwp
 
 <chart:SfChart.TechnicalIndicators>
 
-<chart:MACDTechnicalIndicator ItemsSource="{Binding  ViewModel1}" 
-
-Type="Line"  ShortPeriod="2" Period="3" LongPeriod="6"
-
-ConvergenceLineColor="Red" DivergenceLineColor="Blue"
-
-XBindingPath="Date" Volume="Volume" SignalLineColor="Black" 
-
-High="High" Low="Low" Open="Open" Close="Close" >
-
-</chart:MACDTechnicalIndicator >
+    <chart:MACDTechnicalIndicator
+        ItemsSource="{Binding ViewModel1}"
+        Type="Line"
+        ShortPeriod="2" Period="3"
+        LongPeriod="6"
+        ConvergenceLineColor="Red"
+        DivergenceLineColor="Blue"
+        SignalLineColor="Black"
+        XBindingPath="Date"
+        Volume="Volume"
+        High="High" Low="Low"
+        Open="Open" Close="Close" />
 
 </chart:SfChart.TechnicalIndicators>
 
@@ -654,25 +558,15 @@ High="High" Low="Low" Open="Open" Close="Close" >
 
 MACDTechnicalIndicator indicator = new MACDTechnicalIndicator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date", Volume = "Volume",
-
     Open = "Open", Close = "Close",
-
     High = "High", Low = "Low",
-
     Period = 3, ShortPeriod = 2, LongPeriod = 6,
-
     Type = MACDType.Line ,
-
     SignalLineColor = new SolidColorBrush(Colors.Black),
-
     ConvergenceLineColor = new SolidColorBrush(Colors.Red),
-
     DivergenceLineColor = new SolidColorBrush(Colors.Blue),
-
 };
 
 chart.TechnicalIndicators.Add(indicator);
@@ -682,5 +576,3 @@ chart.TechnicalIndicators.Add(indicator);
 {% endtabs %}
 
 ![MACDTechnicalIndicator type in UWP Chart](Technical-Indicators_images/macd.png)
-
-

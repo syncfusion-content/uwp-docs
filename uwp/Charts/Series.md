@@ -31,8 +31,7 @@ Column charts plot discrete rectangles for the given values. The following code 
 {% highlight xaml %}
 
 <chart:ColumnSeries Interior="#7F7F7F" ItemsSource="{Binding SneakersDetail}"           
-
-XBindingPath="Brand" YBindingPath="ItemsCount1"   />
+                    XBindingPath="Brand" YBindingPath="ItemsCount1" />
 
 {% endhighlight %}
 
@@ -40,15 +39,10 @@ XBindingPath="Brand" YBindingPath="ItemsCount1"   />
 
 ColumnSeries series = new ColumnSeries()
 {
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount1",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -68,8 +62,7 @@ Bar series are similar to column series, except for its orientation. The followi
 {% highlight xaml %}
 
 <chart:BarSeries ItemsSource="{Binding CategoricalData}" XBindingPath="Category" 
-
-YBindingPath="Value" Interior="#7F7F7F" />
+                 YBindingPath="Value" Interior="#7F7F7F" />
 
 {% endhighlight %}
 
@@ -77,15 +70,10 @@ YBindingPath="Value" Interior="#7F7F7F" />
 
 BarSeries series = new BarSeries()
 {
-
     ItemsSource = new ViewModel().CategoricalData,
-
     XBindingPath = "Category",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -104,13 +92,9 @@ The [`SegmentSpacing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Cha
 
 {% highlight xaml %}
 
-<syncfusion:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Item" YBindingPath="Price" SegmentSpacing="0.6">
-          
-</syncfusion:ColumnSeries>
+<syncfusion:ColumnSeries ItemsSource="{Binding Data}" XBindingPath="Item" YBindingPath="Price" SegmentSpacing="0.6" />
 
-<syncfusion:ColumnSeries ItemsSource="{Binding Data1}" XBindingPath="Item" YBindingPath="Price" SegmentSpacing="0.6">
-             
-</syncfusion:ColumnSeries>
+<syncfusion:ColumnSeries ItemsSource="{Binding Data1}" XBindingPath="Item" YBindingPath="Price" SegmentSpacing="0.6" />
 
 {% endhighlight %}
 
@@ -120,18 +104,14 @@ SfChart chart = new SfChart();
 
 ColumnSeries series1 = new ColumnSeries()
 {
-
     SegmentSpacing = 0.6,
-
 };
 
 chart.Series.Add(series1);
 
 ColumnSeries series2 = new ColumnSeries()
 {
-
     SegmentSpacing = 0.6
-
 };
 
 chart.Series.Add(series2);
@@ -152,17 +132,11 @@ Line series join points on a plot by straight lines, showing data trends at equa
 
 {% highlight xaml %}
 
-<chart:LineSeries  XBindingPath="Year"
+<chart:LineSeries XBindingPath="Year" ItemsSource="{Binding List}" 
+                  YBindingPath="India" Interior="#4A4A4A" />
 
-ItemsSource="{Binding List}" YBindingPath="India"               
-
-Interior="#4A4A4A"/>
-
-<chart:LineSeries  XBindingPath="Year"     
-
-ItemsSource="{Binding List}" YBindingPath="America"               
-
-Interior="#4A4A4A"/>
+<chart:LineSeries XBindingPath="Year" ItemsSource="{Binding List}"
+                  YBindingPath="America" Interior="#4A4A4A" />
 
 {% endhighlight %}
 
@@ -170,28 +144,18 @@ Interior="#4A4A4A"/>
 
 LineSeries series1 = new LineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 LineSeries series2 = new LineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "America",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series1);
@@ -204,7 +168,6 @@ chart.Series.Add(series2);
 
 ![Line chart type in UWP](Series_images/line.png)
 
-
 ### Spline
 
 [`SplineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SplineSeries.html) resembles line series, but the difference between them is that instead of connecting the data points with line segments, the data points are connected by smooth Bezier curves.
@@ -213,17 +176,11 @@ chart.Series.Add(series2);
 
 {% highlight xaml %}
 
-<chart:SplineSeries  XBindingPath="Year"     
+<chart:SplineSeries XBindingPath="Year" ItemsSource="{Binding List}" 
+                    YBindingPath="India" Interior="#4A4A4A" />
 
-ItemsSource="{Binding List}" YBindingPath="India"               
-
-Interior="#4A4A4A"/>
-
-<chart:SplineSeries  XBindingPath="Year"     
-
-ItemsSource="{Binding List}" YBindingPath="America"               
-
-Interior="#4A4A4A"/>
+<chart:SplineSeries XBindingPath="Year" ItemsSource="{Binding List}"
+                    YBindingPath="America" Interior="#4A4A4A" />
 
 {% endhighlight %}
 
@@ -231,28 +188,18 @@ Interior="#4A4A4A"/>
 
 SplineSeries series1 = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "India",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 SplineSeries series2 = new SplineSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "America",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series1);
@@ -317,9 +264,7 @@ The following code demonstrates how to set the value of SplineType to [`Cardinal
 
 {% highlight xaml %}
 
-<chart:SplineSeries SplineType="Cardinal">
-
-</chart:SplineSeries>
+<chart:SplineSeries SplineType="Cardinal" />
 
 {% endhighlight %}
 
@@ -343,9 +288,7 @@ The following code demonstrates how to set the value of SplineType to [`Monotoni
 
 {% highlight xaml %}
 
-<chart:SplineSeries SplineType="Monotonic">
-
-</chart:SplineSeries>
+<chart:SplineSeries SplineType="Monotonic" />
 
 {% endhighlight %}
 
@@ -369,9 +312,7 @@ The following code demonstrates how to set the value of SplineType to [`Clamped`
 
 {% highlight xaml %}
 
-<chart:SplineSeries SplineType="Clamped">
-
-</chart:SplineSeries>
+<chart:SplineSeries SplineType="Clamped" />
 
 {% endhighlight %}
 
@@ -399,13 +340,8 @@ The size of the bubble series is relative proportional to the value bind with th
 
 {% highlight xaml %}
 
-<chart:BubbleSeries  ItemsSource="{Binding Fruits}"  XBindingPath="FruitName" 
-
-YBindingPath="People"   Size="Size" MinimumRadius="5" 
-
-MaximumRadius="10"
-
-Interior="#BCBCBC" />
+<chart:BubbleSeries ItemsSource="{Binding Fruits}"  XBindingPath="FruitName" YBindingPath="People" 
+                    Size="Size" MinimumRadius="5" MaximumRadius="10" Interior="#BCBCBC" />
 
 {% endhighlight %}
 
@@ -413,19 +349,12 @@ Interior="#BCBCBC" />
 
 BubbleSeries series = new BubbleSeries()
 {
-
     ItemsSource = new ViewModel().Fruits,
-
     XBindingPath = "FruitName",
-
     YBindingPath = "People",
-
     Size = "Size",
-
     MinimumRadius = 5,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -444,11 +373,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:ScatterSeries Interior="#4A4A4A" ScatterHeight="4" ScatterWidth="4" 
-
-ItemsSource="{Binding DataPoints}" XBindingPath="Eruptions" 
-
-YBindingPath="WaitingTime"/>
+<chart:ScatterSeries Interior="#4A4A4A" ScatterHeight="4" ScatterWidth="4" ItemsSource="{Binding DataPoints}" 
+                     XBindingPath="Eruptions" YBindingPath="WaitingTime" />
 
 {% endhighlight %}
 
@@ -456,19 +382,12 @@ YBindingPath="WaitingTime"/>
 
 ScatterSeries series = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().DataPoints,
-
     XBindingPath = "Eruptions",
-
     YBindingPath = "WaitingTime",
-
     ScatterHeight = 4,
-
     ScatterWidth = 4,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -492,8 +411,7 @@ The following code example initializes the [`AreaSeries`](https://help.syncfusio
 {% highlight xaml %}
 
 <chart:AreaSeries XBindingPath="FruitName" Interior="#BCBCBC" 
-
-YBindingPath="People" ItemsSource="{Binding Fruits}" >   
+                  YBindingPath="People" ItemsSource="{Binding Fruits}" />   
 
 {% endhighlight %}
 
@@ -501,15 +419,10 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" >
 
 AreaSeries series = new AreaSeries()
 {
-
     ItemsSource = new ViewModel().Fruits,
-
     XBindingPath = "FruitName",
-
     YBindingPath = "People",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -528,11 +441,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:SplineAreaSeries Interior="#7F7F7F"              
-
-ItemsSource="{Binding Products}" XBindingPath="ProdName"     
-
-YBindingPath="Price" />
+<chart:SplineAreaSeries Interior="#7F7F7F" ItemsSource="{Binding Products}"
+                        XBindingPath="ProdName" YBindingPath="Price" />
 
 {% endhighlight %}
 
@@ -540,15 +450,10 @@ YBindingPath="Price" />
 
 SplineAreaSeries series = new SplineAreaSeries()
 {
-
     ItemsSource = new ViewModel().Products,
-
     XBindingPath = "ProdName",
-
     YBindingPath = "Price",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -559,7 +464,6 @@ chart.Series.Add(series);
 
 ![SplineArea chart type in UWP](Series_images/splinearea.png)
 
-
 ### Step Area
 
 [`StepAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StepAreaSeries.html) is similar to [`AreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AreaSeries.html) but it does not use the shortest distance to connect two data points using Bezier curves. Instead, this [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html) uses vertical and horizontal lines to connect the data points in a series forming a step-like progression.
@@ -568,11 +472,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:StepAreaSeries  Interior="#7F7F7F"  
-
-ItemsSource="{Binding SneakersDetail}" XBindingPath="Brand" 
-
-YBindingPath="ItemsCount"/>
+<chart:StepAreaSeries Interior="#7F7F7F" ItemsSource="{Binding SneakersDetail}"
+                      XBindingPath="Brand" YBindingPath="ItemsCount" />
 
 {% endhighlight %}
 
@@ -580,15 +481,10 @@ YBindingPath="ItemsCount"/>
 
 StepAreaSeries series = new StepAreaSeries()
 {
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -607,11 +503,8 @@ If you wish to draw the open area series (Area with stroke only at top), [`SfCha
 
 {% highlight xaml %}
 
-<chart:AreaSeries  IsClosed="False"
-
-XBindingPath="FruitName" Interior="#BCBCBC" 
-
-YBindingPath="People" ItemsSource="{Binding Fruits}" /> 
+<chart:AreaSeries IsClosed="False" XBindingPath="FruitName" Interior="#BCBCBC" 
+                  YBindingPath="People" ItemsSource="{Binding Fruits}" /> 
 
 {% endhighlight %}
 
@@ -619,17 +512,11 @@ YBindingPath="People" ItemsSource="{Binding Fruits}" />
 
 AreaSeries series = new AreaSeries()
 {
-
     ItemsSource = new ViewModel().Fruits,
-
     XBindingPath = "FruitName",
-
     YBindingPath = "People",
-
     IsClosed = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -639,7 +526,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Closed area chart type in UWP](Series_images/closedarea.png)
-
 
 ## Pie and Doughnut Charts
 
@@ -651,11 +537,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:PieSeries XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+<chart:PieSeries XBindingPath="Category" ItemsSource="{Binding Tax}" 
+                 YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -663,13 +546,9 @@ YBindingPath="Percentage"/>
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage"
-
 };
 
 chart.Series.Add(series);
@@ -686,13 +565,8 @@ The rendering size of the [`PieSeries`](https://help.syncfusion.com/cr/uwp/Syncf
 
 {% highlight xaml %}
 
-<chart:PieSeries PieCoefficient="0.9" 
-
-XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+<chart:PieSeries PieCoefficient="0.9" XBindingPath="Category" 
+                 ItemsSource="{Binding Tax}" YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -700,15 +574,10 @@ YBindingPath="Percentage"/>
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     PieCoefficient = 0.9
-
 };
 
 chart.Series.Add(series);
@@ -729,11 +598,8 @@ The DoughnutSeries can be added to chart as in below code example:
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries XBindingPath="Category"
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage"/>
+<chart:DoughnutSeries XBindingPath="Category" ItemsSource="{Binding Tax}" 
+                      YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -741,11 +607,8 @@ YBindingPath="Percentage"/>
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage"
 };
 
@@ -763,11 +626,8 @@ The Doughnut also having coefficient property, [`DoughnutCoefficient`](https://h
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries DoughnutCoefficient="0.7"                    
-
-XBindingPath="Category" ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage" />
+<chart:DoughnutSeries DoughnutCoefficient="0.7" XBindingPath="Category" 
+                      ItemsSource="{Binding Tax}" YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -775,13 +635,9 @@ YBindingPath="Percentage" />
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     DoughnutCoefficient = 0.9
 };
 
@@ -801,13 +657,8 @@ By having custom [`StartAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries StartAngle="180" EndAngle="360"    
-
-XBindingPath="Utilization" 
-
-YBindingPath="ResponseTime"
-
-ItemsSource="{Binding}"/>
+<syncfusion:PieSeries StartAngle="180" EndAngle="360" XBindingPath="Utilization" 
+                      YBindingPath="ResponseTime" ItemsSource="{Binding}" />
 
 {% endhighlight %}
 
@@ -815,17 +666,11 @@ ItemsSource="{Binding}"/>
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Value,
-
     XBindingPath = "Utilization",
-
     YBindingPath = "ResponseTime",
-
     StartAngle = 180,
-
     EndAngle = 360
-
 };
 
 chart.Series.Add(series);
@@ -840,13 +685,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" 
-
-XBindingPath="Utilization"
-
-YBindingPath="ResponseTime" 
-
-ItemsSource="{Binding}"/>
+<syncfusion:DoughnutSeries StartAngle="180" EndAngle="360" XBindingPath="Utilization"
+                           YBindingPath="ResponseTime" ItemsSource="{Binding}"/>
 
 {% endhighlight %}
 
@@ -854,17 +694,11 @@ ItemsSource="{Binding}"/>
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Value,
-
     XBindingPath = "Utilization",
-
     YBindingPath = "ResponseTime",
-
     StartAngle = 180,
-
     EndAngle = 360
-
 };
 
 chart.Series.Add(series);
@@ -890,15 +724,8 @@ The following properties are used to explode the individual segments in Pie, Dou
 
 {% highlight xaml %}
 
-<syncfusion:PieSeries ItemsSource="{Binding}"          
-
-ExplodeIndex="2"
-
-ExplodeRadius="10"
-
-XBindingPath="Utilization" 
-
-YBindingPath="ResponseTime" />
+<syncfusion:PieSeries ItemsSource="{Binding}" ExplodeIndex="2" ExplodeRadius="10"
+                      XBindingPath="Utilization" YBindingPath="ResponseTime" />
 
 {% endhighlight %}
 
@@ -906,17 +733,11 @@ YBindingPath="ResponseTime" />
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Utilization",
-
     YBindingPath = "ResponseTime",
-
     ExplodeIndex = 2,
-
     ExplodeRadius = 10
-
 };
 
 chart.Series.Add(series);
@@ -935,15 +756,8 @@ N> We have defined [`ExplodeRadius`](https://help.syncfusion.com/cr/uwp/Syncfusi
 
 {% highlight xaml %}
 
-<chart:PieSeries ExplodeAll="True"
-
-ExplodeRadius="15"
-
-XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}" 
-
-YBindingPath="Percentage">
+<chart:PieSeries ExplodeAll="True" ExplodeRadius="15" XBindingPath="Category" 
+                 ItemsSource="{Binding Tax}" YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -951,17 +765,11 @@ YBindingPath="Percentage">
 
 PieSeries series = new PieSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     ExplodeAll = true,
-
     ExplodeRadius = 15
-
 };
 
 chart.Series.Add(series);
@@ -972,7 +780,7 @@ chart.Series.Add(series);
 
 ![Exploding all the segments of accumlation series in UWP Chart](Series_images/explodeall.png)
 
-**Stacked** **doughnut**
+**Stacked doughnut**
 
 Doughnut segments can be separated as individual circles using the [`IsStackedDoughnut`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html#Syncfusion_UI_Xaml_Charts_DoughnutSeries_IsStackedDoughnut) property. The following properties are used to customize the stacked doughnut chart:
 
@@ -1026,8 +834,8 @@ You can add any content to the center of the doughnut chart using the [`CenterVi
 {% highlight xaml %}
 
 <syncfusion:DoughnutSeries.CenterView>
-    <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" >
-    <Image Source="/Image/Person.png" Width="164" Height="164"/>
+    <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Image Source="/Image/Person.png" Width="164" Height="164"/>
     </ContentControl>
 </syncfusion:DoughnutSeries.CenterView>
 
@@ -1066,10 +874,7 @@ doughnutSeries.CenterView = centerView;
 {% highlight xaml %}
 
 <chart:PyramidSeries XBindingPath="Category" 
-
-ItemsSource="{Binding Tax}"       
-
-YBindingPath="Percentage"/>
+                     ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -1077,13 +882,9 @@ YBindingPath="Percentage"/>
 
 PyramidSeries series = new PyramidSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage"
-
 };
 
 chart.Series.Add(series);
@@ -1094,7 +895,6 @@ chart.Series.Add(series);
 
 ![Pyramid chart type in UWP](Series_images/pyramid.png)
 
-
 The [`PyramidMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PyramidSeries.html#Syncfusion_UI_Xaml_Charts_PyramidSeries_PyramidMode) is used to define the rendering mode such as [`Surface`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Surface) or [`Linear`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartPyramidMode.html#Syncfusion_UI_Xaml_Charts_ChartPyramidMode_Linear) for pyramid segments.
 
 **PyramidMode** **as** **Surface**
@@ -1103,13 +903,8 @@ The [`PyramidMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" 
-
-PyramidMode="Surface"
-
-ItemsSource="{Binding Tax}"        
-
-YBindingPath="Percentage"/>
+<chart:PyramidSeries XBindingPath="Category" PyramidMode="Surface"
+                     ItemsSource="{Binding Tax}" YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -1117,15 +912,10 @@ YBindingPath="Percentage"/>
 
 PyramidSeries series = new PyramidSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     PyramidMode = ChartPyramidMode.Surface
-
 };
 
 chart.Series.Add(series);
@@ -1136,20 +926,14 @@ chart.Series.Add(series);
 
 ![Pyramid modes in UWP Chart](Series_images/pyramidsurface.png)
 
-
 **PyramidMode** **as** **Linear**
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:PyramidSeries XBindingPath="Category" 
-
-PyramidMode="Linear"
-
-ItemsSource="{Binding Tax}"          
-
-YBindingPath="Percentage"/>
+<chart:PyramidSeries XBindingPath="Category" PyramidMode="Linear"
+                     ItemsSource="{Binding Tax}" YBindingPath="Percentage"/>
 
 {% endhighlight %}
 
@@ -1157,15 +941,10 @@ YBindingPath="Percentage"/>
 
 PyramidSeries series = new PyramidSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     PyramidMode = ChartPyramidMode.Linear
-
 };
 
 chart.Series.Add(series);
@@ -1187,8 +966,7 @@ The following code example shows how to use the funnel series:
 {% highlight xaml %}
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"  
-
-YBindingPath="Percentage" />
+                    YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -1196,13 +974,9 @@ YBindingPath="Percentage" />
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
 };
 
 chart.Series.Add(series);
@@ -1212,7 +986,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Funnel chart type in UWP](Series_images/funnel.png)
-
 
 ### Funnel Mode
 
@@ -1225,10 +998,7 @@ The [`FunnelMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.
 {% highlight xaml %}
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"    
-
-FunnelMode="ValueIsHeight" 
-
-YBindingPath="Percentage" />
+                    FunnelMode="ValueIsHeight" YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -1236,15 +1006,10 @@ YBindingPath="Percentage" />
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     FunnelMode = ChartFunnelMode.ValueIsHeight
-
 };
 
 chart.Series.Add(series);
@@ -1262,10 +1027,7 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"    
-
-FunnelMode="ValueIsWidth" 
-
-YBindingPath="Percentage" />
+                    FunnelMode="ValueIsWidth" YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -1273,15 +1035,10 @@ YBindingPath="Percentage" />
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     FunnelMode = ChartFunnelMode.ValueIsWidth
-
 };
 
 chart.Series.Add(series);
@@ -1308,10 +1065,7 @@ The following properties are used to explode the individual segments in Pie, Dou
 {% highlight xaml %}
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"   
-
-ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage" >
-
-</chart:FunnelSeries>
+                    ExplodeIndex="4" ExplodeOffset="70" YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -1319,17 +1073,11 @@ ExplodeIndex="4"  ExplodeOffset="70" YBindingPath="Percentage" >
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     ExplodeIndex = 4,
-
     ExplodeOffset = 70
-
 };
 
 chart.Series.Add(series);
@@ -1349,10 +1097,7 @@ The gap between each segment using [`GapRatio`](https://help.syncfusion.com/cr/u
 {% highlight xaml %}
 
 <chart:FunnelSeries XBindingPath="Category" ItemsSource="{Binding list}"     
-
-GapRatio="0.5" YBindingPath="Percentage">
-
-</chart:FunnelSeries>
+                    GapRatio="0.5" YBindingPath="Percentage" />
 
 {% endhighlight %}
 
@@ -1360,15 +1105,10 @@ GapRatio="0.5" YBindingPath="Percentage">
 
 FunnelSeries series = new FunnelSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     GapRatio = 0.5
-
 };
 
 chart.Series.Add(series);
@@ -1391,15 +1131,8 @@ The following code example illustrates the use of radar series:
 
 {% highlight xaml %}
 
-<chart:RadarSeries ItemsSource="{Binding PlantDetails}" 
-
-Interior="#BCBCBC"
-
-XBindingPath="Direction"
-
-YBindingPath="Tree" >
-
-</chart:RadarSeries>        
+<chart:RadarSeries ItemsSource="{Binding PlantDetails}" Interior="#BCBCBC"
+                   XBindingPath="Direction" YBindingPath="Tree" />    
 
 {% endhighlight %}
 
@@ -1407,15 +1140,10 @@ YBindingPath="Tree" >
 
 RadarSeries series = new RadarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 chart.Series.Add(series);
@@ -1426,7 +1154,6 @@ chart.Series.Add(series);
 
 ![Radar chart type in UWP](Series_images/radar.png)
 
-
 ### Polar
 
 [`PolarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PolarSeries.html) displays data points that are grouped by category, on a 360 degree circle. The following code example shows how to use polar series.
@@ -1435,13 +1162,11 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:PolarSeries Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-XBindingPath="Direction"
-
-YBindingPath="Tree" />                 
+<chart:PolarSeries
+    Interior="#4A4A4A"
+    ItemsSource="{Binding PlantDetails}"
+    XBindingPath="Direction"
+    YBindingPath="Tree" />            
 
 {% endhighlight %}
 
@@ -1449,15 +1174,10 @@ YBindingPath="Tree" />
 
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -1468,7 +1188,6 @@ chart.Series.Add(series);
 
 ![Polar chart type in UWP](Series_images/polar.png)
 
-
 The Radar and Polar charts having the following properties in common:
 
 * [`IsClosed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PolarRadarSeriesBase.html#Syncfusion_UI_Xaml_Charts_PolarRadarSeriesBase_IsClosed)
@@ -1477,22 +1196,22 @@ The Radar and Polar charts having the following properties in common:
 
 ### IsClosed
 
-
 This property used to draw the closed path as below.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-Label="Amount Spent" DrawType="Line" IsClosed="False" 
-
-XBindingPath="Direction" YBindingPath="Tree" 
-
-StrokeThickness="2" />
+<chart:PolarSeries
+    x:Name="series1"
+    Interior="#4A4A4A"
+    ItemsSource="{Binding PlantDetails}"
+    Label="Amount Spent"
+    DrawType="Line"
+    IsClosed="False"
+    XBindingPath="Direction"
+    YBindingPath="Tree"
+    StrokeThickness="2" />
 
 {% endhighlight %}
 
@@ -1500,23 +1219,14 @@ StrokeThickness="2" />
 
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     IsClosed = false,
-
     DrawType = ChartSeriesDrawType.Line,
-
     Label = "Amount Spent",
-
     StrokeThickness = 2,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -1537,13 +1247,14 @@ This property defines type of curve, whether its [`Line`](https://help.syncfusio
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-DrawType="Area" IsClosed="True" 
-
-XBindingPath="Direction" YBindingPath="Tree" />
+<chart:PolarSeries
+    x:Name="series1"
+    Interior="#4A4A4A"
+    ItemsSource="{Binding PlantDetails}"
+    DrawType="Area"
+    IsClosed="True"
+    XBindingPath="Direction"
+    YBindingPath="Tree" />
 
 {% endhighlight %}
 
@@ -1551,19 +1262,12 @@ XBindingPath="Direction" YBindingPath="Tree" />
 
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     IsClosed = True,
-
     DrawType = ChartSeriesDrawType.Area,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -1580,15 +1284,15 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:PolarSeries x:Name="series1" Interior="#4A4A4A" 
-
-ItemsSource="{Binding PlantDetails}"  
-
-DrawType="Line" IsClosed="True" 
-
-XBindingPath="Direction" YBindingPath="Tree" 
-
-StrokeThickness="2" />
+<chart:PolarSeries
+    x:Name="series1"
+    Interior="#4A4A4A"
+    ItemsSource="{Binding PlantDetails}"
+    DrawType="Line"
+    IsClosed="True"
+    XBindingPath="Direction"
+    YBindingPath="Tree"
+    StrokeThickness="2" />
 
 {% endhighlight %}
 
@@ -1596,21 +1300,13 @@ StrokeThickness="2" />
 
 PolarSeries series = new PolarSeries()
 {
-
     ItemsSource = new ViewModel().PlantDetails,
-
     XBindingPath = "Direction",
-
     YBindingPath = "Tree",
-
     IsClosed = True,
-
     DrawType = ChartSeriesDrawType.Line,
-
     StrokeThickness = 2,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -1635,13 +1331,13 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate0"/>
+    <chart:CategoryAxis  PolarAngle="Rotate0" />
 
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis PolarAngle="Rotate0"/>
+    <chart:NumericalAxis PolarAngle="Rotate0" />
 
 </chart:SfChart.SecondaryAxis>
 
@@ -1649,20 +1345,14 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 
 {% highlight c# %}
 
- chart.PrimaryAxis = new CategoryAxis()
-
- {
-
+chart.PrimaryAxis = new CategoryAxis()
+{
     PolarAngle = ChartPolarAngle.Rotate0
-
- };
+};
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-
     PolarAngle = ChartPolarAngle.Rotate0
-            
 };
 
 {% endhighlight %}
@@ -1670,7 +1360,6 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Rotation support for polar series in UWP Chart](Series_images/Rotate0.png)
-
 
 **Rotate90**
 
@@ -1682,13 +1371,13 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate90"/>
+    <chart:CategoryAxis  PolarAngle="Rotate90" />
 
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis PolarAngle="Rotate90"/>
+    <chart:NumericalAxis PolarAngle="Rotate90" />
 
 </chart:SfChart.SecondaryAxis>
 
@@ -1697,19 +1386,13 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 {% highlight c# %}
 
  chart.PrimaryAxis = new CategoryAxis()
-
  {
-
     PolarAngle = ChartPolarAngle.Rotate90
-
  };
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-
     PolarAngle = ChartPolarAngle.Rotate90
-            
 };
 
 {% endhighlight %}
@@ -1717,7 +1400,6 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Rotation support for polar series in UWP Chart](Series_images/Rotate90.png)
-
 
 **Rotate180**
 
@@ -1729,13 +1411,13 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate180"/>
+    <chart:CategoryAxis  PolarAngle="Rotate180" />
 
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis PolarAngle="Rotate180"/>
+    <chart:NumericalAxis PolarAngle="Rotate180" />
 
 </chart:SfChart.SecondaryAxis>
 
@@ -1744,19 +1426,13 @@ The below snippet explains how the axes of series has been rotated when [`PolarA
 {% highlight c# %}
 
  chart.PrimaryAxis = new CategoryAxis()
-
  {
-
     PolarAngle = ChartPolarAngle.Rotate180
-
  };
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-
     PolarAngle = ChartPolarAngle.Rotate180
-            
 };
 
 {% endhighlight %}
@@ -1764,7 +1440,6 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Rotation support for polar series in UWP Chart](Series_images/Rotate180.png)
-
 
 **Rotate270**
 
@@ -1776,13 +1451,13 @@ The below snippet explains how the axes of series has been rotated, when [`Polar
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis  PolarAngle="Rotate270"/>
+    <chart:CategoryAxis  PolarAngle="Rotate270" />
 
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis PolarAngle="Rotate270"/>
+    <chart:NumericalAxis PolarAngle="Rotate270" />
 
 </chart:SfChart.SecondaryAxis>
 
@@ -1791,19 +1466,13 @@ The below snippet explains how the axes of series has been rotated, when [`Polar
 {% highlight c# %}
 
  chart.PrimaryAxis = new CategoryAxis()
-
  {
-
     PolarAngle = ChartPolarAngle.Rotate270
-
  };
 
 chart.SecondaryAxis = new NumericalAxis()
-
 {
-
-    PolarAngle = ChartPolarAngle.Rotate270
-            
+    PolarAngle = ChartPolarAngle.Rotate270     
 };
 
 {% endhighlight %}
@@ -1811,7 +1480,6 @@ chart.SecondaryAxis = new NumericalAxis()
 {% endtabs %}
 
 ![Rotation support for polar series in UWP Chart](Series_images/Rotate270.png)
-
 
 ## Financial Charts
 
@@ -1825,13 +1493,14 @@ The following code example shows how to use OHLC series:
 
 {% highlight xaml %}
 
-<chart:HiLoOpenCloseSeries ItemsSource="{Binding StockPriceDetails}" 
-
-XBindingPath="Date"  High="High" Low="Low"                         
-
-Interior="#4A4A4A"
-
-Open="Open" Close="Close"  />
+<chart:HiLoOpenCloseSeries
+    ItemsSource="{Binding StockPriceDetails}"
+    XBindingPath="Date"
+    High="High"
+    Low="Low"
+    Open="Open"
+    Close="Close"
+    Interior="#4A4A4A" />
 
 {% endhighlight %}
 
@@ -1839,17 +1508,11 @@ Open="Open" Close="Close"  />
 
 HiLoOpenCloseSeries series = new HiLoOpenCloseSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     High = "High", Low = "Low",
-
     Open = "Open", Close = "Close",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -1870,13 +1533,14 @@ The values for this series can be bind using [`High`](https://help.syncfusion.co
 
 {% highlight xaml %}
 
-<chart:CandleSeries ItemsSource="{Binding StockPriceDetails}" 
-
-XBindingPath="Date"  High="High" Open="Open"  
-
-Close="Close" Low="Low"  
-
-Interior="#4A4A4A"/>
+<chart:CandleSeries
+    ItemsSource="{Binding StockPriceDetails}"
+    XBindingPath="Date"
+    High="High"
+    Open="Open"
+    Close="Close"
+    Low="Low"
+    Interior="#4A4A4A" />
 
 {% endhighlight %}
 
@@ -1884,17 +1548,11 @@ Interior="#4A4A4A"/>
 
 CandleSeries series = new CandleSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     High = "High", Low = "Low",
-
     Open = "Open", Close = "Close",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -1904,7 +1562,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Candle chart type in UWP](Series_images/candle.png)
-
 
 The APIs present in the Candle series are,
 * [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html#Syncfusion_UI_Xaml_Charts_FinancialSeriesBase_High)-Gets or sets the string that describes high value in Y-axis.
@@ -1927,19 +1584,12 @@ The APIs present in the Candle series are,
 
 CandleSeries series = new CandleSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     High = "High", Low = "Low",
-
     Open = "Open", Close = "Close",
-
     BearFillColor = new SolidColorBrush(Colors.Black),
-
     BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 chart.Series.Add(series);
@@ -1960,13 +1610,14 @@ The following code example shows the use of HiLo series:
 
 {% highlight xaml %}
 
-<chart:HiLoSeries Name="series" Interior="#4A4A4A" 
-
-ItemsSource="{Binding StockPriceDetails}" 
-
-XBindingPath="Date" StrokeThickness="3" 
-
-High="High" Low="Low" />
+<chart:HiLoSeries
+    Name="series"
+    Interior="#4A4A4A"
+    ItemsSource="{Binding StockPriceDetails}"
+    XBindingPath="Date"
+    StrokeThickness="3"
+    High="High"
+    Low="Low" />
 
 {% endhighlight %}
 
@@ -1974,17 +1625,11 @@ High="High" Low="Low" />
 
 HiLoSeries series = new HiLoSeries()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     High = "High", Low = "Low",
-
     StrokeThickness = 3,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -2007,35 +1652,23 @@ The following code example illustrates how to use [`StackingLineSeries`](https:/
 
 {% highlight xaml %}
 
-<chart:StackingLineSeries  
-
-XBindingPath="MonthlyExpenses"    
-
-YBindingPath="Father" 
-
-Interior="#4A4A4A"
-
-ItemsSource="{Binding Data}"/>
+<chart:StackingLineSeries
+    Interior="#4A4A4A"
+    XBindingPath="MonthlyExpenses"
+    YBindingPath="Father"
+    ItemsSource="{Binding Data}" />
 
 <chart:StackingLineSeries
+    Interior="#BCBCBC"
+    XBindingPath="MonthlyExpenses"
+    YBindingPath="Mother"
+    ItemsSource="{Binding Data}" />
 
-XBindingPath="MonthlyExpenses" 
-
-YBindingPath="Mother"
-
-Interior="#BCBCBC"
-
-ItemsSource="{Binding Data}"/> 
-
-<chart:StackingLineSeries 
-
-XBindingPath="MonthlyExpenses" 
-
-YBindingPath="Son"
-
-Interior="#7F7F7F"
-
-ItemsSource="{Binding Data}" />
+<chart:StackingLineSeries
+    Interior="#7F7F7F"
+    XBindingPath="MonthlyExpenses"
+    YBindingPath="Son"
+    ItemsSource="{Binding Data}" />
 
 {% endhighlight %}
 
@@ -2043,41 +1676,26 @@ ItemsSource="{Binding Data}" />
 
 StackingLineSeries series1 = new StackingLineSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "MonthlyExpenses",
-
     YBindingPath ="Father",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackingLineSeries series2 = new StackingLineSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "MonthlyExpenses",
-
     YBindingPath = "Mother",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingLineSeries series3 = new StackingLineSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "MonthlyExpenses",
-
     YBindingPath = "Son",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2100,30 +1718,23 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackingLine100Series ItemsSource="{Binding Data}" 
+<chart:StackingLine100Series
+    Interior="#4A4A4A"
+    ItemsSource="{Binding Data}"
+    XBindingPath="MonthlyExpenses"
+    YBindingPath="Father" />
 
-XBindingPath="MonthlyExpenses" 
+<chart:StackingLine100Series
+    Interior="#BCBCBC"
+    ItemsSource="{Binding Data}"
+    XBindingPath="MonthlyExpenses"
+    YBindingPath="Mother" />
 
-YBindingPath="Father" 
-
-Interior="#4A4A4A"
-/>
-
-<chart:StackingLine100Series ItemsSource="{Binding Data}"
-
-XBindingPath="MonthlyExpenses"  
-
-YBindingPath="Mother"
-
-Interior="#BCBCBC"/>
-
-<chart:StackingLine100Series ItemsSource="{Binding Data}"
-
-XBindingPath="MonthlyExpenses" 
-
-YBindingPath="Son"
-
-Interior="#7F7F7F"/>
+<chart:StackingLine100Series
+    Interior="#7F7F7F"
+    ItemsSource="{Binding Data}"
+    XBindingPath="MonthlyExpenses"
+    YBindingPath="Son" />
 
 {% endhighlight %}
 
@@ -2131,41 +1742,26 @@ Interior="#7F7F7F"/>
 
 StackingLine100Series series1 = new StackingLine100Series()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "MonthlyExpenses",
-
     YBindingPath = "Father",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackingLine100Series series2 = new StackingLine100Series()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "MonthlyExpenses",
-
     YBindingPath = "Mother",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingLine100Series series3 = new StackingLine100Series()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "MonthlyExpenses",
-
     YBindingPath = "Son",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2190,33 +1786,22 @@ The following code example illustrates how to use [`StackingColumnSeries`](https
 
 {% highlight xaml %}
 
-<chart:StackingColumnSeries  
+<chart:StackingColumnSeries
+    Interior="#4A4A4A"
+    XBindingPath="CountryName"
+    YBindingPath="GoldMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
-XBindingPath="CountryName"    
+<chart:StackingColumnSeries
+    Interior="#BCBCBC"
+    XBindingPath="CountryName"
+    YBindingPath="SilverMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
-YBindingPath="GoldMedals" 
-
-Interior="#4A4A4A"
-
-ItemsSource="{Binding MedalDetails}"/>
-
-<chart:StackingColumnSeries 
-
-Interior="#BCBCBC"
-
-XBindingPath="CountryName" 
-
-YBindingPath="SilverMedals"
-
-ItemsSource="{Binding MedalDetails}"/> 
-
-<chart:StackingColumnSeries 
-
-Interior="#7F7F7F"
-
-XBindingPath="CountryName" 
-
-YBindingPath="BronzeMedals" />
+<chart:StackingColumnSeries
+    Interior="#7F7F7F"
+    XBindingPath="CountryName"
+    YBindingPath="BronzeMedals" />
 
 {% endhighlight %}
 
@@ -2224,41 +1809,26 @@ YBindingPath="BronzeMedals" />
 
 StackingColumnSeries series1 = new StackingColumnSeries()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath ="GoldMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackingColumnSeries series2 = new StackingColumnSeries()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "SilverMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingColumnSeries series3 = new StackingColumnSeries()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "BronzeMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2281,27 +1851,23 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackingColumn100Series  XBindingPath="CountryName" 
+<chart:StackingColumn100Series
+    Interior="#4A4A4A"
+    XBindingPath="CountryName"
+    YBindingPath="GoldMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
-YBindingPath="GoldMedals" Interior="#4A4A4A"
+<chart:StackingColumn100Series
+    Interior="#BCBCBC"
+    XBindingPath="CountryName"
+    YBindingPath="SilverMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
-ItemsSource="{Binding MedalDetails}"/>
-
-<chart:StackingColumn100Series ItemsSource="{Binding MedalDetails}"
-
-XBindingPath="CountryName"  
-
-YBindingPath="SilverMedals"
-
-Interior="#BCBCBC"/>
-
-<chart:StackingColumn100Series Interior="#7F7F7F"
-
-XBindingPath="CountryName" 
-
-YBindingPath="BronzeMedals"
-
-ItemsSource="{Binding MedalDetails}"/>
+<chart:StackingColumn100Series
+    Interior="#7F7F7F"
+    XBindingPath="CountryName"
+    YBindingPath="BronzeMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
 {% endhighlight %}
 
@@ -2309,41 +1875,26 @@ ItemsSource="{Binding MedalDetails}"/>
 
 StackingColumn100Series series1 = new StackingColumn100Series()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "GoldMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackingColumn100Series series2 = new StackingColumn100Series()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "SilverMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingColumn100Series series3 = new StackingColumn100Series()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "BronzeMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2366,35 +1917,23 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackingBarSeries XBindingPath="CountryName"        
+<chart:StackingBarSeries
+    Interior="#BCBCBC"
+    XBindingPath="CountryName"
+    YBindingPath="GoldMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
-Interior="#BCBCBC"
+<chart:StackingBarSeries
+    Interior="#4A4A4A"
+    XBindingPath="CountryName"
+    YBindingPath="SilverMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
-YBindingPath="GoldMedals" 
-
-ItemsSource="{Binding MedalDetails}" >
-
-</chart:StackingBarSeries>
-
-<chart:StackingBarSeries Interior="#4A4A4A"
-
-XBindingPath="CountryName" 
-
-YBindingPath="SilverMedals" 
-
-ItemsSource="{Binding MedalDetails}">
-
-</chart:StackingBarSeries>
-
-<chart:StackingBarSeries Interior="#7F7F7F"
-
-XBindingPath="CountryName" 
-
-YBindingPath="BronzeMedals"
-
-ItemsSource="{Binding MedalDetails}" >
-
-</chart:StackingBarSeries>
+<chart:StackingBarSeries
+    Interior="#7F7F7F"
+    XBindingPath="CountryName"
+    YBindingPath="BronzeMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
 {% endhighlight %}
 
@@ -2402,41 +1941,26 @@ ItemsSource="{Binding MedalDetails}" >
 
 StackingBarSeries series1 = new StackingBarSeries()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "GoldMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackingBarSeries series2 = new StackingBarSeries()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "SilverMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingBarSeries series3 = new StackingBarSeries()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "BronzeMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2451,7 +1975,6 @@ chart.Series.Add(series3);
 
 ![StackingBar chart type in UWP](Series_images/stackingbar.png)
 
-
 ### Stacking Bar 100
 
 [`StackingBar100Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingBar100Series.html) resembles a [`StackingBarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingBarSeries.html). [`StackingBar100Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingBar100Series.html) displays multiple series as stacked bars and the cumulative portion of each stacked element is always 100%. 
@@ -2460,29 +1983,23 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackingBar100Series Interior="#BCBCBC"
+<chart:StackingBar100Series
+    Interior="#BCBCBC"
+    XBindingPath="CountryName"
+    YBindingPath="GoldMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
-XBindingPath="CountryName" 
+<chart:StackingBar100Series
+    Interior="#4A4A4A"
+    XBindingPath="CountryName"
+    YBindingPath="SilverMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
-YBindingPath="GoldMedals" 
-
-ItemsSource="{Binding MedalDetails}" />
-
-<chart:StackingBar100Series Interior="#4A4A4A" 
-
-XBindingPath="CountryName"                          
-
-YBindingPath="SilverMedals" 
-
-ItemsSource="{Binding MedalDetails}" />
-
-<chart:StackingBar100Series Interior="#7F7F7F" 
-
-XBindingPath="CountryName" 
-
-YBindingPath="BronzeMedals" 
-
-ItemsSource="{Binding MedalDetails}" />
+<chart:StackingBar100Series
+    Interior="#7F7F7F"
+    XBindingPath="CountryName"
+    YBindingPath="BronzeMedals"
+    ItemsSource="{Binding MedalDetails}" />
 
 {% endhighlight %}
 
@@ -2490,41 +2007,26 @@ ItemsSource="{Binding MedalDetails}" />
 
 StackingBar100Series series1 = new StackingBar100Series()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "GoldMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackingBar100Series series2 = new StackingBar100Series()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "SilverMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingBar100Series series3 = new StackingBar100Series()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "BronzeMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2547,25 +2049,23 @@ chart.Series.Add(series3);
 
 {% highlight xaml %}
 
-<chart:StackingAreaSeries Interior="#BCBCBC" 
+<chart:StackingAreaSeries
+    Interior="#BCBCBC"
+    XBindingPath="Month"
+    YBindingPath="Bus"
+    ItemsSource="{Binding Accidents}" />
 
-XBindingPath="Month" YBindingPath="Bus" 
+<chart:StackingAreaSeries
+    Interior="#4A4A4A"
+    XBindingPath="Month"
+    YBindingPath="Car"
+    ItemsSource="{Binding Accidents}" />
 
-ItemsSource="{Binding Accidents}" />
-
-<chart:StackingAreaSeries Interior="#4A4A4A"                  
-
-XBindingPath="Month" YBindingPath="Car" 
-
-ItemsSource="{Binding Accidents}" />
-
-<chart:StackingAreaSeries  Interior="#7F7F7FC"                     
-
-XBindingPath="Month" 
-
-YBindingPath="Truck" 
-
-ItemsSource="{Binding Accidents}" />
+<chart:StackingAreaSeries
+    Interior="#7F7F7F"
+    XBindingPath="Month"
+    YBindingPath="Truck"
+    ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
@@ -2573,41 +2073,26 @@ ItemsSource="{Binding Accidents}" />
 
 StackingAreaSeries series1 = new StackingAreaSeries()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Bus",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackingAreaSeries series2 = new StackingAreaSeries()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Car",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingAreaSeries series3 = new StackingAreaSeries()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Truck",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2632,29 +2117,23 @@ The following code example shows the way to add stacking area 100 series:
 
 {% highlight xaml %}
 
-<chart:StackingArea100Series Interior="#BCBCBC" 
+<chart:StackingArea100Series
+    Interior="#BCBCBC"
+    XBindingPath="Month"
+    YBindingPath="Bus"
+    ItemsSource="{Binding Accidents}" />
 
-XBindingPath="Month"         
+<chart:StackingArea100Series
+    Interior="#4A4A4A"
+    XBindingPath="Month"
+    YBindingPath="Car"
+    ItemsSource="{Binding Accidents}" />
 
-YBindingPath="Bus" 
-
-ItemsSource="{Binding Accidents}" 
-
-/>
-
-<chart:StackingArea100Series Interior="#4A4A4A" 
-
-XBindingPath="Month" YBindingPath="Car" 
-
-ItemsSource="{Binding Accidents}" />
-
-<chart:StackingArea100Series Interior="#7F7F7F" 
-
-XBindingPath="Month" 
-
-YBindingPath="Truck" 
-
-ItemsSource="{Binding Accidents}" />
+<chart:StackingArea100Series
+    Interior="#7F7F7F"
+    XBindingPath="Month"
+    YBindingPath="Truck"
+    ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
@@ -2662,41 +2141,26 @@ ItemsSource="{Binding Accidents}" />
 
 StackingArea100Series series1 = new StackingArea100Series()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Bus",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 StackingArea100Series series2 = new StackingArea100Series()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Car",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingArea100Series series3 = new StackingArea100Series()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Truck",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2717,31 +2181,32 @@ You can draw open curve like Area using this [`IsClosed`](https://help.syncfusio
 
 {% highlight xaml %}
 
-<chart:StackingAreaSeries  Interior="#BCBCBC" Stroke="Black" StrokeThickness="3"
+<chart:StackingAreaSeries
+    Interior="#BCBCBC"
+    Stroke="Black"
+    StrokeThickness="3"
+    IsClosed="False"
+    XBindingPath="Month"
+    YBindingPath="Bus"
+    ItemsSource="{Binding Accidents}" />
 
-IsClosed="False" XBindingPath="Month" 
+<chart:StackingAreaSeries
+    Interior="#777777"
+    Stroke="White"
+    StrokeThickness="3"
+    IsClosed="False"
+    XBindingPath="Month"
+    YBindingPath="Car"
+    ItemsSource="{Binding Accidents}" />
 
-YBindingPath="Bus" 
-
-ItemsSource="{Binding Accidents}"/>
-
-<chart:StackingAreaSeries  Interior="#777777" Stroke="White" StrokeThickness="3"
-
-IsClosed="False"  XBindingPath="Month"             
-
-YBindingPath="Car"
-
-ItemsSource="{Binding Accidents}"/>
-
-<chart:StackingAreaSeries  Interior="#7F7F7F" Stroke="Black"   
-
-StrokeThickness="3" IsClosed="False"   
-
-XBindingPath="Month" 
-
-YBindingPath="Truck" 
-
-ItemsSource="{Binding Accidents}" />
+<chart:StackingAreaSeries
+    Interior="#7F7F7F"
+    Stroke="Black"
+    StrokeThickness="3"
+    IsClosed="False"
+    XBindingPath="Month"
+    YBindingPath="Truck"
+    ItemsSource="{Binding Accidents}" />
 
 {% endhighlight %}
 
@@ -2749,59 +2214,35 @@ ItemsSource="{Binding Accidents}" />
 
 StackingAreaSeries series1 = new StackingAreaSeries()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Bus",
-
     Stroke = new SolidColorBrush(Colors.Black),
-
     StrokeThickness = 3,
-
     IsClosed = false,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 StackingAreaSeries series2 = new StackingAreaSeries()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Car",
-
     Stroke = new SolidColorBrush(Colors.White),
-
     StrokeThickness = 3,
-
     IsClosed = false,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0X77))
-
 };
 
 StackingAreaSeries series3 = new StackingAreaSeries()
 {
-
     ItemsSource = new ViewModel().Accidents,
-
     XBindingPath = "Month",
-
     YBindingPath = "Truck",
-
     Stroke = new SolidColorBrush(Colors.Black),
-
     StrokeThickness = 3,
-
     IsClosed = false,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series1);
@@ -2816,7 +2257,6 @@ chart.Series.Add(series3);
 
 ![IsClosed support for stacking area series in UWP Chart](Series_images/stackingarea_closed.png)
 
-
 ### Grouping Stacked Series
 
 You can group the stacked series using [`GroupingLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StackingSeriesBase.html#Syncfusion_UI_Xaml_Charts_StackingSeriesBase_GroupingLabel) property. The following code example shows how to group the stacking series.
@@ -2825,45 +2265,33 @@ You can group the stacked series using [`GroupingLabel`](https://help.syncfusion
 
 {% highlight xaml %}
 
-<chart:StackingColumnSeries   Interior="#4A4A4A"
+<chart:StackingColumnSeries
+    Interior="#4A4A4A"
+    GroupingLabel="Group1"
+    XBindingPath="Year"
+    YBindingPath="Quarter1"
+    ItemsSource="{Binding AnnualDetails}" />
 
-GroupingLabel="Group1" 
+<chart:StackingColumnSeries
+    Interior="#BCBCBC"
+    GroupingLabel="Group1"
+    XBindingPath="Year"
+    YBindingPath="Quarter2"
+    ItemsSource="{Binding AnnualDetails}" />
 
-XBindingPath="Year" 
+<chart:StackingColumnSeries
+    Interior="#7F7F7F"
+    GroupingLabel="Group2"
+    XBindingPath="Year"
+    YBindingPath="Quarter3"
+    ItemsSource="{Binding AnnualDetails}" />
 
-YBindingPath="Quarter1" 
-
-ItemsSource="{Binding AnnualDetails}"/>
-
-<chart:StackingColumnSeries Interior="#BCBCBC"
-
-GroupingLabel="Group1" 
-
-XBindingPath="Year" 
-
-YBindingPath="Quarter2" 
-
-ItemsSource="{Binding AnnualDetails}"/>
-
-<chart:StackingColumnSeries Interior="#7F7F7F"
-
-XBindingPath="Year" 
-
-GroupingLabel="Group2" 
-
-YBindingPath="Quarter3" 
-
-ItemsSource="{Binding AnnualDetails}"/>
-
-<chart:StackingColumnSeries XBindingPath="Year" 
-
-GroupingLabel="Group2"
-
-Interior="#343434"
-
-YBindingPath="Quarter4" 
-
-ItemsSource="{Binding AnnualDetails}"/>
+<chart:StackingColumnSeries
+    Interior="#343434"
+    GroupingLabel="Group2"
+    XBindingPath="Year"
+    YBindingPath="Quarter4"
+    ItemsSource="{Binding AnnualDetails}" />
 
 {% endhighlight %}
 
@@ -2871,62 +2299,38 @@ ItemsSource="{Binding AnnualDetails}"/>
 
 StackingColumnSeries series1 = new StackingColumnSeries()
 {
-
     ItemsSource = new ViewModel().AnnualDetails,
-
     XBindingPath = "Year",
-
     YBindingPath = "Quarter1",
-
     GroupingLabel="Group1",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A,0x4A,0x4A))
-
 };
 
 StackingColumnSeries series2 = new StackingColumnSeries()
 {
-
     ItemsSource = new ViewModel().AnnualDetails,
-
     XBindingPath = "Year",
-
     YBindingPath = "Quarter2",
-
     GroupingLabel = "Group1",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 StackingColumnSeries series3 = new StackingColumnSeries()
 {
-
     ItemsSource = new ViewModel().AnnualDetails,
-
     XBindingPath = "Year",
-
     YBindingPath = "Quarter3",
-
     GroupingLabel = "Group2",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 StackingColumnSeries series4 = new StackingColumnSeries()
 {
-
     ItemsSource = new ViewModel().AnnualDetails,
-
     XBindingPath = "Year",
-
     YBindingPath = "Quarter4",
-
     GroupingLabel = "Group2",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x34, 0x34, 0x34))
-
 };
 
 chart.Series.Add(series1);
@@ -2943,7 +2347,6 @@ chart.Series.Add(series4);
 
 ![Grouping of stacking series in UWP Chart](Series_images/groupingstacking.png)
 
-
 ## Range Series
 
 ### Range Column
@@ -2954,11 +2357,8 @@ chart.Series.Add(series4);
 
 {% highlight xaml %}
 
-<chart:RangeColumnSeries  ItemsSource="{Binding FinancialData}" 
-
-XBindingPath="Time" Interior="#4A4A4A"
-
-High="High" Low="Low"  />
+<chart:RangeColumnSeries ItemsSource="{Binding FinancialData}" XBindingPath="Time"
+                         Interior="#4A4A4A" High="High" Low="Low"  />
 
 {% endhighlight %}
 
@@ -2966,15 +2366,10 @@ High="High" Low="Low"  />
 
 RangeColumnSeries series = new RangeColumnSeries()
 {
-
     ItemsSource = new ViewModel().FinancialData,
-
     XBindingPath = "Time",
-
     High = "High", Low = "Low",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -2985,7 +2380,6 @@ chart.Series.Add(series);
 
 ![RangeColumn chart type in UWP](Series_images/rangeseries.png)
 
-
 ### Range Area
 
 [`RangeAreaSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html) is used to display continuous data points as a set of lines that vary between [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_High) and [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeSeriesBase.html#Syncfusion_UI_Xaml_Charts_RangeSeriesBase_Low) values over intervals of time and across different categories. 
@@ -2994,13 +2388,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:RangeAreaSeries XBindingPath="ProdName" 
-
-High="Stock" Low="Price"   
-
-Interior="#BCBCBC"        
-
-ItemsSource="{Binding Products}" />
+<chart:RangeAreaSeries XBindingPath="ProdName" High="Stock" Low="Price" Interior="#BCBCBC"        
+                       ItemsSource="{Binding Products}" />
 
 {% endhighlight %}
 
@@ -3008,15 +2397,10 @@ ItemsSource="{Binding Products}" />
 
 RangeAreaSeries series = new RangeAreaSeries()
 {
-
     ItemsSource = new ViewModel().Products,
-
     XBindingPath = "ProdName",
-
     High = "Stock", Low = "Price",
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -3027,7 +2411,6 @@ chart.Series.Add(series);
 
 ![RangeArea chart type in UWP](Series_images/rangearea.png)
 
-
 The APIs present in the RangeArea series are,
 
 * [`HighValueInterior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeAreaSeries.html#Syncfusion_UI_Xaml_Charts_RangeAreaSeries_HighValueInterior) -Gets or sets the brush that represents the interior color for the high value data.
@@ -3037,15 +2420,8 @@ The APIs present in the RangeArea series are,
 
 {% highlight xaml %}
 
-<chart:RangeAreaSeries x:Name="RangeAreaSeries" XBindingPath="ProdName" 
-
-High="Stock" Low="Price"   
-
-LowValueInterior="#4A4A4A"
-
-HighValueInterior="#777777"
-
-ItemsSource="{Binding Products}" />
+<chart:RangeAreaSeries x:Name="RangeAreaSeries" XBindingPath="ProdName" High="Stock" Low="Price"   
+                       LowValueInterior="#4A4A4A" HighValueInterior="#777777" ItemsSource="{Binding Products}" />
 
 {% endhighlight %}
 
@@ -3053,17 +2429,11 @@ ItemsSource="{Binding Products}" />
 
 RangeAreaSeries series = new RangeAreaSeries()
 {
-
     ItemsSource = new ViewModel().Products,
-
     XBindingPath = "ProdName",
-
     High = "Stock", Low = "Price",
-
     HighValueInterior = new SolidColorBrush(Color.FromRgb(0x77, 0x77, 0x77)),
-
     LowValueInterior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -3083,13 +2453,9 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:SplineRangeAreaSeries ItemsSource = "{Binding Products}"
-
                              XBindingPath="ProdName" 
-
                              High="Stock" 
-
                              Low="Price"
-
                              Interior="#BCBCBC" />
 
 {% endhighlight %}
@@ -3107,7 +2473,6 @@ splineRangeAreaSeries.High = "Stock";
 splineRangeAreaSeries.Low = "Price";
 
 splineRangeAreaSeries.Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC));
-
 
 chart.Series.Add(splineRangeAreaSeries);
 
@@ -3127,17 +2492,13 @@ The following code example shows how to add the [`HistogramSeries`](https://help
 
 {% highlight xaml %}
 
-<chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5" 
-
-Interior="#BCBCBC"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price" 
-
-YBindingPath="Value"/>
+<chart:HistogramSeries
+    x:Name="histogramSeries"
+    HistogramInterval="5"
+    Interior="#BCBCBC"
+    ItemsSource="{Binding Product}"
+    XBindingPath="Price"
+    YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -3145,17 +2506,11 @@ YBindingPath="Value"/>
 
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -3166,26 +2521,20 @@ chart.Series.Add(series);
 
 ![Histogram chart type in UWP](Series_images/histogram.png)
 
-
 You can customize interval using [`HistogramInterval`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_HistogramInterval) property and the normal distribution curve can be collapsed using [`ShowNormalDistributionCurve`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HistogramSeries.html#Syncfusion_UI_Xaml_Charts_HistogramSeries_ShowNormalDistributionCurve).
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5"
-
-ShowNormalDistributionCurve="False"
-
-Interior="#BCBCBC"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price" 
-
-YBindingPath="Value"/>
+<chart:HistogramSeries
+    x:Name="histogramSeries"
+    HistogramInterval="5"
+    ShowNormalDistributionCurve="False"
+    Interior="#BCBCBC"
+    ItemsSource="{Binding Product}"
+    XBindingPath="Price"
+    YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -3193,19 +2542,12 @@ YBindingPath="Value"/>
 
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
     ShowNormalDistributionCurve = false,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC))
-
 };
 
 chart.Series.Add(series);
@@ -3223,29 +2565,24 @@ You can customize the normal distribution curve by using the [`CurveLineStyle`](
 {% tabs %}
 
 {% highlight xaml %}
+
 ...
-<Style TargetType="Polyline" x:Key="CurveColorStyle">
-    <Setter Property="Stroke" Value="LightSeaGreen"/>
-    <Setter Property="StrokeThickness" Value="3"/>
+<Style x:Key="CurveColorStyle" TargetType="Polyline">
+    <Setter Property="Stroke" Value="LightSeaGreen" />
+    <Setter Property="StrokeThickness" Value="3" />
     <Setter Property="StrokeDashArray" Value="1,2" />
 </Style>
 ...
 
-<chart:HistogramSeries x:Name="histogramSeries" 
-
-HistogramInterval="5"
-
-ShowNormalDistributionCurve="True"
-
-CurveLineStyle="{StaticResource CurveColorStyle}"
-
-Interior="LightSkyBlue"
-
-ItemsSource="{Binding Product}"
-
-XBindingPath="Price"
-
-YBindingPath="Value"/>
+<chart:HistogramSeries
+    x:Name="histogramSeries"
+    HistogramInterval="5"
+    ShowNormalDistributionCurve="True"
+    CurveLineStyle="{StaticResource CurveColorStyle}"
+    Interior="LightSkyBlue"
+    ItemsSource="{Binding Product}"
+    XBindingPath="Price"
+    YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -3254,21 +2591,13 @@ YBindingPath="Value"/>
 ...
 HistogramSeries series = new HistogramSeries()
 {
-
     ItemsSource = new ViewModel().Product,
-
     XBindingPath = "Price",
-
     YBindingPath = "Value",
-
     HistogramInterval = 5,
-
     ShowNormalDistributionCurve = True,
-
     CurveLineStyle = histogramChart.Resources["CurveColorStyle"] as Style,
-
     Interior = new SolidColorBrush(new SolidColorBrush(Colors.LightSkyBlue))
-
 };
 
 chart.Series.Add(series);
@@ -3288,12 +2617,7 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <syncfusion:BoxAndWhiskerSeries ItemsSource="{Binding BoxWhiskerData}"  
-                          
-    XBindingPath="Department" 
-                          
-    YBindingPath="Age">
-
-</syncfusion:BoxAndWhiskerSeries>
+                                XBindingPath="Department" YBindingPath="Age" />
 
 {% endhighlight %}
 
@@ -3333,9 +2657,7 @@ The following code demonstrates how to define the BoxPlotMode value to Normal.
 
 {% highlight xaml %}
 
-<syncfusion:BoxAndWhiskerSeries  BoxPlotMode="Normal">
-
-</syncfusion:BoxAndWhiskerSeries>
+<syncfusion:BoxAndWhiskerSeries BoxPlotMode="Normal" />
 
 {% endhighlight %}
 
@@ -3359,9 +2681,7 @@ The following code demonstrates how to define the BoxPlotMode value to Inclusive
 
 {% highlight xaml %}
 
-<syncfusion:BoxAndWhiskerSeries  BoxPlotMode="Inclusive">
-
-</syncfusion:BoxAndWhiskerSeries>
+<syncfusion:BoxAndWhiskerSeries BoxPlotMode="Inclusive" />
 
 {% endhighlight %}
 
@@ -3385,9 +2705,7 @@ The Median values of given data set is viewed by enabling the [`ShowMedian`](htt
 
 {% highlight xaml %}
 
-<syncfusion:BoxAndWhiskerSeries  ShowMedian="True">
-
-</syncfusion:BoxAndWhiskerSeries>
+<syncfusion:BoxAndWhiskerSeries ShowMedian="True" />
 
 {% endhighlight %}
 
@@ -3415,9 +2733,7 @@ The outlier value in the box plot can be viewed by enabling the [`ShowOutlier`](
 
 {% highlight xaml %}
 
-<syncfusion:BoxAndWhiskerSeries  ShowOutlier="False">
-
-</syncfusion:BoxAndWhiskerSeries>
+<syncfusion:BoxAndWhiskerSeries ShowOutlier="False" />
 
 {% endhighlight %}
 
@@ -3447,21 +2763,16 @@ The default appearance of the outlier symbol can be customized using the [`Outli
 
         <Canvas>
 
-            <Path Stretch="Fill" Height="10" Width="10"  Fill="{Binding Interior}" 
-                              
-                Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
-      
-                Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,
-            
-                78.9463L 145.193,78.9463L 145.193,103.074L 121.071,
-            
-                103.074L 121.071,78.9463L 96.946,78.9463L 96.946,
-           
-                54.8249L 121.071,54.8249L 121.071,
-            
-                30.6983L 145.193,30.6983L 145.193,54.8249 Z"/>
+            <Path
+                Stretch="Fill"
+                Height="10"
+                Width="10"
+                Fill="{Binding Interior}"
+                Canvas.Left="{Binding RectX}"
+                Canvas.Top="{Binding RectY}"
+                Data="F1 M 145.193,54.8249L 169.315,54.8249L 169.315,78.9463L 145.193,78.9463L 145.193,103.074L 121.071,103.074L 121.071,78.9463L 96.946,78.9463L 96.946,54.8249L 121.071,54.8249L 121.071,30.6983L 145.193,30.6983L 145.193,54.8249 Z" />
 
-            </Canvas>
+        </Canvas>
 
     </DataTemplate>
 
@@ -3484,12 +2795,8 @@ The following code demonstrates how to use the series in chart.
 {% highlight xaml %}
 
 <syncfusion:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
-                      
-                       XBindingPath="Category" 
-                      
-                       YBindingPath="Value">
-
-</syncfusion:WaterfallSeries>
+                            XBindingPath="Category" 
+                            YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -3522,16 +2829,10 @@ The summary segment can be differentiated by applying [`SummarySegmentBrush`](ht
 {% highlight xaml %}
 
 <syncfusion:WaterfallSeries ItemsSource="{Binding RevenueDetails}"  
-                                  
-                                   XBindingPath="Category"
-                                  
-                                   YBindingPath="Value" Interior="Gray"
-                                  
-                                   SummaryBindingPath="IsSummary"
-                                  
-                                   SummarySegmentBrush="RoyalBlue">
-
-</syncfusion:WaterfallSeries>
+                            XBindingPath="Category"
+                            YBindingPath="Value" Interior="Gray"
+                            SummaryBindingPath="IsSummary"
+                            SummarySegmentBrush="RoyalBlue" />
 
 {% endhighlight %}
 
@@ -3565,9 +2866,7 @@ The appearance of the negative segment can be changed using the [`NegativeSegmen
 
 {% highlight xaml %}
 
-<chart:WaterfallSeries NegativeSegmentBrush="Red">
-
-</chart:WaterfallSeries>
+<chart:WaterfallSeries NegativeSegmentBrush="Red" />
 
 {% endhighlight %}
 
@@ -3594,12 +2893,8 @@ The following code example demonstrates how the to set value to the AllowAutoSum
 {% highlight xaml %}
 
 <syncfusion:WaterfallSeries AllowAutoSum="False"
-                       
-    SummaryBindingPath="IsSummary"
-                       
-    SummarySegmentBrush="RoyalBlue">
- 
-</syncfusion:WaterfallSeries>
+                            SummaryBindingPath="IsSummary"
+                            SummarySegmentBrush="RoyalBlue" />
 
 {% endhighlight %}
 
@@ -3629,9 +2924,7 @@ The connector line of series can be enabled or disabled using its [`ShowConnecto
 
 {% highlight xaml %}
 
-<syncfusion:WaterfallSeries ShowConnector="False">
-
-</syncfusion:WaterfallSeries>
+<syncfusion:WaterfallSeries ShowConnector="False" />
 
 {% endhighlight %}
 
@@ -3657,15 +2950,15 @@ The connector line can be customized by applying the [`ConnectorLineStyle`](http
 
 <syncfusion:WaterfallSeries.ConnectorLineStyle>
 
-<Style TargetType="Line">
+    <Style TargetType="Line">
 
-<Setter Property="Stroke" Value="Red"/>
+        <Setter Property="Stroke" Value="Red" />
 
-<Setter Property="StrokeDashArray" Value="1"/>
+        <Setter Property="StrokeDashArray" Value="1" />
 
-<Setter Property="StrokeThickness" Value="2"/>
+        <Setter Property="StrokeThickness" Value="2" />
 
-</Style>
+    </Style>
 
 </syncfusion:WaterfallSeries.ConnectorLineStyle>
 
@@ -3702,10 +2995,7 @@ The [`FastLineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Cha
 {% highlight xaml %}
 
 <chart:FastLineSeries x:Name="FastLineSeries" ItemsSource="{Binding Data}"
-
-XBindingPath="Date" Interior="#7F7F7F"
-
-YBindingPath="Value"/>
+                      XBindingPath="Date" Interior="#7F7F7F" YBindingPath="Value"/>
 
 {% endhighlight %}
 
@@ -3713,15 +3003,10 @@ YBindingPath="Value"/>
 
 FastLineSeries series = new FastLineSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -3750,11 +3035,8 @@ The following code example shows how to use the fast line bitmap series:
 
 {% highlight xaml %}
 
-<chart:FastLineBitmapSeries ItemsSource="{Binding Data}"
-
-XBindingPath="Date" Interior="#7F7F7F" 
-
-YBindingPath="Value" />
+<chart:FastLineBitmapSeries ItemsSource="{Binding Data}" XBindingPath="Date" 
+                            Interior="#7F7F7F" YBindingPath="Value" />
 
 {% endhighlight %}
 
@@ -3764,15 +3046,10 @@ fChart chart = new SfChart();
 
 FastLineBitmapSeries series = new FastLineBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -3791,13 +3068,8 @@ N> As it was rendered using bitmap, there might be some jagged lines at edges. T
 
 {% highlight xaml %}
 
-<chart:FastLineBitmapSeries x:Name="FastLineSeries" 
-
-XBindingPath="Date" Interior="#7F7F7F" 
-
-StrokeDashArray="5,5"
-
-YBindingPath="Value" EnableAntiAliasing="True"/>
+<chart:FastLineBitmapSeries x:Name="FastLineSeries" XBindingPath="Date" Interior="#7F7F7F" 
+                            StrokeDashArray="5,5" YBindingPath="Value" EnableAntiAliasing="True"/>
 
 {% endhighlight %}
 
@@ -3805,19 +3077,12 @@ YBindingPath="Value" EnableAntiAliasing="True"/>
 
 FastLineBitmapSeries series = new FastLineBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     EnableAntiAliasing =true,
-
     StrokeDashArray =new DoubleCollection() { 5,5},
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -3827,7 +3092,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![FastLineBitmap chart type in UWP](Series_images/fastlinealiasing.png)
-
 
 ### Fast Column
 
@@ -3849,15 +3113,10 @@ XBindingPath="Date" YBindingPath="Price" />
 
 FastColumnBitmapSeries series = new FastColumnBitmapSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -3876,11 +3135,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastBarBitmapSeries ItemsSource="{Binding List}" 
-
-XBindingPath="Date" YBindingPath="Price" 
-
-Interior="#7F7F7F"/>
+<chart:FastBarBitmapSeries ItemsSource="{Binding List}" XBindingPath="Date" 
+                           YBindingPath="Price" Interior="#7F7F7F"/>
 
 {% endhighlight %}
 
@@ -3888,15 +3144,10 @@ Interior="#7F7F7F"/>
 
 FastBarBitmapSeries series = new FastBarBitmapSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x7F))
-
 };
 
 chart.Series.Add(series);
@@ -3907,7 +3158,6 @@ chart.Series.Add(series);
 
 ![FastBarBitmap chart type in UWP](Series_images/fastbar.png)
 
-
 ### Fast Candle
 
 [`FastCandleBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastCandleBitmapSeries.html) renders using bitmap and it displays each data point as a combination of a vertical column and a vertical line, like [`CandleSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CandleSeries.html). 
@@ -3916,15 +3166,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastCandleBitmapSeries ItemsSource="{Binding TestingModel}" 
-
-XBindingPath="X" High="Y" 
-
-Low="Y1" Open="Y2" Close="Y3" 
-
-BullFillColor="#BCBCBC" 
-
-BearFillColor="#4A4A4A"  />
+<chart:FastCandleBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="X" High="Y" 
+                              Low="Y1" Open="Y2" Close="Y3" BullFillColor="#BCBCBC" BearFillColor="#4A4A4A"  />
 
 {% endhighlight %}
 
@@ -3932,19 +3175,12 @@ BearFillColor="#4A4A4A"  />
 
 FastCandleBitmapSeries series = new FastCandleBitmapSeries()
 {
-
     ItemsSource = new ViewModel().TestingModel,
-
     XBindingPath = "X",
-
     High="Y", Low="Y1",
-
     Open="Y2", Close="Y3",
-
     BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
-
     BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -3955,7 +3191,6 @@ chart.Series.Add(series);
 
 ![FastCandleBitmap chart type in UWP](Series_images/fastcandle.png)
 
-
 ### Fast HiLo
 
 [`FastHiLoBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastHiLoBitmapSeries.html) represents a series of line segments with high and low values rendered using WritableBitmap. 
@@ -3965,10 +3200,7 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:FastHiLoBitmapSeries StrokeThickness="5" ItemsSource="{Binding List}"          
-
-Interior="#7F7F7F" XBindingPath="Date" High="Stock"     
-
-Low="Price"/>
+                            Interior="#7F7F7F" XBindingPath="Date" High="Stock" Low="Price"/>
 
 {% endhighlight %}
 
@@ -3976,17 +3208,11 @@ Low="Price"/>
 
 FastHiLoBitmapSeries series = new FastHiLoBitmapSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Date",
-
     High = "Stock",Low = "Price",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F)),
-
     StrokeThickness = 5
-
 };
 
 chart.Series.Add(series);
@@ -4005,13 +3231,15 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastHiLoOpenCloseBitmapSeries ItemsSource="{Binding TestingModel}" 
-
-XBindingPath="X" High="Y" Low="Y1" Open="Y2"        
-
-Close="Y3" BullFillColor="#7F7F7F"      
-
-BearFillColor="#4A4A4A"/>
+<chart:FastHiLoOpenCloseBitmapSeries
+    ItemsSource="{Binding TestingModel}"
+    XBindingPath="X"
+    High="Y"
+    Low="Y1"
+    Open="Y2"
+    Close="Y3"
+    BullFillColor="#7F7F7F"
+    BearFillColor="#4A4A4A" />
 
 {% endhighlight %}
 
@@ -4019,19 +3247,12 @@ BearFillColor="#4A4A4A"/>
 
 FastHiLoOpenCloseBitmapSeries series = new FastHiLoOpenCloseBitmapSeries()
 {
-
     ItemsSource = new ViewModel().TestingModel,
-
     XBindingPath = "X",
-
     High="Y", Low="Y1",
-
     Open="Y2", Close="Y3",
-
     BullFillColor = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0xBC)),
-
     BearFillColor = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0x4A))
-
 };
 
 chart.Series.Add(series);
@@ -4050,15 +3271,13 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastScatterBitmapSeries Interior="#7F7F7F"   
-
-ItemsSource="{Binding Data}"                         
-
-XBindingPath="Date" 
-
-YBindingPath="Value" ScatterHeight="4"  
-
-ScatterWidth="4"/>
+<chart:FastScatterBitmapSeries
+    Interior="#7F7F7F"
+    ItemsSource="{Binding Data}"
+    XBindingPath="Date"
+    YBindingPath="Value"
+    ScatterHeight="4"
+    ScatterWidth="4" />
 
 {% endhighlight %}
 
@@ -4066,19 +3285,12 @@ ScatterWidth="4"/>
 
 FastScatterBitmapSeries series = new FastScatterBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     ScatterHeight = 4,
-
     ScatterWidth = 4,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0X7F))
-
 };
 
 chart.Series.Add(series);
@@ -4089,7 +3301,6 @@ chart.Series.Add(series);
 
 ![FastScatterBitmap chart type in UWP](Series_images/fastscatter.png)
 
-
 ### Fast Step Line
 
 [`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) is the high performance version of [`StepLineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StepLineSeries.html).
@@ -4098,11 +3309,8 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}"
-
-XBindingPath="Date"                                 
-
-YBindingPath="Value" Interior="#4A4A4A" />
+<chart:FastStepLineBitmapSeries ItemsSource="{Binding Data}" 
+                                XBindingPath="Date" YBindingPath="Value" Interior="#4A4A4A" />
 
 {% endhighlight %}
 
@@ -4110,15 +3318,10 @@ YBindingPath="Value" Interior="#4A4A4A" />
 
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -4129,18 +3332,14 @@ chart.Series.Add(series);
 
 ![FastStepLineBitmap chart type in UWP](Series_images/faststepline.png)
 
-
 The anti aliasing mode can be enabled using [`EnableAntiAliasing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html#Syncfusion_UI_Xaml_Charts_FastStepLineBitmapSeries_EnableAntiAliasing) property of [`FastStepLineBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastStepLineBitmapSeries.html) as in below code snippet:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}"
-
-XBindingPath="Date" 
-
-YBindingPath="Value" Interior="#4A4A4A"/>
+<chart:FastStepLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding Data}" 
+                                XBindingPath="Date" YBindingPath="Value" Interior="#4A4A4A"/>
 
 {% endhighlight %}
 
@@ -4148,17 +3347,11 @@ YBindingPath="Value" Interior="#4A4A4A"/>
 
 FastStepLineBitmapSeries series = new FastStepLineBitmapSeries()
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Date",
-
     YBindingPath = "Value",
-
     EnableAntiAliasing = true ,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -4169,7 +3362,6 @@ chart.Series.Add(series);
 
 ![EnableAntiAliasing support in UWP Chart](Series_images/faststepline_alias.png)
 
-
 ### Fast Stacking Column
 
 [`FastStackingColumnBitmapSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FastStackingColumnBitmapSeries.html) similar to StackingColumnSeries except that it loads faster and provides better performance. 
@@ -4178,13 +3370,12 @@ chart.Series.Add(series);
 
 {% highlight xaml %}
 
-<chart:FastStackingColumnBitmapSeries StrokeThickness="5"
-
-ItemsSource="{Binding MedalDetails}”       
-
-XBindingPath="CountryName" YBindingPath="GoldMedals"  
-
-Interior="#4A4A4A" />
+<chart:FastStackingColumnBitmapSeries
+    StrokeThickness="5"
+    ItemsSource="{Binding MedalDetails}"
+    XBindingPath="CountryName"
+    YBindingPath="GoldMedals"
+    Interior="#4A4A4A" />
 
 {% endhighlight %}
 
@@ -4192,15 +3383,10 @@ Interior="#4A4A4A" />
 
 FastStackingColumnBitmapSeries series = new FastStackingColumnBitmapSeries()
 {
-
     ItemsSource = new ViewModel().MedalDetails,
-
     XBindingPath = "CountryName",
-
     YBindingPath = "GoldMedals",
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4A, 0x4A, 0X4A))
-
 };
 
 chart.Series.Add(series);
@@ -4220,14 +3406,10 @@ chart.Series.Add(series);
 {% highlight xaml %}
 
 <chart:FastRangeAreaBitmapSeries ItemsSource = "{Binding Data}"
-
-                             XBindingPath="Date" 
-					 
-                             High="HighTemperature" 
-					 
-                             Low="LowTemperature"        
-					                                      
-                             Interior="#7F7F7F" />
+                                 XBindingPath="Date" 
+                                 High="HighTemperature" 
+                                 Low="LowTemperature"        
+                                 Interior="#7F7F7F" />
 
 {% endhighlight %}
 
@@ -4245,7 +3427,6 @@ fastRangeAreaBitmapSeries.Low = "LowTemperature";
 
 fastRangeAreaBitmapSeries.Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x75));
 
-
 chart.Series.Add(fastRangeAreaBitmapSeries);
 
 {% endhighlight %}
@@ -4261,15 +3442,10 @@ The anti-aliasing mode can be enabled using  [`EnableAntiAliasing`](https://help
 {% highlight xaml %}
 
 <chart:FastRangeAreaBitmapSeries ItemsSource = "{Binding Data}"
-
                                  XBindingPath="Date" 
-
                                  High="HighTemperature" 
-
                                  Low="LowTemperature" 
-
                                  EnableAntiAliasing="True" 
-
                                  Interior="#7F7F7F" />
 
 {% endhighlight %}
@@ -4289,7 +3465,6 @@ fastRangeAreaBitmapSeries.Low = "LowTemperature";
 fastRangeAreaBitmapSeries.EnableAntiAliasing = true;
 
 fastRangeAreaBitmapSeries.Interior = new SolidColorBrush(Color.FromRgb(0x7F, 0x7F, 0x75));
-
 
 chart.Series.Add(fastRangeAreaBitmapSeries);
 

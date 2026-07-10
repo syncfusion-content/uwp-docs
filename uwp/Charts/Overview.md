@@ -16,7 +16,6 @@ documentation: ug
 SfChart
 {:.caption}
 
-
 ## Key features
 
 * [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports 38 different types of series, ranging from simple bar series to complex financial charts. Each type of chart represents a unique style of representing data with more user friendly and greater UI visualization.

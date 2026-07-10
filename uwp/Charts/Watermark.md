@@ -26,23 +26,13 @@ The following code example explains how to set your custom text as Watermark.
 
 <chart:SfChart.Watermark>
 
-<chart:Watermark VerticalAlignment="Center"         
+<chart:Watermark VerticalAlignment="Center" HorizontalAlignment="Center">
 
-HorizontalAlignment="Center" >
+       <chart:Watermark.Content>
+              <TextBlock Text="Metals" FontSize="70" Foreground="Black">
+       </chart:Watermark.Content>
 
-<chart:Watermark.Content>
-
-<TextBlock Text="Metals"  
-
-FontSize="70"
-
-Foreground="Black" >
-
-</TextBlock>
-
-</chart:Watermark.Content>
-
-</chart:Watermark>
+       </chart:Watermark>
 
 </chart:SfChart.Watermark>
 
@@ -52,22 +42,15 @@ Foreground="Black" >
 
 chart.Watermark = new Watermark()
 {
-
        HorizontalAlignment = HorizontalAlignment.Center,
-
        VerticalAlignment = VerticalAlignment.Center
-
 };
 
 chart.Watermark.Content = new TextBlock()
 {
-
        Text = "Metals",
-
        FontSize = 70,
-
        Foreground = new SolidColorBrush(Colors.Black)
-
 };
 
 {% endhighlight %}
@@ -86,17 +69,13 @@ You can also set images as a Watermark as shown in the below code snippet.
 
 <chart:SfChart.Watermark>
 
-<chart:Watermark VerticalAlignment="Center"               
+       <chart:Watermark VerticalAlignment="Center" HorizontalAlignment="Center">
 
-HorizontalAlignment="Center" >
+              <chart:Watermark.Content>
+                     <Image Source="demands.png" Height="175" Width="175"/>
+              </chart:Watermark.Content>
 
-<chart:Watermark.Content>
-
-<Image Source="demands.png" Height="175" Width="175"/>
-
-</chart:Watermark.Content>
-
-</chart:Watermark>
+       </chart:Watermark>
 
 </chart:SfChart.Watermark>
 
@@ -106,29 +85,19 @@ HorizontalAlignment="Center" >
 
 chart.Watermark = new Watermark()
 {
-
        HorizontalAlignment = HorizontalAlignment.Center,
-
        VerticalAlignment = VerticalAlignment.Center
-
 };
 
 chart.Watermark.Content = new Image()
 {
-
        Height = 175,
-
        Width = 175,
-
        Source = new BitmapImage(new Uri(@"demands.png", UriKind.RelativeOrAbsolute))
-
 };
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Image watermark support in UWP Chart](Watermark_images/Watermark_2.png)
-
-

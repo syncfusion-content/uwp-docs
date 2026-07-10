@@ -18,7 +18,6 @@ The following image has data points with both greater and smaller magnitudes, bu
 
 ![Positioning the scale breaks in UWP Chart](ScaleBreak_images/ScaleBreak_img1.jpeg)
 
-
 Applying scale breaks helps in proper visualization of all the data points.
 
 {% tabs %}
@@ -27,17 +26,17 @@ Applying scale breaks helps in proper visualization of all the data points.
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis>                                
+    <chart:NumericalAxis>
 
-<chart:NumericalAxis.AxisScaleBreaks>                     
+        <chart:NumericalAxis.AxisScaleBreaks>
 
-<chart:ChartAxisScaleBreak Start="300"
+            <chart:ChartAxisScaleBreak
+                Start="300"
+                End="8500" />
 
-End="8500">
+        </chart:NumericalAxis.AxisScaleBreaks>
 
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
+    </chart:NumericalAxis>
 
 </chart:SfChart.SecondaryAxis>
 
@@ -63,7 +62,6 @@ chart.SecondaryAxis = axis;
 
 ![Scale breaks support in UWP Chart](ScaleBreak_images/ScaleBreak_img2.jpeg)
 
-
 ## Break Position Customization
 
 For the defined break range, its position in the chart area can be customized using the [`BreakPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_BreakPosition) property in numerical axis.
@@ -86,17 +84,19 @@ Range [0,350] takes nearly 4/5th of the axis height and the range [8000,10000] t
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis x:Name="axis" BreakPosition="DataCount">                                
+    <chart:NumericalAxis
+        x:Name="axis"
+        BreakPosition="DataCount">
 
-<chart:NumericalAxis.AxisScaleBreaks>                     
+        <chart:NumericalAxis.AxisScaleBreaks>
 
-<chart:ChartAxisScaleBreak Start="350"
+            <chart:ChartAxisScaleBreak
+                Start="350"
+                End="8000" />
 
-End="8000">  
+        </chart:NumericalAxis.AxisScaleBreaks>
 
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
+    </chart:NumericalAxis>
 
 </chart:SfChart.SecondaryAxis>
 
@@ -124,7 +124,6 @@ chart.SecondaryAxis = axis;
 
 ![Positioning the scale break based on the data count in UWP Chart](ScaleBreak_images/ScaleBreak_img3.jpeg)
 
-
 ### Scale
 
 [`Scale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html#Syncfusion_UI_Xaml_Charts_ScaleBreakPosition_Scale) option allows you to position the breaks based on the delta of each axis range relative to the other.
@@ -135,17 +134,19 @@ chart.SecondaryAxis = axis;
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis x:Name="axis" BreakPosition="Scale">                                
+    <chart:NumericalAxis
+        x:Name="axis"
+        BreakPosition="Scale">
 
-<chart:NumericalAxis.AxisScaleBreaks>                     
+        <chart:NumericalAxis.AxisScaleBreaks>
 
-<chart:ChartAxisScaleBreak Start="350"
+            <chart:ChartAxisScaleBreak
+                Start="350"
+                End="8000" />
 
-End="8000">  
+        </chart:NumericalAxis.AxisScaleBreaks>
 
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis>
+    </chart:NumericalAxis>
 
 </chart:SfChart.SecondaryAxis>
 
@@ -173,7 +174,6 @@ chart.SecondaryAxis = axis;
 
 ![Positioning the scale break based on the delta value of axis range in UWP Chart](ScaleBreak_images/ScaleBreak_img4.jpeg)
 
-
 ### Percent
 
 [`Percent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ScaleBreakPosition.html#Syncfusion_UI_Xaml_Charts_ScaleBreakPosition_Percent) option allows to position the breaks at the specified percentage of the axis available height.
@@ -188,25 +188,25 @@ In the below image, each break is given percent value as 50. First break is posi
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis x:Name="axis" BreakPosition="Percent ">                                
+    <chart:NumericalAxis
+        x:Name="axis"
+        BreakPosition="Percent">
 
-<chart:NumericalAxis.AxisScaleBreaks>                     
+        <chart:NumericalAxis.AxisScaleBreaks>
 
-<chart:ChartAxisScaleBreak Start="300"
+            <chart:ChartAxisScaleBreak
+                Start="300"
+                End="8000"
+                BreakPercent="50" />
 
-End="8000" BreakPercent="50"> 
+            <chart:ChartAxisScaleBreak
+                Start="12500"
+                End="19000"
+                BreakPercent="50" />
 
-</chart:ChartAxisScaleBreak>                     
+        </chart:NumericalAxis.AxisScaleBreaks>
 
-<chart:ChartAxisScaleBreak Start="12500"
-
-End="19000" BreakPercent="50"> 
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks>
-
-</chart:NumericalAxis>
+    </chart:NumericalAxis>
 
 </chart:SfChart.SecondaryAxis>
 
@@ -257,25 +257,21 @@ Multiple breaks can be included in the chart.
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis>                                
+    <chart:NumericalAxis>
 
-<chart:NumericalAxis.AxisScaleBreaks>                     
+        <chart:NumericalAxis.AxisScaleBreaks>
 
-<chart:ChartAxisScaleBreak Start="300"
+            <chart:ChartAxisScaleBreak
+                Start="300"
+                End="8000" />
 
-End="8000"> 
+            <chart:ChartAxisScaleBreak
+                Start="12500"
+                End="19000" />
 
-</chart:ChartAxisScaleBreak>                   
+        </chart:NumericalAxis.AxisScaleBreaks>
 
-<chart:ChartAxisScaleBreak Start="12500"
-
-End="19000"> 
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks>
-
-</chart:NumericalAxis>
+    </chart:NumericalAxis>
 
 </chart:SfChart.SecondaryAxis>
 
@@ -309,7 +305,6 @@ chart.SecondaryAxis = axis;
 
 ![Multiple scale breaks support in UWP Chart](ScaleBreak_images/ScaleBreak_img6.jpeg)
 
-
 ## Customization
 
 The following are the customizing options for scale break.
@@ -322,23 +317,22 @@ Line type such as [`Wave`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis>                                
+    <chart:NumericalAxis>
 
-<chart:NumericalAxis.AxisScaleBreaks>                     
+        <chart:NumericalAxis.AxisScaleBreaks>
 
-<chart:ChartAxisScaleBreak Start="300"  BreakSpacing="12"
+            <chart:ChartAxisScaleBreak
+                Start="300"
+                End="8500"
+                BreakSpacing="12"
+                LineType="Wave"
+                Fill="PaleTurquoise"
+                Stroke="Black"
+                StrokeThickness="1.2" />
 
-End="8500" LineType="Wave" 
+        </chart:NumericalAxis.AxisScaleBreaks>
 
-Fill="PaleTurquoise"
-
-Stroke="Black" StrokeThickness="1.2" >  
-
-</chart:ChartAxisScaleBreak>
-
-</chart:NumericalAxis.AxisScaleBreaks> 
-
-</chart:NumericalAxis>
+    </chart:NumericalAxis>
 
 </chart:SfChart.SecondaryAxis>
 
@@ -373,5 +367,3 @@ chart.SecondaryAxis = axis;
 {% endtabs %}
 
 ![Customization of scale breaks in UWP Chart](ScaleBreak_images/ScaleBreak_img7.jpeg)
-
-
