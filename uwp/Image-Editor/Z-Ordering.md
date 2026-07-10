@@ -2,7 +2,7 @@
 layout: post
 title: Z-Ordering in UWP Image Editor control | Syncfusion
 description: Learn here all about Z-Ordering support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
-platform: UWP
+platform: uwp
 control: ImageEditor
 documentation: ug
 ---
