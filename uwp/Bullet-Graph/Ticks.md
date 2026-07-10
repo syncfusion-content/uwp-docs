@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ticks in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Ticks support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+description: Learn about ticks support in Syncfusion UWP Bullet Graph (SfBulletGraph), including customization options and usage details.
 platform: uwp
 control: SfBulletGraph
 documentation: ug

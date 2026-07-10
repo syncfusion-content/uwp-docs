@@ -7,7 +7,7 @@ control: SfBulletGraph
 documentation: ug
 ---
 
-### Flow Direction
+# Flow Direction
 
 By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using the **FlowDirection** property respectively.
 
@@ -32,10 +32,10 @@ this.Grid.Children.Add(bullet);
 <table>
 <tr>
 <td>
-{{'![](Flow-Direction_images/Flow-Direction_img1.jpeg)'| markdownify }}
+{{'![Vertical Flow Direction Control](Flow-Direction_images/Flow-Direction_img1.jpeg)'| markdownify }}
 </td>
 <td>
-{{'![](Flow-Direction_images/Flow-Direction_img2.jpeg)'| markdownify }}
+{{'![Horizontal Flow Direction Control](Flow-Direction_images/Flow-Direction_img2.jpeg)'| markdownify }}
 {{'____'| markdownify }}
 </td></tr>
 </table>

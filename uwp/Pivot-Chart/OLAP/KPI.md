@@ -1,7 +1,7 @@
 ---
 layout: post
 title: KPI in UWP Pivot Chart control | Syncfusion
-description: Learn here all about KPI support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+description: Learn about KPI support in Syncfusion® UWP Pivot Chart (SfPivotChart), including visualization options and performance indicators. 
 platform: uwp
 control: SfPivotChart
 documentation: ug

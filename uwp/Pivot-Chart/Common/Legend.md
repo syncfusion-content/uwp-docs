@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Legend in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Legend support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+description: Learn about legend support in Syncfusion® UWP Pivot Chart (SfPivotChart), including customization, positioning, and display options.
 platform: uwp
 control: SfPivotChart
 documentation: ug

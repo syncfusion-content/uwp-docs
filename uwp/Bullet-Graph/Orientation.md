@@ -30,8 +30,8 @@ this.Grid.Children.Add(bullet);
 <table>
 <tr>
 <td>
-{{'![](Orientation_images/Orientation_img1.jpeg)'| markdownify }}
+{{'![Vertical Orientation in UWP Bullet Graph](Orientation_images/Orientation_img1.jpeg)'| markdownify }}
 </td><td>
-{{'![](Orientation_images/Orientation_img2.jpeg)'| markdownify }}
+{{'![Horizontal Orientation in UWP Bullet Graph](Orientation_images/Orientation_img2.jpeg)'| markdownify }}
 </td></tr>
 </table>
