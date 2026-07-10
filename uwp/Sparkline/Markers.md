@@ -6,9 +6,10 @@ platform: uwp
 control: SfSparkline
 documentation: ug
 ---
+
 # Markers in UWP Sparkline (SfSparkline)
 
-Markers are used to indicate the value point for line and area series, and we can customize with different template.It is applicable for LineSparkLine and AreaSparkLine
+Markers are used to indicate the value point for line and area series, and we can customize with different templates. It is applicable for LineSparkline and AreaSparkline.
 
 * [`MarkerVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerBase.html#Syncfusion_UI_Xaml_Charts_MarkerBase_MarkerVisibility) – Gets or sets the visibility for marker.
 {% capture codesnippet1 %}
@@ -17,17 +18,10 @@ Markers are used to indicate the value point for line and area series, and we ca
 
 {% highlight xaml %}
 
-<Syncfusion:SfLineSparkline  Interior="#4a4a4a"   
+<Syncfusion:SfLineSparkline Interior="#4a4a4a" BorderBrush="DarkGray" BorderThickness="1"    
+                            MarkerVisibility="Visible" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers">
 
-BorderBrush="DarkGray"  BorderThickness="1"    
-
-MarkerVisibility="Visible" 
-
-ItemsSource="{Binding UsersList}" 
-
-YBindingPath="NoOfUsers">
-
-</Syncfusion:SfLineSparkline >
+</Syncfusion:SfLineSparkline>
 
 {% endhighlight %}
 
@@ -35,19 +29,12 @@ YBindingPath="NoOfUsers">
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
     ItemsSource = new SparkViewModel().UsersList,
-
     YBindingPath = "NoOfUsers",
-
     MarkerVisibility = Visibility.Visible,
-
     Interior = new SolidColorBrush(Colors.Gray),
-
     BorderBrush = new SolidColorBrush(Colors.DarkGray),
-
     BorderThickness = new Thickness(1)
-
 };
 
 {% endhighlight %}
@@ -59,5 +46,3 @@ SfLineSparkline sparkline = new SfLineSparkline()
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
 ![Marker visibility](Markers_images/Markers_img1.jpeg)
-
-
