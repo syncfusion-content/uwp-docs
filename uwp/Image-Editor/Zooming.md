@@ -2,7 +2,7 @@
 layout: post
 title: Zooming in UWP Image Editor control | Syncfusion
 description: Learn here all about Zooming support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
-platform: UWP
+platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
