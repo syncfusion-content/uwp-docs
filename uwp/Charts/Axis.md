@@ -3289,7 +3289,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 ![Multi-level axis labels text customization support in UWP Chart](Axis_images/label9.png)
 
-**Labe alignment**
+**Label alignment**
 
 The text of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) can be aligned with its [`LabelAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_LabelAlignment) property. The default value of [`LabelAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_LabelAlignment) property is [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelAlignment.html#Syncfusion_UI_Xaml_Charts_LabelAlignment_Center).
 

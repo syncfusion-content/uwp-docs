@@ -1237,7 +1237,7 @@ chart.Series.Add(series);
 
 ![Closed polar series in UWP Chart](Series_images/isclosed.png)
 
-### Drawtype
+### Draw type
 
 This property defines type of curve, whether its [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html#Syncfusion_UI_Xaml_Charts_ChartSeriesDrawType_Line) or [`Area`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesDrawType.html#Syncfusion_UI_Xaml_Charts_ChartSeriesDrawType_Area).
 
@@ -1278,7 +1278,7 @@ chart.Series.Add(series);
 
 ![Draw type support for polar series in UWP Chart](Series_images/drawtype_area.png)
 
-**Drawtype as line**
+**Draw type as line**
 
 {% tabs %}
 
