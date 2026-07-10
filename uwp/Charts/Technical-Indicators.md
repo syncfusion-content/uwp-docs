@@ -11,11 +11,11 @@ documentation: ug
 
 Technical indicators are the base of technical analysis, which is used to determine the future market trends. 
 
-## Adding Technical Indicators to the Chart
+## Adding technical indicators to the chart
 
 A technical indicator is merely another type of meta series. The following steps illustrate how to add the technical indicators to the chart:
 
-### Initializing Indicator
+### Initializing indicator
 
 Create an instance for any technical indicator and add it to the [`TechnicalIndicators`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_TechnicalIndicators) collection. 
 
@@ -45,7 +45,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-### Binding the Data
+### Binding the data
 
 Next you need to bind the property path for the [`Open`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Open), [`High`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_High), [`Low`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Low), [`Close`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Close) and [`Volume`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_FinancialTechnicalIndicator_Volume) along with X value binding property.
 
@@ -75,7 +75,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 {% endtabs %}
 
-### Specifying the ItemsSource
+### Specifying the itemsSource
 
 {% tabs %}
 
@@ -115,7 +115,7 @@ The following sections cover all the different types of technical indicators ava
 
 Most of the indicators have the [`Period`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_Period) and [`SignalLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StochasticTechnicalIndicator.html#Syncfusion_UI_Xaml_Charts_StochasticTechnicalIndicator_SignalLineColor) properties as common, in which the Period property indicates the moving average period and the SignalLineColor defines the color for the respective indicator line.
 
-## Average True Range
+## Average true range
 
 You can define the [`AverageTrueRangeIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AverageTrueRangeIndicator.html) using the following code example.
 
@@ -157,7 +157,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ![AverageTrueRangeIndicator type in UWP Chart](Technical-Indicators_images/atr.png)
 
-## Simple Average 
+## Simple average 
 
 The following code example demonstrates the usage of [`SimpleAverageIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html).
 
@@ -348,7 +348,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ![StochasticTechnicalIndicator type in UWP Chart](Technical-Indicators_images/stochastic.png)
 
-## Exponential Average
+## Exponential average
 
 The [`ExponentialAverageIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ExponentialAverageIndicator.html) is similar to [SimpleAverageIndicator](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SimpleAverageIndicator.html) and this can be defined using the following code examples.
 
@@ -390,7 +390,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ![ExponentialAverageIndicator type in UWP Chart](Technical-Indicators_images/exponential.png)
 
-## Triangular Average 
+## Triangular average 
 
 The [`TriangularAverageIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TriangularAverageIndicator.html) can be defined as in the following code example.
 
@@ -432,7 +432,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ![TriangularAverageIndicator type in UWP Chart](Technical-Indicators_images/ta.png)
 
-## Accumulation Distribution 
+## Accumulation distribution 
 
 The following code example helps you add the [`AccumulationDistributionIndicator`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AccumulationDistributionIndicator.html).
 
@@ -473,7 +473,7 @@ chart.TechnicalIndicators.Add(indicator);
 
 ![AccumulationDistributionIndicator type in UWP Chart](Technical-Indicators_images/accumulation.png)
 
-## Bollinger Band
+## Bollinger band
 
 This indicator also has [`UpperLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_UpperLineColor), [`LowerLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_LowerLineColor) and [`SignalLineColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BollingerBandIndicator.html#Syncfusion_UI_Xaml_Charts_BollingerBandIndicator_SignalLineColor) property for defining the brushes for the indicator lines.
 

@@ -22,7 +22,7 @@ documentation: ug
 * Dynamic rotation.
 * Selection support.
 
-## Creating 3D Charts
+## Creating 3D charts
 
 The following steps explain how to create 3D charts.
 
@@ -64,7 +64,7 @@ The following steps explain how to create 3D charts.
 
 {% endhighlight %}
 
-### Add Chart Series to Chart
+### Add chart series to chart
 
 To begin with plotting data, choose from a wide variety of graphical representations available in the Chart library (e.g., 3DColumn series, 3D PieSeries). The graph selected will depend on the user's scenario and the nature of the data.
 
@@ -86,7 +86,7 @@ To begin with plotting data, choose from a wide variety of graphical representat
 
 {% endhighlight %}
 
-### Create a Sample Data Source
+### Create a sample data source
 
 Since the above step will produce only an empty column 3D chart, plotting data must be added to the chart. This step illustrates how to create a sample data source. The data source must implement the IEnumerable interface.
 
@@ -147,7 +147,7 @@ public class UsersViewModel
 
 {% endhighlight %}
 
-### Binding Data to ChartSeries
+### Binding data to ChartSeries
 
 Add the above UsersViewModel to the DataContext of the chart, bind the data source to the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property of the 3D column series, and then map the data using [`XBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XyDataSeries3D.html#Syncfusion_UI_Xaml_Charts_XyDataSeries3D_YBindingPath) properties.
 
@@ -260,7 +260,7 @@ A Boolean property to show or hide the labels</td></tr>
 
 ## Series
 
-### Series Types
+### Series types
 
 * Column
 * Bar
@@ -361,7 +361,6 @@ public class UsersViewModel
 
 {% endtabs %}
 
-
 The following image illustrates the result of the above code sample:
 
 ![Series types in UWP 3D Chart](3D-Charts_images/Charts-3D_img2.png)
@@ -458,8 +457,6 @@ The following code example can be used to set series selection in a [`SfChart3D`
 The following screenshot is an example of a [`SfChart3D`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart3D.html) with series selection.
 
 ![Series selection support in UWP 3D Chart](3D-Charts_images/Charts-3D_img4.png)
-
-
 
 ### Dynamic explode
 

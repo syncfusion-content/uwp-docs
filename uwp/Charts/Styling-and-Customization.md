@@ -32,7 +32,7 @@ The following predefined palettes are available:
 
 N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap series types.
 
-### Applying Palette to Series
+### Applying palette to series
 
 Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) for the chart series.
 
@@ -74,7 +74,7 @@ chart.Palette = ChartColorPalette.BlueChrome;
 
 ![Predefined palettes in UWP Chart](Styling-and-Customization_images/palette_2.png)
 
-### Applying Palette to Segment
+### Applying palette to segment
 
 Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Palette) for the chart series.
 
@@ -136,7 +136,7 @@ chart.Series.Add(series);
 
 N> Metro palette is the default palette for both Series and Segment.
 
-## Custom Palette
+## Custom palette
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides option which enables you to define your own [`CustomBrushes`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColorModel.html#Syncfusion_UI_Xaml_Charts_ChartColorModel_CustomBrushes) with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
 
@@ -242,7 +242,7 @@ chart.ColorModel = colorModel;
 
 ![Custom palette in UWP chart](Styling-and-Customization_images/palette_6.png)
 
-## Gradient Colors
+## Gradient colors
 
 Gradient colors for the chart series can be set by using the [`Interior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Interior) or [`ColorModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) property of the chart series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
@@ -291,8 +291,7 @@ The following code sample and screenshot illustrates how to apply the custom gra
 
 SfChart chart = new SfChart();
 
-...
-
+// Code omitted for brevity
 ChartColorModel colorModel = new ChartColorModel();
 
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
@@ -315,13 +314,9 @@ gradientColor2.GradientStops.Add(stop1);
 
 gradientColor2.GradientStops.Add(stop2);
 
-...
-
 colorModel.CustomBrushes.Add(gradientColor1);
 
 colorModel.CustomBrushes.Add(gradientColor2);
-
-...
 
 ColumnSeries series = new ColumnSeries()
 {
@@ -365,8 +360,7 @@ The following code sample and screenshot illustrates how to apply the gradient c
 
 SfChart chart = new SfChart();
 
-...
-
+// Code omitted for brevity
 LinearGradientBrush gradientColor = new LinearGradientBrush();
 
 GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) };
@@ -376,8 +370,6 @@ GradientStop stop2 = new GradientStop() { Offset = 0, Color = Color.FromRgb(123,
 gradientColor.GradientStops.Add(stop1);
 
 gradientColor.GradientStops.Add(stop2);
-
-...
 
 ColumnSeries series = new ColumnSeries()
 {
@@ -449,7 +441,7 @@ ColumnSeries series = new ColumnSeries()
 
 N> `SegmentColorPath` property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType are Area).
 
-## Customize Legends
+## Customize legends
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
 
@@ -514,7 +506,7 @@ The following code example demonstrates applying the palette color to the legend
 
 If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/11671/how-to-add-multiple-legend-items-in-scroll-viewer-in-uwp-chart) kb for more details.
 
-## Customize ToolTip
+## Customize tooltip
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property.
 
@@ -607,7 +599,7 @@ If you are having more number of items in the legend, you can override the Items
 
 ![Customizing tooltip in UWP Chart](Styling-and-Customization_images/palette_8.png)
 
-## Customize Series
+## Customize series
 
 [`CustomTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_CustomTemplate) property is used to customize the chart series. It supports the following series
 

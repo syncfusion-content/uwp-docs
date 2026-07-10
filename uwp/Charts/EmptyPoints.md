@@ -34,7 +34,7 @@ By default, [`ShowEmptyPoints`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI
 
 ![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_3.png)
 
-## Display Empty Points
+## Display empty points
 
 You can show these empty points by setting the [`ShowEmptyPoints`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ShowEmptyPoints) property to true. So we need to define the value for these empty points and that can be defined using [`EmptyPointValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointValue) property.
 
@@ -143,7 +143,7 @@ chart.Series.Add(series);
 
 ![Displaying empty points in UWP Chart](EmptyPoints_images/emptypoint_5.png)
 
-## Customizing Empty Points
+## Customizing empty points
 
 You can customize the empty points using [`EmptyPointStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointStyle) property. The following are the values of [`EmptyPointStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointStyle):
 
@@ -245,7 +245,7 @@ chart.Series.Add(series);
 
 ![Adding symbol for empty points in UWP Chart](EmptyPoints_images/emptypoint_7.png)
 
-### Symbol and Interior
+### Symbol and interior
 
 This option combines above two options, which draw a symbol with defined [`EmptyPointInterior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EmptyPointInterior). The following code example shows the use of this value.
 
@@ -301,7 +301,7 @@ chart.Series.Add(series);
 
 ![Symbol and interior support in UWP Chart](EmptyPoints_images/emptypoint_8.png)
 
-### Custom Symbol
+### Custom symbol
 
 You can add any custom shape for the empty point symbol. The following code example shows how to add your custom shapes:
 
@@ -359,21 +359,18 @@ You can add any custom shape for the empty point symbol. The following code exam
 
 ![Custom symbol for empty points in UWP Chart](EmptyPoints_images/emptypoint_9.png)
 
-
-## EmptyPoints and Series
+## EmptyPoints and series
 
 The following section illustrating few chart types and its behavior with EmptyPoints.
 
-**ColumnSeries** **with** **EmptyPoint** **as** **Average**
+**ColumnSeries with EmptyPoint as average**
 
 ![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_10.png)
 
-
-**SplineSeries** **with** **EmptyPoint** **as** **Average**
+**SplineSeries with EmptyPoint as average**
 
 ![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_11.png)
 
-
-**Accumulation** **Series** **with** **EmptyPoint** **as** **Average**
+**Accumulation series with EmptyPoint as average**
 
 ![Empty points support in UWP Chart](EmptyPoints_images/emptypoint_12.png)

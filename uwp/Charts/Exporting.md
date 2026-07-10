@@ -38,7 +38,7 @@ private void SaveImageButton_Click(object sender, RoutedEventArgs e)
 
 {% endhighlight %}
 
-### Save(string fileName, StorageFolder folderLocation)
+### Save(string fileName, storageFolder folderLocation)
 
 This method will export the chart as image to the specified location. The following code example illustrates the usage of this method.
 
@@ -60,7 +60,7 @@ Chart.Save("Chart", null);
 
 {% endhighlight %}
 
-### Save(IRandomAccessStream stream, Guid bitmapEncoderID)
+### Save(IRandomAccessStream stream, guid bitmapEncoderID)
 
 This method allows you to export the chart into a stream. It is described in following code example.
 

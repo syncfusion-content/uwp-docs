@@ -105,7 +105,7 @@ chart.Series.Add(scatterSeries);
 
 N> Here we have enabled the [`CheckBoxVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) for the Legend. The CheckBox state indicates that trendline is not visible. You can enable trendline dynamically using this checkbox.
 
-## Types of Trendlines
+## Types of trendlines
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports the following type of [`Trendlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_Trendlines).
 
@@ -382,7 +382,7 @@ chart.Series.Add(fastSeries);
 
 ![Polynomial trendline type in UWP Chart](Trendlines_images/trendline_7.png)
 
-#### Polynomial Order
+#### Polynomial order
 
 You can set the Polynomial order for this trendline. [`PolynomialOrder`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TrendlineBase.html#Syncfusion_UI_Xaml_Charts_TrendlineBase_PolynomialOrder) calculates order based on the equation and this value should fall between 2 and 6.
 
@@ -439,7 +439,7 @@ The following two types of forecasting available in SfChart:
 * Forward Forecasting
 * Backward Forecasting
 
-### Forward Forecast
+### Forward forecast
 
 For determining the future trends (in forward direction). The following code example explains the how to set the value for [`ForwardForecast`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TrendlineBase.html#Syncfusion_UI_Xaml_Charts_TrendlineBase_ForwardForecast).
 
@@ -488,7 +488,7 @@ chart.Series.Add(fastSeries);
 
 ![Forward forecast in UWP Chart](Trendlines_images/trendline_9.png)
 
-### Backward Forecast
+### Backward forecast
 
 For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TrendlineBase.html#Syncfusion_UI_Xaml_Charts_TrendlineBase_BackwardForecast).
 

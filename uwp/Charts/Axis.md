@@ -12,15 +12,10 @@ documentation: ug
 [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) is used to locate a data point inside the chart area. Generally, to locate a data point, you require two axes along each direction, that is, horizontal and vertical, in a chart. The vertical axis, or y-axis, usually represents numerical values. The horizontal axis, or x-axis, represents categorical or numerical or date and time values. [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) supports the following types.
 
 * Double                
-
 * DateTime(Linear)
-
 * DateTime(Category)
-
 * String
-
 * TimeSpan
-
 * Logarithmic
 
 You can choose any [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) derived types, like [`DateTimeAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html), [`NumericalAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html), [`CategoryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CategoryAxis.html), [`LogarithmicAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LogarithmicAxis.html) or [`TimeSpanAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TimeSpanAxis.html) depending on the value type. [`DateTimeCategoryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeCategoryAxis.html) is a special type, used to plot date and time values for the given datapoints. 
@@ -860,7 +855,7 @@ The following screenshot illustrates the SfChart with LogarithmicAxis.
 
 ![LogarithmicAxis support in UWP Chart](Axis_images/Axis_img6.png)
 
-## Multiple Axes
+## Multiple axes
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides a way to arrange multiple series inside the same chart area, giving the chart more space than x-axis and y-axis.These axes can be arranged in a stack or in a side by side pattern. 
 
@@ -942,7 +937,7 @@ The following screenshot illustrates SfChart with multiple axes.
 
  The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the Primary and Secondary axis.
 
-### Axis Positioning
+### Axis positioning
 
 By default, the x-axis is arranged horizontally at the bottom of the chart and the y-axis is arranged vertically on the left-side of the chart. You can change the alignment of the axes by setting OpposedPosition to True. It arranges the x-axis at the top and the y-axis on the right-side of the chart. 
 
@@ -996,7 +991,7 @@ The following is a screenshot demonstrating y-axis of a chart arranged in [`Oppo
 
 ![Axis Positioning support in UWP Chart](Axis_images/Axis_img8.png)
 
-## Inversed Axis
+## Inversed axis
 
 [`IsInversed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_IsInversed) property is used to reverse chart plotting inverse the axis scaling.
 
@@ -1052,7 +1047,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Inversed axis support in UWP Chart](Axis_images/Axis_img9.png)
 
-## Axis range and Interval
+## Axis range and interval
 
 [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) calculates the range and intervals automatically based on the values of series data points. You can also explicitly specify the range and interval using the Minimum, Maximum and Interval properties. 
 
@@ -1096,7 +1091,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-### Range Padding
+### Range padding
 
 The [`NumericalAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html) and [`DateTimeAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DateTimeAxis.html) have a [`RangePadding`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_RangePadding) property that can be used to add padding to the range of a chart's axes.
 
@@ -1389,7 +1384,7 @@ chart.PrimaryAxis = new DateTimeAxis()
 
 ## Positioning axis labels
 
-### Label Placement
+### Label placement
 
 The [`CategoryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) includes the [`LabelPlacement`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) property, used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the [`LabelPlacement`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CategoryAxis.html#Syncfusion_UI_Xaml_Charts_CategoryAxis_LabelPlacement) value for the [`CategoryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CategoryAxis.html) is [`OnTicks`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelPlacement.html#Syncfusion_UI_Xaml_Charts_LabelPlacement_OnTicks).
 
@@ -1455,7 +1450,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Axis label placement support in UWP Chart](Axis_images/Axis_img19.png)
 
-### Label Position 
+### Label position 
 
 The [`LabelsPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsPosition) property is used to position the axis label either [`Inside`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AxisElementPosition.html#Syncfusion_UI_Xaml_Charts_AxisElementPosition_Inside) or [`Outside`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.AxisElementPosition.html#Syncfusion_UI_Xaml_Charts_AxisElementPosition_Outside) the chart plotting area.
 
@@ -1515,7 +1510,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Axis label positioning support in UWP Chart](Axis_images/Axis_img21.png)
 
-### Positioning Edge Labels
+### Positioning edge labels
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the edge labels of the axis to adjust its position using the [`EdgeLabelsDrawingMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_EdgeLabelsDrawingMode) property. 
 
@@ -1672,7 +1667,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Label extent support in UWP Chart](Axis_images/LabelExtent.png)
 
-## Smart Labels
+## Smart labels
 
 When a number of axis labels exist, they may overlap with each other. [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides features to handle the overlapping labels using the [`LabelsIntersectAction`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsIntersectAction) property.
 
@@ -1766,7 +1761,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ![Smart axis labels support in UWP Chart](Axis_images/Axis_img28.png)
 
-## Custom Labels
+## Custom labels
 
 SfChart allows user to define the labels for the axis. For defining the axis label you have to set the [`LabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_LabelContent) and [`Position`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) properties.You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as demonstrated in the following code snippet.
 
@@ -1811,7 +1806,6 @@ chart.PrimaryAxis = axis;
 {% endtabs %}
 
 ![Axis label customization support in UWP Chart](Axis_images/Axis_img35.jpg)
-
 
 You can also directly bind the collection of labels to the [`LabelsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_LabelsSource) property for defining custom labels. The following code example demonstrates how to define a label collection in code behind and binding the property in XAML page.
 
@@ -1985,7 +1979,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Axis labels formatting support in UWP Chart](Axis_images/Axis_img31.png)
 
-## Origin Customization
+## Origin customization
 
 SfChart allows you to customize the origin. By default the axis will be rendered with(0,0) as origin in x and y-axes.
 
@@ -2019,7 +2013,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Moving the axis line to the specified origin value support in UWP Chart](Axis_images/ShowAxisNextToOrigin.png)
 
-## Styling Header and Labels
+## Styling header and labels
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to customize the axis [`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_Header) and label. The following APIs are used to customize the header and label.
 
@@ -2131,7 +2125,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-**Axis Label Border**
+**Axis label border**
 
 [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) provides support to place border around its label.To place the border around axis, we should enable  [`ShowLabelBorder`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_ShowLabelBorder) property of axis and it can be set as shown in the below code snippet,
 
@@ -2213,7 +2207,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Axis labels border support in UWP Chart](Axis_images/label2.png)
 
-## GridLines and TickLines 
+## GridLines and ticklines 
 
 ### GridLines
 
@@ -2509,7 +2503,7 @@ chart.SecondaryAxis = secondaryAxis;
 
 ![RangeStyle support in UWP Chart](Axis_images/RangeStyle.JPG)
 
-## Multi-level Labels
+## Multi-level labels
 
 [`Axis`](https://help.syncfusion.com/uwp/charts/axis) can be customized with multiple levels of label by using its [`MultiLevelLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabels) property. These labels are placed based on the provided [`Start`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_Start) and [`End`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_End) range values and we can add any number of labels to an axis. The below code snippet shows how to set a multilevel label,
 
@@ -2555,7 +2549,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 ![Multi-level axis labels support in UWP Chart](Axis_images/label3.png)
 
-**Regarding** **Start** **and** **End** **Property**
+**Regarding start and end property**
 
 [`Start`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_Start) and [`End`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_End) properties of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) are type of objects, we can provide the start and end values for a multi-level label based on its Axis type. It is described  in the following table,
 
@@ -2604,10 +2598,9 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 </tr>
 </table>
 
+**Customizing multi-level labels**
 
-**Customizing** **multi-level** **labels**
-
-**Border** **Customization**
+**Border customization**
 
 [`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) border width and color can be customized with [`LabelBorderWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderWidth) and [`LabelBorderBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_LabelBorderBrush) properties of chart axis.It can be set as shown in the below code snippet,
 
@@ -2656,7 +2649,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 ![Axis border customization support in UWP Chart](Axis_images/label4.png)
 
-**Border** **Type**
+**Border type**
 
 [`ChartAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html) provides support to various types of border for [`ChartMultiLevelLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) and it can be applied by using its [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderType) property.The default [`MultiLevelLabelsBorderType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_MultiLevelLabelsBorderType) is [`Rectangle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BorderType.html#Syncfusion_UI_Xaml_Charts_BorderType_Rectangle). The another supported border types are [`Brace`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BorderType.html#Syncfusion_UI_Xaml_Charts_BorderType_Brace),[`None`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BorderType.html#Syncfusion_UI_Xaml_Charts_BorderType_None) and [`WithoutTopAndBottomBorder`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BorderType.html#Syncfusion_UI_Xaml_Charts_BorderType_WithoutTopAndBottomBorder).
 
@@ -3244,7 +3237,7 @@ chart.SecondaryAxis.MultiLevelLabels.Add(label7);
 
 ![Axis border customization support in UWP Chart](Axis_images/label8.png)
 
-**Text** **Customization**
+**Text customization**
 
 [`ChartMultiLevelLabel's`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) text can be customized with its [`FontSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontSize), [`FontFamily`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_FontFamily) and [`Foreground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_Foreground) property and it is shown in below code snippet,
 
@@ -3296,7 +3289,7 @@ chart.PrimaryAxis.MultiLevelLabels.Add(label);
 
 ![Multi-level axis labels text customization support in UWP Chart](Axis_images/label9.png)
 
-**Label** **Alignment**
+**Labe alignment**
 
 The text of [`ChartMultiLevelLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html) can be aligned with its [`LabelAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_LabelAlignment) property. The default value of [`LabelAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartMultiLevelLabel.html#Syncfusion_UI_Xaml_Charts_ChartMultiLevelLabel_LabelAlignment) property is [`Center`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LabelAlignment.html#Syncfusion_UI_Xaml_Charts_LabelAlignment_Center).
 

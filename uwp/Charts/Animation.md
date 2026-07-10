@@ -54,7 +54,6 @@ Gets or sets the TimeSpan value that represents the animation speed for the char
 </tr>
 </table>
 
-
 The following example shows the Animation feature for chart series.
 
 {% tabs %}

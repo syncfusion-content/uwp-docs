@@ -139,7 +139,7 @@ The following code example explains positioning the tooltip at `Pointer` positio
 {% highlight c# %}
 
 SfChart chart = new SfChart();
-...
+// Code omitted for brevity
 ChartTooltipBehavior chartTooltipBehavior = new ChartTooltipBehavior();
 chartTooltipBehavior.Position = TooltipPosition.Pointer;
 chart.Behaviors.Add(chartTooltipBehavior);
@@ -166,7 +166,7 @@ The following code example explains applying the style for tooltip.
        <Setter Property="Fill" Value="Black"/>
     </Style>
 </chart:SfChart.Resources>
-...
+// Code omitted for brevity
 <chart:SfChart.Behaviors>
     <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
 </chart:SfChart.Behaviors>
@@ -179,7 +179,7 @@ SfChart chart = new SfChart();
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Gray)));
 style.Setters.Add(new Setter(Path.FillProperty, new SolidColorBrush(Colors.Black)));
-...
+// Code omitted for brevity
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.Style = style;
 chart.Behaviors.Add(tooltipBehavior);
@@ -206,7 +206,7 @@ The following code example explains applying the style for a tooltip label.
        <Setter Property="Foreground" Value="Red"/>
     </Style>
 </chart:SfChart.Resources>
-...
+// Code omitted for brevity
 <chart:SfChart.Behaviors>
    <chart:ChartTooltipBehavior LabelStyle="{StaticResource labelStyle}"/>
 </chart:SfChart.Behaviors>
@@ -219,7 +219,7 @@ SfChart chart = new SfChart();
 Style labelStyle = new Style(typeof(TextBlock));
 labelStyle.Setters.Add(new Setter(TextBlock.FontSizeProperty, 14d));
 labelStyle.Setters.Add(new Setter(TextBlock.ForegroundProperty, new SolidColorBrush(Colors.Red)));
-...
+// Code omitted for brevity
 ChartTooltipBehavior tooltipBehavior = new ChartTooltipBehavior();
 tooltipBehavior.LabelStyle = labelStyle;
 chart.Behaviors.Add(tooltipBehavior);
@@ -232,7 +232,7 @@ chart.Behaviors.Add(tooltipBehavior);
 
 ### Customizing tooltip using ChartTooltip attached properties
 
-### Aligning the Tooltip
+### Aligning the tooltip
 
 The tooltip can be aligned with respect to the cursor position using [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_VerticalAlignment) properties.
 
@@ -482,7 +482,7 @@ chart.Series.Add(series2);
 
 ![VerticalOffset and HorizontalOffset support for tooltip in UWP Chart](interactive-features_images/uwp-charts-interactive-features-offset.png)
 
-### Tooltip Duration
+### Tooltip duration
 
 The [`ShowDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTooltipBehavior_ShowDuration) property in the [`ChartTooltip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html) sets the duration time for the tooltip to be displayed in milliseconds.
 
@@ -565,7 +565,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-### Animation for Tooltip
+### Animation for tooltip
 
 You can also provide animation effects for tooltip by setting [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltip.html#Syncfusion_UI_Xaml_Charts_ChartTooltip_SetEnableAnimation_Windows_UI_Xaml_UIElement_System_Boolean_) property as true as shown in the below code snippet.
 
@@ -604,7 +604,7 @@ chart.Series.Add(series);
 
 {% endtabs %}
 
-### Customizing the Tooltip
+### Customizing the tooltip
 
 The [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property allows you to customize the default appearance of the tooltip as explained in the following code sample.
 
@@ -612,7 +612,7 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ch
 
 {% highlight xaml %}
 
-...
+// Code omitted for brevity
 <chart:SfChart.Resources>
     <DataTemplate x:Key="tooltipTemplate1">
         <StackPanel Orientation="Horizontal">
@@ -640,7 +640,6 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ch
         <Setter Property="StrokeThickness" Value="2"/>
     </Style>
 </chart:SfChart.Resources>
-...
 
 <chart:ColumnSeries ShowTooltip="True" ItemsSource="{Binding Demands}"
     XBindingPath="Demand" YBindingPath="Year2010" 
@@ -651,17 +650,16 @@ The [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ch
     ShowTooltip="True" XBindingPath="Demand"  YBindingPath="Year2011"
     TooltipTemplate="{StaticResource tooltipTemplate2}">
 </chart:ColumnSeries>
-...
+
 <chart:SfChart.Behaviors>
     <chart:ChartTooltipBehavior Style="{StaticResource style}"/>
 </chart:SfChart.Behaviors>
-...
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-...
+// Code omitted for brevity
 ColumnSeries series1 = new ColumnSeries()
 {
     ItemsSource = new ViewModel().Demands,
@@ -685,7 +683,6 @@ ColumnSeries series2 = new ColumnSeries()
 chart.Series.Add(series1);
 
 chart.Series.Add(series2);
-...
 
 {% endhighlight %}
 
@@ -699,7 +696,7 @@ N> The `ChartTooltipBehavior` is commonly used for all series to customize the t
 
 [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) enables you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 
-### Adding TrackBall to the SfChart
+### Adding trackball to the SfChart
 
 You can create an instance [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) and add it to the Behaviors collection.
 
@@ -990,15 +987,13 @@ You can change the default appearance of the axis label in trackball using [`Tra
 
         <DataTemplate x:Key="labelTemplate">
 
-            <Border
-                CornerRadius="4"
+            <Border CornerRadius="4"
                 BorderThickness="1"
                 BorderBrush="Black"
                 Background="BlueViolet"
                 Margin="8">
 
-                <TextBlock
-                    Foreground="White"
+                <TextBlock Foreground="White"
                     Text="{Binding ValueX}" />
 
             </Border>
@@ -1013,8 +1008,7 @@ You can change the default appearance of the axis label in trackball using [`Tra
 
     <syncfusion:SfChart.PrimaryAxis>
 
-        <syncfusion:CategoryAxis
-            ShowTrackBallInfo="True"
+        <syncfusion:CategoryAxis ShowTrackBallInfo="True"
             LabelTemplate="{StaticResource labelTemplate}" />
 
     </syncfusion:SfChart.PrimaryAxis>
@@ -1256,7 +1250,7 @@ chart.Series.Add(series);
 
 ![Customization support for trackball series label in UWP Chart](Interactive-Features_images/Interactive-Features_img17.jpeg)
 
-**Applying Palette to the Series Label**
+**Applying palette to the series label**
 
 [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Palette) or [`Interior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Interior) color of the [`Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) is applied to the series label by setting [`UseSeriesPalette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_UseSeriesPalette) to True as shown in the below code snippet.
 
@@ -1491,7 +1485,7 @@ chart.Series.Add(series);
 
 N>In line and Spline Series if segment and series dragging is enabled, the series dragging is having higher priority over segment dragging.
 
-### Adding ToolTip for dragging
+### Adding tooltip for dragging
 
 While the series or segment is dragged by default you can view the tooltip showing the new y value. To disable the tooltip while dragging you have to set the [`EnableDragToolTip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_EnableDragTooltip) as false.
 
@@ -1601,7 +1595,7 @@ chart.Series.Add(series);
 
 ![Customizing tooltip while dragging in UWP Chart](Interactive-Features_images/Interactive-Features_img23.png)
 
-**Drag Tooltip style**
+**Drag tooltip style**
 
 The dragging tooltip can be customized by using the [`DragTooltipStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_DragTooltipStyle) property of the series.
 
@@ -1769,7 +1763,7 @@ Series with visual data editing has support for following events,
 * [`PreviewDragEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_PreviewDragEnd)- Occurs before drag end triggered. 
 * [`SegmentEnter`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.html#Syncfusion_UI_Xaml_Charts_XySegmentDraggingBase_SegmentEnter)- Occurs when mouse enters in segment. 
 
-## Zoom and Pan
+## Zoom and pan
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to zoom the chart area with the help of the zoom feature. This behavior is mostly used to view the data point in the specific area, when there are a number of data points inside the chart.
 
@@ -1866,7 +1860,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-**Pinch** **Zooming**
+**Pinch zooming**
 
 If you want to zoom using fingers by touch, then you have to set [`EnablePinchZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnablePinchZooming) property to true as shown in the below code snippet.
 
@@ -2091,7 +2085,7 @@ chart.Behaviors.Add(zooming);
 
 {% endtabs %}
 
-### Zooming Toolbar
+### Zooming toolbar
 
 Zooming Toolbar encompassed with buttons for performing actions like Zoom In/Out, Reset, Pan, etc. You can add the zooming toolbar to the chart area by setting [`EnableZoomingToolBar`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableZoomingToolBar) property to True.
 
@@ -2160,7 +2154,7 @@ chart.Behaviors.Add(zooming);
 
 ![Positioning the zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img30.jpeg)
 
-**Customization of zooming Toolbar**
+**Customization of zooming toolbar**
 
 Zooming Toolbar can be customized using the following API’s
 
@@ -2208,7 +2202,7 @@ chart.Behaviors.Add(zooming);
 
 ![Customization of zooming toolbar in UWP Chart](Interactive-Features_images/Interactive-Features_img31.jpeg)
 
-**Orientation of zooming Toolbar**
+**Orientation of zooming toolbar**
 
 Zooming toolbar orientation is horizontal by default.You can change the orientation to vertical by setting 
 
@@ -2253,7 +2247,7 @@ Panning feature allows moving the visible area of the chart when it is zoomed in
 {% highlight xml %}
 <syncfusion:SfChart.Behaviors>
 
-    <syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" EnablePanning="True">
+    <syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True" EnablePanning="True" />
 
 </syncfusion:SfChart.Behaviors>
 
@@ -2639,7 +2633,7 @@ chart.Behaviors.Add(selection);
 
 ![Changing cursor while selection support in UWP Chart](Interactive-Features_images/Interactive-Features_img38.jpeg)
 
-### Adornment Selection:
+### Adornment selection:
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides selection for adornments by defining [`HighlightOnSelection`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_HighlightOnSelection) property which allows you to select the segment or series with the corresponding adornments.
 
@@ -2827,7 +2821,7 @@ The following events are available in [`SfChart`](https://help.syncfusion.com/cr
 * [`SelectionChanging`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanging)- Occurs when selection changing in chart area.
 * [`SelectionChanged`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SelectionChanged)- Occurs when selection changed in chart area. 
 
-## Resizable Scrollbar
+## Resizable scrollbar
 
 The resizable scrollbar is a type of scrollbar that can be resized within the track area by adjusting the scrolling thumbs. In the SfChart, a resizable scrollbar is used for zooming and panning across different chart segments.
 
@@ -3113,7 +3107,7 @@ Cross hair is composed of the following parts.
 
 2. Axis Labels
 
-### Vertical and Horizontal Line
+### Vertical and horizontal line
 
 If you add [`ChartCrossHairBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html) to chart you can see horizontal and vertical lines.The horizontal and vertical lines can be customized using [`HorizontalLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrossHairBehavior_HorizontalLineStyle) and [`VerticalLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartCrossHairBehavior.html#Syncfusion_UI_Xaml_Charts_ChartCrossHairBehavior_VerticalLineStyle) properties.
 
@@ -3161,7 +3155,6 @@ chart.Behaviors.Add(crosshair);
 {% endtabs %}
 
 ![Vertical and horizontal line for cross hair in UWP Chart](Interactive-Features_images/Interactive-Features_img47.jpeg)
-
 
 **VerticalLineStyle**
 

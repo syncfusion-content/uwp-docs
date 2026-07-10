@@ -11,7 +11,7 @@ documentation: ug
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to add [`Striplines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_StripLines) to the chart, which shades the specific region or range in the plot area background at regular or custom intervals. 
 
-## Positioning the Striplines
+## Positioning the striplines
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides [`Start`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Start) and [`Width`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Width) property for defining the Stripline start and end range. These values correspond to the axis values (or range). The Stripline can be filled using brush set in [`Background`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_Background) property.
 
@@ -261,7 +261,7 @@ N> Here, Start and Width of the label is adjusted based on the rotation angle. S
 
 ![Template support for striplines label in UWP Chart](Striplines_images/stripline_5.png)
 
-## Multiple Striplines
+## Multiple striplines
 
 You can add multiple number of striplines in the same axis like the following code example,
 
@@ -395,7 +395,7 @@ chart.SecondaryAxis = axis;
 
 ![Stripline re-occurence in UWP Chart](Striplines_images/stripline_7.png)
 
-## Segmented Stripline
+## Segmented stripline
 
 [`Striplines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_StripLines) can also be placed in a particular region with respect to segment. You can enable the segment striplines using [`IsSegmented`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartStripLine.html#Syncfusion_UI_Xaml_Charts_ChartStripLine_IsSegmented) property.
 

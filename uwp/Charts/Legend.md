@@ -41,7 +41,7 @@ Each legend is composed of the following parts:
 
 ![Legend support in UWP Chart](Legend_images/legend_overview_1.png)
 
-## Legend Icon
+## Legend icon
 
 Represents the symbol associated with each legend item. By default, the legend icon is [`Rectangle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegendIcon.html#Syncfusion_UI_Xaml_Charts_ChartLegendIcon_Rectangle). 
 
@@ -171,7 +171,7 @@ chart.Legend = new ChartLegend()
 
 ![Legend icons visibility support in UWP Chart](Legend_images/legendicon_3.png)
 
-**Custom** **Legend** **Icon**
+**Custom legend icon**
 
 We can add custom icon for the legend using [`LegendIconTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_LegendIconTemplate) property in [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html) as in below example.
 
@@ -343,9 +343,9 @@ We can view the associated [`series`](https://help.syncfusion.com/uwp/charts/ser
 
 ![ToggleSeriesVisibility support for legend in UWP Chart](Legend_images/Toggling_2.png)
 
-## Positioning the Legend
+## Positioning the legend
 
-**Legend** **Position**
+**Legend position**
 
 This allows us to position the legends [`Inside`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LegendPosition.html#Syncfusion_UI_Xaml_Charts_LegendPosition_Inside) or [`Outside`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LegendPosition.html#Syncfusion_UI_Xaml_Charts_LegendPosition_Outside) of the chart area (plotting area). 
 By default, it will be displayed outside and positioned at top (using [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition)) of the chart area.
@@ -407,7 +407,7 @@ chart.Legend = new ChartLegend()
 
 ![Positioning the legend in UWP Chart](Legend_images/legendpos_2.png)
 
-**Floating** **Legends**
+**Floating legends**
 
 To position the legend at any arbitrary location inside chart, we need to set [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as **Floating** and provide its relative position using [`OffsetX`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetX)and [`OffsetY`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetY) properties.
 
@@ -440,7 +440,7 @@ chart.Legend = new ChartLegend()
 
 ![Positioning the legend in UWP Chart](Legend_images/legendpos_3.png)
 
-## Legend Header
+## Legend header
 
 Chart provides support to add any UIElement as a header for legend items. 
 
@@ -489,7 +489,7 @@ chart.Legend = legend;
 
 ![Header for legend in UWP Chart](Legend_images/legendpos_4.png)
 
-## Multiple Legends
+## Multiple legends
 
 Chart control supports showing the legend in multiple panels, to view the legend clearly when multiple areas and greater numbers of chart series are present. 
 
@@ -583,7 +583,7 @@ chart.Series.Add(splineSeries);
 
 ![Multiple legends support in UWP Chart](Legend_images/mullegends.png)
 
-## Legends for Accumulation Series
+## Legends for accumulation series
 
 For the series like [`Pie`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PieSeries.html), [`Doughnut`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.DoughnutSeries.html), [`Funnel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FunnelSeries.html) and [`Pyramid`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.PyramidSeries.html), legends will be generated for all the data points. But for remaining series, each legend corresponds to each series. By default, the [`Interior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LegendItem.html#Syncfusion_UI_Xaml_Charts_LegendItem_Interior) color of the segment (data point) is applied to the legend icon. 
 
@@ -621,7 +621,6 @@ chart.Series.Add(pieSeries);
 {% endtabs %}
 
 ![Legends for accumulation series in UWP Chart](Legend_images/legend_pie.png)
-
 
 N> Here Legend ‘Label’ will be the x value of the Pie chart.
 
@@ -687,7 +686,7 @@ chart.Series.Add(columnSeries);
 
 ![Series visibility of legend in UWP Chart](Legend_images/seriesvisibile.png)
 
-## Legend Orientation
+## Legend orientation
 
 Orientation of the [`Legend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) can be vertical or horizontal. By default the [`Orientation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_Orientation) is [`Horizontal`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartOrientation.html#Syncfusion_UI_Xaml_Charts_ChartOrientation_Horizontal). 
 
@@ -803,7 +802,7 @@ public class ImageConverter:IValueConverter
 
 ![Template support for legend in UWP Chart](Legend_images/customization_1.png)
 
-**Customizing** **Legend** **Items** **Layout**
+**Customizing legend items layout**
 
 When there is more number of legends, the legend exceeds the chart will be cropped, as it arranged horizontally. To avoid the cropping we can change the existing arrangement layout (one which arrange each legend items horizontally) using 
 `ItemsPanel` property as in below code snippet:

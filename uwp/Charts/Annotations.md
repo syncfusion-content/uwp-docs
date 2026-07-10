@@ -6,6 +6,7 @@ platform: uwp
 control: SfChart
 documentation: ug
 ---
+
 # Annotations in UWP Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations), which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations). 
@@ -16,8 +17,7 @@ The following annotations are supported in [`SfChart`](https://help.syncfusion.c
 * [Shape Annotation](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html)
 * [Image Annotation](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html)
 
-## Adding Annotation
-
+## Adding annotation
 
 You can create an instance for any type of Annotation and add it to [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations) collection. Here for instance, the [`EllipseAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.EllipseAnnotation.html) is added.
 
@@ -51,20 +51,19 @@ chart.Annotations.Add(annotation);
 
 ![Annotation support in UWP Chart](Annotation_images/Annotation_img1.jpeg)
 
-
-## Positioning the Annotation
+## Positioning the annotation
 
 [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations) can be positioned in plot area based on [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1)  properties and for image and shape annotations you need to specify [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Y2) properties. These X and Y values can be specified with axis units or pixel units and this can be identified using [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) property.
 
-### Positioning based on CoordinateUnit as Axis
+### Positioning based on CoordinateUnit as axis
 
 To position based on axis you need to set the X1 and Y1, X2 and Y2 (if needed) properties based on the primary and secondary axis range values and [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) as [`Axis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html#Syncfusion_UI_Xaml_Charts_CoordinateUnit_Axis). 
 
-### Positioning based on CoordinateUnit as Pixels
+### Positioning based on CoordinateUnit as pixels
 
 To position based on the pixel values you have to set the [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) as [`Pixel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CoordinateUnit.html#Syncfusion_UI_Xaml_Charts_CoordinateUnit_Pixel) and the pixel values in X1 and Y1, X2 and Y2 properties in Annotation.
 
-### Adding Annotation for MultipleAxes
+### Adding annotation for multiple axes
 
 You can also add annotation for a particular axis when there is multiple axes using [`XAxisName`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_XAxisName) and [`YAxisName`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_YAxisName) properties as in the below code snippet.
 
@@ -246,8 +245,7 @@ chart.Series.Add(scatterSeries);
 
 ![Multiple axis support for annotation in UWP Chart](Annotation_images/Annotation_img2.jpeg)
 
-
-## Aligning the Annotation
+## Aligning the annotation
 
 You can align the annotation horizontally and vertically from its actual plotting position using the `HorizontalAlignment` and `VerticalAlignment` properties as in the following code sample.
 
@@ -274,12 +272,11 @@ In the following image, you can see the rectangle annotation aligned to the bott
 
 ![Alignment support for annotations in UWP Chart](Annotation_images/Annotation_img3.jpeg)
 
-
-## Text Annotation
+## Text annotation
 
 [`TextAnnotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TextAnnotation.html) are used to add simple text in specific points over the chart area.
 
-### Rotate the Text Annotation
+### Rotate the text annotation
 
 The [`Angle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TextAnnotation.html#Syncfusion_UI_Xaml_Charts_TextAnnotation_Angle) property is used to get or set the angle for rotating the Annotation. The following code example demonstrate the rotation feature for [`TextAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TextAnnotation.html).
 
@@ -308,8 +305,7 @@ The [`Angle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.TextA
 
 ![Rotation support for text annotation in UWP Chart](Annotation_images/Annotation_img4.jpeg)
 
-
-### Editing Text Annotation
+### Editing text annotation
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides you with an editing option for the text in any annotations. When text annotation is enabled editing, if we click the text annotation it switches to edit mode which provide easy way of customizing the text at run time. You can enable the editing mode in TextAnnotation using [`EnableEditing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_EnableEditing) property.
 
@@ -337,8 +333,7 @@ The following code example and screenshot demonstrate [`TextAnnotation`](https:/
 
 ![Editing text annotation support in UWP Chart](Annotation_images/Annotation_img5.jpeg)
 
-
-## Shape Annotation
+## Shape annotation
 
 [`ShapeAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html) allows you to add annotations in the form of shapes such as rectangle, ellipse,horizontal line and vertical line  at the specific area of interest, in the chart area.
 
@@ -359,9 +354,7 @@ The following API’s are commonly used in all ShapeAnnotation:
 
 * [`CanResize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_CanResize)  - A Boolean value that represent to resize the Annotation.
 
-
 ### Customization options for LineAnnotation
-
 
 **GrabExtent** 
 
@@ -403,15 +396,13 @@ LineAnnotation annotation = new LineAnnotation()
 
 chart.Annotations.Add(annotation);
 
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Customizing line annotation support in UWP Chart](Annotation_images/GrabExtent.png)
 
-
-**Toggling** **LineAnnotation** **Visibility**
+**Toggling LineAnnotation visibility**
 
 [`LineAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineAnnotation.html) by default will be visible. You can also collapse the visibility of the line annotation using [`ShowLine`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_ShowLine) property.
 
@@ -439,8 +430,7 @@ chart.Annotations.Add(annotation);
 
 ![Visibility support for line annotation in UWP Chart](Annotation_images/Annotation_img6.jpeg)
 
-
-**Displaying** **Axis** **Labels** **for** **LineAnnotation**
+**Displaying axis labels for LineAnnotation**
 
 [`VerticalLineAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.VerticalLineAnnotation.html) and [`HorizontalLineAnnotation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.HorizontalLineAnnotation.html) also displays the axis labels in which the line is placed. This feature can be enabled by setting [`ShowAxisLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.StraightLineAnnotation.html#Syncfusion_UI_Xaml_Charts_StraightLineAnnotation_ShowAxisLabel) property to true as in the below code snippet.
 
@@ -468,7 +458,6 @@ chart.Annotations.Add(annotation);
 {% endhighlight %}
 
 ![Displaying axis label for line annotation in UWP Chart](Annotation_images/Annotation_img7.jpeg)
-
 
 **AxisLabelTemplate**
 
@@ -515,14 +504,13 @@ You can also customize the default appearance of the axis label using [`AxisLabe
 
 ![Customizing axis label in UWP Chart](Annotation_images/Annotation_img8.jpeg)
 
-
-**Adding** **Arrow** **to** **LineAnnotation**
+**Adding arrow to LineAnnotation**
 
 To display single headed arrow you can modify the line annotation by setting [`LineCap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property to [`Arrow`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineCap.html#Syncfusion_UI_Xaml_Charts_LineCap_Arrow). By default the [`LineCap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineAnnotation.html#Syncfusion_UI_Xaml_Charts_LineAnnotation_LineCap) property value in none.
 
 ![Arrow support for line annotation in UWP Chart](Annotation_images/Annotation_img9.jpeg)
 
-### Adding Text in ShapeAnnotation
+### Adding text in ShapeAnnotation
 
 For all the annotations like Text, Shape, Image and Line, you can display the text for the annotation using Text property as in the below code snippet.
 
@@ -544,8 +532,7 @@ For all the annotations like Text, Shape, Image and Line, you can display the te
 
 ![Customizing text for shape annotation in UWP Chart](Annotation_images/Annotation_img10.jpeg)
 
-
-### Aligning Text in ShapeAnnotation
+### Aligning text in ShapeAnnotation
 
 The text alignment can be changed using [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_HorizontalTextAlignment) and [`VerticalTextAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_VerticalTextAlignment) properties. 
 
@@ -571,8 +558,7 @@ The text alignment can be changed using [`HorizontalTextAlignment`](https://help
 
 ![Alignment support for the text of shape annotation in UWP Chart](Annotation_images/Annotation_img11.jpeg)
 
-
-**Line** **Annotation**
+**Line annotation**
 
 {% highlight xaml %}
 
@@ -594,8 +580,7 @@ The text alignment can be changed using [`HorizontalTextAlignment`](https://help
 
 ![Alignment support for the text of shape annotation in UWP Chart](Annotation_images/Annotation_img12.jpeg)
 
-
-**Image** **Annotation**
+**Image annotation**
 
 {% highlight xaml %}
 
@@ -658,8 +643,7 @@ SfChart allows customization of shape annotation using the following properties.
 
 ![Shape annotations customization support in UWP Chart](Annotation_images/Annotation_img14.jpeg)
 
-
-## Image Annotation
+## Image annotation
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to add images as Annotation over the chart area, using the class [ImageAnnotation](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ImageAnnotation.html). 
 
@@ -716,8 +700,7 @@ The following API’s are used in ImageAnnotation
 
 ![Image annotation type in UWP Chart](Annotation_images/Annotation_img15.jpeg)
 
-
-**Rotating** **the** **image** **in** **ImageAnnotation**
+**Rotating the image in ImageAnnotation**
 
 {% highlight xaml %}
 
@@ -773,10 +756,9 @@ The following API’s are used in ImageAnnotation
 
 ![Rotation support for image annotation in UWP Chart](Annotation_images/Annotation_img16.jpeg)
 
-
 ## Interactivity
 
-### ToolTip
+### Tooltip
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support to view the tooltip when mouse hovered on the annotation. To view to tooltip you have to enable the [`ShowToolTip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ShowToolTip) property. By default for tooltip there is no content, you have to set the content for the tooltip in [`ToolTipContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipContent) property.
 
@@ -802,8 +784,7 @@ The following code example demonstrates the default tooltip.
 
 ![ToolTip support for annotation in UWP Chart](Annotation_images/Annotation_img17.jpeg)
 
-
-**Position** **the** **Tooltip**
+**Position the tooltip**
 
 Tooltip can be placed top, bottom, left or right side of the cursor using [`ToolTipPlacement`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_ToolTipPlacement) property. The tooltip by default will be placed in Right. The following code example demonstrates the tooltip placed at the bottom.
 
@@ -827,7 +808,6 @@ Tooltip can be placed top, bottom, left or right side of the cursor using [`Tool
 {% endhighlight %}
 
 ![Annotation tooltip positioning support in UWP Chart](Annotation_images/Annotation_img18.jpeg)
-
 
 **ToolTipTemplate**
 
@@ -874,8 +854,7 @@ The default appearance of the Tooltip can be changed using [`TooltipTemplate`](h
 
 ![Annotation tooltip template support in UWP Chart](Annotation_images/Annotation_img19.jpeg)
 
-
-### Drag and Resize the Annotation
+### Drag and resize the annotation
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides dragging and resizing support for [`ShapeAnnotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html).
 
@@ -886,7 +865,7 @@ The following API’s are used for dragging and resizing the annotation
 * [`DraggingMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_DraggingMode)- Represents the dragging direction for the annotation. 
 * [`ResizingMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SolidShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_SolidShapeAnnotation_ResizingMode)- Represents the resizing direction for the annotation. 
 
-**Dragging** **the** **Annotation**
+**Dragging the annotation**
 
 The following code example demonstrates the dragging the rectangle annotation.
 
@@ -909,7 +888,6 @@ The following code example demonstrates the dragging the rectangle annotation.
 {% endhighlight %}
 
 ![Annotation dragging support in UWP Chart](Annotation_images/Annotation_img20.jpeg)
-
 
 You can set the [`DraggingMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_DraggingMode) as Horizontal which will limit the annotation to be dragged only by horizontally as in the below code snippet.
 
@@ -934,8 +912,7 @@ You can set the [`DraggingMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.U
 
 ![Dragging mode support for annotation in UWP Chart](Annotation_images/Annotation_img21.jpeg)
 
-
-**Resizing** **the** **Annotation**
+**Resizing the annotation**
 
 You can resize the annotation by enabling [`CanResize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_CanResize) property to True as in the below code snippet.
 
@@ -982,8 +959,7 @@ You can resize the annotation by enabling [`CanResize`](https://help.syncfusion.
 
 ![Annotation resizing mode support in UWP Chart](Annotation_images/Annotation_img23.jpeg)
 
-
-## Annotation Clipping
+## Annotation clipping
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to clip the annotation if the annotation crosses the boundary by setting [`EnableClipping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_EnableClipping) property to True as in the below code snippet.
 
@@ -1009,8 +985,7 @@ The following screenshot explains that even when x value is provided out of boun
 
 ![Annotation clipping support in UWP Chart](Annotation_images/Annotation_img24.jpeg)
 
-
-## Customizing Text in Annotation
+## Customizing text in annotation
 
 The text in annotation can be customized using the following API’s
 

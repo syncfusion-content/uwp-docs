@@ -80,7 +80,6 @@ public sealed partial class MainPage : Page
 
 {% endtabs %}
 
-
 ### Binding complex property to the chart
 
 The complex property binding feature enables you to access nested object reference property values to render the chart segment. 
@@ -222,7 +221,7 @@ private void CreateChart()
 
 {% endtabs %}
 
-### Listening Property Changes
+### Listening property changes
 
 You can notify the [`XBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_XBindingPath) and [`YBindingPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.XYDataSeries.html#Syncfusion_UI_Xaml_Charts_XyDataSeries_YBindingPath) properties changes by setting [`ListenPropertyChange`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ListenPropertyChange) as true as shown in the below code snippet.
 

@@ -113,7 +113,6 @@ chart.Series.Add(series);
 
 ![Symbol support in UWP Chart](adornments_images/uwp-charts-adornments-symbol-support.png)
 
-
 ### Customization
 
 SfChart provides more customization support for markers in adornments.
@@ -174,8 +173,7 @@ chart.Series.Add(series);
 
 ![Symbol customization support in UWP Chart](adornments_images/uwp-charts-adornments-symbol-customization.png)
 
-
-**Custom Template**
+**Custom template**
 
 You can also provide the template for the symbol using [`SymbolTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate) property as in the below code snippet.
 
@@ -509,7 +507,6 @@ chart.Series.Add(series);
 
 ![Adornments label content customization support in UWP Chart](adornments_images/uwp-charts-adornments-label-content-yoftof.png)
 
-
 **DateTime**
 
 {% tabs %}
@@ -636,7 +633,7 @@ public class Convert : IValueConverter
 
 ![Label Template support for adornments in UWP Chart](adornments_images/uwp-charts-adornments-label-content-path.png)
 
-**Label Rotation**
+**Label rotation**
 
 [`LabelRotationAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelRotationAngle) property is used to define the angle to which the label has to rotate. The following code demonstrates the label rotating angle.
 
@@ -739,7 +736,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 ![Adornments label customization support in UWP Chart](adornments_images/uwp-charts-adornments-custom-label.png)
 
-## Applying Series Brush
+## Applying series brush
 
 [`UseSeriesPalette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_UseSeriesPalette) property is used to set the interior of the series to the adornment background. 
 
@@ -780,7 +777,6 @@ series.AdornmentsInfo = adornmentInfo;
 {% endtabs %}
 
 ![Series brush for adornments background support in UWP Chart](adornments_images/uwp-charts-adornments-series-palette.png)
-
 
 The default appearance of the label can be customized using [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property as in the below code example:
 
@@ -915,7 +911,7 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 {% endtabs %}
 
-## Adding Connector Line to Adornments
+## Adding connector line to adornments
 
 You can add connector line for the adornments using [`ShowConnectorLine`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowConnectorLine) property. Also this connector line can be customized using [`ConnectorHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorHeight), [`ConnectorLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorRotationAngle) properties.
 
@@ -957,11 +953,11 @@ series.AdornmentsInfo = adornmentInfo;
 
 ![Connector line for adornments support in UWP Chart](adornments_images/uwp-charts-adornments-adding-connectorline.png)
 
-### Connector Height and Rotation
+### Connector height and rotation
 
 You can customize the connector line height and also line can be rotated to any specified angle.
 
-### Connector Line Style
+### Connector line style
 
 You can define the style for the connector line using [`ConnectorLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) properties.
 
@@ -981,7 +977,6 @@ You can define the style for the connector line using [`ConnectorLineStyle`](htt
 {% endhighlight %}
 
 {% highlight c# %}
-
 
 Style style = new Style() { TargetType = typeof(Path) };
 
@@ -1011,15 +1006,13 @@ ChartAdornmentInfo adornmentInfo = new ChartAdornmentInfo()
 
 series.AdornmentsInfo = adornmentInfo;
 
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Connector line style support in UWP Chart](adornments_images/uwp-charts-adornments-connectorline-style.png)
 
-
-### Connector Type
+### Connector type
 
 [`ConnectorType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_ConnectorType) property in AccumulationSeries is used to specify the connector line type such as [`Line`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Line) or [`Bezier`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ConnectorMode.html#Syncfusion_UI_Xaml_Charts_ConnectorMode_Bezier). This property is only for AccumulationSeries like PieSeries, DoughnutSeries, PyramidSeries and FunnelSeries.
 
@@ -1034,7 +1027,6 @@ series.AdornmentsInfo = adornmentInfo;
 {% highlight xaml %}
 
 <syncfusion:PieSeries ConnectorType="Bezier" LabelPosition="Outside"
-
                       ItemsSource="{Binding Demands}"
                       XBindingPath="Demand" EnableSmartLabels="True"
                       YBindingPath="Year2011">
@@ -1077,8 +1069,7 @@ chart.Series.Add(series);
 
 ![Connector type support in UWP Chart](adornments_images/uwp-charts-adornments-connector-type-bezier.png)
 
-
-## Positioning the Adornments
+## Positioning the adornments
 
 The positioning of adornments inside the series is defined using [`AdornmentsPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. 
 
@@ -1151,7 +1142,7 @@ series.AdornmentsInfo = adornmentInfo;
 
 ![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-positioning-support.png)
 
-### Advanced Positioning
+### Advanced positioning
 
 Other than the above positioning options, SfChart providing additional customization option to position the adornments smartly based on series types using [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property.
 
@@ -1165,7 +1156,7 @@ The following are the values for this property:
 
 The following section shows few examples for this LabelPosition behavior with respect to the series.
 
-**Column Series**
+**Column series**
 
 LabelPosition as Center
 
@@ -1199,7 +1190,6 @@ series.AdornmentsInfo = adornmentInfo;
 
 ![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-column-series.png)
 
-
 LabelPosition as Inner
 
 {% tabs %}
@@ -1209,6 +1199,7 @@ LabelPosition as Inner
 <syncfusion:ColumnSeries.AdornmentsInfo>
 
     <syncfusion:ChartAdornmentInfo ShowLabel="True" LabelPosition="Inner" />
+
 </syncfusion:ColumnSeries.AdornmentsInfo>
 
 {% endhighlight %}
@@ -1230,7 +1221,6 @@ series.AdornmentsInfo = adornmentInfo;
 {% endtabs %}
 
 ![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-column-series-support.png)
-
 
 LabelPosition as Outer
 
@@ -1263,7 +1253,6 @@ series.AdornmentsInfo = adornmentInfo;
 {% endtabs %}
 
 ![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-label-position.png)
-
 
 **Line Series**
 
@@ -1335,7 +1324,6 @@ chart.Series.Add(series);
 
 ![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-line-series-support.png)
 
-
 LabelPosition as Outer
 
 {% tabs %}
@@ -1404,8 +1392,7 @@ chart.Series.Add(series);
 
 ![Adornments positioning support in UWP Chart](adornments_images/uwp-charts-adornments-series-positioning.png)
 
-
-## Smart Labels for Accumulation Series
+## Smart labels for accumulation series
 
 When you have more datapoints in Pie or Doughnut series, the adornment labels might get overlap with each other. SfChart provides built-in support to avoid these overlapping by using [`EnableSmartLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CircularSeriesBase.html#Syncfusion_UI_Xaml_Charts_CircularSeriesBase_EnableSmartLabels) property.
 

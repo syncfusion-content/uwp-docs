@@ -10,7 +10,7 @@ documentation: ug
 
 Scale break is a stripe drawn in the chart area to denote the break in the continuity of data points. Scale breaks are useful when there is a large difference in the data points. Scale break allows you to have different ranges on the same axis to visualize the data effectively.
 
-## Positioning the Breaks
+## Positioning the breaks
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides [`Start`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_Start) and [`End`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisScaleBreak.html#Syncfusion_UI_Xaml_Charts_ChartAxisScaleBreak_End) properties for defining the scale break range (ranges that needs to be skipped). These values are based on axis values. 
 
@@ -62,13 +62,13 @@ chart.SecondaryAxis = axis;
 
 ![Scale breaks support in UWP Chart](ScaleBreak_images/ScaleBreak_img2.jpeg)
 
-## Break Position Customization
+## Break position customization
 
 For the defined break range, its position in the chart area can be customized using the [`BreakPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.NumericalAxis.html#Syncfusion_UI_Xaml_Charts_NumericalAxis_BreakPosition) property in numerical axis.
 
 Break position is determined based on the following factors:
 
-### Data Count
+### Data count
 
 Based on the number of data points that fall in axis ranges (other than break range) scale break will be positioned.
 
@@ -246,8 +246,7 @@ chart.SecondaryAxis = axis;
 
 ![Positioning the scale break based on percent in UWP Chart](ScaleBreak_images/ScaleBreak_img5.jpeg)
 
-
-## Multiple Breaks
+## Multiple breaks
 
 Multiple breaks can be included in the chart.
 

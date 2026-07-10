@@ -11,11 +11,11 @@ documentation: ug
 
 This section explains the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
-## Adding Chart Reference
+## Adding chart reference
 
 Refer this [article](https://help.syncfusion.com/uwp/add-syncfusion-controls) to know how to add Syncfusion® controls in Visual Studio projects through various ways. You can also refer [this](https://help.syncfusion.com/uwp/control-dependencies) link to know about the assemblies required for adding Chart to your project. 
  
-## Initialize Chart
+## Initialize chart
 
 Import the [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) namespace as shown below in your respective Page,
 
@@ -284,7 +284,6 @@ Dim primaryAxis As New CategoryAxis()
 primaryAxis.Header = "Name"
 chart.PrimaryAxis = primaryAxis
 
-
 'Adding vertical axis to the chart  
 
 Dim secondaryAxis As New NumericalAxis()
@@ -310,7 +309,7 @@ chart.Series.Add(series)
 
 N> Syncfusion® Chart also supports rendering combination of multiple series. Refer [`this`](https://help.syncfusion.com/uwp/charts/area#multiple-area) for details.
 
-## Add Title
+## Add title
 
 The header of the chart acts as the title, to provide quick information to the user about the data being plotted in the chart. You can set title using [`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property of chart as shown below.
 
@@ -350,15 +349,12 @@ You can add data labels to improve the readability of the chart and it can be en
 
 <syncfusion:SfChart>
 
-    ...
-
+    // Code omitted for brevity
     <syncfusion:ColumnSeries>
         <syncfusion:ColumnSeries.AdornmentsInfo>
             <syncfusion:ChartAdornmentInfo ShowLabel="True" />
         </syncfusion:ColumnSeries.AdornmentsInfo>
     </syncfusion:ColumnSeries>
-
-    ...
 
 </syncfusion:SfChart>
 
@@ -390,15 +386,12 @@ You can enable legend using [`SfChart.Legend`](https://help.syncfusion.com/cr/uw
 
 <syncfusion:SfChart>
 
-    ...
-
+    // Code omitted for brevity
     <syncfusion:SfChart.Legend>
 
         <syncfusion:ChartLegend />
 
     </syncfusion:SfChart.Legend>
-
-    ...
 
 </syncfusion:SfChart>
 
@@ -426,15 +419,12 @@ Additionally, you need to set a label for each series using the [`Label`](https:
 
 <syncfusion:SfChart>
 
-    ...
-
+    // Code omitted for brevity
     <syncfusion:ColumnSeries
         Label="Heights"
         ItemsSource="{Binding Data}"
         XBindingPath="Name"
         YBindingPath="Height" />
-
-    ...
 
 </syncfusion:SfChart>
 
@@ -474,15 +464,12 @@ Tooltips are used to show information about the segment, when you click on the s
 
 <syncfusion:SfChart>
 
-    ...
-
+    // Code omitted for brevity
     <syncfusion:ColumnSeries
         ShowTooltip="True"
         ItemsSource="{Binding Data}"
         XBindingPath="Name"
         YBindingPath="Height" />
-
-    ...
 
 </syncfusion:SfChart>
 

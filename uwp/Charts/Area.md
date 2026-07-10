@@ -21,7 +21,7 @@ The following are the major properties of chart(SfChart):
 * [`Behaviors`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors)–  Used to add one or more interactive features to the chart.
 * [`Area`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html#Syncfusion_UI_Xaml_Charts_ChartSeries_Area) - Gets the instance of chart.
 
-## Chart Header
+## Chart header
 
 [`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Header) property is used to define the title for the chart. This allows you to add any object (.Net object) as content for chart title. 
 
@@ -44,7 +44,6 @@ chart.Header = "Usage of Metals";
 {% endtabs %}
 
 ![SfChart with header in UWP.](area_images/uwp-charts-area-chart-with-header.jpeg)
-
 
 Header can be positioned left or right side of the chart using [`HorizontalHeaderAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property.
 
@@ -101,7 +100,7 @@ chart.Header = border;
 
 N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 
-## Area Customization
+## Area customization
 
 SfChart provides the properties like [`AreaBorderBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBorderBrush), [`AreaBorderThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBorderThickness), [`AreaBackground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBackground) and `Background` for customizing the plot area.
 
@@ -140,7 +139,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 ![SfChart with customized plot area in UWP](area_images/uwp-charts-plot-area-customization.jpeg)
 
-## Multiple Area 
+## Multiple area 
 
 You can split plot area into multiple rows and columns using [`ChartRowDefinition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartRowDefinition.html) and [`ChartColumnDefinition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColumnDefinition.html) like Grid panel’s row and column definition. 
 
@@ -246,8 +245,7 @@ chart.Series.Add(columnSeries2);
 
 ![SfChart with multiple panes in UWP](area_images/uwp-charts-area-multiple-panes.jpeg)
 
-
-## Column Span and Row Span
+## Column span and row span
 
 These can be used to specify the number of column or rows up to which the axis can extend. Same like Grid’s RowSpan or ColumnSpan property, it is also an attached property.
 
@@ -349,8 +347,7 @@ chart.Series.Add(lineSeries);
 
 ![SfChart with two y axes, one axis spanned to two rows](area_images/uwp-charts-area-column-and-row-span.jpeg)
 
-
-## Placing Series Side-By-Side
+## Placing series side-by-side
 
 It defines the placement pattern of bar type series like [`Column`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ColumnSeries.html), [`Bar`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.BarSeries.html), [`RangeColumn`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.RangeColumnSeries.html), etc. 
 
@@ -449,7 +446,6 @@ chart.Series.Add(columnSeries2);
 {% endtabs %}
 
 ![Column chart type place one over another in UWP.](area_images/uwp-charts-area-one-over-another.jpeg)
-
 
 N>As the series will be placed one over the other(overlapped), to differentiate between the series the [`SegmentSpacing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ISegmentSpacing.html#Syncfusion_UI_Xaml_Charts_ISegmentSpacing_SegmentSpacing) is used.
 
@@ -565,7 +561,6 @@ You can hold and resume the series updates in dynamic update scenarios using the
 [`SuspendSeriesNotification`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_SuspendSeriesNotification)
 
 [`ResumeSeriesNotification`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_ResumeSeriesNotification)
-
 
 ## Chart events
 

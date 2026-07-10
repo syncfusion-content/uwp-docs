@@ -99,7 +99,6 @@ chart.Series.Add(errorBar);
 
 ![Mode for error bars in UWP Chart](ErrorBar_images/ErrorBar_2.png)
 
-
 ### Vertical
 
 To view vertical error value, you can set the [`Mode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_Mode) as [`Vertical`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarMode.html#Syncfusion_UI_Xaml_Charts_ErrorBarMode_Vertical) as shown in the below code example.
@@ -399,7 +398,7 @@ chart.Series.Add(errorBar);
 
 ![Percentage error bar type in UWP Chart](ErrorBar_images/ErrorBar_5.png)
 
-### Standard Deviation
+### Standard deviation
 
 {% tabs %}
 
@@ -438,7 +437,7 @@ chart.Series.Add(errorBar);
 
 ![Standard deviation error bar type in UWP Chart](ErrorBar_images/ErrorBar_6.png)
 
-### Standard Errors
+### Standard errors
 
 {% tabs %}
 
@@ -522,7 +521,7 @@ chart.Series.Add(errorBar);
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides customization properties for the error bar lines as in the following section.
 
-### Line Style
+### Line style
 
 You can define the [`LineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineStyle.html) for the error bar lines using [`HorizontalLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalLineStyle) and [`VerticalLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalLineStyle) properties as in the below code examples.
 
@@ -580,7 +579,7 @@ errorBarSeries.VerticalLineStyle = new LineStyle()
 
 ![Error bar lines customization support in UWP Chart](ErrorBar_images/ErrorBar_10.png)
 
-### Line Cap Style
+### Line cap style
 
 ErrorBar line cap can be customized using [`HorizontalCapLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalCapLineStyle) and [`VerticalCapLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalCapLineStyle) as in the below code examples.
 

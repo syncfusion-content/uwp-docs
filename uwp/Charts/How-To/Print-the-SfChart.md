@@ -13,7 +13,6 @@ To print the SfChart, call the Print method.
 
 The following code sample can be used to print the SfChart:
 
-
 {% highlight c# %}
   chart.Print();   
 
