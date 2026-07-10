@@ -2,28 +2,33 @@
 layout: post
 title: Image Filter in UWP Image Editor control | Syncfusion
 description: Learn here all about Image Filter support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
-platform: UWP
+platform: uwp
 control: ImageEditor
 documentation: ug
 ---
 
+The following namespaces are required for using `ImageFilter` in the SfImageEditor control:
+
+* `Syncfusion.UI.Xaml.ImageEditor`
+* `Syncfusion.UI.Xaml.ImageEditor.Enums`
+
 # Image Filter in UWP Image Editor (SfImageEditor)
 
-By using the SfImageEditor control, you can add effects such as Hue, Saturation, Brightness, Contrast, Blur, and Sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ApplyImageEffect_Syncfusion_UI_Xaml_ImageEditor_Enums_ImageEffect_System_Single_) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageEffect) and [`EffectValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_EffectValue). The ImageEffect is an Enum, which contains the following effects:
+By using the SfImageEditor control, you can add effects such as Hue, Saturation, Brightness, Contrast, Blur, and Sharpen to the image. These effects can be applied from the toolbar or by using the `ApplyImageEffect` method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ApplyImageEffect_Syncfusion_UI_Xaml_ImageEditor_Enums_ImageEffect_System_Single_) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageEffect) and [`EffectValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_EffectValue). The `ImageEffect` is an enum that contains the following effects:
 
 * Hue
 * Saturation
 * Brightness
 * Contrast
 * Blur
-* Sharpen 
+* Sharpen
 * None
 
-The EffectValue is the corresponding ImageEffect values, which varies for each effect, and they are explained as follows.
+The `EffectValue` is the corresponding value of `ImageEffect`, which varies for each effect, and is explained as follows.
 
 ## Hue
 
-The hue represents the dominant wavelength of the color. The value of hue effect ranges from -180 to 180.
+The hue represents the dominant wavelength of the color. The value of the hue effect ranges from -180 to 180.
 
 {% highlight C# %}
 
@@ -57,7 +62,7 @@ public MainPage()
 
 ## Brightness
 
-The brightness represents how bright the color is. The value of brightness effect ranges from -100 to 100.
+The brightness represents how bright the color is. The value of the brightness effect ranges from -100 to 100.
 
 {% highlight C# %}
 
@@ -74,7 +79,7 @@ public MainPage()
 
 ## Contrast
 
-The contrast represents the color contrast of an image. The value of contrast effect ranges from -100 to 100.
+The contrast represents the color contrast of an image. The value of the contrast effect ranges from -100 to 100.
 
 {% highlight C# %}
 
@@ -91,7 +96,7 @@ public MainPage()
 
 ## Blur
 
-The blur represents the clearness of the image. The value of blur effect ranges from 0 to 6.
+The blur represents the clearness of the image. The value of the blur effect ranges from 0 to 6.
 
 {% highlight C# %}
 
@@ -108,7 +113,7 @@ public MainPage()
 
 ## Sharpen
 
-Sharpen is used to highlight edges and fine details in an image. The value of sharpen effect ranges from 0 to 6.
+Sharpen is used to highlight edges and fine details in an image. The value of the sharpen effect ranges from 0 to 6.
 
 {% highlight C# %}
 
@@ -123,6 +128,6 @@ public MainPage()
 
 ![SfImageEditor sharpen image effects](ImageFilter_Images/Sharpen.png)
 
-N> The ImageEffect enum also contains “None” option, which removes all the previously applied effects, which are not saved and displays the original image. When applying effect using the ApplyImageEffect method, the effects will be saved automatically. But, if you apply effects from the toolbar, each effect will be saved only by clicking the OK button, else all the applied effects will not be saved.
+N> The `ImageEffect` enum also contains a "None" option, which removes all the previously applied effects that are not saved and displays the original image. When applying an effect using the `ApplyImageEffect` method, the effects will be saved automatically. However, if you apply effects from the toolbar, each effect will be saved only by clicking the OK button; otherwise, all the applied effects will not be saved.
 
 ![SfImageEditor image effect image](ImageFilter_Images/ImageFilter.png)
