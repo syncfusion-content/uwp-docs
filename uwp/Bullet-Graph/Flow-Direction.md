@@ -7,7 +7,7 @@ control: SfBulletGraph
 documentation: ug
 ---
 
-# Flow Direction
+# Flow Direction in UWP Bullet Graph (SfBulletGraph)
 
 By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using the **FlowDirection** property respectively.
 
