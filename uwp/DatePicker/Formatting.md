@@ -54,6 +54,7 @@ using Syncfusion.UI.Xaml.Controls.Input;
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
  sfdatePicker.FormatString = "M"
 
@@ -99,6 +100,7 @@ sfdatePicker.SelectorFormatString = "M";
 {% endhighlight  %}
 
 {% highlight VB %}
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 sfdatePicker.SelectorFormatString = "M"
 

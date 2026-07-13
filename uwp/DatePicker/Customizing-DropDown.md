@@ -40,6 +40,8 @@ sfdatePicker.DropDownHeight = 300;
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 sfdatePicker.DropDownHeight = 300
 
 {% endhighlight %}
@@ -84,6 +86,8 @@ using Syncfusion.UI.Xaml.Controls.Input;
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
  sfdatePicker.ShowDropDownButton = True
 

@@ -72,6 +72,8 @@ datePicker.SelectorItemCount = 4;
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
  datePicker.SelectorItemWidth = 100
  datePicker.SelectorItemHeight = 100
  datePicker.SelectorItemSpacing = 50

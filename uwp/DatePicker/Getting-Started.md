@@ -147,6 +147,8 @@ datePicker1.FormatString = "yyyy-dd-MM";
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 datePicker1.FormatString = "yyyy-dd-MM"
 
 {% endhighlight %}
