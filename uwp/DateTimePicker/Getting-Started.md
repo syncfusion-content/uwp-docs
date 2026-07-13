@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP DateTimePicker (SfDateTimeCombo)
 
-This section explains how to create SfDateTimeCombo control
+This section explains how to create the SfDateTimeCombo control.
 
 ## Add SfDateTimeCombo to an application
 
@@ -19,7 +19,7 @@ Create a Universal Windows Platform project in Visual Studio and refer to the fo
 
 * Syncfusion.SfShared.UWP
 
-1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
+1. Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
   
 {% tabs %}
 
@@ -35,7 +35,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
- 2.Now add the `SfDateTimeCombo` control with a required optimal name using the included namespace
+2. Now add the `SfDateTimeCombo` control with a required name using the included namespace
 
 {% tabs %}
 

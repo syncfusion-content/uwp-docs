@@ -50,7 +50,7 @@ The MonthComboStyle property is used to customize the style of the DateTimeItem 
 
 ## YearComboStyle
 
-The YearComboStyle property is used to customize the style of the DateTimeItem containing the year part of DateTime set in the SfDateTimeCombo control.
+The YearComboStyle property is used to customize the style of the DateTimeItem containing the year part of the DateTime set in the SfDateTimeCombo control.
 
 
 
@@ -69,7 +69,7 @@ The MinuteComboStyle property is used to customize the style of the DateTimeItem
 
 ## TwelveHourComboStyle
 
-The TwelveHourComboStyle property is used to customize the style of the DateTimeItem containing the twelve hour part of the DateTime set in the SfDateTimeCombo control.
+The TwelveHourComboStyle property is used to customize the style of the DateTimeItem containing the twelve-hour part of the DateTime set in the SfDateTimeCombo control.
 
 
 
@@ -81,7 +81,7 @@ The TwelveHourComboStyle property is used to customize the style of the DateTime
 
 ## TwentyFourHourComboStyle
 
-The TwentyFourHourComboStyle property is used to customize the style of the DateTimeItem containing the twenty-four hour part of the DateTime set in the SfDateTimeCombo control.
+The TwentyFourHourComboStyle property is used to customize the style of the DateTimeItem containing the twenty-four-hour part of the DateTime set in the SfDateTimeCombo control.
 
 ![Customization_img6](Customization_images/Customization_img6.png)
 
@@ -99,15 +99,15 @@ The SecondComboStyle property is used to customize the style of the DateTimeItem
 
 ## AMPMDesignatorComboStyle
 
-The AMPMDesignatorComboStyle property is used to customize the style of the DateTimeItem containing the AM/PM part of DateTime set in the SfDateTimeCombo control.
+The AMPMDesignatorComboStyle property is used to customize the style of the DateTimeItem containing the AM/PM part of the DateTime set in the SfDateTimeCombo control.
 
 ![Customization_img8](Customization_images/Customization_img8.png)
 
 
 
-## Item template
+## Item Template
 
-The Item template property is used to decorate the DateTimeItem drop-down list containing the date or time lists with custom visuals. 
+The Item Template property is used to decorate the DateTimeItem drop-down list containing the date or time lists with custom visuals. 
 
 N>  The DataContext of a DateTimeItem drop-down list containing date or time parts is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
 
@@ -181,14 +181,14 @@ The SecondItemTemplate property is used to define the DateTimeItem template of t
 
 ### TwelveHourItemTemplate
 
-The TwelveHourItemTemplate property is used to define the DateTimeItem template of twelve hour part in the SfDateTimeCombo control.
+The TwelveHourItemTemplate property is used to define the DateTimeItem template of the twelve-hour part in the SfDateTimeCombo control.
 
 ![Customization_img15](Customization_images/Customization_img15.png)
 
 
 ### TwentyFourHourItemTemplate
 
-The TwentyFourHourItemTemplate property is used to define the DateTimeItem template of twenty-four hour part in the SfDateTimeCombo control.
+The TwentyFourHourItemTemplate property is used to define the DateTimeItem template of the twenty-four-hour part in the SfDateTimeCombo control.
 
 
 ![Customization_img16](Customization_images/Customization_img16.png)

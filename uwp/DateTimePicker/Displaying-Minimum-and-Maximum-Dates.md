@@ -9,7 +9,7 @@ documentation: ug
 
 # Displaying Minimum and Maximum Dates in UWP DateTimePicker (SfDateTimeCombo)
 
-To display the minimum and maximum dates in SfDateTimeCombo, use DisplayMinDate and DisplayMaxDate properties respectively.
+To display the minimum and maximum dates in SfDateTimeCombo, use the DisplayMinDate and DisplayMaxDate properties, respectively.
 
 The following code example and screen shots illustrate this.
 
