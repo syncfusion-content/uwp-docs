@@ -48,6 +48,8 @@ datetimeCombo.FormatString = "hms";
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 datetimeCombo.FormatString = "hms"
 
 {% endhighlight %}

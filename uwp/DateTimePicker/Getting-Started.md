@@ -60,7 +60,9 @@ using Syncfusion.UI.Xaml.Controls.Input;
 {% endhighlight %}
 
 {% highlight VB %}
-	
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 Dim datetimeCombo As New SfDateTimeCombo() With {
 	.FormatString = "Mdy",
 	.Width = 430,
