@@ -7,7 +7,7 @@ control: SfDateTimeCombo
 documentation: ug
 ---
 
-# Setting Minutes and Seconds Intervals in UWP DateTimePicker  (SfDateTimeCombo)
+# Setting Minutes and Seconds Intervals in UWP DateTimePicker
 
 MinuteInterval and SecondsInterval properties can be used to specify the interval for minutes and seconds to be displayed in the SfDateTimeCombo control.
 
