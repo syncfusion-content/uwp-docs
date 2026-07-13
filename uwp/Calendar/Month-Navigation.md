@@ -19,7 +19,12 @@ By default, navigation buttons are collapsed. Navigation button support can be e
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" ShowNavigationButton="True"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ShowNavigationButton="True"/>
+</Page>
 
 {% endhighlight %}
 
@@ -28,6 +33,8 @@ By default, navigation buttons are collapsed. Navigation button support can be e
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar calendar = new SfCalendar();
 
@@ -56,6 +63,8 @@ Month navigation can also be done programmatically by invoking the `PreviousMont
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.PreviousMonth();
 
 
@@ -78,6 +87,8 @@ Month navigation can also be done programmatically by invoking the `NextMonth` m
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.NextMonth();
 
 {% endhighlight %}
@@ -98,8 +109,13 @@ The `PreviousScrollButtonClicked` event is fired when the previous button is cli
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" ShowNavigationButton="True"
-                  PreviousScrollButtonClicked="calendar_PreviousScrollButtonClicked"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ShowNavigationButton="True"
+                      PreviousScrollButtonClicked="calendar_PreviousScrollButtonClicked"/>
+</Page>
 
 {% endhighlight %}
 
@@ -108,6 +124,8 @@ The `PreviousScrollButtonClicked` event is fired when the previous button is cli
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 private void calendar_PreviousScrollButtonClicked(object sender, SelectionChangedEventArgs e)
 
@@ -136,8 +154,14 @@ The `NextScrollButtonClicked` event is fired when the next button is clicked.
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" ShowNavigationButton="True"
-                  NextScrollButtonClicked="calendar_NextScrollButtonClicked"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ShowNavigationButton="True"
+                      NextScrollButtonClicked="calendar_NextScrollButtonClicked"/>
+</Page>
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -145,6 +169,8 @@ The `NextScrollButtonClicked` event is fired when the next button is clicked.
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 private void calendar_NextScrollButtonClicked(object sender, SelectionChangedEventArgs e)
 

@@ -23,11 +23,18 @@ The dates in the month view can be selected in three ways such as single, multip
 
 {% highlight xaml %}
 
-<input:SfCalendar x:Name="calendar" ViewMode="Month"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ViewMode="Month"/>
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar calendar = new SfCalendar();
 calendar.ViewMode = ViewMode.Month;
@@ -50,15 +57,18 @@ N>
 
 {% highlight xaml %}
 
-<input:SfCalendar x:Name="calendar" NumberOfWeeksInView="2"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" NumberOfWeeksInView="2"/>  
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCalendar calendar = new SfCalendar();
-calendar.NumberOfWeeksInView = 2;
- 
+using Syncfusion.UI.Xaml.Controls.Input;
 {% endhighlight %}
 
 {% endtabs %}
@@ -71,11 +81,18 @@ This displays entire dates/months of a particular year; by default, the current 
 
 {% highlight xaml %}
 
-<input:SfCalendar x:Name="calendar" ViewMode="Year"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ViewMode="Year"/>
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar calendar = new SfCalendar();
 calendar.ViewMode = ViewMode.Year;
@@ -92,17 +109,18 @@ This view displays the period of 10 years. By default, the current year range of
 
 {% highlight xaml %}
 
-<input:SfCalendar x:Name="calendar" ViewMode="Decade"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ViewMode="Decade"/>        
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCalendar calendar = new SfCalendar();
-calendar.ViewMode = ViewMode.Decade;
- 
-{% endhighlight %}
-
+using Syncfusion.UI.Xaml.Controls.Input;
 {% endtabs %}
 
 ## Century view
@@ -113,16 +131,17 @@ This view displays the period of 100 years. By default, the current year range o
 
 {% highlight xaml %}
 
-<input:SfCalendar x:Name="calendar" ViewMode="Century"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ViewMode="Century"/>       
+</Page>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCalendar calendar = new SfCalendar();
-calendar.ViewMode = ViewMode.Century;
- 
-{% endhighlight %}
-
+using Syncfusion.UI.Xaml.Controls.Input;
 {% endtabs %}
 

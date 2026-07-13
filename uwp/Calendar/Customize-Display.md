@@ -19,7 +19,12 @@ The first day of the week is changeable in SfCalendar. It is set using the `Firs
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" FirstDayofWeek="Thursday"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" FirstDayofWeek="Thursday"/>
+</Page>
 
 {% endhighlight %}
 
@@ -28,6 +33,8 @@ The first day of the week is changeable in SfCalendar. It is set using the `Firs
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.FirstDayofWeek = System.DayOfWeek.Thursday;
 
@@ -53,7 +60,12 @@ Day names in SfCalendar can be set to either abbreviated or full names using the
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" DayNameDisplayMode="DayNames"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" DayNameDisplayMode="DayNames"/>
+</Page>
 
 {% endhighlight %}
 
@@ -63,6 +75,7 @@ Day names in SfCalendar can be set to either abbreviated or full names using the
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.DayNameDisplayMode = Syncfusion.UI.Xaml.Controls.Input.DayNameDisplayMode.DayNames;
 

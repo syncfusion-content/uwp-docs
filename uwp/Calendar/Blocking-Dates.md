@@ -19,7 +19,12 @@ The `BlackOutDates` property is used to specify the collection of DateTime that 
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar"/>
+</Page>
 
 {% endhighlight %}
 
@@ -28,6 +33,8 @@ The `BlackOutDates` property is used to specify the collection of DateTime that 
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.BlackOutDates.Add(new DateTime(2015, 12, 1));
 
@@ -83,27 +90,32 @@ The template of blocked cells can be customized using the `BlackOutCellTemplate`
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<input:SfCalendar.BlackOutCellTemplate>
+    <input:SfCalendar x:Name="calendar">
 
-<DataTemplate>
+    <input:SfCalendar.BlackOutCellTemplate>
 
-<Grid>
+    <DataTemplate>
 
-<TextBlock Text="&#xE106;" Foreground="Red"
-           VerticalAlignment="Top" FontFamily="Segoe UI Symbol"
-		   Margin="3" HorizontalAlignment="Right"/>
-		   
-<TextBlock Text="{Binding Day}" Foreground="#FFA5A5A5"
-           VerticalAlignment="Bottom" Margin="3"/>
-</Grid>
+    <Grid>
 
-</DataTemplate>
+    <TextBlock Text="&#xE106;" Foreground="Red"
+               VerticalAlignment="Top" FontFamily="Segoe UI Symbol"
+    		   Margin="3" HorizontalAlignment="Right"/>
+    		   
+    <TextBlock Text="{Binding Day}" Foreground="#FFA5A5A5"
+               VerticalAlignment="Bottom" Margin="3"/>
+    </Grid>
 
-</input:SfCalendar.BlackOutCellTemplate>
+    </DataTemplate>
 
-</input:SfCalendar>
+    </input:SfCalendar.BlackOutCellTemplate>
+
+    </input:SfCalendar>
+</Page>
 
 
 {% endhighlight %}
@@ -114,6 +126,8 @@ The template of blocked cells can be customized using the `BlackOutCellTemplate`
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.BlackOutDates.Add(new DateTime(2015, 12, 1));
 

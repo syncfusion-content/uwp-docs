@@ -41,11 +41,18 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar">
+</Page>
 
 {% endhighlight %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar calendar = new SfCalendar();
 
@@ -67,7 +74,12 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" ShowNavigationButton="True"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ShowNavigationButton="True"/>
+</Page>
 
 {% endhighlight %}
 
@@ -76,6 +88,8 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
  calendar.ShowNavigationButton = true;
 
@@ -99,7 +113,12 @@ The month and day names of a region can be displayed in SfCalendar based on the 
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar"/>
+</Page>
 
 {% endhighlight %}
 
@@ -108,6 +127,8 @@ The month and day names of a region can be displayed in SfCalendar based on the 
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.Culture = new System.Globalization.CultureInfo("fr-FR");
 

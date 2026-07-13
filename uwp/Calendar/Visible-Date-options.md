@@ -19,7 +19,12 @@ The `VisibleMinDate` property is used to specify the minimum date in the range.
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" VisibleMinDate="12/10/2015"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" VisibleMinDate="12/10/2015"/>
+</Page>
 
 {% endhighlight %}
 
@@ -28,6 +33,8 @@ The `VisibleMinDate` property is used to specify the minimum date in the range.
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.VisibleMinDate = new DateTime(2015, 12, 10);
 
@@ -53,7 +60,12 @@ The `VisibleMaxDate` property is used to specify the maximum date in the range.
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" VisibleMaxDate="12/15/2015"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" VisibleMaxDate="12/15/2015"/>
+</Page>
 
 {% endhighlight %}
 
@@ -62,6 +74,8 @@ The `VisibleMaxDate` property is used to specify the maximum date in the range.
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.VisibleMaxDate = new DateTime(2015, 12, 15);
 
@@ -86,7 +100,12 @@ The `VisibleDates` property is used to specify the active dates when they are no
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar"/>
+</Page>
 
 {% endhighlight %}
 
@@ -95,6 +114,8 @@ The `VisibleDates` property is used to specify the active dates when they are no
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.VisibleDates.Add(new DateTime(2015, 12, 1));
 

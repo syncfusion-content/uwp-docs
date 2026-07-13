@@ -19,20 +19,25 @@ The active calendar day button template can be modified using the `CellTemplate`
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<input:SfCalendar.CellTemplate>
+    <input:SfCalendar x:Name="calendar">
 
-<DataTemplate>
+    <input:SfCalendar.CellTemplate>
 
-<TextBlock Text="{Binding Day}" VerticalAlignment="Center"
-           HorizontalAlignment="Center" Foreground="Red"/>
-           
-</DataTemplate>
+    <DataTemplate>
 
-</input:SfCalendar.CellTemplate>
+    <TextBlock Text="{Binding Day}" VerticalAlignment="Center"
+               HorizontalAlignment="Center" Foreground="Red"/>
+               
+    </DataTemplate>
 
-</input:SfCalendar>
+    </input:SfCalendar.CellTemplate>
+
+    </input:SfCalendar>
+</Page>
 
 {% endhighlight %}
 
@@ -49,24 +54,29 @@ The inactive/disabled calendar day button template can be modified using the `Di
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<input:SfCalendar.DisabledCellTemplate>
+    <input:SfCalendar x:Name="calendar">
 
-<DataTemplate>
+    <input:SfCalendar.DisabledCellTemplate>
 
-<Grid Background="Gray">
+    <DataTemplate>
 
-<TextBlock Text="{Binding Day}" VerticalAlignment="Bottom"
-           Foreground="White" Opacity="1" Margin="3"/>
-           
-</Grid>
+    <Grid Background="Gray">
 
-</DataTemplate>
+    <TextBlock Text="{Binding Day}" VerticalAlignment="Bottom"
+               Foreground="White" Opacity="1" Margin="3"/>
+               
+    </Grid>
 
-</input:SfCalendar.DisabledCellTemplate>
+    </DataTemplate>
 
-</input:SfCalendar>
+    </input:SfCalendar.DisabledCellTemplate>
+
+    </input:SfCalendar>
+</Page>
 
 {% endhighlight %}
 
@@ -75,6 +85,8 @@ The inactive/disabled calendar day button template can be modified using the `Di
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.VisibleMinDate = new DateTime(2015, 12, 5);
 
@@ -104,19 +116,24 @@ The template of day names can also be modified using the `DayNameCellTemplate` p
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<input:SfCalendar.DayNameCellTemplate>
+    <input:SfCalendar x:Name="calendar">
 
-<DataTemplate>
+    <input:SfCalendar.DayNameCellTemplate>
 
-<TextBlock Text="{Binding}" Foreground="Red"/>
+    <DataTemplate>
 
-</DataTemplate>
+    <TextBlock Text="{Binding}" Foreground="Red"/>
 
-</input:SfCalendar.DayNameCellTemplate>
+    </DataTemplate>
 
-</input:SfCalendar>
+    </input:SfCalendar.DayNameCellTemplate>
+
+    </input:SfCalendar>
+</Page>
 
 {% endhighlight %}
 
@@ -133,19 +150,24 @@ The template of the header in SfCalendar can be modified using the `HeaderTempla
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" >
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<input:SfCalendar.HeaderTemplate>
+    <input:SfCalendar x:Name="calendar" >
 
-<DataTemplate>
+    <input:SfCalendar.HeaderTemplate>
 
-<TextBlock Text="{Binding}" FontSize="20" Foreground="Red"/>
+    <DataTemplate>
 
-</DataTemplate>
+    <TextBlock Text="{Binding}" FontSize="20" Foreground="Red"/>
 
-</input:SfCalendar.HeaderTemplate>
+    </DataTemplate>
 
-</input:SfCalendar>
+    </input:SfCalendar.HeaderTemplate>
+
+    </input:SfCalendar>
+</Page>
 
 {% endhighlight %}
 
@@ -162,7 +184,12 @@ The background of the selected date can be set using the `SelectedDateBackground
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" SelectedDateBackground="Red"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" SelectedDateBackground="Red"/>
+</Page>
 
 {% endhighlight %}
 
@@ -171,6 +198,8 @@ The background of the selected date can be set using the `SelectedDateBackground
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.SelectedDateBackground = new SolidColorBrush(Windows.UI.Colors.Red);
 
@@ -195,7 +224,11 @@ The template of the previous and next scroll buttons can be modified with the `P
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" ShowNavigationButton="True" >
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ShowNavigationButton="True" >
 <input:SfCalendar.PreviousScrollButtonTemplate>
 <ControlTemplate TargetType="Button">
 <Grid>
@@ -353,6 +386,7 @@ Margin="-1,0,-1,0" RenderTransformOrigin="0.5,0.5">
 
 </input:SfCalendar.NextScrollButtonTemplate>
 </input:SfCalendar>
+</Page>
 
 
 {% endhighlight %}

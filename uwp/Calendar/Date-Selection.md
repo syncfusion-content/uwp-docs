@@ -19,7 +19,12 @@ The `SelectedDate` property is used to select a date in SfCalendar.
 
 {% highlight XAML %}
 
-<input:SfCalendar SelectedDate="12/15/2015"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar SelectedDate="12/15/2015"/>
+</Page>
 
 {% endhighlight %}
 
@@ -28,6 +33,8 @@ The `SelectedDate` property is used to select a date in SfCalendar.
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar calendar = new SfCalendar();
 
@@ -53,7 +60,12 @@ The `SelectedDates` property is used to select one or more dates in SfCalendar. 
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar"/>
+</Page>
 
 {% endhighlight %}
 
@@ -62,6 +74,8 @@ The `SelectedDates` property is used to select one or more dates in SfCalendar. 
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 public MainPage()
 
@@ -126,6 +140,8 @@ Create an instance of DateRange with StartDate so that it returns a collection o
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 DateRange dateRange = new DateRange(new DateTime(2015, 12, 15));
 
 {% endhighlight %}
@@ -145,6 +161,8 @@ Create an instance of DateRange with `StartDate` and `EndDate` so that it return
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 DateRange dateRange = new DateRange(new DateTime(2015, 12, 15), new DateTime(2015, 12, 17));
 
@@ -172,7 +190,12 @@ The `SelectionMode` property determines whether single or multiple dates can be 
 
 {% highlight XAML %}
 
-<input:SfCalendar SelectionMode="Single"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar SelectionMode="Single"/>
+</Page>
 
 {% endhighlight %}
 
@@ -181,6 +204,8 @@ The `SelectionMode` property determines whether single or multiple dates can be 
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single;
 
@@ -202,7 +227,12 @@ The `DisplayDate` property is used to highlight a date which is not a selected d
 
 {% highlight XAML %}
 
-<input:SfCalendar DisplayDate="12/19/2015"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar DisplayDate="12/19/2015"/>
+</Page>
 
 {% endhighlight %}
 
@@ -211,6 +241,8 @@ The `DisplayDate` property is used to highlight a date which is not a selected d
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar calendar = new SfCalendar();
 
@@ -237,7 +269,12 @@ calendar.DisplayDate = New Date(2015, 12, 19)
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" SelectionChanged="calendar_SelectionChanged"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" SelectionChanged="calendar_SelectionChanged"/>
+</Page>
 
 {% endhighlight %}
 
@@ -247,6 +284,8 @@ calendar.DisplayDate = New Date(2015, 12, 19)
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 private void calendar_SelectionChanged(object sender, SelectionChangedEventArgs e)
 
