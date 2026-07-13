@@ -19,7 +19,11 @@ The DayComboStyle property is used to customize the style of the DateTimeItem co
 
 {% highlight XAML %}
 
-   <syncfusion:SfDateTimeCombo FormatString="Mdy" Name="SfDateTimeCombo" 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDateTimeCombo FormatString="Mdy" Name="SfDateTimeCombo" 
 
                                Width="430" HorizontalAlignment="Left">
 
@@ -34,6 +38,8 @@ The DayComboStyle property is used to customize the style of the DateTimeItem co
             </syncfusion:SfDateTimeCombo.DayComboStyle>
 
         </syncfusion:SfDateTimeCombo>
+
+</Page>
 
 {% endhighlight %}
 
@@ -119,7 +125,11 @@ The DayItemTemplate property is used to define the DateTimeItem template of the 
 
 {% highlight XAML %}
 
-<syncfusion:SfDateTimeCombo FormatString="d" Name="SfDateTimeCombo" 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDateTimeCombo FormatString="d" Name="SfDateTimeCombo" 
 
                                Width="430" HorizontalAlignment="Left">
 
@@ -148,6 +158,8 @@ The DayItemTemplate property is used to define the DateTimeItem template of the 
             </syncfusion:SfDateTimeCombo.DayItemTemplate>
 
     </syncfusion:SfDateTimeCombo>
+
+</Page>
 
 {% endhighlight %}
 

@@ -17,11 +17,17 @@ The following code example and screenshots illustrate this.
 
 {% highlight XAML %}
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<syncfusion:SfDateTimeCombo FormatString="Mdy" x:Name="combo" Width="350" HorizontalAlignment="Left"/>
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-</Grid> 
+    <syncfusion:SfDateTimeCombo FormatString="Mdy" x:Name="combo" Width="350" HorizontalAlignment="Left"/>
+
+    </Grid>
+
+</Page>
 
 {% endhighlight %}
 
@@ -30,6 +36,8 @@ The following code example and screenshots illustrate this.
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 combo.DisplayMinDate = new DateTime(2012,10,2);
 

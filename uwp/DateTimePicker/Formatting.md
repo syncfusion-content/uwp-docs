@@ -19,12 +19,18 @@ The FormatString property determines the format specifier by which the DateTime 
 
 {% highlight XAML %}
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-            <syncfusion:SfDateTimeCombo FormatString="hms" x:Name="datetimeCombo"
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-                               Width="350" HorizontalAlignment="Left"/>
-</Grid>
+                <syncfusion:SfDateTimeCombo FormatString="hms" x:Name="datetimeCombo"
+
+                                   Width="350" HorizontalAlignment="Left"/>
+    </Grid>
+
+</Page>
 
 {% endhighlight %}
 
@@ -33,6 +39,8 @@ The FormatString property determines the format specifier by which the DateTime 
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 datetimeCombo.FormatString = "hms";
 

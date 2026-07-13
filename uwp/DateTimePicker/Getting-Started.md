@@ -40,13 +40,21 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 {% tabs %}
 
 {% highlight XAML %}
-	
- <syncfusion:SfDateTimeCombo x:Name="datetimeCombo" FormatString="Mdy"  Width="430"  HorizontalAlignment="Left"/>
- 
+
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDateTimeCombo x:Name="datetimeCombo" FormatString="Mdy"  Width="430"  HorizontalAlignment="Left"/>
+
+</Page>
+
 {% endhighlight %}
 
 {% highlight C# %}
-	
+
+using Syncfusion.UI.Xaml.Controls.Input;
+
  SfDateTimeCombo datetimeCombo = new SfDateTimeCombo() { FormatString = "Mdy", Width = 430, HorizontalAlignment = HorizontalAlignment.Left };
  
 {% endhighlight %}

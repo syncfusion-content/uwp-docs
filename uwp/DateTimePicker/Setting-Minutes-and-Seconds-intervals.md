@@ -18,15 +18,21 @@ The following code examples and screenshots illustrate this.
 
 {% highlight XAML %}
 
-<syncfusion:SfDateTimeCombo FormatString="hmst" x:Name="combo" Width="350" HorizontalAlignment="Left" MinuteInterval="10" SecondsInterval="15"/>   
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-{% endhighlight %}
+    <syncfusion:SfDateTimeCombo FormatString="hmst" x:Name="combo" Width="350" HorizontalAlignment="Left" MinuteInterval="10" SecondsInterval="15"/>    
+
+</Page>
 
 {% endtabs %}
 
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 combo.MinuteInterval = 10;
 
