@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TreeMap Legend in UWP TreeMap control | Syncfusion
-description: Learn here all about TreeMap Legend support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about TreeMap Legend support in Syncfusion UWP TreeMap (SfTreeMap), including legend display, positioning, styling, and customization options.
 platform: uwp
 control: SfTreeMap
 documentation: ug

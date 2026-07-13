@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataBinding in UWP TreeMap control | Syncfusion
-description: Learn here all about DataBinding support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about DataBinding support in Syncfusion UWP TreeMap (SfTreeMap), including binding hierarchical data, population, and visualization techniques.
 platform: uwp
 control: SfTreeMap
 documentation: ug

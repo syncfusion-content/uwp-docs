@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in UWP TreeMap control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about Tooltip support in Syncfusion UWP TreeMap (SfTreeMap), including displaying contextual information and customizing tooltip content.
 platform: uwp
 control: SfTreeMap
 documentation: ug

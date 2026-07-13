@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in UWP TreeMap control | Syncfusion
-description: Learn here all about Selection support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about Selection support in Syncfusion UWP TreeMap (SfTreeMap), including item highlighting, interaction behavior, and selection customization.
 platform: uwp
 control: SfTreeMap
 documentation: ug

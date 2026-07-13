@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LeafLabelPath in UWP TreeMap control | Syncfusion
-description: Learn here all about LeafLabelPath support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about LeafLabelPath support in Syncfusion UWP TreeMap (SfTreeMap), including displaying labels for leaf items and customizing label content.
 platform: uwp
 control: SfTreeMap
 documentation: ug

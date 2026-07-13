@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Templates in UWP TreeMap control | Syncfusion
-description: Learn here all about Templates support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about Templates support in Syncfusion UWP TreeMap (SfTreeMap), including customizing item appearance using data templates and visual elements.
 platform: uwp
 control: SfTreeMap
 documentation: ug
@@ -183,7 +183,7 @@ Code Sample:
 
 {% endhighlight %}
 
-# Templates in UWP TreeMap (SfTreeMap)
+## Templates in UWP TreeMap (SfTreeMap)
 
 `LeafLabelPath` of SfTreeMap is a path to a field on the source object, which serves as the "label" of the object.
 
@@ -209,7 +209,7 @@ Code Sample:
 
 N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
 
-# Templates in UWP treemap (SfTreeMap)
+## Templates in UWP treemap (SfTreeMap)
 
 You can customize leaf nodes by assigning data template to `LeafTemplate` of SfTreeMap. 
 

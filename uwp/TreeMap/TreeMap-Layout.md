@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TreeMap Layout in UWP TreeMap control | Syncfusion
-description: Learn here all about TreeMap Layout support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about TreeMap Layout support in Syncfusion UWP TreeMap (SfTreeMap), including layout types, arrangement options, and visual customization.
 platform: uwp
 control: SfTreeMap
 documentation: ug

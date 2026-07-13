@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DrillDown in UWP TreeMap control | Syncfusion
-description: Learn here all about DrillDown support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about DrillDown support in Syncfusion UWP TreeMap (SfTreeMap), including hierarchical navigation, interaction, and data exploration features.
 platform: uwp
 control: SfTreeMap
 documentation: ug

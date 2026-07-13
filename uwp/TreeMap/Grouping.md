@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in UWP TreeMap control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about Grouping support in Syncfusion UWP TreeMap (SfTreeMap), including organizing data into hierarchical levels for effective visualization.
 platform: uwp
 control: SfTreeMap
 documentation: ug

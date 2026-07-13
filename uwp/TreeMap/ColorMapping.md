@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ColorMapping in UWP TreeMap control | Syncfusion
-description: Learn here all about ColorMapping support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
+description: Learn about ColorMapping support in Syncfusion UWP TreeMap (SfTreeMap), including value-based coloring, range mapping, and customization options.
 platform: uwp
 control: SfTreeMap
 documentation: ug
