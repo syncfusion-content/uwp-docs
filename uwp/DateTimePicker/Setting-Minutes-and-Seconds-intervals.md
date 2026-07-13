@@ -9,14 +9,14 @@ documentation: ug
 
 # Setting Minutes and Seconds Intervals in UWP DateTimePicker (SfDateTimeCombo)
 
-MinuteInterval and SecondInterval properties can be used to specify the interval for minutes and seconds to be displayed in the SfDateTimeCombo control.
+MinuteInterval and SecondsInterval properties can be used to specify the interval for minutes and seconds to be displayed in the SfDateTimeCombo control.
 
 The following code examples and screenshots illustrate this.
 
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 
 <syncfusion:SfDateTimeCombo FormatString="hmst" x:Name="combo" Width="350" HorizontalAlignment="Left" MinuteInterval="10" SecondsInterval="15"/>   
 
@@ -52,7 +52,7 @@ combo.SecondsInterval = 15
 
 
 
-### SecondInterval
+### SecondsInterval
 
 ![Minutes-and-Seconds-intervals_img2](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img2.png)
 

@@ -11,7 +11,7 @@ documentation: ug
 
 To display the minimum and maximum dates in SfDateTimeCombo, use the DisplayMinDate and DisplayMaxDate properties, respectively.
 
-The following code example and screen shots illustrate this.
+The following code example and screenshots illustrate this.
 
 {% tabs %}
 
@@ -19,7 +19,7 @@ The following code example and screen shots illustrate this.
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-<syncfusion:SfDateTimeCombo FormatString="mdy" x:Name="combo" Width="350" HorizontalAlignment="Left"/>   
+<syncfusion:SfDateTimeCombo FormatString="Mdy" x:Name="combo" Width="350" HorizontalAlignment="Left"/>
 
 </Grid> 
 
@@ -29,7 +29,7 @@ The following code example and screen shots illustrate this.
 
 {% tabs %}
 
-{% highlight c# %}
+{% highlight C# %}
 
 combo.DisplayMinDate = new DateTime(2012,10,2);
 

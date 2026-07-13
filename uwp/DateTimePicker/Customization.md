@@ -17,7 +17,7 @@ The DayComboStyle property is used to customize the style of the DateTimeItem co
 
 
 
-{% highlight html %}
+{% highlight XAML %}
 
    <syncfusion:SfDateTimeCombo FormatString="Mdy" Name="SfDateTimeCombo" 
 
@@ -117,7 +117,7 @@ N>  The DataContext of a DateTimeItem drop-down list containing date or time par
 
 The DayItemTemplate property is used to define the DateTimeItem template of the day section set in the SfDateTimeCombo control.
 
-{% highlight html %}
+{% highlight XAML %}
 
 <syncfusion:SfDateTimeCombo FormatString="d" Name="SfDateTimeCombo" 
 

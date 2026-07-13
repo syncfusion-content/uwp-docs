@@ -39,7 +39,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight XAML %}
 	
  <syncfusion:SfDateTimeCombo x:Name="datetimeCombo" FormatString="Mdy"  Width="430"  HorizontalAlignment="Left"/>
  
