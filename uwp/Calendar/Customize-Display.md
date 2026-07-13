@@ -13,7 +13,7 @@ documentation: ug
 
 ## Customize First Day of Week
 
-The first day of the week is changeable in SfCalendar. It is set using the `FirstDayOfWeek` property. The Refresh method can be used to refresh the layout when setting it at run time doesn't reflect in the UI.
+The first day of the week is changeable in SfCalendar. It is set using the `FirstDayofWeek` property. The Refresh method can be used to refresh the layout when setting it at run time doesn't reflect in the UI.
 
 {% tabs %}
 

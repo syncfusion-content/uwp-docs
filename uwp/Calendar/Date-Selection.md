@@ -164,6 +164,8 @@ The `SelectionMode` property determines whether single or multiple dates can be 
 
 * Single – Allows selecting any one DateTime
 * Multiple – Allows selecting one or more DateTime
+* MultiRange – Allows selecting multiple ranges of DateTime
+* Range – Allows selecting a range of DateTime
 * None – Does not allow selecting any DateTime
 
 {% tabs %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Built-in Views in UWP Calendar (SfCalendar)
 
-The `SfCalendar` control provides four types of views to display dates/years such as month, year, decade, century. It can be assigned to the `SfCalendar` control by using the [ViewMode](https://help.syncfusion.com/cr/xamarin-android/Com.Syncfusion.Calendar.SfCalendar.html#Com_Syncfusion_Calendar_SfCalendar_ViewMode) property.
+The `SfCalendar` control provides four types of views to display dates/years such as month, year, decade, century. It can be assigned to the `SfCalendar` control by using the [ViewMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_ViewMode) property.
 
 By default, the `SfCalendar` control is assigned with month view. Based on the user's preference, `SfCalendar` can be viewed in any one of the available types.
 
@@ -29,8 +29,8 @@ The dates in the month view can be selected in three ways such as single, multip
 
 {% highlight c# %}
 
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.ViewMode = ViewMode.Month;
+SfCalendar calendar = new SfCalendar();
+calendar.ViewMode = ViewMode.Month;
  
 {% endhighlight %}
 
@@ -38,13 +38,13 @@ sfCalendar.ViewMode = ViewMode.Month;
 
 ## Week view
 
-The number of weeks in the month view can be changed by setting the [NumberOfWeeksInView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_NumberOfWeeksInView) property in SfCalendar. By default, `NumberOfWeeksInView` starts from the current week, and this can be modified using the [MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MoveToDate) property of the calendar. It also supports all existing features such as [FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_FirstDayOfWeek), [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MinDate), [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MaxDate), and [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectionMode).
+The number of weeks in the month view can be changed by setting the [NumberOfWeeksInView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_NumberOfWeeksInView) property in SfCalendar. By default, `NumberOfWeeksInView` starts from the current week, and this can be modified using the [DisplayDate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_DisplayDate) property of the calendar. It also supports all existing features such as [FirstDayofWeek](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_FirstDayofWeek), [VisibleMinDate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_VisibleMinDate), [VisibleMaxDate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_VisibleMaxDate), and [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_SelectionMode).
 
 N>
 * Week number ranges from 1 to 6. If a lesser or greater count than these ranges is considered, `NumberOfWeeksInView` will be displayed as 6.
 * Inline view considers `NumberOfWeeksInView` as only 6. For other counts, only the agenda view will be displayed in the calendar.
-* Dynamically changing `NumberOfWeeksInView` shows the first row of month view dates. It can be handled using the `MoveToDate` property of the calendar.
-* [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_ShowLeadingAndTrailingDays) is not applicable if the `NumberOfWeeksInView` is lesser than 6.
+* Dynamically changing `NumberOfWeeksInView` shows the first row of month view dates. It can be handled using the `DisplayDate` property of the calendar.
+* [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_ShowLeadingAndTrailingDays) is not applicable if the `NumberOfWeeksInView` is lesser than 6.
 
 {% tabs %}
 
@@ -56,8 +56,8 @@ N>
 
 {% highlight c# %}
 
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.NumberOfWeeksInView = 2;
+SfCalendar calendar = new SfCalendar();
+calendar.NumberOfWeeksInView = 2;
  
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ sfCalendar.NumberOfWeeksInView = 2;
                                        
 ## Year view
 
-This displays entire dates/months of a particular year; by default, the current year will be displayed on loading. The years can be changed by swiping back and forth, or `forward` and `backward` methods can be used. The months can be navigated quickly by selecting the particular month in year view.
+This displays entire dates/months of a particular year; by default, the current year will be displayed on loading. The years can be changed by swiping back and forth, or `NextYear` and `PreviousYear` methods can be used. The months can be navigated quickly by selecting the particular month in year view.
 
 {% tabs %}
 
@@ -77,8 +77,8 @@ This displays entire dates/months of a particular year; by default, the current 
 
 {% highlight c# %}
 
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.ViewMode = ViewMode.Year;
+SfCalendar calendar = new SfCalendar();
+calendar.ViewMode = ViewMode.Year;
  
 {% endhighlight %}
 
@@ -98,8 +98,8 @@ This view displays the period of 10 years. By default, the current year range of
 
 {% highlight c# %}
 
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.ViewMode = ViewMode.Decade;
+SfCalendar calendar = new SfCalendar();
+calendar.ViewMode = ViewMode.Decade;
  
 {% endhighlight %}
 
@@ -119,8 +119,8 @@ This view displays the period of 100 years. By default, the current year range o
 
 {% highlight c# %}
 
-SfCalendar sfCalendar = new SfCalendar();
-sfCalendar.ViewMode = ViewMode.Century;
+SfCalendar calendar = new SfCalendar();
+calendar.ViewMode = ViewMode.Century;
  
 {% endhighlight %}
 

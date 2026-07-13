@@ -121,6 +121,6 @@ calendar.Culture = New System.Globalization.CultureInfo("fr-FR")
 
 {% endtabs %}
 
-![Cuture support in calendar](SfCalendar-images/SfCalendar-img4.jpeg)
+![Culture support in calendar](SfCalendar-images/SfCalendar-img4.jpeg)
 
 
