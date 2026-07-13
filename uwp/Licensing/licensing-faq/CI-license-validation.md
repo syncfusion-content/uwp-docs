@@ -28,7 +28,15 @@ The following section shows how to validate the Syncfusion license key in CI ser
 * Open the LicenseKeyValidation.ps1 PowerShell script in a text or code editor as shown in the example below.
 
 {% tabs %}
-{% highlight c# tabtitle="PowerShell" %}
+{% highlight c# tabtitle="v34.1.29 and later" %}
+# Replace the parameters with the desired platform, version, and actual license key.
+
+$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UIComponent" /version:"34.1.29" /licensekey:"Your License Key"
+
+Write-Host $result
+{% endhighlight %}
+
+{% highlight c# tabtitle="Before v34.1.29" %}
 # Replace the parameters with the desired platform, version, and actual license key.
 
 $result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UWP" /version:"26.2.4" /licensekey:"Your License Key"
@@ -37,11 +45,9 @@ Write-Host $result
 {% endhighlight %}
 {% endtabs %}
 
-![LicenseKeyValidation script](licensing-images/license-validation.png)
-
-* Update the parameters in the LicenseKeyValidation.ps1 script file as described below. 
-
-  **Platform:** Modify the value for /platform: to the actual platform "UWP". 
+* Update the parameters in the script:
+  
+  **Platform:** Set /platform:"**UIComponent**" for v34.1.29 and later, or /platform:"**UWP**" for earlier versions (use the relevant Syncfusion platform as needed).
   
   **Version:**  Change the value for /version: to the required version (e.g., "26.2.4").
   
@@ -138,7 +144,7 @@ SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 
 // Validate the registered license key.
 // The array overload allows validating against multiple platforms in a single call.
-bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.UWP });
+bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.UIComponent });
 {% endhighlight %}
 
 {% highlight c# tabtitle="Before v34.1.29" %}
@@ -152,11 +158,7 @@ bool isValid = SyncfusionLicenseProvider.ValidateLicense(Platform.UWP);
 {% endhighlight %}
 {% endtabs %}
 
-**v34.1.29 and later:**
-![LicenseKeyValidationMethod](licensing-images/license-validation-method-new.png)
-
-**Before v34.1.29:**
-![LicenseKeyValidationMethod](licensing-images/license-validation-method.png)
+N> Starting with v34.1.29, `Platform.UIComponent` is the recommended platform value for UI component license validation. `Platform.UWP` was supported up to v33 and is not supported in v34.1.29 or later (e.g., `new[] { Platform.UIComponent }`).
 
 * If the ValidateLicense() method returns true, registered license key is valid and can proceed with deployment.
 
