@@ -57,6 +57,8 @@ calendar.BlackOutDates.Add(new DateTime(2015, 12, 27));
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.BlackOutDates.Add(New Date(2015, 12, 1))
 
 calendar.BlackOutDates.Add(New Date(2015, 12, 2))
@@ -149,6 +151,8 @@ calendar.BlackOutDates.Add(new DateTime(2015, 12, 27));
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.BlackOutDates.Add(New Date(2015, 12, 1))
 

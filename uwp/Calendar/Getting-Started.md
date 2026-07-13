@@ -60,6 +60,8 @@ SfCalendar calendar = new SfCalendar();
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 Dim calendar As New SfCalendar()
 
 {% endhighlight %}
@@ -96,6 +98,8 @@ using Syncfusion.UI.Xaml.Controls.Input;
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
  calendar.ShowNavigationButton = True
 
@@ -135,6 +139,8 @@ calendar.Culture = new System.Globalization.CultureInfo("fr-FR");
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.Culture = New System.Globalization.CultureInfo("fr-FR")
 

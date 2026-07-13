@@ -42,6 +42,8 @@ calendar.VisibleMinDate = new DateTime(2015, 12, 10);
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.VisibleMinDate = New Date(2015, 12, 10)
 
 {% endhighlight %}
@@ -82,6 +84,8 @@ calendar.VisibleMaxDate = new DateTime(2015, 12, 15);
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.VisibleMaxDate = New Date(2015, 12, 15)
 
@@ -128,6 +132,8 @@ calendar.VisibleDates.Add(new DateTime(2015, 12, 30));
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.VisibleDates.Add(New Date(2015, 12, 1))
 

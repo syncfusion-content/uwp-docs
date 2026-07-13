@@ -96,6 +96,8 @@ calendar.VisibleMaxDate = new DateTime(2015, 12, 25);
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.VisibleMinDate = New Date(2015, 12, 5)
 
 calendar.VisibleMaxDate = New Date(2015, 12, 25)
@@ -206,6 +208,8 @@ calendar.SelectedDateBackground = new SolidColorBrush(Windows.UI.Colors.Red);
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.SelectedDateBackground = New SolidColorBrush(Windows.UI.Colors.Red)
 
@@ -409,6 +413,8 @@ calendar.Refresh();
 {% endhighlight %}
 
 {% highlight VB %}
+
+
 
 calendar.Refresh()
 

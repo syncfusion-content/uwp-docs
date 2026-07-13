@@ -42,6 +42,8 @@ calendar.FirstDayofWeek = System.DayOfWeek.Thursday;
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.FirstDayofWeek = System.DayOfWeek.Thursday
 
 {% endhighlight %}
@@ -83,6 +85,7 @@ calendar.DayNameDisplayMode = Syncfusion.UI.Xaml.Controls.Input.DayNameDisplayMo
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.DayNameDisplayMode = Syncfusion.UI.Xaml.Controls.Input.DayNameDisplayMode.DayNames
 

@@ -44,6 +44,8 @@ calendar.SelectedDate = new DateTime(2015, 12, 15);
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 Dim calendar As New SfCalendar()
 
 calendar.SelectedDate = New Date(2015, 12, 15)
@@ -148,6 +150,8 @@ DateRange dateRange = new DateRange(new DateTime(2015, 12, 15));
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 Dim dateRange As New DateRange(New Date(2015, 12, 15))
 
 {% endhighlight %}
@@ -169,6 +173,8 @@ DateRange dateRange = new DateRange(new DateTime(2015, 12, 15), new DateTime(201
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 Dim dateRange As New DateRange(New Date(2015, 12, 15), New Date(2015, 12, 17))
 
@@ -213,6 +219,8 @@ calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single;
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single
 
 {% endhighlight %}
@@ -251,6 +259,8 @@ calendar.DisplayDate = new DateTime(2015, 12, 19);
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 Dim calendar As New SfCalendar()
 

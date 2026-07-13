@@ -44,6 +44,8 @@ calendar.ShowNavigationButton = true;
 
 {% highlight VB %}
 
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
 Dim calendar As New SfCalendar()
 
 calendar.ShowNavigationButton = True
@@ -94,6 +96,8 @@ calendar.NextMonth();
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.NextMonth()
 
