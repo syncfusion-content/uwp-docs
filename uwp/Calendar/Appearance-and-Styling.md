@@ -414,7 +414,7 @@ calendar.Refresh();
 
 {% highlight VB %}
 
-
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.Refresh()
 
