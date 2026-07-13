@@ -25,10 +25,18 @@ The following section shows how to validate the Syncfusion license key in CI ser
 
 * Download and extract the LicenseKeyValidator.zip utility from the following link: [LicenseKeyValidator](https://s3.amazonaws.com/files2.syncfusion.com/Installs/LicenseKeyValidation/LicenseKeyValidator.zip).
 
-* Open the LicenseKeyValidation.ps1 PowerShell script in a text\code editor as shown in the below example.
+* Open the LicenseKeyValidation.ps1 PowerShell script in a text or code editor as shown in the example below.
 
 {% tabs %}
-{% highlight c# tabtitle="PowerShell" %}
+{% highlight c# tabtitle="v34.1.29 and later" %}
+# Replace the parameters with the desired platform, version, and actual license key.
+
+$result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UIComponent" /version:"34.1.29" /licensekey:"Your License Key"
+
+Write-Host $result
+{% endhighlight %}
+
+{% highlight c# tabtitle="Before v34.1.29" %}
 # Replace the parameters with the desired platform, version, and actual license key.
 
 $result = & $PSScriptRoot"\LicenseKeyValidatorConsole.exe" /platform:"UWP" /version:"26.2.4" /licensekey:"Your License Key"
@@ -37,11 +45,9 @@ Write-Host $result
 {% endhighlight %}
 {% endtabs %}
 
-![LicenseKeyValidation script](licensing-images/license-validation.png)
-
-* Update the parameters in the LicenseKeyValidation.ps1 script file as described below. 
-
-  **Platform:** Modify the value for /platform: to the actual platform "UWP". 
+* Update the parameters in the script:
+  
+  **Platform:** Set /platform:"**UIComponent**" for v34.1.29 and later, or /platform:"**UWP**" for earlier versions (use the relevant Syncfusion platform as needed).
   
   **Version:**  Change the value for /version: to the required version (e.g., "26.2.4").
   
@@ -123,31 +129,42 @@ pipeline {
 {% endhighlight %}
 {% endtabs %}
 
-## Validate the License Key By Using the ValidateLicense() Method
+## Validate the license key by using the ValidateLicense() method
 
 * Register the license key properly by calling RegisterLicense("License Key") method with the license key. 
 
 * Once the license key is registered, it can be validated by using the ValidateLicense("Platform.UWP") method. This ensures that the license key is valid for the platform and version you are using. For reference, please check the following example.
 
 {% tabs %}
-{% highlight c# %}
+{% highlight c# tabtitle="v34.1.29 and later" %}
 using Syncfusion.Licensing;
 
-//Register Syncfusion license key 
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+// Register the Syncfusion license key
+SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
 
-//Validate the registered license key
+// Validate the registered license key.
+// The array overload allows validating against multiple platforms in a single call.
+bool isValid = SyncfusionLicenseProvider.ValidateLicense(new[] { Platform.UIComponent });
+{% endhighlight %}
+
+{% highlight c# tabtitle="Before v34.1.29" %}
+using Syncfusion.Licensing;
+
+// Register the Syncfusion license key
+SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+
+// Validate the registered license key
 bool isValid = SyncfusionLicenseProvider.ValidateLicense(Platform.UWP);
 {% endhighlight %}
 {% endtabs %}
 
-![LicenseKeyValidationMethod](licensing-images/license-validation-method.png)
+N> Starting with v34.1.29, `Platform.UIComponent` is the recommended platform value for UI component license validation. `Platform.UWP` was supported up to v33 and is not supported in v34.1.29 or later (e.g., `new[] { Platform.UIComponent }`).
 
 * If the ValidateLicense() method returns true, registered license key is valid and can proceed with deployment.
 
 * If the ValidateLicense() method returns false, there will be invalid license errors in deployment due to either an invalid license key or an incorrect assembly or package version that is referenced in the project. Please ensure that all the referenced Syncfusion assemblies or NuGet packages are all on the same version as the license key’s version before deployment.
 
-## Validate the License Key By Using the Unit Test Project 
+## Validate the license key by using the unit test project
 
 * To create a unit test project in Visual Studio, choose **File -> New -> Project** from the menu. This opens a new dialog for creating a new project. Filtering the project type by Test or typing Test as a keyword in the search option can help you to find available unit test projects. Select the appropriate test framework (such as MSTest, NUnit, or xUnit) that best suits your need.
 
