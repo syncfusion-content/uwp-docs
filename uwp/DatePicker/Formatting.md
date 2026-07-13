@@ -64,7 +64,7 @@ Imports Syncfusion.UI.Xaml.Controls.Input;
 
 ![Features_img1](Features_images/Features_img1.png)
 
-## Specifying the format for the DateSelector
+## Specifying format for the DateSelector
 
 The SelectorFormatString property is used to specify the format for the DateSelector.
 
