@@ -9,7 +9,7 @@ documentation: ug
 
 # Symbology Settings in UWP Barcode (SfBarcode)
 
-Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a code39 Barcode.
+Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a Code39 Barcode.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ The one dimensional barcodes have some of the settings in common, such as BarHei
 
 {% endtabs %}
 
-The one dimensional barcodes also has the error detection settings. The EnableCheckDigit property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the ShowCheckDigit property.
+The one dimensional barcodes also have the error detection settings. The EnableCheckDigit property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the ShowCheckDigit property.
 
 The EncodeStartStopSymbols property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
 
@@ -61,7 +61,7 @@ The two dimensional barcodes have a common XDimension property which modifies th
 
 ### DataMatrix Barcode settings
 
-The DataMatrix barcode settings has the properties to modify the encoding and size of the DataMatrix barcode.
+The DataMatrix barcode settings have the properties to modify the encoding and size of the DataMatrix barcode.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ The DataMatrix barcode settings has the properties to modify the encoding and si
 
 ### Encoding
 
-The encoding of the DataMatrix barcode can be modified using the ‘Encoding’ property. The DataMatrixEncoding enumeration has the following four encoding schemes.
+The encoding of the DataMatrix barcode can be modified using the 'Encoding' property. The DataMatrixEncoding enumeration has the following four encoding schemes.
 
 * ASCII
 * ASCIINumeric
@@ -224,7 +224,7 @@ Rectangular matrix with 16 rows and 48 columns.</td></tr>
 
 ### QRBarcode settings
 
-The QRBarcode settings has properties to modify the version, error correction level and Input mode of the QRBarcode.
+The QRBarcode settings have properties to modify the version, error correction level, and input mode of the QRBarcode.
 
 {% tabs %}
 
@@ -240,11 +240,11 @@ The QRBarcode settings has properties to modify the version, error correction le
 
 ## Version
 
-The QR Barcode uses version from 1 to 40.Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules and so on increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. Each version has its own capacity.  By default the QR Version is Auto, which will automatically set the version according to the input text length.
+The QR Barcode uses version from 1 to 40. Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules, and so on increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. Each version has its own capacity. By default, the QR Version is Auto, which will automatically set the version according to the input text length.
 
 ## Error correction level
 
-The QR Barcode employs error correction to generate a series of error correction codewords which are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. There are four user–selectable levels of error correction, as shown in the table, offering the capability of recovery from the following amounts of damage. By default the Error correction level is Low.
+The QR Barcode employs error correction to generate a series of error correction codewords which are added to the data codeword sequence in order to enable the symbol to withstand damage without loss of data. There are four user-selectable levels of error correction, as shown in the table, offering the capability of recovery from the following amounts of damage. By default, the Error correction level is Low.
 
 Error Correction Level Table
 
@@ -273,7 +273,7 @@ H</td><td>
 
 ## Input mode
 
-There are three modes for the input as defined in the table. Each mode supports the specific set of Input characters. User may select the most suitable input mode. By default the Input mode is Binary Mode.
+There are three modes for the input as defined in the table. Each mode supports a specific set of input characters. The user may select the most suitable input mode. By default, the Input mode is Binary Mode.
 
 Input Mode Table
 
@@ -289,7 +289,7 @@ Numeric Mode</td><td>
 <tr>
 <td>
 Alphanumeric Mode</td><td>
-0–9, A–Z (upper-case only), space, $, %, *, +, -,., /, :</td></tr>
+0–9, A–Z (upper-case only), space, $, %, *, +, -, ., /, :</td></tr>
 <tr>
 <td>
 Binary Mode</td><td>
