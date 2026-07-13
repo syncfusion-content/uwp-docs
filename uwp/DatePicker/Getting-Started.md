@@ -9,12 +9,12 @@ documentation: ug
 
 # Getting Started with UWP DatePicker (SfDatePicker)
 
-This section provides a quick overview of working with the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
+This section provides a quick overview of working with the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
 
 
 
 ## Assembly deployment
-Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sfdatepicker) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control in any application.
+Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-dependencies#sfdatepicker) section to get the list of assemblies or NuGet packages that need to be added as a reference to use the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control in any application.
 
 You can refer to this [documentation](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in a UWP application.
 
@@ -26,16 +26,16 @@ In this walkthrough, you will create a UWP application that contains the [SfDate
 4. [Adding control manually in C#](#Adding-control-manually-in-C#)
 
 ## Creating a project 
-The following section provides detailed information to create a new project in Visual Studio to display the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
+The following section provides detailed information to create a new project in Visual Studio to display the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
 
 ## Adding control via designer
-The [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control can be added to the application by dragging it from the Toolbox and dropping it in the designer. The required assemblies will be added automatically.
+The [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control can be added to the application by dragging it from the Toolbox and dropping it in the designer. The required assemblies will be added automatically.
 
 ![Adding control via designer](Getting-Started_images/Getting-Started-img1.png)
 
 ## Adding control manually in XAML
 
-To add the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control manually in XAML, follow the below steps:
+To add the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control manually in XAML, follow the below steps:
 
 1. Add the below required assembly references to the project:
 
@@ -58,7 +58,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-3. Now add the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control in MainPage.XAML.
+3. Now add the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control in MainPage.XAML.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 ## Adding control manually in C#
 
-To add the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control manually in C#, follow the below steps:
+To add the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control manually in C#, follow the below steps:
 
 1. Add the below required assembly references to the project:
 
@@ -87,6 +87,9 @@ To add the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+using Windows.UI.Xaml;
+
 SfDatePicker datePicker1 = new SfDatePicker()
 {
     Height = 30,
@@ -97,6 +100,9 @@ SfDatePicker datePicker1 = new SfDatePicker()
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input
+Imports Windows.UI.Xaml
 
 Dim datePicker1 As SfDatePicker = New SfDatePicker() With {
     .Height = 30,
@@ -112,7 +118,7 @@ Dim datePicker1 As SfDatePicker = New SfDatePicker() With {
 
 ## Customizing the date format
 
-The format of the date in [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) can be customized by using the [FormatString](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_FormatString) property. For example, the format of the date can be changed to the *yyyy-dd-MM* format.
+The format of the date in [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) can be customized by using the [FormatString](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfDatePicker_FormatString) property. For example, the format of the date can be changed to the *yyyy-dd-MM* format.
 
 {% tabs %}
 
@@ -139,7 +145,7 @@ datePicker1.FormatString = "yyyy-dd-MM"
 
 ## Customizing the SfDateSelector header
 
-You can customize the [SfDateSelector](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDateSelector.html) in the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control using the [SelectorStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_SelectorStyle) property.
+You can customize the [SfDateSelector](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDateSelector.html) in the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control using the [SelectorStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfDatePicker_SelectorStyle) property.
 
 {% tabs %}
 

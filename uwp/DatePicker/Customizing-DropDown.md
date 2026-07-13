@@ -3,7 +3,7 @@ layout: post
 title: Customizing DropDown in UWP DatePicker control | Syncfusion®
 description: Learn here all about Customizing DropDown support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
-control:  SfDatePicker
+control: SfDatePicker
 documentation: ug
 ---
 # Customizing DropDown in UWP DatePicker (SfDatePicker)
@@ -26,13 +26,13 @@ The height of the drop-down can be changed using the DropDownHeight property.
 
 {% highlight c# %}
 
-sfdatePicker.DropDownHeight = 200;
+sfdatePicker.DropDownHeight = 300;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-sfdatePicker.DropDownHeight = 200
+sfdatePicker.DropDownHeight = 300
 
 {% endhighlight %}
 
