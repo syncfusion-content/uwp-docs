@@ -15,15 +15,15 @@ The item size in the SfDateSelector control can be changed by setting the Select
 
 
 
-## SelectorItemSpacing 
+## SelectorItemSpacing
 
-The SelectorItemSpacing property provides the space between the items in SfDateSelector.
+The SelectorItemSpacing property provides the space between the items in the SfDateSelector.
 
 
 
 ## SelectorItemCount
 
-The SelectorItemCount property is used to specify the number of items to be used in SfDateSelector.
+The SelectorItemCount property is used to specify the number of items to be displayed in the SfDateSelector.
 
 The following code sample shows the usage of the SelectorItemWidth, SelectorItemHeight, SelectorItemSpacing, and SelectorItemCount properties. 
 

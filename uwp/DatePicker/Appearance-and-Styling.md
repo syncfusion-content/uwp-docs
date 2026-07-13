@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance and Styling in UWP DatePicker (SfDatePicker)
 
-## Accent Brush	
+## Accent Brush
 
 The AccentBrush property is used to decorate the hot spots of a control with a solid color.
 
@@ -30,14 +30,14 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 {% endhighlight  %}
 
-The following image shows the control with various Accent brushes:
+The following image shows the control with various accent brushes:
 
 ![Appearance-and-Styling_img1](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 ## Selected Foreground
 
-The SelectedForeground property is used to change the foreground color of  the Selected Date
+The SelectedForeground property is used to change the foreground color of the selected date.
 
 {% highlight xaml %}
 

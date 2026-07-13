@@ -10,7 +10,7 @@ documentation: ug
 
 ## DropDown height
 
-The height of drop down can be changed using DropDownHeight property.
+The height of the drop-down can be changed using the DropDownHeight property.
 
 {% tabs %}
 
@@ -43,11 +43,11 @@ sfdatePicker.DropDownHeight = 200
 
 ## IsDropDownOpen
 
-Drop down can be programmatically opened or closed using the property IsDropDownOpen.
+The drop-down can be programmatically opened or closed using the IsDropDownOpen property.
 
 ## ShowDropDownButton
 
-DropDownButton visibility can be changed by using the ShowDropDownButton property
+The drop-down button visibility can be changed by using the ShowDropDownButton property.
 
 {% tabs %}
 

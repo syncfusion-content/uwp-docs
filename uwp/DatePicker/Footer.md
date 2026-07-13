@@ -11,7 +11,7 @@ documentation: ug
 
 ## Done and Cancel Buttons
 
-The done and cancel buttons can be made visible or hidden using the following properties.
+The Done and Cancel buttons can be shown or hidden using the following properties.
 
 ## ShowDoneButton
 
@@ -64,7 +64,7 @@ The following code sample shows how to hide the cancel button:
 
             <syncfusion:SfDatePicker.SelectorStyle>
 
-                <Style TargetType="syncfusion:DateSelector">
+                <Style TargetType="syncfusion:SfDateSelector">
 
 <Setter Property="ShowCancelButton" Value="false"/>
 
