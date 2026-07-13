@@ -31,23 +31,27 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+
+                    <syncfusion:SfDatePicker VerticalAlignment="Center"
+
+                   Width="200" x:Name="datePicker" SelectorItemWidth="100"
+
+                    SelectorItemHeight="100"
+
+                    SelectorItemSpacing="50"
+
+                    SelectorItemCount="4"/>
 
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-            <syncfusion:SfDatePicker VerticalAlignment="Center"
+    </Grid>
 
-               Width="200" x:Name="datePicker" SelectorItemWidth="100"
-
-                SelectorItemHeight="100"
-
-                SelectorItemSpacing="50"
-
-                SelectorItemCount="4"/>
-
-
-
-</Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -56,6 +60,8 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 datePicker.SelectorItemWidth = 100;
 datePicker.SelectorItemHeight = 100;

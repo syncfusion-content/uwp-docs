@@ -15,13 +15,17 @@ The following code example and screenshot illustrate the usage of the AllowNull 
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <syncfusion:SfDatePicker VerticalAlignment="Center" Width="200" Value="{x:Null}" AllowNull="true"/>
 
-<syncfusion:SfDatePicker VerticalAlignment="Center" Width="200" Value="{x:Null}" AllowNull="true"/>
+    </Grid>
 
-</Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -41,14 +45,19 @@ N> The AllowInlineEditing property must be set to `true` for this property to ta
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-<syncfusion:SfDatePicker VerticalAlignment="Center" Width="200"
+    <syncfusion:SfDatePicker VerticalAlignment="Center" Width="200"
 
-AllowInlineEditing="true" InputScope="Number"/>
+    AllowInlineEditing="true" InputScope="Number"/>
 
-</Grid>
+    </Grid>
+
+</Page>
 
 {% endhighlight  %}
 

@@ -21,20 +21,23 @@ The following code sample shows how to create a date picker with a [month day pa
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+
+                <syncfusion:SfDatePicker VerticalAlignment="Center" x:Name="sfdatePicker"
+
+                                       Width="200" Margin="15"
+
+                                       FormatString="M"/>
 
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-            <syncfusion:SfDatePicker VerticalAlignment="Center" x:Name="sfdatePicker"
+    </Grid>
 
-                                   Width="200" Margin="15"
-
-                                   FormatString="M"/>
-
-
-
-</Grid>
-
+</Page>
 
 {% endhighlight  %}
 
@@ -43,6 +46,8 @@ The following code sample shows how to create a date picker with a [month day pa
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
  sfdatePicker.FormatString = "M";
 
@@ -67,11 +72,17 @@ The SelectorFormatString property is used to specify the format for the DateSele
 
 {% highlight xaml %}
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-    <syncfusion:SfDatePicker SelectorFormatString="M"   x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" />
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-</Grid>
+        <syncfusion:SfDatePicker SelectorFormatString="M"   x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" />
+
+    </Grid>
+
+</Page>
 
 {% endhighlight  %}
 
@@ -80,6 +91,8 @@ The SelectorFormatString property is used to specify the format for the DateSele
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 sfdatePicker.SelectorFormatString = "M";
 

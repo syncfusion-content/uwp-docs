@@ -21,7 +21,11 @@ The following code sample shows how to hide the done button:
 
 {% highlight xaml %}
 
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
 
                                HorizontalAlignment="Center"
 
@@ -38,7 +42,9 @@ The following code sample shows how to hide the done button:
             </syncfusion:SfDatePicker.SelectorStyle>  
 
         </syncfusion:SfDatePicker>
-		
+
+</Page>
+
 {% endhighlight %}
 
 ![Features_img11](Features_images/Features_img11.png)
@@ -54,9 +60,11 @@ The following code sample shows how to hide the cancel button:
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-
-<syncfusion:SfDatePicker VerticalAlignment="Center"
+    <syncfusion:SfDatePicker VerticalAlignment="Center"
 
                                HorizontalAlignment="Center"
 
@@ -71,6 +79,8 @@ The following code sample shows how to hide the cancel button:
                 </Style>
 
             </syncfusion:SfDatePicker.SelectorStyle>        </syncfusion:SfDatePicker>
+
+</Page>
 
 			{% endhighlight  %}
 			

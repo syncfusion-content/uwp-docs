@@ -19,7 +19,7 @@ Refer to the [control dependencies](https://help.syncfusion.com/uwp/control-depe
 You can refer to this [documentation](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) to find more details about installing the NuGet package in a UWP application.
 
 ## Creating an application with the SfDatePicker control
-In this walkthrough, you will create a UWP application that contains the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.SfInput.UWP~Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
+In this walkthrough, you will create a UWP application that contains the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
 1. [Creating project](#Creating-the-project)
 2. [Adding control via designer](#Adding-control-via-designer)
 3. [Adding control manually in XAML](#Adding-control-manually-in-XAML)
@@ -64,7 +64,13 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker Name="datePicker1" HorizontalAlignment="Center"  Height="30" Width="150" />
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker Name="datePicker1" HorizontalAlignment="Center"  Height="30" Width="150" />
+
+</Page>
 
 {% endhighlight %}
 
@@ -124,7 +130,13 @@ The format of the date in [SfDatePicker](https://help.syncfusion.com/cr/uwp/Sync
 
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker HorizontalAlignment="Center" VerticalAlignment="Center" FormatString="yyyy-dd-MM"  Width="125" />
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker HorizontalAlignment="Center" VerticalAlignment="Center" FormatString="yyyy-dd-MM"  Width="125" />
+
+</Page>
 
 {% endhighlight %}
 {% highlight C# %}
@@ -151,13 +163,19 @@ You can customize the [SfDateSelector](https://help.syncfusion.com/cr/uwp/Syncfu
 
 {% highlight XAML %}
 
-<syncfusion:SfDatePicker HorizontalAlignment="Center" VerticalAlignment="Center" FormatString="M"  Width="125">
-    <syncfusion:SfDatePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfDateSelector">
-            <Setter Property="Header" Value="Set your alarm" />
-        </Style>
-    </syncfusion:SfDatePicker.SelectorStyle>
-</syncfusion:SfDatePicker>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker HorizontalAlignment="Center" VerticalAlignment="Center" FormatString="M"  Width="125">
+        <syncfusion:SfDatePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfDateSelector">
+                <Setter Property="Header" Value="Set your alarm" />
+            </Style>
+        </syncfusion:SfDatePicker.SelectorStyle>
+    </syncfusion:SfDatePicker>
+
+</Page>
 
 {% endhighlight %}
 

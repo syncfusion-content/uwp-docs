@@ -16,7 +16,13 @@ The height of the drop-down can be changed using the DropDownHeight property.
 
 {% highlight xaml %}
 
-  <syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" DropDownHeight="300" />
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" DropDownHeight="300" />
+
+</Page>
 
 {% endhighlight %}
 
@@ -25,6 +31,8 @@ The height of the drop-down can be changed using the DropDownHeight property.
 {% tabs %}
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 sfdatePicker.DropDownHeight = 300;
 
@@ -53,7 +61,13 @@ The drop-down button visibility can be changed by using the ShowDropDownButton p
 
 {% highlight xaml %}
 
-   <syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" ShowDropDownButton="true"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" ShowDropDownButton="true"/>
+
+</Page>
 
 {% endhighlight %}
 
@@ -62,6 +76,8 @@ The drop-down button visibility can be changed by using the ShowDropDownButton p
 {% tabs %}
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
  sfdatePicker.ShowDropDownButton = true;
 

@@ -15,18 +15,23 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-        <syncfusion:SfDatePicker  VerticalAlignment="Center"
+            <syncfusion:SfDatePicker  VerticalAlignment="Center"
 
-                                HorizontalAlignment="Center"
+                                    HorizontalAlignment="Center"
 
-                                Width="200"
+                                    Width="200"
 
-                                AccentBrush="Green"/>
+                                    AccentBrush="Green"/>
 
-</Grid>
+    </Grid>
+
+</Page>
 
 {% endhighlight  %}
 
@@ -41,29 +46,33 @@ The SelectedForeground property is used to change the foreground color of the se
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+            <syncfusion:SfDatePicker VerticalAlignment="Center"
 
-        <syncfusion:SfDatePicker VerticalAlignment="Center"
+                             HorizontalAlignment="Center"
 
-                         HorizontalAlignment="Center"
+                             Width="200">
 
-                         Width="200">
+                <syncfusion:SfDatePicker.SelectorStyle>
 
-            <syncfusion:SfDatePicker.SelectorStyle>
+                    <Style TargetType="syncfusion:SfDateSelector">
+                     
+                        <Setter Property="SelectedForeground" Value="Red"/>
+                        
+                    </Style>
 
-                <Style TargetType="syncfusion:SfDateSelector">
-                 
-                    <Setter Property="SelectedForeground" Value="Red"/>
-                    
-                </Style>
+                </syncfusion:SfDatePicker.SelectorStyle>
 
-            </syncfusion:SfDatePicker.SelectorStyle>
+            </syncfusion:SfDatePicker>
 
-        </syncfusion:SfDatePicker>
+    </Grid>
 
-</Grid>
+</Page>
 
 {% endhighlight  %}
 
