@@ -69,6 +69,9 @@ N>
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Controls.Input;
+
+SfCalendar sfCalendar = new SfCalendar();
+sfCalendar.NumberOfWeeksInView = 2;
 {% endhighlight %}
 
 {% endtabs %}
@@ -121,6 +124,9 @@ This view displays the period of 10 years. By default, the current year range of
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Controls.Input;
+
+SfCalendar sfCalendar = new SfCalendar();
+sfCalendar.ViewMode = ViewMode.Decade;
 {% endtabs %}
 
 ## Century view
@@ -143,5 +149,8 @@ This view displays the period of 100 years. By default, the current year range o
 {% highlight c# %}
 
 using Syncfusion.UI.Xaml.Controls.Input;
+
+SfCalendar sfCalendar = new SfCalendar();
+sfCalendar.ViewMode = ViewMode.Century;
 {% endtabs %}
 
