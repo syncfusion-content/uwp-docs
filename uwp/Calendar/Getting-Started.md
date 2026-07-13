@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Calendar control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Calendar (SfCalendar) control, its elements and more.
+description: Learn here about getting started with the Syncfusion UWP Calendar (SfCalendar) control, its elements, and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
@@ -15,11 +15,11 @@ This section explains how to create the SfCalendar control.
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
-* Syncfusion. SfInput.UWP
+* Syncfusion.SfInput.UWP
 
 * Syncfusion.SfShared.UWP
 
-1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
+1. Include the namespace for the Syncfusion.SfInput.UWP assembly in MainPage.xaml.
 
 {% tabs %}
 
@@ -35,7 +35,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-2.Now add the SfCalendar control with a required optimal name using the included namespace
+2. Now add the SfCalendar control with a required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ Dim calendar As New SfCalendar()
 
 ## Enabling Navigation Buttons
 
-Set the property `ShowNavigationButton` to true for enabling the navigation buttons that allows switching between months.
+Set the property `ShowNavigationButton` to true for enabling the navigation buttons that allow switching between months.
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 
 ## Culture Support
 
-Month and day names of a region can be displayed in SfCalendar based on the Culture property.
+The month and day names of a region can be displayed in SfCalendar based on the Culture property.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling in UWP Calendar control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn here all about Appearance and Styling support in the Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance and Styling in UWP Calendar (SfCalendar)
 
-Each and every part in SfCalendar can be customizable. And it can be customized as follows:
+Every part of SfCalendar can be customized. It can be customized as follows:
 
 ## Customizing the Active Date Cell
 
-The active calendar day button template can be modified using `CellTemplate` property. It also provided `CellTemplateSelector` property for applying selective templates by a logic.
+The active calendar day button template can be modified using the `CellTemplate` property. It also provides the `CellTemplateSelector` property for applying selective templates by a logic.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ The active calendar day button template can be modified using `CellTemplate` pro
 
 ## Customizing the Disabled Date Cell
 
-The inactive/disabled calendar day button template can be modified using `DisabledCellTemplate` property.
+The inactive/disabled calendar day button template can be modified using the `DisabledCellTemplate` property.
 
 {% tabs %}
 
@@ -96,9 +96,9 @@ calendar.VisibleMaxDate = New Date(2015, 12, 25)
 ![SfCalendar-img16](SfCalendar-images/SfCalendar-img16.jpeg)
 
 
-## Customizing Day Name Cell 
+## Customizing Day Name Cell
 
-The template of day names can also be modified using `DayNameCellTemplate` property.
+The template of day names can also be modified using the `DayNameCellTemplate` property.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ The template of day names can also be modified using `DayNameCellTemplate` prope
 
 ## Customizing Header
 
-The template of header in SfCalendar can be modified using `HeaderTemplate` property.
+The template of the header in SfCalendar can be modified using the `HeaderTemplate` property.
 
 {% tabs %}
 
@@ -156,7 +156,7 @@ The template of header in SfCalendar can be modified using `HeaderTemplate` prop
 
 ## Changing Selected Date Background
 
-The background of selected date can be set using `SelectedDateBackground` property.
+The background of the selected date can be set using the `SelectedDateBackground` property.
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ calendar.SelectedDateBackground = New SolidColorBrush(Windows.UI.Colors.Red)
 
 ## Customizing Scroll Button
 
-The template of previous and next scroll buttons can be modified with `PreviousScrollButtonTemplate` and `NextScrollButtonTemplate` properties. ****
+The template of the previous and next scroll buttons can be modified with the `PreviousScrollButtonTemplate` and `NextScrollButtonTemplate` properties.
 
 {% tabs %}
 
@@ -364,7 +364,7 @@ Margin="-1,0,-1,0" RenderTransformOrigin="0.5,0.5">
 
 ## Refresh the Layout
 
-`Refresh` method is used to refresh the layout of SfCalendar so that the cell templates are applied again.
+The `Refresh` method is used to refresh the layout of SfCalendar so that the cell templates are applied again.
 
 {% tabs %}
 

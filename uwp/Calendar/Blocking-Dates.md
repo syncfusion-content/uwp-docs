@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blocking Dates in UWP Calendar control | Syncfusion
-description: Learn here all about Blocking Dates support in Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn here all about Blocking Dates support in the Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Blocking Dates in UWP Calendar (SfCalendar)
 
-`SfCalendar` allows to block out dates so that a blocked date will look disabled, skipped in key navigation and unable to select.
+`SfCalendar` allows blocking out dates so that a blocked date will look disabled, be skipped in key navigation, and unable to be selected.
 
 ## Blocking out the Date Collection
 
-`BlackOutDates` property is used to specify the collection of DateTime that are to be blocked.
+The `BlackOutDates` property is used to specify the collection of DateTime that are to be blocked.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ calendar.BlackOutDates.Add(New Date(2015, 12, 27))
 
 ## Customize the Blocked Date Cell
 
-The template of blocked cells can be customized using `BlackOutCellTemplate` property.
+The template of blocked cells can be customized using the `BlackOutCellTemplate` property.
 
 {% tabs %}
 

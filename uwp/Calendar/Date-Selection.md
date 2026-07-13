@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Selection in UWP Calendar control | Syncfusion
-description: Learn here all about Date Selection support in Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn here all about Date Selection support in the Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 # Date Selection in UWP Calendar (SfCalendar)
 
-Dates can be selected in `SfCalendar` in several ways
+Dates can be selected in `SfCalendar` in several ways.
 
 ## Selecting a Single Date
 
-`SelectedDate` property is used to select a date in SfCalendar. 
+The `SelectedDate` property is used to select a date in SfCalendar.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ calendar.SelectedDate = New Date(2015, 12, 15)
 
 ## Selecting Multiple Dates
 
-`SelectedDates` property is used to select one or more dates in SfCalendar. Several range of dates can be selected using this property.
+The `SelectedDates` property is used to select one or more dates in SfCalendar. Several ranges of dates can be selected using this property.
 
 {% tabs %}
 
@@ -102,25 +102,25 @@ End Sub
 
 {% endtabs %}
 
-Multiple dates can be selected by
+Multiple dates can be selected by:
 
 * Setting SelectedDates programmatically
 
 ![SfCalendar-img5](SfCalendar-images/SfCalendar-img5.jpeg)
 
 
-* Clicking on start date and moving the pointer over end date by touch
+* Clicking on the start date and moving the pointer over the end date by touch
 
 ![SfCalendar-img6](SfCalendar-images/SfCalendar-img6.jpeg)
 
 
 ## DateRange
 
-`DateRange` represents a range of DateTime between a StartDate and EndDate. DateRange can also be a single date. 
+`DateRange` represents a range of DateTime between a StartDate and an EndDate. DateRange can also be a single date.
 
 ### Creating DateRange with Single DateTime
 
-Create an instance of DateRange with StartDate. So that it return a collection of DateTime with the StartDate.
+Create an instance of DateRange with StartDate so that it returns a collection of DateTime with the StartDate.
 
 {% tabs %}
 
@@ -140,7 +140,7 @@ Dim dateRange As New DateRange(New Date(2015, 12, 15))
 
 ### Creating DateRange with Multiple DateTime
 
-Create an instance of DateRange with `StartDate` and `EndDate`. So that it return a collection of DateTime between these two dates.
+Create an instance of DateRange with `StartDate` and `EndDate` so that it returns a collection of DateTime between these two dates.
 
 {% tabs %}
 
@@ -160,11 +160,11 @@ Dim dateRange As New DateRange(New Date(2015, 12, 15), New Date(2015, 12, 17))
 
 ## Date Selection Mode
 
-`SelectionMode` property determines whether single or multiple dates can be selected in SfCalendar. The values of SelectionMode are 
+The `SelectionMode` property determines whether single or multiple dates can be selected in SfCalendar. The values of SelectionMode are:
 
-* Single – Allows to select any one DateTime
-* Multiple – Allows to select one or more DateTime
-* None – Does not allow to select any DateTime
+* Single – Allows selecting any one DateTime
+* Multiple – Allows selecting one or more DateTime
+* None – Does not allow selecting any DateTime
 
 {% tabs %}
 
@@ -194,7 +194,7 @@ calendar.SelectionMode = Syncfusion.UI.Xaml.Controls.Input.SelectionMode.Single
 
 ## Setting Display Date
 
-`DisplayDate` property is used highlight a date which is not a selected date.
+The `DisplayDate` property is used to highlight a date which is not a selected date.
 
 {% tabs %}
 

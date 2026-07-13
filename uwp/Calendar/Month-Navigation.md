@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Month Navigation in UWP Calendar control | Syncfusion
-description: Learn here all about Month Navigation support in Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn here all about Month Navigation support in the Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Month Navigation in UWP Calendar (SfCalendar)
 
-Navigating between months are much simpler with touch. Navigation buttons are also provided.
+Navigating between months is much simpler with touch. Navigation buttons are also provided.
 
 ## Enabling Navigation Button
 
@@ -50,7 +50,7 @@ calendar.ShowNavigationButton = True
 
 ## Navigating to Previous Month
 
-Month navigation can also be done programmatically by invoking `PreviousMonth` method.
+Month navigation can also be done programmatically by invoking the `PreviousMonth` method.
 
 {% tabs %}
 
@@ -72,7 +72,7 @@ calendar.PreviousMonth()
 
 ## Navigating to Next Month
 
-Month navigation can also be done programmatically by invoking `NextMonth` method
+Month navigation can also be done programmatically by invoking the `NextMonth` method.
 
 {% tabs %}
 
@@ -92,7 +92,7 @@ calendar.NextMonth()
 
 ## Notifying the Previous Button Click
 
-`PreviousScrollButtonClicked` event is fired when the previous button is clicked.
+The `PreviousScrollButtonClicked` event is fired when the previous button is clicked.
 
 {% tabs %}
 
@@ -130,7 +130,7 @@ End Sub
 
 ## Notifying the Next Button Click
 
-`NextScrollButtonClicked` event is fired when the next button is clicked.
+The `NextScrollButtonClicked` event is fired when the next button is clicked.
 
 {% tabs %}
 
