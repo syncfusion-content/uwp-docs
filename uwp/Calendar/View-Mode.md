@@ -127,6 +127,9 @@ using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.ViewMode = ViewMode.Decade;
+
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Century view
@@ -152,5 +155,8 @@ using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar sfCalendar = new SfCalendar();
 sfCalendar.ViewMode = ViewMode.Century;
+
+{% endhighlight %}
+
 {% endtabs %}
 
