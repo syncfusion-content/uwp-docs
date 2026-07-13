@@ -11,15 +11,13 @@ documentation: ug
 
 ## Done and Cancel Buttons
 
-The done and cancel buttons can be made visible or hidden using the following properties:
-
-
+The Done and Cancel buttons can be made visible or hidden using the following properties:
 
 ## ShowDoneButton
 
-The ShowDoneButton property is used to show or hide the done button. The default value is true.
+The ShowDoneButton property is used to show or hide the Done button. The default value is true.
 
-The following code sample shows how to hide the done button:
+The following code sample shows how to hide the Done button:
 
 
 {% highlight xaml %}
@@ -55,9 +53,9 @@ The following code sample shows how to hide the done button:
 
 ## ShowCancelButton
 
-The ShowCancelButton property is used to show or hide the cancel button. The default value is true.
+The ShowCancelButton property is used to show or hide the Cancel button. The default value is true.
 
-The following code sample shows how to hide the cancel button:
+The following code sample shows how to hide the Cancel button:
 {% highlight xaml %}
 
 

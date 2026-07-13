@@ -17,13 +17,11 @@ The item size in the SfTimeSelector control can be changed by setting the Select
 
 ## SelectorItemSpacing
 
-The SelectorItemSpacing property provides the space between the items in SfTimeSelector.
-
-
+The SelectorItemSpacing property provides the space between the items in the SfTimeSelector.
 
 ## SelectorItemCount
 
-The SelectorItemCount property is used to specify the number of items to be used in SfTimeSelector.
+The SelectorItemCount property is used to specify the number of items to be used in the SfTimeSelector.
 
 The following code sample shows the usage of the SelectorItemWidth, SelectorItemHeight, SelectorItemSpacing, and SelectorItemCount properties. 
 
@@ -58,8 +56,8 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 
 timePicker.SelectorItemHeight = 100;
 timePicker.SelectorItemWidth = 100;
-timePicker.SelectorItemCount = 5;
-timePicker.SelectorItemSpacing = 40;
+timePicker.SelectorItemSpacing = 50;
+timePicker.SelectorItemCount = 4;
 
 {% endhighlight %}
 
@@ -67,8 +65,8 @@ timePicker.SelectorItemSpacing = 40;
 
 timePicker.SelectorItemHeight = 100
 timePicker.SelectorItemWidth = 100
-timePicker.SelectorItemCount = 5
-timePicker.SelectorItemSpacing = 40
+timePicker.SelectorItemSpacing = 50
+timePicker.SelectorItemCount = 4
 
 {% endhighlight %}
 

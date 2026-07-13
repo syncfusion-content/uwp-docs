@@ -58,7 +58,7 @@ The example below shows how to create a time picker with a [Long Time pattern](h
 
 ## Specifying format for the TimeSelector
 
-The SelectorFormatString property used to specify format for the TimeSelector
+The SelectorFormatString property is used to specify the format for the TimeSelector.
 
 
 
@@ -97,4 +97,4 @@ The SelectorFormatString property used to specify format for the TimeSelector
 
 ![Features_img2](Features_images/Features_img2.png)
 
-N>  A detailed explanation of standard date time formatting is available[here](http://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.71).aspx). The result string produced by these format specifiers is influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.
+N>  A detailed explanation of standard date time formatting is available [here](http://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.71).aspx). The result string produced by these format specifiers is influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.

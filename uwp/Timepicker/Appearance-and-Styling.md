@@ -58,7 +58,7 @@ The following images showcase the control with various Accent Brushes:
 
 ## Selected Foreground
 
-The SelectedForeground property is used to change the foreground color of  the Selected Time
+The SelectedForeground property is used to change the foreground color of the selected time.
 
 {% highlight xaml %}
 

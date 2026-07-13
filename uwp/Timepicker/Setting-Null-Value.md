@@ -9,10 +9,9 @@ documentation: ug
 
 # Setting Null Value in UWP TimePicker (SfTimePicker)
 
+The AllowNull property can be used to set the SfTimePicker value to Null. When this property is enabled along with the Value property whose value is Null, then the SfTimePicker control will not display any value.
 
-AllowNull property can be used to set the SfTimePicker value to Null. When this property is enabled along with the Value property whose value is Null, then the SfTimePicker control will not display any value 
-
-The following code example and screen shot illustrate the usage of the AllowNull property.
+The following code example and screenshot illustrate the usage of the AllowNull property.
 
 
 {% highlight xaml %}
@@ -30,7 +29,7 @@ The following code example and screen shot illustrate the usage of the AllowNull
 
 ## Setting the Input Scope for the On-Screen Keyboard
 
-To set the input scope of the on-screen keyboard, use the InputScope property. When the InputScope property set to Number, only the numeric keypad will be visible in the on-screen keyboard. The following code example and screen shot illustrate this property.
+To set the input scope of the on-screen keyboard, use the InputScope property. When the InputScope property is set to Number, only the numeric keypad will be visible in the on-screen keyboard. The following code example and screenshot illustrate this property.
 
 
 N>  The AllowInlineEditing property must be set to `true` for this property to take effect.

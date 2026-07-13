@@ -19,13 +19,13 @@ The SfTimeSelector control opens inside the popup window.
 
 
 
-The visual elements of the time selector can be customized using the property SelectorStyle.
+The visual elements of the time selector can be customized using the SelectorStyle property.
 
 
 
 ## Header
 
-The header property defines the top part of the time selector.
+The Header property defines the top part of the time selector.
 {% highlight xaml %}
 
 
@@ -127,7 +127,7 @@ The HeaderTemplate property is used to decorate the header.
 
 ## Cell template
 
-The cell template property is used to decorate the selection box with custom visuals. 
+The CellTemplate property is used to decorate the selection box with custom visuals. 
 
 
 N>  The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWrapper.
@@ -136,7 +136,7 @@ N>  The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWr
 
 ## HourCellTemplate
 
- The HourCellTemplate property is used to decorate the hour cell selection box.
+The HourCellTemplate property is used to decorate the hour cell selection box.
 
 {% highlight xaml %}
 
@@ -204,7 +204,7 @@ N>  The DataContext of Selection box is Syncfusion.UI.Xaml.Primitives.DateTimeWr
 
 ## MinuteCellTemplate
 
-The MinuteCellTemplate property is used to decorate the minute cell selection box
+The MinuteCellTemplate property is used to decorate the minute cell selection box.
 
 {% highlight xaml %}
 
@@ -338,26 +338,24 @@ The MeridiemCellTemplate property is used to decorate the meridiem cell selectio
 
 
 
-## Setting Incremental values
+## Setting Incremental Values
 
-To set minute and second values in SfTimeSelector with incremental values, use MinuteInterval and SecondsInterval properties respectively.
+To set minute and second values in the SfTimeSelector with incremental values, use the MinuteInterval and SecondsInterval properties respectively.
 
 ### MinuteInterval
 
-
-MinuteInterval property is used to set interval for minute values in SfTimeSelector.
+The MinuteInterval property is used to set the interval for minute values in the SfTimeSelector.
 
 ### SecondsInterval
 
-
-SecondsInterval property is used to set interval for second values in SfTimeSelector.
+The SecondsInterval property is used to set the interval for second values in the SfTimeSelector.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 
-<syncfusion:SfTimeSelector FormatString="hh:MM:ss tt" MinuteInterval="2" SecondsInterval="10"/>
+<syncfusion:SfTimeSelector FormatString="hh:mm:ss tt" MinuteInterval="2" SecondsInterval="10"/>
 
 {% endhighlight %}
 
@@ -369,23 +367,23 @@ SecondsInterval property is used to set interval for second values in SfTimeSele
 
 SfTimeSelector timeSelector = new SfTimeSelector();
 
-timeSelector.FormatString= "hh:MM:ss tt";
+timeSelector.FormatString = "hh:mm:ss tt";
 
-timeSelector.MinuteInterval=2;
+timeSelector.MinuteInterval = 2;
 
-timeSelector.SecondsInterval=10;
+timeSelector.SecondsInterval = 10;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-SfTimeSelector timeSelector = new SfTimeSelector()
+Dim timeSelector As New SfTimeSelector()
 
-timeSelector.FormatString= "hh:MM:ss tt"
+timeSelector.FormatString = "hh:mm:ss tt"
 
-timeSelector.MinuteInterval=2
+timeSelector.MinuteInterval = 2
 
-timeSelector.SecondsInterval=10
+timeSelector.SecondsInterval = 10
 
 {% endhighlight %}
 
