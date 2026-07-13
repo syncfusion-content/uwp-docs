@@ -111,7 +111,7 @@ The AMPMDesignatorComboStyle property is used to customize the style of the Date
 
 
 
-## Item Template
+## Item template
 
 The Item Template property is used to decorate the DateTimeItem drop-down list containing the date or time lists with custom visuals. 
 
