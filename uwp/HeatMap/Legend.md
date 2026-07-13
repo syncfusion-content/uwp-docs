@@ -8,9 +8,11 @@ documentation: ug
 ---
 
 # Legend in UWP HeatMap (SfHeatMap) control
+
 Legend is a control used to summarize the color ranges in a HeatMap, providing a visual guide for mapping values to their corresponding colors.
 
-## Create Legend
+## Create legend
+
 Legend can be created with color mapping as shown below.
 
 {% tabs %}
@@ -32,7 +34,8 @@ The resulting legend will appear as shown in the following image.
 
 ![Legend_Image](Images/Legend.png)
 
-## Legend Mode
+## Legend mode
+
 There are two modes available for the legend:
 
 * Gradient
@@ -42,9 +45,11 @@ There are two modes available for the legend:
 
 {% tabs %}
 {% highlight xaml %}
+
 <syncfusion:SfHeatMapLegend 
 	LegendMode="Gradient" 
-	ColorMappingCollection="{StaticResource colorMapping}"/>
+	ColorMappingCollection="{StaticResource colorMapping}" />
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -54,16 +59,20 @@ There are two modes available for the legend:
 
 {% tabs %}
 {% highlight xaml %}
+
 <syncfusion:SfHeatMapLegend
 	LegendMode="List" 
-	ColorMappingCollection="{StaticResource colorMapping}"/>
+	ColorMappingCollection="{StaticResource colorMapping}" />
+
 {% endhighlight %}
 {% endtabs %}
 
 ![Legend_Image](Images/Legend_List.png)
 
 ## Orientation
+
 There are two types of orientation available for both Gradient and List modes:
+
 * Horizontal
 * Vertical
 
@@ -71,10 +80,12 @@ There are two types of orientation available for both Gradient and List modes:
 
 {% tabs %}
 {% highlight xaml %}
+
 <syncfusion:SfHeatMapLegend 
 	LegendMode="List" 
 	Orientation="Horizontal" 
-	ColorMappingCollection="{StaticResource colorMapping}"/>
+	ColorMappingCollection="{StaticResource colorMapping}" />
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -84,10 +95,12 @@ There are two types of orientation available for both Gradient and List modes:
 
 {% tabs %}
 {% highlight xaml %}
+
 <syncfusion:SfHeatMapLegend 
 	LegendMode="List" 
 	Orientation="Vertical" 
 	ColorMappingCollection="{StaticResource colorMapping}"/>
+	
 {% endhighlight %}
 {% endtabs %}
 

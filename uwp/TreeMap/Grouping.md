@@ -2,8 +2,8 @@
 layout: post
 title: Grouping in UWP TreeMap control | Syncfusion
 description: Learn here all about Grouping support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
-platform: UWP
-control: TreeMap
+platform: uwp
+control: SfTreeMap
 documentation: ug
 ---
 
@@ -16,9 +16,7 @@ The levels of TreeMap can be categorized into two types such as,
 
 ## TreeMapFlatLevel
 
-
 TreeMapFlatLevel is used to define levels for flat data collection. 
-
 
 ### GroupPath:
 
@@ -28,7 +26,7 @@ Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
 
@@ -37,22 +35,18 @@ Code Sample:
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
-
                           WeightValuePath="Population"                              
-
                           ColorValuePath="Growth">
 
         <syncfusion:SfTreeMap.Levels>
 
-            <syncfusion:TreeMapFlatLevel GroupPath="Continent">
-
-            </syncfusion:TreeMapFlatLevel>
+            <syncfusion:TreeMapFlatLevel GroupPath="Continent" />
 
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
 
-    </Grid>
+</Grid>
 
 {% endhighlight %}
 
@@ -64,7 +58,7 @@ Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
 
@@ -73,22 +67,19 @@ Code Sample:
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
-
                           WeightValuePath="Population"                              
-
                           ColorValuePath="Growth">
 
         <syncfusion:SfTreeMap.Levels>
 
-           <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
-
-           <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"/>
+           <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" />
+           <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5" />
 
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
 
-    </Grid>
+</Grid>
 
 {% endhighlight %}
 
@@ -102,259 +93,148 @@ Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-        <Grid.Resources>
+    <Grid.Resources>
 
-            <local:CountrySalesCollection x:Key="countrySalesCollection"/>
+        <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-        </Grid.Resources>
+    </Grid.Resources>
 
-        <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource 
+    <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}"
+                            WeightValuePath="Sales" ColorValuePath="Expense">
 
-                                                    countrySalesCollection}}"
+        <syncfusion:SfTreeMap.Levels>
 
-                              WeightValuePath="Sales"                              
+            <syncfusion:TreeMapHierarchicalLevel/>
 
-                              ColorValuePath="Expense">
+        </syncfusion:SfTreeMap.Levels>
 
-            <syncfusion:SfTreeMap.Levels>
+    </syncfusion:SfTreeMap>
 
-                <syncfusion:TreeMapHierarchicalLevel/>
+</Grid>
 
-            </syncfusion:SfTreeMap.Levels>
-
-        </syncfusion:SfTreeMap>
-
-    </Grid>
 {% endhighlight %}
-
 
 {% highlight c# %}
 
-    public class CountrySalesCollection : ObservableCollection<CountrySale>
-
+public class CountrySalesCollection : ObservableCollection<CountrySale>
+{
+    public CountrySalesCollection()
     {
+        this.Add(new CountrySale() { Name = "United States", Sales = 98456, Expense = 87000 });
+        this.Add(new CountrySale() { Name = "Canada", Sales = 43523, Expense = 40000 });
+        this.Add(new CountrySale() { Name = "Mexico", Sales = 45634, Expense = 46000 });
+        this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "New York", Sales = 2353, Expense = 2000 });
+        this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "Los Angeles", Sales = 3453, Expense = 3000 });
+        this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "San Francisco", Sales = 8456, Expense = 8000 });
+        this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "Chicago", Sales = 6785, Expense = 7000 });
+        this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "Miami", Sales = 7045, Expense = 6000 });            
+        this[1].RegionalSalesCollection.Add(new RegionSale() { Country = "Canada", Name = "Toronto", Sales = 7045, Expense = 7000 });
+        this[1].RegionalSalesCollection.Add(new RegionSale() { Country = "Canada", Name = "Vancouver", Sales = 4352, Expense = 4000 });
+        this[1].RegionalSalesCollection.Add(new RegionSale() { Country = "Canada", Name = "Winnipeg", Sales = 7843, Expense = 7500 });
+        this[2].RegionalSalesCollection.Add(new RegionSale() { Country = "Mexico", Name = "Mexico City", Sales = 7843, Expense = 6500 });
+        this[2].RegionalSalesCollection.Add(new RegionSale() { Country = "Mexico", Name = "Cancun", Sales = 6683, Expense = 6000 });        }
+}
 
-        public CountrySalesCollection()
-
+public class CountrySale : INotifyPropertyChanged
+{
+    public string Name { get; set; }
+    private double _sales = 0;
+    public double Sales
+    {
+        get { return _sales; }
+        set
         {
+            if (_sales != value)
+            {
+                _sales = value;
+                this.OnPropertyChanged(new PropertyChangedEventArgs("Sales"));
 
-            this.Add(new CountrySale() { Name = "United States", Sales = 98456, Expense = 87000 });
+            }
+        }
+    }
 
-            this.Add(new CountrySale() { Name = "Canada", Sales = 43523, Expense = 40000 });
+    private double _expense = 0;
+    public double Expense
+    {
+        get { return _expense; }
+        set
+        {
+            if (_expense != value)
+            {
+                _expense = value;
+                this.OnPropertyChanged(new PropertyChangedEventArgs("Expense"));
+            }
+        }
+    }
 
-            this.Add(new CountrySale() { Name = "Mexico", Sales = 45634, Expense = 46000 });
+    public ObservableCollection<RegionSale> RegionalSalesCollection { get; set; }
 
-            this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "New York", Sales = 2353, Expense = 2000 });
+    public CountrySale()
+    {
+        this.RegionalSalesCollection = new ObservableCollection<RegionSale>();
+    }
 
-            this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "Los Angeles", Sales = 3453, Expense = 3000 });
+    #region INotifyPropertyChanged Members
 
-            this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "San Francisco", Sales = 8456, Expense = 8000 });
-
-            this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "Chicago", Sales = 6785, Expense = 7000 });
-
-            this[0].RegionalSalesCollection.Add(new RegionSale() { Country = "United States", Name = "Miami", Sales = 7045, Expense = 6000 });            
-
-            this[1].RegionalSalesCollection.Add(new RegionSale() { Country = "Canada", Name = "Toronto", Sales = 7045, Expense = 7000 });
-
-            this[1].RegionalSalesCollection.Add(new RegionSale() { Country = "Canada", Name = "Vancouver", Sales = 4352, Expense = 4000 });
-
-            this[1].RegionalSalesCollection.Add(new RegionSale() { Country = "Canada", Name = "Winnipeg", Sales = 7843, Expense = 7500 });
-
-
-
-            this[2].RegionalSalesCollection.Add(new RegionSale() { Country = "Mexico", Name = "Mexico City", Sales = 7843, Expense = 6500 });
-
-            this[2].RegionalSalesCollection.Add(new RegionSale() { Country = "Mexico", Name = "Cancun", Sales = 6683, Expense = 6000 });        }
+    public event PropertyChangedEventHandler PropertyChanged;
+    protected void OnPropertyChanged(PropertyChangedEventArgs e)
+    {
+        if (this.PropertyChanged != null)
+            this.PropertyChanged.Invoke(this, e);
 
     }
 
-    public class CountrySale : INotifyPropertyChanged
+    #endregion
+}
 
+public class RegionSale : INotifyPropertyChanged
+{
+    public string Name { get; set; }
+    public string Country { get; set; }
+    private double _sales = 0;
+    public double Sales
     {
-
-        public string Name { get; set; }
-
-        private double _sales = 0;
-
-        public double Sales
-
+        get { return _sales; }
+        set
         {
-
-            get { return _sales; }
-
-            set
-
+            if (_sales != value)
             {
-
-                if (_sales != value)
-
-                {
-
-                    _sales = value;
-
-                    this.OnPropertyChanged(new  
-
-                         PropertyChangedEventArgs("Sales"));
-
-                }
+                _sales = value;
+                this.OnPropertyChanged(new PropertyChangedEventArgs("Sales"));
 
             }
-
         }
-
-        private double _expense = 0;
-
-        public double Expense
-
-        {
-
-            get { return _expense; }
-
-            set
-
-            {
-
-                if (_expense != value)
-
-                {
-
-                    _expense = value;
-
-                    this.OnPropertyChanged(new  
-
-                         PropertyChangedEventArgs("Expense"));
-
-                }
-
-            }
-
-        }
-
-        public ObservableCollection<RegionSale> RegionalSalesCollection 
-
-        { get; set; }
-
-        public CountrySale()
-
-        {
-
-            this.RegionalSalesCollection = new ObservableCollection<RegionSale>();
-
-        }
-
-        #region INotifyPropertyChanged Members
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged(PropertyChangedEventArgs e)
-
-        {
-
-            if (this.PropertyChanged != null)
-
-                this.PropertyChanged.Invoke(this, e);
-
-        }
-
-        #endregion
-
     }
 
-
-
-    public class RegionSale : INotifyPropertyChanged
-
+    private double _expense = 0;
+    public double Expense
     {
-
-        public string Name { get; set; }
-
-        public string Country { get; set; }
-
-        private double _sales = 0;
-
-        public double Sales
-
+        get { return _expense; }
+        set
         {
-
-            get { return _sales; }
-
-            set
-
+            if (_expense != value)
             {
-
-                if (_sales != value)
-
-                {
-
-                    _sales = value;
-
-                    this.OnPropertyChanged(new  
-
-                         PropertyChangedEventArgs("Sales"));
-
-                }
-
+                _expense = value;
+                this.OnPropertyChanged(new PropertyChangedEventArgs("Expense"));
             }
-
         }
-
-        private double _expense = 0;
-
-        public double Expense
-
-        {
-
-            get { return _expense; }
-
-            set
-
-            {
-
-                if (_expense != value)
-
-                {
-
-                    _expense = value;
-
-                    this.OnPropertyChanged(new  
-
-                         PropertyChangedEventArgs("Expense"));
-
-                }
-
-            }
-
-        }
-
-
-
-        #region INotifyPropertyChanged Members
-
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected void OnPropertyChanged(PropertyChangedEventArgs e)
-
-        {
-
-            if (this.PropertyChanged != null)
-
-                this.PropertyChanged.Invoke(this, e);
-
-        }
-
-
-
-        #endregion
-
     }
 
+    #region INotifyPropertyChanged Members
+
+    public event PropertyChangedEventHandler PropertyChanged;
+    protected void OnPropertyChanged(PropertyChangedEventArgs e)
+    {
+        if (this.PropertyChanged != null)
+            this.PropertyChanged.Invoke(this, e);
+    }
+
+    #endregion
+}
 
 {% endhighlight %}
-
 
 ### ChildPath:
 
@@ -364,39 +244,31 @@ Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-        <Grid.Resources>
+    <Grid.Resources>
 
-            <local:CountrySalesCollection x:Key="countrySalesCollection"/>
+        <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-        </Grid.Resources>
+    </Grid.Resources>
 
-        <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource 
+    <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}"
+                          WeightValuePath="Sales"                              
+                          ColorValuePath="Expense">
 
-                                                    countrySalesCollection}}"
+        <syncfusion:SfTreeMap.Levels>
 
-                              WeightValuePath="Sales"                              
+            <syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" />
 
-                              ColorValuePath="Expense">
+        </syncfusion:SfTreeMap.Levels>
 
-            <syncfusion:SfTreeMap.Levels>
+    </syncfusion:SfTreeMap>
 
-                <syncfusion:TreeMapHierarchicalLevel
-
-                              ChildPath="RegionalSalesCollection">
-
-                     </syncfusion:TreeMapHierarchicalLevel>
-
-            </syncfusion:SfTreeMap.Levels>
-
-        </syncfusion:SfTreeMap>
-
-    </Grid>
+</Grid>
 
 {% endhighlight %}
 
-N>  The specified field must be a collection of sub class (object) specified in the nested data collection.
+N> The specified field must be a collection of sub class (object) specified in the nested data collection.
 
 ### ChildGap:
 
@@ -406,34 +278,26 @@ Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-        <Grid.Resources>
+    <Grid.Resources>
 
-            <local:CountrySalesCollection x:Key="countrySalesCollection"/>
+        <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-        </Grid.Resources>
+    </Grid.Resources>
 
-        <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource 
+    <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}"
+                            WeightValuePath="Sales"                              
+                            ColorValuePath="Expense">
 
-                                                    countrySalesCollection}}"
+        <syncfusion:SfTreeMap.Levels>
 
-                              WeightValuePath="Sales"                              
+            <syncfusion:TreeMapHierarchicalLevel ChildGap="10" ChildPath="RegionalSalesCollection" />
 
-                              ColorValuePath="Expense">
+        </syncfusion:SfTreeMap.Levels>
 
-            <syncfusion:SfTreeMap.Levels>
+    </syncfusion:SfTreeMap>
 
-                <syncfusion:TreeMapHierarchicalLevel ChildGap="10"
-
-                              ChildPath="RegionalSalesCollection">
-
-                     </syncfusion:TreeMapHierarchicalLevel>
-
-            </syncfusion:SfTreeMap.Levels>
-
-        </syncfusion:SfTreeMap>
-
-    </Grid>
+</Grid>
 
 {% endhighlight %}
