@@ -9,9 +9,7 @@ documentation: ug
 
 # Register Syncfusion license key in a UWP application
 
-N> **Prerequisites:** Install the Syncfusion UWP NuGet package (for example, `Syncfusion.Licensing.UWP`, or the platform-specific control package that depends on it) from the Syncfusion NuGet feed, and ensure `Syncfusion.Licensing.dll` is referenced in your project. Licensing support is available in Syncfusion Essential Studio version 16.1.0.24 and later.
-
-The generated license key is a string that must be registered before any Syncfusion control is initialized. The `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense` method takes the license-key string as its only parameter and returns `void`. The following code registers the license.
+The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license
 
 **Registering a single license key**
 
@@ -41,13 +39,12 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 
 N> * Place the license key between double quotes. Also, ensure that Syncfusion.Licensing.dll is referenced in your project where the license key is being registered (see the package name in the Prerequisites note above).
 * Syncfusion license validation is done offline during application execution and does not require internet access. Apps registered with a Syncfusion license key can be deployed on any system that does not have an internet connection.
-* If the license key is missing or invalid at runtime, a license dialog or warning will appear. For troubleshooting common registration failures, refer to the [Licensing FAQ](https://help.syncfusion.com/uwp/licensing/licensing-faq).
 
 I> Syncfusion license keys can be validated during the Continuous Integration (CI) processes to ensure proper licensing and prevent licensing errors during deployment. Refer to the [CI License Validation](https://help.syncfusion.com/uwp/licensing/licensing-faq/ci-license-validation) section for detailed instructions on how to implement it.
 
 ### UWP
 
-You can register the license key in the **App.xaml.cs** constructor before the `InitializeComponent()` method in C#. If an **App** constructor is not available in **App.xaml.cs**, create an `App()` constructor in **App.xaml.cs** and register the license key inside it. In Visual Basic, register the license key in the **App.xaml.vb** file before the `OnLaunched` event.
+You can register the license key in **App.xaml.cs** constructor before InitializeComponent() in C#. If App constructor not available in **App.xaml.cs**, create the "App()" constructor in **App.xaml.cs** and register the license key inside the constructor. In Visual Basic, register the licensing code in **App.xaml.vb** file before OnLaunched event.
 
 {% tabs %}
 {% highlight c# %}
@@ -63,12 +60,12 @@ public App()
 
 {% highlight vb %}
 Public Sub New()
-	'Register Syncfusion license key (runs before OnLaunched)
+	'Register Syncfusion License
 	Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY")
 End Sub
 
 Protected Overrides Sub OnLaunched(e As Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)
-	' Standard OnLaunched implementation goes here
+
 End Sub
 {% endhighlight %}
 
