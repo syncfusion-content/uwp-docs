@@ -29,22 +29,27 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-            <syncfusion:SfTimePicker VerticalAlignment="Center" x:Name="timePicker"
+                    <syncfusion:SfTimePicker VerticalAlignment="Center" x:Name="timePicker"
 
-                Width="200" SelectorItemWidth="100"
+                        Width="200" SelectorItemWidth="100"
 
-                SelectorItemHeight="100"
+                    SelectorItemHeight="100"
 
-                SelectorItemSpacing="50"
+                    SelectorItemSpacing="50"
 
-                SelectorItemCount="4"/>
+                    SelectorItemCount="4"/>
 
 
 
-</Grid>
+    </Grid>
+
+</Page>
 
 {% endhighlight %}
 
@@ -54,6 +59,8 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 timePicker.SelectorItemHeight = 100;
 timePicker.SelectorItemWidth = 100;
 timePicker.SelectorItemSpacing = 50;
@@ -62,6 +69,8 @@ timePicker.SelectorItemCount = 4;
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 timePicker.SelectorItemHeight = 100
 timePicker.SelectorItemWidth = 100

@@ -16,7 +16,13 @@ The height of the drop-down can be changed using the DropDownHeight property.
 
 {% highlight xaml %}
 
- <syncfusion:SfTimePicker x:Name="timePicker" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="200" Margin="15" DropDownHeight="300" />
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfTimePicker x:Name="timePicker" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="200" Margin="15" DropDownHeight="300" />
+
+</Page>
 
 {% endhighlight %}
 
@@ -26,11 +32,15 @@ The height of the drop-down can be changed using the DropDownHeight property.
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 timePicker.DropDownHeight = 300;
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 timePicker.DropDownHeight = 300
 
@@ -53,7 +63,13 @@ The DropDownButton visibility can be changed by using the ShowDropDownButton pro
 
 {% highlight xaml %}
 
-   <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center"  Width="200" Margin="15" ShowDropDownButton="true"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center"  Width="200" Margin="15" ShowDropDownButton="true"/>
+
+</Page>
 
 {% endhighlight %}
 
@@ -63,11 +79,15 @@ The DropDownButton visibility can be changed by using the ShowDropDownButton pro
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
  timePicker.ShowDropDownButton = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
  timePicker.ShowDropDownButton = True
 

@@ -31,23 +31,29 @@ The Header property defines the top part of the time selector.
 
 
 
-<syncfusion:SfTimePicker VerticalAlignment="Center"
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-                       HorizontalAlignment="Center"
+    <syncfusion:SfTimePicker VerticalAlignment="Center"
 
-                       Width="200">
+                           HorizontalAlignment="Center"
 
-       <syncfusion:SfTimePicker.SelectorStyle>
+                           Width="200">
 
-                <Style TargetType="syncfusion:SfTimeSelector">
+           <syncfusion:SfTimePicker.SelectorStyle>
 
-                    <Setter Property="Header" Value="Set your alarm"/>
+                    <Style TargetType="syncfusion:SfTimeSelector">
 
-                </Style>
+                        <Setter Property="Header" Value="Set your alarm"/>
 
-       </syncfusion:SfTimePicker.SelectorStyle>
+                    </Style>
 
-</syncfusion:SfTimePicker >
+           </syncfusion:SfTimePicker.SelectorStyle>
+
+    </syncfusion:SfTimePicker >
+
+</Page>
 
 {% endhighlight %}
 
@@ -67,55 +73,61 @@ The HeaderTemplate property is used to decorate the header.
 
 
 
-<syncfusion:SfTimePicker VerticalAlignment="Center" 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-                               HorizontalAlignment="Center"
+    <syncfusion:SfTimePicker VerticalAlignment="Center" 
 
-                               Width="200">
+                                   HorizontalAlignment="Center"
 
-            <syncfusion:SfTimePicker.SelectorStyle>
+                                   Width="200">
 
-                <Style TargetType="syncfusion:SfTimeSelector">
+                <syncfusion:SfTimePicker.SelectorStyle>
 
-                    <Setter Property="HeaderTemplate">
+                    <Style TargetType="syncfusion:SfTimeSelector">
 
-                        <Setter.Value>
+                        <Setter Property="HeaderTemplate">
 
-                            <DataTemplate>
+                            <Setter.Value>
 
-                                <StackPanel Orientation="Horizontal">
+                                <DataTemplate>
 
-                                    <TextBlock Text="&#xE170;" 
+                                    <StackPanel Orientation="Horizontal">
 
-                                           VerticalAlignment="Top"
+                                        <TextBlock Text="&#xE170;" 
 
-                                           Margin="5"
+                                               VerticalAlignment="Top"
 
-                                           FontSize="22"
+                                               Margin="5"
 
-                                           FontFamily="Segoe UI Symbol"/>
+                                               FontSize="22"
 
-                                    <TextBlock Text="Set your alarm" 
+                                               FontFamily="Segoe UI Symbol"/>
 
-                                           VerticalAlignment="Top"
+                                        <TextBlock Text="Set your alarm" 
 
-                                           Margin="5"
+                                               VerticalAlignment="Top"
 
-                                           FontSize="22"
+                                               Margin="5"
 
-                                           />
+                                               FontSize="22"
 
-                                </StackPanel>
+                                               />
 
-                            </DataTemplate>
+                                    </StackPanel>
 
-                        </Setter.Value>
+                                </DataTemplate>
 
-                    </Setter>
+                            </Setter.Value>
 
-                </Style>
+                        </Setter>
 
-            </syncfusion:SfTimePicker.SelectorStyle>        </syncfusion:SfTimePicker>
+                    </Style>
+
+                </syncfusion:SfTimePicker.SelectorStyle>        </syncfusion:SfTimePicker>
+
+</Page>
 
 {% endhighlight %}
 
@@ -144,55 +156,61 @@ The HourCellTemplate property is used to decorate the hour cell selection box.
 
 
 
-<syncfusion:SfTimePicker VerticalAlignment="Center"
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-                               HorizontalAlignment="Center"
+    <syncfusion:SfTimePicker VerticalAlignment="Center"
 
-                               Width="200">
+                                   HorizontalAlignment="Center"
 
-            <syncfusion:SfTimePicker.SelectorStyle>
+                                   Width="200">
 
-                <Style TargetType="syncfusion:SfTimeSelector">
+                <syncfusion:SfTimePicker.SelectorStyle>
 
-                    <Setter Property="HourCellTemplate">
+                    <Style TargetType="syncfusion:SfTimeSelector">
 
-                        <Setter.Value>
+                        <Setter Property="HourCellTemplate">
 
-                            <DataTemplate>
+                            <Setter.Value>
 
-                                <Grid>
+                                <DataTemplate>
 
-                                    <TextBlock VerticalAlignment="Top" 
+                                    <Grid>
 
-                                               HorizontalAlignment="Right"
+                                        <TextBlock VerticalAlignment="Top" 
 
-                                               Margin="5"
+                                                   HorizontalAlignment="Right"
 
-                                               FontSize="22"
+                                                   Margin="5"
 
-                                               FontFamily="Segoe UI Symbol"
+                                                   FontSize="22"
 
-                                               Text="&#xE170;"/>
+                                                   FontFamily="Segoe UI Symbol"
 
-                                    <TextBlock Text="{Binding HourNumber}" 
+                                                   Text="&#xE170;"/>
 
-                                               VerticalAlignment="Bottom" 
+                                        <TextBlock Text="{Binding HourNumber}" 
 
-                                               Margin="5"
+                                                   VerticalAlignment="Bottom" 
 
-                                               FontSize="22"/>
+                                                   Margin="5"
 
-                                </Grid>
+                                                   FontSize="22"/>
 
-                            </DataTemplate>
+                                    </Grid>
 
-                        </Setter.Value>
+                                </DataTemplate>
 
-                    </Setter>
+                            </Setter.Value>
 
-                </Style>
+                        </Setter>
 
-            </syncfusion:SfTimePicker.SelectorStyle>         </syncfusion:SfTimePicker>
+                    </Style>
+
+                </syncfusion:SfTimePicker.SelectorStyle>         </syncfusion:SfTimePicker>
+
+</Page>
 
 {% endhighlight %}
 
@@ -212,55 +230,61 @@ The MinuteCellTemplate property is used to decorate the minute cell selection bo
 
 
 
-       <syncfusion:SfTimePicker VerticalAlignment="Center"
+       <Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-                               HorizontalAlignment="Center"
+           <syncfusion:SfTimePicker VerticalAlignment="Center"
 
-                               Width="200">
+                                   HorizontalAlignment="Center"
 
-            <syncfusion:SfTimePicker.SelectorStyle>
+                                   Width="200">
 
-                <Style TargetType="syncfusion:SfTimeSelector">
+                <syncfusion:SfTimePicker.SelectorStyle>
 
-                    <Setter Property="MinuteCellTemplate">
+                    <Style TargetType="syncfusion:SfTimeSelector">
 
-                        <Setter.Value>
+                        <Setter Property="MinuteCellTemplate">
 
-                            <DataTemplate>
+                            <Setter.Value>
 
-                                <Grid>
+                                <DataTemplate>
 
-                                    <TextBlock VerticalAlignment="Top" 
+                                    <Grid>
 
-                                               HorizontalAlignment="Right"
+                                        <TextBlock VerticalAlignment="Top" 
 
-                                               Margin="5"
+                                                   HorizontalAlignment="Right"
 
-                                               FontSize="22"
+                                                   Margin="5"
 
-                                               FontFamily="Segoe UI Symbol"
+                                                   FontSize="22"
 
-                                               Text="&#xE170;"/>
+                                                   FontFamily="Segoe UI Symbol"
 
-                                    <TextBlock Text="{Binding MinuteNumber}" 
+                                                   Text="&#xE170;"/>
 
-                                               VerticalAlignment="Bottom" 
+                                        <TextBlock Text="{Binding MinuteNumber}" 
 
-                                               Margin="5"
+                                                   VerticalAlignment="Bottom" 
 
-                                               FontSize="22"/>
+                                                   Margin="5"
 
-                                </Grid>
+                                                   FontSize="22"/>
 
-                            </DataTemplate>
+                                    </Grid>
 
-                        </Setter.Value>
+                                </DataTemplate>
 
-                    </Setter>
+                            </Setter.Value>
 
-                </Style>
+                        </Setter>
 
-            </syncfusion:SfTimePicker.SelectorStyle>        </syncfusion:SfTimePicker>
+                    </Style>
+
+                </syncfusion:SfTimePicker.SelectorStyle>        </syncfusion:SfTimePicker>
+
+       </Page>
 
 {% endhighlight %}
 
@@ -280,55 +304,61 @@ The MeridiemCellTemplate property is used to decorate the meridiem cell selectio
 
 
 
-<syncfusion:SfTimePicker VerticalAlignment="Center"
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-                               HorizontalAlignment="Center"
+    <syncfusion:SfTimePicker VerticalAlignment="Center"
 
-                               Width="200">
+                                   HorizontalAlignment="Center"
 
-            <syncfusion:SfTimePicker.SelectorStyle>
+                                   Width="200">
 
-                <Style TargetType="syncfusion:SfTimeSelector">
+                <syncfusion:SfTimePicker.SelectorStyle>
 
-                    <Setter Property="MeridiemCellTemplate">
+                    <Style TargetType="syncfusion:SfTimeSelector">
 
-                        <Setter.Value>
+                        <Setter Property="MeridiemCellTemplate">
 
-                            <DataTemplate>
+                            <Setter.Value>
 
-                                <Grid>
+                                <DataTemplate>
 
-                                    <TextBlock VerticalAlignment="Top" 
+                                    <Grid>
 
-                                               HorizontalAlignment="Right"
+                                        <TextBlock VerticalAlignment="Top" 
 
-                                               Margin="5"
+                                                   HorizontalAlignment="Right"
 
-                                               FontSize="22"
+                                                   Margin="5"
 
-                                               FontFamily="Segoe UI Symbol"
+                                                   FontSize="22"
 
-                                               Text="&#xE170;"/>
+                                                   FontFamily="Segoe UI Symbol"
 
-                                    <TextBlock Text="{Binding AmPmString}" 
+                                                   Text="&#xE170;"/>
 
-                                               VerticalAlignment="Bottom" 
+                                        <TextBlock Text="{Binding AmPmString}" 
 
-                                               Margin="5"
+                                                   VerticalAlignment="Bottom" 
 
-                                               FontSize="22"/>
+                                                   Margin="5"
 
-                                </Grid>
+                                                   FontSize="22"/>
 
-                            </DataTemplate>
+                                    </Grid>
 
-                        </Setter.Value>
+                                </DataTemplate>
 
-                    </Setter>
+                            </Setter.Value>
 
-                </Style>
+                        </Setter>
 
-            </syncfusion:SfTimePicker.SelectorStyle>        </syncfusion:SfTimePicker>   
+                    </Style>
+
+                </syncfusion:SfTimePicker.SelectorStyle>        </syncfusion:SfTimePicker>   
+
+</Page>
 
 {% endhighlight %}
 
@@ -338,7 +368,7 @@ The MeridiemCellTemplate property is used to decorate the meridiem cell selectio
 
 
 
-## Setting Incremental Values
+## Setting Incremental values
 
 To set minute and second values in the SfTimeSelector with incremental values, use the MinuteInterval and SecondsInterval properties respectively.
 
@@ -354,8 +384,13 @@ The SecondsInterval property is used to set the interval for second values in th
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<syncfusion:SfTimeSelector FormatString="hh:mm:ss tt" MinuteInterval="2" SecondsInterval="10"/>
+    <syncfusion:SfTimeSelector FormatString="hh:mm:ss tt" MinuteInterval="2" SecondsInterval="10"/>
+
+</Page>
 
 {% endhighlight %}
 
@@ -364,7 +399,7 @@ The SecondsInterval property is used to set the interval for second values in th
 {% tabs %}
 
 {% highlight c# %}
-
+using Syncfusion.UI.Xaml.Controls.Input;
 SfTimeSelector timeSelector = new SfTimeSelector();
 
 timeSelector.FormatString = "hh:mm:ss tt";
@@ -376,6 +411,8 @@ timeSelector.SecondsInterval = 10;
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 Dim timeSelector As New SfTimeSelector()
 

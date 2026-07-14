@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Footer in UWP TimePicker control | Syncfusion®
-description: Learn here all about Footer support in Syncfusion® UWP TimePicker (SfTimePicker) control and more.
+description: Learn here all about Footer support in Syncfusion® UWP TimePicker (SfTimePicker) control and more features.
 platform: uwp
 control: SfTimePicker
 documentation: ug
@@ -25,23 +25,29 @@ The following code sample shows how to hide the Done button:
 
 
 
-<syncfusion:SfTimePicker VerticalAlignment="Center"
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-                               HorizontalAlignment="Center"
+    <syncfusion:SfTimePicker VerticalAlignment="Center"
 
-                               Width="200">
+                                   HorizontalAlignment="Center"
 
-            <syncfusion:SfTimePicker.SelectorStyle>
+                                   Width="200">
 
-                <Style TargetType="syncfusion:SfTimeSelector">
+                <syncfusion:SfTimePicker.SelectorStyle>
 
-                    <Setter Property="ShowDoneButton" Value="false"/>
+                    <Style TargetType="syncfusion:SfTimeSelector">
 
-                </Style>
+                        <Setter Property="ShowDoneButton" Value="false"/>
 
-            </syncfusion:SfTimePicker.SelectorStyle>        
- 
- </syncfusion:SfTimePicker>
+                    </Style>
+
+                </syncfusion:SfTimePicker.SelectorStyle>         
+     
+     </syncfusion:SfTimePicker>
+
+</Page>
 
 {% endhighlight %}
 
@@ -61,23 +67,29 @@ The following code sample shows how to hide the Cancel button:
 
 
 
-<syncfusion:SfTimePicker VerticalAlignment="Center"
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-                               HorizontalAlignment="Center"
+    <syncfusion:SfTimePicker VerticalAlignment="Center"
 
-                               Width="200">
+                                   HorizontalAlignment="Center"
 
-            <syncfusion:SfTimePicker.SelectorStyle>
+                                   Width="200">
 
-                <Style TargetType="syncfusion:SfTimeSelector">
+                <syncfusion:SfTimePicker.SelectorStyle>
 
-<Setter Property="ShowCancelButton" Value="false"/>
+                    <Style TargetType="syncfusion:SfTimeSelector">
 
-                </Style>
+    <Setter Property="ShowCancelButton" Value="false"/>
 
-            </syncfusion:SfTimePicker.SelectorStyle>       
-            
-</syncfusion:SfTimePicker>
+                    </Style>
+
+                </syncfusion:SfTimePicker.SelectorStyle>       
+                
+    </syncfusion:SfTimePicker>
+
+</Page>
 
 {% endhighlight %}
 

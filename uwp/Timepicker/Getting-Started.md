@@ -60,7 +60,13 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% highlight XAML %}
 
- <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="50" />
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfTimePicker x:Name="timePicker" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Height="50" />
+
+</Page>
 
 {% endhighlight %}
 
@@ -84,6 +90,8 @@ In order to add the [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 SfTimePicker timePicker1 = new SfTimePicker()
 {
     Height = 50,
@@ -95,6 +103,8 @@ SfTimePicker timePicker1 = new SfTimePicker()
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 Dim timePicker1 As SfTimePicker = New SfTimePicker() With {
     .Height = 50,
@@ -110,7 +120,7 @@ Dim timePicker1 As SfTimePicker = New SfTimePicker() With {
 
 ![Adding control via XAML or code](GettingStarted_images/GettingStarted_img2.png)
 
-## Customizing the time format
+## Customize the time format
 
 The format of time in [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) can be customized by using the [FormatString](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_FormatString) property.
 
@@ -118,18 +128,28 @@ The format of time in [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusi
 
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker Height="30" Width="200" 
-                         HorizontalAlignment="Center" VerticalAlignment="Center"
-                         FormatString="HH:mm:ss" />
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfTimePicker Height="30" Width="200" 
+                             HorizontalAlignment="Center" VerticalAlignment="Center"
+                             FormatString="HH:mm:ss" />
+
+</Page>
 
 {% endhighlight %}
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 timePicker1.FormatString = "HH:mm:ss";
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 timePicker1.FormatString = "HH:mm:ss"
 
@@ -147,14 +167,20 @@ You can customize the [SfTimeSelector](https://help.syncfusion.com/cr/uwp/Syncfu
 
 {% highlight XAML %}
 
-<syncfusion:SfTimePicker Height="30" Width="200" 
-                         HorizontalAlignment="Center" VerticalAlignment="Center">
-    <syncfusion:SfTimePicker.SelectorStyle>
-        <Style TargetType="syncfusion:SfTimeSelector">
-            <Setter Property="Header" Value="Set your alarm" />
-        </Style>
-    </syncfusion:SfTimePicker.SelectorStyle>
-</syncfusion:SfTimePicker>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfTimePicker Height="30" Width="200" 
+                             HorizontalAlignment="Center" VerticalAlignment="Center">
+        <syncfusion:SfTimePicker.SelectorStyle>
+            <Style TargetType="syncfusion:SfTimeSelector">
+                <Setter Property="Header" Value="Set your alarm" />
+            </Style>
+        </syncfusion:SfTimePicker.SelectorStyle>
+    </syncfusion:SfTimePicker>
+
+</Page>
 
 {% endhighlight %}
 
