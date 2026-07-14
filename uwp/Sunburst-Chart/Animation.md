@@ -18,8 +18,7 @@ Sunburst chart allows you to animate the chart segments. You can enable animatio
 {% highlight xaml %}
 
  <sunburst:SfSunburstChart EnableAnimation="True" 
-                          AnimationDuration="5000">
-
+                           AnimationDuration="5000">
  </sunburst:SfSunburstChart>
 
 {% endhighlight %}
@@ -27,7 +26,6 @@ Sunburst chart allows you to animate the chart segments. You can enable animatio
 {% highlight c# %}
 
 sunburstChart.EnableAnimation = true;
-
 sunburstChart.AnimationDuration = 5000;
 
 {% endhighlight %}
@@ -50,10 +48,9 @@ The following example shows how to enable the FadeIn animation.
 
 {% highlight xaml %}
 
-  <sunburst:SfSunburstChart EnableAnimation="True"                                
-                            AnimationType="FadeIn">
-                            
-  </sunburst:SfSunburstChart>
+<sunburst:SfSunburstChart EnableAnimation="True"                                
+                          AnimationType="FadeIn">                   
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
@@ -76,10 +73,9 @@ The following example shows how to enable the Rotation animation.
 
 {% highlight xaml %}
 
-  <sunburst:SfSunburstChart EnableAnimation="True"                                
-                            AnimationType="Rotation">
-
-  </sunburst:SfSunburstChart>
+<sunburst:SfSunburstChart EnableAnimation="True"                                
+                          AnimationType="Rotation">
+</sunburst:SfSunburstChart>
 
 {% endhighlight %}
 
@@ -93,4 +89,3 @@ sunburstChart.AnimationType = AnimationType.Rotation;
 {% endtabs %}
 
 ![Animation_img2](Animation_images/Animation_img2.gif)
-

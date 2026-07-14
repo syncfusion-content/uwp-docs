@@ -300,103 +300,107 @@ Marketing
 Now, let us define a data model that represents the above data in sunburst chart.
 
 {% highlight C# %}
-    public class Model
-    {
-        public string Category { get; set; }
-        public string Country { get; set; }
-        public string JobDescription { get; set; }
-        public string JobGroup { get; set; }
-        public string JobRole { get; set; }
-        public double EmployeesCount { get; set; }
-    }
+
+public class Model
+{
+    public string Category { get; set; }
+    public string Country { get; set; }
+    public string JobDescription { get; set; }
+    public string JobGroup { get; set; }
+    public string JobRole { get; set; }
+    public double EmployeesCount { get; set; }
+}
+
 {% endhighlight %}
 
 Next, create a view model class and initialize a list of Model objects as shown below,
 
 {% highlight C# %}
-     public class ViewModel
-     {
-        public ObservableCollection<Model> Data { get; set; }
-        public ViewModel()
+
+public class ViewModel
+{
+    public ObservableCollection<Model> Data { get; set; }
+    public ViewModel()
+    {
+        Data = new ObservableCollection<Model>
         {
-            Data = new ObservableCollection<Model>
+            new Model
             {
-                new Model
-                {
-                    Country = "America", JobDescription = "Sales",
-                    EmployeesCount = 70
-                },
-                new Model
-                {
-                    Country = "America", JobDescription = "Technical",
-                    JobGroup = "Testers", EmployeesCount = 35
-                },
-                new Model
-                {
-                    Country = "America", JobDescription = "Technical",
-                    JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 105
-                },
-                new Model
-                {
-                    Country = "America", JobDescription = "Technical",
-                    JobGroup = "Developers", JobRole = "Web", EmployeesCount = 40
-                },
-                new Model
-                {
-                    Country = "America", JobDescription = "Management",
-                    EmployeesCount = 40
-                },
-                new Model
-                {
-                    Country = "America", JobDescription = "Accounts",
-                    EmployeesCount = 60
-                },
-                new Model
-                {
-                    Country = "India", JobDescription = "Technical",
-                    JobGroup = "Testers", EmployeesCount = 25
-                },
-                new Model
-                {
-                    Country = "India", JobDescription = "Technical", JobGroup = "Developers",
-                    JobRole = "Windows", EmployeesCount = 155
-                },
-                new Model
-                {
-                    Country = "India", JobDescription = "Technical", JobGroup = "Developers",
-                    JobRole = "Web", EmployeesCount = 60
-                },
-                new Model
-                {
-                    Country = "Germany", JobDescription = "Sales", JobGroup = "Executive",
-                    EmployeesCount = 30
-                },
-                new Model
-                {
-                    Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst",
-                    EmployeesCount = 40
-                },
-                new Model
-                {
-                    Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
-                    JobRole = "Windows", EmployeesCount = 100
-                },
-                new Model
-                {
-                    Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
-                    JobRole = "Web", EmployeesCount = 30
-                },
-                new Model
-                {
-                    Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60
-                },
-                new Model
-                {
-                    Country = "UK", JobDescription = "Marketing", EmployeesCount = 40
-                }
-            };
-        }
+                Country = "America", JobDescription = "Sales",
+                EmployeesCount = 70
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Technical",
+                JobGroup = "Testers", EmployeesCount = 35
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Technical",
+                JobGroup = "Developers", JobRole = "Windows", EmployeesCount = 105
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Technical",
+                JobGroup = "Developers", JobRole = "Web", EmployeesCount = 40
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Management",
+                EmployeesCount = 40
+            },
+            new Model
+            {
+                Country = "America", JobDescription = "Accounts",
+                EmployeesCount = 60
+            },
+            new Model
+            {
+                Country = "India", JobDescription = "Technical",
+                JobGroup = "Testers", EmployeesCount = 25
+            },
+            new Model
+            {
+                Country = "India", JobDescription = "Technical", JobGroup = "Developers",
+                JobRole = "Windows", EmployeesCount = 155
+            },
+            new Model
+            {
+                Country = "India", JobDescription = "Technical", JobGroup = "Developers",
+                JobRole = "Web", EmployeesCount = 60
+            },
+            new Model
+            {
+                Country = "Germany", JobDescription = "Sales", JobGroup = "Executive",
+                EmployeesCount = 30
+            },
+            new Model
+            {
+                Country = "Germany", JobDescription = "Sales", JobGroup = "Analyst",
+                EmployeesCount = 40
+            },
+            new Model
+            {
+                Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
+                JobRole = "Windows", EmployeesCount = 100
+            },
+            new Model
+            {
+                Country = "UK", JobDescription = "Technical", JobGroup = "Developers",
+                JobRole = "Web", EmployeesCount = 30
+            },
+            new Model
+            {
+                Country = "UK", JobDescription = "HR Executives", EmployeesCount = 60
+            },
+            new Model
+            {
+                Country = "UK", JobDescription = "Marketing", EmployeesCount = 40
+            }
+        };
     }
+}
+
 {% endhighlight %}
 
 Set the ViewModel instance as the DataContext of your window; this is done to bind properties of ViewModel to Sunburst chart.
@@ -406,6 +410,7 @@ N> Add namespace of ViewModel class in your XAML page if you prefer to set DataC
 {% tabs %}
 
 {% highlight xaml %}
+
 <Page
     x:Class="SunburstTest.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -418,15 +423,18 @@ N> Add namespace of ViewModel class in your XAML page if you prefer to set DataC
         <local:ViewModel/>
     </Page.DataContext>
 </Page>
+
 {% endhighlight %}
 
 {% highlight C# %}
+
 this.DataContext = new ViewModel();
+
 {% endhighlight %}
     
 {% endtabs %}
 
-## Populate Sunburst chart with data
+## Populate sunburst chart with data
 
 Now, bind the Data property of the above ViewModel to the `ItemsSource` property. 
 Add `SunburstHierarchicalLevel` to `Levels` property. Each hierarchy level is formed based on the property specified in `GroupMemberPath` property, and each arc segment size is calculated using `ValueMemberPath`.
@@ -434,17 +442,20 @@ Add `SunburstHierarchicalLevel` to `Levels` property. Each hierarchy level is fo
 {% tabs %}
 
 {% highlight xaml %}
+
 <sunburst:SfSunburstChart ItemsSource="{Binding Data}" ValueMemberPath="EmployeesCount">
     <sunburst:SfSunburstChart.Levels>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Country" />
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobDescription" />
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobGroup" />
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="JobRole" />
     </sunburst:SfSunburstChart.Levels>
 </sunburst:SfSunburstChart>
+
 {% endhighlight %}
 
 {% highlight C# %}
+
 SfSunburstChart sunburst = new SfSunburstChart();
 sunburst.ValueMemberPath = "EmployeesCount";
 sunburst.SetBinding(SfSunburstChart.ItemsSourceProperty, "Data");
@@ -452,6 +463,7 @@ sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "Country"
 sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobDescription"});
 sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobGroup"});
 sunburst.Levels.Add(new SunburstHierarchicalLevel() {GroupMemberPath = "JobRole"});
+
 {% endhighlight %}
     
 {% endtabs %}
@@ -463,12 +475,16 @@ You can add header to Sunburst chart to provide quick information to the user ab
 {% tabs %}
 
 {% highlight xaml %}
+
 <sunburst:SfSunburstChart Header="Employees Count" FontSize="22" />
+
 {% endhighlight %}
 
 {% highlight C# %}
+
 sunburst.Header = "Employees Count";
 sunburst.FontSize = 22d;
+
 {% endhighlight %}
     
 {% endtabs %}
@@ -480,14 +496,18 @@ You can enable legend using `Legend` property as shown below,
 {% tabs %}
 
 {% highlight xaml %}
+
 <sunburst:SfSunburstChart.Legend>
     <sunburst:SunburstLegend DockPosition="Left"/>
 </sunburst:SfSunburstChart.Legend>
+
 {% endhighlight %}
 
 {% highlight C# %}
+
 SunburstLegend legend = new SunburstLegend();
 legend.DockPosition= ChartDock.Left;
+
 {% endhighlight %}
     
 {% endtabs %}
@@ -499,14 +519,18 @@ You can add data labels to improve the readability of the Sunburst chart. This c
 {% tabs %}
 
 {% highlight xaml %}
+
 <sunburst:SfSunburstChart.DataLabelInfo>
     <sunburst:SunburstDataLabelInfo />
 </sunburst:SfSunburstChart.DataLabelInfo>
+
 {% endhighlight %}
 
 {% highlight C# %}
+
 SunburstDataLabelInfo dataLabel= new SunburstDataLabelInfo();
 sunburst.DataLabelInfo = dataLabel;
+
 {% endhighlight %}
     
 {% endtabs %}

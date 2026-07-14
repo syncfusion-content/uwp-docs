@@ -17,11 +17,9 @@ Tooltip allows you to display any information over a sunburst segment. It appear
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.Behaviors>
-             
-           <sunburst:SunburstToolTipBehavior />
-                
- </sunburst:SfSunburstChart.Behaviors>
+<sunburst:SfSunburstChart.Behaviors>       
+    <sunburst:SunburstToolTipBehavior />    
+</sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
@@ -35,11 +33,9 @@ chart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-
 ![Tooltip_img1](Tooltip_images/Tooltip_img1.jpeg)
 
-
-## Aligning the ToolTip
+## Aligning the tooltip
 
 The tooltip position can be aligned with respect to the cursor position by using [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstToolTipBehavior_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstToolTipBehavior_VerticalAlignment) properties.
 
@@ -52,9 +48,7 @@ The following code shows how to position the tooltip to the right of the cursor.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-     <sunburst:SunburstToolTipBehavior HorizontalAlignment="Right"/>
-
+    <sunburst:SunburstToolTipBehavior HorizontalAlignment="Right" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -71,7 +65,6 @@ sunburstChart.Behaviors.Add(tooltip);
 
 ![Tooltip_img2](Tooltip_images/Tooltip_img2.jpeg)
 
-
 ### VerticalAlignment
 
 The following code shows how to position the tooltip to the bottom of the cursor.
@@ -79,15 +72,12 @@ The following code shows how to position the tooltip to the bottom of the cursor
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-     <sunburst:SunburstToolTipBehavior VerticalAlignment="Bottom"  />
-
+    <sunburst:SunburstToolTipBehavior VerticalAlignment="Bottom" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 ![Tooltip_img3](Tooltip_images/Tooltip_img3.jpeg)
-
 
 ## VerticalOffset and HorizontalOffset
 
@@ -98,10 +88,8 @@ The tooltip position can be customized to a custom position from the cursor usin
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-       <sunburst:SunburstToolTipBehavior HorizontalOffset="50"
-                                         VerticalOffset="50"/>
-
+    <sunburst:SunburstToolTipBehavior HorizontalOffset="50"
+                                      VerticalOffset="50" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -117,9 +105,7 @@ sunburstChart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-
 ![Tooltip_img4](Tooltip_images/Tooltip_img4.jpeg)
-
 
 ### TooltipDuration
 
@@ -130,9 +116,7 @@ You can set display duration for tooltip by using the [`ShowDuration`](https://h
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-            <sunburst:SunburstToolTipBehavior ShowDuration="6000"/>
-
+    <sunburst:SunburstToolTipBehavior ShowDuration="6000" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -147,7 +131,7 @@ chart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-## Show Delay
+## Show delay
 
 We can set the initial display delay for Tooltip by using [`InitialShowDelay`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstToolTipBehavior_InitialShowDelay) property as like in below code. 
 
@@ -156,9 +140,7 @@ We can set the initial display delay for Tooltip by using [`InitialShowDelay`](h
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-            <sunburst:SunburstToolTipBehavior InitialShowDelay="500"/>
-                
+    <sunburst:SunburstToolTipBehavior InitialShowDelay="500" />          
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -173,7 +155,7 @@ sunburstChart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-## Animation for Tooltip
+## Animation for tooltip
 
 You can enable the translate animation for Tooltip by using [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstToolTipBehavior_EnableAnimation) and [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstToolTipBehavior_AnimationDuration) property.
 
@@ -182,10 +164,8 @@ You can enable the translate animation for Tooltip by using [`EnableAnimation`](
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-     <sunburst:SunburstToolTipBehavior EnableAnimation="True" 
-                                       AnimationDuration="5000"/>
-
+    <sunburst:SunburstToolTipBehavior EnableAnimation="True" 
+                                      AnimationDuration="5000" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -201,7 +181,7 @@ sunburstChart.Behaviors.Add(tooltip);
 
 {% endtabs %}
 
-## Customize the Tooltip
+## Customize the tooltip
 
 You can customize the default appearance of the tooltip by applying the [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstToolTipBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstToolTipBehavior_ToolTipTemplate) property.
 
@@ -233,5 +213,3 @@ You can customize the default appearance of the tooltip by applying the [`Toolti
 {% endhighlight %}
 
 ![Tooltip_img5](Tooltip_images/Tooltip_img5.jpeg)
-
-

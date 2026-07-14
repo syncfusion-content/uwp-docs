@@ -20,9 +20,7 @@ The following code shows how to enable the selection behavior.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
    <sunburst:SunburstSelectionBehavior/>
-
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -38,7 +36,6 @@ chart.Behaviors.Add(selection);
 
 ![Selection_img1](Selection_images/Selection_img1.jpeg)
 
-
 ## SelectionDisplayMode
 
 You can customize the selected segment appearance by using brush or opacity. You can choose between color or opacity using the [`SelectionDisplayMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionDisplayMode) property in the selection behavior 
@@ -53,11 +50,8 @@ The following code shows how to set the display mode using brush.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionBrush="Black"
-                                                    SelectionDisplayMode="HighlightByColor"/>
-            
+   <sunburst:SunburstSelectionBehavior EnableSelection="True" SelectionBrush="Black"
+                                       SelectionDisplayMode="HighlightByColor"/>
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -76,7 +70,6 @@ chart.Behaviors.Add(selection);
 
 ![Selection_img2](Selection_images/Selection_img2.jpeg)
 
-
 N> The default value of SelectionDisplayMode is HighlightByOpacity.
 
 ## SelectionMode
@@ -91,10 +84,9 @@ Sunburst chart provides support to select or highlight the segment by clicking o
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.Behaviors>
-
-     <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                         SelectionMode="MouseClick"/>
+<sunburst:SfSunburstChart.Behaviors>
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionMode="MouseClick"/>
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -127,10 +119,9 @@ The following code shows how to set the selection type as child.
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionType="Child"  />
+<sunburst:SfSunburstChart.Behaviors>
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionType="Child" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -148,7 +139,6 @@ chart.Behaviors.Add(selection);
 
 ![Selection_img3](Selection_images/Selection_img3.jpeg)
 
-
 ### Group
 
 The following code shows, how to set the selection type as group.
@@ -156,15 +146,13 @@ The following code shows, how to set the selection type as group.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionType="Group"  />
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionType="Group"  />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 ![Selection_img4](Selection_images/Selection_img4.jpeg)
-
 
 ### Parent
 
@@ -173,9 +161,8 @@ The following code shows, how to set the selection type as parent.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionType="Parent"  />
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionType="Parent" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -189,16 +176,15 @@ The following code shows, how to set the selection type as single.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionType="Single"  />
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionType="Single"  />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 ![Selection_img6](Selection_images/Selection_img6.jpeg)
 
-## Selection Cursor
+## Selection cursor
 
 The [`SelectionCursor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionCursor) property allows you to customize the cursor when the mouse is hovered over the segment. 
 
@@ -209,9 +195,8 @@ The following code shows how to set the selection cursor as hand.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-              <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                  SelectionCursor="Hand" />
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionCursor="Hand" />
 
 </sunburst:SfSunburstChart.Behaviors>
 
@@ -229,5 +214,3 @@ chart.Behaviors.Add(selection);
 {% endtabs %}
 
 ![Selection_img7](Selection_images/Selection_img7.jpeg)
-
-
