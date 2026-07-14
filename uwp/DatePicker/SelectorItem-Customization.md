@@ -15,15 +15,15 @@ The item size in the SfDateSelector control can be changed by setting the Select
 
 
 
-## SelectorItemSpacing 
+## SelectorItemSpacing
 
-The SelectorItemSpacing property provides the space between the items in SfDateSelector.
+The SelectorItemSpacing property provides the space between the items in the SfDateSelector.
 
 
 
 ## SelectorItemCount
 
-The SelectorItemCount property is used to specify the number of items to be used in SfDateSelector.
+The SelectorItemCount property is used to specify the number of items to be displayed in the SfDateSelector.
 
 The following code sample shows the usage of the SelectorItemWidth, SelectorItemHeight, SelectorItemSpacing, and SelectorItemCount properties. 
 
@@ -31,23 +31,27 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 
 {% highlight xaml %}
 
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+
+                    <syncfusion:SfDatePicker VerticalAlignment="Center"
+
+                   Width="200" x:Name="datePicker" SelectorItemWidth="100"
+
+                    SelectorItemHeight="100"
+
+                    SelectorItemSpacing="50"
+
+                    SelectorItemCount="4"/>
 
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-            <syncfusion:SfDatePicker VerticalAlignment="Center"
+    </Grid>
 
-               Width="200" x:Name="datePicker" SelectorItemWidth="100"
-
-                SelectorItemHeight="100"
-
-                SelectorItemSpacing="50"
-
-                SelectorItemCount="4"/>
-
-
-
-</Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -57,6 +61,8 @@ The following code sample shows the usage of the SelectorItemWidth, SelectorItem
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 datePicker.SelectorItemWidth = 100;
 datePicker.SelectorItemHeight = 100;
 datePicker.SelectorItemSpacing = 50;
@@ -65,6 +71,8 @@ datePicker.SelectorItemCount = 4;
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
  datePicker.SelectorItemWidth = 100
  datePicker.SelectorItemHeight = 100
