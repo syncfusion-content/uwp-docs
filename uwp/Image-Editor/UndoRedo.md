@@ -7,27 +7,31 @@ control: SfImageEditor
 documentation: ug
 ---
 
+The following namespace is required for performing undo and redo operations in the SfImageEditor control:
+
+* `Syncfusion.UI.Xaml.ImageEditor`
+
 # Undo and Redo in UWP Image Editor (SfImageEditor)
 
-One of the important features of the image editor control is to perform `Undo` and `Redo` operations of adding shapes, text and drawing paths. The undo and redo operations can be done in the following two ways:
+One of the important features of the image editor control is to perform `Undo` and `Redo` operations for adding shapes, text, and drawing paths. You can perform the undo and redo operations in the following two ways:
 
-* From Toolbar
-* Using Code
+* From the toolbar
+* Using code
 
-N> Undo and Redo will not be applied for cropping and transformations.
+N> Undo and Redo will not be applied to cropping and transformations.
 
 ## Undo
 
-### From Toolbar
+### From the toolbar
 
-The top toolbar in the Image Editor control contains the undo and redo buttons in between the `Save` and `Reset` buttons. The Undo and Redo buttons will be disabled by default. If we add a shape or text or draw path, the `undo` button will be enabled. Clicking the Undo button will clear the last performed operation. Undo can be performed for the following operations:
+The top toolbar in the SfImageEditor control contains the undo and redo buttons between the `Save` and `Reset` buttons. The Undo and Redo buttons will be disabled by default. When you add a shape, text, or draw a path, the `Undo` button will be enabled. Clicking the Undo button will clear the last performed operation. Undo can be performed for the following operations:
 
-* Add/Delete shapes, text
-* Change Positions
+* Add/Delete shapes and text
+* Change positions
 * Color/Fill changes
-* Path Drawings
+* Path drawings
 
-### Using Code
+### Using code
 
 Programmatically, the `Undo` method can be used in the SfImageEditor control to revert the changes.
 
@@ -41,13 +45,13 @@ Programmatically, the `Undo` method can be used in the SfImageEditor control to 
 
 ## Redo
 
-### From Toolbar
+### From the toolbar
 
-The Redo button will be disabled by default. The redo button will be enabled only when an undo operation is performed. Clicking the `Redo` button negates the undo operations.
+The Redo button will be disabled by default. The Redo button will be enabled only when an undo operation is performed. Clicking the `Redo` button reverses the undo operations.
 
-### Using Code
+### Using code
 
-The `Redo` method is used to redo the changes reverted in the undo operation.
+The `Redo` method is used to redo the changes reverted by the undo operation.
 
 
 {% highlight C# %}
