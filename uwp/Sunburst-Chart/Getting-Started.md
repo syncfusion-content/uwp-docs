@@ -34,7 +34,7 @@ Now the Syncfusion.SfSunburstChart.UWP reference is added to the application ref
 
 ## Initialize view model
 
-In this section, the data in the following table is used for demonstration,
+In this section, the data in the following table is used for demonstration
 
 <table>
 <tr>
