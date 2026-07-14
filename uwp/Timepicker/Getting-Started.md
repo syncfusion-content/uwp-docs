@@ -120,7 +120,7 @@ Dim timePicker1 As SfTimePicker = New SfTimePicker() With {
 
 ![Adding control via XAML or code](GettingStarted_images/GettingStarted_img2.png)
 
-## Customize the time format
+## Customizing the time format
 
 The format of time in [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) can be customized by using the [FormatString](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_FormatString) property.
 
@@ -159,7 +159,7 @@ timePicker1.FormatString = "HH:mm:ss"
 
 ![FormatString in SfTimePicker](GettingStarted_images/GettingStarted_img3.png)
 
-## Customizing the SfTimeSelector Header
+## Customize the SfTimeSelector Header
 
 You can customize the [SfTimeSelector](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimeSelector.html) in the [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control using the [SelectorStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html#Syncfusion_UI_Xaml_Controls_Input_SfTimePicker_SelectorStyle) property.
 
