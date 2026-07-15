@@ -9,7 +9,7 @@ documentation: ug
 
 # Floating Window in UWP Docking (SfDockingManager)
 
-Floating window is one of the state in the `SfDockingManager`. To make children of the `SfDockingManager` as Float, set the `SfDockingManager` child’s `DockState` values as Float.
+Floating window is one of the states in the `SfDockingManager`. To make children of the `SfDockingManager` as Float, set the `SfDockingManager` child’s `DockState` values as Float.
 
 {% tabs %}
 
@@ -31,7 +31,7 @@ Floating window is one of the state in the `SfDockingManager`. To make children 
 
 ## Enabling or Disabling the Float functionality
 
-The `CanFloat` AttachedProperty helps to enable or disable the floating functionality by setting its value as true or false respectively. By default, `CanFloat` value is true. This functionality can be disabled by setting its value as false. While setting CanFloat property as false, it disables the dragging functionality of dock window. So, changing the window position by Mouse interaction will be restricted. Still DockWindow position can be changed through code behind.
+The `CanFloat` attached property helps to enable or disable the floating functionality by setting its value as true or false respectively. By default, the `CanFloat` value is true. This functionality can be disabled by setting its value as false. When setting the `CanFloat` property as false, it disables the dragging functionality of the dock window, so changing the window position via mouse interaction will be restricted. The dock window position can still be changed through code-behind.
 
 {% tabs %}
 
@@ -56,7 +56,7 @@ The `CanFloat` AttachedProperty helps to enable or disable the floating function
 
 ### Change Dock Window position through code behind
 
-By using `SetSideInDockMode` property, we can set the side and `SetTargetNameInDockedMode` property for changing the target of desired dock window.
+By using the `SetSideInDockedMode` method, we can set the side and `SetTargetNameInDockedMode` method for changing the target of desired dock window.
 
 {% tabs %}
 
@@ -72,9 +72,9 @@ SfDockingManager.SetSideInDockedMode(ErrorList, Dock.Top);
 
 {% endtabs %}
 
-## Positioning on Desire Location
+## Positioning on Desired Location
 
-The `FloatWindow` can be placed at any desired location. To position the `FloatWindow` at the desired location with the required rectangle bounds, invoke `SetFloatingWindowRect` method of the `SfDockingManager`.
+The `FloatWindow` can be placed at any desired location. To position the `FloatWindow` at the desired location with the required rectangle bounds, invoke the `SetFloatingWindowRect` method of the `SfDockingManager`.
 
 {% tabs %}
 

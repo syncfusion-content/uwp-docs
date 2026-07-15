@@ -56,6 +56,8 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
+I> Starting with Syncfusion version 16.2 (2018 Vol 2), you must register a Syncfusion license key in your application before using `SfDockingManager`. Refer to the [licensing help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to generate and register the license key.
+
 ## Add Children to SfDockingManager
 
 `SfDockingManager` can accept any control as its children. Here five ContentControls have been added as the children of the `SfDockingManager`.
@@ -87,7 +89,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 ## Set Header for the Children
 
-`SfDockingManger` provides an AttachedProperty `Header`, that helps to set the header for a child window. Set the Header Property value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values "Toolbox", “Properties”, ”Output” and ”Start Page”.
+`SfDockingManager` provides an attached property `Header`, that helps to set the header for a child window. Set the Header Property value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values "ToolBox", "Properties", "Output" and "Start Page".
 
 {% tabs %}
 
@@ -116,7 +118,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 ## Set State for the Children
 
-`SfDockingManager` provides an AttachedProperty `DockState`, that helps to set the State of child windows. Since Dock is the default value of DockState, initially all the children will stay as Docking Window.
+`SfDockingManager` provides an attached property `DockState`, that helps to set the State of child windows. Since Dock is the default value of DockState, initially all the children will stay as Docking Window.
 
 To Auto hide the “ToolBox” window, set its `DockState` property as `AutoHidden`. Repeat the same procedure with the `DockState` value as Float and Document for “Properties” and “Start Page” windows respectively to make them as Floating Window and Document Window.
 
@@ -151,7 +153,7 @@ To Auto hide the “ToolBox” window, set its `DockState` property as `AutoHidd
 
 Set the `SideInDockedMode` value as Right for “Solution Explorer” window to dock it on the right side.
 
-The `SideInDockedMode` property’s Tabbed option is used to tab a window on another window. The tabbing windows need to be aware of the target window’s name. Set “Output” window’s `TargetNameInDockedMode` as “SolutionExplorer” to tab it on the “SolutionExplorer” window.
+The `SideInDockedMode` property’s Tabbed option is used to place a window in a tab group with another window. Tabbing a window requires the target window’s name. Set “Output” window’s `TargetNameInDockedMode` as “SolutionExplorer” to tab it on the “SolutionExplorer” window.
 
 {% tabs %}
 
