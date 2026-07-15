@@ -13,17 +13,15 @@ The Barcode control helps render barcodes in UWP desktop applications. The contr
 
 ![UWP One Dimensional Barcode](Overview_images/uwp-one-dimensional-barcode.png)
 
-Barcode control rendering 1D bar code
+Barcode control rendering 1D barcode
 {:.caption}
-
 
 ![UWP Two Dimensional Barcode](Overview_images/uwp-two-dimensional-barcode.png)
 
-
-Barcode control rendering 2D bar code
+Barcode control rendering 2D barcode
 {:.caption}
 
-## Structure of the Control
+## Structure of the control
 
 ![UWP Barcode Structure](Overview_images/uwp-barcode-structure.png)
 
