@@ -13,9 +13,9 @@ documentation: ug
 
 `HeatMap` is available in the following assembly and namespace.
 
-`Assembly`: Syncfusion.SfHeatMap.UWP
+**Assembly:** Syncfusion.SfHeatMap.UWP
 
-`Namespace`: Syncfusion.UI.Xaml.HeatMap
+**Namespace:** Syncfusion.UI.Xaml.HeatMap
 
 ## Adding assembly reference
 

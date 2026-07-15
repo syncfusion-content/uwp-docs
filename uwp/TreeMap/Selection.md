@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in UWP TreeMap (SfTreeMap)
 
-While selecting a leaf node, you can highlight it by setting `HighlightOnSelection` property of SfTreeMap to “True”. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap.
+While selecting a leaf node, you can highlight it by setting [`HighlightOnSelection`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_HighlightOnSelection) property of SfTreeMap to “True”. The border of highlight on selection can be customized by HighlightBorderBrush and HighlightBorderThickness properties of SfTreeMap.
 
 Code Sample:
 
@@ -52,7 +52,7 @@ Code Sample:
 
 ## Programmatic selection
 
-The `SelectedItems` property allows you select the shapes programmatically without tapping or touching them.
+The [`SelectedItems`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_SelectedItem) property allows you select the shapes programmatically without tapping or touching them.
 
 To select a shape and deselect it from the same collection programmatically, just add the shape that is to be selected to the selected items collection.
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # TreeMap Legend in UWP TreeMap (SfTreeMap)
 
-TreeMap legend is used to easily demonstrate about the color value of leaf nodes. But this legend could be appropriate only for the treemap having leaf nodes colored by using `RangeBrushColorMapping`. The labels of the legend item can be customized by specifying `LegendLabel` of RangeBrush mentioned in the Brushes of RangeBrushColorMapping.
+TreeMap legend is used to easily demonstrate about the color value of leaf nodes. But this legend could be appropriate only for the treemap having leaf nodes colored by using [`RangeBrushColorMapping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.RangeBrushColorMapping.html). The labels of the legend item can be customized by specifying [`LegendLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.RangeBrush.html#Syncfusion_UI_Xaml_TreeMap_RangeBrush_LegendLabel) of RangeBrush mentioned in the Brushes of RangeBrushColorMapping.
 
-The icon of legend item can be set by `LegendIconStyle` of TreeMapLegend. Custom legend icon can be set by assigning DataTemplate to `LegendIconTemplate` with LegendIconStyle as `Custom`.
+The icon of legend item can be set by [`LegendIconStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLegend.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLegend_LegendIconStyle) of TreeMapLegend. Custom legend icon can be set by assigning DataTemplate to [`LegendIconTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLegend.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLegend_LegendIconTemplate) with LegendIconStyle as `Custom`.
 
-The width and height of the legend icon can be modified by setting `LegendIconWidth` and `LegendIconHeight` of TreeMapLegend.
+The width and height of the legend icon can be modified by setting [`LegendIconWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLegend.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLegend_LegendIconWidth) and [`LegendIconHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLegend.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLegend_LegendIconHeight) of TreeMapLegend.
 
 The legend can be positioned to Left, Right, Top or Bottom of TreeMap with the help of LegendPosition property.
 

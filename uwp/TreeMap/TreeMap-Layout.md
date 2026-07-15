@@ -9,7 +9,7 @@ documentation: ug
 
 # TreeMap Layout in UWP TreeMap (SfTreeMap)
 
-The `ItemsLayoutMode` for SfTreeMap specifies the layout mode of the treemap items. This layout is applied for all the tree map levels. There are four different treemap layouts such as,
+The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLayoutMode.html) for SfTreeMap specifies the layout mode of the treemap items. This layout is applied for all the tree map levels. There are four different treemap layouts such as,
 
 ## Squarified layout
 

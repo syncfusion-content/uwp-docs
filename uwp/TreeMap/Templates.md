@@ -11,11 +11,11 @@ documentation: ug
 
 ## Headers
 
-To show headers in TreeMap, you can set the `HeaderHeight` property of TreeMapLevel. For customizing default Header appearance, you can specify the `HeaderTemplate`.
+To show headers in TreeMap, you can set the [`HeaderHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLevel_HeaderHeight) property of TreeMapLevel. For customizing default Header appearance, you can specify the [`HeaderTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLevel_HeaderTemplate).
 
 ### Headers with treemap flat collection:
 
-If `HeaderTemplate` is specified for TreeMapLevel, then the header can be bound by referring Header object to the data template.
+If [`HeaderTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLevel_HeaderTemplate) is specified for TreeMapLevel, then the header can be bound by referring Header object to the data template.
 
 Code Sample:
 
@@ -66,7 +66,7 @@ TreeMap with Headers
 
 ### Headers with treemap hierarchical collection:
 
-For TreeMap with Hierarchical Collection, `HeaderPath` must be specified. The header can be bound by referring Data.<FieldName> to the data template where FieldName refers to the field of object specified in the particular treemap level.
+For TreeMap with Hierarchical Collection, [`HeaderPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapHierarchicalLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapHierarchicalLevel_HeaderPath) must be specified. The header can be bound by referring Data.<FieldName> to the data template where FieldName refers to the field of object specified in the particular treemap level.
 
 Code Sample:
 
@@ -92,11 +92,11 @@ Code Sample:
 
 ## Labels
 
-To show labels in TreeMap, `ShowLabels` of TreeMapLevel should be enabled to True. For customizing default label appearance, you can specify `LabelTemplate`.
+To show labels in TreeMap, [`ShowLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLevel_ShowLabels) of TreeMapLevel should be enabled to True. For customizing default label appearance, you can specify [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLevel_LabelTemplate).
 
 ###  Labels with treemap flat collection:
 
-If `LabelTemplate` is specified for TreeMapLevel, then the label can be bound by referring Label object to the data template.
+If [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapLevel_LabelTemplate) is specified for TreeMapLevel, then the label can be bound by referring Label object to the data template.
 
 Code Sample:
 
@@ -140,7 +140,7 @@ TreeMap with Labels
 
 ### Labels with treemap hierarchical collection:
 
-TreeMap with Hierarchical Collection, `LabelPath` must be specified. The label can be bound by referring Data.FieldName to the data template where FieldName refers to the field of object specified in the particular treemap level.
+TreeMap with Hierarchical Collection, [`LabelPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapHierarchicalLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapHierarchicalLevel_LabelPath) must be specified. The label can be bound by referring Data.FieldName to the data template where FieldName refers to the field of object specified in the particular treemap level.
 
 Code Sample:
 
@@ -167,7 +167,7 @@ Code Sample:
 
 ## Templates in UWP TreeMap (SfTreeMap)
 
-`LeafLabelPath` of SfTreeMap is a path to a field on the source object, which serves as the "label" of the object.
+[`LeafLabelPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_LeafLabelPath) of SfTreeMap is a path to a field on the source object, which serves as the "label" of the object.
 
 Code Sample:
 
@@ -191,7 +191,7 @@ N> The specified field must be available in each and every sub class (object) de
 
 ## Templates in UWP treemap (SfTreeMap)
 
-You can customize leaf nodes by assigning data template to `LeafTemplate` of SfTreeMap. 
+You can customize leaf nodes by assigning data template to [`LeafTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_LeafTemplate) of SfTreeMap. 
 
 Code Sample:
 

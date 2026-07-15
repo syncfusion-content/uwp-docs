@@ -172,9 +172,9 @@ public partial class MainWindow : Window
 
 3.Sizing TreeMapItem by using WeightValuePath  
 
-The SfTreeMap generates treemap items based on the property `WeightValuePath` . It is a bindable property and it decides how to display the treemap items.
+The SfTreeMap generates treemap items based on the property [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) . It is a bindable property and it decides how to display the treemap items.
 
-TreeMap calculates the size of the object with the help of `WeightValuePath`. WeightValuePath value `Population` has been assigned from one of the above DataModel field.  
+TreeMap calculates the size of the object with the help of [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath). WeightValuePath value *Population* has been assigned from one of the above DataModel field.  
 
 {% highlight xaml %}
 

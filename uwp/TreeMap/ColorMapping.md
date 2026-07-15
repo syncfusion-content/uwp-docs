@@ -18,7 +18,7 @@ ColorMapping is categorized into four different types:
 
 ## ColorValuePath
 
-`ColorValuePath` of SfTreeMap is a path to a field on the source object, which serves as the "Color" of the object.
+[`ColorValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ColorValuePath) of SfTreeMap is a path to a field on the source object, which serves as the "Color" of the object.
 
 ### TreeMap ColorMapping
 

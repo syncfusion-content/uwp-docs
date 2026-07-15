@@ -11,7 +11,7 @@ documentation: ug
 
 The SfTreeMap is bound to an external data source to display the data. It supports data sources such as List, ObservableCollection, and so on. The ItemsSource property helps to bind the TreeMap with the collection of objects.
 
-In order to bind the data source of the SfTreeMap, set the `ItemsSource` property and to generate the treemap items, set `WeightValuePath` as shown below.
+In order to bind the data source of the SfTreeMap, set the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ItemsSource) property and to generate the treemap items, set [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) as shown below.
 
 If the data source implements the ICollectionChanged interface, then SfTreeMap will automatically refresh the view when an item is added, removed, or while the list is cleared. When you add or remove an item in an ObservableCollection, the SfTreeMap automatically refreshes the view, as the ObservableCollection implements the INotifyCollectionChanged. But when you do the same in a List, SfTreeMap will not refresh the view automatically.
 
@@ -19,11 +19,11 @@ If the data model implements the INotifyPropertyChanged interface, then the SfTr
 
 ## WeightValuePath
 
-`WeightValuePath` of SfTreeMap is a path to a field on the source object, which serves as the "weight" of the object.
+[`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) of SfTreeMap is a path to a field on the source object, which serves as the "weight" of the object.
 
-The SfTreeMap generates treemap items based on the property `WeightValuePath` . It is a bindable property and it decides how to display the treemap items.
+The SfTreeMap generates treemap items based on the property [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) . It is a bindable property and it decides how to display the treemap items.
 
-TreeMap calculates the size of the object with the help of `WeightValuePath`.
+TreeMap calculates the size of the object with the help of [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath).
 
 Code Sample:
 
@@ -42,9 +42,9 @@ N> The specified field must be available in each and every sub class (object) de
 
 ## ColorValuePath
 
-`ColorValuePath` of SfTreeMap is a path to a field on the source object, which serves as the "Color" of the object.
+[`ColorValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ColorValuePath) of SfTreeMap is a path to a field on the source object, which serves as the "Color" of the object.
 
-The SfTreeMap applies colors to the treemap nodes based on the property `ColorValuePath`. It is a bindable property and it decides how to color the treemap node.
+The SfTreeMap applies colors to the treemap nodes based on the property [`ColorValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ColorValuePath). It is a bindable property and it decides how to color the treemap node.
 
 Code Sample:
 

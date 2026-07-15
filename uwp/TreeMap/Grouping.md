@@ -20,7 +20,7 @@ TreeMapFlatLevel is used to define levels for flat data collection.
 
 ### GroupPath:
 
-You must specify the `GroupPath` for each and every flat level of TreeMap. It is a path to a field on the source object, which serves as the “Group” for the levels specified. Based upon the GroupPath, the data is grouped in the TreeMap. If GroupPath is not specified, then the items are not grouped, and it is shown in the order, in which they are specified in the ItemsSource.
+You must specify the [`GroupPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapFlatLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapFlatLevel_GroupPath) for each and every flat level of TreeMap. It is a path to a field on the source object, which serves as the “Group” for the levels specified. Based upon the GroupPath, the data is grouped in the TreeMap. If GroupPath is not specified, then the items are not grouped, and it is shown in the order, in which they are specified in the ItemsSource.
 
 Code Sample:
 
@@ -48,7 +48,7 @@ Code Sample:
 
 ### GroupGap:
 
-You can specify `GroupGap` for separating the items of every flat level and it is used to differentiate the levels mentioned for TreeMap.
+You can specify [`GroupGap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapFlatLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapFlatLevel_GroupGap) for separating the items of every flat level and it is used to differentiate the levels mentioned for TreeMap.
 
 Code Sample:
 
@@ -226,7 +226,7 @@ public class RegionSale : INotifyPropertyChanged
 
 ### ChildPath:
 
-You must specify ChildPath for each and every hierarchical level of TreeMap. It is a path to a field on the source object, which serves as the “Child” for the level specified. Based upon the ChildPath, the treemap contains child items.
+You must specify [`ChildPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapHierarchicalLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapHierarchicalLevel_ChildPath) for each and every hierarchical level of TreeMap. It is a path to a field on the source object, which serves as the “Child” for the level specified. Based upon the [`ChildPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapHierarchicalLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapHierarchicalLevel_ChildPath), the treemap contains child items.
 
 Code Sample:
 
@@ -256,7 +256,7 @@ N> The specified field must be a collection of sub class (object) specified in t
 
 ### ChildGap:
 
-You can specify ChildGap for separating the child items of every level and it is used to differentiate the levels mentioned for TreeMap.
+You can specify [`ChildGap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapHierarchicalLevel.html#Syncfusion_UI_Xaml_TreeMap_TreeMapHierarchicalLevel_ChildGap) for separating the child items of every level and it is used to differentiate the levels mentioned for TreeMap.
 
 Code Sample:
 
