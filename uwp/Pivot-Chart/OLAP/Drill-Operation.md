@@ -2,7 +2,7 @@
 layout: post
 title: Drill Operation in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Drill Operation support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
@@ -73,7 +73,7 @@ pivotChart1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillPosition
 
 **Drill replace**
 
-The SfPivotChart supports the drill replace type, in which the control is tend to display only the immediate child members and ancestors on the drill-down. The following code snippet and screenshot illustrate how the elements are drilled in the drill member type.
+The SfPivotChart supports the drill replace type, in which the control tends to display only the immediate child members and ancestors on drill-down. The following code snippet and screenshot illustrate how the elements are drilled in the drill replace type.
 
 {% tabs %}
 
@@ -121,4 +121,4 @@ pivotChart1.OlapDataManager.CurrentReport.ShowExpanders = False
 
 ![Drill-operation-hide-expanders](Drill-Operation_images/Drill-operation-hide-expanders.png)
 
-N> Since the `ShowExpanders` property interacts with the `OlapDataManager`, you should call the `DataBind()` method of SfPivotChart after assigning the value to this property.
+N> Since the `ShowExpanders` property interacts with the [`OlapDataManager`](https://help.syncfusion.com/cr/uwp/Syncfusion.Olap.UWP.Manager.OlapDataManager.html), you should call the [`DataBind()`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_DataBind) method of SfPivotChart after assigning the value to this property.

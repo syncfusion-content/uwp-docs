@@ -7,25 +7,24 @@ control: SfBulletGraph
 documentation: ug
 ---
 
-### Flow Direction
+# Flow Direction in UWP Bullet Graph (SfBulletGraph)
 
-By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using **FlowDirection** property respectively.
+By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using the **FlowDirection** property respectively.
 
->Note:-When the Orientation of **SfBulletGraph** is **Horizontal** the default Flow direction will be Left to Right like when the Orientation of **SfBulletGraph** is **Vertical** the default Flow Direction will be Top to Bottom.
+>Note:- When the Orientation of **SfBulletGraph** is **Horizontal**, the default flow direction will be Left to Right. When the Orientation of **SfBulletGraph** is **Vertical**, the default flow direction will be Top to Bottom.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBulletGraph  FlowDirection="Forward">
-    </syncfusion:SfBulletGraph>
+<syncfusion:SfBulletGraph FlowDirection="Forward" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-     SfBulletGraph bullet = new SfBulletGraph();
-     bullet.FlowDirection = BulletGraphFlowDirection.Forward;
-     this.Grid.Children.Add(bullet);
+SfBulletGraph bullet = new SfBulletGraph();
+bullet.FlowDirection = BulletGraphFlowDirection.Forward;
+this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 {% endtabs %}
@@ -33,10 +32,10 @@ By default the flow direction of SfBulletGraph is forward (LTR). It can be custo
 <table>
 <tr>
 <td>
-{{'![](Flow-Direction_images/Flow-Direction_img1.jpeg)'| markdownify }}
+{{'![Vertical Flow Direction Control](Flow-Direction_images/Flow-Direction_img1.jpeg)'| markdownify }}
 </td>
 <td>
-{{'![](Flow-Direction_images/Flow-Direction_img2.jpeg)'| markdownify }}
+{{'![Horizontal Flow Direction Control](Flow-Direction_images/Flow-Direction_img2.jpeg)'| markdownify }}
 {{'____'| markdownify }}
 </td></tr>
 </table>

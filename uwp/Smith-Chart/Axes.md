@@ -9,13 +9,12 @@ documentation: ug
 
 # Axes in UWP Smith Chart (SfSmithChart)
 
-Typically, SmithChart  has been used two axes that are used to measure and categorize the data. 
+Typically, the SmithChart has been used with two axes that are used to measure and categorize the data. 
 
 1. Horizontal Axis (Resistance)
 2. Radial Axis (Reactance)
 
-
-## Horizontal Axis
+## Horizontal axis
 
 Horizontal axis scale is used to measure normalized resistance value.
 
@@ -23,7 +22,7 @@ The following topics explain in detail about the axis and its parts.
 
 ### MajorGridlines
 
-By default, major gridlines are automatically added to the Axis. SfSmithChart supports the customization of major gridline. The visibility of the major gridlines can be controlled by using the **ShowMajorGridlines** property.
+By default, major gridlines are automatically added to the Axis. SfSmithChart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the [`ShowMajorGridlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_ShowMajorGridlines) property.
 
 {% tabs %}
 
@@ -52,7 +51,7 @@ chart.HorizontalAxis.ShowMajorGridlines = false;
 
 **MajorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the major gridlines by defining the *MajorGridlineStyle* property as shown in the below code snippet.
+SfSmithChart provides support to customize the style of the major gridlines by defining the [`MajorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MajorGridlineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -85,7 +84,7 @@ chart.HorizontalAxis.MajorGridlineStyle = this.Grid1.Resources["lineStyle"] as S
 
 ### MinorGridlines
 
-By default, minor gridlines are not added to the Axis. The visibility of the minor gridlines can be controlled by using the `ShowMinorGridlines` property.
+By default, minor gridlines are not added to the Axis. The visibility of the minor gridlines can be controlled by using the [`ShowMinorGridlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_ShowMinorGridlines) property.
 
 {% tabs %}
 
@@ -96,7 +95,7 @@ By default, minor gridlines are not added to the Axis. The visibility of the min
          <syncfusion:HorizontalAxis ShowMinorGridlines="True">
          </syncfusion:HorizontalAxis>
      </syncfusion:SfSmithChart.HorizontalAxis>
- </syncfusion:SfSmithChart>
+</syncfusion:SfSmithChart>
 
 {% endhighlight %}
 
@@ -114,7 +113,7 @@ chart.HorizontalAxis.ShowMinorGridlines = true;
 
 **MinorGridlinesCount**
 
-Minor gridlines can be added by defining *MinorGridlinesCount* property. By default, this value is  eight. It means, every 100 pixels it renders maximum eight minor gridlines.
+Minor gridlines can be added by defining the [`MinorGridlinesCount`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MinorGridlinesCount) property. By default, this value is eight. It means, every 100 pixels it renders a maximum of eight minor gridlines.
 
 {% tabs %}
 
@@ -144,7 +143,7 @@ chart.HorizontalAxis.MinorGridlinesCount = 12;
 
 **MinorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the minor gridlines by defining the *MinorGridlineStyle* property as shown in the below code snippet.
+SfSmithChart provides support to customize the style of the minor gridlines by defining the [`MinorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MinorGridlineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -178,7 +177,7 @@ chart.HorizontalAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as S
 
 ## AxisLine
 
-SfSmithChart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
+SfSmithChart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_AxisLineStyle) property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -212,7 +211,7 @@ chart.HorizontalAxis.AxisLineStyle = this.Grid1.Resources["lineStyle"] as Style;
 
 ### LabelPlacement
 
-The *LabelPlacement* property is used to position the axis label either inside or outside of the chart plotting area. By default, LabelsPlacement is **Outside**.
+The [`LabelPlacement`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_LabelPlacement) property is used to position the axis label either inside or outside of the chart plotting area. By default, LabelPlacement is **Outside**.
 
 {% tabs %}
 
@@ -240,7 +239,7 @@ chart.HorizontalAxis.LabelPlacement = LabelPlacement.Inside;
 
 ### LabelIntersectAction
 
-When the Axis labels overlap with each other based on the chart dimensions and label size, use the *LabelIntersectAction* property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **Hide**.
+When the axis labels overlap with each other based on the chart dimensions and label size, use the [`LabelIntersectAction`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_LabelIntersectAction) property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **Hide**.
 
 {% tabs %}
 
@@ -266,13 +265,13 @@ chart.HorizontalAxis.LabelIntersectAction = LabelIntersectActions.None;
 
 ![SfSmithChart LabelIntersectAction](Axes_images/Axes_img8.png)
 
-## Radial Axis
+## Radial axis
 
 Radial axis scale is used to measure the normalized reactance values.
 
 ### MajorGridlines
 
-By default, major gridlines are automatically added to the Axis. SfSmithChart supports customization of major gridline. The visibility of the major gridlines can be controlled by using the *ShowMajorGridlines* property.
+By default, major gridlines are automatically added to the Axis. SfSmithChart supports customization of major gridline. The visibility of the major gridlines can be controlled by using the [`ShowMajorGridlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_ShowMajorGridlines) property.
 
 {% tabs %}
 
@@ -301,7 +300,7 @@ chart.RadialAxis.ShowMajorGridlines = false;
 
 **MajorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the major gridlines by defining the *MajorGridlineStyle* property as shown in the below code snippet.
+SfSmithChart provides support to customize the style of the major gridlines by defining the [`MajorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MajorGridlineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -334,7 +333,7 @@ chart.RadialAxis.MajorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
 
 ### MinorGridlines
 
-By default, minor gridlines are not added to the Axis. The visibility of the minor gridlines can be controlled by using the *ShowMinorGridlines* property.
+By default, minor gridlines are not added to the Axis. The visibility of the minor gridlines can be controlled by using the [`ShowMinorGridlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_ShowMinorGridlines) property.
 
 {% tabs %}
 
@@ -363,7 +362,7 @@ chart.RadialAxis.ShowMinorGridlines = true;
 
 **MinorGridlinesCount**
 
-Minor gridlines can be added by defining *MinorGridlinesCount* property. By default, this value is  eight. It means, every 100 pixels it renders maximum eight minor gridlines.
+Minor gridlines can be added by defining the [`MinorGridlinesCount`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MinorGridlinesCount) property. By default, this value is eight. It means, every 100 pixels it renders a maximum of eight minor gridlines.
 
 {% tabs %}
 
@@ -393,7 +392,7 @@ chart.RadialAxis.MinorGridlinesCount = 12;
 
 **MinorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the minor gridlines by defining the *MinorGridlineStyle* property as shown in the below code snippet.
+SfSmithChart provides support to customize the style of the minor gridlines by defining the [`vMinorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MinorGridlineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -427,7 +426,7 @@ chart.RadialAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
 
 ### AxisLine
 
-SfSmithChart provides support to customize the style of the axis line by defining the *AxisLineStyle* property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
+SfSmithChart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_AxisLineStyle) property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -461,7 +460,7 @@ chart.RadialAxis.AxisLineStyle = this.Grid1.Resources["lineStyle"] as Style;
 
 ### LabelPlacement
 
-The *LabelPlacement* property is used to position the axis label either inside or outside of the chart plotting area. By default, LabelsPlacement is **Outside**.
+The [`LabelPlacement`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_LabelPlacement) property is used to position the axis label either inside or outside of the chart plotting area. By default, LabelPlacement is **Outside**.
 
 {% tabs %}
 
@@ -489,7 +488,7 @@ chart.RadialAxis.LabelPlacement = LabelPlacement.Inside;
 
 ### LabelIntersectAction
 
-When the Axis labels overlap with each other based on the chart dimensions and label size, use the *LabelIntersectAction* property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **Hide**.
+When the axis labels overlap with each other based on the chart dimensions and label size, use the [`LabelIntersectAction`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_LabelIntersectAction) property of the axis to avoid overlapping. The default value of the LabelIntersectAction is **Hide**.
 
 {% tabs %}
 
