@@ -15,7 +15,7 @@ Zooming and panning allow you to take a close-up look at the data point plotted 
 
 **Initialization**
 
-By using the `ZoomPanBehavior` property in the SfPivotChart, you can enable the zooming and panning support as shown in the following code snippet.
+By using the [`ZoomPanBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior.html) property in the SfPivotChart, you can enable the zooming and panning support as shown in the following code snippet.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ Zooming can be performed by any of the following ways:
 
 ### Mouse wheel zooming
 
-Zooming can be performed through mouse wheel action by setting the `EnableMouseWheelZooming` property to true as shown in the following code snippet.
+Zooming can be performed through mouse wheel action by setting the [`EnableMouseWheelZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableMouseWheelZooming) property to true as shown in the following code snippet.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ PivotChart1.ZoomPanBehavior.EnableMouseWheelZooming = True
 
 **Zooming relative to cursor**
 
-To enable the zooming relative to cursor position, you can set the `ZoomRelativeToCursor` property to true. This support is applicable only for the mouse wheel zooming.
+To enable the zooming relative to cursor position, you can set the [`ZoomRelativeToCursor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomRelativeToCursor) property to true. This support is applicable only for the mouse wheel zooming.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ PivotChart1.ZoomPanBehavior.ZoomRelativeToCursor = True
 
 ### Pinch zooming
 
-If you want to zoom the chart area using fingers by touch, then you have to set the `EnablePinchZooming` property to true as shown in the following code snippet.
+If you want to zoom the chart area using fingers by touch, then you have to set the [`EnablePinchZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnablePinchZooming) property to true as shown in the following code snippet.
 
 {% tabs %}
 
@@ -139,7 +139,7 @@ PivotChart1.ZoomPanBehavior.EnablePinchZooming = True
 
 ### Selection zooming
 
-Zooming can also be performed by selecting a particular region in rectangular form. To enable the selection zooming, you should set the `EnableSelectionZooming` property to true.
+Zooming can also be performed by selecting a particular region in rectangular form. To enable the selection zooming, you should set the [`EnableSelectionZooming`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableSelectionZooming) property to true.
 
 {% tabs %}
 
@@ -171,7 +171,7 @@ PivotChart1.ZoomPanBehavior.EnableSelectionZooming = True
 
 **Customizing the selection rectangle**
 
-The rectangle that is displayed while selecting a region for zooming can be customized by using the `Fill`, `Stroke`, and `StrokeThickness` properties.
+The rectangle that is displayed while selecting a region for zooming can be customized by using the [`Fill`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Fill), [`Stroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_Stroke), and [`StrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_StrokeThickness) properties.
 
 {% tabs %}
 
@@ -209,7 +209,7 @@ PivotChart1.ZoomPanBehavior.StrokeThickness = 2
 
 ## Zooming mode
 
-Zooming can be done horizontally and vertically based on the axis that is defined by using the `ZoomMode` property. By default, the `ZoomMode` is set as `XY`, so that the zooming can be performed on both the axes.
+Zooming can be done horizontally and vertically based on the axis that is defined by using the [`ZoomMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomMode) property. By default, the [`ZoomMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ZoomMode) is set as `XY`, so that the zooming can be performed on both the axes.
 
 **Zooming along x-axis**
 
@@ -277,7 +277,7 @@ PivotChart1.ZoomPanBehavior.ZoomMode = ZoomMode.Y
 
 ## Zoom level
 
-You can also limit the zooming by setting the `MaximumZoomLevel` property as illustrated in the following code snippet.
+You can also limit the zooming by setting the [`MaximumZoomLevel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_MaximumZoomLevel) property as illustrated in the following code snippet.
 
 {% tabs %}
 
@@ -307,7 +307,7 @@ PivotChart1.ZoomPanBehavior.MaximumZoomLevel = 5
 
 ## Zooming toolbar
 
-The zooming toolbar is encompassed with buttons for performing actions such as zoom in, zoom out, reset, pan, etc. You can add the zooming toolbar to the chart area by enabling the `EnableZoomingToolBar` property as follows.
+The zooming toolbar is encompassed with buttons for performing actions such as zoom in, zoom out, reset, pan, etc. You can add the zooming toolbar to the chart area by enabling the [`EnableZoomingToolBar`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnableZoomingToolBar) property as follows.
 
 {% tabs %}
 
@@ -341,7 +341,7 @@ PivotChart1.ZoomPanBehavior.EnableSelectionZooming = True
 
 **Positioning zooming toolbar**
 
-The zooming toolbar can be positioned by using the `HorizontalPosition` and `VerticalPosition` properties as illustrated in the following code snippet.
+The zooming toolbar can be positioned by using the [`HorizontalPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_HorizontalPosition) and [`VerticalPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_VerticalPosition) properties as illustrated in the following code snippet.
 
 {% tabs %}
 
@@ -379,12 +379,12 @@ PivotChart1.ZoomPanBehavior.VerticalPosition = VerticalAlignment.Bottom
 
 The zooming toolbar can be customized by using the following properties:
 
-* `ToolBarBackground`: Represents the background of the zooming toolbar.
-* `ToolBarItems`: Represents the collection of toolbar items.
-* `ToolBarItemMargin`: Represents the margin for the toolbar item.
-* `ToolBarItemWidth`: Represents the width of the toolbar item.
-* `ToolBarItemHeight`: Represents the height of the toolbar item.
-* `ToolBarOrientation`: Represents the orientation of the toolbar.
+* [`ToolBarBackground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarBackground): Represents the background of the zooming toolbar.
+* [`ToolBarItems`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItems): Represents the collection of toolbar items.
+* [`ToolBarItemMargin`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemMargin): Represents the margin for the toolbar item.
+* [`ToolBarItemWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemWidth): Represents the width of the toolbar item.
+* [`ToolBarItemHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarItemHeight): Represents the height of the toolbar item.
+* [`ToolBarOrientation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ToolBarOrientation): Represents the orientation of the toolbar.
 
 {% tabs %}
 
@@ -428,7 +428,7 @@ PivotChart1.ZoomPanBehavior.ToolBarItemMargin = New Thickness(5)
 
 ## Panning chart area
 
-Panning allows you to navigate the visible area of the chart when it is zoomed in. To enable panning, you can set the `EnablePanning` property to true as follows.
+Panning allows you to navigate the visible area of the chart when it is zoomed in. To enable panning, you can set the [`EnablePanning`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_EnablePanning) property to true as follows.
 
 {% tabs %}
 
@@ -460,7 +460,7 @@ PivotChart1.ZoomPanBehavior.EnablePanning = True
 
 ## Reset zooming and panning
 
-The SfPivotChart supports resetting the default view when you double-tap the chart area by setting the `ResetOnDoubleTap` property to true.
+The SfPivotChart supports resetting the default view when you double-tap the chart area by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ResetOnDoubleTap) property to true.
 
 {% tabs %}
 

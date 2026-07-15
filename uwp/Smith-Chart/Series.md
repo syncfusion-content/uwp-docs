@@ -19,7 +19,7 @@ The following APIs are used in line series:
 * StrokeThickness – Represents the thickness of the series outline.
 * Palette –  Represents the set of pre-defined or custom colors for the series.
 
-The below code example explains how to create a simple `LineSeries` by using given data
+The below code example explains how to create a simple [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.LineSeries.html) by using given data
 
 {% tabs %}
 
@@ -54,7 +54,7 @@ this.Grid1.Children.Add(chart);
 
 **Customizing LineSeries**
 
-The line stroke and thickness can be customized by using *Interior* and *StrokeThickness* property of line series.
+The line stroke and thickness can be customized by using [`Interior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_Interior) and StrokeThickness[`StrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_StrokeThickness) property of line series.
 
 {% tabs %}
 
@@ -82,7 +82,7 @@ chart.Series.Add(series);
 
 ## Animation
 
-SfSmithChart allows animating the chart series on loading whenever the *ItemsSource* changes. Animation in the chart can be enabled by setting the *EnableAnimation* property as True and defining the corresponding animation speed with the *AnimationDuration* property.
+SfSmithChart allows animating the chart series on loading whenever the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_ItemsSource) changes. Animation in the chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_EnableAnimation) property as True and defining the corresponding animation speed with the [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_AnimationDuration) property.
 
 {% tabs %}
 
@@ -108,7 +108,7 @@ chart.Series.Add(series);
 
 ## Series visibility
 
-To hide the series segment programmatically, set the *IsSeriesVisible* property as False for the specific series.
+To hide the series segment programmatically, set the [`IsSeriesVisible`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_IsSeriesVisible) property as False for the specific series.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Caption in UWP Bullet Graph (SfBulletGraph)
 
-The **Caption** for a bullet graph is used to specify a unique label describing the value represented in the bullet graph. 
+The [`Caption`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Caption) for a bullet graph is used to specify a unique label describing the value represented in the bullet graph. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -51,7 +51,7 @@ this.Grid.Children.Add(bullet);
 
 ## Caption position
 
-The caption in the bullet graph can be placed at the start or end of the quantitative scale by choosing from one of the two options available in the **CaptionPosition** property. They are:
+The caption in the bullet graph can be placed at the start or end of the quantitative scale by choosing from one of the two options available in the [`CaptionPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_CaptionPosition) property. They are:
 
 1. Near (Default)
 2. Far

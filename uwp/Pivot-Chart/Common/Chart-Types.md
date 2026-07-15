@@ -450,7 +450,7 @@ PivotChart1.ChartType = PivotChartType.StepLine
 
 ## Scatter chart
 
-Scatter chart is a collection of points that are plotted in the rectangular co-ordinate system. It is often used in relationship analysis up to one independent variable. The size of scatter segments can be modified with the help of `ScatterWidth` and `ScatterHeight` properties.
+Scatter chart is a collection of points that are plotted in the rectangular co-ordinate system. It is often used in relationship analysis up to one independent variable. The size of scatter segments can be modified with the help of [`ScatterWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_ScatterWidth) and [`ScatterHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_ScatterHeight) properties.
 
 The following code snippet shows how to select a scatter chart.
 
@@ -654,7 +654,7 @@ PivotChart1.ChartType = PivotChartType.FastLineBitmap
 
 ![fastLineBitmap](Chart-Types_images/fastLineBitmap.png)
 
-As this chart is rendered using bitmap, there might be some jagged lines at the edges and it can be reduced by enabling the `EnableAntiAliasing` property as follows.
+As this chart is rendered using bitmap, there might be some jagged lines at the edges and it can be reduced by enabling the [`EnableAntiAliasing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_EnableAntiAliasing) property as follows.
 
 {% tabs %}
 
@@ -716,7 +716,7 @@ PivotChart1.ChartType = PivotChartType.FastScatterBitmap
 
 ![fastScatterBitmap](Chart-Types_images/fastScatterBitmap.png)
 
-The size of the scatter points can be customized with the help of `ScatterWidth` and `ScatterHeight` properties as follows.
+The size of the scatter points can be customized with the help of [`ScatterWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_ScatterWidth) and [`ScatterHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_ScatterHeight) properties as follows.
 
 {% tabs %}
 
@@ -811,7 +811,7 @@ PivotChart1.ChartType = PivotChartType.FastStepLineBitmap
 
 ![fastStepLineBitmap](Chart-Types_images/fastStepLineBitmap.png)
 
-As fast step line bitmap chart is rendered using bitmap, some jagged lines can be occurred at the edges and it can be reduced by enabling the `EnableAntiAliasing` property as follows.
+As fast step line bitmap chart is rendered using bitmap, some jagged lines can be occurred at the edges and it can be reduced by enabling the [`EnableAntiAliasing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_EnableAntiAliasing) property as follows.
 
 {% tabs %}
 

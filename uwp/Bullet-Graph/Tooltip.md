@@ -13,7 +13,7 @@ Tooltip in SfBulletGraph is used to view the values of FeaturedMeasure, Comparat
 
 This tooltip is displayed when the mouse is over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange. On touch devices, it is displayed on holding over the FeaturedMeasure, ComparativeMeasure, and QualitativeRange of SfBulletGraph.
 
-The SfBulletGraph tooltip is displayed only when the **ShowToolTip** property is set to true.
+The SfBulletGraph tooltip is displayed only when the [`ShowToolTip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ShowToolTip) property is set to true.
 
 {% tabs %}
 {% highlight xaml %}

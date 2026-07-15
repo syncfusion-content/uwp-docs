@@ -9,11 +9,11 @@ documentation: ug
 
 # Ranges in UWP Bullet Graph (SfBulletGraph)
 
-Ranges for a bullet graph are a collection of qualitative ranges. A qualitative range is a visual element which ends at a specified **RangeEnd** at the start of the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
+Ranges for a bullet graph are a collection of qualitative ranges. A qualitative range is a visual element which ends at a specified [`RangeEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.Range.html#Syncfusion_UI_Xaml_BulletGraph_Range_RangeEnd) at the start of the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 
 ## Customizing range
 
-The width of the ranges can be customized by setting the **QualitativeRangesSize** property. By changing the **RangeStroke** of the qualitative range, the stroke of the range can be personalized. By setting the **RangeOpacity** of the qualitative range, the opacity of the range is modified.
+The width of the ranges can be customized by setting the [`QualitativeRangesSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRangesSize) property. By changing the [`RangeStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.Range.html#Syncfusion_UI_Xaml_BulletGraph_Range_RangeStroke) of the qualitative range, the stroke of the range can be personalized. By setting the **RangeOpacity** of the qualitative range, the opacity of the range is modified.
 
 {% tabs %}
 {% highlight xaml %}

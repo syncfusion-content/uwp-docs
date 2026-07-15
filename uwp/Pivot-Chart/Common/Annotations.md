@@ -73,7 +73,7 @@ PivotChart1.Annotations.Add(annotation)
 
 **Rotating text annotation**
 
-Text annotation can be rotated by using the `Angle` property. The following code snippet illustrates rotating the text annotation.
+Text annotation can be rotated by using the [`Angle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_Angle) property. The following code snippet illustrates rotating the text annotation.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ PivotChart1.Annotations.Add(annotation)
 
 **Editing text annotation**
 
-The text annotation added in the chart area can be edited by enabling the `EnableEditing` property. The following code snippet demonstrates editing of the text annotation.
+The text annotation added in the chart area can be edited by enabling the [`EnableEditing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_EnableEditing) property. The following code snippet demonstrates editing of the text annotation.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Image annotation
 
-The SfPivotChart allows you to add an image annotation to the specific chart by mentioning the `AnnotationType` as `ImageAnnotation`. The following code snippet shows how to add the image annotation to the SfPivotChart.
+The SfPivotChart allows you to add an image annotation to the specific chart by mentioning the [`AnnotationType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_AnnotationType) as `ImageAnnotation`. The following code snippet shows how to add the image annotation to the SfPivotChart.
 
 {% tabs %}
 
@@ -221,7 +221,7 @@ PivotChart1.Annotations.Add(annotation)
 
 **Rotating image annotation**
 
-An image annotation can be rotated by using the `Angle` property. The following code snippet illustrates rotating the image annotation.
+An image annotation can be rotated by using the [`Angle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_Angle) property. The following code snippet illustrates rotating the image annotation.
 
 {% tabs %}
 
@@ -510,15 +510,15 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Positioning annotations
 
-Annotations can be positioned in the SfPivotChart based on `X1` and `Y1` properties. For image and shape (line, ellipse, rectangle, horizontal line, and vertical line) annotations, you should specify `X2` and `Y2` properties. These X and Y values can be specified with axis units or pixel units and can be identified by using the `CoordinateUnit` property.
+Annotations can be positioned in the SfPivotChart based on [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1) properties. For image and shape (line, ellipse, rectangle, horizontal line, and vertical line) annotations, you should specify [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_Y2) properties. These X and Y values can be specified with axis units or pixel units and can be identified by using the [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) property.
 
 **CoordinateUnit as axis**
 
-To position an annotation based on axis values, you should set the *CoordinateUnit* as *Axis*, so that the values specified in `X1` and `Y1`, `X2` and `Y2` (if needed) are considered based on the range values of primary and secondary axes.
+To position an annotation based on axis values, you should set the *CoordinateUnit* as *Axis*, so that the values specified in [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1), [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_Y2) (if needed) are considered based on the range values of primary and secondary axes.
 
 **CoordinateUnit as pixels**
 
-To position the annotation based on pixel values, you should set the *CoordinateUnit* as *Pixels*, so that the values specified in `X1` and `Y1`, `X2` and `Y2` (if needed) are considered based on pixels.
+To position the annotation based on pixel values, you should set the *CoordinateUnit* as *Pixels*, so that the values specified in [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1), [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_Y2) (if needed) are considered based on pixels.
 
 ## Dragging and resizing annotations
 

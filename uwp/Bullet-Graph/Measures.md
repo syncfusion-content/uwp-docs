@@ -15,7 +15,7 @@ The featured measure is used to display the primary data, or the current value o
 
 **Customizing featured measure**
 
-The value of the featured measure of the bullet graph is set by the **FeaturedMeasure** property. By setting the **FeaturedMeasureBarStroke** property, the stroke of the featured measure bar can be customized. The thickness of the featured measure bar is modified by using **FeaturedMeasureBarStrokeThickness**. 
+The value of the featured measure of the bullet graph is set by the [`FeaturedMeasure`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_FeaturedMeasure) property. By setting the [`FeaturedMeasureBarStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_FeaturedMeasureBarStroke) property, the stroke of the featured measure bar can be customized. The thickness of the featured measure bar is modified by using [`FeaturedMeasureBarStrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_FeaturedMeasureBarStrokeThickness). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -44,7 +44,7 @@ The comparative measure should be less visually dominant than the featured measu
 
 **Customizing comparative measure**
 
-The value of the comparative measure is set by using the **ComparativeMeasure** property. By setting the **ComparativeMeasureSymbolStroke** property, the stroke of the comparative measure symbol is customized. The thickness of the comparative measure symbol is modified by using **ComparativeMeasureSymbolStrokeThickness**. 
+The value of the comparative measure is set by using the [`ComparativeMeasure`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ComparativeMeasure) property. By setting the [`ComparativeMeasureSymbolStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ComparativeMeasureSymbolStroke) property, the stroke of the comparative measure symbol is customized. The thickness of the comparative measure symbol is modified by using [`ComparativeMeasureSymbolStrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ComparativeMeasureSymbolStrokeThickness). 
 
 {% tabs %}
 {% highlight xaml %}

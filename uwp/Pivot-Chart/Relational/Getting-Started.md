@@ -32,7 +32,7 @@ The SfPivotChart control can be initialized and added to the application through
 
 Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-Click the toolbox and drag the **SfPivotChart** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
+Click the toolbox and drag the [`SfPivotChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html) control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
 Now, the SfPivotChart control is added to the designer as follows:
 
@@ -328,14 +328,14 @@ End Namespace
 
 ### Defining item source, pivot axis, pivot legend, and pivot calculations for SfPivotChart control
 
-Relational data can be bound to SfPivotChart control by using the `ItemSource` property through any of the following ways:
+Relational data can be bound to SfPivotChart control by using the [`ItemSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_ItemSource) property through any of the following ways:
 
 * Through XAML
 * Through code-behind
 
 **Through XAML**
 
-The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivotChart control with the help of `DataContext`. In addition to this, the `PivotAxis`, `PivotLegend`, and `PivotCalculations` should be assigned to the SfPivotChart for populating data in the specific series.
+The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivotChart control with the help of `DataContext`. In addition to this, the [`PivotAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotAxis), [`PivotLegend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotLegend), and [`PivotCalculations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotCalculations) should be assigned to the SfPivotChart for populating data in the specific series.
 
 Refer to the following code snippet.
 

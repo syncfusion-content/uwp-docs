@@ -460,7 +460,7 @@ End Namespace
 
 ### Binding OlapDataManager with SfPivotChart control
 
-The OLAP data can be bound with SfPivotChart control by using the `OlapDataManager` property using any of the following ways:
+The OLAP data can be bound with SfPivotChart control by using the [`OlapDataManager`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_OlapDataManager) property using any of the following ways:
 
 * Through XAML
 * Through code-behind

@@ -121,4 +121,4 @@ pivotChart1.OlapDataManager.CurrentReport.ShowExpanders = False
 
 ![Drill-operation-hide-expanders](Drill-Operation_images/Drill-operation-hide-expanders.png)
 
-N> Since the `ShowExpanders` property interacts with the `OlapDataManager`, you should call the `DataBind()` method of SfPivotChart after assigning the value to this property.
+N> Since the `ShowExpanders` property interacts with the [`OlapDataManager`](https://help.syncfusion.com/cr/uwp/Syncfusion.Olap.UWP.Manager.OlapDataManager.html), you should call the [`DataBind()`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_DataBind) method of SfPivotChart after assigning the value to this property.

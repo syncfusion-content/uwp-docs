@@ -13,7 +13,7 @@ The SfPivotChart control provides a variety of charting features that allow you 
 
 ## Key features
 
-The key features of the **SfPivotChart** control are listed as follows:
+The key features of the [`SfPivotChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html) control are listed as follows:
 
 * **Data source**: Supports data binding with OLAP data source (such as Microsoft SQL Server Analysis Services (SSAS) and XML/A) and relational data source (such as IList and IEnumerable).
 * **OLAP**: OLAP DB related features such as named sets, calculated members, and measures are supported.

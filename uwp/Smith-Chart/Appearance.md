@@ -11,7 +11,7 @@ documentation: ug
 
 ## SmithChart palette
 
-The Smith chart displays different series in different colors by using the *Palette* property of **ColorModel**. By default, the Metro palette color has been applied.
+The Smith chart displays different series in different colors by using the *Palette* property of [`ColorModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_ColorModel). By default, the Metro palette color has been applied.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ chart.ColorModel.Palette = ColorPalette.BlueChrome;
 
 **Series palette**
 
-The palette color for each data point of a specific series can be defined by using the *Palette* property of **ColorModel** in the Series.
+The palette color for each data point of a specific series can be defined by using the *Palette* property of [`ColorModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_ColorModel) in the Series.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ this.Grid1.Children.Add(chart);
 
 ### Area bounds
 
-You can get the area bounds of the smith chart by using the `AreaBounds` property in `ChartAreaInfo`.
+You can get the area bounds of the smith chart by using the [`AreaBounds`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html#Syncfusion_UI_Xaml_SmithChart_ChartAreaInfo_AreaBounds) property in [`ChartAreaInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html).
 
 {% highlight C# %}
 
@@ -137,7 +137,7 @@ Rect areaBounds = smithChart.ChartAreaInfo.AreaBounds;
 
 ### Center point
 
-You can get the center point (X and Y) of the smith chart by using the `CenterPoint` property in the `ChartAreaInfo`.
+You can get the center point (X and Y) of the smith chart by using the [`CenterPoint`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html#Syncfusion_UI_Xaml_SmithChart_ChartAreaInfo_CenterPoint) property in the [`ChartAreaInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html).
 
 {% highlight C# %}
 
@@ -147,7 +147,7 @@ Point centerPoint = smithChart.ChartAreaInfo.CenterPoint;
 
 ### Radius
 
-You can get the radius of the smith chart by using the `Radius` property in the `ChartAreaInfo`.
+You can get the radius of the smith chart by using the [`Radius`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html#Syncfusion_UI_Xaml_SmithChart_ChartAreaInfo_Radius) property in the [`ChartAreaInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAreaInfo.html).
 
 {% highlight C# %}
 

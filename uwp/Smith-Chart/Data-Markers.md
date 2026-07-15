@@ -13,7 +13,7 @@ Data markers are used to provide information about a data point to the user. You
 
 ## Add shapes
 
-Shapes can be added to line series to indicate each data point and they can also be added to the chart by enabling the `ShowMarker` option of the *Series* property. Different shapes can be added to the chart by using the `MarkerType` option such as rectangle, circle, diamond, etc.
+Shapes can be added to line series to indicate each data point and they can also be added to the chart by enabling the [`ShowMarker`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_ShowMarker) option of the [`Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_Series) property. Different shapes can be added to the chart by using the [`MarkerType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_MarkerType) option such as rectangle, circle, diamond, etc.
 
 The following code example explains how to enable series marker and add shapes,
 
@@ -74,7 +74,7 @@ chart.Series.Add(series);
 
 **MarkerTemplate**
 
-Apart from the shapes, custom shapes can also be added to mark the data point by using the `MarkerTemplate` property. To add custom shapes, define the *MarkerType* as **Custom**.
+Apart from the shapes, custom shapes can also be added to mark the data point by using the [`MarkerTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_MarkerTemplate) property. To add custom shapes, define the [`MarkerType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_MarkerType) as **Custom**.
 
 The following code example illustrates how to add custom shapes:
 
@@ -110,7 +110,7 @@ chart.Series.Add(series);
 
 ## Add labels
 
-Data label can be added to a chart series by setting the `ShowLabel` property as True in the series **DataLabel** option. By default, the data labels are displayed on top of the data point and their position is automatically adjusted when they collide with another label.
+Data label can be added to a chart series by setting the [`ShowLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.DataLabel.html#Syncfusion_UI_Xaml_SmithChart_DataLabel_ShowLabel) property as True in the series [`DataLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.DataLabel.html) option. By default, the data labels are displayed on top of the data point and their position is automatically adjusted when they collide with another label.
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ The following screenshot illustrates how the data labels can be positioned.
 
 **LabelStyle**
 
-The style for the data label can be defined by using *LabelStyle* property of **DataLabel**.
+The style for the data label can be defined by using *LabelStyle* property of [`DataLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.DataLabel.html).
 
 {% tabs %}
 
@@ -184,7 +184,7 @@ chart.Series.Add(series);
 
 **LabelTemplate**
 
-The label content can be formatted and customized by using the *LabelTemplate* property of **DataLabel**. The following code example illustrates how the label content can be formatted and customized.
+The label content can be formatted and customized by using the *LabelTemplate* property of [`DataLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.DataLabel.html). The following code example illustrates how the label content can be formatted and customized.
 
 {% tabs %}
 
