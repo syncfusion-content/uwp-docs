@@ -9,13 +9,13 @@ documentation: ug
 
 # Getting Started with UWP HeatMap (SfHeatMap)
 
-## Creating HeatMap for Windows Store App
+## Creating heatmap for windows store app
 
 `HeatMap` is available in the following assembly and namespace.
 
-`Assembly`: Syncfusion.SfHeatMap.UWP
+**Assembly:** Syncfusion.SfHeatMap.UWP
 
-`Namespace`: Syncfusion.UI.Xaml.HeatMap
+**Namespace:** Syncfusion.UI.Xaml.HeatMap
 
 ## Adding assembly reference
 
@@ -24,12 +24,11 @@ documentation: ug
 
 ![Image to choose SyncfusionControls for UWP XAML](Getting-Started_images\Getting-Started_img1.png)
 
-## Add SfHeatMap from Toolbox
+## Add SfHeatMap from toolbox
 
 Drag and drop the [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html) control from the Toolbox to your application.
 
 ![Image to drap and drop the SfHeatMap](Getting-Started_images\treemapdesigner.png)
-
 
 ![Image to show the SyncfusionControls for UWP XAML reference is added to the application references](Getting-Started_images\addingreference.png)
 
@@ -182,7 +181,7 @@ Now the data is ready, the next step is to configure the data source and map row
 
 ![Showing grid with data](Getting-Started_images/Getting-Started_img2.jpeg)
 
-## Color Mapping
+## Color mapping
 
 Next, we can configure a color range for these values using [ColorMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ColorMapping.html).
 
@@ -292,7 +291,7 @@ The final MainPage.xaml file looks like the following:
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GettingStarted"
         mc:Ignorable="d"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:syncfusion="http://schemas.syncfusion.com/uwp"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
         <local:Products x:Key="productsData">
@@ -311,9 +310,11 @@ The final MainPage.xaml file looks like the following:
         </local:Products>
 
         <syncfusion:TableMapping x:Key="itemsMapping">
+
             <syncfusion:TableMapping.HeaderMapping>
                 <syncfusion:ColumnMapping PropertyName="ProductName" DisplayName="Product"/>
             </syncfusion:TableMapping.HeaderMapping>
+
             <syncfusion:TableMapping.ColumnMapping>
                 <syncfusion:ColumnMapping PropertyName="Y2007" DisplayName="2007"/>
                 <syncfusion:ColumnMapping PropertyName="Y2008" DisplayName="2008"/>
@@ -326,25 +327,29 @@ The final MainPage.xaml file looks like the following:
                 <syncfusion:ColumnMapping PropertyName="Y2015" DisplayName="2015"/>
                 <syncfusion:ColumnMapping PropertyName="Y2016" DisplayName="2016"/>
             </syncfusion:TableMapping.ColumnMapping>
+
         </syncfusion:TableMapping>
         
         <syncfusion:ColorMappingCollection x:Key="colorMapping">
             <syncfusion:ColorMapping Value="0" Color="#8ec8f8"/>
             <syncfusion:ColorMapping Value="30" Color="#0d47a1"/>         
         </syncfusion:ColorMappingCollection>
+
     </Window.Resources>
+
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+
         <syncfusion:SfHeatMap ItemsSource="{StaticResource productsData}" 
                               ItemsMapping="{StaticResource ItemsMapping}"
                               ColorMappingCollection="{StaticResource colorMapping}">
         </syncfusion:SfHeatMap>
-        <syncfusion:SfHeatMapLegend Grid.Row="1"
-                                    Margin="20"
-                                    MaxWidth="300"
+
+        <syncfusion:SfHeatMapLegend Grid.Row="1" Margin="20" MaxWidth="300"
                                     ColorMappingCollection="{StaticResource colorMapping}"/>
     </Grid> 
 </Window>
