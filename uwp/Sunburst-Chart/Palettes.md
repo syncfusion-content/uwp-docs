@@ -3,7 +3,7 @@
 layout: post
 title: Palette in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Palette support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -13,7 +13,7 @@ documentation: ug
 
 Sunburst chart provides support to apply different types of palettes. You can define the palettes by using [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Palette) property.
 
-We have some predefined palette such as
+The following predefined palettes are available:
 
 * Metro
 * AutumnBrights
@@ -53,8 +53,7 @@ sunburstChart.Palette = SunburstColorPalette.SandyBeach;
 
 ![Palettes_img1](Palettes_images/Palettes_img1.jpeg)
 
-
-## Custom Palette
+## Custom palette
 
 Sunburst chart provides option which enables you to define your own color brushes with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_ColorModel) as shown in the following code example.
 
@@ -102,35 +101,34 @@ Sunburst chart provides option which enables you to define your own color brushe
 
 {% highlight c# %}
 
-            chart.Palette = SunburstColorPalette.Custom;
+chart.Palette = SunburstColorPalette.Custom;
 
-            SunburstColorModel colorModel = new SunburstColorModel();
-            LinearGradientBrush brush1 = new LinearGradientBrush();
-            brush1.GradientStops.Add(new GradientStop() { Color = Colors.DeepPink, Offset = 0 });
-            brush1.GradientStops.Add(new GradientStop() { Color = Colors.Gray, Offset = 1 });
+SunburstColorModel colorModel = new SunburstColorModel();
+LinearGradientBrush brush1 = new LinearGradientBrush();
+brush1.GradientStops.Add(new GradientStop() { Color = Colors.DeepPink, Offset = 0 });
+brush1.GradientStops.Add(new GradientStop() { Color = Colors.Gray, Offset = 1 });
 
-            LinearGradientBrush brush2 = new LinearGradientBrush();
-            brush2.GradientStops.Add(new GradientStop() { Color = Colors.Green, Offset = 0 });
-            brush2.GradientStops.Add(new GradientStop() { Color = Colors.Yellow, Offset = 1 });
+LinearGradientBrush brush2 = new LinearGradientBrush();
+brush2.GradientStops.Add(new GradientStop() { Color = Colors.Green, Offset = 0 });
+brush2.GradientStops.Add(new GradientStop() { Color = Colors.Yellow, Offset = 1 });
 
-            LinearGradientBrush brush3 = new LinearGradientBrush();
-            brush3.GradientStops.Add(new GradientStop() { Color = Colors.Orange, Offset = 0 });
-            brush3.GradientStops.Add(new GradientStop() { Color = Colors.Brown, Offset = 1 });
+LinearGradientBrush brush3 = new LinearGradientBrush();
+brush3.GradientStops.Add(new GradientStop() { Color = Colors.Orange, Offset = 0 });
+brush3.GradientStops.Add(new GradientStop() { Color = Colors.Brown, Offset = 1 });
 
-            LinearGradientBrush brush4 = new LinearGradientBrush();
-            brush4.GradientStops.Add(new GradientStop() { Color = Colors.DarkViolet, Offset = 0 });
-            brush4.GradientStops.Add(new GradientStop() { Color = Colors.White, Offset = 1 });
+LinearGradientBrush brush4 = new LinearGradientBrush();
+brush4.GradientStops.Add(new GradientStop() { Color = Colors.DarkViolet, Offset = 0 });
+brush4.GradientStops.Add(new GradientStop() { Color = Colors.White, Offset = 1 });
 
-            colorModel.CustomBrushes.Add(brush1);
-            colorModel.CustomBrushes.Add(brush2);
-            colorModel.CustomBrushes.Add(brush3);
-            colorModel.CustomBrushes.Add(brush4);
+colorModel.CustomBrushes.Add(brush1);
+colorModel.CustomBrushes.Add(brush2);
+colorModel.CustomBrushes.Add(brush3);
+colorModel.CustomBrushes.Add(brush4);
 
-            chart.ColorModel = colorModel;
+chart.ColorModel = colorModel;
 
 {% endhighlight %}
 
 {% endtabs %}
 
 N> Before applying the color model, you need to set the palette value as Custom.
-

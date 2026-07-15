@@ -9,17 +9,13 @@ documentation: ug
 
 # Getting Started with UWP Barcode (SfBarcode)
 
-## Add Barcode control to an Application 
+## Add barcode control to an application
 
 The following assembly reference is required for deploying Barcode.
 
-{% highlight c# %}
+**Namespace**: Syncfusion.UI.Xaml.Controls.Barcode
 
-Namespace: Syncfusion.UI.Xaml.Controls.Barcode
-
-Assembly: Syncfusion.SfBarcode.UWP
-
-{% endhighlight  %}
+**Assembly**: Syncfusion.SfBarcode.UWP
 
 To create the SfBarcode control in Visual Studio:
 
@@ -64,7 +60,7 @@ The following code example shows how to create the Barcode control from XAML:
 
 ## Text
 
-The text to be encoded can be set using the Text property. By default, this original text will be displayed at the bottom of the bar code. The location of the text can be toggled between top and bottom using [`TextLocation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_TextLocation) property. The horizontal alignment of the text can be set using [`TextAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_TextAlignment) The text brush and other various font customization can also be done using the built-in font properties. Optionally, the user can hide the barcode text by setting the [`DisplayText`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Barcode.SfBarcode.html#Syncfusion_UI_Xaml_Controls_Barcode_SfBarcode_DisplayText) property to false.
+The text to be encoded can be set using the Text property. By default, this original text will be displayed at the bottom of the barcode. The location of the text can be toggled between top and bottom using the **TextLocation** property. The horizontal alignment of the text can be set using **TextAlignment**. The text brush and various other font customizations can also be done using the built-in font properties. Optionally, the user can hide the barcode text by setting the **DisplayText** property to false.
 
 {% tabs %}
 

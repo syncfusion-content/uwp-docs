@@ -7,11 +7,9 @@ control: SfChart
 documentation: ug
 ---
 
-
 # ErrorBar in UWP Charts (SfChart)
 
 [`ErrorBarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) is used to indicate the errors or uncertainty in reported values. This will find the possible variations in measurements, and in Chart control these values are displayed as data points.
-
 
 The [`HorizontalErrorValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalErrorValue) and [`VerticalErrorValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalErrorValue) is used to set the error value(variation) to the series.
 
@@ -21,21 +19,12 @@ The following code examples illustrates how to create error bar series:
 
 {% highlight xaml %}
 
-<chart:ScatterSeries ScatterWidth="20" ScatterHeight="20"  Label="Coal" 
+<chart:ScatterSeries ScatterWidth="20" ScatterHeight="20" Label="Coal"
+    ItemsSource="{Binding EnergyProductions}" Interior="#BCBCBC"
+    XBindingPath="ID" YBindingPath="Coal" />
 
-ItemsSource="{Binding EnergyProductions}" Interior="#BCBCBC"
-
-XBindingPath="ID" YBindingPath="Coal">
-
-</chart:ScatterSeries>
-
-<chart:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" 
-
-XBindingPath="ID" YBindingPath="Coal" 
-
-VerticalErrorValue="50" HorizontalErrorValue="1" >
-
-</chart:ErrorBarSeries>
+<chart:ErrorBarSeries Name="Errorseries" ItemsSource="{Binding EnergyProductions}"
+    XBindingPath="ID" YBindingPath="Coal" VerticalErrorValue="50" HorizontalErrorValue="1" />
 
 {% endhighlight %}
 
@@ -43,38 +32,23 @@ VerticalErrorValue="50" HorizontalErrorValue="1" >
 
 ScatterSeries series = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     ScatterWidth = 20,
-
     ScatterHeight = 20,
-
     Label ="Coal",
-
     ListenPropertyChange=true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0xBC, 0xBC, 0XBC))
-
 };
 
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     HorizontalErrorValue = 1,
-
     VerticalErrorValue = 50
-
 };
 
 chart.Series.Add(series);
@@ -86,7 +60,6 @@ chart.Series.Add(errorBar);
 {% endtabs %}
 
 ![Error bars support in UWP Chart](ErrorBar_images/ErrorBar_1.png)
-
 
 ## Mode
 
@@ -100,13 +73,9 @@ To view horizontal error value, you can set the [`Mode`](https://help.syncfusion
 
 {% highlight xaml %}
 
-<chart:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" 
-
-XBindingPath="ID" YBindingPath="Coal"                                  
-
-VerticalErrorValue="50" HorizontalErrorValue="1" 
-
-Mode="Horizontal">
+<chart:ErrorBarSeries Name="Errorseries" ItemsSource="{Binding EnergyProductions}"
+    XBindingPath="ID" YBindingPath="Coal" VerticalErrorValue="50"
+    HorizontalErrorValue="1" Mode="Horizontal" />
 
 {% endhighlight %}
 
@@ -114,19 +83,12 @@ Mode="Horizontal">
 
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     HorizontalErrorValue = 1,
-
     VerticalErrorValue = 50,
-
     Mode = ErrorBarMode.Horizontal
-
 };
 
 chart.Series.Add(errorBar);
@@ -137,7 +99,6 @@ chart.Series.Add(errorBar);
 
 ![Mode for error bars in UWP Chart](ErrorBar_images/ErrorBar_2.png)
 
-
 ### Vertical
 
 To view vertical error value, you can set the [`Mode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_Mode) as [`Vertical`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarMode.html#Syncfusion_UI_Xaml_Charts_ErrorBarMode_Vertical) as shown in the below code example.
@@ -146,13 +107,9 @@ To view vertical error value, you can set the [`Mode`](https://help.syncfusion.c
 
 {% highlight xaml %}
 
-<chart:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" 
-
-XBindingPath="ID" YBindingPath="Coal" 
-
-VerticalErrorValue="50" HorizontalErrorValue="1" 
-
-Mode="Vertical">
+<chart:ErrorBarSeries
+    Name="Errorseries" ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" 
+    YBindingPath="Coal" VerticalErrorValue="50" HorizontalErrorValue="1" Mode="Vertical" />
 
 {% endhighlight %}
 
@@ -160,19 +117,12 @@ Mode="Vertical">
 
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     HorizontalErrorValue = 1,
-
     VerticalErrorValue = 50,
-
     Mode = ErrorBarMode.Vertical
-
 };
 
 chart.Series.Add(errorBar);
@@ -203,9 +153,7 @@ The following code demonstrates how to set the HorizontalDirection value as both
 
 {% highlight xaml %}
 
-<syncfusion:ErrorBarSeries Name="Errorseries" HorizontalDirection="Both">
-
-</syncfusion:ErrorBarSeries>
+<syncfusion:ErrorBarSeries Name="Errorseries" HorizontalDirection="Both" />
 
 {% endhighlight %}
 
@@ -215,7 +163,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Both;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -231,9 +179,7 @@ The following code demonstrates how to set the HorizontalDirection value as minu
 
 {% highlight xaml %}
 
-<syncfusion:ErrorBarSeries Name="Errorseries" HorizontalDirection="Minus">
-
-</syncfusion:ErrorBarSeries>
+<syncfusion:ErrorBarSeries Name="Errorseries" HorizontalDirection="Minus" />
 
 {% endhighlight %}
 
@@ -243,7 +189,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Minus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -259,9 +205,7 @@ The following code demonstrates how to set the HorizontalDirection value as plus
 
 {% highlight xaml %}
 
-<syncfusion:ErrorBarSeries Name="Errorseries" HorizontalDirection="Plus">
-
-</syncfusion:ErrorBarSeries>
+<syncfusion:ErrorBarSeries Name="Errorseries" HorizontalDirection="Plus" />
 
 {% endhighlight %}
 
@@ -271,7 +215,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.HorizontalDirection = ErrorBarDirection.Plus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -295,9 +239,7 @@ The following code demonstrates how to set the VerticalDirection value as both.
 
 {% highlight xaml %}
 
-<syncfusion:ErrorBarSeries Name="Errorseries" VerticalDirection="Both" >
-
-</syncfusion:ErrorBarSeries>
+<syncfusion:ErrorBarSeries Name="Errorseries" VerticalDirection="Both" />
 
 {% endhighlight %}
 
@@ -307,7 +249,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.VerticalDirection= ErrorBarDirection.Both;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -323,9 +265,7 @@ The following code demonstrates how to set the VerticalDirection value as minus.
 
 {% highlight xaml %}
 
-<syncfusion:ErrorBarSeries Name="Errorseries" VerticalDirection="Minus" >
-
-</syncfusion:ErrorBarSeries>
+<syncfusion:ErrorBarSeries Name="Errorseries" VerticalDirection="Minus" />
 
 {% endhighlight %}
 
@@ -335,7 +275,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.VerticalDirection= ErrorBarDirection.Minus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -351,9 +291,7 @@ The following code demonstrates how to set the VerticalDirection value as plus.
 
 {% highlight xaml %}
 
-<syncfusion:ErrorBarSeries Name="Errorseries" VerticalDirection="Plus" >
-
-</syncfusion:ErrorBarSeries>
+<syncfusion:ErrorBarSeries Name="Errorseries" VerticalDirection="Plus" />
 
 {% endhighlight %}
 
@@ -363,7 +301,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries();
 
 errorBarSeries.VerticalDirection= ErrorBarDirection.Plus;
 
-chart.Series.Add(errorBar);
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
@@ -388,17 +326,15 @@ N> The default error bar series is [`Fixed`](https://help.syncfusion.com/cr/uwp/
 
 {% highlight xaml %}
 
-<chart:ErrorBarSeries Name="Errorseries"  
-
-ItemsSource="{Binding EnergyProductions}" 
-
-XBindingPath="ID" 
-
-YBindingPath="Coal" 
-
-VerticalErrorValue="40" HorizontalErrorValue="10" 
-
-Mode="Both" Type="Fixed">
+<chart:ErrorBarSeries
+    Name="Errorseries"
+    ItemsSource="{Binding EnergyProductions}"
+    XBindingPath="ID"
+    YBindingPath="Coal"
+    VerticalErrorValue="40"
+    HorizontalErrorValue="10"
+    Mode="Both"
+    Type="Fixed" />
 
 {% endhighlight %}
 
@@ -406,21 +342,13 @@ Mode="Both" Type="Fixed">
 
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     HorizontalErrorValue = 1,
-
     VerticalErrorValue = 50,
-
     Mode = ErrorBarMode.Both,
-
     Type = ErrorBarType.Fixed
-
 };
 
 chart.Series.Add(errorBar);
@@ -437,17 +365,15 @@ chart.Series.Add(errorBar);
 
 {% highlight xaml %}
 
-<chart:ErrorBarSeries Name="Errorseries"  
-
-ItemsSource="{Binding EnergyProductions}" 
-
-XBindingPath="ID" 
-
-YBindingPath="Coal" 
-
-VerticalErrorValue="40" HorizontalErrorValue="10" 
-
-Mode="Both" Type="Percentage">
+<chart:ErrorBarSeries
+    Name="Errorseries"
+    ItemsSource="{Binding EnergyProductions}"
+    XBindingPath="ID"
+    YBindingPath="Coal"
+    VerticalErrorValue="40"
+    HorizontalErrorValue="10"
+    Mode="Both"
+    Type="Percentage" />
 
 {% endhighlight %}
 
@@ -455,21 +381,13 @@ Mode="Both" Type="Percentage">
 
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     HorizontalErrorValue = 1,
-
     VerticalErrorValue = 50,
-
     Mode = ErrorBarMode.Both,
-
     Type = ErrorBarType.Percentage
-
 };
 
 chart.Series.Add(errorBar);
@@ -478,27 +396,23 @@ chart.Series.Add(errorBar);
 
 {% endtabs %}
 
-
 ![Percentage error bar type in UWP Chart](ErrorBar_images/ErrorBar_5.png)
 
-
-### Standard Deviation
+### Standard deviation
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ErrorBarSeries Name="Errorseries"  
-
-ItemsSource="{Binding EnergyProductions}" 
-
-XBindingPath="ID" 
-
-YBindingPath="Coal" 
-
-VerticalErrorValue="40" HorizontalErrorValue="10" 
-
-Mode="Both" Type="StandardDeviation"/>
+<chart:ErrorBarSeries
+    Name="Errorseries"
+    ItemsSource="{Binding EnergyProductions}"
+    XBindingPath="ID"
+    YBindingPath="Coal"
+    VerticalErrorValue="40"
+    HorizontalErrorValue="10"
+    Mode="Both"
+    Type="StandardDeviation" />
 
 {% endhighlight %}
 
@@ -506,21 +420,13 @@ Mode="Both" Type="StandardDeviation"/>
 
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     HorizontalErrorValue = 1,
-
     VerticalErrorValue = 50,
-
     Mode = ErrorBarMode.Both,
-
     Type = ErrorBarType.StandardDeviation
-
 };
 
 chart.Series.Add(errorBar);
@@ -531,23 +437,21 @@ chart.Series.Add(errorBar);
 
 ![Standard deviation error bar type in UWP Chart](ErrorBar_images/ErrorBar_6.png)
 
-### Standard Errors
+### Standard errors
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:ErrorBarSeries Name="Errorseries"  
-
-ItemsSource="{Binding EnergyProductions}" 
-
-XBindingPath="ID" 
-
-YBindingPath="Coal" 
-
-VerticalErrorValue="40" HorizontalErrorValue="10" 
-
-Mode="Both" Type="StandardErrors"/>
+<chart:ErrorBarSeries
+    Name="Errorseries"
+    ItemsSource="{Binding EnergyProductions}"
+    XBindingPath="ID"
+    YBindingPath="Coal"
+    VerticalErrorValue="40"
+    HorizontalErrorValue="10"
+    Mode="Both"
+    Type="StandardErrors" />
 
 {% endhighlight %}
 
@@ -555,21 +459,13 @@ Mode="Both" Type="StandardErrors"/>
 
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     HorizontalErrorValue = 1,
-
     VerticalErrorValue = 50,
-
     Mode = ErrorBarMode.Both,
-
     Type = ErrorBarType.StandardErrors
-
 };
 
 chart.Series.Add(errorBar);
@@ -580,7 +476,6 @@ chart.Series.Add(errorBar);
 
 ![Standard error bar type in UWP Chart](ErrorBar_images/ErrorBar_7.png)
 
-
 ### Custom
 
 If the [`Type`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_Type) is [`Custom`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarType.html#Syncfusion_UI_Xaml_Charts_ErrorBarType_Custom), you have to bind [`HorizontalErrorPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalErrorPath) and [`VerticalErrorPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalErrorPath) as shown in the below code snippet.
@@ -589,19 +484,15 @@ If the [`Type`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Err
 
 {% highlight xaml %}
 
-<chart:ErrorBarSeries Name="Errorseries"  
-
-ItemsSource="{Binding EnergyProductions}" 
-
-XBindingPath="ID" 
-
-YBindingPath="Coal" 
-
-HorizontalErrorPath="HorizontalErrorValue"
-
-VerticalErrorPath="VerticalErrorValue"
-
-Mode="Both" Type="Custom"/>
+<chart:ErrorBarSeries
+    Name="Errorseries"
+    ItemsSource="{Binding EnergyProductions}"
+    XBindingPath="ID"
+    YBindingPath="Coal"
+    HorizontalErrorPath="HorizontalErrorValue"
+    VerticalErrorPath="VerticalErrorValue"
+    Mode="Both"
+    Type="Custom" />
 
 {% endhighlight %}
 
@@ -609,21 +500,13 @@ Mode="Both" Type="Custom"/>
 
 ErrorBarSeries errorBar = new ErrorBarSeries()
 {
-
     ItemsSource = new ViewModel().EnergyProductions,
-
     XBindingPath = "ID",
-
     YBindingPath = "Coal",
-
     HorizontalErrorValue = 1,
-
     VerticalErrorValue = 50,
-
     Mode = ErrorBarMode.Both,
-
     Type = ErrorBarType.Custom
-
 };
 
 chart.Series.Add(errorBar);
@@ -634,12 +517,11 @@ chart.Series.Add(errorBar);
 
 ![Custom error bar type in UWP Chart](ErrorBar_images/ErrorBar_8.png)
 
-
 ## Customization 
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides customization properties for the error bar lines as in the following section.
 
-### Line Style
+### Line style
 
 You can define the [`LineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineStyle.html) for the error bar lines using [`HorizontalLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalLineStyle) and [`VerticalLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalLineStyle) properties as in the below code examples.
 
@@ -649,9 +531,7 @@ You can define the [`LineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.U
 
 <chart:ErrorBarSeries.HorizontalLineStyle>
 
-<chart:LineStyle Stroke="Black"  StrokeThickness="2"  >
-
-</chart:LineStyle>
+    <chart:LineStyle Stroke="Black"  StrokeThickness="2" />
 
 </chart:ErrorBarSeries.HorizontalLineStyle>
 
@@ -661,11 +541,8 @@ You can define the [`LineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.U
 
 errorBarSeries.HorizontalLineStyle = new LineStyle()
 {
-
     Stroke = new SolidColorBrush(Colors.Black),
-
     StrokeThickness = 2
-
 };
 
 {% endhighlight %}
@@ -680,9 +557,9 @@ errorBarSeries.HorizontalLineStyle = new LineStyle()
 
 <chart:ErrorBarSeries.VerticalLineStyle>
 
-<chart:LineStyle Stroke="Black"  StrokeThickness="2"  >
-
-</chart:LineStyle>
+    <chart:LineStyle
+        Stroke="Black"
+        StrokeThickness="2" />
 
 </chart:ErrorBarSeries.VerticalLineStyle>
 
@@ -692,11 +569,8 @@ errorBarSeries.HorizontalLineStyle = new LineStyle()
 
 errorBarSeries.VerticalLineStyle = new LineStyle()
 {
-
     Stroke = new SolidColorBrush(Colors.Black),
-
     StrokeThickness = 2
-
 };
 
 {% endhighlight %}
@@ -705,8 +579,7 @@ errorBarSeries.VerticalLineStyle = new LineStyle()
 
 ![Error bar lines customization support in UWP Chart](ErrorBar_images/ErrorBar_10.png)
 
-
-### Line Cap Style
+### Line cap style
 
 ErrorBar line cap can be customized using [`HorizontalCapLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_HorizontalCapLineStyle) and [`VerticalCapLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html#Syncfusion_UI_Xaml_Charts_ErrorBarSeries_VerticalCapLineStyle) as in the below code examples.
 
@@ -716,9 +589,10 @@ ErrorBar line cap can be customized using [`HorizontalCapLineStyle`](https://hel
 
 <chart:ErrorBarSeries.HorizontalCapLineStyle>
 
-<chart:CapLineStyle Stroke="Black" StrokeThickness="2"  
-
-LineWidth="10"></chart:CapLineStyle>
+    <chart:CapLineStyle
+        Stroke="Black"
+        StrokeThickness="2"
+        LineWidth="10" />
 
 </chart:ErrorBarSeries.HorizontalCapLineStyle>
 
@@ -728,13 +602,9 @@ LineWidth="10"></chart:CapLineStyle>
 
 errorBarSeries.HorizontalCapLineStyle = new CapLineStyle()
 {
-
     Stroke = new SolidColorBrush(Colors.Black),
-
     StrokeThickness = 2,
-
     LineWidth = 10
-
 };
 
 {% endhighlight %}
@@ -749,9 +619,8 @@ errorBarSeries.HorizontalCapLineStyle = new CapLineStyle()
 
 <chart:ErrorBarSeries.VerticalCapLineStyle>
 
-<chart:CapLineStyle Stroke="Black" StrokeThickness="3"  
-
-LineWidth="15"></chart:CapLineStyle>
+    <chart:CapLineStyle Stroke="Black"
+        StrokeThickness="3" LineWidth="15" />
 
 </chart:ErrorBarSeries.VerticalCapLineStyle>
 
@@ -761,13 +630,9 @@ LineWidth="15"></chart:CapLineStyle>
 
 errorBarSeries.VerticalCapLineStyle = new CapLineStyle()
 {
-
     Stroke = new SolidColorBrush(Colors.Black),
-
     StrokeThickness = 3,
-
     LineWidth = 15
-
 };
 
 {% endhighlight %}
