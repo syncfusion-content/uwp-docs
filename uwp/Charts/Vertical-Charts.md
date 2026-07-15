@@ -11,7 +11,7 @@ documentation: ug
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support for vertical charts. You can plot vertical chart for any chart using [`IsTransposed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_IsTransposed) and [`OpposedPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_OpposedPosition) properties.
 
-## OpposedPosition
+## Opposed position
 
 Allows to position the axis in the opposite direction to the default position. The following code example illustrates placing the primary and secondary axes in opposite direction.
 
@@ -21,17 +21,15 @@ Allows to position the axis in the opposite direction to the default position. T
 
 <chart:SfChart.PrimaryAxis>
 
-<chart:CategoryAxis OpposedPosition="True" >
-
-</chart:CategoryAxis>
+    <chart:CategoryAxis OpposedPosition="True" />
 
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis Minimum="0" Maximum="40" Interval="10"                                   
-
-OpposedPosition="True"/>
+    <chart:NumericalAxis
+        Minimum="0" Maximum="40"
+        Interval="10" OpposedPosition="True" />
 
 </chart:SfChart.SecondaryAxis>
 
@@ -41,23 +39,16 @@ OpposedPosition="True"/>
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
-     OpposedPosition = true
-
+    OpposedPosition = true
 };
 
 chart.SecondaryAxis = new NumericalAxis()
 {
-     Minimum = 0,
-
-     Maximum = 40,
-
-     Interval = 10,
-
-     OpposedPosition = true
-
+    Minimum = 0,
+    Maximum = 40,
+    Interval = 10,
+    OpposedPosition = true
 };
-
 
 {% endhighlight %}
 
@@ -65,10 +56,9 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ![Opposed position support in UWP Chart](Vertical-Charts_images/VerticalCharts_1.png)
 
-
 ## IsTransposed
 
-This property used to switch the plotting of the series to vertical.
+This property is used to switch the plotting of the series to vertical.
 
 {% tabs %}
 
@@ -86,15 +76,10 @@ YBindingPath="ItemsCount" >
 
 LineSeries series = new LineSeries()
 {
-
-     IsTransposed = true,
-
-     ItemsSource = new ViewModel().SneakersDetail,
-
-     XBindingPath = "Brand",
-
-     YBindingPath = "ItemsCount"
-
+    IsTransposed = true,
+    ItemsSource = new ViewModel().SneakersDetail,
+    XBindingPath = "Brand",
+    YBindingPath = "ItemsCount"
 };
 
 {% endhighlight %}
@@ -111,67 +96,71 @@ The following example demonstrates the vertical charts.
 
 <chart:SfChart>
 
-<chart:SfChart.ColumnDefinitions>
+    <chart:SfChart.ColumnDefinitions>
 
-<chart:ChartColumnDefinition />
+        <chart:ChartColumnDefinition />
+        <chart:ChartColumnDefinition />
 
-<chart:ChartColumnDefinition/>
+    </chart:SfChart.ColumnDefinitions>
 
-</chart:SfChart.ColumnDefinitions>
+    <chart:SfChart.PrimaryAxis>
 
-<chart:SfChart.PrimaryAxis>
+        <chart:CategoryAxis
+            ShowGridLines="False" />
 
-<chart:CategoryAxis  ShowGridLines="False“ >
+    </chart:SfChart.PrimaryAxis>
 
-</chart:CategoryAxis>
+    <chart:SfChart.SecondaryAxis>
 
-</chart:SfChart.PrimaryAxis>
+        <chart:NumericalAxis />
 
-<chart:SfChart.SecondaryAxis>
+    </chart:SfChart.SecondaryAxis>
 
-<chart:NumericalAxis/>
+    <chart:LineSeries
+        IsTransposed="True"
+        ItemsSource="{Binding SneakersDetail}"
+        XBindingPath="Brand"
+        YBindingPath="ItemsCount">
 
-</chart:SfChart.SecondaryAxis>          
+        <chart:LineSeries.AdornmentsInfo>
 
-<chart:LineSeries   IsTransposed="True"  
+            <chart:ChartAdornmentInfo
+                ShowMarker="True"
+                Symbol="Ellipse"
+                SymbolHeight="10"
+                SymbolWidth="10"
+                SymbolInterior="#7f7f7f" />
 
-ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
+        </chart:LineSeries.AdornmentsInfo>
 
-YBindingPath="ItemsCount" >
+    </chart:LineSeries>
 
-<chart:LineSeries.AdornmentsInfo>
+    <chart:LineSeries
+        Interior="DarkGray"
+        IsTransposed="True"
+        ItemsSource="{Binding SneakersDetail}"
+        XBindingPath="Brand"
+        YBindingPath="Position">
 
-<chart:ChartAdornmentInfo  ShowMarker="True" Symbol="Ellipse" 
+        <chart:LineSeries.AdornmentsInfo>
 
-SymbolHeight="10" SymbolInterior="#7f7f7f" SymbolWidth="10">                        
+            <chart:ChartAdornmentInfo
+                ShowLabel="False"
+                ShowMarker="True"
+                Symbol="Ellipse"
+                SymbolHeight="10"
+                SymbolWidth="10"
+                SymbolInterior="DarkGray" />
 
-</chart:ChartAdornmentInfo>                        
+        </chart:LineSeries.AdornmentsInfo>
 
-</chart:LineSeries.AdornmentsInfo>
+        <chart:LineSeries.YAxis>
 
-</chart:LineSeries>
+            <chart:NumericalAxis />
 
-<chart:LineSeries  Interior="DarkGray" IsTransposed="True"
+        </chart:LineSeries.YAxis>
 
-ItemsSource="{Binding SneakersDetail}"  XBindingPath="Brand" 
-
-YBindingPath="Position" >
-
-<chart:LineSeries.AdornmentsInfo>
-
-<chart:ChartAdornmentInfo ShowLabel="False" ShowMarker="True" Symbol="Ellipse" SymbolHeight="10" 
-
-SymbolInterior="DarkGray" SymbolWidth="10"></chart:ChartAdornmentInfo>
-
-</chart:LineSeries.AdornmentsInfo>
-
-<chart:LineSeries.YAxis>
-
-<chart:NumericalAxis />
-
-</chart:LineSeries.YAxis>
-
-</chart:LineSeries>
+    </chart:LineSeries>
 
 </chart:SfChart>
 
@@ -187,9 +176,7 @@ chart.ColumnDefinitions.Add(new ChartColumnDefinition());
 
 chart.PrimaryAxis = new CategoryAxis()
 {
-
-    ShowGridLines = true
-
+    ShowGridLines = false
 };
 
 NumericalAxis axis = new NumericalAxis();
@@ -200,64 +187,39 @@ ChartBase.SetColumn(axis, 1);
 
 LineSeries series1 = new LineSeries()
 {
-
     IsTransposed = true,
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
     YBindingPath = "ItemsCount"
-
 };
 
 ChartAdornmentInfo adornmentInfo1 = new ChartAdornmentInfo()
 {
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse,
-
     SymbolHeight = 10,
-
     SymbolWidth = 10,
-
     SymbolInterior = new SolidColorBrush(Color.FromRgb(0x7f, 0x7f, 0x7f)),
-
 };
 
 LineSeries series2 = new LineSeries()
 {
-
     IsTransposed = true,
-
     Interior = new SolidColorBrush(Colors.DarkGray),
-
     ItemsSource = new ViewModel().SneakersDetail,
-
     XBindingPath = "Brand",
-
-    YBindingPath = "position",
-
+    YBindingPath = "Position",
     YAxis = new NumericalAxis()
-
 };
 
 ChartAdornmentInfo adornmentInfo2 = new ChartAdornmentInfo()
 {
-
     ShowLabel = false,
-
     ShowMarker = true,
-
     Symbol = ChartSymbol.Ellipse,
-
     SymbolHeight = 10,
-
     SymbolWidth = 10,
-
     SymbolInterior = new SolidColorBrush(Colors.DarkGray),
-
 };
 
 series1.AdornmentsInfo = adornmentInfo1;
@@ -277,5 +239,3 @@ chart.Series.Add(series2);
 {% endtabs %}
 
 ![Transposing the chart in UWP](Vertical-Charts_images/VerticalCharts_3.png)
-
-

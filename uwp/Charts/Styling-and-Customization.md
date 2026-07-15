@@ -9,13 +9,13 @@ documentation: ug
 
 # Styling and Customization in UWP Charts (SfChart)
 
-[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) support various customizing and styling options that allows you to enrich the application.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports various customizing and styling options that allow you to enrich the application.
 
 ## Palettes
 
-[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
+[`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides options to apply different kinds of themes or palettes to your chart. You can define Palette either for the entire chart or for an individual series.
 
-We have some predefined palette such as
+The following predefined palettes are available:
 
 * Metro
 * AutumnBrights
@@ -32,7 +32,7 @@ We have some predefined palette such as
 
 N> Elite, SandyBeach and LightCandy palettes are not supported in the bitmap series types.
 
-### Applying Palette to Series
+### Applying palette to series
 
 Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) for the chart series.
 
@@ -40,7 +40,7 @@ Each palette applies a set of predefined brushes to the series in a predefined o
 
 {% highlight xaml %}
 
-<chart:SfChart Height="250" Width="350" Palette="Metro" >
+<chart:SfChart Height="250" Width="350" Palette="Metro" />
 
 {% endhighlight %}
 
@@ -54,14 +54,13 @@ chart.Palette = ChartColorPalette.Metro;
 
 ![Predefined palettes in UWP Chart](Styling-and-Customization_images/palette_1.png)
 
-
 The following code example defined [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Palette) as [`BlueChrome`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColorPalette.html#Syncfusion_UI_Xaml_Charts_ChartColorPalette_BlueChrome).
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<chart:SfChart Height="250" Width="350" Palette="BlueChrome">
+<chart:SfChart Height="250" Width="350" Palette="BlueChrome" />
 
 {% endhighlight %}
 
@@ -75,8 +74,7 @@ chart.Palette = ChartColorPalette.BlueChrome;
 
 ![Predefined palettes in UWP Chart](Styling-and-Customization_images/palette_2.png)
 
-
-### Applying Palette to Segment
+### Applying palette to segment
 
 Each palette applies a set of predefined brushes to the series in a predefined order. The following code example shows you how to set the Metro [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_Palette) for the chart series.
 
@@ -85,25 +83,18 @@ Each palette applies a set of predefined brushes to the series in a predefined o
 {% highlight xaml %}
 
 <chart:DoughnutSeries YBindingPath="Percentage" Palette="Metro"
-
-XBindingPath="Category" ItemsSource="{Binding Tax}" />
+                      XBindingPath="Category" ItemsSource="{Binding Tax}" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 DoughnutSeries series = new DoughnutSeries()
-
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     Palette = ChartColorPalette.Metro
-
 };
 
 chart.Series.Add(series);
@@ -121,25 +112,18 @@ The following code example defined [`Palette`](https://help.syncfusion.com/cr/uw
 {% highlight xaml %}
 
 <chart:DoughnutSeries YBindingPath="Percentage" Palette="AutumnBrights"
-
-XBindingPath="Category" ItemsSource="{Binding Tax}" />
+                      XBindingPath="Category" ItemsSource="{Binding Tax}" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 DoughnutSeries series = new DoughnutSeries()
-
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     Palette = ChartColorPalette.AutumnBrights
-
 };
 
 chart.Series.Add(series);
@@ -150,10 +134,9 @@ chart.Series.Add(series);
 
 ![Applying palette to segment in UWP Chart](Styling-and-Customization_images/palette_4.png)
 
-
 N> Metro palette is the default palette for both Series and Segment.
 
-## Custom Palette
+## Custom palette
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides option which enables you to define your own [`CustomBrushes`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartColorModel.html#Syncfusion_UI_Xaml_Charts_ChartColorModel_CustomBrushes) with your preferred order for the Palette, using [`ColorModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) as shown in the following code example.
 
@@ -161,25 +144,26 @@ N> Metro palette is the default palette for both Series and Segment.
 
 {% highlight xaml %}
 
-<chart:DoughnutSeries  YBindingPath="Percentage" Palette="Custom"
+<chart:DoughnutSeries
+    YBindingPath="Percentage"
+    Palette="Custom"
+    XBindingPath="Category"
+    ItemsSource="{Binding Tax}">
 
-XBindingPath="Category" ItemsSource="{Binding Tax}" >   
+    <chart:DoughnutSeries.ColorModel>
 
-<chart:DoughnutSeries.ColorModel>
+        <chart:ChartColorModel>
 
-<chart:ChartColorModel>
+            <chart:ChartColorModel.CustomBrushes>
 
-<chart:ChartColorModel.CustomBrushes>
+                <SolidColorBrush Color="Cyan" />
+                <SolidColorBrush Color="DarkCyan" />
 
-<SolidColorBrush Color="Cyan"/>
+            </chart:ChartColorModel.CustomBrushes>
 
-<SolidColorBrush Color="DarkCyan"/>                                                
+        </chart:ChartColorModel>
 
-</chart:ChartColorModel.CustomBrushes>
-
-</chart:ChartColorModel>
-
-</chart:DoughnutSeries.ColorModel>
+    </chart:DoughnutSeries.ColorModel>
 
 </chart:DoughnutSeries>
 
@@ -195,17 +179,11 @@ colorModel.CustomBrushes.Add(new SolidColorBrush(Colors.DarkCyan));
 
 DoughnutSeries series = new DoughnutSeries()
 {
-
     ItemsSource = new ViewModel().Tax,
-
     XBindingPath = "Category",
-
     YBindingPath = "Percentage",
-
     Palette = ChartColorPalette.Custom,
-
     ColorModel = colorModel
-
 };
 
 chart.Series.Add(series);
@@ -216,7 +194,6 @@ chart.Series.Add(series);
 
 ![Custom palette in UWP Chart](Styling-and-Customization_images/palette_5.png)
 
-
 You can define the custom palette for series as in the below code example:
 
 {% tabs %}
@@ -225,23 +202,21 @@ You can define the custom palette for series as in the below code example:
 
 <chart:SfChart Height="250" Width="350" Palette="Custom">
 
-<chart:SfChart.ColorModel>
+    <chart:SfChart.ColorModel>
 
-<chart:ChartColorModel>
+        <chart:ChartColorModel>
 
-<chart:ChartColorModel.CustomBrushes>
+            <chart:ChartColorModel.CustomBrushes>
 
-<SolidColorBrush Color="BlueViolet"/>
+                <SolidColorBrush Color="BlueViolet" />
+                <SolidColorBrush Color="PeachPuff" />
+                <SolidColorBrush Color="Purple" />
 
-<SolidColorBrush Color="PeachPuff"/>
+            </chart:ChartColorModel.CustomBrushes>
 
-<SolidColorBrush Color="Purple"/>
+        </chart:ChartColorModel>
 
-</chart:ChartColorModel.CustomBrushes>
-
-</chart:ChartColorModel>
-
-</chart:SfChart.ColorModel>
+    </chart:SfChart.ColorModel>
 
 </chart:SfChart>
 
@@ -267,8 +242,7 @@ chart.ColorModel = colorModel;
 
 ![Custom palette in UWP chart](Styling-and-Customization_images/palette_6.png)
 
-
-## Gradient Colors
+## Gradient colors
 
 Gradient colors for the chart series can be set by using the [`Interior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSegment.html#Syncfusion_UI_Xaml_Charts_ChartSegment_Interior) or [`ColorModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ColorModel) property of the chart series with the help of `LinearGradientBrush` or `RadialGradientBrush`.
 
@@ -317,8 +291,7 @@ The following code sample and screenshot illustrates how to apply the custom gra
 
 SfChart chart = new SfChart();
 
-...
-
+// Code omitted for brevity
 ChartColorModel colorModel = new ChartColorModel();
 
 LinearGradientBrush gradientColor1 = new LinearGradientBrush();
@@ -341,28 +314,17 @@ gradientColor2.GradientStops.Add(stop1);
 
 gradientColor2.GradientStops.Add(stop2);
 
-...
-
 colorModel.CustomBrushes.Add(gradientColor1);
 
 colorModel.CustomBrushes.Add(gradientColor2);
 
-...
-
 ColumnSeries series = new ColumnSeries()
-
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Element",
-
     YBindingPath = "YValue",
-
     Palette = ChartColorPalette.Custom,
-
     ColorModel = colorModel
-
 };
 
 chart.Series.Add(series);
@@ -398,8 +360,7 @@ The following code sample and screenshot illustrates how to apply the gradient c
 
 SfChart chart = new SfChart();
 
-...
-
+// Code omitted for brevity
 LinearGradientBrush gradientColor = new LinearGradientBrush();
 
 GradientStop stop1 = new GradientStop() { Offset = 1, Color = Color.FromRgb(168, 234, 238) };
@@ -410,20 +371,12 @@ gradientColor.GradientStops.Add(stop1);
 
 gradientColor.GradientStops.Add(stop2);
 
-...
-
 ColumnSeries series = new ColumnSeries()
-
 {
-
     ItemsSource = new ViewModel().Data,
-
     XBindingPath = "Element",
-
     YBindingPath = "YValue",
-
     Interior = gradientColor,
-
 };
 
 chart.Series.Add(series);
@@ -433,7 +386,6 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Gradient color in UWP Chart](Styling-and-Customization_images/palette_11.png)
-
 
 ## SegmentColorPath
 
@@ -446,10 +398,8 @@ The color of the chart segments can be updated by binding their corresponding mo
 <chart:ColumnSeries ItemsSource="{Binding Data}"
                     XBindingPath="XValue" 
                     YBindingPath="YValue" 
-                    SegmentColorPath="SegmentColor">
-                    
+                    SegmentColorPath="SegmentColor">                
 </chart:ColumnSeries>
-
 
 {% endhighlight %}
 
@@ -483,7 +433,6 @@ ColumnSeries series = new ColumnSeries()
     SegmentColorPath = "SegmentColor"
 };
 
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -492,8 +441,7 @@ ColumnSeries series = new ColumnSeries()
 
 N> `SegmentColorPath` property is not applicable for Area, SplineArea, StepArea, RangeArea, FastLine, Candle, HiLoOpenClose, and CircularSeries (when the Polar and Radar DrawType are Area).
 
-
-## Customize Legends
+## Customize legends
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides many options to customize the chart legends. Basically it is an ItemsControl, so you can customize the ItemTemplate, ItemsPanel, etc.
 
@@ -503,61 +451,52 @@ The following code example demonstrates applying the palette color to the legend
 
 <chart:SfChart.Legend>
 
-<chart:ChartLegend DockPosition="Left" >
+    <chart:ChartLegend DockPosition="Left">
 
-<chart:ChartLegend.ItemTemplate>
+        <chart:ChartLegend.ItemTemplate>
 
-<DataTemplate>
+            <DataTemplate>
 
-<StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
 
-<Grid Margin="20,0,0,0">
+                    <Grid Margin="20,0,0,0">
 
-<Grid.ColumnDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
 
-<ColumnDefinition/>
+                        <Ellipse
+                            Width="10"
+                            Height="10"
+                            Fill="{Binding Interior}">
 
-<ColumnDefinition/>
+                            <Ellipse.Effect>
+                                <DropShadowEffect
+                                    Direction="315"
+                                    BlurRadius="0.8"
+                                    ShadowDepth="3"
+                                    Color="Black" />
+                            </Ellipse.Effect>
 
-</Grid.ColumnDefinitions>
+                        </Ellipse>
 
-<Ellipse Width="10" Height="10" 
+                        <TextBlock
+                            Grid.Column="1"
+                            Margin="5,0,0,0"
+                            FontSize="10"
+                            Foreground="Black"
+                            Text="{Binding Label}" />
 
-Fill="{Binding Interior}">
+                    </Grid>
 
-<Ellipse.Effect>
+                </StackPanel>
 
-<DropShadowEffect Direction="315" 
+            </DataTemplate>
 
-BlurRadius="0.8"   
+        </chart:ChartLegend.ItemTemplate>
 
-ShadowDepth="3" 
-
-Color="Black"/>
-
-</Ellipse.Effect>
-
-</Ellipse>
-
-<TextBlock Margin="5,0,0,0" 
-
-FontSize="10"  
-
-Grid.Column="1" 
-
-Foreground="Black" 
-
-Text="{Binding Label}"></TextBlock>
-
-</Grid>
-
-</StackPanel>
-
-</DataTemplate>
-
-</chart:ChartLegend.ItemTemplate>
-
-</chart:ChartLegend>
+    </chart:ChartLegend>
 
 </chart:SfChart.Legend>
 
@@ -565,98 +504,94 @@ Text="{Binding Label}"></TextBlock>
 
 ![Customizing legend in UWP Chart](Styling-and-Customization_images/palette_7.png)
 
-
 If you are having more number of items in the legend, you can override the ItemsPanel and add ScrollViewer. So that you can able to scroll the legend items. Please refer [this](https://www.syncfusion.com/kb/11671/how-to-add-multiple-legend-items-in-scroll-viewer-in-uwp-chart) kb for more details.
 
-## Customize ToolTip
+## Customize tooltip
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides the option to define your own template for Tooltip. The following code example demonstrates the custom tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) property.
 
 {% highlight xaml %}
 
-<chart:BarSeries ItemsSource="{Binding CategoricalDatas}"  
+<chart:BarSeries
+    ItemsSource="{Binding CategoricalDatas}"
+    Chart:ChartTooltip.ShowDuration="5000"
+    XBindingPath="Category"
+    YBindingPath="Value"
+    ShowTooltip="True"
+    Palette="FloraHues">
 
-chart:ChartTooltip.ShowDuration="5000"
+    <chart:BarSeries.TooltipTemplate>
 
-XBindingPath="Category" YBindingPath="Value" 
+        <DataTemplate>
 
-ShowTooltip="True"  Palette="FloraHues" >
+            <Border
+                BorderBrush="Black"
+                BorderThickness="1">
 
-<chart:BarSeries.TooltipTemplate>
+                <Grid Height="40">
 
-<DataTemplate >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*" />
+                        <RowDefinition Height="0.5*" />
+                    </Grid.RowDefinitions>
 
-<Border BorderBrush="Black" BorderThickness="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
 
-<Grid  Height="40">
+                    <Rectangle
+                        Grid.RowSpan="2"
+                        Grid.ColumnSpan="3"
+                        Fill="White" />
 
-<Grid.RowDefinitions>
+                    <Image
+                        Grid.RowSpan="2"
+                        Grid.Column="0"
+                        HorizontalAlignment="Left"
+                        Margin="3"
+                        Source="{Binding Item.ImagePath}" />
 
-<RowDefinition Height="0.5*"/>
+                    <TextBlock
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        Margin="3,3,6,3"
+                        Text="{Binding Item.Category}"
+                        FontSize="10"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextAlignment="Center"
+                        Foreground="Black" />
 
-<RowDefinition Height="0.5*"/>
+                    <TextBlock
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        Margin="3,3,6,3"
+                        Text="{Binding Item.Value}"
+                        FontSize="10"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextAlignment="Left"
+                        Foreground="Black" />
 
-</Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Text="Value:"
+                        FontSize="10"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Center"
+                        TextAlignment="Left"
+                        Foreground="Black" />
 
-<Grid.ColumnDefinitions>
+                </Grid>
 
-<ColumnDefinition/>
+            </Border>
 
-<ColumnDefinition/>
+        </DataTemplate>
 
-<ColumnDefinition/>
-
-</Grid.ColumnDefinitions>
-
-<Rectangle Fill="White" Grid.RowSpan="2" 
-
-Grid.ColumnSpan="3" ></Rectangle>
-
-<Image Grid.RowSpan="2" Grid.Column="0" 
-
-HorizontalAlignment="Left" Margin="3" 
-
-Source="{Binding Item.ImagePath}" ></Image>
-
-<TextBlock Margin="3,3,6,3" Text="{Binding Item.Category }" 
-
-FontSize="10" Grid.Column="1" 
-
-Grid.ColumnSpan="2" 
-
-HorizontalAlignment="Left"
-
-VerticalAlignment="Center" TextAlignment="Center" 
-
-Foreground="Black" />
-
-<TextBlock VerticalAlignment="Center" Margin="3,3,6,3" 
-
-Grid.Column="2" Grid.Row="1" 
-
-TextAlignment="Left" Text="{Binding Item.Value}" 
-
-HorizontalAlignment="Left" 
-
-Foreground="Black" FontSize="10"/>
-
-<TextBlock VerticalAlignment="Center" 
-
-Grid.Column="1" Grid.Row="1" 
-
-TextAlignment="Left" Text="Value:"
-
-HorizontalAlignment="Left" 
-
-Foreground="Black" FontSize="10"/>
-
-</Grid>
-
-</Border>
-
-</DataTemplate>
-
-</chart:BarSeries.TooltipTemplate>
+    </chart:BarSeries.TooltipTemplate>
 
 </chart:BarSeries>
 
@@ -664,8 +599,7 @@ Foreground="Black" FontSize="10"/>
 
 ![Customizing tooltip in UWP Chart](Styling-and-Customization_images/palette_8.png)
 
-
-## Customize Series
+## Customize series
 
 [`CustomTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html#Syncfusion_UI_Xaml_Charts_LineSeries_CustomTemplate) property is used to customize the chart series. It supports the following series
 
@@ -694,45 +628,42 @@ The following code example illustrates the use of [`CustomTemplate`](https://hel
 
 {% highlight xaml %}
 
-<chart:ScatterSeries  ScatterHeight="20" ScatterWidth="20" Interior="Gray"
+<chart:ScatterSeries
+    ScatterHeight="20"
+    ScatterWidth="20"
+    Interior="Gray"
+    XBindingPath="Year"
+    YBindingPath="Count"
+    ItemsSource="{Binding}">
 
-XBindingPath="Year" YBindingPath="Count" 
+    <chart:ScatterSeries.CustomTemplate>
 
-ItemsSource="{Binding}">
+        <DataTemplate>
 
-<chart:ScatterSeries.CustomTemplate>
+            <Canvas>
 
-<DataTemplate>
+                <Path
+                    Fill="{Binding Converter={StaticResource ScatterInteriorConverter}}"
+                    Stretch="Fill"
+                    Height="{Binding ScatterHeight}"
+                    Width="{Binding ScatterWidth}"
+                    RenderTransformOrigin="0.5,0.5"
+                    Canvas.Left="{Binding RectX}"
+                    Canvas.Top="{Binding RectY}"
+                    Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
 
-<Canvas>
+                    <Path.RenderTransform>
+                        <RotateTransform
+                            Angle="{Binding Converter={StaticResource ScatterAngleConverter}}" />
+                    </Path.RenderTransform>
 
-<Path Fill="{Binding Converter={StaticResource ScatterInteriorConverter}}"
+                </Path>
 
-Stretch="Fill"  
+            </Canvas>
 
-Height="{Binding ScatterHeight}" Width="{Binding ScatterWidth}" 
+        </DataTemplate>
 
-RenderTransformOrigin="0.5,0.5"
-
-Canvas.Left="{Binding RectX}" Canvas.Top="{Binding RectY}"
-
-Data="M20.125,32L0.5,12.375L10.3125,12.375L10.3125,
-
-0.5L29.9375,0.5L29.9375,12.375L39.75,12.375z">
-
-<Path.RenderTransform>
-
-<RotateTransform Angle="{Binding Converter={StaticResource ScatterAngleConverter}}"/>
-
-</Path.RenderTransform>
-
-</Path>
-
-</Canvas>
-
-</DataTemplate>
-
-</chart:ScatterSeries.CustomTemplate>                
+    </chart:ScatterSeries.CustomTemplate>
 
 </chart:ScatterSeries>
 
@@ -744,21 +675,13 @@ SfChart chart = new SfChart();
 
 ScatterSeries series = new ScatterSeries()
 {
-
     ItemsSource = new ViewModel().List,
-
     XBindingPath = "Year",
-
     YBindingPath = "Count",
-
     ScatterHeight = 20,
-
     ScatterWidth = 20,
-
     Interior = new SolidColorBrush(Colors.DarkGray),
-
     CustomTemplate = chart.Resources["seriesTemplate"] as DataTemplate
-
 };
 
 chart.Series.Add(series);
@@ -768,5 +691,3 @@ chart.Series.Add(series);
 {% endtabs %}
 
 ![Customizing series in UWP Chart](Styling-and-Customization_images/palette_9.png)
-
-
