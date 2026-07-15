@@ -1,65 +1,59 @@
 ---
 layout: post
 title: DataBinding in UWP TreeMap control | Syncfusion
-description: Learn here all about DataBinding support in Syncfusion UWP TreeMap (SfTreeMap) control and more.
-platform: UWP
-control: TreeMap
+description: Learn about DataBinding support in Syncfusion UWP TreeMap (SfTreeMap), including binding hierarchical data, population, and visualization techniques.
+platform: uwp
+control: SfTreeMap
 documentation: ug
 ---
 
 # DataBinding in UWP TreeMap (SfTreeMap)
 
-The SfTreeMap is bound to an external data source to display the data. It supports the data sources such as List, ObservableCollection, and so on. ItemsSource property helps to bind the TreeMap with the collection of objects.
+The SfTreeMap is bound to an external data source to display the data. It supports data sources such as List, ObservableCollection, and so on. The ItemsSource property helps to bind the TreeMap with the collection of objects.
 
-In order to bind the data source of the SfTreeMap, set the `ItemsSource` property and to generate the treemap items set `WeightValuePath` as shown below
+In order to bind the data source of the SfTreeMap, set the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ItemsSource) property and to generate the treemap items, set [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) as shown below.
 
-If the data source implements ICollectionChanged interface, then SfTreeMap will automatically refresh the view when an item is added, removed or while list cleared. When you add or remove an item in ObservableCollection, the SfTreeMap automatically refreshes the view as the ObservableCollection implements the INotifyCollectionChanged. But when you do the same in List, SfTreeMap will not refresh the view automatically.
+If the data source implements the ICollectionChanged interface, then SfTreeMap will automatically refresh the view when an item is added, removed, or while the list is cleared. When you add or remove an item in an ObservableCollection, the SfTreeMap automatically refreshes the view, as the ObservableCollection implements the INotifyCollectionChanged. But when you do the same in a List, SfTreeMap will not refresh the view automatically.
 
 If the data model implements the INotifyPropertyChanged interface, then the SfTreeMap responds to the property change in runtime to update the view. 
 
 ## WeightValuePath
 
-`WeightValuePath` of SfTreeMap is a path to a field on the source object, which serve as the "weight" of the object.
+[`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) of SfTreeMap is a path to a field on the source object, which serves as the "weight" of the object.
 
-The SfTreeMap generates treemap items based on the property `WeightValuePath` . It is a bindable property and it decides how to display the treemap items.
+The SfTreeMap generates treemap items based on the property [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) . It is a bindable property and it decides how to display the treemap items.
 
-TreeMap calculates the size of the object with the help of `WeightValuePath`.
+TreeMap calculates the size of the object with the help of [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath).
 
 Code Sample:
 
 {% highlight xaml %}
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" >
-
-        </syncfusion:SfTreeMap>
-    </Grid>
+<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" />
+</Grid>
 
 {% endhighlight %}
 
-N>  The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection and it should be numerical value.
+N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection and it should be numerical value.
 
 ![treemapimage](GettingStarted_images/treemapimage.png)
 
-
 ## ColorValuePath
 
-`ColorValuePath` of SfTreeMap is a path to a field on the source object, which serves as the "Color" of the object.
+[`ColorValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ColorValuePath) of SfTreeMap is a path to a field on the source object, which serves as the "Color" of the object.
 
-The SfTreeMap applying colors to the treemap nodes based on the property `ColorValuePath` . It is a bindable property and it decides how to Color the treemap node.
-
+The SfTreeMap applies colors to the treemap nodes based on the property [`ColorValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_ColorValuePath). It is a bindable property and it decides how to color the treemap node.
 
 Code Sample:
 
 {% highlight xaml %}
 
-     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth" >
-
-        </syncfusion:SfTreeMap>
-    </Grid>
+<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth" />
+</Grid>
 
 {% endhighlight %}
 
-N>  The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
-
+N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
