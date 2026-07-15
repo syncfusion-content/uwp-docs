@@ -6,6 +6,7 @@ platform: uwp
 control: SfSparkline
 documentation: ug
 ---
+
 # Marker customization in UWP Sparkline (SfSparkline)
 
 We can customize the markers by initializing the marker template selector class, and we can differentiate the first, last, high, low, negative points.
@@ -24,39 +25,27 @@ We can customize the markers by initializing the marker template selector class,
 
 {% highlight xaml %}
 
-<Syncfusion:SfLineSparkline  Interior="#4a4a4a" 
-                                         
+<Syncfusion:SfLineSparkline  Interior="#4a4a4a"
                              BorderBrush="DarkGray"
-                                    
-                             MarkerVisibility="Visible"   
-                                         
-                             BorderThickness="1" 
-                                         
-                             ItemsSource="{Binding UsersList}"    
-                                         
+                             MarkerVisibility="Visible"
+                             BorderThickness="1"
+                             ItemsSource="{Binding UsersList}"   
                              YBindingPath="NoOfUsers">
 
-<Syncfusion:SfLineSparkline.MarkerTemplateSelector>
+    <Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-<Syncfusion:MarkerTemplateSelector  FirstPointBrush="Yellow"
+        <Syncfusion:MarkerTemplateSelector FirstPointBrush="Yellow"
+                                           LastPointBrush="Green"
+                                           LowPointBrush="Red"
+                                           MarkerHeight="15"
+                                           MarkerWidth="15"
+                                           MarkerBrush="DeepSkyBlue"
+                                           NegativePointBrush="Blue"
+                                           HighPointBrush="Purple">
 
-                                    LastPointBrush="Green"
+        </Syncfusion:MarkerTemplateSelector>
 
-                                    LowPointBrush="Red"
-
-                                    MarkerHeight="15"
-
-                                    MarkerWidth="15"
-
-                                    MarkerBrush="DeepSkyBlue"
-
-                                    NegativePointBrush="Blue"
-
-                                    HighPointBrush="Purple">
-
-</Syncfusion:MarkerTemplateSelector>
-
-</Syncfusion:SfLineSparkline.MarkerTemplateSelector>
+    </Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
 </Syncfusion:SfLineSparkline >
 
@@ -66,40 +55,23 @@ We can customize the markers by initializing the marker template selector class,
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
 	ItemsSource = new SparkViewModel().Data,
-
 	YBindingPath = "Day",
-
 	MarkerVisibility = Visibility.Visible,
-
 	Interior = new SolidColorBrush(Colors.Gray),
-
     BorderBrush = new SolidColorBrush(Colors.DarkGray),
-
     BorderThickness = new Thickness(1)
-
 };
 
 SegmentTemplateSelector selector = new SegmentTemplateSelector()
 {
-
-	FirstPointBrush = new SolidColorBrush(Colors.Yellow),
-
-	LastPointBrush = new SolidColorBrush(Colors.Yellow),
-
-	HighPointBrush = new SolidColorBrush(Colors.Red),
-
-	MarkerHeight = 15,
-
+    FirstPointBrush = new SolidColorBrush(Colors.Yellow),
+    LastPointBrush = new SolidColorBrush(Colors.Yellow),
+    HighPointBrush = new SolidColorBrush(Colors.Red),
+    MarkerHeight = 15,
     MarkerWidth = 15,
-
     MarkerBrush = new SolidColorBrush(Colors.DeepSkyBlue),
-
     NegativePointBrush = new SolidColorBrush(Colors.Blue),
-
-    HighPointBrush = new SolidColorBrush(Colors.Purple),
-
 };
 
 sparkline.MarkerTemplateSelector = selector;
@@ -108,13 +80,11 @@ sparkline.MarkerTemplateSelector = selector;
 
 {% endtabs %}
 
-
 ![Marker Customization](Marker-Customization_images/MarkerCustomization_img1.jpeg)
 
+**Marker template**
 
-**Marker Template**
-
-You can customize default appearance of the marker symbol by using the MarkerTemplate property in the sparkline.
+You can customize the default appearance of the marker symbol by using the MarkerTemplate property in the sparkline.
 
 {% tabs %}
 
@@ -126,19 +96,11 @@ You can customize default appearance of the marker symbol by using the MarkerTem
 
         <Grid>
 
-            <Ellipse Height="15" Width="15" 
-                                             
-                     Fill="LightGoldenrodYellow"
-                                             
-                     Stroke="Black" StrokeDashArray="1,1" 
-                                             
-                     StrokeThickness="1" />
+            <Ellipse Height="15" Width="15" Fill="LightGoldenrodYellow"
+                      Stroke="Black" StrokeDashArray="1,1" StrokeThickness="1" />
 
             <Ellipse Height="12" Width="12" Fill="Blue" Stroke="Black"   
-                                             
-                     StrokeDashArray="1,1" 
-                                             
-                     StrokeThickness="1"/>
+                     StrokeDashArray="1,1" StrokeThickness="1"/>
 
         </Grid>
 
@@ -147,15 +109,10 @@ You can customize default appearance of the marker symbol by using the MarkerTem
 </Grid.Resources>
 
 <Syncfusion:SfLineSparkline Interior="#4a4a4a"  
-
                             BorderBrush="DarkGray"
-                                        
-                            MarkerVisibility="Visible"   
-
+                            MarkerVisibility="Visible"
                             BorderThickness="1"
-                                        
-                            ItemsSource="{Binding UsersList}"  
-
+                            ItemsSource="{Binding UsersList}"
                             YBindingPath="NoOfUsers">
 
         <Syncfusion:SfLineSparkline.MarkerTemplateSelector>
@@ -172,26 +129,17 @@ You can customize default appearance of the marker symbol by using the MarkerTem
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
 	ItemsSource = new SparkViewModel().Data,
-
 	YBindingPath = "Day",
-
 	MarkerVisibility = Visibility.Visible,
-
 	Interior =new SolidColorBrush(Colors.Gray),
-
 	BorderBrush = new SolidColorBrush(Colors.DarkGray),
-
 	BorderThickness = new Thickness (1)
-
 };
 
 MarkerTemplateSelector selector = new MarkerTemplateSelector()
 {
-
 	MarkerTemplate = grid.Resources["markerTemplate"] as DataTemplate
-
 };
 
 sparkline.MarkerTemplateSelector = selector;
@@ -201,5 +149,3 @@ sparkline.MarkerTemplateSelector = selector;
 {% endtabs %}
 
 ![MarkerTemplate](Marker-Customization_images/MarkerCustomization_img2.jpeg)
-
-

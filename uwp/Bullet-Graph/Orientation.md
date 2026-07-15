@@ -9,21 +9,20 @@ documentation: ug
 
 # Orientation in UWP Bullet Graph (SfBulletGraph)
 
-By default orientation of SfBulletGraph is horizontal. It can be customized by using **Orientation** property respectively.
+By default, the orientation of SfBulletGraph is horizontal. It can be customized by using the [`Orientation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Orientation) property respectively.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfBulletGraph Orientation="Vertical">
-    </syncfusion:SfBulletGraph>
+<syncfusion:SfBulletGraph Orientation="Vertical" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-     SfBulletGraph bullet = new SfBulletGraph();
-     bullet.Orientation = Orientation.Vertical;
-     this.Grid.Children.Add(bullet);
+SfBulletGraph bullet = new SfBulletGraph();
+bullet.Orientation = Orientation.Vertical;
+this.Grid.Children.Add(bullet);
 
 {% endhighlight %}
 
@@ -31,8 +30,8 @@ By default orientation of SfBulletGraph is horizontal. It can be customized by u
 <table>
 <tr>
 <td>
-{{'![](Orientation_images/Orientation_img1.jpeg)'| markdownify }}
+{{'![Vertical Orientation in UWP Bullet Graph](Orientation_images/Orientation_img1.jpeg)'| markdownify }}
 </td><td>
-{{'![](Orientation_images/Orientation_img2.jpeg)'| markdownify }}
+{{'![Horizontal Orientation in UWP Bullet Graph](Orientation_images/Orientation_img2.jpeg)'| markdownify }}
 </td></tr>
 </table>

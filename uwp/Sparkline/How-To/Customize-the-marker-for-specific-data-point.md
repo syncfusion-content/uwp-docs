@@ -2,51 +2,40 @@
 layout: post
 title: Customize the marker for specific data point 
 description: Customize the marker for specific data point
-platform: wpf
+platform: uwp
 control: SfSparkline
 documentation: ug
 ---
+
 # Customize the marker for specific data point
 
-We can customize the marker for specific data point with custom template for LineSparkline and AreaSparkline, in order to customize the marker we need to inherit the [`MarkerTemplateSelector`](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.html#) class and override the SelectTemplate method.
+We can customize the marker for a specific data point with a custom template for LineSparkline and AreaSparkline. In order to customize the marker, we need to inherit the [`MarkerTemplateSelector`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.html) class and override the SelectTemplate method.
 
-{%highlight C#%}
+{% highlight c# %}
 
 public class CustomMarkersTemplateSelector : MarkerTemplateSelector
-
 {
-
-protected override DataTemplate SelectTemplate(double x, double y)
-
-{
-
-if (y == MaximumY)
-
-{
-
-DataTemplate markerTemplate =  Application.Current.Resources["markerTemplate"] as DataTemplate;
-
-return markerTemplate;
-
+    protected override DataTemplate SelectTemplate(double x, double y)
+    {
+        if (y == MaximumY)
+        {
+            DataTemplate markerTemplate = Application.Current.Resources["markerTemplate"] as DataTemplate;
+            return markerTemplate;
+        }
+        else
+            return base.SelectTemplate(x, y);
+    }
 }
 
-else
+{% endhighlight %}
 
-return base.SelectTemplate(x, y);
+{% highlight xaml %}
 
-}
+<Syncfusion:SfLineSparkline BorderBrush="DarkGray"
 
-}
+BorderThickness="1" ItemsSource="{Binding UsersList}"
 
-{%endhighlight%}
-
-{%highlight xaml%}
-
-<Syncfusion:SfLineSparkline  BorderBrush="DarkGray"    
-
-BorderThickness="1"  ItemsSource="{Binding UsersList}"                                  
-
-Interior="#4a4a4a"   MarkerVisibility="Visible"                    
+Interior="#4a4a4a" MarkerVisibility="Visible"
 
 YBindingPath="NoOfUsers">
 
@@ -56,8 +45,8 @@ YBindingPath="NoOfUsers">
 
 </Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-</Syncfusion:SfLineSparkline >
+</Syncfusion:SfLineSparkline>
 
-{%endhighlight%}
+{% endhighlight %}
 
 ![Customizing marker for specific datapoint](Customize-the-marker-for-specific-data-point_images/Customizethemarkerforspecificdatapoint_img1.jpeg)

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Legend in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Legend support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+description: Learn about legend support in Syncfusion® UWP Pivot Chart (SfPivotChart), including customization, positioning, and display options.
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
@@ -13,14 +13,14 @@ Legend displays the metadata that helps to identify the data series in the chart
 
 ## Icon
 
-Legend icon represents the symbol associated with each legend item. By default, the legend icon is visible, and it can be hidden by using the `IconVisibility` property as follows.
+Legend icon represents the symbol associated with each legend item. By default, the legend icon is visible, and it can be hidden by using the [`IconVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconVisibility) property as follows.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend IconVisibility="Collapsed"/>
+     <syncfusion:PivotChartLegend IconVisibility="Collapsed" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -43,14 +43,14 @@ PivotChart1.Legend.IconVisibility = Visibility.Collapsed
 
 **Icon customization**
 
-The size of the legend icon can be customized by using the `IconWidth` and `IconHeight`properties as illustrated in the following code snippet.
+The size of the legend icon can be customized by using the [`IconWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconWidth) and [`IconHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_IconHeight) properties as illustrated in the following code snippet.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend IconWidth="15" IconHeight="15"/>
+     <syncfusion:PivotChartLegend IconWidth="15" IconHeight="15" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -75,14 +75,14 @@ PivotChart1.Legend.IconHeight = 15
 
 ## Check box
 
-Check box is used to view or collapse the associated series. By default, the `CheckBoxVisibility` is collapsed and can be shown in the legend as follows.
+Check box is used to view or collapse the associated series. By default, the [`CheckBoxVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_CheckBoxVisibility) is collapsed and can be shown in the legend as follows.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-    <syncfusion:PivotChartLegend CheckBoxVisibility="Visible"/>
+    <syncfusion:PivotChartLegend CheckBoxVisibility="Visible" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -112,7 +112,7 @@ You can show or hide the legend in the SfPivotChart control by using the `Visibi
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend Visibility="Collapsed"/>
+     <syncfusion:PivotChartLegend Visibility="Collapsed" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -135,16 +135,16 @@ PivotChart1.Legend.Visibility = Visibility.Collapsed
 
 ## Toggling series visibility
 
-The `ToggleSeriesVisibility` property is used to view or collapse the associated series by clicking its legend item. By default, the `ToggleSeriesVisibility` property is set to `False`.
+The [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is used to view or collapse the associated series by clicking its legend item. By default, the [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property is set to `False`.
 
-You can enable the `ToggleSeriesVisibility` property as shown in the following code example.
+You can enable the [`ToggleSeriesVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ToggleSeriesVisibility) property as shown in the following code example.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend ToggleSeriesVisibility="True"/>
+     <syncfusion:PivotChartLegend ToggleSeriesVisibility="True" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -173,14 +173,14 @@ You can view the associated series again by clicking the respective disabled leg
 
 ## Legend customization
 
-The `ItemMargin` property can be used to modify the space between legend items. The following code snippet illustrates how to customize the default appearance of the legend.
+The [`ItemMargin`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_ItemMargin) property can be used to modify the space between legend items. The following code snippet illustrates how to customize the default appearance of the legend.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-    <syncfusion:PivotChartLegend ItemMargin="5" CornerRadius="5" BorderBrush="Black" BorderThickness="1.5" Background="CadetBlue"/>
+    <syncfusion:PivotChartLegend ItemMargin="5" CornerRadius="5" BorderBrush="Black" BorderThickness="1.5" Background="CadetBlue" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -213,14 +213,14 @@ PivotChart1.Legend.BorderThickness = New Thickness(1.5)
 
 ### Legend position
 
-The `LegendPosition` property allows to position the legend inside or outside the chart area. By default, the legend is positioned outside the chart area. You can change the position of the legend as follows.
+The [`LegendPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_LegendPosition) property allows to position the legend inside or outside the chart area. By default, the legend is positioned outside the chart area. You can change the position of the legend as follows.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend LegendPosition="Inside"/>
+     <syncfusion:PivotChartLegend LegendPosition="Inside" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -245,14 +245,14 @@ PivotChart1.Legend.LegendPosition = LegendPosition.Inside
 
 **Docking legend**
 
-Legends can be docked left, right, top, or bottom around the chart area by using the `DockPosition` property. By default, the legend is docked at the top of the chart. The following code snippet shows how to display the legend at the bottom.
+Legends can be docked left, right, top, or bottom around the chart area by using the [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) property. By default, the legend is docked at the top of the chart. The following code snippet shows how to display the legend at the bottom.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend DockPosition="Bottom"/>
+     <syncfusion:PivotChartLegend DockPosition="Bottom" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -275,14 +275,14 @@ PivotChart1.Legend.DockPosition = ChartDock.Bottom
 
 **Floating legend**
 
-Legends can be floated at any arbitrary location inside the chart by setting the `DockPosition` as `Floating`. It is positioned by providing its relative position with the help of `OffsetX` and `OffsetY` properties. The following code snippet shows how to display the legend at the bottom.
+Legends can be floated at any arbitrary location inside the chart by setting the [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_DockPosition) as `Floating`. It is positioned by providing its relative position with the help of [`OffsetX`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartLegend.html#Syncfusion_UI_Xaml_Charts_ChartLegend_OffsetY) properties. The following code snippet shows how to display the legend as floating at a specific position.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend DockPosition="Floating" OffsetX="150" OffsetY="30"/>
+     <syncfusion:PivotChartLegend DockPosition="Floating" OffsetX="150" OffsetY="30" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -318,7 +318,7 @@ The orientation can be set as **Horizontal** by which the legend items are arran
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend Orientation="Horizontal"/>
+     <syncfusion:PivotChartLegend Orientation="Horizontal" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -348,7 +348,7 @@ The orientation can be set as **Vertical** by which the legend items are arrange
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend Orientation="Vertical"/>
+     <syncfusion:PivotChartLegend Orientation="Vertical" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -384,7 +384,7 @@ When **RowCount only** is specified, then the legend items are arranged accordin
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend Orientation="Default" RowCount="2"/>
+     <syncfusion:PivotChartLegend Orientation="Default" RowCount="2" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -399,7 +399,7 @@ PivotChart1.Legend.RowCount = 2;
 {% highlight vb %}
 
 PivotChart1.Legend.Orientation = ChartOrientation.Default
-PivotChart1.Legend.RowCount  = 2
+PivotChart1.Legend.RowCount = 2
 
 {% endhighlight %}
 
@@ -416,7 +416,7 @@ When **ColumnCount only** is specified, then the legend items are arranged accor
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-    <syncfusion:PivotChartLegend Orientation="Default" ColumnCount="2"/>
+    <syncfusion:PivotChartLegend Orientation="Default" ColumnCount="2" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -448,7 +448,7 @@ When **both the options have different values** is specified, then the preferenc
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend Orientation="Default" RowCount="1" ColumnCount="4"/>
+     <syncfusion:PivotChartLegend Orientation="Default" RowCount="1" ColumnCount="4" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}
@@ -482,7 +482,7 @@ When **both the options have same value** is specified, then the preference is g
 {% highlight xaml %}
 
 <syncfusion:SfPivotChart.Legend>
-     <syncfusion:PivotChartLegend Orientation="Default" RowCount="4" ColumnCount="1"/>
+     <syncfusion:PivotChartLegend Orientation="Default" RowCount="4" ColumnCount="1" />
 </syncfusion:SfPivotChart.Legend>
 
 {% endhighlight %}

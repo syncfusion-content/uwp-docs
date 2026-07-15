@@ -11,7 +11,7 @@ documentation: ug
 
 The legend contains the list of chart series that appear in a SmithChart. It can be defined by using the following code example.
 
-N> Add name to `Label` property of **Series**, which in turn mapped to the Legend.
+N> Add a name to the [`Label`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_Label) property of **Series**, which in turn is mapped to the Legend.
 
 {% tabs %}
 
@@ -36,28 +36,28 @@ N> Add name to `Label` property of **Series**, which in turn mapped to the Legen
 SfSmithChart chart = new SfSmithChart();
 
 //Create line series1
- LineSeries series1 = new LineSeries();
+LineSeries series1 = new LineSeries();
 //Display the legend text for the series.
- series1.Label = "Transmission-1";
- series1.ItemsSource = Data1;
- series1.ResistancePath = "Resistance";
- series1.ReactancePath = "Reactance";
- series1.ShowMarker = true;
- chart.Series.Add(series1);
+series1.Label = "Transmission-1";
+series1.ItemsSource = Data1;
+series1.ResistancePath = "Resistance";
+series1.ReactancePath = "Reactance";
+series1.ShowMarker = true;
+chart.Series.Add(series1);
 
- //Create line series2
- LineSeries series2 = new LineSeries();
+//Create line series2
+LineSeries series2 = new LineSeries();
 //Display the legend text for the series.
- series2.Label = "Transmission-2";
- series2.ItemsSource = Data2;
- series2.ResistancePath = "Resistance";
- series2.ReactancePath = "Reactance";
- series2.ShowMarker = true;
- chart.Series.Add(series2);
+series2.Label = "Transmission-2";
+series2.ItemsSource = Data2;
+series2.ResistancePath = "Resistance";
+series2.ReactancePath = "Reactance";
+series2.ShowMarker = true;
+chart.Series.Add(series2);
 
 //Adding legend to the SmithChart
- SmithChartLegend legend = new SmithChartLegend();
- chart.Legend = legend;
+SmithChartLegend legend = new SmithChartLegend();
+chart.Legend = legend;
 
 this.Grid1.Children.Add(chart);
 
@@ -67,15 +67,15 @@ this.Grid1.Children.Add(chart);
 
 ![SfSmithChart Legend](Legend_images/Legend_img1.png)
 
-## Positioning the Legend
+## Positioning the legend
 
 **Docking**
 
-Legends can be docked at left, right, and top or bottom around the chart area by using *DockPosition* property. 
+Legends can be docked at left, right, top, or bottom around the chart area by using the [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SmithChartLegend.html#Syncfusion_UI_Xaml_SmithChart_SmithChartLegend_DockPosition) property. 
 
-By default, the Smith chart Legend is docked at the Right of the chart.
+By default, the Smith chart Legend is docked at the right of the chart.
 
-To display the legend at the bottom, set the *DockPosition* as Bottom as in below code snippet.
+To display the legend at the bottom, set the [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SmithChartLegend.html#Syncfusion_UI_Xaml_SmithChart_SmithChartLegend_DockPosition) as Bottom as in the below code snippet.
 
 {% tabs %}
 
@@ -104,9 +104,9 @@ chart.Legend = legend;
 
 ![SfSmithChart Positioning the Legend](Legend_images/Legend_img2.png)
 
-**Floating Legends**
+**Floating legends**
 
-To position the legend at any arbitrary location inside the chart, set *DockPosition* as **Floating** and provide its relative position by using *OffsetX* and *OffsetY* properties.
+To position the legend at any arbitrary location inside the chart, set [`DockPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SmithChartLegend.html#Syncfusion_UI_Xaml_SmithChart_SmithChartLegend_DockPosition) as **Floating** and provide its relative position by using *OffsetX* and *OffsetY* properties.
 
 Offset specifies x or y distance from origin.
 
@@ -139,11 +139,11 @@ chart.Legend = legend;
 
 ![SfSmithChart Floating Legends](Legend_images/Legend_img3.png)
 
-## Legend Icon
+## Legend icon
 
 Represents the symbol associated with each legend item. By default, the legend icon is Circle.
 
-Legend Icon can be customized by using the `LegendIcon` property in Smith chart legend as in the below code snippet:
+The legend icon can be customized by using the [`LegendIcon`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SmithChartLegend.html#Syncfusion_UI_Xaml_SmithChart_SmithChartLegend_LegendIcon) property in the Smith chart legend as in the below code snippet:
 
 {% tabs %}
 
@@ -172,9 +172,9 @@ chart.Legend = legend;
 
 ![SfSmithChart Legend Icon](Legend_images/Legend_img4.png)
 
-**Custom Legend Icon**
+**Custom legend icon**
 
-Custom icon for the legend can be added by using **LegendIconTemplate** property in Smith chart Legend as in below code example.
+A custom icon for the legend can be added by using the [`LegendIconTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SmithChartLegend.html#Syncfusion_UI_Xaml_SmithChart_SmithChartLegend_LegendIconTemplate) property in the Smith chart Legend as in the below code example.
 
 {% tabs %}
 
@@ -209,7 +209,7 @@ chart.Legend = legend;
 
 ![SfSmithChart Custom Legend Icon](Legend_images/Legend_img5.png)
 
-## Customizing Legend
+## Customizing legend
 
 The following code example illustrates the customization of legend icon and text.
 
@@ -256,7 +256,7 @@ The following code example illustrates the customization of legend icon and text
 
 ## VisibilityOnLegend
 
-To limit the number of series to be displayed in chart, use *VisibilityOnLegend* property as shown in the below code example.
+To limit the number of series to be displayed in the chart, use the ** property as shown in the below code example.
 
 {% tabs %}
 
@@ -302,7 +302,7 @@ chart.Legend = legend;
 
 ![SfSmithChart VisibilityOnLegend](Legend_images/Legend_img7.png)
 
-## Series Visibility
+## Series visibility
 
 To hide the series segment programmatically, set *IsSeriesVisible* property as False for the specific series. After  the property has been set, the legend item for the specific series will be displayed with shade. 
 
