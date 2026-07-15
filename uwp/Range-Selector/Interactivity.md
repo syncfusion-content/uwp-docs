@@ -299,7 +299,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
     ItemsSource = new ViewModel().StockPriceDetails,
     XBindingPath = "Date",
     ShowGridLines = true,
-    OverlayBrush = new SolidColorBrush(Color.FromArgb(0x55, 0x34, 0xb4, 0xe3))
+    OverlayBrush = new SolidColorBrush(Color.FromArgb(55, 34, 0xb4, 0xe3))
 };
 
 {% endhighlight %}
