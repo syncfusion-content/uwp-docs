@@ -20,6 +20,8 @@ By default, the schedule control is available with the en locale, which is Engli
 
 using Syncfusion.UI.Xaml.Schedule;
 
+ApplicationLanguages.PrimaryLanguageOverride = "fr";
+
 {% endhighlight %}   
 
 

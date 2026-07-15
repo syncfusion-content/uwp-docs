@@ -408,6 +408,8 @@ The `Refresh` method is used to refresh the layout of SfCalendar so that the cel
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.Refresh();
 
 {% endhighlight %}
