@@ -9,7 +9,7 @@ documentation: ug
 
 # Barcode Customization in UWP Barcode (SfBarcode)
 
-The color of the barcode can be customized by modifying the DarkBarBrush and LightBarBrush properties of the barcode control. 
+The color of the barcode can be customized by modifying the DarkBarBrush and LightBarBrush properties of the barcode control.
 
 {% tabs %}
 
@@ -25,13 +25,12 @@ The DarkBarBrush represents the color of the dark bar (Black color usually) and 
 
 ![uwp-Barcode-Red-Color-Combination](Barcode-Customization_images/uwp-barcode-red-color-combination.png)
 
-Barcode color combinations- Red
+Barcode color combination - Red
 {:.caption}
-
 
 ![uwp-Barcode-Blue-Color-Combination](Barcode-Customization_images/uwp-barcode-blue-color-combination.png)
 
-Barcode color combinations- Blue
+Barcode color combination - Blue
 {:.caption}
 
-N> The DarkBarBrush and LightBarBrush customizations are applicable only for one dimensional barcodes. In order for a barcode symbol to be recognized by a scanner, there must be an adequate contrast between the dark bars and the light spaces and not all the barcode scanners have support for colored barcodes.
+N> The DarkBarBrush and LightBarBrush customizations are applicable only for one dimensional barcodes. In order for a barcode symbol to be recognized by a scanner, there must be an adequate contrast between the dark bars and the light spaces, and not all barcode scanners support colored barcodes.

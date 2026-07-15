@@ -12,9 +12,11 @@ documentation: ug
 
 This section is to help you understand how to use the [`Watermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Watermark.html) in your chart.
 
+>Note:- The watermark content is drawn behind the chart segments, so the underlying series remain visible.
+
 ## Adding text watermark
 
-You can add the text to chart background using the Content property of [`Watermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Watermark).
+You can add text to the chart background using the `Content` property of [`Watermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Watermark).
 
 The following code example explains how to set your custom text as Watermark.
 
@@ -24,23 +26,13 @@ The following code example explains how to set your custom text as Watermark.
 
 <chart:SfChart.Watermark>
 
-<chart:Watermark VerticalAlignment="Center"         
+<chart:Watermark VerticalAlignment="Center" HorizontalAlignment="Center">
 
-HorizontalAlignment="Center" >
+       <chart:Watermark.Content>
+              <TextBlock Text="Metals" FontSize="70" Foreground="Black">
+       </chart:Watermark.Content>
 
-<chart:Watermark.Content>
-
-<TextBlock Text="Metals"  
-
-FontSize="70"
-
-Foreground="Black" >
-
-</TextBlock>
-
-</chart:Watermark.Content>
-
-</chart:Watermark>
+       </chart:Watermark>
 
 </chart:SfChart.Watermark>
 
@@ -50,22 +42,15 @@ Foreground="Black" >
 
 chart.Watermark = new Watermark()
 {
-
        HorizontalAlignment = HorizontalAlignment.Center,
-
        VerticalAlignment = VerticalAlignment.Center
-
 };
 
 chart.Watermark.Content = new TextBlock()
 {
-
        Text = "Metals",
-
        FontSize = 70,
-
        Foreground = new SolidColorBrush(Colors.Black)
-
 };
 
 {% endhighlight %}
@@ -76,7 +61,7 @@ chart.Watermark.Content = new TextBlock()
 
 ## Adding image watermark
 
-You can also set images as Watermark as in below code snippet.
+You can also set images as a Watermark as shown in the below code snippet.
 
 {% tabs %}
 
@@ -84,17 +69,13 @@ You can also set images as Watermark as in below code snippet.
 
 <chart:SfChart.Watermark>
 
-<chart:Watermark VerticalAlignment="Center"               
+       <chart:Watermark VerticalAlignment="Center" HorizontalAlignment="Center">
 
-HorizontalAlignment="Center" >
+              <chart:Watermark.Content>
+                     <Image Source="demands.png" Height="175" Width="175"/>
+              </chart:Watermark.Content>
 
-<chart:Watermark.Content>
-
-<Image Source="demands.png" Height="175" Width="175"/>
-
-</chart:Watermark.Content>
-
-</chart:Watermark>
+       </chart:Watermark>
 
 </chart:SfChart.Watermark>
 
@@ -104,29 +85,19 @@ HorizontalAlignment="Center" >
 
 chart.Watermark = new Watermark()
 {
-
        HorizontalAlignment = HorizontalAlignment.Center,
-
        VerticalAlignment = VerticalAlignment.Center
-
 };
 
 chart.Watermark.Content = new Image()
 {
-
        Height = 175,
-
        Width = 175,
-
        Source = new BitmapImage(new Uri(@"demands.png", UriKind.RelativeOrAbsolute))
-
 };
-
 
 {% endhighlight %}
 
 {% endtabs %}
 
 ![Image watermark support in UWP Chart](Watermark_images/Watermark_2.png)
-
-

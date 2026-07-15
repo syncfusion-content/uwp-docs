@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supported Barcode types in UWP Barcode control | Syncfusion
-description: Learn here all about Supported Barcode types support in Syncfusion UWP Barcode (SfBarcode) control and more.
+description: Learn here all about supported Barcode types in Syncfusion UWP Barcode (SfBarcode) control and more.
 platform: uwp
 control: SfBarcode
 documentation: ug
@@ -88,6 +88,6 @@ variable</td></tr>
 <td>
 {{'[Code 128C](https://en.wikipedia.org/wiki/Code_128)'| markdownify }}</td><td>
 Code128C</td><td>
-ASCII 00-99(encodes each two digit with one code)</td><td>
+ASCII 00-99 (encodes each two digits with one code)</td><td>
 variable</td></tr>
 </table>

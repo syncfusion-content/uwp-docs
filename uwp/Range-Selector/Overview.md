@@ -8,12 +8,11 @@ documentation: ug
 ---
 # UWP Range Selector (SfDateTimeRangeNavigator) Overview
 
-The SfDateTimeRangeNavigator is a time bound data visualization control. Its purpose is to allow scrolling and navigation through large period of time. The control can be easily combined with other controls such as Chart, Datagrid, etc. to create rich and powerful dashboards.
+The SfDateTimeRangeNavigator is a time-bound data visualization control. Its purpose is to allow scrolling and navigation through large periods of time. The control can be easily combined with other controls such as Chart, DataGrid, etc. to create rich and powerful dashboards.
 
-Key Features
+## Key features
 
 * Supports interactive zooming and scrolling through large data.
 * Smart label calculation while zooming.
-* Select a particular region through large period of time.
+* Select a particular region through large periods of time.
 * Gets the data from a selected region.
-

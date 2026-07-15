@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Transform axis value to pixel value and vice versa | SfChart | Winrt | Syncfusion
-description: transform axis value to pixel value and vice versa
-platform: wpf
+title: Transform axis value to pixel value | SfChart | Winrt | Syncfusion
+description: Learn how to transform axis values to pixel values and vice versa in SfChart using ValueToPoint and PointToValue utility methods.
+platform: uwp
 control: SfChart
 documentation: ug
 ---
@@ -14,49 +14,27 @@ documentation: ug
 * ValueToPoint(ChartAxis axis, double value)
 * PointToValue(ChartAxis axis, Point point)
 
-
 {% highlight c# %}
 
-
 private void LineChart_MouseMove(object sender, MouseEventArgs e)
+{
+    Point mousePoint = new Point
+    {
+        X = e.GetPosition(LineChart).X - LineChart.SeriesClipRect.Left,
+        Y = e.GetPosition(LineChart).Y - LineChart.SeriesClipRect.Top
+    };
+        // Converts mouse co-ordinate points into a value related to ChartAxis.
+        double xValue = this.LineChart.PointToValue(this.LineChart.PrimaryAxis, mousePoint);
+        double yValue = this.LineChart.PointToValue(this.LineChart.SecondaryAxis, mousePoint);
 
-        {
+        // Converts the data point value of the chart to Chart coordinate.
+        double chartPointX = this.LineChart.ValueToPoint(this.LineChart.PrimaryAxis, xValue);
+        double chartPointY = this.LineChart.ValueToPoint(this.LineChart.SecondaryAxis, yValue);
 
-            Point mousePoint = new Point
-
-            {
-
-                X = e.GetPosition(LineChart).X - LineChart.SeriesClipRect.Left,
-
-                Y = e.GetPosition(LineChart).Y - LineChart.SeriesClipRect.Top
-
-            };
-
-
-
-           // Converts mouse co-ordinate points into a value related to ChartAxis.
-
-
-
-            double xValue = this.LineChart.PointToValue(this.LineChart.PrimaryAxis, mousePoint);
-
-            double yValue = this.LineChart.PointToValue(this.LineChart.SecondaryAxis, mousePoint);
-
-
-
-
-
-            // Converts the data point value of the chart to Chart coordinate.
-
-            double chartPointX = this.LineChart.ValueToPoint(this.LineChart.PrimaryAxis, xValue);
-
-            double chartPointY = this.LineChart.ValueToPoint(this.LineChart.SecondaryAxis, yValue);
-
-
-
-        }
-
-		
+}
+	
 {% endhighlight %}
 
+## See Also
 
+- [How to get Axis Range in UWP chart?](https://support.syncfusion.com/kb/article/9505/how-to-get-axis-range-in-uwp-chart)

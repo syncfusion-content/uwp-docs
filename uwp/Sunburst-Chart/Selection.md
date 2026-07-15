@@ -3,7 +3,7 @@
 layout: post
 title: Selection in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Selection support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -11,18 +11,16 @@ documentation: ug
 
 # Selection in UWP Sunburst Chart (SfSunburstChart)
 
-Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
+Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
 
-The below code shows, how to enable the selection behavior.  
+The following code shows how to enable the selection behavior.  
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
    <sunburst:SunburstSelectionBehavior/>
-
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -38,7 +36,6 @@ chart.Behaviors.Add(selection);
 
 ![Selection_img1](Selection_images/Selection_img1.jpeg)
 
-
 ## SelectionDisplayMode
 
 You can customize the selected segment appearance by using brush or opacity. You can choose between color or opacity using the [`SelectionDisplayMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionDisplayMode) property in the selection behavior 
@@ -46,18 +43,15 @@ You can customize the selected segment appearance by using brush or opacity. You
 * HighlightByColor – To display the selected segment appearance using brush.
 * HighlightByOpacity – To display the selected segment appearance using opacity.
 
-The following code shows, how to set the display mode using brush.
+The following code shows how to set the display mode using brush.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionBrush="Black"
-                                                    SelectionDisplayMode="HighlightByColor"/>
-            
+   <sunburst:SunburstSelectionBehavior EnableSelection="True" SelectionBrush="Black"
+                                       SelectionDisplayMode="HighlightByColor"/>
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -76,7 +70,6 @@ chart.Behaviors.Add(selection);
 
 ![Selection_img2](Selection_images/Selection_img2.jpeg)
 
-
 N> The default value of SelectionDisplayMode is HighlightByOpacity.
 
 ## SelectionMode
@@ -91,10 +84,9 @@ Sunburst chart provides support to select or highlight the segment by clicking o
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.Behaviors>
-
-     <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                         SelectionMode="MouseClick"/>
+<sunburst:SfSunburstChart.Behaviors>
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionMode="MouseClick"/>
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -112,7 +104,7 @@ chart.Behaviors.Add(selection);
 
 ## SelectionType
 
-Sunburst chart provides multiple option to represent the selected categories. You can select the segment categories by using the [`SelectionType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionType) property in selection behavior.
+Sunburst chart provides multiple options to represent the selected categories. You can select the segment categories by using the [`SelectionType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionType) property in selection behavior.
 
 * Child – To select the child of selected parent.
 * Group – To select the entire categories in group.
@@ -121,16 +113,15 @@ Sunburst chart provides multiple option to represent the selected categories. Yo
 
 ### Child
 
-The following code shows, how to set the selection type as child.
+The following code shows how to set the selection type as child.
 
 {% tabs %}
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionType="Child"  />
+<sunburst:SfSunburstChart.Behaviors>
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionType="Child" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -148,7 +139,6 @@ chart.Behaviors.Add(selection);
 
 ![Selection_img3](Selection_images/Selection_img3.jpeg)
 
-
 ### Group
 
 The following code shows, how to set the selection type as group.
@@ -156,15 +146,13 @@ The following code shows, how to set the selection type as group.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionType="Group"  />
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionType="Group"  />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 ![Selection_img4](Selection_images/Selection_img4.jpeg)
-
 
 ### Parent
 
@@ -173,9 +161,8 @@ The following code shows, how to set the selection type as parent.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionType="Parent"  />
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionType="Parent" />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
@@ -189,29 +176,27 @@ The following code shows, how to set the selection type as single.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-                <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                    SelectionType="Single"  />
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionType="Single"  />
 </sunburst:SfSunburstChart.Behaviors>
 
 {% endhighlight %}
 
 ![Selection_img6](Selection_images/Selection_img6.jpeg)
 
-## Selection Cursor
+## Selection cursor
 
-SelectionCursor property allows you to customize the cursor when mouse is hovered over the segment. 
+The [`SelectionCursor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html#Syncfusion_UI_Xaml_SunburstChart_SunburstSelectionBehavior_SelectionCursor) property allows you to customize the cursor when the mouse is hovered over the segment. 
 
-The following code shows, how to set the selection cursor as hand.
+The following code shows how to set the selection cursor as hand.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Behaviors>
-
-              <sunburst:SunburstSelectionBehavior EnableSelection="True"
-                                                  SelectionCursor="Hand" />
+   <sunburst:SunburstSelectionBehavior EnableSelection="True"
+                                       SelectionCursor="Hand" />
 
 </sunburst:SfSunburstChart.Behaviors>
 
@@ -229,5 +214,3 @@ chart.Behaviors.Add(selection);
 {% endtabs %}
 
 ![Selection_img7](Selection_images/Selection_img7.jpeg)
-
-
