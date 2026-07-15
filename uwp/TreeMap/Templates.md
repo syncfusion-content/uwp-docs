@@ -24,14 +24,11 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
-
-                    WeightValuePath="Population" ColorValuePath="Growth">
+                          WeightValuePath="Population" ColorValuePath="Growth">
 
         <syncfusion:SfTreeMap.LeafItemSettings>
             <syncfusion:LeafItemSettings>
@@ -54,7 +51,6 @@ Code Sample:
                     </DataTemplate>
                 </syncfusion:TreeMapFlatLevel.HeaderTemplate>
             </syncfusion:TreeMapFlatLevel>
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -79,17 +75,13 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.Resources>
-
         <local:CountrySalesCollection x:Key="countrySalesCollection"/>
-
     </Grid.Resources>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}" WeightValuePath="Sales" ColorValuePath="Expense">
 
         <syncfusion:SfTreeMap.Levels>
-
             <syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" ChildGap="10" HeaderHeight="25" HeaderPath="Name" />
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -113,9 +105,7 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
@@ -134,9 +124,7 @@ Code Sample:
         </syncfusion:SfTreeMap.LeafItemSettings>
 
         <syncfusion:SfTreeMap.Levels>
-
             <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="5" GroupBorderBrush="#6600ff" GroupBorderThickness="2" ShowLabels="True"/>
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -161,20 +149,14 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.Resources>
-
         <local:CountrySalesCollection x:Key="countrySalesCollection"/>
-
     </Grid.Resources>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}"
                           WeightValuePath="Sales" ColorValuePath="Expense">
 
         <syncfusion:SfTreeMap.Levels>
-
-            <syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" ChildGap="10" ChildBorderBrush="#6600ff" ChildBorderThickness="2" ShowLabels="True" LabelPath="Name">
-
-            </syncfusion:TreeMapHierarchicalLevel>
-
+            <syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" ChildGap="10" ChildBorderBrush="#6600ff" ChildBorderThickness="2" ShowLabels="True" LabelPath="Name" />
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -193,15 +175,13 @@ Code Sample:
 
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-        <Grid.DataContext>
+    <Grid.DataContext>
+        <local:PopulationViewModel/>
+    </Grid.DataContext>
 
-            <local:PopulationViewModel/>
-
-        </Grid.DataContext>
-
-        <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
-                              WeightValuePath="Population"
-                              LeafLabelPath="Country”/>
+    <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
+                          WeightValuePath="Population"
+                          LeafLabelPath="Country” />
 
 </Grid>
 	
@@ -224,6 +204,7 @@ Code Sample:
     </Grid.DataContext> 
 
     <syncfusion:SfTreeMap ItemsSource="{Binding OlympicMedalsDetails}" Margin="50" WeightValuePath="TotalMedals" ColorValuePath="GoldMedals">
+
         <syncfusion:SfTreeMap.LeafTemplate> 
             <DataTemplate> 
                 <Border BorderBrush="Transparent" BorderThickness="3" Background="#D73028">
@@ -231,6 +212,7 @@ Code Sample:
                 </Border>
             </DataTemplate>
         </syncfusion:SfTreeMap.LeafTemplate> 
+
         <syncfusion:SfTreeMap.Levels>
             <syncfusion:TreeMapFlatLevel GroupPath="GameName" ShowLabels="True">
                 <syncfusion:TreeMapFlatLevel.LabelTemplate> 
@@ -240,6 +222,7 @@ Code Sample:
                 </syncfusion:TreeMapFlatLevel.LabelTemplate> 
             </syncfusion:TreeMapFlatLevel>  
         </syncfusion:SfTreeMap.Levels> 
+        
     </syncfusion:SfTreeMap>
 
 </Grid>

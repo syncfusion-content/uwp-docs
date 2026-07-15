@@ -36,34 +36,23 @@ Code Sample:
     </syncfusion:SfTreeMap.LeafItemSettings>
 
     <syncfusion:SfTreeMap.Legend>
-
         <syncfusion:TreeMapLegend Margin="0 5" LegendItemMargin="0 0 20 10" LegendItemElementMargin="0 0 10 0" BorderThickness="0,0,0,2" BorderBrush="#CCCCCC" HorizontalAlignment="Left" LegendIconStyle="Rectangle" LegendIconHeight="18" LegendIconWidth="18" FontSize="25" Width="{Binding ActualWidth, ElementName=TreeMap}">
 
             <syncfusion:TreeMapLegend.Header>
-
                 <TextBlock Text="Population Growth FY2012" FontSize="35" Margin="0,0,0,10"/>
-
             </syncfusion:TreeMapLegend.Header>
-
         </syncfusion:TreeMapLegend>
-
     </syncfusion:SfTreeMap.Legend>
 
     <syncfusion:SfTreeMap.LeafColorMapping>
-
         <syncfusion:RangeBrushColorMapping>
-
             <syncfusion:RangeBrushColorMapping.Brushes>
-
                 <syncfusion:RangeBrush Color="#77D8D8" From="0" To="1" LegendLabel="1 % Growth"/>
                 <syncfusion:RangeBrush Color="#AED960" From="1" To="2" LegendLabel="2 % Growth"/>
                 <syncfusion:RangeBrush Color="#FFAF51" From="2" To="3" LegendLabel="3 % Growth"/>
                 <syncfusion:RangeBrush Color="#F3D240" From="3" To="4" LegendLabel="4 % Growth"/>
-
             </syncfusion:RangeBrushColorMapping.Brushes>
-
         </syncfusion:RangeBrushColorMapping>
-
     </syncfusion:SfTreeMap.LeafColorMapping>
 
     <syncfusion:SfTreeMap.Levels>

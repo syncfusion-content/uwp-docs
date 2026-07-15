@@ -18,9 +18,7 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"

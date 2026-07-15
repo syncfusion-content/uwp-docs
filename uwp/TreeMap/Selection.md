@@ -42,7 +42,6 @@ Code Sample:
                 </DataTemplate>
             </syncfusion:TreeMapFlatLevel.HeaderTemplate>
         </syncfusion:TreeMapFlatLevel>
-
     </syncfusion:SfTreeMap.Levels>
 
 </syncfusion:SfTreeMap>
@@ -61,7 +60,7 @@ The following code sample demonstrates how to select and deselect a shape.
 
 {% highlight xaml %}
 
- <syncfusion:SfTreeMap x:Name="TreeMap" Margin="10" HighlightOnSelection="True" HighlightBorderBrush="Black"
+<syncfusion:SfTreeMap x:Name="TreeMap" Margin="10" HighlightOnSelection="True" HighlightBorderBrush="Black"
                        HighlightBorderThickness="5" ItemsSource="{Binding OlympicMedalsDetails}"
                        WeightValuePath="TotalMedals" ColorValuePath="GoldMedals" />
 

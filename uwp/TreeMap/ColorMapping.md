@@ -105,20 +105,13 @@ Code Sample:
     <syncfusion:SfTreeMap.LeafColorMapping>
         <syncfusion:RangeBrushColorMapping>
             <syncfusion:RangeBrushColorMapping.Brushes>
-                <syncfusion:RangeBrush From="0"
-                                       To="1"
+                <syncfusion:RangeBrush From="0" To="1"
                                        Color="#77D8D8" />
-
-                <syncfusion:RangeBrush From="1"
-                                       To="2"
+                <syncfusion:RangeBrush From="1" To="2"
                                        Color="#AED960" />
-
-                <syncfusion:RangeBrush From="2"
-                                       To="3"
+                <syncfusion:RangeBrush From="2" To="3"
                                        Color="#FFAF51" />
-
-                <syncfusion:RangeBrush From="3"
-                                       To="4"
+                <syncfusion:RangeBrush From="3" To="4"
                                        Color="#F3D240" />
             </syncfusion:RangeBrushColorMapping.Brushes>
         </syncfusion:RangeBrushColorMapping>
@@ -196,8 +189,7 @@ Code Sample:
     </syncfusion:SfTreeMap.LeafColorMapping>
 
     <syncfusion:SfTreeMap.Levels>
-        <syncfusion:TreeMapFlatLevel GroupPath="Continent"
-                                     GroupGap="5" />
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="5" />
     </syncfusion:SfTreeMap.Levels>
 
 </syncfusion:SfTreeMap>

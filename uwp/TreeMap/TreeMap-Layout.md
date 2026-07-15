@@ -24,9 +24,7 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
@@ -48,11 +46,12 @@ Code Sample:
             <syncfusion:TreeMapFlatLevel GroupPath="Continent" HeaderHeight="25" GroupGap="5" GroupPadding="5" GroupBackground="Transparent" GroupBorderBrush="#009900" GroupBorderThickness="1">
                 <syncfusion:TreeMapFlatLevel.HeaderTemplate>
                     <DataTemplate>
-                            <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>                           
+                            <TextBlock Text="{Binding Header}" Margin="5,0,0,0" Foreground="black" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center" />                           
                     </DataTemplate>
                 </syncfusion:TreeMapFlatLevel.HeaderTemplate>
             </syncfusion:TreeMapFlatLevel>
         </syncfusion:SfTreeMap.Levels>
+
     </syncfusion:SfTreeMap>
 
 </Grid>
@@ -79,18 +78,14 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
                         ItemsLayoutMode="SliceAndDiceAuto"
                         WeightValuePath="Population"  
                         ColorValuePath="Growth">
-
     // Code omitted for brevity
-
     </syncfusion:SfTreeMap>
 
 </Grid>
@@ -115,18 +110,14 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
                         ItemsLayoutMode="SliceAndDiceHorizontal"
                         WeightValuePath="Population"  
                         ColorValuePath="Growth">
-
     // Code omitted for brevity
-
     </syncfusion:SfTreeMap>
 
 </Grid>
@@ -151,18 +142,14 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
                         ItemsLayoutMode="SliceAndDiceVertical"
                         WeightValuePath="Population"  
                         ColorValuePath="Growth">
-
     // Code omitted for brevity
-
     </syncfusion:SfTreeMap>
 
 </Grid>

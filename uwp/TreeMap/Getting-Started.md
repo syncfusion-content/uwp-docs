@@ -51,9 +51,7 @@ Refer to the following code to add a TreeMap in an application:
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
         <syncfusion:SfTreeMap />
-
     </Grid>
 </Page>
 {% endhighlight %}
@@ -159,9 +157,7 @@ public partial class MainWindow : Window
       mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" />
-
     </Grid>
 
 </Page>
@@ -183,9 +179,7 @@ TreeMap calculates the size of the object with the help of `WeightValuePath`. We
 {% highlight xaml %}
 
 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
     <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" />
-
 </Grid>
 
 {% endhighlight %}

@@ -29,9 +29,7 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
@@ -39,9 +37,7 @@ Code Sample:
                           ColorValuePath="Growth">
 
         <syncfusion:SfTreeMap.Levels>
-
             <syncfusion:TreeMapFlatLevel GroupPath="Continent" />
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -61,9 +57,7 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.DataContext>
-
         <local:PopulationViewModel/>
-
     </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
@@ -71,10 +65,8 @@ Code Sample:
                           ColorValuePath="Growth">
 
         <syncfusion:SfTreeMap.Levels>
-
            <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" />
            <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5" />
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -96,18 +88,14 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.Resources>
-
         <local:CountrySalesCollection x:Key="countrySalesCollection"/>
-
     </Grid.Resources>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}"
                             WeightValuePath="Sales" ColorValuePath="Expense">
 
         <syncfusion:SfTreeMap.Levels>
-
             <syncfusion:TreeMapHierarchicalLevel/>
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -247,9 +235,7 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.Resources>
-
         <local:CountrySalesCollection x:Key="countrySalesCollection"/>
-
     </Grid.Resources>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}"
@@ -257,9 +243,7 @@ Code Sample:
                           ColorValuePath="Expense">
 
         <syncfusion:SfTreeMap.Levels>
-
             <syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" />
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
@@ -281,9 +265,7 @@ Code Sample:
 <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid.Resources>
-
         <local:CountrySalesCollection x:Key="countrySalesCollection"/>
-
     </Grid.Resources>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}"
@@ -291,9 +273,7 @@ Code Sample:
                             ColorValuePath="Expense">
 
         <syncfusion:SfTreeMap.Levels>
-
             <syncfusion:TreeMapHierarchicalLevel ChildGap="10" ChildPath="RegionalSalesCollection" />
-
         </syncfusion:SfTreeMap.Levels>
 
     </syncfusion:SfTreeMap>
