@@ -13,8 +13,8 @@ Sunburst Chart is useful for visualizing hierarchical data. The center circle re
  
 ## Key Features
 
-* Visualize hierarchical data
-* Data label support for better readability
+* Visualize hierarchical data.
+* Data label support for better readability.
 * Interactively select or highlight segments.
-* Interactive legend
-* Colors can be customized
+* Interactive legend.
+* Colors can be customized.

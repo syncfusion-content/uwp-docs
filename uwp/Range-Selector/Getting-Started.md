@@ -10,17 +10,17 @@ documentation: ug
 
 ## Visual Structure 
 
-A SfDateTimeRangeNavigator is composed of various elements such as higher level bar, lower level bar, content, resizable scrollbar.
+The SfDateTimeRangeNavigator is composed of various elements such as higher level bar, lower level bar, content, and resizable scrollbar.
 
-* Higher level bar - Contains timespan format one level higher than the lower level bar DateTime values. E.g.  If higher level bar contains year format (yyyy) then the lower level bar contains the month format (MMM).
-* Lower level bar – Contains timespan format one lever lower than higher level bar DateTime values. E.g. If lower level bar contains month format (MMM) then the higher level bar contains the year format (yyyy).
-* Content – Can hold any type of UI element inside the navigator.
-* Resizable scrollbar – Used to zoom and scroll the content and label bars.
+* Higher level bar - Contains timespan format one level higher than the lower level bar DateTime values. E.g. If the higher level bar contains year format (yyyy), then the lower level bar contains month format (MMM).
+* Lower level bar - Contains timespan format one level lower than the higher level bar DateTime values. E.g. If the lower level bar contains month format (MMM), then the higher level bar contains year format (yyyy).
+* Content - Can hold any type of UI element inside the navigator.
+* Resizable scrollbar - Used to zoom and scroll the content and label bars.
 
-![Visaul Structure of SfDateTimeRangeNavigator](Getting-Started_images/GettingStarted_img1.jpeg)
+![Visual Structure of SfDateTimeRangeNavigator](Getting-Started_images/GettingStarted_img1.jpeg)
 
 
-These steps were explained below for both XAML and code behind.
+These steps are explained below for both XAML and code behind.
 
 ## Create a SfDateTimeRangeNavigator from XAML
 
@@ -29,7 +29,7 @@ The following steps explain how to create a SfDateTimeRangeNavigator in XAML.
 ### Adding the assembly reference
 
 1. Open the Add Reference window from your project.
-2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
+2. Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
 
 ![Reference Manager Dialog Windows in Visual Studio](Getting-Started_images/GettingStarted_img3.jpeg)
 
@@ -45,7 +45,6 @@ Drag and drop the SfDateTimeRangeNavigator control from the Toolbox to your appl
 
 ![Visual Studio Toolbox](Getting-Started_images/GettingStarted_img4.jpeg)
 
-
 ### Initializing SfDateTimeRangeNavigator
 
 {% highlight xaml %}
@@ -56,56 +55,47 @@ Drag and drop the SfDateTimeRangeNavigator control from the Toolbox to your appl
 
 {% endhighlight %}
 
-### Creating a Data Source
+### Creating a data source
 
 {% highlight c# %}
 
 public class Model
-
 {
+    public DateTime Date { get; set; }
 
-public DateTime Date { get; set; }
+    public double High { get; set; }
 
-public double High { get; set; }
+    public double Low { get; set; }
 
-public double Low { get; set; }
+    public double Open { get; set; }
 
-public double Open { get; set; }
-
-public double Close { get; set; }
-
+    public double Close { get; set; }
 }
 
 public class ViewModel
-
 {
+    public ViewModel()
+    {
+        this.StockPriceDetails = new ObservableCollection<Model>();
 
-public ViewModel()
+        DateTime date = new DateTime(2015, 1, 1);
 
-{
+        Random rd = new Random();
 
-this.StockPriceDetails = new ObservableCollection<Model>();
+        for (int i = 0; i < 70; i++)
+        {
+            this.StockPriceDetails.Add(new Model()
+            {
+                Date = date.AddDays(i),
+                Open = rd.Next(870, 875),
+                High = rd.Next(876, 890),
+                Low = rd.Next(850, 855),
+                Close = rd.Next(856, 860)
+            });
+        }
+    }
 
-DateTime date = new DateTime(2015, 1, 1);
-
-Random rd = new Random();
-
-for (int i = 0; i < 70; i++)
-
-{
-
-this.StockPriceDetails.Add(new Model() { Date = date.AddDays(i), 
-
-Open = rd.Next(870, 875), High = rd.Next(876, 890),
-
-Low = rd.Next(850, 855), Close = rd.Next(856, 860) });
-
-}
-
-}
-
-public ObservableCollection<Model> StockPriceDetails { get; set; }     
-
+    public ObservableCollection<Model> StockPriceDetails { get; set; }
 }
 
 {% endhighlight %}
@@ -120,13 +110,7 @@ Defining the ItemsSource for Range Navigator in XAML.
 
 {% highlight xaml %}
 
-<chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" 
-
-ItemsSource="{Binding StockPriceDetails}"                                           
-
-XBindingPath="Date">                                 
-
-</chart:SfDateTimeRangeNavigator>                                            
+<chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date" />                                       
 
 {% endhighlight %}
 
@@ -134,18 +118,15 @@ XBindingPath="Date">
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-
-        ItemsSource = new ViewModel().StockPriceDetails,
-
-        XBindingPath ="Date"
-
+    ItemsSource = new ViewModel().StockPriceDetails,
+    XBindingPath ="Date"
 };
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Adding Content
+### Adding content
 
 Content which needs to be displayed inside a SfDateTimeRangeNavigator can be of any control. Here SfLineSparkline control has been added.
 
@@ -160,20 +141,13 @@ The following properties are used to add content.
 {% highlight xaml %}
 
 <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" 
+                                ItemsSource="{Binding StockPriceDetails}" XBindingPath="Date">                                
 
-ItemsSource="{Binding StockPriceDetails}"                                           
+    <chart:SfDateTimeRangeNavigator.Content>
 
-XBindingPath="Date">                                
+        <chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}" Margin="20" YBindingPath="High" />
 
-<chart:SfDateTimeRangeNavigator.Content >
-
-<chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}" 
-
-Margin="20"   YBindingPath="High" >
-
-</chart:SfLineSparkline>
-
-</chart:SfDateTimeRangeNavigator.Content>
+    </chart:SfDateTimeRangeNavigator.Content>
 
 </chart:SfDateTimeRangeNavigator>
 
@@ -184,20 +158,14 @@ Margin="20"   YBindingPath="High" >
 SfLineSparkline sparkline = new SfLineSparkline()
 {
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath = "Date",
-
     YBindingPath = "High"
-
 };
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 {
-
     ItemsSource = new ViewModel().StockPriceDetails,
-
     XBindingPath ="Date"
-
 };
 
 rangeNavigator.Content = sparkline;
@@ -210,16 +178,15 @@ The following output is displayed as a result of the above code example.
 
 ![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
 
-
-## Create a SfDateTimeRangeNavigator from Code Behind
+## Create a SfDateTimeRangeNavigator from code behind
 
 The following steps explain how to create a SfDateTimeRangeNavigator from code behind.
 
 ### Adding the assembly reference
 
 1. Open the Add Reference window from your project.
-2. Choose Windows > Extensions > SyncfusionControls for UWP XAML.
-3. Add the following namespace in code behind
+2. Choose Windows > Extensions > Syncfusion Controls for UWP XAML.
+3. Add the following namespace in code behind.
 
 {% highlight c# %}
 
@@ -235,61 +202,48 @@ SfDateTimeRangeNavigator navigator = new SfDateTimeRangeNavigator();
 
 {% endhighlight %}
 
-### Creating a  Data Source
+### Creating a data source
 
 {% highlight c# %}
 
 public class Model
-
 {
-
-public DateTime Date { get; set; }
-
-public double High { get; set; }
-
-public double Low { get; set; }
-
-public double Open { get; set; }
-
-public double Close { get; set; }
-
+    public DateTime Date { get; set; }
+    public double High { get; set; }
+    public double Low { get; set; }
+    public double Open { get; set; }
+    public double Close { get; set; }
 }
 
 public class ViewModel
-
 {
+    public ViewModel()
+    {
+        this.StockPriceDetails = new ObservableCollection<Model>();
 
-public ViewModel()
+        DateTime date = new DateTime(2015, 1, 1);
 
-{
+        Random rd = new Random();
 
-this.StockPriceDetails = new ObservableCollection<Model>();
+        for (int i = 0; i < 70; i++)
+        {
+            this.StockPriceDetails.Add(new Model()
+            {
+                Date = date.AddDays(i),
+                Open = rd.Next(870, 875),
+                High = rd.Next(876, 890),
+                Low = rd.Next(850, 855),
+                Close = rd.Next(856, 860)
+            });
+        }
+    }
 
-DateTime date = new DateTime(2015, 1, 1);
-
-Random rd = new Random();
-
-for (int i = 0; i < 70; i++)
-
-{
-
-this.StockPriceDetails.Add(new Model() { Date = date.AddDays(i), 
-
-Open = rd.Next(870, 875), High = rd.Next(876, 890),
-
-Low = rd.Next(850, 855), Close = rd.Next(856, 860) });
-
-}
-
-}
-
-public ObservableCollection<Model> StockPriceDetails { get; set; }     
-
+    public ObservableCollection<Model> StockPriceDetails { get; set; }
 }
 
 {% endhighlight %}
 
-### Applying ItemsSource to Range Navigator
+### Applying ItemsSource to range navigator
 
 {% highlight c# %}
 
@@ -303,7 +257,7 @@ navigator.XBindingPath = "Date";
 
 {% endhighlight %}
 
-### Adding Content
+### Adding content
 
 Add the content that needs to be displayed inside SfDateTimeRangeNavigator using the Content property.
 
@@ -334,5 +288,3 @@ The following output is displayed as a result of the above code example.
 ![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-UWP-DataTimeRangeNavigator)
-
-
