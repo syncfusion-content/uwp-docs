@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in UWP Gantt control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Gantt (SfGantt) control and more.
+description: Learn about Localization support in Syncfusion UWP Gantt (SfGantt) control, covering culture settings, language customization, and usage.
 platform: uwp
 control: SfGantt
 documentation: ug

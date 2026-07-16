@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in UWP Gantt control | Syncfusion
-description: Learn here all about Events support in Syncfusion UWP Gantt (SfGantt) control and more.
+description: Learn about Events support in Syncfusion UWP Gantt (SfGantt) control, covering setup, customization, and event handling options.
 platform: uwp
 control: SfGantt
 documentation: ug

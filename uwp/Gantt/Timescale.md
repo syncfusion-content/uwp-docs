@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timescale in UWP Gantt control | Syncfusion
-description: Learn here all about Timescale support in Syncfusion UWP Gantt (SfGantt) control and more.
+description: Learn about Timescale support in Syncfusion UWP Gantt (SfGantt) control, covering setup, customization, and display options for tasks.
 platform: uwp
 control: SfGantt
 documentation: ug

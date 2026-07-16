@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in UWP Gantt control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion UWP Gantt (SfGantt) control and more.
+description: Learn about Appearance support in Syncfusion UWP Gantt (SfGantt) control, covering themes, styles, customization options, and usage examples.
 platform: uwp
 control: SfGantt
 documentation: ug

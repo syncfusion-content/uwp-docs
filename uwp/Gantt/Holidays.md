@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Holidays in UWP Gantt control | Syncfusion
-description: Learn here all about Holidays support in Syncfusion UWP Gantt (SfGantt) control and more.
+description: Learn about Holidays support in Syncfusion UWP Gantt (SfGantt) control, covering setup, customization, and usage examples.
 platform: uwp
 control: SfGantt
 documentation: ug
