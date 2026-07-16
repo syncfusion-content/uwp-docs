@@ -13,7 +13,6 @@ documentation: ug
 ## Prerequisites
 
 * You must have a valid licensed or trial unlock key. See [How to generate the unlock key](https://support.syncfusion.com/kb/article/2757/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account).
-* Run the installer with administrator privileges.
 * Close all running Visual Studio instances before starting the installation.
 * The UWP platform requires Windows 10 or later and the appropriate Windows SDK.
 

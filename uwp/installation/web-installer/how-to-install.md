@@ -17,7 +17,6 @@ For the Essential Studio UWP product, Syncfusion offers a Web Installer. This in
 ## Prerequisites
 
 * You must have a Syncfusion account. If you do not have one, sign up at [Syncfusion Account](https://www.syncfusion.com/account/register).
-* Run the installer with administrator privileges.
 * Close all running Visual Studio instances before starting the installation.
 * The UWP platform requires Windows 10 or later and the appropriate Windows SDK.
 * A stable internet connection is required, since the web installer downloads packages during installation.

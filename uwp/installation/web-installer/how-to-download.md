@@ -18,7 +18,6 @@ The Syncfusion UWP web installer can be downloaded from the [Syncfusion.com](htt
 ## Prerequisites
 
 * You must have a Syncfusion account. If you do not have one, sign up at [Syncfusion Account](https://www.syncfusion.com/account/register).
-* You must run the installer with administrator privileges.
 
 ## Download the Trial Version
 
