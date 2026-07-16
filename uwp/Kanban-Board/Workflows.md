@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Workflows in UWP Kanban Board control | Syncfusion
-description: Learn here all about Workflows support in Syncfusion UWP Kanban Board (SfKanban) control and more.
+description: Learn about Workflows support in Syncfusion UWP Kanban (SfKanban) control, covering setup, customization, and rules for task movement.
 platform: uwp
 control: SfKanban
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cards in UWP Kanban Board control | Syncfusion
-description: Learn here all about Cards support in Syncfusion UWP Kanban Board (SfKanban) control and more.
+description: Learn all about Cards support in Syncfusion UWP Kanban (SfKanban) control, covering setup, customization, data binding, and usage for quick onboarding.
 platform: uwp
 control: SfKanban
 documentation: ug

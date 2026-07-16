@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swimlane in UWP Kanban Board control | Syncfusion
-description: Learn here all about Swimlane support in Syncfusion UWP Kanban (SfKanban) control and more.
+description: Learn about Swimlane support in Syncfusion UWP Kanban (SfKanban) control, covering setup, customization, grouping options, and usage examples.
 platform: uwp
 control: SfKanban
 documentation: ug
