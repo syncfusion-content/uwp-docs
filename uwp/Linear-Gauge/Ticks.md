@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ticks in UWP Linear Gauge control | Syncfusion
-description: Learn here all about Ticks support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
+description: Learn here all about Ticks support in Syncfusion UWP Linear Gauge (SfLinearGauge) control, including tick customization, tick position, and minor tick intervals.
 platform: uwp
 control: SfLinearGauge
 documentation: ug

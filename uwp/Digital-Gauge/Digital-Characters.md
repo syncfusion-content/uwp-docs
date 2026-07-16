@@ -124,5 +124,5 @@ this.Grid.Children.Add(digital);
 {% endhighlight %}
 {% endtabs %}
 
-![UWP Digital Gauge 8 × 8 Dot Matrix Segments](Digital-Characters_images/Digital-Characters_img5.jpeg)
+![UWP Digital Gauge 8 x 8 Dot Matrix Segments](Digital-Characters_images/Digital-Characters_img5.jpeg)
 
