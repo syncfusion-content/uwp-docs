@@ -6,11 +6,12 @@ platform: uwp
 control: SfSparkline
 documentation: ug
 ---
+
 # Sparkline Types in UWP Sparkline (SfSparkline)
 
 ## Line Sparkline
 
-Line sparkline rendered using polyline and the following code is used to create line sparkline.
+Line sparkline is rendered using a polyline and the following code is used to create a line sparkline.
 
 {% tabs %}
 
@@ -18,17 +19,12 @@ Line sparkline rendered using polyline and the following code is used to create 
 
 <Grid.DataContext>
 
-<local:UsersViewModel/>
+	<local:UsersViewModel/>
 
 </Grid.DataContext>
 
-<Syncfusion:SfLineSparkline Interior="#4a4a4a"  
-
-BorderBrush="DarkGray" BorderThickness="1"                 
-
-ItemsSource="{Binding UsersList}" 
-
-YBindingPath="NoOfUsers">
+<Syncfusion:SfLineSparkline Interior="#4a4a4a" BorderBrush="DarkGray" BorderThickness="1"                 
+					   ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers">
 
 </Syncfusion:SfLineSparkline >
 
@@ -38,11 +34,8 @@ YBindingPath="NoOfUsers">
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
 	ItemsSource = new SparkViewModel().UsersList,
-
 	YBindingPath = "NoOfUsers"
-
 };
 
 {% endhighlight %}
@@ -51,22 +44,16 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 ![Line Sparkline](Sparkline-Types_images/SparklineTypes_img1.jpeg)
 
-
 ## Column Sparkline
 
-Column sparkline used to visualize the raw data as a rectangle and following code is used to create column sparkline.
+Column sparkline is used to visualize the raw data as a rectangle and the following code is used to create a column sparkline.
 
 {% tabs %}
 
 {%highlight xaml%}
 
-<Syncfusion:SfColumnSparkline 
-	
-Interior="#4a4a4a" BorderBrush="DarkGray"    
-
-BorderThickness="1" ItemsSource="{Binding UsersList}" 
-
-YBindingPath="NoOfUsers">
+<Syncfusion:SfColumnSparkline Interior="#4a4a4a" BorderBrush="DarkGray" BorderThickness="1" 
+						ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers">
 
 </Syncfusion:SfColumnSparkline >
 
@@ -76,11 +63,8 @@ YBindingPath="NoOfUsers">
 
 SfColumnSparkline sparkline = new SfColumnSparkline()
 {
-
 	ItemsSource = new SparkViewModel().UsersList,
-
 	YBindingPath = "NoOfUsers"
-
 };
 
 {% endhighlight %}
@@ -88,7 +72,6 @@ SfColumnSparkline sparkline = new SfColumnSparkline()
 {% endtabs %}
 
 ![Column Sparkline](Sparkline-Types_images/SparklineTypes_img2.jpeg)
-
 
 ## Area Sparkline
 
@@ -98,13 +81,8 @@ An area sparkline is a line sparkline with the area between its points and the h
 
 {%highlight xaml%}
 
-<Syncfusion:SfAreaSparkline  
-
-Interior="#4a4a4a" BorderBrush="DarkGray"     
-
-BorderThickness="1" ItemsSource="{Binding UsersList}"   
-
-YBindingPath="NoOfUsers">
+<Syncfusion:SfAreaSparkline Interior="#4a4a4a" BorderBrush="DarkGray" BorderThickness="1" 
+					   ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers">
 
 </Syncfusion:SfAreaSparkline >
 
@@ -114,11 +92,8 @@ YBindingPath="NoOfUsers">
 
 SfAreaSparkline sparkline = new SfAreaSparkline()
 {
-
 	ItemsSource = new SparkViewModel().UsersList,
-
 	YBindingPath = "NoOfUsers"
-
 };
 
 {% endhighlight %}
@@ -126,7 +101,6 @@ SfAreaSparkline sparkline = new SfAreaSparkline()
 {% endtabs %}
 
 ![Area Sparkline](Sparkline-Types_images/SparklineTypes_img3.jpeg)
-
 
 ## Win-Loss Sparkline
 
@@ -136,13 +110,8 @@ A win-loss sparkline renders as column segments and shows positive, negative, an
 
 {%highlight xaml%}
 
-<Syncfusion:SfWinLossSparkline Interior="#4a4a4a" BorderBrush="DarkGray"    
-
-BorderThickness="1" 
-
-x:Name="sparkline" ItemsSource="{Binding Match}"   
-
-YBindingPath="Result" >
+<Syncfusion:SfWinLossSparkline x:Name="sparkline" Interior="#4a4a4a" BorderBrush="DarkGray" BorderThickness="1" 
+ 						 ItemsSource="{Binding Match}" YBindingPath="Result">
 
 </Syncfusion:SfWinLossSparkline>
 
@@ -152,11 +121,8 @@ YBindingPath="Result" >
 
 SfWinLossSparkline sparkline = new SfWinLossSparkline()
 {
-
 	ItemsSource = new SparkViewModel().Match,
-
 	YBindingPath = "Result"
-
 };
 
 {% endhighlight %}

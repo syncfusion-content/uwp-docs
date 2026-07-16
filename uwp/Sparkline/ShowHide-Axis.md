@@ -6,27 +6,23 @@ platform: uwp
 control: SfSparkline
 documentation: ug
 ---
+
 # ShowHide Axis in UWP Sparkline (SfSparkline)
 
-ShowAxis is used to enable the axis and this feature is applicable for all the sparkline except WinLoss sparkline, also you can style the axis by AxisStyle property and position the axis by AxisOrigin property.
+ShowAxis is used to enable the axis and this feature is applicable for all the sparklines except WinLoss sparkline. Also, you can style the axis by the AxisStyle property and position the axis by the AxisOrigin property.
 
 * [`ShowAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerBase.html#Syncfusion_UI_Xaml_Charts_MarkerBase_ShowAxis) – Gets or sets the bool value whether to show or hide the axis.
 * [`AxisOrigin`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerBase.html#Syncfusion_UI_Xaml_Charts_MarkerBase_AxisOrigin) - Gets or sets the double for axis origin.
 * [`AxisStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerBase.html#Syncfusion_UI_Xaml_Charts_MarkerBase_AxisStyle) – Gets or sets the style for axis line.
 
-**Show Axis**
+**Show axis**
 
 {% tabs %}
 
 {%highlight xaml%}
 
-<Syncfusion:SfLineSparkline  Interior="#4a4a4a"  
-
-BorderBrush="DarkGray" BorderThickness="1"
-
-ShowAxis="True" ItemsSource="{Binding UsersList}" 
-
-YBindingPath="NoOfUsers">
+<Syncfusion:SfLineSparkline Interior="#4a4a4a" BorderBrush="DarkGray" BorderThickness="1" ShowAxis="True"
+                            ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers">
 
 </Syncfusion:SfLineSparkline >
 
@@ -36,19 +32,12 @@ YBindingPath="NoOfUsers">
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
     ItemsSource = new SparkViewModel().UsersList,
-
     YBindingPath = "NoOfUsers",
-
     ShowAxis = true,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
-
     BorderBrush = new SolidColorBrush(Colors.DarkGray),
-
     BorderThickness = new Thickness(1)
-
 };
 
 {% endhighlight %}
@@ -57,22 +46,14 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 ![Show Axis](ShowHide-Axis_images/ShowHideAxis_img1.jpeg)
 
-
-**Axis Origin**
+**Axis origin**
 
 {% tabs %}
 
 {%highlight xaml%}
 
-<Syncfusion:SfLineSparkline Height="250" Width="350" Interior="#4a4a4a"  
-
-BorderBrush="DarkGray" BorderThickness="1"
-
-ShowAxis="True" 
-
-AxisOrigin="2" ItemsSource="{Binding UsersList}" 
-
-YBindingPath="NoOfUsers">
+<Syncfusion:SfLineSparkline Height="250" Width="350" Interior="#4a4a4a" BorderBrush="DarkGray" BorderThickness="1"
+                            ShowAxis="True" AxisOrigin="2" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers">
 
 </Syncfusion:SfLineSparkline >
 
@@ -82,21 +63,13 @@ YBindingPath="NoOfUsers">
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
     ItemsSource = new SparkViewModel().UsersList,
-
     YBindingPath = "NoOfUsers",
-
     ShowAxis = true,
-
     AxisOrigin = 2,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
-
     BorderBrush = new SolidColorBrush(Colors.DarkGray),
-
     BorderThickness = new Thickness(1)
-
 };
 
 {% endhighlight %}
@@ -104,7 +77,6 @@ SfLineSparkline sparkline = new SfLineSparkline()
 {% endtabs %}
 
 ![Axis Origin](ShowHide-Axis_images/ShowHideAxis_img2.jpeg)
-
 
 **Axis LineStyle**
 
@@ -126,15 +98,9 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 </Grid.Resources>
 
-<Syncfusion:SfLineSparkline Height="250" Width="350" Interior="#4a4a4a"   
-
-BorderBrush="DarkGray"  BorderThickness="1"
-
-ShowAxis="True" AxisStyle="{StaticResource lineStyle2}"   
-
-AxisOrigin="1" ItemsSource="{Binding UsersList}"   
-
-YBindingPath="NoOfUsers">
+<Syncfusion:SfLineSparkline Height="250" Width="350" Interior="#4a4a4a" BorderBrush="DarkGray"  BorderThickness="1"
+                            ShowAxis="True" AxisStyle="{StaticResource lineStyle2}" AxisOrigin="1" 
+                            ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers">
 
 </Syncfusion:SfLineSparkline >
 
@@ -144,23 +110,14 @@ YBindingPath="NoOfUsers">
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
     ItemsSource = new SparkViewModel().UsersList,
-
     YBindingPath = "NoOfUsers",
-
     ShowAxis = true,
-
     AxisOrigin = 1,
-
     AxisStyle = grid.Resources["lineStyle2"] as Style,
-
     Interior = new SolidColorBrush(Color.FromRgb(0x4a, 0x4a, 0x4a)),
-
     BorderBrush = new SolidColorBrush(Colors.DarkGray),
-
     BorderThickness = new Thickness(1)
-
 };
 
 {% endhighlight %}
@@ -168,5 +125,3 @@ SfLineSparkline sparkline = new SfLineSparkline()
 {% endtabs %}
 
 ![Customizing Axis line](ShowHide-Axis_images/ShowHideAxis_img3.jpeg)
-
-

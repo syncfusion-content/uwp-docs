@@ -9,7 +9,7 @@ documentation: ug
 
 # Adornments in UWP Pivot Chart (SfPivotChart)
 
-Adornments are used to display data values of a chart segment with custom formatting options. The data point values (x,y) can be formatted by using the `AdornmentsInfo` property of the SfPivotChart. You can initialize the adornments as specified in the following code snippet.
+Adornments are used to display data values of a chart segment with custom formatting options. The data point values (x,y) can be formatted by using the [`AdornmentsInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAdornmentsInfo.html) property of the SfPivotChart. You can initialize the adornments as specified in the following code snippet.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ Each adornment can be represented by the following components:
 
 ## Marker
 
-To enable a marker in adornments, the `ShowMarker` property is used. By default, no symbol is shown in adornments unless the desired symbol is specified.
+To enable a marker in adornments, the [`ShowMarker`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowMarker) property is used. By default, no symbol is shown in adornments unless the desired symbol is specified.
 
 The following code snippet demonstrates how to show cross-type markers in adornments.
 
@@ -83,7 +83,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ### Customizing marker appearance
 
-The marker's size can be customized using the `SymbolHeight` and `SymbolWidth` properties; its appearance can be customized using the `SymbolInterior` and `SymbolStroke` properties respectively.
+The marker's size can be customized using the [`SymbolHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolHeight) and [`SymbolWidth`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolWidth) properties; its appearance can be customized using the [`SymbolInterior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolInterior) and [`SymbolStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolStroke) properties respectively.
 
 {% tabs %}
 
@@ -101,10 +101,10 @@ The marker's size can be customized using the `SymbolHeight` and `SymbolWidth` p
 PivotChartAdornmentsInfo adornmentsInfo = new PivotChartAdornmentsInfo();
 adornmentsInfo.ShowMarker = true;
 adornmentsInfo.Symbol = ChartSymbol.Ellipse;
-adornmentsInfo.Stroke = new SolidColorBrush(Colors.Red);
-adornmentsInfo.Stroke = new SolidColorBrush(Colors.White);
+adornmentsInfo.SymbolStroke = new SolidColorBrush(Colors.Red);
+adornmentsInfo.SymbolInterior = new SolidColorBrush(Colors.White);
 adornmentsInfo.SymbolHeight = 15;
-adornmentsInfo.SymbolWeight = 15;
+adornmentsInfo.SymbolWidth = 15;
 PivotChart1.AdornmentsInfo = adornmentsInfo;
 
 {% endhighlight %}
@@ -114,10 +114,10 @@ PivotChart1.AdornmentsInfo = adornmentsInfo;
 Dim adornmentsInfo As New PivotChartAdornmentsInfo()
 adornmentsInfo.ShowMarker = True
 adornmentsInfo.Symbol = ChartSymbol.Ellipse
-adornmentsInfo.Stroke = New SolidColorBrush(Colors.Red)
-adornmentsInfo.Stroke = New SolidColorBrush(Colors.White)
+adornmentsInfo.SymbolStroke = New SolidColorBrush(Colors.Red)
+adornmentsInfo.SymbolInterior = New SolidColorBrush(Colors.White)
 adornmentsInfo.SymbolHeight = 15
-adornmentsInfo.SymbolWeight = 15
+adornmentsInfo.SymbolWidth = 15
 PivotChart1.AdornmentsInfo = adornmentsInfo
 
 {% endhighlight %}
@@ -128,7 +128,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ### Custom marker
 
-You can specify a custom template to create your own symbols by using the `SymbolTemplate` property as shown in the following code snippet.
+You can specify a custom template to create your own symbols by using the [`SymbolTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SymbolTemplate) property as shown in the following code snippet.
 
 {% tabs %}
 
@@ -172,7 +172,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ## Label
 
-A label in the adornments can be enabled by using the `ShowLabel` property. The label specifies the text value of the data point (x,y) based on the chart segment. The following code snippet illustrates how to enable labels in adornments.
+A label in the adornments can be enabled by using the [`ShowLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowLabel) property. The label specifies the text value of the data point (x,y) based on the chart segment. The following code snippet illustrates how to enable labels in adornments.
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ### Defining label content
 
-By using the `SegmentLabelContent` property, you can define the values to be displayed as labels for data point segments in the SfPivotChart. The label content can be specified as one of the following values:
+By using the [`SegmentLabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property, you can define the values to be displayed as labels for data point segments in the SfPivotChart. The label content can be specified as one of the following values:
 
 **XValue**
 
@@ -346,7 +346,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 **LabelContentPath**
 
-By default, the Y value of the SfPivotChart point in the provided chart segment can be displayed in the label's text. You can also define other specific label values by defining the `LabelTemplate` property. This property returns the adornment value for chart segments that are being rendered.
+By default, the Y value of the SfPivotChart point in the provided chart segment can be displayed in the label's text. You can also define other specific label values by defining the [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property. This property returns the adornment value for chart segments that are being rendered.
 
 The following code sample demonstrates displaying string values from the x-axis.
 
@@ -464,7 +464,7 @@ End Class
 
 ### Rotating labels
 
-The labels in the adornments can be rotated to a specific angle using the `LabelRotationAngle` property. The following code snippet demonstrates how to rotate the labels.
+The labels in the adornments can be rotated to a specific angle using the [`LabelRotationAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelRotationAngle) property. The following code snippet demonstrates how to rotate the labels.
 
 {% tabs %}
 
@@ -551,7 +551,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ### Applying series brush
 
-The series color palette can be applied to the background of the labels in adornments by enabling the `UseSeriesPalette` property.
+The series color palette can be applied to the background of the labels in adornments by enabling the [`UseSeriesPalette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_UseSeriesPalette) property.
 
 {% tabs %}
 
@@ -587,7 +587,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ### Formatting labels
 
-The content of the labels in adornments can be set to a desired format by using the `SegmentLabelFormat` property. The following code snippet illustrates how to format an adornment label to decimal digits.
+The content of the labels in adornments can be set to a desired format by using the [`SegmentLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelFormat) property. The following code snippet illustrates how to format an adornment label to decimal digits.
 
 {% tabs %}
 
@@ -623,7 +623,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ## Connector line
 
-A connector line can be added to the adornments through the `ShowConnectorLine` property. It can be customized by using the `ConnectorHeight` and `ConnectorRotationAngle` properties as follows.
+A connector line can be added to the adornments through the [`ShowConnectorLine`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ShowConnectorLine) property. It can be customized by using the [`ConnectorHeight`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorHeight) and [`ConnectorRotationAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorRotationAngle) properties as follows.
 
 {% tabs %}
 
@@ -663,7 +663,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ### Styling connector line
 
-You can define your own style for the connector line by using the `ConnectorLineStyle` property.
+You can define your own style for the connector line by using the [`ConnectorLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_ConnectorLineStyle) property.
 
 {% tabs %}
 
@@ -711,7 +711,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ## Positioning adornments
 
-The adornments can be positioned with respect to chart segment by using the `AdornmentsPosition` property. The positions are:
+The adornments can be positioned with respect to chart segment by using the [`AdornmentsPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_AdornmentsPosition) property. The positions are:
 
 * `Top`: Positions the adornment at the top edge point of the chart segment.
 * `Bottom`: Positions the adornment at the bottom edge point of the chart segment.
@@ -753,7 +753,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![positioningLabel_LabelAdornments](Adornments_images/positioningLabel_LabelAdornments.png)
 
-A label in adornments can be aligned by using the `HorizontalAlignment` and `VerticalAlignment` properties as explained in the following code snippet.
+A label in adornments can be aligned by using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_VerticalAlignment) properties as explained in the following code snippet.
 
 {% tabs %}
 
@@ -789,7 +789,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![alignedLabel_LabelAdornments](Adornments_images/alignedLabel_LabelAdornments.png)
 
-The SfPivotChart supports positioning a label in adornments, depending upon the selected chart type, using the `LabelPosition` property. The following code snippet defines positioning the label based on the `Auto` position.
+The SfPivotChart supports positioning a label in adornments, depending upon the selected chart type, using the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property. The following code snippet defines positioning the label based on the `Auto` position.
 
 {% tabs %}
 

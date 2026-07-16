@@ -9,7 +9,7 @@ documentation: ug
 
 # Range Band in UWP Sparkline (SfSparkline)
 
-Range band feature is used to highlight the particular mentioned range along Y axis.
+The range band feature is used to highlight the particular mentioned range along the Y axis.
 
 * [`BandRangeStart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SparklineBase.html#Syncfusion_UI_Xaml_Charts_SparklineBase_BandRangeStart) – Gets or sets the minimum range band value in Y axis.
 * [`BandRangeEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SparklineBase.html#Syncfusion_UI_Xaml_Charts_SparklineBase_BandRangeEnd) – Gets or sets the maximum range band value in Y axis.
@@ -19,17 +19,8 @@ Range band feature is used to highlight the particular mentioned range along Y a
 
 {%highlight xaml%}
 
-<Syncfusion:SfLineSparkline
-
-BorderBrush="DarkGray" BorderThickness="1" 
-
-ItemsSource="{Binding UsersList}" BandRangeStart="3500"   
-
-Interior="#4a4a4a"  BandRangeEnd="8500" 
-
-RangeBandBrush="DeepSkyBlue" Stroke="Red"
-
-YBindingPath="NoOfUsers">
+<Syncfusion:SfLineSparkline BorderBrush="DarkGray" BorderThickness="1" ItemsSource="{Binding UsersList}" BandRangeStart="3500"   
+					   Interior="#4a4a4a"  BandRangeEnd="8500" RangeBandBrush="DeepSkyBlue" Stroke="Red" YBindingPath="NoOfUsers">
 
 </Syncfusion:SfLineSparkline >
 
@@ -39,17 +30,11 @@ YBindingPath="NoOfUsers">
 
 SfLineSparkline sparkline = new SfLineSparkline()
 {
-
 	ItemsSource = new SparkViewModel().UsersList,
-
 	YBindingPath = "NoOfUsers",
-
 	BandRangeStart = 2000,
-
 	BandRangeEnd = -1000,
-
 	RangeBandBrush = new SolidColorBrush(Colors.Green)
-
 };
 
 {% endhighlight %}

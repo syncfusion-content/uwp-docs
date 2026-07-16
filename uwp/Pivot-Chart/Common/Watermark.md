@@ -2,7 +2,7 @@
 layout: post
 title: Watermark in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Watermark support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
@@ -13,7 +13,7 @@ The SfPivotChart supports watermark that is used to add text or images to the ch
 
 ## Text watermark
 
-You can add a text as watermark in the chart background by using the `Content` property of `PivotChartWatermark` instance.
+You can add a text as watermark in the chart background by using the `Content` property of [`PivotChartWatermark`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark.html) instance.
 
 The following code snippet explains how to set the custom text as watermark.
 

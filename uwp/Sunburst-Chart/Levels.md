@@ -3,7 +3,7 @@
 layout: post
 title: Levels in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Levels support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -11,7 +11,7 @@ documentation: ug
 
 # Levels in UWP Sunburst Chart (SfSunburstChart)
 
-Sunburst chart is used to display hierarchical data. You can add more than one hierarchical data in [`Levels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) collection of Sunburst chart. Each level of the hierarchy is represented by circle. 
+Sunburst chart is used to display hierarchical data. You can add more than one hierarchical data in [`Levels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) collection of Sunburst chart. Each level of the hierarchy is represented by a circle. 
 
 The following code shows how to add the hierarchical level in Levels collection.
 
@@ -20,9 +20,7 @@ The following code shows how to add the hierarchical level in Levels collection.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Levels>
-
-           <sunburst:SunburstHierarchicalLevel/>
-           
+        <sunburst:SunburstHierarchicalLevel/>     
 </sunburst:SfSunburstChart.Levels>
 
 {% endhighlight %}
@@ -47,11 +45,9 @@ You can define the Levels as shown in the code sample.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.Levels>
-
         <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level1"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath=" Level2"/>
-        <sunburst:SunburstHierarchicalLevel GroupMemberPath=" Level3"/>
-
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level2"/>
+        <sunburst:SunburstHierarchicalLevel GroupMemberPath="Level3"/>
 </sunburst:SfSunburstChart.Levels>
 
 {% endhighlight %}
@@ -76,5 +72,3 @@ sunburstChart.Levels.Add(level3);
 {% endtabs %}
 
 ![Levels_img1](Levels_images/Levels_img1.jpeg)
-
-

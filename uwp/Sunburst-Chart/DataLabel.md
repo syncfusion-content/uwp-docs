@@ -3,7 +3,7 @@
 layout: post
 title: Data Label in UWP Sunburst Chart control | Syncfusion
 description: Learn here all about Data Label support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
-platform: wpf 
+platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
@@ -19,11 +19,9 @@ You can enable or disable the data labels by using [`ShowLabel`](https://help.sy
 
 {% highlight xaml %}
 
- <sunburst:SfSunburstChart.DataLabelInfo>
-                
-         <sunburst:SunburstDataLabelInfo ShowLabel="True" />
-                
- </sunburst:SfSunburstChart.DataLabelInfo>
+<sunburst:SfSunburstChart.DataLabelInfo>
+        <sunburst:SunburstDataLabelInfo ShowLabel="True" />
+</sunburst:SfSunburstChart.DataLabelInfo>
 
 {% endhighlight %}
 
@@ -31,8 +29,9 @@ You can enable or disable the data labels by using [`ShowLabel`](https://help.sy
 
 SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 {
-          ShowLabel = true
+        ShowLabel = true
 };
+
 chart.DataLabelInfo = dataLabelInfo;
 
 {% endhighlight %}
@@ -61,10 +60,7 @@ The following code shows how to set Hide and Trim mode.
 {% highlight xaml %}
 
 <sunburst:SfSunburstChart.DataLabelInfo>
-                
-           <sunburst:SunburstDataLabelInfo ShowLabel="True"
-                                           LabelOverflowMode="Hide"/>
-                
+        <sunburst:SunburstDataLabelInfo ShowLabel="True" LabelOverflowMode="Hide"/>
 </sunburst:SfSunburstChart.DataLabelInfo>
 
 {% endhighlight %}
@@ -73,8 +69,8 @@ The following code shows how to set Hide and Trim mode.
 
 SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 {
-         ShowLabel = true,
-         LabelOverflowMode = LabelOverflowMode.Hide
+        ShowLabel = true,
+        LabelOverflowMode = LabelOverflowMode.Hide
 };
 
 {% endhighlight %}
@@ -89,11 +85,8 @@ SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.DataLabelInfo>
-                
-                <sunburst:SunburstDataLabelInfo ShowLabel="True" 
-                                                LabelOverflowMode="Trim" />
-                
+<sunburst:SfSunburstChart.DataLabelInfo>        
+        <sunburst:SunburstDataLabelInfo ShowLabel="True" LabelOverflowMode="Trim" />
 </sunburst:SfSunburstChart.DataLabelInfo>
 
 {% endhighlight %}
@@ -102,8 +95,8 @@ SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 
 SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 {
-         ShowLabel = true,
-         LabelOverflowMode =LabelOverflowMode.Trim
+        ShowLabel = true,
+        LabelOverflowMode = LabelOverflowMode.Trim
 };
 
 chart.DataLabelInfo = dataLabelInfo;
@@ -118,17 +111,14 @@ chart.DataLabelInfo = dataLabelInfo;
 
 You can rotate the data label by using [`LabelRotationMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstDataLabelInfo.html#Syncfusion_UI_Xaml_SunburstChart_SunburstDataLabelInfo_LabelRotationMode) property. 
 
-The following code shows how to set [`LabelRotationMode`](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.SunburstChart.LabelRotationMode.html) as normal and angle. 
+The following code shows how to set the [`LabelRotationMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.LabelRotationMode.html) as Normal and Angle. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<sunburst:SfSunburstChart.DataLabelInfo>
-                
-               <sunburst:SunburstDataLabelInfo ShowLabel="True" 
-                                               LabelRotationMode="Normal"/>
-                
+<sunburst:SfSunburstChart.DataLabelInfo>          
+        <sunburst:SunburstDataLabelInfo ShowLabel="True" LabelRotationMode="Normal"/>     
 </sunburst:SfSunburstChart.DataLabelInfo>
 
 {% endhighlight %}
@@ -137,9 +127,10 @@ The following code shows how to set [`LabelRotationMode`](https://help.syncfusio
 
 SunburstDataLabelInfo dataLabelInfo = new SunburstDataLabelInfo()
 {
-                ShowLabel = true,
-                LabelRotationMode = LabelRotationMode.Normal
+        ShowLabel = true,
+        LabelRotationMode = LabelRotationMode.Normal
 };
+
 chart.DataLabelInfo = dataLabelInfo;
 
 {% endhighlight %}
@@ -147,7 +138,6 @@ chart.DataLabelInfo = dataLabelInfo;
 {% endtabs %}
 
 ![DataLabel_img4](DataLabel_images/DataLabel_img4.jpeg)
-
 
 N> By default, LabelRotationMode value is Angle.
 
@@ -157,20 +147,14 @@ You can customize the default appearance or display information about the data p
 
 {% highlight xaml %}
 
-   <sunburst:SunburstDataLabelInfo.LabelTemplate>
-
-         <DataTemplate>
-               <Border Background="LightGray" CornerRadius="4" >
-                      <TextBlock Text="{Binding Category}" Margin="2,0,2,0"
-                                 FontWeight="Bold"/>
-                </Border>
+<sunburst:SunburstDataLabelInfo.LabelTemplate>
+        <DataTemplate>
+        <Border Background="LightGray" CornerRadius="4">
+                <TextBlock Text="{Binding Category}" Margin="2,0,2,0" FontWeight="Bold" />
+        </Border>
         </DataTemplate>
-
-   </sunburst:SunburstDataLabelInfo.LabelTemplate>
-
+</sunburst:SunburstDataLabelInfo.LabelTemplate>
 
 {% endhighlight %}
 
 ![DataLabel_img5](DataLabel_images/DataLabel_img5.jpeg)
-
-
