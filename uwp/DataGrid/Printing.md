@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in UWP DataGrid control | Syncfusion®
-description: Learn here all about Printing support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about Printing support in Syncfusion® UWP DataGrid (SfDataGrid) control and more features.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -785,7 +785,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-print-specific-pages-in-uwp-datagrid).
 
-N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information [click here](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
+N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information, refer to [PrintPageRange](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
 
 ### Disable print preview
 
