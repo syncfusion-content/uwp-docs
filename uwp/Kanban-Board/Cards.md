@@ -12,11 +12,11 @@ documentation: ug
 The default elements of a card can be customized using the below properties of [`KanbanModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
 * [`Title`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Title)         - Used to set the title of a card.
-* [`ImageURL`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_ImageURL)      - Used to set the image URL of a card. The image will be displayed at right side in default card template.
+* [`ImageURL`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_ImageURL)      - Used to set the image URL of a card. The image will be displayed at the right side in the default card template.
 * [`Category`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Category)      - Used to set the category of a card. Based on the category the cards will be added to the respective columns. 
 * [`Description`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Description)   - Used to set the description text of a card.
-* [`ColorKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_ColorKey)      - Used to specify the indicator [`ColorKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.IKanbanModel.html#Syncfusion_UI_Xaml_Kanban_IKanbanModel_ColorKey). The [`Color`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColorMapping.html#Syncfusion_UI_Xaml_Kanban_ColorMapping_Color) value of the corresponding [`Key`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColorMapping.html#Syncfusion_UI_Xaml_Kanban_ColorMapping_Key) should be added in [`IndicatorColorPalette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IndicatorColorPalette) collection of [`SfKanban`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html).
-* [`Tags`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Tags)     - Used to specify the tags of a card. The tags will be displayed at bottom in default card template.
+* [`ColorKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_ColorKey)      - Used to specify the indicator [`ColorKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.IKanbanModel.html#Syncfusion_UI_Xaml_Kanban_IKanbanModel_ColorKey). The [`Color`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColorMapping.html#Syncfusion_UI_Xaml_Kanban_ColorMapping_Color) value of the corresponding [`Key`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColorMapping.html#Syncfusion_UI_Xaml_Kanban_ColorMapping_Key) should be added to the [`IndicatorColorPalette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_IndicatorColorPalette) collection of [`SfKanban`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html). If no matching key is found in the `IndicatorColorPalette`, the indicator will use the default color.
+* [`Tags`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Tags)     - Used to specify the tags of a card. The tags will be displayed at the bottom in the default card template.
 * [`ID`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_ID)     - Used to set the ID of a card.
 
 {% highlight C# %}
@@ -78,7 +78,7 @@ sfKanban.IndicatorColorPalette = indicatorColorPalette;
 
 ![Card customization in UWP SfKanban](SfKanban_images/CardCustomization.png)
 
-## Customizing kanban cards
+## Customizing Kanban cards
 
 The [`CardStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardStyle) property customizes the kanban cards. The following properties of [`CardStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardStyle) are used to customize its appearance:
 

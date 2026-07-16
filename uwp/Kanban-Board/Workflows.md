@@ -9,11 +9,11 @@ documentation: ug
 
 # Workflows in UWP Kanban Board (SfKanban)
 
-A Kanban [`Workflows`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
+A Kanban [`Workflow`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 
 * [`Category`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_Category) – It represents a state of an item at a particular point in a specific workflow.
 
-* [`AllowedTransitions`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) – It is a list of categories to where the card can be moved from the current category.
+* [`AllowedTransitions`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_AllowedTransitions) – It is a list of categories to which the card can be moved from the current category.
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ workflows.Add(new KanbanWorkflow()
 
 });
 
-Kanban.Workflows = workflows;
+kanban.Workflows = workflows;
 
 {% endhighlight %}
 
@@ -82,7 +82,7 @@ Kanban.Workflows = workflows;
 
 ## Work In-Progress limit
 
-[`MinimumLimit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumLimit) and [`MaximumLimit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumLimit) properties are used to limit the minimum and maximum items in the Kanban column. However, this will not restrict moving the items from one column to another column. But the violation of the limit can be indicated by changing the [`ValidationColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_ValidationColor) of the error bar.
+[`MinimumLimit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MinimumLimit) and [`MaximumLimit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_MaximumLimit) properties are used to limit the minimum and maximum items in the Kanban column. However, this will not restrict moving the items from one column to another column, but the violation of the limit can be indicated by changing the [`ValidationColor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_ValidationColor) of the error bar.
 
 Following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_ErrorBarSettings) are used to customize the error bar.
 
@@ -99,22 +99,18 @@ Following properties of [`ErrorBarSettings`](https://help.syncfusion.com/cr/uwp/
 {% highlight xaml %}
 
 <syncfusion:KanbanColumn x:Name="column1" Categories="Review,Done"
- 
                          Title="Done"
- 
                          MinimumLimit="1"
- 
                          MaximumLimit="2">
 
-	     <syncfusion:KanbanColumn.ErrorBarSettings>
+    <syncfusion:KanbanColumn.ErrorBarSettings>
 
-			   <syncfusion:ErrorBarSettings Color="Gray" MaxValidationColor="Red"
+        <syncfusion:ErrorBarSettings Color="Gray" MaxValidationColor="Red"
+                                     MinValidationColor="Green">
 
-                                            MinValidationColor="Green">
+        </syncfusion:ErrorBarSettings>
 
-			   </syncfusion:ErrorBarSettings>
-
-         </syncfusion:KanbanColumn.ErrorBarSettings>
+    </syncfusion:KanbanColumn.ErrorBarSettings>
 
 </syncfusion:KanbanColumn>
 
