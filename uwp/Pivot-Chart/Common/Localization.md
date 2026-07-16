@@ -2,7 +2,7 @@
 layout: post
 title: Localization in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Localization support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
@@ -84,7 +84,7 @@ The SfPivotChart provides RTL support to display the content from right to left 
 
 <syncfusion:SfPivotChart x:Name="PivotChart1" FlowDirection="RightToLeft"
                          ItemSource="{Binding ProductSalesData}" PivotAxis="{Binding PivotAxis}"
-                         PivotLegend="{Binding PivotLegend}" PivotCalculations="{Binding PivotCalculations}"/>
+                         PivotLegend="{Binding PivotLegend}" PivotCalculations="{Binding PivotCalculations}" />
 
 {% endhighlight %}
 

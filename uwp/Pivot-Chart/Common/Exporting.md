@@ -2,7 +2,7 @@
 layout: post
 title: Exporting in UWP Pivot Chart control | Syncfusion
 description: Learn here all about Exporting support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
@@ -46,7 +46,7 @@ PivotChart1.SaveToImageAsync()
 
 ## Export to Word document
 
-To export the SfPivotChart contents to Word, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then, create an instance of `ExportPivotChartToWord` object to access the `ExportToDocument` method. `FileSavePicker` can be used to save the exported file in the preferred location.
+To export the SfPivotChart contents to Word, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then, create an instance of [`ExportPivotChartToWord`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html) object to access the [`ExportToDocument`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html#Syncfusion_UI_Xaml_PivotChartConverter_ExportPivotChartToWord_ExportToDocument_System_String_) method. `FileSavePicker` can be used to save the exported file in the preferred location.
 
 Refer to the following code snippet to export the SfPivotChart to Word document.
 
@@ -76,7 +76,7 @@ export.ExportToDocument("Sample")
 
 ## Export to PDF document
 
-To export the SfPivotChart contents to PDF, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then, create an instance of `ExportPivotChartToPdf` object to access the `ExportToDocument` method. The `FileSavePicker` can be used to save the exported file in the preferred location.
+To export the SfPivotChart contents to PDF, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then, create an instance of [`ExportPivotChartToPdf`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf.html) object to access the [`ExportToDocument`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html#Syncfusion_UI_Xaml_PivotChartConverter_ExportPivotChartToWord_ExportToDocument_System_String_) method. The `FileSavePicker` can be used to save the exported file in the preferred location.
 
 Refer to the following code snippet to export the SfPivotChart to PDF document.
 

@@ -18,7 +18,7 @@ This section explains the information required to create a simple SfPivotChart c
 
 Open Visual Studio IDE and select **File > New > Project** to open a new project dialog.
 
-Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "SfPivotChartDemo".
+Select **Installed > Templates > Visual C# > Windows > Universal > Blank App (Universal Windows)** to create a new UWP application and name the project as "SfPivotChartDemo".
 
 The target version/minimum version dialog appears, in which you should change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
@@ -78,20 +78,20 @@ Then, add the SfPivotChart control to the grid by using the specified namespace 
 
 {% highlight xaml %}
 
-    <Page
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:SfPivotChartDemo"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        x:Class="SfPivotChartDemo.MainPage"
-        xmlns:PivotChart="using:Syncfusion.UI.Xaml.PivotChart"
-        mc:Ignorable="d">
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SfPivotChartDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="SfPivotChartDemo.MainPage"
+    xmlns:PivotChart="using:Syncfusion.UI.Xaml.PivotChart"
+    mc:Ignorable="d">
 
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <PivotChart:SfPivotChart/>
-        </Grid>
-    </Page>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <PivotChart:SfPivotChart/>
+    </Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -125,18 +125,18 @@ After adding the required reference, open the *MainPage.xaml* file and name the 
 
 {% highlight xaml %}
 
-    <Page
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:SfPivotChartDemo"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        x:Class="SfPivotChartDemo.MainPage"
-        mc:Ignorable="d">
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SfPivotChartDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="SfPivotChartDemo.MainPage"
+    mc:Ignorable="d">
 
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="RootGrid">
-        </Grid>
-    </Page>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="RootGrid">
+    </Grid>
+</Page>
 
 {% endhighlight %}
 
@@ -460,7 +460,7 @@ End Namespace
 
 ### Binding OlapDataManager with SfPivotChart control
 
-The OLAP data can be bound with SfPivotChart control by using the `OlapDataManager` property using any of the following ways:
+The OLAP data can be bound with SfPivotChart control by using the [`OlapDataManager`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_OlapDataManager) property using any of the following ways:
 
 * Through XAML
 * Through code-behind
