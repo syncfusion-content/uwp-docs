@@ -90,7 +90,7 @@ SfDataGrid control allows you sort more than one column, where sorting is applie
 
 To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 
-In the below screen shot, the OrderID column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column.  
+In the below screen shot, the OrderID column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column. 
 
 ![Sorting_img2](Sorting_images/Sorting_img2.png)
 

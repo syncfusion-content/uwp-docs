@@ -622,7 +622,7 @@ N> [GetColumnWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.P
 
 ### Printing Selected rows
 
-Selected rows can be printed by overriding [GetSourceListForPrinting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetSourceListForPrinting) method in `PrintManagerClass` class.
+Selected rows can be printed by overriding [GetSourceListForPrinting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetSourceListForPrinting) method in `GridPrintManager` class.
 
 {% tabs %}
 {% highlight c# %}
