@@ -9,9 +9,10 @@ documentation: ug
 
 # Add Syncfusion<sup>&reg;</sup> UWP Controls
 
-The Syncfusion<sup>&reg;</sup> UWP controls can be added in a Visual Studio projects by using either of the following ways,
+The Syncfusion<sup>&reg;</sup> UWP controls can be added in a Visual Studio project by using either of the following ways,
 
 * Through Designer
+* Through XAML
 * Through Code-Behind
 * Through Project Templates
 * Through NuGet Packages
@@ -19,40 +20,40 @@ The Syncfusion<sup>&reg;</sup> UWP controls can be added in a Visual Studio proj
 ## Through Designer
 
 
-Syncfusion<sup>&reg;</sup> UI for UWP are added automatically to the Visual Studio Toolbox during installation. The following steps helps to add required Essential<sup>&reg;</sup> UWP control through drag and drop from Toolbox. For example: SfTextBoxExt 
+Syncfusion<sup>&reg;</sup> UI for UWP are added automatically to the Visual Studio Toolbox during installation. The following steps help to add the required Essential<sup>&reg;</sup> UWP control through drag and drop from Toolbox. For example: SfTextBoxExt.
 
 1. Create a Universal Windows Platform project in Visual Studio.
 
-2. Find `SfTextBoxExt` by typing the text “SfTextBoxExt” in search box.
+2. Find `SfTextBoxExt` by typing the text "SfTextBoxExt" in the search box.
 
 ![Search SfTextBoxExt](Add-Syncfusion-Controls_images/Add-Syncfusion-Controls_img1.jpeg)
 
 
-3.Drag `SfTextBoxExt` and drop it in the designer.
+3. Drag `SfTextBoxExt` and drop it in the designer.
 
 ![Drag SfTextBoxExt in to Designer](Add-Syncfusion-Controls_images/Add-Syncfusion-Controls_img2.jpeg)
 
 
 ## Through XAML
 
-The following steps helps to add a required Essential<sup>&reg;</sup> UWP control through XAML Code, for example: SfTextBoxExt.
+The following steps help to add a required Essential<sup>&reg;</sup> UWP control through XAML code, for example: SfTextBoxExt.
 
-1.Create a Universal Windows Platform project in Visual Studio and refer the following assemblies.
+1. Create a Universal Windows Platform project in Visual Studio and refer the following assemblies.
 
  * Syncfusion.SfInput.UWP.dll
  * Syncfusion.SfShared.UWP.dll
 
-2.Include XML namespace for the above assemblies in MainPage.xaml.
+2. Include XML namespace for the above assemblies in MainPage.xaml.
 
 {% tabs %}
 	
 {% highlight XAML  %}
 
-<Page xmlns="(http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+      xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 
 
@@ -60,13 +61,13 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-3.Now, Add the `SfTextBoxExt` control with a required optimal name, using the included namespace.
+3. Now, add the `SfTextBoxExt` control with a required optimal name, using the included namespace.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<input:SfTextBoxExt x:Name="sftextboxExt">
+      <input:SfTextBoxExt x:Name="sftextboxExt"/>
 
 
 
@@ -77,61 +78,78 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 ## Through Code-Behind
 
-Syncfusion<sup>&reg;</sup> UI for UWP can added at runtime using C# / VB. The following steps helps to add required Essential<sup>&reg;</sup> UWP control through code. For example: SfTextBoxExt.
+Syncfusion<sup>&reg;</sup> UI for UWP can be added at runtime using C# / VB. The following steps help to add a required Essential<sup>&reg;</sup> UWP control through code. For example: SfTextBoxExt.
 
-1.Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
+1. Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
  * Syncfusion.SfInput.UWP.dll
  * Syncfusion.SfShared.UWP.dll
 
-2.Create an instance of `SfTextBoxExt` using its namespace and set the required properties.
+2. Include the namespace for SfTextBoxExt in MainPage.xaml.cs.
+
+{% tabs %}
+
+{% highlight C# %}
+
+      using Syncfusion.UI.Xaml.Controls.Input;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+      Imports Syncfusion.UI.Xaml.Controls.Input
+
+{% endhighlight %}
+
+{% endtabs %}
+
+3. Create an instance of `SfTextBoxExt` using its namespace and set the required properties.
 
 {% tabs %}
 
 {% highlight C# %}
 
 
-Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt textBoxExt1 = new Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt();
+      Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt textBoxExt1 = new Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt();
 
-textBoxExt1.Height = 20;
+      textBoxExt1.Height = 20;
 
-textBoxExt1.Width = 120;
+      textBoxExt1.Width = 120;
 
-textBoxExt1.Margin = new Thickness(10, 10, 10, 10);
+      textBoxExt1.Margin = new Thickness(10, 10, 10, 10);
 
-textBoxExt1.VerticalAlignment = VerticalAlignment.Center;
+      textBoxExt1.VerticalAlignment = VerticalAlignment.Center;
 
-textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center;
+      textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center;
 
 {% endhighlight %}
 
 {% highlight VB %}
  
-Dim textBoxExt1 As New Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt()
+      Dim textBoxExt1 As New Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt()
 
-textBoxExt1.Height = 20
+      textBoxExt1.Height = 20
 
-textBoxExt1.Width = 120
+      textBoxExt1.Width = 120
 
-textBoxExt1.Margin = New Thickness(10, 10, 10, 10)
+      textBoxExt1.Margin = New Thickness(10, 10, 10, 10)
 
-textBoxExt1.VerticalAlignment = VerticalAlignment.Center
+      textBoxExt1.VerticalAlignment = VerticalAlignment.Center
 
-textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center
+      textBoxExt1.HorizontalAlignment = HorizontalAlignment.Center
 
 
 {% endhighlight %}
 
 {% endtabs %}
 
-3.Add the created instance to MainPage.
-
+4. Add the created instance to MainPage.
 {% tabs%}
 
 {% highlight C# %}
 
 
-this.Content = textBoxExt1;
+      this.Content = textBoxExt1;
 
 
 {% endhighlight %}
@@ -139,7 +157,7 @@ this.Content = textBoxExt1;
 
 {% highlight VB %}
 
-Me.Content = textBoxExt1
+      Me.Content = textBoxExt1
 
 
 {% endhighlight %}
@@ -147,7 +165,6 @@ Me.Content = textBoxExt1
 {% endtabs %}
 
 N> Syncfusion<sup>&reg;</sup> controls for UWP package can be added (available under Universal Windows Platform => Extensions tab in Add reference dialog) in the cases of using most of the controls from Syncfusion<sup>&reg;</sup> toolkit.
-
 ## Through Project Templates
 
 Syncfusion<sup>&reg;</sup> provides the **Visual** **Studio** **Project** **Templates** for the Syncfusion<sup>&reg;</sup> UWP platform to create Syncfusion<sup>&reg;</sup> UWP Applications.  
@@ -182,32 +199,32 @@ The following steps direct you to create the **Syncfusion** **UWP** **Applicatio
    
    ![Configure Syncfusion UWP project](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img4.jpeg)
    
-   N> If SDK is chosen as the reference type, then all the Syncfusion<sup>&reg;</sup> UWP controls will be added. So, you no need to select any components.
+   N> If SDK is chosen as the reference type, then all the Syncfusion<sup>&reg;</sup> UWP controls will be added. So, you don't need to select any components.
    
-4. Once you click Create button, the Syncfusion<sup>&reg;</sup> UWP Application is created.
+4. Once you click the **Create** button, the Syncfusion<sup>&reg;</sup> UWP Application is created.
 
 5. Once the Project Configuration Wizard is done, the Syncfusion<sup>&reg;</sup> UWP Application is created with required SDK/references and pages.
 
    ![UWP Application Created with required SDK and References](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img5.jpeg)
 
-6. Then, Syncfusion<sup>&reg;</sup> licensing registration required message box will be shown as follow, if you are installed the trial setup or NuGet packages since Syncfusion<sup>&reg;</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>&reg;</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>&reg;</sup> license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>&reg;</sup>.
+6. Then, a Syncfusion<sup>&reg;</sup> licensing registration required message box will be shown as follows, if you installed the trial setup or NuGet packages since Syncfusion<sup>&reg;</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup>&reg;</sup> release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion<sup>&reg;</sup> license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup>&reg;</sup>.
 
    ![Syncfusion Licensing Message Box](Add-Syncfusion-Controls_images/Syncfusion-Project-Templates_img6.jpeg)
 
 
 ## Through NuGet Packages
 
-Syncfusion<sup>&reg;</sup> UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion<sup>&reg;</sup> NuGet package installation. Please refer below topic to configure and install the Syncfusion<sup>&reg;</sup> UWP NuGet packages in UWP application from Visual Studio.
+Syncfusion<sup>&reg;</sup> UI for UWP controls are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion<sup>&reg;</sup> NuGet package installation. Please refer to the below topic to configure and install the Syncfusion<sup>&reg;</sup> UWP NuGet packages in UWP application from Visual Studio.
 
 [Configuring Syncfusion NuGet packages in Visual Studio](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages)
 
-After Installed required Syncfusion<sup>&reg;</sup> UWP NuGet packages in your application, we can utilize the Syncfusion<sup>&reg;</sup> UWP controls by following ways. 
+After installing the required Syncfusion<sup>&reg;</sup> UWP NuGet packages in your application, you can utilize the Syncfusion<sup>&reg;</sup> UWP controls in the following ways.
 
 * Through Designer
-* Through XMAL
+* Through XAML
 * Through Code-Behind
 
-1.Syncfusion<sup>&reg;</sup> UI for UWP are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion<sup>&reg;</sup> NuGet package installation. We can add required Syncfusion<sup>&reg;</sup> UWP control through drag and drop from ToolBox. Toolbox configured from Syncfusion<sup>&reg;</sup> UWP NuGet package, controls will be listed under “Syncfusion<sup>&reg;</sup> controls for UWP” category. For example: SfColorPicker
+1. Syncfusion<sup>&reg;</sup> UI for UWP controls are added automatically to the specific Visual Studio UWP application Toolbox during Syncfusion<sup>&reg;</sup> NuGet package installation. You can add a required Syncfusion<sup>&reg;</sup> UWP control through drag and drop from the Toolbox. When the Toolbox is configured from the Syncfusion<sup>&reg;</sup> UWP NuGet package, controls will be listed under the "Syncfusion<sup>&reg;</sup> controls for UWP" category. For example: SfColorPicker
 
    ![Add Colorpicker from ToolBox](Add-Syncfusion-Controls_images/Toolbox_ColoPicker1.png)
     
@@ -216,74 +233,92 @@ After Installed required Syncfusion<sup>&reg;</sup> UWP NuGet packages in your a
    N> Toolbox configuration by installing UWP NuGet packages support available from v15.4.0.17.
 
 
-2.The following steps helps to add a required Essential<sup>&reg;</sup> UWP control through XAML code, for example: SfColorPicker
+2. The following steps help to add a required Essential<sup>&reg;</sup> UWP control through XAML code, for example: SfColorPicker
 
 a. Include the namespace for Syncfusion.SfColorPickers.UWP assembly from Syncfusion.SfColorPickers.UWP NuGet package in MainPage.xaml.
 
-        {% tabs %}
+{% tabs %}
 
-        {% highlight XAML %}
+{% highlight XAML %}
 
-        <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:media="using:Syncfusion.UI.Xaml.Controls.Media">
+      xmlns:media="using:Syncfusion.UI.Xaml.Controls.Media">
 
-        {% endhighlight %}
+{% endhighlight %}
 
-        {% endtabs %}
+{% endtabs %}
 
-b. Now add the `SfColorPicker` control with a required optimal name using the included namespace
+b. Now, add the `SfColorPicker` control with a required optimal name using the included namespace.
 
-        {% tabs %}
+{% tabs %}
 
-        {% highlight XAML %}
+{% highlight XAML %}
 
-        <media:SfColorPicker x:Name="colorPicker">
+      <media:SfColorPicker x:Name="colorPicker"/>
 
-        {% endhighlight %}
+{% endhighlight %}
 
-        {% endtabs %}
+{% endtabs %}
 
 
-3.The following steps helps to add a required Essential<sup>&reg;</sup> UWP control through code, for example: SfColorPicker
+3. The following steps help to add a required Essential<sup>&reg;</sup> UWP control through code, for example: SfColorPicker
         
-a. Include the namespace for Syncfusion. SfColorPickers.UWP assembly in MainPage.xaml.cs
+a. Include the namespace for Syncfusion.SfColorPickers.UWP assembly in MainPage.xaml.cs
 
-        {% tabs %}
+{% tabs %}
 
-        {% highlight C# %}
+{% highlight C# %}
 
-        using Syncfusion.UI.Xaml.Controls.Media;
+      using Syncfusion.UI.Xaml.Controls.Media;
 
-        {% endhighlight %}
+{% endhighlight %}
 
-        {% highlight VB %}
+{% highlight VB %}
 
-        Imports Syncfusion.UI.Xaml.Controls.Media
+      Imports Syncfusion.UI.Xaml.Controls.Media
 
-        {% endhighlight %}
+{% endhighlight %}
 
-        {% endtabs %}
+{% endtabs %}
 
-b. Now add the SfColorPicker control with a required optimal name 
+b. Now, add the SfColorPicker control with a required optimal name.
 
-        {% tabs %}
+{% tabs %}
 
-        {% highlight C# %}
+{% highlight C# %}
 
-        SfColorPicker colorPicker = new SfColorPicker();
+      SfColorPicker colorPicker = new SfColorPicker();
 
-        {% endhighlight %}
+{% endhighlight %}
 
-        {% highlight VB %}
+{% highlight VB %}
 
-        Dim colorPicker As New SfColorPicker()
+      Dim colorPicker As New SfColorPicker()
 
-        {% endhighlight %}
+{% endhighlight %}
 
-        {% endtabs %}
+{% endtabs %}
+
+c. Add the created instance to the MainPage.
+
+{% tabs %}
+
+{% highlight C# %}
+
+      this.Content = colorPicker;
+
+{% endhighlight %}
+
+{% highlight VB %}
+
+      Me.Content = colorPicker
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
 
