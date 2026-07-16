@@ -9,11 +9,11 @@ documentation: ug
 
 # UWP Map (SfMaps) Overview
 
-A map is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. Panning and Zooming enables navigation around the map. `Data Visualization` can be enhanced in the map control with bubbles and labels. Bubbles and labels visualize the data that is bound to the map.
+A map is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. Panning and zooming enable navigation around the map. Data visualization can be enhanced in the map control with bubbles and labels. Bubbles and labels visualize the data that is bound to the map.
 
 ## Use case scenario
 
-The Maps control can be used in following cases:
+The Maps control can be used in the following cases:
 
 * To visualize weather data.
 * To visualize geographical statistics information.
@@ -23,20 +23,17 @@ The Maps control can be used in following cases:
 
 ## Key Concepts of Map
 
+A map contains a set of elements, including shapes, bubbles, annotations, and data items, that are maintained in layers. The [`ShapeFileLayer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) is one of the layers that generates map shapes and binds business objects with them. Bubbles and map items enhance the data visualization capabilities of the map with data binding.
 
-A map contains a set of elements, including shapes, bubbles, annotations, and data items, that is maintained in layers. `ShapeFileLayer` is one of the layers that generates map shapes and bind business objects with them. `Bubbles` and `MapItems` enhance the data visualization capabilities of the map with data binding.
-
-`Treemap` like support provides rich UI for shapes and bubbles. `Markers` and `CustomDataBinding` items shows additional information on the map.
+Tree map-like support provides a rich UI for shapes and bubbles. Markers and custom data binding items show additional information on the map.
 
 Options like zooming, panning, and map selection extend the interactivity of the map.
 
-![Overview_img1](Overview_images/Overview_img1.png)
-
-
+![UWP Map Control Overview](Overview_images/Overview_img1.png)
 
 ## Structure of Map
 
-A map is maintained through layers. The shape file layer is one of the layers that consist of vector shapes, bubbles and data visual items.
+A map is maintained through layers. The [`ShapeFileLayer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html) is one of the layers that consists of vector shapes, bubbles, and data visual items.
 
 <table>
 <tr>

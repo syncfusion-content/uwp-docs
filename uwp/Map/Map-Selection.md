@@ -24,16 +24,16 @@ Single selection allows only one map shape to be selected at a time. You can sel
 
 {% highlight html %}
 
-        <syncfusion:SfMap >
-                <syncfusion:SfMap.Layers>
-                    <syncfusion:ShapeFileLayer x:Name="shapeLayer" EnableSelection ="True"                                               
-                                                Uri="MapApp.world1.shp"  >
-                        <syncfusion:ShapeFileLayer.ShapeSettings>
-                            <syncfusion:ShapeSetting ShapeFill="#E5E5E5" SelectedShapeColor="#1196CD" ShapeStroke="#C1C1C1" ShapeStrokeThickness="1" />
-                        </syncfusion:ShapeFileLayer.ShapeSettings>
-                    </syncfusion:ShapeFileLayer>
-                </syncfusion:SfMap.Layers>
-            </syncfusion:SfMap >
+<syncfusion:SfMap >
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ShapeFileLayer x:Name="shapeLayer" EnableSelection ="True"                                               
+                                        Uri="MapApp.world1.shp"  >
+                <syncfusion:ShapeFileLayer.ShapeSettings>
+                    <syncfusion:ShapeSetting ShapeFill="#E5E5E5" SelectedShapeColor="#1196CD" ShapeStroke="#C1C1C1" ShapeStrokeThickness="1" />
+                </syncfusion:ShapeFileLayer.ShapeSettings>
+            </syncfusion:ShapeFileLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap >
 
 {% endhighlight %}
 
@@ -45,17 +45,18 @@ Multiple shapes in the map can be selected when `EnableMultiSelection` of ShapeF
 
 {% highlight html %}
 
-        <syncfusion:SfMap >
-                <syncfusion:SfMap.Layers>
-                    <syncfusion:ShapeFileLayer x:Name="shapeLayer" CrossCursorStroke="#686868" CrossCursorStrokeThickness="0.5"  
-                                               EnableMultiSelection="True"                                               
-                                                Uri="MapApp.world1.shp"  >
-                        <syncfusion:ShapeFileLayer.ShapeSettings>
-                            <syncfusion:ShapeSetting ShapeFill="#E5E5E5" SelectedShapeColor="#1196CD" ShapeStroke="#C1C1C1" ShapeStrokeThickness="1" />
-                        </syncfusion:ShapeFileLayer.ShapeSettings>
-                    </syncfusion:ShapeFileLayer>
-                </syncfusion:SfMap.Layers>
-            </syncfusion:SfMap >
+<syncfusion:SfMap >
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ShapeFileLayer x:Name="shapeLayer" CrossCursorStroke="#686868" 
+                                       CrossCursorStrokeThickness="0.5"  
+                                       EnableMultiSelection="True"
+                                       Uri="MapApp.world1.shp" >
+                <syncfusion:ShapeFileLayer.ShapeSettings>
+                    <syncfusion:ShapeSetting ShapeFill="#E5E5E5" SelectedShapeColor="#1196CD" ShapeStroke="#C1C1C1" ShapeStrokeThickness="1" />
+                </syncfusion:ShapeFileLayer.ShapeSettings>
+            </syncfusion:ShapeFileLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap >
 
 {% endhighlight %}
 
