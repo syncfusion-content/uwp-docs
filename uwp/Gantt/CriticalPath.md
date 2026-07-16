@@ -8,7 +8,7 @@ documentation: ug
 
 # Critical Path in UWP Gantt (SfGantt)
 
-Critical path is a chain of linked critical tasks that defines the finish date of project. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_HighlightCriticalTasksProperty) property in SfGantt as demonstrated in the following code sample.
+Critical path is a chain of linked critical tasks that defines the finish date of the project. It can be highlighted by enabling the [`HighlightCriticalTasks`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_HighlightCriticalTasksProperty) property in SfGantt as demonstrated in the following code sample.
 
 {% tabs %}
 
@@ -35,16 +35,16 @@ SfGantt gantt = new SfGantt
 
 You can customize the color of critical path using the following properties:
 
-* [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_CriticalTaskBarBrushProperty): Specifies the color to highlight the critical task bar color.
-* [`CriticalProgressBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_CriticalProgressBarBrushProperty): Specifies the color to highlight the critical task bar progress color.
+* [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_CriticalTaskBarBrushProperty): Specifies the color used to highlight the critical task bar.
+* [`CriticalProgressBarBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_CriticalProgressBarBrushProperty): Specifies the color used to highlight the critical task progress bar.
 
-N> The same [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_CriticalTaskBarBrushProperty)  is applied to connector lines that connect two critical tasks.
+N> The same [`CriticalTaskBarBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_CriticalTaskBarBrushProperty) is applied to connector lines that connect two critical tasks.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<gantt:SfGantt HighlightCriticalTasks="True" CriticalTaskBarBrush="#ffdbe0" CriticalProgressBarBrush="Pink" />
+<gantt:SfGantt HighlightCriticalTasks="True" CriticalTaskBarBrush="#FFFFDBE0" CriticalProgressBarBrush="Pink" />
 
 {% endhighlight %}
 

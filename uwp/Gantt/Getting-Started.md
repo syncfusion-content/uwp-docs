@@ -112,7 +112,7 @@ using Syncfusion.UI.Xaml.Gantt;
 
 {% endtabs %}
 
-2. Instance the Gantt as shown in the following code sample.
+2. Instantiate the Gantt as shown in the following code sample.
 
 {% tabs %}
 
@@ -158,9 +158,9 @@ public class ProjectTrackerViewModel
     private ObservableCollection<TaskDetail> _taskCollection;
 
     /// <summary>
-    /// Gets or sets the appointment item source.
+    /// Gets or sets the task item source.
     /// </summary>
-    /// <value>The appointment item source.</value>
+    /// <value>The task item source.</value>
     public ObservableCollection<TaskDetail> TaskCollection
     {
 
@@ -305,7 +305,7 @@ sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollecti
 
 By default, the grid view is manipulated with name, start date, finish date, duration, progress, predecessor, and resources columns.
 
-The visible columns of grid view can be customized using the [`VisibleGridColumns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_VisibleGridColumns) property.
+The visible columns of grid view can be customized using the [`VisibleGridColumns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_VisibleGridColumns) property. In XAML, the columns are specified as a comma-separated string; in C#, they are combined using the `TaskAttributes` flags enum.
 
 The following code sample demonstrates how to customize the visible columns.
 
@@ -392,7 +392,7 @@ sfGantt.AllowEditing = true;
 
 {% endtabs %}
 
-N> Now, editing cannot be done in Windows Phones.
+N> Editing is not supported on Windows Phone devices.
 
 ## Task relationships
 
@@ -451,25 +451,25 @@ The following code sample demonstrates how to define offset time to the predeces
 
 {% highlight C# %}
 
-ImplementiationModule1Child[1].Predecessors.Add(new TaskRelationship
+ImplementationModule1Child[1].Predecessors.Add(new TaskRelationship
 {
     ID = "15",
 	Offset = 4,
     Relationship = Relationship.FinishToStart
 });
-ImplementiationModule1Child[2].Predecessors.Add(new TaskRelationship
+ImplementationModule1Child[2].Predecessors.Add(new TaskRelationship
 {
     ID = "16",
 	Offset = 2,
     Relationship = Relationship.FinishToStart
 });
-ImplementiationModule1Child[3].Predecessors.Add(new TaskRelationship
+ImplementationModule1Child[3].Predecessors.Add(new TaskRelationship
 {
     ID = "17",
 	Offset = -4,
     Relationship = Relationship.FinishToStart
 });
-ImplementiationModule1Child[4].Predecessors.Add(new TaskRelationship
+ImplementationModule1Child[4].Predecessors.Add(new TaskRelationship
 {
     ID = "18",
 	Offset = -2,
@@ -532,13 +532,13 @@ SfGantt sfGantt = new SfGantt();
 
 sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
-sfGantt.ProjectResources = (this.DataContext as ProjectTrackerViewModel)..ResourceCollection;
+sfGantt.ProjectResources = (this.DataContext as ProjectTrackerViewModel).ResourceCollection;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-3. Assign the resource to tasks.
+3. Assign the resource to tasks by adding the following lines inside the `GetData()` method (the variables `Planning` and `ScheduleProcess` are the local collections created earlier in `GetData()`).
 
 {% highlight C# %}
 
@@ -607,4 +607,4 @@ sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
 ![UWP Gantt with non-working days feature](SfGantt_images/NonWorkingDays.jpeg)
 
-N> To display the non-working days, either the interval type must be set to week or the less interval type set to days, hours, and minutes.
+N> To display the non-working days, the bottom tier interval type must be set to `Days`, `Hours`, or `Minutes`.

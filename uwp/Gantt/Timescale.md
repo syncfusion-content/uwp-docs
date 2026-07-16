@@ -14,6 +14,8 @@ This section provides an overview on the features of timescale. The following pr
 * [`TopTier`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html#Syncfusion_UI_Xaml_Gantt_TimescaleSettings_TopTier): Represents the top tier of the timescale.
 * [`BottomTier`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html#Syncfusion_UI_Xaml_Gantt_TimescaleSettings_BottomTier): Represents the bottom tier of the timescale.
 
+N> The XAML snippets in this topic use the `Gantt:` namespace prefix. Add `xmlns:Gantt="using:Syncfusion.UI.Xaml.Gantt"` to your page before using them.
+
 {% tabs %}
 {% highlight xaml %}
 <Gantt:SfGantt.TimescaleSettings>
@@ -41,7 +43,7 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier();
 
 By default, the interval type is set to Auto. You can change the interval type and interval using the following properties in `TimescaleTier` class:
 
-* [`IntervalType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_IntervalType): Defines the type of the interval as minutes, hours, days, weeks, quarter, and year.
+* [`IntervalType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_IntervalType): Defines the type of the interval. Accepted values are `Auto`, `Minutes`, `Hours`, `Days`, `Weeks`, `Quarter`, and `Years`.
 * [`Interval`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_Interval): Sets a value that determines the interval between the timescale tier cells.
 
 The following code sample demonstrates displaying the timescale as years and days.
@@ -78,17 +80,53 @@ this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier()
 {% endtabs %}
 ![Output image of time scale with interval](Timescale_images/Interval.jpeg)
 
-N> The top tier’s interval and interval type must be greater than the bottom tier’s interval and interval type.
+N> The top tier's `IntervalType` must be greater than the bottom tier's `IntervalType` (for example, Years above Days). Likewise, the top tier's `Interval` value must be greater than or equal to the bottom tier's `Interval` for the same interval type.
 
 **Display formats**
 
 The display formats can be defined for each interval type. You can set the default date-time format strings as display formats. The display formats can be defined using the following properties:
 
-* [`YearsLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_YearsLabelFormat): Sets the the label format for year interval type.
-* [`QuarterLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_QuarterLabelFormat): Sets the the label format for quarter interval type.
-* [`WeeksLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_WeeksLabelFormat): Sets the the label format for week interval type.
+* [`YearsLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_YearsLabelFormat): Sets the label format for year interval type.
+* [`QuarterLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_QuarterLabelFormat): Sets the label format for quarter interval type.
+* [`WeeksLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_WeeksLabelFormat): Sets the label format for week interval type.
 * [`DaysLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_DaysLabelFormat): Sets the label format for days interval type.
-* [`HoursLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_HoursLabelFormat): Sets the the label format for hours interval type.
+* [`HoursLabelFormat`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleTier.html#Syncfusion_UI_Xaml_Gantt_TimescaleTier_HoursLabelFormat): Sets the label format for hours interval type.
+
+The following code sample demonstrates how to set the label formats.
+
+{% tabs %}
+
+{% highlight xaml %}
+<Gantt:SfGantt.TimescaleSettings>
+    <Gantt:TimescaleSettings>
+       <Gantt:TimescaleSettings.TopTier>
+          <Gantt:TimescaleTier Interval="1" IntervalType="Years" YearsLabelFormat="yyyy"></Gantt:TimescaleTier>
+       </Gantt:TimescaleSettings.TopTier>
+       <Gantt:TimescaleSettings.BottomTier>
+          <Gantt:TimescaleTier Interval="4" IntervalType="Days" DaysLabelFormat="ddd dd"></Gantt:TimescaleTier>
+       </Gantt:TimescaleSettings.BottomTier>
+    </Gantt:TimescaleSettings>
+</Gantt:SfGantt.TimescaleSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+this.Gantt.TimescaleSettings.TopTier = new TimescaleTier()
+            {
+                Interval = 1,
+                IntervalType = IntervalType.Years,
+                YearsLabelFormat = "yyyy"
+            };
+
+this.Gantt.TimescaleSettings.BottomTier = new TimescaleTier()
+            {
+                Interval = 4,
+                IntervalType = IntervalType.Days,
+                DaysLabelFormat = "ddd dd"
+            };
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Visual customization
 

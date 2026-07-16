@@ -41,7 +41,7 @@ SfGantt sfGantt = new SfGantt();
 
 sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
-sfGantt.ShowNonWorkingDays = True;
+sfGantt.ShowNonWorkingDays = true;
 
 sfGantt.Holidays = new GanttHolidayCollection()
 {

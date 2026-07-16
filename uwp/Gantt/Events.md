@@ -15,7 +15,7 @@ Occurs when editing is started in grid cell. This event contains the following a
 
 * [`Item`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.BeginCellEditEventArgs.html#Syncfusion_UI_Xaml_Gantt_BeginCellEditEventArgs_Item): Gets the editing task item.
 * [`MappingName`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.BeginCellEditEventArgs.html#Syncfusion_UI_Xaml_Gantt_BeginCellEditEventArgs_MappingName): Gets the current cell mapping name.
-* [`Cancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.BeginCellEditEventArgs.html#Syncfusion_UI_Xaml_Gantt_BeginCellEditEventArgs_IsCancel): Sets the value to True to cancel the editing.
+* [`Cancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.BeginCellEditEventArgs.html#Syncfusion_UI_Xaml_Gantt_BeginCellEditEventArgs_IsCancel): Sets the value to True to cancel the editing. The corresponding property in the event args is `IsCancel`.
 
 **EndCellEdit**
 
@@ -27,7 +27,7 @@ Occurs when editing is completed in grid cell. This event contains the following
 
 **SelectionChanging**
 
-Occurs when a task is selected through mouse or touch interaction. This event contains the following arguments:
+Occurs when a task is going to be selected through mouse or touch interaction. This event is cancelable. This event contains the following arguments:
 
 * [`Item`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Gantt_SelectionChangingEventArgs_Item): Gets the selected task item.
 * [`Index`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SelectionChangingEventArgs.html#Syncfusion_UI_Xaml_Gantt_SelectionChangingEventArgs_Index):  Gets the selected index.
@@ -80,7 +80,7 @@ Occurs when dragging the progress bar through mouse or touch interaction. This e
 
 **TaskBarProgressChanged**
 
-Occurs when the taskbar is being dragged. This event contains the following arguments:
+Occurs when the progress bar is being dragged. This event contains the following arguments:
 
 * [`Task`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskBarProgressChangedEventArgs.html#Syncfusion_UI_Xaml_Gantt_TaskBarProgressChangedEventArgs_Task): Gets the task when the progress value has been changed.
 * [`OldValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskBarProgressChangedEventArgs.html#Syncfusion_UI_Xaml_Gantt_TaskBarProgressChangedEventArgs_OldValue): Gets the previous progress value.
@@ -100,9 +100,9 @@ Occurs when the taskbar is being dragged. This event contains the following argu
 * [`NewStartDate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskBarDragDeltaEventArgs.html#Syncfusion_UI_Xaml_Gantt_TaskBarDragDeltaEventArgs_NewStartDate): Gets the current start date of the task bar.
 * [`NewFinishDate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskBarDragDeltaEventArgs.html#Syncfusion_UI_Xaml_Gantt_TaskBarDragDeltaEventArgs_NewFinishDate): Gets the current finish date of the task bar.
 
-**TaskBarDragCompletedEventArgs**
+**TaskBarDragCompleted**
 
-Occurs when the taskbar dragging is completed. This event contains the following argument.
+Occurs when the taskbar dragging is completed. This event contains the following arguments.
 
 * [`Task`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskBarDragCompletedEventArgs.html#Syncfusion_UI_Xaml_Gantt_TaskBarDragCompletedEventArgs_Task): Gets the task that is dragged.
 * [`OldStartDate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskBarDragCompletedEventArgs.html#Syncfusion_UI_Xaml_Gantt_TaskBarDragCompletedEventArgs_OldStartDate): Gets the start date before dragging.
