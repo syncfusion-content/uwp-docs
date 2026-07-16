@@ -16,8 +16,8 @@ This section explains you on how to add SfRibbon in your application.
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfRibbon.UWP
-
-N> The `Syncfusion.SfShared.UWP` and `Syncfusion.SfInput.UWP` assemblies are also required as dependencies when referencing assemblies directly. When using the NuGet package `Syncfusion.SfRibbon.UWP`, these dependencies are included automatically.
+* Syncfusion.SfShared.UWP
+* Syncfusion.SfInput.UWP
 
 1. Include the namespace for the Syncfusion.SfRibbon.UWP assembly in MainPage.xaml.
 
@@ -67,9 +67,6 @@ Dim _ribbon As New SfRibbon()
 {% endhighlight %}
 
 {% endtabs %}
-
-
-I> Starting with Syncfusion version 16.2 (2018 Vol 2), you must register a Syncfusion license key in your application before using `SfRibbon`. Refer to the [licensing help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to generate and register the license key.
 
 
 Execute the above code to render the following output.

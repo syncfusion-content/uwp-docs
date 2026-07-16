@@ -56,8 +56,6 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-I> Starting with Syncfusion version 16.2 (2018 Vol 2), you must register a Syncfusion license key in your application before using `SfDockingManager`. Refer to the [licensing help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to generate and register the license key.
-
 ## Add Children to SfDockingManager
 
 `SfDockingManager` can accept any control as its children. Here five ContentControls have been added as the children of the `SfDockingManager`.
