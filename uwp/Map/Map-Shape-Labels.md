@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Map Shape Labels in UWP Map control | Syncfusion
-description: Learn here all about Map Shape Labels support in Syncfusion UWP Map (SfMaps) control and more.
+description: description: Learn how to display and customize labels for map shapes in the Syncfusion UWP SfMaps control using LabelPath, DBF data, and item templates.
 platform: uwp
 control: SfMaps
 documentation: ug

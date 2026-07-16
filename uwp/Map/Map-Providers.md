@@ -44,7 +44,7 @@ You can enable this feature by defining the [`LayerType`](https://help.syncfusio
 
 The Bing Map key is provided as input to the [`BingMapKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) property. The Bing Map key can be obtained from
 
-[Bing Maps Dev Center](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
+[Bing Maps Dev Center](https://azure.microsoft.com/en-us/products/azure-maps/).
 
 ### Aerial View
 
