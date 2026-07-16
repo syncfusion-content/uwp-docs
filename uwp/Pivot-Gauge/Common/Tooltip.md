@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Tooltip in UWP Pivot Gauge control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
-platform: UWP
+description: Learn how to display tooltips for gauge values in the Syncfusion UWP SfPivotGauge control using the ShowGaugeTooltip property in XAML or code.
+platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---

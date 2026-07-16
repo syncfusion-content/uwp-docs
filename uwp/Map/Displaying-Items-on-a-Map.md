@@ -2,7 +2,7 @@
 layout: post
 title: Displaying Items on a Map in UWP Map control | Syncfusion
 description: Learn here all about Displaying Items on a Map support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+platform: uwp
 control: SfMaps
 documentation: ug
 ---

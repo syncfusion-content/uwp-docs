@@ -2,7 +2,7 @@
 layout: post
 title: Commands for Zooming and Panning in UWP Map control | Syncfusion
 description: Learn here all about Commands for Zooming and Panning support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+platform: uwp
 control: Maps
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: MapPopup in UWP Map control | Syncfusion
-description: Learn here all about MapPopup support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+description: Learn how to display and customize popups for map shapes in the Syncfusion UWP SfMaps control using visibility, value path, and data templates.
+platform: uwp
 control: SfMaps
 documentation: ug
 ---

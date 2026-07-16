@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with UWP Map control | Syncfusion
 description: Learn here about getting started with Syncfusion Essential Studio UWP Map (SfMaps) control, its elements and more.
-platform: UWP
+platform: uwp
 control: SfMaps
 documentation: ug
 ---

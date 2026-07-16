@@ -2,7 +2,7 @@
 layout: post
 title: Shapes Color Customization in UWP Map control | Syncfusion
 description: Learn here all about Shapes Color Customization support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+platform: uwp
 control: SfMaps
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Theming in UWP Pivot Gauge control | Syncfusion
-description: Learn here all about Theming support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
-platform: UWP
+description: Learn how to apply built-in themes and change the visual style of the Syncfusion UWP SfPivotGauge control using the GaugeVisualStyle property.
+platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---

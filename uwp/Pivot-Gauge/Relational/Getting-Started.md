@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with UWP Pivot Gauge control | Syncfusion
 description: Learn here all about getting started with Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---

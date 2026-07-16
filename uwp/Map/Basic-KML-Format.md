@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Basic KML Format in UWP Map control | Syncfusion
-description: Learn here all about Basic KML Format support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+description: Learn how to load and display KML geographic data using the Syncfusion UWP Map control, including supported elements and styling options.
+platform: uwp
 control: SfMap
 documentation: ug
 ---
@@ -13,7 +13,7 @@ KML is a file format used for rendering geographical data. It uses a tag-based s
 
 Currently, the [`SfMap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html) control supports the following KML elements:
 
-* Placemark
+* Place mark
 * Point
 * LinearRing
 * Polygon

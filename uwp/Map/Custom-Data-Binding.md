@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Custom Data Binding in UWP Map control | Syncfusion
-description: Learn here all about Custom Data Binding support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+description: Learn how to bind custom data to the Syncfusion UWP Map control using latitude, longitude, data templates, and shape mapping properties.
+platform: uwp
 control: SfMaps
 documentation: ug
 ---
