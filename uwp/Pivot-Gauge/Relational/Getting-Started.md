@@ -12,15 +12,15 @@ documentation: ug
 >**Important**
 To start with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering a Syncfusion license key in your UWP application to use the components.
 
-This section explains the steps required to create a simple SfPivotGauge control bound to a relational data source such as IList or IEnumerable.
+This section explains the steps required to create a simple [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control bound to a relational data source such as IList or IEnumerable.
 
 ## Initializing SfPivotGauge control
 
 1. Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
 
-2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "SfPivotGaugeDemo".
+2. Select **Installed > Templates > Visual C# > Windows > Universal > Blank App (Universal Windows)** to create a new UWP application and name the project as "SfPivotGaugeDemo".
 
-The target version/minimum version dialog appears, in which you can change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
+The target version/minimum version dialog appears, in which you can change the target version of the application to **"Windows 10 (10.0; Build 10240)"**.
 
 The SfPivotGauge control can be initialized and added to the application through any of the following ways:
 
@@ -36,11 +36,11 @@ The SfPivotGauge control can be initialized and added to the application through
 
 Now, the SfPivotGauge control will be added to the designer as follows.
 
-![GettingStarted_Designer](Getting-Started_images/Designer.png)
+![UWP SfPivotGauge Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
-The SfPivotGauge control can be added to the project by referencing assemblies or SDK.
+The [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control can be added to the project by referencing assemblies or SDK.
 
 **Assembly reference**
 
@@ -113,7 +113,7 @@ xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
 
 ### Adding control through code-behind
 
-The SfPivotGauge control can be added to the project by referencing assemblies or SDK.
+The [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control can be added to the project by referencing assemblies or SDK.
 
 **Assembly reference**
 
@@ -221,13 +221,13 @@ End Namespace
 
 {{ codesnippet4 | OrderList_Indent_Level_1 }} 
 
-## Binding relational data to SfPivotGauge control
+## Binding relational data to [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control
 
 ### Creating relational data through view model
 
-5. After initializing the SfPivotGauge control, right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file.
+1. After initializing the SfPivotGauge control, right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file.
 
-6. Then, name the class *ProductSalesViewModel* and click **OK**.
+2. Then, name the class *ProductSalesViewModel* and click **OK**.
 
 The following code snippet illustrates how to define relational data for the SfPivotGauge.
 
@@ -332,7 +332,7 @@ Namespace SfPivotGaugeDemo
             For i As Integer = 0 To numberOfRecords - 1
                 Dim sales As ProductSale = New ProductSale()
                 sales.Country = countries(r.[Next](1, countries.GetLength(0)))
-                sales.Amount =(3000 * r.[Next](1, 12))
+                sales.Amount = (3000 * r.[Next](1, 12))
                 sales.Date = dates(r.[Next](r.[Next](dates.GetLength(0) + 1)))
                 sales.Product = products(r.[Next](r.[Next](products.GetLength(0) + 1)))
                 listOfProductSales.Add(sales)
@@ -358,31 +358,30 @@ End Namespace
 
 {% endtabs %}
 
-### Defining item sSource, pivot rows, pivot columns and pivot calculations for SfPivotGauge control
+### Defining ItemSource, pivot rows, pivot columns and pivot calculations for SfPivotGauge control
 
-Relational data can be bound to SfPivotGauge control by using the `ItemSource` property through the following ways:
+Relational data can be bound to [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control by using the `ItemSource` property through the following ways:
 
 * XAML
 * Code-behind
 
 **Through XAML**
 
-The relational data mentioned in the *ProductSalesViewModel* is bound to the SfPivotGauge control with the help of `DataContext`. In addition to this, the `PivotRows`, `PivotColumns`, and `PivotCalculations` should be assigned to SfPivotGauge for populating the data.
-
+The relational data mentioned in the *ProductSalesViewModel* is bound to the [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control with the help of `DataContext`. In addition to this, the `PivotRows`, [PivotColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_PivotColumns), and [PivotCalculations](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_PivotCalculations) should be assigned to SfPivotGauge for populating the data.
 
 {% tabs %}
 
 {% highlight xaml %}
 
     <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:local="using:SfPivotGaugeDemo"
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-            xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
-            xmlns:pivot="using:Syncfusion.PivotAnalysis.UWP"
-            x:Class="SfPivotGaugeDemo.MainPage"
-            mc:Ignorable="d">
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:local="using:SfPivotGaugeDemo"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:PivotGauge="using:Syncfusion.UI.Xaml.PivotGauge"
+          xmlns:pivot="using:Syncfusion.PivotAnalysis.UWP"
+          x:Class="SfPivotGaugeDemo.MainPage"
+          mc:Ignorable="d">
 
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Grid.DataContext>
@@ -491,4 +490,4 @@ End Namespace
 
 Finally, run the application to generate the following output.
 
-![GettingStarted-Relational](Getting-Started_images/Relational.png)
+![UWP SfPivotGauge Relational Data](Getting-Started_images/Relational.png)

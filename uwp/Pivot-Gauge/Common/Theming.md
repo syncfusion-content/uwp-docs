@@ -9,7 +9,7 @@ documentation: ug
 
 # Theming in UWP Pivot Gauge (SfPivotGauge)
 
-Theming is the process of applying particular settings to visual elements of a control. Following built-in themes are supported in the SfPivotGauge control:
+Theming is the process of applying particular settings to visual elements of a control. The following built-in themes are supported in the [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control:
 
 * Blend
 * Lime
@@ -28,7 +28,7 @@ Theming is the process of applying particular settings to visual elements of a c
 * VisualStudio2013
 * VisualStudio2015
 
-By using the `GaugeVisualStyle` property in the SfPivotGauge, you can set the visual style of the control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotChart.
+By using the [GaugeVisualStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_GaugeVisualStyle) property in the SfPivotGauge, you can set the visual style of the control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotGauge.
 
 {% tabs %}
 
@@ -36,8 +36,7 @@ By using the `GaugeVisualStyle` property in the SfPivotGauge, you can set the vi
 
 <syncfusion:SfPivotGauge x:Name="PivotGauge1" GaugeVisualStyle="Blend"
                          ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
-                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
-</syncfusion:SfPivotGauge>
+                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}"/>
 
 {% endhighlight %}
 
@@ -55,4 +54,4 @@ PivotGauge1.GaugeVisualStyle = PivotGaugeVisualStyle.Blend;
 
 {% endtabs %}
 
-![Theming-blend](Theming_images/Theming-blend.png)
+![UWP SfPivotGauge Theming Blend](Theming_images/Theming-blend.png)
