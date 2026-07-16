@@ -80,6 +80,9 @@ For example, `ContentControl` is added as a window for `SfDockingManager`.
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Layout;
+using Windows.UI.Xaml.Controls;
+
 SfDockingManager DockingManager1 = new SfDockingManager();
 
 ContentControl content1 = new ContentControl();
@@ -122,7 +125,7 @@ DockingManager1.DockItems.Add(content5);
 
 ## Hiding Window Programmatically
 
-To hide the window, set `DockState` AttachedProperty of the `SfDockingManager` as Hidden.
+To hide the window, set the `DockState` attached property of the `SfDockingManager` as `Hidden`.
 
 {% tabs %}
 
@@ -263,9 +266,9 @@ The float window can be customized by setting `FloatWindowBackground`, `FloatWin
 ![Customized float window in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img6.jpeg)
 
 
-## Handling state changing of DockingManager child element
+## Handling state change of DockingManager child element
 
-DockStateChanging event will raise whenever the child element changing its State. StateChanging of child element can now be restricted by setting args.Cancel to true. “args” represents the event argument of DockStateChangingEventArgs for `DockStateChanging` event. The default value of args.Cancel is false. 
+The `DockStateChanging` event will be raised whenever the child element is changing its State. The state change of a child element can now be restricted by setting `args.Cancel` to true. "args" represents the event argument of `DockStateChangingEventArgs` for the `DockStateChanging` event. The default value of `args.Cancel` is false.
 
 {% tabs %}
 
@@ -307,9 +310,9 @@ args.Cancel = true;
 
 {% endtabs %}
 
-## Restricting DockingManager child element closing
+## Restricting DockingManager child element from being closed
 
-State of the child element will change to `Hidden` while closing it. It can be restricted by changing the value of args.Cancel to true. The following code describes how to handle the closing of a child using DockStateChanging event.
+The state of the child element will change to `Hidden` while closing it. It can be restricted by changing the value of `args.Cancel` to true. The following code describes how to handle the closing of a child using the `DockStateChanging` event.
 
 {% tabs %}
 
@@ -351,7 +354,7 @@ args.Cancel = true;
 
 ## Enable/Disable Dragging a Window
 
-The AttachedProperty `IsDragEnabled` helps to enable or disable the dragging functionality of a window by setting its value as true or false respectively. By default, `IsDragEnabled` value is true. This functionality can be disabled by setting its value as false. 
+The attached property `IsDragEnabled` helps to enable or disable the dragging functionality of a window by setting its value as true or false respectively. By default, the `IsDragEnabled` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 

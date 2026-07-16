@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip Support in UWP Ribbon control | Syncfusion
-description: Learn here all about ToolTip Support support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
+description: Learn here all about ToolTip Support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
@@ -9,10 +9,12 @@ documentation: ug
 
 # ToolTip Support in UWP Ribbon
 
+Ribbon Controls support tooltips that are used to display small information while hovering the mouse over them.
 
-Ribbon Controls supports tooltip that is used to display small information while hovering mouse on it
+{% tabs %}
 
 {% highlight xaml %}
+
 <ribbon:SfRibbon  Name="_ribbon" HorizontalAlignment="Stretch" VerticalAlignment="Top">
 
 <ribbon:SfRibbonTab Caption="HOME" >
@@ -37,7 +39,7 @@ Ribbon Controls supports tooltip that is used to display small information while
 
 <TextBlock Text="Address"  />
 
-<TextBox Margin="5" Text="wwww.google.com" Grid.Row="1" />
+<TextBox Margin="5" Text="www.google.com" Grid.Row="1" />
 
 <TextBlock Text="Display" Grid.Row="2" />
 
@@ -85,10 +87,10 @@ Ribbon Controls supports tooltip that is used to display small information while
 
 </ribbon:SfRibbon>
 
-
-
 {% endhighlight %}
 
-****![UWP Ribbon tooltip](ToolTip-Support_images/ToolTip-Support_img1.jpeg)
+{% endtabs %}
+
+![UWP Ribbon tooltip](ToolTip-Support_images/ToolTip-Support_img1.jpeg)
 
 

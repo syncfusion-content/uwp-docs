@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BackStage in UWP Ribbon control | Syncfusion
-description: Learn here all about BackStage support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control, it's elements and more.
+description: Learn here all about BackStage support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control, its elements and more.
 platform: uwp
 control: SfRibbon (Touch Ribbon)
 documentation: ug
@@ -9,10 +9,12 @@ documentation: ug
 
 # BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
 
-Commands can be added to BackStage similar to office UI. Backstage is completely customizable. For navigating to backstage click on backstage button in left end on Ribbon Tab Items panel. BackStageTabItems can be easily navigated using the scroll buttons. To navigate back from BackStage click on the back button in top left corner. BackStage can be opened and closed programmatically using the methods “OpenBackStage()” and “CloseBackStage()”.
+Commands can be added to the BackStage similar to the Office UI. The BackStage is completely customizable. To navigate to the BackStage, click on the BackStage button at the left end of the Ribbon Tab Items panel. BackStageTabItems can be easily navigated using the scroll buttons. To navigate back from the BackStage, click on the back button in the top-left corner. The BackStage can be opened and closed programmatically using the `OpenBackStage()` and `CloseBackStage()` methods.
 
 BackStageButton and BackStage TabItems can be added as follows,
 
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -28,9 +30,9 @@ BackStageButton and BackStage TabItems can be added as follows,
 
 </ribbon:SfRibbon.BackStage>
 
-
 {% endhighlight %}
 
+{% endtabs %}
 
 {% tabs %}
 
@@ -38,9 +40,9 @@ BackStageButton and BackStage TabItems can be added as follows,
 
  SfBackstage Ribbon_backstage = new SfBackstage();
 
- SfBackStageTabItem Save_backstageTab = new SfBackStageTabItem() { Header = "SaveAs", Icon = new BitmapImage(new Uri("ms-appx:///Assets//Save.png"))};
+ SfBackStageTabItem Save_backstageTab = new SfBackStageTabItem() { Header = "SaveAs", Icon = new BitmapImage(new Uri("ms-appx:///Assets/Save.png"))};
 
- SfBackStageButton Exit_backstagebutton = new SfBackStageButton() { Label= "Exit", Icon = new BitmapImage(new Uri("ms-appx:///Assets//Exit.png"))};
+ SfBackStageButton Exit_backstagebutton = new SfBackStageButton() { Label= "Exit", Icon = new BitmapImage(new Uri("ms-appx:///Assets/Exit.png"))};
 
  _ribbon.BackStage = Ribbon_backstage;
          
@@ -57,13 +59,13 @@ BackStageButton and BackStage TabItems can be added as follows,
 Dim Ribbon_backstage As New SfBackstage()
 
 Dim Save_backstageTab As New SfBackStageTabItem() With { _
-	Key .Header = "SaveAs", _
-	Key .Icon = New BitmapImage(New Uri("ms-appx:///Assets//Save.png")) _
+    .Header = "SaveAs", _
+    .Icon = New BitmapImage(New Uri("ms-appx:///Assets/Save.png")) _
 }
 
 Dim Exit_backstagebutton As New SfBackStageButton() With { _
-	Key .Label = "Exit", _
-	Key .Icon = New BitmapImage(New Uri("ms-appx:///Assets//Exit.png")) _
+    .Label = "Exit", _
+    .Icon = New BitmapImage(New Uri("ms-appx:///Assets/Exit.png")) _
 }
 
 _ribbon.BackStage = Ribbon_backstage
@@ -78,9 +80,9 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 ![BackStage commands in UWP Ribbon](backstage_images/uwp-ribbon-backstage-commands.jpeg)
 
-## BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
+## Loading content in a BackStageTabItem
 
-* In case of BackStageTabItem, BackStage page has been displayed by loading the Content Control inside it as like below 
+* In the case of a BackStageTabItem, the BackStage page is displayed by loading the Content Control inside it as shown below.
 
 {% tabs %}
 
@@ -102,15 +104,15 @@ Ribbon_backstage.Items.Add(Exit_backstagebutton)
 
 ![BackStage tab item in UWP Ribbon](backstage_images/uwp-ribbon-backstage-tab-item.jpeg)
 
-### BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
+### Handling the click of a BackStageButton
 
-* In case of BackStageButton, BackStage page has been displayed in the click event of BackStage button as follow
+* In the case of a BackStageButton, the BackStage page is displayed in the click event of the BackStage button as follows.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-  <syncfusion:SfBackStageButton Content="Print" FontFamily="ms-appx:///Ribbon/FontIcons/BackStageIcons.ttf#BackStageIcons"  FontIcon="5" FontIconFontFamily="ms-appx:///Ribbon/FontIcons/BackStageIcons.ttf#BackStageIcons" Click="SfBackStageButton_Click" />
+  <syncfusion:SfBackStageButton Label="Print" FontFamily="ms-appx:///Ribbon/FontIcons/BackStageIcons.ttf#BackStageIcons"  FontIcon="5" FontIconFontFamily="ms-appx:///Ribbon/FontIcons/BackStageIcons.ttf#BackStageIcons" Click="SfBackStageButton_Click" />
 
 {% endhighlight %}
 

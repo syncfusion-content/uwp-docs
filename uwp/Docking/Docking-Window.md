@@ -9,14 +9,14 @@ documentation: ug
 
 # Docking Window in UWP Docking (SfDockingManager)
 
-Docking window is one of the state of `SfDockingManager`. Since Dock is the default value, initially all the children stay as Docking Window.
+Docking window is one of the states of `SfDockingManager`. Since Dock is the default value, initially all the children stay as Docking Window.
 
 ![Docking-Window-img1](Docking-Window-images/Docking-Window-img1.jpeg)
 
 
 ## Configuring Window in Different Sides
 
-The Fives sides where the children can be docked are
+The Five sides where the children can be docked are
 
 * Left
 * Right
@@ -24,7 +24,7 @@ The Fives sides where the children can be docked are
 * Bottom
 * Tabbed
 
-To Dock four children of `SfDockingManager` to each sides, set `SideInDockedMode` property with appropriate values.
+To dock four children of `SfDockingManager` to each side, set the `SideInDockedMode` property with appropriate values.
 
 {% tabs %}
 
@@ -55,9 +55,9 @@ To Dock four children of `SfDockingManager` to each sides, set `SideInDockedMode
 
 ## Docking Window in Various Targets
 
-Docking window can be docked on any side of the Target Docking Window using an AttachedProperty named `TargetNameInDockedMode`.
+A Docking window can be docked on any side of the Target Docking Window using an attached property named `TargetNameInDockedMode`.
 
-To set the child window as TabbedWindow, the window should aware of a Target window name. The following code helps to arrange children of `SfDockingManager` that targets a single Docking window docked along Left, Top, Right and Tabbed.
+To set the child window as a TabbedWindow, the window should be aware of a Target window name. The following code helps to arrange children of `SfDockingManager` that target a single Docking window docked along Left, Top, Right and Tabbed.
 
 {% tabs %}
 
@@ -85,7 +85,7 @@ To set the child window as TabbedWindow, the window should aware of a Target win
                 layout:SfDockingManager.SideInDockedMode="Left"
 				layout:SfDockingManager.TargetNameInDockedMode="DockingWindow1"/>
 
-<!--Targeted to DockingWindow to tab-->
+<!--Targeted to DockingWindow1 to tab-->
 
 <ContentControl layout:SfDockingManager.Header="Tabbed"
                 layout:SfDockingManager.SideInDockedMode="Tabbed"
@@ -104,11 +104,11 @@ To set the child window as TabbedWindow, the window should aware of a Target win
 
 ## Enabling or Disabling the Header Visibility
 
-`NoHeader` is an AttachedProperty, that is used to hide the header of Dock Window. Default value of `NoHeader` is false. To hide the Header change the value of NoHeader property to true.
+`NoHeader` is an attached property that is used to hide the header of a Dock Window. The default value of `NoHeader` is false. To hide the Header, change the value of the `NoHeader` property to true.
 
 {% tabs %}
 
-{% highlight XAMl %}
+{% highlight XAML %}
 
 <layout:SfDockingManager>
 
@@ -133,7 +133,7 @@ To set the child window as TabbedWindow, the window should aware of a Target win
 
 ## Enabling or Disabling the Dock Functionality
 
-The `CanDock` AttachedProperty used to enable or disable the docking functionality by setting its value as true or false. By default, `CanDock` value is true. This functionality can be disabled by setting its value as false.
+The `CanDock` attached property is used to enable or disable the docking functionality by setting its value as true or false. By default, the `CanDock` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 

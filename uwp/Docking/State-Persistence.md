@@ -11,11 +11,11 @@ documentation: ug
 
 State persistence is the combined process of `serialization` and `deserialization`.
 
-`SfDockingManager` provides built-in state persistence functionality to save and load at different states and sides. It also provides ResetDockState() method to reset the layout to initial state.
+`SfDockingManager` provides built-in state persistence functionality to save and load the layout across sessions, preserving the dock states and sides of its child windows. It also provides the `ResetDockState()` method to reset the layout to its initial state.
 
 ## Saving Current State
 
-The current layout can be serialized in XML file and saved in `IsolatedStorage` using `SaveDockState` method.
+The current layout can be serialized into an XML file and saved in `IsolatedStorage` using the `SaveDockState` method. The following example saves the layout when the application is being suspended.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ deferral.Complete();
 
 ## Loading Saved State
 
-The saved layout can be retrieved from `IsolatedStorage`, `de-serialized` and loaded using `LoadDockState` method.
+The saved layout can be retrieved from `IsolatedStorage`, de-serialized, and loaded using the `LoadDockState` method. On first launch (when no saved state exists), calling `LoadDockState` has no effect.
 
 {% tabs %}
 
@@ -55,14 +55,13 @@ dockingManager.LoadDockState();
 
 }
 
-
 {% endhighlight %}
 
 {% endtabs %}
 
 ## Resetting Initial State
 
-To reset the `SfDockingManager` state, call ResetDockState() method of `SfDockingManager` instance. 
+To reset the `SfDockingManager` state, call the `ResetDockState()` method of the `SfDockingManager` instance. 
 
 {% tabs %}
 
@@ -74,9 +73,9 @@ dockingManager.ResetDockState();
 
 {% endtabs %}
 
-## Serialize the dynamically added children
+## Serializing Dynamically Added Children
 
-By default, `SfDockingManager` cannot de-serialize its saved layout properly, when its child collection is modified after DockState is saved.
+By default, `SfDockingManager` cannot de-serialize its saved layout properly when its child collection is modified after the DockState is saved.
 
-Since the `SfDockingManager` state persistence feature implemented in such a way that the `SfDockingManager` matches the child collection of saved layout with current `SfDockingManager`  layout internally and loads properly when `SfDockingManager` children collection remains same, so when any child collection changes dynamically, it results in an improper layout.
+The `SfDockingManager` state persistence feature is implemented in such a way that the `SfDockingManager` matches the child collection of the saved layout with the current `SfDockingManager` layout internally and loads properly when the `SfDockingManager` children collection remains the same. Therefore, when any child collection changes dynamically, it results in an improper layout. To avoid this, ensure the children collection of `SfDockingManager` is the same at both save and load time.
 
