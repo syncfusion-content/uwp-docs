@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in UWP Pivot Gauge control | Syncfusion
 description: Learn here all about Appearance support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Map Providers in UWP Map control | Syncfusion
-description: Learn here all about Map Providers support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+description: Learn how to use OpenStreetMap and Bing Maps providers, configure imagery layers, and calculate zoom levels in the Syncfusion UWP SfMap control.
+platform: uwp
 control: SfMap
 documentation: ug
 ---
@@ -44,7 +44,7 @@ You can enable this feature by defining the [`LayerType`](https://help.syncfusio
 
 The Bing Map key is provided as input to the [`BingMapKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ImageryLayer.html#Syncfusion_UI_Xaml_Maps_ImageryLayer_BingMapKey) property. The Bing Map key can be obtained from
 
-[http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
+[Bing Maps Dev Center](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 
 ### Aerial View
 

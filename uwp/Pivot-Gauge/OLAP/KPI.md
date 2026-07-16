@@ -1,8 +1,8 @@
 ---
 layout: post
 title: KPI in UWP Pivot Gauge control | Syncfusion
-description: Learn here all about KPI support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
-platform: UWP
+description: Learn how the Syncfusion UWP SfPivotGauge control displays OLAP Key Performance Indicators using values, goals, status indicators, and trend icons.
+platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---

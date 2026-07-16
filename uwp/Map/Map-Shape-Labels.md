@@ -2,7 +2,7 @@
 layout: post
 title: Map Shape Labels in UWP Map control | Syncfusion
 description: Learn here all about Map Shape Labels support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+platform: uwp
 control: SfMaps
 documentation: ug
 ---

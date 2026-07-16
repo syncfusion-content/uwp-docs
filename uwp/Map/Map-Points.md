@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Points in SfMaps control
-description: How to display map points on a map?
-platform: UWP
+title: Map Points in Syncfusion UWP SfMaps control
+description: Learn how to display and customize map points in the Syncfusion UWP SfMaps control using templates, coordinates, and popup content.
+platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Map Points
+# Display and customize map points in UWP SfMaps
 
 Points are one of the record types in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html). [`MapPoint`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapPoint.html) is used to specify a specific point on the map. For example, points are used to specify the capital of countries. Points in the shape file are given as latitude and longitude coordinates in the shapes file. Those points should be converted as map points.
 

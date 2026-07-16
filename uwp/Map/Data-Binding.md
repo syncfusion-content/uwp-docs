@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in UWP Map control | Syncfusion
 description: Learn here all about Data Binding support in Syncfusion Essential UWP Map (SfMaps) control, its elements, and more.
-platform: UWP
+platform: uwp
 control: SfMaps
 documentation: ug
 ---

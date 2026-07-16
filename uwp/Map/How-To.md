@@ -2,7 +2,7 @@
 layout: post
 title: Customizations in Syncfusion SfMaps
 description: Customizations in SfMaps
-platform: UWP
+platform: uwp
 control: SfMaps
 documentation: ug
 ---

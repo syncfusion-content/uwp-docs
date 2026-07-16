@@ -2,7 +2,7 @@
 layout: post
 title: Localization in UWP Pivot Gauge control | Syncfusion
 description: Learn here all about Localization support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Legend in UWP Map control | Syncfusion
-description: Learn here all about Legend support in Syncfusion UWP Map (SfMaps) control and more.
-platform: UWP
+description: Learn how to configure, position, and customize legends for shape and bubble layers in the Syncfusion UWP Map control using SfMaps properties.
+platform: uwp
 control: SfMaps
 documentation: ug
 ---
