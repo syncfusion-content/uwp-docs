@@ -9,7 +9,7 @@ documentation: ug
 
 # Nested DockingManager in UWP Docking (SfDockingManager)
 
-`SfDockingManager` provides the Nested DockingManager support, that allows to add `SfDockingManager` as a child window to another `SfDockingManager`.
+`SfDockingManager` provides the Nested DockingManager support, which allows adding `SfDockingManager` as a child window to another `SfDockingManager`.
 
 {% tabs %}
 
@@ -19,7 +19,8 @@ documentation: ug
 
 <ContentControl x:Name="Content1" layout:SfDockingManager.Header="Dock1"/>
 
-<layout:SfDockingManager x:Name="DockingManager2" SideInDockedMode="Left"
+<layout:SfDockingManager x:Name="DockingManager2" layout:SfDockingManager.DockState="Dock"
+                         layout:SfDockingManager.SideInDockedMode="Left"
                          layout:SfDockingManager.Header="Dock2"  >
 
 <ContentControl layout:SfDockingManager.Header="Dock2"
@@ -28,7 +29,8 @@ documentation: ug
 </layout:SfDockingManager>
 
 <layout:SfDockingManager x:Name="DockingManager3"
-                         SideInDockedMode="Bottom"
+                         layout:SfDockingManager.DockState="Dock"
+                         layout:SfDockingManager.SideInDockedMode="Bottom"
 						 layout:SfDockingManager.Header="Dock3">
 
 <ContentControl layout:SfDockingManager.Header="Dock3"

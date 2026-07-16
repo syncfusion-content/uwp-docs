@@ -13,10 +13,10 @@ The `SfDockingManager` control implements an architecture, that allows child con
 
 ## Features
 
-* `SfDockingManager` supports different dock states such as Docking, Floating, AutoHide and Document.
-* Tabbed Document Interface(TDI) is available in `SfDockingManager`.
+* `SfDockingManager` supports different dock states such as [Docking](https://help.syncfusion.com/uwp/docking/docking-window), [Floating](https://help.syncfusion.com/uwp/docking/floating-window), [AutoHide](https://help.syncfusion.com/uwp/docking/auto-hide-window) and [Document](https://help.syncfusion.com/uwp/docking/document-windows).
+* [Tabbed Document Interface(TDI)](https://help.syncfusion.com/uwp/docking/tabbed-window) is available in `SfDockingManager`.
 * Built-in support for TabList ContextMenu and TabItem ContextMenu.
-* `SfDockingManager` support all possible ways for dock the elements.
+* `SfDockingManager` supports all possible ways to dock the elements.
 * Support for resizing Splitters.
 * Different types of auto hide animation such as Fade, Scale and Slide.
 * ToolTip support for all default buttons.
