@@ -619,7 +619,7 @@ Below code, sets the customized style selector to `TreeGridColumn.CellStyleSelec
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <local:CustomCellStyleSelector x:Key="cellStyleSelector">
+    <local:CustomCellStyleSelector x:Key="cellStyleSelector"/>
 </Page.Resources>
 <syncfusion:SfTreeGrid Name="treeGrid"
                         AutoExpandMode="AllNodesExpanded"
@@ -631,6 +631,7 @@ Below code, sets the customized style selector to `TreeGridColumn.CellStyleSelec
         <syncfusion:TreeGridTextColumn MappingName="ID" 
                                        CellStyleSelector="{StaticResource cellStyleSelector}" />
     </syncfusion:SfTreeGrid.Columns>
+</syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 

@@ -131,6 +131,7 @@ You can hide the header row by setting [SfTreeGrid.HeaderRowHeight ](https://h
                                        ChildPropertyName="Children"
                                        ColumnSizer="Star"
                                        ItemsSource="{Binding PersonDetails}">
+</syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 
@@ -253,12 +254,12 @@ You can change the header cell background and foreground for specific column or
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:Window.Resources>
+<Page.Resources>
         <Style TargetType="syncfusion:TreeGridHeaderCell" x:Key="headerStyle">
             <Setter Property="Background" Value="#FF7AA732"/>
             <Setter Property="Foreground" Value="Red"/>
         </Style>
-</syncfusion:Window.Resources>
+</Page.Resources>
 
 <syncfusion:SfTreeGrid Name="treeGrid"
                                        AutoExpandMode="AllNodesExpanded"
@@ -267,6 +268,7 @@ You can change the header cell background and foreground for specific column or
                                        ChildPropertyName="Children"
                                        ColumnSizer="Star"
                                        ItemsSource="{Binding PersonDetails}">
+</syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% endtabs %}
 

@@ -17,7 +17,7 @@ The following assemblies should be added for exporting a tree grid to PDF file:-
 
 * Syncfusion.Pdf.Base
 
-For NuGet package, install [Syncfusion.DataGridExcelExport.UWP](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.UWP) package. For more details refer this [UG link](https://help.syncfusion.com/uwp/control-dependencies#exporting-treegrid-to-excel-pdf-and-csv).
+For NuGet package, install [Syncfusion.DataGridPDFExport.UWP](https://www.nuget.org/packages/Syncfusion.DataGridPDFExport.UWP) package. For more details refer this [UG link](https://help.syncfusion.com/uwp/control-dependencies#exporting-treegrid-to-excel-pdf-and-csv).
 
 You can export the tree grid to PDF by using the following extension methods present in the [Syncfusion.UI.Xaml.TreeGrid.Converter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.Converter.html) namespace:-
 

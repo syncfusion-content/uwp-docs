@@ -129,7 +129,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind columns from view model
 
-You can bind the [SfTreeGrid.Columns ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnsProperty) property in ViewModel by having the binding property of `Syncfusion.SfGrid.UI.Xaml.TreeGrid.Columns` type. Thus, you can set binding to the SfTreeGrid.Columns property that provides DataContext of treegrid in ViewModel.
+You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property in ViewModel by having the binding property of `Syncfusion.SfGrid.UI.Xaml.TreeGrid.Columns` type. Thus, you can set binding to the SfTreeGrid.Columns property that provides DataContext of treegrid in ViewModel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -156,7 +156,7 @@ Refer to the following code example in which the treegrid column is populated�
     {
         #region Private Variables
         private ObservableCollection<EmployeeInfo> _employees;
-      
+        
         #endregion
 
         #region ctr
@@ -165,14 +165,13 @@ Refer to the following code example in which the treegrid column is populated�
         {
             this.Employees = GetEmployeesDetails();
             rowDataCommand = new RelayCommand(ChangeCanExecute);
-this.sfGridColumns = new TreeGridColumns();
+            this.sfGridColumns = new TreeGridColumns();
             sfGridColumns.Add(new TreeGridTextColumn() { MappingName = "FirstName" });
             sfGridColumns.Add(new TreeGridTextColumn() { MappingName = "LastName" });
             sfGridColumns.Add(new TreeGridTextColumn() { MappingName = "Id" });
-            sfGridColumns.Add(new TreeGridTextColumn() { MappingName = "DOB" });        }
-
-        
+            sfGridColumns.Add(new TreeGridTextColumn() { MappingName = "DOB" });
         }
+
         #endregion
     }
 {% endhighlight %}
