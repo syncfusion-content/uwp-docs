@@ -7,7 +7,7 @@ control: SfGantt
 documentation: ug
 ---
 
-## Holidays
+# Holidays
 
 The holidays support is used to highlight the non-working days in the Gantt chart.
 

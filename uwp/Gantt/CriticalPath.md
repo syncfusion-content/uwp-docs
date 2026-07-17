@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Critical Path in UWP Gantt control | Syncfusion
+description: Learn about CriticalPath support in Syncfusion UWP Gantt (SfGantt) control, covering themes, styles, customization options, and usage examples.
 platform: uwp
 control: SfGantt
 documentation: ug
