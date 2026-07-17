@@ -59,7 +59,7 @@ Use the following steps to create the Syncfusion® UWP project through the Visua
    
    N> If SDK is chosen as the reference type, then all the Syncfusion® UWP controls will be added. So, you don't need to select any components.
    
-4. After click **Create** button, the Syncfusion® UWP Application is created with required SDK/references and pages.
+4. After clicking the **Create** button, the Syncfusion® UWP Application is created with required SDK/references and pages.
 
    ![Syncfusion UWP Project created with SDK reference](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img5.jpeg)
 
