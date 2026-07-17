@@ -103,9 +103,7 @@ This event is triggered when a card is dragged over a column. The argument conta
 
 ## ColumnsGenerated 
 
-This event will be fired after the columns are generated automatically. You can access the auto-generated columns using the [`SfKanban.ActualColumns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ActualColumns) property. The event argument provides the following information:
-
-* [`Columns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumnsGeneratedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnsGeneratedEventArgs_Columns)  -  Used to get the generated columns.
+This event will be fired after the columns are generated automatically. You can access the auto-generated columns using the [`SfKanban.ActualColumns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ActualColumns) property.
 
 ## ColumnGenerated
 
