@@ -109,7 +109,7 @@ You can display the row index value in row header by customizing the `Tr
 
 ![Row header with row index displayed in UWP treegrid](Rows_images/Rows_img5.jpeg)
 
-# Rows in UWP TreeGrid (SfTreeGrid)
+## Rows in UWP TreeGrid (SfTreeGrid)
 
 Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
 
