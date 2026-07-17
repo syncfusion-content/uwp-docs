@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Rows support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
+description: Learn here all about Rows support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more features.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
@@ -10,8 +10,6 @@ documentation: ug
 # Rows in UWP TreeGrid (SfTreeGrid)
 
 This section explains about various row types in treegrid and its customizations.
-
-# Rows in UWP TreeGrid (SfTreeGrid)
 
 RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfTreeGrid.ShowRowHeader](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowRowHeader) property.
 
