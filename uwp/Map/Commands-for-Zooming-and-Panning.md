@@ -26,9 +26,9 @@ The [`ZoomInCommand`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps
 {% highlight xml %}
 
 <maps:SfMap x:Name="Map">
-        <maps:SfMap.Layers>
-                <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp"/>
-        </maps:SfMap.Layers>
+    <maps:SfMap.Layers>
+        <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp" />
+    </maps:SfMap.Layers>
 </maps:SfMap>
 
 <Button Content="ZoomIn" Name="zoomIn" Grid.Row="0" Command="{Binding ElementName=Map,Path=ZoomInCommand}" VerticalAlignment="Bottom"/>
@@ -42,9 +42,9 @@ The [`ZoomOutCommand`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Map
 {% highlight xml %}
 
 <maps:SfMap x:Name="Map">
-        <maps:SfMap.Layers>
-                <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp"/>
-        </maps:SfMap.Layers>
+    <maps:SfMap.Layers>
+        <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp" />
+    </maps:SfMap.Layers>
 </maps:SfMap>
 
 <Button Content="ZoomOut" Name="zoomOut" Grid.Row="2" Command="{Binding ElementName=Map,Path=ZoomOutCommand}"/>
@@ -58,9 +58,9 @@ The [`PanCommand`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.Sf
 {% highlight xml %}
 
 <maps:SfMap x:Name="Map">
-        <maps:SfMap.Layers>
-        <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp"/>
-        </maps:SfMap.Layers>
+    <maps:SfMap.Layers>
+        <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp" />
+    </maps:SfMap.Layers>
 </maps:SfMap>
 
 <Button Width="50" Height="20" Grid.Row="1" Grid.Column="0" Content="Left" Name="LeftPanButton" Command="{Binding ElementName=Map,Path=PanCommand}" CommandParameter="left"/>
@@ -77,9 +77,9 @@ The [`ResetCommand`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.
 {% highlight xml %}
 
 <maps:SfMap x:Name="Map">
-        <maps:SfMap.Layers>
-                <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp"/>
-        </maps:SfMap.Layers>
+    <maps:SfMap.Layers>
+        <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp" />
+    </maps:SfMap.Layers>
 </maps:SfMap>
 
 <Button Grid.Column="0" Grid.Row="0" Content="ZoomReset" Command="{Binding ElementName=Map,Path=ResetCommand}"/>
@@ -93,9 +93,9 @@ The [`PanResetCommand`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Ma
 {% highlight xml %}
 
 <maps:SfMap x:Name="Map">
-        <maps:SfMap.Layers>
-                <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp"/>
-        </maps:SfMap.Layers>
+    <maps:SfMap.Layers>
+        <maps:ShapeFileLayer x:Name="shapeControl" Uri="CommandsDemo.ShapeFiles.wv.shp" />
+    </maps:SfMap.Layers>
 </maps:SfMap>
 
 <Button Grid.Column="2" Grid.Row="0" Content="PanReset" Command="{Binding ElementName=Map,Path=PanResetCommand}"/>
