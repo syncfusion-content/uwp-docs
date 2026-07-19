@@ -9,7 +9,7 @@ documentation: ug
 
 # Digital Characters in UWP Digital Gauge (SfDigitalGauge)
 
-The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are displayed in the digital gauge by setting the [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property of type string. For initial setup of the control, see [Getting Started](./Getting-Started.md).
+The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are displayed in the digital gauge by setting the [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property of type string. For initial setup of the control, see Getting Started.
 
 By default, the [CharacterType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property is set to `SegmentSeven`. The following sample uses the default segment type to render the value "GAUGE".
 
@@ -31,7 +31,7 @@ this.Grid.Children.Add(digital);
 
 ![UWP Digital Gauge Digital Characters](Digital-Characters_images/Digital-Characters_img1.jpeg)
 
-The segment type can be changed using the [CharacterType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property. The `CharacterType` enum (defined in the `Syncfusion.UI.Xaml.Gauges` namespace) supports the following values: `SegmentSeven`, `SegmentFourteen`, `SegmentSixteen`, and `EightCrossEightDotMatrix`. Unsupported characters are rendered as blank segments. The [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property accepts alphanumeric and special characters and is case-sensitive.
+The segment type can be changed using the [CharacterType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property. The `CharacterType` enum supports the following values: `SegmentSeven`, `SegmentFourteen`, `SegmentSixteen`, and `EightCrossEightDotMatrix`. Unsupported characters are rendered as blank segments. The [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property accepts alphanumeric and special characters and is case-sensitive.
 
 
 ## 7-Segments
@@ -82,7 +82,7 @@ this.Grid.Children.Add(digital);
 
 ## 16-Segments
 
-When [CharacterType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) is set to `SegmentSixteen`, the value is displayed in 16-segment format. This type is also used to display both letters and numbers. Compared to 14-segment, the 16-segment type splits the horizontal bars, producing a cleaner, more evenly lit character suitable when a split-style appearance is preferred.
+When [CharacterType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) is set to `SegmentSixteen`, the value is displayed in 16-segment format. This type is used to display both letters and numbers. Compared to the 14-segment display, it splits the top and bottom horizontal bars into two segments each, which produces a more refined look and is preferred when each character needs to be rendered with finer detail.
 
 {% tabs %}
 {% highlight xaml %}
