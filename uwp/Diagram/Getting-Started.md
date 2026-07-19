@@ -13,7 +13,7 @@ The following section helps you to build your application with SfDiagram.
 
 ## Creating the project
 
-Create new UWP project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal#step-1-create-a-new-project-in-visual-studio).
+Create a new UWP project using Visual Studio. For more [details](https://learn.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal#step-1-create-a-new-project-in-visual-studio).
  
 ## Assembly Reference
 
@@ -25,7 +25,7 @@ SfDiagram control can be added to the application by dragging it from Toolbox an
 
 ### Adding control manually in XAML
 
-In order to add control manually in XAML, do the below steps:
+In order to add control manually in XAML, follow the steps below:
 
 1. Add the below required assembly reference to the project, Syncfusion.SfDiagram.UWP .
 2. Import SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
@@ -55,7 +55,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial 
 
 ### Adding control manually in C\#
 
-In order to add control manually in XAML, do the below steps:
+In order to add control manually in XAML, follow the steps below:
 
 1. Add the below required assembly references to the project, Syncfusion.SfDiagram.UWP.
 2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
@@ -90,7 +90,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 
 {% tabs %}
 {% highlight xaml %}
-  <!--Initializes the SfDiagram in XMAL window-->
+  <!--Initializes the SfDiagram in XAML window-->
   <syncDiagram:SfDiagram x:Name="diagram"/>
 {% endhighlight %}
 {% highlight c# %}
@@ -101,8 +101,8 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 
 #### Initialize Nodes and Connectors
 
-To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. 
-Connectors property is assigned with the ConnectorCollection, that is, ObservableCollection of the Connector.
+To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned to the NodeCollection, that is, ObservableCollection of the Node. 
+Connectors property is assigned to the ConnectorCollection, that is, ObservableCollection of the Connector.
 
 {% tabs %}
 {% highlight xaml %}
@@ -125,7 +125,7 @@ Connectors property is assigned with the ConnectorCollection, that is, Observabl
 
 ### Add Nodes
 
- Let us create and add a NodeViewModel with height, width, shape, shape style,specific position, size and Annotation.
+ Let us create and add a NodeViewModel with height, width, shape, shape style, specific position, size and Annotation.
 
 #### Creating a Node
 
@@ -165,7 +165,7 @@ Creating NodeViewModel with Specified Height and Width.
 
 #### Adding Shape and ShapeStyle to Node
 
- We have provided set of basic shapes for Diagram as ResourceDictionary. In order to use the built-in shapes, Shapes dictionary should be merged in Application.  
+ We have provided a set of basic shapes for Diagram as ResourceDictionary. In order to use the built-in shapes, Shapes dictionary should be merged in Application.  
  Please refer to [Shapes](https://help.syncfusion.com/uwp/diagram/shapes) to know about built-in Shapes.
   
 {% tabs %}
@@ -205,15 +205,15 @@ Creating NodeViewModel with Specified Height and Width.
 {% endhighlight %}
 {% endtabs %}
 
- Now Node will be looks like,
+ Now Node will looks like,
    
 ![AddNode](Getting-Started_images\addNode.png)
    
-N> ID sets for each node to identify nodes easily while setting connectors.
+N> Set an ID for each node to identify nodes easily while setting connectors.
    
 #### Adding Annotation to node
    
- To initialize the Annotation property of the Node and Connector, it is assigned with the annotation collection, that is, ObservableCollection of the IAnnotation.
+ To initialize the Annotation property of the Node and Connector, it is assigned to the annotation collection, that is, ObservableCollection of the IAnnotation.
  
 {% tabs %}
 {% highlight xaml %}
@@ -242,6 +242,10 @@ N> `Annotations` property is a collection, which indicates that more than one An
 </syncDiagram:NodeViewModel>       
 {% endhighlight %}
 {% highlight c# %}
+
+            // Initializes the SfDiagram
+            SfDiagram diagram=new SfDiagram();
+
             // Creating the NodeViewModel  
             NodeViewModel Begin = new NodeViewModel()
             {
@@ -267,7 +271,7 @@ N> `Annotations` property is a collection, which indicates that more than one An
 {% endhighlight %}
 {% endtabs %}
 
-Now Node will be looks like,
+Now Node will looks like,
  
 ![NodeAnnotation](Getting-Started_images\nodeAnnotation.PNG)
  
@@ -306,6 +310,10 @@ Now Node will be looks like,
 </syncDiagram:NodeCollection>
 {% endhighlight %}
 {% highlight c# %}
+
+             // Initializes the SfDiagram
+            SfDiagram diagram=new SfDiagram();
+
             //Begin
             NodeViewModel Begin = AddNode(300, 60, 120, 40, "Begin", "Ellipse");
             //Process
@@ -344,7 +352,7 @@ Now Node will be looks like,
 {% endhighlight %}
 {% endtabs %}
 
- Finally all Nodes added to diagram and it will be looks like
+ Finally all Nodes added to diagram and it will looks like
 
 ![CompleteDiagram](Getting-Started_images\completeNodes.png)
 
@@ -390,6 +398,10 @@ Now Node will be looks like,
       
 {% endhighlight %} 
 {% highlight c# %}
+
+            // Initializes the SfDiagram
+            SfDiagram diagram=new SfDiagram();
+            
             ConnectorViewModel connector1 = new ConnectorViewModel()
             {
                 SourceNodeID = "Begin",
@@ -447,7 +459,7 @@ Now we can connect all nodes using ConnectorViewModel.
 {% endhighlight %} 
 {% endtabs %}
 
-Now output will be looks like,
+Now output will looks like,
 
 ![FlowDiagram](Getting-Started_images\completeDiagram.png)
     

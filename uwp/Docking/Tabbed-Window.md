@@ -9,7 +9,7 @@ documentation: ug
 
 # Tabbed Window in UWP Docking (SfDockingManager)
 
-Child window can be arranged as Tabbed window by setting `TargetName` and side value as Tabbed using the property `SideInDockedMode`.
+A child window can be arranged as a Tabbed window by setting `TargetNameInDockedMode` and the side value as `Tabbed` using the property `SideInDockedMode`.
 
 {% tabs %}
 
@@ -291,12 +291,16 @@ Used to set the background for Items Panel of the tabbed Dock Window<br/><br/></
 </table>
 
 
+{% tabs %}
+
 {% highlight XAML %}
-<syncfusion:SfDockingManager DockTabPanelBackground="GreenYellow"   DockTabItemBackground="Yellow"              DockTabItemForeground="Red" DockTabItemSelectedBackground="Orange" DockTabItemSelectedForeground="White" DockTabItemMouseOverBackground="Green" DockTabItemMouseOverForeground="Red">
-    <ContentControl syncfusion:SfDockingManager.Header="Dock1" Name="Dock1" syncfusion:SfDockingManager.DockState="Dock"/>
-    <ContentControl syncfusion:SfDockingManager.Header="Dock2" syncfusion:SfDockingManager.SideInDockedMode="Tabbed" syncfusion:SfDockingManager.TargetNameInDockedMode="Dock1" syncfusion:SfDockingManager.DockState="Dock"/>
-</syncfusion:SfDockingManager>
-{%endhighlight%}
+<layout:SfDockingManager DockTabPanelBackground="GreenYellow"   DockTabItemBackground="Yellow"              DockTabItemForeground="Red" DockTabItemSelectedBackground="Orange" DockTabItemSelectedForeground="White" DockTabItemMouseOverBackground="Green" DockTabItemMouseOverForeground="Red">
+    <ContentControl layout:SfDockingManager.Header="Dock1" Name="Dock1" layout:SfDockingManager.DockState="Dock"/>
+    <ContentControl layout:SfDockingManager.Header="Dock2" layout:SfDockingManager.SideInDockedMode="Tabbed" layout:SfDockingManager.TargetNameInDockedMode="Dock1" layout:SfDockingManager.DockState="Dock"/>
+</layout:SfDockingManager>
+{% endhighlight %}
+
+{% endtabs %}
 
 ![Tabbed window customization](Tabbed-Window-images/Tabbed-Window-img5.png)
 
@@ -308,33 +312,37 @@ Used to set the background for Items Panel of the tabbed Dock Window<br/><br/></
 
 {% tabs %}
 
-{% highlight Xaml %}
+{% highlight XAML %}
 
 <!--Setting icon in Tabbed Window -->
 
-<ContentControl x:Name="SolutionExplorer" Layout:SfDockingManager.Header="Solution Explorer"  Layout:SfDockingManager.DesiredWidthInDockedMode="300"  Layout:SfDockingManager.SideInDockedMode="Right" Layout:SfDockingManager.DockState="Dock"  >
+<ContentControl x:Name="SolutionExplorer" layout:SfDockingManager.Header="Solution Explorer"  layout:SfDockingManager.DesiredWidthInDockedMode="300"  layout:SfDockingManager.SideInDockedMode="Right" layout:SfDockingManager.DockState="Dock"  >
 
-	<Layout:SfDockingManager.Icon>
+	<layout:SfDockingManager.Icon>
 
 		<Image Source="/Assets/image1.png" />
 
-	</Layout:SfDockingManager.Icon>
+	</layout:SfDockingManager.Icon>
 
 </ContentControl>
 
-<ContentControl Name="Properties" Layout:SfDockingManager.Header="Properties" Layout:SfDockingManager.DesiredWidthInDockedMode="300" Layout:SfDockingManager.SideInDockedMode="Tabbed" Layout:SfDockingManager.TargetNameInDockedMode="Solution Explorer" >
+<ContentControl x:Name="Properties" layout:SfDockingManager.Header="Properties" layout:SfDockingManager.DesiredWidthInDockedMode="300" layout:SfDockingManager.SideInDockedMode="Tabbed" layout:SfDockingManager.TargetNameInDockedMode="SolutionExplorer" >
 
-	<Layout:SfDockingManager.Icon>
+	<layout:SfDockingManager.Icon>
 
 		<Image Source="/Assets/image2.png" />
 
-	</Layout:SfDockingManager.Icon>
+	</layout:SfDockingManager.Icon>
 
 </ContentControl>
 
 {% endhighlight %}
 
 {% highlight C# %}
+
+using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Imaging;
+using Syncfusion.UI.Xaml.Controls.Layout;
 
 //Initialize image 
 		
@@ -350,7 +358,7 @@ image1.Source = new BitmapImage(new Uri("ms-appx:///Assets/image2.png", UriKind.
 
 //Set Image to Tabbed Control
 			
-SfDockingManager.SetIcon(Properties,image1);
+SfDockingManager.SetIcon(Properties, image1);
 
 SfDockingManager.SetIcon(SolutionExplorer, image);
 

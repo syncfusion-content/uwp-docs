@@ -11,15 +11,15 @@ documentation: ug
 
 This section explains you on how to add SfRibbon in your application.
 
-## Add Ribbon
+## Add SfRibbon
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
 * Syncfusion.SfRibbon.UWP
+* Syncfusion.SfShared.UWP
+* Syncfusion.SfInput.UWP
 
-
-
-1.Include the namespace for Syncfusion.SfRibbon.UWP assembly in MainPage.xaml
+1. Include the namespace for the Syncfusion.SfRibbon.UWP assembly in MainPage.xaml.
 
 {% tabs %}
 
@@ -36,7 +36,7 @@ xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
 
 {% endtabs %}
 
-2.Now add the `SfRibbon` control with a required optimal name using the included namespace
+2. Now add the `SfRibbon` control with a required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ Execute the above code to render the following output.
 
 ## Add Ribbon Tab
 
-SfRibbon control accept RibbonTab as children.The following code example illustrates on how to add RibbonTab 
+The SfRibbon control accepts RibbonTab as children. The following code example illustrates how to add a RibbonTab.
 
 {% tabs %}
 
@@ -138,14 +138,14 @@ Execute the above code to render the following output.
 
 ## How to capture the click of SfRibbonTab?
 
-SfRibbonTab's click can be identified by using the event named `Tapped` as like below
+The SfRibbonTab's click can be identified by using the event named `Tapped` as shown below.
 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfRibbonTab Caption="Sales" Tapped="SfRibbonTab_Tapped">
+<ribbon:SfRibbonTab Caption="Sales" Tapped="SfRibbonTab_Tapped">
 
 {% endhighlight %}
 
@@ -172,7 +172,7 @@ private async void SfRibbonTab_Tapped(object sender, TappedRoutedEventArgs e)
 
 ## Add Ribbon Bar
 
-RibbonTab accepts RibbonBar as children, here five RibbonBar Controls are added inside “HOME” RibbonTab
+The RibbonTab accepts RibbonBar as children; here two RibbonBar controls are added inside the “HOME” RibbonTab.
 
 {% tabs %}
 
@@ -254,13 +254,13 @@ Execute the above code to render the following output.
 
 ## Add Ribbon controls to RibbonBar
 
-The following code example illustrates on how to add ribbon controls to the Ribbon bar from code-behind and XAML,
+The following code example illustrates how to add ribbon controls to the Ribbon bar from code-behind and XAML.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<Page xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
+<Page xmlns:ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
 
 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
