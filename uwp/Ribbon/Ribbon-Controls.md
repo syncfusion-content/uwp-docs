@@ -9,7 +9,7 @@ documentation: ug
 
 # Ribbon Controls in UWP Ribbon (SfRibbon(Touch Ribbon))
 
-Several Ribbon controls are provided to add in Ribbon Bar. Button controls are provided with 3 size forms Extra-Small, Small and Large.
+Several Ribbon controls are provided to add to a Ribbon Bar. Button controls are provided with 3 size forms: Extra-Small, Small and Large.
 
 * SfRibbonButton
 * SfDropDownButton
@@ -21,8 +21,7 @@ Several Ribbon controls are provided to add in Ribbon Bar. Button controls are p
 
 ## SfRibbonButton
 
-
-SfRibbonButton provides functionalities like normal Button. It can place inside the RibbonBar and provides SizeForm Property for different sizes. SizeMode.Small displays icon alone where as SizeMode.Large displays icon along with label.
+The SfRibbonButton provides functionalities like a normal Button. It can be placed inside the RibbonBar and provides a SizeForm property for different sizes. `SizeMode.Small` displays the icon alone, while `SizeMode.Large` displays the icon along with the label.
 
 {% tabs %}
 
@@ -116,7 +115,7 @@ _ribbon.Items.Add(_ribbonTab)
 
 ### Set various sizes for RibbonButton
 
-SfRibbonButton have three types of size modes. You can set size forms using its SizeMode Property.
+The SfRibbonButton has three types of size modes. You can set size forms using its `SizeMode` property.
 
 {% tabs %}
 
@@ -225,7 +224,7 @@ _ribbon.Items.Add(_ribbonTab)
 
 ## SfDropDownButton
 
-DropDownButton appears like normal button that contains a drop arrow. It will open a popup, while click on it.
+The DropDownButton appears like a normal button that contains a drop arrow. It opens a popup when clicked.
 
 ![Ribbon-Controls_img3](Ribbon-Controls_images/Ribbon-Controls_img3.jpeg)
 
@@ -257,7 +256,7 @@ DropDownButton appears like normal button that contains a drop arrow. It will op
 
 <TextBlock Text="Address"  />
 
-<TextBox Margin="5" Text="wwww.google.com" Grid.Row="1" />
+<TextBox Margin="5" Text="www.google.com" Grid.Row="1" />
 
 <TextBlock Text="Display" Grid.Row="2" />
 
@@ -286,14 +285,14 @@ DropDownButton appears like normal button that contains a drop arrow. It will op
 
 ## SfRibbonGallery
 
-SfRibbonGallery displays items with good look and feel and it also used to classify the items as groups for easy navigation. Ribbon Gallery popup can be re-sized using the re-size grip at right bottom.
+The SfRibbonGallery displays items with a good look and feel, and is also used to classify items as groups for easy navigation. The Ribbon Gallery popup can be re-sized using the re-size grip at the bottom right.
 
 ![Ribbon-Controls_img5](Ribbon-Controls_images/Ribbon-Controls_img5.jpeg)
 
 
 ### SfRibbonGalleryItem
 
-Ribbon Gallery Items are the contents of the Ribbon Gallery Group and it does not restrict the type of content to be added to it. Use the following code example to add a Ribbon Gallery Items. 
+Ribbon Gallery Items are the contents of the Ribbon Gallery Group and it does not restrict the type of content that can be added to it. Use the following code example to add a Ribbon Gallery Item.
 
 {% tabs %}
 
@@ -311,7 +310,7 @@ Ribbon Gallery Items are the contents of the Ribbon Gallery Group and it does no
 
 ### SfRibbonGalleryGroup
 
-Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grouped in the Ribbon Gallery control based on some classifications. Use the following code to add a Ribbon Gallery Group to the Ribbon Gallery control. 
+A Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grouped in the Ribbon Gallery control based on some classifications. Use the following code to add a Ribbon Gallery Group to the Ribbon Gallery control.
 
 {% tabs %}
 
@@ -392,7 +391,7 @@ _ribbonGallery.Items.Add(_ribbongalleryGroup)
 
 ## SfRibbonMenu
 
-SfRibbonMenu control is used to display items. It can contain sub menu items. The following code example is used to add a Ribbon menu control to the application. 
+The SfRibbonMenu control is used to display items. It can contain sub menu items. The following code example is used to add a Ribbon menu control to the application.
 
 {% tabs %}
 
@@ -453,7 +452,7 @@ _ribbonMenu.Items.Add(_ribbonmenuItem2)
 
 ## SfRibbonGroupBar
 
-SfRibbonGroupBar control is used to group list of items.The items are grouped in the RibbonGroupBar based on classifications.
+The SfRibbonGroupBar control is used to group a list of items. The items are grouped in the RibbonGroupBar based on classifications.
 
 ### Add RibbonGroupBarItem to RibbonGroupView
 
@@ -538,7 +537,7 @@ _ribbonGroup.Items.Add(_ribbongroupView)
 
 ## SfRibbonComboBox
 
-RibbonComboBox control is used to display the list of items, as drop-down menu in Ribbon instance. You can add any number of items to the RibbonComboBox. It is similar to ComboBox control except the style. You can use the following code example to add RibbonComboBox and items to RibbonComboBox respectively. 
+The RibbonComboBox control is used to display a list of items as a drop-down menu in the Ribbon instance. You can add any number of items to the RibbonComboBox. It is similar to the ComboBox control except for the style. You can use the following code example to add a RibbonComboBox and items to it.
 
 {% tabs %}
 

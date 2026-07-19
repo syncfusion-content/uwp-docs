@@ -9,14 +9,14 @@ documentation: ug
 
 # Auto Hide Window in UWP Docking (SfDockingManager)
 
-`AutoHide` window is one of the state in the `SfDockingManager`. To enable Auto hidden for SfDockingManager’s children, set `SfDockingManager` child `DockState` value as `AutoHidden`.
+`AutoHide` window is one of the states in the `SfDockingManager`. To enable Auto hidden for `SfDockingManager`'s children, set the `SfDockingManager` child `DockState` value as `AutoHidden`.
 
 ![Auto-Hide-Window-img1](Auto-Hide-Window-images/Auto-Hide-Window-img1.jpeg)
 
 
-## Configuring Window in Different Side
+## Configuring Window in Different Sides
 
-`AutoHidden` window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four auto hidden children in four different sides, set `SideInDockedMode` property according to its corresponding values in the `SfDockingManager`.
+`AutoHidden` window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four auto hidden children in four different sides, set the `SideInDockedMode` property according to its corresponding values in the `SfDockingManager`.
 
 {% tabs %}
 
@@ -80,7 +80,7 @@ Side panel have scroll support, when AutoHidden tab items overflow onto the side
 
 ## Configuring AutoHide Animation
 
-The Animation speed while auto hiding a window can be configured by setting required time delay in `AutoHideAnimationSpeed` property.
+The animation speed while auto hiding a window can be configured by setting the required time delay in the `AutoHideAnimationSpeed` property.
 
 {% tabs %}
 
@@ -97,9 +97,9 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 {% endtabs %}
 
-## Making Different Animations for AutoHide window
+## Applying Different Animations for AutoHide Window
 
-`SfDockingManager` supports three different built–in animations while auto-hiding the windows such as Fade, Scale and Slide that can be set through the property `AutoHideAnimationMode`.
+`SfDockingManager` supports three different built-in animations while auto-hiding the windows such as Fade, Scale and Slide, which can be set through the `AutoHideAnimationMode` property.
 
 `Fade` – AutoHidden window fades while auto hiding.
 
@@ -154,7 +154,7 @@ The Animation speed while auto hiding a window can be configured by setting requ
 
 ## Enabling and Disabling the AutoHide functionality
 
-The Pin button, that performs Auto Hide functionality will be visible by default. It should be collapsed to disable the AutoHide functionality. Visibility of the Pin button can be changed by `ShowPinButton` property.
+The Pin button, which performs the Auto Hide functionality, is visible by default. It should be collapsed to disable the AutoHide functionality. Visibility of the Pin button can be changed by `ShowPinButton` property.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ The Pin button, that performs Auto Hide functionality will be visible by default
 ![Auto-Hide-Window-img4](Auto-Hide-Window-images/Auto-Hide-Window-img4.jpeg)
 
 
-To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, `IsPinButtonVisible` AttachedProperty can be used. By default, `IsPinButtonVisible` value is true. This functionality can be disabled by setting its value as false.
+To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, the `IsPinButtonVisible` attached property can be used. By default, the `IsPinButtonVisible` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ To show or collapse the AutoHide button for a specific child in the `SfDockingMa
 ![Auto-Hide-Window-img5](Auto-Hide-Window-images/Auto-Hide-Window-img5.jpeg)
 
 
-To enable or disable the AutoHide functionality for a specific child in the `SfDockingManager`, `CanAutoHide` AttachedProperty can be used. By default, `CanAutoHide` value is true. This functionality can be disabled by setting its value as false.
+To enable or disable the AutoHide functionality for a specific child in the `SfDockingManager`, the `CanAutoHide` attached property can be used. By default, the `CanAutoHide` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
