@@ -33,7 +33,7 @@ Installed location\Syncfusion\Essential Studio\Installed version\Assemblies for 
 
 ## Create a simple Kanban
 
-In this walk through, you will create a new application that contains the SfKanban which includes the below topics.
+In this walkthrough, you will create a new application that contains the SfKanban which covers the following topics.
 
 * Adding SfKanban 
 * Create data model
@@ -213,7 +213,7 @@ SfKanban kanban = new SfKanban()
 
 By default, we need to define the columns manually by adding the KanbanColumn object to the [`Columns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection property in SfKanban.
 
-ItemsSource which was bound to the Kanban will be added to the respective columns using ColumnMappingPath property in SfKanban and Categories property in KanbanColumn.
+The `ItemsSource` which was bound to the Kanban will be added to the respective columns using the `ColumnMappingPath` property in SfKanban and the `Categories` property in KanbanColumn.
 
 We need to set the required property name to ColumnMappingPath which will be essential to add the data to the respective columns.
 
