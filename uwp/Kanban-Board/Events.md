@@ -16,8 +16,8 @@ This event is triggered when you tap on any card. The argument contains the foll
 * [`SelectedColumn`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedColumn)          - Used to get the column of the selected card.
 * [`SelectedCard`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedCard) 			- Used to get the selected card.
 * [`SelectedCardIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedCardIndex) 			- Used to get the index of the card in a column.
-* [`SelectedRowIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedRowIndex) - Used to get the index of dragging card's row.
-* [`SelectedColumnIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedColumnIndex) - Used to get the index of dragging card's column.
+* [`SelectedRowIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedRowIndex) - Used to get the index of the selected card's row.
+* [`SelectedColumnIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedColumnIndex) - Used to get the index of the selected card's column.
 
 ### Command
 
@@ -32,10 +32,10 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 ## CardDoubleTapped
 
-The [`CardDoubleTapped`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html) event is triggered when you double tap on any card. The argument contains the following information:
+The [`CardDoubleTapped`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_CardDoubleTapped) event is triggered when you double-tap on any card. The argument contains the following information:
 
 * [`SelectedCard`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDoubleTappedEventArgs_SelectedCard) - Used to get the selected card.
-* [`SelectedCardIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDoubleTappedEventArgs_SelectedCardIndex) - Used to get the index of dragging card in a column.
+* [`SelectedCardIndex`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDoubleTappedEventArgs_SelectedCardIndex) - Used to get the index of the selected card in a column.
 * [`SelectedColumn`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDoubleTappedEventArgs_SelectedColumn) - Used to get the column of the selected card.
  
 ## DragStart
@@ -50,7 +50,7 @@ This event is triggered when you start to drag a card. The argument contains the
 
 ## DragEnd  
 
-This event is triggered when whenever dragging is canceled. The argument contains the following information.
+This event is triggered when dragging ends or is canceled. The argument contains the following information.
 
 * [`IsCancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEndEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEndEventArgs_IsCancel)			- Used to cancel the drag action.
 * [`SelectedCard`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedCard)			- Used to get the underlying model of the card.
@@ -90,7 +90,7 @@ This event is triggered when a card leaves a column while dragging. The argument
 
 ## DragOver
 
-This event is triggered when a card is dragged to a new index within a column. The argument contains the following information.
+This event is triggered when a card is dragged over a column. The argument contains the following information.
 
 * [`IsCancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragOverEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragOverEventArgs_IsCancel)			- Used to cancel the drag action.
 * [`SelectedCard`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanDragEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanDragEventArgs_SelectedCard)			- Used to get the underlying model of the card.
@@ -103,12 +103,11 @@ This event is triggered when a card is dragged to a new index within a column. T
 
 ## ColumnsGenerated 
 
-This event will be fired after the columns are generated automatically. You can access the auto-generated columns using SfKanban.ActualColumns property.
-
+This event will be fired after the columns are generated automatically. You can access the auto-generated columns using the [`SfKanban.ActualColumns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ActualColumns) property.
 
 ## ColumnGenerated
 
-This event is triggered when a column generated.
+This event is triggered when a column is generated.
 
 * [`Columns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumnsGeneratedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnsGeneratedEventArgs_Columns)  -  used to get the generated columns.
 * [`IsCancel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumnGeneratedEventArgs.html#Syncfusion_UI_Xaml_Kanban_KanbanColumnGeneratedEventArgs_IsCancel)   -  used to cancel the generated column added to the SfKanban.
