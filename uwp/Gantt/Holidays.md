@@ -31,6 +31,9 @@ The following code sample demonstrates how to define the holidays.
                                 Background="CadetBlue" />
         </gantt:GanttHolidayCollection>
     </gantt:SfGantt.Holidays>
+    <gantt:SfGantt.DataContext>      
+         <local:ProjectTrackerViewModel/>        
+   </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -39,7 +42,9 @@ The following code sample demonstrates how to define the holidays.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.ShowNonWorkingDays = true;
 
@@ -51,6 +56,8 @@ sfGantt.Holidays = new GanttHolidayCollection()
         Background = new SolidColorBrush(Colors.CadetBlue)
     }
 };
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
