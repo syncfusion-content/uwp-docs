@@ -17,8 +17,12 @@ The following code example shows how to group the underlying data collection bas
 {% tabs %}
 
 {% highlight xaml %}
-<kanban:SfKanban SwimlaneKey="ColorKey" x:Name="Kanban" ItemsSource="{Binding Tasks}">
-
+<kanban:SfKanban SwimlaneKey="ColorKey"
+                 x:Name="Kanban"
+                 ItemsSource="{Binding Tasks}">
+    <kanban:SfKanban.DataContext>
+        <local:TaskDetails/>
+    </kanban:SfKanban.DataContext>
 </kanban:SfKanban>
 {% endhighlight %}
 
