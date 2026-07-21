@@ -8,7 +8,7 @@ documentation: ug
 ---
 # UWP Radial Gauge (SfCircularGauge) Overview
 
-Circular Gauge helps you to visualize the numeric values over a circular scale. The appearance of the gauge is fully customized to integrate your applications without fault.
+The Circular Gauge helps you to visualize the numeric values over a circular scale. The appearance of the gauge is fully customized to integrate your applications without fault.
 
 ## Key features
 
@@ -17,16 +17,12 @@ Circular Gauge helps you to visualize the numeric values over a circular scale. 
 [`SfCircularGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfCircularGauge.html) is a composite UI element with the following subparts:
 
 * Scales
-
 * Ranges
-
 * Pointers
-
 * Header
-
 * Annotations
 
-The circular gauge control is highly customizable control with variety of simple APIs to modify its basic look and feel. You can position ranges, ticks, labels, and range pointers as needed.
+The circular gauge control is a highly customizable control with a variety of simple APIs to modify its basic look and feel. You can position ranges, ticks, labels, and range pointers as needed.
 
 ### Scales
 
@@ -48,7 +44,7 @@ The circular gauge control is highly customizable control with variety of simple
 
 [`Annotations`](https://help.syncfusion.com/uwp/sfcirculargauge/annotations) allows you to mark the specific area of interest in a circular gauge. You can place custom views, text, and images as annotations by using the annotations feature.
 
-![Overview_img1](Overview_images/Overview_img1.jpeg)
+![UWP Radial Gauge overview](Overview_images/Overview_img1.jpeg)
 
 
 

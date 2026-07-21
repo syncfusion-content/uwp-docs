@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in UWP Pivot Gauge control | Syncfusion
 description: Learn here all about Appearance support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
-platform: UWP
+platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Layout customization
 
-The SfPivotGauge supports displaying the multiple gauges in a structured layout using the `RowsCount` and `ColumnsCount` properties. These properties specify the number of rows and columns required to display the control.
+The [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) supports displaying multiple gauges in a structured layout using the [RowsCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_RowsCount) and [ColumnsCount](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_ColumnsCount) properties. These properties specify the number of rows and columns required to display the control.
 
 {% tabs %}
 
@@ -19,8 +19,7 @@ The SfPivotGauge supports displaying the multiple gauges in a structured layout 
 
 <syncfusion:SfPivotGauge x:Name="PivotGauge1" RowsCount="2" ColumnsCount="2"
                          ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
-                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
-</syncfusion:SfPivotGauge>
+                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}"/>
 
 {% endhighlight %}
 
@@ -40,11 +39,11 @@ PivotGauge1.ColumnsCount = 2
 
 {% endtabs %}
 
-![Layout-customization](Appearance_images/Layout-customization.png)
+![UWP SfPivotGauge Layout Customization](Appearance_images/Layout-customization.png)
 
 ## Gauge radius
 
-The SfPivotGauge supports adjusting its radius by assigning a proper value to its `Radius` property. The following code snippet illustrates how to modify the radius of the SfPivotGauge.
+The [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) supports adjusting its radius by assigning a proper value to its [Radius](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_Radius) property. The following code snippet illustrates how to modify the radius of the SfPivotGauge.
 
 {% tabs %}
 
@@ -52,8 +51,7 @@ The SfPivotGauge supports adjusting its radius by assigning a proper value to it
 
 <syncfusion:SfPivotGauge x:Name="PivotGauge1" Radius="75"
                          ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
-                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
-</syncfusion:SfPivotGauge>
+                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}"/>
 
 {% endhighlight %}
 
@@ -71,11 +69,11 @@ PivotGauge1.Radius = 75
 
 {% endtabs %}
 
-![Gauge-radius](Appearance_images/Gauge-radius.png)
+![UWP SfPivotGauge Gauge Radius](Appearance_images/Gauge-radius.png)
 
 ## Gauge header
 
-The gauge header is a combination of details about the calculation and KPI. The header components of the SfPivotGauge can be hidden by using the `ShowGaugeHeader` property as specified in the following code snippet.
+The gauge header is a combination of details about the calculation and KPI. The header components of the [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) can be hidden by using the [ShowGaugeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_ShowGaugeFactors) property, as specified in the following code snippet.
 
 {% tabs %}
 
@@ -83,8 +81,7 @@ The gauge header is a combination of details about the calculation and KPI. The 
 
 <syncfusion:SfPivotGauge x:Name="PivotGauge1" ShowGaugeHeaders="False"
                          ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
-                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
-</syncfusion:SfPivotGauge>
+                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}"/>
 
 {% endhighlight %}
 
@@ -102,11 +99,11 @@ PivotGauge1.ShowGaugeHeaders = False
 
 {% endtabs %}
 
-![Gauge-header](Appearance_images/Gauge-header.png)
+![UWP SfPivotGauge Gauge Header](Appearance_images/Gauge-header.png)
 
 ## Gauge label
 
-The visibility of gauge labels displayed inside the gauge can be toggled with the help of `ShowGaugeLabels` property. The following code snippet shows how to hide labels of the SfPivotGauge.
+The visibility of gauge labels displayed inside the gauge can be toggled with the help of the [ShowGaugeLabels](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_ShowGaugeLabels) property. The following code snippet shows how to hide the labels of the SfPivotGauge.
 
 {% tabs %}
 
@@ -114,8 +111,7 @@ The visibility of gauge labels displayed inside the gauge can be toggled with th
 
 <syncfusion:SfPivotGauge x:Name="PivotGauge1" ShowGaugeLabels="False"
                          ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
-                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
-</syncfusion:SfPivotGauge>
+                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}"/>
 
 {% endhighlight %}
 
@@ -133,11 +129,11 @@ PivotGauge1.ShowGaugeLabels = False
 
 {% endtabs %}
 
-![Gauge-label](Appearance_images/Gauge-label.png)
+![UWP SfPivotGauge Gauge Label](Appearance_images/Gauge-label.png)
 
 ## Gauge factor
 
-The gauge factor component can be hidden by using the `ShowGaugeFactors` property as specified in the following code snippet.
+The gauge factor component can be hidden by using the [ShowGaugeFactors](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_ShowGaugeFactors) property, as specified in the following code snippet.
 
 {% tabs %}
 
@@ -145,8 +141,7 @@ The gauge factor component can be hidden by using the `ShowGaugeFactors` propert
 
 <syncfusion:SfPivotGauge x:Name="PivotGauge1" ShowGaugeFactors="False"
                          ItemSource="{Binding ProductSalesData}" PivotRows="{Binding PivotRows}"
-                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}">
-</syncfusion:SfPivotGauge>
+                         PivotColumns="{Binding PivotColumns}" PivotCalculations="{Binding PivotCalculations}"/>
 
 {% endhighlight %}
 
@@ -164,4 +159,4 @@ PivotGauge1.ShowGaugeFactors = False
 
 {% endtabs %}
 
-![Gauge-factor](Appearance_images/Gauge-factor.png)
+![UWP SfPivotGauge Gauge Factor](Appearance_images/Gauge-factor.png)
