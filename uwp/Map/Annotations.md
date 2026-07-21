@@ -30,24 +30,24 @@ The appearance of `AnnotationLabel` is customized by the following properties:
 
 {% highlight html %}
 
-    <syncfusion:SfMap>
-        <syncfusion:SfMap.Layers>
-            <syncfusion:ShapeFileLayer Uri="MapApp.world1.shp">
-                <syncfusion:ShapeFileLayer.Annotations>
-                    <syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red">
-                        <syncfusion:MapAnnotations.AnnotationSymbol>
-                            <Ellipse Fill="Orange" Height="10" Width="10" />
-                        </syncfusion:MapAnnotations.AnnotationSymbol>
-                    </syncfusion:MapAnnotations>
-                    <syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="United States of America" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red">
-                        <syncfusion:MapAnnotations.AnnotationSymbol>
-                            <Ellipse Fill="Orange" Height="10" Width="10" />
-                        </syncfusion:MapAnnotations.AnnotationSymbol>
-                    </syncfusion:MapAnnotations>
-                </syncfusion:ShapeFileLayer.Annotations>
-            </syncfusion:ShapeFileLayer>
-        </syncfusion:SfMap.Layers>
-    </syncfusion:SfMap>
+<syncfusion:SfMap>
+    <syncfusion:SfMap.Layers>
+        <syncfusion:ShapeFileLayer Uri="MapApp.world1.shp">
+            <syncfusion:ShapeFileLayer.Annotations>
+                <syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red">
+                    <syncfusion:MapAnnotations.AnnotationSymbol>
+                        <Ellipse Fill="Orange" Height="10" Width="10" />
+                    </syncfusion:MapAnnotations.AnnotationSymbol>
+                </syncfusion:MapAnnotations>
+                <syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="United States of America" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red">
+                    <syncfusion:MapAnnotations.AnnotationSymbol>
+                        <Ellipse Fill="Orange" Height="10" Width="10" />
+                    </syncfusion:MapAnnotations.AnnotationSymbol>
+                </syncfusion:MapAnnotations>
+            </syncfusion:ShapeFileLayer.Annotations>
+        </syncfusion:ShapeFileLayer>
+    </syncfusion:SfMap.Layers>
+</syncfusion:SfMap>
 
 {% endhighlight %}
 
