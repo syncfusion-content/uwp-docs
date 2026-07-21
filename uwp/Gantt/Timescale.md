@@ -142,32 +142,32 @@ The following code sample demonstrates how to customize a timescale.
 {% tabs %}
 
 {% highlight xaml %}
-<Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}">
-
-     <Gantt:SfGantt.TimescaleSettings>
-
-        <Gantt:TimescaleSettings  Background="LightBlue" BorderBrush="DarkBlue" Foreground="Blue">
-
-           <Gantt:TimescaleSettings.TopTier>
-
-               <Gantt:TimescaleTier LabelAlignment="Left"  IntervalType="Years" >
-
-            </Gantt:TimescaleTier>
-
+<Gantt:SfGantt x:Name="Gantt" ItemsSource="{Binding TaskCollection}" AllowEditing="True" ProjectResources="{Binding ResourceCollection}">
+   <Gantt:SfGantt.TimescaleSettings>
+         <Gantt:TimescaleSettings >
+            <Gantt:TimescaleSettings.TopTier>
+               <Gantt:TimescaleTier  IntervalType="Years" >
+                     <Gantt:TimescaleTier.LabelTemplate>
+                        <DataTemplate>
+                           <TextBlock Text="{Binding Content}" Foreground="Red" FontSize="24"></TextBlock>
+                        </DataTemplate>
+                     </Gantt:TimescaleTier.LabelTemplate>
+               </Gantt:TimescaleTier>
             </Gantt:TimescaleSettings.TopTier>
-
             <Gantt:TimescaleSettings.BottomTier>
-
-                <Gantt:TimescaleTier LabelAlignment="Left" IntervalType="Days">
-
-                </Gantt:TimescaleTier>
-
-           </Gantt:TimescaleSettings.BottomTier>
-
-       </Gantt:TimescaleSettings>
-
+               <Gantt:TimescaleTier IntervalType="Days">
+                     <Gantt:TimescaleTier.LabelTemplate>
+                        <DataTemplate>
+                           <TextBlock Text="{Binding Content}" Width="30" Foreground="Black" FontSize="20"></TextBlock>
+                        </DataTemplate>
+                     </Gantt:TimescaleTier.LabelTemplate>
+               </Gantt:TimescaleTier>
+            </Gantt:TimescaleSettings.BottomTier>
+         </Gantt:TimescaleSettings>
    </Gantt:SfGantt.TimescaleSettings>
-
+   <Gantt:SfGantt.DataContext>      
+         <local:ProjectTrackerViewModel/>        
+   </Gantt:SfGantt.DataContext>
 </Gantt:SfGantt>
 
 {% endhighlight %}

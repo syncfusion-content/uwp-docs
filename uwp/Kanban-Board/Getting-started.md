@@ -193,7 +193,11 @@ In order to bind the data source of the SfKanban, set `ItemsSource` property 
 
 {% highlight xaml %}
 
-<syncfusion:SfKanban ItemsSource="{Binding Tasks}" />
+<syncfusion:SfKanban ItemsSource="{Binding Tasks}">
+    <syncfusion:SfKanban.DataContext>
+        <local:TaskDetails/>
+    </syncfusion:SfKanban.DataContext>
+</syncfusion:SfKanban>
 
 {% endhighlight %}
 
@@ -225,17 +229,16 @@ The following code example illustrates how this can be done.
 
 {% highlight xaml %}
 
-  <syncfusion:SfKanban MinColumnWidth="150" 
-                       ColumnMappingPath="Category" 
-                       ItemsSource="{Binding Tasks}"
-                       AutoGenerateColumns="False">
-
-            <syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
-
-            <syncfusion:KanbanColumn Categories="In Progress" Title="Progress"></syncfusion:KanbanColumn>
-
-            <syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
-
+<syncfusion:SfKanban MinColumnWidth="150" 
+                        ColumnMappingPath="Category" 
+                        ItemsSource="{Binding Tasks}"
+                        AutoGenerateColumns="False">
+    <syncfusion:KanbanColumn Categories="Open" Title="To Do"></syncfusion:KanbanColumn>
+    <syncfusion:KanbanColumn Categories="In Progress" Title="Progress"></syncfusion:KanbanColumn>
+    <syncfusion:KanbanColumn Categories="Review,Done" Title="Done"></syncfusion:KanbanColumn>
+    <syncfusion:SfKanban.DataContext>
+        <local:TaskDetails/>
+    </syncfusion:SfKanban.DataContext>
 </syncfusion:SfKanban>
 
 

@@ -28,9 +28,13 @@ The following code sample demonstrates how to enable the [`BringTaskOnVerticalSc
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.BringTaskOnVerticalScroll = true;
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
@@ -51,9 +55,13 @@ The following parameters allow users to scroll the Gantt chart programmatically:
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.ScrollGanttTo(new DateTime(2014, 3, 1), 2);
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
