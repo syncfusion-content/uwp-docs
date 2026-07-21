@@ -288,14 +288,23 @@ To bind the data source of the SfGantt, set the [`ItemsSource`](https://help.syn
 
 {% highlight xaml %}
 
-<gantt:SfGantt ItemsSource="{Binding TaskCollection}" />
+<gantt:SfGantt ItemsSource="{Binding TaskCollection}">
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
+</gantt:SfGantt>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 SfGantt sfGantt = new SfGantt();
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
@@ -313,8 +322,11 @@ The following code sample demonstrates how to customize the visible columns.
 
 {% highlight xaml %}
 
-<gantt:SfGantt VisibleGridColumns="Id,Name,StartDate,FinishDate,Progress" 
+<gantt:SfGantt VisibleGridColumns="ID,Name,StartDate,FinishDate,Progress" 
                ItemsSource="{Binding TaskCollection}" >
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -323,10 +335,14 @@ The following code sample demonstrates how to customize the visible columns.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate |
-                             TaskAttributes.FinishDate | TaskAttributes.Progress;
+                                TaskAttributes.FinishDate | TaskAttributes.Progress;
+                                
+this.Content = sfGantt;
 						   
 {% endhighlight %}
 
@@ -344,8 +360,11 @@ The following code sample demonstrates how to enable sorting in the Gantt contro
 
 {% highlight xaml %}
 
-<gantt:SfGantt ItemsSource="{Binding TaskCollection}" AllowSorting="True" >
-
+<gantt:SfGantt ItemsSource="{Binding TaskCollection}"
+               AllowSorting="True" >
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -354,9 +373,13 @@ The following code sample demonstrates how to enable sorting in the Gantt contro
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.AllowSorting = true;
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
@@ -375,7 +398,9 @@ The following code sample demonstrates how to enable editing in the Gantt contro
 {% highlight xaml %}
 
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" AllowEditing="True" >
-
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -383,10 +408,10 @@ The following code sample demonstrates how to enable editing in the Gantt contro
 {% highlight C# %}
 
 SfGantt sfGantt = new SfGantt();
-
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
-
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 sfGantt.AllowEditing = true;
+this.Content = sfGantt;
 
 {% endhighlight %}
 
@@ -520,8 +545,11 @@ private GanttResourceCollection GetResources()
 
 {% highlight xaml %}
 
-<gantt:SfGantt ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}" >
-
+<gantt:SfGantt ItemsSource="{Binding TaskCollection}"
+                ProjectResources="{Binding ResourceCollection}">
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -573,16 +601,19 @@ The following code sample demonstrates how to display Friday as weekend.
 {% highlight xaml %}
 
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" NonWorkingDays="Friday" NonWorkingDaysBackground="Blue" >
-        <gantt:SfGantt.TimescaleSettings>
-            <gantt:TimescaleSettings>
-                <gantt:TimescaleSettings.TopTier>
-                    <gantt:TimescaleTier IntervalType="Weeks"></gantt:TimescaleTier>
-                </gantt:TimescaleSettings.TopTier>
-                <gantt:TimescaleSettings.BottomTier>
-                    <gantt:TimescaleTier IntervalType="Days"></gantt:TimescaleTier>
-                </gantt:TimescaleSettings.BottomTier>
-            </gantt:TimescaleSettings>
-        </gantt:SfGantt.TimescaleSettings>
+    <gantt:SfGantt.TimescaleSettings>
+        <gantt:TimescaleSettings>
+            <gantt:TimescaleSettings.TopTier>
+                <gantt:TimescaleTier IntervalType="Weeks"></gantt:TimescaleTier>
+            </gantt:TimescaleSettings.TopTier>
+            <gantt:TimescaleSettings.BottomTier>
+                <gantt:TimescaleTier IntervalType="Days"></gantt:TimescaleTier>
+            </gantt:TimescaleSettings.BottomTier>
+        </gantt:TimescaleSettings>
+    </gantt:SfGantt.TimescaleSettings>
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -591,7 +622,9 @@ The following code sample demonstrates how to display Friday as weekend.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.NonWorkingDays = Days.Friday;
 
@@ -600,6 +633,8 @@ sfGantt.NonWorkingDaysBackground = new SolidColorBrush(Colors.Blue);
 sfGantt.TimescaleSettings.TopTier.IntervalType = IntervalType.Weeks;
 
 sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
