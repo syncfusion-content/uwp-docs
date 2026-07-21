@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Swimlane in UWP Kanban Board control | Syncfusion
+description: Learn about Swimlane support in Syncfusion UWP Kanban (SfKanban) control, covering setup, customization, grouping options, and usage examples.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 # Swimlane in UWP Kanban Board (SfKanban)
 
-Swim lanes are horizontal categorizations that allow you to categorize your current workflow by different projects, teams, users, or whatever you need. 
+Swimlanes are horizontal categorizations that allow you to categorize your current workflow by different projects, teams, users, or other grouping criteria.
 
 By default, it will be categorized based on [`Assignee`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html#Syncfusion_UI_Xaml_Kanban_KanbanModel_Assignee) values in [`KanbanModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html) class. You can also define category by mapping the [`SwimlaneKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneKey) to appropriate property name in the defined data model.
 
@@ -16,8 +17,12 @@ The following code example shows how to group the underlying data collection bas
 {% tabs %}
 
 {% highlight xaml %}
-<kanban:SfKanban SwimlaneKey="ColorKey" x:Name="Kanban" ItemsSource="{Binding Tasks}">
-
+<kanban:SfKanban SwimlaneKey="ColorKey"
+                 x:Name="Kanban"
+                 ItemsSource="{Binding Tasks}">
+    <kanban:SfKanban.DataContext>
+        <local:TaskDetails/>
+    </kanban:SfKanban.DataContext>
 </kanban:SfKanban>
 {% endhighlight %}
 
@@ -31,7 +36,7 @@ this.Kanban.SwimlaneKey = "ColorKey";
 ![Swimlane support in UWP SfKanban](SfKanban_images/swimlane.jpeg)
 
 
-N> If there is no value assigned for the [`SwimlaneKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneKey) mapped property in a task, then it will be grouped under Unassigned swim lane.
+N> If there is no value assigned for the [`SwimlaneKey`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_SwimlaneKey) mapped property in an item, then it will be grouped under the Unassigned swimlane.
 
 ## Customization
 
@@ -43,7 +48,7 @@ SfKanban provides support to customize header, which is displayed before the swi
         <DataTemplate>
             <Grid>
 
-                <Border BorderBrush="LightGray" BorderThickness="1" Width="{Binding ElementName=kanban, Path=ActualWidth}" Height="1">
+                <Border BorderBrush="LightGray" BorderThickness="1" Width="{Binding ElementName=Kanban, Path=ActualWidth}" Height="1">
 
                 </Border>
 

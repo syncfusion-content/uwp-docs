@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Holidays in UWP Gantt control | Syncfusion
-description: Learn here all about Holidays support in Syncfusion UWP Gantt (SfGantt) control and more.
+description: Learn about Holidays support in Syncfusion UWP Gantt (SfGantt) control, covering setup, customization, and usage examples.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-## Holidays
+# Holidays in SfGantt Control
 
 The holidays support is used to highlight the non-working days in the Gantt chart.
 
@@ -31,6 +31,9 @@ The following code sample demonstrates how to define the holidays.
                                 Background="CadetBlue" />
         </gantt:GanttHolidayCollection>
     </gantt:SfGantt.Holidays>
+    <gantt:SfGantt.DataContext>      
+         <local:ProjectTrackerViewModel/>        
+   </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -39,9 +42,11 @@ The following code sample demonstrates how to define the holidays.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
 
-sfGantt.ShowNonWorkingDays = True;
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
+
+sfGantt.ShowNonWorkingDays = true;
 
 sfGantt.Holidays = new GanttHolidayCollection()
 {
@@ -51,6 +56,8 @@ sfGantt.Holidays = new GanttHolidayCollection()
         Background = new SolidColorBrush(Colors.CadetBlue)
     }
 };
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
