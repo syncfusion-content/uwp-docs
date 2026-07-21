@@ -14,9 +14,9 @@ documentation: ug
 * [`AnnotationLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabel)
 * [`AnnotationSymbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationSymbol)
 
-[`AnnotationLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabel) is a text that shows some information in text format. 
+[`AnnotationLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabel) : A text that shows some information in text format.
 
-[`AnnotationSymbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationSymbol) is a visual object that shows a note symbolically.
+[`AnnotationSymbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationSymbol) : A visual object that shows a note symbolically.
 
 ## Customize AnnotationLabel
 
