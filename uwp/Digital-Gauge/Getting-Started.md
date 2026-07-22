@@ -11,13 +11,6 @@ documentation: ug
 
 This section explains the steps required to configure the [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) and also explains the steps to add basic elements of [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) through various APIs available within it.
 
-## Prerequisites
-
-* **Visual Studio 2015** or later with the **Windows 10 SDK** installed.
-* A UWP project targeting **Windows 10** (build 14393 or later).
-* The **Syncfusion.SfGauge.UWP** NuGet package referenced in your project. For installation details, see the Syncfusion UWP installation guide.
-* A `Grid` container (default named `Grid`) in your page to host the control when adding it via C#.
-
 ## Configuring SfDigitalGauge
 
 SfDigitalGauge is available in the following assembly and namespace.

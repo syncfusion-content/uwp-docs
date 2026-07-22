@@ -71,7 +71,7 @@ linearGauge.MainScale = linearScale;
 
 ## Positioning the annotation
 
-You can place the annotation anywhere in the gauge area by using the `Offset` or [`ScaleValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_ScaleValue) property.
+You can place the annotation anywhere in the gauge area by using the [`OffsetX`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_OffsetY) properties, or by using the [`ScaleValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearGaugeAnnotation.html#Syncfusion_UI_Xaml_Gauges_LinearGaugeAnnotation_ScaleValue) property.
 
 ### Change annotation position by using offset
 
