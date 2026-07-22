@@ -3,20 +3,26 @@ layout: post
 title: Customizing DropDown in UWP DatePicker control | Syncfusion®
 description: Learn here all about Customizing DropDown support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
 platform: uwp
-control:  SfDatePicker
+control: SfDatePicker
 documentation: ug
 ---
 # Customizing DropDown in UWP DatePicker (SfDatePicker)
 
 ## DropDown height
 
-The height of drop down can be changed using DropDownHeight property.
+The height of the drop-down can be changed using the DropDownHeight property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-  <syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" DropDownHeight="300" />
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" DropDownHeight="300" />
+
+</Page>
 
 {% endhighlight %}
 
@@ -26,13 +32,17 @@ The height of drop down can be changed using DropDownHeight property.
 
 {% highlight c# %}
 
-sfdatePicker.DropDownHeight = 200;
+using Syncfusion.UI.Xaml.Controls.Input;
+
+sfdatePicker.DropDownHeight = 300;
 
 {% endhighlight %}
 
 {% highlight VB %}
 
-sfdatePicker.DropDownHeight = 200
+Imports Syncfusion.UI.Xaml.Controls.Input;
+
+sfdatePicker.DropDownHeight = 300
 
 {% endhighlight %}
 
@@ -43,17 +53,23 @@ sfdatePicker.DropDownHeight = 200
 
 ## IsDropDownOpen
 
-Drop down can be programmatically opened or closed using the property IsDropDownOpen.
+The drop-down can be programmatically opened or closed using the IsDropDownOpen property.
 
 ## ShowDropDownButton
 
-DropDownButton visibility can be changed by using the ShowDropDownButton property
+The drop-down button visibility can be changed by using the ShowDropDownButton property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-   <syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" ShowDropDownButton="true"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <syncfusion:SfDatePicker x:Name="sfdatePicker" VerticalAlignment="Center"  Width="200" Margin="15" ShowDropDownButton="true"/>
+
+</Page>
 
 {% endhighlight %}
 
@@ -63,11 +79,15 @@ DropDownButton visibility can be changed by using the ShowDropDownButton propert
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
  sfdatePicker.ShowDropDownButton = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
  sfdatePicker.ShowDropDownButton = True
 

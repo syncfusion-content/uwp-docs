@@ -8,17 +8,19 @@ documentation: ug
 ---
 
 # Localization in UWP Scheduler (SfSchedule)
-Schedule control is available with complete localization support. Localization can be specified by setting the local language to the `PrimaryLanguageOverride`. In the format of `Language code`.
+The Schedule control is available with complete localization support. Localization can be specified by setting the local language to the `PrimaryLanguageOverride` in the format of `Language code`.
 
 ## Change default control language
-Based on the locale specified the strings in the control such as Date, time, days are localized accordingly.
-By default, schedule control is available with en locale, which is English.
+Based on the locale specified, the strings in the control such as Date, time, and days are localized accordingly.
+By default, the schedule control is available with the en locale, which is English.
 
 
 
 {% highlight c# %} 
 
-        ApplicationLanguages.PrimaryLanguageOverride = "fr";
+using Syncfusion.UI.Xaml.Schedule;
+
+ApplicationLanguages.PrimaryLanguageOverride = "fr";
 
 {% endhighlight %}   
 
@@ -30,9 +32,9 @@ By default, schedule control is available with en locale, which is English.
 
 
 ## Localizing custom text in UWP renderer.
-You can localize custom text available in the control by adding equivalent localized string in the fr.resw file. Here we have used French language.
+You can localize custom text available in the control by adding equivalent localized strings in the fr.resw file. Here we have used the French language.
 
->**Note:** Here resw file name should be match with the given locale language code.
+>**Note:** The resw file name should match with the given locale language code.
 
 ![Localization_CustomText](Localization_images/Localization_CustomText.png)
 
