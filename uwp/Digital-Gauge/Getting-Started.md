@@ -75,7 +75,7 @@ The `SegmentSeven` type primarily supports digits (0–9) and a limited set of c
 {% tabs %}
 {% highlight xaml %}
 
-<syncfusion:SfDigitalGauge Value="12345" CharacterType="SegmentSeven" />
+<syncfusion:SfDigitalGauge Value="12345" CharacterType="SegmentSeven"/>
 
 {% endhighlight %}
 
