@@ -82,6 +82,7 @@ SfCircularGauge sfCircularGauge = new SfCircularGauge();
 sfCircularGauge.FontSize = 20;
 sfCircularGauge.FontFamily = new FontFamily("Monotype Corsiva");
 sfCircularGauge.FontStyle = Windows.UI.Text.FontStyle.Italic;
+
 CircularScale circularScale = new CircularScale();
 circularScale.RimStrokeThickness = 8;
 circularScale.Radius = 150;
