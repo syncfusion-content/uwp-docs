@@ -512,7 +512,7 @@ End Namespace
 
 ### Binding OLAP data manager with SfPivotGauge control
 
-The OLAP data can be bound with the [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control by using the [OlapDataManager](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) property through any of the following ways:
+The OLAP data can be bound with the [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control by using the [OlapDataManager](https://help.syncfusion.com/cr/uwp/Syncfusion.Olap.UWP.Manager.OlapDataManager.html) property through any of the following ways:
 
 * XAML
 * Code-behind

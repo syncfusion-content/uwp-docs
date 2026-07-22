@@ -221,7 +221,7 @@ End Namespace
 
 {{ codesnippet4 | OrderList_Indent_Level_1 }} 
 
-## Binding relational data to [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control
+## Binding relational data to SfPivotGauge control
 
 ### Creating relational data through view model
 
