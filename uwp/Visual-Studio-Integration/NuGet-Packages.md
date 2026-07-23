@@ -39,7 +39,7 @@ N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www
 
 ### Using Package Manager Console
 
-To reference the Syncfusion® UWP component using the Package Manager Console as NuGet packages, follow the below step:
+To reference the Syncfusion® UWP component using the Package Manager Console as NuGet packages, follow the steps below:
 
 1.	On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**. 
 
@@ -50,7 +50,7 @@ To reference the Syncfusion® UWP component using the Package Manager Console as
     Install-Package <Package Name>
 
     #install specified package in specified project 
-    Install-Package <Package Name> - ProjectName <Project Name>
+    Install-Package <Package Name> -ProjectName <Project Name>
     ~~~
 
     **For example:**
@@ -88,10 +88,10 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
 
     ~~~
     #install specific package 
-    nuget.exe install “Syncfusion.Calculate.UWP”
+    nuget.exe install "Syncfusion.Calculate.UWP"
 
     #install all package which mention in package.config path 
-    nuget.exe install “C:\Users\SyncfusionApplication\package.config”
+    nuget.exe install "C:\Users\SyncfusionApplication\package.config"
     ~~~
 
 N> To Install earlier version of 16.2.0.46 Syncfusion® NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/uwp/Visual-Studio-Integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
@@ -107,7 +107,7 @@ NuGet packages can be updated to their specific version or latest version availa
 
 2. Select the **Updates** tab to see the packages available for update. Select the required packages and the specific version from the dropdown, and click the **Update** button.
 
-### Using Package Manger Console
+### Using Package Manager Console
 
 To update the installed Syncfusion® UWP NuGet packages using the Package Manager Console, follow the below steps:
 
@@ -123,7 +123,7 @@ To update the installed Syncfusion® UWP NuGet packages using the Package Manage
     Update-Package 
 
     #Update specified package in specified project 
-    Update-Package <Package Name> - ProjectName <Project Name>
+    Update-Package <Package Name> -ProjectName <Project Name>
     ~~~
 
     **For example:**
@@ -164,7 +164,7 @@ Using the NuGet CLI, all the NuGet packages in the project can be updated to the
 
     ~~~          
     #Update all NuGet packages from config file
-    nuget update “C:\Users\SyncfusionApplication\package.config”
+    nuget update "C:\Users\SyncfusionApplication\package.config"
     ~~~
 
 ## Syncfusion NuGet feed URL Configuration
@@ -217,13 +217,13 @@ You should get the private Syncfusion® UWP NuGet feed URL to install or upgrade
 
     ~~~
     #Add specified Package Source in NuGet.config file 
-    nuget.exe Sources Add –Name <Source name> –Source <Source location>  
+    nuget.exe Sources Add -Name <Source name> -Source <Source location>  
     ~~~
 
     **For example:**
 
     ~~~
-    nuget.exe Sources Add –Name “Syncfusion Source” –Source “https://nuget.syncfusion.com/nuget_universalwindows/nuget/getsyncfusionpackages/universalwindows”
+    nuget.exe Sources Add -Name "Syncfusion Source" -Source "https://nuget.syncfusion.com/nuget_universalwindows/nuget/getsyncfusionpackages/universalwindows"
     ~~~
 
 
