@@ -232,11 +232,11 @@ You can skip the `GridFilterControl` styling for particular column from [SfDataG
  
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
+<Page.Resources>
     <Style x:Key="filterControlStyle" TargetType="syncfusion:GridFilterControl">
            <Setter Property="FilterMode" Value="AdvancedFilter" />
     </Style>
-</Window.Resources>
+</Page.Resources>
  
 <syncfusion:SfDataGrid x:Name="dataGrid"
                        AllowFiltering="True"
@@ -433,7 +433,7 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 
 #### Advanced Filter with AllowBlankFilters as True
 
-![Filter the NULL values by using the Advanced Filter view in SfDataGrid UWP](Filtering_images/Filtering_img10.png    )
+![Filter the NULL values by using the Advanced Filter view in SfDataGrid UWP](Filtering_images/Filtering_img10.png)
 
 ## Instant Filtering
 
@@ -785,13 +785,13 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
+<Page.Resources>
         <Style TargetType="Syncfusion:GridFilterControl">
             <Setter Property="FontSize" Value="14" />
             <Setter Property="FontWeight" Value="Normal" />
             <Setter Property="FilterPopupHeight" Value="632"/>
         </Style>
-</Window.Resources>
+</Page.Resources>
 {% endhighlight %}
 {% endtabs %}
 

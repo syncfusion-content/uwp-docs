@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blocking Dates in UWP Calendar control | Syncfusion
-description: Learn here all about Blocking Dates support in Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn here all about Blocking Dates support in the Syncfusion UWP Calendar (SfCalendar) control and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
@@ -9,17 +9,22 @@ documentation: ug
 
 # Blocking Dates in UWP Calendar (SfCalendar)
 
-`SfCalendar` allows to block out dates so that a blocked date will look disabled, skipped in key navigation and unable to select.
+`SfCalendar` allows blocking out dates so that a blocked date will look disabled, be skipped in key navigation, and unable to be selected.
 
 ## Blocking out the Date Collection
 
-`BlackOutDates` property is used to specify the collection of DateTime that are to be blocked.
+The `BlackOutDates` property is used to specify the collection of DateTime that are to be blocked.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar"/>
+</Page>
 
 {% endhighlight %}
 
@@ -28,6 +33,8 @@ documentation: ug
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.BlackOutDates.Add(new DateTime(2015, 12, 1));
 
@@ -49,6 +56,8 @@ calendar.BlackOutDates.Add(new DateTime(2015, 12, 27));
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.BlackOutDates.Add(New Date(2015, 12, 1))
 
@@ -77,33 +86,38 @@ calendar.BlackOutDates.Add(New Date(2015, 12, 27))
 
 ## Customize the Blocked Date Cell
 
-The template of blocked cells can be customized using `BlackOutCellTemplate` property.
+The template of blocked cells can be customized using the `BlackOutCellTemplate` property.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-<input:SfCalendar.BlackOutCellTemplate>
+    <input:SfCalendar x:Name="calendar">
 
-<DataTemplate>
+    <input:SfCalendar.BlackOutCellTemplate>
 
-<Grid>
+    <DataTemplate>
 
-<TextBlock Text="&#xE106;" Foreground="Red"
-           VerticalAlignment="Top" FontFamily="Segoe UI Symbol"
-		   Margin="3" HorizontalAlignment="Right"/>
-		   
-<TextBlock Text="{Binding Day}" Foreground="#FFA5A5A5"
-           VerticalAlignment="Bottom" Margin="3"/>
-</Grid>
+    <Grid>
 
-</DataTemplate>
+    <TextBlock Text="&#xE106;" Foreground="Red"
+               VerticalAlignment="Top" FontFamily="Segoe UI Symbol"
+    		   Margin="3" HorizontalAlignment="Right"/>
+    		   
+    <TextBlock Text="{Binding Day}" Foreground="#FFA5A5A5"
+               VerticalAlignment="Bottom" Margin="3"/>
+    </Grid>
 
-</input:SfCalendar.BlackOutCellTemplate>
+    </DataTemplate>
 
-</input:SfCalendar>
+    </input:SfCalendar.BlackOutCellTemplate>
+
+    </input:SfCalendar>
+</Page>
 
 
 {% endhighlight %}
@@ -114,6 +128,8 @@ The template of blocked cells can be customized using `BlackOutCellTemplate` pro
 {% tabs %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.BlackOutDates.Add(new DateTime(2015, 12, 1));
 
@@ -135,6 +151,8 @@ calendar.BlackOutDates.Add(new DateTime(2015, 12, 27));
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.BlackOutDates.Add(New Date(2015, 12, 1))
 

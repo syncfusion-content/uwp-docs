@@ -9,7 +9,7 @@ documentation: ug
 
 # UWP TimePicker (SfTimePicker) Overview
 
-The SfTimePicker control allows the user to select time values in a touch friendly manner.
+The SfTimePicker control allows the user to select time values in a touch-friendly manner.
 
 ### Normal view
 
@@ -28,5 +28,5 @@ The SfTimePicker control allows the user to select time values in a touch friend
 
 ### Key Features
 
-Formatting – The control displays the selected time value in a various formats.
+Formatting – The control displays the selected time value in various formats.
 

@@ -130,7 +130,7 @@ this.treeGrid.GridCopyOption = GridCopyOption.CutData | GridCopyOption.IncludeHe
 {% endhighlight %}
 {% endtabs %}
 
-![WPF treegrid shows with Data from the record is cut and pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img3.jpeg)
+![UWP treegrid shows with Data from the record is cut and pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img3.jpeg)
 
 ## Events
 
@@ -233,7 +233,7 @@ The [PasteGridCellContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml
 
 * [RowData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCopyPasteCellEventArgs_RowData): Returns the corresponding RowData of a cell.
 
-* [OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender): Returns SfTeeGrid.
+* [OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender): Returns SfTreeGrid.
 
 You can paste the text to tree grid by changing the ClipBoardValue.
 
@@ -376,7 +376,7 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
 
 {% endhighlight %}
 {% highlight c# %}
-public MainWindow()
+public MainPage()
 {
     InitializeComponent();
     this.treeGrid.TreeGridCopyPaste = new CustomCopyPaste(this.treeGrid);
