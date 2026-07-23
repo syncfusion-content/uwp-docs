@@ -203,7 +203,7 @@ By default, group summaries in SfDataGrid will be exported to PDF. If you want t
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-options.ExportGroupSummary = true;
+options.ExportGroupSummary = false;
 var document = this.dataGrid.ExportToPdf(options);
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
@@ -222,7 +222,7 @@ By default, table summaries in SfDataGrid will be exported to PDF. If you want t
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-options.ExportTableSummary = true;
+options.ExportTableSummary = false;
 var document = this.dataGrid.ExportToPdf(options);
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 

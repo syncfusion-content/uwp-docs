@@ -16,7 +16,7 @@ SfTreeGrid provides support for programmatic filtering. It can be achieved by se
 {% tabs %}
 {% highlight c# %}
 
-public bool FilerNodes(object o)
+public bool FilterNodes(object o)
 {
     var data = o as Employee;
 
@@ -27,7 +27,7 @@ public bool FilerNodes(object o)
 
 private void Button_Click(object sender, RoutedEventArgs e)
 {
-    treeGrid.View.Filter = FilerNodes;
+    treeGrid.View.Filter = FilterNodes;
     treeGrid.View.RefreshFilter();
 }
 

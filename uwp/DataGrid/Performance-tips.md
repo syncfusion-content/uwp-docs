@@ -134,7 +134,7 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>    
+<Page.Resources>    
     <Style TargetType="syncfusion:GridFilterControl">
         <Setter Property="FilterMode" Value="AdvancedFilter" />
     </Style>
@@ -142,7 +142,7 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
     <Style TargetType="syncfusion:AdvancedFilterControl">
         <Setter Property="CanGenerateUniqueItems" Value="False" />
     </Style>
-</Window.Resources>
+</Page.Resources>
 {% endhighlight %}
 {% endtabs %}
 
