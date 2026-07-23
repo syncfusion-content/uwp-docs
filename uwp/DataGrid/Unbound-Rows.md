@@ -212,11 +212,11 @@ You can customize the style of unbound row by writing style of TargetType [UnBou
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>    
+<Page.Resources>    
     <Style TargetType="syncfusion:UnBoundRowControl">
         <Setter Property="FontWeight" Value="Bold"/>
     </Style>        
-</Window.Resources>
+</Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"    
@@ -236,11 +236,11 @@ You can customize the style of unbound row cell by writing style of TargetType [
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>    
+<Page.Resources>    
         <Style TargetType="syncfusion:GridUnBoundRowCell">
             <Setter Property="Foreground" Value="Red" />
         </Style>
-</Window.Resources>
+</Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"
