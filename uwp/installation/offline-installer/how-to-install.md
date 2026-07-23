@@ -8,7 +8,9 @@ documentation: ug
 
 ---
 
-# Installing Syncfusion UWP Offline Installer
+# Installing Syncfusion UWP offline installer
+
+**Applies to:** Syncfusion<sup>®</sup> Essential Studio<sup>®</sup> UWP Offline Installer on Windows.
 
 ## Prerequisites
 
@@ -93,7 +95,7 @@ The steps below show how to install the Essential Studio UWP installer.
 
 The Syncfusion Essential Studio UWP Installer supports installation and uninstallation via the command line.
 
-### Command Line Installation
+### Command line installation
 
 To install through the Command Line in Silent mode, follow the steps below.
 
@@ -114,7 +116,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
     N> `x.x.x.x` should be replaced with the Essential Studio version, and the Product Unlock Key should be replaced with the Unlock Key for that version.
 
-### Command Line Uninstallation
+### Command line uninstallation
 
 Syncfusion Essential UWP can be uninstalled silently using the Command Line.
 
@@ -131,13 +133,13 @@ Syncfusion Essential UWP can be uninstalled silently using the Command Line.
 
 7. Essential Studio for UWP is uninstalled.
 
-## Copy Local
+## Copy local
 
 Copying assemblies to the local folder is supported by Syncfusion components. It can be achieved by setting the assembly's **Copy Local** property to `true`, so that it can be copied to `Bin\Release` and `Bin\Debug` folders. The files `.exe`, `.dll`, `.xml`, `.pri`, `.rd.xml`, and `.xaml` are copied to client machines.
 
 ![Copy Assemblies](images/Installation-and-Deployment_img5.png)
 
-## Installed Location
+## Installed location
 
 The following table represents the installed location of assemblies and samples.
 
