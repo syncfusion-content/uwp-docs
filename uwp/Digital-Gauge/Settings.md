@@ -9,157 +9,157 @@ documentation: ug
 
 # Settings in UWP Digital Gauge (SfDigitalGauge)
 
-There are some other elements/behavior in SfDigitalGauge also can be customized. 
+Other elements and behaviors in [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) can be customized as well.
 
 They are:
 
 * Character Spacing
-* Segment Thickness
-* RTL (Right to Left) support
 * Character Stroke
-* Dimmed Brush stroke
-* Dimmed Brush opacity
+* Segment Thickness
+* RTL (Right to Left) Support
+* Dimmed Brush Stroke
+* Dimmed Brush Opacity
 
 ## Character Spacing
 
-The distance between the characters can be set by using the **CharacterSpacing** property.
+The distance between the characters can be set by using the [CharactersSpacing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharactersSpacing) property. The default value is `10`, and the valid range is any non-negative numeric value.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterSpacing="50"/>
+<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharactersSpacing="50"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digital = new SfDigitalGauge();
-    digital.Value = " SYNCFUSION";
-    digital.CharacterSpacing = 50;
-    this.Grid.Children.Add(digital);      
+SfDigitalGauge digital = new SfDigitalGauge();
+digital.Value = "SYNCFUSION";
+digital.CharacterSpacing = 50;
+this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
 
-![Settings_img1](Settings_images/Settings_img1.jpeg)
+![UWP Digital Gauge Character Spacing](Settings_images/Settings_img1.jpeg)
 
 ## Character Stroke
 
-The Stroke of the character can be changed by **CharacterStroke** property.
+The stroke of the character can be changed by the [CharacterStroke](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterStroke) property. The default value is `Red`.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfDigitalGauge  Value="SYNCFUSION"   CharacterType="SegmentFourteen" CharacterStroke="Yellow" />
+<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" CharacterStroke="Yellow" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digital = new SfDigitalGauge();
-    digital.Value = " SYNCFUSION";
-    digital.CharacterStroke = new SolidColorBrush(Colors.Yellow);
-    digital.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digital);
-    
+SfDigitalGauge digital = new SfDigitalGauge();
+digital.Value = "SYNCFUSION";
+digital.CharacterType = CharacterType.SegmentFourteen;
+digital.CharacterStroke = new SolidColorBrush(Colors.Yellow);
+this.Grid.Children.Add(digital);
+
 {% endhighlight %}
 {% endtabs %}
 
-![Settings_img2](Settings_images/Settings_img2.jpeg)
+![UWP Digital Gauge Character Stroke](Settings_images/Settings_img2.jpeg)
 
 ## Segment Thickness
 
-Using **SegmentThickness** property, you can adjust the thickness of the segment.
+You can adjust the thickness of the segment using the [SegmentThickness](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_SegmentThickness) property. The default value is `2`, and the valid range is any positive numeric value.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen”  SegmentThickness="5"/>
-    
+<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" SegmentThickness="5"/>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digital = new SfDigitalGauge();
-    digital.Value = " SYNCFUSION";
-    digital.SegmentThickness = 5;
-    digital.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digital);
+SfDigitalGauge digital = new SfDigitalGauge();
+digital.Value = "SYNCFUSION";
+digital.SegmentThickness = 5;
+digital.CharacterType = CharacterType.SegmentFourteen;
+this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
 
-![Settings_img3](Settings_images/Settings_img3.jpeg)
+![UWP Digital Gauge Segment Thickness](Settings_images/Settings_img3.jpeg)
 
 ## RTL (Right to Left) support
 
-The Characters are aligned using **EnableRTLFormat** property. The default value of **EnableRTLFormat** **is** false.
+The Characters are aligned using the [EnableRTLFormat](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_EnableRTLFormat) property. The default value of `EnableRTLFormat` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen"   EnableRTLFormat="True" />
+<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" EnableRTLFormat="True" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digital = new SfDigitalGauge();
-    digital.Value = " SYNCFUSION";
-    digital.EnableRTLFormat= true;
-    digital.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digital);
+SfDigitalGauge digital = new SfDigitalGauge();
+digital.Value = "SYNCFUSION";
+digital.EnableRTLFormat = true;
+digital.CharacterType = CharacterType.SegmentFourteen;
+this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
 
-![Settings_img4](Settings_images/Settings_img4.jpeg)
+![UWP Digital Gauge RTL Support](Settings_images/Settings_img4.jpeg)
 
 ## Dimmed Brush stroke
 
-**DimmedBrush** property is used to apply brushes to the dimmed segment. This property is used to suit the background of the Digital gauge
+The [DimmedBrush](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_DimmedBrush) property is used to apply a brush to the dimmed (inactive) segments of the digital gauge. The dimmed segments are the segments that are not part of the active character being displayed. This property helps the dimmed segments blend with the background of the digital gauge. The default value is `Transparent`.
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterType="SegmentFourteen"  DimmedBrush="White" />
+<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" DimmedBrush="White" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digital = new SfDigitalGauge();
-    digital.Value = " SYNCFUSION";
-    digital.DimmedBrush = new SolidColorBrush(Colors.White);
-    digital.CharacterType = CharacterType.SegmentFourteen;
-    this.Grid.Children.Add(digital);
+SfDigitalGauge digital = new SfDigitalGauge();
+digital.Value = "SYNCFUSION";
+digital.DimmedBrush = new SolidColorBrush(Colors.White);
+digital.CharacterType = CharacterType.SegmentFourteen;
+this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
 
-![Settings_img5](Settings_images/Settings_img5.jpeg)
+![UWP Digital Gauge Dimmed Brush Stroke](Settings_images/Settings_img5.jpeg)
 
 ## Dimmed Brush opacity
 
-**DimmedBrushOpacity** property is used to set the opacity of the brushes to the dimmed segment.
+The [DimmedBrushOpacity](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_DimmedBrushOpacity) property is used to set the opacity of the dimmed segment brush. The default value is `50`, and the valid range is `0` to `100` (percentage).
 
 {% tabs %}
 {% highlight xaml %}
 
-    <syncfusion:SfDigitalGauge  Value="SYNCFUSION" DimmedBrush="White"  DimmedBrushOpacity="20" CharacterType="SegmentFourteen" />
+<syncfusion:SfDigitalGauge  Value="SYNCFUSION" DimmedBrush="White"  DimmedBrushOpacity="20" CharacterType="SegmentFourteen" />
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    SfDigitalGauge digital = new SfDigitalGauge();
-    digital.Value = " SYNCFUSION";
-    digital.DimmedBrush = new SolidColorBrush(Colors.White);
-    digital.CharacterType = CharacterType.SegmentFourteen;
-    digital.DimmedBrushOpacity = 20;
-    this.Grid.Children.Add(digital);
+SfDigitalGauge digital = new SfDigitalGauge();
+digital.Value = "SYNCFUSION";
+digital.DimmedBrush = new SolidColorBrush(Colors.White);
+digital.CharacterType = CharacterType.SegmentFourteen;
+digital.DimmedBrushOpacity = 20;
+this.Grid.Children.Add(digital);
 
 {% endhighlight %}
 {% endtabs %}
 
-![Settings_img6](Settings_images/Settings_img6.jpeg)
+![UWP Digital Gauge Dimmed Brush Opacity](Settings_images/Settings_img6.jpeg)
