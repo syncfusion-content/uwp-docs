@@ -7,7 +7,7 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Localization in UWP Spell Checker (SfSpellChecker)
+# Localization in the UWP Spell Checker (SfSpellChecker)
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfSpellChecker by adding resource file. Application culture can be changed by setting [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) before `InitializeComponent()` method.
  
