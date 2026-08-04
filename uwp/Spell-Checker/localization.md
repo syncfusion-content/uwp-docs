@@ -2,7 +2,7 @@
 layout: post
 title: Localization in UWP Spell Checker control | Syncfusion®
 description: Learn here all about Localization support in Syncfusion® UWP Spell Checker (SfSpellChecker) control and more.
-platform: UWP
+platform: uwp
 control: SfSpellChecker
 documentation: ug
 ---
@@ -48,7 +48,7 @@ For example, you have to give name as **Syncfusion.SfSpellChecker.UWP.Resources.
 
 4. Add the Name/Value pair in Resource Designer of **Syncfusion.SfSpellChecker.UWP.Resources.resw** file and change its corresponding value to corresponding culture.
  
-![Localizationimg3](localization-images/Localizationimg3.png)
+![localizationimg3](localization-images/localizationimg3.png)
 
 You can get the SfSpellChecker’s key from default resource  [Syncfusion.SfSpellChecker.UWP.Resources.resw]
 (https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpellChecker.UWP.Resources-1005709407.zip).
