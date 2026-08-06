@@ -11,12 +11,9 @@ documentation: ug
 
 `Annotations` are notes used to leave some message on the map. In the [`SfMap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html), annotations are denoted by the [`MapAnnotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html). `MapAnnotations` has two major parts:
 
-* [`AnnotationLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabel)
-* [`AnnotationSymbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationSymbol)
+* [`AnnotationLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabel) : A text that shows some information in text format.
 
-[`AnnotationLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationLabel) is a text that shows some information in text format. 
-
-[`AnnotationSymbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationSymbol) is a visual object that shows a note symbolically.
+* [`AnnotationSymbol`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapAnnotations.html#Syncfusion_UI_Xaml_Maps_MapAnnotations_AnnotationSymbol) : A visual object that shows a note symbolically.
 
 ## Customize AnnotationLabel
 
@@ -30,24 +27,24 @@ The appearance of `AnnotationLabel` is customized by the following properties:
 
 {% highlight html %}
 
-    <syncfusion:SfMap>
-        <syncfusion:SfMap.Layers>
-            <syncfusion:ShapeFileLayer Uri="MapApp.world1.shp">
-                <syncfusion:ShapeFileLayer.Annotations>
-                    <syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red">
-                        <syncfusion:MapAnnotations.AnnotationSymbol>
-                            <Ellipse Fill="Orange" Height="10" Width="10" />
-                        </syncfusion:MapAnnotations.AnnotationSymbol>
-                    </syncfusion:MapAnnotations>
-                    <syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="United States of America" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red">
-                        <syncfusion:MapAnnotations.AnnotationSymbol>
-                            <Ellipse Fill="Orange" Height="10" Width="10" />
-                        </syncfusion:MapAnnotations.AnnotationSymbol>
-                    </syncfusion:MapAnnotations>
-                </syncfusion:ShapeFileLayer.Annotations>
-            </syncfusion:ShapeFileLayer>
-        </syncfusion:SfMap.Layers>
-    </syncfusion:SfMap>
+<syncfusion:SfMap>
+    <syncfusion:SfMap.Layers>
+        <syncfusion:ShapeFileLayer Uri="MapApp.world1.shp">
+            <syncfusion:ShapeFileLayer.Annotations>
+                <syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red">
+                    <syncfusion:MapAnnotations.AnnotationSymbol>
+                        <Ellipse Fill="Orange" Height="10" Width="10" />
+                    </syncfusion:MapAnnotations.AnnotationSymbol>
+                </syncfusion:MapAnnotations>
+                <syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="United States of America" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red">
+                    <syncfusion:MapAnnotations.AnnotationSymbol>
+                        <Ellipse Fill="Orange" Height="10" Width="10" />
+                    </syncfusion:MapAnnotations.AnnotationSymbol>
+                </syncfusion:MapAnnotations>
+            </syncfusion:ShapeFileLayer.Annotations>
+        </syncfusion:ShapeFileLayer>
+    </syncfusion:SfMap.Layers>
+</syncfusion:SfMap>
 
 {% endhighlight %}
 

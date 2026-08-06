@@ -9,7 +9,7 @@ documentation: ug
 
 # Key Features in UWP Digital Gauge Control (SfDigitalGauge)
 
-A digital gauge is composed of segments which are a major UI component of the digital gauge. [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) comprises the following segment types to display the digital characters. For more details on each segment type and the characters it supports, see [Digital Characters](./Digital-Characters.md). To get started with the control, see [Getting Started](./Getting-Started.md). For appearance configuration, see [Settings](./Settings.md).
+A digital gauge is composed of segments which are a major UI component of the digital gauge. [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) comprises the following segment types to display the digital characters.
 
 * 7 Segment Display
 * 14 Segment Display

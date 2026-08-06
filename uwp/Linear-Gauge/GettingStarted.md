@@ -83,19 +83,12 @@ this.Content = sfLinearGauge;
 You can configure the [`LinearScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html) elements by making use of the following APIs available in [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html). They are:
 
 •	ScaleDirection
-
 •	ScaleBarStroke
-
 •	ScaleBarSize
-
 •	ScaleBarLength
-
 •	ScaleBarBorderThickness
-
 •	Interval
-
 •	Minimum
-
 •	Maximum
 
 {% tabs %}
@@ -420,5 +413,5 @@ The following screenshot illustrates the result of the previous code.
 
 ![UWP Linear Gauge getting started](Getting-Started_images/Getting_started_img1.png)
 
-You can find the complete getting started sample from this [link](https://github.com/syncfusion/uwp-demos).
+You can find the complete getting started sample from this [link](https://github.com/syncfusion/uwp-demos/tree/master/Gauge/Gauge).
 

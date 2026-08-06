@@ -11,11 +11,11 @@ documentation: ug
 
 The [`SfMap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html) control contains the following commands:
 
-* [ZoomIn Command](#zoomin-command)
-* [ZoomOut Command](#zoomout-command)
-* [Pan Command](#pan-command)
-* [ZoomReset Command](#zoomreset-command)
-* [PanReset Command](#panreset-command)
+* [ZoomIn Command](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomInCommand)
+* [ZoomOut Command](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ZoomOutCommand)
+* [Pan Command](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_PanCommand)
+* [ZoomReset Command](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_ResetCommand)
+* [PanReset Command](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html#Syncfusion_UI_Xaml_Maps_SfMap_PanResetCommand)
 
 
 

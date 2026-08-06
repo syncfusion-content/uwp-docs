@@ -9,7 +9,7 @@ documentation: ug
 
 # Labels in UWP Linear Gauge (SfLinearGauge)
 
-The [`Labels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html) of the linear scale provide a numeric value to the major ticks that will be specified according to the range of the scale.
+The `Labels` of the linear scale provide a numeric value to the major ticks that will be specified according to the range of the scale.
 
 ## Label color customization
 
@@ -102,7 +102,7 @@ sfLinearGauge.MainScale = linearScale;
 
 ## Setting position for labels
 
-The labels in the scale can be placed above or below the linear scale by choosing one of the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property. The default value of the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property is Below.
+The labels in the scale can be placed above or below the linear scale by choosing one of the following options available in the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property. The default value of the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearScale.html#Syncfusion_UI_Xaml_Gauges_LinearScale_LabelPosition) property is `Below`.
 
 1.	Above
 2.	Below (Default)

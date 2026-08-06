@@ -103,9 +103,9 @@ The [`EnablePan`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfM
 {% highlight html %}
 
 <syncfusion:SfMap ShowCoords="True" LatitudeLongitudeType="Decimal" EnablePan="True">
-<syncfusion:SfMap.Layers>
+    <syncfusion:SfMap.Layers>
         <syncfusion:ShapeFileLayer Uri="MapApp.world1.shp"/>
-</syncfusion:SfMap.Layers>
+    </syncfusion:SfMap.Layers>
 </syncfusion:SfMap>
 
 {% endhighlight %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Digital Characters in UWP Digital Gauge (SfDigitalGauge)
 
-The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are displayed in the digital gauge by setting the [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property of type string. For initial setup of the control, see Getting Started.
+The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are displayed in the digital gauge by setting the [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property of type string.
 
 By default, the [CharacterType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) property is set to `SegmentSeven`. The following sample uses the default segment type to render the value "GAUGE".
 
@@ -36,7 +36,7 @@ The segment type can be changed using the [CharacterType](https://help.syncfusio
 
 ## 7-Segments
 
-When [CharacterType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) is set to `SegmentSeven` (the default), the value is displayed in 7-segment format. This type is mainly used to display numbers (0–9), though a limited set of letters is also supported.
+When [CharacterType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_CharacterType) is set to `SegmentSeven`, the value is displayed in 7-segment format. This type is mainly used to display numbers (0–9), though a limited set of letters is also supported.
 
 {% tabs %}
 {% highlight xaml %}

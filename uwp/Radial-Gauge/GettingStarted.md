@@ -162,7 +162,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Adding a needle pointer
 
-Create a [`NeedlePointer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html), and associate it with a scale that is to display the current value.
+Create a [`NeedlePointer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerType.html#Syncfusion_UI_Xaml_Gauges_PointerType_NeedlePointer), and associate it with a scale that is to display the current value.
 
 {% tabs %}
 
@@ -204,7 +204,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Adding a range pointer
 
-The [`RangePointer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html) provides an alternative way to indicate the current value.
+The [`RangePointer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerType.html#Syncfusion_UI_Xaml_Gauges_PointerType_RangePointer) provides an alternative way to indicate the current value.
 
 {% tabs %}
 
@@ -241,7 +241,7 @@ sfCircularGauge.Scales.Add(circularScale);
 
 ## Adding a symbol pointer
 
-The [`SymbolPointer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularPointer.html) points to the current value in a scale.
+The [`SymbolPointer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.PointerType.html#Syncfusion_UI_Xaml_Gauges_PointerType_SymbolPointer) points to the current value in a scale.
 
 {% tabs %}
 
