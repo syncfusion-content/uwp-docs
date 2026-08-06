@@ -118,7 +118,7 @@ You can refer [here](https://help.syncfusion.com/uwp/system-requirements) to kno
 
 ## Creating simple application with SfDataGrid
 
-In this walk through, you will create WPF application that contains SfDataGrid control. 
+In this walk through, you will create UWP application that contains SfDataGrid control. 
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)

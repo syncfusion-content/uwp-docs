@@ -1385,7 +1385,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
                        ColumnSizer="Star"
                        AutoGenerateColumns="False">
                        
-    <syncfusioSSn:SfDataGrid.Columns>
+    <syncfusion:SfDataGrid.Columns>
         <syncfusion:GridTextColumn  HeaderText="Order ID"
                                     MappingName="OrderID"
                                     local:StarRatio.ColumnRatio="1" />

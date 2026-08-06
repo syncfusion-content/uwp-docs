@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Column in UWP Kanban Board control | Syncfusion
-description: Learn here all about Column support in Syncfusion UWP Kanban Board (SfKanban) control and more.
-platform: UWP
+description: Learn about Column support in Syncfusion UWP Kanban (SfKanban) control, covering setup, customization, and usage examples.
+platform: uwp
 control: SfKanban
 documentation: ug
 ---
@@ -83,7 +83,7 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 ## Headers
 
-[`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Header) shows the [`Title`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Title) category, items count, and the min and max informations of a column. The UI of the header can be replaced entirely using the [`SfKanban.ColumnHeaderTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnHeaderTemplate) property. The following code sample and screenshot illustrates this.
+[`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Header) shows the [`Title`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Title) category, items count, and the min and max information of a column. The UI of the header can be replaced entirely using the [`SfKanban.ColumnHeaderTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_ColumnHeaderTemplate) property. The [`KanbanColumn.Title`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Title) property sets the text displayed in the column header. The following code sample and screenshot illustrates this.
 
 {% highlight xaml %}
 
@@ -103,17 +103,17 @@ progressColumn.Categories = new List<object>() { "In Progress", "Validated" };
 
 ## Column Tags
 
-The [`Tags`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Tags) property customizes the header of a kanban column. The following properties of the tags are used to customize the column header:
+The [`Tags`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_Tags) property provides access to the column's [`ColumnTag`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html) metadata, which exposes the state of a `KanbanColumn`. The following properties of `ColumnTag` describe the column's state:
 
-* [`CardCount`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_CardCount) - Gets or sets the count of Cards available in column. 
-* [`Maximum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_Maximum) - Gets or sets a value that indicates cards collection's maximum limit of KanbanColumn.
-* [`Minimum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_Minimum) - Gets or sets a value that indicates cards collection's minimum limit of KanbanColumn. 
-* [`IsExpanded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_IsExpanded) - Gets or sets a value that indicates whether the KanbanColumn is in expanded or not.
-* [`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_Header) - Gets or sets a object which indicates KanbanColumn header.
+* [`CardCount`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_CardCount) - Gets or sets the count of cards available in the column. 
+* [`Maximum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_Maximum) - Gets or sets a value that indicates the cards collection's maximum limit of the `KanbanColumn`.
+* [`Minimum`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_Minimum) - Gets or sets a value that indicates the cards collection's minimum limit of the `KanbanColumn`. 
+* [`IsExpanded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_IsExpanded) - Gets or sets a value that indicates whether the `KanbanColumn` is expanded or not.
+* [`Header`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.ColumnTag.html#Syncfusion_UI_Xaml_Kanban_ColumnTag_Header) - Gets or sets an object which indicates the `KanbanColumn` header.
 
 ## Expand/Collapse Column
 
-The Columns can be expanded/collapsed by tapping the toggle button, which is placed at the top-right corner of the Kanban header. The [`KanbanColumn.IsExpanded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property is used to programmatically expand/collapse the Kanban column.
+The columns can be expanded/collapsed by tapping the toggle button, which is placed at the top-right corner of the Kanban header. The [`KanbanColumn.IsExpanded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html#Syncfusion_UI_Xaml_Kanban_KanbanColumn_IsExpanded) property is used to programmatically expand/collapse the Kanban column.
 
 {% tabs %}
 

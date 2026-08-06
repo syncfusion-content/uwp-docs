@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in UWP Gantt control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Gantt (SfGantt) control and more.
+description: Learn about Localization support in Syncfusion UWP Gantt (SfGantt) control, covering culture settings, language customization, and usage.
 platform: uwp
 control: SfGantt
 documentation: ug
@@ -25,8 +25,8 @@ public MainPage()
 
 To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, use the following steps:
 
-1. Right-click the project, click **Add**, click **NewFolder**, and then name the folder as **Resources**.
-2. Right-click the **Resources** folder, click **Add**, click **NewFolder**, and then name the folder as **[culture name]**. The culture name indicates name of the language and country.
+1. Right-click the project, click **Add**, click **New Folder**, and then name the folder **Resources**.
+2. Right-click the **Resources** folder, click **Add**, click **New Folder**, and then name the folder **[culture name]**. The culture name indicates name of the language and country.
 
 For example, you will have to give name as **fr-FR** for French culture.
 
@@ -36,9 +36,9 @@ For example, you will have to give name as **fr-FR** for French culture.
 
 ![AddResource](Localization_images/AddResource.png)
 
-5. Add the Name/Value pair in Resource Designer of **Syncfusion.SfGantt.UWP.Resources.resw** file, and change its corresponding value to the corresponding culture.
+5. Add the Name/Value pair in Resource Designer of **Syncfusion.SfGantt.UWP.Resources.resw** file, and change the corresponding value to the corresponding culture.
 
-You can get the SfGantt’s key from the default resource [Syncfusion.SfGantt.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGantt.UWP.Resources845531575.zip).
+You can get the SfGantt’s keys from the default resource [Syncfusion.SfGantt.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGantt.UWP.Resources845531575.zip).
 
 ![FinalOutput](Localization_images/FinalOutput.png)
 

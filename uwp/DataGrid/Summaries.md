@@ -1000,7 +1000,7 @@ this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2);
 {% endhighlight %}
 {% endtabs %}
 
-![Calculate summaries for selected records in WPF SfDataGrid](Summaries_images/Summaries_img19.png)
+![Calculate summaries for selected records in UWP SfDataGrid](Summaries_images/Summaries_img19.png)
 
 N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
 

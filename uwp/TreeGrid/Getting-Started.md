@@ -1079,4 +1079,4 @@ You can customize sorting by handling the [SfTreeGrid.SortColumnChanging](https:
 
 ### Editing
 
-Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events.
+Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) property to `true`.

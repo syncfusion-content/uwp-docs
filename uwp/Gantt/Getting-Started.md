@@ -112,7 +112,7 @@ using Syncfusion.UI.Xaml.Gantt;
 
 {% endtabs %}
 
-2. Instance the Gantt as shown in the following code sample.
+2. Instantiate the Gantt as shown in the following code sample.
 
 {% tabs %}
 
@@ -158,9 +158,9 @@ public class ProjectTrackerViewModel
     private ObservableCollection<TaskDetail> _taskCollection;
 
     /// <summary>
-    /// Gets or sets the appointment item source.
+    /// Gets or sets the task item source.
     /// </summary>
-    /// <value>The appointment item source.</value>
+    /// <value>The task item source.</value>
     public ObservableCollection<TaskDetail> TaskCollection
     {
 
@@ -288,14 +288,23 @@ To bind the data source of the SfGantt, set the [`ItemsSource`](https://help.syn
 
 {% highlight xaml %}
 
-<gantt:SfGantt ItemsSource="{Binding TaskCollection}" />
+<gantt:SfGantt ItemsSource="{Binding TaskCollection}">
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
+</gantt:SfGantt>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 SfGantt sfGantt = new SfGantt();
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
@@ -305,7 +314,7 @@ sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollecti
 
 By default, the grid view is manipulated with name, start date, finish date, duration, progress, predecessor, and resources columns.
 
-The visible columns of grid view can be customized using the [`VisibleGridColumns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_VisibleGridColumns) property.
+The visible columns of grid view can be customized using the [`VisibleGridColumns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_VisibleGridColumns) property. In XAML, the columns are specified as a comma-separated string; in C#, they are combined using the `TaskAttributes` flags enum.
 
 The following code sample demonstrates how to customize the visible columns.
 
@@ -313,8 +322,11 @@ The following code sample demonstrates how to customize the visible columns.
 
 {% highlight xaml %}
 
-<gantt:SfGantt VisibleGridColumns="Id,Name,StartDate,FinishDate,Progress" 
+<gantt:SfGantt VisibleGridColumns="ID,Name,StartDate,FinishDate,Progress" 
                ItemsSource="{Binding TaskCollection}" >
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -323,10 +335,14 @@ The following code sample demonstrates how to customize the visible columns.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.VisibleGridColumns = TaskAttributes.ID | TaskAttributes.Name | TaskAttributes.StartDate |
-                             TaskAttributes.FinishDate | TaskAttributes.Progress;
+                                TaskAttributes.FinishDate | TaskAttributes.Progress;
+                                
+this.Content = sfGantt;
 						   
 {% endhighlight %}
 
@@ -344,8 +360,11 @@ The following code sample demonstrates how to enable sorting in the Gantt contro
 
 {% highlight xaml %}
 
-<gantt:SfGantt ItemsSource="{Binding TaskCollection}" AllowSorting="True" >
-
+<gantt:SfGantt ItemsSource="{Binding TaskCollection}"
+               AllowSorting="True" >
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -354,9 +373,13 @@ The following code sample demonstrates how to enable sorting in the Gantt contro
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.AllowSorting = true;
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
@@ -375,7 +398,9 @@ The following code sample demonstrates how to enable editing in the Gantt contro
 {% highlight xaml %}
 
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" AllowEditing="True" >
-
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -383,16 +408,16 @@ The following code sample demonstrates how to enable editing in the Gantt contro
 {% highlight C# %}
 
 SfGantt sfGantt = new SfGantt();
-
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
-
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 sfGantt.AllowEditing = true;
+this.Content = sfGantt;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-N> Now, editing cannot be done in Windows Phones.
+N> Editing is not supported on Windows Phone devices.
 
 ## Task relationships
 
@@ -451,25 +476,25 @@ The following code sample demonstrates how to define offset time to the predeces
 
 {% highlight C# %}
 
-ImplementiationModule1Child[1].Predecessors.Add(new TaskRelationship
+ImplementationModule1Child[1].Predecessors.Add(new TaskRelationship
 {
     ID = "15",
 	Offset = 4,
     Relationship = Relationship.FinishToStart
 });
-ImplementiationModule1Child[2].Predecessors.Add(new TaskRelationship
+ImplementationModule1Child[2].Predecessors.Add(new TaskRelationship
 {
     ID = "16",
 	Offset = 2,
     Relationship = Relationship.FinishToStart
 });
-ImplementiationModule1Child[3].Predecessors.Add(new TaskRelationship
+ImplementationModule1Child[3].Predecessors.Add(new TaskRelationship
 {
     ID = "17",
 	Offset = -4,
     Relationship = Relationship.FinishToStart
 });
-ImplementiationModule1Child[4].Predecessors.Add(new TaskRelationship
+ImplementationModule1Child[4].Predecessors.Add(new TaskRelationship
 {
     ID = "18",
 	Offset = -2,
@@ -520,8 +545,11 @@ private GanttResourceCollection GetResources()
 
 {% highlight xaml %}
 
-<gantt:SfGantt ItemsSource="{Binding TaskCollection}" ProjectResources="{Binding ResourceCollection}" >
-
+<gantt:SfGantt ItemsSource="{Binding TaskCollection}"
+                ProjectResources="{Binding ResourceCollection}">
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -532,13 +560,13 @@ SfGantt sfGantt = new SfGantt();
 
 sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
 
-sfGantt.ProjectResources = (this.DataContext as ProjectTrackerViewModel)..ResourceCollection;
+sfGantt.ProjectResources = (this.DataContext as ProjectTrackerViewModel).ResourceCollection;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-3. Assign the resource to tasks.
+3. Assign the resource to tasks by adding the following lines inside the `GetData()` method (the variables `Planning` and `ScheduleProcess` are the local collections created earlier in `GetData()`).
 
 {% highlight C# %}
 
@@ -573,16 +601,19 @@ The following code sample demonstrates how to display Friday as weekend.
 {% highlight xaml %}
 
 <gantt:SfGantt ItemsSource="{Binding TaskCollection}" NonWorkingDays="Friday" NonWorkingDaysBackground="Blue" >
-        <gantt:SfGantt.TimescaleSettings>
-            <gantt:TimescaleSettings>
-                <gantt:TimescaleSettings.TopTier>
-                    <gantt:TimescaleTier IntervalType="Weeks"></gantt:TimescaleTier>
-                </gantt:TimescaleSettings.TopTier>
-                <gantt:TimescaleSettings.BottomTier>
-                    <gantt:TimescaleTier IntervalType="Days"></gantt:TimescaleTier>
-                </gantt:TimescaleSettings.BottomTier>
-            </gantt:TimescaleSettings>
-        </gantt:SfGantt.TimescaleSettings>
+    <gantt:SfGantt.TimescaleSettings>
+        <gantt:TimescaleSettings>
+            <gantt:TimescaleSettings.TopTier>
+                <gantt:TimescaleTier IntervalType="Weeks"></gantt:TimescaleTier>
+            </gantt:TimescaleSettings.TopTier>
+            <gantt:TimescaleSettings.BottomTier>
+                <gantt:TimescaleTier IntervalType="Days"></gantt:TimescaleTier>
+            </gantt:TimescaleSettings.BottomTier>
+        </gantt:TimescaleSettings>
+    </gantt:SfGantt.TimescaleSettings>
+    <gantt:SfGantt.DataContext>
+        <local:ProjectTrackerViewModel/>
+    </gantt:SfGantt.DataContext>
 </gantt:SfGantt>
 
 {% endhighlight %}
@@ -591,7 +622,9 @@ The following code sample demonstrates how to display Friday as weekend.
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.NonWorkingDays = Days.Friday;
 
@@ -601,10 +634,12 @@ sfGantt.TimescaleSettings.TopTier.IntervalType = IntervalType.Weeks;
 
 sfGantt.TimescaleSettings.BottomTier.IntervalType = IntervalType.Days;
 
+this.Content = sfGantt;
+
 {% endhighlight %}
 
 {% endtabs %}
 
 ![UWP Gantt with non-working days feature](SfGantt_images/NonWorkingDays.jpeg)
 
-N> To display the non-working days, either the interval type must be set to week or the less interval type set to days, hours, and minutes.
+N> To display the non-working days, the bottom tier interval type must be set to `Days`, `Hours`, or `Minutes`.

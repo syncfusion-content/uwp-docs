@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Scrolling in UWP Gantt control | Syncfusion
+description: Learn about Scrolling support in Syncfusion UWP Gantt (SfGantt) control, covering themes, styles, customization options, and usage examples.
 platform: uwp
 control: SfGantt
 documentation: ug
@@ -10,7 +11,7 @@ documentation: ug
 
 ## Scroll to visible region
 
-The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_BringTaskOnVerticalScroll) property in the SfGantt enables you scroll to the visible task region when the Gantt chart is vertically scrolled.
+The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_BringTaskOnVerticalScroll) property in the SfGantt enables you to scroll to the visible task region when the Gantt chart is vertically scrolled.
 
 The following code sample demonstrates how to enable the [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_BringTaskOnVerticalScroll) property.
 
@@ -27,9 +28,13 @@ The following code sample demonstrates how to enable the [`BringTaskOnVerticalSc
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
 
-sfGantt.BringTaskOnVerticalScroll = True;
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
+
+sfGantt.BringTaskOnVerticalScroll = true;
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 
@@ -37,12 +42,12 @@ sfGantt.BringTaskOnVerticalScroll = True;
 
 ## Scroll to particular region
 
-You can scroll the Gantt chart programmatically using the [`ScrollGanttTo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ScrollGanttTo_System_Nullable_System_DateTime__System_Nullable_System_Int32__) method. 
+You can scroll the Gantt chart programmatically using the [`ScrollGanttTo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ScrollGanttTo_System_Nullable_System_DateTime__System_Nullable_System_Int32__) method. This method is only available from code-behind; it cannot be invoked from XAML.
 
 The following parameters allow users to scroll the Gantt chart programmatically:
 
-* `Date` : Specifies date to scroll horizontally.
-* `Index` : Specifies row index to scroll vertically.
+* `date` : Specifies date to scroll horizontally. Pass `null` to skip horizontal scrolling.
+* `index` : Specifies row index to scroll vertically. Pass `null` to skip vertical scrolling.
  
 {% tabs %}
 
@@ -50,9 +55,13 @@ The following parameters allow users to scroll the Gantt chart programmatically:
 
 SfGantt sfGantt = new SfGantt();
 
-sfGantt.ItemsSource = (this.DataContext as ProjectTrackerViewModel).TaskCollection;
+ProjectTrackerViewModel projectTrackerViewModel = new ProjectTrackerViewModel();
+
+sfGantt.ItemsSource = projectTrackerViewModel.TaskCollection;
 
 sfGantt.ScrollGanttTo(new DateTime(2014, 3, 1), 2);
+
+this.Content = sfGantt;
 
 {% endhighlight %}
 

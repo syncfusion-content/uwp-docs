@@ -9,11 +9,11 @@ documentation: ug
 
 # Placeholder in UWP Kanban Board (SfKanban)
 
-The placeholder is to denote a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
+The placeholder denotes a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
 
 ### Placeholder style
 
-[`PlaceholderStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_PlaceholderStyle) property is used to customize the placeholder. Following properties are used to customize its appearance.
+[`PlaceholderStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_PlaceholderStyle) property is used to customize the placeholder. The following properties are used to customize its appearance:
 
 * [`Fill`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_Fill)  	 - This property is used to change the background color of the placeholder.
 * [`Stroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_Stroke) 	 	 - This property is used to change the border color of the placeholder.
@@ -26,7 +26,7 @@ The placeholder is to denote a card's new position in the [`KanbanColumn`](https
 * [`TextHorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_TextHorizontalAlignment) - This property is used to change the horizontal alignment of the placeholder text.
 * [`TextVerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_TextVerticalAlignment) - This property is used to change the vertical alignment of the placeholder text.
 
-Following properties are used to customize the selected category when you have more than one category in a column.
+The following properties are used to customize the selected category when you have more than one category in a column.
 
 * [`SelectedBackground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_SelectedBackground) 	- This property is used to change the background color of the selected placeholder.
 * [`SelectedStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_SelectedStroke) 		- This property is used to change the border color of the selected placeholder.
@@ -34,7 +34,7 @@ Following properties are used to customize the selected category when you have m
 * [`SelectedStrokeDashArray`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_SelectedStrokeDashArray)     - This property is used to change the dashes of the selected placeholder.
 * [`SelectedFontSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_SelectedFontSize)            - This is used to change the font size of the text in selected placeholder.
 * [`SelectedForeground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.PlaceholderStyle.html#Syncfusion_UI_Xaml_Kanban_PlaceholderStyle_SelectedForeground)           - This property is used to change the color of the text in selected placeholder.
-The following code example describes the above behavior.
+The following code example demonstrates the above behavior.
 
 {% tabs %}
 

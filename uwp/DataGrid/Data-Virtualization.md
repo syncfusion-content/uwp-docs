@@ -226,12 +226,12 @@ Below code, sets the `GridVirtualizingCollectionViewExt` to `SfDataGrid.ItemsSou
 
 {% tabs %}
 {% highlight c# %}
-public partial class MainWindow : Window
+public sealed partial class MainPage : Page
 {
 
-    public MainWindow()
+    public MainPage()
     {
-        InitializeComponent();
+        this.InitializeComponent();
         this.dataGrid.ItemsSource = new GridVirtualizingCollectionViewExt();            
     }
 }
