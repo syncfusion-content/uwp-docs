@@ -2,7 +2,7 @@
 
 layout: post
 title: Appointments in UWP Scheduler control | Syncfusion
-description: Learn here all about Appointments support in Syncfusion UWP Scheduler (SfSchedule) control and more.
+description: Learn here all about Appointments support in the Syncfusion UWP Scheduler (SfSchedule) control and more.
 platform: uwp
 control: SfSchedule
 documentation: ug
@@ -16,9 +16,11 @@ documentation: ug
 
 {% highlight c# %}
 
-    // Creating an instance for schedule appointment collection
+using Syncfusion.UI.Xaml.Schedule;
+
+    //Creating an instance for schedule appointment collection
             ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-            //Adding schedule appointment in schedule appointment collection 
+            //Adding a schedule appointment to the schedule appointment collection 
             scheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
                 StartTime = DateTime.Now.Date.AddHours(10),
@@ -26,7 +28,7 @@ documentation: ug
                 Subject = "Meeting",
                 Location = "Hutchison road",
             });
-            //Adding schedule appointment collection to SfSchedule DataSource
+            //Adding the schedule appointment collection to the SfSchedule DataSource
             schedule.Appointments = scheduleAppointmentCollection;
 {% endhighlight %}
 
@@ -37,33 +39,35 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 
 | Property Name | Description |
 |------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [StartTimeMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_StartTimeMappingProperty) | This property is to map the property name of custom class which is equivalent for StartTime of ScheduleAppointment. |
-| [StartTimeZoneMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_StartTimeZoneMappingProperty) | This property is to map the property name of custom class which is equivalent for start time zone of ScheduleAppointment. |
-| [EndTimeMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_EndTimeMappingProperty) | This property is to map the property name of custom class which is equivalent for EndTime of ScheduleAppointment. |
-| [EndTimeZoneMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_EndTimeZoneMappingProperty) | This property is to map the property name of custom class which is equivalent for End Time zone of ScheduleAppointment. |
-| [SubjectMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_SubjectMappingProperty) | This property is to map the property name of custom class which is equivalent for Subject of ScheduleAppointment. |
-| [AppointmentBackgroundMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_AppointmentBackgroundMappingProperty) | This property is to map the property name of custom class which is equivalent for Background of ScheduleAppointment. |
-| [AllDayMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_AllDayMappingProperty) | This property is to map the property name of custom class which is equivalent for IsAllDay of ScheduleAppointment. |
-| [RecurrenceRuleMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_RecurrenceRuleMappingProperty) | This property is to map the property name of custom class which is equivalent for RecurrenceRule of ScheduleAppointment. |
-| [NotesMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_NotesMappingProperty) | This property is to map the property name of custom class which is equivalent for Notes of ScheduleAppointment. |
-| [LocationMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_LocationMappingProperty) | This property is to map the property name of custom class which is equivalent for Location of ScheduleAppointment. |
-| [IsRecursiveMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_IsRecursiveMappingProperty) | This property is to map the property name of custom class which is equivalent for IsRecursive of ScheduleAppointment. |
-| [DisplayNameMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_DisplayNameMappingProperty) | This property is to map the property name of custom class which is equivalent for Display Name of ScheduleAppointment. |
-| [ReadOnlyMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_ReadOnlyMappingProperty) | This property is to map the property name of custom class which is equivalent for read only appointment of ScheduleAppointment. |
-| [RecurrenceProperitesMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_RecurrenceProperitesMappingProperty) | This property is to map the property name of custom class which is equivalent for Recurrence Properites of ScheduleAppointment. |
-| [RecurrenceTypeMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_RecurrenceTypeMappingProperty) | This property is to map the property name of custom class which is equivalent for RecurrenceType of ScheduleAppointment. |
-| [ReminderTimeMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_ReminderTimeMappingProperty) | This property is to map the property name of custom class which is equivalent for ReminderTime of ScheduleAppointment. |
-| [ResourceCollectionMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_ResourceCollectionMappingProperty) | This property is to map the property name of custom class which is equivalent for ResourceCollection of ScheduleAppointment. |
-| [ResourceNameMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_ResourceNameMappingProperty) | This property is to map the property name of custom class which is equivalent for ResourceName of ScheduleAppointment. |
-| [StatusMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_StatusMappingProperty) | This property is to map the property name of custom class which is equivalent for status of ScheduleAppointment. |
-| [TypeNameMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_TypeNameMappingProperty) | This property is to map the property name of custom class which is equivalent for TypeName of ScheduleAppointment. |
+| [StartTimeMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_StartTimeMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the StartTime of ScheduleAppointment. |
+| [StartTimeZoneMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_StartTimeZoneMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the start time zone of ScheduleAppointment. |
+| [EndTimeMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_EndTimeMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the EndTime of ScheduleAppointment. |
+| [EndTimeZoneMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_EndTimeZoneMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the End Time zone of ScheduleAppointment. |
+| [SubjectMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_SubjectMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the Subject of ScheduleAppointment. |
+| [AppointmentBackgroundMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_AppointmentBackgroundMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the Background of ScheduleAppointment. |
+| [AllDayMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_AllDayMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the IsAllDay of ScheduleAppointment. |
+| [RecurrenceRuleMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_RecurrenceRuleMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the RecurrenceRule of ScheduleAppointment. |
+| [NotesMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_NotesMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the Notes of ScheduleAppointment. |
+| [LocationMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_LocationMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the Location of ScheduleAppointment. |
+| [IsRecursiveMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_IsRecursiveMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the IsRecursive of ScheduleAppointment. |
+| [DisplayNameMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_DisplayNameMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the Display Name of ScheduleAppointment. |
+| [ReadOnlyMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_ReadOnlyMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the read-only appointment of ScheduleAppointment. |
+| [RecurrenceProperitesMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_RecurrenceProperitesMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the Recurrence Properties of ScheduleAppointment. |
+| [RecurrenceTypeMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_RecurrenceTypeMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the RecurrenceType of ScheduleAppointment. |
+| [ReminderTimeMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_ReminderTimeMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the ReminderTime of ScheduleAppointment. |
+| [ResourceCollectionMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_ResourceCollectionMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the ResourceCollection of ScheduleAppointment. |
+| [ResourceNameMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_ResourceNameMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the ResourceName of ScheduleAppointment. |
+| [StatusMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_StatusMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the status of ScheduleAppointment. |
+| [TypeNameMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentMapping.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentMapping_TypeNameMappingProperty) | This property is used to map the property name of the custom class which is equivalent to the TypeName of ScheduleAppointment. |
 
 
-N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
+N> The CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 
 ### Creating custom Appointments
-You can create a custom class `Meeting` with mandatory fields `From`, `To` and `EventName`.
+You can create a custom class `Meeting` with mandatory fields `From`, `To`, and `EventName`.
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
         /// <summary>   
         /// Represents custom data properties.   
@@ -81,9 +85,11 @@ You can create a custom class `Meeting` with mandatory fields `From`, `To` and `
 
 N> You can inherit this class from `INotifyPropertyChanged` for dynamic changes in custom data.
 
-You can map those properties of `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
+You can map those properties of the `Meeting` class with our SfSchedule control by using `ScheduleAppointmentMapping`.
 {% tabs %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
         // Schedule data mapping for custom appointments
             ScheduleAppointmentMapping dataMapping = new ScheduleAppointmentMapping();
@@ -96,6 +102,10 @@ You can map those properties of `Meeting` class with our SfSchedule control by u
 {% endhighlight %}
 {% highlight xaml %} 
  
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
     <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week" ItemsSource="{Binding Meetings}">
             <syncfusion:SfSchedule.AppointmentMapping>
                 <syncfusion:ScheduleAppointmentMapping
@@ -107,39 +117,44 @@ You can map those properties of `Meeting` class with our SfSchedule control by u
             </syncfusion:SfSchedule.AppointmentMapping>
         </syncfusion:SfSchedule>
  
+</Page>
 {% endhighlight %} 
 {% endtabs %} 
 
-You can schedule meetings for a day by setting `From` and `To` of `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `ItemsSource` property which is of `IEnumerable` type.
+You can schedule meetings for a day by setting `From` and `To` of the `Meeting` class. Create meetings of type `ObservableCollection <Meeting>` and assign those appointments collection `Meetings` to the `ItemsSource` property, which is of `IEnumerable` type.
 
 {% highlight c# %}
 
-            // Creating instance for custom appointment class
+using Syncfusion.UI.Xaml.Schedule;
+
+            //Creating an instance for the custom appointment class
             Meeting meeting = new Meeting();
-            // Setting start time of an event
+            //Setting start time of an event
             meeting.From = DateTime.Now.Date.AddHours(10) ;
-            // Setting end time of an event
+            //Setting end time of an event
             meeting.To = meeting.From.AddHours(1);
-            // Setting start time for an event
+            //Setting the subject for an event
             meeting.EventName = "Anniversary";
-            // Setting color for an event
+            //Setting the color for an event
             meeting.Color = new SolidColorBrush(Colors.Green);
-            // Creating instance for collection of custom appointments
+            //Creating an instance for the collection of custom appointments
            var  Meetings = new ObservableCollection<Meeting>();
-            // Adding a custom appointment in CustomAppointmentCollection
+            //Adding a custom appointment in the CustomAppointmentCollection
             Meetings.Add(meeting);
 
            
-            // Adding custom appointments in SfSchedule DataSource
+            //Adding custom appointments to the SfSchedule DataSource
             schedule.ItemsSource = Meetings;
 
 {% endhighlight %} 
 
 ![UWP SfSchedule displays applying color in scheduled time](Appointments_images/custom.png)
 
-You can get the custom appointment in `ScheduleTappedEventArgs` of `ScheduleTapped` event in recurrence appointment.
+You can get the custom appointment in `ScheduleTappedEventArgs` of the `ScheduleTapped` event for a recurrence appointment.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
 schedule.ScheduleTapped += Schedule_ScheduleTapped;
 private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
@@ -150,23 +165,25 @@ private void Schedule_ScheduleTapped(object sender, ScheduleTappedEventArgs e)
 {% endhighlight %} 
 
 ## Spanned Appointments
-Spanned Appointment is an appointment which lasts more than 24 hours.
+A Spanned Appointment is an appointment which lasts more than 24 hours.
 
 {% highlight c# %}
 
-            // Creating instance for custom appointment class
+using Syncfusion.UI.Xaml.Schedule;
+
+            //Creating an instance for the custom appointment class
             Meeting meeting = new Meeting();
-            // Setting start time of an event
+            //Setting start time of an event
             meeting.From = DateTime.Now.Date.AddHours(10) ;
-            // Setting end time of an event
+            //Setting end time of an event
             meeting.To = meeting.From.AddDays(2).AddHours(1);
-            // Setting start time for an event
+            //Setting the subject for an event
             meeting.EventName = "Anniversary";
-            // Setting color for an event
+            //Setting the color for an event
             meeting.Color = new SolidColorBrush(Colors.Green);
-            // Creating instance for collection of custom appointments
+            //Creating an instance for the collection of custom appointments
            var  Meetings = new ObservableCollection<Meeting>();
-            // Adding a custom appointment in CustomAppointmentCollection
+            //Adding a custom appointment in the CustomAppointmentCollection
             Meetings.Add(meeting);
 
 {% endhighlight %} 
@@ -174,13 +191,13 @@ Spanned Appointment is an appointment which lasts more than 24 hours.
 ![UWP SfSchedule displays applied colors in all scheduled date](Appointments_images/span.png)
 
 ## All Day Appointments
-All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
+An All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using the `IsAllDay` property in the `ScheduleAppointment`.
 
 {% highlight c# %}
-
-        // Creating an instance for schedule appointment collection
+using Syncfusion.UI.Xaml.Schedule;
+        // Creating an instance for the schedule appointment collection
             ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-            //Adding schedule appointment in schedule appointment collection 
+            //Adding a schedule appointment to the schedule appointment collection 
             scheduleAppointmentCollection.Add(new ScheduleAppointment()
             {
                 StartTime = new DateTime(2017, 05, 08, 10, 0, 0),
@@ -189,24 +206,28 @@ All-Day appointment is an appointment which is scheduled for a whole day. It can
                 Location = "Hutchison road",
                 AllDay = true
             });
-            //Adding schedule appointment collection to DataSource of SfSchedule
+            //Adding the schedule appointment collection to the DataSource of SfSchedule
             schedule.Appointments = scheduleAppointmentCollection;
 
 {% endhighlight %} 
 
 ### All-Day Appointment Panel
-All-day appointment doesn't block out entire time slot in SfSchedule, rather it will render in separate layout exclusively for all-day appointment. It can be enabled by setting `ShowAllDay` property of `SfSchedule`.
+An all-day appointment doesn't block out the entire time slot in SfSchedule; instead, it will render in a separate layout exclusively for all-day appointments. It can be enabled by setting the `ShowAllDay` property of `SfSchedule`.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
             schedule.ShowAllDay = true; 
 
 {% endhighlight %} 
 
-All-Day panel background can be customized by setting `AllDayAppointmentPanelBrush` 
+The All-Day panel background can be customized by setting `AllDayAppointmentPanelBrush` 
 of the respective view settings.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
          schedule.AllDayAppointmentPanelBrush = new SolidColorBrush(Colors.Green); 
 
@@ -215,10 +236,10 @@ of the respective view settings.
 ![UWP SfSchedule displays all day appointment](Appointments_images/allday.png)
 
 ## Recurrence Appointment
-Recurring an appointment on a daily, weekly, monthly, or yearly interval. Recursive appointments can be created by enabling `IsRecursive` property in Schedule appointments. 
+Recurring an appointment on a daily, weekly, monthly, or yearly interval. Recursive appointments can be created by enabling the `IsRecursive` property in Schedule appointments. 
 
 ### Recurrence Pattern
-Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html).
+The recurrence pattern used in the control is in iCal standard. The Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.RecurrenceProperties.html).
 
 | RecurrenceType | RecurrenceProperties | Description |
 |----------------|-------------------------|---------------------------------------------------------------|
@@ -229,7 +250,7 @@ Recurrence pattern used in the control are in iCal standard. Schedule control su
 |  | IsWeeklyTuesday | Checks whether the event occurs every Tuesday of week |
 |  | IsWeeklyWednesday | Checks whether the event occurs every Wednesday of week |
 |  | IsWeeklyThursday | Checks whether the event occurs every Thursday of week |
-|  | IIsWeeklyFriday | Checks whether the event occurs every Friday of week |
+|  | IsWeeklyFriday | Checks whether the event occurs every Friday of week |
 |  | IsWeeklySaturday | Checks whether the event occurs every Saturday of week |
 |  | NthWeek | Gets or sets the event only nth week of the year. |
 |  | WeekDay | Gets or sets the event every week day. |
@@ -258,14 +279,16 @@ Recurrence pattern used in the control are in iCal standard. Schedule control su
 |  | IsSpecific | Checks whether the event occurs in Specific recurrence type. |
 
 ### Adding Recurrence Appointment using Recurrence Builder
-Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecurrenceRuleProperty) is used to populate the required recursive appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
+The schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_RecurrenceRuleProperty) is used to populate the required recursive appointment collection in a specific pattern. `RRULE` can be easily created through the `RecurrenceBuilder` engine by simple APIs available in the Schedule control.
 
 {% highlight c# %}
 
+using Syncfusion.UI.Xaml.Schedule;
+
    
-                // Creating an instance for schedule appointment collection
+                //Creating an instance for the schedule appointment collection
             ScheduleAppointmentCollection scheduleAppointmentCollection = new ScheduleAppointmentCollection();
-            //Adding schedule appointment in schedule appointment collection 
+            //Adding a schedule appointment to the schedule appointment collection 
             var scheduleAppointment = new ScheduleAppointment()
             {
                 StartTime = DateTime.Now.Date.AddHours(10),
@@ -274,10 +297,10 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/uwp/Syncfus
                 IsRecursive = true
             };
 
-            //Adding schedule appointment in schedule appointment collection
+            //Adding a schedule appointment to the schedule appointment collection
             scheduleAppointmentCollection.Add(scheduleAppointment);
 
-            // Creating recurrence rule
+            //Creating a recurrence rule
             RecurrenceProperties recurrenceProperties = new RecurrenceProperties();
             recurrenceProperties.RecurrenceType = RecurrenceType.Daily;
             recurrenceProperties.IsRangeRecurrenceCount = true;
@@ -293,22 +316,24 @@ Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/uwp/Syncfus
             recurrenceProperties.RangeRecurrenceCount = 10;
             recurrenceProperties.RecurrenceRule = ScheduleHelper.RRuleGenerator(recurrenceProperties, scheduleAppointment.StartTime, scheduleAppointment.EndTime);
 
-            // Setting recurrence rule to schedule appointment
+            //Setting the recurrence rule to the schedule appointment
             scheduleAppointment.RecurrenceRule = recurrenceProperties.RecurrenceRule;
 
-            //Adding schedule appointment collection to SfSchedule DataSource
-            schedule.Appointments = scheduleAppointmentCollection
+            //Adding the schedule appointment collection to the SfSchedule DataSource
+            schedule.Appointments = scheduleAppointmentCollection;
 
 {% endhighlight %} 
 
 ![UWP SfSchedule displays appointment in each two days](Appointments_images/recurrence.png)
 
 ## Setting reminders
-Schedule reminds you the appointment in the specified time by setting the EnableReminderTimer property is true. The remainder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTimeProperty) property of `ScheduleAppointment`.
+Schedule reminds you of the appointment at the specified time by setting the EnableReminderTimer property to true. The reminder time can be set using the [ReminderTime](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointment.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointment_ReminderTimeProperty) property of `ScheduleAppointment`.
 
-N> Open package.appxmanifest file to the Application UI tab and select “Yes” from the “Toast capable” dropdown list to enable toast notifications in your application manifest.
+N> Open the package.appxmanifest file, go to the Application UI tab, and select "Yes" from the "Toast capable" dropdown list to enable toast notifications in your application manifest.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
                 schedule.EnableReminderTimer = true;
             schedule.Appointments.Add(new ScheduleAppointment
@@ -321,8 +346,8 @@ N> Open package.appxmanifest file to the Application UI tab and select “Yes”
             });
             schedule.Appointments.Add(new ScheduleAppointment
             {
-                StartTime = currentDate.Date.AddDays(1).AddHours(10),
-                EndTime = currentDate.Date.AddDays(1).AddHours(16),
+                StartTime = DateTime.Now.Date.AddDays(1).AddHours(10),
+                EndTime = DateTime.Now.Date.AddDays(1).AddHours(16),
                 AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xD8, 0x00, 0x73)),
                 Subject = "Auditing",
                 ReminderTime = ReminderTimeType.TwoDays
@@ -341,29 +366,31 @@ N> Open package.appxmanifest file to the Application UI tab and select “Yes”
 ![UWP SfSchedule displays applied colors in remind the appointment schedule](Appointments_images/reminder.png)
 
 ## Editing appointment
-The existing appointment can be edited by using the following ways.
+The existing appointment can be edited in the following ways.
 
 •	Using Editor
 •	Using Context menu
 
 ### Using Editor
-To edit the existing appointment, we need to double click on corresponding appointment and modify the existing data of selected appointment by using the editor displayed.
+To edit the existing appointment, you need to double-click on the corresponding appointment and modify the existing data of the selected appointment by using the editor displayed.
 
 ### Using Context menu
-The user can also use the Context menu to edit the selected appointment by selecting the Edit option in menu item, which opens the default editor of the schedule control.
+The user can also use the Context menu to edit the selected appointment by selecting the Edit option in the menu item, which opens the default editor of the schedule control.
 
 
 ## Appearance Customization
-The default appearance of the appointment can be customized by using the [ScheduleAppointmentStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html) property and [ScheduleAppointmentLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
+The default appearance of the appointment can be customized by using the [ScheduleAppointmentStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html) property and [ScheduleAppointmentLoaded](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html). The event and property are used to customize or override the default template of the Appointments.
 
 •	[Customize appearance using Style](https://help.syncfusion.com/uwp/scheduler/appointments#customize-appearance-using-style) 
 •	[Customize appearance using Event](https://help.syncfusion.com/uwp/scheduler/appointments#customize-appearance-using-event)
 •	[Customize appearance using Custom View](https://help.syncfusion.com/uwp/scheduler/appointments#customize-appearance-using-custom-view)
 
 ### Customize appearance using Style
-Schedule appointment can be customized by setting appointment style properties such as [AppointmentTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_AppointmentTextColorProperty), [AppointmentFontStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_AppointmentFontStyleProperty), [BorderColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderColorProperty), [BorderCornerRadius](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderCornerRadiusProperty), [BorderThickness](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderThicknessProperty) to the `ScheduleAppointmentStyle` property of `SfSchedule`.
+The schedule appointment can be customized by setting appointment style properties such as [AppointmentTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_AppointmentTextColorProperty), [AppointmentFontStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_AppointmentFontStyleProperty), [BorderColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderColorProperty), [BorderCornerRadius](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderCornerRadiusProperty), [BorderThickness](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_BorderThicknessProperty) to the `ScheduleAppointmentStyle` property of `SfSchedule`.
 
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
 
                 //Creating Appointment style 
             ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
@@ -381,16 +408,18 @@ Schedule appointment can be customized by setting appointment style properties s
 ![UWP SfSchedule displays editing the appointment details](Appointments_images/style.png)
 
 ### Customize appearance using Event
-Schedule appointment can be customized during runtime using [ScheduleAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html). `ScheduleAppointment` style can be customized using the `ScheduleAppointmentStyle` property.
+The schedule appointment can be customized during runtime using [ScheduleAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html). The `ScheduleAppointment` style can be customized using the `ScheduleAppointmentStyle` property.
 
-[ScheduleAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html) has below properties,
+[ScheduleAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html) has the following properties:
 
-•	[ScheduleAppointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_ScheduleAppointment) – Contains the appointments values.
-•	[ScheduleAppointmentStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_ScheduleAppointmentStyle) – Gets and sets the appointments style.
-•	[View](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_View) -  Sets the Custom UI for Appointments.
-•	[Bounds](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_Bounds) – Contains the UI bounds of appointment.
+•	[ScheduleAppointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_ScheduleAppointment) – Contains the appointment values.
+•	[ScheduleAppointmentStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_ScheduleAppointmentStyle) – Gets and sets the appointment style.
+•	[View](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_View) -  Sets the custom UI for Appointments.
+•	[Bounds](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentLoadedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentLoadedEventArgs_Bounds) – Contains the UI bounds of the appointment.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
  
            schedule.ScheduleAppointmentLoaded += Schedule_ScheduleAppointmentLoaded;
 
@@ -408,9 +437,11 @@ Schedule appointment can be customized during runtime using [ScheduleAppointment
 {% endhighlight %}
 
 ## Customize appearance using Custom View
-Default appointment UI can be changed using `View` property passed through `AppointmentLoadedEventArgs`.
+The default appointment UI can be changed using the `View` property passed through `AppointmentLoadedEventArgs`.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
  
      schedule.ScheduleAppointmentLoaded += Schedule_ScheduleAppointmentLoaded;
 
@@ -427,18 +458,20 @@ Default appointment UI can be changed using `View` property passed through `A
 {% endhighlight %}
 
 ## Selection
-Schedule control has built-in events to handle tapped and double tapped touch actions.
+The Schedule control has built-in events to handle tapped and double-tapped touch actions.
 
 •	[ScheduleTapped](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html)
 •	[ScheduleDoubleTapped](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html)
 
-These events will be triggered while perform respective touch actions in timeslots, month cells and in appointments. These events contain the same argument [ScheduleTappedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html) which holds selected appointment and date time details in it.
+These events will be triggered when performing the respective touch actions in timeslots, month cells, and in appointments. These events contain the same argument [ScheduleTappedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html) which holds the selected appointment and date time details in it.
 
-• [Appointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleTappedEventArgs_Appointment) -  Contains the selected appointment value, it will be null, if any time slots selected.
-• [SelectedDate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleTappedEventArgs_SelectedDate) - Contains selected time slot DateTime value.
-• [SelectedResource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleTappedEventArgs_SelectedResource) - Contains selected time slot DateTime value.
+• [Appointment](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleTappedEventArgs_Appointment) -  Contains the selected appointment value; it will be null if any time slots are selected.
+• [SelectedDate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleTappedEventArgs_SelectedDate) - Contains the selected time slot DateTime value.
+• [SelectedResource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleTappedEventArgs.html#Syncfusion_UI_Xaml_Schedule_ScheduleTappedEventArgs_SelectedResource) - Contains the selected time slot DateTime value.
 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
  
      schedule.ScheduleTapped += Schedule_ScheduleTapped;
      schedule.ScheduleDoubleTapped += Schedule_ScheduleDoubleTapped;
@@ -457,10 +490,12 @@ These events will be triggered while perform respective touch actions in timeslo
 ### Selection customization
 The default selection of an appointment can be customized by using [SelectionColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_SelectionColorProperty), [SelectionTextColor](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.ScheduleAppointmentStyle.html#Syncfusion_UI_Xaml_Schedule_ScheduleAppointmentStyle_SelectionTextColorProperty) properties in `ScheduleAppointmentStyle` property of `SfSchedule`. The property is used to customize or override the default selection of the appointments.
 
-N> `BorderWidth` value must be set to highlight `SelectionColor`.
+N> `BorderThickness` value must be set to highlight `SelectionColor`.
 
 {% tabs %} 
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
  
             //Creating Appointment style 
         ScheduleAppointmentStyle appointmentStyle = new ScheduleAppointmentStyle();
@@ -474,6 +509,10 @@ N> `BorderWidth` value must be set to highlight `SelectionColor`.
   
 {% highlight xaml %} 
  
+<Page
+    ...
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Schedule">
+
      <syncfusion:SfSchedule x:Name="schedule" ScheduleType="Week" >
             <syncfusion:SfSchedule.ScheduleAppointmentStyle>
                 <syncfusion:ScheduleAppointmentStyle BorderThickness="10" 
@@ -484,17 +523,20 @@ N> `BorderWidth` value must be set to highlight `SelectionColor`.
             </syncfusion:SfSchedule.ScheduleAppointmentStyle>
         </syncfusion:SfSchedule>
  
+</Page>
 {% endhighlight %} 
 {% endtabs %} 
 
-![UWP SfSchedule displays applied styles for selec the appointment schedule](Appointments_images/selection.png)
+![UWP SfSchedule displays applied styles for selecting the appointment schedule](Appointments_images/selection.png)
 
 ## Configuring resources
 The Schedule control allows you to define resources that can be assigned to appointments. [Resources](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.Resource.html) let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them.
 
 {% highlight c# %} 
- 
+
+using Syncfusion.UI.Xaml.Schedule;
         //creating appointments for resource
+    DateTime currentDate = DateTime.Now;
     ScheduleAppointment ScheduleAppointment = new ScheduleAppointment() 
     {                
         StartTime = currentDate, 
@@ -509,7 +551,7 @@ The Schedule control allows you to define resources that can be assigned to appo
     ScheduleAppointment ScheduleAppointment1 = new ScheduleAppointment() 
     { 
         StartTime = currentDate.AddHours(4), 
-        EndTime = currentDate.AddHours(2), 
+        EndTime = currentDate.AddHours(6), 
         Subject = "Meeting", 
         Location = "Chennai", 
         AppointmentBackground = new SolidColorBrush(Colors.Green) 
@@ -522,7 +564,7 @@ The Schedule control allows you to define resources that can be assigned to appo
  
 {% endhighlight %}
 
-To configure the views based on resources, refer 
+To configure the views based on resources, refer to:
 
 •	[Configuring resources in Day View.](https://help.syncfusion.com/uwp/scheduler/dayview#configuring-resources) 
 •	[Configuring resources in Week View.](https://help.syncfusion.com/uwp/scheduler/weekview#configuring-resources)
@@ -535,10 +577,15 @@ To configure the views based on resources, refer
 
 ## Resources customization
 
-You can customize the resources in a `Timeline` view by using the [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval) , [IntervalHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight) and [ScheduleDateRange](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleDateRange) properties of schedule. You can also add the dates in the `ScheduleDateRange` collection that need to be displayed in a day view and timeline view of schedule.
+You can customize the resources in a `Timeline` view by using the [TimeInterval](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_TimeInterval), [IntervalHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_IntervalHeight), and [ScheduleDateRange](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#Syncfusion_UI_Xaml_Schedule_SfSchedule_ScheduleDateRange) properties of the schedule. You can also add the dates in the `ScheduleDateRange` collection that need to be displayed in the day view and timeline view of the schedule.
 
 {% tabs %} 
 {% highlight xaml %} 
+
+<Page
+    ...
+    xmlns:schedule="using:Syncfusion.UI.Xaml.Schedule">
+
 <schedule:SfSchedule
         x:Name="schedule"
         Resource="Doctors"
@@ -565,8 +612,13 @@ You can customize the resources in a `Timeline` view by using the [TimeInterval]
     <local:SchedulerBehavior/>
 </interactivity:Interaction.Behaviors>
 </schedule:SfSchedule>
+
+</Page>
 {% endhighlight %}
 {% highlight c# %} 
+
+using Syncfusion.UI.Xaml.Schedule;
+
 public class SchedulerViewModel
 {
     private ObservableCollection<DateTime> datecoll = new ObservableCollection<DateTime>();
@@ -642,6 +694,9 @@ public class SchedulerViewModel
 }
 {% endhighlight %}
 {% highlight c# %}
+
+using Syncfusion.UI.Xaml.Schedule;
+
 public class SchedulerBehavior : Behavior<SfSchedule>
 {
     SfSchedule schedule;

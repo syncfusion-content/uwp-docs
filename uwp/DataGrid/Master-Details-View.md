@@ -1508,10 +1508,10 @@ You can customize the header appearance of [DetailsViewDataGrid](https://help.sy
 {% tabs %}
 {% highlight xaml %}
 <Page.Resources>
-    <Style x:Key="headerStyle" TargetType="syncfusion:GridHeaderCellControl">;
+    <Style x:Key="headerStyle" TargetType="syncfusion:GridHeaderCellControl">
         <Setter Property="Background" Value="Red"/>
     </Style>
-</Page.Resources>;
+</Page.Resources>
 <syncfusion:SfDataGrid  x:Name="dataGrid"
                         AutoGenerateColumns="True"
                         AutoGenerateRelations="False"
@@ -1542,7 +1542,7 @@ this.dataGrid.AutoGeneratingRelations += dataGrid_AutoGeneratingRelations;
 
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
 {
-    e.GridViewDefinition.DataGrid.HeaderStyle = this.FindResource("headerStyle") as Style;
+    e.GridViewDefinition.DataGrid.HeaderStyle = this.Resources["headerStyle"] as Style;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -1703,7 +1703,7 @@ By default, the expander will be visible for all the data rows in parent DataGri
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.ShowDetailsViewIndentCell= False;
+dataGrid.ShowDetailsViewIndentCell = false;
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP Calendar control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Calendar (SfCalendar) control, its elements and more.
+description: Learn here about getting started with the Syncfusion UWP Calendar (SfCalendar) control, its elements, and more.
 platform: uwp
 control: SfCalendar
 documentation: ug
@@ -15,11 +15,11 @@ This section explains how to create the SfCalendar control.
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
-* Syncfusion. SfInput.UWP
+* Syncfusion.SfInput.UWP
 
 * Syncfusion.SfShared.UWP
 
-1.Include the namespace for Syncfusion.SfInput.UWP assembly in MainPage.xaml
+1. Include the namespace for the Syncfusion.SfInput.UWP assembly in MainPage.xaml.
 
 {% tabs %}
 
@@ -35,23 +35,32 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-2.Now add the SfCalendar control with a required optimal name using the included namespace
+2. Now add the SfCalendar control with a required optimal name using the included namespace.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar">
+</Page>
 
 {% endhighlight %}
 
 {% highlight C# %}
+
+using Syncfusion.UI.Xaml.Controls.Input;
 
 SfCalendar calendar = new SfCalendar();
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 Dim calendar As New SfCalendar()
 
@@ -61,13 +70,18 @@ Dim calendar As New SfCalendar()
 
 ## Enabling Navigation Buttons
 
-Set the property `ShowNavigationButton` to true for enabling the navigation buttons that allows switching between months.
+Set the property `ShowNavigationButton` to true for enabling the navigation buttons that allow switching between months.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar" ShowNavigationButton="True"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar" ShowNavigationButton="True"/>
+</Page>
 
 {% endhighlight %}
 
@@ -77,11 +91,15 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
  calendar.ShowNavigationButton = true;
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
  calendar.ShowNavigationButton = True
 
@@ -93,13 +111,18 @@ Set the property `ShowNavigationButton` to true for enabling the navigation butt
 
 ## Culture Support
 
-Month and day names of a region can be displayed in SfCalendar based on the Culture property.
+The month and day names of a region can be displayed in SfCalendar based on the Culture property.
 
 {% tabs %}
 
 {% highlight XAML %}
 
-<input:SfCalendar x:Name="calendar"/>
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <input:SfCalendar x:Name="calendar"/>
+</Page>
 
 {% endhighlight %}
 
@@ -109,11 +132,15 @@ Month and day names of a region can be displayed in SfCalendar based on the Cult
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
 calendar.Culture = new System.Globalization.CultureInfo("fr-FR");
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
 calendar.Culture = New System.Globalization.CultureInfo("fr-FR")
 
@@ -121,6 +148,6 @@ calendar.Culture = New System.Globalization.CultureInfo("fr-FR")
 
 {% endtabs %}
 
-![Cuture support in calendar](SfCalendar-images/SfCalendar-img4.jpeg)
+![Culture support in calendar](SfCalendar-images/SfCalendar-img4.jpeg)
 
 

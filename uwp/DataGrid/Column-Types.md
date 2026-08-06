@@ -710,7 +710,7 @@ private void DataGrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Gri
 {% endtabs %}
 
 
-![Applying cell style to the columns by using CellStyleSelector in UWP SfDataGrid]](Column-Types_images/Column-Types_img7.png)
+![Applying cell style to the columns by using CellStyleSelector in UWP SfDataGrid](Column-Types_images/Column-Types_img7.png)
 
 ### UI Interaction
 
@@ -1399,12 +1399,12 @@ By default, `GridComboBoxColumn` displays the value using `MappingName` property
     <syncfusion:SfDataGrid.Columns> 
         <syncfusion:GridComboBoxColumn  HeaderText="Customer ID"
                                         ItemsSource="{Binding ComboItems, Source={StaticResource viewModel}}"
-                                        MappingName=" Customer ID " />
+                                        MappingName="CustomerID" />
     </syncfusion:SfDataGrid.Columns> 
 </syncfusion:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridComboBoxColumn() { HeaderText = " Customer ID ", MappingName = " Customer ID ", ItemsSource = viewModel.ComboItems });
+this.dataGrid.Columns.Add(new GridComboBoxColumn() { HeaderText = "Customer ID", MappingName = "CustomerID", ItemsSource = viewModel.ComboItems });
 {% endhighlight %}
 {% endtabs %}
 
@@ -1999,7 +1999,7 @@ You can change the alignment of spin button using [SpinButtonsAlignment](https:/
 ### SmallChange and LargeChange
 
 You can specify the value to get increment or decrement when up and down arrow key is pressed by using `SmallChange` property.
-If you want to increment or decrement the value when <Kbd>PageUp</kbd> and <kbd>PageDown</kbd> key is pressed using `LargeChange` property.
+If you want to increment or decrement the value when <kbd>PageUp</kbd> and <kbd>PageDown</kbd> key is pressed using `LargeChange` property.
 
 ## GridToggleSwitchColumn
 

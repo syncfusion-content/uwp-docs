@@ -18,7 +18,11 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 {% highlight xaml %}
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
         <syncfusion:SfTimePicker  VerticalAlignment="Center" x:Name="timePicker"
 
@@ -28,7 +32,9 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
                                 AccentBrush="Green"/>
 
-</Grid>
+    </Grid>
+
+</Page>
 
 {% endhighlight %}
 
@@ -38,11 +44,15 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 {% highlight C# %}
 
+using Syncfusion.UI.Xaml.Controls.Input;
+
  timePicker.AccentBrush = new SolidColorBrush(Colors.Green);
 
 {% endhighlight %}
 
 {% highlight VB %}
+
+Imports Syncfusion.UI.Xaml.Controls.Input;
 
  timePicker.AccentBrush = New SolidColorBrush(Colors.Green)
 
@@ -58,33 +68,39 @@ The following images showcase the control with various Accent Brushes:
 
 ## Selected Foreground
 
-The SelectedForeground property is used to change the foreground color of  the Selected Time
+The SelectedForeground property is used to change the foreground color of the selected time.
 
 {% highlight xaml %}
 
 
 
-<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+<Page
+   ...
+   xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-       <syncfusion:SfTimePicker VerticalAlignment="Center"
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
 
-                         HorizontalAlignment="Center"
+           <syncfusion:SfTimePicker VerticalAlignment="Center"
 
-                         Width="200">
+                             HorizontalAlignment="Center"
 
-            <syncfusion:SfTimePicker.SelectorStyle>
+                             Width="200">
 
-                <Style TargetType="syncfusion:SfTimeSelector">
+                <syncfusion:SfTimePicker.SelectorStyle>
 
-                    <Setter Property="SelectedForeground" Value="Red"/>
+                    <Style TargetType="syncfusion:SfTimeSelector">
 
-                </Style>
+                        <Setter Property="SelectedForeground" Value="Red"/>
 
-            </syncfusion:SfTimePicker.SelectorStyle>
+                    </Style>
 
-      </syncfusion:SfTimePicker>
+                </syncfusion:SfTimePicker.SelectorStyle>
 
-</Grid>
+          </syncfusion:SfTimePicker>
+
+    </Grid>
+
+</Page>
 
 {% endhighlight  %}
 

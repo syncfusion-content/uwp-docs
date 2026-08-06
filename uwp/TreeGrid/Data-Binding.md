@@ -10,7 +10,7 @@ documentation: ug
 # Data Binding in UWP TreeGrid (SfTreeGrid)
 
 SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically with [RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems).
-If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0&redirectedfrom=MSDN) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in[ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-7.0&redirectedfrom=MSDN)`, SfTreeGrid automatically refresh the UI as `ObservableCollection’ implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0&redirectedfrom=MSDN), SfTreeGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0&redirectedfrom=MSDN) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-7.0&redirectedfrom=MSDN), SfTreeGrid automatically refreshes the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0&redirectedfrom=MSDN), SfTreeGrid will not refresh the UI automatically.
 
 Below are the ways to bind the data source to SfTreeGrid.
 
@@ -483,7 +483,7 @@ This event receives two arguments namely sender that handles SfTreeGrid and 
 The `GridItemsSourceChangedEventArgs` object contains the following properties:
 
 * `OldItemsSource` - Gets the value of old data source
-* `NewItemsSource` - Get the value of new data source
+* `NewItemsSource` - Gets the value of new data source
 
 ## View
  
@@ -502,7 +502,7 @@ The following events are associated with View.
 
 #### RecordPropertyChanged
 
-This event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0&redirectedfrom=MSDN) interface. The event receives with two arguments namely `sender` that handles the DataModel and `PropertyChangedEventArgs` as object.
+This event is raised when the DataModel property value is changed, if the DataModel implements the [INotifyPropertyChanged](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-7.0&redirectedfrom=MSDN) interface. The event receives with two arguments namely `sender` that handles the DataModel and `PropertyChangedEventArgs` as object.
 
 * `PropertyChangedEventArgs` has below property,
 * `PropertyName` – It denotes the PropertyName of the changed value.
@@ -520,7 +520,7 @@ This event is raised whenever there is some change in nodes collection. The even
 
 #### SourceCollectionChanged
 
-This event is raised when you make changes in `SourceCollection` for example add or remove the collection. The event receives two arguments namely sender that handles that handles View object and `NotifyCollectionChangedEventArgs` as object.
+This event is raised when you make changes in `SourceCollection` for example add or remove the collection. The event receives two arguments namely sender that handles View object and `NotifyCollectionChangedEventArgs` as object.
 `NotifyCollectionChangedEventArgs` has below properties,
 
 * `Action` - It contains the current action. (i.e) Add, Remove, Move, Replace, Reset.
@@ -560,4 +560,4 @@ treeGrid.View.EndInit();
 {% endhighlight %}
 {% endtabs %}
 
-N> View has properties (`EnableRecursiveChecking`, `LiveNodeUpdateMode` , `RecursiveCheckingMode`,..)that already defined in SfTreeGrid. It is recommended to set those properties via SfTreeGrid.
+N> View has properties (`EnableRecursiveChecking`, `LiveNodeUpdateMode`, `RecursiveCheckingMode`,...) that are already defined in SfTreeGrid. It is recommended to set those properties via SfTreeGrid.

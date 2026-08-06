@@ -61,19 +61,19 @@ Here, grid cell background is changed using converter, where converter return
 {% tabs %}
 {% highlight xaml %}
 xmlns:utils="using:Syncfusion.UI.Xaml.Utils"
-<Page.Resources>;
+<Page.Resources>
    <local:StyleConverter x:Key="converter"/>
 </Page.Resources>
 <syncfusion:TreeGridTextColumn MappingName="Id" TextAlignment="Left">
          <syncfusion:TreeGridTextColumn.CellStyle>
-                <Style TargetType="syncfusion:TreeGridCell>
-                     <Setter Property="utils:SetterValueBindingHelper.PropertyBinding>
+                <Style TargetType="syncfusion:TreeGridCell">
+                     <Setter Property="utils:SetterValueBindingHelper.PropertyBinding">
                           <Setter.Value>
-                                    <utils:SetterValueBindingHelper Property="Background" Binding="{Binding Id,Converter={StaticResource converter}}">
-                          <Setter.Value>
-                      </Setter>
-                </Style&gt;
-        <syncfusion:TreeGridTextColumn.CellStyle>
+                                    <utils:SetterValueBindingHelper Property="Background" Binding="{Binding Id,Converter={StaticResource converter}}"/>
+                          </Setter.Value>
+                     </Setter>
+                </Style>
+        </syncfusion:TreeGridTextColumn.CellStyle>
 <syncfusion:TreeGridTextColumn>
 {% endhighlight %}
 {% highlight c# %}
@@ -235,7 +235,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ### Style rows using converter
 
-The record rows ([TreeGridRowControl ](]https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter, where converter returns the value based on underlying record.
+The record rows ([TreeGridRowControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowControl.html)) can be customized conditionally by changing its property value based on ‘cell value’ or ‘data object’ by using converter, where converter returns the value based on underlying record.
 
 {% tabs %}
 {% highlight xaml %}

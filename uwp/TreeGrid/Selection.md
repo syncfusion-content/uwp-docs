@@ -237,7 +237,7 @@ this.treeGrid.ScrollInView(new RowColumnIndex(rowIndex, columnIndex));
 
 ### Scroll to selected item
 
-You can scroll programmatically to the `SelectedItem` sing the `ScrollInView` method by resolving the index of the item selected.
+You can scroll programmatically to the `SelectedItem` using the `ScrollInView` method by resolving the index of the item selected.
 
 {% tabs %}
 {% highlight c# %}

@@ -837,8 +837,6 @@ Like parent DataGrid, you can customize the `DetailsViewDataGrid` cells also by 
 {% highlight c# %}
 var options = new ExcelExportingOptions();
 options.ExcelVersion = ExcelVersion.Excel2013;
-var options = new ExcelExportingOptions();
-options.ExcelVersion = ExcelVersion.Excel2013;
 options.CellsExportingEventHandler = ChildExportingHandler;
 var excelEngine = dataGrid.ExportToExcel(dataGrid.View, options);
 var workBook = excelEngine.Excel.Workbooks[0];

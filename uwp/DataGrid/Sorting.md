@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in UWP DataGrid control | Syncfusion®
-description: Learn here all about Sorting support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+description: Learn here all about Sorting support in Syncfusion® UWP DataGrid (SfDataGrid) control and more features.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -90,7 +90,7 @@ SfDataGrid control allows you sort more than one column, where sorting is applie
 
 To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 
-In the below screen shot, the OrderID column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column.  
+In the below screen shot, the OrderID column sorted. Then the `CustomerName` column is sorted against the `OrderID` data by clicking column header by pressing <kbd>Ctrl</kbd> key. The sorting state of `OrderID` column is preserved and `CustomerName` column sorted against `OrderID` column. 
 
 ![Sorting_img2](Sorting_images/Sorting_img2.png)
 
@@ -327,7 +327,7 @@ private object GetOrderSource(OrderInfo source, string name)
 
 [Action](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_Action) – Gets the action triggered this event.
  
-[Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) – Setting value to `true`, cancels the triggered action.
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-10.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk%28System.ComponentModel.CancelEventArgs.Cancel%29%26rd%3Dtrue) – Setting value to `true`, cancels the triggered action.
  
 [AddedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_AddedItems) - Gets the list of new `SortColumnDescription’s` that are added.
 
@@ -335,7 +335,7 @@ private object GetOrderSource(OrderInfo source, string name)
  
 [CancelScroll](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_CancelScroll) - Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) property of `SortColumnsChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-10.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk%28System.ComponentModel.CancelEventArgs.Cancel%29%26rd%3Dtrue) property of `SortColumnsChanging` event.
 
 {% tabs %}
 {% highlight c# %}
