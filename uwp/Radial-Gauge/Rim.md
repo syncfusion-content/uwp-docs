@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rim in UWP Radial Gauge control | Syncfusion
-description: Learn here all about Rim support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
+description: Learn about Rim support in Syncfusion UWP Radial Gauge (SfCircularGauge) control, including customization, styling, and configuration options.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
