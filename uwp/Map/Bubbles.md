@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubbles in UWP Map control | Syncfusion
-description: Learn how to add and customize bubbles in the Syncfusion UWP Map control, including bubble symbols, size settings, and range color mapping.
+title: Bubbles in UWP Maps | Syncfusion®
+description: Bubbles in the UWP Maps visualize location-based data using proportional markers, enabling comparison of values across geographic regions.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Bubbles in UWP Map (SfMaps)
+# Bubble Markers in UWP Maps
 
 `Bubbles` in the Maps control represent the underlying data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
 

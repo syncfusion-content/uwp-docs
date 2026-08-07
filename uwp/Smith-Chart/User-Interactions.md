@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User Interactions in UWP Smith Chart control | Syncfusion
-description: Learn here all about User Interactions support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
+title: User Interactions in UWP Smith Chart | Syncfusion®
+description: User interactions in the UWP Smith Chart enable selection, tooltips, and data exploration for enhanced chart analysis and navigation.
 platform: uwp
 control: SfSmithChart
 documentation: ug
 ---
 
-# User Interactions in UWP Smith Chart (SfSmithChart)
+# User Interactions in UWP Smith Chart
 
 ## Tooltip
 

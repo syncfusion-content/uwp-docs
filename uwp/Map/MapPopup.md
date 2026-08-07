@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MapPopup in UWP Map control | Syncfusion
-description: Learn how to display and customize popups for map shapes in the Syncfusion UWP SfMaps control using visibility, value path, and data templates.
+title: Map Popup in UWP Maps | Syncfusion®
+description: Map popup in the UWP Maps displays additional information for map elements, enabling users to view detailed location-based data.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# MapPopup in UWP Map (SfMaps)
+# Map Popup in UWP Maps
 
 `MapPopup` is a hanging window displayed when the shape is tapped. It shows additional information from the object bound with the shape. By default, it takes the property of the bound object that is referred in the [`ShapeValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeSetting.html#Syncfusion_UI_Xaml_Maps_ShapeSetting_ShapeValuePath) and displays its content when the corresponding shape is tapped.
 

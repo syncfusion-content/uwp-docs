@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Layout in UWP TreeMap control | Syncfusion
-description: Learn about TreeMap Layout support in Syncfusion UWP TreeMap (SfTreeMap), including layout types, arrangement options, and visual customization.
+title: TreeMap Layout in UWP TreeMap | Syncfusion®
+description: TreeMap layout in the UWP TreeMap determines how hierarchical data items are arranged, enabling effective space utilization and visualization.
 platform: uwp
 control: SfTreeMap
 documentation: ug
 ---
 
-# TreeMap Layout in UWP TreeMap (SfTreeMap)
+# TreeMap Layout in UWP TreeMap
 
 The [`ItemsLayoutMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.TreeMapLayoutMode.html) for SfTreeMap specifies the layout mode of the treemap items. This layout is applied for all the tree map levels. There are four different treemap layouts such as,
 

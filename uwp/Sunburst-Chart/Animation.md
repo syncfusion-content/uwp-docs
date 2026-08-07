@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Animation in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Animation support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Animation in UWP Sunburst Chart | Syncfusion®
+description: Animation in the UWP Sunburst Chart provides smooth visual transitions for rendering hierarchical data and interactive updates.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Animation in UWP Sunburst Chart (SfSunburstChart)
+# Animation in UWP Sunburst Chart
 
 Sunburst chart allows you to animate the chart segments. You can enable animation using [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_EnableAnimation) property. Also you can set the duration for animation by using [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_AnimationDuration) property.
 

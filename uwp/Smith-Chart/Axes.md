@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axes in UWP Smith Chart control | Syncfusion
-description: Learn here all about Axes support in Syncfusion Universal Windows Smith Chart (SfSmithChart) control and more.
+title: Axes in UWP Smith Chart | Syncfusion®
+description: Axes in the UWP Smith Chart define coordinate grids, scales, and labels to represent impedance and admittance data effectively.
 platform: uwp
 control: SfSmithChart
 documentation: ug
 ---
 
-# Axes in UWP Smith Chart (SfSmithChart)
+# Axes in UWP Smith Chart
 
 Typically, the SmithChart has been used with two axes that are used to measure and categorize the data. 
 

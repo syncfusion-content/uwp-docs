@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Barcode control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Barcode (SfBarcode) control, its elements and more details.
+title: About Syncfusion® UWP Barcode Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® UWP Barcode control, its features, capabilities, and more details.
 platform: uwp
 control: SfBarcode
 documentation: ug
 ---
 
-# UWP Barcode (SfBarcode) Overview
+# About Syncfusion® UWP Barcode Control
 
 The Barcode control helps render barcodes in UWP desktop applications. The control can be integrated into any desktop application and makes it easy to encode text using the supported symbol types. The basic structure of a barcode consists of a leading and trailing quiet zone, a start pattern, one or more data characters, optionally one or two check characters, and a stop pattern.
 

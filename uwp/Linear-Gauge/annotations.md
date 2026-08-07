@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotations in UWP Linear Gauge control | Syncfusion
-description: Learn here all about Annotations support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
+title: Annotations in UWP Linear Gauge | Syncfusion®
+description: Annotations in the UWP Linear Gauge enable custom content to be displayed at specific positions, enhancing data presentation and visualization.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Annotations in UWP Linear Gauge (SfLinearGauge)
+# Annotations in UWP Linear Gauge
 
 The [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html#Syncfusion_UI_Xaml_Gauges_SfLinearGauge_Annotations), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 

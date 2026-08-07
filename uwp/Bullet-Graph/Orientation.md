@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Orientation support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+title: Orientation in UWP Bullet Graph | Syncfusion®
+description: Orientation in the UWP Bullet Graph allows you to display the graph in horizontal or vertical layouts based on application requirements.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Orientation in UWP Bullet Graph (SfBulletGraph)
+# Orientation in UWP Bullet Graph
 
 By default, the orientation of SfBulletGraph is horizontal. It can be customized by using the [`Orientation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Orientation) property respectively.
 

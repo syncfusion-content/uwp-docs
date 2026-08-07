@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in UWP TreeMap control | Syncfusion
-description: Learn about Tooltip support in Syncfusion UWP TreeMap (SfTreeMap), including displaying contextual information and customizing tooltip content.
+title: Tooltip Support in UWP TreeMap | Syncfusion®
+description: Tooltip support in the UWP TreeMap displays detailed information about hierarchical data items on hover, improving data analysis and interpretation.
 platform: uwp
 control: SfTreeMap
 documentation: ug
 ---
 
-# Tooltip in UWP TreeMap (SfTreeMap)
+# Tooltip Support in UWP TreeMap
 
 You can enable ToolTip for TreeMap by setting ShowToolTip to **true**. For modifying the default appearance of the ToolTip, the ToolTipTemplate can be specified.
 

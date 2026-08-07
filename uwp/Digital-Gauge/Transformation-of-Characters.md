@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transformation of Characters in UWP Digital Gauge control | Syncfusion
-description: Learn here all about Transformation of Characters support in Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
+title: Transformation of Characters in UWP Digital Gauge | Syncfusion®
+description: Transformation of characters in the UWP Digital Gauge enables character rotation, scaling, and visual customization for digital displays.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Transformation of Characters in UWP Digital Gauge (SfDigitalGauge)
+# Transformation of Characters in UWP Digital Gauge
 
 The digital characters in the digital gauge can be transformed by setting certain properties in the [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html). Two kinds of transformations are supported: Scaling and Skewing.
 

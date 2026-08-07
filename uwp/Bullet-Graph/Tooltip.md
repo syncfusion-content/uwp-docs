@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+title: Tooltip in UWP Bullet Graph | Syncfusion®
+description: Tooltip in the UWP Bullet Graph displays detailed information about values and targets on hover, enabling better data analysis.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Tooltip in UWP Bullet Graph (SfBulletGraph)
+# Tooltip in UWP Bullet Graph
 
 Tooltip in SfBulletGraph is used to view the values of FeaturedMeasure, ComparativeMeasure, and QualitativeRange in a required design.
 

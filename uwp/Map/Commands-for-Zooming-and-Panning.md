@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands for Zooming and Panning in UWP Map control | Syncfusion
-description: Learn here all about Commands for Zooming and Panning support in Syncfusion UWP Map (SfMaps) control and more.
+title: Commands in UWP Maps | Syncfusion®
+description: Commands in the UWP Maps enable interaction handling and action execution through command bindings, supporting flexible application workflows.
 platform: uwp
 control: Maps
 documentation: ug
 ---
 
-# Commands for Zooming and Panning in UWP Map (SfMaps)
+# Commands in UWP Maps
 
 The [`SfMap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html) control contains the following commands:
 

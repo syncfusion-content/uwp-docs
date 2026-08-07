@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Supported Barcode types in UWP Barcode control | Syncfusion
-description: Learn here all about supported Barcode types in Syncfusion UWP Barcode (SfBarcode) control and more.
+title: Supported Barcode Types in UWP Barcode | Syncfusion®
+description: Supported barcode types in the UWP Barcode include various 1D and 2D symbologies for encoding and displaying data in barcode formats.
 platform: uwp
 control: SfBarcode
 documentation: ug
 ---
 
-# Supported Barcode types in UWP Barcode (SfBarcode)
+# Supported Barcode Types in UWP Barcode
 
 The following table contains the supported types and associated valid characters.
 
