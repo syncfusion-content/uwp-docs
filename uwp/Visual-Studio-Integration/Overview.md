@@ -9,9 +9,9 @@ documentation: ug
 
 # UWP Syncfusion® Extensions Overview
  
-The Syncfusion® UWP Visual Studio Extensions can be accessed through the Syncfusion® Menu to create and configure the project with Syncfusion® references in Visual Studio. The Syncfusion® UWP Extensions supports Microsoft Visual Studio 2017.
+The Syncfusion® UWP Visual Studio Extensions can be accessed through the Syncfusion® menu to create and configure the project with Syncfusion® references in Visual Studio. The Syncfusion® UWP Extensions supports Microsoft Visual Studio 2017, Visual Studio 2019, and Visual Studio 2022.
 
-N> The Syncfusion® Extension is published in the Visual Studio Marketplace. We provided separate Syncfusion® UWP Extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Please refer to the Visual Marketplace link below.
+N> The Syncfusion® Extension is published in the Visual Studio Marketplace. Syncfusion provides separate UWP Extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Refer to the Visual Studio Marketplace links below.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.UWPVSExtensions)
 

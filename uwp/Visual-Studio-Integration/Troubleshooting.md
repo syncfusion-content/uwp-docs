@@ -59,11 +59,11 @@ The Syncfusion Troubleshooter deals with the following assembly reference issues
 
 1. Dependent assemblies are missing for referred assemblies from project. 
 
-   **For Instance:**  : If “Syncfusion.SfSpreadsheet.UWP” assembly referred in project and “Syncfusion.SfColorPickers.UWP” (dependent of Syncfusion.SfSpreadsheet.UWP) not referred in project, the Syncfusion Troubleshooter will show dependent assembly missing.
+   **For Instance:**  If "Syncfusion.SfSpreadsheet.UWP" assembly referred in project and "Syncfusion.SfColorPickers.UWP" (dependent of Syncfusion.SfSpreadsheet.UWP) not referred in project, the Syncfusion Troubleshooter will show dependent assembly missing.
 
    ![Dependent assemblies missing issue shown in Troubleshooter wizard](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img3.png)
 
-2. Syncfusion® assembly version mismatched. Compare to all Syncfusion® assembly’s versions in the same project. If found any Syncfusion® assembly version inconsistency, the Syncfusion Troubleshooter will show Syncfusion® assemblies version mismatched. 
+2. Syncfusion® assembly version mismatched. Compare all Syncfusion® assembly's versions in the same project. If any Syncfusion® assembly version inconsistency is found, the Syncfusion Troubleshooter will show Syncfusion® assemblies version mismatched. 
 
    **For Instance:**  If “Syncfusion.Calculate.UWP” assembly (v17.1450.0.32) referred in project, but other Syncfusion® assemblies referred assembly version is v17.1450.0.38. The Syncfusion Troubleshooter will show Syncfusion® assembly version mismatched.
 
@@ -89,7 +89,7 @@ The Syncfusion Troubleshooter deals with the following NuGet package related iss
 
    ![Syncfusion Troubleshooter backup dialog](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img7.jpeg)
 
-3. Wait for a while; the Syncfusion Troubleshooter is resolving the selected issues. After the troubleshooting process is completed, there will be a status message in the Visual Studio status bar as “Troubleshooting process completed successfully.”
+3. Wait for a while. The Syncfusion Troubleshooter resolves the selected issues. After the troubleshooting process is completed, there will be a status message in the Visual Studio status bar as "Troubleshooting process completed successfully."
 
    ![Syncfusion Troubleshooter process success status message in visual studio status bar](SyncfusionTroubleshooter_images/SyncfusionTroubleshooter-img8.jpeg)
 

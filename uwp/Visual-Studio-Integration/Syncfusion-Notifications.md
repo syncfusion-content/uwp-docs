@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Notifications | Extension | Syncfusion
+title: Notifications | UWP | Syncfusion
 description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
-platform: extension
+platform: uwp
 control: Syncfusion Extensions
 documentation: ug
 ---
@@ -15,7 +15,7 @@ N> The Syncfusion® Notification feature is available from Essential Studio® v2
 
 ## Notification Configuration
 
-The Syncfusion® Options page allows you to configure notification settings. Customise trial and newer version notifications with a simple true or false toggle.
+The Syncfusion® Options page allows you to configure notification settings. Customize trial and newer version notifications with a simple true or false toggle.
 
 It can be accessed by clicking **Tools -> Options -> Syncfusion -> UWP**
 
