@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with UWP Kanban Board control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Kanban Board (SfKanban) control, its elements and more.
+title: Getting Started with UWP SfKanban | Syncfusion
+description: Learn how to get started with the Syncfusion UWP SfKanban control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
-# Getting Started with UWP Kanban Board (SfKanban)
+# Getting Started with UWP SfKanban
 
 The following section provides an assistance to create a simple Kanban application and to configure it. 
 
