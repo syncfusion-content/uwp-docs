@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Validation Modes in UWP Gantt control | Syncfusion
-description: Learn about Validation Modes support in Syncfusion UWP Gantt (SfGantt) control, covering setup, customization, and usage.
+title: Validation Modes in UWP SfGantt | Syncfusion
+description: Learn about Validation Modes support in Syncfusion UWP SfGantt using Manual and Auto validation modes to manage task dates, dependencies, and non-working days.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Validation Modes in UWP Gantt (SfGantt)
+# Validation Modes in UWP SfGantt
 
 The Gantt control provides support to control task scheduling. The start and finish dates of a task can be validated automatically or manually. The following validation modes can be set to the [`ValidationMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ValidationMode) property in SfGantt:
 

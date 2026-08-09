@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column in UWP Kanban Board control | Syncfusion
-description: Learn about Column support in Syncfusion UWP Kanban (SfKanban) control, covering setup, customization, and usage examples.
+title: Column in UWP SfKanban | Syncfusion
+description: Learn about Column support in Syncfusion UWP SfKanban with category mapping, header settings, drag-and-drop support, and WIP constraints.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 
-# Column in UWP Kanban Board (SfKanban)
+# Column in UWP SfKanban
 
 ## Customizing column size
 
