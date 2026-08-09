@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cards in UWP Kanban Board control | Syncfusion
-description: Learn all about Cards support in Syncfusion UWP Kanban (SfKanban) control, covering setup, customization, data binding, and usage for quick onboarding.
+title: Cards in UWP SfKanban | Syncfusion
+description: Learn about Cards support in Syncfusion UWP SfKanban, card templates, custom data models, card appearance settings, and template selectors.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 
-# Cards in UWP Kanban Board (SfKanban)
+# Cards in UWP SfKanban
 
 The default elements of a card can be customized using the below properties of [`KanbanModel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanModel.html).
 
