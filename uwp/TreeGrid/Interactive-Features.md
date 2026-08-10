@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive feature | TreeGrid | UWP | Syncfusion®
-description: This section explains about the Interactive Features in SfTreeGrid.
+title: Interactive Features in UWP SfTreeGrid | Syncfusion®
+description: Add interactive features in the Syncfusion® UWP SfTreeGrid control. Supports context menus for nodes, rows, headers, and expanders with customization options.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Interactive Features
+# Interactive Features in UWP SfTreeGrid
 
 ## Context menu
 

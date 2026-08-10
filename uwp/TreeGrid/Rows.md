@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Rows support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more features.
+title: Rows in UWP SfTreeGrid | Syncfusion®
+description: Configure rows in Syncfusion® UWP SfTreeGrid with row indicators, index row headers, hidden headers, and custom header styles.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Rows in UWP TreeGrid (SfTreeGrid)
+# Rows in UWP SfTreeGrid
 
 This section explains about various row types in treegrid and its customizations.
 

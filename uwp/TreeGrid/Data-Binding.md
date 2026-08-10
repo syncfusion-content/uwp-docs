@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Data Binding support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
+title: Data Binding in UWP SfTreeGrid | Syncfusion®
+description: Bind data to the Syncfusion® UWP SfTreeGrid control. Supports hierarchical collections and enables displaying structured data seamlessly.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Data Binding in UWP TreeGrid (SfTreeGrid)
+# Data Binding in UWP SfTreeGrid
 
 SfTreeGrid is designed to display the self-relational and hierarchical data in tree structure with columns. The data binding can be achieved by assigning the data source to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property directly through self-relational binding or nested collection or retrieving the parent and child nodes items dynamically with [RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems).
 If the data source implements [INotifyCollectionChanged](https://learn.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-7.0&redirectedfrom=MSDN) interface, then SfTreeGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-7.0&redirectedfrom=MSDN), SfTreeGrid automatically refreshes the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0&redirectedfrom=MSDN), SfTreeGrid will not refresh the UI automatically.
