@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Render KML Shapes in SubShapeFileLayer for UWP Maps | Syncfusion®
+title: How to Render KML Shapes in SubShapeFileLayer for UWP Map | Syncfusion®
 description: Learn how to render KML shapes in a SubShapeFileLayer and configure KML files as embedded resources in UWP Maps.
 platform: uwp
 control: SfMaps

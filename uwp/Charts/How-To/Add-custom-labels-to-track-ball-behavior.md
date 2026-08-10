@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add custom labels to track ball behavior | Syncfusion
-description: Learn here about how to add proper custom labels to track ball behavior Syncfusion® UWP Charts(SfChart) control and more.
+title: How to add custom track ball labels in UWP Chart | Syncfusion®
+description: Add custom labels to track ball behavior in the UWP Chart to display customized information for data points during interaction.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Add custom labels to track ball behavior
+# How to add custom labels to track ball behavior in UWP Chart
 
 In the [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html), each data point will have a label aligned vertically and horizontally using the [`LabelVerticalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelVerticalAlignment) and [`LabelHorizontalAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html#Syncfusion_UI_Xaml_Charts_ChartTrackBallBehavior_LabelHorizontalAlignment) properties by default. However, you can also add custom labels to the [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html).
 

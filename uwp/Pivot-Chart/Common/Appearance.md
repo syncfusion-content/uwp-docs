@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Appearance in UWP Pivot Chart | Syncfusion®
+description: Appearance in the UWP Pivot Chart allows you to customize chart visuals using palettes, colors, themes, and styling options.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Appearance in UWP Pivot Chart (SfPivotChart)
+# Appearance in UWP Pivot Chart
 
 The SfPivotChart supports customizing the default appearance of the control. You can customize the default style of the control by modifying its properties as specified in the following code snippet.
 

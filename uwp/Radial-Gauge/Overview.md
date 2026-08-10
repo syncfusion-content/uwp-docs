@@ -6,7 +6,7 @@ platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# About Syncfusion UWP Radial Gauge Contro
+# About Syncfusion UWP Radial Gauge Control
 
 The Circular Gauge helps you to visualize the numeric values over a circular scale. The appearance of the gauge is fully customized to integrate your applications without fault.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Series in UWP Charts control | Syncfusion
-description: Learn here all about Series feature of Syncfusion® Universal Windows Platform (UWP) Charts (SfChart) control and more.
+title: Series in UWP Charts | Syncfusion®
+description: Series in the UWP Chart define how data is visualized, enabling different chart types, styles, and data representations.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Series in UWP Charts (SfChart)
+# Series in UWP Charts
 
 [`ChartSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeries.html) is the visual representation of the data. [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) offers many types of series ranging from [`LineSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.LineSeries.html) to [`FinancialSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.FinancialSeriesBase.html) like [`HiLo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.hiloSeries.html) and [`Candle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.candleSeries.html). Based on your requirements and specifications, any type of [`Series`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Series) can be added for data visualization. 
 

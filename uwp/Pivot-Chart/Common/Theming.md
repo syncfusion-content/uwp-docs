@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Theming support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Theming in UWP Pivot Chart | Syncfusion®
+description: Theming in the UWP Pivot Chart applies consistent visual styles to chart elements, enabling customized appearance and enhanced presentation.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Theming in UWP Pivot Chart (SfPivotChart)
+# Theming in UWP Pivot Chart
 
 Theming is the process of applying particular settings to visual elements of the control. Following built-in themes are supported in the SfPivotChart control.
 
