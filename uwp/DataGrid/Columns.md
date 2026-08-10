@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in UWP DataGrid control | Syncfusion®
-description: Learn here all about Columns support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more details. 
+title: Columns in UWP SfDataGrid | Syncfusion®
+description: Learn about columns in Syncfusion® UWP SfDataGrid. Customize column types, appearance, sizing, and data presentation to enhance the grid experience.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Columns in UWP DataGrid (SfDataGrid)
+# Columns in UWP SfDataGrid
 
 SfDataGrid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
 

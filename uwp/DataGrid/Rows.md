@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows in UWP DataGrid control | Syncfusion®
-description: Learn here all about Rows support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more details.
+title: Rows in UWP SfDataGrid | Syncfusion®
+description: Learn about rows in Syncfusion® UWP SfDataGrid. Customize row appearance, behavior, selection, and interactions to enhance data presentation.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Rows in UWP DataGrid (SfDataGrid)
+# Rows in UWP SfDataGrid
 
 This section explains about various row types in SfDataGrid.
 

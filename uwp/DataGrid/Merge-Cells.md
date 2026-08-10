@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Merge Cells in UWP DataGrid control | Syncfusion®
-description: Learn here all about Merge Cells support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Merge Cells in UWP SfDataGrid | Syncfusion®
+description: Learn about cell merging in Syncfusion® UWP SfDataGrid. Combine adjacent cells based on custom logic to improve data presentation and readability.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Merge Cells in UWP DataGrid (SfDataGrid)
+# Merge Cells in UWP SfDataGrid
 
 SfDataGrid allows you to merge the range of adjacent cells using [QueryCoveredRange](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event. Merged cells can be exported and printed.
 

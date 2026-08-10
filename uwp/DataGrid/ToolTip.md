@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip in UWP DataGrid control | Syncfusion®
-description: Learn here all about ToolTip support in Syncfusion® UWP DataGrid (SfDataGrid) control and more features.
+title: ToolTip in UWP SfDataGrid | Syncfusion®
+description: Learn about ToolTip support in Syncfusion® UWP SfDataGrid. Display helpful information for cells, rows, and headers to enhance user interaction.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# ToolTip in UWP DataGrid (SfDataGrid)
+# ToolTip in UWP SfDataGrid
 
 ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid.
 

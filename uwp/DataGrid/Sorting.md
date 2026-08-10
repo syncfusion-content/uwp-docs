@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in UWP DataGrid control | Syncfusion®
-description: Learn here all about Sorting support in Syncfusion® UWP DataGrid (SfDataGrid) control and more features.
+title: Sorting in UWP SfDataGrid | Syncfusion®
+description: Learn about sorting in Syncfusion® UWP SfDataGrid. Sort data in ascending or descending order, apply multi-column sorting, and customize sorting behavior.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Sorting in UWP DataGrid (SfDataGrid)
+# Sorting in UWP SfDataGrid
 
 SfDataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 

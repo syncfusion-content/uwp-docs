@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard Operations in UWP DataGrid control | Syncfusion®
-description: Learn here all about Clipboard Operations support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Clipboard Operations in UWP SfDataGrid | Syncfusion®
+description: Learn about clipboard operations in Syncfusion® UWP SfDataGrid. Copy, cut, and paste data efficiently with built-in clipboard support and customization options.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 --- 
 
 
-# Clipboard Operations in UWP DataGrid (SfDataGrid)
+# Clipboard Operations in UWP SfDataGrid
 
 SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> and also can paste the content from [Clipboard](https://learn.microsoft.com/en-us/uwp/api/windows.applicationmodel.datatransfer.clipboard?view=winrt-22621&redirectedfrom=MSDN) to SfDataGrid by pressing <kbd>Ctrl</kbd>+<kbd>V</kbd>.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Height Customization in UWP DataGrid control | Syncfusion®
-description: Learn here all about Row Height Customization support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Row Height Customization in UWP SfDataGrid | Syncfusion®
+description: Learn about row height customization in Syncfusion® UWP SfDataGrid. Adjust row heights dynamically to improve data display and usability.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Row Height Customization in UWP DataGrid (SfDataGrid)
+# Row Height Customization in UWP SfDataGrid
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) and the other rows height can be changed by setting [SfDataGrid.RowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_RowHeight) property. 
 
