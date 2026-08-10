@@ -9,11 +9,11 @@ documentation: ug
 
 # Control Dependencies in the Syncfusion<sup>&reg;</sup> UWP Controls
 
-This section lists needed assembly or NuGet references to use any control in the  application. You can refer to the [installation and deployment section](https://help.syncfusion.com/uwp/installation/web-installer/how-to-install) to know assembly installation location and [NuGet packages](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) section to know how to add NuGet reference.
+This section lists the required assembly or NuGet references to use any control in the application. You can refer to the [installation and deployment section](https://help.syncfusion.com/uwp/installation/web-installer/how-to-install) to know the assembly installation location and the [NuGet packages](https://help.syncfusion.com/uwp/visual-studio-integration/nuget-packages) section to add a NuGet reference.
 
-You can refer to the [syncfusion controls section](https://help.syncfusion.com/uwp/add-syncfusion-controls) to learn how to add syncfusion control.
+You can refer to the [Syncfusion controls section](https://help.syncfusion.com/uwp/add-syncfusion-controls) to learn how to add a Syncfusion control.
 
-N> Starting with version 16.2(2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as reference for all the Syncfusion<sup>&reg;</sup> UWP controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
+N> Starting with version 16.2 (2018 Vol 2), the `Syncfusion.Licensing.dll` will be added as a reference for all the Syncfusion<sup>&reg;</sup> UWP controls. Please refer to this [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview) for more information.
 
 ## Calculate
 
@@ -270,7 +270,7 @@ Syncfusion.SfGrid.UWP
 
 ### Exporting DataGrid to Excel, PDF and CSV
 
-For exporting DataGrid to excel, pdf or csv, the following references need to be added in your application.
+For exporting DataGrid contents to Excel, PDF and CSV, the following references need to be added in addition to the above assemblies.
 
 <table>
 <tr>
@@ -574,7 +574,6 @@ Syncfusion.SfMaps.UWP
 </tr>
 </table>
 
-
 ## SfMaskedEdit
 
 <table>
@@ -718,7 +717,7 @@ Syncfusion.Data.UWP <br/>
 Syncfusion.Olap.UWP <br/>
 Syncfusion.PivotAnalysis.UWP <br/>
 Syncfusion.SfBusyIndicator.UWP <br/>
-Syncfusion.SfChart.UWP
+Syncfusion.SfChart.UWP <br/>
 </td>
 <td> 
 Syncfusion.SfPivotChart.UWP
@@ -728,7 +727,7 @@ Syncfusion.SfPivotChart.UWP
 
 ### Exporting Pivot Chart to PDF, Word and Image
 
-For exporting pivot chart contents to PDF, word and image, the following reference needs to be added in addition to the above assemblies.
+For exporting pivot chart contents to PDF, Word and Image, the following reference needs to be added in addition to the above assemblies.
 
 <table>
 <tr>
@@ -829,7 +828,7 @@ Syncfusion.SfPivotGrid.UWP
 
 ### Exporting Pivot Grid to Excel, Word, PDF and CSV
 
-For exporting pivot grid contents to excel, word, PDF and CSV, the following reference needs to be added in addition to the above assemblies.
+For exporting pivot grid contents to Excel, Word, PDF and CSV, the following reference needs to be added in addition to the above assemblies.
 
 <table>
 <tr>
@@ -1203,7 +1202,7 @@ Syncfusion.SfGrid.UWP
 
 ### Exporting TreeGrid to Excel, PDF and CSV
 
-For exporting TreeGrid to excel, pdf or csv, the following references need to be added in your application.
+For exporting TreeGrid contents to Excel, PDF and CSV, the following references need to be added in application.
 
 <table>
 <tr>
