@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Ranges in UWP Radial Gauge control | Syncfusion
-description: Learn here all about Ranges support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
+title: Ranges in UWP Radial Gauge | Syncfusion®
+description: Ranges in the UWP Radial Gauge highlight specific value intervals on the gauge scale, helping visualize thresholds, targets, and data groups.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Ranges in UWP Radial Gauge (SfCircularGauge)
+# Ranges in UWP Radial Gauge
 
 A range is a visual element that begins and ends at the specified values within a scale.
 

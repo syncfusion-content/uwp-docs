@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shape Types in UWP Maps control | Syncfusion
-description: Learn about the Shape Types support in the Syncfusion UWP Maps (SfMaps) control, including its elements and more.
+title: Shape Types in UWP Maps | Syncfusion®
+description: Shape types in the UWP Maps define how geographic regions are rendered, enabling visualization of location-based data using map shapes.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Shape Types in UWP Maps (SfMaps)
+# Shape Types in UWP Maps
 
 This feature allows you to draw a polygon, polyline, or circle on the map. You can provide input as Geo points to draw shapes in two different ways:
 

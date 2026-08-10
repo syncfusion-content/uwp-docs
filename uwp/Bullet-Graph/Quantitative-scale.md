@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Quantitative Scale in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Quantitative Scale support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+title: Quantitative Scale in UWP Bullet Graph | Syncfusion®
+description: Quantitative scale in the UWP Bullet Graph defines value ranges, intervals, and targets, enabling accurate performance measurement and comparison.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Quantitative Scale in UWP Bullet Graph (SfBulletGraph)
+# Quantitative Scale in UWP Bullet Graph
 
 Quantitative scale contains two major components such as ticks and labels, which give the look of a bar graph. It defines the frequency of labels and tick marks with overall Minimum and Maximum values for the declared Interval. The length of the quantitative scale can be customized by using the [`QuantitativeScaleLength`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QuantitativeScaleLength) property.
 

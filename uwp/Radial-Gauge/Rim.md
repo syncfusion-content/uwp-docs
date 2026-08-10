@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Rim in UWP Radial Gauge control | Syncfusion
-description: Learn about Rim support in Syncfusion UWP Radial Gauge (SfCircularGauge) control, including customization, styling, and configuration options.
+title: Rim in UWP Radial Gauge | Syncfusion®
+description: Rim in the UWP Radial Gauge customizes the outer boundary of the gauge, enhancing appearance and improving visual presentation.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Rim in UWP Radial Gauge (SfCircularGauge)
+# Rim in UWP Radial Gauge
 
 The scale determines the structure of a circular gauge by using a circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_StartAngle) and [`SweepAngle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html#Syncfusion_UI_Xaml_Gauges_CircularScale_SweepAngle) properties, you can change the shape of the circular gauge to a full-circular gauge, half-circular gauge, or quarter-circular gauge.
 

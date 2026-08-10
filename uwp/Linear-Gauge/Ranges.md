@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ranges in UWP Linear Gauge control | Syncfusion
-description: Learn here all about Ranges support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
+title: Ranges in UWP Linear Gauge | Syncfusion®
+description: Ranges in the UWP Linear Gauge highlight specific value intervals on the scale, helping visualize thresholds, targets, and data groups.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Ranges in UWP Linear Gauge (SfLinearGauge)
+# Ranges in UWP Linear Gauge
 
 A [`LinearRange`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.LinearRange.html) is a visual element, which begins and ends at specified values within a scale. You can add any number of ranges to a scale using an array of range objects.
 

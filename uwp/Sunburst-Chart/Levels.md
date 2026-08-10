@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Levels in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Levels support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Levels in UWP Sunburst Chart control | Syncfusion®
+description: Levels in the UWP Sunburst Chart define hierarchical data groups, enabling structured visualization and navigation across categories.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Levels in UWP Sunburst Chart (SfSunburstChart)
+# Levels in UWP Sunburst Chart
 
 Sunburst chart is used to display hierarchical data. You can add more than one hierarchical data in [`Levels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Levels) collection of Sunburst chart. Each level of the hierarchy is represented by a circle. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in UWP HeatMap (SfHeatMap) control | Syncfusion®
-description: How to create and configure legend for Syncfusion® Essential Studio® UWP HeatMap (SfHeatMap) control, its elements and more.
+title: Legend in UWP HeatMap | Syncfusion®
+description: Legend in the UWP HeatMap identifies data value ranges through color indicators, helping users interpret heat map data effectively.
 platform: uwp
 control: SfHeatMap
 documentation: ug
 ---
 
-# Legend in UWP HeatMap (SfHeatMap) control
+# Legend in UWP HeatMap
 
 Legend is a control used to summarize the color ranges in a HeatMap, providing a visual guide for mapping values to their corresponding colors.
 

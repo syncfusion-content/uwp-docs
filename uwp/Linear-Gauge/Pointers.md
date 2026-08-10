@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pointers in UWP Linear Gauge control | Syncfusion
-description: Learn here all about Pointers support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
+title: Pointers in UWP Linear Gauge | Syncfusion®
+description: Pointers in the UWP Linear Gauge indicate values on the scale using different pointer types and customizable appearance settings.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Pointers in UWP Linear Gauge (SfLinearGauge)
+# Pointers in UWP Linear Gauge
 
 The [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) provides support to mark values using the `BarPointer` and `SymbolPointer`.
 

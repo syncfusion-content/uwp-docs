@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Settings in UWP Digital Gauge control | Syncfusion
-description: Learn here all about Settings support in Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
+title: Settings in UWP Digital Gauge | Syncfusion®
+description: Settings in the UWP Digital Gauge allow you to configure display behavior, appearance, values, and customization options.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Settings in UWP Digital Gauge (SfDigitalGauge)
+# Settings in UWP Digital Gauge
 
 Other elements and behaviors in [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) can be customized as well.
 

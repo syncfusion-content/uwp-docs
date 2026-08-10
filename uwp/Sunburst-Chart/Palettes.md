@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Palette in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Palette support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Palette in UWP Sunburst Chart | Syncfusion®
+description: Palette in the UWP Sunburst Chart allows you to customize segment colors, improving visual distinction and chart presentation.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Palette in UWP Sunburst Chart (SfSunburstChart)
+# Palette in UWP Sunburst Chart
 
 Sunburst chart provides support to apply different types of palettes. You can define the palettes by using [`Palette`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SfSunburstChart.html#Syncfusion_UI_Xaml_SunburstChart_SfSunburstChart_Palette) property.
 

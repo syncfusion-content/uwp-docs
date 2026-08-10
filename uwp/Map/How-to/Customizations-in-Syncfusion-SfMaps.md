@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizations in Syncfusion SfMaps
-description: Learn how to convert geographic coordinates to pixel positions and pixel points to latitude and longitude values in the Syncfusion UWP Map control.
+title: Convert Coordinates in UWP Maps | Syncfusion®
+description: Learn how to convert geographic coordinates to pixel positions and pixel points to latitude and longitude values in UWP Maps.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# How to convert coordinates in UWP Map
+# How to Convert Coordinates in UWP Maps
 
 ## Transform latitude and longitude value to pixel value and vice-versa
 

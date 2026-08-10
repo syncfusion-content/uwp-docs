@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Selection in UWP Map control | Syncfusion
-description: Learn how to enable and customize single and multiple shape selection in the Syncfusion UWP Map control using SfMaps selection properties.
+title: Map Selection in UWP Maps | Syncfusion®
+description: Map selection in the UWP Maps enables users to highlight and interact with map elements for focused analysis and data exploration.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Map Selection in UWP Map (SfMaps)
+# Map Selection in UWP Maps
 
 Each shape in the map can be selected and unselected when interacted with shapes. There are two ways to select the map shapes:
 

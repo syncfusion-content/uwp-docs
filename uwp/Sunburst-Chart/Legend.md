@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Legend in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Legend support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Legend in UWP Sunburst Chart | Syncfusion®
+description: Legend in the UWP Sunburst Chart identifies segments and categories, helping users understand and interpret hierarchical data clearly.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Legend in UWP Sunburst Chart (SfSunburstChart)
+# Legend in UWP Sunburst Chart
 
 The Legend is used to represent the first level of categories in sunburst chart. 
 

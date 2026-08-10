@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ItemsMapping in UWP HeatMap (SfHeatMap) control | Syncfusion®
-description: Learn here about ItemsMapping in Syncfusion® Essential Studio® UWP HeatMap (SfHeatMap) control, its elements and more.
+title: Items Mapping in UWP HeatMap | Syncfusion®
+description: Items mapping in the UWP HeatMap enables data fields to be mapped to rows, columns, and values for effective heat map visualization.
 platform: uwp
 control: SfHeatMap
 documentation: ug
 ---
 
-# Items Mapping in UWP HeatMap (SfHeatMap) control
+# Items Mapping in UWP HeatMap
 
 External data can be mapped to a `HeatMap` using the [ItemsMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html#Syncfusion_UI_Xaml_HeatMap_SfHeatMap_ItemsMapping) property, which supports two types of data sources:
 

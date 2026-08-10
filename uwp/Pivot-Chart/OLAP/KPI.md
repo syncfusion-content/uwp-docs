@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KPI in UWP Pivot Chart control | Syncfusion
-description: Learn about KPI support in Syncfusion® UWP Pivot Chart (SfPivotChart), including visualization options and performance indicators. 
+title: KPI in UWP Pivot Chart | Syncfusion®
+description: KPI in the UWP Pivot Chart displays key performance indicators, enabling effective monitoring, comparison, and analysis of business metrics.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# KPI in UWP Pivot Chart (SfPivotChart)
+# KPI in UWP Pivot Chart
 
 KPI (Key Performance Indicator) is a business metric that helps to figure out the progress of an enterprise in meeting its business goals. It is a collection of calculations that are associated with a measure group in a cube. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how the applications should display the results of KPIs calculations.
 

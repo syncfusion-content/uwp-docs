@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Track ball in UWP Sparkline control | Syncfusion
-description: Learn here all about Track ball support in Syncfusion UWP Sparkline (SfSparkline) control and more.
+title: Track ball in UWP Sparkline | Syncfusion®
+description: Track ball in the UWP Sparkline displays data values at specific points, enabling precise inspection and analysis of chart data.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
 
-# Track ball in UWP Sparkline (SfSparkline)
+# Track ball in UWP Sparkline
 
 This is used to indicate the value point on mouse move and this feature is applicable for line and area sparklines.
 

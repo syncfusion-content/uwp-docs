@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Area in UWP Charts control | Syncfusion
-description: Learn here all about Area support in Syncfusion® Universal Windows Platform (UWP) Charts (SfChart) control and more.
+title: Area in UWP Chart | Syncfusion®
+description: Area in the UWP Chart displays data as filled regions between data points and the axis, emphasizing trends and value magnitude.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Area in UWP Charts (SfChart)
+# Chart area in UWP Chart
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series etc. 
 

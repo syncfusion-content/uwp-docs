@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks in UWP Bullet Graph control | Syncfusion
-description: Learn about ticks support in Syncfusion UWP Bullet Graph (SfBulletGraph), including customization options and usage details.
+title: Ticks in UWP Bullet Graph | Syncfusion®
+description: Ticks in the UWP Bullet Graph indicate scale intervals and support customization of size, position, style, and appearance settings.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Ticks in UWP Bullet Graph (SfBulletGraph)
+# Ticks in UWP Bullet Graph
 
 Quantitative scale is displayed with two types of ticks: 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started with Syncfusion® Essential® SfHeatMap for UWP.
-description: This section explain about how to integrate UWP HeatMap (SfHeatMap) into an application and enable its basic features with example. 
+title: Getting Started with UWP HeatMap | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP HeatMap control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfHeatMap
 documentation: ug
 ---
 
-# Getting Started with UWP HeatMap (SfHeatMap)
+# Getting Started with UWP HeatMap
 
 ## Creating heatmap for windows store app
 

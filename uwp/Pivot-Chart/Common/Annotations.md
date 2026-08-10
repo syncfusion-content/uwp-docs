@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotations in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Annotations support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Annotations in UWP Pivot Chart | Syncfusion®
+description: Annotations in the UWP Pivot Chart display custom content within the chart area and support flexible positioning for enhanced data visualization.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Annotations in UWP Pivot Chart (SfPivotChart)
+# Annotations in UWP Pivot Chart
 
 The SfPivotChart supports annotations that allow you to mark a specific area of interest in the chart area. You can draw custom shapes, specify a text note, and add images with the help of annotations.
 

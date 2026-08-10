@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Events in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Events support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Events in UWP Sunburst Chart | Syncfusion®
+description: Events in the UWP Sunburst Chart enable you to respond to user interactions and customize chart behavior during runtime.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Events in UWP Sunburst Chart (SfSunburstChart)
+# Events in UWP Sunburst Chart
 
 ## SegmentCreated event
 

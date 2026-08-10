@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in UWP Charts control | Syncfusion
-description: Learn here all about Interactive Features support in Syncfusion® UWP Charts (SfChart) control and more.
+title: Interactive Features in UWP Charts | Syncfusion®
+description: Interactive features in the UWP Chart enable zooming, panning, selection, tooltips, and navigation for enhanced data exploration.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Interactive Features in UWP Charts (SfChart)
+# Interactive Features in UWP Charts
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides interactive features such as zooming, selection, and tracking data points.
 

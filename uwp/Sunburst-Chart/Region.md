@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Region in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Region support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Region in UWP Sunburst Chart | Syncfusion®
+description: Region in the UWP Sunburst Chart represents hierarchical data segments, enabling visualization and interaction with categorized data.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Region in UWP Sunburst Chart (SfSunburstChart)
+# Region in UWP Sunburst Chart
 
 Sunburst region represents the entire chart and all its elements. It includes all the chart elements like Legend, DataLabel, Levels etc. It has the following major properties:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Shape Labels in UWP Map control | Syncfusion
-description: description: Learn how to display and customize labels for map shapes in the Syncfusion UWP SfMaps control using LabelPath, DBF data, and item templates.
+title: Map Shape Labels in UWP Maps | Syncfusion®
+description: Map shape labels in the UWP Maps display text for geographic regions, helping users identify and interpret location-based data clearly.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Map Shape Labels in UWP Map (SfMaps)
+# Map Shape Labels in UWP Maps
 
 `Labels` for map shapes can be displayed by using the [`LabelPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_LabelPath) property of the [`ShapeFileLayer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html). The value of `LabelPath` must be a field name specified in the `.dbf` file corresponding to the shape file.
 

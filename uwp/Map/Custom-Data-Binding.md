@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Data Binding in UWP Map control | Syncfusion
-description: Learn how to bind custom data to the Syncfusion UWP Map control using latitude, longitude, data templates, and shape mapping properties.
+title: Custom Data Binding in UWP Maps | Syncfusion®
+description: Custom data binding in the UWP Maps enables map elements to be connected with custom data sources for dynamic visualization and interaction.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Custom Data Binding in UWP Map (SfMaps)
+# Custom Data Binding in UWP Maps
 
 A map can be bound with custom objects. For custom data binding, a `.dbf` file is not required. In data binding, an object is bound to a shape. In custom data binding, an object is bound to a point based on latitude and longitude values. [`CustomDataSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html#Syncfusion_UI_Xaml_Maps_ShapeFileLayer_CustomDataSource) is the API exposed in the custom data source. It is an `IEnumerable` type API. Each item in the `CustomDataSource` should have latitude and longitude properties with each mentioned name. Users should adhere to the following rules for custom data binding:
 

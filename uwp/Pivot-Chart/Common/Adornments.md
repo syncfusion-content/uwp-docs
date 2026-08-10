@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adornments in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Adornments support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Adornments in UWP Pivot Chart | Syncfusion®
+description: Adornments in the UWP Pivot Chart display additional information for data points and support customization of labels, symbols, and appearance.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Adornments in UWP Pivot Chart (SfPivotChart)
+# Adornments in UWP Pivot Chart
 
 Adornments are used to display data values of a chart segment with custom formatting options. The data point values (x,y) can be formatted by using the [`AdornmentsInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAdornmentsInfo.html) property of the SfPivotChart. You can initialize the adornments as specified in the following code snippet.
 
