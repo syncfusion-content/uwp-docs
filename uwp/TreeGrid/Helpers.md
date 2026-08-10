@@ -7,7 +7,7 @@ control: SfTreeGrid
 documentation: ug
 ---
 
-# Helpers in WinUI SfTreeGrid
+# Helpers in UWP SfTreeGrid
 
 ## IndexResolver
 
