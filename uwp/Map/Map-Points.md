@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Points in UWP Maps | Syncfusion®
-description: Map points in the UWP Maps display location-based data using markers, enabling visualization and interaction with geographic coordinates.
+title: Point customization in UWP Maps | Syncfusion®
+description: Point customization in the UWP Maps display location-based data using markers, enabling visualization and interaction with geographic coordinates.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Map Points in UWP Maps
+# Point customization in UWP Maps
 
 Points are one of the record types in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.ShapeFileLayer.html). [`MapPoint`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.MapPoint.html) is used to specify a specific point on the map. For example, points are used to specify the capital of countries. Points in the shape file are given as latitude and longitude coordinates in the shapes file. Those points should be converted as map points.
 

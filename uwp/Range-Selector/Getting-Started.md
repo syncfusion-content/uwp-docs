@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with UWP Range Selector control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Range Selector (SfDateTimeRangeNavigator) control, its elements and more.
+title: Getting Started with UWP Range Selector | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Range Selector control. Explore setup, configuration, range selection, and customization options.
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# Getting Started with UWP Range Selector (SfDateTimeRangeNavigator)
+# Getting Started with UWP Range Selector
 
 ## Visual Structure 
 

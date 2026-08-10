@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Types in UWP Pivot Chart | Syncfusion®
-description: Chart types in the UWP Pivot Chart provide multiple visualization options for presenting and analyzing summarized data effectively.
+title: Types in UWP Pivot Chart | Syncfusion®
+description: Types in the UWP Pivot Chart provide multiple visualization options for presenting and analyzing summarized data effectively.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Chart Types in UWP Pivot Chart
+# Types in UWP Pivot Chart
 
 The SfPivotChart offers different types of charts ranging from column chart to pie chart. Based on your requirements and specifications, any type of chart can be used for data visualization.
 
