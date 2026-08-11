@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to Print the Chart in UWP Chart | Syncfusion®
+title: How to print the chart in UWP Chart | Syncfusion®
 description: Print the UWP Chart to create physical copies of chart visuals for reporting, presentation, and documentation purposes.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# How to Print the Chart in UWP Chart
+# How to print the chart in UWP Chart
 
 To print the SfChart, call the Print method.
 
