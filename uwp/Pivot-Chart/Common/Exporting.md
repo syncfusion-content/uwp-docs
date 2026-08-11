@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Exporting support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Exporting in UWP Pivot Chart | Syncfusion®
+description: Exporting in the UWP Pivot Chart enables chart data and visuals to be saved in supported formats for sharing, reporting, and analysis.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Exporting in UWP Pivot Chart (SfPivotChart)
+# Exporting in UWP Pivot Chart
 
 The SfPivotChart can be exported to an image, Microsoft Word, and PDF file formats. To perform exporting operation, refer to the following assembly in the application:
 

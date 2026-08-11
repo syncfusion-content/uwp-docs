@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ranges in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Ranges support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+title: Ranges in UWP Bullet Graph | Syncfusion®
+description: Ranges in the UWP Bullet Graph highlight specific value intervals, helping visualize performance levels, thresholds, and target comparisons.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Ranges in UWP Bullet Graph (SfBulletGraph)
+# Ranges in UWP Bullet Graph
 
 Ranges for a bullet graph are a collection of qualitative ranges. A qualitative range is a visual element which ends at a specified [`RangeEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.Range.html#Syncfusion_UI_Xaml_BulletGraph_Range_RangeEnd) at the start of the previous range's RangeEnd. The qualitative ranges are arranged according to each RangeEnd value.
 

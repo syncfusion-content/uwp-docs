@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in UWP Pivot Chart control | Syncfusion
-description: Learn about legend support in Syncfusion® UWP Pivot Chart (SfPivotChart), including customization, positioning, and display options.
+title: Legend in UWP Pivot Chart | Syncfusion®
+description: Legend in the UWP Pivot Chart identifies data series and chart elements, supporting customization, positioning, and display options.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Legend in UWP Pivot Chart (SfPivotChart)
+# Legend in UWP Pivot Chart
 
 Legend displays the metadata that helps to identify the data series in the chart. Legend contains a group of legend items based on the series and each legend item is composed of icon, check box, and label.
 

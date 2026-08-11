@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Caption in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Caption support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+title: Caption in UWP Bullet Graph | Syncfusion®
+description: Caption in the UWP Bullet Graph displays descriptive text for the graph, helping users understand displayed metrics and data context.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Caption in UWP Bullet Graph (SfBulletGraph)
+# Caption in UWP Bullet Graph
 
 The [`Caption`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_Caption) for a bullet graph is used to specify a unique label describing the value represented in the bullet graph. 
 

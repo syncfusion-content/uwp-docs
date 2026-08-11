@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize the marker for specific data point 
-description: Customize the marker for specific data point
+title: How to customize a data point marker in UWP Sparkline | Syncfusion®
+description: Customize a data point marker in the UWP Sparkline to apply distinct styles and improve the visibility of specific data points.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
 
-# Customize the marker for specific data point
+# How to customize a data point marker in UWP Sparkline
 
 We can customize the marker for a specific data point with a custom template for LineSparkline and AreaSparkline. In order to customize the marker, we need to inherit the [`MarkerTemplateSelector`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.MarkerTemplateSelector.html) class and override the SelectTemplate method.
 

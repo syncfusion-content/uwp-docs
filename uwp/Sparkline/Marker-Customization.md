@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Marker customization in UWP Sparkline control | Syncfusion
-description: Learn here all about Marker customization support in Syncfusion UWP Sparkline (SfSparkline) control and more.
+title: Marker Customization in UWP Sparkline | Syncfusion®
+description: Marker customization in the UWP Sparkline allows you to modify marker appearance, styles, colors, and sizes for better data visualization.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
 
-# Marker customization in UWP Sparkline (SfSparkline)
+# Marker Customization in UWP Sparkline
 
 We can customize the markers by initializing the marker template selector class, and we can differentiate the first, last, high, low, negative points.
 

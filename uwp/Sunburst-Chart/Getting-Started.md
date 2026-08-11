@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Sunburst Chart control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Sunburst Chart (SfSunburstChart) control, its elements and more.
+title: Getting Started with UWP Sunburst Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Sunburst Chart control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Getting Started with UWP Sunburst Chart (SfSunburstChart)
+# Getting Started with UWP Sunburst Chart
 
 This section explains the steps required to populate the sunburst chart with data, add data labels, legends and header. This section covers only the minimal features that you need to know to get started with the Sunburst chart.
 

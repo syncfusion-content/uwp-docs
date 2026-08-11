@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Sparkline control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Sparkline (SfSparkline) control, its elements and more.
+title: About Syncfusion® UWP Sparkline control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® UWP Sparkline control, its features, capabilities, and more details.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
 
-# UWP Sparkline (SfSparkline) Overview
+# About Syncfusion UWP Sparkline control
 
 A sparkline is a very small chart, typically drawn without axes or coordinates. It presents the general shape of data in a simple and highly condensed way.
 

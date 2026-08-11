@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMap Legend in UWP TreeMap control | Syncfusion
-description: Learn about TreeMap Legend support in Syncfusion UWP TreeMap (SfTreeMap), including legend display, positioning, styling, and customization options.
+title: Legend in UWP TreeMap | Syncfusion®
+description: Legend in the UWP TreeMap identifies color mappings and data categories, helping users understand hierarchical data relationships.
 platform: uwp
 control: SfTreeMap
 documentation: ug
 ---
 
-# TreeMap Legend in UWP TreeMap (SfTreeMap)
+# Legend in UWP TreeMap
 
 TreeMap legend is used to easily demonstrate about the color value of leaf nodes. But this legend could be appropriate only for the treemap having leaf nodes colored by using [`RangeBrushColorMapping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.RangeBrushColorMapping.html). The labels of the legend item can be customized by specifying [`LegendLabel`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.RangeBrush.html#Syncfusion_UI_Xaml_TreeMap_RangeBrush_LegendLabel) of RangeBrush mentioned in the Brushes of RangeBrushColorMapping.
 

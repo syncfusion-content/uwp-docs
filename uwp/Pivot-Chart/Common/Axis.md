@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Axis in UWP Pivot Chart control | Syncfusion
-description: Learn about axis support in Syncfusion® UWP Pivot Chart (SfPivotChart), including axis configuration and customization features.
+title: Axis in UWP Pivot Chart | Syncfusion®
+description: Axis in the UWP Pivot Chart defines data scales, categories, and value ranges, supporting customization and effective data visualization.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Axis in UWP Pivot Chart (SfPivotChart)
+# Axis in UWP Pivot Chart
 
 Axis is used to locate a data point inside the chart area. Generally, two axes are required along each direction to locate the data point in the chart, i.e., horizontal and vertical. The vertical axis (y-axis) represents numerical values and the horizontal axis (x-axis) represents categorical values.
 

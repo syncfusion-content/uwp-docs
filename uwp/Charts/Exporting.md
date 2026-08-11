@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Exporting in UWP Charts control | Syncfusion
-description: Learn everything about Exporting support in Syncfusion® UWP Charts (SfChart) control and explore additional features.
+title: Exporting in UWP Charts | Syncfusion®
+description: Exporting in the UWP Chart enables chart data and visuals to be saved in supported formats for sharing, printing, and reporting.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
-# Exporting in UWP Charts (SfChart)
+# Exporting in UWP Charts
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) can be exported into the following types of image formats:
 

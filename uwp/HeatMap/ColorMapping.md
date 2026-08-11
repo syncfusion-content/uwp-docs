@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ColorMapping in UWP HeatMap (SfHeatMap) control | Syncfusion®
-description: How to configure colors codes for Syncfusion® Essential Studio® uwp HeatMap (SfHeatMap) control, its elements and more.
+title: Color Mapping in UWP HeatMap | Syncfusion®
+description: Color mapping in the UWP HeatMap configures color ranges for data values, enabling effective visualization and interpretation of data patterns.
 platform: uwp
 control: SfHeatMap
 documentation: ug
 ---
 
-# Color Mapping in UWP HeatMap (SfHeatMap) control
+# Color Mapping in UWP HeatMap
 
 Color mapping is used to represent values with colors instead of displaying the actual numerical values. For example, when a HeatMap displays data ranging from 0 to 100. [ColorMapping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.ColorMapping.html) defines colors for the minimum and maximum values, and intermediate values are represented with corresponding colors. 
 

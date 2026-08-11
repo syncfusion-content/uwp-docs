@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Key Features in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Key Features support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+title: Key Features in UWP Bullet Graph | Syncfusion®
+description: Key features in the UWP Bullet Graph include comparative measurement, target indicators, qualitative ranges, and customizable visualization.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Key Features in UWP Bullet Graph (SfBulletGraph)
+# Key Features in UWP Bullet Graph
 
 **SfBulletGraph** is a composite UI element with the following sub-parts:
 

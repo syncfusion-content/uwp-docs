@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Localization support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Localization in UWP Pivot Chart | Syncfusion®
+description: Localization in the UWP Pivot Chart enables chart content and user interface elements to be displayed in different languages and regional settings.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Localization in UWP Pivot Chart (SfPivotChart)
+# Localization in UWP Pivot Chart
 
 Localization is the key feature to provide software solutions targeted at global users. The SfPivotChart allows users to localize the control to a specific locale and supports “resx” based localization.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adornments in UWP Charts control | Syncfusion
-description: Learn here all about Adornments support in Syncfusion® UWP Charts (SfChart) control, its elements, features, and more.
+title: Adornments in UWP Chart | Syncfusion®
+description: Adornments in the UWP Chart display additional information for data points and support customization of labels, symbols, and appearance.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Adornments in UWP Charts (SfChart)
+# Adornments in UWP Chart
 
 Chart adornments are used to display values related to a chart segment element. Values from data point(x, y) or other custom properties from a data source can be displayed. 
 

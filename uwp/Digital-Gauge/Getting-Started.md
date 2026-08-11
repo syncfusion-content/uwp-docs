@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Digital Gauge control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Digital Gauge (SfDigitalGauge) control, its elements and more.
+title: Getting Started with UWP Digital Gauge | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Digital Gauge control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Getting Started with UWP Digital Gauge (SfDigitalGauge)
+# Getting Started with UWP Digital Gauge
 
 This section explains the steps required to configure the [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) and also explains the steps to add basic elements of [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) through various APIs available within it.
 

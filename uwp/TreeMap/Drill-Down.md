@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DrillDown in UWP TreeMap control | Syncfusion
-description: Learn about DrillDown support in Syncfusion UWP TreeMap (SfTreeMap), including hierarchical navigation, interaction, and data exploration features.
+title: Drill Down Support in UWP TreeMap | Syncfusion®
+description: Drill down support in the UWP TreeMap enables users to navigate hierarchical data levels for detailed analysis and data exploration.
 platform: uwp
 control: SfTreeMap
 documentation: ug
 ---
 
-# DrillDown in UWP TreeMap (SfTreeMap)
+# Drill Down Support in UWP TreeMap
 
 The Treemap enables drill down to expose the hierarchy by clicking on a treemap node and allows drill up by clicking on the drill down header. At a time, only one level of the hierarchy can be seen in the treemap.
 

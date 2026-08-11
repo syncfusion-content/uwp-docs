@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Digital Characters in UWP Digital Gauge control | Syncfusion
-description: Learn here all about Digital Characters support in Syncfusion UWP Digital Gauge (SfDigitalGauge) control and more.
+title: Digital Characters in UWP Digital Gauge | Syncfusion®
+description: Digital characters in the UWP Digital Gauge allow you to display numeric and alphanumeric values using customizable digital segments.
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
 ---
 
-# Digital Characters in UWP Digital Gauge (SfDigitalGauge)
+# Digital Characters in UWP Digital Gauge
 
 The digital characters in the digital gauge can be viewed in different types of segments. These digital characters are displayed in the digital gauge by setting the [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property of type string.
 
