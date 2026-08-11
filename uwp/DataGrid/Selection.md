@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in UWP DataGrid control | Syncfusion®
-description: Learn here all about Selection support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements, features, and more.
+title: Selection in UWP SfDataGrid | Syncfusion®
+description: Selection in SfDataGrid provides flexible row, cell, and multi-selection options with customizable modes and selection behaviors.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Selection in UWP DataGrid (SfDataGrid)
+# Selection in UWP SfDataGrid
 
 SfDataGrid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) or `Any`. In [SelectionUnit.Any](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) option you can select the row by clicking on row header.
 

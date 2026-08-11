@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging in UWP DataGrid control | Syncfusion®
-description: Learn here all about Paging support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements, features, and more.
+title: Paging in UWP SfDataGrid | Syncfusion®
+description: Paging in SfDataGrid enables efficient handling of large datasets by loading records in pages, improving navigation, performance, and user experience.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Paging in UWP DataGrid (SfDataGrid)
+# Paging in UWP SfDataGrid
 
 SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](http://help.syncfusion.com/uwp/datapager) control user guide for more information.
 

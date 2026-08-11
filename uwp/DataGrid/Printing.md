@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in UWP DataGrid control | Syncfusion®
-description: Learn here all about Printing support in Syncfusion® UWP DataGrid (SfDataGrid) control and more features.
+title: Printing in UWP SfDataGrid | Syncfusion®
+description: Printing in SfDataGrid prints grid data with customizable layouts, formatting, and page settings for professional output.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Printing in UWP DataGrid (SfDataGrid)
+# Printing in UWP SfDataGrid
 
 SfDataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Print) method.
  
