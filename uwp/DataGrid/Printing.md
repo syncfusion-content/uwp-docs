@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in UWP SfDataGrid | Syncfusion®
-description: Learn about printing in Syncfusion® UWP SfDataGrid. Print grid data with customizable layouts, formatting options, and support for efficient document output.
+description: Printing in SfDataGrid prints grid data with customizable layouts, formatting, and page settings for professional output.
 platform: uwp
 control: SfDataGrid
 documentation: ug

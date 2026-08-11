@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in UWP SfDataGrid | Syncfusion®
-description: Learn about grouping in Syncfusion® UWP SfDataGrid. Organize data into groups, customize group views, and improve data analysis and navigation.
+description: Grouping in SfDataGrid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: uwp
 control: SfDataGrid
 documentation: ug

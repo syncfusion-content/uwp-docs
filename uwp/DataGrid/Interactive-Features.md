@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactive Features in UWP SfDataGrid | Syncfusion®
-description: Learn about interactive features in Syncfusion® UWP SfDataGrid. Enhance user experience with row headers, touch support, drag and drop, and context menus.
+description: Interactive features in SfDataGrid include row headers, touch support, row drag-and-drop, and customizable context menus for enhanced user interaction.
 platform: uwp
 control: SfDataGrid
 documentation: ug

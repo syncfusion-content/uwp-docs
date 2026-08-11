@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in UWP SfDataGrid | Syncfusion®
-description: Learn about columns in Syncfusion® UWP SfDataGrid. Customize column types, appearance, sizing, and data presentation to enhance the grid experience.
+description: Columns in SfDataGrid support auto-generation, custom column types, resizing, drag-and-drop, stacking headers, freezing, and flexible sizing options.
 platform: uwp
 control: SfDataGrid
 documentation: ug

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Export to Excel in UWP SfDataGrid | Syncfusion®
-description: Learn about exporting data to Excel in Syncfusion® UWP SfDataGrid. Export grid data, customize Excel output, and preserve formatting with ease.
+title: Export To Excel in UWP SfDataGrid | Syncfusion®
+description: Export To Excel in SfDataGrid exports grid data to Excel files while preserving data, formatting, styles, and workbook structure.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Export to Excel in UWP SfDataGrid
+# Export To Excel in UWP SfDataGrid
 
 SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
 

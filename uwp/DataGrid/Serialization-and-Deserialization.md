@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization and Deserialization in UWP SfDataGrid | Syncfusion®
-description: Learn about serialization and deserialization in Syncfusion® UWP SfDataGrid. Save and restore grid settings, layouts, and state information efficiently.
+description: Serialization and Deserialization in SfDataGrid saves and restores grid settings, layouts, and configurations to preserve the user interface state.
 platform: uwp
 control: SfDataGrid
 documentation: ug

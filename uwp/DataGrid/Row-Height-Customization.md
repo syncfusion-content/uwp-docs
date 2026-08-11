@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization in UWP SfDataGrid | Syncfusion®
-description: Learn about row height customization in Syncfusion® UWP SfDataGrid. Adjust row heights dynamically to improve data display and usability.
+description: Row Height Customization in SfDataGrid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: uwp
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in UWP SfDataGrid | Syncfusion®
-description: Learn about selection in Syncfusion® UWP SfDataGrid. Select cells, rows, or multiple records and customize selection behavior for efficient data interaction.
+description: Selection in SfDataGrid provides flexible row, cell, and multi-selection options with customizable modes and selection behaviors.
 platform: uwp
 control: SfDataGrid
 documentation: ug

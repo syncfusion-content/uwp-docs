@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles and Templates in UWP SfDataGrid | Syncfusion®
-description: Learn about styles and templates in Syncfusion® UWP SfDataGrid. Customize the appearance, layout, and visual elements of your grid.
+description: Styles and templates in SfDataGrid let you customize cells, rows, headers, summaries, and visual elements to create tailored grid appearances.
 platform: uwp
 control: SfDataGrid
 documentation: ug

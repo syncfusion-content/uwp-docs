@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in UWP SfDataGrid | Syncfusion®
-description: Learn about editing in Syncfusion® UWP SfDataGrid. Enable and customize cell editing, manage user input, and update data efficiently within the grid.
+description: Editing in SfDataGrid provides built-in features to add, modify, and update records with validation and customizable editing behavior.
 platform: uwp
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FilterRow in UWP SfDataGrid | Syncfusion®
-description: Learn about FilterRow in Syncfusion® UWP SfDataGrid. Filter records directly from the grid using an interactive filter row with customizable filtering options.
+description: Filter Row in SfDataGrid filters data directly within the grid through an interactive row for quick and efficient data refinement.
 platform: uwp
 control: SfDataGrid
 documentation: ug

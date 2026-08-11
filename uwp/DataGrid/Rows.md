@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows in UWP SfDataGrid | Syncfusion®
-description: Learn about rows in Syncfusion® UWP SfDataGrid. Customize row appearance, behavior, selection, and interactions to enhance data presentation.
+description: Rows in SfDataGrid support row headers, header rows, freeze panes, and row customization features to enhance data presentation and interaction.
 platform: uwp
 control: SfDataGrid
 documentation: ug

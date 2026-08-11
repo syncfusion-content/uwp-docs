@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional Styling in UWP SfDataGrid | Syncfusion®
-description: Learn about conditional styling in Syncfusion® UWP SfDataGrid. Customize the appearance of cells, rows, and columns based on data values and conditions.
+description: Conditional Styling in SfDataGrid applies custom styles to cells, rows, and columns dynamically based on data values and conditions.
 platform: uwp
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Manipulation in UWP SfDataGrid | Syncfusion®
-description: Learn about data manipulation in Syncfusion® UWP SfDataGrid. Add, edit, delete, and manage records efficiently with built-in data handling features.
+description: Data manipulation in SfDataGrid supports adding, editing, deleting, and managing records with built-in features for efficient data handling and updates.
 platform: uwp
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Column in UWP SfDataGrid | Syncfusion®
-description: Learn about unbound columns in Syncfusion® UWP SfDataGrid. Display calculated, custom, or derived values that are not directly mapped to a data source.
+description: Unbound Column in SfDataGrid displays calculated or custom values that are not directly bound to the underlying data source.
 platform: uwp
 control: SfDataGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in UWP SfDataGrid | Syncfusion®
-description: Learn about localization in Syncfusion® UWP SfDataGrid. Customize grid text, messages, and UI elements to support multiple languages and regional settings.
+description: Localization in SfDataGrid customizes grid content and user interface elements to support multiple languages and regional settings.
 platform: uwp
 control: SfDataGrid
 documentation: ug

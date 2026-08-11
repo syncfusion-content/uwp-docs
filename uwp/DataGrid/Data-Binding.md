@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in UWP SfDataGrid | Syncfusion®
-description: Learn about data binding in Syncfusion® UWP SfDataGrid. Bind data sources, manage updates, and display data efficiently with flexible binding support.
+description: Data Binding in SfDataGrid provides flexible data source binding, collection management, and efficient data display capabilities.
 platform: uwp
 control: SfDataGrid
 documentation: ug
