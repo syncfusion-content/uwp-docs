@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBinding in UWP TreeMap control | Syncfusion
-description: Learn about DataBinding support in Syncfusion UWP TreeMap (SfTreeMap), including binding hierarchical data, population, and visualization techniques.
+title: Data Binding in UWP TreeMap | Syncfusion®
+description: Data binding in the UWP TreeMap enables visualization of hierarchical data through population, grouping, and interactive data representation.
 platform: uwp
 control: SfTreeMap
 documentation: ug
 ---
 
-# DataBinding in UWP TreeMap (SfTreeMap)
+# Data Binding in UWP TreeMap
 
 The SfTreeMap is bound to an external data source to display the data. It supports data sources such as List, ObservableCollection, and so on. The ItemsSource property helps to bind the TreeMap with the collection of objects.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animation in UWP Charts control | Syncfusion
-description: Learn everything about Animation support in Syncfusion® UWP Charts (SfChart) control and explore additional features.
+title: Animation in UWP Chart | Syncfusion®
+description: Animation in the UWP Chart enables smooth transitions for chart series and data points, enhancing data visualization and user experience.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Animation in UWP Charts (SfChart)
+# Animation in UWP Chart
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) Animation allows you to animate the chart series on loading, and whenever the ItemsSource changes. Animation in chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_EnableAnimation) property to true and defining the corresponding animation speed with [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_AnimationDuration) property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Pivot Gauge control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Pivot Gauge (SfPivotGauge) control, its elements and more.
+title: About Syncfusion® UWP Pivot Gauge Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® UWP Pivot Gauge control, its features, capabilities, and more details.
 platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---
 
-# UWP Pivot Gauge (SfPivotGauge) Overview
+# About Syncfusion® UWP Pivot Gauge Control
 
 The [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control for UWP is ideal for highlighting business-critical Key Performance Indicator (KPI) information in executive dashboards and report cards. It allows you to present values against goals in a very intuitive manner. For relational data, the SfPivotGauge control allows you to visualize the summary value using the pointer over a circular scale. It comes with sophisticated customization support that provides endless possibilities for customizing the control.
 

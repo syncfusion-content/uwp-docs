@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Selection in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Selection support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Selection in UWP Sunburst Chart | Syncfusion®
+description: Selection in the UWP Sunburst Chart enables users to highlight and interact with data segments for focused analysis and exploration.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Selection in UWP Sunburst Chart (SfSunburstChart)
+# Selection in UWP Sunburst Chart
 
 Sunburst chart supports selection that enables you to select a segment by using [`SunburstSelectionBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SunburstChart.SunburstSelectionBehavior.html). 
 

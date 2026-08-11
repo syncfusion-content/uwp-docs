@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Templates in UWP TreeMap control | Syncfusion
-description: Learn about Templates support in Syncfusion UWP TreeMap (SfTreeMap), including customizing item appearance using data templates and visual elements.
+title: Templates in UWP TreeMap | Syncfusion®
+description: Templates in the UWP TreeMap customize item appearance using data templates and visual elements for enhanced data visualization.
 platform: uwp
 control: SfTreeMap
 documentation: ug
 ---
 
-# Templates in UWP TreeMap (SfTreeMap)
+# Templates in UWP TreeMap
 
 ## Headers
 

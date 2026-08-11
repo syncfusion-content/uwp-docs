@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Labels in UWP Linear Gauge control | Syncfusion
-description: Learn here all about Labels support in Syncfusion UWP Linear Gauge (SfLinearGauge) control and more.
+title: Labels in UWP Linear Gauge | Syncfusion®
+description: Labels in the UWP Linear Gauge display scale values and support customization through styling, positioning, and appearance settings.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
 
-# Labels in UWP Linear Gauge (SfLinearGauge)
+# Labels in UWP Linear Gauge
 
 The `Labels` of the linear scale provide a numeric value to the major ticks that will be specified according to the range of the scale.
 

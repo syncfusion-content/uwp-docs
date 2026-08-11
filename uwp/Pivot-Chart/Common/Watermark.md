@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Watermark in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Watermark support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Watermark in UWP Pivot Chart | Syncfusion®
+description: Watermark in the UWP Pivot Chart displays custom text or images in the chart background, supporting branding and visual customization.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Watermark in UWP Pivot Chart (SfPivotChart)
+# Watermark in UWP Pivot Chart
 
 The SfPivotChart supports watermark that is used to add text or images to the chart area. The major application of watermark is to define the copyright information of users it belongs to.
 

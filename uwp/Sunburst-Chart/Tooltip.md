@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Tooltip in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Tooltip in UWP Sunburst Chart | Syncfusion®
+description: Tooltip in the UWP Sunburst Chart displays detailed information about data segments on hover, helping users analyze chart data effectively.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Tooltip in UWP Sunburst Chart (SfSunburstChart)
+# Tooltip in UWP Sunburst Chart
 
 Tooltip allows you to display any information over a sunburst segment. It appears when the mouse hovers over or the user touches any chart segment. By default, it displays the corresponding segment category name and its value.
 

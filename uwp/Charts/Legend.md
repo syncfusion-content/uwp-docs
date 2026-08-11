@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in UWP Charts control | Syncfusion
-description: Learn here all about Legend feature of Syncfusion® Universal Windows Platform (UWP) Charts (SfChart) control and more.
+title: Legend in UWP Charts | Syncfusion®
+description: Legend in the UWP Chart identifies series and data categories, helping users understand and interpret chart information clearly.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Legend in UWP Charts (SfChart)
+# Legend in UWP Charts
 
 [`Legend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Legend) provides metadata which helps for identifying elements in chart like [`chart series`](https://help.syncfusion.com/uwp/charts/series), 
 [`technical indicators`](https://help.syncfusion.com/uwp/charts/technical-indicators), and [`trendlines`](https://help.syncfusion.com/uwp/charts/trendlines). 

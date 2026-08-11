@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Map Providers in UWP Map control | Syncfusion
-description: Learn how to use OpenStreetMap and Bing Maps providers, configure imagery layers, and calculate zoom levels in the Syncfusion UWP SfMap control.
+title: Providers in UWP Maps | Syncfusion®
+description: providers in the UWP Maps supply map tile sources and geographic data, enabling visualization of locations and spatial information.
 platform: uwp
 control: SfMap
 documentation: ug
 ---
 
-# Map Providers in UWP Map (SfMaps)
+# Providers in UWP Maps
 
 The [`SfMap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html) control supports map providers such as `OpenStreetMap` and `Bing Map` that can be added to any layer in maps.
 

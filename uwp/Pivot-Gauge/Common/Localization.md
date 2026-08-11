@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Pivot Gauge control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
+title: Localization in UWP Pivot Gauge | Syncfusion®
+description: Localization in the UWP Pivot Gauge enables gauge content and user interface elements to be displayed in different languages and regional settings.
 platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---
 
-# Localization in UWP Pivot Gauge (SfPivotGauge)
+# Localization in UWP Pivot Gauge
 
 Localization is a key feature to provide software solutions targeted at global users. The [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) allows users to localize the control to a specific locale and supports "resx" based localization.
 

@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Zooming in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Zooming support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Zooming in UWP Sunburst Chart | Syncfusion®
+description: Zooming in the UWP Sunburst Chart enables users to focus on specific hierarchical data segments for detailed analysis and navigation.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Zooming in UWP Sunburst Chart (SfSunburstChart)
+# Zooming in UWP Sunburst Chart
 
 Sunburst chart provides zooming (drill down) experience with animation for both mouse and touch enabled devices. It allows you to virtualize large sets of data into minimum data view. 
 

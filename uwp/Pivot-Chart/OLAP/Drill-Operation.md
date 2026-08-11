@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Operation in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Drill Operation support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Drill Operation in UWP Pivot Chart | Syncfusion®
+description: Drill operation in the UWP Pivot Chart enables users to expand and collapse hierarchical data levels for detailed analysis and exploration.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Drill Operation in UWP Pivot Chart (SfPivotChart)
+# Drill Operation in UWP Pivot Chart
 
 This is the basic feature of SfPivotChart through which the amount of information can be limited for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the expanders present in primary axis labels.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotations in UWP Charts control | Syncfusion
-description: Learn here about how to add proper Annotations support in the chart area of Syncfusion® UWP Charts(SfChart) control and more.
+title: Annotations in UWP Chart | Syncfusion®
+description: Annotations in the UWP Chart display custom content within the chart area and support flexible positioning for enhanced data visualization.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Annotations in UWP Charts (SfChart)
+# Annotations in UWP Chart
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations), which allows you to mark the specific area of interest in the chart area. You can draw custom shapes, also text and images can be added using [`Annotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Annotations). 
 

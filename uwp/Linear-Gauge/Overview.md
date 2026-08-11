@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About UWP Linear Gauge control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Linear Gauge (SfLinearGauge) control, its elements and more.
+title: About Syncfusion® UWP Linear Gauge Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® UWP Linear Gauge control, its features, capabilities, and more details.
 platform: uwp
 control: SfLinearGauge
 documentation: ug
 ---
-# UWP Linear Gauge (SfLinearGauge) Overview
+# About Syncfusion® UWP Linear Gauge Control
 
 The [`SfLinearGauge`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfLinearGauge.html) displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and it is present in the horizontal, vertical sliding, or meter.
 

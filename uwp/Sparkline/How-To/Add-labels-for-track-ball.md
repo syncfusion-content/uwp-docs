@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add labels for track ball 
-description: Add labels for track ball
+title: How to add labels for track ball in UWP Sparkline | Syncfusion®
+description: Add labels for the track ball in the UWP Sparkline to display data values and customize label appearance during data interaction.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
 
-# Add labels for track ball
+# How to add labels for track ball in UWP Sparkline
 
 We can add labels for the track ball to show the corresponding values. In order to add labels for the trackball, you need to subscribe to the OnSparklineMouseMove event and you can get the following data from the event argument.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Symbology Settings in UWP Barcode control | Syncfusion
-description: Learn here all about Symbology Settings support in Syncfusion UWP Barcode (SfBarcode) control and more.
+title: Symbology Settings in UWP Barcode | Syncfusion®
+description: Symbology settings in the UWP Barcode allow you to configure barcode-specific encoding options and customize barcode generation.
 platform: uwp
 control: SfBarcode
 documentation: ug
 ---
 
-# Symbology Settings in UWP Barcode (SfBarcode)
+# Symbology Settings in UWP Barcode
 
 Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a Code39 Barcode.
 

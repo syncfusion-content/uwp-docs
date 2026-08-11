@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Labels in UWP Radial Gauge control | Syncfusion
-description: Learn here all about Labels support in Syncfusion UWP Radial Gauge (SfCircularGauge) control and more.
+title: Labels in UWP Radial Gauge | Syncfusion®
+description: Labels in the UWP Radial Gauge display scale values and support customization through styling, positioning, and appearance settings.
 platform: uwp
 control: SfCircularGauge
 documentation: ug
 ---
-# Labels in UWP Radial Gauge (SfCircularGauge)
+# Labels in UWP Radial Gauge
 
 The [`CircularScale`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.CircularScale.html) labels associate numeric values with major scale tick marks.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP OLAP Pivot Gauge control | Syncfusion
-description: Learn how to create and configure the Syncfusion UWP SfPivotGauge control, connect an OLAP data source, and bind OLAP reports through a WCF service.
+title: Getting Started with UWP OLAP Pivot Gauge | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP OLAP Pivot Gauge control. Explore setup, OLAP data binding, report configuration, and customization.
 platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---
 
-# Getting Started with OLAP Pivot Gauge (SfPivotGauge)
+# Getting Started with UWP OLAP Pivot Gauge
 
 >**Important**
 To start with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering a Syncfusion license key in your UWP application to use the components.

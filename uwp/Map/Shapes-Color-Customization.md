@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shapes Color Customization in UWP Map control | Syncfusion
-description: Learn here all about Shapes Color Customization support in Syncfusion UWP Map (SfMaps) control and more.
+title: Shapes Color Customization in UWP Maps | Syncfusion®
+description: Shapes color customization in the UWP Maps allows you to apply custom colors to map shapes for improved visualization and data representation.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Shapes Color Customization in UWP Map (SfMaps)
+# Shapes Color Customization in UWP Maps
 
 The [`SfMap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html) control provides extensive support for the customization of the shape's color. The shape's color can be customized using the following methods:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Markers in UWP Smith Chart control | Syncfusion
-description: Learn here all about Data Markers support in Syncfusion UWP Smith Chart (SfSmithChart) control and more.
+title: Data Markers in UWP Smith Chart | Syncfusion®
+description: Data markers in the UWP Smith Chart highlight individual data points with customizable shapes and styles for improved visualization.
 platform: uwp
 control: SfSmithChart
 documentation: ug
 ---
 
-# Data Markers in UWP Smith Chart (SfSmithChart)
+# Data Markers in UWP Smith Chart
 
 Data markers are used to provide information about a data point to the user. You can add a shape and label to adorn each data point.
 

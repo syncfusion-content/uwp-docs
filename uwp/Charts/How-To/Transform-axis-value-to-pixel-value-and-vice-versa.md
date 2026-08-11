@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transform axis value to pixel value | SfChart | Winrt | Syncfusion
-description: Learn how to transform axis values to pixel values and vice versa in SfChart using ValueToPoint and PointToValue utility methods.
+title: How to transform axis value to pixel in UWP Chart | Syncfusion®
+description: Transform axis values to pixel values and convert pixel values back to axis values in the UWP Chart for coordinate-based interactions.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Transform axis value to pixel value and vice versa
+# How to transform axis value to pixel value in UWP Chart
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) offers two utility methods for converting your data points into pixel values (device coordinates).
 

@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Data Label in UWP Sunburst Chart control | Syncfusion
-description: Learn here all about Data Label support in Syncfusion UWP Sunburst Chart (SfSunburstChart) control and more.
+title: Data Label in UWP Sunburst Chart | Syncfusion®
+description: Data labels in the UWP Sunburst Chart display segment values and information directly on the chart for improved readability.
 platform: uwp 
 control: SfSunburstChart 
 documentation: ug
 
 ---
 
-# Data Label in UWP Sunburst Chart (SfSunburstChart)
+# Data Label in UWP Sunburst Chart
 
 Sunburst data labels are used to display the data related to the segment. It helps to provide the information about the data points to the users. 
 
