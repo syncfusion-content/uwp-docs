@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Pivot Chart control | Syncfusion®
-description: This page explains how to set up and configure the Pivot Chart (SfPivotChart) control in a UWP application.
+title: Getting Started with UWP Pivot Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Pivot Chart control. Explore setup, configuration, features, and customization options.
 platform: uwp
 control: SfPivotChart
 documentation: ug

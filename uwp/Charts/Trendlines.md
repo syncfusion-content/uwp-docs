@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Trendlines in UWP Charts control | Syncfusion
-description: Learn here all about Trendlines support in Syncfusion® UWP Charts (SfChart) control, its elements, features, and more.
+title: Trendlines in UWP Charts | Syncfusion®
+description: Trendlines in the UWP Chart display data trends and patterns using fitted lines, helping analyze and predict data behavior.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Trendlines in UWP Charts (SfChart)
+# Trendlines in UWP Charts
 
 [`Trendlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_Trendlines) are used to analyze and display the trends in the data graphically. It is built on the assumptions based on current and past price trends. 
 

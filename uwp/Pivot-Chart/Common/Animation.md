@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animation in UWP Pivot Chart control | Syncfusion
-description: Learn here all about Animation support in Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Animation in UWP Pivot Chart | Syncfusion®
+description: Animation in the UWP Pivot Chart enables smooth transitions for chart series and data points, enhancing data visualization and user experience.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Animation in UWP Pivot Chart (SfPivotChart)
+# Animation in UWP Pivot Chart
 
 The SfPivotChart allows you to animate the chart series when loading and changing the data source. An animation in the chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_EnableAnimation) property to true and defining the corresponding animation speed with the [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_AnimationDuration) property.
 

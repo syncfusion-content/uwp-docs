@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ErrorBar in UWP Charts control | Syncfusion
-description: Learn here about how to add proper ErrorBar support to indicate error in reported values of Syncfusion® UWP Charts(SfChart) control.
+title: ErrorBar Chart in UWP Charts | Syncfusion®
+description: Error bars in the UWP Chart represent data variability and uncertainty, helping users analyze ranges, deviations, and accuracy.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# ErrorBar in UWP Charts (SfChart)
+# ErrorBar in UWP Charts
 
 [`ErrorBarSeries`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ErrorBarSeries.html) is used to indicate the errors or uncertainty in reported values. This will find the possible variations in measurements, and in Chart control these values are displayed as data points.
 

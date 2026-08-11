@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Vertical Charts in UWP Charts control | Syncfusion
-description: Learn everything about Vertical Charts support in Syncfusion® UWP Charts (SfChart) control and explore additional features.
+title: Vertical Charts in UWP Charts | Syncfusion®
+description: Vertical charts in the UWP Chart display series with transposed axes, enabling an alternative orientation for data visualization.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Vertical Charts in UWP Charts (SfChart)
+# Vertical Charts in UWP Charts
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides support for vertical charts. You can plot vertical chart for any chart using [`IsTransposed`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.CartesianSeries.html#Syncfusion_UI_Xaml_Charts_CartesianSeries_IsTransposed) and [`OpposedPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_OpposedPosition) properties.
 

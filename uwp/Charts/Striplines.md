@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Striplines in UWP Charts control | Syncfusion
-description: Learn everything about Striplines support in Syncfusion® UWP Charts (SfChart) control and explore additional features.
+title: Striplines in UWP Charts | Syncfusion®
+description: Striplines in the UWP Chart highlight specific ranges or regions on an axis, helping emphasize important values and thresholds.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Striplines in UWP Charts (SfChart)
+# Striplines in UWP Charts
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) allows you to add [`Striplines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.html#Syncfusion_UI_Xaml_Charts_ChartAxisBase2D_StripLines) to the chart, which shades the specific region or range in the plot area background at regular or custom intervals. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Pivot Chart control | Syncfusion
-description: Learn here all about introduction of Syncfusion® UWP Pivot Chart (SfPivotChart) control, its elements and more.
+title: About Syncfusion® UWP Pivot Chart Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® UWP Pivot Chart control, its features, capabilities, and more details.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# UWP Pivot Chart (SfPivotChart) Overview
+# About Syncfusion® UWP Pivot Chart Control
 
 The SfPivotChart control provides a variety of charting features that allow you to visualize data from both OLAP and relational data sources with rich customization. It has built-in support for drill-down and drill-up.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Scale Breaks in UWP Charts control | Syncfusion
-description: Learn here about how to add proper charts area Scale Breaks support in Syncfusion® UWP Charts (SfChart) control and more.
+title: Scale Breaks in UWP Charts | Syncfusion®
+description: Scale breaks in the UWP Chart skip specific value ranges on an axis, improving readability when displaying unevenly distributed data.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
-# Scale Breaks in UWP Charts (SfChart)
+# Scale Breaks in UWP Charts
 
 Scale break is a stripe drawn in the chart area to denote the break in the continuity of data points. Scale breaks are useful when there is a large difference in the data points. Scale break allows you to have different ranges on the same axis to visualize the data effectively.
 

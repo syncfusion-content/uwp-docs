@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Labels in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Labels support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+title: Label Customization in UWP Bullet Graph | Syncfusion®
+description: Learn Label Customization in UWP Bullet Graph using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Labels in UWP Bullet Graph (SfBulletGraph)
+# Label Customization in UWP Bullet Graph
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Charts control | Syncfusion
-description: Learn here about getting started with Syncfusion® UWP Charts (SfChart) control, its elements and more.
+title: Getting Started with UWP Charts control | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Charts control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# Getting Started with UWP Charts (SfChart)
+# Getting Started with UWP Charts
 
 This section explains the steps required to populate the Chart with data, header, add data labels, legend and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 

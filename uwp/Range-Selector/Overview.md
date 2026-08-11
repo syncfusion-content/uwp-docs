@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About UWP Range Selector control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Range Selector (SfDateTimeRangeNavigator) control, its elements and more.
+title: About Syncfusion® UWP Range Selector Control | Syncfusion®
+description: Learn about the introduction of Syncfusion Essential Studio® UWP Range Selector control, its features, capabilities, and more details.
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
-# UWP Range Selector (SfDateTimeRangeNavigator) Overview
+# About Syncfusion® UWP Range Selector Control
 
 The SfDateTimeRangeNavigator is a time-bound data visualization control. Its purpose is to allow scrolling and navigation through large periods of time. The control can be easily combined with other controls such as Chart, DataGrid, etc. to create rich and powerful dashboards.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataBinding in UWP Charts control | Syncfusion
-description: Learn all about DataBinding support in Syncfusion® UWP Charts (SfChart) control, its functionality, and more
+title: Data Binding in UWP Charts | Syncfusion®
+description: Data binding in the UWP Chart connects chart series to data sources, enabling dynamic visualization and automatic data updates.
 platform: uwp
 control: SfChart
 documentation: ug
 ---
 
-# DataBinding in UWP Charts (SfChart)
+# Data Binding in UWP Charts
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) offers [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property to bind various datasource ranges from simple collection property to complex properties.
 

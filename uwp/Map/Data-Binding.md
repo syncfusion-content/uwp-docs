@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in UWP Map control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion Essential UWP Map (SfMaps) control, its elements, and more.
+title: Data Binding in UWP Map | Syncfusion®
+description: Data binding in the UWP Maps connects geographic data sources to map elements, enabling dynamic visualization and interactive data representation.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Data Binding in UWP Map (SfMaps)
+# Data Binding in UWP Maps
 
 The following properties expose data binding in the [`SfMap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Maps.SfMap.html) control:
 

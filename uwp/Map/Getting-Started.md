@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Map control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio UWP Map (SfMaps) control, its elements and more.
+title: Getting Started with UWP Maps | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Maps control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Getting Started with UWP Map (SfMaps)
+# Getting Started with UWP Maps
 
 ## Creating Maps for a Windows Store App
 

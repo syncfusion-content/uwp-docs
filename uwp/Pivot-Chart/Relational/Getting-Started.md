@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Pivot Chart control | Syncfusion
-description: Learn here all about getting started with Syncfusion® UWP Pivot Chart (SfPivotChart) control and more.
+title: Getting Started with UWP Pivot Chart | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Pivot Chart control. Explore setup, configuration, features, and customization options.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Getting Started with UWP Pivot Chart (SfPivotChart)
+# Getting Started with UWP Pivot Chart
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion® assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion® license key in your UWP application to use the components.

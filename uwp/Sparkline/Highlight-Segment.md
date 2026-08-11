@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Highlight segment in UWP Sparkline control | Syncfusion
-description: Learn here all about Highlight segment support in Syncfusion UWP Sparkline (SfSparkline) control and more.
+title: Highlight Segment in UWP Sparkline | Syncfusion®
+description: Highlight segment in the UWP Sparkline emphasizes specific data points or ranges with distinct styling for improved data visibility.
 platform: uwp
 control: SfSparkline
 documentation: ug
 ---
-# Highlight segment in UWP Sparkline (SfSparkline)
+# Highlight Segment in UWP Sparkline 
 
 This feature enables highlighting the column segments on mouse move and this is applicable for column and win-loss sparklines.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in UWP Map control | Syncfusion
-description: Learn how to configure, position, and customize legends for shape and bubble layers in the Syncfusion UWP Map control using SfMaps properties.
+title: Legend in UWP Maps | Syncfusion®
+description: Legend in the UWP Maps identifies map elements, categories, and data ranges, helping users understand and interpret geographic data clearly.
 platform: uwp
 control: SfMaps
 documentation: ug
 ---
 
-# Legend in UWP Map (SfMaps)
+# Legend Customization in UWP Maps
 
 A legend is a key to the symbolism used on a map, usually containing swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying, and can be represented in various colors and shapes based on the data.
 

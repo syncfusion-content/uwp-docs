@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Measures in UWP Bullet Graph control | Syncfusion
-description: Learn here all about Measures support in Syncfusion UWP Bullet Graph (SfBulletGraph) control and more.
+title: Measures in UWP Bullet Graph | Syncfusion®
+description: Measures in the UWP Bullet Graph display actual values against targets, enabling performance comparison and progress evaluation.
 platform: uwp
 control: SfBulletGraph
 documentation: ug
 ---
 
-# Measures in UWP Bullet Graph (SfBulletGraph)
+# Measures in UWP Bullet Graph
 
 ## Featured measure
 

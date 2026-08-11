@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Paging in UWP Pivot Chart control | Syncfusion
-description: Learn about paging support in Syncfusion® UWP Pivot Chart (SfPivotChart), including navigation, configuration, and data management.
+title: Paging in UWP Pivot Chart | Syncfusion®
+description: Paging in the UWP Pivot Chart enables efficient navigation through large datasets, supporting data management and improved performance.
 platform: uwp
 control: SfPivotChart
 documentation: ug
 ---
 
-# Paging in UWP Pivot Chart (SfPivotChart)
+# Paging in UWP Pivot Chart
 
 The SfPivotChart supports loading and rendering large amounts of data without any performance constraint.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in UWP Pivot Gauge control | Syncfusion
-description: Learn here all about Appearance support in Syncfusion UWP Pivot Gauge (SfPivotGauge) control and more.
+title: Appearance in UWP Pivot Gauge | Syncfusion®
+description: Appearance in the UWP Pivot Gauge allows you to customize gauge visuals using themes, colors, styles, and layout options.
 platform: uwp
 control: SfPivotGauge
 documentation: ug
 ---
 
-# Appearance in UWP Pivot Gauge (SfPivotGauge)
+# Appearance in UWP Pivot Gauge
 
 ## Layout customization
 
