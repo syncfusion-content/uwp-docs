@@ -172,21 +172,21 @@ N> DataGrid creates different types of views derived from [ICollectionViewAdv](h
 <td>TableSummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the TableSummaryRows collection information. To know more about TableSummaries <a href="https://help.syncfusion.com/uwp/datagrid/summaries">click here</a>
+Maintains the TableSummaryRows collection information. To know more about Table Summaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#table-summary" aria-label="Learn more about DataGrid Table Summaries documentation" >Table Summaries</a> documentaion.
 </td> 
 </tr>
 <tr>
 <td>SummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the SummaryRows collection information. To know more about summaries <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries">click here</a>  
+Maintains the SummaryRows collection information. To know more about summaries, see the <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries" aria-label="Learn more about DataGrid  Summaries documentation">Summaries</a> documentation. 
 </td>
 </tr>
 <tr>
 <td>CaptionSummaryRows</td>
 <td>ISummaryRow</td>
 <td>
-Maintains the CaptionSummaryRow information. To know more about CaptionSummaries <a href="https://help.syncfusion.com/uwp/datagrid/summaries">click here</a>   
+Maintains the CaptionSummaryRow information. To know more about CaptionSummaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#caption-summaries" aria-label="Learn more about DataGrid Caption Summaries documentation">Caption Summaries</a> documentation.   
 </td>
 </tr>
 </table>

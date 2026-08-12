@@ -154,7 +154,7 @@ Here, row heights are customized based on the large text content.
 
 ![AutoFit RowHeight based on content Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img3.png)
 
-#### GridRowSizingOptions
+### GridRowSizingOptions
 
 [GridRowSizingOptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRowSizingOptions.html) have the following properties,
 
