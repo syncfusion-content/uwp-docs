@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Filtering in UWP DataGrid control | Syncfusion®
-description: Learn here all about Filtering support in UWP DataGrid (SfDataGrid) control with programmatic filtering, and more.
+title: Filtering in UWP SfDataGrid | Syncfusion®
+description: Filtering in SfDataGrid enables efficient data filtering through column filters and view predicates, providing flexible control over displayed records.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Programmatic filtering in UWP DataGrid (SfDataGrid)
+# Filtering in UWP SfDataGrid
 
 SfDataGrid allows you to filter the data programmatically in below ways
 
 * Through View Predicate
 * Through Column Filter
 
-### View Filtering
+## View Filtering
 
 View filtering can be achieved by setting [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_Filter) delegate. You can refresh the view by calling [SfDataGrid.View.RefreshFilter](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_RefreshFilter_System_Boolean_) method.
 
@@ -141,7 +141,7 @@ N>
 2.  UI filtering is not supported when using on-demand paging by setting `UseOnDemandPaging` to `true`.
 
 
-#### Built-in UI Views
+### Built-in UI Views
 
 SfDataGrid filter UI comprises of two different UIs. 
 
@@ -427,11 +427,11 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 {% endhighlight %}
 {% endtabs %}
 
-#### Checkbox Filter with AllowBlankFilters as True
+### Checkbox Filter with AllowBlankFilters as True
 
 ![Filter the NULL values by using the CheckBox Filter view in SfDataGrid UWP](Filtering_images/Filtering_img9.png)
 
-#### Advanced Filter with AllowBlankFilters as True
+### Advanced Filter with AllowBlankFilters as True
 
 ![Filter the NULL values by using the Advanced Filter view in SfDataGrid UWP](Filtering_images/Filtering_img10.png)
 
@@ -450,11 +450,11 @@ dataGrid.Columns["OrderID"].ImmediateUpdateColumnFilter = true;
 
 Here, the OK and Cancel buttons are unavailable and Done button is available to just close the popup.
 
-#### Checkbox Filter with ImmediateUpdateColumnFilter is True
+### Checkbox Filter with ImmediateUpdateColumnFilter is True
 
 ![Apply the immediate filter in CheckBox Filter view in DataGrid UWP](Filtering_images/Filtering_img11.png)
 
-#### Advanced Filter with ImmediateUpdateColumnFilter is True
+### Advanced Filter with ImmediateUpdateColumnFilter is True
 
 ![Apply the immediate filter in Advanced Filter view in DataGrid UWP](Filtering_images/Filtering_img12.png)
 

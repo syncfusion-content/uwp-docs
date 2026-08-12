@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in UWP DataGrid control | Syncfusion®
-description: Learn here all about Data Binding support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Data Binding in UWP SfDataGrid | Syncfusion®
+description: Data Binding in SfDataGrid provides flexible data source binding, collection management, and efficient data display capabilities.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Data Binding in UWP DataGrid (SfDataGrid)
+# Data Binding in UWP SfDataGrid
 
 SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
 
@@ -172,21 +172,21 @@ N> DataGrid creates different types of views derived from [ICollectionViewAdv](h
 <td>TableSummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the TableSummaryRows collection information. To know more about TableSummaries <a href="https://help.syncfusion.com/uwp/datagrid/summaries">click here</a>
+Maintains the TableSummaryRows collection information. To know more about Table Summaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#table-summary" aria-label="Learn more about DataGrid Table Summaries documentation" >Table Summaries</a> documentation.
 </td> 
 </tr>
 <tr>
 <td>SummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the SummaryRows collection information. To know more about summaries <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries">click here</a>  
+Maintains the SummaryRows collection information. To know more about summaries, see the <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries" aria-label="Learn more about DataGrid  Summaries documentation">Summaries</a> documentation.
 </td>
 </tr>
 <tr>
 <td>CaptionSummaryRows</td>
 <td>ISummaryRow</td>
 <td>
-Maintains the CaptionSummaryRow information. To know more about CaptionSummaries <a href="https://help.syncfusion.com/uwp/datagrid/summaries">click here</a>   
+Maintains the CaptionSummaryRow information. To know more about CaptionSummaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#caption-summaries" aria-label="Learn more about DataGrid Caption Summaries documentation">Caption Summaries</a> documentation.
 </td>
 </tr>
 </table>

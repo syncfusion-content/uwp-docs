@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in UWP DataGrid control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more details.
+title: Editing in UWP SfDataGrid | Syncfusion®
+description: Editing in SfDataGrid provides built-in features to add, modify, and update records with validation and customizable editing behavior.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Editing in UWP DataGrid (SfDataGrid)
+# Editing in UWP SfDataGrid
 
 SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 
@@ -45,7 +45,7 @@ N> [GridColumn.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xa
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_NavigationMode) to Cell to enable [CurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) navigation and editing.
 
 
-### Entering into edit mode
+## Entering into edit mode
 
 You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting by [EditTrigger](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_EditTrigger) property.
 
