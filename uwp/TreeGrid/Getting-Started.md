@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP TreeGrid control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP TreeGrid (SfTreeGrid) control, its elements and more.
+title: Getting Started with UWP SfTreeGrid | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP SfTreeGrid control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Getting Started with UWP TreeGrid (SfTreeGrid)
+# Getting Started with UWP SfTreeGrid
 
 The SfTreeGrid is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Data Validation support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
+title: Data Validation in UWP SfTreeGrid | Syncfusion®
+description: Validate data in the Syncfusion® UWP SfTreeGrid control. Supports built‑in and custom validation rules to ensure accurate input and maintain data integrity.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Data Validation in UWP TreeGrid (SfTreeGrid)
+# Data Validation in UWP SfTreeGrid
 
 SfTreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 
