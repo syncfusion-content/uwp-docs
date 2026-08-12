@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styles and Templates in UWP DataGrid control | Syncfusion®
-description: Learn here all about Styles and Templates support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Styles and Templates in UWP SfDataGrid | Syncfusion®
+description: Styles and templates in SfDataGrid let you customize cells, rows, headers, summaries, and visual elements to create tailored grid appearances.
 platform: uwp
 control: SfDataGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Styles and Templates in UWP DataGrid (SfDataGrid)
+# Styles and Templates in UWP SfDataGrid
 
 The appearance of SfDataGrid and its inner elements (example: Cell, Row, Header, Summary and etc.) can be customized using various properties exposed and editing its Style.
  
@@ -403,7 +403,7 @@ N> `GridColumn.CellStyle` takes higher priority than `SfDataGrid.CellStyle` prop
 
 ### Changing Grid line color
 
-You can also change the gridline color by setting [GridCell.BorderBrush](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.Windows.Controls.Control.BorderBrush)&rd=true) property.
+You can also change the gridline color by setting [GridCell.BorderBrush](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.control.borderbrush?view=windowsdesktop-10.0&f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk%28System.Windows.Controls.Control.BorderBrush%29%26rd%3Dtrue) property.
 
 {% tabs %}
 {% highlight xaml %}

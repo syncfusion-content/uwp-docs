@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Validation in UWP DataGrid control | Syncfusion®
-description: Learn here all about Data Validation support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Data Validation in UWP SfDataGrid | Syncfusion®
+description: Data Validation in SfDataGrid helps validate user input, display validation errors, and maintain accurate data with customizable validation rules.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# Data Validation in UWP DataGrid (SfDataGrid)
+# Data Validation in UWP SfDataGrid
 
 SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip. 
 

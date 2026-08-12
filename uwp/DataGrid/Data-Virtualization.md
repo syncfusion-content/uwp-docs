@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Virtualization in UWP DataGrid control | Syncfusion®
-description: Learn here all about Data Virtualization support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Data Virtualization in UWP SfDataGrid | Syncfusion®
+description: Data Virtualization in SfDataGrid enables efficient handling of large datasets through on-demand data loading and virtualization.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Data Virtualization in UWP DataGrid (SfDataGrid)
+# Data Virtualization in UWP SfDataGrid
 
 SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
