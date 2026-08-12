@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion UWP AI Coding Assistants Release Notes
 
-This document provides information about the changes and new features included in each version of the Syncfusion UWP AI Coding Assistants, including the Syncfusion.UWP.MCP MCP Server.
+This document provides information about the changes and new features included in each version of the Syncfusion UWP AI Coding Assistants, including the [Syncfusion.UWP.MCP](https://www.nuget.org/packages/Syncfusion.UWP.MCP) MCP Server.
 
 ## MCP Server
 
@@ -17,5 +17,5 @@ This document provides information about the changes and new features included i
 
 **Feature**
 
-- The Syncfusion.UWP.MCP .NET packages is now available on NuGet, enabling seamless integration of Syncfusion UWP controls with MCP-based workflows.
+- The [Syncfusion.UWP.MCP](https://www.nuget.org/packages/Syncfusion.UWP.MCP) .NET packages is now available on NuGet, enabling seamless integration of Syncfusion UWP controls with MCP-based workflows.
 - Introduced the **search_docs** coding assistant tool, which provides contextual documentation, code samples, API guidance, and configuration examples for Syncfusion controls directly within the development workflow.
