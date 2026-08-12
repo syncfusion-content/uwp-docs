@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip in UWP DataGrid control | Syncfusion®
-description: Learn here all about ToolTip support in Syncfusion® UWP DataGrid (SfDataGrid) control and more features.
+title: ToolTip in UWP SfDataGrid | Syncfusion®
+description: ToolTip in SfDataGrid displays additional information for cells, rows, and headers through customizable tooltip support.
 platform: uwp
 control: SfDataGrid
 documentation: ug
 ---
 
-# ToolTip in UWP DataGrid (SfDataGrid)
+# ToolTip in UWP SfDataGrid
 
 ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid.
 
@@ -213,10 +213,10 @@ You can get the sample from [here](http://www.syncfusion.com/downloads/support/d
 The [CellToolTipOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs when any tooltip of the cell is opened. The `CellToolTipOpening` event receives the [GridCellToolTipOpeningEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html) as argument which has the following properties:
 
 <ul>
-<li> <a href="https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Column">Column:</a> Gets the hovered cell column in the SfDataGrid.</li>
-<li> <a href="https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Record">Record:</a> Gets the data context of hovered cell.</li>
-<li> <a href="https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_RowColumnIndex">RowColumnIndex:</a> Gets the row and column index of the hovered cell.</li>
-<li> <a href="https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_ToolTip">ToolTip:</a> Gets the tooltip of the hovered cells.</li>
+<li> <a href="https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Column" aria-label="Learn more about the Column property in CellToolTipOpeningEventArgs">Column:</a> Gets the hovered cell column in the SfDataGrid.</li>
+<li> <a href="https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Record" aria-label="Learn more about the Record property in CellToolTipOpeningEventArgs">Record:</a> Gets the data context of hovered cell.</li>
+<li> <a href="https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_RowColumnIndex" aria-label="Learn more about the RowColumnIndex property in CellToolTipOpeningEventArgs">RowColumnIndex:</a> Gets the row and column index of the hovered cell.</li>
+<li> <a href="https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_ToolTip" aria-label="Learn more about the ToolTip property in CellToolTipOpeningEventArgs">ToolTip:</a> Gets the tooltip of the hovered cells.</li>
 </ul>
 
 {% tabs %}
