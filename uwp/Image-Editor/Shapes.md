@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Shapes in UWP Image Editor control | Syncfusion
-description: Learn here all about Shapes support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Shapes in UWP Image Editor | Syncfusion®
+description: Explore shapes support in Syncfusion® UWP Image Editor control including rectangles, circles, and arrows.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Shapes in UWP Image Editor (SfImageEditor)
+# Shapes in UWP Image Editor
 
 You can annotate any path on an image by using free hand drawing and adding texts and shapes.
 

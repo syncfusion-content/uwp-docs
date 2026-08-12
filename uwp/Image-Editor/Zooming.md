@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming in UWP Image Editor control | Syncfusion
-description: Learn here all about Zooming support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Zooming in UWP Image Editor | Syncfusion®
+description: Learn about zoom and pan operations in Syncfusion® UWP Image Editor control for detailed image editing.
 platform: UWP
 control: SfImageEditor
 documentation: ug
 ---
 
-# Zooming in UWP Image Editor (SfImageEditor)
+# Zooming in UWP Image Editor
 
 The image editor control provides support to zoom and pan actions over an image. You can zoom in and zoom out the image in image editor control.
 

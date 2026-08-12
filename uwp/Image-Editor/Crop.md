@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Crop in UWP Image Editor control | Syncfusion
-description: Learn here all about Crop with ratio support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Crop in UWP Image Editor | Syncfusion®
+description: Discover how to crop images in Syncfusion® UWP Image Editor control with ratio support and advanced features.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Crop in UWP Image Editor (SfImageEditor)
+# Crop in UWP Image Editor
 
 The image editor control gives you an option to crop the image as desired. Cropping the image can be done in following two ways:
 

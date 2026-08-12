@@ -1,13 +1,13 @@
 ---
 layout : post
-title: Serialization in UWP Image Editor control | Syncfusion
-description: Learn here all about Serialization support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Serialization in UWP Image Editor | Syncfusion®
+description: Discover serialization and deserialization features in Syncfusion® UWP Image Editor for saving and loading edits.
 platform : UWP
 control : ImageEditor
 documentation : ug
 ---
 
-# Serialization in UWP Image Editor (SfImageEditor)
+# Serialization in UWP Image Editor
  ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the image editor and Load it back when its needed.
 
 ## Serialization
