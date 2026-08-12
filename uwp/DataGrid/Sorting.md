@@ -177,7 +177,7 @@ You can implement [ISortDirection](https://help.syncfusion.com/cr/uwp/Syncfusion
  
 Follow the below steps to add custom comparer to sort using custom logic,
 
-#### Define custom comparer with custom sort logic
+### Define custom comparer with custom sort logic
 
 In the below code snippet, CustomerName property is compared based on its string length, instead of default string comparison.
   
