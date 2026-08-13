@@ -179,14 +179,14 @@ Maintains the TableSummaryRows collection information. To know more about Table 
 <td>SummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the SummaryRows collection information. To know more about summaries, see the <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries" aria-label="Learn more about DataGrid  Summaries documentation">Summaries</a> documentation.
+Maintains the SummaryRows collection information. To know more about summaries, see the <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries" aria-label="Learn more about DataGrid  Summaries documentation">Summaries</a> documentation. 
 </td>
 </tr>
 <tr>
 <td>CaptionSummaryRows</td>
 <td>ISummaryRow</td>
 <td>
-Maintains the CaptionSummaryRow information. To know more about CaptionSummaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#caption-summaries" aria-label="Learn more about DataGrid Caption Summaries documentation">Caption Summaries</a> documentation.
+Maintains the CaptionSummaryRow information. To know more about CaptionSummaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#caption-summaries" aria-label="Learn more about DataGrid Caption Summaries documentation">Caption Summaries</a> documentation.   
 </td>
 </tr>
 </table>
