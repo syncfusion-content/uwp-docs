@@ -11,7 +11,7 @@ documentation: ug
 
 The SfTreeGrid is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
 
-### Assembly Deployment
+## Assembly Deployment
 
 The following list of assemblies needs to be added as reference to use SfTreeGrid control in any application,
 
