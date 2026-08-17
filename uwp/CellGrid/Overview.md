@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP Excel-like Grid Control | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio® UWP Excel-like Grid control, its features and more details.
+description: Learn about the introduction of Syncfusion® Essential Studio UWP Excel-like Grid control, its features and more details.
 platform: uwp
 control: Excel-like Grid
 documentation: ug
