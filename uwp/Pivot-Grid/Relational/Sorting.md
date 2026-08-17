@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Sorting support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Sorting in UWP Pivot Grid | Syncfusion®
+description: Sorting in Syncfusion® UWP Pivot Grid control organizes data using built-in comparers or custom logic, with options to sort all, totals, or grand totals.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Sorting in UWP Pivot Grid (SfPivotGrid)
+# Sorting in UWP Pivot Grid
 
 Sorting enables you to quickly visualize and understand your data better. Ultimately, it allows you to organize and find the data by which you can make more effective decisions. By default, the SfPivotGrid holds built-in comparers for all data types so that it will populate the data in ascending/descending order based on its data type. You can also define own custom comparer to view the data.
 

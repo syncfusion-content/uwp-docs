@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Localization in UWP Pivot Grid | Syncfusion®
+description: Localization in Syncfusion® UWP Pivot Grid control enables culture-specific text, resource files, and RTL support to adapt applications for global users.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Localization in UWP Pivot Grid (SfPivotGrid)
+# Localization in UWP Pivot Grid
 
 Localization is the key feature for providing software solutions targeted at global users. SfPivotGrid allows users to localize the control to a specific locale and supports “resx” based localization.
 

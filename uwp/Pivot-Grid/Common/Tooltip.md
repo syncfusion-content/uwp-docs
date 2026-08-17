@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Tooltip support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Tooltip in UWP Pivot Grid | Syncfusion®
+description: Tooltip in Syncfusion® UWP Pivot Grid control displays cell information when hovering over header or value cells, improving clarity and usability.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Tooltip in UWP Pivot Grid (SfPivotGrid)
+# Tooltip in UWP Pivot Grid
 
 The SfPivotGrid additionally displays the cell information within a tooltip when the mouse pointer is moved over header cells or value cells.
 

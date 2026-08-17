@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KPI in UWP Pivot Grid control | Syncfusion
-description: Learn here all about KPI support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: KPI in UWP Pivot Grid | Syncfusion®
+description: KPI in Syncfusion® UWP Pivot Grid control displays business metrics like goal, status, trend, and value to evaluate performance using OLAP data.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# KPI in UWP Pivot Grid (SfPivotGrid)
+# KPI in UWP Pivot Grid
 
 KPI (Key Performance Indicator) is a collection of calculations that are associated with a measure group in a cube and are used to evaluate business success. Typically, these calculations are a combination of multi-dimensional expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how the applications should display the results of KPIs calculations.
 

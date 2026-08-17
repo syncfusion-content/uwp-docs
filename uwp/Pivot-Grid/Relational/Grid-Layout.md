@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Layout in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Grid Layout support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Grid Layout in UWP Pivot Grid | Syncfusion®
+description: Grid Layout in Syncfusion® UWP Pivot Grid control customizes summary cell positions with Normal or Top Summary layouts for flexible data presentation.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Grid Layout in UWP Pivot Grid (SfPivotGrid)
+# Grid Layout in UWP Pivot Grid
 
 The position of summary cells in the SfPivotGrid can be customized with the help of `GridLayout` property. It can be positioned at the top or bottom of value cells.
 

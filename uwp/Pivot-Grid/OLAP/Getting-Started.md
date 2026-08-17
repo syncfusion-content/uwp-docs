@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Pivot Grid control | Syncfusion
-description: This page explains how to set up and configure the Pivot Grid (SfPivotGrid) control in a UWP application.
+title: Getting Started with UWP Pivot Grid | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Pivot Grid control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Getting Started with UWP Pivot Grid (SfPivotGrid)
+# Getting Started with UWP Pivot Grid
 
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.

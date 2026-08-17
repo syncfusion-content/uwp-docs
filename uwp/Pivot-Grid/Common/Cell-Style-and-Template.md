@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Style and Template in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Cell Style and Template support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Cell Style and Template in UWP Pivot Grid | Syncfusion®
+description: Customize cell styles and templates in Syncfusion® UWP Pivot Grid control to format headers, values, and summaries with colors, fonts, and custom layouts.
 platform: UWP
 control: SfPivotGrid
 documentation: ug
 ---
 
-# Cell Style and Template in UWP Pivot Grid (SfPivotGrid)
+# Cell Style and Template in UWP Pivot Grid
 
 ## Cell style
 
