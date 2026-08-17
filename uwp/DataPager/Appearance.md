@@ -164,7 +164,7 @@ You can display the ellipsis button before and after the numeric buttons.{{'![El
 <tr>
 <td>
 None</td><td>
-It does not display the AutoEllipsisButton.{{'![Elipsis Button Doesn't Not Shown](Appearance_images/Appearance_img22.jpeg)'|markdownify}}
+It does not display the AutoEllipsisButton.{{'![Elipsis Button Does Not Shown](Appearance_images/Appearance_img22.jpeg)'|markdownify}}
 </td></tr>
 </table>
 The following code example explains how to change the `AutoEllipsisText`.
