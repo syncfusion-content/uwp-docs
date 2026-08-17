@@ -2,7 +2,7 @@
 layout: post
 title: All-Level Type Member in UWP Pivot Grid | Syncfusion®
 description: All-Level Type Member in Syncfusion® UWP Pivot Grid shows an all parent level across rows and columns to manage hierarchy visibility.
-platform: UWP
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---

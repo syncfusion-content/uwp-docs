@@ -2,7 +2,7 @@
 layout: post
 title: Serialization and Deserialization in UWP Pivot Grid | Syncfusion®
 description: Serialization and Deserialization in Syncfusion® UWP Pivot Grid control save and restore grid settings using XML files, streams, storage, or strings.
-platform: UWP
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---

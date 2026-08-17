@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion UWP Pivot Grid Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio UWP Pivot Grid control and exploring its features.
-platform: UWP
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---

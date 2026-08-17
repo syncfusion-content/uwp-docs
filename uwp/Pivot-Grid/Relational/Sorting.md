@@ -2,7 +2,7 @@
 layout: post
 title: Sorting in UWP Pivot Grid | Syncfusion®
 description: Sorting in Syncfusion® UWP Pivot Grid control organizes data using built-in comparers or custom logic, with options to sort all, totals, or grand totals.
-platform: UWP
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---

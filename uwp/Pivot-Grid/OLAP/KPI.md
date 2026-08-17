@@ -2,7 +2,7 @@
 layout: post
 title: KPI in UWP Pivot Grid | Syncfusion®
 description: KPI in Syncfusion® UWP Pivot Grid control displays business metrics like goal, status, trend, and value to evaluate performance using OLAP data.
-platform: UWP
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---

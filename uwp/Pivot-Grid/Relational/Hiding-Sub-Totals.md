@@ -47,7 +47,7 @@ Me.pivotGrid1.ShowSubTotals = False
 
 ## Hiding only the row subtotals
 
-The subtotal values of pivot rows can only be hidden by using the [ShowRowSubTotals](https://help.syncfusion.com/cr/wpf/https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_ShowRowSubTotals) property. Refer to the following code sample to hide only the subtotal values of pivot rows in the pivot grid.
+The subtotal values of pivot rows can only be hidden by using the [ShowRowSubTotals](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.PivotGrid.PivotGridControl.html#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_ShowRowSubTotals) property. Refer to the following code sample to hide only the subtotal values of pivot rows in the pivot grid.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ Me.pivotGrid1.ShowRowSubTotals = False
 
 ## Hiding only the column subtotals 
 
-The subtotal values of pivot columns can only be hidden by using the [ShowColumnSubTotals](https://help.syncfusion.com/cr/wpf/https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_ShowColumnSubTotals) property. Refer to the following code sample to hide only the subtotal values of pivot columns in the pivot grid.
+The subtotal values of pivot columns can only be hidden by using the [ShowColumnSubTotals](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.PivotGrid.PivotGridControl.html#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_ShowColumnSubTotals) property. Refer to the following code sample to hide only the subtotal values of pivot columns in the pivot grid.
 
 {% tabs %}
 

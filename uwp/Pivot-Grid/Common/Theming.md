@@ -2,7 +2,7 @@
 layout: post
 title: Theming in UWP Pivot Grid | Syncfusion®
 description: Theming in Syncfusion® UWP Pivot Grid control lets you apply built-in visual styles like Metro, Office, and Visual Studio themes for a customized look.
-platform: UWP
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---

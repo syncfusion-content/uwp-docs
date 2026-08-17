@@ -2,7 +2,7 @@
 layout: post
 title: Conditional Formatting in UWP Pivot Grid | Syncfusion®
 description: Apply conditional formatting in Syncfusion® UWP Pivot Grid control to highlight cells dynamically based on conditions, values, and custom styles.
-platform: UWP
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---

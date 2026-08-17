@@ -2,7 +2,7 @@
 layout: post
 title: Freeze Headers in UWP Pivot Grid | Syncfusion®
 description: Freeze Headers in Syncfusion® UWP Pivot Grid control keeps row and column headers visible during scrolling to improve readability and navigation.
-platform: UWP
+platform: uwp
 control: SfPivotGrid
 documentation: ug
 ---
