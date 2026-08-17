@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in UWP SfTreeGrid | Syncfusion®
-description: Localize the Syncfusion® UWP SfTreeGrid control. Supports changing culture, language, and text resources to deliver region‑specific user experiences.
+description: Localization in UWP SfTreeGrid supports changing culture, language, and resource files to deliver region-specific user experiences.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

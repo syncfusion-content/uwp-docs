@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in UWP SfTreeGrid | Syncfusion®
-description: Filter data in the Syncfusion® UWP SfTreeGrid control. Supports built‑in filter options and customization to refine and display hierarchical data effectively.
+description: Filtering in UWP SfTreeGrid supports programmatic filtering and customization to refine and display hierarchical node data.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
