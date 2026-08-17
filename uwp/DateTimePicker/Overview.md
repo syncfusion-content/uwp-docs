@@ -13,9 +13,9 @@ The SfDateTimeCombo control displays each part of a date or time in a separate D
 
 ![DateTimeCombo displayed date and time with dropdown option to select date and time](Overview_images/Overview_img1.png)
 
-### Key Features
+## Key Features
 
-Formatting – The control displays the selected date value in various formats.
+- **Formatting** – The control displays the selected date value in various formats.
 
-Customization – Each DateTimeItem displayed in this control contains date or time parts that can be customized.
+- **Customization** – Each DateTimeItem displayed in this control contains date or time parts that can be customized.
 

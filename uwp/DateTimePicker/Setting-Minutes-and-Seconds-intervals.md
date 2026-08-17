@@ -54,19 +54,10 @@ combo.SecondsInterval = 15
 
 {% endtabs %}
 
-### MinuteInterval
-
-![Minutes-and-Seconds-intervals_img1](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img1.png)
-
-
-
-
-
-### SecondsInterval
+## MinuteInterval
 
 ![Minutes-and-Seconds-intervals_img2](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img2.png)
 
+## SecondsInterval
 
-
-
-
+![Minutes-and-Seconds-intervals_img1](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img1.png)
