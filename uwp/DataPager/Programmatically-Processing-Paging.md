@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Programmatically Processing Paging in UWP DataPager control | Syncfusion®
-description: Learn here all about Programmatically Processing Paging support in Syncfusion® UWP DataPager (SfDataPager) control and more.
+title: Programmatically Processing Paging in UWP SfDataPager | Syncfusion®
+description: The programmatic paging feature in SfDataPager enables managing page navigation, page indexes, page counts, and paging events at runtime.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
-# Programmatically Processing Paging in UWP DataPager (SfDataPager)
+# Programmatically Processing Paging in UWP SfDataPager
 
 
 ## Changing PageIndex at runtime

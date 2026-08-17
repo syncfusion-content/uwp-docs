@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Importing in UWP CellGrid control | Syncfusion®
-description: Learn here all about Importing support in Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more details.
+title: Importing in UWP Excel-like Grid | Syncfusion®
+description: The importing feature in Excel-like Grid enables loading Excel data, styles, formatting, and worksheets from streams, files, and storage sources.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Importing in UWP CellGrid (SfCellGrid)
+# Importing in UWP Excel-like Grid
 
 The `ExcelImportExtension` class is used to import entire cells from the Excel sheet to SfCellGrid. 
 

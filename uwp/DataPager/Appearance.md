@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance in UWP DataPager control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® UWP DataPager (SfDataPager) control and more.
+title: Appearance in UWP SfDataPager | Syncfusion®
+description: The appearance feature in SfDataPager enables customization of display modes, button counts, orientation, ellipsis behavior, and visual styling.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
-# Appearance in UWP DataPager (SfDataPager)
+# Appearance in UWP SfDataPager
 
 ## Display Modes
 

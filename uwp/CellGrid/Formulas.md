@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formulas in UWP CellGrid control | Syncfusion®
-description: Learn here all about Formulas support in Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more details.
+title: Formulas in UWP Excel-like Grid | Syncfusion®
+description: The formulas feature in Excel-like Grid provides automated calculations with over 400 built-in functions for financial, statistical, mathematical operations.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Formulas in UWP CellGrid (SfCellGrid)
+# Formulas in UWP Excel-like Grid
 
 SfCellGrid calculation engine offers automated calculation over a formula, expression. SfCellGrid`s calculation engine is preloaded with 409 formulas covering a broad range of business functions.
 

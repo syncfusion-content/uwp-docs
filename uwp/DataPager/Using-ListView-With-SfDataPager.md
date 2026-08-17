@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Using Listview with SfDataPager in UWP DataPager control | Syncfusion®
-description: Learn here all about Using Listview with SfDataPager support in Syncfusion® UWP DataPager (SfDataPager) control and more.
+title: Using ListView with UWP SfDataPager | Syncfusion®
+description: The ListView integration feature in SfDataPager enables binding paged data sources to ListView controls for efficient data navigation and display.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
 
-# Using Listview with SfDataPager in UWP DataPager (SfDataPager)
+# Using ListView with UWP SfDataPager
 
 [SfDataPager](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#) automatically wraps the collection in [PagedCollectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.PagedCollectionView.html) and exposes to the [PagedSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) property. You can pass the `PagedSource` property to bind with any ItemsControl’s ItemsSource property. Here, the `PagesSource` property is bound to the ListBox.
 
