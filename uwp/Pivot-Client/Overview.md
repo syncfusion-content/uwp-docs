@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Pivot Client control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP Pivot Client (SfPivotClient) control, its elements and more.
+title: About Syncfusion UWP Pivot Client Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio UWP Pivot Client control and exploring its features.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# UWP Pivot Client (SfPivotClient) Overview
+# About Syncfusion® UWP Pivot Client Control.
 
 The SfPivotClient control supports browsing multidimensional data that is organized in the form of dimensions, measures, named sets, and KPIs in a cube format. You can visualize the results in graphical (pivot chart) and tabular (pivot grid) formats. The control can also be used to create and edit reports on-the-fly that are stored for later use.
 

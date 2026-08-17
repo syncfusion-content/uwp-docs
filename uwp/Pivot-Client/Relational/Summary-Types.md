@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Summary Types in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Summary Types support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Summary Types in UWP Pivot Client | Syncfusion®
+description: Summary Types in Syncfusion® UWP Pivot Client control compute totals, averages, counts, variance, and custom summaries for OLAP data analysis.
 platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
 
-# Summary Types in UWP Pivot Client (SfPivotClient)
+# Summary Types in UWP Pivot Client
 
 The SfPivotClient supports summarizing the data for various data types by using the `SummaryType` property. This property should be defined while defining the pivot calculation by using the `PivotComputationInfo` class to specify the summary type. It holds the following summary types:
 

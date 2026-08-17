@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotClient: Components in UWP Pivot Client control | Syncfusion®
-description: Learn here all about PivotClient: Components support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Components in UWP Pivot Client | Syncfusion®
+description: Components in Syncfusion® UWP Pivot Client include cube selector, dimension browser, axis builder, editors, toolbar, and report management features.
 platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
 
-# PivotClient: Components in UWP Pivot Client (SfPivotClient)
+# Components in UWP Pivot Client
 
 ## Cube selector
 

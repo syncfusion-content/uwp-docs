@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting in UWP Pivot Client control | Syncfusion
-description: Learn here all about Exporting support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
+title: Exporting in UWP Pivot Client | Syncfusion®
+description: Exporting in Syncfusion® UWP Pivot Client control saves pivot grid and chart data to Excel, Word, PDF, CSV, or image formats for reporting and analysis.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Exporting in UWP Pivot Client (SfPivotClient)
+# Exporting in UWP Pivot Client
 
 ## Exporting pivot grid
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Excel-Like Filtering in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Excel-Like Filtering and Sorting support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Excel-Like Filtering and Sorting in UWP Pivot Client | Syncfusion®
+description: Excel-like Filtering and Sorting in Syncfusion® UWP Pivot Client control enables sorting, label filters, and value filters to refine OLAP data interactively.
 platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
 
-# Excel-Like Filtering and Sorting in UWP Pivot Client (SfPivotClient)
+# Excel-Like Filtering and Sorting in UWP Pivot Client
 
 The SfPivotClient control supports Excel-like filtering and sorting that is applied to a pivot item. You can enable or disable the Excel-like sorting and filtering support in the SfPivotClient by setting the `AllowMultiFunctionalSortFilter` property.
 

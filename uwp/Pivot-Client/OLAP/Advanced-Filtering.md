@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Advanced Filtering in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Advanced Filtering support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Advanced Filtering in UWP Pivot Client | Syncfusion®
+description: Advanced Filtering in Syncfusion® UWP Pivot Client control enables label and value filters, allowing precise member selection for refined data analysis.
 platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
 
-# Advanced Filtering in UWP Pivot Client (SfPivotClient)
+# Advanced Filtering in UWP Pivot Client
 
 The SfPivotClient provides an advanced filtering support through which members can be filtered based on value and label fields, and this can be achieved with the help of `EnableAdvancedFilter` property. The following code snippet illustrates how to enable **Advanced Filtering** in the SfPivotClient.
 

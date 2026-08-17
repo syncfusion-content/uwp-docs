@@ -1,13 +1,13 @@
 ---
 layout: post
-title: KPI in UWP Pivot Client control | Syncfusion®
-description: Learn here all about KPI support in Syncfusion® UWP Pivot Client (SfPivotClient) control, its elements and more details.
+title: KPI in UWP Pivot Client | Syncfusion®
+description: KPI in Syncfusion® UWP Pivot Client control displays business metrics like goal, status, trend, and value to evaluate performance using OLAP data.
 platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
 
-# KPI in UWP Pivot Client (SfPivotClient)
+# KPI in UWP Pivot Client
 
 Key Performance Indicator (KPI) is a business metric that helps to figure out the progress of an enterprise when meeting its business goals. Typically, these calculations are a combination of Multi-Dimensional Expressions (MDX) or calculated members. The KPIs also have an additional metadata that provides information about how the client applications should display the results of KPI’s calculations.
 

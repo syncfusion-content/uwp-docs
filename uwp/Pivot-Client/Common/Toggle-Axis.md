@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Toggle Axis in UWP Pivot Client control | Syncfusion
-description: Learn here all about Toggle Axis support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
+title: Toggle Axis in UWP Pivot Client | Syncfusion®
+description: Toggle Axis in Syncfusion® UWP Pivot Client control swaps row and column axis elements, refreshing Pivot Grid and Pivot Chart views for dynamic analysis.
 platform: UWP
 control: SfPivotClient
 documentation: ug
 ---
 
-# Toggle Axis in UWP Pivot Client (SfPivotClient)
+# Toggle Axis in UWP Pivot Client
 
 Toggle axis support swaps all the axis elements between column and row axes, which in turn refreshes the view of the SfPivotChart and SfPivotGrid. This option is available in the toolbar of the SfPivotClient.
 

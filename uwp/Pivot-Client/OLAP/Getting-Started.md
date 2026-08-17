@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Pivot Client control | Syncfusion®
-description: Learn here all about getting started with Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Getting Started with UWP Pivot Client | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Pivot Client control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
 
-# Getting Started with UWP Pivot Client (SfPivotClient)
+# Getting Started with UWP Pivot Client
 
 >**Important**
 To start with v16.2.0.x, if you reference Syncfusion assemblies from a trial setup or NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
