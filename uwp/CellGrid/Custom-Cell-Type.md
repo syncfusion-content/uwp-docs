@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Cell Type in UWP CellGrid control | Syncfusion®
-description: Learn here all about Custom Cell Type support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
+title: Custom Cell Type in UWP Excel-like Grid | Syncfusion®
+description: The custom cell type feature in Excel-like Grid allows loading custom controls and modifying built-in cell behaviors through custom renderers.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Custom Cell Type in UWP CellGrid (SfCellGrid)
+# Custom Cell Type in UWP Excel-like Grid
 
 SfCellGrid provides support to customize the cell by loading any user control into the cell.
 
