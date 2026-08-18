@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP CellGrid control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more.
+title: About Syncfusion® UWP Excel-like Grid Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio UWP Excel-like Grid control, its features and more details.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# UWP CellGrid (SfCellGrid) Overview
+# About Syncfusion® UWP Excel-like Grid Control
 
 The cell-oriented Grid Control is a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data. It can be used in a virtual manner where the data is provided on demand in real time. 
 

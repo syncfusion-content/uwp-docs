@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Styles in UWP CellGrid control | Syncfusion®
-description: Learn here all about Cell Styles support in Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more details.
+title: Cell Styles in UWP Excel-like Grid | Syncfusion®
+description: The cell styles feature in Excel-like Grid enables customization of cells, rows, columns, headers, and footers with rich styling options.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Cell Styles in UWP CellGrid (SfCellGrid)
+# Cell Styles in UWP Excel-like Grid
 
 This section explains about how to apply the cell styles to customize the appearance in SfCellGrid.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Pages in UWP DataPager control | Syncfusion®
-description: Learn here all about Populating Pages support in Syncfusion® UWP DataPager (SfDataPager) control and more.
+title: Populating Pages in UWP SfDataPager | Syncfusion®
+description: The populating pages feature in SfDataPager supports data binding and on-demand paging to efficiently load and display paged data.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
 
-# Populating Pages in UWP DataPager (SfDataPager)
+# Populating Pages in UWP SfDataPager
 
 ## Binding with data
 

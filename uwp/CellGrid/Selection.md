@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in UWP CellGrid control | Syncfusion®
-description: Learn here all about Selection support in Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more details.
+title: Selection in UWP Excel-like Grid | Syncfusion®
+description: The selection feature in Excel-like Grid enables cell and range selection with keyboard, mouse, touch interactions, and navigation support.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Selection in UWP CellGrid (SfCellGrid)
+# Selection in UWP Excel-like Grid
 
 This section explains about the Selection behavior in SfCellGrid.
 

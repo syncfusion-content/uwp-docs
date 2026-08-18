@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows and Columns in UWP CellGrid control | Syncfusion®
-description: Learn here all about Rows and Columns support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
+title: Rows and Columns in UWP Excel-like Grid | Syncfusion®
+description: The rows and columns feature in Excel-like Grid supports inserting, deleting, hiding, resizing, freezing, and managing rows and columns dynamically.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Rows and Columns in UWP CellGrid (SfCellGrid)
+# Rows and Columns in UWP Excel-like Grid
 
 This section explains the operations related with rows and columns in the SfCellGrid.
 

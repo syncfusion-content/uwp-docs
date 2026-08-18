@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Appearance in UWP DataPager control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® UWP DataPager (SfDataPager) control and more.
+title: Appearance in UWP SfDataPager | Syncfusion®
+description: The appearance feature in SfDataPager enables customization of display modes, button counts, orientation, ellipsis behavior, and visual styling.
 platform: uwp
 control: SfDataPager
 documentation: ug
 ---
-# Appearance in UWP DataPager (SfDataPager)
+# Appearance in UWP SfDataPager
 
 ## Display Modes
 
@@ -20,57 +20,57 @@ Description</th></tr>
 <tr>
 <td>
 FirstLastPreviousNextNumeric</td><td>
-Displays all the navigation buttons and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/1.png](Appearance_images/Appearance_img16.jpeg)'| markdownify }}
+Displays all the navigation buttons and numeric page buttons.{{'![Navigation Buttons and Numeric Page buttons](Appearance_images/Appearance_img16.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 FirstLastNumeric</td><td>
-Displays the first page, last page navigation button and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/2.png](Appearance_images/Appearance_img1.jpeg)'| markdownify }}
+Displays the first page, last page navigation button and numeric page buttons.{{'![First page, Last page Navigation Button and Numeric Page Buttons](Appearance_images/Appearance_img1.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 PreviousNextNumeric</td><td>
-Displays the previous, next page navigation buttons and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/3.png](Appearance_images/Appearance_img2.jpeg)'| markdownify }}
+Displays the previous, next page navigation buttons and numeric page buttons.{{'![Previous, Next page Navigation Buttons and Numeric Page Buttons](Appearance_images/Appearance_img2.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 FirstLastPreviousNext</td><td>
-Displays only the page navigation buttons. Numeric page buttons are not displayed.{{'![B:/Support/2015/April/24/Image/DataPager/4.png](Appearance_images/Appearance_img3.jpeg)'| markdownify }}
+Displays only the page navigation buttons. Numeric page buttons are not displayed.{{'![Page Navigation Buttons](Appearance_images/Appearance_img3.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 FirstLast</td><td>
-Displays only the first and last page navigation buttons.{{'![B:/Support/2015/April/24/Image/DataPager/5.png](Appearance_images/Appearance_img4.jpeg)'| markdownify }}
+Displays only the first and last page navigation buttons.{{'![First and Last Page Navigation Buttons](Appearance_images/Appearance_img4.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 PreviousNext</td><td>
-Displays only the previous and next page navigation buttons.{{'![B:/Support/2015/April/24/Image/DataPager/6.png](Appearance_images/Appearance_img5.jpeg)'| markdownify }}
+Displays only the previous and next page navigation buttons.{{'![Previous and Next Page Navigation Buttons](Appearance_images/Appearance_img5.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Numeric</td><td>
-Displays only the numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/7.png](Appearance_images/Appearance_img6.jpeg)'| markdownify }}
+Displays only the numeric page buttons.{{'![Numeric Page Buttons](Appearance_images/Appearance_img6.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 First</td><td>
-Displays only the first page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/8.png](Appearance_images/Appearance_img7.jpeg)'| markdownify }}
+Displays only the first page navigation button.{{'![First Page Navigation Button](Appearance_images/Appearance_img7.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Last</td><td>
-Displays only the last page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/9.png](Appearance_images/Appearance_img8.jpeg)'| markdownify }}
+Displays only the last page navigation button.{{'![Last Page Navigation Button](Appearance_images/Appearance_img8.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Previous</td><td>
-Displays only the previous page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/10.png](Appearance_images/Appearance_img9.jpeg)'| markdownify }}
+Displays only the previous page navigation button.{{'![Previous Page Navigation Button](Appearance_images/Appearance_img9.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
 Next</td><td>
-Displays only the next page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/11.png](Appearance_images/Appearance_img10.jpeg)'| markdownify }}
+Displays only the next page navigation button.{{'![Next Page Navigation Button](Appearance_images/Appearance_img10.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
@@ -124,12 +124,12 @@ Description</th></tr>
 <tr>
 <td>
 Horizontal</td><td>
-This is the default enum value for Orientation. Arranges all the Navigation Buttons and Numeric Buttons Horizontally.{{'![B:/Support/2015/April/24/Image/DataPager/3.png](Appearance_images/Appearance_img18.jpeg)'|markdownify}}
+This is the default enum value for Orientation. Arranges all the Navigation Buttons and Numeric Buttons Horizontally.{{'![Navigation Buttons and Numeric Buttons Horizontal Orientation](Appearance_images/Appearance_img18.jpeg)'|markdownify}}
 </td></tr>
 <tr>
 <td>
 Vertical</td><td>
-Arranges all the Navigation Buttons and Numeric Buttons Vertically.{{'![B:/Support/2015/April/24/Image/DataPager/figure12.png](Appearance_images/Appearance_img17.jpeg)'|markdownify}}
+Arranges all the Navigation Buttons and Numeric Buttons Vertically.{{'![Navigation Buttons and Numeric Buttons Vertical Orientation](Appearance_images/Appearance_img17.jpeg)'|markdownify}}
 </td></tr>
 </table>
 
@@ -152,19 +152,19 @@ Description</th></tr>
 <tr>
 <td>
 After</td><td>
-You can display the ellipsis button after numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/AutoElipseafter.png](Appearance_images/Appearance_img19.jpeg)'|markdownify}}</td></tr>
+You can display the ellipsis button after numeric buttons.{{'![Ellipsis Button After Numeric Buttons](Appearance_images/Appearance_img19.jpeg)'|markdownify}}</td></tr>
 <tr>
 <td>
 Before</td><td>
-You can display the ellipsis button before numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/before.png](Appearance_images/Appearance_img20.jpeg)'|markdownify}}</td></tr>
+You can display the ellipsis button before numeric buttons.{{'![Ellipsis Button Before Numeric Buttons](Appearance_images/Appearance_img20.jpeg)'|markdownify}}</td></tr>
 <tr>
 <td>
 Both</td><td>
-You can display the ellipsis button before and after the numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/both.png](Appearance_images/Appearance_img21.jpeg)'|markdownify}}</td></tr>
+You can display the ellipsis button before and after the numeric buttons.{{'![Ellipsis Button Before and After Numeric Buttons](Appearance_images/Appearance_img21.jpeg)'|markdownify}}</td></tr>
 <tr>
 <td>
 None</td><td>
-It does not display the AutoEllipsisButton.{{'![B:/Support/2015/April/24/Image/DataPager/none.png](Appearance_images/Appearance_img22.jpeg)'|markdownify}}
+It does not display the AutoEllipsisButton.{{'![Elipsis Button Does Not Shown](Appearance_images/Appearance_img22.jpeg)'|markdownify}}
 </td></tr>
 </table>
 The following code example explains how to change the `AutoEllipsisText`.
