@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Picker control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Picker (SfPicker) control, its elements and more.
+title: About Syncfusion UWP Picker Control | Syncfusion
+description: Learn about introduction of Syncfusion UWP Picker control. Explore its key features, elements, and more details.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# UWP Picker (SfPicker) Overview
+# About Syncfusion UWP Picker Control
 
 The picker control allows users to pick an item among a list of items that can be customized with custom view. This control can be opened as dialog. Its rich feature set includes functionalities like multi column, header/footer, custom view on header/footer and default validation buttons.
 

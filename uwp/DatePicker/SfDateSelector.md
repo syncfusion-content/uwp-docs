@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SfDateSelector in UWP DatePicker control | Syncfusion®
-description: Learn here all about SfDateSelector support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
+title: SfDateSelector in UWP DatePicker control | Syncfusion
+description: Learn how to customize the header and visual elements of the SfDateSelector in the Syncfusion UWP DatePicker (SfDatePicker) control.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# SfDateSelector in UWP DatePicker (SfDatePicker)
+# SfDateSelector in UWP DatePicker
 
 The SfDateSelector control opens inside the drop-down popup.
 

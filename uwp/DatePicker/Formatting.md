@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting in UWP DatePicker control | Syncfusion®
-description: Learn here all about Formatting support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
+title: Formatting in UWP DatePicker control | Syncfusion
+description: Learn how to format the display text and selector items in the Syncfusion UWP DatePicker (SfDatePicker) control.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# Formatting in UWP DatePicker (SfDatePicker)
+# Formatting in UWP DatePicker
 
 The SfDatePicker control allows the user to format the display text in various ways.
 
