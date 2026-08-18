@@ -65,7 +65,7 @@ Displays only the last page navigation button.{{'![Last Page Navigation Button](
 <tr>
 <td>
 Previous</td><td>
-Displays only the previous page navigation button.{{'![previous Page Navigation Button](Appearance_images/Appearance_img9.jpeg)'| markdownify }}
+Displays only the previous page navigation button.{{'![Previous Page Navigation Button](Appearance_images/Appearance_img9.jpeg)'| markdownify }}
 </td></tr>
 <tr>
 <td>
