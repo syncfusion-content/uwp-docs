@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with UWP Picker | Syncfusion
 description: Learn how to get started with the Syncfusion UWP Picker control. Explore setup, features, examples, and customization options.
-platform: UWP
+platform: uwp
 control: Picker
 documentation: ug
 ---

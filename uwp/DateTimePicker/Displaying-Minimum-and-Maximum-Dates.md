@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Minimum and Maximum Dates in UWP DateTimePicker control | Syncfusion
+title: Display Minimum and Maximum Dates in UWP DateTimePicker | Syncfusion
 description: Learn how to set the minimum and maximum display dates in the Syncfusion UWP DateTimePicker (SfDateTimeCombo) control.
 platform: uwp
 control: SfDateTimeCombo
