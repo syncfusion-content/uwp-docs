@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time Picker in UWP Picker control | Syncfusion
-description: Learn how to create a custom time picker using the Syncfusion UWP Picker (SfPicker) control.
+description: Learn how to create and customize a time picker with the Syncfusion UWP SfPicker control, including time selection, formatting, and interaction.
 platform: uwp
 control: SfPicker
 documentation: ug

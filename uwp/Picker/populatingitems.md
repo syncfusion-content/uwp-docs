@@ -235,7 +235,7 @@ In SfPicker, items text color and font both selected and unselected item of SfPi
 
 ### Selected Item Customization
 
-##### Text Color 
+#### Text Color 
 
 Selected item text color can be customized by setting `SfPicker.SelectedItemForeground` property of SfPicker.
 
@@ -480,7 +480,7 @@ Selected item text FontAttribute can be customized by setting `SfPicker.Selected
 
 ### UnSelected Item Customization
 
-##### Text Color
+#### Text Color
 
 Unselected item text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property of SfPicker.
 

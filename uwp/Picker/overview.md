@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion UWP Picker Control | Syncfusion
 description: Learn about introduction of Syncfusion UWP Picker control. Explore its key features, elements, and more details.
-platform: Xamarin
+platform: uwp
 control: Picker
 documentation: ug
 ---
