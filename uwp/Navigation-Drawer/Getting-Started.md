@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Navigation Drawer control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control, its elements and more.
+title: Getting Started with UWP Navigation Drawer | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP NavigationDrawer (SfNavigationDrawer) control. Explore setup, features, examples, and customization options.
 platform: UWP
 control: NavigationDrawer
 documentation: ug

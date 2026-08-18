@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP AutoComplete control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP AutoComplete (SfTextBoxExt) control, its elements and more.
+title: About Syncfusion® UWP AutoComplete Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio UWP AutoComplete (SfTextBoxExt) control and more details.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
 ---
 
-# UWP AutoComplete (SfTextBoxExt) Overview
+# About Syncfusion® UWP AutoComplete Control
 
 SfTextBoxExt is an extended version of TextBox control. Most of the functionality of SfTextBoxExt is inherited from the [TextBox](https://learn.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.TextBox?redirectedfrom=MSDN&view=winrt-19041) class.
 
