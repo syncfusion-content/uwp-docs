@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles and Formatting in UWP CellGrid control | Syncfusion®
-description: Learn here all about Styles and Formatting support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
+title: Styles and Formatting in UWP Excel-like Grid | Syncfusion®
+description: The styles and formatting feature in Excel-like Grid allows customizing cell appearance, fonts, colors, borders, alignment, and data formatting.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Styles and Formatting in UWP CellGrid (SfCellGrid)
+# Styles and Formatting in UWP Excel-like Grid
 
 This section explains about some of the `GridStyleInfo` properties which customizes the `SfCellGrid` and its inner elements(cell,row, column..)
 

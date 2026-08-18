@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Types in UWP CellGrid control | Syncfusion®
-description: Learn here all about Cell Types support in Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more details.
+title: Cell Types in UWP Excel-like Grid | Syncfusion®
+description: The cell types feature in Excel-like Grid provides specialized cell editors such as text box, checkbox, combobox, date-time, numeric, and formula cells.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Cell Types in UWP CellGrid (SfCellGrid)
+# Cell Types in UWP Excel-like Grid
 
 SfCellGrid allows the inclusion of some special controls in the cells. This attribute of a grid cell is referred to as its Cell Type.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with CellGrid in UWP CellGrid control | Syncfusion®
-description: Learn here all about Working with CellGrid support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
+title: Working with UWP Excel-like Grid | Syncfusion®
+description: The working with Excel-like Grid feature covers virtualization, cell updates, scrolling, grid refresh, headers, footers, and gridline customization.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Working with CellGrid in UWP CellGrid (SfCellGrid)
+# Working with UWP Excel-like Grid
  This section explains about the virtualization behavior, programmatic scrolling and refreshing the grid.
 
 ## Virtualization

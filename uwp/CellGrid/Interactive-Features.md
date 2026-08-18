@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in UWP CellGrid control | Syncfusion®
-description: Learn here all about Interactive Features support in Syncfusion® UWP CellGrid (SfCellGrid) control and more.
+title: Interactive Features in UWP Excel-like Grid | Syncfusion®
+description: The interactive features in Excel-like Grid provide clipboard operations, tooltips, comments, and context menus for enhanced user interaction.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Interactive Features in UWP CellGrid (SfCellGrid)
+# Interactive Features in UWP Excel-like Grid
 
 This section explains interactive operations in the SfCellGrid.
 

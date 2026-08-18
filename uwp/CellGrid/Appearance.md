@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance in UWP CellGrid control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more details.
+title: Appearance in UWP Excel-like Grid | Syncfusion®
+description: The appearance feature in Excel-like Grid allows customization with covered cells, floating cells, and conditional formatting support.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Appearance in UWP CellGrid (SfCellGrid)
+# Appearance in UWP Excel-like Grid
 
 This section explains about customizing the appearance of SfCellGrid. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in UWP CellGrid control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more details.
+title: Editing in UWP Excel-like Grid | Syncfusion®
+description: The editing feature in Excel-like Grid enables cell editing, validation, read-only settings, and programmatic control of edit operations.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Editing in UWP CellGrid (SfCellGrid)
+# Editing in UWP Excel-like Grid
 
 This section explains about the properties, methods associated with editing in SfCellGrid.
 
