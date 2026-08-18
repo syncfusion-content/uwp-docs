@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® UWP Navigation Drawer Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio UWP NavigationDrawer control and more details.
-platform: UWP
+platform: uwp
 control: NavigationDrawer
 documentation: ug
 ---
@@ -16,7 +16,7 @@ NavigationDrawer is a sliding panel menu that allows you to navigate between maj
 SfNavigationDrawer
 {:.caption}
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 Navigation Drawers are used in applications where navigating to the major module or page is a basic requirement. The Navigation Drawer is available in the following apps that signify the importance of navigating through pages:
 

@@ -13,7 +13,7 @@ The SfRadialMenu displays a hierarchical menu in a circular layout optimized for
 
 ![RadialMenu Example view](Overview_images/Overview_img1.png)
 
-### Key Features
+## Key Features
 
 * Items Source – Any business object collection can be bound to control. 
 * Commanding – Each item can be bound to a command that could perform an action. 

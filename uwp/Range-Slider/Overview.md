@@ -13,7 +13,7 @@ The range slider control for UWP allows you select a range of values within the 
 
 ![RangeSlider Sample view](Overview_images/Overview_img1.png)
 
-### Key features
+## Key features
 
 Provides support to select values as a range.
  
