@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Diagram control | Syncfusion®
-description: Learn here all about introduction of the Syncfusion® UWP Diagram (SfDiagram) control, its elements and more.
+title: About Syncfusion® UWP SfDiagram Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio UWP SfDiagram control, its features, elements, and diagramming capabilities.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# UWP Diagram (SfDiagram) Overview
+# About Syncfusion® UWP SfDiagram Control
 
 **Essential® Diagram UWP** creates rich Visio like applications. Its Framework comprises of many Elements that helps you to create an application easily. The rich feature set of the Diagram control includes Snapping, Guidelines, Gridlines, Serialization and Zooming.
 

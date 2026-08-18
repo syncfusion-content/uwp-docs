@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events are user actions such as key press, clicks, mouse movements, etc.
-description: How to handle the various actions performed?
+title: Events in UWP SfDiagram | Syncfusion®
+description: Learn about events in the Syncfusion® UWP SfDiagram control, including mouse, pointer, tap, and double tap interactions.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Mouse/Pointer Events
+# Events in UWP SfDiagram
 
 The Mouse events occurs due to user interacting with Pointing device. 
 
