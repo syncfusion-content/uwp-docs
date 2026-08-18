@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Date Picker in UWP Picker control | Syncfusion
-description: Learn here all about Date Picker support in Syncfusion UWP Picker (SfPicker) control and more.
-platform: Xamarin
-control: Picker
+description: Learn how to create a custom date picker using the Syncfusion UWP Picker (SfPicker) control.
+platform: uwp
+control: SfPicker
 documentation: ug
 ---
 
 
-# Date Picker in UWP Picker (SfPicker)
+# Date Picker in UWP Picker
 
 We have demonstrated in the following steps to create custom Date Picker using Picker control.
 

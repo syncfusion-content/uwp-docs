@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Formatting in UWP DateTimePicker control | Syncfusion
-description: Learn here all about Formatting support in Syncfusion UWP DateTimePicker (SfDateTimeCombo) control and more.
+description: Learn how to format the display text using the FormatString property in the Syncfusion UWP DateTimePicker (SfDateTimeCombo) control.
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug
 ---
 
-# Formatting in UWP DateTimePicker (SfDateTimeCombo)
+# Formatting in UWP DateTimePicker
 
 The SfDateTimeCombo control allows the user to format the display text in various ways.
 

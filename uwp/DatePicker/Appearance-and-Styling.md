@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling in UWP DatePicker control | Syncfusion®
-description: Learn here all about Appearance and Styling support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
+title: Appearance and Styling in UWP DatePicker control | Syncfusion
+description: Learn how to customize the accent brush and selected foreground colors in the Syncfusion UWP DatePicker (SfDatePicker) control.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# Appearance and Styling in UWP DatePicker (SfDatePicker)
+# Appearance and Styling in UWP DatePicker
 
 ## Accent Brush
 

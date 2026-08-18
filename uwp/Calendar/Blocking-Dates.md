@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Blocking Dates in UWP Calendar control | Syncfusion
-description: Learn here all about Blocking Dates support in the Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn how to block specific dates to restrict selection in the Syncfusion UWP Calendar (SfCalendar) control.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Blocking Dates in UWP Calendar (SfCalendar)
+# Blocking Dates in UWP Calendar
 
 `SfCalendar` allows blocking out dates so that a blocked date will look disabled, be skipped in key navigation, and unable to be selected.
 

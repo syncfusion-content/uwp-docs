@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with UWP Picker control | Syncfusion
-description: Learn here about getting started with Syncfusion Essential Studio UWP Picker (SfPicker) control, its elements and more.
+title: Getting Started with UWP Picker | Syncfusion
+description: Learn how to get started with the Syncfusion UWP Picker control. Explore setup, features, examples, and customization options.
 platform: UWP
 control: Picker
 documentation: ug
 ---
 
 
-# Getting Started with UWP Picker (SfPicker)
+# Getting Started with UWP Picker
 
 This section explains you the steps to configure a SfPicker control in a real-time scenario and provides a walk-through on some of the customization features available in SfPicker control.
 
