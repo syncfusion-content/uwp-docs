@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® UWP Navigation Pane Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio UWP Navigation Pane (SfGroupBar) control and more details.
-platform: UWP
+platform: uwp
 control: SfGroupBar
 documentation: ug
 ---

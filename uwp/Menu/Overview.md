@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® UWP Menu Control | Syncfusion®
 description: Learn about the introduction of Syncfusion® Essential Studio UWP Menu (SfMenu) control and more details.
-platform: UWP
+platform: uwp
 control: SfMenu
 documentation: ug
 --- 

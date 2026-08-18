@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with UWP Navigation Pane | Syncfusion®
 description: Learn how to get started with the Syncfusion® UWP Navigation Pane (SfGroupBar) control. Explore setup, features, examples, and customization options.
-platform: UWP
+platform: uwp
 control: SfGroupBar
 documentation: ug
 ---
