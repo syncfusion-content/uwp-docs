@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP CellGrid control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP CellGrid (SfCellGrid) control, its elements and more.
+title: Getting Started with UWP Excel-like Grid | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Excel-like Grid control. Explore setup, data population, features, and customization options.
 platform: uwp
-control: SfCellGrid
+control: Excel-like Grid
 documentation: ug
 ---
 
-# Getting Started with UWP CellGrid (SfCellGrid)
+# Getting Started with UWP Excel-like Grid
 
 This section helps you to get started with SfCellGrid.
 
