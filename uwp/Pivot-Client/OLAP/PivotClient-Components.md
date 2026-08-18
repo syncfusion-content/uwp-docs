@@ -201,4 +201,4 @@ It is the drop-down list that contains the names of all reports in the report co
 
 ## SfPivotGrid and SfPivotChart
 
-The [SfPivotGrid](http://help.syncfusion.com/uwp/sfpivotgrid/overview/) and [SfPivotChart](http://help.syncfusion.com/uwp/sfpivotchart/overview) controls will be rendered with respect to operations done at the axis element builder.
+The [SfPivotGrid](http://help.syncfusion.com/uwp/sfpivotgrid/overview) and [SfPivotChart](http://help.syncfusion.com/uwp/sfpivotchart/overview) controls will be rendered with respect to operations done at the axis element builder.

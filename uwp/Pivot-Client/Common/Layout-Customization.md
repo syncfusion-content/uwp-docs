@@ -2,7 +2,7 @@
 layout: post
 title: Layout Customization in UWP Pivot Client | Syncfusion®
 description: Layout Customization in Syncfusion® UWP Pivot Client control configures display mode to show chart only, grid only, or both for flexible data visualization.
-platform: UWP
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion UWP Pivot Client Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio UWP Pivot Client control and exploring its features.
-platform: UWP
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---

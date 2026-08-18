@@ -2,7 +2,7 @@
 layout: post
 title: Toggle Axis in UWP Pivot Client | Syncfusion®
 description: Toggle Axis in Syncfusion® UWP Pivot Client control swaps row and column axis elements, refreshing Pivot Grid and Pivot Chart views for dynamic analysis.
-platform: UWP
+platform: uwp
 control: SfPivotClient
 documentation: ug
 ---
@@ -15,6 +15,6 @@ For example, the product and date elements are present in the row section and th
 
 ![Toggle-Pivot_image1](Toggle-Axis_images/Toggle-Pivot_image1.png)
 
-After clicking the *Toggle Pivot* icon ![](Toggle-Axis_images/Toggle-pivot-icon.png) in the client toolbar, the product and date elements are moved to the column section and the country element is moved to the row section. Based on the toggle pivot selection, the SfPivotGrid and SfPivotChart will display the resultant data.
+After clicking the *Toggle Pivot* icon ![togglePivotIcon](Toggle-Axis_images/Toggle-pivot-icon.png) in the client toolbar, the product and date elements are moved to the column section and the country element is moved to the row section. Based on the toggle pivot selection, the SfPivotGrid and SfPivotChart will display the resultant data.
 
 ![Toggle-Pivot_image2](Toggle-Axis_images/Toggle-Pivot_image2.png)

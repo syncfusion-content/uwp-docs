@@ -116,4 +116,4 @@ By default the following options are available in the toolbar.
 
 ## SfPivotGrid and SfPivotChart
 
-The [SfPivotGrid](http://help.syncfusion.com/uwp/sfpivotgrid/overview/) and [SfPivotChart](http://help.syncfusion.com/uwp/sfpivotchart/overview) controls will be rendered with respect to operations done at the axis element builder.
+The [SfPivotGrid](http://help.syncfusion.com/uwp/sfpivotgrid/overview) and [SfPivotChart](http://help.syncfusion.com/uwp/sfpivotchart/overview) controls will be rendered with respect to operations done at the axis element builder.
