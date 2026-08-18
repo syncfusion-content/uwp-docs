@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Licensing FAQ – Net need for ES license validation | Syncfusion
-description: Learn here some information about whether syncfusion Essential Studio license validation needs internet conncetion.
+title: Internet connection for UWP license validation | Syncfusion®
+description: Learn whether Syncfusion® Essential Studio UWP license validation needs an internet connection to validate license in apps.
 platform: UWP
-control: Essential Studio
+control: Licensing
 documentation: ug
 ---
 
-# Is an internet required for Essential Studio license validation?
+# How to check internet connection for UWP license validation
 
 * Syncfusion license validation is done offline during application execution and does not require internet access. 
 

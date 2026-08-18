@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview of Syncfusion license generation - Syncfusion
-description: Learn here about how to generate Syncfusion UWP license key for syncfusion UWP application for the license validation.
+title: How to generate license key in UWP | Syncfusion®
+description: Learn how to generate Syncfusion® UWP license key for UWP application to enable license validation in apps.
 platform: UWP
-control: Essential Studio
+control: Licensing
 documentation: ug
 ---
 
 
-# Generate Syncfusion UWP License key
+# How to generate license key in UWP
 
 License keys for UWP can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section from your Syncfusion account. 
 

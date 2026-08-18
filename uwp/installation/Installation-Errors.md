@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation Errors in UWP - Syncfusion
-description: Learn here about the common installation errors and solution to those errors in Syncfusion UWP Components installation.
+title: About Syncfusion® UWP Installation Errors | Syncfusion®
+description: Learn about common installation errors in Syncfusion® Essential Studio UWP components and the solutions to resolve them successfully.
 platform: UWP
 control: Installation and Deployment
 documentation: ug

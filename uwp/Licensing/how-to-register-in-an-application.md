@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion license registration - Syncfusion
-description: Learn here about how to register Syncfusion UWP license key for UWP application for license validation.
+title: How to register license key in UWP | Syncfusion®
+description: Learn how to register Syncfusion® UWP license key in your UWP application to enable license validation in apps.
 platform: uwp
-control: Essential Studio
+control: Licensing
 documentation: ug
 ---
 
-# Register Syncfusion license key in a UWP application
+# How to register license key in UWP
 
 The generated license key is just a string that needs to be registered before any Syncfusion control is initiated. The following code is used to register the license
 

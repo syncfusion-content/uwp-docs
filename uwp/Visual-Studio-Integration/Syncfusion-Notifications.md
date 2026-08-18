@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Notifications | UWP | Syncfusion
-description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
+title: Notifications in UWP Syncfusion® Extensions | Syncfusion®
+description: Learn about Syncfusion® notifications in UWP applications for trial alerts, newer version updates, and latest NuGet package availability.
 platform: uwp
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
-# Syncfusion® Notifications
+# Notifications in UWP Syncfusion® Extensions
 
 Syncfusion® enhances the user experience in UWP applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion® trial assemblies, updates regarding the availability of the latest Syncfusion® NuGet package, and notifications regarding newer releases of Essential Studio®. By keeping users informed, Syncfusion® ensures that developers stay updated with Syncfusion®'s latest features and enhancements.
 

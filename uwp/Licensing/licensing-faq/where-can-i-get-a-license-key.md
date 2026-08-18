@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Licensing FAQ – Get the license key | Syncfusion
-description: Learn here some information about recommended places to register the Syncfusion license key in your application.
+title: How to get license key in UWP | Syncfusion®
+description: Learn how to get a Syncfusion® UWP license key from the Syncfusion® account and recommended places to register the key.
 platform: UWP
-control: Essential Studio
+control: Licensing
 documentation: ug
 ---
 
-# Where can I get a license key?
+# How to get license key in UWP
 
 License keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion website. 
 

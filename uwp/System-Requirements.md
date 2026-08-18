@@ -1,13 +1,13 @@
 ---
 layout: post
-title: System Requirements in UWP - Syncfusion
-description: Checkout and learn here all about the system requirements needed to use the Syncfusion UWP Components.
+title: About Syncfusion® UWP System Requirements | Syncfusion®
+description: Learn about the system requirements needed to install, configure, and use Syncfusion® Essential Studio UWP components.
 platform: uwp
 control: System Requirement
 documentation: ug
 ---
 
-# System Requirements for UWP Components
+# About Syncfusion® UWP System Requirements
 
 This section describes the system requirements of Syncfusion<sup>&reg;</sup> UWP Controls for development.
 

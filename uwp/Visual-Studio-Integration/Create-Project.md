@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Create Project | UWP | Syncfusion
-description: Syncfusion provides the Visual Studio Project Templates for the Syncfusion UWP platform to create Syncfusion UWP Applications
+title: Create Project in UWP Syncfusion® Extensions | Syncfusion®
+description: Learn about creating Syncfusion® UWP projects using Visual Studio Project Templates in Syncfusion® UWP Extensions and more.
 platform: uwp
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
-# Create UWP application
+# Create Project in UWP Syncfusion® Extensions
 
 Syncfusion® provides the **Visual Studio Project Templates** for the Syncfusion® UWP platform to create the Syncfusion® UWP Application, adding required Syncfusion® assemblies/NuGet based on the control chosen.  
 

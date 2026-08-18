@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion UWP offline installer - Syncfusion
-description: Learn here about how to download the Syncfusion UWP offline installer from our Syncfusion website with license.
+title: How to Download Syncfusion® UWP Offline Installer | Syncfusion®
+description: Learn how to download the Syncfusion® UWP Offline Installer from the Syncfusion® website using a valid license and install products without internet access.
 platform: UWP
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Downloading Syncfusion UWP offline installer
+# How to Download Syncfusion UWP Offline Installer
 
 The Syncfusion UWP offline installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/uwp-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 

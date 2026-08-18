@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion UWP web installer - Syncfusion
-description: Learn here about how to download Syncfusion UWP web installer from our Syncfusion website with license.
+title: How to Download Syncfusion® UWP Web Installer | Syncfusion®
+description: Learn how to download the Syncfusion® UWP Web Installer from the Syncfusion® website using a valid license and access Essential Studio UWP products.
 platform: uwp
 control: Installation and Deployment
 documentation: ug
 
 ---
 
-# Downloading Syncfusion UWP web installer
+# How to Download Syncfusion® UWP Web Installer
 
 The Syncfusion UWP web installer can be downloaded from the [Syncfusion.com](https://www.syncfusion.com/uwp-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 
