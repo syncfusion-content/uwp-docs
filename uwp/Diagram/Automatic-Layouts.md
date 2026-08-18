@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Automatic Layouts in UWP Diagram control | Syncfusion®
-description: Learn here all about Automatic Layouts support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
+title: Automatic Layouts in UWP SfDiagram | Syncfusion®
+description: Learn about automatic layouts in the Syncfusion® UWP SfDiagram control, including organizational, directed-tree, and radial-tree layouts.
 control: SfDiagram
 documentation: ug
 ---
 
-# Automatic Layouts in UWP Diagram (SfDiagram)
+# Automatic Layouts in UWP SfDiagram
 
 SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 
@@ -21,7 +21,7 @@ We have explained the Automatic Layout with Employee class and DataSourceSetting
 
 Now, you have to create a class, Employee with properties to store the employee’s information like Team, Role, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Employee Business Object
 public class Employee
@@ -40,7 +40,7 @@ public class Employees : ObservableCollection<Employee>
 
 ### Initialize Data Source Settings
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!--Initializes the DataSourceSettings -->
         <syncfusion:DataSourceSettings x:Key="DataSourceSettings" ParentId="Team" Id="Empid" 
@@ -50,7 +50,7 @@ public class Employees : ObservableCollection<Employee>
 
 ### Visualize the Node and Connector
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!--Style for the Node>-->
         <Style TargetType="syncfusion:Node">
@@ -106,7 +106,7 @@ public class Employees : ObservableCollection<Employee>
 
 An organizational chart is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, Type should be set as LayoutType.Organization. The following code example illustrates how to create an organizational chart. 
 
-{% highlight xml %}
+{% highlight xaml %}
 
 _//Initializes data source_
 <local:Employees x:Key="Employees">
@@ -162,7 +162,7 @@ User can change ChartType and Orientation by using GetLayoutInfo event of the Sf
 | | Type | Gets or sets the organizational chart type. |
 | | Orientation | Gets or sets the organizational chart orientation. |
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Registering an event 
 
@@ -197,7 +197,7 @@ To create the Directed Tree Layout, `Type` should be set as `LayoutType.Hierarch
 
 N> SpaceBetweenSubTrees property of the DirectedTreeLayout will no longer efficient. Please use HorizontalSpacing and VerticalSpacing.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:Employees x:Key="Employees">
 <local:Employee Empid="0" Role="Project Management"></local:Employee>
@@ -226,7 +226,7 @@ Layout="{StaticResource TreeLayout}"/>
 
 The Radial-Tree Layout is a specification of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram Nodes. The Radial-Tree Layout arranges Nodes in a circular layout, positioning the root Node at the center of the graph and the child Nodes in a circular fashion around the root. Sub-trees formed by the branching of child Nodes are located radically around the child Nodes. The arrangement results in an ever-expanding concentric arrangement with radial proximity to the root Node indicating the Node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree Layout positions the Nodes based on the layout root.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <local:Employees x:Key="Employees">
 	<local:Employee Empid="0" Role="Project Management"></local:Employee>
@@ -271,7 +271,7 @@ The Radial-Tree Layout is a specification of the Directed Tree Layout Manager th
 
 When changes are made to content in the SfDiagram. For example, linking new Nodes or adding new Connectors, the layout had to be updated to create space for adding the new content. The following code example illustrates how to update the layout in the SfDiagram.
 
-{% highlight C# %}
+{% highlight c# %}
 
 SfDiagram diagramcontrol = new SfDiagram(); 
 //Update the Layout
@@ -289,7 +289,7 @@ Example
 
 Layout Alignments and Bounds
 
-{% highlight C# %}
+{% highlight c# %}
 
 diagramcontrol.LayoutManager = new LayoutManager()
 {

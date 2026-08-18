@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Node in UWP Diagram control | Syncfusion®
-description: Learn here all about Node support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
+title: Node in UWP SfDiagram | Syncfusion®
+description: Learn about nodes in the Syncfusion® UWP SfDiagram control, including shapes, positioning, appearance, interaction, and constraints.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Node in UWP Diagram (SfDiagram)
+# Node in UWP SfDiagram
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
@@ -38,7 +38,7 @@ To create a Node, You have to define the Node object and add that to Nodes colle
 </syncDiagram:SfDiagram.Nodes>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Creating the NodeViewModel
 NodeViewModel Begin = new NodeViewModel()
@@ -115,7 +115,7 @@ The following table illustrates how pivot relates Offset values with Node bounda
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Define the NodeCollection
 diagram.Nodes = new NodeCollection();
 //Define the Node
@@ -198,7 +198,7 @@ You can customize the appearance of a Node by changing its `ShapeStyle`. The fol
   <Setter Property="StrokeThickness" Value="2"></Setter>
 </Style>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.FillProperty, Brushes.SteelBlue));
 style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.WhiteSmoke));

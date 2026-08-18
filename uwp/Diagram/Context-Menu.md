@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu in UWP Diagram control | Syncfusion®
-description: Learn here all about Context Menu support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
+title: Context Menu in UWP SfDiagram | Syncfusion®
+description: Learn about context menus in the Syncfusion® UWP SfDiagram control, including default menus, custom menu items, and menu events.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Context Menu in UWP Diagram (SfDiagram)
+# Context Menu in UWP SfDiagram
 
 In graphical user interface (GUI), a ContextMenu is a type of Menu that appears when you perform right-click operation. Nested level of Context Menu items can be created. Diagram provided some in-build ContextMenu items and allows to define custom menu items.
 
@@ -19,7 +19,7 @@ The `ContentMenu` Constraint helps you to enable/disable the context menu. Diagr
 
 The following code illustrates how to enable/disable the default context menu items.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Disable context menu
 diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.ContextMenu;
@@ -35,7 +35,7 @@ Apart from the default ContextMenu items, you can define some additional menu it
 
 The following code example illustrates how to add custom context menu items to Menu property of SfDiagram.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Defines custom ContextMenu Items
 DiagramMenuItem menu = new DiagramMenuItem() 
@@ -55,7 +55,7 @@ The default value of `Menu` property for Node and Connector is null.
 
 The following code example illustrates how to set ContextMenu and ContextMenuItems to Node.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Enables Menu
 node.Constraints = node.Constraints | NodeConstraints.Menu;
@@ -76,7 +76,7 @@ DiagramMenuItem mi = new DiagramMenuItem()
 
 You can be notified with events when you click the custom menu items. The following code example illustrates the how to define the event for custom context menu.
 
-{% highlight C# %}
+{% highlight c# %}
 
 menu.ClickedEvent += menu_ClickedEvent;
 
@@ -92,7 +92,7 @@ private void menu_ClickedEvent(object sender, MenuItemClickedEventArgs args)
 
 You would be notified with events when you click the menu items. The following code example illustrates how to define those events.
 
-{% highlight C# %}
+{% highlight c# %}
 
 (Diagram.Info as IGraphInfo).MenuItemClickedEvent += MainPage_MenuItemClickedEvent;
 
