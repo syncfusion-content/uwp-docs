@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Helpers in UWP SfTreeGrid | Syncfusion®
-description: Helpers in UWP SfTreeGrid provide utilities like IndexResolver to convert between node, row, and column indexes easily.
+description: Helpers in SfTreeGrid provide index resolver methods to identify rows, columns, and nodes, and include dispose support for efficient memory management.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

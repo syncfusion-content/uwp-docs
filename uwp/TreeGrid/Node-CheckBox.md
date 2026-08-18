@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Node CheckBox in UWP SfTreeGrid | Syncfusion®
-description: Node CheckBox in UWP SfTreeGrid renders checkboxes in each node, supporting selection modes and customized check states.
+description: Node CheckBox in UWP SfTreeGrid adds checkboxes to nodes for selection, tri-state, and recursive checking.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rows in UWP SfTreeGrid | Syncfusion®
-description: Rows in UWP SfTreeGrid support row headers, indicators, custom heights, and styling for dynamic hierarchical row display.
+description: Rows in UWP SfTreeGrid manages row headers, indicators, and customization options for different row types.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
