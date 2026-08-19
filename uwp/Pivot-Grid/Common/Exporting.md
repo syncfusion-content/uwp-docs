@@ -3,7 +3,7 @@ layout: post
 title: Exporting in UWP Pivot Grid | Syncfusion®
 description: Export data from Syncfusion® UWP Pivot Grid control to Excel, Word, PDF, and CSV formats with customizable styles for reporting and offline analysis.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Member Properties in UWP Pivot Grid | Syncfusion®
 description: Member Properties in Syncfusion® UWP Pivot Grid control display details like name, parent level, and children, enabling richer OLAP data visualization.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

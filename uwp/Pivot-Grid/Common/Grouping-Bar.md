@@ -3,7 +3,7 @@ layout: post
 title: Grouping Bar in UWP Pivot Grid | Syncfusion®
 description: Grouping Bar in Syncfusion® UWP Pivot Grid control lets users add, rearrange, filter, sort, and remove fields to customize data display at runtime.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

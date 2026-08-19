@@ -3,7 +3,7 @@ layout: post
 title: Hiding Subtotals in UWP Pivot Grid | Syncfusion®
 description: Hide subtotals in Syncfusion® UWP Pivot Grid control by disabling row, column, or specific item subtotals for a cleaner and more focused data view.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

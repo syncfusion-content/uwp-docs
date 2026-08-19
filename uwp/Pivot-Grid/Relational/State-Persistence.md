@@ -3,7 +3,7 @@ layout: post
 title: State Persistence in UWP Pivot Grid | Syncfusion®
 description: State Persistence in Syncfusion® UWP Pivot Grid control preserves collapsed or expanded states of pivot items when schema changes using StatePersistenceEnabled.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Cell Selection in UWP Pivot Grid | Syncfusion®
 description: Cell Selection in Syncfusion® UWP Pivot Grid control enables selecting cells, rows, or columns with support for headers, multi-selection, and events.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

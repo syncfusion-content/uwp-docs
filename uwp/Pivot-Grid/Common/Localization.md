@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in UWP Pivot Grid | Syncfusion®
-description: Localization in Syncfusion® UWP Pivot Grid control enables culture-specific text, resource files, and RTL support to adapt applications for global users.
+description: Localization in Syncfusion® UWP Pivot Grid control enables resx‑based translation, culture specification, and RTL support for globalized applications.
 platform: uwp
 control: SfPivotGrid
 documentation: ug

@@ -3,7 +3,7 @@ layout: post
 title: Filtering in UWP Pivot Grid | Syncfusion®
 description: Filtering in Syncfusion® UWP Pivot Grid control displays subsets of data using FilterExpressions, supporting multiple conditions for refined analysis.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

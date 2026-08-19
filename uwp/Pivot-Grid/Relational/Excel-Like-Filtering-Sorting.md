@@ -3,7 +3,7 @@ layout: post
 title: Excel-Like Filtering and Sorting in UWP Pivot Grid | Syncfusion®
 description: Excel-like Filtering and Sorting in Syncfusion® UWP Pivot Grid control lets users sort and filter pivot items interactively with label and value options.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

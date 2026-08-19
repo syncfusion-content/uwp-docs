@@ -3,7 +3,7 @@ layout: post
 title: Paging in UWP Pivot Grid | Syncfusion®
 description: Paging in Syncfusion® UWP Pivot Grid control enables efficient handling of large OLAP data by splitting CellSets into pages with navigation options.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Display Options in UWP Pivot Grid | Syncfusion®
 description: Display Options in Syncfusion® UWP Pivot Grid control define how calculation values appear, with choices like All, Summary, Calculations, GrandTotal, or None.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with UWP Pivot Grid | Syncfusion®
 description: Learn how to get started with the Syncfusion® UWP Pivot Grid control. Explore setup, features, examples, and customization options.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 

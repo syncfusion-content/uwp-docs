@@ -3,7 +3,7 @@ layout: post
 title: Hyperlink Cells in UWP Pivot Grid | Syncfusion®
 description: Hyperlink Cells in Syncfusion® UWP Pivot Grid control let users click column, row, value, or summary cells to access detailed information easily.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 
