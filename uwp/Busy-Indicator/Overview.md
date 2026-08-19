@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Busy Indicator control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Busy Indicator (SfBusyIndicator) control, its elements and more.
+title: About Syncfusion® UWP SfBusyIndicator Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® UWP SfBusyIndicator control, its built-in animations, and key features for indicating busy status.
 platform: uwp
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# UWP Busy Indicator (SfBusyIndicator) Overview
+# About Syncfusion® UWP SfBusyIndicator Control
 
 `SfBusyIndicator` control includes over 30 built-in animation that can be displayed within application. These animated controls can be used to indicate busy status during application loading, data processing/validation, etc
 

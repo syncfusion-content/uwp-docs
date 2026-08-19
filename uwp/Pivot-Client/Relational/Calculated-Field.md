@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calculated Field in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Calculated Field support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Calculated Field in UWP Pivot Client | Syncfusion®
+description: Calculated Field in Syncfusion® UWP Pivot Client control lets users create custom formulas using existing fields for advanced OLAP data analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 
-# Calculated Field in UWP Pivot Client (SfPivotClient)
+# Calculated Field in UWP Pivot Client
 
 The SfPivotClient supports adding a new calculated field based on existing calculated items using the calculated field dialog.
 

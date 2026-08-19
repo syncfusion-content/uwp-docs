@@ -1,13 +1,13 @@
 ---
 layout: post
-title: HubTileBase in UWP Hub Tile control | Syncfusion®
-description: Learn here all about HubTileBase support in Syncfusion® UWP Hub Tile (HubTiles) control and more.
+title: HubTileBase in UWP SfHubTile | Syncfusion®
+description: The HubTileBase is the base class for all hub tiles providing common flip and notification functionalities similar to Windows 8 start screen.
 platform: uwp
 control: HubTileBase
 documentation: ug
 ---
 
-# HubTileBase in UWP Hub Tile (HubTiles)
+# HubTileBase in UWP SfHubTile
 
 `HubTileBase` is the base of all the four tiles under Syncfusion.SfHubTile.UWP assembly. It provides some basic functionalities that are found in the live tiles of windows 8 start screen. The following support are common and applicable to all the tiles such as `SfHubTile`, `SfMosaicTile`,
  `SfSplitMosaicTile` and `SfPulsingTile`.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Filtering support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Filtering in UWP Pivot Grid | Syncfusion®
+description: Filtering in Syncfusion® UWP Pivot Grid control displays subsets of data using FilterExpressions, supporting multiple conditions for refined analysis.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 
-# Filtering in UWP Pivot Grid (SfPivotGrid)
+# Filtering in UWP Pivot Grid
 
 Filtering support displays only a subset of data that meets the specific criteria. You can specify and hide the data that you do not want to display. Filters are automatically reapplied every time when the SfPivotGrid is refreshed or updated until you remove those filters. In SfPivotGrid, filters are additive, which means that each additional filter is based on the current filter and further it reduces the subset of data. You can apply 'n' number of filtering conditions to the SfPivotGrid at a time. To apply filter, an instance of **FilterExpression** has to be created and the data will be filtered based on that specification.
 

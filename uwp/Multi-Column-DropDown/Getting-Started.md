@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Multi Column Dropdown control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
+title: Getting Started with UWP MultiColumn Dropdown | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP MultiColumn Dropdown control. Explore setup, features, examples, and customization options.
 platform: uwp
-control: SfMultiColumnDropDownControl
+control: MultiColumn Dropdown
 documentation: ug
 ---
 
-# Getting Started with UWP Multi Column Dropdown (SfMultiColumnDropDown)
+# Getting Started with UWP MultiColumn Dropdown
 SfMultiColumnDropDownControl displays multiple columns in dropdown by embedding SfDataGrid control for rich look up selection.
 
 Features,

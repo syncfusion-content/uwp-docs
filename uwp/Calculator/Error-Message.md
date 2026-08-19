@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Error Message in UWP Calculator control | Syncfusion®
-description: Learn here all about Error Message support in Syncfusion® UWP Calculator (SfCalculator) control and more.
+title: Error Message in UWP SfCalculator | Syncfusion®
+description: The error message feature in SfCalculator notifies invalid input and syntax errors through the ErrorMessageDisplayed event with customizable NewErrorMessage.
 platform: uwp
 control: SfCalculator
 documentation: ug
 ---
 
-# Error Message in UWP Calculator (SfCalculator)
+# Error Message in UWP SfCalculator
 
 `SfCalculator` provides `ErrorMessageDisplayed` event to notify invalid input and syntax errors. Default error message is “Invalid input” and it can be modified by setting the event argument NewErrorMessage.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SfMosaicTile in UWP Hub Tile control | Syncfusion®
-description: Learn here all about SfMosaicTile support in Syncfusion® Universal Windows Platform (UWP) Hub Tile (HubTiles) control and more.
+title: Picture Collection Tile in UWP SfMosaicTile | Syncfusion®
+description: The SfMosaicTile displays a collection of pictures randomly with flip transition effect, similar to the people tile in Windows Phone 8 home screen.
 platform: uwp
 control: SfMosaicTile
 documentation: ug
 ---
 
-# SfMosaicTile in UWP Hub Tile (HubTiles)
+# Picture Collection Tile in UWP SfMosaicTile
 
 `SfMosaicTile` control provides a way to display pictures randomly with transition effect similar to people tile in Windows Phone 8 home screen. Mosaic tile can have collection of images and header to display in the tile.
 

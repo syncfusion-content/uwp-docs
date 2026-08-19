@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items of SfComboBox control for UWP
-description: Populating Items of SfComboBox control for UWP
+title: Populating Items in UWP SfComboBox | Syncfusion®
+description: The populating items feature in SfComboBox allows binding business object collections to the control using the ItemsSource property.
 platform: uwp
 control: SfComboBox
 documentation: ug
 ---
 
-# Populating Items
+# Populating Items in UWP SfComboBox
 
 ## Items Source
 
@@ -149,7 +149,7 @@ Bind the Employees collection to the ItemsSource property of the SfComboBox.
 
 The above steps populate the SfComboBox as illustrated in the following screenshot.
 
-![](Populating-Items_images/Populating-Items_img1.png)
+![SfComboBox populated with employee list](Populating-Items_images/Populating-Items_img1.png)
 
 ## DisplayMemberPath
 
@@ -167,7 +167,7 @@ DisplayMemberPath="Name" ItemsSource="{Binding Products}" />
 
 This populates the SfComboBox as illustrated in the following screenshot. 
 
-![](Populating-Items_images/Populating-Items_img2.png)
+![SfComboBox with DisplayMemberPath showing employee names](Populating-Items_images/Populating-Items_img2.png)
 
 
 
@@ -205,4 +205,4 @@ The ItemTemplate property of the SfComboBox can be used to customize the content
 
 This populates the SfComboBox as illustrated in the following screenshot.
 
-![](Populating-Items_images/Populating-Items_img3.png)
+![SfComboBox with custom ItemTemplate showing employee details](Populating-Items_images/Populating-Items_img3.png)

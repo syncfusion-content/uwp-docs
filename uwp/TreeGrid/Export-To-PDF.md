@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To PDF in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Export To PDF support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
+title: Export to PDF in UWP TreeGrid | Syncfusion®
+description: Export to PDF in UWP TreeGrid renders hierarchical data into PDF with customizable headers, pagination, and styling options.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Export To PDF in UWP TreeGrid (SfTreeGrid)
+# Export to PDF in UWP TreeGrid
 
 SfTreeGrid provides support to export the data to PDF file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering processes when exporting.
 

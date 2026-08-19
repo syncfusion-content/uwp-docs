@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Spell Checker control | Syncfusion®
-description: Learn here all about Localization support in Syncfusion® UWP Spell Checker (SfSpellChecker) control and more.
+title: Localization in UWP SfSpellChecker | Syncfusion®
+description: The Localization support in SfSpellChecker translates the application resources into different languages for specific cultures by adding resource files.
 platform: uwp
 control: SfSpellChecker
 documentation: ug
 ---
 
-# Localization in UWP Spell Checker (SfSpellChecker)
+# Localization in UWP SfSpellChecker
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfSpellChecker by adding resource file. Application culture can be changed by setting [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) before `InitializeComponent()` method.
  

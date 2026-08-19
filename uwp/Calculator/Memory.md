@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Memory in UWP Calculator control | Syncfusion®
-description: Discover Memory support in Syncfusion® UWP Calculator (SfCalculator) control, including key features, usage, and more.
+title: Memory in UWP SfCalculator | Syncfusion®
+description: The Memory feature in SfCalculator stores and retrieves values for memory operations using dedicated buttons for storing, recalling, and clearing.
 platform: uwp
 control: SfCalculator
 documentation: ug
 ---
 
-# Memory in UWP Calculator (SfCalculator)
+# Memory in UWP SfCalculator
 
 `Memory` property in the `SfCalculator` control is used to retrieve the value stored in memory. The following buttons are available in `SfCalculator` control that are needed for memory operations. `Memory` property is a read-only decimal property.
 

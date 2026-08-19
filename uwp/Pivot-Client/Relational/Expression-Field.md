@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Expression Fields in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Expression Fields support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Expression Fields in UWP Pivot Client | Syncfusion®
+description: Expression Fields in Syncfusion® UWP Pivot Client control let users define custom formulas with operators and summary types for advanced OLAP analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 
-# Expression Fields in UWP Pivot Client (SfPivotClient)
+# Expression Fields in UWP Pivot Client
 
 The SfPivotClient supports adding expression field at runtime by using the expression field dialog.
 

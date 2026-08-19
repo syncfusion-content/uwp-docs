@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Windows in UWP Docking control | Syncfusion®
-description: Learn here all about Dealing with Windows support in Syncfusion® UWP Docking (SfDockingManager) control and more.
+title: Dealing with Windows in UWP SfDockingManager | Syncfusion®
+description: The dealing with windows feature in SfDockingManager allows activating specific child windows using ActiveWindow and ActivateWindow methods.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Dealing with Windows in UWP Docking (SfDockingManager)
+# Dealing with Windows in UWP SfDockingManager
 
 ## Activating a window
 

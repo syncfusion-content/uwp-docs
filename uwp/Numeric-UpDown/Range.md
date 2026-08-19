@@ -1,13 +1,13 @@
 ---
 layout: post 
-title: Range in UWP Numeric UpDown control | Syncfusion
-description: Learn here all about Range support in Syncfusion UWP Numeric UpDown (SfNumericUpDown) control and more.
+title: Range in UWP SfNumericUpDown | Syncfusion®
+description: The Range feature in SfNumericUpDown restricts input values to a specific range using the Maximum and Minimum properties.
 platform: uwp
 control: SfNumericUpDown
 documentation: ug
 ---
 
-# Range in UWP Numeric UpDown (SfNumericUpDown)
+# Range in UWP SfNumericUpDown
 
 Input values can be restricted to a specific range by setting the Maximum and Minimum properties.
 

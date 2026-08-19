@@ -1,13 +1,13 @@
 ---
 layout: post
-title: BackStage in UWP Ribbon control | Syncfusion
-description: Learn here all about BackStage support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control, its elements and more.
+title: BackStage in UWP SfRibbon | Syncfusion®
+description: The BackStage feature in SfRibbon provides a UI similar to Office for placing items, with BackStageTabItems that can be easily navigated using scroll buttons.
 platform: uwp
-control: SfRibbon (Touch Ribbon)
+control: SfRibbon
 documentation: ug
 ---
 
-# BackStage in UWP Ribbon (SfRibbon(Touch Ribbon))
+# BackStage in UWP SfRibbon
 
 Commands can be added to the BackStage similar to the Office UI. The BackStage is completely customizable. To navigate to the BackStage, click on the BackStage button at the left end of the Ribbon Tab Items panel. BackStageTabItems can be easily navigated using the scroll buttons. To navigate back from the BackStage, click on the back button in the top-left corner. The BackStage can be opened and closed programmatically using the `OpenBackStage()` and `CloseBackStage()` methods.
 
