@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SfSplitMosaicTile in UWP SfHubTile | Syncfusion®
-description: Learn about the SfSplitMosaicTile control in Syncfusion® UWP that displays a collection of images in 3 horizontally stretched tiles with random flip effect.
+title: Split Image Tile in UWP SfSplitMosaicTile | Syncfusion®
+description: Learn about the SfSplitMosaicTile control in Syncfusion® UWP that displays a collection of images in 3 horizontally stretched tiles with random flip effect, similar to contacts group tile in Windows Phone.
 platform: uwp
 control: SfSplitMosaicTile
 documentation: ug
 ---
 
-# SfSplitMosaicTile in UWP SfHubTile
+# Split Image Tile in UWP SfSplitMosaicTile
 
 ## Overview
 
