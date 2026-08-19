@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hiding Subtotals
-description: Hiding subtotals in pivot grid
+title: Hiding Subtotals in UWP Pivot Grid | Syncfusion®
+description: Hide subtotals in Syncfusion® UWP Pivot Grid control by disabling row, column, or specific item subtotals for a cleaner and more focused data view.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 
-# Hiding Subtotals
+# Hiding Subtotals in UWP Pivot Grid
 
 The pivot grid control provides support to show or hide its subtotal values. This support allows users to have an abstract view of the data. The following levels of hiding are supported in the pivot grid control.
 
@@ -47,7 +47,7 @@ Me.pivotGrid1.ShowSubTotals = False
 
 ## Hiding only the row subtotals
 
-The subtotal values of pivot rows can only be hidden by using the [ShowRowSubTotals](https://help.syncfusion.com/cr/wpf/https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_ShowRowSubTotals) property. Refer to the following code sample to hide only the subtotal values of pivot rows in the pivot grid.
+The subtotal values of pivot rows can only be hidden by using the [ShowRowSubTotals](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.PivotGrid.PivotGridControl.html#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_ShowRowSubTotals) property. Refer to the following code sample to hide only the subtotal values of pivot rows in the pivot grid.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ Me.pivotGrid1.ShowRowSubTotals = False
 
 ## Hiding only the column subtotals 
 
-The subtotal values of pivot columns can only be hidden by using the [ShowColumnSubTotals](https://help.syncfusion.com/cr/wpf/https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_ShowColumnSubTotals) property. Refer to the following code sample to hide only the subtotal values of pivot columns in the pivot grid.
+The subtotal values of pivot columns can only be hidden by using the [ShowColumnSubTotals](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.PivotGrid.PivotGridControl.html#Syncfusion_Windows_Controls_PivotGrid_PivotGridControl_ShowColumnSubTotals) property. Refer to the following code sample to hide only the subtotal values of pivot columns in the pivot grid.
 
 {% tabs %}
 
