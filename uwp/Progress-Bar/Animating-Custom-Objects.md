@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animating Custom Objects in UWP Progress Bar control | Syncfusion®
-description: Learn here all about Animating Custom Objects support in Syncfusion® UWP Progress Bar (SfProgressBar) control and more.
-platform: UWP
+title: Animating Custom Objects in UWP SfProgressBar | Syncfusion®
+description: The Animating Custom Objects feature in SfProgressBar allows custom animation by changing the FillDirection of the path and performing reverse animation.
+platform: uwp
 control: SfProgressBar
 documentation: ug
---- 
+---
 
-# Animating Custom Objects in UWP Progress Bar (SfProgressBar)
+# Animating Custom Objects in UWP SfProgressBar
 
 Custom objects animation can be customized by change the [FillDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_FillDirection) of path and perform reverse animation.
 
