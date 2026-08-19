@@ -223,14 +223,14 @@ The flip types are below,
 
 Diagram provides support to drag, resize, or rotate the Node interactively. 
 
-#### Select
+### Select
 Node can be selected by clicking on it.
 
 ![node with selection](Node_images/Node_img7.jpg)
 
 To explore about selection and selection related events , refer to [Selection](/uwp/diagram/interaction#selection) .
 
-#### Drag
+### Drag
 
 * Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/uwp/diagram/gridlines#snapping).
@@ -239,7 +239,7 @@ To explore about selection and selection related events , refer to [Selection](/
 
 ![dragging the nodes](Node_images/Drag.gif)
 
-#### Resize
+### Resize
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
@@ -249,7 +249,7 @@ To explore about selection and selection related events , refer to [Selection](/
 
 ![resizing the selected the node](Node_images/Resize.gif)
 
-#### Rotate
+### Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
 * The Node is rotated with reference to the static pivot point.
@@ -259,6 +259,6 @@ To explore about selection and selection related events , refer to [Selection](/
 
 ![rotating the selected node](Node_images/Rotate.gif)
 
-## Constraints
-aa
+### Constraints
+
 The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/uwp/diagram/constraints#node-constraints "Node Constraints").
