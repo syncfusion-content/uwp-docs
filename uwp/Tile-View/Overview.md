@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Tile View control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP Tile View (SfTileView) control, its elements and more.
+title: About Syncfusion® UWP SfTileView Control | Syncfusion®
+description: Learn about introduction of Syncfusion® UWP SfTileView control and more details.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# UWP Tile View (SfTileView) Overview
+# About Syncfusion® UWP SfTileView Control
 
 `SfTileView` acts as a container that holds a set of tile view items that can contain any content. Items can be maximized, minimized, dragged to reorder and arranged in matrix position to achieve best layout.
 

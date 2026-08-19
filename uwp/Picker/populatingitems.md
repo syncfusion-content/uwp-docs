@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Populating Items in UWP Picker control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion UWP Picker (SfPicker) control and more.
-platform: Xamarin
-control: Picker
+title: Populating Items in UWP SfPicker | Syncfusion®
+description: Learn how to populate items in the Syncfusion® UWP SfPicker control using data source binding and other methods.
+platform: uwp
+control: SfPicker
 documentation: ug
 ---
 
-
-# Populating Items in UWP Picker (SfPicker)
+# Populating Items in UWP SfPicker
 
 This section explains about the ways of populating items for SfPicker control
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Numeric UpDown control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Numeric UpDown (SfNumericUpDown) control, its elements and more.
+title: Getting Started with UWP SfNumericUpDown | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP SfNumericUpDown control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfNumericUpDown
 documentation: ug
 ---
 
-# Getting Started with UWP Numeric UpDown (SfNumericUpDown)
+# Getting Started with UWP SfNumericUpDown
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 Assembly:  Syncfusion.SfInput.UWP

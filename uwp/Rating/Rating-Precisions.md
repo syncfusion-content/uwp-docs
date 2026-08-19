@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rating Precisions in UWP Rating control | Syncfusion
-description: Learn here all about Rating Precisions support in Syncfusion UWP Rating (SfRating) control and more.
+title: Rating Precisions in UWP SfRating | Syncfusion®
+description: Learn about Rating Precisions in the Syncfusion® UWP SfRating control, including Standard, Half, and Exact precision types.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# Rating Precisions in UWP Rating (SfRating)
+# Rating Precisions in UWP SfRating
 
 `Precision` specifies the level of accuracy in rating value. `SfRating` has three different precision types and they are:
 

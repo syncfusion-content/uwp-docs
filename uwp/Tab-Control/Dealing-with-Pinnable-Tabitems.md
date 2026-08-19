@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Pinnable Tabitems in UWP Tab Control control | Syncfusion®
-description: Learn here all about Dealing with Pinnable Tabitems support in Syncfusion® UWP Tab Control (SfTabControl) control and more.
+title: Dealing with Pinnable Tabitems in UWP SfTabControl | Syncfusion®
+description: Learn how to deal with pinnable tab items in the Syncfusion® UWP SfTabControl control, including pinning and unpinning tab items.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Dealing with Pinnable Tabitems in UWP Tab Control (SfTabControl)
+# Dealing with Pinnable Tabitems in UWP SfTabControl
 
 Tab Items in SfTabControl can be pinned or unpinned using the pin button next to its header text. 
 

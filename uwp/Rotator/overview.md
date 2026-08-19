@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Rotator control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Rotator (SfRotator) control, its elements and more.
-platform: UWP
-control: Rotator 
+title: About Syncfusion® UWP SfRotator Control | Syncfusion®
+description: Learn about introduction of Syncfusion® UWP SfRotator control and more details.
+platform: uwp
+control: SfRotator
 documentation: ug
 ---
 
-# UWP Rotator (SfRotator) Overview
+# About Syncfusion® UWP SfRotator Control
 
 The SfRotator is a data control used to display image data's and navigate through them. The images can be selected either by Thumbnail or by Dots support.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TabStripPlacement and Menu in UWP Tab Control control | Syncfusion®
-description: Learn here all about TabStripPlacement and Menu support in Syncfusion® UWP Tab Control (SfTabControl) control and more.
+title: TabStripPlacement and Menu in UWP SfTabControl | Syncfusion®
+description: Learn about the TabStripPlacement and Menu in the Syncfusion® UWP SfTabControl control, including changing the placement of tabs and menu options.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# TabStripPlacement and Menu in UWP Tab Control (SfTabControl)
+# TabStripPlacement and Menu in UWP SfTabControl
 
 ## Change placement of Tabs
 

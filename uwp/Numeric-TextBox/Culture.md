@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Culture in UWP Numeric TextBox control | Syncfusion
-description: Learn here all about Culture support in Syncfusion UWP Numeric TextBox (SfNumericTextBox) control and more.
+title: Culture in UWP SfNumericTextBox | Syncfusion®
+description: Learn about the Culture support in the Syncfusion® UWP SfNumericTextBox control to localize the text based on specified culture.
 platform: uwp
-control: SfNumeric TextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# Culture in UWP Numeric TextBox (SfNumericTextBox)
+# Culture in UWP SfNumericTextBox
 
 The Culture property helps to localize the SfNumericTextBox. Text will be formatted based on the specified Culture. 
 

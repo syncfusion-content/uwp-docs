@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gestures in UWP Numeric UpDown control | Syncfusion
-description: Learn here all about Gestures support in Syncfusion UWP Numeric UpDown (SfNumericUpDown) control and more.
+title: Gestures in UWP SfNumericUpDown | Syncfusion®
+description: Learn about the gesture support in the Syncfusion® UWP SfNumericUpDown control, including keyboard and other input gestures.
 platform: uwp
-control: SfNumeric UpDown
+control: SfNumericUpDown
 documentation: ug
 ---
 
-# Gestures in UWP Numeric UpDown (SfNumericUpDown)
+# Gestures in UWP SfNumericUpDown
 
 ## Keyboard
 

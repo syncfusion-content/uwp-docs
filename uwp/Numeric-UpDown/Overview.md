@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Numeric UpDown control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Numeric UpDown (SfNumericUpDown) control, its elements and more.
+title: About Syncfusion® UWP SfNumericUpDown Control | Syncfusion®
+description: Learn about introduction of Syncfusion® UWP SfNumericUpDown control and more details.
 platform: uwp
-control: SfNumeric UpDown
+control: SfNumericUpDown
 documentation: ug
 ---
 
-# UWP Numeric UpDown (SfNumericUpDown) Overview
+# About Syncfusion® UWP SfNumericUpDown Control
 
 SfNumericUpDown is an editor control which provides up and down repeat buttons to increment and decrement the values. The control respects the UI culture and can be configured to display different formats like currency format, scientific format, etc.
 

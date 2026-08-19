@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Numeric TextBox control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Numeric TextBox (SfNumericTextBox) control, its elements and more.
+title: About Syncfusion® UWP SfNumericTextBox Control | Syncfusion®
+description: Learn about introduction of Syncfusion® UWP SfNumericTextBox control and more details.
 platform: uwp
-control: SfNumeric TextBox
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# UWP Numeric TextBox (SfNumericTextBox) Overview
+# About Syncfusion® UWP SfNumericTextBox Control
 
 SfNumericTextBox is an advanced version of the TextBox control which restricts input to numeric values. The control respects the UI culture and can be configured to display different formats like currency format, scientific format, etc.
 

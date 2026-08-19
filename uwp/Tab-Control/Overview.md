@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Tab Control control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP Tab Control (SfTabControl) control, its elements and more.
+title: About Syncfusion® UWP SfTabControl Control | Syncfusion®
+description: Learn about introduction of Syncfusion® UWP SfTabControl control and more details.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# UWP Tab Control (SfTabControl) Overview
+# About Syncfusion® UWP SfTabControl Control
 
 SfTabControl is similar to dividers in a notebook or the labels in a file cabinet. It can be used to create a tabbed interface in an application. 
 

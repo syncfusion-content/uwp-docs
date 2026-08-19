@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ParsingMode in UWP Numeric UpDown control | Syncfusion
-description: Learn here all about ParsingMode support in Syncfusion UWP Numeric UpDown (SfNumericUpDown) control and more.
+title: ParsingMode in UWP SfNumericUpDown | Syncfusion®
+description: Learn about the ParsingMode support in the Syncfusion® UWP SfNumericUpDown control using the ParsingMode property with Double and Decimal enum values.
 platform: uwp
-control: SfNumeric UpDown
+control: SfNumericUpDown
 documentation: ug
 ---
 
-# ParsingMode in UWP Numeric UpDown (SfNumericUpDown)
+# ParsingMode in UWP SfNumericUpDown
 
 Value of the SfNumericUpDown gets parsed based on ParsingMode property. ParsingMode is of type Parsers which is enum of Double and Decimal. DefaultValue for ParsingMode is Double.
 

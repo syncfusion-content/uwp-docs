@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Columns in UWP Picker control | Syncfusion
-description: Learn here all about Dealing with Columns support in Syncfusion UWP Picker (SfPicker) control and more.
-platform: Xamarin
-control: Picker
+title: Dealing with Columns in UWP SfPicker | Syncfusion®
+description: Learn how to deal with Columns in the Syncfusion® UWP SfPicker control, including adjusting column width and other customization options.
+platform: uwp
+control: SfPicker
 documentation: ug
 ---
 
-# Dealing with Columns in UWP Picker (SfPicker)
+# Dealing with Columns in UWP SfPicker
 
 This section explains about the customization of SfPicker Columns
 

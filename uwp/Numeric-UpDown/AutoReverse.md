@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoReverse in UWP Numeric UpDown control | Syncfusion
-description: Learn here all about AutoReverse support in Syncfusion UWP Numeric UpDown (SfNumericUpDown) control and more.
+title: AutoReverse in UWP SfNumericUpDown | Syncfusion®
+description: Learn about the AutoReverse feature in the Syncfusion® UWP SfNumericUpDown control that cycles between Minimum and Maximum values.
 platform: uwp
-control: SfNumeric UpDown
+control: SfNumericUpDown
 documentation: ug
 ---
 
-# AutoReverse in UWP Numeric UpDown (SfNumericUpDown)
+# AutoReverse in UWP SfNumericUpDown
 
 While incrementing, the control will start from Minimum once it reaches the Maximum and vice-versa.
 
