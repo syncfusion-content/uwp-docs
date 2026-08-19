@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in UWP SfTreeGrid | Syncfusion®
-description: Filtering in UWP SfTreeGrid supports programmatic filtering and customization to refine and display hierarchical node data.
+title: Filtering in UWP TreeGrid | Syncfusion®
+description: Filtering in UWP TreeGrid supports programmatic filtering and customization to refine and display hierarchical node data.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Filtering in UWP SfTreeGrid
+# Filtering in UWP TreeGrid
 
 ## Overview
 

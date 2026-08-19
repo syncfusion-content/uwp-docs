@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP SfTreeGrid | Syncfusion®
-description: Localization in UWP SfTreeGrid supports changing culture, language, and resource files to deliver region-specific user experiences.
+title: Localization in UWP TreeGrid | Syncfusion®
+description: Localization in UWP TreeGrid supports changing culture, language, and resource files to deliver region-specific user experiences.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Localization in UWP SfTreeGrid
+# Localization in UWP TreeGrid
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by adding resource file. Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before InitializeComponent method.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in UWP SfTreeGrid | Syncfusion®
-description: Sorting in UWP SfTreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
+title: Sorting in UWP TreeGrid | Syncfusion®
+description: Sorting in UWP TreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
 
-# Sorting in UWP SfTreeGrid
+# Sorting in UWP TreeGrid
 
 SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
