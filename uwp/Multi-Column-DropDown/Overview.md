@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Multi Column Dropdown control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP Multi Column Dropdown (SfMultiColumnDropDown) control, its elements and more details.
+title: About Syncfusion UWP MultiColumn Dropdown Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio UWP MultiColumn Dropdown control and more details.
 platform: uwp
-control: SfMultiColumnDropDownControl
+control: MultiColumn Dropdown
 documentation: ug
 ---
 
-# UWP Multi Column Dropdown (SfMultiColumnDropDown) Overview
+# About Syncfusion® UWP MultiColumn Dropdown Control.
 
 Syncfusion's MultiColumnDropDown control is combined with an Editor (TextBox Control) and powerful SfDataGrid (DataGrid Control) to search and select items by using the DropDownGrid. The Editor accepts free-flow text that is used to filter the DropDownGrid.
 

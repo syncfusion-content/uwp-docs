@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Utilities in UWP Calculator control | Syncfusion®
-description: Learn here all about Utilities support in Syncfusion® UWP Calculator (SfCalculator) control and more.
+title: Utilities in UWP SfCalculator | Syncfusion®
+description: The utility functions in SfCalculator provide helper methods including identifying the operation and other useful mathematical functions.
 platform: uwp
 control: SfCalculator
 documentation: ug
 ---
 
-# Utilities in UWP Calculator (SfCalculator)
+# Utilities in UWP SfCalculator
 
 Several utility functions are available in `SfCalculator` control.
 

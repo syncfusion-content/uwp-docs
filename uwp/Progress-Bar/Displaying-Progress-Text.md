@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Displaying Progress Text in UWP Progress Bar control | Syncfusion®
-description: Learn here all about Displaying Progress Text support in Syncfusion® UWP Progress Bar (SfProgressBar) control and more.
-platform: UWP
+title: Displaying Progress Text in UWP SfProgressBar | Syncfusion®
+description: The DisplayContentMode in SfProgressBar allows displaying Value, Percentage, or Custom Text as the display content of the progress bar.
+platform: uwp
 control: SfProgressBar
 documentation: ug
---- 
+---
 
-# Displaying Progress Text in UWP Progress Bar (SfProgressBar)
+# Displaying Progress Text in UWP SfProgressBar
 
 `SfProgressBar` can display either `Value` or `Percentage` or `Custom Text` as display content using the property `DisplayContentMode`. The values of `DisplayContentMode` are
 

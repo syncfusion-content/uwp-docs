@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Row Drag and Drop in UWP TreeGrid Control | Syncfusion®
-description: Learn here all about row drag and drop support in Syncfusion® Essential® UWP TreeGrid control, it's elements and more.
+title: Row Drag and Drop in UWP TreeGrid | Syncfusion®
+description: Row Drag and Drop in UWP TreeGrid enables interactive row reordering with customizable drop positions and events.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 # Row Drag and Drop in UWP TreeGrid

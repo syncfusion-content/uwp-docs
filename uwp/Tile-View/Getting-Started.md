@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Tile View control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP Tile View (SfTileView) control, its elements and more.
+title: Getting Started with UWP SfTileView | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP SfTileView control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Getting Started with UWP Tile View (SfTileView)
+# Getting Started with UWP SfTileView
 
 This section explains how to create views as tiles using the `SfTileView` control.
 

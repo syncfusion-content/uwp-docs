@@ -1,13 +1,13 @@
 ---
 layout : post
-title: Data Binding in UWP Rotator control | Syncfusion
-description: Learn here all about Data Binding support in Syncfusion UWP Rotator (SfRotator) control and more.
-platform : UWP
-control : Rotator 
-documentation : ug
+title: Data Binding in UWP SfRotator | Syncfusion®
+description: The data binding feature in SfRotator allows populating SfRotatorItem with a collection of image data using the ItemsSource property.
+platform: uwp
+control: SfRotator
+documentation: ug
 ---
 
-# Data Binding in UWP Rotator (SfRotator)
+# Data Binding in UWP SfRotator
 
 ## Adding RotatorItem to the control
 

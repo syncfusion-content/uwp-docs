@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ColumnTypes in UWP TreeGrid control | Syncfusion®
-description: Learn here all about ColumnTypes support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more features.
+title: Column Types in UWP TreeGrid | Syncfusion®
+description: Column Types in UWP TreeGrid support text, numeric, date, checkbox, image, and template columns to display varied data formats.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
 
-# ColumnTypes in UWP TreeGrid (SfTreeGrid)
+# Column Types in UWP TreeGrid
 
 SfTreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
 You can also add or override existing columns and renderers as you need.

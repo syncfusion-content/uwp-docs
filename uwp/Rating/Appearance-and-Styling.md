@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and Styling in UWP Rating control | Syncfusion
-description: Learn here all about Appearance and Styling support in Syncfusion UWP Rating (SfRating) control and more.
+title: Appearance and Styling in UWP SfRating | Syncfusion®
+description: The appearance and styling in SfRating allows customizing the visual look of rating items using SfRatingItem properties like PointerOverFill.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# Appearance and Styling in UWP Rating (SfRating)
+# Appearance and Styling in UWP SfRating
 
 Rating items are customizable in much simpler and easier way. The following properties of `SfRatingItem` are accessible in SfRating.ItemContainerStyle.
 

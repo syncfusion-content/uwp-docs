@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Helpers support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
+title: Helpers in UWP TreeGrid | Syncfusion®
+description: Helpers in TreeGrid provide index resolver methods to identify rows, columns, and nodes, and include dispose support for efficient memory management.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Helpers in UWP TreeGrid (SfTreeGrid)
+# Helpers in UWP TreeGrid
 
 ## IndexResolver
 

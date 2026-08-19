@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Docking Window in UWP Docking control | Syncfusion®
-description: Learn here all about Docking Window support in Syncfusion® UWP Docking (SfDockingManager) control and more.
+title: Docking Window in UWP SfDockingManager | Syncfusion®
+description: The Docking Window feature in SfDockingManager is the default state where all child elements are docked within the page area.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Docking Window in UWP Docking (SfDockingManager)
+# Docking Window in UWP SfDockingManager
 
 Docking window is one of the states of `SfDockingManager`. Since Dock is the default value, initially all the children stay as Docking Window.
 

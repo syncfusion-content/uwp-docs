@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Pivot Client control | Syncfusion
-description: Learn here all about Localization support in Syncfusion UWP Pivot Client (SfPivotClient) control and more.
-platform: UWP
-control: SfPivotClient
+title: Localization in UWP Pivot Client | Syncfusion®
+description: Localization in Syncfusion® UWP Pivot Client control enables culture-specific text, resource files, and RTL support to adapt applications globally.
+platform: uwp
+control: Pivot Client
 documentation: ug
 ---
 
-# Localization in UWP Pivot Client (SfPivotClient)
+# Localization in UWP Pivot Client
 
 Localization is the key feature to provide software solutions that are targeted at global users. The SfPivotClient allows users to localize the control to a specific locale and supports “resx” based localization.
 

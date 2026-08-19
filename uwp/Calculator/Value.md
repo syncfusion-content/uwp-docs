@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Value in UWP Calculator control | Syncfusion®
-description: Explore Value support in Syncfusion® UWP Calculator (SfCalculator) control, including key features, usage, and more.
+title: Value in UWP SfCalculator | Syncfusion®
+description: The Value property in SfCalculator retrieves and sets the computed value from expressions as a read-only decimal property.
 platform: uwp
 control: SfCalculator
 documentation: ug
 ---
 
-# Value in UWP Calculator (SfCalculator)
+# Value in UWP SfCalculator
 
 ## Retrieving Computed Value
 
