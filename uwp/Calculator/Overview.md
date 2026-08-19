@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Calculator control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP Calculator (SfCalculator) control, its elements and more.
+title: About Syncfusion® UWP SfCalculator Control | Syncfusion®
+description: Learn about introduction of Syncfusion UWP SfCalculator control and more details.
 platform: uwp
 control: SfCalculator
 documentation: ug
 ---
 
-# UWP Calculator (SfCalculator) Overview
+# About Syncfusion® UWP SfCalculator Control
 
 `SfCalculator` control allows you to perform basic mathematical operations without switching to external applications.
 
