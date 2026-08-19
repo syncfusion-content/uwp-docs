@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Header and Footer in UWP SfPicker | Syncfusion®
-description: The dealing with header and footer feature in SfPicker allows customizing the header and footer of the picker, including enabling or disabling the header.
+title: Dealing with Header and Footer in UWP Picker control | Syncfusion
+description: Learn how to enable, disable, and customize the header and footer in the Syncfusion UWP Picker (SfPicker) control.
 platform: uwp
 control: SfPicker
 documentation: ug
 ---
 
-# Dealing with Header and Footer in UWP SfPicker
+# Dealing with Header and Footer in UWP Picker
 
 This section explains about the header and footer customization of SfPicker.
 

@@ -260,5 +260,5 @@ To explore about selection and selection related events , refer to [Selection](/
 ![rotating the selected node](Node_images/Rotate.gif)
 
 ### Constraints
-
+aa
 The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/uwp/diagram/constraints#node-constraints "Node Constraints").
