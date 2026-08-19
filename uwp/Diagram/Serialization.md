@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in UWP Diagram control | Syncfusion®
-description: Learn here all about Serialization support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
+title: Serialization in UWP SfDiagram | Syncfusion®
+description: Learn about serialization in the Syncfusion® UWP SfDiagram control, including saving, loading, state persistence, and node serialization.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Serialization in UWP Diagram (SfDiagram)
+# Serialization in UWP SfDiagram
 
 Serialization is the process of saving and loading the Essential® Diagram for state persistence of the SfDiagram.
 
@@ -15,7 +15,7 @@ In SfDiagram, DataContractSerializer is used for Serialization. The functionalit
 
 The following code example illustrate how to save and load the SfDiagram control to Stream
 
-{% highlight C# %}
+{% highlight c# %}
 
 //SfDiagram saved to steam
 
@@ -39,7 +39,7 @@ For example, the following steps illustrate how to serialize the Custom Property
 
 ### All serializable [DataMember] custom fields or custom properties in a [DataContract] type must be set to public, and read or write.
 
-{% highlight C# %}
+{% highlight c# %}
 
 public class NodeContent : INotifyPropertyChanged
 {
@@ -55,7 +55,7 @@ public class NodeContent : INotifyPropertyChanged
 
 ### Known types must be specified in code for the custom class.
 
-{% highlight C# %}
+{% highlight c# %}
 
 sfdiagram.KnownTypes = () => new List<Type>()
 {

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Null Value in UWP DatePicker control | Syncfusion®
-description: Learn here all about Setting Null Value support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
+title: Setting Null Value in UWP DatePicker control | Syncfusion
+description: Learn how to set null values and configure the on-screen keyboard input scope in the Syncfusion UWP DatePicker (SfDatePicker) control.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# Setting Null Value in UWP DatePicker (SfDatePicker)
+# Setting Null Value in UWP DatePicker
 
 The AllowNull property can be used to set the SfDatePicker value to null. When this property is enabled along with the Value property set to null, the SfDatePicker control will not display any value.
 

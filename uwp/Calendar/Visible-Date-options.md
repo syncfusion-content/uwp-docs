@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Visible Dates in UWP Calendar control | Syncfusion
-description: Learn here all about Visible Dates support in the Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn how to set minimum, maximum, and selective visible dates in the Syncfusion UWP Calendar (SfCalendar) control.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Visible Dates in UWP Calendar (SfCalendar)
+# Visible Dates in UWP Calendar
 
 `SfCalendar` provides support for making dates inactive within a range (or) selective dates. It can be achieved by the properties `VisibleMinDate`, `VisibleMaxDate`, and `VisibleDates`.
 

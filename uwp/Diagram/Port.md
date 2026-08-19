@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Port in UWP Diagram control | Syncfusion®
-description: Learn here all about Port support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
+title: Port in UWP SfDiagram | Syncfusion®
+description: Learn about ports in the Syncfusion® UWP SfDiagram control, including node ports, connector ports, connections, appearance, and constraints.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Port in UWP Diagram (SfDiagram)
+# Port in UWP SfDiagram
 
 Essential® Diagram for UWP provides support to define custom ports for making connections.
 
@@ -73,7 +73,7 @@ The following code illustrates how to add ports to Node.
 
 [C#]
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Create port collection
 public class PortCollection : ObservableCollection<IPort>
@@ -178,7 +178,7 @@ The following code illustrates how to add ports to Connector.
 
 [C#]
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Create port collection
 public class PortCollection : ObservableCollection<IPort>

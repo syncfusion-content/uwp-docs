@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Customizing DropDown in UWP DatePicker control | Syncfusion®
-description: Learn here all about Customizing DropDown support in Syncfusion® UWP DatePicker (SfDatePicker) control and more.
+title: Customizing DropDown in UWP DatePicker control | Syncfusion
+description: Learn how to customize the dropdown height, open state, and dropdown button in the Syncfusion UWP DatePicker (SfDatePicker) control.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
-# Customizing DropDown in UWP DatePicker (SfDatePicker)
+# Customizing DropDown in UWP DatePicker
 
 ## DropDown height
 

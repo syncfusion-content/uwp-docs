@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataSource in UWP Diagram control | Syncfusion®
-description: Learn here all about DataSource settings support and its declaration in the Syncfusion® UWP Diagram (SfDiagram) control and more.
+title: DataSource in UWP SfDiagram | Syncfusion®
+description: Learn how to bind and visualize data in the Syncfusion® UWP SfDiagram control using DataSource settings, relationships, and layouts.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# DataSource in UWP Diagram (SfDiagram)
+# DataSource in UWP SfDiagram
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 
@@ -168,7 +168,7 @@ Sample Link : [DataSource Sample](https://github.com/SyncfusionExamples/UWP-Diag
 By default, the node without parent is treated as root of the layout. Now, `DataSourceSettings` have option to specify the root node of the layout.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 //object with id “CEO”, is considered as root of tree layout.
 diagram.DataSourceSettings.Root = “CEO”;

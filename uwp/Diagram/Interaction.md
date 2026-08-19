@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interaction in UWP Diagram control | Syncfusion®
-description: Learn here all about Interaction support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
+title: Interaction in UWP SfDiagram | Syncfusion®
+description: Learn about interaction in the Syncfusion® UWP SfDiagram control, including selection, drag and drop, zooming, panning, keyboard shortcuts, and events.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Interaction in UWP Diagram (SfDiagram)
+# Interaction in UWP SfDiagram
 
 ## Selection
 
@@ -49,7 +49,7 @@ The `IsSelected` Property is used to select/unselect the elements at runtime.
 The following code example illustrates how to select/unselect an item through programmatically.
 
 {% tabs %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Selects an elements 
 
@@ -74,7 +74,7 @@ Selected objects can be deleted by <kdb> Delete </kdb> and In-built Delete comma
 
 * `ItemDeletingEvent` will notify you with the item , option to cancel the deleting operation of item. To explore about arguments , please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html)   
 
-#### Selection Indicator Style
+### Selection Indicator Style
 
 Multiple Selection will show the preview for the selected Items. We have provided customization option for the appearance of the Preview.
 
@@ -100,7 +100,7 @@ The below events are common for Node, Connector, Group, Port and Annotation.
 
 Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the constraints property. The following code illustrates how to enable **dropping**.
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Registering an event
 (diagram.Info as IGraphInfo).ItemDropEvent += MainWindow_ItemDropEvent;

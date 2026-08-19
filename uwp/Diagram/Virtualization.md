@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtualization in UWP Diagram control | Syncfusion®
-description: Learn here all about Virtualization support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements and more.
+title: Virtualization in UWP SfDiagram | Syncfusion®
+description: Learn about virtualization in the Syncfusion® UWP SfDiagram control, including deferred scrolling, outline rendering, and performance optimization.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Virtualization in UWP Diagram (SfDiagram)
+# Virtualization in UWP SfDiagram
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded (remaining objects are loaded only when they come into view).
 
@@ -20,7 +20,7 @@ The following code example illustrates how to enable Virtualization in SfDiagram
 <!--Initialize the SfDiagram and enable the virtualize and outline constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Virtualize"/>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 sfdiagram.Constraints = sfdiagram.Constraints | GraphConstraints.Virtualize;
 
@@ -38,7 +38,7 @@ To improve scrolling performance, the outline of a diagram element will be displ
 <!--Initialize the SfDiagram and enable the virtualize and outline constraint-->
 <syncfusion:SfDiagram x:Name="diagram" Constraints="Default,Virtualize,Outline"/>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
@@ -80,7 +80,7 @@ Options are provided to override the appearance, style, and interval time of out
 </syncfusion:SfDiagram>
 	
 {% endhighlight %}	
-{% highlight C# %}
+{% highlight c# %}
 
 //Initialize the SfDiagram
 SfDiagram diagram = new SfDiagram();
