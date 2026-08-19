@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Adjusting Color Values in UWP Color Picker control | Syncfusion®
-description: Learn here all about Adjusting Color Values support in Syncfusion® UWP Color Picker (SfColorPicker) control and more.
+title: Adjusting Color Values in UWP SfColorPicker | Syncfusion®
+description: Learn how to adjust color values in the Syncfusion UWP SfColorPicker control, including changing the Hue value and other color properties.
 platform: uwp
 control: SfColorPicker
 documentation: ug
 ---
 
-# Adjusting Color Values in UWP Color Picker (SfColorPicker)
+# Adjusting Color Values in UWP SfColorPicker
 
 ## Adjusting the Hue Value
 

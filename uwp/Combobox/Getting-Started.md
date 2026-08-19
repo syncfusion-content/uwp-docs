@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP ComboBox control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP ComboBox (SfComboBox) control, its elements and more.
+title: Getting Started with UWP SfComboBox | Syncfusion®
+description: Learn how to get started with the Syncfusion UWP SfComboBox control. Explore setup, features, examples, and customization options.
 platform: uwp
-control: SfComboBox  
+control: SfComboBox
 documentation: ug
 ---
 
-# Getting Started with UWP ComboBox (SfComboBox)
+# Getting Started with UWP SfComboBox
 
 The SfComboBox control allows the user to select an item from a list of suggestions.
 
