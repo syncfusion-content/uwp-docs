@@ -84,7 +84,7 @@ namespace Flow_Diagram
 ## Flow Chart
 Let us create a simple flow chart using SfDiagram.
 
-#### Initialize the Diagram
+### Initialize the Diagram
 
 The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
 
@@ -99,7 +99,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
 {% endhighlight %} 
 {% endtabs %}
 
-#### Initialize Nodes and Connectors
+### Initialize Nodes and Connectors
 
 To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned to the NodeCollection, that is, ObservableCollection of the Node. 
 Connectors property is assigned to the ConnectorCollection, that is, ObservableCollection of the Connector.
