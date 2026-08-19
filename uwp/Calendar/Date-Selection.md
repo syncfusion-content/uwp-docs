@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Date Selection in UWP Calendar control | Syncfusion
-description: Learn here all about Date Selection support in the Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn how to select single or multiple dates and date ranges in the Syncfusion UWP Calendar (SfCalendar) control.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Date Selection in UWP Calendar (SfCalendar)
+# Date Selection in UWP Calendar
 
 Dates can be selected in `SfCalendar` in several ways.
 
