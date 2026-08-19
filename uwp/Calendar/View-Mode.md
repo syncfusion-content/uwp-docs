@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Built-in Views in UWP Calendar control | Syncfusion
-description: Learn here all about Built-in Views support in the Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn about the built-in views such as month, year, decade, and century in the Syncfusion UWP Calendar (SfCalendar) control.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Built-in Views in UWP Calendar (SfCalendar)
+# Built-in Views in UWP Calendar
 
 The `SfCalendar` control provides four types of views to display dates/years such as month, year, decade, century. It can be assigned to the `SfCalendar` control by using the [ViewMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_ViewMode) property.
 

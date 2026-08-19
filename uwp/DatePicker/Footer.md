@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Footer in UWP DatePicker control | Syncfusion®
-description: Explore Footer support in Syncfusion® UWP DatePicker (SfDatePicker) control, including key features, customization options, and more.
+title: Footer in UWP DatePicker control | Syncfusion
+description: Learn how to show or hide the Done and Cancel buttons in the Syncfusion UWP DatePicker (SfDatePicker) control.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# Footer in UWP DatePicker (SfDatePicker)
+# Footer in UWP DatePicker
 
 ## Done and Cancel Buttons
 

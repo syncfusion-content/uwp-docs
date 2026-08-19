@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP DatePicker control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP DatePicker (SfDatePicker) control, its elements and more.
+title: Getting Started with UWP DatePicker | Syncfusion
+description: Learn how to get started with the Syncfusion UWP DatePicker control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# Getting Started with UWP DatePicker (SfDatePicker)
+# Getting Started with UWP DatePicker
 
 This section provides a quick overview of working with the [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control.
 

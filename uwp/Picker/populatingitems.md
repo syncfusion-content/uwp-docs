@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Populating Items in UWP Picker control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion UWP Picker (SfPicker) control and more.
-platform: Xamarin
-control: Picker
+description: Learn how to bind data and populate multi-column items in the Syncfusion UWP Picker (SfPicker) control.
+platform: uwp
+control: SfPicker
 documentation: ug
 ---
 
 
-# Populating Items in UWP Picker (SfPicker)
+# Populating Items in UWP Picker
 
 This section explains about the ways of populating items for SfPicker control
 
@@ -235,7 +235,7 @@ In SfPicker, items text color and font both selected and unselected item of SfPi
 
 ### Selected Item Customization
 
-##### Text Color 
+#### Text Color 
 
 Selected item text color can be customized by setting `SfPicker.SelectedItemForeground` property of SfPicker.
 
@@ -480,7 +480,7 @@ Selected item text FontAttribute can be customized by setting `SfPicker.Selected
 
 ### UnSelected Item Customization
 
-##### Text Color
+#### Text Color
 
 Unselected item text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property of SfPicker.
 
