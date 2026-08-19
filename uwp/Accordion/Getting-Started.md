@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Accordion control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP Accordion (SfAccordion) control, its elements and more.
+title: Getting Started with UWP SfAccordion | Syncfusion®
+description: Learn how to get started with the Syncfusion UWP SfAccordion control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfAccordion
 documentation: ug
 ---
 
-# Getting Started with UWP Accordion (SfAccordion)
+# Getting Started with UWP SfAccordion
 
 This section explains how to create a long list of expandable items using SfAccordion control.
 
