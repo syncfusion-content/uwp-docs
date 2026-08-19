@@ -3,7 +3,7 @@ layout: post
 title: Calculated Members in UWP Pivot Client | Syncfusion®
 description: Calculated Members in Syncfusion® UWP Pivot Client control define custom measures or members using editor dialog or OLAP report for advanced data analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

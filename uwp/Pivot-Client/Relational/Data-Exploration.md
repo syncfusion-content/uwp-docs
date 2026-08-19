@@ -3,7 +3,7 @@ layout: post
 title: Data Exploration in UWP Pivot Client | Syncfusion®
 description: Data Exploration in Syncfusion® UWP Pivot Client control enables filtering, grouping, and searching to refine OLAP data for interactive analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

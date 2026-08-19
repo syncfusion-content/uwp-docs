@@ -3,7 +3,7 @@ layout: post
 title: Advanced Filtering in UWP Pivot Client | Syncfusion®
 description: Advanced Filtering in Syncfusion® UWP Pivot Client control enables label and value filters, allowing precise member selection for refined data analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Paging in UWP Pivot Client | Syncfusion®
 description: Paging in Syncfusion® UWP Pivot Client control splits large OLAP CellSets into pages, enabling smooth navigation and performance optimization.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

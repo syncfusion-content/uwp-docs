@@ -3,7 +3,7 @@ layout: post
 title: Custom Summary in UWP Pivot Client | Syncfusion®
 description: Custom Summary in Syncfusion® UWP Pivot Client control lets users define personalized summary types and formats for tailored OLAP data analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

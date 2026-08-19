@@ -3,7 +3,7 @@ layout: post
 title: Custom Calculations in UWP Pivot Client | Syncfusion®
 description: Custom Calculations in Syncfusion® UWP Pivot Client control apply formulas, percentages, ranks, and running totals for advanced OLAP data analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

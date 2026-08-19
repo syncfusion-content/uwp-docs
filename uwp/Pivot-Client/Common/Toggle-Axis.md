@@ -3,7 +3,7 @@ layout: post
 title: Toggle Axis in UWP Pivot Client | Syncfusion®
 description: Toggle Axis in Syncfusion® UWP Pivot Client control swaps row and column axis elements, refreshing Pivot Grid and Pivot Chart views for dynamic analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Components in UWP Pivot Client | Syncfusion®
 description: Components in Syncfusion® UWP Pivot Client include pivot table field list, axis builder, filter editor, toolbar options, and integrated grid and chart.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

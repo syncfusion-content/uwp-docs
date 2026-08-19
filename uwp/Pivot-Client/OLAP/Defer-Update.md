@@ -3,7 +3,7 @@ layout: post
 title: Defer Update in UWP Pivot Client | Syncfusion®
 description: Defer Update in Syncfusion® UWP Pivot Client control enables on-demand refreshing by disabling auto-execute, updating data only when triggered manually.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Show Calculations as Columns or Rows in UWP Pivot Client | Syncfusion®
 description: Show Calculations in Syncfusion® UWP Pivot Client control displays calculation values as columns or rows using property settings or field list options.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

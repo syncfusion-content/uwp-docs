@@ -3,7 +3,7 @@ layout: post
 title: Calculated Field in UWP Pivot Client | Syncfusion®
 description: Calculated Field in Syncfusion® UWP Pivot Client control lets users create custom formulas using existing fields for advanced OLAP data analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Expression Fields in UWP Pivot Client | Syncfusion®
 description: Expression Fields in Syncfusion® UWP Pivot Client control let users define custom formulas with operators and summary types for advanced OLAP analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

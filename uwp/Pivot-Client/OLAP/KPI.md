@@ -3,7 +3,7 @@ layout: post
 title: KPI in UWP Pivot Client | Syncfusion®
 description: KPI in Syncfusion® UWP Pivot Client control displays business metrics like goal, status, trend, and value to evaluate performance using OLAP data.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

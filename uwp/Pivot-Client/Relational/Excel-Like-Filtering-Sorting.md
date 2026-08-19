@@ -3,7 +3,7 @@ layout: post
 title: Excel-Like Filtering and Sorting in UWP Pivot Client | Syncfusion®
 description: Excel-like Filtering and Sorting in Syncfusion® UWP Pivot Client control enables sorting, label filters, and value filters to refine OLAP data interactively.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Named Set in UWP Pivot Client | Syncfusion®
 description: Named Set in Syncfusion® UWP Pivot Client binds OLAP cube-defined sets, simplifying reuse of complex MDX expressions for multidimensional analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 

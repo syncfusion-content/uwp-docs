@@ -3,7 +3,7 @@ layout: post
 title: Localization in UWP Pivot Client | Syncfusion®
 description: Localization in Syncfusion® UWP Pivot Client control enables culture-specific text, resource files, and RTL support to adapt applications globally.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 
