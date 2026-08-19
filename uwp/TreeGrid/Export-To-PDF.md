@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export to PDF in UWP SfTreeGrid | Syncfusion®
-description: Export data from the Syncfusion® UWP SfTreeGrid control to PDF. Supports exporting hierarchical data with options for customization.
+description: Export to PDF in UWP SfTreeGrid renders hierarchical data into PDF with customizable headers, pagination, and styling options.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

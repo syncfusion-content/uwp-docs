@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation in UWP SfTreeGrid | Syncfusion®
-description: Validate data in the Syncfusion® UWP SfTreeGrid control. Supports built‑in and custom validation rules to ensure accurate input and maintain data integrity.
+description: Data Validation in UWP SfTreeGrid supports built-in and custom rules with error indicators and tooltips for accurate input.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

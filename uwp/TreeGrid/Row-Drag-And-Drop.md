@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Drag and Drop in UWP SfTreeGrid | Syncfusion®
-description: Drag and drop rows in the Syncfusion® UWP SfTreeGrid control to reorder, move between nodes, and customize drag‑drop behavior.
+description: Row Drag and Drop in UWP SfTreeGrid enables interactive row reordering with customizable drop positions and events.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

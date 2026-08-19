@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Columns in UWP SfTreeGrid | Syncfusion®
-description: Manage columns in the Syncfusion® UWP SfTreeGrid control. Automatically generate columns from data or manually define them to customize display and binding.
+description: Columns in UWP SfTreeGrid allow binding, sizing, formatting, sorting, and rendering options to display and manage data effectively.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

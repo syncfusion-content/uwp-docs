@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in UWP SfTreeGrid | Syncfusion®
-description: Sort data in the Syncfusion® UWP SfTreeGrid control with support for single and multi‑column sorting, custom comparers, and interactive sort icons.
+description: Sorting in UWP SfTreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
 platform: uwp
 control: SfTreeGrid
 documentation: ug

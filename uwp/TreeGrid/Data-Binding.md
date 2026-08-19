@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in UWP SfTreeGrid | Syncfusion®
-description: Bind data to the Syncfusion® UWP SfTreeGrid control. Supports hierarchical collections and enables displaying structured data seamlessly.
+description: Data Binding in UWP SfTreeGrid supports self-relational and nested collections, enabling dynamic display of hierarchical data seamlessly.
 platform: uwp
 control: SfTreeGrid
 documentation: ug
