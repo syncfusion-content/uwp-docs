@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Items in UWP Tile View control | Syncfusion®
-description: Learn here all about Populating Items support in Syncfusion® UWP Tile View (SfTileView) control and more.
+title: Populating Items in UWP SfTileView | Syncfusion®
+description: The populating items feature in SfTileView allows adding SfTileViewItem children using Items and ItemSource properties to bind business object collections.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Populating Items in UWP Tile View (SfTileView)
+# Populating Items in UWP SfTileView
 
 `SfTileViewItem` are added as items of `SfTileView`. Items can be added using `Items` or `ItemSource` property.
 

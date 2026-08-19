@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Domain UpDown control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP Domain UpDown (SfDomainUpDown) control, its elements and more.
+title: Getting Started with UWP SfDomainUpDown | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP SfDomainUpDown control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
 ---
 
-# Getting Started with UWP Domain UpDown (SfDomainUpDown)
+# Getting Started with UWP SfDomainUpDown
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 

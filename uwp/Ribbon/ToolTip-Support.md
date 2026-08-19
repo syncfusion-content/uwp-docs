@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip Support in UWP Ribbon control | Syncfusion
-description: Learn here all about ToolTip Support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
+title: ToolTip Support in UWP SfRibbon | Syncfusion®
+description: The ToolTip Support in SfRibbon displays small information while hovering the mouse over the ribbon controls.
 platform: uwp
-control: SfRibbon (Touch Ribbon)
+control: SfRibbon
 documentation: ug
 ---
 
-# ToolTip Support in UWP Ribbon
+# ToolTip Support in UWP SfRibbon
 
 Ribbon Controls support tooltips that are used to display small information while hovering the mouse over them.
 

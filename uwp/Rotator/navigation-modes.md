@@ -1,13 +1,13 @@
 ---
 layout: post
-title: NavigationStripMode in UWP Rotator control | Syncfusion
-description: Learn here all about NavigationStripMode support in Syncfusion UWP Rotator (SfRotator) control and more.
-platform: UWP 
-control: Rotator
+title: NavigationStripMode in UWP SfRotator | Syncfusion®
+description: The NavigationStripMode in SfRotator specifies the appearance of navigation bar items, including Thumbnail and Dots navigation modes for image selection.
+platform: uwp
+control: SfRotator
 documentation: ug
 ---
 
-# NavigationStripMode in UWP Rotator (SfRotator)
+# NavigationStripMode in UWP SfRotator
 
 The `NavigationStripMode` property specifies the appearance of navigation bar items. The image data can be selected either by Thumbnail or by Dots navigation modes.
 

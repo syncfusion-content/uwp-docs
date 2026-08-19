@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Re-ordering and Orientation in UWP Tile View control | Syncfusion®
-description: Learn here all about Re-ordering and Orientation support in Syncfusion® UWP Tile View (SfTileView) control and more.
+title: Re-ordering and Orientation in UWP SfTileView | Syncfusion®
+description: The re-ordering and orientation features in SfTileView allow rearranging items through touch drag and drop using AllowDragDrop and AllowReorder properties.
 platform: uwp
 control: SfTileView
 documentation: ug
 ---
 
-# Re-ordering and Orientation in UWP Tile View (SfTileView)
+# Re-ordering and Orientation in UWP SfTileView
 
 ## Reordering through touch
 

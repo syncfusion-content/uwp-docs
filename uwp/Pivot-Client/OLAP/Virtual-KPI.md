@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Virtual KPI in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Virtual KPI support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Virtual KPI in UWP Pivot Client | Syncfusion®
+description: Virtual KPI in Syncfusion® UWP Pivot Client control defines KPIs dynamically at runtime without SSAS, enabling flexible performance tracking and analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 
-# Virtual KPI in UWP Pivot Client (SfPivotClient)
+# Virtual KPI in UWP Pivot Client
 
 Key performance indicators can be virtually defined during the runtime. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is very useful when users want to define KPIs dynamically, and it minimizes the time required to create KPIs.
 

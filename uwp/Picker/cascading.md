@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Cascading in UWP Picker control | Syncfusion
-description: Learn here all about Cascading support in Syncfusion UWP Picker (SfPicker) control and more.
-platform: Xamarin
-control: Picker
+title: Cascading in UWP SfPicker | Syncfusion®
+description: The Cascading feature in SfPicker creates custom cascading samples where the state collection is updated based on the selected item.
+platform: uwp
+control: SfPicker
 documentation: ug
 ---
 
-
-# Cascading in UWP Picker (SfPicker)
+# Cascading in UWP SfPicker
 
 We have demonstrated how to create custom Cascading sample using Picker control in the following steps.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set Minute and Second Intervals in UWP DateTimePicker | Syncfusion
-description: Learn here all about Setting Minutes and Seconds Intervals support in Syncfusion UWP DateTimePicker (SfDateTimeCombo) control and more.
+description: Learn how to set minute and second intervals in the Syncfusion UWP DateTimePicker (SfDateTimeCombo) control.
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug

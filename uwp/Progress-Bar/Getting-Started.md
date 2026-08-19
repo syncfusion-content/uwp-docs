@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Progress Bar control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP Progress Bar (SfProgressBar) control, its elements and more.
-platform: UWP
+title: Getting Started with UWP SfProgressBar | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP SfProgressBar control. Explore setup, features, examples, and customization options.
+platform: uwp
 control: SfProgressBar
 documentation: ug
---- 
+---
 
-# Getting Started with UWP Progress Bar (SfProgressBar)
+# Getting Started with UWP SfProgressBar
 
 This section explains how to convey the task progress in an application using SfProgressBar control. 
 

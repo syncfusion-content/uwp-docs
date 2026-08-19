@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Time Picker in UWP Picker control | Syncfusion
-description: Learn here all about Time Picker support in Syncfusion UWP Picker (SfPicker) control and more.
-platform: Xamarin
-control: Picker
+title: Time Picker in UWP SfPicker | Syncfusion®
+description: The Time Picker feature in SfPicker creates a custom TimePicker by inheriting from the SfPicker control for time selection.
+platform: uwp
+control: SfPicker
 documentation: ug
 ---
 
-
-# Time Picker in UWP Picker (SfPicker)
+# Time Picker in UWP SfPicker
 
 We have demonstrated how to create TimePicker using Picker control in the following steps.
 

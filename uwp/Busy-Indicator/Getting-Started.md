@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Busy Indicator control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Busy Indicator (SfBusyIndicator) control, its elements and more.
+title: Getting Started with UWP SfBusyIndicator | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP SfBusyIndicator control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# Getting Started with UWP Busy Indicator (SfBusyIndicator)
+# Getting Started with UWP SfBusyIndicator
 
 This section explains how to create a visual representation indicating background running process with animation using `SfBusyIndicator` control.
 

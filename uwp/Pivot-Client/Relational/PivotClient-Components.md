@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PivotClient: Components in UWP Pivot Client control | Syncfusion®
-description: Learn here all about PivotClient: Components support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Components in UWP Pivot Client | Syncfusion®
+description: Components in Syncfusion® UWP Pivot Client include pivot table field list, axis builder, filter editor, toolbar options, and integrated grid and chart.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 
-# PivotClient: Components in UWP Pivot Client (SfPivotClient)
+# Components in UWP Pivot Client
 
 ## Pivot table field list
 
@@ -116,4 +116,4 @@ By default the following options are available in the toolbar.
 
 ## SfPivotGrid and SfPivotChart
 
-The [SfPivotGrid](http://help.syncfusion.com/uwp/sfpivotgrid/overview/) and [SfPivotChart](http://help.syncfusion.com/uwp/sfpivotchart/overview) controls will be rendered with respect to operations done at the axis element builder.
+The [SfPivotGrid](http://help.syncfusion.com/uwp/sfpivotgrid/overview) and [SfPivotChart](http://help.syncfusion.com/uwp/sfpivotchart/overview) controls will be rendered with respect to operations done at the axis element builder.

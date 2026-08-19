@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Summary in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Custom Summary support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Custom Summary in UWP Pivot Client | Syncfusion®
+description: Custom Summary in Syncfusion® UWP Pivot Client control lets users define personalized summary types and formats for tailored OLAP data analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 
-# Custom Summary in UWP Pivot Client (SfPivotClient)
+# Custom Summary in UWP Pivot Client
 
 The SfPivotClient supports changing the summary type of existing calculation items to custom at runtime using the custom summary dialog.
 

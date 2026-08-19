@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Excel-Like Filtering and Sorting in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Excel-Like Filtering and Sorting support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
-platform: UWP
-control: SfPivotGrid
+title: Excel-Like Filtering and Sorting in UWP Pivot Grid | Syncfusion®
+description: Excel-like Filtering and Sorting in Syncfusion® UWP Pivot Grid control lets users sort and filter pivot items interactively with label and value options.
+platform: uwp
+control: Pivot Grid
 documentation: ug
 ---
 
-# Excel-Like Filtering and Sorting in UWP Pivot Grid (SfPivotGrid)
+# Excel-Like Filtering and Sorting in UWP Pivot Grid
 
 The SfPivotGrid control supports Excel-like filtering and sorting applied to a pivot item. You can enable or disable the Excel-like sorting and filtering support by setting the `AllowMultiFunctionalSortFilter` property in the SfPivotGrid.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Autoreverse in UWP Domain UpDown control | Syncfusion®
-description: Learn here all about Autoreverse support in Syncfusion® UWP Domain UpDown (SfDomainUpDown) control and more.
+title: Autoreverse in UWP SfDomainUpDown | Syncfusion®
+description: The Autoreverse feature in SfDomainUpDown cycles the value between minimum and maximum when incrementing reaches either boundary.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
 ---
 
-# Autoreverse in UWP Domain UpDown (SfDomainUpDown)
+# Autoreverse in UWP SfDomainUpDown
 
 Incrementing the value starts from the maximum value once it has reached the minimum value and starts from the minimum value once it has reached the maximum value.
 

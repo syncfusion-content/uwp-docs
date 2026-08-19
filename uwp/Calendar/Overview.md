@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Calendar control | Syncfusion
-description: Learn here all about the introduction of the Syncfusion UWP Calendar (SfCalendar) control, its elements, and more.
+title: About Syncfusion UWP Calendar Control | Syncfusion
+description: Learn about introduction of Syncfusion UWP Calendar control. Explore its key features, elements, and more details.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# UWP Calendar (SfCalendar) Overview
+# About Syncfusion UWP Calendar Control
 
 The SfCalendar control allows selecting single or multiple dates from year 0 to 1999 A.D with touch navigation.
 

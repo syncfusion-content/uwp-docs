@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Sorting support in Syncfusion® UWP TreeGrid (SfTreeGrid) control and more.
+title: Sorting in UWP TreeGrid | Syncfusion®
+description: Sorting in UWP TreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
 
-# Sorting in UWP TreeGrid (SfTreeGrid)
+# Sorting in UWP TreeGrid
 
 SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
@@ -196,7 +196,7 @@ You can implement [ISortDirection](https://help.syncfusion.com/cr/uwp/Syncfusion
 
 Follow the below steps to add custom comparer to sort using custom logic,
 
-#### Define custom comparer with custom sort logic
+### Define custom comparer with custom sort logic
 
 In the below code snippet, `FirstName` property is compared based on its string length, instead of default string comparison. 
  
@@ -282,7 +282,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 [Action](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_Action) - Gets the action triggered this event. 
 
-[Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) - Setting value to `true`, cancels the triggered action. 
+[Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-10.0&redirectedfrom=MSDN#System_ComponentModel_CancelEventArgs_Cancel) - Setting value to `true`, cancels the triggered action. 
 
 [AddedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_AddedItems) - Gets the list of new `SortColumnDescriptions` that are added.
 
@@ -290,7 +290,7 @@ Sorting `FirstName` column sorts the data using custom sort comparer available i
 
 [CancelScroll](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSortColumnsChangingEventArgs.html#Syncfusion_UI_Xaml_Grid_GridSortColumnsChangingEventArgs_CancelScroll) - Gets or sets a value that indicates, whether scroll and bring SelectedItem in view after sorting takes place.
 
-You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](http://msdn2.microsoft.com/en-us/library/system.componentmodel.canceleventargs.cancel.aspx) property of `SortColumnChanging` event.
+You can prevent sorting for the particular column through [GridSortColumnsChangingEventArgs.Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-10.0&redirectedfrom=MSDN#System_ComponentModel_CancelEventArgs_Cancel) property of `SortColumnChanging` event.
 
 {% tabs %}
 {% highlight c# %}

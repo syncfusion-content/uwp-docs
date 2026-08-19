@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Deside Decimal Digits in UWP Numeric Entry | Syncfusion
-description: Here learn how to decide maximum decimal digits and default decimal digits support in UWP NumericTextBox.
-platform: UWP
-control: NumericTextBox
+title: Decimal Digits in UWP SfNumericTextBox | Syncfusion®
+description: The decimal digits feature in SfNumericTextBox sets the maximum number of digits after the decimal point using the MaximumNumberDecimalDigits property.
+platform: uwp
+control: SfNumericTextBox
 documentation: ug
 ---
-# Decimal Digits in UWP Numeric Entry
+# Decimal Digits in UWP SfNumericTextBox
 
 ## Set Maximum Number of Decimal Digits in UWP Numeric Entry
 
