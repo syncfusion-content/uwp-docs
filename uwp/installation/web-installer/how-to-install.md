@@ -7,7 +7,7 @@ control: Installation and Deployment
 documentation: ug
 ---
 
-# How to Install Syncfusion® UWP Web Installe
+# How to Install Syncfusion® UWP Web Installer
 
 
 ## Overview
