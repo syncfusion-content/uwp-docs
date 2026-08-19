@@ -3,7 +3,7 @@ layout: post
 title: Sorting in UWP Pivot Grid | Syncfusion®
 description: Sorting in Syncfusion® UWP Pivot Grid control helps users organize data efficiently using built‑in comparers, custom comparers, or SortOption values.
 platform: uwp
-control: SfPivotGrid
+control: Pivot Grid
 documentation: ug
 ---
 
