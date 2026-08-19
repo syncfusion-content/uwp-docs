@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Annotation in UWP Diagram control | Syncfusion®
-description: Learn here all about Annotation support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
 platform: uwp
+title: Annotation in UWP SfDiagram | Syncfusion®
+description: Learn how to use annotations in the Syncfusion® UWP SfDiagram control, including alignment, wrapping, editing, rotation, and customization.
 control: SfDiagram
 documentation: ug
 ---
 
-# Annotation in UWP Diagram (SfDiagram)
+# Annotation in UWP SfDiagram
 
 Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
 You can add Multiple Labels to a Node/Connector.
@@ -16,7 +16,7 @@ You can add Multiple Labels to a Node/Connector.
 
 You can add an Annotation to a Node/Connector by defining the IAnnotation object and adding that to the `Annotations` property of Node/Connector.The `Content` property of IAnnotation defines the object to be displayed. The following code illustrates how to create an Annotation.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates the Node Collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -115,7 +115,7 @@ The following table illustrates all the possible alignments visually with **Offs
 
 The following codes illustrates how to align Annotations.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates the Node Collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -152,7 +152,7 @@ diagram.Nodes = nodes;
 
 **Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the Annotations with the `Margin` property. The following code example illustrates how to align an Annotation based on its Offset, HorizontalAlignment, VerticalAlignment and Margin values.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -189,7 +189,7 @@ diagram.Nodes = nodes;
 
 The following code illustrates how to displace Annotation through with the Margin property.
 
-{% highlight C# %}
+{% highlight c# %}
 
 new AnnotationEditorViewModel()
 {
@@ -210,7 +210,7 @@ new AnnotationEditorViewModel()
 
 When text overflows Node boundaries, you can control it by using Text Wrapping. So, it is wrapped into multiple lines. The Wrapping property of Annotation defines how the Content should be wrapped. The following code illustrates how to wrap a Annotation in a Node.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -252,7 +252,7 @@ You can change the appearance by ViewTemplate. The following code illustrates ho
 
 [XAML]
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="viewtemplate">
   <TextBlock Text="{Binding Path=Content, Mode=TwoWay}" FontStyle="Italic" 
@@ -265,7 +265,7 @@ You can change the appearance by ViewTemplate. The following code illustrates ho
 
 [C#]
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -300,7 +300,7 @@ The Appearance of the Annotation can also be customized with appearance specific
 
 [XAML]
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <DataTemplate x:Key="viewtemplate">
   <Border BorderBrush="Black" BorderThickness="1">
@@ -321,7 +321,7 @@ Double-clicking any Annotation will enables editing of that. Double-clicking the
 
 The following code illustrates how to edit the Annotation programmatically.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates the Node collection
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
@@ -376,7 +376,7 @@ diagram.Nodes = nodes;
 
 Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction can be controlled by Annotation and it's Parent (Node/Connector). The following code example illustrates how to set `Constraints` to Annotation.
 
-{% highlight C# %}
+{% highlight c# %}
 
             //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
             NodeViewModel node = new NodeViewModel()
@@ -406,7 +406,7 @@ Annotation can be Selectable, Draggable, Resizable and Rotatable.The Interaction
 
 ## Rotation
 Automatic annotation orientation based on Parent(Node/Connector) or Page direction. To make Annotation of the Node as always horizontal when Node is rotated. We have provided `RotationReference` property to the Annotation.
-{% highlight C# %}
+{% highlight c# %}
 //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
             NodeViewModel node = new NodeViewModel()
             {
@@ -445,7 +445,7 @@ The below image represents " RotationReference=RotationReference.Parent" for Ann
 
 Diagram allows to create read only Annotation. You have to set the readOnly property of Annotation to enable/disable the read only mode. The following code illustrates how to enable **ReadOnly** mode.
 
-{% highlight C# %}
+{% highlight c# %}
 
 NodeViewModel node1 = new NodeViewModel()
 {
@@ -473,7 +473,7 @@ NodeViewModel node1 = new NodeViewModel()
 
 You can add any number of Annotations to a Node or Connector. The following code illustrates how to add multiple Annotations to a Node.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates Annotation collection
 ObservableCollection<AnnotationEditorViewModel> annotations = new ObservableCollection<AnnotationEditorViewModel>();
