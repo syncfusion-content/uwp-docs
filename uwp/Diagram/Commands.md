@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands in UWP Diagram control | Syncfusion®
-description: Learn here all about different types of commands supported in the Syncfusion® UWP Diagram (SfDiagram) control and more.
+title: Commands in UWP SfDiagram | Syncfusion®
+description: Learn about commands in the Syncfusion® UWP SfDiagram control, including alignment, spacing, sizing, clipboard, zoom, and undo or redo operations.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Commands in UWP Diagram (SfDiagram)
+# Commands in UWP SfDiagram
 
 There are several commands available in the Diagram as follows.
 
@@ -44,7 +44,7 @@ The Alignment commands as follows
 
 The following code example illustrates how to align all the selected objects at the left side of selection boundary.
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -67,7 +67,7 @@ Spacing commands enable you to place selected objects on the page at equal inter
 
 The following code example illustrates how to execute the space commands.
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -91,7 +91,7 @@ Object size commands enable selected Diagram objects on the page to be resized. 
 
 The following code example illustrates how to execute the size commands.
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -121,7 +121,7 @@ Clipboard commands allow you to cut or copy selected Diagram objects to the Clip
 
 The following code illustrates how to execute the clipboard commands.
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -152,7 +152,7 @@ Grouping commands are used to group/ungroup the selected elements on the diagram
 
 The following code illustrates how to execute the group commands
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -181,7 +181,7 @@ To customize flipping, a parameter of type IFlipParameter has to be passed.
 
 **Execute Flip Command**
 
-{% highlight C# %}
+{% highlight c# %}
 
 // Flip Command
 
@@ -191,7 +191,7 @@ To customize flipping, a parameter of type IFlipParameter has to be passed.
 
 If the parameter is null, the object will be flipped both horizontally and vertically.
 
-{% highlight C# %}
+{% highlight c# %}
 
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -231,7 +231,7 @@ The BringToFront command visually brings the selected element to the front over 
 
 The following code illustrates how to execute BringToFront command.
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -249,7 +249,7 @@ The SendToBack command visually moves the selected elements behind all the other
 
 The following code illustrates how to execute the SendToBack command.
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -267,7 +267,7 @@ The SendBackward command visually moves the selected elements behind the underly
 
 The following code illustrates how to execute the SendBackward command.
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -285,7 +285,7 @@ The BringForward command visually moves the selected element over the nearest ov
 
 The following code illustrates how to execute the BringForward command.
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -326,7 +326,7 @@ To execute zoom commands, parameters of type IZoomParameter (IZoomManipulationPa
 | ZoomCommand | Gets or sets whether zoom in or zoom out has to be performed. | Enum ZoomCommand <br> ZoomCommand.ZoomIn <br> ZoomCommand.ZoomOut |
 
 The following code illustrates how to Zoom-in/Zoom-out the diagram.
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -356,7 +356,7 @@ To execute a reset command, a parameter of type IReset has to be passed.
 
 Execute ResetCommand
 
-{% highlight C# %}
+{% highlight c# %}
 
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
@@ -377,7 +377,7 @@ Draw commands are used to draw connections. They take parameters of type IDrawPa
 | PressedEventArgs | Gets or sets the PressedEventArgs. | PointerRoutedEventArgs|
 
 Execute DrawCommand
-{% highlight C# %}
+{% highlight c# %}
 void Button_PointerPressed(object sender, PointerRoutedEventArgs e)
 {
 	IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
@@ -410,7 +410,7 @@ Nudge commands move the selected elements towards up, down, left or right by 1 p
 | NudgeRight | The NudgeRight command moves the selected object towards the right by 1 pixel. | 
 
 The following code illustrates how to execute Nudge command.
-{% highlight C# %}
+{% highlight c# %}
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
 //Nudges up
@@ -427,7 +427,7 @@ FitToPage commands are used to bring the entire Diagram into the view.
 | Margin | Gets or sets the margin value from the view to Diagram. | Thickness |
 The following code illustrates how to execute FitToPage command.
 
-{% highlight C# %}
+{% highlight c# %}
 IGraphInfo graphinfo = diagramcontrol.Info as IGraphInfo;
 
 graphinfo.Commands.FitToPage.Execute(
@@ -473,7 +473,7 @@ List of Commands and Key Gesture:
 | BringToFront | ] | Control+Shift |
 | BringForward | ] | Control |
 
-#### List of Commands and Key Gestures with Parameter
+### List of Commands and Key Gestures with Parameter
 
 | Command | Key | KeyModifier | Parameter |
 |---|---|---|---|
@@ -482,13 +482,13 @@ List of Commands and Key Gesture:
 | Reset | 0 | Control | new ResetParameter { Reset = Diagram.Reset.ZoomPan } |
 | FitToPage | 0 | Control+ Menu | new FitToPageParameter { FitToPage = Diagram.FitToPage.FitToPage, Margin = new Thickness(20) } |
 
-#### List of Commands and Mouse Gesture with Parameter
+### List of Commands and Mouse Gesture with Parameter
 
 | Command | Scroll State | Parameter |
 |---|---|---|
 | Vertical Scroll using ‘Zoom’ command | Scroll | new ZoomPointerParameter { ZoomCommand = ZoomCommand.VerticalScroll} |
 
-#### List of Commands and Key and Mouse Gesture with Parameter
+### List of Commands and Key and Mouse Gesture with Parameter
 
 | Command | KeyModifier | Scroll State | Parameter |
 |---|---|---|---|
@@ -497,13 +497,13 @@ List of Commands and Key Gesture:
 
 N> When different commands are registered for the same key / mouse gestures, you need to handle the command while execution.
 
-### Custom command
+## Custom command
 
 User defined commands can also be created and mapped with existing gesture by using command manager. The following code example explains how to register mouse key gesture with Parameter to Save Command (Control + S)
 
-#### Create a user defined command: Save command
+### Create a user defined command: Save command
 
-{% highlight C# %}
+{% highlight c# %}
 //Create ICommand
 
 private ICommand _save;
@@ -543,7 +543,7 @@ private async void OnSaveCommand(Object obj)
 
 Add new Commands to CommandManager - Ctrl + S -> Save
             
-{% highlight C# %}
+{% highlight c# %}
 
 sfdiagram.CommandManager.Commands.Add
 (
