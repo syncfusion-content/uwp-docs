@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Named Set in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Named Set support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Named Set in UWP Pivot Client | Syncfusion®
+description: Named Set in Syncfusion® UWP Pivot Client binds OLAP cube-defined sets, simplifying reuse of complex MDX expressions for multidimensional analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 
-# Named Set in UWP Pivot Client (SfPivotClient)
+# Named Set in UWP Pivot Client
 
 The SfPivotClient supports the binding of OLAP data with named set records that is pre-defined in the cube. Named set is a collection of tuples and members, which can be defined and saved as a part of the cube definition. Named set records reside inside the *Sets* folder which is under a dimension element. These elements can be dragged to columns, or rows, or filters axis of the axis element builder. To work with a lengthy, complex, or commonly used expression easier, the Multidimensional Expressions (MDX) helps you to define a named set.
 
