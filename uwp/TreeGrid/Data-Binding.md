@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in UWP TreeGrid | Syncfusion®
 description: Data Binding in UWP TreeGrid supports self-relational and nested collections, enabling dynamic display of hierarchical data seamlessly.
 platform: uwp
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
