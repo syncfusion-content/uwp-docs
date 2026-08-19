@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Error Message in UWP SfCalculator | Syncfusion®
-description: Learn how to handle error messages in the Syncfusion UWP SfCalculator control using the ErrorMessageDisplayed event and NewErrorMessage property.
+description: Learn how to handle error messages in the Syncfusion® UWP SfCalculator control using the ErrorMessageDisplayed event and NewErrorMessage property.
 platform: uwp
 control: SfCalculator
 documentation: ug

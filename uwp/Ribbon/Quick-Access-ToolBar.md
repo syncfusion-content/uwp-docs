@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Quick Access Toolbar in UWP Ribbon control | Syncfusion
-description: Learn here all about Quick Access Toolbar support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
+title: Quick Access Toolbar in UWP SfRibbon | Syncfusion®
+description: Learn about the Quick Access Toolbar in the Syncfusion® UWP SfRibbon control, used to group commonly used commands and access them easily.
 platform: uwp
-control: SfRibbon (Touch Ribbon)
+control: SfRibbon
 documentation: ug
 ---
 
-# Quick Access Toolbar in UWP Ribbon (SfRibbon(Touch Ribbon))
+# Quick Access Toolbar in UWP SfRibbon
 
 The Quick Access Toolbar in the ribbon instance is used to group the most commonly used commands and access the commands easily without searching for them in the menu bar. The position of the QAT can also be moved above or below the ribbon dynamically.
 

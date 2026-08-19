@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Memory in UWP SfCalculator | Syncfusion®
-description: Learn how to use the Memory feature in the Syncfusion UWP SfCalculator control, including storing, recalling, and clearing values in memory.
+description: Learn how to use the Memory feature in the Syncfusion® UWP SfCalculator control, including storing, recalling, and clearing values in memory.
 platform: uwp
 control: SfCalculator
 documentation: ug

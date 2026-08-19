@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu Suggestion in UWP Spell Checker control | Syncfusion®
-description: Learn here all about Context Menu Suggestion support in Syncfusion® UWP Spell Checker (SfSpellChecker) control and more.
-platform: UWP
+title: Context Menu Suggestion in UWP SfSpellChecker | Syncfusion®
+description: Learn about the Context Menu Suggestion feature in the Syncfusion® UWP SfSpellChecker control, which provides suggestions to correct misspelled words.
+platform: uwp
 control: SfSpellChecker
 documentation: ug
---- 
+---
 
-# Context Menu Suggestion in UWP Spell Checker (SfSpellChecker)
+# Context Menu Suggestion in UWP SfSpellChecker
 
 `SfSpellChecker` offers Microsoft Office application like context menu suggestions and helps to correct spell errors by choosing correct option from the listed suggestions.
 

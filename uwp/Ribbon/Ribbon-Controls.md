@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ribbon Controls in UWP Ribbon control | Syncfusion
-description: Learn here all about Ribbon Controls support in Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control and more.
+title: Ribbon Controls in UWP SfRibbon | Syncfusion®
+description: Learn about the Ribbon Controls available in the Syncfusion® UWP SfRibbon control, including SfRibbonButton and SfDropDownButton.
 platform: uwp
-control: SfRibbon (Touch Ribbon)
+control: SfRibbon
 documentation: ug
 ---
 
-# Ribbon Controls in UWP Ribbon (SfRibbon(Touch Ribbon))
+# Ribbon Controls in UWP SfRibbon
 
 Several Ribbon controls are provided to add to a Ribbon Bar. Button controls are provided with 3 size forms: Extra-Small, Small and Large.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with SelectedColor in UWP SfColorPalette | Syncfusion®
-description: Learn how to deal with the SelectedColor in the Syncfusion UWP SfColorPalette control, including selecting a color from the palette.
+description: Learn how to deal with the SelectedColor in the Syncfusion® UWP SfColorPalette control, including selecting a color from the palette.
 platform: uwp
 control: SfColorPalette
 documentation: ug

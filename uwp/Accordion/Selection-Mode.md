@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection Mode in UWP SfAccordion | Syncfusion®
-description: Learn about the Selection Mode options in the Syncfusion UWP SfAccordion control, including One, OneOrMore, ZeroOrOne, and ZeroOrMore.
+description: Learn about the Selection Mode options in the Syncfusion® UWP SfAccordion control, including One, OneOrMore, ZeroOrOne, and ZeroOrMore.
 platform: uwp
 control: SfAccordion
 documentation: ug

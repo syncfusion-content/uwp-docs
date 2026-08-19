@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP SfComboBox | Syncfusion®
-description: Learn how to get started with the Syncfusion UWP SfComboBox control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® UWP SfComboBox control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfComboBox
 documentation: ug

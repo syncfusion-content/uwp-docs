@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SfSplitMosaicTile in UWP Hub Tile control | Syncfusion®
-description: Learn here all about SfSplitMosaicTile support in Syncfusion® UWP Hub Tile (HubTiles) control and more.
+title: SfSplitMosaicTile in UWP SfHubTile | Syncfusion®
+description: Learn about the SfSplitMosaicTile control in Syncfusion® UWP that displays a collection of images in 3 horizontally stretched tiles with random flip effect.
 platform: uwp
 control: SfSplitMosaicTile
 documentation: ug
 ---
 
-# SfSplitMosaicTile in UWP Hub Tile (HubTiles)
+# SfSplitMosaicTile in UWP SfHubTile
 
 ## Overview
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Auto Hide Window in UWP Docking control | Syncfusion®
-description: Learn here all about Auto Hide Window support in Syncfusion® UWP Docking (SfDockingManager) control and more.
+title: Auto Hide Window in UWP SfDockingManager | Syncfusion®
+description: Learn how to use the Auto Hide Window feature in the Syncfusion® UWP SfDockingManager control by setting the DockState property to AutoHidden.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Auto Hide Window in UWP Docking (SfDockingManager)
+# Auto Hide Window in UWP SfDockingManager
 
 `AutoHide` window is one of the states in the `SfDockingManager`. To enable Auto hidden for `SfDockingManager`'s children, set the `SfDockingManager` child `DockState` value as `AutoHidden`.
 

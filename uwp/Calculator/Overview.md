@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfCalculator Control | Syncfusion®
-description: Learn about introduction of Syncfusion UWP SfCalculator control and more details.
+description: Learn about introduction of Syncfusion® UWP SfCalculator control and more details.
 platform: uwp
 control: SfCalculator
 documentation: ug

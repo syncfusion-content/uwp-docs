@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfColorPicker Control | Syncfusion®
-description: Learn about introduction of Syncfusion UWP SfColorPicker control and more details.
+description: Learn about introduction of Syncfusion® UWP SfColorPicker control and more details.
 platform: uwp
 control: SfColorPicker
 documentation: ug

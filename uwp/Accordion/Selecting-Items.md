@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selecting Items in UWP SfAccordion | Syncfusion®
-description: Learn how to select items in the Syncfusion UWP SfAccordion control using SelectedIndex, SelectedItem, and SelectedItems properties.
+description: Learn how to select items in the Syncfusion® UWP SfAccordion control using SelectedIndex, SelectedItem, and SelectedItems properties.
 platform: uwp
 control: SfAccordion
 documentation: ug

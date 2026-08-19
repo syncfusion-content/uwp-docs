@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Items in UWP SfComboBox | Syncfusion®
-description: Learn how to populate items in the Syncfusion UWP SfComboBox control using ItemsSource and business object collections.
+description: Learn how to populate items in the Syncfusion® UWP SfComboBox control using ItemsSource and business object collections.
 platform: uwp
 control: SfComboBox
 documentation: ug

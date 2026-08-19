@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Spell Checker control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP Spell Checker (SfSpellChecker) control, its elements and more.
-platform: UWP
+title: About Syncfusion® UWP SfSpellChecker Control | Syncfusion®
+description: Learn about introduction of Syncfusion® UWP SfSpellChecker control and more details.
+platform: uwp
 control: SfSpellChecker
 documentation: ug
 ---
 
-# UWP Spell Checker (SfSpellChecker) Overview
+# About Syncfusion® UWP SfSpellChecker Control
 
 `SfSpellChecker` control provides a simple and intuitive interface to check for spelling errors in text editor controls. We can perform spell checking on text editor control and it will also provide suggestions for the misspelled words through dialog and context menu.
 

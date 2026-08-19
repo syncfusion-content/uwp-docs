@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Docking control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP Docking (SfDockingManager) control, its elements and more.
+title: About Syncfusion® UWP SfDockingManager Control | Syncfusion®
+description: Learn about introduction of Syncfusion® UWP SfDockingManager control and more details.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# UWP Docking (SfDockingManager) Overview
+# About Syncfusion® UWP SfDockingManager Control
 
 The `SfDockingManager` control implements an architecture, that allows child controls to be docked at any part of a page as in Microsoft Visual Studio. The dock panels containing the child elements can be interactively dragged to any area within the page. These windows can also be floated, tabbed, and auto hidden at runtime.
 

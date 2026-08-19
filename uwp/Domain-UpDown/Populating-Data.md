@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Data in UWP Domain UpDown control | Syncfusion®
-description: Learn here all about Populating Data support in Syncfusion® UWP Domain UpDown (SfDomainUpDown) control and more.
+title: Populating Data in UWP SfDomainUpDown | Syncfusion®
+description: Learn how to populate data in the Syncfusion® UWP SfDomainUpDown control with a predefined list of items.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug
 ---
 
-# Populating Data in UWP Domain UpDown (SfDomainUpDown)
+# Populating Data in UWP SfDomainUpDown
 
 The DomainUpDown control can be populated with a predefined list of items. 
 

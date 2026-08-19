@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with UWP SfCalculator | Syncfusion®
-description: Learn how to get started with the Syncfusion UWP SfCalculator control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® UWP SfCalculator control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfCalculator
 documentation: ug
