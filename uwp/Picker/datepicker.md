@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Picker in UWP SfPicker | Syncfusion®
-description: Learn how to create a custom Date Picker using the Syncfusion® UWP SfPicker control.
+description: The Date Picker feature in SfPicker creates a custom Date Picker by inheriting from the SfPicker control for date selection.
 platform: uwp
 control: SfPicker
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence in UWP SfDockingManager | Syncfusion®
-description: Learn how to use State Persistence in the Syncfusion® UWP SfDockingManager control to save and load layout across sessions using serialization and deserialization.
+description: The State Persistence feature in SfDockingManager saves and loads the layout across sessions using serialization and deserialization.
 platform: uwp
 control: SfDockingManager
 documentation: ug

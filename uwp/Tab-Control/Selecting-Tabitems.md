@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selecting Items in UWP SfTabControl | Syncfusion®
-description: Learn how to select items in the Syncfusion® UWP SfTabControl control by touching the header text or using the tab strip/list menu.
+description: The selecting items feature in SfTabControl allows selecting tab items by touching the header text or using the tab strip/list menu.
 platform: uwp
 control: SfTabControl
 documentation: ug

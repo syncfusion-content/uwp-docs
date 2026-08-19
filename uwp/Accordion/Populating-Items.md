@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Items in UWP SfAccordion | Syncfusion®
-description: Learn how to populate items in the Syncfusion® UWP SfAccordion control using Items, ItemsSource, and SfAccordionItem.
+description: The populating items in SfAccordion allows adding items using Items, ItemsSource, and SfAccordionItem to bind business object collections.
 platform: uwp
 control: SfAccordion
 documentation: ug

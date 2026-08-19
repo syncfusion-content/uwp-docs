@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Percent Display Mode in UWP SfNumericUpDown | Syncfusion®
-description: Learn about the Percent Display Mode in the Syncfusion® UWP SfNumericUpDown control using the PercentDisplayMode property with Value and Compute options.
+description: The Percent Display Mode in SfNumericUpDown displays numeric data in Percent mode using the PercentDisplayMode property with Value option.
 platform: uwp
 control: SfNumericUpDown
 documentation: ug

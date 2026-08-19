@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NavigationStripPosition in UWP SfRotator | Syncfusion®
-description: Learn about the NavigationStripPosition in the Syncfusion® UWP SfRotator control, including the placement of navigation bar items relative to the image panel.
+description: The NavigationStripPosition in SfRotator specifies the placement of navigation bar items such as thumbnail or dots relative to the image panel area.
 platform: uwp
 control: SfRotator
 documentation: ug

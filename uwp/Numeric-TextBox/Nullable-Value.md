@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nullable Value in UWP SfNumericTextBox | Syncfusion®
-description: Learn about the Nullable Value support in the Syncfusion® UWP SfNumericTextBox control using the AllowNull property.
+description: The Nullable Value feature in SfNumericTextBox allows setting null values using the AllowNull property, enabling empty state support.
 platform: uwp
 control: SfNumericTextBox
 documentation: ug

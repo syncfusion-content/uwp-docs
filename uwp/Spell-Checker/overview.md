@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfSpellChecker Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfSpellChecker control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfSpellChecker control, its elements, features, and key functionalities for spell checking.
 platform: uwp
 control: SfSpellChecker
 documentation: ug

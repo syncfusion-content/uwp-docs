@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Value in UWP SfCalculator | Syncfusion®
-description: Learn how to retrieve and set the computed Value in the Syncfusion® UWP SfCalculator control using the read-only decimal Value property.
+description: The Value property in SfCalculator retrieves and sets the computed value from expressions as a read-only decimal property.
 platform: uwp
 control: SfCalculator
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Data in UWP SfDomainUpDown | Syncfusion®
-description: Learn how to populate data in the Syncfusion® UWP SfDomainUpDown control with a predefined list of items.
+description: The populating data feature in SfDomainUpDown allows adding a predefined list of items to the control for user selection.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug

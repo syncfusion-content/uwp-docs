@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling in UWP SfTreeNavigator | Syncfusion®
-description: Learn how to customize the appearance and styling of the Syncfusion® UWP SfTreeNavigator control using HeaderTemplate and other properties.
+description: The appearance and styling in SfTreeNavigator allows customizing the visual look using HeaderTemplate and other properties for the tree navigator header.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfTreeNavigator Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfTreeNavigator control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfTreeNavigator control, its elements, features, and key functionalities for tree navigation.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug

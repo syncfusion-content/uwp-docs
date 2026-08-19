@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configuring Items in UWP SfRating | Syncfusion®
-description: Learn how to configure items in the Syncfusion® UWP SfRating control using the ItemsCount property.
+description: The configuring items feature in SfRating specifies the number of rating items using the ItemsCount property to set up the rating display.
 platform: uwp
 control: SfRating
 documentation: ug

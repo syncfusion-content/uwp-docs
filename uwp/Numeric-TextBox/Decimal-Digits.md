@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Decimal Digits in UWP SfNumericTextBox | Syncfusion®
-description: Learn how to set maximum and default decimal digits in the Syncfusion® UWP SfNumericTextBox control using the MaximumNumberDecimalDigits property.
+description: The decimal digits feature in SfNumericTextBox sets the maximum number of digits after the decimal point using the MaximumNumberDecimalDigits property.
 platform: uwp
 control: SfNumericTextBox
 documentation: ug

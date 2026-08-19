@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Features in UWP SfRotator | Syncfusion®
-description: Learn about the features in the Syncfusion® UWP SfRotator control, including EnableAutoPlay, NavigationDelay, and other functionality.
+description: The features in SfRotator include EnableAutoPlay for automatic navigation and NavigationDelay for timing control when displaying images.
 platform: uwp
 control: SfRotator
 documentation: ug

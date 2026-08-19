@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number Formatting in UWP SfNumericTextBox | Syncfusion®
-description: Learn about the Number Formatting support in the Syncfusion® UWP SfNumericTextBox control using the FormatString property.
+description: The Number Formatting feature in SfNumericTextBox formats the display text on lost focus using the FormatString property for currency and other formats.
 platform: uwp
 control: SfNumericTextBox
 documentation: ug
@@ -65,7 +65,7 @@ FormatString="C"
 
 ![FormatString view](Concepts_images/Concepts_img1.png)
 
-N>  A detailed explanation of Numeric formatting is available [here](http://msdn.microsoft.com/en-us/library/dwhawy9k.aspx). 
+N>  A detailed explanation of Numeric formatting is available [here](https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings). 
 The result string produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different numeric settings will generate different result strings.
 
 ## Group separator modes

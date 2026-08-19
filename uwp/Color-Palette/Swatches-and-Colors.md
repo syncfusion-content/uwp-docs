@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation in UWP SfColorPalette | Syncfusion®
-description: Learn about the navigation support in the Syncfusion® UWP SfColorPalette control, including swatches and color items.
+description: The navigation feature in SfColorPalette provides swatch buttons that open collections of color items, allowing touch-based navigation between colors.
 platform: uwp
 control: SfColorPalette
 documentation: ug

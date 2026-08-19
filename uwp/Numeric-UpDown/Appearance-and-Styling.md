@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling in UWP SfNumericUpDown | Syncfusion®
-description: Learn how to customize the appearance and styling of the Syncfusion® UWP SfNumericUpDown control, including SpinButtonsAlignment and other properties.
+description: The appearance and styling in SfNumericUpDown allows customizing the visual look, including SpinButtonsAlignment and other properties for the spin buttons.
 platform: uwp
 control: SfNumericUpDown
 documentation: ug

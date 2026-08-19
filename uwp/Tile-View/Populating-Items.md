@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Items in UWP SfTileView | Syncfusion®
-description: Learn how to populate items in the Syncfusion® UWP SfTileView control using SfTileViewItem, Items, and ItemSource properties.
+description: The populating items feature in SfTileView allows adding SfTileViewItem children using Items and ItemSource properties to bind business object collections.
 platform: uwp
 control: SfTileView
 documentation: ug

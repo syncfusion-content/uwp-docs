@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tabbed Window in UWP SfDockingManager | Syncfusion®
-description: Learn how to arrange child windows as Tabbed Window in the Syncfusion® UWP SfDockingManager control using TargetNameInDockedMode and SideInDockedMode properties.
+description: The Tabbed Window feature in SfDockingManager arranges child windows as tabs using TargetNameInDockedMode and SideInDockedMode properties.
 platform: uwp
 control: SfDockingManager
 documentation: ug

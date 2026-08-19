@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TabStripPlacement and Menu in UWP SfTabControl | Syncfusion®
-description: Learn about the TabStripPlacement and Menu in the Syncfusion® UWP SfTabControl control, including changing the placement of tabs and menu options.
+description: The TabStripPlacement and Menu in SfTabControl aligns the tab strip in all four sides using the TabStripPlacement property and menu options.
 platform: uwp
 control: SfTabControl
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quick Access Toolbar in UWP SfRibbon | Syncfusion®
-description: Learn about the Quick Access Toolbar in the Syncfusion® UWP SfRibbon control, used to group commonly used commands and access them easily.
+description: The Quick Access Toolbar in SfRibbon groups the most commonly used commands, allowing easy access without searching through the menu bar.
 platform: uwp
 control: SfRibbon
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context Menu Suggestion in UWP SfSpellChecker | Syncfusion®
-description: Learn about the Context Menu Suggestion feature in the Syncfusion® UWP SfSpellChecker control, which provides suggestions to correct misspelled words.
+description: The Context Menu Suggestion in SfSpellChecker offers Microsoft Office-like context menu to correct spell errors using listed suggestions.
 platform: uwp
 control: SfSpellChecker
 documentation: ug

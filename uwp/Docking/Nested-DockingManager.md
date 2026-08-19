@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nested DockingManager in UWP SfDockingManager | Syncfusion®
-description: Learn how to add a Nested DockingManager as a child window to another SfDockingManager in the Syncfusion® UWP SfDockingManager control.
+description: The Nested DockingManager feature in SfDockingManager allows adding an SfDockingManager as a child window to another SfDockingManager.
 platform: uwp
 control: SfDockingManager
 documentation: ug

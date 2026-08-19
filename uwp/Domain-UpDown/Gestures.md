@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gestures in UWP SfDomainUpDown | Syncfusion®
-description: Learn about the gesture support in the Syncfusion® UWP SfDomainUpDown control, including mouse wheel and other input gestures.
+description: The gesture support in SfDomainUpDown provides mouse wheel and other input gestures to navigate between items.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug

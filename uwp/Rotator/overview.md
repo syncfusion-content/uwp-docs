@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfRotator Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfRotator control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfRotator control, its elements, features, and key functionalities for image display.
 platform: uwp
 control: SfRotator
 documentation: ug

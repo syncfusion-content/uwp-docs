@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spell Check in UWP SfSpellChecker | Syncfusion®
-description: Learn about the Spell Check options in the Syncfusion® UWP SfSpellChecker control, including ignore spell check, file, and regex options.
+description: The Spell Check options in SfSpellChecker allow customizing the engine to ignore text, words, email addresses, HTML tags, and other patterns.
 platform: uwp
 control: SfSpellChecker
 documentation: ug

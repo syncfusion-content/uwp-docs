@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfPicker Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfPicker control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfPicker control, its elements, features, and key functionalities for item picking.
 platform: uwp
 control: SfPicker
 documentation: ug

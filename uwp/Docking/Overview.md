@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfDockingManager Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfDockingManager control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfDockingManager control, its elements, features, and key functionalities for docking layouts.
 platform: uwp
 control: SfDockingManager
 documentation: ug

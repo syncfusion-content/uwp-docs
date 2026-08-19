@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Re-ordering and Orientation in UWP SfTileView | Syncfusion®
-description: Learn about the Re-ordering and Orientation features in the Syncfusion® UWP SfTileView control, including touch drag and drop with AllowDragDrop and AllowReorder properties.
+description: The re-ordering and orientation features in SfTileView allow rearranging items through touch drag and drop using AllowDragDrop and AllowReorder properties.
 platform: uwp
 control: SfTileView
 documentation: ug

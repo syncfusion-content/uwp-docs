@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Columns in UWP SfPicker | Syncfusion®
-description: Learn how to deal with Columns in the Syncfusion® UWP SfPicker control, including adjusting column width and other customization options.
+description: The dealing with columns feature in SfPicker allows customizing the Columns of the picker, including adjusting column width and other display options.
 platform: uwp
 control: SfPicker
 documentation: ug

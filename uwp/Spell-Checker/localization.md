@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in UWP SfSpellChecker | Syncfusion®
-description: Learn about Localization support in the Syncfusion® UWP SfSpellChecker control, which allows translating application resources into different languages.
+description: The Localization support in SfSpellChecker translates the application resources into different languages for specific cultures by adding resource files.
 platform: uwp
 control: SfSpellChecker
 documentation: ug

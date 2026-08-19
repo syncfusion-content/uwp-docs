@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfRibbon Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfRibbon control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfRibbon control, its elements, features, and key functionalities for ribbon layouts.
 platform: uwp
 control: SfRibbon
 documentation: ug

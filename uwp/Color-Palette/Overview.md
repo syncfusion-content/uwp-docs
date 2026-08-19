@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfColorPalette Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfColorPalette control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfColorPalette control, its elements, features, and key functionalities for color selection.
 platform: uwp
 control: SfColorPalette
 documentation: ug

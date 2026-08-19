@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Items in UWP SfTabControl | Syncfusion®
-description: Learn how to populate items in the Syncfusion® UWP SfTabControl control using Items and ItemsSource properties.
+description: The populating items feature in SfTabControl allows adding SfTabItems as children using Items and ItemsSource properties to bind collections.
 platform: uwp
 control: SfTabControl
 documentation: ug

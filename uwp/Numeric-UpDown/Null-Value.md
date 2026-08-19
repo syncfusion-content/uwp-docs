@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Null Value in UWP SfNumericUpDown | Syncfusion®
-description: Learn about the Null Value support in the Syncfusion® UWP SfNumericUpDown control using the AllowNull property.
+description: The Null Value feature in SfNumericUpDown allows setting null values using the AllowNull property, enabling empty state support.
 platform: uwp
 control: SfNumericUpDown
 documentation: ug

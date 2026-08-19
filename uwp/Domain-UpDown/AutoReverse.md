@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Autoreverse in UWP SfDomainUpDown | Syncfusion®
-description: Learn how the Autoreverse feature works in the Syncfusion® UWP SfDomainUpDown control, allowing values to cycle between minimum and maximum.
+description: The Autoreverse feature in SfDomainUpDown cycles the value between minimum and maximum when incrementing reaches either boundary.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug

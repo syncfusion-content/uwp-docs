@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with State in UWP SfTileView | Syncfusion®
-description: Learn how to deal with the State of tile view items in the Syncfusion® UWP SfTileView control using the State property.
+description: The dealing with state feature in SfTileView allows setting the state of tile view items using the State property with Normal, Maximized, and Minimized options.
 platform: uwp
 control: SfTileView
 documentation: ug

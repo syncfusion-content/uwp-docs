@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfBusyIndicator Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfBusyIndicator control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfBusyIndicator control, its built-in animations, and key features for indicating busy status.
 platform: uwp
 control: SfBusyIndicator
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date Time Picker in UWP SfPicker | Syncfusion®
-description: Learn how to create a custom Date Time Picker using the Syncfusion® UWP SfPicker control with multi column support.
+description: The Date Time Picker feature in SfPicker creates a custom DateTimePicker using multi column support to populate day, month, year, hour, and minute values.
 platform: uwp
 control: SfPicker
 documentation: ug

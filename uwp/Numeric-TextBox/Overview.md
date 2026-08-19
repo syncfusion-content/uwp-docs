@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfNumericTextBox Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfNumericTextBox control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfNumericTextBox control, its elements, features, and key functionalities for numeric input.
 platform: uwp
 control: SfNumericTextBox
 documentation: ug
@@ -17,7 +17,7 @@ SfNumericTextBox is an advanced version of the TextBox control which restricts i
 
 
 
-### Key Features
+## Key Features
 
 * Number Formatting – Input string can be formatted using format strings. 
 * Culture – Number format can be localized to any specific culture.

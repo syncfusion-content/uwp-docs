@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BackStage in UWP SfRibbon | Syncfusion®
-description: Learn about the BackStage feature in the Syncfusion® UWP SfRibbon control, including BackStageTabItems and navigation.
+description: The BackStage feature in SfRibbon provides a UI similar to Office for placing items, with BackStageTabItems that can be easily navigated using scroll buttons.
 platform: uwp
 control: SfRibbon
 documentation: ug

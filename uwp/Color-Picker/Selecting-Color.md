@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selecting Color in UWP SfColorPicker | Syncfusion®
-description: Learn how to select a color in the Syncfusion® UWP SfColorPicker control using the SelectedColor property and hexadecimal color code.
+description: The selecting color feature in SfColorPicker allows selecting a color using the SelectedColor property or setting it via hexadecimal color code.
 platform: uwp
 control: SfColorPicker
 documentation: ug

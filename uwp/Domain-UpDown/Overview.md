@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfDomainUpDown Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfDomainUpDown control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfDomainUpDown control, its elements, features, and key functionalities for spin inputs.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug

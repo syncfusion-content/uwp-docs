@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Picture Collection Tile in UWP SfMosaicTile | Syncfusion®
-description: Learn about the SfMosaicTile control in Syncfusion® UWP SfMosaicTile that displays a collection of pictures randomly with flip transition effect, similar to people tile in Windows Phone 8.
+description: The SfMosaicTile displays a collection of pictures randomly with flip transition effect, similar to the people tile in Windows Phone 8 home screen.
 platform: uwp
 control: SfMosaicTile
 documentation: ug

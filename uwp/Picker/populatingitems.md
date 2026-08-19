@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Items in UWP SfPicker | Syncfusion®
-description: Learn how to populate items in the Syncfusion® UWP SfPicker control using data source binding and other methods.
+description: The populating items feature in SfPicker allows populating items using data source binding and other methods to display a list of options.
 platform: uwp
 control: SfPicker
 documentation: ug

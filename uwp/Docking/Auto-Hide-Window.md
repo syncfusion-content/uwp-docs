@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Auto Hide Window in UWP SfDockingManager | Syncfusion®
-description: Learn how to use the Auto Hide Window feature in the Syncfusion® UWP SfDockingManager control by setting the DockState property to AutoHidden.
+description: The Auto Hide Window feature in SfDockingManager allows child windows to be auto-hidden by setting the DockState property to AutoHidden.
 platform: uwp
 control: SfDockingManager
 documentation: ug

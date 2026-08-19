@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ribbon UI Controls in UWP SfRibbon | Syncfusion®
-description: Learn about the Ribbon UI Controls available in the Syncfusion® UWP SfRibbon control, including SfRibbonButton, SfDropDownButton, SfRibbonGallery, SfRibbonMenu, SfRibbonGroupBar, SfRibbonComboBox, and SfRibbonToggleButton.
+description: The Ribbon UI Controls in SfRibbon provides 7 controls including SfRibbonButton, SfDropDownButton, SfRibbonGallery, and more for ribbon interfaces.
 platform: uwp
 control: SfRibbon
 documentation: ug

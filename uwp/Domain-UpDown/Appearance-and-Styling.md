@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance and Styling in UWP SfDomainUpDown | Syncfusion®
-description: Learn how to customize the appearance and styling of the Syncfusion® UWP SfDomainUpDown control using properties like EnableSpinAnimation.
+description: The appearance and styling in SfDomainUpDown allows customizing the visual look using properties like EnableSpinAnimation for smooth transitions.
 platform: uwp
 control: SfDomainUpDown
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence in UWP SfRibbon | Syncfusion®
-description: Learn about State Persistence in the Syncfusion® UWP SfRibbon control, which saves and loads the ribbon state using Serialization and Deserialization.
+description: The State Persistence in SfRibbon saves and loads the ribbon state using Serialization and Deserialization to preserve settings.
 platform: uwp
 control: SfRibbon
 documentation: ug

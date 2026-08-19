@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfAccordion Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfAccordion control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfAccordion control, its elements, features, and key functionalities for expandable content.
 platform: uwp
 control: SfAccordion
 documentation: ug

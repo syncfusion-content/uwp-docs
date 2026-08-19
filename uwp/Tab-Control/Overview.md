@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfTabControl Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfTabControl control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfTabControl control, its elements, features, and key functionalities for tabbed interfaces.
 platform: uwp
 control: SfTabControl
 documentation: ug

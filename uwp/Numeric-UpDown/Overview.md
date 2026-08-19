@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfNumericUpDown Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfNumericUpDown control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfNumericUpDown control, its elements, features, and key functionalities for spin inputs.
 platform: uwp
 control: SfNumericUpDown
 documentation: ug
@@ -15,7 +15,7 @@ SfNumericUpDown is an editor control which provides up and down repeat buttons t
 ![Sample view of NumericUpDown](Overview_images/Overview_img1.png)
 
 
-### Key Features
+## Key Features
 
 * Number Formatting – Number can be formatted by setting the Format String for the control. 
 * Culture – Number can be localized by setting Culture property of the control.

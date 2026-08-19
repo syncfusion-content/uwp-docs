@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP SfRating Control | Syncfusion®
-description: Learn about introduction of Syncfusion® UWP SfRating control and more details.
+description: Learn about the introduction of Syncfusion® UWP SfRating control, its elements, features, and key functionalities for rating display.
 platform: uwp
 control: SfRating
 documentation: ug

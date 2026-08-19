@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Dictionary in UWP SfSpellChecker | Syncfusion®
-description: Learn about the Custom Dictionary support in the Syncfusion® UWP SfSpellChecker control, which provides suggestions based on user-defined dictionaries.
+description: The Custom Dictionary support in SfSpellChecker provides suggestions based on user-defined dictionaries for different languages.
 platform: uwp
 control: SfSpellChecker
 documentation: ug

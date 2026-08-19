@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gestures in UWP SfNumericUpDown | Syncfusion®
-description: Learn about the gesture support in the Syncfusion® UWP SfNumericUpDown control, including keyboard and other input gestures.
+description: The gesture support in SfNumericUpDown provides keyboard and other input gestures to increment and decrement values efficiently.
 platform: uwp
 control: SfNumericUpDown
 documentation: ug

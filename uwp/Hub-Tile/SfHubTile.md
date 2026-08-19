@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Live Tile Updates in UWP SfHubTile | Syncfusion®
-description: Learn about the SfHubTile control in Syncfusion® UWP SfHubTile that provides live updates and notifications similar to Windows 8 and Windows Phone start screen.
+description: The SfHubTile provides live updates and notifications similar to Windows 8 start screen with rich transition effects for image, title, and header.
 platform: uwp
 control: SfHubTile
 documentation: ug

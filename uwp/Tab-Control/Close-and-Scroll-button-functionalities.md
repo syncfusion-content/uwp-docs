@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Close and Scroll button functionalities in UWP SfTabControl | Syncfusion®
-description: Learn about the Close and Scroll button functionalities in the Syncfusion® UWP SfTabControl control, including tab scroll buttons and close button features.
+title: Scroll and Close Buttons in UWP SfTabControl | Syncfusion®
+description: The Close and Scroll button functionalities in SfTabControl provide buttons to scroll through tab items and close individual tabs when needed.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Close and Scroll button functionalities in UWP SfTabControl
+# Scroll and Close Buttons in UWP SfTabControl
 
 SfTabControl provides buttons to scroll and close tab items. 
 

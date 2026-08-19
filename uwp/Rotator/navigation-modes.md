@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NavigationStripMode in UWP SfRotator | Syncfusion®
-description: Learn about the NavigationStripMode in the Syncfusion® UWP SfRotator control, including Thumbnail and Dots navigation modes.
+description: The NavigationStripMode in SfRotator specifies the appearance of navigation bar items, including Thumbnail and Dots navigation modes for image selection.
 platform: uwp
 control: SfRotator
 documentation: ug
