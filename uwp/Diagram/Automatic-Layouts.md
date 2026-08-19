@@ -17,7 +17,7 @@ SfDiagram provides support to auto-arrange the nodes in the Diagram area that is
 
 We have explained the Automatic Layout with Employee class and DataSourceSettings.The followings are initial steps for all the Layout.
 
-### Create Class for Data
+## Create Class for Data
 
 Now, you have to create a class, Employee with properties to store the employee’s information like Team, Role, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
 
@@ -38,7 +38,7 @@ public class Employees : ObservableCollection<Employee>
 
 {% endhighlight %}
 
-### Initialize Data Source Settings
+## Initialize Data Source Settings
 
 {% highlight xaml %}
 
@@ -48,7 +48,7 @@ public class Employees : ObservableCollection<Employee>
         
 {% endhighlight %}
 
-### Visualize the Node and Connector
+## Visualize the Node and Connector
 
 {% highlight xaml %}
 

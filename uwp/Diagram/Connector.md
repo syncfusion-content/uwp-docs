@@ -401,7 +401,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 N> Bezier segments do not support Bridging.
 
-#### BridgeSpace
+### BridgeSpace
 
 The `BridgeSpace` property allows to customize the size of bridge in a connector.
 
@@ -474,7 +474,7 @@ ConnectorViewModel connector1 = new ConnectorViewModel()
 
 ## Interaction
 
-#### Draw Connector
+### Draw Connector
 
 * On drawing a connector, `ObjectDrawn` event will notify the DragState and Item. To explore about arguments, please refer to [ObjectDrawn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.ObjectDrawnEventArgs.html) . 
 
