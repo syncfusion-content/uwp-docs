@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Ribbon control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Ribbon (SfRibbon(Touch Ribbon)) control, its elements and more.
+title: Getting Started with UWP SfRibbon | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP SfRibbon control. Explore setup, features, examples, and customization options.
 platform: uwp
-control: SfRibbon (Touch Ribbon)
+control: SfRibbon
 documentation: ug
 ---
 
-# Getting Started with UWP Ribbon (SfRibbon(Touch Ribbon))
+# Getting Started with UWP SfRibbon
 
 This section explains you on how to add SfRibbon in your application.
 

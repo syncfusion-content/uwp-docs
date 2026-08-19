@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP Color Picker control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP Color Picker (SfColorPicker) control, its elements and more.
+title: Getting Started with UWP SfColorPicker | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP SfColorPicker control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfColorPicker
 documentation: ug
 ---
 
-# Getting Started with UWP Color Picker (SfColorPicker)
+# Getting Started with UWP SfColorPicker
 
 This section explains how to create a RGB color model picker using the `SfColorPicker` control.
 

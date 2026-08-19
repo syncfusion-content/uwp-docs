@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection Style in UWP Tab Control control | Syncfusion®
-description: Learn here all about Selection Style support in Syncfusion® UWP Tab Control (SfTabControl) control and more.
+title: Selection Style in UWP SfTabControl | Syncfusion®
+description: The Selection Style in SfTabControl allows customizing the header of a selected item to visually distinguish it from other tab items.
 platform: uwp
 control: SfTabControl
 documentation: ug
 ---
 
-# Selection Style in UWP Tab Control (SfTabControl)
+# Selection Style in UWP SfTabControl
 
 Header of a selected item can be customized in SfTabControl.
 

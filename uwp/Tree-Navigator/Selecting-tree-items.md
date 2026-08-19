@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selecting Items in UWP Tree Navigator control | Syncfusion®
-description: Learn here all about Selecting Items support in Syncfusion® UWP Tree Navigator (SfTreeNavigator) control and more.
+title: Selecting Items in UWP SfTreeNavigator | Syncfusion®
+description: The selecting tree items feature in SfTreeNavigator allows selecting items using the SelectedItem property in the hierarchical structure.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug
 ---
 
-# Selecting Items in UWP Tree Navigator (SfTreeNavigator)
+# Selecting Items in UWP SfTreeNavigator
 
 TreeNavigator items can be selected in one or more ways as give below:
 

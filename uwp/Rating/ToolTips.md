@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTips in UWP Rating control | Syncfusion
-description: Learn here all about ToolTips support in Syncfusion UWP Rating (SfRating) control and more.
+title: ToolTips in UWP SfRating | Syncfusion®
+description: The ToolTips feature in SfRating shows the rating value when hovering and can be enabled or disabled using the ShowToolTip property.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# ToolTips in UWP Rating (SfRating)
+# ToolTips in UWP SfRating
 
 ## Enable/Disable Tooltip
 

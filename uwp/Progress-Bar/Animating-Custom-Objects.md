@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animating Custom Objects in UWP Progress Bar control | Syncfusion®
-description: Learn here all about Animating Custom Objects support in Syncfusion® UWP Progress Bar (SfProgressBar) control and more.
-platform: UWP
+title: Animating Custom Objects in UWP SfProgressBar | Syncfusion®
+description: The Animating Custom Objects feature in SfProgressBar allows custom animation by changing the FillDirection of the path and performing reverse animation.
+platform: uwp
 control: SfProgressBar
 documentation: ug
---- 
+---
 
-# Animating Custom Objects in UWP Progress Bar (SfProgressBar)
+# Animating Custom Objects in UWP SfProgressBar
 
 Custom objects animation can be customized by change the [FillDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_FillDirection) of path and perform reverse animation.
 
@@ -77,7 +77,7 @@ N> Progress types other than `Custom` does not show any changes in their animati
 
 ## Reverse Animation
 
-The direction of animation can be reversed in [SfProgressBar]((https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_ProgressType) control using the property [IsDirectionReversed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_IsDirectionReversed). The default value is false and it can be set as given below:
+The direction of animation can be reversed in [SfProgressBar](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_ProgressType) control using the property [IsDirectionReversed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_IsDirectionReversed). The default value is false and it can be set as given below:
 
 {% tabs %}
 

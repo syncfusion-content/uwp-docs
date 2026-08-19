@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Cascading in UWP Picker control | Syncfusion
-description: Learn how to create a cascading picker by linking related collections in the Syncfusion UWP Picker (SfPicker) control.
+title: Cascading in UWP SfPicker | Syncfusion®
+description: The Cascading feature in SfPicker creates custom cascading samples where the state collection is updated based on the selected item.
 platform: uwp
 control: SfPicker
 documentation: ug
 ---
 
-
-# Cascading in UWP Picker
+# Cascading in UWP SfPicker
 
 We have demonstrated how to create custom Cascading sample using Picker control in the following steps.
 

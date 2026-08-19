@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Document Window in UWP Docking control | Syncfusion®
-description: Learn here all about Document Window support in Syncfusion® UWP Docking (SfDockingManager) control and more.
+title: Document Window in UWP SfDockingManager | Syncfusion®
+description: The Document Window feature in SfDockingManager allows child windows to be displayed as documents by setting the DockState property to Document.
 platform: uwp
 control: SfDockingManager
 documentation: ug
 ---
 
-# Document Window in UWP Docking (SfDockingManager)
+# Document Window in UWP SfDockingManager
 
 Document window is one of the states available in the `SfDockingManager`. To make the children of the `SfDockingManager` as Document, set the child's `DockState` value as `Document`.
 
