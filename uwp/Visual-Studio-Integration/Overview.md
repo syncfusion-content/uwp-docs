@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® UWP Extensions | Syncfusion®
-description: Learn about the introduction of Syncfusion® Essential Studio UWP Extensions and more details.
+description: Learn about Syncfusion® Essential Studio UWP Extensions, including its introduction, key elements, and features.
 platform: uwp
 control: Syncfusion® Extensions
 documentation: ug
