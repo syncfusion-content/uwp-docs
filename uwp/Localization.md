@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization in UWP Controls | Syncfusion
-description: Learn about localization support in Syncfusion UWP UI controls using .resw files and explains editing default strings of UWP controls.
+title: About Syncfusion® UWP Localization Support | Syncfusion®
+description: Learn about localization support in Syncfusion® Essential Studio UWP controls, including using .resw files and customizing default control strings.
 platform: uwp
 Control: Localization
 documentation: ug
 ---
 
-# Localization of Syncfusion<sup>&reg;</sup> UWP controls
+# About Syncfusion® UWP Localization Support
 
 Localization is the process of translating the application resources into different languages for specific cultures. You can localize the Syncfusion<sup>&reg;</sup> UWP controls by adding a resource file for each language.
 

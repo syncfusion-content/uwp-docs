@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion licensing errors - Syncfusion 
-description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion UWP applications.
+title: About Syncfusion® UWP Licensing Error | Syncfusion®
+description: Learn about overview of Syncfusion® Essential Studio UWP Licensing error, its common causes and solutions.
 platform: uwp
-control: Essential Studio
+control: Licensing
 documentation: ug
 ---
 
-# Syncfusion Licensing Errors
+# About Syncfusion® UWP Licensing Error
 
 Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 

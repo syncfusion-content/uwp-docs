@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Guidance to run the samples | Syncfusion
-description: Learn how to run the samples of Syncfusion Essential Studio Universal Windows Platform (UWP) products.
+title: About Running Syncfusion® UWP Samples | Syncfusion®
+description: Learn how to run and explore Syncfusion® Essential Studio UWP samples to evaluate features and functionality of UWP controls.
 platform: uwp
 control: Featured Samples
 documentation: ug
 ---
 
-# Featured Samples
+# About Running Syncfusion® UWP Samples
 
 ## Guide to run the samples
 
