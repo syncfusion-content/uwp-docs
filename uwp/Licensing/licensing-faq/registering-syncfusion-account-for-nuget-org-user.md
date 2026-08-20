@@ -7,7 +7,7 @@ control: Licensing
 documentation: ug
 ---
 
-# How to register Syncfusion® account in UWP
+# How to register Syncfusion® account for UWP
 
 If you have directly obtained Syncfusion assemblies from [NuGet.org](http://nuget.org/) and do not have a Syncfusion account, follow the steps to obtain a free 30-day trial license key:
 

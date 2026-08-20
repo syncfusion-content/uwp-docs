@@ -7,7 +7,7 @@ control: Licensing
 documentation: ug
 ---
 
-# How to get license key in UWP
+# How to get license key from Syncfusion® account
 
 License keys can be generated from the [License & Downloads](https://syncfusion.com/account/downloads) or [Trial & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) section of the Syncfusion website. 
 
