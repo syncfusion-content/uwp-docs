@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview of Syncfusion license validation in CI services - Syncfusion
-description: Learn here about how to register Syncfusion license key for Syncfusion application for license validation.
+title: About Syncfusion® UWP CI License Validation | Syncfusion®
+description: Learn about overview of Syncfusion® Essential Studio UWP CI License Validation, its setup steps and benefits.
 platform: uwp
-control: Essential Studio
+control: CI License Validation
 documentation: ug
 ---
 
@@ -17,7 +17,7 @@ margin-top: 1.5em;     margin-bottom: 1.5em;
 </style>
 
 
-# Syncfusion license key validation in CI services
+# About Syncfusion® UWP CI License Validation
 
 Syncfusion license key validation in CI services ensures that Syncfusion Essential Studio components are properly licensed during CI processes. Validating the license key at the CI level can prevent licensing errors during deployment. Set up the continuous integration process to fail in case the license key validation fails. Validate the passed parameters and the registered license key again to resolve the issue.
 

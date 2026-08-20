@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Essential Studio Licensing | Syncfusion
-description: Learn here about Syncfusion Essential Studio license key, how to generate the license key, how to register the license key, and more details.
-platform: UWP
-control: Essential Studio
+title: How to register Syncfusion® account for UWP | Syncfusion®
+description: Learn how to register a Syncfusion® account for direct NuGet.org users to obtain UWP license key and validate license.
+platform: uwp
+control: Licensing
 documentation: ug
 ---
 
-# Registering Syncfusion account for direct NuGet.org user
+# How to register Syncfusion® account in UWP
 
 If you have directly obtained Syncfusion assemblies from [NuGet.org](http://nuget.org/) and do not have a Syncfusion account, follow the steps to obtain a free 30-day trial license key:
 
