@@ -2,7 +2,7 @@
 layout: post
 title: Internet connection for UWP license validation | Syncfusion®
 description: Learn whether Syncfusion® Essential Studio UWP license validation needs an internet connection to validate license in apps.
-platform: UWP
+platform: uwp
 control: Licensing
 documentation: ug
 ---

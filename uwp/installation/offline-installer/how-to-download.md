@@ -2,7 +2,7 @@
 layout: post
 title: How to Download Syncfusion® UWP Offline Installer | Syncfusion®
 description: Learn how to download the Syncfusion® UWP Offline Installer from the Syncfusion® website using a valid license and install products without internet access.
-platform: UWP
+platform: uwp
 control: Installation and Deployment
 documentation: ug
 

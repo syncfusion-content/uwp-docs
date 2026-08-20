@@ -2,7 +2,7 @@
 layout: post
 title: How to register Syncfusion® account for UWP | Syncfusion®
 description: Learn how to register a Syncfusion® account for direct NuGet.org users to obtain UWP license key and validate license.
-platform: UWP
+platform: uwp
 control: Licensing
 documentation: ug
 ---

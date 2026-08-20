@@ -2,7 +2,7 @@
 layout: post
 title: How to get license key in UWP | Syncfusion®
 description: Learn how to get a Syncfusion® UWP license key from the Syncfusion® account and recommended places to register the key.
-platform: UWP
+platform: uwp
 control: Licensing
 documentation: ug
 ---

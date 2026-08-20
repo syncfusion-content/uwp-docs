@@ -2,7 +2,7 @@
 layout: post
 title: How to upgrade from Trial version in UWP | Syncfusion®
 description: Learn how to upgrade from trial version to licensed version of Syncfusion® Essential Studio in your UWP application.
-platform: UWP
+platform: uwp
 control: Licensing
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How to Install Syncfusion® UWP Offline Installer | Syncfusion®
 description: Learn how to install the Syncfusion® UWP Offline Installer, navigate the installation options, and set up Essential Studio UWP components successfully.
-platform: UWP
+platform: uwp
 control: Installation and Deployment
 documentation: ug
 

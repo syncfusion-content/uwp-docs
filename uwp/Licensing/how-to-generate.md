@@ -2,7 +2,7 @@
 layout: post
 title: How to generate license key in UWP | Syncfusion®
 description: Learn how to generate Syncfusion® UWP license key for UWP application to enable license validation in apps.
-platform: UWP
+platform: uwp
 control: Licensing
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How to Install Syncfusion® UWP Web Installer | Syncfusion®
 description: Learn how to download, launch, and install the Syncfusion® UWP Web Installer to set up Essential Studio UWP components successfully.
-platform: UWP
+platform: uwp
 control: Installation and Deployment
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion® UWP Licensing | Syncfusion®
 description: Learn about overview of Syncfusion® Essential Studio UWP Licensing component, its key features and benefits.
-platform: UWP
+platform: uwp
 control: Licensing
 documentation: ug
 ---
@@ -29,7 +29,7 @@ Following licensing error will be shown if the license key is not registered in 
 
 <div id="license">
 
-This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this <a href="/uwp/licensing/overview">help topic</a> for more information 
+This application was built using a trial version of Syncfusion Essential Studio. Please include a valid license to permanently remove this license validation message. You can also obtain a free 30 day evaluation license to temporarily remove this message during the evaluation period. Please refer to this <a href="/uwp/licensing/overview" aria-label="UWP Licensing help topic">help topic</a> for more information 
 
 </div>
 
