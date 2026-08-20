@@ -1,19 +1,19 @@
 ---
 layout: post
-title: About UWP Range Slider control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Range Slider (SfRangeSlider) control, its elements and more.
+title: About Syncfusion® UWP Range Slider Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio UWP Range Slider (SfRangeSlider) control and more details.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# UWP Range Slider (SfRangeSlider) Overview
+# About Syncfusion® UWP Range Slider (SfRangeSlider) Control
 
 The range slider control for UWP allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
 
 ![RangeSlider Sample view](Overview_images/Overview_img1.png)
 
-### Key features
+## Key features
 
 Provides support to select values as a range.
  

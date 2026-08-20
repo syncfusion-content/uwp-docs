@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Radial Slider control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP Radial Slider (SfRadialSlider) control, its elements and more.
+title: Getting Started with UWP Radial Slider | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Radial Slider (SfRadialSlider) control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
@@ -48,4 +48,4 @@ Dim sfRadialSlider As New SfRadialSlider() With {
 
 {% endtabs %}
 
-N> You can refer to our [UWP Radial Slider](https://www.syncfusion.com/uwp-ui-controls/radial-slider) page to know about its other groundbreaking feature representations. You can also explore our [UWP Radial Slider example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) that shows you how to render and configure the Radial Slider in UWP.
+N> You can refer to our [UWP Radial Slider](https://www.syncfusion.com/uwp-ui-controls/radial-slider) page to know about its other groundbreaking feature representations. You can also explore our [UWP Radial Slider example](https://apps.microsoft.com/detail/9nblggh5wngv?hl=en-US&gl=IN) that shows you how to render and configure the Radial Slider in UWP.

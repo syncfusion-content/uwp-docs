@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP Range Slider control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP Range Slider (SfRangeSlider) control, its elements and more.
+title: Getting Started with UWP Range Slider | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Range Slider (SfRangeSlider) control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
