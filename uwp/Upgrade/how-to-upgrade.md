@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Upgrading Syncfusion UWP installer to a latest version - Syncfusion
-description: Learn here about how to upgrade Syncfusion UWP installer to a latest version, its elements, and more.
+title: How to upgrade Syncfusion® UWP installer | Syncfusion®
+description: Learn how to upgrade the Syncfusion® UWP installer to the latest version, the process involved, and additional details.
 platform: uwp
 control: Essential Studio
 documentation: ug
 ---
 
-# Upgrading Syncfusion UWP installer to a latest version
+# How to upgrade Syncfusion® UWP installer
 
 Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack release for these volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 

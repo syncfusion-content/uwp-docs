@@ -1,12 +1,12 @@
 ---
 layout: post
-title: .NET Framework support history for Syncfusion Essential UWP controls
-description: .NET Framework support history for Syncfusion Essential Studio Universal Windows Platform (UWP) products.
+title: Syncfusion® UWP .NET Framework Support History | Syncfusion®
+description: Learn about the .NET Framework support history for Syncfusion® Essential Studio UWP controls and the supported framework versions across releases.
 platform: uwp
 control: .Net Framework support History
 documentation: ug
 ---
-# .NET Framework support History
+# Syncfusion® UWP .NET Framework Support History
 
 ## Version Compatibility
 

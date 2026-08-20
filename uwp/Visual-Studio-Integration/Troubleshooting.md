@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Troubleshooting | UWP | Syncfusion
-description: Syncfusion Troubleshooter is Visual Studio extension to troubleshoot the configuration issues in Syncfusion assembly reference, webconfig entries in projects.
+title: Troubleshooting in UWP Syncfusion® Extensions | Syncfusion®
+description: Learn about troubleshooting Syncfusion® configuration issues in UWP projects using the Syncfusion® Troubleshooter and more.
 platform: uwp
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
-# Troubleshoot the project
+# Troubleshooting in UWP Syncfusion® Extensions
 
 Troubleshoot the project with the Syncfusion® configuration and apply the fix, like the wrong .NET Framework version of the added Syncfusion® assembly to the project or missing any Syncfusion® dependent assembly of a referred assembly. The Syncfusion Troubleshooter can do the following:
 
