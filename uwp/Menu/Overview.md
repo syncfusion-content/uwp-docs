@@ -1,14 +1,14 @@
 ---
 layout: post
-title: About UWP Menu control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Essential Studio® UWP Menu (SfMenu) control, its elements and more.
-platform: UWP
+title: About Syncfusion® UWP Menu Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio UWP Menu (SfMenu) control and more details.
+platform: uwp
 control: SfMenu
 documentation: ug
 --- 
 
 
-# UWP Menu (SfMenu) Overview
+# About Syncfusion® UWP Menu (SfMenu) Control
 
 `SfMenu` control allows the hierarchal organization of elements that are associated with commands and event handlers. `SfMenu` contains a collection of `SfMenuItem`, which can be expanded to display additional SfMenuItem's or to perform a specific action when clicked.
 

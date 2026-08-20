@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About UWP DropDown Button control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP DropDown Button (SfDropDownButton) control, its elements and more.
+title: About Syncfusion® UWP DropDown Button Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio UWP DropDown Button (SfDropDownButton) control and more details.
 platform: uwp
 control:  SfDropDownButton
 documentation: ug
 ---
-# UWP DropDown Button (SfDropDownButton) Overview
+# About Syncfusion® UWP DropDown Button (SfDropDownButton) Control
 
 SfDropDownButton is used as a content holder that shows content in a drop down popup on demand. 
 
