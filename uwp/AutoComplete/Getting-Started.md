@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with UWP AutoComplete control | Syncfusion
-description: Learn here about getting started with Syncfusion UWP AutoComplete (SfTextBoxExt) control, its elements and more.
+title: Getting Started with UWP AutoComplete | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP AutoComplete (SfTextBoxExt) control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
@@ -54,6 +54,6 @@ Dim textBox As New SfTextBoxExt()
 
 {% endtabs %}
 
-N> You can refer to our [UWP AutoComplete](https://www.syncfusion.com/uwp-ui-controls/autosuggestbox) feature tour page to know about its other groundbreaking feature representations. You can also explore our [UWP AutoComplete example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) that shows you how to render and configure the Autocomplete in UWP.
+N> You can refer to our [UWP AutoComplete](https://www.syncfusion.com/uwp-ui-controls/autosuggestbox) feature tour page to know about its other groundbreaking feature representations. You can also explore our [UWP AutoComplete example](https://apps.microsoft.com/detail/9nblggh5wngv?hl=en-US&gl=IN) that shows you how to render and configure the Autocomplete in UWP.
 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Carousel control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Carousel (SfCarousel) control, its elements and more.
+title: About Syncfusion® UWP Carousel Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio UWP Carousel (SfCarousel) control and more details.
 platform: uwp
 control: SfCarousel
 documentation: ug
 ---
 
-# UWP Carousel (SfCarousel) Overview
+# About Syncfusion® UWP Carousel Control
 
 `SfCarousel` control provides a rich animated layout to arrange items in touch device.
 
