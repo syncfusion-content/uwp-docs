@@ -1,12 +1,12 @@
 ---
-title: About Syncfusion® UWP Overview Control | Syncfusion®
-description: Learn about introduction of Syncfusion® Essential Studio UWP Overview control, its features, components, and more details.
+title: About Syncfusion® UWP | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio UWP, its features, components, and more details.
 platform: uwp
-control: overview
+control: Syncfusion® UWP
 documentation: ug
 ---
 
-# About Syncfusion® UWP Overview Control
+# About Syncfusion® UWP
 
 Essential<sup>&reg;</sup> UWP is a comprehensive collection of 35+ enterprise-grade UWP components for building windows store applications. It includes all the UI controls that are typically required for building line-of-business (LOB) applications including Tools, Charts, Grids, Scheduler, Diagram and much more.
 

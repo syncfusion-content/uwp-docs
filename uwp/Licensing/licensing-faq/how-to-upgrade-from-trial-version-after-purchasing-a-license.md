@@ -7,7 +7,7 @@ control: Licensing
 documentation: ug
 ---
 
-# How to upgrade from Trial version in UWP
+# How to upgrade from Trial version in UWP application 
 
 To upgrade from trial version, there are two possible solutions.
 
