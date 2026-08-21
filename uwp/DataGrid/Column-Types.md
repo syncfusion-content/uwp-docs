@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Types in UWP SfDataGrid | Syncfusion®
-description: Column Types in SfDataGrid provides built-in and custom column types to display, edit, format, and customize data effectively.
+title: Column Types in UWP Data Grid | Syncfusion®
+description: Column Types in Data Grid provides built-in and custom column types to display, edit, format, and customize data effectively.
 platform: uwp
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Column Types in UWP SfDataGrid
+# Column Types in UWP Data Grid
 
 SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
  
