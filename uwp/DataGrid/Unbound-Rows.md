@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unbound Rows in UWP SfDataGrid | Syncfusion®
-description: Unbound Rows in SfDataGrid display custom rows for calculations, summaries, and additional information independent of the data source.
+title: Unbound Rows in UWP Data Grid | Syncfusion®
+description: Unbound Rows in Data Grid display custom rows for calculations, summaries, and additional information independent of the data source.
 platform: uwp
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Unbound Rows in UWP SfDataGrid
+# Unbound Rows in UWP Data Grid
 
 SfDataGrid allows you to add additional rows at top and also bottom of the SfDataGrid which are not bound with data object from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRows) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be exported and printed.
 
