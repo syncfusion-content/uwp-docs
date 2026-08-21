@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance Tips in UWP SfDataGrid | Syncfusion®
-description: Performance tips in SfDataGrid help optimize data loading, batch updates, filtering, summaries, column operations, and rendering for large datasets.
+title: Performance Tips in UWP Data Grid | Syncfusion®
+description: Performance tips in Data Grid help optimize data loading, batch updates, filtering, summaries, column operations, and rendering for large datasets.
 platform: uwp
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Performance Tips in UWP SfDataGrid
+# Performance Tips in UWP Data Grid
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates. 
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in UWP SfDataGrid | Syncfusion®
-description: Data Binding in SfDataGrid provides flexible data source binding, collection management, and efficient data display capabilities.
+title: Data Binding in UWP Data Grid | Syncfusion®
+description: Data Binding in Data Grid provides flexible data source binding, collection management, and efficient data display capabilities.
 platform: uwp
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Data Binding in UWP SfDataGrid
+# Data Binding in UWP Data Grid
 
 SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
 
