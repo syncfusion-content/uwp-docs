@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Manipulation in UWP SfDataGrid | Syncfusion®
-description: Data manipulation in SfDataGrid supports adding, editing, deleting, and managing records with built-in features for efficient data handling and updates.
+title: Data Manipulation in UWP Data Grid | Syncfusion®
+description: Data manipulation in Data Grid supports adding, editing, deleting, and managing records with built-in features for efficient data handling and updates.
 platform: uwp
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Data Manipulation in UWP SfDataGrid
+# Data Manipulation in UWP Data Grid
 
 SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) property.
  
