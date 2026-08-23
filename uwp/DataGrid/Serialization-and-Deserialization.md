@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Serialization and Deserialization in UWP SfDataGrid | Syncfusion®
-description: Serialization and Deserialization in SfDataGrid saves and restores grid settings, layouts, and configurations to preserve the user interface state.
+title: Serialization and Deserialization in UWP Data Grid | Syncfusion®
+description: Serialization and Deserialization in Data Grid saves and restores grid settings, layouts, and configurations to preserve the user interface state.
 platform: uwp
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Serialization and Deserialization in UWP SfDataGrid
+# Serialization and Deserialization in UWP Data Grid
 
 SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
  

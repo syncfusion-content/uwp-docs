@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP Extensions control | Syncfusion
-description: Learn here all about introduction of Syncfusion Essential Studio® UWP Extensions control, its elements and more.
+title: About Syncfusion® UWP Extensions | Syncfusion®
+description: Learn about Syncfusion® Essential Studio UWP Extensions, including its introduction, key elements, and features.
 platform: uwp
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
-# UWP Syncfusion® Extensions Overview
+# About Syncfusion® UWP Extensions
  
 The Syncfusion® UWP Visual Studio Extensions can be accessed through the Syncfusion® menu to create and configure the project with Syncfusion® references in Visual Studio. The Syncfusion® UWP Extensions supports Microsoft Visual Studio 2017, Visual Studio 2019, and Visual Studio 2022.
 

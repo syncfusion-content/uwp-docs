@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Member Properties in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Member Properties support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
-platform: UWP
-control: SfPivotGrid
+title: Member Properties in UWP Pivot Grid | Syncfusion®
+description: Member Properties in Syncfusion® UWP Pivot Grid control display details like name, parent level, and children, enabling richer OLAP data visualization.
+platform: uwp
+control: Pivot Grid
 documentation: ug
 ---
 
-# Member Properties in UWP Pivot Grid (SfPivotGrid)
+# Member Properties in UWP Pivot Grid
 
 The SfPivotGrid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level.
 

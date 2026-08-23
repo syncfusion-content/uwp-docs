@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Constraints in UWP Diagram control | Syncfusion®
-description: Learn here all about Constraints support in the Syncfusion® UWP Diagram (SfDiagram) control and more.
+title: Constraints in UWP SfDiagram | Syncfusion®
+description: Learn about constraints in the Syncfusion® UWP SfDiagram control to enable or disable diagram, node, connector, port, and annotation behaviors.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Constraints in UWP Diagram (SfDiagram)
+# Constraints in UWP SfDiagram
 
 `Constraints` are used to enable/disable certain behaviors of the diagram, Node and Connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (&, |, ~, <<, etc.). 
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations).
@@ -25,7 +25,7 @@ Graph constraints allow to enable or disable the following behaviors.
 
 The following example illustrates how to disable page editing.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Disables PageEditing
 diagram.Constraints = GraphConstraints.Default & ~GraphConstraints.PageEditing;
@@ -48,7 +48,7 @@ NodeConstraints allow to enable or disable the following behaviors of Node.
 
 The following code illustrates how to disable rotation.
 
-{% highlight C# %}
+{% highlight c# %}
 
 ObservableCollection<Node> nodes = new ObservableCollection<Node>();
 
@@ -84,7 +84,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 
 The following code illustrates how to disable selection.
 
-{% highlight C# %}
+{% highlight c# %}
 
 ObservableCollection<Connector> connectors = new ObservableCollection<Connector>();
 
@@ -109,7 +109,7 @@ Example
 
 The following code illustrates how to disable creating connections with a port.
 
-{% highlight C# %}
+{% highlight c# %}
 
 Node node = new Node()
 {
@@ -143,7 +143,7 @@ AnnotationConstraints allow to enable or disable the following behaviors of Anno
 **Example**
 the following code illustrates how to enable annotation dragging.
 
-{% highlight C# %}
+{% highlight c# %}
 
             //Create NodeViewModel (Shape and ShapeStyle Applied from "Data-Binding"
             NodeViewModel node = new NodeViewModel()
@@ -181,7 +181,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 
 The following code illustrates how to hide rotator.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Hides Rotator
 (diagram.SelectedItems as SelectorViewModel).SelectorConstraints = (diagram.SelectedItems as  SelectorViewModel).SelectorConstraints & ~SelectorConstraints.Rotator;
@@ -201,7 +201,7 @@ Snap Constraints control the visibility of gridlines and enable/disable snapping
 
 The following code illustrates how to show only Horizontal Gridlines
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Shows Horizontal Gridlines
 diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines;
@@ -214,7 +214,7 @@ Some of the behaviors can be defined through both the specific object (Node/Conn
 
 The following code example illustrates how to inherit the line bridging behavior from the Diagram.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Enables Bridging
 diagram.Constraints = GraphConstraints.Default | GraphConstraints.Bridging;
@@ -242,7 +242,7 @@ Bitwise Operations are used to manipulate the flagged enumerations [enum]. In th
 
 You can add or enable multiple values at a time	 by using Bitwise ‘|’ (OR) operator.
 
-{% highlight C# %}
+{% highlight c# %}
 
 node.Constraints = NodeConstraints.Selectable | NodeConstraints.Rotatable;
 
@@ -254,7 +254,7 @@ In the above example, you can do both the selection and rotation.
 
 You can remove or disable values by using Bitwise ‘&~’ (XOR) operator.
 
-{% highlight C# %}
+{% highlight c# %}
 
 node.Constraints = node.Constraints & ~(NodeConstraints.Rotatable);
 
@@ -266,7 +266,7 @@ In the above example, Rotation is disabled but other constraints are enabled.
 
 You can check any value by using Bitwise ‘&’ (AND) operator.
 
-{% highlight C# %}
+{% highlight c# %}
 
 if ((node.Constraints & (NodeConstraints.Rotatable)) == (NodeConstraints.Rotatable))
 

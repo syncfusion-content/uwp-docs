@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Node in UWP Diagram control | Syncfusion®
-description: Learn here all about Node support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
+title: Node in UWP SfDiagram | Syncfusion®
+description: Learn about nodes in the Syncfusion® UWP SfDiagram control, including shapes, positioning, appearance, interaction, and constraints.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Node in UWP Diagram (SfDiagram)
+# Node in UWP SfDiagram
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
@@ -38,7 +38,7 @@ To create a Node, You have to define the Node object and add that to Nodes colle
 </syncDiagram:SfDiagram.Nodes>
 
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 
 // Creating the NodeViewModel
 NodeViewModel Begin = new NodeViewModel()
@@ -115,7 +115,7 @@ The following table illustrates how pivot relates Offset values with Node bounda
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 //Define the NodeCollection
 diagram.Nodes = new NodeCollection();
 //Define the Node
@@ -198,7 +198,7 @@ You can customize the appearance of a Node by changing its `ShapeStyle`. The fol
   <Setter Property="StrokeThickness" Value="2"></Setter>
 </Style>
 {% endhighlight %}
-{% highlight C# %}
+{% highlight c# %}
 Style style = new Style(typeof(Path));
 style.Setters.Add(new Setter(Path.FillProperty, Brushes.SteelBlue));
 style.Setters.Add(new Setter(Path.StrokeProperty, Brushes.WhiteSmoke));
@@ -223,14 +223,14 @@ The flip types are below,
 
 Diagram provides support to drag, resize, or rotate the Node interactively. 
 
-#### Select
+### Select
 Node can be selected by clicking on it.
 
 ![node with selection](Node_images/Node_img7.jpg)
 
 To explore about selection and selection related events , refer to [Selection](/uwp/diagram/interaction#selection) .
 
-#### Drag
+### Drag
 
 * Selected object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/uwp/diagram/gridlines#snapping).
@@ -239,7 +239,7 @@ To explore about selection and selection related events , refer to [Selection](/
 
 ![dragging the nodes](Node_images/Drag.gif)
 
-#### Resize
+### Resize
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
@@ -249,7 +249,7 @@ To explore about selection and selection related events , refer to [Selection](/
 
 ![resizing the selected the node](Node_images/Resize.gif)
 
-#### Rotate
+### Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the Node.
 * The Node is rotated with reference to the static pivot point.
@@ -259,6 +259,6 @@ To explore about selection and selection related events , refer to [Selection](/
 
 ![rotating the selected node](Node_images/Rotate.gif)
 
-## Constraints
+### Constraints
 aa
 The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/uwp/diagram/constraints#node-constraints "Node Constraints").

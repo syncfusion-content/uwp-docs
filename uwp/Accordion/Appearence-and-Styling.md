@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance and Styling in UWP Accordion control | Syncfusion®
-description: Learn here all about Appearance and Styling support in Syncfusion® UWP Accordion (SfAccordion) control and more.
+title: Appearance and Styling in UWP SfAccordion | Syncfusion®
+description: The appearance and styling in SfAccordion allows customizing the visual look using AccentBrush and other properties to decorate hot spots.
 platform: uwp
 control: SfAccordion
 documentation: ug
 
 ---
 
-# Appearance and Styling in UWP Accordion (SfAccordion)
+# Appearance and Styling in UWP SfAccordion
 
 `AccentBrush` property is used to decorate the hot spots of a control with a solid color
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom Calculations in UWP Pivot Client control | Syncfusion®
-description: Learn here all about Custom Calculations support in Syncfusion® UWP Pivot Client (SfPivotClient) control and more.
+title: Custom Calculations in UWP Pivot Client | Syncfusion®
+description: Custom Calculations in Syncfusion® UWP Pivot Client control apply formulas, percentages, ranks, and running totals for advanced OLAP data analysis.
 platform: uwp
-control: SfPivotClient
+control: Pivot Client
 documentation: ug
 ---
 
-# Custom Calculations in UWP Pivot Client (SfPivotClient)
+# Custom Calculations in UWP Pivot Client
 
 **CalculationType** is an enumerator, used to specify the type of the calculation; it is defined in the PivotComputationInfo class. Various types of calculations are used to perform calculations as specified below:
 

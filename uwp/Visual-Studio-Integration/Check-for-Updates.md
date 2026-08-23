@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Check for Updates | UWP | Syncfusion
-description: Syncfusion Check for Updates provides Extensions to update most recent version of the Essential Studio® release.
+title: Check for Updates in UWP Syncfusion® Extensions | Syncfusion®
+description: Learn about checking for updates in Syncfusion® Essential Studio UWP Extensions to get the latest features, fixes, and improvements.
 platform: uwp
-control: Syncfusion Extensions
+control: Syncfusion® Extensions
 documentation: ug
 ---
 
-# Check for Updates in Syncfusion® Essential Studio® UWP
+# Check for Updates in UWP Syncfusion® Extensions
 
 Syncfusion® provides the extensions to update to the most recent version of the Essential Studio® release, so that you always get the latest features, fixes, and improvements by installing the latest version.
 

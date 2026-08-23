@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Busy State in UWP Busy Indicator control | Syncfusion
-description: Learn here all about Dealing with Busy State support in Syncfusion UWP Busy Indicator (SfBusyIndicator) control and more.
+title: Dealing with Busy State in UWP SfBusyIndicator | Syncfusion®
+description: The busy state feature in SfBusyIndicator allows showing or hiding the indicator using the IsBusy property to indicate background processes.
 platform: uwp
 control: SfBusyIndicator
 documentation: ug
 ---
 
-# Dealing with Busy State in UWP Busy Indicator (SfBusyIndicator)
+# Dealing with Busy State in UWP SfBusyIndicator
 
 `SfBusyIndicator` can be shown/hidden using the `IsBusy` property. By default, `IsBusy` is `true`.
 

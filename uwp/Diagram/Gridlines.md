@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gridlines in UWP Diagram control | Syncfusion®
-description: Learn here all about Gridlines support in the Syncfusion® UWP Diagram (SfDiagram) control, its elements, and more.
+title: Gridlines in UWP SfDiagram | Syncfusion®
+description: Learn about gridlines in the Syncfusion® UWP SfDiagram control, including visibility, appearance customization, and object snapping.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Gridlines in UWP Diagram (SfDiagram)
+# Gridlines in UWP SfDiagram
 
 **Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
 
@@ -15,7 +15,7 @@ documentation: ug
 
 The `SnapConstraints` property of SnapSettings enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <!--Initialize SfDiagram-->
 <diagram:SfDiagram x:Name="diagram"> 
@@ -27,7 +27,7 @@ The `SnapConstraints` property of SnapSettings enables you to show/hide the grid
 
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Shows both Horizontal and Vertical Gridlines
 diagram.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
@@ -42,7 +42,7 @@ To show only horizontal/vertical gridlines or to hide gridlines, refer to [SnapC
 
 You can customize the appearance of the gridlines by using a set of predefined properties. The `HorizontalGridLines` and `VerticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates collection for the style.
 public class GridLineStyle : List<Style>
@@ -103,7 +103,7 @@ Thickness and the space between gridlines can be customized by using `LineInterv
 
 The following code example illustrates how to customize the thickness of lines and the line intervals.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Creates collection for the style.
 public class GridLineStyle : List<Style>
@@ -186,7 +186,7 @@ This feature allows the Diagram objects to snap to the nearest interaction of gr
 
 Snapping to gridlines can be enabled/disabled with the SnapConstraints property of SnapSettings. The following code example illustrates how to enable/disable the snapping to gridlines.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Enables snapping to both the horizontal and vertical lines.
 diagram.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines;
@@ -205,7 +205,7 @@ Snapping to objects can be enabled by assigning values other than SnapToObject.N
 
 The following code illustrates how to enable/disable the smart guide.
 
-{% highlight C# %}
+{% highlight c# %}
 
 //Enables or disables the default behaviors of the Snapping in SfDiagram.
 diagram.SnapSettings.SnapConstraints = SnapConstraints.All;

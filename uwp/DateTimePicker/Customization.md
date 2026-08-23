@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customization in UWP DateTimePicker control | Syncfusion
-description: Learn here all about Customization support in Syncfusion UWP DateTimePicker (SfDateTimeCombo) control and more.
+description: Learn how to customize the day, month, year, hour, minute, and second combo styles in the Syncfusion UWP DateTimePicker control.
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug
 ---
 
-# Customization in UWP DateTimePicker (SfDateTimeCombo)
+# Customization in UWP DateTimePicker
 
 The DateTimeItem drop-down lists displayed in this control include date or time parts that can be customized in a user-friendly manner using the properties below.
 

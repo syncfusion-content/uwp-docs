@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Value in UWP Rating control | Syncfusion
-description: Learn here all about Dealing with Value support in Syncfusion UWP Rating (SfRating) control and more.
+title: Dealing with Value in UWP SfRating | Syncfusion®
+description: The dealing with value feature in SfRating allows getting or setting the rate value using the Value property to track the user's rating.
 platform: uwp
 control: SfRating
 documentation: ug
 ---
 
-# Dealing with Value in UWP Rating (SfRating)
+# Dealing with Value in UWP SfRating
 
 ## Setting the rated value
 

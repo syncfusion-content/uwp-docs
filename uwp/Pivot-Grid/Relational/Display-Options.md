@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Display Options in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Display Options support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
-platform: UWP
-control: SfPivotGrid
+title: Display Options in UWP Pivot Grid | Syncfusion®
+description: Display Options in Syncfusion® UWP Pivot Grid control define how calculation values appear, with choices like All, Summary, Calculations, GrandTotal, or None.
+platform: uwp
+control: Pivot Grid
 documentation: ug
 ---
 
-# Display Options in UWP Pivot Grid (SfPivotGrid)
+# Display Options in UWP Pivot Grid
 
 The SfPivotGrid control provides support for PivotComputationInfo to display calculation values in preferred areas of the SfPivotGrid with the help of `DisplayOption` property. The following are the different types of display options available in the SfPivotGrid.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About UWP DatePicker control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® UWP DatePicker (SfDatePicker) control, its elements and more.
+title: About Syncfusion UWP DatePicker Control | Syncfusion
+description: Learn about introduction of Syncfusion UWP DatePicker control. Explore its key features, elements, and more details.
 platform: uwp
 control: SfDatePicker
 documentation: ug
 ---
 
-# UWP DatePicker (SfDatePicker) Overview
+# About Syncfusion UWP DatePicker Control
 
 The SfDatePicker control allows the user to select date values in a touch-friendly manner.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Value in UWP Progress Bar control | Syncfusion®
-description: Learn here all about Dealing with Value support in Syncfusion® UWP Progress Bar (SfProgressBar) control and more.
-platform: UWP
+title: Dealing with Value in UWP SfProgressBar | Syncfusion®
+description: The dealing with Value feature in SfProgressBar allows setting the progress using the Value property between Minimum and Maximum values.
+platform: uwp
 control: SfProgressBar
 documentation: ug
---- 
+---
 
-# Dealing with Value in UWP Progress Bar (SfProgressBar)
+# Dealing with Value in UWP SfProgressBar
 
 ## Setting Progress Value
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Appearance and Styling in UWP Calendar control | Syncfusion
-description: Learn here all about Appearance and Styling support in the Syncfusion UWP Calendar (SfCalendar) control and more.
+description: Learn how to customize the appearance of dates, headers, and cells in the Syncfusion UWP Calendar (SfCalendar) control.
 platform: uwp
 control: SfCalendar
 documentation: ug
 ---
 
-# Appearance and Styling in UWP Calendar (SfCalendar)
+# Appearance and Styling in UWP Calendar
 
 Every part of SfCalendar can be customized. It can be customized as follows:
 
