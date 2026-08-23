@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Touch Support in UWP Range Slider control | Syncfusion
-description: Learn here all about Touch Support support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
+title: Touch Support in UWP Range Slider | Syncfusion®
+description: Control thumb movement through tap interactions using the MoveToPoint property with tap position, small change, and large change modes.
 platform: uwp
 control: SfRange Slider 
 documentation: ug

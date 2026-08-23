@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Thumb ToolTip in UWP Range Slider control | Syncfusion
-description: Learn here all about Thumb ToolTip support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
+title: Thumb ToolTip in UWP Range Slider | Syncfusion®
+description: Display current thumb values and customize tooltip precision and placement using ThumbToolTipPrecision and ThumbToolTipPlacement.
 platform: uwp
 control: SfRange Slider 
 documentation: ug

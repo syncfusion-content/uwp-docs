@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Positioning SfRangeSlider in UWP Range Slider control | Syncfusion
-description: Learn here all about Positioning SfRangeSlider support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
+title: Positioning SfRangeSlider in UWP Range Slider | Syncfusion®
+description: Arrange the UWP Range Slider control horizontally or vertically by configuring the Orientation property for different layouts.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
