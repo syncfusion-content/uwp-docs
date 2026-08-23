@@ -1,12 +1,12 @@
 ---
 layout: post
-title: PromptChar in Mask in UWP Masked TextBox | Syncfusion®
+title: Customizing PromptChar in UWP Masked TextBox | Syncfusion®
 description: Customize prompt characters in masked input fields using the PromptChar property to display placeholders for missing input in SfMaskedEdit.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
 ---
-# PromptChar in Mask in UWP Masked TextBox (SfMaskEdit)
+# Customizing PromptChar in UWP Masked TextBox (SfMaskEdit)
 
 Displays prompt character for the absence of your input in Mask and its default value is ‘_’.
 
