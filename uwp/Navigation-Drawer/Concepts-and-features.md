@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Concepts and Features in UWP Navigation Drawer control | Syncfusion
-description: Learn here all about Concepts and Features support in Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control and more.
+title: Concepts and Features in UWP Navigation Drawer | Syncfusion®
+description: Configure content views, drawer panels, sizing, positioning, transitions, touch interaction, and animation settings in the UWP Navigation Drawer control.
 platform: UWP
 control: NavigationDrawer
 documentation: ug

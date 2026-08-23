@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Events and Methods in UWP Navigation Drawer control | Syncfusion
-description: Learn here all about Events and Methods support in Syncfusion UWP Navigation Drawer (SfNavigationDrawer) control and more.
+title: Events and Methods in UWP Navigation Drawer | Syncfusion®
+description: Handle drawer open and close events and control drawer visibility programmatically using built-in methods in the UWP Navigation Drawer control.
 platform: UWP
 control: NavigationDrawer
 documentation: ug
