@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Configuring Content in UWP DropDown Button | Syncfusion®
 description: Configure button and dropdown content in the UWP DropDown Button using Content and DropDownContent properties with text, controls, and custom UI elements.

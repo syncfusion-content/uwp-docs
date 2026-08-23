@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customizing DropDown in UWP DropDown Button | Syncfusion®
 description: Customize DropDown Button behavior using DropDownDirection, DropDownHeight, and IsDropDownOpen properties to control popup placement and visibility.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance and Styling in UWP DropDown Button | Syncfusion®
 description: Customize the appearance of the UWP DropDown Button using AccentBrush, ContentTemplate, and DropDownContentTemplate properties.
