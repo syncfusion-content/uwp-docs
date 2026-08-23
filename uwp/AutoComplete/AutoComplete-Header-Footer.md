@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Header and Footer in UWP AutoComplete control | Syncfusion
-description: Learn here all about Header and Footer support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
+title: Header and Footer in UWP AutoComplete | Syncfusion®
+description: Add custom header and footer views to the suggestion dropdown and control their content and display height.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug

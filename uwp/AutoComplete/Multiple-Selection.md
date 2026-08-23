@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Multiple Selection in UWP AutoComplete control | Syncfusion
-description: Learn here all about Multiple Selection support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
+title: Multiple Selection in UWP AutoComplete | Syncfusion®
+description: Select multiple AutoComplete items using token or delimiter modes, customize token appearance and behavior, and control token wrapping with TokensWrapMode.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug

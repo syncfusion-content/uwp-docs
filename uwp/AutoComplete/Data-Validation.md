@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Data Validation in UWP AutoComplete control | Syncfusion
-description: Learn here all about Data Validation support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
+title: Data Validation in UWP AutoComplete | Syncfusion®
+description: Validate AutoComplete (SfTextBoxExt) input using IDataValidation support, error notifications, property paths, and validation states.
 platform: UWP
 control: SfTextBoxExt
 documentation: ug
