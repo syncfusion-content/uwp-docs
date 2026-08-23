@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Checkable Items in UWP Radial Menu control | Syncfusion
-description: Learn here all about Checkable Items support in Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
+title: Checkable Items in UWP Radial Menu | Syncfusion®
+description: Configure checkable menu items using CheckMode, CheckBox and RadioButton options, grouping, and checked states in the UWP Radial Menu control.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Enable Free Rotation in UWP Radial Menu control | Syncfusion
-description: Learn here all about Enable Free Rotation support in Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
+title: Enable Free Rotation in UWP Radial Menu | Syncfusion®
+description: Control menu rotation behavior using the EnableFreeRotation property to enable or disable free rotation in the UWP Radial Menu control.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug

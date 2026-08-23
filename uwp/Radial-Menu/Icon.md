@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Icon in UWP Radial Menu control | Syncfusion
-description: Learn here all about Icon support in Syncfusion UWP Radial Menu (SfRadialMenu) control and more.
+title: Icon in UWP Radial Menu | Syncfusion®
+description: Customize the center icon of the UWP Radial Menu control using the Icon property with images and custom visual elements.
 platform: uwp
 control: SfRadial Menu 
 documentation: ug
