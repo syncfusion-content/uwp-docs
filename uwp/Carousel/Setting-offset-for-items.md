@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Setting Offset in UWP Carousel | Syncfusion®
 description: Customize Carousel item spacing, scaling, and selected item positioning using Offset, ScaleOffset, and SelectedItemOffset properties.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Selecting Item in UWP Carousel | Syncfusion®
 description: Select and navigate Carousel items using SelectedIndex, SelectedItem, MoveNext, MovePrevious, and SelectedItemTemplate.
