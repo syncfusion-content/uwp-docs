@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Customizing GroupBar in UWP Navigation Pane control | Syncfusion®
-description: Learn here all about Customizing GroupBar support in Syncfusion® UWP Navigation Pane (SfGroupBar) control and more.
+title: Customizing GroupBar in UWP Navigation Pane | Syncfusion®
+description: Customize the UWP Navigation Pane control by setting the CollapsedWidth property to adjust GroupBar width in collapsed mode.
 platform: UWP
 control: SfGroupBar
 documentation: ug

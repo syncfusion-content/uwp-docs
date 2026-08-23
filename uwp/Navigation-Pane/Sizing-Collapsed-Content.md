@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Sizing Collapsed Content in UWP Navigation Pane control | Syncfusion
-description: Learn here all about Sizing Collapsed Content support in Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
+title: Sizing Collapsed Content in UWP Navigation Pane | Syncfusion®
+description: Control collapsed content popup sizing using PopupSizeMode with full-size, default-size, and custom-size options in the UWP Navigation Pane.
 platform: UWP
 control: SfGroupBar
 documentation: ug
