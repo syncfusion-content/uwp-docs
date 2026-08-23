@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Concepts and Features in UWP Navigation Drawer | Syncfusion®
 description: Configure content views, drawer panels, sizing, positioning, transitions, touch interaction, and animation settings in the UWP Navigation Drawer control.
