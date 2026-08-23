@@ -10,19 +10,19 @@ documentation: ug
 # Intermediate Value in UWP Range Slider (SfRangeSlider) 
 It is possible to get the intermediate value, before the value is snapped to either the tick or step value while the user interacting with SfRangeSlider. 
 
-### IntermediateValue 
+## IntermediateValue 
 
 Gets the intermediate value. This works when ShowRange is false. 
 
 
 
-### IntermediateRangeStart  
+## IntermediateRangeStart  
 
 Gets the intermediate RangeStart value. 
 
 
 
-### IntermediateRangeEnd 
+## IntermediateRangeEnd 
 
 Gets the intermediate RangeEnd value.  
 
