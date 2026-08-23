@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Working with SfMaskedEdit in UWP Masked TextBox control | Syncfusion®
-description: Learn here all about Working with SfMaskedEdit support in Syncfusion® UWP Masked TextBox (SfMaskedEdit) control and more.
+title: Working with UWP Masked TextBox | Syncfusion®
+description: Work with SfMaskedEdit by configuring mask types, binding values, handling ValueChanged events, and displaying watermark text.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
 ---
 
-# Working With SfMaskedEdit
+# Working with UWP Masked TextBox (SfMaskedEdit)
 
 This section explains about accessing `SfMaskedEdit` properties and events associated with it.
 

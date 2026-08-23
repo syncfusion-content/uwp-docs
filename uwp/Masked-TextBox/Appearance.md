@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Appearance in UWP Masked TextBox control | Syncfusion®
-description: Learn here all about Appearance support in Syncfusion® UWP Masked TextBox (SfMaskedEdit) control and more.
+title: Appearance in UWP Masked TextBox | Syncfusion®
+description: Customize SfMaskedEdit appearance using BorderBrush, ErrorBorderBrush, and ShowPromptOnFocus to control border styling, validation visuals, and prompt behavior.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug

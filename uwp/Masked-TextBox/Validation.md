@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Validation in UWP Masked TextBox control | Syncfusion®
-description: Learn here all about Validation support in Syncfusion® UWP Masked TextBox (SfMaskedEdit) control and more.
+title: Validation in UWP Masked TextBox | Syncfusion®
+description: Validate masked input using ValidationMode, HasError, and custom validation rules with KeyPress and LostFocus validation options.
 platform: uwp
 control: SfMaskedEdit
 documentation: ug
