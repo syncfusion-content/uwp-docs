@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Expand Modes in UWP Menu | Syncfusion®
 description: Control submenu opening behavior using ExpandMode with click or mouse-over interactions in the UWP Menu control.

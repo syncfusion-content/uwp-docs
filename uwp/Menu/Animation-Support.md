@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Animation Support in UWP Menu | Syncfusion®
 description: Customize submenu popup animations using PopUpAnimationType with fade, slide, scroll, or no animation in the UWP Menu control.

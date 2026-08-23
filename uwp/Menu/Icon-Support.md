@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Set Icons in UWP Menu | Syncfusion®
 description: Display custom icons in menu items using the Icon property to enhance navigation and visual appearance in the UWP Menu control.

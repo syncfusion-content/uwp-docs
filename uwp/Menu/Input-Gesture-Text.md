@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Input Gesture Text in UWP Menu | Syncfusion®
 description: Display keyboard shortcut combinations with menu items using the InputGestureText property in the UWP Menu control.
