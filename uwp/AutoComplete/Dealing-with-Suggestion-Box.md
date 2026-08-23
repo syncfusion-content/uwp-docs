@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dealing with SuggestionBox in UWP AutoComplete | Syncfusion®
 description: Configure AutoComplete suggestion box placement, dropdown height, focus behavior, and popup visibility in SfTextBoxExt.
