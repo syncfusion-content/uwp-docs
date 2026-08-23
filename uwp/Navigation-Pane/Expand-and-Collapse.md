@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Expand and Collapse in UWP Navigation Pane | Syncfusion®
 description: Expand or collapse the UWP Navigation Pane using built-in controls or the IsCollapsed property for programmatic state management.

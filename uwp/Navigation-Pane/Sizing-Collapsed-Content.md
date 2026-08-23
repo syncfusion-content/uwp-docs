@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Sizing Collapsed Content in UWP Navigation Pane | Syncfusion®
 description: Control collapsed content popup sizing using PopupSizeMode with full-size, default-size, and custom-size options in the UWP Navigation Pane.

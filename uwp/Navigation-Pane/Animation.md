@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Animation in UWP Navigation Pane | Syncfusion®
 description: Customize content popup animations using fade, scale, or no-animation modes, and control transition speed in the UWP Navigation Pane control.
