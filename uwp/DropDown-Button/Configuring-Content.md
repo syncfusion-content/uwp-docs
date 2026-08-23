@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Configuring Content in UWP DropDown Button control | Syncfusion®
-description: Learn here all about Configuring Content support in Syncfusion® UWP DropDown Button (SfDropDownButton) control and more.
+title: Configuring Content in UWP DropDown Button | Syncfusion®
+description: Configure button and dropdown content in the UWP DropDown Button using Content and DropDownContent properties with text, controls, and custom UI elements.
 platform: uwp
 control:  SfDropDownButton
 documentation: ug
