@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance and Styling in UWP Radial Slider | Syncfusion®
 description: Customize inner and outer rims, ticks, labels, pointers, and their styles using appearance settings in the UWP Radial Slider (SfRadialSlider) control.

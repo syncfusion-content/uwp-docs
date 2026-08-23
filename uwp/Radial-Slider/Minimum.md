@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Minimum in UWP Radial Slider | Syncfusion®
 description: Configure the Minimum property to define the lower bound of the selectable value range in the UWP Radial Slider (SfRadialSlider) control.

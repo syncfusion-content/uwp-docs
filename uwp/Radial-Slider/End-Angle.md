@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: End Angle in UWP Radial Slider | Syncfusion®
 description: Define the ending position of the circular track and control the radial range using the EndAngle property in the UWP Radial Slider (SfRadialSlider) control.

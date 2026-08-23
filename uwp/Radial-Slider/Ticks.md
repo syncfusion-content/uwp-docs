@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Ticks in UWP Radial Slider | Syncfusion®
 description: Configure tick frequency, placement, and maximum value display behavior in the UWP Radial Slider (SfRadialSlider) control.

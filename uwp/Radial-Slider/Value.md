@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Value in UWP Radial Slider | Syncfusion®
 description: Get or set the selected value and update it through pointer interaction in the UWP Radial Slider (SfRadialSlider) control.

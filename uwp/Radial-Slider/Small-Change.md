@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Small Change in UWP Radial Slider | Syncfusion®
 description: Control the minimum increment between selectable values by using the SmallChange property in the UWP Radial Slider (SfRadialSlider) control.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Content in UWP Radial Slider | Syncfusion®
 description: Display custom content inside the inner rim of the UWP Radial Slider (SfRadialSlider) control using the Content property.

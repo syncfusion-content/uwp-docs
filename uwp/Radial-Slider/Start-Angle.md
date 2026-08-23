@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Start Angle in UWP Radial Slider | Syncfusion®
 description: Configure the StartAngle property to define the starting position for generating ticks in the UWP Radial Slider (SfRadialSlider) control.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Content Template in UWP Radial Slider | Syncfusion®
 description: Customize content displayed in the UWP Radial Slider (SfRadialSlider) control using the ContentTemplate property and data-bound values.

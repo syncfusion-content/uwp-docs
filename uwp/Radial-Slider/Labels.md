@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Labels in UWP Radial Slider | Syncfusion®
 description: Display numeric labels along the circular track and control their frequency using the TickFrequency property in the UWP Radial Slider (SfRadialSlider) control.
