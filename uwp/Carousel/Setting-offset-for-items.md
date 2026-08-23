@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Setting offset in UWP Carousel control | Syncfusion
-description: Learn here all about Setting offset support in Syncfusion UWP Carousel (SfCarousel) control and more.
+title: Setting Offset in UWP Carousel | Syncfusion®
+description: Customize Carousel item spacing, scaling, and selected item positioning using Offset, ScaleOffset, and SelectedItemOffset properties.
 platform: UWP
 control: SfCarousel
 documentation: ug

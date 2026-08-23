@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Animation in UWP Carousel control | Syncfusion
-description: Learn here all about Animation support in Syncfusion UWP Carousel (SfCarousel) control and more.
+title: Animation in UWP Carousel | Syncfusion®
+description: Customize Carousel animations by setting animation duration, easing functions, and rotation angles for smooth item selection and transitions.
 platform: UWP
 control: SfCarousel
 documentation: ug

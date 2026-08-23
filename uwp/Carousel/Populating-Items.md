@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Populating Items in UWP Carousel control | Syncfusion
-description: Learn here all about Populating Items support in Syncfusion UWP Carousel (SfCarousel) control and more.
+title: Populating Items in UWP Carousel | Syncfusion®
+description: Populate Carousel items using SfCarouselItem, ItemsSource binding, DisplayMemberPath, and ItemTemplate with business object collections.
 platform: uwp
 control: SfCarousel
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Selecting Item in UWP Carousel control | Syncfusion
-description: Learn here all about Selecting Item support in Syncfusion UWP Carousel (SfCarousel) control and more.
+title: Selecting Item in UWP Carousel | Syncfusion®
+description: Select and navigate Carousel items using SelectedIndex, SelectedItem, MoveNext, MovePrevious, and SelectedItemTemplate.
 platform: uwp
 control: SfCarousel
 documentation: ug
