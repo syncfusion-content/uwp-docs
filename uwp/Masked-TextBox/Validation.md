@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Validation in UWP Masked TextBox | Syncfusion®
 description: Validate masked input using ValidationMode, HasError, and custom validation rules with KeyPress and LostFocus validation options.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Working with UWP Masked TextBox | Syncfusion®
 description: Work with SfMaskedEdit by configuring mask types, binding values, handling ValueChanged events, and displaying watermark text.

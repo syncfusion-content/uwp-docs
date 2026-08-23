@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Value Mode in UWP Masked TextBox | Syncfusion®
 description: Control how SfMaskedEdit stores and returns values by including or excluding prompt characters and literals using ValueMaskFormat options.
