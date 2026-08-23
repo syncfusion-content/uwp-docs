@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Highlighting Matched Text in UWP AutoComplete | Syncfusion®
 description: Highlight matching text in AutoComplete suggestions using first or multiple occurrences and customize highlight color and font styling.

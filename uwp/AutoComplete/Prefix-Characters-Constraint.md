@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Prefix Characters Constraint in UWP AutoComplete | Syncfusion®
 description: Control when AutoComplete suggestions appear by setting the MinimumPrefixCharacters property to define the required input length before filtering.

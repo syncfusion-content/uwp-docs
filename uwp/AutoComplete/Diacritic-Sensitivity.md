@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Diacritic Sensitivity in UWP AutoComplete | Syncfusion®
 description: Enable or disable diacritic-sensitive matching for multilingual AutoComplete suggestions using the IgnoreDiacritic property.

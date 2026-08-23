@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Retrieving Selected Values in UWP AutoComplete | Syncfusion®
 description: Retrieve AutoComplete selected items, values, indexes, and model properties using SelectedItem, SelectedValue, SuggestionIndex, and ValueMemberPath.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Watermark in UWP AutoComplete | Syncfusion®
 description: Display placeholder text, custom watermark content, or data-bound watermark templates in AutoComplete when the input field is empty.

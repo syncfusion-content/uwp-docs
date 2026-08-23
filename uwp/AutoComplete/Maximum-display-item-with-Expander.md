@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Maximum DisplayItem with Expander in UWP AutoComplete | Syncfusion®
 description: Limit displayed suggestions and load additional results on demand using maximum suggestion and load-more options.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Multiple Selection in UWP AutoComplete | Syncfusion®
 description: Select multiple AutoComplete items using token or delimiter modes, customize token appearance and behavior, and control token wrapping with TokensWrapMode.

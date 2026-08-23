@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Header and Footer in UWP AutoComplete | Syncfusion®
 description: Add custom header and footer views to the suggestion dropdown and control their content and display height.

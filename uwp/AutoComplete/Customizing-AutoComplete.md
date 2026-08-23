@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customizing AutoComplete in UWP AutoComplete | Syncfusion®
 description: Learn how to customize AutoComplete text, suggestion items, dropdown styling, borders, and clear buttons in SfTextBoxExt.

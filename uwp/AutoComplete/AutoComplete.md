@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: AutoComplete in UWP AutoComplete | Syncfusion®
 description: Configure autocomplete sources, suggestion modes, filtering behavior, item templates, popup delays, and matching options.
