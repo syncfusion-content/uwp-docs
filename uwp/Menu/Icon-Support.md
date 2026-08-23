@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Set Icons in UWP Menu control | Syncfusion®
-description: Learn here all about Set Icons support in Syncfusion® UWP Menu (SfMenu) control and more.
+title: Set Icons in UWP Menu | Syncfusion®
+description: Display custom icons in menu items using the Icon property to enhance navigation and visual appearance in the UWP Menu control.
 platform: UWP
 control: SfMenu
 documentation: ug

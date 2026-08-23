@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Input Gesture Text in UWP Menu control | Syncfusion®
-description: Learn here all about Input Gesture Text support in Syncfusion® UWP Menu (SfMenu) control and more.
+title: Input Gesture Text in UWP Menu | Syncfusion®
+description: Display keyboard shortcut combinations with menu items using the InputGestureText property in the UWP Menu control.
 platform: UWP
 control: SfMenu
 documentation: ug

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Expand Modes in UWP Menu control | Syncfusion®
-description: Learn here all about Expand Modes support in Syncfusion® UWP Menu (SfMenu) control and more.
+title: Expand Modes in UWP Menu | Syncfusion®
+description: Control submenu opening behavior using ExpandMode with click or mouse-over interactions in the UWP Menu control.
 platform: UWP
 control: SfMenu
 documentation: ug
