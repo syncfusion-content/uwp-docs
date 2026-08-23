@@ -2,7 +2,7 @@
 layout: post
 title: CheckBox and RadioButton in UWP Menu | Syncfusion®
 description: Enable checkable menu items with CheckBox or RadioButton icons using IsCheckable, CheckIconType, and grouping in the UWP Menu control.
-platform: UWP
+platform: uwp
 control: SfMenu
 documentation: ug
 --- 
