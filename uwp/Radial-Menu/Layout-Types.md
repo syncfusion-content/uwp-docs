@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Layout Types in UWP Radial Menu | Syncfusion®
 description: Configure default and custom layouts, control segment counts with VisibleSegmentsCount, and position menu items using SegmentIndex in the UWP Radial Menu control.

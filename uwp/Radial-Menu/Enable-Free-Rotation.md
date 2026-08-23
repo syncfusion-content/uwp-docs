@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Enable Free Rotation in UWP Radial Menu | Syncfusion®
 description: Control menu rotation behavior using the EnableFreeRotation property to enable or disable free rotation in the UWP Radial Menu control.

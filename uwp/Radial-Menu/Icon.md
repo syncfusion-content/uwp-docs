@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Icon in UWP Radial Menu | Syncfusion®
 description: Customize the center icon of the UWP Radial Menu control using the Icon property with images and custom visual elements.

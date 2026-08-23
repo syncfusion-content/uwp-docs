@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Populating Color Palette in UWP Radial Menu | Syncfusion®
 description: Create interactive color palettes using SfRadialColorItem and hierarchical color selections in the UWP Radial Menu control.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Appearance and Styling in UWP Radial Menu | Syncfusion®
 description: Customize the UWP Radial Menu appearance using radius, rim styling, navigation button styles, and submenu item customization.

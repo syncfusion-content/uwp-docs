@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Populating Items in UWP Radial Menu | Syncfusion®
 description: Populate the UWP Radial Menu control using ItemsSource binding, business objects, DisplayMemberPath, CommandPath, and ItemTemplate customization.
