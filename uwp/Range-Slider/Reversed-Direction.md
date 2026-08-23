@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Reversed Direction in UWP Range Slider | Syncfusion®
 description: Reverse the direction of increasing values in horizontal and vertical orientations using the IsDirectionReversed property in the UWP Range Slider.

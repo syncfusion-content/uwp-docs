@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Setting Range in UWP Range Slider | Syncfusion®
 description: Select value ranges using dual thumbs and configure range boundaries with ShowRange, RangeStart, and RangeEnd properties in the UWP Range Slider control.

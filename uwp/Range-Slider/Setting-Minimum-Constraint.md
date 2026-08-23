@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Setting Minimum Constraint in UWP Range Slider | Syncfusion®
 description: Configure the Minimum property to define the lower bound of the selectable range in the UWP Range Slider control.

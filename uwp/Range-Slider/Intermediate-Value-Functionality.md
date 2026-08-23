@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Intermediate Value in UWP Range Slider | Syncfusion®
 description: Access intermediate values during thumb interaction using IntermediateValue, IntermediateRangeStart, and IntermediateRangeEnd properties.

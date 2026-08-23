@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: How to get thumb drag notifications in UWP Range Slider | Syncfusion®
 description: Learn how to receive notifications when thumb dragging starts and completes in the Syncfusion® UWP Range Slider control using DragStarted and DragCompleted events.

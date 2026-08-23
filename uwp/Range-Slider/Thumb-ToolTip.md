@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Thumb ToolTip in UWP Range Slider | Syncfusion®
 description: Display current thumb values and customize tooltip precision and placement using ThumbToolTipPrecision and ThumbToolTipPlacement.

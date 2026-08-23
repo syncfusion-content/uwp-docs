@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Touch Support in UWP Range Slider | Syncfusion®
 description: Control thumb movement through tap interactions using the MoveToPoint property with tap position, small change, and large change modes.

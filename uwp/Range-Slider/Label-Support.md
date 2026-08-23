@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Label Support in UWP Range Slider | Syncfusion®
 description: Display custom and tick value labels, and customize their placement, orientation, and appearance in the UWP Range Slider (SfRangeSlider) control.

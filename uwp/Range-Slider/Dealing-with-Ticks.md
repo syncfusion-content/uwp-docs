@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Dealing with Ticks in UWP Range Slider | Syncfusion®
 description: Configure tick frequency, step intervals, snap behavior, tick placement, and tick appearance in the UWP Range Slider (SfRangeSlider) control.

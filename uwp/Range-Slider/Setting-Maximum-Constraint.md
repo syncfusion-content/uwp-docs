@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Setting Maximum Constraint in UWP Range Slider | Syncfusion®
 description: Configure the Maximum property to define the upper bound of the selectable range in the UWP Range Slider control.

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Gestures in UWP Range Slider | Syncfusion®
 description: Handle keyboard and mouse interactions to update values, move thumbs, and snap selections in the UWP Range Slider (SfRangeSlider) control.
