@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Value in UWP Radial Slider control | Syncfusion®
-description: Learn here all about Value support in Syncfusion® UWP Radial Slider (SfRadialSlider) control and more.
+title: Value in UWP Radial Slider | Syncfusion®
+description: Get or set the selected value and update it through pointer interaction in the UWP Radial Slider (SfRadialSlider) control.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug

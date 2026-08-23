@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Intermediate Value in UWP Radial Slider control | Syncfusion®
-description: Learn here all about Intermediate Value support in Syncfusion® UWP Radial Slider (SfRadialSlider) control and more.
+title: Intermediate Value in UWP Radial Slider | Syncfusion®
+description: Access intermediate values during pointer dragging using the IntermediateValue property when Value updates are restricted by SmallChange.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug
