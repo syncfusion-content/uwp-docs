@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Orientation in UWP Menu control | Syncfusion®
-description: Learn here all about Orientation support in Syncfusion® UWP Menu (SfMenu) control and more.
-platform: UWP
+title: Orientation in UWP Menu | Syncfusion®
+description: Arrange menu items horizontally or vertically using the Orientation property in the UWP Menu control.
+platform: uwp
 control: SfMenu
 documentation: ug
 --- 

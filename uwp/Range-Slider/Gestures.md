@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gestures in UWP Range Slider control | Syncfusion
-description: Learn here all about Gestures support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
+title: Gestures in UWP Range Slider | Syncfusion®
+description: Handle keyboard and mouse interactions to update values, move thumbs, and snap selections in the UWP Range Slider (SfRangeSlider) control.
 platform: uwp
 control: SfRange Slider 
 documentation: ug

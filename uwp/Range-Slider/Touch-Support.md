@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Touch Support in UWP Range Slider control | Syncfusion
-description: Learn here all about Touch Support support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
+title: Touch Support in UWP Range Slider | Syncfusion®
+description: Control thumb movement through tap interactions using the MoveToPoint property with tap position, small change, and large change modes.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
@@ -18,7 +18,7 @@ With the MoveToPoint property, you can move the thumb of the SfRangeSlider by ta
 
 
 
-### MoveToTapPosition
+## MoveToTapPosition
 
 To move the thumb of the SfRangeSlider to the tapped position, you must set the MoveToPoint property to MoveToTapPosition, and then tap or click on the track of the SfRangeSlider. This will move the thumb to the tapped position.
 
@@ -52,7 +52,7 @@ The following code example and screen shot illustrate this.
 
 ![RangeSlider MoveToPoint view](Touch-Support_images/Touch-Support_img1.png)
 
-### IncrementBySmallChange
+## IncrementBySmallChange
 
 To move the thumb of the RangeSlider based on the SmallChange value, you must set the MoveToPoint property to IncrementBySmallChange, and then tap or click on the track of the SfRangeSlider. This will increment the SfRangeSlider value by the SmallChange value.
 
@@ -86,7 +86,7 @@ The following code example and screen shot illustrates this.
 
 ![RangeSlider MoveToPoint IncrementBySmallChange view](Touch-Support_images/Touch-Support_img2.png)
 
-### IncrementByLargeChange
+## IncrementByLargeChange
 
 To move the thumb of the SfRangeSlider based on the LargeChange value, you must set the MoveToPoint property to IncrementByLargeChange, and then tap on the track of the SfRangeSlider. This will increment the SfRangeSlider value by the LargeChange value.
 
@@ -121,7 +121,7 @@ The following code example and screen shot illustrates this.
 
 ![RangeSlider MoveToPoint IncrementByLargeChange view](Touch-Support_images/Touch-Support_img3.png)
 
-### None
+## None
 
 To fix the thumb movement of the SfRangeSlider, you must set the MoveToPoint property to _None_. This will not allow thumb movement of the SfRangeSlider.
 

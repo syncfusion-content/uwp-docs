@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Overflow Popup in UWP Navigation Pane control | Syncfusion
-description: Learn here all about Overflow Popup support in Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
-platform: UWP
+title: Overflow Popup in UWP Navigation Pane | Syncfusion®
+description: Display overflowing GroupBar items in an overflow popup and select hidden navigation items when space is limited.
+platform: uwp
 control: SfGroupBar
 documentation: ug
 --- 

@@ -1,29 +1,28 @@
 ---
 layout: post
-title: Intermediate Value Functionlity in UWP Range Slider control | Syncfusion
-description: Learn here all about Intermediate Value Functionlity support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
+title: Intermediate Value in UWP Range Slider | Syncfusion®
+description: Access intermediate values during thumb interaction using IntermediateValue, IntermediateRangeStart, and IntermediateRangeEnd properties.
 platform: uwp
 control: SfRange Slider 
 documentation: ug
 ---
 
-# Intermediate Value Functionlity in UWP Range Slider (SfRangeSlider)
-
+# Intermediate Value in UWP Range Slider (SfRangeSlider) 
 It is possible to get the intermediate value, before the value is snapped to either the tick or step value while the user interacting with SfRangeSlider. 
 
-### IntermediateValue 
+## IntermediateValue 
 
 Gets the intermediate value. This works when ShowRange is false. 
 
 
 
-### IntermediateRangeStart  
+## IntermediateRangeStart  
 
 Gets the intermediate RangeStart value. 
 
 
 
-### IntermediateRangeEnd 
+## IntermediateRangeEnd 
 
 Gets the intermediate RangeEnd value.  
 

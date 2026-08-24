@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Expand and Collapse in UWP Navigation Pane control | Syncfusion
-description: Learn here all about Expand and Collapse support in Syncfusion UWP Navigation Pane (SfGroupBar) control and more.
-platform: UWP
+title: Expand and Collapse in UWP Navigation Pane | Syncfusion®
+description: Expand or collapse the UWP Navigation Pane using built-in controls or the IsCollapsed property for programmatic state management.
+platform: uwp
 control: SfGroupBar
 documentation: ug
 ---

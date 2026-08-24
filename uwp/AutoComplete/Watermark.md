@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark in UWP AutoComplete control | Syncfusion
-description: Learn here all about Watermark support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
+title: Watermark in UWP AutoComplete | Syncfusion®
+description: Display placeholder text, custom watermark content, or data-bound watermark templates in AutoComplete when the input field is empty.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The control will prompt the user with some information, when it is not in focus and contains an empty string.
 
-### Using the Watermark
+## Using the Watermark
 
 Watermark property allows the users to specify some information, when the text is empty. For illustration let us create a simple SfTextBoxExt, where the user is asked to enter names separated by a comma,
 
