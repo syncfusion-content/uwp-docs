@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Diacritic Sensitivity in UWP AutoComplete control | Syncfusion
-description: Learn here all about Diacritic Sensitivity support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
+title: Diacritic Sensitivity in UWP AutoComplete | Syncfusion®
+description: Enable or disable diacritic-sensitive matching for multilingual AutoComplete suggestions using the IgnoreDiacritic property.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug

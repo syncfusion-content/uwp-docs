@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Maximum DisplayItem with Expander in UWP AutoComplete control | Syncfusion
-description: Learn here all about Maximum DisplayItem with Expander support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
+title: Maximum DisplayItem with Expander in UWP AutoComplete | Syncfusion®
+description: Limit displayed suggestions and load additional results on demand using maximum suggestion and load-more options.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug

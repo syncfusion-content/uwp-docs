@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Prefix Characters Constraint in UWP AutoComplete control | Syncfusion
-description: Learn here all about Prefix Characters Constraint support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
+title: Prefix Characters Constraint in UWP AutoComplete | Syncfusion®
+description: Control when AutoComplete suggestions appear by setting the MinimumPrefixCharacters property to define the required input length before filtering.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
