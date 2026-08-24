@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Range in UWP Range Slider control | Syncfusion
-description: Learn here all about Setting Range support in Syncfusion UWP Range Slider (SfRangeSlider) control and more.
+title: Setting Range in UWP Range Slider | Syncfusion®
+description: Select value ranges using dual thumbs and configure range boundaries with ShowRange, RangeStart, and RangeEnd properties in the UWP Range Slider control.
 platform: uwp
 control: SfRange Slider 
 documentation: ug

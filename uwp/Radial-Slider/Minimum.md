@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Minimum in UWP Radial Slider control | Syncfusion®
-description: Learn here all about Minimum support in Syncfusion® UWP Radial Slider (SfRadialSlider) control and more.
+title: Minimum in UWP Radial Slider | Syncfusion®
+description: Configure the Minimum property to define the lower bound of the selectable value range in the UWP Radial Slider (SfRadialSlider) control.
 platform: uwp
 control: SfRadial Slider 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with SuggestionBox in UWP AutoComplete control | Syncfusion
-description: Learn here all about Dealing with SuggestionBox support in Syncfusion UWP AutoComplete (SfTextBoxExt) control and more.
+title: Dealing with SuggestionBox in UWP AutoComplete | Syncfusion®
+description: Configure AutoComplete suggestion box placement, dropdown height, focus behavior, and popup visibility in SfTextBoxExt.
 platform: uwp
 control: SfTextBoxExt
 documentation: ug
