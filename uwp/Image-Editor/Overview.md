@@ -1,8 +1,8 @@
 ---
 layout: post
 title: About Syncfusion® UWP Image Editor Control | Syncfusion®
-description: Learn about introduction of Syncfusion® Essential Studio UWP Image Editor control and more details.
-platform: UWP
+description: Learn about the introduction of Syncfusion® Essential Studio UWP Image Editor control and more details.
+platform: uwp
 control: SfImageEditor
 documentation: ug
 ---

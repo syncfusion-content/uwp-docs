@@ -2,7 +2,7 @@
 layout: post
 title: Image Filter in UWP Image Editor | Syncfusion®
 description: Explore image filters in Syncfusion® UWP Image Editor control including blur, sharpen, hue, and saturation effects.
-platform: UWP
+platform: uwp
 control: ImageEditor
 documentation: ug
 ---
