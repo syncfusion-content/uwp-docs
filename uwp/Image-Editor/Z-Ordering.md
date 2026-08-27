@@ -3,7 +3,7 @@ layout: post
 title: Z-Ordering in UWP Image Editor | Syncfusion®
 description: Explore z-ordering and shape layering in Syncfusion® UWP Image Editor control with bring to front and send to back.
 platform: uwp
-control: ImageEditor
+control: SfImageEditor
 documentation: ug
 ---
 

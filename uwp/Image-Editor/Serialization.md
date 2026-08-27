@@ -2,8 +2,8 @@
 layout : post
 title: Serialization in UWP Image Editor | Syncfusion®
 description: Discover serialization and deserialization features in Syncfusion® UWP Image Editor for saving and loading edits.
-platform : UWP
-control : ImageEditor
+platform : uwp
+control : SfImageEditor
 documentation : ug
 ---
 
