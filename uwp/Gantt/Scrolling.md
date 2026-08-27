@@ -11,7 +11,7 @@ documentation: ug
 
 ## Scroll to visible region
 
-The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_BringTaskOnVerticalScroll) property in the SfGantt enables you to scroll to the visible task region when the Gantt chart is vertically scrolled.
+The [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_BringTaskOnVerticalScroll) property enables you to scroll to the visible task region when the Chart is vertically scrolled.
 
 The following code sample demonstrates how to enable the [`BringTaskOnVerticalScroll`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_BringTaskOnVerticalScroll) property.
 
@@ -42,9 +42,9 @@ this.Content = sfGantt;
 
 ## Scroll to particular region
 
-You can scroll the Gantt chart programmatically using the [`ScrollGanttTo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ScrollGanttTo_System_Nullable_System_DateTime__System_Nullable_System_Int32__) method. This method is only available from code-behind; it cannot be invoked from XAML.
+You can scroll the UWP Gantt Chart programmatically using the [`ScrollGanttTo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ScrollGanttTo_System_Nullable_System_DateTime__System_Nullable_System_Int32__) method. This method is only available from code-behind; it cannot be invoked from XAML.
 
-The following parameters allow users to scroll the Gantt chart programmatically:
+The following parameters allow users to scroll the UWP Gantt Chart programmatically:
 
 * `date` : Specifies date to scroll horizontally. Pass `null` to skip horizontal scrolling.
 * `index` : Specifies row index to scroll vertically. Pass `null` to skip vertical scrolling.

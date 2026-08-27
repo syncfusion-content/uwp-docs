@@ -11,7 +11,7 @@ documentation: ug
 
 The placeholder denotes a card's new position in the [`KanbanColumn`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanColumn.html). It will appear while dragging a card over the column.
 
-### Placeholder style
+## Placeholder style
 
 [`PlaceholderStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_PlaceholderStyle) property is used to customize the placeholder. The following properties are used to customize its appearance:
 

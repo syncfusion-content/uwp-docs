@@ -31,9 +31,9 @@ In the Add Reference window, browse and choose the reference assembly from the f
 
 Installed location\Syncfusion\Essential Studio\Installed version\Assemblies for Universal Windows\10.0\Syncfusion.SfKanban.UWP.dll
 
-## Create a simple Kanban
+## Create a simple UWP Kanban Board
 
-In this walkthrough, you will create a new application that contains the SfKanban which covers the following topics.
+In this walkthrough, you will create a new application that contains the UWP Kanban Board which covers the following topics.
 
 * Adding SfKanban 
 * Create data model
@@ -60,7 +60,7 @@ using Syncfusion.UI.Xaml.Kanban;
 
 {% endtabs %}
 
-3. Create an instance of SfKanban control.
+3. Create an instance of UWP Kanban Board control.
 
 {% tabs %}
 
@@ -95,7 +95,7 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 
 ### Create data model
 
-You need to create a collection of KanbanModel objects for populating SfKanban.
+You need to create a collection of KanbanModel objects for populating Kanban Board.
 
 {% highlight c# %}
    
@@ -217,7 +217,7 @@ SfKanban kanban = new SfKanban()
 
 By default, we need to define the columns manually by adding the KanbanColumn object to the [`Columns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection property in SfKanban.
 
-The `ItemsSource` which was bound to the Kanban will be added to the respective columns using the `ColumnMappingPath` property in SfKanban and the `Categories` property in KanbanColumn.
+The `ItemsSource` which was bound to the Kanban Board will be added to the respective columns using the `ColumnMappingPath` property in Kanban Board and the `Categories` property in KanbanColumn.
 
 We need to set the required property name to ColumnMappingPath which will be essential to add the data to the respective columns.
 

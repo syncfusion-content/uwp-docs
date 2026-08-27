@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP Gantt Chart
 
-This section explains how to create and configure a simple Gantt application.
+This section explains how to create and configure a simple UWP Gantt Chart application.
 
 ## Referencing Essential Studio components in your solution
 
@@ -31,7 +31,7 @@ In the Add Reference window, browse and choose the reference assembly from the f
 
 ![Adding UWP Gantt assembly reference in project](SfGantt_images/Gantt_dll_reference.jpeg)
 
-The following list of assemblies should be added as references to use the Gantt control in applications.
+The following list of assemblies should be added as references to use the UWP Gantt Chart control in applications.
 
 <table>
 <tr>
@@ -47,7 +47,7 @@ Description
 Syncfusion.SfGantt.UWP
 </td>
 <td>
-Contains classes that handles all the operations in Gantt.
+Contains classes that handles all the operations in UWP Gantt Chart.
 </td>
 </tr>
 <tr>
@@ -63,7 +63,7 @@ Dependent assembly for Syncfusion.SfGrid.UWP.
 Syncfusion.SfGrid.UWP
 </td>
 <td>
-Contains classes that handles all UI operations of tree grid view in the Gantt.
+Contains classes that handles all UI operations of tree grid view in the UWP Gantt Chart.
 </td>
 </tr>
 <tr>
@@ -92,7 +92,7 @@ Contains classes that handles tab control.
 </tr>
 </table>
 
-## Adding SfGantt manually
+## Adding UWP Gantt Chart manually
 
 1. After adding the required assembly references to the project as discussed in the previous section, add the “Syncfusion.UI.Xaml.Gantt” namespace to the application as shown in the following code sample.
 
@@ -112,7 +112,7 @@ using Syncfusion.UI.Xaml.Gantt;
 
 {% endtabs %}
 
-2. Instantiate the Gantt as shown in the following code sample.
+2. Instantiate the UWP Gantt Chart as shown in the following code sample.
 
 {% tabs %}
 
@@ -130,9 +130,9 @@ SfGantt sfGantt = new SfGantt();
 
 {% endtabs %}
 
-## Adding SfGantt from toolbox
+## Adding UWP Gantt Chart from toolbox
 
-Drag the SfGantt control from the toolbox to your application.
+Drag the UWP Gantt Chart control from the toolbox to your application.
 
 ![Loading UWP Gantt control to toolbox page](SfGantt_images/Tool_Box.jpeg)
 
@@ -144,7 +144,7 @@ Now, the “Syncfusion Controls for UWP XAML” reference will be added to the a
 
 ## Creating data model
 
-Create a collection of TaskDetails objects to populate a task in SfGantt as shown in the following code sample.
+Create a collection of TaskDetails objects to populate a task as shown in the following code sample.
 
 {% highlight C# %}
 
@@ -282,7 +282,7 @@ public class ProjectTrackerViewModel
 
 ## Binding data
 
-To bind the data source of the SfGantt, set the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ItemsSource) property as shown in the following code sample.
+To bind the data source, set the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.UWP Gantt Chart.SfUWP Gantt Chart.html#Syncfusion_UI_Xaml_UWP Gantt Chart_SfUWP Gantt Chart_ItemsSource) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -354,7 +354,7 @@ this.Content = sfGantt;
 
 Sorting can be enabled using the [`AllowSorting`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_AllowSorting) property. The sorting functionality is used to arrange the tasks in ascending or descending order based on a column.
 
-The following code sample demonstrates how to enable sorting in the Gantt control.
+The following code sample demonstrates how to enable sorting in the UWP Gantt Chart.
 
 {% tabs %}
 
@@ -391,7 +391,7 @@ this.Content = sfGantt;
 
 Editing can be enabled using the [`AllowEditing`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_AllowEditing) property. You can edit cells and drag or resize the task bar or progress bar in chart view. The drag-and-drop functionality establishes the relationship between two tasks.
 
-The following code sample demonstrates how to enable editing in the Gantt control.
+The following code sample demonstrates how to enable editing in the UWP Gantt Chart.
 
 {% tabs %}
 
@@ -421,7 +421,7 @@ N> Editing is not supported on Windows Phone devices.
 
 ## Task relationships
 
-You can visualize the relationship between two tasks in the Gantt. These relationships are categorized into four types based on the start and finish dates of the tasks.
+You can visualize the relationship between two tasks. These relationships are categorized into four types based on the start and finish dates of the tasks.
 
 * Start to Start(SS): You cannot start a task until the other task also starts.
 * Start to Finish(SF): You cannot finish a task until the other task finishes.
@@ -470,7 +470,7 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 ### Predecessor offset 
 
-In Gantt, the predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskRelationship.html#Syncfusion_UI_Xaml_Gantt_TaskRelationship_Offset) can be defined with the day duration unit.
+The predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.UWP Gantt Chart.TaskRelationship.html#Syncfusion_UI_Xaml_UWP Gantt Chart_TaskRelationship_Offset) can be defined with the day duration unit.
 
 The following code sample demonstrates how to define offset time to the predecessor.
 
@@ -506,9 +506,9 @@ ImplementationModule1Child[4].Predecessors.Add(new TaskRelationship
 
 ## Resources
 
-In the Gantt control, you can display and assign the resource for every task.
+In the UWP Gantt Chart, you can display and assign the resource for every task.
 
-1. Create a resource collection to be displayed in Gantt.
+1. Create a resource collection to be displayed in UWP Gantt Chart.
 
 {% highlight C# %}
 
@@ -588,7 +588,7 @@ public ObservableCollection<TaskDetail> GetData()
 
 ## Non-working days
 
-This functionality is used to highlight and customize the weekends in the Gantt control. By default, Saturday and Sunday are considered as weekends.
+This functionality is used to highlight and customize the weekends. By default, Saturday and Sunday are considered as weekends.
 
 * [`ShowNonWorkingDays`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ShowNonWorkingDays): Enables or disables the non-working days.
 * [`NonWorkingDays`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_NonWorkingDays): Customizes the weekends.

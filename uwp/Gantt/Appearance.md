@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in UWP Gantt Chart
 
-The Gantt control provides options to customize the look and feel of the task visual in the Gantt chart. 
+The control provides options to customize the look and feel of the task visual.
 
 **Visual customization**
 The colors of parent taskbar, taskbar, milestone, and progress bar can be customized using the following properties:
