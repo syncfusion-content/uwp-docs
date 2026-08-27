@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with UWP SfKanban | Syncfusion
-description: Learn how to get started with the Syncfusion UWP SfKanban control. Explore setup, features, examples, and customization options.
+title: Getting Started with UWP Kanban Board | Syncfusion
+description: Learn how to get started with the Syncfusion UWP Kanban Board control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
-# Getting Started with UWP SfKanban
+# Getting Started with UWP Kanban Board
 
-The following section provides an assistance to create a simple Kanban application and to configure it. 
+The following section provides an assistance to create a simple UWP Kanban Board application and to configure it. 
 
 ## Referencing Essential Studio Components in your Solution
 
@@ -80,7 +80,7 @@ SfKanban kanban = new SfKanban();
 
 ### Adding SfKanban from toolbox
 
-Drag and drop the Kanban control from the toolbox to your application.
+Drag and drop the UWP Kanban Board control from the toolbox to your application.
 
 ![Adding SfKanban from toolbox](SfKanban_images/new_kanban_img3.jpeg)
 
@@ -187,7 +187,7 @@ You need to create a collection of KanbanModel objects for populating SfKanban.
 
 ### Binding data
 
-In order to bind the data source of the SfKanban, set `ItemsSource` property as shown below.
+In order to bind the data source of the UWP Kanban Board, set `ItemsSource` property as shown below.
 
 {% tabs %}
 

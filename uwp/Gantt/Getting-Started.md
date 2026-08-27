@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP SfGantt | Syncfusion
-description: Learn how to get started with the Syncfusion UWP SfGantt control. Explore setup, features, examples, and customization options.
+title: Getting Started with UWP Gantt Chart | Syncfusion
+description: Learn how to get started with the Syncfusion UWP Gantt Chart control. Explore setup, features, examples, and customization options.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Getting Started with UWP SfGantt
+# Getting Started with UWP Gantt Chart
 
 This section explains how to create and configure a simple Gantt application.
 

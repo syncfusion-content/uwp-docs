@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in UWP SfGantt | Syncfusion
-description: Learn about Localization support in Syncfusion UWP SfGantt using culture-specific resources and localization settings.
+title: Localization in UWP Gantt Chart | Syncfusion
+description: Learn about Localization support in Syncfusion UWP Gantt Chart using culture-specific resources and localization settings.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Localization in UWP SfGantt
+# Localization in UWP Gantt Chart
 
-Localization is the process of translating the application resources into different languages for specific cultures. You can localize the SfGantt by adding a resource file. The application culture can be changed by setting the `PrimaryLanguageOverride` in the MainPage() constructor.
+Localization is the process of translating the application resources into different languages for specific cultures. You can localize the UWP Gantt Chart by adding a resource file. The application culture can be changed by setting the `PrimaryLanguageOverride` in the MainPage() constructor.
 
 The following code sample demonstrates how to configure the application culture to French language.
 
@@ -23,7 +23,7 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}
 
-To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, use the following steps:
+To localize the UWP Gantt Chart based on `PrimaryLanguageOverride` using resource files, use the following steps:
 
 1. Right-click the project, click **Add**, click **New Folder**, and then name the folder **Resources**.
 2. Right-click the **Resources** folder, click **Add**, click **New Folder**, and then name the folder **[culture name]**. The culture name indicates name of the language and country.

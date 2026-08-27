@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scrolling in UWP SfGantt | Syncfusion
-description: Learn about Scrolling support in Syncfusion UWP SfGantt using built-in scrolling features, including scrolling.
+title: Scrolling in UWP Gantt Chart | Syncfusion
+description: Learn about Scrolling support in Syncfusion UWP Gantt Chart using built-in scrolling features, including scrolling.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Scrolling in UWP SfGantt
+# Scrolling in UWP Gantt Chart
 
 ## Scroll to visible region
 

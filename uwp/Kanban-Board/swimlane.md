@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Swimlane in UWP SfKanban | Syncfusion
-description: Learn about Swimlane support in Syncfusion UWP SfKanban using swimlane support and header customization.
+title: Swimlane in UWP Kanban Board | Syncfusion
+description: Learn about Swimlane support in Syncfusion UWP Kanban Board using swimlane support and header customization.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
-# Swimlane in UWP SfKanban
+# Swimlane in UWP Kanban Board
 
 Swimlanes are horizontal categorizations that allow you to categorize your current workflow by different projects, teams, users, or other grouping criteria.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Timescale in UWP SfGantt | Syncfusion
-description: Learn about Timescale support in Syncfusion UWP SfGantt, including timescale tiers, intervals, label formats, cell sizing.
+title: Timescale in UWP Gantt Chart | Syncfusion
+description: Learn about Timescale support in Syncfusion UWP Gantt Chart, including timescale tiers, intervals, label formats, cell sizing.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Timescale in UWP SfGantt
+# Timescale in UWP Gantt Chart
 
 This section provides an overview on the features of timescale. The following properties are used for configuring the timescale in the [`TimescaleSettings`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TimescaleSettings.html) class:
 

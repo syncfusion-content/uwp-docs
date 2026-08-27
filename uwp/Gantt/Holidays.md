@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Holidays in UWP SfGantt | Syncfusion
-description: Learn about Holidays support in Syncfusion UWP SfGantt using GanttHoliday and the Holidays collection to visualize non-working days in the project timeline.
+title: Holidays in UWP Gantt Chart | Syncfusion
+description: Learn about Holidays support in Syncfusion UWP Gantt Chart using GanttHoliday and the Holidays collection to visualize non-working days in the project timeline.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Holidays in UWP SfGantt
+# Holidays in UWP Gantt Chart
 
 The holidays support is used to highlight the non-working days in the Gantt chart.
 
