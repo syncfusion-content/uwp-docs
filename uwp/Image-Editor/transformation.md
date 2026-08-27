@@ -33,7 +33,7 @@ N> Angle cannot be specified in code to alter the rotation angle of the image
 
 {% endhighlight %}
 
-![rotate](transformation_images/rotate.png)
+![rotate](transformation_images/rotate.jpg)
 
 
 ## Flip
@@ -55,4 +55,4 @@ N> By default, image flips horizontally.
 
 {% endhighlight %}
 
-![FlipImage](transformation_images/FlipImage.png)
+![FlipImage](transformation_images/FlipImage.jpg)

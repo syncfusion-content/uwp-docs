@@ -56,4 +56,4 @@ The `Redo` method is used to redo the changes reverted in the undo operation.
 
 {% endhighlight %}
 
-![UndoRedo](undoRedo_images/UndoRedo.png)
+![UndoRedo](undoRedo_images/UndoRedo.jpg)
