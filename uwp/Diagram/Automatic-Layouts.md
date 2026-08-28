@@ -9,7 +9,7 @@ documentation: ug
 
 # Automatic Layouts in UWP SfDiagram
 
-SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
+UWP SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 
 * Organization Chart
 * Directed Tree Layout
@@ -152,7 +152,7 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 ## Get Layout Info
 
-User can change ChartType and Orientation by using GetLayoutInfo event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated. Default ChartType us Alternate and default orientation is Vertical. The following code example illustrates how to register an event and how to change ChartType and orientation.
+User can change ChartType and Orientation by using GetLayoutInfo event of the UWP SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated. Default ChartType us Alternate and default orientation is Vertical. The following code example illustrates how to register an event and how to change ChartType and orientation.
 
 **Event Arguments:**
 
