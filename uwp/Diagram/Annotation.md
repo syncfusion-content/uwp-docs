@@ -40,7 +40,7 @@ NodeViewModel node = new NodeViewModel()
 	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
-//Adds Nodes to the SfDiagram
+//Adds Nodes to the UWP SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -71,7 +71,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 	},
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 };
-//Adds Connectors to the SfDiagram
+//Adds Connectors to the UWP SfDiagram
 lines.Add(connector);
 diagram.Connectors = lines;   
 
@@ -140,7 +140,7 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Nodes to the SfDiagram
+//Adds Nodes to the UWP SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -288,7 +288,7 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Nodes to the SfDiagram
+//Adds Nodes to the UWP SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -363,7 +363,7 @@ NodeViewModel node1 = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Nodes to the SfDiagram
+//Adds Nodes to the UWP SfDiagram
 nodes.Add(node);
 nodes.Add(node1);
 diagram.Nodes = nodes;
@@ -515,7 +515,7 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Node to the SfDiagram
+//Adds Node to the UWP SfDiagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 

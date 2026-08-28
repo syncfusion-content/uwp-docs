@@ -53,7 +53,7 @@ GroupViewModel group = new GroupViewModel()
 	},
 };
 
-//Adds the Groups to the SfDiagram
+//Adds the Groups to the UWP SfDiagram
 groups.Add(group);
 diagram.Groups = groups;
 

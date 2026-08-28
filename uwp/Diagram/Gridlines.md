@@ -207,7 +207,7 @@ The following code illustrates how to enable/disable the smart guide.
 
 {% highlight c# %}
 
-//Enables or disables the default behaviors of the Snapping in SfDiagram.
+//Enables or disables the default behaviors of the Snapping in UWP SfDiagram.
 diagram.SnapSettings.SnapConstraints = SnapConstraints.All;
 
 //Disables the default behaviors snapping Nodes/Connectors to objects.
