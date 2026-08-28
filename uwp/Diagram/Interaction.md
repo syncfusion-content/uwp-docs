@@ -74,7 +74,7 @@ Selected objects can be deleted by <kdb> Delete </kdb> and In-built Delete comma
 
 * `ItemDeletingEvent` will notify you with the item , option to cancel the deleting operation of item. To explore about arguments , please refer to [DiagramPreviewEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Diagram.DiagramPreviewEventArgs.html)   
 
-### Selection Indicator Style
+## Selection Indicator Style
 
 Multiple Selection will show the preview for the selected Items. We have provided customization option for the appearance of the Preview.
 
@@ -161,7 +161,7 @@ Node node1 = new Node()
        Constraints=NodeConstraints.Default | NodeConstraints.AllowDrop
 };
 
-//Adds the Node to the SfDiagram
+//Adds the Node to the UWP SfDiagram
 nodes.Add(node1);
 diagram.Nodes = nodes;
 

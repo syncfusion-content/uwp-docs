@@ -129,10 +129,10 @@ Find the [Overview control sample](https://github.com/SyncfusionExamples/UWP-Dia
 
 {% seealso %}
 
-[How to virtualize the diagram control](/uwp/diagram/virtualization)
+[How to virtualize the UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/virtualization)
 
-[How to serialize the diagram control](/uwp/diagram/serialization)
+[How to serialize the UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/serialization)
 
-[How to localize the diagram control](/uwp/diagram/localization)
+[How to localize the UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/localization)
 
 {% endseealso %}

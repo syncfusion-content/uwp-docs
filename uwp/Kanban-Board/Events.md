@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in UWP SfKanban | Syncfusion
-description: Learn about Events support in Syncfusion SfKanban, including card interactions, selection changes, and drag-and-drop operations.
+title: Events in UWP Kanban Board | Syncfusion
+description: Learn about Events support in Syncfusion UWP Kanban Board, including card interactions, selection changes, and drag-and-drop operations.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 
-# Events in UWP SfKanban
+# Events in UWP Kanban Board
 
 ## CardTapped
 
