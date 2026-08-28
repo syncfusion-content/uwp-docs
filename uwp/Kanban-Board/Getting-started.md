@@ -95,7 +95,7 @@ Now the “Syncfusion Controls for UWP XAML” reference is added to the applica
 
 ### Create data model
 
-You need to create a collection of KanbanModel objects for populating Kanban Board.
+You need to create a collection of KanbanModel objects for populating UWP Kanban Board.
 
 {% highlight c# %}
    
@@ -217,7 +217,7 @@ SfKanban kanban = new SfKanban()
 
 By default, we need to define the columns manually by adding the KanbanColumn object to the [`Columns`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Columns) collection property in SfKanban.
 
-The `ItemsSource` which was bound to the Kanban Board will be added to the respective columns using the `ColumnMappingPath` property in Kanban Board and the `Categories` property in KanbanColumn.
+The `ItemsSource` which was bound to the UWP Kanban Board will be added to the respective columns using the `ColumnMappingPath` property in UWP Kanban Board and the `Categories` property in KanbanColumn.
 
 We need to set the required property name to ColumnMappingPath which will be essential to add the data to the respective columns.
 

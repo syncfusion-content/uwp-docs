@@ -38,8 +38,8 @@ For example, you will have to give name as **fr-FR** for French culture.
 
 5. Add the Name/Value pair in Resource Designer of **Syncfusion.SfGantt.UWP.Resources.resw** file, and change the corresponding value to the corresponding culture.
 
-You can get the localization keys from the default resource [Syncfusion.UWP Gantt Chart.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.UWP Gantt Chart.UWP.Resources845531575.zip).
+You can get the localization keys from the default resource [Syncfusion.SfGantt.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGantt.UWP.Resources845531575.zip).
 
 ![FinalOutput](Localization_images/FinalOutput.png)
 
-You can download [the sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/UWP Gantt Chart_Localization1607055000.zip) for localization.
+You can download [the sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGantt_Localization1607055000.zip) for localization.

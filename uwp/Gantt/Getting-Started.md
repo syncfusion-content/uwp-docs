@@ -282,7 +282,7 @@ public class ProjectTrackerViewModel
 
 ## Binding data
 
-To bind the data source, set the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.UWP Gantt Chart.SfUWP Gantt Chart.html#Syncfusion_UI_Xaml_UWP Gantt Chart_SfUWP Gantt Chart_ItemsSource) property as shown in the following code sample.
+To bind the data source, set the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ItemsSource) property as shown in the following code sample.
 
 {% tabs %}
 
@@ -470,7 +470,7 @@ Planning[3].Predecessors.Add(new TaskRelationship()
 
 ### Predecessor offset 
 
-The predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.UWP Gantt Chart.TaskRelationship.html#Syncfusion_UI_Xaml_UWP Gantt Chart_TaskRelationship_Offset) can be defined with the day duration unit.
+The predecessor [`Offset`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.TaskRelationship.html#Syncfusion_UI_Xaml_Gantt_TaskRelationship_Offset) can be defined with the day duration unit.
 
 The following code sample demonstrates how to define offset time to the predecessor.
 

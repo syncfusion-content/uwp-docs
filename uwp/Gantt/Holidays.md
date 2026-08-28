@@ -11,7 +11,7 @@ documentation: ug
 
 The holidays support is used to highlight the non-working days in the UWP Gantt Chart.
 
-The holidays can be specified in a task using the [`Holidays`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.UWP Gantt Chart.html#Syncfusion_UI_Xaml_Gantt_UWP Gantt Chart_Holidays) property, which holds a collection of [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.UWP Gantt Chart.html#Syncfusion_UI_Xaml_Gantt_UWP Gantt Chart_Holidays).
+The holidays can be specified in a task using the [`Holidays`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_Holidays) property, which holds a collection of [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_Holidays).
 
 The following properties in the [`GanttHoliday`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_Holidays) are used to define the holidays:
 
