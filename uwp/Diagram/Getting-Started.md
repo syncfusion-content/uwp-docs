@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP SfDiagram
 
-The following section helps you to build your application with SfDiagram. 
+The following section helps you to build your application with UWP SfDiagram. 
 
 ## Creating the project
 
@@ -19,7 +19,7 @@ Create a new UWP project using Visual Studio. For more [details](https://learn.m
 
 ### Adding control via Designer
 
-SfDiagram control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+UWP SfDiagram control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![Designer](Getting-Started_images\Diagram.png)
 
@@ -28,7 +28,7 @@ SfDiagram control can be added to the application by dragging it from Toolbox an
 In order to add control manually in XAML, follow the steps below:
 
 1. Add the below required assembly reference to the project, Syncfusion.SfDiagram.UWP .
-2. Import SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
+2. Import UWP SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
 3. Declare SfDiagram control in XAML page.
 
 N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your UWP application to use our components.
@@ -72,7 +72,7 @@ namespace Flow_Diagram
         public MainPage()
         {
             this.InitializeComponent();
-            // Initializes the SfDiagram
+            // Initializes the UWP SfDiagram
             SfDiagram diagram=new SfDiagram();
             Root_Grid.Children.Add(diagram);
         }
@@ -86,7 +86,7 @@ Let us create a simple flow chart using SfDiagram.
 
 ### Initialize the Diagram
 
-The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfDiagram in XAML as shown in the following code example.
+The UWP SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize UWP SfDiagram in XAML as shown in the following code example.
 
 {% tabs %}
 {% highlight xaml %}
@@ -94,7 +94,7 @@ The SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize SfD
   <syncDiagram:SfDiagram x:Name="diagram"/>
 {% endhighlight %}
 {% highlight c# %}
-            // Initializes the SfDiagram in C#
+            // Initializes the UWP SfDiagram in C#
             SfDiagram diagram = new SfDiagram();
 {% endhighlight %} 
 {% endtabs %}

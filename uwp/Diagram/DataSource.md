@@ -75,7 +75,7 @@ public class Employees : ObservableCollection<Employee>
 {
 }
 
-// Initialize DataSourceSettings for SfDiagram
+// Initialize DataSourceSettings for UWP SfDiagram
 Diagram.DataSourceSettings = new DataSourceSettings()
 {
     Id = "EmployeeId",
@@ -84,7 +84,7 @@ Diagram.DataSourceSettings = new DataSourceSettings()
     DataSource = GetData(),
 };
 
-// Initialize layout manager for SfDiagram
+// Initialize layout manager for UWP SfDiagram
 Diagram.LayoutManager = new Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager()
 {
     Layout = new DirectedTreeLayout()

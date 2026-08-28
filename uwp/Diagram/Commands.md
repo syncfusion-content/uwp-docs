@@ -347,7 +347,7 @@ graphinfo.Commands.Zoom.Execute(new ZoomPositionParameter()
 
 {% endhighlight %}
 
-### Reset Commands
+## Reset Commands
 Reset commands are used to reset horizontal Offset, vertical Offset, and zoom level of the Diagram.
 To execute a reset command, a parameter of type IReset has to be passed.
 | Property | Description | Value |
@@ -539,7 +539,7 @@ private async void OnSaveCommand(Object obj)
   }
   {% endhighlight %}
   
-#### Map and user defined command with key gesture:
+### Map and user defined command with key gesture:
 
 Add new Commands to CommandManager - Ctrl + S -> Save
             
