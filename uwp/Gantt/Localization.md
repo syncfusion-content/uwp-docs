@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in UWP SfGantt | Syncfusion
-description: Learn about Localization support in Syncfusion UWP SfGantt using culture-specific resources and localization settings.
+title: Localization in UWP Gantt Chart | Syncfusion
+description: Learn about Localization support in Syncfusion UWP Gantt Chart using culture-specific resources and localization settings.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Localization in UWP SfGantt
+# Localization in UWP Gantt Chart
 
-Localization is the process of translating the application resources into different languages for specific cultures. You can localize the SfGantt by adding a resource file. The application culture can be changed by setting the `PrimaryLanguageOverride` in the MainPage() constructor.
+Localization is the process of translating the application resources into different languages for specific cultures. You can localize the UWP Gantt Chart by adding a resource file. The application culture can be changed by setting the `PrimaryLanguageOverride` in the MainPage() constructor.
 
 The following code sample demonstrates how to configure the application culture to French language.
 
@@ -23,7 +23,7 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}
 
-To localize the SfGantt based on `PrimaryLanguageOverride` using resource files, use the following steps:
+To localize the UWP Gantt Chart based on `PrimaryLanguageOverride` using resource files, use the following steps:
 
 1. Right-click the project, click **Add**, click **New Folder**, and then name the folder **Resources**.
 2. Right-click the **Resources** folder, click **Add**, click **New Folder**, and then name the folder **[culture name]**. The culture name indicates name of the language and country.
@@ -38,8 +38,8 @@ For example, you will have to give name as **fr-FR** for French culture.
 
 5. Add the Name/Value pair in Resource Designer of **Syncfusion.SfGantt.UWP.Resources.resw** file, and change the corresponding value to the corresponding culture.
 
-You can get the SfGantt’s keys from the default resource [Syncfusion.SfGantt.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGantt.UWP.Resources845531575.zip).
+You can get the localization keys from the default resource [Syncfusion.SfGantt.UWP.Resources.resw](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGantt.UWP.Resources845531575.zip).
 
 ![FinalOutput](Localization_images/FinalOutput.png)
 
-You can download [the sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGantt_Localization1607055000.zip) for localizing the Gantt.
+You can download [the sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGantt_Localization1607055000.zip) for localization.

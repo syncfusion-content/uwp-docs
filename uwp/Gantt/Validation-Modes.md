@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Validation Modes in UWP SfGantt | Syncfusion
-description: Learn about Validation Modes support in Syncfusion UWP SfGantt using Manual and Auto validation modes to manage task dates, dependencies, and non-working days.
+title: Validation Modes in UWP Gantt Chart | Syncfusion
+description: Learn about Validation Modes in Syncfusion UWP Gantt Chart, including Manual and Auto modes for managing task dates, dependencies, and non-working days.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Validation Modes in UWP SfGantt
+# Validation Modes in UWP Gantt Chart
 
-The Gantt control provides support to control task scheduling. The start and finish dates of a task can be validated automatically or manually. The following validation modes can be set to the [`ValidationMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ValidationMode) property in SfGantt:
+The UWP Gantt Chart provides support to control task scheduling. The start and finish dates of a task can be validated automatically or manually. The following validation modes can be set to the [`ValidationMode`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gantt.SfGantt.html#Syncfusion_UI_Xaml_Gantt_SfGantt_ValidationMode) property:
 
 * `Manual`: Allows users to control task scheduling; the start and finish dates are preserved as set by the user and are not recalculated when predecessors or non-working days change. The user is responsible for tracking the schedule of the task.
 * `Auto`: Calculates the start and finish dates of a task based on its task dependencies (predecessors) and non-working days. When a predecessor moves or its progress changes, dependent tasks are rescheduled automatically.
