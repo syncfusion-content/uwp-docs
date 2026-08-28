@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Text in UWP Image Editor control | Syncfusion
-description: Learn here all about Text support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Text in UWP Image Editor | Syncfusion®
+description: Learn about adding and editing text annotations in Syncfusion® UWP Image Editor control with styling options.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Text in UWP Image Editor (SfImageEditor)
+# Text in UWP Image Editor
 
 To add the desired text elements over the image, use the following two ways:
 
