@@ -10,21 +10,21 @@ documentation: ug
 
 ## Visual Structure 
 
-The SfDateTimeRangeNavigator is composed of various elements such as higher level bar, lower level bar, content, and resizable scrollbar.
+The UWP Range Selector is composed of various elements such as higher level bar, lower level bar, content, and resizable scrollbar.
 
 * Higher level bar - Contains timespan format one level higher than the lower level bar DateTime values. E.g. If the higher level bar contains year format (yyyy), then the lower level bar contains month format (MMM).
 * Lower level bar - Contains timespan format one level lower than the higher level bar DateTime values. E.g. If the lower level bar contains month format (MMM), then the higher level bar contains year format (yyyy).
 * Content - Can hold any type of UI element inside the navigator.
 * Resizable scrollbar - Used to zoom and scroll the content and label bars.
 
-![Visual Structure of SfDateTimeRangeNavigator](Getting-Started_images/GettingStarted_img1.jpeg)
+![Visual Structure of UWP Range Selector](Getting-Started_images/GettingStarted_img1.jpeg)
 
 
 These steps are explained below for both XAML and code behind.
 
-## Create a SfDateTimeRangeNavigator from XAML
+## Create a UWP Range Selector from XAML
 
-The following steps explain how to create a SfDateTimeRangeNavigator in XAML.
+The following steps explain how to create a UWP Range Selector in XAML.
 
 ### Adding the assembly reference
 
@@ -39,13 +39,13 @@ Add the following namespace in your XAML window.
 xmlns:syncfusion="using:Syncfusion.UI.Xaml.Charts"
 {% endhighlight %}
 
-### Add SfDateTimeRangeNavigator from Toolbox
+### Add UWP Range Selector from Toolbox
 
 Drag and drop the SfDateTimeRangeNavigator control from the Toolbox to your application.
 
 ![Visual Studio Toolbox](Getting-Started_images/GettingStarted_img4.jpeg)
 
-### Initializing SfDateTimeRangeNavigator
+### Initializing UWP Range Selector
 
 {% highlight xaml %}
 
@@ -100,9 +100,9 @@ public class ViewModel
 
 {% endhighlight %}
 
-### Setting ItemsSource for SfDateTimeRangeNavigator
+### Setting ItemsSource for UWP Range Selector
 
-Since initializing will produce an empty SfDateTimeRangeNavigator, we need to set the ItemsSource and XBindingPath for the SfDateTimeRangeNavigator. The ItemsSource must implement the IEnumerable interface.
+Since initializing will produce an empty UWP Range Selector, we need to set the ItemsSource and XBindingPath for the UWP Range Selector. The ItemsSource must implement the IEnumerable interface.
 
 Defining the ItemsSource for Range Navigator in XAML.
 
@@ -128,7 +128,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 ### Adding content
 
-Content which needs to be displayed inside a SfDateTimeRangeNavigator can be of any control. Here SfLineSparkline control has been added.
+Content which needs to be displayed inside a UWP Range Selector can be of any control. Here SfLineSparkline control has been added.
 
 The following properties are used to add content.
 
@@ -176,11 +176,11 @@ rangeNavigator.Content = sparkline;
 
 The following output is displayed as a result of the above code example.
 
-![Adding content for SfDateTimeRangeNavigator in UWP](Getting-Started_images/GettingStarted_img6.jpeg)
+![Adding content for UWP Range Selector](Getting-Started_images/GettingStarted_img6.jpeg)
 
-## Create a SfDateTimeRangeNavigator from code behind
+## Create a UWP Range Selector from code behind
 
-The following steps explain how to create a SfDateTimeRangeNavigator from code behind.
+The following steps explain how to create a UWP Range Selector from code behind.
 
 ### Adding the assembly reference
 
@@ -194,7 +194,7 @@ using Syncfusion.UI.Xaml.Charts;
 
 {% endhighlight %}
 
-### Initializing SfDateTimeRangeNavigator
+### Initializing UWP Range Selector
 
 {% highlight c# %}
 
