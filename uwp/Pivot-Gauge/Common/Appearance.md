@@ -39,7 +39,7 @@ PivotGauge1.ColumnsCount = 2
 
 {% endtabs %}
 
-![UWP SfPivotGauge Layout Customization](Appearance_images/Layout-customization.png)
+![UWP Pivot Gauge Layout Customization](Appearance_images/Layout-customization.png)
 
 ## Gauge radius
 
@@ -69,7 +69,7 @@ PivotGauge1.Radius = 75
 
 {% endtabs %}
 
-![UWP SfPivotGauge Gauge Radius](Appearance_images/Gauge-radius.png)
+![UWP Pivot-Gauge Gauge Radius](Appearance_images/Gauge-radius.png)
 
 ## Gauge header
 
@@ -99,7 +99,7 @@ PivotGauge1.ShowGaugeHeaders = False
 
 {% endtabs %}
 
-![UWP SfPivotGauge Gauge Header](Appearance_images/Gauge-header.png)
+![UWP Pivot-Gauge Gauge Header](Appearance_images/Gauge-header.png)
 
 ## Gauge label
 
@@ -129,7 +129,7 @@ PivotGauge1.ShowGaugeLabels = False
 
 {% endtabs %}
 
-![UWP SfPivotGauge Gauge Label](Appearance_images/Gauge-label.png)
+![UWP Pivot-Gauge Gauge Label](Appearance_images/Gauge-label.png)
 
 ## Gauge factor
 
@@ -159,4 +159,4 @@ PivotGauge1.ShowGaugeFactors = False
 
 {% endtabs %}
 
-![UWP SfPivotGauge Gauge Factor](Appearance_images/Gauge-factor.png)
+![UWP Pivot-Gauge Gauge Factor](Appearance_images/Gauge-factor.png)

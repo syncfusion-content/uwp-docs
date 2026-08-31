@@ -335,7 +335,7 @@ Relational data can be bound to SfPivotChart control by using the [`ItemSource`]
 
 **Through XAML**
 
-The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivotChart control with the help of `DataContext`. In addition to this, the [`PivotAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotAxis), [`PivotLegend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotLegend), and [`PivotCalculations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotCalculations) should be assigned to the SfPivotChart for populating data in the specific series.
+The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivotChart control with the help of `DataContext`. In addition to this, the [`PivotAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotAxis), [`PivotLegend`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotLegend), and [`PivotCalculations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_PivotCalculations) should be assigned to the UWP Pivot Chart for populating data in the specific series.
 
 Refer to the following code snippet.
 

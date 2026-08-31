@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation in UWP Pivot Chart
 
-The SfPivotChart allows you to animate the chart series when loading and changing the data source. An animation in the chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_EnableAnimation) property to true and defining the corresponding animation speed with the [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_AnimationDuration) property.
+The UWP Pivot Chart allows you to animate the chart series when loading and changing the data source. An animation in the chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_EnableAnimation) property to true and defining the corresponding animation speed with the [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_AnimationDuration) property.
 
 The following chart types support animation:
 
@@ -26,7 +26,7 @@ The following chart types support animation:
 * Scatter
 * Pie
 
-You can use the following snippet to enable animation in the SfPivotChart.
+You can use the following snippet to enable animation in the UWP Pivot Chart.
 
 {% tabs %}
 

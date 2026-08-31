@@ -20,7 +20,7 @@ This section explains the steps required to populate the sunburst chart with dat
 
 N> This window differs for the Visual Basic project.
 
-## Adding SfSunburstChart from Toolbox
+## Adding UWP Sunburst from Toolbox
 
 Drag and drop the SfSunburstChart control from the Toolbox to your application,
 
@@ -28,7 +28,7 @@ Drag and drop the SfSunburstChart control from the Toolbox to your application,
 
 Now the Syncfusion.SfSunburstChart.UWP reference is added to the application references and the namespace code is generated in MainWindow.xaml as below.
 
-![Project Solution Window contains SfSunburstChart reference](Getting-Started_images/gettingstarted_uwp3.png)
+![Project Solution Window contains UWP Sunburst reference](Getting-Started_images/gettingstarted_uwp3.png)
 
 ![Getting-Started_images4](Getting-Started_images/gettingstarted_uwp4.png)
 
@@ -537,6 +537,6 @@ sunburst.DataLabelInfo = dataLabel;
 
 Following is the final output screenshot,
 
-![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted_uwp5.png)
+![UWP Sunburst with data label and legend](Getting-Started_images/gettingstarted_uwp5.png)
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/GettingStarted-UWP-SunburstChart).

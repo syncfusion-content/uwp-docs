@@ -24,11 +24,11 @@ documentation: ug
 
 ![Image to choose SyncfusionControls for UWP XAML](Getting-Started_images\Getting-Started_img1.png)
 
-## Add SfHeatMap from toolbox
+## Add UWP HeatMap Chart from toolbox
 
 Drag and drop the [SfHeatMap](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.HeatMap.SfHeatMap.html) control from the Toolbox to your application.
 
-![Image to drap and drop the SfHeatMap](Getting-Started_images\treemapdesigner.png)
+![Image to drap and drop the UWP HeatMap Chart](Getting-Started_images\treemapdesigner.png)
 
 ![Image to show the SyncfusionControls for UWP XAML reference is added to the application references](Getting-Started_images\addingreference.png)
 
@@ -129,7 +129,7 @@ Populate product information within a collection.
 {% endhighlight %}
 {% endtabs %}
 
-## Map data into SfHeatMap 
+## Map data into UWP HeatMap Chart 
 
 Now the data is ready, the next step is to configure the data source and map rows and columns for visualization.
 

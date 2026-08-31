@@ -28,7 +28,7 @@ Theming is the process of applying particular settings to visual elements of a c
 * VisualStudio2013
 * VisualStudio2015
 
-By using the [GaugeVisualStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_GaugeVisualStyle) property in the SfPivotGauge, you can set the visual style of the control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the SfPivotGauge.
+	By using the [GaugeVisualStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_GaugeVisualStyle) property in the UWP Pivot Gauge, you can set the visual style of the control. By default, the `Metro` theme is applied. The following code snippet shows how to change the visual style for the UWP Pivot Gauge.
 
 {% tabs %}
 
@@ -54,4 +54,4 @@ PivotGauge1.GaugeVisualStyle = PivotGaugeVisualStyle.Blend;
 
 {% endtabs %}
 
-![UWP SfPivotGauge Theming Blend](Theming_images/Theming-blend.png)
+![UWP Pivot Gauge Theming Blend](Theming_images/Theming-blend.png)

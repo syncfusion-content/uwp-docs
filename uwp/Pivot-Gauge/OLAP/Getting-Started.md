@@ -36,7 +36,7 @@ The SfPivotGauge control can be initialized and added to the application through
 
 Now, the SfPivotGauge control will be added to the designer as follows.
 
-![UWP SfPivotGauge Designer](Getting-Started_images/Designer.png)
+![UWP Pivot Gauge Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
@@ -221,7 +221,7 @@ End Namespace
 
 ## Adding service reference to project
 
-N> This section explains how to refer to the online service in the UWP application for binding the cube information in the SfPivotGauge. The service URL used here refers to the demo cube - "Adventure Works", mainly used for illustration purposes.
+N> This section explains how to refer to the online service in the UWP application for binding the cube information in the UWP Pivot Gauge. The service URL used here refers to the demo cube - "Adventure Works", mainly used for illustration purposes.
 To create your own WCF service, refer to the topic of [Creating WCF Service Application.](#creating-wcf-service-application).
 
 After initializing the SfPivotGauge control, right-click the project in the solution explorer and select **Add > Service Reference...**.
@@ -600,7 +600,7 @@ End Namespace
 
 Finally, run the application to generate the following output.
 
-![UWP SfPivotGauge OLAP Data](Getting-Started_images/PivotGauge.png)
+![UWP Pivot Gauge OLAP Data](Getting-Started_images/PivotGauge.png)
 
 ## Creating WCF service application
 

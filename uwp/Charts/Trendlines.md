@@ -434,7 +434,7 @@ chart.Series.Add(fastSeries);
 
 Chart supports forecasting for the trendline, which is used to display trends about the future and the past. 
 
-The following two types of forecasting available in SfChart:
+The following two types of forecasting available in UWP Charts:
 
 * Forward Forecasting
 * Backward Forecasting

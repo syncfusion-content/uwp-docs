@@ -9,7 +9,7 @@ documentation: ug
 
 # Watermark in UWP Pivot Chart
 
-The SfPivotChart supports watermark that is used to add text or images to the chart area. The major application of watermark is to define the copyright information of users it belongs to.
+The UWP Pivot Chart supports watermark that is used to add text or images to the chart area. The major application of watermark is to define the copyright information of users it belongs to.
 
 ## Text watermark
 
