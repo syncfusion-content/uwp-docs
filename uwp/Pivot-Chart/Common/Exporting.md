@@ -9,13 +9,13 @@ documentation: ug
 
 # Exporting in UWP Pivot Chart
 
-The SfPivotChart can be exported to an image, Microsoft Word, and PDF file formats. To perform exporting operation, refer to the following assembly in the application:
+The UWP Pivot Chart can be exported to an image, Microsoft Word, and PDF file formats. To perform exporting operation, refer to the following assembly in the application:
 
 * Syncfusion.SfPivotChartConverter.UWP
 
 ## Export to image
 
-By using the **SaveToImageAsync()** method, the SfPivotChart can be exported to an image with any of the following image formats:
+By using the **SaveToImageAsync()** method, the UWP Pivot Chart can be exported to an image with any of the following image formats:
 
 * .bmp
 * .gif
@@ -24,7 +24,7 @@ By using the **SaveToImageAsync()** method, the SfPivotChart can be exported to 
 * .jxr
 * .tiff
 
-The following code snippet shows how to export SfPivotChart to an image.
+The following code snippet shows how to export UWP Pivot Chart to an image.
 
 {% tabs %}
 
@@ -46,9 +46,9 @@ PivotChart1.SaveToImageAsync()
 
 ## Export to Word document
 
-To export the SfPivotChart contents to Word, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then, create an instance of [`ExportPivotChartToWord`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html) object to access the [`ExportToDocument`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html#Syncfusion_UI_Xaml_PivotChartConverter_ExportPivotChartToWord_ExportToDocument_System_String_) method. `FileSavePicker` can be used to save the exported file in the preferred location.
+To export the UWP Pivot Chart contents to Word, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then, create an instance of [`ExportPivotChartToWord`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html) object to access the [`ExportToDocument`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html#Syncfusion_UI_Xaml_PivotChartConverter_ExportPivotChartToWord_ExportToDocument_System_String_) method. `FileSavePicker` can be used to save the exported file in the preferred location.
 
-Refer to the following code snippet to export the SfPivotChart to Word document.
+Refer to the following code snippet to export the UWP Pivot Chart to Word document.
 
 {% tabs %}
   
@@ -76,9 +76,9 @@ export.ExportToDocument("Sample")
 
 ## Export to PDF document
 
-To export the SfPivotChart contents to PDF, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then, create an instance of [`ExportPivotChartToPdf`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf.html) object to access the [`ExportToDocument`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html#Syncfusion_UI_Xaml_PivotChartConverter_ExportPivotChartToWord_ExportToDocument_System_String_) method. The `FileSavePicker` can be used to save the exported file in the preferred location.
+To export the UWP Pivot Chart contents to PDF, include the namespace **Syncfusion.UI.Xaml.PivotChartConverter** in the code-behind file. Then, create an instance of [`ExportPivotChartToPdf`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToPdf.html) object to access the [`ExportToDocument`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChartConverter.ExportPivotChartToWord.html#Syncfusion_UI_Xaml_PivotChartConverter_ExportPivotChartToWord_ExportToDocument_System_String_) method. The `FileSavePicker` can be used to save the exported file in the preferred location.
 
-Refer to the following code snippet to export the SfPivotChart to PDF document.
+Refer to the following code snippet to export the UWP Pivot Chart to PDF document.
 
 {% tabs %}
 
@@ -104,4 +104,4 @@ export.ExportToDocument("Sample")
 
 ![relationalExportedPDF](Exporting_images/relationalExportedPDF.png)
 
-N> You can use a *Button* instance to the page and specify the required code snippet for exporting the SfPivotChart in the `Click` event handler method.
+N> You can use a *Button* instance to the page and specify the required code snippet for exporting the UWP Pivot Chart in the `Click` event handler method.

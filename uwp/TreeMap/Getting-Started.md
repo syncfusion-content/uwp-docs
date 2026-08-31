@@ -11,7 +11,7 @@ documentation: ug
 
 TreeMap is a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. TreeMap can also use color to represent any number of values, but it is often used to categorize the various boxes within the treemap.
 
-### Creating treemap for a windows store app
+## Creating treemap for a windows store app
 
 TreeMap is available in the following assembly and namespace.
 

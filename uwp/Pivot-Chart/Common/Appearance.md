@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in UWP Pivot Chart
 
-The SfPivotChart supports customizing the default appearance of the control. You can customize the default style of the control by modifying its properties as specified in the following code snippet.
+The UWP Pivot Chart supports customizing the default appearance of the control. You can customize the default style of the control by modifying its properties as specified in the following code snippet.
 
 {% tabs %}
 

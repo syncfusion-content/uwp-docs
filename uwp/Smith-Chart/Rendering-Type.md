@@ -9,7 +9,7 @@ documentation: ug
 
 # Rendering Type in UWP Smith Chart
 
-SfSmithChart plots the transmission line in two different ways by using the [`RenderingType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_RenderingType) property. The two ways are given below.
+UWP Smith Chart plots the transmission line in two different ways by using the [`RenderingType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.SfSmithChart.html#Syncfusion_UI_Xaml_SmithChart_SfSmithChart_RenderingType) property. The two ways are given below.
 
 ## Impedance
 

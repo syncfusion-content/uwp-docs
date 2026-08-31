@@ -9,7 +9,7 @@ documentation: ug
 
 # Key Features in UWP Bullet Graph
 
-**SfBulletGraph** is a composite UI element with the following sub-parts:
+**UWP Bullet Graph** is a composite UI element with the following sub-parts:
 
 * Ticks
 * Label
@@ -49,7 +49,7 @@ The Bullet Graph types can be differentiated by their orientation of the control
 
 **Easy to use**
 
-SfBulletGraph is available in the Visual Studio toolbox itself; you can easily drag and drop the control from the toolbox.
+UWP Bullet Graph is available in the Visual Studio toolbox itself; you can easily drag and drop the control from the toolbox.
 
 **Data binding support** 
 
@@ -59,6 +59,6 @@ The control can be bound to your application data from a variety of data sources
 
 The Model-View-ViewModel (MVVM) pattern is followed to get better control customization.
 
-**SfBulletGraph Elements**
+**UWP Bullet Graph Elements**
 
 ![Key-features_img1](Key-features_images/Key-features_img1.jpeg)

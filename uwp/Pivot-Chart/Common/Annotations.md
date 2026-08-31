@@ -9,9 +9,9 @@ documentation: ug
 
 # Annotations in UWP Pivot Chart
 
-The SfPivotChart supports annotations that allow you to mark a specific area of interest in the chart area. You can draw custom shapes, specify a text note, and add images with the help of annotations.
+The UWP Pivot Chart supports annotations that allow you to mark a specific area of interest in the chart area. You can draw custom shapes, specify a text note, and add images with the help of annotations.
 
-You can add an annotation by using the `Annotations` property in the SfPivotChart. Using this property, varieties of annotations can be added to the chart control. Following are the different types of annotations that are supported by the SfPivotChart:
+You can add an annotation by using the `Annotations` property in the UWP Pivot Chart. Using this property, varieties of annotations can be added to the chart control. Following are the different types of annotations that are supported by the UWP Pivot Chart:
 
 * Text annotation.
 * Image annotation.
@@ -23,7 +23,7 @@ You can add an annotation by using the `Annotations` property in the SfPivotChar
 
 ## Text annotation
 
-Text annotations are used to add simple text representation in the chart area of the SfPivotChart. The following code snippet shows how to add text annotation to the SfPivotChart.
+Text annotations are used to add simple text representation in the chart area of the UWP Pivot Chart. The following code snippet shows how to add text annotation to the UWP Pivot Chart.
 
 {% tabs %}
 
@@ -177,7 +177,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Image annotation
 
-The SfPivotChart allows you to add an image annotation to the specific chart by mentioning the [`AnnotationType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_AnnotationType) as `ImageAnnotation`. The following code snippet shows how to add the image annotation to the SfPivotChart.
+The UWP Pivot Chart allows you to add an image annotation to the specific chart by mentioning the [`AnnotationType`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_AnnotationType) as `ImageAnnotation`. The following code snippet shows how to add the image annotation to the UWP Pivot Chart.
 
 {% tabs %}
 
@@ -266,7 +266,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Line annotation
 
-Line annotation draws a line over a specific chart area. The following code snippet specifies adding the line annotation to the SfPivotChart.
+Line annotation draws a line over a specific chart area. The following code snippet specifies adding the line annotation to the UWP Pivot Chart.
 
 {% tabs %}
 
@@ -510,7 +510,7 @@ PivotChart1.Annotations.Add(annotation)
 
 ## Positioning annotations
 
-Annotations can be positioned in the SfPivotChart based on [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1) properties. For image and shape (line, ellipse, rectangle, horizontal line, and vertical line) annotations, you should specify [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_Y2) properties. These X and Y values can be specified with axis units or pixel units and can be identified by using the [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) property.
+Annotations can be positioned in the UWP Pivot Chart based on [`X1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_X1) and [`Y1`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_Y1) properties. For image and shape (line, ellipse, rectangle, horizontal line, and vertical line) annotations, you should specify [`X2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_X2) and [`Y2`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAnnotation.html#Syncfusion_UI_Xaml_PivotChart_PivotChartAnnotation_Y2) properties. These X and Y values can be specified with axis units or pixel units and can be identified by using the [`CoordinateUnit`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.Annotation.html#Syncfusion_UI_Xaml_Charts_Annotation_CoordinateUnit) property.
 
 **CoordinateUnit as axis**
 
