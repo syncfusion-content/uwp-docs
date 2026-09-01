@@ -104,9 +104,9 @@ You can load an image to the control as a stream.
 
 {% endhighlight %}
 
-* After an image has been loaded to the SfImageEditor, you can start to edit an image by using the built-in Toolbar
+* After an image has been loaded to the Image Editor, you can start to edit an image by using the built-in Toolbar
 
-![Output image of the SfImageEditor getting started](getting-started_images/LoadedImage.png)
+![Output image of the Image Editor getting started](getting-started_images/LoadedImage.png)
 
 ## See also
 

@@ -22,7 +22,7 @@ To rotate an image, in toolbar, click the `Rotate` button in the submenu of the 
 
 ### Using Code
 
-Programmatically, the `Rotate` method is used in the SfImageEditor control to rotate the image.
+Programmatically, the `Rotate` method is used in the Image Editor control to rotate the image.
 
 N> Angle cannot be specified in code to alter the rotation angle of the image
 
@@ -40,7 +40,7 @@ N> Angle cannot be specified in code to alter the rotation angle of the image
 
 ### From Toolbar
 
-The ImageEditor control can show the mirror image. To get the mirror image of the loaded image, click `Flip` button in the submenu of the `Transforms` in the toolbar. 
+The Image Editor control can show the mirror image. To get the mirror image of the loaded image, click `Flip` button in the submenu of the `Transforms` in the toolbar. 
 
 ### Using Code
 
