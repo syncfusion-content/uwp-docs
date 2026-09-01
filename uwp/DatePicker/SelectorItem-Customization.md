@@ -85,7 +85,7 @@ Imports Syncfusion.UI.Xaml.Controls.Input;
 
 The output is displayed in the following image:
 
-![Features_img10](Features_images/Features_img10.png)
+![UWP DatePickerFeatures_img10](Features_images/Features_img10.png)
 
 
 

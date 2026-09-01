@@ -47,7 +47,7 @@ The following code sample shows how to hide the done button:
 
 {% endhighlight %}
 
-![Features_img11](Features_images/Features_img11.png)
+![UWP DatePickerFeatures_img11](Features_images/Features_img11.png)
 
 
 
@@ -84,4 +84,4 @@ The following code sample shows how to hide the cancel button:
 
 			{% endhighlight  %}
 			
-![Features_img12](Features_images/Features_img12.png)
+![UWP DatePickerFeatures_img12](Features_images/Features_img12.png)

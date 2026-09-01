@@ -7,7 +7,7 @@ control: SfTimePicker
 documentation: ug
 ---
 
-# SelectorItem Customization in UWP TimePicker (SfTimePicker)
+# SelectorItem Customization in UWP TimePicker
 
 ## SelectorItemWidth and SelectorItemHeight
 

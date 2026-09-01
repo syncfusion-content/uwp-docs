@@ -7,7 +7,7 @@ control: SfTimePicker
 documentation: ug
 ---
 
-# Formatting in UWP TimePicker (SfTimePicker)
+# Formatting in UWP TimePicker
 
 The SfTimePicker control allows users to format the display text in various ways.
 
