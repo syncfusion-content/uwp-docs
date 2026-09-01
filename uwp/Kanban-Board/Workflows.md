@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Workflows in UWP SfKanban | Syncfusion
-description: Learn about Workflows support in Syncfusion UWP SfKanban to manage allowed card transitions and enforce workflow rules across columns.
+title: Workflows in UWP Kanban Board | Syncfusion
+description: Learn about Workflows support in Syncfusion UWP Kanban Board to manage allowed card transitions and enforce workflow rules across columns.
 platform: uwp
 control: SfKanban
 documentation: ug
 ---
 
-# Workflows in UWP SfKanban
+# Workflows in UWP Kanban Board
 
-A Kanban [`Workflow`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
+A [`Workflow`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.SfKanban.html#Syncfusion_UI_Xaml_Kanban_SfKanban_Workflows) is a set of Category and AllowedTransitions that an item moves through its life cycle and typically represents processes within your organization.
 
 * [`Category`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Kanban.KanbanWorkflow.html#Syncfusion_UI_Xaml_Kanban_KanbanWorkflow_Category) – It represents a state of an item at a particular point in a specific workflow.
 

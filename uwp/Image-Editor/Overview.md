@@ -1,12 +1,12 @@
 ---
 layout: post
-title: About UWP Image Editor control | Syncfusion
-description: Learn here all about introduction of Syncfusion UWP Image Editor (SfImageEditor) control, its elements and more.
+title: About Syncfusion® UWP Image Editor Control | Syncfusion®
+description: Learn about the introduction of Syncfusion® Essential Studio UWP Image Editor control and more details.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# UWP Image Editor (SfImageEditor) Overview
+# About Syncfusion® UWP Image Editor Control
 
 Image Editor is a very handy tool; that is used to edit an image by annotating with free hand drawing paths, text and built-in shapes. It also allows you to crop, rotate and flip the image. The Image Editor control has an in-built toolbar which helps you to perform the editing operations.
 

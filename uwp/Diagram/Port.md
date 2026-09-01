@@ -9,7 +9,7 @@ documentation: ug
 
 # Port in UWP SfDiagram
 
-Essential® Diagram for UWP provides support to define custom ports for making connections.
+UWP SfDiagram control provides support to define custom ports for making connections.
 
 ![Node Port](Port_images/Port_img1.jpeg)![Connector Port](Port_images/Port_img2.jpeg)
 

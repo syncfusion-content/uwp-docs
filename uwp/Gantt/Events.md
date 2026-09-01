@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in UWP SfGantt | Syncfusion
-description: Learn about Events support in Syncfusion UWP SfGantt, including task interactions, editing operations, scheduling changes, and user actions.
+title: Events in UWP Gantt Chart | Syncfusion
+description: Learn about Events support in Syncfusion UWP Gantt Chart, including task interactions, editing operations, scheduling changes, and user actions.
 platform: uwp
 control: SfGantt
 documentation: ug
 ---
 
-# Events in UWP SfGantt
+# Events in UWP Gantt Chart
 
 **BeginCellEdit**
 

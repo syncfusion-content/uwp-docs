@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom View in UWP Image Editor control | Syncfusion
-description: Learn here all about Custom View support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Custom View in UWP Image Editor | Syncfusion®
+description: Learn about adding custom views and shapes in Syncfusion® UWP Image Editor control with customization options.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Adding custom view in UWP Image Editor (SfImageEditor)
+# Custom View in UWP Image Editor
 
  You can add any custom shape or view to an image using the `AddCustomView` method in the image editor
  control. To add a custom view, specify the view and its desired `CustomViewSettings` as demonstrated in the 
