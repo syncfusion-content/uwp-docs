@@ -193,7 +193,7 @@ End Namespace
 
 ## Adding service reference to project
 
-N> This section explains how to refer the online service in UWP application for binding the cube information in the SfPivotChart. The service URL used here refers the demo cube - “Adventure Works”, mainly used for illustration purpose.
+N> This section explains how to refer the online service in UWP application for binding the cube information in the UWP Pivot Chart. The service URL used here refers the demo cube - “Adventure Works”, mainly used for illustration purpose.
 To create your own WCF service, refer to the topic of [Creating WCF Service Application.](#creating-wcf-service-application).
 
 After initializing the SfPivotChart control, right-click the project in the solution explorer and select **Add > Service Reference...**.

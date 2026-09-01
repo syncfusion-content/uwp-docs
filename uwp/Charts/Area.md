@@ -11,7 +11,7 @@ documentation: ug
 
 Chart area represents the entire chart and all its elements. It’s a virtual rectangular area that includes all the chart elements like axis, legends, series etc. 
 
-The following are the major properties of chart(SfChart):
+The following are the major properties of chart(UWP Charts):
 
 * [`PrimaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_PrimaryAxis) –  Gets or sets the horizontal x axis for the chart.
 * [`SecondaryAxis`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_SecondaryAxis) –  Gets or sets the vertical y axis for the chart.
@@ -43,7 +43,7 @@ chart.Header = "Usage of Metals";
 
 {% endtabs %}
 
-![SfChart with header in UWP.](area_images/uwp-charts-area-chart-with-header.jpeg)
+![UWP Charts with header in UWP.](area_images/uwp-charts-area-chart-with-header.jpeg)
 
 Header can be positioned left or right side of the chart using [`HorizontalHeaderAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_HorizontalHeaderAlignment) property.
 
@@ -96,13 +96,13 @@ chart.Header = border;
 
 {% endtabs %}
 
-![Header customization in SfChart](area_images/uwp-charts-area-header-customization.jpeg)
+![Header customization in UWP Charts](area_images/uwp-charts-area-header-customization.jpeg)
 
 N> Here, HorizontalHeaderAlignment is set as ‘Right’.
 
 ## Area customization
 
-SfChart provides the properties like [`AreaBorderBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBorderBrush), [`AreaBorderThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBorderThickness), [`AreaBackground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBackground) and `Background` for customizing the plot area.
+UWP Charts provides the properties like [`AreaBorderBrush`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBorderBrush), [`AreaBorderThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBorderThickness), [`AreaBackground`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_AreaBackground) and `Background` for customizing the plot area.
 
 The following code examples illustrates the usage of these properties:
 
@@ -137,7 +137,7 @@ chart.AreaBorderThickness = new Thickness(3);
 
 {% endtabs %}
 
-![SfChart with customized plot area in UWP](area_images/uwp-charts-plot-area-customization.jpeg)
+![UWP Charts with customized plot area in UWP](area_images/uwp-charts-plot-area-customization.jpeg)
 
 ## Multiple area 
 
@@ -243,7 +243,7 @@ chart.Series.Add(columnSeries2);
 
 {% endtabs %}
 
-![SfChart with multiple panes in UWP](area_images/uwp-charts-area-multiple-panes.jpeg)
+![UWP Charts with multiple panes in UWP](area_images/uwp-charts-area-multiple-panes.jpeg)
 
 ## Column span and row span
 
@@ -345,7 +345,7 @@ chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-![SfChart with two y axes, one axis spanned to two rows](area_images/uwp-charts-area-column-and-row-span.jpeg)
+![UWP Charts with two y axes, one axis spanned to two rows](area_images/uwp-charts-area-column-and-row-span.jpeg)
 
 ## Placing series side-by-side
 
@@ -451,7 +451,7 @@ N>As the series will be placed one over the other(overlapped), to differentiate 
 
 ## Serialization
 
-SfChart supports serialization and deserialization for save the settings of the chart and reload. 
+UWP Charts supports serialization and deserialization for save the settings of the chart and reload. 
 
 This can be done using [`Serialize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Serialize_System_IO_Stream_) and [`Deserialize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartBase.html#Syncfusion_UI_Xaml_Charts_ChartBase_Deserialize_System_IO_Stream_) methods as in below code example:
 
@@ -564,7 +564,7 @@ You can hold and resume the series updates in dynamic update scenarios using the
 
 ## Chart events
 
-SfChart provides the following list of events.
+UWP Charts provides the following list of events.
 
 ### SelectionChanging
 

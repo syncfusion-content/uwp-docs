@@ -165,9 +165,9 @@ Code Sample:
 
 {% endhighlight %}
 
-## Templates in UWP TreeMap (SfTreeMap)
+## Templates in UWP TreeMap
 
-[`LeafLabelPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_LeafLabelPath) of SfTreeMap is a path to a field on the source object, which serves as the "label" of the object.
+[`LeafLabelPath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_LeafLabelPath) of UWP TreeMap is a path to a field on the source object, which serves as the "label" of the object.
 
 Code Sample:
 
@@ -189,9 +189,9 @@ Code Sample:
 
 N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
 
-## Templates in UWP treemap (SfTreeMap)
+## Templates in UWP Treemap
 
-You can customize leaf nodes by assigning data template to [`LeafTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_LeafTemplate) of SfTreeMap. 
+You can customize leaf nodes by assigning data template to [`LeafTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_LeafTemplate) of UWP TreeMap. 
 
 Code Sample:
 

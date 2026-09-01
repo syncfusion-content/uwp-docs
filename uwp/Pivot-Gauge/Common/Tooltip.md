@@ -35,4 +35,4 @@ PivotGauge1.ShowGaugeTooltip = True
 
 {% endtabs %}
 
-![UWP SfPivotGauge Tooltip](Tooltip_images/Tooltip.png)
+![UWP Pivot Gauge Tooltip](Tooltip_images/Tooltip.png)

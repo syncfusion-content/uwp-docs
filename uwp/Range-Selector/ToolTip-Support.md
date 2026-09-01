@@ -17,7 +17,7 @@ The following properties are used to customize the ToolTip settings for the Date
 * [`LeftToolTipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftToolTipTemplate) - Gets or sets the template for the left side ToolTip.
 * [`RightToolTipTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightToolTipTemplate) - Gets or sets the template for the right side ToolTip.
 
-Default tooltip template of SfDateTimeRangeNavigator.
+Default tooltip template of UWP Range Selector.
 
 ![ToolTip support for DateTimeRangeNavigator](ToolTip-Support_images/ToolTipSupport_img1.jpeg)
 

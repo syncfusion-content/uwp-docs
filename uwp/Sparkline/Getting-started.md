@@ -116,7 +116,7 @@ public class UsersViewModel
 
 ### Applying data to Sparkline
  
-We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath.
+We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the UWP Sparkline, and then map the data using YBindingPath.
 
 {% tabs %}
 
@@ -152,7 +152,7 @@ SfLineSparkline sparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![Simple SfLineSparkline](Getting-started_images/GettingStarted_img4.jpeg)
+![Simple UWP Sparkline](Getting-started_images/GettingStarted_img4.jpeg)
 
 ## Create a simple sparkline from code behind (C#/VB)
 
@@ -277,6 +277,6 @@ grid.Children.Add(sfLineSparkline);
 
 {% endhighlight %}
 
-![Simple SfLineSparkline](Getting-started_images/GettingStarted_img4.jpeg)
+![Simple UWP Sparkline](Getting-started_images/GettingStarted_img4.jpeg)
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/GettingStarted-UWP-Sparkline)

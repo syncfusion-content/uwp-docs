@@ -9,9 +9,9 @@ documentation: ug
 
 # Flow Direction in UWP Bullet Graph
 
-By default the flow direction of SfBulletGraph is forward (LTR). It can be customized by using the **FlowDirection** property respectively.
+By default the flow direction of UWP Bullet Graph is forward (LTR). It can be customized by using the **FlowDirection** property respectively.
 
->Note:- When the Orientation of **SfBulletGraph** is **Horizontal**, the default flow direction will be Left to Right. When the Orientation of **SfBulletGraph** is **Vertical**, the default flow direction will be Top to Bottom.
+>Note:- When the Orientation of **UWP Bullet Graph** is **Horizontal**, the default flow direction will be Left to Right. When the Orientation of **UWP Bullet Graph** is **Vertical**, the default flow direction will be Top to Bottom.
 
 {% tabs %}
 {% highlight xaml %}

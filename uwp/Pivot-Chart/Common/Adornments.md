@@ -9,7 +9,7 @@ documentation: ug
 
 # Adornments in UWP Pivot Chart
 
-Adornments are used to display data values of a chart segment with custom formatting options. The data point values (x,y) can be formatted by using the [`AdornmentsInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAdornmentsInfo.html) property of the SfPivotChart. You can initialize the adornments as specified in the following code snippet.
+Adornments are used to display data values of a chart segment with custom formatting options. The data point values (x,y) can be formatted by using the [`AdornmentsInfo`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartAdornmentsInfo.html) property of the UWP Pivot Chart. You can initialize the adornments as specified in the following code snippet.
 
 {% tabs %}
 
@@ -206,7 +206,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ### Defining label content
 
-By using the [`SegmentLabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property, you can define the values to be displayed as labels for data point segments in the SfPivotChart. The label content can be specified as one of the following values:
+By using the [`SegmentLabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_SegmentLabelContent) property, you can define the values to be displayed as labels for data point segments in the UWP Pivot Chart. The label content can be specified as one of the following values:
 
 **XValue**
 
@@ -346,7 +346,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 **LabelContentPath**
 
-By default, the Y value of the SfPivotChart point in the provided chart segment can be displayed in the label's text. You can also define other specific label values by defining the [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property. This property returns the adornment value for chart segments that are being rendered.
+By default, the Y value of the UWP Pivot Chart point in the provided chart segment can be displayed in the label's text. You can also define other specific label values by defining the [`LabelTemplate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelTemplate) property. This property returns the adornment value for chart segments that are being rendered.
 
 The following code sample demonstrates displaying string values from the x-axis.
 
@@ -789,7 +789,7 @@ PivotChart1.AdornmentsInfo = adornmentsInfo
 
 ![alignedLabel_LabelAdornments](Adornments_images/alignedLabel_LabelAdornments.png)
 
-The SfPivotChart supports positioning a label in adornments, depending upon the selected chart type, using the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property. The following code snippet defines positioning the label based on the `Auto` position.
+The UWP Pivot Chart supports positioning a label in adornments, depending upon the selected chart type, using the [`LabelPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.html#Syncfusion_UI_Xaml_Charts_ChartAdornmentInfoBase_LabelPosition) property. The following code snippet defines positioning the label based on the `Auto` position.
 
 {% tabs %}
 

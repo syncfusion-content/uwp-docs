@@ -31,9 +31,9 @@ After translating the strings that can be localized:
 
 2. Right-click the **Resources** folder to create a new resource file. Go to **Add > New Item**.
 
-![UWP SfPivotGauge Localization Step 1](Localization_images/Localization-step1.png)
+![UWP Pivot Gauge Localization Step 1](Localization_images/Localization-step1.png)
 
-![UWP SfPivotGauge Localization Step 2](Localization_images/Localization-step2.png)
+![UWP Pivot Gauge Localization Step 2](Localization_images/Localization-step2.png)
 
 N> The resource file name should be in the format "&lt;Culture Code&gt;.resx".
 
@@ -102,7 +102,7 @@ PivotGauge1.FlowDirection = FlowDirection.RightToLeft
 
 {% endtabs %}
 
-![UWP SfPivotGauge RTL](Localization_images/Localization-RTL.png)
+![UWP Pivot Gauge RTL](Localization_images/Localization-RTL.png)
 
 A demo sample is available in the following location.
 

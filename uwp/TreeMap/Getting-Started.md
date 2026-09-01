@@ -11,7 +11,7 @@ documentation: ug
 
 TreeMap is a growing trend in data visualization. It displays hierarchical information in a series of clustered rectangles, which together represent a whole. The size of each box represents a quantity. TreeMap can also use color to represent any number of values, but it is often used to categorize the various boxes within the treemap.
 
-### Creating treemap for a windows store app
+## Creating treemap for a windows store app
 
 TreeMap is available in the following assembly and namespace.
 
@@ -26,11 +26,11 @@ Namespace: Syncfusion.UI.Xaml.TreeMap
 
 ![Image to choose Syncfusion Controls for UWP XAML](GettingStarted_images/gettingstarted_1.png)
 
-### Add SfTreeMap from toolbox
+### Add UWP TreeMap from toolbox
 
 Drag and drop the SfTreeMap control from the toolbox to your application.
 
-![Image to drag and drop the SfTreeMap](GettingStarted_images/treemapdesigner.png)
+![Image to drag and drop the UWP TreeMap](GettingStarted_images/treemapdesigner.png)
 
 ![Image to show the Syncfusion Controls for UWP XAML reference is added to the application references](GettingStarted_images/addingreference.png)
 
@@ -58,7 +58,7 @@ Refer to the following code to add a TreeMap in an application:
 
 ### Create data for treemap:
 
-SfTreeMap is a data-bound control. Hence you have to create a data model to bind it to the control.
+UWP TreeMap is a data-bound control. Hence you have to create a data model to bind it to the control.
 
 1.Create data object class and declare properties as shown below 
 
@@ -172,7 +172,7 @@ public partial class MainWindow : Window
 
 3.Sizing TreeMapItem by using WeightValuePath  
 
-The SfTreeMap generates treemap items based on the property [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) . It is a bindable property and it decides how to display the treemap items.
+The UWP TreeMap generates treemap items based on the property [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath) . It is a bindable property and it decides how to display the treemap items.
 
 TreeMap calculates the size of the object with the help of [`WeightValuePath`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeMap.SfTreeMap.html#Syncfusion_UI_Xaml_TreeMap_SfTreeMap_WeightValuePath). WeightValuePath value *Population* has been assigned from one of the above DataModel field.  
 
@@ -186,6 +186,6 @@ TreeMap calculates the size of the object with the help of [`WeightValuePath`](h
 
 N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection and it should be numerical value.
 
-![Output image of SfTreeMap](GettingStarted_images/treemapimage.png)
+![Output image of UWP TreeMap](GettingStarted_images/treemapimage.png)
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/SfTreeMap_GettingStarted_UWP).
