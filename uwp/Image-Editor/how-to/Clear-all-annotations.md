@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title: How to clear all annotations in UWP Image Editor | Syncfusion®
 description: Learn how to clear all annotations in Syncfusion® UWP Image Editor control including text, shapes, and paths.
