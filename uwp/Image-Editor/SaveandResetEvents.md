@@ -20,7 +20,7 @@ To save an image from the toolbar, click the `Save` button in the top toolbar. T
 
 ## Using Code
 
-Programmatically, `Save` method can be used in the SfImageEditor control to save the image.
+Programmatically, `Save` method can be used in the Image Editor control to save the image.
 
 
 {% highlight C# %}
