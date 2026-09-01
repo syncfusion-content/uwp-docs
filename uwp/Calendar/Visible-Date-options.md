@@ -9,7 +9,7 @@ documentation: ug
 
 # Visible Dates in UWP Calendar
 
-`SfCalendar` provides support for making dates inactive within a range (or) selective dates. It can be achieved by the properties `VisibleMinDate`, `VisibleMaxDate`, and `VisibleDates`.
+`UWP Calendar` provides support for making dates inactive within a range (or) selective dates. It can be achieved by the properties `VisibleMinDate`, `VisibleMaxDate`, and `VisibleDates`.
 
 ## Setting Minimum Visible Date
 
@@ -51,7 +51,7 @@ calendar.VisibleMinDate = New Date(2015, 12, 10)
 {% endtabs %}
 
 
-![SfCalendar-img9](SfCalendar-images/SfCalendar-img9.jpeg)
+![UWP Calendar-img9](SfCalendar-images/SfCalendar-img9.jpeg)
 
 
 ## Setting Maximum Visible Date
@@ -94,7 +94,7 @@ calendar.VisibleMaxDate = New Date(2015, 12, 15)
 {% endtabs %}
 
 
-![SfCalendar-img10](SfCalendar-images/SfCalendar-img10.jpeg)
+![UWP Calendar-img10](SfCalendar-images/SfCalendar-img10.jpeg)
 
 ## Setting Visible Dates
 
@@ -147,6 +147,6 @@ calendar.VisibleDates.Add(New Date(2015, 12, 30))
 
 {% endtabs %}
 
-![SfCalendar-img11](SfCalendar-images/SfCalendar-img11.jpeg)
+![UWP Calendar-img11](SfCalendar-images/SfCalendar-img11.jpeg)
 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize Display in UWP Calendar
 
-`SfCalendar` allows customizing the first day of the week and the day name display mode.
+`UWP Calendar` allows customizing the first day of the week and the day name display mode.
 
 ## Customize First Day of Week
 
@@ -51,7 +51,7 @@ calendar.FirstDayofWeek = System.DayOfWeek.Thursday
 {% endtabs %}
 
 
-![SfCalendar-img13](SfCalendar-images/SfCalendar-img13.jpeg)
+![UWP Calendar-img13](SfCalendar-images/SfCalendar-img13.jpeg)
 
 
 ## Customize Day Name Display Mode
@@ -94,6 +94,6 @@ calendar.DayNameDisplayMode = Syncfusion.UI.Xaml.Controls.Input.DayNameDisplayMo
 {% endtabs %}
 
 
-![SfCalendar-img14](SfCalendar-images/SfCalendar-img14.jpeg)
+![UWP Calendar-img14](SfCalendar-images/SfCalendar-img14.jpeg)
 
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Blocking Dates in UWP Calendar
 
-`SfCalendar` allows blocking out dates so that a blocked date will look disabled, be skipped in key navigation, and unable to be selected.
+UWP Calendar allows blocking out dates so that a blocked date will look disabled, be skipped in key navigation, and unable to be selected.
 
 ## Blocking out the Date Collection
 
@@ -81,7 +81,7 @@ calendar.BlackOutDates.Add(New Date(2015, 12, 27))
 {% endtabs %}
 
 
-![SfCalendar-img7](SfCalendar-images/SfCalendar-img7.jpeg)
+![UWP Calendar-img7](SfCalendar-images/SfCalendar-img7.jpeg)
 
 
 ## Customize the Blocked Date Cell
@@ -175,7 +175,7 @@ calendar.BlackOutDates.Add(New Date(2015, 12, 27))
 {% endtabs %}
 
 
-![SfCalendar-img8](SfCalendar-images/SfCalendar-img8.jpeg)
+![UWP Calendar-img8](SfCalendar-images/SfCalendar-img8.jpeg)
 
 
 

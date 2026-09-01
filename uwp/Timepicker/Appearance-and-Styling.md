@@ -7,7 +7,7 @@ control: SfTimePicker
 documentation: ug
 ---
 
-# Appearance and Styling in UWP TimePicker (SfTimePicker)
+# Appearance and Styling in UWP TimePicker
 
 ## Accent Brush
 

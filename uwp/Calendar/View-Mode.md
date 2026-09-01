@@ -11,7 +11,7 @@ documentation: ug
 
 The `SfCalendar` control provides four types of views to display dates/years such as month, year, decade, century. It can be assigned to the `SfCalendar` control by using the [ViewMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfCalendar.html#Syncfusion_UI_Xaml_Controls_Input_SfCalendar_ViewMode) property.
 
-By default, the `SfCalendar` control is assigned with month view. Based on the user's preference, `SfCalendar` can be viewed in any one of the available types.
+By default, the `UWP Calendar` control is assigned with month view. Based on the user's preference, `UWP Calendar` can be viewed in any one of the available types.
 
 ## Month view
 

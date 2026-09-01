@@ -9,7 +9,7 @@ documentation: ug
 
 # Date Selection in UWP Calendar
 
-Dates can be selected in `SfCalendar` in several ways.
+Dates can be selected in `UWP Calendar` in several ways.
 
 ## Selecting a Single Date
 
@@ -122,12 +122,12 @@ Multiple dates can be selected by:
 
 * Setting SelectedDates programmatically
 
-![SfCalendar-img5](SfCalendar-images/SfCalendar-img5.jpeg)
+![UWP Calendar-img5](SfCalendar-images/SfCalendar-img5.jpeg)
 
 
 * Clicking on the start date and moving the pointer over the end date by touch
 
-![SfCalendar-img6](SfCalendar-images/SfCalendar-img6.jpeg)
+![UWP Calendar-img6](SfCalendar-images/SfCalendar-img6.jpeg)
 
 
 ## DateRange
