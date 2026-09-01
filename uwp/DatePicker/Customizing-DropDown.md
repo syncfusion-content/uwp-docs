@@ -48,7 +48,7 @@ sfdatePicker.DropDownHeight = 300
 
 {% endtabs %}
 
-![Customizing-DropDown_img2](Customizing-DropDown_images/Customizing-DropDown_img2.png)
+![UWP DatePickerCustomizing-DropDown_img2](Customizing-DropDown_images/Customizing-DropDown_img2.png)
 
 
 ## IsDropDownOpen
@@ -95,4 +95,4 @@ Imports Syncfusion.UI.Xaml.Controls.Input;
 
 {% endtabs %}
 
-![Customizing-DropDown_img3](Customizing-DropDown_images/Customizing-DropDown_img3.png)
+![UWP DatePickerCustomizing-DropDown_img3](Customizing-DropDown_images/Customizing-DropDown_img3.png)

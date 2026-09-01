@@ -57,8 +57,8 @@ combo.DisplayMaxDate = New Date(2013,11,22)
 
 {% endtabs %}
 
-![Displaying-Minimum-and-Maximum-Dates_img1](Displaying-Minimum-and-Maximum-Dates_images/Displaying-Minimum-and-Maximum-Dates_img1.png)
+![UWP DateTimePicker Displaying-Minimum-and-Maximum-Dates_img1](Displaying-Minimum-and-Maximum-Dates_images/Displaying-Minimum-and-Maximum-Dates_img1.png)
 
-![Displaying-Minimum-and-Maximum-Dates_img2](Displaying-Minimum-and-Maximum-Dates_images/Displaying-Minimum-and-Maximum-Dates_img2.png)
+![UWP DateTimePicker Displaying-Minimum-and-Maximum-Dates_img2](Displaying-Minimum-and-Maximum-Dates_images/Displaying-Minimum-and-Maximum-Dates_img2.png)
 
-![Displaying-Minimum-and-Maximum-Dates_img3](Displaying-Minimum-and-Maximum-Dates_images/Displaying-Minimum-and-Maximum-Dates_img3.png)
+![UWP DateTimePicker Displaying-Minimum-and-Maximum-Dates_img3](Displaying-Minimum-and-Maximum-Dates_images/Displaying-Minimum-and-Maximum-Dates_img3.png)

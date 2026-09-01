@@ -43,7 +43,7 @@ The active calendar day button template can be modified using the `CellTemplate`
 
 {% endtabs %}
 
-![SfCalendar-img15](SfCalendar-images/SfCalendar-img15.jpeg)
+![UWP Calendar-img15](SfCalendar-images/SfCalendar-img15.jpeg)
 
 
 ## Customizing the Disabled Date Cell
@@ -107,7 +107,7 @@ calendar.VisibleMaxDate = New Date(2015, 12, 25)
 {% endtabs %}
 
 
-![SfCalendar-img16](SfCalendar-images/SfCalendar-img16.jpeg)
+![UWP Calendar-img16](SfCalendar-images/SfCalendar-img16.jpeg)
 
 
 ## Customizing Day Name Cell
@@ -141,7 +141,7 @@ The template of day names can also be modified using the `DayNameCellTemplate` p
 
 {% endtabs %}
 
-![SfCalendar-img17](SfCalendar-images/SfCalendar-img17.jpeg)
+![UWP Calendar-img17](SfCalendar-images/SfCalendar-img17.jpeg)
 
 
 ## Customizing Header
@@ -175,7 +175,7 @@ The template of the header in SfCalendar can be modified using the `HeaderTempla
 
 {% endtabs %}
 
-![SfCalendar-img18](SfCalendar-images/SfCalendar-img18.jpeg)
+![UWP Calendar-img18](SfCalendar-images/SfCalendar-img18.jpeg)
 
 
 ## Changing Selected Date Background
@@ -217,7 +217,7 @@ calendar.SelectedDateBackground = New SolidColorBrush(Windows.UI.Colors.Red)
 
 {% endtabs %}
 
-![SfCalendar-img19](SfCalendar-images/SfCalendar-img19.jpeg)
+![UWP Calendar-img19](SfCalendar-images/SfCalendar-img19.jpeg)
 
 
 ## Customizing Scroll Button
@@ -398,7 +398,7 @@ Margin="-1,0,-1,0" RenderTransformOrigin="0.5,0.5">
 {% endtabs %}
 
 
-![SfCalendar-img20](SfCalendar-images/SfCalendar-img20.jpeg)
+![UWP Calendar-img20](SfCalendar-images/SfCalendar-img20.jpeg)
 
 ## Refresh the Layout
 

@@ -31,7 +31,7 @@ The following section provides detailed information to create a new project in V
 ## Adding control via designer
 The [SfDatePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfDatePicker.html) control can be added to the application by dragging it from the Toolbox and dropping it in the designer. The required assemblies will be added automatically.
 
-![Adding control via designer](Getting-Started_images/Getting-Started-img1.png)
+![UWP DatePickerAdding control via designer](Getting-Started_images/Getting-Started-img1.png)
 
 ## Adding control manually in XAML
 
@@ -120,7 +120,7 @@ Dim datePicker1 As SfDatePicker = New SfDatePicker() With {
 
 {% endtabs %}
 
-![Adding control via XAML or code](Getting-Started_images/Getting-Started-img2.png)
+![UWP DatePickerAdding control via XAML or code](Getting-Started_images/Getting-Started-img2.png)
 
 ## Customizing the date format
 
@@ -155,7 +155,7 @@ datePicker1.FormatString = "yyyy-dd-MM"
 
 {% endtabs %}
 
-![FormatString in SfDatePicker](Getting-Started_images/Getting-Started-img3.png)
+![UWP DatePickerFormatString in UWP DatePicker](Getting-Started_images/Getting-Started-img3.png)
 
 ## Customize SfDateSelector Header
 
@@ -183,5 +183,5 @@ You can customize the [SfDateSelector](https://help.syncfusion.com/cr/uwp/Syncfu
 
 {% endtabs %}
 
-![Customizing the SfDateSelector header](Getting-Started_images/Getting-Started-img4.png)
+![UWP DatePickerCustomizing the SfDateSelector header](Getting-Started_images/Getting-Started-img4.png)
 

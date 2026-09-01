@@ -7,7 +7,7 @@ control: SfTimePicker
 documentation: ug
 ---
 
-# SfTimeSelector in UWP TimePicker (SfTimePicker)
+# SfTimeSelector in UWP TimePicker
 
 The SfTimeSelector control opens inside the popup window.
 

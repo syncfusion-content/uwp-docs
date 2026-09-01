@@ -29,7 +29,7 @@ The following code example and screenshot illustrate the usage of the AllowNull 
 
 {% endhighlight %}
 
-![Features_img13](Features_images/Features_img13.png)
+![UWP DatePickerFeatures_img13](Features_images/Features_img13.png)
 
 ## Setting the Input Scope for the On-Screen Keyboard
 
@@ -61,4 +61,4 @@ N> The AllowInlineEditing property must be set to `true` for this property to ta
 
 {% endhighlight  %}
 
-![Features_img14](Features_images/Features_img14.png)
+![UWP DatePickerFeatures_img14](Features_images/Features_img14.png)
