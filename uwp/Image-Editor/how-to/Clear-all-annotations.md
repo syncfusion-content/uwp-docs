@@ -64,4 +64,4 @@ private void ToolbarSettings_ToolbarItemSelected(object sender, ToolbarItemSelec
 
 {% endhighlight %}
 
-![ClearAnnotations support in UWP ImageEditor](images/ClearAnnotations.gif)
+![ClearAnnotations support in UWP Image Editor](images/ClearAnnotations.gif)

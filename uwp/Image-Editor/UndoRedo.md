@@ -29,7 +29,7 @@ The top toolbar in the Image Editor control contains the undo and redo buttons i
 
 ### Using Code
 
-Programmatically, the `Undo` method can be used in the SfImageEditor control to revert the changes.
+Programmatically, the `Undo` method can be used in the Image Editor control to revert the changes.
 
 
 {% highlight C# %}
