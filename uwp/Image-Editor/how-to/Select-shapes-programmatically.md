@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to select annotations programmatically | Syncfusion
-description: Learn here about how to select the annotations (Text, Shapes, Paths, Custom views) added in the image editor programmatically.
+title: How to select shapes in UWP Image Editor | Syncfusion®
+description: Learn how to select annotations programmatically in Syncfusion® UWP Image Editor control with code examples.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Select annotations programmatically in Image Editor (SfImageEditor)
+# How to select shapes in UWP Image Editor
 
-In ImageEditor, the Unique ID is generated for all annotations (Text, Shapes, Paths, and CustomViews) when they are added to the image editor and you can get this Unique ID from the ItemsSelected event arguments or from the serialized JSON. By passing this Unique ID to the [`SelectShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_SelectShape_System_Int32_) method of SfImageEditor, you can select the particular annotation programmatically.
+In Image Editor, the Unique ID is generated for all annotations (Text, Shapes, Paths, and CustomViews) when they are added to the image editor and you can get this Unique ID from the ItemsSelected event arguments or from the serialized JSON. By passing this Unique ID to the [`SelectShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_SelectShape_System_Int32_) method of SfImageEditor, you can select the particular annotation programmatically.
 
 The following code sample demonstrates this.
 
@@ -91,4 +91,4 @@ private void ImageEditor_ItemSelected(object sender, ItemSelectedEventArgs args)
 
 {% endhighlight %}
 
-![Shape selection support in UWP ImageEditor](images/UniqueID.gif)
+![Shape selection support in UWP Image Editor](images/UniqueID.gif)

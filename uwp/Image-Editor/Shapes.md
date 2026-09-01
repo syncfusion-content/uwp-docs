@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Shapes in UWP Image Editor control | Syncfusion
-description: Learn here all about Shapes support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Shapes in UWP Image Editor | Syncfusion®
+description: Explore shapes support in Syncfusion® UWP Image Editor control including rectangles, circles, and arrows.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
-# Shapes in UWP Image Editor (SfImageEditor)
+# Shapes in UWP Image Editor
 
 You can annotate any path on an image by using free hand drawing and adding texts and shapes.
 
@@ -59,7 +59,7 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
 
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
-![Change StrokWidth of the shape in UWP ImageEditor](shapes_images/annotate.png)
+![Change StrokWidth of the shape in UWP Image Editor](shapes_images/annotate.png)
 
 * You can annotate any path on an image by using free hand drawing as shown in the below code,
 
@@ -78,7 +78,7 @@ Shapes can be added based on the [`ShapeType`](https://help.syncfusion.com/cr/uw
 
 {{ codesnippet2 | UnOrderList_Indent_Level_1 }} 
 
-![Annotate path on an image in UWP ImageEditor](shapes_images/path.png)
+![Annotate path on an image in UWP Image Editor](shapes_images/path.png)
 
 By default, the toolbar contains the `Rectangle`, `Circle`, `Arrow`, and `Path` shapes. You can add other shapes to the toolbar items by using the `VisibleShapesItems` in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html).
 
@@ -97,7 +97,7 @@ By default, the toolbar contains the `Rectangle`, `Circle`, `Arrow`, and `Path` 
 ![Shape types](shapes_images/ShapeTypes.png)
 
 
-N> If you add the shape when the SfImageEditor loaded in a view without image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddShape_Syncfusion_UI_Xaml_ImageEditor_Enums_ShapeType_Syncfusion_UI_Xaml_ImageEditor_PenSettings_) method after some time delay. If you add the shape when the SfImageEditor loaded in a view with image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddShape_Syncfusion_UI_Xaml_ImageEditor_Enums_ShapeType_Syncfusion_UI_Xaml_ImageEditor_PenSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageLoaded) event as shown in the following code sample.
+N> If you add the shape when the Image Editor loaded in a view without image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddShape_Syncfusion_UI_Xaml_ImageEditor_Enums_ShapeType_Syncfusion_UI_Xaml_ImageEditor_PenSettings_) method after some time delay. If you add the shape when the SfImageEditor loaded in a view with image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddShape_Syncfusion_UI_Xaml_ImageEditor_Enums_ShapeType_Syncfusion_UI_Xaml_ImageEditor_PenSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageLoaded) event as shown in the following code sample.
 
 {% highlight C# %}
 

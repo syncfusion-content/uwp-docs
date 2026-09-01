@@ -25,7 +25,7 @@ documentation: ug
 
 ![UWP Map Control Getting Started Adding Assembly Reference](Getting-Started_images/gettingstarted_1.png)
 
-### Add SfMaps from Toolbox
+### Add UWP Maps from Toolbox
 
 Drag and drop the SfMaps control from the Toolbox to your application.
 

@@ -13,7 +13,7 @@ A pre-defined collection or a set of colors can be applied to the chart series. 
 
 **Built-in palette**
 
-The SfPivotChart supports the following 12 types of built-in chart palette:
+The UWP Pivot Chart supports the following 12 types of built-in chart palette:
 
 * Metro
 * AutumnBrights
@@ -50,7 +50,7 @@ PivotChart1.ColorPalette = PivotChartColorPalette.AutumnBrights
 
 **Custom palette**
 
-The SfPivotChart provides a custom option to define own color brushes with your preferred order for the palette. Using the [`CustomBrushes`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_CustomBrushes) property of the SfPivotChart, you can add a collection of colors to series as shown in the following code snippet.
+The UWP Pivot Chart provides a custom option to define own color brushes with your preferred order for the palette. Using the [`CustomBrushes`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_CustomBrushes) property of the SfPivotChart, you can add a collection of colors to series as shown in the following code snippet.
 
 {% tabs %}
 

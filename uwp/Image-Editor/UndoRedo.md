@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Undo and Redo in UWP Image Editor control | Syncfusion
-description: Learn here all about Undo and Redo support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Undo and Redo in UWP Image Editor | Syncfusion®
+description: Learn about undo and redo operations in Syncfusion® UWP Image Editor control for image editing operations.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Undo and Redo in UWP Image Editor (SfImageEditor)
+# Undo and Redo in UWP Image Editor
 
 One of the important features of the image editor control is to perform `Undo` and `Redo` operations of adding shapes, text and drawing paths. The undo and redo operations can be done in the following two ways:
 
@@ -29,7 +29,7 @@ The top toolbar in the Image Editor control contains the undo and redo buttons i
 
 ### Using Code
 
-Programmatically, the `Undo` method can be used in the SfImageEditor control to revert the changes.
+Programmatically, the `Undo` method can be used in the Image Editor control to revert the changes.
 
 
 {% highlight C# %}
@@ -56,4 +56,4 @@ The `Redo` method is used to redo the changes reverted in the undo operation.
 
 {% endhighlight %}
 
-![UndoRedo](undoRedo_images/UndoRedo.png)
+![UndoRedo](undoRedo_images/UndoRedo.jpg)

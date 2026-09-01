@@ -9,9 +9,9 @@ documentation: ug
 
 # How to print the chart in UWP Chart
 
-To print the SfChart, call the Print method.
+To print the UWP Charts, call the Print method.
 
-The following code sample can be used to print the SfChart:
+The following code sample can be used to print the UWP Charts:
 
 {% highlight c# %}
   chart.Print();   

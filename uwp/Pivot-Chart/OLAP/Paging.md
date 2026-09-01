@@ -9,13 +9,13 @@ documentation: ug
 
 # Paging in UWP Pivot Chart
 
-The SfPivotChart supports loading and rendering large amounts of data without any performance constraint.
+The UWP Pivot Chart supports loading and rendering large amounts of data without any performance constraint.
 
-The SfPivotPager (custom control) is included and bound with the [`OlapDataManager`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_OlapDataManager) of the respective SfPivotChart. To enable paging, set the `EnablePaging` property of [`OlapDataManager`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_OlapDataManager) to true.
+The SfPivotPager (custom control) is included and bound with the [`OlapDataManager`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_OlapDataManager) of the respective UWP Pivot Chart. To enable paging, set the `EnablePaging` property of [`OlapDataManager`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_OlapDataManager) to true.
 
 When you process a large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options and you can also change the page size and page number dynamically with the help of settings available in the SfPivotPager.
 
-N> The assembly **Syncfusion.SfPivotShared.UWP** should be included from the installed location to add the SfPivotPager with SfPivotChart. You can also get the assemblies by browsing the default assembly location i.e.,
+N> The assembly **Syncfusion.SfPivotShared.UWP** should be included from the installed location to add the SfPivotPager with UWP Pivot Chart. You can also get the assemblies by browsing the default assembly location i.e.,
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\\&lt;Version Number&gt;\Assemblies for Universal Windows\10.0\
 
 The following code snippet illustrates how to enable paging using the current OLAP report.

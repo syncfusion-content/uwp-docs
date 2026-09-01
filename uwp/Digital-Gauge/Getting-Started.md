@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains the steps required to configure the [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) and also explains the steps to add basic elements of [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) through various APIs available within it.
 
-## Configuring SfDigitalGauge
+## Configuring UWP Digital Gauge
 
-SfDigitalGauge is available in the following assembly and namespace.
+UWP Digital Gauge is available in the following assembly and namespace.
 
 **Assembly**: Syncfusion.SfGauge.UWP
 
@@ -44,7 +44,7 @@ The UI component of the digital gauge can be customized by adding segments and s
 
 ## Displaying Values
 
-You can add alphanumeric characters to [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) using the [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property in SfDigitalGauge.
+You can add alphanumeric characters to [SfDigitalGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html) using the [Value](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Gauges.SfDigitalGauge.html#Syncfusion_UI_Xaml_Gauges_SfDigitalGauge_Value) property in UWP Digital Gauge.
 
 {% tabs %}
 {% highlight xaml %}

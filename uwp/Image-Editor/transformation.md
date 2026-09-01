@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transform in UWP Image Editor control | Syncfusion
-description: Learn here all about Transform support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Transform in UWP Image Editor | Syncfusion®
+description: Discover image transformation features in Syncfusion® UWP Image Editor control including rotation and flip.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Transform in UWP Image Editor (SfImageEditor)
+# Transform in UWP Image Editor
 
 The image editor control can perform the image transformations namely, `rotation` and `flip`. The transformations can be achieved in the following two ways:
 
@@ -22,7 +22,7 @@ To rotate an image, in toolbar, click the `Rotate` button in the submenu of the 
 
 ### Using Code
 
-Programmatically, the `Rotate` method is used in the SfImageEditor control to rotate the image.
+Programmatically, the `Rotate` method is used in the Image Editor control to rotate the image.
 
 N> Angle cannot be specified in code to alter the rotation angle of the image
 
@@ -33,14 +33,14 @@ N> Angle cannot be specified in code to alter the rotation angle of the image
 
 {% endhighlight %}
 
-![rotate](transformation_images/rotate.png)
+![rotate](transformation_images/rotate.jpg)
 
 
 ## Flip
 
 ### From Toolbar
 
-The ImageEditor control can show the mirror image. To get the mirror image of the loaded image, click `Flip` button in the submenu of the `Transforms` in the toolbar. 
+The Image Editor control can show the mirror image. To get the mirror image of the loaded image, click `Flip` button in the submenu of the `Transforms` in the toolbar. 
 
 ### Using Code
 
@@ -55,4 +55,4 @@ N> By default, image flips horizontally.
 
 {% endhighlight %}
 
-![FlipImage](transformation_images/FlipImage.png)
+![FlipImage](transformation_images/FlipImage.jpg)

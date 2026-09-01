@@ -9,13 +9,13 @@ documentation: ug
 
 # Zooming and Panning in UWP Pivot Chart
 
-The SfPivotChart allows you to zoom in, zoom out, and pan the chart area with the help of this support. Zooming is used to view the in-depth information of a specific chart area, when there are a large number of data points inside the chart. Panning is used to navigate the chart area.
+The UWP Pivot Chart allows you to zoom in, zoom out, and pan the chart area with the help of this support. Zooming is used to view the in-depth information of a specific chart area, when there are a large number of data points inside the chart. Panning is used to navigate the chart area.
 
 Zooming and panning allow you to take a close-up look at the data point plotted in the series.
 
 **Initialization**
 
-By using the [`ZoomPanBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior.html) property in the SfPivotChart, you can enable the zooming and panning support as shown in the following code snippet.
+By using the [`ZoomPanBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior.html) property in the UWP Pivot Chart, you can enable the zooming and panning support as shown in the following code snippet.
 
 {% tabs %}
 
@@ -460,7 +460,7 @@ PivotChart1.ZoomPanBehavior.EnablePanning = True
 
 ## Reset zooming and panning
 
-The SfPivotChart supports resetting the default view when you double-tap the chart area by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ResetOnDoubleTap) property to true.
+The UWP Pivot Chart supports resetting the default view when you double-tap the chart area by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html#Syncfusion_UI_Xaml_Charts_ChartZoomPanBehavior_ResetOnDoubleTap) property to true.
 
 {% tabs %}
 

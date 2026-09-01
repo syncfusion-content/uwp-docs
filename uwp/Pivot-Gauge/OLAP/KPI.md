@@ -11,7 +11,7 @@ documentation: ug
 
 The [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) supports displaying Key Performance Indicators (KPIs) from the OLAP cube. The KPI value is viewed with the help of pointers, and the KPI goal is viewed with the help of markers. The KPI status and KPI trend values are represented through user-friendly images like traffic lights, road signs, and standard arrows. Each gauge in the SfPivotGauge represents a member against one KPI combination.
 
-![UWP SfPivotGauge KPI](KPI_images/kpi.png)
+![UWP Pivot Gauge KPI](KPI_images/kpi.png)
 
 A demo sample is available in the following location.
 

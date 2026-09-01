@@ -1,13 +1,13 @@
 ---
 layout: post
-title: How to clear all annotations programmatically | Syncfusion
-description: Learn here about how to clear all the annotations (Text, Shapes, Paths, Custom views) alone added in the image editor.
+title: How to clear all annotations in UWP Image Editor | Syncfusion®
+description: Learn how to clear all annotations in Syncfusion® UWP Image Editor control including text, shapes, and paths.
 platform: uwp
 control: SfImageEditor
 documentation : ug
 ---
 
-# Clear all annotations (Text, Shapes, Paths, etc) from Image Editor
+# How to clear all annotations in UWP Image Editor
 
 By invoking the [`ClearAnnotations`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ClearAnnotations) method of SfImageEditor, you can clear all the annotations (Text, Shapes, Path, and CustomView) added in the image editor without resetting the other edits (Rotation, Flip, Crop, Effects, etc).
 
@@ -64,4 +64,4 @@ private void ToolbarSettings_ToolbarItemSelected(object sender, ToolbarItemSelec
 
 {% endhighlight %}
 
-![ClearAnnotations support in UWP ImageEditor](images/ClearAnnotations.gif)
+![ClearAnnotations support in UWP Image Editor](images/ClearAnnotations.gif)

@@ -8,9 +8,9 @@ documentation: ug
 ---
 # Interactivity in UWP Range Selector
 
-The SfDateTimeRangeNavigator helps the user to visualize large data in a simplified manner. The timespan of the data is represented in the higher level bar and lower level bar. The default timespan is calculated smartly and provides suitable DateTime format and Interval for the given data. It can hold any type of UI element inside the Navigator.
+The UWP Range Selector helps the user to visualize large data in a simplified manner. The timespan of the data is represented in the higher level bar and lower level bar. The default timespan is calculated smartly and provides suitable DateTime format and Interval for the given data. It can hold any type of UI element inside the Navigator.
 
-The following properties are used while selecting the range of data from the SfDateTimeRangeNavigator.
+The following properties are used while selecting the range of data from the UWP Range Selector.
 
 * [`ViewRangeStart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ViewRangeStart)- Gets or sets Navigator's Start Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
 * [`ViewRangeEnd`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ViewRangeEnd)- Gets or sets Navigator's End Thumb value, Value can be DateTime if Minimum and Maximum are set as DateTime values.
@@ -45,7 +45,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 ## Region selection
 
-The selected region of the SfDateTimeRangeNavigator can be viewed in the chart in two ways:
+The selected region of the UWP Range Selector can be viewed in the chart in two ways:
 
 1. By using ZoomFactor and ZoomPosition.
 2. By binding the SelectedData.
@@ -55,7 +55,7 @@ Both ways produce the same result.
 * [`ZoomPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ZoomPosition)- Gets or sets zoom position. Value must fall within 0 to 1. It determines starting value of visible range.
 * [`ZoomFactor`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ZoomFactor)- Gets or sets zoom factor. Value must fall within 0 to 1. It determines delta of visible range.
 
-The ZoomPosition and ZoomFactor of the chart axis can be bound with the SfDateTimeRangeNavigator.
+The ZoomPosition and ZoomFactor of the chart axis can be bound with the UWP Range Selector.
 
 {% tabs %}
 
@@ -310,7 +310,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 ## Resizable scrollbar
 
-SfDateTimeRangeNavigator provides interactive features such as zooming and panning. The navigator has a resizable scrollbar which is used to zoom in a large amount of data and also helps to navigate to a particular timespan by moving the scrollbar.
+UWP Range Selector provides interactive features such as zooming and panning. The navigator has a resizable scrollbar which is used to zoom in a large amount of data and also helps to navigate to a particular timespan by moving the scrollbar.
 
 * [`EnableDeferredUpdate`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_EnableDeferredUpdate)- Gets or sets a value that indicates whether to defer the ValueChanged notification.
 * [`ScrollbarVisibility`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfRangeNavigator_ScrollbarVisibility) – Gets or sets a value indicating whether to enable or disable the scrollbar.

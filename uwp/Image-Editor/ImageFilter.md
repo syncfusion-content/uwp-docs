@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Image Filter in UWP Image Editor control | Syncfusion
-description: Learn here all about Image Filter support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
-platform: UWP
-control: ImageEditor
+title: Image Filter in UWP Image Editor | Syncfusion®
+description: Explore image filters in Syncfusion® UWP Image Editor control including blur, sharpen, hue, and saturation effects.
+platform: uwp
+control: SfImageEditor
 documentation: ug
 ---
 
-# Image Filter in UWP Image Editor (SfImageEditor)
+# Image Filter in UWP Image Editor
 
-By using the SfImageEditor control, you can add effects such as Hue, Saturation, Brightness, Contrast, Blur, and Sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ApplyImageEffect_Syncfusion_UI_Xaml_ImageEditor_Enums_ImageEffect_System_Single_) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageEffect) and [`EffectValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_EffectValue). The ImageEffect is an Enum, which contains the following effects:
+By using the Image Editor control, you can add effects such as Hue, Saturation, Brightness, Contrast, Blur, and Sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ApplyImageEffect_Syncfusion_UI_Xaml_ImageEditor_Enums_ImageEffect_System_Single_) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageEffect) and [`EffectValue`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_EffectValue). The ImageEffect is an Enum, which contains the following effects:
 
 * Hue
 * Saturation
@@ -36,7 +36,7 @@ public MainPage()
 
 {% endhighlight %}
 
-![SfImageEditor hue image effects](ImageFilter_Images/Hue.png)
+![Image Editor hue image effects](ImageFilter_Images/Hue.png)
 
 ## Saturation
 
@@ -53,7 +53,7 @@ public MainPage()
 
 {% endhighlight %}
 
-![SfImageEditor saturation image effects](ImageFilter_Images/Saturation.png)
+![Image Editor saturation image effects](ImageFilter_Images/Saturation.png)
 
 ## Brightness
 
@@ -70,7 +70,7 @@ public MainPage()
 
 {% endhighlight %}
 
-![SfImageEditor brightness image effects](ImageFilter_Images/Brightness.png)
+![Image Editor brightness image effects](ImageFilter_Images/Brightness.png)
 
 ## Contrast
 
@@ -87,7 +87,7 @@ public MainPage()
 
 {% endhighlight %}
 
-![SfImageEditor contrast image effects](ImageFilter_Images/Contrast.png)
+![Image Editor contrast image effects](ImageFilter_Images/Contrast.png)
 
 ## Blur
 
@@ -104,7 +104,7 @@ public MainPage()
 
 {% endhighlight %}
 
-![SfImageEditor blur image effects](ImageFilter_Images/Blur.png)
+![Image Editor blur image effects](ImageFilter_Images/Blur.png)
 
 ## Sharpen
 
@@ -121,8 +121,8 @@ public MainPage()
 
 {% endhighlight %}
 
-![SfImageEditor sharpen image effects](ImageFilter_Images/Sharpen.png)
+![Image Editor sharpen image effects](ImageFilter_Images/Sharpen.png)
 
 N> The ImageEffect enum also contains “None” option, which removes all the previously applied effects, which are not saved and displays the original image. When applying effect using the ApplyImageEffect method, the effects will be saved automatically. But, if you apply effects from the toolbar, each effect will be saved only by clicking the OK button, else all the applied effects will not be saved.
 
-![SfImageEditor image effect image](ImageFilter_Images/ImageFilter.png)
+![Image Editor image effect image](ImageFilter_Images/ImageFilter.png)
