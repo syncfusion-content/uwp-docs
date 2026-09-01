@@ -54,7 +54,7 @@ calendar.ShowNavigationButton = True
 
 {% endtabs %}
 
-![SfCalendar-img12](SfCalendar-images/SfCalendar-img12.jpeg)
+![UWP Calendar-img12](SfCalendar-images/SfCalendar-img12.jpeg)
 
 
 ## Navigating to Previous Month

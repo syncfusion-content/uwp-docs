@@ -7,7 +7,7 @@ control: SfTimePicker
 documentation: ug
 ---
 
-# Getting Started with UWP TimePicker (SfTimePicker)
+# Getting Started with UWP TimePicker
 
 This section provides a quick overview for working with [SfTimePicker](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Input.SfTimePicker.html) control.
 
@@ -157,7 +157,7 @@ timePicker1.FormatString = "HH:mm:ss"
 
 {% endtabs %}
 
-![FormatString in SfTimePicker](GettingStarted_images/GettingStarted_img3.png)
+![FormatString in UWP TimePicker](GettingStarted_images/GettingStarted_img3.png)
 
 ## Customize the SfTimeSelector Header
 

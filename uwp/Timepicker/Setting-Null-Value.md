@@ -7,7 +7,7 @@ control: SfTimePicker
 documentation: ug
 ---
 
-# Setting Null Value in UWP TimePicker (SfTimePicker)
+# Setting Null Value in UWP TimePicker
 
 The AllowNull property can be used to set the SfTimePicker value to Null. When this property is enabled along with the Value property whose value is Null, then the SfTimePicker control will not display any value.
 

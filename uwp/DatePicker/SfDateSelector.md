@@ -11,7 +11,7 @@ documentation: ug
 
 The SfDateSelector control opens inside the drop-down popup.
 
-![Features_img3](Features_images/Features_img3.png)
+![UWP DatePickerFeatures_img3](Features_images/Features_img3.png)
 
 
 The visual elements of the date selector can be customized using the SelectorStyle property.
@@ -50,7 +50,7 @@ The Header property defines the top part of the SfDateSelector.
 
 {% endhighlight %}
 
-![Features_img4](Features_images/Features_img4.png)
+![UWP DatePickerFeatures_img4](Features_images/Features_img4.png)
 
 
 
@@ -122,7 +122,7 @@ The HeaderTemplate property is used to decorate the header.
 
 
 
-![Features_img5](Features_images/Features_img5.png)
+![UWP DatePickerFeatures_img5](Features_images/Features_img5.png)
 
 
 
@@ -199,7 +199,7 @@ The DayCellTemplate property is used to decorate the day cell selection box.
 
 {% endhighlight %}
 
-![Features_img7](Features_images/Features_img7.png)
+![UWP DatePickerFeatures_img7](Features_images/Features_img7.png)
 
 
 ## MonthCellTemplate
@@ -268,7 +268,7 @@ The MonthCellTemplate property is used to decorate the month cell selection box.
 
 {% endhighlight %}
 
-![Features_img8](Features_images/Features_img8.png)
+![UWP DatePicker Features_img8](Features_images/Features_img8.png)
 
 
 
@@ -336,4 +336,4 @@ The YearCellTemplate property is used to decorate the year cell selection box.
 
 			{% endhighlight %}
 			
-![Features_img9](Features_images/Features_img9.png)
+![UWP DatePickerFeatures_img9](Features_images/Features_img9.png)

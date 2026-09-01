@@ -37,7 +37,7 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 The following image shows the control with various accent brushes:
 
-![Appearance-and-Styling_img1](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![UWP DatePickerAppearance-and-Styling_img1](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 ## Selected Foreground
@@ -77,4 +77,4 @@ The SelectedForeground property is used to change the foreground color of the se
 {% endhighlight  %}
 
 
-![Appearance-and-Styling_img2](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![UWP DatePickerAppearance-and-Styling_img2](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)

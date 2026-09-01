@@ -56,8 +56,8 @@ combo.SecondsInterval = 15
 
 ## MinuteInterval
 
-![Minutes-and-Seconds-intervals_img2](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img2.png)
+![UWP DateTimePicker Minutes-and-Seconds-intervals_img2](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img2.png)
 
 ## SecondsInterval
 
-![Minutes-and-Seconds-intervals_img1](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img1.png)
+![UWP DateTimePicker Minutes-and-Seconds-intervals_img1](Minutes-and-Seconds-intervals_images/Minutes-and-Seconds-intervals_img1.png)
