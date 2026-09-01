@@ -16,7 +16,7 @@ Quantitative scale is displayed with two types of ticks:
 
 ## Customizing ticks
 
-The Interval property is used to calculate the major tick count for a SfBulletGraph. Similarly, minor ticks are calculated using the MinorTicksPerInterval property.
+The Interval property is used to calculate the major tick count for a UWP Bullet Graph. Similarly, minor ticks are calculated using the MinorTicksPerInterval property.
 
 The stroke of the major and minor ticks is customized by setting the [`MajorTickStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_MajorTickStroke) and [`MinorTickStroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_MinorTickStroke) properties. The size can be modified by using the [`MajorTickSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_MajorTickSize) and [`MinorTickSize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_MinorTickSize) properties. By setting [`MajorTickStrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_MajorTickStrokeThickness) and [`MinorTickStrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_MinorTickStrokeThickness), the stroke's thickness can be customized.
 

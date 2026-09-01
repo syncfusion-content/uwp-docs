@@ -9,12 +9,12 @@ documentation: ug
 
 # Getting Started with UWP Smith Chart control
 
-This section explains the steps required to build an application with SfSmithChart.
+This section explains the steps required to build an application with UWP Smith Chart.
 
 ## Steps
 
 1. Create a new UWP project using Visual Studio. For more [details](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/bb546958(v=vs.90)).
-2. Add the SfSmithChart assembly to your application. 
+2. Add the UWP Smith Chart assembly to your application. 
 3. Initialize the smith chart control.
 4. Add a header to the smith chart control.
 5. Add series to the smith chart control.
@@ -68,7 +68,7 @@ xmlns:syncfusion="using:Syncfusion.UI.Xaml.SmithChart"
 {{ codesnippet1 | OrderList_Indent_Level_1 }} 
 
 
-### Add SfSmithChart from Toolbox
+### Add UWP Smith Chart from Toolbox
 
 Drag and drop the SfSmithChart control from the Toolbox into your application.
 
@@ -76,7 +76,7 @@ Drag and drop the SfSmithChart control from the Toolbox into your application.
 
 Now the Syncfusion.SfSmithChart.UWP reference has been added to the application references and the xmlns namespace code has been generated in MainPage.xaml as below.
 
-![Project Solution Window contains SfSmithChart reference](Getting-Started_images/Getting-Started_img3.png)
+![Project Solution Window contains UWP Smith Chart reference](Getting-Started_images/Getting-Started_img3.png)
 
 ![Getting-Started_images4](Getting-Started_images/Getting-Started_img4.png)
 
@@ -310,7 +310,7 @@ Specify **Impedance Transmission** as the header in the below code example.
 
 ### Adding axes
 
-The following code example illustrates how to add and customize the resistance (Horizontal) and reactance (Radial) axes in the SfSmithChart.
+The following code example illustrates how to add and customize the resistance (Horizontal) and reactance (Radial) axes in the UWP Smith Chart.
 
 {% highlight xaml %}
 
@@ -433,11 +433,11 @@ public class TransmissionData
     
 The following smith chart is created as the result of the above code.
 
-![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
+![UWP Smith Chart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
 
 ## Create a simple smith chart from code behind (C#)
 
-Some developers prefer code behind as the first choice for development to create things dynamically. This section explains the steps required to create SfSmithChart from code behind.
+Some developers prefer code behind as the first choice for development to create things dynamically. This section explains the steps required to create UWP Smith Chart from code behind.
 
 ### Adding assembly reference
 
@@ -453,7 +453,7 @@ using Syncfusion.UI.Xaml.SmithChart;
 
 ### Initialize the chart
 
-To initialize the chart, create an instance for the SfSmithChart as below.
+To initialize the chart, create an instance for the UWP Smith Chart as below.
 
 {% highlight c# %}
 
@@ -465,7 +465,7 @@ SfSmithChart chart = new SfSmithChart();
 
 ### Adding header to the smith chart
 
-The header of the SfSmithChart acts as the title and it is used to identify the purpose of the smith chart.
+The header of the UWP Smith Chart acts as the title and it is used to identify the purpose of the smith chart.
 
 {% highlight c# %}
 
@@ -475,7 +475,7 @@ chart.Header = "Impedance Transmission";
 
 ### Adding axes
 
-The following code example illustrates how to add and customize the resistance (Horizontal) and reactance (Radial) axes to the SfSmithChart.
+The following code example illustrates how to add and customize the resistance (Horizontal) and reactance (Radial) axes to the UWP Smith Chart.
 
 {% highlight c# %}
 
@@ -577,4 +577,4 @@ this.Grid1.Children.Add(chart);
 
 The following output is displayed as the result of the above code example.
 
-![SfSmithChart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)
+![UWP Smith Chart with Line series including legend](Getting-Started_images/Getting-Started_img7.png)

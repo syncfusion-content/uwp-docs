@@ -36,7 +36,7 @@ The SfPivotGauge control can be initialized and added to the application through
 
 Now, the SfPivotGauge control will be added to the designer as follows.
 
-![UWP SfPivotGauge Designer](Getting-Started_images/Designer.png)
+![UWP Pivot Gauge Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
@@ -229,7 +229,7 @@ End Namespace
 
 2. Then, name the class *ProductSalesViewModel* and click **OK**.
 
-The following code snippet illustrates how to define relational data for the SfPivotGauge.
+The following code snippet illustrates how to define relational data for the UWP Pivot Gauge.
 
 {% tabs %}
 
@@ -367,7 +367,7 @@ Relational data can be bound to [SfPivotGauge](https://help.syncfusion.com/cr/uw
 
 **Through XAML**
 
-The relational data mentioned in the *ProductSalesViewModel* is bound to the [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control with the help of `DataContext`. In addition to this, the `PivotRows`, [PivotColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_PivotColumns), and [PivotCalculations](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_PivotCalculations) should be assigned to SfPivotGauge for populating the data.
+	The relational data mentioned in the *ProductSalesViewModel* is bound to the [SfPivotGauge](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html) control with the help of `DataContext`. In addition to this, the `PivotRows`, [PivotColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_PivotColumns), and [PivotCalculations](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotGauge.SfPivotGauge.html#Syncfusion_UI_Xaml_PivotGauge_SfPivotGauge_PivotCalculations) should be assigned to UWP Pivot Gauge for populating the data.
 
 {% tabs %}
 
@@ -490,4 +490,4 @@ End Namespace
 
 Finally, run the application to generate the following output.
 
-![UWP SfPivotGauge Relational Data](Getting-Started_images/Relational.png)
+![UWP Pivot Gauge Relational Data](Getting-Started_images/Relational.png)

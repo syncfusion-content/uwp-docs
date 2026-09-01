@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in UWP Pivot Chart
 
-Localization is the key feature to provide software solutions targeted at global users. The SfPivotChart allows users to localize the control to a specific locale and supports “resx” based localization.
+Localization is the key feature to provide software solutions targeted at global users. The UWP Pivot Chart allows users to localize the control to a specific locale and supports “resx” based localization.
 
 You should perform the following steps to localize the control:
 
@@ -76,7 +76,7 @@ End Class
 
 ## RTL
 
-The SfPivotChart provides RTL support to display the content from right to left direction by setting the `FlowDirection` property to **RightToLeft**.
+The UWP Pivot Chart provides RTL support to display the content from right to left direction by setting the `FlowDirection` property to **RightToLeft**.
 
 {% tabs %}
 

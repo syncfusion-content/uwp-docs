@@ -606,7 +606,7 @@ N> [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.
 
 ### Customization of ShapeAnnotation
 
-SfChart allows customization of shape annotation using the following properties.
+UWP Charts allows customization of shape annotation using the following properties.
 
 * [`Stroke`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_Stroke) - Represents the brush for the annotation outline.
 * [`StrokeThickness`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ShapeAnnotation.html#Syncfusion_UI_Xaml_Charts_ShapeAnnotation_StrokeThickness)- Represents the thickness of the annotation outline.

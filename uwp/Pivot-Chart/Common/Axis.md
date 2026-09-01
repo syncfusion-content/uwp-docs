@@ -13,7 +13,7 @@ Axis is used to locate a data point inside the chart area. Generally, two axes a
 
 ## Axis style
 
-The primary axis style can be modified by using the `PrimaryAxisStyle` property and the secondary axis style can be modified by using the `SecondaryAxisStyle` property in the SfPivotChart.
+The primary axis style can be modified by using the `PrimaryAxisStyle` property and the secondary axis style can be modified by using the `SecondaryAxisStyle` property in the UWP Pivot Chart.
 
 ### Grid line style
 
@@ -296,7 +296,7 @@ PivotChart1.PrimaryAxisStyle.LabelRotationAngle = -20
 
 ## Show/hide axis
 
-The visibility of pivot chart axis can be toggled by setting the `Visibility` property of `PrimaryAxis` or `SecondaryAxis`. The following code snippet shows how to hide the primary axis of the SfPivotChart.
+The visibility of pivot chart axis can be toggled by setting the `Visibility` property of `PrimaryAxis` or `SecondaryAxis`. The following code snippet shows how to hide the primary axis of the UWP Pivot Chart.
 
 {% tabs %}
 

@@ -22,7 +22,7 @@ The following topics explain in detail about the axis and its parts.
 
 ### MajorGridlines
 
-By default, major gridlines are automatically added to the Axis. SfSmithChart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the [`ShowMajorGridlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_ShowMajorGridlines) property.
+By default, major gridlines are automatically added to the Axis. UWP Smith Chart supports the customization of major gridlines. The visibility of the major gridlines can be controlled by using the [`ShowMajorGridlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_ShowMajorGridlines) property.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ chart.HorizontalAxis.ShowMajorGridlines = false;
 
 **MajorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the major gridlines by defining the [`MajorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MajorGridlineStyle) property as shown in the below code snippet.
+UWP Smith Chart provides support to customize the style of the major gridlines by defining the [`MajorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MajorGridlineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -139,11 +139,11 @@ chart.HorizontalAxis.MinorGridlinesCount = 12;
     
 {% endtabs %}
 
-![SfSmithChart MinorGridlinesCount](Axes_images/Axes_img4.png)
+![UWP Smith Chart MinorGridlinesCount](Axes_images/Axes_img4.png)
 
 **MinorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the minor gridlines by defining the [`MinorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MinorGridlineStyle) property as shown in the below code snippet.
+UWP Smith Chart provides support to customize the style of the minor gridlines by defining the [`MinorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MinorGridlineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -173,11 +173,11 @@ chart.HorizontalAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as S
 
 {% endtabs %}
 
-![SfSmithChart MinorGridlineStyle](Axes_images/Axes_img5.png)
+![UWP Smith Chart MinorGridlineStyle](Axes_images/Axes_img5.png)
 
 ## AxisLine
 
-SfSmithChart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_AxisLineStyle) property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
+UWP Smith Chart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_AxisLineStyle) property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -207,7 +207,7 @@ chart.HorizontalAxis.AxisLineStyle = this.Grid1.Resources["lineStyle"] as Style;
     
 {% endtabs %}
 
-![SfSmithChart AxisLine](Axes_images/Axes_img6.png)
+![UWP Smith Chart AxisLine](Axes_images/Axes_img6.png)
 
 ### LabelPlacement
 
@@ -235,7 +235,7 @@ chart.HorizontalAxis.LabelPlacement = LabelPlacement.Inside;
     
 {% endtabs %}
 
-![SfSmithChart LabelPlacement](Axes_images/Axes_img7.png)
+![UWP Smith Chart LabelPlacement](Axes_images/Axes_img7.png)
 
 ### LabelIntersectAction
 
@@ -263,7 +263,7 @@ chart.HorizontalAxis.LabelIntersectAction = LabelIntersectActions.None;
     
 {% endtabs %}
 
-![SfSmithChart LabelIntersectAction](Axes_images/Axes_img8.png)
+![UWP Smith Chart LabelIntersectAction](Axes_images/Axes_img8.png)
 
 ## Radial axis
 
@@ -271,7 +271,7 @@ Radial axis scale is used to measure the normalized reactance values.
 
 ### MajorGridlines
 
-By default, major gridlines are automatically added to the Axis. SfSmithChart supports customization of major gridline. The visibility of the major gridlines can be controlled by using the [`ShowMajorGridlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_ShowMajorGridlines) property.
+By default, major gridlines are automatically added to the Axis. UWP Smith Chart supports customization of major gridline. The visibility of the major gridlines can be controlled by using the [`ShowMajorGridlines`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_ShowMajorGridlines) property.
 
 {% tabs %}
 
@@ -296,11 +296,11 @@ chart.RadialAxis.ShowMajorGridlines = false;
     
 {% endtabs %}
 
-![SfSmithChart MajorGridlines](Axes_images/Axes_img9.png)
+![UWP Smith Chart MajorGridlines](Axes_images/Axes_img9.png)
 
 **MajorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the major gridlines by defining the [`MajorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MajorGridlineStyle) property as shown in the below code snippet.
+UWP Smith Chart provides support to customize the style of the major gridlines by defining the [`MajorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MajorGridlineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -329,7 +329,7 @@ chart.RadialAxis.MajorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
     
 {% endtabs %}
 
-![SfSmithChart MajorGridlineStyle](Axes_images/Axes_img10.png)
+![UWP Smith Chart MajorGridlineStyle](Axes_images/Axes_img10.png)
 
 ### MinorGridlines
 
@@ -358,7 +358,7 @@ chart.RadialAxis.ShowMinorGridlines = true;
     
 {% endtabs %}
 
-![SfSmithChart MinorGridlines](Axes_images/Axes_img11.png)
+![UWP Smith Chart MinorGridlines](Axes_images/Axes_img11.png)
 
 **MinorGridlinesCount**
 
@@ -388,11 +388,11 @@ chart.RadialAxis.MinorGridlinesCount = 12;
     
 {% endtabs %}
 
-![SfSmithChart MinorGridlinesCount](Axes_images/Axes_img12.jpg)
+![UWP Smith Chart MinorGridlinesCount](Axes_images/Axes_img12.jpg)
 
 **MinorGridlineStyle**
 
-SfSmithChart provides support to customize the style of the minor gridlines by defining the [`vMinorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MinorGridlineStyle) property as shown in the below code snippet.
+UWP Smith Chart provides support to customize the style of the minor gridlines by defining the [`vMinorGridlineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_MinorGridlineStyle) property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -422,11 +422,11 @@ chart.RadialAxis.MinorGridlineStyle = this.Grid1.Resources["lineStyle"] as Style
     
 {% endtabs %}
 
-![SfSmithChart MinorGridlineStyle](Axes_images/Axes_img13.jpg)
+![UWP Smith Chart MinorGridlineStyle](Axes_images/Axes_img13.jpg)
 
 ### AxisLine
 
-SfSmithChart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_AxisLineStyle) property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
+UWP Smith Chart provides support to customize the style of the axis line by defining the [`AxisLineStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartAxis.html#Syncfusion_UI_Xaml_SmithChart_ChartAxis_AxisLineStyle) property and change the visibility by using *ShowAxisLine* property as shown in the below code snippet.
 
 {% tabs %}
 
@@ -456,7 +456,7 @@ chart.RadialAxis.AxisLineStyle = this.Grid1.Resources["lineStyle"] as Style;
     
 {% endtabs %}
 
-![SfSmithChart AxisLine](Axes_images/Axes_img14.png)
+![UWP Smith Chart AxisLine](Axes_images/Axes_img14.png)
 
 ### LabelPlacement
 
@@ -484,7 +484,7 @@ chart.RadialAxis.LabelPlacement = LabelPlacement.Inside;
     
 {% endtabs %}
 
-![SfSmithChart LabelPlacement](Axes_images/Axes_img15.png)
+![UWP Smith Chart LabelPlacement](Axes_images/Axes_img15.png)
 
 ### LabelIntersectAction
 
@@ -512,7 +512,7 @@ chart.RadialAxis.LabelIntersectAction = LabelIntersectActions.None;
     
 {% endtabs %}
 
-![SfSmithChart LabelIntersectAction](Axes_images/Axes_img16.png)
+![UWP Smith Chart LabelIntersectAction](Axes_images/Axes_img16.png)
 
 ## Events
 
@@ -543,4 +543,4 @@ chart.RadialAxis.LabelCreated += RadialAxis_LabelCreated;
 
 {{ codesnippet1 | UnOrderList_Indent_Level_1 }} 
 
-![SfSmithChart LabelCreated](Axes_images/Axes_img17.png)
+![UWP Smith Chart LabelCreated](Axes_images/Axes_img17.png)

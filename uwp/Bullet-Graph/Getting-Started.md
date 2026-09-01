@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with UWP Bullet Graph
 
-This section explains you the steps required to configure the [`SfBulletGraph`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) and also explains the steps to add basic elements of **SfBulletGraph** through various API’s available within it.
+This section explains you the steps required to configure the [`SfBulletGraph`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html) and also explains the steps to add basic elements of **UWP Bullet Graph** through various API’s available within it.
 
-## Configuring SfBulletGraph
+## Configuring UWP Bullet Graph
 
-**SfBulletGraph** is available in the following assembly and namespace:
+**UWP Bullet Graph** is available in the following assembly and namespace:
 
 **Assembly**: Syncfusion.SfBulletGraph.UWP
 
@@ -34,13 +34,13 @@ this.Grid.Children.Add(bullet);
 {% endhighlight %}
 {% endtabs %}
 
-![Output image of SfBulletGraph getting started](Getting-Started_images/Getting-Started_img1.jpg)
+![Output image of UWP Bullet Graph getting started](Getting-Started_images/Getting-Started_img1.jpg)
 
-As you can see now in the above image, the SfBulletGraph displays its default elements. To customize its element, you have to add respective elements to SfBulletGraph, following section contains the steps to add the basic elements to SfBulletGraph.
+As you can see now in the above image, the UWP Bullet Graph displays its default elements. To customize its element, you have to add respective elements to UWP Bullet Graph, following section contains the steps to add the basic elements to UWP Bullet Graph.
 
 ## Adding caption
 
-You can assign a caption to **SfBulletGraph** by making use of “Caption” property and also you can position it either near or far using [`CaptionPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_CaptionPosition) property.
+You can assign a caption to **UWP Bullet Graph** by making use of “Caption” property and also you can position it either near or far using [`CaptionPosition`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_CaptionPosition) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -59,11 +59,11 @@ this.Grid.Children.Add(bullet);
 {% endhighlight %}
 {% endtabs %}
 
-![Output image of the SfBulletGraph with added caption](Getting-Started_images/Getting-Started_img2.jpg)
+![Output image of the UWP Bullet Graph with added caption](Getting-Started_images/Getting-Started_img2.jpg)
 
 ## Configuring ticks and labels 
 
-You can configure Ticks and Labels of Quantitative Scale by making use of following API’s available in SfBulletGraph.
+You can configure Ticks and Labels of Quantitative Scale by making use of following API’s available in UWP Bullet Graph.
 
 They are:
 
@@ -108,11 +108,11 @@ this.Grid.Children.Add(bullet);
 {% endhighlight %}
 {% endtabs %}
 
-![Output image of SfBulletGraph with configured labels and ticks](Getting-Started_images/Getting-Started_img3.jpg)
+![Output image of UWP Bullet Graph with configured labels and ticks](Getting-Started_images/Getting-Started_img3.jpg)
 
 ## Adding ranges 
 
-You can add ranges to **SfBulletGraph** by creating ranges collection using [`QualitativeRanges`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRanges). 
+You can add ranges to **UWP Bullet Graph** by creating ranges collection using [`QualitativeRanges`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_QualitativeRanges).
 
 {% tabs %}
 {% highlight xaml %}
@@ -170,7 +170,7 @@ this.Grid.Children.Add(bullet);
 {% endhighlight %}
 {% endtabs %}
 
-SfBulletGraph ranges are displayed as follows.
+UWP Bullet Graph ranges are displayed as follows.
 
 ![Output image of bullet graph with ranges](Getting-Started_images/Getting-Started_img4.jpg)
 

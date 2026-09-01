@@ -9,7 +9,7 @@ documentation: ug
 
 # Drill Operation in UWP Pivot Chart
 
-This is the basic feature of SfPivotChart through which the amount of information can be limited for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the expanders present in primary axis labels.
+This is the basic feature of UWP Pivot Chart through which the amount of information can be limited for a better view. It allows you to drill down to access the detailed level of data or drill up to see the summarized data by using the expanders present in primary axis labels.
 
 ## Drill down/drill up
 
@@ -17,13 +17,13 @@ Drill up, also called as roll up; it navigates from more detailed data to less d
 
 Drill down, also called as roll down; it is the reverse of drill up operation which navigates from less detailed data to more detailed data by climbing down the concept hierarchy for the dimension.
 
-While binding hierarchical dimensions (for example, the time dimension includes 3 levels namely year, quarter, and month), the SfPivotChart allows you to visualize the data for different levels by using the collapsible labels which are illustrated in the following screenshot.
+While binding hierarchical dimensions (for example, the time dimension includes 3 levels namely year, quarter, and month), the UWP Pivot Chart allows you to visualize the data for different levels by using the collapsible labels which are illustrated in the following screenshot.
 
 ![Drill-operation](Drill-Operation_images/Drill-operation.png)
 
 ## Drill types
 
-The following drill types are supported in the SfPivotChart:
+The following drill types are supported in the UWP Pivot Chart:
 
 * Drill member
 * Drill position
@@ -31,7 +31,7 @@ The following drill types are supported in the SfPivotChart:
 
 **Drill member**
 
-The drill member is the default drilling type performed in the SfPivotChart. When multiple dimensions are added in an axis, expanding a single member expands the corresponding member element across all of its positions. The following code snippet and screenshot illustrate how the elements are drilled in drill member type.
+The drill member is the default drilling type performed in the UWP Pivot Chart. When multiple dimensions are added in an axis, expanding a single member expands the corresponding member element across all of its positions. The following code snippet and screenshot illustrate how the elements are drilled in drill member type.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ pivotChart1.OlapDataManager.CurrentReport.DrillType = DrillType.DrillPosition
 
 **Drill replace**
 
-The SfPivotChart supports the drill replace type, in which the control tends to display only the immediate child members and ancestors on drill-down. The following code snippet and screenshot illustrate how the elements are drilled in the drill replace type.
+The UWP Pivot Chart supports the drill replace type, in which the control tends to display only the immediate child members and ancestors on drill-down. The following code snippet and screenshot illustrate how the elements are drilled in the drill replace type.
 
 {% tabs %}
 
@@ -95,13 +95,13 @@ N> The drilled-down member can be replaced with drilled data and it cannot be dr
 
 ![Drill-replace](Drill-Operation_images/Drill-replace.png)
 
-N> Since the `DrillType` property interacts with the `OlapDataManager`, you should call the `DataBind()` method of SfPivotChart after assigning the value to this property.
+N> Since the `DrillType` property interacts with the `OlapDataManager`, you should call the `DataBind()` method of UWP Pivot Chart after assigning the value to this property.
 
 ## Show/hide expanders
 
-The expander refers to the arrow sign prior to a member present in the primary axis labels. The visibility of expanders in the SfPivotChart can be toggled using the `ShowExpanders` property available in the OLAP report.
+The expander refers to the arrow sign prior to a member present in the primary axis labels. The visibility of expanders in the UWP Pivot Chart can be toggled using the `ShowExpanders` property available in the OLAP report.
 
-Refer to the following code snippet to hide the expanders in the SfPivotChart.
+Refer to the following code snippet to hide the expanders in the UWP Pivot Chart.
 
 {% tabs %}
 

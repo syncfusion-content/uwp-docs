@@ -851,7 +851,7 @@ chart.Series.Add(series);
 
 Logarithmic Axis does not support zero or negative values.
 
-The following screenshot illustrates the SfChart with LogarithmicAxis.
+The following screenshot illustrates the UWP Charts with LogarithmicAxis.
 
 ![LogarithmicAxis support in UWP Chart](Axis_images/Axis_img6.png)
 
@@ -931,7 +931,7 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-The following screenshot illustrates SfChart with multiple axes.
+The following screenshot illustrates UWP Charts with multiple axes.
 
 ![Multiple axes support in UWP Chart](Axis_images/Axis_img7.jpg)
 
@@ -1763,7 +1763,7 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ## Custom labels
 
-SfChart allows user to define the labels for the axis. For defining the axis label you have to set the [`LabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_LabelContent) and [`Position`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) properties.You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as demonstrated in the following code snippet.
+UWP Charts allows user to define the labels for the axis. For defining the axis label you have to set the [`LabelContent`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_LabelContent) and [`Position`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxisLabel.html#Syncfusion_UI_Xaml_Charts_ChartAxisLabel_Position) properties.You can define the labels using [`CustomLabels`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartAxis.html#Syncfusion_UI_Xaml_Charts_ChartAxis_CustomLabels) property as demonstrated in the following code snippet.
 
 {% tabs %}
 
@@ -1981,7 +1981,7 @@ chart.SecondaryAxis = new NumericalAxis()
 
 ## Origin customization
 
-SfChart allows you to customize the origin. By default the axis will be rendered with(0,0) as origin in x and y-axes.
+UWP Charts allows you to customize the origin. By default the axis will be rendered with(0,0) as origin in x and y-axes.
 
 ### ShowAxisNextToOrigin
 

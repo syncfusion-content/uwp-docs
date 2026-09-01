@@ -34,7 +34,7 @@ The below code example explains how to create a simple [`LineSeries`](https://he
 
 {% highlight C# %} 
 
-//Create SfSmithChart instance
+//Create UWP Smith Chart instance
 SfSmithChart chart = new SfSmithChart();
 //Create line series
 LineSeries series = new LineSeries();
@@ -78,11 +78,11 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![SfSmithChart Customizing LineSeries](Series_images/Series_img2.png)
+![UWP Smith Chart Customizing LineSeries](Series_images/Series_img2.png)
 
 ## Animation
 
-SfSmithChart allows animating the chart series on loading whenever the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_ItemsSource) changes. Animation in the chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_EnableAnimation) property as True and defining the corresponding animation speed with the [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_AnimationDuration) property.
+UWP Smith Chart allows animating the chart series on loading whenever the [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_ItemsSource) changes. Animation in the chart can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_EnableAnimation) property as True and defining the corresponding animation speed with the [`AnimationDuration`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.SmithChart.ChartSeries.html#Syncfusion_UI_Xaml_SmithChart_ChartSeries_AnimationDuration) property.
 
 {% tabs %}
 

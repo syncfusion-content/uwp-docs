@@ -11,7 +11,7 @@ documentation: ug
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) provides interactive features such as zooming, selection, and tracking data points.
 
-The following interactive features are supported in SfChart.
+The following interactive features are supported in UWP Charts.
 
 * Tooltip
 * TrackBall
@@ -77,7 +77,7 @@ chart.Series.Add(series2);
 
 ### Customizing tooltip using ChartTooltipBehavior
 
-The [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the SfChart Behaviors collection.
+The [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) is commonly used for all series to customize the tooltip. For customizing the tooltip, you can create an instance [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html) and add it to the UWP Charts Behaviors collection.
 
 The following properties are used to customize and configure tooltip which is available in the [`ChartTooltipBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTooltipBehavior.html).
 
@@ -696,7 +696,7 @@ N> The `ChartTooltipBehavior` is commonly used for all series to customize the t
 
 [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) enables you to track a data point closer to the cursor position. The x values are determined from the position of the vertical line in the axis and y values are determined from the points touching the vertical line in the series.
 
-### Adding trackball to the SfChart
+### Adding trackball to the UWP Charts
 
 You can create an instance [`ChartTrackBallBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartTrackBallBehavior.html) and add it to the Behaviors collection.
 
@@ -1769,7 +1769,7 @@ Series with visual data editing has support for following events,
 
 Zooming and panning provides you to take a close-up look of the data point plotted in the series
 
-### Adding zooming/panning to the SfChart
+### Adding zooming/panning to the UWP Charts
 
 You can create an instance [`ChartZoomPanBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior.html) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors) collection.
 
@@ -2315,7 +2315,7 @@ The following events are available in [`SfChart`](https://help.syncfusion.com/cr
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) supports selection that enables you to select a segment in a series or series itself by using [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html). 
 
-### Adding selection behavior to SfChart
+### Adding selection behavior to UWP Charts
 
 You can create an instance [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSelectionBehavior.html) and add it to the [`Behaviors`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html#Syncfusion_UI_Xaml_Charts_SfChart_Behaviors) collection.
 

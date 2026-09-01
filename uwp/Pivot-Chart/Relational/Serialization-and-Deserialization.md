@@ -13,7 +13,7 @@ This support allows you to serialize and deserialize the settings of SfPivotChar
 
 ## Serialization
 
-Serialization allows you to save the settings of the SfPivotChart by using the [`Serialize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_Serialize) method. It exports the current SfPivotChart control settings to an XML file and it can be done with the help of one of the following methods.
+Serialization allows you to save the settings of the UWP Pivot Chart by using the [`Serialize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_Serialize) method. It exports the current SfPivotChart control settings to an XML file and it can be done with the help of one of the following methods.
 
 ### Serialize using FileSavePicker
 
@@ -187,7 +187,7 @@ Me.pivotChart.Deserialize(storageFile)
 
 ### Deserialize from XML string
 
-It allows you to reload the SfPivotChart with the settings available in the XML string. This can be achieved with the help of [`Deserialize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_Deserialize) method by passing the XML string as parameter.
+It allows you to reload the UWP Pivot Chart with the settings available in the XML string. This can be achieved with the help of [`Deserialize`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.PivotChart.SfPivotChart.html#Syncfusion_UI_Xaml_PivotChart_SfPivotChart_Deserialize) method by passing the XML string as parameter.
 
 {% tabs %}
 

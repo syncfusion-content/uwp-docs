@@ -250,7 +250,7 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 {% endtabs %}
 
-![Customization of SfDateTimeRangeNavigator in UWP](Customization_images/Customization_img6.jpeg)
+![Customization of UWP Range Selector](Customization_images/Customization_img6.jpeg)
 
 * [`LowerLevelBarStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLevelBarStyle)- Gets or sets the styles for the lower label bar of SfDateTimeRangeNavigator.
 * [`LowerLabelStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LowerLabelStyle) – Gets or sets the lower label style.
@@ -318,11 +318,11 @@ SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
 
 ### Visibility of label bar
  
-SfDateTimeRangeNavigator provides support to customize the visibility of the lower bar and upper bar using the `LowerLabelBarVisibility` and `UpperLabelBarVisibility` types.
+UWP Range Selector provides support to customize the visibility of the lower bar and upper bar using the `LowerLabelBarVisibility` and `UpperLabelBarVisibility` types.
 
 ## Thumb style customization
 
-SfDateTimeRangeNavigator provides the following properties to customize the left and right thumb.
+UWP Range Selector provides the following properties to customize the left and right thumb.
 
 * [`LeftThumbStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_LeftThumbStyle) - Gets or sets the thumb style for left thumb.
 * [`RightThumbStyle`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfDateTimeRangeNavigator.html#Syncfusion_UI_Xaml_Charts_SfDateTimeRangeNavigator_RightThumbStyle) - Gets or sets the right thumb style.

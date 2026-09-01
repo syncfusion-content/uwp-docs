@@ -39,7 +39,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![SfSmithChart Add Shapes](Data-Markers_images/Data-Markers_img1.png)
+![UWP Smith Chart Add Shapes](Data-Markers_images/Data-Markers_img1.png)
 
 ## Customizing marker
 
@@ -70,7 +70,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![SfSmithChart Customizing Marker](Data-Markers_images/Data-Markers_img2.png)
+![UWP Smith Chart Customizing Marker](Data-Markers_images/Data-Markers_img2.png)
 
 **MarkerTemplate**
 
@@ -106,7 +106,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![SfSmithChart MarkerTemplate](Data-Markers_images/Data-Markers_img3.png)
+![UWP Smith Chart MarkerTemplate](Data-Markers_images/Data-Markers_img3.png)
 
 ## Add labels
 
@@ -140,7 +140,7 @@ N> The position changed data label will be connected by using a connector line a
 
 The following screenshot illustrates how the data labels can be positioned.
 
-![SfSmithChart Add Labels](Data-Markers_images/Data-Markers_img4.png)
+![UWP Smith Chart Add Labels](Data-Markers_images/Data-Markers_img4.png)
 
 **LabelStyle**
 
@@ -180,7 +180,7 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![SfSmithChart LabelStyle](Data-Markers_images/Data-Markers_img5.png)
+![UWP Smith Chart LabelStyle](Data-Markers_images/Data-Markers_img5.png)
 
 **LabelTemplate**
 
@@ -225,4 +225,4 @@ chart.Series.Add(series);
     
 {% endtabs %}
 
-![SfSmithChart LabelTemplate](Data-Markers_images/Data-Markers_img6.png)
+![UWP Smith Chart LabelTemplate](Data-Markers_images/Data-Markers_img6.png)

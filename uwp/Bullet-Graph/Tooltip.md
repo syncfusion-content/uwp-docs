@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip in UWP Bullet Graph
 
-Tooltip in SfBulletGraph is used to view the values of FeaturedMeasure, ComparativeMeasure, and QualitativeRange in a required design.
+Tooltip in UWP Bullet Graph is used to view the values of FeaturedMeasure, ComparativeMeasure, and QualitativeRange in a required design.
 
-This tooltip is displayed when the mouse is over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange. On touch devices, it is displayed on holding over the FeaturedMeasure, ComparativeMeasure, and QualitativeRange of SfBulletGraph.
+This tooltip is displayed when the mouse is over the FeaturedMeasure, ComparativeMeasure, or QualitativeRange. On touch devices, it is displayed on holding over the FeaturedMeasure, ComparativeMeasure, and QualitativeRange of UWP Bullet Graph.
 
-The SfBulletGraph tooltip is displayed only when the [`ShowToolTip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ShowToolTip) property is set to true.
+The UWP Bullet Graph tooltip is displayed only when the [`ShowToolTip`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.BulletGraph.SfBulletGraph.html#Syncfusion_UI_Xaml_BulletGraph_SfBulletGraph_ShowToolTip) property is set to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -35,7 +35,7 @@ this.Grid.Children.Add(bullet);
 
 ## Customizing featured measure tooltip
 
-You can display the value of FeaturedMeasure of SfBulletGraph in a tooltip that is used to view the FeaturedMeasure value. The FeaturedMeasureToolTipTemplate is of DataTemplate type by using this property, the default appearance of the FeaturedMeasure tooltip can be customized.
+You can display the value of FeaturedMeasure of UWP Bullet Graph in a tooltip that is used to view the FeaturedMeasure value. The FeaturedMeasureToolTipTemplate is of DataTemplate type by using this property, the default appearance of the FeaturedMeasure tooltip can be customized.
 
 {% highlight xml %}
 
@@ -55,7 +55,7 @@ You can display the value of FeaturedMeasure of SfBulletGraph in a tooltip that 
 
 ## Customizing comparative measure tooltip
 
-You can display the value of ComparativeMeasure of SfBulletGraph in a tooltip that is used to view the ComparativeMeasure value. The ComparativeMeasureToolTipTemplate is of DataTemplate type; by using this property, the default appearance of the ComparativeMeasure tooltip can be customized.
+You can display the value of ComparativeMeasure of UWP Bullet Graph in a tooltip that is used to view the ComparativeMeasure value. The ComparativeMeasureToolTipTemplate is of DataTemplate type; by using this property, the default appearance of the ComparativeMeasure tooltip can be customized.
 
 {% highlight xml %}
 
@@ -76,7 +76,7 @@ You can display the value of ComparativeMeasure of SfBulletGraph in a tooltip th
 
 ## Customizing qualitative range tooltip
 
-You can display the value of QualitativeRange of SfBulletGraph in a tooltip that is used to view the Start and End value of QualitativeRange. The QualitativeRangeToolTipTemplate is of DataTemplate type; by using this property, the default appearance of the QualitativeRange tooltip can be customized.
+You can display the value of QualitativeRange of UWP Bullet Graph in a tooltip that is used to view the Start and End value of QualitativeRange. The QualitativeRangeToolTipTemplate is of DataTemplate type; by using this property, the default appearance of the QualitativeRange tooltip can be customized.
 
 {% highlight xml %}
 

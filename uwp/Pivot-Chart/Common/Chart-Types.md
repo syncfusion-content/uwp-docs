@@ -9,7 +9,7 @@ documentation: ug
 
 # Types in UWP Pivot Chart
 
-The SfPivotChart offers different types of charts ranging from column chart to pie chart. Based on your requirements and specifications, any type of chart can be used for data visualization.
+The UWP Pivot Chart offers different types of charts ranging from column chart to pie chart. Based on your requirements and specifications, any type of chart can be used for data visualization.
 
 ## Column charts
 
