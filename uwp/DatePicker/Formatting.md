@@ -62,7 +62,7 @@ Imports Syncfusion.UI.Xaml.Controls.Input;
 
 {% endtabs %}
 
-![Features_img1](Features_images/Features_img1.png)
+![UWP DatePickerFeatures_img1](Features_images/Features_img1.png)
 
 ## Specifying format for the DateSelector
 
@@ -108,7 +108,7 @@ sfdatePicker.SelectorFormatString = "M"
 
 {% endtabs %}
 
-![Features_img2](Features_images/Features_img2.png)
+![UWP DatePickerFeatures_img2](Features_images/Features_img2.png)
 
 
 N> A detailed explanation of standard date and time formatting is available [here](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-1.1/az4se3k1(v=vs.71)). The result strings produced by these format specifiers are influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.

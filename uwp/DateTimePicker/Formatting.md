@@ -56,6 +56,6 @@ datetimeCombo.FormatString = "hms"
 
 {% endtabs %}
 
-![Formatting_img1](Formatting_images/Formatting_img1.png)
+![UWP DateTimePicker Formatting_img1](Formatting_images/Formatting_img1.png)
 
 N>  The result string produced by these format specifiers is influenced by the settings in the Regional Options control panel. Computers with different cultures or different date and time settings will generate different result strings.

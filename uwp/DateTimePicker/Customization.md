@@ -43,14 +43,14 @@ The DayComboStyle property is used to customize the style of the DateTimeItem co
 
 {% endhighlight %}
 
-![Customization_img1](Customization_images/Customization_img1.png)
+![UWP DateTimePicker Customization_img1](Customization_images/Customization_img1.png)
 
 
 ## MonthComboStyle
 
 The MonthComboStyle property is used to customize the style of the DateTimeItem containing the month part of the DateTime set in the SfDateTimeCombo control.
 
-![Customization_img2](Customization_images/Customization_img2.png)
+![UWP DateTimePicker Customization_img2](Customization_images/Customization_img2.png)
 
 
 
@@ -60,14 +60,14 @@ The YearComboStyle property is used to customize the style of the DateTimeItem c
 
 
 
-![Customization_img3](Customization_images/Customization_img3.png)
+![UWP DateTimePicker Customization_img3](Customization_images/Customization_img3.png)
 
 
 ## MinuteComboStyle
 
 The MinuteComboStyle property is used to customize the style of the DateTimeItem containing the minute part of the DateTime set in the SfDateTimeCombo control.
 
-![Customization_img4](Customization_images/Customization_img4.png)
+![UWP DateTimePicker Customization_img4](Customization_images/Customization_img4.png)
 
 
 
@@ -79,7 +79,7 @@ The TwelveHourComboStyle property is used to customize the style of the DateTime
 
 
 
-![Customization_img5](Customization_images/Customization_img5.png)
+![UWP DateTimePicker Customization_img5](Customization_images/Customization_img5.png)
 
 
 
@@ -89,7 +89,7 @@ The TwelveHourComboStyle property is used to customize the style of the DateTime
 
 The TwentyFourHourComboStyle property is used to customize the style of the DateTimeItem containing the twenty-four-hour part of the DateTime set in the SfDateTimeCombo control.
 
-![Customization_img6](Customization_images/Customization_img6.png)
+![UWP DateTimePicker Customization_img6](Customization_images/Customization_img6.png)
 
 
 
@@ -100,14 +100,14 @@ The TwentyFourHourComboStyle property is used to customize the style of the Date
 The SecondComboStyle property is used to customize the style of the DateTimeItem containing the second part of the DateTime set in the SfDateTimeCombo control. 
 
 
-![Customization_img7](Customization_images/Customization_img7.png)
+![UWP DateTimePicker Customization_img7](Customization_images/Customization_img7.png)
 
 
 ## AMPMDesignatorComboStyle
 
 The AMPMDesignatorComboStyle property is used to customize the style of the DateTimeItem containing the AM/PM part of the DateTime set in the SfDateTimeCombo control.
 
-![Customization_img8](Customization_images/Customization_img8.png)
+![UWP DateTimePicker Customization_img8](Customization_images/Customization_img8.png)
 
 
 
@@ -163,19 +163,19 @@ The DayItemTemplate property is used to define the DateTimeItem template of the 
 
 {% endhighlight %}
 
-![Customization_img10](Customization_images/Customization_img10.png)
+![UWP DateTimePicker Customization_img10](Customization_images/Customization_img10.png)
 
 ### MonthItemTemplate
 
 The MonthItemTemplate property is used to define the DateTimeItem template of the month set in the SfDateTimeCombo control.
 
-![Customization_img11](Customization_images/Customization_img11.png)
+![UWP DateTimePicker Customization_img11](Customization_images/Customization_img11.png)
 
 ### YearItemTemplate
 
 The YearItemTemplate property is used to define the DateTimeItem template of the year part in the SfDateTimeCombo control.
 
-![Customization_img12](Customization_images/Customization_img12.png)
+![UWP DateTimePicker Customization_img12](Customization_images/Customization_img12.png)
 
 
 
@@ -183,19 +183,19 @@ The YearItemTemplate property is used to define the DateTimeItem template of the
 
 The MinuteItemTemplate property is used to define the DateTimeItem template of the minute part in the SfDateTimeCombo control.
 
-![Customization_img13](Customization_images/Customization_img13.png)
+![UWP DateTimePicker Customization_img13](Customization_images/Customization_img13.png)
 
 ### SecondItemTemplate
 
 The SecondItemTemplate property is used to define the DateTimeItem template of the second part in the SfDateTimeCombo control.
 
-![Customization_img14](Customization_images/Customization_img14.png)
+![UWP DateTimePicker Customization_img14](Customization_images/Customization_img14.png)
 
 ### TwelveHourItemTemplate
 
 The TwelveHourItemTemplate property is used to define the DateTimeItem template of the twelve-hour part in the SfDateTimeCombo control.
 
-![Customization_img15](Customization_images/Customization_img15.png)
+![UWP DateTimePicker Customization_img15](Customization_images/Customization_img15.png)
 
 
 ### TwentyFourHourItemTemplate
@@ -203,10 +203,10 @@ The TwelveHourItemTemplate property is used to define the DateTimeItem template 
 The TwentyFourHourItemTemplate property is used to define the DateTimeItem template of the twenty-four-hour part in the SfDateTimeCombo control.
 
 
-![Customization_img16](Customization_images/Customization_img16.png)
+![UWP DateTimePicker Customization_img16](Customization_images/Customization_img16.png)
 
 ### AMPMDesignatorItemTemplate
 
 The AMPMDesignatorItemTemplate property is used to define the DateTimeItem template of the AM/PM part set in the SfDateTimeCombo control.
 
-![Customization_img17](Customization_images/Customization_img17.png)
+![UWP DateTimePicker Customization_img17](Customization_images/Customization_img17.png)

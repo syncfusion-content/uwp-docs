@@ -7,7 +7,7 @@ control: SfTimePicker
 documentation: ug
 ---
 
-# Footer in UWP TimePicker (SfTimePicker)
+# Footer in UWP TimePicker
 
 ## Done and Cancel Buttons
 

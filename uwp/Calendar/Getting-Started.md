@@ -107,7 +107,7 @@ Imports Syncfusion.UI.Xaml.Controls.Input;
 
 {% endtabs %}
 
-![Calendar with navigation buttons](SfCalendar-images/SfCalendar-img1.jpeg)
+![UWP Calendar with navigation buttons](SfCalendar-images/SfCalendar-img1.jpeg)
 
 ## Culture Support
 
@@ -148,6 +148,4 @@ calendar.Culture = New System.Globalization.CultureInfo("fr-FR")
 
 {% endtabs %}
 
-![Culture support in calendar](SfCalendar-images/SfCalendar-img4.jpeg)
-
-
+![Culture support in UWP Calendar](SfCalendar-images/SfCalendar-img4.jpeg)
