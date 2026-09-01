@@ -138,9 +138,9 @@ editor.ToggleCropping(rect);
 
 {{ codesnippet5 | UnOrderList_Indent_Level_1 }}
 
-![crop window output image in SfImageEditor](crop_images/cropaspectUWP.JPG)
+![crop window output image in Image Editor](crop_images/cropaspectUWP.JPG)
 
-After the cropping area has been selected, the `Crop` method is called which in turn crops the selected region and displays the cropped image on the ImageEditor.
+After the cropping area has been selected, the `Crop` method is called which in turn crops the selected region and displays the cropped image on the Image Editor.
 
 {% tabs %}
 

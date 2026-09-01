@@ -13,7 +13,7 @@ You can change the default colors of the ColorPalette and visibility of the tool
 
 ## Customize toolbar items
 
-The SfImageEditor control provides support to customize and configure the appearance of toolbar menu. You can customize the toolbar by adding respective FooterToolbarItem and HeaderToolbarItem.
+The Image Editor control provides support to customize and configure the appearance of toolbar menu. You can customize the toolbar by adding respective FooterToolbarItem and HeaderToolbarItem.
 
 ### Toolbar item
 

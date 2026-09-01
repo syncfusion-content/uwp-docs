@@ -1,4 +1,4 @@
----
+ ---
 layout: post
 title: How to clear all annotations programmatically | Syncfusion
 description: Learn here about how to clear all the annotations (Text, Shapes, Paths, Custom views) alone added in the image editor.
@@ -64,4 +64,4 @@ private void ToolbarSettings_ToolbarItemSelected(object sender, ToolbarItemSelec
 
 {% endhighlight %}
 
-![ClearAnnotations support in UWP ImageEditor](images/ClearAnnotations.gif)
+![ClearAnnotations support in UWP Image Editor](images/ClearAnnotations.gif)

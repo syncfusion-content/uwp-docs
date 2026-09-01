@@ -7,7 +7,7 @@ control: SfImageEditor
 documentation: ug
 ---
 
-# Adding custom view in UWP Image Editor (SfImageEditor)
+# Adding custom view in UWP Image Editor (SfImage Editor)
 
  You can add any custom shape or view to an image using the `AddCustomView` method in the image editor
  control. To add a custom view, specify the view and its desired `CustomViewSettings` as demonstrated in the 
@@ -58,7 +58,7 @@ The `CustomViewSettings` is defined to set values for the `CanMaintainAspectRati
 
 {% endhighlight %}
 
-![Adding Custom view to an image in UWP ImageEditor](CustomView_Images/CustomView_Settings.png)
+![Adding Custom view to an image in UWP Image Editor](CustomView_Images/CustomView_Settings.png)
 
 ## Custom view rotation
 
@@ -84,7 +84,7 @@ You can rotate the custom view based on a particular angle using `Angle` propert
 
 {% endtabs %}
 
-![Rotate and resize the custom view in UWP ImageEditor](CustomView_Images/CustomView_Rotation.png)
+![Rotate and resize the custom view in UWP Image Editor](CustomView_Images/CustomView_Rotation.png)
 
 ## Restricting the custom view resize
 

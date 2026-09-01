@@ -8,7 +8,7 @@ documentation : ug
 ---
 
 # Serialization in UWP Image Editor (SfImageEditor)
- ImageEditor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the image editor and Load it back when its needed.
+ Image Editor provides support to serialize and deserialize the shapes(Circle, Arrow, Rectangle), free hand drawing, Text and Toolbar settings. Save the current state of the image editor and Load it back when its needed.
 
 ## Serialization
   SaveEdits() method used to serialize the current edits of shapes. Serialized object will be return in the form of JSON stream.

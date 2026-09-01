@@ -27,9 +27,9 @@ Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
 
 ## Using Code
 
-programmatically, the desired text elements also can be added over the image. The `AddText` method in the SfImageEditor control is used to add text based on the string value and [`TextSettings`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
+programmatically, the desired text elements also can be added over the image. The `AddText` method in the Image Editor control is used to add text based on the string value and [`TextSettings`](https://help.syncfusion.com/cr/uwp/sfimageeditor).
 
-N> If you add the text when the SfImageEditor loaded in a view without image, then you need to call the [`AddText`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddText_System_String_Syncfusion_UI_Xaml_ImageEditor_TextSettings_) method after some time delay. If you add the text when the SfImageEditor loaded in a view with image, then you need to call the [`AddText`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddText_System_String_Syncfusion_UI_Xaml_ImageEditor_TextSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageLoaded) event as shown in the following code sample.
+N> If you add the text when the Image Editor loaded in a view without image, then you need to call the [`AddText`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddText_System_String_Syncfusion_UI_Xaml_ImageEditor_TextSettings_) method after some time delay. If you add the text when the SfImageEditor loaded in a view with image, then you need to call the [`AddText`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_AddText_System_String_Syncfusion_UI_Xaml_ImageEditor_TextSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ImageLoaded) event as shown in the following code sample.
 
 {% highlight C# %}
 
