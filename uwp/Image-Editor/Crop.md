@@ -14,7 +14,7 @@ The image editor control gives you an option to crop the image as desired. Cropp
 * From Toolbar
 * Cropping programmatically
 
-### From Toolbar
+## From Toolbar
 
 To enable cropping, in the `Transforms` submenu, click the `Crop` icon. When the `Crop` icon is tapped, a sub toolbar will appear on top of that toolbar. While the cropping is enabled, the crop sub toolbar, `Cancel` and `OK` buttons will be available. From that sub toolbar, you can able to crop the image with the following aspect ratios.
 
@@ -25,7 +25,7 @@ To enable cropping, in the `Transforms` submenu, click the `Crop` icon. When the
 
 To disable cropping,click the `Cancel` button. To save the cropped area, after selected the desired area, Click the `OK` button, the toolbars will reappear after the cropping operation is completed.
 
-### Cropping programmatically
+## Cropping programmatically
 
 Cropping operation can be done programmatically in following two ways:
 
@@ -34,7 +34,7 @@ Cropping operation can be done programmatically in following two ways:
 
 N> You can enable the cropping in the zoomed area and crop the specific position from the zoomed area. 
 
-#### Handling the cropping tool
+### Handling the cropping tool
 
 The `ToggleCropping` method in the SfImageEditor control is used to enable and disable a cropping region placed over the image to visually choose the area for cropping. 
 
@@ -195,7 +195,7 @@ The following image show cases the circularly cropped image.
 
 {% endhighlight %}
 
-### Circle cropping with a ratio
+#### Circle cropping with a ratio
 
 To crop an image in a circle or an ellipse with a specific ratio, use [`ToggleCropping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping_System_Single_System_Single_System_Boolean_) with a ratio argument and an optional parameter of true, which specifies whether the cropping panel should be added in an elliptical or rectangle shape. The default value is false.
 
