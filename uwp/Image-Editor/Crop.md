@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Crop in UWP Image Editor control | Syncfusion
-description: Learn here all about Crop with ratio support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
+title: Crop in UWP Image Editor | Syncfusion®
+description: Discover how to crop images in Syncfusion® UWP Image Editor control with ratio support and advanced features.
 platform: uwp
 control: SfImageEditor
 documentation: ug
 ---
 
-# Crop in UWP Image Editor (SfImageEditor)
+# Crop in UWP Image Editor
 
 The image editor control gives you an option to crop the image as desired. Cropping the image can be done in following two ways:
 
 * From Toolbar
 * Cropping programmatically
 
-### From Toolbar
+## From Toolbar
 
 To enable cropping, in the `Transforms` submenu, click the `Crop` icon. When the `Crop` icon is tapped, a sub toolbar will appear on top of that toolbar. While the cropping is enabled, the crop sub toolbar, `Cancel` and `OK` buttons will be available. From that sub toolbar, you can able to crop the image with the following aspect ratios.
 
@@ -25,7 +25,7 @@ To enable cropping, in the `Transforms` submenu, click the `Crop` icon. When the
 
 To disable cropping,click the `Cancel` button. To save the cropped area, after selected the desired area, Click the `OK` button, the toolbars will reappear after the cropping operation is completed.
 
-### Cropping programmatically
+## Cropping programmatically
 
 Cropping operation can be done programmatically in following two ways:
 
@@ -34,7 +34,7 @@ Cropping operation can be done programmatically in following two ways:
 
 N> You can enable the cropping in the zoomed area and crop the specific position from the zoomed area. 
 
-#### Handling the cropping tool
+### Handling the cropping tool
 
 The `ToggleCropping` method in the SfImageEditor control is used to enable and disable a cropping region placed over the image to visually choose the area for cropping. 
 
@@ -154,7 +154,7 @@ imageEditor.Crop(new Rect(0, 0, 0, 0));
 
 {% endtabs %}
 
-### Circle cropping
+## Circle cropping
 
 An image can be cropped in circle or elliptical format, which could be perfect for using it as a profile picture.
 Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping_Windows_Foundation_Rect_System_Boolean_) parameter as shown in the below code sample.
@@ -195,7 +195,7 @@ The following image show cases the circularly cropped image.
 
 {% endhighlight %}
 
-### Circle cropping with a ratio
+## Circle cropping with a ratio
 
 To crop an image in a circle or an ellipse with a specific ratio, use [`ToggleCropping`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.ImageEditor.SfImageEditor.html#Syncfusion_UI_Xaml_ImageEditor_SfImageEditor_ToggleCropping_System_Single_System_Single_System_Boolean_) with a ratio argument and an optional parameter of true, which specifies whether the cropping panel should be added in an elliptical or rectangle shape. The default value is false.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Z-Ordering in UWP Image Editor control | Syncfusion
-description: Learn here all about Z-Ordering support in Syncfusion UWP Image Editor (SfImageEditor) control and more.
-platform: UWP
-control: ImageEditor
+title: Z-Ordering in UWP Image Editor | Syncfusion®
+description: Explore z-ordering and shape layering in Syncfusion® UWP Image Editor control with bring to front and send to back.
+platform: uwp
+control: SfImageEditor
 documentation: ug
 ---
 
-# Z-Ordering in UWP Image Editor (SfImageEditor)
+# Z-Ordering in UWP Image Editor
 
 The image editor control allows to change the position of shapes/edits that are arranged over the editor. This can be achieved using the following methods:
 
