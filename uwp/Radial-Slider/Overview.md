@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® UWP Radial Slider (SfRadialSlider) Control
 
-The SfRadialSlider provides an optimized interface for selecting a numeric value using touch interface.
+The UWP Radial or Circular Slider provides an optimized interface for selecting a numeric value using touch interface.
 
 ![Circular slider to select numeric values](Overview_images/Overview_img1.png)
 

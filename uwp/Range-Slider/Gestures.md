@@ -33,7 +33,7 @@ N>  If the SnapsTo property is set to Ticks then the Thumb snaps to next tick ba
 
 ## Mouse  
 
-The mouse gesture can be used to update the value in SfRangeSlider by either dragging the Thumb to the certain distance or pressing on the specified region in the track.  
+The mouse gesture can be used to update the value in UWP Range Slider by either dragging the Thumb to the certain distance or pressing on the specified region in the track.  
 
 
 N>  If the Thumb is released between two steps or if the pointer is pressed between two steps, then the value and Thumb automatically snaps to nearest value.  

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Intermediate Value in UWP Range Slider (SfRangeSlider) 
-It is possible to get the intermediate value, before the value is snapped to either the tick or step value while the user interacting with SfRangeSlider. 
+It is possible to get the intermediate value, before the value is snapped to either the tick or step value while the user interacting with UWP Range Slider. 
 
 ## IntermediateValue 
 

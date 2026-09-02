@@ -11,11 +11,11 @@ documentation: ug
 
 ## Inner Rim 
 
-Inner Rim term denotes the circle in the center of SfRadialSlider.  Following properties can be used to customize the Inner Rim. 
+Inner Rim term denotes the circle in the center of UWP Radial or Circular Slider.  Following properties can be used to customize the Inner Rim. 
 
 ### Inner Rim Radius Factor
 
-InnerRimRadiusFactor property decides the radius of Inner Rim from the total radius available to render the Radial Slider.
+InnerRimRadiusFactor property decides the radius of Inner Rim from the total radius available to render the UWP Radial or Circular Slider.
 
 ### Inner Rim Stroke
 
@@ -71,11 +71,11 @@ radialSlider.InnerRimStrokeThickness = 4
 
 ## Outer Rim 
 
-Outer Rim term denotes circular track (outer circle) of SfRadialSlider.  Following properties can be used to customize the Inner Rim
+Outer Rim term denotes circular track (outer circle) of UWP Radial or Circular Slider.  Following properties can be used to customize the Inner Rim
 
 ### Outer Rim Radius Factor
 
-OuterRimRadiusFactor property decides the radius of Outer Rim from the total radius available to render the SfRadialSlider. 
+OuterRimRadiusFactor property decides the radius of Outer Rim from the total radius available to render the UWP Radial or Circular Slider. 
 
 ### Outer Rim Stroke 
 
@@ -160,7 +160,7 @@ Ticks can be customized using the TickTemplate property.
 
 ### Tick Radius Factor
 
-TickRadiusFactor property decides the radius of the ticks from the total radius available to render the SfRadialSlider. 
+TickRadiusFactor property decides the radius of the ticks from the total radius available to render the UWP Radial or Circular Slider. 
 
 {% tabs %}
 
@@ -224,7 +224,7 @@ radialSlider.TickVisibility = Visibility.Collapsed
 
 ## Labels
 
-Labels displayed along the circular path in the Radial slider can be customized by the following properties. 
+Labels displayed along the circular path in the UWP Radial or Circular Slider can be customized by the following properties. 
 
 ### Label Template
 
@@ -252,7 +252,7 @@ The LabelTemplate property can be used to customize the label object.
 
 ### Label Radius Factor
 
-LabelRadiusFactor property decides the radius of the labels from the total radius available to render the SfRadialSlider. 
+LabelRadiusFactor property decides the radius of the labels from the total radius available to render the UWP Radial or Circular Slider. 
 
 ![Concepts--and-Features_img12](Concepts--and-Features_images/Concepts--and-Features_img12.png)
 
@@ -319,7 +319,7 @@ The Pointer that is used for the select the value by dragging in circular track 
 
 ### Pointer Radius Factor
 
-The PointerRadiusFactor property decides the radius of the Pointer from the total radius available to render the SfRadialSlider. 
+The PointerRadiusFactor property decides the radius of the Pointer from the total radius available to render the UWP Radial or Circular Slider. 
 
 {% tabs %}
 
@@ -389,7 +389,7 @@ Style of the Pointer can be customized using the PointerStyle property.
 
 ### Preview Pointer Style
 
-The Preview Pointer that appears when hovering over the SfRadialSlider can be customized using the PreviewPointerStyle property. 
+The Preview Pointer that appears when hovering over the UWP Radial or Circular Slider can be customized using the PreviewPointerStyle property. 
 
 {% highlight xaml %}
 
