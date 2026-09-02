@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation in UWP Carousel (SfCarousel)
 
-The default animation used during the selection of carousel items can be customized using the following properties.
+The default animation used during the selection of UWP Carousel items can be customized using the following properties.
 
 * Duration
 
@@ -108,7 +108,7 @@ End Sub
 
 ## Rotate items
 
-`RotationAngle` property is used to rotate all the items in carousel control to a specified angle.
+`RotationAngle` property is used to rotate all the items in UWP Carousel control to a specified angle.
 
 {% tabs %}
 

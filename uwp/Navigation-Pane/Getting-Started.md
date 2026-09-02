@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with UWP Navigation Pane (SfGroupBar)
 
-This section explains how to add `SfGroupBarItem` and set it’s content in `SfGroupBar`. 
+This section explains how to add `SfGroupBarItem` and set it’s content in `UWP Navigation Pane`. 
 
-## Adding SfGroupBar Control
+## Adding UWP Navigation Pane Control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the `Syncfusion.SfGroupBar.UWP` assembly.
 
@@ -31,7 +31,7 @@ xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endtabs %}
 
-2.Now add the `SfGroupBar` control with a required optimal name using the included namespace
+2.Now add the `UWP Navigation Pane` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -43,14 +43,14 @@ xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endtabs %}
 
-This will just display GroupBar with Collapse button.
+This will just display UWP Navigation Pane with Collapse button.
 
 ![Getting-Started-img1](Getting-Started-images/Getting-Started-img1.jpeg)
 
 
-## Adding Items to SfGroupBar
+## Adding Items to UWP Navigation Pane
 
-Add items `SfGroupBarItem` as given below. Use the property `Header` to set display headers for group bar item.
+Add items `SfGroupBarItem` as given below. Use the property `Header` to set display headers for UWP Navigation Pane item.
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ Add items `SfGroupBarItem` as given below. Use the property `Header` to set disp
 ![Getting-Started-img2](Getting-Started-images/Getting-Started-img2.jpeg)
 
 
-## Setting Icon for SfGroupBar Items
+## Setting Icon for UWP Navigation Pane Items
 
 Use the property `ImagePath` to set image as Path elements. It can be set as follows:
 
@@ -335,7 +335,7 @@ Set Content for SfGroupBarItems using `Content` property.
 
 {% endtabs %}
 
-## Selecting SfGroupBar Items
+## Selecting UWP Navigation Pane Items
 
 `SfGroupBarItem` can be selected either by directly clicking on item header or programmatically using the `IsSelected` property. 
 

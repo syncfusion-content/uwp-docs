@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® UWP Navigation Pane (SfGroupBar) Control
 
-The `SfGroupBar` control provides a navigation UI similar to Microsoft Outlook. It has a container to host controls within it. Use it to host a categorized collection of items and custom controls. 
+The `UWP Navigation Pane` control provides a navigation UI similar to Microsoft Outlook. It has a container to host controls within it. Use it to host a categorized collection of items and custom controls. 
 
 ## Features
 
