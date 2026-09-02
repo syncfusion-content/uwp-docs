@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with UWP Menu (SfMenu)
 
-This section explains how to create the `SfMenu` control.
+This section explains how to create the `UWP Menu` control.
 
-## Adding SfMenu Control
+## Adding UWP Menu Control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -37,7 +37,7 @@ xmlns:menu="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endtabs %}
 
-2.Now add the `SfMenu` control with a required optimal name using the included namespace
+2.Now add the `UWP Menu` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ xmlns:menu="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 ## Adding SfMenuItems to the Control
 
-Here `SfMenuItems` are added as the children of the `SfMenu`.
+Here `SfMenuItems` are added as the children of the `UWP Menu`.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation Support in UWP Menu (SfMenu)
 
-`SfMenu` supports animation types to open the submenu pop-up. The following animation types are supported by `SfMenu`:
+`UWP Menu` supports animation types to open the submenu pop-up. The following animation types are supported by `UWP Menu`:
 
 * Fade
 * Slide

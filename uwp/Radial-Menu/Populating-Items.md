@@ -11,7 +11,7 @@ documentation: ug
 
 ## Items Source  
 
-Radial menu items can be populated with the business object collection. Let us create a SfRadialMenu which will show the list of Application commands.   
+UWP Radial Menu items can be populated with the business object collection. Let us create a UWP Radial Menu which will show the list of Application commands.   
 
 The Application command model look likes below.  
 
@@ -146,7 +146,7 @@ Populate the Application command collection as follows.
 
 {% endtabs %}
 
-Bind the Application command collection to the ItemsSource property of the SfRadialMenu control. 
+Bind the Application command collection to the ItemsSource property of the UWP Radial Menu control. 
 
 {% highlight xaml %}
 
@@ -154,7 +154,7 @@ Bind the Application command collection to the ItemsSource property of the SfRad
 
 {% endhighlight %}
 
-This will populate the SfRadialMenu as shown in the image below. 
+This will populate the UWP Radial Menu as shown in the image below. 
 
 ![RadialMenu Initial view](Populating-Items_images/Populating-Items_img1.png)
 
@@ -162,7 +162,7 @@ This will populate the SfRadialMenu as shown in the image below.
 
 ### Display Member Path 
 
-DisplayMemberPath property of the SfRadialMenu used to define which business model property needs to be displayed inside the header of the SfRadialMenu items.  
+DisplayMemberPath property of the UWP Radial Menu used to define which business model property needs to be displayed inside the header of the UWP Radial Menu items.  
 
 {% highlight xaml %}
 
@@ -179,7 +179,7 @@ DisplayMemberPath="Name"/>
 
 ### Command Path
 
-CommandPath property of the SfRadialMenu can be used to bind the command in the business object to the SfRadialMenu item when items are populated using data binding. 
+CommandPath property of the UWP Radial Menu can be used to bind the command in the business object to the UWP Radial Menu item when items are populated using data binding. 
 
 {% highlight xaml %}
 
@@ -194,7 +194,7 @@ CommandPath property of the SfRadialMenu can be used to bind the command in the 
 
 ### Item Template 
 
-ItemTemplate property of the SfRadialMenu can be used to customize the header part of the SfRadialMenu items.  
+ItemTemplate property of the UWP Radial Menu can be used to customize the header part of the UWP Radial Menu items.  
 
 {% highlight xaml %}   
 

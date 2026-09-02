@@ -9,21 +9,21 @@ documentation: ug
 
 # Orientation in UWP Menu (SfMenu)
 
-The `SfMenu` control can align its content vertically and horizontally by using the `Orientation` property of the `SfMenu`.
+The `UWP Menu` control can align its content vertically and horizontally by using the `Orientation` property of the `UWP Menu`.
 
 ## Change Orientation of SfMenuItem
 
-Items of `SfMenu` arranged horizontally, when the value of the `Orientation` property is set to Horizontal.
+Items of `UWP Menu` arranged horizontally, when the value of the `Orientation` property is set to Horizontal.
 
 ![Orientation-img1](Orientation-images/Orientation-img1.jpg)
 
 
-Similarly, when the value of the `Orientation` property is set to Vertical, the Items of `SfMenu` will be arranged vertically.
+Similarly, when the value of the `Orientation` property is set to Vertical, the Items of `UWP Menu` will be arranged vertically.
 
 ![Orientation-img2](Orientation-images/Orientation-img2.jpg)
 
 
-`Orientation` of `SfMenu` can be changed as mentioned in the code snippet.
+`Orientation` of `UWP Menu` can be changed as mentioned in the code snippet.
 
 {% tabs %}
 
