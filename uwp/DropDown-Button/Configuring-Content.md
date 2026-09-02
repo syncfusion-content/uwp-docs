@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Configuring Content in UWP DropDown Button (SfDropDownButton)
 
-Content and DropDownContent can be added to the SfDropDownButton control as follows:
+Content and DropDownContent can be added to the UWP DropDown Button control as follows:
 
 ## Content
 

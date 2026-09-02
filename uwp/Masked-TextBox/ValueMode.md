@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Value Mode in UWP Masked TextBox (SfMaskedEdit)
 
-`SfMaskedEdit` allows you to format the characters in the `Value` property in a mask scenario (when the Mask property is set). By default, the `Value` property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the `ValueMaskFormat` property of the control. The `Value` in the `SfMaskedEdit` is formatted by any one of the following formatting enum values:
+`UWP Masked TextBox` allows you to format the characters in the `Value` property in a mask scenario (when the Mask property is set). By default, the `Value` property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the `ValueMaskFormat` property of the control. The `Value` in the `UWP Masked TextBox` is formatted by any one of the following formatting enum values:
 
 * ExcludePromptAndLiterals
 * IncludePrompt

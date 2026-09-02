@@ -160,7 +160,7 @@ maskedEdit.Mask = "(\d{0,3})\d{3}-\d{2}-\d{2}";
 
 Extended Regular expression with more complex expression which gives more usage of input data 
 
-We have provided the Optional, Positive and Negative lookahead support in the SfMaskedEdit control.
+We have provided the Optional, Positive and Negative lookahead support in the UWP Masked TextBox control.
 
 ### Optional:
 

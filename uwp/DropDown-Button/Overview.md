@@ -8,7 +8,7 @@ documentation: ug
 ---
 # About Syncfusion® UWP DropDown Button (SfDropDownButton) Control
 
-SfDropDownButton is used as a content holder that shows content in a drop down popup on demand. 
+UWP DropDown Button is used as a content holder that shows content in a drop down popup on demand. 
 
 ![Overview of SfDropDownButton](Overview_images/Overview_img1.png)
 
