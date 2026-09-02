@@ -31,7 +31,7 @@ Gets or sets the threshold value from the edges for easy panning from the edges.
 
 ## PullableContent
 
-PullableContent is the main view of the PullToRefresh control on which the desired items can be placed.
+PullableContent is the main view of the UWP Pull to Refresh control on which the desired items can be placed.
 
 {%highlight Xaml%}
     
@@ -106,7 +106,7 @@ The default transition is `SlideOnTop`. That draws the `RefreshContent` on top o
 ![Overview_img3](Overview_images/Overview_img3.png)
 
 
-The following code example shows how to set `Transition` as `Push` to SfPullToRefresh. This transition moves the refresh content and main content simultaneously.
+The following code example shows how to set `Transition` as `Push` to UWP Pull to Refresh. This transition moves the refresh content and main content simultaneously.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ The default PullDirection is `Top`. That draws the `RefreshContent` on top of th
 {% endtabs %}
 
 
-The following code example shows how to set `PullDirection` as `Bottom` to SfPullToRefresh.That draws the `RefreshContent` on Bottom of the `pullableContent`.
+The following code example shows how to set `PullDirection` as `Bottom` to UWP Pull to Refresh.That draws the `RefreshContent` on Bottom of the `pullableContent`.
 
 {% tabs %}
 
