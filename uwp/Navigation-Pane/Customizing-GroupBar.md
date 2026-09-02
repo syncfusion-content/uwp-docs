@@ -9,9 +9,9 @@ documentation: ug
 
 # Customizing GroupBar in UWP Navigation Pane (SfGroupBar)
 
-## Adjusting SfGroupBar Width in Collapsed Mode
+## Adjusting UWP Navigation Pane Width in Collapsed Mode
 
-Set the property `CollapsedWidth` to set Width of `SfGroupBar` control in Collapsed mode.
+Set the property `CollapsedWidth` to set Width of `UWP Navigation Pane` control in Collapsed mode.
 
 {% tabs %}
 

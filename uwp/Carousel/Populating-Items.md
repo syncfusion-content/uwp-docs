@@ -9,15 +9,15 @@ documentation: ug
 
 # Populating Items in UWP Carousel (SfCarousel)
 
-`SfCarouselItem` can be added as items of `SfCarousel`. Items of `SfCarousel` can be added though `Items` or `ItemSource` property.
+`SfCarouselItem` can be added as items of `UWP Carousel`. Items of `UWP Carousel` can be added though `Items` or `ItemSource` property.
 
 ## Using Items
 
-`SfCarousel` accepts `SfCarouselItem` as its children when added directly.
+`UWP Carousel` accepts `SfCarouselItem` as its children when added directly.
 
 ### Adding items to the control
 
-Here five `SfCarouselItems` are added as the children of the `SfCarousel`.
+Here five `SfCarouselItems` are added as the children of the `UWP Carousel`.
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ carousel.Items.Add(New SfCarouselItem() With {.Content = "Item 5"})
 
 ## Using ItemsSource
 
-`SfCarousel` accepts any business object collection to be bound to its `ItemsSource` property. 
+`UWP Carousel` accepts any business object collection to be bound to its `ItemsSource` property. 
 
 ### Adding items to the control
 
@@ -270,7 +270,7 @@ Employees.Add(New Employee() With {
 
 {% endtabs %}
 
-4.Bind the Employees collection to `ItemsSource` property of `SfCarousel` Control
+4.Bind the Employees collection to `ItemsSource` property of `UWP Carousel` Control
 
 {% tabs %}
 
@@ -282,7 +282,7 @@ Employees.Add(New Employee() With {
 
 {% endtabs %}
 
-`SfCarousel` control is populated as follows:
+`UWP Carousel` control is populated as follows:
 
 ![Provided the ItemSource to Carousel](SfCarousel-images/SfCarousel-img5.jpeg)
 

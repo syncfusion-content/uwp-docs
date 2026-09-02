@@ -12,7 +12,7 @@ Items can be selected programmatically using the properties `SelectedIndex`, `Se
 
 ## Selecting an item using SelectedIndex
 
-`SelectedIndex` property is used to select an item in `SfCarousel` using the index of item. 
+`SelectedIndex` property is used to select an item in `UWP Carousel` using the index of item. 
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ carousel.SelectedIndex = 2
 
 ## Selecting an item using SelectedItem
 
-SelectedItem property is used to select an item in SfCarousel using the instance of item. 
+SelectedItem property is used to select an item in UWP Carousel using the instance of item. 
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ carousel.SelectedItem = item3
 
 ## Navigating to next item
 
-`MoveNext` method is used to select next item of the selected item in `SfCarousel`.
+`MoveNext` method is used to select next item of the selected item in `UWP Carousel`.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ carousel.MoveNext()
 
 ## Navigating to previous item
 
-`MovePrevious` method is used to select previous item of the selected item in `SfCarousel`.
+`MovePrevious` method is used to select previous item of the selected item in `UWP Carousel`.
 
 {% tabs %}
 
@@ -145,5 +145,5 @@ carousel.MovePrevious()
 
 ## Refresh the layout
 
-`Refresh` method is used to refresh the layout of `SfCarousel` control.
+`Refresh` method is used to refresh the layout of `UWP Carousel` control.
 
