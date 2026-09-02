@@ -9,7 +9,7 @@ documentation: ug
 
 # Enable Free Rotation in UWP Radial Menu (SfRadialMenu)
 
-EnableFreeRotation property enable/disable rotation behavior of SfRadialMenu. 
+EnableFreeRotation property enable/disable rotation behavior of UWP Radial Menu. 
 
 {% tabs %}
 

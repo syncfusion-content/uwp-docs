@@ -9,15 +9,15 @@ documentation: ug
 
 # Populating Items in UWP Menu (SfMenu)
 
-`SfMenuItem` can be added as items of `SfMenu`. Items can be added using `Items` or `ItemsSource` property.
+`SfMenuItem` can be added as items of `UWP Menu`. Items can be added using `Items` or `ItemsSource` property.
 
 ## Populating Items through adding SfMenuItem
 
-`SfMenu` accepts `SfMenuItem` as its children when added directly.
+`UWP Menu` accepts `SfMenuItem` as its children when added directly.
 
 ### Adding Items to the Control
 
-Here five `SfMenuItems` are added as the children of the `SfMenu`.
+Here five `SfMenuItems` are added as the children of the `UWP Menu`.
 
 {% tabs %}
 
@@ -64,7 +64,7 @@ sfMenu.Items.Add(new SfMenuItem { Header = "Layout" });
 
 ## Populating Items through Binding
 
-`SfMenu` accepts any business object collection to be bound to its `ItemsSource` property.
+`UWP Menu` accepts any business object collection to be bound to its `ItemsSource` property.
 
 ### Adding items to the control
 
@@ -174,7 +174,7 @@ MenuCollection.Add(new Model() { Header = "Layout" });
 
 
 
-3.Bind the MenuCollection to `ItemsSource` property of `SfMenu` Control.
+3.Bind the MenuCollection to `ItemsSource` property of `UWP Menu` Control.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ MenuCollection.Add(new Model() { Header = "Layout" });
 
 {% endtabs%}
 
-`SfMenu` control is populated as follows:
+`UWP Menu` control is populated as follows:
 
 ![Populating-Items-img1](Populating-Items-images/Populating-Items-img1.jpg)
 
