@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with UWP Masked TextBox (SfMaskedEdit)
 
-This section explains about accessing `SfMaskedEdit` properties and events associated with it.
+This section explains about accessing `UWP Masked TextBox` properties and events associated with it.
 
 ## Masking the Input
 
@@ -137,11 +137,11 @@ maskedEdit.Mask = "[A-Za-z0-9._%-]+@[A-Za-z0-9]+.[A-Za-z]{2,3}";
 
 ## Binding Value
 
-The `SfMaskedEdit` control displays the value that can be set using the `Value` property:
+The `UWP Masked TextBox` control displays the value that can be set using the `Value` property:
 
 ### Set the Value property directly
 
-The following example shows how to set the `Value` directly in `SfMaskedEdit`
+The following example shows how to set the `Value` directly in `UWP Masked TextBox`
 
 {% tabs %}
 
@@ -183,7 +183,7 @@ The following example shows Set the value property in ComboBox items to bind the
 Occurs when the value of the `Value` property is changed by either entering the valid input character or setting the value to the `Value` property through XAML or C# code. The event arguments are of type `ValueChangedEventArgs` and expose the following property:
 
 > Your valid input character is updated to `Value` property based on the `ValidationMode` property.
-> Refer to this [link](validation.html#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
+> Refer to this [link](validation.html#validation-mode) to know more about the `ValidationMode` property of `UWP Masked TextBox` control.
 
 ### Example
 
@@ -211,7 +211,7 @@ private void SfMaskedEdit_ValueChanged(object sender, EventArgs e)
 
 ## Watermark
 
-The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The `Watermark` property of `SfMaskedEdit` is used to set the watermark text for the control.
+The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The `Watermark` property of `UWP Masked TextBox` is used to set the watermark text for the control.
 
 ### Example
 

@@ -8,14 +8,14 @@ documentation: ug
 ---
 # Appearance in UWP Masked TextBox (SfMaskedEdit)
 
-The appearance of the `SfMaskedEdit` control can be customized by using the `BorderBrush` and `ErrorBorderBrush` property
+The appearance of the `UWP Masked TextBox` control can be customized by using the `BorderBrush` and `ErrorBorderBrush` property
 
 ## Border
 
 
 ### BorderBrush
 
-`BorderBrush` provides the border color for the `SfMaskedEdit`.
+`BorderBrush` provides the border color for the `UWP Masked TextBox`.
 
 We can Customize the `BorderBrush` property as follows
 
@@ -42,7 +42,7 @@ maskededit.BorderBrush = Brushes.Blue;
 ### ErrorBorderBrush
 
 
-`ErrorBorderBrush` provide the border color for the `SfMaskedEdit` when validation becomes failed.
+`ErrorBorderBrush` provide the border color for the `UWP Masked TextBox` when validation becomes failed.
 
 We can Customize the ErrorBorderBrush property as follows
 
