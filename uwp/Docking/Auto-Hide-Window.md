@@ -7,16 +7,16 @@ control: SfDockingManager
 documentation: ug
 ---
 
-# Auto Hide Window in UWP SfDockingManager
+# Auto Hide Window in UWP Docking Control
 
-`AutoHide` window is one of the states in the `SfDockingManager`. To enable Auto hidden for `SfDockingManager`'s children, set the `SfDockingManager` child `DockState` value as `AutoHidden`.
+`AutoHide` is one of the window states supported by the `UWP Docking Control`. To enable the `AutoHide` state for a child window, set its `DockState` property to `AutoHidden`.
 
 ![Auto-Hide-Window-img1](Auto-Hide-Window-images/Auto-Hide-Window-img1.jpeg)
 
 
 ## Configuring Window in Different Sides
 
-`AutoHidden` window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four auto hidden children in four different sides, set the `SideInDockedMode` property according to its corresponding values in the `SfDockingManager`.
+`AutoHidden` window can be placed in four different sides such as Top, Bottom, Left and Right. To place the four auto hidden children in four different sides, set the `SideInDockedMode` property according to its corresponding values in the `UWP Docking Control`.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ documentation: ug
 
 ## Side Panel and TabItem Customization
 
-The side panel and side panel header can be customized through `SidePanelBackground`, `SidePanelItemsBackground` and `SidePanelItemsForeground` properties of the `SfDockingManager`.
+The side panel and side panel header can be customized through `SidePanelBackground`, `SidePanelItemsBackground` and `SidePanelItemsForeground` properties of the `UWP Docking Control`.
 
 {% tabs %}
 
@@ -99,7 +99,7 @@ The animation speed while auto hiding a window can be configured by setting the 
 
 ## Applying Different Animations for AutoHide Window
 
-`SfDockingManager` supports three different built-in animations while auto-hiding the windows such as Fade, Scale and Slide, which can be set through the `AutoHideAnimationMode` property.
+`UWP Docking Control` supports three different built-in animations while auto-hiding the windows such as Fade, Scale and Slide, which can be set through the `AutoHideAnimationMode` property.
 
 `Fade` – AutoHidden window fades while auto hiding.
 
@@ -173,7 +173,7 @@ The Pin button, which performs the Auto Hide functionality, is visible by defaul
 ![Auto-Hide-Window-img4](Auto-Hide-Window-images/Auto-Hide-Window-img4.jpeg)
 
 
-To show or collapse the AutoHide button for a specific child in the `SfDockingManager`, the `IsPinButtonVisible` attached property can be used. By default, the `IsPinButtonVisible` value is true. This functionality can be disabled by setting its value as false.
+To show or collapse the AutoHide button for a specific child in the `UWP Docking Control`, the `IsPinButtonVisible` attached property can be used. By default, the `IsPinButtonVisible` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
@@ -196,7 +196,7 @@ To show or collapse the AutoHide button for a specific child in the `SfDockingMa
 ![Auto-Hide-Window-img5](Auto-Hide-Window-images/Auto-Hide-Window-img5.jpeg)
 
 
-To enable or disable the AutoHide functionality for a specific child in the `SfDockingManager`, the `CanAutoHide` attached property can be used. By default, the `CanAutoHide` value is true. This functionality can be disabled by setting its value as false.
+To enable or disable the AutoHide functionality for a specific child in the `UWP Docking Control`, the `CanAutoHide` attached property can be used. By default, the `CanAutoHide` value is true. This functionality can be disabled by setting its value as false.
 
 {% tabs %}
 
