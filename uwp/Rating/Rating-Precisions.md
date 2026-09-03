@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rating Precisions in UWP SfRating | Syncfusion®
-description: The Rating Precisions in SfRating specifies the level of accuracy in rating values with three precision types: Standard, Half, and Exact.
+description: The Rating Precisions in SfRating specifies the level of accuracy in rating values with three precision types such as Standard, Half, and Exact.
 platform: uwp
 control: SfRating
 documentation: ug
