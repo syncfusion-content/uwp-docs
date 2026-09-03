@@ -7,9 +7,9 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Appearance and Styling in UWP SfCalculator
+# Appearance and Styling in UWP Calculator
 
-All the panes in SfCalculator can be customized easily. The panes can be styled as follows:
+All the panes in UWP Calculator can be customized easily. The panes can be styled as follows:
 
 * FunctionsPaneStyle 
 * DisplayPaneStyle
@@ -57,7 +57,7 @@ Display pane is the panel that contain elements displaying value and expression.
 
 ## Customizing input panel
 
-Input pane is a panel in SfCalculator that contains number buttons. It can be styled as follows.
+Input pane is a panel in UWP Calculator that contains number buttons. It can be styled as follows.
 
 {% tabs %}
 

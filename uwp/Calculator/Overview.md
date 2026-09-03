@@ -7,9 +7,9 @@ control: SfCalculator
 documentation: ug
 ---
 
-# About Syncfusion® UWP SfCalculator Control
+# About Syncfusion® UWP Calculator Control
 
-`SfCalculator` control allows you to perform basic mathematical operations without switching to external applications.
+`UWP Calculator` control allows you to perform basic mathematical operations without switching to external applications.
 
 ## Features
 
