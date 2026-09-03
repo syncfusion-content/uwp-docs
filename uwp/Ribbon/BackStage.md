@@ -7,9 +7,9 @@ control: SfRibbon
 documentation: ug
 ---
 
-# BackStage in UWP SfRibbon
+# BackStage in UWP Ribbon
 
-Commands can be added to the BackStage similar to the Office UI. The BackStage is completely customizable. To navigate to the BackStage, click on the BackStage button at the left end of the Ribbon Tab Items panel. BackStageTabItems can be easily navigated using the scroll buttons. To navigate back from the BackStage, click on the back button in the top-left corner. The BackStage can be opened and closed programmatically using the `OpenBackStage()` and `CloseBackStage()` methods.
+Commands can be added to the BackStage similar to the Office UI. The BackStage is completely customizable. To navigate to the BackStage, click on the BackStage button at the left end of the UWP Ribbon Tab Items panel. BackStageTabItems can be easily navigated using the scroll buttons. To navigate back from the BackStage, click on the back button in the top-left corner. The BackStage can be opened and closed programmatically using the `OpenBackStage()` and `CloseBackStage()` methods.
 
 BackStageButton and BackStage TabItems can be added as follows,
 
