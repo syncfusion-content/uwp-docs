@@ -7,11 +7,11 @@ control: SfDomainUpDown
 documentation: ug
 ---
 
-# Populating Data in UWP SfDomainUpDown
+# Populating Data in UWP Domain UpDown
 
-The DomainUpDown control can be populated with a predefined list of items. 
+The UWP Domain UpDown control can be populated with a predefined list of items. 
 
-For example, in the following code, the SfDomainUpDown will populate a list of employees:
+For example, in the following code, the UWP Domain UpDown will populate a list of employees:
 
 {% tabs %}
 
@@ -132,7 +132,7 @@ Employees.Add(New Employee With {
 
 ## ItemsSource
 
-Bind the Employees collection to the ItemsSource property of DomainUpDown:
+Bind the Employees collection to the ItemsSource property of UWP Domain UpDown:
 
 {% highlight XAML %}
 
@@ -158,7 +158,7 @@ ItemsSource="{Binding Employees}" >
    </Page>
 {% endhighlight %}
 
-N>  If the ContentTemplate property of the SfDomainUpDown control is not set, Items will be displayed as business objects in the control.
+N>  If the ContentTemplate property of the UWP Domain UpDown control is not set, Items will be displayed as business objects in the control.
 
 
 
