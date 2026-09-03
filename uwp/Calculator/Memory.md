@@ -7,9 +7,9 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Memory in UWP SfCalculator
+# Memory in UWP Calculator
 
-`Memory` property in the `SfCalculator` control is used to retrieve the value stored in memory. The following buttons are available in `SfCalculator` control that are needed for memory operations. `Memory` property is a read-only decimal property.
+`Memory` property in the `UWP Calculator` control is used to retrieve the value stored in memory. The following buttons are available in this control that are needed for memory operations. `Memory` property is a read-only decimal property.
 
 ## Storing Value to Memory
 

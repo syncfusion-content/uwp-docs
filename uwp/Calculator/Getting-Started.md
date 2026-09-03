@@ -7,11 +7,11 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Getting Started with UWP SfCalculator
+# Getting Started with UWP Calculator
 
-This section explains how to create a standalone calculator control that provide options to perform basic arithmetic operations.
+This section explains how to create a standalone UWP Calculator control that provide options to perform basic arithmetic operations.
 
-## Adding SfCalculator Control
+## Adding UWP Calculator Control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -35,7 +35,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-2.Now add the `SfCalculator` control with a required optimal name using the included namespace
+2.Now add the `UWP Calculator` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -59,6 +59,6 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-Above code example creates the calculator as follows and perform mathematical arithmetic operations using the provided buttons:
+Above code example creates the UWP Calculator as follows and perform mathematical arithmetic operations using the provided buttons:
 
 ![SfCalculator](SfCalculator-images/SfCalculator-img1.jpeg)

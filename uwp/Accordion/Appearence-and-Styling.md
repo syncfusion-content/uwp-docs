@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Appearance and Styling in UWP SfAccordion
+# Appearance and Styling in UWP Accordion
 
 `AccentBrush` property is used to decorate the hot spots of a control with a solid color
 
@@ -49,9 +49,9 @@ accordion.AccentBrush = New SolidColorBrush() With {.Color = Windows.UI.Colors.R
 ![appearence-and-styling-img1](Appearence-and-Styling-images/appearence-and-styling-img1.jpeg)
 
 
-## Customizing SfAccordion Item
+## Customizing UWP Accordion Item
 
-`ItemContainerStyle` property is used to define the style for SfAccordionItems.
+`ItemContainerStyle` property is used to define the style for UWP Accordion Items.
 
 {% tabs %}
 
@@ -92,7 +92,7 @@ accordion.AccentBrush = New SolidColorBrush() With {.Color = Windows.UI.Colors.R
 
 ![appearence-and-styling-img2](Appearence-and-Styling-images/appearence-and-styling-img2.jpeg)
 
-## Customizing Accordion Button
+## Customizing UWP Accordion Button
 
 `AccordionButtonStyle` property is used to style the expander button which contains the header and expander button.
 

@@ -7,9 +7,9 @@ control: SfAccordion
 documentation: ug
 ---
 
-# About Syncfusion® UWP SfAccordion Control
+# About Syncfusion® UWP Accordion Control
 
-The `SfAccordion` control organizes content into multiple collapsible sections that can be expanded on demand. Single or multiple content can be expanded at a time.
+The `UWP Accordion` control organizes content into multiple collapsible sections that can be expanded on demand. Single or multiple content can be expanded at a time.
 
 ## Features
 
