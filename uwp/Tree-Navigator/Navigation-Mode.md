@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation Mode in UWP SfTreeNavigator | Syncfusion®
-description: The navigation mode in SfTreeNavigator provides two different modes to support navigation: Default and Extended modes for hierarchical data browsing.
+description: The navigation mode in SfTreeNavigator provides two different modes to support navigation such as Default and Extended modes for hierarchical data browsing.
 platform: uwp
 control: SfTreeNavigator
 documentation: ug
