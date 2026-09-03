@@ -7,9 +7,9 @@ control: SfColorPicker
 documentation: ug
 ---
 
-# About Syncfusion® UWP SfColorPicker Control
+# About Syncfusion® UWP Color Picker Control
 
-`SfColorPicker` control allows to pick a color using touch navigation. All settings including the RGB values can be manipulated purely using touch. Builders, Fashion designers can make much of this app to choose different color combinations for their layouts.
+`UWP Color Picker` control allows to pick a color using touch navigation. All settings including the RGB values can be manipulated purely using touch. Builders, Fashion designers can make much of this app to choose different color combinations for their layouts.
 
 ## Features
 

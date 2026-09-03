@@ -7,9 +7,9 @@ control: SfColorPalette
 documentation: ug
 ---
 
-# Navigation in UWP SfColorPalette
+# Navigation in UWP Color Palette
 
-SfColorPalette have swatch buttons, which opens a collection of color items on click under a swatch.
+UWP Color Palette have swatch buttons, which opens a collection of color items on click under a swatch.
 
 **Apex**
 

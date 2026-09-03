@@ -7,11 +7,11 @@ control: SfColorPicker
 documentation: ug
 ---
 
-# Adjusting Color Values in UWP SfColorPicker
+# Adjusting Color Values in UWP Color Picker
 
 ## Adjusting the Hue Value
 
-`SfColorPicker` allows to change the hue value by sliding the HueThumb. In WinRT, holding the thumb shows the color tool tip that indicates the current hue color.
+`UWP Color Picker` allows to change the hue value by sliding the HueThumb. In WinRT, holding the thumb shows the color tool tip that indicates the current hue color.
 
 ![Adjusting-Color-img1](Adjusting-Color-images/Adjusting-Color-img1.jpeg)
 
