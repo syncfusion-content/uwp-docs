@@ -7,9 +7,9 @@ control: SfComboBox
 documentation: ug
 ---
 
-# About Syncfusion® UWP SfComboBox Control
+# About Syncfusion® UWP ComboBox Control
 
-The SfComboBox control allows the user to select an item from a list of suggestions. 
+The UWP ComboBox control allows the user to select an item from a list of suggestions. 
 
 ![Overview of SfComboBox](Overview_images/Overview_img1.png)
 
