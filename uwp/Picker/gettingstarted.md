@@ -10,9 +10,9 @@ documentation: ug
 
 # Getting Started with UWP Picker
 
-This section explains you the steps to configure a SfPicker control in a real-time scenario and provides a walk-through on some of the customization features available in SfPicker control.
+This section explains you the steps to configure a UWP Picker control in a real-time scenario and provides a walk-through on some of the customization features available in the control.
 
-## Adding SfPicker Control
+## Adding UWP Picker Control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -20,24 +20,24 @@ Create a Universal Windows Platform project in Visual Studio and refer to the fo
 
 * Syncfusion.SfShared.UWP
 
-### Create a simple SfPicker
+### Create a simple UWP Picker
 
-This section explains how to create simple SfPicker control and configure it. SfPicker can configure using C# code. 
+This section explains how to create simple UWP Picker control and configure it. It can configure using C# code. 
 
 ### Create the UWP project 
 
 Create new blank project (Universal Windows) using Visual Studio for UWP project. 
 
-### Adding SfPicker in UWP project
+### Adding UWP Picker in UWP project
 
-1. Add the required assembly reference in UWP and other renderer projects as discussed in **Adding** **SfPicker** **reference** section.
-2. Add SfPicker control two way XAML and C#.
+1. Add the required assembly reference in UWP and other renderer projects as discussed in **Adding** **UWP Picker** **reference** section.
+2. Add UWP Picker control two way XAML and C#.
 * XAML Page
-  * Set SfPicker control namespace as `xmlns:syncfusion=using:Syncfusion.UI.Xaml.Controls.Input;` `assembly=Syncfusion.SfInput.UWP;` in XAML Content page.
-  * Set the SfPicker control in Content property of ContentPage.
+  * Set UWP Picker control namespace as `xmlns:syncfusion=using:Syncfusion.UI.Xaml.Controls.Input;` `assembly=Syncfusion.SfInput.UWP;` in XAML Content page.
+  * Set the UWP Picker control in Content property of ContentPage.
 * C# Page
-  * Import SfPicker control namespace as `using Syncfusion.UI.Xaml.Controls.Input;` in C# ContentPage.
-  * Create new SfPicker instance in ContentPage constructor and assign SfPicker instance to ContentPage Content property.
+  * Import UWP Picker control namespace as `using Syncfusion.UI.Xaml.Controls.Input;` in C# ContentPage.
+  * Create new UWP Picker instance in ContentPage constructor and assign its instance to ContentPage Content property.
 
 {% tabs %}
 
@@ -92,9 +92,9 @@ Create new blank project (Universal Windows) using Visual Studio for UWP project
 
 {% endtabs %}
 
-### Set Header to the SfPicker
+### Set Header to the UWP Picker
 
-SfPicker allows you to define header text by setting the `SfPicker.ColumnHeaderText` and enable SfPicker header by setting `SfPicker.ShowColumnHeader` property to true. Default value of `SfPicker.ShowColumnHeader` is True.
+UWP Picker allows you to define header text by setting the `SfPicker.ColumnHeaderText` and enable its header by setting `SfPicker.ShowColumnHeader` property to true. Default value of `SfPicker.ShowColumnHeader` is True.
 
 {% tabs %}
 
@@ -152,11 +152,11 @@ SfPicker allows you to define header text by setting the `SfPicker.ColumnHeaderT
 
 {% endtabs %}
 
-### Adding SfPicker Items
+### Adding UWP Picker Items
 
-SfPicker control is a data bounded control. Hence you must create collection of data’s and bind it to SfPicker control.
+UWP Picker control is a data bounded control. Hence you must create collection of data’s and bind it to the control.
 
-* Create simple Observable Collection with string type of Data’s for the SfPicker 
+* Create simple Observable Collection with string type of Data’s for the UWP Picker 
 
 {% highlight c# %}
 
@@ -215,9 +215,9 @@ SfPicker control is a data bounded control. Hence you must create collection of 
 
 {% endhighlight %}
 
-* Binding the Collection to SfPicker
+* Binding the Collection to UWP Picker
 
-SfPicker allow you to bind collection of data’s by setting `SfPicker.ItemsSource` property. You can bind the collection of data’s in C#.
+UWP Picker allow you to bind collection of data’s by setting `SfPicker.ItemsSource` property. You can bind the collection of data’s in C#.
 
 {% tabs %}
 
@@ -281,7 +281,7 @@ SfPicker allow you to bind collection of data’s by setting `SfPicker.ItemsSour
 
 ### Set title to the Items 
 
-SfPicker allows you to define title to the SfPicker items by setting `SfPicker.ColumnHeaderText` and enable title of the SfPicker items by setting `SfPicker.ShowColumnHeader` property to True. Default value of `SfPicker.ShowColumnHeader` is False.
+UWP Picker allows you to define title to its items by setting `SfPicker.ColumnHeaderText` and enable title of the UWP Picker items by setting `SfPicker.ShowColumnHeader` property to True. Default value of `SfPicker.ShowColumnHeader` is False.
 
 {% tabs %}
 
@@ -344,7 +344,7 @@ SfPicker allows you to define title to the SfPicker items by setting `SfPicker.C
 
 ### Enable Validation button in Footer
 
-In SfPicker validation button (Ok and Cancel) can be enabled by setting `SfPicker.ShowFooter` property to True. Default value of `SfPicker.ShowFooter` property is False
+In UWP Picker validation button (Ok and Cancel) can be enabled by setting `SfPicker.ShowFooter` property to True. Default value of `SfPicker.ShowFooter` property is False
 
 {% tabs %}
 
@@ -404,7 +404,7 @@ In SfPicker validation button (Ok and Cancel) can be enabled by setting `SfPicke
 
 ### Open as Dialog
 
-In SfPickerSfPicker can be rendered as a dialog by setting `SfPicker.PickerMode` property to Dialog. Default value of `SfPicker.PickerMode` property is Default. 
+In UWP Picker can be rendered as a dialog by setting `SfPicker.PickerMode` property to Dialog. Default value of `SfPicker.PickerMode` property is Default. 
 
 {% tabs %}
 
@@ -465,7 +465,7 @@ In SfPickerSfPicker can be rendered as a dialog by setting `SfPicker.PickerMode`
 
 The picker can be opened programmatically by setting by setting `SfPicker.IsOpen` property to True. Default value of `SfPicker.IsOpen` is False.
 
-Note: This property automatically changed to False when close the dialog by clicking outside of dialog SfPicker.
+Note: This property automatically changed to False when close the dialog by clicking outside of dialog UWP Picker.
 
 {% tabs %}
 

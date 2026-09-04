@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Getting Started with UWP SfNumericTextBox
+# Getting Started with UWP Numeric TextBox
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 Assembly:  Syncfusion.SfInput.UWP 
@@ -16,7 +16,7 @@ Dependent assembly: Syncfusion.SfShared.UWP
 
 
 
-The following code sample shows how to create the SfNumericTextBox from code-behind and XAML,
+The following code sample shows how to create the UWP Numeric TextBox from code-behind and XAML,
 {% tabs %}
 {% highlight XAML %}
 
@@ -58,6 +58,6 @@ Dim numericTextBox As New SfNumericTextBox()
 
 ## See also
 
-[How to restrict the decimal values in SfNumericTextBox](https://support.syncfusion.com/kb/article/6346/how-to-restrict-the-decimal-values-in-sfnumerictextbox)
+[How to restrict the decimal values in UWP Numeric TextBox](https://support.syncfusion.com/kb/article/6346/how-to-restrict-the-decimal-values-in-sfnumerictextbox)
 
 N> You can refer to our [UWP Numeric Textbox](https://www.syncfusion.com/uwp-ui-controls/numeric-textbox) feature tour page to know about its other groundbreaking feature representations. You can also explore our [UWP Numeric Textbox example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) that shows you how to render and configure the Numeric textbox in UWP.

@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Value Change Mode in UWP SfNumericTextBox
+# Value Change Mode in UWP Numeric TextBox
 
 The ValueChangeMode property is used to mention when the validation need to take place, either in key pressed or in focus lost. When ValueChangeMode is set to OnKeyFocus, the validation will be carried out for each key press. When ValueChangeMode is OnLostFocus, the validation occur when the control lost the focus or the focus move to next control. ValueChangeMode includes the following options:
 
@@ -102,4 +102,4 @@ In below code sample, the control with name "Quantity_sfNumericTextBox" for Quan
 
 ## See also
 
-[What is the purpose of value change mode in SfNumericTextBox](https://www.syncfusion.com/kb/6960/what-is-the-purpose-of-valuechangemode-in-sfnumerictextbox)
+[What is the purpose of value change mode in UWP Numeric TextBox](https://www.syncfusion.com/kb/6960/what-is-the-purpose-of-valuechangemode-in-sfnumerictextbox)

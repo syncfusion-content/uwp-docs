@@ -7,11 +7,11 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# Appearance and Styling in UWP SfNumericUpDown
+# Appearance and Styling in UWP NumericUpDown
 
 ## Spin Buttons Alignment
 
-Spin Button position in the SfNumericUpDown control can be changed relative to the TextBox based on SpinButtonsAlignment. There are three built-in modes.
+Spin Button position in the UWP NumericUpDown control can be changed relative to the TextBox based on SpinButtonsAlignment. There are three built-in modes.
 
 1. Right
 2. Left

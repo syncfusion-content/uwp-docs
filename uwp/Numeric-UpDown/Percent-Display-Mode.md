@@ -7,7 +7,7 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# Percent Display Mode in UWP SfNumericUpDown
+# Percent Display Mode in UWP NumericUpDown
 
 With the PercentDisplayMode property, you can specify how to display numeric data in Percent mode. It provides the following options:
 

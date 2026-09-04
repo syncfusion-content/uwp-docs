@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Nullable Value in UWP SfNumericTextBox
+# Nullable Value in UWP Numeric TextBox
 
 The control will allow user to set Null Value. The AllowNull property needs to be set to make this behavior work. By default the property value is false.
 

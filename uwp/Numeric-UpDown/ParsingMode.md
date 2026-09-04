@@ -7,9 +7,9 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# ParsingMode in UWP SfNumericUpDown
+# ParsingMode in UWP NumericUpDown
 
-Value of the SfNumericUpDown gets parsed based on ParsingMode property. ParsingMode is of type Parsers which is enum of Double and Decimal. DefaultValue for ParsingMode is Double.
+Value of the UWP NumericUpDown gets parsed based on ParsingMode property. ParsingMode is of type Parsers which is enum of Double and Decimal. DefaultValue for ParsingMode is Double.
 
 {% tabs %}
 
@@ -57,6 +57,6 @@ numericUpDown.ParsingMode = Syncfusion.UI.Xaml.Controls.Input.Parsers.Decimal
 
 {% endtabs %}
 
-N>The `ParsingMode` should be set based on the data type. For example, if a `Decimal` type property is bound to Value property of SfNumericUpDown, then the `ParsingMode` should be set as `Decimal`.
+N>The `ParsingMode` should be set based on the data type. For example, if a `Decimal` type property is bound to Value property of UWP NumericUpDown, then the `ParsingMode` should be set as `Decimal`.
 
 ![ParsingMode view](Concepts_images/Concepts_img7.png)

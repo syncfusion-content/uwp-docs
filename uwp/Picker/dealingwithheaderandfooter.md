@@ -9,11 +9,11 @@ documentation: ug
 
 # Dealing with Header and Footer in UWP Picker
 
-This section explains about the header and footer customization of SfPicker.
+This section explains about the header and footer customization of UWP Picker.
 
 ## Enable or Disable Header 
 
-SfPicker allows enabling or disabling the header section by setting `SfPicker.ShowHeader` property to True or False. Default value of `SfPicker.ShowHeader` property is True.
+UWP Picker allows enabling or disabling the header section by setting `SfPicker.ShowHeader` property to True or False. Default value of `SfPicker.ShowHeader` property is True.
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ SfPicker allows enabling or disabling the header section by setting `SfPicker.Sh
 
 ## Set Custom Header 
 
-SfPicker allows providing custom text to Header of SfPicker by setting `SfPicker.Header` property. Default value of `SfPicker.Header` property is Null.
+UWP Picker allows providing custom text to its header by setting `SfPicker.Header` property. Default value of `SfPicker.Header` property is Null.
 
 {% tabs %}
 
@@ -133,11 +133,11 @@ SfPicker allows providing custom text to Header of SfPicker by setting `SfPicker
 
 ## Header Customization
 
-SfPicker allows customizing Background, TextColor and Fonts.
+UWP Picker allows customizing Background, TextColor and Fonts.
 
 ### Background
 
-Header background color can be customized  by setting `SfPicker.HeaderBackground` property of SfPicker.
+Header background color can be customized  by setting `SfPicker.HeaderBackground` property of UWP Picker.
 
 {% tabs %}
 
@@ -197,7 +197,7 @@ Header background color can be customized  by setting `SfPicker.HeaderBackground
 
 ### Text Color 
 
-Header text color can be customized by setting `SfPicker.HeaderForeground` property of SfPicker.
+Header text color can be customized by setting `SfPicker.HeaderForeground` property of UWP Picker.
 
 {% tabs %}
 
@@ -262,7 +262,7 @@ This section explains about the customization of Header text of Font.
 
 #### 	FontFamily
 
-Header text FontFamily can be customized by setting `SfPicker.HeaderFontFamily` property of SfPicker.
+Header text FontFamily can be customized by setting `SfPicker.HeaderFontFamily` property of UWP Picker.
 
 {% tabs %}
 
@@ -322,7 +322,7 @@ Header text FontFamily can be customized by setting `SfPicker.HeaderFontFamily` 
 
 #### 	FontSize
 
-Header text FontSize can be customized by setting `SfPicker.HeaderFontSize` property of SfPicker.
+Header text FontSize can be customized by setting `SfPicker.HeaderFontSize` property of UWP Picker.
 
 {% tabs %}
 
@@ -382,7 +382,7 @@ Header text FontSize can be customized by setting `SfPicker.HeaderFontSize` prop
 
 #### 	FontAttribute
 
-Header text FontAttribute can be customized by setting `SfPicker.HeaderFontStyle` property of SfPicker.
+Header text FontAttribute can be customized by setting `SfPicker.HeaderFontStyle` property of UWP Picker.
 
 {% tabs %}
 
@@ -443,7 +443,7 @@ Header text FontAttribute can be customized by setting `SfPicker.HeaderFontStyle
 
 ## Enable or Disable Footer 
 
-SfPicker allows enabling or disabling the footer section by setting `SfPicker.ShowFooter` property to True or False. Default value of `SfPicker.ShowFooter` property is False.
+UWP Picker allows enabling or disabling the footer section by setting `SfPicker.ShowFooter` property to True or False. Default value of `SfPicker.ShowFooter` property is False.
 
 {% tabs %}
 
@@ -503,7 +503,7 @@ SfPicker allows enabling or disabling the footer section by setting `SfPicker.Sh
 
 ## Set Custom Footer
 
-SfPicker allows providing custom view to Footer of SfPicker by setting `SfPicker.Footer` property. Default value of `SfPicker.Footer` property is Null.
+UWP Picker allows providing custom view to its Footer by setting `SfPicker.Footer` property. Default value of `SfPicker.Footer` property is Null.
 
 {% tabs %}
 
@@ -557,7 +557,7 @@ SfPicker allows providing custom view to Footer of SfPicker by setting `SfPicker
 
 ## Perform validation with default validation Button
 
-SfPicker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
+UWP Picker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event from the `SelectionChangedEvent` Argument current selected items can be obtained.
 
 
 {% tabs %}

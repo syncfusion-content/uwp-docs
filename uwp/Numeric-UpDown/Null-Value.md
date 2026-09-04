@@ -7,7 +7,7 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# Null Value in UWP SfNumericUpDown
+# Null Value in UWP NumericUpDown
 
 The control will allow user to set Null Value. The AllowNull property needs to be set to make this behavior work. By default the property value is false.
 

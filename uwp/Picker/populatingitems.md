@@ -10,13 +10,13 @@ documentation: ug
 
 # Populating Items in UWP Picker
 
-This section explains about the ways of populating items for SfPicker control
+This section explains about the ways of populating items for UWP Picker control
 
 ## Binding Data Source
 
-SfPicker is bound the external data source to display the data’s. It supports any collections that’s implements the `IEnumerable` interface.
+UWP Picker is bound the external data source to display the data’s. It supports any collections that’s implements the `IEnumerable` interface.
 
-To bind the data source in SfPicker, set the `SfPicker.ItemsSource` property as show in below code.
+To bind the data source in UWP Picker, set the `SfPicker.ItemsSource` property as show in below code.
 
 {% tabs %}
 
@@ -80,11 +80,11 @@ To bind the data source in SfPicker, set the `SfPicker.ItemsSource` property as 
 
 ## Multi-Column Items
 
-The SfPicker automatically populate the items as Multi-Column based on the Data Source.
+The UWP Picker automatically populate the items as Multi-Column based on the Data Source.
 
-Collection of items can be created and assigned to a Collection and each item Collection is a column of SfPicker. 
+Collection of items can be created and assigned to a Collection and each item Collection is a column of UWP Picker. 
 
-The following code example illustrates about to populate Month, Day and Year values in each column of SfPicker.
+The following code example illustrates about to populate Month, Day and Year values in each column of UWP Picker.
 
 {% tabs %}
 
@@ -231,13 +231,13 @@ Screen shot for the above code.
 
 ## Set Items Colors and Font Attributes customization
 
-In SfPicker, items text color and font both selected and unselected item of SfPicker control can be customized as shown below.  
+In UWP Picker,items text color and font both selected and unselected can be customized as shown below.  
 
 ### Selected Item Customization
 
 #### Text Color 
 
-Selected item text color can be customized by setting `SfPicker.SelectedItemForeground` property of SfPicker.
+Selected item text color can be customized by setting `SfPicker.SelectedItemForeground` property of UWP Picker.
 
 {% tabs %}
 
@@ -301,7 +301,7 @@ This section explains about the customization of Selected Item Font.
 
 ###### 	FontFamily
 
-Selected item text FontFamily can be customized by setting `SfPicker.SelectedItemFontFamily` property of SfPicker.
+Selected item text FontFamily can be customized by setting `SfPicker.SelectedItemFontFamily` property of UWP Picker.
 
 {% tabs %}
 
@@ -360,7 +360,7 @@ Selected item text FontFamily can be customized by setting `SfPicker.SelectedIte
 
 ###### 	FontSize
 
-Selected item text FontSize can be customized by setting `SfPicker.SelectedItemFontSize` property of SfPicker.
+Selected item text FontSize can be customized by setting `SfPicker.SelectedItemFontSize` property of UWP Picker.
 
 {% tabs %}
 
@@ -420,7 +420,7 @@ Selected item text FontSize can be customized by setting `SfPicker.SelectedItemF
 
 ###### 	FontAttribute
 
-Selected item text FontAttribute can be customized by setting `SfPicker.SelectedItemFontStyle` property of SfPicker.
+Selected item text FontAttribute can be customized by setting `SfPicker.SelectedItemFontStyle` property of UWP Picker.
 
 {% tabs %}
 
@@ -482,7 +482,7 @@ Selected item text FontAttribute can be customized by setting `SfPicker.Selected
 
 #### Text Color
 
-Unselected item text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property of SfPicker.
+Unselected item text color can be customized by setting `SfPicker.UnSelectedItemTextColor` property of UWP Picker.
 
 {% tabs %}
 
@@ -546,7 +546,7 @@ This section explains about the customization of unselected items Font.
 
 ###### 	FontFamily
 
-Unselected item text FontFamily can be customized by setting `SfPicker.UnSelectedItemFontFamily` property of SfPicker.
+Unselected item text FontFamily can be customized by setting `SfPicker.UnSelectedItemFontFamily` property of UWP Picker.
 
 {% tabs %}
     
@@ -606,7 +606,7 @@ Unselected item text FontFamily can be customized by setting `SfPicker.UnSelecte
 
 ###### 	FontSize
 
-Unselected item text FontSize can be customized by setting `SfPicker.UnSelectedItemTextSize` property of SfPicker.
+Unselected item text FontSize can be customized by setting `SfPicker.UnSelectedItemTextSize` property of UWP Picker.
 
 {% tabs %}
 
@@ -666,7 +666,7 @@ Unselected item text FontSize can be customized by setting `SfPicker.UnSelectedI
 
 ###### 	FontAttribute
 
-Unselected item text FontAttribute can be customized by setting `SfPicker.UnSelectedItemFontStyle` property of SfPicker.
+Unselected item text FontAttribute can be customized by setting `SfPicker.UnSelectedItemFontStyle` property of UWP Picker.
 
 {% tabs %}
 
@@ -726,7 +726,7 @@ Unselected item text FontAttribute can be customized by setting `SfPicker.UnSele
 
 ## Adding Custom View Items
 
-In SfPicker, the items can be customized with custom view of each item by adding all the item with custom view.
+In UWP Picker, the items can be customized with custom view of each item by adding all the item with custom view.
 
 {% tabs %}
 
