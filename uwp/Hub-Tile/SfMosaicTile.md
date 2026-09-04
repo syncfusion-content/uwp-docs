@@ -7,9 +7,9 @@ control: SfMosaicTile
 documentation: ug
 ---
 
-# Picture Collection Tile in UWP SfMosaicTile
+# Picture Collection Tile in UWP Mosaic Tile
 
-`SfMosaicTile` control provides a way to display pictures randomly with transition effect similar to people tile in Windows Phone 8 home screen. Mosaic tile can have collection of images and header to display in the tile.
+`UWP Mosaic Tile` control provides a way to display pictures randomly with transition effect similar to people tile in Windows Phone 8 home screen. Mosaic tile can have collection of images and header to display in the tile.
 
 ## Features
 
@@ -18,9 +18,9 @@ documentation: ug
 
 ## Getting Started
 
-This section explains how to create mosaic picture with flip transaction using ``SfMosaicTile` control.
+This section explains how to create mosaic picture with flip transaction using `UWP Mosaic Tile` control.
 
-### Adding SfMosaicTile control
+### Adding UWP Mosaic Tile control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -45,7 +45,7 @@ Create a Universal Windows Platform project in Visual Studio and refer to the fo
 {% endtabs %}
 
 
-2.Now add the `SfMosaicTile` control with a required optimal name using the included namespace
+2.Now add the `UWP Mosaic Tile` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -112,7 +112,7 @@ Set the properties Header, ImageList as given below:
 
 ## Configuring the Tile
 
-`SfMosaicTile` can be configured with header and images as follows:
+`UWP Mosaic Tile` can be configured with header and images as follows:
 
 ### Setting the header
 
@@ -154,7 +154,7 @@ mosaicTile.Header = "Mosaic Tile"
 
 ### Adding Image URLs
 
-`ImageList` property is used to set a collection of image URL that are to be displayed in tile. IsBitmapImageList property must be set to false while using image URLs otherwise images does not appear in mosaic tile.
+`ImageList` property is used to set a collection of image URL that are to be displayed in tile. IsBitmapImageList property must be set to false while using image URLs otherwise images does not appear in UWP Mosaic Tile.
 
 {% tabs %}
 
@@ -271,7 +271,7 @@ mosaicTile.ImageList.Add("Assets/employee9.png")
 
 ### Setting ImageSource
 
-`BitmapImageList` property is used to set a collection of image sources that are to be displayed in the tile. IsBitmapImageList property must be set to true while using image sources otherwise images does not appear in mosaic tile.
+`BitmapImageList` property is used to set a collection of image sources that are to be displayed in the tile. IsBitmapImageList property must be set to true while using image sources otherwise images does not appear in UWP Mosaic Tile.
 
 {% tabs %}
 
