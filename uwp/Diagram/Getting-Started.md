@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with UWP SfDiagram | Syncfusion®
-description: Learn how to get started with the Syncfusion® UWP SfDiagram control. Explore setup, flowchart creation, nodes, connectors, and annotations.
+title: Getting Started with UWP Diagram | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Diagram control. Explore setup, flowchart creation, nodes, connectors, and annotations.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Getting Started with UWP SfDiagram
+# Getting Started with UWP Diagram
 
-The following section helps you to build your application with UWP SfDiagram. 
+The following section helps you to build your application with UWP Diagram. 
 
 ## Creating the project
 
@@ -19,7 +19,7 @@ Create a new UWP project using Visual Studio. For more [details](https://learn.m
 
 ### Adding control via Designer
 
-UWP SfDiagram control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+UWP Diagram control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![Designer](Getting-Started_images\Diagram.png)
 
@@ -86,7 +86,7 @@ Let us create a simple flow chart using SfDiagram.
 
 ### Initialize the Diagram
 
-The UWP SfDiagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize UWP SfDiagram in XAML as shown in the following code example.
+The UWP Diagram exists in the Syncfusion.UI.Xaml.Diagram namespace. Initialize UWP Diagram in XAML as shown in the following code example.
 
 {% tabs %}
 {% highlight xaml %}
