@@ -1,13 +1,13 @@
 ---
 layout: post
+title: AutoScroll in UWP Diagram | Syncfusion®
+description: Learn how to use AutoScroll in the Syncfusion® UWP Diagram control, including scroll limits, borders, and custom scrollable areas.
 platform: uwp
-title: AutoScroll in UWP SfDiagram | Syncfusion®
-description: Learn how to use AutoScroll in the Syncfusion® UWP SfDiagram control, including scroll limits, borders, and custom scrollable areas.
 control: SfDiagram
 documentation: ug
 ---
 
-# AutoScroll in UWP SfDiagram
+# AutoScroll in UWP Diagram
 
 Autoscroll feature automatically scrolls the Diagram whenever the Node or Connector is moved beyond the boundary of the diagram. So that, it is always visible during dragging, resizing, and multiple selection operations. Autoscroll is automatically triggered when any one of the following is done towards the edges of the Diagram.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Connector in UWP SfDiagram | Syncfusion®
-description: Learn about connectors in the Syncfusion® UWP SfDiagram control, including segments, ports, decorators, bridging, appearance, and editing.
+title: Connector in UWP Diagram | Syncfusion®
+description: Learn about connectors in the Syncfusion® UWP Diagram control, including segments, ports, decorators, bridging, appearance, and editing.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Connector in UWP SfDiagram
+# Connector in UWP Diagram
 
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
@@ -515,7 +515,7 @@ To explore about arguments, please refer to [ChangedEventArgs](https://help.sync
 
 ![bezier connector with control thumbs](Connector_images/Bezier3.gif)
 
-## Constraints
+### Constraints
 
 The `Constraints` property of Connector allows to enable/disable certain features of Connectors. For more information about	constraints, refer to [Connector Constraints](/uwp/diagram/constraints#connector-constraints "Connector Constraints").
 

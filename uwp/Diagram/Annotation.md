@@ -1,13 +1,13 @@
 ---
 layout: post
+title: Annotation in UWP Diagram | Syncfusion®
+description: Learn how to use annotations in the Syncfusion® UWP Diagram control, including alignment, wrapping, editing, rotation, and customization.
 platform: uwp
-title: Annotation in UWP SfDiagram | Syncfusion®
-description: Learn how to use annotations in the Syncfusion® UWP SfDiagram control, including alignment, wrapping, editing, rotation, and customization.
 control: SfDiagram
 documentation: ug
 ---
 
-# Annotation in UWP SfDiagram
+# Annotation in UWP Diagram
 
 Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
 You can add Multiple Labels to a Node/Connector.
@@ -40,7 +40,7 @@ NodeViewModel node = new NodeViewModel()
 	Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
-//Adds Nodes to the UWP SfDiagram
+//Adds Nodes to the UWP Diagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -71,7 +71,7 @@ ConnectorViewModel connector = new ConnectorViewModel()
 	},
 	TargetDecoratorStyle = this.diagram.Resources["decoratorstyle1"] as Style,
 };
-//Adds Connectors to the UWP SfDiagram
+//Adds Connectors to the UWP Diagram
 lines.Add(connector);
 diagram.Connectors = lines;   
 
@@ -140,7 +140,7 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Nodes to the UWP SfDiagram
+//Adds Nodes to the UWP Diagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -179,7 +179,7 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Nodes to the SfDiagram
+//Adds Nodes to the Diagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -233,7 +233,7 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Node to the SfDiagram
+//Adds Node to the Diagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -288,7 +288,7 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Nodes to the UWP SfDiagram
+//Adds Nodes to the UWP Diagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 
@@ -363,7 +363,7 @@ NodeViewModel node1 = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Nodes to the UWP SfDiagram
+//Adds Nodes to the UWP Diagram
 nodes.Add(node);
 nodes.Add(node1);
 diagram.Nodes = nodes;
@@ -515,7 +515,7 @@ NodeViewModel node = new NodeViewModel()
 	ShapeStyle = this.diagram.Resources["shapestyle"] as Style
 };
 
-//Adds Node to the UWP SfDiagram
+//Adds Node to the UWP Diagram
 nodes.Add(node);
 diagram.Nodes = nodes;
 

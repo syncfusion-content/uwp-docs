@@ -1,13 +1,13 @@
 ---
 layout: post
-title: DataSource in UWP SfDiagram | Syncfusion®
-description: Learn how to bind and visualize data in the Syncfusion® UWP SfDiagram control using DataSource settings, relationships, and layouts.
+title: DataSource in UWP Diagram | Syncfusion®
+description: Learn how to bind and visualize data in the Syncfusion® UWP Diagram control using DataSource settings, relationships, and layouts.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# DataSource in UWP SfDiagram
+# DataSource in UWP Diagram
 
 Diagram can be populated with the nodes and connectors based on the information provided from an external data source.
 
@@ -75,7 +75,7 @@ public class Employees : ObservableCollection<Employee>
 {
 }
 
-// Initialize DataSourceSettings for UWP SfDiagram
+// Initialize DataSourceSettings for UWP Diagram
 Diagram.DataSourceSettings = new DataSourceSettings()
 {
     Id = "EmployeeId",
@@ -84,7 +84,7 @@ Diagram.DataSourceSettings = new DataSourceSettings()
     DataSource = GetData(),
 };
 
-// Initialize layout manager for UWP SfDiagram
+// Initialize layout manager for UWP Diagram
 Diagram.LayoutManager = new Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager()
 {
     Layout = new DirectedTreeLayout()

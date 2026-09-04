@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Rulers in UWP SfDiagram | Syncfusion®
-description: Learn about rulers in the Syncfusion® UWP SfDiagram control, including measurement guides, customization, ruler segments, and ticks.
+title: Rulers in UWP Diagram | Syncfusion®
+description: Learn about rulers in the Syncfusion® UWP Diagram control, including measurement guides, customization, ruler segments, and ticks.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Rulers in UWP SfDiagram
+# Rulers in UWP Diagram
 
-The Ruler provides a Horizontal and Vertical guide for measuring in the UWP SfDiagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
+The Ruler provides a Horizontal and Vertical guide for measuring in the UWP Diagram control. The Ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
 
 ## Adding Rulers to the Diagram
 
