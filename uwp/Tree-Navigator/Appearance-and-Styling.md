@@ -7,11 +7,11 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-# Appearance and Styling in UWP SfTreeNavigator
+# Appearance and Styling in UWP Tree Navigator
 
-## Customizing TreeNavigator Header
+## Customizing UWP Tree Navigator Header
 
-`HeaderTemplate` property of SfTreeNavigator is used to apply a customized template for `SfTreeNavigator` header.
+`HeaderTemplate` property is used to apply a customized template for the `UWP Tree Navigator` header.
 
 {% tabs %}
 
@@ -48,7 +48,7 @@ documentation: ug
 ![Appearance and Styling](Appearance-and-Styling-images/Appearance-and-Styling-img2.jpeg)
 
 
-`HeaderStyle` property of SfTreeNavigator is used to customize the `SfTreeNavigator` header.
+`HeaderStyle` property is used to customize the `UWP Tree Navigator` header.
 
 {% tabs %}
 
@@ -86,7 +86,7 @@ documentation: ug
 
 ## TreeNavigatorItem Header Template
 
-`HeaderTemplate` property of `SfTreeNavigatorItem` is used to apply a customized template for `SfTreeNavigator` header.
+`HeaderTemplate` property of `SfTreeNavigatorItem` is used to apply a customized template for `UWP Tree Navigator` header.
 
 {% tabs %}
 

@@ -7,7 +7,7 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Spell Check in UWP SfSpellChecker
+# Spell Check in UWP Spell Checker
 
 The Spell Checking engine can also be customized to ignore certain text or words from being spell checked. By setting the respective properties, these words will be overlooked and will not indicate them as misspelled words. This option will be effective when there are a number of email id’s and addresses, HTML tags, combination of words and numbers, combination of upper and lower case words that are used frequently in the document.
 
@@ -47,7 +47,7 @@ Specifies whether or not to Spell Check numbers or words with numbers during Spe
 
 ## Setting Spell Check Options
 
-Create a spell checker instance and set the spell checking options as given below:
+Create a UWP Spell Checker instance and set the spell checking options as given below:
 
 {% tabs %}
 
@@ -73,7 +73,7 @@ SpellChecker.IgnoreHtmlTags = true;
 
 ## Getting Suggestions for Error Word
 
-`SfSpellChecker` provides support to get suggestion list by passing the error word in the below methods.
+`UWP Spell Checker` provides support to get suggestion list by passing the error word in the below methods.
 
 * GetSuggestions
 * GetPhoneticWords

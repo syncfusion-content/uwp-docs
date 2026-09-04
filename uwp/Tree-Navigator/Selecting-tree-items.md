@@ -7,9 +7,9 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-# Selecting Items in UWP SfTreeNavigator
+# Selecting Items in UWP Tree Navigator
 
-TreeNavigator items can be selected in one or more ways as give below:
+UWP Tree Navigator items can be selected in one or more ways as give below:
 
 ## Selecting item using SelectedItem
 
@@ -148,7 +148,7 @@ treeNavigator.Select(wpf)
 
 ## Retrieving the selected hierarchical level
 
-DrillDownItem is used to get the instance of an item that holds the items in current hierarchical level. It is a read only property containing `SfTreeNavigator` itself as DrillDownItem when no item is selected.
+DrillDownItem is used to get the instance of an item that holds the items in current hierarchical level. It is a read only property containing `UWP Tree Navigator` itself as DrillDownItem when no item is selected.
 
 {% tabs %}
 
@@ -252,7 +252,7 @@ End Sub
 
 ItemClicked event is used to notify whenever an item is clicked. It is fired for both mouse left button and right button click. The event arguments are 
 
-ItemPosition – The (x,y) point where SfTreeNavigator item is clicked
+ItemPosition – The (x,y) point where UWP Tree Navigator item is clicked
 
 MouseMode – Determines whether left or right mouse button click
 

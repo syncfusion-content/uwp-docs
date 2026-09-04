@@ -7,15 +7,15 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Getting Started with UWP SfSpellChecker
+# Getting Started with UWP Spell Checker
 
-Spell checking operation can be done on Text editor controls through `SfSpellChecker` in UWP application by implementing `IEditorProperties` interface.
+Spell checking operation can be done on Text editor controls through `UWP Spell Checker` in UWP application by implementing `IEditorProperties` interface.
 
-The following steps helps to add `SfSpellChecker`.
+The following steps helps to add `UWP Spell Checker`.
 
 1 . Create a UWP project in Visual Studio and include `Syncfusion.SfSpellChecker.UWP` assembly.
 
-2 . Create an instance of `SfSpellChecker` using “Syncfusion.UI.Xaml.Controls” namespace.
+2 . Create an instance of `UWP Spell Checker` using “Syncfusion.UI.Xaml.Controls” namespace.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ Syncfusion.UI.Xaml.Controls.SfSpellChecker spellChecker = new Syncfusion.UI.Xaml
 
 {% endtabs %}
 
-4 . Inherit `IEditorProperties` interface of `SfSpellChecker` and Initialize all the methods and properties in interface.
+4 . Inherit `IEditorProperties` interface of `UWP Spell Checker` and Initialize all the methods and properties in interface.
 
 {% tabs %}
 

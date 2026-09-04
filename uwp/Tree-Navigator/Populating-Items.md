@@ -7,13 +7,13 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-# Populating Items in UWP SfTreeNavigator
+# Populating Items in UWP Tree Navigator
 
-`SfTreeNavigatorItem` are added as items of SfTreeNavigator. Items can be added using `Items` or `ItemSource` property.
+`SfTreeNavigatorItem` are added as items of UWP Tree Navigator. Items can be added using `Items` or `ItemSource` property.
 
 ## Adding Items
 
-`SfTreeNavigator` accepts `SfTreeNavigatorItem` as its children when added directly. Here five `SfTreeNavigatorItems` are added as the children of SfTreeNavigator. Adding items as follows display items with blank header.
+`UWP Tree Navigator` accepts `SfTreeNavigatorItem` as its children when added directly. Here five `SfTreeNavigatorItems` are added as the children of UWP Tree Navigator. Adding items as follows display items with blank header.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ treeNavigator.Items.Add(New SfTreeNavigatorItem())
 
 ## Setting Header
 
-`Header` property helps to set the header for `SfTreeNavigatorItem`. Tree navigator item can be selected by clicking on its header.
+`Header` property helps to set the header for `SfTreeNavigatorItem`. UWP Tree Navigator item can be selected by clicking on its header.
 
 {% tabs %}
 
@@ -146,7 +146,7 @@ treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Universal"})
 
 ## Adding SubItems
 
-`Items` property helps to add sub items for `SfTreeNavigatorItem`. `SfTreeNavigatorItem` is an ItemsControl so that a collection of tree navigator items can be added to it. Sub items are viewable only after it is navigated to next level.
+`Items` property helps to add sub items for `SfTreeNavigatorItem`. `SfTreeNavigatorItem` is an ItemsControl so that a collection of UWP Tree Navigator items can be added to it. Sub items are viewable only after it is navigated to next level.
 
 {% tabs %}
 
@@ -245,7 +245,7 @@ treeNavigator.Items.Add(New SfTreeNavigatorItem() With {.Header = "Universal"})
 
 ### Adding Items
 
-`SfTreeNavigator` accepts any business object collection to be bound to its `ItemsSource` property. 
+`UWP Tree Navigator` accepts any business object collection to be bound to its `ItemsSource` property. 
 
 1.Create a model
 
@@ -455,7 +455,7 @@ End Sub
 
 {% endtabs %}
 
-4.Set the DataContext for control and bind the Models collection to `ItemsSource` property of `SfTreeNavigator` control
+4.Set the DataContext for control and bind the Models collection to `ItemsSource` property of `UWP Tree Navigator` control
 
 {% tabs %}
 
@@ -467,7 +467,7 @@ End Sub
 
 {% endtabs %}
 
-TreeNavigator items need a template to render so `SfTreeNavigator` control is populated as follows:
+TreeNavigator items need a template to render so `UWP Tree Navigator` control is populated as follows:
 
 ![Adding items using ItemsSource](Populating-Items-images/Populating-Items-img4.jpeg)
 
