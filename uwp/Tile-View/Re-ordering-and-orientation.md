@@ -7,11 +7,11 @@ control: SfTileView
 documentation: ug
 ---
 
-# Re-ordering and Orientation in UWP SfTileView
+# Re-ordering and Orientation in UWP Tile View
 
 ## Reordering through touch
 
-`SfTileView` control provides tab reordering feature through touch drag and drop. Set the properties AllowDragDrop and AllowReorder to enable/disable this feature.
+`UWP Tile View` control provides tab reordering feature through touch drag and drop. Set the properties AllowDragDrop and AllowReorder to enable/disable this feature.
 
 {% tabs %}
 
@@ -57,9 +57,9 @@ documentation: ug
 
 ## Orientation
 
-### Orientation for TileView
+### Orientation for UWP Tile View
 
-Orientation specifies the arrangement sequence of tile view items. Both horizontal and vertical orientation are supported.
+Orientation specifies the arrangement sequence of UWP Tile View items. Both horizontal and vertical orientation are supported.
 
 **Horizontal**
 

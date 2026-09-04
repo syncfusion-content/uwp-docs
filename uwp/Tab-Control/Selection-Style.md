@@ -7,9 +7,9 @@ control: SfTabControl
 documentation: ug
 ---
 
-# Selection Style in UWP SfTabControl
+# Selection Style in UWP Tab Control
 
-Header of a selected item can be customized in SfTabControl.
+Header of a selected item can be customized in UWP Tab Control.
 
 ## Selected header style
 

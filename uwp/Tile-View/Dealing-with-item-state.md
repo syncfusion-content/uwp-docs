@@ -7,7 +7,7 @@ control: SfTileView
 documentation: ug
 ---
 
-# Dealing with State in UWP SfTileView
+# Dealing with State in UWP Tile View
 
 ## Setting item state
 
