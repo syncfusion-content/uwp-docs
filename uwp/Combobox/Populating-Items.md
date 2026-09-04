@@ -7,11 +7,11 @@ control: SfComboBox
 documentation: ug
 ---
 
-# Populating Items in UWP SfComboBox
+# Populating Items in UWP ComboBox
 
 ## Items Source
 
-SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a SfComboBox that display a list of employees. 
+SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a UWP ComboBox that display a list of employees. 
 
 The Employee model is displayed as follows.
 
@@ -138,7 +138,7 @@ End Property
 
 {% endtabs %}
 
-Bind the Employees collection to the ItemsSource property of the SfComboBox.
+Bind the Employees collection to the ItemsSource property of the UWP ComboBox.
 
 {% highlight XAML %}
 
@@ -147,13 +147,13 @@ Bind the Employees collection to the ItemsSource property of the SfComboBox.
 {% endhighlight %}
 
 
-The above steps populate the SfComboBox as illustrated in the following screenshot.
+The above steps populate the UWP ComboBox as illustrated in the following screenshot.
 
 ![SfComboBox populated with employee list](Populating-Items_images/Populating-Items_img1.png)
 
 ## DisplayMemberPath
 
-The DisplayMemberPath property of the SfComboBox is used to define the model’s property that is to be displayed inside the header of the tab items. 
+The DisplayMemberPath property of the UWP ComboBox is used to define the model’s property that is to be displayed inside the header of the tab items. 
 
 
 
@@ -173,7 +173,7 @@ This populates the SfComboBox as illustrated in the following screenshot.
 
 ## Item Template
 
-The ItemTemplate property of the SfComboBox can be used to customize the content part of the SfComboBoxItems.
+The ItemTemplate property of the UWP ComboBox can be used to customize the content part of the SfComboBoxItems.
 
 {% highlight html %}
 
@@ -203,6 +203,6 @@ The ItemTemplate property of the SfComboBox can be used to customize the content
 
 {% endhighlight %}
 
-This populates the SfComboBox as illustrated in the following screenshot.
+This populates the UWP ComboBox as illustrated in the following screenshot.
 
 ![SfComboBox with custom ItemTemplate showing employee details](Populating-Items_images/Populating-Items_img3.png)

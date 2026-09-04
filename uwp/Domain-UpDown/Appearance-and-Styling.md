@@ -7,7 +7,7 @@ control: SfDomainUpDown
 documentation: ug
 ---
 
-# Appearance and Styling in UWP SfDomainUpDown
+# Appearance and Styling in UWP Domain UpDown
 
 ## Spin Animation
 

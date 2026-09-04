@@ -7,9 +7,9 @@ control: SfDomainUpDown
 documentation: ug
 ---
 
-# Spin Button Alignment in UWP SfDomainUpDown
+# Spin Button Alignment in UWP Domain UpDown
 
-The spin button’s position in the SfDomainUpDown control can be changed using SpinButtonsAlignment. It contains three modes for positioning spin buttons:
+The spin button’s position in the UWP Domain UpDown control can be changed using SpinButtonsAlignment. It contains three modes for positioning spin buttons:
 
 1. Right
 2. Left
