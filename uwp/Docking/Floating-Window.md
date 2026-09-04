@@ -7,9 +7,9 @@ control: SfDockingManager
 documentation: ug
 ---
 
-# Floating Window in UWP SfDockingManager
+# Floating Window in UWP Docking Control
 
-Floating window is one of the states in the `SfDockingManager`. To make children of the `SfDockingManager` as Float, set the `SfDockingManager` child’s `DockState` values as Float.
+Float is one of the window states supported by the `UWP Docking Control`. To display a child window as a floating window, set its `DockState` property to `Float`.
 
 {% tabs %}
 
@@ -74,7 +74,7 @@ SfDockingManager.SetSideInDockedMode(ErrorList, Dock.Top);
 
 ## Positioning on Desired Location
 
-The `FloatWindow` can be placed at any desired location. To position the `FloatWindow` at the desired location with the required rectangle bounds, invoke the `SetFloatingWindowRect` method of the `SfDockingManager`.
+The `FloatWindow` can be placed at any desired location. To position the `FloatWindow` at the desired location with the required rectangle bounds, invoke the `SetFloatingWindowRect` method of the `UWP Docking Control`.
 
 {% tabs %}
 

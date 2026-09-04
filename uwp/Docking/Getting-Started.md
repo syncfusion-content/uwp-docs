@@ -7,13 +7,13 @@ control: SfDockingManager
 documentation: ug
 ---
 
-# Getting Started with UWP SfDockingManager
+# Getting Started with UWP Docking Control
 
-This section explains how to implement a similar UI as Visual Studio using the `SfDockingManager`.
+This section explains how to implement a similar UI as Visual Studio using the `UWP Docking Control`.
 
-## Add SfDockingManager
+## Add UWP Docking Control
 
-There are several ways to add Syncfusion control in to the Visual Studio UWP project. The following will help to add a `SfDockingManager` control through XAML Code.
+There are several ways to add Syncfusion control in to the Visual Studio UWP project. The following will help to add a `UWP Docking Control` control through XAML Code.
 
 * Create a UWP project in Visual Studio and refer to the following assemblies.
 
@@ -44,7 +44,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-* Now add the `SfDockingManager` control with a required optimal name by using the included namespace.
+* Now add the `UWP Docking Control` control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
@@ -58,7 +58,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 ## Add Children to SfDockingManager
 
-`SfDockingManager` can accept any control as its children. Here five ContentControls have been added as the children of the `SfDockingManager`.
+The `UWP Docking Control` can host any control as a child window. In the following example, five ContentControl elements are added as child windows.
 
 {% tabs %}
 
@@ -87,7 +87,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 ## Set Header for the Children
 
-`SfDockingManager` provides an attached property `Header`, that helps to set the header for a child window. Set the Header Property value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values "ToolBox", "Properties", "Output" and "Start Page".
+`UWP Docking Control` provides an attached property `Header`, that helps to set the header for a child window. Set the Header Property value as “Solution Explorer” for the first child and repeat the same procedure for the remaining children with values "ToolBox", "Properties", "Output" and "Start Page".
 
 {% tabs %}
 
@@ -116,7 +116,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 ## Set State for the Children
 
-`SfDockingManager` provides an attached property `DockState`, that helps to set the State of child windows. Since Dock is the default value of DockState, initially all the children will stay as Docking Window.
+`UWP Docking Control` provides an attached property `DockState`, that helps to set the State of child windows. Since Dock is the default value of DockState, initially all the children will stay as Docking Window.
 
 To Auto hide the “ToolBox” window, set its `DockState` property as `AutoHidden`. Repeat the same procedure with the `DockState` value as Float and Document for “Properties” and “Start Page” windows respectively to make them as Floating Window and Document Window.
 
@@ -147,7 +147,7 @@ To Auto hide the “ToolBox” window, set its `DockState` property as `AutoHidd
 
 ## Set Sides for the Children
 
-`SfDockingManager` provides an attached property `SideInDockedMode`, that helps to dock a window at the required side. Since Left is the default value, initially all the windows are docked to left side.
+`UWP Docking Control` provides an attached property `SideInDockedMode`, that helps to dock a window at the required side. Since Left is the default value, initially all the windows are docked to left side.
 
 Set the `SideInDockedMode` value as Right for “Solution Explorer” window to dock it on the right side.
 

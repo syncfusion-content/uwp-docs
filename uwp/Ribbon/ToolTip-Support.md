@@ -7,9 +7,9 @@ control: SfRibbon
 documentation: ug
 ---
 
-# ToolTip Support in UWP SfRibbon
+# ToolTip Support in UWP Ribbon
 
-Ribbon Controls support tooltips that are used to display small information while hovering the mouse over them.
+UWP Ribbon Controls support tooltips that are used to display small information while hovering the mouse over them.
 
 {% tabs %}
 

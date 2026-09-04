@@ -7,9 +7,9 @@ control: SfDockingManager
 documentation: ug
 ---
 
-# Document Window in UWP SfDockingManager
+# Document Window in UWP Docking Control
 
-Document window is one of the states available in the `SfDockingManager`. To make the children of the `SfDockingManager` as Document, set the child's `DockState` value as `Document`.
+Document is one of the window states supported by the` UWP Docking Control`. To display a child window in the document area, set its `DockState` property to `Document`.
 
 All the Document windows are added in a `DocumentContainer`. Content can be switched by clicking the item header or choosing item from TabStripMenu.
 
@@ -34,7 +34,7 @@ When the `DockFill` property is set to true, dock windows are allowed to occupy 
 
 ## Specify Placement for Document Window
 
-A Document window can be added either at the start or end index position in the `DocumentContainer` by setting the `DocumentTabItemPlacement` property of the `SfDockingManager`. The `DocumentTabItemPlacement` enumeration values are `Start` and `End`; the default value is `Start`.
+A Document window can be added either at the start or end index position in the `DocumentContainer` by setting the `DocumentTabItemPlacement` property of the `UWP Docking Control`. The `DocumentTabItemPlacement` enumeration values are `Start` and `End`; the default value is `Start`.
 
 * Adding Documents at Start position
 

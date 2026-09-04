@@ -7,9 +7,9 @@ control: SfRibbon
 documentation: ug
 ---
 
-# Ribbon UI Controls in UWP SfRibbon
+# UI Controls in UWP Ribbon
 
-Several Ribbon controls are provided to add to a Ribbon Bar. Button controls are provided with 3 size forms: Extra-Small, Small and Large.
+Several UWP Ribbon controls are provided to add to a RibbonBar. Button controls are provided with 3 size forms: Extra-Small, Small and Large.
 
 * SfRibbonButton
 * SfDropDownButton
@@ -292,7 +292,7 @@ The SfRibbonGallery displays items with a good look and feel, and is also used t
 
 ### SfRibbonGalleryItem
 
-Ribbon Gallery Items are the contents of the Ribbon Gallery Group and it does not restrict the type of content that can be added to it. Use the following code example to add a Ribbon Gallery Item.
+UWP Ribbon Gallery Items are the contents of the `SfRibbonGalleryGroup` and it does not restrict the type of content that can be added to it. Use the following code example to add a UWP Ribbon Gallery Item.
 
 {% tabs %}
 
@@ -310,7 +310,7 @@ Ribbon Gallery Items are the contents of the Ribbon Gallery Group and it does no
 
 ### SfRibbonGalleryGroup
 
-A Ribbon Gallery Group is a collection of Ribbon Gallery Items. The items are grouped in the Ribbon Gallery control based on some classifications. Use the following code to add a Ribbon Gallery Group to the Ribbon Gallery control.
+A `SfRibbonGalleryGroup` is a collection of UWP Ribbon Gallery Items. The items are grouped in the SfRibbonGallery control based on some classifications. Use the following code to add a SfRibbonGalleryGroup to the SfRibbonGallery control.
 
 {% tabs %}
 
@@ -391,7 +391,7 @@ _ribbonGallery.Items.Add(_ribbongalleryGroup)
 
 ## SfRibbonMenu
 
-The SfRibbonMenu control is used to display items. It can contain sub menu items. The following code example is used to add a Ribbon menu control to the application.
+The SfRibbonMenu control is used to display items. It can contain sub menu items. The following code example is used to add a UWP Ribbon menu control to the application.
 
 {% tabs %}
 

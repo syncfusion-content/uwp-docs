@@ -7,11 +7,11 @@ control: SfRibbon
 documentation: ug
 ---
 
-# Getting Started with UWP SfRibbon
+# Getting Started with UWP Ribbon
 
-This section explains you on how to add SfRibbon in your application.
+This section explains you on how to add UWP Ribbon in your application.
 
-## Add SfRibbon
+## Add UWP Ribbon
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -36,7 +36,7 @@ xmlns:Ribbon="using:Syncfusion.UI.Xaml.Controls.SfRibbon">
 
 {% endtabs %}
 
-2. Now add the `SfRibbon` control with a required optimal name using the included namespace.
+2. Now add the `UWP Ribbon` control with a required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -74,9 +74,9 @@ Execute the above code to render the following output.
 ![SfRibbon control for UWP](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
-## Add Ribbon Tab
+## Add UWP Ribbon Tab
 
-The SfRibbon control accepts RibbonTab as children. The following code example illustrates how to add a RibbonTab.
+The UWP Ribbon control accepts RibbonTab as children. The following code example illustrates how to add a RibbonTab.
 
 {% tabs %}
 
@@ -170,7 +170,7 @@ private async void SfRibbonTab_Tapped(object sender, TappedRoutedEventArgs e)
 
 ![Click of Ribbon tab](Getting-Started_images/Getting-Started_img7.jpeg)
 
-## Add Ribbon Bar
+## Add UWP Ribbon Bar
 
 The RibbonTab accepts RibbonBar as children; here two RibbonBar controls are added inside the “HOME” RibbonTab.
 
@@ -252,9 +252,9 @@ Execute the above code to render the following output.
 ![Adding Ribbon bar](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
-## Add Ribbon controls to RibbonBar
+## Add UWP Ribbon controls to RibbonBar
 
-The following code example illustrates how to add ribbon controls to the Ribbon bar from code-behind and XAML.
+The following code example illustrates how to add UWP Ribbon controls to the RibbonBar from code-behind and XAML.
 
 {% tabs %}
 
