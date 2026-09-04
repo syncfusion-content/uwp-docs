@@ -7,11 +7,11 @@ control: SfRotator
 documentation: ug
 ---
 
-# Data Binding in UWP SfRotator
+# Data Binding in UWP Rotator
 
 ## Adding RotatorItem to the control
 
-SfRotatorItem can be populated with a collection of image data using `ItemsSource` property.
+UWP Rotator Item can be populated with a collection of image data using `ItemsSource` property.
 
 {% highlight Xaml %}
 
