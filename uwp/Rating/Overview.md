@@ -7,9 +7,9 @@ control: SfRating
 documentation: ug
 ---
 
-# About Syncfusion® UWP SfRating Control
+# About Syncfusion® UWP Rating Control
 
-`SfRating` control allows user to rate something by clicking on the icon that represents a rate.
+`UWP Rating` control allows user to rate something by clicking on the icon that represents a rate.
 
 ## Features
 

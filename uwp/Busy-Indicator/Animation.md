@@ -7,18 +7,18 @@ control: SfBusyIndicator
 documentation: ug
 ---
 
-# Animation in UWP SfBusyIndicator
+# Animation in UWP Busy Indicator
 
-`SfBusyIndicator` animation can be frozen and also change the animation type.
+`UWP Busy Indicator` animation can be frozen and also change the animation type.
 
 ##  Freezing Animation
 
-`SfBusyIndicator` can be enabled/disabled using the `IsEnabled` property. By default, `IsEnabled` is `true`.
+`UWP Busy Indicator` can be enabled/disabled using the `IsEnabled` property. By default, `IsEnabled` is `true`.
 
 * IsEnabled=False –  freezes the indicator 
 * IsEnabled=True –  activates the indicator
 
-Here is an example showing disabled `SfBusyIndicator`.
+Here is an example showing disabled `UWP Busy Indicator`.
 
 {% tabs %}
 
@@ -58,9 +58,9 @@ busyIndicator.IsEnabled = False
 
 ## Change Animation
 
-There are nearly 30 built-in animations defined for `SfBusyIndicator`. Different animations can be set using the property `AnimationType` which accepts value of type AnimationTypes(enum). Only one animation is possible to set at a time for a control. The default animation is Flower.
+There are nearly 30 built-in animations defined for `UWP Busy Indicator`. Different animations can be set using the property `AnimationType` which accepts value of type AnimationTypes(enum). Only one animation is possible to set at a time for a control. The default animation is Flower.
 
-Here is an example showing different animation types in `SfBusyIndicator`.
+Here is an example showing different animation types in `UWP Busy Indicator`.
 
 {% tabs %}
 

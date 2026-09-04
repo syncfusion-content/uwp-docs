@@ -7,9 +7,9 @@ control: SfRating
 documentation: ug
 ---
 
-# Rating Precisions in UWP SfRating
+# Rating Precisions in UWP Rating
 
-`Precision` specifies the level of accuracy in rating value. `SfRating` has three different precision types and they are:
+`Precision` specifies the level of accuracy in rating value. `UWP Rating` has three different precision types and they are:
 
 * Standard
 * Half

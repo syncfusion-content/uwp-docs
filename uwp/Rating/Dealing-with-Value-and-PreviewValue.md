@@ -7,11 +7,11 @@ control: SfRating
 documentation: ug
 ---
 
-# Dealing with Value in UWP SfRating
+# Dealing with Value in UWP Rating
 
 ## Setting the rated value
 
-`Value` property is used to get or set the rate value in `SfRating` control.
+`Value` property is used to get or set the rate value in `UWP Rating` control.
 
 {% tabs %}
 
@@ -48,14 +48,14 @@ rating.Value = 2
 
 ## Previewing the rate
 
-`PreviewValue` property is used to get the pointer over value in SfRating control, and this value is displayed as tool tip content.
+`PreviewValue` property is used to get the pointer over value in UWP Rating control, and this value is displayed as tool tip content.
 
 ![Rating PreviewValue view](Dealing-with-Value-and-PreviewValue-images/Dealing-with-Value-and-PreviewValue-img2.jpeg)
 
 
 ## ValueChanged event
 
-`ValueChanged` event fires whenever the value is changed in rating control. Event arguments contain old value and new value.
+`ValueChanged` event fires whenever the value is changed in UWP Rating control. Event arguments contain old value and new value.
 
 {% tabs %}
 
@@ -91,9 +91,9 @@ End Sub
 {% endtabs %}
 
 
-## Read only Rating control
+## Read only UWP Rating control
 
-`SfRating` can also restrict user from changing the rates in control using the `IsReadOnly` property. But preview value changes when pointer moves over the control.
+`UWP Rating` can also restrict user from changing the rates in control using the `IsReadOnly` property. But preview value changes when pointer moves over the control.
 
 {% tabs %}
 

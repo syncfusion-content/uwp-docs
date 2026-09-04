@@ -7,11 +7,11 @@ control: SfRating
 documentation: ug
 ---
 
-# Getting Started with UWP SfRating
+# Getting Started with UWP Rating
 
-This section explains how to create a group of visual symbols used for rating with `SfRating` control.
+This section explains how to create a group of visual symbols used for rating with `UWP Rating` control.
 
-## Adding SfRating control
+## Adding UWP Rating control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -33,7 +33,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 {% endtabs %}
 
 
-2.Now add the `SfRating` control with a required optimal name using the included namespace
+2.Now add the `UWP Rating` control with a required optimal name using the included namespace
 
 {% tabs %}
 
