@@ -7,11 +7,11 @@ control: SfSplitMosaicTile
 documentation: ug
 ---
 
-# Split Image Tile in UWP SfSplitMosaicTile
+# Split Image Tile in UWP Split Mosaic Tile
 
 ## Overview
 
-`SfSplitMosaicTile` control provides a way to integrate a tile similar to contacts group tile in Windows Phone home screen in application. It displays a collection of images in 3 horizontally stretched tiles. Each tile flip itself randomly to bring a new image.
+`UWP Split Mosaic Tile` control provides a way to integrate a tile similar to contacts group tile in Windows Phone home screen in application. It displays a collection of images in 3 horizontally stretched tiles. Each tile flip itself randomly to bring a new image.
 
 ### Features
 
@@ -19,9 +19,9 @@ Show images with flip transition effect
 
 ## Getting Started
 
-This section explains how to create mosaic picture with split transition using `SfSplitMosaicTile`.  
+This section explains how to create mosaic picture with split transition using `UWP Split Mosaic Tile`.  
 
-### Adding SfSplitMosaicTile control
+### Adding UWP Split Mosaic Tile control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -45,7 +45,7 @@ Create a Universal Windows Platform project in Visual Studio and refer to the fo
 
 {% endtabs %}
 
-2.Now add the `SfSplitMosaicTile` control with a required optimal name using the included namespace
+2.Now add the `UWP Split Mosaic Tile` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ Dim splitMosaicTile As New SfSplitMosaicTile()
 {% endtabs %}
 
 
-### Adding images to SfSplitMosaicTile
+### Adding images to UWP Split Mosaic Tile
 
 Store the images in project and set the properties `Header` and `ImageList` as given below:
 
@@ -113,7 +113,7 @@ Store the images in project and set the properties `Header` and `ImageList` as g
 
 ## Configuring the tile
 
-`SfSplitMosaicTile` can be configured with header and images as follows:
+`UWP Split Mosaic Tile` can be configured with header and images as follows:
 
 ### Setting the header
 
