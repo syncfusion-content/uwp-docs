@@ -7,10 +7,10 @@ control: HubTileBase
 documentation: ug
 ---
 
-# HubTileBase in UWP SfHubTile
+# HubTileBase in UWP Hub Tile
 
-`HubTileBase` is the base of all the four tiles under Syncfusion.SfHubTile.UWP assembly. It provides some basic functionalities that are found in the live tiles of windows 8 start screen. The following support are common and applicable to all the tiles such as `SfHubTile`, `SfMosaicTile`,
- `SfSplitMosaicTile` and `SfPulsingTile`.
+`HubTileBase` is the base of all the four tiles under Syncfusion.SfHubTile.UWP assembly. It provides some basic functionalities that are found in the live tiles of windows 8 start screen. The following support are common and applicable to all the tiles such as `UWP Hub Tile`, `UWP Mosaic Tile`,
+ `UWP Split Mosaic Tile` and `UWP Pulsing Tile`.
 
 ## Dealing with flip effect
 
@@ -159,7 +159,7 @@ A tile is said to be frozen when the animation pauses until it is resumed. All t
 
 ### IsFrozen 
 
-`IsFrozen` property is used to freeze and unfreeze a single tile i.e., freezing the animation. By default, `IsFrozen` is false and set to true for freezing the tile. Here is an example code for freezing `SfHubTile`.
+`IsFrozen` property is used to freeze and unfreeze a single tile i.e., freezing the animation. By default, `IsFrozen` is false and set to true for freezing the tile. Here is an example code for freezing `UWP Hub Tile`.
 
 {% tabs %}
 
