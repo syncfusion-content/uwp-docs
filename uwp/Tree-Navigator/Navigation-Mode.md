@@ -7,16 +7,16 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-# Navigation Mode in UWP SfTreeNavigator
+# Navigation Mode in UWP Tree Navigator
 
-`SfTreeNavigator` supports two different modes to support navigation. They are:
+`UWP Tree Navigator` supports two different modes to support navigation. They are:
 
 * Default 
 * Extended
 
 ## Default Expansion
 
-The header of current hierarchy level item is displayed at the top of the `SfTreeNavigator` with a back button. This back button is used to navigate back towards the root from current level.
+The header of current hierarchy level item is displayed at the top of the `UWP Tree Navigator` with a back button. This back button is used to navigate back towards the root from current level.
 
 {% tabs %}
 
@@ -68,7 +68,7 @@ treeNavigator.NavigationMode = Syncfusion.UI.Xaml.Controls.Navigation.Navigation
 
 ## Stacked Expansion
 
-The header of each level from root to current level is stacked one after another at the top of the `SfTreeNavigator`. Clicking on the stacked header, navigates to the corresponding level.
+The header of each level from root to current level is stacked one after another at the top of the `UWP Tree Navigator`. Clicking on the stacked header, navigates to the corresponding level.
 
 {% tabs %}
 

@@ -7,9 +7,9 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-# About Syncfusion® UWP SfTreeNavigator Control
+# About Syncfusion® UWP Tree Navigator Control
 
-`SfTreeNavigator` control gives a unique layout to arrange items in hierarchical tree structure without occupying much space. It displays the expanded item in a navigator.
+`UWP Tree Navigator` control gives a unique layout to arrange items in hierarchical tree structure without occupying much space. It displays the expanded item in a navigator.
 
 ## Features
 
