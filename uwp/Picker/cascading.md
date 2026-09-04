@@ -12,7 +12,7 @@ documentation: ug
 
 We have demonstrated how to create custom Cascading sample using Picker control in the following steps.
 
-We have created the cascading sample for updating state collection based on selected item of SfPicker.
+We have created the cascading sample for updating state collection based on selected item of UWP Picker.
 
 Please refer the below steps to create the cascading sample 
 
@@ -161,7 +161,7 @@ The below code demonstrates Area collection creation.
 
 {% endhighlight %}
 
-**Step** **2** **:** We have updated the state collection  based on selected item of country name using Selection changed event of SfPicker control.
+**Step** **2** **:** We have updated the state collection  based on selected item of country name using Selection changed event of UWP Picker control.
 
 {% highlight c# %}
 
@@ -194,7 +194,7 @@ The below code demonstrates Area collection creation.
 
 {% endhighlight %}
 
-**Step** **3** **:** We have defined column headers as  “Country” and  “State” using ColumnHeaderText property of SfPicker control. The below code demonstrates how to define header for each column of SfPicker control.
+**Step** **3** **:** We have defined column headers as  “Country” and  “State” using ColumnHeaderText property of UWP Picker control. The below code demonstrates how to define header for each column of UWP Picker control.
 
 {% highlight c# %}
 

@@ -7,7 +7,7 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# Number Formatting in UWP SfNumericUpDown
+# Number Formatting in UWP NumericUpDown
 
 Number formatting functionality allows to format the text based on the FormatString of the control. The control will format the display text on lost focus. 
 
@@ -72,7 +72,7 @@ N>  A detailed explanation of Numeric formatting is available here. The result s
 
 ## Culture
 
-The Culture property helps to localize the SfNumericUpDown control. Culture property is of type CultureInfo. Text will be formatted based on the specified Culture. Default Value is the Current UI Culture.
+The Culture property helps to localize the UWP NumericUpDown control. Culture property is of type CultureInfo. Text will be formatted based on the specified Culture. Default Value is the Current UI Culture.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ N>  Since CultureInfo type does not contain a default constructor, it is not pos
 
 ## Culture with formatting
 
-SfNumericUpDown which respects both Culture and FormatString while formatting Text. In the below Code snippet, German Culture and Currency format specifier have been set for Culture and FormatString properties respectively.
+UWP NumericUpDown which respects both Culture and FormatString while formatting Text. In the below Code snippet, German Culture and Currency format specifier have been set for Culture and FormatString properties respectively.
 
 {% tabs %}
 {% highlight XAML %}
@@ -159,4 +159,4 @@ numericUpDown.Culture = New System.Globalization.CultureInfo("de-DE")
 
 ## See also
 
-[How to format the display text as currency in SfNumericUpDown](https://support.syncfusion.com/kb/article/6349/how-to-format-display-text-as-currency-in-uwp-editor--numericupdown)
+[How to format the display text as currency in UWP NumericUpDown](https://support.syncfusion.com/kb/article/6349/how-to-format-display-text-as-currency-in-uwp-editor--numericupdown)

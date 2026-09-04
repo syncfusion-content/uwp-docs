@@ -7,7 +7,7 @@ control: SfProgressBar
 documentation: ug
 ---
 
-# Progress Animations in UWP SfProgressBar
+# Progress Animations in UWP Progress Bar
 
 The built-in progress bar shapes are circular and linear. However, any custom object can be used for fill animation. [ProgressType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_ProgressType) property is used to choose the progress type(shape) and the enumeration values are
 

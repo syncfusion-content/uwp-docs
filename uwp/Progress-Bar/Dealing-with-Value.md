@@ -7,11 +7,11 @@ control: SfProgressBar
 documentation: ug
 ---
 
-# Dealing with Value in UWP SfProgressBar
+# Dealing with Value in UWP Progress Bar
 
 ## Setting Progress Value
 
-`Value` property is used to set the progress in `SfProgressBar` control. Value should fall in between `Minimum` and `Maximum` values.
+`Value` property is used to set the progress in `UWP Progress Bar` control. Value should fall in between `Minimum` and `Maximum` values.
 
 {% tabs %}
 

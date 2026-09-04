@@ -7,13 +7,13 @@ control: SfProgressBar
 documentation: ug
 ---
 
-# Animating Custom Objects in UWP SfProgressBar
+# Animating Custom Objects in UWP Progress Bar
 
 Custom objects animation can be customized by change the [FillDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_FillDirection) of path and perform reverse animation.
 
 ## Animating Custom Objects along Directions
 
-The direction of fill for Custom progress type can be changed in [SfProgressBar](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_ProgressType) control using the property [FillDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_FillDirection). The enumeration “Directions” values are 
+The direction of fill for Custom progress type can be changed in [UWP Progress Bar](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_ProgressType) control using the property [FillDirection](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_FillDirection). The enumeration “Directions” values are 
 
 1. Horizontal
 2. Vertical
@@ -77,7 +77,7 @@ N> Progress types other than `Custom` does not show any changes in their animati
 
 ## Reverse Animation
 
-The direction of animation can be reversed in [SfProgressBar](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_ProgressType) control using the property [IsDirectionReversed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_IsDirectionReversed). The default value is false and it can be set as given below:
+The direction of animation can be reversed in [UWP Progress Bar](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_ProgressType) control using the property [IsDirectionReversed](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.Notification.SfProgressBar.html#Syncfusion_UI_Xaml_Controls_Notification_SfProgressBar_IsDirectionReversed). The default value is false and it can be set as given below:
 
 {% tabs %}
 

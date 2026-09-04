@@ -7,7 +7,7 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# Range in UWP SfNumericUpDown
+# Range in UWP NumericUpDown
 
 Input values can be restricted to a specific range by setting the Maximum and Minimum properties.
 
@@ -113,6 +113,6 @@ Minimum="50"
 
 ## See also
 
-[How to set the maximum and minimum value in SfNumericUpDown control](https://www.syncfusion.com/kb/6958/how-to-set-the-maximum-and-minimum-value-in-sfnumericupdown-control)
+[How to set the maximum and minimum value in UWP NumericUpDown control](https://www.syncfusion.com/kb/6958/how-to-set-the-maximum-and-minimum-value-in-sfnumericupdown-control)
 
-[How to increment and decrement the value of SfNumericUpDown control](https://www.syncfusion.com/kb/6961/how-to-increment-and-decrement-the-value-of-sfnumericupdown-control)
+[How to increment and decrement the value of UWP NumericUpDown control](https://www.syncfusion.com/kb/6961/how-to-increment-and-decrement-the-value-of-sfnumericupdown-control)

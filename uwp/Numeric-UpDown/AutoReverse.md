@@ -7,7 +7,7 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# AutoReverse in UWP SfNumericUpDown
+# AutoReverse in UWP NumericUpDown
 
 While incrementing, the control will start from Minimum once it reaches the Maximum and vice-versa.
 
