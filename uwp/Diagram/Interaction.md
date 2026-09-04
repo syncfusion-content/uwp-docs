@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interaction in UWP SfDiagram | Syncfusion®
-description: Learn about interaction in the Syncfusion® UWP SfDiagram control, including selection, drag and drop, zooming, panning, keyboard shortcuts, and events.
+title: Interaction in UWP Diagram | Syncfusion®
+description: Learn about interaction in the Syncfusion® UWP Diagram control, including selection, drag and drop, zooming, panning, keyboard shortcuts, and events.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Interaction in UWP SfDiagram
+# Interaction in UWP Diagram
 
 ## Selection
 
@@ -161,7 +161,7 @@ Node node1 = new Node()
        Constraints=NodeConstraints.Default | NodeConstraints.AllowDrop
 };
 
-//Adds the Node to the UWP SfDiagram
+//Adds the Node to the UWP Diagram
 nodes.Add(node1);
 diagram.Nodes = nodes;
 
