@@ -7,11 +7,11 @@ control: SfTileView
 documentation: ug
 ---
 
-# Getting Started with UWP SfTileView
+# Getting Started with UWP Tile View
 
-This section explains how to create views as tiles using the `SfTileView` control.
+This section explains how to create views as tiles using the `UWP Tile View` control.
 
-## Adding SfTileView control
+## Adding UWP Tile View control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -34,7 +34,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-2.Now add the `SfTileView` control with a required optimal name using the included namespace
+2.Now add the `UWP Tile View` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ Dim tileView As New SfTileView()
 
 ### Implement the Model and ViewModel
 
-Each tile view item, require Content and `MaximizedContent` property to be set. For coding simplicity, ItemsSource binding is used in this example.
+Each UWP Tile View item, require Content and `MaximizedContent` property to be set. For coding simplicity, ItemsSource binding is used in this example.
 
 1.Define the properties required in Model class:
 

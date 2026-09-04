@@ -7,11 +7,11 @@ control: SfTileView
 documentation: ug
 ---
 
-# Appearance and Styling in UWP SfTileView
+# Appearance and Styling in UWP Tile View
 
 ## Customizing item height
 
-`ItemHeight` property is used to set a common height value for all the items in TileView control only in Normal state.
+`ItemHeight` property is used to set a common height value for all the items in UWP Tile View control only in Normal state.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ tileView.ItemHeight = 50.0
 
 ## Customizing item width
 
-`ItemWidth` property is used to set a common width value for all the items in TileView control only in Normal state.
+`ItemWidth` property is used to set a common width value for all the items in UWP Tile View control only in Normal state.
 
 {% tabs %}
 
