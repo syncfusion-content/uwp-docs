@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Gridlines in UWP SfDiagram | Syncfusion®
-description: Learn about gridlines in the Syncfusion® UWP SfDiagram control, including visibility, appearance customization, and object snapping.
+title: Gridlines in UWP Diagram | Syncfusion®
+description: Learn about gridlines in the Syncfusion® UWP Diagram control, including visibility, appearance customization, and object snapping.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Gridlines in UWP SfDiagram
+# Gridlines in UWP Diagram
 
 **Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
 
@@ -207,7 +207,7 @@ The following code illustrates how to enable/disable the smart guide.
 
 {% highlight c# %}
 
-//Enables or disables the default behaviors of the Snapping in UWP SfDiagram.
+//Enables or disables the default behaviors of the Snapping in UWP Diagram.
 diagram.SnapSettings.SnapConstraints = SnapConstraints.All;
 
 //Disables the default behaviors snapping Nodes/Connectors to objects.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Commands in UWP SfDiagram | Syncfusion®
-description: Learn about commands in the Syncfusion® UWP SfDiagram control, including alignment, spacing, sizing, clipboard, zoom, and undo or redo operations.
+title: Commands in UWP Diagram | Syncfusion®
+description: Learn about commands in the Syncfusion® UWP Diagram control, including alignment, spacing, sizing, clipboard, zoom, and undo or redo operations.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Commands in UWP SfDiagram
+# Commands in UWP Diagram
 
 There are several commands available in the Diagram as follows.
 
