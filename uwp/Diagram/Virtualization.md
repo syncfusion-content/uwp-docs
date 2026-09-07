@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Virtualization in UWP SfDiagram | Syncfusion®
-description: Learn about virtualization in the Syncfusion® UWP SfDiagram control, including deferred scrolling, outline rendering, and performance optimization.
+title: Virtualization in UWP Diagram | Syncfusion®
+description: Learn about virtualization in the Syncfusion® UWP Diagram control, including deferred scrolling, outline rendering, and performance optimization.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Virtualization in UWP SfDiagram
+# Virtualization in UWP Diagram
 
 Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded (remaining objects are loaded only when they come into view).
 
-This feature gives optimized performance while loading and dragging items to the UWP SfDiagram that consists of many Nodes and Line Connectors.
+This feature gives optimized performance while loading and dragging items to the UWP Diagram that consists of many Nodes and Line Connectors.
 
-The following code example illustrates how to enable Virtualization in UWP SfDiagram
+The following code example illustrates how to enable Virtualization in UWP Diagram
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,7 +40,7 @@ To improve scrolling performance, the outline of a diagram element will be displ
 {% endhighlight %}
 {% highlight c# %}
 
-//Initialize the SfDiagram
+//Initialize the Diagram
 SfDiagram diagram = new SfDiagram();
 //Enable the Virtualize and outline constraints
 diagram.Constraints |= GraphConstraints.Virtualize | GraphConstraints.Outline;
@@ -107,10 +107,10 @@ Find the [Virtualization sample](https://github.com/SyncfusionExamples/UWP-Diagr
 
 {% seealso %}
 
-[How to serialize the UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/serialization)
+[How to serialize the UWP Diagram control](https://help.syncfusion.com/uwp/diagram/serialization)
 
-[How to localize the UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/localization)
+[How to localize the UWP Diagram control](https://help.syncfusion.com/uwp/diagram/localization)
 
-[How to have overview for UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/overview-control)
+[How to have overview for UWP Diagram control](https://help.syncfusion.com/uwp/diagram/overview-control)
 
 {% endseealso %}

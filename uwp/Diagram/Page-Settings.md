@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Page Settings in UWP SfDiagram | Syncfusion®
-description: Learn about page settings in the Syncfusion® UWP SfDiagram control, including page size, appearance, page breaks, and origin customization.
+title: Page Settings in UWP Diagram | Syncfusion®
+description: Learn about page settings in the Syncfusion® UWP Diagram control, including page size, appearance, page breaks, and origin customization.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Page Settings in UWP SfDiagram
+# Page Settings in UWP Diagram
 
 Page settings enable to customize the appearance, width, and height of the Diagram page.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview Control in UWP SfDiagram | Syncfusion®
-description: Learn about the overview control in the Syncfusion® UWP SfDiagram control, including navigation, zooming, panning, and viewport management.
+title: Overview Control in UWP Diagram | Syncfusion®
+description: Learn about the overview control in the Syncfusion® UWP Diagram control, including navigation, zooming, panning, and viewport management.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Overview Control in UWP SfDiagram
+# Overview Control in UWP Diagram
 
 Overview control is used to display a preview (overall view) of the entire content of a Diagram. This helps you to look overall picture of large Diagram and also to navigate (pan or zoom) to a particular position of the page.
 
@@ -129,10 +129,10 @@ Find the [Overview control sample](https://github.com/SyncfusionExamples/UWP-Dia
 
 {% seealso %}
 
-[How to virtualize the UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/virtualization)
+[How to virtualize the UWP Diagram control](https://help.syncfusion.com/uwp/diagram/virtualization)
 
-[How to serialize the UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/serialization)
+[How to serialize the UWP Diagram control](https://help.syncfusion.com/uwp/diagram/serialization)
 
-[How to localize the UWP SfDiagram control](https://help.syncfusion.com/uwp/diagram/localization)
+[How to localize the UWP Diagram control](https://help.syncfusion.com/uwp/diagram/localization)
 
 {% endseealso %}
