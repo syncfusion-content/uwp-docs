@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Port in UWP SfDiagram | Syncfusion®
-description: Learn about ports in the Syncfusion® UWP SfDiagram control, including node ports, connector ports, connections, appearance, and constraints.
+title: Port in UWP Diagram | Syncfusion®
+description: Learn about ports in the Syncfusion® UWP Diagram control, including node ports, connector ports, connections, appearance, and constraints.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Port in UWP SfDiagram
+# Port in the UWP Diagram
 
-UWP SfDiagram control provides support to define custom ports for making connections.
+UWP Diagram control provides support to define custom ports for making connections.
 
 ![Node Port](Port_images/Port_img1.jpeg)![Connector Port](Port_images/Port_img2.jpeg)
 

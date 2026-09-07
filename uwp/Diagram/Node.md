@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Node in UWP SfDiagram | Syncfusion®
-description: Learn about nodes in the Syncfusion® UWP SfDiagram control, including shapes, positioning, appearance, interaction, and constraints.
+title: Node in UWP Diagram | Syncfusion®
+description: Learn about nodes in the Syncfusion® UWP Diagram control, including shapes, positioning, appearance, interaction, and constraints.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Node in UWP SfDiagram
+# Node in the UWP Diagram
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
@@ -260,5 +260,5 @@ To explore about selection and selection related events , refer to [Selection](/
 ![rotating the selected node](Node_images/Rotate.gif)
 
 ### Constraints
-aa
+
 The `Constraints` property of Node allows you to enable/disable certain features. For more information about Node constraints, refer to [Node Constraints](/uwp/diagram/constraints#node-constraints "Node Constraints").

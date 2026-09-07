@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Stencil in UWP SfDiagram | Syncfusion®
-description: Learn about the stencil in the Syncfusion® UWP SfDiagram control, including symbols, symbol groups, filters, drag-and-drop previews, and events.
+title: Stencil in UWP Diagram | Syncfusion®
+description: Learn about the stencil in the Syncfusion® UWP Diagram control, including symbols, symbol groups, filters, drag-and-drop previews, and events.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Stencil in UWP SfDiagram
+# Stencil in UWP Diagram
 
-Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the UWP SfDiagram. Each symbol can be grouped together by using the SymbolGroupProvider and filters by using the SymbolFilterProvider through delegates.
+Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the UWP Diagram. Each symbol can be grouped together by using the SymbolGroupProvider and filters by using the SymbolFilterProvider through delegates.
 
 {% highlight xaml %}
 
@@ -279,11 +279,11 @@ There can be multiple SymbolFilters, but only one filter can be selected at a ti
 
 ## Preview for Drag and Drop
 
-UWP SfDiagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.
+UWP Diagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.
 
 ### Use Case Scenario
 
-This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the UWP SfDiagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
+This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the UWP Diagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
 
 ### Enabling preview
 

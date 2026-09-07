@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Group in UWP SfDiagram | Syncfusion®
-description: Learn how to group nodes and connectors in the Syncfusion® UWP SfDiagram control to create, manage, and interact with grouped elements.
+title: Group in UWP Diagram | Syncfusion®
+description: Learn how to group nodes and connectors in the Syncfusion® UWP Diagram control to create, manage, and interact with grouped elements.
 platform: uwp
 control: SfDiagram
 documentation: ug
 ---
 
-# Group in UWP SfDiagram
+# Group in UWP Diagram
 
 Group is used to cluster multiple Nodes and Connectors into a single element. It acts like a container for its children (Nodes, Groups, and Connectors). Every change made to the Group also affects the children. Child elements can be edited individually.
 
@@ -53,7 +53,7 @@ GroupViewModel group = new GroupViewModel()
 	},
 };
 
-//Adds the Groups to the UWP SfDiagram
+//Adds the Groups to the UWP Diagram
 groups.Add(group);
 diagram.Groups = groups;
 
