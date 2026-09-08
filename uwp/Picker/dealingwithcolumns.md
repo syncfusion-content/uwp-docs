@@ -9,17 +9,17 @@ documentation: ug
 
 # Dealing with Columns in UWP Picker
 
-This section explains about the customization of SfPicker Columns
+This section explains about the customization of UWP Picker Columns
 
 ## Adjust Column Width
 
-SfPicker allows user to adjust the column width by hooking `SfPicker.ColumnLoaded` event and then check the column using `ColumnLoadedEventArgs.Column` property and then adjust width of column by setting `ColumnLoadedEventArgs.Width` property.
+UWP Picker allows user to adjust the column width by hooking `SfPicker.ColumnLoaded` event and then check the column using `ColumnLoadedEventArgs.Column` property and then adjust width of column by setting `ColumnLoadedEventArgs.Width` property.
 
 We have prepared below code snippets to demonstrated DateTimePicker sample using `ColumnLoaded` event.
 
 *MainPage*
 
-Column width of the each and every column can be adjusted by the use of ColumnLoaded event in SfPicker which is implemented in the below code.
+Column width of the each and every column can be adjusted by the use of ColumnLoaded event in UWP Picker which is implemented in the below code.
 
 {% tabs %}
 
@@ -141,14 +141,14 @@ Sample link: [ColumnDateTime](http://www.syncfusion.com/downloads/support/direct
 
 ## Add Caption
 
-SfPicker allows user to add header for each column by setting `SfPicker.ColumnHeaderText` property and enabling `SfPicker.ShowColumnHeader` property to True.
+UWP Picker allows user to add header for each column by setting `SfPicker.ColumnHeaderText` property and enabling `SfPicker.ShowColumnHeader` property to True.
 
 `ColumnHeaderText` property is of object type and user can assign string or collection. 
-If a string type is assigned in `SfPicker.ColumnHeaderText`, that string will be updated in all the column of SfPicker.
+If a string type is assigned in `SfPicker.ColumnHeaderText`, that string will be updated in all the column of UWP Picker.
 
-To assign the collection in `SfPicker.ColumnHeaderText`, SfPicker column header update based on index with value on collection.
+To assign the collection in `SfPicker.ColumnHeaderText`, UWP Picker column header update based on index with value on collection.
 
-The below code illustrate assign the ColumnHeaderText for SfPicker
+The below code illustrate assign the ColumnHeaderText for UWP Picker
 
 {% tabs %}
 
@@ -274,11 +274,11 @@ The below code illustrate assign the ColumnHeaderText for SfPicker
 
 ## Caption Customization
 
-This section explains about the column header Background, TextColor and Fonts customization of SfPicker.
+This section explains about the column header Background, TextColor and Fonts customization of UWP Picker.
 
 ### Background
 
-Column header background color can be customized by setting `SfPicker. ColumnHeaderBackground` property of SfPicker.
+Column header background color can be customized by setting `SfPicker. ColumnHeaderBackground` property of UWP Picker.
 
 {% tabs %}
 
@@ -341,7 +341,7 @@ Column header background color can be customized by setting `SfPicker. ColumnHea
 
 ### Text Color 
 
-Column header text color can be customized by setting `SfPicker.ColumnHeaderForeground` property of SfPicker.
+Column header text color can be customized by setting `SfPicker.ColumnHeaderForeground` property of UWP Picker.
 
 {% tabs %}
 
@@ -408,7 +408,7 @@ This section explains about the customization of Column Header text of Font.
 
 #### 	FontFamily
 
-Column Header text FontFamily can be customized by setting `SfPicker.ColumnHeaderFontFamily` property of SfPicker.
+Column Header text FontFamily can be customized by setting `SfPicker.ColumnHeaderFontFamily` property of UWP Picker.
 
 {% tabs %}
 
@@ -471,7 +471,7 @@ Column Header text FontFamily can be customized by setting `SfPicker.ColumnHeade
 
 #### 	FontSize
 
-Column header text FontSize can be customized  by setting `SfPicker.ColumnHeaderFontSize` property of SfPicker.
+Column header text FontSize can be customized  by setting `SfPicker.ColumnHeaderFontSize` property of UWP Picker.
 
 {% tabs %}
 
@@ -534,7 +534,7 @@ Column header text FontSize can be customized  by setting `SfPicker.ColumnHeader
 
 #### 	FontAttribute
 
- Column header text FontAttribute can be customized by setting `SfPicker.ColumnHeaderFontStyle` property of SfPicker.
+ Column header text FontAttribute can be customized by setting `SfPicker.ColumnHeaderFontStyle` property of UWP Picker.
 
 {% tabs %}
 
@@ -597,9 +597,9 @@ Column header text FontSize can be customized  by setting `SfPicker.ColumnHeader
 
 ## Cascading
 
-SfPicker allow user to get selection change intimation by setting `SfPicker.SelectionChanged` event 
+UWP Picker allow user to get selection change intimation by setting `SfPicker.SelectionChanged` event 
 
-We have prepared cascading sample for change the SfPicker background color when change the Selection of SfPicker
+We have prepared cascading sample for change the UWP Picker background color when change the Selection of UWP Picker
 
 {% tabs %}
 

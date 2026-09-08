@@ -7,9 +7,9 @@ control: SfPulsingTile
 documentation: ug
 ---
 
-# Pulsing Animation Tile in UWP SfPulsingTile
+# Pulsing Animation Tile in UWP Pulsing Tile
 
-`SfPulsingTile` control allows to create a tile similar to Music and Video hub tile in Windows Phone. The content zooms in/out randomly with random translation in X and Y axis.
+`UWP Pulsing Tile` control allows to create a tile similar to Music and Video hub tile in Windows Phone. The content zooms in/out randomly with random translation in X and Y axis.
 
 ## Features
 
@@ -17,7 +17,7 @@ Animation properties are completely customizable
 
 ## Getting Started
 
-This section explains how to create a Windows Phone “Music" tile using `SfPulsing` control.
+This section explains how to create a Windows Phone “Music" tile using `UWP Pulsing Tile` control.
 
 ### Adding SfSplitMosaicTile control
 
@@ -43,7 +43,7 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endtabs %}
 
-2.Now add the `SfPulsingTile` control with a required optimal name using the included namespace
+2.Now add the `UWP Pulsing Tile` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ Dim pulsingTile As New SfPulsingTile()
 
 ### Adding image to the tile
 
-Set the image as Content of `SfPulsingTile` as given below:
+Set the image as Content of `UWP Pulsing Tile` as given below:
 
 {% tabs %}
 

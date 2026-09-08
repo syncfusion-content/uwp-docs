@@ -7,9 +7,9 @@ control: SfTabControl
 documentation: ug
 ---
 
-# Scroll and Close Buttons in UWP SfTabControl
+# Scroll and Close Buttons in UWP Tab Control
 
-SfTabControl provides buttons to scroll and close tab items. 
+UWP Tab Control provides buttons to scroll and close tab items. 
 
 ## Tab scroll buttons
 
@@ -17,7 +17,7 @@ Visibility of the scroll buttons can be changed. Events to notify the tab panel 
 
 ### Setting TabScrollButtonVisibility
 
-Tab scroll buttons can be enabled or disabled for SfTabControl using the TabScrollButtonVisibility property. The possible visibility options are Auto, Visible and Collapsed.
+Tab scroll buttons can be enabled or disabled for UWP Tab Control using the TabScrollButtonVisibility property. The possible visibility options are Auto, Visible and Collapsed.
 
 {% tabs %}
 
@@ -354,7 +354,7 @@ End Sub
 
 ## Dispose
 
-When the control is no longer used, we have to clear all the reference of the control from the application. Dispose method is used to  release all the reference for SfTabControl from the application, so the memory which is held by the SfTabControl is reclaimed.  
+When the control is no longer used, we have to clear all the reference of the control from the application. Dispose method is used to  release all the reference for UWP Tab Control from the application, so the memory which is held by the control is reclaimed.  
 
 {% tabs %}
 

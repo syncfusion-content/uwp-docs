@@ -7,9 +7,9 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Culture in UWP SfNumericTextBox
+# Culture in UWP Numeric TextBox
 
-The Culture property helps to localize the SfNumericTextBox. Text will be formatted based on the specified Culture. 
+The Culture property helps to localize the UWP Numeric TextBox. Text will be formatted based on the specified Culture. 
 
 The following code sample shows how to localize the control to German culture.
 
@@ -45,7 +45,7 @@ N>  Since CultureInfo type does not contain a default constructor, it is not pos
 
 ## Culture with formatting
 
-SfNumericTextBox respects both Culture and FormatString while formatting Text. In the below Code sample, German Culture and Currency format specifier have been set for Culture and FormatString properties respectively.
+UWP Numeric TextBox respects both Culture and FormatString while formatting Text. In the below Code sample, German Culture and Currency format specifier have been set for Culture and FormatString properties respectively.
 {% tabs %}
 {% highlight XAML %}
 

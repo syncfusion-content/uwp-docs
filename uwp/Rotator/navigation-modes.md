@@ -7,7 +7,7 @@ control: SfRotator
 documentation: ug
 ---
 
-# NavigationStripMode in UWP SfRotator
+# NavigationStripMode in UWP Rotator
 
 The `NavigationStripMode` property specifies the appearance of navigation bar items. The image data can be selected either by Thumbnail or by Dots navigation modes.
 

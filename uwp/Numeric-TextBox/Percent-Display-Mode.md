@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Percent Display Mode in UWP SfNumericTextBox
+# Percent Display Mode in UWP Numeric TextBox
 
 With the PercentDisplayMode property, you can specify how to display numeric data in Percent mode. It provides the following options:
 

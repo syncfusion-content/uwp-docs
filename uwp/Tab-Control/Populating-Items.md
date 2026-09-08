@@ -7,17 +7,17 @@ control: SfTabControl
 documentation: ug
 ---
 
-# Populating Items in UWP SfTabControl
+# Populating Items in UWP Tab Control
 
-SfTabItems are added as items of SfTabControl. Items can be added using Items or ItemSource property.
+SfTabItems are added as items of UWP Tab Control. Items can be added using Items or ItemSource property.
 
 ## Using Items
 
-SfTabControl accepts SfTabItem as its children when added directly.
+UWP Tab Control accepts SfTabItem as its children when added directly.
 
 ### Adding items to the control
 
-Here five SfTabItems are added as the children of SfTabControl. Adding items as follows display items with “Untitled” header.
+Here five SfTabItems are added as the children of UWP Tab Control. Adding items as follows display items with “Untitled” header.
 
 {% tabs %}
 
@@ -215,7 +215,7 @@ tabControl.Items.Add(New SfTabItem() With {
 
 ### Adding items to the control
 
-SfTabControl accepts any business object collection to be bound to its ItemsSource property. 
+UWP Tab Control accepts any business object collection to be bound to its ItemsSource property. 
 
 1.Create a model 
 
@@ -342,7 +342,7 @@ Employees.Add(New Employee() With {
 
 {% endtabs %}
 
-4.Bind the Employees collection to ItemsSource property of SfTabControl Control
+4.Bind the Employees collection to ItemsSource property of UWP Tab Control
 
 {% tabs %}
 
@@ -356,7 +356,7 @@ Employees.Add(New Employee() With {
 {% endtabs %}
 
 
-Tile view items need a template to render so SfTabControl control is populated as follows:
+Tile view items need a template to render so UWP Tab Control is populated as follows:
 
 ![Populating-Items-img4](Populating-Items-images/Populating-Items-img4.jpeg)
 

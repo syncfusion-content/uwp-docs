@@ -7,7 +7,7 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# Number Formatting in UWP SfNumericTextBox
+# Number Formatting in UWP Numeric TextBox
 
 Number formatting functionality allows formatting the text based on the FormatString of the control. The control will format the display text on lost focus. 
 

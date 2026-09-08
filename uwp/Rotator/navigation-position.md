@@ -7,7 +7,7 @@ control: SfRotator
 documentation: ug
 ---
 
-# NavigationStripPosition in UWP SfRotator
+# NavigationStripPosition in UWP Rotator
 
 The `NavigationStripPosition` position specifies the placement position of the navigation bar items such as thumbnail or dots relative to the image panel area. 
 

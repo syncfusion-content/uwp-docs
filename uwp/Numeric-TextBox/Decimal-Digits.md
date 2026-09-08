@@ -6,7 +6,7 @@ platform: uwp
 control: SfNumericTextBox
 documentation: ug
 ---
-# Decimal Digits in UWP SfNumericTextBox
+# Decimal Digits in UWP Numeric TextBox
 
 ## Set Maximum Number of Decimal Digits in UWP Numeric Entry
 

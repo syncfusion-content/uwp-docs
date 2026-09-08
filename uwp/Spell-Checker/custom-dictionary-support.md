@@ -7,9 +7,9 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Custom Dictionary in UWP SfSpellChecker
+# Custom Dictionary in UWP Spell Checker
 
-`SfSpellChecker` provides predefined dictionary for English language and also supports to custom dictionary based on Application requirement. `SfSpellChecker` provides suggestions based on custom dictionary. Users can use their own dictionaries for the different languages. Please follow the below steps for custom language spell checking.
+`UWP Spell Checker` provides predefined dictionary for English language and also supports to custom dictionary based on Application requirement. It also provides suggestions based on custom dictionary. Users can use their own dictionaries for the different languages. Please follow the below steps for custom language spell checking.
 
 **Step 1:** Need to create dictionary file for user desired language and add necessary words details in it. 
  
@@ -21,7 +21,7 @@ documentation: ug
 
 ## Setting CustomDictionaryPath
 
-Create a `SfSpellChecker` instance and set the `CustomDictionaryPath` as given in the below code.
+Create a `UWP Spell Checker` instance and set the `CustomDictionaryPath` as given in the below code.
 
 {% tabs %}
 
