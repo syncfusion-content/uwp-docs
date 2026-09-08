@@ -27,9 +27,29 @@ UWP Diagram control can be added to the application by dragging it from Toolbox 
 
 In order to add control manually in XAML, follow the steps below:
 
-1. Add the below required assembly reference to the project, Syncfusion.SfDiagram.UWP .
+1. Add the below required assembly reference to the project.
+   * Syncfusion.SfDiagram.UWP.
 2. Import UWP SfDiagram control namespace  Syncfusion.UI.Xaml.Diagram in XAML page.
-3. Declare SfDiagram control in XAML page.
+3. Register your trial license key
+
+Include your license key in `App.xaml.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+4. Declare SfDiagram control in XAML page.
 
 N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion® license key in your UWP application to use our components.
     
@@ -57,9 +77,29 @@ N> Starting with v16.2.0.x, if you reference Syncfusion® assemblies from trial 
 
 In order to add control manually in XAML, follow the steps below:
 
-1. Add the below required assembly references to the project, Syncfusion.SfDiagram.UWP.
+1. Add the below required assembly references to the project.
+   * Syncfusion.SfDiagram.UWP.
 2. Import SfDiagram namespace Syncfusion.UI.Xaml.Diagram.
-3. Create SfDiagram control instance and add it to the Grid.
+3. Register your trial license key
+
+Include your license key in `App.xaml.cs` before initializing any Syncfusion components.
+
+{% tabs %}
+
+{% highlight C# %}
+
+// Register the Syncfusion license
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% endcolumn %}
+
+{: .installation-step-3}
+{% column %}
+4. Create SfDiagram control instance and add it to the Grid.
 
 {% tabs %}
 {% highlight c# %}
