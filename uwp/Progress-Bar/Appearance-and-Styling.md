@@ -7,7 +7,7 @@ control: SfProgressBar
 documentation: ug
 ---
 
-# Appearance and Styling in UWP SfProgressBar
+# Appearance and Styling in UWP Progress Bar
 
 ## Customizing the Hot Spots
 

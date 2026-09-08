@@ -12,7 +12,7 @@ documentation: ug
 
 We have demonstrated in the following steps to create custom Date Picker using Picker control.
 
-**Step** **1** **:** We have created custom class named as “CustomDatePicker”. This class should inherit from SfPicker control.
+**Step** **1** **:** We have created custom class named as “CustomDatePicker”. This class should inherit from UWP Picker control.
 
 {% highlight c# %}
 
@@ -167,7 +167,7 @@ The below code demonstrates Date collection creation.
 
 {% endhighlight %}
 
-**Step** **3** **:** We have updated the day value based on month and year value using Selection changed event of SfPicker control. Since the days of each month differs we have to handle this collection.
+**Step** **3** **:** We have updated the day value based on month and year value using Selection changed event of UWP Picker control. Since the days of each month differs we have to handle this collection.
 
 {% highlight c# %}
  
@@ -284,7 +284,7 @@ The below code demonstrates Date collection creation.
 
 {% endhighlight %}
 
-**Step** **4** **:** We have defined each column headers “MONTH”, “DAY” and “YEAR” using ColumnHeaderText property of SfPicker control. The below code demonstrates how to define header for each column of SfPicker control.
+**Step** **4** **:** We have defined each column headers “MONTH”, “DAY” and “YEAR” using ColumnHeaderText property of UWP Picker control. The below code demonstrates how to define header for each column of UWP Picker control.
 
 {% highlight c# %}
 
@@ -333,7 +333,7 @@ The below code demonstrates Date collection creation.
 
 {% endhighlight %}
 
-**Step** **5** **:** Finally we have enabled SfPicker footer, header and Column header using ShowFooter, ShowHeader and ShowColumnHeader properties.
+**Step** **5** **:** Finally we have enabled UWP Picker footer, header and Column header using ShowFooter, ShowHeader and ShowColumnHeader properties.
 
 {% highlight c# %}
 

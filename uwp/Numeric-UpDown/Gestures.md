@@ -7,7 +7,7 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# Gestures in UWP SfNumericUpDown
+# Gestures in UWP NumericUpDown
 
 ## Keyboard
 

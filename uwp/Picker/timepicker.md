@@ -12,7 +12,7 @@ documentation: ug
 
 We have demonstrated how to create TimePicker using Picker control in the following steps.
 
-**Step** **1** **:** We have created custom class named as “CustomTimePicker”. This class should inherit from SfPicker control.
+**Step** **1** **:** We have created custom class named as “CustomTimePicker”. This class should inherit from UWP Picker control.
 
 {% highlight c# %}
 
@@ -88,7 +88,7 @@ The below code demonstrates Time collection creation.
 
 {% endhighlight %}
 
-**Step** **3** **:** We have defined each column headers “HOUR”, “MINUTE” and “FORMAT” using ColumnHeaderText property of SfPicker control. The below code demonstrates how to define header for each column of SfPicker control.
+**Step** **3** **:** We have defined each column headers “HOUR”, “MINUTE” and “FORMAT” using ColumnHeaderText property of UWP Picker control. The below code demonstrates how to define header for each column of UWP Picker control.
 
 {% highlight c# %}
 
@@ -129,7 +129,7 @@ The below code demonstrates Time collection creation.
 
 {% endhighlight %}
 
-**Step** **4** **:** Finally we have enabled SfPicker footer, header and Column header using ShowFooter, ShowHeader and ShowColumnHeader properties.
+**Step** **4** **:** Finally we have enabled UWP Picker footer, header and Column header using ShowFooter, ShowHeader and ShowColumnHeader properties.
 
 {% highlight c# %}
 

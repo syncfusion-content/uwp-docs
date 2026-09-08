@@ -7,9 +7,9 @@ control: SfProgressBar
 documentation: ug
 ---
 
-# About Syncfusion® UWP SfProgressBar Control
+# About Syncfusion® UWP Progress Bar Control
 
-`SfProgressBar` is used to visualize the progression of a lengthy operation such as installation, file transfer, copy and print. It also relays the completion percentage of the operation. 
+`UWP Progress Bar` is used to visualize the progression of a lengthy operation such as installation, file transfer, copy and print. It also relays the completion percentage of the operation. 
 
 ## Features
 
