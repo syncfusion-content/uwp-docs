@@ -7,9 +7,9 @@ control: SfRotator
 documentation: ug
 ---
 
-# Getting Started with UWP SfRotator
+# Getting Started with UWP Rotator
 
-This section explains you the steps to configure a Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in Rotator control.
+This section explains you the steps to configure a UWP Rotator control in a real-time scenario and also provides a walk-through on some of the customization features available in the control.
 
 ![rotator](images/rotator.png)
 
@@ -21,24 +21,24 @@ After installing Essential Studio for Universal Windows Platform, all the requir
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\lib
 
-## Create your first Rotator in UWP
+## Create your first UWP Rotator
 
-This section explains how to create a SfRotator that lets you to display image data's and navigate through them.
+This section explains how to create a UWP Rotator that lets you to display image data's and navigate through them.
 
-`SfRotator` is available in the following assembly and namespace:
+`UWP Rotator` is available in the following assembly and namespace:
 
 `Assembly`: Syncfusion.SfRotator.UWP
 
 `Namespace`: Syncfusion.UI.Xaml.Rotator
 
 
-## How to create a simple Rotator sample
+## How to create a simple UWP Rotator sample
 
-To develop an application with Rotator is simple. The following steps explain how to create and configure its properties.
+To develop an application with UWP Rotator is simple. The following steps explain how to create and configure its properties.
 
-## Add and Configure the Rotator
+## Add and Configure the UWP Rotator
 
-* Adding reference to Rotator.
+* Adding reference to UWP Rotator.
 
 {% highlight c# %}
 
@@ -47,7 +47,7 @@ To develop an application with Rotator is simple. The following steps explain ho
 {% endhighlight %}
 
 
-* The following code snippet shows how to create `Rotator` using XAML
+* The following code snippet shows how to create `UWP Rotator` using XAML
 
 
 {% highlight Xaml %}		
@@ -59,7 +59,7 @@ To develop an application with Rotator is simple. The following steps explain ho
 
 {% endhighlight %}
  
- *The following code snippet shows how to create `Rotator` in code behind
+ *The following code snippet shows how to create `UWP Rotator` in code behind
 
 {% highlight c# %}
 	
@@ -111,7 +111,7 @@ To develop an application with Rotator is simple. The following steps explain ho
 
 ## Setting ItemsSource
 
-SfRotator items can be populated with a collection of image data using `ItemsSource` property.
+UWP Rotator items can be populated with a collection of image data using `ItemsSource` property.
 
 {% highlight Xaml %}
 
@@ -141,5 +141,5 @@ SfRotator items can be populated with a collection of image data using `ItemsSou
 
 {% endhighlight %}
 
-N> ItemTemplate property of Rotator control is used to customize the contents of rotator items.
+N> ItemTemplate property of UWP Rotator control is used to customize the contents of rotator items.
 

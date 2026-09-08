@@ -7,11 +7,11 @@ control: SfBusyIndicator
 documentation: ug
 ---
 
-# Getting Started with UWP SfBusyIndicator
+# Getting Started with UWP Busy Indicator
 
-This section explains how to create a visual representation indicating background running process with animation using `SfBusyIndicator` control.
+This section explains how to create a visual representation indicating background running process with animation using `UWP Busy Indicator` control.
 
-## Adding SfBusyIndicator Control
+## Adding UWP Busy Indicator Control
 
 
 Create a Universal Windows Platform project in Visual Studio and refer to the "Syncfusion.SfBusyIndicator.UWP" assembly.
@@ -32,7 +32,7 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endtabs %}
 
-2.Now add the `SfBusyIndicator` control with a required optimal name using the included namespace
+2.Now add the `UWP Busy Indicator` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -94,7 +94,7 @@ Dim busyIndicator As New SfBusyIndicator() With {.AnimationType = AnimationTypes
 
 ![Animation Gear](SfBusyIndicator1/Gear.png)
 
-## Setting Busy Header
+## Setting UWP Busy Indicator Header
 
 Set the `Header` property with text “Loading…” to display a busy status and customize the header with `HeaderTemplate` property as given below:
 

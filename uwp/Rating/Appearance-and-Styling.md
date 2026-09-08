@@ -7,7 +7,7 @@ control: SfRating
 documentation: ug
 ---
 
-# Appearance and Styling in UWP SfRating
+# Appearance and Styling in UWP Rating
 
 Rating items are customizable in much simpler and easier way. The following properties of `SfRatingItem` are accessible in SfRating.ItemContainerStyle.
 

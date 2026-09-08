@@ -7,11 +7,11 @@ control: SfRating
 documentation: ug
 ---
 
-# ToolTips in UWP SfRating
+# ToolTips in UWP Rating
 
 ## Enable/Disable Tooltip
 
-Tooltips in SfRating control shows the rating value. Tooltips can be enabled or disabled using the property `ShowToolTip`.
+Tooltips in UWP Rating control shows the rating value. Tooltips can be enabled or disabled using the property `ShowToolTip`.
 
 {% tabs %}
 
