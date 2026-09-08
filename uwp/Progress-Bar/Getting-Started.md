@@ -7,11 +7,11 @@ control: SfProgressBar
 documentation: ug
 ---
 
-# Getting Started with UWP SfProgressBar
+# Getting Started with UWP Progress Bar
 
-This section explains how to convey the task progress in an application using SfProgressBar control. 
+This section explains how to convey the task progress in an application using UWP Progress Bar control. 
 
-## Adding SfProgressBar Control
+## Adding UWP Progress Bar Control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the “Syncfusion.SfProgressBar.UWP” assembly.
 
@@ -31,7 +31,7 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endtabs %}
 
-2.Now add the `SfProgressBar` control with a required optimal name using the included namespace
+2.Now add the `UWP Progress Bar` control with a required optimal name using the included namespace
 
 {% tabs %}
 

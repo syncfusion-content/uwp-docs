@@ -7,9 +7,9 @@ control: SfNumericTextBox
 documentation: ug
 ---
 
-# ParsingMode in UWP SfNumericTextBox
+# ParsingMode in UWP Numeric TextBox
 
-Value of the SfNumericTextBox gets parsed based on ParsingMode property. ParsingMode is of type Parsers which is enum of Double and Decimal. DefaultValue for ParsingMode is Double.
+Value of the UWP Numeric TextBox gets parsed based on ParsingMode property. ParsingMode is of type Parsers which is enum of Double and Decimal. DefaultValue for ParsingMode is Double.
 
 
 
@@ -60,6 +60,6 @@ Value of the SfNumericTextBox gets parsed based on ParsingMode property. Parsing
 
 {% endtabs %}
 
-N>The `ParsingMode` should be set based on the data type. For example, if a `Decimal` type property is bound to Value property of SfNumericTextBox, then the `ParsingMode` should be set as `Decimal`.
+N>The `ParsingMode` should be set based on the data type. For example, if a `Decimal` type property is bound to Value property of UWP Numeric TextBox, then the `ParsingMode` should be set as `Decimal`.
 
 ![Parsingmode view](Concepts_images/Concepts_img7.png)

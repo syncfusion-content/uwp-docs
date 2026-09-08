@@ -7,17 +7,17 @@ control: SfTileView
 documentation: ug
 ---
 
-# Populating Items in UWP SfTileView
+# Populating Items in UWP Tile View
 
-`SfTileViewItem` are added as items of `SfTileView`. Items can be added using `Items` or `ItemSource` property.
+`SfTileViewItem` are added as items of `UWP Tile View`. Items can be added using `Items` or `ItemSource` property.
 
 ## Using Items
 
-`SfTileView` accepts SfTileViewItem as its children when added directly.
+`UWP Tile View` accepts SfTileViewItem as its children when added directly.
 
 ### Adding items to the control
 
-`SfTileView` accepts `SfTileViewItem` as its children when added directly. Here five `SfTileViewItems` are added as the children of `SfTileView`. Adding items as follows display a blank screen.
+`UWP Tile View` accepts `SfTileViewItem` as its children when added directly. Here five `SfTileViewItems` are added as the children of `UWP Tile View`. Adding items as follows display a blank screen.
 
 {% tabs %}
 
@@ -246,7 +246,7 @@ tileView.Items.Add(New SfTileViewItem() With {
 
 ### Adding items to the control
 
-`SfTileView` accepts any business object collection to be bound to its `ItemsSource` property. 
+`UWP Tile View` accepts any business object collection to be bound to its `ItemsSource` property. 
 
 1.Create a model
 
@@ -368,7 +368,7 @@ Employees.Add(New Employee() With {
 
 {% endtabs %}
 
-4.Bind the Employees collection to ItemsSource property of SfTileView Control
+4.Bind the Employees collection to ItemsSource property of UWP Tile View Control
 
 {% tabs %}
 
@@ -380,13 +380,13 @@ Employees.Add(New Employee() With {
 
 {% endtabs %}
 
-Tile view items need a template to render so `SfTileView` control is populated as follows:
+Tile view items need a template to render so `UWP Tile View` control is populated as follows:
 
 ![Populating-Items-img3](Populating-Items-images/Populating-Items-img3.jpeg)
 
 ### Setting content for items
 
-Template for tile view items can be set using the `ItemTemplate` property. ItemTemplate helps to decorate the item with visual elements. At this point, the control is populated with a list of employees. The class Employee has two properties, Name and Description. In this case, control is set to display content based on Name:
+Template for UWP Tile View items can be set using the `ItemTemplate` property. ItemTemplate helps to decorate the item with visual elements. At this point, the control is populated with a list of employees. The class Employee has two properties, Name and Description. In this case, control is set to display content based on Name:
 
 {% tabs %}
 

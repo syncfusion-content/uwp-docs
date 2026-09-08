@@ -7,9 +7,9 @@ control: SfTileView
 documentation: ug
 ---
 
-# Customizing Maximized Item in UWP SfTileView
+# Customizing Maximized Item in UWP Tile View
 
-`SfTileView` provides several properties for customizing the maximized item.
+`UWP Tile View` provides several properties for customizing the maximized item.
 
 ## Changing maximized item height
 

@@ -7,9 +7,9 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Localization in UWP SfSpellChecker
+# Localization in UWP Spell Checker
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfSpellChecker by adding resource file. Application culture can be changed by setting [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) before `InitializeComponent()` method.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the UWP Spell Checker by adding resource file. Application culture can be changed by setting [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) before `InitializeComponent()` method.
  
 Below application culture changed to Arabic.
 
@@ -30,7 +30,7 @@ public MainPage()
 
 {% endtabs %}
 
-To localize the SfSpellChecker based on [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) using .resw files, follow the below steps.
+To localize the UWP Spell Checker based on [ApplicationLanguages.PrimaryLanguageOverride](https://msdn.microsoft.com/de-de/library/windows/apps/windows.globalization.applicationlanguages.primarylanguageoverride.aspx) using .resw files, follow the below steps.
  
 1. Create a folder named **Resource** in the application.
 
@@ -50,7 +50,7 @@ For example, you have to give name as **Syncfusion.SfSpellChecker.UWP.Resources.
  
 ![localizationimg3](localization-images/localizationimg3.png)
 
-You can get the SfSpellChecker’s key from default resource  [Syncfusion.SfSpellChecker.UWP.Resources.resw]
+You can get the UWP Spell Checker's key from default resource  [Syncfusion.SfSpellChecker.UWP.Resources.resw]
 (https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfSpellChecker.UWP.Resources-1005709407.zip).
 
 ![localizationimg4](localization-images/localizationimg4.png)

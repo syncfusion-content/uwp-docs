@@ -7,7 +7,7 @@ control: SfRotator
 documentation: ug
 ---
 
-# Features in UWP SfRotator
+# Features in UWP Rotator
 
 ## AutoPlay
 
@@ -82,7 +82,7 @@ N> By default, the property value is false.
 
 ## Navigation Direction
 
-The `NavigationDirection` property specifies the direction in which items should be navigated in Rotator control.
+The `NavigationDirection` property specifies the direction in which items should be navigated in UWP Rotator control.
 
 * `Horizontal` - Items can be navigated in horizontal direction.
 

@@ -7,15 +7,15 @@ control: SfSpellChecker
 documentation: ug
 ---
 
-# Context Menu Suggestion in UWP SfSpellChecker
+# Context Menu Suggestion in UWP Spell Checker
 
-`SfSpellChecker` offers Microsoft Office application like context menu suggestions and helps to correct spell errors by choosing correct option from the listed suggestions.
+`UWP Spell Checker` offers Microsoft Office application like context menu suggestions and helps to correct spell errors by choosing correct option from the listed suggestions.
 
 The following steps helps to add context menu suggestion in the TextBox control.
 
 1) Create a UWP project in Visual Studio.
 
-2) Create a class which inherits `IEditorProperties` interface of `SfSpellChecker` and Initialize all the methods and properties.
+2) Create a class which inherits `IEditorProperties` interface of `UWP Spell Checker` and Initialize all the methods and properties.
 
 {% tabs %}
 

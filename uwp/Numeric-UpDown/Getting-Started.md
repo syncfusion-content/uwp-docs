@@ -7,14 +7,14 @@ control: SfNumericUpDown
 documentation: ug
 ---
 
-# Getting Started with UWP SfNumericUpDown
+# Getting Started with UWP NumericUpDown
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 Assembly:  Syncfusion.SfInput.UWP
 
 Dependent assembly: Syncfusion.SfShared.UWP
 
-The following code sample shows how to create the SfNumericUpDown from code-behind and XAML,
+The following code sample shows how to create the UWP NumericUpDown from code-behind and XAML,
 
 {% tabs %}
 {% highlight XAML %}
@@ -62,6 +62,6 @@ Dim numericUpDown As New SfNumericUpDown() With {
 
 ## See also
 
-[How to restrict the decimal values in SfNumericUpDown](https://support.syncfusion.com/kb/article/6004/how-to-restrict-the-decimal-values-in-sfnumericupdown)
+[How to restrict the decimal values in UWP NumericUpDown](https://support.syncfusion.com/kb/article/6004/how-to-restrict-the-decimal-values-in-sfnumericupdown)
 
-[How to increment and decrement the value of SfNumericUpDown control](https://support.syncfusion.com/kb/article/6282/increment-and-decrement-the-value-of-sfnumericupdown-control-in-uwp)
+[How to increment and decrement the value of UWP NumericUpDown control](https://support.syncfusion.com/kb/article/6282/increment-and-decrement-the-value-of-sfnumericupdown-control-in-uwp)

@@ -7,9 +7,9 @@ control: SfTabControl
 documentation: ug
 ---
 
-# About Syncfusion® UWP SfTabControl Control
+# About Syncfusion® UWP Tab Control
 
-SfTabControl is similar to dividers in a notebook or the labels in a file cabinet. It can be used to create a tabbed interface in an application. 
+UWP Tab Control is similar to dividers in a notebook or the labels in a file cabinet. It can be used to create a tabbed interface in an application. 
 
 ## Features
 

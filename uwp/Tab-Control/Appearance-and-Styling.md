@@ -7,7 +7,7 @@ control: SfTabControl
 documentation: ug
 ---
 
-# Appearance and Styling in UWP SfTabControl
+# Appearance and Styling in UWP Tab Control
 
 ## Customizing item header
 
@@ -101,9 +101,9 @@ tabControl.ContentTransitions.Add(New EntranceThemeTransition() With {.FromHoriz
 
 ## TabControlHorizontalTemplate
 
-Template of the SfTabControl can be modified using TabControlHorizontalTemplate property in horizontal orientation.
+Template of the UWP Tab Control can be modified using TabControlHorizontalTemplate property in horizontal orientation.
 
 ## TabControlVerticalTemplate
 
-Template of the SfTabControl can be modified using TabControlVerticalTemplate property in vertical orientation.
+Template of the UWP Tab Control can be modified using TabControlVerticalTemplate property in vertical orientation.
 

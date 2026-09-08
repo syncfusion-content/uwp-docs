@@ -7,11 +7,11 @@ control: SfTreeNavigator
 documentation: ug
 ---
 
-# Getting Started with UWP SfTreeNavigator
+# Getting Started with UWP Tree Navigator
 
-This section explains how to visualize hierarchal data in tree structure using `SfTreeNavigator` control.
+This section explains how to visualize hierarchal data in tree structure using `UWP Tree Navigator` control.
 
-## Adding SfTreeNavigator control
+## Adding UWP Tree Navigator control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -34,7 +34,7 @@ xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endtabs %}
 
-2.Now add the `SfTreeNavigator` control with a required optimal name using the included namespace
+2.Now add the `UWP Tree Navigator` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -58,9 +58,9 @@ Dim treeNavigator As New SfTreeNavigator()
 
 {% endtabs %}
 
-## Setting header for SfTreeNavigator
+## Setting header for UWP Tree Navigator
 
-Use `Header` property to set the header value “Enterprise Toolkit” for Tree Navigator control as given below:
+Use `Header` property to set the header value “Enterprise Toolkit” for UWP Tree Navigator control as given below:
 
 {% tabs %}
 
@@ -89,9 +89,9 @@ treeNavigator.Header = "Enterprise Toolkit"
 {% endtabs %}
 
 
-## Adding items to SfTreeNavigator
+## Adding items to UWP Tree Navigator
 
-Add the required number of items in multiple hierarchical levels as given below to the `SfTreeNavigator` control:
+Add the required number of items in multiple hierarchical levels as given below to the `UWP Tree Navigator` control:
 
 {% tabs %}
 
@@ -171,9 +171,9 @@ Add the required number of items in multiple hierarchical levels as given below 
 
 {% endtabs %}
 
-## Setting header for the Tree Navigator Items
+## Setting header for the UWP Tree Navigator Items
 
-Set header for all the items in Tree navigator as given below:
+Set header for all the items in UWP Tree Navigator as given below:
 
 {% tabs %}
 
