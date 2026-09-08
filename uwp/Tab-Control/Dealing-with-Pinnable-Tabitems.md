@@ -7,9 +7,9 @@ control: SfTabControl
 documentation: ug
 ---
 
-# Dealing with Pinnable Tab Items in UWP SfTabControl
+# Dealing with Pinnable Tab Items in UWP Tab Control
 
-Tab Items in SfTabControl can be pinned or unpinned using the pin button next to its header text. 
+Tab Items in UWP Tab Control can be pinned or unpinned using the pin button next to its header text. 
 
 * A pinned tab item will move to the last position in pinned tab items panel (Appears prior to unpinned items panel).
 * An unpinned tab item will move to the first position in unpinned tab items panel (Appears next to pinned items panel).

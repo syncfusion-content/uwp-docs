@@ -7,11 +7,11 @@ control: SfTabControl
 documentation: ug
 ---
 
-# TabStripPlacement and Menu in UWP SfTabControl
+# TabStripPlacement and Menu in UWP Tab Control
 
 ## Change placement of Tabs
 
-The tab strip of SfTabControl can be aligned in all the four sides of SfTabControl using the TabStripPlacement property. It has the following options and by default it is top:
+The tab strip can be aligned in all the four sides of UWP Tab Control using the TabStripPlacement property. It has the following options and by default it is top:
 
 * Left
 * Top
@@ -65,7 +65,7 @@ Tab strip menu is a list containing the collection of tab item headers displayed
 
 ### ShowTabStripMenu
 
-To enable/disable this menu set the property ShowTabStripMenu in SfTabControl
+To enable/disable this menu set the property ShowTabStripMenu in UWP Tab Control
 
 {% tabs %}
 

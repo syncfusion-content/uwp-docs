@@ -7,9 +7,9 @@ control: SfTabControl
 documentation: ug
 ---
 
-# Selecting Items in UWP SfTabControl
+# Selecting Items in UWP Tab Control
 
-SfTabControl can have only one selected item at a time. Tab items can be selected by 
+UWP Tab Control can have only one selected item at a time. Tab items can be selected by 
 
 * Touching the header text of SfTabItem 
 * Using tab strip/list menu
@@ -17,7 +17,7 @@ SfTabControl can have only one selected item at a time. Tab items can be selecte
 
 ## Selecting item through Tab strip menu
 
-Tab strip menu is a list containing the collection of tab item headers displayed at the end of TabPanel. Any tab item can be selected using this menu. To enable/disable this menu set the property ShowTabStripMenu in SfTabControl.
+Tab strip menu is a list containing the collection of tab item headers displayed at the end of TabPanel. Any tab item can be selected using this menu. To enable/disable this menu set the property ShowTabStripMenu in UWP Tab Control.
 
 ## Selecting item using SelectedItem
 
@@ -148,7 +148,7 @@ Niko.IsSelected = True
 
 ## Selection change by Swipe Gestures
 
-`SfTabControl` SelectedItem can be changed by Swipe Gestures. This can be enabled by set `EnableSwipeGestures` property of SfTabControl as true. By default, `EnableSwipeGestures` value is false.
+`UWP Tab Control` SelectedItem can be changed by Swipe Gestures. This can be enabled by set `EnableSwipeGestures` property of UWP Tab Control as true. By default, `EnableSwipeGestures` value is false.
 
 {% tabs %}
 
