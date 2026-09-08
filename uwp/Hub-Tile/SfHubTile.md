@@ -8,9 +8,9 @@ documentation: ug
 ---
 
 
-# Live Tile Updates in UWP SfHubTile
+# Live Tile Updates in UWP Hub Tile
 
-`SfHubTile` control provides live updates and notifications similar to Windows 8 and Windows Phone. Hub Tiles can have image, title, and header to display in the tile.
+`UWP Hub Tile` control provides live updates and notifications similar to Windows 8 and Windows Phone. Hub Tiles can have image, title, and header to display in the tile.
 
 ## Features
 
@@ -19,9 +19,9 @@ documentation: ug
 
 ## Getting Started
 
-This section explains how to create a Windows 8 Live Tile using `SfHubTile` control.
+This section explains how to create a Windows 8 Live Tile using `UWP Hub Tile` control.
 
-## Adding SfHubTile control
+## Adding UWP Hub Tile control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -44,7 +44,7 @@ xmlns:notification="using:Syncfusion.UI.Xaml.Controls.Notification">
 
 {% endtabs %}
 
-2.Now add the `SfHubTile` control with a required optimal name using the included namespace
+2.Now add the `UWP Hub Tile` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -227,7 +227,7 @@ Apply the required transitions such as Rotate transition, Slide transition, Fade
 
 ## Configuring the tile
 
-`SfHubTile` can be configured with text and image as follows:
+`UWP Hub Tile` can be configured with text and image as follows:
 
 ### Tile caption
 
@@ -305,7 +305,7 @@ hubTile.ImageSource = primaryContent
 
 ## Animation and Transitions
 
-`SfHubTile` control provided the following built-in transitions
+`UWP Hub Tile` control provided the following built-in transitions
 
 * Rotate transition
 * Slide transition
@@ -489,7 +489,7 @@ Flip effect customization, tile click & command, pausing and resuming animation 
 
 ## Appearance and Styling
 
-`SfHubTile` appearance can be customized by `SecondaryContentTemplate`, `AccentBrush`, `TitleStyle`.
+`UWP Hub Tile` appearance can be customized by `SecondaryContentTemplate`, `AccentBrush`, `TitleStyle`.
 
 ### Customizing the secondary content
 
