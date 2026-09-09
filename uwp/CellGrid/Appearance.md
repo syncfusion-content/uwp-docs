@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in UWP Excel-like Grid
 
-This section explains about customizing the appearance of SfCellGrid. 
+This section explains about customizing the appearance of Excel-like Grid. 
 
 ## Covered Cells
 
@@ -18,7 +18,7 @@ There are different possible options to form a covered range. The range can be r
 
 ### Creating Covered Range
 
-To create a covered cell, users need to add `CoveredCellInfo` item to the `CoveredCells` of SfCellGrid.
+To create a covered cell, users need to add `CoveredCellInfo` item to the `CoveredCells` of Excel-like Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -76,7 +76,7 @@ private void Model_QueryCoveredRange(object sender, GridQueryCoveredRangeEventAr
 
 ### Clearing the Covered Range
 
-Covered cells in SfCellGrid can be removed by using `Clear` method.
+Covered cells in Excel-like Grid can be removed by using `Clear` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -109,7 +109,7 @@ bool isCovered = cellGrid.CoveredCells.Find(3, 4, out range);
 ## Floating Cells 
 
 Floating cells are the cells in which if the content exceeds the length of the cell, then content will be floated to the adjacent cell if empty.
-By default, the floating cell behavior will be enabled in SfCellGrid. If you want to disable, then set `AllowFloatingCell` property to false.
+By default, the floating cell behavior will be enabled in the Excel-like Grid. If you want to disable, then set `AllowFloatingCell` property to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -136,9 +136,9 @@ cellGrid.AllowFloatingCellInEdit = false;
 
 ## Conditional Formatting
 
-Conditional formatting is a process of applying customized styles to any object based on specified conditions. SfCellGrid allows the user to format the cells based on a certain condition.
+Conditional formatting is a process of applying customized styles to any object based on specified conditions. The Excel-like Grid allows the user to format the cells based on a certain condition.
 
-Conditional formatting can be applied to SfCellGrid by using `ConditionalFormats` property which is an observable collection, where the users can add required number of formats of type `GridConditionalFormat`.
+Conditional formatting can be applied to the Excel-like Grid by using `ConditionalFormats` property which is an observable collection, where the users can add required number of formats of type `GridConditionalFormat`.
 Using the `GridConditionalFormat` class, users can specify the criteria for the cells such as `GridConditionalFormatType`, `GridConditionType` and the value. The `Style` property of GridConditionalFormat class is used to set the specific styles for the cells.
 Once these specifications are defined, the defined styles are applied to only those cells which satisfy the condition.
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Rows and Columns in UWP Excel-like Grid
 
-This section explains the operations related with rows and columns in the SfCellGrid.
+This section explains the operations related with rows and columns in the Excel-like Grid.
 
 ## Insert rows and columns
 
-The SfCellGrid provides support for dynamically inserting rows and columns at a given position. 
+The Excel-like Grid provides support for dynamically inserting rows and columns at a given position. 
 
 {% tabs %}
 {% highlight c# %}
@@ -31,7 +31,7 @@ cellGrid.Model.InsertColumns(3, 5);
 
 ### Events related with insertion
 
-After inserting rows and columns in the SfCellGrid, the `RowsInserted` and `ColumnsInserted` events will be invoked to get the number of inserted rows or columns and the insertion index.
+After inserting rows and columns in the Excel-like Grid, the `RowsInserted` and `ColumnsInserted` events will be invoked to get the number of inserted rows or columns and the insertion index.
 
 {% tabs %}
 {% highlight c# %}
@@ -63,7 +63,7 @@ private void Model_RowsInserted(object sender, GridRangeInsertedEventArgs e)
 
 ## Delete rows and columns
 
-The SfCellGrid provides support for deleting rows and columns from the given position.
+The Excel-like Grid provides support for deleting rows and columns from the given position.
 
 {% tabs %}
 {% highlight c# %}
@@ -113,7 +113,7 @@ private void Model_RowsRemoved(object sender, GridRangeRemovedEventArgs e)
 
 ## Hide rows and columns
 
-The SfCellGrid provides support to hide rows or columns by passing the last argument as `true` in the `SetHidden` method of `RowHeights` and `ColumnWidths` properties.
+The Excel-like Grid provides support to hide rows or columns by passing the last argument as `true` in the `SetHidden` method of `RowHeights` and `ColumnWidths` properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -131,7 +131,7 @@ cellGrid.ColumnWidths.SetHidden(4, 5, true);
 
 ## Unhide rows and columns
 
-Unhide the rows or columns in the SfCellGrid by passing the last argument as `false` in the `SetHidden` method of `RowHeights` and `ColumnWidths` properties.
+Unhide the rows or columns in the Excel-like Grid by passing the last argument as `false` in the `SetHidden` method of `RowHeights` and `ColumnWidths` properties.
 
 {% tabs %}
 {% highlight c# %}
@@ -173,7 +173,7 @@ private void ColumnWidths_LineHiddenChanged(object sender, HiddenRangeChangedEve
 
 ## Row height and column width
 
-The SfCellGrid provides support to adjust the row height and column width by using the `SetRowHeight` and `SetColumnWidth` methods.
+The Excel-like Grid provides support to adjust the row height and column width by using the `SetRowHeight` and `SetColumnWidth` methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -196,7 +196,7 @@ cellGrid.ColumnWidths.DefaultLineSize = 80;
 
 ### Events related with RowHeight or ColumnWidth
 
-After changing the row height or column width in the SfCellGrid, the `LineSizeChanged` event for row heights or column widths will be invoked to get old and resized heights or widths of the rows or columns.
+After changing the row height or column width in the Excel-like Grid, the `LineSizeChanged` event for row heights or column widths will be invoked to get old and resized heights or widths of the rows or columns.
 
 {% tabs %}
 {% highlight c# %}
@@ -240,7 +240,7 @@ private void ColumnWidths_DefaultLineSizeChanged(object sender, DefaultLineSizeC
 
 ## Freeze rows and columns
 
-The SfCellGrid provides support to keep an area of a visible grid when scrolling to another area by fixing any number of rows and columns is called freezing.
+The Excel-like Grid provides support to keep an area of a visible grid when scrolling to another area by fixing any number of rows and columns is called freezing.
 
 {% tabs %}
 {% highlight c# %}
@@ -256,7 +256,7 @@ cellGrid.FrozenColumns = 4;
 
 ## Unfreeze rows and columns
 
-The SfCellGrid provides support to unfreeze the rows and columns by setting the `FrozenRows` and `FrozenColumns` counts to 1.
+The Excel-like Grid provides support to unfreeze the rows and columns by setting the `FrozenRows` and `FrozenColumns` counts to 1.
 
 {% tabs %}
 {% highlight c# %}
@@ -271,7 +271,7 @@ cellGrid.FrozenColumns = 1;
 
 ## Resize rows and columns
 
-By default, row resizing and column resizing will be enabled in the SfCellGrid. To disable the resizing, set the `AllowRowResize` and `AllowColumnResize` properties to false.
+By default, row resizing and column resizing will be enabled in the Excel-like Grid. To disable the resizing, set the `AllowRowResize` and `AllowColumnResize` properties to false.
 
 {% tabs %}
 {% highlight c# %}
@@ -303,7 +303,7 @@ cellGrid.AllowHiddenColumnResize = false;
 
 ### Resizing controller
 
-Resizing controller of rows and columns can be customized and set to the `RowResizingController` and `ColumnResizingController` properties of the SfCellGrid.
+Resizing controller of rows and columns can be customized and set to the `RowResizingController` and `ColumnResizingController` properties of the Excel-like Grid.
 
 Properties associated with `RowResizingController` and `ColumnResizingController` classes are:
 
@@ -342,7 +342,7 @@ private void CellGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
             
 ### ResizeToFit
 
-The SfCellGrid provides support to enable the resizing of rows and columns based on the cell content. The parameters passed in the method is of type `GridRangeInfo` that mentions the ranges of rows and columns to allow resizing and `GridResizeToFitOptions` enum that provides the user with the options to control the resizing behavior. 
+The Excel-like Grid provides support to enable the resizing of rows and columns based on the cell content. The parameters passed in the method is of type `GridRangeInfo` that mentions the ranges of rows and columns to allow resizing and `GridResizeToFitOptions` enum that provides the user with the options to control the resizing behavior. 
 
 The options in the `GridResizeToFitOptions` enum are:
 

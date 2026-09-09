@@ -9,14 +9,14 @@ documentation: ug
 
 # Styles and Formatting in UWP Excel-like Grid
 
-This section explains about some of the `GridStyleInfo` properties which customizes the `SfCellGrid` and its inner elements(cell,row, column..)
+This section explains about some of the `GridStyleInfo` properties which customizes the `Excel-like Grid` and its inner elements(cell,row, column..)
 
 ## GridStyleInfo Overview
 
-SfCellGrid is a tabular representation of grid cells which contains data. Each cell contains unique information and can be displayed independently of other cells. 
+The Excel-like Grid is a tabular representation of grid cells which contains data. Each cell contains unique information and can be displayed independently of other cells. 
 `GridStyleInfo` objects are used to store information the appearance of a grid cell. So the attributes like Font, Background, Border,Alignment, CellValue and CellType etc. are all reflected in a single `GridStyleInfo` object. 
 
-Every cell in a `SfCellGrid` may have such an object associated with it, giving the individual cell its unique appearance. It is not necessary that all cells should require fully populated `GridStyleInfo` objects stored in memory to function.
+Every cell in a `Excel-like Grid` may have such an object associated with it, giving the individual cell its unique appearance. It is not necessary that all cells should require fully populated `GridStyleInfo` objects stored in memory to function.
 
 ## Cell Background
 
@@ -76,7 +76,7 @@ cellGrid.Model.RowStyles[3].Foreground = new SolidColorBrush(Colors.Almond);
 
 ## Font
 
-The `Font` property of the `GridStyleInfo` class specifies the font for the text displayed in the cell. In SfCellGrid, `GridFontInfo` class contains all the attributes related with font styles.
+The `Font` property of the `GridStyleInfo` class specifies the font for the text displayed in the cell. In Excel-like Grid, `GridFontInfo` class contains all the attributes related with font styles.
 
 {% tabs %}
 {% highlight c# %}
@@ -178,7 +178,7 @@ cellGrid.Model.RowStyles[3].Borders.All = new Pen(new SolidColorBrush(Colors.Gre
 
 ## Format
 
-The formats of a cell value can be changed by using `Format` property. SfCellGrid allows you to apply different formatting types to the cell values. For more details on the different types of formatting types, please check the MSDN link over [here.](https://msdn.microsoft.com/en-us/library/26etazsy.aspx)
+The formats of a cell value can be changed by using `Format` property. The Excel-like Grid allows you to apply different formatting types to the cell values. For more details on the different types of formatting types, please check the MSDN link over [here.](https://msdn.microsoft.com/en-us/library/26etazsy.aspx)
 
 {% tabs %}
 {% highlight c# %}
@@ -193,7 +193,7 @@ cellGrid.Model[2, 2].Format = "D";
 
 ## Text Wrap
 
-If the cell value in the SfCellGrid does not fit in a single line, then it can be wrapped by using `TextWrapping` property and the height can be adjusted with
+If the cell value in the Excel-like Grid does not fit in a single line, then it can be wrapped by using `TextWrapping` property and the height can be adjusted with
 `ResizeRowsToFit` method.
 
 {% tabs %}
@@ -220,7 +220,7 @@ private void CellGrid_Loaded(object sender, RoutedEventArgs e)
 
 ## Text Trim
 
-When the text exceeds the edge of the cell in SfCellGrid, it can be trimmed by using `TextTrimming` property.
+When the text exceeds the edge of the cell in the Excel-like Grid, it can be trimmed by using `TextTrimming` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -237,7 +237,7 @@ T> If you want to apply the styles at runtime, you can use [QueryCellInfo](http:
 
 ## Clearing styles 
 
-To remove the `GridStyleInfo` properties along with the data in SfCellGrid, `ClearStyle` and `ClearStyles` methods are used.
+To remove the `GridStyleInfo` properties along with the data in Excel-like Grid, `ClearStyle` and `ClearStyles` methods are used.
 
 {% tabs %}
 {% highlight c# %}
