@@ -7,7 +7,7 @@ control: SfDomainUpDown
 documentation: ug
 ---
 
-# Getting Started with UWP SfDomainUpDown
+# Getting Started with UWP Domain UpDown
 
 Namespace:  Syncfusion.UI.Xaml.Controls.Input
 
@@ -17,7 +17,7 @@ Dependent assembly: Syncfusion.SfShared.UWP
 
 
 
-The following code sample shows how to create the SfDomainUpDown from code-behind and XAML:
+The following code sample shows how to create the UWP Domain UpDown from code-behind and XAML:
 
 {% tabs %}
 
@@ -56,4 +56,4 @@ Dim domainUpDown As New SfDomainUpDown()
 
 {% endtabs %}
 
-N> You can refer to our [UWP Domain Updown](https://www.syncfusion.com/uwp-ui-controls/domain-up-down) feature tour page to know about its other groundbreaking feature representations. You can also explore our [UWP Domain Updown example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) that shows you how to render and configure the Domain Updown in UWP.
+N> You can refer to our [UWP Domain UpDown](https://www.syncfusion.com/uwp-ui-controls/domain-up-down) feature tour page to know about its other groundbreaking feature representations. You can also explore our [UWP Domain UpDown example](https://apps.microsoft.com/store/detail/syncfusion-essential-studio-for-uwp/9NBLGGH5WNGV) that shows you how the control is rendered and configured.

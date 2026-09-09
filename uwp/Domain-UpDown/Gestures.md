@@ -7,7 +7,7 @@ control: SfDomainUpDown
 documentation: ug
 ---
 
-# Gestures in UWP SfDomainUpDown
+# Gestures in UWP Domain UpDown
 
 ## Mouse Wheel
 
