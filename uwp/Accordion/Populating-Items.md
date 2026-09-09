@@ -7,9 +7,9 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Populating Items in UWP SfAccordion
+# Populating Items in UWP Accordion
 
-`SfAccordionItem` can be added as items of `SfAccordion`. Items can be added using `Items` or `ItemsSource` property.
+`SfAccordionItem` can be added as items of `UWP Accordion`. Items can be added using `Items` or `ItemsSource` property.
 
 ## Populating Items through adding SfAccordionItem
 
@@ -17,7 +17,7 @@ SfAccordion accepts `SfAccordionItem` as its children when added directly.
 
 ### Adding Items to the Control 
 
-Here five SfAccordionItems are added as the children of the `SfAccordion`.
+Here five SfAccordionItems are added as the children of the `UWP Accordion`.
 
 {% tabs %}
 
@@ -230,7 +230,7 @@ accordion.Items.Add(New SfAccordionItem() With {
 
 ## Populating Items through Binding
 
-SfAccordion accepts any business object collection to be bound to its ItemsSource property. 
+UWP Accordion accepts any business object collection to be bound to its ItemsSource property. 
 
 ### Adding Items to the Control
 
@@ -348,7 +348,7 @@ Employees.Add(New Employee() With {
 
 {% endtabs %}
 
-4.Bind the Employees collection to `ItemsSource` property of `SfAccordion` Control
+4.Bind the Employees collection to `ItemsSource` property of `UWP Accordion` Control
 
 {% tabs %}
 
@@ -360,7 +360,7 @@ Employees.Add(New Employee() With {
 
 {% endtabs %}
 
-`SfAccordion` control is populated as follows:
+`UWP Accordion` control is populated as follows:
 
 ![Populating-Items-img4](Populating-Items-images/Populating-Items-img4.jpeg)
 

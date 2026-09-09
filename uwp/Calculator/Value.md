@@ -7,11 +7,11 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Value in UWP SfCalculator
+# Value in UWP Calculator
 
 ## Retrieving Computed Value
 
-`Value` property in the `SfCalculator` control is used to retrieve the computed value from the expressions in Calculator. It is a read-only decimal property. It can also be set to display a decimal value as computed value.
+`Value` property in the `UWP Calculator` control is used to retrieve the computed value from the expressions. It is a read-only decimal property. It can also be set to display a decimal value as computed value.
 
 {% tabs %}
 
@@ -47,7 +47,7 @@ decimal value = calculator.Value;
 
 ## Displaying a Default Value
 
-`DefaultValue` property is set to display a default value in the input pane of `SfCalculator` control. It is a decimal property.  
+`DefaultValue` property is set to display a default value in the input pane of `UWP Calculator` control. It is a decimal property.  
 
 {% tabs %}
 
@@ -70,7 +70,7 @@ calculator.DefaultValue = 34.67D
 
 ## Showing Text in Display Panel
 
-`DisplayText` property is set to display a text in the display pane of `SfCalculator` control.
+`DisplayText` property is set to display a text in the display pane of `UWP Calculator` control.
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ calculator.DisplayText = "DisplayText"
 
 ## Displaying an Expression
 
-`Expression` property is used to get the mathematical expression that produced the evaluated value in `SfCalculator`. `Expression` can also set to any string property but it is not evaluated to produce result. It is just displayed in the pane.
+`Expression` property is used to get the mathematical expression that produced the evaluated value in `UWP Calculator`. `Expression` can also set to any string property but it is not evaluated to produce result. It is just displayed in the pane.
 
 {% tabs %}
 
