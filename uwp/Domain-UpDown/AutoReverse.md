@@ -7,7 +7,7 @@ control: SfDomainUpDown
 documentation: ug
 ---
 
-# Autoreverse in UWP SfDomainUpDown
+# Autoreverse in UWP Domain UpDown
 
 Incrementing the value starts from the maximum value once it has reached the minimum value and starts from the minimum value once it has reached the maximum value.
 

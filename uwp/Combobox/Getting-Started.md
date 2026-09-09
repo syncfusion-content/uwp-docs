@@ -7,13 +7,13 @@ control: SfComboBox
 documentation: ug
 ---
 
-# Getting Started with UWP SfComboBox
+# Getting Started with UWP ComboBox
 
-The SfComboBox control allows the user to select an item from a list of suggestions.
+The UWP ComboBox control allows the user to select an item from a list of suggestions.
 
 ![Overview of the control](Populating-Items_images/SfComboBox.png)
 
-## Adding SfComboBox control
+## Adding UWP ComboBox control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -37,7 +37,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endtabs %}
 
-2.Now add the `SfComboBox` control with a required optimal name using the included namespace
+2.Now add the `UWP ComboBox` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -66,7 +66,7 @@ Dim combobox As New SfComboBox()
 
 ### Items Source
 
-SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a SfComboBox that display a list of products. 
+SfComboBoxItems can be populated with the business object collection. The below example is illustrated to create a UWP ComboBox that display a list of products. 
 
 1.Create the Product model as follows.
 
@@ -164,7 +164,7 @@ End Class
 
 ### Binding to Data
 
-Bind the Products collection to the ItemsSource property of the SfComboBox.
+Bind the Products collection to the ItemsSource property of the UWP ComboBox.
 
 {% tabs %}
 {% highlight xml %}
@@ -197,13 +197,13 @@ comboBox.ItemsSource = viewModel.Products;
 {% endtabs %}
 
 
-The above steps populate the SfComboBox as illustrated in the following screenshot.
+The above steps populate the UWP ComboBox as illustrated in the following screenshot.
 
 ![Showing itemsource property of UWP sfcombobox](Populating-Items_images/Populating-Items_img1.png)
 
 ### DisplayMemberPath
 
-The DisplayMemberPath property of the SfComboBox is used to define the model’s property that is to be displayed inside the header of the tab items. 
+The DisplayMemberPath property of the UWP ComboBox is used to define the model’s property that is to be displayed inside the header of the tab items. 
 
 
 
@@ -215,7 +215,7 @@ DisplayMemberPath="Name" ItemsSource="{Binding Products}" />
 
 {% endhighlight %}
 
-This populates the SfComboBox as illustrated in the following screenshot. 
+This populates the UWP ComboBox as illustrated in the following screenshot. 
 
 ![Showing product name of the UWP sfcombobox](Populating-Items_images/Populating-Items_img2.png)
 
@@ -223,7 +223,7 @@ This populates the SfComboBox as illustrated in the following screenshot.
 
 ### Item Template
 
-The ItemTemplate property of the SfComboBox can be used to customize the content part of the SfComboBoxItems.
+The ItemTemplate property of the UWP ComboBox can be used to customize the content part of the SfComboBoxItems.
 
 {% highlight html %}
 
@@ -242,6 +242,6 @@ The ItemTemplate property of the SfComboBox can be used to customize the content
 
 {% endhighlight %}
 
-This populates the SfComboBox as illustrated in the following screenshot.
+This populates the UWP ComboBox as illustrated in the following screenshot.
 
 ![Showing employee name of the UWP sfcombobox](Populating-Items_images/Populating-Items_img3.png)
