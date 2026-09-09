@@ -7,9 +7,9 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Selection Mode in UWP SfAccordion
+# Selection Mode in UWP Accordion
 
-`SfAccordion` provides a property `SelectionMode` that helps to decide the number of items that can be expanded or selected at a time. The values of SelectionMode's are
+`UWP Accordion` provides a property `SelectionMode` that helps to decide the number of items that can be expanded or selected at a time. The values of SelectionMode's are
 
 1. One
 2. OneOrMore

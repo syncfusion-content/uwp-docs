@@ -7,9 +7,9 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Error Message in UWP SfCalculator
+# Error Message in UWP Calculator
 
-`SfCalculator` provides `ErrorMessageDisplayed` event to notify invalid input and syntax errors. Default error message is “Invalid input” and it can be modified by setting the event argument NewErrorMessage.
+`UWP Calculator` provides `ErrorMessageDisplayed` event to notify invalid input and syntax errors. Default error message is “Invalid input” and it can be modified by setting the event argument NewErrorMessage.
 
 {% tabs %}
 

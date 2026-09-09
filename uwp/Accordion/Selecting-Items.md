@@ -7,7 +7,7 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Selecting Items in UWP SfAccordion
+# Selecting Items in UWP Accordion
 
 Items can be selected programmatically using the properties `SelectedIndex`, `SelectedItem` and `SelectedItems`.
 
@@ -140,7 +140,7 @@ End Sub
 
 ## Selecting Item using IsSelected
 
-`SfAccordionItem` has a property `IsSelected` that determines whether the item is expanded or collapsed. More than one accordion item can have IsSelected as `true` based on the `SelectionMode`.
+`SfAccordionItem` has a property `IsSelected` that determines whether the item is expanded or collapsed. More than one SfAccordionItem can have IsSelected as `true` based on the `SelectionMode`.
 
 * IsSelected=true – Item is expanded
 * IsSelected=false – Item is collapsed
@@ -237,12 +237,12 @@ Content="Essential Studio for Universal"/>
 
 ## Checking the Lock State of an Item
 
-`SfAccordionItem` provides a read-only property `IsLocked` to check whether an item is locked or not. An accordion item is said to be locked when it cannot be unselected/collapsed. 
-For example: In One SelectionMode, the selected item cannot be collapsed directly by clicking on its header, it is locked. It can be unlocked by selecting another accordion item, now the newly selected item is locked.
+`SfAccordionItem` provides a read-only property `IsLocked` to check whether an item is locked or not. The SfAccordionItem is said to be locked when it cannot be unselected/collapsed. 
+For example: In One SelectionMode, the selected item cannot be collapsed directly by clicking on its header, it is locked. It can be unlocked by selecting another SfAccordionItem, now the newly selected item is locked.
 
 ## Select All Items
 
-`SfAccordion` provides a method `SelectAll()` to select all the items. In One and ZeroOrOne SelectionModes, only the last item is selected.
+`UWP Accordion` provides a method `SelectAll()` to select all the items. In One and ZeroOrOne SelectionModes, only the last item is selected.
 
 {% tabs %}
 
@@ -262,7 +262,7 @@ accordion.SelectAll()
  
 ## Unselect All Items
 
-`SfAccordion` provides a method `UnselectAll()` to unselect all the items. In One SelectionMode, there is no change in calling this method. In OneOrMore SelectionMode, the element which has higher index remains selected whereas others are unselected.
+`UWP Accordion` provides a method `UnselectAll()` to unselect all the items. In One SelectionMode, there is no change in calling this method. In OneOrMore SelectionMode, the element which has higher index remains selected whereas others are unselected.
 
 {% tabs %}
 
