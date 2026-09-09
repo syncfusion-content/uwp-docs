@@ -11,9 +11,9 @@ documentation: ug
 
 ## Pivot table field list
 
-By using the pivot table field list, you can add, rearrange, or remove fields to show the data in the SfPivotClient exactly as desired.
+By using the pivot table field list, you can add, rearrange, or remove fields to show the data in the Pivot Client exactly as desired.
 
-With the current implementation of grouping bar, the deleted items cannot be added again in the SfPivotClient. To achieve this requirement, the pivot
+With the current implementation of grouping bar, the deleted items cannot be added again in the Pivot Client. To achieve this requirement, the pivot
 table field list is maintained with components listed below:
 
 * Pivot browser.
@@ -30,7 +30,7 @@ The pivot browser represents the collection of pivot items available in the data
 
 ### Axis element builder
 
-The axis element builder is used to rearrange and reposition fields in the SfPivotClient. Based on fields in the section, the SfPivotGrid and the SfPivotChart will display the resultant data.
+The axis element builder is used to rearrange and reposition fields in the Pivot Client. Based on fields in the section, the SfPivotGrid and the SfPivotChart will display the resultant data.
 
 ![PivotTable-Field-List_image2](PivotClient-Components_images/PivotTable-Field-List_image2.png)
 
@@ -100,7 +100,7 @@ The **Select All** option in the dialog allows users to select or unselect all f
 
 ### Show calculations as columns
 
-The SfPivotClient supports showing the calculation values in the columns or rows section. To view the calculation values in the row, uncheck the “Show Calculations as column” check box.
+The Pivot Client supports showing the calculation values in the columns or rows section. To view the calculation values in the row, uncheck the “Show Calculations as column” check box.
 
 ## Toolbar
 

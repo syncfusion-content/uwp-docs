@@ -9,13 +9,13 @@ documentation: ug
 
 # Show Calculations as Columns or Rows in UWP Pivot Client
 
-The SfPivotClient supports showing the calculation values as columns or rows by using the `ShowCalculationsAsColumns` property. By default, its value is true. To view the calculation values in the row, it should be set to false.
+The Pivot Client supports showing the calculation values as columns or rows by using the `ShowCalculationsAsColumns` property. By default, its value is true. To view the calculation values in the row, it should be set to false.
 
 There are two ways to enable or disable this feature as illustrated below.
 
 **Using code**
 
-The calculations can be displayed in columns or rows by setting the `ShowCalculationsAsColumns` property of the SfPivotClient.
+The calculations can be displayed in columns or rows by setting the `ShowCalculationsAsColumns` property of the Pivot Client.
 
 Refer to the following code snippet to display the calculations in column.
 

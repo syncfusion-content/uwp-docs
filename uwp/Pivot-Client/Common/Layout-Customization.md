@@ -11,11 +11,11 @@ documentation: ug
 
 ## Display mode
 
-By default, the SfPivotClient displays both the grid and chart components. To view any one of the required components or to view both in the SfPivotClient, the `DisplayMode` property is used.
+By default, the Pivot Client displays both the grid and chart components. To view any one of the required components or to view both in the control, the `DisplayMode` property is used.
 
 **Chart only**
 
-To view the pivot chart alone in the SfPivotClient, the `DisplayMode` property should be set to `ChartOnly` as specified in the following code snippet.
+To view the pivot chart alone in the Pivot Client, the `DisplayMode` property should be set to `ChartOnly` as specified in the following code snippet.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ PivotClient1.DisplayMode = PivotClientDisplayMode.ChartOnly
 
 **Grid only**
 
-To view the pivot grid alone in the SfPivotClient, the `DisplayMode` property should be set to `GridOnly` as specified in the following code snippet.
+To view the pivot grid alone in the Pivot Client, the `DisplayMode` property should be set to `GridOnly` as specified in the following code snippet.
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ PivotClient1.DisplayMode = PivotClientDisplayMode.GridOnly
 
 **Both**
 
-To view both the pivot grid and pivot chart in the SfPivotClient, the `DisplayMode` property should be set to `Both` as shown in the following code snippet.
+To view both the pivot grid and pivot chart in the Pivot Client, the `DisplayMode` property should be set to `Both` as shown in the following code snippet.
 
 {% tabs %}
 

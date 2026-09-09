@@ -11,9 +11,9 @@ documentation: ug
 
 ## Filtering
 
-Filtering can be done in the SfPivotClient by using the Member Editor dialog. This dialog will be opened by clicking the desired member's *filter icon* ![filterIcon](Data-Exploration_images/filterIcon.ico) from the axis element builder, through which members are filtered by checking and unchecking the check boxes corresponding to members. By clicking OK, the OLAP report gets updated and refreshes the pivot grid and pivot chart controls based on selected members in the member editor dialog.
+Filtering can be done in the Pivot Client by using the Member Editor dialog. This dialog will be opened by clicking the desired member's *filter icon* ![filterIcon](Data-Exploration_images/filterIcon.ico) from the axis element builder, through which members are filtered by checking and unchecking the check boxes corresponding to members. By clicking OK, the OLAP report gets updated and refreshes the pivot grid and pivot chart controls based on selected members in the member editor dialog.
 
-The following screenshots illustrate that the members of Canada, France, and Germany are excluded from the SfPivotClient control.
+The following screenshots illustrate that the members of Canada, France, and Germany are excluded from the Pivot Client control.
 
 ![memberFilter_InitialSelection](Data-Exploration_images/memberFilter_InitialSelection.png)
 

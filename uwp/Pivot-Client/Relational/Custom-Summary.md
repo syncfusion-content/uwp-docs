@@ -9,7 +9,7 @@ documentation: ug
 
 # Custom Summary in UWP Pivot Client
 
-The SfPivotClient supports changing the summary type of existing calculation items to custom at runtime using the custom summary dialog.
+The Pivot Client supports changing the summary type of existing calculation items to custom at runtime using the custom summary dialog.
 
 **Defining a custom summary**
 
@@ -25,6 +25,6 @@ The SfPivotClient supports changing the summary type of existing calculation ite
 
 ![Custom-Summary_image2](Custom-Summary_images/Custom-Summary_image2.png)
 
-5. Then, click **OK** to populate the values in the SfPivotClient.
+5. Then, click **OK** to populate the values in the Pivot Client.
 
 ![Custom-Summary_image3](Custom-Summary_images/Custom-Summary_image3.png)

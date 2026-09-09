@@ -9,7 +9,7 @@ documentation: ug
 
 # Expression Fields in UWP Pivot Client
 
-The SfPivotClient supports adding expression field at runtime by using the expression field dialog.
+The Pivot Client supports adding expression field at runtime by using the expression field dialog.
 
 **Adding an expression field**
 
@@ -27,6 +27,6 @@ The SfPivotClient supports adding expression field at runtime by using the expre
 
 ![Expression-field-image2](Expression-field_images/Expression-field-image2.png)
 
-5. Then, click **OK** to populate the values in the SfPivotClient.
+5. Then, click **OK** to populate the values in the Pivot Client.
 
 ![Expression-field-image3](Expression-field_images/Expression-field-image3.png)

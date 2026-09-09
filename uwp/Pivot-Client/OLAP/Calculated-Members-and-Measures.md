@@ -9,11 +9,11 @@ documentation: ug
 
 # Calculated Members in UWP Pivot Client
 
-The SfPivotGrid allows users to add calculated measures and members in the OLAP report. There are two ways to define the calculated member or measure in the SfPivotClient as illustrated below.
+The SfPivotGrid allows users to add calculated measures and members in the OLAP report. There are two ways to define the calculated member or measure in the Pivot Client as illustrated below.
 
 **Using calculated member editor dialog**
 
-The calculated member editor dialog can be opened by clicking the *Create a Calculated Member/Measure* icon ![Calculated-member](Calculated-Members-and-Measures_images/Calculated-member-icon.png) available in the SfPivotClient's toolbar. This icon will be visible only if the `EnableCalculatedMembers` property is enabled.
+The calculated member editor dialog can be opened by clicking the *Create a Calculated Member/Measure* icon ![Calculated-member](Calculated-Members-and-Measures_images/Calculated-member-icon.png) available in the Pivot Client's toolbar. This icon will be visible only if the `EnableCalculatedMembers` property is enabled.
 
 {% tabs %}
 
