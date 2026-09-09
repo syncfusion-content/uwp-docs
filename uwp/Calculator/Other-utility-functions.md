@@ -7,9 +7,9 @@ control: SfCalculator
 documentation: ug
 ---
 
-# Utilities in UWP SfCalculator
+# Utilities in UWP Calculator
 
-Several utility functions are available in `SfCalculator` control.
+Several utility functions are available in `UWP Calculator` control.
 
 ## Identifying the Operation
 
@@ -56,7 +56,7 @@ functionText.Text = "The function is: " & [function].ToString()
 
 ## Clear the Expression
 
-`Clear` function is used to clear both the expression and value in `SfCalculator`.
+`Clear` function is used to clear both the expression and value in `UWP Calculator`.
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ calculator.Clear()
 
 ## Clear the Value
 
-`ClearEntry` function is used to clear the entered/computed value in `SfCalculator`.
+`ClearEntry` function is used to clear the entered/computed value in `UWP Calculator`.
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ calculator.TrailingZeros()
 
 ## Change Separators based on Culture
 
-`SfCalculator` has Culture support that allows to have decimal separator symbols based on the culture.
+`UWP Calculator` has Culture support that allows to have decimal separator symbols based on the culture.
 
 {% tabs %}
 

@@ -7,11 +7,11 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Getting Started with UWP SfAccordion
+# Getting Started with UWP Accordion
 
-This section explains how to create a long list of expandable items using SfAccordion control.
+This section explains how to create a long list of expandable items using UWP Accordion control.
 
-## Adding SfAccordion Control
+## Adding UWP Accordion Control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -35,7 +35,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-2.Now add the `SfAccordion` control with a required optimal name using the included namespace
+2.Now add the `UWP Accordion` control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -59,9 +59,9 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-## Adding Children to SfAccordion Control
+## Adding Children to UWP Accordion Control
 
-`SfAccordion` accepts `SfAccordionItem` as its children when added directly. Here five SfAccordionItems are added as the children of the SfAccordion.
+`UWP Accordion` accepts `SfAccordionItem` as its children when added directly. Here five SfAccordionItems are added as the children of the SfAccordion.
 
 {% tabs %}
 
@@ -123,9 +123,9 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-## Setting Header for Accordion Items
+## Setting Header for UWP Accordion Items
 
-SfAccordionItem has `Header` property to set header for the accordion items. Set the header as “WinRT” and repeat the same procedure for remaining children with the value as “Windows Phone”, “Silverlight”, “WPF” and “Windows Forms”.
+SfAccordionItem has `Header` property to set header for the UWP Accordion items. Set the header as “WinRT” and repeat the same procedure for remaining children with the value as “Windows Phone”, “Silverlight”, “WPF” and “Windows Forms”.
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ accordion.Items.Add(New SfAccordionItem() With {.Header = "Universal"})
 
 ## Applying Template for Item Header
 
-SfAccordion provides `HeaderTemplate` property that allows to apply a common data template for all accordion items header.
+UWP Accordion provides `HeaderTemplate` property that allows to apply a common data template for all UWP Accordion items header.
 
 {% tabs %}
 
