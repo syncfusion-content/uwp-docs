@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in UWP Pivot Client
 
-Localization is the key feature to provide software solutions that are targeted at global users. The SfPivotClient allows users to localize the control to a specific locale and supports “resx” based localization.
+Localization is the key feature to provide software solutions that are targeted at global users. The Pivot Client allows users to localize the control to a specific locale and supports “resx” based localization.
 
 You can use the following steps to localize the control:
 
@@ -76,7 +76,7 @@ End Class
 
 ## RTL
 
-The SfPivotClient provides RTL support to display the content from right to left direction by setting the `FlowDirection` property to **RightToLeft**.
+The Pivot Client provides RTL support to display the content from right to left direction by setting the `FlowDirection` property to **RightToLeft**.
 
 {% tabs %}
 

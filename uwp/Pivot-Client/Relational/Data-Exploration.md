@@ -11,13 +11,13 @@ documentation: ug
 
 ## Filtering
 
-Filtering can be applied to the SfPivotClient control at runtime by using the **Filter Editor** dialog. This dialog can be opened by clicking the **Filter icon** present over the right corner of fields in the rows or columns section of the axis element builder.
+Filtering can be applied to the Pivot Client control at runtime by using the **Filter Editor** dialog. This dialog can be opened by clicking the **Filter icon** present over the right corner of fields in the rows or columns section of the axis element builder.
 
 The filter editor dialog is used to filter the values at runtime. It displays only a subset of data that meets a specific criteria and hides the data that you do not want to display.
 
 The **Select All** option in the dialog allows users to select or deselect all fields for filtering. If you want to filter some values, you must uncheck some field values in the filter editor dialog, and then click **OK**.
 
-The following screenshots illustrate that the members of FY2009 and FY2012 are excluded from the SfPivotClient control.
+The following screenshots illustrate that the members of FY2009 and FY2012 are excluded from the Pivot Client control.
 
 ![Filtering_image2](Data-Exploration_images/Filtering_image2.png)
 

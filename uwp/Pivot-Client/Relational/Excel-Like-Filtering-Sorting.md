@@ -9,7 +9,7 @@ documentation: ug
 
 # Excel-Like Filtering and Sorting in UWP Pivot Client
 
-The SfPivotClient control supports Excel-like filtering and sorting that is applied to a pivot item. You can enable or disable the Excel-like sorting and filtering support in the SfPivotClient by setting the `AllowMultiFunctionalSortFilter` property.
+The Pivot Client control supports Excel-like filtering and sorting that is applied to a pivot item. You can enable or disable the Excel-like sorting and filtering support in the control by setting the `AllowMultiFunctionalSortFilter` property.
 
 Refer to the following code snippet to enable Excel-like filtering and sorting.
 
@@ -53,11 +53,11 @@ This allows you to sort the corresponding pivot item based on the grand total of
 
 **Clear filters**
 
-This allows you to clear all the filter changes that are applied to the corresponding pivot item and bring back the SfPivotClient to the normal state.
+This allows you to clear all the filter changes that are applied to the corresponding pivot item and bring back the Pivot Client to the normal state.
 
 **Label filters**
 
-This allows you to filter the SfPivotClient based on labels of the pivot item field and this can be achieved by using various options that are listed below:
+This allows you to filter the Pivot Client based on labels of the pivot item field and this can be achieved by using various options that are listed below:
 
 * Equals.
 * Does Not Equal.
@@ -80,11 +80,11 @@ _Label filter dialog for filtering "Canada" in Country_
 
 ![Excel-like-Filtering-image5](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image5.png)
 
-_SfPivotClient applied with label filter_
+_Pivot Client applied with label filter_
 
 **Value filters**
 
-This allows you to filter the SfPivotClient based on values of the pivot item field and this can be achieved by using various options that are listed below:
+This allows you to filter the Pivot Client based on values of the pivot item field and this can be achieved by using various options that are listed below:
 
 * Equals.
 * Does Not Equal.
@@ -102,4 +102,4 @@ _Value filter dialog for filtering "France" using its Quantity value "398"_
 
 ![Excel-like-Filtering-image7](Excel-Like-Filtering-Sorting_images/Excel-like-Filtering-image7.png)
 
-_SfPivotClient applied with value filter_
+_Pivot Client applied with value filter_

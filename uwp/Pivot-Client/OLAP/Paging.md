@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging in UWP Pivot Client
 
-Paging in the SfPivotClient supports loading and rendering the large amounts of data without any performance constraint.
+Paging in the Pivot Client supports loading and rendering the large amounts of data without any performance constraint.
 
 When you process the large CellSet, it is split into several segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible ways by using the UI options available in the SfPivotPager.
 
@@ -17,7 +17,7 @@ Paging can be enabled in any of the following ways as illustrated below.
 
 **Using 'EnablePaging' Property**
 
-To enable paging, the `EnablePaging` property should be set to true. The SfPivotPager is included and the OlapDataManager object of the SfPivotClient is bounded to respective instance of the SfPivotPager. The following code snippet and screenshot illustrate how to enable the paging option in the SfPivotClient.
+To enable paging, the `EnablePaging` property should be set to true. The SfPivotPager is included and the OlapDataManager object of the Pivot Client is bounded to respective instance of the SfPivotPager. The following code snippet and screenshot illustrate how to enable the paging option in the control.
 
 {% tabs %}
 
@@ -41,13 +41,13 @@ PivotClient1.EnablePaging = True
 
 {% endtabs %}
 
-N> Paging can be enabled or disabled at runtime by using the *Pivot Pager* icon ![Pager-button](Paging_images/Pager-button.png) in the SfPivotClient's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
+N> Paging can be enabled or disabled at runtime by using the *Pivot Pager* icon ![Pager-button](Paging_images/Pager-button.png) in the Pivot Client's toolbar. The visibility of the pager button in the toolbar can be modified with the help of the `PagerButtonVisibility` property.
 
 ![pagerEnabled_UI](Paging_images/pagerEnabled_UI.png)
 
 **Using OLAP report**
 
-The current OLAP report can be specified with paging options to enable the SfPivotPager that is bounded with the SfPivotClient. The following code snippet shows how to enable the paging through the OLAP report.
+The current OLAP report can be specified with paging options to enable the SfPivotPager that is bounded with the Pivot Client. The following code snippet shows how to enable the paging through the OLAP report.
 
 {% tabs %}
 

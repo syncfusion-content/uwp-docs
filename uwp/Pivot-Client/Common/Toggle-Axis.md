@@ -9,7 +9,7 @@ documentation: ug
 
 # Toggle Axis in UWP Pivot Client
 
-Toggle axis support swaps all the axis elements between column and row axes, which in turn refreshes the view of the SfPivotChart and SfPivotGrid. This option is available in the toolbar of the SfPivotClient.
+Toggle axis support swaps all the axis elements between column and row axes, which in turn refreshes the view of the SfPivotChart and SfPivotGrid. This option is available in the toolbar of the Pivot Client.
 
 For example, the product and date elements are present in the row section and the country element is present in the column section.
 
