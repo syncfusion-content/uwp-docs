@@ -7,11 +7,11 @@ control: SfColorPicker
 documentation: ug
 ---
 
-# Selecting Color in UWP SfColorPicker
+# Selecting Color in UWP Color Picker
 
 ## Retrieving the Current Selected Color
 
-`SelectedColor` property is used to get the selected color in `SfColorPicker`. The selected color is marked by the selected color thumb. SelectedColor can also be set using hexadecimal color code.
+`SelectedColor` property is used to get the selected color in `UWP Color Picker`. The selected color is marked by the selected color thumb. SelectedColor can also be set using hexadecimal color code.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ colorPicker.SelectedColor = Colors.Green
 
 ## Retrieving the Previous Selected Color
 
-`PreviousColor` property is used to get the previously selected color in `SfColorPicker`. The previous color is displayed in the ellipse placed at right bottom of `SfColorPicker` control.
+`PreviousColor` property is used to get the previously selected color in `UWP Color Picker`. The previous color is displayed in the ellipse placed at right bottom of the control.
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ Dim previousColor As Color = colorPicker.PreviousColor
 
 ## Notifying the Selected Color Change
 
-`SelectedColorChanged` event is fired when the selected color is changed in `SfColorPicker`
+`SelectedColorChanged` event is fired when the selected color is changed in the `UWP Color Picker`
 
 {% tabs %}
 
