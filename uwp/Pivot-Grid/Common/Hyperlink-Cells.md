@@ -9,7 +9,7 @@ documentation: ug
 
 # Hyperlink Cells in UWP Pivot Grid
 
-The SfPivotGrid allows hyperlinking of cells to retrieve detailed information about a particular cell. Hyperlink can be individually applied to the following cells:
+The Pivot Grid allows hyperlinking of cells to retrieve detailed information about a particular cell. Hyperlink can be individually applied to the following cells:
 
 * Column header cells.
 * Row header cells.

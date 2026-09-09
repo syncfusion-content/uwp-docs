@@ -9,7 +9,7 @@ documentation: ug
 
 # State Persistence in UWP Pivot Grid
 
-The SfPivotGrid supports maintaining the collapsed and expanded state of the corresponding pivot item when it gets changed. This can be achieved by enabling the `StatePersistenceEnabled` property in the SfPivotGrid control. Refer to the following code snippet to enable the state persistence.
+The Pivot Grid supports maintaining the collapsed and expanded state of the corresponding pivot item when it gets changed. This can be achieved by enabling the `StatePersistenceEnabled` property in the Pivot Grid control. Refer to the following code snippet to enable the state persistence.
 
 {% tabs %}
 
@@ -35,8 +35,8 @@ PivotGrid1.StatePersistenceEnabled = True
 
 ![PivotGrid-with-state-persistence-enabled](State-Persistence_images/PivotGrid-with-state-persistence-enabled.png)
 
-_SfPivotGrid with collapsed "Canada"_
+_Pivot Grid with collapsed "Canada"_
 
 ![PivotGrid-with-state-persistence-enabled1](State-Persistence_images/PivotGrid-with-state-persistence-enabled1.png)
 
-_SfPivotGrid maintaining collapsed state of "Canada" after pivot change_
+_Pivot Grid maintaining collapsed state of "Canada" after pivot change_

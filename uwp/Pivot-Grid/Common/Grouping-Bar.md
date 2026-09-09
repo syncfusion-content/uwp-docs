@@ -9,14 +9,14 @@ documentation: ug
 
 # Grouping Bar in UWP Pivot Grid
 
-Grouping bar allows you to slice and dice the fields between column, row, value, and filter areas. It allows you to add, rearrange, or remove the fields to show the exact data required in the SfPivotGrid. The following are the different kinds of grouping bar available in the SfPivotGrid.
+Grouping bar allows you to slice and dice the fields between column, row, value, and filter areas. It allows you to add, rearrange, or remove the fields to show the exact data required in the Pivot Grid. The following are the different kinds of grouping bar available in the control.
 
-* **Filter Grouping Bar:** Holds the filter items of the SfPivotGrid control.
-* **Value Grouping Bar:** Holds the value items of the SfPivotGrid control.
-* **Column Grouping Bar:** Holds the column items of the SfPivotGrid control.
-* **Row Grouping Bar:** Holds the row items of the SfPivotGrid control.
+* **Filter Grouping Bar:** Holds the filter items of the Pivot Grid control.
+* **Value Grouping Bar:** Holds the value items of the Pivot Grid control.
+* **Column Grouping Bar:** Holds the column items of the Pivot Grid control.
+* **Row Grouping Bar:** Holds the row items of the Pivot Grid control.
 
-By default, the grouping bar is disabled in the SfPivotGrid control and it can be enabled by using the `ShowGroupingBar` property. The following code snippet defines how to enable the grouping bar.
+By default, the grouping bar is disabled in the Pivot Grid control and it can be enabled by using the `ShowGroupingBar` property. The following code snippet defines how to enable the grouping bar.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ Me.PivotGrid1.EnableGroupingBarSorting = False
 
 {% endtabs %}
 
-The following screenshot shows the SfPivotGrid without sorting icons.
+The following screenshot shows the Pivot Grid without sorting icons.
 
 ![grouping-bar-without-sort-icon](Grouping-Bar_images/grouping-bar-without-sort-icon.png)
 
@@ -177,7 +177,7 @@ Me.PivotGrid1.GroupingBarBackground = New SolidColorBrush(Colors.BurlyWood)
 
 **Grouping bar item background**
 
-You can customize the background color of individual grouping bar items by defining the `GroupingBarItemBackground` property in the SfPivotGrid control.
+You can customize the background color of individual grouping bar items by defining the `GroupingBarItemBackground` property in the Pivot Grid control.
 
 {% tabs %}
 
@@ -207,11 +207,11 @@ Me.PivotGrid1.GroupingBarItemBackground = New SolidColorBrush(Colors.BurlyWood)
 
 ## Disabling specific grouping bar
 
-The SfPivotGrid supports disabling the grouping bar of specific area as illustrated below.
+The Pivot Grid supports disabling the grouping bar of specific area as illustrated below.
 
 **Disabling row grouping bar**
 
-The `EnableRowHeaderArea` property of the SfPivotGrid allows you to customize the visibility of grouping bar in the row header area. The following code snippet shows how to disable the row grouping bar.
+The `EnableRowHeaderArea` property of the Pivot Grid allows you to customize the visibility of grouping bar in the row header area. The following code snippet shows how to disable the row grouping bar.
 
 {% tabs %}
 
@@ -239,7 +239,7 @@ Me.PivotGrid1.EnableRowHeaderArea = False
 
 **Disabling column grouping bar**
 
-The `EnableColumnHeaderArea` property of the SfPivotGrid allows you to customize the visibility of grouping bar in the column header area. The following code snippet shows how to disable the column grouping bar.
+The `EnableColumnHeaderArea` property of the Pivot Grid allows you to customize the visibility of grouping bar in the column header area. The following code snippet shows how to disable the column grouping bar.
 
 {% tabs %}
 
@@ -267,7 +267,7 @@ Me.PivotGrid1.EnableColumnHeaderArea = False
 
 **Disabling value grouping bar**
 
-The `EnableValueHeaderArea` property of the SfPivotGrid allows you to customize the visibility of grouping bar in the value header area. The following code snippet shows how to disable the value grouping bar.
+The `EnableValueHeaderArea` property of the Pivot Grid allows you to customize the visibility of grouping bar in the value header area. The following code snippet shows how to disable the value grouping bar.
 
 {% tabs %}
 
@@ -295,7 +295,7 @@ Me.PivotGrid1.EnableValueHeaderArea = False
 
 **Disabling filter grouping bar**
 
-The `EnableFilterHeaderArea` property of the SfPivotGrid allows you to customize the visibility of grouping bar in the filter header area. The following code snippet shows how to disable the filter grouping bar.
+The `EnableFilterHeaderArea` property of the Pivot Grid allows you to customize the visibility of grouping bar in the filter header area. The following code snippet shows how to disable the filter grouping bar.
 
 {% tabs %}
 

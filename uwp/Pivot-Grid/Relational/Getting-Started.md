@@ -12,17 +12,17 @@ documentation: ug
 >**Important**
 Starting with v16.2.0.x, if you refer to Syncfusion assemblies from trial setup or from the NuGet feed, include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your UWP application to use the components.
 
-This section explains the steps required to create a simple SfPivotGrid control bound to relational data source such as IList, IEnumerable, etc.
+This section explains the steps required to create a simple Pivot Grid control bound to relational data source such as IList, IEnumerable, etc.
 
-## Initializing SfPivotGrid control
+## Initializing Pivot Grid control
 
 Open Visual Studio IDE and select **File > New > Project** to open the new project dialog.
 
-Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "SfPivotGridDemo".
+Select **Installed > Templates > Visual C# > Windows > Universal > Blank APP(Universal Windows)** to create a new UWP application and name the project as "Pivot GridDemo".
 
 The target version/minimum version dialog appears, in which change the target version of the application as **"Windows 10 (10.0; Build 10240)".**
 
-The SfPivotGrid control can be initialized and added to the application through any of the following ways:
+The Pivot Grid control can be initialized and added to the application through any of the following ways:
 
 1. Through designer.
 2. Through XAML.
@@ -32,15 +32,15 @@ The SfPivotGrid control can be initialized and added to the application through 
 
 Double-click the MainPage.xaml from the solution explorer to open it in the design view.
 
-Click the toolbox and drag the **SfPivotGrid** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
+Click the toolbox and drag the **Pivot Grid** control from the “Syncfusion Controls for UWP XAML” group to drop it on the middle of the design canvas.
 
-The SfPivotGrid control will be added to the designer as follows:
+The Pivot Grid control will be added to the designer as follows:
 
 ![GettingStarted_Designer](Getting-Started_images/Designer.png)
 
 ### Adding control through XAML
 
-The SfPivotGrid control can be added to the project by referring assemblies or SDK as described below:
+The Pivot Grid control can be added to the project by referring assemblies or SDK as described below:
 
 **Assembly reference**
 
@@ -77,7 +77,7 @@ xmlns:PivotGrid="using:Syncfusion.UI.Xaml.PivotGrid"
 
 {% endtabs %}
 
-Then, add the SfPivotGrid control to the grid by using the specified namespace as specified in the following code snippet.
+Then, add the Pivot Grid control to the grid by using the specified namespace as specified in the following code snippet.
 
 {% tabs %}
 
@@ -104,7 +104,7 @@ Then, add the SfPivotGrid control to the grid by using the specified namespace a
 
 ### Adding control through code-behind
 
-The SfPivotGrid control can be added to the project by referring assemblies or SDK.
+The Pivot Grid control can be added to the project by referring assemblies or SDK.
 
 **Assembly reference**
 
@@ -152,7 +152,7 @@ After adding the required reference, open the *MainPage.xaml* file and name the 
 
 {% endtabs %}
 
-Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGrid". Then, initialize the SfPivotGrid control in the constructor and add it to the grid as illustrated below.
+Open the *MainPage.xaml.cs* file and include the namespace "Syncfusion.UI.Xaml.PivotGrid". Then, initialize the Pivot Grid control in the constructor and add it to the grid as illustrated below.
 
 {% tabs %}
 
@@ -201,13 +201,13 @@ End Namespace
 
 {% endtabs %}
 
-## Binding relational data to SfPivotGrid control
+## Binding relational data to Pivot Grid control
 
 ### Creating relational data through view model
 
-After initializing the SfPivotGrid control, right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class as *ProductSalesViewModel* and click **OK**.
+After initializing the Pivot Grid control, right-click the project in the solution explorer and select **Add > New Item... > Class** to create a new class file. Then, name the class as *ProductSalesViewModel* and click **OK**.
 
-The following code snippet illustrates how to define the relational data for the SfPivotGrid.
+The following code snippet illustrates how to define the relational data for the Pivot Grid.
 
 {% tabs %}
 
@@ -336,16 +336,16 @@ End Namespace
 
 {% endtabs %}
 
-### Defining item source, pivot columns, pivot rows, and pivot calculations for SfPivotGrid control
+### Defining item source, pivot columns, pivot rows, and pivot calculations for Pivot Grid control
 
-Relational data can be bound to SfPivotGrid control by using the `ItemSource` property through any of the following ways:
+Relational data can be bound to Pivot Grid control by using the `ItemSource` property through any of the following ways:
 
 * Through XAML.
 * Through code-behind.
 
 **Through XAML**
 
-The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivotGrid control with the help of `DataContext`. In addition to this, `PivotColumns`, `PivotRows`, and `PivotCalculations` should be assigned to the SfPivotGrid for populating the data.
+The relational data mentioned in the *ProductSalesViewModel* is bound to Pivot Grid control with the help of `DataContext`. In addition to this, `PivotColumns`, `PivotRows`, and `PivotCalculations` should be assigned to the Pivot Grid for populating the data.
 
 {% tabs %}
 
@@ -386,7 +386,7 @@ The relational data mentioned in the *ProductSalesViewModel* is bound to SfPivot
 
 **Through code-behind**
 
-The following code snippet illustrates how to bind the data to SfPivotGrid control in code-behind.
+The following code snippet illustrates how to bind the data to Pivot Grid control in code-behind.
 
 {% tabs %}
 

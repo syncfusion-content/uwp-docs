@@ -9,7 +9,7 @@ documentation: ug
 
 # Freeze Headers in UWP Pivot Grid
 
-The SfPivotGrid provides built-in support to freeze the column and row headers. This can be achieved by setting the `FreezeHeaders` property of SfPivotGrid to `true`.
+The Pivot Grid provides built-in support to freeze the column and row headers. This can be achieved by setting the `FreezeHeaders` property of Pivot Grid to `true`.
 
 Refer to the following code snippet to enable FreezeHeaders.
 
@@ -23,14 +23,14 @@ Refer to the following code snippet to enable FreezeHeaders.
 
 {% highlight c# %}
 
-// To freeze SfPivotGrid Headers
+// To freeze Pivot Grid Headers
 this.PivotGrid1.FreezeHeaders = true;
 
 {% endhighlight %}
 
 {% highlight vb %}
 
-' To freeze SfPivotGrid Headers
+' To freeze Pivot Grid Headers
 Me.PivotGrid1.FreezeHeaders = True
 
 {% endhighlight %}
