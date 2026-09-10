@@ -854,6 +854,7 @@ Syncfusion.SfPivotGauge.UWP
 </tr>
 <tr>
 <td> 
+Syncfusion.SfPivotGrid.UWP <br/>
 Syncfusion.Data.UWP <br/>
 Syncfusion.Olap.UWP <br/>
 Syncfusion.PivotAnalysis.UWP <br/>
@@ -864,7 +865,8 @@ Syncfusion.SfGrid.UWP <br/>
 Syncfusion.SfGridCommon.UWP <br/>
 Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfMenu.UWP <br/>
-Syncfusion.SfShared.UWP
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfPivotGrid.UWP
@@ -885,8 +887,8 @@ For exporting pivot grid contents to Excel, Word, PDF and CSV, the following ref
 <td> 
 Syncfusion.SfPivotGridConverter.UWP <br/>
 Syncfusion.DocIO.UWP <br/>
-Syncfusion.Pdf.UWP </br>
-Syncfusion.XlsIO.UWP </br>
+Syncfusion.Pdf.UWP <br/>
+Syncfusion.XlsIO.UWP 
 </td>
 <td> 
 Syncfusion.PivotTableExport.UWP
