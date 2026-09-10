@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Rows in UWP Data Grid
 
-SfDataGrid allows you to add additional rows at top and also bottom of the SfDataGrid which are not bound with data object from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRows) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be exported and printed.
+UWP Data Grid allows you to add additional rows at top and also bottom of the Data Grid which are not bound with data object from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRows) collection property. You can add any no of unbound rows to Data Grid. Unbound rows can be exported and printed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,7 +30,7 @@ N> [AllowFrozenGroupHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xa
 
 ## Positioning unbound rows
 
-Unbound row can be placed in top or bottom of the SfDataGrid. Unbound row positioned based on [GridUnBoundRow.Position](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRow_Position) and [GridUnBoundRow.ShowBelowSummary](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRow_ShowBelowSummary) properties.
+Unbound row can be placed in top or bottom of the Data Grid. Unbound row positioned based on [GridUnBoundRow.Position](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRow_Position) and [GridUnBoundRow.ShowBelowSummary](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundRow.html#Syncfusion_UI_Xaml_Grid_GridUnBoundRow_ShowBelowSummary) properties.
 Below table shows the unbound row positioning based on property settings of `Position` and `ShowBelowSummary`.
 
 <table>
@@ -75,7 +75,7 @@ Bottom
 True
 </td>
 <td>
-Unbound row placed at bottom of SfDataGrid. In this position, unbound row is not selectable, not editable and frozen when scrolling.
+Unbound row placed at bottom of Data Grid. In this position, unbound row is not selectable, not editable and frozen when scrolling.
 </td>
 </tr>
 <tr>
@@ -115,7 +115,7 @@ You can get or set the [GridUnBoundRowEventsArgs.Value](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-For example, now unbound row populated based on selected items in SfDataGrid.
+For example, now unbound row populated based on selected items in Data Grid.
 
 {% tabs %}
 {% highlight c# %}

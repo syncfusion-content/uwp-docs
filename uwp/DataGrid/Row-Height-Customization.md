@@ -74,7 +74,7 @@ You can change the row height in on-demand based on the row index or row data us
 
 `QueryRowHeight` event triggered for each row when it becomes visible. [QueryRowHeightEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.QueryRowHeightEventArgs.html) provides information to `QueryRowHeight` event with following members,
 
-`RowIndex` – denotes index of the row in SfDataGrid.
+`RowIndex` – denotes index of the row in Data Grid.
 
 `Height` – Gets or sets the height of the row.
 
@@ -106,12 +106,12 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 ## Fit the Row Height based on its content
 
-You can fit the row height based on its content in `QueryRowHeight` event handler using [GetAutoRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_GetAutoRowHeight_System_Int32_Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_System_Double__System_Boolean_) method. This improves the readability of the content and it does not affect the loading performance of the SfDataGrid as the `QueryRowHeight` event triggered for rows in on-demand. 
+You can fit the row height based on its content in `QueryRowHeight` event handler using [GetAutoRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_GetAutoRowHeight_System_Int32_Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_System_Double__System_Boolean_) method. This improves the readability of the content and it does not affect the loading performance of Data Grid as the `QueryRowHeight` event triggered for rows in on-demand. 
 `GetAutoRowHeight` method returns `true` when the row height is calculated for record & header rows and returns `false` for other rows. Calculated height based on content set to the `out` parameter and you can assign the calculated height to the `Height` property of `QueryRowHeightEventArgs`.
 
 Below are the parameter to GetAutoRowHeight method, 
 
-1. `RowIndex` – denotes the index of row in SfDataGrid.
+1. `RowIndex` – denotes the index of row in Data Grid.
 
 2. `GridRowSizingOptions` – A class with properties to customize the row height calculation.
 

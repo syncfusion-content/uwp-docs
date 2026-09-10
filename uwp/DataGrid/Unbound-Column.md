@@ -10,7 +10,7 @@ documentation: ug
 
 # Unbound Column in UWP Data Grid
 
-SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnBoundColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html) class. Unbound columns support for sorting, filtering, grouping, exporting and printing as normal columns.
+UWP Data Grid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnBoundColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html) class. Unbound columns support for sorting, filtering, grouping, exporting and printing as normal columns.
 
 {% tabs %}
 {% highlight xaml %}

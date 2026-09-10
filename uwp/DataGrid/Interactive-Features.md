@@ -146,7 +146,7 @@ You can get the sample from [here](https://www.syncfusion.com/downloads/support/
 
 ### ColumnResizing with the Touch
 
-SfDataGrid allows you to re-size the columns in touch by press and hold the column header. You can enable resizing in SfDataGrid by setting AllowResizingColumns as True.
+Data Grid allows you to re-size the columns in touch by press and hold the column header. You can enable resizing in Data Grid by setting AllowResizingColumns as True.
 
 {% tabs %}
 {% highlight xaml %}

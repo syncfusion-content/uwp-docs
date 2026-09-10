@@ -10,7 +10,7 @@ documentation: ug
 
 # Column Types in UWP Data Grid
 
-SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
+UWP Data Grid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
  
 You can also add or override existing columns and renderers as you need.
 
@@ -174,7 +174,7 @@ Selects or deselects rows based on the check box value, which is not bound with 
 
 ## GridColumn
 
-[GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html) is an abstract class provides base functionalities for all the column types in SfDataGrid.
+[GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html) is an abstract class provides base functionalities for all the column types in Data Grid.
 
 ### Mapping column to particular property
 

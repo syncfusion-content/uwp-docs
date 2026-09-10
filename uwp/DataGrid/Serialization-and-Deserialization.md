@@ -10,11 +10,11 @@ documentation: ug
 
 # Serialization and Deserialization in UWP Data Grid
 
-SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
+UWP Data Grid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
  
 ## Serialization 
 
-You can serialize the SfDataGrid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method which exports the current DataGrid control properties to an XML file.
+You can serialize Data Grid by using [SfDataGrid.Serialize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Serialize_System_IO_Stream_) method which exports the current Data Grid control properties to an XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -46,7 +46,7 @@ SfDataGrid serialization operation can be customized by passing [SerializationOp
 
 ### Serialize sorting
 
-By default, SfDataGrid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the [SerializationOptions.SerializeSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeSorting) to `false`.
+By default, Data Grid allows you to serialize the sorting operation. You can disable the sorting serialization by setting the [SerializationOptions.SerializeSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeSorting) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -63,7 +63,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize grouping
 
-By default, SfDataGrid allows you to serialize the grouping operation. You can disable the grouping serialization by setting the [SerializationOptions.SerializeGrouping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeGrouping) to `false`.
+By default, Data Grid allows you to serialize the grouping operation. You can disable the grouping serialization by setting the [SerializationOptions.SerializeGrouping](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeGrouping) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize filtering
 
-By default, SfDataGrid allows you to serialize the filtering operation. You can disable the filtering  serialization by setting the [SerializationOptions.SerializeFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeFiltering) to `false`.
+By default, Data Grid allows you to serialize the filtering operation. You can disable the filtering  serialization by setting the [SerializationOptions.SerializeFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeFiltering) to `false`.
  
 {% tabs %}
 {% highlight c# %}
@@ -93,7 +93,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize columns
 
-By default, SfDataGrid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the [SerializationOptions.SerializeColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeColumns) to `false`.
+By default, Data Grid allows you to serialize the columns manipulation operation. You can disable the columns serialization by setting the [SerializationOptions.SerializeColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeColumns) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -107,7 +107,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize summaries 
 
-By default, SfDataGrid allows you to serialize the caption summary, group summary and table summary settings in SfDataGrid. You can disable the summaries serialization by setting [SerializationOptions.SerializeCaptionSummary](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeCaptionSummary), [SerializationOptions.SerializeGroupSummaries](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeGroupSummaries), [SerializationOptions.SerializeTableSummaries](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeTableSummaries) properties to `false`.
+By default, Data Grid allows you to serialize the caption summary, group summary and table summary settings in Data Grid. You can disable the summaries serialization by setting [SerializationOptions.SerializeCaptionSummary](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeCaptionSummary), [SerializationOptions.SerializeGroupSummaries](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeGroupSummaries), [SerializationOptions.SerializeTableSummaries](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeTableSummaries) properties to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,7 +123,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize stacked headers
 
-By default, SfDataGrid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the [SerializationOptions.SerializeStackedHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeStackedHeaders) to `false`.
+By default, Data Grid allows you to serialize the stack headers operation. You can disable the stack headers serialization by setting the [SerializationOptions.SerializeStackedHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeStackedHeaders) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -137,7 +137,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize Details View
 
-By default, SfDataGrid allows you to serialize the DetailsViewDefinition. You can disable the DetailsViewDefinition serialization by setting the [SerializationOptions.SerializeDetailsViewDefinition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeDetailsViewDefinition) to `false`.
+By default, Data Grid allows you to serialize the DetailsViewDefinition. You can disable the DetailsViewDefinition serialization by setting the [SerializationOptions.SerializeDetailsViewDefinition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeDetailsViewDefinition) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -151,7 +151,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ### Serialize unbound rows
 
-By default, SfDataGrid allows you to serialize the unbound rows settings. You can disable the unbound rows serialization by setting the [SerializationOptions.SerializeUnBoundRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeUnBoundRows) to `false`.
+By default, Data Grid allows you to serialize the unbound rows settings. You can disable the unbound rows serialization by setting the [SerializationOptions.SerializeUnBoundRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SerializationOptions.html#Syncfusion_UI_Xaml_Grid_SerializationOptions_SerializeUnBoundRows) to `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -166,7 +166,7 @@ this.dataGrid.Serialize(storageFile, options);
 
 ## Deserialization
 
-You can deserialize the SfDataGrid setting by using [SfDataGrid.Deserialize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method which reconstructs the SfDataGrid based on the setting in the stored XML file.
+You can deserialize the SfDataGrid setting by using [SfDataGrid.Deserialize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Deserialize_System_IO_Stream_) method which reconstructs the Data Grid based on the setting in the stored XML file.
 
 {% tabs %}
 {% highlight c# %}
@@ -197,7 +197,7 @@ Deserialization operation can be customized by passing [DeserializationOptions](
 
 ### Deserialize sorting
 
-By default, SfDataGrid allows you to deserialize the sorting operation. You can disable the sorting deserialization by setting the [DeserializationOptions.DeserializeSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.DeserializationOptions.html#Syncfusion_UI_Xaml_Grid_DeserializationOptions_DeserializeSorting) to `false`.
+By default, Data Grid allows you to deserialize the sorting operation. You can disable the sorting deserialization by setting the [DeserializationOptions.DeserializeSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.DeserializationOptions.html#Syncfusion_UI_Xaml_Grid_DeserializationOptions_DeserializeSorting) to `false`.
  
 {% tabs %}
 {% highlight c# %}

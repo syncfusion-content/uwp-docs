@@ -81,12 +81,12 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
  
 ### Limitations when binding indexer property 
 
-* SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
+* Data Grid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 
 
 ## Defining source data type
 
-Based on type of data item bound to SfDataGrid, the data operations and column auto generation are carried out. You can specify the type of underlying data item explicitly for doing data operation by setting [SfDataGrid.SourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SourceType) property.
+Based on type of data item bound to Data Grid, the data operations and column auto generation are carried out. You can specify the type of underlying data item explicitly for doing data operation by setting [SfDataGrid.SourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SourceType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,7 +114,7 @@ The [GridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfu
 
 ## View 
 
-DataGrid has the View property of type `ICollectionViewAdv` interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to `ItemsSource` property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
+DataGrid has the View property of type `ICollectionViewAdv` interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to `ItemsSource` property of Data Grid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
 
 N> DataGrid creates different types of views derived from [ICollectionViewAdv](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.ICollectionViewAdv.html) interface based on ItemsSource.
 
@@ -254,7 +254,7 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </table>
 
 
-N> View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
+N> View has properties that already defined in Data Grid. It recommended setting those properties via Data Grid.
 
 ## Maintain scroll position when changing the ItemsSource
 

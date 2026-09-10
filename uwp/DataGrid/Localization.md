@@ -10,7 +10,7 @@ documentation: ug
 
 # Localization in UWP Data Grid
 
-Localization is the process of translating the application resources into different language for the specific cultures. You can localize the SfDataGrid by adding [resource] (https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before `InitializeComponent()` method.
+Localization is the process of translating the application resources into different language for the specific cultures. You can localize the Data Grid by adding [resource] (https://msdn.microsoft.com/library/aa992030.aspx) file. Application culture can be changed by setting [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx) before `InitializeComponent()` method.
  
 Below application culture changed to German.
 
@@ -25,7 +25,7 @@ public MainPage()
 {% endtabs %}
 
 
-To localize the SfDataGrid based on [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx)  using .resw files, follow the below steps.
+To localize the Data Grid based on [CurrentUICulture](https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo.currentuiculture.aspx)  using .resw files, follow the below steps.
  
 1. Right-click on the project, select **Add** and then **NewItem**.
 
@@ -56,7 +56,7 @@ You can get the SfDataGrid’s key from default resource  [Syncfusion.SfGrid.UWP
 ## Editing default culture resource
 
 
-You can edit default resource file by adding it to your application where SfDataGrid reads the static texts from here. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-145129753.zip).
+You can edit default resource file by adding it to your application where Data Grid reads the static texts from here. You can download the default resource file from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Syncfusion.SfGrid.UWP.Resources-145129753.zip).
 
 ![Displaying the default culture resource editing for UWP SfDataGrid](Localization_images/Localization_img5.png)
 
