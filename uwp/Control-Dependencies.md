@@ -888,7 +888,7 @@ For exporting pivot grid contents to Excel, Word, PDF and CSV, the following ref
 Syncfusion.SfPivotGridConverter.UWP <br/>
 Syncfusion.DocIO.UWP <br/>
 Syncfusion.Pdf.UWP <br/>
-Syncfusion.XlsIO.UWP 
+Syncfusion.XlsIO.UWP
 </td>
 <td> 
 Syncfusion.PivotTableExport.UWP
