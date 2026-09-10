@@ -167,7 +167,8 @@ Syncfusion.SfCellGrid.UWP <br/>
 Syncfusion.SfGridCommon.UWP <br/>
 Syncfusion.SfShared.UWP <br/>
 Syncfusion.SfInput.UWP <br/>
-Syncfusion.XlsIO.UWP
+Syncfusion.XlsIO.UWP <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfCellGrid.UWP
@@ -260,7 +261,8 @@ Syncfusion.SfInput.UWP
 Syncfusion.SfGrid.UWP <br/>
 Syncfusion.Data.UWP <br/>
 Syncfusion.SfInput.UWP <br/>
-Syncfusion.SfShared.UWP
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfGrid.UWP
@@ -285,6 +287,27 @@ Syncfusion.Pdf.UWP
 </td>
 <td> 
 Syncfusion.DataGridExcelExport.UWP
+</td>
+</tr>
+</table>
+
+## SfDataPager
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGrid.UWP <br/>
+Syncfusion.Data.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.Telemetry
+</td>
+<td> 
+Syncfusion.SfGrid.UWP
 </td>
 </tr>
 </table>
@@ -628,6 +651,27 @@ Syncfusion.SfHubTile.UWP
 </tr>
 </table>
 
+## SfMultiColumnDropDown
+
+<table>
+<tr>
+<th>Assembly references </th>
+<th>NuGet package </th>
+</tr>
+<tr>
+<td> 
+Syncfusion.SfGrid.UWP <br/>
+Syncfusion.Data.UWP <br/>
+Syncfusion.SfInput.UWP <br/>
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.Telemetry
+</td>
+<td> 
+Syncfusion.SfGrid.UWP
+</td>
+</tr>
+</table>
+
 ## SfNavigationDrawer
 
 <table>
@@ -765,11 +809,13 @@ Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfMenu.UWP <br/>
 Syncfusion.SfPivotChart.UWP <br/>
 Syncfusion.SfPivotChartConverter.UWP <br/>
+Syncfusion.SfPivotClient.UWP <br/>
 Syncfusion.SfPivotGrid.UWP <br/>
 Syncfusion.SfPivotGridConverter.UWP <br/>
 Syncfusion.SfPivotShared.UWP <br/>
 Syncfusion.SfShared.UWP <br/>
-Syncfusion.SfTabControl.UWP
+Syncfusion.SfTabControl.UWP <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfPivotClient.UWP
@@ -808,6 +854,7 @@ Syncfusion.SfPivotGauge.UWP
 </tr>
 <tr>
 <td> 
+Syncfusion.SfPivotGrid.UWP <br/>
 Syncfusion.Data.UWP <br/>
 Syncfusion.Olap.UWP <br/>
 Syncfusion.PivotAnalysis.UWP <br/>
@@ -818,7 +865,8 @@ Syncfusion.SfGrid.UWP <br/>
 Syncfusion.SfGridCommon.UWP <br/>
 Syncfusion.SfInput.UWP <br/>
 Syncfusion.SfMenu.UWP <br/>
-Syncfusion.SfShared.UWP
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfPivotGrid.UWP
@@ -837,7 +885,10 @@ For exporting pivot grid contents to Excel, Word, PDF and CSV, the following ref
 </tr>
 <tr>
 <td> 
-Syncfusion.SfPivotGridConverter.UWP
+Syncfusion.SfPivotGridConverter.UWP <br/>
+Syncfusion.DocIO.UWP <br/>
+Syncfusion.Pdf.UWP <br/>
+Syncfusion.XlsIO.UWP
 </td>
 <td> 
 Syncfusion.PivotTableExport.UWP
@@ -1192,7 +1243,8 @@ Syncfusion.SfInput.UWP
 Syncfusion.SfGrid.UWP <br/>
 Syncfusion.Data.UWP <br/>
 Syncfusion.SfInput.UWP <br/>
-Syncfusion.SfShared.UWP
+Syncfusion.SfShared.UWP <br/>
+Syncfusion.Telemetry
 </td>
 <td> 
 Syncfusion.SfGrid.UWP
