@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with UWP Pull To Refresh (SfPullToRefresh)
 
-## Create your first SfPullToRefresh in Universal Windows Platform
+## Create your first UWP Pull to Refresh 
 
-This section encompasses on how to create a PullToRefresh that lets you to refresh the current content of the application. 
+This section encompasses on how to create a UWP Pull to Refresh that lets you to refresh the current content of the application. 
 
 `SfPullToRefresh` is available in the following assembly and namespace:
 
@@ -19,7 +19,7 @@ Assembly: `Syncfusion.SfPullToRefresh.UWP`
 
 Namespace: `Syncfusion.UI.Xaml.PullToRefresh`
 
-Refer to the following code to add the SfPullToRefresh control:
+Refer to the following code to add the UWP Pull to Refresh control:
 
 {% tabs %}
 
@@ -45,11 +45,11 @@ Refer to the following code to add the SfPullToRefresh control:
 
 {% endtabs %}
 
-## Customizing a simple SfPullToRefresh sample
+## Customizing a simple UWP Pull to Refresh sample
 
-To develop an application with UWP PullToRefresh is simple. The following steps explains how to create and configure its properties.
+To develop an application with UWP Pull to Refresh is simple. The following steps explains how to create and configure its properties.
 
-* Create the `PullableContent` for the `SfPullToRefresh`
+* Create the `PullableContent` for the `UWP Pull to Refresh`
 
 You can set the `PullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
 
@@ -68,7 +68,7 @@ You can set the `PullableContent` for the `SfPullToRefresh` by adding the desire
 
 The pulling event will be notified whenever the swipe gesture is started. This event will notify the listener each and every time until the refresh content height exceeds. When we release the gesture from pullable content, Refreshing event will be triggered. Now user can proceed to fetching the data from web or database. Once the data is fetched, we should call Refresh to method to complete all animations.
 
-There are three built-in events in the PullToRefresh control namely:
+There are three built-in events in the UWP Pull to Refresh control namely:
 
 1. `Pulling`
 2. `Refreshing`
