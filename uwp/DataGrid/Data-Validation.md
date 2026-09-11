@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Validation in UWP Data Grid
 
-SfDataGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip. 
+UWP Data Grid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [GridCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 
 ## Built-in validations
 
@@ -144,7 +144,7 @@ public string CustomerID
 
 ## Custom validation through events
 
-You can validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValidating) and [RowValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowValidating) events. SfDataGrid will not allow user to edit other cell / row if validation failed.
+You can validate the cells and rows using [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValidating) and [RowValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RowValidating) events. Data Grid will not allow user to edit other cell / row if validation failed.
 
 ## Cell Validation
 
@@ -555,7 +555,7 @@ You can change the error tip background color by setting `Background` property o
 
 ### Showing error details in RowHeader
 
-SfDataGrid support to show the error information in row header by setting INotifyDataErrorInfo.HasErrors. By default error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the `resx` file. 
+Data Grid support to show the error information in row header by setting INotifyDataErrorInfo.HasErrors. By default error message “Row Containing Error” will be displayed.  You can change this by changing `RowErrorMessage` in the `resx` file. 
 
 {% tabs %}
 {% highlight c# %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Conditional Styling in UWP Data Grid
 
-You can style the SfDataGrid and its inner elements conditionally based on data in two ways,
+You can style the Data Grid and its inner elements conditionally based on data in two ways,
 
 1. Using Converter
 2. Using StyleSelector

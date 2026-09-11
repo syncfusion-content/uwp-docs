@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection in UWP Data Grid
 
-SfDataGrid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) or `Any`. In [SelectionUnit.Any](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) option you can select the row by clicking on row header.
+UWP Data Grid allows you to select one or more rows or cells. For selecting specific row or group of rows you have to set [SelectionUnit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) as [Row](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) and for selecting a specific cell or group of cells you have to set  `SelectionUnit` as [Cell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) or `Any`. In [SelectionUnit.Any](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionUnit.html) option you can select the row by clicking on row header.
 
 ## Current Cell Navigation
 
@@ -17,7 +17,7 @@ Keyboard navigation through the cells and rows is determined based on the [Navig
 
 ### Selection Modes
 
-The `SelectionUnit` and `SelectionMode` properties together define the behavior of selection in SfDataGird.
+The `SelectionUnit` and `SelectionMode` properties together define the behavior of selection in Data Grid.
 
 <table>
 <tr>
@@ -92,7 +92,7 @@ N> It is not possible to select header rows, table summary rows, unbound rows wh
 
 ## Multiple Row or Cell Selection
 
-The SfDataGrid allows you to select multiple rows or cells by setting [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property as [Extended](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html) or [Multiple](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), where you can select multiple rows or cells by dragging the mouse on SfDataGrid and also using the key modifiers.
+Data Grid allows you to select multiple rows or cells by setting [SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property as [Extended](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html) or [Multiple](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSelectionMode.html), where you can select multiple rows or cells by dragging the mouse on Data Grid and also using the key modifiers.
 
 While using `Extended`, you can select multiple rows or cells by pressing the key modifiers <kbd>Ctrl</kbd> and <kbd>Shift</kbd>. 
 
@@ -128,7 +128,7 @@ N> When the `SelectionMode` as `Multiple`, you can select or deselect multiple r
 
 ## CheckBox column selection
 
-`SfDataGrid` allows you to select or deselect rows by interacting with check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) for more information.
+Data Grid allows you to select or deselect rows by interacting with check box in a column. All the rows in a datagrid can be selected by interacting with an intuitive check box in column header. Refer to [GridCheckBoxSelectorColumn](https://help.syncfusion.com/uwp/sfdatagrid/column-types#gridcheckboxselectorcolumn) for more information.
 
 ## Get Selected Rows and Cells
 

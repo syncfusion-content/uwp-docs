@@ -9,7 +9,7 @@ documentation: ug
 
 # ToolTip in UWP Data Grid
 
-ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of SfDataGrid.
+ToolTip provides the support to show the pop-up window that displays the information when the mouse hovers in cells of Data Grid.
 
 ## Record cell tooltip
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Filtering in UWP Data Grid
 
-SfDataGrid allows you to filter the data programmatically in below ways
+UWP Data Grid allows you to filter the data programmatically in below ways
 
 * Through View Predicate
 * Through Column Filter
@@ -93,7 +93,7 @@ private void OnApplyFilterPredicate(object obj)
 
 ### Clear Filtering
 
-SfDataGrid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
+Data Grid allows you to clear the filters by clearing the filter predicates. This is achieved by invoking the following methods.
 
 
 * [SfDataGrid.ClearFilters](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ClearFilters) - Clears filters for all the columns programmatically.
@@ -110,7 +110,7 @@ this.dataGrid.ClearFilter(this.dataGrid.Columns[0]);
 
 ## UI Filtering
 
-SfDataGrid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFiltering) property to `true`, where you can open filter UI by clicking the Filter icon in column header and filter the records.  
+Data Grid provides excel like filtering UI and also advanced filter UI to filter the data easily. UI filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowFiltering) property to `true`, where you can open filter UI by clicking the Filter icon in column header and filter the records.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -143,7 +143,7 @@ N>
 
 ### Built-in UI Views
 
-SfDataGrid filter UI comprises of two different UIs. 
+Data Grid filter UI comprises of two different UIs. 
 
 * **Checkbox Filter UI** - Provides excel like filter interface with list of check box’s.
 
@@ -167,7 +167,7 @@ By default, both Checkbox Filter and Advanced Filter are loaded while opening th
 
 ## Choose between built-in UI Views
 
-SfDataGrid lets you to customize the UI Views displayed for particular column or grid using [FilterMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridFilterControl.html#Syncfusion_UI_Xaml_Grid_GridFilterControl_FilterMode) property in [GridFilterControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridFilterControl.html).
+Data Grid lets you to customize the UI Views displayed for particular column or grid using [FilterMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridFilterControl.html#Syncfusion_UI_Xaml_Grid_GridFilterControl_FilterMode) property in [GridFilterControl](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridFilterControl.html).
  
 Below are the options,
 
@@ -291,13 +291,13 @@ When the <code>DateTime</code> type value is bound to the {{'[GridColumn](https:
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/Filtering_img5.png" alt="UWP DataGrid with Checkbox Filter View" />
+<img src="Filtering_images/Filtering_img5.png" alt="Checkbox Filter View" />
 </td>
 <td>
-<img src="Filtering_images/Filtering_img6.png" alt="UWP DataGrid Text filters" />
+<img src="Filtering_images/Filtering_img6.png" alt="Text filters" />
 </td>
 <td>
-<img src="Filtering_images/Filtering_img7.png" alt="UWP DataGrid with Advanced Filter View" />
+<img src="Filtering_images/Filtering_img7.png" alt="Advanced Filter View" />
 </td>
 </tr>
 <tr>
@@ -492,7 +492,7 @@ After filtering, both records having the same OrderDate display value will be di
 
 ## Events 
 
-SfDataGrid provides the following events for filtering.
+Data Grid provides the following events for filtering.
 
 ### FilterChanging event
 

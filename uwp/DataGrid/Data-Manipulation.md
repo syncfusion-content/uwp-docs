@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Manipulation in UWP Data Grid
 
-SfDataGrid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) property.
+UWP Data Grid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) property.
  
 {% tabs %}
 {% highlight xaml %}
@@ -261,9 +261,9 @@ Updated
 
 ## Built-in AddNewRow
 
-SfDataGrid provides built-in row (called AddNewRow) to add new records to underlying collection. You can enable the AddNewRow by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowPosition) property.
+Data Grid provides built-in row (called AddNewRow) to add new records to underlying collection. You can enable the AddNewRow by specifying the position where it should be displayed by setting [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowPosition) property.
 
-When you start editing in AddNewRow, the SfDataGrid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
+When you start editing in AddNewRow, the Data Grid control creates an instance for the underlying data object and adds it to underlying collection when editing completed.
 
 N> The underlying data object must be defined with default constructor. Otherwise, create instance of data object by handling `AddNewRowInitiating` event.
 
@@ -303,7 +303,7 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 
 ### Changing the AddNewRow default text in DataGrid
 
-You can change the default static string of AddNewRow in datagrid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
+You can change the default static string of AddNewRow in Data Grid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
 
 {% tabs %}
 {% highlight xaml %}
@@ -322,7 +322,7 @@ this.dataGrid.AddNewRowText = "Click here to add new row in datagrid";
 
 ### Customize the newly added row position
 
-SfDataGrid adds new data item from AddNewRow at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. You can customize the newly added data item position by setting [SfDataGrid.NewItemPlaceHolderPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_NewItemPlaceholderPosition).
+Data Grid adds new data item from AddNewRow at the end of collection. When data operations (sorting, grouping) performed, the new item added based on data operations. You can customize the newly added data item position by setting [SfDataGrid.NewItemPlaceHolderPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_NewItemPlaceholderPosition).
 {% tabs %}
 {% highlight xaml %}
 <Syncfusion:SfDataGrid x:Name="datagrid"                               
@@ -338,7 +338,7 @@ this.datagrid.NewItemPlaceholderPosition = NewItemPlaceholderPosition.AtBeginnin
 
 ### Initializing default values for AddNewRow
 
-SfDataGrid allows you to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AddNewRowInitiatingEventArgs.html#Syncfusion_UI_Xaml_Grid_AddNewRowInitiatingEventArgs_NewObject) property in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowInitiating) event.
+Data Grid allows you to set the default values for AddNewRow while initiating, through [AddNewRowInitiatingEventArgs.NewObject](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AddNewRowInitiatingEventArgs.html#Syncfusion_UI_Xaml_Grid_AddNewRowInitiatingEventArgs_NewObject) property in [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowInitiating) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -357,7 +357,7 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 
 ### Working with complex properties in AddNewRow
 
-SfDataGrid control does not initiate values for complex properties defined in the data object. Hence, you need to initiate the default values for the complex properties externally by using the [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowInitiating) event.
+Data Grid does not initiate values for complex properties defined in the data object. Hence, you need to initiate the default values for the complex properties externally by using the [SfDataGrid.AddNewRowInitiating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowInitiating) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -476,7 +476,7 @@ Similarly, you can validate the cells in AddNewRow by using the [CurrentCellVali
 
 ### Customizing AddNewRow text using default resource file
 
-SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](https://help.syncfusion.com/uwp/sfdatagrid/localization#editing-default-culture-resource) section.
+Data Grid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](https://help.syncfusion.com/uwp/sfdatagrid/localization#editing-default-culture-resource) section.
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.UWP.resw` file and then customize the value of AddNewRowText.
  
@@ -680,7 +680,7 @@ this.firstLevelNestedGrid.AddNewRowText = "Click here to add new row in child gr
 
 ## Deletion
 
-SfDataGrid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDeleting) property to `true`.
+Data Grid provides built-in support to delete the selected records in user interface (UI) by pressing <kbd>Delete</kbd> key. You can enable the deleting support by setting the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDeleting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -710,7 +710,7 @@ You can delete record directly in underlying collection also using Remove () or 
 
 #### RecordDeleting
  
-[RecordDeleting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RecordDeleting) event occurs when the record is being deleted from SfDataGrid. The [RecordDeletingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.RecordDeletingEventArgs.html) provides information to `RecordDeleting` event for deleting the record and it contains the following members.
+[RecordDeleting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RecordDeleting) event occurs when the record is being deleted from Data Grid. The [RecordDeletingEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.RecordDeletingEventArgs.html) provides information to `RecordDeleting` event for deleting the record and it contains the following members.
 
 `Cancel` - Gets or sets a value indicating whether the event should be canceled.
 

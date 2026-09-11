@@ -9,30 +9,30 @@ documentation: ug
 
 # Getting Started with UWP Data Grid
 
-The SfDataGrid control for Universal Windows Platform is used to display collection of data in rows and columns. It includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
+The UWP Data Grid control for Universal Windows Platform is used to display collection of data in rows and columns. It includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
  
-Following are the key features of SfDataGrid control,
+Following are the key features of Data Grid,
 
 * **Data binding** – Supports to bind different types of data sources.
 * **Selection** – Support for row and also cell selection.
 * **Editing** – Interactive support to edit with different column types.
 * **Columns** – Support for various column types including unbound columns
-* **Sorting** – Interactive support to sort the data in SfDataGrid.
-* **Grouping** – Interactive support to group the data in SfDataGrid.
+* **Sorting** – Interactive support to sort the data in Data Grid.
+* **Grouping** – Interactive support to group the data in Data Grid.
 * **Summaries** – Extensive support to show concise information about the individual data columns or groups of rows.
 * **Filtering** – Interactive support for filtering data as like in Excel.
 * **Validation** – Support to validate the data on errors.
 * **Data virtualization** – Support for different modes of data virtualization such as paging, incremental loading.
 * **Master-Detail View**– Support to display relational data using hierarchies. 
 * **Printing and Exporting** – Support to print and also export the data to Excel, PDF.
-* **Styling** – Extensive support for customizing styles of cells and rows in SfDataGrid.
+* **Styling** – Extensive support for customizing styles of cells and rows in Data Grid.
 * **Stacked Headers** - Extensive support to show multiple headers called stacked headers.
 * **Unbound rows** – Support to display unbound rows.
 * **Touch support** – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc. in touch.
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use SfDataGrid control in any application,
+The following list of assemblies needs to be added as reference to use Data Grid in any application,
 
 <table>
 <tr>
@@ -48,7 +48,7 @@ Description
 Syncfusion.Data.UWP
 </td>
 <td>
-Syncfusion.Data.UWP assembly contains fundamental and base classes for <code>[CollectionViewAdv](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html)</code> which is responsible for data processing operations handled in SfDataGrid.
+Syncfusion.Data.UWP assembly contains fundamental and base classes for <code>[CollectionViewAdv](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html)</code> which is responsible for data processing operations handled in Data Grid.
 </td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@ Syncfusion.Data.UWP assembly contains fundamental and base classes for <code>[Co
 Syncfusion.SfGrid.UWP
 </td>
 <td>
-Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present <code>Syncfusion.UI.Xaml.Grid</code> namespace.
+Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations of Data Grid. Data Grid control present <code>Syncfusion.UI.Xaml.Grid</code> namespace.
 </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations o
 Syncfusion.SfInput.UWP
 </td>
 <td>
-Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in SfDataGrid. 
+Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in Data Grid.
 </td>
 </tr>
 <tr>
@@ -77,7 +77,7 @@ Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
 </tr>
 </table>
 
-In order to use export to excel and export to PDF functionalities of SfDataGrid control, add the reference to following assemblies,
+In order to use export to excel and export to PDF functionalities of Data Grid, add the reference to following assemblies,
 
 <table>
 <tr>
@@ -93,7 +93,7 @@ Description
 Syncfusion.SfGridConverter.UWP
 </td>
 <td>
-Syncfusion.SfGridConverter.UWP contains static extension classes for exporting SfDataGrid to excel and PDF in <code>Syncfusion.UI.Xaml.Grid.Converter</code> namespace.
+Syncfusion.SfGridConverter.UWP contains static extension classes for exporting Data Grid to excel and PDF in <code>Syncfusion.UI.Xaml.Grid.Converter</code> namespace.
 </td>
 </tr>
 <tr>
@@ -116,9 +116,9 @@ Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
 
 You can refer [here](https://help.syncfusion.com/uwp/system-requirements) to know the assemblies installation location on your machine.     
 
-## Creating simple application with SfDataGrid
+## Creating simple application with Data Grid
 
-In this walk through, you will create UWP application that contains SfDataGrid control. 
+In this walk through, you will create UWP application that contains Data Grid control.
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
@@ -133,11 +133,11 @@ In this walk through, you will create UWP application that contains SfDataGrid c
 
 ### Creating the project
 
-Create new Universal Windows Platform project in Visual Studio to display SfDataGrid with data objects.
+Create new Universal Windows Platform project in Visual Studio to display Data Grid with data objects.
 
 ### Adding control via Designer
 
-SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+Data Grid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![Adding control via Designer](Getting-Started_images/Getting-Started_img1.png)
 
@@ -216,7 +216,7 @@ namespace GettingStarted
 
 ### Creating Data Model for sample application
 
-SfDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
+Data Grid is a data-bound control. So before create binding to the control, you must create data model for Application.
 
 1. Create data object class named **OrderInfo** and declare properties as shown below,
 

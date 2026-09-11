@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard Operations in UWP Data Grid  | Syncfusion®
+title: Clipboard Operations in UWP Data Grid | Syncfusion®
 description: Clipboard Operations in Data Grid enables copy, cut, and paste actions with configurable settings, events, and custom clipboard behavior.
 platform: uwp
 control: Data Grid
@@ -10,7 +10,7 @@ documentation: ug
 
 # Clipboard Operations in UWP Data Grid
 
-SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> and also can paste the content from [Clipboard](https://learn.microsoft.com/en-us/uwp/api/windows.applicationmodel.datatransfer.clipboard?view=winrt-22621&redirectedfrom=MSDN) to SfDataGrid by pressing <kbd>Ctrl</kbd>+<kbd>V</kbd>.
+UWP Data Grid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from Data Grid by pressing <kbd>Ctrl</kbd>+<kbd>C</kbd> and also can paste the content from [Clipboard](https://learn.microsoft.com/en-us/uwp/api/windows.applicationmodel.datatransfer.clipboard?view=winrt-22621&redirectedfrom=MSDN) to Data Grid by pressing <kbd>Ctrl</kbd>+<kbd>V</kbd>.
 
 N> Clipboard operations is not supported for the summary rows, add new row and unbound rows.
 
@@ -18,9 +18,9 @@ N> Clipboard operations is not supported for the summary rows, add new row and u
 
 Copy operation works based on [GridCopyOption](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridCopyOption) property.`GridCopyOption` provides the following options,
 
-[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_None) – Disables copy in SfDataGrid.
+[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_None) – Disables copy in Data Grid.
 
-[CopyData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_CopyData) – Enabled copy in SfDataGrid.
+[CopyData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_CopyData) – Enabled copy in Data Grid.
 
 [IncludeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_IncludeHeaders) – Column header also copied along with data.
 
@@ -52,9 +52,9 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
 Paste operation works based on [GridPasteOption](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridPasteOption) property. `GridPasteOption` provides the following options,
 
-[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_None) – Disable paste in SfDataGrid.
+[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_None) – Disable paste in Data Grid.
 
-[PasteData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_PasteData) – Enabled paste in SfDataGrid and when an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
+[PasteData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_PasteData) – Enabled paste in Data Grid and when an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
 
 [ExcludeFirstLine](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html#Syncfusion_UI_Xaml_Grid_GridPasteOption_ExcludeFirstLine) – This can be used when pasting data copied with `IncludeHeaders` copy option.
 
@@ -81,9 +81,9 @@ this.dataGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 
 Cut operation works based on [GridCopyOption](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_GridCopyOption) property. `GridCopyOption` provides the following options,
 
-[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_None) – Disables cut in SfDataGrid.
+[None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_None) – Disables cut in Data Grid.
 
-[CutData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_CutData) – Enabled cut in SfDataGrid.
+[CutData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_CutData) – Enabled cut in Data Grid.
 
 [IncludeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html#Syncfusion_UI_Xaml_Grid_GridCopyOption_IncludeHeaders) – Column header also copied along with data.
 
@@ -114,7 +114,7 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 
 ### GridCopyContent
 
-[GridCopyContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyContent) event occurs when copy/cut the cells in SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridCopyContent` event. You can cancel copy operation by handling this event.
+[GridCopyContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyContent) event occurs when copy/cut the cells in Data Grid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridCopyContent` event. You can cancel copy operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -128,7 +128,7 @@ private void DataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 
 ### GridPasteContent
 
-[GridPasteContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridPasteContent) event occurs when paste the clipboard value into SfDataGrid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
+[GridPasteContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridPasteContent) event occurs when paste the clipboard value into Data Grid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for `GridPasteContent` event. You can cancel paste operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -168,7 +168,7 @@ private void DataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-The below code example change the clipboard value as 100 instead of cell value 1003 in SfDataGrid.
+The below code example change the clipboard value as 100 instead of cell value 1003 in Data Grid.
 
 {% tabs %}
 {% highlight c# %}

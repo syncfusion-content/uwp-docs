@@ -9,9 +9,9 @@ documentation: ug
 
 # Columns in UWP Data Grid
 
-SfDataGrid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
+UWP Data Grid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
 
-Below are the built-in column types supported in SfDataGrid. Each column has its own properties to handle different types of data.
+Below are the built-in column types supported in Data Grid. Each column has its own properties to handle different types of data.
 
 <table>
 <tr>
@@ -114,7 +114,7 @@ Use to display the numeric values .
 
 ## Defining Columns
 
-You can let the SfDataGrid to create columns or you can manually define columns to be displayed. Below sections explains both ways,
+You can let Data Grid to create columns or you can manually define columns to be displayed. Below sections explains both ways,
  
 1. Automatically generating columns
 2. Manually define columns
@@ -186,7 +186,7 @@ GridTimeSpanColumn
 </tr>
 </table>
 
-N> The order of columns in the collection will determine the order of that they will appear in SfDataGrid.
+N> The order of columns in the collection will determine the order of that they will appear in Data Grid.
 
 #### AutoGenerateColumns with different modes
 
@@ -335,7 +335,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ##### Cancel column generation for particular property
 
-You can cancel the specific column adding to the DataGrid by handling `AutoGeneratingColumn` event.
+You can cancel the specific column adding to Data Grid by handling `AutoGeneratingColumn` event.
 
 In the below code, column generation for `OrderID` property is canceled by setting `Cancel` property to `true`.
  
@@ -354,7 +354,7 @@ void dataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnArgs e)
 
 ##### Changing column type
 
-You can change the type of column adding to SfDataGrid by setting the instance of column you want to add in ` AutoGeneratingColumn` event.
+You can change the type of column adding to Data Grid by setting the instance of column you want to add in ` AutoGeneratingColumn` event.
  
 In the below code, column type for `UnitPrice` property is changed to `GridTextColumn` by setting instance of GridTextColumn to `Column` property.
  
@@ -536,7 +536,7 @@ The OrderID and CustomerID column rearranged based on specified order.
 
 ### Manually defining columns
 
-SfDataGrid control allows you to define the columns manually by adding desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) collection.
+Data Grid control allows you to define the columns manually by adding desired column to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) collection.
  
 {% tabs %}
 {% highlight xaml %}
@@ -585,7 +585,7 @@ this.dataGrid.Columns.Add(new GridTextColumn() { HeaderText = "Order ID", Mappin
 
 ### Accessing column
 
-You can access the column through its column index or `GridColumn.MappingName` from the SfDataGrid.Columns collection.
+You can access the column through its column index or `GridColumn.MappingName` from the `SfDataGrid.Columns` collection.
 
 {% tabs %}
 {% highlight c# %}

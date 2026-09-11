@@ -9,13 +9,13 @@ documentation: ug
 
 # FilterRow in UWP Data Grid
 
-SfDataGrid allows you to filter the data by typing the value in FilterRow which is placed either in top or bottom of the DataGrid. You can enable the FilterRow by specifying the position in [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FilterRowPosition) property.
+UWP Data Grid allows you to filter the data by typing the value in FilterRow which is placed either in top or bottom of the Data Grid. You can enable the FilterRow by specifying the position in [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FilterRowPosition) property.
 
-The FilterRowPosition property contains the below positions to load the FilterRow in SfDataGrid.
+The FilterRowPosition property contains the below positions to load the FilterRow in Data Grid.
 
-1. FixedTop – Placed in top of the SfDataGrid in frozen state
-2. Top – Placed in top of the SfDataGrid.
-3. Bottom – Placed in bottom of the SfDataGrid.
+1. FixedTop – Placed in top of the Data Grid in frozen state
+2. Top – Placed in top of the Data Grid.
+3. Bottom – Placed in bottom of the Data Grid.
 
 {% tabs %}
 {% highlight xaml %}

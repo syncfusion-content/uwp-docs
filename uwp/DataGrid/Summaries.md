@@ -9,9 +9,9 @@ documentation: ug
 
 # Summaries in UWP Data Grid
 
-SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
+UWP Data Grid provides support to display the concise information about the data objects using summaries. Data Grid provides below three different types of summary rows.
 
-* **Table Summary** – Used to display summary information of table either at top or bottom of SfDataGrid.
+* **Table Summary** – Used to display summary information of table either at top or bottom of Data Grid.
  
 * **Group Summary** – used to display summary information of data objects in each group.
 
@@ -26,9 +26,9 @@ Summary rows are represented by using [GridSummaryRow](https://help.syncfusion.c
 
 ## Table Summary
 
-The table summary calculates the summary value over all the records. SfDataGrid allows you to add any number of table summary rows in top and bottom of SfDataGrid.
+The table summary calculates the summary value over all the records. Data Grid allows you to add any number of table summary rows in top and bottom of Data Grid.
 
-You can add table summary row in SfDataGrid by adding [GridTableSummaryRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_TableSummaryRows) collection.
+You can add table summary row in Data Grid by adding [GridTableSummaryRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridTableSummaryRow.html) to [SfDataGrid.TableSummaryRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_TableSummaryRows) collection.
 
 ### Defining summary for column
 
@@ -36,7 +36,7 @@ You can display summary information in the column by setting [GridSummaryRow.Sho
 
 1. [GridSummaryColumn.MappingName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_MappingName) – MappingName of the column (Property name of data object) that you want calculate summary.
 
-2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_SummaryType) – SfDataGrid provides different built-in summary calculation functions for various types.
+2. [GridSummaryColumn.SummaryType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_SummaryType) – Data Grid provides different built-in summary calculation functions for various types.
 
 3. [GridSummaryColumn.Format](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridSummaryColumn.html#Syncfusion_UI_Xaml_Grid_GridSummaryColumn_Format) – Used to define format string for summary based on support function name’s in specified SummaryType.
 
