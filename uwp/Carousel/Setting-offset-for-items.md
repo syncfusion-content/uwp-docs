@@ -9,11 +9,11 @@ documentation: ug
 
 # Setting offset in UWP Carousel (SfCarousel)
 
-`SfCarousalItem` can be displayed in different offset in `SfCarousel` and also can define the offset between selected item and other items in `SfCarousel`.
+`SfCarousalItem` can be displayed in different offset in `UWP Carousel` and also can define the offset between selected item and other items in `UWP Carousel`.
 
 ## Adjusting the distance between unselected items
 
-`Offset` property is used to customize the distance between carousel items that are not selected.
+`Offset` property is used to customize the distance between UWP Carousel items that are not selected.
 
 {% tabs %}
 
@@ -97,7 +97,7 @@ carousel.Offset = 100.0
 
 ## Scaling the unselected items
 
-`ScaleOffset` is used to scale the carousel items that are not selected.
+`ScaleOffset` is used to scale the UWP Carousel items that are not selected.
 
 {% tabs %}
 
@@ -181,7 +181,7 @@ carousel.ScaleOffset = 0.5
 
 ## Displacing the selected and unselected items
 
-`SelectedItemOffset` is set to specify the distance of selected item from other carousel items.
+`SelectedItemOffset` is set to specify the distance of selected item from other UWP Carousel items.
 
 {% tabs %}
 

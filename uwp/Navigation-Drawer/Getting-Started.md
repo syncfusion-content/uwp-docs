@@ -9,19 +9,19 @@ documentation: ug
 
 # Getting Started with UWP Navigation Drawer (SfNavigationDrawer)
 
-The following section helps you to build your application with SfNavigationDrawer.
+The following section helps you to build your application with UWP Navigation Drawer.
 
 ## Steps
 
 * Create new Universal Windows Platform project using Visual Studio.For more [details](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-xaml-universal))
 * Add the SfNavigationDrawer assembly to your application.
-* Initialize NavigationDrawer control.
-* Adding content view to the NavigationDrawer control.
-* Adding drawer view to the NavigationDrawer control.
+* Initialize UWP Navigation Drawer control.
+* Adding content view to the UWP Navigation Drawer control.
+* Adding drawer view to the UWP Navigation Drawer control.
 
 These steps were explained below for XAML.
 
-## Create a simple NavigationDrawer from XAML
+## Create a simple UWP Navigation Drawer from XAML
 
 ### Adding assembly reference
 
@@ -40,9 +40,9 @@ Add the following namespace in your XAML window.
 {% endhighlight %}
 {% endtabs %}
 
-## Add SfNavigationDrawer from Toolbox
+## Add UWP Navigation Drawer from Toolbox
 
-Drag and drop the SfNavigationDrawer control from the Toolbox to your application.
+Drag and drop the UWP Navigation Drawer control from the Toolbox to your application.
 
 ![Getting-Started_img2](Getting-Started_images/Getting-Started_img2.png)
 
@@ -53,9 +53,9 @@ Now the SyncfusionControls for UWP XAML reference is added to the application re
 ![Getting-Started_img4](Getting-Started_images/Getting-Started_img4.png)
 
 
-## Initialize the NavigationDrawer
+## Initialize the UWP Navigation Drawer
 
-You need to initialize the NavigationDrawer represented by the following class Syncfusion.UI.Xaml.NavigationDrawer.
+You need to initialize the UWP Navigation Drawer represented by the following class Syncfusion.UI.Xaml.NavigationDrawer.
 
 
 {% highlight xml %}
@@ -66,7 +66,7 @@ You need to initialize the NavigationDrawer represented by the following class S
 
 {% endhighlight %}
 
-## Adding ContentView to the NavigationDrawer
+## Adding ContentView to the UWP Navigation Drawer
 
 {% highlight xml %}
 
@@ -93,7 +93,7 @@ You need to initialize the NavigationDrawer represented by the following class S
 
 {% endhighlight %}
 
-## Adding drawer view to the NavigationDrawer
+## Adding drawer view to the UWP Navigation Drawer
 
 The DrawerView is a panel that is the hidden content, brought to the view by manipulations like panning or swiping through the edges. The DrawerView has three sections namely:
 

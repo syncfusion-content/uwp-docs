@@ -9,11 +9,11 @@ documentation: ug
 
 # Sizing Collapsed Content in UWP Navigation Pane (SfGroupBar)
 
-Content is displayed in Popup when `SfGroupBar` is in Collapsed mode. Content popup is opened when the popup expander button is clicked. The content popup can be customized in several ways using the property `PopupSizeMode`.
+Content is displayed in Popup when `UWP Navigation Pane` is in Collapsed mode. Content popup is opened when the popup expander button is clicked. The content popup can be customized in several ways using the property `PopupSizeMode`.
 
 ## Displaying Popup in Full Size
 
-PopUp can be displayed in full height of the `SfGroupBar` by setting `PopupSizeMode` as FullSize.
+PopUp can be displayed in full height of the `UWP Navigation Pane` by setting `PopupSizeMode` as FullSize.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ PopUp can be displayed in full height of the `SfGroupBar` by setting `PopupSizeM
 
 ## Displaying PopUp in Default Size
 
-PopUp can be displayed in equal height of the popup expander button in `SfGroupBar` by setting `PopupSizeMode` as DefaultSize.
+PopUp can be displayed in equal height of the popup expander button in `UWP Navigation Pane` by setting `PopupSizeMode` as DefaultSize.
 
 {% tabs %}
 

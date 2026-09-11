@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® UWP Carousel Control
 
-`SfCarousel` control provides a rich animated layout to arrange items in touch device.
+`UWP Carousel` control provides a rich animated layout to arrange items in touch device.
 
 ## Features
 

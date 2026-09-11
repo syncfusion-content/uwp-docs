@@ -16,7 +16,7 @@ The below two events are implemented in Transition.
 
 ## Opened
 
-Opened event will be raised when the DrawerContentView is opened in NavigationDrawer.
+Opened event will be raised when the DrawerContentView is opened in UWP Navigation Drawer.
 
 
   {% highlight c# %}
@@ -27,7 +27,7 @@ Opened event will be raised when the DrawerContentView is opened in NavigationDr
 
 ## Closed
 
-Closed event will be raised when the DrawerContentView is closed in NavigationDrawer.
+Closed event will be raised when the DrawerContentView is closed in UWP Navigation Drawer.
 
 
 
@@ -39,7 +39,7 @@ Closed event will be raised when the DrawerContentView is closed in NavigationDr
 
 ## Toggle Drawer
 
-Represents the opening and closing of the navigation drawer
+Represents the opening and closing of the UWP Navigation Drawer
 
 
 {% highlight c# %}
