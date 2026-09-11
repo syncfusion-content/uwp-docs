@@ -17,7 +17,7 @@ Dependent assembly: Syncfusion.SfShared.UWP
 
 
 
-The following code sample shows how to create the SfRadialSlider from code-behind and XAML, 
+The following code sample shows how to create the UWP Radial or Circular Slider from code-behind and XAML, 
 {% tabs %}
  {% highlight xaml %}
 
@@ -48,4 +48,4 @@ Dim sfRadialSlider As New SfRadialSlider() With {
 
 {% endtabs %}
 
-N> You can refer to our [UWP Radial Slider](https://www.syncfusion.com/uwp-ui-controls/radial-slider) page to know about its other groundbreaking feature representations. You can also explore our [UWP Radial Slider example](https://apps.microsoft.com/detail/9nblggh5wngv?hl=en-US&gl=IN) that shows you how to render and configure the Radial Slider in UWP.
+N> You can refer to our [UWP Radial Slider](https://www.syncfusion.com/uwp-ui-controls/radial-slider) page to know about its other groundbreaking feature representations. You can also explore our [UWP Radial Slider example](https://apps.microsoft.com/detail/9nblggh5wngv?hl=en-US&gl=IN) that shows you how to render and configure the UWP Radial or Circular Slider in UWP.

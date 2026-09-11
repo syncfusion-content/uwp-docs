@@ -9,7 +9,7 @@ documentation: ug
 
 # Value in UWP Radial Slider (SfRadialSlider)
 
-Gets or sets the value of the SfRadialSlider.
+Gets or sets the value of the UWP Radial or Circular Slider.
 
 {% tabs %}
 

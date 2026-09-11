@@ -10,7 +10,7 @@ documentation: ug
 
 # Small Change in UWP Radial Slider (SfRadialSlider)
 
-The SmallChange property can be used to control the smallest possible range of value to be selected in SfRadialSlider.  For example, if SmallChange is set to 5, then it is only possible to select values that are multiples of 5. 
+The SmallChange property can be used to control the smallest possible range of value to be selected in UWP Radial or Circular Slider.  For example, if SmallChange is set to 5, then it is only possible to select values that are multiples of 5. 
 
 {% tabs %}
 
