@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # Getting Started with UWP MultiColumn Dropdown
-SfMultiColumnDropDownControl displays multiple columns in dropdown by embedding SfDataGrid control for rich look up selection.
+The MultiColumn Dropdown displays multiple columns in dropdown by embedding SfDataGrid control for rich look up selection.
 
 Features,
 
@@ -24,16 +24,16 @@ You can [refer here](https://help.syncfusion.com/uwp/datagrid/getting-started) t
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use `SfMultiColumnDropDownControl` control in any application,
+The following list of assemblies needs to be added as reference to use `MultiColumn Dropdown` control in any application,
 
     * Syncfusion.Data.UWP
     * Syncfusion.SfGrid.UWP
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP 
 
-## Creating simple application with SfMultiColumnDropDownControl
+## Creating simple application with MultiColumn Dropdown
 
-In this walk through, you will create UWP application that contains `SfMultiColumnDropDownControl`. 
+In this walk through, you will create UWP application that contains `MultiColumn Dropdown`. 
 
 1. [Creating project](#Creating-the-project)
 2. [Adding control manually in XAML](#Adding-control-manually-in-xaml)
@@ -46,7 +46,7 @@ In this walk through, you will create UWP application that contains `SfMultiColu
 
 ### Creating the project
 
-Create new UWP Project in Visual Studio to display SfMultiColumnDropDownControl with data objects.
+Create new UWP Project in Visual Studio to display MultiColumn Dropdown with data objects.
 
 
 ### Adding control manually in XAML
@@ -58,8 +58,8 @@ In order to add control manually in XAML, do the below steps,
     * Syncfusion.SfGrid.UWP
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP 
-2. SfMultiColumnDropDownControl namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
-3. Declare `SfMultiColumnDropDownControl` in XAML page.
+2. MultiColumn Dropdown namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
+3. Declare `MultiColumn Dropdown` in XAML page.
 
 {% tabs %}
 {% highlight xaml %}
@@ -89,8 +89,8 @@ In order to add the control manually in C#, do the below steps,
     * Syncfusion.SfGrid.UWP
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP  
-2. Import SfMultiColumnDropDownControl namespace Syncfusion.UI.Xaml.Grid.
-3. Create `SfMultiColumnDropDownControl` instance and add it to the Page.
+2. Import MultiColumn Dropdown namespace Syncfusion.UI.Xaml.Grid.
+3. Create `MultiColumn Dropdown` instance and add it to the Page.
 
 {% tabs %}
 {% highlight c# %}
@@ -209,7 +209,7 @@ public class ViewModel
 
 ## Binding to Data
 
-You can populate the drop down list for SfMultiColumnDropDownControl by setting [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ItemsSource) property.
+You can populate the drop down list for MultiColumn Dropdown by setting [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ItemsSource) property.
 Bind the collection created in previous step to `ItemsSource` property by setting ViewModel as DataContext.
 
 {% tabs %}
@@ -252,7 +252,7 @@ sfMultiColumn.ItemsSource = viewModel.Orders;
 
 ## Defining Columns
 
-By default, the SfMultiColumnDropDownControl generates the columns automatically based on [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ItemsSource) property. You can prevent the automatic column generation by setting[AutoGenerateColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AutoGenerateColumns) property to `false`. When `AutoGenerateColumns` property is false, you have to define the columns to be displayed as below,
+By default, the MultiColumn Dropdown generates the columns automatically based on [ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_ItemsSource) property. You can prevent the automatic column generation by setting[AutoGenerateColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AutoGenerateColumns) property to `false`. When `AutoGenerateColumns` property is false, you have to define the columns to be displayed as below,
 
 {% tabs %}
 {% highlight xaml %}
@@ -282,5 +282,5 @@ sfMultiColumn.Columns.Add(new GridTextColumn() { MappingName = “Country” });
 
 ## Editing and filtering 
 
-SfMultiColumnDropDownControl provides support to auto append the text from `ItemsSource` when end-user edits in the TextBox by setting [AllowAutoComplete](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowAutoComplete) to `true`. 
+MultiColumn Dropdown provides support to auto append the text from `ItemsSource` when end-user edits in the TextBox by setting [AllowAutoComplete](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowAutoComplete) to `true`. 
 Also, it provides support to filter the items displayed in the drop-down based on text in the TextBox by setting [AllowIncrementalFiltering](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfMultiColumnDropDownControl.html#Syncfusion_UI_Xaml_Grid_SfMultiColumnDropDownControl_AllowIncrementalFiltering) to `true`. 
