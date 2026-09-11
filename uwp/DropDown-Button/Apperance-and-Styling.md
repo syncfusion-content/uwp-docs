@@ -26,7 +26,7 @@ AccentBrush property is used to decorate the hot spots of a control with a solid
 
 ## ContentTemplate
 
-ContentTemplate property is used to decorate the content of the SfDropDownButton.
+ContentTemplate property is used to decorate the content of the UWP DropDown Button.
 
 {% highlight xaml %}
 <input:SfDropDownButton Content="5/24/2016" x:Name="dropdownbutton">
@@ -52,7 +52,7 @@ ContentTemplate property is used to decorate the content of the SfDropDownButton
 
 ## DropdownContentTemplate
 
-DropDownContentTemplate is used to decorate the drop down content of SfDropDownButton.
+DropDownContentTemplate is used to decorate the drop down content of UWP DropDown Button.
 
 {% highlight xaml %}
 <input:SfDropDownButton DropDownContent="Drop down content">
