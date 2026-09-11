@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Types in UWP Excel-like Grid
 
-SfCellGrid allows the inclusion of some special controls in the cells. This attribute of a grid cell is referred to as its Cell Type.
+The Excel-like Grid allows the inclusion of some special controls in the cells. This attribute of a grid cell is referred to as its Cell Type.
 
 ## Setting cell type for a cell
 
@@ -26,7 +26,7 @@ cellGrid.Model[2, 2].CellValue = true;
 
 ## TextBox Cell Type
 
-TextBox cells are the default cell type of SfCellGrid. TextBox cells displays text which can be edited when clicked.
+TextBox cells are the default cell type of Excel-like Grid. TextBox cells displays text which can be edited when clicked.
 
 {% tabs %}
 {% highlight c# %}
@@ -66,7 +66,7 @@ cellGrid.Model.ColStyles[1].Background = new SolidColorBrush(Colors.LightPink);
 
 ## CheckBox Cell Type
 
-`CheckBox` cell type displays a check box in the mentioned cell of SfCellGrid. The check box has three states: **Checked, Unchecked and Indeterminate**. It is possible to decide whether the check box should behave as a two-state check box or a three-state check box 
+`CheckBox` cell type displays a check box in the mentioned cell of the Excel-like Grid. The check box has three states: **Checked, Unchecked and Indeterminate**. It is possible to decide whether the check box should behave as a two-state check box or a three-state check box 
 by using the `IsThreeState` property.
 
 {% tabs %}
@@ -81,7 +81,7 @@ cellGrid.Model[2, 2].CellValue = true;
 
 ## ComboBox Cell Type
 
-`ComboBox` cell type displays a combo box in the mentioned cell of SfCellGrid. A combo box is a component with a drop-down arrow that users click to display an associated list of choices.
+`ComboBox` cell type displays a combo box in the mentioned cell of Excel-like Grid. A combo box is a component with a drop-down arrow that users click to display an associated list of choices.
 This cell type allows you to choose the cell value from a drop-down list.
   
 {% tabs %}
@@ -95,7 +95,7 @@ cellGrid.Model[2, 2].ComboBoxEdit.ItemSource = new List<int> {1,2,3,4,5,6 };
 
 ## DateTime Cell Type
 
-This cell type can be used to display the DateTime in the mentioned cell of SfCellGrid. Users can customize this date time cell by using `DateTimeEdit` property of `GridStyleInfo` class.
+This cell type can be used to display the DateTime in the mentioned cell of the Excel-like Grid. Users can customize this date time cell by using `DateTimeEdit` property of `GridStyleInfo` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -205,7 +205,7 @@ Gets or sets the percentage format type. </td></tr>
 
 ## UpDown Cell Type
 
-This cell type displays up and down repeat buttons to increment and decrement the values in the cell of SfCellGrid. User can display different formats like currency format, scientific format, etc.,
+This cell type displays up and down repeat buttons to increment and decrement the values in the cell of Excel-like Grid. User can display different formats like currency format, scientific format, etc.,
 
 {% tabs %}
 {% highlight c# %}
@@ -277,7 +277,7 @@ Gets or sets the alignment of the contents in the cell. </td></tr>
 
 ## Hyperlink Cell Type
 
-This cell type displays the hyperlink in the cell of SfCellGrid. This hyperlink cell type will be useful in navigating to browsers, other cells, mail. etc.,
+This cell type displays the hyperlink in the cell of Excel-like Grid. This hyperlink cell type will be useful in navigating to browsers, other cells, mail. etc.,
 The Url or the reference for the hyperlink cell will be given in the `Hyperlink` property.
 
 {% tabs %}
@@ -319,7 +319,7 @@ cellGrid.Model[4, 5].CellItemTemplate = this.Resources["ButtonTemplate"] as Data
 
 ## Formula Cell Type
 
-This cell type is used to enter the formula in the cell of SfCellGrid. The formulas in the `CellValue` property must be preceded with "=" sign.
+This cell type is used to enter the formula in the cell of Excel-like Grid. The formulas in the `CellValue` property must be preceded with "=" sign.
 
 {% tabs %}
 {% highlight c# %}
@@ -330,4 +330,4 @@ cellGrid.Model[4, 4].CellValue = "=Sum(A1:A2)";
 {% endhighlight %}
 {% endtabs %}
 
-For more information regarding supported formulas in SfCellGrid, please refer [here](https://help.syncfusion.com/uwp/sfcellgrid/formulas#supported-functions).
+For more information regarding supported formulas in Excel-like Grid, please refer [here](https://help.syncfusion.com/uwp/sfcellgrid/formulas#supported-functions).

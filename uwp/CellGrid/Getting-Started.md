@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with UWP Excel-like Grid
 
-This section helps you to get started with SfCellGrid.
+This section helps you to get started with the Excel-like Grid.
 
 ## Assemblies Deployment
 
-Below table describes, list of assemblies required to be added in project when the SfCellGrid control is used in your application.
+Below table describes, list of assemblies required to be added in project when the Excel-like Grid control is used in your application.
 
 <table>
 <tr>
@@ -40,7 +40,7 @@ Contains the classes which holds the controls like SfDropDownButton, SfTextBoxEx
 
 ### Optional Assemblies
 
-Below Assembly can be added to enable the importing support in SfCellGrid. 
+Below Assembly can be added to enable the importing support in Excel-like Grid. 
 
 <table>
 <tr>
@@ -54,21 +54,20 @@ Contains the base classes which is responsible for read and write in Excel files
 </table>
 
 
-## Create Simple Application with SfCellGrid
-
-SfCellGrid control can be added into the application either via designer or via coding.
+## Create Simple Application with Excel-like Grid
+Excel-like Grid control can be added into the application either via designer or via coding.
 
 ### Adding control via designer
 
 1. Create a new UWP application in Visual Studio.
-2. Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion<sup>®</sup> Controls” tab, and find the SfCellGrid in toolbox items.
-3. Drag **SfCellGrid** and drop in to the designer area from the toolbox.
+2. Open the Visual Studio **Tool** **box**. Navigate to “Syncfusion<sup>®</sup> Controls” tab, and find the Excel-like Grid in toolbox items.
+3. Drag **Excel-like Grid** and drop in to the designer area from the toolbox.
 
-![SfCellGrid_UWP_img1](Getting-Started_images/SfCellGrid_UWP_img1.jpeg)
+![UWP_img1](Getting-Started_images/SfCellGrid_UWP_img1.jpeg)
 
 ### Adding control via coding
 
-SfCellGrid is available in the following namespace “__Syncfusion__.__UI__.__Xaml__.__CellGrid__” and it can be created programmatically either by using __XAML__ or __C#__ code.
+The Excel-like Grid is available in the following namespace “__Syncfusion__.__UI__.__Xaml__.__CellGrid__” and it can be created programmatically either by using __XAML__ or __C#__ code.
 
 #### Through XAML
 
@@ -118,7 +117,7 @@ this.Grid.Children.Add(cellGrid);
 
 ## Generating Rows and Columns
 
-To generate rows and columns in SfCellGrid, user need to specify the **RowCount** and **ColumnCount** either by using XAML or C# code.
+To generate rows and columns in Excel-like Grid, user need to specify the **RowCount** and **ColumnCount** either by using XAML or C# code.
 
 {% tabs %}
 
@@ -164,11 +163,11 @@ cellGrid.ColumnCount = 100;
 
 ## Populating the Data
 
-To populate the data in SfCellGrid, **RowCount** and **ColumnCount** are mandatory. Once **RowCount** and **ColumnCount** are specified in SfCellGrid, data can be populated by using one of the following methods.
+To populate the data in Excel-like Grid, **RowCount** and **ColumnCount** are mandatory. Once **RowCount** and **ColumnCount** are specified in the control, data can be populated by using one of the following methods.
 
 ### Internal Storage
 
-User can populate the grid by storing the cell style in its internal storage. SfCellGrid holds all the data and style related information in **GridStyleInfo**. Individual cells can be accessed using the **GridModel** indexer, which takes row and column indices.
+User can populate the grid by storing the cell style in its internal storage. Excel-like Grid holds all the data and style related information in **GridStyleInfo**. Individual cells can be accessed using the **GridModel** indexer, which takes row and column indices.
 Based on the row and column indices, the data can be populated by looping the cells.
 
 {% tabs %}
@@ -195,7 +194,7 @@ for (int row = 0; row < 100; row++)
 
 ### Virtual Mode
 
-User can also populate the data by on-demand using `QueryCellInfo` event. In this event, SfCellGrid does not store cell style in its internal storage, thus ensuring optimized performance.
+User can also populate the data by on-demand using `QueryCellInfo` event. In this event, Excel-like Grid does not store cell style in its internal storage, thus ensuring optimized performance.
 `QueryCellInfo` event will be triggered for each cell when it comes into view.
 
 {% tabs %}
@@ -221,4 +220,4 @@ private void Model_QueryCellInfo(object sender, Syncfusion.UI.Xaml.CellGrid.Styl
 
 You can get the following output while executing the application,
 
-![SfCellGrid_UWP_img2](Getting-Started_images/SfCellGrid_UWP_img2.jpeg)
+![UWP_img2](Getting-Started_images/SfCellGrid_UWP_img2.jpeg)

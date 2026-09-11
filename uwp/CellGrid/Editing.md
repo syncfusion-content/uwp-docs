@@ -9,11 +9,11 @@ documentation: ug
 
 # Editing in UWP Excel-like Grid
 
-This section explains about the properties, methods associated with editing in SfCellGrid.
+This section explains about the properties, methods associated with editing in Excel-like Grid.
 
 ## Editing
 
-The SfCellGrid control provides editing support for cells. For changing the edit behavior of cells, `EditTrigger` property is used. This property determines whether to edit the cells
+The Excel-like Grid control provides editing support for cells. For changing the edit behavior of cells, `EditTrigger` property is used. This property determines whether to edit the cells
 with single click/tap or double click/tap.
 
 {% tabs %}
@@ -28,7 +28,7 @@ cellGrid.EditTrigger = EditTrigger.OnDoubleTap;
 {% endhighlight %}
 {% endtabs %}
 
-By default, editing will be enabled in SfCellGrid. But if you want to disable the editing, then set the `AllowEditing` property to be false.
+By default, editing will be enabled in Excel-like Grid. But if you want to disable the editing, then set the `AllowEditing` property to be false.
 
 {% tabs %}
 {% highlight c# %}
@@ -78,7 +78,7 @@ cellGrid.CurrentCell.EndEdit(true);
 
 ## Read Only
 
-SfCellGrid allows the user to disable editing and formatting of the cells by using `ReadOnly` Property.
+The Excel-like Grid allows the user to disable editing and formatting of the cells by using `ReadOnly` Property.
 
 {% tabs %}
 {% highlight c# %}
@@ -222,7 +222,7 @@ private void CellGrid_CurrentCellValidated(object sender, CurrentCellValidatedEv
 
 ## Programmatic Validation
 
-SfCellGrid allows the user to limit the type of data or the values that can be entered in the cell or range using `CurrentCellValidating` event.
+The Excel-like Grid allows the user to limit the type of data or the values that can be entered in the cell or range using `CurrentCellValidating` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -367,5 +367,5 @@ Validates and ends the edit operation of the current cell. </td></tr>
 <tr>
 <td>
 <code>Validate</code></td><td>
-Validates the current cell in the SfCellGrid. </td></tr>
+Validates the current cell in the Excel-like Grid. </td></tr>
 </table>
