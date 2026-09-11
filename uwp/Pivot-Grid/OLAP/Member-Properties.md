@@ -9,7 +9,7 @@ documentation: ug
 
 # Member Properties in UWP Pivot Grid
 
-The SfPivotGrid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level.
+The Pivot Grid allows binding of members along with their properties. Member properties cover the basic information about each member in each tuple. This basic information includes the member name, parent level, number of children, and so on. Member properties are available for all members at a given level.
 
 To display the member properties along with the dimension member, the OLAP report requires member properties defined in the concerned dimension element. The grid layout should be set to “ExcelLikeLayoutWithMemberProperties” as specified in the following code snippet.
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # All-Level Type Member in UWP Pivot Grid
 
-This feature enables you to display the “All” level type member across the rows and columns in the SfPivotGrid. This member behaves as parent to other members in its hierarchy by controlling their visibility through an expander.
+This feature enables you to display the “All” level type member across the rows and columns in the Pivot Grid. This member behaves as parent to other members in its hierarchy by controlling their visibility through an expander.
 
 To display the “All” level type member, set the `ShowLevelTypeAll` property to true as shown in the following code snippet. By default, it is set as false.
 

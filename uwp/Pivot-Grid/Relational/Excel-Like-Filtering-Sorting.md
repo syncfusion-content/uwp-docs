@@ -9,7 +9,7 @@ documentation: ug
 
 # Excel-Like Filtering and Sorting in UWP Pivot Grid
 
-The SfPivotGrid control supports Excel-like filtering and sorting applied to a pivot item. You can enable or disable the Excel-like sorting and filtering support by setting the `AllowMultiFunctionalSortFilter` property in the SfPivotGrid.
+The Pivot Grid control supports Excel-like filtering and sorting applied to a pivot item. You can enable or disable the Excel-like sorting and filtering support by setting the `AllowMultiFunctionalSortFilter` property in the Pivot Grid.
 
 Refer to the following code snippet to enable Excel-like filtering and sorting.
 
@@ -55,11 +55,11 @@ It is used to sort the corresponding pivot item based on the grand total of the 
 
 **Clear filters**
 
-It is used to clear all the filter changes applied to the corresponding pivot item and bring back the SfPivotGrid to normal state.
+It is used to clear all the filter changes applied to the corresponding pivot item and bring back the Pivot Grid to normal state.
 
 **Label filters**
 
-It is used to filter the SfPivotGrid based on the labels of pivot item field and it can be achieved by using various options listed below:
+It is used to filter the Pivot Grid based on the labels of pivot item field and it can be achieved by using various options listed below:
 
 * Equals.
 * Does not equal.
@@ -82,11 +82,11 @@ _Label Filter pop-up for filtering "Canada" in Country_
 
 ![Filtered-PivotGrid-by-using-label-filter](Excel-Like-Filtering-Sorting_images/Filtered-PivotGrid-by-using-label-filter.png)
 
-_SfPivotGrid applied with Label Filter_
+_Pivot Grid applied with Label Filter_
 
 **Value filters**
 
-It is used to filter the SfPivotGrid based on the values of pivot item field and it can be achieved by using various options listed below:
+It is used to filter the Pivot Grid based on the values of pivot item field and it can be achieved by using various options listed below:
 
 * Equals.
 * Does not equal.
@@ -104,7 +104,7 @@ _Value Filter pop-up for filtering "Canada" using its Quantity value "409"_
 
 ![Filtered-PivotGrid-by-using-value-filter](Excel-Like-Filtering-Sorting_images/Filtered-PivotGrid-by-using-value-filter.png)
 
-_SfPivotGrid applied with Value Filter_
+_Pivot Grid applied with Value Filter_
 
 A demo sample is available in the following location.
 

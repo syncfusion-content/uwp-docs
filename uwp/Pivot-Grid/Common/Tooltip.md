@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip in UWP Pivot Grid
 
-The SfPivotGrid additionally displays the cell information within a tooltip when the mouse pointer is moved over header cells or value cells.
+The Pivot Grid additionally displays the cell information within a tooltip when the mouse pointer is moved over header cells or value cells.
 
 ## Header cell tooltip
 
-The SfPivotGrid provides information about header cells when the mouse pointer is moved over it. Tooltip over header cells can be enabled by setting the `ShowHeaderCellsToolTip` property of the SfPivotGrid to `true` as shown in the following code snippet.
+The Pivot Grid provides information about header cells when the mouse pointer is moved over it. Tooltip over header cells can be enabled by setting the `ShowHeaderCellsToolTip` property of the control to `true` as shown in the following code snippet.
 
 {% tabs %}
 
@@ -41,7 +41,7 @@ Me.PivotGrid1.ShowHeaderCellsToolTip = True
 
 ## Value cell tooltip
 
-The SfPivotGrid provides information about value cells when the mouse pointer is moved over it. Tooltip over value cells can be enabled by setting the `ShowValueCellToolTip` property of the SfPivotGrid to `true` as shown in the following code snippet.
+The Pivot Grid provides information about value cells when the mouse pointer is moved over it. Tooltip over value cells can be enabled by setting the `ShowValueCellToolTip` property of the Pivot Grid to `true` as shown in the following code snippet.
 
 {% tabs %}
 

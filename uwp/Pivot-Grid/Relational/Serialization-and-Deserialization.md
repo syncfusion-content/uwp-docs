@@ -9,15 +9,15 @@ documentation: ug
 
 # Serialization and Deserialization in UWP Pivot Grid
 
-This support allows you to serialize and deserialize the settings of SfPivotGrid control using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
+This support allows you to serialize and deserialize the settings of Pivot Grid control using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
 
 ## Serialization
 
-Serialization allows you to save the settings of SfPivotGrid by using the `Serialize` method of the SfPivotGrid. It exports the current SfPivotGrid control settings to an XML file and it can be done with the help of one of the following methods.
+Serialization allows you to save the settings of Pivot Grid by using the `Serialize` method of the control. It exports the current Pivot Grid control settings to an XML file and it can be done with the help of one of the following methods.
 
 ### Serialize using FileSavePicker
 
-It allows you to save the settings of SfPivotGrid control to the desired location in _*.xml_ format by using the `Serialize` method. Refer to the following code snippet.
+It allows you to save the settings of Pivot Grid control to the desired location in _*.xml_ format by using the `Serialize` method. Refer to the following code snippet.
 
 {% tabs %}
 
@@ -35,13 +35,13 @@ Me.pivotGrid.Serialize()
 
 {% endtabs %}
 
-Now, the SfPivotGrid control will be serialized in XML file as follows.
+Now, the Pivot Grid control will be serialized in XML file as follows.
 
 ![Serialized-PivotGrid](Serialization-and-Deserialization_images/Serialized-PivotGrid.png)
 
 ### Serialize using stream
 
-It allows you to save the SfPivotGrid control's settings with the help of `Serialize` method by passing the stream as parameter.
+It allows you to save the Pivot Grid control's settings with the help of `Serialize` method by passing the stream as parameter.
 
 {% tabs %}
 
@@ -67,7 +67,7 @@ Me.pivotGrid.Serialize(stream)
 
 ### Serialize using storage file
 
-It allows you to save the SfPivotGrid control's settings with the help of `Serialize` method by passing the storage file as parameter.
+It allows you to save the Pivot Grid control's settings with the help of `Serialize` method by passing the storage file as parameter.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ Me.pivotGrid.Serialize(storageFile)
 
 ### Serialize to XML string
 
-It allows you to save the settings of SfPivotGrid control into an XML string using the `SerializeToXml` method.
+It allows you to save the settings of Pivot Grid control into an XML string using the `SerializeToXml` method.
 
 {% tabs %}
 
@@ -113,11 +113,11 @@ Private serializedPivotGrid As String = Me.pivotGrid.SerializeToXml()
 
 ## Deserialization
 
-Deserialization allows you to load the settings of SfPivotGrid by using the `Deserialize` method of the SfPivotGrid. It reconstructs the SfPivotGrid control based on the settings stored in the XML file and it can be done with the help of one of the following methods.
+Deserialization allows you to load the settings of Pivot Grid by using the `Deserialize` method of the control. It reconstructs the Pivot Grid control based on the settings stored in the XML file and it can be done with the help of one of the following methods.
 
 ### Deserialize using FileSavePicker
 
-It allows you to reload the SfPivotGrid control with the settings available in the _*.xml_ file. This can be achieved by using the `Deserialize` method.
+It allows you to reload the Pivot Grid control with the settings available in the _*.xml_ file. This can be achieved by using the `Deserialize` method.
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ Me.pivotGrid.Deserialize()
 
 ### Deserialize using stream
 
-It allows you to reload the SfPivotGrid control with the settings available in the stream. This can be achieved with the help of `Deserialize` method by passing the stream as parameter.
+It allows you to reload the Pivot Grid control with the settings available in the stream. This can be achieved with the help of `Deserialize` method by passing the stream as parameter.
 
 {% tabs %}
 
@@ -163,7 +163,7 @@ Me.pivotGrid.Deserialize(stream)
 
 ### Deserialize using storage file
 
-It allows you to reload the SfPivotGrid control with the settings available in the storage file. This can be achieved with the help of `Deserialize` method by passing the storage file as parameter.
+It allows you to reload the Pivot Grid control with the settings available in the storage file. This can be achieved with the help of `Deserialize` method by passing the storage file as parameter.
 
 {% tabs %}
 
@@ -187,7 +187,7 @@ Me.pivotGrid.Deserialize(storageFile)
 
 ### Deserialize from XML string
 
-It allows you to reload the SfPivotGrid with the settings available in the XML string. This can be achieved with the help of `Deserialize` method by passing the XML string as parameter.
+It allows you to reload the Pivot Grid with the settings available in the XML string. This can be achieved with the help of `Deserialize` method by passing the XML string as parameter.
 
 {% tabs %}
 

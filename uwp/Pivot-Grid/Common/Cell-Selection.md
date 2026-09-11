@@ -9,7 +9,7 @@ documentation: ug
 
 # Cell Selection in UWP Pivot Grid
 
-The SfPivotGrid supports cell selection. You can select grid value cells like in Microsoft Excel. This can be achieved by setting the `AllowSelection` property of the SfPivotGrid to true.
+The Pivot Grid supports cell selection. You can select grid value cells like in Microsoft Excel. This can be achieved by setting the `AllowSelection` property of the Pivot Grid to true.
 
 On cell selection, the **SelectionChanged** event will be triggered and **PivotGridSelectionChangedEventArgs** will return an IEnumerable collection of column index, row index, and value index of the selected cell. The event argument will return the cell range and selection mode such as mouse-down, mouse-move, mouse-up, etc.
 

@@ -9,16 +9,16 @@ documentation: ug
 
 # Grid Layout in UWP Pivot Grid
 
-The position of summary cells in the SfPivotGrid can be customized with the help of `GridLayout` property. It can be positioned at the top or bottom of value cells.
+The position of summary cells in the Pivot Grid can be customized with the help of `GridLayout` property. It can be positioned at the top or bottom of value cells.
 
-The following are the two different types of layouts supported by the SfPivotGrid:
+The following are the two different types of layouts supported by the Pivot Grid:
 
 * Normal layout
 * Top summary layout
 
 **Normal layout**
 
-The normal layout is the default layout of SfPivotGrid, in which the summary cells are positioned at the bottom of value cells. Refer to the following code snippet to customize the grid layout.
+The normal layout is the default layout of Pivot Grid, in which the summary cells are positioned at the bottom of value cells. Refer to the following code snippet to customize the grid layout.
 
 {% tabs %}
 
@@ -48,7 +48,7 @@ Me.PivotGrid1.GridLayout = GridLayout.Normal
 
 **Top summary layout**
 
-In top summary layout, the summary cells are positioned at the beginning of value cells. The following code snippet illustrates how to set the top summary layout in the SfPivotGrid.
+In top summary layout, the summary cells are positioned at the beginning of value cells. The following code snippet illustrates how to set the top summary layout in the Pivot Grid.
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in UWP Pivot Grid
 
-Localization is the key feature for providing software solutions targeted at global users. SfPivotGrid allows users to localize the control to a specific locale and supports “resx” based localization.
+Localization is the key feature for providing software solutions targeted at global users. Pivot Grid allows users to localize the control to a specific locale and supports “resx” based localization.
 
 You should perform the following steps to localize the control.
 
@@ -75,7 +75,7 @@ End Class
 
 ## RTL
 
-The SfPivotGrid provides RTL support to display the content from right to left direction by setting the `FlowDirection` property to **RightToLeft**.
+The Pivot Grid provides RTL support to display the content from right to left direction by setting the `FlowDirection` property to **RightToLeft**.
 
 {% tabs %}
 
