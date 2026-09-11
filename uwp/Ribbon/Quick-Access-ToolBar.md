@@ -7,9 +7,9 @@ control: SfRibbon
 documentation: ug
 ---
 
-# Quick Access Toolbar in UWP SfRibbon
+# Quick Access Toolbar in UWP Ribbon
 
-The Quick Access Toolbar in the ribbon instance is used to group the most commonly used commands and access the commands easily without searching for them in the menu bar. The position of the QAT can also be moved above or below the ribbon dynamically.
+The Quick Access Toolbar in the UWP Ribbon instance is used to group the most commonly used commands and access the commands easily without searching for them in the menu bar. The position of the QAT can also be moved above or below the UWP Ribbon dynamically.
 
 ## Add Default QAT Items
 

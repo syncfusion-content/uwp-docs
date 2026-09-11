@@ -7,9 +7,9 @@ control: SfDockingManager
 documentation: ug
 ---
 
-# Docking Window in UWP SfDockingManager
+# Docking Window in UWP Docking Control
 
-Docking window is one of the states of `SfDockingManager`. Since Dock is the default value, initially all the children stay as Docking Window.
+Docking window is one of the states of `UWP Docking Control`. Since Dock is the default value, initially all the children stay as Docking Window.
 
 ![Docking-Window-img1](Docking-Window-images/Docking-Window-img1.jpeg)
 
@@ -24,7 +24,7 @@ The Five sides where the children can be docked are
 * Bottom
 * Tabbed
 
-To dock four children of `SfDockingManager` to each side, set the `SideInDockedMode` property with appropriate values.
+To dock four children of `UWP Docking Control` to each side, set the `SideInDockedMode` property with appropriate values.
 
 {% tabs %}
 
@@ -57,7 +57,7 @@ To dock four children of `SfDockingManager` to each side, set the `SideInDockedM
 
 A Docking window can be docked on any side of the Target Docking Window using an attached property named `TargetNameInDockedMode`.
 
-To set the child window as a TabbedWindow, the window should be aware of a Target window name. The following code helps to arrange children of `SfDockingManager` that target a single Docking window docked along Left, Top, Right and Tabbed.
+To set the child window as a TabbedWindow, the window should be aware of a Target window name. The following code helps to arrange children of `UWP Docking Control` that target a single Docking window docked along Left, Top, Right and Tabbed.
 
 {% tabs %}
 

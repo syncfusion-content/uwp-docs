@@ -7,11 +7,11 @@ control: SfDockingManager
 documentation: ug
 ---
 
-# Dealing with Windows in UWP SfDockingManager
+# Dealing with Windows in UWP Docking Control
 
 ## Activating a window
 
-A particular child window can be activated in `SfDockingManager` using its name or instance reference through the property `ActiveWindow` and `ActivateWindow` method that passes the element as argument to activate.
+A particular child window can be activated in `UWP Docking Control` using its name or instance reference through the property `ActiveWindow` and `ActivateWindow` method that passes the element as argument to activate.
 
 {% tabs %}
 
@@ -72,9 +72,9 @@ docking.ActivateWindow(SolutionExplorer);
 
 ## Adding Window Programmatically
 
-Any UI element can be added inside the `SfDockingManager` as its child windows. The windows are added as Dock windows, since the default value of the `DockState` is Dock. The UI element is added in the `SfDockingManager` using the Add method of the `DockItems` property of the `SfDockingManager`.
+The `UWP Docking Control` supports hosting any UI element as a child window. By default, child windows are added as docked windows because the `DockState` property is set to Dock. UI elements can be added using the `Add` method of the `DockItems` collection.
 
-For example, `ContentControl` is added as a window for `SfDockingManager`.
+For example, `ContentControl` is added as a window for `UWP Docking Control`.
 
 {% tabs %}
 
@@ -125,7 +125,7 @@ DockingManager1.DockItems.Add(content5);
 
 ## Hiding Window Programmatically
 
-To hide the window, set the `DockState` attached property of the `SfDockingManager` as `Hidden`.
+To hide the window, set the `DockState` attached property of the `UWP Docking Control` as `Hidden`.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ A Docking window can be customized using the property `DockWindowCaptionBackgrou
 
 ## Customizing Active Docking Window
 
-Active docking window can be customized using the property `DockWindowActiveForeground`, `DockWindowActiveBackground` with desired brush values.
+Active Docking window can be customized using the property `DockWindowActiveForeground`, `DockWindowActiveBackground` with desired brush values.
 
 {% tabs %}
 
@@ -217,7 +217,7 @@ ForeColor and BackColor of Inactive document window can be customized using the 
 
 ## Customizing Selected Document window
 
-Selected Document window can be customized using the property `DocumentTabItemSelectedBackground`, `DocumentTabItemSelectedForeground` with desired brush values. Font size of the selected document window can be customized through `DocumentTabItemSelectedFontSize` property of DockingManager.
+Selected Document window can be customized using the property `DocumentTabItemSelectedBackground`, `DocumentTabItemSelectedForeground` with desired brush values. Font size of the selected document window can be customized through `DocumentTabItemSelectedFontSize` property of UWP Docking Control.
 
 {% tabs %}
 
@@ -266,7 +266,7 @@ The float window can be customized by setting `FloatWindowBackground`, `FloatWin
 ![Customized float window in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img6.jpeg)
 
 
-## Handling state change of DockingManager child element
+## Handling state change of UWP Docking Control child element
 
 The `DockStateChanging` event will be raised whenever the child element is changing its State. The state change of a child element can now be restricted by setting `args.Cancel` to true. "args" represents the event argument of `DockStateChangingEventArgs` for the `DockStateChanging` event. The default value of `args.Cancel` is false.
 
@@ -310,7 +310,7 @@ args.Cancel = true;
 
 {% endtabs %}
 
-## Restricting DockingManager child element from being closed
+## Restricting UWP Docking Control child element from being closed
 
 The state of the child element will change to `Hidden` while closing it. It can be restricted by changing the value of `args.Cancel` to true. The following code describes how to handle the closing of a child using the `DockStateChanging` event.
 
@@ -392,9 +392,9 @@ The fill color of hint shadow/dock preview element can be customized using `Dock
 ![Customized docking hint shadow color in Docking Manager](Dealing-with-Windows-images/Dealing-with-Windows-img8.jpeg)
 
 
-## Sizing Docking Windows
+## Sizing UWP Docking Windows
 
-`SfDockingManager` allows to set the desired width and height for the docking windows. 
+`UWP Docking Control` allows to set the desired width and height for the docking windows. 
 
 The desired height and width can be set for the Dock windows through the AttachedProperty `DesiredWidthInDockedMode` and `DesiredHeightInDockedMode` with the desired values.
 
@@ -419,7 +419,7 @@ The desired height and width can be set for the Dock windows through the Attache
 
 ## Occupy Whole Window
 
-To arrange the dock windows to a whole available space in the `SfDockingManager`, set `DockFill` property of `SfDockingManager` as true.
+To arrange the dock windows to a whole available space in the `UWP Docking Control`, set `DockFill` property of `SfDockingManager` as true.
 
 {% tabs %}
 
@@ -440,7 +440,7 @@ To arrange the dock windows to a whole available space in the `SfDockingManager`
 
 ## Enable/Disable ContextMenus
 
-`SfDockingManager` provides ContextMenu's for docking, floating, auto hiding and document windows. 
+`UWP Docking Control` provides ContextMenu's for docking, floating, auto hiding and document windows. 
 
 ### Enable/Disable context menu for docking, floating, auto hiding windows
 

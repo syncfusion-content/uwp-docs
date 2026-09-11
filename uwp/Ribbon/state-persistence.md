@@ -7,16 +7,16 @@ control: SfRibbon
 documentation: ug
 ---
 
-# State Persistence in UWP SfRibbon
+# State Persistence in UWP Ribbon
 
 State Persistence is the combined process of Serialization and Deserialization. Serialization is the process of converting the state of an object to a format where it can be persisted as a file in the memory. The serialized format contains the object’s state information. Deserialization is the complement process of Serialization that converts the stored state information back into the object. A user can save and load the following:
 
 * RibbonState (Normal, Adorner, Hide)
-* Selected Ribbon Tab
+* Selected RibbonTab
 * QuickAccessToolbar items
-* QuickAccessToolBar State (Above or Below Ribbon)
+* QuickAccessToolBar State (Above or Below UWP Ribbon)
 
-The Ribbon State Persistence feature helps users to load the state of the Ribbon control that existed when the application was closed. The State Persistence feature gives a more consistent workflow for an application that is executed for a long time. The `Serialize()` and `DeSerialize()` public methods are provided for state persistence. They can be called whenever required. State persistence is not done internally.
+The State Persistence feature helps users to load the state of the UWP Ribbon control that existed when the application was closed. The State Persistence feature gives a more consistent workflow for an application that is executed for a long time. The `Serialize()` and `DeSerialize()` public methods are provided for state persistence. They can be called whenever required. State persistence is not done internally.
 
 The following code snippet shows how to achieve the serialization and deserialization.
 
