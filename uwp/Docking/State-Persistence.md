@@ -7,11 +7,11 @@ control: SfDockingManager
 documentation: ug
 ---
 
-# State Persistence in UWP SfDockingManager
+# State Persistence in UWP Docking Control
 
 State persistence is the combined process of `serialization` and `deserialization`.
 
-`SfDockingManager` provides built-in state persistence functionality to save and load the layout across sessions, preserving the dock states and sides of its child windows. It also provides the `ResetDockState()` method to reset the layout to its initial state.
+`UWP Docking Control` provides built-in state persistence functionality to save and load the layout across sessions, preserving the dock states and sides of its child windows. It also provides the `ResetDockState()` method to reset the layout to its initial state.
 
 ## Saving Current State
 
@@ -61,7 +61,7 @@ dockingManager.LoadDockState();
 
 ## Resetting Initial State
 
-To reset the `SfDockingManager` state, call the `ResetDockState()` method of the `SfDockingManager` instance. 
+The `UWP Docking Control` state can be reset using the `ResetDockState()` method.
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ dockingManager.ResetDockState();
 
 ## Serializing Dynamically Added Children
 
-By default, `SfDockingManager` cannot de-serialize its saved layout properly when its child collection is modified after the DockState is saved.
+By default, `UWP Docking Control` cannot de-serialize its saved layout properly when its child collection is modified after the DockState is saved.
 
-The `SfDockingManager` state persistence feature is implemented in such a way that the `SfDockingManager` matches the child collection of the saved layout with the current `SfDockingManager` layout internally and loads properly when the `SfDockingManager` children collection remains the same. Therefore, when any child collection changes dynamically, it results in an improper layout. To avoid this, ensure the children collection of `SfDockingManager` is the same at both save and load time.
+The `UWP Docking Control` state persistence feature matches the saved layout with the current child collection and restores the layout accordingly. State persistence works correctly when the child collection remains unchanged between save and load operations. If the collection is modified dynamically, the layout may not be restored as expected. To avoid this issue, ensure that the child collection remains the same during both save and load operations.
 

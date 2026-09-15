@@ -7,7 +7,7 @@ control: SfDockingManager
 documentation: ug
 ---
 
-# Tabbed Window in UWP SfDockingManager
+# Tabbed Window in UWP Docking Control
 
 A child window can be arranged as a Tabbed window by setting `TargetNameInDockedMode` and the side value as `Tabbed` using the property `SideInDockedMode`.
 
@@ -236,7 +236,7 @@ dockingManager.DockTabPlacement = Syncfusion.UI.Xaml.Controls.Layout.TabPlacemen
 
 ## TabbedWindow Customization
 
-`DockWindow` have an internal `DockTabControl` for Tabbed Windows in `SfDockingManager` and its `DockTabItem` Background and Foreground can be customized. The following table lists the details of the customization properties in DockTabControl.
+`DockWindow` have an internal `DockTabControl` for Tabbed Windows in `UWP Docking Control` and its `DockTabItem` Background and Foreground can be customized. The following table lists the details of the customization properties in DockTabControl.
 
 ### Customization Properties
 
