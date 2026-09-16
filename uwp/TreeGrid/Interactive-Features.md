@@ -11,7 +11,7 @@ documentation: ug
 
 ## Context menu
 
-SfTreeGrid provides an entirely customizable menu to expose the functionalities on user interface. You can create context menus for different rows in an efficient manner.
+UWP TreeGrid provides an entirely customizable menu to expose the functionalities on user interface. You can create context menus for different rows in an efficient manner.
 
 The following code example shows the context menu with command bindings.
 
@@ -121,7 +121,7 @@ public class EmployeeInfoViewModel : INotifyPropertyChanged
 
 ### ContextMenu based on rows
 
-You can set different context menus for SfTreeGrid based on rows.
+You can set different context menus for TreeGrid based on rows.
 
 #### ContextMenu for nodes
 
@@ -150,7 +150,7 @@ this.treeGrid.RecordContextMenu.Items.Add(new MenuItem() { Header = "Paste" });
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for nodes in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img1.png)
+![ContextMenu for nodes](ContextMenu_images/ContextMenu_img1.png)
 
 When binding the menu item using CommandBinding, you can get the command parameter as [TreeGridNodeContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridNodeContextMenuInfo.html), which contains the node of the corresponding row.
 
@@ -207,7 +207,7 @@ this.treeGrid.HeaderContextMenu.Items.Add(new MenuItem() { Header = "ClearFilter
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for header in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img2.png)
+![ContextMenu for header](ContextMenu_images/ContextMenu_img2.png)
 
 When binding the menu item using CommandBinding, you can get the parameter as [TreeGridColumnContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumnContextMenuInfo.html), which contains a particular GridColumn.
 
@@ -289,7 +289,7 @@ When binding the menu item using CommandBinding, you can get the parameter as [T
 
 ### Events
 
-The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html): Occurs when opening the context menu in SfTreeGrid. [TreeGridContextMenuEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs.html) has the following members, which provides information about the `TreeGridContextMenuOpening ` event:
+The [TreeGridContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html): Occurs when opening the context menu in TreeGrid. [TreeGridContextMenuEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs.html) has the following members, which provides information about the `TreeGridContextMenuOpening ` event:
   
 [ContextMenu](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridContextMenuEventArgs_ContextMenu) – Gets the corresponding context menu. 
 [ContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridContextMenuEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridContextMenuEventArgs_ContextMenuInfo) – Returns the context menu info based on the row that opens the context menu.
@@ -342,7 +342,7 @@ void dataGrid_ TreeGridContextMenuOpening (object sender, TreeGridContextMenuEve
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for opening the menu items in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img3.png)
+![ContextMenu for opening the menu items](ContextMenu_images/ContextMenu_img3.png)
 
 ####  Changing background to ContextMenu
 
@@ -365,4 +365,4 @@ You can change the appearance of the context menu by customizing the style with 
 {% endhighlight %}
 {% endtabs %}
 
-![ContextMenu for appearance in sfTreeGrid uwp](ContextMenu_images/ContextMenu_img4.png)
+![ContextMenu for appearance](ContextMenu_images/ContextMenu_img4.png)

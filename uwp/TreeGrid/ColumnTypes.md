@@ -10,7 +10,7 @@ documentation: ug
 
 # Column Types in UWP TreeGrid
 
-SfTreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data. 
+UWP TreeGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
 You can also add or override existing columns and renderers as you need.
 
 <table>
@@ -106,7 +106,7 @@ Use to display the custom template-specified content.
 
 ## TreeGridColumn
 
-TreeGridColumn is an abstract class provides base functionalities for all the column types in SfTreeGrid. 
+TreeGridColumn is an abstract class provides base functionalities for all the column types in TreeGrid.
 
 ### Mapping column to particular property
 
@@ -1213,7 +1213,7 @@ this.treeGrid.Columns.Add(new TreeGridTemplateColumn()
 
 You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard interaction by setting `[FocusManagerHelper.WantsKeyInput](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.FocusManagerHelper.html#Syncfusion_UI_Xaml_Grid_FocusManagerHelper_WantsKeyInputProperty)` attached property to `TreeGridColumn`. You can use this when loading edit element in CellTemplate. 
 
-In this case SfTreeGrid handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`. 
+In this case TreeGrid handles the below key operations and other keys are handled by UIElement loaded inside `CellTemplate`. 
 
 
 
@@ -1447,7 +1447,7 @@ treeGrid.Columns.Add(new TreeGridComboBoxColumn()
 {% endhighlight %}
 {% endtabs %}
 
-SfTreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event provides the information about the changed cell value. 
+TreeGrid triggers, `CurrentCellDropDownSelectionChanged` event, when the SelectedValue is changed. [CurrentCellDropDownSelectionChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellDropDownSelectionChangedEventArgs.html) of [CurrentCellDropDownSelectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event provides the information about the changed cell value. 
 
 `SelectedIndex` property returns the index of selected item.
 
@@ -1654,11 +1654,11 @@ You can change the foreground color of `TreeGridHyperlinkColumn` by writing the 
 
 ## Custom column support
 
-SfTreeGrid allows you to create your own column by overriding predefined column type or creating a new custom column.
+TreeGrid allows you to create your own column by overriding predefined column type or creating a new custom column.
 
 ### Creating column from existing column
 
-You can create your own column by overriding the predefined column types in SfTreeGrid.
+You can create your own column by overriding the predefined column types in TreeGrid.
 
 For example, the `TreeGridDateTimeColumn` loads the `DateTime` value by default. If you want to display [DateTimeOffset](https://msdn.microsoft.com/en-us/library/system.datetimeoffset.aspx) value, you can create a new column by overriding the `TreeGridDateTimeColumn` class.
 

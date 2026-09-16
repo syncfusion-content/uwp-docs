@@ -9,7 +9,7 @@ documentation: ug
 
 # Rows in UWP TreeGrid
 
-This section explains about various row types in treegrid and its customizations.
+This section explains about various row types in TreeGrid and its customizations.
 
 RowHeader is a special column used to indicate the status of row (current row, editing status, errors in row, etc.) which is placed as first cell of each row. You can show or hide the row header by setting [SfTreeGrid.ShowRowHeader](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_ShowRowHeader) property.
 
@@ -107,13 +107,13 @@ You can display the row index value in row header by customizing the `Tr
 {% endhighlight %}
 {% endtabs %}
 
-![Row header with row index displayed in UWP treegrid](Rows_images/Rows_img5.jpeg)
+![Row header with row index displayed](Rows_images/Rows_img5.jpeg)
 
-## Rows in UWP TreeGrid (SfTreeGrid)
+## Rows in UWP TreeGrid (TreeGrid)
 
-Header row is present in top of the treegrid which has column headers in it. Column header describes the caption to identify the column content.
+Header row is present in top of TreeGrid which has column headers in it. Column header describes the caption to identify the column content.
 
-![HeaderRow of UWP treegrid](Rows_images/Rows_img6.jpeg)
+![HeaderRow](Rows_images/Rows_img6.jpeg)
 
 ## Hiding header row
 
@@ -244,7 +244,7 @@ By default, the `sort icon` appears at the right of the header text. You ca
 {% endhighlight %}
 {% endtabs %}
 
-![Sort icon position changed in UWP treegrid](Rows_images/Rows_img7.jpeg)
+![Sort icon position changed](Rows_images/Rows_img7.jpeg)
 
 ## Customize style of header row
 
@@ -270,7 +270,7 @@ You can change the header cell background and foreground for specific column or
 {% endhighlight %}
 {% endtabs %}
 
-![Style of HeaderRow in UWP treegrid customized](Rows_images/Rows_img8.jpeg)
+![Style of HeaderRow customized](Rows_images/Rows_img8.jpeg)
 
 You can change the style of the particular column header by using the [HeaderStyle](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_HeaderStyle) property in column,
 
@@ -280,5 +280,5 @@ You can change the style of the particular column header by using the [HeaderSty
 {% endhighlight %}
 {% endtabs %}
 
-![Style of a column header in UWP treegrid customized](Rows_images/Rows_img9.jpeg)
+![Style of a column header customized](Rows_images/Rows_img9.jpeg)
 

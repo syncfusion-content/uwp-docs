@@ -9,9 +9,9 @@ documentation: ug
 
 # Columns in UWP TreeGrid
 
-SfTreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
+UWP TreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
 
-Below are the built-in column types supported in SfTreeGrid. Each column has its own properties to handle different types of data. 
+Below are the built-in column types supported in TreeGrid. Each column has its own properties to handle different types of data.
 
 <table>
 <tr>
@@ -82,7 +82,7 @@ Use to display the custom template-specified content.
 
 ## Defining Columns
 
-You can let the SfTreeGrid to create columns or you can manually defined columns to de displayed. Below sections explains both ways, 
+You can let TreeGrid to create columns or you can manually defined columns to de displayed. Below sections explains both ways,
 
 1. Automatically generating columns
 2. Manually define columns
@@ -145,7 +145,7 @@ TreeGridCheckBoxColumn
 </table>
 
 
-N> The order of columns in the collection will determine the order of that they will appear in SfTreeGrid.
+N> The order of columns in the collection will determine the order of that they will appear in TreeGrid.
 
 #### AutoGenerateColumns with different modes
 
@@ -251,7 +251,7 @@ private void TreeGrid_AutoGeneratingColumn(object sender, TreeGridAutoGenerating
 
 #### Changing column type
 
-You can change the type of column adding to SfTreeGrid by setting the instance of column you want to add in `AutoGeneratingColumn` event. 
+You can change the type of column adding to TreeGrid by setting the instance of column you want to add in `AutoGeneratingColumn` event.
 In the below code, column type for `Salary` property is changed to `TreeGridTextColumn` by setting instance of TreeGridTextColumn to `Column` property. 
 
 {% tabs %}
@@ -330,7 +330,7 @@ Below screenshot shows the customized header template loaded on the header of Fi
 
 ### Data Annotations with AutoGenerateColumns
 
-SfTreeGrid support to generate the columns based on built-in [Data Annotation Attributes](https://msdn.microsoft.com/en-us/library/mt185499.aspx). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
+TreeGrid support to generate the columns based on built-in [Data Annotation Attributes](https://msdn.microsoft.com/en-us/library/mt185499.aspx). Data Annotations ignored, when the `AutoGenerateColumns` is set to False.
 
 
 #### Exclude column
@@ -463,7 +463,7 @@ public double? Salary
 
 ### Manually defining columns
 
-SfTreeGrid control allows you to define the columns manually by adding desired column to the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) collection.
+TreeGrid control allows you to define the columns manually by adding desired column to the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) collection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -545,7 +545,7 @@ treeGrid.Columns.RemoveAt(1);
 
 ## Resizing Columns
 
-SfTreeGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfTreeGrid.AllowResizingColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingColumns) or 
+TreeGrid allows to resize the columns like in excel by resizing column header. This can be enabled or disabled by setting [SfTreeGrid.AllowResizingColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingColumns) or 
 
 [TreeGridColumn.AllowResizing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_AllowResizing) property.
 
@@ -568,7 +568,7 @@ You can change the column width by clicking and dragging the resizing cursor at 
 
 ### Hidden column resizing
 
-SfTreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property to `true`.
+TreeGrid shows indication for hidden columns in column header and also allows end-users to resize the hidden columns when setting [SfTreeGrid.AllowResizingHiddenColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowResizingHiddenColumns) property to `true`.
 
 ![Hidden column resizing](Columns_images/Columns_img4.jpeg)
 
@@ -592,7 +592,7 @@ private void TreeGrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 
 ### Identify resizing of the column gets completed
 
-SfTreeGrid allows you to identify the progress of the resizing of columns through `ResizingColumnsEventArgs.Reason` property. You can get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in `ResizingColumns` event.
+TreeGrid allows you to identify the progress of the resizing of columns through `ResizingColumnsEventArgs.Reason` property. You can get the width of the column after resizing completed by getting `ResizingColumnsEventArgs.Width` when `ResizingColumnsEventArgs.Reason` is `ColumnResizingReason.Resized` in `ResizingColumns` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -691,7 +691,7 @@ this.treeGrid.FooterColumnCount = 2;
 
 ## Stacked Headers
 
-SfTreeGrid supports additional unbound header rows known as `stacked header rows` that span across the TreeGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_StackedHeaderRows). You can group one or more columns under each stacked header.
+TreeGrid supports additional unbound header rows known as `stacked header rows` that span across the TreeGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_StackedHeaderRows). You can group one or more columns under each stacked header.
 
 Each [StackedHeaderRow](http://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedHeaderRow.html) contains the [StackedColumns](http://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedHeaderRow~StackedColumns.html) where each [StackedColumn](http://help.syncfusion.com/cr/uwp/Syncfusion.SfGrid.UWP~Syncfusion.UI.Xaml.Grid.StackedColumn.html) contains a number of child columns. `StackedColumn.ChildColumns` property returns the columns which are grouped under the stacked header row. `StackedColumn.HeaderText` returns the text that displays in stacked header row.
 
@@ -821,7 +821,7 @@ private void TreeGrid_Loaded(object sender, RoutedEventArgs e)
 
 ## Column Sizing
 
-SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnSizer) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
+TreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnSizer) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
 
 Below is the list of predefined column sizing options available.
 
@@ -854,7 +854,7 @@ Default column width or defined width set to column.
 
 ## Binding column properties with ViewModel
 
-SfTreeGrid provides MVVM support for binding `TreeGridColumn` properties with ViewModel properties. 
+TreeGrid provides MVVM support for binding `TreeGridColumn` properties with ViewModel properties. 
 
 {% tabs %}
 {% highlight c# %}

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Tooltip
 
-Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of the SfTreeGrid.
+Tooltip supports showing the pop-up window that displays the information when the mouse hovers over a cell of TreeGrid.
 
 ### Record cell tooltip
 
@@ -175,7 +175,7 @@ You can get the sample [here](http://www.syncfusion.com/downloads/support/direc
 ### CellToolTipOpening event
 
 The [CellToolTipOpening ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html)event occurs when any tooltip of the cell is opened. The CellToolTipOpening event receives the [TreeGridCellToolTipOpeningEventArgs ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html# "")as argument which has the following properties:
-* [Column:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Column) Gets the hovered cell column in the SfTreeGrid.
+* [Column:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Column) Gets the hovered cell column in the TreeGrid.
 * [Node:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCellToolTipOpeningEventArgs_Node) Gets the hovered cell node.
 * [Record:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_Record) Gets the data context of hovered cell.
 * [RowColumnIndex:](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellToolTipOpeningEventArgs.html#Syncfusion_UI_Xaml_Grid_CellToolTipOpeningEventArgs_RowColumnIndex) Gets the row and column index of the hovered cell.

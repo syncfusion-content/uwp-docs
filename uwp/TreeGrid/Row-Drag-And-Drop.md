@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Row Drag and Drop in UWP TreeGrid
 
-You can allow end-users to drag and drop the rows in SfTreeGrid and between two SfTreeGrid by setting [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowDraggingRows) to `true`.It is also possible to drag and drop to and from any other control.
+You can allow end-users to drag and drop the rows in TreeGrid and between two TreeGrid by setting [SfTreeGrid.AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AllowDraggingRows) to `true`.It is also possible to drag and drop to and from any other control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -22,10 +22,10 @@ treeGrid.AllowDraggingRows = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Row drag in UWP TreeGrid.](row-drag-and-drop_images/uwp-treegrid-row-drag.png)
+![Row drag.](row-drag-and-drop_images/uwp-treegrid-row-drag.png)
 
 While dropping, the dragged node(s) can be added above or below or as a child node based on its drop position. For example, if you drop at the bottom of node, it will be added below the node and if you are dropping over the node, the it will be added as child of that node.
-![Row drop in UWP TreeGrid.](row-drag-and-drop_images/uwp-treegrid-row-drop.png)
+![Row drop.](row-drag-and-drop_images/uwp-treegrid-row-drop.png)
 
 ## Auto expanding the node on drag over
 
@@ -42,12 +42,12 @@ N> When drop position is “Drop as child”, drag indicators will not be shown.
 
 ## Dragging multiple nodes
 
-SfTreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting  [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) as `Multiple` or `Extended`.
-![Dragging multiple nodes in UWP TreeGrid.](row-drag-and-drop_images/uwp-treegrid-dragging-multiple-nodes.png)
+TreeGrid allows user to drag multiple selected nodes. You can enable multiple selection by setting  [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) as `Multiple` or `Extended`.
+![Dragging multiple nodes.](row-drag-and-drop_images/uwp-treegrid-dragging-multiple-nodes.png)
 
 ## Drag and Drop between TreeGrids
 
-SfTreeGrid provides build built in support for drag and drop nodes between SfTreeGrid’s.
+TreeGrid provides build built in support for drag and drop nodes between TreeGrid’s.
 
 ### Disabling drag and drop between TreeGrid
 
@@ -69,7 +69,7 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
         if (args.DataView.Properties.ContainsKey("SourceTreeGrid"))
             sourceTreeGrid = args.DataView.Properties["SourceTreeGrid"] as SfTreeGrid;
 
-        // Disable drop operation if source tree grid is different.
+        // Disable drop operation if source TreeGrid is different.
 
         if (sourceTreeGrid != TreeGrid)
             return DropPosition.None;
@@ -80,11 +80,11 @@ treeGrid.RowDragDropController = new TreeGridRowDragDropControllerExt(treeGrid);
 {% endhighlight %}
 {% endtabs %}
 
-If source tree grid and target tree grid are different, drop operation is disabled.
+If source TreeGrid and target TreeGrid are different, drop operation is disabled.
 
 ## Customizing Row drag and drop
 
-SfTreeGrid processes row drag and drop operations in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class. You can customize the row drag and drop operations by overriding `TreeGridRowDragDropController` and set it to[SfTreeGrid.RowDragDropController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDragDropController).
+TreeGrid processes row drag and drop operations in [TreeGridRowDragDropController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDragDropController.html) class. You can customize the row drag and drop operations by overriding `TreeGridRowDragDropController` and set it to[SfTreeGrid.RowDragDropController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RowDragDropController).
 
 ### Disable dragging of certain nodes
 
@@ -430,5 +430,5 @@ public class TreeGridRowDragDropControllerExt : TreeGridRowDragDropController
 {% endhighlight %}
 {% endtabs %}
 
-After dropping in tree grid, dragged item is added to TreeGrid based on the dropped position.
+After dropping in TreeGrid, dragged item is added to TreeGrid based on the dropped position.
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragAndDrop_ListViewAndTreeGrid796052425).
