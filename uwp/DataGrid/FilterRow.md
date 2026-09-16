@@ -34,7 +34,7 @@ this.dataGrid.FilterRowPosition = FilterRowPosition.FixedTop;
 {% endhighlight %}
 {% endtabs %}
 
-![UWP DataGrid with filter row](FilterRow_images/FilterRow_img1.png)
+![Filter row](FilterRow_images/FilterRow_img1.png)
 
 
 The each GridFilterRowCell which loads TextBox, DoubleTextBox and DateTimeEdit will contains the filter options button in right corner. You can change the FilterRowCondition at runtime. The below FilterRowConditions will be loaded based on editors.

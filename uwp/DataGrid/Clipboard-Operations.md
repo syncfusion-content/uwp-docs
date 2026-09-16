@@ -154,7 +154,7 @@ private void DataGrid_GridPasteContent(object sender, GridCopyPasteEventArgs e)
 
 [RowData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCopyPasteCellEventArgs_RowData) – Returns corresponding RowData of a cell.
 
-[OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender) – Returns the SfDataGrid.
+[OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender) – Returns the Data Grid.
 
 You can change the text copied to clipboard by changing the `ClipBoardValue`.
  
@@ -212,9 +212,9 @@ private void DataGrid_CopyGridCellContent(object sender, GridCopyPasteCellEventA
 
 [RowData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCopyPasteCellEventArgs_RowData) – Returns corresponding RowData of a cell.
 
-[OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender) – Returns the SfDataGrid.
+[OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender) – Returns the Data Grid.
 
-You can change the text paste to SfDataGrid by changing the `ClipBoardValue`.
+You can change the text paste to Data Grid by changing the `ClipBoardValue`.
 
 {% tabs %}
 {% highlight c# %}
@@ -263,7 +263,7 @@ private void DataGrid_PasteGridCellContent(object sender, GridCopyPasteCellEvent
 
 ### Copy programmatically
 
-Copy the selected records/cells in SfDataGrid by using [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Copy) method in [GridCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyPaste) of SfDataGrid.
+Copy the selected records/cells in SfDataGrid by using [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Copy) method in [GridCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyPaste) of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -271,7 +271,7 @@ this.dataGrid.GridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy a record by selecting the record using [MoveCurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridBaseSelectionController.html#Syncfusion_UI_Xaml_Grid_GridBaseSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method and [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Copy) method in [GridCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyPaste) of SfDataGrid.
+Copy a record by selecting the record using [MoveCurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridBaseSelectionController.html#Syncfusion_UI_Xaml_Grid_GridBaseSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method and [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Copy) method in [GridCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyPaste) of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -283,7 +283,7 @@ this.dataGrid.GridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy the multiple records by selecting group of records using `SelectRows` method and [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Copy) method in [GridCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyPaste) of SfDataGrid.
+Copy the multiple records by selecting group of records using `SelectRows` method and [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Copy) method in [GridCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GridCopyPaste) of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -292,7 +292,7 @@ this.dataGrid.GridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy the multiple cells by selecting group of cells using `SelectCells` method and `Copy` method in `GridCopyPaste` of SfDataGrid.
+Copy the multiple cells by selecting group of cells using `SelectCells` method and `Copy` method in `GridCopyPaste` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -305,7 +305,7 @@ this.dataGrid.GridCopyPaste.Copy();
 
 ### Copy rows without selecting
 
-You can copy the records without selection by using [CopyRowsToClipboard](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_CopyRowsToClipboard_System_Int32_System_Int32_) method in `GridCopyPaste` of SfDataGrid.
+You can copy the records without selection by using [CopyRowsToClipboard](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_CopyRowsToClipboard_System_Int32_System_Int32_) method in `GridCopyPaste` of Data Grid.
  
 {% tabs %}
 {% highlight c# %}
@@ -315,7 +315,7 @@ this.dataGrid.GridCopyPaste.CopyRowsToClipboard(2, 4);
 
 ### Cut Programmatically
 
-Cut the selected records/cells in SfDataGrid by using [Cut](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Cut) method in `GridCopyPaste` of SfDataGrid.
+Cut the selected records/cells in Data Grid by using [Cut](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Cut) method in `GridCopyPaste` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -323,7 +323,7 @@ this.dataGrid.GridCopyPaste.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-Cut the entire record in SfDataGrid by selecting whole SfDataGrid using [SelectAll](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectAll_System_Boolean_) method and `Cut` method in `GridCopyPaste` of SfDataGrid.
+Cut the entire record in Data Grid by selecting whole Data Grid using [SelectAll](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectAll_System_Boolean_) method and `Cut` method in `GridCopyPaste` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -332,7 +332,7 @@ this.dataGrid.GridCopyPaste.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-Cut the entire column in SfDataGrid by using [SelectCells](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Boolean_) method and `Cut` method in `GridCopyPaste` of SfDataGrid.
+Cut the entire column in Data Grid by using [SelectCells](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Boolean_) method and `Cut` method in `GridCopyPaste` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -348,7 +348,7 @@ this.dataGrid.GridCopyPaste.Cut();
 
 ### Paste programmatically
 
-Paste the clipboard value into SfDataGrid by using [Paste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Paste) method in `GridCopyPaste` of SfDataGrid.
+Paste the clipboard value into Data Grid by using [Paste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_Paste) method in `GridCopyPaste` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -356,7 +356,7 @@ this.dataGrid.GridCopyPaste.Paste();
 {% endhighlight %}
 {% endtabs %}
 
-Paste the clipboard value into selected record by selecting the record using MoveCurrentCell method and `Paste` method in `GridCopyPaste` of SfDataGrid.
+Paste the clipboard value into selected record by selecting the record using MoveCurrentCell method and `Paste` method in `GridCopyPaste` of Data Grid.
 
 {% tabs %}
 {% highlight c# %}
@@ -371,7 +371,7 @@ this.dataGrid.GridCopyPaste.Paste();
 
 ## Customizing Copy Paste behavior
 
-SfDataGrid process the clipboard operations in [GridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class. You can customize the default copy paste behaviors by overriding `GridCutCopyPaste` class and set it to `SfDataGrid.GridCopyPaste`.
+Data Grid process the clipboard operations in [GridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class. You can customize the default copy paste behaviors by overriding `GridCutCopyPaste` class and set it to `SfDataGrid.GridCopyPaste`.
 
 {% tabs %}
 {% highlight c# %}
@@ -393,7 +393,7 @@ public MainWindow()
 
 ### Paste a cell into many cells
 
-By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in SfDataGrid. The below code shows how to copy one cell and paste it into all the selected cells by overriding [PasteToCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_PasteToCell_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Object_) method in [GridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class.
+By default, you can copy one cell and paste it into another cell when Cell Selection is enabled in Data Grid. The below code shows how to copy one cell and paste it into all the selected cells by overriding [PasteToCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_PasteToCell_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Object_) method in [GridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class.
  
 {% tabs %}
 {% highlight c# %}
@@ -448,7 +448,7 @@ public class CustomCopyPaste: GridCutCopyPaste
 
 ### Paste a record into many rows
 
-By default, you can able to copy one row and paste it into another row when Row Selection is enabled in SfDataGrid. The below code shows how to copy one row and paste it into all selected rows by overriding the [PasteToRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_PasteToRow_System_Object_System_Object_) method in the `GridCutCopyPaste` class.
+By default, you can able to copy one row and paste it into another row when Row Selection is enabled in Data Grid. The below code shows how to copy one row and paste it into all selected rows by overriding the [PasteToRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_PasteToRow_System_Object_System_Object_) method in the `GridCutCopyPaste` class.
  
 {% tabs %}
 {% highlight c# %}
@@ -496,7 +496,7 @@ public class CustomCopyPaste : GridCutCopyPaste
 
 ### Select pasted records
 
-By default, after pasting the clipboard value to SfDataGrid selection is maintains in previously selected records as it is. The below code shows select the pasted records after the Paste operation, by overriding the [PasteToRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_PasteToRows_System_Object_) and [PasteToRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_PasteToRow_System_Object_System_Object_) methods in [GridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class. This code is applicable when [SelectionUnit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) is `Row`.
+By default, after pasting the clipboard value to Data Grid selection is maintains in previously selected records as it is. The below code shows select the pasted records after the Paste operation, by overriding the [PasteToRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_PasteToRows_System_Object_) and [PasteToRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html#Syncfusion_UI_Xaml_Grid_GridCutCopyPaste_PasteToRow_System_Object_System_Object_) methods in [GridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCutCopyPaste.html) class. This code is applicable when [SelectionUnit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) is `Row`.
 
 {% tabs %}
 {% highlight c# %}
@@ -532,7 +532,7 @@ public class CustomCopyPaste : GridCutCopyPaste
 
 ### Create new records while pasting
 
-By default, while paste the clipboard value to SfDataGrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in SfDataGrid by overriding the `PasteToRows` method in `GridCutCopyPaste` class.
+By default, while paste the clipboard value to Data Grid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in Data Grid by overriding the `PasteToRows` method in `GridCutCopyPaste` class.
  
 {% tabs %}
 {% highlight c# %}

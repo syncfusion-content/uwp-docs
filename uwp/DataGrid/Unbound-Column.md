@@ -370,7 +370,7 @@ You can refer the [Styling](https://help.syncfusion.com/uwp/datagrid/column-type
 
 ## Customize the Unbound column behavior
 
-SfDataGrid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound column.
+Data Grid allows you to customize the operations like key navigation and UI related interactions by overriding the corresponding renderer associated with the unbound column.
   
 Below table lists the available cell types for unbound column.
 

@@ -29,7 +29,7 @@ dataGrid.ShowRowHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the row header enabled in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img1.png)
+![Image used to display the row header enabled](Interactive-Features_images/InteractiveFeatures_img1.png)
 
 
 You can change the default width of the RowHeader by using [SfDataGrid.RowHeaderWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_RowHeaderWidth) property.
@@ -82,7 +82,7 @@ You can display the corresponding row index in each RowHeader, by customizing th
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the row index displayed in row header cell of uwp datagrid](Interactive-Features_images/InteractiveFeatures_img2.png)
+![Image used to display the row index displayed in row header cell](Interactive-Features_images/InteractiveFeatures_img2.png)
 
 
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DisplayRowIndex1237508699.zip).
@@ -136,7 +136,7 @@ You can change the CurrentRowIndicator in the RowHeader by customizing the contr
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the current row indicator changed in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img3.png)
+![Image used to display the current row indicator changed](Interactive-Features_images/InteractiveFeatures_img3.png)
 
 
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ChangingCurrentRowIndicator(1)970786330.zip).
@@ -167,7 +167,7 @@ this.dataGrid.AllowResizingColumns = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the columnresizing with the touch in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img9.png)
+![Image used to display the columnresizing with the touch](Interactive-Features_images/InteractiveFeatures_img9.png)
 
 
 You can also resize the hidden column through the touch by setting the AllowResizingHiddenColumns by True. You have to press and hold the hidden line to resize the hidden column in touch.
@@ -191,7 +191,7 @@ this.dataGrid.AllowResizingHiddenColumns = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the resize the hidden column through the touch in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img10.png)
+![Image used to display the resize the hidden column through the touch](Interactive-Features_images/InteractiveFeatures_img10.png)
 
 N> you can resize the column by dragging the bubbles on the Tool-Tip
 
@@ -217,11 +217,11 @@ this.dataGrid.AllowDraggingColumns = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the drag and drop with the touch support in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img11.png)
+![Image used to display the drag and drop with the touch support](Interactive-Features_images/InteractiveFeatures_img11.png)
 
 ## Drag and Drop Rows
 
-SfDataGrid allows you to row drag and drop by setting the [SfDataGrid.AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://msdn.microsoft.com/en-us/library/system.windows.uielement.allowdrop(v=vs.110).aspx) property. Also, you can do row drag-and-drop operations between SfDataGrid and other controls like ListView, TreeView.
+Data Grid allows you to row drag and drop by setting the [SfDataGrid.AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://msdn.microsoft.com/en-us/library/system.windows.uielement.allowdrop(v=vs.110).aspx) property. Also, you can do row drag-and-drop operations between Data Grid and other controls like ListView, TreeView.
 
 {% tabs %}
 {% highlight xaml %}
@@ -240,15 +240,15 @@ this.datagrid.AllowDrop = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the drag and drop rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img12.png)
+![Image used to display the drag and drop rows](Interactive-Features_images/InteractiveFeatures_img12.png)
 
 ### Dragging multiple rows
 
-The SfDataGrid allows to drag multiple selected rows. To enable multiple selection, set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) as Multiple or Extended. 
+The Data Grid allows to drag multiple selected rows. To enable multiple selection, set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) as Multiple or Extended. 
 
-N> The drag selection cannot be performed while the [AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) enabled as true in the SfDataGrid.
+N> The drag selection cannot be performed while the [AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) enabled as true in the Data Grid.
 
-![Image used to display the dragging multiple rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img13.png)
+![Image used to display the dragging multiple rows](Interactive-Features_images/InteractiveFeatures_img13.png)
 
 ### Customizing row drag and drop
 
@@ -328,7 +328,7 @@ protected override void ProcessOnDragOver(DragEventArgs args, RowColumnIndex row
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the customizing drag ui text in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img14.png)
+![Image used to display the customizing drag ui text](Interactive-Features_images/InteractiveFeatures_img14.png)
 
 #### Customizing dragging records
 
@@ -378,9 +378,9 @@ public class GridRowDragDropControllerExt : GridRowDragDropController
 {% endhighlight %}
 {% endtabs %}
 
-### Row drag and drop between DataGrid and ListView
+### Row drag and drop between Data Grid and ListView
 
-To perform dragging between the ListView and SfDataGrid, override the [ProcessOnDragOver](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRowDragDropController.html#Syncfusion_UI_Xaml_Grid_GridRowDragDropController_ProcessOnDragOver_Windows_UI_Xaml_DragEventArgs_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_) and [ProcessOnDrop](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRowDragDropController.html#Syncfusion_UI_Xaml_Grid_GridRowDragDropController_ProcessOnDrop_Windows_UI_Xaml_DragEventArgs_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_) methods in the [GridRowDragDropController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRowDragDropController.html) class.
+To perform dragging between the ListView and Data Grid, override the [ProcessOnDragOver](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRowDragDropController.html#Syncfusion_UI_Xaml_Grid_GridRowDragDropController_ProcessOnDragOver_Windows_UI_Xaml_DragEventArgs_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_) and [ProcessOnDrop](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRowDragDropController.html#Syncfusion_UI_Xaml_Grid_GridRowDragDropController_ProcessOnDrop_Windows_UI_Xaml_DragEventArgs_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_) methods in the [GridRowDragDropController](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRowDragDropController.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -541,19 +541,19 @@ private void ListView_DragItemsStarting(object sender, DragItemsStartingEventArg
 {% endhighlight %}
 {% endtabs %}
 
-![Image used to display the row drag and drop between sfdatagrid and listview in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img15.png)
+![Image used to display the row drag and drop between Data Grid and listview](Interactive-Features_images/InteractiveFeatures_img15.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-datagrid-and-listview-in-wpf-and-uwp/tree/master/UWP)
 
-### Row Drag and Drop between two SfDataGrids
+### Row Drag and Drop between two Data Grid
 
-You should enable [AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop?view=winrt-22621) property for the SfDataGrid’ s which are involved in row drag and drop operations.
+You should enable [AllowDraggingRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDraggingRows) and [AllowDrop](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.uielement.allowdrop?view=winrt-22621) property for the Data Grid’ s which are involved in row drag and drop operations.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/how-to-drag-and-drop-rows-between-two-datagrids-in-wpf-and-uwp/tree/master/UWP)
 
 ## Context Menu
 
-DataGrid provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
+Data Grid provides an entirely customizable context menu to expose the functionality on user interface. You can create context menu for different rows in an efficient manner. 
 
 The below code example shows the context menu with command bindings.
 
@@ -709,7 +709,7 @@ this.dataGrid.RecordContextMenu.Items.Add(new MenuFlyoutItem() { Text = "Delete"
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu added for data rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img16.png)
+![Context menu added for data rows](Interactive-Features_images/InteractiveFeatures_img16.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as [GridRecordContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRecordContextMenuInfo.html) which contains the record of the corresponding row.
@@ -777,7 +777,7 @@ this.dataGrid.HeaderContextMenu.Items.Add(new MenuFlyoutItem() { Text = "BestFit
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu added for header row in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img17.png)
+![Context menu added for header row](Interactive-Features_images/InteractiveFeatures_img17.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as [GridColumnContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnContextMenuInfo.html) which contains the particular GridColumn.
@@ -839,7 +839,7 @@ this.dataGrid.GroupDropAreaContextMenu.Items.Add(new MenuFlyoutItem() { Text = "
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu added for GroupDropArea in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img18.png)
+![Context menu added for GroupDropArea](Interactive-Features_images/InteractiveFeatures_img18.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as [GridGroupDropAreaContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridGroupDropAreaContextMenuInfo.html). 
@@ -905,7 +905,7 @@ this.dataGrid.GroupDropItemContextMenu.Items.Add(new MenuFlyoutItem() { Text = "
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu added for GroupDropItem in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img19.png)
+![Context menu added for GroupDropItem](Interactive-Features_images/InteractiveFeatures_img19.png)
 
 
 While binding the menu item using CommandBinding you can get the parameter as [GridColumnContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnContextMenuInfo.html) which contains the particular GridColumn.
@@ -963,7 +963,7 @@ this.dataGrid.GroupCaptionContextMenu.Items.Add(new MenuFlyoutItem() { Text = "C
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu added for group caption rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img20.png)
+![Context menu added for group caption rows](Interactive-Features_images/InteractiveFeatures_img20.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as [GridRecordContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRecordContextMenuInfo.html) which contains the record of the corresponding row.
@@ -1020,7 +1020,7 @@ this.dataGrid.GroupSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "C
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu added for group summary rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img21.png)
+![Context menu added for group summary rows](Interactive-Features_images/InteractiveFeatures_img21.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as [GridRecordContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRecordContextMenuInfo.html) which contains the record of the corresponding row.
@@ -1086,7 +1086,7 @@ this.dataGrid.TableSummaryContextMenu.Items.Add(new MenuFlyoutItem() { Text = "S
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu added for table summary rows in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img22.png)
+![Context menu added for table summary rows](Interactive-Features_images/InteractiveFeatures_img22.png)
 
 
 While binding the menu item using CommandBinding you can get the command parameter as [GridRecordContextMenuInfo](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRecordContextMenuInfo.html) which contains the record of the corresponding row.
@@ -1130,7 +1130,7 @@ private void TotalSummaryCount(object param)
 
 #### GridContextMenuOpening
 
-[GridContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs while opening the context menu in SfDataGrid. 
+[GridContextMenuOpening](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event occurs while opening the context menu in Data Grid. 
 
 [GridContextMenuEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridContextMenuEventArgs.html) has the following members which provides the information about `GridContextMenuOpening` event.
 
@@ -1187,7 +1187,7 @@ private void DataGrid_GridContextMenuOpening(object sender, GridContextMenuEvent
 {% endhighlight %}
 {% endtabs %}
        
-![Context menu changed for record cell while opening in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img23.png)
+![Context menu changed for record cell while opening](Interactive-Features_images/InteractiveFeatures_img23.png)
 
 #### Customizing appearance of context menu
 
@@ -1212,4 +1212,4 @@ You can change the appearance of the context menu by customizing the style with 
 {% endhighlight %}
 {% endtabs %}
 
-![Context menu background changed in uwp datagrid](Interactive-Features_images/InteractiveFeatures_img24.png)
+![Context menu background changed](Interactive-Features_images/InteractiveFeatures_img24.png)

@@ -431,7 +431,7 @@ Data Grid supports to load the data incrementally using `ISupportIncrementalLoad
 `ISupportIncrementalLoading` interface has `LoadMoreItemsAsync` method which helps to load the data incrementally. [LoadMoreItemsAsync](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) called in on-demand while scrolling based on [HasMoreItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_HasMoreItems) property.
 If `HasMoreItems` is `false`, Data Grid stops calling `LoadMoreItemsAsync`.
 
-SfDataGrid have [IncrementalList](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
+Data Grid have [IncrementalList](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
 
 In the below code, `IncrementalList` is initialized by passing Action to its constructor for loading items incrementally.
 
@@ -482,7 +482,7 @@ You can download the sample from [here](https://www.syncfusion.com/downloads/sup
 
 You can display animations when fetching data from service for [LoadMoreItemsAsync](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx).
  
-In the below code snippet data fetched from service using `BackgroundWorker` and `SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
+In the below code snippet data fetched from service using `BackgroundWorker` and `SfBusyIndicator` displayed over Data Grid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
 
 {% tabs %}
 {% highlight xaml %}

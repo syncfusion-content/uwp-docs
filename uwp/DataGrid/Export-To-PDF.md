@@ -673,7 +673,7 @@ if (storageFile != null)
 
 ![Export-To-PDF_img21](Export-To-PDF_images/Export-To-PDF_img21.png)
 
-Here, first record only expanded in SfDataGrid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
+Here, first record only expanded in Data Grid. But all the DetailsViewDataGrid’s are shown in exported PDF document.
 
 You can customize its exporting operation by using [ChildGridExportingEventHandler](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.PdfExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_PdfExportingOptions_ChildGridExportingEventHandler).
 
@@ -738,7 +738,7 @@ Here, OrderID column is displayed in `DetailsViewDataGrid` and it is excluded wh
 
 ### Customizing DetailsViewDataGrid cells
 
-Like parent DataGrid, you can customize the `DetailsViewDataGrid` cells also by using `CellsExportingEventHandler`. Based on [GridCellPdfExportingEventArgs.GridViewDefinition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.GridCellPdfExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridCellPdfExportingEventArgs_GridViewDefinition) property, you can identify the particular `DetailsViewDataGrid` and customize it.
+Like parent Data Grid, you can customize the `DetailsViewDataGrid` cells also by using `CellsExportingEventHandler`. Based on [GridCellPdfExportingEventArgs.GridViewDefinition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.GridCellPdfExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridCellPdfExportingEventArgs_GridViewDefinition) property, you can identify the particular `DetailsViewDataGrid` and customize it.
 
 {% tabs %}
 {% highlight c# %}

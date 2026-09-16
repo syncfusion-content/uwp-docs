@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Manipulation in UWP Data Grid
 
-UWP Data Grid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. DataGrid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) property.
+UWP Data Grid listens and responds to the manipulation operations such as add, delete and data update (property change) at runtime. Data Grid refresh the sorting, filtering, grouping and summaries based on [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) property.
  
 {% tabs %}
 {% highlight xaml %}
@@ -279,7 +279,7 @@ this.dataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endhighlight %}
 {% endtabs %}
 
-![UWP DataGrid with add new row](Data-Manipulation_images/Data-Manipulation_img1.png)
+![Add new row](Data-Manipulation_images/Data-Manipulation_img1.png)
 
 
 You can get the row index of AddNewRow where it placed by using the [GridAddNewRowController.GetAddNewRowIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridAddNewRowController.html#Syncfusion_UI_Xaml_Grid_GridAddNewRowController_GetAddNewRowIndex) method.
@@ -301,7 +301,7 @@ bool isAddNewRowIndex = this.dataGrid.IsAddNewIndex(1);
 {% endhighlight %}
 {% endtabs %}
 
-### Changing the AddNewRow default text in DataGrid
+### Changing the AddNewRow default text in Data Grid
 
 You can change the default static string of AddNewRow in Data Grid by using the [SfDataGrid.AddNewRowText](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowText) property. The `AddNewRowText` property has higher priority than the text that is localized in resx file.
 
@@ -353,7 +353,7 @@ void dataGrid_AddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs ar
 {% endtabs %}
 
 
-![UWP DataGrid - Add new row with default values](Data-Manipulation_images/Data-Manipulation_img2.png)
+![Add new row with default values](Data-Manipulation_images/Data-Manipulation_img2.png)
 
 ### Working with complex properties in AddNewRow
 
@@ -470,7 +470,7 @@ void dataGrid_RowValidating(object sender, RowValidatingEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-![UWP DataGrid - New row data validation](Data-Manipulation_images/Data-Manipulation_img3.png)
+![New row data validation](Data-Manipulation_images/Data-Manipulation_img3.png)
 
 Similarly, you can validate the cells in AddNewRow by using the [CurrentCellValidating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellValidating) event.
 
@@ -480,9 +480,9 @@ Data Grid enables you to customize the watermark text of AddNewRow by changing v
 
 To customize the AddNewRowText, add the default `Syncfusion.SfDataGrid.UWP.resw` file and then customize the value of AddNewRowText.
  
-![UWP DataGrid resources](Data-Manipulation_images/Data-Manipulation_img4.png)
+![Resources](Data-Manipulation_images/Data-Manipulation_img4.png)
 
-![UWP DataGrid - Add new row text localized](Data-Manipulation_images/Data-Manipulation_img5.png)
+![Add new row text localized](Data-Manipulation_images/Data-Manipulation_img5.png)
 
 ### Customizing AddNewRow text using style
 
@@ -571,7 +571,7 @@ You can customize the watermark text of AddNewRow by editing the style of `AddNe
 {% endtabs %}
 
 
-![UWP DataGrid - Image shows the customization of AddNewRow text](Data-Manipulation_images/Data-Manipulation_img6.png)
+![Image shows the customization of AddNewRow text](Data-Manipulation_images/Data-Manipulation_img6.png)
 
 ### AddNewRow support in Master-Details View
 
@@ -601,7 +601,7 @@ this.firstLevelNestedGrid.AddNewRowPosition = AddNewRowPosition.Top;
 {% endtabs %}
 
 
-![UWP DataGrid with add new row for detailsview](Data-Manipulation_images/Data-Manipulation_img7.png)
+![Add new row for detailsview](Data-Manipulation_images/Data-Manipulation_img7.png)
 
 
 Similarly, you can wire [AddNewRowInitiating](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowInitiating) event for `ViewDefinition.DataGrid`.
@@ -742,9 +742,9 @@ void dataGrid_RecordDeleting(object sender, RecordDeletingEventArgs args)
 
 `Items` - Gets the records that were removed from the source collection.
 
-`SelectedIndex` - Gets or sets the selected index for the SfDataGrid control.
+`SelectedIndex` - Gets or sets the selected index for the Data Grid control.
 
-### Handling selection after deleting the record from SfDataGrid
+### Handling selection after deleting the record from Data Grid
 
 You handle the selection after remove the records through [SelectedIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedIndex) property of [RecordDeleted](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_RecordDeleted) event.
  

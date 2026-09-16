@@ -151,19 +151,19 @@ Data Grid filter UI comprises of two different UIs.
 
 By default, both Checkbox Filter and Advanced Filter are loaded while opening the filter pop-up. You can switch between AdvancedFilter and CheckboxFilter by using AdvancedFilter button in the UI View.
 
-#### SfDataGrid with Checkbox Filter View
+#### Data Grid with Checkbox Filter View
 	
-![DataGrid with Checkbox Filter View in DataGrid UWP](Filtering_images/Filtering_img1.png)
+![Checkbox Filter View](Filtering_images/Filtering_img1.png)
 
 
-![Checkbox Filter View in DataGrid UWP](Filtering_images/Filtering_img2.png)
+![Checkbox Filter View](Filtering_images/Filtering_img2.png)
 
-#### SfDataGrid with Advanced Filter View
+#### Data Grid with Advanced Filter View
 
-![DataGrid with Advanced Filter View in DataGrid UWP](Filtering_images/Filtering_img3.png)
+![Advanced Filter View](Filtering_images/Filtering_img3.png)
 
 
-![Advanced Filter View in DataGrid UWP](Filtering_images/Filtering_img4.png)
+![Advanced Filter View](Filtering_images/Filtering_img4.png)
 
 ## Choose between built-in UI Views
 
@@ -410,7 +410,7 @@ By default, casing is not considered while filtering. Because, filter predicates
 {% endhighlight %}
 {% endtabs %}
 
-![Improve the performance while applying the filter in SfDataGrid UWP](Filtering_images/Filtering_img8.png)
+![Improve the performance while applying the filter](Filtering_images/Filtering_img8.png)
 
 By default, [CanGenerateUniqueItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.AdvancedFilterControl.html#Syncfusion_UI_Xaml_Grid_AdvancedFilterControl_CanGenerateUniqueItems) is `true`. So all the unique items in the column are loaded in the AdvancedFilter ComboBox that allows you to select the value easily from the combo box and filter it.
 
@@ -429,11 +429,11 @@ dataGrid.Columns["Country"].AllowBlankFilters = false;
 
 ### Checkbox Filter with AllowBlankFilters as True
 
-![Filter the NULL values by using the CheckBox Filter view in SfDataGrid UWP](Filtering_images/Filtering_img9.png)
+![Filter the NULL values by using the CheckBox Filter view](Filtering_images/Filtering_img9.png)
 
 ### Advanced Filter with AllowBlankFilters as True
 
-![Filter the NULL values by using the Advanced Filter view in SfDataGrid UWP](Filtering_images/Filtering_img10.png)
+![Filter the NULL values by using the Advanced Filter view](Filtering_images/Filtering_img10.png)
 
 ## Instant Filtering
 
@@ -452,11 +452,11 @@ Here, the OK and Cancel buttons are unavailable and Done button is available to 
 
 ### Checkbox Filter with ImmediateUpdateColumnFilter is True
 
-![Apply the immediate filter in CheckBox Filter view in DataGrid UWP](Filtering_images/Filtering_img11.png)
+![Apply the immediate filter in CheckBox Filter view](Filtering_images/Filtering_img11.png)
 
 ### Advanced Filter with ImmediateUpdateColumnFilter is True
 
-![Apply the immediate filter in Advanced Filter view in DataGrid UWP](Filtering_images/Filtering_img12.png)
+![Apply the immediate filter in Advanced Filter view](Filtering_images/Filtering_img12.png)
 
 
 N> In Checkbox Filter, the `SelectAll` option is not reflected in the filter updates if `ImmediateUpdateColumnFilter` is `true`.
@@ -476,19 +476,19 @@ dataGrid.Columns["OrderDate"].ColumnFilter = ColumnFilter.DisplayText;
 
 Consider in the following DataGrid, first and second records have same display value for OrderDate column but both have different actual value (E.g. 2/10/2010 12:00:00 AM and 2/10/2010 6:30:00 PM).
 
-![Apply the filter based on the underlying value in DataGrid UWP](Filtering_images/Filtering_img13.png)
+![Apply the filter based on the underlying value](Filtering_images/Filtering_img13.png)
 
 By default, based on the actual value only filter will be applied. So it will consider both values as different. And while opening filter popup, both values will be displayed like below.
 
-![Apply the filter based on the display text in DataGrid UWP](Filtering_images/Filtering_img14.png)
+![Apply the filter based on the display text](Filtering_images/Filtering_img14.png)
 
 If you set `ColumnFilter` as `DisplayText`, display value only will be considered for filtering. So filter popup will be shown like below.
 
-![Apply the filter based on the actual value in DataGrid UWP](Filtering_images/Filtering_img15.png)
+![Apply the filter based on the actual value](Filtering_images/Filtering_img15.png)
 
 After filtering, both records having the same OrderDate display value will be displayed in view.
 
-![Filter the same values records in DataGrid UWP](Filtering_images/Filtering_img16.png)
+![Filter the same values records](Filtering_images/Filtering_img16.png)
 
 ## Events 
 
@@ -574,7 +574,7 @@ void dataGrid_FilterChanged(object sender, GridFilterEventArgs e)
 
 ## Show image in CheckBoxFilterControl instead of image path
 
-By default, in SfDataGrid image path is shown inside the CheckBoxFilterControl instead of image but you can show the image in CheckBoxFilterControl by setting [CheckBoxFilterControl.ItemTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CheckboxFilterControl.html#Syncfusion_UI_Xaml_Grid_CheckboxFilterControl_ItemTemplate) as like below. 
+By default, in Data Grid image path is shown inside the CheckBoxFilterControl instead of image but you can show the image in CheckBoxFilterControl by setting [CheckBoxFilterControl.ItemTemplate](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CheckboxFilterControl.html#Syncfusion_UI_Xaml_Grid_CheckboxFilterControl_ItemTemplate) as like below. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -639,7 +639,7 @@ public class StringToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Apply the column filter for image in DataGrid UWP](Filtering_images/Filtering_img18.png)
+![Apply the column filter for image](Filtering_images/Filtering_img18.png)
 
 You can get the sample from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDatagridDemo82863041).
 
@@ -757,7 +757,7 @@ Sort Options can be collapsed by setting [SortOptionVisibility](https://help.syn
 {% endtabs %}
 
 
-![Hide the SortOptions from Filter popup in DataGrid UWP](Filtering_images/Filtering_img17.png)
+![Hide the SortOptions from Filter popup](Filtering_images/Filtering_img17.png)
 
 ### Customizing Sort Options text
 
@@ -795,7 +795,7 @@ You can customize the FilterPopup size using [FilterPopupHeight](https://help.sy
 {% endhighlight %}
 {% endtabs %}
 
-![Customize the FilterPopup in DataGrid UWP](Filtering_images/Filtering_img19.png)
+![Customize the FilterPopup](Filtering_images/Filtering_img19.png)
 
 ### Changing filter icon style after applying filters
 

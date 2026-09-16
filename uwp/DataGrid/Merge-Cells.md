@@ -427,7 +427,7 @@ pdfExportingOption.ExportMergedCells = true;
 
 ## Limitations
 
-Below are the limitation when using Cell Merging in SfDataGrid.
+Below are the limitation when using Cell Merging in Data Grid.
 
 1. Row selection is not supported.
 2. Heterogeneous rows can’t be merged.
