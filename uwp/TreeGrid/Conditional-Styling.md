@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Conditional Styling in UWP TreeGrid
 
-You can style the treegrid and its inner elements conditionally based on data in three ways,
+You can style the control and its inner elements conditionally based on data in three ways,
 
 1. Using Converter
 2. Using Data Triggers
@@ -98,7 +98,7 @@ internal class StyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells using converter in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img1.jpeg)
+![Styling cells using converter](Conditional-Styling_images/Conditional-Styling_img1.jpeg)
 
 ### Style cells based on record using converter
 
@@ -140,7 +140,7 @@ internal class StyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells based on record in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img2.jpeg)
+![Styling cells based on record](Conditional-Styling_images/Conditional-Styling_img2.jpeg)
 
 ### Style cells using style selector
 
@@ -176,7 +176,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Styling cells using style selector in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img3.jpeg)
+![Styling cells using style selector](Conditional-Styling_images/Conditional-Styling_img3.jpeg)
 
 ### Add image to cell
 
@@ -227,7 +227,7 @@ public object ConvertBack(object value, Type targetType, object parameter, strin
 {% endhighlight %}
 {% endtabs %}
 
-![Adding images in a cell in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img4.jpeg)
+![Adding images in a cell](Conditional-Styling_images/Conditional-Styling_img4.jpeg)
 
 You can download the sample [here](https://github.com/SyncfusionExamples/how-to-load-images-in-a-cell-in-wpf-and-uwp-treegrid/tree/master/UWP).
 
@@ -273,7 +273,7 @@ internal class StyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Styling rows using converter in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
+![Styling rows using converter](Conditional-Styling_images/Conditional-Styling_img5.jpeg)
 
 ### Style rows using style selector
 
@@ -307,7 +307,7 @@ public class SelectorClass : StyleSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Styling rows using style selector in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img6.jpeg)
+![Styling rows using style selector](Conditional-Styling_images/Conditional-Styling_img6.jpeg)
 
 ## Row Header
 
@@ -342,5 +342,5 @@ internal class StyleConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-![Styling row header in UWP treegrid](Conditional-Styling_images/Conditional-Styling_img7.jpeg)
+![Styling row header](Conditional-Styling_images/Conditional-Styling_img7.jpeg)
 

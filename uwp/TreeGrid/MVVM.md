@@ -9,11 +9,11 @@ documentation: ug
 
 # MVVM in UWP TreeGrid
 
-This section explains various MVVM requirements using SfTreeGrid.
+This section explains various MVVM requirements using TreeGrid.
 
-## Bind the SelectedItem property of treegrid
+## Bind the SelectedItem property of TreeGrid
 
-You can bind the [SelectedItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property directly to treegrid by setting the `SfTreeGrid.SelectedItem` property.
+You can bind the [SelectedItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) property directly to TreeGrid by setting the `SfTreeGrid.SelectedItem` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,7 +57,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind button command to view model
 
-You can load a button for the columns in treegrid using [TreeGridTemplateColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html). When loading the buttons, you can bind a command in ViewModel using `ElementName` binding.
+You can load a button for the columns in TreeGrid using [TreeGridTemplateColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridTemplateColumn.html). When loading the buttons, you can bind a command in ViewModel using `ElementName` binding.
 
 In the following example, ViewModel command receives the underlying data object as command parameter, since the DataContext is bound as command parameter.
 
@@ -129,7 +129,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ## Bind columns from view model
 
-You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property in ViewModel by having the binding property of `Syncfusion.SfGrid.UI.Xaml.TreeGrid.Columns` type. Thus, you can set binding to the SfTreeGrid.Columns property that provides DataContext of treegrid in ViewModel.
+You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property in ViewModel by having the binding property of `Syncfusion.SfGrid.UI.Xaml.TreeGrid.Columns` type. Thus, you can set binding to the SfTreeGrid.Columns property that provides DataContext of TreeGrid in ViewModel.
 
 {% tabs %}
 {% highlight xaml %}
@@ -148,7 +148,7 @@ You can bind the [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the following code example in which the treegrid column is populated with some [TreeGridTextColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html) when creating the ViewModel instance.
+Refer to the following code example in which the TreeGrid column is populated with some [TreeGridTextColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridTextColumn.html) when creating the ViewModel instance.
 
 {% tabs %}
 {% highlight c# %}

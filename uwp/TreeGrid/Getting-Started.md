@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started with UWP TreeGrid
 
-The SfTreeGrid is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
+The UWP TreeGrid is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
 
 ## Assembly Deployment
 
-The following list of assemblies needs to be added as reference to use SfTreeGrid control in any application,
+The following list of assemblies needs to be added as reference to use TreeGrid in any application,
 
 <table>
 <tr>
@@ -37,8 +37,8 @@ Syncfusion.Data.UWP assembly is dependent assembly for Syncfusion.SfGrid.UWP
 Syncfusion.SfGrid.UWP
 </td>
 <td>
-Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations of SfTreeGrid.
-SfTreeGrid control present in Syncfusion.UI.Xaml.TreeGrid namespace.
+Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations of TreeGrid.
+TreeGrid control present in Syncfusion.UI.Xaml.TreeGrid namespace.
 </td>
 </tr>
 <tr>
@@ -46,7 +46,7 @@ SfTreeGrid control present in Syncfusion.UI.Xaml.TreeGrid namespace.
 Syncfusion.SfInput.UWP
 </td>
 <td>
-Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in SfTreeGrid.
+Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in TreeGrid.
 </td>
 </tr>
 <tr>
@@ -59,7 +59,7 @@ Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
 </tr>
 </table>
 
-In order to use export to excel and export to PDF functionalities of SfTreeGrid control, add the reference to following assemblies,
+In order to use export to excel and export to PDF functionalities of TreeGrid, add the reference to following assemblies,
 
 <table>
 <tr>
@@ -75,7 +75,7 @@ Description
 Syncfusion.SfGridConverter.UWP
 </td>
 <td>
-Syncfusion.SfGridConverter.UWP contains static extension classes for exporting SfTreeGrid to excel and PDF in <code>Syncfusion.UI.Xaml.TreeGrid.Converter</code> namespace.
+Syncfusion.SfGridConverter.UWP contains static extension classes for exporting TreeGrid to excel and PDF in <code>Syncfusion.UI.Xaml.TreeGrid.Converter</code> namespace.
 </td>
 </tr>
 <tr>
@@ -98,17 +98,17 @@ Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
 
 You can refer [here](https://help.syncfusion.com/uwp/installation-and-upgrade/system-requirements) to know the assemblies installation location on your machine.
 
-### Creating simple application with SfTreeGrid
+### Creating simple application with TreeGrid
 
-In this walk through, you will create UWP application with SfTreeGrid control.
+In this walk through, you will create UWP application with TreeGrid control.
 
 1. [Creating project](https://help.syncfusion.com/uwp/treegrid/getting-started#creating-the-project)
 2. [Adding control via Designer](https://help.syncfusion.com/uwp/treegrid/getting-started#adding-control-via-designer)
 3. [Adding control manually in XAML](https://help.syncfusion.com/uwp/treegrid/getting-started#adding-control-manually-in-xaml)
 4. [Adding control manually in C# ](https://help.syncfusion.com/uwp/treegrid/getting-started#adding-control-manually-in-c)
-5. [Binding self-relational data in SfTreeGrid](https://help.syncfusion.com/uwp/treegrid/getting-started#binding-self-relational-data-in-sftreegrid)
+5. [Binding self-relational data in TreeGrid](https://help.syncfusion.com/uwp/treegrid/getting-started#binding-self-relational-data-in-sftreegrid)
 6. [Binding nested collection](https://help.syncfusion.com/uwp/treegrid/getting-started#binding-nested-collection-with-sftreegrid) 
-7. [Populate SfTreeGrid in on-demand](https://help.syncfusion.com/uwp/treegrid/getting-started#populate-sftreegrid-in-on-demand-unbound-mode)
+7. [Populate TreeGrid in on-demand](https://help.syncfusion.com/uwp/treegrid/getting-started#populate-sftreegrid-in-on-demand-unbound-mode)
 8. [Populate child nodes asynchronously](https://help.syncfusion.com/uwp/treegrid/getting-started#Populate-child-nodes-asynchronously)
 9. [Defining Columns](https://help.syncfusion.com/uwp/treegrid/getting-started#defining-columns)
 10. [Selection](https://help.syncfusion.com/uwp/treegrid/getting-started#selection)
@@ -117,13 +117,13 @@ In this walk through, you will create UWP application with SfTreeGrid control.
 
 ### Creating the project
 
-Create new Universal Windows Platform project in Visual Studio to display SfTreeGrid with data objects.
+Create new Universal Windows Platform project in Visual Studio to display TreeGrid with data objects.
 
 ### Adding control via Designer
 
-SfTreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically
+TreeGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically
 
-![Add control via designer in UWP treegrid](GettingStarted_images/GettingStarted_img1.png)
+![Add control via designer](GettingStarted_images/GettingStarted_img1.png)
 
 ### Adding control manually in XAML
 
@@ -136,9 +136,9 @@ In order to add control manually in XAML, do the below steps,
 * Syncfusion.SfInput.UWP
 * Syncfusion.SfShared.UWP
 
-2.Import SfTreeGrid control namespace `Syncfusion.UI.Xaml.TreeGrid` in XAML page.
+2.Import TreeGrid control namespace `Syncfusion.UI.Xaml.TreeGrid` in XAML page.
 
-3.Declare SfTreeGrid control in XAML page.
+3.Declare TreeGrid control in XAML page.
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,9 +169,9 @@ In order to add control manually in C#, do the below steps,
 * Syncfusion.SfInput.UWP
 * Syncfusion.SfShared.UWP
 
-2.Import SfTreeGrid namespace `Syncfusion.UI.Xaml.TreeGrid`.
+2.Import TreeGrid namespace `Syncfusion.UI.Xaml.TreeGrid`.
 
-3.Create SfTreeGrid control instance and add it to the Page.
+3.Create TreeGrid control instance and add it to the Page.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,9 +193,9 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-### Binding self-relational data in SfTreeGrid
+### Binding self-relational data in TreeGrid
 
-SfTreeGrid supports to bind self-relational data by setting [SfTreeGrid.ParentPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ParentPropertyName) and [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) properties where tree structure is formed based on these two properties.
+TreeGrid supports to bind self-relational data by setting [SfTreeGrid.ParentPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ParentPropertyName) and [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) properties where tree structure is formed based on these two properties.
 
 `SfTreeGrid.ParentPropertyName` - Denotes the property in data object which is used to identify the root nodes.
 
@@ -205,7 +205,7 @@ The data objects which has unique property value in `SfTreeGrid.ParentPropertyNa
  
 #### Creating Data Model for self-relational collection
 
-SfTreeGrid is a data-bound control. So before create binding to the control, you must create data model for application.
+TreeGrid is a data-bound control. So before create binding to the control, you must create data model for application.
 
 1.Creating data object class named `EmployeeInfo` and declare properties as shown below,
 
@@ -334,7 +334,7 @@ private  ObservableCollection<EmployeeInfo> GetEmployees()
 {% endtabs %}
 
 #### Binding to Data
-To bind the SfTreeGrid to data, set [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property to an IEnumerable of implementation and to form tree structure from self-relational data, set [SfTreeGrid.ParentPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ParentPropertyName) and [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) properties. Each row is SfTreeGrid is bound to an object in ItemsSource and each column is bound to a property in data object.
+To bind the TreeGrid to data, set [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property to an IEnumerable of implementation and to form tree structure from self-relational data, set [SfTreeGrid.ParentPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ParentPropertyName) and [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) properties. Each row is TreeGrid is bound to an object in ItemsSource and each column is bound to a property in data object.
 
 Bind the self-relations collection created in the previous step to `SfTreeGrid.ItemsSource` property and set `ParentPropertyName` as `ID` and `ChildPropertyName` as `ReportsTo` to form the tree structure as shown below, 
 
@@ -388,11 +388,11 @@ public sealed partial class MainPage : Page
 {% endhighlight %}
 {% endtabs %}
 
-![Binding data to UWP treegrid](GettingStarted_images/GettingStarted_img3.png)
+![Binding data](GettingStarted_images/GettingStarted_img3.png)
 
-### Binding Nested collection with SfTreeGrid
+### Binding Nested collection with TreeGrid
 
-SfTreeGrid supports to bind nested or hierarchical collection (where each data object has hierarchy within) by setting the property name to [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) which holds the child collection. 
+TreeGrid supports to bind nested or hierarchical collection (where each data object has hierarchy within) by setting the property name to [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName) which holds the child collection. 
 
 #### Creating Data Model for nested collection
 
@@ -488,7 +488,7 @@ public class ViewModel
 
 #### Binding to Data
 
-To bind the SfTreeGrid to data, set ItemsSource property to an IEnumerable of implementation and to form tree structure from nested collection data, set [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName). Each row in SfTreeGrid is bound to an object in ItemsSource and each column is bound to a property in data object.
+To bind the TreeGrid to data, set ItemsSource property to an IEnumerable of implementation and to form tree structure from nested collection data, set [SfTreeGrid.ChildPropertyName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ChildPropertyName). Each row in TreeGrid is bound to an object in ItemsSource and each column is bound to a property in data object.
 
 Bind the nested collection created in the previous step to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property and set `ChildPropertyName` as `Children` to form the tree structure as shown below, 
 
@@ -535,17 +535,17 @@ namespace NestedCollectionDemo
 {% endhighlight %}
 {% endtabs %}
 
-![Binding nested collection in UWP treegrid](GettingStarted_images/GettingStarted_img4.png)
+![Binding nested collection](GettingStarted_images/GettingStarted_img4.png)
 
-### Populate SfTreeGrid in on-demand (unbound mode)
+### Populate TreeGrid in on-demand (unbound mode)
 
-SfTreeGrid support to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event.  RequestTreeItems event is triggered at the time of loading and when user expand any row at runtime.
+TreeGrid support to load the data in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event.  RequestTreeItems event is triggered at the time of loading and when user expand any row at runtime.
 
-In the below example SfTreeGrid is populated through `SfTreeGrid.RequestTreeItems` instead of setting `SfTreeGrid.ItemsSource`. 
+In the below example TreeGrid is populated through `SfTreeGrid.RequestTreeItems` instead of setting `SfTreeGrid.ItemsSource`. 
 
 #### Creating Data Model
 
-You must create data model for application to populate the SfTreeGrid in on-demand. 
+You must create data model for application to populate the TreeGrid in on-demand. 
 
 1.Creating data object class named `EmployeeInfo` and declare properties as shown below,
 
@@ -673,8 +673,8 @@ public class ViewModel
 {% endtabs %}
 
 #### Populating TreeGrid
-Populate the data for SfTreeGrid in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. SfTreeGrid gets the root and leaf nodes through this event handler.
-TreeGridRequestTreeItemsEventArgs.ParentItem denotes the data object looking for its child nodes. If it is null, it denotes SfTreeGrid requesting root nodes.
+Populate the data for TreeGrid in on-demand through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. TreeGrid gets the root and leaf nodes through this event handler.
+TreeGridRequestTreeItemsEventArgs.ParentItem denotes the data object looking for its child nodes. If it is null, it denotes TreeGrid requesting root nodes.
 
 {% tabs %}
 {% highlight c# %}
@@ -702,13 +702,13 @@ private void TreeGrid_RequestTreeItems(object sender, TreeGridRequestTreeItemsEv
 {% endhighlight %}
 {% endtabs %}
 
-You can let SfTreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree()](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RepopulateTree) method.
+You can let TreeGrid to populate the data at runtime by calling [SfTreeGrid.RepopulateTree()](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RepopulateTree) method.
 
-![Populate UWP treegrid](GettingStarted_images/GettingStarted_img3.png)
+![Populate TreeGrid](GettingStarted_images/GettingStarted_img3.png)
 
 ### Populate child nodes asynchronously
 
-SfTreeGrid supports to load the child items asynchronously through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. RequestTreeItems event is triggered at the time of loading and when user expand any node at runtime.
+TreeGrid supports to load the child items asynchronously through [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_RequestTreeItems) event. RequestTreeItems event is triggered at the time of loading and when user expand any node at runtime.
 
 In the below example child nodes are populated asynchronously through SfTreeGrid.RequestTreeItems event.
 
@@ -877,7 +877,7 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-#### Populate treegrid
+#### Populate TreeGrid
 
 You can populate the child nodes	asynchronously using async and await at runtime when retrieving data from web services or any database. This can be performed by [PopulateChildNodes](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_PopulateChildNodes_System_Collections_Generic_IEnumerable_System_Object__) method from [TreeGridRequestTreeItemsEventArgs.ParentNode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRequestTreeItemsEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRequestTreeItemsEventArgs_ParentNode) property.
 
@@ -918,7 +918,7 @@ You can download the sample [here](https://github.com/SyncfusionExamples/how-to-
 
 ### Defining Columns
 
-By default, the SfTreeGrid control generates the columns automatically when value assigned to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
+By default, the TreeGrid control generates the columns automatically when value assigned to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with.
 
 The following table lists the column types and it’s constraints for auto column generation.
 
@@ -972,7 +972,7 @@ Property of type Uri
 </td>
 </tr>
 </table>
-When columns are auto-generated, you can handle the [SfTreeGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoGeneratingColumn) event to customize or cancel the columns before they are added to the SfTreeGrid.
+When columns are auto-generated, you can handle the [SfTreeGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoGeneratingColumn) event to customize or cancel the columns before they are added to the TreeGrid.
 
 You can prevent the automatic column generation by setting [SfTreeGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns) property to false. When `SfTreeGrid.AutoGenerateColumns` property is `false`, you have to define the columns to be displayed as below,
 
@@ -995,7 +995,7 @@ You can prevent the automatic column generation by setting [SfTreeGrid.AutoGener
 {% endhighlight %}
 {% endtabs %}
 
-Below are the list of column types provided in SfTreeGrid.
+Below are the list of column types provided in TreeGrid.
 
 <table>
 <tr>
@@ -1011,7 +1011,7 @@ Comments
 TreeGridTextColumn
 </td>
 <td>
-Represents SfTreeGrid column that hosts textual content in its cells.
+Represents TreeGrid column that hosts textual content in its cells.
 </td>
 </tr>
 <tr>
@@ -1019,7 +1019,7 @@ Represents SfTreeGrid column that hosts textual content in its cells.
 TreeGridNumericColumn
 </td>
 <td>
-Represents SfTreeGrid column that hosts `SfNumericTextBox`controls in its cells which is used to format and display Numeric values.
+Represents TreeGrid column that hosts `SfNumericTextBox`controls in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -1027,7 +1027,7 @@ Represents SfTreeGrid column that hosts `SfNumericTextBox`controls in its cells 
 TreeGridDateTimeColumn
 </td>
 <td>
-Represents SfTreeGrid column that hosts `SfDatePicker` controls in its cells which is used to display and format DateTime values.
+Represents TreeGrid column that hosts `SfDatePicker` controls in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>
@@ -1035,7 +1035,7 @@ Represents SfTreeGrid column that hosts `SfDatePicker` controls in its cells whi
 TreeGridComboBoxColumn
 </td>
 <td>
-Represents SfTreeGrid column that hosts `ComboBox`controls in its cells.
+Represents TreeGrid column that hosts `ComboBox`controls in its cells.
 </td>
 </tr>
 <tr>
@@ -1043,7 +1043,7 @@ Represents SfTreeGrid column that hosts `ComboBox`controls in its cells.
 TreeGridCheckBoxColumn
 </td>
 <td>
-Represents SfTreeGrid column that hosts `CheckBox` controls in its cells.
+Represents TreeGrid column that hosts `CheckBox` controls in its cells.
 </td>
 </tr>
 <tr>
@@ -1051,7 +1051,7 @@ Represents SfTreeGrid column that hosts `CheckBox` controls in its cells.
 TreeGridHyperlinkColumn
 </td>
 <td>
-Represents SfTreeGrid column that hosts `HyperLink` controls in its cells.
+Represents TreeGrid column that hosts `HyperLink` controls in its cells.
 </td>
 </tr>
 <tr>
@@ -1059,20 +1059,20 @@ Represents SfTreeGrid column that hosts `HyperLink` controls in its cells.
 TreeGridTemplateColumn
 </td>
 <td>
-Represents SfTreeGrid column that hosts template-specified content in its cells
+Represents TreeGrid column that hosts template-specified content in its cells
 </td>
 </tr>
 </table>
 
 ### Selection
 
-By default, the entire row is selected when a user clicks a cell in a SfTreeGrid. You can set the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to specify whether a user can select single row or cell, or multiple rows or cells. 
+By default, the entire row is selected when a user clicks a cell in a TreeGrid. You can set the [SfTreeGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to specify whether a user can select single row or cell, or multiple rows or cells. 
 
 You can handle the selection operations with the help of [SfTreeGrid.SelectionChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionChanging) and [SfTreeGrid.SelectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SelectionChanged) events.
 
 ### Sorting
 
-By default, you can sort columns in a SfTreeGrid by clicking the column header. You can configure the sorting by setting [SfTreeGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortColumnDescriptions) property.
+By default, you can sort columns in a TreeGrid by clicking the column header. You can configure the sorting by setting [SfTreeGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortColumnDescriptions) property.
 
 You can customize sorting by handling the [SfTreeGrid.SortColumnChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortColumnsChanging) and 
 [SfTreeGrid.SortColumnChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortColumnsChanged) events. To cancel the default sort, set the Cancel property to true in `SfTreeGrid.SortColumnChanging` event.

@@ -11,7 +11,7 @@ documentation: ug
 
 ## Overview
 
-SfTreeGrid provides support for programmatic filtering. It can be achieved by setting [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) delegate and calling [SfTreeGrid.View.RefreshFilter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_RefreshFilter) method.
+UWP TreeGrid provides support for programmatic filtering. It can be achieved by setting [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) delegate and calling [SfTreeGrid.View.RefreshFilter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_RefreshFilter) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -34,12 +34,12 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-Here, `FilterNodes` delegate filters the data based on Salary. `FilterNodes` delegate is assigned to [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) predicate to filter the tree grid. After that, [SfTreeGrid.View.RefreshFilter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_RefreshFilter) method is called to refresh the nodes. If the node satisfies the filter conditions, true will be returned. Else false will be returned.
+Here, `FilterNodes` delegate filters the data based on Salary. `FilterNodes` delegate is assigned to [SfTreeGrid.View.Filter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_Filter) predicate to filter the TreeGrid. After that, [SfTreeGrid.View.RefreshFilter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridView.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridView_RefreshFilter) method is called to refresh the nodes. If the node satisfies the filter conditions, true will be returned. Else false will be returned.
 ![Filtering_img1](Filtering_images/Filtering_img1.png)
 
 While filtering, if the node satisfies filter condition, [IsFiltered](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html#Syncfusion_UI_Xaml_TreeGrid_TreeNode_IsFiltered) property of [TreeNode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeNode.html) will be set as false. Else, it will be true. If `IsFiltered` value is True, the node will not be displayed in view, else it will be displayed in view.
 
-N> SfTreeGrid refreshes the filtering on property change if [SfTreeGrid.LiveNodeUpdateMode ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode)property is set as `AllowDataShaping`.
+N> TreeGrid refreshes the filtering on property change if [SfTreeGrid.LiveNodeUpdateMode ](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LiveNodeUpdateMode)property is set as `AllowDataShaping`.
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/FilteringDemo_UWP-1890724267).
 
@@ -55,19 +55,19 @@ treeGrid.FilterLevel = FilterLevel.All;
 {% endhighlight %}
 {% endtabs %}
 
-* Root - Filter will be applied to root nodes only in SfTreeGrid.
+* Root - Filter will be applied to root nodes only in TreeGrid.
 
-* All - Filter will be applied to all the nodes in SfTreeGrid.
+* All - Filter will be applied to all the nodes in TreeGrid.
 
 * Extended - Filtering is applied based on the node hierarchy. Child nodes are included in filtering only when their parent node is expanded. If a node matches the filter condition, all of its ancestor nodes are displayed to preserve the hierarchy, even if those ancestor nodes do not match the filter condition.
 
 **Root**
 
-Filter will be applied to root nodes only in SfTreeGrid. For other nodes, `IsFiltered` value will be false and they always will be displayed in view.
+Filter will be applied to root nodes only in TreeGrid. For other nodes, `IsFiltered` value will be false and they always will be displayed in view.
 
 **All**
 
-Filter will be applied to all the nodes in SfTreeGrid. If the parent node does not match the filter condition, filter will not be applied for child nodes. Else, filter will be applied to its child nodes also.
+Filter will be applied to all the nodes in TreeGrid. If the parent node does not match the filter condition, filter will not be applied for child nodes. Else, filter will be applied to its child nodes also.
 
 **Extended**
 
@@ -77,7 +77,7 @@ N> It is also possible to change `FilterLevel` at runtime.
 
 ## Clear filters
 
-You can clear the filters applied in tree grid by setting `SfTreeGrid.View.Filter` delegate as null and calling `SfTreeGrid.View.RefreshFilter` method.
+You can clear the filters applied in TreeGrid by setting `SfTreeGrid.View.Filter` delegate as null and calling `SfTreeGrid.View.RefreshFilter` method.
 
 {% tabs %}
 {% highlight c# %}

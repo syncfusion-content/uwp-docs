@@ -10,7 +10,7 @@ documentation: ug
 
 # Sorting in UWP TreeGrid
 
-SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
+UWP TreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -93,7 +93,7 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Multi column sorting
 
-SfTreeGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key.
+TreeGrid control allows you sort more than one column, where sorting is applied one column against other columns. To apply sorting on multiple columns, user have to click the column header by pressing the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key.
 In the below screen shot, the `First Name` column sorted. Then the `Employee ID` column is sorted against the `First Name` data by clicking column header by pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; key. The sorting state of `First Name` column is preserved and `Employee ID` column sorted against `First Name` column.
 
 ![Sorting_img2](Sorting_images/Sorting_img2.png)
@@ -183,7 +183,7 @@ this.treeGrid.SortColumnDescriptions.Clear();
 
 ## Custom sorting
 
-SfTreeGrid allows you to sort the columns based on the custom logic. 
+TreeGrid allows you to sort the columns based on the custom logic.
 The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.SortComparer.html) instance to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers). 
 
 The [SortComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.SortComparer.html) have the following properties,
@@ -245,7 +245,7 @@ public class CustomSortComparer : IComparer<object>, ISortDirection
 {% endhighlight %}
 {% endtabs %}
 
-####Adding custom comparer to SfTreeGrid
+####Adding custom comparer to TreeGrid
 
 Custom comparer can be added to [SfTreeGrid.SortComparers](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_SortComparers) property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
 

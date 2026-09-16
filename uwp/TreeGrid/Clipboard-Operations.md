@@ -9,7 +9,7 @@ documentation: ug
 
 # Clipboard Operations in UWP TreeGrid
 
-SfTreeGrid provides support to the clipboard operations such as cut, copy, and paste the data within control and between other applications such as Notepad and Excel. The clipboard operations of copy and paste are enabled by default. You can copy the selected nodes/cells from tree grid by clicking `Ctrl+C` and can paste the content from [Clipboard](https://msdn.microsoft.com/en-us/library/system.windows.clipboard.aspx) to tree grid by clicking `Ctrl+V`.
+UWP TreeGrid provides support to the clipboard operations such as cut, copy, and paste the data within the control and between other applications such as Notepad and Excel. The clipboard operations of copy and paste are enabled by default. You can copy the selected nodes/cells from TreeGrid by clicking `Ctrl+C` and can paste the content from [Clipboard](https://msdn.microsoft.com/en-us/library/system.windows.clipboard.aspx) to TreeGrid by clicking `Ctrl+V`.
 
 ## Copy
 
@@ -17,9 +17,9 @@ The copy operation works based on the [GridCopyOption](https://help.syncfusion.c
 
 GridCopyOption provides the following options:
 
-* [None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Disables copy in tree grid.
+* [None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Disables copy in the control.
 
-* [CopyData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Enables copy in tree grid.
+* [CopyData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Enables copy in the control.
 
 * [IncludeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Copies column header along with data.
 
@@ -50,7 +50,7 @@ this.treeGrid.GridCopyOption = GridCopyOption.CopyData | GridCopyOption.IncludeH
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Copied content pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img1.jpeg)
+![Copied content pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img1.jpeg)
 
 ## Paste
 
@@ -58,9 +58,9 @@ The paste operation works based on the [GridPasteOption](https://help.syncfusion
 
 GridPasteOption provides the following options:
 
-* [None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Disables paste in tree grid.
+* [None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Disables paste in the control.
 
-* [PasteData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Enables paste in tree grid. When an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
+* [PasteData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Enables paste in the control. When an incompatible value is pasted into a record/cell, the pasting operation is skipped for that particular record/cell.
 
 * [ExcludeFirstLine](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridPasteOption.html): Pastes data copied with `IncludeHeaders` copy option.
 
@@ -93,7 +93,7 @@ this.treeGrid.GridPasteOption = GridPasteOption.PasteData | GridPasteOption.Excl
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Copied record pasted in new record](Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
+![Copied record pasted in new record](Clipboard-Operations_images/Clipboard-Operations_img2.jpeg)
 
 ## Cut
 
@@ -101,9 +101,9 @@ The cut operation works based on the [GridCopyOption](https://help.syncfusion.co
 
 GridCopyOption provides the following options:
 
-* [None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Disables cut in tree grid.
+* [None](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html): Disables cut in the control.
 
-* [CutData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Enables cut in tree grid.
+* [CutData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html) – Enables cut in the control.
 
 * [IncludeHeaders](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyOption.html):Copies column header along with data.
 
@@ -130,13 +130,13 @@ this.treeGrid.GridCopyOption = GridCopyOption.CutData | GridCopyOption.IncludeHe
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Data from the record is cut and pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img3.jpeg)
+![Data from a record cut and pasted in notepad](Clipboard-Operations_images/Clipboard-Operations_img3.jpeg)
 
 ## Events
 
 ### CopyContent
 
-The [CopyContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when copy/cut the cells in tree grid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for to the `CopyContent` event. You can cancel copy operation by handling this event.
+The [CopyContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when copy/cut the cells in the control. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information for to the `CopyContent` event. You can cancel copy operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -153,7 +153,7 @@ private void TreeGrid_CopyContent(object sender, GridCopyPasteEventArgs e)
 
 ### PasteContent
 
-The [PasteContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when paste the clipboard value into tree grid. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information to the PasteContent event. You can cancel the paste operation by handling this event.
+The [PasteContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event occurs when paste the clipboard value into the control. [GridCopyPasteEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCopyPasteEventArgs.html) provides information to the PasteContent event. You can cancel the paste operation by handling this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -179,7 +179,7 @@ The [CopyGridCellContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.
 
 * [RowData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCopyPasteCellEventArgs_RowData): Returns corresponding RowData of a cell.
 
-* [OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender): Returns SfTreeGrid.
+* [OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender): Returns TreeGrid.
 
 You can change the text copied to clipboard by changing the ClipBoardValue.
 
@@ -195,7 +195,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-The following code example changes the clipboard value to 100 instead of cell value 1094 in tree grid.
+The following code example changes the clipboard value to 100 instead of cell value 1094 in the control.
 
 {% tabs %}
 {% highlight c# %}
@@ -207,7 +207,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Copied data customized through CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img4.jpeg)
+![Copied data customized through the CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img4.jpeg)
 
 The following code example demonstrates how to handle the copy operation when MappingName of a Column is Id.
 
@@ -221,7 +221,7 @@ private void TreeGrid_CopyCellContent(object sender, TreeGridCopyPasteCellEventA
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Copy operation for a column handled through CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img5.jpeg)
+![Copy operation for a column handled through the CopyCellContent event](Clipboard-Operations_images/Clipboard-Operations_img5.jpeg)
 
 ### PasteCellContent
 
@@ -233,9 +233,9 @@ The [PasteGridCellContent](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml
 
 * [RowData](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCopyPasteCellEventArgs.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCopyPasteCellEventArgs_RowData): Returns the corresponding RowData of a cell.
 
-* [OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender): Returns SfTreeGrid.
+* [OriginalSender](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCancelEventArgs.html#Syncfusion_UI_Xaml_Grid_GridCancelEventArgs_OriginalSender): Returns TreeGrid.
 
-You can paste the text to tree grid by changing the ClipBoardValue.
+You can paste the text to the control by changing the ClipBoardValue.
 
 {% tabs %}
 {% highlight c# %}
@@ -263,7 +263,7 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Data of a column customized when pasting through PasteCellContent event](Clipboard-Operations_images/Clipboard-Operations_img6.jpeg)
+![Data of a column customized when pasting through the PasteCellContent event](Clipboard-Operations_images/Clipboard-Operations_img6.jpeg)
 
 The following code example demonstrates how to handle the paste operation when MappingName of column is Id.
 
@@ -279,13 +279,13 @@ private void TreeGrid_PasteCellContent(object sender, TreeGridCopyPasteCellEvent
 {% endhighlight %}
 {% endtabs %}
 
-![UWP treegrid shows with Paste operation of a column is handled through PasteCellContent event](Clipboard-Operations_images/Clipboard-Operations_img7.jpeg)
+![Paste operation of a column handled through the PasteCellContent event](Clipboard-Operations_images/Clipboard-Operations_img7.jpeg)
 
 ## Handle the clipboard operations programmatically
 
 ### Copy the node programmatically
 
-Copy the selected nodes in tree grid using the [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
+Copy the selected nodes in TreeGrid using the [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of TreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -295,7 +295,7 @@ this.treeGrid.TreeGridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy a record by selecting the record using the [MoveCurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method and [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
+Copy a record by selecting the record using the [MoveCurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_MoveCurrentCell_Syncfusion_UI_Xaml_ScrollAxis_RowColumnIndex_System_Boolean_) method and [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of TreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -308,7 +308,7 @@ this.treeGrid.TreeGridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-Copy multiple records by selecting a group of records using the SelectRows method and [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
+Copy multiple records by selecting a group of records using the SelectRows method and [Copy](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Copy) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of TreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -318,9 +318,9 @@ this.treeGrid.TreeGridCopyPaste.Copy();
 {% endhighlight %}
 {% endtabs %}
 
-### Paste to tree grid programmatically
+### Paste to TreeGrid programmatically
 
-Paste the clipboard value into tree grid using the [Paste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Paste) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
+Paste the clipboard value into TreeGrid using the [Paste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Paste) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of TreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -329,7 +329,7 @@ this.treeGrid.TreeGridCopyPaste.Paste();
 {% endhighlight %}
 {% endtabs %}
 
-Paste the clipboard value into selected record by selecting the record using the MoveCurrentCell method and `Paste` method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
+Paste the clipboard value into selected record by selecting the record using the MoveCurrentCell method and `Paste` method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of TreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -342,9 +342,9 @@ this.treeGrid.TreeGridCopyPaste.Paste();
 {% endhighlight %}
 {% endtabs %}
 
-### Cut from tree grid programmatically
+### Cut from TreeGrid programmatically
 
-Cut the selected records/cells in tree grid using the [Cut](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Cut) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
+Cut the selected records/cells in TreeGrid using the [Cut](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_Cut) method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of TreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -352,7 +352,7 @@ this.treeGrid.TreeGridCopyPaste.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-Cut the entire record in tree grid by selecting whole tree grid using the [SelectAll](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_SelectAll) method and `Cut` method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of tree grid.
+Cut the entire record in TreeGrid by selecting whole TreeGrid using the [SelectAll](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowSelectionController_SelectAll) method and `Cut` method in [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) of TreeGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -363,7 +363,7 @@ this.treeGrid.TreeGridCopyPaste.Cut();
 
 ## Customize copy paste behavior
 
-The tree grid processes the clipboard operations in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class. You can customize the default copy paste behaviors by overriding the TreeGridCutCopyPaste class and set it to `SfTreeGrid.TreeGridCopyPaste`.
+The TreeGrid processes the clipboard operations in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class. You can customize the default copy paste behaviors by overriding the TreeGridCutCopyPaste class and set it to `SfTreeGrid.TreeGridCopyPaste`.
 
 {% tabs %}
 {% highlight c# %}
@@ -387,7 +387,7 @@ public MainPage()
 
 ### Paste a record into selected rows
 
-By default, you can copy a row and paste it into another row in tree grid. The following code example shows how to copy a row and paste it into all the selected rows by overriding the [PasteRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteRow_System_Object_System_Object_) method in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
+By default, you can copy a row and paste it into another row in TreeGrid. The following code example shows how to copy a row and paste it into all the selected rows by overriding the [PasteRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteRow_System_Object_System_Object_) method in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -431,7 +431,7 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
 
 ### Select pasted records
 
-By default, after pasting the clipboard value to tree grid, the selection is maintained in previously selected records. The following code example shows how to select the pasted records by overriding the [PasteRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteRow_System_Object_System_Object_) method in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
+By default, after pasting the clipboard value to TreeGrid, the selection is maintained in previously selected records. The following code example shows how to select the pasted records by overriding the [PasteRow](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteRow_System_Object_System_Object_) method in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -455,7 +455,7 @@ public class CustomCopyPaste : TreeGridCutCopyPaste
 
 ### Create new records when pasting
 
-By default, when paste the clipboard value to tree grid, it changes the values of the already existing records. The following code example shows how to add the copied records as new rows in tree grid by overriding the [PasteRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteRows_System_Object_) method in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
+By default, when paste the clipboard value to TreeGrid, it changes the values of the already existing records. The following code example shows how to add the copied records as new rows in TreeGrid by overriding the [PasteRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridCutCopyPaste_PasteRows_System_Object_) method in the [TreeGridCutCopyPaste](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.TreeGridCutCopyPaste.html) class.
 
 {% tabs %}
 {% highlight c# %}
