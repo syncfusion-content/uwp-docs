@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Virtualization in UWP Data Grid
 
-SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
+UWP Data Grid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ Use to load data in on-demand. You can load data only for current page from serv
  
 You can load the large amount of data in less time using [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) which is derived from [VirtualizingCollectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.VirtualizingCollectionView.html) to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource).
  
-In the below code, ViewModel defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to SfDataGrid.
+In the below code, ViewModel defined with `GridVirtualizingCollectionView` by passing complete records collection and bound to Data Grid.
 
 
 {% tabs %}
@@ -107,7 +107,7 @@ public class ViewModel
 
 ## Creating Custom VirtualizingCollectionView
 
-SfDataGrid supports to override [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) and retrieve the data in on-demand by inheriting `GridVirtualizingCollectionView` class. The `GridVirtualizingCollectionView` class provides set of virtual methods to load data and handle the operations like sorting, filtering, and grouping. 
+Data Grid supports to override [GridVirtualizingCollectionView](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridVirtualizingCollectionView.html) and retrieve the data in on-demand by inheriting `GridVirtualizingCollectionView` class. The `GridVirtualizingCollectionView` class provides set of virtual methods to load data and handle the operations like sorting, filtering, and grouping.
 
 You can load the data in on-demand by overriding below methods in `GridVirtualizingCollectionView`.
 
@@ -426,12 +426,12 @@ public class GridVirtualizingCollectionViewExt : GridVirtualizingCollectionView
 
 ## Incremental Loading
  
-SfDataGrid supports to load the data incrementally using `ISupportIncrementalLoading` interface.
+Data Grid supports to load the data incrementally using `ISupportIncrementalLoading` interface.
 
 `ISupportIncrementalLoading` interface has `LoadMoreItemsAsync` method which helps to load the data incrementally. [LoadMoreItemsAsync](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) called in on-demand while scrolling based on [HasMoreItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_HasMoreItems) property.
-If `HasMoreItems` is `false`, SfDataGrid stops calling `LoadMoreItemsAsync`.  
+If `HasMoreItems` is `false`, Data Grid stops calling `LoadMoreItemsAsync`.
 
-SfDataGrid have [IncrementalList](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
+Data Grid have [IncrementalList](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html) which is derived from `ISupportIncrementalLoading`. You can use `IncrementalList` or create collection derived from `ISupportIncrementalLoading` and bind it `SfDataGrid.ItemsSource`.
 
 In the below code, `IncrementalList` is initialized by passing Action to its constructor for loading items incrementally.
 
@@ -482,7 +482,7 @@ You can download the sample from [here](https://www.syncfusion.com/downloads/sup
 
 You can display animations when fetching data from service for [LoadMoreItemsAsync](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadMoreItemsAsync_System_UInt32_) method call, using [BackgroundWorker](https://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx).
  
-In the below code snippet data fetched from service using `BackgroundWorker` and `SfBusyIndicator` displayed over SfDataGrid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
+In the below code snippet data fetched from service using `BackgroundWorker` and `SfBusyIndicator` displayed over Data Grid based on `IsBusy` property in ViewModel, until `BackgroundWorker` completes its action.
 
 {% tabs %}
 {% highlight xaml %}
@@ -769,4 +769,4 @@ You can download the sample from [here](https://www.syncfusion.com/downloads/sup
 
 ## Paging
 
-SfDataGrid supports to load paged data source using `SfDataPager`. You can use the paging in SfDataGrid by go through the **Paging** section.
+Data Grid supports to load paged data source using `SfDataPager`. You can use the paging in Data Grid by go through the **Paging** section.

@@ -10,7 +10,7 @@ documentation: ug
 
 # Data Binding in UWP Data Grid
 
-SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
+Data Grid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -20,17 +20,17 @@ SfDataGrid control is designed to display the bounded data in a tabular format. 
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged) interface, then SfDataGrid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://msdn.microsoft.com/library/ms668604), SfDataGrid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19), SfDataGrid will not refresh the UI automatically.
+If the data source implements [INotifyCollectionChanged](https://msdn.microsoft.com/en-us/library/System.Collections.Specialized.INotifyCollectionChanged) interface, then Data Grid control will automatically refresh the UI when item is added, removed or while list cleared. When you add, remove item in [ObservableCollection](https://msdn.microsoft.com/library/ms668604), Data Grid automatically refresh the UI as `ObservableCollection` implements `INotifyCollectionChanged`. But when you do the same in [List](https://msdn.microsoft.com/en-us/library/6sh2ey19), Data Grid will not refresh the UI automatically.
 
 ## Binding with IEnumerable
 
-SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
+Data Grid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, filtering, summaries are supported when you are binding collection derived from IEnumerable.
 
 ## Binding with dynamic data object
 
-SfDataGrid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
+Data Grid control supports to bind [dynamic data object](https://msdn.microsoft.com/en-us/library/system.dynamic). Below are the limitations when you are binding dynamic data object,
 
-1. SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
+1. Data Grid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 2. In WinRT, UI won’t get refreshed when you are changing the property value. This is limitation in WinRT platform.
 
 All the data operations (sorting, grouping, filtering and etc.) are supported when you are binding dynamic data object. If the data operations are not working as expected, set [SfDataGrid.IsDynamicItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_IsDynamicItemsSource) property as `true` .
@@ -38,7 +38,7 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
  
 ## Binding Complex properties
 
-SfDataGrid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName).
+Data Grid control provides support to bind complex property to its columns. To bind the complex property to [GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the complex property path to [MappingName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName).
 
 {% tabs %}
 {% highlight xaml %}
@@ -56,11 +56,11 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
 
 ### Limitations when binding complex property 
 
-* SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
+* Data Grid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 
 ## Binding Indexer properties
 
-SfDataGrid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName). 
+Data Grid control provides support to bind an indexer property to its columns. To bind an indexer property to [GridColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html), set the indexer property path to [MappingName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,12 +81,12 @@ All the data operations (sorting, grouping, filtering and etc.) are supported wh
  
 ### Limitations when binding indexer property 
 
-* SfDataGrid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
+* Data Grid doesn’t support [LiveDataUpdateMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LiveDataUpdateMode) - `AllowDataShaping` and `AllowSummaryUpdate`.
 
 
 ## Defining source data type
 
-Based on type of data item bound to SfDataGrid, the data operations and column auto generation are carried out. You can specify the type of underlying data item explicitly for doing data operation by setting [SfDataGrid.SourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SourceType) property.
+Based on type of data item bound to Data Grid, the data operations and column auto generation are carried out. You can specify the type of underlying data item explicitly for doing data operation by setting [SfDataGrid.SourceType](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SourceType) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -114,9 +114,9 @@ The [GridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfu
 
 ## View 
 
-DataGrid has the View property of type `ICollectionViewAdv` interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to `ItemsSource` property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
+Data Grid has the View property of type `ICollectionViewAdv` interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to `ItemsSource` property of Data Grid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
 
-N> DataGrid creates different types of views derived from [ICollectionViewAdv](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.ICollectionViewAdv.html) interface based on ItemsSource.
+N> Data Grid creates different types of views derived from [ICollectionViewAdv](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.ICollectionViewAdv.html) interface based on ItemsSource.
 
 <table>
 <tr>
@@ -127,16 +127,16 @@ N> DataGrid creates different types of views derived from [ICollectionViewAdv](h
 <tr>
 <td>Records</td>
 <td>IRecordsList</td>
-<td>Maintains the Records that are displayed in View when DataGrid is not Grouped.</td></tr>
+<td>Maintains the Records that are displayed in View when Data Grid is not Grouped.</td></tr>
 <tr>
 <td>TopLevelGroup</td>
 <td>TopLevelGroup</td>
-<td>Maintains the Group information when DataGrid is Grouped.</td>
+<td>Maintains the Group information when Data Grid is Grouped.</td>
 </tr>
 <tr>
 <td>TopLevelGroup.DisplayElements</td>
 <td>GroupDisplayElements</td>
-<td>Maintains the Records and Group information that are displayed in View when DataGrid is Grouped.</td>
+<td>Maintains the Records and Group information that are displayed in View when Data Grid is Grouped.</td>
 </tr>
 <tr>
 <td>Filter</td>
@@ -172,21 +172,21 @@ N> DataGrid creates different types of views derived from [ICollectionViewAdv](h
 <td>TableSummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the TableSummaryRows collection information. To know more about Table Summaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#table-summary" aria-label="Learn more about DataGrid Table Summaries documentation" >Table Summaries</a> documentation.
+Maintains the TableSummaryRows collection information. To know more about Table Summaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#table-summary" aria-label="Learn more about Data Grid Table Summaries documentation" >Table Summaries</a> documentation.
 </td> 
 </tr>
 <tr>
 <td>SummaryRows</td>
 <td>ObservableCollection&lt;ISummaryRow&gt;</td>
 <td>
-Maintains the SummaryRows collection information. To know more about summaries, see the <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries" aria-label="Learn more about DataGrid  Summaries documentation">Summaries</a> documentation. 
+Maintains the SummaryRows collection information. To know more about summaries, see the <a href="https://help.syncfusion.com/uwp/sfdatagrid/summaries" aria-label="Learn more about Data Grid  Summaries documentation">Summaries</a> documentation. 
 </td>
 </tr>
 <tr>
 <td>CaptionSummaryRows</td>
 <td>ISummaryRow</td>
 <td>
-Maintains the CaptionSummaryRow information. To know more about CaptionSummaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#caption-summaries" aria-label="Learn more about DataGrid Caption Summaries documentation">Caption Summaries</a> documentation.   
+Maintains the CaptionSummaryRow information. To know more about CaptionSummaries, see the <a href="https://help.syncfusion.com/uwp/datagrid/summaries#caption-summaries" aria-label="Learn more about Data Grid Caption Summaries documentation">Caption Summaries</a> documentation.   
 </td>
 </tr>
 </table>
@@ -254,7 +254,7 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </table>
 
 
-N> View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
+N> View has properties that already defined in Data Grid. It recommended setting those properties via Data Grid.
 
 ## Maintain scroll position when changing the ItemsSource
 

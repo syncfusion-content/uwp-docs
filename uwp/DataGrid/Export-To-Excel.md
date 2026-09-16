@@ -10,7 +10,7 @@ documentation: ug
 
 # Export To Excel in UWP Data Grid
 
-SfDataGrid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
+UWP Data Grid provides support to export data to excel. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and Details View while exporting.
 
 The following assemblies needs to be added for exporting to excel.
 
@@ -19,7 +19,7 @@ The following assemblies needs to be added for exporting to excel.
 
 For NuGet package, install [Syncfusion.DataGridExcelExport.UWP](https://www.nuget.org/packages/Syncfusion.DataGridExcelExport.UWP) package. For more details refer this [UG link](https://help.syncfusion.com/uwp/control-dependencies#exporting-datagrid-to-excel-pdf-and-csv).
 
-You can export SfDataGrid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.html) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.html) namespace.
+You can export Data Grid to excel by using the [ExportToExcel](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.GridExcelExportExtension.html) extension method present in the [Syncfusion.UI.Xaml.Grid.Converter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.html) namespace.
 
 {% tabs %}
 {% highlight c# %}
@@ -43,7 +43,7 @@ if (storageFile != null)
 ![Export-To-Excel_img2](Export-To-Excel_images/Export-To-Excel_img2.png)
 
 
-N> SfDataGrid exports data to excel by using XlsIO.
+N> Data Grid exports data to excel by using XlsIO.
 
 ## Exporting options
 
@@ -101,7 +101,7 @@ if (storageFile != null)
 
 ### Exclude columns while exporting
 
-By default, all the columns (including hidden columns) in SfDataGrid will be exported to Excel. If you want to exclude some columns while exporting to Excel, you can use [ExcludeColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ExcludeColumns) field in `ExcelExportingOptions`.
+By default, all the columns (including hidden columns) in Data Grid will be exported to Excel. If you want to exclude some columns while exporting to Excel, you can use [ExcludeColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_ExcludeColumns) field in `ExcelExportingOptions`.
 
 {% tabs %}
 {% highlight c# %}
@@ -616,11 +616,11 @@ Here, OrderID column cells are customized while exporting.
 
 ## Customize exported workbook and worksheet
 
-SfDataGrid exports to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview).
+Data Grid exports to excel by using [XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview).
  
 ### Workbook
 
-SfDataGrid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/uwp/Syncfusion.XlsIO.ExcelEngine.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving.
+Data Grid provides option to return [ExcelEngine](https://help.syncfusion.com/cr/uwp/Syncfusion.XlsIO.ExcelEngine.html) from that you can get exported workbook. This allows you to protect, encrypt and add worksheet before saving.
  
 {% tabs %}
 {% highlight c# %}
@@ -638,7 +638,7 @@ if (storageFile != null)
 
 ### Worksheet customization
 
-SfDataGrid provides support to export to already existing file or worksheet.
+Data Grid provides support to export to already existing file or worksheet.
  
 In the below code snippet, worksheet is created and passed to `ExportToExcel` method. In the same way, you can open already existing excel also using `XlsIO`.
  
@@ -831,7 +831,7 @@ Here, OrderID column is displayed in `DetailsViewDataGrid` and it is excluded wh
 
 ### Customizing DetailsViewDataGrid cells
 
-Like parent DataGrid, you can customize the `DetailsViewDataGrid` cells also by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_CellsExportingEventHandler). Based on [GridCellExcelExportingEventArgs.GridViewDefinition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.GridCellExcelExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridCellExcelExportingEventArgs_GridViewDefinition) property, you can identify the particular `DetailsViewDataGrid` and customize it.
+Like parent Data Grid, you can customize the `DetailsViewDataGrid` cells also by using [CellsExportingEventHandler](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.ExcelExportingOptions.html#Syncfusion_UI_Xaml_Grid_Converter_ExcelExportingOptions_CellsExportingEventHandler). Based on [GridCellExcelExportingEventArgs.GridViewDefinition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.Converter.GridCellExcelExportingEventArgs.html#Syncfusion_UI_Xaml_Grid_Converter_GridCellExcelExportingEventArgs_GridViewDefinition) property, you can identify the particular `DetailsViewDataGrid` and customize it.
 
 {% tabs %}
 {% highlight c# %}

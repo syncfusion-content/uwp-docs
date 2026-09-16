@@ -9,11 +9,11 @@ documentation: ug
 
 # Paging in UWP Data Grid
 
-SfDataGrid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](http://help.syncfusion.com/uwp/datapager) control user guide for more information.
+UWP Data Grid provides support to manipulate the data using SfDataPager control. You can refer [SfDataPager](http://help.syncfusion.com/uwp/datapager) control user guide for more information.
 
 ## Getting started
 
-Follow the below steps to bind SfDataGrid with SfDataPager.
+Follow the below steps to bind Data Grid with SfDataPager.
  
 1. Create IEnumerable collection that you want to bind and set it to `SfDataPager.Source` property.
 2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of records to be displayed per page.
@@ -124,8 +124,8 @@ public class OrderInfo
 
 ### Limitations
 
-1. `AddNewRow` is not supported in SfDataGrid.
-2. `FilterRow` is not supported in SfDataGrid.
+1. `AddNewRow` is not supported in Data Grid.
+2. `FilterRow` is not supported in Data Grid.
 
 ## Load data in on demand
 

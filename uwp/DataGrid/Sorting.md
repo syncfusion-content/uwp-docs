@@ -10,7 +10,7 @@ documentation: ug
 
 # Sorting in UWP Data Grid
 
-SfDataGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
+UWP Data Grid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,7 +86,7 @@ Following are the sequence of sorting orders when clicking column header,
 
 ## Multi column sorting
 
-SfDataGrid control allows you sort more than one column, where sorting is applied one column against other columns. 
+Data Grid control allows you sort more than one column, where sorting is applied one column against other columns.
 
 To apply sorting on multiple columns, user have to click the column header by pressing the <kbd>Ctrl</kbd> key.
 
@@ -165,7 +165,7 @@ this.dataGrid.SortColumnDescriptions.Clear();
 
 ## Custom sorting
 
-SfDataGrid allows you to sort the columns based on the custom logic. The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.SortComparer.html) instance to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortComparers).
+Data Grid allows you to sort the columns based on the custom logic. The custom sorting can be applied by adding the [SortComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.SortComparer.html) instance to [SfDataGrid.SortComparers](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortComparers).
  
 The [SortComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.SortComparer.html) have the following properties,
 
@@ -244,7 +244,7 @@ public class CustomComparer : IComparer<object>, ISortDirection
 {% endhighlight %}
 {% endtabs %}
 
-#### Adding custom comparer to SfDataGrid
+#### Adding custom comparer to Data Grid
 
 Custom comparer can be added to `SfDataGrid.SortComparers` property. `SortComparers` maintains custom comparers and the custom comparer gets called when corresponding column gets sorted by clicking column header or programmatically.
  
@@ -277,7 +277,7 @@ Sorting `CustomerName` column sorts the data using custom comparer available in 
 
 ## Sorting the underlying collection 
 
-SfDataGrid sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection. You can get sorted data from `SfDataGrid.View.Records` when groups are not in place and `SfDataGrid.View.TopLevelGroup.DisplayElements` when grouping in place.
+Data Grid sorts the records in UI and maintains in its internal CollectionView and it will not change the order of data in underlying collection. You can get sorted data from `SfDataGrid.View.Records` when groups are not in place and `SfDataGrid.View.TopLevelGroup.DisplayElements` when grouping in place.
  
 If you want to sort the underlying collection when sorting takes place, then this can be achieved by handling [SfDataGrid.SortColumnsChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SortColumnsChanged) event.
  

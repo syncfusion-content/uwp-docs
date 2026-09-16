@@ -10,8 +10,8 @@ documentation: ug
 
 # Grouping in UWP Data Grid
 
-SfDataGrid allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order. 
-SfDataGrid allows you to group the data in below ways,
+UWP Data Grid allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order. 
+Data Grid allows you to group the data in below ways,
 
 * UI Grouping
 
@@ -76,7 +76,7 @@ You can refer [Caption Summaries](https://help.syncfusion.com/uwp/datagrid/summa
 
 ## Programmatic Grouping
 
-SfDataGrid allows you to group the data programmatically by adding or removing [GroupColumnDescription](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html) to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) collection.
+Data Grid allows you to group the data programmatically by adding or removing [GroupColumnDescription](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html) to [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GroupColumnDescriptions) collection.
  
 For example, if you want to group the OrderID column programmatically, define its [MappingName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_MappingName) to [ColumnName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_ColumnName) property of `GroupColumnDescription`. Then add the `GroupColumnDescription` to the `SfDataGrid.GroupColumnDescriptions` collection.
 
@@ -122,7 +122,7 @@ this.dataGrid.View.EndInit();
 
 ## Display based grouping using GroupMode property
 
-You can group the column in SfDataGrid based on the value being displayed in cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as ‘Display’.
+You can group the column in Data Grid based on the value being displayed in cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as 'Display'.
 In the below example, OrderID column displays value with one decimal digit in cell. But when you group, groups will be created based on actual value considering all decimal digits of value (Refer right side screen shot). You can group based value displayed in the cell by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as ‘Display’ (Refer left side screen shot for the same data).
 
 {% tabs %}
@@ -138,7 +138,7 @@ this.datagrid.Columns["OrderID"].GroupMode = DataReflectionMode.Display;
 
 ### Group caption based on DisplayMember when grouping GridComboBoxColumn and GridMultiColumnDropDownList
 
-In SfDataGrid, you can group the column based on display value and also the same can be displayed  in caption summary by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as ‘Display’.
+In Data Grid, you can group the column based on display value and also the same can be displayed  in caption summary by setting [GridColumn.GroupMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_GroupMode) as 'Display'.
 
 {% tabs %}
 {% highlight xaml %}
@@ -295,7 +295,7 @@ this.dataGrid.CollapseGroup(group);
 
 ## Customize IndentColumn width 
 
-You can customize the width of IndentColumn in SfDataGrid by using [IndentColumnWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_IndentColumnWidth) property as like below.
+You can customize the width of IndentColumn in Data Grid by using [IndentColumnWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_IndentColumnWidth) property as like below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -331,7 +331,7 @@ You can change the GroupDropArea’s text can by setting [SfDataGrid.GroupDropAr
 ### GroupDropArea Height and Appearance
 
 
-SfDataGrid allows you to customize the appearance and height of GroupDropArea by writing the style of TargetType `GroupDropArea`.
+Data Grid allows you to customize the appearance and height of GroupDropArea by writing the style of TargetType `GroupDropArea`.
 
 
 {% tabs %}
@@ -371,7 +371,7 @@ this.dataGrid.IsGroupDropAreaExpanded = true;
 ## Custom Grouping
 
 
-SfDataGrid allows you to group the data based on custom logic when the built-in grouping functionality doesn’t meet your requirement.
+Data Grid allows you to group the data based on custom logic when the built-in grouping functionality doesn’t meet your requirement.
 
  
 To perform custom grouping on a particular column, specify the custom logic through [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_Converter) property and the column name to [GroupColumnDescription.ColumnName](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GroupColumnDescription.html#Syncfusion_UI_Xaml_Grid_GroupColumnDescription_ColumnName) property.
@@ -485,7 +485,7 @@ In the below screenshot custom grouping is applied based on SickLeaveHours colum
 
 ## Sorting CaptionSummaryRows by Aggregate
 
-SfDataGrid allows you to sort the groups based its summary values. You can sort the groups based on summary aggregate value by using [SfDataGrid. SummaryGroupComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property.
+Data Grid allows you to sort the groups based its summary values. You can sort the groups based on summary aggregate value by using [SfDataGrid.SummaryGroupComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property.
 
 
 Follow the below steps to sort the groups based on caption aggregate value.
@@ -517,9 +517,9 @@ public class CustomSummaryGroupComparer : IComparer<Group>, ISortDirection
 {% endhighlight %}
 {% endtabs %}
 
-### Defining custom group comparer to SfDataGrid
+### Defining custom group comparer to Data Grid
 
-Custom group comparer can be defined in SfDataGrid using [SfDataGrid.SummaryGroupComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property. `SummaryGroupComparer` maintains the custom comparers and the custom comparer gets called when corresponding column is grouped.
+Custom group comparer can be defined in Data Grid using [SfDataGrid.SummaryGroupComparer](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SummaryGroupComparer) property. `SummaryGroupComparer` maintains the custom comparers and the custom comparer gets called when corresponding column is grouped.
 
 {% tabs %}
 {% highlight xaml %}

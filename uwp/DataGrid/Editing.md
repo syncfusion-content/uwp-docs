@@ -11,7 +11,7 @@ documentation: ug
 
 # Editing in UWP Data Grid
 
-SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
+UWP Data Grid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -40,7 +40,7 @@ dataGrid.Columns["OrderID"].AllowEditing = true;
 
 N> [GridColumn.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnBase.html#Syncfusion_UI_Xaml_Grid_GridColumnBase_AllowEditing) takes higher priority than [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing).
 
-![UWP DataGrid Cell Editing](Editing_images/Editing_img1.png)
+![Cell Editing](Editing_images/Editing_img1.png)
 
 N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_NavigationMode) to Cell to enable [CurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) navigation and editing.
 
@@ -84,11 +84,11 @@ dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.SelectAll;
 {% endtabs %}
 
 
-![UWP DataGrid Cell Editing with EditorSelectionBehavior.SelectAll](Editing_images/Editing_img2.png)
+![Cell Editing with EditorSelectionBehavior.SelectAll](Editing_images/Editing_img2.png)
 
 ## Retain editing on lost focus
 
-The editing of current cell will be ended by default while the focus is moving from DataGrid to another control. You can set the [LostFocusBehavior](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LostFocusBehavior) property to `LostFocusBehavior.Default` if you want to retain the editing of the current cell even when focus is moved to another control.
+The editing of current cell will be ended by default while the focus is moving from Data Grid to another control. You can set the [LostFocusBehavior](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_LostFocusBehavior) property to `LostFocusBehavior.Default` if you want to retain the editing of the current cell even when focus is moved to another control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -105,7 +105,7 @@ dataGrid.LostFocusBehavior = LostFocusBehavior.Default;
 
 ## Support for IEditableObject
 
-SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
+Data Grid supports to commit and roll back the changes in row level when underlying data object implements [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
 
 The editing changes in a row will be committed only when user move to next row or pressing enter key in `EndEdit`. Also when user press <kbd> Esc </kbd>  key, then the changes made in a row will be reverted in `CancelEdit`.
  
@@ -221,7 +221,7 @@ public class OrderInfo : INotifyPropertyChanged, IEditableObject
 
 ## Events
 
-SfDataGrid triggers the following events during editing.
+Data Grid triggers the following events during editing.
  
 ### CurrentCellBeginEdit Event
 
@@ -229,9 +229,9 @@ SfDataGrid triggers the following events during editing.
 
 * [Cancel](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-9.0): When set to ‘true’, the event is canceled and the `CurrentCell` does not enter into the edit mode.
 
-* [RowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellBeginEditEventArgs_RowColumnIndex): Gets the current row column index of the DataGrid.
+* [RowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellBeginEditEventArgs_RowColumnIndex): Gets the current row column index of the Data Grid.
 
-* [Column](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellBeginEditEventArgs_Column): Gets the Grid Column of the SfDataGrid.
+* [Column](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellBeginEditEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellBeginEditEventArgs_Column): Gets the Grid Column of the Data Grid.
 
 
 {% tabs %}
@@ -268,7 +268,7 @@ private void DataGrid_CurrentCellEndEdit(object sender, CurrentCellEndEditEventA
 
 [CurrentCellValueChangedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs.html) has following members which provides information for `CurrentCellValueChanged` event.
 
-* [Column](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellValueChangedEventArgs_Column): Gets the Grid Column of the SfDataGrid.
+* [Column](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellValueChangedEventArgs_Column): Gets the Grid Column of the Data Grid.
 
 * [RowColumnIndex](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CurrentCellValueChangedEventArgs.html#Syncfusion_UI_Xaml_Grid_CurrentCellValueChangedEventArgs_RowColumnIndex): Gets the value of the current RowColumnIndex.
 
@@ -312,7 +312,7 @@ private void DataGrid_CurrentCellDropDownSelectionChanged(object sender, Current
 
 ### CellTapped Event
 
-CellTapped event occurs when the user clicks or touches the `Cell` in SfDataGrid with [GridCellTappedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCellTappedEventArgs.html). CellTapped event does not occur for the non-selectable cells. The GridCellTappedEventArgs has following members which provides information for `CellTapped` event.
+CellTapped event occurs when the user clicks or touches the `Cell` in Data Grid with [GridCellTappedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCellTappedEventArgs.html). CellTapped event does not occur for the non-selectable cells. The GridCellTappedEventArgs has following members which provides information for `CellTapped` event.
 * [Column](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellDoubleTappedEventArgs_Column) - Gets the GridColumn of the tapped cell.
 
 * [Record](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellDoubleTappedEventArgs_Record) - Gets the data context of the tapped cell.
@@ -342,7 +342,7 @@ private void Datagrid_CellTapped(object sender, GridCellTappedEventArgs e)
 {% endtabs %}
 
 ### CellDoubleTapped Event
-CellDoubleTapped event occurs when the user double clicks or double taps the `GridCell` in SfDataGrid with [GridCellDoubleTappedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html). CellDoubleTapped event does not occur for non-selectable cells. GridCellDoubleTappedEventArgs has following members which provides information for `CellDoubleTapped ` event.
+CellDoubleTapped event occurs when the user double clicks or double taps the `GridCell` in Data Grid with [GridCellDoubleTappedEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html). CellDoubleTapped event does not occur for non-selectable cells. GridCellDoubleTappedEventArgs has following members which provides information for `CellDoubleTapped ` event.
 
 * [Column](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.CellDoubleTappedEventArgs.html#Syncfusion_UI_Xaml_Grid_CellDoubleTappedEventArgs_Column) - Gets the GridColumn of the double tapped cell.
 
@@ -376,12 +376,12 @@ private void Datagrid_CellDoubleTapped(object sender, GridCellDoubleTappedEventA
 
 ### BeginEdit
 
-SfDataGrid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_BeginEdit) method. Initially the [CurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
+Data Grid allows you to edit the cell programmatically by calling the [BeginEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_BeginEdit) method. Initially the [CurrentCell](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridCurrentCellManager.html#Syncfusion_UI_Xaml_Grid_GridCurrentCellManager_CurrentCell) need to set before calling the `BeginEdit` method when the CurrentCell value is null.
 
 {% tabs %}
 {% highlight c# %}
 
-//Add this namespace to access the RowColumnIndex structure type in SfDataGrid 
+//Add this namespace to access the RowColumnIndex structure type in Data Grid 
 using Syncfusion.UI.Xaml.ScrollAxis;
 
 this.dataGrid.Loaded += DataGrid_Loaded;
@@ -403,7 +403,7 @@ You can call the [EndEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml
 {% tabs %}
 {% highlight c# %}
 
-//Add this namespace to access the RowColumnIndex structure type in SfDataGrid 
+//Add this namespace to access the RowColumnIndex structure type in Data Grid 
 using Syncfusion.UI.Xaml.ScrollAxis;
 
 this.dataGrid.Loaded += DataGrid_Loaded;
@@ -425,7 +425,7 @@ You can use the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/uwp/Syncfu
 {% tabs %}
 {% highlight c# %}
 
-//Add this namespace to access the RowColumnIndex structure type in SfDataGrid
+//Add this namespace to access the RowColumnIndex structure type in Data Grid
 using Syncfusion.UI.Xaml.ScrollAxis;
 
 this.dataGrid.CurrentCellBeginEdit += DataGrid_CurrentCellBeginEdit;
@@ -496,7 +496,7 @@ You can allow `UIElement` loaded inside `CellTemplate` to handle keyboard intera
 {% endtabs %}
 
 
-N> Enter and Tab keys are always handled by SfDataGrid only.
+N> Enter and Tab keys are always handled by Data Grid only.
 
 ## How to
 
@@ -573,12 +573,12 @@ public class CellStyleSelector:StyleSelector
 {% endtabs %}
 
 
-![UWP DataGrid Changed the foreground of edited cells](Editing_images/Editing_img3.png)
+![Changed the foreground of edited cells](Editing_images/Editing_img3.png)
 
 ### Allow editing when pressing minus key
 
 
-SfDataGrid does not allow the cell to get into the edit mode while pressing the <kbd>-</kbd> key or any special character. You can overcome this behavior by deriving a class from `GridCellNumericRenderer` and override the `ShouldGridTryToHandleKeyDown` method.
+Data Grid does not allow the cell to get into the edit mode while pressing the <kbd>-</kbd> key or any special character. You can overcome this behavior by deriving a class from `GridCellNumericRenderer` and override the `ShouldGridTryToHandleKeyDown` method.
 
 {% tabs %}
 {% highlight c# %}

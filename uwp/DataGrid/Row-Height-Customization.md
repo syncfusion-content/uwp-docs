@@ -65,7 +65,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Changing RowHeight of particular Row image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img1.png)
+![Changing RowHeight of particular Row image](Row-Height-Customization_images/Row-Height-Customization_img1.png)
 
 
 ## QueryRowHeight event
@@ -74,7 +74,7 @@ You can change the row height in on-demand based on the row index or row data us
 
 `QueryRowHeight` event triggered for each row when it becomes visible. [QueryRowHeightEventArgs](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.QueryRowHeightEventArgs.html) provides information to `QueryRowHeight` event with following members,
 
-`RowIndex` – denotes index of the row in SfDataGrid.
+`RowIndex` – denotes index of the row in Data Grid.
 
 `Height` – Gets or sets the height of the row.
 
@@ -97,7 +97,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![OnDemand Changing of RowHeight image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img2.png)
+![OnDemand Changing of RowHeight image](Row-Height-Customization_images/Row-Height-Customization_img2.png)
 
 
 ### Limitations
@@ -106,12 +106,12 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 ## Fit the Row Height based on its content
 
-You can fit the row height based on its content in `QueryRowHeight` event handler using [GetAutoRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_GetAutoRowHeight_System_Int32_Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_System_Double__System_Boolean_) method. This improves the readability of the content and it does not affect the loading performance of the SfDataGrid as the `QueryRowHeight` event triggered for rows in on-demand. 
+You can fit the row height based on its content in `QueryRowHeight` event handler using [GetAutoRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridColumnSizer.html#Syncfusion_UI_Xaml_Grid_GridColumnSizer_GetAutoRowHeight_System_Int32_Syncfusion_UI_Xaml_Grid_GridRowSizingOptions_System_Double__System_Boolean_) method. This improves the readability of the content and it does not affect the loading performance of Data Grid as the `QueryRowHeight` event triggered for rows in on-demand. 
 `GetAutoRowHeight` method returns `true` when the row height is calculated for record & header rows and returns `false` for other rows. Calculated height based on content set to the `out` parameter and you can assign the calculated height to the `Height` property of `QueryRowHeightEventArgs`.
 
 Below are the parameter to GetAutoRowHeight method, 
 
-1. `RowIndex` – denotes the index of row in SfDataGrid.
+1. `RowIndex` – denotes the index of row in Data Grid.
 
 2. `GridRowSizingOptions` – A class with properties to customize the row height calculation.
 
@@ -152,7 +152,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here, row heights are customized based on the large text content.
 
-![AutoFit RowHeight based on content Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img3.png)
+![AutoFit RowHeight based on content Image](Row-Height-Customization_images/Row-Height-Customization_img3.png)
 
 ### GridRowSizingOptions
 
@@ -199,7 +199,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 Here `CustomerID` and `Country` columns are excluded from height calculation and the row height is calculated based on `CustomerName` column only.
  
-![AutoFit RowHeight for specific columns Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img4.png)
+![AutoFit RowHeight for specific columns Image](Row-Height-Customization_images/Row-Height-Customization_img4.png)
 
 ## Reset Row Height at runtime
 
@@ -320,7 +320,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![AutoFit HeaderRowHeight Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img5.png)
+![AutoFit HeaderRowHeight Image](Row-Height-Customization_images/Row-Height-Customization_img5.png)
 
 ## Change StackedHeaderRow Height based on its content
 
@@ -390,7 +390,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![AutoFit StackedHeaderRow Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img6.png)
+![AutoFit StackedHeaderRow Image](Row-Height-Customization_images/Row-Height-Customization_img6.png)
 
 ## Change TableSummaryRow Height
 
@@ -414,5 +414,5 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Customized TableSummaryRow height Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img7.png)
+![Customized TableSummaryRow height Image](Row-Height-Customization_images/Row-Height-Customization_img7.png)
 

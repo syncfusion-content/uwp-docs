@@ -9,30 +9,30 @@ documentation: ug
 
 # Getting Started with UWP Data Grid
 
-The SfDataGrid control for Universal Windows Platform is used to display collection of data in rows and columns. It includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
+The UWP Data Grid control for Universal Windows Platform is used to display collection of data in rows and columns. It includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
  
-Following are the key features of SfDataGrid control,
+Following are the key features of Data Grid,
 
 * **Data binding** – Supports to bind different types of data sources.
 * **Selection** – Support for row and also cell selection.
 * **Editing** – Interactive support to edit with different column types.
 * **Columns** – Support for various column types including unbound columns
-* **Sorting** – Interactive support to sort the data in SfDataGrid.
-* **Grouping** – Interactive support to group the data in SfDataGrid.
+* **Sorting** – Interactive support to sort the data in Data Grid.
+* **Grouping** – Interactive support to group the data in Data Grid.
 * **Summaries** – Extensive support to show concise information about the individual data columns or groups of rows.
 * **Filtering** – Interactive support for filtering data as like in Excel.
 * **Validation** – Support to validate the data on errors.
 * **Data virtualization** – Support for different modes of data virtualization such as paging, incremental loading.
 * **Master-Detail View**– Support to display relational data using hierarchies. 
 * **Printing and Exporting** – Support to print and also export the data to Excel, PDF.
-* **Styling** – Extensive support for customizing styles of cells and rows in SfDataGrid.
+* **Styling** – Extensive support for customizing styles of cells and rows in Data Grid.
 * **Stacked Headers** - Extensive support to show multiple headers called stacked headers.
 * **Unbound rows** – Support to display unbound rows.
 * **Touch support** – Complete support for resizing, drag-drop column, sorting, filtering, grouping and etc. in touch.
 
 ## Assembly deployment
 
-The following list of assemblies needs to be added as reference to use SfDataGrid control in any application,
+The following list of assemblies needs to be added as reference to use Data Grid in any application,
 
 <table>
 <tr>
@@ -48,7 +48,7 @@ Description
 Syncfusion.Data.UWP
 </td>
 <td>
-Syncfusion.Data.UWP assembly contains fundamental and base classes for <code>[CollectionViewAdv](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html)</code> which is responsible for data processing operations handled in SfDataGrid.
+Syncfusion.Data.UWP assembly contains fundamental and base classes for <code>[CollectionViewAdv](https://help.syncfusion.com/cr/uwp/Syncfusion.Data.CollectionViewAdv.html)</code> which is responsible for data processing operations handled in Data Grid.
 </td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@ Syncfusion.Data.UWP assembly contains fundamental and base classes for <code>[Co
 Syncfusion.SfGrid.UWP
 </td>
 <td>
-Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations of SfDataGrid. SfDataGrid control present <code>Syncfusion.UI.Xaml.Grid</code> namespace.
+Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations of Data Grid. Data Grid control present <code>Syncfusion.UI.Xaml.Grid</code> namespace.
 </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ Syncfusion.SfGrid.UWP assembly contains classes that handles all UI operations o
 Syncfusion.SfInput.UWP
 </td>
 <td>
-Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in SfDataGrid. 
+Syncfusion.SfInput.UWP contains various editor controls (such as SfNumericTextBox, SfDateTimeEdit and etc) which are used in Data Grid.
 </td>
 </tr>
 <tr>
@@ -77,7 +77,7 @@ Syncfusion.SfShared.UWP is dependent assembly for Syncfusion.SfInput.UWP.
 </tr>
 </table>
 
-In order to use export to excel and export to PDF functionalities of SfDataGrid control, add the reference to following assemblies,
+In order to use export to excel and export to PDF functionalities of Data Grid, add the reference to following assemblies,
 
 <table>
 <tr>
@@ -93,7 +93,7 @@ Description
 Syncfusion.SfGridConverter.UWP
 </td>
 <td>
-Syncfusion.SfGridConverter.UWP contains static extension classes for exporting SfDataGrid to excel and PDF in <code>Syncfusion.UI.Xaml.Grid.Converter</code> namespace.
+Syncfusion.SfGridConverter.UWP contains static extension classes for exporting Data Grid to excel and PDF in <code>Syncfusion.UI.Xaml.Grid.Converter</code> namespace.
 </td>
 </tr>
 <tr>
@@ -116,9 +116,9 @@ Syncfusion.Pdf.UWP contains fundamental and base classes for creating PDF.
 
 You can refer [here](https://help.syncfusion.com/uwp/system-requirements) to know the assemblies installation location on your machine.     
 
-## Creating simple application with SfDataGrid
+## Creating simple application with Data Grid
 
-In this walk through, you will create UWP application that contains SfDataGrid control. 
+In this walk through, you will create UWP application that contains Data Grid control.
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)
@@ -133,11 +133,11 @@ In this walk through, you will create UWP application that contains SfDataGrid c
 
 ### Creating the project
 
-Create new Universal Windows Platform project in Visual Studio to display SfDataGrid with data objects.
+Create new Universal Windows Platform project in Visual Studio to display Data Grid with data objects.
 
 ### Adding control via Designer
 
-SfDataGrid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
+Data Grid control can be added to the application by dragging it from Toolbox and dropping it in Designer view. The required assembly references will be added automatically.
 
 ![Adding control via Designer](Getting-Started_images/Getting-Started_img1.png)
 
@@ -154,9 +154,9 @@ In order to add control manually in XAML, do the below steps,
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP
 
-2. Import SfDataGrid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
+2. Import Data Grid control namespace **Syncfusion.UI.Xaml.Grid** in XAML page.
 
-3. Declare SfDataGrid control in XAML page.
+3. Declare Data Grid control in XAML page.
 
 {% tabs %}
 {% highlight xaml %}
@@ -187,9 +187,9 @@ In order to add control manually in C#, do the below steps,
     * Syncfusion.SfInput.UWP
     * Syncfusion.SfShared.UWP
 
-2. Import SfDataGrid namespace **Syncfusion.UI.Xaml.Grid**.
+2. Import Data Grid namespace **Syncfusion.UI.Xaml.Grid**.
 
-3. Create SfDataGrid control instance and add it to the Page.
+3. Create Data Grid control instance and add it to the Page.
 
 {% tabs %}
 {% highlight c# %}
@@ -216,7 +216,7 @@ namespace GettingStarted
 
 ### Creating Data Model for sample application
 
-SfDataGrid is a data-bound control. So before create binding to the control, you must create data model for Application.
+Data Grid is a data-bound control. So before create binding to the control, you must create data model for Application.
 
 1. Create data object class named **OrderInfo** and declare properties as shown below,
 
@@ -314,7 +314,7 @@ public class ViewModel
 
 ### Binding to Data
 
-To bind the SfDataGrid to data, set the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property to an **IEnumerable** implementation. Each row in SfDataGrid is bound to an object in data source and each column in SfDataGrid bound to a property in data object.
+To bind the Data Grid to data, set the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property to an **IEnumerable** implementation. Each row in Data Grid is bound to an object in data source and each column in Data Grid bound to a property in data object.
 
 Bind the collection created in previous step to `SfDataGrid.ItemsSource` property in XAML by setting ViewModel as DataContext.
 
@@ -357,7 +357,7 @@ Now, run the application and you can expect the see the below output,
 
 ## Defining Columns
 
-By default, the SfDataGrid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
+By default, the Data Grid control generates the columns automatically when value assigned to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property. The type of the column generated depends on the type of data in the column and the attribute of the property the column bound with. 
 
 The following table lists the column types and it’s constraints for auto column generation.
 
@@ -404,7 +404,7 @@ Property of type Bool
 </tr>
 </table>
 
-When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event to customize or cancel the columns before they are added to the SfDataGrid. 
+When columns are auto-generated, you can handle the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event to customize or cancel the columns before they are added to the Data Grid. 
 
 You can prevent the automatic column generation by setting SfDataGrid.AutoGenerateColumns property to `false`. When [SfDataGrid.AutoGenerateColumns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AutoGenerateColumns) property is `false`, you have to define the columns to be displayed as below,
 
@@ -429,7 +429,7 @@ dataGrid.Columns.Add(new GridTextColumn() { MappingName = "CustomerName" });
 {% endhighlight %}
 {% endtabs %}
 
-Below are the list of column types provided in SfDataGrid.
+Below are the list of column types provided in Data Grid.
 
 <table>
 <tr>
@@ -445,7 +445,7 @@ Comments
 GridTextColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts textual content in its cells.
+Represents Data Grid column that hosts textual content in its cells.
 </td>
 </tr>
 <tr>
@@ -453,7 +453,7 @@ Represents SfDataGrid column that hosts textual content in its cells.
 GridNumericColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[SfNumericTextBox](https://help.syncfusion.com/uwp/numeric-textbox/overview)'| markdownify}} controls in its cells which is used to format and display Numeric values.
+Represents Data Grid column that hosts {{'[SfNumericTextBox](https://help.syncfusion.com/uwp/numeric-textbox/overview)'| markdownify}} controls in its cells which is used to format and display Numeric values.
 </td>
 </tr>
 <tr>
@@ -461,7 +461,7 @@ Represents SfDataGrid column that hosts {{'[SfNumericTextBox](https://help.syncf
 GridDateTimeColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts {{'[SfDatePicker](https://help.syncfusion.com/uwp/datepicker/overview)'| markdownify}} controls in its cells which is used to display and format DateTime values.
+Represents Data Grid column that hosts {{'[SfDatePicker](https://help.syncfusion.com/uwp/datepicker/overview)'| markdownify}} controls in its cells which is used to display and format DateTime values.
 </td>
 </tr>
 <tr>
@@ -469,7 +469,7 @@ Represents SfDataGrid column that hosts {{'[SfDatePicker](https://help.syncfusio
 GridComboBoxColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code>ComboBox</code> controls in its cells.
+Represents Data Grid column that hosts <code>ComboBox</code> controls in its cells.
 </td>
 </tr>
 <tr>
@@ -477,7 +477,7 @@ Represents SfDataGrid column that hosts <code>ComboBox</code> controls in its ce
 GridCheckBoxColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code>CheckBox</code> controls in its cells.
+Represents Data Grid column that hosts <code>CheckBox</code> controls in its cells.
 </td>
 </tr>
 <tr>
@@ -485,7 +485,7 @@ Represents SfDataGrid column that hosts <code>CheckBox</code> controls in its ce
 GridImageColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code>Image</code> controls in its cells.
+Represents Data Grid column that hosts <code>Image</code> controls in its cells.
 </td>
 </tr>
 <tr>
@@ -493,7 +493,7 @@ Represents SfDataGrid column that hosts <code>Image</code> controls in its cells
 GridHyperlinkColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code>HyperlinkButton</code> controls in its cells.
+Represents Data Grid column that hosts <code>HyperlinkButton</code> controls in its cells.
 </td>
 </tr>
 <tr>
@@ -501,7 +501,7 @@ Represents SfDataGrid column that hosts <code>HyperlinkButton</code> controls in
 GridTemplateColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts template-specified content in its cells
+Represents Data Grid column that hosts template-specified content in its cells
 </td>
 </tr>
 <tr>
@@ -509,7 +509,7 @@ Represents SfDataGrid column that hosts template-specified content in its cells
 GridUnboundColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts textual or template-specified content which are not actually bound with data object of row.
+Represents Data Grid column that hosts textual or template-specified content which are not actually bound with data object of row.
 </td>
 </tr>
 <tr>
@@ -517,7 +517,7 @@ Represents SfDataGrid column that hosts textual or template-specified content wh
 GridMultiColumnDropdownList
 </td>
 <td>
-Represents SfDataGrid column that hosts <code> SfMultiColumnDropDownControl</code> in its cells.
+Represents Data Grid column that hosts <code> SfMultiColumnDropDownControl</code> in its cells.
 </td>
 </tr>
 <tr>
@@ -525,26 +525,26 @@ Represents SfDataGrid column that hosts <code> SfMultiColumnDropDownControl</cod
 GridUpDownColumn
 </td>
 <td>
-Represents SfDataGrid column that hosts <code> SfNumericUpDown</code> in its cells.
+Represents Data Grid column that hosts <code> SfNumericUpDown</code> in its cells.
 </td>
 </tr>
 </table>
 
 ## Selection
 
-By default, the entire row is selected when a user clicks a cell in a SfDataGrid. You can set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to specify whether a user can select single row or cell, or multiple rows or cells.  Set the [SfDataGrid.SelectionUnit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) property to specify whether rows can be selected, or cells can selected.
+By default, the entire row is selected when a user clicks a cell in a Data Grid. You can set the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectionMode) property to specify whether a user can select single row or cell, or multiple rows or cells.  Set the [SfDataGrid.SelectionUnit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionUnit) property to specify whether rows can be selected, or cells can selected.
 
 When `SelectionUnit` is `Row`, you can get information about the rows that are selected using [SfDataGrid.SelectedItem](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItem) and [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SelectedItems) properties. 
 
 When `SfDataGrid.SelectionUnit` is `Cell`, you can get information about the cells that are selected by calling [SfDataGrid.GetSelectedCells](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_GetSelectedCells) method.
 
-You can handle the selection operations with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionChanging) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionChanged) events of SfDataGrid.
+You can handle the selection operations with the help of [SfDataGrid.SelectionChanging](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionChanging) and [SfDataGrid.SelectionChanged](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectionChanged) events of Data Grid.
 
 ## Sorting, Grouping, and Filtering
 
 ### Sorting
 
-By default, you can sort columns in a SfDataGrid by clicking the column header. You can configure the sorting by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortColumnDescriptions) property as below,
+By default, you can sort columns in a Data Grid by clicking the column header. You can configure the sorting by setting [SfDataGrid.SortColumnDescriptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_SortColumnDescriptions) property as below,
 
 {% tabs %}
 {% highlight xaml %}
@@ -608,6 +608,6 @@ Filtering can be enabled by setting [SfDataGrid.AllowFiltering](https://help.syn
 
 Editing can be enabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property to `true`. Set [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AllowDeleting) property to specify whether user can delete rows by pressing <kbd>Delete</kbd> key. 
 
-Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowPosition) property to enable additional row either `Top` or `Bottom` of SfDataGrid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource). 
+Set [SfDataGrid.AddNewRowPosition](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_AddNewRowPosition) property to enable additional row either `Top` or `Bottom` of Data Grid, where user can enter new items into the blank row. Adding new row adds an item to the [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource). 
 
 You can customize the editing operations by handling [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellBeginEdit) and [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_CurrentCellEndEdit) events.
