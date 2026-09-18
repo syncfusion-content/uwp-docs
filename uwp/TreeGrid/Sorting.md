@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in UWP TreeGrid | Syncfusion®
-description: Sorting in UWP TreeGrid sorts one or more columns in ascending or descending order with initial sort direction, custom sorting, and programmatic sorting support.
+description: Sorting in UWP TreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
 platform: uwp
 control: TreeGrid
 documentation: ug
@@ -90,7 +90,6 @@ Following are the sequence of sorting orders when clicking column header,
 * Sorts the data in ascending order
 * Sorts the data in descending order
 * Clears the sorting and records displayed in its initial order
-
 
 ## Initial sort direction
 

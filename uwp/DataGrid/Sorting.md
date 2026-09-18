@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in UWP Data Grid | Syncfusion®
-description: Sorting in Data Grid provides single and multi-column sorting, initial sort direction, custom sorting, and programmatic sorting support for efficient data organization.
+description: Sorting in Data Grid provides single, multi-column sorting, custom sorting, and programmatic sorting support for efficient data organization.
 platform: uwp
 control: Data Grid
 documentation: ug
@@ -84,7 +84,6 @@ Following are the sequence of sorting orders when clicking column header,
  
 * Clears the sorting and records displayed in its initial order
 
-
 ## Initial sort direction
 
 By default, the first time a column is sorted, the data is arranged in ascending order. You can change this behavior and specify whether a column should sort in ascending or descending order when sorting is applied for the first time by using `SfDataGrid.InitialSortDirection` and `GridColumn.InitialSortDirection`.
@@ -97,11 +96,10 @@ Use the `SfDataGrid.InitialSortDirection` property to apply the same initial sor
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid
-    x:Name="dataGrid"
-    AllowSorting="True"
-    InitialSortDirection="Descending"
-    ItemsSource="{Binding Orders}" />
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowSorting="True"
+                       InitialSortDirection="Descending"
+                       ItemsSource="{Binding Orders}" />
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.InitialSortDirection = ListSortDirection.Descending;
@@ -116,11 +114,10 @@ Use the `GridColumn.InitialSortDirection` property to define the initial sort di
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfDataGrid
-    x:Name="dataGrid"
-    AllowSorting="True"
-    AutoGenerateColumns="False"
-    ItemsSource="{Binding Orders}">
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowSorting="True"
+                       AutoGenerateColumns="False"
+                       ItemsSource="{Binding Orders}">
 
     <syncfusion:SfDataGrid.Columns>
         <syncfusion:GridTextColumn MappingName="OrderID" HeaderText="Order ID" InitialSortDirection="Descending" />
