@@ -121,7 +121,7 @@ carousel.Items.Add(New SfCarouselItem())
 
 ## Setting content for CarouselItems
 
-Content property helps to set the content for SfCarouselItem. `SfCarouselItem` is a ContentControl so that any object can be added as its content. Here images are set as the content of UWP Carousel items.
+Content property helps to set the content for SfCarouselItem. `SfCarouselItem` is a ContentControl so that any object can be added as its content. Here images are set as the content of carousel items.
 
 {% tabs %}
 

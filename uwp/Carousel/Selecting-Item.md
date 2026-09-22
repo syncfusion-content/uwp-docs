@@ -12,7 +12,7 @@ Items can be selected programmatically using the properties `SelectedIndex`, `Se
 
 ## Selecting an item using SelectedIndex
 
-`SelectedIndex` property is used to select an item in `UWP Carousel` using the index of item. 
+`SelectedIndex` property is used to select an item in UWP Carousel using the index of item. 
 
 {% tabs %}
 
@@ -145,5 +145,5 @@ carousel.MovePrevious()
 
 ## Refresh the layout
 
-`Refresh` method is used to refresh the layout of `UWP Carousel` control.
+`Refresh` method is used to refresh the layout of UWP Carousel control.
 

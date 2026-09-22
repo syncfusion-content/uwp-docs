@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation in UWP Carousel (SfCarousel)
 
-The default animation used during the selection of UWP Carousel items can be customized using the following properties.
+The default animation used during the selection of carousel items can be customized using the following properties.
 
 * Duration
 
