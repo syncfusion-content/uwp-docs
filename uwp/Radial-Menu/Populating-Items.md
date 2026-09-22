@@ -11,7 +11,7 @@ documentation: ug
 
 ## Items Source  
 
-UWP Radial Menu items can be populated with the business object collection. Let us create a UWP Radial Menu which will show the list of Application commands.   
+UWP Radial Menu items can be populated from a collection of business objects. The following example demonstrates how to display a list of application commands.
 
 The Application command model look likes below.  
 
