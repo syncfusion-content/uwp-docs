@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Items in UWP Carousel (SfCarousel)
 
-`SfCarouselItem` objects can be added as items to the `UWP Carousel`. You can populate the carousel using either the `Items` or `ItemsSource` property.
+`SfCarouselItem` objects can be added as items to the UWP Carousel. You can populate the carousel using either the `Items` or `ItemsSource` property.
 
 ## Using Items
 
@@ -17,7 +17,7 @@ UWP Carousel accepts `SfCarouselItem` as its children when added directly.
 
 ### Adding items to the control
 
-Here five `SfCarouselItems` are added as the children of the `UWP Carousel`.
+Here five `SfCarouselItems` are added as the children of the UWP Carousel.
 
 {% tabs %}
 

@@ -101,7 +101,7 @@ carousel.SelectedItem = item3
 
 ## Navigating to next item
 
-`MoveNext` method is used to select next item of the selected item in `UWP Carousel`.
+`MoveNext` method is used to select next item of the selected item in UWP Carousel.
 
 {% tabs %}
 
@@ -121,7 +121,7 @@ carousel.MoveNext()
 
 ## Navigating to previous item
 
-`MovePrevious` method is used to select previous item of the selected item in `UWP Carousel`.
+`MovePrevious` method is used to select previous item of the selected item in UWP Carousel.
 
 {% tabs %}
 
