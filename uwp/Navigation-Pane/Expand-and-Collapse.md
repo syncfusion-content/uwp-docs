@@ -9,15 +9,15 @@ documentation: ug
 
 # Expand and Collapse in UWP Navigation Pane (SfGroupBar)
 
-`UWP Navigation Pane` can be collapsed in either of the following ways:
+UWP Navigation Pane can be collapsed in either of the following ways:
 
 ## Collapse/Expand by buttons
 
-Collapse button is enabled when `UWP Navigation Pane` is in Expanded mode. It is shown at the top right corner of the control. Expand button is enabled when `UWP Navigation Pane` is in Collapsed mode. It is shown at the top of the control.
+The Collapse button is enabled when the UWP Navigation Pane is in `Expanded` mode and is displayed in the top-right corner of the control. The Expand button is enabled when the UWP Navigation Pane is in `Collapsed` mode and is displayed at the top of the control.
 
 ## Collapse/Expand by Programmatically
 
-Set the property `IsCollapsed` as true for collapsing the UWP Navigation Pane and set `IsCollapsed` as false for expanding the `UWP Navigation Pane`
+Set the `IsCollapsed` property to true to collapse the UWP Navigation Pane and to false to expand it.
 
 {% tabs %}
 

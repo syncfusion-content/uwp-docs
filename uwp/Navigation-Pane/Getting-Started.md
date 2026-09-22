@@ -31,7 +31,7 @@ xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endtabs %}
 
-2.Now add the `UWP Navigation Pane` control with a required optimal name using the included namespace
+2.Now add the UWP Navigation Pane control with a required optimal name using the included namespace
 
 {% tabs %}
 

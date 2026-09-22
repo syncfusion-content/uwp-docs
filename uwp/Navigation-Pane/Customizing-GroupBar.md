@@ -11,7 +11,7 @@ documentation: ug
 
 ## Adjusting UWP Navigation Pane Width in Collapsed Mode
 
-Set the property `CollapsedWidth` to set Width of `UWP Navigation Pane` control in Collapsed mode.
+Set the property `CollapsedWidth` to set Width of UWP Navigation Pane control in Collapsed mode.
 
 {% tabs %}
 
