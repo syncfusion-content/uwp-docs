@@ -49,7 +49,7 @@ Refer to the following code to add the UWP Pull to Refresh control:
 
 To develop an application with UWP Pull to Refresh is simple. The following steps explains how to create and configure its properties.
 
-* Create the `PullableContent` for the `UWP Pull to Refresh`
+* Create the `PullableContent` for the UWP Pull to Refresh
 
 You can set the `PullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
 
