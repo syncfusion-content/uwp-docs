@@ -13,7 +13,7 @@ documentation: ug
 
 ## Using Items
 
-`UWP Carousel` accepts `SfCarouselItem` as its children when added directly.
+UWP Carousel accepts `SfCarouselItem` as its children when added directly.
 
 ### Adding items to the control
 
@@ -270,7 +270,7 @@ Employees.Add(New Employee() With {
 
 {% endtabs %}
 
-4.Bind the Employees collection to `ItemsSource` property of `UWP Carousel` Control
+4.Bind the Employees collection to `ItemsSource` property of UWP Carousel Control
 
 {% tabs %}
 
