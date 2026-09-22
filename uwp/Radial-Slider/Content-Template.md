@@ -9,7 +9,7 @@ documentation: ug
 
 # Content Template in UWP Radial Slider (SfRadialSlider)
 
-The ContentTemplate  property can be used to customize the content of the UWP Radial or Circular Slider. 
+The ContentTemplate  property can be used to customize the content of the UWP Radial Slider. 
 
 {% highlight xaml %}
 
