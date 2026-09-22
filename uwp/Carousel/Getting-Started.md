@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with UWP Carousel (SfCarousel)
 
-This section explains how to create a preview of slides using SfCarousel control.
+This section explains how to create a preview of slides using UWP Carousel control.
 
-## Adding SfCarousel control
+## Adding UWP Carousel control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -35,7 +35,7 @@ xmlns:layout="using:Syncfusion.UI.Xaml.Controls.Layout">
 
 {% endtabs %}
 
-2.Now add the SfCarousel control with a required optimal name using the included namespace
+2.Now add the UWP Carousel control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ Dim carousel As New SfCarousel()
 
 ## Adding SfCarouselItems to the control
 
-Here SfCarouselItems are added as the children of the SfCarousel.
+Here SfCarouselItems are added as the children of the UWP Carousel.
 
 {% tabs %}
 
