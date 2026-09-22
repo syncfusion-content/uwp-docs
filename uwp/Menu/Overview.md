@@ -10,7 +10,7 @@ documentation: ug
 
 # About Syncfusion® UWP Menu (SfMenu) Control
 
-`UWP Menu` control allows the hierarchal organization of elements that are associated with commands and event handlers. `UWP Menu` contains a collection of `SfMenuItem`, which can be expanded to display additional SfMenuItem's or to perform a specific action when clicked.
+The UWP Menu supports the hierarchical organization of items associated with commands and event handlers. It contains a collection of `SfMenuItem` objects that can be expanded to display additional menu items or perform a specific action when clicked.
 
 ## Features:
 

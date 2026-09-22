@@ -162,7 +162,7 @@ This will populate the UWP Radial Menu as shown in the image below.
 
 ### Display Member Path 
 
-DisplayMemberPath property of the UWP Radial Menu used to define which business model property needs to be displayed inside the header of the UWP Radial Menu items.  
+DisplayMemberPath property of the UWP Radial Menu used to define which business model property needs to be displayed inside the header of the radial menu items.  
 
 {% highlight xaml %}
 
@@ -179,7 +179,7 @@ DisplayMemberPath="Name"/>
 
 ### Command Path
 
-CommandPath property of the UWP Radial Menu can be used to bind the command in the business object to the UWP Radial Menu item when items are populated using data binding. 
+CommandPath property of the UWP Radial Menu can be used to bind the command in the business object to the radial menu item when items are populated using data binding. 
 
 {% highlight xaml %}
 
@@ -194,7 +194,7 @@ CommandPath property of the UWP Radial Menu can be used to bind the command in t
 
 ### Item Template 
 
-ItemTemplate property of the UWP Radial Menu can be used to customize the header part of the UWP Radial Menu items.  
+ItemTemplate property of the UWP Radial Menu can be used to customize the header part of the radial menu items.  
 
 {% highlight xaml %}   
 

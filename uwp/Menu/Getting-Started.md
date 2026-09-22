@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with UWP Menu (SfMenu)
 
-This section explains how to create the `UWP Menu` control.
+This section explains how to create the UWP Menu control.
 
 ## Adding UWP Menu Control
 
@@ -37,7 +37,7 @@ xmlns:menu="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 {% endtabs %}
 
-2.Now add the `UWP Menu` control with a required optimal name using the included namespace
+2.Now add the UWP Menu control with a required optimal name using the included namespace
 
 {% tabs %}
 
@@ -52,7 +52,7 @@ xmlns:menu="using:Syncfusion.UI.Xaml.Controls.Navigation">
 
 ## Adding SfMenuItems to the Control
 
-Here `SfMenuItems` are added as the children of the `UWP Menu`.
+Here `SfMenuItems` are added as the children of the UWP Menu.
 
 {% tabs %}
 
