@@ -2,7 +2,7 @@
 layout: post
 title: About UWP Pull To Refresh control | Syncfusion
 description: Learn here all about introduction of Syncfusion UWP Pull To Refresh (SfPullToRefresh) control, its elements and more.
-platform: UWP
+platform: uwp
 control: PullToRefresh
 documentation: ug
 --- 
