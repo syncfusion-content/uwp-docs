@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with UWP Pull To Refresh control | Syncfusion
 description: Learn here about getting started with Syncfusion UWP Pull To Refresh (SfPullToRefresh) control, its elements and more.
-platform: UWP
+platform: uwp
 control: PullToRefresh
 documentation: ug
 --- 
@@ -49,7 +49,7 @@ Refer to the following code to add the UWP Pull to Refresh control:
 
 To develop an application with UWP Pull to Refresh is simple. The following steps explains how to create and configure its properties.
 
-* Create the `PullableContent` for the `UWP Pull to Refresh`
+* Create the `PullableContent` for the UWP Pull to Refresh
 
 You can set the `PullableContent` for the `SfPullToRefresh` by adding the desired UIElement.
 
