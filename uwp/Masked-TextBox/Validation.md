@@ -51,7 +51,7 @@ private void sfMaskedEdit_LostFocus(object sender, RoutedEventArgs e)
 
 ## Custom Validation
 
-In `SfMaskedEdit` control there is no event for the validation. The custom validation based on the `ValidationMode` property of `SfMaskedEdit` using attached properties of Validation class. Also `HasError` property has been used for Validation in source level.
+The UWP Masked TextBox control does not provide a validation event. Custom validation based on the ValidationMode property is implemented using the attached properties of the Validation class. The HasError property is also used to indicate validation errors at the source level.
 
 Custom validation can be implemented as follows
 
