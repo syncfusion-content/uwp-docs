@@ -18,7 +18,7 @@ The default option is Horizontal.
 
 ![RangeSlider Orientation Horizontal view](Orientation_images/Orientation_img1.jpg)
 
-The following code sample shows how to set Vertical Orientation to SfRangeSlider.  
+The following code sample shows how to set Vertical Orientation to UWP Range Slider.  
 
 {% tabs %}
 

@@ -106,7 +106,7 @@ End If
 {% endtabs %}
 
 
-In the following sample, we have bound the CustomCollection property to CustomLabels property in the RangeSlider control, which populates the custom labels collection:
+In the following sample, we have bound the CustomCollection property to CustomLabels property in the UWP Range Slider control, which populates the custom labels collection:
 
 
 {% tabs %}
@@ -390,7 +390,7 @@ The following code sample shows the usage of LabelOrientation property. The outp
 
 ## Customizing label font
 
-The range slider control provides the `FontFamily`, `FontWeight` , `FontStyle` and `FontSize` properties to customize the value text and custom label text.
+The UWP Range Slider control provides the `FontFamily`, `FontWeight` , `FontStyle` and `FontSize` properties to customize the value text and custom label text.
 
 
 {% tabs %}
