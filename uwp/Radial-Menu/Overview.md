@@ -9,7 +9,7 @@ documentation: ug
 
 # About Syncfusion® UWP Radial Menu (SfRadialMenu) Control
 
-The SfRadialMenu displays a hierarchical menu in a circular layout optimized for touch devices. Typically used as a context menu, it can expose more menu items in the same space than traditional menus. 
+The UWP Radial Menu displays a hierarchical menu in a circular layout optimized for touch devices. Typically used as a context menu, it can expose more menu items in the same space than traditional menus. 
 
 ![RadialMenu Example view](Overview_images/Overview_img1.png)
 

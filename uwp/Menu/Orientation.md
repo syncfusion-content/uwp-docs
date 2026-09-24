@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation in UWP Menu (SfMenu)
 
-The `SfMenu` control can align its content vertically and horizontally by using the `Orientation` property of the `SfMenu`.
+The `SfMenu` control can align its content vertically and horizontally by using the `Orientation` property.
 
 ## Change Orientation of SfMenuItem
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Types in UWP Radial Menu (SfRadialMenu)
 
-There are two different layout types available for SfRadialMenu. 
+There are two different layout types available for UWP Radial Menu. 
 
 * Default
 * Custom
@@ -18,7 +18,7 @@ Both the layout types divide the available space equally among all the children 
 
 ## Default
 
-Number of segments in the panel is determined by children count in the level. Hence segment count in each hierarchical level differs. RadialMenuItem is arranged in the sequential order as added in the RadialMenu.
+Number of segments in the panel is determined by children count in the level. Hence segment count in each hierarchical level differs. RadialMenuItem is arranged in the sequential order as added in the UWP Radial Menu.
 
 ## Custom
 

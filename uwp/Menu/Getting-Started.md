@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create the `SfMenu` control.
 
-## Adding SfMenu Control
+## Adding UWP Menu Control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
