@@ -76,7 +76,7 @@ When the SnapsTo property is set to StepValues, the StepFrequency property is us
 
 ## Snaps To 
 
-The SnapsTo property determines whether the RangeSlider snaps to steps or ticks. Available options for this property are 
+The SnapsTo property determines whether the UWP Range Slider snaps to steps or ticks. Available options for this property are 
 
 1. StepValues 
 2. Ticks 
@@ -266,7 +266,7 @@ Tick marks not appear.
 
 ## Customizing tick color
 
-The range slider control provides the `TickBarFill` property to customize the color of ticks in tick bar.
+The UWP Range Slider control provides the `TickBarFill` property to customize the color of ticks in tick bar.
 
 {% tabs %}
 

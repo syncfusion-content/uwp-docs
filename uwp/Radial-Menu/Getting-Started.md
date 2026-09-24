@@ -15,7 +15,7 @@ Assembly : Syncfusion.SfRadialMenu.UWP
 
 Dependent assembly: Syncfusion.SfShared.UWP
 
-The following code sample shows how to create the SfRadialMenu from code-behind and XAML. 
+The following code sample shows how to create the UWP Radial Menu from code-behind and XAML. 
 {% tabs %}
 {% highlight xaml %}
 <Page xmlns:navigation="using:Syncfusion.UI.Xaml.Controls.Navigation"> 
