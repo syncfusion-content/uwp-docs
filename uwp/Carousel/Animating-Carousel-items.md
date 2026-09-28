@@ -108,7 +108,7 @@ End Sub
 
 ## Rotate items
 
-`RotationAngle` property is used to rotate all the items in carousel control to a specified angle.
+`RotationAngle` property is used to rotate all the items in UWP Carousel control to a specified angle.
 
 {% tabs %}
 

@@ -9,9 +9,9 @@ documentation: ug
 ---
 # Getting Started with UWP DropDown Button (SfDropDownButton)
 
-This section explains how to create the SfDropDownButton control.
+This section explains how to create the UWP DropDown Button control.
 
-## Creating SfDropDownButton control
+## Creating UWP DropDown Button control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -20,7 +20,7 @@ Create a Universal Windows Platform project in Visual Studio and refer to the fo
 
 
 
-###  Adding SfDropDownButton control through XAML Code
+###  Adding UWP DropDown Button control through XAML Code
 
 
 
@@ -38,7 +38,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 {% endhighlight %}
 
 
-2.Now add the SfDropDownButton control with a required optimal name using the included namespace
+2.Now add the UWP DropDown Button control with a required optimal name using the included namespace
 
 {% highlight xml %}
 
@@ -46,7 +46,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 
 {% endhighlight %}
 
-### Adding SfDropDownButton control through C# Code
+### Adding UWP DropDown Button control through C# Code
 
 1.Include the namespace for Syncfusion. SfInput.UWP assembly in MainPage.xaml.cs
 
@@ -66,7 +66,7 @@ Imports Syncfusion.UI.Xaml.Controls.Input
 
 {% endtabs %}
 
-2.Now add the SfDropDownButton control with an optimal name 
+2.Now add the UWP DropDown Button control with an optimal name 
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ Dim dropDownButton As New SfDropDownButton()
 
 {% endtabs %}
 
-This will create an empty SfDropDownButton control.
+This will create an empty UWP DropDown Button control.
 
 ![SfDropDownButton control](Getting-Started_images/Getting-Started_img1.jpeg)
 

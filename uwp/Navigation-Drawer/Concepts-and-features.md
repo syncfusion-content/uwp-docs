@@ -11,7 +11,7 @@ documentation: ug
 
 ## ContentView
 
-ContentView is the main view of the NavigationDrawer where the desired items can be placed.
+ContentView is the main view of the UWP Navigation Drawer where the desired items can be placed.
 
 
 {% highlight xml%}
@@ -45,7 +45,7 @@ ContentView is the main view of the NavigationDrawer where the desired items can
 
 ## DrawerContentView
 
-The SfNavigationDrawer control contains the DrawerContentView, a part of the DrawerView panel. The DrawerContentView displays the navigation items that you need to jump to.
+The UWP Navigation Drawer control contains the DrawerContentView, a part of the DrawerView panel. The DrawerContentView displays the navigation items that you need to jump to.
 
 {% highlight xml%}
 
@@ -65,7 +65,7 @@ The SfNavigationDrawer control contains the DrawerContentView, a part of the Dra
 
 ## DrawerFooterView
 
-Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer control.  
+Gets or sets the footer for the DrawerView panel in the UWP Navigation Drawer control.  
 
 
 {% highlight xml%}
@@ -84,7 +84,7 @@ Gets or sets the footer for the DrawerView panel in the SfNavigationDrawer contr
 
 ## DrawerHeaderView
 
-Gets or sets the DrawerHeaderView of the DrawerView panel in the SfNavigationDrawer control.
+Gets or sets the DrawerHeaderView of the DrawerView panel in the UWP Navigation Drawer control.
 
 
 {% highlight xml%}
@@ -101,7 +101,7 @@ Gets or sets the DrawerHeaderView of the DrawerView panel in the SfNavigationDra
 
 ## DrawerHeight
 
-Gets or sets the height for the DrawerView panel in the NavigationDrawer control.
+Gets or sets the height for the DrawerView panel in the UWP Navigation Drawer control.
 
 {% tabs %}
 {% highlight xml %}
@@ -121,7 +121,7 @@ Gets or sets the height for the DrawerView panel in the NavigationDrawer control
 
 ## DrawerWidth
 
-Gets or sets the width for the DrawerView panel in the NavigationDrawer control.
+Gets or sets the width for the DrawerView panel in the UWP Navigation Drawer control.
 
 {% tabs %}
 {% highlight xml %}
@@ -204,7 +204,7 @@ The default position is Left.
 ![Position_img1](Concepts-and-features_images/Position_img1.png)                                            
 
 
-The following code example shows how to set the SfNavigationDrawer to the right.  
+The following code example shows how to set the UWP Navigation Drawer to the right.  
 
 {% tabs %}
 {% highlight xml %}
@@ -224,7 +224,7 @@ The following code example shows how to set the SfNavigationDrawer to the right.
 
 ![Position_img2](Concepts-and-features_images/Position_img2.png)
 
-The following code example shows how to set the SfNavigationDrawer at the top.  
+The following code example shows how to set the UWP Navigation Drawer at the top.  
 
 {% tabs %}
 {% highlight xml %}
@@ -244,7 +244,7 @@ The following code example shows how to set the SfNavigationDrawer at the top.
 ![Position_img3](Concepts-and-features_images/Position_img3.png)                                           
 
 
-The following code example shows how to set the SfNavigationDrawer at the bottom.  
+The following code example shows how to set the UWP Navigation Drawer at the bottom.  
 
 {% tabs %}
 {% highlight xml %}
@@ -295,7 +295,7 @@ The default transition is SlideOnTop. That draws the DrawerContent on top of the
 ![Transition_img1](Concepts-and-features_images/Transition_img1.png)                                           
 
 
-The following code example shows how to set Transition as Push to SfNavigationDrawer. This transition moves the Drawer and main content simultaneously.
+The following code example shows how to set Transition as Push to UWP Navigation Drawer. This transition moves the Drawer and main content simultaneously.
 
 {% tabs %}
 {% highlight xml %}
@@ -315,7 +315,7 @@ The following code example shows how to set Transition as Push to SfNavigationDr
 ![Transition_img2](Concepts-and-features_images/Transition_img2.png)                                              
 
 
-The following code example shows how to set Transition as Reveal to SfNavigationDrawer. In this transition, the Drawer content is stable and the main content is moved to reveal the drawer content.
+The following code example shows how to set Transition as Reveal to UWP Navigation Drawer. In this transition, the Drawer content is stable and the main content is moved to reveal the drawer content.
 
 
 {% tabs %}

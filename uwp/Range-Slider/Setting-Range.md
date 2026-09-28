@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting Range in UWP Range Slider (SfRangeSlider)
 
-The SfRangeSlider control supports to select range of value using two Thumbs.  
+The UWP Range Slider control supports to select range of value using two Thumbs.  
 
 ## ShowRange  
 

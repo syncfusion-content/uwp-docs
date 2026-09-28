@@ -9,7 +9,7 @@ documentation: ug
 
 # Checkable Items in UWP Radial Menu (SfRadialMenu)
 
-SfRadialMenu items can be checked.  
+UWP Radial Menu items can be checked.
 
 ## Check Mode
 
@@ -23,11 +23,11 @@ The CheckMode property for a radial menu item includes the following options:
 
 ## Group Name
 
-The GroupName property of the SfRadialMenu item can be used to group the items in the same level. This property is useful when the CheckMode property of those items is set to RadioButton. 
+The GroupName property of the radial menu item can be used to group the items in the same level. This property is useful when the CheckMode property of those items is set to RadioButton. 
 
 ### IsChecked
 
-IsChecked property of SfRadialMenu item can be used to get or set the checked state of an item. 
+IsChecked property of radial menu item can be used to get or set the checked state of an item. 
 
 {% tabs %}
 

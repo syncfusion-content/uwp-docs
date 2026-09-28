@@ -9,9 +9,9 @@ documentation: ug
 
 # Getting Started with UWP Range Slider (SfRangeSlider)
 
-This section explains how to create `SfRangeSlider` control.
+This section explains how to create UWP Range Slider control.
 
-## Adding SfRangeSlider control
+## Adding UWP Range Slider control
 
 Create a Universal Windows Platform project in Visual Studio and refer to the following assemblies.
 
@@ -33,7 +33,7 @@ xmlns:input="using:Syncfusion.UI.Xaml.Controls.Input">
 {% endtabs %}
 
 
-2.Now add the `SfRangeSlider` control with a required optimal name using the included namespace
+2.Now add the UWP Range Slider control with a required optimal name using the included namespace
 
 {% tabs %}
 

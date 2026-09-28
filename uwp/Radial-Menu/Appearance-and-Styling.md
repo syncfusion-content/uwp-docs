@@ -11,7 +11,7 @@ documentation: ug
 
 ## Radius 
 
-RadiusX and RadiusY properties in the SfRadialMenu can be used to define the X and Y axis radius to render the control. 
+RadiusX and RadiusY properties in the UWP Radial Menu can be used to define the X and Y axis radius to render the control. 
 
 {% tabs %}
 
@@ -143,7 +143,7 @@ radialMenu.RimActiveBrush = New SolidColorBrush(Colors.Red)
 
 ## RimRadiusFactor
 
-RimRadiusFactor property of SfRadialMenu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
+RimRadiusFactor property of UWP Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
 
 {% tabs %}
 
@@ -176,7 +176,7 @@ radialMenu.RimRadiusFactor = 0.7
 
 ## Navigation Button Style
 
-The navigation button displayed in the center of SfRadialMenu can be styled using NavigationButtonStyle property. 
+The navigation button displayed in the center of UWP Radial Menu can be styled using NavigationButtonStyle property. 
 
 {% tabs %}
 
@@ -192,7 +192,7 @@ IsOpen="True" />
 
 ## Editing SubMenu Items Programmatically
 
-With the DrillDownItem property, you can access and edit submenu items of SfRadialMenu at various hierarchy levels programmatically. The following code example and screen shot illustrate this.
+With the DrillDownItem property, you can access and edit submenu items of UWP Radial Menu at various hierarchy levels programmatically. The following code example and screen shot illustrate this.
 {% tabs %}
 {% highlight xaml %}
 

@@ -186,7 +186,7 @@ MenuCollection.Add(new Model() { Header = "Layout" });
 
 {% endtabs%}
 
-`SfMenu` control is populated as follows:
+UWP Menu control is populated as follows:
 
 ![Populating-Items-img1](Populating-Items-images/Populating-Items-img1.jpg)
 

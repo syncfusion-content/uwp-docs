@@ -9,7 +9,7 @@ documentation: ug
 
 # Icon in UWP Radial Menu (SfRadialMenu)
 
-The Icon property of the SfRadialMenu is used to customize the icon displayed in the center of RadialMenu circle.   
+The `Icon` property is used to customize the icon displayed at the center of the UWP Radial Menu.
 
 {% tabs %}
 

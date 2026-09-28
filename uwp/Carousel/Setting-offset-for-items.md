@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting offset in UWP Carousel (SfCarousel)
 
-`SfCarousalItem` can be displayed in different offset in `SfCarousel` and also can define the offset between selected item and other items in `SfCarousel`.
+The `SfCarouselItem` can be displayed at different offsets in the UWP Carousel. You can also define the offset between the selected item and the other items in the Carousel.
 
 ## Adjusting the distance between unselected items
 

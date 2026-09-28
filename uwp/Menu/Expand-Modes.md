@@ -9,7 +9,7 @@ documentation: ug
 
 # Expand Modes in UWP Menu (SfMenu)
 
-Expand Modes in `SfMenu` is used to open the submenu of each `SfMenuItem`, which is added in `SfMenu` by doing click to open the submenu or by doing mouse hover to open the submenu. `SfMenu` supports two kinds of Expand Modes, namely `ExpandOnClick` and `ExpandOnMouseOver` Expand Modes which can be obtained by using the `ExpandMode` property. By default submenu items opened by mouse over on `SfMenuItem`.
+The `SfMenu` provides two expand modes for opening the submenu of an `SfMenuItem`: `ExpandOnClick` and `ExpandOnMouseOver`. These modes allow the submenu to open either by clicking the menu item or by hovering the mouse over it. The expand mode can be configured using the `ExpandMode` property. By default, a submenu opens when the mouse hovers over an `SfMenuItem`.
 
 ## Open SubMenu on Click
 

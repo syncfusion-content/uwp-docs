@@ -9,7 +9,7 @@ documentation: ug
 
 # Touch Support in UWP Range Slider (SfRangeSlider)
 
-With the MoveToPoint property, you can move the thumb of the SfRangeSlider by tapping or clicking on the track of the SfRangeSlider. This property provides the following options:
+With the MoveToPoint property, you can move the thumb of the UWP Range Slider by tapping or clicking on the track of the control. This property provides the following options:
 
 * MoveToTapPosition
 * IncrementBySmallChange
@@ -20,7 +20,7 @@ With the MoveToPoint property, you can move the thumb of the SfRangeSlider by ta
 
 ## MoveToTapPosition
 
-To move the thumb of the SfRangeSlider to the tapped position, you must set the MoveToPoint property to MoveToTapPosition, and then tap or click on the track of the SfRangeSlider. This will move the thumb to the tapped position.
+To move the thumb of the UWP Range Slider to the tapped position, you must set the MoveToPoint property to MoveToTapPosition, and then tap or click on the track of the control. This will move the thumb to the tapped position.
 
 The following code example and screen shot illustrate this.
 
@@ -54,7 +54,7 @@ The following code example and screen shot illustrate this.
 
 ## IncrementBySmallChange
 
-To move the thumb of the RangeSlider based on the SmallChange value, you must set the MoveToPoint property to IncrementBySmallChange, and then tap or click on the track of the SfRangeSlider. This will increment the SfRangeSlider value by the SmallChange value.
+To move the thumb of the UWP Range Slider based on the SmallChange value, you must set the MoveToPoint property to IncrementBySmallChange, and then tap or click on the track of the control. This will increment the UWP Range Slider value by the SmallChange value.
 
 The following code example and screen shot illustrates this.
 
@@ -88,7 +88,7 @@ The following code example and screen shot illustrates this.
 
 ## IncrementByLargeChange
 
-To move the thumb of the SfRangeSlider based on the LargeChange value, you must set the MoveToPoint property to IncrementByLargeChange, and then tap on the track of the SfRangeSlider. This will increment the SfRangeSlider value by the LargeChange value.
+To move the thumb of the UWP Range Slider based on the LargeChange value, you must set the MoveToPoint property to IncrementByLargeChange, and then tap on the track of the control. This will increment the UWP Range Slider value by the LargeChange value.
 
 The following code example and screen shot illustrates this.
 
@@ -123,7 +123,7 @@ The following code example and screen shot illustrates this.
 
 ## None
 
-To fix the thumb movement of the SfRangeSlider, you must set the MoveToPoint property to _None_. This will not allow thumb movement of the SfRangeSlider.
+To fix the thumb movement of the UWP Range Slider, you must set the MoveToPoint property to _None_. This will not allow thumb movement of the control.
 
 The following code example and screen shot illustrates this.
 

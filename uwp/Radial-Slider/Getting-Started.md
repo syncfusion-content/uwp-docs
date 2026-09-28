@@ -17,7 +17,7 @@ Dependent assembly: Syncfusion.SfShared.UWP
 
 
 
-The following code sample shows how to create the SfRadialSlider from code-behind and XAML, 
+The following code sample shows how to create the UWP Radial Slider from code-behind and XAML, 
 {% tabs %}
  {% highlight xaml %}
 
