@@ -5,6 +5,7 @@ description: Legend in the UWP Maps identifies map elements, categories, and dat
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend Customization in UWP Maps

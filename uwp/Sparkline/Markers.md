@@ -5,6 +5,7 @@ description: Markers in the UWP Sparkline highlight specific data points, making
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Markers in UWP Sparkline 

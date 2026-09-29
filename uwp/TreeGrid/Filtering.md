@@ -5,6 +5,7 @@ description: Filtering in UWP TreeGrid supports programmatic filtering and custo
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in UWP TreeGrid

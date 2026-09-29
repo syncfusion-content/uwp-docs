@@ -5,6 +5,7 @@ description: Multilayer support in the UWP Maps enables multiple map layers to b
 platform: uwp
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Multilayer Support in UWP Maps

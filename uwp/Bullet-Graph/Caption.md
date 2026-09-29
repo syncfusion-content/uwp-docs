@@ -5,6 +5,7 @@ description: Caption in the UWP Bullet Graph displays descriptive text for the g
 platform: uwp
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Caption in UWP Bullet Graph

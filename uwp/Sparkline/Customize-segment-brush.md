@@ -5,6 +5,7 @@ description: Customize segment brush in the UWP Sparkline to apply different col
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Customize segment brush in UWP Sparkline

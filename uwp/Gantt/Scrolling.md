@@ -5,6 +5,7 @@ description: Learn about Scrolling support in Syncfusion UWP Gantt Chart using b
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Scrolling in UWP Gantt Chart

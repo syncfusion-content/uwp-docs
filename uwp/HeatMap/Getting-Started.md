@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP HeatMap control.
 platform: uwp
 control: SfHeatMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with UWP HeatMap

@@ -5,6 +5,7 @@ description: Learn here all about Customizing DropDown support in Syncfusion® U
 platform: uwp
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 # Customizing DropDown in UWP TimePicker
 

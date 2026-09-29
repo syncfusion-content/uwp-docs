@@ -5,6 +5,7 @@ description: Tooltip support in the UWP TreeMap displays detailed information ab
 platform: uwp
 control: SfTreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip Support in UWP TreeMap

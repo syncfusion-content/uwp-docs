@@ -5,6 +5,7 @@ description: Learn about CriticalPath support in Syncfusion UWP Gantt Chart, cri
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Critical Path in UWP Gantt Chart

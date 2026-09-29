@@ -5,6 +5,7 @@ description: Key features in the UWP Digital Gauge include customizable digital 
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Key Features in UWP Digital Gauge

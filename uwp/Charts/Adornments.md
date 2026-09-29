@@ -5,6 +5,7 @@ description: Adornments in the UWP Chart display additional information for data
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Adornments in UWP Chart

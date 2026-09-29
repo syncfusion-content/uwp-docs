@@ -5,6 +5,7 @@ description: Learn about Events support in Syncfusion UWP Kanban Board, includin
 platform: uwp
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Events in UWP Kanban Board

@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion UWP Gantt Chart contro
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Getting Started with UWP Gantt Chart

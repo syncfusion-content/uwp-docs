@@ -5,6 +5,7 @@ description: Learn how to customize the dropdown height, open state, and dropdow
 platform: uwp
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 # Customizing DropDown in UWP DatePicker
 

@@ -5,6 +5,7 @@ description: Trendlines in the UWP Chart display data trends and patterns using 
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Trendlines in UWP Charts

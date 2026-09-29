@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP Bullet Graph con
 platform: uwp
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with UWP Bullet Graph

@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion UWP Kanban Board contr
 platform: uwp
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 # Getting Started with UWP Kanban Board
 

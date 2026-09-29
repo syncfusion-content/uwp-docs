@@ -5,6 +5,7 @@ description: Sorting in UWP TreeGrid sorts one or more columns in ascending or d
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

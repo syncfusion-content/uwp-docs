@@ -5,6 +5,7 @@ description: Export to Excel in UWP TreeGrid exports hierarchical data to excel 
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export to Excel in UWP TreeGrid

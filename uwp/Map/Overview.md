@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® UWP M
 platform: uwp
 control: SfMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® UWP Maps Control

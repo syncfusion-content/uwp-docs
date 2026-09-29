@@ -5,6 +5,7 @@ description: Trackball in the UWP Sparkline displays data values at specific poi
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Trackball in UWP Sparkline

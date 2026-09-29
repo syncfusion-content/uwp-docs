@@ -5,6 +5,7 @@ description: Drill down support in the UWP TreeMap enables users to navigate hie
 platform: uwp
 control: SfTreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Drill Down Support in UWP TreeMap

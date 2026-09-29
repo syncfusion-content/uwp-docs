@@ -5,6 +5,7 @@ description: Chart axis in the UWP Chart defines data scales, categories, and va
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Axis types and customization in UWP Chart

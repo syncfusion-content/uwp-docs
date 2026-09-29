@@ -5,6 +5,7 @@ description: Localization in UWP TreeGrid supports changing culture, language, a
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Localization in UWP TreeGrid

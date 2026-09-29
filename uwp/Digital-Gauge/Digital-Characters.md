@@ -5,6 +5,7 @@ description: Digital characters in the UWP Digital Gauge allow you to display nu
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Digital Characters in UWP Digital Gauge

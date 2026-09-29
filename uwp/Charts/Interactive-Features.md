@@ -5,6 +5,7 @@ description: Interactive features in the UWP Chart enable zooming, panning, sele
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Interactive Features in UWP Charts

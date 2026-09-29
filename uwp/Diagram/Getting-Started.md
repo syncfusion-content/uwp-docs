@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP Diagram control.
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Getting Started with UWP Diagram

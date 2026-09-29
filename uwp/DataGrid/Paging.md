@@ -5,6 +5,7 @@ description: Paging in Data Grid enables efficient handling of large datasets by
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Paging in UWP Data Grid

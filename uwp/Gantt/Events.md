@@ -5,6 +5,7 @@ description: Learn about Events support in Syncfusion UWP Gantt Chart, including
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Events in UWP Gantt Chart
