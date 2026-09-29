@@ -5,6 +5,7 @@ description: Column Types in Data Grid provides built-in and custom column types
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

@@ -5,6 +5,7 @@ description: Grouping in the UWP TreeMap organizes data into hierarchical levels
 platform: uwp
 control: SfTreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Grouping in UWP TreeMap

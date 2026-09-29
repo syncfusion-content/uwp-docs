@@ -5,6 +5,7 @@ description: Selection in the UWP Maps enables users to highlight and interact w
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection in UWP Maps

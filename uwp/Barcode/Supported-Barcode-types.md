@@ -5,6 +5,7 @@ description: Symbology Types in the UWP Barcode include various 1D and 2D symbol
 platform: uwp
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Symbology Types in UWP Barcode

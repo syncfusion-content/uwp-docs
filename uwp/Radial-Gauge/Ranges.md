@@ -5,6 +5,7 @@ description: Ranges in the UWP Radial Gauge highlight specific value intervals o
 platform: uwp
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Ranges in UWP Radial Gauge
 

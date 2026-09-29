@@ -5,6 +5,7 @@ description: Rim in the UWP Radial Gauge customizes the outer boundary of the ga
 platform: uwp
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Rim in UWP Radial Gauge
 

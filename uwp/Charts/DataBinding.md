@@ -5,13 +5,14 @@ description: Data binding in the UWP Chart connects chart series to data sources
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in UWP Charts
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) offers [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property to bind various datasource ranges from simple collection property to complex properties.
 
-### Binding a simple collection to the chart
+## Binding a simple collection to the chart
 
 {% tabs %}
 

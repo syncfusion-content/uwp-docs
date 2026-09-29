@@ -5,6 +5,7 @@ description: Legend in the UWP TreeMap identifies color mappings and data catego
 platform: uwp
 control: SfTreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Legend in UWP TreeMap

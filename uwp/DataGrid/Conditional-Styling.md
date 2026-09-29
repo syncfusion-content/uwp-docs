@@ -5,6 +5,7 @@ description: Conditional Styling in Data Grid applies custom styles to cells, ro
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Styling in UWP Data Grid

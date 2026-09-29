@@ -5,6 +5,7 @@ description: Learn how to customize the accent brush and selected foreground col
 platform: uwp
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance and Styling in UWP DatePicker

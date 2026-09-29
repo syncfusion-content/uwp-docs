@@ -5,6 +5,7 @@ description: Learn how to customize the appearance of dates, headers, and cells 
 platform: uwp
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance and Styling in UWP Calendar

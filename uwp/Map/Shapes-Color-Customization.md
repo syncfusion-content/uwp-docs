@@ -5,6 +5,7 @@ description: Shapes color customization in the UWP Maps allows you to apply cust
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Shapes Color Customization in UWP Maps

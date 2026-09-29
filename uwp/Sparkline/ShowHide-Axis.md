@@ -5,6 +5,7 @@ description: Show and hide the axis in the UWP Sparkline to control axis visibil
 platform: uwp
 control: SfSparkline
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Show and Hide Axis in UWP Sparkline

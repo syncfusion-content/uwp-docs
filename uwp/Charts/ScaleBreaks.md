@@ -5,6 +5,7 @@ description: Scale breaks in the UWP Chart skip specific value ranges on an axis
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Scale Breaks in UWP Charts
 

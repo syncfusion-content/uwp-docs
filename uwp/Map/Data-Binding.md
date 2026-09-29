@@ -5,6 +5,7 @@ description: Data binding in the UWP Maps connects geographic data sources to ma
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Data Binding in UWP Maps

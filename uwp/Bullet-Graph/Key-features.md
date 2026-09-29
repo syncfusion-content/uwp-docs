@@ -5,6 +5,7 @@ description: Key features in the UWP Bullet Graph include comparative measuremen
 platform: uwp
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Key Features in UWP Bullet Graph

@@ -5,6 +5,7 @@ description: Annotations in the UWP Linear Gauge enable custom content to be dis
 platform: uwp
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Annotations in UWP Linear Gauge

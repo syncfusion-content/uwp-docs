@@ -5,6 +5,7 @@ description: Empty points in the UWP Chart handle missing data values by skippin
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Empty Points in UWP Charts

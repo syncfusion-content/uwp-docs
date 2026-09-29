@@ -5,6 +5,7 @@ description: Selection support in the UWP TreeMap enables users to highlight and
 platform: uwp
 control: SfTreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Selection Support in UWP TreeMap

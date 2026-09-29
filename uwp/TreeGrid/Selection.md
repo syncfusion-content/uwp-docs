@@ -5,6 +5,7 @@ description: Selection in UWP TreeGrid supports row and cell selection with sing
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Selection in UWP TreeGrid

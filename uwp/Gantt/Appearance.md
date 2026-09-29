@@ -5,6 +5,7 @@ description: Learn about Appearance support in Syncfusion UWP Gantt Chart using 
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Appearance in UWP Gantt Chart

@@ -7,6 +7,7 @@ platform: uwp
 control: SfSunburstChart 
 documentation: ug
 
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Levels in UWP Sunburst Chart

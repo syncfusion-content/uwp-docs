@@ -5,6 +5,7 @@ description: Export To PDF in Data Grid exports grid data to PDF documents while
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

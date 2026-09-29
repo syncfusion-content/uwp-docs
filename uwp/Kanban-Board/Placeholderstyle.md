@@ -5,6 +5,7 @@ description: Learn about Placeholder support in Syncfusion UWP Kanban Board usin
 platform: uwp
 control: SfKanban
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Placeholder in UWP Kanban Board

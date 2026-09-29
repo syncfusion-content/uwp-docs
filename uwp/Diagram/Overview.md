@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion® Essential Studio UWP D
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # About Syncfusion® UWP Diagram Control

@@ -5,6 +5,7 @@ description: Learn about Validation Modes in Syncfusion UWP Gantt Chart, includi
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Validation Modes in UWP Gantt Chart

@@ -5,13 +5,14 @@ description: Sorting in the UWP Chart arranges data points based on specified va
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Sorting in UWP Charts
 
 Chart provides support for sorting the data point rendering in either ascending or descending order based on the X or Y axis.
 
-### Enable sorting
+## Enable sorting
 
 The [`IsSortData`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_IsSortData) property is used to enable sorting in the series.
 

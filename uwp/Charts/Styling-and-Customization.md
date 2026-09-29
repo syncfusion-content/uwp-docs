@@ -5,6 +5,7 @@ description: Styling and customization in the UWP Chart enable personalized char
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Styling and Customization in UWP Chart

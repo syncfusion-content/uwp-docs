@@ -5,6 +5,7 @@ description: Learn how to customize the header and visual elements of the SfDate
 platform: uwp
 control: SfDatePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # SfDateSelector in UWP DatePicker

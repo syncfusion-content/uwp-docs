@@ -5,6 +5,7 @@ description: Ticks in the UWP Linear Gauge indicate scale intervals and support 
 platform: uwp
 control: SfLinearGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Ticks in UWP Linear Gauge

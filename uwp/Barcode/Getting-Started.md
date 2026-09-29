@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP Barcode control.
 platform: uwp
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with UWP Barcode

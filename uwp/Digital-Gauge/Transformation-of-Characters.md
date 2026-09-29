@@ -5,6 +5,7 @@ description: Transformation of characters in the UWP Digital Gauge enables chara
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Transformation of Characters in UWP Digital Gauge

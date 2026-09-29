@@ -5,6 +5,7 @@ description: Commands in the UWP Maps enable interaction handling and action exe
 platform: uwp
 control: Maps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Commands in UWP Maps

@@ -5,6 +5,7 @@ description: Series in the UWP Smith Chart define how data is visualized, enabli
 platform: uwp
 control: series
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Series in UWP Smith Chart

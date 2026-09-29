@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® UWP B
 platform: uwp
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® UWP Bullet Graph Control

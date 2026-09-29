@@ -5,6 +5,7 @@ description: Columns in UWP TreeGrid allow binding, sizing, formatting, sorting,
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Columns in UWP TreeGrid

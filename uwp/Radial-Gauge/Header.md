@@ -5,6 +5,7 @@ description: Header in the UWP Radial Gauge displays a title for the gauge, prov
 platform: uwp
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Header in UWP Radial Gauge
 
