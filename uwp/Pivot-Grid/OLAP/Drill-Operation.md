@@ -5,6 +5,7 @@ description: Drill Operation in Syncfusion® UWP Pivot Grid control lets users d
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Drill Operation in UWP Pivot Grid

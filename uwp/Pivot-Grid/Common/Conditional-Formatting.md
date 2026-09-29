@@ -5,6 +5,7 @@ description: Apply conditional formatting in Syncfusion® UWP Pivot Grid control
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Formatting in UWP Pivot Grid

@@ -5,6 +5,7 @@ description: Annotations in the UWP Pivot Chart display custom content within th
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Annotations in UWP Pivot Chart

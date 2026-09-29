@@ -5,6 +5,7 @@ description: Theming in the UWP Pivot Gauge applies built-in visual styles, enab
 platform: uwp
 control: SfPivotGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Theming in UWP Pivot Gauge

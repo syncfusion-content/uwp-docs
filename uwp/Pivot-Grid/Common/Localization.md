@@ -5,6 +5,7 @@ description: Localization in Syncfusion® UWP Pivot Grid control enables resx‑
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Localization in UWP Pivot Grid

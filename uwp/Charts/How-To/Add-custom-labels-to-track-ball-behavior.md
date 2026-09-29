@@ -5,6 +5,7 @@ description: Add custom labels to track ball behavior in the UWP Chart to displa
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to add custom labels to track ball behavior in UWP Chart

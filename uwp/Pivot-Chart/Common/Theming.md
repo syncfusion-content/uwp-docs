@@ -5,6 +5,7 @@ description: Theming in the UWP Pivot Chart applies consistent visual styles to 
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Theming in UWP Pivot Chart

@@ -5,6 +5,7 @@ description: Paging in the UWP Pivot Chart enables efficient navigation through 
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Paging in UWP Pivot Chart
