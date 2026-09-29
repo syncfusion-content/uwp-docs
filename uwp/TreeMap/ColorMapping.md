@@ -5,6 +5,7 @@ description: Color mapping in the UWP TreeMap applies colors to hierarchical dat
 platform: uwp
 control: SfTreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Color Mapping in UWP TreeMap

@@ -5,6 +5,7 @@ description: Series in the UWP Chart define how data is visualized, enabling dif
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Series in UWP Charts

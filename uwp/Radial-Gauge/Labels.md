@@ -5,6 +5,7 @@ description: Labels in the UWP Radial Gauge display scale values and support cus
 platform: uwp
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Labels in UWP Radial Gauge
 

@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio UWP Rad
 platform: uwp
 control: SfCircularGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # About Syncfusion UWP Radial Gauge Control
 

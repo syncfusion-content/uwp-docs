@@ -5,6 +5,7 @@ description: Clipboard Operations in Data Grid enables copy, cut, and paste acti
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 --- 
 
 

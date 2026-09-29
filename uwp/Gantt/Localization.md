@@ -5,6 +5,7 @@ description: Learn about Localization support in Syncfusion UWP Gantt Chart usin
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Localization in UWP Gantt Chart

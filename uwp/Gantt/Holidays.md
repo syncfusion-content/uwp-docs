@@ -5,6 +5,7 @@ description: Learn about Holidays support in Syncfusion UWP Gantt Chart using Ga
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # Holidays in UWP Gantt Chart

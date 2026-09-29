@@ -5,6 +5,7 @@ description: Learn about tools in the Syncfusion® UWP Diagram control, includin
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Tools in UWP Diagram

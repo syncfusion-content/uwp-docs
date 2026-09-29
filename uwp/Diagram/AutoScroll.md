@@ -5,6 +5,7 @@ description: Learn how to use AutoScroll in the Syncfusion® UWP Diagram control
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # AutoScroll in UWP Diagram

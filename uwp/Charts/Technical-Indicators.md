@@ -5,6 +5,7 @@ description: Technical indicators in the UWP Chart provide analytical calculatio
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Technical Indicators in UWP Charts

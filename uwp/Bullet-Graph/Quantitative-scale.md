@@ -5,6 +5,7 @@ description: Quantitative scale in the UWP Bullet Graph defines value ranges, in
 platform: uwp
 control: SfBulletGraph
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Quantitative Scale in UWP Bullet Graph

@@ -5,6 +5,7 @@ description: Learn how to set minute and second intervals in the Syncfusion UWP 
 platform: uwp
 control: SfDateTimeCombo
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Setting Minutes and Seconds Intervals in UWP DateTimePicker

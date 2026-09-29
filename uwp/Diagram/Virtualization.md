@@ -5,6 +5,7 @@ description: Learn about virtualization in the Syncfusion® UWP Diagram control,
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Virtualization in UWP Diagram

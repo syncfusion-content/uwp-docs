@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP Digital Gauge co
 platform: uwp
 control: SfDigitalGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with UWP Digital Gauge

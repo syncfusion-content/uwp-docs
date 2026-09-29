@@ -5,6 +5,7 @@ description: ToolTip in UWP TreeGrid displays helpful information on hovering ce
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # ToolTip in UWP TreeGrid

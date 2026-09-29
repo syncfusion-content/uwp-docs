@@ -5,6 +5,7 @@ description: Learn about the introduction of Syncfusion Essential Studio® UWP B
 platform: uwp
 control: SfBarcode
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # About Syncfusion® UWP Barcode Control

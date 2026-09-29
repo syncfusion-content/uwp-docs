@@ -5,6 +5,7 @@ description: Learn about the built-in views such as month, year, decade, and cen
 platform: uwp
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Built-in Views in UWP Calendar

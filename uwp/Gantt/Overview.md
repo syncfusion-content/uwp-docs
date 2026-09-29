@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion Essential Studio UWP Gantt C
 platform: uwp
 control: SfGantt
 documentation: ug
+appliesto: UI Component Suite, Gantt SDK
 ---
 
 # About Syncfusion UWP Gantt Chart Control

@@ -5,6 +5,7 @@ description: Learn about commands in the Syncfusion® UWP Diagram control, inclu
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Commands in UWP Diagram

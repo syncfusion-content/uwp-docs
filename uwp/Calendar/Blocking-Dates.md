@@ -5,6 +5,7 @@ description: Learn how to block specific dates to restrict selection in the Sync
 platform: uwp
 control: SfCalendar
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Blocking Dates in UWP Calendar

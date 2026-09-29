@@ -5,6 +5,7 @@ description: Annotations in the UWP Chart display custom content within the char
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Annotations in UWP Chart

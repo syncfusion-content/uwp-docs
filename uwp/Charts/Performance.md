@@ -5,6 +5,7 @@ description: Performance in the UWP Chart provides optimized rendering, efficien
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Performance in UWP Charts

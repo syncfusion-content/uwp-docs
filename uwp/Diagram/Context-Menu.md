@@ -5,6 +5,7 @@ description: Learn about context menus in the Syncfusion® UWP Diagram control, 
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Context Menu in UWP Diagram

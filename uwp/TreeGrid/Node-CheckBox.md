@@ -5,6 +5,7 @@ description: Node CheckBox in UWP TreeGrid adds checkboxes to nodes for selectio
 platform: uwp
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Node CheckBox in UWP TreeGrid
 

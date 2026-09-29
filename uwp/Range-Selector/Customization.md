@@ -5,6 +5,7 @@ description: Customization in the UWP Range Selector enables modification of vis
 platform: uwp
 control: SfDateTimeRangeNavigator
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Customization in UWP Range Selector
 

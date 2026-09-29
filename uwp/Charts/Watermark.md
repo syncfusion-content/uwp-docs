@@ -5,6 +5,7 @@ description: Watermark in the UWP Chart adds background text or images to the ch
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 # Watermark in UWP Charts
 

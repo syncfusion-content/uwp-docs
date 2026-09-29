@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP Data Grid contro
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Getting Started with UWP Data Grid

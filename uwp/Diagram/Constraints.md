@@ -5,6 +5,7 @@ description: Learn about constraints in the Syncfusion® UWP Diagram control to 
 platform: uwp
 control: SfDiagram
 documentation: ug
+appliesto: UI Component Suite, Diagram SDK
 ---
 
 # Constraints in UWP Diagram

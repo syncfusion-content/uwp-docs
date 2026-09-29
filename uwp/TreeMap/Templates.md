@@ -5,6 +5,7 @@ description: Templates in the UWP TreeMap customize item appearance using data t
 platform: uwp
 control: SfTreeMap
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Templates in UWP TreeMap

@@ -5,6 +5,7 @@ description: Learn here all about SelectorItem Customization support in Syncfusi
 platform: uwp
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # SelectorItem Customization in UWP TimePicker

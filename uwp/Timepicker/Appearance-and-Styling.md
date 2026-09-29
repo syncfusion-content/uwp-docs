@@ -5,6 +5,7 @@ description: Learn here all about Appearance and Styling support in Syncfusion®
 platform: uwp
 control: SfTimePicker
 documentation: ug
+appliesto: UI Component Suite, Scheduler SDK
 ---
 
 # Appearance and Styling in UWP TimePicker

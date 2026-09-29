@@ -5,6 +5,7 @@ description: Data Virtualization in Data Grid enables efficient handling of larg
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

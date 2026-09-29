@@ -5,6 +5,7 @@ description: Custom data binding in the UWP Maps enables map elements to be conn
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Custom Data Binding in UWP Maps

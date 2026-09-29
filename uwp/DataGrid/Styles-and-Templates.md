@@ -5,6 +5,7 @@ description: Styles and templates in Data Grid let you customize cells, rows, he
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

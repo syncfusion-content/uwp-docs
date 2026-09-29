@@ -5,6 +5,7 @@ description: Sorting in Data Grid provides single, multi-column sorting, custom 
 platform: uwp
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 
