@@ -12,7 +12,7 @@ appliesto: UI Component Suite, Chart SDK
 
 [`SfChart`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.SfChart.html) offers [`ItemsSource`](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_ItemsSource) property to bind various datasource ranges from simple collection property to complex properties.
 
-### Binding a simple collection to the chart
+## Binding a simple collection to the chart
 
 {% tabs %}
 
