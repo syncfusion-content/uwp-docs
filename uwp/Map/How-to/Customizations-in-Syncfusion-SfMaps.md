@@ -5,6 +5,7 @@ description: Learn how to convert geographic coordinates to pixel positions and 
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to convert coordinates in UWP Maps

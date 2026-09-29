@@ -5,6 +5,7 @@ description: Learn how to render KML shapes in a SubShapeFileLayer and configure
 platform: uwp
 control: SfMaps
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to render KML shapes in sub shape file layer for UWP Maps

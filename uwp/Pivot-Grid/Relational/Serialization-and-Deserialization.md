@@ -5,6 +5,7 @@ description: Serialization and Deserialization in Syncfusion® UWP Pivot Grid co
 platform: uwp
 control: Pivot Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in UWP Pivot Grid

@@ -5,6 +5,7 @@ description: Appearance in the UWP Pivot Gauge allows you to customize gauge vis
 platform: uwp
 control: SfPivotGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Appearance in UWP Pivot Gauge

@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP OLAP Pivot Gauge
 platform: uwp
 control: SfPivotGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with UWP OLAP Pivot Gauge

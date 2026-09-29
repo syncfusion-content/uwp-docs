@@ -5,6 +5,7 @@ description: Add a range of points dynamically in the UWP Chart to update chart 
 platform: uwp
 control: SfChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # How to add range of points dynamically in UWP Chart

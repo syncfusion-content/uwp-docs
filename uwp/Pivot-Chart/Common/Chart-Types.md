@@ -5,6 +5,7 @@ description: Types in the UWP Pivot Chart provide multiple visualization options
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Types in UWP Pivot Chart

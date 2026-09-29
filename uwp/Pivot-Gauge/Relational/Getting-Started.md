@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP Pivot Gauge cont
 platform: uwp
 control: SfPivotGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Getting Started with UWP Pivot Gauge

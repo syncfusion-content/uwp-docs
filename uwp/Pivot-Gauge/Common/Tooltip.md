@@ -5,6 +5,7 @@ description: Tooltip in the UWP Pivot Gauge displays detailed information about 
 platform: uwp
 control: SfPivotGauge
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Tooltip in UWP Pivot Gauge

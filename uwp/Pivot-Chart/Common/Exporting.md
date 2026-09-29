@@ -5,6 +5,7 @@ description: Exporting in the UWP Pivot Chart enables chart data and visuals to 
 platform: uwp
 control: SfPivotChart
 documentation: ug
+appliesto: UI Component Suite, Chart SDK
 ---
 
 # Exporting in UWP Pivot Chart
